@@ -1,0 +1,32 @@
+;####Penny Falls####:
+;###Below bottom of Ave Maria###
+*date 2018.07.23 ; Expedition Klic Globin
+
+;Disto: James Wilson/Tetley
+;Book: James Wilson/Tetley
+;Data entered by David Kirkpatrick on 25/07/2018
+
+*begin penny_falls_2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+2	1	10.33	104	40
+2	3	2.74	225	00
+3	4	15.00	250	-42
+2	5	8.62	-	down
+
+
+;NOTES 
+;STN1 is Penny Falls STN1
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end penny_falls_2
+
+*equate penny_falls_2.1 penny_falls.1
+

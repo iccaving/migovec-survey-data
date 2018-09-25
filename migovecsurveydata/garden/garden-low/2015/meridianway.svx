@@ -1,0 +1,44 @@
+;####Meridian Way####:
+;###Horizontal passage below Final Draft###
+*date 2015.7.25 ; Expedition
+
+;Instruments: Rhys Tyers
+;Book: Tanguy Racine
+
+;Data entered by Rhys Tyers / Tanguy Racine  on 2015.7.27
+
+*begin meridianway
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+2	1	9.38	183	-01
+3	2	30.20	179	+10
+4	3	5.70	204	-14
+5	4	9.18	183	+03
+6	5	23.93	168	+03
+7	6	16.02	192	+02
+8	7	10.33	103	+08
+9	8	15.44	149	+16
+10	9	10.07	136	+10
+11	10	3.33	125	+01
+12	11	7.39	174	+19
+13	12	5.38	158	-04
+;Page 2/2
+14	13	8.74	178	+09
+15	14	8.04	173	+08
+16	15	7.33	151	+06
+17	16	11.16	115	-10
+18	17	4.44	148	-19
+
+;NOTES 
+;stn 1, 14, 16, 18 are pss
+;stn 18 is Final Draft stn 1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end meridianway
+
+*equate meridianway.18 finaldraft.1

@@ -1,0 +1,26 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;M18 Level 2 (north) to Challenger
+
+;Date: 28/7/96
+;Instruments: Colm Carroll
+;Book: James "Tetley" Hooper
+
+;Data entered by J. Hooper 30/7/96
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate level2n.1 level2s.6
+
+*begin level2n
+*date 1996.07.28
+
+2	1	7.49	091	-09	;Stn.1 is 2m from bottom of Faulty Towers rope
+2	3	9.58	008	-02
+4	3	22.47	134	12	;Stn.4 is Cairn before Challenger
+;;;;;;;;;;4	5	40	-	down	;this must be an error added after the end of 1996
+
+*end level2n

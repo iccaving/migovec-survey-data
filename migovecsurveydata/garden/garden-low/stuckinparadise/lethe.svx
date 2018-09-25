@@ -1,0 +1,66 @@
+;####Lethe####:
+;###passage beyond brezno slapov###
+*date 2013.7.25 ; Expedition Z Miga Na Kuk
+
+;Tape + Instruments: Iztok Mozir
+;Book: Clare Tan
+
+;Data entered by Clare Tan on 2013.7.27
+
+*begin lethe
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 3 pages
+;Page 1/3
+2	1	3.23	093	+24
+3	2	12.60	103	-01
+4	3	7.00	061	-12
+6	5	5.90	107	+14
+7	6	3.49	182	-01
+8	7	4.75	111	+03
+9	8	3.97	183	-31
+10	9	5.55	151	+12
+11	10	6.20	159	+02
+3	11	2.89	213	+01
+;Page 2/3
+12	4	9.60	307	-23
+13	12	4.85	322	+03
+8	13	3.87	008	+19
+14	1	4.35	294	-31
+15	14	3.22	199	-33
+16	15	5.60	278	-34
+17	16	5.18	275	-42
+18	17	2.52	243	-21
+19	18	4.53	307	-11
+20	19	6.34	185	-42
+;Page 3/3
+21	20	3.54	152	-61	
+22	21	0.85	158	-27
+23	22	3.61	168	+04
+24	23	2.98	176	+04
+25	24	6.55	344	-49
+26	25	6.37	259	-57
+27	26	4.35	265	-17
+28	27	0.85	288	-48
+29	28	4.23	031	+05
+
+
+;NOTES 
+;Station 1 is a PSS
+;Station 3 is a PSS
+;Station 4 is a PSS
+;Station 5 is a PSS in chamber with aven + rift
+;Station 8 is a PSS in chamber with possible bolt climb to window 
+;Station 19 is a PSS at bottom of pitch
+;Station 20 is at ledge in middle of pitch, stn 21 is at top of pitch
+;Station 24 is bottom of pitch, 25 is top
+;Station 29 is Brezno Slapov PSS 1
+ 
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end lethe
+
+*equate lethe.29 brezno_slapov.1

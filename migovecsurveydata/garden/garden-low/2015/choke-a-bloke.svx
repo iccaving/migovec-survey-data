@@ -1,0 +1,40 @@
+; choke-a-bloke
+; south of meridian way
+*date 2015.7.28 ; Expedition Pivo Moz
+
+;Book + Tape: Clare Tan
+;Instruments: Oliver Myerscough
+
+;Data entered by Oliver Myerscough and Rhys Tyers on 3/8/2015
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin choke-a-bloke
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 pages
+;p1/1
+1	2	3.23	240	+11
+2	3	6.42	187	-3
+3	4	1.83	166	+3
+4	5	1.56	192	+31
+5	6	28.80	171	+00
+7	6	9.38	330	-8
+8	7	9.15	291	+11
+8	9	5.32	121	+03
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end choke-a-bloke
+; station 1 is meridian way station 1
+; station 4 to 5 is through boulder choke
+; station 7 is a pss (junction between choke-a-bloke and empty quarter)
+; station 9 is a pss at the start of boulder choke.
+
+; ### SURVEY TIE IN ###
+*equate meridianway.1 choke-a-bloke.1

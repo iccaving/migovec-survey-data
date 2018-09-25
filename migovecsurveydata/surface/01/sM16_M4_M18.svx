@@ -1,0 +1,34 @@
+;Surface survey from M16 to M18 via M4
+
+;Date: 29/07/01
+;Instruments: Clewin Griffith
+;Book: Ben Ogborne, Helen Jones, Dave Wilson, Barry Sha-Moi
+
+;Data entered by Ben Ogborne on 29/07/01
+
+;data normal bcra grade ?
+;from	to	tape	comp	clino
+
+*begin sM16_M4_M18
+
+2	M16	13.10	153	-43
+3	2	5.15	171	-24
+3	4	20.29	339	05
+5	4	27.57	137	-02
+6	5	21.05	184	-04
+7	6	21.26	135	+05
+7	8	8.50	325	-16.5
+9	8	12.61	079	10
+9	10	4.165	081	-21
+10	11	5.53	-	down
+12	9	11.66	085	-06
+12	M4	6.76	173	-10
+6	14	5.30	035	09
+14	15	7.86	005	03
+15	16	23.40	351	-09
+16	17	19.215	354	-23
+17	18	16.55	094	-07
+19	18	13.72	189	39
+19	M18	4.68	271	22		;M18 is top of red line at M18 entrance
+
+*end sM16_M4_M18

@@ -1,0 +1,47 @@
+;####Dream.2####:
+; ###cascade series below insomnia, beyond daydreamers###
+*date 2011.08.04 ; Expedition Izkubljaeni Raj
+
+;Tape: Clare Tan
+;Book + Instruments: James Hooper
+
+;Data entered by Clare Tan on 2011.8.07
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin dream2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+1	2	4.12	353	00
+2	3	6.92	006	-07
+4	3	4.51	205	-18
+4	5	3.92	055	+08
+6	5	4.27	148	-21
+6	7	6.04	040	-01
+8	7	2.77	148	+10
+8	9	8.09	354	+15
+9	10	8.16	356	+51
+10	11	8.31	355	+27
+11	12	4.22	015	+04
+12	13	6.16	017	+31
+;Page 2/2
+13	14	4.91	342	+19
+14	15	8.62	085	+72
+15	16	9.11	017	+28
+16	17	4.02	312	-28
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end dream2
+; NOTES
+;Station 2 is a PSS
+;Station 8 is PSS
+;Station 10 is a bolt
+;Station 17 is daydreamers.1
+; ### SURVEY TIE IN ###
+*equate dream2.17 daydreamers.1

@@ -1,0 +1,36 @@
+;####Holy Moley####:
+;###Continuation of Sweet Baby Jesus###
+*date 2018.07.12 ; Expedition Klic Globin
+
+;Disto: David Wilson 
+;Book: Rhys Tyers
+;Data entered by Rhys Tyers on 18/07/2018
+
+*begin holy_moley
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+1	2	5.76	353	+16
+2	3	4.56	299	0	
+3	4	4.01	022	+10
+4	5	5.88	317	+03
+5	6	10.10	002	+8
+6	7	6.97	146	+44
+7	8	6.04	147	-4
+8	9	2.78	038	+44
+9	10	1.65	130	0
+
+;NOTES 
+;STN10 is Sweet Baby Jesus STN8
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end holy_moley
+
+*equate holy_moley.10 sweet_baby_jesus.8
+

@@ -1,0 +1,30 @@
+;Skalar extensions off exhibition road
+;Date: 13/7/00
+;Instruments: C Griffith
+;Book: James Hooper
+
+;Data entered by J Hooper on 14/7/00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate obelix.12 getafix.12
+
+*begin getafix
+*date 2000.07.13
+
+1	2	6.82	299	-22	;stn1 is pencilled in started 					;bolt hole
+2	3	1.88	129	-41
+3	4	4.84	237	12
+3	5	4.73	304	-04
+3	6	8.16	-	up	;stn6 is bolt above chamber
+6	7	6.28	301	28
+7	8	4.13	140	85	;stn8 is bolt at top of 					small hang
+8	9	3.77	245	50
+9	10	2.63	210	58	;stn10 is backup bolt 
+10	11	2.38	299	26
+11	12	2.04	150	19
+12	13	2.25	096	17
+13	14	3.03	151	03	;stn 14 is obelix.12 pss
+
+*end getafix

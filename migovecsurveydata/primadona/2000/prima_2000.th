@@ -1,0 +1,17 @@
+encoding  utf-8
+survey prima_2000
+  input "prima1/prima1.th"
+  input "prima2/prima2.th"
+  input "ttt/ttt.th"
+  input "zima00/zima00.th"
+  
+  equate 1@prima1 32@prima2
+  equate 1@prima2 34@ttt
+  equate 1@ttt 22@zima00
+  
+ # join prima1_1e@prima1 prima2_1e@prima2
+  join prima2_1e@prima2 ttt_1e@ttt
+  join l1@ttt l1@zima00
+  join l2@ttt l2@zima00
+endsurvey
+

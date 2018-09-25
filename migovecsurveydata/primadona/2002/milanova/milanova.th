@@ -1,0 +1,40 @@
+encoding  utf-8
+survey milanova 
+
+  input "milanovap.th2"
+  input "milanova_extend.th2"
+
+  map mmilanova_e -projection extended
+    milanova_e1
+  endmap
+  
+  map mmilanovap_1 -projection plan
+    milanovap_1
+  endmap
+  
+  map mmilanovap_2 -projection plan
+    milanovap_2
+  endmap
+  
+  join milanovap_1 milanovap_2
+  
+  centreline
+    date 2002.12.21
+    explo-team "Bozo" "Tivadar Tomaz" "Beguš Tadej"
+    team "Bozo" insts notes
+    team "Tivadar Tomaz" notes insts
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    2	1	44.0	68	76
+3	2	14	188	40	#stn. 3 tocka oznacena z papirjem PPS
+4	3	2.6	198	27
+5	4	3.2	267	53
+6	5	4.0	249	35
+7	6	5.0	202	7
+8	7	5.2	211	43
+9	8	10.4	0	90	#konec strika  
+    
+  endcentreline
+endsurvey
+

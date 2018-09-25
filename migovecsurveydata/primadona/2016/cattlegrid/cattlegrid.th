@@ -1,0 +1,65 @@
+encoding  utf-8
+survey cattlegrid
+
+  input "cattlegrid.th2"
+  
+  map mcattlegridp_1 -projection plan
+    cattlegridp_1
+  endmap
+  
+  map mcattlegridp_2 -projection plan
+    cattlegridp_2
+  endmap
+  
+
+  
+  centreline
+    date 2016.07.22
+    explo-team "William Scott"
+    explo-team "Rhys Tyers"
+
+    team "William Scott" insts tape
+    team "Rhys Tyers" notes
+    
+    
+#Page 1/2
+1	2	9.40	096	+65
+2	3	0.92	330	+35
+3	4	2.17	256	+20
+4	5	6.07	327	-22
+5	6	4.95	032	-29
+6	7	2.73	351	-07
+7	8	4.68	052	-02
+7	9	2.40	192	0
+9	10	3.34	236	-05
+10	11	3.92	293	+05
+11	12	2.91	329	+08
+12	13	2.16	013	+06
+#Page 2/2
+13	14	1.95	078	+17
+14	15	5.34	001	+16
+3	16	6.66	217	+27
+16	17	5.29	249	-02
+17	18	3.58	325	+15
+18	19	3.82	328	+32
+19	20	3.10	142	+64
+20	21	2.63	200	+63
+21	22	4.85	155	+48
+22	23	4.53	124	+08
+
+    
+    
+    #NOTES 
+#Stn 1 is botom of too-tight rift
+#Stn 2 is bolt (2nd down)
+#Stn 3 is PSS
+#Stn 8 is PSS at pitch (9m)
+#Stn 17 is Pss
+#Stn 23 is PSS in Not Very Good (Big Chamber)
+#>23 is re-survey
+  endcentreline
+
+endsurvey
+
+
+

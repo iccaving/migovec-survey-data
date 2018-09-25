@@ -1,0 +1,118 @@
+;Mad Cow - Resurvey of area by Andy and Rik
+;Date: 31/07/04 
+;Instruments / Book: Andy Jurd 
+;Tape: Richard Venn
+
+;Data entered by JM Frost 7th Nov 2009
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+;Msg from Andy attached to Notes (on A6 notebook paper with yellow dash on bottom):
+; Tetley: Data hasn't been enetered yet.
+; Legs 1-14 are the important bits
+; I think 14 is PSS
+; "tn 24 PPS" RCR - 4.8.03 - Andy
+
+;Data is on 5 sheets
+
+*begin mad_cow
+
+;p1/5
+					; LRUD data not specifically associated on right hand side with station
+1	2	4.30	24	+36	;.1 1 1 1 1
+2	3	3.70	22	-23	;.2 0 1 0 1
+3	4	8.10	282	+31	;.3 2 0 4 0
+4	5	3.30	245	+30	;.4 2 0 2 2
+5	6	2.32	267	+16	;.5 1 1 1 1 
+6	7	3.49	311	+63	;.6 0 3 5 2
+7	8	8.45	220	-10	;.7 2 0 1 P
+9	8	15.58	57	+4	;.8 0 3 2 0
+9	10	5.73	198	-20	;.9 0 3 2 0
+11	10	12.20	121	-4	;.10 1 1 2 0
+11	12	8.23	298	+45	;.11 1 1 5 0
+12	13	4.40	152	+12	;.12 1 4 3 1
+
+*flags splay
+1	pseudosump	10.05	130	-5.71
+*flags not splay
+;based on trig from comment below
+
+;Notes on flipside of p1/5
+;.1 is PSS cairn. Possible sump ~-1m down, ~10m 130degrees
+;.2 is bolt at top of pitch
+;.7 is LH bolt at top of pitch (PSS)
+;.13 is PSS, 'Never More' STN '8'
+;.14 is PSS 'tn 24 PPS' (RCR 4-8-03)
+;.20 is bolt at top of pitch
+;.36 is PSS cairn on way to sump (via leprecaun)
+;.44 is PSS cairn
+
+;p2/5
+;This is set of notes & neat Grade IIs on the square paper side
+
+;Notes:
+;AJ/RV 31.7.04
+;AJ Book/Inst
+;Mad Cow Roundabout 2/5
+;
+;Postscript Note: (1.8.04)
+;1-14 should be Red Cow Roundabout
+;14-45 are Re-surveyed Leprecaun _NOT_ _QUITE_ to Playboy Junc!
+;We have placed cairns as Mad Cow Roundabout!!
+
+;Grade IIs:
+;Extended elevation .1>.7: 
+;Sump? drawn a way away from .1 - "Dry Bypass (Oxbow)" also indicated
+;Water falls down little pitch with .2 as bolt
+;Further Climb... then Wet... then Bolt...
+;.7 should as top of T-piece, with other way on at ground level labelled "--> LEAD?" and shown as "TIGHT"
+
+;p3/5
+*flags duplicate
+13	14	11.10	143	-22
+;lots more, I'm skipping the LRUD data for speed - it's all rather boring & rounded to 1 metre anyway
+
+15	14	10.82	356	+6
+15	16	17.20	102	+2
+17	16	6.98	350	+9
+17	18	5.15	216	0
+19	18	20.10	327	-27
+19	20	9.29	011	+13
+21	20	7.65	247	-23
+21	22	18.45	307	+3	;indistinct length in metre column, could be 12.45
+23	22	7.13	2	-49
+23	24	6.07	112	+2
+25	24	8.82	301	-30
+;end of p3/5 - no notes on flipside
+
+;p4/5
+25	26	7.98	200	+9
+27	26	9.90	359	-11	; >360 compass reading?!?
+27	28	8.10	268	-7
+29	28	5.26	364	-3	; >360 compass reading?!?
+29	30	30.20	119	+21	; length indisdinct
+31	30	30.20	299	-13	; compass indisdinct
+31	32	7.33	118	+44
+33	32	14.89	294	-18
+33	34	4.30	105	+13
+35	34	15.75	219	-19
+35	36	11.44	028	+12
+37	36	21.38	330	-30
+;end of p 4/5 - no notes on flipside
+
+;p5/5
+37	38	19.70	168	+22
+39	38	5.55	348	+13
+40	39	9.65	341	+10
+41	40	13.30	315	-6
+*flags not duplicate
+42	41	2.80	267	-11	;direction of next few legs unclear - arrows have been crossed out & redrawn
+43	42	2.80	230	-24
+44	43	6.50	313	-11
+45	44	4.90	320	+1
+
+*end mad_cow
+
+*equate mad_cow.14 	weepeople.24
+;*equate mad_cow.11 republica.12

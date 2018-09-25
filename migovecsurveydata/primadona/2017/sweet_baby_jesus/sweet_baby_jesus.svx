@@ -1,0 +1,54 @@
+;####Sweert Baby Jesus####:
+;###Continuation of Hallelujah###
+*date 2017.07.28 ; Expedition Cez Rob
+
+;Tape + Instruments: Rhys Tyers
+;Book: Rebecca Diss
+
+;Data entered by Tanguy Racine on 28/07/2017
+
+*begin sweet_baby_jesus
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+2	1	5.90	181	-09
+3	2	2.60	073	+11
+4	3	3.66	168	+13
+5	4	2.58	085	+17
+6	5	6.55	097	+05
+7	6	8.23	152	-06
+8	7	1.29	244	+09
+9	8	9.17	180	-12
+10	9	6.20	113	-12
+11	10	10.73	159	-49
+12	11	2.59	149	-10
+13	12	6.45	161	-05
+14	13	5.12	169	-21	
+
+;Page 2/2
+16	14	3.89	184	-21
+17	16	6.05	106	+00
+18	17	1.63	134	-41
+19	18	3.44	158	-25
+20	19	5.67	127	+04
+21	20	9.20	145	-01
+22	21	4.22	-	UP
+*flags duplicate
+23	22	1.81	034	-16
+24	23	5.08	333	+07
+*flags not duplicate
+
+;NOTES 
+;STN 1 is PSS
+;STN 4 is PSS
+;STN 16 is PSS 
+;STN 24 is Hallelujah STN 1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end sweet_baby_jesus
+
+*equate sweet_baby_jesus.24 hallelujah.1

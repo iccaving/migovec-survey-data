@@ -1,0 +1,51 @@
+encoding  utf-8
+survey quantum_state
+  input "quantum_statep.th2"
+  
+  map mquantum_statep_1 -projection plan
+    quantum_statep_1
+  endmap
+  map mquantum_statep_2 -projection plan
+    quantum_statep_2
+  endmap
+  
+  centreline
+    date 2016.07.18
+    explo-team "Rhys Tyers"
+    explo-team "Miriam North"
+    explo-team "Kenneth Tan"
+    
+    team "Rhys Tyers" insts
+    team "Miriam North" tape
+    team "Kenneth Tan " notes
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    #Data on 2 pages
+    #Page 1/2
+    1  2  4.90  300  +06
+    3  2  4.80  150  -20
+    3  4  7.00  220  +05
+    5  4  5.90  129  +10
+    5  6  2.40  220  +10
+    7  6  6.60  340  -25
+    8  7  3.00  310  -30
+    8  9  4.20  110  +05
+    10  9  2.60  350  -27
+    10  11  2.40  110  00
+    12  11  14.60  095  -68
+    13  12  4.50  290  -59
+    #Page 2/2
+    14  13  7.50  052  -37
+    
+    #Stn 1 is PSS
+    #9 is ascent
+    #12 is y-hang
+    #13 is traverse
+    #14 is PSS 11 of Vscana Zofaa Cjeleecb Vbor Jbe
+    
+  endcentreline
+endsurvey
+

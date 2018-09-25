@@ -1,0 +1,66 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;M16 Brezno Strahov
+
+;Date:04/08/96
+;Instruments:Sarah Wingrove
+;Book: Jim Evans
+
+;Data entered by T. Wright and J. Hooper 05/8/96
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate entrance.31 brezno.31
+
+*begin brezno
+*date 1996.08.04
+*team "Jim Evans" book
+*team "Sarah Wingrove" instruments
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5RlJIdU8zZ2RTcjQ
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5bUdtUzc3Rm1ZbUk
+*data normal from to tape compass clino
+31      32      2.85    132     -10.5	;Stn.31 is a carbide mark on wall of chamber
+32      33      1.86    175     -20	;Stn 32 is a cairn
+33      34      4.00    -       down
+33      35      6.31    099     +23
+35      36      4.48    1.79    -22
+36      37      5.83    147     -51	;Stn 37 is first bolt of Brezno Strahov 
+37      38      2.74    186     -62	;Stn 38 is second bolt of Brezno Strahov
+38      39      1.53    130     -41	;Stn 39 is third bolt of Brezno Strahov
+38      40      9.80    156     -56
+
+40      41      19.80   158     -70	;Stn.41 is a cairn in Strahov chamber
+41      42      6.72    268     +1
+42      43      4.00    -       down
+
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5dDBrM19jWU1oXzg
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5TG1jZHFEQ3IwV0U
+41      44      8.05    306     -32
+44      45      7.62    022     -40	;Stn 45 is top bolt of pitch after below Brezno Stahov
+45      46      0.62    317     -21
+46      47      8.15    -       down
+47      48      6.07    025     -23
+48      49      10.80   -       down
+49      50      10.35   057     +16	;Stn 50 is a PSS cairn in centre of chamber
+
+*data passage station left right up down
+32  0   2   5   1
+33  1   1   4   1
+35  0   5   6   1.5
+36  2   1.5 6   0
+37  0.5 0   2   2
+38  0   0.3 3.5 0.5
+39  3   0   8   -
+41  4   3   8   0
+44  2   1   2   -
+45  2   1   2   -
+46  0   3   -   2
+47  0   1.5 5   -
+48  1   1   -   0
+49  2   2   11  0
+50  8   8   20  0
+
+*end brezno

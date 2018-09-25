@@ -1,0 +1,60 @@
+;####Yorkshire####:
+; ###Below Lower Pleasures###
+*date 2011.7.25 ; Expedition Izkubljaeni Raj
+
+;Book + Tape: Oli 
+;Instrumets: Thara 
+
+;Data entered by JMF on 2011.7.27
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin yorkshire
+*data normal from to tape compass clino ignoreall
+;from   to      tape    comp    clino; L R U D
+;Data on 3 pages, though says 2 on pages 1 and 2
+;Original data transcribed at  Underground camp onto green-lined survey pages
+;Page 1/2
+1	2	4.02	130	+12
+2	3	7.93	153	+05
+3	4	3.82	163	-37
+4	5	1.78	198	+05
+5	6	1.38	110	-08
+6	7	3.00	161	+05
+7	8	1.58	112	+20
+8	9	4.13	169	+09
+9	10	2.86	157	+25
+10	11	3.12	156	+06
+11	12	8.05	151	+01
+12	13	2.00	110	+02
+;Page 2/2
+13	14	1.88	108	-08
+14	15	4.65	081	+21
+15	16	3.00	146	+09
+16	17	3.32	167	-17
+17	18	2.08	111	+34
+18	19	5.14	145	+03
+19	22	0.62	171	+04	; Odd jump in numbering
+22	23	2.33	143	+19
+23	24	4.13	172	-02
+24	25	5.65	110	+11
+25	26	1.24	128	+20
+26	27	4.32	171	+00
+;Page 3 of we assume 3
+27	28	1.72	110	+16
+28	29	3.68	160	+13
+29	30	2.78	134	-05
+;"That is it." Oli
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end yorkshire
+; NOTES
+; .14 is a PSS
+; .1 is a PSS
+; .30 is a PSS is .1 of 2ndtimelucky
+
+; ### SURVEY TIE IN ###
+*equate yorkshire.30 2ndtimelucky.1

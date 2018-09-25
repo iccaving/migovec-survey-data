@@ -1,0 +1,46 @@
+;Monatip cave:
+
+*begin s_monatip
+*date 2008
+;Generic date for monatip, will get overridden if any individual dates in file
+
+; No global fixes in individual caves please! Breaks trying to include them from bigger directory
+;*entrance monatip1.1
+;*fix  	monatip1.1		404560.66	123835.66	1733.89
+
+*include monatip1
+*include monatip2
+*include monatip3
+*include monatip4       ; 7.8.2008 - Aljosa, Izi, Dan G
+*include doubletime     ; 7.8.2008 - Aljosa, Izi, Dan G
+*include broken_hammer  ; 8.8.2008 - Izi, Tet, Samo
+*include alkatraz   ; 8.8.2008 - Izi, Tet
+*include monatip5	;31.10.2012- Tjasa Rutar, Nejc Maver, Dejan Ristic, Grega Maffi
+*include monatip6	;23.06.2013- Tjasa Rutar, Nejc Maver, Dejan Ristic, Grega Maffi
+*include monatip7	;07.07.2013- Tjasa Rutar, Dejan Ristic, Grega Maffi...
+*include monatip8   ;11.08.2013- Clair, Fratnik A., Iv?ak A., Maffi G., Maver N., ?ibej K.
+*include monatip09  ;22.08.2015- Risti? D., Tru?novc B., Maffi G., Fratnik A.
+*include monatip10  ;27.09.2015- Rejec Z., Tru?novc B., Maffi G, Fratnik A.
+*include monatip11  ;12.12.2015- Fratnik A., Risti? D., Maffi G., Maver N.
+*include cloacamaxima
+*include Auld_Alliance
+
+*equate 	monatip2.27	    monatip1.27
+*equate 	monatip3.37     monatip2.37
+*equate 	monatip4.1      broken_hammer.16
+*equate 	doubletime.20	monatip4.50
+*equate 	broken_hammer.1 monatip3.44
+*equate 	alkatraz.1 	    monatip4.50
+*equate 	monatip5.27     monatip2.27
+*equate 	monatip6.16     monatip5.1 
+*equate 	monatip7.20     monatip6.8 
+*equate		monatip7.1	    monatip8.8
+; 2015 Slovenian data
+*equate     monatip09.8         monatip6.9
+*equate     monatip10.1     monatip7.6
+
+; There seems to be some uncertainty about how this connects in, see comments in Slovenian in the below files.
+;*equate     monatip11.1     monatip10.15
+*equate     monatip11.1     monatip10.8
+
+*end s_monatip

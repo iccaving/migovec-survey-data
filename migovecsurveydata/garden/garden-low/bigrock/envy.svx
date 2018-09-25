@@ -1,0 +1,33 @@
+;Passage off Leprecon series connecting with Greed
+;Date: 3/8/04
+;Comp+Clino: Mark Evens
+;Tape: Jim Evens
+;Book: Dave Wilson
+
+;Data entered by Jarvist Frost on 4/8/04
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin envy
+
+;page one
+2	1	0.9	270	0
+2	3	14.6	-	up
+3	4	1.96	243	-08
+4	5	2.83	310	-08
+5	6	2.40	160	-13
+6	7	2.35	244	-15
+7	8	3.03	228	-31
+8	9	5.42	285	-18
+9	10	7.80	334	+2
+10	11	3.30	284	-19
+;overside from page 1
+11	12	2.45	255	-13
+
+*end envy
+
+*equate envy.1 greed.3
+*equate envy.12 mad_cow.45
+
+	

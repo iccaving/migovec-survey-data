@@ -1,0 +1,37 @@
+;####Hallelujah####:
+;###Continuation of PLumbers Paradise###
+*date 2017.07.20 ; Expedition Cez Rob
+
+;Instruments: Rhys Tyers
+;Book: Clare Tan
+;Tape: Ben Honan
+
+;Data entered by Tanguy Racine on 21/07/2017
+
+*begin hallelujah
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;PAGE 1
+1	2	3.57	331	+03
+3	2	4.71	150	-03
+4	3	3.99	138	-23
+5	4	4.36	141	-36	
+6	5	2.44	065	+24
+7	6	8.19	149	-07
+8	7	4.18	138	-12
+9	8	2.30	160	-15
+9	10	0.72	244	-06
+
+
+;NOTES
+;STN 1 is PSS
+;STN10 is Plumber’s Paradise STN 5
+
+*end hallelujah
+
+
+
+*equate plumbers_paradise.5 hallelujah.10

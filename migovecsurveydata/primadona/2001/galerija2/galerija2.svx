@@ -1,0 +1,36 @@
+; System Migovec 
+;  Jamarska sekcija PD Tolmin
+; Surveyed to BCRA Grade 5b
+
+;Galerija s prepihom od rokovga brezna do konca
+ 
+;Date: avgust/01
+
+;Instruments: Ristiè, Fratnik
+
+;Data entered by Kragelj,Tivadar on 26/12/01
+
+;data normal bcra grade 5
+
+;from	to	tape	comp	clino
+
+*equate galerija2.14	galerija.3	
+
+*begin galerija2
+*flags duplicate
+2	1	7.6	150	60	;zadnja toèka zmerjena v galeriji2 - svedrovec
+3	2	9.0	160	-20
+4	3	3.5	190	-15
+5	4	12.0	228	-15
+6	5	5.0	228	-70
+7	6	28.0	160	-3
+8	7	5.9	225	-15
+9	8	11.4	290	-10
+10	9	6.6	310	0
+11	10	4.6	210	-5
+12	11	6.5	232	15
+13	12	8.0	215	20
+14	13	7.9	030	35	;svedrovec pri Rokovem breznu
+*flags not duplicate
+*end galerija2
+		

@@ -1,0 +1,32 @@
+;####Apollo Traverse####:
+; ### Traverse over the Apollo Climb ###
+*date 2013.7.14 ; Expedition Za Mig Na Kuk 
+
+;Book + Tape: Peter Adamko
+;Instruments: Gergely Ambrus
+
+;Data entered on 25/8/2013 by Oliver Myerscough + Clare Tan
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin apollo_traverse 
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 page
+;p1/1
+2 1 10.97 266 -03
+3 2 6.49  006 -20
+3 4 4.17  132 0
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end apollo_traverse
+; NOTES
+; Apollo traverse station 1 is apollo pss 1
+
+; ### SURVEY TIE IN ###
+*equate apollo_traverse.1 apollo.1 

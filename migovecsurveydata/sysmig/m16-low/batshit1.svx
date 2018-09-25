@@ -1,0 +1,48 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;batshit passage
+
+;Date: 11/08/97 
+;Instruments: Jim Evans
+;Book: Mike Playford
+
+;Data entered by C. Griffith on 12/08/97
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate batshita.12 batshit1.1
+
+*begin batshit1
+*date 1997.08.11
+*team "Jim Evans" instruments
+*team "Michael Playford" book
+*team "Hugh Penney"
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5NndMWnZqTTVRM3c
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5UldSQWJHdmpfOW8
+
+*data normal from to tape compass clino
+1	2	6.05	114	1     
+2	3	2.47	156	-34
+3	4	4.90	129	-12
+4	5	4.06	104	3
+5	6	2.24	082	9
+6	7	4.25	115	-22
+7	8	2.48	059	2
+8	9	3.86	116	9
+9	10	3.16	044	-29
+
+*data passage station left right up down
+1   0   1   1.5 2
+2   0   1   2   1.5
+3   1   1.5 -   1.5
+4   0.5 0.5 0.25    1
+5   1   0   0   1
+6   0   1   1   1
+7   1   0   0.25    1
+8   1   0   0.25   2
+9   3   0   4   1.5
+*end batshit1
+

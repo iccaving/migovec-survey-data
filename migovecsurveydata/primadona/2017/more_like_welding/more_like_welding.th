@@ -1,0 +1,58 @@
+encoding  utf-8
+survey more_like_welding -title "More like Welding"
+  input "more_like_welding-p.th2"
+   map mmore_like_welding-p1 -projection plan
+      more_like_welding-p1
+    endmap
+
+    map mmore_like_welding-p2 -projection plan
+      more_like_welding-p2
+    endmap
+  
+  centreline
+    date 2017.07.31
+    explo-team "Tanguy Racine"
+    explo-team "David Wilson"
+    team "Tanguy Racine" notes insts
+    team "David Wilson" tape insts
+    #Data entered by Tanguy Racine 2/08/17
+
+    units length meters
+      units compass clino degrees
+      data normal from to length compass clino
+
+      #data on 1 page
+
+    #PAGE 1/2
+    flags duplicate
+    1  2  2.20  052  +30
+    2  3  16.22  -  UP
+    flags not duplicate
+    3  4  11.10  189  +16
+    4  5  6.32  178  +00
+    5  6  4.13  190  -31
+    7  8  3.64  -  UP
+    8  9  5.75  074  +68
+    9  10  6.89  063  +29
+    10  11  3.70  135  -15
+    11  12  2.50  -  DOWN
+    10  6  7.69  020  +02
+
+    #Page 2/2
+    6  13  16.60  129  +13
+    13  14  17.21  -  UP
+    14  15  1.84  111  -01
+
+    #NOTES
+    #STN 1 is Mighty Fine Indeed STN 1
+    #STN 1 to 3 are resurvey
+    #STN 3 is bolt in mighty fine indeed
+    #STN 14 is bolt of y-hang of pitch
+    #STN 15 is Electric dreams STN1. 
+
+  endcentreline
+endsurvey
+
+#*equate more_like_welding.1 mighty_fine_indeed.1
+#*equate more_like_welding.15 electric_dreams.1
+

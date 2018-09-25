@@ -1,0 +1,51 @@
+;LRUD data to entered when battery charged
+;[Blowing Hole]	East Pole = S1
+;Resurvey by Jana and Thara
+
+;Date: [5/8/09]
+;Instruments: [Thara S]
+;Book: [Jana C]
+
+;Data entered by [APSJ] on [5/8/09]
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+;*fix s1.1	5404690	5123200	1770
+
+*date 2009.08.05
+
+*entrance s1.1
+*begin s1
+;p1/2
+1	2	2.47	315	-37	;.2	0.0	0.40	0.36	0.73
+2	3	3.95	289	-29	;.3	0.0	2.30	0.20	1.00
+3	4	2.83	244	-29	;.4	0.0	3.50	0.40	2.00
+4	5	2.46	320	-06	;.5	0.50	4.00	0.40	0.50
+5	6	3.34	231	-25	;.6	0.20	0.60	0.25	0.70
+4	7a	2.20	278	-34	;.7	0.00	3.00	0.40	0.50
+7a	7	3.16	156	-35	;.8	1.00	0.50	0.30	4.40
+7	8	3.28	158	-68	;
+;added station 7a as appears missed a station number on 4-7-8 legs (3 legs)
+;.1 PSS:S1 painted sign above entrance (75cm up)
+;.4 First bolt of the first pitch (ladder pitch)
+;.7 second bolt-laddder pitch
+;.8 the pointy rok at (almost) the bottom of ladder pitch
+
+;p2/2
+9	10	6.40	202	-45	;.9	5	0	2	0.70	
+9	11	13.30	060	+62	;.10	0	5	2	0.70
+11	12	2.60	017	+22	;.11	2	4	0	~13.0
+12	13	3.60	035	+38	;.12	1.30	0	0.40	1.0
+13	14	1.00	006	+21	;.13	0.50	0	2.0	0.70
+14	15	1.50	039	+34	;.14	0	0.20	0.10	0.40
+15	16	1.94	085	+55	;.15	1.5	0.50	2.0	0.0
+16	17	1.80	340	+26	;.16	0.50	0.20	1.5	0.70
+17	18	2.75	053	+41	;.17	0.0	0.50	0.70	0.60
+18	18a	3.19	054	+39	;.18	3.5	1.5	1	1
+18a	8	3.20	131	+49	;.18a	3.5	1.5	1	1
+;station 18a added as missing from book (unconnected leg as above)
+
+;.9 is PSS2: 'Disappointment Chamber'
+;.11 Bolt at top of second pitch (big one)
+
+*end s1

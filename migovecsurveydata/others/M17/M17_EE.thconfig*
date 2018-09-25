@@ -1,0 +1,7 @@
+encoding  utf-8
+source M17.th
+input layout.th
+
+export map -projection [elevation 90] -o "m17.pdf" -layout local
+
+export model -o M17th.lox

@@ -1,0 +1,17 @@
+encoding  utf-8
+survey prima_2001
+  input risanke/risanke.th
+  input risa2/risa2.th
+  input galerija/galerija.th
+  input pov/pov.th
+  
+  equate 1@risa2 1@risanke
+  equate 29@galerija 12@risa2
+  equate 28@pov 12@risa2
+  
+  
+  join risanke_e1@risanke risa2_e1@risa2
+
+  
+endsurvey
+

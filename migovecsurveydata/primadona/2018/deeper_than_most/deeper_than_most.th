@@ -1,0 +1,38 @@
+survey deeper_than_most -title "Tiger Tiger streamway"
+	input "deeper_than_most-p.th2"
+
+	map m1-p -projection plan
+		deeper_than_most-p1
+	endmap
+
+	centreline
+		explo-team "Jack Hare"
+		explo-team "Ben Richards"
+		explo-team "Alexander Seaton"
+
+		team "Ben Richards"	 tape
+		team "Jack Hare"	 insts notes
+		date 2018.07.26
+
+		units length meters
+    	units compass clino degrees
+    	data normal from to length compass clino
+
+    	#Data on 1 page
+
+
+	#Page 1
+1	2	6.80	314	-61
+2	3	11.10	236	-71
+	# Measured by averaging timings of several dropped rocks
+	#3	4	78.48	-	DOWN   
+
+	# Guesstimate
+	#3	5	50.0	-	UP
+
+#NOTES 
+#STN1 is pitchhead bolt
+#STN3 is bolt over edge of balcony
+
+	endcentreline
+endsurvey

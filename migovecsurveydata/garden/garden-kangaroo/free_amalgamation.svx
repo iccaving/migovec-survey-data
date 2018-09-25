@@ -1,0 +1,28 @@
+;Free Amalgamation:
+; Below happy monday
+*date 2009.8.14 ; 10/08/14
+ 
+;Book + Tape: Thara 
+;Instruments: Tim Osborne
+
+;Data entered by James Kirkpadding 15/8/09
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin free_amalgamation
+;Data is on 1 page, 
+1	2	6.90	70	15 ; .20 .70 .50 .0
+2	3	10.2	57	27 ; 1.4 . . .4
+3	4	9.	56	18 ; 0. .5 6. 1.5
+4	5	6.65	89	7  ; 0 8. .4 2.
+5	6	10.5	100	80 ; 4. 1. 9.5 4.
+6	7	2.2	215	45 ; .3 .3 .5  14.
+7	8	2.3	42	30 ; 1.2 .3 1. 1.
+8	9	2.65	177	50 ; 0. 1. 1. .3
+9	10	6.3	213	0 ; 4. .4 1. 2.  
+
+*end free_amalgamation
+; .5 is bottom of hanging garden pitch
+
+*equate free_amalgamation.10 happy_monday.1 

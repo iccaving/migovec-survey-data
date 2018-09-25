@@ -1,0 +1,33 @@
+;Inlet Rift to bottom of pawoden
+
+;Date: 22/7/98
+;Instruments: M. Mc Gowan
+;Book: J. Hooper
+
+;Data entered by M Mc Gowan on 23/7/98
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate bridge.15 sajeta.20
+
+*begin bridge
+*date 1998.07.22
+
+1	2	9.62	175	-12	;STN 1 is a PSS carbide S on wall
+3	2	5.04	007	23	;stn 2 is a pss piece of paper on boulder
+3	4	1.45	130	10
+5	4	4.14	010	-11
+5	6	7.34	156	-03
+7	6	1.40	324	-06
+7	8	5.43	175	09
+9	8	2.80	002	-20
+10	9	3.23	309	-36
+10	11	2.55	200	20
+12	11	2.89	042	00
+12	13	4.25	190	00
+14	13	10.30	321	18
+14	15	3.43	300	-17	;stn 15 is at the bottom of Pawoden
+
+*end bridge
+

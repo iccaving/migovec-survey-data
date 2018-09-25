@@ -1,0 +1,37 @@
+;[Elephant]
+
+;Date: [31/07/98]
+;Instruments: [Iain McKenna]
+;Book: [Colm Carroll]
+
+;Data entered by [I. McKenna] on [02/08/98]
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate elephant.20 adder.12
+
+*begin elephant
+*date 1998.07.31
+
+1	2	11.21	083	+26
+3	2	6.91	196	-15	;STN 2 IS PSS TOP OF BOULDER
+4	2	5.34	324	+38
+4	5	3.67	174	-58
+5	6	2.53	161	-06
+6	7	4.18	113	-16
+7	8	4.24	164	-11
+8	9	4.20	153	-09
+9	10	2.43	182	+32
+10	11	2.18	119	-08
+11	12	5.13	154	-05
+12	13	6.83	254	-32	
+12	14	3.11	083	+32
+14	15	2.01	124	-38
+15	16	5.28	101	-11	;STN 16 IS PSS CARBIDE MARK
+1	17	21.78	-	UP
+17	18	2.32	082	+06
+18	19	6.96	347	+03
+19	20	2.28	078	+49
+
+*end elephant

@@ -1,0 +1,45 @@
+;Surface1, surface survey
+
+;Date: 13/7/00
+;Instruments: Colm Carroll/ Jan Evetts
+;Book: James Hooper
+
+;Data entered by Tetley on 13/7/00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+
+*begin s1
+;*equate \entrance.1	\surface1.27
+;*fix	\surface1.M16	405070.00	123820.00	1843.34
+
+1	2	30.87	179	12	;stn 1 is pss cairn at edge of cliff
+3	2	37.91	332	02
+3	4	48.81	130	10
+5	4	35.92	255	-02	;stn 5 is old, big cairn (can be seen from ridge near where tents are pitched)
+6	4	27.32	342	-08
+6	7	20.52	160	-11
+8	7	47.00	324	24	
+8	9	43.72	160	-06
+10	9	12.52	341	04	;10 is PSS cairn
+8	11	29.83	078	-16
+12	11	31.77	256	-03
+12	13	34.20	075	12
+14	13	34.11	255	-12
+14	15	49.99	066	16
+16	15	18.39	236	-06
+16	17	35.63	052	-03	;17 is A frame of Tetley's tent
+17	18	32.89	047	-03
+M10	18	21.24	210	10	;M10 is red painted dot at top of M10
+20	18	20.69	223	01
+20	21	32.95	074	12
+22	21	30.92	251	00
+22	23	32.47	041	-08	;stn 23 is cairn (top of step down on path to m16
+24	23	12.91	170	20	;stn 24 is by m1
+24	25	13.27	101	-19
+25	26	11.88	052	-39
+M16	26	2.81	192	08	;stnM16 is red dot in M16 ent
+
+*end s1
+

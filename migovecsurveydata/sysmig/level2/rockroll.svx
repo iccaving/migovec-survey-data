@@ -1,0 +1,58 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;M18 Rock and Roll (boulder choke below Mig country)
+
+;Date: 03/08/96
+;Instruments: Andy Atkinson
+;Book: James "Tetley" Hooper
+
+;Data entered by J. Hooper 05/08/96
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate migcondown.2 rockroll.0
+
+*begin rockroll
+*date 1996.08.03
+*team "James Hooper" book
+*team "Andy Atkinson" tape compass clino
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5OHZrd2xNRmtEXzg
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5ekxhcUhaUE5HVHc
+
+*data normal from to tape compass clino
+1	2	9.50	280	-04.5	;Stn.1 is carbide mark on wall at bottom of Mig Country
+3	2	4.39	066.5	40.5
+3	4	2.95	037	-28
+5	4	2.34	276	52
+5	6	3.38	172.5	-16
+6	7	4.21	-	down
+8	7	2.50	274	-04
+8	9	1.22	093	-33
+
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5ZWFodVdod3JFdU0
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5Vk9SczlqM05sMk0
+9	10	5.02	-	down
+11	10	7.71	075	21
+11	12	7.19	045	-24	;Stn. 12 is a PSS on wall of choke
+
+1	0	20.32	339	39	;Stn.0 is cairn on rock on big ledge near base of Mig Country
+
+*data passage station left right up down
+2	1	2	1	0
+3	1	0	1	1
+4	4	1	1	2
+5	2	1	4	2
+6	0.5	0.5	0	4
+7	0.5	0.5	4	0
+8	1	1	0	0.5
+9	0.5	0.5	0	-
+10	0.4	0.4	5	0
+11	2	2	10	0
+12	4	1	4	2
+
+
+
+*end rockroll

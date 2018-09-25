@@ -1,0 +1,42 @@
+;####Union Passage of the Year nominee####:
+;###Continuation of Fenestrator ###
+*date 2017.07.18 ; Expedition Cez Rob
+
+;Tape + Instruments: Rhys Tyers
+;Book: Clare Tan
+;Also present: rebecca diss and Benjamin Honan
+
+;Data entered by Tanguy Racine on 19/07/2017
+
+*begin union_passage_of_the_year_nominee
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1/1
+2	1	3.70	336	+02
+3	2	4.08	339	-11
+4	3	5.19	343	+04
+5	4	4.41	351	+17
+6	5	4.24	011	+01
+7	6	4.30	321	-11
+8	7	6.24	278	-13
+*flags duplicate
+9	8	2.34	329	-28
+10	9	5.70	002	-02
+11	10	9.80	009	+00
+12	11	4.26	322	+01
+12	13	6.13	299	+51
+*flags not duplicate
+
+;NOTES 
+;STN 1 is PSS at start of muddy crawl in bedding plane
+;STN7 is PSS at junction with crawl leading off it and about 5m pitch around corner
+;STN9 is a PSS in chamber along Fenestrator
+;STN 13 is Cattlegrid STN8
+
+*end union_passage_of_the_year_nominee
+*equate union_passage_of_the_year_nominee.13 Cattle_grid.8
+
+

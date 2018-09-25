@@ -1,0 +1,31 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;Small extensions off the hydrant series (start)
+
+
+;Date: 11/8/99
+;Instruments: J Evans
+;Book: J Hooper
+
+;Data entered by J Hooper on 12/8/99
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate hydrant.13 offhyd.4
+*equate hydrant.3 offhyd.9
+
+*begin offhyd
+
+2	1	8.08	197	-33	;stn 1 is pss
+3	2	5.96	208	-56
+4	3	8.71	238	-47;STN 4 IS PSS HYDRANT STN 13
+6	5	3.37	244	-33
+7	6	8.80	209	-33
+7	4	6.90	032	-18
+8	9	12.00	285	00	;THIS IS A SIDE LEG TO GIVE WIDTH OF TA MOKA CHAMBER (UNCONNECTED TO STNS 1-7)
+
+*end offhyd
+

@@ -1,0 +1,31 @@
+;bclent, Bens Crap Lead BCL entrance
+
+;Date: 13/7/00
+;Instruments: Pete Jurd
+;Book: Ben Ogborne
+
+;Data entered by Ben + Tetley on 13/7/00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+
+*begin bclent
+;*equate \surface2.5	\bclent.12
+;* fix	\bclent.12	405115.90	123992.25	1785.49
+
+; fix position done using surface survey from M18 called surface2
+
+2	1	8.99	310	-41	;station1 black carbide mark on big rock above third pitch
+2	3	7.75	098.5	+37.5
+3	4	4.40	097	+14
+4	5	1.80	358	-02
+5	6	4.90	085	+38
+7	6	6.48	136	-65
+7	8	2.30	-	up
+9	8	5.00	309	+01
+10	9	5.75	286	-10
+10	11	9.95	050	+18
+12	11	6.05	232	-29	;station12 is pss at entrance (marked by half bolt hole)
+
+*end bclent

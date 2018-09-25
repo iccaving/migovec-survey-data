@@ -1,0 +1,28 @@
+;Fools Road
+; - Survey tie in of Free Amalgamation to Falls Rd / Prima Junction
+*date 2009.8.17 ; 17/08/14
+ 
+;Book + Tape: Jarvist Frost
+;Instruments: Dan Greenwald
+
+;Data entered by Jarvist Frost 20/8/09
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin fools_road
+;Data is on one page (along with single Happy Monday PSS Leg)
+1	2	5.01	032	-40
+2	3	6.66	-	down
+3	4	2.95	-	down
+4	5	2.37	049	-09
+
+;LRUD
+;.1	2	1	5	0
+;.2	0.75	0.75	7	0
+;.3	0.5	0.5	7	10
+;.4	0.75	0.25	2	8
+;.5	0.2	0.75	0.5	2
+*end fools_road
+
+*equate fools_road.5 free_amalgamation.1

@@ -1,0 +1,36 @@
+;#### Kokain Lab ####:
+; ### Extensions below Balamory ###
+*date 2013.08.01 ; Expedition Sledi Vetra
+
+;Book: Grega Maffi
+;Instruments: Erik Poncina
+
+;Data entered by Clare Tan on 2013.08.03
+
+*begin kokain_lab
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+
+1	2	10.2	328	+15
+2	3	3.1	273	-03
+3	4	3.8	310	-16
+4	5	4.8	322	+22
+5	6	8	330	-09
+6	7	10.2	316	-08
+7	8	8	301	-08
+8	9	7	312	-08
+9	10	7	032	+03
+10	11	7.7	042	+19
+
+;NOTES 
+; stn 1 is a PSS
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+*end kokain_lab
+
+*equate kokain_lab.11 kokain_rute.7
+

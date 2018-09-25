@@ -1,0 +1,34 @@
+;Primadona -> Monatip -> Planika surface survey
+
+;Date: 7/8/07
+;People: James Hooper, Izzy M
+
+;Data entered by Jarvist Frost 9/8/07
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin surf_prima_planika
+*flags surface
+;PAGE 1
+2	1	25.00	131	+21
+3	2	29.40	074	+60
+4	3	27.80	101	+66
+5	4	8.40	081	+64
+5	6	4.05	057	+11
+;dashed out line
+8	7	12.00	198	-10
+8	9	24.80	343	-15
+9	10	30.40	327	-01
+11	10	11.30	135	-17
+
+;Stn 1 is PSS cairn at entrance to Planika Jama
+;Stn 6 is red dot at entrance to Monatip Jama
+;Stn 7 is Primadona Top Left of Painted TL
+
+;PAGE 2
+11	12	27.10	010	-14
+6	12	29.60	287	-36
+
+
+*end surf_prima_planika

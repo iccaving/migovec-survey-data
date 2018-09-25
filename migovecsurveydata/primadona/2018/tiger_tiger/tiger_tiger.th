@@ -1,0 +1,46 @@
+survey tiger_tiger -title "Tiger Tiger streamway"
+	input "tiger_tiger-p.th2"
+
+	map m1-p -projection plan
+		tiger_tiger-p1
+	endmap
+
+	centreline
+		explo-team "James Wilson"
+		explo-team "James Hooper"
+
+		team "James Wilson"	 notes
+		team "James Hooper"	 insts tape
+		date 2018.07.22
+
+		units length meters
+    	units compass clino degrees
+    	data normal from to length compass clino
+
+    	#Data on 1 page
+
+
+	#Page 1
+2	1	3.73	303	-17
+3	2	9.52	312	-6
+4	3	5.27	350	-13
+5	4	5.69	333	-9
+6	5	2.30	342	-2
+7	6	5.05	310	-8
+8	7	5.62	266	-16
+9	8	6.00	290	-5
+10	9	4.10	268	-9
+11	10	2.92	341	-8
+12	11	4.37	271	-9
+13	12	2.45	288	-45
+13	14	3.50	103	-21
+
+#NOTES 
+#STN1 is pitchhead bolt
+#STN3 is triangle scratched on wall
+#STN14 is penny falls 2 stn5
+#STN13 is PSS
+
+
+	endcentreline
+endsurvey

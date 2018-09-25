@@ -1,0 +1,17 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;System Mig - from titanic down
+
+
+*begin whitestar
+    *date 1997.07
+    *calibrate compass -1.38
+	*include titanic
+
+    *date 1998.07
+    *calibrate compass -1.47
+    *include olympic
+	*include maiden
+*end whitestar

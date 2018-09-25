@@ -1,0 +1,48 @@
+encoding  utf-8
+survey fenestrator
+
+  input "fenestratorp.th2"
+  
+  map mfenestratorp_1 -projection plan
+    fenestratorp_1
+  endmap
+  
+  map mfenestratorp_2 -projection plan
+    fenestratorp_2
+  endmap
+
+  
+  centreline
+    date 2017.07.14
+    explo-team "Benjamin Honan"
+    explo-team "Rhys Tyers"
+    
+    team "Rhys Tyers" insts notes
+    team "Benjamin Honan" insts notes
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    #PAGE 1/1
+    2	1	5.04	353	-20
+    3	2	2.59	020	+10
+    4	3	2.46	062	-24
+    5	4	2.92	067	+45
+    6	5	1.45	-	DOWN
+    7	6	4.59	353	+20
+    8	7	14.34	006	000
+    9	8	8.22	007	+01
+    10	9	3.23	226	-05
+    11	10	6.40	128	-45
+
+  
+    #NOTES 
+    #STN1 is pss above 20m pitch
+    #STN3 is by crawl on the wall (unexplored (14/07/17)
+    #STN11 is Cattelgrid station 8
+    
+  endcentreline
+endsurvey
+
+

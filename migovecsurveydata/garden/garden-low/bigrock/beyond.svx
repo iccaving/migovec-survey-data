@@ -1,0 +1,33 @@
+;Continuation of miles underground
+;Date: 1/8/04
+;Instruments:Thomas Ayles
+;Book: James Hooper
+
+;Data entered by Jarvist Frost on 3/8/04
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+
+*begin beyond
+;page one
+1	2	20.69	212	-54	;station 1 is a carbide 'S'
+2	3	15.01	176	-27	
+3	4	7.96	155	-06	;station 3 is PSS cairn
+5	4	25.22	350	20
+5	6	1.39	240	27
+7	6	12.63	356	-01
+7	8	10.32	168	09
+8	9	4.25-down		;station 9 is a PSS cairn
+10	9	12.38	346	-07
+10	11	4.49	177	46	;station 11 is a PSS cairn
+;page two
+12	11	10.44	339	-28
+12	13	11.36	174	48
+14	13	1.32	001	-16	;station 14 is miles.25
+*end beyond
+
+*equate beyond.14 miles.25 
+
+
+	

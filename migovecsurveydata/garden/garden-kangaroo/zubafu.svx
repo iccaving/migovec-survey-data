@@ -1,0 +1,35 @@
+; Zubafu - the continuation of captain kangaroo and Chinese passage
+; Jo King & Clewin Griffith 
+; 23/7/05
+
+*equate zubafu.1 kangaroo01.0
+
+*begin zubafu
+;from	to	tape	co	cl
+1	2	5.24	266	+28
+3	2	1.40	022	+34
+3	4	5.42	-	down
+5	4	1.21	282	-13
+6	5	5.66	254	+27
+6	7	6.56	256	-31
+7	8	8.10	255	+14
+8	9	4.0	179	-25
+9	10	4.63	169	-8
+10	11	3.12	259	0
+;stn	L	R	U	D
+;1	1	2	4	1
+;2	1	0	0	5
+;3	1	0.5	1	5
+;4	2	2	5	0
+;5	3	1	5	0
+;6	0.5	1.5	2	1
+;7	0.5	2	4	0
+;8	0.5	1	1	0
+;9	3	0	0.5	0
+;10 	1	1	1	0
+;11
+; Zubafu.1 is Chinese.0 pss cairn
+; Zubafu.5 is pss cairn at bottom of 5m pitch
+; Zubafu.10 is pss cairn after red slab.
+; Zubafu.11 is carbide mark on wall
+*end zubafu

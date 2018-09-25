@@ -1,0 +1,42 @@
+;####Quantum State####:
+;###Pitch series off Gallerija###
+*date 2016.07.18 ; Expedition Neprehojeni Poti
+
+;Tape + Instruments + Book: Rhys Tyers, Kenneth Tan, Miriam North
+
+;Data entered by Clare Tan / Dave Wilson on 2016.08.06
+
+*begin quantum_state
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+1	2	4.90	300	+06
+3	2	4.80	150	-20
+3	4	7.00	220	+05
+5	4	5.90	129	+10
+5	6	2.40	220	+10
+7	6	6.60	340	-25
+8	7	3.00	310	-30
+8	9	4.20	110	+05
+10	9	2.60	350	-27
+10	11	2.40	110	00
+12	11	14.60	095	-68
+13	12	4.50	290	-59
+;Page 2/2
+14	13	7.50	052	-37
+
+;NOTES 
+;Stn 1 is PSS
+;9 is ascent
+;12 is y-hang
+;13 is traverse
+;14 is PSS 11 of Vscana Zofaa Cjeleecb Vbor Jbe
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end quantum_state
+
+*equate quantum_state.14 Galeria_Resurvey.1

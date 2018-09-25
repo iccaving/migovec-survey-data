@@ -1,0 +1,34 @@
+;####Beetle Juice####:
+;###Passage off Milky Way###
+*date 2013.7.20 ; Expedition Z Miga Na Kuk
+
+;Tape: Sam Page
+;Book + Instruments: Tetley
+
+;Data entered by Tetley / Rhys Tyers on 2012.8.12
+
+*begin beetlejuice
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/1
+2	1	5.20	170	00
+3	2	10.20	232	-75
+4	3	5.26	172	-34
+4	5	5.00	340	+12
+5	6	8.58	009	+02
+6	7	13.32	-	up
+7	8	7.90	068	+65
+
+;NOTES 
+;station 3 is a bolt (left bolt of yhang if going down cave)
+;station 7 is a bolt
+;station 8 is milky way pss 16
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end beetlejuice
+
+*equate  beetlejuice.8 milkyway.16

@@ -1,0 +1,80 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;M18 Dodge City (side passage off NCB passage)
+
+;Date:29/7/96
+;Tape:Chris "Sos" Roberts
+;Instruments:Iain McKenna
+;Book:Jim Evans
+
+;Data entered by James "Tetley" Hooper 01/08/96
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate dodge.0 gallery.12
+
+*begin dodge
+*date 1996.07.29
+*team "Chris Roberts" tape
+*team "Iain McKenna" compass clino
+*team "Jim Evans" book
+;notes
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5MjYxWFpxUnVETFk
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5NnFta2FWNERUbXM
+;diagrams
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5Yy10d2JKb3lJUkk
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5UmtBUXdzVEt2Nkk
+
+*data normal from to tape compass clino
+0	1	5.80	105	58	;Stn 0 is gallery.12
+1	2	1.73	337 	18
+2	3	11.57 	050	18
+3	4	7.82	056	21
+4	5	5.65	023	16	;Stn 5 is a PSS
+5	6	3.00	109	27
+5	7	1.70	286	-18
+7	8	3.30	055	-03
+8	9	4.20	095	-06
+9	10	2.90	329	-04
+10	11	1.91	301	-20
+11	12	2.13	075	23
+12	13	3.19	315	-07	;Stn 13 is a PSS
+13	14	2.95	337	21
+13	15	2.86	071	-19
+15	16	6.35	055	-32
+16	17	3.00	185	-55
+17	18	7.05	355	-28
+17	19	4.00	130	-45	;Stn 19 is at surveyed end of Dodge City
+
+*data passage station left right up down
+0	0.5	0.5	5	0.5
+1	3	1	0	1
+2	1	1	0	1
+3	2	0	2	1
+4	1	0	0	1
+5	1	0	2	0.5
+;6	0	1	2	1
+7	0	-	0.7	0.5
+8	0	0.8	0.15	0.4
+9	-	0	0.3	0.5
+10	1	0.7	0.5	0.5
+11	0.2	-	0.6	0.2
+12	-	0.5	0	0.5
+13	0.5	-	1	0
+;14	4	1	2	1
+15	0.5	0.6	0	0.5
+16	1.5	2.3	3	1
+17	1	1.5	1.5	1.5
+18	0	2	4	1.5
+
+*data passage station left right up down
+5	0	1	2	0.5
+6	0	1	2	1
+
+*data passage station left right up down
+13	0.5	-	1	0
+14	1	4	2	1
+*end dodge

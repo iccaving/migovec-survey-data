@@ -1,0 +1,50 @@
+;#### Kneekiller (this has been renamed Penitence passage - 7.8.11) ####:
+; ### Continuation from bottom of lost in paradise. ###
+*date 2011.8.03 ; Expedition Izkubljaeni Raj
+
+;Laser + Instruments: Izi
+;Book: Gergely
+
+;Data entered by DG on 2011.08.05
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin kneekiller
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+2	1	6.69	115	+6
+3	2	9.67	135	+14
+4	3	6.39	131	-3
+5	4	1.79	89	-16
+6	5	6.82	88	+13
+7	6	6.81	100	+9
+8	7	8.80	102	+16
+9	8	7.01	93	+1
+10	9	6.05	141	+8
+11	10	4.12	139	-5
+12	11	16.64	149	-1
+13	12	13.44	105	+1
+14	13	6.89	102	-5
+15	14	5.72	110	-11
+16	15	4.47	134	+12
+
+;Page 2/2
+17	16	12.52	84	+8
+18	17	7.48	74	+13
+19	18	2.92	94	-8
+20	19	7.29	78	+19
+21	20	2.78	81	-23
+22	21	3.91	108	-12
+
+*end kneekiller
+; NOTES
+;kneekiller 24 is east links 22
+; ### SURVEY TIE IN ###
+*equate kneekiller.22 eastlinks.24

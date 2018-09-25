@@ -1,0 +1,34 @@
+;### Thirdthoughts ####:
+; ### 2003 push - not entered till July 2010 ###
+*date 2003.8.6 ; 1
+
+;Book + Tape: PJ/RV
+;Instruments: ###
+
+;Data entered by Jarvist Moore Frost on 2010-07-11
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin thirdthoughts
+;Data is on 1 page
+;p1/1
+*data normal from to tape compass clino ignoreall
+
+;Plumb legs below are assumed - in notes there are strangely listed as '- -' for comp and clino
+1	2	8.90	-	up	
+2	3	5.24	012	+62
+3	4	3.08	039	+53
+4	5	6.90	323	+42
+5	6	2.20	344	+12
+6	7	3.20	-	up
+7	8	0.24	167	+27
+
+;On flipside, in red ink (assume done in Bivi afterwards): stn 8 is doublethink stn 15
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end thirdthoughts
+
+*equate thirdthoughts.8 doublethink.15

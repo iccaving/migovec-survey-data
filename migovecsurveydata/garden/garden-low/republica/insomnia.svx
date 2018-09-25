@@ -1,0 +1,71 @@
+;#### Insomnia ####:
+; ### Push off bottom of Republica; surveyed entirely after callout :<#  ###
+*date 2010.7.28 ; Expedition Vodna Sled 2010
+
+;Book + Tape: Who bloody knows, the books a mess
+; Apparently Jan was book, JKP was instruments
+;Instruments: ###
+
+;Data entered by Jarv on 29-7-10
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin insomnia
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 2 muddy torn pages
+;p1/2
+;#### DATA ####
+; tape appears to be to +-5cm
+; legs appear to be implicitly forwards unless arrow backwards
+1	2	4.6	140	+00
+3	2	7.15	178	-32
+3	4	7.7	005	+26
+5	4	8.45	185	-30
+5	6	1.65	328	+15
+6	7	3.05	008	+26	; compass is query
+8	7	4.65	133	-38	; clino is query
+9	8	5.1	205	-12	; all fields are query
+9	10	5.7	030	+00	
+10	11	31.8	-	up	; in notes, both compass and clino are dash. Therefore no directional information. We assume it's a pitch
+12	11	7.5	001	-37
+13	12	3.0	141	+15
+14	13	7.5	158	-51
+;notes on flipside
+;insomnia series pss.1 insomnia (AKA sleepless) streamway
+;pss.15 is ZZZ pss 15 republica <-> (implying interchangeable)
+;extended elevation grade 1, with pss.1
+
+;p2/2
+14	15	2.45	133	-07
+;notes on flipside
+;simply says 'IN'
+
+;end of survey
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	0	2	1	2
+2	2	2	4	0
+3	0	1	0.5	1
+4	0	1	1	1
+5	0	1	2	1
+6	0	0.5	1	1
+7	1	0	2	1
+8	1	0	0.5	5
+9	0	2	2	2
+10	2	3	0	0	; ?impossible to read
+11	7	5	5	10	; in as 30
+12	4	4	10	5
+13	0	3	6	1
+14	0.5	0	2	3
+15	0.5	1	1	0
+
+*end insomnia
+; NOTES
+
+; ### SURVEY TIE IN ###
+*equate republica.15 insomnia.15

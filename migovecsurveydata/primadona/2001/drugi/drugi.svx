@@ -1,0 +1,47 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+; drugi vhod
+;akcija potekala 10 ur
+;Date: 18/07/01
+;Instruments: Tivadar,Beguš
+;Book: Tivadar
+
+;Data entered by Tivadar on 19/07/01
+
+;data normal bcra grade 5
+
+;from	to	tape	comp	clino
+
+*equate drugi.15	 prima1.35
+*equate drugi.10b	 drugi.7a
+*equate drugi.1 	 prima1.21b
+
+
+*begin drugi
+
+2	1	8.0	145	-73	;stn 1 primadona po cetrtem breznu
+3	2	5.4	245	-68
+4	3	8.8	252	-50	;stn 4 is bolt 
+5	4	3.0	181	-3
+6	5	4.5	245	-42
+7	6	12.5	215	-29
+7a	7	20.0	000	-90
+8	7a	8.5	000	-90	;stn 8 is bolt
+9	8	9.8	177	-69
+10	9	5.4	150	5	;toc 9 zacetek vhodne ozine
+11	10	6.4	149	5
+12	11	1.7	213	0
+13	12	3.0	137	0	;toc 13 konec vhodne ozine
+14	13	18.0	140	2	
+14	15	17.0	283	-28	;stn 15 kota napisa pred jamo "TL"
+10	10a	11.0	0	-90
+10a	10b	12.3	161	-45	;mera ni tocna odstopok +- 2 stopinji
+;8	8a	10	0	-90
+
+;*begin
+;*data nosurvey drugi.15		prima1.35
+;*end
+
+*end drugi
+		

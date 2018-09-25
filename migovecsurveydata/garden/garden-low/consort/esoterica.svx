@@ -1,0 +1,59 @@
+;####ESOTERICA####:
+; ###obscure rift near PSS 12 consort###
+*date 2010.7.29 ; Expedition Vodna Sled 2010
+
+;Book + Tape: Jan###
+;Instruments: James###
+
+;Data entered by James on 31.7.2010
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin esoterica
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;###DATA###
+;p 1/2
+1	2	5.30	296	0
+2	3	8.71	-	UP
+3	4	1.25	202	-5
+4	5	5.79	5	55
+6	5	2.91	158	+7
+7	6	6.66	102	-40
+8	7	2.20	106	-19
+9	8	1.25	79	21
+10	9	4.19	152	-18
+11	10	3.92	172	-1
+12	11	2.46	270	-10
+13	12	5.79	315	-66
+;p 2/2
+14	13	2.31	260	-36
+15	14	2.89	10	-38
+16	15	4.62	119	-40
+17	16	2.99	68	-35
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+; 1	1	0	1	0
+; 2	2	1	9	0
+; 3	4	2	9	9
+; 4	4	2	3	9
+; 5	????
+; 6	2	0	4	1
+; 7 	R	I	F	T
+; 8 	R	I	F	T
+; 9	R	I	F	T
+; 10	R	I	F	T
+; 11	R	I	F	T
+; 12 	1	0	2	1
+; 13	6	1	1.5	0.5
+; 14	2	0	4	0.5
+
+*end esoterica
+; NOTES
+
+; ### SURVEY TIE IN ###
+*equate esoterica.17 consort.12

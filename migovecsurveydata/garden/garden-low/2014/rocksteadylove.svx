@@ -1,0 +1,51 @@
+;####Rock Steady Love####:
+; ###Big streamway below hanging gardens deep###
+*date 2014.07.22
+
+;Tape + Instruments: James Hooper
+;Book: Clare Tan
+
+;Data entered by Clare / Tetley on 2014.7.24
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin rocksteadylove
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+1	2	1.92	092	+16
+3	2	5.66	-	UP
+3	4	2.01	160	00
+4	5	9.90	-	DOWN
+5	6	8.14	-	DOWN
+5	7	7.17	218	+06
+7	8	8.07	-	DOWN
+9	8	7.35	055	+02
+10	9	5.73	108	-03
+10	11	6.65	245	+42
+11	12	6.12	292	-25
+;Page 2/2
+13	12	3.23	155	+50
+13	14	15.00	-	DOWN
+14	15	10.00	280	00
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end rocksteadylove
+; NOTES
+;Stn 1 is hanginggardensdeep stn 1
+;Stn 2 is krab on top of pitch
+;Stn 3 is bolt
+;Stn 6 is the stream
+;Stn 7 is bolt at end of traverse
+;Stn 8 is a pss at bottom of pitch
+;Stn 13 is a pss (bolt at top of pitch)
+;Stn 14 is stream level
+
+; ### SURVEY TIE IN ###
+*equate rocksteadylove.1 hanginggardensdeep.1

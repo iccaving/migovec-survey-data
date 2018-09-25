@@ -1,0 +1,10 @@
+survey prima_2002
+	input "ajdovscina/ajdovscina.th"
+	input "spodnji/spodnji.th"
+	input "milanova/milanova.th"
+	input "smer0/smer0.th"
+
+	equate 15@spodnji 1@milanova
+
+
+endsurvey

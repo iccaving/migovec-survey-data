@@ -1,0 +1,38 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;window at top of Galactica chamber
+
+;Date: 12/8/97
+;Instruments: h penny
+;Book: o mann
+
+;Data entered by j hooper on 13/8/97
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate galact3.4 window.6
+
+*begin window
+*date 1997.08.12
+*team "Oliver Mann" book
+*team "Hugh Penney" instruments
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5OWI3QnIyNmJ3YTg
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5YVdxS0xyWmEtZkk
+
+*data normal from to tape compass clino
+1	2	15.27	279	-37	
+2	3	2.45	070	-25	;pss cairn
+3	4	22.50	036	-29
+4	5	11.27	351	-29	;5 is between the arch in the window
+5	6	19.90	32	-44
+
+*data passage station left right up down
+1   5   0   10  0
+2   8   8   20  0
+4   2   5   6   0
+
+*end window
+

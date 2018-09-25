@@ -1,0 +1,57 @@
+encoding  utf-8
+survey gondolin
+
+  input "gondolinp.th2"
+  
+  map mgondolinp_1 -projection plan
+    gondolinp_1
+  endmap
+  
+  map mgondolinp_2 -projection plan
+    gondolinp_2
+  endmap
+  
+  map mgondolinp_3 -projection plan
+    gondolinp_3
+  endmap
+  
+  map mgondolinp_4 -projection plan
+    gondolinp_4
+  endmap
+  
+  map mgondolinp_5 -projection plan
+    gondolinp_5
+  endmap
+  
+  
+  centreline
+       cs lat-long
+       fix 16     46.253030      13.757556    1778
+    date 2017.07.17
+    team  "Tanguy Racine" insts notes
+    team "Jack Hare" notes
+    team "Benjamin Honan" notes insts
+#PAGE 1
+2	1	11.70	123	-11
+3	1	5.99	335	+00
+1	4	16.26	039	+14
+4	5	12.85	-	UP
+5	6	5.11	073	-02
+6	7	8.30	-	UP
+7	8	7.19	335	+00
+8	9	3.69	358	+02
+10	9	5.61	305	+04
+11	10	6.02	214	-34
+12	11	6.30	263	-39
+13	10	6.72	264	-20
+9	14	8.68	-	UP
+
+#PAGE 2
+14	15	3.46	339	-24
+15	16	5.20	291	+06
+
+#stn  2 is boulder choke
+#stn 3 is blind alcove
+#stn 16 is cairn by the entrance
+endcentreline
+endsurvey

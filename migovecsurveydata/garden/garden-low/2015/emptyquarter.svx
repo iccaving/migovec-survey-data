@@ -1,0 +1,53 @@
+; Empty Quarter
+; Passage off choke-a-bloke
+*date 2013.7.28 ; Expedition Pivo Moz
+
+;Book + Tape: Clare Tan
+;Instruments: Oliver Myerscough
+
+;Data entered by Oliver Myerscough and Rhys Tyers on 3/8/2015
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin emptyquarter
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 2 pages
+;p1/2
+2	1	4.46	246	-23
+3	2	8.35	288	+00
+3	4	5.33	115	+23
+5	4	3.76	283	-53
+5	6	2.60	082	+16
+7	6	10.37	302	-34
+7	8	18.70	052	+15
+9	8	11.39	241	-19
+9	10	1.45	320	-07
+9	11	5.34	027	+34
+12	11	4.71	228	-51
+12	13	8.55	032	+12
+
+;p2/2
+14	13	8.14	208	-02
+14	15	19.36	046	+19
+16	15	12.70	281	-03
+16	17	9.65	086	+24
+18	17	13.56	221	+04
+18	19	4.50	340	+24
+20	19	13.12	017	+01
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end emptyquarter
+; station 1 is start of choked passage with a bit of draught blowing into choke
+; station 2 is a pss in chamber with climb
+; station 10 is a pss
+; station 19 is choke-a-bloke station 7
+
+; ### SURVEY TIE IN ###
+*equate emptyquarter.19 choke-a-bloke.7

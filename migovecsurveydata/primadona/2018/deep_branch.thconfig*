@@ -1,0 +1,19 @@
+encoding  utf-8
+source "deep_branch.th"
+
+layout local
+  
+  scale 1 500
+  colour map-fg [88 80 55]
+  map-header 0 115 w
+  symbol-hide line survey
+  symbol-hide point station
+  #legend on
+  
+  symbol-assign line slope BCRA
+  
+  endlayout
+  
+export map -o "deep_branch.pdf" -layout local 
+export model -fmt survex -o "deep_branch.3d"
+#export model -o sys_prima.lox

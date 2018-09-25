@@ -1,0 +1,38 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;Baddy bad, pitch from goddy bag using lower crawl
+;Lower crawl called 'Body Bag', lower piches called 'The Belfry'
+
+;Date: 2 August	1997
+;Instruments: Alva, Clewin, Shed
+;Book: Alva, Shed
+
+;Data entered by Shed on 3 August 1997
+
+*equate baddybag.14 goodbag.6 ;changed from \goodbag.6 by mje 6/9/97
+
+*begin baddybag
+*date 1997.08.02
+*team "Clewin Griffith" instruments
+*team "Alva Gosson" book
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5YzNFT01LbG15Y2s
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5eEM0dFJfVWZxdm8
+
+*data normal from to tape compass clino
+1	2	2.90	17	5	;1 PSS on cairn 
+2	3	3.67	-	up
+3	4	2.20	20	13
+4	5	14.47	-	up
+5	6	6	240	-40	;Leg to aven distance guessed
+5	7	7.76	100	55
+7	8	3.65	39	35	;SS7 is prayer bell
+8	9	3.50	27	-5
+9	10	14.23	-	up
+9	11	8	135	35	;Another aven, distance guessed
+10	12	2.12	56	-25
+13	12	7.99	15	2
+14	13	1.55	79	-1
+
+*end baddybag

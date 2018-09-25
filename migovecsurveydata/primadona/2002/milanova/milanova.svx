@@ -1,0 +1,30 @@
+; System Migovec 
+;  Jamarska sekcija PD Tolmin
+; Surveyed to BCRA Grade 5b
+
+;Jama od velikega brezna naprej "Milanova" jama
+;akcija trajala 21 ur 21-22.12.02
+;udelezenci:Bozo,Tivadar,Cuder,Begus  
+
+;Instruments: BOzo, Tivadar
+
+;Data entered byTivadar on 23/07/02
+
+;data normal bcra grade 5
+
+;from	to	tape	comp	clino
+
+*equate milanova.1	spodnji.15
+
+*begin milanova
+
+2	1	44.0	68	76
+3	2	14	188	40	;stn. 3 tocka oznacena z papirjem PPS
+4	3	2.6	198	27
+5	4	3.2	267	53
+6	5	4.0	249	35
+7	6	5.0	202	7
+8	7	5.2	211	43
+9	8	10.4	0	90	;konec strika  
+
+*end milanova

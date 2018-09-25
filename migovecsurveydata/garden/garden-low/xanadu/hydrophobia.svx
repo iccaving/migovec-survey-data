@@ -1,0 +1,40 @@
+;#### Hydrophobia ####:
+; ### Pitch series off Cuckoo's nest stn 20 ###
+*date 2013.08.02 ; Expedition Sledi Vetra
+
+;Book: Clare Tan
+;Tape + Instruments: Rhys Tyers
+
+;Data entered by Clare Tan on 2013.08.03
+
+*begin hydrophobia
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+
+2	1	5.12	014	-30
+3	2	7.87	007	+10
+4	3	2.37	350	-26
+5	4	9.25	009	+10
+6	5	4.50	313	-70
+7	6	11.01	355	-10
+8	7	16.00	277	-68
+9	8	4.60	267	-35
+10	9	2.70	146	-11
+
+;NOTES 
+;Stn 1 is a PSS
+;Stn 3 is a PSS
+;Stn 5 is a PSS
+;Stn 6 is bolt at top of pitch (left bolt when approaching pitch)
+;Stn 8 is top of pitch
+;Stn 10 is cuckoo's nest stn 20
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+*end hydrophobia
+
+*equate hydrophobia.10 cuckoos_nest.20
+

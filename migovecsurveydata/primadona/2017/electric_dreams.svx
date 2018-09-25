@@ -1,0 +1,55 @@
+;Primadona
+;Passage over Karstaway
+
+;Date: 17/07/17
+;Instruments: Rhys Tyers/Jack Hare
+;Book: David P Wilson
+
+;Data entered by Tanguy Racine 18/07/17
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+;data on 2 pages
+*begin electric_dreams
+;PAGE 1/2
+2	1	1.12	295	+01
+3	2	6.27	269	+00
+4	3	3.85	197	+09
+5	4	12.83	253	-04
+6	5	9.30	270	+13
+7	6	15.11	-	DOWN
+8	7	7.25	273	-07
+9	8	11.63	-	DOWN
+10	9	4.80	128	-55
+11	10	13.70	175	-13
+12	11	4.88	165	-08
+13	12	8.51	156	-14
+14	13	8.06	172	-20
+
+;PAGE 2/2
+
+15	14	6.90	275	-50
+16	15	6.16	298	-06
+17	16	5.98	272	-16
+18	17	4.43	325	+07
+19	18	4.76	219	-10
+20	19	1.00	-	DOWN
+21	20	3.55	270	+33
+22	21	3.85	218	+30
+23	22	3.99	227	+73
+24	23	2.67	012	+06
+25	24	1.00	-	UP
+
+;NOTES
+;STN 1 IS PSS
+;STN5 IS PSS
+;STN 14 IS PSS
+;STN 18 IS DEAD BAT
+;STN 21 is above Karstaway
+;STN 25 is Y-hang bolt of karstaway
+
+
+*end electric_dreams
+
+*equate electric_dreams.25 karstaway.26

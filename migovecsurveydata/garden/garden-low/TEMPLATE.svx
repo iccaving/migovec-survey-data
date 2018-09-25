@@ -1,0 +1,29 @@
+;####NAME####:
+; ###LOCATION/DESCRIPTION###
+*date 2013.7.14 ; Expedition Za Mig Na Kuk 
+
+;Book + Tape: ###
+;Instruments: ###
+
+;Data entered by ### on ####
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin ###NAME###
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on # pages
+;p#/#
+;#### DATA ####
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end ###NAME###
+; NOTES
+
+; ### SURVEY TIE IN ###
+;*equate free_amalgamation.10 happy_monday.1

@@ -1,0 +1,25 @@
+;pitch below pitches below pink
+;Date: 5/08/01 
+;Instruments: Andrew Jurd
+;Book: James Hooper
+
+;Data entered by CG on 6/8/01
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+
+*begin skynet
+
+1	2	3.01	243	04 ;	stn 1 is pss black carbide mark on spike LHS before pitch head
+3	2	6.36	036	-06
+3	4	2.61	298	-15
+5	4	6.20	159	-27
+5	6	4.16	290	61
+7	6	4.51	050	18
+7	8	18.10	310	56 ; stn 8 is pitch head bolt
+9	8	4.53	201	-31;	stn 9 is carbide S @ pink2.1
+
+*end skynet
+
+*equate skynet.9 pink2.1

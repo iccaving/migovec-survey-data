@@ -1,0 +1,14 @@
+set xth(ctrl,cp,datlist) {}
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 78.25m (surface 0.00m, duplicated 0.00m)\nvertical range: 22.39m (from 25@lost_in_a_dream at 22.10m to 2@lost_in_a_dream at -0.29m)\nnorth-south range: 34.60m (from 21@lost_in_a_dream at 34.43m to 3@lost_in_a_dream at -0.17m)\neast-west range: 13.07m (from 24@lost_in_a_dream at 4.50m to 18@lost_in_a_dream at -8.57m)\nnumber of shots: 24\nnumber of stations: 25"
+xth_cp_data_tree_insert 19 1 1 lost_in_a_dream lost_in_a_dream "Lost in a Dream" "Lost in a Dream" "length: 78.25m (surface 0.00m, duplicated 0.00m)\nvertical range: 22.39m (from 25@lost_in_a_dream at 22.10m to 2@lost_in_a_dream at -0.29m)\nnorth-south range: 34.60m (from 21@lost_in_a_dream at 34.43m to 3@lost_in_a_dream at -0.17m)\neast-west range: 13.07m (from 24@lost_in_a_dream at 4.50m to 18@lost_in_a_dream at -8.57m)\nnumber of shots: 24\nnumber of stations: 25"
+xth_cp_data_tree_create
+set xth(ctrl,cp,maplist) {}
+xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
+xth_cp_map_tree_insert map 1 87X1 p1 1 m1-p m1-p@lost_in_a_dream "" ""
+xth_cp_map_tree_insert map 1 88X1 p1 1 m2-p m2-p@lost_in_a_dream "" ""
+xth_cp_map_tree_insert map 1 89X1 p1 1 m3-p m3-p@lost_in_a_dream "" ""
+xth_cp_map_tree_create
+xth_cp_comp_stat 78 3
+set xth(th_exit_state) 2
+set xth(th_exit_number) 1534668182
+

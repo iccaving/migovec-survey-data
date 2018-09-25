@@ -1,0 +1,36 @@
+;The Atrium
+;Continuation of Stranglehold dropping into hall of the mountain king chamber
+
+;Date: 31/07/17
+;Instruments: Tanguy Racine
+;Book: David P Wilson
+
+;Data entered by Tanguy Racine 2/08/17
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+;data on 1 page
+*begin the_atrium
+;PAGE 1/1
+1	2	2.80	275	-37
+2	3	9.24	316	-80
+3	4	15.60	-	DOWN
+1	5	7.43	118	-08
+5	6	10.53	055	-43
+6	7	8.07	036	+12
+1	8	19.30	066	+57
+8	9	4.81	124	+41
+
+
+;NOTES
+;STN1 is PSS
+;STN7 is far wall of aven
+;STN8 is y-hang knot into Atrium
+;STN9 is PSS stanglehold STN 8
+
+
+*end the_atrium
+
+*equate the_atrium.9 stranglehold.8
+

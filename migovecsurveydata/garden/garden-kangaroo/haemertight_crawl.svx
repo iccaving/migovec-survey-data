@@ -1,0 +1,28 @@
+;Haemertight Crawl:
+; Tight crawl with Haematite floor, 
+;  bashed to pitch dropping into lower mudslump
+;   captain Kangaroo, near mud slump
+*date 2008.08.15 ; 15/08/08
+ 
+;Instruments + Book / Tape: Jarvist Frost / James Kirkpatrick
+
+;Data entered by Jarvist Frost 16/8/08
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin haemertight_crawl 
+6	1	3.68	236	+41	; .1 2 0 1.2 0.5
+1	2	5.90	248	-05	; .2 0.3 0.3 0.5 0.5
+;.1 is above from mudslump pss on large rock
+;.2 is end of rift, before left-handed 90 degree bend to small chamber
+;  with climb down rift to circa. 8m drop to base of mudslump / kill'em chamber
+
+;Passage data Jarv July 2009
+*data passage station left right up down ignoreall
+6 1.5 1.5 3.0 0.0
+1 2 0 1.2 0.5
+2 0.3 0.3 0.5 0.5
+*end haemertight_crawl 
+
+*equate haemertight_crawl.6 mudslump.6

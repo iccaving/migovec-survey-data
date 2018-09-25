@@ -1,0 +1,28 @@
+;M2-E1 Surface Survey
+
+;Date: 25/7/08
+;People: JC/JMF
+
+;Data entered by Jarvist Frost 25/7/07
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin surf_m2e1
+M2	1	16.15	043	-16
+1	2	45.50	122	-12
+2	3	38.24	138	-11
+3	4	23.55	145	-14
+4	5	18.61	151	-22
+5	6	28.57	186	-17
+6	7	19.29	102	-11
+7	8	21.29	074	-12
+8	gps	14.53	078	-33
+gps	bolt	4.33	216	-34
+
+;.6 is boulder in scree valley
+;.7 is boulder above snow cave entrance
+;.gps is gps cairn above E1 on limestone ridge
+;.bolt is bolt above cave entrance E1
+
+*end surf_m2e1

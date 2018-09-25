@@ -1,0 +1,51 @@
+;#### Lost Hopes ####:
+; ### Off Kamikaze / bottom of Mudstone traverse ###
+*date 2010.8.5 ; Expedition Vodna Sled 2010
+
+;Book + Tape: Nicolas Kral
+;Instruments: Tharatorn Supasiti
+
+;Data entered by Jarv on 7-8-2010
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin losthopes
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+
+;Data is on 1 page
+;p1/1
+;#### DATA ####
+
+;from   to      tape    comp    clino; L R U D
+1	2	4.02	356	+01
+3	2	1.83	281	+51
+4	3	9.88	-	up
+1	5	2.89	040	+06
+5	6	7.92	-	up
+6	7	4.08	340	+31
+7	8	5.00	125	+15
+
+;Notes on flipside:
+;.1 is pss cairn in the middle of a pitch ?!?!
+;.4 is a squeeze, long, not surveyed. .4 is bottom of rope
+;.3 is a window which continues in squeeze, not surveyed
+;.8 is kamikaze.30
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	2.5	1.5	5	0	;was 20 on notes
+3	1	1	4	4
+4	1	1	6	0
+
+*data passage station left right up down ignoreall
+5	3	0.5	4	0
+6	2.5	1.5	5	7.92
+7	3	5	0	0
+
+*end losthopes
+
+; ### SURVEY TIE IN ###
+*equate losthopes.8 kamikaze.30

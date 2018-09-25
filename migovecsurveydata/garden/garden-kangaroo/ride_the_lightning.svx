@@ -1,0 +1,33 @@
+;Ride the Lightning
+; Climbing up second shaft of Kill'em All
+*date 2009.08.09 ; 09/08/09
+ 
+;Book + Instruments: Iztok Mozir IM
+;Instruments: Eric Boncina EB
+;Also pushing: Tjasa Rutar
+
+;Data entered by Jarvist Frost 09/8/09
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin ride_the_lightning
+;1 page of data with notes on back
+;2/3 page of plan drawing
+1	2	2.60	212	+49	;.1	0.2	0.2	1	0
+2	3	3.75	189	+38	;.2	0.5	1.4	KAMIN / Chimney (30m?)	2.60
+3	4	6.10	-	down	;.3	0	3.8	-	6.10
+4	5	1.60	216	+13	;.4 	1	1	6.90	0.7
+5	6	2.40	177	+01	;.5	2	0	15	0.4
+6	7	9.70	149	-69	;.6	4	0	10	9
+
+;.1 is PSS
+;.3 is bolt/hanger
+;.4 is cairn
+;.5 .6 are carabiners on traverse
+;JMF - traverse almost perfectly straddles the ridge of rock that bifurcates the kill'em all / ride the lightning shafts
+;.7 is kill em all .1 pss
+
+*end ride_the_lightning 
+
+*equate ride_the_lightning.7 kill_em_all.1

@@ -1,0 +1,33 @@
+; Space Odessey - 2 pitches, in series, after tesselator rift
+
+;Date: 1.8.00
+;Instruments: Ben Johnson
+;Book: James Hooper
+
+;Data entered by BJ & JH on 2.8.00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate tesselator.1 spaceodessey.6
+
+*begin spaceodessey
+
+1	2	3.98	354	-21	; station 1 is pss cairn	
+2	3	19.89	-	up
+4	3	10.60	289	-08
+5	4	25.90	315	-85
+6	5	2.73	344	02	; station 6 is pss cairn
+
+;Passage data JMF 2009-07-18
+;data surveyed from lip of concord, OUT
+*data passage station left right up down
+1   0.5 0.5 10.0    1.0
+2   1.0 1.0 10.0    1.0
+3   0.5 0.5 1.0 5.0
+4   1.2 1.2 5.0 0.5
+5   1.5 1.5 3.0 0.3
+6   0.5 0.5 1.0 0.5
+
+*end spaceodessey
+

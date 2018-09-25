@@ -1,0 +1,24 @@
+; System Migovec 
+; (c) 1994 - 2000 Imperial College Caving Club
+; Surveyed to BCRA Grade 4b
+
+;Main System File
+
+*copyright 2000 ICCC
+
+*begin system
+*flags not surface
+
+*date 1999
+;Generic date, will get overridden in individual data files if date present
+
+*calibrate compass -1.30
+;1996    1° 18' E changing by 0° 4' E/year
+
+*equate m16ent.brezno.50     m16low.shordrop.7
+
+
+*include m16-ent\s_m16ent
+*include m16-low\s_m16low
+
+*end system

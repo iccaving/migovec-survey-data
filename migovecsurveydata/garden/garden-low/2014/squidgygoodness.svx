@@ -1,0 +1,33 @@
+;####Squidgy Goodness####:
+;###Continuation of Rift off Sic Semper Tyrannis###
+*date 2014.8.01 ; Expedition Z Miga Na Kuk
+
+;Instruments: Saber King
+;Book: Sam Page
+
+;Data entered by Rhys Tyers / Dan Greenwald on 2014.8.5
+
+*begin squidgygoodness
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	7.26	162	+23
+3	2	3.13	143	+30
+4	3	3.5	178	-07
+5	4	3.20	132	+35
+6	5	4.60	185	00
+7	6	5.08	145	-03
+7	8	2.10	083	+52	
+;NOTES 
+;stn 1 is pss at bottom of climb prob not free climbable but promising?
+;v. draughty at 2
+;some sludgy organic matter at bottom of pit. hair? dead creature?
+;stn 8 is jericho2 stn 6
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end squidgygoodness
+
+*equate jericho2.6 squidgygoodness.8

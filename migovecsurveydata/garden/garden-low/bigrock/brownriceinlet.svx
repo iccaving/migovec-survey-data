@@ -1,0 +1,26 @@
+;Brown Rice Inlet connects with cascade.4
+;Date: 3/8/04
+;Comp+Clino: Mark Evens
+;Tape: Jim Evens
+;Book: Dave Wilson
+
+;Data entered by Jarvist Frost on 4/8/04
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin brownriceinlet
+
+;page one
+1	2	5.52	184	-18
+2	3	12.18	171	-28
+3	4	1.57	219	0
+4	5	6.68	218	-42
+5	6	3.41	258	-18
+
+*end brownriceinlet
+
+*equate brownriceinlet.6 cascade.4 
+
+
+	

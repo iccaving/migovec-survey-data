@@ -1,0 +1,33 @@
+;#### RCC Passage of the Year ####:
+; ### End of Invictus ###
+*date 2013.08.01 ; Expedition Sledi Vetra
+
+;Book: Clare Tan
+;Tape + Instruments: Rhys Tyers
+
+;Data entered by Clare Tan on 2013.08.03
+
+*begin RCC_passage
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+
+2	1	5.05	209	-26
+3	2	1.30	252	-21
+4	3	5.88	191	-18
+5	4	8.87	140	-53
+6	5	5.40	138	-05
+
+;NOTES 
+;Stn 1 is a PSS
+;Stn 4 is bottom of pitch
+;Stn 6 is Invictus.11
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+*end RCC_passage
+
+*equate RCC_passage.6 invictus.11
+

@@ -1,0 +1,19 @@
+;Planika:
+; Caves in bowl valley immediately below B9
+; Surface survey from ubend
+
+*begin planika
+*date 2007
+;Generic date, will get overridden by individuals
+
+*include planika
+
+*include snow_cold
+
+*include echorift
+*equate echorift.13 planika.4
+
+*include boulderdash ; 14.8.08 - Tim Osborne, Jarvist Frost
+;side chamber off rift window at -10m on main pitch
+
+*end planika

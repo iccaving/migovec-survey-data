@@ -1,0 +1,25 @@
+;Mirage Canyon:
+; Below dark tranquility in Kill'em'All, Captain K
+*date 2009.08.02 ; 02/08/09
+ 
+;Book + Tape: James Kirkpatrick
+;Instruments: Dan Greenwald
+
+;Data entered by Jarvist Frost 03/8/09
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin mirage_canyon 
+;Data is on one page entitled Mirage Canyon
+1	2	15.80	311	+58	; 2 0 30 3
+2	3	13.20	255	+70	; 2.3 2.5 30 10
+3	4	6.27	353	+15	; R R 2 10
+4	5	4.10	098	+30	; 5 0 30 0.5
+5	6	6.00	142	+35	; 1 1 (bolt) 2
+
+;6 is PSS Dark T 1
+
+*end mirage_canyon
+
+*equate mirage_canyon.6 dark_tranquillity.1

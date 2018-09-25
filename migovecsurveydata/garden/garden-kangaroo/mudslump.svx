@@ -1,0 +1,78 @@
+;mudslump:
+; stuff off traverse chamber, captain Kangaroo, near mud slump
+*date 2007.08.02 ; 2/08/07
+ 
+;Instruments / Book: Ben Banfield, Richard Venn (Rik mainly book)
+
+;Data entered by Jarvist Frost 2/08/07
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin mudslump
+
+2	1	2.71	166	-16	;	0.5 0 1 0.25
+3	2	5.52	274	-14	;	0 0.5 1 1
+4	3	1.84	020	+02	;	0 3 4 1
+5	4	3.98	094	-32	;	3 0 4 1
+
+; 4 and 6 are PSS: cairns with notes
+
+7	6	9.48	251	-31	;	2 3 10 3 ; reads as 94.8 on log
+8	7	2.41	208	-62	;	3 1 3 1
+9	8	4.58	216	-37	;	1 0 1 3
+10	9	1.98	271	-17	;	0.5 0.5 0.5 0.5
+11	10	2.01	242	-15	;	S*C*R*O*T
+12	11	4.11	180	-29	;	S*C*R*O*T
+13	12	2.41	124	-44	;	S*C*R*O*T
+14	13	4.05	194	-24	;	2 1 0 1
+14	15	2.80	332	+68	;	S*C*R*O*T
+16	15	3.15	157	-47	;	S*C*R*O*T
+16	17	1.65	339	+03	;	S*C*R*O*T
+17	18	6.17	36	+11	;	S*C*R*O*T
+
+18	19	1.70	164	+09	;	S*C*R*O*T
+19	20	1.99	004	-38	;	S*C*R*O*T
+21	20	2.30	093	-27	;	S*C*R*O*T
+22	21	4.74	154	-19	;	5 0 4 1
+24	23	5.84	184	-37	;	S*C*R*O*T
+25	24	3.48	266	-07	;	S*C*R*O*T
+25	26	2.15	047	-06	;	S*C*R*O*T //maybe misread from '47'
+26	27	6.04	126	-04	;	S*C*R*O*T	
+27	28	2.62	218	+13	;	8 0 15 1
+
+; set of squiggly lines that may or may not be a map
+
+*equate 5 22
+*equate 23 4
+
+;Passage data Jarv July 2009
+*data passage station left right up down
+;the way they surveyed is super complex
+;did a crazy dead-end 1-5, then explored, then started surveying back 6- (from Something Fishy)
+6   2 3 10 3
+7   3 1 3 1
+8   1 0 1 3
+9   0.5 0.5 0.5 0.5
+10  0.5 0.5 0.5 0.5
+11  0.5 0.5 0.5 0.5
+12  0.5 0.5 0.5 0.5
+13  2 1 0 1
+14  0.5 0.5 0.5 0.5
+15  0.5 0.5 0.5 0.5
+16  0.5 0.5 0.5 0.5
+17  0.5 0.5 0.5 0.5
+18  0.5 0.5 0.5 0.5
+19  0.5 0.5 0.5 0.5
+20  0.5 0.5 0.5 0.5
+21  5 0 4 1
+22  0.5 0.5 0.5 0.5
+23  0.5 0.5 0.5 0.5
+24  0.5 0.5 0.5 0.5
+25  0.5 0.5 0.5 0.5
+26  0.5 0.5 0.5 0.5
+27  4 0 7 1    ;defo not 15m high here, more like 7
+;nor is this chamber so big, changed left from 8-->4
+*end mudslump
+
+*equate scrotty.21 mudslump.28

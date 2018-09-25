@@ -1,0 +1,8 @@
+*begin 00a
+  *equate s1.1 s3.6
+  *equate s4.UB s3.UB
+  
+  *include s1
+  *include s3
+  *include s4
+*end 00a

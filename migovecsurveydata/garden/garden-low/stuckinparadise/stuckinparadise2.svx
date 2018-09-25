@@ -1,0 +1,35 @@
+;#### Stuck in paradise 2 ####:
+; ### Second half of pitch from bottom of magic dragon. ###
+*date 2011.8.03 ; Expedition Izkubljaeni Raj
+
+;Laser + Instruments: Izi
+;Book: Gergely
+
+;Data entered by DG on 2011.08.05
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin stuckinparadise2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+2	1	8.87	176	-23
+3	2	5.60	253	-15
+4	3	14.58	172	-55
+5	4	12.06	202	-61
+6	5	7.94	143	-62
+7	6	12.96	261	-54
+8	7	7.73	9	-60
+9	8	2.62	302	-58
+9	10	7.33	174	+49
+*end stuckinparadise2
+; NOTES
+;station 10 is stuck in paradise 4
+; ### SURVEY TIE IN ###
+*equate stuckinparadise2.10 stuckinparadise.4

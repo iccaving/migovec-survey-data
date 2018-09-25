@@ -1,0 +1,162 @@
+;#### The Palace of King Minas ####:
+; ###LOCATION/DESCRIPTION###
+*date 2010.7.29 ; Expedition Vodna Sled 2010
+
+;Book + Tape: Iztok 'Izi' Mozir
+;Instruments: Dan Greenwald
+
+;Data entered by JMF on 30-7 
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+;*begin palace 
+;*data normal from to compass clino tape ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 page
+;p1/1
+;#### DATA ####
+;CLINO WAS READ AS PERCENT
+;2	1	234	-22	3.33
+;3	2	194	-72	8.55
+;4	3	192	-12	8.90
+;5	4	182	-51	9.73
+;6	5	044	-06	2.43
+
+
+;TO BE CONVERTED LATER
+
+;*end palace
+
+;[CG] The palace section was resurveyed by Jana and Gergely as guillotine2. This connected guillotine2.1 with palace.6, which becomes minataur.1
+
+*begin minataur
+;Minataur Rift 29-7-09
+*data normal from to compass clino tape ignoreall
+1	2	034	+21	17.30
+2	3	014	+27	24.65
+3	4	012	+11	28.10
+
+;stn 4 is beginning of minataur rift
+;stn 1 is PALACE of king minas (believe pss .6)
+
+*data passage station left up right down ignoreall
+1	0	0	0	0
+2	1.5	15	0.5	0.3
+3	1	10	1	0.3
+4	0.5	15	0	1.2
+*end minataur
+
+;*equate minataur.1 palace.6
+
+*begin the_queen_bed_chamber
+*data normal from to compass clino tape ignoreall
+1	2	169	-24	7.25
+2	3	157	-66	5.33
+3	4	126	-12	15.03
+4	5	071	+08	6.38
+5	6	015	+07	15.17
+6	7	081	+02	11.28
+7	8	072	+19	29.00
+
+;notes on flipside
+;.8 is pss - palace of king midas (pss .6 we believe)
+;.1 is pss
+;grade I plan
+
+*data passage station left up right down ignoreall
+1	2.7	20	4	1
+2	0.0	25	0.3	3
+3	7.0	1.5	0	2
+4	2	0.7	6	0.2
+5	2	4	3	0.2
+6	0	4	6	0.6
+7	4	3	1	0.2
+8	0	0	0	0
+
+*end the_queen_bed_chamber
+
+*equate the_queen_bed_chamber.8 minataur.1
+
+*begin palace2
+*data normal from to compass clino tape ignoreall
+;p1/2
+1	2	105	+08	10.20
+2	3	172	-03	11.00
+3	4	064	+08	8.19
+4	5	053	+47	4.87
+5	6	088	+35	10.21
+6	7	167	-04	16.34
+7	8	121	-04	26.11
+8	9	064	+30	7.43
+9	10	174	-01	10.97
+
+9	9b	069	+30	13.25	; JKP Blind climb off beginning of palace of king minos
+					; 9b is a cairn
+
+;notes on flipside
+;stn 9 is pss
+;stn 3 is pss, lump on wall, paper on floor nearby
+;stn1 is stn4 of minataur rift
+;grade I plan
+
+;p2/2
+10	11	170	+12	8.28
+11	12	147	-14	20.65
+12	13	172	-19	14.35
+13	14	177	-25	12.33
+14	15	171	+03	12.12
+15	16	068	+02	8.34
+16	17	177	-24	12.30
+
+;notes on flipside
+;stn 17 is pss.1 of prince consort road
+
+*end palace2
+
+*equate palace2.17 consort.1
+*equate palace2.1 minataur.4
+
+*begin ouroboros
+*data normal from to compass clino tape ignoreall
+;p1/2
+1	2	128	+14	2.70
+2	3	023	+34	10.60
+3	4	016	+02	4.22
+4	5	302	+05	5.17
+5	6	307	-02	3.94
+6	7	-	down	1.10
+7	8	297	+01	1.36
+8	9	308	+24	4.40
+9	10	016	-46	4.10
+
+;notes on flipside
+;stn 1 is stn5 of consort
+
+;p2/2
+10	11	315	+02	12.20
+11	12	334	-41	7.15
+12	13	207	-16	11.17
+13	14	263	+02	1.90
+14	15	316	-07	14.15
+15	16	339	+04	13.95
+16	17	314	+10	17.52
+17	18	330	+08	15.52
+18	19	307	+07	22.41
+19	20	002	+17	12.84	
+20	21	004	+01	11.13
+21	22	028	+23	6.43
+22	23	268	+04	6.30
+
+;notes on flipside
+;stn 23 is stn3 of palace2 (king minas)
+*end ouroboros
+
+*equate ouroboros.23 palace2.3
+;*equate ouroboros.1 consort.5
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+

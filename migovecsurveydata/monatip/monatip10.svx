@@ -1,0 +1,68 @@
+;Mona tip
+;katasterska številka: 10180
+;Date: 27/09/15
+*date 2015.09.27
+;Merili:  Rejec Z, Trušnovec B
+;Risal: Zdenko Rejec
+;ostali udelezenci: Fratnik A, Maffi G, 
+;Data entered by Zdenko Rejec 27/09/15
+
+;data normal bcra grade 5
+
+;navezava 
+;*equate 	monatip10.1     monatip07.6 
+
+
+*begin monatip10
+*data normal from to tape compass clino	;komentar
+*set decimal (.)
+1	2	3.66	55		-74.2	; 
+2	3	4.51	55		-84.9	;
+3	4	6.86	68		-43.2	;
+4	5	3.30	122		+15.8	;
+5	6	8.85	138		-1.5	;
+6	7	5.47	130		-8.5	;
+7	8	7.48	89		+8.9	;
+;8	9	3.02	111		-3.7	;podvojena meritev v meritvah "monatip11"
+;9	10	5.78	155		-43.6	;podvojena meritev v meritvah "monatip11"
+;10	11	7.93	126		-3.2	;podvojena meritev v meritvah "monatip11"
+;12	11	6.44	296		+0.7	;podvojena meritev v meritvah "monatip11"
+;13	12	6.13	303		-1.9	;podvojena meritev v meritvah "monatip11"
+;14	13	6.90	327		-13.1	;podvojena meritev v meritvah "monatip11"
+;15	14	13.54	312		+1.0	;podvojena meritev v meritvah "monatip11"
+
+;merjenje globine in višine brezen z lasercem, ki pa se ne upoštevajo v statistiki
+;*flags splay
+*flags duplicate
+2	2a	16.9	0	-90
+4	4a	3.6		0	-90
+4	4b	6.2		0	+90
+5	5a	7.2		0	-90
+5	5b	6.8		0	+90
+6	6a	7.5		0	-90
+6	6b	6.2		0	+90
+;13	13a	4.0		0	-90	;podvojena meritev v meritvah "monatip11"
+;13	13b	14.2	0	+90	;podvojena meritev v meritvah "monatip11"
+;15	15a	30		0	-90	;podvojena meritev v meritvah "monatip11"
+;*flags not splay
+*flags not duplicate
+
+;*data passage station left right up down
+;zaèetna toèka 1 je svedrovec na skali vrh brezna premera 6.5m
+;2 svedrovec vrh brezna premera 1.8m in globine 16.9m
+;3 prehod skozi luknjo v sredino vzporednega brezna premera 5.2m in globine 7.5m
+;4 prehod po krajšem rovu dolžine 2.6m v sredino naslednjega brezna
+;5 zaèetek naslednjega brezna elipsaste oblike dolžine 7.8 in širine 2.8m
+;6 zaèetek rova širine 1,2m in višine 0,5m do 1.5m
+;7 možic: 
+;8 križišèe:levo naprej je potrebno pregledat brezence z možnostjo nadaljevanja
+;9 spust na dno meandra
+;10 zaèetek rova po dnu meandra
+;11
+;12
+;13 zaèetek naslednjega brezna globine cca 4m
+;14 preènica, zaèetek naslednjega brezna globine cca 30m
+;15 možic pri glineni skulpturi, zaèetek stropa brezna pod nami (globine cca 30m)
+
+
+*end monatip10

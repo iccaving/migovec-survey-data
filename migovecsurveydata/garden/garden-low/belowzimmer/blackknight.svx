@@ -1,0 +1,85 @@
+;#### Black Knight ####:
+; ### Black void discovered in the middle of the night, continuation of Korita. ###
+*date 2010.7.28 ; Expedition Vodna Sled 2010
+
+;Tape Worm & Instruments: Myles Denton
+;Book: James 'Tetley' Hooper
+
+;Data entered by Jarv on 29-7-2010
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin blackknight
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 2 pages
+;p1/2
+2	1	7.80	348	+17	; was 1 to 2 in notes - Myles remembers reading instruments from 2
+2	3	14.00	185	+00	; This is probably the wrong way around - splay leg into sump
+					; Perhaps compass / direction was inferred incorrectly
+;BREAK IN THE SURVEY
+
+4	1	5.35	357	+07
+4	5	6.50	173	+26
+5	6	4.40	161	+14
+6	7	6.31	154	-11
+7	8	4.23	183	-30
+8	9	7.27	174	-10
+9	10	5.17	186	-43
+
+;notes on flipside
+;stn 1 is a pss
+;stn 10 is a pss at bottom of climb
+;stn 14 is a bolt
+;stn 15 is a bolt
+;Grade I plan of stns 1-4, including bypassed duck
+
+;p2/2
+11	10	1.32	319	+14
+11	12	9.45	166	+15
+12	13	6.04	192	+13
+;BREAK IN SURVEY
+
+1	14	8.84	343	+59
+14	15	6.41	036	+14
+15	16	17.29	351	+58
+16	17	5.70	305	+60
+
+;NOTES ON FLIPSIDE:
+;sketch grade I plan of dry passage duck bypass (stn 11,10,12,13)
+;stn 13 is a PSS
+;blackknight.17 is korita.14
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	2	2	8	1
+2	0	0.5	3	0.2
+3	0	0.5	0.5	0.2
+
+*data passage station left right up down ignoreall
+4	1	1	5	1.5
+5	1	0	0.5	0.5
+6	0	0.5	3	1
+7	0	0.5	1	2
+8	0.5	0	2	2.5
+9	0	0.5	4	2
+10	3	0	5	2
+11	0.5	0	4	1.5
+12	0.5	0.5	1.5	0.5
+13	0.5	0	2	2	; down is really 20?
+
+*data passage station left right up down ignoreall
+14	0	3	12	8
+15	3	0	10	5	;up is 20+ really
+16	8	1	5	15
+17	3	2	5	8
+
+
+
+*end blackknight
+
+; ### SURVEY TIE IN ###
+*equate blackknight.17  korita.14

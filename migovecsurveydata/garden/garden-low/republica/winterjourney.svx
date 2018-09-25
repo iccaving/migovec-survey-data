@@ -1,0 +1,45 @@
+;####Winter Journey####:
+; ###Continuation of Penguin's egg - Dry bypass after daydreamers + dream.2, below insomnia ###
+*date 2011.08.05 ; Expedition Izkubljaeni Raj
+
+;Tape: Andrej Fratnik
+;Book + Instruments: Jarvist Frost
+;Also present: Jim Evans
+
+;Data entered by Clare Tan on 2011.8.07
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin winterjourney
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	5.40	169	-33
+2	3	6.20	136	-20
+3	4	8.40	105	+21
+4	5	5.70	158	-08
+5	6	4.10	151	+09
+6	7	8.00	165	-22
+7	8	2.10	190	-36
+7	9	4.30	043	+39
+9	10	4.30	137	+49
+10	11	6.40	083	+23
+11	12	3.10	337	+52
+12	13	6.00	010	+29
+13	14	3.70	006	+18
+
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end winterjourney
+; NOTES
+;Station 1 is PSS below 10cm rift in ceiling that draught disappears into
+;Station 8 is closest point to rumble of stream, deepest in Vrtnarija
+;Station 14 is PSS Penguin's egg station number 11 
+; ### SURVEY TIE IN ###
+*equate winterjourney.14 penguinsegg.11

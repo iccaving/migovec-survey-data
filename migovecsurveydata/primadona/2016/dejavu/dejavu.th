@@ -1,0 +1,50 @@
+encoding  utf-8
+survey dejavu
+  input "dejavup.th2"
+  
+  map mdejavup_1 -projection plan
+      dejavup_1
+  endmap
+  
+  map mdejavup_2 -projection plan
+      dejavup_2
+  endmap
+  
+  centreline
+    date 2016.07.20
+    explo-team "Tanguy Racine"
+    explo-team "Clare Tan"
+    team "Clare Tan" insts
+    team "Tanguy Racine" notes
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    #PAGE 1
+    1	2	5.01	021	+36
+    2	3	6.22	314	+13
+    3	4	4.22	291	-17
+    4	5	3.54	078	+05
+    5	6	4.92	060	-02
+    6	7	4.92	061	+37
+    7	8	1.75	107	-11
+    8	9	6.65	038	+44
+    9	10	15.05	308	+25
+    10	11	2.39	171	-31
+    11	12	18.76	221	+12
+    11	13	17.26	210	-21
+
+    #NOTES
+    #Stn1 is PSS
+    #Stn8 is PSS at bottom of aven
+    #Stn11 is PSS in chamber with pitch and climb
+    #Stn12 is start if climb
+    #Stn13 is PSS at pitch head
+    
+  endcentreline
+  
+endsurvey
+
+
+

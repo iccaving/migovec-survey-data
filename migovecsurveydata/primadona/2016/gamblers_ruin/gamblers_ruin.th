@@ -1,0 +1,39 @@
+survey gamblers_ruin
+	#Expedition Neprehojene Poti
+	#Draughting rift off Upside Down chamber
+
+	input gamblers_ruin-p.th2
+
+	map m1p -projection plan
+		gamblers_ruin-p1
+	endmap
+	
+
+	centreline
+		date 2016.07.26
+		explo-team "Jack Hare"
+		explo-team "Miriam North"
+		explo-team "Clare Tan"
+		explo-team "Rhys Tyers"
+
+		team "Jack Hare" insts tape
+		team "Miriam North" insts tape
+		
+		#Page 1/1
+		1	2	8.67	160	+45
+		2	3	4.92	165	+40
+		3	4	5.87	145	+05
+		5	4	5.76	-	down
+		5	6	4.87	135	+75
+		7	6	3.23	315	-25
+		8	7	5.08	010	-45
+		8	9	2.11	140	+15
+
+		#NOTES 
+		#Stn 1 is a PSS
+		#Stn 7 is cairn in upside down chamber at top of pitch
+		#Stn 9 is Upside Down Chamber Stn 5
+
+
+	endcentreline
+endsurvey

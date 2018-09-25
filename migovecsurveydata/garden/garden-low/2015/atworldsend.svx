@@ -1,0 +1,32 @@
+;####At Worlds End####:
+;###Continuation of Davy Jones' Locker###
+*date 2015.8.4 ; Expedition Pivo Moz
+
+;Instruments: Rhys Tyers
+;Book: Tanguy Racine
+
+;Data entered by Rhys Tyers / William French  on 2015.8.7
+
+*begin atworldsend
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/1
+2	1	5.03	301	-14
+3	2	2.29	315	+29
+4	3	1.63	259	+29
+5	4	1.91	229	-37
+6	5	4.24	278	-60
+7	6	1.95	281	+05
+8	7	14.71	-	down
+9	8	1.27	124	+22
+;NOTES 
+;stn 9 is Davy Jones' Locker stn 1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end atworldsend
+
+*equate atworldsend.9 davyjoneslocker.1

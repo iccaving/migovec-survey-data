@@ -1,0 +1,34 @@
+;Planika:
+; Caves in bowl valley immediately below B9
+; Surface survey from ubend
+
+;Date: 2-Aug-2007
+;Instruments: Jarvist Frost
+;Book: Jana Carga
+
+;Data entered by JMF 2-Aug-2007
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin surf_ubend_planika
+*flags surface
+;first page of data: Surface from u-bend up over B9, 
+;down to GPS cairn, and down abseil to higher planika entrance
+;data on one page, no LRUD
+
+1	2	3.27	104	+43	; .1 isriht hand bolt u-bend entrance
+3	2	32.07	180	-44
+3	4	31.70	035	+42
+5	4	25.60	222	-42
+5	6	19.26	002	+21	; .6 is Jarv's head in dwarf pine
+7	6	18.89	163	+15
+7	8	17.10	012	-33	; .8 is pyramid on big rock in b9 valley (can GPS)
+9	8	10.00	021	-14
+10	8	4.90	121	-03
+10	11	14.39	200	-14	; .11 is PSSbolt, right of y-hang 
+11	12	3.07	274	-52
+12	13	13.60	230	-70	; .13 is pencil + on edge of ledge at bottom of abseil
+13	14	22.91	180	-41	; .14 is PSS cairn on south corner of small planika entrance
+14	15	2.63	288	-01	; .15 is pitch bolt on upper of entrance
+*end surf_ubend_planika

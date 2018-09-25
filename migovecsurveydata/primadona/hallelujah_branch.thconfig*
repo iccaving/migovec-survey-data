@@ -1,0 +1,16 @@
+encoding  utf-8
+source "hallelujah_branch.th"
+layout local
+  
+  scale 1 1000
+  colour map-fg [92 86 65]
+  map-header 0 0 n
+  symbol-hide line survey
+  symbol-hide point station
+  #legend on
+  
+  symbol-assign line slope BCRA
+  
+  endlayout
+  
+export map -o "hallelujah_branch.pdf" -layout local

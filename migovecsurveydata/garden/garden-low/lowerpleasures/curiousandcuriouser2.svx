@@ -1,0 +1,42 @@
+;#### Curious and Curiouser 2 ####:
+; ### tie in Curious and Curiouser to yorkshire ###
+; ### survey of curious and curiouser was not completed by Rhys and Tim ###
+*date 2010.7.25 ; Expedition Za Mig Na kuk 2013
+
+;Book + Tape: Saber King, Oliver Myerscough
+;Instruments: Saber King, Oliver Myerscough
+
+;Data entered by Saber King, Oliver Myerscough
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin curiousandcuriouser2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 pages
+;p1/1
+;#### DATA ####
+14b	15	3.52	073	+16
+15	16	2.14	096	0
+16	17	2.58	021	-19
+17	18	2.52	058	+2
+18	19	3.25	080	+12
+19	20	2.70	136	+32
+20	21	3.82	212	+9
+21	22	5.87	116	+5
+22	23	1.07	100	+21
+23	24	2.63	058	+18
+24	25	3.55	121	+2
+25	26	1.80	062	+3
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end curiousandcuriouser2
+; no NOTES
+
+; ### SURVEY TIE IN ###
+*equate curiousandcuriouser2.26 yorkshire.1 

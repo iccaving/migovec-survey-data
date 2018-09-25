@@ -1,0 +1,33 @@
+;####Jericho2####:
+;###Continuation of Rift off Sic Semper Tyrannis###
+*date 2014.7.26 ; Expedition Z Miga Na Kuk
+
+;Instruments: Tanguy Racine
+;Book: Sam Page
+
+;Data entered by Rhys Tyers / Dan Greenwald on 2014.8.5
+
+*begin jericho2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	11.3	344	-04
+3	2	3.48	186	-14
+3	4	5.75	330	-03
+5	2	3.21	208	+66
+6	5	7.09	345	-05
+7	5	4.10	164	+37
+8	7	5.63	158	+01	
+;NOTES 
+;holes at 1 and 4 drop thrugh many layers of rift
+;hole at 6 drops 2m and continues, not free climbable
+;station 6 is pss, undropped hole
+;station 8 is jericho stn 1
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end jericho2
+
+*equate jericho2.8 jericho.1

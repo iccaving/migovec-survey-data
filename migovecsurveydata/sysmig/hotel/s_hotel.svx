@@ -1,0 +1,26 @@
+; System Migovec 
+; (c) 1994 - 1998 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;System Mig - XXX to Hotel
+
+*begin hotelt
+    *date 1997.07
+    *calibrate compass -1.38
+	*include xxx
+	*include sajeta
+	*include hotel
+
+    *date 1998.07
+    *calibrate compass -1.47
+	*include arrow
+	*include bridge
+	*include adder
+	*include elephant
+	*include mousse
+	*include trunk
+	*include bosh
+	*include waterloo
+*end hotelt
+
+

@@ -1,0 +1,109 @@
+;Surface survey
+
+*begin surf
+*flags surface
+
+	;1996 survey
+	*begin 96
+	*date 1996
+    *calibrate compass -1.30    ; declination to 1996
+	   *include 96/s1
+		*include 96/s2
+		*include 96/s3
+		*equate s3.M18 s1.M18
+	*end 96
+
+	;2000 survey
+	*begin 00
+	*date 2000
+    	*calibrate compass -1.633  ; declination to 2000
+	  *equate s1.1 s3.6
+	  *equate s4.UB s3.UB
+	  *equate s2.GW s5.GW
+	  *equate s5.15 s6.1
+	  
+	  *include 00/s1
+	  *include 00/s3
+	  *include 00/s4
+	 
+	 *include 00/s2
+	 *include 00/s5
+	 *include 00/s6
+	*end 00
+	
+	;2001 survey
+	*begin 01
+	*date 2001
+    	*calibrate compass -1.72 ; declination
+	 *equate s0725.M10 sM10_RV_M17.M10
+	 *equate s0725.M15 sM10_RV_M17.M15
+	 *equate sM17_NSCa.M17	sM10_RV_M17.M17
+	 *equate sM17_NSCa.9	sM17_NSCb.18
+	 *equate sM16_M4_M18.M4	s0725.M4
+	 
+	 *include 01/s0725 ;M10 to M15 via M4
+	 *include 01/sM10_RV_M17 ;M10 to M15 via Royston Vasey 
+	 *include 01/sM17_NSCa  ;1st leg M17 to new slov cave
+	 *include 01/sM17_NSCb  ;2nd leg M17 to new slov cave
+	 *include 01/sM16_M4_M18
+	 
+	 *include 01/s0801
+	 *include 01/sFR_GW
+	*end 01
+
+	;2007 survey
+	*begin 07
+	*date 2007
+    	*calibrate compass -2.30
+	 *include 07/surf_m6m16
+	 *include 07/surf_ubend_planika
+	 *include 07/surf_prima_planika
+	*end 07
+
+	*equate 07.surf_m6m16.M16 96.s1.M16
+	*equate 07.surf_ubend_planika.14 07.surf_prima_planika.1
+	*equate 00.s4.UB 07.surf_ubend_planika.1
+	*equate 00.s4.PM 07.surf_prima_planika.7
+
+	;2008 survey
+	*begin 08
+	*date 2008
+    	*calibrate compass -2.52
+	  *include 08/surf_m2e1
+	  *include 08/surf_gardenvilinska
+	*end 08
+	*equate 08.surf_m2e1.M2 96.s1.M2
+	*equate 08.surf_gardenvilinska.1 00.s5.GW
+
+	
+	;2010 suvey
+	*begin 10
+	*calibrate compass -2.61666
+	*date 2010
+		;super laser accuracy tie ins woot woot
+	*end 10
+
+	*equate 01.s0801.25 00.s1.17
+	*equate 01.sFR_GW.gw 00.s5.GW
+	*equate 00.s2.M18	01.sM16_M4_M18.M18
+	*equate 01.sM16_M4_M18.M16	00.s1.M16
+	*equate 01.s0725.M10 00.s1.M10
+	*equate 96.s1.M16 00.s1.M16
+	*equate 96.s1.M10 00.s1.M10
+	*equate 96.s1.M18 00.s2.M18
+	*equate 96.s2.M10 00.s1.M10
+	*equate 96.s2.M15 01.s0725.M15
+	*equate 96.s2.M17 01.sM10_RV_M17.M17
+
+	;2017 survey
+	*begin 17
+	*date 2010
+	*include 17/gondolin_surface
+	
+	*end 17
+	
+  	*equate 17.gondolin_surface.bcairn 00.s1.5
+	
+*end surf
+
+

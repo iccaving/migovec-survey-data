@@ -1,0 +1,36 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;pitch down off NCB
+
+;Date: 16/8/96 
+;Instruments: CV Pete
+;Book: CV Pete
+
+;Data entered by Mark 18/8/96
+
+;data normal bcra grade 5
+
+*equate plop.0 gallery.10
+
+*begin plop
+*date 1996.08.16
+*team "Peter Eland" 
+*team "Sarah Wingrove"
+;notes
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5SllHRVIzbjV5Wlk
+;diagrams
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5RHNCazM5cVlpYUU
+
+*flags duplicate ; This was resurveyed in 'plopzilla'
+
+*data normal from to tape compass clino
+0       1       3.90    -       down
+1       2       4.99    052     +28
+2       3       4.83    102     +16
+3       4       40.0    -       down    ;approximate pitch depth
+
+;3 is PSS at head of pitch
+
+*end plop

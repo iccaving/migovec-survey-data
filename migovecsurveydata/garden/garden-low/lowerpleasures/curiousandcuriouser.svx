@@ -1,0 +1,42 @@
+;####Curious And Curiouser####:
+;###Continuation of Yorkshire###
+*date 2013.07.18 ; Expedition Z Miga Na Kuk
+
+;Tape + Instruments: Tim Child
+;Book: Rhys Tyers
+
+;Data entered by David Kirkpatrick / Rhys Tyers on 2012.8.12
+
+*begin curiousandcuriouser
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+2	1	5.80	233	-35
+3	2	6.22	288	-18
+4	3	2.64	237	-22
+5	4	2.03	314	-10
+6	5	3.11	260	-22
+7	6	2.94	330	00
+8	7	9.55	025	00
+9	8	4.88	310	-15
+10	9	6.00	346	+6
+11	10	9.57	304	-2
+12	11	5.75	321	-29
+
+;Page 2/2
+13	12	8.39	316	-13
+14	13	2.54	319	+21
+
+;NOTES 
+;station 9 is PSS
+;station 14 is PSS
+;station 1 is pss
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end curiousandcuriouser
+*equate curiousandcuriouser.14 curiousandcuriouser2.14b
+

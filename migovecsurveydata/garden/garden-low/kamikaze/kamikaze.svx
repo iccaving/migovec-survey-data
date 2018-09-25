@@ -1,0 +1,105 @@
+;####Kamikaze####:
+; ###pitch and bedding below the traverse at end of hidden surprise###
+*date 2010.8.4 ; Expedition Vodna Sled 2010
+
+;Book : Dave Wilson ###
+;Instruments: James Kirkpatrick###
+
+;Data entered by James Kirkpatrick on 4.8.2010
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin kamikaze
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 3 pages
+;p1/3
+;#### DATA ####
+1	2	17.08	183	-27
+2	3	9.27	161	-17
+3	4	5.00	195	-18
+4	5	3.86	122	+3
+5	6	3.89	183	-17
+6	7	6.34	227	-18	
+7	8	.57	240	0
+8	9	6.51	327	+3
+9	10	4.06	314	+20
+10	11	0.39	-	down
+11	12	3.98	318	+29
+12	13	5.67	352	-2
+13	14	3.14	288	+1
+
+;p2/3
+;###DATA###
+
+14	15	1.45	184	+10
+15	16	9.33	333	+4
+16	17	2.21	301	0	
+17	18	5.47	339	-5
+18	19	0.8	-	up
+19	20	4.43	318	+6
+20	21	4.53	264	-18
+21	22	7.01	338	+4
+22	23	1.65	40	+70
+23	24	9.10	326	+5	
+24	25	1.46	-	down
+25	26	.55	-	up
+26	27	5.85	195	+6
+
+;p3/3
+27	28	4.78	285	+16
+28	29	1.56	-	up
+29	30	2.31	182	+42
+30	31	2.02	298	-23
+31	32	6.87	-	up
+32	33	9.42	242	+58
+33	34	5.62	172	+39
+34	35	3.42	284	+5
+					
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+;1 	2	1	1	1
+;2	1	1	0	0.5
+;3	0	1.5	.2	0
+;4	1.5	.2	0	3	
+;5	0	1	0.5	0.7
+;6	1	0	1	0.5
+;7	1	0	1	1.5
+;8	1	0	1	1.5
+;9	0	1	1	0
+;10	1.5	0	0.5	0.25	
+;11	1.5	0	0.75	0
+;12	0	1.5	1	0.5
+;13	1.5	0.5	0.7	0
+;14	1	0	0.5	0.5
+;15	0.2	0.5	1	0
+;16	1.5	0	1	0.2
+;17	1	1	2	0
+;18	.5	.5	1	0
+;19	.15	.5	.2	0
+;20	2	0	4	1
+;21	1	1	1	0
+;22	0	2	3	2
+;23	.5	2	3	.5
+;24	1	1	0	1.5
+;27	1	2	.5	.5
+;29	4	4	8	1	
+;30	5	4	10	0
+;31	5	5	10	0		
+*end kamikaze
+; NOTES
+;1-4 bedding. possible lead at 4
+;7 is pit between bedding slopes
+;22/23 high rift
+;23/24 hole in floor small but draftiing
+;25 is pss cairn 
+;30 is pss on pitch ledge
+;31 is bottom of rope
+;32 is bolt
+;33 is near top bolt
+;35 is pss 1 os hidden surprise
+; ### SURVEY TIE IN ###
+*equate surprise.1 kamikaze.35 

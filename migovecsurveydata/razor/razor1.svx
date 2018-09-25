@@ -1,0 +1,77 @@
+;Razor1: First block of data is NW corner of Planina Razor (The Hut)
+; Second block is from entrance cairn to random place that Martin found
+; Three more legs to PSS at limit of survey, with thee ways on...
+
+;Date: 1-Aug-2007
+;Instruments: Mad Dog McGowan
+;Book: Goaty
+
+;Data entered by JMF 1-Aug-2007
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+
+*begin srazor
+*flags surface
+;first page of data: Razor Jama Surface Survey MM/MR 1/8/2007
+
+s1	s2	19.00	277	-18
+s3	s2	48.22	146	+19
+s3	s4	29.40	325	-06
+s5	s4	47.20	086	+04
+s5	s6	50.00	273	-06
+s7	s6	50.00	090	+09
+s7	s8	38.28	274	-16
+s9	s8	50.00	035	+10
+s9	s10	17.24	289	-19
+s11	s10	34.52	050	+25
+s11	s12	20.44	265	-28
+s13	s12	22.24	113	+19
+s13	s14	15.70	255	-18
+s15	s14	10.70	160	-32
+s15	s16	18.70	258	+08
+s17	s16	13.29	157	-38
+s17	s18	2.15	056	+09 ; 18 is PSS: Cairn in entrance of cave
+*end srazor
+
+*entrance razor1.1
+*begin razor1
+;second page of data: Razor Jama Entrance
+
+; 2 1 3 2
+1	2	4.92	015	+47 ; 3 0 1.5 1 ; 1 is srazor.s18
+3	2	21.15	145	+10 ; 3 2 1.5 0
+3	4	5.57	005	+16 ; .75 .25 0 2
+5	4	4.22	117	+42 ; 0.5 0 1 0
+6	5	3.22	160	+17 ; 0.5 0.5 1 0
+7	6	7.50	139	+25 ; 1.5 3 1.5 0
+8	7	3.30	186	-17 ; 1.0 1.0 n/a 1.0
+9	8	2.92	-	down ; 0 4 1 n/a
+10	9	3.40	270	-20 ; 3.5 1 2 0.5   ; station 10 is PSS: small cairn in chamber
+
+;At this point, Goaty believes that they entered a fault
+;Fractures, displacement, slickensides and Brecca
+
+11	10	6.55	165	+01 ; 1 0 2 n/a
+12	11	4.30	080	+50 ; 0 1.5 2 0.5
+13	12	7.50	176	-17 ; 1.5 0 0.5 1.5
+14	13	4.90	161	+06 ; 0.5 0 0.2 0.75
+15	14	1.81	181	-50 ; 0.5 0 0.2 2.0
+16	15	3.44	165	-68 ; 0.5 0.5 1.2 0.0
+17	16	4.69	228	-45 ; 0.5 0.0 2.0 0.5
+18	17	3.19	155	-47 ; 0.0 3 0 1.5 ; station 18 is flake on left hand wall with tag of paper jammed under rock
+19	18	3.10	181	+14 ; 0.2 0.0 3 1.5
+20	19	3.65	121	+46 ; 0.0 0.2 1.0 1.0
+21	20	2.85	130	+33 ; 4 3 1 0  ; 21 is a PSS: small cairn in chamber
+22	21	1.70	096	+16 ; 3 4 0 3 ; drops down to choke area
+
+;went wrong on route, retured to station 18
+; Third page
+
+b2	18	5.58	202	+01 ; 0 0.5 0.5 0
+b3	b2	3.30	280	-01 ; 1 1 ? 0.5	; b3 is cairn in middle of rift pitch
+
+*end razor1
+
+*equate srazor.s18 razor1.1

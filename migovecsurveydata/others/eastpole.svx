@@ -1,0 +1,27 @@
+;[Blowing Hole]	east pole
+
+;Date: [1/8/98]
+;Instruments: [Ben]
+;Book: [Ben]
+
+;Data entered by [Ben] on [2/8/98]
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+;*fix eastpole.1	5404690	5123200	1770
+
+*begin eastpole
+1	2	11.00	045	+50
+2	3	10.00	035	+80
+3	4	6.00	050	+45
+4	5	2.00	020	+35
+5	6	3.00	015	+50
+6	7	6.00	065	+50
+7	8	3.00	155	+10
+8	9	3.00	345	+75
+9	10	3.00	345	+45
+10	11	5.00	245	-20
+9	12	4.00	040	+45
+12	13	9.00	125	+30
+
+*end eastpole

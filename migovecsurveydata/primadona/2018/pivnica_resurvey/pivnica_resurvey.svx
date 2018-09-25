@@ -1,0 +1,43 @@
+;####Pivnica Resurvey####:
+;###Pitch series below Ajdovcina###
+*date 2018.07.16 ; Expedition Klic Globin
+
+;Tape: James Wilson
+;Book: James Wilson
+;Instruments: Nick Koukoulekeidis
+;Data entered by James Wilson on 18/07/2018
+
+*begin pivnica_resurvey
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+*flags duplicate
+2	1	9.85	057	+22
+3	2	5.87	263	+22
+3	4	3.42	0	down
+5	4	6.81	071	-2
+5	6	1.59	293	-62
+7	6	3.39	010	+53
+7	8	14.91	0	down
+9	8	3.94	053	-1
+10	9	3.61	052	-14
+11	10	16.95	035	+66
+11	12	3.68	257	-48
+12	13	21.29	0	down
+*flags not duplicate
+;NOTES 
+;Appears on PSSs as 'Below Ajdov'
+;STN 1 is bottom of what a coincidence rope
+;STN 6 is 2nd bolt of Pivnica
+;STN 13 is PSS at bottom of pitch
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end pivnica_resurvey
+
+*equate buckwheat_resurvey.1 pivnica_resurvey.1
+

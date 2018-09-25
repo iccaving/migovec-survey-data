@@ -1,0 +1,37 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;The hydrant series (end)
+
+
+;Date: 6/8/99
+;Instruments: J Evans
+;Book: A Gossen
+
+;Data entered by J Hooper on 6/8/99
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate hydrant.34 hydrant2.1
+
+*begin hydrant2
+
+2	1	12.25	035	82
+3	2	31.35	070	82	;3 IS AT BOTTOM OF PITCH PSS
+3	4	19.31	161	40
+
+*end hydrant2
+
+
+*begin ROTTING
+*date 1991
+*flags SPLAY 
+; 'M16 surveyed to -547 in 1983. Hydrant2. 3 is at 425m deep.'
+SOCIALISM COMMUNISM 	122.0 	- 	down
+*flags not SPLAY
+*end ROTTING
+
+*equate ROTTING.SOCIALISM hydrant2.3
+

@@ -1,0 +1,28 @@
+encoding  utf-8
+survey mfi
+  input "mfip.th2"
+  
+  map mmfip_1 -projection plan
+    mfip_1
+  endmap
+  
+  map mmfip_2 -projection plan
+    mfip_2
+  endmap
+
+  centreline
+    date 2016.07.21
+    explo-team "Rhys Tyers"
+    explo-team "Jack Hare"
+    team "Jack Hare"  insts tape
+    team "Rhys Tyers"  notes
+
+#Page 1/1
+1	2	3.31 050	+48	
+2	3	7.80	287	+81
+3	4	19.66	050	+65
+4	5	1.56	347	-05
+endcentreline
+
+endsurvey
+

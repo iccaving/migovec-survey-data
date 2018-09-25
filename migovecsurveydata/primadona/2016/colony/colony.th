@@ -1,0 +1,47 @@
+encoding  utf-8
+survey colony
+  input "colonyp.th2"
+  
+  map mcolonyp_1 -projection plan
+    colonyp_1
+  endmap
+  
+  map mcolonyp_2 -projection plan
+    colonyp_2
+  endmap
+  
+  map mcolonyp_3 -projection plan
+    colonyp_3
+  endmap
+
+  centreline
+    date 2016.07.22
+    
+    explo-team "William Scott" 
+    explo-team "Tanguy Racine"
+    explo-team "Andrej Fratnik"
+    explo-team "Jack Hare"
+    team "Jack Hare" notes
+    team "William Scott" insts
+    team "Andrej Fratnik" tape
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    #Data on 1 page
+    
+    #Page 1/1
+    1  2  11.32  145  -05
+    2  3  7.95  182  -15
+    3  4  2.80  198  -19
+    4  5  4.60  142  +18
+    5  6  5.70  158  +11
+    6  7  1.94  101  +24
+    7  8  2.30  196  +76
+    8  9  1.21  106  +39
+    1  10  46.00  -  Down
+    
+  endcentreline
+endsurvey
+

@@ -1,0 +1,26 @@
+;passage leading down towards sump
+
+;Date: 1/8/98
+;Instruments: JSPDT
+;Book: JSPDT
+
+;Data entered by J Hooper on 4/8/98
+
+;data normal bcra grade 3
+;from	to	tape	comp	clino
+
+*equate sump2.1 sump1.1
+
+*begin sump2
+*date 1998.08.01
+
+2	1	4.4	067	10
+3	2	4.8	115	49
+4	3	13.7	058	52	;bearing may be 158
+5	4	6.1	075	30
+6	5	5.2	170	32
+7	6	3.5	144	35
+8	7	2.2	145	53
+9	8	6.0	044	35	;9 is the sump
+
+*end sump2

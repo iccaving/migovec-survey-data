@@ -1,0 +1,59 @@
+; Bonus - the continuation of captain kangaroo from Zubafu
+; Marcin Kowalski & Rik Venn 
+; 24/7/05
+
+*equate bonus.18 zubafu.10
+
+*begin bonus
+;from	to	tape	co	cl
+0	1	2.40	283	0
+1	2	6.30	-	up
+2	3	2.85	340	-22
+3	4	2.60	024	+11
+4	5	2.85	336	-23
+5	6	3.60	336	+1
+6	7	1.70	000	-7
+7	8	0.55	324	+16
+8	9	2.40	-	up
+9	10	3.25	328	+21
+10	11	5.50	030	+14
+11	12	3.00	029	-75
+12	13	13.1	-	up
+13	14	1.20	110	0
+14	15	9.10	156	-6
+15	16	7.90	126	-31
+16	17	3.00	-	up
+17	18	2.65	082	-12
+; stn bonus.0 is pss cairn at end of push
+; bonus.3 is pss cairn
+; bonus.12 is pss cairn
+; bonus.18 is Zubafu.10 pss cairn
+;	stn	l	r	u	d
+;	0	2	6	8	1
+;	1	0.5	0.5	1	6
+;	10	2	2	10	0
+;	11	3	3	10	0
+;	12	0.5	0.5	4	0
+
+;JMF 2008-06-04
+*data passage station left right up down ignoreall
+0       2       6       8       1
+1       0.5     0.5     1       6
+
+*data passage station left right up down ignoreall
+;JMF Made up, but this is still in the Bonus chamber...
+10	1	1	10	0
+
+11      2       2       12.0     1.0
+12      3       3       7      1.0
+13      0.5     0.5     2       7 
+
+;JMF made up by Jarv, from survey / memory
+;This is continuing from top of pitch (13) and back towards Zubafu, over the climb
+14	0.5	0.5	2	2
+15	1.0 	0.5	2	1.5	This must be standing on one side of pit / climb
+16	0.75	0.75	4	1	And this must be below
+17	0.5	0.5	0.5	0.5	And this must be the 'head' of the climb
+18	0.5	0.5	1.0	1.0	And this must be the bit of rift crawling along
+
+*end bonus

@@ -1,0 +1,597 @@
+; System Migovec 
+; (c) 1994 - 1998 Imperial College Caving Club and Jamarska sekcija PD Tolmin
+; Surveyed to BCRA Grade 5b
+
+;PriMadoni
+*begin prim
+
+*include zima00
+*include TTT
+*include prima1
+*include prima2
+*include drugi
+*include risanke
+*include pov
+*include risa1
+*include podor
+*include risa2
+*include galerija
+*include galerija2
+*include spodnji
+*include milanova
+*include smer0
+*include ajdovscina
+*include berti
+
+*include mulatera
+
+;*include poliB
+
+*end prim
+;merila bozo in tadej
+;spremljevalna ekipa cuder in roso
+;27 in 28 dec.00
+;akcija trajala 17 ur
+
+*equate zima00.22	ttt.1 
+
+*begin zima00
+
+1	2	12.6	0 	90	;1. tocka je mozicek na koncu strika
+2	3	13	307	60	
+3	4	24	0	90
+4	5	20.2	075	50	;5. tocka pivnica pivci roso, behc, cuder
+5	6	4.2	064	0
+6	7	19.5	035	70
+7	8	10.6	100	5
+8	9	5.3	035	35
+9	10	22	015	55
+10	11	18.8	0	90	;10. tocka fix nad njim odcep "drek"
+11	12	9	300	40
+12	13	22	0	90
+13	14	5.4	075	0	
+14	15	6.8	040	0	
+15	16	6.2	322	28
+16	17	13	005	5	
+17	18	3.8	145	28
+18	19	7.2	040	40
+19	20	4.2	107	37
+20	21	6.7	070	-10
+21	22	15	050	0    ;tocka 22 je enaka tocki 1 od ttt
+
+*end zima00
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+;Large entrance overlooking Tolminka valley.Due east of M17.At the top of a steep gully from the path leading to Tolminka Valley from Kahl (Shepherds Hut), signposted Rille. Entrance in the corner of a vertical gully, steep snow slope leading straight to to Pitch One.8 entrance pitches down to about -150M. Followed by rifts and meanders, with several free climbs to Pitch 9. Followed by angled rift to Bat Pitch (p10). More rift and 2 pitches lead to TTT.
+
+;Date: 8/07/00
+;Instruments: Tomaz & Jan Evetts
+;Book: Jan Evetts
+
+;Data entered by Jan Evetts on 12/07/00
+
+*equate ttt.34	prima2.1 
+
+*begin ttt
+
+1	2	41.5	-	up	;stn 1 cairn at bottom of rope (Pitch 'TTT')
+2	3	12.8	052	50	;stn 2 bolt at top of 'TTT'pitch (p13)
+3	4	8.6	050	0	;stn 3 bolt at top of pitch 12
+4	5	7.2	051	0	
+5	6	6.6	027	40
+6	7	4.3	023	50
+7	8	9.2	043	20
+8	9	5.2	050	0
+9	10	7.2	044	-12
+10	11	6.8	-	up	;stn 11 bolt at top of pitch 11
+11	12	8.5	046	25
+12	13	11	046	10
+13	14	4.5	039	20
+14	15	9.7	310	15	;stn 14 middle of passage, breeze from east to west
+15	16	12.8	330	-13
+16	17	10.4	000	20	;stn 16 middle of 'mangiare' chamber
+17	18	3.5	050	24
+18	19	4.1	003	0
+19	20	4.1	030	0
+20	21	6	006	0
+21	22	12.1	328	22
+22	23	18.8	330	-9
+23	24	16.5	070	65	
+24	25	7	325	23	;stn 24 bolt at top of 'bat pitch (p10)'
+25	26	5.7	285	50
+26	27	6.5	028	20
+27	28	10.8	357	0
+28	29	5.1	002	20
+29	30	4.8	315	28
+30	31	9.6	315	50
+31	32	3.9	340	38
+32	33	10.7	023	0
+33	34	8.5	331	21	;stn 34 bolt at top of pitch 9
+
+*end ttt
+;Entrance to bottom of entrance pitch series
+
+;Date: 20/07/00
+;Instruments: Thomas Ayles
+;Book: James Hooper
+
+;Data entered by T Ayles on 20/07/00
+
+*entrance prima1.35
+*fix prima1.35	5404560.70	5123746.29	1721.33 
+;*fix prima1.35	5404560	 	5123746	  	1721
+;entrance location fixed by surface survey (2000) from M16
+	
+*begin prima1
+
+1	2	5.79	022	-12	;stn 1 is prima2.32, pss carbide s
+2	3	11.52	324	-2
+3	4	20.32	016	82	;stn 4 is bolt at pitch head
+4	5	4.40	357	20
+5	6	2.77	326	18
+7	6	3.75	075	-33
+7	8	3.00	307	12	;stn 8 is pss
+8	9	4.95	036	23
+10	9	7.48	031	-36
+10	11	4.82	319	11
+12	11	10.45	215	-11
+12	13	11.25	339	33
+13	14	9.30	349	58	;stn 14 is bolt
+14	15	19.04	000	66	;stn 15 is bolt
+15	16	4.18	036	50
+17	16	1.22	147	-11
+17	18	6.93	299	25
+18	19	2.50	327	-5	;stn 19 is pss cairn at bottom of pitch
+19	20	21.83	332	78	;stn 20 is bolt at top of 20m pitch
+21	20	4.91	229	-18
+21	21b	5.35	337	30
+21b	22	2.72	337	30
+23	22	9.24	114	19
+23	24	17.09	010	59
+24	25	10.48	354	76	;stn 25 is bolt at head of 3rd pitch
+25	26	1.77	354	26
+26	27	2.24	318	37
+28	27	3.54	238	-30
+28	29	5.57	357	58	;stn 29 is 0.1m below bolt at head of 2nd pitch
+29	30	4.56	333	25
+31	30	4.47	105	6
+31	32	5.72	251	-24
+33	32	5.60	123	-18   ; LED
+33	34	34.19	020	43
+35	34	3.93	081	-1	;stn 35 is top left of painted T at entrance, 
+
+*end prima1
+
+;Rift in Pri Madoni after entrance pitches
+
+;Date: 19/07/00
+;Instruments: Jan Evetts
+;Book: James Hooper
+
+;Data entered by J Hooper on 20/07/00
+	
+*equate prima2.32 prima1.1	
+
+*begin prima2
+
+2	1	3.46	182	-43	;stn 1 is bolt of pitch after rift
+3	2	6.94	183	-22
+4	3	2.39	030	-44
+5	4	3.71	191	-42
+6	5	4.15	192	00
+7	6	8.20	211	05
+8	7	3.29	215	20
+9	8	4.20	175	-26	;stn 9 is pss in rift
+10	9	8.19	197	-22
+11	10	3.09	187	02
+12	11	5.91	279	51
+13	12	4.98	299	-15
+14	13	4.60	-	down 
+15	14	2.61	201	-14	;stn 15 is a pss in water chamber
+16	15	2.55	269	-24
+17	16	6.05	002	05
+18	17	2.74	- 	down
+19	18	2.29	184	-14	;stn 19 is a pss
+20	19	3.03	-	down
+21	20	2.71	119	21
+22	21	3.95	239	11
+23	22	3.05	178	05
+24	23	5.65	286	00	;stn 24 is a pss in  water chamber
+25	24	6.00	254	31
+26	25	7.95	161	-05
+27	26	4.24	135	19
+28	27	4.04	189	19
+29	28	3.70	131	-53
+30	29	15.90	151	-12	;stn 30 is a pss cairn in chamber
+31	30	2.87	027	21
+32	31	11.94	327	65	;stn 32 is a pss carbide S at bottom of climb
+
+*end prima2
+
+ drugi vhod
+;akcija potekala 10 ur
+;Date: 18/07/01
+;Instruments: Tivadar,Beguš
+;Book: Tivadar
+
+;Data entered by Tivadar on 19/07/01
+
+*equate drugi.15	 prima1.35
+*equate drugi.10b	 drugi.7a
+*equate drugi.1 	 prima1.21b
+
+*begin drugi
+
+2	1	8.0	145	-73	;stn 1 primadona po cetrtem breznu
+3	2	5.4	245	-68
+4	3	8.8	252	-50	;stn 4 is bolt 
+5	4	3.0	181	-3
+6	5	4.5	245	-42
+7	6	12.5	215	-29
+7a	7	20.0	000	-90
+8	7a	8.5	000	-90	;stn 8 is bolt
+9	8	9.8	177	-69
+10	9	5.4	150	5	;toc 9 zacetek vhodne ozine
+11	10	6.4	149	5
+12	11	1.7	213	0
+13	12	3.0	137	0	;toc 13 konec vhodne ozine
+14	13	18.0	140	2	
+14	15	17.0	283	-28	;stn 15 kota napisa pred jamo "TL"
+10	10a	11.0	0	-90
+10a	10b	12.3	161	-45	;mera ni tocna odstopok +- 2 stopinji
+;8	8a	10	0	-90
+
+;*begin
+;*data nosurvey drugi.15		prima1.35
+;*end
+*end drugi		
+ 
+  Jamarska sekcija PD Tolmin
+; drugi vhod ;akcija potekala 10 ur
+;Date: 18/07/01
+;Instruments: Tivadar,Beguš
+;Book: Tivadar
+
+;Data entered by Tivadar on 19/07/01
+
+*equate risanke.5	prima1.1
+
+*begin risanke
+
+1	2	6.3	314	44	;stn 1 star zelezen klin
+2	3	6.1	11	57	;toc 2 vijola karabin (behs peropremil)
+3	4	9.5	8.5	47	
+5	4	5.2	121	-24	;toc 5 enaka tocki prim1.1 po koncu vhodnih breznov
+
+*end risanke
+; povezava sejne sobe za dvorano mangiare
+
+;Date: 26÷27/07/01
+;Instruments: Tivadar Tomaz
+;Book: Kragelj Tomaz
+
+;Data entered by Tivadar on 28/07/01
+	
+*equate pov.1 ttt.14
+
+*begin pov
+
+1	2	12.4	43	12	;tocka 1 enaka tocki ttt 14
+2	3	7.7	65	0
+3	4	7.3	343	2
+4	5	9.75	313	-6
+5	6	15.2	26	10
+6	7	8.4	22	-14
+7	8	1.2	358	-7
+8	9	8.5	39	+35
+9	10	9.0	338	+15
+10	11	9.3	322	+6	;tocka 11 PSS
+11	12	2.6	249	-1
+12	13	11.15	344	13.5
+13	14	12.4	48	32	;tocka 13 sredina kamina na najvecjem balvanu je mozicek 
+14	15	5.4	13	58
+15	16	5.7	358	11	;tocka 15 PSS je 10 cm pod svedrovcem
+16	17	7.05	62	14
+17	18	9.4	352	30	;tocka 18 je PSS
+18	19	6.95	7	9	;tocka 19 stojis na lulcku
+19	20	10.0	27	14
+20	21	2.2	61.5	9
+21	22	5.9	353	4
+22	23	3.0	87	5
+23	24	9.5	341	0
+24	25	3.3	291.5	21	;tocka 23 je PSS
+25	26	4.85	317	0
+26	27	2.2	355	44	; zacetek puscice za mangiare
+;27	28	3.25	318	0	; sredina sejne sobe
+;28	29	4.45	64	-12	;poskusne tocke ne veljajo!!!!
+;29	30	9.25	121	-14	;poskusne tocke
+;30	31	4.8	53	14	;poskusne tocke
+;31	32	2.9	105	14	;poskusne tocke
+;32	33	9.75	142	-12	;poskusne tocke
+
+*end pov
+
+; drugi vhod
+;akcija potekala 10 ur
+;Date: 18/07/01
+;Instruments: Tivadar,Beguš
+;Book: Tivadar
+
+;Data entered by Tivadar on 19/07/01
+
+*equate risa1.6		risanke.1
+
+*begin risa1
+	
+1	2	6.2	316.5	8	;stn 1 v blatu ko prides iz ozine v risankah v smeri proti stari jami
+2	3	9.5	347	18	;toc 2 velika balvana na sredini risank strop se zelo spusti v visino 1.75
+3	4	4.1	357	38	;stn 3 blizu puscice ki kaze smer stare jame oz izhoda	
+4	5	4.6	224	4	
+5	6	5.7	240	-26	;toc 6 star zelezen klin
+
+*end risa1
+
+;podor v stari jami
+
+;Date: 26÷27/07/01
+;Instruments: Tivadar Tomaz
+;Book: Kragelj Tomaz
+
+;Data entered by Tivadar on 28/07/01
+	
+*equate  podor.1	prima2.28
+
+*begin podor
+
+2	1	6.1	358	35
+3	2	2.9	203	10
+4	3	2.9	202	-15
+5	4	2.2	189	-13
+6	5	3.3	249	1
+7	5	2.7	67	65
+8	7	1.6	344	38
+9	8	4.9	259	7	;toc 9 PSS
+
+*end podor
+
+;Nadaljevaje risank do sejne sobe
+ 
+; akcija potekala 9 ur
+;Date: 21/9/and 22/9/01
+
+;Instruments: Tivadar Tomaz
+;Book: Kragelj Tomaz
+
+;Data entered by Tivadar on 23/9/01
+*equate risa2.1	risanke.1
+*begin risa2
+
+1	2	7.4	61	27	;stn 1 star zelezen klin
+2	3	3.0	74	-9	;stn 2 mozic
+3	4	5.3	181	-30	
+4	5	7.4	164	-16
+5	6	6.65	139.5	-3	;stn 7 v blatu pred meandrom
+6	7	5.45	133	-8
+7	8	6.65	105	17.5	;stn 8 v dvorani med meandroma pred sejno sobo	
+8	9	5.45	175	-17.5
+9	10	5.5	138	1
+10	11	4.95	130	15.5
+11	12	4.95	117	0	;stn12 puscica za mangiare
+
+
+*end risa2
+
+;Galerija s prepihom od sejne do rokovga brezna
+ 
+; akcija potekala 9 ur
+;Date: 21/9/and 22/9/01
+
+;Instruments: Tivadar Tomaz
+;Book: Kragelj Tomaz
+
+;Data entered by Tivadar on 23/9/01
+
+*equate galerija.29	Risa2.12
+
+*begin galerija
+
+1	2	27.6	0	+90	;stn 1 Rokovo brezno
+2	3	2.05	13	+39	;stn 3 PSS svedrovec vijola konec risticeve vizure
+3	4	5.15	23	36	
+;4a	5	8.55	38	-18
+4	5	3.9	44	9
+5	6	5.05	338	30
+6	7	8.1	33	2
+7	8	6.05	12	32	
+8	9	8.7	73	-13	;9 na kamnu pri robu jezera
+9	10	7.95	46	24.5
+10	11	14.05	14	-1.5	;pss papir s podatki
+11	12	16.7	63	2
+12	13	11.2	86	6
+13	14	12.65	78	-3.5
+14	15	12.3	24	0
+15	16	4.85	51	35
+16	17	4.5	100	0	;direkt pod strikom drugega brezna v galeriji
+17	18	21.3	0	90	;pss svedrovc
+18	19	4.3	0	68	;pss svedrovc
+19	20	10.55	17	3	
+20	21	5.5	0	90	;prvo brezno v galeriji
+21	22	5.75	253	44
+22	23	6.45	317	3	;tunel
+23	24	7.5	331	17
+24	25	5.8	282	-4	;25 pss
+26	25	5.0	52	3
+26	27	10	302	24
+27	28	3.65	218	0
+28	29	3.7	126	0	;mangiare puscica
+
+*end galerija
+;Galerija s prepihom od rokovga brezna do konca
+ 
+;Date: avgust/01
+
+;Instruments: Ristiè, Fratnik
+
+;Data entered by Kragelj,Tivadar on 26/12/01
+
+*equate galerija2.14	galerija.3	
+
+*begin galerija2
+
+2	1	7.6	150	60	;zadnja toèka zmerjena v galeriji2 - svedrovec
+3	2	9.0	160	-20
+4	3	3.5	190	-15
+5	4	12.0	228	-15
+6	5	5.0	228	-70
+7	6	28.0	160	-3
+8	7	5.9	225	-15
+9	8	11.4	290	-10
+10	9	6.6	310	0
+11	10	4.6	210	-5
+12	11	6.5	232	15
+13	12	8.0	215	20
+14	13	7.9	030	35	;svedrovec pri Rokovem breznu
+
+*end galerija2
+;Nadaljevanje jame od 454m do 45m brezna
+;akcija trajala 16 ur 26-27.7.02
+;udelezenci:milan podpecan, stopar rok, tivadar tomaz  
+;Date: 27.7.02
+
+;Instruments: Stopar, Tivadar
+
+;Data entered byTivadar on 27/07/02
+
+*equate 	spodnji.1	zima00.1	
+
+*begin spodnji
+
+1	2	7.2	180	-24
+2	3	5.5	162	-15
+3	4	11.3	182	-47
+4	5	6.0	184	-22
+5	6	10.9	196	-45
+6	7	20.7	0	-90
+7	8	5.7	238	-25
+8	9	6.0	288	-5
+9	10	3.3	258	-7
+10	11	7.5	321	0
+11	12	11.6	302	-50
+12	13	14.0	0	-90
+13	14	6.0	354	0
+14	15	3.8	301	-12
+15	16	28.1	0	-90	; tocka 16 je zadnji fix na sahtu od 45m rok oznacil
+
+*end spodnji
+;Jama od velikega brezna naprej "Milanova" jama
+;akcija trajala 21 ur 21-22.12.02
+;udelezenci:Bozo,Tivadar,Cuder,Begus  
+
+;Instruments: BOzo, Tivadar
+
+;Data entered byTivadar on 23/07/02
+
+*equate milanova.1	spodnji.15
+
+*begin milanova
+
+2	1	44.0	68	76
+3	2	14	188	40	;stn. 3 tocka oznacena z papirjem PPS
+4	3	2.6	198	27
+5	4	3.2	267	53
+6	5	4.0	249	35
+7	6	5.0	202	7
+8	7	5.2	211	43
+9	8	10.4	0	90	;konec strika  
+
+*end milanova
+;Galerija s prepihom iz drugega brezna smer "0"
+ 
+; akcija potekala 11 ur
+;Date: 07/12/and 08/12/02
+
+;Instruments:Rok stopar, Ristiè Dejan
+;Book: Matteo Rivadossi
+
+;Data entered by Tivadar on 08/12/02
+
+*equate   smer0.57	galerija.17
+
+*begin smer0
+
+1	0	29.9	296	42
+2	1	17	33	14
+3	2	19.4	59	38
+4	3	19.8	332	20
+5	4	6.6	0	70
+6	5	6.2	0	+90
+7	6	4.4	325	6
+8	7	6.1	350	58
+9	8	10.3	27	18
+10	9	6.3	356	16
+11	10	13.3	19	19
+12	11	4.9	46	29
+13	12	5.9	351	6
+14	13	3.2	271	15
+15	14	4	355	-19
+16	15	2.4	262	8
+17	16	5	11	19
+18	17	3.8	340	25
+19	18	3.8	22	10
+20	19	9.3	334	8
+21	20	4.9	357	-65
+22	21	4	337	27
+23	22	7.1	288	20
+24	23	10.7	306	23
+25	24	3.9	35	15
+26	25	5.1	46	41
+27	26	4.4	280	47
+28	27	2.9	261	-10
+29	28	2.8	315	23
+30	29	3.5	333	8
+31	30	5.6	12	62
+32	31	9.2	319	15
+33	32	7.5	287	-13
+34	33	10.4	313	38
+35	34	9.5	320	15
+36	35	3.8	288	-25
+37	36	5.3	325	4
+38	37	4.8	0	+90
+39	38	11.6	308	-10
+40	39	14.1	304	-28
+41	40	10.7	336	-6
+42	41	8.75	359	12
+43	42	9.8	277	-7
+44	43	11.5	358	29
+45	44	10.4	35	+19
+46	45	22.2	13	23
+47	46	7.9	335	-15
+48	47	13.7	287	9
+49	48	8.4	314	34
+50	49	12.3	296	-10
+51	50	10.4	5	20
+52	51	4.6	348	-48
+53	52	3.3	70	-32
+54	53	6.4	50	12
+55	54	6.8	323	-9
+56	55	7.6	65	2
+57	56	5.3	32	47 ; point 57 end of rope in gallery second pitch
+
+*end smer0
+;Brezno vzporedno z drekom
+;akcija trajala 14 ur 26-27.7.02
+;udelezenci:dva ajdovca Mito in mark  
+
+;Instruments: Ista
+
+;Data entered by Tivadar on 23/07/02
+
+*equate ajdovscina.4	zima00.13
+
+*begin ajdovscina
+
+1	2	12.5	0	90
+2	3	4.0	17	0
+3	4	12.5	50	0
+
+*end ajdovscina

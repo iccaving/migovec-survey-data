@@ -1,0 +1,38 @@
+; Euphrates
+; Continuation of xanadu crawl
+*date 2012.8.7
+
+;### These are the tying in legs
+
+
+
+;Book: Kate Smith
+;Instruments + Tape: Jonny Hardman
+
+;Data entered by Rhys / Tetley on 9/8/12
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin euphrates2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 page
+
+;p1/1
+1	2	2.75	352	+08
+2	3	3.00	157	+04
+4	3	3.60	170	+05
+
+; notes on back of page 1
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end euphrates2
+
+*equate euphrates2.1 xanadu.18
+

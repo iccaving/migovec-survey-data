@@ -1,0 +1,34 @@
+; Shithole
+; Upstream at Falls Road confluence, connects with hole by X-Ray
+; confirmed by finding a biodegradable bag there
+*date 2015.7.22 ; Expedition Pivo Moz
+
+;Book + Tape: Oliver Myerscough
+;Instruments: Ben Honan
+
+;Data entered by William French and Rhys Tyers on 7/8/2015
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin shithole
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 pages
+;p1/1
+1	2	4.02	300	-30
+1	3	4.56	245	-25
+4	3	2.46	017	+11
+4	5	4.96	126	+08
+5	6	4.37	069	+15
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end shithole
+;No notes. No tie-in given. 
+
+; ### SURVEY TIE IN ###
+

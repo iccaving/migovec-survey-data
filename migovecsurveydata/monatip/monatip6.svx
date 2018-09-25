@@ -1,0 +1,51 @@
+;Monatip
+
+;Date: 23/06/13
+*date 2013.06.23
+;Merili: Nejc M., Dejan R. 
+;Risala: Tjasa R.
+; ostali udelezenci: Maffi
+;Data entered by Zdenko Rejec 24/06/13
+
+;data normal bcra grade 5
+
+;*equate monatip6.16     monatip5.1 
+;Tjasa: 16. tocka je una tocka ki je v enem oknu, vse skupi pa je nad velikim breznom od prejsnjic	
+*begin monatip6
+*data normal from to tape compass clino	;komentar
+*set decimal (.)
+1	2	13.0	0	90	;konec strika
+2	3	6.0	181	50	;svedrovec
+3	4	11.5	116	50	;		
+4	5	5.3	57	13	;podor
+5	6	10.0	11	-32	;podor
+6	7	8.0	0	90	;konec strika, pod tem je ?10m meandra
+7	8	7.6	96	27	;svedrovec
+8	9	34.5	19	84	;dno brezna
+9	10	4.5	270	16	;svedrovec
+10	11	2.8	340	54	;	
+11	12	4.6	278	3	;	
+12	13	5.2	249	-5	;	
+13	14	5.0	259	-3	;	
+14	15	2.0	235	32	;	
+15	16	5.5	292	-28	;tocka 16=6 tocka meritev 1-6 vizur, oz. 16=1 tocka meritev 1-27 vizur
+
+*data passage station left right up down
+
+2	1	1.5	13	0	;
+3	1	1	3	13	;
+4	3	2	8	0	;
+5	1	1	2	0	;
+6	3	1.5	4	0	;
+7	0.5	0.5	8	10	;
+8	0.5	0	0	8	;
+9	2	10	34	0	;
+10	5	4	4	34	;
+11	0	2.5	3	1	;
+12	1	0	0.3	0.5	;
+13	0	0.8	0.3	0.3	;
+14	0	0.8	0.3	0.3	;
+15	0	0.8	0.3	0.3	;
+16	0	0.5	0.5	0.3	;
+	
+*end monatip6

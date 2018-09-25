@@ -1,0 +1,57 @@
+;Gardener's World Cave (originally called BCL (or Ben's Crap Lead)) found in 2000
+
+*begin kangaroo 
+;EXPO 2005
+*calibrate compass -2.10
+	*include kangaroo01
+	*include zubafu
+	*include bonus
+	*include scrotty
+	*include olympicrift	;3.8.2005 - Marcin, Rik
+
+;EXPO 2007
+*calibrate compass -2.30
+	*include mudslump	;2.8.2007 - Ben Banfield, Richard 'Rik' Venn
+	*include kill_em_all	;05.08.07 - Richard venn, Izzy Mojir
+
+;EXPO 2008
+*calibrate compass -2.42
+	*include intravenus_de_milo 	;29.07.08 - Clewin Griffith, James Kirkpatrick
+	*include dark_tranquillity 	;30.7.08 Izy and James Kirkpatrick [Paul + Jarv also on trip tidying rigging]
+	*include dangermouse 		; 5.8.08 Paul, Izy & Jarvist
+	*include greenback  		; 9.8.08 Paul, Martin McGowan, Tim O, Jarvist
+	*include cheesecake 		; 15.8.08 Jarv, James KP - climb off Kill'em
+	*include haemertight_crawl 	; 15.8.08 Jarv, James KP - crawl off mudslump
+	*include giblet_breakfast 	; 17.8.08 Tim O, Dan G - cascade below DM. Dead? Pseduo legs as laser broke.
+	*include primula		; 17.8.08 Tim O, Dan G - quick laser survey below cheesecake
+
+;EXPO 2009
+*calibrate compass -2.52
+	*include mirage_canyon		;2.8.09	- first two night camping trip - Dan, James KP
+	*include wet_hammer		    ;2.8.09 - Dan, James KP (Mike / Jarv pushed first half, but no survey instruments :( )
+	*include metal_aven		    ;5.8.09 - James KP, Iztok
+	*include keti			    ;7.8.09	- Crazy climb above Primula - Iztok, Eric, Tjasa, Karin
+	*include walk_the_line		;8.8.09	- Thara, Tim - '2 minutes to midnight' pitch, cascades etc.
+	*include ride_the_lightning	;8.8.09	- Izi, Eric, Tjasa - climb up 2nd shaft of Kill'em all
+	*include walk_the_line_b	;10.8.09 - Dan Greenwald and Jana Carga 10.8.09 leadingo to big pitch
+	*include happy_monday		;10.8.09 - Dan Greenwald and Jana Carga 10.8.09  big pitch (+ better PSS, swing into Muddy Window, Dan + Jarv 17.8)
+    *include free_amalgamation  ;14.8.09 - Thara and Tim Osborne 14.8.09 
+	*include fools_road		    ;17.8.09 -  Jarv and Dan, Captain K tie in to Friendship, 17.8.09
+
+;EXPO 2010
+*date 2010
+*calibrate compass -2.62
+;INCLUDE MASSIVE FINDS HERE... :D :) :D :)
+
+	*include roaring 		; 25.7.2010 dan and james
+
+;EXPO 2012
+*date 2012
+*calibrate compass -2.85
+    *include worm			; 27.7.2012 dg + cg, ride the lightening extension.
+
+*end kangaroo
+
+;added METAL CAMP Explicitly
+*equate kangaroo.metal_aven.9 METAL_CAMP
+

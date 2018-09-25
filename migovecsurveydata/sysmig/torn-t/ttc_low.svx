@@ -1,0 +1,83 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;       >       TTC     (M18)   
+
+;M18 
+
+;Date: 1995????
+;Instruments:
+;Book: 
+
+;Data entered by
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate lowerrift.2 torn.2
+
+*begin lowerrift                      
+*date 1995.07
+;notes
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5a05MelhWYjFZaHc
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5emM3UEZ1N0ZjUFk
+
+*sd tape 0.1 metres
+*data normal from to tape compass clino
+2       100     2.7     281     -5
+100     101     3       -       Down
+101     102     2.5     271     20
+102     103     3.3     245     12
+103     104     2.1     270     -5
+104     105     3       220     0
+105     106     4.3     270     30
+106     107     7.8     -       Down
+107     108     3.3     216     -12
+108     109     1.95    231     26
+109     110     1.5     145     31
+110     111     2.3     229     23
+111     112     1.95    260     -57
+112     113     2.5     229     -40
+113     114     3.4     -       Down
+114     115     3.5     274     16
+115     116     3.5     248     -4
+116     117     2.4     345     0
+117     118     6.3     350     -69
+118     119     4.6     277     22
+119     120     0.85    256     8
+120     121     3       309     -37
+121     122     2       227     -21
+122     123     3       276     -54
+123     124     2.65    184     4
+;124 	125	3.5	264	-50 ; this leg was in the notes, but not originally in the svx file
+
+*data passage station left right up down
+100	0.5	0	-	2.8
+101	0.5	0	4	0
+102	0	0.5	4	1.5
+103	0.25	0	6.6	3.3
+104	0	0.25	6.6	3.3
+105	0	0.5	0.3	7.8
+106	0.5	0	7.8	1.0
+107	0	0.4	10	2.0
+108	0.3	0	8	1
+109	0	0.3	6	3.2
+110	0.2	0	3	2.5
+111	0.3	0	4	1.4
+112	0	0.1	6	3
+113	0.3	0	9	0
+114	1	0	8	2.6
+115	0	1.2	3	4.5
+116	1	0	0	0.5
+117	0	0.2	1	-
+118	0	0.2	6.3	3.6
+119	0.4	0	2.5	0.9
+120	0	0.4	1.8	1.2
+121	0.7	0	4	0.9
+122	0	0.2	4	1.9
+123	0.3	0	6	0.6
+124	0	0.6	4	2.7
+;125	0.3	0	8	1.2
+*end lowerrift
+

@@ -1,0 +1,28 @@
+;Paradiso
+;Date: 2/8/99
+;Instruments: C Griffith
+;Book: P Huggins
+
+;Data entered by C Griffith on 3/8/99
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate paradiso2.1 paradiso.11
+
+*begin paradiso2
+*date 1999.08.02
+
+2	1	12.85	349	-19
+2	3	2.52	217	7
+4	3	1.72	035	62
+5	4	4.96	026	70
+6	5	5.08	070	79
+7	6	8.87	057	70
+7	8	3.67	239	-31
+8	9	5.28	300	-72
+9	10	10.60	184	-87
+10	11	54.6	-	down
+12	11	3.0	071	-24	;12 is pss at bottom of pitch
+
+*end paradiso2

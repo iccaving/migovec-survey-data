@@ -1,0 +1,60 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;M18 zebra passage (side passage off NCB passage)
+
+;Date:14/8/96
+;Tape: CV Pete
+;Instruments: Sazza
+;Book: CV Pete
+
+;Data entered by Mark
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate zebra.0 gallery.80
+
+*begin zebra
+*date 1996.08.14
+*team "Peter Eland" book
+*team "Sarah Wingrove" instruments
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5MTllRGtKS3h4ZmM
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5VVR2cGdzQVJrN1E
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5MEp1amQtTHB2dEU
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5V2hOQndPMm04V3c
+*data normal from to tape compass clino
+0       1       4.07    109     +22
+1       2       5.07    347     -01
+2       3       4.47    035     +14
+3       4       3.53    310     +01
+4       5       6.86    013     +23
+5       6       3.78    024     +15
+6       7       2.55    282     -15
+7       8       2.80    241     -75
+8       9       5.50    016     +00
+8       10      1.82    138     -10     ;passage continues to 5m approx climb down
+7       11      3.81    017     +22
+11      12      4.35    047     +28
+12      13      3.11    326     +07
+13      14      3.75    064     +55
+13      15      1.87    267     -13     ;crawling passage off followed for approx 25m 
+
+4       50      5.00    -       down    ;pitch down undescended
+9       51      5.00    -       down    ;pitch down undescended to 8m long chamberwith two possible leads
+
+;4 is marked on wall
+;7 is marked on wall
+;13 is small cairn on sloping wall with paper marker
+
+
+*data passage station left right up down
+2	0.3	0.5	0	1
+3	1	0	0.3	0.7
+4	0	1	1	0.6
+5	0	0.7	0.1	1
+6	0.7	0	0.4	0.4
+
+*end zebra
+

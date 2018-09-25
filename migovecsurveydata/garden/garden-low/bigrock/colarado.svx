@@ -1,0 +1,39 @@
+;From miles underground to far northern sump
+;Date: 3/8/04
+;Instruments: Dr Michael Rogerson
+;Book: Jan Luther Evetts
+
+;Data entered by Jarvist Frost on 4/8/04
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+
+*begin colarado
+;page one
+2	1	23.5	276	-17	;station 1 is PSS at water-level
+3	2	14.9	261	-18
+4	3	8.1	220	-22	;station 4 is PSS
+5	4	6.1	248	-22
+6	5	5.3	355	+02
+7	6	9.7	305	-15	;station 7 is PSS
+8	7	6.1	264	-37
+9	8	8.4	305	+02
+10	9	10.5	244	-19	;station 10 is PSS
+11	10	11.6	323	+02
+12	11	7.3	325	-08
+13	12	11.5	320	-17
+14	13	14.9	309	-22
+15	14	9.9	208	-24
+16	15	2.0	212	-18	;station 16 is bottom of pitch
+17	16	17.0	251	-41
+18	17	8.2	273	-52
+19	18	2.4	311	-12
+
+
+*end colarado
+
+*equate beyond.3 colarado.19 
+
+
+	

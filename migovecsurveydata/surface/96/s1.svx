@@ -1,0 +1,50 @@
+;surface survey m2,m18,m1,m16,m10
+;date :05/08/96
+;notes :Andy A
+;Instr :Dave Wilson
+;Tape : Chris Roberts
+
+
+;From	to	tape	comp	clino
+*begin s1
+;*fix \surf1.2 0 0 0
+;*fix \surf1.3  534     975     1845;gps position
+
+1       M2       12.79   201     +15
+1	M18	12.87	281	-15
+1	4	24.80	260	17
+5	4	22.28	002	-17
+5	6	22.54	172	07
+7	6	28.41	351	03
+7	8	27.67	155	-14.5
+9	8	29.40	012.5	04.5
+9	M1	18.35	231	-32
+9	11	20.36	161.5	17.5
+9	12	16.18	090.5	-10
+M16	12	10.48	291.5	49.5
+11	14	30.46	230.5	07.5
+15	14	29.32	064.5	-00.5	
+15	16	26.31	264.5	-10	
+16	17	13.88	262	-14.5	
+17	M10	1.76	-	down
+
+;1      TOP of stick
+;M2      red dot RHW M2 ent (added 5/8/96)
+;M18      top of red line TT(m18)
+;4      Cairn on path
+;5      top of pole
+;6      Cairn on path
+;7      Cairn on path
+;8      Cairn on path
+;9      top of pole
+;M1     Red dot on 'M' of M1 (added 5/8/96)
+;11     Cairn on path
+;12     rock
+;M16     Red dot in M16
+;14     Cairn on path
+;15     top of pole
+;16     top of pole
+;17     top of pole
+;M10     Bolt next to red dot next to M10 (added 5/8/96)
+
+*end s1

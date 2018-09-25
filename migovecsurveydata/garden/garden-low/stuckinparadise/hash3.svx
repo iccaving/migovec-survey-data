@@ -1,0 +1,34 @@
+;#### Hash 3 ####:
+; ### End of Hash, off Lost Miles ###
+*date 2013.08.01 ; Expedition Sledi Vetra
+
+;Book: Clare Tan
+;Tape + Instruments: Rhys Tyers
+
+;Data entered by Clare Tan on 2013.08.03
+
+*begin hash3
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+
+2	1	3.35	280	-10
+3	2	1.30	283	-05
+4	3	2.50	329	+62
+5	4	5.11	319	+55
+6	5	3.30	329	+27
+7	6	2.07	334	-29
+8	7	3.77	269	-15
+
+;NOTES 
+;Stn 1 is a PSS
+;Stn 8 is Hash2.1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+*end hash3
+
+*equate hash2.1 hash3.8
+

@@ -1,0 +1,63 @@
+; captain kangaroo 01
+; marcin, rik
+; 22/7/05
+
+
+*equate kangaroo01.24 pico.13
+
+*equate kangaroo01.11 kangaroo01.12
+
+*begin kangaroo01
+;from	to	tape	co	cl	
+0	1	2.15	90	0
+1	2	1.20	180	+5
+2	3	3.10	130	+50
+3	4	2.90	100	0
+4	5	4.05	150	+1
+5	6	1.15	190	+5
+6	7	13.55	85	0
+7	8	6.45	170	0
+8	9	3.90	210	+15
+9	10	2.70	180	+8
+10	11	3.75	210	0
+; 11	12	there is no 11->12 in the book
+12	13	3.70	170	+45
+13	14	2.95	255	-5
+14	15	2.50	140	+60	
+15	16	4.80	190	-15
+16	17	6.40	175	+10
+17	18	4.40	280	+10
+
+;This bit connects the Captain K window to top of Pico
+; It's clearly bollocks - these are not plumb legs.
+;*begin 
+;*sd clino 3 degrees
+18	19	9.5	5	+89
+19	20	7.20	0	+89
+20	21	7.65	340	+89
+21	22	10.45	90	+89
+;*end 
+
+22	23	5.35	165	+35
+23	24	3.10	40	-1
+; 0 is PSS in chamber at end of M+R's push in chinese passage
+; 18???? is PSS at captain kangaroo window off pico
+; 24 is PSS at top of pico
+; 22 is bolt for first hang on pico
+; 21 is bolt for second hang on pico
+; 20 is Tetley's first new bolt
+; 19 is Tetley's second new bolt
+; LRUD for 1 is 0.15	0.25	8	0
+; LRUD for 7 is 4	1	4	1
+; LRUD for 15 is 2	2	8	3
+
+;Jarv 2008-06-04
+*data passage station left right up down ignoreall
+;Attempt to recon feeling of LRUD for bit where you swing out under the rock bridge onto Pico
+15	2	2	8	3	Real Data!
+16	1.0	0.5	2	1
+17	0.5	1.0	1.0	1.0
+18	1.0	1.0	3.0	1.0
+
+*end kangaroo01
+

@@ -1,0 +1,27 @@
+;Stuff near Red Cow Junction
+;Date: 26/07/04 
+;Instruments: Tim Comer 
+;Book: Martin Mc Gowan
+
+;Data entered by C Griffith 27/07/2004
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+
+*begin cow
+*flags duplicate ; superseded by Mad Cow, JMF 2010-07
+
+2	1	5.73	086	-19 ; stn 1 is pitch head
+3	2	4.73	112	-55 ; stn 3 is bolt
+4	3	4.53	036	+13
+5	4	19.87	054	+03
+6	5	4.63	038	+34
+7	6	2.40	087	-30
+8	7	8.03	117	0
+9	8	2.88	132	-32
+10	9	3.90	036	-38 ; stn 10 is Red Cow pss 24
+
+*end cow
+
+*equate cow.10 	weepeople.24

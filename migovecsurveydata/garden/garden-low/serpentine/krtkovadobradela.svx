@@ -1,0 +1,47 @@
+;####KRTKOVA DOBRA DELA####:
+;###Continuation after let na drugi svet, below first Serpentine pitch###
+*date 2011.08.02 ; Expedition Izkubljaeni Raj
+
+;Instruments + Book: Tjasa
+;Tape: Grega 
+
+;Data entered by Clare Tan on 11.08.2011 
+
+*begin krtkovadobradela
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino
+
+;Data is on 2 pages
+;page 1/2
+;#### DATA ####
+1	2	1.8	92	34
+2	3	2	145	74
+3	4	4.6	232	2
+4	5	1	95	-10
+6	5	3	352	22
+6	7	5	142	22
+7	8	10	140	49
+9	8	1.90	320	-48
+10	9	6.90	349	0
+11	10	6.20	323	-4
+11	12	2.20	172	15
+12	13	4.30	140	26
+13	14	1.30	138	25
+;page 2/2
+14	15	1.20	130	64
+15	16	1.90	200	47
+16	17	0.5	226	30
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+
+
+*end krtkovadobradela
+
+;NOTES
+
+;17 is PSS 1 of Kletnik Let Na Drugi Svet
+
+; ### SURVEY TIE IN ###
+*equate krtkovadobradela.17 letnadrugisvet.1 

@@ -1,0 +1,54 @@
+encoding  utf-8
+# 2018.07.25 created by TopoDroid v 4.0.1a
+
+survey holy_moley -title "holy_moley"
+    # beyond Sweet baby Jesus
+
+  centerline
+    date 2018.07.12
+    # team Chris Bradley Rhys Tyers and David Wilson
+    # declination 0.00 degrees
+
+    explo-team  "Rhys Tyers"
+    explo-team "David Wilson"
+    explo-team "Chris Bradley"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    #Page 1
+1   2   5.76    353 +16
+2   3   4.56    299 0   
+3   4   4.01    022 +10
+4   5   5.88    317 +03
+5   6   10.10   002 +8
+6   7   6.97    146 +44
+7   8   6.04    147 -4
+8   9   2.78    038 +44
+9   10  1.65    130 0
+
+#NOTES 
+#STN10 is Sweet Baby Jesus STN8
+
+  endcenterline
+
+   input "holy_moley-p.th2"
+  ## input "holy_moley-s.th2"
+
+   map m1p -projection plan
+     holy_moley-p1
+   endmap
+   
+   map m2p -projection plan
+     holy_moley-p2
+   endmap
+   
+   join holy_moley-p2 holy_moley-p1
+   
+  ## map m1s -projection extended
+  ##   holy_moley-1s
+  ## endmap
+
+endsurvey
+

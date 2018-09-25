@@ -1,0 +1,63 @@
+; surface survey from Kal to Primadona
+;površinski poligon od  jamarske koèe na Kalu do kapelice Primadone
+; dolžina celotnega poligona 1751,45 m
+;Date: 29/11/03
+;Instruments: Zdenko Rejec, Silvan Seljak
+;Book: Zdenko Rejec
+
+*data normal from to tape compass clino
+*set decimal (,)
+
+;*fix  mulatera.vogal		5404431		5122781		1496
+*fix  mulatera.kapelica 	5404176		5124151		1540
+;*fix  mulatera.vogal		5404415		5122760		1496	;po TTN 10.000
+;*fix  mulatera.kamn 	5404370		5122675		1496	;po TTN 10.000
+*flags surface
+
+*begin mulatera
+*flags surface
+2	vogal	50,00	128	-18	;spodnji levi vogal jamarske koèe na Kalu
+kamn	kamn1	50,00	50	0	;kamen, ki naj bi bil kota
+kamn1	vogal	25,70	31	9
+2	2a	25,10	87	-4
+2a	2b	39,60	75	3
+3	2	29,20	135	-4
+4	3	50,00	153	0
+5	4	50,00	160	-1
+6	5	40,90	172	0
+7	6	49,50	190	2
+8	7	50,00	194	4
+9	8	24,20	195	-1	
+10	9	43,90	153	-1	;merjeno èez 1. grapo
+11	10	50,00	153	0
+12	11	34,00	143	-4
+13	12	38,30	173	-1	
+14	13	49,70	187	0
+15	14	49,40	172	-1
+16	15	17,75	180	-2
+17	16	50,00	208	-3
+18	17	50,00	215	-6
+19	18	48,20	171	-6	;merjeno èez 2. grapo
+20	19	49,70	172	-7	
+21	20	42,35	177	-1
+22	21	46,85	185	-1
+23	22	44,95	182	0	
+24	23	45,60	162	1	;merjeno èez 3. grapo	
+25	24	40,40	172	-3	;merjeno èez 4. grapo
+26	25	48,30	149	-4
+27	26	44,45	163	-5
+28	27	48,50	170	-2
+29	28	50,00	160	0	;merjeno èez 1. melišèe
+30	29	45,60	149	0	;merjeno èez 2. melišèe
+31	30	44,30	168	-5	
+32	31	30,60	197	-4	
+33	32	34,45	154	-7	
+34	33	48,65	196	-10	;grapa pri Hudem klancu
+35	34	48,90	81	10	
+36	35	36,15	84	11	
+37	36	49,60	85	14	
+38	37	5,35	59	8
+kapelica	38	31,30	112	8	;kapelica Primadone, višina po žigu 1540 m
+
+*flags not surface
+*end mulatera

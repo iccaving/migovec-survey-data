@@ -1,0 +1,74 @@
+;####name####:
+; ###LOCATION/DESCRIPTION###
+*date 2013.7.14 ; Expedition  Za Mig Na Kuk 2013
+
+;Book + Tape: Saber King, Oliver Myerscough
+;Instruments: Saber King, Oliver Myerscough
+
+;Data entered by Saber King, Oliver Myerscough
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin labyrinth
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 4 pages
+;p 1/4
+1	2	0.30	312	+25
+2	3	6.10	291	0
+3	4	4.82	351	-25
+3	5	3.34	258	-33
+5	6	3.64	307	-08
+6	7	4.93	005	+22
+7	8	4.51	300	-02
+8	9	1.28	088	-65
+9	10	0.51	125	-10
+10	11	4.20	-	down
+
+;p 2/4
+11	12	1.10	070	-25
+12	13	5.89	315	-45
+13	14	1.23	240	-35
+14	15	4.20	223	0
+15	16	7.51	320	-30
+16	17	2.31	270	-25
+8	18	3.18	238	+23
+18	19	4.11	281	+24
+19	20	2.75	205	+29
+20	21	1.67	120	+43
+
+;p 3/4
+21 	22	3.62	265	+3
+22	23	3.10	183	-11
+23	24	6.73	156	-22
+24	25	2.20	166	-24
+25	26	2.18	-	down
+26	5	3.00	261	0
+18	27	6.18	192	+9
+27	28	4.57	331	+2
+28	29	3.95	319	-39
+
+;p 4/4
+14	30	0.78	224	+21
+
+
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end labyrinth
+; Station 1 is PSS 1 of Curious and Curiouser
+; Station 5 is  a PSS
+; Station 8 is  a PSS
+; Station 12 is  a PSS
+; Station 17 is  a PSS
+; Station 18 is  a PSS
+; Station 29 is  a PSS
+; Station 30 is  a PSS
+
+*equate labyrinth.1 curiousandcuriouser.1
+

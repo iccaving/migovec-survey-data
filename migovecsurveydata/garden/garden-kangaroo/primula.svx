@@ -1,0 +1,29 @@
+;Primula: Squirty cheese; quick LASER survey of chamber below cheesecake
+;  captain Kangaroo, near mud slump
+*date 2008.08.17 ; 17/08/08
+ 
+;Instruments / Book: DG / TO
+
+;Data entered by Jarvist Frost 18/8/08
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin primula 
+1	ridge	8.56	-	down	
+ridge	south	7.44	180	+00
+ridge	west	4.5	270	+00
+ridge	east	3.2	90	+00
+
+*data passage station left right up down ignoreall
+; This stuff made up by Jarv to try and get suitable passage wall...
+1	0.5	0.5	0.5	0.5
+ridge	4.5	3.2	0.0	0.0	
+
+*data passage station left right up down ignoreall
+ridge	3.2	4.5	8.56	1.0	; facing south, to our left will be East, to our right West
+south	1.0	1.0	3	10
+
+*end primula 
+
+*equate cheesecake.1 primula.1

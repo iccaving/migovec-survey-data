@@ -1,0 +1,41 @@
+;####Watership Up####:
+; ###climb above sumps of Watership Down###
+*date 2012.8.3 ; Expedition Sledi Vetra
+
+;Tape: Oliver Myerscourgh
+;Book + Instruments: Jarvist Frost
+
+;Data entered by Jarvist Frost on 2012.8.4
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin watershipup
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+1	2	3.77	331	+02
+2	3	7.05	015	-08
+3	4	4.25	111	+09
+4	5	0.97	114	-13
+5	6	6.60	133	-04
+6	7	6.95	186	-31
+7	8	5.89	132	-15
+8	9	3.87	053	+58
+9	10	3.91	167	-31
+11	10	8.67	035	+51	
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end watershipup
+
+;NOTES on flipside
+;.1 is PSS with view of lake ~7m down sloping narrow pitch. Lake ~6x2m with long axis aligned along 1->2 ish, .1 about midway
+;.5 PSS cairn above tight climb down to tight but pushable rift (Jarv note on typing up: Large echo down this rift)
+;.11 is Watership Down PSS .1
+;Grade II Plan
+
+; ### SURVEY TIE IN ###
+*equate watershipdown.1 watershipup.11

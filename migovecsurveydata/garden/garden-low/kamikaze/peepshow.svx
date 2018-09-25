@@ -1,0 +1,68 @@
+;####Peep show####:
+; ###  ###
+*date 2012.08.02 ; Expedition Sledi Vetra
+
+;Book + Tape: Nicolas Kral
+;Instruments: Jonathan Paul Hardman
+
+;Data entered by Clewin Griffith on 2012.08.03
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin peepshow
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/2
+2	1	8.12	327	+7
+3	1	1.83	143	-35
+4	3	2.79	177	-50
+5	4	5.79	140	-19
+6	5	1.73	165	-39
+7	6	4.38	178	-35
+8	7	13.37	126	-19
+9	8	11.31	160	-39
+10	9	6.52	151	-19
+11	10	9.57	177	-49
+12	11	9.50	132	-20
+13	12	3.75	120	-6
+;page 2/2
+14	13	7.32	155	-11
+15	14	6.71	170	-5
+16	15	4.61	104	+46
+17	16	5.81	155	+45
+
+;NOTES
+; stn 1,10,13 are pss cairn in peepshow
+; stn 17 in peepshow is pss1 in hotpants
+; Below stn 1 there is a draghting boulder choke.
+; at pss 10 there is an unpushed rift going upwards.
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+;1	1	1	0	0
+;2	2	0	0	0
+;3	0.5	0.5	0	0
+;4	2	0	0	0
+;5	1	1.5	0.5	0
+;6	2	0	0	0
+;7	1	1	0	0.5
+;8	1.5	1.5	1	0.5
+;9	4	1	0	1.5
+;10	1	2	5	3
+;11	3	1	2	4
+;12	2	3	3	2
+;13	2	1	2	1
+;14	2	0	1	1.5
+;15	2	3	1.5	1
+;16	2	2	3	4
+;17	2	2	5	1
+
+	
+*end peepshow
+
+; ### SURVEY TIE IN ###
+*equate peepshow.17 hotpants.1
+

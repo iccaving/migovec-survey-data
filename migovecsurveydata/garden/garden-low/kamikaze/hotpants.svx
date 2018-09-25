@@ -1,0 +1,40 @@
+;####Watership Down####:
+; ###continuation off Winter Journey###
+*date 2012.7.22 ; Expedition Sledi Vetra
+
+;Tape + Book: Clare Tan
+;Instruments: Jarvist Frost
+
+;Data entered by Jarvist Frost on 2012.7.23
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin hotpants
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	6.34	331	-07
+1	3	6.35	199	+11
+1	4	4.17	241	-24
+5	4	4.61	302	+54
+6	5	5.52	246	+27
+6	7	19.44	193	-50
+7	8	2.94	152	-34
+
+;NOTES:
+; stn 1 is a PSS, cairn in centre of large chamber (on boulder)
+; stn 2 is start of crawlway
+; stn 3 other end of chamber
+; stn 6 is bolt on wall
+; stn 6-7 is crazy traverse
+; stn 8 is Throne Room PSS 1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end hotpants
+; ### SURVEY TIE IN ###
+*equate hotpants.8 throneroom.1

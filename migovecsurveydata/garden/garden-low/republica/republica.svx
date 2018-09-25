@@ -1,0 +1,62 @@
+;Republica Palma de Coco
+; Upstream from redcow sump, insane bounce trip with JNH and Samo
+;Date  7/8/09
+*date 2009.8.7 
+;Instruments: Samo Rutar
+;Tape: Samo Ruta
+;Book: James 'Tetley' Hooper
+
+;Data entered by JM Frost 8/8/09
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin republica
+2	1	5.40	152	-05	; .2
+2	3	3.09	297	+05
+4	3	16.20	136	-19
+4	5	15.00	238	-07
+6	5	14.81	058	+21
+6	7	7.35	204	-03
+8	7	8.75	047	+25
+8	9	5.22	098	-28
+10	9	4.71	335	-05
+10	11	8.66	115	+22
+12	11	4.09	025	+20
+
+;notes split over three pages
+;.1 is PSS at top of pitch
+;.3 is PSS
+;.12 is PSS bolt at top of drop - JNH thinks is AJ/RV 31/7/04 station 11
+; NB: JMF, 07-2010 - I believe this has to be mad_cow.7 (11 is a long way back) .7 is PSS bolt at top of pitch down to sump, which tallies with all descriptions.
+
+
+;.16 is PSS at end of sandy passage
+;.13 is lower bolt at head of pitch
+;.14 is bottom of pitch
+;.15 is PSS
+
+;p2/2
+1	13	1.72	170	-35
+13	14	13.33	-	down
+15	14	9.10	034	00
+
+17	16	2.99	222	+31
+17	18	1.99	048	-01
+19	18	2.48	183	-01
+19	20	3.68	062	+02
+20	21	2.93	108	-22
+22	21	3.25	214	+15
+23	22	3.85	144	-03
+
+15	23	0.80	084	00
+
+;Pseudo leg down rift / pitch
+*flags splay
+21	pesudo	30.0	-	down	; you can see at least 30m down this rift...
+*flags not splay
+
+*end republica
+
+;*equate republica.12 cow.3 
+*equate republica.12 mad_cow.7

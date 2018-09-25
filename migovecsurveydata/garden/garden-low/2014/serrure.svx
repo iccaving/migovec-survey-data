@@ -1,0 +1,48 @@
+;####Serrure####:
+;###Continuation of Esoterica###
+*date 2014.7.30 ; Expedition Z Miga Na Kuk
+
+;Instruments: William French
+;Book: Tanguy Racine
+
+;Data entered by Rhys Tyers / Dan Greenwald on 2014.8.5
+
+*begin serrure
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 page
+;Page 1/2
+1	2	7.05	159	+38
+2	3	14.35	-	up
+3	4	3.26	262	+51
+4	5	2.80	220	+35
+5	6	3.50	355	+62
+6	7	7.47	151	+29	*duplicate
+7	8	6.85	121	-21	*duplicate
+8	9	4.26	083	-31	*duplicate
+9	10	3.40	163	-39	*duplicate
+10	11	3.45	076	-25	*duplicate
+11	12	5.14	288	-46	*duplicate
+12	13	4.33	004	-56	*duplicate
+;Page 2/2
+13	14	3.83	264	-14	*duplicate
+14	15	4.31	331	+45
+15	16	3.71	325	+27
+16	17	1.16	253	+12
+;NOTES 
+;stn 1 is pss
+;stn 4 is pss
+;stn 8 is pss princeconsortroad 12
+;stn 13 is pss
+;stn 17 is stn 4
+
+;stn 13 is at unpushed upstream rift (not on survey paper)
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end serrure
+
+*equate serrure.17 serrure.4
+*equate serrure.8 consort.12

@@ -1,0 +1,15 @@
+layout outline
+	scale 1 2000
+	#map-header 0 0 nw
+  	map-header 0 0 off
+
+  	legend off
+  	#legend on
+
+  	colour map-fg topo-date #[10 10 10]
+  	#colour map-bg [70 70 70]
+  	symbol-hide group all
+  	symbol-show line wall
+  	#symbol-show line survey
+
+endlayout

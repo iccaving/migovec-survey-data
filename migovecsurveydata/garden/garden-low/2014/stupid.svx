@@ -1,0 +1,26 @@
+;####Stupid####:
+;###Wet pitch of Hydrophobia###
+*date 2014.7.31 ; Expedition Z Miga Na Kuk
+
+;Instruments: Saber King
+;Book: Sam Page
+
+;Data entered by Rhys Tyers / Dan Greenwald on 2014.8.5
+
+*begin stupid
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	7.10	235	-75
+3	1	0.40	180	-10
+;NOTES 
+;stn 3 is hydrophobia pss ?
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end stupid
+
+*equate stupid.3 hydrophobia.5
+

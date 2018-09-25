@@ -1,0 +1,38 @@
+; Razor2: Window Series
+
+;Date: 05-Aug-2007
+;Instruments: Jutta Schnabel
+;Tape: Moritz Guenther
+;Book: Mad Dog McGowan
+
+;Data entered by Andrew Jurd 06-Aug-2007
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin razor2
+
+
+1	2	5.22	172	-55	; 0.5 0 0.5 0.5 ; 2 is window
+2	3	12.49	322	-04	; 0.5 0 0.5 0 ; 3 is a different window
+3	4	4.40	154	-26	; 2 1 5 na ; 4 is a pss cairn
+4	5	5.28	086	+58	; 1 1 1 na ; 5 is another window
+6	5	8.92	240	-08	; 0 1 1 1.5 ; 6 is a pss end of passage cairn
+4	7	10.17	310	-58	; 3 3 10 1 ;
+7	8	3.55	249	-10	; 0.5 4 2 na ; 8 is unpushed pitch and pss cairn
+7	9	2.48	008	+04	; 4 4 na na ;
+9	10	1.54	117	-16	; 0 0.5	na na ; 10 is pitch-head
+10	11	5.28	-	down	; 0.5 2 na 0 ; pitch
+11	12	2.18	155	-06	; 0.3 0.5 0.5 na ;
+12	13	2.35	-	down	; na ; 13 is pss engraved on wall by MM + Slovs
+13	14	4.10	225	-14	; 0 1 2 pitch ; 14 is pss cairn
+13	15	3.40	010	-02	; 0 1 0.5 1.5 ;
+16	15	5.16	286	+03	; 0.5 0.5 0.5 0 ;
+16	17	3.44	130	+16	; 0.5 0.3 1 1 ;
+17	18	2.64	106	+26	; 0 1.5 0 2 ;
+18	19	3.59	119	+08	; 0.2 0.2 0 1.5 ;
+20	19	8.80	302	+10	; 0.5 3 10 0 ; 20 is pss cairn in chamber
+
+*end razor2
+
+*equate razor1.b3 razor2.1

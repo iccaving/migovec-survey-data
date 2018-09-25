@@ -1,0 +1,48 @@
+;#### Sidewinder ####:
+; ### Continuation of black knight, duck bypass, rift streamway which formed a floor. 
+;	Ends at dead chamber, 5m back there is small chamber with dry pith. ###
+*date 2010.7.28 ; Expedition Vodna Sled 2010
+
+;Instruments + Tape: Myles Denton
+;Book: James 'Tetley' Hooper
+
+;Data entered by Jarv on 29.7.2010
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin sidewinder
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 pages
+;p1/1
+;#### DATA ####
+1	2	1.51	166	+04
+2	3	7.91	156	+01
+3	4	3.63	187	-28
+5	4	3.98	040	+02
+6	5	2.25	015	+10
+7	6	2.45	002	+45
+8	7	2.13	044	+06
+
+;Notes on flipside
+;stn 7 is pss
+;sidewinder stn 1 = black knight stn 13
+; plan of dry pitch + dead chamber, stn 7 and 8 located (?)
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	0	0.5	0.2	0.2
+2	0	0.7	0.2	1.5
+3	0.5	0	0.5	1
+4	0	0.5	1	2.5
+5	0.5	0	1	2
+6	0.5	0	1.5	2
+7	0	0.5	2.5	0.5
+
+*end sidewinder
+
+; ### SURVEY TIE IN ###
+*equate sidewinder.1 blackknight.13

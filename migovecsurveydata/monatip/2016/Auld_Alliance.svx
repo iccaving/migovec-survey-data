@@ -1,0 +1,31 @@
+;####Auld_Alliance###
+;Drop in a hole in mona tip- NCB connection
+*date 2016.07.27 ; Expedition Neprehojeni Poti
+
+;Tape + Instruments: William French
+;Book: Will Scott
+
+;Data entered by Miriam North-Ridao / Will Scott on 2016.08.5
+
+*begin Auld_Alliance
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	6.03	309	-30
+3	2	4.95	293	-17
+4	3	8.26	165	-32
+5	4	9.22	221	-62
+6	5	1.86	253	-45
+7	6	3.84	188	-24
+;NOTES
+; Stn 1 is PSS by very big pitch - LEAD! 
+; Rigging is quite terrifying - new raul bolts don't seem to go into the wall.
+; Stn 7 is cairn we hope is Monatip survey stn. poss monatip11.23
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end Auld_Alliance
+
+*equate Auld_Alliance.7 monatip11.23

@@ -1,0 +1,30 @@
+;Monatip
+; New cave to north of Primadona & below B9.
+
+;Date: 3/8/08
+*date 2008.08.03
+;Meril: Siljo [Silan] 
+;Pisu: Spela 
+;Metr: Jarlio  [Aljosa]
+
+;Data entered by Jarvist Frost 6/8/08
+
+;data normal bcra grade 5
+
+;*equate monatip3.37     monatip2.37 
+
+*begin monatip3
+*data normal from to tape compass clino	
+*set decimal (.)
+;PAGE 1
+37	38	6.80	170	+40
+38	39	5.75	185	+00
+39	40	6.00	160	-52
+40	41	3.40	175	+09
+41	42	7.40	175	-45
+42	43	5.10	280	-65
+43	44	7.40	195	+15
+
+;.44 is PSS cairn with paper
+
+*end monatip3

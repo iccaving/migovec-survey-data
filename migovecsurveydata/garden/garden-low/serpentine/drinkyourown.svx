@@ -1,0 +1,40 @@
+;####Drink Your Own####
+; ### Pitch series below Rotten Row (Serpentine series) ###
+*date 2011.08.06 ; Expedition Izkubljaeni Raj
+
+;Tape: Jim Evans
+;Book + Instruments: Jarvist Frost
+
+;Data entered by Clare Tan on 2011.8.07
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin drinkyourown
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+bot		nat		15.10	-	up
+wetledge	nat		5.00	136	+00
+wetledge	devious		17.36	-	up
+hang		devious		1.20	136	+00
+hang		L		4.76	326	+00
+L		bolt		3.53	-	up
+rot		bolt		0.96	311	+15
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end drinkyourown
+; NOTES
+;rot is last rotten row PSS (paper missing - so don't know station number)
+;L is L angle in rope after first 4m drop
+;hang is the further hang (bolt beyond the y-hang bolts)
+;devious is bolt deviation (well, projection there of)
+;wetledge is the wet ledge first reached by Dan, that the larger stream crashes onto
+;nat is the natural I managed to grab just beyond the Duffers Drop water, from which I lowered the tape
+
+; ### SURVEY TIE IN ###
+*equate drinkyourown.rot rottenrow.1

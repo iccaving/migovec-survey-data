@@ -1,0 +1,43 @@
+;#### Nevermore ####:
+; ### Connected to MadCow ###
+*date 2004.8.1 ; Believe during 2004
+
+;Book + Tape: Unattributed Notes
+;Instruments: Unattributed Notes
+
+;Data entered by JMF on 2010-07-06
+;  yes, this would be survey data entry 6 yrs after surveying...
+;Stumbled across these notes in our collection, and also references in survey trips (Mad Cow in particular) which found the nevermore PSS again.
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin nevermore
+*flags duplicate
+;Data is on 2 pages 
+;First side of 1st page contains numeric data
+
+;Flipside is labelled 'Nevermore' and contains 'p2/3' label, and Grade II crossection of passage with 1,2,4/5,6,7,8 staions labelled
+;Cave generally heads across chamber from 8-7 and then up ~30deg slope via boulders (with survey stations on top of them?)
+
+;Page 3/3 is nevermore plan, with large spent carbide smear across it. Plan has no north arrow. 
+;Cave straight across chamber 8-7 and up to .5, then jumps @80deg to left (.4) before continuing along original direction to reach end.
+;End of survey is shown as passage continuing at same width
+
+1	2	4.95	213	-25	; LRUD for all shots, too lazy to enter
+3	2	17.88	008	+33	
+4	3	9.30	011	+23	
+5	4	6.78	316	+12	;tape is indistinct - could be 5.78
+6	5	4.40	009	-	;clino down as '-' - assume means horizontal
+7	6	6.32	344	+24	
+8	7	12.90	005	+25
+9	8	6.59	339	+08
+10	9	5.12	301	+05	; no direction associated with this shot, assuming 10->9
+;* also 24 PPS of Red Cow
+
+;  assume this is referring to stn 10, but could also be stn 8 as there is kinda an asterix to the right of the LRUD data on that line
+
+*end nevermore
+; NOTES
+
+*equate nevermore.10 weepeople.24

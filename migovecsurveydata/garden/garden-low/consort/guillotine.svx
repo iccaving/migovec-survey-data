@@ -1,0 +1,59 @@
+; Guillotine
+; Extension to crawling passage at end of minotoar rift
+*date 2012.7.28 
+
+;Book + Tape: Rhys Tyers
+;Instruments: Gergely Ambrus
+
+;Data entered by DG on 30-7 
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin guillotine
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 2 pages
+
+;p1/2
+
+2	1	4.07	293	-23
+3	2	2.60	236	-34	
+4	3	2.20	267	-10
+4	5	11.11	025	0
+6	3	5.50	330	-52
+8	7	5.86	222	-17
+9	8	4.94	174	-22
+10	9	4.31	211	-25
+11	10	3.68	158	-28
+
+; notes on back of page 1
+;station 1 is pss in small chamber
+;station 6 is pss in passage at junction
+;station 7 is pss at end of passage at rift
+
+;p2/2
+
+6	11	4.20	227	-3
+12	6	6.50	208	-15
+13	12	4.10	201	-19
+14	13	5.21	180	-45
+15	14	5.51	209	-26
+16	15	2.74	201	-5
+17	16	2.40	213	-25
+18	17	4.86	185	-31
+19	18	2.85	198	-15
+20	19	3.00	236	-14
+21	20	3.05	200	-30
+
+
+;notes from back of p2
+;station 21 is pss at boulder choke - start of push
+
+;end of p2
+*end guillotine
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall

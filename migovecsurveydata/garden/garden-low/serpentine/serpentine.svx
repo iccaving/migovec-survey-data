@@ -1,0 +1,55 @@
+;####SERPENTINE####:
+;###Serpentine is streamway off Prince Consort Road###
+*date 2010.7.26 ; Expedition Vodna Sled 2010
+
+;Instruments: JMF (laser tape)
+;Book: Mike Foley, Kate Smith
+
+;Data entered by APSJ on 27.7.2010 
+
+*begin serpentine
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino
+
+;Data is on 1 page
+;p1/1
+;#### DATA ####
+1	2	5.64	092	39
+2	3	2.98	109	50
+3	4	4.30	048	11
+4	5	6.20	058	03
+5	6	8.22	029	07
+6	7	0.81	092	03
+7	8	9.65	017	34
+8	9	16.60	032	17
+9	10	5.48	089	20
+10	11	10.65	113	57
+
+;1 is PSS cairn at head of 40-60m pitch in meander
+;9 is wall of chamber
+;10 is PSS cairn in big chamber (survey notes say 9)
+;1-9 meander (wet streamway) (survey notes say 1-8)
+;11 is Prince Consort Road PSS cairn 5 (survey notes say 10) 
+
+*flags splay
+10	ceiling	34.0	-	up
+*flags not splay
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	0	1.5	4	30	pitch down
+2	2	0	3	3
+3	1.5	0.5	7	3
+4	0.75	0	7	2
+5	0	0.5	7	1.5
+6	0.5	0	7	1.5
+7	1	0.2	0	3.5
+8	0	7	34	3
+9	1.5	5	34	0.2
+10	0.5	2	34	2
+
+*end serpentine
+
+; ### SURVEY TIE IN ###
+*equate consort.5 serpentine.11

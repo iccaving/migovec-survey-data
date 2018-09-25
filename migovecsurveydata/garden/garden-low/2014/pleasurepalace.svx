@@ -1,0 +1,47 @@
+;####Pleasure Palace####:
+;###Pitch off Sic Semper Tyrannis leading to boulder choke###
+*date 2014.7.24 ; Expedition 
+
+;Instruments: David Kirkpatrick
+;Book: Rhys Tyers
+
+;Data entered by Rhys Tyers / David Kirkpatrick on 2014.7.26
+
+*begin pleasurepalace
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 page
+;Page 1/2
+2	1	5.13	254	0
+3	2	4.95	259	-06
+4	3	4.40	323	-17
+5	4	4.76	289	-14
+6	5	4.70	275	-27
+7	6	2.77	252	-19
+8	7	6.84	191	-35
+9	8	2.85	179	-38
+10	9	3.16	196	-30
+11	10	5.22	148	+02
+12	11	4.15	156	+20
+13	12	10.35	205	-04
+;Page 2/2
+14	13	7.21	176	+03
+15	14	8.24	158	-22
+16	15	2.90	204	-38
+17	16	1.21	241	+04
+18	17	9.95	-	down
+19	18	3.23	352	-34
+20	19	1.34	121	+13
+;NOTES 
+;stn 1 is pss
+;stn 9 is pss
+;stn 12 is pss
+;stn 18 is knot on first hang
+;stn 20 is sic semper tyrannis stn 15
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end pleasurepalace
+
+*equate pleasurepalace.20 sicsempertyrannis.15

@@ -1,0 +1,27 @@
+;Monatip
+;preèka na vrhu Luzerja
+;Date: 22/08/15
+*date 2015.08.22
+;Merili: Ristiè D., Trušnovc B. 
+;Risala: Ristiè D.
+;ostali udelezenci: Maffi G., Fratnik A.  
+;Data entered by Zdenko Rejec 14/08/13
+
+;data normal bcra grade 5
+
+;*equate monatip09.8     monatip06.9 
+;
+
+*begin monatip09
+*data normal from to tape compass clino	;komentar
+*set decimal (.)
+0	1	29.0	0		90	; 0 je dno brezna, rov pod Luzerjem
+1	2	8.0		62		56	;
+2	3	8.5		272		3	;
+3	4	3.9		75		46	;
+4	5	2.3		238		17	;
+5	6	5.7		160		-15	;
+6	7	7.4		193		-39	;preèka v Luzerju
+7	8	7.3		290		7	;preèka na svedrovec v Luzerju
+
+*end monatip09

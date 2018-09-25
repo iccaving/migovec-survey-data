@@ -1,0 +1,13 @@
+*begin 01.a
+ *equate s0725.M10 sM10_RV_M17.M10
+ *equate s0725.M15 sM10_RV_M17.M15
+ *equate sM17_NSCa.M17	sM10_RV_M17.M17
+ *equate sM17_NSCa.9	sM17_NSCb.18
+ *equate sM16_M4_M18.M4	s0725.M4
+ 
+ *include s0725 ;M10 to M15 via M4
+ *include sM10_RV_M17 ;M10 to M15 via Royston Vasey 
+ *include sM17_NSCa  ;1st leg M17 to new slov cave
+ *include sM17_NSCb  ;2nd leg M17 to new slov cave
+ *include sM16_M4_M18
+*end 01.a

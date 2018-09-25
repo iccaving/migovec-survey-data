@@ -1,0 +1,33 @@
+;####We're Not Alone####:
+;###Extension off Atlantis###
+*date 2013.8.7 ; Expedition Z Miga Na Kuk
+
+;Tape: Dave Wilson
+;Book + Instruments: James Hooper
+
+;Data entered by Clare Tan / James Hooper on 2013.8.9
+
+*begin were_not_alone
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	7.00	168	-02
+1	3	12.85	342	+07
+3	4	5.32	350	+01
+4	5	4.08	278	+06
+5	6	10.71	264	-15
+
+;NOTES 
+;Station 1 is PSS
+;Station 4 is PSS 
+;Stn 6 is a PSS
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end were_not_alone
+
+*equate were_not_alone.6 atlantis.18
+;Tetley believes this is approximately correct, atlantis.18 is within 5m of were_not_alone.6. Could be tied in properly in future to PSS in inglourious basterds

@@ -1,0 +1,39 @@
+encoding  utf-8
+# 2018.07.25 created by TopoDroid v 4.0.1a
+
+survey adequately_hammered -title "Adequately Hammered"
+    # beyond purgatory 
+
+  centerline
+    date 2018.07.16
+    explo-team "David Kirkpatrick"
+    explo-team "Jennifer Ryder"
+    explo-team "Rebecca Diss"
+
+    team "Rebecca Diss" insts
+    team "David Kirkpatrick" insts
+   
+    # declination 0.00 degrees
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+
+    #Page 1
+    0 1 3 045 00 #fake leg to reflect reality of pitch
+1   2   13.73   0   +90
+
+#NOTES 
+#STN1 is Alabaster STN9
+#STN2 is Holy Moley STN1
+    
+  endcenterline
+
+   ##input "bath-1p.th2"
+  ## input "bath-1s.th2"
+
+  ## map m1s -projection extended
+  ##   bath-1s
+  ## endmap
+
+endsurvey
+

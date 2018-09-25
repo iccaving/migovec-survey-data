@@ -1,0 +1,38 @@
+;####Off the Stile - water pitch####:
+;######
+*date 2017.07.14 ; Expedition Cez Rob
+
+;Tape + Instruments: Ben Honan
+;Book: Rhys Tyers
+
+;Data entered by Tanguy Racine on 17/07/2017
+
+*begin fenestrator
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;PAGE 1/1
+2	1	5.04	353	-20
+3	2	2.59	020	+10
+4	3	2.46	062	-24
+5	4	2.92	067	+45
+6	5	1.45	-	DOWN
+7	6	4.59	353	+20
+8	7	14.34	006	000
+9	8	8.22	007	+01
+10	9	3.23	226	-05
+11	10	6.40	128	-45
+
+
+;NOTES 
+;STN1 is pss above 20m pitch
+;STN3 is by crawl on the wall (unexplored (14/07/17)
+;STN11 is Cattelgrid station 8
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end fenestrator
+
+*equate fenestrator.11 cattle_grid.8

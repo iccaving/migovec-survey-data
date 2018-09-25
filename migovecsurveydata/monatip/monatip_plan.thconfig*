@@ -1,0 +1,9 @@
+encoding  utf-8
+source s_monatip.th
+layout local
+  scale 1 1200
+  colour map-fg altitude
+
+  
+endlayout
+export map -projection plan -o monatip.pdf -layout local

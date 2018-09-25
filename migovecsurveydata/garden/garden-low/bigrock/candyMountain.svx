@@ -1,0 +1,27 @@
+;The Big Rock Candy Mountain
+;Date: 31/7/2003
+;Instruments: Colm Carroll
+;Book: Brian Cullen
+
+;Data entered by T Wright 3 Aug 2003
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*equate candyMountain.1 highway32.32
+*equate candyMountain.11 friend.23
+
+*begin candyMountain
+1	2	3.80	194	-24
+2	3	19.97	-	up
+3	4	10.78	-	up
+4	5	22.10	-	up
+5	6	5.65	194	+68
+6	7	4.75	268	+58
+7	8	9.04	295	+70
+8	9	3.77	261	+35
+9	10	5.23	337	+8
+11	10	1.55	323	0
+
+	
+*end  candyMountain

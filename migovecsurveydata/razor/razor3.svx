@@ -1,0 +1,42 @@
+; Razor3: Casdcades
+
+;Date: Aug-2007
+;Instruments: Ben Banfield / Moritz Guenther
+;Book: Martin McGowan
+
+;Data entered by Jarvist Frost 22-Aug-2007
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin razor3
+
+;Note on data entry:
+;LRUD is not in normal order, so I've explicitly labelled which station LRUD refers to
+
+;PAGE 1
+1	2	10.54	043	-31	;	(1)	1	1	n/a 	n/a
+3	2	4.21	217	-34	;	(2)	4	1	1	pitch
+4	3	5.92	224	-09	;	(3)	0	0.5	1.5	1
+5	4	3.60	282	+04	;	(4)	0	1	4	3
+6	5	5.07	222	-26	;	(5)	1/2	0	4	0.5
+7	6	6.29	229	+02	;	(6)	1	0.5	1	0.5
+8	7	4.82	095	+22	;	(7)PSS	2	1	2	1
+8	9	4.05	346	-70	;	(8)	1	0	3	2
+					;	(9)PSS	1	1	6	0
+1	10	2.74	156	-39	;	(10)	0	1.5	1	0.5 UNCLEAR LRUD
+10	11	3.00	121	+35	;	(11)	0.5	0.5	0	0.5
+; CLINO MAYBE -35 FOR ABOVE LEG
+11	12	3.97	118	-03	;	(12)	3	3	7	2
+12	13	1.80	-	down	;	PPS in chamber
+;GRADE II PLAN ON REVERSE OF NOTES
+
+;PAGE 2
+1	14	10.83	076	+61	;	bolt   NO LRUD
+14	15	6.63	031	+33	;	NO LRUD
+15	16	0.94	182	-34	;	PPS OF BREAKDOWN PITCH = STN 14 OF RAZOR2
+;Assume PPS is typo of PSS
+
+*end razor3
+
+*equate razor2.14 razor3.16

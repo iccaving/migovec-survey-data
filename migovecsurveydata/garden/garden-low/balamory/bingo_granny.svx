@@ -1,0 +1,32 @@
+;#### Bingo Granny ####:
+; ### Continuation of Kokain Rute, beyond Balamory ###
+*date 2013.08.02 ; Expedition Sledi Vetra
+
+;Instruments + Book + Tape: James Hooper
+;Tape: Oliver Myerscough
+
+;Data entered by Clare Tan on 2013.08.03
+
+*begin bingo_granny
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/1
+
+1	2	3.76	120	-11
+2	3	10.60	- 	down
+4	3	6.70	321	-10
+
+;NOTES 
+;stn 1 is kokain rute stn 1
+;stn 2 is a bolt
+;4 to 3 is 321 degrees
+;stn 4 is a pss
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+*end bingo_granny
+
+*equate bingo_granny.1 kokain_rute.1
+

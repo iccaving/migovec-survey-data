@@ -1,0 +1,31 @@
+;WATERLOO (	bELOW Elephant )
+
+;Date: 6/8/98
+;Instruments: J Evans
+;Book: I McKenns
+
+;Data entered by J Hooper on 7/8/98
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate bosh.6	waterloo.14
+
+*begin waterloo
+*date 1998.08.06
+2	1	9.61	197	-17	;1 is a pss
+3	2	7.57	016	-64
+4	3	3.05	309	-32
+5	4	2.79	297	-19
+6	5	5.07	031	-25
+7	5	6.99	289	-16
+8	7	5.88	297	-16
+9	8	5.17	231	-21
+10	9	4.78	277	-46
+11	10	25.15	-	down
+11	12	6.29	112	53
+13	12	12.42	271	-17	;13 is a pss in centre of chamber
+14	13	17.68	283	-54
+
+*end waterloo
+

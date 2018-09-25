@@ -1,0 +1,50 @@
+;####Hall of the Mountain King####:
+;###Big pitch into chamber at the end of mighty fine indeed###
+*date 2016.07.22 ; Expedition Neprehojeni Poti
+
+;Tape + Instruments + Book: Jack Hare, Andrej Fratnik, Will Scott
+
+;Data entered by Clare Tan / Dave Wilson on 2016.08.06
+
+*begin hall_of_the_mountain_king
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	7.00	116	+46
+2	3	4.73	041	+06
+3	4	3.06	118	+01
+4	5	17.00	062	-37
+5	6	5.20	029	+03
+6	7	13.00	060	-22
+7	8	13.01	011	+18
+8	9	15.00	031	+71
+9	10	21.30	028	+82
+10	11	2.00	349	+04
+11	12	2.70	044	+12
+
+;NOTES 
+;Stn 1 is Colony Stn 9
+;Stn 2 is top of climb
+;Stn 4 is bolt at top of climb down
+;Stn 8 is cairn at end of rope
+;Stn 9 is rebelay bolt
+;Stn 12 is PSS Mighty Fine Indeed Stn 1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	3	3	4	1
+2	3	0	2	1
+3	0	2	5	1
+4	4	2	8	10
+5	2	2	22	0
+6	2	2	22	0
+7	5	5	0	0
+8	4	4	14	8
+9	4	0	0	0
+11	1	1	2	20
+*end hall_of_the_mountain_king
+
+*equate hall_of_the_mountain_king.1 colony.9
+*equate hall_of_the_mountain_king.12 mighty_fine_indeed.1

@@ -1,0 +1,71 @@
+; Blast!
+; north of meridian way, connects back to Pleasure Palace
+*date 2015.7.28 ; Expedition Pivo Moz
+
+;Book + Tape: Clare Tan
+;Instruments: Oliver Myerscough
+
+;Data entered by Oliver Myerscough and Tanguy Racine on 3/8/2015
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin blast
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 3 pages
+;p1/3
+1	2	4.95	181	+12
+2	3	8.42	191	-01
+3	4	9.45	226	+05
+5	4	7.99	333	-02
+6	5	1.28	316	-36
+7	6	5.26	025	-06
+8	7	10.31	352	-12
+9	8	16.77	356	-9
+10	9	15.95	237	-2
+11	10	14.09	310	-13
+12	11	5.25	344	-10
+12	13	3.51	170	+06
+
+;p2/3
+14	13	11.02	336	-14
+14	15	16.58	163	+11
+16	15	6.43	006	-02
+17	16	18.41	343	-04
+18	17	11.80	320	-11
+19	18	6.59	341	-09
+20	19	3.63	359	+15
+21	20	5.20	332	-35
+22	21	5.45	288	-28
+23	22	3.94	002	-11
+24	23	6.87	003	+17
+25	24	4.89	155	+35
+
+;p3/3
+26	25	5.09	021	+7
+27	26	20.83	349	-04
+28	27	5.16	336	-20
+29	28	6.84	348	-10
+30	29	3.31	317	-23
+31	30	5.11	296	-14
+32	31	24.46	331	-16
+33	32	8.84	314	-16
+34	33	2.53	342	-50
+35	34	3.05	345	0
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end blast
+; station 26 is a pss junction with crawl
+; station 30 is a pss 
+; station 35 is meridian way station 16
+; station 1 is Pleasure Palace station 1
+; station 17 is a pss with tight crawl going off to the side
+
+; ### SURVEY TIE IN ###
+*equate meridianway.16 blast.35 
+*equate pleasurepalace.1 blast.1 

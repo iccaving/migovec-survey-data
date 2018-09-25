@@ -1,0 +1,33 @@
+;Paradiso series below 55 metre freehang (big pitch below paradiso)
+;Date: 9/8/99
+;Instruments: A Gossen/J Evans
+;Book: J Hooper
+
+;Data entered by J Hooper on 10/8/99
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate paradiso2.12 below55.1
+
+*begin below55
+*date 1999.09.09
+
+1	2	7.38	280	-08	;stn 1 is pss paradiso2.12
+2	3	2.54	336	03
+3	4	2.97	316	-42
+5	4	4.35	106	29
+5	6	1.65	211	10
+6	7	5.03	286	06	;stn 7 is pss
+7	8	7.87	297	-07
+8	9	8.58	357	00
+9	10	13.37	093	22
+10	11	7.36	341	-36
+11	12	4.80	-	down
+
+9	13	2.24	254	-21	;13 is bolt at top of pitch
+14	13	11.01	002	58	;14 is bolt
+14	15	29.01	-	down	;15 is at bottom of pitch
+
+*end below55
+

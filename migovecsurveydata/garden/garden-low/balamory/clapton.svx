@@ -1,0 +1,36 @@
+;#### Clapton ####:
+; ### Continuation of Kokain Rute, beyond Balamory ###
+*date 2013.08.02 ; Expedition Sledi Vetra
+
+;Book: Andreja Fratnik
+;Tape/Instruments: Andrej Fratnik/Gergely Ambrus? 
+
+;Data entered by Clare Tan on 2013.08.03
+
+*begin clapton
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/1
+
+2	1	7.70	283	-26
+2	3	6.84	357	+58
+3	4	3.57	18	00
+4	5	6.27	82	+45
+6	7	6.0	089	+02
+7	8	1.67	113	+10
+8	5	7.61	064	-10
+5	9	8.48	82	+51
+9	10	2.90	025	-04
+
+;NOTES 
+;stn 1 is a PSS
+;stn 10 is bingo granny stn 4
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+*end clapton
+
+*equate bingo_granny.4 clapton.10
+

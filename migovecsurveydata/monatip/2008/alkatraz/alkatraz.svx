@@ -1,0 +1,28 @@
+;Monatip
+; New cave to north of Primadona & below B9.
+
+;Date: 8/8/08
+;People: Izi, Tetley 
+
+;Data entered by Jarvist Frost 8/8/08
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin alkatraz
+;PAGE 1
+2	1	5.00	132	-10	; .1 NO DATA
+2	3	6.45	269	-03	; .2 4 2 20+ 1
+4	3	10.90	076	+48	; .3 2 0 ? 1.7
+4	5	13.65	216	-27	; .4 6 4 ? 1
+6	5	8.30	314	+05	; .5 7 5 ? 1.7
+7	5	26.20	003	+18	; .6 - - - -
+7	8	24.00	278	+06	; .7 - - - -
+;.8 - - - -
+
+;.7 is PSS
+;.1 is Stn.50 in monatip4
+
+*end alkatraz 
+
+*equate alkatraz.1 monatip4.50
