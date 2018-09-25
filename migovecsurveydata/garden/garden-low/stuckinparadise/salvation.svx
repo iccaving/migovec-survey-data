@@ -1,0 +1,54 @@
+;#### Salvation ####:
+; ### Continuation from Kneekiller/Penitence passage below Stuck in Paradise. ###
+*date 2011.8.05 ; Expedition Izkubljaeni Raj
+
+;Instruments + Book: James Hooper
+;Tape: Clare Tan
+
+;Data entered by Clare Tan on 2011.08.07
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin salvation
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+1	2	26.05	334	-01
+3	2	6.09	203	-03
+3	4	9.80	345	-02
+5	4	4.61	216	-26
+5	6	12.04	015	+06
+6	7	0.59	-	up
+7	8	14.49	030	+11
+9	8	6.91	158	+10
+10	9	5.36	146	-09
+11	10	10.31	160	+19
+12	11	6.10	149	+02
+12	13	14.34	340	-02	
+
+;Page 2/2
+1	14	11.69	274	-19
+15	14	10.24	049	+17
+16	15	2.54	035	+14
+1	17	8.56	144	+13
+17	18	6.47	112	+01
+19	18	2.36	254	-10
+19	20	12.99	091	+22
+21	20	11.30	298	-14
+21	22	12.24	104	+05
+13	23	5.75	275	-19		
+*end salvation
+; NOTES
+;Station 1 is a PSS cairn at junction
+;Station 6 is a PSS
+;Station 16 is a PSS at sandy dig
+;Station 22 is a PSS at draughting squeeze
+;Station 23 is kneekiller.1
+; ### SURVEY TIE IN ###
+*equate salvation.23 kneekiller.1

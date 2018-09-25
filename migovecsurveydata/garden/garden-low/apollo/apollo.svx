@@ -1,0 +1,32 @@
+;####Apollo####:
+;###Climb off the queens's bed chamber###
+*date 2012.8.11 ; Expedition Sledi Vetra
+
+;Tape + Instruments: Sam Page
+;Book: Clare Tan
+
+;Data entered by Sam Page / Rhys Tyers on 2012.8.12
+
+*begin apollo
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/1
+1	2	5.55	019	+05
+2	3	13.30	-	down
+3	4	3.65	-	down
+4	5	2.52	228	-33
+5	6	9.88	-	down
+7	6	3.30	296	-08
+	
+;NOTES 
+;station 1 is Pss at top of bolt climb
+;station 5 is knot of y-hang
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end apollo
+
+*equate apollo.7 the_queen_bed_chamber.1

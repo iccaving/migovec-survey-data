@@ -1,0 +1,16 @@
+encoding  utf-8
+source "lost_in_a_dream.th"
+
+layout local
+	scale 1 250
+	colour map-fg [88 80 55]
+	legend on
+                        code metapost
+  		def a_water (expr p) =
+    		T:=identity;
+    		thfill p withcolor (0.0, 0.5, 1.0);
+  			enddef;
+endlayout
+
+export map -o "lost_in_a_dream.pdf" -layout local
+export model -o lost_in_a_dream.lox

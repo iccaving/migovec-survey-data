@@ -1,0 +1,37 @@
+; System Migovec 
+;  Jamarska sekcija PD Tolmin
+; Surveyed to BCRA Grade 5b
+
+;Nadaljevaje risank do sejne sobe
+ 
+; akcija potekala 9 ur
+;Date: 21/9/and 22/9/01
+
+;Instruments: Tivadar Tomaz
+;Book: Kragelj Tomaz
+
+;Data entered by Tivadar on 23/9/01
+
+;data normal bcra grade 5
+
+;from	to	tape	comp	clino
+
+*equate risa2.1	risanke.1
+
+*begin risa2
+
+1	2	7.4	61	27	;stn 1 star zelezen klin
+2	3	3.0	74	-9	;stn 2 mozic
+3	4	5.3	181	-30	
+4	5	7.4	164	-16
+5	6	6.65	139.5	-3	;stn 7 v blatu pred meandrom
+6	7	5.45	133	-8
+7	8	6.65	105	17.5	;stn 8 v dvorani med meandroma pred sejno sobo	
+8	9	5.45	175	-17.5
+9	10	5.5	138	1
+10	11	4.95	130	15.5
+11	12	4.95	117	0	;stn12 puscica za mangiare
+
+
+*end risa2
+		

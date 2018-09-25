@@ -1,0 +1,51 @@
+; Euphrates
+; Continuation of xanadu crawl
+*date 2012.7.28
+
+
+;### Not tied in - survey should be continued to connect with xanadu.18
+;### Now tied in
+
+
+
+;Book: Clare Tan
+;Instruments + Tape: Kate Smith
+
+;Data entered by DG on 30-7
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin euphrates
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 page
+
+;p1/1
+
+2	1	2.30	230	-44
+3	2	1.70	267	-25
+4	3	4.34	162	-65
+5	4	0.70	069	-22
+6	5	3.82	245	-27
+7	6	2.35	148	-15
+8	7	3.99	134	-8
+9	8	3.02	167	+10
+10	9	4.10	156	+25
+11	10	3.22	127	+27
+
+
+; notes on back of page 1
+;station 1 is pss at pitch head
+;station 11 is pss in middle of muddy crawl
+
+;### Not tied in ###
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end euphrates
+
+*equate euphrates2.4 euphrates.11

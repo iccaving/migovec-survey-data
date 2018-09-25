@@ -1,0 +1,30 @@
+; Concorde - Big pitch after space odessey
+
+;Date: 2.8.00
+;Instruments: Jim Evans
+;Book: Pete Jurd
+
+;Data entered by PJ & JE on 3.8.00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate spaceodessey.1 concorde.6
+
+*begin concorde
+
+1	2	14.33	-	up
+2	3	18.05	-	up
+3	4	20.58	-	up
+4	5	13.81	-	up
+6	5	2.70	192	-12
+
+;Passage data JMF 2009-07-18
+;data surveyed from lip of concord, OUT
+*data passage station left right up down
+1   4.0 4.0 40.0  0.5
+5   4.0 4.0 20.0  30.0
+6   1.0 1.0 1.0 1.0
+
+*end concorde
+

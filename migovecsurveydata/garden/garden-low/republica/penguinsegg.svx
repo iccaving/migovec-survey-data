@@ -1,0 +1,42 @@
+;####Penguin's Egg####:
+; ###Dry bypass after daydreamers + dream.2, below insomnia ###
+*date 2011.08.04 ; Expedition Izkubljaeni Raj
+
+;Tape: Clare Tan
+;Book + Instruments: James Hooper
+
+;Data entered by Clare Tan on 2011.8.07
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin penguinsegg
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	11.87	358	+36
+2	3	1.68	015	-34
+3	4	8.23	-	up
+4	5	4.74	143	+14
+6	5	5.01	355	+01
+7	6	2.62	345	+30
+8	7	5.59	058	+30
+9	8	5.92	010	+21
+9	10	6.51	230	-33
+11	10	4.07	033	+31
+
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end penguinsegg
+; NOTES
+;Station 7 is a PSS
+;Station 9 is a PSS
+;Station 11 is a PSS
+;Station 4 is dream2.1 
+; ### SURVEY TIE IN ###
+*equate penguinsegg.4 dream2.1

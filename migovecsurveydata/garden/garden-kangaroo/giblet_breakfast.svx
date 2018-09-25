@@ -1,0 +1,33 @@
+;Giblet Breakfast:
+;cascade of 3 pitches below dangermouse
+; New big pitch off Something Fishy (mudslump), 
+;  captain Kangaroo, near mud slump
+*date 2008.08.17 ; 17/08/08
+ 
+;Instruments / Book: DG / TO
+
+;Data entered by Jarvist Frost 18/8/08
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin giblet_breakfast
+2	1	9.1	111	-46	; .1 3 0.5 7 1
+2	3	7.3	285	+49	; .2 1 1.5 7 2
+4	3	4	115	-25	; .3 0 0.2 1 3
+;.4 0 2 6 1
+
+;Giblet_breakfast 1 PSS cairn at end of DM
+;.4 is PSS Greenback.2
+;4>3 is a pseduo leg as laser had broken
+
+;Passage data added, Jarv July 2009
+*data passage station left right up down ignoreall
+1 3 0.5 7 1
+2 1 1.5 7 2
+3 0 0.2 1 3
+4 0 2 6 1
+
+*end giblet_breakfast
+
+*equate greenback.2 giblet_breakfast.4

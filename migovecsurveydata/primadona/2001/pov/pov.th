@@ -1,0 +1,94 @@
+encoding  utf-8
+survey pov
+
+   input "povp.th2"
+   input "pov_extend.th2"
+
+   map mpov_e1 -projection extended
+    pov_e1
+  endmap
+
+  map mpovp_1 -projection plan
+    povp_1  
+  endmap
+  
+  map mpovp_2 -projection plan
+    povp_2  
+  endmap
+  
+  map mpovp_3 -projection plan
+    povp_3  
+  endmap
+  
+  map mpovp_4 -projection plan
+    povp_4  
+  endmap
+  
+  map mpovp_5 -projection plan
+    povp_5  
+  endmap
+
+  map mpov -projection plan
+    mpovp_1
+    mpovp_2
+    mpovp_3
+    mpovp_4
+    mpovp_5
+  endmap
+  
+  join povp_1 povp_2
+  join s3_l1 s2_l1 
+  join s3_l2 s2_l2
+  join povp_3 povp_4
+  join s3_l2 s5_l2
+  join s3_l3 s5_l3
+  
+  centreline
+  date 2001.07.28
+  explo-team "Tivadar Tomaz"
+  explo-team "Kragelj Tomaz"
+  team "Tivadar Tomaz" insts
+  team "Kragelj Tomaz" notes
+  
+   units length meters
+      units compass clino degrees
+  
+  1  2  12.4  43  12  #tocka 1 enaka tocki ttt 14
+2  3  7.7  65  0
+3  4  7.3  343  2
+4  5  9.75  313  -6
+5  6  15.2  26  10
+6  7  8.4  22  -14
+7  8  1.2  358  -7
+8  9  8.5  39  +35
+9  10  9.0  338  +15
+10  11  9.3  322  +6  #tocka 11 PSS
+11  12  2.6  249  -1
+12  13  11.15  344  13.5
+13  14  12.4  48  32  #tocka 13 sredina kamina na najvecjem balvanu je mozicek 
+14  15  5.4  13  58
+15  16  5.7  358  11  #tocka 15 PSS je 10 cm pod svedrovcem
+16  17  7.05  62  14
+17  18  9.4  352  30  #tocka 18 je PSS
+18  19  6.95  7  9  #tocka 19 stojis na lulcku
+19  20  10.0  27  14
+20  21  2.2  61.5  9
+21  22  5.9  353  4
+22  23  3.0  87  5
+23  24  9.5  341  0
+24  25  3.3  291.5  21  #tocka 23 je PSS
+25  26  4.85  317  0
+26  27  2.2  355  44  # zacetek puscice za mangiare
+flags duplicate
+27  28  3.25  318  0  # sredina sejne sobe
+28  29  4.45  64  -12  #poskusne tocke ne veljajo!!!!
+29  30  9.25  121  -14  #poskusne tocke
+30  31  4.8  53  14  #poskusne tocke
+31  32  2.9  105  14  #poskusne tocke
+32  33  9.75  142  -12  #poskusne tocke
+flags not duplicate
+  
+  endcentreline
+  
+  endsurvey
+

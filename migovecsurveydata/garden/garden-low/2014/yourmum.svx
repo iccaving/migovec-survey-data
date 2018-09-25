@@ -1,0 +1,28 @@
+;####Your Mum####:
+;###Twatty continuation of Esoterica###
+*date 2014.7.24 ; Expedition
+
+;Instruments: William French
+;Book: James O'Hanlon
+
+;Data entered by Rhys Tyers / William French  on 2014.7.26
+
+*begin yourmum
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	7.50	142	-61
+3	2	2.50	144	-09
+4	3	1.67	125	+12
+;NOTES 
+;stn 4 is esoterica pss 1
+;stn 1 is pss
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end yourmum
+
+*equate yourmum.4 esoterica.1

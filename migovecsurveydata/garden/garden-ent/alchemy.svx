@@ -1,0 +1,32 @@
+; Alchemy - Pitches conected by BIG rift, below concorde.
+
+;Date: 2.8.00
+;Instruments: Bruce Drinkwater
+;Book: Jan Evetts
+
+;Data entered by PJ & JE on 4.8.00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate concorde.1 alchemy.8
+
+*begin alchemy
+
+1	2	12.22	-	up	;pss 1 cairn at bottom of pitch
+3	2	5.25	254	-24
+4	3	7.2	247	-21
+4	5	15.48	-	up
+5	6	0.7	123	27
+6	7	12.25	081	2
+7	8	4.5	010	0	
+
+;passage data jarv 2008-07-18
+*data passage station left right up down ignoreall
+5   3   3   10  0.5
+6   3   3   10  0.5
+7   4   4   35  0.5
+8   4   4   70  0.5
+
+*end alchemy
+

@@ -1,0 +1,60 @@
+;Monatip
+
+;Date: 07/07/13
+*date 2013.07.07
+;Merili: Dejan R. 
+;Risala: Tjasa R.
+;ostali udelezenci: Rejec Z, Jarc S, Maffi, Bonèina E, Fratnik A.
+;Data entered by Zdenko Rejec 09/07/13
+
+;data normal bcra grade 5
+
+;*equate monatip7.20     monatip6.8 
+;Tjasa: 20. tocka je tocka na dnu brezna
+
+*begin monatip7
+*data normal from to tape compass clino	;komentar
+*set decimal (.)
+1	2	23.0	100		85	;možic
+2	3	11.0	125		84	;
+3	4	10.5	72		62	;
+4	5	2.5		291		70	;
+5	6	7.0		323		45	;
+6	7	21.0	335		3	;
+7	8	7.5		23		15	;
+8	9	12.0	357		-9	;narobe smer 375
+9	10	5.0		295		-8	;med tockama je luknja 
+10	11	6.0		295		-8	;
+11	12	10.0	261		12	;
+12	13	12.5	289		9	;	
+13	14	0.0		000		0	;	
+14	15	9.5		281		-5	;napeta precka, pod precko so nepregledana brezna
+15	16	5.0		305		-9	;
+16	17	10.0	322		8	;
+17	18	2.0		242		35	;
+18	19	7.3		297		-14	;
+19	20	11.5	202		-11	;
+
+*data passage station left right up down
+;tocka 1 je možic
+2	5	0	30	1	;svedrovc
+3	2	2	15	30	;svedrovc
+4	0	1.5	1	15	;
+5	0	2	2	10	;svedrovc
+6	0	2.5	2	12	;svedrovc
+7	1.5	3	0	2	;
+8	1.5	2.5	0.5	1	;odcep, PSS
+9	0	3	0.5	1	;
+10	1	1	1.5	1	;možic, nepregledano brezno v smeri 325
+11	1	1.5	15	0	;
+12	1	0	1	15	;
+13	1.5	1.5	20	1	;
+14	0	1	0	1.5	;
+15	1	0.5	15	5	;
+16	1	1	15	1	;
+17	1	2	10	5	;
+18	0	2	6	2	;
+19	0.5	0.5	7	10	;
+20	1	2.5	1.5	5	;
+
+*end monatip7

@@ -1,0 +1,80 @@
+encoding  utf-8
+survey popotresni
+  input "popotresnip.th2"
+  
+  map mpopotresnip_1 -projection plan
+    popotresnip_1
+  endmap
+  
+  map mpopotresnip_2 -projection plan
+    popotresnip_2
+  endmap
+  
+  map mpopotresnip_3 -projection plan
+    popotresnip_3
+  endmap
+  
+  map mpopotresnip_4 -projection plan
+    popotresnip_4
+  endmap
+  
+  map mpopotresnip_5 -projection plan
+    popotresnip_5
+  endmap
+  
+  join popotresnip_1 popotresnip_2
+  join popotresnip_2 popotresnip_3
+
+  
+  centreline
+    date 2004.07.17
+    team "Bogomir Remškar" insts notes
+    team "Ista" insts notes
+    units length meters
+    units compass clino degrees
+POP1    POP2         6.0       0     -90   #6.0     2.0     0.0     1.0
+POP2    POP3         4.6     193     -47  #0.0    10.0     0.0     1.0
+POP3    POP4        10.5     231     -71   #1.0    20.0     0.0     0.0
+POP4    POP5        13.8     183     -33   #0.0     0.0     0.0     2.0
+POP5    POP6         4.4     209     -65   #0.0    20.0     4.5     0.5
+POP6    POP7         4.8     243     -27   #1.5     2.0     0.0     0.0
+POP7    POP8         8.6     255      34   #0.0     0.0     0.0     0.0
+POP8    POP9         7.3     224      -7   #0.0     0.0     0.0     0.0
+POP9    POP14        3.8     178     -17   #0.5     1.0     0.0     0.5
+POP14   POP15        4.3     278     -23   #0.0     0.0     0.0     0.0
+POP15   POP16        2.8     310      14   #0.3     1.0     0.5     0.3
+POP16   POP17        2.2       5       3   #0.3     0.0     0.0     0.3
+POP17   POP18        2.4     303       4   #0.0     0.0     0.0     0.0
+POP14   POP19        3.6     271      52   #0.0     0.0     0.0     0.0
+POP19   POP20        3.0     265     -10   #0.0     0.0     1.0     1.0
+POP20   POP21        4.8     225     -35   #1.0     1.0     3.0     0.0
+POP21   POP22        3.9     261     -28   #0.0     2.0     0.5     1.0
+POP22   POP23        2.4     142       0   #0.0     0.0     0.0     0.0
+POP23   POP24       18.0       0     -90   #0.0     0.0     0.0     0.0
+POP24   POP25       14.2     177      41  #0.0     0.0     0.0     0.0
+POP10   POP11       11.7     197      32   #2.0     0.0     0.0     0.0
+POP11   POP12        5.2     188     -33   #2.0     1.0     0.0     0.0
+POP12   POP13       12.3     220     -31   #0.0     0.0     0.0     0.0
+POP12   POP8        11.3     110     -31   #0.0     0.0     0.0     0.0
+
+KAK1    KAK2         5.3     316      36   #0.0     0.0     0.0     0.0
+KAK2    KAK3         9.5       0     -90   #0.0     0.0     0.0     0.0
+KAK2    KAK4         5.0     295       0   #0.5     0.0     0.5     0.5
+KAK4    KAK5         1.2     192     -25   #0.0     0.0     0.0     0.0
+KAK5    KAK6         4.0     301       7   #0.5     0.5     0.0     0.5
+KAK6    KAK7         5.7     334      -6   #0.0     0.0     0.0     0.0
+KAK7    KAK8         4.6     264       5   #0.5     0.5     0.0     0.5
+KAK8    KAK9         4.4     329       0   #0.5     0.5     0.0     0.5
+KAK9    KAK10        4.4     321      -8   #0.0     1.5     0.5     0.5
+KAK10   KAK11        3.8     277      24   #0.5     1.5     0.0     0.5	drekci
+KAK11   KAK12        4.7     224     -15   #0.0     0.0     0.0     0.0
+KAK12   POP25        5.0     302      24   #0.0     0.0     0.0     0.0
+endcentreline
+
+
+endsurvey
+
+
+
+
+

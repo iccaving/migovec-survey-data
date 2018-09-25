@@ -1,0 +1,59 @@
+;#### STALEMATE ####:
+; ### Pitch below White Bishop, Korita, ending in too tight rift taking water. Needs explosive to progress.###
+*date 2010.8.6 ; Expedition Vodna Sled 2010
+
+;Book: Jarv M. Frost
+;Instruments + Tape: Myles Denton
+
+;Data entered by Jarv on 2010-8-7
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin stalemate
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 page
+;p1/1
+;#### DATA ####
+1	LASER	7.72	013	+02
+1	2	1.83	109	+46
+2	3	8.68	202	-03
+3	4	4.51	171	-54
+5	4	9.87	-	down
+6	5	3.12	191	-18
+;end of data
+
+;NOTES on Flipside:
+;.1 is PSS
+;.3 i nodule in window of pitch
+;.4 is bottom of tape (should read, rope)
+;.5 is knot of y-hang (natural + 1 bolt)
+;.6 is whitebishop .10 (TIE IN)
+
+;NOTES on Lead (separate page):
+;Water from pitch doubles back on self
+;Climb to abandoned rift --> active rift
+;fault controlled on 70deg crack
+;leading off. Can be followed for ~7m,
+;where one sees stream below bubbly
+;over edge (can't see whether cascade or pitch)
+;Really needs bang - the bigger the better - to progress.
+;Strong draft _OUT_.
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+LASER	0.1	0,1	2	2
+1	1	0	2	2
+2	0.1	0.4	1.4	2
+3	2	0	3	3
+4	2	1	10	0
+5	0.3	0.3	2	10
+6	0	0	0	0
+
+*end stalemate
+
+; ### SURVEY TIE IN ###
+*equate stalemate.6 whitebishop.10

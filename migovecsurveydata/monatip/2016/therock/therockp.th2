@@ -1,0 +1,231 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -132.0 -970 723 141.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} therockp.gif 0 {}
+
+
+
+scrap therockp_1 -scale [327.0 -736.0 498.0 -736.0 0 0 15 0 m]
+
+line slope
+  143.0 -185.0
+  l-size 15.1
+  159.0 -182.0 214.0 -125.0 217.0 -113.0
+  smooth off
+endline
+
+line pit
+endline
+
+line border -subtype invisible
+endline
+
+area blocks
+  l15-166--68
+endarea
+
+line border -id l15-166--68 -close on -subtype invisible
+  167.0 -69.0
+  115.0 -117.0
+  185.0 -209.0
+  221.0 -200.0
+  218.0 -136.0
+  167.0 -69.0
+endline
+
+point 214.0 -159.0 station -name "8"
+
+point 210.0 -183.0 station -name "7"
+
+line wall -id s1_l1 -subtype bedrock
+  196.5 -143.0
+  196.5 -143.0 197.0 -130.0 196.0 -127.0
+  195.0 -124.0 190.0 -106.5 190.0 -106.5
+  smooth off
+endline
+
+line wall -subtype bedrock
+  218.0 -151.0
+  207.0 -158.0
+  203.5 -157.5
+  198.5 -150.0
+  196.5 -143.0
+endline
+
+line wall -subtype bedrock
+  168.0 -147.0
+  168.0 -147.0 173.0 -158.5 183.0 -166.5
+  193.0 -174.5 203.0 -195.0 206.0 -194.0
+  209.0 -193.0 217.0 -188.0 219.0 -185.0
+  221.0 -182.0 222.0 -168.0 222.0 -168.0
+  smooth off
+endline
+
+line wall -id s1_l2
+  157.0 -119.0
+  165.0 -130.0
+  165.0 -130.0 167.0 -144.0 168.0 -147.0
+  smooth off
+endline
+
+point 214.0 -159.0 station -name "8"
+
+point 210.0 -183.0 station -name "7"
+
+point 185.0 -161.0 station -name "6"
+
+point 191.0 -141.0 station -name "5"
+
+point 162.0 -100.0 station -name "4"
+
+point 88.0 -92.0 station -name "3"
+
+point 120.0 -46.0 station -name "2"
+
+point 88.0 -92.0 station -name "1"
+
+endscrap
+
+
+
+scrap therockp_2 -scale [327.0 -736.0 498.0 -736.0 0 0 15 0 m]
+
+line wall
+  333.0 -242.0
+  333.0 -242.0 322.0 -244.0 316.0 -241.0
+  310.0 -238.0 305.0 -238.0 301.0 -232.0
+  297.0 -226.0 281.0 -205.0 281.0 -205.0
+  smooth off
+  271.0 -196.0
+  279.0 -186.0
+  279.0 -186.0 286.0 -181.0 285.0 -170.0
+  284.0 -159.0 280.0 -153.0 277.0 -149.0
+  274.0 -145.0 271.0 -143.0 262.0 -145.0
+  253.0 -147.0 246.0 -143.0 245.0 -140.0
+  244.0 -137.0 242.0 -134.0 236.0 -139.0
+  230.0 -144.0 225.0 -150.5 225.0 -150.5
+  smooth off
+  218.0 -151.0
+endline
+
+line wall
+  222.0 -168.0
+  228.0 -172.0 228.0 -170.0 233.0 -176.0
+  238.0 -182.0 238.0 -183.0 238.0 -187.0
+  238.0 -191.0 244.0 -200.0 244.0 -200.0
+  smooth off
+  237.0 -215.0
+  231.0 -227.0
+  229.0 -235.0
+  233.0 -246.0
+  233.0 -246.0 237.0 -276.0 238.0 -280.0
+  239.0 -284.0 239.0 -288.0 239.0 -293.0
+  239.0 -298.0 239.0 -301.0 240.0 -305.0
+  smooth off
+endline
+
+point 447.0 -464.0 station -name "14"
+
+point 370.0 -448.0 station -name "13"
+
+point 255.0 -302.0 station -name "12"
+
+point 241.0 -230.0 station -name "11"
+
+point 260.0 -193.0 station -name "10"
+
+point 238.0 -159.0 station -name "9"
+
+point 214.0 -159.0 station -name "8"
+
+point 210.0 -183.0 station -name "7"
+
+endscrap
+
+
+
+scrap therockp_3 -scale [327.0 -736.0 498.0 -736.0 0 0 15 0 m]
+
+point 447.0 -464.0 station -name "14"
+
+point 500.0 -409.0 station -name "15"
+
+point 506.5 -388.5 station -name "16"
+
+point 494.0 -401.5 station -name "17"
+
+point 472.5 -404.5 station -name "18"
+
+point 407.0 -474.0 station -name "20"
+
+point 435.0 -435.5 station -name "19"
+
+point 370.0 -448.0 station -name "13"
+
+area blocks
+  l40-498--366
+endarea
+
+line border -id l40-498--366 -close on -subtype invisible
+  371.0 -502.0
+  403.0 -526.0
+  553.0 -419.0
+  543.0 -369.0
+  543.0 -369.0 501.0 -366.0 498.0 -368.0
+  495.0 -370.0 405.0 -399.0 400.0 -408.0
+  395.0 -417.0 371.0 -502.0 371.0 -502.0
+  smooth off
+endline
+
+line wall
+endline
+
+line wall -id s3_l2
+  390.0 -530.0
+  390.0 -530.0 415.0 -487.0 415.0 -483.0
+  415.0 -479.0 415.0 -476.0 418.0 -470.0
+  421.0 -464.0 426.0 -456.0 429.0 -453.0
+  432.0 -450.0 437.0 -442.0 437.0 -442.0
+  smooth off
+  437.0 -442.0 443.0 -435.0 447.0 -434.0
+  451.0 -433.0 462.0 -427.0 464.0 -423.0
+  466.0 -419.0 472.0 -414.0 472.0 -414.0
+  smooth off
+  490.0 -407.0
+  510.0 -405.0
+  511.0 -387.0
+endline
+
+point 340.0 -628.0 station -name "25"
+
+point 394.0 -605.0 station -name "24"
+
+point 348.0 -548.0 station -name "23"
+
+point 379.0 -521.0 station -name "21"
+
+point 379.0 -521.0 station -name "22"
+
+line wall -id s3_l1
+  511.0 -387.0
+  511.0 -387.0 504.0 -380.0 500.0 -382.0
+  496.0 -384.0 491.0 -387.0 491.0 -387.0
+  smooth off
+  479.0 -392.0
+  479.0 -392.0 469.0 -398.0 466.0 -399.0
+  463.0 -400.0 461.0 -399.0 457.0 -403.0
+  453.0 -407.0 444.0 -411.0 444.0 -411.0
+  smooth off
+  434.0 -411.0
+  434.0 -411.0 430.0 -416.0 426.0 -423.0
+  422.0 -430.0 420.0 -431.0 418.0 -438.0
+  416.0 -445.0 409.0 -456.0 408.0 -459.0
+  407.0 -462.0 392.0 -487.0 392.0 -487.0
+  smooth off
+  392.0 -487.0 371.0 -512.0 368.0 -513.0
+  smooth off
+endline
+
+endscrap
+
+

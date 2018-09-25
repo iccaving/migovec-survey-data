@@ -1,0 +1,34 @@
+;Gardener's World Cave (originally called BCL (or Ben's Crap Lead)) found in 2000
+
+;THIS IS NOW JUST AN INCLUDE FILE FOR THE SUBDIERCTORIES!
+;PLEASE ENTER NEW DATA BELOW HERE - Jarv 31-7-08
+
+*infer plumbs on
+
+*begin garden
+*calibrate compass -1.633
+*date 2000
+  *include garden-ent/s_garden-ent
+
+;2008
+*calibrate compass -2.42
+*date 2008
+  *include vilinska/s_vilinska
+  *equate vilinska.vilcon.12 garden-ent.laurel.11
+  *equate vilinska.vilcon.6 garden-ent.vilcon.6 ;to tie in judge, etc.
+
+;2005
+*calibrate compass -2.10
+  *date 2005
+  *include garden-kangaroo/s_garden-kangaroo
+  *equate kangaroo.pico.13 garden-ent.pico.13
+
+;2003
+*date 2003
+*calibrate compass -1.90
+  *include garden-low/s_garden-low
+  *equate garden-ent.zimmer.3 garden-low.friend.1
+
+*equate kangaroo.fools_road.3 garden-low.fallsrd.5
+
+*end garden

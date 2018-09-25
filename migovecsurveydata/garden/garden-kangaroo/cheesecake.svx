@@ -1,0 +1,45 @@
+;Cheesecake:
+;Climb off from kill'em all to head of pitch into big chamber
+;  captain Kangaroo, near mud slump
+*date 2008.08.15 ; 15/08/08
+ 
+;Instruments + Book / Tape: Jarvist Frost / James Kirkpatrick
+
+;Data entered by Jarvist Frost 16/8/08
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin cheesecake
+;1	pseudopitch	10	-	down
+
+2	1	3.88	179	+06	; .1 0 0.5 0.5 (pitch)
+3	2	3.12	129	-09	; .2 0.5 0.5 0.8 0.2
+4	3	1.39	216	-33	; .3 R*I*F*T
+5	4	1.37	246	-14	; .4 R*I*F*T
+6	5	1.62	099	-58	; .5 1 0 2 1.5
+7	6	3.59	194	+06	; . 6 0.5 0 0.5 3
+8	7	2.07	246	-04	; .7 2.5 0 3 0.5
+8	9	5.65	079	-37	; .8 1 1 5 0
+;.9 5 0.5 8+ 20+
+
+;.1 is PSS + hang bolt for pitch. 
+;   Bolt is above too tight meander, 8ft sling down to pitch hang
+;.8 is cairn on large rock in window of climb
+;.9 is kill em all left-bolt of Y-hang
+
+;Passage data put in by Jarv July 2009
+*data passage station left right up down ignoreall
+1   0 0.5 0.5 10
+2   0.5 0.5 0.8 0.2
+3   0.25 0.25 0.5 0.5
+4   0.25 0.25 0.5 0.5
+5   1 0 2 1.5
+6   0.5 0 0.5 3
+7   2.5 0 3 0.5
+8   1 1 5 0
+9   5 0.5 8 20
+
+*end cheesecake 
+
+*equate cheesecake.9 kill_em_all.4

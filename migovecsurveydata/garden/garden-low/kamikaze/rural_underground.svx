@@ -1,0 +1,56 @@
+;####Rural Underground####:
+;###Passage beyond undercover squirrel###
+*date 2013.7.26 ; Expedition Z Miga Na Kuk
+
+;Tape + Instruments: Aljosa Boncina
+;Book: Nejc Maver
+
+;Data entered by Clare Tan on 2013.7.27
+
+*begin rural_underground
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+;Tape data is in feet!
+*units tape feet
+1	2	32.08	224	+12
+2	3	17.08	95	+02
+3	4	18	148	+10
+4	5	28.67	111	-22
+5	6	15.67	135	-53
+6	7	14.08	17	+10
+7	8	35.42	129	+02
+8	9	7.08	158	+01
+9	10	31.08	163	-18
+
+;Page 2/2
+10	11	17.08	159	-23
+11	12	16	180	-02
+12	13	5.67	261	-51
+13	14	6.42	150	-23
+14	15	4	138	-58
+15	16	8.83	169	-46
+16	17	19	216	-22
+17	18	19	179	-21
+18	19	13.75	167	+11
+19	20	5.17	134	+31
+20	21	12	229	-77
+21	22	6.25	64	-69
+*units tape meters
+
+;NOTES 
+;Station 1 is PSS
+;Station 2 is flake of rock 
+;Station 6 is before climb
+;Station 11 is above boulder choke when you climb
+;Station 22 is Undercover squirrel pss 1
+ 
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end rural_underground
+
+*equate rural_underground.20 undercover_squirrell.1

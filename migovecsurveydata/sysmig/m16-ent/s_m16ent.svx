@@ -1,0 +1,34 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+; System Mig - M16 Entrance Series 
+
+*begin m16ent
+    *date 1996.07
+    *calibrate compass -1.30
+	*include entrance
+	*include brezno
+	*include hotline
+	*include goodbag
+
+    *date 1997.07
+    *calibrate compass -1.38
+	*include woft
+	*include baddybag
+	*include lostcity
+
+    *date 1999.07
+    *calibrate compass -1.30
+	*include spiny
+	*include dinsdale
+	
+	*date 2017.07
+	*calibrate compass +3.46
+	*include death_by_a_1000_blows
+*end m16ent
+
+
+ 
+
+

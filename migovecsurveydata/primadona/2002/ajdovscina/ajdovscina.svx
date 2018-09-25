@@ -1,0 +1,27 @@
+; System Migovec 
+;  Jamarska sekcija PD Tolmin
+; Surveyed to BCRA Grade 5b
+
+;Brezno vzporedno z drekom
+;akcija trajala 14 ur 26-27.7.02
+;udelezenci:dva ajdovca Mito in mark  
+
+
+;Instruments: Ista
+
+;Data entered by Tivadar on 23/07/02
+
+;data normal bcra grade 5
+
+;from	to	tape	comp	clino
+
+*equate ajdovscina.4	zima00.13
+*equate ajdovscina.1	ttt_resurvey.8
+
+*begin ajdovscina
+*flags duplicate
+1	2	12.5	0	90
+2	3	4.0	17	0
+3	4	12.5	50	0
+*flags not duplicate
+*end ajdovscina

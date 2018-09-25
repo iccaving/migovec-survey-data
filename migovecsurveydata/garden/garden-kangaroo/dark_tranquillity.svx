@@ -1,0 +1,35 @@
+;dark_tranquillity:Dark tranquillity 
+; Further down from Intravenus, leads to significant (?) vertical development
+*date 2008.07.29
+ 
+;Instruments / Book: James Kirkpatrick, Izy
+
+;Data entered by James Kirkpatrick
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin dark_tranquillity
+;PAGE 1
+1	2	9.85	331	-37	;stn_1 1 1 2 .5
+2	3	9.25	343	-5	;stn_2 3 2.5 10.8 0.5 
+4	3	24.82	0	-90	;stn_3 3 3 24.82 0.5 3
+4	5	18.30	0	+90	;stn_4 2.5 0 0 24.82
+6	5	1.03	252	-22	;stn_5 0.3 1 1.2 18.3  
+
+*data passage station left right up down ignoreall
+; High accuracy seems to indicate they had the laser disto with them
+1 	1 1 2 .5
+2 	3 2.5 10.8 0.5
+3 	3 3 24.82 0.5 3
+4 	2.5 0 0 12.41  ;divided by two
+5 	0.3 1 1.2 9.15 ; divided by two
+6   0.5 0.5 0.5 0.5
+*end dark_tranquillity
+
+;.1 is cairn PSS 1
+;.3 is a knot at bottom of pitch
+;.4 is the maillon rebelay
+;.5 is the top of the rope
+;.6 is tip of natural above (30+m) pitch from intravenus de milo
+*equate dark_tranquillity.6 intravenus_de_milo.3

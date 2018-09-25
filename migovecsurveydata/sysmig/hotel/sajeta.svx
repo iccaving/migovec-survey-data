@@ -1,0 +1,50 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;top of sajeta pitch to bottom of pawoden pitch
+
+;Date:27/7/97
+;Instruments:Michael playford / Sarah Wingrove
+;Book: J.Hooper
+
+;Data entered by J.Hooper on 29/7/97
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate sajeta.1 xxx.10
+
+*begin sajeta
+
+1	2	2.35	131.5	-17
+2	3	18.78	-	down	;stn 2 is halfway between pitch head bolts
+3	4	11.91	-	down	;3 is bolt on 1st rebelay
+4	5	23.30	-	down	;4 is bolt on 2nd rebalay
+5	6	2.22	-	down	;5 is bolt on 3th rebalay
+6	7	9.29	-	down	;6 is bolt on 4th rebalay
+7	8	27.19	-	down	;7 is bolt on 5th rebalay
+					;stn 8 is at bottom of sajeta pitch
+
+8	9	5.90	157.5	9.5
+9	10	3.82	217	-41
+11	10	9.28	14	62
+12	11	5.30	102	-02
+12	13	8.0	288	-11	;stn13 is a PSS on cairn
+14	13	4.35	339	-04
+15	14	12.25	332	61
+16	15	4.65	244	35
+16	17	2.80	154	-15
+17	18	19.81	149	-79
+19	18	6.21	002	22
+
+20	21	30.40	-	up	;20 is at bottom of pawoden pitch
+21	22	6.90	018	72	;21 is a bolt
+23	22	6.90	198	-39	;22 is at top of pawoden pitch
+23	24	5.39	001	22
+24	25	3.13	294	32
+26	25	3.83	183	-05
+26	19	6.69	031	08
+
+*end sajeta
+

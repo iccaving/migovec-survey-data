@@ -1,0 +1,45 @@
+;####The_Stile####:
+;###Alternative Route to Cattle_Grid###
+*date 2016.07.20 ; Expedition Neprehojeni Poti
+
+;Tape + Instruments: Tanguy Racine 
+;Book: Arun Paul
+
+;Data entered by Saber King / Will Scott on 2016.08.5
+
+*begin The_Stile
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+1	2	7.99	071	-27
+2	3	4.17	113	-16
+3	4	4.27	010	-01
+4	5	3.97	340	+01
+5	6	3.95	051	+04
+6	7	4.66	334	-04
+7	8	3.66	319	0
+8	9	3.68	013	-07
+9	10	2.79	067	-03
+10	11	1.92	300	-08
+11	12	3.36	062	-35
+12	13	5.67	355	-42
+13	14	8.08	244	-25
+;Page 2/2
+14	15	4.30	231	-17
+15	16	1.78	282	-45
+16	17	1.13	284	+21
+
+;NOTES 
+;Stn 1 is Cattle_Grid Stn 23
+;Stn 10 is PSS
+;Stn 17 is Cattle_Grid 15
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end The_Stile
+
+*equate The_Stile.1 Cattle_Grid.23
+*equate The_Stile.17 Cattle_Grid.15

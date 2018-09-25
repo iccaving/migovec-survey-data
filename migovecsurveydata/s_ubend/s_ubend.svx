@@ -1,0 +1,17 @@
+;Ubend cave file to combine all legs
+
+;Date: 2/8/00
+
+
+
+*begin u-bend
+
+ *include ubend/ubend
+ *include ubend2/ubend2
+ *include ubend3/ubend3
+ *include ubend_det/ubend_det
+ *include ubend_bathtub/ubend_bathtub
+ *include ubend_drainpipe/ubend_drainpipe
+
+*end u-bend
+

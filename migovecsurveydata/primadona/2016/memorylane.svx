@@ -1,0 +1,41 @@
+;Primadona
+;Resurvey of lower entrance series
+
+;Date: 18/07/16
+;Instruments / Book: Jack Hare Will Scott
+
+;Data entered by Kenneth Tan 05/08/16
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin memorylane
+
+;PAGE 1
+*flags duplicate
+1	2	2.37	227	-17
+2	3	5.68	348	+23
+3	4	8.05	038	+08
+4	5	11.14	342	+34
+5	6	8.18	007	+85
+6	7	6.43	318	+07
+7	8	19.18	023	+72
+8	9	3.08	011	+03
+9	10	8.85	286	+21
+10	11	22.62	021	+82
+11	12	8.92	025	+28
+12	13	4.22	277	+18
+13	14	9.67	305	-18
+
+*flags not duplicate
+;NOTES
+;Stn1 is PSS 1 therock
+;Stn26 is towards exit
+;Stn29 is top of free climb
+
+
+*end memorylane
+
+*equate memorylane.1 therock.1
+*equate memorylane.10 prima1.19
+

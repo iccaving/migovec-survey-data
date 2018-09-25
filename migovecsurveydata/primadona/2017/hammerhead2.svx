@@ -1,0 +1,63 @@
+;####Hammerhead2####:
+;###Continuation of Hammerhead ###
+*date 2017.07.18 ; Expedition Cez Rob
+
+;Tape + Instruments: James Wilson
+;Book: James Hooper
+;Also present: Jarvist Frost and Tanguy Racine
+
+;Data entered by Tanguy Racine on 19/07/2017
+
+*begin hammerhead2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+
+;Page 1/2
+2	1	9.95	083	+35
+2	3	5.73	250	-34
+3	4	8.32	-	DOWN
+2	5	5.00	175	+31
+5	6	10.95	207	-17
+6	7	2.82	100	+37
+7	8	8.11	-	DOWN
+8	9	8.44	157	+04
+10	9	3.40	342	+08
+10	11	2.89	215	+02
+11	12	17.40	216	-64
+
+;Page 2/2
+14	13	16.65	215	-10
+14	15	8.96	025	+09
+16	15	2.77	214	-48
+16	17	5.26	068	+18
+18	17	6.53	137	+24
+19	18	8.30	185	+13
+19	20	3.57	013	-11
+20	12	4.35	345	-17
+17	21	5.26	080	-40
+22	21	4.08	273	+18
+22	23	8.30	018	+02
+23	24	2.95	085	-02
+
+;NOTES 
+;STN2 is PSS
+;STN2 is Hammerhead (16.7.17) STN1
+;STN6 is PSS
+;STN7 is left hand pitch bolt
+;STN9 is bolt at start of traverse
+;STN10 is a PSS
+;STN 11 is righthand pitch bolt
+;STN12 is PSS
+;STN14 is a PSS
+;STN17 is a PSS
+;STN24 is a PSS
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end hammerhead2
+
+*equate hammerhead2.2 hammerhead.1
+
+

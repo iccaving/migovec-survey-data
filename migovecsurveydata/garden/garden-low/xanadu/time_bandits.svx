@@ -1,0 +1,53 @@
+;#### Time Bandits ####:
+; ### Rift off stn 17 junction at Cuckoo's Nest ###
+*date 2013.07.31 ; Expedition Sledi Vetra
+
+;Instruments + Book: James Hooper
+;Tape: Oliver Myerscough
+
+;Data entered by Clare Tan on 2013.08.03
+
+*begin time_bandits
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+
+1	2	2.84	123	-22
+2	3	11.97	173	-02
+3	4	3.75	188	+01
+4	5	4.55 	217 	+16
+5	6	6.80	318	+34
+6	7	12.28	347	+11
+8	7	3.79	087	-27
+8	9	2.83	319	-16
+9	10	4.81	007	+08
+11	10	4.78	097	-36
+11	12	3.38	243	+16
+12	13	5.20	175	+12
+
+;Page 2/2
+
+13	14	7.71	184	-01
+14	15	9.41	182	-03
+15	16	14.39	192	+18
+17	16	6.05	025	-17
+17	18	7.23	314	+05
+17	18b	4.35	175	-36
+14	19	4.13	276	+27
+19	20	6.31	225	+38
+
+;NOTES 
+;stn 14 is a PSS at junction
+;stn 17 is a PSS at chamber
+;stn 1 is CT+IM Cuckoo's Nest stn 17
+;stn 5 is a PSS
+;stn 8 is a PSS
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+*end time_bandits
+
+*equate time_bandits.1 cuckoos_nest.17
+

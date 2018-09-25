@@ -1,0 +1,30 @@
+;####Dwarf Pine####:
+;###Continuation of Hydrophobia (pitch series off Cuckoo's Nest)###
+*date 2013.8.05 ; Expedition Z Miga Na Kuk
+
+;Instruments: Dave Kirkpatrick
+;Book + Tape: Sam Page
+
+;Data entered by Clare Tan / Sam Page on 2013.8.9
+
+*begin dwarf_pine
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	8.65	52	+64
+2	3	5.55	341	-25
+3	4	17.30	188	+81
+4	5	1.70	137	+26
+
+;NOTES 
+;Station 1 is a PSS
+;Station 5 is Hydrophobia stn 1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end dwarf_pine
+
+*equate dwarf_pine.5 hydrophobia.1

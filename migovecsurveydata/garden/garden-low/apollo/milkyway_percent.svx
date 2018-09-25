@@ -1,0 +1,90 @@
+;####Milky Way####:
+;###Passage above queens bed chamber###
+*date 2012.8.11 ; Expedition Sledi Vetra
+
+;Tape + Instruments: Sam Page
+;Book: Clare Tan
+
+;Data entered by Sam Page / Rhys Tyers on 2012.8.12
+
+*begin milkyway
+
+*units clino percent    ; Clino misread as %
+
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 4 pages
+;Page 1/4
+2	1	16.78	010	+16
+2	3	10.83	171	-22
+4	3	17.42	330	+46
+4	5	10.13	195	-12
+6	5	13.88	286	+06
+6	7	12.31	152	-16
+8	7	4.58	287	+24
+10	9	5.00	285	-51
+10	11	10.29	181	-24
+12	11	16.48	035	+34
+12	13	2.15	284	+25
+
+;Page 2/4
+14	13	4.06	022	-24
+14	15	9.30	317	+30
+8	15	7.45	210	+04
+17	16	10.13	021	+12
+17	18	14.24	165	-46
+19	18	4.62	326	+10
+20	19	1.50	011	-11
+20	21	4.55	174	-64
+22	21	11.45	339	+24
+22	23	9.93	168	-19
+24	23	3.15	336	+50
+
+;Page 3/4
+24	25	11.35	167	-30
+26	25	12.00	331	+11
+26	27	24.65	154	-16
+28	27	7.53	334	-05
+28	29	7.62	187	-27
+30	29	5.40	291	-02
+30	31	15.05	098	+18
+32	31	4.80	259	-56
+32	33	17.60	080	+32
+34	33	19.36	216	-33
+34	35	25.20	009	+36
+
+;Page 4/4
+36	35	6.60	164	-18
+36	37	31.30	335	+21
+13	37	5.73	176	-37
+38	8	11.30	067	-42
+38	39	11.26	024	+80
+40	39	6.76	202	-32
+41	40	3.94	227	-50	
+
+;NOTES 
+;Back of Page 1
+;Sta 1 is PSS at end of passage
+;Sta 8 is PSS in middle of passage
+;Sta 9 is PSS at top of pitch (10-15m)
+;Sta 13 is PSS at junction
+
+;Back of page 2
+;Sta 16 is PSS in boulder chamber half way down wet pitch
+
+;Back of page 3
+;Sta 29 is PSS above hole in ground - interesting crawl, not much draught
+;Sta 32 is PSS at junction of way to wet pitch and unpushed horizontal passage
+
+;Back of page 4
+;Stn 41 is Apollo stn 1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*units clino degrees
+
+*end milkyway
+
+*equate milkyway.41 apollo.1

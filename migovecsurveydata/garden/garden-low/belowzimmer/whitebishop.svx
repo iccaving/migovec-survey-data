@@ -1,0 +1,64 @@
+;#### White Bishop ####:
+; ### Pitch beyond Black Knight ###
+*date 2010.8.6 ; Expedition Vodna Sled 2010
+
+;Book: Jarvist M Frost 
+;Instruments + Tape: Myles Denton
+
+;Data entered by Jarv on 2010-08-07
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin whitebishop
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 page
+;p1/1
+;#### DATA ####
+1	2	3.52	-	down
+3	2	1.25	014	-06
+4	3	2.73	332	-22
+4	5	10.14	-	down
+6	5	6.44	314	-12
+7	6	4.03	355	+02
+8	7	3.39	012	+44
+9	8	5.75	347	+00
+9	10	2.23	081	-71
+11	10	5.94	340	+01
+DEADRIFT	11	7.44	349	+05
+
+;NOTES ON FLIPSIDE:
+;.1 is PSS, also sidewinder.1; blackknight.13
+;1->2 rift climb to traverse line
+;.2 is ~2m above waterfall on pith
+;.4 is bolt on true left hand wall for hang
+;.5 is bottom o pitch
+;.6 is nodule on Meander
+;.8 is PSS cairn in rift below 1st climb
+; 10-> Deadrift is traverse above pitch into dry old chamber
+;.10 PSS above pitch in rift
+;Grade I plan 
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	0.5	0	1	6
+2	0.5	0.1	5	2
+3	0.5	0	4	5
+4	0	0.3	1	5
+5	1	3	10.5	0
+6	0.25	0.25	0.1	2
+7	0.4	0.1	0.4	4
+8	0.3	1.2	3	3
+9	0.5	0	0.5	4
+10	0.5	0	3	2 ;or 8 on down
+11	0.1	0.5	1.5	1
+DEADRIFT	2	1	2	2.5
+
+*end whitebishop
+; NOTES
+
+; ### SURVEY TIE IN ###
+*equate whitebishop.1 sidewinder.1

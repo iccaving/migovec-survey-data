@@ -1,0 +1,47 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;>Torn T upper rift (ME, AH)   
+
+;M18 
+
+;Date: 1995?
+;Instruments:
+;Book: 
+
+;Data entered by
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate upperrift.0 torn.17 
+
+*begin upperrift                      
+*date 1995.07
+*team "Mark Evans"
+*team "Tony Hayden"
+*data normal from to tape compass clino
+*sd tape 0.1 metres
+0       1       4.7     -       up
+1       2       6.3     285     -20
+2       3       1.7     233     0
+3       4       0.7     170     0
+4       5       2.7     260     -30
+5       6       3       150     -40
+6       7       1       275     0
+7       8       2.4     179     -24
+8       9       5       330     -20
+
+*data passage station left right up down
+0	1.5	1.5	-	0
+1	1.5	0	5	2
+2	-	-	-	-
+3	-	-	-	-
+4	-	-	-	-
+5	1	0	1.6	1
+6	0	1	1	1
+7	-	-	-	-
+8	-	-	-	-
+9	-	-	-	-
+*end upperrift

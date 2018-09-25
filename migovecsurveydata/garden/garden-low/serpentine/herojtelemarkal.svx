@@ -1,0 +1,82 @@
+;####HEROJTELEMARKAL####:
+;###Continuation after Krtkovadobradela, below first Serpentine pitch###
+*date 2011.08.02 ; Expedition Izkubljaeni Raj
+
+;Instruments + Book: Tjasa
+;Tape: Erik
+
+;Data entered by Jarvist Frost on 12.08.2011 
+
+*begin herojtelemarkal1
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+
+*date 2011.08.5
+
+;Data for herojtelemarkal1 is on first page of three
+;page 1/3
+;#### DATA ####
+;from   to      tape    comp    clino
+0	1	0.85	020	-09
+1	2	7.00	045	+18.5
+2	3	8.40	028	+11
+3	4	11.50	026	+27.7
+4	5	2.30	000	+15
+5	6	7.20	020	+18.5
+6	7	3.70	290	+21.3
+7	8	3.20	194	-07
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+
+
+*end herojtelemarkal1 
+
+;NOTES
+;Stn 0 heroj telemarkal 1 is stn 1 krtkova dobraela
+
+; ### SURVEY TIE IN ###
+*equate herojtelemarkal1.0 krtkovadobradela.1
+
+*begin herojtelemarkal2
+*date 2011.08.7
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+
+;Data for herojtelemarkal2 is on pages 1 & 2
+;page 1/3
+;#### DATA ####
+;from   to      tape    comp    clino
+0	1	3.40	056	+40
+1	2	5.50	043	+18.1
+2	3	2.70	081	+5.6
+3	4	1.40	058	+15.5
+;page 2/3
+4	5	2.70	358	+12.5
+5	6	2.00	019	-28
+6	7	2.50	004	+27.5
+7	8	6.50	074	+24
+8	9	2.80	359	+5.7
+*end herojtelemarkal2
+
+*equate herojtelemarkal2.0 herojtelemarkal1.6
+
+*begin krtekinorel
+*date 2011.08.7
+;page 2/3
+0	1	4.50	220	-33
+1	2	10.00	148	-78
+2	3	6.30	320	-08
+3	4	8.50	305	-02
+4	5	5.90	228	-29.5
+5	6	4.20	250	-18.5
+6	7	5.50	288	+3.3
+;page 3/3
+7	8	3.30	318	+8.4
+8	9	6.60	169	-11.5
+9	10	3.60	194	-40.5
+10	11	4.40	251	-11
+11	12	3.30	216	-17.5
+*end krtekinorel
+
+*equate krtekinorel.0 krtkovadobradela.1
+

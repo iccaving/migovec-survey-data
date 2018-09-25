@@ -1,0 +1,34 @@
+encoding  utf-8
+survey risanke
+
+   input "risankep.th2"
+   input "risanke_extend.th2"
+
+
+   map mrisanke_e -projection extended
+    risanke_e1
+   endmap
+   
+  map mrisankep_1 -projection plan
+    risankep_1  
+  endmap
+
+  centreline
+  
+  team " Tivadar Tomaz" insts
+  team "Kragelj Tomaz" notes
+  
+      date 2001.07.19
+      # declination 0.00 degrees
+      units length meters
+      units compass clino degrees
+      
+1	2	6.3	314	44	#stn 1 star zelezen klin
+2	3	6.1	11	57	#toc 2 vijola karabin (behs peropremil)
+3	4	9.5	8.5	47	
+5	4	5.2	121	-24	#toc 5 enaka tocki prim1.1 po koncu vhodnih breznov
+      
+    endcentreline
+
+endsurvey
+

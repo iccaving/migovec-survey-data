@@ -1,0 +1,86 @@
+;####TTT resurvey####:
+;###Resurvey project of TT branch###
+*date 2017.07.14 ; Expedition Cez Rob
+
+;Tape + Instruments: Jarvist Frost
+;Book: Tanguy Racine
+
+;Data entered by Tanguy Racine on 17/07/2017
+
+*begin TTT_resurvey
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 4 pages
+;Page 1/4
+*flags duplicate
+1	2	4.59	115	+09
+2	3	16.70	-	UP
+*flags not duplicate
+3	4	5.03	-	UP
+4	5	7.26	252	+04
+5	6	8.97	152	+74
+6	7	7.55	195	+18
+7	8	6.50	307	-19
+*flags duplicate
+8	9	13.02	-	UP
+9	10	4.40	012	-07
+10	11	5.63	057	+00
+11	12	9.74	037	+04
+12	13	2.66	076	-05
+
+;Page 2/4
+13	14	10.91	005	-01
+14	15	2.95	256	+05
+15	16	4.89	343	+27
+16	17	3.77	016	-06
+17	18	3.85	303	-28
+18	19	3.27	041	-09
+19	20	5.28	-	UP
+20	21	2.85	035	+01
+21	22	6.74	137	+10
+22	23	8.60	045	+39
+23	24	3.40	057	+09
+24	25	5.14	068	-18
+
+;PAGE 3/4
+25	26	3.49	033	+50
+26	27	14.10	060	-02
+27	28	18.90	014	+57
+28	29	21.08	-	UP
+29	30	13.09	032	+38
+30	31	9.27	047	-06
+31	32	3.11	046	+22
+32	33	4.59	035	+07
+33	34	2.28	-	UP
+34	35	3.24	041	+25
+35	36	5.96	023	+04
+36	37	4.08	061	+09
+
+;PAGE 4/4
+37	38	3.10	357	+34
+38	39	2.97	057	-15
+39	40	3.52	116	+43
+40	41	7.00	004	+30
+41	42	5.81	052	-27
+42	43	11.50	022	+46
+43	45	3.89	-	UP
+45	46	16.32	034	+06
+46	47	4.62	047	-15
+*flags not duplicate
+
+;NOTES 
+;Stn 1 is Cairn in Ajdovcina pitch
+;Stn 7 is PSS
+;Stn 18 is Deja Vu stn 1
+;STN 27 is PSS in centre on TTT pitch
+;STN 47 is PSS in cairn at Mandare cross-roads
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end TTT_resurvey
+
+*equate TTT_resurvey.18 dejavu.1
+*equate TTT_resurvey.47 pov.1
+;*equate ajdovscina.2 TTT_resurvey.9

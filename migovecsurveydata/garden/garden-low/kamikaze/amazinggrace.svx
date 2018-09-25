@@ -1,0 +1,37 @@
+;####Serenade####:
+; ###passage from climb in throne room - kamikaze extensions###
+*date 2011.7.27 ; Expedition Izkubljaeni Raj
+
+;Book + Tape: Kate
+;Instruments: Jan
+
+;Data entered by DG on 2011.7.28
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin amazinggrace
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	8.21	122	-19
+3	2	24.06	161	-29
+4	3	13.21	164	-14
+5	4	10.86	146	+21
+6	5	4.54	133	-03
+6	7	5.56	046	-47
+8	7	1.54	260	+45
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end amazinggrace
+; NOTES
+;Missing station at end of survey - called it 8.
+;Second to last leg is forwards. Due to missing station at end of survey, wrong leg marked in survey notes. 
+;Tied it at 8 with assumed direction although notes say it was 7. Jan and Kate concur.
+; ### SURVEY TIE IN ###
+*equate amazinggrace.8 serenade.7

@@ -1,0 +1,50 @@
+;####Perfidia####:
+; ###Attempt to bypass Mad Cow sump, accidentally bypass Republica###
+*date 2012.7.20 ; Expedition Sledi Vetra
+
+;Tape: Clare Tan
+;Book + Instruments: Jarvist Frost
+
+;Data entered by Jarvist Frost on 2012.7.23
+
+*begin perfidia
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+1	2	2.87	133	+10
+2	3	3.46	187	+04
+3	4	2.63	294	+18
+4	5	4.26	236	+01
+5	6	2.62	206	+00
+6	7	4.45	207	-02
+7	8	3.14	269	-03
+8	9	2.32	278	+22
+9	10	2.83	153	+45
+10	11	2.82	211	+08
+11	12	3.74	266	-16
+12	13	1.69	286	+05
+;Page 2/2
+13	14	4.41	316	-06
+14	15	6.40	266	-05
+15	16	3.91	277	+28
+16	17	1.21	309	+00
+17	18	2.56	-	up
+
+;NOTES on flip of page 1
+;Perfidia.1 is Republica.15 / Insomnia.15 (above pitch)
+;.14 is PSS above Mad Cow Sump Stream
+;.17 is rope of Red Cow Pitch
+;.18 is Y-hang of above
+;
+;Red Cow Sump: 2x free climb below .14, then ~4m pitch on 1 bad bolt + backup to 4m diam pool. Stream leads off ~10m of ~1m diam passage with 40cm wide stream to staining on ceiling, silt, low floor, puddle
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end perfidia
+
+*equate perfidia.1 republica.15
+;*equate perfidia.18 mad_cow.7

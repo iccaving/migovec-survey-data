@@ -1,0 +1,30 @@
+;####Hammerhead3####:
+;######
+*date 2017.07.19 ; Expedition Cez Rob
+
+;Tape + Instruments: Jarvist Frost
+;Book: Tanguy Racine
+
+;Data entered by Tanguy Racine on 21/07/2017
+
+*begin hammerhead3
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;PAGE 1/1
+1	2	8.76	-	UP
+2	3	3.75	016	+32
+3	4	2.54	-	UP
+4	5	7.67	018	+14
+
+
+;NOTES 
+;STN1 is at bottom of boulder choke
+;STN 2 is PSS at head of pitch through boulders
+;STN5 is Hammerhead 2 stn 14 JH/JW middle of large boulder chamber
+
+*end hammerhead3
+
+*equate hammerhead3.5 hammerhead2.14

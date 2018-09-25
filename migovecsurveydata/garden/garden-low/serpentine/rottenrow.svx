@@ -1,0 +1,38 @@
+;####Rotten Row####:
+; ###Below serpentine, continuation below The Long Water###
+*date 2011.7.26 ; Expedition Izkubljaeni Raj
+
+;Tape: Clare Tan
+;Book + Instruments: JMF
+
+;Data entered by DG on 2011.7.27
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin rottenrow
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	2.75	132	+15
+2	3	2.26	078	+12
+3	4	4.65	343	+06
+4	5	1.54	024	+59
+5	6	4.04	015	+10
+6	7	4.55	136	-23
+7	pitch	4.45	098	-12
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end rottenrow
+; NOTES
+;Station 1 is pss at head of pitch
+;Station 7 is pss next to pool in cascade chamber
+;Station 7 is pss longwater.7
+
+; ### SURVEY TIE IN ###
+*equate rottenrow.7 longwater.7

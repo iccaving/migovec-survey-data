@@ -1,0 +1,57 @@
+;####The Long Water####:
+; ###Pitches below serpentine###
+*date 2011.7.26 ; Expedition Izkubljaeni Raj
+
+;Book + Instruments: JMF
+;Tape: Clare Tan
+
+;Data entered by DG on 2011.7.27
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin longwater
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+7	1	2.32	117	+34
+7	2	4.00	032	+42
+2	3	2.73	164	+17
+3	4	3.69	128	-03
+4	1	3.52	295	-41
+5	1	6.76	302	-57
+5	6	2.70	128	+20
+8	1	4.92	333	-42
+9	8	1.96	341	-26
+9	10	4.65	110	+10
+10	11	4.77	092	-04
+;Page 2/2
+10	12	1.72	086	-19
+12	13	4.53	-	up
+13	14	3.49	147	+21
+14	15	3.39	087	+15
+15	16	2.24	-	up
+16	17	4.81	111	+16
+17	18	4.86	128	-03
+18	19	6.38	255	+19
+18	20	4.43	021	-17
+20	21	10.27	-	up
+21	22	2.88	320	+04
+23	22	2.31	164	-25
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end longwater
+; NOTES
+;Station 1 is pss in cascade chamber
+;Station 7 is rotten row 7
+;Station 5 is pss up climb
+;Station 10 is pss near base of small pitch
+;Station 12 is pss at bottom of pitch rope
+;Station 13 is knot of y-hang
+;Station 18 is pss in chamber at bottom of pitch
+;Station 23 is roundpond pss station 0
+; ### SURVEY TIE IN ###
+*equate longwater.23 roundpond.0

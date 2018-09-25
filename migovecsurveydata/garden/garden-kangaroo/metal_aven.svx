@@ -1,0 +1,39 @@
+;	Metal	Aven:
+;	Above	metal	camp
+*date	2009.08.05	;	05/08/09
+	
+;Book	+	Tape:	James	Kirkpatrick
+;Instruments:	Iztok	Mozir
+
+;Data	entered	by	James	Kirkpatrick	06/8/09
+
+;data	normal	bcra	grade	4
+;from	to	tape	comp	clino
+
+*begin	metal_aven	
+;Data	is	on	two	page	entitled	Metal	Aven
+
+1	2	3.46	243	-5	;	r	i	f	t
+2	3	2.10	211	-46	;	r	i	f	t
+3	4	2.26	223	-28	;	r	i	f	t
+4	5	1.90	141	-26	;	1.5	3	1.4	0.5
+5	6	6.38	-	down	;	x	x	x	x
+6	7	6.20	189	22	;	1	2.5	6.38	0
+7	8	14.27	255	-78	;	0.2	3	2.5	0.5
+8	9	5.98	35	-54	;	1.5	4	14.27	0.5
+9	10	2.15	326	41	;	2.5	1	1	1	
+10	11	7.29	28	59	;	3	0	4	0.5
+11	12	2.95	107	44	;	r	i	f	t
+12	13	4.78	24	15	;	r	i	f	t
+13	14	10.79	11	43	;	2	0	10	1
+14	15	3.85	18	48	;	0	2	1	10
+
+;	station	1	is	PSS
+;	8	has	two	inconstent	lrud	data
+;	8	is	a	cairn	
+;		10	is	entrnce	to	camp	and	a	pss
+;	15	is	PSS	06	of	mud	slump	1
+
+*end	metal_aven
+
+*equate	metal_aven.15	mudslump.6

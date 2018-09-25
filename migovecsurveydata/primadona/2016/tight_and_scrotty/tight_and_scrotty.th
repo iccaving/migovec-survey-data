@@ -1,0 +1,35 @@
+survey tight_and_scrotty
+	#Expedition Neprehojene Poti
+	#At the bottom of Blue Danube
+
+	input tight_and_scrotty-p.th2
+
+	map m1p -projection plan
+		tight_and_scrotty-p1
+	endmap
+	
+
+	centreline
+		date 2016.07.26
+		explo-team "Jack Hare"
+		explo-team "Miriam North"
+		explo-team "Clare Tan"
+		explo-team "Rhys Tyers"
+
+		team "Jack Hare" insts tape
+		team "Miriam North" insts tape
+
+		#Page 1/1
+
+		1	2	13.75	180	+72
+		2	3	3.25	185	+05
+		4	3	3.43	-	down
+		5	4	4.40	330	+03
+		6	5	7.52	00	+05
+		6	7	4.67	-	up
+		8	7	4.80	345	00
+		8	9	1.97	020	+25
+
+
+	endcentreline
+endsurvey

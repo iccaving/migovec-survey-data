@@ -1,0 +1,39 @@
+;#### Straightjacket ####:
+; ### Passage off chamber at end of Rejuvenation rift ###
+*date 2013.08.02 ; Expedition Sledi Vetra
+
+;Book: Clare Tan
+;Tape + Instruments: Rhys Tyers
+
+;Data entered by Clare Tan on 2013.08.03
+
+*begin straightjacket
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+
+2	1	3.83	174	+31
+3	2	3.59	140	-25
+4	3	3.23	184	+20
+5	4	0.86	095	-03
+6	5	2.60	058	+27
+7	6	2.04	103	+19
+8	7	3.66	353	+05
+9	8	2.00	350	+64
+10	9	2.50	342	+70
+
+;NOTES 
+;Stn 1 is a PSS at squeeze in rift
+;Stn 4 is PSS at junction
+;Stn 7 is PSS in chamber
+;Stn 10 is PSS in chamber with water, start of rejuvenation rift
+;Stn 10 is rejuvenation rift stn 1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+*end straightjacket
+
+*equate straightjacket.10 rejuvenation_rift.1
+

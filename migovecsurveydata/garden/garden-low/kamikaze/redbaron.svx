@@ -1,0 +1,37 @@
+;#### Red Baron ####:
+; ### Pasage going in the other direction from Kamikaze. ###
+*date 2011.7.23 ; Expedition Izgubljeni Raj
+
+;Tape Worm & Instruments: Johnny Hardman
+;Book: James 'Tetley' Hooper
+
+;Data entered by DG on 25-7-2011
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin redbaron
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 page
+;p1/1
+2	1	5.61	198	-12
+3	2	5.69	228	-13
+4	3	10.26	196	-18
+5	4	3.31	067	-16
+5	6	10.12	194	-18
+5	7	11.70	350	-06
+7	8	14.28	335	+14
+7	9	4.50	047	-25
+9	10	11.65	167	-22
+
+;notes on flipside
+;station 5 is pss kairn
+;station 10 is pss kairn
+;station 1 is pss kairn kamikaze 25
+*end redbaron
+
+; ### SURVEY TIE IN ###
+*equate redbaron.1 kamikaze.25

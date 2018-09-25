@@ -1,0 +1,30 @@
+;####Formative####:
+;###Downstream small inlet at Beyond###
+*date 2015.8.5 ; Expedition Pivo Moz
+
+;Instruments: Rhys Tyers
+;Book: Tanguy Racine
+
+;Data entered by Rhys Tyers / William French  on 2015.8.7
+
+*begin formative
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/1
+2	1	14.22	-	down
+3	2	8.65	255	-59
+4	3	3.30	281	-49
+5	4	4.81	095	-28
+
+;NOTES 
+;stn 1 is pss
+;stn 5 is Beyond stn 1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end formative
+
+*equate formative.5 beyond.11

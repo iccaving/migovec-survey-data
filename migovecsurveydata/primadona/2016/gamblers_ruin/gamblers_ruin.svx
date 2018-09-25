@@ -1,0 +1,44 @@
+;####Gambler's Ruin####:
+;###Draughting rift off Upside Down Chamber###
+*date 2016.07.26 ; Expedition Neprehojeni Poti
+
+;Tape + Instruments: Jack Hare, Miriam North
+;Book: Clare Tan
+;Also present: Rhys Tyers
+
+;Data entered by Clare Tan / Dave Wilson on 2016.08.06
+
+*begin gamblers_ruin
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	8.67	160	+45
+2	3	4.92	165	+40
+3	4	5.87	145	+05
+5	4	5.76	-	down
+5	6	4.87	135	+75
+7	6	3.23	315	-25
+8	7	5.08	010	-45
+8	9	2.11	140	+15
+
+;NOTES 
+;Stn 1 is a PSS
+;Stn 7 is cairn in upside down chamber at top of pitch
+;Stn 9 is Upside Down Chamber Stn 5
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	0.5	0.5	8	0.5
+2	0	0.5	2	8
+3	1	0	4	1.5
+4	0	0.5	10	2
+5	1	0	5	10
+6	1	1	25	0.5
+7	1.5	3	25	0.5
+8	7	5	20	0
+
+*end gamblers_ruin
+
+*equate gamblers_ruin.8 upside_down_chamber.5

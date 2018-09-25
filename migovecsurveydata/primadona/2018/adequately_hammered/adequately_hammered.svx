@@ -1,0 +1,30 @@
+;####Adequately Hammered####:
+;###Continuation of Holy Moley###
+*date 2018.07.16 ; Expedition Klic Globin
+
+;Disto: Rebecca Diss
+;Book: David Kirkpatrick
+;Data entered by David Kirkpatrick on 24/07/2018
+
+*begin adequately_hammered
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+1	2	13.73	0	+90
+
+
+;NOTES 
+;STN1 is Alabaster STN9
+;STN2 is Holy Moley STN1
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end adequately_hammered
+
+*equate adequately_hammered.1 alabaster.9
+

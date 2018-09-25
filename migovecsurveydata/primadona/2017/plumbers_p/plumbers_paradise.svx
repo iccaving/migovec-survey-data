@@ -1,0 +1,58 @@
+;########:
+;###Continuation of Fenestrator###
+*date 2017.07.20 ; Expedition Cez Rob
+
+;Instruments: Rhys Tyers
+;Book: Clare Tan
+;Tape: Ben Honan
+
+;Data entered by Tanguy Racine on 21/07/2017
+
+*begin plumbers_paradise
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+
+;PAGE 1/2
+2	1	1.25	230	+30
+3	2	1.92	285	+29
+4	3	2.71	296	+08
+5	4	3.12	222	-05
+6	5	5.14	197	-02
+7	6	5.92	173	+04
+8	7	4.96	168	-01
+9	8	3.47	168	-20
+10	9	5.20	160	+11
+11	10	3.09	152	-01
+12	11	6.80	178	-03
+13	12	8.24	160	+00
+
+;Page 2/2
+14	13	3.08	157	+01
+15	14	0.96	260	+33
+15	16	7.52	318	+37
+16	17	5.65	322	+11
+17	18	5.47	318	-34
+18	19	1.27	170	-10
+19	20	5.55	120	-63
+19	21	9.71	002	+79
+21	22	7.75	282	+72
+22	23	1.92	190	+10
+23	24	4.62	093	+23
+24	25	2.35	175	+20
+
+;NOTES
+;STN is PSS in dead chamber
+;STN3 is PSS with small drop to stream
+;STN 5 is PSS at junction of two streamways
+;STN14 is a PSS
+;STN16 is Yhang knot on top of rift pitch
+;STN17 is knot at start of rift traverse
+;STN 19 is ‘fool me twice’ resurveyed to Plumbers Paradise
+;STN20 is the tube leading to perched sump
+;STN25 is UNion passage of the year nominee STN 9
+
+*end plumbers_paradise 
+
+*equate plumbers_paradise.25 union_passage_of_the_year_nominee.9

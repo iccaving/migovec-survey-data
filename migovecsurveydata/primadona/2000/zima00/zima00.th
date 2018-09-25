@@ -1,0 +1,69 @@
+encoding  utf-8
+survey zima00
+     input "zima00.th2"
+     input "zima00_extend.th2"
+     
+     map mzima00e -projection extended
+      zima00_1e
+     endmap
+     
+     map mzima00p_1 -projection plan
+      zima00p_1
+     endmap
+     map mzima00p_2 -projection plan
+      zima00p_2
+     endmap
+      map mzima00p_3 -projection plan
+      zima00p_3
+     endmap
+      map mzima00p_4 -projection plan
+      zima00p_4
+     endmap
+     
+     map mzima00p_5 -projection plan
+      zima00p_5
+     endmap
+     
+     map mzima00p_6 -projection plan
+      zima00p_6
+     endmap
+     
+     join zima00p_1 zima00p_2
+     join zima00p_4 zima00p_5
+     centreline
+     date 2000.12.28
+      # declination 0.00 degrees
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    1  2  12.6  0   90  #1. tocka je mozicek na koncu strika
+2  3  13  307  60  
+3  4  24  0  90
+4  5  20.2  075  50  #5. tocka pivnica pivci roso, behc, cuder
+5  6  4.2  064  0
+6  7  19.5  035  70
+7  8  10.6  100  5
+8  9  5.3  035  35
+9  10  22  015  55
+
+10  11  18.8  0  90  #10. tocka fix nad njim odcep "drek"
+11  12  9  300  40
+
+12  13  22  0  90
+13  14  5.4  075  0
+  
+14  15  6.8  040  0  
+15  16  6.2  322  28
+16  17  13  005  5  
+17  18  3.8  145  28
+18  19  7.2  040  40
+19  20  4.2  107  37
+20  21  6.7  070  -10
+21  22  15  050  0    #tocka 22 je enaka tocki 1 od ttt
+    
+     endcentreline
+     
+     
+   endsurvey
+

@@ -1,0 +1,46 @@
+encoding  utf-8
+survey udc
+  input "udcp.th2"
+  
+  map mudcp_1 -projection plan
+    udcp_1
+  endmap
+  
+  map mudcp_2 -projection plan
+    udcp_2
+  endmap
+
+  centreline
+    date 2016.07.23
+    
+    explo-team "Arun Paul" 
+    explo-team "Rhys Tyers"
+    
+    team "Arun Paul" insts tape
+    team "Rhys Tyers" notes
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    #Page 1/1
+    1	2	12.00	322	+51
+    2	3	12.44	334	+27
+    3	4	3.82	320	+43
+    4	5	4.20	274	+14
+    5	6	13.00	345	+32
+    5	7	25.42	154	-02
+    7	8	4.83	170	+65
+    8	9	15.60	131	+39
+    9	10	25.30	144	+80
+    10	11	2.50	145	+34
+
+    
+    #Stn 1 is PSS by drippy pitch lead.
+    #Stn 3 is dead bat
+    #Stn 5 is PSS, bolt at top of dead climb directly below is tight sharp rift - lead
+    #Stn 11 is cairn at top of Blue Danube and end of Colony
+  endcentreline
+endsurvey
+
+

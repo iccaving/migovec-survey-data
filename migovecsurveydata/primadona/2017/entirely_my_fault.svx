@@ -1,0 +1,54 @@
+;####Entirely My Fault####:
+;###Leads off the Karstaway passage ###
+*date 2017.07.21 ; Expedition Cez Rob
+
+;Tape + Instruments: James Wilson
+;Book: Jack Hare
+
+;Data entered by Tanguy Racine on 23/07/2017
+
+*begin entirely_my_fault
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+
+;Page 1/2
+2	1	9.30	-	DOWN
+3	2	9.19	-	DOWN
+4	3	7.52	241	-55
+5	4	3.71	218	-23	
+6	5	2.72	187	-35
+7	6	3.28	177	+08
+9	8	3.85	174	-25
+10	9	12.83	230	-80
+11	10	3.66	265	-70
+12	11	5.25	331	-46
+13	12	4.41	280	-62
+
+;Page 2/2
+13	14	1.62	324	+05
+14	7	0.99	001	+01
+7	15	3.26	039	+43
+15	16	6.95	002	+43
+*flags duplicate
+16	17	8.43	008	+01
+17	18	4.95	021	-23
+18	19	3.88	101	+06
+*flags not duplicate
+
+;NOTES 
+;STN 1 is PSS in rift at 170°
+;STN 4 is knot of Yhang
+;STN 8 is PSS in rift at 174°
+;STN 15 is PSS at crawl into rift
+;STN 19 is Karstaway STN 11.
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end entirely_my_fault
+
+*equate entirely_my_fault.19 karstaway.11
+
+

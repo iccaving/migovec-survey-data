@@ -1,0 +1,60 @@
+encoding  utf-8
+survey spodnji
+
+  input "spodnjip.th2"
+  input "spodnji_extend.th2"
+
+  map mspodnji_e -projection extended
+    spodnji_e1
+  endmap
+  
+  #map mspodnjip_1 -projection plan
+    #spodnjip_1
+  #endmap
+  
+  map mspodnjip_2 -projection plan
+    spodnjip_2
+  endmap
+  
+  map mspodnjip_3 -projection plan
+    spodnjip_3
+  endmap
+  
+  map mspodnjip_4 -projection plan
+    spodnjip_4
+  endmap
+  
+  join spodnjip_1 spodnjip_2
+  join spodnjip_2 spodnjip_3
+  
+  centreline
+    date 2002.07.27
+    explo-team "Milan Popdecan" 
+    team "Stopar Rok" notes
+    team "Tivadar Tomaz" insts notes
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    1  2  7.2  180  -24
+2  3  5.5  162  -15
+3  4  11.3  182  -47
+4  5  6.0  184  -22
+5  6  10.9  196  -45
+6  7  20.7  0  -90
+7  8  5.7  238  -25
+8  9  6.0  288  -5
+9  10  3.3  258  -7
+10  11  7.5  321  0
+11  12  11.6  302  -50
+12  13  14.0  0  -90
+13  14  6.0  354  0
+14  15  3.8  301  -12
+15  16  28.1  0  -90  #tocka 16 je zadnji fix na sahtu od 45m rok oznacil
+    
+    
+    
+  endcentreline
+endsurvey
+

@@ -1,0 +1,44 @@
+;####Hanging Gardens Deep####:
+; ###Continuation of Pick your poison###
+*date 2014.07.21
+
+;Tape + Instruments: James Hooper
+;Book: Clare Tan
+
+;Data entered by Clare / James Hooper on 2014.7.24
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin hanginggardensdeep
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	5.05	224	-30
+3	2	5.95	240	-16
+3	4	4.56	063	+18
+3	5	6.19	144	+03
+5	6	1.24	213	-14
+6	7	5.21	096	+06
+7	8	8.27	085	+26
+9	8	5.16	074	+22
+9	10	3.75	148	+22
+10	11	6.31	185	00
+11	12	4.15	102	-35
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end hanginggardensdeep
+; NOTES
+;Stn 1 is a PSS
+;Stn 24 is dogleg into dead end
+;Stn 9 is a PSS
+;Stn 12 is Pick Your Poison Stn 24
+;This is in the Balamory extensions, NOT capt kangaroo
+
+; ### SURVEY TIE IN ###
+*equate hanginggardensdeep.12 pick_your_poison.24

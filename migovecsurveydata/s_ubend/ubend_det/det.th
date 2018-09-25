@@ -1,0 +1,22 @@
+encoding  utf-8
+survey det
+  input "detp.th2"
+  map mdetp_1 -projection plan
+    detp_1
+  endmap
+  
+  centreline
+    date 2007.08.03
+    team "Sandeep Mavadia" notes
+    team "Alvin Chow" insts
+    
+    units length meters
+      units compass clino degrees
+    1	2	1.57	086	+06	#	0.2 0.05 0.5 0.0
+1	3	1.26	194	-11	#	.3 is pss: on ledge above window, paper under cairn
+2	4	0.66	062	+00	#	0.2 0.0 0.0 0.4
+4	5	2.19	065	+09	#	0.3 0.0 0.3 (down through rift)
+5	6	3.91	052	+00	#	0.8 0.0 1.0 (down through rift)
+6	7	13.20	-	up	#up pitch to y-hang knot (~20cm below bolts)
+  endcentreline
+endsurvey

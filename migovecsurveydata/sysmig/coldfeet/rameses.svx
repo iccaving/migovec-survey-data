@@ -1,0 +1,43 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;rameses side passages
+
+;Date: 11/8/97
+;Instruments: a gossen
+;Book: j hooper
+
+;Data entered by j hooper on 13/8/97
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate glory.5 rameses.20
+
+*begin rameses
+*date 1997.08.11
+
+*calibrate tape 0.18
+
+1	2	11.73	-	up	;2 is a hammered mark on pitch head
+3	2	6.30	162	-34
+3	4	1.56	-	down
+4	5	4.55	320	00
+6	5	2.50	122	-31
+6	7	6.42	313	05
+7	8	2.67	-	up	;8 is a pss on roof
+8	9	5.47	035	09
+9	10	10.00	-	up
+8	11	8.65	329	02
+11	12	20.00	182	-34
+11	13	1.60	119	16
+13	14	5.20	040	31
+14	15	3.95	037	34
+15	16	3.90	043	13
+16	17	2.80	029	21
+17	18	1.50	039	32
+18	19	10.50	026	23
+19	20	1.80	160	50
+
+*end rameses

@@ -1,0 +1,31 @@
+;Rift below spliut pitch in warriors for mig
+
+;Date: 28.7.98
+;Instruments: J.Evans
+;Book: J.Hooper
+
+;Data entered by C.Griffith on 29.7.98
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate adder.1 hotel.29
+
+*begin adder
+*date 1998.07.28
+1	2	5.25	-	up
+2	3	2.35	114	+26	;stn3 is pss
+4	3	9.61	236	-02
+4	5	2.81	317	-06
+6	5	7.38	227	-07	;stn6 is pss
+6	7	10.33	012	-19
+8	7	5.81	138	-13
+8	9	14.83	018	+03
+10	9	8.25	236	+03
+10	11	4.67	094	-11	;stn11 is pss
+13	12	8.23	355	-02	;stn12 is pss
+13	14	7.00	221	-01
+14	15	4.74	194	+35
+11	15	2.59	339	-21	
+
+*end adder

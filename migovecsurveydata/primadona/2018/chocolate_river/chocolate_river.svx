@@ -1,0 +1,40 @@
+;####chocolate_river####:
+;###Tube at the bottom of mouseleum rift###
+*date 2018.08.02 ; Expedition Klic Globin
+
+;Tape: David Wilson
+;Book: David Wilson
+;Instruments: James Wilson
+;Data entered by James Wilson on 03/08/2018
+
+*begin chocolate_river
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+2	1	15.10	054	-01
+3	2	14.80	359	0
+4	3	5.69	321	-10
+5	4	3.75	243	-55
+6	5	7.25	228	-22
+7	6	2.21	021	-29
+8	7	2.57	-	down
+9	8	3.28	324	-25
+10	9	4.27	329	-54
+11	10	2.94	010	-32
+12	11	5.85	335	0
+
+;NOTES 
+;STN1 is  pss
+;STN12 is mouseleum_2 STN3
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end chocolate_river
+
+*equate mouseleum_2.3 chocolate_river.12
+

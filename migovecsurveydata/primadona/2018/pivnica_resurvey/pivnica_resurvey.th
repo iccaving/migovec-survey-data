@@ -1,0 +1,40 @@
+survey pivnica_resurvey -title "Pivnica resurvey"
+	#input "pivnica_resurvey-p.th2"
+
+	#map m1-p -projection plan
+		#pivnica_resurvey-1p
+	#endmap
+
+	centreline
+		# Jack Hare also present
+		team "Nick Koukoulekeidis"	 notes
+		team "James Wilson"	 insts tape
+		date 2018.07.16
+
+		units length meters
+    	units compass clino degrees
+    	data normal from to length compass clino
+
+    	flags duplicate
+		2	1	9.85	057	+22
+		3	2	5.87	263	+22
+		3	4	3.42	0	down
+		5	4	6.81	071	-2
+		5	6	1.59	293	-62
+		7	6	3.39	010	+53
+		7	8	14.91	0	down
+		9	8	3.94	053	-1
+		10	9	3.61	052	-14
+		11	10	16.95	035	+66
+		11	12	3.68	257	-48
+		12	13	21.29	0	down
+		flags not duplicate
+		
+		#NOTES 
+		#Appears on PSSs as 'Below Ajdov'
+		#STN 1 is bottom of what a coincidence rope
+		#STN 6 is 2nd bolt of Pivnica
+		#STN 13 is PSS at bottom of pitch
+
+	endcentreline
+endsurvey

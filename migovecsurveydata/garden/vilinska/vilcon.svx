@@ -1,0 +1,36 @@
+;Vilinska Connection to Jelly Chamber 
+;Date: 18/8/2008
+;Instruments: James 'Tetley' Hooper
+;Book: Jarvist Frost
+
+;Data entered by JMF 18/8/08
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin vilcon
+1	2	3.29	264	+14	; .1 1.2 0 2 1
+2	3	8.62	-	down	; .2 0.8 0.5 1 circa. 6
+*flags duplicate ; duplicates hunger / judge
+3	4	5.85	133	-55	; .3 4 5 7 1.5
+5	4	6.76	084	+15	; .4 0.2 2 9 0
+5	6	2.54	243	-20	; .5 1 0 2 1
+6	7	6.19	-	down	; .6 1 1 3 circa. 6
+8	7	4.07	118	-08	; .7 0.7 0.5 6 1.5
+8	9	6.46	210	-70	; .8 1 0.5 4 4
+*flags not duplicate
+10	9	5.95	118	-09	; .9 1 5 4 0.2
+11	10	3.42	038	-09	; .10 3 0 5 1.5
+11	12	7.17	260	+03	; .11 1.8 1 circa. 14 0
+;.12 5 0.5 20+ 1
+
+;.1 is breakitdown.1 29/7/08 PSS
+;.6 is just below Y-hang knot
+;.8 near hang ladder
+;.9 beyon foot ladder
+;.11 cairn PSS Jelly Chamber / into 'Sandy' chamber
+;.12 is top of Fig-8 knot in bottom rope of laurel
+
+*end vilcon
+
+*equate breakitdown.1 vilcon.1

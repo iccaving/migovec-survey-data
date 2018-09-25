@@ -1,0 +1,26 @@
+encoding  utf-8
+survey ubend2
+  
+  input "ubend2p.th2"
+  
+   map mubend2p_1 -projection plan
+    ubend2p_1
+   endmap
+
+  centreline
+    date 2000.07.28
+    team "Andrew Jurd" insts
+    team "Hugh Penney" notes
+    
+    units length meters
+      units compass clino degrees
+    
+1  2  3.90  328  -7
+2  3  1.58  335  -1
+3  4  4.25  323  10
+4  5  10.96  -  up
+    
+    
+  endcentreline
+endsurvey
+

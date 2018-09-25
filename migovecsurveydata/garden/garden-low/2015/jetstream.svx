@@ -1,0 +1,59 @@
+;####JetStream####
+;##Continuation of Sic Semper Tyrannis##:
+*date 2015.7.21 ; Expedition Pivo Moz 
+
+;Instruments + Tape: James O'Hanlon 
+;Book: Rhys Tyers
+
+;Data entered by Jarvist Moore Frost 21-7-15 
+
+*begin jetstream 
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 page
+;Page 1/2
+*calibrate tape +0.60 ; Tape missing 30 cm
+; original data had 30 cm added to it.
+2	1	7.02	177	-05 ;
+3	2	13.60	198	-33
+4	3	5.20	200	-34
+5	4	7.66	168	-21
+6	5	6.14	175	-50
+7	6	6.30	175	-26
+8	7	6.04	160	+03
+9	8	8.38	185	+00
+10	9	14.88	158	+45
+11	10	8.44	154	+27
+; 
+; Now they correctly subtract 30 cm from 'real' value
+*calibrate tape 0.00
+12	11	8.65	143	+04
+13	12	6.06	075	+75
+
+;Page 2/2
+14	13	7.70	115	+47
+15	14	12.12	157	+45
+16	15	4.94	152	+15
+17	16	6.99	150	+00
+18	17	3.30	156	-55
+19	18	1.86	163	-35
+20	19	4.50	164	+65
+21	20	4.14	164	-17
+22	21	7.30	158	-82
+23	22	4.30	163	+00
+24	23	8.70	104	+87
+
+;NOTES 
+; .1 is PSS
+; .8 is PSS
+; .24 is squidgy goondness PSS 1
+; Up to station 11, subtract 60 cm
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end jetstream 
+
+*equate jetstream.24 squidgygoodness.1
+

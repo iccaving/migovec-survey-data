@@ -1,0 +1,340 @@
+; System Migovec
+; (c) 1994 - 1997 Imperial College Caving Club				
+; Surveyed to BCRA Grade 5b				
+
+;M2 down to Tolminski Silos				
+
+;Date: 4 September 1997				
+;Data taken from JSPDT survey by JE JJE and ME				
+
+;Data entered by Mark on 4 September 1997				
+
+;data normal bcra grade 3				
+;from	to	tape	comp	clino
+
+*begin m2
+*date 1990 ;LIE to make colour scale more sensible
+
+;by NOAA webservice, declination is
+;1976    0° 30' W changing by 0° 6' E/year
+;That is, magnetic north is 0.5 degrees counter-clockwise of true
+*calibrate compass +0.5
+
+*entrance izent1.16
+*entrance izent2.19
+
+*begin JSPDT				
+
+1	2	4.5	-	down
+2	3	5.794663493	306.0273734	28.33165466
+3	4	6.381124509	246.8014095	-41.76114774
+4	5	4.426482802	201.8014095	-40.50390474
+5	6	6.45174395	170.9097231	-11.17148148
+6	7	2.095381827	227.4895529	-13.80510563
+7	8	4.779513574	156.1940565	-13.61400003
+8	9	4.071624369	177.614056	-42.48569537
+9	10	14.654884	235.6539026	-51.69491165
+10	11	28.67	177.71	-83.74
+11	12	13.03	254.05	-85.99576681
+12	13	3.05	260.54	-4.699119464
+13	14	3.48	323.97	-12.43825899
+14	15	4.91	307.75	-4.37583983
+15	16	19.03	255.96	-86.89466849
+16	17	9.05	303.69	4.75634104
+17	18	11.14	306.87	-86.78451601
+18	19	2.75	309.47	0
+19	20	4.39	231.34	-43.13843762
+20	21	4.79	313.92	12.04777452
+21	22	12.03	288.438	-86.23075598
+22	23	5.039	284.74	-12.90072923
+23	24	79.70	246.30	-85.97276777
+24	25	3.83	112.93	-23.0284915
+25	26	16.26	19.599	-61.21781734
+26	27	6.64	298.71	-25.655655
+
+*end JSPDT
+
+*begin IZENT2				
+
+16	17	12.95786441	345.5297059	22.0996994
+17	18	4.544914741	37.30394828	43.43897947
+18	19	6.732616505	356.308614	54.777518
+
+*end IZENT2
+				
+*begin IZENT1				
+
+16	15	24.7326328	248.0088701	-55.46806834
+15	14	7.628073151	337.8336542	-17.15532388
+14	13	17.36735443	226.3639275	-31.21250227
+13	12	5.859020823	284.3813946	-30.79920526
+12	11	2.193741097	213.6900675	34.73648128
+11	10	4.790941974	202.4794344	-35.0296215
+10	9	1.179247642	257.4711923	-12.2395583
+9	8	7.862092597	350.5376778	-67.24190868
+8	7	5.003124024	328.7362683	-35.07449239
+7	6	5.573374202	252.4744316	-26.65141612
+6	5	2.918154382	211.4295656	25.36307871
+5	4	8.038967595	194.5344551	-29.83978047
+4	3	7.678093839	194.0362435	-29.23563458
+3	2	4.346334663	266.6335393	-11.61410455
+2	1	2.25	296.5650512	-6.379370208
+
+*end IZENT1
+		
+*begin JSL1				
+
+d	a	10.06618721	334.7222778	60.37121866
+a	b	3.337757481	347.0053832	-2.146245699
+b	c	7.130480348	300.5792269	-63.386558
+
+*end JSL1
+
+*begin JSL2				
+
+h	g	3.809937664	293.1985905	-7.480508892
+g	f	2.942150574	318.8140748	-82.7875946
+f	e	2.034852575	349.3803447	0
+e	d	5.28854895	14.62087399	-80.36399586
+d	b	11.75	182.726311	-63.40898494
+b	a	10.90154806	284.3645824	-44.78041976
+
+*end JSL2
+
+*equate IZENT1.1 JSPDT.1				
+*equate JSL1.d JSPDT.19				
+*equate JSL2.h JSPDT.11				
+*equate IZENT2.16 IZENT1.14
+
+;;;;;;;;;;;;*equate \JSPDT.24 \SILOS.8
+
+
+;Bottom of M2 below Silos
+;Data calaculated by M Evans and J Hooper on 9/8/98 from 
+;original JSPDT survey.
+
+*equate JSPDT.27 JSPDT2.27
+
+*begin JSPDT2
+
+27	28	2.979	299.1	30.2
+28	29	2.861	161.6	74.0
+29	30	3.260	228.4	-22.5
+30	31	8.250	-	down
+31	32	3.041	099.5	00
+32	33	3.132	213.7	-73.3
+33	34	10.028	180	-85.7
+34	35	7.786	171.6	-28.8
+35	36	2.305	130.6	00
+36	37	1.275	191.3	00
+37	38	3.112	150.9	-34.2
+38	39	4.617	056.3	-12.5
+39	40	4.562	141.8	-12.7
+40	41	4.077	230.7	-29.4
+41	42	11.261	227.5	-68.8
+42	43	7.957	283.1	-14.6
+43	44	4.783	222.9	-03.0
+44	45	3.221	164.7	-27.8
+45	46	13.682	153.4	-80.6
+46	47	10.515	160.6	-64.6
+47	48	3.112	142.1	23.7
+48	49	5.932	139.1	-33.2
+49	50	3.945	135.0	-44.2
+50	51	7.750	-	down
+
+; Smell the Glove connection
+; climb up from confluence at bottom of M2 above inpenetrable rift
+; Pseudoleg at bottom of M2
+; APSJ and JNH 5 August 2008
+
+51	SmelltheGlove	8	30	+20
+;in opposite direction to rift which was pushed on Oct08 real data
+;AJ says, Feb 2009:
+;Final pitch drops into small chamber with water trickling through ~10cm groove in floor to rift which was opened up
+;Going upstream one finds a confluence, and a similar stream trickling through an almost identical aven
+
+*end JSPDT2
+
+*begin Oct08
+
+;Data by JH/AF
+;Date: 25/10/08
+*date 2008.10.25
+
+;2008 NOAA declination for mig:
+*calibrate compass -2.42
+;Page 1 of 1
+
+1	2	17.50	-	up	; .1 no LRUD
+2	3	4.00	031	+40	; .2 no LRUD
+3	4	5.00	293	+23	; .3 1 0 2 0
+5	4	3.90	139	-44	; .4 0 0.5 2 0
+6	5	3.60	155	-03	; .5 0 0.5 0.5 1.0
+6	7	4.30	014	00	; .6 0.5 0.2 0.3 0
+8	7	4.00	114	+52	; .7 no LRUD .8 no LRUD
+
+;Notes on reverse
+; .1 is a bottom of pitch
+; .2 is bolt at top of pitch
+; .8 is bottom of 'last' pitch in M2
+
+*end Oct08
+
+*equate JSPDT2.51 Oct08.8
+
+;*begin Oct09
+;;Data madeup by Jarv based on Tet's "moved drinks cabinet twenty metres further south" text message from Slov
+;Start   DrinksCabinet   20.00   180 +00
+;*end Oct09
+;*equate Oct09.Start Oct08.1
+
+;*date 2011.10.22
+*date 1990 ; colour blue 
+*calibrate compass -2.62 ; 2010 figure...
+
+*begin wizard_of_oz
+; Data by JF and JK
+; Data 22-10-11
+; Entered 23-10-11 by JK and J'T'H and JF
+
+; this is a survey from Oct 2011 of the finds from 2008/2009
+; by Micha - Lubljana Caver - TO, J'T'H, AF etc.
+
+;Page 1of 2
+1	bot	10.13	322	-52	;	
+2	1	3.30	181	-65	
+3	2	3.75	232	+07
+4	3	1.96	184	+46
+5	4	2.44	108	-02
+6	5	5.32	179	-23
+7	6	4.11	203	+00
+7	8	4.95	-	down
+7	9	2.95	322	-03
+;Page 2 of 2
+9	10	2.47	009	+31
+10 	11	2.50	030	+00
+12	11	2.77	196	-30
+13	12	1.82	079	+28
+13	dig	5.25	333	+02
+*end wizard_of_oz
+
+*equate wizard_of_oz.bot Oct08.1
+
+
+*begin kinder_surprise
+; Data by JF and JK
+; Data 22-10-11
+; Entered 23-10-11 by JK and JF
+
+; this is a survey from Oct 2011 of the finds from 2009-2010
+; by the partecipants of 2009-2011 Super Actions
+
+;Page 1of 2
+bot	0	1.44	-	up
+1	0	6.73	321	-22
+1	2	2.89	-	down
+2	3	4.61	128	-05
+3	4	2.55	129	-43
+4	5	1.33	209	-30
+6	5	6.39	336	+62
+7	6	5.14	327	-44
+7	8	4.16	151	-33
+8	9	5.03	154	+04
+9	10	4.12	105	-17
+11	10	3.85	317	+04
+riftpitch	11	4.40	336	+03
+; end of page 1
+12	9	1.35	- down	
+13	12	2.79	343	+05
+14	13	3.22	051	+01
+15	14	1.69	072	+23
+
+*end kinder_surprise
+
+
+*equate kinder_surprise.bot Oct08.1
+
+*begin echo_rift
+; Data by JF and JK
+; Data 22-10-11
+; Entered 23-10-11 by JK and JF
+
+; this is a survey from Oct 2011 of the finds from 2010
+; in particular the big pitch and the 2011 pushing front
+
+1	2	3.65	004	-10
+1	tightrift	3.89	280	-35
+1	floor	2.20	-	down
+2	3	2.23	293	+35
+3	4	4.98	053	-08
+4	5	3.78	091	+54	
+5	6	3.89	087	-16
+6	7	11.28	-	up
+7	8	5.02	085	+38
+8	9	5.70	089	-24
+10	9	21.60	-	down
+11	10	15.80	-	down
+11	12	8.88	011	+68
+12	13	5.45	064	+06
+
+; end of page 1
+
+; page 2 of 2
+14	13	24.80	-	down
+14	15	6.61	032	+68
+
+*end echo_rift
+
+*equate echo_rift.15 kinder_surprise.15
+
+*begin napsihiran_rov
+1   2   10.50   178     -30
+2   3   5.06    185     -44
+3   4   3.84    148     -09
+4   5   1.94    183     +07
+5   6   1.26    147     -33
+6   7   3.47    164     -31
+7   8   5.07    144     +04
+8   9   1.51    068     +17
+*end napsihiran_rov
+
+*equate napsihiran_rov.9 wizard_of_oz.12
+
+;*flag nosurvey
+;*date 1990
+
+;*begin error_bars 
+;orig    N   30.0    000     +00
+;orig    W   30.0    270     +00
+;orig    S   30.0    180     +00
+;orig    E   30.0    90      +00
+;orig    UP  20.0    0       up
+;orig    DOWN 20.0   0       down
+
+;N E
+;E S
+;S W
+;W N
+
+;N UP
+;S UP
+;E UP
+;W UP
+
+;N DOWN
+;S DOWN
+;E DOWN
+;W DOWN
+;*end error_bars 
+
+;*equate error_bars.orig napsihiran_rov.1
+
+;*include m2_2012_resurvey
+;*equate m2_2012_resurvey.1 izent2.19
+
+;*equate m2_2012_resurvey.77 oct08.1
+;*equate m2_2012_resurvey.92 napsihiran_rov.1
+
+*end m2
+
+

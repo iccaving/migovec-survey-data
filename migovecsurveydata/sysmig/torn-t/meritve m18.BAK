@@ -1,0 +1,436 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;System Mig - Torn T-Shirt Entrance
+
+;;;;;*fix Torn.26 534 975 1845;gps locations
+;*fix M2.1 561 936 1850   ;
+;*fix torn.26 -7.78 13.91 -6.64; data from surf1.pos
+
+*begin m18
+	*include ttc
+	*include ttc_up
+	*include ttc_low
+	*include turtle
+	*include shred
+	*include gallery
+	*include silos
+	*include void
+	*include dodge
+	*include zebra
+	*include plop
+	*include leki
+*end m18
+
+; > Jama Kratke Majce
+
+;Date: 1995????
+
+*begin torn
+
+1       2        2.6    133     +11
+2       3        2.3     88      0
+3       4        7.5     -      Up
+4       5        2.5    075      0
+5       6        6.4     -      Up
+6       7        1.5     -      Up
+7       8        3.4    116     -09
+8       9        2.3    092     +05
+9       10       3.4     -      Down
+10      11       6.2    093     +30
+11      12       2.00   140     +00
+12      13      24.8     -      Up
+13      14       1.3    038     +00
+14      15       1.4    162     +00
+15      16       4.8    091     +21
+16      17       2.0    271     +00
+17      18       8.5     -      Up
+18      19       4.2    073     +12
+19      20       1.3    011     +13
+20      21       2.3    061     +22
+21      22       1.5    002     +12
+22      23       1.2    089     +29
+23      24       1.6    073     +42
+24      25       1.2    088     +02
+25      26       3.0    039     +25
+
+*end torn
+
+;>Torn T upper rift (ME, AH)   
+
+;Date: 1995?
+
+*equate upperrift.0 torn.17 
+
+*begin upperrift                      
+
+0       1       4.7     -       up
+1       2       6.3     285     -20
+2       3       1.7     233     0
+3       4       0.7     170     0
+4       5       2.7     260     -30
+5       6       3       150     -40
+6       7       1       275     0
+7       8       2.4     179     -24
+8       9       5       330     -20
+
+*end upperrift
+
+;Date: 1995????
+
+*equate lowerrift.2 torn.2
+
+*begin lowerrift                      
+
+2       100     2.7     281     -5
+100     101     3       -       Down
+101     102     2.5     271     20
+102     103     3.3     245     12
+103     104     2.1     270     -5
+104     105     3       220     0
+105     106     4.3     270     30
+106     107     7.8     -       Down
+107     108     3.3     216     -12
+108     109     1.95    231     26
+109     110     1.5     145     31
+110     111     2.3     229     23
+111     112     1.95    260     -57
+112     113     2.5     229     -40
+113     114     3.4     -       Down
+114     115     3.5     274     16
+115     116     3.5     248     -4
+116     117     2.4     345     0
+117     118     6.3     350     -69
+118     119     4.6     277     22
+119     120     0.85    256     8
+120     121     3       309     -37
+121     122     2       227     -21
+122     123     3       276     -54
+123     124     2.65    184     4
+
+*end lowerrift
+
+;Date: 1995??
+
+*equate turtle.18 lowerrift.124
+
+*begin turtle
+
+1       2        4.3    192      0 
+1       3        2.2    043      0
+3       4        8.3     -      Up
+4       5        4.8    302     +45
+5       6        7.0     -      Up
+6       7        7.0    184      0
+6       8        5.9    014     -09
+6       9        2.3    014      0 
+9       10       7.4     -      Up  
+10      11       2.2    314      0 
+11      12       4.8     -      Up 
+12      13       3.5    048     +32
+13      14       2.8    340     +27
+14      15       5.7    059     +31
+15      16       1.7    341     -18
+16      17       2.4    049     -13
+17      18       1.5    108     +27
+
+*end turtle
+
+*equate shreddie.8 turtle.8
+
+*begin shreddie
+
+8       9        1.55   005     -65
+9      10        1.65   180     +00
+10     11        4.0    020     +45
+9      12        2.45   322     +00
+12     13        5.4     -      down
+13     14        3.6    290     +00
+14     15        2.1     -      up
+15     16        5.9    232     +25
+16     17        2.0    245     -10 
+17     18        2.9    220     -10
+18     19        6.1    310     +00
+19     20        5.7     -      down
+20     21        2.7    305     -05
+21     22        2.6    255     +40
+22     23        1.7    305     +30
+23     24        1.6    250     +00
+24     25        1.6    325     +00
+25     26        2.8    225     -20
+26     27        1.1    240     +30
+27     28        2.4    300     -05
+28     29        2.4    250     -15
+29     30       15.2     -      down
+30     31        4.3    170     +00
+31     32        2.6    075     +35
+32     33        6.5    134     +19
+32     34        3.9     -      down
+34     35       11.3     -      down
+35     36        2.6    180     +00
+36     37        3.5     -      down
+37     38        2.7    200     +00
+38     39       13.1     -      down
+39     40        1.7    165     +00
+40     41        5.9     -      down
+41     42        3.3    120     +00
+
+*end shreddie
+
+*equate gallery.0 shreddie.34
+*equate gallery.104 gallery.89
+
+*begin gallery
+
+0       1        5.9    245     +00     ;0 is rebelay bolt
+1       2       20.9    138     -05
+2       3        3.4    007     -40
+3       4       10.6     -      down
+2       5       10.6    173     +13
+5       6       17.5    138     -09
+6       7       12.7    148     +14
+1       8       14.0    335     +09
+
+;First Blind Pitch
+
+8       40       6.7    315     +17     ;8 is 1st traverse bolt
+40      41      15.4     -      down
+41      42       3.6    174     +39
+42      43      14.3     -      down
+
+;First Traverse
+
+8       9       19.5    284     +06
+9       10       8.6    329     +10
+10      11      21.9    292     -05
+11      12      13.7    321     +12	;Stn. 12 is dodge.0
+11      13      14.8    292     +09
+13      14      15.7    288     -04
+14      15      21.5    284     -11
+15      16      11.4    314     +23
+
+;Second Blind Pitch
+
+10      97       7.2    165     -10
+97      98       9.4    260     -38
+98      99      14.5     -      down
+
+;Third Blind Pitch
+
+15      80       7.3    288     +08
+80      81      12.5     -      down
+81      82       7.5    274     -19 
+82      83       8.3    290     -42
+83      84      24.5     -      down
+84      85       3.6    345     +75
+85      86       7.3    052     -01
+85      87       9.0    290     -23
+87      88      16.2    246     +21
+88      89      12.5    055     -35
+;89      90       4.2     -      down   resurveyed in 96
+
+;Second Traverse
+
+16      17       8.4    254     -18
+17      18      10.3    261     +03
+18      19       7.5    294     +26 
+19      20       8.0    238     +26
+18      21       5.2    242     +14 
+21      22       7.5    228     -38
+22      23      10.9    198     -10
+23      24      16.7    284     +01
+
+;Wet Pitch Near Bivvy
+
+5       50      9.8     155     -15 
+50      51      2.0     034     +00
+51      52     10.9      -      down 
+52      53     11.7     240     -23 
+
+;Date:  14/8/96 
+;Instruments: Sarah
+;Book: CV Pete
+;Data entered by Mark
+
+101       102       4.99    -       down
+102       103       10.70   72      +3
+104       101       6.26    88      -77     ;104 is station 89 from '95, cairn on boulder 
+
+*end gallery
+Date: 17/8/96 
+;Instruments: Sazza
+;Book: Pete
+;Data entered by Mark 18/8/96
+
+*equate silos.1 gallery.2
+
+*begin silos
+
+1       2        7.6    150     -11     ;1-4 surveyed in '95
+2       3        3.2    081     -37     ;
+3       4        6.1    070     -70     ;Stn 4 is last bolt at top of pitch
+4       5       67.43   -       down
+5       6       13.60   -       down
+6       7       26.30   -       down
+7       8       5.26    203     -1
+8       9       8.37    -       down
+
+*end silos
+
+;M18 Bottom of void to NCB Passage
+
+;Date: 24/7/96
+;Tape: Sarah Wingrove
+;Instruments: Tim Wright
+;Book: James "Tetley" Hooper
+;Data entered by J Hooper 26/7/96
+
+*equate void.17 gallery.2
+
+*begin void
+
+1	2	10.51	-	up	
+2	3	2.11	238	02	;Stn.2 is the bolt
+3	4	2.75	195	00
+4	5	30.44	-	up	;Stn.4 is bottom of rope (p30)
+5	6	10.43	333	69	;Stn.5 is bolt at top of p30
+6	7	2.40	056	12
+7	8	3.80	324	10	;Stn. 7 is bolt nearest squeeze on NCB side
+8	9	1.60	041	20
+9	10	3.08	038	22
+10	11	2.61	131	-06
+11	12	6.23	068	13
+12	13	2.50	134	19
+13	14	3.93	015	17
+14	15	9.05	064	13
+15	16	6.12	082	-12
+17	16	3.90	256	68	;Stn 17 is near Godzilla and is marked in cave as station 400
+
+*end void
+
+;M18 Dodge City (side passage off NCB passage)
+
+;Date:29/7/96
+;Tape:Chris "Sos" Roberts
+;Instruments:Iain McKenna
+;Book:Jim Evans
+;Data entered by James "Tetley" Hooper 01/08/96
+
+*equate dodge.0 gallery.12
+
+*begin dodge
+
+0	1	5.80	105	58	;Stn 0 is gallery.12
+1	2	1.73	337 	18
+2	3	11.57 	050	18
+3	4	7.82	056	21
+4	5	5.65	023	16	;Stn 5 is a PSS
+5	6	3.00	109	27
+5	7	1.70	286	-18
+7	8	3.30	055	-03
+8	9	4.20	095	-06
+9	10	2.90	329	-04
+10	11	1.91	301	-20
+11	12	2.13	075	23
+12	13	3.19	315	-07	;Stn 13 is a PSS
+13	14	2.95	337	21
+13	15	2.86	071	-19
+15	16	6.35	055	-32
+16	17	3.00	185	-55
+17	18	7.05	355	-28
+17	19	4.00	130	-45	;Stn 19 is at surveyed end of Dodge City
+
+*end dodge
+M18 zebra passage (side passage off NCB passage)
+
+;Date:14/8/96
+;Tape: CV Pete
+;Instruments: Sazza
+;Book: CV Pete
+;Data entered by Mark
+
+*equate zebra.0 gallery.80
+
+*begin zebra
+
+0       1       4.07    109     +22
+1       2       5.07    347     -01
+2       3       4.47    035     +14
+3       4       3.53    310     +01
+4       5       6.86    013     +23
+5       6       3.78    024     +15
+6       7       2.55    282     -15
+7       8       2.80    241     -75
+8       9       5.50    016     +00
+8       10      1.82    138     -10     ;passage continues to 5m approx climb down
+7       11      3.81    017     +22
+11      12      4.35    047     +28
+12      13      3.11    326     +07
+13      14      3.75    064     +55
+13      15      1.87    267     -13     ;crawling passage off followed for approx 25m 
+
+4       50      5.00    -       down    ;pitch down undescended
+9       51      5.00    -       down    ;pitch down undescended to 8m long chamberwith two possible leads
+
+;4 is marked on wall
+;7 is marked on wall
+;13 is small cairn on sloping wall with paper marker
+
+*end zebra
+
+;pitch down off NCB
+
+;Date: 16/8/96 
+;Instruments: CV Pete
+;Book: CV Pete
+
+;Data entered by Mark 18/8/96
+
+*equate plop.0 gallery.10
+
+*begin plop
+
+0       1       3.90    -       down
+1       2       4.99    052     +28
+2       3       4.83    102     +16
+3       4       40.0    -       down    ;approximate pitch depth
+
+;3 is PSS at head of pitch
+
+*end plop
+
+;M18 leki (1999 RESURVEY OF ZEBRA) (side passage off NCB passage)
+
+;Date:3/8/99
+;Tape:Jan Evetts
+;Instruments:Ben Young
+;Book:James Hooper
+
+;Data entered by James "Tetley" Hooper 04/08/99
+
+*equate leki.20 gallery.80
+
+*begin leki
+
+2	1	18.53	270	-70	;stn 2 is pss bolt mark at top of pitch
+3	2	3.60	-	down
+4	3	2.06	321	05
+5	4	2.60	318	55
+6	5	2.41	342	00
+7	6	3.07	291	08
+7	8	2.73	-	down;8 IS PSS
+9	8	8.83	297	-40
+10	9	5.59	009	16
+10	11	2.45	- 	up;11 IS PSS CARBIDE S
+12	11	2.28	245	-38
+13	12	2.57	293	-15
+14	13	3.11	038	21
+15	14	1.60	021	11
+16	15	6.60	020	23
+17	16	3.26	305	05
+18	17	4.06	040	05
+19	18	3.90	038	00
+19	20	1.60	-	down;stn 20 is pss carbide mark 380 on boulder in NCB.
+
+*end leki

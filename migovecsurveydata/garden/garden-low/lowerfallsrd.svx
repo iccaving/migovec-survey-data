@@ -1,0 +1,21 @@
+;Lower end of Falls Road
+;Date: 29/7/2003
+;Instruments: Colm Caroll
+;Book: Martin McGowan
+
+;Data entered by T Wright 3 Aug 2003
+
+*equate fallsrd.7 with lowerfallsrd.5
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin lowerfallsrd
+2	1	5.39	242	+25
+3	2	4.68	-	down
+4	3	3.81	225	-10
+4	5	4.14	058	+27
+
+; Station 5 is PSS from 2001 Carbide Mark
+	
+*end  lowerfallsrd

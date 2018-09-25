@@ -1,0 +1,37 @@
+;####Buckwheat resurvey####:
+;###Resurvey project of TTT branch###
+*date 2017.07.18 ; Expedition Cez Rob
+
+;Tape + Instruments: Jarvist Frost
+;Book: Tanguy Racine
+
+;Data entered by Tanguy Racine on 19/07/2017
+
+*begin Buckwheat_resurvey
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/1
+*flags duplicate
+1	2	3.60	337	-02
+2	3	4.71	-	DOWN
+3	4	4.38	011	-34
+4	5	17.36	-	UP
+5	6	3.06	009	+56
+6	7	4.38	028	+18
+*flags not duplicate
+
+;NOTES 
+;STN1 is bottom of What a Coincidence pitch
+;STN5 is bolt
+;STN6 is high Y hang bolt
+;STN7 is PSS TTT resurvey STN1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end Buckwheat_resurvey
+
+*equate Buckwheat_resurvey.7 TTT_resurvey.1
+*equate Buckwheat_resurvey.4 what_a_coincidence.1

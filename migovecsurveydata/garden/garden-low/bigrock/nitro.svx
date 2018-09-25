@@ -1,0 +1,28 @@
+;This replaces madeupleg
+;Date: 1/8/04
+;Instruments: Thomas P. Ayles 
+;Book: James Hooper
+
+;Data entered by Jarvist Frost 3/8/04
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*equate gold.16 nitro.2
+;*equate nitro.9 potato.25
+
+*begin nitro
+
+;the following line is madeupleg
+;2	10	40	330	+10
+
+2	1	17.03	302	41	;station 1 is carbide 'S' halfway up "strap on the nitro avon"
+2	3	8.63	038	-25	;station 2 is gold station 16 PSS
+4	3	3.81	280	00
+5	4	7.02	222	-15
+5	6	21.21	030	18
+6	7	5.99	325	-09
+7	8	7.26	019	12
+9	8	6.81	207	17	;station 9 is potato station 25 PSS
+
+*end  nitro

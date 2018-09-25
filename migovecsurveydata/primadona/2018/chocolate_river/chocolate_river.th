@@ -1,0 +1,46 @@
+survey chocolate_river -title "Chocolate River (continuation of Mouseleum 2"
+	input "chocolate_river-p.th2"
+
+	map m1-p -projection plan
+		chocolate_river-p1
+	endmap
+
+	map m2-p -projection plan
+		chocolate_river-p2
+	endmap
+
+	join chocolate_river-p1 chocolate_river-p2
+
+	centreline
+		explo-team "James Wilson"
+		explo-team "David Wilson"
+
+		team "James Wilson"	 notes
+		team "David Wilson"	 insts tape
+		date 2018.08.02
+
+		units length meters
+    	units compass clino degrees
+    	data normal from to length compass clino
+
+    	#Data on 1 page
+#Page 1
+2	1	15.10	054	-01
+3	2	14.80	359	0
+4	3	5.69	321	-10
+5	4	3.75	243	-55
+6	5	7.25	228	-22
+7	6	2.21	021	-29
+8	7	2.57	-	down
+9	8	3.28	324	-25
+10	9	4.27	329	-54
+11	10	2.94	010	-32
+12	11	5.85	335	0
+
+#NOTES 
+#STN1 is  pss
+#STN12 is mouseleum_2 STN3
+
+
+	endcentreline
+endsurvey

@@ -1,0 +1,81 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;M16 small bit below Brezno Strahov to top of next big pitch
+;This file contains survex data shordrop and shordrop2
+
+;Date:07/08/96
+;Instruments:Andy Atkinson
+;Book: James Hooper
+
+;Data entered by J. Hooper 08/8/96
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+;*equate shordrop.7 brezno.50
+
+*begin shordrop
+*date 1996.08.07
+*team "James Hooper" book
+*team "Andy Atkinson" instruments
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5QXdoMXRXX21Qak0
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5cW9ORGRTN2JHZXc
+
+*data normal from to tape compass clino
+2       1       6.23    206     -01.5   ;Stn.1 is top bolt of second pitch after chamber (RHS going down cave)
+2	3	20.49	-	up	;Stn 2 is bottom of p25 (carbide mark)
+4	3	9.09	165.5	-13.5	;Stn. 3 is 12cm. below pitch head bolt (p25)
+4	5	6.44	355	52.5
+6	5	5.48	158	-22.5	;Stn 6 is PSS top of rock in chamber marked with carbide 6
+6	7	4.87	333	14	;Stn 7 is a cairn (JE/SW 4/8/96 Stn 50)
+8	7	12.29	134	22.5
+ 
+*data passage station left right up down
+1	0	1	1	-
+2	1.5	7	-	1
+3	0	1	0.5 -
+4	1.8	1.2	1.2	0.4
+5	2	2	2.5	0
+6	3	5	9	0.5
+7	1.5	0.2	1.6	5
+
+*end shordrop
+
+
+;Date:16/08/96
+;Instruments: Iain
+;Book: Sos
+
+;Data entered by m evans 16/8/96
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate shordrop2.1 shordrop.1
+
+*begin shordrop2
+*date 1996.08.16
+*team "Iain McKenna" compass clino
+*team "Jim Evans" tape
+*team "Chris Roberts" book
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5SmhKQkF3STl3Tm8
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5NmcySFFsQVppblk
+
+*data normal from to tape compass clino
+1       2       13.52   194     -75
+2       3       12.60   320     -74
+3       4       8.12    174     -16
+4       5       4.46    182.5   -47
+5       6       1.49    087.5   +13
+
+; 6 is the first bolt in Ta Moka
+
+*data passage station left right up down
+3	1.5	3	-	2
+4	0	1.5	1.5	1
+5	4	0	1	4
+
+*end shordrop2
+

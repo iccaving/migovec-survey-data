@@ -1,0 +1,33 @@
+;####Hash2####:
+;###Climb up vertical zig zagging tube off lost miles###
+*date 2013.7.22 ; Expedition Z Miga Na Kuk
+
+;Tape: Sam Page
+;Book + Instruments: Tetley
+
+;Data entered by Tetley / Rhys Tyers on 2013.7.24
+
+*begin hash2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1  pages
+;Page 1/1
+1	2	3.73	014	+22
+2	3	5.05	068	+36
+3	4	10.05	163	-31
+4	5	4.24	150	-12
+5	6	2.10	103	00
+6	7	0.90	064	+30
+
+
+;NOTES 
+;Station 1 is PSS
+;Station 7 is hash station 1 
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end hash2
+
+*equate hash2.7 hash.1

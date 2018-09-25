@@ -1,0 +1,43 @@
+encoding  utf-8
+survey hallelujah
+  input "hallelujahp.th2"
+  
+  map mhallelujahp_1 -projection plan
+    hallelujahp_1
+  endmap
+  
+
+  
+  centreline
+    date 2017.07.20
+    explo-team "Rhys Tyers"
+    explo-team "Benjamin Honan"
+    explo-team "Clare Tan"
+    
+    team "Rhys Tyers" insts notes
+    team "Benjamin Honan" tape insts
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+  #PAGE 1
+  1	2	3.57	331	+03
+  3	2	4.71	150	-03
+  4	3	3.99	138	-23
+  5	4	4.36	141	-36	
+  6	5	2.44	065	+24
+  7	6	8.19	149	-07
+  8	7	4.18	138	-12
+  9	8	2.30	160	-15
+  9	10	0.72	244	-06
+
+    #NOTES
+    #STN 1 is PSS
+    #STN10 is Plumber’s Paradise STN 5
+    
+  endcentreline
+endsurvey
+
+
+

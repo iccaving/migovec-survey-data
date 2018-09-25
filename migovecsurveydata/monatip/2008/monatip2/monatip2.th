@@ -1,0 +1,42 @@
+encoding  utf-8
+survey monatip2
+
+  input "monatip2p.th2"
+  map mmonatip2p_2 -projection plan
+    monatip2p_2
+    break
+  endmap
+  
+  map mmonatip2p_1 -projection plan
+    monatip2p_1
+  endmap
+  
+  map mmonatip2p_3 -projection plan
+    monatip2p_3
+  endmap
+  
+  join monatip2p_2 monatip2p_3
+ 
+  centreline
+    date  2008.07.13
+    team "Iztok Mozir" notes insts
+    team "Samo Rutar" notes insts
+    
+    units length meters
+    units clino compass degrees
+    
+27	28	5.40	182	+08	# 
+28	29	11.30	121	-51	# 
+29	30	4.90	123	-14	# 
+30	31	5.70	139	+01	# 
+31	32	1.8	092	+20	#
+32	33	4.4	158	-07	# 
+33	34	4.0	173	-47	# 
+34	35	8.6	166	-18	# 
+35	36	8.0	198	-64	# 
+36	37	6.0	152	-85	#
+    
+  endcentreline
+  
+endsurvey 
+

@@ -1,0 +1,39 @@
+;####Duffers Drop####:
+; ###Pitches below longwater###
+*date 2011.7.27 ; Expedition Izkubljaeni Raj
+
+;Book + Tape: Mike Foley 
+;Instruments: Myles Denton 
+
+;Data entered by Clare on 2011.8.03
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin duffersdrop
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	6.19	036	+42
+2	3	5.43	033	+11
+3	4	5.13	-	up
+4	5	2.52	275	+22
+5	6	3.58	276	-04
+	
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end duffersdrop
+; NOTES
+;Station 6 is rottenrow.7
+;Station 5 is a sling
+;Station 4 is pitch top
+;Station 3 is pitch bottom
+;Station 2 is rock
+;Station 1 is bolt on floor
+
+; ### SURVEY TIE IN ###
+*equate duffersdrop.6 rottenrow.7

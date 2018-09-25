@@ -1,0 +1,32 @@
+;Skalar extensions off exhibition road
+;Date: 5/8/99
+;Instruments: Jan Evetts and Tom Ayles
+;Book: James Hooper
+
+;Data entered by J Hooper on 6/8/99
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate obelix.1 skalar2.7
+
+*begin obelix
+*date 1999.08.05
+
+2	1	12.21	144	-21	;stn 1 is pss at botom of asterix
+2	3	3.87	237	-18	;st5n 3 is bolt on lhs of pitch
+3	4	22.75	-	down	;stn 4 is bolt
+5	4	8.93	040	65
+5	6	3.80	110	-08
+7	6	6.45	051	63
+7	8	28.15	-	down	;stn 7 and 8 are bolts (another bolt lies about 7 metres below stn 7)
+8	9	16.61	-	down	;stn 9 is bottom of pitch
+10	9	11.46	025	-41
+11	10	4.30	300	-19
+12	11	8.18	009	06
+12	13	19.93	-	down	;stn 12 is pss
+14	15	14.32	-	up	;stn 14 is bottom of pitch
+15	16	1.43	012	51
+16	9	3.44	329	00
+
+*end obelix

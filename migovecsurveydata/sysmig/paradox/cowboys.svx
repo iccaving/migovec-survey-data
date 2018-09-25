@@ -1,0 +1,37 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;[Description]
+
+;Date: 22/08/97
+;Instruments: Jim Evans
+;Book: Alva Gossen & Jim Evans
+
+;Data entered by Clewin Griffith on 23/08/97
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate cowboys.9 paradox.22
+;*equate cowboys.13 rameses.2
+
+*begin cowboys
+*date 1997.08.22
+*calibrate tape 0.05
+
+1	2	16.07	009	2	;stn 1 is pss cairn between pitches
+2	3	17.96	009	58
+3	4	14.09	078	80
+4	5	10.65	024	69	;stns 2-5 are bolts
+5	6	9.24	025	38
+6	7	16.50	351	3
+7	8	9.83	023	16
+8	9	6.45	017	-19	;stn9 is cairn (paradox22)
+9	10	3.64	086	1
+10	11	12.87	-	up
+11	12	3.36	014	16	;stn11 is bolt
+12	13	12.50	034	74	
+
+*end cowboys
+

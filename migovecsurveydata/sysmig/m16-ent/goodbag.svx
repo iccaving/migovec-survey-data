@@ -1,0 +1,39 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+; M16 goodybag crawl
+
+;Date:11/8/96
+;Instruments: Jim Evans
+;Book: Mark Evans
+
+;Data entered by Mark Evans 11/8/96
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate goodbag.13 hotline.6
+
+*begin goodbag
+*date 1996.08.11
+
+1       2       2.70    122     +58
+2       3       3.3     103     +22
+3       4       2.70    131     -03
+4       5       2.80    123     +17
+5       6       2.70    098     +22
+
+1       7       9.20    310     -03     ;station 7 is marked
+7       8       10.0    -       Down    ;top of tight pitch
+7       9       3.00    243     +53
+9       10      9.30    354     +49
+10      100      6.51    314     +04
+100     11      6.60    288     -10
+11      12      2.70    298     +18
+12      13      14.90   331     +15
+
+;Goodbag 13 is hotline 6, cairn above chamber
+
+*end goodbag
+

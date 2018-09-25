@@ -1,0 +1,43 @@
+;####Magic Dragon####:
+; ###continuation of grace2 passage beyond throne room - kamikaze extensions###
+*date 2011.7.29 ; Expedition Izkubljaeni Raj
+
+;Tape: Clare Tan
+;Book + Instruments: James Hooper
+
+;Data entered by Clare Tan on 2011.8.03
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin magicdragon
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	17.85	122	+05
+2	3	18.48	321	00
+4	3	16.59	103	+15
+4	5	17.82	290	-19
+5	6	10.33	271	-15
+7	6	13.10	134	-10
+7	8	0.90	-	down
+8	9	7.82	014	+20
+9	10	2.97	310	+20
+11	10	3.06	216	-51
+12	11	7.28	229	-33	
+
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end magicdragon
+; NOTES
+;Station 1 is a PSS cairn at top of muddy pitch
+;Station 4 is a PSS in passage
+;Station 8 is a PSS
+;Station 12 is grace2.1
+; ### SURVEY TIE IN ###
+*equate magicdragon.12 grace2.1

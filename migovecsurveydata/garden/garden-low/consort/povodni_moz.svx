@@ -1,0 +1,74 @@
+;#### POVODNI MOZ (Caret on Z)####:
+; ### Crawl in floor off junction in Palace ###
+*date 2010.8.3 ; Expedition Vodna Sled 2010
+
+;Tape: Eric 
+;Instruments + Book: Izi
+
+;Data entered by Jarv on 4.8.2010
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin povodni_moz
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 2 pages
+;p1/2
+;#### DATA ####
+
+;THIS DATA  DUPLICATED BY povodni_moz2
+*flags duplicate
+1	2	4.10	305	-01
+3	2	10.50	-	down
+3	4	2.10	313	-13
+4	5	5.40	067	+01
+5	6	2.07	331	-39
+7	6	5.59	-	down
+7	8	2.40	043	+04
+8	9	7.35	087	+22
+9	10	4.34	290	+67
+*flags not duplicate
+
+
+10	11	4.74	275	-07
+11	12	2.46	207	-11
+12	13	5.61	235	-10
+13	14	1.85	173	-11
+14	15	1.94	271	-03
+15	16	3.89	254	+22
+;p2/2
+16	17	7.20	044	+17
+
+;notes on flipside
+;stn 1 is pss
+;stn 2 is rope
+;stn 6 is knot on rope at rebelay
+;stn 7 is knot
+;stn 10 is maillion
+
+;stn 17 is pss = stn 9 king minos palace
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	0	3.5	3.8	1
+2	0.2	0.3	1	10.5
+3	0	2.5	1	3
+4	1.7	0	3	0.7
+5	2	2	5	0
+6	0	1	1	0
+7	.2	.5	2.5	.8
+8	1.5	1	5	0.5
+9	0	0.3	6	4.3
+10	1	0	1	1
+11	0	0.3	0.5	0.6
+12	0.2	0	0.2	0.3
+13	0.1	0.2	0.3	0.3
+
+*end povodni_moz
+
+
+; ### SURVEY TIE IN ###
+*equate povodni_moz.17 palace2.9

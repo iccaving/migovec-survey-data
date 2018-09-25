@@ -1,0 +1,37 @@
+;Gardener's World Cave (originally called BCL (or Ben's Crap Lead)) found in 2000
+
+;*include bclent (removed due to resurveying - bclent2 is replacement)
+
+*begin garden-ent
+;EXPO 2000:
+*date 2000
+*calibrate compass -1.633
+	*include laurel		;09.07.2000- Thomas Ayles, Pete Jurd
+	*include urinal		;20.07.2000- Pete Jurd, Ben Johnson
+	*include urinal2		;21.07.2000- Andrew Jurd, Pete Jurd
+	*include hardy		;21.07.2000- M. McGowan, B. Ogborne, J. Hooper
+	*include waffer		;23.07.2000- Pete Jurd, Shaggy
+	*include pico		;28.07.2000- Pete Jurd, Jan Evetts
+	*include pico2		;28.07.2000- Clewin Griffith, Andrew Jurd
+	*include tesselator		;31.07.2000- Clewin Griffith, Andrew Jurd
+	*include spaceodessey	;02.08.2000- Ben Johnson, James Hooper
+	*include concorde		;02.08.2000- Jim Evans, Pete Jurd
+	*include bclent2		;13.07.2000- Mark Evans, Pete Jurd, Ben Ogborne
+	*include alchemy		;02.08.2000- Bruce Drinkwater, Jan Evetts
+;EXPO 2001:
+*date 2001
+*calibrate compass -1.72
+	*include banzai		;03.07.2001- Clewin Griffith, Ben Ogborne
+	*include pink		;01.08.2001- Dave Wilson, J. Hooper (Tetley)
+	*include chariot		;02.08.2001- Clewin Griffith, Helen Jones, Ed Austin
+	*include pink2		;06.08.2001- Clewin Griffith, Dave Wilson	
+	*include judge		;04.08.2001- Adrian Hooper, Martin Mc Gowan			
+	*include prisoners		;04.08.2001- Adrian Hooper, Martin Mc Gowan	
+	*include skynet		;05.08.2001- Andrew Jurd, James Hooper	
+	*include hunger		;05.08.2001- Adrian Hooper, Martin Mc Gowan		
+	*include zimmer		;08.08.2001-Mark Evans, Iain McKenna,	Jim Evans
+;2007:
+*date 2007
+*calibrate compass -2.30
+	*include smashed_swede	;05.08.07 - Andrew Jurd, James Hugget
+*end garden-ent

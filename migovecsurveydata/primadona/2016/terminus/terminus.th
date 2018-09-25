@@ -1,0 +1,60 @@
+encoding  utf-8
+survey terminus
+
+  input "terminusp.th2"
+  
+  map mterminusp_1 -projection plan
+    terminusp_1
+  endmap
+  
+  map mterminusp_2 -projection plan
+    terminusp_2
+  endmap
+  
+  map mterminusp_3 -projection plan
+    terminusp_3
+  endmap
+  
+  join terminusp_1 terminusp_2
+  join terminusp_1 terminusp_3
+  
+  centreline
+    date 2016.07.21
+    explo-team "William French"
+    explo-team "Miriam North"
+    
+    team "William French" insts notes
+    team "Miriam North" insts notes
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    #Data on 2 pages
+    #Page 1/2
+    2	1	3.62	305	-12
+    3	2	3.53	005	+53
+    4	3	4.04	294	+12
+    5	4	2.20	332	+05
+    6	5	1.93	293	+26
+    6	7	3.60	171	+08
+    8	7	5.60	-	down
+    9	8	3.34	076	-35
+    10	9	7.57	059	+02
+    12	11	4.81	033	+01
+    #Page 2/2
+    13	12	2.22	231	-23
+    10	13	2.60	123	-31
+    15	10	5.39	172	-18
+    15	16	0.84	098	00
+
+    #NOTES 
+    #Stn 14 is Stn 10, so all Stn 14 in notes have been changed to 10
+    #Stn 16 is PSS Quantum State stn 1
+    #Stn 1 is sump
+    #4 to 5 is squeeze
+    #Stn 11 is sump 
+    
+    
+  endcentreline
+endsurvey

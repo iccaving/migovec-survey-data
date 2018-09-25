@@ -1,0 +1,33 @@
+;####Serenade####:
+; ###passage from climb in throne room - kamikaze extensions###
+*date 2011.7.27 ; Expedition Izkubljaeni Raj
+
+;Book + Tape: Kate
+;Instruments: Jan
+
+;Data entered by DG on 2011.7.28
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin serenade
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	6.61	191	+34
+3	2	3.10	004	+19
+4	3	0.76	008	+21
+5	4	2.36	041	-16
+6	5	2.55	039	-52
+7	6	6.63	131	-34
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end serenade
+; NOTES
+
+; ### SURVEY TIE IN ###
+*equate serenade.1 throneroom.11

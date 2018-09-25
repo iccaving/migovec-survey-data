@@ -1,0 +1,40 @@
+;###ROLLING STONES####:
+; ###chmber at the ened of wonderland road###
+*date 2010.7.28 ; Expedition Vodna Sled 2010
+
+;Book: Nicolas Kral###
+;Instruments: Gergely Ambrus###
+
+;Data entered by James Kirkpatrick on 31.7.2010
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin rolling
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 pages
+;p1/1
+;#### DATA ####
+1	2	5.06	88	-23
+3	1	5.08	187	22
+3	4	6.82	218	-46
+5	1	5.17	70	-41
+5	6	7.81	249	11
+7	5	18.33	199	-30
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+;1	5	3	5	0
+;3	3	3	12	1	
+;5	4	2	6	0
+;6	2	2	2	0	
+*end rolling
+; NOTES
+; 1 is PSS cairn
+; at 4 there is a 15 m pitch
+;	
+; ### SURVEY TIE IN ###
+*equate rolling.7	wonderland.1

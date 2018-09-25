@@ -1,0 +1,50 @@
+;####Klic Globin####:
+;###horizontal passage of pitch of Klic Globin###
+*date 2018.07.29 ; Expedition Klic Globin
+
+;Disto: Clare Tan
+;Book: Tanguy Racine
+;Data entered by Tanguy Racine 30/07/2018
+
+*begin mouseleum
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on disto
+
+;Page 1
+
+0	1	3.27	169.0	26.8
+1	2	5.03	127.1	43.1
+2	3	3.87	354.8	22.6
+3	4	5.30	151.0	9.0
+4	5	7.52	126.4	41.2
+5	6	1.79	187.9	-11.3
+6	7	5.67	159.8	-7.7
+7	8	6.01	320.9	85.2
+8	9	2.13	206.3	45.6
+9	10	2.83	172.1	9.4
+10	11	5.50	180.8	34.0
+11	12	3.74	349.5	61.8
+12	13	3.87	190.9	49.4
+13	14	7.30	154.6	27.4
+14	15	4.81	256.2	-11.8
+15	16	9.96	261.2	72.7
+16	17	1.80	221.6	-12
+17	18	4.41	234.6	54.8
+18	19	6.61	355.7	12.7
+19	20	9.74	185.9	44.2
+19	21	7.97	006.4	-13.1
+;NOTES 
+; stn 0 is PSS
+; stn 20 is moonraker stn 0
+; stn 19 is pss
+;stn 0 is pss
+;stn 15 is PSS cairn
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end mouseleum
+
+*equate moonraker.0 mouseleum.20 
+

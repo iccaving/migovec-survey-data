@@ -1,0 +1,53 @@
+;####Lazarus####:
+;###Passage through hole in the wall of Miles Underground###
+*date 2015.8.5 ; Expedition Pivo Moz
+
+;Instruments: Rhys Tyers
+;Book: Tanguy Racine
+
+;Data entered by Rhys Tyers / William French  on 2015.8.7
+
+*begin lazarus
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/2
+2	1	6.68	305	+14
+3	2	5.01	349	+09
+4	3	3.25	030	+11
+5	4	4.32	308	+07
+6	5	2.78	301	+39
+7	6	3.25	299	+29
+8	7	2.22	308	+20
+9	8	7.96	325	-06
+10	9	6.29	311	-23
+11	10	8.16	292	+29
+12	11	1.50	290	+03
+13	12	4.27	306	-02
+;p2/2
+14	13	2.12	318	+03
+15	14	5.38	295	-28
+16	15	10.55	314	+31
+17	16	2.13	229	+37
+18	17	5.49	259	-22
+19	18	3.93	293	-03
+20	19	3.10	295	-52
+21	20	5.26	316	+19
+22	21	2.48	234	-32
+*flags duplicate ;following is resurvey of Miles Underground
+23	22	2.27	-	up
+24	23	9.50	335	-06
+25	24	11.85	338	-25
+26	25	6.80	331	+13
+*flags not duplicate
+
+;NOTES 
+;stn 6 is at constriction
+;stn 26 is miles underground stn 9
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end lazarus
+
+*equate lazarus.26 miles.9

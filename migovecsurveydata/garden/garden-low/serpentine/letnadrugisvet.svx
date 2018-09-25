@@ -1,0 +1,47 @@
+;####LET NA DRUGI SVET####:
+;###Continuation below first Serpentine pitch###
+*date 2011.7.29 ; Expedition Izkubljaeni Raj
+
+;Instruments + Book: Izi
+;Tape: Kletnik 
+
+;Data entered by Clare Tan on 07.08.2011 
+
+*begin letnadrugisvet
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino
+
+;Data is on 1 page
+;page 1/1
+;#### DATA ####
+1	2	4.80	223	+51
+2	3	1.40	162	-2
+3	4	16.20	-	up
+4	5	5.80	199	+54
+5	6	2.30	321	+1
+6	7	4.93	311	-33
+7	8	6.61	217	+61
+8	9	3.40	175	+73
+9	10	1.89	191	-1
+10	11	6.50	226	-33
+11	12	5.10	161	-59	
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+
+
+*end letnadrugisvet
+
+;NOTES
+;st. 1 is PSS
+;st. 2 is mark on the rock with pensil
+;st. 3 is bottom of rope
+;st. 4 is rebelay knot
+;st. 5 is rebelay knot
+;st. 10 is rebelay knot
+;st.11 = st serpentine.10
+
+; ### SURVEY TIE IN ###
+*equate letnadrugisvet.11 serpentine.10

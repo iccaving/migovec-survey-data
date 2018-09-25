@@ -1,0 +1,43 @@
+;####Lower Pleasures####:
+; ###dig off end of friendship gallery with the boulder collapse###
+*date 2011.7.31 ; Expedition Izkubljaeni Raj
+
+;Instruments: Gergely Ambrus
+;Book + Tape: Jana Carga
+
+;Data entered by Clare Tan on 2011.8.03
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin lowerpleasures
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	4.06	210	-23
+3	2	2.45	201	-23
+4	3	1.40	166	-44
+5	4	2.11	239	-45
+6	5	3.56	206	-06
+6	7	1.49	80	+5
+8	7	2.70	172	-2
+8	9	3.14	34	+9
+9	10	2.68	88	+2
+11	10	2.47	261	-41
+11	12	2.42	226	+32
+;survey of upper pleasure
+12	upper	10	230	0
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end lowerpleasures
+; NOTES
+;.12 is friendshipgallery.19
+;.1 is top of the pitch in the corner
+;.2 is rock on sieling[sic] (marked)
+
+; ### SURVEY TIE IN ###
+*equate lowerpleasures.12 friend.19

@@ -1,0 +1,45 @@
+;####Penny Falls####:
+;###Below bottom of Ave Maria###
+*date 2018.07.22 ; Expedition Klic Globin
+
+;Disto: James Wilson/James Wilson
+;Book: James Wilson/James Wilson
+;Data entered by David Kirkpatrick on 25/07/2018
+
+*begin penny_falls
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+1	2	4.12	93	56
+2	3	3.70	53	49
+3	4	2.67	38	6
+5	4	1.68	284	-15
+5	6	5.01	46	68
+6	7	1.61	16	16
+7	8	1.85	43	-14
+8	9	3.70	342	00
+9	10	4.31	348	56
+11	10	3.23	242	-13
+11	12	2.85	337	28
+13	12	4.77	243	-30
+
+;Page 2
+13	14	5.72	15	41
+15	14	1.89	248	-52
+
+;NOTES 
+;STN1 is PSS
+;STN6 is Bolt
+;STN15 is ave maria STN1
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end penny_falls
+
+*equate penny_falls.15 ave_maria.1
+

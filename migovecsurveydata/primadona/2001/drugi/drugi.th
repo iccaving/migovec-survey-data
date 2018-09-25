@@ -1,0 +1,52 @@
+encoding  utf-8
+survey drugi
+
+   input "drugip.th2"
+   input "drugi_extend.th2"
+  map mdrugip_1 -projection plan
+   drugip_1  
+  endmap
+  
+  map mdrugip_2 -projection plan
+   drugip_2  
+  endmap
+  
+  map mdrugip_3 -projection plan
+   drugip_3  
+  endmap
+  
+  join drugip_1 drugip_2
+  
+  centreline
+  date 2001.07.18
+  explo-team "Tivadar Tomaz"
+  explo-team "Beguš Tadej"
+  team "Tivadar Tomaz" notes insts
+  team "Beguš Tadej" insts
+  
+   units length meters
+      units compass clino degrees
+      2	1	8.0	145	-73	#stn 1 primadona po cetrtem breznu
+3	2	5.4	245	-68
+4	3	8.8	252	-50	#stn 4 is bolt 
+5	4	3.0	181	-3
+6	5	4.5	245	-42
+7	6	12.5	215	-29
+7a	7	20.0	000	-90
+8	7a	8.5	000	-90	#stn 8 is bolt
+9	8	9.8	177	-69
+10	9	5.4	150	5	#toc 9 zacetek vhodne ozine
+11	10	6.4	149	5
+12	11	1.7	213	0
+13	12	3.0	137	0	#toc 13 konec vhodne ozine
+14	13	18.0	140	2	
+14	15	17.0	283	-28	#stn 15 kota napisa pred jamo "TL"
+10	10a	11.0	0	-90
+10a	10b	12.3	161	-45	#mera ni tocna odstopok +- 2 stopinji
+#8	8a	10	0	-90
+
+      
+  endcentreline
+  
+  endsurvey
+

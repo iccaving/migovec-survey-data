@@ -1,0 +1,59 @@
+;####Minestrone####:
+; ###Continuation of Lost Miles###
+*date 2012.7.27 ; Expedition Sledi Vetra
+
+;Tape: Kate Smith
+;Book + Instruments: Clare Tan
+
+;Data entered by Gergley / Rhys on 2012.7.29
+
+*begin minestrone1
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+2	1	4.15	315	-8
+2	3	2.15	242	-3
+4	3	4.40	305	+4
+4	5	8.20	127	+30
+6	5	7.73	052	+38
+6	7	12.24	165	-26
+7	8	7.57	162	-10
+9	8	6.02	284	+4
+9	10	6.22	100	+30
+11	10	2.54	304	-20
+11	12	7.13	135	0
+13	12	3.54	302	-58
+;Page 2/2
+13	14	9.86	115	+25	
+15	14	3.15	251	-84
+15	16	12.40	175	+4
+17	16	5.68	329	-53
+17	18	7.98	157	-2
+19	18	5.43	334	+20
+19	20	5.52	110	+26
+21	20	4.52	302	-52
+21	22	2.99	098	+16
+23	22	4.14	339	-39
+23	24	6.55	062	+52
+
+
+;NOTES 
+;Flip of page 1
+;Sta 1 is PSS
+;Sta 3 is PSS in center of chamber
+;Sta 12 is PSS
+
+;Flip of page 2
+;Sta 14 is PSS
+;Sta 16 is PSS
+;Sta 21 is PSS
+;Sta 24 is PSS and Minestrone 2 Stn 11
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end minestrone1
+
+*equate minestrone1.24 minestrone2.11

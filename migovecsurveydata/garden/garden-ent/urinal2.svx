@@ -1,0 +1,33 @@
+;continuation of urinal, Passage below laurel in Gardeners World (BCL)
+
+;Date: 24/7/00
+;Instruments: Andrew Jurd
+;Book: Pete Jurd
+
+;Data entered by CG on 24/7/00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate urinal.1 urinal2.4
+
+*begin urinal2
+
+1	2	17.19	107	-12   ; stn1 is pss cairn at top of pitch
+2	3	15.22	-	up
+3	4	1.71	189	0
+
+;JMF 2008-06-04
+*data passage station left right up down ignoreall
+;urinal2.3 is top of Piston
+;.2 is base
+;.1 is top of Pico
+;Guesses from memory to make shape right, assuming they surveyed roughly along right hand wall towards Pico
+3	0.5	0.5	2.0	15.0
+2	1.5	0.5	15.0	0.2
+
+*data passage station left right up down ignoreall
+2       1.5     0.5     15.0    0.2
+1	4.0	1.0	15.0	1.2
+
+*end urinal2

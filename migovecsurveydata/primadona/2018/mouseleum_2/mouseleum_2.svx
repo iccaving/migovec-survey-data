@@ -1,0 +1,39 @@
+;####mouseleum_2####:
+;###Continuation of mouseleum###
+*date 2018.08.01 ; Expedition Klic Globin
+
+;Tape: David Wilson
+;Book: David Wilson
+;Instruments: James Wilson
+;Data entered by James Wilson on 03/08/2018
+
+*begin mouseleum_2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+1	2	5.86	337	-18
+3	1	4.52	014	-59
+4	3	4.00	290	-56
+5	4	2.11	008	+06
+6	5	4.07	248	-73
+7	6	7.40	136	-36
+8	7	5.21	235	-52
+
+;NOTES 
+;STN1 is  pss
+;STN4 is bolt
+;STN3 is mini cairn
+;STN6 is bolt
+;STN8 is mouseleum STN0
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end mouseleum_2
+
+*equate mouseleum.0 mouseleum_2.8
+

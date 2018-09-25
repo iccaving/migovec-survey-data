@@ -1,0 +1,32 @@
+;####A Pun Too Far 2####:
+;###Pitches and rift offKamikaze###
+*date 2014.8.7 ; Expedition Z Miga Na Kuk
+
+;Instruments + Tape: Aileen Brown
+;Book: Tanguy Racine
+
+;Data entered by Rhys Tyers / Tanguy Racine on 2014.8.09
+
+*begin apuntoofar2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	4.24	302	+30
+2	3	2.84	349	+13
+3	4	1.62	074	+19
+4	5	4.93	019	+08
+5	6	4.22	320	+29
+6	7	4.64	292	+38
+7	8	3.49	-	up
+8	9	0.86	181	-19
+;NOTES 
+;stn 1 is pss
+;stn 9 is a pun too far 1 stn 1
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end apuntoofar2
+
+*equate apuntoofar1.1 apuntoofar2.9

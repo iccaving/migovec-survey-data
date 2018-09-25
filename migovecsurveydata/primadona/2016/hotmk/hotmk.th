@@ -1,0 +1,46 @@
+encoding  utf-8
+survey hotmk #the hall of the mountain king
+
+  input "hotmkp.th2"
+  
+  map mhotmkp_1 -projection plan
+    hotmkp_1
+  endmap
+  
+  map mhotmkp_2 -projection plan
+    hotmkp_2
+  endmap
+  
+  map mhotmkp_3 -projection plan
+    hotmkp_3
+  endmap
+  
+  centreline
+    date 2016.07.22
+    explo-team "Tanguy Racine"
+    explo-team "Jack Hare"
+    explo-team "William Scott"
+    explo-team "Andrej Fratnik"
+    team "William Scott" insts notes
+    team "Jack Hare" notes
+    team "Andrej Fratnik" insts
+    
+    #Page 1/1
+1	2	7.00	116	+46
+2	3	4.73	041	+06
+3	4	3.06	118	+01
+4	5	17.00	062	-37
+5	6	5.20	029	+03
+6	7	13.00	060	-22
+7	8	13.01	011	+18
+8	9	15.00	031	+71
+9	10	21.30	028	+82
+10	11	2.00	349	+04
+11	12	2.70	044	+12
+
+    
+    
+  endcentreline
+
+endsurvey
+

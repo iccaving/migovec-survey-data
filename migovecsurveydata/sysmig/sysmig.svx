@@ -1,0 +1,40 @@
+; System Migovec 
+; (c) 1994 - 2000 Imperial College Caving Club
+; Surveyed to BCRA Grade 4b
+
+;Main System File
+
+*infer plumbs on
+
+*copyright 2000 ICCC
+
+*begin system
+*flags not surface
+
+*date 1996
+;Generic date, will get overridden in individual data files if date present
+*calibrate compass -1.30
+;1996    1° 18' E changing by 0° 4' E/year
+
+*equate m18.silos.8          m2.JSPDT.24
+*equate level2.level2s.14    m18.void.6
+*equate m16ent.hotline.7     level2.migconleft.6
+*equate m16ent.brezno.50     m16low.shordrop.7
+*equate level2.level2s.1     whitestar.titanic.27
+*equate level2.carwash.1     hotelt.xxx.1
+*equate hotelt.hotel.1	     coldfeet.pinkp.1
+*equate pdox.cowboys.13      coldfeet.rameses.2
+
+*equate hotelt.hotel.1 HOTEL_TOLMINKA
+
+*include torn-t\s_tornt
+*include m16-ent\s_m16ent
+*include m16-low\s_m16low
+*include level2\s_levl2
+*include hotel\s_hotel
+*include coldfeet\s_coldft
+*include m2\m2dataFeb2012.svx
+*include titanic\s_titan
+*include paradox\s_parad
+
+*end system

@@ -1,0 +1,8 @@
+*begin 00b
+ *equate s2.GW s5.GW
+ *equate s5.15 s6.1
+ 
+ *include s2
+ *include s5
+ *include s6
+*end 00b

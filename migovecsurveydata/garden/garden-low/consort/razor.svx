@@ -1,0 +1,44 @@
+;#### Razor ####:
+; ### Rift at the end of guillotine ###
+*date 2012.08.02 ; Expedition Sledi Vetra
+
+;Instruments: Gergely Ambrus
+;Book: Jana Carga
+
+;Data entered by Clewin Griffith on 2012.08.04
+
+*begin razor
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+
+1	2	10.65	022	+55
+2	3	5.52	021	+9
+4	3	2.58	274	+42
+
+
+;PSEUDO LEGS
+*flags splay
+1	5	20	-	up
+1	6	10	-	down
+*flags not splay
+
+;NOTES 
+;stn 1 is pss cairn in razor
+;stn 4 is guillotine pss 7
+;5 and 6 are ends of pseudo legs
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	1	2	20	10
+2	0	1	5	1
+3	1	2	15	10
+5	1	1	0	30
+6	1	1	30	0
+
+*end razor
+
+*equate razor.4 guillotine.7
+

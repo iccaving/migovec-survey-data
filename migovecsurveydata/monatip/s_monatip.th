@@ -1,0 +1,46 @@
+encoding  utf-8
+survey monatip
+
+  ######________________2007________________######
+  input "2007/monatip1/monatip1.th"
+  
+  ######________________2008________________######
+  input "2008/monatip2/monatip2.th"
+  input "2008/monatip3/monatip3.th"
+  input "2008/broken_hammer/broken_hammer.th"
+  input "2008/monatip4/monatip4.th"
+  input "2008/alkatraz/alkatraz.th"
+  input "2008/doubletime/doubletime.th"
+  
+  equate 27@monatip2 27@monatip1
+  equate 37@monatip2 37@monatip3
+  equate 44@monatip3 1@broken_hammer
+  equate 1@monatip4 16@broken_hammer
+  equate 1@alkatraz 50@monatip4
+  equate 20@doubletime 50@monatip4
+  
+  #Scrap joins
+  join monatip2p_1@monatip2 monatip1p_5@monatip1
+  join monatip3p_2@monatip3 broken_hammerp_1@broken_hammer 
+ 
+ #Line joins
+  join s2_l2@monatip4:0 s2_l2@broken_hammer:0
+  join s2_l1@monatip4:end s2_l1@broken_hammer:end
+  
+  join alkatrazp_1@alkatraz monatip4p_5@monatip4
+ 
+  
+  
+  ######________________2016________________######
+  input "2016/therock/therock.th"
+  input "2016/cloacamaxima/cloacamaxima.th"
+  
+   join alkatrazp_2@alkatraz therockp_2@therock
+  equate 14@therock 7@alkatraz
+  
+  join cloacamaximap_1@cloacamaxima monatip2p_3@monatip2
+  
+  equate 27@monatip2 53@cloacamaxima
+  equate 35@monatip2 44@cloacamaxima
+endsurvey
+

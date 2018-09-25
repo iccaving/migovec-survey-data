@@ -1,0 +1,24 @@
+*begin Oct08
+
+;Data by JH/AF
+;Date: 25/10/08
+*date 2008.10.25
+
+;2008 NOAA declination for mig:
+*calibrate compass -2.42
+;Page 1 of 1
+
+1	2	17.50	-	up	; .1 no LRUD
+2	3	4.00	031	+40	; .2 no LRUD
+3	4	5.00	293	+23	; .3 1 0 2 0
+5	4	3.90	139	-44	; .4 0 0.5 2 0
+6	5	3.60	155	-03	; .5 0 0.5 0.5 1.0
+6	7	4.30	014	00	; .6 0.5 0.2 0.3 0
+8	7	4.00	114	+52	; .7 no LRUD .8 no LRUD
+
+;Notes on reverse
+; .1 is a bottom of pitch
+; .2 is bolt at top of pitch
+; .8 is bottom of 'last' pitch in M2
+
+*end Oct08

@@ -1,0 +1,32 @@
+encoding  utf-8
+survey alkatraz
+  input "alkatrazp.th2"
+  
+  map malkatrazp_1 -projection plan
+    alkatrazp_1
+  endmap
+  
+  map malkatrazp_2 -projection plan
+    alkatrazp_2
+  endmap
+  
+  join alkatrazp_1 alkatrazp_2
+  
+  centreline
+    date 2016.07.18
+    team "Iztok Mozir" insts notes
+    team "James Hooper" insts notes
+    units length meters
+    units compass clino degrees
+    
+2	1	5.00	132	-10	# .1 NO DATA
+2	3	6.45	269	-03	# .2 4 2 20+ 1
+4	3	10.90	076	+48	# .3 2 0 ? 1.7
+4	5	13.65	216	-27	# .4 6 4 ? 1
+6	5	8.30	314	+05	# .5 7 5 ? 1.7
+7	5	26.20	003	+18	# .6 - - - -
+7	8	24.00	278	+06	# .7 - - - -
+    
+  endcentreline
+endsurvey
+

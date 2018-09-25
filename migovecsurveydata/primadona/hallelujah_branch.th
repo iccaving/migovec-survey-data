@@ -1,0 +1,72 @@
+encoding  utf-8
+survey hallelujah_branch -title "The Hallelujah Branch"
+  input 2001/galerija/galerija.th 
+  
+  equate 6@galerija_resurvey 16@galerija
+  
+  ##2002### 
+  
+  input "2002/smer0/smer0.th"
+  
+  equate 57@smer0 17@galerija
+  join s1_l1@smer0:end s4_l1@galerija:0
+  join s1_l2@smer0:0 s4_l2@galerija:end
+  
+  
+  ###______________ 2016_____________ ###
+     
+     input "2016/Galeria_Resurvey/Galeria_Survey.th"
+     input "2016/cattlegrid/cattlegrid.th"
+     input "2016/the_stile/the_stile.th"
+   
+     
+     
+     equate 23@cattlegrid 6@galerija_resurvey
+     equate 1@the_stile 6@galerija_resurvey
+     equate 15@cattlegrid 17@the_stile
+     
+     
+     
+    
+     
+     join s2_l1@the_stile:end s2_l1@cattlegrid:0
+     join s2_l2@the_stile:0 s2_l2@cattlegrid:end
+     join s1_l1@the_stile:0 s1_l4@smer0:end
+     join s1_l2@the_stile:end s1_l5@smer0:0
+     join s1_l4@the_stile:end s4_l3@galerija:0
+     join s1_l3@the_stile:0 s4_l1@galerija:end
+     
+     
+     ###______________ 2017_____________ ###
+     
+    
+     input "2017/fenestrator/fenestrator.th"
+     input "2017/battery_flattery/battery_flattery.th"
+     input "2017/plumbers_p/plumbers_p.th"
+     input "2017/union_passage_of_the_year_nominee/upotyn.th"
+     input "2017/hallelujah/hallelujah.th"
+     input "2017/sweet_baby_jesus/sweet_baby_jesus.th"
+     input "2017/alabaster/alabaster.th"
+     input "2017/jack_of_hearts/jack_of_hearts.th"
+     
+     
+     
+      equate 11@fenestrator 8@cattlegrid
+      equate 11@battery_flattery 1@fenestrator
+      equate 13@upotyn 8@cattlegrid
+      equate 25@plumbers_p 9@upotyn
+      equate 5@plumbers_p 10@hallelujah
+      equate 24@sweet_baby_jesus 1@hallelujah
+      equate 26@alabaster 1@sweet_baby_jesus
+      equate 35@jack_of_hearts 39@smer0
+      
+      
+      join fenestratorp_2@fenestrator cattlegridp_2@cattlegrid
+      join fenestratorp_1@fenestrator battery_flatteryp_2@battery_flattery
+      join s1_l1@fenestrator:0 s1_l1@upotyn:end
+      join s1_l2@fenestrator:end s1_l2@upotyn:0
+      join hallelujahp_1@hallelujah plumbers_pp_2@plumbers_p
+      join alabasterp_1@alabaster sweet_baby_jesusp_1@sweet_baby_jesus
+  
+endsurvey
+

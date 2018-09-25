@@ -1,0 +1,40 @@
+;#### It will rain for a million years ####:
+; ### Pitch below Serpentine meander ###
+*date 2010.8.7 ; Expedition Vodna Sled 2010
+
+;Book + Tape: James KP
+;Instruments: William French
+
+;Data entered by Jarv on 9-8-10
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin itwillrain
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 page
+;p1/1
+;#### DATA ####
+1	2	4.08	315	-13
+2	3	8.10	-	up
+3	4	15.57	090	+85
+5	4	5.93	271	-25
+5	6	6.26	-	up
+6	7	2.42	-	up
+8	7	2.55	250	-41	; clino uncertain
+9	8	4.01	200	58
+
+;NOTES:
+;9->8 is on reverse of paper
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end itwillrain
+; NOTES
+
+; ### SURVEY TIE IN ###
+*equate itwillrain.9 serpentine.1

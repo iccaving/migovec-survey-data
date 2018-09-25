@@ -1,0 +1,40 @@
+; System Migovec 
+; (c) 1994 - 2017 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;Death by a 1000 blows
+
+;Date: 28/7/17
+
+;Data entered by Tanguy Racine on 28/7/17
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+
+
+*begin death_by_a_1000_blows
+*date 1997.07.25
+*team “Jack Hare“ instruments
+*team “David P Wilson” book
+
+;data on 1 page
+
+;Page 1/1
+1	2	2.06	078	+12
+2	3	2.45	084	+17
+3	4	2.93	029	+20
+4	5	2.14	106	+17
+5	6	1.05	-	UP
+6	7	5.33	077	+61
+7	8	0.96	-	UP
+8	9	0.40	340	+28
+
+;Rift continues at 245 degrees
+;Station 7 is through bolt
+;STN 9 is PSS 3/08/96 M16 stn 33
+
+*end death_by_a_1000_blows
+
+*equate death_by_a_1000_blows.9 is brezno.33
+

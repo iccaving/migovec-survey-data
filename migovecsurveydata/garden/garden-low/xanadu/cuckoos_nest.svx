@@ -1,0 +1,74 @@
+;####Cuckoo's Nest####:
+;###Passage below Euphrates/Xanadu###
+*date 2013.7.26 ; Expedition Z Miga Na Kuk
+
+;Tape + Instruments: Iztok Mozir
+;Book: Clare Tan
+
+;Data entered by Clare Tan on 2013.7.27
+
+*begin cuckoos_nest	
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 4 pages
+;Page 1/4
+1	2	2.25	341	-01
+2	3	3.24	266	-19
+4	3	2.17	184	-18
+5	4	4.51	071	-05
+6	5	7.87	070	00
+7	6	4.96	061	+11
+8	7	3.64	346	+09
+9	8	3.25	067	+29
+10	9	11.78	151	+08
+11	10	3.81	002	+14
+12	11	6.45	119	+32
+13	12	8.18	157	-28
+;Page 2/4
+14	13	11.01	165	-10
+15	14	5.71	088	-34
+16	15	4.22	343	-01
+17	16	5.58	034	-33
+18	14	9.56	263	+27
+19	18	11.93	184	-09
+20	19	9.52	157	-12
+21	20	13.07	085	-13
+22	21	7.75	193	-11
+23	22	9.64	193	+10
+24	23	3.74	278	+01
+;Page 3/4
+25	24	3.25	236	+03
+26	25	5.39	162	+13
+27	26	3.38	234	+11
+28	27	3.17	270	-04
+29	28	2.06	253	-08
+30	29	3.16	176	+52
+31	30	3.60	254	+07
+32	31	7.10	156	-22
+33	32	7.27	169	+02
+33	34	5.23	-	down
+35	34	4.96	157	-06
+36	35	2.83	151	+32
+;Page 4/4
+37	36	4.92	235	+24
+38	37	3.10	231	+04
+39	38	2.97	198	-11
+40	39	4.50	244	-19
+;NOTES 
+;Station 3 is a PSS
+;Station 10 is a PSS
+;Station 12 is a PSS
+;Station 14 is a PSS
+;Station 16 is a PSS
+;Station 17 is a PSS
+;Station 20 is a PSS
+;Station 30 is a PSS
+;Station 40 is xanadon't stn 5 
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end cuckoos_nest
+
+*equate cuckoos_nest.40 xanadont.5

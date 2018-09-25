@@ -1,0 +1,48 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;M18 Exhibition Rd to end of Bikini Carwash
+
+;Date: 20/8/96
+;Instruments: James Evans 
+;Book: Iain McKenna
+
+;Data entered by C.Roberts 23/8/96
+
+*equate carwash.11 exhib.13	;changed from carwash.10 mje
+
+*begin carwash
+*date 1996.08.20
+*team "Jim Evans" instruments
+*team "Iain McKenna" book
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5ZjFIQlNnRjQ3aG8
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5UGdSekpxVjFrVzg
+
+*data normal from to tape compass clino
+1       2       5.08    346     26	;a pss on rock at top of xxx 
+2       3       4.20    290     06
+3       4       2.96    032     02
+4       5       4.04    093     09
+5       6       5.46    077     07	;a pss on wall towards water;
+7       5       3.32    331     -18	;changed from 5	7	mje
+7       8       1.29    211     43
+8       9       3.26    158     -10
+9       10      9.54    096     -18
+10      11      22.18   220     38
+
+*data passage station left right up down
+1   2   1   1.5 -
+2   1   0   1   0.5
+3   1   1   0.5 3
+4   0.5 0   3   3
+5   0.2 0   3   4
+6   0   2   2   3
+
+*data passage station left right up down
+5   0.2 0   3   4
+7   1.5 0.7 0.7 0.5
+8   1   0.5 0.2 1
+9   4   -   8   1
+
+*end carwash

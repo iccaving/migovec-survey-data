@@ -1,0 +1,25 @@
+; Tesselator 2
+
+;Date: 31.7.00
+;Instruments: Clewin Griffith
+;Book: Andrew Jurd
+
+;Data entered by CG on 1.8.00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+
+*begin tesselator
+
+2	1	4.38	244	-30	;stn 1 is pss cairn
+2	3	4.04	074	-4	;stn 3 is bottom of rope
+4	3	23.58	240	-88	;stn 4 is bolt at top of pitch
+5	4	7.97	136	-62
+6	5	11.31	-	DOWN	; stn 6 is bolt at top of pitch
+7	6	2.56	326	-16	;stn 7 is backup bolt
+8	7	2.21	281	-5	;stn 8 is previous cairn
+
+*end tesselator
+
+*equate tesselator.8 pico2.1

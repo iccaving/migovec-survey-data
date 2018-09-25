@@ -1,0 +1,33 @@
+;####Touching The Void####:
+;###Climb at Helm's Deep Chambre###
+*date 2014.08.07 ; Expedition Skozi Zrcalo
+
+;Tape: Gergely
+;Instruments: Izi
+;Book: Gergely
+
+;Data entered by DG on 2014.08.08
+
+*begin touchingthevoid
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/1
+1	2	15	297	+26 	;	10	2	5	20
+2	3	20	-	up  	;	10	10	20	20
+2	4	20	-	down
+5	1	24.9	285	+47
+
+; L R U D at station 1 - 
+;NOTES 
+;station 5 is sic semper tyrannis 25
+;leg 5->1 was 1->5 on original survey - corrected as data was entered
+;same chamber as helms deep 
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end touchingthevoid
+
+*equate touchingthevoid.5 sicsempertyrannis.25

@@ -1,0 +1,90 @@
+;Monatip
+; from monatip rift to top of Alkatraz
+
+;Date: 30/07/16
+;Instruments / Book: clare Tan Tanguy Racine
+
+;Data entered by Kenneth Tan 5/08/16
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin cloacamaxima
+;PAGE 1
+1	2	1.20	288	+03
+2	3	30.10	-	down
+4	1	5.34	220	-45
+4	5	4.06	085	+09
+6	5	4.38	214	-09
+6	7	3.72	337	+06
+8	7	4.62	273	-07
+8	9	3.55	050	+23
+10	9	3.65	162	-31
+10	11	2.65	110	+01
+12	11	7.39	233	-09
+12	13	38.50	-	up
+
+
+;PAGE 2
+14	15	5.02	311	-02
+15	16	11.80	322	-45
+12	16	6.27	198	-05
+12	17	8.31	017	+31
+18	17	2.81	206	-10
+18	19	7.77	026	+12
+20	19	2.55	219	-11
+20	21	5.60	139	+04
+19	22	21.48	336	+08
+23	22	5.77	181	-13
+23	24	10.33	320	+09
+25	24	4.72	123	-10
+
+;PAGE 3
+25	26	16.75	-	down
+27	23	2.84	275	-07
+27	28	3.00	357	+08
+29	28	5.38	229	-20
+29	30	4.41	014	+17
+31	30	6.53	252	-14
+31	32	2.29	329	+06
+33	32	4.18	119	+64
+33	34	5.70	023	+07
+35	34	5.07	142	-33
+35	36	6.00	015	+17
+37	36	3.54	204	-22
+
+;PAGE 4
+37	38	1.96	305	+14
+39	38	27.22	188	-14
+39	40	8.58	013	+12
+41	40	2.19	236	-16
+41	42	9.08	020	+10
+43	42	2.97	291	+31
+43	44	1.61	070	-27
+44	45	6.54	002	+16
+46	45	4.04	188	-40
+46	47	4.14	356	+17
+*flags duplicate
+48	47	2.50	117	+18
+48	49	1.92	304	+06
+50	49	3.82	154	-06
+
+;PAGE 5
+50	51	3.95	311	+07
+52	51	12.48	175	-68
+52	53	6.04	325	-30
+*flags not duplicate
+;NOTES
+;Stn1 is PSS
+;Stn12 is PSS in chamber in aven (chamber is 20*10 meters)
+;Stn12 to 13 pseudo leg up aven
+;Stn19 is PSS at junction
+;Stn21 is PSS at bottom of aven
+;Stn23 is junction
+;Stn25 is PSS at pitch head
+;Stn34 is PSS in little chamber
+;Stn49 is PSS
+;Stn53 is "Tetley in Iztok Stn27 6/8/07"
+
+*end cloacamaxima
+*equate monatip2.27 cloacamaxima.53

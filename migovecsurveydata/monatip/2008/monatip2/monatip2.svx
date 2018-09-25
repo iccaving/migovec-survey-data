@@ -1,0 +1,46 @@
+;Monatip
+;New cave to north of Primadona & below B9.
+;Date: 13/7/08
+*date 2008.07.13
+;Instruments / Book: Izzy Mojir, Samo Rutar
+;Data transcribed by James Hooper
+;Data entered by Jarvist Frost 21/7/08
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+;*equate monatip2.27	monatip1.27
+
+*begin monatip2
+*data normal from to tape compass clino	
+*set decimal (.)
+27	28	5.40	182	+08	; 
+28	29	11.30	121	-51	; 
+29	30	4.90	123	-14	; 
+30	31	5.70	139	+01	; 
+31	32	1.8	092	+20	;
+32	33	4.4	158	-07	; 
+33	34	4.0	173	-47	; 
+34	35	8.6	166	-18	; 
+35	36	8.0	198	-64	; 
+36	37	6.0	152	-85	; 
+;36>37 'down' replaced with '-85' Alijosa suggestion, 6-8-08
+; stn 27 is JH/IM stn. 27 PSS in chamber
+; stn 37 is a PSS
+; stn 35 is top of free climb pitch down
+; stn 36 plošèica in stem / first bolt
+
+*data passage station left right up down
+
+28	5 	1.50 	30 	0.5
+29	0.2 	0.5 	0.9 	1.0
+30	0.5 	0.3 	4 	0.2
+31	1 	0.2 	0.4 	0.1
+32	0 	1.8 	0 	0.5
+33	0.3 	0.2 	0.1 	0.3
+34	0.1 	1.0 	0.7 	0.2
+34	0.1 	1.0 	0.7 	0.2
+36	0.0 	0.6 	2.0 	30
+37	1 	0 	6 	0
+
+*end monatip2

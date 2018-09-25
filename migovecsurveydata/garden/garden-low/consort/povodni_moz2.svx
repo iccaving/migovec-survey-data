@@ -1,0 +1,82 @@
+;####PO VODNI MOZ 2####:
+; ###passage  below po vodni moz###
+*date 2010.8.7 ; Expedition Vodna Sled 2010
+
+;Book + Instruments: James Hooper###
+;Tape: Jst###
+
+;Data entered by James on 10.8.2010
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin povodni_moz2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 2 pages
+;p1/2
+;#### DATA ####
+2	1	5.10	277	+50
+2	3	12.40	092	+28
+3	4	9.20	068	+08
+4	5	4.40	114	+00
+5	6	6.90	014	+10
+6	7	20.00	-	up
+
+;break
+5	8	7.10	112	+67
+8	9	7.20	105	00
+
+;break
+2	10	9.40	260	-18
+10	11	2.60	225	-06
+11	11b	7.80	222	-33
+
+;p2/2
+;####DATA###
+11b	12	3.50	148	-42
+12	13	7.30	-	down
+13	14	3.60	263	-55
+14	15	8.60	215	-63
+15	16	11.20	178	-55
+16	17	4.70	087	-17
+17	18	4.70	333	00
+18	19	9.10	350	-05
+19	20	5.00	303	-04
+20	21	11.40	-	down	
+
+	
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+;2	0	1	5	3	
+;3	0	1	5	2
+;4	0	1	5	2
+;5	1.1	1.1	5	0
+;6	0	5	30	2
+;8	1	0	4	8
+;9	2	2	5	0
+;2	1	0	5	3	
+;10	0.2	0.2	0.5	5	
+;11b	1.5	0	1	1.5
+;12	0.5	0.5	1.5	9
+;13	1	1	9	1.5
+;16	3	1	2	2	
+;17	2	0	4	0.5
+;18	0.5	0	0.3	0.3
+;19	0.5	0	3	3	
+;20	0	0.5	0	12	
+;21	2.5	2.5	12	0	
+*end povodni_moz2
+; NOTES
+;station 2 is PSS 
+; station 5 is a PSS
+; station 8 is a PSS
+; station 10 is a knot
+; station 11 is a PSS
+; station 14/15  is a knot
+; station 16 is a PSS
+
+; ### SURVEY TIE IN ###
+*equate povodni_moz2.1 povodni_moz.10 ; actually povodni moz is the knot, not the maillon

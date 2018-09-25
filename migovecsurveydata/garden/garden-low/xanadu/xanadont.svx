@@ -1,0 +1,47 @@
+;####Xanadont####:
+; ###Connects Big Rock to Cuckoos Nest (traverse)###
+*date 2013.7.14 ; Expedition Za Mig Na Kuk 
+
+;Book + Tape: Rhys Tyers
+;Instruments: Dave Kirkpatrick
+
+;Data entered by Oliver Myerscough and Rhys Tyers on 29/7/2013
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin xanadont 
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 1 pages
+;p1/1
+
+*flags duplicate
+2	1	10.50	158	+11
+3	2	7.48	231	+9
+4	3	3.80	223	-21
+5	4	3.30	248	-13
+*flags not duplicate
+
+6	5	2.30	218	+9
+7	6	9.51	167	+5
+8	7	6.64	225	+33
+9	8	5.50	231	-16
+10	9	4.15	144	-9
+11	10	6.18	040	+73
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end xanadont 
+; Station 1 is pss
+; Station 5 is pss
+; Station 7 is pss
+; Station 10 is pss
+; Station 11 is euphrates station 1
+; Station 9 is a dodgy climb
+
+; ### SURVEY TIE IN ###
+*equate xanadont.11 euphrates.1 

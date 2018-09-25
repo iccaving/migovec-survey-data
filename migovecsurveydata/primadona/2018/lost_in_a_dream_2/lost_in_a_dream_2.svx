@@ -1,0 +1,31 @@
+;####Lost In A Dream####:
+;###continuation of abandoned streamway off Pivnica###
+*date 2018.07.20 ; Expedition Klic Globin
+
+;Disto: Jack Halliday
+;PDA: Rhys Tyers
+;Data entered by Rhys Tyers on 28/07/2018
+
+*begin lost_in_a_dream_2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+2	1	2.26	163.3	-28.7
+2	3	6.32	007.9	+39.4
+3	4	3.79	027.7	+38.2
+
+;NOTES 
+;STN1 is Ave Maria STN1
+;STN4 is Lost In A Dream STN1
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end lost_in_a_dream_2
+
+*equate lost_in_a_dream.1 lost_in_a_dream_2.4
+*equate ave_maria.1 lost_in_a_dream_2.1
+

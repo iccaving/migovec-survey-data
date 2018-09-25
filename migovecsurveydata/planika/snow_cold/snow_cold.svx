@@ -1,0 +1,26 @@
+;Snow_cold : snow-cold chambers in the lower Planika Cave
+
+;Date: 5/8/07
+*date 2007.8.5
+;Instruments / Book: Jarvist Frost, Ben Banfield & Jana Carga
+
+;Data entered by Jarvist Frost 5/8/07
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin snow_cold
+1	2	2.50	116	-18	;	1 0 0 1.5	; .1 is PSS 18 of Planika survey
+2	3	4.09	114	-33	;	0.5 0 0.5 1
+3	4	5.03	-	down	;	0.5 0 0.5 n/a
+4	5	4.00	285	+20	; 	1 1.5 n/a 0 ; made up tape length dogleg to alcove under pitch 
+4	6	4.45	008	+39	;	0.5 0.5 1 0.5
+6	7	6.24	286	-19	;	2 0 0 2		; PSS pencil mark on nodule + paper note nearby in crack
+8	7	4.30	219	-17	;	4 0 1.5 1	; 7 is bolt across the snow slope
+9	7	6.50	162	-30	;	1.5 2 1 0	; 8 was back across snow slope to ice alcove; 9 was top of snow slope
+7	10	11.39	183	-56	;	.10 is end of snow slope, kink in tape so not BCRA 4b
+7	11	20.00	183	-56	;	Guess to end of last chamber. The pushing front.
+
+*end snow_cold
+
+*equate planika.18 snow_cold.1

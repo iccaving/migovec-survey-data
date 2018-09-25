@@ -1,0 +1,28 @@
+;Ubend squeeze extensions
+; Detonator Revenge: Located a det near the blast
+
+;  This has been renamed "Big Fat Momma" after the Kinks' Taxman, but I don't want to contradict the original notes. Jarv 9-8-07
+
+;Date: 3/8/07
+;Instruments / Book: Alvin Weng Meng Chow & Sandeep Mavadia
+
+;Data entered by Jarvist Frost 3/8/07
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin ubend_det
+1	2	1.57	086	+06	;	0.2 0.05 0.5 0.0
+1	3	1.26	194	-11	;	.3 is pss: on ledge above window, paper under cairn
+2	4	0.66	062	+00	;	0.2 0.0 0.0 0.4
+4	5	2.19	065	+09	;	0.3 0.0 0.3 (down through rift)
+5	6	3.91	052	+00	;	0.8 0.0 1.0 (down through rift)
+6	7	13.20	-	up	; up pitch to y-hang knot (~20cm below bolts)
+
+; station six is alvin horizontally on rope out of rift
+
+;3	madeup	6	194	-55	; made up extensions beyond too tight squeeze
+
+*end ubend_det
+
+*equate ubend3.8 ubend_det.7

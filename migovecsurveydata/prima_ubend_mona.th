@@ -1,0 +1,28 @@
+encoding  utf-8
+survey sistem_prima -title "Caves of the Western Migovec Plateau"
+
+input "primadona/primadona.th"
+input "s_ubend/s_ubend.th"
+input "monatip/s_monatip.th"
+
+#input "others/gondolin/gondolin.th"
+#input "planika/planika/planika.th"
+
+#ubend prima connection
+equate 5@drainpipe.s_ubend  8@drugi.primadona
+
+#monatip prima connection
+equate 1@therock.monatip 8@prima1.primadona
+equate 25@therock.monatip 24@prima2.primadona
+equate BV6@brez_volje.primadona 2@doubletime.monatip
+
+ #join s2_l2@drugi.primadona:0 s1_l2@bathtub.s_ubend:end
+ join s2_l1@drugi.primadona:end s1_l1@bathtub.s_ubend:0
+ join s5_l1@prima1.primadona:end s1_l1@therock.monatip:end
+join s5_l2@prima1.primadona:end s1_l2@therock.monatip:0
+
+join s1_l1a@prima2.primadona:0 s3_l1@therock.monatip:end
+join s1_l2@prima2.primadona:end s3_l2@therock.monatip:0
+
+endsurvey
+

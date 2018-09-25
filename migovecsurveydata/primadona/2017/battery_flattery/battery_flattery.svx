@@ -1,0 +1,38 @@
+;####Battery Flattery####:
+;###Continuation of Fenestrator###
+*date 2017.07.20 ; Expedition Cez Rob
+
+;Tape + Instruments: Rhys Tyers
+;Book: Benjamin Honan
+;Also present: Clare Tan
+
+;Data entered by Tanguy Racine on 21/07/2017
+
+*begin battery_flattery
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;PAGE 1/1
+2	1	1.44	248	+43
+3	2	3.00	260	+00
+4	3	7.85	315	+23
+5	4	11.04	322	-07
+6	5	5.06	248	+00
+7	6	5.38	187	+05
+8	7	7.50	297	+19
+9	8	2.12	210	-26
+10	1	17.30	-	DOWN
+11	10	2.73	305	-11
+
+
+;NOTES
+;STN 1 is PSS 
+;STN 5 is crawl bypass over real route
+;STN 10 is top of the pitch
+;STN 11 is STN1 of fenestrator
+
+*end battery_flattery
+
+*equate fenestrator.1 battery_flattery.11

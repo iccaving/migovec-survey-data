@@ -1,0 +1,51 @@
+;####ROARING FLOOR TEASE####:
+; ###passage and rift off the muddy window off happy monday###
+*date 2010.7.25 ; Expedition Vodna Sled 2010
+
+;Book + Tape: James Kirk"padding"patrick
+;Instruments: DG
+
+;Data entered by James K on 2010.7.25
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin roaring
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+
+;Data is on 2 pages
+;p1/2
+;#### DATA ####
+1	2	3.35	127	9
+1	3	2.51	356	-30
+3	4	6.95	304	-40
+4	5	7.06	322	-44
+5	6	2.17	030	+07
+
+; 1 is pss cairn
+; 2 is end of rift 
+;4  is top of rope
+;7 is muddy wimdow
+;8 is happpy monday pss
+
+;p 2/2
+;### DATA ###
+6	7	4.29 	293	64
+7	8	13.15	282	-29
+
+; LRUD 
+;1 1 1 1 1
+;2 SCROT
+;3 SCROT
+;4 0 0.5 5	2
+;5 SCROT
+;6 SCROT
+;7 0	1.5	85	5	
+;8 	
+
+*end roaring
+
+; ### SURVEY TIE IN ###
+*equate roaring.8 happy_monday.0

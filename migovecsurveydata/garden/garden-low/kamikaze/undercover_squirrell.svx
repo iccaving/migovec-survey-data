@@ -1,0 +1,56 @@
+;#### Undercover Squirrell [sic] ####:
+; ###  ###
+*date 2012.08.02 ; Expedition Sledi Vetra
+
+;Book + Tape: Nicolas Kral
+;Instruments: Jonathan Paul Hardman
+
+;Data entered by Clewin Griffith on 2012.08.03
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin undercover_squirrell
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	4.10	014	+2
+3	2	4.13	-	up
+4	3	2.49	325	+10
+5	4	4.15	350	+20
+6	5	5.27	325	+20
+7	6	13.90	345	+18
+8	7	9.60	010	+27
+9	8	8.43	338	+13
+10	9	12.23	356	+20
+11	10	10.64	355	+40
+12	11	8.94	015	+23
+
+;NOTES
+; stn 1 is pss cairn in undercover_squirrell
+; stn 12 in undercover squirrell is same as pss 13 in peepshow
+; Above pss 1 there is a dodgy climb / small pitch up of about 4m with a tight pitchead, medium draft and small chamber on the other side of the pitchead
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	1	1	3	0
+2	1	2	2	4
+3	0.5	0.5	4	0
+4	1	0	1	0
+5	1	1	1	1
+6	1	1	2	1
+7	1	1	1	1
+8	0.5	1	1	0
+9	1	1	0.5	0
+10	1	1.5	0	0.5
+11	1.5	0	2	1
+12	2	1	2	1
+
+
+*end undercover_squirrell
+
+; ### SURVEY TIE IN ###
+*equate peepshow.13 undercover_squirrell.12
+

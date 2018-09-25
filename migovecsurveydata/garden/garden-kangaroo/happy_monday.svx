@@ -1,0 +1,52 @@
+;Happy Monday:
+; Below walk the line b
+*date 2009.8.10 ; 10/08/09
+ 
+;Book + Tape: Jana Carga
+;Instruments: Dan Greenwald
+
+;Data entered by James Kirkpadding 11/8/09
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+*begin happy_monday
+;Data is on 1 page, 
+1	2	30.80	-	up	; 
+2	3	4.10	-	up	;	
+3	4	27.00	5	+70	;
+4	5	20.40	-	up	;
+5	6	3.44	340	-24	;	0.	1.5	15.	75	
+;.1 is the bottom of the rope
+
+;Survey trip 17-8-09
+;JMF: Book & Tape DG: Instruments
+;Installing PSS Zero on the large boulder (cairn pss) in centre of 
+;Happy Monday, as .1 is getting kicked over...
+
+1	0	7.16	291	+27
+;.0 - - 80+	3
+;.1 - - 80+ 0
+
+;made up to get somewhere to place LRUD data on
+*flags splay
+0	wall	7.16	291	+27
+0	mudhole	12.16	111	+27
+
+*data passage station left right up down ignoreall
+;crossing bottom of pitch along the line from far corner, past big boulder (PSS 0), to rope, to mud hole
+wall	5	5	70	2
+0	10	10	60	3
+1	5	5	55	0
+mudhole	2	2	50	0
+
+*data passage station left right up down ignoreall
+3	5	5	55	20
+4	5	5	10	30
+5	2	2	0	40
+
+*end happy_monday
+
+
+
+*equate happy_monday.6 walk_the_line_b.1

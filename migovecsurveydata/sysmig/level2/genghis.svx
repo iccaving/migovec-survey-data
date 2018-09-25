@@ -1,0 +1,25 @@
+;Genghis Khan't 
+;Date: 2/8/99
+;Instruments: J Evans
+;Book: J Evetts
+
+;Data entered by C Griffith on 3/8/99
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate migcon.4 genghis.7
+
+*begin genghis
+*date 1999.08.02
+
+1	2	13.95	004	56	;stn1 is pss cairn
+2	3	6.34	036	39
+3	4	2.58	339	-29
+4	5	14.5	-	down	;lefthand bolt
+5	6	5.2	001	11
+6	7	5.5	117	0
+	
+*end genghis
+
+

@@ -1,0 +1,36 @@
+;####Jericho####:
+;###Rift off Sic Semper Tyrannis###
+*date 2014.7.24 ; Expedition Z Miga Na Kuk
+
+;Instruments: David Kirkpatrick
+;Book: Rhys Tyers
+
+;Data entered by Rhys Tyers / David Kirkpatrick on 2014.7.26
+
+*begin jericho
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	23.20	148	+59
+3	2	1.53	125	+06
+4	3	9.15	096	+12
+5	4	3.10	354	+43
+6	5	11.69	156	+22
+7	6	4.31	152	-02
+8	7	5.85	140	+27
+9	8	5.09	108	+27
+10	9	11.25	154	+14
+11	10	5.70	142	+33
+
+;NOTES 
+;stn 1 is pss
+;stn 11 is sic semper tyrannis stn 17
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end jericho
+
+*equate jericho.11 sicsempertyrannis.17

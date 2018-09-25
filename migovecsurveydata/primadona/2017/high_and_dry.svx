@@ -1,0 +1,39 @@
+;High and Dry
+;Continuation of Dogfish
+
+;Date: 26/07/17
+;Instruments: William French
+;Book: Tanguy Racine
+;Tape: James Wilson
+
+;Data entered by Tanguy Racine 27/07/17
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+;data on 1 page
+*begin high_and_dry
+;PAGE 1/1
+2	1	2.00	232	+04
+2	3	6.20	-	UP
+3	4	4.94	-	UP
+4	5	2.33	077	-09
+5	6	8.68	099	+55
+6	7	4.58	152	+11
+7	8	15.09	128	+69
+8	9	6.38	073	+04
+9	10	3.55	-	UP
+10	11	2.70	044	+18
+11	12	1.24	237	+11
+
+
+;NOTES
+;STN 1 is PSS
+;STN 7 is PSS in chamber
+;STN 12 is Dogfish STN 1
+
+
+
+*end high_and_dry
+
+*equate high_and_dry.12 dogfish.1

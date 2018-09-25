@@ -1,0 +1,51 @@
+;pico pot
+
+;Date: 28/7/00
+;Instruments: Pete Jurd
+;Book: Jan Evetts
+
+;Data entered by CG on 28/7/00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+
+*begin pico
+
+1	2	17.20	-	up	;stn 1 is bottom of rope at base of second pitch after pico pot, stn 2 is bolt at top of this pitch (right hand side wall)
+2	3	6.60	344	1
+3	4	7.40	340	43
+4	5	4.70	011	18
+5	6	4.80	-	up
+6	7	6.00	018	48
+7	8	17.65	358	-01	;stn 8 is top of boulder at bottom of rope at base of pico.
+8	9	17.50	-	up
+9	10	41.20	-	up	;stn 10 is first rebelay bolt
+10	11	6.40	174	47
+11	12	1.80	160	9	
+12	13	2.30	089	12	;stn 13 is large cairn pss at top of pico
+
+;JMF 2008-06-04
+;Just some general passage forming LRUD data to give a sense of Pico size
+;c.f. pico to kangaroo01, the orig pico rig went straight over the edge without traversing to the left (around boulder) nor back along pitch to right
+*data passage station left right up down ignoreall
+13	3.0	0.5	12.0	0.5 PSS cairn
+12	2.0	1.0	12.0	0.5 Over the top of the boulder
+11	2.0	0.2	13.0	1.0 Off the side of the wall, dangling above pitch...
+10	5.0	10.0	10.0	40   Out on the main hang now...
+
+*data passage station left right up down ignoreall
+;Passage vertically down the pitch...
+10	4.0	6.0	12.0	0.5
+9	8.0	4.0	10.0	0.5
+8	3.0	3.0	12.0	0.5
+
+*data passage  station left right up down ignoreall
+;Across boulder strewn floor of pico
+7	6.0	8.0	15.0	1.0
+8	3.0	3.0	65.0	1.0
+
+
+*end pico
+
+*equate urinal2.1 pico.13

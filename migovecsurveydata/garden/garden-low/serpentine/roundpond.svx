@@ -1,0 +1,37 @@
+;####Round Pond####:
+; ###Pitches below serpentine###
+*date 2011.7.21 ; Expedition Izkubljaeni Raj
+
+;Book + Tape: JMF
+;Instruments: Jan Evetts
+
+;Data entered by DG on 2011.7.27
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin roundpond
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	0	3.23	035	-40
+2	1	2.85	036	+03
+2	3	4.66	159	+11
+4	3	3.09	128	-09
+5	4	3.18	184	-02
+5	2	1.51	166	-56
+6	2	5.55	173	-24
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end roundpond
+; NOTES
+;Station 0 is pss on ledge
+;Station 1 is bolt for small pitch
+;Station 3 is rock in oxbow
+;Station 6 is itwillrain.1
+; ### SURVEY TIE IN ###
+*equate roundpond.6 itwillrain.1

@@ -1,0 +1,45 @@
+;####Upside_Down_Chamber###
+; Big Chamber at bottom colony with dead (now squashed) bat.
+*date 2016.07.23 ; Expedition Neprehojeni Poti
+
+;Tape + Instruments: Arun Paul
+;Book: Rhys Tyers
+
+;Data entered by Miriam North-Ridao / Will Scott on 2016.08.5
+
+*begin Upside_Down_Chamber
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	12.00	322	+51
+2	3	12.44	334	+27
+3	4	3.82	320	+43
+4	5	4.20	274	+14
+5	6	13.00	345	+32
+5	7	25.42	154	-02
+7	8	4.83	170	+65
+8	9	15.60	131	+39
+9	10	25.30	144	+80
+10	11	2.50	145	+34
+;NOTE
+; Stn 1 is PSS by drippy pitch lead.
+; Stn 3 is dead bat
+; Stn 5 is PSS, bolt at top of dead climb directly below is tight sharp rift - lead
+; Stn 11 is cairn at top of Blue Danube and end of Colony
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+*data passage station left right up down ignoreall
+1	1	0	12	1.5
+2	11	4	30	0
+3	10	6	30	0
+4	24	7	30	2
+5	5	11	18	0.5
+7	8	10.5	30	14
+8	8.5	6	30	30
+9	5	30	30	30
+10	2	1	2	17.5
+
+*end Upside_Down_Chamber
+*equate Upside_down_Chamber.11 Colony.1

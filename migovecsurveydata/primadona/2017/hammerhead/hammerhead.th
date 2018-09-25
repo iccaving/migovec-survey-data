@@ -1,0 +1,43 @@
+survey hammerhead
+	#Expedition Neprehojene Poti
+	#Draughting rift off Upside Down chamber
+
+	input hammerhead-p.th2
+
+	map m1p -projection plan
+		hammerhead-p1
+	endmap
+	
+
+	centreline
+		date 2017.07.14
+		explo-team "Jarvist Frost"
+		explo-team "James Wilson"
+		explo-team "Clare Tan"
+		explo-team "James Hooper"
+
+		team "Jarvist Frost" insts tape
+		team "Clare Tan" insts tape
+		
+		#Data on 1 page
+#Page 1/1
+2	1	13.80	260	+12
+2	3	6.50	097	-24
+3	4	7.01	018	+27
+4	5	5.91	080	+56
+5	6	3.84	338	+37
+6	7	10.65	063	+02
+7	8	9.25	-	UP
+8	9	1.67	033	+23
+
+#STN1 is pss cairn
+#STN2 is pss cairn
+#STN3 is pss cairn
+#STN6 is tip of rock in chamber, natural rig
+#STN8 is Y-hang bolt
+#STN9 is Déja Vu stn 13
+#Very cold draught into the cave
+
+
+	endcentreline
+endsurvey

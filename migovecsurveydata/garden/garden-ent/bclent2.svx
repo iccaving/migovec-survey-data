@@ -1,0 +1,36 @@
+;bclent, Bens Crap Lead BCL (gardeners world) entrance re-surveying trip (this time its correct)
+
+;Date: 3/8/00
+;Instruments: Mark Evans
+;Book: Ben Ogborne
+
+;Data entered by Ben on 3/8/00
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin bclent2
+
+;* fix	\bclent2.0	405115.90	123992.25	1785.49
+
+; fix position done using surface survey from M18 called surface2
+
+0	1	6.20	250	-29	;station 0 is pss half bolt hole at entrance to gardeners world
+2	1	8.43	067	+33
+2	3	3.73	252	-12
+3	4	2.99	297	-15
+4	5	5.25	310	+02
+5	6	2.21	-	down
+7	6	2.73	005	+40
+7	8	6.07	-	down
+8	9	2.47	248	-27
+9	10	1.87	196	+33
+10	11	4.15	283	-10
+11	12	4.95	-	down
+12	13	6.83	276	+03
+13	14	4.40	-	down
+14	15	6.55	305	-21	;station 15 is pss at top of gardeners world or station 1 of bclent
+
+*end bclent2
+
+*entrance bclent2.0

@@ -1,0 +1,34 @@
+;####Deeper Than Most####:
+;###below Tiger Tiger###
+*date 2018.07.26 ; Expedition Klic Globin
+
+;Disto: Ben Richards
+;Book: Jack Hare
+;Data entered by Alex Seaton on 27/07/2018
+
+*begin deeper_than_most
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+1	2	6.80	314	-61
+2	3	11.10	236	-71
+; Measured by averaging timings of several dropped rocks
+;3	4	78.48	-	DOWN   
+
+; Guesstimate
+;3	5	50.0	-	UP
+
+;NOTES 
+;STN1 is pitchhead bolt
+;STN3 is bolt over edge of balcony
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end deeper_than_most
+
+*equate deeper_than_most.1 tiger_tiger.1
+

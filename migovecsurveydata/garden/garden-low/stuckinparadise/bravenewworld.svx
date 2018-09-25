@@ -1,0 +1,50 @@
+;####Brave New World####:
+; ###Continuation of Salvation###
+*date 2012.7.21 ; Expedition Sledi Vetra
+
+;Tape: Rhys Tyers
+;Book + Instruments: James 'Tetley' Hooper
+
+;Data entered by Jarvist Frost / Rhys / Tetley on 2012.7.24
+
+*begin bravenewworld
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+1	2	3.53	112	-12
+3	2	2.29	313	-36
+3	4	1.49	238	+17
+4	5	4.15	090	+43
+6	5	2.38	301	-05
+7	6	9.25	307	-27
+8	7	5.65	313	-30
+9	8	5.50	264	-22
+10	9	2.60	268	-23
+11	10	11.23	253	-19
+; Left blank legs on end of page 1 intentionally
+;Page 2/2
+13	12	2.35	143	+02
+14	13	6.00	160	-04
+15	14	4.98	139	-08
+16	15	7.07	175	-25
+17	16	9.60	060	+20
+17	18	7.20	240	-13
+19	18	11.03	100	+48
+11	19	3.15	207	+18
+
+;NOTES 
+;Flip of page 1
+;Stn.1 is Salvation.22
+;Stn.6,11,12 are PSS
+
+;Flip of page 2
+;Stn 16 is a PSS
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end bravenewworld
+
+*equate bravenewworld.1 salvation.22

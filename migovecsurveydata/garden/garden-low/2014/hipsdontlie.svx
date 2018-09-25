@@ -1,0 +1,33 @@
+;####Hips Don't Lie####:
+;###Crawl off Cuckoo's Nest###
+*date 2014.8.07 ; Expedition Z Miga Na Kuk
+
+;Instruments: Sarah Gian
+;Book: Rhys Tyers
+
+;Data entered by Rhys Tyers / Sarah Gian on 2014.8.9
+
+*begin hipsdontlie
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+2	1	3.27	121	-03
+4	3	1.50	285	+06
+5	4	1.63	003	+41
+6	5	1.73	080	+26
+7	6	6.30	330	+04
+8	7	3.83	011	-09
+9	8	1.07	060	-29
+;NOTES 
+;stn 1 is pss
+;stn 3 is cuckoos nest stn 16
+;stn 9 is stn 2
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end hipsdontlie
+
+*equate hipsdontlie.9 hipsdontlie.2
+*equate hipsdontlie.3 cuckoos_nest.16

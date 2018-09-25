@@ -1,0 +1,47 @@
+;####Grace 2####:
+; ###continuation of amazing grace passage beyond throne room - kamikaze extensions###
+*date 2011.7.29 ; Expedition Izkubljaeni Raj
+
+;Tape: Clare Tan
+;Book + Instruments: James Hooper
+
+;Data entered by Clare Tan on 2011.8.03
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin grace2
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+1	2	9.20	283	-05
+3	2	3.89	160	+28
+4	3	4.35	179	-14
+4	5	12.10	011	+31
+5	6	14.79	357	+42
+7	6	13.88	191	-34
+7	8	14.58	348	+31
+8	9	14.60	351	+22
+10	5	13.33	090	-21
+10	11	11.88	303	-03
+12	11	9.19	151	-44
+;Page 2/2
+12	13	9.86	314	+36
+14	13	5.32	149	-20
+1	15	9.50	062	+45
+
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end grace2
+; NOTES
+;Station 1 is a PSS
+;Station 5 is a PSS at junction
+;Station 7 and 8 are PSS cairns
+;Station 14 is a PSS and is the same as amazinggrace.1
+; ### SURVEY TIE IN ###
+*equate amazinggrace.1 grace2.14

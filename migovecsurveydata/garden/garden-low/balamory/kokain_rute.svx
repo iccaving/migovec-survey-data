@@ -1,0 +1,50 @@
+;#### Kokain Rute ####:
+; ### Extensions beyond Balamory ###
+*date 2013.08.01 ; Expedition Sledi Vetra
+
+;Book: Grega Maffi
+;Instruments: Erik Poncina
+
+;Data entered by Clare Tan on 2013.08.03
+
+*begin kokain_rute
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+
+1	2	10	257	-17
+2	3	4.7	322	-27
+3	4	11	357	-29
+4	5	11.5	025	-08
+5	6	8.2	058	-31
+6	7	3.6	139	-37
+7	8	7.7	098	+38
+8	9	4	032	+29
+9	10	4.7	357	+04
+10	11	6	356	-23
+11	11b	3.5	51	00
+
+;Page 2/2
+
+11b 	12	7.5	54	+25
+12	13	5.5	25	+62
+13	14	2	50	+18
+14	15	5.7	8	+43
+15	16	5.5	334	+30
+16	17	3.2	306	+26
+17	18	7.6	9	-47
+18	19	2	-	down
+;NOTES 
+;stn 19 is third thoughts pss 1
+;stn 1 and 7 are PSS
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+*end kokain_rute
+
+*equate kokain_rute.19 thirdthoughts.1
+
+
+

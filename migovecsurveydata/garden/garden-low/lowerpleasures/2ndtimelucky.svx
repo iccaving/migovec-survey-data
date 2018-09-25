@@ -1,0 +1,45 @@
+;####2nd Time Lucky####:
+; ###pitch below lower pleasures - friendship gallery dig###
+*date 2011.08.05 ; Expedition Izkubljaeni Raj
+
+;Instruments: Ariadne Whitby
+;Book + Tape: Mike Foley
+
+;Data entered by Clare Tan on 2011.8.07
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin 2ndtimelucky
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+;Page 1/1
+1	2	3.57	196	+5
+2	3	1.87	290	+10
+3	4	1.35	190	+5
+4	5	6.0	310	+10
+5	6	3.33	270	+12
+6	7	24.65	-	up
+7	8	3.48	340	+49
+8	9	4.61	320	+15
+9	10	0.4	150	-5
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end 2ndtimelucky
+; NOTES
+;1 is PSS
+;2 is ??
+;3 is ??
+;4 is rock
+;5 is crystals end of drop
+;6 is bottom of pitch
+;7 is top of pitch
+;8 is end of 
+;9 is wall
+;10 is lowerpleasures.1
+; ### SURVEY TIE IN ###
+*equate 2ndtimelucky.10 lowerpleasures.1

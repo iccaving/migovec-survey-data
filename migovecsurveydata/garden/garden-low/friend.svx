@@ -1,0 +1,60 @@
+;bottom half of zimmer pitch and lots of horizontal passage (general trend south)
+;Date: 9/08/01 
+;Instruments: Tomaz Tivadar
+;Book: James Hooper
+
+;Data entered by J Hooper on 10/8/01
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+;*equate friend.1 	zimmer.3
+;THIS EQUATE MOVED TO HIGHER LEVEL FILE, JARV 31-7-08
+
+*begin friend
+
+1	2	2.68	188	23	;stn 1 is zimmer 3 (mark on boulder on ledge)
+3	2	5.55	080	70	;stn2 is bolt
+3	3b	18.50	-	down	;stn 3 is bolt, stn 3b is 0.5 metres above bottom of rope
+
+4	5	14.85	331	24	;stn 4 is pss cairn at Prima Junction
+6	5	10.97	162	-02
+6	7	9.10	309	01	;this was originally 109 in book (needs checking as of 10.8.01)
+8	7	24.45	162.5	-03.5
+8	9	7.25	010.5	10.5	;stn 9 is pss on wall mark with carbide S
+10	9	11.95	187	-11
+10	11	8.08	095	16
+12	11	12.14	335	10.5
+12	13	12.94	339.5	-09	;stn 12 is pss cairn
+14	13	7.77 	135.5	-11
+14	15	18.24	312	03
+16	15	19.44	154	03
+16	17	7.17	307.5	-18	;stn 17 is pss cairn in chamber
+18	17	9.42	042	19
+17	3b	6.30	105	-12
+
+19	20	8.80	123	10	;stn 19 is pss cairn by dig
+21	20	14.12	223	12
+21	22	6.30	027	-16	;stn 22 is pss cairn at junction
+
+24	23	9.05	129	01	;stn 23 is pss (small) carbide mark by big pitch
+25	24	3.80	157	-22
+25	26	7.07	329	05
+27	26	9.20	190	-17
+27	28	8.93	318.5	-17
+29	28	6.92	087.5	06
+29	30	4.38	236	28
+30	22	2.74	281.5	05
+
+31	22	10.75	158	12
+31	32	6.73	335	46.5
+33	32	10.55	186	-17
+33	34	16.12	060	15	;stn 34 is pss carbide S
+35	34	13.77	215	-02
+35	36	12.14	053	-03
+37	36	3.00	218	-40
+37	4	14.70	053	24	
+
+*end friend
+
+

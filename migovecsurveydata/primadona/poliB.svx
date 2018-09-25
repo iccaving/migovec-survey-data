@@ -1,0 +1,19 @@
+;Surface20010729
+;nova jama "Berti"
+;Date: 29/7/2001
+;Instruments: Tivadar Tomaz
+;Book: Jelincic Martin
+
+;Data entered by Tivadar on 29.7.2001
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino
+
+;*fix	poliB2.1	404783	124006	1871.75 ;  ne vem kje sem dobil koordinate gledal sem po specialki
+; zgefajo kar v redu visina pa nekako ne gre ker sem videl tudi pri izracunu tock v poliB.pos da visina ne klapa sem jo spremenil
+; na visino ki je zapisana v M17.svx kar sem preveril na specialki in bi se kar strinjal 
+
+;*fix poliB2.1	5404783	5124006	1850
+
+*include poliB1
+*include poliB2

@@ -1,0 +1,57 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;Galatica Main Chamber, Lower Section (Smaller)
+
+;Date: 16 August 97
+;Instruments: Shed
+;Book: Alva
+
+;Data entered by Shed on 20 August 1997
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate galact4.11 galact2.4
+
+*begin galact4
+
+;Tape was to long by 5cm ??
+*calibrate tape 0.05
+
+1	2	11.61	310	-9	;1 Is a PSS
+3	2	5.92	013	-14
+3	4	15.91	204	-2
+5	4	8.55	323	+47
+6	5	10.85	000	+23	;6 is a PSS
+6	7	18.91	033	+22
+8	7	4.77	224	-31
+8	9	7.29	034	+11
+9	1	5.06	334	-1
+1	10	1.50	080	0
+10	11	48.00	-	up
+
+;Jarv 2009-06-05
+;Shed says (email to jarvist@gmail.com):
+;Yes I do remember it. We surveyed round the wall. As far as height goes
+;the whole chamber is massive to the ceiling was well up above the rock
+;bridge but I could not say how far.
+
+;Rock bridge about 28m above bottom (station 11 is rebelay on pitch - they dropped straight down)
+;Based on this I think its probably fair to have the LRUD data as a simple 35m high line around the edge of the chamber
+*data passage station left right up down ignoreall
+1 0 0 35 0
+2 0 0 35 0
+3 0 0 35 0
+4 0 0 35 0
+5 0 0 35 0
+6 0 0 35 0
+7 0 0 35 0
+8 0 0 35 0
+9 0 0 35 0
+10 0 0 35 0
+1 0 0 35 0
+
+*end galact4
+

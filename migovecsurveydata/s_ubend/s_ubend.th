@@ -1,0 +1,30 @@
+encoding  utf-8
+survey s_ubend -title "U-bend 571"
+
+  #The includes
+  input "ubend/ubend.th"
+  input "ubend2/ubend2.th"
+  input "ubend3/ubend3.th"
+  input "ubend_det/det.th"
+  input "ubend_drainpipe/drainpipe.th"
+  input "ubend_bathtub/bathtub.th"
+  
+  #The equates
+  equate 1@ubend2  6@ubend
+  equate 1@ubend 1@ubend3
+  equate 7@det 8@ubend3
+  
+  equate 5@bathtub 3@det
+  
+  equate 1@bathtub 6@drainpipe
+  
+  #The joins
+  join ubendp_1@ubend ubend3p_1@ubend3
+  join ubend3p_2@ubend3 detp_1@det
+  
+  join detp_1@det bathtubp_1@bathtub
+  join bathtubp_1@bathtub drainpipep_1@drainpipe
+
+
+endsurvey
+

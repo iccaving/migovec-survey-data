@@ -1,0 +1,52 @@
+;####TTT resurvey####:
+;###Resurvey project of TT branch###
+*date 2017.07.14 ; Expedition Cez Rob
+
+;Tape + Instruments: James Wilson
+;Book: Jack Hare
+
+;Data entered by Tanguy Racine on 17/07/2017
+
+*begin testing_the_waters
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+*flags duplicate
+1	2	6.51	059	12
+2	3	3.13	346	15
+3	4	4.42	332	-27
+4	5	1.05	033	-31
+5	6	2.89	045	-15
+6	7	2.45	025	-05
+7	8	4.82	119	+05
+8	9	1.60	082	-42
+9	10	1.49	082	-50
+10	11	5.75	022	-07
+11	12	8.91	035	+50
+12	13	2.91	081	+12
+13	14	10.42	043	+42
+
+;Page 2/2
+14	15	1.67	099	+25
+15	16	2.25	030	+20
+16	17	2.90	104	+11
+17	18	2.05	-	UP
+18	19	1.90	-	UP
+19	20	7.88	232	+16
+*flags not duplicate
+
+;NOTES 
+;STN1 is PSS
+;STN2 is Candybar cairn
+;STN8 is PSS JH/JE stn 24 19/7/00
+;STN14 is cairn into boulder choke
+;STN20 is PSS Tetley+Izi Alkatraz STN 7 08/08/08
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end testing_the_waters
+*equate testing_the_waters.8 prima2.24
+*equate testing_the_waters.20 alkatraz.7

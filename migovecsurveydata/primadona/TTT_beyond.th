@@ -1,0 +1,38 @@
+encoding  utf-8
+survey below_TTT -title "Below TTT and the deep leads"
+  input 2000/ttt/ttt.th
+    input 2000/zima00/zima00.th
+    
+    equate 1@ttt 22@zima00
+    
+    input "2002/ajdovscina/ajdovscina.th"
+    input "2002/spodnji/spodnji.th"
+    input "2002/milanova/milanova.th"
+    
+    equate 4@ajdovscina 13@zima00
+    equate 1@spodnji 1@zima00
+    equate 1@milanova 15@spodnji
+    
+     join s2_l1@ajdovscina:0 s3_l1@zima00:end
+    join s2_l2@ajdovscina:end s3_l2@zima00:0
+    join s1_l1@ajdovscina:0 s2_l1@zima00:end 
+    join s1_l2@ajdovscina:end s2_l2@zima00:0 
+    join spodnjip_1@spodnji zima00p_6@zima00
+    join spodnjip_4@spodnji milanovap_1@milanova
+    
+     input "2016/wac/wac.th"
+     input "2016/dejavu/dejavu.th"
+     
+    input "2017/buckwheat/buckwheat.th"
+     input "2017/TTTr/TTTr.th"
+     
+     equate 7@buckwheat 1@TTTr
+      equate 4@buckwheat 1@wac
+      equate 2@ajdovscina 9@TTTr
+      equate 47@TTTr 14@ttt
+      
+      equate 18@TTTr 1@dejavu
+      
+endsurvey
+
+

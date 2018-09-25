@@ -1,0 +1,53 @@
+encoding  utf-8
+survey the_stile
+  input "the_stilep.th2"
+  
+  map mthe_stilep_1 -projection plan
+      the_stilep_1
+  endmap
+  
+  map mthe_stilep_2 -projection plan
+      the_stilep_2
+  endmap
+  
+  join the_stilep_1 the_stilep_2
+  
+  centreline
+    date 2016.07.20
+    explo-team "Tanguy Racine"
+    explo-team "Arun Paul"
+    team "Arun Paul" insts
+    team "Tanguy Racine" notes
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+    #Data on 2 pages
+    #Page 1/2
+    1	2	7.99	071	-27
+    2	3	4.17	113	-16
+    3	4	4.27	010	-01
+    4	5	3.97	340	+01
+    5	6	3.95	051	+04
+    6	7	4.66	334	-04
+    7	8	3.66	319	0
+    8	9	3.68	013	-07
+    9	10	2.79	067	-03
+    10	11	1.92	300	-08
+    11	12	3.36	062	-35
+    12	13	5.67	355	-42
+    13	14	8.08	244	-25
+    #Page 2/2
+    14	15	4.30	231	-17
+    15	16	1.78	282	-45
+    16	17	1.13	284	+21
+    
+    #Stn 1 is Cattle_Grid Stn 23
+    #Stn 10 is PSS
+    #Stn 17 is Cattle_Grid 15
+   
+  endcentreline
+  
+endsurvey
+

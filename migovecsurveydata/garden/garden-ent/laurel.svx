@@ -1,0 +1,50 @@
+;Laurel, Laurel pitch, following pitch and rift in Gardener's World (aka BCL)
+
+;Date: 19/7/00
+*date 2000.7.19
+;Instruments: Thomas Ayles
+;Book: Pete Jurd
+
+;Data entered by Thomas Ayles on 19/7/00
+
+*equate bclent2.15	laurel.18
+
+*begin laurel
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+1	2	11.27	079	-21	;stn 1 is pss cairn at end of
+3	2	8.65	233	+10	;sandy passage
+3	4	5.20	081	+47
+5	4	8.34	209	-22
+5	6	5.40	016	-14
+6	7	8.36	-	up	;stn 7 is bolt at top of 9m hang
+7	8	5.63	232	0
+8	9	3.30	106	+60
+9	10	4.20	358	+31
+11	10	5.32	097	-9
+11	12	5.30	-	up
+13	12	7.24	184	-32
+13	14	28.2	-	up	;stn 14 is bolt at top of laurel	
+15	14	1.43	123	-34	;stn 15 is backup
+16	15	10.45	348	+22
+16	17	7.19	-	up
+18	17	2.75	302	-56	;stn 18 is bclent 1, tag on rock
+
+;3d Passage Data, JMF 2009-07-18
+;6->7 is first pitch Urinal
+;8->9 is up wet rock? into jelly chamber
+;.11 is bottom of rope below 2nd pitch of Laurel
+;13-->14 is main pitch
+*data passage station left right up down ignoreall
+7   0.5 0.5 0.5 0.2
+8   0.5 0.5 1.5 0.5
+9   0.5 0.5 0.5 0.5
+10  5   5   8   1.0
+11  1.0 1.0 8.0 0.5
+12  0.5 2.5 6.0 1.0
+13  1.2 2.2 20  1.0
+14  0.5 0.5 1.2 15.0
+
+*end laurel

@@ -1,0 +1,76 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+;east side of galactica chamber
+
+;Date: 5/8/97
+;Instruments: m rogerson
+;Book: j hooper
+
+;Data entered by j hooper on 5/8/97
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate galact3.1 galact2.1
+
+*begin galact3
+
+1	2	14.38	240	27
+3	2	16.19	006	-33
+3	4	21.12	187	38
+5	4	19.84	053	-45
+6	4	10.86	312	-12	
+6	7	30.65	113	-13
+8	7	21.18	224	26
+8	9	28.44	338	-16
+10	9	13.54	180	06
+10	11	5.14	351	-08
+12	11	26.55	153	24
+12	13	10.60	356	-39
+14	13	14.27	114	30
+15	13	18.14	050	-16
+15	16	17.33	191	29
+1	16	11.44	334	-33
+
+;Added by Jarvist Moore Frost June 2009
+;Orig LRUD Data
+;1	*	*	20	2
+;2	*	*	20	2
+;3	*	*	15	0
+;4	*	*	12	1
+;5	*	*	12	1
+;6	*	*	*	*
+;7	*	*	~18	*
+;8	*	*	*	*
+;9	*	*	~30	1
+;10	*	*	*	*
+;11	*	*	~20	*
+;12	*	*	*	*
+;13	*	*	35	3
+;No further LRUD data
+
+*data passage station left right up down ignoreall
+;Added by Jarvist Moore Frost June 2009
+;From Orig LRUD notes, orig survey data
+1	0	0	20      2	
+2       0       0	20      2
+3       0       0	15	0
+4       0       0	12	1
+5       0       0	12	1
+7       0       0	18	0
+;station 8 is duplicated station 7 to provide UD data around the edge
+8	 0       0       18      0
+9       0       0	30	1	
+11       0       0	20	0
+13       0       0	35	3
+;close loop
+16	0	0	20	2
+
+
+;Notes: JNH explains that they only surveyed one side of Galactica chamber - you land on a rockbridge, and they choose to go down the boulder slope and survey the main area, alternatively one could pop down through a hole in the floor onto a pitch + explore the 'west'
+;MR Reminisces that all surveys were to his chest height, following the wall, incuding one where he had to suspend himself by chest harness from boulder for good survey shot
+
+*end galact3
+

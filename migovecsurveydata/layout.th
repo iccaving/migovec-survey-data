@@ -1,0 +1,99 @@
+encoding  utf-8
+layout local
+  scale 1 500
+  colour map-fg altitude #[92 86 65]
+  legend on 
+  grid bottom
+  grid-size 100 100 20 m
+  grid-coords off
+  map-header 0 100 ne
+  
+  grid-coords border
+
+    #PDF DOCUMENTION
+    code tex-map
+      \cavename={M17 (Frigidare)}
+      \comment{A vertical shaft located on Tolminski Migovec}
+    endcode  
+    
+    code metapost
+  def a_ice_MY (expr p) =
+  T:=identity;
+  thclean p;
+  thfill p withcolor (0.72, 0.88, 0.95);
+  pickup PenC;
+  path q; q = bbox p;
+  picture tmp_pic, tmp_ice;
+  pair z;
+  tmp_ice := image (
+    draw (-.13u,0)--(.13u,0);
+    draw (0,-.13u)--(0,.13u);
+  );
+  tmp_pic := image(
+    for i = xpart llcorner q step 1.5u until xpart urcorner q:
+      for j = ypart llcorner q step 1.5u until ypart urcorner q:
+        z := ((i,j) randomized 1.3u);
+	if xpart (p intersectiontimes ((bbox tmp_ice) shifted z)) < 0:
+	  draw tmp_ice shifted z;
+	fi;
+      endfor;
+    endfor;
+  );
+  clip tmp_pic to p;
+  drawoptions();
+  draw tmp_pic;
+enddef;
+
+def a_snow_MY (expr P) =
+  T:=identity;
+  thclean P;
+  thfill P withcolor (0.96, 0.96, 1);
+  
+enddef;
+
+def l_survey_cave_MY (expr P) =
+  T:=identity;
+  draw P withpen PenD withcolor (0.7,0,0);
+enddef;
+ 
+ initsymbol("a_snow_MY");
+  initsymbol("a_ice_MY");
+  initsymbol("l_survey_cave_MY");
+
+
+  def p_u_logger_MY (expr P,R,S,A)=
+    U:=(.2u,.2u);
+    T:=identity aligned A rotated R scaled S shifted P;
+    thdraw (-.3u,-.3u)--(-.3u,.3u)--(.3u,.3u)..(.3u,-.3u)--cycle;
+    thfill (-.2u,-.2u)--(-.2u,.2u)--(.2u,.2u)..(.2u,-.2u)--cycle;
+  enddef;
+  initsymbol("p_u_logger_MY");
+
+    def p_station_temporary_MY (expr pos) =
+  T:= identity  shifted pos;
+  pickup  PenD;
+  thdraw withcolor (0.7,0,0) (-.1u,-.1u)--(.1u,-.1u) -- (.1u,.1u) -- (-.1u,.1u) -- cycle;
+  thdraw origin;
+enddef;
+initsymbol("p_station_temporary_MY");
+
+    def a_water_MY (expr p) =
+      T:=identity;
+      thfill p withcolor (0,0,1);
+    enddef;
+    initsymbol("a_water_MY");
+
+
+  endcode
+
+
+  
+ symbol-assign line slope BCRA
+ symbol-assign area ice MY
+ symbol-assign area snow MY
+ symbol-assign line survey MY
+symbol-assign area water MY
+ #symbol-assign point station MY
+
+endlayout
+

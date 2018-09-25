@@ -1,0 +1,57 @@
+;####The Throne Room####:
+; ###Passage and chamber beyond red baron - kamikaze extensions###
+*date 2011.7.25 ; Expedition Izkubljaeni Raj
+
+;Book + Instruments: JMF
+;Tape: Clare Tan
+
+;Data entered by DG on 2011.7.27
+
+;data normal bcra grade 4
+;from	to	tape	comp	clino; L R U D
+
+*begin throneroom
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 4
+;from   to      tape    comp    clino; L R U D
+;Data on 2 pages
+;Page 1/2
+pit2	1	6.50	-	up
+1	2	12.00	187	-23
+2	3	7.50	231	-41
+3	4	16.68	198	-33
+4	5	10.90	156	-07
+5	6	8.05	190	-22
+6	7	6.46	185	-32
+7	8	14.60	202	-44
+8	9	6.79	093	+40
+9	10	14.36	155	-29
+11	10	6.93	211	+28
+;Page 2/2
+8	12	10.95	192	-32
+12	13	13.50	234	-30
+13	14	14.20	196	-32
+14	15	26.42	207	-25
+15	16	11.87	204	00
+16	17	12.55	187	-02
+pit	18	10.83	-	up
+18	19	4.95	181	+29
+19	17	3.19	194	+07
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end throneroom
+; NOTES
+;Station 1 is pss at end of push above pit2
+;Station 5 is pss cairn
+;Station 8 is pss cairn at head of climb
+;Stations 1 to 8 - little draught
+;Station 11 is pss at end of weird side chamber
+;Station 12 is pss cairn in chamber
+;Station 15 is pss in passage across traverse
+;Station 16 is higher rawl bolt at far side of traverse
+;Station 17 is red baron station 10 - pss cairn
+
+; ### SURVEY TIE IN ###
+*equate throneroom.17 redbaron.10
