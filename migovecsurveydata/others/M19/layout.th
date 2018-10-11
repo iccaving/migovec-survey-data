@@ -1,19 +1,19 @@
 encoding  utf-8
 layout local
-  scale 1 500
-  colour map-fg altitude #[92 86 65]
+  scale 1 250
+  colour map-fg [92 86 65]
   legend on 
-  grid bottom
-  grid-size 100 100 20 m
-  grid-coords off
+  #grid bottom
+  #grid-size 100 100 5 m
+  #grid-coords off
   map-header 0 100 ne
   
   grid-coords border
 
     #PDF DOCUMENTION
     code tex-map
-      \cavename={M17 (Frigidare)}
-      \comment{A vertical shaft located on Tolminski Migovec}
+      \cavename={M19 - Bullshit pot}
+      \comment{A cave on the Migovec Plateau}
     endcode  
     
     code metapost
@@ -77,14 +77,6 @@ enddef;
 enddef;
 initsymbol("p_station_temporary_MY");
 
-    
-    def a_water_MY (expr p) =
-      T:=identity;
-      thfill p withcolor (0,0,1);
-    enddef;
-    initsymbol("a_water_MY");
-
-
   endcode
 
 
@@ -93,8 +85,7 @@ initsymbol("p_station_temporary_MY");
  symbol-assign area ice MY
  symbol-assign area snow MY
  symbol-assign line survey MY
-symbol-assign area water MY
- #symbol-assign point station MY
+ symbol-hide point station
 
 endlayout
 
