@@ -441,16 +441,19 @@ survey M19 -title "M19"
     24 . 5.64 215.5 56.3
     extend left
     24 25 5.64 215.5 56.2
+
+    cs lat-long
+    fix 25  46.253034  13.760225 1860
   endcentreline
 
-  # input "M19-1p.th2"
-  # input "M19-1s.th2"
+   input "M19-1p.th2"
+   input "M19-1s.th2"
 
-  # map m1p -projection plan
-  #   M19-1p
-  # endmap
-  # map m1s -projection extended
-  #   M19-1s
-  # endmap
+   map m1p -projection plan
+     M19-1p
+   endmap
+   map m1s -projection extended
+     M19-1s
+   endmap
 
 endsurvey
