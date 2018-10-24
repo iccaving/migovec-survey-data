@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -923.0 -1664.0 2168.0 5203.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -920.5 -1662.0 2165.5 5200.5
+##XTHERION## xth_me_area_zoom_to 200
 
 # 2018.10.06 created by TopoDroid v. 4.1.0c
 
@@ -232,7 +232,7 @@ line wall
   -104.13 -464.16
   -78.83 -465.36
   -58.22 -469.1
-  -38.0 -471.43
+  -22.24 -472.71
 endline
 
 line wall
@@ -245,7 +245,7 @@ line wall
   66.36 -550.26
   88.11 -548.32
   112.86 -544.6
-  134.2 -543.8
+  149.72 -547.59
 endline
 
 line wall
@@ -493,15 +493,15 @@ line wall
   -157.25 -346.42
 endline
 
-line wall
+line wall -reverse on
   -126.98 -353.57
   -106.48 -365.2
   -89.34 -381.58
   -71.66 -396.65
-  -54.59 -407.54
+  -38.51 -409.89
 endline
 
-line wall
+line wall -reverse on
   -38.51 -409.89
   -19.27 -419.57
   -2.05 -432.77
@@ -513,12 +513,12 @@ line wall -close off
   57.39 -451.85
 endline
 
-line wall
-  57.39 -451.85
+line wall -reverse on
+  41.51 -446.85
   78.46 -460.72
   99.1 -447.92
   103.87 -427.83
-  105.42 -407.72
+  106.83 -395.65
 endline
 
 line wall
@@ -917,7 +917,7 @@ line pit
   379.42 11.13
 endline
 
-point 451.28 101.80 continuation 
+point 451.28 101.80 continuation
 
 line wall
   -30.88 1882.09

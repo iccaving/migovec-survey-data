@@ -1,0 +1,14 @@
+set xth(ctrl,cp,datlist) {}
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 119.55m (surface 0.00m, duplicated 0.00m)\nvertical range: 61.53m (from 25@M19 at 44.74m to 9A@M19 at -16.79m)\nnorth-south range: 37.38m (from 20A@M19 at 28.77m to 9A@M19 at -8.61m)\neast-west range: 18.52m (from 24@M19 at 9.15m to 17@M19 at -9.37m)\nnumber of shots: 381\nnumber of stations: 382"
+xth_cp_data_tree_insert 18 1 1 M19 M19 "M19" "M19" "length: 119.55m (surface 0.00m, duplicated 0.00m)\nvertical range: 61.53m (from 25@M19 at 44.74m to 9A@M19 at -16.79m)\nnorth-south range: 37.38m (from 20A@M19 at 28.77m to 9A@M19 at -8.61m)\neast-west range: 18.52m (from 24@M19 at 9.15m to 17@M19 at -9.37m)\nnumber of shots: 381\nnumber of stations: 382"
+xth_cp_data_tree_create
+set xth(ctrl,cp,maplist) {}
+xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
+xth_cp_map_tree_insert projection 0 p2 {} 0 extended {} {} {}
+xth_cp_map_tree_insert map 1 460X1 p1 1 m1p m1p@M19 "" ""
+xth_cp_map_tree_insert map 1 461X1 p2 1 m1s m1s@M19 "" ""
+xth_cp_map_tree_create
+xth_cp_comp_stat 120 2
+set xth(th_exit_state) 2
+set xth(th_exit_number) 1539261047
+
