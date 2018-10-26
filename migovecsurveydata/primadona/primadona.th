@@ -256,6 +256,7 @@ survey primadona -title "Primadona"
      input "2018/holy_moley/holy_moley.th"
      input "2018/adequately_hammered/adequately_hammered.th"
      input "2018/canticle_for_migovec/canticle_for_migovec.th"
+     input "2018/testify/testify.th"
 
       #equates
      equate 0@purgatory 1@alabaster
@@ -264,6 +265,7 @@ survey primadona -title "Primadona"
      equate 2@adequately_hammered 1@holy_moley
      equate 0@adequately_hammered 9@alabaster
      equate 38@canticle_for_migovec 20@bath
+     equate 67@testify 1@canticle_for_migovec
      
      
       #joins

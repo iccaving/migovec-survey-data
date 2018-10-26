@@ -9,4 +9,4 @@ export map -projection plan -o west_plateau.pdf -layout local
 #export model -fmt survex -o "west_plateau.3d"
 
 
-export map -fmt esri  -o "west_plateau"
+#export map -fmt esri  -o "west_plateau"
