@@ -1,6 +1,6 @@
 encoding  utf-8
 layout local
-  scale 1 500
+  scale 0.420 753.4
   colour map-fg altitude #[92 86 65]
   legend on 
   grid bottom
@@ -92,9 +92,9 @@ initsymbol("p_station_temporary_MY");
  symbol-assign line slope BCRA
  symbol-assign area ice MY
  symbol-assign area snow MY
- symbol-assign line survey MY
+ symbol-hide line survey 
 symbol-assign area water MY
- #symbol-assign point station MY
+ symbol-hide point station 
 
 endlayout
 
