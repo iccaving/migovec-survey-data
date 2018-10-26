@@ -3,16 +3,16 @@ layout local
   scale 0.420 753.4
   colour map-fg altitude #[92 86 65]
   legend on 
-  grid bottom
-  grid-size 100 100 20 m
-  grid-coords off
+  #grid bottom
+  #grid-size 100 100 20 m
+  #grid-coords off
   map-header 0 100 ne
   
   grid-coords border
 
-    #PDF DOCUMENTION
+    #PDF DOCUMENTATION
     code tex-map
-      \cavename={M17 (Frigidare)}
+      \cavename={Primadona-Monatip-Ubend-System}
       \comment{A vertical shaft located on Tolminski Migovec}
     endcode  
     
