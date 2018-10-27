@@ -3,8 +3,8 @@ source "prima_ubend_mona.th"
 input layout.th
 input outline_layout.th
 
-export map -projection plan -o west_plateau.pdf -layout local
-#export map -projection plan -o west_plateau_outline.pdf -layout outline
+#export map -projection plan -o west_plateau.pdf -layout local
+export map -projection plan -o west_plateau_outline.pdf -layout outline
 
 #export model -fmt survex -o "west_plateau.3d"
 
