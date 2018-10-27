@@ -1,7 +1,7 @@
 encoding  utf-8
 survey primadona -title "Primadona"
 
-    ###______________ 2000______________###
+###______________ 2000______________###
     input 2000/prima2/prima2.th
     input 2000/prima1/prima1.th
     input 2000/ttt/ttt.th
@@ -17,14 +17,14 @@ survey primadona -title "Primadona"
     join s1_l1@prima2:end s7_l3@prima1:end
     
     
-    ###______________ 2001_____________ ###
-    input 2001/risanke/risanke.th
+###______________ 2001_____________ ###
+  input 2001/risanke/risanke.th
     input 2001/risa2/risa2.th
     input 2001/pov/pov.th
     input 2001/galerija/galerija.th
     input 2001/drugi/drugi.th
     
-    equate 5@risanke 1@prima1
+  equate 5@risanke 1@prima1
     equate 1@risanke 1@risa2
     equate 1@pov 14@ttt
     equate 27@pov 12@risa2
@@ -32,7 +32,7 @@ survey primadona -title "Primadona"
     equate 12@risa2 29@galerija
     equate 15@drugi 34@prima1
      
-    join s1_l1@risanke:end s7_l1@prima1:0
+  join s1_l1@risanke:end s7_l1@prima1:0
     join s1_l2@risanke:0 s7_l2@prima1:end
     join risa2p_1@risa2 risankep_1@risanke
     join risa2p_3@risa2 povp_1@pov
@@ -46,7 +46,7 @@ survey primadona -title "Primadona"
     join s3_l2@drugi:end s2_l2@prima1:0 
      
      
-    ###______________ 2002_____________ ###
+###______________ 2002_____________ ###
     input "2002/smer0/smer0.th"
     input "2002/ajdovscina/ajdovscina.th"
     input "2002/spodnji/spodnji.th"
@@ -67,8 +67,7 @@ survey primadona -title "Primadona"
     join s1_l1@smer0:end s4_l1@galerija:0
     join s1_l2@smer0:0 s4_l2@galerija:end
     
-    
-     ###______________ 2004_____________ ###
+###______________ 2004_____________ ###
      input "2004/popotresni/popotresni.th"
      
      equate POP25@popotresni 27@galerija
@@ -86,13 +85,13 @@ survey primadona -title "Primadona"
      join s1_l1@brez_volje:0 s3_l1@popotresni:end
      join s1_l2@brez_volje:end s3_l2@popotresni:0
     
-    ###______________ 2006_____________ ###
+###______________ 2006_____________ ###
      input "2006/smer1/smer1.th"
      
      equate 18@smer1 43@smer0
      equate 30@smer0 1@smer1
      
-     ###______________ 2016_____________ ###
+###______________ 2016_____________ ###
      input "2016/karstaway/karstaway.th"
      input "2016/mighty_fine_indeed/mfi.th"
      input "2016/hotmk/hotmk.th"
@@ -141,8 +140,9 @@ survey primadona -title "Primadona"
      join s2_l1@quantum_state:end s4_l5@galerija:0
      join s2_l2@quantum_state:0 s4_l4@galerija:end
      
-     ###______________ 2017_____________ ###
+###______________ 2017_____________ ###
      
+  #inputs
      input "2017/buckwheat/buckwheat.th"
      input "2017/TTTr/TTTr.th"
      input "2017/fenestrator/fenestrator.th"
@@ -155,10 +155,11 @@ survey primadona -title "Primadona"
      input "2017/jack_of_hearts/jack_of_hearts.th"
      input "2017/more_like_welding/more_like_welding.th"
      input "2017/hammerhead/hammerhead.th"
+     input "2017/electric_dreams/electric_dreams.th"
      
      
-     
-     equate 7@buckwheat 1@TTTr
+  #equates
+      equate 7@buckwheat 1@TTTr
       equate 4@buckwheat 1@wac
       equate 47@TTTr 1@pov
       equate 2@ajdovscina 9@TTTr
@@ -173,8 +174,9 @@ survey primadona -title "Primadona"
       equate 18@TTTr 1@dejavu
       equate 1@mfi 1@more_like_welding
       equate 9@hammerhead 13@dejavu
+      equate 25@electric_dreams 26@karstaway
       
-      
+  #joins
       join fenestratorp_2@fenestrator cattlegridp_2@cattlegrid
       join fenestratorp_1@fenestrator battery_flatteryp_2@battery_flattery
       join s1_l1@fenestrator:0 s1_l1@upotyn:end
@@ -184,16 +186,17 @@ survey primadona -title "Primadona"
       
      join dejavup_1@dejavu zima00p_1@zima00
      
-     ###______________ 2018_____________ ###
+###______________ 2018_____________ ###
      
-     ### deep branch###
-     input "2018/pivnica_resurvey/pivnica_resurvey.th"
-     input "2018/pivnica_2_resurvey/pivnica_2_resurvey.th"
-     input "2018/lost_in_a_dream/lost_in_a_dream.th"
-     input "2018/lost_in_a_dream_2/lost_in_a_dream_2.th"
-     input "2018/penny_falls/penny_falls.th"
-     input "2018/penny_falls_2/penny_falls_2.th"
-     input "2018/moonraker/moonraker.th"
+  ### deep branch###
+  #inputs
+    input "2018/pivnica_resurvey/pivnica_resurvey.th"
+    input "2018/pivnica_2_resurvey/pivnica_2_resurvey.th"
+    input "2018/lost_in_a_dream/lost_in_a_dream.th"
+    input "2018/lost_in_a_dream_2/lost_in_a_dream_2.th"
+    input "2018/penny_falls/penny_falls.th"
+    input "2018/penny_falls_2/penny_falls_2.th"
+    input "2018/moonraker/moonraker.th"
     input "2018/moonraker_2/moonraker_2.th"   
     input "2018/the_aqueduct/the_aqueduct.th" 
     input "2018/klic_globin/klic_globin.th"
@@ -203,7 +206,7 @@ survey primadona -title "Primadona"
     input "2018/mouseleum_2/mouseleum_2.th"
     input "2018/chocolate_river/chocolate_river.th"
 
-     
+  #equates
      equate 1@pivnica_resurvey 1@buckwheat
      equate 18@pivnica_2_resurvey 13@pivnica_resurvey
      equate 18@pivnica_2_resurvey 3@zima00
@@ -213,44 +216,41 @@ survey primadona -title "Primadona"
      equate 15@penny_falls 1@lost_in_a_dream_2
      equate 1@penny_falls 1@penny_falls_2
      equate 14@tiger_tiger 5@penny_falls_2
+     equate 37@the_aqueduct 25@moonraker
+     equate 28@moonraker 0@klic_globin
+     equate 9@moonraker_2 9@moonraker
+     equate 3@deeper_than_most 15@klic_globin
+     equate 1@deeper_than_most 1@tiger_tiger
+     equate 0@moonraker 20@mouseleum
+     equate 0@mouseleum 8@mouseleum_2
+     equate 3@mouseleum_2 12@chocolate_river
 
-    equate 37@the_aqueduct 25@moonraker
-  equate 28@moonraker 0@klic_globin
-  equate 9@moonraker_2 9@moonraker
-  equate 3@deeper_than_most 15@klic_globin
-  equate 1@deeper_than_most 1@tiger_tiger
-  equate 0@moonraker 20@mouseleum
-  equate 0@mouseleum 8@mouseleum_2
-  equate 3@mouseleum_2 12@chocolate_river
-
-
-  join klic_globin-p1@klic_globin moonraker_2-p1@moonraker_2
-  join klic_globin-p1@klic_globin deeper_than_most-p1@deeper_than_most
-  join deeper_than_most-p1@deeper_than_most tiger_tiger-p1@tiger_tiger
-  join moonraker_2-p1@moonraker_2 moonraker-p2@moonraker
-  join moonraker-p1@moonraker klic_globin-p1@klic_globin
-  join moonraker-p3@moonraker mouseleum-p1@mouseleum
-  join moonraker-p1@moonraker the_aqueduct-p4@the_aqueduct
-  
-  join s1_l1@mouseleum:end s4_l1@moonraker:0
-  join s1_l2@mouseleum:end s4_l2@moonraker:end
-  join mouseleum_2-p1@mouseleum_2 mouseleum-p4@mouseleum
-  join mouseleum_2-p2@mouseleum_2 chocolate_river-p1@chocolate_river
-
-  join tiger_tiger-p1@tiger_tiger penny_falls_2-p1@penny_falls_2
-  join penny_falls_2-p1@penny_falls_2 penny_falls-p1@penny_falls
-  join penny_falls-p2@penny_falls lost_in_a_dream_2-p1@lost_in_a_dream_2
-  join lost_in_a_dream-p3@lost_in_a_dream lost_in_a_dream_2-p1@lost_in_a_dream_2
-  join s1_l1@pivnica_2_resurvey s1_l1@lost_in_a_dream 
-  join s1_l2@pivnica_2_resurvey s1_l2@lost_in_a_dream
-  join s1_l3@pivnica_2_resurvey s2_l3@lost_in_a_dream
-  join s1_l4@pivnica_2_resurvey s2_l4@lost_in_a_dream
-  join pivnica_2_resurvey-3p@pivnica_2_resurvey spodnjip_2@spodnji
+  #joins
+    join klic_globin-p1@klic_globin moonraker_2-p1@moonraker_2
+    join klic_globin-p1@klic_globin deeper_than_most-p1@deeper_than_most
+    join deeper_than_most-p1@deeper_than_most tiger_tiger-p1@tiger_tiger
+    join moonraker_2-p1@moonraker_2 moonraker-p2@moonraker
+    join moonraker-p1@moonraker klic_globin-p1@klic_globin
+    join moonraker-p3@moonraker mouseleum-p1@mouseleum
+    join moonraker-p1@moonraker the_aqueduct-p4@the_aqueduct
+    join s1_l1@mouseleum:end s4_l1@moonraker:0
+    join s1_l2@mouseleum:end s4_l2@moonraker:end
+    join mouseleum_2-p1@mouseleum_2 mouseleum-p4@mouseleum
+    join mouseleum_2-p2@mouseleum_2 chocolate_river-p1@chocolate_river
+    join tiger_tiger-p1@tiger_tiger penny_falls_2-p1@penny_falls_2
+    join penny_falls_2-p1@penny_falls_2 penny_falls-p1@penny_falls
+    join penny_falls-p2@penny_falls lost_in_a_dream_2-p1@lost_in_a_dream_2
+    join lost_in_a_dream-p3@lost_in_a_dream lost_in_a_dream_2-p1@lost_in_a_dream_2
+    join s1_l1@pivnica_2_resurvey s1_l1@lost_in_a_dream 
+    join s1_l2@pivnica_2_resurvey s1_l2@lost_in_a_dream
+    join s1_l3@pivnica_2_resurvey s2_l3@lost_in_a_dream
+    join s1_l4@pivnica_2_resurvey s2_l4@lost_in_a_dream
+    join pivnica_2_resurvey-3p@pivnica_2_resurvey spodnjip_2@spodnji
      
-     ### hammerhead branch ###
+### hammerhead branch ###
      
-     ### alabaster branch ###
-      #inputs
+### alabaster branch ###
+  #inputs
      input "2018/purgatory/purgatory.th"
      input "2018/bath/bath.th"
      input "2018/holy_moley/holy_moley.th"
@@ -258,7 +258,7 @@ survey primadona -title "Primadona"
      input "2018/canticle_for_migovec/canticle_for_migovec.th"
      input "2018/testify/testify.th"
 
-      #equates
+  #equates
      equate 0@purgatory 1@alabaster
      equate 0@bath 6@purgatory
      equate 10@holy_moley 8@sweet_baby_jesus
@@ -284,9 +284,8 @@ survey primadona -title "Primadona"
       join dysentry-1p@dysentry more_like_welding-p1@more_like_welding
       join dysentry-1p@dysentry more_like_welding-p2@more_like_welding
 
-     
-     
+  #joins
 
-    
+
 endsurvey
 
