@@ -1,0 +1,6 @@
+encoding  utf-8
+source M19.th
+
+input layout.th
+
+export map -o M19.pdf -projection plan -layout local

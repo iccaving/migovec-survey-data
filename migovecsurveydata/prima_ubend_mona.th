@@ -5,8 +5,10 @@ input "primadona/primadona.th"
 input "s_ubend/s_ubend.th"
 input "monatip/s_monatip.th"
 
-#input "others/gondolin/gondolin.th"
-#input "planika/planika/planika.th"
+input "others/gondolin/gondolin.th"
+input "planika/planika/planika.th"
+input "M17/therion/xtherion/M17.th"
+input "M19/M19.th"
 
 #ubend prima connection
 equate 5@drainpipe.s_ubend  8@drugi.primadona
