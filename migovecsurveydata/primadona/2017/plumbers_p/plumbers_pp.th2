@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -970 783.0 141.0
+##XTHERION## xth_me_area_adjust -132.0 -970 723 141.0
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} plumbers_pp.gif 0 {}
 
@@ -51,9 +51,9 @@ line border -id l46-345--574 -close on -subtype invisible
   342.0 -574.0
 endline
 
-point 650.0 -498.0 remark -text "muddy abandoned phreatic tube"
+point 448.0 -484.0 remark -text "muddy abandoned <br>phreatic tube" -scale s -align r
 
-point 562.0 -337.0 label -text "Plumbers' Paradise" -scale xl
+point 432.0 -307.0 label -text "Plumbers' Paradise" -scale xl -align r
 
 line wall
   400.0 -610.0

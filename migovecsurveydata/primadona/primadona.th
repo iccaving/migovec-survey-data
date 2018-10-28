@@ -156,6 +156,7 @@ survey primadona -title "Primadona"
      input "2017/more_like_welding/more_like_welding.th"
      input "2017/hammerhead/hammerhead.th"
      input "2017/electric_dreams/electric_dreams.th"
+     input "2017/stranglehold/stranglehold.th"
      
      
   #equates
@@ -175,6 +176,7 @@ survey primadona -title "Primadona"
       equate 1@mfi 1@more_like_welding
       equate 9@hammerhead 13@dejavu
       equate 25@electric_dreams 26@karstaway
+      equate 33@stranglehold 5@electric_dreams
       
   #joins
       join fenestratorp_2@fenestrator cattlegridp_2@cattlegrid

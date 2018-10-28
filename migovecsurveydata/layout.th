@@ -1,19 +1,20 @@
 encoding  utf-8
 layout local
-  scale 0.420 753.4
+  scale 1 1500
   colour map-fg altitude #[92 86 65]
   legend on 
   #grid bottom
   #grid-size 100 100 20 m
   #grid-coords off
-  map-header 0 100 ne
+  map-header 100 0 sw
   
+  language slo
+
   grid-coords border
 
     #PDF DOCUMENTATION
     code tex-map
-      \cavename={Primadona-Monatip-Ubend-System}
-      \comment{A vertical shaft located on Tolminski Migovec}
+      \cavename={Primadona-Monatip-Ubend}
     endcode  
     
     code metapost
