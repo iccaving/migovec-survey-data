@@ -7,9 +7,9 @@ encoding  utf-8
 
 scrap hallelujahp_1 -scale [327.0 -735.0 527.0 -734.0 0.0 0.0 14 0.0 m]
 
-point 119.0 -448.0 remark -text "Stream passage" -scale xl
+point 236.0 -368.0 remark -text "Stream <br>passage" -scale s -align l
 
-point 506.0 -290.0 label -text "Hallelujah" -scale xl
+point 449.0 -427.0 label -text "Hallelujah" -scale xl -align r
 
 area water
   l15-235--203

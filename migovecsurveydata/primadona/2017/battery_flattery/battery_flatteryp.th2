@@ -7,9 +7,9 @@ encoding  utf-8
 
 scrap battery_flatteryp_1 -scale [326.0 -736.0 528.0 -733.0 0.0 0.0 14 0.0 m]
 
-point 609.0 -351.0 remark -text "sump"
+point 609.0 -351.0 remark -text "sump" -scale s -align r
 
-point 545.0 -246.0 label -text "Battery Flattery" -scale xl
+point 545.0 -246.0 label -text "Battery Flattery" -scale m -align r
 
 point 127.0 -276.0 station -name "11"
 

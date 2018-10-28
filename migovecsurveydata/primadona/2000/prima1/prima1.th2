@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -6741 4804 139.5
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -144.0 -4156.0 2896.0 152.0
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} prima1p.ppm 0 {}
 
 
@@ -154,6 +154,8 @@ line wall -id ent_l1
   smooth off
 endline
 
+point 1884.0 -1808.0 label -text "Primadona" -scale xl -align l
+
 line wall
   2021.0 -1894.0
   2038.0 -1902.0
@@ -305,8 +307,6 @@ point 2211.0 -2670.0 station -name "23"
 
 point 2235.0 -2531.0 station -name "24"
 
-point 2586.0 -2610.0 remark -text "The connection with Drugi Vhod"
-
 line rock-border -close on
   2398.0 -2739.0
   2386.0 -2754.0
@@ -421,7 +421,7 @@ scrap prima1p_3 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 line pit
 endline
 
-point 2167.5 -2933.0 remark -text "Bear bones found here"
+point 2167.5 -2933.0 label -text "Bear Pitch" -scale xl -align l
 
 line pit
   2529.0 -3108.0
@@ -539,6 +539,8 @@ endscrap
 
 
 scrap prima1p_4 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
+
+point 2320.0 -3572.0 label -text "Spiral Climb" -scale xl -align l
 
 line wall
 endline
@@ -926,7 +928,7 @@ endscrap
 
 scrap prima1p_7 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 
-point 2848.0 -3848.5 label -scale l -text "Lost and Found Junction"
+point 2488.0 -3868.5 label -scale s -align l -text "Lost and Found <br>Junction <right>"
 
 line rock-border -close on
   2716.5 -3911.0
