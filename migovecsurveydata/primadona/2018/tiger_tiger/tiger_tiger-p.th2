@@ -98,9 +98,10 @@ line wall -reverse on
   439.0 -479.0 451.0 -487.0 460.0 -484.0
   469.0 -481.0 477.0 -475.0 482.0 -480.0
   487.0 -485.0 491.0 -489.0 495.0 -487.0
+  smooth off
 endline
 
-point 296.5 -314.5 label -text "Tiger Tiger" -scale xl
+point 222.0 -323.0 label -text "Tiger Tiger" -scale xl -align tr
 
 line wall
   55.0 -185.0
@@ -122,6 +123,7 @@ line wall
   408.0 -467.0 422.0 -462.0 423.0 -478.0
   424.0 -494.0 436.0 -504.0 456.0 -499.0
   476.0 -494.0 488.0 -498.0 491.0 -501.0
+  smooth off
 endline
 
 point 542.0 -505.0 station -name "14"

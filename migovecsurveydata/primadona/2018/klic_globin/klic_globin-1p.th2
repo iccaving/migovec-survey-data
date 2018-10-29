@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -1732.0 -2388.0 1432.0 1416.0
+##XTHERION## xth_me_area_adjust -1732.0 -2388.0 1432.0 1400.0
 ##XTHERION## xth_me_area_zoom_to 25
 
 # 2018.08.12 created by TopoDroid v. 4.0.1a
@@ -140,7 +140,7 @@ line pit
   smooth off
 endline
 
-point 300.0 1228.0 label -text "Klic Globin (P60)" -scale xl
+point -624.0 1252.0 label -text "Klic Globin" -scale xl -align tr
 
 line wall -reverse on
   -1086.82 390.66
