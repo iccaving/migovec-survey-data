@@ -1,0 +1,35 @@
+survey the_atrium
+	input the_atrium-p.th2
+
+	map mthe_atrium-p1 -projection plan
+		the_atrium-p1
+		the_atrium-p2
+	endmap
+
+	centreline
+		date 2017.07.31
+		explo-date 2017.07.31
+
+		team "Tanguy Racine" insts
+		team "David Wilson" notes tape
+
+		explo-team "Tanguy Racine" "David Wilson"
+
+		#PAGE 1/1
+		1	2	2.80	275	-37
+		2	3	9.24	316	-80
+		3	4	15.60	-	DOWN
+		1	5	7.43	118	-08
+		5	6	10.53	055	-43
+		6	7	8.07	036	+12
+		1	8	19.30	066	+57
+		8	9	4.81	124	+41
+
+
+		#NOTES
+		#STN1 is PSS
+		#STN7 is far wall of aven
+		#STN8 is y-hang knot into Atrium
+		#STN9 is PSS stanglehold STN 8
+	endcentreline
+endsurvey

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -199.5 -970 723 139.5
+##XTHERION## xth_me_area_adjust -130.0 -970 723 139.5
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} holy_moley-p.gif 0 {}
 
@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap holy_moley-p1 -scale [328.0 -734.0 548.0 -733.0 0.0 0.0 10 0.0 m]
 
-point -69.0 -278.0 label -scale xl -text "Holy Moley"
+point 127.5 -278.5 label -align l -scale xl -text "Holy Moley"
 
 area water
 endarea
