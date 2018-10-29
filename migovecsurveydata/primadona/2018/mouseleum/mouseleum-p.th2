@@ -340,7 +340,7 @@ endline
 
 point 306.0 -172.0 air-draught -orientation 323.4 -scale l
 
-point 69.0 -369.0 label -text "Mouseleum" -scale xl
+point 244.0 -263.0 label -text "Mouseleum" -scale xl -align l
 
 line wall
   379.0 -502.0
@@ -472,7 +472,7 @@ line pit
   smooth off
 endline
 
-line pit -reverse on
+line pit
   163.0 -67.0
   163.0 -67.0 162.75 -62.5 168.5 -55.5
   174.25 -48.5 187.25 -41.25 189.75 -48.25
