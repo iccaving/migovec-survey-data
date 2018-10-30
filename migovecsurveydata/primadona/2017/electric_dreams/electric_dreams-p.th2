@@ -97,6 +97,8 @@ endscrap
 
 scrap electric_dreams-p3 -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
 
+point 517.0 443.0 label -text "Electric<br>Dreams<left>" -scale l -align tl
+
 point 552.6464698662877 476.90976035139846 station -name 11
 
 point 560.319359214521 389.00226083586335 station -name 10
@@ -165,6 +167,7 @@ line wall
   691.5 586.5 692.75 588.25 695.75 591.25
   698.75 594.25 703.75 596.5 705.0 597.75
   706.25 599.0 708.25 604.5 709.0 606.0
+  smooth off
 endline
 
 line wall -reverse on
