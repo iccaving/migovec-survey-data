@@ -15,11 +15,14 @@ point 411.0 -492.0 station -name 7
 
 point 357.0 -439.0 station -name 6
 
-point 241.0 -0.0 label -text "Gambler's Ruin" -scale xl
+point 159.0 -41.0 breakdown-choke
+
+point 104.0 -124.0 label -text "Gambler's Ruin" -scale xl -align l
 
 line pit
   339.0 -448.0
   339.0 -448.0 351.0 -442.0 357.0 -422.0
+  smooth off
 endline
 
 line wall
