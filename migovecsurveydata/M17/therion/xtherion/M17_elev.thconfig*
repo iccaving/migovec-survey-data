@@ -6,3 +6,4 @@ input ../layout/layout_extended.th
 export map -projection extended -o ../outputs/M17_extended.pdf -layout extended
 export map -projection plan -o ../outputs/M17.pdf -layout local
 export map -fmt kml -o ../outputs/M17.kml
+export model -o ../outputs/M17.lox
