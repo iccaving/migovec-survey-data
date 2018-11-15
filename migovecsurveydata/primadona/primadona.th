@@ -158,6 +158,7 @@ survey primadona -title "Primadona"
      input "2017/electric_dreams/electric_dreams.th"
      input "2017/stranglehold/stranglehold.th"
      input "2017/the_atrium/the_atrium.th"
+     input "2017/apple_crumble/apple_crumble.th"
      
      
   #equates
@@ -180,6 +181,7 @@ survey primadona -title "Primadona"
       equate 25@electric_dreams 26@karstaway
       equate 33@stranglehold 5@electric_dreams
       equate 8@stranglehold 9@the_atrium
+      equate 26@apple_crumble 11@pov
       
   #joins
       join fenestratorp_2@fenestrator cattlegridp_2@cattlegrid
@@ -190,6 +192,8 @@ survey primadona -title "Primadona"
       join alabasterp_1@alabaster sweet_baby_jesusp_1@sweet_baby_jesus
       
      join dejavup_1@dejavu zima00p_1@zima00
+     join s3_l1@pov:end s3_l1@apple_crumble:end
+     join s3_l6@pov s3_l2@apple_crumble
      
 ###______________ 2018_____________ ###
      

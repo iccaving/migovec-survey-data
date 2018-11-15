@@ -1,0 +1,53 @@
+survey apple_crumble
+	input "apple_crumble-p.th2"
+
+	map mapple_crumble-p1 -projection plan
+		apple_crumble-p1
+		apple_crumble-p2
+		apple_crumble-p3
+	endmap 	
+
+	join apple_crumble-p1 apple_crumble-p2
+	join apple_crumble-p2 apple_crumble-p3
+
+	centreline
+		#Window off Povezava great aven
+		date 2017.07.24
+		explo-date 2017.07.24
+		explo-team "Tanguy Racine" "James Wilson"
+		team "Tanguy Racine" notes
+		team "James Wilson" insts tape
+
+		#data on three pages
+		2	1	4.04	165	-24
+		3	2	5.90	134	-22
+		4	2	2.83	207	-09
+		5	4	2.66	214	-41
+		6	5	4.56	159	-12
+		7	6	3.10	183	+24
+		9	8	5.41	273	+02
+		10	9	6.78	160	-10
+		11	10	2.50	240	-55
+		12	11	2.48	164	-08
+		#Page 2/3
+		7	12	3.95	275	-25
+		13	7	7.14	184	-50
+		14	13	2.83	158	-05
+		15	14	2.56	-	UP
+		16	15	5.74	091	-61
+		17	16	4.60	165	-54
+		18	17	2.63	165	-06
+		19	18	7.56	276	+14
+		19	20	5.00	-	UP
+		21	18	2.60	154	-48
+		22	21	12.75	164	+12
+		#Page 3/3
+		flags duplicate
+		23	22	18.65	043	+43
+		24	23	9.02	358	+13
+		25	24	3.92	291	-06
+		26	25	1.28	204	-12
+		flags not duplicate
+	endcentreline
+
+endsurvey
