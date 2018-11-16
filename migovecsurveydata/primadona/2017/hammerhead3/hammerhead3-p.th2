@@ -1,0 +1,36 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 855.0 518.0 1291.0 1092.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap hammerhead3-p1 -scale [0.0 0.0 755.2842951222234 1023.9999999999999 0.0 0.0 132.16 179.18]
+
+line pit -close on -clip off
+  1056.0 789.0
+  1056.0 789.0 1033.0 786.0 1025.0 777.0
+  1017.0 768.0 999.0 745.0 996.0 725.0
+  993.0 705.0 979.0 667.0 992.0 660.0
+  1005.0 653.0 1029.0 645.0 1042.0 656.0
+  1055.0 667.0 1090.0 726.0 1090.0 744.0
+  1090.0 762.0 1089.0 788.0 1078.0 790.0
+  1067.0 792.0 1056.0 789.0 1056.0 789.0
+  smooth off
+endline
+
+point 1157.0 961.0 station -name 5
+
+point 1066.0 779.0 station -name 4
+
+point 1059.0 777.0 station -name 3
+
+point 1024.0 674.0 station -name 2
+
+point 1018.0 673.0 station -name 1
+
+line wall
+endline
+
+endscrap
+
+
