@@ -159,6 +159,10 @@ survey primadona -title "Primadona"
      input "2017/stranglehold/stranglehold.th"
      input "2017/the_atrium/the_atrium.th"
      input "2017/apple_crumble/apple_crumble.th"
+     input "2017/hammerhead2/hammerhead2.th"
+     input "2017/hammerhead3/hammerhead3.th"
+     input "2017/dogfish/dogfish.th"
+     input "2017/high_and_dry/high_and_dry.th"
      
      
   #equates
@@ -182,6 +186,10 @@ survey primadona -title "Primadona"
       equate 33@stranglehold 5@electric_dreams
       equate 8@stranglehold 9@the_atrium
       equate 26@apple_crumble 11@pov
+      equate 2@hammerhead2 1@hammerhead
+      equate 5@hammerhead3 14@hammerhead2
+      equate 10@dogfish 24@hammerhead2
+      equate 1@dogfish 12@high_and_dry
       
   #joins
       join fenestratorp_2@fenestrator cattlegridp_2@cattlegrid
@@ -190,6 +198,10 @@ survey primadona -title "Primadona"
       join s1_l2@fenestrator:end s1_l2@upotyn:0
       join hallelujahp_1@hallelujah plumbers_pp_2@plumbers_p
       join alabasterp_1@alabaster sweet_baby_jesusp_1@sweet_baby_jesus
+
+      join high_and_dry-p2@high_and_dry dogfish-p1@dogfish
+
+      join hammerhead2-p1@hammerhead2 hammerhead-p1@hammerhead
       
      join dejavup_1@dejavu zima00p_1@zima00
      join s3_l1@pov:end s3_l1@apple_crumble:end
