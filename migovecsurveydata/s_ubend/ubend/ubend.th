@@ -9,8 +9,12 @@ survey ubend
 
   centreline
     date 2000.07.27
-    team "Andrew Jurd" insts
+    explo-date 2000.07.27
+
+    team "Andy Jurd" insts
     team "Hugh Penney" notes
+
+    explo-team "Andy Jurd" "Hugh Penney"
     
     1	2	7.15	-	up
 2	3	2.71	290	-7

@@ -13,9 +13,7 @@ endline
 line wall
 endline
 
-point 372.0 -112.0 label -text "Mary's Café" -scale xl
-
-point 408.75 -88.75 camp -scale xl
+point 450.75 -78.25 camp -scale xl
 
 line rock-border -close on
   376.0 -57.25
@@ -449,9 +447,9 @@ line border -id l80-476--202 -close on -subtype "invisible"
   500.5 -218.25
 endline
 
-point 331.0 -369.5 label -text "Galerija" -scale xl
+point 190.5 -332.0 label -text "Galerija" -scale m -align tl
 
-point 555.0 -230.25 label -text "Knot Very Good"
+point 495.0 -231.75 label -scale s -text "Knot<br>Very<br>Good<center>" -align br
 
 line wall
   473.75 -203.25
@@ -843,8 +841,6 @@ line wall
   51.5 -615.5 49.0 -620.0 49.0 -620.0
   smooth off
 endline
-
-point 36.5 -653.5 remark -text "To TTT and deep camp"
 
 point 48.0 -634.0 station -name "2"
 
