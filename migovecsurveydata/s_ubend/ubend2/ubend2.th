@@ -1,5 +1,5 @@
 encoding  utf-8
-survey ubend2
+survey ubend2 -title "Ubend 2"
   
   input "ubend2p.th2"
   
@@ -9,9 +9,12 @@ survey ubend2
 
   centreline
     date 2000.07.28
-    team "Andrew Jurd" insts
+    explo-date 2000.07.28
+
+    team "Andy Jurd" insts
     team "Hugh Penney" notes
     
+    explo-team "Andy Jurd" "Hugh Penney"
     units length meters
       units compass clino degrees
     

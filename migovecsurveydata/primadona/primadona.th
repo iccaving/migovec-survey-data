@@ -163,6 +163,9 @@ survey primadona -title "Primadona"
      input "2017/hammerhead3/hammerhead3.th"
      input "2017/dogfish/dogfish.th"
      input "2017/high_and_dry/high_and_dry.th"
+     input "2017/mandare_resurvey/mandare_resurvey.th"
+     input "2017/batmere/batmere.th"
+     input "2017/entirely_my_fault/entirely_my_fault.th"
      
      
   #equates
@@ -190,6 +193,9 @@ survey primadona -title "Primadona"
       equate 5@hammerhead3 14@hammerhead2
       equate 10@dogfish 24@hammerhead2
       equate 1@dogfish 12@high_and_dry
+      equate 47@TTTr 1@mandare_low
+      equate 1@batmere 7@mandare_low
+      equate 19@entirely_my_fault 11@karstaway
       
   #joins
       join fenestratorp_2@fenestrator cattlegridp_2@cattlegrid
@@ -206,6 +212,9 @@ survey primadona -title "Primadona"
      join dejavup_1@dejavu zima00p_1@zima00
      join s3_l1@pov:end s3_l1@apple_crumble:end
      join s3_l6@pov s3_l2@apple_crumble
+
+     join batmere-p1@batmere mandare_low-p1@mandare_low
+     join entirely_my_fault-p1@entirely_my_fault karstawayp_4@karstaway
      
 ###______________ 2018_____________ ###
      
