@@ -1,0 +1,9 @@
+encoding  utf-8
+survey prima_2016
+  input "karstaway/karstaway.th"
+  input "Galeria_Resurvey/Galeria_Survey.th"
+  
+  equate 39@karstaway 1@galerija_resurvey
+  
+endsurvey
+
