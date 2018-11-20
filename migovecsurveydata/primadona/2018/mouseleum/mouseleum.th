@@ -69,6 +69,12 @@ survey mouseleum -title "mouseleum"
      mouseleum-p4
    endmap
 
+   map mmouseleum-p -projection plan
+    m1p
+    m2p
+    m3p
+   endmap
+
    join mouseleum-p3 mouseleum-p4
 
 endsurvey

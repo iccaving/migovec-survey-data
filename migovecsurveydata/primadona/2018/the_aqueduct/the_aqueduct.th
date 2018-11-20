@@ -616,6 +616,13 @@ survey the_aqueduct -title "The_Aqueduct"
    map m4p -projection plan
      the_aqueduct-p4
    endmap
+
+   map mthe_aqueduct-p -projection plan
+    m1p
+    m2p
+    m3p
+    m4p
+   endmap
    
    join The_Aqueduct-1p the_aqueduct-p4
    join The_Aqueduct-1p the_aqueduct-p3

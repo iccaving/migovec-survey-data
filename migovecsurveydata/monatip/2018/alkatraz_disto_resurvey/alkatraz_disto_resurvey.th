@@ -11,6 +11,7 @@ survey alkatraz_disto_resurvey -title "alkatraz_disto_resurvey"
     units compass clino degrees
     data normal from to length compass clino
     extend ignore
+    flags duplicate
     0 . 11.74 15.1 -1.1
     0 . 6.45 4.2 2.9
     0 . 8.48 11.6 2.3
@@ -329,6 +330,7 @@ survey alkatraz_disto_resurvey -title "alkatraz_disto_resurvey"
     extend right
     3 8 6.00 122.5 -1.9
     8 10 50.29 76.7 50.6
+    flags not duplicate
   endcenterline
 
   ## input "alkatraz_disto_resurvey-1p.th2"
