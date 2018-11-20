@@ -1,6 +1,10 @@
 encoding  utf-8
 survey primadona -title "Primadona"
 
+map mprimadona-p -projection plan
+  m2018
+endmap
+
 ###______________ 2000______________###
     input 2000/prima2/prima2.th
     input 2000/prima1/prima1.th
@@ -217,6 +221,29 @@ survey primadona -title "Primadona"
      join entirely_my_fault-p1@entirely_my_fault karstawayp_4@karstaway
      
 ###______________ 2018_____________ ###
+  map m2018 -projection plan
+    mbath-p@bath
+    mcanticle_for_migovec-p@canticle_for_migovec
+    mchocolate_river-p@chocolate_river
+    mdeeper_than_most-p@deeper_than_most
+    mdysentry-p@dysentry
+    mholy_moley-p@holy_moley
+    mklic_globin-p@klic_globin
+    mlost_in_a_dream-p@lost_in_a_dream
+    mlost_in_a_dream_2-p@lost_in_a_dream_2
+    mmoonraker-p@moonraker
+    mmoonraker_2-p@moonraker_2
+    mmouseleum-p@mouseleum
+    mmouseleum_2-p@mouseleum_2
+    mpenny_falls-p@penny_falls
+    mpenny_falls_2-p@penny_falls_2
+    #mpivnica_resurvey-p@pivnica_resurvey
+    mpivnica_2_resurvey-p@pivnica_2_resurvey
+    mpurgatory-p@purgatory
+    mtiger_tiger-p@tiger_tiger
+    mtestify-p@testify
+    mthe_aqueduct-p@the_aqueduct
+  endmap
      
   ### deep branch###
   #inputs

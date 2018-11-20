@@ -9,6 +9,11 @@ survey chocolate_river -title "Chocolate River (continuation of Mouseleum 2"
 		chocolate_river-p2
 	endmap
 
+	map mchocolate_river-p -projection plan
+		m2-p
+		m1-p
+	endmap
+
 	join chocolate_river-p1 chocolate_river-p2
 
 	centreline

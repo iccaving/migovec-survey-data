@@ -39,6 +39,15 @@ survey testify
 		testify-p6
 	endmap
 
+	map mtestify-p -projection plan
+		mtestify-p1
+		mtestify-p2
+		mtestify-p3
+		mtestify-p4
+		mtestify-p5
+		mtestify-p6
+	endmap
+
 	join testify-p1 testify-p2
 	join testify-p3 testify-p2
 	join testify-p3 testify-p4

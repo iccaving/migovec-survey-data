@@ -561,6 +561,12 @@ survey bath -title "Bath"
    map m3p -projection plan
      bath-3p
    endmap
+
+   map mbath-p -projection plan
+    m1p
+    m2p
+    m3p
+   endmap
    
    join s1_l1:end s3_l1:0
    join s1_l2:end s3_l2:0
