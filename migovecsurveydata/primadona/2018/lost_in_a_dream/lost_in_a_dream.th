@@ -13,6 +13,12 @@ survey lost_in_a_dream -title "Lost in a Dream"
 		lost_in_a_dream-p3
 	endmap
 
+	map mlost_in_a_dream-p -projection plan
+		m1-p
+		m2-p
+		m3-p
+	endmap
+
 	join lost_in_a_dream-p1 lost_in_a_dream-p2
 	join lost_in_a_dream-p2 lost_in_a_dream-p3
 

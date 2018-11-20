@@ -715,6 +715,13 @@ survey dysentry -title "Dysentry"
      dysentry-p4
    endmap
 
+   map mdysentry-p -projection plan
+    m1p
+    m2p
+    m3p
+    m4p
+   endmap
+
    join dysentry-1p dysentry-p4
    join dysentry-p3 dysentry-p2
    join dysentry-p3 dysentry-p4

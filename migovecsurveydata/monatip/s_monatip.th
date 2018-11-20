@@ -42,5 +42,16 @@ survey monatip
   
   equate 27@monatip2 53@cloacamaxima
   equate 35@monatip2 44@cloacamaxima
+
+  ######________________2018________________######
+  input "2018/cloaca_resurvey/cloaca_resurvey.th"
+  input "2018/alkatraz_disto_resurvey/alkatraz_disto_resurvey.th"
+  input "2018/well_hung/well_hung.th
+  input "2018/rat_rift/rat_rift.th"
+  
+  equate 12@cloacamaxima 12@cloaca_resurvey
+  equate 0@cloaca_resurvey 0@alkatraz_disto_resurvey
+  equate 9@well_hung 25@cloacamaxima
+
 endsurvey
 

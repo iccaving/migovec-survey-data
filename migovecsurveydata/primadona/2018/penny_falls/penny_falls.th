@@ -9,6 +9,11 @@ survey penny_falls -title "Penny falls"
 		penny_falls-p2
 	endmap
 
+	map mpenny_falls-p -projection plan
+		m1-p
+		m2-p
+	endmap
+
 	join penny_falls-p2 penny_falls-p1 
 
 	centreline

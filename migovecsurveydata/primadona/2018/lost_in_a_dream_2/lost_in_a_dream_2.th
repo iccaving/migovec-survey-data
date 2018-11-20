@@ -2,9 +2,10 @@ survey lost_in_a_dream_2 -title "Lost in a dream 2"
 ## #continuation of abandoned streamway off Pivnica
 	input "lost_in_a_dream_2-p.th2"
 
-	map m1-p -projection plan
+	map mlost_in_a_dream_2-p -projection plan
 		lost_in_a_dream_2-p1
 	endmap
+
 
 	centreline
 		# Arun Paul also present

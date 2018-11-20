@@ -43,6 +43,11 @@ survey holy_moley -title "holy_moley"
    map m2p -projection plan
      holy_moley-p2
    endmap
+
+   map mholy_moley-p -projection plan
+    m1p
+    m2p
+   endmap
    
    join holy_moley-p2 holy_moley-p1
    
