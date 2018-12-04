@@ -1,6 +1,13 @@
 encoding  utf-8
 survey more_like_welding -title "More like Welding"
   input "more_like_welding-p.th2"
+
+    map mmore_like_welding-p -projection plan
+      mmore_like_welding-p1
+      mmore_like_welding-p2
+      mmore_like_welding-p3
+    endmap
+
    map mmore_like_welding-p1 -projection plan
       more_like_welding-p1
     endmap
