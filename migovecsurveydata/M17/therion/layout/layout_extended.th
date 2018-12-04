@@ -1,16 +1,16 @@
 encoding  utf-8
 layout extended
-  scale 1 400
+  scale 1 800
   colour map-fg [96 90 69]
-  map-header 0 0 off
+  map-header 0 -40 sw
    
   
   grid-coords border
 
     #PDF DOCUMENTION
     code tex-map
-      \cavename={Eisgruben Eishöhle}
-      \comment{Kat 1611/39}
+      \cavename={}
+      \comment{}
     endcode  
     
     code metapost
@@ -112,8 +112,8 @@ enddef;
  symbol-assign line slope BCRA
  symbol-assign area ice MY
  symbol-assign area snow MY
- debug station-names
- symbol-hide line survey
+ symbol-assign line survey MY
+ symbol-hide point station
 
 endlayout
 
