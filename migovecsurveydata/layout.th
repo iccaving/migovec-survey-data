@@ -56,10 +56,35 @@ def l_survey_cave_MY (expr P) =
   T:=identity;
   draw P withpen PenD withcolor (0.7,0,0);
 enddef;
- 
+
+def l_rockborder_MY (expr P) = 
+  T:=identity;
+  pickup PenC;
+  if cycle P: thclean P fi;
+  thdraw P withcolor(0.5,0.5,0.5);
+enddef;
+
+def l_pit_my (expr P) = 
+  T:=identity;
+  cas := 0;
+  dlzka := arclength P;
+  mojkrok:=adjust_step(dlzka, 0.25u);
+  pickup PenD;  
+  forever:
+    t := arctime cas of P;
+    mark_ (P,t,0.2u);
+    cas := cas + mojkrok;
+    exitif cas > dlzka + (mojkrok / 3); % for rounding errors
+  endfor;
+  pickup PenC;  
+  thdraw P withcolor(0.5,0.5,0.5);
+enddef;
+
+  initsymbol("l_rockborder_MY"); 
  initsymbol("a_snow_MY");
   initsymbol("a_ice_MY");
   initsymbol("l_survey_cave_MY");
+  initsymbol("l_pit_MY");
 
 
   def p_u_logger_MY (expr P,R,S,A)=
@@ -81,7 +106,7 @@ initsymbol("p_station_temporary_MY");
     
     def a_water_MY (expr p) =
       T:=identity;
-      thfill p withcolor (0,0,1);
+      thfill p withcolor (0.1,0.1,25);
     enddef;
     initsymbol("a_water_MY");
 
@@ -93,9 +118,11 @@ initsymbol("p_station_temporary_MY");
  symbol-assign line slope BCRA
  symbol-assign area ice MY
  symbol-assign area snow MY
+ symbol-assign line rock-border MY
  symbol-hide line survey 
 symbol-assign area water MY
  symbol-hide point station 
+
 
 endlayout
 
