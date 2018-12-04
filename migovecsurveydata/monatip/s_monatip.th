@@ -47,7 +47,7 @@ survey monatip
   input "2018/cloaca_resurvey/cloaca_resurvey.th"
   input "2018/alkatraz_disto_resurvey/alkatraz_disto_resurvey.th"
   input "2018/well_hung/well_hung.th
-  input "2018/rat_rift/rat_rift.th"
+  #input "2018/rat_rift/rat_rift.th"
   
   equate 12@cloacamaxima 12@cloaca_resurvey
   equate 0@cloaca_resurvey 0@alkatraz_disto_resurvey
