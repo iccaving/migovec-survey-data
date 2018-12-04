@@ -1,7 +1,16 @@
 encoding  utf-8
+
+lookup topo-date
+ 2015.12.31 [] "2000 to 2015"
+ 2016.12.31 [] "2016"
+ 2017.12.31 [] 2017
+ 2018.12.31 [] 2018
+ #- [] "2013 and later"  #my experimentation suggests that '-' colours undated surveys if last in the list, and all surveys if first in list.  Bruce
+endlookup
+
 layout local
   scale 1 1500
-  colour map-fg altitude #[92 86 65]
+  colour map-fg topo-date #[92 86 65]
   legend on 
   #grid bottom
   #grid-size 100 100 20 m

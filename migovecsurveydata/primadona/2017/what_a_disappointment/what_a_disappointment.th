@@ -1,0 +1,29 @@
+survey what_a_disappointment -title "What a Disappointment"
+
+	input "what_a_disappointment-p.th2"
+	map mwhat_a_disappointment-p -projection plan
+		what_a_disappointment-p1
+		what_a_disappointment-p2
+	endmap
+
+	join what_a_disappointment-p1 what_a_disappointment-p2
+	centreline
+		date 2017.07.29
+		explo-date 2017.07.29
+
+		team "Jack Hare" notes
+		team "William French" insts tape
+
+		explo-team "Jack Hare" "Rhys Tyers" "William French"
+		#PAGE 1/1
+		2	1	2.08	-	DOWN
+		3	2	2.16	-	DOWN
+		3	4	5.27	325	+39
+		4	5	6.20	339	-09
+		5	6	4.07	355	+18
+		6	7	6.45	053	+66
+		7	8	11.82	077	+76
+		8	9	1.12	037	+11
+
+	endcentreline
+endsurvey

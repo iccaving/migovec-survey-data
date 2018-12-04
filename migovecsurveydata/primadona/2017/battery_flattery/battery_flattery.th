@@ -2,6 +2,11 @@ encoding  utf-8
 survey battery_flattery
   input "battery_flatteryp.th2"
   
+  map mbattery_flattery-p -projection plan
+    battery_flatteryp_1
+    battery_flatteryp_2
+  endmap
+
   map mbattery_flatteryp_1 -projection plan
     battery_flatteryp_1
   endmap

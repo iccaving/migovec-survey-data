@@ -3,6 +3,10 @@ survey fenestrator
 
   input "fenestratorp.th2"
   
+  map mfenestrator-p -projection plan
+    fenestratorp_1
+    fenestratorp_2
+  endmap
   map mfenestratorp_1 -projection plan
     fenestratorp_1
   endmap

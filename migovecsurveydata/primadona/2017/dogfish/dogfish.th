@@ -1,6 +1,10 @@
 survey dogfish -title "Dogfish"
 	input "dogfish-p.th2"
 
+	map mdogfish-p -projection plan
+		dogfish-p1
+		dogfish-p2
+	endmap
 	map mdogfish-p1 -projection plan
 		dogfish-p1
 	endmap

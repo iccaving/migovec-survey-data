@@ -2,6 +2,11 @@ encoding  utf-8
 survey sweet_baby_jesus
   input "sweet_baby_jesusp.th2"
   
+  map msweet_baby_jesus-p -projection plan
+    msweet_baby_jesusp_1
+    msweet_baby_jesusp_2
+    msweet_baby_jesusp_3
+  endmap
   map msweet_baby_jesusp_1 -projection plan
     sweet_baby_jesusp_1
   endmap
