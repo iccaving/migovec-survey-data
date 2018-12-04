@@ -1,0 +1,101 @@
+survey 2018
+### deep branch###
+  #inputs
+
+    input "2018/pivnica_resurvey/pivnica_resurvey.th"
+    input "2018/pivnica_2_resurvey/pivnica_2_resurvey.th"
+    input "2018/lost_in_a_dream/lost_in_a_dream.th"
+    input "2018/lost_in_a_dream_2/lost_in_a_dream_2.th"
+    input "2018/penny_falls/penny_falls.th"
+    input "2018/penny_falls_2/penny_falls_2.th"
+    input "2018/moonraker/moonraker.th"
+    input "2018/moonraker_2/moonraker_2.th"   
+    input "2018/the_aqueduct/the_aqueduct.th" 
+    input "2018/klic_globin/klic_globin.th"
+    input "2018/deeper_than_most/deeper_than_most.th"
+    input "2018/tiger_tiger/tiger_tiger.th"
+    input "2018/mouseleum/mouseleum.th"
+    input "2018/mouseleum_2/mouseleum_2.th"
+    input "2018/chocolate_river/chocolate_river.th"
+
+  #equates
+     equate 1@pivnica_resurvey 1@buckwheat
+     equate 18@pivnica_2_resurvey 13@pivnica_resurvey
+     equate 18@pivnica_2_resurvey 3@zima00
+     equate 5@pivnica_resurvey 7@zima00
+     equate 25@lost_in_a_dream 13@pivnica_resurvey
+     equate 1@lost_in_a_dream 4@lost_in_a_dream_2
+     equate 15@penny_falls 1@lost_in_a_dream_2
+     equate 1@penny_falls 1@penny_falls_2
+     equate 14@tiger_tiger 5@penny_falls_2
+     equate 37@the_aqueduct 25@moonraker
+     equate 28@moonraker 0@klic_globin
+     equate 9@moonraker_2 9@moonraker
+     equate 3@deeper_than_most 15@klic_globin
+     equate 1@deeper_than_most 1@tiger_tiger
+     equate 0@moonraker 20@mouseleum
+     equate 0@mouseleum 8@mouseleum_2
+     equate 3@mouseleum_2 12@chocolate_river
+
+  #joins
+    join klic_globin-p1@klic_globin moonraker_2-p1@moonraker_2
+    join klic_globin-p1@klic_globin deeper_than_most-p1@deeper_than_most
+    join deeper_than_most-p1@deeper_than_most tiger_tiger-p1@tiger_tiger
+    join moonraker_2-p1@moonraker_2 moonraker-p2@moonraker
+    join moonraker-p1@moonraker klic_globin-p1@klic_globin
+    join moonraker-p3@moonraker mouseleum-p1@mouseleum
+    join moonraker-p1@moonraker the_aqueduct-p4@the_aqueduct
+    join s1_l1@mouseleum:end s4_l1@moonraker:0
+    join s1_l2@mouseleum:end s4_l2@moonraker:end
+    join mouseleum_2-p1@mouseleum_2 mouseleum-p4@mouseleum
+    join mouseleum_2-p2@mouseleum_2 chocolate_river-p1@chocolate_river
+    join tiger_tiger-p1@tiger_tiger penny_falls_2-p1@penny_falls_2
+    join penny_falls_2-p1@penny_falls_2 penny_falls-p1@penny_falls
+    join penny_falls-p2@penny_falls lost_in_a_dream_2-p1@lost_in_a_dream_2
+    join lost_in_a_dream-p3@lost_in_a_dream lost_in_a_dream_2-p1@lost_in_a_dream_2
+    join s1_l1@pivnica_2_resurvey s1_l1@lost_in_a_dream 
+    join s1_l2@pivnica_2_resurvey s1_l2@lost_in_a_dream
+    join s1_l3@pivnica_2_resurvey s2_l3@lost_in_a_dream
+    join s1_l4@pivnica_2_resurvey s2_l4@lost_in_a_dream
+    join pivnica_2_resurvey-3p@pivnica_2_resurvey spodnjip_2@spodnji
+     
+### hammerhead branch ###
+     
+### alabaster branch ###
+  #inputs
+     input "2018/purgatory/purgatory.th"
+     input "2018/bath/bath.th"
+     input "2018/holy_moley/holy_moley.th"
+     input "2018/adequately_hammered/adequately_hammered.th"
+     input "2018/canticle_for_migovec/canticle_for_migovec.th"
+     input "2018/testify/testify.th"
+
+  #equates
+     equate 0@purgatory 1@alabaster
+     equate 0@bath 6@purgatory
+     equate 10@holy_moley 8@sweet_baby_jesus
+     equate 2@adequately_hammered 1@holy_moley
+     equate 0@adequately_hammered 9@alabaster
+     equate 38@canticle_for_migovec 20@bath
+     equate 67@testify 1@canticle_for_migovec
+     
+     
+      #joins
+     join s1_l2@purgatory:end s4_l2@alabaster
+     join s1_l1@purgatory:end s4_l1@alabaster
+     join holy_moley-p2@holy_moley sweet_baby_jesusp_1@sweet_baby_jesus
+     join testify-p6@testify canticle_for_migovec-p3@canticle_for_migovec
+     
+     ###other ###
+      #inputs
+     input "2018/dysentry/dysentry.th"
+     
+      #equates
+     equate 0@dysentry 6@more_like_welding
+     
+      #joins
+      join dysentry-1p@dysentry more_like_welding-p1@more_like_welding
+      join dysentry-1p@dysentry more_like_welding-p2@more_like_welding
+
+  #joins
+  endsurvey

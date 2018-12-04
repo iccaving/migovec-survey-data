@@ -2,6 +2,13 @@ encoding  utf-8
 survey alabaster
   input "alabasterp.th2"
   
+  map malabaster-p -projection plan
+    malabasterp_1
+    malabasterp_2
+    malabasterp_3
+    malabasterp_4
+  endmap
+
   map malabasterp_1 -projection plan
     alabasterp_1
   endmap

@@ -1,7 +1,11 @@
 encoding  utf-8
 survey plumbers_p
   input "plumbers_pp.th2"
-  
+  map mplumbers_p-p -projection plan
+    mplumbers_pp_1
+    mplumbers_pp_2
+  endmap
+
   map mplumbers_pp_1 -projection plan
     plumbers_pp_1
   endmap

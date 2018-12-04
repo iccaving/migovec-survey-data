@@ -2,6 +2,13 @@ encoding  utf-8
 survey jack_of_hearts
   input "jack_of_heartsp.th2"
   
+  map mjack_of_hearts-p -projection plan
+    mjack_of_heartsp_1
+    mjack_of_heartsp_2
+    mjack_of_heartsp_3
+    mjack_of_heartsp_4
+  endmap
+
   map mjack_of_heartsp_1 -projection plan
     jack_of_heartsp_1
   endmap

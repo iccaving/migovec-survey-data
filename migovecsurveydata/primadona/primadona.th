@@ -1,7 +1,10 @@
 encoding  utf-8
 survey primadona -title "Primadona"
 
+
+
 map mprimadona-p -projection plan
+  m2017
   m2018
 endmap
 
@@ -145,7 +148,31 @@ endmap
      join s2_l2@quantum_state:0 s4_l4@galerija:end
      
 ###______________ 2017_____________ ###
-     
+     map m2017 -projection plan
+        malabaster-p@alabaster
+        mapple_crumble-p@apple_crumble
+        mbatmere-p@batmere
+        mbattery_flattery-p@battery_flattery
+        mdogfish-p@dogfish
+        melectric_dreams-p@electric_dreams
+        mentirely_my_fault-p@entirely_my_fault
+        mfenestrator-p@fenestrator
+        mhallelujah-p@hallelujah
+        mhammerhead-p@hammerhead
+        mhammerhead2-p@hammerhead2
+        mhammerhead3-p@hammerhead3
+        mhigh_and_dry-p@high_and_dry
+        mjack_of_hearts-p@jack_of_hearts
+        mmandare_resurvey-p@mandare_low
+        mmore_like_welding-p@more_like_welding
+        mplumbers_p-p@plumbers_p
+        mstranglehold-p@stranglehold
+        msweet_baby_jesus-p@sweet_baby_jesus
+        mthe_atrium-p@the_atrium
+        mupotyn-p@upotyn
+        mwhat_a_disappointment-p@what_a_disappointment
+        #mbuckwheat-p@buckwheat
+     endmap
   #inputs
      input "2017/buckwheat/buckwheat.th"
      input "2017/TTTr/TTTr.th"
@@ -170,6 +197,7 @@ endmap
      input "2017/mandare_resurvey/mandare_resurvey.th"
      input "2017/batmere/batmere.th"
      input "2017/entirely_my_fault/entirely_my_fault.th"
+     input "2017/what_a_disappointment/what_a_disappointment.th"
      
      
   #equates
@@ -200,6 +228,7 @@ endmap
       equate 47@TTTr 1@mandare_low
       equate 1@batmere 7@mandare_low
       equate 19@entirely_my_fault 11@karstaway
+      equate 9@what_a_disappointment 9@wac
       
   #joins
       join fenestratorp_2@fenestrator cattlegridp_2@cattlegrid
@@ -221,6 +250,8 @@ endmap
      join entirely_my_fault-p1@entirely_my_fault karstawayp_4@karstaway
      
 ###______________ 2018_____________ ###
+
+
   map m2018 -projection plan
     mbath-p@bath
     mcanticle_for_migovec-p@canticle_for_migovec
@@ -247,6 +278,7 @@ endmap
      
   ### deep branch###
   #inputs
+
     input "2018/pivnica_resurvey/pivnica_resurvey.th"
     input "2018/pivnica_2_resurvey/pivnica_2_resurvey.th"
     input "2018/lost_in_a_dream/lost_in_a_dream.th"
@@ -342,7 +374,6 @@ endmap
       join dysentry-1p@dysentry more_like_welding-p1@more_like_welding
       join dysentry-1p@dysentry more_like_welding-p2@more_like_welding
 
-  #joins
 
 
 endsurvey
