@@ -1,7 +1,7 @@
 encoding  utf-8
 #import "ttt.3d"  -surveys  use
 
-survey ttt
+survey ttt -title "Primadona mandare junction and TTT branch to TTT pitch"
   input "ttt.th2"
   input "ttt_extend.th2"
      
@@ -9,7 +9,7 @@ survey ttt
       ttt_1e
      endmap
      
-     map mtttp -projection plan
+     map mttt-p -projection plan
       tttp_1
       tttp_2
       tttp_3

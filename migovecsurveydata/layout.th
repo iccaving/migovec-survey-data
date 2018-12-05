@@ -1,16 +1,16 @@
 encoding  utf-8
 
-lookup topo-date:1
- 2015.12.31 [] "2000 to 2015"
- 2016.12.31 [] "2016"
- 2017.12.31 [] 2017
- 2018.12.31 [] 2018
- #- [] "2013 and later"  #my experimentation suggests that '-' colours undated surveys if last in the list, and all surveys if first in list.  Bruce
-endlookup
+#lookup topo-date:1
+ #2015.12.31 [] "2000 to 2015"
+ #2016.12.31 [] "2016"
+ #2017.12.31 [] 2017
+ #2018.12.31 [] 2018
+ #- [] "2013 and later"  #my experimentation suggests that '-' colours undated surveys if last in the #list, and all surveys if first in list.  Bruce
+#endlookup
 
 layout local
   scale 1 1500
-  colour map-fg topo-date #[92 86 65]
+  colour map-fg altitude #[92 86 65]
   legend on 
   #grid bottom
   #grid-size 100 100 20 m
@@ -70,30 +70,16 @@ def l_rockborder_MY (expr P) =
   T:=identity;
   pickup PenC;
   if cycle P: thclean P fi;
-  thdraw P withcolor(0.5,0.5,0.5);
+  thdraw P withcolor (0.5,0.5,0.5);
 enddef;
 
-def l_pit_my (expr P) = 
-  T:=identity;
-  cas := 0;
-  dlzka := arclength P;
-  mojkrok:=adjust_step(dlzka, 0.25u);
-  pickup PenD;  
-  forever:
-    t := arctime cas of P;
-    mark_ (P,t,0.2u);
-    cas := cas + mojkrok;
-    exitif cas > dlzka + (mojkrok / 3); % for rounding errors
-  endfor;
-  pickup PenC;  
-  thdraw P withcolor(0.5,0.5,0.5);
-enddef;
+
 
   initsymbol("l_rockborder_MY"); 
  initsymbol("a_snow_MY");
   initsymbol("a_ice_MY");
   initsymbol("l_survey_cave_MY");
-  initsymbol("l_pit_MY");
+  
 
 
   def p_u_logger_MY (expr P,R,S,A)=
@@ -119,6 +105,22 @@ initsymbol("p_station_temporary_MY");
     enddef;
     initsymbol("a_water_MY");
 
+    def l_pit_MY (expr P) = 
+      T:=identity;
+      cas := 0;
+      dlzka := arclength P;
+      mojkrok:=adjust_step(dlzka, 0.15u);
+      pickup PenD;  
+      forever:
+        t := arctime cas of P;
+        mark_ (P,t,0.15u);
+        cas := cas + mojkrok;
+        exitif cas > dlzka + (mojkrok / 3); % for rounding errors
+      endfor;
+      pickup PenC;  
+      thdraw P;
+    enddef;
+    initsymbol("l_pit_MY");
 
   endcode
 
@@ -129,8 +131,9 @@ initsymbol("p_station_temporary_MY");
  symbol-assign area snow MY
  symbol-assign line rock-border MY
  symbol-hide line survey 
-symbol-assign area water MY
- symbol-hide point station 
+ symbol-assign area water MY
+ symbol-hide point station
+ symbol-assign line pit MY 
 
 
 endlayout

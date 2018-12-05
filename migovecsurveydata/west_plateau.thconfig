@@ -7,5 +7,5 @@ select mprimadona-p@primadona.sistem_prima -map-level 1
 export map -projection plan -o west_plateau.pdf -layout local 
 #export model -fmt survex -o west_plateau.3d
 
-#export model -fmt survex -o west_plateau.3d
+export model -fmt survex -o west_plateau.3d
 #export database -output west_plateau.sql
