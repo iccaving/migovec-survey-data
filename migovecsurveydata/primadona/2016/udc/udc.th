@@ -2,11 +2,16 @@ encoding  utf-8
 survey udc
   input "udcp.th2"
   
-  map mudcp_1 -projection plan
+  map mudc-p -projection plan
+    mudc-p1
+    mudc-p2
+  endmap
+
+  map mudc-p1 -projection plan
     udcp_1
   endmap
   
-  map mudcp_2 -projection plan
+  map mudc-p2 -projection plan
     udcp_2
   endmap
 

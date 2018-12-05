@@ -1,12 +1,17 @@
 encoding  utf-8
 survey mfi
   input "mfip.th2"
+
+  map mmfi-p -projection plan
+    mmfi-p1
+    mmfi-p2
+  endmap
   
-  map mmfip_1 -projection plan
+  map mmfi-p1 -projection plan
     mfip_1
   endmap
   
-  map mmfip_2 -projection plan
+  map mmfi-p2 -projection plan
     mfip_2
   endmap
 

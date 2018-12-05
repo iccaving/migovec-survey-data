@@ -4,20 +4,16 @@ survey gamblers_ruin
 
 	input gamblers_ruin-p.th2
 
-	map m1p -projection plan
+	map mgamblers_ruin-p -projection plan
 		gamblers_ruin-p1
 	endmap
 	
 
 	centreline
-		date 2016.07.26
 		explo-date 2016.07.26
-		
-		explo-team "Jack Hare"
-		explo-team "Miriam North"
-		explo-team "Clare Tan"
-		explo-team "Rhys Tyers"
+		explo-team "Jack Hare" "Miriam North" "Clare Tan" "Rhys Tyers"
 
+		date 2016.07.26
 		team "Jack Hare" insts tape
 		team "Miriam North" insts tape
 		

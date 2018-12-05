@@ -3,11 +3,16 @@ survey cattlegrid
 
   input "cattlegrid.th2"
   
-  map mcattlegridp_1 -projection plan
+  map mcattlegrid-p -projection plan
+    mcattlegrid-p1
+    mcattlegrid-p2
+  endmap
+
+  map mcattlegrid-p1 -projection plan
     cattlegridp_1
   endmap
   
-  map mcattlegridp_2 -projection plan
+  map mcattlegrid-p2 -projection plan
     cattlegridp_2
   endmap
   
@@ -16,8 +21,7 @@ survey cattlegrid
   centreline
     date 2016.07.22
     explo-date 2016.07.22
-    explo-team "William Scott"
-    explo-team "Rhys Tyers"
+    explo-team "William Scott" "Rhys Tyers"
 
     team "William Scott" insts tape
     team "Rhys Tyers" notes
