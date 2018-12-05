@@ -1,12 +1,23 @@
 encoding  utf-8
 #import "prima1.3d"  -surveys use
-    survey prima1
+    survey prima1 -title "Primadona entrance series"
       input "prima1.th2"
       input "prima1_extend.th2"
       
+      map mprima1-p -projection plan
+        mprimap_ent
+        mprimap_1
+        mprimap_2
+        mprimap_3
+        mprimap_4
+        mprimap_5
+        mprimap_6
+        mprimap_7
+      endmap
+
       map mprimap_ent -projection plan
         prima1p_ent
-        endmap
+      endmap
      map mprimap_1 -projection plan
         prima1p_1
         endmap
@@ -44,6 +55,8 @@ encoding  utf-8
        centreline
        cs lat-long
        fix 35   46.251731    13.757245    1721
+       
+       explo-date 2000.01.01
        date 2000.07.20
         team "Thomas Ayles"  insts
        team "James Hooper" notes

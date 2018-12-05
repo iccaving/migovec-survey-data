@@ -4,10 +4,17 @@ survey primadona -title "Primadona"
 map mprimadona-p -projection plan
   m2018
   m2017 
-  m2016 
+  m2016
+  m2000 
 endmap
 
 ###______________ 2000______________###
+map m2000 -projection plan
+    mttt-p@ttt
+    mzima00-p@zima00
+    mprima1-p@prima1
+    mprima2-p@prima2
+endmap
     input 2000/prima2/prima2.th
     input 2000/prima1/prima1.th
     input 2000/ttt/ttt.th
@@ -37,6 +44,7 @@ endmap
     #equate pov.33 23@galerija
     equate 12@risa2 29@galerija
     equate 15@drugi 34@prima1
+    equate 21b@prima1 1@drugi
      
   join s1_l1@risanke:end s7_l1@prima1:0
     join s1_l2@risanke:0 s7_l2@prima1:end
@@ -127,8 +135,13 @@ endmap
      input "2016/dejavu/dejavu.th"
      input "2016/tight_and_scrotty/tight_and_scrotty.th"
      input "2016/gamblers_ruin/gamblers_ruin.th"
+     input "2016/memorylane/memorylane.th"
+
      
      
+     
+     equate 10@memorylane 19@prima1
+     equate 1@memorylane 8@prima1
      equate 39@karstaway 1@galerija_resurvey
      equate 1@galerija_resurvey 11@galerija
      equate 6@galerija_resurvey  16@galerija
@@ -213,9 +226,11 @@ endmap
      input "2017/batmere/batmere.th"
      input "2017/entirely_my_fault/entirely_my_fault.th"
      input "2017/what_a_disappointment/what_a_disappointment.th"
+     input "2017/testing_the_waters/testing_the_waters.th"
      
      
   #equates
+    equate 8@testing_the_waters 24@prima2
       equate 7@buckwheat 1@TTTr
       equate 4@buckwheat 1@wac
       equate 47@TTTr 1@pov
