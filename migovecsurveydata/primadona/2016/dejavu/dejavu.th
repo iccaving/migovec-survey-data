@@ -2,11 +2,16 @@ encoding  utf-8
 survey dejavu
   input "dejavup.th2"
   
-  map mdejavup_1 -projection plan
+  map mdejavu-p -projection plan
+    mdejavu-p1
+    mdejavu-p2
+  endmap
+
+  map mdejavu-p1 -projection plan
       dejavup_1
   endmap
   
-  map mdejavup_2 -projection plan
+  map mdejavu-p2 -projection plan
       dejavup_2
   endmap
   

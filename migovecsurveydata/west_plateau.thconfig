@@ -2,7 +2,7 @@ encoding  utf-8
 source "prima_ubend_mona.th"
 input layout.th
 input outline_layout.th
-#select mprimadona-p@primadona.sistem_prima -map-level 0
+select mprimadona-p@primadona.sistem_prima -map-level 1
 
 export map -projection plan -o west_plateau.pdf -layout local 
 #export model -fmt survex -o west_plateau.3d
