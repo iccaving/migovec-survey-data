@@ -2,16 +2,22 @@ encoding  utf-8
 survey terminus
 
   input "terminusp.th2"
+
+  map mterminus-p -projection plan
+    mterminus-p1
+    mterminus-p2
+    mterminus-p3
+  endmap
   
-  map mterminusp_1 -projection plan
+  map mterminus-p1 -projection plan
     terminusp_1
   endmap
   
-  map mterminusp_2 -projection plan
+  map mterminus-p2 -projection plan
     terminusp_2
   endmap
   
-  map mterminusp_3 -projection plan
+  map mterminus-p3 -projection plan
     terminusp_3
   endmap
   

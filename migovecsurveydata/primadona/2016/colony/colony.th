@@ -2,15 +2,21 @@ encoding  utf-8
 survey colony
   input "colonyp.th2"
   
-  map mcolonyp_1 -projection plan
+  map mcolony-p -projection plan
+    mcolony-p1
+    mcolony-p2
+    mcolony-p3
+  endmap
+
+  map mcolony-p1 -projection plan
     colonyp_1
   endmap
   
-  map mcolonyp_2 -projection plan
+  map mcolony-p2 -projection plan
     colonyp_2
   endmap
   
-  map mcolonyp_3 -projection plan
+  map mcolony-p3 -projection plan
     colonyp_3
   endmap
 

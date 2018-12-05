@@ -1,12 +1,17 @@
 encoding  utf-8
 survey the_stile
   input "the_stilep.th2"
+
+  map mthe_stile-p -projection plan
+    mthe_stile-p1
+    mthe_stile-p2
+  endmap
   
-  map mthe_stilep_1 -projection plan
+  map mthe_stile-p1 -projection plan
       the_stilep_1
   endmap
   
-  map mthe_stilep_2 -projection plan
+  map mthe_stile-p2 -projection plan
       the_stilep_2
   endmap
   

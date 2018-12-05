@@ -1,11 +1,10 @@
 encoding  utf-8
 survey primadona -title "Primadona"
 
-
-
 map mprimadona-p -projection plan
-  m2017
   m2018
+  m2017 
+  m2016 
 endmap
 
 ###______________ 2000______________###
@@ -99,6 +98,21 @@ endmap
      equate 30@smer0 1@smer1
      
 ###______________ 2016_____________ ###
+    map m2016 -projection plan
+        mcattlegrid-p@cattlegrid
+        mcolony-p@colony
+        mdejavu-p@dejavu
+        mgamblers_ruin-p@gamblers_ruin
+        mhotmk-p@hotmk
+        mkarstaway-p@karstaway
+        mmfi-p@mfi
+        mquantum_state-p@quantum_state
+        mterminus-p@terminus
+        mthe_stile-p@the_stile
+        mtight_and_scrotty-p@tight_and_scrotty
+        mudc-p@udc
+        mwac-p@wac
+    endmap
      input "2016/karstaway/karstaway.th"
      input "2016/mighty_fine_indeed/mfi.th"
      input "2016/hotmk/hotmk.th"
@@ -173,6 +187,7 @@ endmap
         mwhat_a_disappointment-p@what_a_disappointment
         #mbuckwheat-p@buckwheat
      endmap
+
   #inputs
      input "2017/buckwheat/buckwheat.th"
      input "2017/TTTr/TTTr.th"
@@ -237,6 +252,8 @@ endmap
       join s1_l2@fenestrator:end s1_l2@upotyn:0
       join hallelujahp_1@hallelujah plumbers_pp_2@plumbers_p
       join alabasterp_1@alabaster sweet_baby_jesusp_1@sweet_baby_jesus
+
+      join wacp_3@wac what_a_disappointment-p2@what_a_disappointment
 
       join high_and_dry-p2@high_and_dry dogfish-p1@dogfish
 
