@@ -1,8 +1,16 @@
 encoding  utf-8
  #import "prima2.3d"  -surveys use
-    survey prima2
+    survey prima2 -title "Primadona Stara Jama branch"
      input "prima2.th2"
      input "prima2_extend.th2"
+
+      map mprima2-p -projection plan
+        mprima2p_1
+        mprima2p_2
+        mprima2p_3
+        mprima2p_4
+        mprima2p_5
+      endmap
      
       map mprima2p_1 -projection plan
         prima2p_1
