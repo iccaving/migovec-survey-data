@@ -1,0 +1,18 @@
+encoding  utf-8
+survey sistem_prima -title "Primadona Monatip 2018"
+
+input "../../primadona/prima18.th" 
+input "../../s_ubend/s_ubend07.th" # ubend the same from 2007 onwards
+input "../../monatip/s_monatip18.th"
+
+#prima ubend connection
+equate 5@drainpipe.s_ubend  8@drugi.primadona
+
+#first prima monatip connection
+equate BV6@brez_volje.primadona 2@doubletime.monatip
+equate 1@therock.monatip 8@prima1.primadona
+equate 25@therock.monatip 24@prima2.primadona
+equate 20@testing_the_waters.primadona 8@alkatraz.monatip
+
+endsurvey
+

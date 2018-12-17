@@ -1,0 +1,29 @@
+encoding  utf-8
+survey primadona -title "Primadona"
+
+map mprimadona-p -projection plan
+  m2000 
+endmap
+
+###______________ 2000______________###
+map m2000 -projection plan
+    mttt-p@ttt
+    mzima00-p@zima00
+    mprima1-p@prima1
+    mprima2-p@prima2
+endmap
+    input 2000/prima2/prima2.th
+    input 2000/prima1/prima1.th
+    input 2000/ttt/ttt.th
+    input 2000/zima00/zima00.th
+    
+    equate 1@prima1 32@prima2
+    equate 1@prima2 34@ttt
+    equate 1@ttt 22@zima00
+  
+    join tttp_1@ttt prima2p_5@prima2
+    join zima00p_1@zima00 tttp_6@ttt
+    join s1_l1@prima2:0 s7_l4@prima1:end
+    join s1_l1@prima2:end s7_l3@prima1:end
+endsurvey
+

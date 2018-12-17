@@ -1,0 +1,43 @@
+survey damp_squib -title "Damp Squib"
+	centreline
+		date 2018.08.01
+		explo-date 2018.08.01
+
+		team "Arun Paul"
+		team "Clare Tan"
+
+		explo-team "Arun Paul"
+		explo-team "Clare Tan"
+
+		#Page 1
+		1	2	1.93	095	-51
+		2	3	6.23	054	-37
+		3	4	4.02	005	01
+		4	5	1.83	087	05
+		5	6	4.30	293	16
+		6	7	8.35	341	22
+		7	8	1.28	325	55
+		8	9	7.85	021	-08
+		9	10	4.12	026	83
+		10	11	1.58	147	62
+		11	12	1.85	309	71
+		12	13	2.42	024	12
+
+		#Page 2
+		13	14	1.95	327	26
+		14	15	7.59	-	UP
+		16	15	5.20	305	-23
+		16	17	.76	345	08
+		17	18	29.43	-	UP
+		18	19	3.49	112	58
+
+		#NOTES 
+		#STN 1 is PSS
+		#STN 1-(9 is choked rift
+		#STTN 16 is PSS in chamber at bottom of big pitch
+		#STN 18 is bolt at top of pitch
+		#stn 19 is diagonalley stn 4
+		#Stopped back sighting at stn 16 to stn15 leg.
+
+	endcentreline
+endsurvey
