@@ -2,12 +2,12 @@ encoding  utf-8
 survey s_ubend -title "U-bend 571"
 
   #The includes
-  input "ubend/ubend.th"
-  input "ubend2/ubend2.th"
-  input "ubend3/ubend3.th"
-  input "ubend_det/det.th"
-  input "ubend_drainpipe/drainpipe.th"
-  input "ubend_bathtub/bathtub.th"
+  input "2000/ubend/ubend.th"
+  input "2000/ubend2/ubend2.th"
+  input "2000/ubend3/ubend3.th"
+  input "2007/ubend_det/det.th"
+  input "2007/ubend_drainpipe/drainpipe.th"
+  input "2007/ubend_bathtub/bathtub.th"
   
   #The equates
   equate 1@ubend2  6@ubend

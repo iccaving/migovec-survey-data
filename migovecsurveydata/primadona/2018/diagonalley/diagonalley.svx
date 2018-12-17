@@ -1,0 +1,32 @@
+;####DIAGONALLEY####:
+;###pitch off lumos###
+*date 2018.07.30
+;Expedition Klic Globin
+
+;Instruments: DKP/JR/RD
+;Book: DKP/JR/RD
+;Data entered by David Kirkpatrick on 01/08/2018
+
+*begin diagonalley
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+
+;Page 1
+1	2	9.70	-	down
+2	3	1.55	149	14
+3	4	4.90	-	down
+
+;NOTES
+;STN1 is Lumos STN19
+;STN3 is rebelay
+;STN4 is PSS 
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end diagonalley
+
+*equate diagonalley.1 lumos.19
+

@@ -1,0 +1,55 @@
+set xth(ctrl,cp,datlist) {}
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 1114.72m (surface 0.00m, duplicated 0.00m)\nvertical range: 520.45m (from 5@ubend2.s_ubend.sistem_prima at 1797.71m to 1@zima00.primadona.sistem_prima at 1277.26m)\nnorth-south range: 434.39m (from 34@prima1.primadona.sistem_prima at 5122768.12m to 1@zima00.primadona.sistem_prima at 5122333.73m)\neast-west range: 137.72m (from 8@ubend3.s_ubend.sistem_prima at 404257.17m to 3@zima00.primadona.sistem_prima at 404119.45m)\nnumber of shots: 144\nnumber of stations: 151"
+xth_cp_data_tree_insert 17 1 1 sistem_prima sistem_prima "Primadona Monatip 2000" "Primadona Monatip 2000" "length: 1114.72m (surface 0.00m, duplicated 0.00m)\nvertical range: 520.45m (from 5@ubend2.s_ubend.sistem_prima at 1797.71m to 1@zima00.primadona.sistem_prima at 1277.26m)\nnorth-south range: 434.39m (from 34@prima1.primadona.sistem_prima at 5122768.12m to 1@zima00.primadona.sistem_prima at 5122333.73m)\neast-west range: 137.72m (from 8@ubend3.s_ubend.sistem_prima at 404257.17m to 3@zima00.primadona.sistem_prima at 404119.45m)\nnumber of shots: 144\nnumber of stations: 151"
+xth_cp_data_tree_insert 19 17 2 primadona primadona.sistem_prima "Primadona" "Primadona" "length: 984.76m (surface 0.00m, duplicated 0.00m)\nvertical range: 443.74m (from 35@prima1.primadona.sistem_prima at 1721.00m to 1@zima00.primadona.sistem_prima at 1277.26m)\nnorth-south range: 434.39m (from 34@prima1.primadona.sistem_prima at 5122768.12m to 1@zima00.primadona.sistem_prima at 5122333.73m)\neast-west range: 131.26m (from 25@prima2.primadona.sistem_prima at 404250.71m to 3@zima00.primadona.sistem_prima at 404119.45m)\nnumber of shots: 120\nnumber of stations: 124"
+xth_cp_data_tree_insert 23 19 3 prima2 prima2.primadona.sistem_prima "Primadona Stara Jama branch" "Primadona Stara Jama branch" "length: 154.38m (surface 0.00m, duplicated 0.00m)\nvertical range: 20.83m (from 20@prima2.primadona.sistem_prima at 1581.75m to 1@prima2.primadona.sistem_prima at 1560.92m)\nnorth-south range: 67.98m (from 30@prima2.primadona.sistem_prima at 5122643.49m to 1@prima2.primadona.sistem_prima at 5122575.51m)\neast-west range: 33.47m (from 25@prima2.primadona.sistem_prima at 404250.71m to 4@prima2.primadona.sistem_prima at 404217.24m)\nnumber of shots: 31\nnumber of stations: 32"
+xth_cp_data_tree_insert 168 19 3 prima1 prima1.primadona.sistem_prima "Primadona entrance series" "Primadona entrance series" "length: 276.88m (surface 0.00m, duplicated 0.00m)\nvertical range: 153.53m (from 35@prima1.primadona.sistem_prima at 1721.00m to 3@prima1.primadona.sistem_prima at 1567.47m)\nnorth-south range: 131.31m (from 34@prima1.primadona.sistem_prima at 5122768.12m to 1@prima1.primadona.sistem_prima at 5122636.81m)\neast-west range: 38.99m (from 2@prima1.primadona.sistem_prima at 404241.56m to 33@prima1.primadona.sistem_prima at 404202.57m)\nnumber of shots: 35\nnumber of stations: 36"
+xth_cp_data_tree_insert 405 19 3 ttt ttt.primadona.sistem_prima "Primadona mandare junction and TTT branch to TTT pitch" "Primadona mandare junction and TTT branch to TTT pitch" "length: 304.00m (surface 0.00m, duplicated 0.00m)\nvertical range: 121.61m (from 34@ttt.primadona.sistem_prima at 1560.92m to 1@ttt.primadona.sistem_prima at 1439.31m)\nnorth-south range: 176.34m (from 34@ttt.primadona.sistem_prima at 5122575.51m to 1@ttt.primadona.sistem_prima at 5122399.17m)\neast-west range: 55.10m (from 14@ttt.primadona.sistem_prima at 404241.41m to 1@ttt.primadona.sistem_prima at 404186.31m)\nnumber of shots: 33\nnumber of stations: 34"
+xth_cp_data_tree_insert 593 19 3 zima00 zima00.primadona.sistem_prima "" "" "length: 249.50m (surface 0.00m, duplicated 0.00m)\nvertical range: 163.21m (from 20@zima00.primadona.sistem_prima at 1440.47m to 1@zima00.primadona.sistem_prima at 1277.26m)\nnorth-south range: 65.44m (from 22@zima00.primadona.sistem_prima at 5122399.17m to 1@zima00.primadona.sistem_prima at 5122333.73m)\neast-west range: 66.86m (from 22@zima00.primadona.sistem_prima at 404186.31m to 3@zima00.primadona.sistem_prima at 404119.45m)\nnumber of shots: 21\nnumber of stations: 22"
+xth_cp_data_tree_insert 757 17 2 s_ubend s_ubend.sistem_prima "U-bend 571" "U-bend 571" "length: 129.96m (surface 0.00m, duplicated 0.00m)\nvertical range: 82.29m (from 5@ubend2.s_ubend.sistem_prima at 1797.71m to 16@ubend3.s_ubend.sistem_prima at 1715.42m)\nnorth-south range: 36.27m (from 4@ubend2.s_ubend.sistem_prima at 5122764.78m to 15@ubend3.s_ubend.sistem_prima at 5122728.51m)\neast-west range: 14.50m (from 8@ubend3.s_ubend.sistem_prima at 404257.17m to 4@ubend2.s_ubend.sistem_prima at 404242.67m)\nnumber of shots: 24\nnumber of stations: 27"
+xth_cp_data_tree_insert 759 757 3 ubend ubend.s_ubend.sistem_prima "" "" "length: 16.16m (surface 0.00m, duplicated 0.00m)\nvertical range: 7.30m (from 6@ubend.s_ubend.sistem_prima at 1786.51m to 1@ubend.s_ubend.sistem_prima at 1779.21m)\nnorth-south range: 6.43m (from 6@ubend.s_ubend.sistem_prima at 5122756.50m to 1@ubend.s_ubend.sistem_prima at 5122750.07m)\neast-west range: 4.31m (from 1@ubend.s_ubend.sistem_prima at 404251.86m to 6@ubend.s_ubend.sistem_prima at 404247.55m)\nnumber of shots: 5\nnumber of stations: 6"
+xth_cp_data_tree_insert 779 757 3 ubend2 ubend2.s_ubend.sistem_prima "Ubend 2" "Ubend 2" "length: 20.69m (surface 0.00m, duplicated 0.00m)\nvertical range: 11.70m (from 5@ubend2.s_ubend.sistem_prima at 1797.71m to 3@ubend2.s_ubend.sistem_prima at 1786.01m)\nnorth-south range: 8.28m (from 4@ubend2.s_ubend.sistem_prima at 5122764.78m to 1@ubend2.s_ubend.sistem_prima at 5122756.50m)\neast-west range: 4.88m (from 1@ubend2.s_ubend.sistem_prima at 404247.55m to 4@ubend2.s_ubend.sistem_prima at 404242.67m)\nnumber of shots: 4\nnumber of stations: 5"
+xth_cp_data_tree_insert 796 757 3 ubend3 ubend3.s_ubend.sistem_prima "" "" "length: 93.11m (surface 0.00m, duplicated 0.00m)\nvertical range: 66.87m (from 4@ubend3.s_ubend.sistem_prima at 1782.29m to 16@ubend3.s_ubend.sistem_prima at 1715.42m)\nnorth-south range: 21.56m (from 1@ubend3.s_ubend.sistem_prima at 5122750.07m to 15@ubend3.s_ubend.sistem_prima at 5122728.51m)\neast-west range: 6.57m (from 8@ubend3.s_ubend.sistem_prima at 404257.17m to 13@ubend3.s_ubend.sistem_prima at 404250.60m)\nnumber of shots: 15\nnumber of stations: 16"
+xth_cp_data_tree_create
+set xth(ctrl,cp,maplist) {}
+xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
+xth_cp_map_tree_insert projection 0 p2 {} 0 extended {} {} {}
+xth_cp_map_tree_insert map 0 21X1 p1 1 mprimadona-p mprimadona-p@primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 0 22X1 21X1 2 m2000 m2000@primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 585X1 22X1 3 mttt-p mttt-p@ttt.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 0 741X1 22X1 3 mzima00-p mzima00-p@zima00.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 742X1 741X1 4 mzima00p_1 mzima00p_1@zima00.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 743X1 741X1 4 mzima00p_2 mzima00p_2@zima00.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 744X1 741X1 4 mzima00p_3 mzima00p_3@zima00.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 745X1 741X1 4 mzima00p_4 mzima00p_4@zima00.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 746X1 741X1 4 mzima00p_5 mzima00p_5@zima00.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 747X1 741X1 4 mzima00p_6 mzima00p_6@zima00.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 0 386X1 22X1 3 mprima1-p mprima1-p@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 387X1 386X1 4 mprimap_ent mprimap_ent@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 388X1 386X1 4 mprimap_1 mprimap_1@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 389X1 386X1 4 mprimap_2 mprimap_2@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 390X1 386X1 4 mprimap_3 mprimap_3@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 391X1 386X1 4 mprimap_4 mprimap_4@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 392X1 386X1 4 mprimap_5 mprimap_5@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 393X1 386X1 4 mprimap_6 mprimap_6@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 394X1 386X1 4 mprimap_7 mprimap_7@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 0 155X1 22X1 3 mprima2-p mprima2-p@prima2.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 156X1 155X1 4 mprima2p_1 mprima2p_1@prima2.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 157X1 155X1 4 mprima2p_2 mprima2p_2@prima2.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 158X1 155X1 4 mprima2p_3 mprima2p_3@prima2.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 159X1 155X1 4 mprima2p_4 mprima2p_4@prima2.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 160X1 155X1 4 mprima2p_5 mprima2p_5@prima2.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 161X1 p2 1 mprima2e mprima2e@prima2.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 395X1 p2 1 mprima1e mprima1e@prima1.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 584X1 p2 1 mttte mttte@ttt.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 740X1 p2 1 mzima00e mzima00e@zima00.primadona.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 776X1 p1 1 mubendp_1 mubendp_1@ubend.s_ubend.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 793X1 p1 1 mubend2p_1 mubend2p_1@ubend2.s_ubend.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 855X1 p1 1 mubend3p_1 mubend3p_1@ubend3.s_ubend.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 856X1 p1 1 mubend3p_2 mubend3p_2@ubend3.s_ubend.sistem_prima "" ""
+xth_cp_map_tree_insert map 1 857X1 p1 1 mubend3p_3 mubend3p_3@ubend3.s_ubend.sistem_prima "" ""
+xth_cp_map_tree_create
+xth_cp_comp_stat 1115 34
+set xth(th_exit_state) 2
+set xth(th_exit_number) 1545054168
+

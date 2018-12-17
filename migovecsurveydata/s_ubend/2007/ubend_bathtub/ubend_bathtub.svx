@@ -1,0 +1,21 @@
+;Ubend squeeze extensions
+; Bathtub: Below Detonator Revenge, bathtub has a drainpipe drop
+
+;Date: 4/8/07
+;Instruments / Book: Alvin Weng Meng Chow & Sandeep Mavadia
+
+;Data entered by Jarvist Frost 4/8/07
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin ubend_bathtub
+;station 3 from ubend_det is station 5 in ubend_bathtub
+1	2	4.44	047	+30	;	1 2.5 (pitch) n/a ; .1 is PSS cairn next to drainpipe pitch
+2	3	13.14	-	up	;	3 1.5 n/a 2
+4	3	3.02	234	-60	;	.5 1.5 2.5 3.5
+4	5	3.26	331	+65	;	
+
+*end ubend_bathtub
+
+*equate ubend_det.3 ubend_bathtub.5
