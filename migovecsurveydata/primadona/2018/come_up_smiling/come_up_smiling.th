@@ -1,4 +1,9 @@
 survey come_up_smiling -title "Come up Smiling"
+	input "come_up_smiling-p.th2"
+
+	map mcome_up_smiling-p -projection plan
+		come_up_smiling-p1
+	endmap
 
 	centreline
 		date 2018.07.16
