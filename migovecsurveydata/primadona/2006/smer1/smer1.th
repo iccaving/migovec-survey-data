@@ -2,16 +2,22 @@ encoding  utf-8
 survey smer1 
 input "smer1p.th2"
   
-  map mbrez_smer1p_1 -projection plan
+  map msmer1p_1 -projection plan
     smer1p_1
   endmap
   
-  map mbrez_smer1p_2 -projection plan
+  map msmer1p_2 -projection plan
     smer1p_2
   endmap
   
-  map mbrez_smer1p_3 -projection plan
+  map msmer1p_3 -projection plan
     smer1p_3
+  endmap
+
+  map msmer1-p -projection plan
+    msmer1p_3
+    msmer1p_2
+    msmer1p_1
   endmap
   
   join smer1p_1 smer1p_2

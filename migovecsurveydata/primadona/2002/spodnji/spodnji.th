@@ -23,6 +23,12 @@ survey spodnji
   map mspodnjip_4 -projection plan
     spodnjip_4
   endmap
+
+  map mspodnji-p -projection plan
+    mspodnjip_4
+    mspodnjip_3
+    mspodnjip_2
+  endmap
   
   join spodnjip_1 spodnjip_2
   join spodnjip_2 spodnjip_3

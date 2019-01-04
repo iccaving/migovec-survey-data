@@ -15,6 +15,11 @@ survey drugi
    drugip_3  
   endmap
   
+  map mdrugi-p -projection plan
+    mdrugip_3
+    mdrugip_2
+    mdrugip_1
+  endmap
   join drugip_1 drugip_2
   
   centreline

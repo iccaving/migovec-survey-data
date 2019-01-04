@@ -6,6 +6,7 @@ survey risa2
    map mrisa2_e -projection extended
    	risa2_e1
    endmap
+
   map mrisa2p_1 -projection plan
     risa2p_1  
   endmap
@@ -16,6 +17,12 @@ survey risa2
   
    map mrisa2p_3 -projection plan
     risa2p_3  
+  endmap
+
+  map mrisa2-p -projection plan
+    mrisa2p_3
+    mrisa2p_2
+    mrisa2p_1
   endmap
   
   join risa2p_1 risa2p_2

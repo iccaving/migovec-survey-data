@@ -1,6 +1,18 @@
 encoding  utf-8
 survey primadona -title "Primadona 2018"
 
+map mprimadona-p -projection plan
+    m2000
+    m2001
+    m2002
+    m2004
+    m2005
+    m2006  
+    m2018
+    m2017 
+    m2016
+endmap
+
 ###______________ 2000______________###
 map m2000 -projection plan
     mttt-p@ttt
@@ -24,6 +36,13 @@ endmap
     
     
 ###______________ 2001_____________ ###
+    map m2001 -projection plan
+        mrisa2-p@risa2
+        mrisanke-p@risanke
+        mpov-p@pov
+        mgalerija-p@galerija
+        mdrugi-p@drugi
+    endmap
   input 2001/risanke/risanke.th
     input 2001/risa2/risa2.th
     input 2001/pov/pov.th
@@ -54,6 +73,14 @@ endmap
      
      
 ###______________ 2002_____________ ###
+
+    map m2002 -projection plan
+        msmer0-p@smer0
+        majdovscina-p@ajdovscina
+        mspodnji-p@spodnji
+        mmilanova-p@milanova
+    endmap
+
     input "2002/smer0/smer0.th"
     input "2002/ajdovscina/ajdovscina.th"
     input "2002/spodnji/spodnji.th"
@@ -75,28 +102,37 @@ endmap
     join s1_l2@smer0:0 s4_l2@galerija:end
     
 ###______________ 2004_____________ ###
-     input "2004/popotresni/popotresni.th"
-     
-     equate POP25@popotresni 27@galerija
-     
-     join s1_l3@galerija s4_l2@popotresni
-     join s1_l2@galerija s4_l3@popotresni:end
-     join s3_l1@risa2 s4_l1@popotresni:end
-     join s3_l2@risa2 s4_l3@popotresni:0
-     
-     ###______________ 2005_____________ ###
-     input "2005/brez_volje/brez_volje.th"
-     
-     equate POP22@popotresni POP22@brez_volje
-     
-     join s1_l1@brez_volje:0 s3_l1@popotresni:end
-     join s1_l2@brez_volje:end s3_l2@popotresni:0
+    map m2004 -projection plan
+        mpopotresni-p@popotresni
+    endmap
+    input "2004/popotresni/popotresni.th"
+    
+    equate POP25@popotresni 27@galerija
+    
+    join s1_l3@galerija s4_l2@popotresni
+    join s1_l2@galerija s4_l3@popotresni:end
+    join s3_l1@risa2 s4_l1@popotresni:end
+    join s3_l2@risa2 s4_l3@popotresni:0
+    
+    ###______________ 2005_____________ ###
+    map m2005 -projection plan
+        mbrez_volje-p@brez_volje
+    endmap
+    input "2005/brez_volje/brez_volje.th"
+    
+    equate POP22@popotresni POP22@brez_volje
+    
+    join s1_l1@brez_volje:0 s3_l1@popotresni:end
+    join s1_l2@brez_volje:end s3_l2@popotresni:0
     
 ###______________ 2006_____________ ###
-     input "2006/smer1/smer1.th"
-     
-     equate 18@smer1 43@smer0
-     equate 30@smer0 1@smer1
+    map m2006 -projection plan
+        msmer1-p@smer1
+    endmap
+    input "2006/smer1/smer1.th"
+    
+    equate 18@smer1 43@smer0
+    equate 30@smer0 1@smer1
      
 ###______________ 2016_____________ ###
     map m2016 -projection plan
@@ -114,58 +150,59 @@ endmap
         mudc-p@udc
         mwac-p@wac
     endmap
-     input "2016/karstaway/karstaway.th"
-     input "2016/mighty_fine_indeed/mfi.th"
-     input "2016/hotmk/hotmk.th"
-     input "2016/wac/wac.th"
-     input "2016/colony/colony.th"
-     input "2016/udc/udc.th"
-     input "2016/Galeria_Resurvey/Galeria_Survey.th"
-     input "2016/cattlegrid/cattlegrid.th"
-     input "2016/the_stile/the_stile.th"
-     input "2016/quantum_state/quantum_state.th"
-     input "2016/terminus/terminus.th"
-     input "2016/dejavu/dejavu.th"
-     input "2016/tight_and_scrotty/tight_and_scrotty.th"
-     input "2016/gamblers_ruin/gamblers_ruin.th"
-     input "2016/memorylane/memorylane.th"
 
-     
-     
-     
-     equate 10@memorylane 19@prima1
-     equate 1@memorylane 8@prima1
-     equate 39@karstaway 1@galerija_resurvey
-     equate 1@galerija_resurvey 11@galerija
-     equate 6@galerija_resurvey  16@galerija
-     equate 5@mfi 1@karstaway
-     equate 1@mfi 12@hotmk
-     equate 30@wac 1@hotmk
-     equate 9@colony 1@hotmk
-     equate 11@udc 1@colony
-     equate 23@cattlegrid 16@galerija
-     equate 1@the_stile 16@galerija
-     equate 15@cattlegrid 17@the_stile
-     equate 14@quantum_state 11@galerija
-     equate 16@terminus 1@quantum_state
-     equate 9@tight_and_scrotty 10@colony
-     equate 9@gamblers_ruin 5@udc
-     
-     join mfip_2@mfi hotmkp_1@hotmk
-     join s1_l1@wac:0 s3_l1@hotmk:end
-     join s1_l2@wac s3_l2@hotmk
-     join hotmkp_3@hotmk colonyp_1@colony
-     join colonyp_3@colony udcp_1@udc
-     join terminusp_1@terminus quantum_statep_1@quantum_state
-     
-     join s2_l1@the_stile:end s2_l1@cattlegrid:0
-     join s2_l2@the_stile:0 s2_l2@cattlegrid:end
-     join s1_l1@the_stile:0 s1_l4@smer0:end
-     join s1_l2@the_stile:end s1_l5@smer0:0
-     join s1_l4@the_stile:end s4_l3@galerija:0
-     join s1_l3@the_stile:0 s4_l1@galerija:end
-     join s2_l1@quantum_state:end s4_l5@galerija:0
-     join s2_l2@quantum_state:0 s4_l4@galerija:end
+    input "2016/karstaway/karstaway.th"
+    input "2016/mighty_fine_indeed/mfi.th"
+    input "2016/hotmk/hotmk.th"
+    input "2016/wac/wac.th"
+    input "2016/colony/colony.th"
+    input "2016/udc/udc.th"
+    input "2016/Galeria_Resurvey/Galeria_Survey.th"
+    input "2016/cattlegrid/cattlegrid.th"
+    input "2016/the_stile/the_stile.th"
+    input "2016/quantum_state/quantum_state.th"
+    input "2016/terminus/terminus.th"
+    input "2016/dejavu/dejavu.th"
+    input "2016/tight_and_scrotty/tight_and_scrotty.th"
+    input "2016/gamblers_ruin/gamblers_ruin.th"
+    input "2016/memorylane/memorylane.th"
+
+    
+    
+    
+    equate 10@memorylane 19@prima1
+    equate 1@memorylane 8@prima1
+    equate 39@karstaway 1@galerija_resurvey
+    equate 1@galerija_resurvey 11@galerija
+    equate 6@galerija_resurvey  16@galerija
+    equate 5@mfi 1@karstaway
+    equate 1@mfi 12@hotmk
+    equate 30@wac 1@hotmk
+    equate 9@colony 1@hotmk
+    equate 11@udc 1@colony
+    equate 23@cattlegrid 16@galerija
+    equate 1@the_stile 16@galerija
+    equate 15@cattlegrid 17@the_stile
+    equate 14@quantum_state 11@galerija
+    equate 16@terminus 1@quantum_state
+    equate 9@tight_and_scrotty 10@colony
+    equate 9@gamblers_ruin 5@udc
+    
+    join mfip_2@mfi hotmkp_1@hotmk
+    join s1_l1@wac:0 s3_l1@hotmk:end
+    join s1_l2@wac s3_l2@hotmk
+    join hotmkp_3@hotmk colonyp_1@colony
+    join colonyp_3@colony udcp_1@udc
+    join terminusp_1@terminus quantum_statep_1@quantum_state
+    
+    join s2_l1@the_stile:end s2_l1@cattlegrid:0
+    join s2_l2@the_stile:0 s2_l2@cattlegrid:end
+    join s1_l1@the_stile:0 s1_l4@smer0:end
+    join s1_l2@the_stile:end s1_l5@smer0:0
+    join s1_l4@the_stile:end s4_l3@galerija:0
+    join s1_l3@the_stile:0 s4_l1@galerija:end
+    join s2_l1@quantum_state:end s4_l5@galerija:0
+    join s2_l2@quantum_state:0 s4_l4@galerija:end
      
 ###______________ 2017_____________ ###
      map m2017 -projection plan
@@ -299,6 +336,8 @@ endmap
     mtiger_tiger-p@tiger_tiger
     mtestify-p@testify
     mthe_aqueduct-p@the_aqueduct
+    mcome_up_smiling-p@come_up_smiling
+    mcome_up_smiling_2-p@come_up_smiling_2
   endmap
      
   ### deep branch###
@@ -401,6 +440,7 @@ endmap
          equate 23@cattlegrid 8@come_up_smiling
          equate 0@come_up_smiling_2 46@smer0
          equate 5@come_up_smiling_2 0@come_up_smiling
+         equate 23@cattlegrid 8@come_up_smiling
          equate 0@dysentry 6@more_like_welding
          equate 1@lumos 1@hammerhead
          equate 3@lumos 6@hammerhead2
@@ -410,6 +450,7 @@ endmap
       #joins
       join dysentry-1p@dysentry more_like_welding-p1@more_like_welding
       join dysentry-1p@dysentry more_like_welding-p2@more_like_welding
+      join come_up_smiling-p1@come_up_smiling come_up_smiling_2-p1@come_up_smiling_2
 
 
 
