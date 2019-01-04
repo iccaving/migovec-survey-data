@@ -21,6 +21,14 @@ survey popotresni
   map mpopotresnip_5 -projection plan
     popotresnip_5
   endmap
+
+  map mpopotresni-p -projection plan
+    mpopotresnip_5
+    mpopotresnip_4
+    mpopotresnip_3
+    mpopotresnip_2
+    mpopotresnip_1
+  endmap
   
   join popotresnip_1 popotresnip_2
   join popotresnip_2 popotresnip_3

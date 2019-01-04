@@ -1,7 +1,13 @@
 encoding  utf-8
 survey monatip
+  map mmonatip-p -projection plan
+    m2007
+  endmap
 
   ######________________2007________________######
+  map m2007 -projection plan
+    mmonatip1-p@monatip1
+  endmap
   input "2007/monatip1/monatip1.th"
   
   ######________________2008________________######

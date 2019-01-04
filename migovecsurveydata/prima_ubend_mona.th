@@ -1,9 +1,16 @@
 encoding  utf-8
 survey sistem_prima -title "Caves of the Western Migovec Plateau"
 
-input "primadona/primadona.th"
+map msystem-p -projection plan
+	mmonatip-p@monatip
+	mprimadona-p@primadona
+endmap
+
+input "primadona/prima18.th"
 input "s_ubend/s_ubend.th"
-input "monatip/s_monatip.th"
+input "monatip/s_monatip18.th"
+
+
 
 #input "others/gondolin/gondolin.th"
 #input "planika/planika/planika.th"
