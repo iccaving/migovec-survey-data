@@ -1,0 +1,44 @@
+encoding  utf-8
+survey deep
+###______________ 2018_____________ ###
+
+
+  map m2018 -projection plan
+
+    mchocolate_river-p@chocolate_river
+    mklic_globin-p@klic_globin
+    mmoonraker-p@moonraker
+    mmoonraker_2-p@moonraker_2
+    mmouseleum-p@mouseleum
+    mmouseleum_2-p@mouseleum_2
+    mthe_aqueduct-p@the_aqueduct
+
+  endmap
+
+    input "../2018/moonraker/moonraker.th"
+    input "../2018/moonraker_2/moonraker_2.th"   
+    input "../2018/the_aqueduct/the_aqueduct.th" 
+    input "../2018/klic_globin/klic_globin.th"
+    input "../2018/mouseleum/mouseleum.th"
+    input "../2018/mouseleum_2/mouseleum_2.th"
+    input "../2018/chocolate_river/chocolate_river.th"
+
+     equate 37@the_aqueduct 25@moonraker
+     equate 28@moonraker 0@klic_globin
+     equate 9@moonraker_2 9@moonraker
+     equate 0@moonraker 20@mouseleum
+     equate 0@mouseleum 8@mouseleum_2
+     equate 3@mouseleum_2 12@chocolate_river
+
+  #joins
+    join klic_globin-p1@klic_globin moonraker_2-p1@moonraker_2
+    join moonraker_2-p1@moonraker_2 moonraker-p2@moonraker
+    join moonraker-p1@moonraker klic_globin-p1@klic_globin
+    join moonraker-p3@moonraker mouseleum-p1@mouseleum
+    join moonraker-p1@moonraker the_aqueduct-p4@the_aqueduct
+    join s1_l1@mouseleum:end s4_l1@moonraker:0
+    join s1_l2@mouseleum:end s4_l2@moonraker:end
+    join mouseleum_2-p1@mouseleum_2 mouseleum-p4@mouseleum
+    join mouseleum_2-p2@mouseleum_2 chocolate_river-p1@chocolate_river
+
+endsurvey

@@ -6,7 +6,8 @@ survey dysentry -title "Dysentry"
 
   centerline
     date 2018.07.22 
-    # team tanguy racine and David Wilson 
+     team "Tanguy Racine" insts
+     team "David Wilson" notes
     # declination 0.00 degrees
     units length meters
     units compass clino degrees
@@ -714,17 +715,29 @@ survey dysentry -title "Dysentry"
     map m4p -projection plan
      dysentry-p4
    endmap
+   
+   map m5p -projection plan
+    dysentry-p5
+   endmap
+   
+   map m6p -projection plan 
+    dysentry-p6
+   endmap
 
    map mdysentry-p -projection plan
     m1p
     m2p
     m3p
     m4p
+    m5p
+    m6p
    endmap
 
    join dysentry-1p dysentry-p4
    join dysentry-p3 dysentry-p2
    join dysentry-p3 dysentry-p4
+   join dysentry-p5 dysentry-p3
+   join dysentry-p6 dysentry-1p
    
   ## map m1s -projection extended
   ##   Dysentery-1s

@@ -1,14 +1,14 @@
 encoding  utf-8
 layout local
   language en
-  scale 1 500
- colour map-fg altitude #[92 86 65]
+  scale 1 200
+ #colour map-fg altitude #[92 86 65]
   legend on 
   map-header 105 100 nw
   grid-coords border
 
   code tex-map
-      \cavename={Primadona-Monatip-Ubend}
+      \cavename={M-19 (Bullshit Pot)}
   endcode  
   
   #Contains the user:defined symbols used in the obir survey map
@@ -228,4 +228,3 @@ text de "line u:openshaft_MY" "Eingangskessel"
 text en "line u:texture_MY" "bedrock wall"
 text de "line u:texture_MY" "Felsboden"
 text de "line u:flowstone_MY" "flächiger Sinter"
-
