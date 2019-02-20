@@ -1,0 +1,18 @@
+set xth(ctrl,cp,datlist) {}
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 193.48m (surface 0.00m, duplicated 0.00m)\nvertical range: 10.39m (from 3@dysentry at 2.45m to 21@dysentry at -7.94m)\nnorth-south range: 35.45m (from 16@dysentry at 26.56m to 45@dysentry at -8.89m)\neast-west range: 71.34m (from 0@dysentry at 0.00m to 48@dysentry at -71.34m)\nnumber of shots: 569\nnumber of stations: 569"
+xth_cp_data_tree_insert 18 1 1 dysentry dysentry "Dysentry" "Dysentry" "length: 193.48m (surface 0.00m, duplicated 0.00m)\nvertical range: 10.39m (from 3@dysentry at 2.45m to 21@dysentry at -7.94m)\nnorth-south range: 35.45m (from 16@dysentry at 26.56m to 45@dysentry at -8.89m)\neast-west range: 71.34m (from 0@dysentry at 0.00m to 48@dysentry at -71.34m)\nnumber of shots: 569\nnumber of stations: 569"
+xth_cp_data_tree_create
+set xth(ctrl,cp,maplist) {}
+xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
+xth_cp_map_tree_insert map 0 352X1 p1 1 mdysentry-p mdysentry-p@dysentry "" ""
+xth_cp_map_tree_insert map 1 346X1 352X1 2 m1p m1p@dysentry "" ""
+xth_cp_map_tree_insert map 1 347X1 352X1 2 m2p m2p@dysentry "" ""
+xth_cp_map_tree_insert map 1 348X1 352X1 2 m3p m3p@dysentry "" ""
+xth_cp_map_tree_insert map 1 349X1 352X1 2 m4p m4p@dysentry "" ""
+xth_cp_map_tree_insert map 1 350X1 352X1 2 m5p m5p@dysentry "" ""
+xth_cp_map_tree_insert map 1 351X1 352X1 2 m6p m6p@dysentry "" ""
+xth_cp_map_tree_create
+xth_cp_comp_stat 193 6
+set xth(th_exit_state) 2
+set xth(th_exit_number) 1550661047
+

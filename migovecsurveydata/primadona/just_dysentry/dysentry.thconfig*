@@ -1,0 +1,5 @@
+encoding  utf-8
+source ../2018/dysentry/dysentry.th
+input layout.th
+
+export map -o dysentry.pdf -layout local -layout-debug station-names
