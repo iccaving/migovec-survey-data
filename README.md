@@ -4,7 +4,7 @@ This contains the survey data of the Tolminski Migovec cave system, as well as m
 Most of the data is in survex format, and rolled over from the previous migovecsurveydata repository. 
 We are now in the process of migrating the Survex data collected from 1974-2018 and migrating it to Therion.
 
-## How to contribute
+## How to contribute?
 
 ### Survex to Therion format
 We are working off existing .svx files. The aim is to convert the .svx file to .th format. The data formats are very similar, but some differences persist.
@@ -42,7 +42,7 @@ map mMyCave-<p/e> -projection <plan/extended>
 endmap
 
 #______Year1______
-map mYear1-<p/e> -projection <plan/extended>
+map mYear1-<p/e> -projection <plan/extended> -title "Year 1"
  mPassage1-<p/e>
  mPassage2-<p/e>
  ...
@@ -59,7 +59,7 @@ join scrapX@passage_1 scrapY@passage_b #some join commands between survey maps
 ...
 
 #______Year2______
-map mYear1-<p/e> -projection <plan/extended>
+map mYear1-<p/e> -projection <plan/extended> -title "Year 2"
  mPassageA-<p/e>
  mPassageB-<p/e>
  ...
@@ -145,6 +145,47 @@ join LineId1@MySurveyX.MyCave1:0 LineId2@MySurveyY.MyCave2:end #a tedious manual
 
 endsurvey
 ```
+
+### How do I...?
+
+#### Compile on therion
+The main .thconfig file is located in the _config folder.
+
+At the moment, the thconfig file looks like this:
+
+```
+source "prima_ubend_mona.th" # the main MySystem.th file.
+input ../_layouts/layout.th # an altitude colour coded layout (layout name = local. All the relevant commands are found in layout.th
+input ../_layouts/outline_layout.th  # another layout hiding all in-cave features and producing an outline only map of the cave
+
+#select msystem-p@sistem_prima #commented out, but this map (level 0) contains the cascade of:
+                                              #cave maps (level 1)
+                                                #year maps (level 2)
+                                                  #passage maps (level 3)
+                                                    #scrap maps (level 4)
+                                                      #scraps (level 5), the individual building blocks
+
+
+export map -projection plan -o ../_outputs/sys_prima.pdf -layout local #export a pdf map of the system, using the local layout.
+#export model -fmt survex -o ../_outputs/west_plateau.3d #can export an Aven readable .3d file
+#export database -output ../_outputs/west_plateau.sql #exports all the commands to create sql tables which can be queried.
+```
+
+You can create your own .thconfig file and select different map. For example, try selecting simply primadona, in plan view:
+
+`select mprimadona-p@primadona.sistem_prima`
+
+maybe one year of exploration in primadona:
+`select m2018-p@primadona.sistem_prima`
+
+a single cave passage:
+`select mthe_aqueduct-p@the_aqueduct.primadona.sistem_prima`
+
+or (god forbid) a single scrap:
+`select m1p@the_aqueduct.primadona.sistem_prima`
+and see what the result is.
+
+## Final considerations
 This survey data was collected between the year 1974-2018 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
 
 
