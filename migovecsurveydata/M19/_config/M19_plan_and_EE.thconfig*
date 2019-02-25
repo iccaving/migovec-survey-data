@@ -1,0 +1,10 @@
+encoding  utf-8
+source ../_xtherion/M19.th
+
+input layout.th
+
+export map -o ../_outputs/M19.pdf -projection plan -layout local #-layout-debug station-names
+export map -o ../_outputs/M19_EE.pdf -projection extended -layout local #-layout-debug station-names
+
+#export model -o ../_outputs/M19.lox
+export model -o ../_outputs/M19.kml
