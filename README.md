@@ -33,9 +33,9 @@ Below the input blocks, you will find a series `equate` commands, this is where 
 The main cave.th file will look something similar to this:
 
 ```
-survey BigCave
+survey MyCave
 
-map mBigCave-<p/e> -projection <plan/extended>
+map mMyCave-<p/e> -projection <plan/extended>
  mYear1-<p/e>
  mYear2-<p/e>
  ...
@@ -124,7 +124,27 @@ endsurvey
 ```
 
 ### Additional tips
+You will find that additionally, you need to specify cave connections. 
+These are taken into account in the `MySystem.th` file.
 
+This will look like:
+
+```
+survey MySystem 
+map mMySystem-<p/e> -projection <plan/extended> # The system map contains each cave map.
+ mMyCave1-<p/e> #the cavemaps contain the specific year maps, which themselves contain passage maps. The latter contain scraps.
+ mMyCave2-<p/e>
+endmap
+
+input MyCave.th
+input MyCave2.th
+
+equate stationX@MySurveyX.MyCave1 stationY@MySurveyY.MyCave2 #There is no 'year' layer in the survey hierarchy.
+
+join LineId1@MySurveyX.MyCave1:0 LineId2@MySurveyY.MyCave2:end #a tedious manual join between two points of lines within surveys of different caves.
+
+endsurvey
+```
 This survey data was collected between the year 1974-2018 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
 
 
