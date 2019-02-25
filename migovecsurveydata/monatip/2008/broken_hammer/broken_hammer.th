@@ -1,12 +1,17 @@
 encoding  utf-8
 survey broken_hammer
   input "broken_hammerp.th2"
+
+  map mbroken_hammer-p -projection plan
+    mbroken_hammer-p1
+    mbroken_hammer-p2
+  endmap
   
-  map mbroken_hammerp_1 -projection plan
+  map mbroken_hammer-p1 -projection plan
     broken_hammerp_1
   endmap
   
-  map mbroken_hammerp_2 -projection plan
+  map mbroken_hammer-p2 -projection plan
     broken_hammerp_2
   endmap
   

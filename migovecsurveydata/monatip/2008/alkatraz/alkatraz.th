@@ -1,12 +1,17 @@
 encoding  utf-8
 survey alkatraz
   input "alkatrazp.th2"
+
+  map malkatraz-p -projection plan
+    malkatraz-p1
+    malkatraz-p2
+  endmap
   
-  map malkatrazp_1 -projection plan
+  map malkatraz-p1 -projection plan
     alkatrazp_1
   endmap
   
-  map malkatrazp_2 -projection plan
+  map malkatraz-p2 -projection plan
     alkatrazp_2
   endmap
   

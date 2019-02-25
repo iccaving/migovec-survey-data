@@ -1,10 +1,26 @@
 encoding  utf-8
 survey monatip
+  map mmonatip-p -projection plan
+    m2007
+    m2008
+  endmap
 
   ######________________2007________________######
+  map m2007 -projection plan
+    mmonatip1-p@monatip1
+  endmap
   input "2007/monatip1/monatip1.th"
   
   ######________________2008________________######
+  map m2008 -projection plan
+    mmonatip2-p@monatip2
+    mmonatip3-p@monatip3
+    mmonatip4-p@monatip4
+    mbroken_hammer-p@broken_hammer
+    mdoubletime-p@doubletime
+    malkatraz-p@alkatraz
+  endmap
+
   input "2008/monatip2/monatip2.th"
   input "2008/monatip3/monatip3.th"
   input "2008/broken_hammer/broken_hammer.th"
@@ -44,6 +60,7 @@ survey monatip
   equate 35@monatip2 44@cloacamaxima
 
   ######________________2018________________######
+  input "2018/aleksandrija/aleksandrija.th"
   input "2018/cloaca_resurvey/cloaca_resurvey.th"
   input "2018/alkatraz_disto_resurvey/alkatraz_disto_resurvey.th"
   input "2018/well_hung/well_hung.th
@@ -52,6 +69,7 @@ survey monatip
   equate 12@cloacamaxima 12@cloaca_resurvey
   equate 0@cloaca_resurvey 0@alkatraz_disto_resurvey
   equate 9@well_hung 25@cloacamaxima
+  equate 0@aleksandrija 49@cloacamaxima
 
 endsurvey
 

@@ -1,20 +1,27 @@
 encoding  utf-8
 survey doubletime
   input "doubletimep.th2"
+
+  map mdoubletime-p -projection plan
+    mdoubletime-p1
+    mdoubletime-p2
+    mdoubletime-p3
+    mdoubletime-p4
+  endmap
   
-  map mdoubletimep_1 -projection plan
+  map mdoubletime-p1 -projection plan
     doubletimep_1
   endmap
   
-  map mtherockp_2 -projection plan
+  map mdoubletime-p2 -projection plan
     doubletimep_2
   endmap
   
-  map mdoubletimep_3 -projection plan
+  map mdoubletime-p3 -projection plan
     doubletimep_3
   endmap
   
-  map mdoubletimep_4 -projection plan
+  map mdoubletime-p4 -projection plan
     doubletimep_4
   endmap
   

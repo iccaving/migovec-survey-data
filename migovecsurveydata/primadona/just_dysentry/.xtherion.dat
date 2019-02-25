@@ -4,15 +4,15 @@ xth_cp_data_tree_insert 18 1 1 dysentry dysentry "Dysentry" "Dysentry" "length: 
 xth_cp_data_tree_create
 set xth(ctrl,cp,maplist) {}
 xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
-xth_cp_map_tree_insert map 0 403X1 p1 1 mdysentry-p mdysentry-p@dysentry "" ""
-xth_cp_map_tree_insert map 1 397X1 403X1 2 m1p m1p@dysentry "" ""
-xth_cp_map_tree_insert map 1 398X1 403X1 2 m2p m2p@dysentry "" ""
-xth_cp_map_tree_insert map 1 399X1 403X1 2 m3p m3p@dysentry "" ""
-xth_cp_map_tree_insert map 1 400X1 403X1 2 m4p m4p@dysentry "" ""
-xth_cp_map_tree_insert map 1 401X1 403X1 2 m5p m5p@dysentry "" ""
-xth_cp_map_tree_insert map 1 402X1 403X1 2 m6p m6p@dysentry "" ""
+xth_cp_map_tree_insert map 0 419X1 p1 1 mdysentry-p mdysentry-p@dysentry "" ""
+xth_cp_map_tree_insert map 1 413X1 419X1 2 m1p m1p@dysentry "" ""
+xth_cp_map_tree_insert map 1 414X1 419X1 2 m2p m2p@dysentry "" ""
+xth_cp_map_tree_insert map 1 415X1 419X1 2 m3p m3p@dysentry "" ""
+xth_cp_map_tree_insert map 1 416X1 419X1 2 m4p m4p@dysentry "" ""
+xth_cp_map_tree_insert map 1 417X1 419X1 2 m5p m5p@dysentry "" ""
+xth_cp_map_tree_insert map 1 418X1 419X1 2 m6p m6p@dysentry "" ""
 xth_cp_map_tree_create
 xth_cp_comp_stat 193 6
 set xth(th_exit_state) 2
-set xth(th_exit_number) 1550737667
+set xth(th_exit_number) 1550737796
 

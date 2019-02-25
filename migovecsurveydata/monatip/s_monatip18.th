@@ -2,6 +2,7 @@ encoding  utf-8
 survey monatip
   map mmonatip-p -projection plan
     m2007
+    m2008
   endmap
 
   ######________________2007________________######
@@ -11,6 +12,9 @@ survey monatip
   input "2007/monatip1/monatip1.th"
   
   ######________________2008________________######
+  map m2008 -projection plan
+    mmonatip2-p@monatip2
+  endmap
   input "2008/monatip2/monatip2.th"
   input "2008/monatip3/monatip3.th"
   input "2008/broken_hammer/broken_hammer.th"

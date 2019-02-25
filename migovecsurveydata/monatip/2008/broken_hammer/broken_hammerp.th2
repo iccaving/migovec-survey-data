@@ -86,10 +86,15 @@ endscrap
 
 scrap broken_hammerp_2 -scale [327.0 -736.0 498.0 -737.0 0.0 0.0 15 0.0 m]
 
+line wall -subtype invisible
+  161.25 -321.0
+  170.75 -309.0
+endline
+
 line wall -id s2_l2 -reverse on
-  137.0 -273.0
-  149.5 -265.5 158.0 -267.0 163.5 -274.0
-  169.0 -281.0 163.5 -303.5 164.5 -305.0
+  131.5 -276.0
+  155.0 -276.5 151.5 -279.0 157.0 -286.0
+  162.5 -293.0 163.5 -303.5 164.5 -305.0
   165.5 -306.5 170.75 -309.0 170.75 -309.0
   smooth off
 endline
@@ -104,13 +109,12 @@ line wall -id s2_l1 -reverse on
   161.25 -321.0
   161.25 -321.0 160.5 -336.5 155.5 -339.5
   150.5 -342.5 144.5 -343.0 138.0 -340.5
+  smooth off
 endline
 
 point 134.0 -305.0 station -name "16"
 
 point 134.0 -305.0 station -name "15"
-
-point 210.0 -355.0 station -name "13"
 
 point 165.0 -317.0 station -name "14"
 
