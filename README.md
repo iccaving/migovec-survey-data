@@ -33,7 +33,7 @@ Below the input blocks, you will find a series `equate` commands, this is where 
 The main cave.th file will look something similar to this:
 
 ```
-survey MyCave
+survey MyCave -title "The name of the cave"
 
 map mMyCave-<p/e> -projection <plan/extended>
  mYear1-<p/e>
@@ -84,7 +84,7 @@ This will only cover where to put additional `my_new_passage_plan.th2` files to 
 
 Inside the map command block, you will include maps or scraps (you can't use a mix of the two). If using a typical Topodroid export, then the 'map' section of the .th file will look like the example below.
 ```
-survey MySurvey
+survey MySurvey -title "The name you gave to the cave passage"
 
 input my_survey_p.th2  # including the plan view drawing from xtherion
 input my_survey_e.th2 # including the extended elevation view from xtherion
@@ -130,7 +130,7 @@ These are taken into account in the `MySystem.th` file.
 This will look like:
 
 ```
-survey MySystem 
+survey MySystem -title "The actual System name"
 map mMySystem-<p/e> -projection <plan/extended> # The system map contains each cave map.
  mMyCave1-<p/e> #the cavemaps contain the specific year maps, which themselves contain passage maps. The latter contain scraps.
  mMyCave2-<p/e>
