@@ -185,6 +185,18 @@ or (god forbid) a single scrap:
 `select m1p@the_aqueduct.primadona.sistem_prima`
 and see what the result is.
 
+If this select statement suffers from a typo or encounters any kind of error, Therion will just compile a map of all the scraps available, but the compilation log will show an amber warning. The map subdivision is really important for the creation of an atlas of the cave.
+
+try exporting an atlas to pdf with the following command (make sure the select command is commented out with a `#`:
+```export atlas -o ../outputs/sys_prima_atlas.pdf -layout local```
+
+and see what the difference is when you try this:
+```
+select msystem-p@system_prima
+export atlas -o ../outputs/sys_prima_atlas.pdf -layout local
+```
+
+
 ## Final considerations
 This survey data was collected between the year 1974-2018 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
 
