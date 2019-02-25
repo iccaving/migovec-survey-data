@@ -2,9 +2,9 @@ encoding  utf-8
 survey primadona -title "Primadona"
 
 map mprimadona-p -projection plan
-  m2018-p
-  m2017-p
-  m2016-p
+  m../2018-p
+  m../2017-p
+  m../2016-p
   m2000-p
 endmap
 
@@ -15,10 +15,10 @@ map m2000-p -projection plan -title "Year 2000"
     mprima1-p@prima1
     mprima2-p@prima2
 endmap
-    input 2000/prima2/prima2.th
-    input 2000/prima1/prima1.th
-    input 2000/ttt/ttt.th
-    input 2000/zima00/zima00.th
+    input ../2000/prima2/prima2.th
+    input ../2000/prima1/prima1.th
+    input ../2000/ttt/ttt.th
+    input ../2000/zima00/zima00.th
     
     equate 1@prima1 32@prima2
     equate 1@prima2 34@ttt
@@ -33,11 +33,11 @@ endmap
 ###______________ 2001_____________ ###
 
 
-  input 2001/risanke/risanke.th
-    input 2001/risa2/risa2.th
-    input 2001/pov/pov.th
-    input 2001/galerija/galerija.th
-    input 2001/drugi/drugi.th
+  input ../2001/risanke/risanke.th
+    input ../2001/risa2/risa2.th
+    input ../2001/pov/pov.th
+    input ../2001/galerija/galerija.th
+    input ../2001/drugi/drugi.th
     
   equate 5@risanke 1@prima1
     equate 1@risanke 1@risa2
@@ -63,10 +63,10 @@ endmap
      
      
 ###______________ 2002_____________ ###
-    input "2002/smer0/smer0.th"
-    input "2002/ajdovscina/ajdovscina.th"
-    input "2002/spodnji/spodnji.th"
-    input "2002/milanova/milanova.th"
+    input "../2002/smer0/smer0.th"
+    input "../2002/ajdovscina/ajdovscina.th"
+    input "../2002/spodnji/spodnji.th"
+    input "../2002/milanova/milanova.th"
     
     equate 4@ajdovscina 13@zima00
     equate 57@smer0 17@galerija
@@ -84,7 +84,7 @@ endmap
     join s1_l2@smer0:0 s4_l2@galerija:end
     
 ###______________ 2004_____________ ###
-     input "2004/popotresni/popotresni.th"
+     input "../2004/popotresni/popotresni.th"
      
      equate POP25@popotresni 27@galerija
      
@@ -94,7 +94,7 @@ endmap
      join s3_l2@risa2 s4_l3@popotresni:0
      
      ###______________ 2005_____________ ###
-     input "2005/brez_volje/brez_volje.th"
+     input "../2005/brez_volje/brez_volje.th"
      
      equate POP22@popotresni POP22@brez_volje
      
@@ -102,13 +102,13 @@ endmap
      join s1_l2@brez_volje:end s3_l2@popotresni:0
     
 ###______________ 2006_____________ ###
-     input "2006/smer1/smer1.th"
+     input "../2006/smer1/smer1.th"
      
      equate 18@smer1 43@smer0
      equate 30@smer0 1@smer1
      
-###______________ 2016_____________ ###
-    map m2016-p -projection plan -title "Year 2016"
+###______________ ../2016_____________ ###
+    map m../2016-p -projection plan -title "Year ../2016"
         mcattlegrid-p@cattlegrid
         mcolony-p@colony
         mdejavu-p@dejavu
@@ -123,21 +123,21 @@ endmap
         mudc-p@udc
         mwac-p@wac
     endmap
-     input "2016/karstaway/karstaway.th"
-     input "2016/mighty_fine_indeed/mfi.th"
-     input "2016/hotmk/hotmk.th"
-     input "2016/wac/wac.th"
-     input "2016/colony/colony.th"
-     input "2016/udc/udc.th"
-     input "2016/Galeria_Resurvey/Galeria_Survey.th"
-     input "2016/cattlegrid/cattlegrid.th"
-     input "2016/the_stile/the_stile.th"
-     input "2016/quantum_state/quantum_state.th"
-     input "2016/terminus/terminus.th"
-     input "2016/dejavu/dejavu.th"
-     input "2016/tight_and_scrotty/tight_and_scrotty.th"
-     input "2016/gamblers_ruin/gamblers_ruin.th"
-     input "2016/memorylane/memorylane.th"
+     input "../2016/karstaway/karstaway.th"
+     input "../2016/mighty_fine_indeed/mfi.th"
+     input "../2016/hotmk/hotmk.th"
+     input "../2016/wac/wac.th"
+     input "../2016/colony/colony.th"
+     input "../2016/udc/udc.th"
+     input "../2016/Galeria_Resurvey/Galeria_Survey.th"
+     input "../2016/cattlegrid/cattlegrid.th"
+     input "../2016/the_stile/the_stile.th"
+     input "../2016/quantum_state/quantum_state.th"
+     input "../2016/terminus/terminus.th"
+     input "../2016/dejavu/dejavu.th"
+     input "../2016/tight_and_scrotty/tight_and_scrotty.th"
+     input "../2016/gamblers_ruin/gamblers_ruin.th"
+     input "../2016/memorylane/memorylane.th"
 
      
      
@@ -176,8 +176,8 @@ endmap
      join s2_l1@quantum_state:end s4_l5@galerija:0
      join s2_l2@quantum_state:0 s4_l4@galerija:end
      
-###______________ 2017_____________ ###
-     map m2017-p -projection plan -title "Year 2017"
+###______________ ../2017_____________ ###
+     map m../2017-p -projection plan -title "Year ../2017"
         malabaster-p@alabaster
         mapple_crumble-p@apple_crumble
         mbatmere-p@batmere
@@ -204,31 +204,31 @@ endmap
      endmap
 
   #inputs
-     input "2017/buckwheat/buckwheat.th"
-     input "2017/TTTr/TTTr.th"
-     input "2017/fenestrator/fenestrator.th"
-     input "2017/battery_flattery/battery_flattery.th"
-     input "2017/plumbers_p/plumbers_p.th"
-     input "2017/union_passage_of_the_year_nominee/upotyn.th"
-     input "2017/hallelujah/hallelujah.th"
-     input "2017/sweet_baby_jesus/sweet_baby_jesus.th"
-     input "2017/alabaster/alabaster.th"
-     input "2017/jack_of_hearts/jack_of_hearts.th"
-     input "2017/more_like_welding/more_like_welding.th"
-     input "2017/hammerhead/hammerhead.th"
-     input "2017/electric_dreams/electric_dreams.th"
-     input "2017/stranglehold/stranglehold.th"
-     input "2017/the_atrium/the_atrium.th"
-     input "2017/apple_crumble/apple_crumble.th"
-     input "2017/hammerhead2/hammerhead2.th"
-     input "2017/hammerhead3/hammerhead3.th"
-     input "2017/dogfish/dogfish.th"
-     input "2017/high_and_dry/high_and_dry.th"
-     input "2017/mandare_resurvey/mandare_resurvey.th"
-     input "2017/batmere/batmere.th"
-     input "2017/entirely_my_fault/entirely_my_fault.th"
-     input "2017/what_a_disappointment/what_a_disappointment.th"
-     input "2017/testing_the_waters/testing_the_waters.th"
+     input "../2017/buckwheat/buckwheat.th"
+     input "../2017/TTTr/TTTr.th"
+     input "../2017/fenestrator/fenestrator.th"
+     input "../2017/battery_flattery/battery_flattery.th"
+     input "../2017/plumbers_p/plumbers_p.th"
+     input "../2017/union_passage_of_the_year_nominee/upotyn.th"
+     input "../2017/hallelujah/hallelujah.th"
+     input "../2017/sweet_baby_jesus/sweet_baby_jesus.th"
+     input "../2017/alabaster/alabaster.th"
+     input "../2017/jack_of_hearts/jack_of_hearts.th"
+     input "../2017/more_like_welding/more_like_welding.th"
+     input "../2017/hammerhead/hammerhead.th"
+     input "../2017/electric_dreams/electric_dreams.th"
+     input "../2017/stranglehold/stranglehold.th"
+     input "../2017/the_atrium/the_atrium.th"
+     input "../2017/apple_crumble/apple_crumble.th"
+     input "../2017/hammerhead2/hammerhead2.th"
+     input "../2017/hammerhead3/hammerhead3.th"
+     input "../2017/dogfish/dogfish.th"
+     input "../2017/high_and_dry/high_and_dry.th"
+     input "../2017/mandare_resurvey/mandare_resurvey.th"
+     input "../2017/batmere/batmere.th"
+     input "../2017/entirely_my_fault/entirely_my_fault.th"
+     input "../2017/what_a_disappointment/what_a_disappointment.th"
+     input "../2017/testing_the_waters/testing_the_waters.th"
      
      
   #equates
@@ -282,10 +282,10 @@ endmap
 
      join batmere-p1@batmere mandare_low-p1@mandare_low
      
-###______________ 2018_____________ ###
+###______________ ../2018_____________ ###
 
 
-  map m2018-p -projection plan -title "Year 2018"
+  map m../2018-p -projection plan -title "Year ../2018"
     mbath-p@bath
     mcanticle_for_migovec-p@canticle_for_migovec
     mchocolate_river-p@chocolate_river
@@ -312,21 +312,21 @@ endmap
   ### deep branch###
   #inputs
 
-    input "2018/pivnica_resurvey/pivnica_resurvey.th"
-    input "2018/pivnica_2_resurvey/pivnica_2_resurvey.th"
-    input "2018/lost_in_a_dream/lost_in_a_dream.th"
-    input "2018/lost_in_a_dream_2/lost_in_a_dream_2.th"
-    input "2018/penny_falls/penny_falls.th"
-    input "2018/penny_falls_2/penny_falls_2.th"
-    input "2018/moonraker/moonraker.th"
-    input "2018/moonraker_2/moonraker_2.th"   
-    input "2018/the_aqueduct/the_aqueduct.th" 
-    input "2018/klic_globin/klic_globin.th"
-    input "2018/deeper_than_most/deeper_than_most.th"
-    input "2018/tiger_tiger/tiger_tiger.th"
-    input "2018/mouseleum/mouseleum.th"
-    input "2018/mouseleum_2/mouseleum_2.th"
-    input "2018/chocolate_river/chocolate_river.th"
+    input "../2018/pivnica_resurvey/pivnica_resurvey.th"
+    input "../2018/pivnica_2_resurvey/pivnica_2_resurvey.th"
+    input "../2018/lost_in_a_dream/lost_in_a_dream.th"
+    input "../2018/lost_in_a_dream_2/lost_in_a_dream_2.th"
+    input "../2018/penny_falls/penny_falls.th"
+    input "../2018/penny_falls_2/penny_falls_2.th"
+    input "../2018/moonraker/moonraker.th"
+    input "../2018/moonraker_2/moonraker_2.th"   
+    input "../2018/the_aqueduct/the_aqueduct.th" 
+    input "../2018/klic_globin/klic_globin.th"
+    input "../2018/deeper_than_most/deeper_than_most.th"
+    input "../2018/tiger_tiger/tiger_tiger.th"
+    input "../2018/mouseleum/mouseleum.th"
+    input "../2018/mouseleum_2/mouseleum_2.th"
+    input "../2018/chocolate_river/chocolate_river.th"
 
   #equates
      equate 1@pivnica_resurvey 1@buckwheat
@@ -373,12 +373,12 @@ endmap
      
 ### alabaster branch ###
   #inputs
-     input "2018/purgatory/purgatory.th"
-     input "2018/bath/bath.th"
-     input "2018/holy_moley/holy_moley.th"
-     input "2018/adequately_hammered/adequately_hammered.th"
-     input "2018/canticle_for_migovec/canticle_for_migovec.th"
-     input "2018/testify/testify.th"
+     input "../2018/purgatory/purgatory.th"
+     input "../2018/bath/bath.th"
+     input "../2018/holy_moley/holy_moley.th"
+     input "../2018/adequately_hammered/adequately_hammered.th"
+     input "../2018/canticle_for_migovec/canticle_for_migovec.th"
+     input "../2018/testify/testify.th"
 
   #equates
      equate 0@purgatory 1@alabaster
@@ -398,7 +398,7 @@ endmap
      
      ###other ###
       #inputs
-     input "2018/dysentry/dysentry.th"
+     input "../2018/dysentry/dysentry.th"
      
       #equates
      equate 0@dysentry 6@more_like_welding
