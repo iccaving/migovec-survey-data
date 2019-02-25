@@ -2,14 +2,14 @@ encoding  utf-8
 survey primadona -title "Primadona"
 
 map mprimadona-p -projection plan
-  m2018
-  m2017 
-  m2016
-  m2000
+  m2018-p
+  m2017-p
+  m2016-p
+  m2000-p
 endmap
 
 ###______________ 2000______________###
-map m2000 -projection plan
+map m2000-p -projection plan -title "Year 2000"
     mttt-p@ttt
     mzima00-p@zima00
     mprima1-p@prima1
@@ -108,7 +108,7 @@ endmap
      equate 30@smer0 1@smer1
      
 ###______________ 2016_____________ ###
-    map m2016 -projection plan
+    map m2016-p -projection plan -title "Year 2016"
         mcattlegrid-p@cattlegrid
         mcolony-p@colony
         mdejavu-p@dejavu
@@ -177,7 +177,7 @@ endmap
      join s2_l2@quantum_state:0 s4_l4@galerija:end
      
 ###______________ 2017_____________ ###
-     map m2017 -projection plan
+     map m2017-p -projection plan -title "Year 2017"
         malabaster-p@alabaster
         mapple_crumble-p@apple_crumble
         mbatmere-p@batmere
@@ -285,7 +285,7 @@ endmap
 ###______________ 2018_____________ ###
 
 
-  map m2018 -projection plan
+  map m2018-p -projection plan -title "Year 2018"
     mbath-p@bath
     mcanticle_for_migovec-p@canticle_for_migovec
     mchocolate_river-p@chocolate_river
