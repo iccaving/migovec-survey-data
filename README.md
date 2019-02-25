@@ -7,7 +7,7 @@ We are now in the process of migrating the Survex data collected from 1974-2018 
 ## How to contribute?
 
 ### Survex to Therion format
-We are working off existing .svx files. The aim is to convert the .svx file to .th format. The data formats are very similar, but some differences persist.
+We are working off existing .svx files. The aim is to convert the .svx file to .th format. The shot data formats are identical, but the survey flags and block commands are a bit different.
 
 First, we need to translate the survex data into therion format.
 1. Open a child (i.e. single day survey) .svx file in a text editor 
@@ -21,19 +21,44 @@ First, we need to translate the survex data into therion format.
  - `explo-team "ExplorerName Surname" `
  - `date YYYY.MM.DD`
  
-All of Primadona, and Monatip as far as Monatip4 have been transferred already.
+All of Primadona, and Monatip as far as Monatip4 have been transferred already. 
 
-### Including new Th file into the structure
+The really minimal version of a .th file will look something like:
+
+```
+survey MySurvey -title "The name you gave to the cave passage"
+
+centreline
+ team "Surveyor1Name Surname" role
+ team "Surveyor2Name Surname" role
+ explo-team "Explorer1Name Surname"
+ explo-team "Explorer2Name Surname"
+ date YYYY.MM.DD
+ 
+ units length meters
+ units compass clino degrees
+ data normal from to length compass clino #this specifies in which order the numbers come!
+ 1 2 ... ... ...
+ 2 3 ... ... ...
+ ...
+endcentreline
+
+endsurvey
+```
+
+### Including new Th file into the structure of the main cave (a.k.a. equating nodes)
 We have used a pyramidal hierarchy, with a cave, year, passage structure.
 Save the new my_new_passage.svx and my_new_passage.th file pair into a new folder with lower case name (as far as possible, the same as the survex survey name).
 
 Find the `cave.th`file in the cave folder. This file contains `input year/passage/passage.th` commands to tell therion to include the relevant survey data. Add the command `input year/my_new_passage.th` to this file in the correct year block. 
-Below the input blocks, you will find a series `equate` commands, this is where you can tie in your new cave passage to the existing centrelines. 
+Below the input blocks, you will find a series of `equate` commands, this is where you can tie in your new cave passage to the existing centrelines. 
 
-The main cave.th file will look something similar to this:
+The main cave.th file will therefore look similar to this:
 
 ```
 survey MyCave -title "The name of the cave"
+
+#ignore the 'map' blocks for now.
 
 map mMyCave-<p/e> -projection <plan/extended>
  mYear1-<p/e>
