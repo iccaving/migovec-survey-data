@@ -2,10 +2,11 @@ encoding  utf-8
 source "prima_ubend_mona.th"
 input ../_layouts/layout.th
 input ../_layouts/outline_layout.th
-#select msystem-p@sistem_prima 
+select msystem-p@sistem_prima 
 
 #export map -projection plan -o west_plateau.pdf -layout local 
 
 export map -projection plan -o ../_outputs/sys_prima.pdf -layout local
+export atlas -projection plan -o ../_outputs/sys_prima_atlas.pdf -layout local
 #export model -fmt survex -o ../_outputs/west_plateau.3d
 #export database -output ../_outputs/west_plateau.sql
