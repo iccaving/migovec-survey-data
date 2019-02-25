@@ -50,7 +50,8 @@ endsurvey
 We have used a pyramidal hierarchy, with a cave, year, passage structure.
 Save the new my_new_passage.svx and my_new_passage.th file pair into a new folder with lower case name (as far as possible, the same as the survex survey name).
 
-Find the `cave.th`file in the cave folder. This file contains `input year/passage/passage.th` commands to tell therion to include the relevant survey data. Add the command `input year/my_new_passage.th` to this file in the correct year block. 
+Find the `cave.th`file in the cave/_xtherion folder. This file contains a series of  `input ../year/passage/passage.th` commands to tell the therion compiler to include the relevant survey data. Adding the command `input ../year/my_new_passage.th` to this file in the correct year folder is necessary, but we now need to connect the new data to an existing point in the survey, i.e. equate.
+
 Below the input blocks, you will find a series of `equate` commands, this is where you can tie in your new cave passage to the existing centrelines. 
 
 The main cave.th file will therefore look similar to this:
@@ -73,8 +74,8 @@ map mYear1-<p/e> -projection <plan/extended> -title "Year 1"
  ...
 endmap
 
-input year1/passage_1/passage_1.th
-input year1/passage_2/passage_2.th
+input ../year1/passage_1/passage_1.th
+input ../year1/passage_2/passage_2.th
 ...
 
 equate stationX@passage_1 stationY@passage_b #the main equate commands between passages.
@@ -90,8 +91,8 @@ map mYear1-<p/e> -projection <plan/extended> -title "Year 2"
  ...
 endmap
 
-input year2/passage_a/passage_a.th
-input year2/passage_a/passage_a.th
+input ../year2/passage_a/passage_a.th
+input ../year2/passage_a/passage_a.th
 ...
 
 equate stationX@passage_a stationY@passage_1 #equates to current and previous years. 
