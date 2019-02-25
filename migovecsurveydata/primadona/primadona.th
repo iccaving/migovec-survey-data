@@ -5,7 +5,7 @@ map mprimadona-p -projection plan
   m2018
   m2017 
   m2016
-  m2000 
+  m2000
 endmap
 
 ###______________ 2000______________###
@@ -31,6 +31,8 @@ endmap
     
     
 ###______________ 2001_____________ ###
+
+
   input 2001/risanke/risanke.th
     input 2001/risa2/risa2.th
     input 2001/pov/pov.th
@@ -279,7 +281,6 @@ endmap
      join s3_l6@pov s3_l2@apple_crumble
 
      join batmere-p1@batmere mandare_low-p1@mandare_low
-     join entirely_my_fault-p1@entirely_my_fault karstawayp_4@karstaway
      
 ###______________ 2018_____________ ###
 

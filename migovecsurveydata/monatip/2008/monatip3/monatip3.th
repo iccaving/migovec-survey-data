@@ -2,11 +2,16 @@ encoding  utf-8
 survey monatip3 
   input "monatip3p.th2"
   
-  map mmonatip3p_1 -projection plan
+  map mmonatip3-p -projection plan
+    mmonatip3-p1
+    mmonatip3-p2
+  endmap
+
+  map mmonatip3-p1 -projection plan
     monatip3p_1
   endmap
   
-  map mmonatip3p_2 -projection plan
+  map mmonatip3-p2 -projection plan
     monatip3p_2
   endmap
   

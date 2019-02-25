@@ -1,23 +1,19 @@
 encoding  utf-8
 survey karstaway
 
-  input "karstaway.th2"
+  input "karstaway-1p.th2"
+  input "karstaway-2p.th2"
   input "karstaway-e.th2"
   
   map mkarstaway-p -projection plan
-    karstawayp_1
-    karstawayp_2
-    karstawayp_3
-    karstawayp_4
+    karstaway-1p
+    karstaway-2p
   endmap
 
   map mkarstaway-e -projection extended
     karstaway-e1
   endmap
   
-  
-  join karstawayp_1 karstawayp_2
-  join karstawayp_3 karstawayp_4
   
   centreline
     date 2016.07.19
