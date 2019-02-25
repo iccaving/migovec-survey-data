@@ -16,7 +16,11 @@ survey well_hung -title "Well Hung"
 		team "Arun Paul" notes
 		explo-team "David Wilson" "Arun Paul"
 
-			0 1   5.65 359.2 -3.5
+	units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+
+		0 1   5.65 359.2 -3.5
 		  1 - 5.68 280.1 10.5
 		  1 - 26.42 288.9 79.8
 		  1 - 28.42 157.2 84.1
