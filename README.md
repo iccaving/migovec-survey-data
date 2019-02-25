@@ -30,6 +30,51 @@ Save the new my_new_passage.svx and my_new_passage.th file pair into a new folde
 Find the `cave.th`file in the cave folder. This file contains `input year/passage/passage.th` commands to tell therion to include the relevant survey data. Add the command `input year/my_new_passage.th` to this file in the correct year block. 
 Below the input blocks, you will find a series `equate` commands, this is where you can tie in your new cave passage to the existing centrelines. 
 
+The main cave.th file will look something similar to this:
+
+```
+survey BigCave
+
+map mBigCave-<p/e> -projection <plan/extended>
+ mYear1-<p/e>
+ mYear2-<p/e>
+ ...
+endmap
+
+#______Year1______
+map mYear1-<p/e> -projection <plan/extended>
+ mPassage1-<p/e>
+ mPassage2-<p/e>
+ ...
+endmap
+
+input year1/passage_1/passage_1.th
+input year1/passage_2/passage_2.th
+...
+
+equate stationX@passage_1 stationY@passage_b #the main equate commands between passages.
+...
+
+join scrapX@passage_1 scrapY@passage_b #some join commands between survey maps
+...
+
+#______Year2______
+map mYear1-<p/e> -projection <plan/extended>
+ mPassageA-<p/e>
+ mPassageB-<p/e>
+ ...
+endmap
+
+input year2/passage_a/passage_a.th
+input year2/passage_a/passage_a.th
+...
+
+equate stationX@passage_a stationY@passage_1 #equates to current and previous years. 
+                                             #The scope here is the cave, so we need to indicate the survey at a very low level.
+
+endsurvey
+```
+
 Commit your changes!
 
 ### Creating a .th2 map and adding to map
@@ -37,9 +82,45 @@ This will only cover where to put additional `my_new_passage_plan.th2` files to 
 
 `my_new_passage_plan.th2` resides in the my_passage folder. In `my_new_passage.th`, you need to add the command `input my_new_passage_plan.th2` below the `survey MySurvey` flag. Below the .th2 input command, you should write a `map mMySurvey-p -projection <plan/extended>` and `endmap` command pair.
 
+Inside the map command block, you will include maps or scraps (you can't use a mix of the two). If using a typical Topodroid export, then the 'map' section of the .th file will look like the example below.
+```
+survey MySurvey
 
+input my_survey_p.th2  # including the plan view drawing from xtherion
+input my_survey_e.th2 # including the extended elevation view from xtherion
 
+map mMySurvey-p -projection <plan/extended> # this is a map of maps
+ m1<p/e>            #this is a map
+ m2<p/e>
+ ...
+endmap
 
+map m1<p/e> -projection <plan/extended>  #this is a map
+ MySurvey-p1                              #this is a scrap
+endmap
+
+map m2<p/e> -projection <plan/extended>
+ MySurvey-p2
+endmap
+
+join MySurvey-p1 MySurvey-p2 # specify a join so the passages are morphed to join together (semi automatic)
+
+join LineId1:O LineId2:end  #this is a manual join of two lines. 
+                            #No need to specify scrap, as the scope of this environment is the entire 
+                            #survey.
+
+centreline
+ team ""
+ team
+ 
+ data 
+ 1 2 ... ... ...
+ 2 3 ... ... ...
+ ...
+endcentreline
+
+endsurvey
+```
 
 This survey data was collected between the year 1974-2018 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
 
