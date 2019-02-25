@@ -89,7 +89,7 @@ survey MySurvey
 input my_survey_p.th2  # including the plan view drawing from xtherion
 input my_survey_e.th2 # including the extended elevation view from xtherion
 
-map mMySurvey-p -projection <plan/extended> # this is a map of maps
+map mMySurvey-<p/e> -projection <plan/extended> # this is a map of maps
  m1<p/e>            #this is a map
  m2<p/e>
  ...
@@ -110,8 +110,9 @@ join LineId1:O LineId2:end  #this is a manual join of two lines.
                             #survey.
 
 centreline
- team ""
- team
+ team "Surveyor1Name Surname" role
+ team "Surveyor2Name Surname" role
+ date YYYY.MM.DD
  
  data 
  1 2 ... ... ...
@@ -121,6 +122,8 @@ endcentreline
 
 endsurvey
 ```
+
+### Additional tips
 
 This survey data was collected between the year 1974-2018 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
 
