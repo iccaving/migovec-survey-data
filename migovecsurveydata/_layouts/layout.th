@@ -2,7 +2,8 @@ encoding  utf-8
 layout local
   language en
   scale 1 500
- colour map-fg altitude #[92 86 65]
+ #colour map-fg [92 86 65] #altitude 
+ colour map-bg [90 90 90]
   legend on 
   map-header 105 100 nw
   grid-coords border

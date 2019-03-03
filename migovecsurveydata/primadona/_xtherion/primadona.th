@@ -160,11 +160,11 @@ endmap
      equate 9@tight_and_scrotty 10@colony
      equate 9@gamblers_ruin 5@udc
      
-     join mfip_2@mfi hotmkp_1@hotmk
-     join s1_l1@wac:0 s3_l1@hotmk:end
-     join s1_l2@wac s3_l2@hotmk
-     join hotmkp_3@hotmk colonyp_1@colony
-     join colonyp_3@colony udcp_1@udc
+     join mfip_2@mfi hotmk-1p@hotmk
+     #join s1_l1@wac:0 s3_l1@hotmk:end
+     #join s1_l2@wac s3_l2@hotmk
+     #join hotmkp_3@hotmk colony-1p@colony
+     join colony-10p@colony udcp_1@udc
      join terminusp_1@terminus quantum_statep_1@quantum_state
      
      join s2_l1@the_stile:end s2_l1@cattlegrid:0
@@ -404,8 +404,10 @@ endmap
      equate 0@dysentry 6@more_like_welding
      
       #joins
-      join dysentry-1p@dysentry more_like_welding-p1@more_like_welding
-      join dysentry-1p@dysentry more_like_welding-p2@more_like_welding
+      join l2@dysentry:0 l2a@more_like_welding:0
+      join l3@dysentry:0 l3@more_like_welding:end
+      join l1@more_like_welding:0 l1@dysentry:end
+      join l2@more_like_welding:end l2@dysentry:end
 
 
 
