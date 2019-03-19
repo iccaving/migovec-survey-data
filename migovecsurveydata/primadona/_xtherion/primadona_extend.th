@@ -1,9 +1,10 @@
 encoding  utf-8
 survey primadona
-  input "2000/prima_2000.th"
-  input "2001/prima_2001.th"
-  input "2002/prima_2002.th"
-  input "2016/prima_2016.th"
+
+  input "../2000/prima_2000.th"
+  input "../2001/prima_2001.th"
+  input "../2002/prima_2002.th"
+  input "../2016/prima_2016.th"
   
   equate 5@risanke.prima_2001 1@prima1.prima_2000
   #equate 1@pov.prima_2001 14@ttt.prima_2000
@@ -49,3 +50,4 @@ survey primadona
        endmap
 
 endsurvey
+
