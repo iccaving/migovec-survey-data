@@ -1,0 +1,51 @@
+;####Snakebitetwo####:
+;###Continuation of Snakebite in narrow rift###
+*date 2018.07.18 ; Expedition Klic Globin
+
+;Tape: David Wilson
+;Book: James Hooper
+;Instruments: James Hooper
+;Data entered by David Wilson on 20/07/2018
+
+*begin snakebitetwo
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 2 page
+
+;Page 1
+2	1	12.00	165	-03
+3	2	7.94	168	-10
+3	4	3.58	-	down
+5	4	3.36	191	+21
+2	6	6.70	195	-70
+7	3	11.52	152	-10
+8	7	6.67	156	-10
+
+;NOTES 
+;STN2 is  pss
+;STN3 is pss at top of wet drop
+;STN5 is a pss at top of pitch
+;STN6 is halfway down tight rift
+;STN8 is pss
+;STN14 is pss
+
+;Page 2
+8	9	7.00	340	+15
+10	8	3.90	067	-18
+10	11	4.08	312	00
+11	12	2.02	-	up
+13	12	7.49	159	-14
+14	13	2.20	155	+25
+;NOTES
+;None
+;
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end snakebitetwo
+
+*equate snakebitetwo.14 snakebite.1
+

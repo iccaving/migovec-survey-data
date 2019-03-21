@@ -1,0 +1,64 @@
+encoding  utf-8
+survey snakebite -title "Snakebite"
+
+###Small passsage in fault leading from ledge at top of Pivnica###
+
+input snakebite-p.th2
+
+map msnakebite-p -projection plan
+  msnakebite-p2
+  msnakebite-p1
+endmap
+
+map msnakebite-p1 -projection plan
+  snakebite-p1
+endmap
+
+map msnakebite-p2 -projection plan
+  snakebite-p2
+endmap
+
+
+
+centreline
+
+  date 2018.07.17
+  explo-date 2018.07.17
+  team "James Hooper" notes
+  team "David Wilson" insts tape
+  explo-team "James Hooper"
+  explo-team "David Wilson"
+
+  units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+  1  2  3.03  013  +08
+  2  3  2.63  032  +29
+  3  4  4.00  325  +12
+  4  5  3.42  024  +40
+  6  5  3.00  112  -40
+  7  6  3.52  202  -36
+  8  7  3.85  282  -22
+  8  9  1.54  050  +03
+  9  10  3.85  072  +40
+  11  10  4.79  252  +15
+  11  12  3.22  -  up
+  13  12  5.37  185  -08
+
+  14  13  2.53  163  -57
+  14  15  3.91  088  -15
+  15  16  5.45  282  -50
+  17  9  2.24  019  -24
+  18  17  2.40  342  -03
+  19  18  7.34  055  +31
+  20  19  4.22  353  +23
+  21  20  3.60  065  +38
+  21  1  5.55  088  -56
+
+  23  22  6.80  120  +53
+  23  24  7.97  236  -56
+  24  19  7.90  251  -25
+endcentreline
+
+endsurvey
+

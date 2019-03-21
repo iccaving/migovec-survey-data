@@ -3,6 +3,8 @@ source "../_xtherion/prima_ubend_mona.th"
 input ../_layouts/layout.th
 input ../_layouts/outline_layout.th
 
+select mprima_low-p@primadona.sistem_prima
+
 #export map -projection plan -o west_plateau.pdf -layout local 
 
 export map -projection plan -o ../_outputs/sys_prima.pdf -layout local
