@@ -73,7 +73,11 @@ endline
 area water
 endarea
 
-point 186.0 -247.5 label -align l -text "Chocolate River" -scale xl
+line label -text "Chocolate River" -scale xl
+  81.5 -228.5
+  176.85 -125.33 327.0 -53.5 327.0 -53.5
+  smooth off
+endline
 
 line wall
 endline

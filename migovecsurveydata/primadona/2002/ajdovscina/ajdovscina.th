@@ -7,18 +7,18 @@ survey ajdovscina
     ajdov_e1
   endmap
   
-  map majdovscina-p -projection plan
-    madjovp_1
-    madjovp_2
-  endmap
+  #map majdovscina-p -projection plan
+    #madjovp_1
+   # madjovp_2
+ # endmap
 
-  map madjovp_1 -projection plan
-    ajdovp_1
-  endmap
+ # map madjovp_1 -projection plan
+   # ajdovp_1
+  #endmap
   
-  map madjovp_2 -projection plan
-    ajdovp_2
-  endmap
+  #map madjovp_2 -projection plan
+    #ajdovp_2
+ # endmap
   
   centreline
     date 2002.07.27
@@ -26,9 +26,9 @@ survey ajdovscina
     team "Tivadar Tomaz" notes
     
       #flags duplicate
-1	2	12.5	0	90
-2	3	4.0	17	0
-3	4	12.5	50	0
+1  2  12.5  0  90
+2  3  4.0  17  0
+3  4  12.5  50  0
 #flags not duplicate
     
   endcentreline

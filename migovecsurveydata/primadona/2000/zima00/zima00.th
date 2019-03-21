@@ -10,8 +10,7 @@ survey zima00
      map mzima00-p -projection plan
       mzima00p_1
       mzima00p_2
-      mzima00p_3
-      mzima00p_4
+      #mzima00p_4
       mzima00p_5
       mzima00p_6
      endmap
@@ -22,12 +21,11 @@ survey zima00
      map mzima00p_2 -projection plan
       zima00p_2
      endmap
-      map mzima00p_3 -projection plan
-      zima00p_3
-     endmap
-      map mzima00p_4 -projection plan
-      zima00p_4
-     endmap
+
+     
+      #map mzima00p_4 -projection plan
+      #zima00p_4
+     #endmap
      
      map mzima00p_5 -projection plan
       zima00p_5
