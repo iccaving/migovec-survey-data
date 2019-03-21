@@ -1,6 +1,8 @@
 encoding  utf-8
 survey primadona -title "Primadona"
 
+input "maps.th"
+
 map mprimadona-p -projection plan
   m../2018-p
   m../2017-p
@@ -329,6 +331,7 @@ endmap
     input "../2018/mouseleum/mouseleum.th"
     input "../2018/mouseleum_2/mouseleum_2.th"
     input "../2018/chocolate_river/chocolate_river.th"
+    input "../2018/snakebite/snakebite.th"
 
   #equates
      equate 1@pivnica_resurvey 1@buckwheat
@@ -348,6 +351,7 @@ endmap
      equate 0@moonraker 20@mouseleum
      equate 0@mouseleum 8@mouseleum_2
      equate 3@mouseleum_2 12@chocolate_river
+     equate 16@snakebite 12@pivnica_resurvey
 
   #joins
     join klic_globin-p1@klic_globin moonraker_2-p1@moonraker_2
