@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -970 723 139.5
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -132.0 -970 723 141.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} tiger_tiger-p.gif 0 {}
 
 
@@ -15,12 +15,14 @@ endline
 
 line wall
   184.5 -270.5
-  196.5 -270.0
+  201.5 -270.0
 endline
+
+point 209.5 -264.5 continuation -align tr
 
 line wall -reverse on
   186.0 -263.0
-  186.0 -263.0 191.0 -266.0 194.0 -263.0
+  186.0 -263.0 193.0 -264.0 196.0 -261.0
   smooth off
 endline
 
@@ -101,7 +103,10 @@ line wall -reverse on
   smooth off
 endline
 
-point 222.0 -323.0 label -text "Tiger Tiger" -scale xl -align tr
+line label -text "Tiger Tiger" -scale l
+  225.0 -289.0
+  225.0 -289.0 337.0 -392.0 560.0 -419.0
+endline
 
 line wall
   55.0 -185.0
