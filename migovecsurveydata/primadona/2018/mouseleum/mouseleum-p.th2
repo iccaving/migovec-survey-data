@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -970 723 138.75
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -132.0 -970 723 191.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} mouseleum-p.gif 0 {}
 
 
@@ -117,6 +117,7 @@ endline
 line u:texture_MY
   186.5 -468.5
   186.5 -468.5 185.25 -454.75 186.25 -449.25
+  smooth off
 endline
 
 line u:texture_MY
@@ -200,26 +201,31 @@ endline
 line u:texture_MY
   186.75 -405.75
   186.75 -405.75 187.0 -400.5 188.0 -395.0
+  smooth off
 endline
 
 line u:texture_MY
   195.5 -401.0
   196.0 -400.25 195.75 -390.75 198.25 -383.75
+  smooth off
 endline
 
 line u:texture_MY
   196.5 -418.5
   196.5 -418.5 196.25 -414.0 196.5 -409.25
+  smooth off
 endline
 
 line u:texture_MY
   184.75 -438.0
   184.75 -438.0 185.75 -420.75 185.25 -411.0
+  smooth off
 endline
 
 line u:texture_MY
   191.5 -425.5
   191.5 -425.5 192.0 -438.25 190.75 -444.75
+  smooth off
 endline
 
 line u:texture_MY -close on
@@ -230,6 +236,7 @@ endline
 line u:texture_MY
   177.5 -483.5
   177.25 -482.0 178.5 -465.5 179.0 -462.5
+  smooth off
 endline
 
 line u:texture_MY
@@ -240,16 +247,19 @@ endline
 line u:texture_MY
   191.75 -486.5
   191.75 -486.5 189.5 -472.25 189.75 -471.5
+  smooth off
 endline
 
 line u:texture_MY
   191.5 -510.25
   191.5 -510.25 188.75 -500.5 188.0 -497.75
+  smooth off
 endline
 
 line u:texture_MY
   199.75 -518.0
   199.75 -518.0 196.0 -508.0 195.25 -505.25
+  smooth off
 endline
 
 line u:texture_MY
@@ -260,6 +270,7 @@ endline
 line u:texture_MY
   203.5 -540.5
   203.5 -540.5 201.75 -530.5 201.25 -528.5
+  smooth off
 endline
 
 line u:texture_MY
@@ -401,6 +412,7 @@ line chimney -outline out
   136.0 -556.5 139.25 -576.0 141.5 -579.5
   143.75 -583.0 151.71 -594.99 157.75 -597.0
   163.75 -599.0 193.25 -607.25 198.0 -575.0
+  smooth off
 endline
 
 line pit
@@ -408,11 +420,13 @@ line pit
   174.0 -478.0 176.5 -487.5 177.5 -495.0
   178.5 -502.5 186.5 -513.75 187.5 -516.25
   193.32 -530.79 198.5 -542.25 198.0 -575.0
+  smooth off
 endline
 
 line wall -reverse on
   193.0 -631.0
   193.0 -631.0 197.0 -591.0 198.0 -575.0
+  smooth off
 endline
 
 line rock-border
@@ -1069,6 +1083,7 @@ endline
 line contour
   285.5 -485.25
   285.5 -485.25 262.75 -550.5 282.0 -578.0
+  smooth off
 endline
 
 line contour
@@ -1080,11 +1095,13 @@ endline
 line contour
   307.0 -460.0
   307.0 -460.0 354.25 -474.5 398.0 -460.75
+  smooth off
 endline
 
 line contour
   286.0 -578.5
   286.0 -578.5 352.5 -613.5 414.5 -578.0
+  smooth off
 endline
 
 line contour
@@ -1355,7 +1372,10 @@ endline
 
 point 306.0 -172.0 air-draught -orientation 323.4 -scale l
 
-point 244.0 -263.0 label -text "Mouseleum" -scale xl -align l
+line label -text "Mouseleum" -scale l
+  193.0 59.0
+  193.0 59.0 272.0 4.0 380.0 -157.0
+endline
 
 line rock-border -clip off
 endline

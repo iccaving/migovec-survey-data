@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -340.0 -2220.0 1164.0 2136.0
+##XTHERION## xth_me_area_adjust -352.0 -2220.0 1164.0 2784.0
 ##XTHERION## xth_me_area_zoom_to 25
 
 # 2018.08.12 created by TopoDroid v. 4.0.1a
@@ -162,16 +162,19 @@ endline
 line contour
   164.0 -1280.0
   164.0 -1280.0 156.0 -1220.0 216.0 -992.0
+  smooth off
 endline
 
 line contour
   -48.0 -1536.0
   -48.0 -1536.0 120.0 -1180.0 104.0 -932.0
+  smooth off
 endline
 
 line contour
   220.87 -880.92
   220.87 -880.92 271.5 -783.88 237.75 -629.94
+  smooth off
 endline
 
 line wall
@@ -305,16 +308,19 @@ endline
 line contour
   385.24 -933.15
   385.24 -933.15 431.66 -666.18 341.83 -517.09
+  smooth off
 endline
 
 line contour
   286.02 -895.64
   286.02 -895.64 302.12 -765.84 267.06 -620.92
+  smooth off
 endline
 
 line floor-step
   155.45 -886.72
   155.45 -886.72 186.38 -750.08 177.19 -605.04
+  smooth off
 endline
 
 area clay
@@ -473,7 +479,10 @@ point 629.66 -2066.69 station -name "8"
 
 point 478.97 -2030.20 station -name "9"
 
-point -108.0 1988.0 label -text "Moonraker 2" -scale xl
+line label -text "Moonraker 2"
+  -208.0 864.0
+  -208.0 864.0 240.0 2268.0 732.0 2640.0
+endline
 
 point 555.84 617.91 station -name "2"
 

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -136.0 -136.0 3146.0 3418.0
+##XTHERION## xth_me_area_adjust -136.0 -136.0 3198.0 3418.0
 ##XTHERION## xth_me_area_zoom_to 50
 
 
@@ -401,7 +401,10 @@ line pit
   smooth off
 endline
 
-point 1172.0 2964.0 label -text "Klic Globin" -align tr -scale xl
+line label -text "Klic Globin" -scale xl
+  1504.0 3162.0
+  1504.0 3162.0 2278.0 3304.0 3062.0 3274.0
+endline
 
 line wall
   254.0 2390.0
