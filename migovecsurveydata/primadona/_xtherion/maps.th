@@ -9,6 +9,7 @@ map mprima_low-p -projection plan
 	pivnica [40 0 m] below
 	mpivnica_2_resurvey-p@pivnica_2_resurvey
 	mlost_in_a_dream-p@lost_in_a_dream
+	mave_maria-p@ave_maria
 	mlost_in_a_dream_2-p@lost_in_a_dream_2
 	mspodnji-p@spodnji
 	mpenny_falls-p@penny_falls
@@ -28,6 +29,8 @@ endmap
 map pivnica -projection plan
 	mbuckwheat-p@buckwheat
 	msnakebite-p@snakebite
+	msnakebitetwo-p@snakebitetwo
+	mave_maria-p@ave_maria
 	mpivnica_resurvey-p@pivnica_resurvey
 endmap
 
