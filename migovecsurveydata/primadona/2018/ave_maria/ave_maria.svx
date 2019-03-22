@@ -1,0 +1,38 @@
+;####Ave_Maria####:
+;###Continuation of Snakebite2 down drippy climb and pitch into streamway###
+*date 2018.07.19 ; Expedition Klic Globin
+
+;Tape: David Wilson
+;Book: James Hooper
+;Instruments: James Hooper
+;Data entered by David Wilson on 20/07/2018
+
+*begin ave_maria
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+1	2	3.30	060	+55
+2	3	5.77	045	+24
+3	4	5.05	080	+51
+4	5	9.45	045	+80
+5	6	6.91	005	+72
+6	7	1.15	245	+61
+7	8	2.62	298	+18
+
+;NOTES 
+;STN1 is  pss
+;STN2 is pss
+;STN4 is a bolt
+;STN6 is a bolt
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end ave_maria
+
+*equate ave_maria.8 snakebitetwo.5
+

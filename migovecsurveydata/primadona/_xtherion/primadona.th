@@ -332,6 +332,8 @@ endmap
     input "../2018/mouseleum_2/mouseleum_2.th"
     input "../2018/chocolate_river/chocolate_river.th"
     input "../2018/snakebite/snakebite.th"
+    input "../2018/snakebitetwo/snakebitetwo.th"
+    input "../2018/ave_maria/ave_maria.th"
 
   #equates
      equate 1@pivnica_resurvey 1@buckwheat
@@ -352,6 +354,9 @@ endmap
      equate 0@mouseleum 8@mouseleum_2
      equate 3@mouseleum_2 12@chocolate_river
      equate 16@snakebite 12@pivnica_resurvey
+     equate 14@snakebitetwo 1@snakebite
+     equate 8@ave_maria 5@snakebitetwo
+     equate 15@penny_falls 1@ave_maria
 
   #joins
     join klic_globin-p1@klic_globin moonraker_2-p1@moonraker_2
@@ -372,9 +377,12 @@ endmap
     join s1_l1@pivnica_2_resurvey s1_l1@lost_in_a_dream 
     join s1_l2@pivnica_2_resurvey s1_l2@lost_in_a_dream
     join s1_l3@pivnica_2_resurvey s2_l3@lost_in_a_dream
-    join s1_l4@pivnica_2_resurvey s2_l4@lost_in_a_dream
+    join s1_l4@pivnica_2_resurvey:0 s2_l4@lost_in_a_dream:0
     join pivnica_2_resurvey-3p@pivnica_2_resurvey spodnjip_2@spodnji
-     
+    join s1_l1@snakebite:end s1_l1@snakebitetwo:0
+    join s1_l2@snakebite:0 s1_l2@snakebitetwo:end
+    join ave_maria-p1@ave_maria lost_in_a_dream_2-p1@lost_in_a_dream_2
+    join ave_maria-p1@ave_maria snakebitetwo-p1@snakebitetwo
 ### hammerhead branch ###
      
 ### alabaster branch ###

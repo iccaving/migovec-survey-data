@@ -1,0 +1,31 @@
+survey ave_maria -title "Ave Maria pitch series"
+input "ave_maria-p.th2"
+
+map mave_maria-p -projection plan
+	mave_maria-p1
+endmap
+
+map mave_maria-p1 -projection plan
+	ave_maria-p1
+endmap
+
+centreline
+	date 2018.07.19
+	explo-date 2018.07.19
+	team "James Hooper" insts notes
+	team "David Wilson" tape
+
+	units length meters
+	units compass clino degrees
+	data normal from to length compass clino
+
+	1	2	3.30	060	+55
+	2	3	5.77	045	+24
+	3	4	5.05	080	+51
+	4	5	9.45	045	+80
+	5	6	6.91	005	+72
+	6	7	1.15	245	+61
+	7	8	2.62	298	+18
+endcentreline
+
+endsurvey
