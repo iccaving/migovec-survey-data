@@ -4,9 +4,17 @@ map mprima_low-p -projection plan
 	mprima2-p@prima2
 	mttt-p@ttt
 	mdejavu-p@dejavu
+	mhammerhead-p@hammerhead
+	mhammerhead2-p@hammerhead2
+	mhammerhead3-p@hammerhead3
+
+	low_hammerhead [-40 0 m] below
+
 	mzima00-p@zima00
 	mTTTr-p@TTTr
+
 	pivnica [40 0 m] below
+
 	mpivnica_2_resurvey-p@pivnica_2_resurvey
 	mlost_in_a_dream-p@lost_in_a_dream
 	mave_maria-p@ave_maria
@@ -24,6 +32,10 @@ map mprima_low-p -projection plan
 	mmouseleum_2-p@mouseleum_2  
 	mmilanova-p@milanova
 	mchocolate_river-p@chocolate_river
+endmap
+
+map low_hammerhead -projection plan
+	mhigh_and_dry-p@high_and_dry
 endmap
 
 map pivnica -projection plan
