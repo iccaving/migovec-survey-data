@@ -51,9 +51,10 @@ line border -id l46-345--574 -close on -subtype invisible
   342.0 -574.0
 endline
 
-point 448.0 -484.0 remark -text "muddy abandoned <br>phreatic tube" -scale s -align r
-
-point 432.0 -307.0 label -text "Plumbers' Paradise" -scale xl -align r
+line label -text "Plumbers' Paradise"
+  324.0 -88.0
+  324.0 -88.0 436.0 -240.0 491.0 -383.0
+endline
 
 line wall
   400.0 -610.0

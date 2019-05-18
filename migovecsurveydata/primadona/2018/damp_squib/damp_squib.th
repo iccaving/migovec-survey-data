@@ -1,4 +1,29 @@
 survey damp_squib -title "Damp Squib"
+	input damp_squib-p.th2
+
+	map mdamp_squib-p -projection plan
+		mdamp_squib-p4
+		mdamp_squib-p3
+		mdamp_squib-p2
+		mdamp_squib-p1
+	endmap
+
+	map mdamp_squib-p1 -projection plan
+		damp_squib-p1
+	endmap
+
+	map mdamp_squib-p2 -projection plan
+		damp_squib-p2
+	endmap
+
+	map mdamp_squib-p3 -projection plan
+		damp_squib-p3
+	endmap
+
+	map mdamp_squib-p4 -projection plan
+		damp_squib-p4
+	endmap
+	
 	centreline
 		date 2018.08.01
 		explo-date 2018.08.01
