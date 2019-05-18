@@ -1,0 +1,36 @@
+;####Mud Moses####:
+;###Continuation of Union Passage of the Year Nominee###
+*date 2018.07.12 ; Expedition Klic Globin
+
+;Instruments: Nick K 
+;Book: Jack Hare
+;Data entered by Rhys Tyers on 18/07/2018
+
+*begin mud_moses
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+1	2	3.21	268	-42
+2	3	4.29	299	+06
+3	4	5.07	350	+10
+4	5	6.99	005	+35
+5	6	5.00	060	+31
+6	7	9.46	036	+35
+7	8	4.55	141	+12
+
+;NOTES 
+;STN1 is Union Passage of the Year Nominee STN1
+;STN2-3 low muddy rift
+;STN4 small phreatic on right disappears to rejoin
+;STN8 is PSS
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end mud_moses
+
+*equate mud_moses.1 union_passage_of_the_year_nominee.1
+

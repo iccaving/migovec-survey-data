@@ -31,6 +31,49 @@ line wall
   smooth off
 endline
 
+line contour
+endline
+
+line contour
+  84.0 -432.0
+  84.0 -432.0 62.5 -461.5 99.5 -486.5
+endline
+
+line contour
+  137.5 -485.0
+  137.5 -485.0 155.0 -477.0 180.0 -444.5
+  205.0 -412.0 209.5 -398.0 207.0 -384.5
+endline
+
+line contour
+  156.5 -480.0
+  156.5 -480.0 214.5 -472.0 227.5 -430.5
+  240.5 -389.0 241.5 -386.0 241.5 -383.5
+endline
+
+line contour
+  125.0 -416.5
+  125.0 -416.5 111.0 -488.0 123.5 -490.5
+endline
+
+line contour
+  102.5 -431.5
+  102.5 -431.5 78.0 -462.0 109.0 -483.5
+endline
+
+point 180.5 -418.0 pebbles
+
+point 149.5 -460.0 pebbles
+
+point 154.0 -424.0 pebbles
+
+point 220.5 -406.5 pebbles
+
+line label -text "Hammerhead"
+  99.5 -384.0
+  99.5 -384.0 275.5 -246.5 453.5 -191.0
+endline
+
 line wall
   522.0 -206.0
   522.0 -206.0 525.0 -199.0 516.0 -217.0
@@ -86,16 +129,15 @@ line border -id l27-322--394 -close on
   248.0 -394.0
 endline
 
-line slope
+line floor-step
   72.0 -439.0
   72.0 -439.0 64.5 -444.0 65.0 -455.0
-  l-size 51.0
   65.5 -466.0 69.5 -480.5 71.5 -482.0
   73.5 -483.5 93.0 -486.0 93.0 -486.0
   smooth off
 endline
 
-line pit
+line floor-step
   239.0 -459.0
   239.0 -459.0 254.5 -435.0 253.5 -428.0
   252.5 -421.0 248.0 -394.0 248.0 -394.0

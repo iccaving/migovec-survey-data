@@ -1,17 +1,54 @@
 encoding  utf-8
+###### MAIN MAP #######
 map mprima_low-p -projection plan
+	mdrugi-p@drugi
 	mprima1-p@prima1
 	mprima2-p@prima2
+	mrisanke-p@risanke
+	mrisa2-p@risa2
+	mapple_crumble-p@apple_crumble
+	mpov-p@pov
 	mttt-p@ttt
+	mgalerija-p@galerija
+	msmer1-p@smer1
+	msmer0-p@smer0
+	
+
+	cattlegrid-the_stile [50 0 m] below
+	
+	mjack_of_hearts-p@jack_of_hearts
+	mplumbers_p-p@plumbers_p
+	mhallelujah-p@hallelujah
+	msweet_baby_jesus-p@sweet_baby_jesus
+	mquantum_state-p@quantum_state
+	mterminus-p@terminus
 	mdejavu-p@dejavu
 	mhammerhead-p@hammerhead
 	mhammerhead2-p@hammerhead2
 	mhammerhead3-p@hammerhead3
+	mdogfish-p2@dogfish
 
 	low_hammerhead [-40 0 m] below
 
+	mlumos-p@lumos
+	mdiagonalley-p@diagonalley
+	mdamp_squib-p@damp_squib
 	mzima00-p@zima00
 	mTTTr-p@TTTr
+	melectric_dreams-p@electric_dreams
+	mkarstaway-p@karstaway
+	mdysentry-p@dysentry
+	mmore_like_welding-p@more_like_welding
+	mstranglehold-p@stranglehold
+	mmfi-p@mfi
+	mthe_atrium-p@the_atrium
+
+	mhotmk-p@hotmk
+	mcolony-p@colony
+	mwac-p@wac
+	mudc-p@udc
+	mtight_and_scrotty-p@tight_and_scrotty
+	mgamblers_ruin-p@gamblers_ruin
 
 	pivnica [40 0 m] below
 
@@ -34,8 +71,19 @@ map mprima_low-p -projection plan
 	mchocolate_river-p@chocolate_river
 endmap
 
+##### SUB MAPS ######
+
 map low_hammerhead -projection plan
+	mdogfish-p1@dogfish
 	mhigh_and_dry-p@high_and_dry
+endmap
+
+map cattlegrid-the_stile -projection plan
+	mthe_stile-p@the_stile
+	mcattlegrid-p@cattlegrid
+	mfenestrator-p@fenestrator
+	mmud_moses-p@mud_moses
+	mupotyn-p@upotyn
 endmap
 
 map pivnica -projection plan
