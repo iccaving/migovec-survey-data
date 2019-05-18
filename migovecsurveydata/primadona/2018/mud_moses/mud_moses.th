@@ -1,0 +1,33 @@
+survey mud_moses -title "Mud Moses"
+	input "mud_moses-p.th2"
+
+	map mmud_moses-p -projection plan
+		mmud_moses-p1
+		mmud_moses-p2
+	endmap
+
+	map mmud_moses-p1 -projection plan
+		mud_moses-p1
+	endmap
+
+	map mmud_moses-p2 -projection plan
+		mud_moses-p2
+	endmap
+
+	centreline
+		date 2018.07.12
+		explo-date 2018.07.12
+
+		team "Jack Hare" notes
+		team "Nick Koukoudelis" tape insts
+
+		#Page 1
+		1	2	3.21	268	-42
+		2	3	4.29	299	+06
+		3	4	5.07	350	+10
+		4	5	6.99	005	+35
+		5	6	5.00	060	+31
+		6	7	9.46	036	+35
+		7	8	4.55	141	+12 
+	endcentreline
+endsurvey

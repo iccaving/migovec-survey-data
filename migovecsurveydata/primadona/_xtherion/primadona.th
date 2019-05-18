@@ -387,12 +387,15 @@ endmap
      
 ### alabaster branch ###
   #inputs
+        input "../2018/mud_moses/mud_moses.th"
      input "../2018/purgatory/purgatory.th"
      input "../2018/bath/bath.th"
      input "../2018/holy_moley/holy_moley.th"
      input "../2018/adequately_hammered/adequately_hammered.th"
      input "../2018/canticle_for_migovec/canticle_for_migovec.th"
      input "../2018/testify/testify.th"
+
+     join mud_moses-p1@mud_moses upotynp_1@upotyn
 
   #equates
      equate 0@purgatory 1@alabaster
@@ -402,6 +405,7 @@ endmap
      equate 0@adequately_hammered 9@alabaster
      equate 38@canticle_for_migovec 20@bath
      equate 67@testify 1@canticle_for_migovec
+     equate 1@mud_moses 1@upotyn
      
      
       #joins
@@ -422,6 +426,19 @@ endmap
       join l3@dysentry:0 l3@more_like_welding:end
       join l1@more_like_welding:0 l1@dysentry:end
       join l2@more_like_welding:end l2@dysentry:end
+
+      ### other things
+
+      input "../2018/lumos/lumos.th"
+      input "../2018/diagonalley/diagonalley.th"
+      input "../2018/damp_squib/damp_squib.th"
+
+      #equates
+      equate 1@lumos 6@hammerhead2
+      equate 3@lumos 3@hammerhead
+      equate 19@lumos 1@diagonalley
+      equate 4@diagonalley 19@damp_squib
+
 
 
 

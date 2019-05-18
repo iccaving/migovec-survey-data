@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -6741 4804 141.0
+##XTHERION## xth_me_area_adjust -132.0 -3798.0 3128.0 141.0
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} prima2p.ppm 0 {}
 
@@ -96,7 +96,10 @@ line wall
   2568.0 -2854.0
 endline
 
-point 2309.0 -2554.0 label -orientation 54.2 -scale l -text "Stara Jama"
+line label -text "Stara Jama" -scale xl
+  1664.0 -3666.0
+  1664.0 -3666.0 1783.34 -3145.71 2217.0 -2839.0
+endline
 
 line overhang -reverse on
   2400.0 -2417.0

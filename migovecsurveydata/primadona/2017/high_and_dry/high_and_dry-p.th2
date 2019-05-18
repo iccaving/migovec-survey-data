@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 739.5 641.0
+##XTHERION## xth_me_area_adjust -129.0 -129.0 739.75 641.0
 ##XTHERION## xth_me_area_zoom_to 400
 
 
@@ -30,16 +30,19 @@ endline
 line contour
   462.25 456.0
   462.25 456.0 471.5 478.75 459.5 492.0
+  smooth off
 endline
 
 line contour
   470.75 448.75
   470.75 448.75 492.75 478.75 468.25 497.25
+  smooth off
 endline
 
 line contour
   483.0 430.75
   483.0 430.75 486.25 409.75 490.75 405.25
+  smooth off
 endline
 
 point 461.5 416.0 continuation -align l -scale l
@@ -49,22 +52,26 @@ point 405.25 473.25 continuation -align l -scale l
 line label -text "High and Dry"
   385.75 475.5
   385.75 475.5 427.75 509.25 475.25 512.0
+  smooth off
 endline
 
 line contour
   474.25 428.75
   474.25 428.75 480.5 410.5 484.5 402.75
+  smooth off
 endline
 
 line contour
   504.5 408.5
   504.5 408.5 499.75 434.5 516.0 442.25
+  smooth off
 endline
 
 line contour
   517.0 411.25
   517.0 411.25 509.75 414.25 517.0 418.75
   524.25 423.25 528.5 425.0 527.5 433.5
+  smooth off
 endline
 
 line wall
@@ -293,11 +300,13 @@ endline
 line pit
   438.0 468.25
   438.0 468.25 442.5 482.75 435.0 484.75
+  smooth off
 endline
 
 line pit
   449.0 473.5
   449.0 473.5 467.75 485.25 449.75 487.75
+  smooth off
 endline
 
 line pit
@@ -488,6 +497,7 @@ endline
 line pit
   601.75 436.5
   601.75 436.5 601.75 440.0 594.75 440.5
+  smooth off
 endline
 
 line wall
