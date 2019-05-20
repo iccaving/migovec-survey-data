@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.0 -129.0 697.5 861.5
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 
 
 
@@ -69,6 +69,11 @@ endscrap
 
 
 scrap canticle_for_migovec-p3 -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 145.91 174.18]
+
+line label -text "Canticle for Migovec"
+  338.5 317.5
+  338.5 317.5 456.5 431.5 574.0 568.0
+endline
 
 line wall
   297.5 292.5

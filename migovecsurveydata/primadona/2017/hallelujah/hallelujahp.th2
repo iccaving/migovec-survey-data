@@ -1,15 +1,53 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -970 723 141.0
-##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} hallelujahp.gif 0 {}
+##XTHERION## xth_me_area_adjust -130.0 -657.5 607.0 139.5
+##XTHERION## xth_me_area_zoom_to 200
 
 
 
 scrap hallelujahp_1 -scale [327.0 -735.0 527.0 -734.0 0.0 0.0 14 0.0 m]
 
-point 236.0 -368.0 remark -text "Stream <br>passage" -scale s -align l
+line floor-step
+endline
 
-point 449.0 -427.0 label -text "Hallelujah" -scale xl -align r
+line floor-step
+  350.0 -360.0
+  350.0 -360.0 317.0 -317.0 301.0 -322.5
+endline
+
+line floor-step -reverse on
+  297.0 -350.0
+  297.0 -350.0 283.5 -341.0 293.5 -331.0
+endline
+
+line floor-step -reverse on
+  245.0 -316.0
+  245.0 -316.0 222.5 -280.0 260.0 -289.0
+endline
+
+line label -text "Hallelujah"
+  155.0 -240.0
+  155.0 -240.0 266.0 -420.0 374.0 -508.0
+endline
+
+point 431.0 -527.0 continuation -align bl
+
+line floor-step
+endline
+
+line floor-step
+  448.0 -496.0
+  448.0 -496.0 421.0 -476.5 421.0 -498.0
+endline
+
+line floor-step
+  412.5 -448.0
+  412.5 -448.0 380.5 -414.5 377.5 -442.5
+endline
+
+line floor-step
+  209.0 -210.0
+  209.0 -210.0 183.0 -190.0 178.0 -213.0
+endline
 
 area water
   l15-235--203
@@ -23,7 +61,7 @@ line border -id l15-235--203 -close on -subtype invisible
   211.0 -183.0
 endline
 
-line border -subtype invisible
+line wall
   209.0 -210.0
   209.0 -210.0 206.0 -194.0 204.0 -189.0
   202.0 -184.0 215.0 -175.0 196.0 -175.0

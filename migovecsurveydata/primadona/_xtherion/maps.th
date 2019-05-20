@@ -9,6 +9,7 @@ map mprima_low-p -projection plan
 	mapple_crumble-p@apple_crumble
 	mpov-p@pov
 	mttt-p@ttt
+	mbatmere-p@batmere
 	mgalerija-p@galerija
 	msmer1-p@smer1
 	msmer0-p@smer0
@@ -30,9 +31,7 @@ map mprima_low-p -projection plan
 
 	low_hammerhead [-40 0 m] below
 
-	mlumos-p@lumos
-	mdiagonalley-p@diagonalley
-	mdamp_squib-p@damp_squib
+	
 	mzima00-p@zima00
 	mTTTr-p@TTTr
 	melectric_dreams-p@electric_dreams
@@ -42,6 +41,16 @@ map mprima_low-p -projection plan
 	mstranglehold-p@stranglehold
 	mmfi-p@mfi
 	mthe_atrium-p@the_atrium
+
+	msweet_baby_jesus-p@sweet_baby_jesus
+	mholy_moley-p@holy_moley
+	malabaster-p@alabaster
+	mpurgatory-p@purgatory
+	mbath-p@bath
+	mcanticle_for_migovec-p@canticle_for_migovec
+	
+	mtestify-p@testify
+	
 
 	mhotmk-p@hotmk
 	mcolony-p@colony
@@ -74,14 +83,18 @@ endmap
 ##### SUB MAPS ######
 
 map low_hammerhead -projection plan
+	mlumos-p@lumos
 	mdogfish-p1@dogfish
+	mdiagonalley-p@diagonalley
 	mhigh_and_dry-p@high_and_dry
+	mdamp_squib-p@damp_squib
 endmap
 
 map cattlegrid-the_stile -projection plan
 	mthe_stile-p@the_stile
 	mcattlegrid-p@cattlegrid
 	mfenestrator-p@fenestrator
+	mbattery_flattery-p@battery_flattery
 	mmud_moses-p@mud_moses
 	mupotyn-p@upotyn
 endmap

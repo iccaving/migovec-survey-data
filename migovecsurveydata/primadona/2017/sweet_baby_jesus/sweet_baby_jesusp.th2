@@ -56,7 +56,10 @@ point 403.5 -544.0 scallop -scale xs
 
 point 391.5 -540.5 scallop -scale xs
 
-point 411.0 -415.5 label -text "Sweet Baby Jesus" -scale xl -align r
+line label -text "Sweet Baby Jesus"
+  265.5 -121.5
+  265.5 -121.5 448.5 -318.5 548.0 -535.0
+endline
 
 area sand
   l19-502--548
