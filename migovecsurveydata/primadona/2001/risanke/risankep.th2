@@ -1,13 +1,106 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -970 723 141.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -130.0 -970 723 139.5
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} risankep.gif 0 {}
 
 
 
 scrap risankep_1 -scale [326.0 -735.0 497.0 -736.0 0.0 0.0 15 0.0 m]
 
-point 202.0 -412.0 label -text "Risanke"
+line rock-border
+endline
+
+line rock-border -close on
+  307.5 -321.5
+  303.0 -328.5
+  306.5 -336.5
+  312.5 -327.5
+  307.5 -321.5
+endline
+
+line rock-border -close on
+  303.5 -314.5
+  292.5 -315.5
+  294.0 -327.5
+  294.0 -327.5 298.0 -330.5 299.0 -329.0
+  300.0 -327.5 303.5 -314.5 303.5 -314.5
+  smooth off
+endline
+
+line rock-border -close on
+  319.0 -408.5
+  309.0 -410.5
+  311.5 -417.0
+  311.5 -417.0 316.5 -417.5 317.0 -416.0
+  317.5 -414.5 319.0 -408.5 319.0 -408.5
+  smooth off
+endline
+
+line rock-border -close on
+  345.5 -433.5
+  343.5 -432.5 342.0 -429.5 340.0 -429.5
+  338.0 -429.5 335.0 -435.5 335.0 -435.5
+  smooth off
+  338.0 -439.0
+  338.0 -439.0 347.5 -434.5 345.5 -433.5
+endline
+
+line rock-border -close on
+  354.5 -418.0
+  346.5 -416.5
+  342.5 -422.5
+  347.5 -424.0
+  354.5 -418.0
+endline
+
+line rock-border -close on
+  305.0 -423.0
+  303.0 -422.0 294.5 -421.0 294.5 -421.0
+  smooth off
+  293.0 -432.5
+  303.0 -438.0
+  303.0 -438.0 307.0 -424.0 305.0 -423.0
+endline
+
+line rock-border -close on
+  306.5 -405.5
+  299.0 -405.0
+  299.0 -405.0 298.0 -411.5 298.5 -413.0
+  299.0 -414.5 303.5 -417.0 303.5 -417.0
+  smooth off
+  306.5 -405.5
+endline
+
+line rock-border -close on
+  290.0 -412.5
+  276.0 -413.5
+  279.5 -419.0
+  292.5 -419.0
+  290.0 -412.5
+endline
+
+line rock-border -close on
+  289.5 -391.0
+  280.5 -391.0
+  280.5 -396.0
+  287.0 -398.5
+  289.5 -391.0
+endline
+
+line contour
+endline
+
+line contour
+  331.0 -342.0
+  331.0 -342.0 308.0 -330.0 288.0 -342.0
+  smooth off
+endline
+
+line contour
+  342.0 -309.0
+  342.0 -309.0 294.0 -294.0 284.0 -306.0
+  smooth off
+endline
 
 line pit
 endline
@@ -39,12 +132,37 @@ line wall -id s1_l1
   277.0 -254.0
 endline
 
+point 254.0 -283.5 narrow-end -align l
+
+line wall
+endline
+
+line wall
+  297.0 -285.5
+  297.0 -285.5 294.0 -287.5 289.0 -286.5
+  284.0 -285.5 280.0 -286.5 278.5 -285.0
+  277.0 -283.5 277.0 -282.0 275.0 -280.0
+  273.0 -278.0 265.5 -281.0 265.5 -281.0
+  smooth off
+endline
+
+line wall
+  261.0 -287.0
+  265.0 -287.0 285.0 -291.0 285.0 -291.0
+  smooth off
+  291.0 -297.0
+endline
+
 line wall -id s1_l2
   273.0 -266.0
   284.0 -269.0
   300.0 -278.0
-  292.0 -295.0
-  292.0 -295.0 290.0 -318.0 290.0 -323.0
+  297.0 -285.5
+endline
+
+line wall
+  291.0 -297.0
+  291.0 -297.0 290.0 -318.0 290.0 -323.0
   290.0 -328.0 288.0 -342.0 288.0 -342.0
   smooth off
   288.0 -342.0 287.0 -355.0 284.0 -360.0

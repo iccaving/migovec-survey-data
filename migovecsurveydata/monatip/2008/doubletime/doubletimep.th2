@@ -30,11 +30,13 @@ endline
 line contour
   324.0 -102.0
   324.0 -102.0 279.0 -101.0 274.5 -106.5
+  smooth off
 endline
 
 line contour
   309.5 -141.0
   309.5 -141.0 322.5 -127.0 323.0 -111.0
+  smooth off
 endline
 
 line contour
@@ -43,6 +45,7 @@ endline
 line contour
   374.5 -98.0
   374.5 -98.0 351.0 -73.5 339.5 -75.5
+  smooth off
 endline
 
 line wall
@@ -76,6 +79,11 @@ endscrap
 
 
 scrap doubletimep_2 -scale [327.0 -736.0 521.0 -735.0 0 0 10 0 m]
+
+line label -text "Double Time"
+  304.0 -339.0
+  304.0 -339.0 313.5 -237.0 342.0 -145.0
+endline
 
 line wall
   257.0 -286.0
@@ -176,6 +184,7 @@ line wall -subtype invisible
   232.0 -355.0 240.0 -361.0 248.0 -357.0
   256.0 -353.0 263.0 -338.0 263.0 -334.0
   263.0 -330.0 257.0 -320.0 253.0 -318.0
+  smooth off
 endline
 
 line pit
@@ -189,6 +198,7 @@ line wall
   218.0 -281.0
   218.0 -281.0 216.0 -283.0 216.0 -292.0
   216.0 -301.0 219.0 -310.0 220.0 -321.0
+  smooth off
 endline
 
 line wall
@@ -283,6 +293,7 @@ line wall
   238.0 -357.5 242.5 -360.0 248.0 -357.0
   253.5 -354.0 264.0 -338.0 263.0 -334.0
   262.0 -330.0 262.0 -322.5 253.0 -318.0
+  smooth off
 endline
 
 point 217.0 -337.0 station -name "9"

@@ -7,13 +7,10 @@ encoding  utf-8
 
 scrap risa2p_1 -scale [326.0 -736.0 520.0 -736.0 0.0 0.0 15 0.0 m]
 
-point 281.0 -487.5 label -orientation 34.7 -text "Risanke" -scale xl
-
-line label
-  267.5 -244.5
-  264.5 -259.0
-  261.0 -273.5
-  258.0 -281.5
+line label -text "Risanke"
+  207.0 -63.0
+  207.0 -63.0 269.0 -161.0 320.0 -307.0
+  smooth off
 endline
 
 line rock-border
@@ -85,7 +82,7 @@ line rock-border -close on -reverse on
   smooth off
 endline
 
-line pit
+line pit -reverse on
   154.0 -259.0
   173.0 -257.0 191.0 -271.0 203.0 -279.0
   215.0 -287.0 222.0 -291.0 222.0 -299.0
@@ -409,8 +406,6 @@ line wall -id s3_l1 -reverse on
   522.0 -498.0
   529.0 -492.0
 endline
-
-point 558.0 -444.0 label -orientation 24.4 -text "Sejna Soba" -scale xl
 
 point 536.0 -572.0 station -name "12"
 
