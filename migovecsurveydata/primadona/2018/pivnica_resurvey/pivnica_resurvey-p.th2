@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.5 -790.0 771.0 223.5
+##XTHERION## xth_me_area_adjust -158.0 -790.0 771.0 223.5
 ##XTHERION## xth_me_area_zoom_to 200
 
 
@@ -658,11 +658,10 @@ line wall
   smooth off
 endline
 
-point 35.5 -650.5 map-connection
-
 line label -text "Pivnica" -scale xl
-  -2.5 -614.5
-  -2.5 -614.5 75.0 -493.5 226.0 -452.0
+  -28.0 -597.5
+  -28.0 -597.5 61.5 -500.5 175.0 -468.0
+  smooth off
 endline
 
 line wall

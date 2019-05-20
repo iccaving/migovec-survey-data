@@ -7,14 +7,9 @@ encoding  utf-8
 
 scrap popotresnip_1 -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m]
 
-line pit -close on
-  405.0 -59.0
-  405.0 -59.0 422.0 -61.0 423.0 -64.0
-  424.0 -67.0 436.0 -81.0 433.0 -83.0
-  430.0 -85.0 415.0 -85.0 415.0 -85.0
-  smooth off
-  405.0 -72.0
-  405.0 -59.0
+line label -text "Popotresni Rov"
+  432.0 -253.5
+  432.0 -253.5 465.76 -154.74 463.0 -81.0
 endline
 
 line wall
@@ -59,7 +54,7 @@ line wall
   241.0 -289.0
 endline
 
-line pit
+line floor-step
   288.0 -197.0
   265.0 -216.0 252.0 -226.0 251.0 -236.0
   250.0 -246.0 249.0 -253.0 249.0 -253.0
@@ -68,13 +63,178 @@ line pit
   271.0 -271.0
 endline
 
+line rock-border
+endline
+
+line rock-border -close on
+  299.0 -248.5
+  290.5 -251.0
+  291.5 -256.0
+  291.5 -256.0 298.5 -258.5 299.0 -257.0
+  299.5 -255.5 299.0 -248.5 299.0 -248.5
+  smooth off
+endline
+
+line rock-border -close on
+  291.5 -235.0
+  283.0 -235.0
+  284.5 -242.5
+  284.5 -242.5 289.5 -245.5 290.0 -243.5
+  290.5 -241.5 291.5 -235.0 291.5 -235.0
+  smooth off
+endline
+
+line rock-border -close on
+  301.5 -209.0
+  298.0 -209.5 291.0 -212.5 291.0 -212.5
+  smooth off
+  292.0 -219.5
+  300.5 -218.0
+  300.5 -218.0 305.0 -208.5 301.5 -209.0
+endline
+
+line rock-border -close on
+  280.0 -218.5
+  273.0 -218.5
+  272.0 -227.0
+  277.0 -230.0
+  280.0 -218.5
+endline
+
+line rock-border -close on
+  308.5 -224.0
+  304.0 -224.0
+  299.5 -231.0
+  306.0 -233.5
+  308.5 -224.0
+endline
+
+line rock-border -close on
+  326.5 -242.0
+  313.5 -246.0
+  314.5 -254.0
+  325.0 -251.5
+  326.5 -242.0
+endline
+
+line rock-border -close on
+  355.5 -227.0
+  349.0 -226.5
+  347.5 -235.0
+  353.0 -237.5
+  355.5 -227.0
+endline
+
+line rock-border -close on
+  385.5 -218.5
+  377.0 -219.5
+  377.5 -229.0
+  381.5 -229.0
+  385.5 -218.5
+endline
+
+line rock-border -close on
+  379.5 -199.0
+  371.0 -199.0
+  372.0 -203.0
+  378.0 -206.0
+  379.5 -199.0
+endline
+
+line rock-border -close on
+  377.5 -165.5
+  369.5 -169.0
+  372.0 -174.5
+  377.0 -169.5
+  377.5 -165.5
+endline
+
+line rock-border -close on
+  371.0 -149.0
+  362.0 -148.5
+  361.5 -152.0
+  371.0 -149.0
+endline
+
+line rock-border -close on
+  393.0 -165.0
+  384.5 -166.0
+  386.5 -174.5
+  386.5 -174.5 391.5 -176.5 392.0 -174.5
+  392.5 -172.5 393.0 -165.0 393.0 -165.0
+  smooth off
+endline
+
+line rock-border -close on
+  396.0 -137.0
+  385.5 -136.5
+  387.0 -141.0
+  392.0 -142.5
+  396.0 -137.0
+endline
+
+line rock-border -close on
+  368.5 -119.5
+  365.0 -122.5
+  365.0 -130.5
+  365.0 -130.5 373.5 -130.5 373.0 -128.5
+  372.5 -126.5 368.5 -119.5 368.5 -119.5
+  smooth off
+endline
+
+line rock-border
+endline
+
+line contour
+endline
+
+line contour
+  419.5 -156.5
+  419.5 -156.5 358.5 -148.5 349.0 -165.5
+endline
+
+line contour
+  367.5 -243.0
+  367.5 -243.0 357.5 -213.0 347.5 -210.0
+endline
+
+line contour
+  401.0 -201.0
+  401.0 -201.0 370.5 -183.5 354.5 -188.0
+endline
+
+line contour
+  282.0 -273.0
+  281.5 -271.5 272.5 -207.0 313.5 -190.5
+endline
+
+line contour
+  301.0 -272.0
+  301.0 -272.0 312.0 -220.0 325.0 -214.5
+endline
+
+line contour
+  331.5 -261.5
+  331.5 -257.5 332.5 -233.5 327.5 -224.5
+endline
+
+line contour
+  403.0 -120.0
+  403.0 -120.0 385.5 -101.5 380.0 -94.5
+endline
+
+line chimney
+  403.0 -81.0
+  403.0 -81.0 403.5 -89.5 418.0 -91.0
+endline
+
 line wall
   436.0 -73.0
   429.0 -66.0 422.0 -58.0 422.0 -58.0
   smooth off
-  409.0 -51.0
-  409.0 -51.0 400.0 -48.0 398.0 -54.0
-  396.0 -60.0 399.0 -72.0 399.0 -72.0
+  410.0 -48.5
+  410.0 -48.5 405.0 -50.0 403.0 -56.0
+  401.0 -62.0 399.0 -72.0 399.0 -72.0
   smooth off
   403.0 -81.0
   396.0 -95.0
@@ -102,10 +262,6 @@ line wall
   smooth off
 endline
 
-point 243.0 -296.0 station -name "POP9"
-
-point 210.0 -227.0 station -name "POP12"
-
 point 284.0 -255.0 station -name "POP8"
 
 point 339.0 -239.0 station -name "POP7"
@@ -127,8 +283,6 @@ endscrap
 
 
 scrap popotresnip_2 -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m]
-
-point 199.0 -331.5 station -name "POP20"
 
 line wall
   205.5 -335.0
@@ -191,9 +345,7 @@ point 227.0 -327.5 station -name "POP14"
 
 point 217.5 -325.5 station -name "POP19"
 
-point 243.0 -296.0 station -name "POP9"
-
-point 284.0 -255.0 station -name "POP8"
+point 242.0 -296.5 station -name "POP9"
 
 endscrap
 
@@ -249,6 +401,7 @@ line wall -id s3_l1
   190.0 -336.5 184.0 -342.0 182.5 -343.0
   181.0 -344.0 180.5 -346.0 176.5 -346.0
   172.5 -346.0 164.0 -349.5 162.5 -349.0
+  smooth off
 endline
 
 line wall -id s3_l2
@@ -262,7 +415,7 @@ endline
 
 point 217.5 -325.5 station -name "POP19"
 
-point 199.0 -331.5 station -name "POP20"
+point 198.5 -333.5 station -name "POP20"
 
 endscrap
 
@@ -292,17 +445,138 @@ line wall -id s4_l1
   smooth off
 endline
 
-area blocks
-  l55-112--320
+line label -text "Sejna Soba"
+  36.0 -467.5
+  36.0 -467.5 153.5 -549.5 212.5 -587.5
+endline
+
+area water
+  l90-183--322
 endarea
 
-line border -id l55-112--320 -close on -reverse on -subtype invisible
-  116.0 -417.0
-  113.0 -322.0
-  182.0 -320.0
-  219.0 -386.0
-  207.0 -451.0
-  116.0 -417.0
+line border -id l90-183--322 -close on
+  138.5 -322.0
+  138.5 -322.0 159.5 -376.0 201.5 -372.5
+  243.5 -369.0 183.0 -323.0 183.0 -323.0
+  smooth off
+  138.5 -322.0
+endline
+
+line rock-border
+endline
+
+line rock-border -close on
+  149.0 -417.5
+  144.0 -420.5
+  144.0 -420.5 146.0 -428.0 147.5 -428.5
+  149.0 -429.0 153.0 -430.0 152.5 -427.5
+  152.0 -425.0 149.0 -417.5 149.0 -417.5
+  smooth off
+endline
+
+line rock-border -close on
+  167.0 -435.0
+  158.5 -436.5
+  158.5 -439.0
+  168.0 -442.5
+  167.0 -435.0
+endline
+
+line rock-border -close on
+  177.0 -446.5
+  173.5 -452.0
+  181.0 -453.5
+  182.0 -449.5
+  177.0 -446.5
+endline
+
+line rock-border -close on
+  176.5 -417.5
+  175.0 -418.0 168.5 -420.5 168.5 -420.5
+  smooth off
+  172.0 -427.5
+  181.0 -425.0
+  181.0 -425.0 178.0 -417.0 176.5 -417.5
+endline
+
+line rock-border -close on
+  165.5 -416.0
+  158.0 -415.0
+  158.0 -419.5
+  161.0 -422.5
+  165.5 -416.0
+endline
+
+line rock-border -close on
+  151.5 -394.5
+  144.5 -395.0
+  145.0 -399.5
+  158.0 -399.0
+  151.5 -394.5
+endline
+
+line rock-border -close on
+  164.0 -391.5
+  156.5 -391.5
+  158.0 -399.0
+  162.5 -403.5
+  164.0 -391.5
+endline
+
+line rock-border -close on
+  158.0 -362.0
+  147.0 -359.0
+  145.0 -365.5
+  155.0 -367.5
+  158.0 -362.0
+endline
+
+line rock-border -close on
+  142.0 -367.5
+  139.5 -366.5 135.0 -365.0 135.0 -365.0
+  smooth off
+  134.5 -368.5
+  138.5 -372.0
+  138.5 -372.0 144.5 -368.5 142.0 -367.5
+endline
+
+line rock-border -close on
+  142.5 -384.5
+  138.5 -388.0
+  141.5 -391.5
+  147.0 -388.5
+  142.5 -384.5
+endline
+
+line rock-border
+endline
+
+line floor-step
+endline
+
+line floor-step
+  181.5 -430.0
+  181.5 -430.0 183.5 -435.5 185.0 -440.5
+  186.5 -445.5 191.0 -455.0 191.0 -455.0
+  smooth off
+  191.0 -455.0 197.5 -457.0 199.0 -456.5
+  200.5 -456.0 210.5 -451.5 210.5 -451.5
+  smooth off
+endline
+
+line floor-step
+  142.0 -433.0
+  142.0 -433.0 175.5 -431.5 181.5 -430.0
+endline
+
+line contour
+  133.0 -376.0
+  133.0 -376.0 163.0 -391.0 175.0 -385.0
+endline
+
+line contour
+  135.0 -399.0
+  135.0 -399.0 162.5 -419.0 182.0 -405.0
 endline
 
 line wall -id s4_l2
