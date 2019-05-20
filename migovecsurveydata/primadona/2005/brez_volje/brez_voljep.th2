@@ -7,21 +7,6 @@ encoding  utf-8
 
 scrap brez_voljep_1 -scale [327.0 -736.0 504.0 -735.0 0 0 25 0 m]
 
-area blocks
-  l17-329--329
-endarea
-
-line border -id l17-329--329 -close on -subtype invisible
-  366.0 -360.0
-  363.0 -359.0 330.0 -329.0 330.0 -329.0
-  smooth off
-  141.0 -406.0
-  131.0 -460.0
-  192.0 -493.0
-  344.0 -397.0
-  344.0 -397.0 369.0 -361.0 366.0 -360.0
-endline
-
 line pit -close on -outline out
   148.5 -609.5
   147.0 -606.0 147.0 -602.5 146.0 -600.0
@@ -30,6 +15,74 @@ line pit -close on -outline out
   141.5 -593.5 138.5 -596.0 138.5 -599.5
   138.5 -603.0 142.58 -612.0 141.0 -612.0
   140.0 -612.0 150.0 -613.0 148.5 -609.5
+endline
+
+line rock-border
+endline
+
+line rock-border -close on
+  163.0 -447.0
+  159.5 -448.0
+  159.5 -455.0
+  164.5 -451.0
+  163.0 -447.0
+endline
+
+line rock-border -close on
+  164.0 -437.0
+  157.0 -437.0
+  158.5 -442.0
+  164.5 -440.0
+  164.0 -437.0
+endline
+
+line rock-border -close on
+  183.0 -423.0
+  171.5 -423.5
+  170.5 -429.5
+  170.5 -429.5 176.0 -433.0 177.0 -431.5
+  178.0 -430.0 183.0 -423.0 183.0 -423.0
+  smooth off
+endline
+
+line rock-border -close on
+  196.5 -425.0
+  189.5 -426.0
+  188.5 -428.5
+  194.0 -437.0
+  196.5 -425.0
+endline
+
+line rock-border -close on
+  214.5 -423.0
+  205.5 -428.0
+  208.0 -436.5
+  213.0 -434.5
+  214.5 -423.0
+endline
+
+line rock-border -close on
+  240.5 -419.0
+  228.0 -420.0
+  225.5 -429.0
+  234.5 -430.0
+  240.5 -419.0
+endline
+
+line rock-border -close on
+  246.5 -401.5
+  242.5 -402.0
+  239.0 -407.5
+  245.0 -410.0
+  246.5 -401.5
+endline
+
+line rock-border -close on
+  295.5 -371.0
+  288.0 -372.0
+  288.0 -375.0
+  293.0 -377.5
+  295.5 -371.0
 endline
 
 line wall -id s1_l1
@@ -96,10 +149,6 @@ line wall -id s1_l2
   136.5 -614.5
 endline
 
-point 370.0 -331.0 station -name "BV12"
-
-point 343.0 -336.0 station -name "BV11"
-
 point 344.0 -346.0 station -name "BV10"
 
 point 332.0 -356.0 station -name "BV9"
@@ -159,8 +208,6 @@ line wall
   smooth off
 endline
 
-point 319.0 -173.0 station -name "BV20"
-
 point 318.0 -213.0 station -name "BV19"
 
 point 335.0 -239.0 station -name "BV18"
@@ -186,13 +233,9 @@ line wall
   362.0 -329.0
 endline
 
-point 332.5 -356.5 station -name "BV9"
+point 344.5 -337.0 station -name "BV11"
 
-point 344.0 -346.0 station -name "BV10"
-
-point 343.0 -336.0 station -name "BV11"
-
-point 370.0 -331.0 station -name "BV12"
+point 369.0 -332.0 station -name "BV12"
 
 point 347.0 -289.0 station -name "BV15"
 
@@ -206,7 +249,11 @@ endscrap
 
 scrap brez_voljep_3 -scale [327.0 -736.0 504.0 -735.0 0 0 25 0 m]
 
-point 508.5 -114.0 label -text "Brez Volje"
+line label -text "Brez Volje"
+  411.0 -188.0
+  411.0 -188.0 479.5 -145.0 521.5 -77.0
+  smooth off
+endline
 
 line wall
   327.0 -175.0
@@ -247,9 +294,7 @@ point 346.0 -153.0 station -name "BV22"
 
 point 337.0 -156.0 station -name "BV21"
 
-point 318.0 -213.0 station -name "BV19"
-
-point 319.0 -173.0 station -name "BV20"
+point 320.0 -172.0 station -name "BV20"
 
 endscrap
 
@@ -259,14 +304,20 @@ scrap brez_voljep_4 -scale [327.0 -736.0 504.0 -735.0 0 0 25 0 m]
 
 point 407.0 -119.0 station -name "BV25"
 
-line chimney -close on -clip off
+line chimney
   472.0 -36.0
   467.47 -39.1 466.0 -50.0 478.5 -48.5
-  483.31 -47.92 488.56 -37.16 484.5 -34.5
-  479.83 -31.44 476.61 -32.85 472.0 -36.0
+  smooth off
 endline
 
-line pit -close on -outline out
+line chimney -outline out
+  478.5 -48.5
+  483.31 -47.92 488.56 -37.16 484.5 -34.5
+  479.83 -31.44 476.61 -32.85 472.0 -36.0
+  smooth off
+endline
+
+line pit -close on -outline in
   405.0 -115.0
   398.5 -119.5
   400.0 -129.5
