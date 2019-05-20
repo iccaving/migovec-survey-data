@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.0 -970 723 138.75
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} wacp.gif 0 {}
 
 
@@ -19,6 +19,87 @@ line wall -id s1_l1
   215.5 -180.0 214.5 -185.0 215.0 -187.0
   215.5 -189.0 219.5 -195.5 219.5 -195.5
   smooth off
+endline
+
+line label -text "What a Coincidence!"
+  147.0 -108.0
+  147.0 -108.0 215.0 -311.0 272.0 -430.0
+endline
+
+line contour
+endline
+
+line contour
+  186.5 -126.75
+  186.5 -126.75 208.25 -121.0 210.25 -118.5
+endline
+
+line contour
+  175.5 -78.0
+  175.5 -78.0 187.5 -77.0 194.0 -72.25
+endline
+
+line contour
+  181.25 -114.0
+  181.25 -114.0 198.75 -112.5 200.5 -110.25
+endline
+
+line rock-border -close on
+  194.25 -116.5
+  191.0 -117.25
+  192.75 -121.5
+  192.75 -121.5 195.25 -121.5 195.5 -120.75
+  195.75 -120.0 194.25 -116.5 194.25 -116.5
+  smooth off
+endline
+
+line rock-border -close on
+  188.0 -102.0
+  184.25 -101.25
+  183.5 -105.0
+  185.75 -105.75
+  188.0 -102.0
+endline
+
+line rock-border -close on
+  192.25 -89.75
+  188.5 -93.5
+  191.0 -97.75
+  193.0 -94.0
+  192.25 -89.75
+endline
+
+line rock-border -close on
+  178.0 -59.25
+  172.5 -57.75
+  172.75 -60.5
+  176.5 -62.5
+  178.0 -59.25
+endline
+
+line rock-border -close on
+  188.25 -78.0
+  186.25 -78.0
+  185.0 -83.25
+  187.75 -84.0
+  188.25 -78.0
+endline
+
+line rock-border -close on
+  187.0 -88.0
+  183.75 -88.5
+  183.75 -88.5 183.25 -91.75 183.75 -92.5
+  184.25 -93.25 186.75 -95.25 186.75 -95.25
+  smooth off
+  187.0 -88.0
+endline
+
+line rock-border -close on
+  186.75 -71.5
+  183.5 -72.25
+  183.75 -75.0
+  186.75 -74.25
+  186.75 -71.5
 endline
 
 line wall -id s1_l2
@@ -153,11 +234,13 @@ line floor-meander
   331.75 -529.75 330.5 -528.5 326.0 -525.5
   321.5 -522.5 321.75 -517.5 316.25 -518.25
   310.75 -519.0 312.25 -515.5 311.0 -514.0
+  smooth off
 endline
 
 line floor-step
   404.0 -603.75
   404.0 -603.75 397.75 -607.0 396.5 -611.25
+  smooth off
 endline
 
 line rock-border
@@ -276,6 +359,7 @@ line wall
   328.75 -548.25 342.0 -602.0 353.5 -620.5
   363.03 -635.82 356.0 -627.0 366.5 -634.5
   377.0 -642.0 381.39 -640.56 385.25 -641.75
+  smooth off
 endline
 
 line wall

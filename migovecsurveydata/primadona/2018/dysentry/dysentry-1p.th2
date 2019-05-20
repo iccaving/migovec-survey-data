@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -5097.0 -3985.0 2955.0 353.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -5072.0 -3996.0 2968.0 368.0
+##XTHERION## xth_me_area_zoom_to 25
 
 # 2018.08.12 created by TopoDroid v. 4.0.1a
 
@@ -1941,7 +1941,10 @@ line wall
   smooth off
 endline
 
-point -4964.0 -2544.0 label -scale xl -text "Dysentry"
+line label -text "Dysentry" -scale s
+  -4912.0 -3224.0
+  -4912.0 -3224.0 -3784.0 -3144.0 -3144.0 -2888.0
+endline
 
 line wall
   -3257.16 -3432.12
