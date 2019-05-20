@@ -2,23 +2,29 @@ encoding  utf-8
 survey cloacamaxima
   input "cloacamaximap.th2"
   
-  map mcloacamaximap_1 -projection plan
+  map mcloacamaxima-p -projection plan
+    mcloacamaxima-p1
+    mcloacamaxima-p2
+    mcloacamaxima-p3
+  endmap
+
+  map mcloacamaxima-p1 -projection plan
     cloacamaximap_1
   endmap
   
-  map mcloacamaximap_2 -projection plan
+  map mcloacamaxima-p2 -projection plan
     cloacamaximap_2
   endmap
   
-  map mcloacamaximap_3 -projection plan
+  map mcloacamaxima-p3 -projection plan
     cloacamaximap_3
   endmap
   
-  map mcloacamaximap_4 -projection plan
+  map mcloacamaxima-p4 -projection plan
     cloacamaximap_4
   endmap
   
-  map mcloacamaximap_5 -projection plan
+  map mcloacamaxima-p5 -projection plan
     cloacamaximap_5
   endmap
   

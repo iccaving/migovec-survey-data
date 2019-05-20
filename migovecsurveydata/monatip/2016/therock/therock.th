@@ -2,15 +2,19 @@ encoding  utf-8
 survey therock
   input "therockp.th2"
   
-  map mtherockp_1 -projection plan
+  map mtherock-p -projection plan
+    mtherock-p1
+    mtherock-p2
+  endmap
+  map mtherock-p1 -projection plan
     therockp_1
   endmap
   
-  map mtherockp_2 -projection plan
+  map mtherock-p2 -projection plan
     therockp_2
   endmap
   
-  map mtherock_3 -projection plan
+  map mtherock-p3 -projection plan
     therockp_3
   endmap
   

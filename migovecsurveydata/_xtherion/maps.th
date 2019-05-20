@@ -7,6 +7,16 @@ map mwest_plateau-p -projection plan
 	mprima1-p@prima1.primadona
 	maleksandrija-p@aleksandrija.monatip
 	mmonatip2-p@monatip2.monatip
+	mmonatip3-p@monatip3.monatip
+	mcloacamaxima-p@cloacamaxima.monatip
+
+	high-monatip [-120 0 m] below
+
+	mbroken_hammer-p@broken_hammer.monatip
+	mmonatip4-p@monatip4.monatip
+	mdoubletime-p@doubletime.monatip
+	mbrez_volje-p@brez_volje.primadona
+	mpopotresni-p@popotresni.primadona
 	mprima2-p@prima2.primadona
 	mrisanke-p@risanke.primadona
 	mrisa2-p@risa2.primadona
@@ -63,7 +73,7 @@ map mwest_plateau-p -projection plan
 	mtight_and_scrotty-p@tight_and_scrotty.primadona
 	mgamblers_ruin-p@gamblers_ruin.primadona
 
-	pivnica [40 0 m] below
+	pivnica [0 -100 m] below
 
 	mpivnica_2_resurvey-p@pivnica_2_resurvey.primadona
 	mlost_in_a_dream-p@lost_in_a_dream.primadona
@@ -109,5 +119,13 @@ map pivnica -projection plan
 	msnakebitetwo-p@snakebitetwo.primadona
 	mave_maria-p@ave_maria.primadona
 	mpivnica_resurvey-p@pivnica_resurvey.primadona
+endmap
+
+map high-monatip -projection plan
+	mtherock-p@therock.monatip
+	mcloacamaxima-p5@cloacamaxima.monatip
+	mcloacamaxima-p4@cloacamaxima.monatip
+	malkatraz-p@alkatraz.monatip
+	mtherock-p3@therock.monatip
 endmap
 

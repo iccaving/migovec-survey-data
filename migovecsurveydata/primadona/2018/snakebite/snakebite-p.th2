@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -315.0 -446.0 661.5 574.0
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 100
 
 
 
@@ -50,6 +50,8 @@ line pit
   417.0 146.0 446.0 183.0 407.0 202.0
   smooth off
 endline
+
+point -44.0 -122.0 map-connection
 
 line label -text "Snakebite"
   -186.0 174.0
@@ -129,6 +131,7 @@ line wall
   166.0 104.0 158.0 109.0 144.0 114.0
   130.0 119.0 69.0 141.0 60.0 132.0
   51.0 123.0 33.0 94.0 7.0 119.0
+  smooth off
 endline
 
 line wall
