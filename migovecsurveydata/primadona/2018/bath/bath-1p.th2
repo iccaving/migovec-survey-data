@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -144.0 -4656.0 3008.0 152.0
+##XTHERION## xth_me_area_adjust -144.0 -4656.0 3376.0 152.0
 ##XTHERION## xth_me_area_zoom_to 25
 
 # 2018.08.12 created by TopoDroid v. 4.0.1a
@@ -968,7 +968,10 @@ point 2015.12 -2342.40 station -name "11A"
 
 point 1864.99 -1697.59 station -name "11"
 
-point 2284.0 -1868.0 label -text "Bath" -scale xl -align r
+line label -text "Bath"
+  2396.0 -848.0
+  2396.0 -848.0 3000.0 -1764.0 3232.0 -2564.0
+endline
 
 line wall -id s3_l1
   1813.34 -1710.96
