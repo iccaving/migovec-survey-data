@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -970 723 141.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -130.0 -970 723 139.5
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} more_like_welding-p.gif 0 {}
 
 
@@ -266,7 +266,63 @@ line rock-border -close on
 endline
 
 line rock-border
-  491.0 -585.0
+endline
+
+line rock-border -close on
+  464.5 -604.5
+  454.0 -608.0
+  454.0 -615.5
+  467.0 -616.5
+  464.5 -604.5
+endline
+
+line rock-border -close on
+  402.5 -524.0
+  394.5 -524.5
+  394.5 -524.5 393.5 -534.5 395.0 -535.0
+  396.5 -535.5 405.0 -535.0 405.0 -535.0
+  smooth off
+  402.5 -524.0
+endline
+
+line rock-border -close on
+  413.0 -543.0
+  399.0 -547.0
+  398.5 -555.0
+  408.0 -553.5
+  413.0 -543.0
+endline
+
+line rock-border -close on
+  430.0 -532.0
+  414.0 -530.0
+  414.0 -538.0
+  426.0 -539.5
+  430.0 -532.0
+endline
+
+line rock-border -close on
+  490.5 -558.5
+  489.0 -556.5 484.0 -550.0 484.0 -550.0
+  smooth off
+  477.0 -550.5
+  476.0 -555.5
+  476.0 -555.5 492.0 -560.5 490.5 -558.5
+endline
+
+line rock-border -close on
+  502.5 -564.5
+  494.0 -565.0
+  493.5 -573.0
+  501.0 -574.0
+  502.5 -564.5
+endline
+
+line rock-border
+endline
+
+line rock-border -close off
+  492.0 -578.0
   479.0 -591.0
   488.0 -598.0
   497.0 -592.0
@@ -277,14 +333,32 @@ line wall
   393.0 -557.0
   415.0 -571.0 419.0 -560.0 421.0 -587.0
   423.0 -614.0 457.68 -640.17 471.0 -641.0
-  487.0 -642.0 497.0 -648.0 509.0 -645.0
-  521.0 -642.0 520.0 -624.0 525.0 -626.0
+  487.0 -642.0 481.0 -652.0 493.0 -649.0
+  505.0 -646.0 513.0 -644.0 518.0 -646.0
+  smooth off
+endline
+
+line floor-step
+  406.5 -574.5
+  406.5 -574.5 457.0 -531.0 447.5 -510.5
+  smooth off
+endline
+
+line label -text "More like Welding"
+  334.0 -419.5
+  334.0 -419.5 466.0 -479.0 564.0 -545.0
+  smooth off
+endline
+
+line pit
+  509.5 -648.0
+  509.5 -648.0 539.5 -629.5 542.0 -618.5
   smooth off
 endline
 
 line wall
-  525.0 -626.0
-  522.0 -625.0 531.13 -611.92 530.0 -604.0
+  544.0 -628.0
+  541.0 -627.0 531.13 -611.92 530.0 -604.0
   529.0 -597.0 530.0 -583.0 529.0 -578.0
   528.0 -573.0 513.0 -547.0 512.0 -544.0
   511.0 -541.0 471.0 -535.0 462.0 -529.0

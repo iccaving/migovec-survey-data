@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -970 723 139.5
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -129.0 -970 723 138.75
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} galerijap.gif 0 {}
 
 
@@ -447,8 +447,6 @@ line border -id l80-476--202 -close on -subtype "invisible"
   500.5 -218.25
 endline
 
-point 190.5 -332.0 label -text "Galerija" -scale m -align tl
-
 point 495.0 -231.75 label -scale s -text "Knot<br>Very<br>Good<center>" -align br
 
 line wall
@@ -569,10 +567,8 @@ point 369.0 -296.5 station -name "13"
 
 point 448.5 -279.5 station -name "14"
 
-line wall
-  209.0 -356.75
-  209.0 -356.75 214.0 -354.0 214.75 -353.75
-  215.5 -353.5 221.25 -349.75 221.5 -348.75
+line wall -id s4_l6
+  221.5 -348.75
   221.75 -347.75 222.75 -342.5 222.75 -342.5
   smooth off
   222.75 -342.5 227.0 -335.5 229.25 -337.25
@@ -615,10 +611,6 @@ line wall -id s4_l5
   203.25 -317.25 202.0 -318.25 202.25 -320.5
   202.5 -322.75 201.25 -325.5 201.5 -326.5
   201.75 -327.5 204.25 -332.75 204.25 -333.75
-  204.25 -334.75 203.25 -338.25 203.25 -338.25
-  smooth off
-  200.25 -341.5
-  197.5 -345.25
 endline
 
 line wall -id s4_l4

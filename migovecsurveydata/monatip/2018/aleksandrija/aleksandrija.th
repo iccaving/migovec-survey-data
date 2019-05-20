@@ -6,8 +6,17 @@ survey aleksandrija -title "temp_cave_mona"
    input "aleksandrija-p.th2"
   ## input "temp_cave_mona-1s.th2"
 
+  map maleksandrija-p -projection plan
+    m2p
+    m1p
+  endmap
+
    map m1p -projection plan
      aleksandrija-1p
+   endmap
+
+   map m2p -projection plan
+     aleksandrija-2p
    endmap
   ## map m1s -projection extended
   ##   temp_cave_mona-1s

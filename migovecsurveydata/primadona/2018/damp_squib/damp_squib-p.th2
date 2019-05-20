@@ -20,8 +20,6 @@ point 443.0969763434122 424.56775810747297 station -name 3
 
 point 410.77111076296416 401.0653297822341 station -name 2
 
-line u:line #LINE
-endline
 
 line wall -reverse on
   400.5 406.0
@@ -56,15 +54,6 @@ endline
 
 point 401.0653297822341 401.947673507755 station -name 1
 
-line u:line #LINE
-  802.1306595644681 0.0
-  802.1306595644681 1024.0
-endline
-
-line u:line #LINE
-  0.0 802.1306595644681
-  874.7234842550524 802.1306595644681
-endline
 
 endscrap
 

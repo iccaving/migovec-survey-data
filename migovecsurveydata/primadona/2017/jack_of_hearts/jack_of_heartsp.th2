@@ -96,17 +96,9 @@ endline
 
 point 279.0 -94.0 station -name "35"
 
-point 279.0 -94.0 station -name "34"
-
-point 316.0 -100.0 station -name "33"
-
-point 317.0 -127.0 station -name "32"
-
 point 218.0 -33.0 station -name "28"
 
 point 218.0 -33.0 station -name "29"
-
-point 260.0 -67.0 station -name "30"
 
 endscrap
 
@@ -144,8 +136,6 @@ endscrap
 
 
 scrap jack_of_heartsp_3 -scale [328.0 -734.0 538.0 -734.0 0.0 0.0 30 0.0 m]
-
-point 145.0 -203.5 label -text "Jack of Hearts" -scale xl
 
 point 290.5 -260.5 water-flow -orientation 268.9
 
@@ -247,7 +237,10 @@ endscrap
 
 scrap jack_of_heartsp_4 -scale [328.0 -734.0 538.0 -734.0 0.0 0.0 30 0.0 m]
 
-point 293.5 -631.0 remark -text "sump"
+line label -text "Jack of Hearts"
+  175.0 -291.5
+  175.0 -291.5 246.0 -469.5 295.0 -615.5
+endline
 
 line wall
   292.5 -425.5
@@ -289,7 +282,7 @@ endline
 
 point 361.0 -552.5 water-flow -orientation 151.7 -clip off
 
-point 315.0 -497.0 water-flow -orientation 90.4 -clip off
+point 315.0 -497.0 water-flow -orientation 90.4 -clip off -align l
 
 point 270.0 -322.0 water-flow -orientation 163.7
 
