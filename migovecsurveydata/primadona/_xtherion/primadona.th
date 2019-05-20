@@ -1,7 +1,7 @@
 encoding  utf-8
 survey primadona -title "Primadona"
 
-input "maps.th"
+
 
 map mprimadona-p -projection plan
   m../2018-p
@@ -160,10 +160,13 @@ endmap
      equate 9@tight_and_scrotty 10@colony
      equate 9@gamblers_ruin 5@udc
      
+
+     join mfip_1@mfi karstaway-1p@karstaway
      join mfip_2@mfi hotmk-1p@hotmk
-     #join s1_l1@wac:0 s3_l1@hotmk:end
-     #join s1_l2@wac s3_l2@hotmk
-     #join hotmkp_3@hotmk colony-1p@colony
+     join s1_l1@wac:0 s2_l1@hotmk:end
+     join s1_l2@wac s2_l2@hotmk:0
+     join  s2_l3@hotmk:end s1_l3@colony:0
+     join  s2_l1@hotmk:0 s1_l1@colony:end
      join colony-10p@colony udcp_1@udc
      join terminusp_1@terminus quantum_statep_1@quantum_state
      
@@ -175,6 +178,9 @@ endmap
      join s1_l3@the_stile:0 s4_l1@galerija:end
      join s2_l1@quantum_state:end s4_l5@galerija:0
      join s2_l2@quantum_state:0 s4_l4@galerija:end
+
+     join s4_l5@galerija s20_l1@karstaway
+     join s4_l6@galerija s20_l2@karstaway
      
      join wacp_3@wac buckwheat-p1@buckwheat
      
@@ -284,6 +290,8 @@ endmap
 
      join batmere-p1@batmere mandare_low-p1@mandare_low
      
+     join electric_dreams-p1@electric_dreams more_like_welding-p3@more_like_welding
+
      join TTTr-p3@TTTr zima00p_2@zima00
      
 ###______________ ../2018_____________ ###

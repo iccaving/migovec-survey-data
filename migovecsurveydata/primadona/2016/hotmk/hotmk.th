@@ -4,13 +4,20 @@ survey hotmk #the hall of the mountain king
   input "hall_of_the_mountain_king-1p.th2"
   
   map mhotmk-p -projection plan
+    mhotmk-p2
     mhotmk-p1
-
   endmap
 
   map mhotmk-p1 -projection plan
     hotmk-1p
   endmap
+
+  map mhotmk-p2 -projection plan
+    hotmk-2p
+  endmap
+
+  join hotmk-1p hotmk-2p
+
 
   
   centreline

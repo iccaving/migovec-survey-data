@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -296.0 -2962.0 3414.0 12724.0
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_adjust -304.0 -2968.0 3424.0 12732.0
+##XTHERION## xth_me_area_zoom_to 25
 
 # 2018.08.12 created by TopoDroid v. 4.0.1a
 
@@ -306,6 +306,7 @@ line floor-step
   2017.87 6994.25
   2017.87 6994.25 2001.0 6890.0 1990.0 6873.0
   1979.0 6856.0 1932.2 6769.8 1935.6 6745.4
+  smooth off
 endline
 
 line floor-step
@@ -320,6 +321,7 @@ line floor-step
   2333.67 8064.26
   2333.67 8064.26 2321.0 8011.0 2317.0 8001.0
   2313.0 7991.0 2271.78 7893.36 2270.89 7881.18
+  smooth off
 endline
 
 line floor-step
@@ -327,6 +329,7 @@ line floor-step
   2326.99 7775.91 2341.0 7854.0 2345.0 7872.0
   2349.0 7890.0 2382.0 7978.0 2392.0 7997.0
   2402.0 8016.0 2425.34 8073.16 2424.67 8080.58
+  smooth off
 endline
 
 line floor-step
@@ -711,16 +714,19 @@ endline
 line u:texture_MY
   1604.0 5627.0
   1604.0 5627.0 1593.0 5566.0 1594.0 5553.0
+  smooth off
 endline
 
 line u:texture_MY
   1640.0 5616.0
   1640.0 5616.0 1625.0 5559.0 1624.0 5550.0
+  smooth off
 endline
 
 line u:texture_MY
   1626.0 5505.0
   1626.0 5505.0 1613.0 5456.0 1624.0 5420.0
+  smooth off
 endline
 
 line u:texture_MY
@@ -746,6 +752,7 @@ endline
 line pit
   1601.11 4722.92
   1601.11 4722.92 1518.88 4754.98 1475.44 4731.49
+  smooth off
 endline
 
 line contour
@@ -754,26 +761,31 @@ endline
 line contour
   1580.87 4780.42
   1580.87 4780.42 1514.0 4892.0 1474.0 4808.0
+  smooth off
 endline
 
 line contour
   1596.0 4918.0
   1588.0 4922.0 1514.0 5004.0 1472.0 4916.0
+  smooth off
 endline
 
 line contour
   1639.46 5041.31
   1639.46 5041.31 1638.0 5128.0 1544.0 5100.0
+  smooth off
 endline
 
 line contour
   1671.68 5170.99
   1671.68 5170.99 1659.32 5212.06 1598.66 5195.03
+  smooth off
 endline
 
 line contour
   1683.95 5318.72
   1683.95 5318.72 1652.0 5358.0 1602.0 5328.0
+  smooth off
 endline
 
 point 1910.26 6143.13 station -name "19"
@@ -1582,6 +1594,7 @@ line wall -reverse on
   382.14 -1645.59 380.1 -1684.55 365.68 -1717.89
   357.98 -1735.69 344.1 -1751.21 333.85 -1767.31
   318.24 -1791.82 323.87 -1786.95 310.74 -1813.57
+  smooth off
 endline
 
 line wall -reverse on -subtype presumed
@@ -1638,11 +1651,16 @@ line wall -reverse on -subtype presumed
   -40.45 -2825.94
 endline
 
+line label -text "The Aqueduct"
+  1384.0 -2008.0
+  1384.0 -2008.0 2728.0 3224.0 3132.0 7064.0
+endline
+
 line wall
   527.71 -1019.14
   539.0 -996.24 546.0 -970.74 549.69 -945.47
-  556.87 -896.35 559.85 -848.3 573.2 -800.03
-  589.26 -741.94 573.4 -800.63 590.82 -749.73
+  556.87 -896.35 562.65 -848.27 576.0 -800.0
+  592.06 -741.91 573.4 -800.63 590.82 -749.73
   593.34 -742.37 594.97 -734.72 597.04 -727.22
   599.61 -719.73 602.09 -712.22 604.74 -704.76
   614.38 -677.69 624.37 -651.18 630.88 -623.13
@@ -1700,6 +1718,7 @@ endline
 line pit
   333.85 -1767.31
   333.85 -1767.31 254.02 -1706.52 199.01 -1751.26
+  smooth off
 endline
 
 line wall -reverse on
@@ -1838,21 +1857,25 @@ endline
 line contour
   1067.93 1154.61
   1067.93 1154.61 1063.12 1137.9 1141.56 1131.95
+  smooth off
 endline
 
 line contour
   907.87 640.84
   907.87 640.84 984.56 613.58 1017.28 608.79
+  smooth off
 endline
 
 line contour
   730.87 124.9
   730.87 124.9 813.0 73.4 860.5 62.7
+  smooth off
 endline
 
 line contour
   516.78 -493.89
   516.78 -493.89 562.92 -542.68 646.46 -548.34
+  smooth off
 endline
 
 point 896.34 424.32 station -name "5"
@@ -2113,11 +2136,13 @@ endline
 line u:texture_MY
   1394.0 4536.0
   1394.0 4536.0 1390.0 4576.0 1394.0 4600.0
+  smooth off
 endline
 
 line u:texture_MY
   1334.0 4566.0
   1334.0 4566.0 1330.0 4614.0 1356.0 4662.0
+  smooth off
 endline
 
 line u:texture_MY
@@ -2128,11 +2153,13 @@ endline
 line u:texture_MY
   1328.0 4388.0
   1328.0 4388.0 1326.0 4432.0 1328.0 4444.0
+  smooth off
 endline
 
 line u:texture_MY
   1382.0 4356.0
   1382.0 4356.0 1374.0 4402.0 1376.0 4434.0
+  smooth off
 endline
 
 line u:texture_MY
@@ -2169,8 +2196,6 @@ line wall -reverse on
   smooth off
 endline
 
-point 1810.0 3364.0 label -text "The Aqueduct" -scale xl -align r
-
 line wall
   1627.11 4301.13
   1634.03 4328.97
@@ -2193,6 +2218,7 @@ line wall
   1475.44 4731.49 1454.0 4728.0 1444.0 4724.0
   1434.0 4720.0 1388.3 4708.9 1382.0 4704.0
   1319.0 4655.0 1327.0 4627.0 1294.0 4519.0
+  smooth off
 endline
 
 line wall
@@ -2207,26 +2233,31 @@ endline
 line contour
   1555.54 3584.2
   1555.54 3584.2 1460.2 3618.02 1402.1 3562.01
+  smooth off
 endline
 
 line contour
   1536.69 3273.89
   1536.69 3273.89 1484.46 3290.66 1430.23 3263.33
+  smooth off
 endline
 
 line contour
   1617.98 2794.39
   1617.98 2794.39 1528.1 2822.82 1498.05 2784.41
+  smooth off
 endline
 
 line contour
   1499.34 2421.98
   1499.34 2421.98 1439.1 2441.38 1393.55 2408.69
+  smooth off
 endline
 
 line contour
   1376.0 1950.0
   1376.0 1950.0 1329.52 1977.42 1278.76 1928.71
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -2377,12 +2408,14 @@ endline
 line pit
   1482.05 4023.13
   1482.05 4023.13 1513.38 3853.08 1601.69 4028.54
+  smooth off
 endline
 
 line pit
   1607.7 4155.69
   1607.7 4155.69 1566.0 4184.0 1552.0 4188.0
   1538.0 4192.0 1500.38 4173.38 1485.19 4162.69
+  smooth off
 endline
 
 line rock-border
@@ -2442,16 +2475,19 @@ point 1466.0 1870.0 continuation -scale xl
 line pit
   1392.06 1701.91
   1392.06 1701.91 1415.54 1643.6 1449.77 1684.8
+  smooth off
 endline
 
 line contour
   1394.29 1632.05
   1394.29 1632.05 1436.78 1617.7 1465.39 1633.85
+  smooth off
 endline
 
 line contour
   1391.12 1599.97
   1391.12 1599.97 1394.9 1518.96 1443.45 1514.48
+  smooth off
 endline
 
 line contour
