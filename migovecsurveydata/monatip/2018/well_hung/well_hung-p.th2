@@ -9,6 +9,7 @@ scrap well_hung-p1 -scale [0.0 0.0 990.346167186958 1023.9999999999999 0.0 0.0 1
 line pit -clip off
   477.5 544.25
   477.5 544.25 475.25 540.75 478.25 537.5
+  smooth off
 endline
 
 line wall -reverse on
@@ -62,7 +63,10 @@ endscrap
 
 scrap well_hung-p2 -scale [0.0 0.0 990.346167186958 1023.9999999999999 0.0 0.0 111.53 115.32]
 
-point 452.25 506.0 label -align bl -scale s -text "Well Hung"
+line label -text "Well Hung"
+  411.5 528.5
+  411.5 528.5 442.75 479.0 484.0 444.75
+endline
 
 area water
 endarea

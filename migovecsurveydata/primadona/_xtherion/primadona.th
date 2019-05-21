@@ -167,7 +167,6 @@ endmap
      join s1_l2@wac s2_l2@hotmk:0
      join  s2_l3@hotmk:end s1_l3@colony:0
      join  s2_l1@hotmk:0 s1_l1@colony:end
-     join colony-10p@colony udcp_1@udc
      join terminusp_1@terminus quantum_statep_1@quantum_state
      
      join s2_l1@the_stile:end s2_l1@cattlegrid:0
@@ -181,8 +180,15 @@ endmap
 
      join s4_l5@galerija s20_l1@karstaway
      join s4_l6@galerija s20_l2@karstaway
-     
+
+     join udcp_1@udc gamblers_ruin-p1@gamblers_ruin
+     join udcp_2@udc tight_and_scrotty-p1@tight_and_scrotty
      join wacp_3@wac buckwheat-p1@buckwheat
+     
+     join s10_l1@colony:end s1_l1@udc:end
+     join s10_l2@colony:0 s1_l2@udc:0
+     
+     
      
 ###______________ ../2017_____________ ###
      map m../2017-p -projection plan -title "Year ../2017"
@@ -283,6 +289,8 @@ endmap
       join high_and_dry-p2@high_and_dry dogfish-p1@dogfish
 
       join hammerhead2-p1@hammerhead2 hammerhead-p1@hammerhead
+
+      join entirely_my_fault-p1@entirely_my_fault karstaway-1p@karstaway
       
      join dejavup_1@dejavu zima00p_1@zima00
      join s3_l1@pov:end s3_l1@apple_crumble:end
@@ -421,6 +429,8 @@ endmap
      join s1_l1@purgatory:end s4_l1@alabaster
      join holy_moley-p2@holy_moley sweet_baby_jesusp_1@sweet_baby_jesus
      join testify-p6@testify canticle_for_migovec-p3@canticle_for_migovec
+     join s1_l1@holy_moley s3_l1@alabaster
+     join s1_l2@holy_moley s3_l2@alabaster
      
      ###other ###
       #inputs

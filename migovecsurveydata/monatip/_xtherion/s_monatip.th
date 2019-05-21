@@ -43,15 +43,16 @@ survey monatip
   join s2_l2@monatip4:0 s2_l2@broken_hammer:0
   join s2_l1@monatip4:end s2_l1@broken_hammer:end
   
-  join alkatrazp_1@alkatraz monatip4p_5@monatip4
+  join alkatraz_disto_resurvey-2p@alkatraz_disto_resurvey monatip4p_5@monatip4
  
-  
+  join s5_l1@monatip4:end s1_l1@doubletime:0
+  join s5_l2@monatip4:0 s1_l2@doubletime:end
   
   ######________________2016________________######
   input "../2016/therock/therock.th"
   input "../2016/cloacamaxima/cloacamaxima.th"
   
-   join alkatrazp_2@alkatraz therockp_2@therock
+   join alkatraz_disto_resurvey-1p@alkatraz_disto_resurvey therockp_2@therock
   equate 14@therock 7@alkatraz
   
   join cloacamaximap_1@cloacamaxima monatip2p_3@monatip2

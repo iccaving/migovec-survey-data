@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -4140.5 2882.0 138.75
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -132.0 -4184.0 2885.0 141.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} prima1p.ppm 0 {}
 
 
@@ -784,8 +784,6 @@ line wall -reverse on
   smooth off
 endline
 
-point 1884.0 -1808.0 label -text "Primadona" -scale xl -align l
-
 line wall -reverse on
   2213.0 -2387.0
   2214.5 -2385.5 2217.0 -2379.0 2217.0 -2376.5
@@ -1539,6 +1537,7 @@ point 2303.5 -2918.0 archeo-material -scale s
 line label -text "Bear Pitch" -scale l
   2248.5 -2896.0
   2248.5 -2896.0 2279.5 -2834.0 2315.0 -2796.0
+  smooth off
 endline
 
 line rock-border
@@ -1778,6 +1777,7 @@ endline
 line pit -reverse on
   2413.25 -3094.0
   2413.25 -3094.0 2445.08 -3090.58 2467.25 -3112.75
+  smooth off
 endline
 
 line wall
@@ -1823,6 +1823,7 @@ scrap prima1p_4 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 line label -text "Spiral Climb" -scale l
   2356.25 -3521.0
   2356.25 -3521.0 2389.5 -3441.75 2448.5 -3411.5
+  smooth off
 endline
 
 line wall
@@ -2111,6 +2112,7 @@ endline
 line pit
   2526.25 -3437.0
   2526.25 -3437.0 2487.75 -3437.5 2483.0 -3460.5
+  smooth off
 endline
 
 line wall
@@ -2289,6 +2291,7 @@ line wall
   2379.0 -3152.0 2382.5 -3162.5 2382.5 -3162.5
   smooth off
   2382.5 -3162.5 2389.57 -3188.73 2384.0 -3190.5
+  smooth off
 endline
 
 line floor-step
@@ -2315,6 +2318,7 @@ line floor-step -reverse on
   2445.75 -3504.0 2436.5 -3510.75 2437.75 -3517.75
   2439.0 -3524.75 2435.5 -3534.25 2434.75 -3536.75
   2434.0 -3539.25 2439.0 -3545.25 2449.0 -3547.5
+  smooth off
 endline
 
 line rock-border
@@ -2563,6 +2567,7 @@ line floor-step
   2487.5 -3572.0
   2506.0 -3578.5
   2506.0 -3578.5 2525.5 -3576.25 2539.5 -3575.5
+  smooth off
 endline
 
 line floor-step
@@ -2635,11 +2640,13 @@ endline
 line floor-step
   2575.5 -3590.0
   2575.5 -3590.0 2561.75 -3593.75 2561.5 -3607.0
+  smooth off
 endline
 
 line floor-step
   2595.0 -3651.0
   2595.0 -3651.0 2580.75 -3642.75 2581.0 -3656.5
+  smooth off
 endline
 
 line floor-step
@@ -2829,8 +2836,6 @@ scrap prima1p_7 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 
 point 2672.0 -3815.75 water-flow -orientation 241.5
 
-point 2537.25 -3823.5 label -text "Lost and Found<br>Junction" -scale l -align l
-
 line rock-border -close on
   2716.5 -3911.0
   2701.0 -3924.0
@@ -2889,27 +2894,26 @@ endline
 line contour
   2663.0 -3758.0
   2663.0 -3758.0 2577.75 -3752.75 2560.5 -3783.5
+  smooth off
 endline
 
 line contour
   2675.25 -3804.0
   2675.25 -3804.0 2633.0 -3804.0 2621.25 -3830.75
+  smooth off
 endline
 
 line contour
   2670.25 -3880.0
   2670.25 -3880.0 2697.0 -3868.75 2699.0 -3845.5
+  smooth off
 endline
 
 line contour
   2673.0 -3904.5
   2673.0 -3904.5 2695.25 -3913.75 2720.5 -3899.5
+  smooth off
 endline
-
-area water
-  s7_l3
-  s7_l1
-endarea
 
 line rock-border
 endline
@@ -2964,6 +2968,7 @@ endline
 line pit -reverse on
   2541.0 -3691.5
   2541.0 -3691.5 2580.5 -3701.0 2589.75 -3708.0
+  smooth off
 endline
 
 line pit -reverse on
@@ -3004,6 +3009,7 @@ line wall
   2574.5 -3690.5
   2572.0 -3690.5 2559.5 -3720.0 2558.0 -3721.0
   2556.5 -3722.0 2534.5 -3749.25 2530.0 -3735.75
+  smooth off
 endline
 
 point 2524.25 -3731.75 narrow-end -align t
@@ -3021,6 +3027,11 @@ line wall -id s7_l3
 endline
 
 point 2656.0 -3960.5 station -name "1"
+
+line label -text "Lost and Found"
+  2556.0 -3932.0
+  2556.0 -3932.0 2580.0 -4010.0 2651.0 -4052.0
+endline
 
 line wall -id s7_l4 -reverse on
   2659.0 -3997.0

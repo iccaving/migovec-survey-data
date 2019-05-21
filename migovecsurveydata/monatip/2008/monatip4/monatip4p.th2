@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -970 723 138.75
+##XTHERION## xth_me_area_adjust -130.0 -970 723 139.5
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} monatip4p.gif 0 {}
 
@@ -343,22 +343,7 @@ line wall
   345.5 -606.5
 endline
 
-area blocks
-  l93-266--606
-endarea
-
-line border -id l93-266--606 -close on -subtype invisible
-  237.0 -608.5
-  222.0 -632.0
-  248.0 -643.5
-  296.5 -647.5
-  341.0 -620.0
-  330.5 -600.0
-  269.5 -605.5
-  237.0 -608.5
-endline
-
-line wall
+line wall -id s5_l2
   234.5 -639.0
   236.5 -636.5 241.0 -631.0 242.5 -631.5
   244.0 -632.0 251.5 -634.5 255.0 -636.0
@@ -367,12 +352,11 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -id s5_l1
   223.0 -626.5
   225.0 -627.0 229.0 -628.0 228.5 -629.5
-  228.0 -631.0 223.0 -638.0 223.0 -638.0
+  228.0 -631.0 225.0 -635.0 225.0 -635.0
   smooth off
-  221.0 -643.0
 endline
 
 line wall
