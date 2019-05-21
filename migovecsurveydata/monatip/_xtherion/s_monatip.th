@@ -47,6 +47,11 @@ survey monatip
  
   join s5_l1@monatip4:end s1_l1@doubletime:0
   join s5_l2@monatip4:0 s1_l2@doubletime:end
+
+  ######________________2012________________######
+  input "../2012/monatip5/monatip5.th"
+
+  equate 27@monatip5 27@monatip2
   
   ######________________2016________________######
   input "../2016/therock/therock.th"
