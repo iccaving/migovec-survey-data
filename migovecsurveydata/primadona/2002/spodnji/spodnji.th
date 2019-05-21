@@ -7,10 +7,7 @@ survey spodnji
   map mspodnji_e -projection extended
     spodnji_e1
   endmap
-  
-  #map mspodnjip_1 -projection plan
-    #spodnjip_1
-  #endmap
+
   
   map mspodnjip_2 -projection plan
     spodnjip_2
@@ -30,7 +27,7 @@ survey spodnji
     mspodnjip_2
   endmap
   
-  join spodnjip_1 spodnjip_2
+  #join spodnjip_1 spodnjip_2
   join spodnjip_2 spodnjip_3
   
   centreline

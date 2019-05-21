@@ -4,6 +4,7 @@ survey dejavu
   
   map mdejavu-p -projection plan
     mdejavu-p1
+    mdejavu-p3
     mdejavu-p2
   endmap
 
@@ -13,6 +14,10 @@ survey dejavu
   
   map mdejavu-p2 -projection plan
       dejavup_2
+  endmap
+
+  map mdejavu-p3 -projection plan
+    dejavup_3
   endmap
   
   centreline

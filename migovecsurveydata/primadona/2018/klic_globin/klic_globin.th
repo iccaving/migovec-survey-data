@@ -10,7 +10,9 @@ survey klic_globin -title "Klic Globin"
     explo-team "Tanguy Racine"
     explo-team "Jack Halliday"
     
-    # team tanguy jack halliday james wilson 
+    team "Tanguy Racine" insts
+    team "Jack Halliday" notes
+    team "James Wilson" tape
     # declination 0.00 degrees
     units length meters
     units compass clino degrees

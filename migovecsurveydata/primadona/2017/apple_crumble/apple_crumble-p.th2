@@ -336,7 +336,7 @@ line wall -id s3_l2
   smooth off
 endline
 
-line wall -close on
+line wall -close on -outline in
   488.5 579.0
   488.5 579.0 494.5 578.25 494.75 577.25
   495.0 576.25 494.5 570.75 494.5 570.75
@@ -382,14 +382,6 @@ endline
 
 line wall
 endline
-
-point 396.5233219567691 521.5381114903299 station -name 26
-
-point 392.8100113765643 513.1649601820251 station -name 25
-
-point 366.30716723549494 523.358361774744 station -name 24
-
-point 364.0500568828214 587.2855517633675 station -name 23
 
 point 431.8361774744028 659.9499431171787 station -name 22
 

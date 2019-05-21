@@ -211,7 +211,7 @@ endscrap
 
 scrap galerijap_3 -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 
-line pit -close on -outline out
+line pit -close on -outline in
   540.0 -205.75
   542.5 -202.0 532.5 -195.0 532.5 -195.0
   smooth off
@@ -311,6 +311,7 @@ endline
 line label -text "Knot Very Good"
   420.25 -343.0
   420.25 -343.0 508.5 -297.0 579.75 -235.5
+  smooth off
 endline
 
 line wall -id s4_l2
@@ -333,7 +334,7 @@ line wall -id s4_l2
   smooth off
 endline
 
-line pit -close on -outline out
+line pit -close on -outline in
   481.0 -147.25
   479.0 -146.75 475.25 -145.75 473.75 -146.75
   472.25 -147.75 470.0 -148.25 470.0 -152.0
@@ -557,7 +558,7 @@ line wall -id s4_l6
   300.75 -312.25
 endline
 
-line pit -close on -outline out
+line pit -close on -outline in
   227.0 -327.75
   228.25 -326.0 230.0 -326.5 230.5 -324.0
   231.0 -321.5 230.5 -319.5 230.5 -317.75
