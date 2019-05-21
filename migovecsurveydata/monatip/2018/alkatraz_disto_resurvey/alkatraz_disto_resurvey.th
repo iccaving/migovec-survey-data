@@ -1,8 +1,23 @@
 # 2018.07.21 created by TopoDroid v 4.0.1a
 
 survey alkatraz_disto_resurvey -title "alkatraz_disto_resurvey"
-    # reaurvey of Alkatraz 
+    # resurvey of Alkatraz 
 
+    input alkatraz_disto_resurvey-1p.th2
+
+    map malkatraz_disto_resurvey-p -projection plan
+        malkatraz_disto_resurvey-p2
+        malkatraz_disto_resurvey-p1
+    endmap
+    map malkatraz_disto_resurvey-p1 -projection plan
+        alkatraz_disto_resurvey-1p
+    endmap
+
+    map malkatraz_disto_resurvey-p2 -projection plan
+        alkatraz_disto_resurvey-2p
+    endmap
+
+    join alkatraz_disto_resurvey-1p alkatraz_disto_resurvey-2p
   centerline
     date 2018.07.21 
     # team Tanguy Racine 

@@ -1,16 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -970 723 139.5
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -132.0 -970 723 141.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} holy_moley-p.gif 0 {}
 
 
 
 scrap holy_moley-p1 -scale [328.0 -734.0 548.0 -733.0 0.0 0.0 10 0.0 m]
-
-point 127.5 -278.5 label -align l -scale xl -text "Holy Moley"
-
-area water
-endarea
 
 area water
   l32-276--390
@@ -127,9 +122,13 @@ line pit
   smooth off
 endline
 
-line wall
-  355.0 -667.0
-  354.0 -664.0 355.0 -657.0 356.0 -650.0
+line wall -subtype invisible
+  339.0 -666.0
+  338.0 -663.0 355.0 -657.0 356.0 -650.0
+endline
+
+line wall -id s1_l2
+  356.0 -650.0
   357.0 -643.0 359.0 -641.0 360.0 -636.0
   361.0 -631.0 363.0 -617.0 363.0 -617.0
   smooth off
@@ -188,7 +187,28 @@ line wall
   smooth off
 endline
 
-line wall
+line floor-step
+endline
+
+line floor-step -reverse on
+  334.0 -549.0
+  334.0 -549.0 338.0 -531.0 356.0 -545.0
+  smooth off
+endline
+
+line floor-step
+  268.0 -479.0
+  268.0 -479.0 298.0 -476.0 303.0 -455.0
+  smooth off
+endline
+
+line label -text "Holey Moley"
+  47.0 -102.0
+  47.0 -102.0 18.0 -388.0 175.0 -609.0
+  smooth off
+endline
+
+line wall -id s1_l1
   197.0 -65.0
   196.0 -70.0 177.0 -84.0 176.0 -88.0
   175.0 -92.0 171.0 -104.0 173.0 -112.0
@@ -216,9 +236,11 @@ line wall
   334.0 -581.0 338.0 -598.0 337.0 -602.0
   336.0 -606.0 328.0 -617.0 328.0 -617.0
   smooth off
-  312.0 -620.0
-  296.0 -622.0
-  285.0 -631.0
+endline
+
+line wall -subtype invisible
+  328.0 -617.0
+  317.0 -630.0
 endline
 
 point 208.0 -57.0 station -name "6"

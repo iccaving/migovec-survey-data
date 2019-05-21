@@ -1,7 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -970 723 138.75
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} tight_and_scrotty-p.gif 0 {}
+##XTHERION## xth_me_area_adjust -130.0 -768.0 477.0 139.5
+##XTHERION## xth_me_area_zoom_to 200
 
 
 
@@ -78,6 +77,7 @@ endline
 line pit
   299.0 -543.0
   299.0 -543.0 305.0 -539.0 307.0 -511.0
+  smooth off
 endline
 
 line pit
@@ -88,7 +88,146 @@ line pit
   smooth off
 endline
 
+point 315.5 -194.0 water-flow -orientation 254.0
+
+line rock-border
+endline
+
+line rock-border -close on
+  194.0 -131.0
+  187.5 -130.5
+  188.5 -137.0
+  197.5 -137.5
+  194.0 -131.0
+endline
+
+line rock-border -close on
+  201.5 -150.0
+  193.0 -150.5
+  193.0 -154.5
+  198.0 -156.5
+  201.5 -150.0
+endline
+
+line rock-border -close on
+  176.0 -140.0
+  166.0 -139.0
+  164.5 -148.5
+  164.5 -148.5 169.5 -155.5 170.0 -154.0
+  170.5 -152.5 176.0 -140.0 176.0 -140.0
+  smooth off
+endline
+
+line rock-border -close on
+  187.0 -139.0
+  182.5 -145.0
+  186.0 -148.0
+  192.5 -142.0
+  187.0 -139.0
+endline
+
+line rock-border -close on
+  204.5 -110.5
+  194.5 -111.5
+  197.5 -121.0
+  207.0 -120.5
+  204.5 -110.5
+endline
+
+line rock-border -close on
+  254.0 -126.0
+  251.0 -125.0 235.5 -118.0 235.5 -118.0
+  smooth off
+  231.5 -128.0
+  238.0 -134.0
+  238.0 -134.0 257.0 -127.0 254.0 -126.0
+endline
+
+line rock-border -close on
+  185.5 -84.5
+  176.0 -87.0
+  177.0 -96.5
+  184.0 -96.5
+  185.5 -84.5
+endline
+
+line rock-border -close on
+  239.5 -77.0
+  238.0 -76.0 224.5 -78.0 224.5 -78.0
+  smooth off
+  228.0 -90.0
+  239.0 -91.0
+  239.0 -91.0 241.0 -78.0 239.5 -77.0
+endline
+
+line rock-border -close on
+  240.5 -35.0
+  228.0 -34.5
+  230.0 -49.5
+  230.0 -49.5 242.5 -51.0 242.0 -49.0
+  241.5 -47.0 240.5 -35.0 240.5 -35.0
+  smooth off
+endline
+
+line rock-border
+endline
+
+line pit
+  213.0 -158.0
+  213.0 -158.0 218.0 -111.0 159.0 -132.0
+  smooth off
+endline
+
+line contour
+  263.0 -106.0
+  263.0 -106.0 153.0 -98.0 147.0 -127.0
+  smooth off
+endline
+
+line contour
+  268.0 -66.0
+  268.0 -66.0 183.0 -53.0 162.0 -84.0
+  smooth off
+endline
+
+line contour
+  240.0 -20.0
+  240.0 -20.0 157.0 -41.0 154.0 -59.0
+  smooth off
+endline
+
 line wall
+endline
+
+line wall
+  253.0 -98.0
+  253.0 -98.0 263.0 -92.0 264.0 -77.0
+  265.0 -62.0 263.0 -48.0 263.0 -43.0
+  263.0 -38.0 251.0 -29.0 251.0 -29.0
+  smooth off
+  251.0 -29.0 238.0 -23.0 235.0 -21.0
+  smooth off
+endline
+
+line wall
+  162.0 -40.0
+  162.0 -40.0 165.0 -40.0 165.0 -50.0
+  165.0 -60.0 162.0 -68.0 162.0 -84.0
+  162.0 -100.0 161.0 -121.0 161.0 -121.0
+  smooth off
+endline
+
+line wall
+  161.0 -121.0
+  161.0 -121.0 158.0 -119.0 159.0 -132.0
+  160.0 -145.0 157.0 -143.0 161.0 -150.0
+  165.0 -157.0 162.0 -160.0 179.0 -160.0
+  196.0 -160.0 213.0 -158.0 213.0 -158.0
+  smooth off
+  229.0 -158.0
+endline
+
+line wall -id s1_l1
   319.0 -529.0
   316.0 -524.0 310.0 -515.0 310.0 -515.0
   smooth off
@@ -120,12 +259,8 @@ line wall
   smooth off
 endline
 
-line wall -reverse on
-  301.0 -578.0
-  301.0 -578.0 302.0 -572.0 301.0 -568.0
-  300.0 -564.0 299.0 -563.0 299.0 -559.0
-  299.0 -555.0 299.0 -543.0 299.0 -543.0
-  smooth off
+line wall -id s1_l2 -reverse on
+  299.0 -543.0
   299.0 -543.0 305.0 -539.0 298.0 -536.0
   291.0 -533.0 286.0 -529.0 286.0 -529.0
   smooth off

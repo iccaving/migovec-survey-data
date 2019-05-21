@@ -2,6 +2,11 @@ encoding  utf-8
 survey ubend3
   input "ubend3p.th2"
   
+  map mubend3-p -projection plan
+    mubend3p_1
+    mubend3p_3
+    mubend3p_2
+  endmap
   map mubend3p_1 -projection plan
     ubend3p_1
    endmap

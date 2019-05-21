@@ -1,6 +1,13 @@
 encoding  utf-8
 ###### MAIN MAP #######
 map mwest_plateau-p -projection plan
+	
+	mubend2-p@ubend2.s_ubend
+	mubend1-p@ubend.s_ubend
+	mubend3-p@ubend3.s_ubend
+	mdet-p@det.s_ubend
+	mbathtub-p@bathtub.s_ubend
+
 	mdrugi-p@drugi.primadona
 
 	mmonatip1-p@monatip1.monatip
@@ -9,11 +16,15 @@ map mwest_plateau-p -projection plan
 	mmonatip2-p@monatip2.monatip
 	mmonatip3-p@monatip3.monatip
 	mcloacamaxima-p@cloacamaxima.monatip
+	mwell_hung-p@well_hung.monatip
 
 	high-monatip [-120 0 m] above
 
+	mtherock-p@therock.monatip
+	mtherock-p3@therock.monatip
 	mbroken_hammer-p@broken_hammer.monatip
 	mmonatip4-p@monatip4.monatip
+	malkatraz_disto_resurvey-p2@alkatraz_disto_resurvey.monatip
 	mdoubletime-p@doubletime.monatip
 	mbrez_volje-p@brez_volje.primadona
 	mpopotresni-p@popotresni.primadona
@@ -33,8 +44,8 @@ map mwest_plateau-p -projection plan
 	
 	mjack_of_hearts-p@jack_of_hearts.primadona
 	mplumbers_p-p@plumbers_p.primadona
-	mhallelujah-p@hallelujah.primadona
 	msweet_baby_jesus-p@sweet_baby_jesus.primadona
+	mhallelujah-p@hallelujah.primadona
 	mquantum_state-p@quantum_state.primadona
 	mterminus-p@terminus.primadona
 	mdejavu-p@dejavu.primadona
@@ -55,6 +66,7 @@ map mwest_plateau-p -projection plan
 	mstranglehold-p@stranglehold.primadona
 	mmfi-p@mfi.primadona
 	mthe_atrium-p@the_atrium.primadona
+	mentirely_my_fault-p@entirely_my_fault.primadona
 
 	msweet_baby_jesus-p@sweet_baby_jesus.primadona
 	mholy_moley-p@holy_moley.primadona
@@ -69,6 +81,7 @@ map mwest_plateau-p -projection plan
 	mhotmk-p@hotmk.primadona
 	mcolony-p@colony.primadona
 	mwac-p@wac.primadona
+	mwhat_a_disappointment-p@what_a_disappointment.primadona
 	mudc-p@udc.primadona
 	mtight_and_scrotty-p@tight_and_scrotty.primadona
 	mgamblers_ruin-p@gamblers_ruin.primadona
@@ -123,9 +136,10 @@ endmap
 
 map high-monatip -projection plan
 	mtherock-p@therock.monatip
+	mcloacamaxima-p6@cloacamaxima.monatip
 	mcloacamaxima-p5@cloacamaxima.monatip
 	mcloacamaxima-p4@cloacamaxima.monatip
-	malkatraz-p@alkatraz.monatip
+	malkatraz_disto_resurvey-p@alkatraz_disto_resurvey.monatip
 	mtherock-p3@therock.monatip
 endmap
 

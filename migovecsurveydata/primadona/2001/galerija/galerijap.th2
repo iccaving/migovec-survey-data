@@ -308,6 +308,11 @@ scrap galerijap_4 -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 line wall
 endline
 
+line label -text "Knot Very Good"
+  420.25 -343.0
+  420.25 -343.0 508.5 -297.0 579.75 -235.5
+endline
+
 line wall -id s4_l2
   490.0 -217.0
   492.25 -205.0
@@ -415,39 +420,6 @@ line wall
   301.5 -294.0 298.0 -296.0 298.0 -296.0
   smooth off
 endline
-
-area pebbles
-  l83-426--261
-  l83-426--261
-  l83-426--261
-endarea
-
-line border -id l83-426--261 -close on -subtype "invisible"
-  426.5 -261.25
-  365.75 -285.5
-  302.0 -283.0
-  311.25 -325.25
-  430.75 -309.75
-  455.5 -296.25
-  426.5 -261.25
-endline
-
-area blocks
-  l80-476--202
-  l80-476--202
-  l80-476--202
-  l80-476--202
-endarea
-
-line border -id l80-476--202 -close on -subtype "invisible"
-  500.5 -218.25
-  476.25 -202.0
-  431.25 -253.5
-  467.0 -277.5
-  500.5 -218.25
-endline
-
-point 495.0 -231.75 label -scale s -text "Knot<br>Very<br>Good<center>" -align br
 
 line wall
   473.75 -203.25
@@ -611,6 +583,7 @@ line wall -id s4_l5
   203.25 -317.25 202.0 -318.25 202.25 -320.5
   202.5 -322.75 201.25 -325.5 201.5 -326.5
   201.75 -327.5 204.25 -332.75 204.25 -333.75
+  smooth off
 endline
 
 line wall -id s4_l4
