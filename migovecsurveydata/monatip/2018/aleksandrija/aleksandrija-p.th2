@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -144.0 -776.0 4420.0 4528.0
+##XTHERION## xth_me_area_adjust -144.0 -776.0 4596.0 4528.0
 ##XTHERION## xth_me_area_zoom_to 25
 
 # 2019.02.14 created by TopoDroid v. 4.1.1a
@@ -56,16 +56,19 @@ endline
 line contour
   560.0 -296.0
   560.0 -296.0 404.0 -332.0 364.0 -396.0
+  smooth off
 endline
 
 line contour
   724.0 168.0
   724.0 168.0 584.0 212.0 472.0 212.0
+  smooth off
 endline
 
 line contour
   1048.0 748.0
   1048.0 748.0 912.0 876.0 852.0 876.0
+  smooth off
 endline
 
 line wall
@@ -178,8 +181,9 @@ line chimney -close on
 endline
 
 line label -text "Aleksandrija"
-  1288.0 -508.0
-  1288.0 -508.0 2308.75 1175.32 2692.0 2648.0
+  1768.0 1308.0
+  1768.0 1308.0 3896.0 2104.0 4452.0 3600.0
+  smooth off
 endline
 
 line wall
@@ -254,36 +258,43 @@ endline
 line floor-step
   1676.0 2744.0
   1676.0 2744.0 1466.0 2816.0 1314.0 2850.0
+  smooth off
 endline
 
 line contour
   1798.0 3024.0
   1788.0 3030.0 1588.0 3142.0 1506.0 3150.0
+  smooth off
 endline
 
 line contour
   3526.0 3180.0
   3526.0 3180.0 3340.0 3260.0 3266.0 3260.0
+  smooth off
 endline
 
 line contour
   3644.0 3494.0
   3644.0 3494.0 3360.0 3594.0 3314.0 3580.0
+  smooth off
 endline
 
 line pit
   4256.0 4170.0
   4256.0 4170.0 4068.0 4354.0 3990.0 4382.0
+  smooth off
 endline
 
 line contour
   3946.0 3684.0
   3946.0 3684.0 3842.0 4072.0 3626.0 4116.0
+  smooth off
 endline
 
 line contour
   4270.0 3802.0
   4270.0 3802.0 3952.0 4216.0 3644.0 4214.0
+  smooth off
 endline
 
 line wall -reverse on -subtype presumed
@@ -311,6 +322,7 @@ line wall
   3648.95 3635.85 3676.69 3633.05 3698.35 3641.59
   3712.96 3647.36 3723.49 3664.04 3739.74 3668.26
   3754.83 3672.17 3772.0 3600.0 3828.0 3552.0
+  smooth off
 endline
 
 point 4168.0 4300.0 continuation -align tr
