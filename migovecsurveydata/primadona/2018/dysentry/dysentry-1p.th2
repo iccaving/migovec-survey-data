@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -5072.0 -3996.0 2968.0 368.0
-##XTHERION## xth_me_area_zoom_to 25
+##XTHERION## xth_me_area_adjust -5062.0 -3990.0 2960.0 358.0
+##XTHERION## xth_me_area_zoom_to 50
 
 # 2018.08.12 created by TopoDroid v. 4.0.1a
 
@@ -1078,7 +1078,7 @@ line wall
   smooth off
 endline
 
-line wall -reverse on
+line wall -reverse on -outline in
   -1354.0 -2902.0
   -1322.92 -2893.69 -1310.05 -2875.66 -1290.0 -2855.0
   -1271.84 -2836.29 -1264.57 -2840.77 -1274.94 -2807.4
@@ -1086,7 +1086,7 @@ line wall -reverse on
   smooth off
 endline
 
-line wall -reverse on
+line wall -reverse on -outline in
   -1323.91 -2762.25
   -1333.68 -2760.91 -1408.55 -2741.16 -1415.77 -2748.25
   -1421.34 -2753.72 -1411.75 -2763.88 -1406.71 -2769.84
@@ -1141,9 +1141,6 @@ line wall -reverse on
   -1484.74 -2820.36 -1479.61 -2813.71 -1503.66 -2801.13
   -1511.07 -2797.25 -1546.0 -2762.0 -1585.0 -2707.0
   smooth off
-endline
-
-line floor-step
 endline
 
 line floor-step
@@ -1313,14 +1310,11 @@ line wall -reverse on
   smooth off
 endline
 
-line wall -reverse on
+line wall -reverse on -outline in
   -1337.17 -2827.43
   -1330.0 -2842.0 -1318.22 -2832.85 -1333.0 -2858.0
   -1339.62 -2869.26 -1365.0 -2882.0 -1354.0 -2902.0
   smooth off
-endline
-
-line rock-border
 endline
 
 line rock-border -close on
@@ -1417,9 +1411,6 @@ line rock-border -close on
   331.0 -2411.0
   442.0 -2388.0
   412.0 -2336.0
-endline
-
-line floor-step
 endline
 
 line floor-step -reverse on
@@ -1578,6 +1569,16 @@ endline
 
 point -2733.0 -3251.0 narrow-end -align b
 
+line wall -subtype invisible
+  -4876.9 -3432.17
+  -4752.81 -3699.46
+endline
+
+line wall -subtype invisible
+  -2733.0 -3208.0
+  -2713.0 -3235.0
+endline
+
 line wall -reverse on
   -2733.0 -3208.0
   -2686.0 -3168.0 -2725.6 -3152.6 -2734.0 -3157.0
@@ -1653,7 +1654,7 @@ line wall
   smooth off
 endline
 
-line rock-border -close on -outline out
+line rock-border -close on
   -4874.0 -3532.0
   -4926.0 -3588.0
   -4856.0 -3722.0
@@ -1661,14 +1662,7 @@ line rock-border -close on -outline out
   -4874.0 -3532.0
 endline
 
-line slope
-  -4732.32 -3493.51
-  -4732.32 -3493.51 -4779.14 -3589.48 -4723.57 -3720.74
-  smooth off
-  l-size 141.9
-endline
-
-line rock-border -close on -outline out
+line rock-border -close on
   -4648.0 -3712.0
   -4640.0 -3764.0
   -4540.0 -3770.0
@@ -1676,7 +1670,7 @@ line rock-border -close on -outline out
   -4648.0 -3712.0
 endline
 
-line rock-border -close on -outline out
+line rock-border -close on
   -4580.0 -3572.0
   -4620.0 -3616.0
   -4522.0 -3694.0
@@ -1695,7 +1689,7 @@ line rock-border -close on
   2580.51 -1640.15
 endline
 
-line rock-border -close on -outline out
+line rock-border -close on
   -4668.0 -3556.0
   -4724.0 -3590.0
   -4682.0 -3708.0
@@ -1703,7 +1697,7 @@ line rock-border -close on -outline out
   -4668.0 -3556.0
 endline
 
-line rock-border -close on -outline out
+line rock-border -close on
   -4774.0 -3586.0
   -4814.0 -3660.0
   -4780.0 -3670.0
@@ -1711,7 +1705,7 @@ line rock-border -close on -outline out
   -4774.0 -3586.0
 endline
 
-line rock-border -close on -outline out
+line rock-border -close on
   -4874.0 -3466.0
   -4882.0 -3504.0
   -4838.0 -3558.0
@@ -1944,6 +1938,7 @@ endline
 line label -text "Dysentry" -scale s
   -4912.0 -3224.0
   -4912.0 -3224.0 -3784.0 -3144.0 -3144.0 -2888.0
+  smooth off
 endline
 
 line wall

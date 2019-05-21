@@ -3,9 +3,9 @@ survey brez_volje
   input "brez_voljep.th2"
 
   map mbrez_volje-p -projection plan
+
     mbrez_voljep_1
     mbrez_voljep_2
-    mbrez_voljep_4
     mbrez_voljep_3
   endmap
   
@@ -20,10 +20,7 @@ survey brez_volje
   map mbrez_voljep_3 -projection plan
     brez_voljep_3
   endmap
-  
-  map mbrez_voljep_4 -projection plan
-    brez_voljep_4
-  endmap
+
   
   join brez_voljep_1 brez_voljep_2
   join brez_voljep_2 brez_voljep_3

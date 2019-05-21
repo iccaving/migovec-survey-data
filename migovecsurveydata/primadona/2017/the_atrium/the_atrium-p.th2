@@ -87,7 +87,7 @@ line wall -reverse on -subtype invisible
   470.0 439.0
 endline
 
-line pit -close on -outline out -clip off
+line pit -close on -outline in -clip off
   441.0 454.25
   441.25 455.0 440.5 461.0 440.5 462.25
   440.5 463.5 442.25 466.5 441.5 467.5
@@ -102,6 +102,7 @@ endline
 line label -text "The Atrium"
   382.25 476.75
   382.25 476.75 429.75 500.5 460.75 501.75
+  smooth off
 endline
 
 line wall
@@ -141,7 +142,6 @@ endscrap
 
 
 scrap the_atrium-p2 -scale [0.0 0.0 1024.0 939.3873157807584 0.0 0.0 120.78 110.8]
-
 
 line rock-border
 endline
@@ -214,11 +214,13 @@ line contour
   520.0 479.0
   520.0 479.0 505.25 471.75 513.25 458.25
   521.25 444.75 532.75 434.5 534.5 431.0
+  smooth off
 endline
 
 line contour
   507.25 481.75
   507.25 481.75 479.5 451.25 485.0 430.75
+  smooth off
 endline
 
 line wall
@@ -240,16 +242,19 @@ endline
 line contour
   470.25 433.25
   470.75 434.5 483.0 488.25 467.5 497.25
+  smooth off
 endline
 
 line contour
   600.75 476.75
   593.5 483.5 574.25 515.25 537.25 500.25
+  smooth off
 endline
 
 line contour
   607.0 490.25
   602.25 502.5 577.0 519.5 550.0 511.25
+  smooth off
 endline
 
 line wall -reverse on

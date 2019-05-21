@@ -1,21 +1,21 @@
 encoding  utf-8
 survey alkatraz
-  input "alkatrazp.th2"
+  #input "alkatrazp.th2"
 
-  map malkatraz-p -projection plan
-    malkatraz-p1
-    malkatraz-p2
-  endmap
+  #map malkatraz-p -projection plan
+   # malkatraz-p1
+   # malkatraz-p2
+  #endmap
   
-  map malkatraz-p1 -projection plan
-    alkatrazp_1
-  endmap
+  #map malkatraz-p1 -projection plan
+  #  alkatrazp_1
+  #endmap
   
-  map malkatraz-p2 -projection plan
-    alkatrazp_2
-  endmap
+  #map malkatraz-p2 -projection plan
+  #  alkatrazp_2
+  #endmap
   
-  join alkatrazp_1 alkatrazp_2
+  #join alkatrazp_1 alkatrazp_2
   
   centreline
     date 2008.07.18
