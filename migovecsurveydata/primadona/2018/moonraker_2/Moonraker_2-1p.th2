@@ -20,7 +20,7 @@ line floor-step
   smooth off
 endline
 
-line wall
+line wall -reverse on
   851.73 1574.7
   827.39 1551.68
   803.34 1501.44
@@ -124,8 +124,8 @@ line wall
   433.49 -318.03
 endline
 
-line wall
-  684.84 273.51
+line wall -reverse on
+  691.69 294.23
   680.65 228.6
   675.26 168.99
   666.85 129.7
@@ -227,7 +227,7 @@ endline
 
 point -124.0 -1400.0 narrow-end -align bl
 
-line wall
+line wall -reverse on
   104.0 -932.0
   104.0 -932.0 136.0 -944.0 160.0 -964.0
   175.36 -976.8 216.0 -992.0 216.0 -992.0
@@ -279,7 +279,7 @@ line wall
 endline
 
 line wall -reverse on
-  621.97 -674.91
+  625.55 -723.29
   624.62 -773.0
   635.42 -818.67
   647.09 -853.8
@@ -482,6 +482,7 @@ point 478.97 -2030.20 station -name "9"
 line label -text "Moonraker 2"
   -208.0 864.0
   -208.0 864.0 240.0 2268.0 732.0 2640.0
+  smooth off
 endline
 
 point 555.84 617.91 station -name "2"

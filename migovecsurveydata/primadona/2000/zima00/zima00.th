@@ -10,9 +10,6 @@ survey zima00
      map mzima00-p -projection plan
       mzima00p_1
       mzima00p_2
-      #mzima00p_4
-      #mzima00p_5
-      #mzima00p_6
      endmap
      
      map mzima00p_1 -projection plan
@@ -22,21 +19,8 @@ survey zima00
       zima00p_2
      endmap
 
-     
-      #map mzima00p_4 -projection plan
-      #zima00p_4
-     #endmap
-     
-    # map mzima00p_5 -projection plan
-      #zima00p_5
-     #endmap
-     
-     #map mzima00p_6 -projection plan
-     # zima00p_6
-    # endmap
-     
      join zima00p_1 zima00p_2
-     #join zima00p_4 zima00p_5
+
      centreline
      date 2000.12.28
       # declination 0.00 degrees

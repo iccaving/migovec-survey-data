@@ -316,7 +316,7 @@ endscrap
 
 scrap drugip_2 -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m]
 
-line wall -close on
+line wall -close on -outline in
   450.0 -352.0
   450.0 -352.0 450.5 -357.5 450.0 -359.5
   449.5 -361.5 452.0 -370.0 453.0 -373.0
@@ -331,7 +331,7 @@ line wall -close on
   smooth off
 endline
 
-line pit -close on -outline out
+line pit -close on -outline in
   480.0 -395.0
   471.0 -408.5 466.5 -422.0 471.5 -426.0
   476.5 -430.0 488.0 -439.5 492.0 -436.5

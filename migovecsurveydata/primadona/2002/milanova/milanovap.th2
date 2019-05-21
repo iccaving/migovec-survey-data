@@ -9,7 +9,7 @@ scrap milanovap_1 -scale [325.0 -734.0 535.0 -734.0 0.0 0.0 8 0.0 m]
 
 point 111.0 -279.0 label -orientation 324.2 -text "Milanova" -scale xl
 
-line wall -close on -reverse on
+line wall -close on -reverse on -outline in
   393.0 -515.0
   405.0 -523.0
   418.0 -518.0
@@ -35,13 +35,13 @@ line water-flow
   smooth off
 endline
 
-line pit -close on
-  197.0 -385.0
-  197.0 -385.0 158.0 -420.0 158.0 -426.0
+line pit -close on -reverse on -outline in
+  196.0 -384.0
+  196.0 -384.0 158.0 -420.0 158.0 -426.0
   158.0 -432.0 161.0 -469.0 172.0 -469.0
   183.0 -469.0 219.0 -462.0 220.0 -451.0
   221.0 -440.0 235.0 -426.0 228.0 -417.0
-  221.0 -408.0 197.0 -385.0 197.0 -385.0
+  221.0 -408.0 196.0 -384.0 196.0 -384.0
   smooth off
 endline
 

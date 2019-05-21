@@ -97,9 +97,10 @@ endline
 line label -text "Dogfish"
   456.5 545.5
   457.5 547.0 518.5 572.0 585.0 538.5
+  smooth off
 endline
 
-line pit -close on -reverse on -outline out
+line pit -close on -reverse on -outline in
   489.0 510.0
   498.5 513.0
   498.5 513.0 503.0 519.0 504.0 517.0
@@ -109,7 +110,7 @@ line pit -close on -reverse on -outline out
   489.0 510.0
 endline
 
-line pit -outline out
+line pit -outline in
   506.5 544.5
   506.5 544.5 507.5 536.0 508.5 532.5
   509.5 529.0 513.5 524.0 513.5 524.0

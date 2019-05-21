@@ -71,7 +71,7 @@ endline
 
 point -326.0 1868.0 station -name 11
 
-line wall
+line wall -outline in
   -370.0 2234.0
   -346.0 2224.0
   -298.0 2210.0
@@ -147,7 +147,7 @@ line border -id l42--124-2048 -close on
   -126.0 2052.0
 endline
 
-line wall
+line wall -outline in
   -220.0 2090.0
   -220.0 2090.0 -198.0 2066.0 -194.0 2054.0
   -190.0 2042.0 -164.68 1937.85 -150.0 1914.0
@@ -162,7 +162,7 @@ endline
 
 point -462.0 2300.0 station -name 14
 
-line wall
+line wall -outline in
   -308.0 1868.0
   -308.0 1868.0 -320.04 1946.41 -322.0 1966.0
   -324.0 1986.0 -352.0 2106.0 -356.0 2136.0

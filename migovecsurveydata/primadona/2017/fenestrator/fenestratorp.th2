@@ -17,21 +17,25 @@ endline
 line contour
   211.0 -537.5
   211.0 -537.5 226.5 -535.0 216.0 -516.0
+  smooth off
 endline
 
 line contour
   220.0 -571.0
   220.0 -571.0 258.5 -539.5 228.0 -500.5
+  smooth off
 endline
 
 line contour
   250.0 -593.0
   250.0 -593.0 285.5 -555.5 251.0 -510.5
+  smooth off
 endline
 
 line pit
   278.0 -517.0
   278.0 -517.0 272.5 -506.5 261.0 -507.0
+  smooth off
 endline
 
 line wall
@@ -100,7 +104,7 @@ line rock-border -close on
   302.0 -222.0
 endline
 
-line wall -close on -reverse on
+line wall -close on -reverse on -outline in
   311.0 -187.0
   311.0 -187.0 327.0 -184.0 331.0 -179.0
   335.0 -174.0 339.0 -160.0 341.0 -152.0
@@ -216,24 +220,26 @@ scrap fenestratorp_2 -scale [326.0 -736.0 528.0 -734.0 0.0 0.0 14 0.0 m]
 line pit -outline out
   269.0 -520.5
   265.5 -527.5 263.5 -525.0 257.5 -524.0
-  251.5 -523.0 244.5 -526.5 250.5 -532.5
-  256.5 -538.5 260.0 -548.5 260.0 -548.5
+  251.5 -523.0 252.5 -529.0 258.5 -535.0
+  263.1 -539.6 260.0 -548.5 260.0 -548.5
   smooth off
 endline
 
 line wall -subtype invisible
-  253.0 -513.0
-  253.0 -513.0 218.0 -507.5 242.0 -535.0
+  251.0 -510.5
+  236.0 -505.0 218.0 -507.5 242.0 -535.0
+  smooth off
 endline
 
 line wall
   242.0 -535.0
   248.0 -541.0 261.0 -543.5 260.0 -548.5
+  smooth off
 endline
 
 line wall
   269.0 -520.5
-  264.0 -518.5 253.0 -513.0 253.0 -513.0
+  264.0 -518.5 251.0 -510.5 251.0 -510.5
   smooth off
 endline
 

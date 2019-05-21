@@ -6,7 +6,13 @@ survey the_aqueduct -title "The_Aqueduct"
 
   centerline
     date 2018.08.06 
-    # team tanguy alex james w 
+    
+    team "Tanguy Racine" insts notes
+    team  "Alexander Seaton" tape
+    explo-team "James Wilson" 
+    explo-team "Tanguy Racine"
+    explo-team "Alexander Seaton"
+    
     # declination 0.00 degrees
     units length meters
     units compass clino degrees

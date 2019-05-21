@@ -54,6 +54,7 @@ endline
 line label -text "Plumbers' Paradise"
   324.0 -88.0
   324.0 -88.0 436.0 -240.0 491.0 -383.0
+  smooth off
 endline
 
 line wall
@@ -123,7 +124,7 @@ line wall
   smooth off
 endline
 
-line wall -close on
+line wall -close on -outline in
   361.5 -294.0
   363.5 -298.0 370.5 -308.5 372.0 -314.0
   373.5 -319.5 384.0 -344.5 384.5 -348.5
