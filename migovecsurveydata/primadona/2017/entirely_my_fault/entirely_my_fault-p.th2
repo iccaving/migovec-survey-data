@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 1030.5 1153.0
+##XTHERION## xth_me_area_adjust -129.0 -129.0 604.75 644.25
 ##XTHERION## xth_me_area_zoom_to 400
 
 
@@ -12,7 +12,34 @@ point 440.9425907374586 432.2626184788472 station -name 5
 
 point 424.2928257686676 411.03614086460664 station -name 4
 
-point 410.75 362.5 label -text "Entirely my<br>Fault<center>" -scale m -align br
+line wall
+endline
+
+line wall
+  450.5 496.0
+  450.5 496.0 449.25 491.5 448.25 489.75
+  447.25 488.0 440.5 480.5 440.25 478.75
+  440.0 477.0 439.25 472.25 439.25 472.25
+  smooth off
+endline
+
+point 456.25 515.5 station -name 16
+
+point 453.75 491.5 station -name 15
+
+line wall
+  445.25 472.0
+  445.25 472.0 449.25 477.5 451.25 480.5
+  453.25 483.5 458.25 487.0 457.5 490.0
+  456.75 493.0 457.75 497.0 457.75 497.0
+  smooth off
+endline
+
+line label -text "Entirely my Fault"
+  418.25 362.25
+  418.25 362.25 461.75 412.75 475.75 450.0
+  smooth off
+endline
 
 point 393.25 362.75 water-flow -orientation 181.4
 
@@ -71,7 +98,6 @@ point 394.54419357324497 394.54419357324497 station -name 2
 
 point 394.54419357324497 394.54419357324497 station -name 1
 
-
 endscrap
 
 
@@ -81,6 +107,7 @@ scrap entirely_my_fault-p2 -scale [0.0 0.0 901.5334823148647 1024.0 0.0 0.0 114.
 line pit -reverse on
   400.5 484.0
   400.5 484.0 398.0 469.75 400.25 467.25
+  smooth off
 endline
 
 line wall

@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -132.0 -970 723 141.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} gamblers_ruin-p.gif 0 {}
 
 
@@ -15,9 +15,89 @@ point 411.0 -492.0 station -name 7
 
 point 357.0 -439.0 station -name 6
 
-point 159.0 -41.0 breakdown-choke
+line label -text "Gambler's Ruin"
+  190.0 51.0
+  190.0 51.0 250.0 -39.0 303.5 -180.5
+  smooth off
+endline
 
-point 104.0 -124.0 label -text "Gambler's Ruin" -scale xl -align l
+line rock-border
+endline
+
+line rock-border -close on
+  326.0 -382.0
+  316.0 -383.5
+  318.5 -391.5
+  326.0 -391.0
+  326.0 -382.0
+endline
+
+line rock-border -close on
+  308.5 -371.0
+  296.0 -367.5
+  294.5 -374.0
+  308.5 -382.0
+  308.5 -371.0
+endline
+
+line rock-border -close on
+  292.0 -332.0
+  282.0 -337.5
+  287.0 -345.0
+  287.0 -345.0 295.5 -350.5 295.0 -347.5
+  294.5 -344.5 292.0 -332.0 292.0 -332.0
+  smooth off
+endline
+
+line rock-border -close on
+  275.0 -312.5
+  264.0 -314.5
+  264.5 -326.0
+  279.0 -331.5
+  275.0 -312.5
+endline
+
+line rock-border -close on
+  249.5 -254.0
+  239.5 -256.5
+  240.5 -268.0
+  247.0 -268.0
+  249.5 -254.0
+endline
+
+line rock-border -close on
+  227.0 -225.5
+  218.0 -229.5
+  219.5 -248.0
+  234.0 -244.5
+  227.0 -225.5
+endline
+
+line rock-border -close on
+  212.0 -167.5
+  203.0 -170.0
+  207.5 -179.5
+  214.5 -175.0
+  212.0 -167.5
+endline
+
+line rock-border -close on
+  189.0 -68.0
+  178.5 -74.0
+  182.0 -87.5
+  191.0 -83.0
+  189.0 -68.0
+endline
+
+line rock-border -close on
+  196.5 -131.5
+  185.5 -131.5
+  188.0 -140.5
+  197.0 -141.5
+  196.5 -131.5
+endline
+
+point 157.0 -28.0 breakdown-choke
 
 line pit
   339.0 -448.0

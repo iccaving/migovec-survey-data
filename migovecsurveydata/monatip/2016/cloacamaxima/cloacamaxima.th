@@ -27,11 +27,16 @@ survey cloacamaxima
   map mcloacamaxima-p5 -projection plan
     cloacamaximap_5
   endmap
+
+  map mcloacamaxima-p6 -projection plan
+    cloacamaximap_6
+  endmap
   
   join cloacamaximap_1 cloacamaximap_2
   join cloacamaximap_2 cloacamaximap_3
-  join cloacamaximap_3 cloacamaximap_4
   join cloacamaximap_4 cloacamaximap_5
+  join cloacamaximap_6 cloacamaximap_5
+  join cloacamaximap_6 cloacamaximap_3
   
   centreline
     date 2016.07.30

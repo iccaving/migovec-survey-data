@@ -9,6 +9,7 @@ scrap what_a_disappointment-p1 -scale [0.0 0.0 931.422563130225 1023.99999999999
 line pit
   479.75 455.0
   479.75 455.0 472.25 457.75 473.75 449.75
+  smooth off
 endline
 
 line wall -reverse on
@@ -74,7 +75,10 @@ line wall
   smooth off
 endline
 
-point 431.5 527.5 label -scale m -align bl -text "What a<br>Disappointment!"
+line label -text "What a Disappointment"
+  388.5 547.0
+  399.5 514.5 441.0 449.0 465.5 417.0
+endline
 
 line pit
   477.5 546.0
