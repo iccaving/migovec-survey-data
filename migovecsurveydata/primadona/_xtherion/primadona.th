@@ -440,7 +440,9 @@ endmap
      input "../2018/diagonalley/diagonalley.th"
      input "../2018/damp_squib/damp_squib.th"
      input "../2018/odessey/odessey.th"
-     
+     input "../2018/come_up_smiling/come_up_smiling.th"
+     input "../2018/come_up_smiling_2/come_up_smiling_2.th"
+
       #equates
      equate 0@dysentry 6@more_like_welding
      
@@ -449,6 +451,8 @@ endmap
       join l3@dysentry:0 l3@more_like_welding:end
       join l1@more_like_welding:0 l1@dysentry:end
       join l2@more_like_welding:end l2@dysentry:end
+
+      join come_up_smiling-p1@come_up_smiling come_up_smiling_2-p1@come_up_smiling_2
 
       join electric_dreams-p1@electric_dreams odessey-p1@odessey
 
@@ -460,6 +464,9 @@ endmap
       equate 19@lumos 1@diagonalley
       equate 4@diagonalley 19@damp_squib
       equate 7@odessey 14@electric_dreams
+      equate 0@come_up_smiling 5@come_up_smiling_2
+      equate 0@come_up_smiling_2 46@smer0
+      equate 8@come_up_smiling 23@cattlegrid
 
 
 
