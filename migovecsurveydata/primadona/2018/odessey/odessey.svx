@@ -1,0 +1,38 @@
+;####Odessey, Rokovo Brezno Resurvey####:
+;###Over the Sword of Damocles and Karstaway###
+*date 2018.07.28 ; Expedition Klic Globin
+
+;Tape: Louise Ranken
+;Book: David Wilson
+;Instruments: Chris Bradley
+;Data entered by James Wilson on 29/07/2018
+
+*begin odessey
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+;*flags duplicate
+1	2	2.9	349	+27
+2	3	7	314	+21
+3	4	13.67	034	+47
+4	5	4.86	074	+16
+5	6	8.29	024	+53
+6	7	7	006	-35
+;*flags not duplicate
+;NOTES
+;Written on PSS as ODESSEY
+;STN 1 is PSS
+;STN 4 is fig8 bolt on 2nd pitch below 'sword' (big pointy hanging rock)
+;STN 7 is electric dreams STN 14
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end odessey
+
+*equate electric_dreams.14 odessey.7
+
