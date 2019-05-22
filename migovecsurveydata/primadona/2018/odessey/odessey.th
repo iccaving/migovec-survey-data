@@ -1,0 +1,41 @@
+survey odessey -title 'Odyssey'
+	input odessey-p.th2
+
+	map modessey-p -projection plan
+		modessey-p1
+		modessey-p2
+	endmap
+
+	map modessey-p1 -projection plan
+		odessey-p1
+	endmap
+
+	map modessey-p2 -projection plan
+		odessey-p2
+	endmap
+	
+	centreline
+		date 2018.07.28
+		explo-date 2018.07.28
+
+		team "David Wilson" notes
+		team "Louise Ranken" tape
+		team "Christopher Bradley" insts
+
+		explo-team "David Wilson"
+		explo-team "Louise Ranken"
+		explo-team "Christopher Bradley"
+		
+		units length meters
+    	units compass clino degrees
+    	data normal from to length compass clino
+
+    	1	2	2.9	349	+27
+    	2	3	7	314	+21
+    	3	4	13.67	034	+47
+    	4	5	4.86	074	+16
+    	5	6	8.29	024	+53
+    	6	7	7	006	-35
+
+	endcentreline
+endsurvey

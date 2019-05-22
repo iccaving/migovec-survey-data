@@ -7,7 +7,7 @@ input ../_layouts/outline_layout.th
 select mwest_plateau-p@sistem_prima
 
 export map -projection plan -o ../_outputs/sys_prima_all.pdf -layout local
-export atlas -projection plan -o ../_outputs/sys_prima_atlas.pdf -layout local1 
-#export model -fmt survex -o ../_outputs/west_plateau.3d
+#export atlas -projection plan -o ../_outputs/sys_prima_atlas.pdf -layout local1 
+export model -fmt survex -o ../_outputs/west_plateau.3d
 #export database -output ../_outputs/west_plateau.sql
 #export model -o ../_outputs/west_plateau.lox

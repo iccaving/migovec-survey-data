@@ -1,6 +1,6 @@
 encoding  utf-8
 ###### MAIN MAP #######
-map mwest_plateau-p -projection plan
+map mwest_plateau-p -projection plan -title "The Migovec System"
 	
 	mubend2-p@ubend2.s_ubend
 	mubend1-p@ubend.s_ubend
@@ -44,6 +44,7 @@ map mwest_plateau-p -projection plan
 	cattlegrid-the_stile [50 0 m] below
 	
 	mjack_of_hearts-p@jack_of_hearts.primadona
+	modessey-p@odessey.primadona
 	mplumbers_p-p@plumbers_p.primadona
 	msweet_baby_jesus-p@sweet_baby_jesus.primadona
 	mhallelujah-p@hallelujah.primadona
