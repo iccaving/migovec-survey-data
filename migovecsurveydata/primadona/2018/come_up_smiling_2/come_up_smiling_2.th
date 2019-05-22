@@ -4,14 +4,16 @@ survey come_up_smiling_2 -title "Come up Smiling"
 	map mcome_up_smiling_2-p -projection plan
 		come_up_smiling_2-p1
 	endmap
+
 	centreline
 		date 2018.07.18 
 		explo-date 2018.07.18 
 		explo-team "Jack Halliday"
 		explo-team "Rhys Tyers"
 		explo-team "Arun Paul"
-		team "Arun Paul"
-		team "Rhys Tyers"
+		
+		team "Arun Paul" insts 
+		team "Rhys Tyers" notes tape
 
 		0 - 0.35 80.9 75.0
 		0 - 3.51 75.8 68.3
