@@ -1,7 +1,8 @@
 encoding  utf-8
 ###### MAIN MAP #######
-map mwest_plateau-p -projection plan -title "The Migovec System"
-	
+map mplateau-p -projection plan -title "The Migovec System"
+	mm19-p@M19
+
 	mubend2-p@ubend2.s_ubend
 	mubend1-p@ubend.s_ubend
 	mubend3-p@ubend3.s_ubend
@@ -110,6 +111,8 @@ map mwest_plateau-p -projection plan -title "The Migovec System"
 	mmouseleum_2-p@mouseleum_2.primadona
 	mmilanova-p@milanova.primadona
 	mchocolate_river-p@chocolate_river.primadona
+
+	mvrtnarija-p@vrtnarija
 endmap
 
 ##### SUB MAPS ######

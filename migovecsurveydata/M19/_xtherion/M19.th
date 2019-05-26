@@ -449,12 +449,44 @@ survey M19 -title "M19"
     fix 25  46.253019 13.760197 1870
   endcenterline
 
-   input "M19-1p.th2"
+   input "M19-15p.th2"
+   input "M19-234p.th2"
    input "M19-1s.th2"
+
+   map mm19-p -projection plan
+    m1p
+    m6p
+    m4p
+    m3p
+    m5p
+    m2p
+   endmap
 
    map m1p -projection plan
      M19-1p
    endmap
+
+   map m2p -projection plan
+     M19-2p
+     M19-2ap
+   endmap
+
+   map m3p -projection plan
+     M19-3p
+   endmap
+
+   map m4p -projection plan
+     M19-4p
+   endmap
+
+   map m5p -projection plan
+     M19-5p
+   endmap
+
+   map m6p -projection plan
+     M19-6p
+   endmap
+
    map m1s -projection extended
      M19-1s
    endmap

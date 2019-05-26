@@ -6,6 +6,7 @@ survey karstaway
   input "karstaway-e.th2"
   
   map mkarstaway-p -projection plan
+    karstaway-12p
     karstaway-1p
     karstaway-11p
     karstaway-2p
@@ -14,6 +15,9 @@ survey karstaway
   map mkarstaway-e -projection extended
     karstaway-e1
   endmap
+
+  join karstaway-1p karstaway-11p
+  join karstaway-1p karstaway-12p
   
   
   centreline

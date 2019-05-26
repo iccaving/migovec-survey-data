@@ -7,23 +7,22 @@ encoding  utf-8
 
 scrap drainpipep_1 -scale [366.0 -357.0 190.0 -458.0 0.0 0.0 4.96 0.0 m]
 
-line slope
-  363.0 -452.0
-  l-size 74.2
-  265.0 -314.0
-endline
-
-line slope
-  470.0 -321.0
-  l-size 95.2
-  466.0 -320.0 330.0 -245.0 330.0 -245.0
+line contour
+  360.0 -432.0
+  360.0 -432.0 300.0 -362.0 278.0 -352.0
   smooth off
 endline
 
-line slope
-  495.0 -192.0
-  l-size 55.3
-  479.0 -182.0 413.0 -136.0 399.0 -126.0
+line contour
+  462.0 -211.0
+  462.0 -211.0 410.0 -178.0 383.0 -184.0
+  smooth off
+endline
+
+line contour
+  513.0 -122.0
+  513.0 -122.0 481.0 -72.0 446.0 -77.0
+  smooth off
 endline
 
 line wall
@@ -49,17 +48,17 @@ line wall
   smooth off
 endline
 
-point 541.0 -63.0 station -name "6"
+point 544.0 -61.0 station -name "6"
 
-point 541.0 -63.0 station -name "5"
+point 496.0 -61.0 station -name "5"
 
-point 494.0 -64.0 station -name "4"
+point 496.0 -61.0 station -name "4"
 
 point 48.0 -614.0 station -name "2"
 
-point 189.0 -457.0 station -name "1"
+point 187.0 -457.0 station -name "1"
 
-point 386.0 -357.0 station -name "3"
+point 361.0 -351.0 station -name "3"
 
 endscrap
 

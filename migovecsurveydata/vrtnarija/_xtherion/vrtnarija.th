@@ -1,0 +1,25 @@
+survey vrtnarija -title "Vrtnarija"
+
+map mvrtnarija-p -projection plan -title "Vrtnarija"
+	mbclent2-p@bclent2
+	mlaurel-p@laurel
+	murinal-p@urinal
+	murinal2-p@urinal2
+endmap
+
+###__________2000____________###
+input ../2000/bclent2/bclent2.th #bclent is the original but wrong survey!
+input ../2000/laurel/laurel.th
+input ../2000/urinal/urinal.th
+input ../2000/urinal2/urinal2.th
+
+equate 18@laurel 15@bclent2
+equate 1@laurel 9@urinal
+equate 1@urinal 4@urinal2
+
+join laurel-p1@laurel bclent2-p3@bclent2
+
+
+
+
+endsurvey

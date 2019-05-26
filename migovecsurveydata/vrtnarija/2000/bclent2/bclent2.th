@@ -1,0 +1,57 @@
+survey bclent2 -title "Vrtnarija entrance"
+	#previously known as Ben's Crap Lead
+	# second survey
+
+	input "bclent2-p.th2"
+
+	map mbclent2-p -projection plan
+		mbclent2-p1
+		mbclent2-p2
+		mbclent2-p3
+	endmap
+
+	map	mbclent2-p1 -projection plan
+		bclent2-p1
+	endmap
+
+	map mbclent2-p2 -projection plan
+		bclent2-p2
+	endmap
+
+	map mbclent2-p3 -projection plan
+		bclent2-p3
+	endmap
+
+	join bclent2-p1 bclent2-p2
+	join bclent2-p2 bclent2-p3
+
+	centreline
+		cs lat-long
+		fix 0  46.253636  13.764983 1776
+
+		date 2000.08.03
+		explo-date 2000.07.13
+
+		team "Mark Evans" insts tape
+		team "Ben Ogborne" notes 
+
+		explo-team "Ben Ogborne"
+		explo-team "Pete Jurd"
+
+		0	1	6.20	250	-29	#station 0 is pss half bolt hole at entrance to gardeners world
+		2	1	8.43	067	+33
+		2	3	3.73	252	-12
+		3	4	2.99	297	-15
+		4	5	5.25	310	+02
+		5	6	2.21	-	down
+		7	6	2.73	005	+40
+		7	8	6.07	-	down
+		8	9	2.47	248	-27
+		9	10	1.87	196	+33
+		10	11	4.15	283	-10
+		11	12	4.95	-	down
+		12	13	6.83	276	+03
+		13	14	4.40	-	down
+		14	15	6.55	305	-21	#station 15 is pss at top of gardeners world or station 1 of bclent
+	endcentreline
+endsurvey

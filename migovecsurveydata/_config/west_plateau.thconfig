@@ -1,14 +1,16 @@
 encoding  utf-8
-source "../_xtherion/prima_ubend_mona.th"
+source "../_xtherion/system_migovec.th"
 input ../_layouts/layout.th
 input ../_layouts/layout1.th
 input ../_layouts/outline_layout.th
 
-select mwest_plateau-p@sistem_prima
+#select mvrtnarija-p@vrtnarija.sistem_migovec
+select mplateau-p@sistem_migovec
 
-export map -projection plan -o ../_outputs/sys_prima_all.pdf -layout local
+export map -projection plan -o ../_outputs/sys_mig.pdf -layout local
 #export map -projection plan -o ../_outputs/sys_prima_by_date.pdf -layout local
 #export atlas -projection plan -o ../_outputs/sys_prima_atlas.pdf -layout local1 
 #export model -fmt survex -o ../_outputs/west_plateau.3d
 #export database -output ../_outputs/west_plateau.sql
 #export model -o ../_outputs/west_plateau.lox
+export map -fmt esri -projection plan -o ../_outputs/sys_prima
