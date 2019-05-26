@@ -14,4 +14,4 @@ export map -projection plan -o ../_outputs/system_migovec.pdf -layout local
 #export model -fmt survex -o ../_outputs/west_plateau.3d
 #export database -output ../_outputs/west_plateau.sql
 #export model -o ../_outputs/west_plateau.lox
-export map -fmt esri -projection plan -o ../_outputs/sys_prima
+#export map -fmt esri -projection plan -o ../_outputs/sys_prima
