@@ -1,0 +1,34 @@
+survey pico2 -title "Tera and Nova pitches"
+
+	input pico2-p.th2
+
+	map mpico2-p -projection plan
+		mpico2-p2
+		mpico2-p1
+	endmap
+
+	map mpico2-p2 -projection plan
+		pico2-p2
+	endmap
+
+	map mpico2-p1 -projection plan
+		pico2-p1
+	endmap
+
+	centreline
+		date 2000.07.28
+		explo-date 2000.07.28
+
+		explo-team "Andrew Jurd"
+		team "Andrew Jurd" notes
+
+		explo-team "Clewin Griffiths"
+		team "Clewin Griffiths" insts tape
+
+		1	2	13.03	349	-1	# stn 1 is pss cairn at end of rift
+		2	3	17.48	353	-11
+		3	4	3.94	284	-52	#stn 4 is bolt 
+		4	5	3.94	343	20
+		5	6	9.49	340	82	#stn 6 is bolt at top of pitch (RHS when looking down)
+	endcentreline
+endsurvey
