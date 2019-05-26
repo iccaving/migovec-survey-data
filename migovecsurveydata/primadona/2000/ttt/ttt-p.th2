@@ -557,15 +557,15 @@ line rock-border -close on
   2807.5 -3482.5
 endline
 
-line rock-border -close on
+line rock-border -close on -clip off
   2769.0 -3459.0
-  2763.0 -3460.5
+  2769.0 -3459.0
   2760.0 -3465.0
-  2765.0 -3466.5
+  2770.0 -3470.0
   2769.0 -3459.0
 endline
 
-line rock-border -close on
+line rock-border -close on -clip off
   2754.5 -3460.5
   2744.5 -3458.5
   2742.5 -3461.0
@@ -590,9 +590,9 @@ line rock-border -close on
   2791.0 -3476.0 2795.0 -3464.0 2793.5 -3464.5
 endline
 
-line rock-border -close on
+line rock-border -close on -clip off
   2784.5 -3454.5
-  2773.0 -3454.5
+  2773.0 -3452.5
   2772.5 -3463.0
   2780.0 -3466.0
   2784.5 -3454.5
@@ -619,6 +619,7 @@ line floor-step
   2750.0 -3495.0 2755.0 -3487.5 2765.5 -3491.5
   2776.0 -3495.5 2803.0 -3509.5 2807.5 -3511.5
   2812.0 -3513.5 2830.0 -3510.5 2830.5 -3495.5
+  smooth off
 endline
 
 point 2855.0 -3531.0 continuation -align br
@@ -626,6 +627,7 @@ point 2855.0 -3531.0 continuation -align br
 line label -text "Manđare"
   2657.5 -3754.0
   2660.0 -3753.5 2910.5 -3609.5 2992.5 -3484.0
+  smooth off
 endline
 
 point 2786.0 -3481.5 water-flow -orientation 316.1
@@ -708,11 +710,24 @@ endline
 line floor-step
 endline
 
-line floor-step
+line floor-step -outline in
+  2737.0 -3456.0
+  2749.0 -3469.0
+  2773.5 -3467.5
+  2785.5 -3464.0
+  2791.0 -3456.0
+  2791.0 -3456.0 2779.5 -3451.5 2791.0 -3438.0
+endline
+
+line floor-step -outline in
   2791.0 -3438.0
-  2791.0 -3438.0 2767.5 -3451.0 2757.5 -3455.0
-  2747.5 -3459.0 2736.0 -3453.0 2734.0 -3461.5
-  2732.0 -3470.0 2730.0 -3489.0 2730.0 -3489.0
+  2791.0 -3438.0 2776.67 -3445.72 2764.5 -3449.5
+  2750.0 -3454.0 2738.5 -3456.5 2737.0 -3456.0
+endline
+
+line floor-step
+  2737.0 -3456.0
+  2728.73 -3453.24 2730.0 -3489.0 2730.0 -3489.0
   smooth off
 endline
 
@@ -811,6 +826,7 @@ endline
 line floor-step
   2236.0 -3932.5
   2236.0 -3932.5 2244.5 -3914.5 2228.5 -3915.5
+  smooth off
 endline
 
 line floor-step
@@ -825,21 +841,25 @@ endline
 line floor-step
   2315.0 -3894.0
   2315.0 -3894.0 2313.45 -3849.51 2289.5 -3852.5
+  smooth off
 endline
 
 line contour
   2295.0 -3830.0
   2295.0 -3830.0 2330.0 -3848.0 2336.0 -3846.5
+  smooth off
 endline
 
 line contour
   2313.0 -3802.0
   2313.0 -3802.0 2318.0 -3819.5 2336.0 -3830.5
+  smooth off
 endline
 
 line floor-step
   2343.0 -3785.0
   2343.0 -3785.0 2345.0 -3820.5 2352.0 -3825.5
+  smooth off
 endline
 
 line rock-border -close on

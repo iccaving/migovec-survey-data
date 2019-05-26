@@ -12,13 +12,14 @@ endmap
 input "../primadona/_xtherion/primadona.th"
 input "../s_ubend/s_ubend.th"
 input "../monatip/_xtherion/s_monatip.th"
+input "../vrtnarija/_xtherion/vrtnarija.th"
 
 
 
 #input "others/gondolin/gondolin.th"
 #input "planika/planika/planika.th"
 #input "../M17/therion/xtherion/M17.th
-#input "../M19/therion/M19.th"
+input "../M19/_xtherion/M19.th"
 
 #ubend prima connection
 equate 5@drainpipe.s_ubend  8@drugi.primadona

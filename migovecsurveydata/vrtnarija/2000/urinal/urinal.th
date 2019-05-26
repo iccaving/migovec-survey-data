@@ -1,0 +1,37 @@
+survey urinal -title "Second pitch of Urinal series"
+	input urinal-p.th2
+
+	map murinal-p -projection plan
+		murinal-p2
+		murinal-p1
+	endmap
+
+	map murinal-p1 -projection plan
+		urinal-p1
+	endmap
+
+	map murinal-p2 -projection plan
+		urinal-p2
+	endmap
+
+	centreline
+		date 2000.07.20
+		explo-date 2000.07.20
+
+		team "Pete Jurd" insts tape
+		team "Ben Johnson" notes
+
+		explo-team "Pete Jurd"
+		explo-team "Ben Johnson"
+
+		1	2	6.50	091	+03	#Station 1 is cairn near pitch
+		2	3	6.90	-	up
+		3	4	4.05	048	+53
+		5	4	4.45	235	+35
+		5	6	3.46	-	up
+		6	7	3.65	064	+53
+		8	7	3.11	116	-42
+		8	9	3.80	240	+18	#Station 9 is PSS cairn at end of passage or survey 1 on laurel
+
+	endcentreline
+endsurvey

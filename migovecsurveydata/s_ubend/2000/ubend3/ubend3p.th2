@@ -78,8 +78,6 @@ line wall
   smooth off
 endline
 
-point 329.0 -507.0 station -name "11"
-
 point 346.0 -480.0 station -name "10"
 
 point 378.0 -420.0 station -name "9"
@@ -105,10 +103,6 @@ endscrap
 
 
 scrap ubend3p_2 -scale [338.0 -361.0 377.0 -421.0 0.0 0.0 2.77 0.0 m]
-
-point 218.0 -599.0 station -name "12"
-
-point 218.0 -599.0 station -name "13"
 
 line pit
   249.0 -583.0
@@ -216,9 +210,9 @@ point 378.0 -420.0 station -name "8"
 
 point 378.0 -420.0 station -name "9"
 
-point 329.0 -507.0 station -name "12"
+point 325.0 -507.0 station -name "12"
 
-point 329.0 -507.0 station -name "11"
+point 325.0 -507.0 station -name "11"
 
 point 346.0 -480.0 station -name "10"
 
@@ -330,9 +324,9 @@ endline
 
 point 294.0 -615.0 station -name "16"
 
-point 218.0 -599.0 station -name "14"
+point 221.5 -594.0 station -name "14"
 
-point 218.0 -599.0 station -name "13"
+point 221.5 -594.0 station -name "13"
 
 point 294.0 -615.0 station -name "15"
 

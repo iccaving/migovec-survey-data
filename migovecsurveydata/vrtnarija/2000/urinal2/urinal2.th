@@ -1,0 +1,22 @@
+survey urinal2 -title 'Piston' #last pitch of Urinal Series
+	input urinal2-p.th2
+
+	map murinal2-p -projection plan
+		urinal2-p1
+	endmap
+
+	centreline
+		date 2000.07.24
+		explo-date 2000.07.24
+
+		team "Andy Jurd" insts tape
+		team "Pete Jurd" notes
+
+		explo-team "Andy Jurd"
+		explo-team "Pete Jurd"
+
+		1	2	17.19	107	-12   # stn1 is pss cairn at top of pitch
+		2	3	15.22	-	up
+		3	4	1.71	189	0
+	endcentreline
+endsurvey
