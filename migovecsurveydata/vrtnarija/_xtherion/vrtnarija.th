@@ -9,6 +9,8 @@ map mvrtnarija-p -projection plan -title "Vrtnarija"
 	mpico2-p@pico2
 	mtesselator-p@tesselator
 	mspace_odyssey-p@space_odyssey
+	mconcorde-p@concorde
+	malchemy-p@alchemy
 endmap
 
 ###__________2000____________###
@@ -20,6 +22,8 @@ input ../2000/pico/pico.th
 input ../2000/pico2/pico2.th
 input ../2000/tesselator/tesselator.th
 input ../2000/space_odyssey/space_odyssey.th
+input ../2000/concorde/concorde.th
+input ../2000/alchemy/alchemy.th
 
 equate 18@laurel 15@bclent2
 equate 1@laurel 9@urinal
@@ -28,11 +32,12 @@ equate 1@urinal2 13@pico
 equate 2@pico 6@pico2
 equate 1@pico2 8@tesselator
 equate 1@tesselator 6@space_odyssey
+equate 1@space_odyssey 6@concorde
+equate 1@concorde 8@alchemy
 
 join laurel-p1@laurel bclent2-p3@bclent2
 join pico-p1@pico urinal2-p1@urinal2
 join tesselator-p1@tesselator pico2-p2@pico2
-
-
+join space_odyssey-p2@space_odyssey concorde-p1@concorde
 
 endsurvey
