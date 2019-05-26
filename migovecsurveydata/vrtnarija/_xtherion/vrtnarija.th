@@ -5,6 +5,10 @@ map mvrtnarija-p -projection plan -title "Vrtnarija"
 	mlaurel-p@laurel
 	murinal-p@urinal
 	murinal2-p@urinal2
+	mpico-p@pico
+	mpico2-p@pico2
+	mtesselator-p@tesselator
+	mspace_odyssey-p@space_odyssey
 endmap
 
 ###__________2000____________###
@@ -12,13 +16,22 @@ input ../2000/bclent2/bclent2.th #bclent is the original but wrong survey!
 input ../2000/laurel/laurel.th
 input ../2000/urinal/urinal.th
 input ../2000/urinal2/urinal2.th
+input ../2000/pico/pico.th
+input ../2000/pico2/pico2.th
+input ../2000/tesselator/tesselator.th
+input ../2000/space_odyssey/space_odyssey.th
 
 equate 18@laurel 15@bclent2
 equate 1@laurel 9@urinal
 equate 1@urinal 4@urinal2
+equate 1@urinal2 13@pico
+equate 2@pico 6@pico2
+equate 1@pico2 8@tesselator
+equate 1@tesselator 6@space_odyssey
 
 join laurel-p1@laurel bclent2-p3@bclent2
-
+join pico-p1@pico urinal2-p1@urinal2
+join tesselator-p1@tesselator pico2-p2@pico2
 
 
 

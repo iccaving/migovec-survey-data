@@ -7,7 +7,8 @@ input ../_layouts/outline_layout.th
 #select mvrtnarija-p@vrtnarija.sistem_migovec
 select mplateau-p@sistem_migovec
 
-export map -projection plan -o ../_outputs/sys_mig.pdf -layout local
+#export map -projection plan -o ../_outputs/vrtnarija.pdf -layout local
+export map -projection plan -o ../_outputs/system_migovec.pdf -layout local
 #export map -projection plan -o ../_outputs/sys_prima_by_date.pdf -layout local
 #export atlas -projection plan -o ../_outputs/sys_prima_atlas.pdf -layout local1 
 #export model -fmt survex -o ../_outputs/west_plateau.3d
