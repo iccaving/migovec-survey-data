@@ -1,0 +1,47 @@
+survey pink2 -title "Pink Series"
+	
+	input pink2-p.th2
+
+	map mpink2-p -projection plan
+		mpink2-p1
+		mpink2-p2
+		mpink2-p3
+	endmap
+
+	map mpink2-p1 -projection plan
+		pink2-p1
+	endmap
+
+	map mpink2-p2 -projection plan
+		pink2-p2
+	endmap
+
+	map mpink2-p3 -projection plan
+		pink2-p3
+	endmap
+
+	centreline
+		date 2001.08.04
+		explo-date 2001.08.04
+
+		team "Clewin Griffiths" insts tape
+		team "Dave Wilson" notes
+
+		explo-team "Dave Wilson"
+		explo-team "Clewin Griffiths"
+
+		2	1	4.97	190	-22 #stn 1 is mark with carbide S
+		3	2	5.32	195	-04
+		3	4	5.63	-	up
+		5	4	2.95	192	-53
+		6	5	4.61	122	24	#5 is ring hanger/bolt
+		6	7	6.90	025	59
+		7	8	1.97	251	74
+		9	8	2.46	070	03
+		9	10	6.22	343	12
+		10	11	9.73	031	55
+		12	11	2.91	286	-33
+		12	13	2.55	049	31
+
+	endcentreline
+endsurvey

@@ -3,8 +3,19 @@ survey alchemy -title "Alchemy & Zlatorog rift"
 	input alchemy-p.th2
 
 	map malchemy-p -projection plan
+		malchemy-p2
+		malchemy-p1
+	endmap
+
+	map malchemy-p1 -projection plan
 		alchemy-p1
 	endmap
+
+	map malchemy-p2 -projection plan
+		alchemy-p2
+	endmap
+
+
 
 	centreline
 		date 2000.08.02
