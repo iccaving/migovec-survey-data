@@ -11,6 +11,12 @@ map mvrtnarija-p -projection plan -title "Vrtnarija"
 	mspace_odyssey-p@space_odyssey
 	mconcorde-p@concorde
 	malchemy-p@alchemy
+	mbanzai-p@banzai
+	mpink-p@pink
+	mpink2-p@pink2
+	mskynet-p@skynet
+	mzimmer-p@zimmer
+	mfriendship-p@friendship
 endmap
 
 ###__________2000____________###
@@ -39,5 +45,24 @@ join laurel-p1@laurel bclent2-p3@bclent2
 join pico-p1@pico urinal2-p1@urinal2
 join tesselator-p1@tesselator pico2-p2@pico2
 join space_odyssey-p2@space_odyssey concorde-p1@concorde
+join alchemy-p2@alchemy concorde-p1@concorde
+
+###__________2001____________###
+input ../2001/banzai/banzai.th #which also includes fistful of tolar
+input ../2001/pink/pink.th
+input ../2001/pink2/pink2.th
+input ../2001/skynet/skynet.th
+input ../2001/zimmer/zimmer.th
+input ../2001/friendship/friendship.th
+
+equate 14@banzai 1@alchemy
+equate 18@pink 12@banzai
+equate 7@pink 13@pink2
+equate 1@pink2 9@skynet
+equate 1@skynet 1@zimmer
+equate 3@zimmer 1@friendship
+
+join pink-p1@pink banzai-p2@banzai
+join pink-p3@pink pink2-p1@pink2
 
 endsurvey

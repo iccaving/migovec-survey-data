@@ -1,0 +1,126 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -132.0 -132.0 703.0 497.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap zimmer-p1 -scale [0.0 0.0 1024.0 948.3170080142477 0.0 0.0 123.53 114.4]
+
+point 505.0 261.0 water-flow -orientation 222.8
+
+point 516.0 343.0 water-flow -orientation 222.8
+
+line rock-border
+endline
+
+line rock-border -close on
+  465.0 288.0
+  452.0 291.0
+  449.0 281.0
+  461.0 273.0
+  465.0 288.0
+endline
+
+line rock-border -close on
+  499.0 285.0
+  479.0 285.0
+  479.0 273.0
+  498.0 271.0
+  499.0 285.0
+endline
+
+line rock-border -close on
+  538.0 292.0
+  533.0 293.0 520.0 293.0 520.0 293.0
+  smooth off
+  521.0 280.0
+  535.0 277.0
+  535.0 277.0 543.0 291.0 538.0 292.0
+endline
+
+line rock-border -close on
+  511.0 309.0
+  506.0 311.0 490.0 313.0 490.0 313.0
+  smooth off
+  490.0 301.0
+  499.0 301.0
+  499.0 301.0 516.0 307.0 511.0 309.0
+endline
+
+line rock-border -close on
+  503.0 332.0
+  488.0 323.0
+  484.0 334.0
+  495.0 342.0
+  503.0 332.0
+endline
+
+line rock-border -close on
+  543.0 333.0
+  524.0 336.0
+  530.0 323.0
+  544.0 323.0
+  543.0 333.0
+endline
+
+line contour
+endline
+
+line contour
+  554.0 236.0
+  554.0 236.0 488.0 301.0 409.0 293.0
+  smooth off
+endline
+
+line contour
+  564.0 291.0
+  564.0 291.0 501.0 348.0 454.0 331.0
+  smooth off
+endline
+
+line contour
+  571.0 324.0
+  567.0 325.0 517.0 381.0 465.0 362.0
+  smooth off
+endline
+
+line contour
+  569.0 267.0
+  569.0 267.0 459.0 326.0 438.0 313.0
+  smooth off
+endline
+
+line pit -outline out
+  542.0 222.0
+  542.0 222.0 468.0 301.0 359.0 262.0
+  smooth off
+endline
+
+line wall
+  542.0 222.0
+  542.0 222.0 549.0 230.0 551.0 248.0
+  553.0 266.0 559.0 301.0 559.0 315.0
+  559.0 329.0 572.2 351.58 554.0 359.0
+  527.0 370.0 469.0 333.0 469.0 333.0
+  smooth off
+endline
+
+line wall
+  469.0 333.0
+  465.0 326.0 429.0 304.0 429.0 304.0
+  smooth off
+  429.0 304.0 406.0 283.0 400.0 281.0
+  394.0 279.0 382.0 277.0 376.0 274.0
+  370.0 271.0 365.0 272.0 359.0 262.0
+  smooth off
+endline
+
+point 420.0 268.0 station -name 3
+
+point 420.0 268.0 station -name 2
+
+point 374.0 261.0 station -name 1
+
+endscrap
+
+
