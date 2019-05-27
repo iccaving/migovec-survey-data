@@ -1,0 +1,54 @@
+survey banzai -title "Fistful of Tolars and Banzai streamway"
+	
+	input banzai-p.th2
+
+	map mbanzai-p -projection plan
+		mbanzai-p1
+		mbanzai-p2
+		mbanzai-p3
+		mbanzai-p4
+	endmap
+
+	map mbanzai-p1 -projection plan
+		banzai-p1
+	endmap
+
+	map mbanzai-p2 -projection plan
+		banzai-p2
+	endmap
+
+	map mbanzai-p3 -projection plan
+		banzai-p3
+	endmap
+
+	map mbanzai-p4 -projection plan
+		banzai-p4
+	endmap
+
+	centreline
+
+		date 2001.07.03
+		explo-date 2001.07.03
+
+		team "Clewin Griffiths" insts tape
+		team "Ben Ogborne" notes
+		explo-team "Clewing Griffiths"
+		explo-team "Ben Ogborne"
+
+		2	1	3.89	300	-20
+		3	2	2.27	246	-18
+		4	3	4.09	155	01
+		5	4	1.59	251	-05
+		6	5	8.77	205	-15.5
+		7	6	3.38	162	-22
+		8	7	4.81	177	-34
+		8	9	5.83	121	-52	#stn 9 is at bottom of small pitch
+		8	10	8.54	084	54
+		10	11	3.14	061	28
+		11	12	11.13	080	67
+		12	12b	27.93	-	up	
+		12b	13	2.47	080	64
+		13	14	3.90	135	-25
+
+	endcentreline
+endsurvey
