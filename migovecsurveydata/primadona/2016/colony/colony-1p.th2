@@ -402,6 +402,20 @@ line pit -outline out
   640.0 466.0
 endline
 
+point 1620.0 -3374.0 passage-height -value 2
+
+point 1162.0 -2772.0 passage-height -value 2
+
+point 1026.0 -2178.0 passage-height -value 2
+
+point 942.0 -1366.0 passage-height -value 4
+
+point 638.0 -658.0 passage-height -value 4
+
+point 582.0 72.0 passage-height -value 2
+
+point 598.0 350.0 passage-height -value 2
+
 line wall
   702.19 116.13
   702.19 116.13 708.0 128.0 712.0 178.0
@@ -467,6 +481,7 @@ endline
 line label -text "The Folly"
   822.0 -58.0
   822.0 -58.0 886.0 214.0 898.0 386.0
+  smooth off
 endline
 
 line rock-border

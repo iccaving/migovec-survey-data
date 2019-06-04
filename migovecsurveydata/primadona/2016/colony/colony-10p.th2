@@ -49,6 +49,8 @@ line wall -id s10_l2 -reverse on
   smooth off
 endline
 
+point 392.0 -592.0 passage-height -value 50
+
 line wall -id s10_l1 -reverse on
   325.97 -288.78
   331.99 -283.53 332.5 -274.16 334.85 -266.52

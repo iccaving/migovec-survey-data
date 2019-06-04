@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 838.0 748.5
+##XTHERION## xth_me_area_adjust -129.0 -129.0 844.0 789.25
 ##XTHERION## xth_me_area_zoom_to 400
 
 
@@ -153,6 +153,16 @@ line label -text "Electric Dreams"
   smooth off
 endline
 
+point 383.25 348.75 passage-height -value 3
+
+point 350.5 330.0 passage-height -value 4
+
+point 431.5 367.75 passage-height -value 3
+
+point 491.0 365.25 passage-height -value 30
+
+point 477.0 403.0 passage-height -value 30
+
 line wall
   525.5 387.0
   513.0 407.0
@@ -288,6 +298,7 @@ line floor-step -outline out
   701.75 660.25
   701.75 660.25 704.25 654.5 705.0 653.0
   705.75 651.5 712.25 652.0 715.0 652.5
+  smooth off
 endline
 
 line wall
@@ -462,36 +473,43 @@ endline
 line contour
   552.5 495.5
   552.5 495.5 548.25 499.5 542.0 496.0
+  smooth off
 endline
 
 line contour
   537.25 527.0
   537.25 527.0 533.0 527.25 532.5 523.25
+  smooth off
 endline
 
 line contour
   530.75 541.0
   530.75 541.0 527.0 543.0 524.5 537.5
+  smooth off
 endline
 
 line contour
   525.5 570.75
   525.5 570.75 516.75 576.75 515.5 568.75
+  smooth off
 endline
 
 line contour
   523.75 596.5
   523.75 596.5 515.25 603.25 509.5 601.0
+  smooth off
 endline
 
 line contour
   528.0 598.0
   528.0 598.0 531.75 611.5 526.5 615.0
+  smooth off
 endline
 
 line contour
   536.0 599.5
   536.0 599.5 540.0 612.0 534.5 615.5
+  smooth off
 endline
 
 line contour
@@ -503,11 +521,13 @@ endline
 line floor-step
   523.0 590.5
   523.0 590.5 515.0 595.25 512.5 588.25
+  smooth off
 endline
 
 line floor-step
   543.0 600.0
   543.0 600.0 547.5 612.75 541.75 616.5
+  smooth off
 endline
 
 line wall

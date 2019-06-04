@@ -298,6 +298,11 @@ line pit
   smooth off
 endline
 
+line wall -subtype invisible
+  276.5 -342.5
+  275.5 -302.0
+endline
+
 line wall -id s3_l6
   296.0 -431.75
   297.0 -420.75
@@ -321,21 +326,35 @@ endline
 line floor-step
 endline
 
+point 270.75 -468.25 passage-height -value 1.5
+
+point 281.5 -446.25 passage-height -value 1.5
+
+point 289.75 -428.5 passage-height -value 3
+
+point 281.0 -383.0 passage-height -value 3
+
+point 268.0 -367.25 passage-height -value 3
+
+point 275.25 -322.0 passage-height -value 40
+
+point 245.75 -331.25 passage-height -value 40
+
 line floor-step -reverse on -outline in
   271.25 -463.0
   271.25 -463.0 269.25 -464.5 268.5 -465.75
   267.75 -467.0 267.0 -468.0 266.75 -469.25
-  266.5 -470.5 266.0 -473.25 266.0 -473.25
+  266.5 -470.5 265.5 -471.75 265.5 -471.75
   smooth off
-  259.5 -474.0
-  260.5 -465.5
-  266.5 -459.5
-  269.0 -449.25
+  262.0 -472.5
+  262.25 -465.5
+  268.25 -460.0
+  270.0 -451.0
 endline
 
 line floor-step -outline in
   271.25 -463.0
-  271.25 -463.0 275.75 -440.5 269.0 -449.25
+  271.25 -463.0 276.75 -442.25 270.0 -451.0
   smooth off
 endline
 

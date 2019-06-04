@@ -103,6 +103,16 @@ line contour
   smooth off
 endline
 
+point 303.0 -305.0 passage-height -value 60
+
+point 310.5 -444.0 passage-height -value 50
+
+point 431.5 -265.0 passage-height -value 40
+
+point 365.0 -207.5 passage-height -value 40
+
+point 213.0 -159.5 passage-height -value 40
+
 line contour
   306.5 -473.5
   306.5 -473.5 410.5 -420.5 415.0 -396.0
@@ -715,16 +725,19 @@ endline
 line contour
   371.5 -368.5
   371.5 -368.5 322.5 -416.5 323.0 -429.0
+  smooth off
 endline
 
 line contour
   355.5 -361.0
   355.5 -361.0 297.0 -384.0 299.0 -405.0
+  smooth off
 endline
 
 line contour
   353.5 -328.0
   353.5 -328.0 285.5 -347.0 277.5 -378.0
+  smooth off
 endline
 
 line wall
