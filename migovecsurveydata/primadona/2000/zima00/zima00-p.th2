@@ -816,6 +816,12 @@ point 209.25 438.75 water-flow -orientation 122.6
 
 point 214.0 592.5 water-flow -orientation 193.8
 
+point 157.0 452.0 passage-height -value 75
+
+point 278.0 566.0 passage-height -value 75
+
+point 212.0 515.0 passage-height -value 70
+
 line wall
   159.25 378.0
   168.25 380.0 182.07 388.64 190.0 398.5
@@ -962,7 +968,5 @@ point -80.0 240.0 station -name "15"
 point -103.0 304.0 station -name "16"
 
 endscrap
-
-
 
 

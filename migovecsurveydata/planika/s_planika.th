@@ -1,0 +1,52 @@
+survey planika_jama -title "Planika Jama"
+	map mplanika_jama-p -projection plan -title "Planika Jama (Plan)"
+		mplanika-p@planika
+		msnow_cold-p@snow_cold
+		mechorift-p@echorift
+	endmap
+
+	map mplanika_jama-e -projection extended -title "Planika Jama (Profile)"
+		mechorift-e@echorift
+		mplanika-e@planika
+		msnow_cold-e@snow_cold
+	endmap
+
+	input planika/planika.th
+	input snow_cold/snow_cold.th
+	input echorift/echorift.th
+
+	equate 18@planika 1@snow_cold
+	equate 4@planika 13@echorift
+
+	join planika-p5@planika snow_cold-p1@snow_cold
+
+	join planika-e2@planika snow_cold-e1@snow_cold
+
+	centreline
+		extend right 1@planika
+
+		extend left 7@echorift
+		extend right 6@echorift 5@echorift
+
+		extend left 4@planika 5@planika
+		extend left 4@planika 7@planika
+
+		extend left 4@snow_cold 5@snow_cold
+		extend left 4@snow_cold 6@snow_cold
+		extend left 6@snow_cold 7@snow_cold
+
+		extend left 7@snow_cold 8@snow_cold
+		extend left 7@snow_cold 9@snow_cold
+
+		extend right 7@snow_cold 10@snow_cold
+		extend right 7@snow_cold 11@snow_cold
+
+		#extend left 12@boulderdash
+		#extend right 9@boulderdash
+		#extend left 1@boulderdash
+		#extend right 5@boulderdash 
+		extend right 5@echorift
+
+	endcentreline
+
+endsurvey

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -4417.0 3122.5 139.5
+##XTHERION## xth_me_area_adjust -130.0 -4426.5 3122.5 139.5
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} TTTp.ppm 0 {}
 
@@ -148,6 +148,18 @@ endline
 
 line wall
 endline
+
+point 2422.5 -2449.5 passage-height -value 4
+
+point 2489.5 -2572.5 passage-height -value 2
+
+point 2566.0 -2697.0 passage-height -value 2
+
+point 2596.5 -2804.5 passage-height -value 1
+
+point 2558.5 -2942.0 passage-height -value 1
+
+point 2527.0 -3014.5 passage-height -value 2
 
 line wall -reverse on
   2451.0 -2415.0
@@ -341,6 +353,10 @@ line wall
   smooth off
 endline
 
+point 2500.5 -3147.5 passage-height -value 20
+
+point 2449.5 -3040.0 passage-height -value 20
+
 line wall
   2400.0 -2997.0
   2400.0 -2997.0 2405.0 -3004.0 2403.0 -3009.0
@@ -365,6 +381,16 @@ line wall
   smooth off
   2665.5 -3394.5
 endline
+
+point 2472.0 -2746.5 passage-height -value 0.5
+
+point 2443.0 -2794.0 passage-height -value 0.5
+
+point 2408.0 -2881.0 passage-height -value 0.5
+
+point 2326.0 -2934.5 passage-height -value 4
+
+point 2385.0 -2952.5 passage-height -value 4
 
 line wall
   2486.0 -3014.0
@@ -717,12 +743,14 @@ line floor-step -outline in
   2785.5 -3464.0
   2791.0 -3456.0
   2791.0 -3456.0 2779.5 -3451.5 2791.0 -3438.0
+  smooth off
 endline
 
 line floor-step -outline in
   2791.0 -3438.0
   2791.0 -3438.0 2776.67 -3445.72 2764.5 -3449.5
   2750.0 -3454.0 2738.5 -3456.5 2737.0 -3456.0
+  smooth off
 endline
 
 line floor-step
@@ -1257,6 +1285,8 @@ line pit -close on
   1984.62 -4209.17 1965.5 -4198.0 1938.0 -4211.0
   1928.93 -4215.29 1925.0 -4229.5 1921.0 -4232.5
 endline
+
+point 1865.5 -4296.0 passage-height -value 40
 
 point 1880.0 -4266.0 station -name "1"
 
