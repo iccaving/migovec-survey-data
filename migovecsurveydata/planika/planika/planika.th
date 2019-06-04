@@ -1,20 +1,56 @@
 encoding  utf-8
 survey planika
-  input "planikap.th2"
+  input "planika-p.th2"
+  input "planika-e.th2"
   
-  map mplanikap_1 -projection plan
-    planikap_1
+  map mplanika-p -projection plan
+    mplanika-p3
+    mplanika-p1
+    mplanika-p4
+    mplanika-p5
+    mplanika-p2
+
+  endmap
+
+  map mplanika-p1 -projection plan
+    planika-p1
   endmap
   
-   map mplanikap_2 -projection plan
-    planikap_2
+   map mplanika-p2 -projection plan
+    planika-p2
   endmap
+
+  map mplanika-p3 -projection plan
+    planika-p3
+  endmap
+
+  map mplanika-p4 -projection plan
+    planika-p4
+  endmap
+
+  map mplanika-p5 -projection plan
+    planika-p5
+  endmap
+
+  map mplanika-e -projection extended 
+    mplanika-e2
+    mplanika-e1
+  endmap
+
+  map mplanika-e1 -projection extended
+    planika-e1
+  endmap
+
+  map mplanika-e2 -projection extended
+    planika-e2
+  endmap
+  
   
   centreline
   date 2007.08.02
   explo-team "Jarvist Frost"
-  explo-team "Jana Carga"
-  team "Jana Carga" notes
+  explo-team "Jana Čarga"
+  team "Jana Čarga" notes
   team "Jarvist Frost" insts
   
   cs lat-long

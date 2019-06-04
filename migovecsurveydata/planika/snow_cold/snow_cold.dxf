@@ -1,0 +1,354 @@
+0
+SECTION
+2
+HEADER
+9
+$EXTMIN
+10
+-51.660000
+20
+-58.560000
+30
+0.000000
+9
+$EXTMAX
+10
+55.750000
+20
+57.970000
+30
+23.840000
+9
+$PDMODE
+70
+3
+9
+$PDSIZE
+40
+  0.80
+0
+ENDSEC
+0
+SECTION
+2
+TABLES
+0
+TABLE
+2
+LTYPE
+70
+10
+0
+LTYPE
+2
+CONTINUOUS
+70
+64
+3
+Continuous
+72
+65
+73
+0
+40
+0.0
+0
+LTYPE
+2
+DASHED
+70
+64
+3
+Dashed
+72
+65
+73
+2
+40
+2.5
+49
+1.25
+49
+-1.25
+0
+ENDTAB
+0
+TABLE
+2
+LAYER
+70
+10
+0
+LAYER
+2
+CentreLine
+70
+64
+62
+5
+6
+CONTINUOUS
+0
+LAYER
+2
+Stations
+70
+64
+62
+7
+6
+CONTINUOUS
+0
+LAYER
+2
+Labels
+70
+64
+62
+7
+6
+CONTINUOUS
+0
+LAYER
+2
+Surface
+70
+64
+62
+5
+6
+DASHED
+0
+LAYER
+2
+SurfaceStations
+70
+64
+62
+7
+6
+CONTINUOUS
+0
+LAYER
+2
+SurfaceLabels
+70
+64
+62
+7
+6
+CONTINUOUS
+0
+LAYER
+2
+Grid
+70
+64
+62
+7
+6
+CONTINUOUS
+0
+ENDTAB
+0
+ENDSEC
+0
+SECTION
+2
+ENTITIES
+0
+LINE
+8
+Grid
+10
+  0.00
+20
+-58.56
+30
+0
+11
+  0.00
+21
+ 57.97
+31
+0
+0
+LINE
+8
+Grid
+10
+-51.66
+20
+  0.00
+30
+0
+11
+ 55.75
+21
+  0.00
+31
+0
+0
+LINE
+8
+CentreLine
+10
+  0.00
+20
+  0.00
+30
+  0.00
+11
+  2.14
+21
+ -1.04
+31
+  0.77
+0
+LINE
+8
+CentreLine
+10
+  2.14
+20
+ -1.04
+30
+  0.77
+11
+  5.27
+21
+ -2.44
+31
+  3.00
+0
+LINE
+8
+CentreLine
+10
+  5.27
+20
+ -2.44
+30
+  3.00
+11
+  5.27
+21
+ -2.44
+31
+  8.03
+0
+LINE
+8
+CentreLine
+10
+  5.27
+20
+ -2.44
+30
+  8.03
+11
+  1.64
+21
+ -1.46
+31
+  6.66
+0
+LINE
+8
+CentreLine
+10
+  5.27
+20
+ -2.44
+30
+  8.03
+11
+  5.75
+21
+  0.99
+31
+  5.23
+0
+LINE
+8
+CentreLine
+10
+  5.75
+20
+  0.99
+30
+  5.23
+11
+  0.08
+21
+  2.61
+31
+  7.26
+0
+LINE
+8
+CentreLine
+10
+  0.08
+20
+  2.61
+30
+  7.26
+11
+  2.67
+21
+  5.81
+31
+  6.00
+0
+LINE
+8
+CentreLine
+10
+  0.08
+20
+  2.61
+30
+  7.26
+11
+ -1.66
+21
+  7.97
+31
+  4.01
+0
+LINE
+8
+CentreLine
+10
+  0.08
+20
+  2.61
+30
+  7.26
+11
+ -0.25
+21
+ -3.75
+31
+ 16.70
+0
+LINE
+8
+CentreLine
+10
+  0.08
+20
+  2.61
+30
+  7.26
+11
+ -0.50
+21
+ -8.56
+31
+ 23.84
+000
+ENDSEC
+000
+EOF

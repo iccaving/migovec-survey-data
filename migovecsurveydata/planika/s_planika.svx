@@ -6,14 +6,14 @@
 *date 2007
 ;Generic date, will get overridden by individuals
 
-*include planika
+*include planika/planika
 
-*include snow_cold
+*include snow_cold/snow_cold
 
-*include echorift
+*include echorift/echorift
 *equate echorift.13 planika.4
 
-*include boulderdash ; 14.8.08 - Tim Osborne, Jarvist Frost
+*include boulderdash/boulderdash ; 14.8.08 - Tim Osborne, Jarvist Frost
 ;side chamber off rift window at -10m on main pitch
 
 *end planika

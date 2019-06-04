@@ -3,7 +3,11 @@ survey friendship
 
 	map mfriendship-p -projection plan
 		mfriendship-p1
+		mfriendship-p3
 		mfriendship-p2
+		mfriendship-p4
+		mfriendship-p5
+		mfriendship-p6
 	endmap
 
 	map mfriendship-p1 -projection plan
@@ -13,6 +17,27 @@ survey friendship
 	map mfriendship-p2 -projection plan
 		friendship-p2
 	endmap
+
+	map mfriendship-p3 -projection plan
+		friendship-p3
+	endmap
+
+	map mfriendship-p4 -projection plan
+		friendship-p4
+	endmap
+
+	map mfriendship-p5 -projection plan
+		friendship-p5
+	endmap
+
+	map mfriendship-p6 -projection plan
+		friendship-p6
+	endmap
+
+	join friendship-p4 friendship-p3
+	join friendship-p2 friendship-p1
+	join friendship-p4 friendship-p5
+	join friendship-p5 friendship-p6
 
 	centreline
 		date 2001.08.09
