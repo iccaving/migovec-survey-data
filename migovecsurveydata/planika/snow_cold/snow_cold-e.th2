@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 824.5 668.0
+##XTHERION## xth_me_area_adjust -130.0 -130.0 836.5 691.0
 ##XTHERION## xth_me_area_zoom_to 200
 
 
@@ -39,6 +39,21 @@ line wall -subtype blocks
   646.5 516.0 645.0 515.0 656.0 513.0
   667.0 511.0 668.5 508.0 668.5 508.0
   smooth off
+endline
+
+line arrow
+  704.5 405.0
+  663.5 393.5
+endline
+
+point 704.5 405.0 remark -text "Cold snow ramp" -align r
+
+line label -text "Acre Lane"
+endline
+
+line label -text "Acre Lane"
+  603.5 561.0
+  603.5 561.0 640.5 553.5 706.5 536.0
 endline
 
 line wall
