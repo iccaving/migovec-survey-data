@@ -1,10 +1,11 @@
 encoding  utf-8
 source s_planika.th
 
-input ../_layouts/layout2.th
-
+input layouts/layoutplan.th
+input layouts/layoutplan_ee.th
 select mplanika_jama-p@planika_jama
 select mplanika_jama-e@planika_jama
 
-export map -o ../_outputs/planika.pdf  -projection plan -layout local2 -layout-debug station-names
 export map -o ../_outputs/planika-e.pdf  -projection extended -layout local2 -layout-debug station-names
+
+export map -o ../_outputs/planika.pdf  -projection plan -layout local3 -layout-debug station-names
