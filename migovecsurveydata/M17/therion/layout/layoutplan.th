@@ -24,6 +24,26 @@ layout local2
       endfor;
     enddef;
     
+    def l_u_openshaft_MY (expr P) =
+      T:=identity;
+      cas := 0;
+      dlzka := arclength P;
+      mojkrok:=adjust_step(dlzka, 0.3u);
+      pickup PenC;
+      t1:=0;
+      
+      forever:
+        t := arctime (cas + mojkrok/2) of P;
+        t2 := arctime (cas + mojkrok) of P;
+        thfill (point t1 of P + .1u *unitvector(thdir(P,t1) rotated 90)) -- ((point t of P) + .4u * unitvector(thdir(P,t) rotated 90)) -- (point t2 of P + .1u *unitvector (thdir(P,t2) rotated 90)) -- cycle;
+        thdraw (point t1 of P + .1u *unitvector(thdir(P,t1) rotated 90)) .. (point t2 of P + .1u *unitvector (thdir(P,t2) rotated 90));
+        cas := cas + mojkrok;
+        exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
+        t1:=t2;
+      endfor;
+      thdraw P;
+    enddef;
+    initsymbol("l_u_openshaft_MY");
 
     def l_u_texture_MY (expr P)=
       T:=identity;

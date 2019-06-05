@@ -1,0 +1,6 @@
+encoding  utf-8
+source ../_xtherion/system_migovec.th
+input ../M17/therion/layout/layoutplan.th
+select mM17M19-p@sistem_migovec
+
+export map -o ../_outputs/M17M19_plan.pdf -layout local2
