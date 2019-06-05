@@ -2,6 +2,10 @@ encoding  utf-8
 ###### MAIN MAP #######
 map mplateau-p -projection plan -title "The Migovec System"
 	mm19-p@M19
+	mM17-p3@M17
+	mM17-p1@M17
+	mM17-p2@M17
+	mM17-p4@M17
 	mplanika_jama-p@planika_jama
 
 	mubend2-p@ubend2.s_ubend
@@ -150,5 +154,10 @@ map high-monatip -projection plan
 	mcloacamaxima-p4@cloacamaxima.monatip
 	malkatraz_disto_resurvey-p@alkatraz_disto_resurvey.monatip
 	mtherock-p3@therock.monatip
+endmap
+
+map mM17M19-p -projection plan
+	mm19-p@M19 [35 0 m] none
+	mM17-p@M17
 endmap
 
