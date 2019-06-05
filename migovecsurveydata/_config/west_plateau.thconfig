@@ -5,17 +5,17 @@ input ../_layouts/layout1.th
 input ../_layouts/outline_layout.th
 
 #select mvrtnarija-p@vrtnarija.sistem_migovec
-#select mplateau-p@sistem_migovec
-select mplanika_jama-p@planika_jama.sistem_migovec
+select mplateau-p@sistem_migovec
+#select mplanika_jama-p@planika_jama.sistem_migovec
 
 #export map -projection plan -o ../_outputs/vrtnarija.pdf -layout local
-#export map -projection plan -o ../_outputs/system_migovec.pdf -layout local
+export map -projection plan -o ../_outputs/system_migovec.pdf -layout local
 #export map -projection plan -o ../_outputs/sys_prima_by_date.pdf -layout local
-#export atlas -projection plan -o ../_outputs/system_migovec_atlas.pdf -layout local1 
-#export model -fmt survex -o ../_outputs/west_plateau.3d
+export atlas -projection plan -o ../_outputs/system_migovec_atlas.pdf -layout local1 
+export model -fmt survex -o ../_outputs/west_plateau.3d
 #export database -output ../_outputs/west_plateau.sql
-export model -o ../_outputs/system_migovec.lox
-#export map -fmt esri -projection plan -o ../_outputs/sys_prima
+#export model -o ../_outputs/system_migovec.lox
+export map -fmt esri -projection plan -o ../_outputs/sys_prima
 #export map -o ../_outputs/system_migovec.kml
 #export model -o ../_outputs/system_migovec_model.kml
-export map -projection plan -o ../_outputs/planika.pdf -layout local
+#export map -projection plan -o ../_outputs/planika.pdf -layout local

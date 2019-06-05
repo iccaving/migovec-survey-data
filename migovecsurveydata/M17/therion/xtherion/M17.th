@@ -236,7 +236,7 @@ survey M17 -title "M17"
     22 0A 1.86 328.6 47.5
 
     cs lat-long
-    fix 0  46.253580 13.760417 1879
+    fix 0  46.253580 13.760417 1859
   endcenterline
 
    input "M17-1p.th2"
@@ -247,11 +247,11 @@ survey M17 -title "M17"
    #input "M17-3s.th2"
 
    map mM17-p -projection plan -title "M-17 (Frigidare)"
-     mM17-p3 [15 0 m] above
+     mM17-p3 [35 0 m] above
      mM17-p1  
      break
      mM17-p2
-     mM17-p4 [-15 0 m] below
+     mM17-p4 [-20 0 m] below
    endmap
 
    map mM17-p1
