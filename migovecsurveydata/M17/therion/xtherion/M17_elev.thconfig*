@@ -1,9 +1,12 @@
 encoding  utf-8
 source M17.th
-#input ../layout/layout_2.th
-input ../layout/layout_extended.th
 
-export map -projection extended -o ../outputs/M17_extended.pdf -layout extended
-export map -projection plan -o ../outputs/M17.pdf -layout local
+input ../layout/layoutplan.th
+input ../layout/layoutplan_ee.th
+
+select mM17-p@M17
+
+export map -projection extended -o ../outputs/M17_extended.pdf -layout local2 -layout-debug station-names
+export map -projection plan -o ../outputs/M17.pdf -layout local3 -layout-debug station-names
 #export map -fmt kml -o ../outputs/M17.kml
 #export model -o ../outputs/M17.lox
