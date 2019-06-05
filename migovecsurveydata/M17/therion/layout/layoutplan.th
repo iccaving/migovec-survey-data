@@ -1,15 +1,11 @@
-encoding  utf-8
-layout local
+layout local2
   language en
-  scale 1 200
- #colour map-fg altitude #[92 86 65]
+  scale 1 250
+ #colour map-fg #altitude 
+ colour map-bg [90 90 90]
   legend on 
   map-header 105 100 nw
   grid-coords border
-
-  code tex-map
-      \cavename={M-17 (Frigidare)}
-  endcode  
   
   #Contains the user:defined symbols used in the obir survey map
   code metapost 
@@ -32,26 +28,6 @@ layout local
     def l_u_texture_MY (expr P)=
       T:=identity;
       thdraw P withpen PenD;
-    enddef;
-
-    def l_u_openshaft_MY (expr P) =
-      T:=identity;
-      cas := 0;
-      dlzka := arclength P;
-      mojkrok:=adjust_step(dlzka, 0.3u);
-      pickup PenC;
-      t1:=0;
-      
-      forever:
-        t := arctime (cas + mojkrok/2) of P;
-        t2 := arctime (cas + mojkrok) of P;
-        thfill (point t1 of P + .1u *unitvector(thdir(P,t1) rotated 90)) -- ((point t of P) + .4u * unitvector(thdir(P,t) rotated 90)) -- (point t2 of P + .1u *unitvector (thdir(P,t2) rotated 90)) -- cycle;
-        thdraw (point t1 of P + .1u *unitvector(thdir(P,t1) rotated 90)) .. (point t2 of P + .1u *unitvector (thdir(P,t2) rotated 90));
-        cas := cas + mojkrok;
-        exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
-        t1:=t2;
-      endfor;
-      thdraw P;
     enddef;
 
 
@@ -214,7 +190,6 @@ layout local
     initsymbol("p_pillar_MY");
     initsymbol("p_stalagmite_MY");
     initsymbol("p_stalactite_MY");
-    initsymbol("l_u_openshaft_MY");
 
   endcode
 
@@ -224,7 +199,7 @@ layout local
  symbol-assign area ice MY
  symbol-assign area snow MY
  symbol-assign line rock-border MY
- symbol-assign line survey MY 
+ #symbol-hide line survey 
  #symbol-assign area water MY
  #symbol-hide point station
  symbol-assign line pit AUT
@@ -235,6 +210,8 @@ layout local
  symbol-assign point stalagmite MY
  symbol-assign point stalactite MY
  symbol-hide point passage-height
+ #symbol-hide point label 
+ symbol-assign line survey AUT
 
 endlayout
 
@@ -249,3 +226,4 @@ text de "line u:openshaft_MY" "Eingangskessel"
 text en "line u:texture_MY" "bedrock wall"
 text de "line u:texture_MY" "Felsboden"
 text de "line u:flowstone_MY" "flächiger Sinter"
+
