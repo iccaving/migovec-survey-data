@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -306.0 -1980.0 4508.0 3600.0
+##XTHERION## xth_me_area_adjust -756.0 -1980.0 4508.0 3600.0
 ##XTHERION## xth_me_area_zoom_to 50
 
 # 2018.08.12 created by TopoDroid v. 4.0.1a
@@ -1070,6 +1070,8 @@ line wall
   92.67 -447.52
   99.94 -472.5
 endline
+
+point -618.0 -720.0 label -text "Moonraker" -align l
 
 line wall -subtype unsurveyed
   -116.0 -608.0

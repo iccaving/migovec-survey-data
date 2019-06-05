@@ -4,7 +4,7 @@ encoding  utf-8
 
 # 2018.10.06 created by TopoDroid v. 4.1.0c
 
-#P  u:user label air-draught anchor blocks clay continuation debris entrance flowstone gradient pillar sand section soda-straw stalactite stalagmite u:water_drip water-flow
+#P  u:user label -scale s air-draught anchor blocks clay continuation debris entrance flowstone gradient pillar sand section soda-straw stalactite stalagmite u:water_drip water-flow
 #L  u:user wall arrow border chimney pit rock-border section slope wall:blocks wall:ice
 #A  u:user water blocks clay debris ice sand snow
 
@@ -1311,9 +1311,9 @@ line wall
   1082.61 3743.18
 endline
 
-point 2034.76 3156.51 label -text "tunnel under ice"
+point 2034.76 3156.51 label -scale s -text "tunnel under ice"
 
-point 1860.44 2720.75 label -text "rock bridge"
+point 1860.44 2720.75 label -scale s -text "rock bridge"
 
 line contour -reverse on
   1545.0 2208.0
@@ -1631,19 +1631,19 @@ line floor-step
   smooth off
 endline
 
-point -712.05 1321.37 label -text "meander"
+point -712.05 1321.37 label -scale s -text "meander"
 
-point -148.59 1200.75 label -align r -text "2nd pitch"
+point -148.59 1200.75 label -scale s -align r -text "2nd pitch"
 
-point 662.6600000000001 1967.32 label -align bl -text "1st pitch"
+point 662.6600000000001 1967.32 label -scale s -align bl -text "1st pitch"
 
-point -134.08000000000004 251.72000000000003 label -align l -text "3rd pitch"
+point -134.08000000000004 251.72000000000003 label -scale s -align l -text "3rd pitch"
 
-point 364.16999999999996 2491.43 label -text "snow cone"
+point 364.16999999999996 2491.43 label -scale s -text "snow cone"
 
 point 33.22 2367.80 pillar
 
-point 110.66 2619.78 label -text "ice column"
+point 110.66 2619.78 label -scale s -text "ice column"
 
 line pit
   -381.46 2483.6
@@ -1911,7 +1911,7 @@ line section
   smooth off
 endline
 
-point 583.74 -723.8299999999999 label -align b -text "red alcove"
+point 583.74 -723.8299999999999 label -scale s -align b -text "red alcove"
 
 point -790.05 2570.66 continuation
 
@@ -1940,9 +1940,9 @@ line border -id l471-967-3193
   991.0 3155.0
 endline
 
-point -461.17 2772.79 label -text "small ice chamber"
+point -461.17 2772.79 label -scale s -text "small ice chamber"
 
-point -632.94 2077.98 label -text "low ceiling"
+point -632.94 2077.98 label -scale s -text "low ceiling"
 
 point -342.56 1915.53 station -name "19"
 
@@ -1952,9 +1952,9 @@ point 467.51 2278.29 station -name "20A"
 
 point 532.20 2081.78 station -name "21"
 
-point 444.0 -300.0 label -align tr -scale l -text "Boulder Chamber"
+point 444.0 -300.0 label -scale s -align tr -scale l -text "Boulder Chamber"
 
-point -57.0 1780.0 label -align br -scale l -text "Snow Chamber"
+point -57.0 1780.0 label -scale s -align br -scale l -text "Snow Chamber"
 
 point 1002.35 2159.61 station -name "22"
 
@@ -2131,7 +2131,7 @@ line rock-border -close on
   -86.08 -1050.48
 endline
 
-point 249.81 -1479.21 label -text "4th pitch"
+point 249.81 -1479.21 label -scale s -text "4th pitch"
 
 line rock-border -close on
   -59.96 -1083.39

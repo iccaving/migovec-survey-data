@@ -59,6 +59,7 @@ point 391.5 -540.5 scallop -scale xs
 line label -text "Sweet Baby Jesus"
   265.5 -121.5
   265.5 -121.5 448.5 -318.5 548.0 -535.0
+  smooth off
 endline
 
 area sand
@@ -264,6 +265,8 @@ point 110.0 -74.0 station -name "23"
 point 124.0 -62.0 station -name "21"
 
 point 163.0 -122.0 station -name "20"
+
+point 569.0 -511.5 label -align tr -text "Sweet Baby Jesus"
 
 point 198.0 -153.0 station -name "19"
 

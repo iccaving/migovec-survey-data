@@ -1,0 +1,17 @@
+encoding  utf-8
+source "../_xtherion/system_migovec.th"
+
+layout local
+  scale 1 5000
+  colour map-bg [ 95 95 95]
+  symbol-hide group all
+  min-symbol-scale M
+  symbol-show line wall
+  symbol-show point label
+  
+  statistics topo-length on
+  statistics explo-length on
+  
+endlayout
+
+export map -projection plan -o ../_outputs/outline_mig.pdf -layout local

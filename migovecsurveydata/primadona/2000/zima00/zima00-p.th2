@@ -237,7 +237,9 @@ line floor-step
   smooth off
 endline
 
-point 232.0 621.25 label -align t -text "P41"
+point 262.0 396.0 label -align br -text "TTT"
+
+point 232.0 621.25 label -align t -text "P41" -scale s
 
 line gradient
 endline
@@ -671,7 +673,7 @@ line floor-step
   smooth off
 endline
 
-point 62.5 406.75 label -text "P4" -align br
+point 62.5 406.75 label -text "P4" -scale s -align br
 
 line pit
   -22.75 392.25

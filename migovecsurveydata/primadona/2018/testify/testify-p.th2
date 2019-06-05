@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 907.75 769.0
+##XTHERION## xth_me_area_adjust -132.0 -132.0 912.0 772.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
@@ -94,6 +94,7 @@ endarea
 line label -text "Testify!" -scale xl
   327.0 409.0
   327.0 409.0 470.0 550.0 597.0 638.0
+  smooth off
 endline
 
 line border -id l58-453-396 -close on -subtype invisible
@@ -132,6 +133,8 @@ line wall
   353.75 253.75 325.5 249.5 325.5 249.5
   smooth off
 endline
+
+point 262.0 194.0 label -text "Testify!" -align br
 
 line wall
   322.5 242.75

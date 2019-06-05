@@ -7,9 +7,6 @@ encoding  utf-8
 scrap apple_crumble-p1 -scale [0.0 0.0 879.5449374288966 1024.0 0.0 0.0 120.8 140.64]
 
 line wall
-endline
-
-line wall
   511.25 355.0
   511.25 355.0 503.0 371.0 502.25 373.5
   501.5 376.0 500.25 379.75 500.5 382.75
@@ -134,7 +131,7 @@ line wall -reverse on
   smooth off
 endline
 
-point 532.5 400.25 label -text "Apple Crumble" -scale l -align br
+point 532.5 400.25 label -text "Apple Crumble" -align br
 
 line label
   469.0 448.5
