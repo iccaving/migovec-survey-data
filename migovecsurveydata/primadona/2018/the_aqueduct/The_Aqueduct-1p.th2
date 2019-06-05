@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -304.0 -2968.0 3424.0 12732.0
+##XTHERION## xth_me_area_adjust -456.0 -2968.0 3424.0 12732.0
 ##XTHERION## xth_me_area_zoom_to 25
 
 # 2018.08.12 created by TopoDroid v. 4.0.1a
@@ -1654,6 +1654,7 @@ endline
 line label -text "The Aqueduct"
   1384.0 -2008.0
   1384.0 -2008.0 2728.0 3224.0 3132.0 7064.0
+  smooth off
 endline
 
 line wall
@@ -1813,6 +1814,8 @@ line wall -reverse on
   1088.17 1233.43 1107.08 1263.36 1122.76 1293.2
   smooth off
 endline
+
+point -308.0 -1440.0 label -text "The Aqueduct" -align l
 
 line rock-border -close on
   330.73 -1409.54

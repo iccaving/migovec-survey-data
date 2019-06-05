@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 749.25 658.5
+##XTHERION## xth_me_area_adjust -129.0 -129.0 736.0 656.25
 ##XTHERION## xth_me_area_zoom_to 400
 
 
@@ -273,6 +273,8 @@ line wall -reverse on
 endline
 
 point 600.0887564166253 515.4760721973837 station -name 7
+
+point 598.75 317.0 label -align b -text "Stranglehold"
 
 point 560.749793012088 461.30021526742837 station -name 6
 

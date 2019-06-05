@@ -106,7 +106,10 @@ endline
 line label -text "Tiger Tiger" -scale l
   225.0 -289.0
   225.0 -289.0 337.0 -392.0 560.0 -419.0
+  smooth off
 endline
+
+point 225.0 -715.0 label -align br -text "Penny Falls"
 
 line wall
   55.0 -185.0

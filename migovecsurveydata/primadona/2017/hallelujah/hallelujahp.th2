@@ -12,21 +12,25 @@ endline
 line floor-step
   350.0 -360.0
   350.0 -360.0 317.0 -317.0 301.0 -322.5
+  smooth off
 endline
 
 line floor-step -reverse on
   297.0 -350.0
   297.0 -350.0 283.5 -341.0 293.5 -331.0
+  smooth off
 endline
 
 line floor-step -reverse on
   245.0 -316.0
   245.0 -316.0 222.5 -280.0 260.0 -289.0
+  smooth off
 endline
 
 line label -text "Hallelujah"
   155.0 -240.0
   155.0 -240.0 266.0 -420.0 374.0 -508.0
+  smooth off
 endline
 
 point 431.0 -527.0 continuation -align bl
@@ -37,16 +41,19 @@ endline
 line floor-step
   448.0 -496.0
   448.0 -496.0 421.0 -476.5 421.0 -498.0
+  smooth off
 endline
 
 line floor-step
   412.5 -448.0
   412.5 -448.0 380.5 -414.5 377.5 -442.5
+  smooth off
 endline
 
 line floor-step
   209.0 -210.0
   209.0 -210.0 183.0 -190.0 178.0 -213.0
+  smooth off
 endline
 
 area water
@@ -67,6 +74,8 @@ line wall
   202.0 -184.0 215.0 -175.0 196.0 -175.0
   smooth off
 endline
+
+point 456.0 -300.5 label -align tr -text "Hallelujah"
 
 line wall
   441.0 -526.0
