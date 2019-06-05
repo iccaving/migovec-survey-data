@@ -2,15 +2,17 @@ encoding  utf-8
 source "../_xtherion/system_migovec.th"
 
 layout local
-  scale 1 5000
+  scale 1 2500
   colour map-bg [ 95 95 95]
   symbol-hide group all
   min-symbol-scale M
   symbol-show line wall
   symbol-show point label
-  
+  map-header 105 100 nw
   statistics topo-length on
-  statistics explo-length on
+  statistics explo off
+  statistics copyright all
+  fonts-setup 8 12 14 24 48
   
 endlayout
 
