@@ -246,11 +246,28 @@ survey M17 -title "M17"
    input "M17-3p.th2"
    #input "M17-3s.th2"
 
-   map m17p -projection plan
-     M17-3p
-     M17-1p
-     M17-2p
+   map mM17-p -projection plan -title "M-17 (Frigidare)"
+     mM17-p3 [15 0 m] above
+     mM17-p1  
      break
+     mM17-p2
+     mM17-p4 [-15 0 m] below
+   endmap
+
+   map mM17-p1
+    M17-1p
+   endmap
+
+   map mM17-p2
+    M17-2p
+   endmap
+
+   map mM17-p3
+    M17-3p
+   endmap
+
+   map mM17-p4
+    M17-4p
    endmap
 
    map m1s -projection extended
