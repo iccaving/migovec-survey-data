@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 697.5 861.5
+##XTHERION## xth_me_area_adjust -130.0 -130.0 704.0 862.5
 ##XTHERION## xth_me_area_zoom_to 200
 
 
@@ -62,16 +62,18 @@ point 484.4276036284304 697.5404753703066 station -name 30
 
 point 472.78723159949476 695.600413365484 station -name 29
 
-
 endscrap
 
 
 
 scrap canticle_for_migovec-p3 -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 145.91 174.18]
 
+point 496.0 520.0 label -align br -text "Canticle<br>for Migovec"
+
 line label -text "Canticle for Migovec"
   338.5 317.5
   338.5 317.5 456.5 431.5 574.0 568.0
+  smooth off
 endline
 
 line wall
