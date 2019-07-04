@@ -1,0 +1,23 @@
+set xth(ctrl,cp,datlist) {}
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 120.22m (surface 0.00m, duplicated 0.00m)\nvertical range: 46.32m (from 14@planika at 41.81m to 2@planika at -4.51m)\nnorth-south range: 38.62m (from 15@planika at 37.63m to 3@planika at -0.99m)\neast-west range: 11.16m (from 7@planika at 6.84m to 2@planika at -4.32m)\nnumber of shots: 167\nnumber of stations: 167"
+xth_cp_data_tree_insert 19 1 1 planika planika "Planika Jama 2019 resurvey" "Planika Jama 2019 resurvey" "length: 120.22m (surface 0.00m, duplicated 0.00m)\nvertical range: 46.32m (from 14@planika at 41.81m to 2@planika at -4.51m)\nnorth-south range: 38.62m (from 15@planika at 37.63m to 3@planika at -0.99m)\neast-west range: 11.16m (from 7@planika at 6.84m to 2@planika at -4.32m)\nnumber of shots: 167\nnumber of stations: 167"
+xth_cp_data_tree_create
+set xth(ctrl,cp,maplist) {}
+xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
+xth_cp_map_tree_insert projection 0 p2 {} 0 extended {} {} {}
+xth_cp_map_tree_insert map 0 670X1 p1 1 mplanika-p mplanika-p@planika "" ""
+xth_cp_map_tree_insert map 1 680X1 670X1 2 m5p m5p@planika "" ""
+xth_cp_map_tree_insert map 1 675X1 670X1 2 m1p m1p@planika "" ""
+xth_cp_map_tree_insert map 1 677X1 670X1 2 m2p m2p@planika "" ""
+xth_cp_map_tree_insert map 1 679X1 670X1 2 m4p m4p@planika "" ""
+xth_cp_map_tree_insert map 1 678X1 670X1 2 m3p m3p@planika "" ""
+xth_cp_map_tree_insert map 1 681X1 670X1 2 m6p m6p@planika "" ""
+xth_cp_map_tree_insert map 0 671X1 p2 1 mplanika-e mplanika-e@planika "" ""
+xth_cp_map_tree_insert map 1 676X1 671X1 2 m1s m1s@planika "" ""
+xth_cp_map_tree_insert map 1 682X1 671X1 2 m2es m2es@planika "" ""
+xth_cp_map_tree_insert map 1 683X1 671X1 2 m3es m3es@planika "" ""
+xth_cp_map_tree_create
+xth_cp_comp_stat 120 9
+set xth(th_exit_state) 2
+set xth(th_exit_number) 1561098935
+

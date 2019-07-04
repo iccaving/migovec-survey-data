@@ -1,11 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -144.0 -4804 3435 152.0
-##XTHERION## xth_me_area_zoom_to 25
+##XTHERION## xth_me_area_adjust -136.0 -4804 3435 144.0
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} risa2_extend.gif 0 {}
 
 
 
-scrap risa2_e1 -projection extended -scale [1366.0 -3966.0 2500.0 -3976.0 0.0 0.0 25 0.0 m]
+scrap risa2-e1 -projection extended -scale [1366.0 -3966.0 2500.0 -3976.0 0.0 0.0 25 0.0 m]
 
 point 1420.0 -1944.0 water-flow -orientation 184.9
 
@@ -166,12 +166,16 @@ line wall
   smooth off
 endline
 
+point 2508.0 -1900.0 dig -align t -scale xl
+
+point 1868.0 -1888.0 dig -align t -scale xl
+
 line wall
   2080.0 -1676.0
   2084.0 -1692.0 2056.0 -1792.0 2048.0 -1812.0
   2040.0 -1832.0 2032.0 -1900.0 2008.0 -1912.0
-  1984.0 -1924.0 1940.0 -1936.0 1900.0 -1948.0
-  1860.0 -1960.0 1824.0 -1976.0 1800.0 -1976.0
+  1984.0 -1924.0 1976.0 -1956.0 1924.0 -1960.0
+  1882.36 -1963.2 1824.0 -1976.0 1800.0 -1976.0
   1776.0 -1976.0 1724.0 -1980.0 1712.0 -1964.0
   1700.0 -1948.0 1692.0 -1932.0 1672.0 -1872.0
   1652.0 -1812.0 1632.0 -1772.0 1620.0 -1732.0
@@ -192,12 +196,77 @@ line wall
   smooth off
 endline
 
-line wall -subtype blocks
+line rock-border
+  2956.0 -1944.0
+  2900.0 -1936.0
+  2884.0 -1958.0
+endline
+
+line rock-border -close on
+  2808.0 -1958.0
+  2756.0 -1994.0
+  2774.0 -2024.0
+  2832.0 -1992.0
+  2808.0 -1958.0
+endline
+
+line rock-border -close on
+  2112.0 -2018.0
+  2096.0 -2020.0
+  2084.0 -2052.0
+  2116.0 -2052.0
+  2112.0 -2018.0
+endline
+
+line rock-border -close on
+  2158.0 -2018.0
+  2144.0 -2018.0
+  2134.0 -2046.0
+  2164.0 -2096.0
+  2190.0 -2058.0
+  2158.0 -2018.0
+endline
+
+line rock-border -close on
+  2228.0 -2010.0
+  2198.0 -2012.0
+  2188.0 -2032.0
+  2204.0 -2066.0
+  2232.0 -2042.0
+  2228.0 -2010.0
+endline
+
+line rock-border -close on
+  2286.0 -2030.0
+  2248.0 -2028.0
+  2248.0 -2046.0
+  2276.0 -2046.0
+  2286.0 -2030.0
+endline
+
+line wall
   3096.0 -1792.0
   3076.0 -1788.0 3000.0 -1788.0 2948.0 -1808.0
   2896.0 -1828.0 2860.0 -1832.0 2824.0 -1852.0
   2788.0 -1872.0 2744.0 -1908.0 2744.0 -1908.0
   smooth off
+endline
+
+line rock-border
+endline
+
+line rock-border -close on
+  3130.0 -1914.0
+  2992.0 -1948.0
+  2986.0 -2000.0
+  3116.0 -2014.0
+  3130.0 -1914.0
+endline
+
+line rock-border
+  2884.0 -1958.0
+  2950.0 -1972.0
+  2956.0 -1944.0
 endline
 
 line wall -subtype blocks
@@ -225,8 +294,8 @@ endline
 
 line wall
   2344.0 -2084.0
-  2344.0 -2084.0 2356.0 -2036.0 2436.0 -2044.0
-  2516.0 -2052.0 2648.0 -2064.0 2660.0 -2060.0
+  2344.0 -2084.0 2316.0 -2012.0 2396.0 -2020.0
+  2476.0 -2028.0 2648.0 -2064.0 2660.0 -2060.0
   2672.0 -2056.0 2748.0 -2056.0 2764.0 -2044.0
   smooth off
 endline
@@ -278,6 +347,12 @@ point 740.0 -1736.0 station -name 3
 point 608.0 -1720.0 station -name 2
 
 point 316.0 -1872.0 station -name 1
+
+line label -text "Risanke"
+  800.0 -1228.0
+  800.0 -1228.0 2264.0 -1312.0 2944.0 -1520.0
+  smooth off
+endline
 
 endscrap
 
