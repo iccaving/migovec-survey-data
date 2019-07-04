@@ -2,32 +2,32 @@ encoding  utf-8
 survey popotresni
   input "popotresnip.th2"
   
-  map mpopotresnip_1 -projection plan
+  map mpopotresni-p1 -projection plan
     popotresnip_1
   endmap
   
-  map mpopotresnip_2 -projection plan
+  map mpopotresni-p2 -projection plan
     popotresnip_2
   endmap
   
-  map mpopotresnip_3 -projection plan
+  map mpopotresni-p3 -projection plan
     popotresnip_3
   endmap
   
-  map mpopotresnip_4 -projection plan
+  map mpopotresni-p4 -projection plan
     popotresnip_4
   endmap
   
-  map mpopotresnip_5 -projection plan
+  map mpopotresni-p5 -projection plan
     popotresnip_5
   endmap
 
   map mpopotresni-p -projection plan
-    mpopotresnip_2
-    mpopotresnip_1
-    mpopotresnip_5
-    mpopotresnip_3
-    mpopotresnip_4
+    mpopotresni-p2
+    mpopotresni-p1
+    mpopotresni-p5
+    mpopotresni-p3
+    mpopotresni-p4
   endmap
   
   join popotresnip_1 popotresnip_2

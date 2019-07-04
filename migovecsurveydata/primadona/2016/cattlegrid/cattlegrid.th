@@ -2,6 +2,7 @@ encoding  utf-8
 survey cattlegrid
 
   input "cattlegrid.th2"
+  input "cattlegrid-e.th2"
   
   map mcattlegrid-p -projection plan
     mcattlegrid-p1
@@ -17,7 +18,11 @@ survey cattlegrid
   endmap
   
 
-  
+  map mcattlegrid-e -projection extended
+    cattlegrid-e1
+    cattlegrid-e2
+  endmap
+
   centreline
     date 2016.07.22
     explo-date 2016.07.22

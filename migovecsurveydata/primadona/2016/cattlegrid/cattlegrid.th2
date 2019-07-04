@@ -11,13 +11,8 @@ point 227.0 -454.0 station -name "18"
 
 point 205.0 -417.0 station -name "19"
 
-point 219.0 -432.0 station -name "20"
-
-point 211.0 -448.0 station -name "21"
-
-point 231.0 -491.0 station -name "22"
-
-point 285.0 -527.0 station -name "23"
+line wall
+endline
 
 endscrap
 
@@ -33,9 +28,16 @@ point 380.0 -404.0 station -name "3"
 
 point 377.0 -412.0 station -name "2"
 
+line arrow
+  283.5 -593.0
+  270.0 -505.0
+endline
+
+point 283.5 -593.0 remark -text "Accident site" -align br
+
 line label -text "Cattlegrid"
-  161.5 -326.0
-  161.5 -326.0 173.5 -204.5 233.5 -129.0
+  134.0 -320.5
+  134.0 -320.5 129.5 -199.0 204.5 -120.5
   smooth off
 endline
 
@@ -106,6 +108,7 @@ endline
 line wall -subtype invisible
   295.0 -150.0
   295.0 -150.0 260.5 -138.5 249.0 -139.0
+  smooth off
 endline
 
 line wall -close on -reverse on -outline in
@@ -166,6 +169,112 @@ endline
 
 point 183.0 -462.0 map-connection
 
+line wall -close on -reverse on -outline in
+  283.5 -470.5
+  272.5 -465.5
+  272.5 -465.5 264.0 -471.0 264.5 -476.0
+  265.0 -481.0 266.0 -491.5 273.5 -491.5
+  281.0 -491.5 294.0 -482.0 294.0 -479.5
+  294.0 -476.5 283.5 -470.5 283.5 -470.5
+  smooth off
+endline
+
+line rock-border
+endline
+
+line rock-border -close on
+  284.5 -502.5
+  277.0 -508.0
+  281.0 -514.5
+  287.5 -509.5
+  284.5 -502.5
+endline
+
+line rock-border -close on
+  307.0 -475.5
+  294.0 -479.5
+  301.0 -483.0
+  313.0 -478.5
+  307.0 -475.5
+endline
+
+line rock-border -close on
+  301.0 -494.5
+  293.0 -496.0
+  295.0 -505.0
+  305.5 -502.0
+  301.0 -494.5
+endline
+
+line rock-border -close on
+  213.5 -463.5
+  203.5 -459.5
+  201.5 -466.5
+  214.5 -470.5
+  213.5 -463.5
+endline
+
+line rock-border -close on
+  242.0 -446.0
+  231.5 -449.5
+  233.0 -458.5
+  246.5 -452.5
+  242.0 -446.0
+endline
+
+line rock-border -close on
+  258.0 -456.5
+  250.5 -456.5
+  249.5 -463.0
+  255.0 -464.0
+  258.0 -456.5
+endline
+
+line rock-border -close on
+  219.5 -442.0
+  209.5 -442.0
+  209.5 -448.5
+  216.5 -448.5
+  219.5 -442.0
+endline
+
+line rock-border -close on
+  218.5 -475.0
+  206.0 -478.5
+  208.0 -485.0
+  218.0 -485.0
+  218.5 -475.0
+endline
+
+line rock-border -close on
+  239.5 -476.0
+  226.0 -482.0
+  239.0 -491.0
+  241.0 -485.0
+  239.5 -476.0
+endline
+
+line rock-border
+endline
+
+line floor-step
+  266.0 -486.0
+  266.0 -486.0 249.5 -497.0 249.5 -508.5
+  smooth off
+endline
+
+line floor-step -reverse on
+  272.5 -465.5
+  272.5 -465.5 264.5 -456.5 277.0 -446.5
+  smooth off
+endline
+
+line pit
+  381.5 -426.0
+  381.5 -426.0 374.0 -425.5 372.0 -395.5
+  smooth off
+endline
+
 line wall -id s2_l1
   249.0 -139.0
   249.0 -139.0 244.0 -142.0 241.0 -150.0
@@ -189,9 +298,9 @@ line wall -id s2_l1
   354.5 -416.0 371.0 -408.5 364.0 -417.0
   357.0 -425.5 352.5 -430.5 348.5 -438.0
   344.5 -445.5 336.0 -456.0 330.5 -460.0
-  325.0 -464.0 320.0 -473.5 316.5 -467.0
-  313.0 -460.5 299.0 -439.0 279.5 -442.5
-  260.0 -446.0 265.0 -448.0 254.0 -439.0
+  325.0 -464.0 302.0 -468.5 298.5 -462.0
+  295.0 -455.5 291.5 -455.0 283.5 -450.5
+  276.61 -446.63 265.0 -448.0 254.0 -439.0
   243.0 -430.0 234.0 -423.0 229.0 -424.0
   224.0 -425.0 227.5 -419.5 219.5 -417.5
   211.5 -415.5 212.5 -407.5 202.0 -416.0

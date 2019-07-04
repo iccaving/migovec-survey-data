@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -970 723 139.5
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -132.0 -970 723 141.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} popotresnip.gif 0 {}
 
 
@@ -10,6 +10,7 @@ scrap popotresnip_1 -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m]
 line label -text "Popotresni Rov"
   432.0 -253.5
   432.0 -253.5 465.76 -154.74 463.0 -81.0
+  smooth off
 endline
 
 line wall
@@ -191,41 +192,49 @@ endline
 line contour
   419.5 -156.5
   419.5 -156.5 358.5 -148.5 349.0 -165.5
+  smooth off
 endline
 
 line contour
   367.5 -243.0
   367.5 -243.0 357.5 -213.0 347.5 -210.0
+  smooth off
 endline
 
 line contour
   401.0 -201.0
   401.0 -201.0 370.5 -183.5 354.5 -188.0
+  smooth off
 endline
 
 line contour
   282.0 -273.0
   281.5 -271.5 272.5 -207.0 313.5 -190.5
+  smooth off
 endline
 
 line contour
   301.0 -272.0
   301.0 -272.0 312.0 -220.0 325.0 -214.5
+  smooth off
 endline
 
 line contour
   331.5 -261.5
   331.5 -257.5 332.5 -233.5 327.5 -224.5
+  smooth off
 endline
 
 line contour
   403.0 -120.0
   403.0 -120.0 385.5 -101.5 380.0 -94.5
+  smooth off
 endline
 
 line chimney
   403.0 -81.0
   403.0 -81.0 403.5 -89.5 418.0 -91.0
+  smooth off
 endline
 
 line wall
@@ -448,6 +457,7 @@ endline
 line label -text "Sejna Soba"
   36.0 -467.5
   36.0 -467.5 153.5 -549.5 212.5 -587.5
+  smooth off
 endline
 
 area water
@@ -567,16 +577,19 @@ endline
 line floor-step
   142.0 -433.0
   142.0 -433.0 175.5 -431.5 181.5 -430.0
+  smooth off
 endline
 
 line contour
   133.0 -376.0
   133.0 -376.0 163.0 -391.0 175.0 -385.0
+  smooth off
 endline
 
 line contour
   135.0 -399.0
   135.0 -399.0 162.5 -419.0 182.0 -405.0
+  smooth off
 endline
 
 line wall -id s4_l2

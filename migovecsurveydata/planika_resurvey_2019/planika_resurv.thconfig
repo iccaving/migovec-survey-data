@@ -1,0 +1,14 @@
+encoding  utf-8
+source planika.th
+
+input ../_layouts/layout1.th
+
+select mplanika-p@planika
+
+export map -o planika_plan.pdf -projection plan -layout local1
+
+select mplanika-e@planika
+
+export map -o planika_extended.pdf -projection extended -layout local1
+
+#export model -o planika_model.lox

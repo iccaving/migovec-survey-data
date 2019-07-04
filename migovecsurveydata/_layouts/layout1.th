@@ -1,9 +1,9 @@
 layout local1
   language en
-  scale 1 1800
- #colour map-fg #altitude 
+  scale 1 1000
+ colour map-fg altitude 
  colour map-bg [90 90 90]
-  legend on 
+  legend off 
   map-header 105 100 nw
   grid-coords border
   
@@ -196,7 +196,11 @@ layout local1
       thdraw P;
     enddef;
     initsymbol("l_u_openshaft_MY");
-    
+
+    def l_survey_cave_MY (expr P) =
+      T:=identity;
+      draw P withpen PenD withcolor (0.7,0,0);
+    enddef;
 
     initsymbol("p_station_temporary_MY");
     initsymbol("l_wall_blocks_MY");
@@ -224,16 +228,20 @@ layout local1
  symbol-assign line rock-border MY
  symbol-hide line survey 
  #symbol-assign area water MY
- symbol-hide point station
+ #symbol-hide point station
  symbol-assign line pit AUT
  symbol-assign line wall MY
  symbol-assign line contour MY
+ #symbol-assign line survey MY
+ symbol-hide line label
  symbol-assign point station AUT
  symbol-assign point pillar MY
  symbol-assign point stalagmite MY
  symbol-assign point stalactite MY
  symbol-hide point passage-height
  symbol-hide point label 
+
+ fonts-setup 8 10 14 16 20
 
 endlayout
 
@@ -248,4 +256,5 @@ text de "line u:openshaft_MY" "Eingangskessel"
 text en "line u:texture_MY" "bedrock wall"
 text de "line u:texture_MY" "Felsboden"
 text de "line u:flowstone_MY" "flächiger Sinter"
+
 
