@@ -1,13 +1,8 @@
 encoding  utf-8
-###### MAIN MAP #######
-map mplateau-p -projection plan -title "The Migovec System"
-	mm19-p@M19
-	mM17-p3@M17
-	mM17-p1@M17
-	mM17-p2@M17
-	mM17-p4@M17
-	mplanika_jama-p@planika_jama
-
+###### Primadona-Ubend-Monatip #######
+###### Submaps are below #######
+map mprima_ubend_monatip-p -projection plan -title "The Migovec System"
+	
 	mubend2-p@ubend2.s_ubend
 	mubend1-p@ubend.s_ubend
 	mubend3-p@ubend3.s_ubend
@@ -117,7 +112,6 @@ map mplateau-p -projection plan -title "The Migovec System"
 	mmilanova-p@milanova.primadona
 	mchocolate_river-p@chocolate_river.primadona
 
-	mvrtnarija-p@vrtnarija
 endmap
 
 ##### SUB MAPS ######
@@ -156,59 +150,4 @@ map high-monatip -projection plan
 	mtherock-p3@therock.monatip
 endmap
 
-map mM17M19-p -projection plan
-	mm19-p@M19 [35 0 m] none
-	mM17-p@M17
-endmap
-
-#### MAP for ENTRANCE SERIES ####
-
-map mentrance_to_knot-p -projection plan
-	mdrugi-p@drugi.primadona
-	mprima1-p@prima1.primadona
-	mrisanke-p@risanke.primadona
-	mrisa2-p@risa2.primadona
-	mpopotresni-p4@popotresni.primadona
-	#mapple_crumble-p@apple_crumble.primadona
-	#mpov-p@pov.primadona
-	mgalerija-p@galerija.primadona
-
-	mthe_stile-p@the_stile.primadona [50 0 m] below
-	mcattlegrid-p@cattlegrid.primadona [50 0 m] below
-endmap
-
-map mhallelujah-branch-p -projection plan -title "Hallelujah Branch"
-	mhallelujah-p@hallelujah.primadona
-	mfenestrator-p@fenestrator.primadona
-	mplumbers_p-p@plumbers_p.primadona
-	mtestify-p@testify.primadona
-	mcanticle_for_migovec-p@canticle_for_migovec.primadona
-	malabaster-p@alabaster.primadona
-	msweet_baby_jesus-p@sweet_baby_jesus.primadona
-	mupotyn-p@upotyn.primadona
-	mmud_moses-p@mud_moses.primadona
-	mbattery_flattery-p@battery_flattery.primadona
-	mbath-p@bath.primadona
-	mpurgatory-p@purgatory.primadona
-	mholy_moley-p@holy_moley.primadona
-endmap
-
-map mdeep_branch-p -projection plan -title "Klic Globin Branch"
-	msnakebite-p@snakebite.primadona
-	msnakebitetwo-p@snakebitetwo.primadona
-	mave_maria-p@ave_maria.primadona
-	mlost_in_a_dream-p@lost_in_a_dream.primadona
-	mlost_in_a_dream_2-p@lost_in_a_dream_2.primadona
-	mpenny_falls-p@penny_falls.primadona
-	mpenny_falls_2-p@penny_falls_2.primadona
-	mtiger_tiger-p@tiger_tiger.primadona
-	mdeeper_than_most-p@deeper_than_most.primadona	
-	mklic_globin-p@klic_globin.primadona
-	mmoonraker_2-p@moonraker_2.primadona
-	mmoonraker-p@moonraker.primadona
-	mmouseleum-p@mouseleum.primadona
-	mmouseleum_2-p@mouseleum_2.primadona
-	mchocolate_river-p@chocolate_river.primadona
-	mthe_aqueduct-p@the_aqueduct.primadona
-endmap
 
