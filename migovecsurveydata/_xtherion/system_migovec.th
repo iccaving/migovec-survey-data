@@ -1,20 +1,14 @@
 encoding  utf-8
-survey sistem_migovec -title "Caves of the Migovec Plateau"
+survey system_migovec -title "Caves of the Migovec Plateau"
 
-input "maps.th"
+input "prima_ubend_monatip_map.th"
+input "plateau_map.th"
 
-map msystem-p -projection plan
-  mmonatip-p@monatip
-  mprimadona-p@primadona
-  #mubend-p@s_ubend
-endmap
 
 input "../primadona/_xtherion/primadona.th"
 input "../s_ubend/s_ubend.th"
 input "../monatip/_xtherion/s_monatip.th"
 input "../vrtnarija/_xtherion/vrtnarija.th"
-
-
 
 #input "others/gondolin/gondolin.th"
 input "../planika/s_planika.th"
