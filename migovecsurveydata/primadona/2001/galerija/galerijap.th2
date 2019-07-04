@@ -480,6 +480,13 @@ line rock-border -close on
   521.0 -201.5
 endline
 
+point 410.25 -201.0 remark -text "Immobilisation area" -align tl
+
+line arrow
+  413.0 -201.5
+  499.25 -192.25
+endline
+
 line rock-border -close on
   496.5 -195.25
   506.25 -198.75

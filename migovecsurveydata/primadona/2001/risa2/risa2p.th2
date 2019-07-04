@@ -9,7 +9,7 @@ scrap risa2p_1 -scale [326.0 -736.0 520.0 -736.0 0.0 0.0 15 0.0 m]
 
 line label -text "Risanke"
   207.0 -63.0
-  207.0 -63.0 269.0 -161.0 320.0 -307.0
+  207.0 -63.0 284.0 -177.0 335.0 -323.0
   smooth off
 endline
 
@@ -280,6 +280,10 @@ line wall
   279.0 -325.0
   280.5 -313.5
 endline
+
+point 365.0 -502.0 dig -clip off -scale xl
+
+point 237.0 -366.0 dig -clip off -scale xl
 
 line wall
   241.5 -329.5

@@ -5,30 +5,30 @@ encoding  utf-8
      input "prima2_extend.th2"
 
       map mprima2-p -projection plan
-        mprima2p_1
-        mprima2p_2
-        mprima2p_3
-        mprima2p_4
-        mprima2p_5
+        mprima2-p1
+        mprima2-p2
+        mprima2-p3
+        mprima2-p4
+        mprima2-p5
       endmap
      
-      map mprima2p_1 -projection plan
+      map mprima2-p1 -projection plan
         prima2p_1
         endmap
-        map mprima2p_2 -projection plan
+        map mprima2-p2 -projection plan
         prima2p_2
         endmap
-        map mprima2p_3 -projection plan
+        map mprima2-p3 -projection plan
         prima2p_3
         endmap
-        map mprima2p_4 -projection plan
+        map mprima2-p4 -projection plan
         prima2p_4
         endmap
-        map mprima2p_5 -projection plan
+        map mprima2-p5 -projection plan
         prima2p_5
       endmap
       
-      map mprima2e -projection extended
+      map mprima2-e -projection extended
         prima2_1e
       endmap
  

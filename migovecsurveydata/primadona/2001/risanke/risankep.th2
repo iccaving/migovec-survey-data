@@ -118,6 +118,8 @@ line pit
   smooth off
 endline
 
+point 336.5 -268.0 dig -clip off -scale xl
+
 line wall -id s1_l1
   359.0 -402.0
   353.0 -402.0 332.0 -418.0 332.0 -418.0

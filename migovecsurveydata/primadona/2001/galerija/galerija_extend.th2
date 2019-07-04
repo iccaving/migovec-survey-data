@@ -1,11 +1,24 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -4804 3435 141.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -136.0 -4804 3435 144.0
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} galerija_extend.gif 0 {}
 
 
 
-scrap galerija_e1 -projection extended -scale [1382.0 -3962.0 2948.0 -3976.0 0.0 0.0 100 0.0 m]
+scrap galerija-e1 -projection extended -scale [1382.0 -3962.0 2948.0 -3976.0 0.0 0.0 100 0.0 m]
+
+line label -text "Knot Very Good" -scale xl
+  1318.0 -1752.0
+  2036.0 -1764.0
+endline
+
+line label -text "Sejna Soba" -scale xl
+  560.0 -1354.0
+  560.0 -1354.0 717.0 -1363.0 1082.0 -1426.0
+  smooth off
+endline
+
+point 381.0 -1349.0 camp -scale xl
 
 line wall
   663.0 -1434.0
@@ -23,7 +36,7 @@ line wall
   387.0 -1389.0 375.0 -1387.0 371.0 -1387.0
   367.0 -1387.0 313.0 -1385.0 313.0 -1385.0
   smooth off
-  286.0 -1394.0
+  291.0 -1376.0
 endline
 
 line wall
@@ -494,11 +507,12 @@ line wall
   1148.0 -2003.0 1135.0 -1997.0 1135.0 -1997.0
   smooth off
   1135.0 -1997.0 1129.0 -1986.0 1121.0 -1983.0
+  smooth off
 endline
 
 line wall
-  276.0 -1434.0
-  276.0 -1434.0 301.0 -1446.0 304.0 -1448.0
+  291.0 -1458.0
+  291.0 -1458.0 301.0 -1446.0 304.0 -1448.0
   307.0 -1450.0 335.0 -1461.0 339.0 -1460.0
   343.0 -1459.0 359.0 -1447.0 364.0 -1445.0
   369.0 -1443.0 373.0 -1436.0 381.0 -1436.0
@@ -604,6 +618,13 @@ point 2704.0 -2196.0 station -name 7
 point 2832.0 -2198.0 station -name 6
 
 point 2902.0 -2238.0 station -name 5
+
+point 1478.0 -2236.0 remark -align br -text "Immobilisation area"
+
+line arrow
+  1464.0 -2228.0
+  1292.0 -2084.0
+endline
 
 point 2964.0 -2248.0 station -name 4
 
