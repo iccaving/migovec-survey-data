@@ -1,0 +1,18 @@
+layout outline1
+	scale 1 1000
+	#map-header 0 0 nw
+  
+
+  
+  	legend on
+
+  	colour map-fg altitude #[10 10 10]
+    
+  	#colour map-bg [70 70 70]
+  	symbol-hide group all
+  	symbol-show line wall
+    symbol-show point label 
+    fonts-setup 1 2 3 4 5
+  	#symbol-show line survey
+
+endlayout

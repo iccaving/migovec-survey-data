@@ -1,6 +1,14 @@
 encoding  utf-8
 survey s_ubend -title "U-bend 571"
 
+  map ms_ubend-p -projection plan
+    mubend2-p@ubend2
+    mubend1-p@ubend
+    mubend3-p@ubend3
+    mdet-p@det
+    mbathtub-p@bathtub
+  endmap
+
   #The includes
   input "2000/ubend/ubend.th"
   input "2000/ubend2/ubend2.th"

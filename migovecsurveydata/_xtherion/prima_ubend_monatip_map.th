@@ -60,7 +60,7 @@ map mprima_ubend_monatip-p -projection plan -title "The Migovec System"
 	mhammerhead3-p@hammerhead3.primadona
 	mdogfish-p2@dogfish.primadona
 
-	low_hammerhead [-40 0 m] below
+	low_hammerhead [-150 0 m] below
 
 	
 	mzima00-p@zima00.primadona
@@ -112,6 +112,16 @@ map mprima_ubend_monatip-p -projection plan -title "The Migovec System"
 	mmilanova-p@milanova.primadona
 	mchocolate_river-p@chocolate_river.primadona
 
+
+	martemis-p@artemis.primadona
+	mad_aspera_per_aqua-p@ad_aspera_per_aqua.primadona
+	mlachrymosa-p@lachrymosa.primadona
+	mtartarus-p@tartarus.primadona
+	mposeidon_rift-p@poseidon_rift.primadona
+	mstreet-wise_hercules-p@street-wise_hercules.primadona
+	mangel_delight-p@angel_delight.primadona
+	msump_404_lead_not_found-p@sump_404_lead_not_found.primadona
+
 endmap
 
 ##### SUB MAPS ######
@@ -125,6 +135,7 @@ map low_hammerhead -projection plan
 endmap
 
 map cattlegrid-the_stile -projection plan
+	mforget_me_not-p@forget_me_not.primadona
 	mthe_stile-p@the_stile.primadona
 	mcattlegrid-p@cattlegrid.primadona
 	mfenestrator-p@fenestrator.primadona

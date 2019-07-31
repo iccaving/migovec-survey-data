@@ -1,0 +1,8 @@
+source ../_xtherion/primadona.th
+
+input ../../_layouts/map1.th
+input ../../_layouts/map2.th
+
+select mdeep_branch-p@primadona
+
+export map -o ../_outputs/deep_prima_2019.pdf -projection plan -layout map1

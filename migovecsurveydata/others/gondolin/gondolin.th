@@ -2,24 +2,32 @@ encoding  utf-8
 survey gondolin
 
   input "gondolinp.th2"
+
+  map mgondolin-p -projection plan
+    mgondolin-1p
+    mgondolin-2p
+    mgondolin-3p
+    mgondolin-4p
+    mgondolin-5p
+  endmap
   
-  map mgondolinp_1 -projection plan
+  map mgondolin-1p -projection plan
     gondolinp_1
   endmap
   
-  map mgondolinp_2 -projection plan
+  map mgondolin-2p -projection plan
     gondolinp_2
   endmap
   
-  map mgondolinp_3 -projection plan
+  map mgondolin-3p -projection plan
     gondolinp_3
   endmap
   
-  map mgondolinp_4 -projection plan
+  map mgondolin-4p -projection plan
     gondolinp_4
   endmap
   
-  map mgondolinp_5 -projection plan
+  map mgondolin-5p -projection plan
     gondolinp_5
   endmap
   

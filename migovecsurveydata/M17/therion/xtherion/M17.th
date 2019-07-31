@@ -1,6 +1,6 @@
 # 2018.10.23 created by TopoDroid v 4.1.1a
 
-survey M17 -title "M17"
+survey M17 -title "M17 Frigidare"
 
   centerline
     date 2018.10.19 
@@ -246,12 +246,19 @@ survey M17 -title "M17"
    input "M17-3p.th2"
    #input "M17-3s.th2"
 
-   map mM17-p -projection plan -title "M-17 (Frigidare)"
+   map mM17only-p -projection plan -title "M-17 (Frigidare)"
      mM17-p3 [35 0 m] above
      mM17-p1  
      break
      mM17-p2
      mM17-p4 [-20 0 m] below
+   endmap
+
+   map mM17-p -projection plan
+    mM17-p3
+    mM17-p1
+    mM17-p2
+    mM17-p4
    endmap
 
    map mM17-p1

@@ -1,0 +1,148 @@
+encoding  utf-8
+#————————————————————————————————————————————-
+# This contains the maps of Primadona cave   |
+#————————————————————————————————————————————-
+
+###### MAIN MAP #######
+
+map mprimadona_main-p -projection plan
+	mprima_entrance-p
+	mprima_galerija_branch-p
+	mprima_ttt_branch-p
+	mprima_hammerhead_branch-p
+	mprima_upside_down_area-p
+	mprima_hallelujah_branch-p
+	mprima_klic_globin_branch-p
+	mprima_old_slov_route-p
+	mprima_deep-p
+endmap
+
+
+##### SUB MAPS ######
+##### these are snippets of branches in Prima
+map mprima_entrance-p -projection plan -title "Entrance Series"
+	mdrugi-p@drugi
+	mprima1-p@prima1
+	mprima2-p@prima2
+	mrisanke-p@risanke
+	mrisa2-p@risa2
+endmap
+
+map mprima_galerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
+	mgalerija-p@galerija
+	msmer1-p@smer1
+	msmer0-p@smer0
+	mjack_of_hearts-p@jack_of_hearts
+	mquantum_state-p@quantum_state
+	mterminus-p@terminus
+	melectric_dreams-p@electric_dreams
+	mkarstaway-p@karstaway
+	mdysentry-p@dysentry
+	mmore_like_welding-p@more_like_welding
+	mstranglehold-p@stranglehold
+	mmfi-p@mfi
+	mthe_atrium-p@the_atrium
+endmap
+
+map mprima_upside_down_area-p -projection plan -title "Area around Upside Down Chamber"
+	mhotmk-p@hotmk
+	mcolony-p@colony
+	mwac-p@wac
+	mudc-p@udc
+	mtight_and_scrotty-p@tight_and_scrotty
+	mgamblers_ruin-p@gamblers_ruin
+endmap
+
+map mprima_ttt_branch-p -projection plan
+	mapple_crumble-p@apple_crumble
+	mpov-p@pov
+	mttt-p@ttt
+	mbatmere-p@batmere
+endmap
+	
+map mprima_hallelujah_branch-p -projection plan
+	cattlegrid-the_stile [50 0 m] below
+	mplumbers_p-p@plumbers_p
+	mhallelujah-p@hallelujah
+	msweet_baby_jesus-p@sweet_baby_jesus
+	mholy_moley-p@holy_moley
+	malabaster-p@alabaster
+	mpurgatory-p@purgatory
+	mbath-p@bath
+	mcanticle_for_migovec-p@canticle_for_migovec
+	mtestify-p@testify
+	mangel_delight-p@angel_delight
+	msump_404_lead_not_found-p@sump_404_lead_not_found
+endmap
+	
+map mprima_hammerhead_branch-p -projection plan
+	mdejavu-p@dejavu
+	mhammerhead-p@hammerhead
+	mhammerhead2-p@hammerhead2
+	mhammerhead3-p@hammerhead3
+	mdogfish-p2@dogfish
+	low_hammerhead [-40 0 m] below
+endmap
+
+map mprima_old_slov_route-p -projection plan
+	mzima00-p@zima00
+	mTTTr-p@TTTr
+	pivnica [40 0 m] below
+	mpivnica_2_resurvey-p@pivnica_2_resurvey
+	mspodnji-p@spodnji
+	mmilanova-p@milanova
+endmap
+
+map mprima_klic_globin_branch-p -projection plan -title "Klic Globin Branch"
+	mlost_in_a_dream-p@lost_in_a_dream
+	mlost_in_a_dream_2-p@lost_in_a_dream_2
+	mpenny_falls-p@penny_falls
+	mpenny_falls_2-p@penny_falls_2
+	mtiger_tiger-p@tiger_tiger
+	mdeeper_than_most-p@deeper_than_most
+	mmoonraker-p@moonraker
+	mmoonraker_2-p@moonraker_2
+	mklic_globin-p@klic_globin
+	mthe_aqueduct-p@the_aqueduct
+	mad_aspera_per_aqua-p@ad_aspera_per_aqua
+	mmouseleum-p@mouseleum
+	mmouseleum_2-p@mouseleum_2 
+	mchocolate_river-p@chocolate_river 
+endmap
+
+map mprima_deep-p -projection plan
+	martemis-p@artemis
+	mtartarus-p@tartarus
+	mlachrymosa-p@lachrymosa
+	mposeidon_rift-p@poseidon_rift
+	mstreet-wise_hercules-p@street-wise_hercules
+endmap
+
+##### SUB-SUB MAPS ######
+##### These are offset relative to the main map
+
+map pivnica -projection plan
+	mbuckwheat-p@buckwheat
+	msnakebite-p@snakebite
+	msnakebitetwo-p@snakebitetwo
+	mave_maria-p@ave_maria
+	mpivnica_resurvey-p@pivnica_resurvey
+endmap
+
+map low_hammerhead -projection plan
+	mlumos-p@lumos
+	mdogfish-p1@dogfish
+	mdiagonalley-p@diagonalley
+	mhigh_and_dry-p@high_and_dry
+	mdamp_squib-p@damp_squib
+endmap
+
+map cattlegrid-the_stile -projection plan
+	mthe_stile-p@the_stile
+	mcattlegrid-p@cattlegrid
+	mfenestrator-p@fenestrator
+	mbattery_flattery-p@battery_flattery
+	mmud_moses-p@mud_moses
+	mupotyn-p@upotyn
+endmap
+

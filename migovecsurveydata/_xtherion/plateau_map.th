@@ -1,184 +1,20 @@
 encoding  utf-8
-###### MAIN PLATEAU MAP #######
+
+#————————————————————————————————————————————-
+# This contains the main Migovec plateau	 |
+# cave maps, even those not connected to 	 |
+# System Migovec.							 |
+#————————————————————————————————————————————-
+
 map mplateau-p -projection plan -title "The Migovec System"
+	mcave-p@janet_little_cave
+	mrowan_cave-p@rowan_cave
+	mgondolin-p@gondolin
 	mm19-p@M19
-	mM17-p3@M17
-	mM17-p1@M17
-	mM17-p2@M17
-	mM17-p4@M17
-	mplanika_jama-p@planika_jama
-
-	mubend2-p@ubend2.s_ubend
-	mubend1-p@ubend.s_ubend
-	mubend3-p@ubend3.s_ubend
-	mdet-p@det.s_ubend
-	mbathtub-p@bathtub.s_ubend
-
-	mmonatip5-p@monatip5.monatip
-	mdrugi-p@drugi.primadona
-
-	mmonatip1-p@monatip1.monatip
-	mprima1-p@prima1.primadona
-	maleksandrija-p@aleksandrija.monatip
-	mmonatip2-p@monatip2.monatip
-	mmonatip3-p@monatip3.monatip
-	mcloacamaxima-p@cloacamaxima.monatip
-	mwell_hung-p@well_hung.monatip
-
-	high-monatip [-120 0 m] above
-
-	mtherock-p@therock.monatip
-	mtherock-p3@therock.monatip
-	mbroken_hammer-p@broken_hammer.monatip
-	mmonatip4-p@monatip4.monatip
-	malkatraz_disto_resurvey-p2@alkatraz_disto_resurvey.monatip
-	mdoubletime-p@doubletime.monatip
-	mbrez_volje-p@brez_volje.primadona
-	mpopotresni-p@popotresni.primadona
-	mprima2-p@prima2.primadona
-	mrisanke-p@risanke.primadona
-	mrisa2-p@risa2.primadona
-	mapple_crumble-p@apple_crumble.primadona
-	mpov-p@pov.primadona
-	mttt-p@ttt.primadona
-	mmandare_resurvey-p@mandare_low.primadona
-	mbatmere-p@batmere.primadona
-	mgalerija-p@galerija.primadona
-	mcome_up_smiling-p@come_up_smiling.primadona
-	mcome_up_smiling_2-p@come_up_smiling_2.primadona
-	msmer1-p@smer1.primadona
-	msmer0-p@smer0.primadona
-	
-
-	cattlegrid-the_stile [50 0 m] below
-	
-	mjack_of_hearts-p@jack_of_hearts.primadona
-	modessey-p@odessey.primadona
-	mplumbers_p-p@plumbers_p.primadona
-	msweet_baby_jesus-p@sweet_baby_jesus.primadona
-	mhallelujah-p@hallelujah.primadona
-	mquantum_state-p@quantum_state.primadona
-	mterminus-p@terminus.primadona
-	mdejavu-p@dejavu.primadona
-	mhammerhead-p@hammerhead.primadona
-	mhammerhead2-p@hammerhead2.primadona
-	mhammerhead3-p@hammerhead3.primadona
-	mdogfish-p2@dogfish.primadona
-
-	low_hammerhead [-40 0 m] below
-
-	
-	mzima00-p@zima00.primadona
-	mTTTr-p@TTTr.primadona
-	melectric_dreams-p@electric_dreams.primadona
-	mkarstaway-p@karstaway.primadona
-	mdysentry-p@dysentry.primadona
-	mmore_like_welding-p@more_like_welding.primadona
-	mstranglehold-p@stranglehold.primadona
-	mmfi-p@mfi.primadona
-	mthe_atrium-p@the_atrium.primadona
-	mentirely_my_fault-p@entirely_my_fault.primadona
-
-	msweet_baby_jesus-p@sweet_baby_jesus.primadona
-	mholy_moley-p@holy_moley.primadona
-	malabaster-p@alabaster.primadona
-	mpurgatory-p@purgatory.primadona
-	mbath-p@bath.primadona
-	mcanticle_for_migovec-p@canticle_for_migovec.primadona
-	
-	mtestify-p@testify.primadona
-	
-
-	mhotmk-p@hotmk.primadona
-	mcolony-p@colony.primadona
-	mwac-p@wac.primadona
-	mwhat_a_disappointment-p@what_a_disappointment.primadona
-	mudc-p@udc.primadona
-	mtight_and_scrotty-p@tight_and_scrotty.primadona
-	mgamblers_ruin-p@gamblers_ruin.primadona
-
-	pivnica [0 -100 m] below
-
-	mpivnica_2_resurvey-p@pivnica_2_resurvey.primadona
-	mlost_in_a_dream-p@lost_in_a_dream.primadona
-	mave_maria-p@ave_maria.primadona
-	mlost_in_a_dream_2-p@lost_in_a_dream_2.primadona
-	mspodnji-p@spodnji.primadona
-	mpenny_falls-p@penny_falls.primadona
-	mpenny_falls_2-p@penny_falls_2.primadona
-	mtiger_tiger-p@tiger_tiger.primadona
-	mdeeper_than_most-p@deeper_than_most.primadona
-	mmoonraker-p@moonraker.primadona
-	mmoonraker_2-p@moonraker_2.primadona
-	mklic_globin-p@klic_globin.primadona
-	mthe_aqueduct-p@the_aqueduct.primadona
-	mmouseleum-p@mouseleum.primadona
-	mmouseleum_2-p@mouseleum_2.primadona
-	mmilanova-p@milanova.primadona
-	mchocolate_river-p@chocolate_river.primadona
-
+	mM17-p@M17
+	mplanika-p@planika
+	ms_ubend-p@s_ubend
+	mmonatip-p@monatip
+	mprimadona_main-p@primadona
 	mvrtnarija-p@vrtnarija
 endmap
-
-##### SUB MAPS ######
-
-
-map mM17M19-p -projection plan
-	mm19-p@M19 [35 0 m] none
-	mM17-p@M17
-endmap
-
-#### MAP for ENTRANCE SERIES ####
-
-map mentrance_to_knot-p -projection plan
-	mdrugi-p@drugi.primadona
-	mprima1-p@prima1.primadona
-	mrisanke-p@risanke.primadona
-	mrisa2-p@risa2.primadona
-	mpopotresni-p4@popotresni.primadona
-	#mapple_crumble-p@apple_crumble.primadona
-	#mpov-p@pov.primadona
-	mgalerija-p@galerija.primadona
-
-	mthe_stile-p@the_stile.primadona [50 0 m] below
-	mcattlegrid-p@cattlegrid.primadona [50 0 m] below
-endmap
-
-
-#### MAP HALLELUJAH BRANCH ####
-map mhallelujah-branch-p -projection plan -title "Hallelujah Branch"
-	mhallelujah-p@hallelujah.primadona
-	mfenestrator-p@fenestrator.primadona
-	mplumbers_p-p@plumbers_p.primadona
-	mtestify-p@testify.primadona
-	mcanticle_for_migovec-p@canticle_for_migovec.primadona
-	malabaster-p@alabaster.primadona
-	msweet_baby_jesus-p@sweet_baby_jesus.primadona
-	mupotyn-p@upotyn.primadona
-	mmud_moses-p@mud_moses.primadona
-	mbattery_flattery-p@battery_flattery.primadona
-	mbath-p@bath.primadona
-	mpurgatory-p@purgatory.primadona
-	mholy_moley-p@holy_moley.primadona
-endmap
-
-#### MAP DEEP BRANCH #####
-map mdeep_branch-p -projection plan -title "Klic Globin Branch"
-	msnakebite-p@snakebite.primadona
-	msnakebitetwo-p@snakebitetwo.primadona
-	mave_maria-p@ave_maria.primadona
-	mlost_in_a_dream-p@lost_in_a_dream.primadona
-	mlost_in_a_dream_2-p@lost_in_a_dream_2.primadona
-	mpenny_falls-p@penny_falls.primadona
-	mpenny_falls_2-p@penny_falls_2.primadona
-	mtiger_tiger-p@tiger_tiger.primadona
-	mdeeper_than_most-p@deeper_than_most.primadona	
-	mklic_globin-p@klic_globin.primadona
-	mmoonraker_2-p@moonraker_2.primadona
-	mmoonraker-p@moonraker.primadona
-	mmouseleum-p@mouseleum.primadona
-	mmouseleum_2-p@mouseleum_2.primadona
-	mchocolate_river-p@chocolate_river.primadona
-	mthe_aqueduct-p@the_aqueduct.primadona
-endmap
-
