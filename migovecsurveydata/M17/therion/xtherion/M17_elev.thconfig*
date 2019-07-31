@@ -6,8 +6,9 @@ input ../layout/layoutplan_ee.th
 
 select mM17-p@M17
 
-export map -projection extended -o ../outputs/M17_extended.pdf -layout local2 -layout-debug station-names
-export map -projection plan -o ../outputs/M17.pdf -layout local3 -layout-debug station-names
-export map -fmt kml -o ../outputs/M17.kml
+export map -projection extended -o ../outputs/M17_extended.pdf -layout local2 
+
+#export map -projection plan -o ../outputs/M17.pdf -layout local3 -layout-debug station-names
+#export map -fmt kml -o ../outputs/M17.kml
 #export model -o ../outputs/M17.lox
-export map -fmt esri -o ../outputs/M17
+#export map -fmt esri -o ../outputs/M17

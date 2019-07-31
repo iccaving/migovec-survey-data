@@ -1,0 +1,25 @@
+#————————————————————————————————————————————-
+# This contains the maps of Monatip cave      |
+#————————————————————————————————————————————-
+
+  map mmonatip-p -projection plan -title "Monatip"
+    mmonatip_connection-p
+    mmonatip_entrance-p
+    malkatraz_disto_resurvey-p@alkatraz_disto_resurvey [-100 0 m] above
+    mtherock-p@therock [-100 0 m] above
+  endmap
+
+  map mmonatip_entrance-p -projection plan
+    mmonatip1-p@monatip1
+    mmonatip2-p@monatip2
+    maleksandrija-p@aleksandrija
+    mmonatip3-p@monatip3
+    mcloacamaxima-p@cloacamaxima
+    mmonatip4-p@monatip4
+    mbroken_hammer-p@broken_hammer
+    mdoubletime-p@doubletime
+  endmap
+
+  map mmonatip_connection-p -projection plan
+    mmonatip5-p@monatip5
+  endmap

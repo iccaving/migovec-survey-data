@@ -1,19 +1,19 @@
 encoding  utf-8
 survey system_migovec -title "Caves of the Migovec Plateau"
 
-input "prima_ubend_monatip_map.th"
 input "plateau_map.th"
-
 
 input "../primadona/_xtherion/primadona.th"
 input "../s_ubend/s_ubend.th"
 input "../monatip/_xtherion/s_monatip.th"
 input "../vrtnarija/_xtherion/vrtnarija.th"
 
-#input "others/gondolin/gondolin.th"
+input "others/gondolin/gondolin.th"
 input "../planika/s_planika.th"
 input "../M17/therion/xtherion/M17.th
 input "../M19/_xtherion/M19.th"
+input "../others/janet_little_cave/janet_little_cave.th"
+input "../others/rowan_cave/rowan_cave.th"
 
 #ubend prima connection
 equate 5@drainpipe.s_ubend  8@drugi.primadona

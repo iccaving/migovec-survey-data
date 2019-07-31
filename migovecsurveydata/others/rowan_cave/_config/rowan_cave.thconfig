@@ -1,0 +1,7 @@
+source ../rowan_cave.th
+
+input ../_layouts/map100plan.th
+input ../_layouts/map100ee.th
+
+export map -o ../_outputs/rowan_cave_plan.pdf -projection plan -layout map100plan -layout-debug station-names
+export map -o ../_outputs/rowan_cave_plan_ee.pdf -projection extended -layout map100ee -layout-debug station-names

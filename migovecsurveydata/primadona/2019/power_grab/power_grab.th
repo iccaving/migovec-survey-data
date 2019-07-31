@@ -1,0 +1,31 @@
+# 2019.07.20 created by Tanguy Racine
+
+survey power_grab -title "Power Grab"
+
+  centerline
+    date 2019.07.20 
+	explo-date 2019.07.20
+	
+    team "David Wilson" notes tape
+	team "Christopher Bradley" insts
+	explo-team "David Wilson"
+	explo-team "Christopher Bradley"
+	
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    
+	2	3	4.90	-	up
+	3	1	1.25	115	0
+	1	4	3.10	041	+6
+	5	4	1.70	328	-3
+	5	6	2.66	010	+17
+	6	7	9.00	082	+8
+	7	8	3.43	026	+44
+	8	9	6.52	057	-14
+	9	10	7.22	351	+36
+	10	11	3.56	253	+31
+	
+  endcenterline
+
+endsurvey
