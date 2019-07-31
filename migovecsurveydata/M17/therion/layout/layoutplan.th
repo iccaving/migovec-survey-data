@@ -219,9 +219,9 @@ layout local2
  symbol-assign area ice MY
  symbol-assign area snow MY
  symbol-assign line rock-border MY
- #symbol-hide line survey 
+ symbol-hide line survey 
  #symbol-assign area water MY
- #symbol-hide point station
+ symbol-hide point station
  symbol-assign line pit AUT
  symbol-assign line wall MY
  symbol-assign line contour MY

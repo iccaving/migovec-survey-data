@@ -1,6 +1,6 @@
 layout atlas1
   language en
-  scale 1 1800
+  scale 1 500
  #colour map-fg #altitude 
  colour map-bg [90 90 90]
   legend on 
@@ -231,6 +231,7 @@ layout atlas1
  symbol-hide point label
  symbol-hide point remark
  symbol-hide line survey
+ symbol-hide line arrow
 
 endlayout
 

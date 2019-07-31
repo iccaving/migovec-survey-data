@@ -1,25 +1,13 @@
 encoding  utf-8
 survey monatip
-  map mmonatip-p -projection plan
-    m../2007
-    m../2008
-  endmap
+
+input monatip_map.th
 
   ######________________2007________________######
-  map m../2007 -projection plan
-    mmonatip1-p@monatip1
-  endmap
+
   input "../2007/monatip1/monatip1.th"
   
   ######________________2008________________######
-  map m../2008 -projection plan
-    mmonatip2-p@monatip2
-    mmonatip3-p@monatip3
-    mmonatip4-p@monatip4
-    mbroken_hammer-p@broken_hammer
-    mdoubletime-p@doubletime
-    #malkatraz-p@alkatraz
-  endmap
 
   input "../2008/monatip2/monatip2.th"
   input "../2008/monatip3/monatip3.th"
@@ -41,10 +29,8 @@ survey monatip
  
  #Line joins
   join s2_l2@monatip4:0 s2_l2@broken_hammer:0
-  join s2_l1@monatip4:end s2_l1@broken_hammer:end
-  
+  join s2_l1@monatip4:end s2_l1@broken_hammer:end 
   join alkatraz_disto_resurvey-2p@alkatraz_disto_resurvey monatip4p_5@monatip4
- 
   join s5_l1@monatip4:end s1_l1@doubletime:0
   join s5_l2@monatip4:0 s1_l2@doubletime:end
 

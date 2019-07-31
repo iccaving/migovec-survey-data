@@ -1,14 +1,7 @@
 encoding  utf-8
 survey primadona -title "Primadona"
 
-
-
-map mprimadona-p -projection plan
-  m../2018-p
-  m../2017-p
-  m../2016-p
-  m2000-p
-endmap
+input primadona_map.th
 
 ###______________ 2000______________###
 map m2000-p -projection plan -title "Year 2000"
@@ -17,6 +10,7 @@ map m2000-p -projection plan -title "Year 2000"
     mprima1-p@prima1
     mprima2-p@prima2
 endmap
+
     input ../2000/prima2/prima2.th
     input ../2000/prima1/prima1.th
     input ../2000/ttt/ttt.th
@@ -108,7 +102,7 @@ endmap
      equate 30@smer0 1@smer1
      
 ###______________ ../2016_____________ ###
-    map m../2016-p -projection plan -title "Year ../2016"
+    map m2016-p -projection plan -title "Year ../2016"
         mcattlegrid-p@cattlegrid
         mcolony-p@colony
         mdejavu-p@dejavu
@@ -191,7 +185,7 @@ endmap
      
      
 ###______________ ../2017_____________ ###
-     map m../2017-p -projection plan -title "Year ../2017"
+     map m2017-p -projection plan -title "Year ../2017"
         malabaster-p@alabaster
         mapple_crumble-p@apple_crumble
         mbatmere-p@batmere
@@ -305,7 +299,7 @@ endmap
 ###______________ ../2018_____________ ###
 
 
-  map m../2018-p -projection plan -title "Year ../2018"
+  map m2018-p -projection plan -title "Year ../2018"
     mbath-p@bath
     mcanticle_for_migovec-p@canticle_for_migovec
     mchocolate_river-p@chocolate_river
@@ -404,7 +398,7 @@ endmap
      
 ### alabaster branch ###
   #inputs
-        input "../2018/mud_moses/mud_moses.th"
+    input "../2018/mud_moses/mud_moses.th"
      input "../2018/purgatory/purgatory.th"
      input "../2018/bath/bath.th"
      input "../2018/holy_moley/holy_moley.th"
@@ -469,6 +463,41 @@ endmap
       equate 8@come_up_smiling 23@cattlegrid
 
 
+###______________ 2019_____________ ###
+     # inputs
+     input ../2019/ad_aspera_per_aqua/ad_aspera_per_aqua.th
+     input ../2019/artemis/artemis.th
+     #input ../2019/power_grab/power_grab.th
+     input ../2019/tartarus/tartarus.th
+     input ../2019/poseidon_rift/poseidon_rift.th
+     input ../2019/lachrymosa/lachrymosa.th
+     input ../2019/belladonna/belladonna.th
+     input ../2019/forget_me_not/forget_me_not.th
+     input ../2019/street-wise_hercules/street-wise_hercules.th
+     input ../2019/angel_delight/angel_delight.th
+     input ../2019/sump_404_lead_not_found/sump_404_lead_not_found.th
+     
+     # equates
+     equate 10@ad_aspera_per_aqua 0@the_aqueduct
+     equate 15@artemis 0@klic_globin
+     equate 13@tartarus 7@artemis
+     equate 18@poseidon_rift 0@artemis
+     equate 14@lachrymosa 7@artemis
+     equate shit@belladonna 35@prima1
+     equate 10@forget_me_not 10@the_stile
+     equate 21@cattlegrid 0@forget_me_not
+     equate 11@street-wise_hercules 10@poseidon_rift
+     equate 13@angel_delight 1@testify
+     equate 7@sump_404_lead_not_found 0@angel_delight
+
+     
+     # joins
+     join the_aqueduct-p2@the_aqueduct ad_aspera_per_aqua-1p@ad_aspera_per_aqua
+     join klic_globin-p1@klic_globin artemis-2p@artemis
+     join artemis-1p@artemis tartarus-1p@tartarus
+     join artemis-3p@artemis poseidon_rift-3p@poseidon_rift
+     join lachrymosa-1p@lachrymosa artemis-1p@artemis
+    
 
 
 endsurvey
