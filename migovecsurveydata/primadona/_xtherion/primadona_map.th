@@ -24,6 +24,8 @@ map mprima_entrance-p -projection plan -title "Entrance Series"
 	mdrugi-p@drugi
 	mprima1-p@prima1
 	mprima2-p@prima2
+	mbrez_volje-p@brez_volje
+	mpopotresni-p@popotresni
 	mrisanke-p@risanke
 	mrisa2-p@risa2
 endmap
@@ -35,6 +37,7 @@ map mprima_galerija_branch-p -projection plan -title "Galerija and Smer0 Branche
 	mjack_of_hearts-p@jack_of_hearts
 	mquantum_state-p@quantum_state
 	mterminus-p@terminus
+	modessey-p@odessey
 	melectric_dreams-p@electric_dreams
 	mkarstaway-p@karstaway
 	mdysentry-p@dysentry
@@ -48,6 +51,7 @@ map mprima_upside_down_area-p -projection plan -title "Area around Upside Down C
 	mhotmk-p@hotmk
 	mcolony-p@colony
 	mwac-p@wac
+	mwhat_a_disappointment-p@what_a_disappointment
 	mudc-p@udc
 	mtight_and_scrotty-p@tight_and_scrotty
 	mgamblers_ruin-p@gamblers_ruin
@@ -81,13 +85,13 @@ map mprima_hammerhead_branch-p -projection plan
 	mhammerhead2-p@hammerhead2
 	mhammerhead3-p@hammerhead3
 	mdogfish-p2@dogfish
-	low_hammerhead [-40 0 m] below
+	low_hammerhead [-150 0 m] below
 endmap
 
 map mprima_old_slov_route-p -projection plan
 	mzima00-p@zima00
 	mTTTr-p@TTTr
-	pivnica [40 0 m] below
+	pivnica [0 -100 m] below
 	mpivnica_2_resurvey-p@pivnica_2_resurvey
 	mspodnji-p@spodnji
 	mmilanova-p@milanova
@@ -138,6 +142,7 @@ map low_hammerhead -projection plan
 endmap
 
 map cattlegrid-the_stile -projection plan
+	mforget_me_not-p@forget_me_not
 	mthe_stile-p@the_stile
 	mcattlegrid-p@cattlegrid
 	mfenestrator-p@fenestrator
