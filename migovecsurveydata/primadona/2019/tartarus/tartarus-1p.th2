@@ -112,6 +112,7 @@ endline
 line wall -subtype invisible
   221.6 -99.33
   221.6 -99.33 131.88 -118.48 137.94 -117.24
+  smooth off
 endline
 
 line wall -outline in
@@ -489,6 +490,11 @@ line wall
   320.7 -372.16 321.69 -370.96 322.78 -369.88
   323.57 -369.08 324.42 -368.34 323.5 -371.0
   smooth off
+endline
+
+line label -text "Tartarus"
+  393.0 -1113.0
+  393.0 -1113.0 431.43 -807.08 416.0 -505.0
 endline
 
 line wall
