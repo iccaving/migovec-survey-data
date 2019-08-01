@@ -358,8 +358,8 @@ line wall
 endline
 
 line label -text "Sandy crawl"
-  396.0 405.5
-  396.0 405.5 439.5 440.5 480.25 459.25
+  390.75 407.0
+  390.75 407.0 425.5 445.25 466.25 464.0
 endline
 
 point 414.0 386.25 sand
@@ -711,6 +711,14 @@ line wall
   smooth off
 endline
 
+line label -text "The Easy Way"
+endline
+
+line label -text "The Easy Way"
+  607.0 656.25
+  607.0 656.25 677.75 656.0 721.0 637.5
+endline
+
 line wall
   566.25 552.0
   566.25 552.0 567.25 553.25 568.25 553.0
@@ -864,6 +872,11 @@ endscrap
 scrap testify-p6 -scale [0.0 0.0 1024.0 883.534821214303 0.0 0.0 208.35 179.77]
 
 point 778.2596592272619 606.3397168226542 station -name 67
+
+line label -text "The Hard Way"
+  664.0 533.5
+  664.0 533.5 715.0 526.0 763.0 538.5
+endline
 
 line wall
   676.0 563.75

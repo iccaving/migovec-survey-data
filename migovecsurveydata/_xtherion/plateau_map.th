@@ -18,3 +18,21 @@ map mplateau-p -projection plan -title "The Migovec System"
 	mprimadona_main-p@primadona
 	mvrtnarija-p@vrtnarija
 endmap
+
+map mprima_monatip-p -projection plan -title "Primadona to Monatip"
+	mmonatip_connection-p@monatip
+	mmonatip_entrance-p@monatip
+    malkatraz_disto_resurvey-p@alkatraz_disto_resurvey.monatip
+    mtherock-p@therock.monatip
+    mprima_entrance-p@primadona
+endmap
+
+map mprima_deep_branch-p -projection plan -title "Klic Globin branch (2019)"
+	mbuckwheat-p@buckwheat.primadona
+	mpivnica_resurvey-p@pivnica_resurvey.primadona
+	mpivnica_2_resurvey-p@pivnica_2_resurvey.primadona
+	mprima_klic_globin_branch-p@primadona
+	mspodnji-p@spodnji.primadona
+	mmilanova-p@milanova.primadona
+	mprima_deep-p@primadona
+endmap

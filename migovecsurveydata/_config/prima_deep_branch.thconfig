@@ -1,0 +1,7 @@
+source ../_xtherion/system_migovec.th
+
+input ../_layouts/map1.th
+
+select mprima_deep_branch-p@system_migovec
+
+export map -o ../_outputs/map/prima_deep_m.pdf -projection plan -layout map1

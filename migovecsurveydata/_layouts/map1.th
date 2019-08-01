@@ -5,6 +5,7 @@ layout map1
  colour map-bg [90 90 90]
   #legend on 
   grid-coords border
+  map-header 70 0 sw
   
   #Contains the user:defined symbols used in the obir survey map
   code metapost 
