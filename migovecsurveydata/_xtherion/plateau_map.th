@@ -36,3 +36,9 @@ map mprima_deep_branch-p -projection plan -title "Klic Globin branch (2019)"
 	mmilanova-p@milanova.primadona
 	mprima_deep-p@primadona
 endmap
+
+map mprimadona_ubend_monatip-p -projection plan
+	ms_ubend-p@s_ubend
+	mmonatip-p@monatip
+	mprimadona_main-p@primadona
+endmap
