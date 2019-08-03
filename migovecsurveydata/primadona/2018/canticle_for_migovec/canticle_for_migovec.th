@@ -15,16 +15,27 @@ survey canticle_for_migovec
 		canticle_for_migovec-p3
 	endmap
 
+	map mcanticle_for_migovec-p4 -projection plan
+		canticle_for_migovec-p4
+	endmap
+
 	map mcanticle_for_migovec-p -projection plan
 		mcanticle_for_migovec-p1
 		mcanticle_for_migovec-p2
+		mcanticle_for_migovec-p4
 		mcanticle_for_migovec-p3
 	endmap
 
 	centreline
+		date "2018.07.28"
+		explo-date "2018.07.28"
+		
 		team "Rhys Tyers" insts
 		team "Clare Tan" notes
-		date "2018.07.28"
+		
+
+		explo-team "Rhys Tyers" 
+		explo-team "Clare Tan" 
 
 		#Data on 1 page (Disto)
 
