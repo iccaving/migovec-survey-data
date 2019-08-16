@@ -4,7 +4,7 @@ survey angel_delight -title "angel_delight"
     # end of canticle for mig branch 
 
    input "angel_delight-1p.th2"
-  # input "angel_delight-1s.th2"
+   input "angel_delight-1s.th2"
    input "angel_delight-2p.th2"
   ## input "angel_delight-2s.th2"
 
@@ -13,13 +13,17 @@ survey angel_delight -title "angel_delight"
 	m1p
 	m2p
   endmap
+
+  map mangel_delight-e -projection extended
+    m1s
+  endmap
   
    map m1p -projection plan
      angel_delight-1p
    endmap
-  # map m1s -projection extended
-  #   angel_delight-1s
-  # endmap
+   map m1s -projection extended
+     angel_delight-1s
+   endmap
    map m2p -projection plan
      angel_delight-2p
    endmap

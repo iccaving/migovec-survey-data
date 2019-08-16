@@ -548,7 +548,7 @@ survey bath -title "Bath"
   endcenterline
 
    input "bath-1p.th2"
-  ## input "bath-1s.th2"
+   input "bath-1s.th2"
 
    map m1p -projection plan
      bath-1p
@@ -571,9 +571,13 @@ survey bath -title "Bath"
    join s1_l1:end s3_l1:0
    join s1_l2:end s3_l2:0
    join bath-2p bath-3p
-  ## map m1s -projection extended
-  ##   bath-1s
-  ## endmap
+   map m1s -projection extended
+    bath-1s
+   endmap
+
+   map mbath-e -projection extended
+    m1s
+   endmap
 
 endsurvey
 
