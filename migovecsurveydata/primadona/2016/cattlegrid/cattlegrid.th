@@ -33,9 +33,13 @@ survey cattlegrid
     
     
 #Page 1/2
+extend left
 1	2	9.40	096	+65
+extend right
 2	3	0.92	330	+35
+extend left
 3	4	2.17	256	+20
+extend left
 4	5	6.07	327	-22
 5	6	4.95	032	-29
 6	7	2.73	351	-07
@@ -48,13 +52,16 @@ survey cattlegrid
 #Page 2/2
 13	14	1.95	078	+17
 14	15	5.34	001	+16
+extend right
 3	16	6.66	217	+27
 16	17	5.29	249	-02
 17	18	3.58	325	+15
 18	19	3.82	328	+32
 19	20	3.10	142	+64
 20	21	2.63	200	+63
+extend right
 21	22	4.85	155	+48
+extend right
 22	23	4.53	124	+08
 
     

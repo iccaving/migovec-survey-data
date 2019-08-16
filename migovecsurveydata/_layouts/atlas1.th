@@ -219,7 +219,7 @@ layout atlas1
  symbol-assign area ice MY
  symbol-assign area snow MY
  symbol-assign line rock-border MY
- symbol-hide point station
+ #symbol-hide point station
  symbol-assign line pit AUT
  symbol-assign line wall MY
  symbol-assign line contour MY
@@ -230,7 +230,7 @@ layout atlas1
  symbol-hide point passage-height
  symbol-hide point label
  symbol-hide point remark
- symbol-hide line survey
+ symbol-assign line survey MY
  symbol-hide line arrow
 
 endlayout

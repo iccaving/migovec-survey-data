@@ -10,12 +10,16 @@ survey forget_me_not -title "forget_me_not"
 	m1p
   endmap
   
+  map mforget_me_not-e -projection extended
+    m1s
+  endmap
+
   map m1p -projection plan
      forget_me_not-1p
    endmap
-  # map m1s -projection extended
-  #   forget_me_not-1s
-  # endmap
+   map m1s -projection extended
+     forget_me_not-1s
+   endmap
 
   centerline
     explo-date 2019.07.20
@@ -44,7 +48,7 @@ survey forget_me_not -title "forget_me_not"
     0 . 5.36 228.1 29.1
     0 . 2.93 217.5 33.8
     0 . 6.58 248.9 48.1
-    extend right
+    extend left
     0 1 4.28 83.1 5.9
     # extend auto
     1 . 1.55 84.1 51.8
@@ -79,7 +83,7 @@ survey forget_me_not -title "forget_me_not"
     2 . 1.97 146.4 -9.0
     2 . 2.27 149.0 7.6
     2 . 4.24 16.1 -6.2
-    extend right
+    extend left
     2 3 4.09 15.7 -4.7
     # extend auto
     3 . 1.80 149.6 87.4
@@ -144,7 +148,7 @@ survey forget_me_not -title "forget_me_not"
     5 . 1.04 176.7 41.9
     5 . 1.13 180.9 27.6
     5 . 1.58 152.4 -4.4
-    extend right
+    extend left
     5 6 2.70 45.7 1.1
     # extend auto
     6 . 1.36 266.5 -38.1
@@ -186,7 +190,7 @@ survey forget_me_not -title "forget_me_not"
     7 . 1.78 169.5 -7.0
     7 . 2.67 176.1 -9.4
     7 . 1.76 200.8 -28.7
-    extend right
+    extend left
     7 8 1.71 46.3 -4.4
     # extend auto
     8 . 1.80 219.1 -4.6
@@ -210,7 +214,7 @@ survey forget_me_not -title "forget_me_not"
     8 . 3.82 54.8 -14.0
     8 . 3.49 55.8 -16.1
     8 . 2.32 65.3 1.0
-    extend right
+    extend left
     8 9 2.22 62.4 1.1
     # extend auto
     9 . 0.84 316.0 7.2
@@ -227,7 +231,7 @@ survey forget_me_not -title "forget_me_not"
     9 . 1.75 244.2 -19.1
     9 . 2.36 239.5 -24.9
     9 . 0.99 263.4 -60.5
-    extend right
+    extend left
     9 10 3.43 50.2 15.7
   endcenterline
 

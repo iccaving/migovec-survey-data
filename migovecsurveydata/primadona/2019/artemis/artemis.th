@@ -202,12 +202,16 @@ survey artemis -title "Artemis"
   endcenterline
 
   input "artemis-1p.th2"
-  # input "artemis-1s.th2"
+  input "artemis-1s.th2"
 
 map martemis-p -projection plan
 	m2p
     m1p
     m3p
+endmap
+
+map martemis-e -projection extended
+    m1s
 endmap
 
 join artemis-1p artemis-2p
@@ -225,8 +229,8 @@ join artemis-3p artemis-2p
     artemis-3p
   endmap
 
-  # map m1s -projection extended
-  #   artemis-1s
-  # endmap
+   map m1s -projection extended
+     artemis-1s
+   endmap
 
 endsurvey

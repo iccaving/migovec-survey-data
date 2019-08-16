@@ -1,0 +1,10 @@
+encoding  utf-8
+source ../_xtherion/system_migovec.th
+
+input ../_layouts/atlas1.th
+input ../_layouts/map1.th
+
+select mprimadona_ubend_monatip-e@system_migovec
+
+#export atlas -o ../_outputs/atlas/prima_ubend_mona_a.pdf -projection plan -layout atlas1
+export map -o ../_outputs/map/prima_ubend_mona_ee.pdf -projection extended -layout atlas1

@@ -4,7 +4,7 @@ survey sump_404_lead_not_found -title "sump_404_lead_not_found"
     # small sump off main passage belowTestify 
 
    input "sump_404_lead_not_found-1p.th2"
-  # input "sump_404_lead_not_found-1s.th2"
+   input "sump_404_lead_not_found-1s.th2"
    input "sump_404_lead_not_found-sumpp.th2"
   ## input "sump_404_lead_not_found-sumps.th2"
    input "sump_404_lead_not_found-crawlp.th2"
@@ -16,6 +16,10 @@ survey sump_404_lead_not_found -title "sump_404_lead_not_found"
 		mcrawlp
    endmap
 
+   map msump_404_lead_not_found-e -projection extended
+        m1s
+   endmap
+
    join sump_l1 s1_l1
    join sump_l2 s1_l2
 
@@ -24,9 +28,9 @@ survey sump_404_lead_not_found -title "sump_404_lead_not_found"
    map m1p -projection plan
      sump_404_lead_not_found-1p
    endmap
-  # map m1s -projection extended
-  #   sump_404_lead_not_found-1s
-  # endmap
+   map m1s -projection extended
+     sump_404_lead_not_found-1s
+   endmap
    map msumpp -projection plan
      sump_404_lead_not_found-sumpp
    endmap

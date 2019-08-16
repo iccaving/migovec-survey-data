@@ -29,9 +29,13 @@ survey poseidon_rift -title "Poseidon_Rift"
      poseidon_rift-4p
    endmap
 
-  # map m1s -projection extended
-  #   poseidon_rift-1s
-  # endmap
+   map m1s -projection extended
+     poseidon_rift-1s
+   endmap
+
+   map mposeidon_rift-e -projection extended
+    m1s
+   endmap
 
   centerline
 	explo-date 2019.07.17

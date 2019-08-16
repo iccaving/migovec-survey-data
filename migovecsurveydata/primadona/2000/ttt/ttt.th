@@ -5,8 +5,9 @@ survey ttt -title "Primadona mandare junction and TTT branch to TTT pitch"
   input "ttt-p.th2"
   input "ttt_extend.th2"
      
-     map mttte -projection extended
-      ttt_1e
+     map mttt-e -projection extended
+      ttt-e1
+      ttt-e2
      endmap
      
      map mttt-p -projection plan
@@ -35,6 +36,7 @@ survey ttt -title "Primadona mandare junction and TTT branch to TTT pitch"
       # declination 0.00 degrees
     units length meters
     units compass clino degrees
+extend left
 1  2  41.5  -  up  #stn 1 cairn at bottom of rope (Pitch 'TTT')
 2  3  12.8  052  50  #stn 2 bolt at top of 'TTT'pitch (p13)
 3  4  8.6  050  0  #stn 3 bolt at top of pitch 12
@@ -48,8 +50,10 @@ survey ttt -title "Primadona mandare junction and TTT branch to TTT pitch"
 11  12  8.5  046  25
 12  13  11  046  10
 13  14  4.5  039  20
+extend hide
 14  15  9.7  310  15  #stn 14 middle of passage, breeze from east to west
 15  16  12.8  330  -13
+extend left
 16  17  10.4  000  20  #stn 16 middle of 'mangiare' chamber
 
 17  18  3.5  050  24

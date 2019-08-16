@@ -8,12 +8,19 @@ survey lachrymosa -title "Lachrymosa"
 	map mlachrymosa-p -projection plan
 		m1p
 	endmap
+  
+    map mlachrymosa-e -projection extended
+        m1s
+    endmap
+
    map m1p -projection plan
      lachrymosa-1p
    endmap
-  # map m1s -projection extended
-  #   lachrymosa-1s
-  # endmap
+  
+
+   map m1s -projection extended
+     lachrymosa-1s
+   endmap
 
   centerline
     explo-date 2019.07.17
