@@ -3,7 +3,7 @@ survey zima00
      input "zima00-p.th2"
      input "zima00_extend.th2"
      
-     map mzima00e -projection extended
+     map mzima00-e -projection extended
       zima00_1e
      endmap
 
@@ -36,7 +36,7 @@ survey zima00
     units length meters
     units compass clino degrees
     data normal from to length compass clino
-    
+    extend left
     1  2  12.6  0   90  #1. tocka je mozicek na koncu strika
 2  3  13  307  60  
 3  4  24  0  90
@@ -45,14 +45,15 @@ survey zima00
 6  7  19.5  035  70
 7  8  10.6  100  5
 8  9  5.3  035  35
+extend left
 9  10  22  015  55
-
+extend left
 10  11  18.8  0  90  #10. tocka fix nad njim odcep "drek"
 11  12  9  300  40
 
 12  13  22  0  90
 13  14  5.4  075  0
-  
+extend left  
 14  15  6.8  040  0  
 15  16  6.2  322  28
 16  17  13  005  5  

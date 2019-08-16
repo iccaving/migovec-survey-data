@@ -1,0 +1,10 @@
+encoding  utf-8
+source ../primadona/_xtherion/primadona.th
+
+input ../_layouts/atlas1.th
+input ../_layouts/map1.th
+
+select mprimadona_main-e@primadona
+
+#export atlas -o ../_outputs/atlas/prima_ubend_mona_a.pdf -projection plan -layout atlas1
+export map -o ../_outputs/map/prima_ee.pdf -projection extended -layout atlas1 -layout-debug station-names
