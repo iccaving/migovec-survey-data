@@ -475,6 +475,9 @@ endmap
      input ../2019/street-wise_hercules/street-wise_hercules.th
      input ../2019/angel_delight/angel_delight.th
      input ../2019/sump_404_lead_not_found/sump_404_lead_not_found.th
+     input ../2019/octarine/octarine.th
+     input ../2019/death_star/death_star.th
+     input ../2019/octarine_core/octarine_core.th
      
      # equates
      equate 10@ad_aspera_per_aqua 0@the_aqueduct
@@ -488,6 +491,11 @@ endmap
      equate 11@street-wise_hercules 10@poseidon_rift
      equate 13@angel_delight 1@testify
      equate 7@sump_404_lead_not_found 0@angel_delight
+     equate 53@death_star 13@octarine_core
+     equate 15@octarine_core 14@bath
+     equate 0@octarine_core 0@octarine
+     equate 38a@death_star 36@canticle_for_migovec
+     equate 11@octarine 7@purgatory
 
      
      # joins
@@ -498,6 +506,9 @@ endmap
      join lachrymosa-1p@lachrymosa artemis-1p@artemis
      join s1_l1@forget_me_not s1_l5@the_stile
      join s1_l2@forget_me_not s1_l6@the_stile
+     join s2_l2@bath s1_l2@octarine_core
+     join s2_l1@bath s1_l1@octarine_core
+     join death_star-2p@death_star octarine_core-1p@octarine_core
 
 
 endsurvey
