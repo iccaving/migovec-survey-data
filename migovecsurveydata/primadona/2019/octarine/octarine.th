@@ -1,0 +1,34 @@
+# 2019.08.02 created by Rhys Tyers
+
+survey octarine -title "Octarine"
+
+  centerline
+    date 2019.07.23
+	explo-date 2019.07.23
+	
+    team "Jennifer Ryder" notes
+	team "Arun Paul" tape
+	team "Jack Halliday" insts
+    explo-team "Jennifer Ryder"
+	explo-team "Arun Paul"
+	explo-team "Jack Halliday"
+	
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+	
+	0	1	5.40	271	+05
+    1	2	10.36	-	UP
+    2	3	2.15	330	+33
+    3	4	2.40	001	+14
+    4	5	6.63	328	+01
+    5	6	2.84	037	-02
+    6	7	5.03	104	+00
+    7	8	3.63	109	+10
+    8	9	4.13	015	-05
+    9	10	4.25	-	UP
+    10	11	3.54	056	+04
+	
+  endcenterline
+
+endsurvey
