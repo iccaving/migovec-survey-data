@@ -1,0 +1,9 @@
+encoding  utf-8
+source ../xtherion/M17.th
+
+input ../layout/map1.th
+
+select mM17-p@M17
+
+export map -projection extended -o ../outputs/M17_extended.pdf -layout map1
+

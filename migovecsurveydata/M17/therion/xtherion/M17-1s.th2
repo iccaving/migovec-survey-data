@@ -1134,11 +1134,13 @@ line wall -outline none -subtype presumed
   2106.0 4004.0 2268.0 3990.0 2326.0 3990.0
   2384.0 3990.0 2450.0 3972.0 2450.0 3944.0
   2450.0 3916.0 2476.0 3776.0 2504.0 3756.0
+  smooth off
 endline
 
 line wall -outline none -subtype presumed
   544.0 2088.0
   544.0 2088.0 1116.0 2406.0 1288.0 2604.0
+  smooth off
 endline
 
 line wall -outline none -subtype presumed
@@ -1153,6 +1155,7 @@ line wall -outline none -subtype presumed
   -2354.0 3078.0 -2284.0 2934.0 -2232.0 2874.0
   -2180.0 2814.0 -2076.0 2700.0 -2060.0 2692.0
   -2044.0 2684.0 -1338.0 2106.0 -1064.0 1976.0
+  smooth off
 endline
 
 line border -id l126--1660-2240 -close on
@@ -1389,12 +1392,12 @@ line wall -reverse on
   60.31 -230.53
 endline
 
-line wall -subtype presumed
+line wall -subtype invisible
   -956.0 1626.0
   -908.67 1649.33 -691.48 1706.38 -640.0 1718.0
-  -394.22 1773.5 -205.74 1726.78 2.0 1604.0
-  117.62 1535.66 261.46 1407.87 236.0 1276.0
-  181.73 994.91 310.0 888.0 204.0 640.0
+  -394.22 1773.5 152.26 1738.78 360.0 1616.0
+  475.62 1547.66 469.46 1527.87 444.0 1396.0
+  389.73 1114.91 310.0 888.0 204.0 640.0
   smooth off
 endline
 
@@ -1562,7 +1565,7 @@ point 955.0 -360.0 station-name -text 8
 
 point 1002.0 -493.0 station-name -text 7
 
-line border -id l108--924-1992
+line wall -id l108--924-1992 -subtype ice -outline none
   1068.0 -1058.0
   1014.0 -904.0
   1014.0 -904.0 1153.0 -267.0 1153.0 -203.0

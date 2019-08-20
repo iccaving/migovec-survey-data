@@ -1,11 +1,13 @@
-layout map2
+layout map1
   language en
-  scale 1 500
- colour map-fg altitude
+  scale 1 300
+ #colour map-fg #altitude 
  colour map-bg [90 90 90]
   legend on 
-  map-header 105 100 nw
+  map-header 115 100 nw
   grid-coords border
+  #grid bottom
+  #grid-size 10 10 20 m
   
   #Contains the user:defined symbols used in the obir survey map
   code metapost 
@@ -70,7 +72,7 @@ layout map2
       thdraw P withcolor(1,0.5,0.1);
     enddef;
 
-    def a_ice_MY (expr p) =
+    def a_icetwo_MY (expr p) =
       T:=identity;
       thclean p;
       thfill p withcolor (0.72, 0.88, 0.95);
@@ -144,14 +146,6 @@ layout map2
       thfill (-.2u,-.2u)--(-.2u,.2u)--(.2u,.2u)..(.2u,-.2u)--cycle;
     enddef;
       
-
-    def p_station_temporary_MY (expr pos) =
-      T:= identity  shifted pos;
-      pickup  PenD;
-      thdraw withcolor (0.7,0,0) (-.1u,-.1u)--(.1u,-.1u) -- (.1u,.1u) -- (-.1u,.1u) -- cycle;
-      thdraw origin;
-    enddef;
-      
     def a_water_MY (expr p) =
       T:=identity;
       thfill p withcolor (0.1,0.1,0.25);
@@ -195,6 +189,37 @@ layout map2
       thdraw (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle withcolor(1,0.5,0.1);
     enddef;
 
+    def p_station_temporary_MY (expr pos)=
+        T:=identity shifted pos;
+        pickup PenC;
+        thclean fullcircle scaled 0.25u;
+        thdraw  fullcircle scaled 0.25u withcolor (0.7,0,0);
+    enddef;
+
+    beginpattern(pattern_ice_MY);
+        pickup PenC;
+        p:=(-.15u,0)--(.15u,0);
+        draw p shifted(0.15,0.25u);
+        draw p rotated -90 shifted (.3u,0.2u);
+        patternxstep(0.6u);
+        patternystep(0.6u);
+        patterncolor(0,0.7,0.9);
+    endpattern;
+
+
+    def a_ice_MY (expr Path) =
+      T:=identity;
+      thclean Path;
+      thfill Path withpattern pattern_ice_MY;
+    enddef;
+
+    def l_wall_ice_MY (expr P) = 
+      T:=identity;
+      
+      thdraw P withcolor(0,0.7,0.9);
+    enddef;
+
+
     initsymbol("p_station_temporary_MY");
     initsymbol("l_wall_blocks_MY");
     initsymbol("l_rockborder_MY"); 
@@ -210,6 +235,8 @@ layout map2
     initsymbol("p_pillar_MY");
     initsymbol("p_stalagmite_MY");
     initsymbol("p_stalactite_MY");
+    initsymbol("l_wall_ice_MY");
+
 
   endcode
 
@@ -219,18 +246,16 @@ layout map2
  symbol-assign area ice MY
  symbol-assign area snow MY
  symbol-assign line rock-border MY
- symbol-hide point station
  symbol-assign line pit AUT
  symbol-assign line wall MY
  symbol-assign line contour MY
  symbol-assign point station AUT
- symbol-assign point pillar MY
- symbol-assign point stalagmite MY
- symbol-assign point stalactite MY
+ symbol-assign line survey MY
  symbol-hide point passage-height
- symbol-hide point label
- symbol-hide point remark
- symbol-hide line survey
+ #symbol-hide point label
+ symbol-assign point station MY
+ symbol-colour area ice [0 70 90]
+ symbol-colour point station-name [70 0 0]
 
 endlayout
 
