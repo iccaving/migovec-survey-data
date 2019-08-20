@@ -1,8 +1,8 @@
 encoding  utf-8
 source ../_xtherion/system_migovec.th
 
-input ../_layouts/map1.th
+input ../_layouts/map2.th
 
-select mprima_monatip-p@system_migovec
+select mplateau-p@system_migovec
 
-export map -o ../_outputs/map/prima_mona_m.pdf -projection plan -layout map1
+export map -o ../_outputs/map/plateau_m.pdf -projection plan -layout map2
