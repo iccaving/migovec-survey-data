@@ -4,17 +4,23 @@ survey alkatraz_disto_resurvey -title "alkatraz_disto_resurvey"
     # resurvey of Alkatraz 
 
     input alkatraz_disto_resurvey-1p.th2
+    input alkatraz_disto_resurvey-1s.th2
 
     map malkatraz_disto_resurvey-p -projection plan
         malkatraz_disto_resurvey-p2
         malkatraz_disto_resurvey-p1
     endmap
+    
     map malkatraz_disto_resurvey-p1 -projection plan
         alkatraz_disto_resurvey-1p
     endmap
 
     map malkatraz_disto_resurvey-p2 -projection plan
         alkatraz_disto_resurvey-2p
+    endmap
+
+    map malkatraz_disto_resurvey-e -projection extended
+        alkatraz_disto_resurvey-1s
     endmap
 
     join alkatraz_disto_resurvey-1p alkatraz_disto_resurvey-2p
