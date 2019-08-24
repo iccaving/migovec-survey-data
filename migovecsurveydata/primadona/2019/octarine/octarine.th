@@ -1,6 +1,11 @@
 # 2019.08.02 created by Rhys Tyers
 
 survey octarine -title "Octarine"
+    input octarine-p.th2
+
+    map moctarine-p -projection plan
+        octarine-1p
+    endmap
 
   centerline
     date 2019.07.23

@@ -29,7 +29,7 @@ survey artemis -title "Artemis"
     0 . 0.79 304.7 -23.6
     0 . 1.18 312.9 26.4
     0 . 4.61 327.4 59.0
-    extend left
+    extend right
     0 1 7.55 268.4 60.7
     # extend auto
     1 . 6.08 175.4 2.1
@@ -49,7 +49,7 @@ survey artemis -title "Artemis"
     1 . 3.00 3.3 28.9
     1 . 2.58 348.4 -1.0
     1 . 2.42 358.0 -26.7
-    extend left
+    extend right
     1 2 4.44 186.1 87.2
     # extend auto
     2 . 4.63 275.1 72.9
@@ -66,7 +66,7 @@ survey artemis -title "Artemis"
     2 . 3.65 271.0 16.1
     2 . 10.04 297.1 50.8
     2 . 12.73 321.8 55.0
-    extend right
+    extend left
     2 3 11.41 298.8 60.4
     # extend auto
     3 . 2.69 3.4 2.3
@@ -81,7 +81,7 @@ survey artemis -title "Artemis"
     3 . 2.61 301.1 70.0
     3 . 4.58 301.3 69.8
     3 . 2.60 302.1 69.7
-    extend right
+    extend left
     3 4 4.51 306.1 70.4
     # extend auto
     4 . 1.67 229.0 86.5
@@ -98,7 +98,7 @@ survey artemis -title "Artemis"
     4 . 2.01 316.1 30.3
     4 . 5.42 341.9 52.9
     4 . 5.01 341.7 53.2
-    extend right
+    extend left
     4 5 5.29 333.6 52.9
     # extend auto
     5 . 7.76 325.3 76.4
@@ -111,7 +111,7 @@ survey artemis -title "Artemis"
     5 . 2.60 43.6 -25.9
     5 . 0.73 265.7 -54.8
     5 . 6.38 303.2 39.4
-    extend right
+    extend left
     5 6 7.68 295.1 64.0
     # extend auto
     6 . 11.19 211.4 -5.1
@@ -124,7 +124,7 @@ survey artemis -title "Artemis"
     6 . 2.88 42.9 -58.4
     6 . 6.47 62.2 -56.2
     6 . 2.72 263.7 -21.9
-    extend right
+    extend left
     6 7 4.34 308.6 25.4
     # extend auto
     7 . 8.39 152.4 -8.8
@@ -140,7 +140,7 @@ survey artemis -title "Artemis"
     7 . 4.39 75.8 -46.8
     7 . 4.19 340.6 4.2
     7 . 4.23 340.8 6.3
-    extend right
+    extend left
     7 8 4.20 340.8 4.2
     # extend auto
     8 . 2.78 265.6 82.1
@@ -155,7 +155,7 @@ survey artemis -title "Artemis"
     8 . 6.63 10.2 21.4
     8 . 10.17 349.4 20.2
     8 . 10.70 349.5 20.2
-    extend right
+    extend left
     8 9 10.07 350.3 19.7
     # extend auto
     9 . 4.69 301.0 70.3
@@ -168,7 +168,7 @@ survey artemis -title "Artemis"
     9 . 14.94 331.7 43.0
     9 . 6.37 316.1 60.7
     9 . 7.21 330.8 54.6
-    extend right
+    extend left
     9 10 12.66 332.7 40.2
     # extend auto
     10 . 5.32 168.6 -9.6
@@ -185,19 +185,19 @@ survey artemis -title "Artemis"
     10 . 1.59 21.9 44.3
     10 . 1.94 70.9 72.5
     10 . 1.73 120.1 57.2
-    extend right
+    extend left
     10 11 3.31 9.8 63.3
     # extend auto
     11 . 1.71 287.7 21.4
-    extend right
+    extend left
     11 12 1.70 287.6 20.3
     # extend auto
     12 . 1.71 285.5 21.0
-    extend right
-    12 13 4.54 311.5 45.2
     extend left
-    13 14 2.43 105.2 16.5
+    12 13 4.54 311.5 45.2
     extend right
+    13 14 2.43 105.2 16.5
+    extend left
     14 15 8.62 81.0 5.0
   endcenterline
 

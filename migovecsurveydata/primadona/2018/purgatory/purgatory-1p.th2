@@ -192,7 +192,7 @@ line wall -reverse on
   120.9 -1786.67
 endline
 
-line wall -reverse on
+line wall -id s1_l4 -reverse on
   120.9 -1786.67
   86.0 -1792.0 82.0 -1800.0 64.0 -1804.0
   56.25 -1805.72 39.27 -1795.02 15.77 -1808.26
@@ -222,7 +222,7 @@ line wall -subtype invisible
   -68.0 -2156.0
 endline
 
-line wall -reverse on
+line wall -id s1_l3 -reverse on
   -328.0 -1986.0
   -328.6 -1966.33 -315.75 -1866.53 -301.52 -1847.63
   -300.72 -1846.57 -264.28 -1825.24 -261.09 -1824.04
