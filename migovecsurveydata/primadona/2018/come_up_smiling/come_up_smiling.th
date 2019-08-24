@@ -1,8 +1,13 @@
 survey come_up_smiling -title "Come up Smiling"
 	input "come_up_smiling-p.th2"
+	input "come_up_smiling-s.th2"
 
 	map mcome_up_smiling-p -projection plan
 		come_up_smiling-p1
+	endmap
+
+	map mcome_up_smiling-e -projection extended
+		come_up_smiling-s1
 	endmap
 
 	centreline
@@ -15,7 +20,7 @@ survey come_up_smiling -title "Come up Smiling"
 		explo-team "Arun Paul"
 		explo-team "Rhys Tyers"
 		explo-team "Jack Halliday"
-
+		extend right
 		0 - 1.02 199.8 5.7
 		0 - 0.45 187.3 85.9
 		0 - 2.24 40.0 2.8
@@ -49,9 +54,11 @@ survey come_up_smiling -title "Come up Smiling"
 		6 - 1.41 253.0 52.7
 		6 - 2.16 257.0 3.8
 		6 - 1.43 263.1 -59.5
+		extend vertical
 		  6 7   17.45 216.2 -42.2
 		7 - 3.35 336.1 -10.5
 		7 - 3.37 334.4 -10.4
+		extend right
 		  7 8   3.29 345.0 -12.7
 		flags not splay 
 	endcentreline

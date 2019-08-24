@@ -20,6 +20,7 @@ survey cattlegrid
 
   map mcattlegrid-e -projection extended
     cattlegrid-e1
+    cattlegrid-e3
     cattlegrid-e2
   endmap
 
@@ -39,9 +40,11 @@ extend right
 2	3	0.92	330	+35
 extend left
 3	4	2.17	256	+20
-extend left
+extend right
 4	5	6.07	327	-22
+extend right
 5	6	4.95	032	-29
+extend left
 6	7	2.73	351	-07
 7	8	4.68	052	-02
 7	9	2.40	192	0
@@ -57,7 +60,9 @@ extend right
 16	17	5.29	249	-02
 17	18	3.58	325	+15
 18	19	3.82	328	+32
+extend left
 19	20	3.10	142	+64
+extend left
 20	21	2.63	200	+63
 extend right
 21	22	4.85	155	+48

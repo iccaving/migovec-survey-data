@@ -9,6 +9,10 @@ map msystem-p -projection plan
   #mubend-p@s_ubend
 endmap
 
+map msystem-e -projection extended
+	mprimadona_main-e@primadona
+	mmonatip_main-e@monatip
+
 input "../primadona/_xtherion/primadona.th"
 input "../s_ubend/s_ubend.th"
 input "../monatip/_xtherion/s_monatip.th"

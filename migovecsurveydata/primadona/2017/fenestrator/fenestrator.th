@@ -2,6 +2,7 @@ encoding  utf-8
 survey fenestrator
 
   input "fenestratorp.th2"
+  input "fenestrator-s.th2"
   
   map mfenestrator-p -projection plan
     fenestratorp_1
@@ -13,6 +14,10 @@ survey fenestrator
   
   map mfenestratorp_2 -projection plan
     fenestratorp_2
+  endmap
+
+  map mfenestrator-e -projection extended
+    fenestrator-s1
   endmap
 
   

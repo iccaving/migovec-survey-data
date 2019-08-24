@@ -1,0 +1,46 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1600 1200
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap galerija_resurvey-s1 -projection extended -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+line label -text "Galerija Resurvey"
+  169.0 536.0
+  169.0 536.0 477.0 513.0 618.0 468.0
+endline
+
+line wall
+  38.0 472.0
+  38.0 472.0 153.0 406.0 187.0 393.0
+  221.0 380.0 342.0 358.0 395.0 354.0
+  448.0 350.0 640.0 350.0 675.0 348.0
+  710.0 346.0 752.0 346.0 752.0 346.0
+  smooth off
+endline
+
+line wall
+  764.0 391.0
+  764.0 391.0 583.0 409.0 525.0 414.0
+  467.0 419.0 381.0 420.0 352.0 429.0
+  323.0 438.0 176.0 497.0 162.0 504.0
+  148.0 511.0 74.0 535.0 74.0 535.0
+  smooth off
+endline
+
+point 40.0 501.0 station -name 6
+
+point 103.0 458.0 station -name 5
+
+point 287.0 397.0 station -name 4
+
+point 459.0 382.0 station -name 3
+
+point 600.0 374.0 station -name 2
+
+point 755.0 367.0 station -name 1
+
+endscrap
+
+

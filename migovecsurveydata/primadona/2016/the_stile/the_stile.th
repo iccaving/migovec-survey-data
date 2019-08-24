@@ -1,6 +1,7 @@
 encoding  utf-8
 survey the_stile
   input "the_stilep.th2"
+  input "the_stile-s.th2"
 
   map mthe_stile-p -projection plan
     mthe_stile-p1
@@ -13,6 +14,10 @@ survey the_stile
   
   map mthe_stile-p2 -projection plan
       the_stilep_2
+  endmap
+
+  map mthe_stile-s -projection extended
+    the_stile-s1
   endmap
   
   join the_stilep_1 the_stilep_2
@@ -33,18 +38,23 @@ survey the_stile
     extend left
     1	2	7.99	071	-27
     2	3	4.17	113	-16
+    extend left
     3	4	4.27	010	-01
+    extend left
     4	5	3.97	340	+01
+
     5	6	3.95	051	+04
     6	7	4.66	334	-04
     7	8	3.66	319	0
     8	9	3.68	013	-07
     9	10	2.79	067	-03
-    extend left
+
     10	11	1.92	300	-08
+    extend left
     11	12	3.36	062	-35
-    extend right
+    extend left
     12	13	5.67	355	-42
+    extend right
     13	14	8.08	244	-25
     #Page 2/2
     14	15	4.30	231	-17

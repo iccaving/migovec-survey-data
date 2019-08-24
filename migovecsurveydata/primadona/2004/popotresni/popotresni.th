@@ -45,6 +45,7 @@ survey popotresni
     team "Ista" insts notes
     units length meters
     units compass clino degrees
+    extend left
 POP1    POP2         6.0       0     -90   #6.0     2.0     0.0     1.0
 POP2    POP3         4.6     193     -47  #0.0    10.0     0.0     1.0
 POP3    POP4        10.5     231     -71   #1.0    20.0     0.0     0.0
@@ -69,7 +70,7 @@ POP10   POP11       11.7     197      32   #2.0     0.0     0.0     0.0
 POP11   POP12        5.2     188     -33   #2.0     1.0     0.0     0.0
 POP12   POP13       12.3     220     -31   #0.0     0.0     0.0     0.0
 POP12   POP8        11.3     110     -31   #0.0     0.0     0.0     0.0
-
+extend right
 KAK1    KAK2         5.3     316      36   #0.0     0.0     0.0     0.0
 KAK2    KAK3         9.5       0     -90   #0.0     0.0     0.0     0.0
 KAK2    KAK4         5.0     295       0   #0.5     0.0     0.5     0.5
