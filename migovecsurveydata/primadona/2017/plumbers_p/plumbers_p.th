@@ -1,6 +1,7 @@
 encoding  utf-8
 survey plumbers_p
   input "plumbers_pp.th2"
+  input "plumbers_paradise-e.th2"
   map mplumbers_p-p -projection plan
     mplumbers_pp_1
     mplumbers_pp_2
@@ -14,6 +15,9 @@ survey plumbers_p
     plumbers_pp_2
   endmap
   
+  map mplumbers_paradise-e -projection extended
+    plumbers_paradise-e1
+  endmap
 
   
   join plumbers_pp_1 plumbers_pp_2
