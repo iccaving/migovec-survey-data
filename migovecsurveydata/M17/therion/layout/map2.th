@@ -1,11 +1,10 @@
-layout local3
+layout map2
   language en
-  scale 1 250
+  scale 1 200
  #colour map-fg #altitude 
- colour map-bg [90 90 90]
+  #colour map-bg [90 90 90]
   #legend on 
-  map-header 105 100 off
-  map-image 110 120 nw ../outputs/M17_extended.pdf
+  map-header 100 105 se
   #grid-coords border
   
   #Contains the user:defined symbols used in the obir survey map

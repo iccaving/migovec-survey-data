@@ -19,9 +19,10 @@ survey street-wise_hercules -title "street-wise_hercules"
   map m1p -projection plan
      street-wise_hercules-1p
    endmap
-  # map m1s -projection extended
-  #   street-wise_hercules-1s
-  # endmap
+   
+   map mstree-wise_hercules-e -projection extended
+     street-wise_hercules-1s
+   endmap
 
   centerline
     date 2019.07.23 
