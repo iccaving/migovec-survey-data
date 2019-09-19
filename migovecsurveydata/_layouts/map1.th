@@ -1,7 +1,7 @@
 layout map1
   language en
-  scale 1 1000
- colour map-fg altitude
+  scale 1 500
+ #colour map-fg altitude
  colour map-bg [90 90 90]
   #legend on 
   grid-coords border
@@ -50,6 +50,11 @@ layout map1
       thdraw P withpen PenD;
     enddef;
 
+    def l_u_icewall_MY (expr P)=
+      T:=identity;
+      thdraw P withpen PenD withcolor(0,0.7,0.9);
+    enddef;
+
 
     def l_u_flowstone_MY (expr P) = 
       T:=identity;
@@ -70,7 +75,7 @@ layout map1
       thdraw P withcolor(1,0.5,0.1);
     enddef;
 
-    def a_ice_MY (expr p) =
+    def a_icetwo_MY (expr p) =
       T:=identity;
       thclean p;
       thfill p withcolor (0.72, 0.88, 0.95);
@@ -95,12 +100,6 @@ layout map1
       clip tmp_pic to p;
       drawoptions();
       draw tmp_pic;
-    enddef;
-
-    def a_snow_MY (expr P) =
-      T:=identity;
-      thclean P;
-      thfill P withcolor (0.96, 0.96, 1);
     enddef;
 
     def l_survey_cave_MY (expr P) =
@@ -142,14 +141,6 @@ layout map1
       T:=identity aligned A rotated R scaled S shifted P;
       thdraw (-.3u,-.3u)--(-.3u,.3u)--(.3u,.3u)..(.3u,-.3u)--cycle;
       thfill (-.2u,-.2u)--(-.2u,.2u)--(.2u,.2u)..(.2u,-.2u)--cycle;
-    enddef;
-      
-
-    def p_station_temporary_MY (expr pos) =
-      T:= identity  shifted pos;
-      pickup  PenD;
-      thdraw withcolor (0.7,0,0) (-.1u,-.1u)--(.1u,-.1u) -- (.1u,.1u) -- (-.1u,.1u) -- cycle;
-      thdraw origin;
     enddef;
       
     def a_water_MY (expr p) =
@@ -195,6 +186,78 @@ layout map1
       thdraw (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle withcolor(1,0.5,0.1);
     enddef;
 
+    def p_station_temporary_MY (expr pos)=
+        T:=identity shifted pos;
+        pickup PenC;
+        thclean fullcircle scaled 0.25u;
+        thdraw  fullcircle scaled 0.25u withcolor (0.7,0,0);
+    enddef;
+
+    beginpattern(pattern_ice_MY);
+        pickup PenC;
+        p:=(-.15u,0)--(.15u,0);
+        draw p shifted(0.15,0.25u);
+        draw p rotated -90 shifted (.3u,0.2u);
+        patternxstep(0.6u);
+        patternystep(0.6u);
+        patterncolor(0,0.7,0.9);
+    endpattern;
+
+    beginpattern(pattern_snow_MY);
+        pickup PenC;
+        p:=(-.15u,0)--(.15u,0);
+        draw p;
+        draw p rotated -60;
+        draw p rotated 60;
+        patternxstep(0.8u);
+        patternystep(0.8u);
+        patterncolor(0,0.7,0.9);
+    endpattern;
+
+
+    def a_ice_MY (expr Path) =
+      T:=identity;
+      thclean Path;
+      thfill Path withpattern pattern_ice_MY;
+    enddef;
+
+    def a_snow_MY (expr P) =
+      T:=identity;
+      pickup PenC;
+      path q; q = bbox P;
+      picture tmp_pic, tmp_sn; 
+      pair z;
+      tmp_sn := image(
+        pickup PenC;
+        p := origin--(0,.2*u);
+        draw p; draw p rotated (60); draw p rotated (120);
+        draw p rotated (180); draw p rotated (240); draw p rotated (300);
+        
+      );
+      tmp_pic := image(
+        for i = xpart llcorner q step 1u until xpart urcorner q:
+          for j = ypart llcorner q step 1u until ypart urcorner q:
+            z:=((i,j) randomized 1.u);
+      if xpart (P intersectiontimes ((bbox tmp_sn) shifted z)) < 0:
+              draw tmp_sn shifted z;
+      fi;
+          endfor;  
+        endfor;
+      );
+      clip tmp_pic to P;
+      drawoptions();
+      draw tmp_pic;
+    enddef;
+
+    def l_wall_ice_MY (expr P) = 
+      T:=identity;
+      
+      thdraw P withcolor(0,0.7,0.9);
+    enddef;
+
+
+
+
     initsymbol("p_station_temporary_MY");
     initsymbol("l_wall_blocks_MY");
     initsymbol("l_rockborder_MY"); 
@@ -210,6 +273,9 @@ layout map1
     initsymbol("p_pillar_MY");
     initsymbol("p_stalagmite_MY");
     initsymbol("p_stalactite_MY");
+    initsymbol("l_wall_ice_MY");
+    initsymbol("l_u_icewall_MY");
+
 
   endcode
 
@@ -219,18 +285,28 @@ layout map1
  symbol-assign area ice MY
  symbol-assign area snow MY
  symbol-assign line rock-border MY
- symbol-hide point station
  symbol-assign line pit AUT
  symbol-assign line wall MY
  symbol-assign line contour MY
  symbol-assign point station AUT
- symbol-assign point pillar MY
- symbol-assign point stalagmite MY
- symbol-assign point stalactite MY
+ symbol-assign line survey MY
  symbol-hide point passage-height
- symbol-hide point label
- symbol-hide point remark
- symbol-hide line survey
+ #symbol-hide point label
+ symbol-assign point station MY
+ symbol-colour area ice [0 70 90]
+ symbol-colour point station-name [70 0 0]
+ symbol-assign point breakdown-choke AUT
+ symbol-colour point flowstone [85 45 10]
+ symbol-colour line wall:flowstone [85 45 10]
+ symbol-colour area snow [0 70 90]
+ #symbol-colour line border [0 70 90]
+ #symbol-colour line contour [0 70 90]
+ symbol-colour point stalactite [85 45 10]
+ symbol-colour point stalagmite [85 45 10]
+ symbol-colour area clay [55 25 10]
+ symbol-colour point clay [55 25 10]
+ symbol-colour point water-flow [10 25 55]
+
 
 endlayout
 

@@ -451,12 +451,6 @@ area snow
   l113-196-3752
 endarea
 
-line arrow 
-  3032.0 5902.0
-  3728.0 5486.0
-endline
-
-point 2976.0 5918.0 label -text "no through way" -align l -scale xl
 line wall 
   6120.0 5638.0
   6044.0 6002.0
@@ -526,13 +520,16 @@ line border -close on -id l202-2328-3792
   5748.0 5598.0 5942.8705 5615.374 5942.8705 5615.374
 endline
 
-point 5113.39 8533.42 label -text "M19 doline" -align tr -scale xl
+point 5713.39 8633.42 label -text c -scale l
+point 5713.39 8433.42 entrance -orientation 180 -scale l
+
+point 6013.39 8733.42 label -text "M-19 doline" -align tr -scale l
 line arrow 
   6588.0 5222.0
   6064.0 5474.0
 endline
 
-point 6629.3 5219.48 label -text "snow tunnel" -align r -scale xl
+point 6629.3 5219.48 remark -text "snow tunnel" -align r
 line wall 
   4432.0 4926.0
   4355.06 4900.32
