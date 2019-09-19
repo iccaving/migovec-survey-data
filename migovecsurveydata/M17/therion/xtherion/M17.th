@@ -1,6 +1,6 @@
 # 2018.10.23 created by TopoDroid v 4.1.1a
 
-survey M17 -title "M17 Frigidare"
+survey M17 -title "M-17 (Frigidare), Tolminski Migovec<br>Cad. number: 5878"
 
   centerline
     date 2018.10.19 
@@ -38,19 +38,19 @@ survey M17 -title "M17 Frigidare"
     2 . 0.59 242.0 26.1
     2 . 0.55 307.5 32.5
     2 . 1.45 356.3 -4.4
-    extend left
+    extend vertical
     2 3 2.53 310.4 44.0
     # extend auto
     3 . 5.36 156.0 83.6
-    extend right
+    extend vertical
     3 4 4.83 159.7 83.6
     # extend auto
     4 . 2.05 139.1 83.2
-    extend right
+    extend vertical
     4 4A 2.06 139.8 83.2
     # extend auto
     4 . 2.05 129.8 84.3
-    extend right
+    extend vertical
     4A 5 3.02 174.0 35.3
     # extend auto
     5 . 2.98 172.0 34.0
@@ -68,7 +68,9 @@ survey M17 -title "M17 Frigidare"
     5 . 5.85 342.6 -43.3
     extend right
     5 6 7.25 55.9 42.3
+    extend vertical
     6 7 5.57 61.2 16.9
+    extend vertical
     7 8 3.55 101.5 57.8
     # extend auto
     8 . 4.73 21.0 36.8
@@ -76,7 +78,9 @@ survey M17 -title "M17 Frigidare"
     extend left
     8 . 4.72 21.9 37.0
     8 8A 4.73 21.5 37.1
+    extend vertical
     8A 9 6.61 280.8 26.7
+    extend left
     9 10 5.83 346.3 7.2
     # extend auto
     10 . 7.77 275.0 6.1
@@ -291,7 +295,7 @@ survey M17 -title "M17 Frigidare"
    endmap
 
   map mm17-e -projection extended
-    #m1s
+    m1s #[20 0 m] none
     m2s
     m3s
   endmap
