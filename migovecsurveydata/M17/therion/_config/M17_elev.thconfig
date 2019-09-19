@@ -5,5 +5,5 @@ input ../layout/map2.th
 
 select mm17-e@M17
 
-export map -projection extended -o ../outputs/M17_extended.pdf -layout map2 -layout-debug station-names
+export map -projection extended -o ../outputs/M17_extended.pdf -layout map2
 

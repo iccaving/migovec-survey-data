@@ -1,11 +1,12 @@
 layout map2
   language en
-  scale 1 200
+  scale 1 400
  #colour map-fg #altitude 
   #colour map-bg [90 90 90]
   #legend on 
   map-header 100 105 se
   #grid-coords border
+  map-comment "Coordinates of station 0<br>WGS-84: 46.25361 / 13.76042"
   
   #Contains the user:defined symbols used in the obir survey map
   code metapost 
@@ -138,6 +139,12 @@ layout map2
       T:=identity aligned A rotated R scaled S shifted P;
       thdraw (-.3u,-.3u)--(-.3u,.3u)--(.3u,.3u)..(.3u,-.3u)--cycle;
       thfill (-.2u,-.2u)--(-.2u,.2u)--(.2u,.2u)..(.2u,-.2u)--cycle;
+    enddef;
+
+    def p_u_probe_MY (expr P,R,S,A)=
+      U:=(.2u,.2u);
+      T:=identity aligned A rotated R scaled S shifted P;
+      thfill (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle withcolor(.55,.25,.10);
     enddef;
       
     def a_water_MY (expr p) =
@@ -289,6 +296,7 @@ layout map2
     initsymbol("l_u_icewall_MY");
     initsymbol("l_u_oldsnow_MY");
     initsymbol("p_anchor_MY");
+    initsymbol("p_u_probe_MY");
 
   endcode
 
@@ -322,6 +330,7 @@ layout map2
  symbol-colour point clay [55 25 10]
  symbol-colour point water-flow [10 25 55]
  symbol-colour line wall:clay [55 25 10]
+ symbol-colour point ice-stalactite [0 70 90]
 
 endlayout
 
