@@ -14,9 +14,10 @@ survey tartarus -title "Tartarus"
    map m1p -projection plan
      tartarus-1p
    endmap
-  # map m1s -projection extended
-  #   tartarus-1s
-  # endmap
+
+   map m1s -projection extended
+     tartarus-1s
+   endmap
 
   centerline
     explo-date 2019.07.17
