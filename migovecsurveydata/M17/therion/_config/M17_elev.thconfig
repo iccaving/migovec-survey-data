@@ -2,8 +2,10 @@ encoding  utf-8
 source ../xtherion/M17.th
 
 input ../layout/map2.th
+input ../layout/overviewmap.th
 
-select mm17-e@M17
+select m17-full-e@M17
 
-export map -projection extended -o ../outputs/M17_extended.pdf -layout map2
+export map -projection extended -o ../outputs/M17_extended.pdf -layout map2 -layout-debug station-names
 
+export map -projection extended -o ../outputs/M17_extended_overview.pdf -layout overview
