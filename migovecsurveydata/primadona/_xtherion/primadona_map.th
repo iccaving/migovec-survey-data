@@ -17,6 +17,10 @@ map mprimadona_main-p -projection plan
 	mprima_deep-p
 endmap
 
+map mklic_globin_deep-p -projection plan -title "Primadona deep branch"
+	mprima_klic_globin_branch-p
+	mprima_deep-p
+endmap
 
 ##### SUB MAPS ######
 ##### these are snippets of branches in Prima
@@ -63,8 +67,21 @@ map mprima_ttt_branch-p -projection plan
 	mttt-p@ttt
 	mbatmere-p@batmere
 endmap
+
+map moctarine_region-p -projection plan -title "Octarine Region (2019)"
+	mpurgatory-p@purgatory
+	mbath-p@bath
+	moctarine-p@octarine
+	moctarine_core-p@octarine_core
+	mdeath_star-p@death_star
+endmap
+
+map end_branch -projection plan -title "End of Hallelujah Branch (2019)"
+	mangel_delight-p@angel_delight
+	msump_404_lead_not_found-p@sump_404_lead_not_found
+endmap
 	
-map mprima_hallelujah_branch-p -projection plan
+map mprima_hallelujah_branch-p -projection plan -title "Hallelujah Branch"
 	cattlegrid-the_stile [50 0 m] below
 	mplumbers_p-p@plumbers_p
 	mhallelujah-p@hallelujah

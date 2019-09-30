@@ -1,0 +1,23 @@
+source ../_xtherion/primadona.th
+
+input ../../_layouts/map1.th
+#input ../../_layouts/map2.th
+#input ../../_layouts/overviewmap.th$
+
+select moctarine_region-p@primadona
+
+export map -o ../_outputs/octarine_region.pdf -projection plan -layout map1
+
+unselect moctarine_region-p@primadona
+
+select moctarine-p@octarine.primadona
+
+export map -o ../_outputs/octarine.pdf -projection plan -layout map1
+
+unselect moctarine-p@octarine.primadona
+
+select mdeath_star-p@death_star.primadona
+
+export map -o ../_outputs/death_star.pdf -projection plan -layout map1
+
+
