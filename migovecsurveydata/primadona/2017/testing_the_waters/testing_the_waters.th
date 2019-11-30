@@ -1,5 +1,11 @@
 survey testing_the_waters -title "Testing the waters"
 	
+	input "testing_the_waters-e.th2"
+
+	map mtesting_the_waters-e -projection extended
+		testing_the_waters-e1
+	endmap
+
 	centreline
 		date 2017.07.14
 		team "Jack Hare" notes
@@ -8,26 +14,36 @@ survey testing_the_waters -title "Testing the waters"
 		#Data on 2 pages
 		#Page 1/2
 		flags duplicate
+		extend right
 		1	2	6.51	059	12
 		2	3	3.13	346	15
 		3	4	4.42	332	-27
 		4	5	1.05	033	-31
 		5	6	2.89	045	-15
 		6	7	2.45	025	-05
+		extend left
 		7	8	4.82	119	+05
+		extend vertical
 		8	9	1.60	082	-42
+		extend vertical
 		9	10	1.49	082	-50
+		extend right
 		10	11	5.75	022	-07
 		11	12	8.91	035	+50
 		12	13	2.91	081	+12
 		13	14	10.42	043	+42
 
 		#Page 2/2
+		extend vertical
 		14	15	1.67	099	+25
+		extend right
 		15	16	2.25	030	+20
+		extend left
 		16	17	2.90	104	+11
+		extend vertical
 		17	18	2.05	-	UP
 		18	19	1.90	-	UP
+		extend right
 		19	20	7.88	232	+16
 		flags not duplicate
 

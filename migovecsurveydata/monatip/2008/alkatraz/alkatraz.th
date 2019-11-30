@@ -1,5 +1,10 @@
 encoding  utf-8
 survey alkatraz
+  input "alkatraz-e.th2"
+
+  map malkatraz-e -projection extended
+    alkatraz-e1
+  endmap
   #input "alkatrazp.th2"
 
   #map malkatraz-p -projection plan
@@ -30,12 +35,19 @@ survey alkatraz
     units length meters
     units compass clino degrees
 
+    extend left
     2 1 5.00  132 -10 # .1 NO DATA
-    2 3 6.45  269 -03 # .2 4 2 20+ 1
+    extend left
+    2 3 6.45  269 -03 # .2 4 2 20+ 1`
+    extend right
     4 3 10.90 076 +48 # .3 2 0 ? 1.7
+    extend left
     4 5 13.65 216 -27 # .4 6 4 ? 1
+    extend left
     6 5 8.30  314 +05 # .5 7 5 ? 1.7
+    extend right
     7 5 26.20 003 +18 # .6 - - - -
+    extend left
     7 8 24.00 278 +06 # .7 - - - -
     
   endcentreline

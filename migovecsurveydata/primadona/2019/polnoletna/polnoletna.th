@@ -1,0 +1,64 @@
+survey polnoletna
+# second part of below_donji_milanovac survey
+	
+	input polnoletna-p.th2
+
+	map mpolnoletna-p -projection plan
+		polnoletna-1p
+		polnoletna-2p
+	endmap
+
+	centreline
+
+		team "Iztok Možir" notes
+		team "Grega Maffi" insts
+		
+		explo-team "Iztok Možir"
+		explo-team "Grega Maffi"
+
+		date 2019.07.29
+		explo-date 2019.07.29
+
+		units length meters
+	    units compass clino degrees
+	    data normal from to length compass clino
+
+	    10	11	2.8	173	+4
+	    11	12	5.4	113	+7
+	    12	13	8.3	104	+16
+	    13	14	7.8	041	+11
+	    14	15	5	-	UP
+	    15	16	4.2	043	+19
+	    16	17	8.1	-	up
+	    17	18	3.1	234	+1
+	    18	19	4.4	162	+37
+	    19	20	3.7	199	+2
+	    20	21	4.9	177	+9
+	    21	22	7.1	174	+13
+	    22	23	5.9	186	+1
+	    23	24	8.9	181	+3
+	    24	25	2	158	-8
+	    25	26	2.9	170	+38
+	    flags duplicate
+	    26	27	8	194	+58
+	    27	28	1	250	0	
+	    27	29	6.3	205	+3
+	    29	30	3.6	253	+26
+	    30	31	4	253	+47
+	    31	32	14.9	189	+36
+	    32	33	43.5	74	+77
+	    flags not duplicate
+	endcentreline
+	
+endsurvey
+
+#Notes:
+#STN 1 is PSS paper
+#stn 3 is bolt
+#stn 6 is pss paper
+#Dryunbkenly entered at party, corrext later
+#1 to 10 is NAMED ma je wlazhna 'it is WET' (as in moist, this is a deliberate joke(drop h and replace with z hat))
+#10 to 11 is polnoletna 'coming of age' (it was 18 years since they last went there)
+#28 is virtual leg, tight side passage, may not really exist
+#31 ti 33 legs are resurvey of original don milanovac, match readings very closely, need to mark as resurvey
+#tie in to stn 3 of original milanovac survey

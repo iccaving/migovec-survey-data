@@ -9,12 +9,8 @@ encoding  utf-8
 #A  u:user water blocks clay debris ice sand snow
 
 
-
-
 scrap pivnica_2_resurvey-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
-line wall
-endline
 
 line wall -reverse on
   104.0 544.0
@@ -28,8 +24,6 @@ line wall -reverse on
   -237.28 439.88
 endline
 
-line wall
-endline
 
 line wall -subtype invisible
   79.75 1033.26
@@ -52,11 +46,6 @@ line wall
   smooth off
 endline
 
-line rock-border
-endline
-
-line floor-step
-endline
 
 line floor-step
   -600.0 734.0
@@ -179,8 +168,7 @@ line wall -id s1_l2
   smooth off
 endline
 
-line wall
-endline
+
 
 line wall -subtype invisible
   -680.0 626.0
@@ -265,8 +253,7 @@ line wall -id s1_l4
   smooth off
 endline
 
-line contour
-endline
+
 
 line contour
   -548.0 96.0
@@ -429,9 +416,6 @@ line floor-step
   450.0 -366.0 400.0 -338.0 400.0 -338.0
   smooth off
   321.01 -311.74
-endline
-
-line rock-border
 endline
 
 line rock-border -close on
@@ -599,8 +583,7 @@ line pit
   smooth off
 endline
 
-line floor-step
-endline
+
 
 line floor-step
   120.0 -1566.0
@@ -641,8 +624,7 @@ line floor-step
   smooth off
 endline
 
-line floor-step
-endline
+
 
 line floor-step
   186.69 -1332.27
@@ -774,6 +756,9 @@ point 59.58 -2186.17 station -name "6"
 point 25.97 -2252.56 station -name "7"
 
 point 17.48 -2350.70 station -name "8"
+
+
+point 377 -2350 label -text "Spodnji" -align r -scale xl
 
 endscrap
 

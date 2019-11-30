@@ -1,5 +1,10 @@
 survey the_atrium
-	input the_atrium-p.th2
+	input "the_atrium-p.th2"
+	input "the_atrium-e.th2"
+
+	map mthe_atrium-e -projection extended
+		the_atrium-e1
+	endmap
 
 	map mthe_atrium-p -projection plan
 		the_atrium-p1
@@ -13,16 +18,25 @@ survey the_atrium
 		team "Tanguy Racine" insts
 		team "David Wilson" notes tape
 
-		explo-team "Tanguy Racine" "David Wilson"
+		explo-team "Tanguy Racine" 
+		explo-team "David Wilson"
 
 		#PAGE 1/1
+		extend left
 		1	2	2.80	275	-37
+		extend left
 		2	3	9.24	316	-80
+		extend vertical
 		3	4	15.60	-	DOWN
+		extend right
 		1	5	7.43	118	-08
+		extend right
 		5	6	10.53	055	-43
+		extend right
 		6	7	8.07	036	+12
+		extend right
 		1	8	19.30	066	+57
+		extend right
 		8	9	4.81	124	+41
 
 

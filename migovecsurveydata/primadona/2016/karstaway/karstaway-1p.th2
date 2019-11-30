@@ -707,6 +707,8 @@ line wall -subtype presumed
   smooth off
 endline
 
+point -300 0 label -text "Karstaway" -scale xl -align tl
+
 line label -text "Karstaway"
   -2104.0 -3428.0
   -2104.0 -3428.0 -1284.0 -1260.0 148.0 96.0

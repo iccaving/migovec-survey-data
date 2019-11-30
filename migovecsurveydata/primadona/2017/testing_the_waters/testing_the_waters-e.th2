@@ -1,0 +1,43 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 793.700787 1122.519685
+##XTHERION## xth_me_area_zoom_to 100
+
+
+scrap testing_the_waters-e1 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+
+point -309.3016 2740.4204 label -text "Testing the Waters" -align t -scale xl
+line wall -subtype blocks
+  -859.8927 1859.2752
+  -1014.605 1592.8651
+  -702.9319 1338.5976
+  -152.0 814.5197
+  152.2061 623.4173
+  309.4246 588.5794
+endline
+
+line wall 
+  228.7051 689.4787
+  -187.014 1041.6602
+  -494.4066 1288.1479
+  -835.3496 1549.0863
+  -751.6998 1639.6138
+  -751.6998 1639.6138 -736.565 1681.6552 -734.8833 1700.1534
+  -733.2017 1718.6516 -733.2017 1743.8765 -729.8384 1772.4646
+  -726.475 1801.0528 -723.1118 1839.7308 -723.1118 1839.7308
+endline
+
+point -814.4108 1860.9569 station -name 19
+point -815.5999 1745.6132 station -name 18
+point -814.4108 1623.1349 station -name 17
+point -964.9626 1590.4344 station -name 16
+point -835.3496 1541.0863 station -name 15
+point -834.1605 1500.062 station -name 14
+point -367.4349 1073.7662 station -name 13
+point -195.014 1041.6602 station -name 12
+point 152.2061 631.4173 station -name 11
+point 487.535 673.0362 station -name 10
+point 485.1568 740.8154 station -name 9
+point 485.1568 806.2165 station -name 8
+
+endscrap
+

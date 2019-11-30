@@ -5,11 +5,11 @@ layout overview
 	code tex-map
    \framethickness=0.0mm
     	\def\maplayout{
-  	\legendbox{100}{25}{SW}{\scalebar}
-    \legendbox{50}{34}{NE}{\northarrow}
+  	\legendbox{120}{-5}{SW}{\scalebar}
+    \legendbox{200}{100}{NE}{\northarrow}
     #\legendbox{4}{40}{NE}{\size[15]Max altitude: \the\cavemaxz m asl}
     #\legendbox{4}{38}{NE}{\size[15]Min altitude: \the\caveminz m asl}
-    \legendbox{50}{35}{NW}{\size[10] \the\cavename}
+    #\legendbox{150}{60}{NW}{\size[10] \the\cavename}
   	}
 	code metapost
 

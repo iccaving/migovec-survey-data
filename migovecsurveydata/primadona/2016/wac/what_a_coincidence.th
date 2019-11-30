@@ -2,12 +2,18 @@ encoding  utf-8
 survey wac -title "What a Coincidence: connection with the old shaft series"
 
   input "what_a_coincidence-p.th2"
+  input "what_a_coincidence-e.th2"
+
+  map  mwhat_a_coincidence-e -projection extended
+    what_a_coincidence-e3
+    what_a_coincidence-e1
+    what_a_coincidence-e2
+  endmap
 
   map mwac-p -projection plan
     mwac-p1
     mwac-p2
     mwac-p3
-    mwac-p4
   endmap
   
   map mwac-p1 -projection plan
@@ -20,10 +26,6 @@ survey wac -title "What a Coincidence: connection with the old shaft series"
   
   map mwac-p3 -projection plan
     wacp_3
-  endmap
-  
-  map mwac-p4 -projection plan
-    wacp_4
   endmap
   
   join wacp_1 wacp_2
@@ -39,22 +41,28 @@ survey wac -title "What a Coincidence: connection with the old shaft series"
     team "Jack Hare" notes
 
    #Page 1/3
-  extend right
+   extend right
    1  2 8.73  181 +44
    extend right
    2  3 11.45 202 +86
-   extend left
+   extend right
    3  4 5.37  143 -02
+   extend right
    4  5 13.77 223 -14
+   extend left
    5  6 8.90  304 -12
+   extend left
    6  7 21.93 346 -09
    7  8 3.88  312 -16
    8  9 4.28  338 -29
-   9  10  3.05  357 +16
+   9  10  3.05  357 +16 #  or just another comment
    10 11  4.63  040 +52
+   extend left
    11 12  4.03  126 +53
+   extend left
    12 13  2.16  084 +18
    #Page 2/3
+   extend left
    13 14  2.00  021 -43
    14 15  4.66  318 -20
    15 16  12.36 347 +25
@@ -64,15 +72,19 @@ survey wac -title "What a Coincidence: connection with the old shaft series"
    19 20  8.25  346 +13
    20 21  6.05  013 +04
    21 22  3.97  258 -29
+   extend vertical
    22 23  3.52  -   down
+   extend left
    23 24  2.52  336 +22
    24 25  10.30 327 -04
    #Page 3/3
    25 26  2.68  344 +74
    26 27  14.48 337 +01
+   extend vertical
    27 28  4.21  -   up
+   extend left
    28 29  17.30 343 +01
-   29 30  7.60  339 -14
+   29 30  7.60  339 -14 
 
   
   #NOTES

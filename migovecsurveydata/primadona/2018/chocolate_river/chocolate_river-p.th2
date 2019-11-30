@@ -7,8 +7,6 @@ encoding  utf-8
 
 scrap chocolate_river-p1 -scale [327.0 -732.0 500.0 -732.0 0 0 15 0 m]
 
-line pit
-endline
 
 line pit
   326.0 -422.0
@@ -70,8 +68,8 @@ line border -id l27-324--127 -close on -subtype invisible
   352.0 -148.0
 endline
 
-area water
-endarea
+
+point 310 -50 label -text "Chocolate River" -scale xl -align tl
 
 line label -text "Chocolate River" -scale xl
   81.5 -228.5

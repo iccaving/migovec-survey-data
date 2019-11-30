@@ -1,6 +1,11 @@
 survey lost_in_a_dream_2 -title "Lost in a dream 2"
 ## #continuation of abandoned streamway off Pivnica
 	input "lost_in_a_dream_2-p.th2"
+	input "lost_in_a_dream_2-e.th2"
+
+	map mlost_in_a_dream_2-e -projection extended
+		lost_in_a_dream_2-e1
+	endmap
 
 	map mlost_in_a_dream_2-p -projection plan
 		lost_in_a_dream_2-p1
@@ -24,10 +29,14 @@ survey lost_in_a_dream_2 -title "Lost in a dream 2"
     	#Data on 1 page
 
 	#Page 1
+	extend right
+	2	1	2.26	163.3	-28.7
+	extend left
+	2	3	6.32	007.9	+39.4
+	extend left
+	3	4	3.79	027.7	+38.2
 
-2	1	2.26	163.3	-28.7
-2	3	6.32	007.9	+39.4
-3	4	3.79	027.7	+38.2
+
 
 	#NOTES 
 	#STN1 is Ave Maria STN1

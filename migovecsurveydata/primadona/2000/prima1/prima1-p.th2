@@ -16,7 +16,7 @@ line border -close off
 endline
 
 area ice
-  l57-2017--1978
+  l57-2017-1978
 endarea
 
 line rock-border -close off
@@ -76,8 +76,6 @@ line rock-border -close on
   1979.25 -2137.0
 endline
 
-line pit
-endline
 
 line pit
   1989.0 -2122.0
@@ -86,11 +84,6 @@ line pit
   smooth off
 endline
 
-line contour
-endline
-
-line contour
-endline
 
 line contour
   2081.25 -2271.0
@@ -148,7 +141,7 @@ line contour -reverse on
   smooth off
 endline
 
-line border -id l57-2017--1978 -close on
+line border -id l57-2017-1978 -close on
   1989.0 -2122.0
   1989.0 -2122.0 1983.83 -2139.08 1982.0 -2170.5
   1981.62 -2177.11 1991.5 -2219.0 1991.5 -2219.0
@@ -198,14 +191,14 @@ line pit -scale l
   smooth off
 endline
 
+
+
 line label -reverse on -text "Entrance Series" -scale xl
   2080.0 -3220.0
   2080.0 -3220.0 1596.67 -2713.81 1708.0 -1984.0
   smooth off
 endline
 
-line gradient
-endline
 
 line gradient
   2130.0 -1889.0
@@ -249,9 +242,6 @@ line wall -id ent_l2
   2237.0 -1817.0 2216.0 -1806.0 2208.0 -1804.0
   2200.0 -1802.0 2143.75 -1767.5 2141.75 -1761.5
   smooth off
-endline
-
-line rock-border
 endline
 
 line rock-border -close on
@@ -306,8 +296,6 @@ line rock-border -close on
   2032.0 -2221.0
 endline
 
-line rock-border
-endline
 
 line rock-border -close on
   2131.5 -2187.75
@@ -316,9 +304,6 @@ line rock-border -close on
   2126.5 -2201.25 2139.5 -2195.0 2139.5 -2195.0
   smooth off
   2131.5 -2187.75
-endline
-
-line rock-border
 endline
 
 line rock-border -close on
@@ -353,9 +338,6 @@ line rock-border -close on
   2078.25 -1941.5
   2083.5 -1942.5
   2083.25 -1934.5
-endline
-
-line contour
 endline
 
 line contour
@@ -818,6 +800,8 @@ line wall -reverse on -subtype blocks
   2006.0 -2313.5 1994.5 -2316.5 1994.5 -2309.0
   smooth off
 endline
+
+point 1810 -1810 label -scale l -text "PRIMADONA" -align l
 
 point 2044.0 -1816.5 entrance -orientation 120.6 -scale xl
 
@@ -1536,7 +1520,9 @@ point 2473.5 -3030.0 water-flow -orientation 203.9
 
 point 2303.5 -2918.0 archeo-material -scale s
 
-line label -text "Bear Pitch" -scale l
+point 2230 -2890 label -scale l -align l -text "M +" 
+
+line label  -scale l -text "Bear Pitch"
   2248.5 -2896.0
   2248.5 -2896.0 2279.5 -2834.0 2315.0 -2796.0
   smooth off

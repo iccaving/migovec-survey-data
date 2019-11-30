@@ -1,6 +1,11 @@
 encoding  utf-8
 survey monatip3 
   input "monatip3p.th2"
+  input "monatip3-e.th2"
+
+  map mmonatip3-e -projection extended
+    monatip3-e1
+  endmap
   
   map mmonatip3-p -projection plan
     mmonatip3-p1
@@ -19,20 +24,34 @@ survey monatip3
   
   centreline
     date 2008.08.03
+    explo-date 2008.08.03
+
     team "Spela" insts
     team "Siljo (Silan)" insts notes
     team "Aljoša Bončina" tape
+
+    explo-team "Spela"
+    explo-team "Siljo (Silan)"
+    explo-team "Aljoša Bončina"
     
     units length meters
     units compass clino degrees
     
+    extend left
     37  38  6.80  170  +40
-38  39  5.75  185  +00
-39  40  6.00  160  -52
-40  41  3.40  175  +09
-41  42  7.40  175  -45
-42  43  5.10  280  -65
-43  44  7.40  195  +15
+    extend left
+    38  39  5.75  185  +00
+    extend left
+    39  40  6.00  160  -52
+    extend left
+    40  41  3.40  175  +09
+    extend left
+    41  42  7.40  175  -45
+    extend left
+    42  43  5.10  280  -65
+    extend right
+    43  44  7.40  195  +15
+
 
   endcentreline
 endsurvey

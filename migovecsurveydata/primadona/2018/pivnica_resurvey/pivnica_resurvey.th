@@ -1,6 +1,11 @@
 encoding  utf-8
 survey pivnica_resurvey -title "Pivnica resurvey"
   input "pivnica_resurvey-p.th2"
+  input "pivnica_resurvey-e.th2"
+
+  map mpivnica_resurvey-e -projection extended
+    pivnica_resurvey-e1
+  endmap
 
   map mpivnica_resurvey-p -projection plan
    mpivnica_resurvey-p1
@@ -33,17 +38,29 @@ survey pivnica_resurvey -title "Pivnica resurvey"
       data normal from to length compass clino
 
       flags duplicate
+      extend left
     2  1  9.85  057  +22
+    extend right
     3  2  5.87  263  +22
+    extend vertical
     3  4  3.42  -  down
+    extend left
     5  4  6.81  071  -2
+    extend right
     5  6  1.59  293  -62
+    extend left
     7  6  3.39  010  +53
+    extend vertical
     7  8  14.91  -  down
+    extend left
     9  8  3.94  053  -1
+    extend left
     10  9  3.61  052  -14
+    extend left
     11  10  16.95  035  +66
+    extend right
     11  12  3.68  257  -48
+    extend vertical
     12  13  21.29  -  down
     flags not duplicate
     

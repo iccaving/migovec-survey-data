@@ -7,11 +7,6 @@ encoding  utf-8
 
 scrap galerijap_1 -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 
-line wall
-endline
-
-line wall
-endline
 
 point 450.75 -78.25 camp -scale xl
 
@@ -128,6 +123,8 @@ point 362.0 -43.0 station -name "27"
 point 349.0 -63.0 station -name "28"
 
 point 369.0 -76.0 station -name "29"
+
+point 300 -76.0 label -text "Sejna<br>Soba" -scale l -align l
 
 endscrap
 

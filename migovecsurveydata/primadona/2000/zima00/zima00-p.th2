@@ -716,7 +716,7 @@ line wall
   smooth off
 endline
 
-point -76.0 420.5 label -align tl -text "P3"
+point -76.0 420.5 label -align tl -text "P3" -scale xs
 
 point -33.5 459.25 continuation -align t -scale l
 
