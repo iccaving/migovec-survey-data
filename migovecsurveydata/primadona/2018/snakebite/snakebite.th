@@ -3,7 +3,12 @@ survey snakebite -title "Snakebite"
 
 ###Small passsage in fault leading from ledge at top of Pivnica###
 
-input snakebite-p.th2
+input "snakebite-p.th2"
+input "snakebite-e.th2"
+
+map msnakebite-e -projection extended
+  snakebite-e1
+endmap
 
 map msnakebite-p -projection plan
   msnakebite-p2
@@ -32,31 +37,55 @@ centreline
   units length meters
     units compass clino degrees
     data normal from to length compass clino
+    extend left
   1  2  3.03  013  +08
+  extend left
   2  3  2.63  032  +29
+  extend left
   3  4  4.00  325  +12
+  extend left
   4  5  3.42  024  +40
+  extend vertical
   6  5  3.00  112  -40
+  extend right
   7  6  3.52  202  -36
+  extend vertical
   8  7  3.85  282  -22
+  extend left
   8  9  1.54  050  +03
+  extend left
   9  10  3.85  072  +40
+  extend right
   11  10  4.79  252  +15
+  extend vertical
   11  12  3.22  -  up
+  extend right
   13  12  5.37  185  -08
 
+  extend right
   14  13  2.53  163  -57
+  extend left
   14  15  3.91  088  -15
+  extend right
   15  16  5.45  282  -50
+  extend left
   17  9  2.24  019  -24
+  extend left
   18  17  2.40  342  -03
+  extend left
   19  18  7.34  055  +31
+  extend left
   20  19  4.22  353  +23
+  extend left
   21  20  3.60  065  +38
+  extend left
   21  1  5.55  088  -56
 
+  extend left
   23  22  6.80  120  +53
+  extend right
   23  24  7.97  236  -56
+  extend right
   24  19  7.90  251  -25
 endcentreline
 

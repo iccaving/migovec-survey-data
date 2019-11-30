@@ -2,6 +2,11 @@ encoding  utf-8
 survey hotmk #the hall of the mountain king
 
   input "hall_of_the_mountain_king-1p.th2"
+  input "hall_of_the_mountain_king-e.th2"
+
+  map mhall_of_the_mountain_king-e -projection extended
+    hall_of_the_mountain_king-e1
+  endmap
   
   map mhotmk-p -projection plan
     mhotmk-p2
@@ -34,7 +39,9 @@ survey hotmk #the hall of the mountain king
     team "Andrej Fratnik" insts
 
     #Page 1/1
+    extend vertical
     1 2 7.00  116 +46
+    extend right
     2 3 4.73  041 +06
     3 4 3.06  118 +01
     4 5 17.00 062 -37

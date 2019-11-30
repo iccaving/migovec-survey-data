@@ -181,7 +181,9 @@ line wall
   smooth off
 endline
 
-point 28.5 -260.5 entrance -orientation 98.6 -scale l
+point 28.5 -260.5 entrance -orientation 98.6 -scale xl
+
+point 0 -260 label -scale xl -align l -text "MONA TIP"
 
 point 204.0 -255.0 station -name "7"
 

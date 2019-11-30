@@ -1,19 +1,12 @@
 encoding  utf-8
-source "../_xtherion/system_migovec.th"
+source "../_xtherion/plateau.th"
 
-layout local
-  scale 1 2500
-  colour map-bg [ 95 95 95]
-  symbol-hide group all
-  min-symbol-scale M
-  symbol-show line wall
-  symbol-show point label
-  map-header 105 100 nw
-  statistics topo-length on
-  statistics explo off
-  statistics copyright all
-  fonts-setup 8 12 14 24 48
-  
-endlayout
+input "../_layouts/layout_tanguy_overview_1.thl"
+input "../_layouts/layout_tanguy_overview_2.thl"
 
-export map -projection plan -o ../_outputs/outline_mig.pdf -layout local
+select mprimadona_monatip-e@plateau -map-level 1
+
+#export map -projection plan -o ../_outputs/outline_mig.pdf -layout overview1
+
+export map -projection extended -o ../_outputs/outline_mig_extended.pdf -layout overview2 -layout-debug station-names
+

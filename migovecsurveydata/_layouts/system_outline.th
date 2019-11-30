@@ -1,0 +1,16 @@
+layout system_outline
+  scale 1 2000
+  symbol-hide group all
+  min-symbol-scale M
+  symbol-show line wall
+  symbol-show point label
+  #symbol-show point entrance
+  #symbol-show line pit
+  #symbol-show line chimney
+  #symbol-show line rock-border
+  map-header 105 100 nw
+  #statistics topo-length on
+  statistics explo off
+  statistics copyright all
+  fonts-setup 8 12 12 12 12
+endlayout

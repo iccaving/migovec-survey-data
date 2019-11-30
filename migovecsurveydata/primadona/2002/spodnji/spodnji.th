@@ -8,7 +8,6 @@ survey spodnji
     spodnji_e1
   endmap
 
-  
   map mspodnjip_2 -projection plan
     spodnjip_2
   endmap
@@ -17,12 +16,7 @@ survey spodnji
     spodnjip_3
   endmap
   
-  map mspodnjip_4 -projection plan
-    spodnjip_4
-  endmap
-
   map mspodnji-p -projection plan
-    mspodnjip_4
     mspodnjip_3
     mspodnjip_2
   endmap

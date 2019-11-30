@@ -1,0 +1,49 @@
+survey ma_je_vlazna -title "ma je vlažna"
+# First part of below_donji_milanovac survey
+
+	input "ma_je_vlazna-p.th2"
+
+	map mma_je_vlazna-p -projection plan -title "ma je vlažna"
+		ma_je_vlazna-1p
+	endmap
+
+
+	centreline
+		team "Iztok Možir" notes
+		team "Grega Maffi" insts
+		
+		explo-team "Iztok Možir"
+		explo-team "Grega Maffi"
+
+		date 2019.07.29
+		explo-date 2019.07.29
+
+		units length meters
+	    units compass clino degrees
+	    data normal from to length compass clino
+
+	    1	2	3.9	257	+42
+	    2	3	8.6	-	up
+	    3	4	9.7	194	-5
+	    3	5	3.1	310	-59
+	    5	6	7.6	-	down
+	    3	7	13	004	+30
+	    7	8	9.7	008	+69
+	    8	9	12	025	+71
+	    9	10	6.4	112	+8
+	endcentreline
+
+endsurvey
+
+
+#Notes:
+#STN 1 is PSS paper
+#stn 3 is bolt
+#stn 6 is pss paper
+#Dryunbkenly entered at party, corrext later
+#1 to 10 is NAMED ma je wlazhna 'it is WET' (as in moist, this is a deliberate joke(drop h and replace with z hat))
+#10 to 11 is polnoletna 'coming of age' (it was 18 years since they last went there)
+#28 is virtual leg, tight side passage, may not really exist
+#31 ti 33 legs are resurvey of original don milanovac, match readings very closely, need to mark as resurvey
+#tie in to stn 3 of original milanovac survey
+#*end below_donji_milanovac

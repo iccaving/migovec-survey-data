@@ -29,9 +29,12 @@ survey ajdovscina
     explo-team "Tomaž Tivadar"
     
       #flags duplicate
-1  2  12.5  0  90
-2  3  4.0  17  0
-3  4  12.5  50  0
+      extend vertical
+      1  2  12.5  0  90
+      extend left
+      2  3  4.0  17  0
+      extend left
+      3  4  12.5  50  0
 #flags not duplicate
     
   endcentreline

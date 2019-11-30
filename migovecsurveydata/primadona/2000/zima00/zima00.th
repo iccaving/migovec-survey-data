@@ -1,21 +1,22 @@
 encoding  utf-8
 survey zima00
      input "zima00-p.th2"
-     input "zima00_extend.th2"
+     input "zima00-e.th2"
      
      map mzima00-e -projection extended
-      zima00_1e
+      zima00-2e
+      #zima00_1e
      endmap
 
      map mzima00-p -projection plan
-      mzima00p_1
-      mzima00p_2
+      mzima00-p1
+      mzima00-p2
      endmap
      
-     map mzima00p_1 -projection plan
+     map mzima00-p1 -projection plan
       zima00p_1
      endmap
-     map mzima00p_2 -projection plan
+     map mzima00-p2 -projection plan
       zima00p_2
      endmap
 
@@ -38,22 +39,32 @@ survey zima00
     data normal from to length compass clino
     extend left
     1  2  12.6  0   90  #1. tocka je mozicek na koncu strika
-2  3  13  307  60  
-3  4  24  0  90
-4  5  20.2  075  50  #5. tocka pivnica pivci roso, behc, cuder
-5  6  4.2  064  0
-6  7  19.5  035  70
-7  8  10.6  100  5
-8  9  5.3  035  35
-extend left
-9  10  22  015  55
-extend left
-10  11  18.8  0  90  #10. tocka fix nad njim odcep "drek"
-11  12  9  300  40
+    extend left
+    2  3  13  307  60
+    extend left
+    3  4  24  0  90
+    extend left
+    4  5  20.2  075  50  #5. tocka pivnica pivci roso, behc, cuder
+    extend left
+    5  6  4.2  064  0
+    extend left
+    6  7  19.5  035  70
+    extend left
+    7  8  10.6  100  5
+    extend left
+    8  9  5.3  035  35
+    extend left
+    9  10  22  015  55
+    extend vertical
+    10  11  18.8  0  90  #10. tocka fix nad njim odcep "drek"
+    extend left
+    11  12  9  300  40
+    extend vertical
+    12  13  22  0  90
+    extend left
+    13  14  5.4  075  0
+    extend left  
 
-12  13  22  0  90
-13  14  5.4  075  0
-extend left  
 14  15  6.8  040  0  
 15  16  6.2  322  28
 16  17  13  005  5  

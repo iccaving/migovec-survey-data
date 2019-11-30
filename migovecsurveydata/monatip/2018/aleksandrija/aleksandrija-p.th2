@@ -13,6 +13,7 @@ encoding  utf-8
 
 scrap aleksandrija-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
+
 line wall
   552.48 -630.72
   558.74 -598.1 581.0 -570.02 592.49 -539.75
@@ -50,8 +51,6 @@ line wall
   smooth off
 endline
 
-line contour
-endline
 
 line contour
   560.0 -296.0
@@ -448,6 +447,8 @@ point 3390.75 3294.71 station -name "15A"
 point 3573.94 3698.15 station -name "16"
 
 point 3698.80 3842.44 station -name "17"
+
+point 3700 4500 label -align t -scale l -text "Aleksandrija"
 
 endscrap
 

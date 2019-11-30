@@ -494,7 +494,7 @@ endline
 
 point 345.79 1049.41 water-flow -orientation 125.0
 point 299.94 1120.78 water-flow -orientation 125.0
-point 488.44 1927.19 label -text "pitch under boulders" -align t -scale xl
+point 488.44 1927.19 label -text "pitch under boulders" -align t -scale s
 line wall -id s1_l1
   274.0 655.0
   278.72 656.54 282.43 655.4 286.81 657.81
@@ -817,7 +817,7 @@ line rock-border -close on
   209.61 524.81
 endline
 
-point 245.87 533.68 label -text squeeze -align t -scale xl
+point 245.87 533.68 label -text squeeze -align t -scale xs
 endscrap
 
 
@@ -913,7 +913,7 @@ line wall
   252.25 2247.89 257.38 2234.07 260.8 2225.64
 endline
 
-point 580.0 2580.0 label -text "Poseidon<br>Rift" -align tr -scale xl
+#point 00.0 2580.0 label -text "Poseidon<br>Rift" -align tl -scale xl
 line wall 
   364.29 2049.03
   372.66 2090.68 376.54 2134.99 374.64 2177.6

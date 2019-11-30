@@ -7,11 +7,6 @@ encoding  utf-8
 
 scrap smer1p_1 -scale [327.0 -736.0 541.0 -735.0 0 0 30 0 m]
 
-line pit
-endline
-
-area water
-endarea
 
 line wall
   510.0 -499.0
@@ -127,7 +122,7 @@ point 217.0 -260.0 station -name "5"
 
 point 188.0 -264.0 station -name "4"
 
-point 89.5 -304.5 label -text "Smer1"
+point 89.5 -304.5 label -text "Smer1" -align l -scale s
 
 line wall
   199.0 -250.0
