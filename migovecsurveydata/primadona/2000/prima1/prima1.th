@@ -43,6 +43,7 @@ encoding  utf-8
       map mprima1-e -projection extended
         prima1-e1
         prima1-e2
+        prima1-e3
       endmap
       
       join prima1p_ent prima1p_1
@@ -72,12 +73,13 @@ extend left
 3  4  20.32  016  82  #stn 4 is bolt at pitch head
 4  5  4.40  357  20
 5  6  2.77  326  18
-extend right
+extend vertical
 7  6  3.75  075  -33
 extend left
 7  8  3.00  307  12  #stn 8 is pss
-extend right
+extend vertical
 8  9  4.95  036  23
+extend left
 10  9  7.48  031  -36
 extend left
 10  11  4.82  319  11
@@ -117,7 +119,6 @@ extend right
 33  32  5.60  123  -18   #LED
 extend left
 33  34  34.19  020  43
-extend start
 extend right
 35  34  3.93  081  -1  #stn 35 is top left of painted T at entrance, 
        

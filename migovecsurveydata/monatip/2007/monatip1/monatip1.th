@@ -2,32 +2,36 @@ encoding  utf-8
 survey monatip1
 
   input "monatip1p.th2"
+  input "monatip1-e.th2"
+
+  map mmonatip1-e -projection extended
+    monatip1-s1
+  endmap
 
   map mmonatip1-p -projection plan
-    mmonatip1p_1
-    mmonatip1p_2
-    mmonatip1p_5
-    mmonatip1p_3
-    mmonatip1p_4
-    
+    mmonatip1-p1
+    mmonatip1-p2
+    mmonatip1-p5
+    mmonatip1-p3
+    mmonatip1-p4
   endmap
   
-  map mmonatip1p_1 -projection plan
+  map mmonatip1-p1 -projection plan
     monatip1p_1
   endmap
   
-  map mmonatip1p_2 -projection plan
+  map mmonatip1-p2 -projection plan
     monatip1p_2
   endmap
-  map mmonatip1p_3 -projection plan
+  map mmonatip1-p3 -projection plan
     monatip1p_3
   endmap
   
-  map mmonatip1p_4 -projection plan
+  map mmonatip1-p4 -projection plan
     monatip1p_4
   endmap
   
-  map mmonatip1p_5 -projection plan
+  map mmonatip1-p5 -projection plan
     monatip1p_5
   endmap
   
@@ -39,48 +43,78 @@ survey monatip1
        fix 1    46.252471     13.757089    1736
        
     date  2007.08.06
+    explo-date 2007.08.06
+
     team "Iztok Možir" insts notes
     team "James Hooper" insts notes
+
+    explo-team "Iztok Možir"
+    explo-team "James Hooper"
     
     units length meters
     units compass clino degrees
     #PAGE1
-    1	2	15.90	081	+05	#	
-3	2	5.29	210	-09	#	
-3	4	7.52	133	+07	#	
-5	4	6.95	311	-09	#	
-5	6	5.00	040	+15	#	
-6	7	1.50	-	down	#	
-8	7	4.08	261	-17	#	
-8	9	3.84	121	+04	#	
-10	9	3.33	230	+02	#	
-10	11	2.78	103	-40	#	
+    extend right
+    1 2 15.90 081 +05 # 
+    extend left
+    3 2 5.29  210 -09 # 
+    extend right
+    3 4 7.52  133 +07 # 
+    extend left
+    5 4 6.95  311 -09 # 
+    extend right
+    5 6 5.00  040 +15 # 
+    extend vertical
+    6 7 1.50  - down  # 
+    extend left
+    8 7 4.08  261 -17 # 
+    extend right
+    8 9 3.84  121 +04 #
+    extend left 
+    10  9 3.33  230 +02 # 
+    extend right
+    10  11  2.78  103 -40 #
 
-#PAGE 2
-#station 21 is bottom of fourth pitch (PSS)
-#station 22 is bolt
-#station 24 is bolt
-#station 27 is PSS cairn in middle of chamber 30m+ aven above
-11	12	3.60	168	-28	#	
-12	13	10.00	-	down	#	
-14	13	11.55	322	-23	#	
-15	14	4.98	310	+03	#	
-15	16	14.10	-	down	#	
-17	16	9.45	307	-34	#	
-18	17	8.28	295	+46	#	
-18	19	8.72	102	+33	#	
-19	20	3.21	153	+11	#	
-20 	21	9.30	-	down	#	
+    #PAGE 2
+    #station 21 is bottom of fourth pitch (PSS)
+    #station 22 is bolt
+    #station 24 is bolt
+    #station 27 is PSS cairn in middle of chamber 30m+ aven above
+    extend right
+    11  12  3.60  168 -28 # 
+    extend right
+    12  13  10.00 - down  #
+    extend left
+    14  13  11.55 322 -23 #
+    extend left
+    15  14  4.98  310 +03 # 
+    extend vertical
+    15  16  14.10 - down  #
+    extend left
+    17  16  9.45  307 -34 #
+    extend left
+    18  17  8.28  295 +46 #
+    extend right 
+    18  19  8.72  102 +33 # 
+    extend right
+    19  20  3.21  153 +11 #
+    extend right 
+    20  21  9.30  - down  # 
 
-#PAGE 3
-22	21	11.90	284	-70	#	
-22	23	10.50	104	+50	#	
-23	24	5.51	141	-07	#	
-24	25	10.00	-	down	#	
-24	26	9.10	129	-14	#	
-27	26	7.53	285	+01	#	
-    
-  
+    #PAGE 3
+    extend left
+    22  21  11.90 284 -70 # 
+    extend right
+    22  23  10.50 104 +50 # 
+    extend right
+    23  24  5.51  141 -07 # 
+    extend vertical
+    24  25  10.00 - down  #
+    extend right
+    24  26  9.10  129 -14 # 
+    extend left
+    27  26  7.53  285 +01 # 
   endcentreline
+
 endsurvey
 

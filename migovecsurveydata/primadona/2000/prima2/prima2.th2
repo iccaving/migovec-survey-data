@@ -95,7 +95,9 @@ line wall
   2568.0 -2854.0
 endline
 
-line label -text "Stara Jama" -scale xl
+point 1960 -3520 label -scale l -align l -text "Stara jama"
+
+line label -text "Stara jama" -scale xl
   1969.0 -3524.0
   1969.0 -3524.0 1981.0 -3121.0 2155.0 -2821.0
   smooth off

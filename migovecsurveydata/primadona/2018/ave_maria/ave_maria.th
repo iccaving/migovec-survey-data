@@ -1,5 +1,10 @@
 survey ave_maria -title "Ave Maria pitch series"
 input "ave_maria-p.th2"
+input "ave_maria-e.th2"
+
+map mave_maria-e -projection extended
+	ave_maria-e1
+endmap
 
 map mave_maria-p -projection plan
 	mave_maria-p1
@@ -18,13 +23,19 @@ centreline
 	units length meters
 	units compass clino degrees
 	data normal from to length compass clino
-	extend left
+	extend right
 	1	2	3.30	060	+55
+	extend right
 	2	3	5.77	045	+24
+	extend right
 	3	4	5.05	080	+51
+	extend left
 	4	5	9.45	045	+80
+	extend left
 	5	6	6.91	005	+72
+	extend left
 	6	7	1.15	245	+61
+	extend left
 	7	8	2.62	298	+18
 endcentreline
 

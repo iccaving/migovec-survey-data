@@ -11,10 +11,10 @@ map m2000-p -projection plan -title "Year 2000"
     mprima2-p@prima2
 endmap
 
-    input ../2000/prima2/prima2.th
-    input ../2000/prima1/prima1.th
-    input ../2000/ttt/ttt.th
-    input ../2000/zima00/zima00.th
+    input "../2000/prima2/prima2.th"
+    input "../2000/prima1/prima1.th"
+    input "../2000/ttt/ttt.th"
+    input "../2000/zima00/zima00.th"
     
     equate 1@prima1 32@prima2
     equate 1@prima2 34@ttt
@@ -28,12 +28,11 @@ endmap
     
 ###______________ 2001_____________ ###
 
-
-  input ../2001/risanke/risanke.th
-    input ../2001/risa2/risa2.th
-    input ../2001/pov/pov.th
-    input ../2001/galerija/galerija.th
-    input ../2001/drugi/drugi.th
+input "../2001/risanke/risanke.th"
+input "../2001/risa2/risa2.th"
+input "../2001/pov/pov.th"
+input "../2001/galerija/galerija.th"
+input "../2001/drugi/drugi.th"  
     
   equate 5@risanke 1@prima1
     equate 1@risanke 1@risa2
@@ -67,12 +66,12 @@ endmap
     equate 4@ajdovscina 13@zima00
     equate 57@smer0 17@galerija
     equate 1@spodnji 1@zima00
-    equate 1@milanova 15@spodnji
+    equate 1@milanova 11@spodnji
    
    # join s1_l1@ajdovscina:0 s2_l1@zima00:end 
     #join s1_l2@ajdovscina:end s2_l2@zima00:0 
     #join spodnjip_1@spodnji zima00p_6@zima00
-    join spodnjip_4@spodnji milanovap_1@milanova
+    join spodnjip_3@spodnji milanovap_1@milanova
     
     join s1_l1@smer0:end s4_l1@galerija:0
     join s1_l2@smer0:0 s4_l2@galerija:end
@@ -117,6 +116,7 @@ endmap
         mudc-p@udc
         mwac-p@wac
     endmap
+
      input "../2016/karstaway/karstaway.th"
      input "../2016/mighty_fine_indeed/mfi.th"
      input "../2016/hotmk/hotmk.th"
@@ -131,16 +131,13 @@ endmap
      input "../2016/dejavu/dejavu.th"
      input "../2016/tight_and_scrotty/tight_and_scrotty.th"
      input "../2016/gamblers_ruin/gamblers_ruin.th"
-     input "../2016/memorylane/memorylane.th"
-
+     #input "../2016/memorylane/memorylane.th"
      
-     
-     
-     equate 10@memorylane 19@prima1
-     equate 1@memorylane 8@prima1
+     #equate 10@memorylane 19@prima1
+     #equate 1@memorylane 8@prima1
      equate 39@karstaway 1@galerija_resurvey
      equate 1@galerija_resurvey 11@galerija
-     equate 6@galerija_resurvey  16@galerija
+     equate 6@galerija_resurvey 16@galerija
      equate 5@mfi 1@karstaway
      equate 1@mfi 12@hotmk
      equate 30@wac 1@hotmk
@@ -159,8 +156,8 @@ endmap
      join mfip_2@mfi hotmk-1p@hotmk
      join s1_l1@wac:0 s2_l1@hotmk:end
      join s1_l2@wac s2_l2@hotmk:0
-     join  s2_l3@hotmk:end s1_l3@colony:0
-     join  s2_l1@hotmk:0 s1_l1@colony:end
+     join s2_l3@hotmk:end s1_l3@colony:0
+     join s2_l1@hotmk:0 s1_l1@colony:end
      join terminusp_1@terminus quantum_statep_1@quantum_state
      
      join s2_l1@the_stile:end s2_l1@cattlegrid:0
@@ -181,6 +178,18 @@ endmap
      
      join s10_l1@colony:end s1_l1@udc:end
      join s10_l2@colony:0 s1_l2@udc:0
+
+     join karstaway-e1@karstaway mighty_fine_indeed-e1@mfi
+     join mighty_fine_indeed-e1@mfi hall_of_the_mountain_king-e1@hotmk
+     join colony-1e@colony what_a_coincidence-e3@wac
+     join e1_l1@TTTr e2_l1@zima00
+     join e1_l2@TTTr e2_l2@zima00
+     join e1_l3@TTTr e2_l3@zima00
+     join e1_l4@TTTr e2_l2@zima00
+     join e1_l5@TTTr e1_l5@buckwheat
+     join e1_l6@TTTr e1_l6@buckwheat
+     join e1_l7@TTTr e1_l7@wac
+     join e1_l8@TTTr e1_l8@wac
      
      
      
@@ -236,11 +245,11 @@ endmap
      input "../2017/batmere/batmere.th"
      input "../2017/entirely_my_fault/entirely_my_fault.th"
      input "../2017/what_a_disappointment/what_a_disappointment.th"
-     input "../2017/testing_the_waters/testing_the_waters.th"
+     #input "../2017/testing_the_waters/testing_the_waters.th"
      
      
   #equates
-    equate 8@testing_the_waters 24@prima2
+    #equate 8@testing_the_waters 24@prima2 
       equate 7@buckwheat 1@TTTr
       equate 4@buckwheat 1@wac
       equate 47@TTTr 1@pov
@@ -253,7 +262,7 @@ endmap
       equate 24@sweet_baby_jesus 1@hallelujah
       equate 26@alabaster 1@sweet_baby_jesus
       equate 35@jack_of_hearts 39@smer0
-      equate 18@TTTr 1@dejavu
+      equate 18@TTTr 1A@dejavu
       equate 1@mfi 1@more_like_welding
       equate 15@more_like_welding 1@electric_dreams
       equate 9@hammerhead 13@dejavu
@@ -463,21 +472,30 @@ endmap
 
 
 ###______________ 2019_____________ ###
+     
+
      # inputs
-     input ../2019/ad_aspera_per_aqua/ad_aspera_per_aqua.th
-     input ../2019/artemis/artemis.th
+     input "../2019/ad_aspera_per_aqua/ad_aspera_per_aqua.th"
+     input "../2019/artemis/artemis.th"
      #input ../2019/power_grab/power_grab.th
-     input ../2019/tartarus/tartarus.th
-     input ../2019/poseidon_rift/poseidon_rift.th
-     input ../2019/lachrymosa/lachrymosa.th
-     input ../2019/belladonna/belladonna.th
-     input ../2019/forget_me_not/forget_me_not.th
-     input ../2019/street-wise_hercules/street-wise_hercules.th
-     input ../2019/angel_delight/angel_delight.th
-     input ../2019/sump_404_lead_not_found/sump_404_lead_not_found.th
-     input ../2019/octarine/octarine.th
-     input ../2019/death_star/death_star.th
-     input ../2019/octarine_core/octarine_core.th
+     input "../2019/tartarus/tartarus.th"
+     input "../2019/poseidon_rift/poseidon_rift.th"
+     input "../2019/lachrymosa/lachrymosa.th"
+     input "../2019/belladonna/belladonna.th"
+     input "../2019/forget_me_not/forget_me_not.th"
+     input "../2019/street-wise_hercules/street-wise_hercules.th"
+     input "../2019/angel_delight/angel_delight.th"
+     input "../2019/sump_404_lead_not_found/sump_404_lead_not_found.th"
+     input "../2019/octarine/octarine.th"
+     input "../2019/death_star/death_star.th"
+     input "../2019/octarine_core/octarine_core.th"
+     input "../2019/spodnji_main_chamber_resurvey/spodnji_main_chamber_resurvey.th"
+     input "../2019/ma_je_vlazna/ma_je_vlazna.th"
+     input "../2019/polnoletna/polnoletna.th"
+
+     map m2019-p -projection plan -title "Year ../2019"
+        mad_aspera_per_aqua-p@ad_aspera_per_aqua
+     endmap
      
      # equates
      equate 10@ad_aspera_per_aqua 0@the_aqueduct
@@ -496,6 +514,9 @@ endmap
      equate 0@octarine_core 0@octarine
      equate 38a@death_star 36@canticle_for_migovec
      equate 11@octarine 7@purgatory
+     equate 15@spodnji_main_chamber_resurvey 0@pivnica_2_resurvey
+     equate 10@polnoletna 10@ma_je_vlazna
+     equate 33@polnoletna 0@spodnji_main_chamber_resurvey
 
      
      # joins
@@ -511,6 +532,7 @@ endmap
      join death_star-2p@death_star octarine_core-1p@octarine_core
      join s1_l3@octarine s1_l3@purgatory
      join s1_l4@octarine s1_l4@purgatory
+     join polnoletna-2p@polnoletna ma_je_vlazna-1p@ma_je_vlazna
 
 
 endsurvey

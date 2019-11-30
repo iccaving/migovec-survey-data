@@ -13,6 +13,8 @@ encoding  utf-8
 
 scrap bath-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
+point 2600 -1000 label -text "Bath" -align tr -scale l
+
 line wall -reverse on
   473.61 -250.07
   570.14 -262.78

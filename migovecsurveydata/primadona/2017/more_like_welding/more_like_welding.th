@@ -1,6 +1,13 @@
 encoding  utf-8
 survey more_like_welding -title "More like Welding"
   input "more_like_welding-p.th2"
+  input "more_like_Welding-e.th2"
+
+
+  map mmore_like_welding-e -projection extended
+    more_like_welding-e2
+    more_like_welding-e1
+  endmap
 
     map mmore_like_welding-p -projection plan
       mmore_like_welding-p1
@@ -38,22 +45,36 @@ survey more_like_welding -title "More like Welding"
 
     #PAGE 1/2
     flags duplicate
+    extend right
     1  2  2.20  052  +30
+    extend vertical
     2  3  16.22  -  UP
+    extend left
     flags not duplicate
     3  4  11.10  189  +16
+    extend left
     4  5  6.32  178  +00
+    extend left
     5  6  4.13  190  -31
+    extend vertical
     7  8  3.64  -  UP
+    extend right
     8  9  5.75  074  +68
+    extend right
     9  10  6.89  063  +29
+    extend left
     10  11  3.70  135  -15
+    extend vertical
     11  12  2.50  -  DOWN
+    extend right
     10  6  7.69  020  +02
 
     #Page 2/2
+    extend right
     6  13  16.60  129  +13
+    extend vertical
     13  14  17.21  -  UP
+    extend right
     14  15  1.84  111  -01
 
     #NOTES

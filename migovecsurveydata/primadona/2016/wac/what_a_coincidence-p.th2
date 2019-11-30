@@ -20,7 +20,10 @@ line wall -id s1_l1
   smooth off
 endline
 
-line label -text "What a Coincidence!"
+
+point 200 -200 label -scale l -align l -text "What a<br>Coincidence!"
+
+line label -text "What a<Coincidence!"
   147.0 -108.0
   147.0 -108.0 215.0 -311.0 272.0 -430.0
 endline
@@ -380,6 +383,8 @@ point 314.0 -485.5 station -name "10"
 
 point 427.0 -596.0 station -name "4"
 
+point 447.0 -576.0 label -text "Ajdovščina" -scale xl -align br
+
 point 386.0 -639.0 station -name "5"
 
 point 355.0 -619.0 station -name "6"
@@ -396,11 +401,5 @@ endscrap
 
 
 
-scrap wacp_4 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
-
-line wall
-endline
-
-endscrap
 
 
