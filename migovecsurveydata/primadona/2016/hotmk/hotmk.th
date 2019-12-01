@@ -6,6 +6,7 @@ survey hotmk #the hall of the mountain king
 
   map mhall_of_the_mountain_king-e -projection extended
     hall_of_the_mountain_king-e1
+    hall_of_the_mountain_king-e2
   endmap
   
   map mhotmk-p -projection plan
@@ -49,8 +50,11 @@ survey hotmk #the hall of the mountain king
     6 7 13.00 060 -22
     7 8 13.01 011 +18
     8 9 15.00 031 +71
+    extend left
     9 10  21.30 028 +82
+    extend left
     10  11  2.00  349 +04
+    extend left
     11  12  2.70  044 +12
   endcentreline
 

@@ -25,7 +25,7 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     0 . 1.72 259.3 61.7
     0 . 1.55 251.0 47.9
     0 . 1.42 262.3 35.9
-    extend right
+    extend left
     0 1 2.21 194.2 38.2
     extend ignore
     1 . 1.04 89.2 -4.7
@@ -70,9 +70,9 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     1 . 4.91 56.1 51.5
     1 . 3.17 58.9 47.3
     1 . 9.70 39.0 56.3
-    extend left
-    1 2 8.51 49.6 61.4
     extend right
+    1 2 8.51 49.6 61.4
+    extend left
     1 3 3.02 167.8 -17.9
     extend ignore
     3 . 9.06 169.0 -0.9
@@ -100,7 +100,7 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     3 . 14.93 10.1 44.4
     3 . 9.21 14.7 46.4
     3 . 4.14 167.8 -20.8
-    extend right
+    extend left
     3 4 4.05 167.9 -20.9
     extend ignore
     4 . 0.15 48.0 -75.4
@@ -113,16 +113,16 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     4 . 2.93 20.5 85.1
     4 . 1.55 252.7 71.0
     4 . 1.05 250.0 50.9
-    extend right
+    extend left
     4 5 1.93 255.7 -33.3
     extend ignore
     5 . 1.93 250.8 -33.0
-    extend right
+    extend left
     5 6 10.00 190.2 -50.1
     7 6 1.03 26.8 -43.5
     extend ignore
     7 . 1.02 34.1 -34.6
-    extend right
+    extend left
     7 8 1.02 184.9 14.1
     extend ignore
     8 . 10.74 167.0 -8.7
@@ -159,7 +159,7 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     2 . 16.26 174.4 -19.2
     2 . 11.04 177.1 -25.8
     2 . 16.41 183.9 -33.2
-    extend left
+    extend right
     2 9 3.04 341.6 4.2
     extend ignore
     9 . 3.05 346.1 4.2
@@ -171,7 +171,7 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     9 . 0.81 342.9 -1.9
     9 . 2.07 82.7 63.3
     9 . 1.66 82.6 63.2
-    extend left
+    extend right
     9 10 1.67 82.4 63.3
     extend ignore
     9 . 1.66 80.1 64.3
@@ -185,7 +185,7 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     9 . 2.39 306.1 4.6
     9 . 2.00 297.0 9.0
     9 . 7.90 341.0 -23.5
-    extend left
+    extend right
     10 11 7.07 340.8 -23.6
     extend ignore
     11 . 8.69 347.2 36.9
@@ -210,7 +210,7 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     11 . 1.39 79.7 79.6
     11 . 2.04 81.6 64.8
     11 . 1.68 50.5 58.0
-    extend left
+    extend right
     11 12 3.76 341.6 43.5
     extend ignore
     12 . 5.49 350.9 34.3
@@ -249,7 +249,7 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     13 . 2.66 248.5 19.4
     13 . 2.69 235.3 18.1
     13 . 2.86 223.5 20.9
-    extend left
+    extend right
     13 14 2.06 355.1 5.1
     extend ignore
     14 . 2.06 9.0 4.1
@@ -263,7 +263,7 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
   endcenterline
 
    input "pivnica_2_resurvey-1p.th2"
-  ## input "pivnica_2_resurvey-1s.th2"
+   input "pivnica_2_resurvey-1e.th2"
 
    map m1p -projection plan
      pivnica_2_resurvey-1p
@@ -282,8 +282,9 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
     m2p
     m3p
    endmap
-  ## map m1s -projection extended
-  ##   pivnica_2_resurvey-1s
-  ## endmap
+  
+  map mpivnica_2_resurvey-e -projection extended
+    pivnica_2_resurvey-1e
+  endmap
 
 endsurvey

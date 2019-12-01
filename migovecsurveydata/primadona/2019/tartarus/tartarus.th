@@ -5,6 +5,7 @@ survey tartarus -title "Tartarus"
 
    input "tartarus-1p.th2"
    input "tartarus-1s.th2"
+
 	
 	
 	map mtartarus-p -projection plan
@@ -15,7 +16,7 @@ survey tartarus -title "Tartarus"
      tartarus-1p
    endmap
 
-   map m1s -projection extended
+   map mtartarus-e -projection extended
      tartarus-1s
    endmap
 
