@@ -34,14 +34,19 @@ survey milanova
     units length meters
     units compass clino degrees
     data normal from to length compass clino
-    2	1	44.0	68	76
-3	2	14	188	40	#stn. 3 tocka oznacena z papirjem PPS
-4	3	2.6	198	27
-5	4	3.2	267	53
-6	5	4.0	249	35
-7	6	5.0	202	7
-8	7	5.2	211	43
-9	8	10.4	0	90	#konec strika  
+
+    extend right
+    2 1 44.0  68  76
+    extend right
+    3 2 14  188 40  #stn. 3 tocka oznacena z papirjem PPS
+    extend right
+    4 3 2.6 198 27
+    5 4 3.2 267 53
+    6 5 4.0 249 35
+    7 6 5.0 202 7
+    8 7 5.2 211 43
+    extend vertical
+    9 8 10.4  0 90  #konec strika  
     
   endcentreline
 endsurvey

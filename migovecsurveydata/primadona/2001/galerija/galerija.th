@@ -8,6 +8,7 @@ survey galerija
     galerija-e1
     break
     galerija-2e
+    galerija-e3
   endmap
 
   
@@ -92,11 +93,17 @@ extend left
 extend left
 16	17	4.5	100	0	#direkt pod strikom drugega brezna v galeriji
 17	18	21.3	0	90	#pss svedrovc
+extend right
 18	19	4.3	0	68	#pss svedrovc
+extend right
 19	20	10.55	17	3	
+extend right
 20	21	5.5	0	90	#prvo brezno v galeriji
+extend right
 21	22	5.75	253	44
+extend left
 22	23	6.45	317	3	#tunel
+extend left
 23	24	7.5	331	17
 24	25	5.8	282	-4	#25 pss
 26	25	5.0	52	3

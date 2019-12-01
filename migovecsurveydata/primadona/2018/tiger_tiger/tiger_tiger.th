@@ -1,5 +1,10 @@
 survey tiger_tiger -title "Tiger Tiger streamway"
 	input "tiger_tiger-p.th2"
+	input "tiger_tiger-e.th2"
+
+	map mtiger_tiger-e -projection extended
+		tiger_tiger-e1
+	endmap
 
 	map mtiger_tiger-p -projection plan
 		tiger_tiger-p1
@@ -19,22 +24,33 @@ survey tiger_tiger -title "Tiger Tiger streamway"
     	data normal from to length compass clino
 
     	#Data on 1 page
-
-
-	#Page 1
-2	1	3.73	303	-17
-3	2	9.52	312	-6
-4	3	5.27	350	-13
-5	4	5.69	333	-9
-6	5	2.30	342	-2
-7	6	5.05	310	-8
-8	7	5.62	266	-16
-9	8	6.00	290	-5
-10	9	4.10	268	-9
-11	10	2.92	341	-8
-12	11	4.37	271	-9
-13	12	2.45	288	-45
-13	14	3.50	103	-21
+    	#Page 1
+    	extend left
+    	2	1	3.73	303	-17
+    	extend left
+    	3	2	9.52	312	-6
+    	extend left
+    	4	3	5.27	350	-13
+    	extend left
+    	5	4	5.69	333	-9
+    	extend left
+    	6	5	2.30	342	-2
+    	extend left
+    	7	6	5.05	310	-8
+    	extend left
+    	8	7	5.62	266	-16
+    	extend left
+    	9	8	6.00	290	-5
+    	extend left
+    	10	9	4.10	268	-9
+    	extend left
+    	11	10	2.92	341	-8
+    	extend left
+    	12	11	4.37	271	-9
+    	extend left
+    	13	12	2.45	288	-45
+    	extend right
+    	13	14	3.50	103	-21
 
 #NOTES 
 #STN1 is pitchhead bolt

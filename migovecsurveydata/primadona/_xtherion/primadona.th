@@ -24,6 +24,8 @@ endmap
     join zima00p_1@zima00 tttp_6@ttt
     join s1_l1@prima2:0 s7_l4@prima1:end
     join s1_l1@prima2:end s7_l3@prima1:end
+    join ttt-e1@ttt zima00-2e@zima00
+    join prima1-e3@prima1 prima1-e3@prima1
     
     
 ###______________ 2001_____________ ###
@@ -55,6 +57,8 @@ input "../2001/drugi/drugi.th"
     join s1_l2@drugi:end ent_l2@prima1:0
     join s3_l1@drugi:0 s2_l1@prima1:end
     join s3_l2@drugi:end s2_l2@prima1:0 
+
+    join galerija-2e@galerija galerija-e1@galerija
      
      
 ###______________ 2002_____________ ###
@@ -152,6 +156,7 @@ input "../2001/drugi/drugi.th"
      equate 9@gamblers_ruin 5@udc
      
 
+     join galerija-2e@galerija karstaway-e1@karstaway
      join mfip_1@mfi karstaway-11p@karstaway
      join mfip_2@mfi hotmk-1p@hotmk
      join s1_l1@wac:0 s2_l1@hotmk:end
@@ -179,8 +184,8 @@ input "../2001/drugi/drugi.th"
      join s10_l1@colony:end s1_l1@udc:end
      join s10_l2@colony:0 s1_l2@udc:0
 
-     join karstaway-e1@karstaway mighty_fine_indeed-e1@mfi
-     join mighty_fine_indeed-e1@mfi hall_of_the_mountain_king-e1@hotmk
+     #join karstaway-e1@karstaway mighty_fine_indeed-e1@mfi
+     #join mighty_fine_indeed-e1@mfi hall_of_the_mountain_king-e1@hotmk
      join colony-1e@colony what_a_coincidence-e3@wac
      join e1_l1@TTTr e2_l1@zima00
      join e1_l2@TTTr e2_l2@zima00
