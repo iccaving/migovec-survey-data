@@ -8,5 +8,5 @@ select mprimadona_monatip-e@plateau -map-level 1
 
 #export map -projection plan -o ../_outputs/outline_mig.pdf -layout overview1
 
-export map -projection extended -o ../_outputs/outline_mig_extended.pdf -layout overview2 -layout-debug station-names
+export map -projection extended -o ../_outputs/outline_mig_extended.pdf -layout overview2
 

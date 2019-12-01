@@ -1,5 +1,10 @@
 survey penny_falls -title "Penny falls"
 	input "penny_falls-p.th2"
+	input "penny_falls-e.th2"
+
+	map mpenny_falls-e -projection extended
+		penny_falls-e1
+	endmap
 
 	map m1-p -projection plan
 		penny_falls-p1
@@ -17,10 +22,14 @@ survey penny_falls -title "Penny falls"
 	join penny_falls-p2 penny_falls-p1 
 
 	centreline
-		
+		date 2018.07.22
+		explo-date 2018.07.22
+
 		team "James Wilson"	 notes
 		team "James Hooper"	 insts tape
-		date 2018.07.22
+
+		explo-team "James Wilson"
+		explo-team "James Hooper"
 
 		units length meters
     	units compass clino degrees
@@ -28,30 +37,43 @@ survey penny_falls -title "Penny falls"
 
     	#Data on 2 pages
 
+    	#Page 1
+    	extend left
+    	1	2	4.12	93	56
+    	extend left
+    	2	3	3.70	53	49
+    	extend left
+    	3	4	2.67	38	6
+    	extend right
+    	5	4	1.68	284	-15
+    	extend left
+    	5	6	5.01	46	68
+    	extend left
+    	6	7	1.61	16	16
+    	extend left
+    	7	8	1.85	43	-14
+    	extend left
+    	8	9	3.70	342	00
+    	extend left
+    	9	10	4.31	348	56
+    	extend right
+    	11	10	3.23	242	-13
+    	extend left
+    	11	12	2.85	337	28
+    	extend right
+    	13	12	4.77	243	-30
+    	extend left
 
-		#Page 1
-1	2	4.12	93	56
-2	3	3.70	53	49
-3	4	2.67	38	6
-5	4	1.68	284	-15
-5	6	5.01	46	68
-6	7	1.61	16	16
-7	8	1.85	43	-14
-8	9	3.70	342	00
-9	10	4.31	348	56
-11	10	3.23	242	-13
-11	12	2.85	337	28
-13	12	4.77	243	-30
+        #Page 2
+        extend left
+    	13	14	5.72	15	41
+    	extend right
+    	15	14	1.89	248	-52
 
-		#Page 2
-13	14	5.72	15	41
-15	14	1.89	248	-52
-
-		#NOTES 
-		#STN1 is PSS
-		#STN6 is Bolt
-		#STN15 is ave maria STN1
-
+    	#NOTES 
+    	#STN1 is PSS
+    	#STN6 is Bolt
+    	#STN15 is ave maria STN1	
 
 	endcentreline
 endsurvey

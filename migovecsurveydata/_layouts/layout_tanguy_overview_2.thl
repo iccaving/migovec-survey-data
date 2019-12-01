@@ -20,6 +20,8 @@ layout overview2
 
   
   scale 1 2000
+  
+  colour map-fg map
   symbol-hide group all
   min-symbol-scale M
   map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b"
@@ -32,9 +34,11 @@ layout overview2
   symbol-show point label
   symbol-show point continuation
   symbol-show point entrance
-  #symbol-show point station
   fonts-setup 2 6 8 8 8
-  #map-header 0 0 nw
+  map-header -1 100 ne
+  grid bottom
+  grid-size 10 10 100 m
+  grid-coords border
   #legend on
   
 
