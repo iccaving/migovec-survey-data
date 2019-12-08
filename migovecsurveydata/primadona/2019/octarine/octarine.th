@@ -1,10 +1,15 @@
 # 2019.08.02 created by Rhys Tyers
 
 survey octarine -title "Octarine"
-    input octarine-p.th2
+    input "octarine-p.th2"
+    input "octarine-e.th2"
 
     map moctarine-p -projection plan
         octarine-1p
+    endmap
+
+    map moctarine-e -projection extended
+        octarine-1e
     endmap
 
   centerline
@@ -22,16 +27,27 @@ survey octarine -title "Octarine"
     units compass clino degrees
     data normal from to length compass clino
 	
+    extend left
 	0	1	5.40	271	+05
+    extend vertical
     1	2	10.36	-	UP
+    extend left
     2	3	2.15	330	+33
+    extend left
     3	4	2.40	001	+14
+    extend left
     4	5	6.63	328	+01
+    extend left
     5	6	2.84	037	-02
+    extend left
     6	7	5.03	104	+00
+    extend left
     7	8	3.63	109	+10
+    extend left
     8	9	4.13	015	-05
+    extend vertical
     9	10	4.25	-	UP
+    extend left
     10	11	3.54	056	+04
 	
   endcenterline

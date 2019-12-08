@@ -1,0 +1,30 @@
+; 2019.07.22 written by Jennifer Ryder and Arun Paul and Jack Halliday
+; continuation of Purgatory passager
+; Instrument: Suunto compass and clino
+
+*begin octarine
+  *date 2019.07.22
+  *team "JR JWDH AP" 
+  *units tape meters
+  *units compass degrees
+  *units clino degrees
+  *alias station - ..
+  *flags not splay
+  *data normal from to tape compass clino
+  
+  0	1	5.40	271	+05
+  1	2	10.36	-	UP
+  2	3	2.15	330	+33
+  3	4	2.40	001	+14
+  4 5	6.63	328	+01
+  5	6	2.84	037	-02
+  6	7	5.03	104	+00
+  7	8	3.63	109	+10
+  8	9	4.13	015	-05
+  9	10	4.25	-	UP
+  10	11	3.54	056	+04
+  
+  
+*end octarine
+
+*equate octarine.11 purgatory.4
