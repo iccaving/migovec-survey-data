@@ -71,6 +71,7 @@ input "../2001/drugi/drugi.th"
     equate 57@smer0 17@galerija
     equate 1@spodnji 1@zima00
     equate 1@milanova 11@spodnji
+    equate 1@milanova 0@spodnji_main_chamber_resurvey
    
    # join s1_l1@ajdovscina:0 s2_l1@zima00:end 
     #join s1_l2@ajdovscina:end s2_l2@zima00:0 
@@ -538,6 +539,8 @@ input "../2001/drugi/drugi.th"
      join s1_l3@octarine s1_l3@purgatory
      join s1_l4@octarine s1_l4@purgatory
      join polnoletna-2p@polnoletna ma_je_vlazna-1p@ma_je_vlazna
+     join milanova_e1@milanova spodnji_resurvey-1e@spodnji_main_chamber_resurvey
+     join spodnji_resurvey-1e@spodnji_main_chamber_resurvey pivnica_2_resurvey-1e@pivnica_2_resurvey
 
 
 endsurvey

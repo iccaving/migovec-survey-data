@@ -1,7 +1,11 @@
 encoding  utf-8
 survey sweet_baby_jesus
-  input "sweet_baby_jesusp.th2"
+  input "sweet_baby_jesus-p.th2"
+  input "sweet_baby_jesus-e.th2"
   
+  map msweet_baby_jesus-e -projection extended
+    sweet_baby_jesus-1e
+  endmap
   map msweet_baby_jesus-p -projection plan
     msweet_baby_jesusp_1
     msweet_baby_jesusp_2
@@ -24,6 +28,7 @@ survey sweet_baby_jesus
   
   centreline
     date 2017.07.28
+    explo-date 2017.07.28
     explo-team "Rhys Tyers"
     explo-team "Rebecca Diss"
     
@@ -36,30 +41,53 @@ survey sweet_baby_jesus
     
    #Data on 2 pages
    #Page 1/2
+   extend right
    2	1	5.90	181	-09
+   extend right
    3	2	2.60	073	+11
+   extend vertical
    4	3	3.66	168	+13
+   extend right
    5	4	2.58	085	+17
+   extend right
    6	5	6.55	097	+05
+   extend right
    7	6	8.23	152	-06
+   extend right
    8	7	1.29	244	+09
+   extend right
    9	8	9.17	180	-12
+   extend right
    10	9	6.20	113	-12
+   extend right
    11	10	10.73	159	-49
+   extend right
    12	11	2.59	149	-10
+   extend right
    13	12	6.45	161	-05
+   extend right
    14	13	5.12	169	-21	
+   extend right
 
     #Page 2/2
+    extend right
     16	14	3.89	184	-21
+    extend right
     17	16	6.05	106	+00
+    extend right
     18	17	1.63	134	-41
+    extend right
     19	18	3.44	158	-25
+    extend right
     20	19	5.67	127	+04
+    extend right
     21	20	9.20	145	-01
+    extend vertical
     22	21	4.22	-	UP
     flags duplicate
+    extend left
     23	22	1.81	034	-16
+    extend left
     24	23	5.08	333	+07
     flags not duplicate
 
