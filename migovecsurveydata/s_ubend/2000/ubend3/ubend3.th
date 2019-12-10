@@ -1,11 +1,16 @@
 encoding  utf-8
 survey ubend3
-  input "ubend3p.th2"
+  input "ubend3-p.th2"
+  input "ubend3-e.th2"
   
   map mubend3-p -projection plan
     mubend3p_1
     mubend3p_3
     mubend3p_2
+  endmap
+
+  map mubend3-e -projection extended
+    ubend3-1e
   endmap
   map mubend3p_1 -projection plan
     ubend3p_1
@@ -32,23 +37,38 @@ survey ubend3
     team "Jan Evetts" notes
     
     units length meters
-      units compass clino degrees
+    units compass clino degrees
     
-    1	2	2.4	110	38
-2	3	3.45	184	14
-3	4	3.40	134	13
-4	5	3.30	177	-29
-5	6	3.60	-	down
-6	7	2.5	171	-4
-7	8	2.9	148	-17
-8	9	30	-	down
-9	10	5	209	-60
-10	11	1.30	212	0
-11	12	7.36	-	down
-12	13	5.70	230	2
-13	14	3.10	-	down
-14	15	3.05	100	0
-15	16	16.05	-	down
+    extend right
+    1 2 2.4 110 38
+    extend right
+    2 3 3.45  184 14
+    extend right
+    3 4 3.40  134 13
+    extend right
+    4 5 3.30  177 -29
+    extend vertical
+    5 6 3.60  - down
+    extend right
+    6 7 2.5 171 -4
+    extend right
+    7 8 2.9 148 -17
+    extend vertical
+    8 9 30  - down
+    extend left
+    9 10  5 209 -60
+    extend left
+    10  11  1.30  212 0
+    extend vertical
+    11  12  7.36  - down
+    extend left
+    12  13  5.70  230 2
+    extend vertical
+    13  14  3.10  - down
+    extend left
+    14  15  3.05  100 0
+    extend vertical
+    15  16  16.05 - down
     
   endcentreline
 

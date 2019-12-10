@@ -6,7 +6,7 @@ survey monatip4
   map mmonatip4-e -projection extended
     monatip4-e1
     monatip4-e2
-    #monatip4-e3
+    monatip4-e4
   endmap
 
   map mmonatip4-p -projection plan
@@ -56,35 +56,35 @@ survey monatip4
     
     units length meters
     units compass clino degrees
-    extend right
+    extend left
     1  2  5.97  249  +03  # .1 2 3 25 -
-    extend right
+    extend left
     2  3  2.97  230  -40  # .2 0 1 7 17
-    extend right
+    extend left
     3  4  3.45  256  +14               # .3 0.5 2 1.5 2
-    extend right
+    extend left
     4  5  3.51  185  -01  # .4 0.5 0.5 2 0
-    extend right
+    extend left
     5  6  2.65  240  -03  # .5 0 1 4 1.7
-    extend right
+    extend left
     6  7  2.65  -  down  # .6 0.5 0 0.5 2.65
-    extend right
+    extend left
     7  8  5.38  185  -45  # .7 0 0.5 0.5 1.5
-    extend right
+    extend left
     8  9  12.50  155  +12  # .8 2 3 30 0
-    extend right
+    extend left
     9  10  4.04  160  -15  # .9 4 0 0.5 2
-    extend right
+    extend left
     10  11  4.59  147  -06  # .10 1 1.5 1 0
-    extend right
+    extend left
     11  12  3.70  112  -03  # .11 1.5 0 0.5 1.7
-    extend right
+    extend left
     12  13  3.32  125  +14  # .12 0 0.5 0 0.5
-    extend right
+    extend left
     13  14  4.54  133  -14  # .13 1 1 0 1
-    extend right
+    extend left
     14  15  4.16  164  +03  # .14 1 2 1 0
-    extend right
+    extend left
     15  16  2.65  126  -12  # .15 3 0 0 1.5
     extend right
 
