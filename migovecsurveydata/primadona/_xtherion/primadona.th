@@ -196,6 +196,11 @@ input "../2001/drugi/drugi.th"
      join e1_l6@TTTr e1_l6@buckwheat
      join e1_l7@TTTr e1_l7@wac
      join e1_l8@TTTr e1_l8@wac
+
+     join colony-1e@colony upside_down_chamber-1e@udc
+     join upside_down_chamber-1e@udc gamblers_ruin-1e@gamblers_ruin
+     join colony-1e@colony tight_and_scrotty-1e@tight_and_scrotty
+     join tight_and_scrotty-1e@tight_and_scrotty upside_down_chamber-1e@udc
      
      
      
@@ -310,6 +315,7 @@ input "../2001/drugi/drugi.th"
      join electric_dreams-p1@electric_dreams more_like_welding-p3@more_like_welding
 
      join TTTr-p3@TTTr zima00p_2@zima00
+     join jack_of_hearts-2e@jack_of_hearts smer0-e1@smer0
      
 ###______________ ../2018_____________ ###
 
@@ -463,7 +469,16 @@ input "../2001/drugi/drugi.th"
       join come_up_smiling-p1@come_up_smiling come_up_smiling_2-p1@come_up_smiling_2
 
       join electric_dreams-p1@electric_dreams odessey-p1@odessey
+      join lost_in_a_dream-e1@lost_in_a_dream lost_in_a_dream_2-e1@lost_in_a_dream_2
+      join lost_in_a_dream_2-e1@lost_in_a_dream_2 ave_maria-e1@ave_maria
+      join lost_in_a_dream_2-e1@lost_in_a_dream_2 penny_falls-e1@penny_falls
+      join penny_falls-e1@penny_falls penny_falls_2-e1@penny_falls_2
+      join tiger_tiger-e1@tiger_tiger deeper_than_most-e1@deeper_than_most
+      join canticle_for_migovec-1e@canticle_for_migovec testify-2e@testify
 
+      join pivnica_resurvey-e1@pivnica_resurvey snakebite-e1@snakebite
+      join snakebite-e1@snakebite snakebitetwo-e1@snakebitetwo
+      join snakebitetwo-e1@snakebitetwo ave_maria-e1@ave_maria
 
 
       #equates
@@ -541,6 +556,12 @@ input "../2001/drugi/drugi.th"
      join polnoletna-2p@polnoletna ma_je_vlazna-1p@ma_je_vlazna
      join milanova_e1@milanova spodnji_resurvey-1e@spodnji_main_chamber_resurvey
      join spodnji_resurvey-1e@spodnji_main_chamber_resurvey pivnica_2_resurvey-1e@pivnica_2_resurvey
+     join sump_404_lead_not_found-1s@sump_404_lead_not_found angel_delight-1s@angel_delight
+     join angel_delight-1s@angel_delight testify-1e@testify
+     join ad_aspera_per_aqua-1s@ad_aspera_per_aqua the_aqueduct-1s@the_aqueduct
+     join lachrymosa-1s@lachrymosa artemis-1s@artemis
+     join tartarus-1s@tartarus artemis-1s@artemis
+     join poseidon_rift-1s@poseidon_rift street-wise_hercules-1s@street-wise_hercules
 
 
 endsurvey

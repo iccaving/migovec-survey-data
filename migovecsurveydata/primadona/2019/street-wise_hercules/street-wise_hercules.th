@@ -67,7 +67,7 @@ survey street-wise_hercules -title "street-wise_hercules"
     0 . 2.87 144.0 51.3
     0 . 6.07 130.6 69.3
     0 . 10.63 167.4 73.0
-    extend left
+    extend right
     0 1 10.09 171.1 58.9
     # extend auto
     1 . 4.33 244.3 78.4
@@ -87,7 +87,7 @@ survey street-wise_hercules -title "street-wise_hercules"
     1 . 1.04 109.9 35.1
     1 . 1.09 103.1 71.5
     1 . 2.55 190.1 78.2
-    extend left
+    extend right
     1 2 5.99 169.7 -7.2
     # extend auto
     2 . 2.78 48.2 82.7
@@ -108,7 +108,7 @@ survey street-wise_hercules -title "street-wise_hercules"
     2 . 2.95 330.9 -48.2
     2 . 3.53 344.6 -32.1
     2 . 3.81 336.8 -34.4
-    extend left
+    extend right
     2 3 3.75 153.7 64.4
     # extend auto
     3 . 6.74 325.0 0.7
@@ -130,7 +130,7 @@ survey street-wise_hercules -title "street-wise_hercules"
     3 . 14.05 194.5 20.0
     3 . 8.35 194.1 22.5
     3 . 10.51 194.8 23.4
-    extend left
+    extend right
     3 4 7.94 192.2 31.9
     # extend auto
     4 . 2.43 291.0 79.7
@@ -155,7 +155,7 @@ survey street-wise_hercules -title "street-wise_hercules"
     4 . 12.45 357.7 35.8
     4 . 7.15 9.2 30.4
     4 . 2.33 344.9 10.0
-    extend left
+    extend right
     4 5 5.56 201.1 0.0
     # extend auto
     5 . 12.70 7.0 -2.5
@@ -165,14 +165,18 @@ survey street-wise_hercules -title "street-wise_hercules"
     5 . 3.52 178.5 45.6
     5 . 1.33 153.7 41.7
     5 . 3.11 192.1 66.5
-    extend right
-    5 6 2.93 342.3 61.6
-    6 7 3.36 334.3 29.7
     extend left
+    5 6 2.93 342.3 61.6
+    extend left
+    6 7 3.36 334.3 29.7
+    extend right
     7 8 1.51 218.9 18.0
 	flags duplicate
+    extend right
     8 9 2.94 136.9 20.8
+    extend left
     9 10 4.94 207.8 40.9
+    extend right
     10 11 6.88 196.1 8.7
 	flags not duplicate
   endcenterline
