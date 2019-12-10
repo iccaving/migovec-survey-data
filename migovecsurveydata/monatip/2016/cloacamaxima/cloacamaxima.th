@@ -7,6 +7,7 @@ survey cloacamaxima
     cloacamaxima-e1
     cloacamaxima-e2
     cloacamaxima-e3
+    cloacamaxima-e4
   endmap
   
   map mcloacamaxima-p -projection plan
@@ -94,11 +95,11 @@ survey cloacamaxima
     15  16  11.80  322  -45
     extend right
     12  16  6.27  198  -05
-    extend left
-    12  17  8.31  017  +31
     extend right
-    18  17  2.81  206  -10
+    12  17  8.31  017  +31
     extend left
+    18  17  2.81  206  -10
+    extend right
     18  19  7.77  026  +12
     extend left
     20  19  2.55  219  -11
@@ -132,27 +133,27 @@ survey cloacamaxima
     33  32  4.18  119  +64
     extend left
     33  34  5.70  023  +07
-    extend right
-    35  34  5.07  142  -33
     extend left
-    35  36  6.00  015  +17
+    35  34  5.07  142  -33
     extend right
+    35  36  6.00  015  +17
+    extend left
     37  36  3.54  204  -22
 
     #PAGE 4
-    extend left
+    extend right
     37  38  1.96  305  +14
-    extend right
+    extend left
     39  38  27.22  188  -14
-    extend left
+    extend right
     39  40  8.58  013  +12
-    extend right
+    extend left
     41  40  2.19  236  -16
-    extend left
-    41  42  9.08  020  +10
     extend right
-    43  42  2.97  291  +31
+    41  42  9.08  020  +10
     extend left
+    43  42  2.97  291  +31
+    extend right
     43  44  1.61  070  -27
     extend left
     44  45  6.54  002  +16

@@ -5,7 +5,9 @@ encoding  utf-8
 
 scrap monatip1-s1 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
-point 328.1943 366.2458 entrance -align l -scale xl -orientation 90
+point 170 390 label -text "MONATIP" -align l -scale xl
+
+point 450 00 entrance -align l -scale xl -orientation 90
 line wall 
   4662.5876 -113.1794
   4664.246 -60.0447
