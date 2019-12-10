@@ -9,10 +9,12 @@ encoding  utf-8
 #             the format is good, trust me                    |
 #_____________________________________________________________|
 
+ #2017.12.31 [100 100 100] "2016 Neprehojene Poti and 2017 Cez Rob"  
+ #2018.12.31 [100 100 100] "2018 Klic Globin" 
 
-lookup topo-date
- [1999.12.31 2018.12.31] [100 100 100] "before 2019"
- 2019.12.31 [100 0 0] "2019 findings"  
+lookup explo-date
+ [1999.12.31 2018.12.31] [100 100 100] "before 2017"
+ 2019.12.31 [100 50 50] "2019 Maraton"  
 endlookup
 
 
@@ -24,10 +26,10 @@ layout overview1
 #_____________________________________________________________|
 
   language en
-  debug all
-  scale 1 500
+  #debug all
+  scale 1 2000
   
-  #colour map-fg topo-date
+  colour map-fg explo-date
   symbol-hide group all
   min-symbol-scale M
   map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b"

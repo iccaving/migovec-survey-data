@@ -2,29 +2,45 @@ survey gamblers_ruin
 	#Expedition Neprehojene Poti
 	#Draughting rift off Upside Down chamber
 
-	input gamblers_ruin-p.th2
+	input "gamblers_ruin-p.th2"
+	input "gamblers_ruin-e.th2"
 
 	map mgamblers_ruin-p -projection plan
 		gamblers_ruin-p1
 	endmap
-	
+
+	map mgamblers_ruin-e -projection extended
+		gamblers_ruin-1e
+	endmap
+
 
 	centreline
 		explo-date 2016.07.26
-		explo-team "Jack Hare" "Miriam North" "Clare Tan" "Rhys Tyers"
+		explo-team "Jack Hare" 
+		explo-team "Miriam [North Ridao]" 
+		explo-team "Clare Tan" 
+		explo-team "Rhys Tyers"
 
 		date 2016.07.26
 		team "Jack Hare" insts tape
 		team "Miriam North" insts tape
 		
 		#Page 1/1
+		extend right
 		1	2	8.67	160	+45
+		extend right
 		2	3	4.92	165	+40
+		extend right
 		3	4	5.87	145	+05
+		extend left
 		5	4	5.76	-	down
+		extend right
 		5	6	4.87	135	+75
+		extend left
 		7	6	3.23	315	-25
+		extend left
 		8	7	5.08	010	-45
+		extend right
 		8	9	2.11	140	+15
 
 		#NOTES 

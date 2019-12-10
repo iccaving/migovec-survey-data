@@ -35,7 +35,14 @@ survey angel_delight -title "angel_delight"
 
   centerline
     date 2019.07.25 
-    # team Tanguy Racine 
+    explo-date 2019.07.25 
+    explo-team "Tanguy Racine"
+    explo-team "Rhys Tyers"
+    explo-team "James Wilson"
+
+    team "Tanguy Racine" insts notes
+    team "James Wilson" dog
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
