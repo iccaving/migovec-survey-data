@@ -46,10 +46,18 @@ survey sump_404_lead_not_found -title "sump_404_lead_not_found"
 
   centerline
     date 2019.07.25 
-    # team Tanguy Racine JW RT 
+    explo-date 2019.07.25 
+    team "Tanguy Racine" insts notes
+    team  "James Wilson" dog 
+
+    explo-team "Rhys Tyers"
+    explo-team "Tanguy Racine"
+    explo-team "James Wilson"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
+
     # extend auto
     0 . 0.79 214.7 85.9
     0 . 1.50 266.2 6.2

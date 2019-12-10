@@ -11,6 +11,13 @@ encoding  utf-8
 
 # first we open the layout
 
+lookup explo-date
+ [1999.12.31 2015.12.31] [100 100 100] "before 2017"
+ 2017.12.31 [100 80 60] "2016 Neprehojene Poti and 2017 Cez Rob"  
+ 2018.12.31 [60 60 100] "2018 Klic Globin"  
+ 2019.12.31 [100 60 60] "2019 Maraton"  
+endlookup
+
 layout overview2
 
 #_____________________________________________________________
@@ -21,7 +28,7 @@ layout overview2
   
   scale 1 2000
   
-  colour map-fg map
+  colour map-fg explo-date
   symbol-hide group all
   min-symbol-scale M
   map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b"
