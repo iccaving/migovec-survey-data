@@ -24,8 +24,9 @@ endmap
     join zima00p_1@zima00 tttp_6@ttt
     join s1_l1@prima2:0 s7_l4@prima1:end
     join s1_l1@prima2:end s7_l3@prima1:end
-    join ttt-e1@ttt zima00-2e@zima00
+    join ttt-e1@ttt zima00-3e@zima00
     join prima1-e3@prima1 prima1-e3@prima1
+
     
     
 ###______________ 2001_____________ ###
@@ -59,6 +60,8 @@ input "../2001/drugi/drugi.th"
     join s3_l2@drugi:end s2_l2@prima1:0 
 
     join galerija-2e@galerija galerija-e1@galerija
+    join drugi-2e@drugi prima1-e1@prima1
+
      
      
 ###______________ 2002_____________ ###
@@ -77,9 +80,8 @@ input "../2001/drugi/drugi.th"
     #join s1_l2@ajdovscina:end s2_l2@zima00:0 
     #join spodnjip_1@spodnji zima00p_6@zima00
     join spodnjip_3@spodnji milanovap_1@milanova
-    
-    join s1_l1@smer0:end s4_l1@galerija:0
-    join s1_l2@smer0:0 s4_l2@galerija:end
+
+    join smer0-e1@smer0 galerija-e1@galerija
     
 ###______________ 2004_____________ ###
      input "../2004/popotresni/popotresni.th"
@@ -201,6 +203,13 @@ input "../2001/drugi/drugi.th"
      join upside_down_chamber-1e@udc gamblers_ruin-1e@gamblers_ruin
      join colony-1e@colony tight_and_scrotty-1e@tight_and_scrotty
      join tight_and_scrotty-1e@tight_and_scrotty upside_down_chamber-1e@udc
+     join smer0-e1@smer0 the_stile-s1@the_stile
+     join the_stile-s1@the_stile cattlegrid-e3@cattlegrid
+     join galerija-2e@galerija quantum_state-1e@quantum_state
+     join quantum_state-1e@quantum_state terminus-1e@terminus
+     join what_a_disappointment-1e@what_a_disappointment what_a_coincidence-e1@wac
+     join karstaway-e1@karstaway entirely_my_fault-1e@entirely_my_fault
+
      
      
      
@@ -304,13 +313,17 @@ input "../2001/drugi/drugi.th"
      join dejavup_1@dejavu zima00p_1@zima00
      join s3_l1@pov:end s3_l1@apple_crumble:end
      join s3_l6@pov s3_l2@apple_crumble
-
      join batmere-p1@batmere mandare_low-p1@mandare_low
-     
      join electric_dreams-p1@electric_dreams more_like_welding-p3@more_like_welding
-
      join TTTr-p3@TTTr zima00p_2@zima00
      join jack_of_hearts-2e@jack_of_hearts smer0-e1@smer0
+     join cattlegrid-e2@cattlegrid fenestrator-s1@fenestrator
+     join plumbers_paradise-e1@plumbers_p fenestrator-s1@fenestrator
+     join hammerhead2-1e@hammerhead2 hammerhead-1e@hammerhead
+     join hammerhead-1e@hammerhead dejavu-1e@dejavu
+     join hammerhead2-2e@hammerhead2 dogfish-1e@dogfish
+     join dogfish-1e@dogfish high_and_dry-1e@high_and_dry
+     join hammerhead2-1e@hammerhead2 hammerhead3-1e@hammerhead3
      
 ###______________ ../2018_____________ ###
 
@@ -414,6 +427,7 @@ input "../2001/drugi/drugi.th"
     join holy_moley-e1@holy_moley sweet_baby_jesus-1e@sweet_baby_jesus
 
     join sweet_baby_jesus-1e@sweet_baby_jesus hallelujah-1e@hallelujah
+    join come_up_smiling-s1@come_up_smiling galerija-e1@galerija
 ### hammerhead branch ###
      
 ### alabaster branch ###
@@ -478,6 +492,9 @@ input "../2001/drugi/drugi.th"
       join pivnica_resurvey-e1@pivnica_resurvey snakebite-e1@snakebite
       join snakebite-e1@snakebite snakebitetwo-e1@snakebitetwo
       join snakebitetwo-e1@snakebitetwo ave_maria-e1@ave_maria
+
+      join come_up_smiling-s1@come_up_smiling come_up_smiling_2-s1@come_up_smiling_2
+      join come_up_smiling_2-s1@come_up_smiling_2 smer0-e1@smer0
 
 
       #equates

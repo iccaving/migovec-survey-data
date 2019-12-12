@@ -1,10 +1,17 @@
 survey hammerhead2 -title "Hammerhead 2"
 
-	input hammerhead2-p.tH2
+	input "hammerhead2-p.th2"
+	input "hammerhead2-e.th2"
 
 	map mhammerhead2-p -projection plan
 		hammerhead2-p1
 		hammerhead2-p2
+	endmap
+
+	map mhammerhead2-e -projection extended
+		hammerhead2-2e
+		break
+		hammerhead2-1e
 	endmap
 
 	join hammerhead2-p1 hammerhead2-p2
@@ -19,30 +26,53 @@ survey hammerhead2 -title "Hammerhead 2"
 
 		#data on 2 pages
 		#Page 1/2
+		extend right
 		2	1	9.95	083	+35
+		extend right
 		2	3	5.73	250	-34
+		extend vertical
 		3	4	8.32	-	DOWN
+		extend left
 		2	5	5.00	175	+31
+		extend left
 		5	6	10.95	207	-17
+		extend left
 		6	7	2.82	100	+37
+		extend vertical
 		7	8	8.11	-	DOWN
+		extend left
 		8	9	8.44	157	+04
+		extend right
 		10	9	3.40	342	+08
+		extend left
 		10	11	2.89	215	+02
+		extend left
 		11	12	17.40	216	-64
 
 		#Page 2/2
+		extend left
 		14	13	16.65	215	-10
+		extend right
 		14	15	8.96	025	+09
+		extend left
 		16	15	2.77	214	-48
+		extend right
 		16	17	5.26	068	+18
+		extend left
 		18	17	6.53	137	+24
+		extend left
 		19	18	8.30	185	+13
+		extend right
 		19	20	3.57	013	-11
+		extend right
 		20	12	4.35	345	-17
+		extend right
 		17	21	5.26	080	-40
+		extend left
 		22	21	4.08	273	+18
+		extend right
 		22	23	8.30	018	+02
+		extend right
 		23	24	2.95	085	-02
 	endcentreline
 
