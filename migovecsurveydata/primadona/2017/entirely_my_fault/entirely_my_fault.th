@@ -1,9 +1,14 @@
 survey entirely_my_fault -title "Entirely my fault"
 	input "entirely_my_fault-p.th2"
+	input "entirely_my_fault-e.th2"
 
 	map mentirely_my_fault-p -projection plan
 		entirely_my_fault-p1
 		entirely_my_fault-p2
+	endmap
+
+	map mentirely_my_fault-e -projection extended
+		entirely_my_fault-1e
 	endmap
 
 	centreline
@@ -13,31 +18,49 @@ survey entirely_my_fault -title "Entirely my fault"
 		team "Jack Hare" notes
 		team "James Wilson" tape insts
 
-		explo-team "Jack Hare" "James Wilson"
+		explo-team "Jack Hare" 
+		explo-team "James Wilson"
 
 		#data on two pages
 		
 		#Page 1/2
+		extend vertical
 		2	1	9.30	-	DOWN
 		3	2	9.19	-	DOWN
+		extend left
 		4	3	7.52	241	-55
-		5	4	3.71	218	-23	
+		extend left
+		5	4	3.71	218	-23
+		extend left
 		6	5	2.72	187	-35
+		extend left
 		7	6	3.28	177	+08
+		extend left
 		9	8	3.85	174	-25
+		extend left
 		10	9	12.83	230	-80
+		extend right
 		11	10	3.66	265	-70
+		extend right
 		12	11	5.25	331	-46
+		extend right
 		13	12	4.41	280	-62
 
 		#Page 2/2
+		extend right
 		13	14	1.62	324	+05
+		extend left
 		14	7	0.99	001	+01
+		extend right
 		7	15	3.26	039	+43
+		extend right
 		15	16	6.95	002	+43
 		flags duplicate
+		extend right
 		16	17	8.43	008	+01
+		extend right
 		17	18	4.95	021	-23
+		extend right
 		18	19	3.88	101	+06
 		flags not duplicate
 

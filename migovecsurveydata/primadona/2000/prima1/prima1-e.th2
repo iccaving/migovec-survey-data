@@ -5,16 +5,16 @@ encoding  utf-8
 
 scrap prima1-e1 -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m] -projection extended
 
-point 283.4825 576.6812 entrance -align l -scale xl -orientation 90
-point 248.7948 580.6166 label -text PRIMADONA -align l -scale m
-point 577.4813 387.731 label -text "M+" -align r -scale m
+point 283.4825 576.6812 entrance -align l -scale xl -orientation 90.0
+point 248.7948 580.6166 label -text PRIMADONA -align l -scale xl
+point 577.4813 387.731 label -text "M+" -align r -scale xl
 line wall -subtype invisible
   329.0563 565.9603
   305.0 557.75
 endline
 
-point 608.5 213.75 label -text "Spiral Climb" -align t -scale l
-point 759.5 129.25 label -text "Lost and Found" -align t -scale l
+point 608.5 213.75 label -text "Spiral Climb" -align t -scale xl
+point 759.5 129.25 label -text "Lost and Found" -align t -scale xl
 point 309.0 560.75 station -name 35
 point 319.25 561.5 station -name 34
 point 384.25 500.75 station -name 33
@@ -69,10 +69,10 @@ line wall -subtype blocks
 endline
 
 line wall 
-  509.5093 434.4924
-  507.7593 432.2424 506.874 432.9172 504.374 433.4172
-  501.874 433.9172 503.0 443.75 500.0 444.5
-  497.0 445.25 492.0 447.75 485.75 449.0
+  513.7932 426.6521
+  512.0432 424.4021 504.7346 429.5157 502.3533 430.4266
+  499.4925 431.5209 497.9079 438.4962 494.9079 439.2462
+  491.9079 439.9962 492.0 447.75 485.75 449.0
   479.5 450.25 475.25 447.5 475.25 455.0
   475.25 462.5 469.75 469.0 467.5 473.25
   465.25 477.5 469.75 479.75 464.75 481.5
@@ -116,23 +116,23 @@ line wall
   566.25 395.0 566.75 408.5 566.75 410.5
   566.75 412.5 561.5 416.25 561.5 416.25
   561.5 416.25 561.0 420.5 559.25 421.25
-  557.5 422.0 545.25 415.5 545.25 415.5
-  528.1522 417.4248
-  528.1522 417.4248 515.6973 423.8929 515.6973 426.8929
-  515.6973 427.8161 516.0045 432.6451 516.0045 432.6451
+  557.5 422.0 549.453 412.1861 549.453 412.1861
+  536.3158 413.3834
+  536.3158 413.3834 527.094 413.8703 527.094 416.8703
+  527.094 417.7935 526.0271 420.8443 526.0271 420.8443
 endline
 
-line label -text "Bear pitch" -scale l
+line label -text "Bear pitch" -scale xl
   470.0 362.75
   470.0 362.75 515.0 325.75 555.0 312.75
 endline
 
-line label -text "Entrance chamber" -scale l
+line label -text "Entrance chamber" -scale xl
   280.0 495.75
   280.0 495.75 345.0 473.75 384.0 460.75
 endline
 
-line label -text "Entrance series" -scale l
+line label -text "Entrance series" -scale xl
   493.0 529.75
   493.0 529.75 666.0 397.75 785.0 281.75
 endline
@@ -204,35 +204,31 @@ line rock-border -close on
 endline
 
 line rock-border -close on
-  500.25 416.25
-  493.0 416.5
-  494.0 411.5
-  499.75 413.5
-  500.25 416.25
+  501.1842 414.7293
+  493.9342 414.9793
+  494.9342 409.9793
+  500.6842 411.9793
 endline
 
 line rock-border -close on
-  510.75 425.75
-  502.25 425.5
-  502.75 420.5
-  508.75 422.75
-  510.75 425.75
+  509.1842 419.9793
+  500.6842 419.7293
+  501.1842 414.7293
+  507.1842 416.9793
 endline
 
 line rock-border -close on
-  511.5 413.0
-  509.0 416.5
-  501.25 414.0
-  506.75 409.25
-  511.5 413.0
+  510.9342 410.9793
+  508.4342 414.4793
+  500.6842 411.9793
+  506.1842 407.2293
 endline
 
 line rock-border -close on
-  518.0 409.5
-  515.5 412.75
-  512.0 409.75
-  515.0 407.25
-  518.0 409.5
+  516.4643 406.4286
+  513.9643 409.6786
+  510.4643 406.6786
+  513.4643 404.1786
 endline
 
 line rock-border -close on
@@ -625,7 +621,7 @@ point 741.25 217.5 station -name 4
 point 750.0 165.25 station -name 3
 point 778.5 165.5 station -name 2
 point 793.5 168.5 station -name 1
-line label -text "Lost and Found Junction" -scale l
+line label -text "Lost and Found Junction" -scale xl
   704.0 139.5
   704.0 139.5 741.25 134.0 792.5 140.5
 endline

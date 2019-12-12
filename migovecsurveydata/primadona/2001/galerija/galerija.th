@@ -50,6 +50,7 @@ survey galerija
   #join galerijap_4 galerijap_5
   centreline
     date 2001.09.21
+    explo-date 2001.09.21
     team "Tomaž Tivadar" insts
     team "Tomaž Kragelj" notes
 
@@ -101,12 +102,15 @@ extend right
 20	21	5.5	0	90	#prvo brezno v galeriji
 extend right
 21	22	5.75	253	44
-extend left
+extend right
 22	23	6.45	317	3	#tunel
-extend left
+extend right
 23	24	7.5	331	17
-24	25	5.8	282	-4	#25 pss
+extend right
+24	25	5.8	282	-4
+extend left	#25 pss
 26	25	5.0	52	3
+extend left
 26	27	10	302	24
 extend left
 27	28	3.65	218	0

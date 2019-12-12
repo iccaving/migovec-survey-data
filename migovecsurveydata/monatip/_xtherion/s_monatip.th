@@ -26,7 +26,11 @@ input monatip_map.th
   #Scrap joins
   join monatip2p_1@monatip2 monatip1p_5@monatip1
   join monatip3p_2@monatip3 broken_hammerp_1@broken_hammer 
- 
+  join monatip1-s1@monatip1 monatip2-e1@monatip2
+  join monatip2-e1@monatip2 monatip3-e1@monatip3
+  join monatip3-e1@monatip3 broken_hammer-e1@broken_hammer
+  join monatip4-e4@monatip4 broken_hammer-e2@broken_hammer
+
  #Line joins
   join s2_l2@monatip4:0 s2_l2@broken_hammer:0
   join s2_l1@monatip4:end s2_l1@broken_hammer:end 
@@ -34,10 +38,16 @@ input monatip_map.th
   join s5_l1@monatip4:end s1_l1@doubletime:0
   join s5_l2@monatip4:0 s1_l2@doubletime:end
 
+
+
+
+
   ######________________2012________________######
   input "../2012/monatip5/monatip5.th"
 
   equate 27@monatip5 27@monatip2
+
+  join monatip5-1e@monatip5 monatip2-e1@monatip2
   
   ######________________2016________________######
   input "../2016/therock/therock.th"
@@ -66,6 +76,10 @@ input monatip_map.th
   equate PSEUDO12@therock 0@alkatraz_disto_resurvey
 
   join aleksandrija-1p@aleksandrija monatip2p_2@monatip2
+
+  join well_hung-e1@well_hung cloacamaxima-e3@cloacamaxima
+  join well_hung-e1@well_hung monatip4-e4@monatip4
+  join alkatraz_disto_resurvey-1s@alkatraz_disto_resurvey cloacamaxima-e1@cloacamaxima
 
 endsurvey
 

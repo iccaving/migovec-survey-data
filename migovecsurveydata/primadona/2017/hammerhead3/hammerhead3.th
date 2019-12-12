@@ -1,9 +1,14 @@
 survey hammerhead3 -title "Hammerhead 3"
 
 	input "hammerhead3-p.th2"
+    input "hammerhead3-e.th2"
 
 	map mhammerhead3-p -projection plan
 		hammerhead3-p1
+	endmap
+
+	map mhammerhead3-e -projection extended
+		hammerhead3-1e
 	endmap
 
 	centreline
@@ -19,9 +24,13 @@ survey hammerhead3 -title "Hammerhead 3"
 	#Data on 1 page
 
 	#PAGE 1/1
+	extend vertical
 	1	2	8.76	-	UP
+	extend right
 	2	3	3.75	016	+32
+	extend vertical
 	3	4	2.54	-	UP
+	extend vertical
 	4	5	7.67	018	+14
 
 	endcentreline
