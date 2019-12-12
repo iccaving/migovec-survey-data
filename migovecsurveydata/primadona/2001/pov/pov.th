@@ -6,6 +6,7 @@ survey pov
 
    map mpov-e -projection extended
     pov-e1
+    break
     pov-e2
   endmap
 
@@ -84,9 +85,9 @@ survey pov
   14  15  5.4  13  58
   extend left
   15  16  5.7  358  11 #tocka 15 PSS je 10 cm pod svedrovcem
-  extend left
+  extend right
   16  17  7.05  62  14
-  extend left
+  extend right
   17  18  9.4  352  30  #tocka 18 je PSS
   extend left
   18  19  6.95  7  9  #tocka 19 stojis na lulcku
@@ -109,9 +110,9 @@ survey pov
   flags duplicate
   extend left
   27  28  3.25  318  0  # sredina sejne sobe
-  extend right
+  extend left
   28  29  4.45  64  -12  #poskusne tocke ne veljajo!!!!
-  extend right
+  extend left
   29  30  9.25  121  -14  #poskusne tocke
   extend right
   30  31  4.8  53  14  #poskusne tocke

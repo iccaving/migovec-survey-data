@@ -1,6 +1,7 @@
 encoding  utf-8
 survey dejavu
   input "dejavu-p.th2"
+  input "dejavu-e.th2"
   
   map mdejavu-p -projection plan
     mdejavu-p1
@@ -19,6 +20,10 @@ survey dejavu
   map mdejavu-p3 -projection plan
     dejavup_3
   endmap
+
+  map mdejavu-e -projection extended
+    dejavu-1e
+  endmap
   
   centreline
     date 2016.07.20
@@ -33,17 +38,29 @@ survey dejavu
     data normal from to length compass clino
     
     #PAGE 1
+    extend left
     1  2  5.01  021  +36
+    extend left
     2  3  6.22  314  +13
+    extend left
     3  4  4.22  291  -17
+    extend left
     4  5  3.54  078  +05
+    extend left
     5  6  4.92  060  -02
+    extend left
     6  7  4.92  061  +37
+    extend left
     7  8  1.75  107  -11
+    extend left
     8  9  6.65  038  +44
+    extend left
     9  10  15.05  308  +25
+    extend left
     10  11  2.39  171  -31
+    extend left
     11  12  18.76  221  +12
+    extend left
     11  13  17.26  210  -21
     flags duplicate
     1   1A  9.06  139 +10

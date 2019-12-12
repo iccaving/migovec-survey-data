@@ -1,11 +1,11 @@
 encoding  utf-8
 source "../_xtherion/plateau.th"
 
-input "../_layouts/layout_tanguy_overview_1.thl"
+#input "../_layouts/layout_tanguy_overview_1.thl"
 input "../_layouts/layout_tanguy_overview_2.thl"
 
 select mprima_ubend_monatip-p@plateau -map-level 1
-select mprimadona_monatip-e@plateau -map-level 1
+select mprimadona_monatip-e@plateau -map-level 0
 
 
 #export map -projection plan -o ../_outputs/outline_mig_by_topo_date.pdf -layout overview1

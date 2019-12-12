@@ -1,5 +1,6 @@
 survey dogfish -title "Dogfish"
 	input "dogfish-p.th2"
+	input "dogfish-e.th2"
 
 	map mdogfish-p -projection plan
 		dogfish-p1
@@ -11,6 +12,10 @@ survey dogfish -title "Dogfish"
 
 	map mdogfish-p2 -projection plan
 		dogfish-p2
+	endmap
+
+	map mdogfish-e -projection extended
+		dogfish-1e
 	endmap
 
 
@@ -26,15 +31,23 @@ survey dogfish -title "Dogfish"
 		explo-team "Jarvist Frost"
 
 		#Page 1
-		
+		extend right
 		6	7	4.70	107	-05
+		extend left
 		6	8	4.25	283	+25
+		extend left
 		8	9	6.24	228	+41
+		extend left
 		9	10	2.49	217	-33
+		extend left
 		2	1	6.28	206	-25
+		extend right
 		2	3	2.62	036	+36
+		extend right
 		3	4	3.77	011	+18
+		extend right
 		4	5	3.11	123	+59
+		extend right
 		5	6	2.14	172	+35
 
 		#NOTES 

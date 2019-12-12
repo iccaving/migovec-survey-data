@@ -5,8 +5,11 @@ survey cloacamaxima
 
   map mcloacamaxima-e -projection extended
     cloacamaxima-e1
-    cloacamaxima-e2
+    break
     cloacamaxima-e3
+    break
+    cloacamaxima-e2
+    break
     cloacamaxima-e4
   endmap
   
@@ -51,6 +54,9 @@ survey cloacamaxima
   join cloacamaximap_4 cloacamaximap_5
   join cloacamaximap_6 cloacamaximap_5
   join cloacamaximap_6 cloacamaximap_3
+
+  join cloacamaxima-e2 cloacamaxima-e4
+  join cloacamaxima-e2 cloacamaxima-e3
   
   centreline
     date 2016.07.30

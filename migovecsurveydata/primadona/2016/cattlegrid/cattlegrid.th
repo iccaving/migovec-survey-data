@@ -19,9 +19,11 @@ survey cattlegrid
   
 
   map mcattlegrid-e -projection extended
-    cattlegrid-e1
-    cattlegrid-e3
     cattlegrid-e2
+    break
+    cattlegrid-e3
+    break
+    cattlegrid-e1
   endmap
 
   centreline

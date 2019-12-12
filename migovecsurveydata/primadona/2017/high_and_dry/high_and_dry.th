@@ -1,10 +1,15 @@
 survey high_and_dry -title "High and Dry"
 
 	input "high_and_dry-p.th2"
+	input "high_and_dry-e.th2"
 
 	map mhigh_and_dry-p -projection plan
 		high_and_dry-p1
 		high_and_dry-p2
+	endmap
+
+	map mhigh_and_dry-e -projection extended
+		high_and_dry-1e
 	endmap
 
 	centreline
@@ -15,19 +20,31 @@ survey high_and_dry -title "High and Dry"
 		team "James Wilson" tape
 		team "William French" insts
 
-		explo-team "Tanguy Racine" "James Wilson" "William French"
+		explo-team "Tanguy Racine" 
+		explo-team "James Wilson" 
+		explo-team "William French"
 
 		#PAGE 1/1
+		extend left
 		2	1	2.00	232	+04
+		extend vertical
 		2	3	6.20	-	UP
 		3	4	4.94	-	UP
+		extend right
 		4	5	2.33	077	-09
+		extend right
 		5	6	8.68	099	+55
+		extend right
 		6	7	4.58	152	+11
+		extend right
 		7	8	15.09	128	+69
+		extend right
 		8	9	6.38	073	+04
+		extend vertical
 		9	10	3.55	-	UP
+		extend right
 		10	11	2.70	044	+18
+		extend left
 		11	12	1.24	237	+11
 
 

@@ -36,6 +36,8 @@ survey s_ubend -title "U-bend 571"
   join det-1e@det ubend3-1e@ubend3
   join ubend3-1e@ubend3 ubend-1e@ubend
   join ubend-1e@ubend ubend2-1e@ubend2
+  join det-1e@det bathtub-1e@bathtub
+  join bathtub-1e@bathtub drainpipe-1e@drainpipe
 
 
 endsurvey
