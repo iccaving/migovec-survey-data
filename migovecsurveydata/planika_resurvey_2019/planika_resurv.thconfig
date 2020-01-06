@@ -1,14 +1,19 @@
 encoding  utf-8
 source planika.th
 
-input ../_layouts/layout1.th
-
-select mplanika-p@planika
-
-export map -o planika_plan.pdf -projection plan -layout local1
+input ../_layouts/layout_tanguy_basic_1.th
+input ../_layouts/layout_tanguy_basic_2.th
 
 select mplanika-e@planika
 
-export map -o planika_extended.pdf -projection extended -layout local1
+export map -o planika_extended.pdf -projection extended -layout map2
+
+select mplanika-p@planika
+
+export map -o planika_plan.pdf -projection plan -layout map1
+
+export model -o planika_resurv.3d -fmt survex
+
+
 
 #export model -o planika_model.lox

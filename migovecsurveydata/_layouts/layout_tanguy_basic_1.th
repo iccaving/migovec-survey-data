@@ -19,11 +19,13 @@ layout map1
 #_____________________________________________________________|
 
   language en
-  scale 1 400
+  scale 1 250
   legend on
-  map-header 95 95 ne
+  map-comment "Cadaster Number: 8953<br><br>Entrance coordinates (UTM 33):<br>a: 404.254 E 5.122.827 N, 1787 m asl<br>b: 404.249 E 5.122.816 N, 1777 m asl"
+  map-header -50 100 ne
   statistics topo-length off
-  fonts-setup 6 12 16 21 28
+  fonts-setup 6 10 14 21 28
+  map-image 50 -5 ne "../planika_resurvey_2019/planika_extended.pdf"
 
 code metapost 
 #_____________________________________________________________
@@ -312,12 +314,47 @@ code metapost
       thclean Path;
       thfill Path withpattern pattern_ice_MY;
     enddef;
+
+
     
     # SNOW
+    beginpattern(pattern_snow_MY);
+        pickup PenC;
+        p:=(-.15u,0)--(.15u,0);
+        draw p;
+        draw p rotated -60;
+        draw p rotated 60;
+        patternxstep(0.8u);
+        patternystep(0.8u);
+        patterncolor(0,0.7,0.9);
+    endpattern;
+
     def a_snow_MY (expr P) =
       T:=identity;
-      thclean P;
-      thfill P withcolor (0.96, 0.96, 1);
+      pickup PenC;
+      path q; q = bbox P;
+      picture tmp_pic, tmp_sn; 
+      pair z;
+      tmp_sn := image(
+        pickup PenC;
+        p := origin--(0,.2*u);
+        draw p; draw p rotated (60); draw p rotated (120);
+        draw p rotated (180); draw p rotated (240); draw p rotated (300);
+        
+      );
+      tmp_pic := image(
+        for i = xpart llcorner q step 1u until xpart urcorner q:
+          for j = ypart llcorner q step 1u until ypart urcorner q:
+            z:=((i,j) randomized 1.u);
+      if xpart (P intersectiontimes ((bbox tmp_sn) shifted z)) < 0:
+              draw tmp_sn shifted z;
+      fi;
+          endfor;  
+        endfor;
+      );
+      clip tmp_pic to P;
+      drawoptions();
+      draw tmp_pic;
     enddef;
     
     # SEDIMENTARY FILLS
@@ -489,6 +526,8 @@ endcode
  symbol-assign line survey MY
  symbol-assign point station MY
  symbol-hide point passage-height
+ symbol-hide point remark
+ symbol-hide line arrow
  symbol-colour point station-name [70 0 0]
  
  ## water and ice
@@ -496,6 +535,7 @@ endcode
  symbol-assign area snow MY
  
  symbol-colour area ice [0 70 90]
+ symbol-colour area snow [0 70 90]
  symbol-colour area water [0 10 70]
  symbol-colour area sump [0 10 70]
  symbol-colour point water-flow [0 10 70]

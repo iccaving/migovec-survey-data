@@ -20,15 +20,21 @@ layout map2
 
   language en
   #debug all
-  scale 1 800
+  scale 1 500
   legend on
   map-header -1 100 off
   statistics topo-length off
   grid bottom
   grid-size 10 10 20 m
   grid-coords border
-  map-image 95 105 se ../victoria_cave/outputs/victoria_main_plan.pdf
-  fonts-setup 6 12 16 21 28
+  #map-image 95 105 se ../victoria_cave/outputs/victoria_main_plan.pdf
+  fonts-setup 6 10 14 21 28
+
+code tex-map
+    \def\maplayout{
+  \legendbox{5}{5}{SW}{\scalebar}
+  }
+  endcode
 
 code metapost 
 #_____________________________________________________________
@@ -299,8 +305,30 @@ code metapost
     # SNOW
     def a_snow_MY (expr P) =
       T:=identity;
-      thclean P;
-      thfill P withcolor (0.96, 0.96, 1);
+      pickup PenC;
+      path q; q = bbox P;
+      picture tmp_pic, tmp_sn; 
+      pair z;
+      tmp_sn := image(
+        pickup PenC;
+        p := origin--(0,.2*u);
+        draw p; draw p rotated (60); draw p rotated (120);
+        draw p rotated (180); draw p rotated (240); draw p rotated (300);
+        
+      );
+      tmp_pic := image(
+        for i = xpart llcorner q step 1u until xpart urcorner q:
+          for j = ypart llcorner q step 1u until ypart urcorner q:
+            z:=((i,j) randomized 1.u);
+      if xpart (P intersectiontimes ((bbox tmp_sn) shifted z)) < 0:
+              draw tmp_sn shifted z;
+      fi;
+          endfor;  
+        endfor;
+      );
+      clip tmp_pic to P;
+      drawoptions();
+      draw tmp_pic;
     enddef;
     
     # SEDIMENTARY FILLS
@@ -326,6 +354,17 @@ code metapost
       thclean Path;
       thfill Path withpattern pattern_clay_MY;
     enddef;
+
+    beginpattern(pattern_snow_MY);
+        pickup PenC;
+        p:=(-.15u,0)--(.15u,0);
+        draw p;
+        draw p rotated -60;
+        draw p rotated 60;
+        patternxstep(0.8u);
+        patternystep(0.8u);
+        patterncolor(0,0.7,0.9);
+    endpattern;
     
     ## now deprecated?
     def a_thing_MY (expr p) =
@@ -478,6 +517,7 @@ endcode
  symbol-assign area snow MY
  
  symbol-colour area ice [0 70 90]
+ symbol-colour area snow [0 70 90]
  symbol-colour area water [0 10 70]
  symbol-colour point water-flow [0 10 70]
  symbol-colour point station-name [70 0 0]
@@ -503,7 +543,7 @@ endcode
  symbol-colour area clay [65 55 10]
  symbol-colour line wall:clay [65 55 10]
  symbol-colour area sand [85 75 10]
- symbol-colour line border [25 25 25]
+ symbol-colour line border [0 70 90]
  
  ## misc
  symbol-assign point gradient MY
