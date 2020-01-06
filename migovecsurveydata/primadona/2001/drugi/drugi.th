@@ -8,25 +8,21 @@ survey drugi
    drugip_1  
   endmap
   
-  map mdrugip_2 -projection plan
-   drugip_2  
-  endmap
-  
   map mdrugip_3 -projection plan
    drugip_3  
   endmap
   
   map mdrugi-p -projection plan
-    mdrugip_2
     mdrugip_1
     mdrugip_3
   endmap
-  join drugip_1 drugip_2
 
   map mdrugi-e -projection extended
     drugi-1e
     drugi-2e
   endmap
+
+  join drugip_3 drugip_1
   
   centreline
   date 2001.07.18

@@ -85,13 +85,13 @@ endscrap
 
 scrap povp_2 -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
-point 338.75 -228.25 label -text "Mlinotest" -scale s
+point 308.75 -232.25 label -text "Mlinotest" -scale xl -align r
 
 area water
-  l37-286--218
+  l37-286-218
 endarea
 
-line border -id l37-286--218 -close on
+line border -id l37-286-218 -close on
   287.5 -218.0
   287.5 -218.0 287.0 -222.75 287.5 -224.0
   288.0 -225.25 289.5 -229.25 290.75 -227.75
@@ -101,10 +101,10 @@ line border -id l37-286--218 -close on
 endline
 
 area water
-  l35-288--246
+  l35-288-246
 endarea
 
-line border -id l35-288--246 -close on
+line border -id l35-288-246 -close on
   288.75 -249.5
   288.75 -246.25 288.25 -245.0 286.5 -245.75
   284.75 -246.5 281.5 -248.75 280.5 -250.0
@@ -466,10 +466,10 @@ endscrap
 scrap povp_4 -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
 area water
-  l86-272--566
+  l86-272-566
 endarea
 
-line border -id l86-272--566 -close on
+line border -id l86-272-566 -close on
   257.0 -564.5
   259.25 -575.25
   268.5 -584.5
