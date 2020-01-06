@@ -70,8 +70,11 @@ survey planika -title "Planika Jama 2019 resurvey"
    endmap
 
   centerline
-    date 2019.06.19 
-    # team Tanguy Racine 
+    date 2019.06.19
+    team "Tanguy Racine" notes
+    team "Jana Čarga" dog
+    team "Charlotte Honiat" tape insts
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

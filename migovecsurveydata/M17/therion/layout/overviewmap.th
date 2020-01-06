@@ -1,20 +1,27 @@
 layout overview
-	scale 1 1000
+	scale 1 500
 
-	symbol-hide group all
+	
 	symbol-show line wall
 	symbol-show area snow
 	symbol-show area ice
 	symbol-show point entrance
 	symbol-show point water-flow
   symbol-show line border
+  symbol-hide point remark
+  symbol-hide line arrow
+  symbol-hide line survey
+  symbol-hide point station
+  symbol-hide point stalagmite
 
-	map-header 0 0 off
-	code tex-map
-    	\def\maplayout{
-  	\legendbox{0}{-15}{SW}{\scalebar}
-  	}
-	code metapost
+  map-comment "Cadastral number: 5878<br><br>Entrance coordinates (UTM 33N):<br>a: 404.465 E 5.122.965 N <br>b: 404.459 E 5.122.963 N <br>c: 404.458 E 5.122.930 N "
+	map-header -10 95 ne
+  legend on
+	
+
+  # NORTH ARROW (contributions of Thomas Holder)
+   
+  code metapost
 
   def s_scalebar (expr l, units, txt) =
     begingroup
@@ -57,6 +64,13 @@ layout overview
     label.top(thTEX(decimal (0)),origin+(0,lblht));
     endgroup
   enddef; 
+
+  def p_u_probe_MY(expr P,R,S,A)=
+      U:=(.2u,.2u);
+      pickup PenD;
+      T:=identity aligned A rotated R scaled S shifted P;
+      thfill (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle withcolor(0.25,0.45,1);
+    enddef;
   
 	def l_contour_MY(expr P)(text txt) =
       T:=identity;
@@ -70,6 +84,13 @@ layout overview
         fi;
         exitif pnt<0;
       endfor;
+    enddef;
+
+
+    def l_u_oldsnow_MY (expr P) =
+      T:=identity;
+      pickup PenB;
+      thdraw P withcolor(45,65,1);
     enddef;
     
     def l_u_openshaft_MY (expr P) =
@@ -186,9 +207,10 @@ layout overview
 
     def p_u_logger_MY (expr P,R,S,A)=
       U:=(.2u,.2u);
+      pickup PenD;
       T:=identity aligned A rotated R scaled S shifted P;
-      thdraw (-.3u,-.3u)--(-.3u,.3u)--(.3u,.3u)..(.3u,-.3u)--cycle;
-      thfill (-.2u,-.2u)--(-.2u,.2u)--(.2u,.2u)..(.2u,-.2u)--cycle;
+      thdraw (-.15u,-.15u)--(-.15u,.15u)--(.15u,.15u)..(.15u,-.15u)--cycle;
+      thfill (-.1u,-.1u)--(-.1u,.1u)--(.1u,.1u)..(.1u,-.1u)--cycle;
     enddef;
       
     def a_water_MY (expr p) =
@@ -335,6 +357,8 @@ layout overview
     initsymbol("l_wall_ice_MY");
     initsymbol("l_u_icewall_MY");
     initsymbol("p_anchor_MY");
+    initsymbol("p_u_probe_MY")
+    initsymbol("l_u_oldsnow_MY");
 
 
   endcode
@@ -368,3 +392,7 @@ layout overview
  symbol-colour point water-flow [10 25 55]
  symbol-assign point anchor MY 
 endlayout
+
+text en "point u:logger_MY"  "logger"
+text en "line u:flowstone_MY" "flowstone  wall"
+text en "point u:probe_MY" "C14 probe"
