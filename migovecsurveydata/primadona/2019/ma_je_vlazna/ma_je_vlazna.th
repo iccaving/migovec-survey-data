@@ -2,6 +2,13 @@ survey ma_je_vlazna -title "ma je vlažna"
 # First part of below_donji_milanovac survey
 
 	input "ma_je_vlazna-p.th2"
+	input "ma_je_vlazna-e.th2"
+
+	map mma_je_vlazna-e -projection extended
+		ma_je_vlazna-1e
+		break
+		ma_je_vlazna-2e
+	endmap
 
 	map mma_je_vlazna-p -projection plan -title "ma je vlažna"
 		ma_je_vlazna-1p
@@ -21,15 +28,23 @@ survey ma_je_vlazna -title "ma je vlažna"
 		units length meters
 	    units compass clino degrees
 	    data normal from to length compass clino
-
+	    extend left
 	    1	2	3.9	257	+42
+	    extend vertical
 	    2	3	8.6	-	up
+	    extend right
 	    3	4	9.7	194	-5
+	    extend right
 	    3	5	3.1	310	-59
+	    extend vertical
 	    5	6	7.6	-	down
+	    extend left
 	    3	7	13	004	+30
+	    extend left
 	    7	8	9.7	008	+69
+	    extend left
 	    8	9	12	025	+71
+	    extend left
 	    9	10	6.4	112	+8
 	endcentreline
 
