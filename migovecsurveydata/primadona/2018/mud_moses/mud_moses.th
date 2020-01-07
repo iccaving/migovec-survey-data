@@ -1,5 +1,10 @@
 survey mud_moses -title "Mud Moses"
 	input "mud_moses-p.th2"
+	input "mud_moses-e.th2"
+
+	map mmud_moses-e -projection extended
+		mud_moses-e1
+	endmap
 
 	map mmud_moses-p -projection plan
 		mmud_moses-p1
@@ -21,13 +26,23 @@ survey mud_moses -title "Mud Moses"
 		team "Jack Hare" notes
 		team "Nick Koukoulekeidis" tape insts
 
+		explo-team "Jack Hare"
+		explo-team "Nick Koukoulekeidis"
+
 		#Page 1
+		extend left
 		1	2	3.21	268	-42
+		extend left
 		2	3	4.29	299	+06
+		extend left
 		3	4	5.07	350	+10
+		extend left
 		4	5	6.99	005	+35
+		extend left
 		5	6	5.00	060	+31
+		extend left
 		6	7	9.46	036	+35
+		extend left
 		7	8	4.55	141	+12 
 	endcentreline
 endsurvey

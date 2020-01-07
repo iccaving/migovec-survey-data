@@ -12,7 +12,7 @@ encoding  utf-8
 # first we open the layout
 
 lookup explo-date
- [1999.12.31 2017.12.31] [100 100 100] "before 2018"
+ [1999.12.31 2018.12.31] [100 100 100] "before 2018"
  2019.12.31 [100 50 50] "2018 and 2019 expeditions"  
 endlookup
 
@@ -29,7 +29,7 @@ layout overview2
   colour map-fg explo-date
   symbol-hide group all
   min-symbol-scale M
-  map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b"
+  map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Kat. Št.: 8282<br><br>U-Bend 571<br>Kat. Št.: 12114<br><br>Mona tip<br>Kat. Št.: 10180"
   symbol-show line wall
   symbol-show area water
   symbol-show area sump
@@ -39,15 +39,20 @@ layout overview2
   symbol-show point label
   symbol-show point continuation
   symbol-show point entrance
-  #symbol-show line map-connection
+  symbol-show line map-connection
   symbol-show point camp
-  fonts-setup 2 6 8 8 8
-  map-header -1 100 ne
-  grid bottom
-  grid-size 10 10 100 m
-  grid-coords border
-  statistics topo-length on
-  #legend on
+  fonts-setup 8 11 11 11 11
+  map-header 0 0 nw
+  colour-legend on
+  legend on
+
+  code tex-map
+  \framethickness=0.5mm
+      \def\maplayout{
+    \legendbox{91}{99}{N}{\size[26]\the\cavename}
+    \legendbox{91}{90}{N}{\size[10]\the\comment}
+    \legendbox{93}{70}{N}{\scalebar}
+    }
   
 
 code metapost 
@@ -111,7 +116,7 @@ code metapost
      label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
      label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
      label.top(thTEX(decimal (0)),origin+(0,lblht));
-     label.bot(thTEX("ELEVATION 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+     label.bot(thTEX("IZTEGNJENI PROFIL 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
     endgroup
    enddef; 
 

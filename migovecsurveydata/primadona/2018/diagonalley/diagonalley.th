@@ -1,5 +1,10 @@
 survey diagonalley -title "Diagonalley"
-	input diagonalley-p.th2
+	input "diagonalley-p.th2"
+	input "diagonalley-e.th2"
+
+	map mdiagonalley-e -projection extended
+		diagonalley-e1
+	endmap
 
 	map mdiagonalley-p -projection plan
 		diagonalley-p1
@@ -19,8 +24,11 @@ survey diagonalley -title "Diagonalley"
 		explo-team "David Kirkpatrick"
 
 		#Page 1
+		extend vertical
 		1	2	9.70	-	down
+		extend right
 		2	3	1.55	149	14
+		extend vertical
 		3	4	4.90	-	down
 	endcentreline
 endsurvey

@@ -427,6 +427,13 @@ input "../2001/drugi/drugi.th"
 
     join sweet_baby_jesus-1e@sweet_baby_jesus hallelujah-1e@hallelujah
     join come_up_smiling-s1@come_up_smiling galerija-e1@galerija
+
+    join mouseleum-1s@mouseleum mouseleum_2-1e@mouseleum_2
+    join mouseleum_2-1e@mouseleum_2 chocolate_river-1e@chocolate_river
+    join moonraker-1s@moonraker mouseleum-1s@mouseleum
+    join diagonalley-e1@diagonalley damp_squib-e1@damp_squib
+    join fenestrator-s1@fenestrator battery_flattery-1e@battery_flattery
+    join upotyn-1e@upotyn mud_moses-e1@mud_moses
 ### hammerhead branch ###
      
 ### alabaster branch ###
@@ -496,6 +503,8 @@ input "../2001/drugi/drugi.th"
       join come_up_smiling_2-s1@come_up_smiling_2 smer0-e1@smer0
 
 
+
+
       #equates
       equate 1@lumos 6@hammerhead2
       equate 3@lumos 3@hammerhead
@@ -505,6 +514,8 @@ input "../2001/drugi/drugi.th"
       equate 0@come_up_smiling 5@come_up_smiling_2
       equate 0@come_up_smiling_2 46@smer0
       equate 8@come_up_smiling 23@cattlegrid
+
+
 
 
 ###______________ 2019_____________ ###
@@ -581,6 +592,9 @@ input "../2001/drugi/drugi.th"
      join drugi-1e@drugi belladonna-1s@belladonna
      join belladonna-1p@belladonna drugip_1@drugi
      join s1_l1@belladonna ent_l1@prima1
+     join artemis-1s@artemis poseidon_rift-1s@poseidon_rift
+     join ma_je_vlazna-1e@ma_je_vlazna polnoletna-1e@polnoletna
+     join polnoletna-1e@polnoletna milanova_e1@milanova
 
 endsurvey
 
