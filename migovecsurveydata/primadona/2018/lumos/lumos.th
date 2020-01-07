@@ -1,6 +1,11 @@
 survey lumos -title "Lumos"
 	
-	input lumos-p.th2
+	input "lumos-p.th2"
+	input "lumos-e.th2"
+
+	map mlumos-e -projection extended
+		lumos-e1
+	endmap
 	map mlumos-p -projection plan
 		mlumos-p3
 		mlumos-p2
@@ -50,8 +55,11 @@ survey lumos -title "Lumos"
 		#page 2
 		14	2	1.00	275	-40
 		15	16	4.54	212	-17
+		extend right
 		16	17	4.90	196	-4
+		extend vertical
 		17	18	8.5	-	down
+		extend right
 		18	19	4.5	300	-7
 		20	17	6.5	140	-37
 		21	20	3.35	240	30

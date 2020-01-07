@@ -1,5 +1,6 @@
-survey mouseleum_2 -title "Mouseleum 2 (continuation)"
+survey mouseleum_2 -title "Mouseleum 2"
 	input "mouseleum_2-p.th2"
+	input "mouseleum_2-e.th2"
 
 	map m1-p -projection plan
 		mouseleum_2-p1
@@ -14,12 +15,15 @@ survey mouseleum_2 -title "Mouseleum 2 (continuation)"
 		m2-p
 	endmap
 	
+	map mmouseleum_2-e -projection extended
+		mouseleum_2-1e
+	endmap
 	centreline
 		explo-team "James Wilson"
-		explo-team "David Wilson"
+		explo-team "David [P Wilson]"
 
 		team "James Wilson"	 notes
-		team "David Wilson"	 insts tape
+		team "David [P Wilson]"	 insts tape
 		date 2018.08.01
 		explo-date 2018.08.01
 
@@ -28,24 +32,27 @@ survey mouseleum_2 -title "Mouseleum 2 (continuation)"
     	data normal from to length compass clino
 
     	#Data on 1 page
+    	#Page 1
+    	extend left
+    	1	2	5.86	337	-18
+    	extend left
+    	3	1	4.52	014	-59
+    	extend left
+    	4	3	4.00	290	-56
+    	extend left
+    	5	4	2.11	008	+06
+    	extend right
+    	6	5	4.07	248	-73
+    	extend right
+    	7	6	7.40	136	-36
+    	extend right
+    	8	7	5.21	235	-52
 
-
-#Page 1
-1	2	5.86	337	-18
-3	1	4.52	014	-59
-4	3	4.00	290	-56
-5	4	2.11	008	+06
-6	5	4.07	248	-73
-7	6	7.40	136	-36
-8	7	5.21	235	-52
-
-#NOTES 
-#STN1 is  pss
-#STN4 is bolt
-#STN3 is mini cairn
-#STN6 is bolt
-#STN8 is mouseleum STN0
-
-
+    	#NOTES 
+    	#STN1 is  pss
+    	#STN4 is bolt
+    	#STN3 is mini cairn
+    	#STN6 is bolt
+    	#STN8 is mouseleum STN0
 	endcentreline
 endsurvey
