@@ -8,9 +8,9 @@ select mprima_ubend_monatip-p@plateau -map-level 1
 select mprimadona_monatip-e@plateau -map-level 0
 
 
-export map -projection plan -o ../_outputs/outline_mig_by_topo_date.pdf -layout overview1
+export map -projection plan -o ../_outputs/map/outline_mig_by_topo_date.pdf -layout overview1
 
 export model -o ../_outputs/model/primadona_ubend_monatip.3d 
 
-export map -projection extended -o ../_outputs/outline_mig_extended_by_topo_date.pdf -layout overview2
+export map -projection extended -o ../_outputs/map/outline_mig_extended_by_topo_date.pdf -layout overview2
 
