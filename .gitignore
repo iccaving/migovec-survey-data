@@ -325,3 +325,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Outputs of Therion
+*.sql
+*.3d
+*.err
+*.dat
+*.inf
