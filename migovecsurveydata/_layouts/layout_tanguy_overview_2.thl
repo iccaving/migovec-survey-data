@@ -11,10 +11,10 @@ encoding  utf-8
 
 # first we open the layout
 
-lookup explo-date
- [1999.12.31 2018.12.31] [100 100 100] "before 2018"
- 2019.12.31 [100 50 50] "2018 and 2019 expeditions"  
-endlookup
+#lookup explo-date
+ #[1999.12.31 2018.12.31] [100 100 100] "before 2018"
+ #2019.12.31 [100 50 50] "2018 and 2019 expeditions"  
+#endlookup
 
 layout overview2
 
@@ -25,11 +25,14 @@ layout overview2
 
   
   scale 1 2000
-  
+  language fr
   colour map-fg explo-date
   symbol-hide group all
   min-symbol-scale M
-  map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Kat. Št.: 8282<br><br>U-Bend 571<br>Kat. Št.: 12114<br><br>Mona tip<br>Kat. Št.: 10180"
+  ## SLO: 
+  map-comment "Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180"
+  ## ENG:
+  ##map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
   symbol-show line wall
   symbol-show area water
   symbol-show area sump
@@ -39,6 +42,7 @@ layout overview2
   symbol-show point label
   symbol-show point continuation
   symbol-show point entrance
+  symbol-show point dig
   symbol-show line map-connection
   symbol-show point camp
   fonts-setup 8 11 11 11 11
@@ -175,7 +179,23 @@ code metapost
       if cycle P: thclean P fi;
       thdraw P withcolor (0.3,0.3,0.3);
     enddef;
-    
+
+#_____________________________________________________________
+#                                                             |
+#                            POINT TYPES                      |
+#_____________________________________________________________|
+
+     # CAMPSITE
+      def p_camp_MY (expr P,R,S,A)=
+        U:=(0.1u,0.1u);
+        T:=identity aligned A rotated R scaled S shifted P;
+        q:= (0,0)--(0.36u,0)--(0,.75u)--(-0.36u,0)--cycle;
+        p:= (0,0)--(0,.75u);
+        pickup PenB;
+        thfill q withcolor (1,0,0);
+        thdraw q withcolor (0,0,0);
+        thdraw p withcolor (0,0,0);
+     enddef;
 #_____________________________________________________________
 #                                                             |
 #                            AREA TYPES                       |
@@ -210,6 +230,7 @@ code metapost
     initsymbol("l_wall_blocks_MY");
 
     initsymbol("l_wall_flowstone_MY");
+    initsymbol("p_camp_MY");
    
    
    ## areas
@@ -229,6 +250,7 @@ endcode
  symbol-assign area water MY
  symbol-assign line wall:blocks MY
  symbol-assign line wall:flowstone MY
+ symbol-assign point camp MY
 
  symbol-assign area clay MY
 

@@ -5,9 +5,11 @@ encoding  utf-8
 
 scrap prima1-e1 -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m] -projection extended
 
+point 419.7174 485.8213 dig -scale xl
+
 point 283.4825 576.6812 entrance -align l -scale xl -orientation 90.0
 point 248.7948 580.6166 label -text PRIMADONA -align l -scale xl
-point 577.4813 387.731 label -text "M+" -align r -scale xl
+point 577.4813 387.731 label -text "<lang:end>Bear Pitch<lang:fr>M+" -align r -scale xl
 line wall -subtype invisible
   329.0563 565.9603
   305.0 557.75
@@ -358,7 +360,6 @@ line wall
   390.4416 536.9266 388.5149 541.0112 388.7649 545.0112
 endline
 
-point 430.75 514.0 dig -align tr -scale xl
 line wall 
   383.2255 545.8965
   383.2537 542.6032 377.4906 535.1446 373.9906 531.1446
@@ -534,7 +535,7 @@ line wall -close on -outline in
   785.9674 196.4919 780.7137 191.723 779.8246 191.4806
 endline
 
-point 742.25 222.25 dig -align tr -scale xl
+point 742.25 222.25 dig -align tr -scale xs
 line wall 
   774.0 217.25
   772.75 216.25 753.5 221.5 750.5 220.0

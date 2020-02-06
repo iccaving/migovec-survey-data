@@ -25,14 +25,17 @@ layout overview1
 #                        GENERAL STATEMENTS                   |
 #_____________________________________________________________|
 
-  language en
+  language fr
   #debug all
   scale 1 2000
   
   colour map-fg explo-date
   symbol-hide group all
   min-symbol-scale M
-  map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Kat. Št.: 8282<br><br>U-Bend 571<br>Kat. Št.: 12114<br><br>Mona tip<br>Kat. Št.: 10180"
+  ## SLO: 
+  map-comment "Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180"
+  ## ENG:
+  ##map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
   symbol-show line wall
   symbol-show area water
   symbol-show area sump
@@ -41,6 +44,7 @@ layout overview1
   symbol-show line chimney
   symbol-show point label
   symbol-show point continuation
+  symbol-show point dig
   symbol-show point entrance
   symbol-show point camp
   fonts-setup 8 12 12 12 12
@@ -118,7 +122,7 @@ code metapost
      label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
      label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
      label.top(thTEX(decimal (0)),origin+(0,lblht));
-     label.bot(thTEX("TLORIS 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+     label.bot(thTEX("PLAN 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
     endgroup
    enddef; 
        
@@ -175,6 +179,23 @@ code metapost
       pickup PenA;  
       thdraw P withcolor(1,0.5,0.1);
     enddef;
+
+#_____________________________________________________________
+#                                                             |
+#                            POINT TYPES                      |
+#_____________________________________________________________|
+
+     # CAMPSITE
+      def p_camp_MY (expr P,R,S,A)=
+        U:=(0.1u,0.1u);
+        T:=identity aligned A rotated R scaled S shifted P;
+        q:= (0,0)--(0.36u,0)--(0,.75u)--(-0.36u,0)--cycle;
+        p:= (0,0)--(0,.75u);
+        pickup PenB;
+        thfill q withcolor (1,0,0);
+        thdraw q withcolor (0,0,0);
+        thdraw p withcolor (0,0,0);
+     enddef;
     
     
 #_____________________________________________________________
@@ -208,6 +229,7 @@ code metapost
     initsymbol("l_wall_blocks_MY");
 
     initsymbol("l_wall_flowstone_MY");
+    initsymbol("p_camp_MY");
    
    
    ## areas
@@ -228,7 +250,7 @@ endcode
  symbol-assign line wall:blocks MY
  symbol-assign line wall:flowstone MY
  symbol-assign line pit AUT
- 
+ symbol-assign point camp MY
 
  symbol-assign area clay MY
 
