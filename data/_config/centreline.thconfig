@@ -1,0 +1,11 @@
+source "../_xtherion/system_migovec.th"
+
+layout mycentreline
+	debug all
+	scale 1 1000
+	symbol-hide group all
+	symbol-show point station
+	symbol-show line survey
+endlayout
+
+export map -projection extended -o ../_outputs/centreline_extended.pdf -layout mycentreline
