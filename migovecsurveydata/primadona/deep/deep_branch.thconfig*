@@ -1,8 +1,0 @@
-encoding  utf-8
-source deep_prima.th
-
-input layout.th
-
-
-export map -o deep_prima.pdf -projection plan -layout local -layout-debug station-names
-#export model -o deep_prima.lox
