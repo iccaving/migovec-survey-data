@@ -1,9 +1,0 @@
-encoding  utf-8
-source "../primadona/_xtherion/primadona_extend.th"
-
-input ../_layouts/layout1.th
-
-select mprimadona-e@primadona-e
-export map -o ../_outputs/entrance_series_elevation.pdf -projection extended -layout local1 -layout-debug station-names
-
-export model -o ../_outputs/primadona.lox
