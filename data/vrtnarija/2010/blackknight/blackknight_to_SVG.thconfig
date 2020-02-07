@@ -1,0 +1,5 @@
+source blackknight.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o blackknight.svg -layout test -layout-debug station-names

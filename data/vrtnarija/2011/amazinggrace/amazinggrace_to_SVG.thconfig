@@ -1,0 +1,5 @@
+source amazinggrace.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o amazinggrace.svg -layout test -layout-debug station-names

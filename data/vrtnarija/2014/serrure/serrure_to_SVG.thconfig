@@ -1,0 +1,5 @@
+source serrure.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o serrure.svg -layout test -layout-debug station-names

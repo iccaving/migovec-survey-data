@@ -1,0 +1,5 @@
+source giblet_breakfast.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o giblet_breakfast.svg -layout test -layout-debug station-names

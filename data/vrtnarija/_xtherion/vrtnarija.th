@@ -17,19 +17,20 @@ map mvrtnarija-p -projection plan -title "Vrtnarija"
 	mskynet-p@skynet
 	mzimmer-p@zimmer
 	mfriendship-p@friendship
+	mcandyMountain-p@candyMountain
 endmap
 
 ###__________2000____________###
-input ../2000/bclent2/bclent2.th #bclent is the original but wrong survey!
-input ../2000/laurel/laurel.th
-input ../2000/urinal/urinal.th
-input ../2000/urinal2/urinal2.th
-input ../2000/pico/pico.th
-input ../2000/pico2/pico2.th
-input ../2000/tesselator/tesselator.th
-input ../2000/space_odyssey/space_odyssey.th
-input ../2000/concorde/concorde.th
-input ../2000/alchemy/alchemy.th
+input "../2000/bclent2/bclent2.th" #bclent is the original but wrong survey!
+input "../2000/laurel/laurel.th"
+input "../2000/urinal/urinal.th"
+input "../2000/urinal2/urinal2.th"
+input "../2000/pico/pico.th"
+input "../2000/pico2/pico2.th"
+input "../2000/tesselator/tesselator.th"
+input "../2000/space_odyssey/space_odyssey.th"
+input "../2000/concorde/concorde.th"
+input "../2000/alchemy/alchemy.th"
 
 equate 18@laurel 15@bclent2
 equate 1@laurel 9@urinal
@@ -48,12 +49,12 @@ join space_odyssey-p2@space_odyssey concorde-p1@concorde
 join alchemy-p2@alchemy concorde-p1@concorde
 
 ###__________2001____________###
-input ../2001/banzai/banzai.th #which also includes fistful of tolar
-input ../2001/pink/pink.th
-input ../2001/pink2/pink2.th
-input ../2001/skynet/skynet.th
-input ../2001/zimmer/zimmer.th
-input ../2001/friendship/friendship.th
+input "../2001/banzai/banzai.th" #which also includes fistful of tolar
+input "../2001/pink/pink.th"
+input "../2001/pink2/pink2.th"
+input "../2001/skynet/skynet.th"
+input "../2001/zimmer/zimmer.th"
+input "../2001/friendship/friendship.th"
 
 equate 14@banzai 1@alchemy
 equate 18@pink 12@banzai
@@ -64,5 +65,12 @@ equate 3@zimmer 1@friendship
 
 join pink-p1@pink banzai-p2@banzai
 join pink-p3@pink pink2-p1@pink2
+
+###__________2003____________###
+input "../2003/candyMountain/candyMountain.th"
+input "../2003/highway32/highway32.th"
+
+equate 11@candyMountain 23@friendship
+equate 1@candyMountain 32@highway32
 
 endsurvey
