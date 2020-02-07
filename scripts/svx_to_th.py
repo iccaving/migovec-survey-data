@@ -88,7 +88,12 @@ endsurvey
     survey_equates=survey_equates.strip(),
     converted_from=converted_from.strip())
 
-therion_file_path = svx_file_path.replace('.svx', '.th')
+folder_file_path =  svx_file_path.replace('.svx', '')
+therion_file_path = os.path.join(folder_file_path, os.path.basename(svx_file_path).replace('.svx', '.th'))
 
+try:
+    os.makedirs(folder_file_path)
+except FileExistsError as e:
+    pass
 with open(therion_file_path,'w+') as therion_file:
     therion_file.write(therion_file_contents)
