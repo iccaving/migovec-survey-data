@@ -1,0 +1,31 @@
+
+survey vilinska -title "Vilinska Jama (nee Freezer), 2008"
+centreline
+    team "Unknown" insts
+    team "Unknown" notes
+    explo-team "Unknown"
+    explo-team "Unknown"
+    date 1900.01.01
+    units length meters
+    units compass clino degrees
+    data normal from to tape compass clino ignoreall # Default
+    
+endcentreline
+endsurvey
+
+
+
+# Converted From SVX
+#;Vilinska Jama (nee Freezer), 2008
+#;Soon connected to Vrtnarija / Gardeners' World
+#
+#*begin vilinska
+#
+#  *include vilinent
+#  *include breakitdown
+#  *equate breakitdown.9 vilinent.21
+#  
+#  *include vilcon
+#
+#*end vilinska
+#

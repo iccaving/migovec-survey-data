@@ -1,0 +1,43 @@
+
+survey postiga -title "high level rift above leprachaun"
+centreline
+    team "Pete Jurd" insts
+    team "J Hooper (Tetley)" notes
+    explo-team "Pete Jurd"
+    explo-team "J Hooper (Tetley)"
+    date 2003.08.9
+    units length meters
+    units compass clino degrees
+    data normal from to tape compass clino ignoreall # Default
+    1	2	7.57	122	03	;	stn 1 is pss
+    2	3	6.80	127	-13
+    4	3	5.82	285	-16
+    4	5	5.95	248	-09
+endcentreline
+endsurvey
+
+
+
+# Converted From SVX
+#;high level rift above leprachaun 
+#
+#;Date: 9/08/03
+#;Instruments: Pete Jurd
+#;Book: J Hooper (Tetley)
+#
+#;Data entered by J Hooper 14/08/03
+#
+#;data normal bcra grade 4
+#;from	to	tape	comp	clino
+#
+#*equate leprachaun.26 postiga.5
+#
+#*begin postiga
+#
+#1	2	7.57	122	03	;	stn 1 is pss
+#2	3	6.80	127	-13
+#4	3	5.82	285	-16
+#4	5	5.95	248	-09
+#
+#*end postiga
+#
