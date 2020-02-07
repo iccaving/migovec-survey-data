@@ -1,0 +1,5 @@
+source bonus.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o bonus.svg -layout test -layout-debug station-names

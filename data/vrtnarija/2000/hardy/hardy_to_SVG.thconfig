@@ -1,0 +1,5 @@
+source bclent2-p.th2
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o bclent2-p.svg2 -layout test -layout-debug station-names

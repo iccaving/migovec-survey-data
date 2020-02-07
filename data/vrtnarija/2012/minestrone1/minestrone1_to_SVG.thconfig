@@ -1,0 +1,5 @@
+source minestrone1.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o minestrone1.svg -layout test -layout-debug station-names

@@ -1,0 +1,5 @@
+source dwarf_pine.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o dwarf_pine.svg -layout test -layout-debug station-names
