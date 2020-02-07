@@ -1,0 +1,47 @@
+
+survey hoover -title "Rift from oxbow near sump"
+centreline
+    team "Jim Evens" insts
+    team "Dave Wilson" notes
+    explo-team "Jim Evens"
+    explo-team "Dave Wilson"
+    date 2004.8.4
+    units length meters
+    units compass clino degrees
+    data normal from to tape compass clino ignoreall # Default
+    2	1	15.3	349	+30
+    2	3	12.75	175	-7
+    3	4	6.70	188	-9
+    4	5	9.45	222	-17
+endcentreline
+endsurvey
+
+
+
+# Converted From SVX
+#;Rift from oxbow near sump
+#;Date: 4/8/04
+#;Comp+Clino: Mark Evens
+#;Tape: Jim Evens
+#;Book: Dave Wilson
+#
+#;Data entered by Jarvist Frost on 4/8/04
+#
+#;data normal bcra grade 4
+#;from	to	tape	comp	clino
+#
+#*begin hoover
+#
+#;page one
+#2	1	15.3	349	+30
+#2	3	12.75	175	-7
+#3	4	6.70	188	-9
+#4	5	9.45	222	-17
+#
+#*end hoover
+#
+#*equate hoover.5 colarado.4
+#
+#
+#	
+#

@@ -1,0 +1,39 @@
+
+survey Prisoners -title "Name Prisoners of Azkaban"
+centreline
+    team "Adrian Hooper" insts
+    team "Martin Mc Gowan" notes
+    explo-team "Adrian Hooper"
+    explo-team "Martin Mc Gowan"
+    date 2001.08.05
+    units length meters
+    units compass clino degrees
+    data normal from to tape compass clino ignoreall # Default
+    2	1	16.4	-	down
+    3	2	3.47	178	-52
+    4	3	4.24	063	-64	;station 4 is station 12 in judge
+endcentreline
+endsurvey
+
+
+
+# Converted From SVX
+#;Name Prisoners of Azkaban	
+#
+#;Date: 05/08/01
+#;Instruments:Adrian Hooper
+#;Book:Martin Mc Gowan
+#
+#;Data entered by Adrian Hooper
+#
+#;data normal bcra grade 5
+#;from	to	tape	comp	clino
+#
+#*equate	Prisoners.4	Judge.12
+#
+#*begin Prisoners	
+#2	1	16.4	-	down
+#3	2	3.47	178	-52
+#4	3	4.24	063	-64	;station 4 is station 12 in judge
+#*end Prisoners
+#

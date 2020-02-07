@@ -22,9 +22,21 @@ with open(svx_file_path) as svx_file:
     survey_data_line = match.group(1) if match else 'data normal from to tape compass clino ignoreall # Default' 
 
     # Survey date
+    survey_date = '1900.01.01'
     match = re.search('\*date\s*(\d+\.\d+\.\d+)', svx_file_contents)
-    survey_date = match.group(1) if match else '1900.01.01'
-
+    if match:
+        survey_date = match.group(1)
+    else:
+        match = re.search(';Date:\s*(\d+)/(\d+)/(\d+)', svx_file_contents)
+        if not match:
+            match = re.search(';Date:\s*(\d+)\.(\d+)\.(\d+)', svx_file_contents)
+        if match:
+            if len(match.group(3)) < 4:
+                year = '20{}'.format(match.group(3)) if int(match.group(3)) < 50 else '19{}'.format(match.group(3))
+            else:
+                year = match.group(3)
+            survey_date = '{}.{}.{}'.format(year, match.group(2), match.group(1))
+    
     # Surveyor - Instruments
     match = re.search(';(?:Instruments|Tape).*:\s*(.*)', svx_file_contents)
     survey_instruments = match.group(1) if match else 'Unknown'
@@ -88,7 +100,8 @@ endsurvey
     survey_equates=survey_equates.strip(),
     converted_from=converted_from.strip())
 
-folder_file_path =  svx_file_path.replace('.svx', '')
+year = survey_date.split('.')[0]
+folder_file_path =  os.path.join('test', year, os.path.basename(svx_file_path).replace('.svx','')) # svx_file_path.replace('.svx', '')
 therion_file_path = os.path.join(folder_file_path, os.path.basename(svx_file_path).replace('.svx', '.th'))
 
 try:
