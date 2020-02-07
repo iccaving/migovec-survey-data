@@ -18,6 +18,8 @@ map mvrtnarija-p -projection plan -title "Vrtnarija"
 	mzimmer-p@zimmer
 	mfriendship-p@friendship
 	mcandyMountain-p@candyMountain
+	mhighway32-p@highway32
+	mleprachaun-p@leprachaun
 endmap
 
 ###__________2000____________###
@@ -69,8 +71,10 @@ join pink-p3@pink pink2-p1@pink2
 ###__________2003____________###
 input "../2003/candyMountain/candyMountain.th"
 input "../2003/highway32/highway32.th"
+input "../2003/leprachaun/leprachaun.th"
 
 equate 11@candyMountain 23@friendship
 equate 1@candyMountain 32@highway32
+equate 33@leprachaun 1@highway32
 
 endsurvey
