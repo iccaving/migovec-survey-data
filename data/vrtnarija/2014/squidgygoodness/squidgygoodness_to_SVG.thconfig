@@ -1,0 +1,5 @@
+source squidgygoodness.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o squidgygoodness.svg -layout test -layout-debug station-names
