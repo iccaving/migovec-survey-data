@@ -1,0 +1,32 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A SURVEY DATA FILE FOR:                             |
+#                                                                                  |
+#                      THE ENTIRE MIGOVEC PLATEAU                                  |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
+encoding  utf-8
+
+# start the survey definition
+survey plateau -title "Migovec Plateau"
+
+# input the map definitions for PLAN and EXTENDED ELEVATION
+	#input "prima_ubend_monatip_plan.thm"
+	#input "prima_ubend_monatip_extend.thm"
+
+# input the individual cave data files
+
+    # first the connected caves of System Migovec
+	input "../_xtherion/system_migovec.th"
+	
+	input "../others/gondolin/gondolin.th"
+	input "../planika_resurvey_2019/planika.th"
+	input "../M17/therion/xtherion/M17.th"
+	input "../M19/_xtherion/M19.th"
+	input "../others/janet_little_cave/janet_little_cave.th"
+	input "../others/rowan_cave/rowan_cave.th"
+
+endsurvey
+

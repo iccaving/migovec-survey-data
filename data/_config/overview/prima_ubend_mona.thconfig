@@ -1,0 +1,39 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      PRIMADONA, MONATIP, UBEND OVERVIEW                          |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../_xtherion/primadona_ubend_monatip.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../_layouts/prima_ubend_monatip/overview_plan_SLO.thl"
+input "../../_layouts/prima_ubend_monatip/overview_elevation_SLO.thl"
+
+#----------------------------------------------------------------------------------|
+# select the relevant map definitions, and levels within those maps
+select mprima_ubend_monatip-p@system_migovec -map-level 1
+select mprimadona_monatip-e@system_migovec -map-level 0
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view, using the LAYOUT overview1 
+export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout overview_plan_SLO
+
+#----------------------------------------------------------------------------------|
+# export an ELEVATION view, using the LAYOUT overview2
+export map -projection extended -o ../../_outputs/map/primadona_ubend_monatip_EE_SLO.pdf -layout overview_elevation_SLO
+
+#----------------------------------------------------------------------------------|
+# export a .3d model, which can be opened in AVEN and LOCH
+export model -o ../../_outputs/model/primadona_ubend_monatip.3d -fmt survex
+
+#----------------------------------------------------------------------------------|
+# export a .lox model, which can be opened in LOCH only
+export model -o ../../_outputs/model/primadona_ubend_monatip.lox
