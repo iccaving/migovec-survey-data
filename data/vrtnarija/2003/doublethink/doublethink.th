@@ -1,11 +1,20 @@
 
 survey doublethink -title "continuation of passages going down from Playboy junction"
+
+    input "doublethink-p.th2"
+
+    map mdoublethink-p -projection plan
+        doublethink-1p
+    endmap
 centreline
-    team "Tim Wright" insts
-    team "Unknown" notes
+    team "Tim Wright" notes
+    team "Jan Evetts" insts
     explo-team "Tim Wright"
-    explo-team "Unknown"
+    explo-team "Jan Evetts"
+
     date 2003.8.6
+    explo-date 2003.8.6
+
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
@@ -22,7 +31,7 @@ centreline
     11	12	10.41	121	06
     12	13	4.80	177	-12
     14	13	3.16	188	48
-    14	15	4.08	068	00	;	stn 15 is PSS marked with paper
+    14	15	4.08	068	00	#;	stn 15 is PSS marked with paper
 endcentreline
 endsurvey
 

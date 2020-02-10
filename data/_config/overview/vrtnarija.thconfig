@@ -19,7 +19,7 @@ input "../../_layouts/vrtnarija/overview_plan_SLO.thl" # this will change to Vrt
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select mvrtnarija-p@vrtnarija -map-level 1
+select mvrtnarija-p@vrtnarija -map-level 0
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1 

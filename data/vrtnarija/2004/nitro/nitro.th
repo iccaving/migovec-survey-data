@@ -1,23 +1,30 @@
 
-survey nitro -title "This replaces madeupleg"
+survey nitro -title "Strap on the Nitro Aven (this replaces madeupleg)"
+    
+    input "nitro-p.th2"
+    map mnitro-p -projection plan
+        nitro-1p
+    endmap
+    
 centreline
-    team "Thomas P. Ayles" insts
+    team "Thomas [P. Ayles]" insts
     team "James Hooper" notes
-    explo-team "Thomas P. Ayles"
+    explo-team "Thomas [P. Ayles]"
     explo-team "James Hooper"
+    explo-date 2004.8.1
     date 2004.8.1
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
-    ;2	10	40	330	+10
-    2	1	17.03	302	41	;station 1 is carbide 'S' halfway up "strap on the nitro avon"
-    2	3	8.63	038	-25	;station 2 is gold station 16 PSS
+    #2	10	40	330	+10
+    2	1	17.03	302	41	# station 1 is carbide 'S' halfway up "strap on the nitro avon"
+    2	3	8.63	038	-25	# station 2 is gold station 16 PSS
     4	3	3.81	280	00
     5	4	7.02	222	-15
     5	6	21.21	030	18
     6	7	5.99	325	-09
     7	8	7.26	019	12
-    9	8	6.81	207	17	;station 9 is potato station 25 PSS
+    9	8	6.81	207	17	# station 9 is potato station 25 PSS
 endcentreline
 endsurvey
 
