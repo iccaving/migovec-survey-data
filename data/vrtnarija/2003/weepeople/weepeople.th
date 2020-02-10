@@ -1,5 +1,19 @@
 
 survey weepeople -title "continution of leprachaun Series"
+    input "weepeople-p.th2"
+
+    map mweepeople-p -projection plan
+        weepeople-1p
+        break
+        weepeople-2p
+        break
+        weepeople-3p
+    endmap
+
+
+    join weepeople-1p weepeople-2p
+    join weepeople-2p weepeople-3p
+    
 centreline
     team "Martin mcgowan" insts
     team "Brian Cullen" notes
@@ -31,7 +45,7 @@ centreline
     21	20	6.04	138	00
     22	21	12.12	093	-14
     23	22	7.00	149	-06
-    24	23	5.87	197	-04; stn 24 is pss at Red cow junction
+    24	23	5.87	197	-04 # stn 24 is pss at Red cow junction
     1	25	7.35	128	46
     25	26	2.00	166	12
 endcentreline
