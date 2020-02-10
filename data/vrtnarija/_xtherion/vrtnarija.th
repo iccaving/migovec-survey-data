@@ -1,6 +1,11 @@
 survey vrtnarija -title "Vrtnarija"
 
 map mvrtnarija-p -projection plan -title "Vrtnarija"
+	moriginal_entrance_series-p
+	mbelow_big_rock-p
+endmap
+
+map moriginal_entrance_series-p -projection plan -title "Vrnarija entrance series"
 	mbclent2-p@bclent2
 	mlaurel-p@laurel
 	murinal-p@urinal
@@ -16,10 +21,20 @@ map mvrtnarija-p -projection plan -title "Vrtnarija"
 	mpink2-p@pink2
 	mskynet-p@skynet
 	mzimmer-p@zimmer
+endmap
+
+map mbelow_big_rock-p -projection plan
 	mfriendship-p@friendship
 	mcandyMountain-p@candyMountain
 	mhighway32-p@highway32
 	mleprachaun-p@leprachaun
+	mcascade-p@cascade
+	mweepeople-p@weepeople
+	mgold-p@gold
+	mdoublethink-p@doublethink
+	mthirdthoughts-p@thirdthoughts
+	mnitro-p@nitro
+	mpotato-p@potato
 endmap
 
 ###__________2000____________###
@@ -72,9 +87,29 @@ join pink-p3@pink pink2-p1@pink2
 input "../2003/candyMountain/candyMountain.th"
 input "../2003/highway32/highway32.th"
 input "../2003/leprachaun/leprachaun.th"
+input "../2003/cascade/cascade.th"
+input "../2003/weepeople/weepeople.th"
+input "../2003/gold/gold.th"
+input "../2003/doublethink/doublethink.th"
+input "../2003/thirdthoughts/thirdthoughts.th"
+input "../2003/potato/potato.th"
 
 equate 11@candyMountain 23@friendship
 equate 1@candyMountain 32@highway32
 equate 33@leprachaun 1@highway32
+equate 33@leprachaun 12@cascade
+equate 18@leprachaun 26@weepeople
+equate 1@gold 24@weepeople
+equate 2@doublethink 36@cascade
+equate 15@doublethink 8@thirdthoughts
+equate 25@potato 9@nitro  # somehow equated to a survey made the following year... made up leg up the aven?
+
+join weepeople-3p@weepeople gold-1p@gold
+
+###__________2004____________###
+input "../2004/nitro/nitro.th"
+
+equate 2@nitro 16@gold
+
 
 endsurvey

@@ -6,9 +6,6 @@ encoding  utf-8
 
 scrap concorde-p1 -scale [0.0 0.0 1024.0 995.2343706967777 0.0 0.0 108.93 105.87]
 
-line floor-step
-endline
-
 line label -text "Concorde"
   1059.5 880.5
   1059.5 880.5 1160.5 869.0 1220.0 913.0
@@ -18,9 +15,6 @@ endline
 area water
   l11-1191-944
 endarea
-
-line floor-step
-endline
 
 line floor-step
   1102.0 1026.5
@@ -126,6 +120,8 @@ line wall
   1038.5 923.5 1059.0 918.5 1059.0 918.5
   smooth off
 endline
+
+point 1118.0 1017.0 passage-height -value 67
 
 point 1128.0 1007.0 station -name 2
 
