@@ -6,6 +6,10 @@ survey M17_deep -title "m17_deep"
    input "m17_deep-1p.th2"
    input "m17_deep-1s.th2"
 
+   map m1p_underlay -projection plan
+     m17_deep-underlay
+   endmap
+
    map m1p -projection plan
      m17_deep-1p
    endmap
