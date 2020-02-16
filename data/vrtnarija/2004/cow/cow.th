@@ -1,10 +1,11 @@
 
-survey cow -title "Stuff near Red Cow Junction"
+survey cow -title "Stuff near Red Cow Junction - superseded by mad-cow"
 centreline
     team "Tim Comer" insts
-    team "Martin Mc Gowan" notes
+    team "Martin [Mc Gowan]" notes
     explo-team "Tim Comer"
-    explo-team "Martin Mc Gowan"
+    explo-team "Martin [Mc Gowan]"
+    explo-date 2004.07.26
     date 2004.07.26
     units length meters
     units compass clino degrees
