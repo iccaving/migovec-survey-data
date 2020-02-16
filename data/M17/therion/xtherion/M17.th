@@ -4,6 +4,7 @@ survey M17 -title "M-17 (Frigidare), Tolminski Migovec"
 
   input m17_shallow/m17_shallow.th
   input M17_deep/m17_deep.th
+  input TH_404_124_m17_surf.th
 
   equate 1@M17_shallow 10@M17_deep
 
