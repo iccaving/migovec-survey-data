@@ -1,10 +1,17 @@
 
 survey envy -title "Passage off Leprecon series connecting with Greed"
+    
+    input "envy-p.th2"
+    
+    map menvy-p -projection plan
+        envy-1p
+    endmap
 centreline
-    team "Jim Evens" insts
+    team "Jim Evans" insts
     team "Dave Wilson" notes
-    explo-team "Jim Evens"
+    explo-team "Jim Evans"
     explo-team "Dave Wilson"
+    explo-date 2004.8.3
     date 2004.8.3
     units length meters
     units compass clino degrees

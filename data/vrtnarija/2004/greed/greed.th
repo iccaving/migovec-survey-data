@@ -1,27 +1,38 @@
 
 survey greed -title "Side passage off doublethink"
+
+    input "greed-p.th2"
+
+    map mgreed-p -projection plan
+        greed-1p
+        greed-2p
+    endmap
+
+    join greed-1p greed-2p
+    
 centreline
-    team "Thomas P. Ayles" insts
+    team "Thomas Ayles" insts
     team "James Hooper" notes
-    explo-team "Thomas P. Ayles"
+    explo-team "Thomas Ayles"
     explo-team "James Hooper"
+    explo-date 2004.7.31
     date 2004.7.31
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
     2	1	7.00	260	-27
-    2	3	8.50	013	33	;station 3 is PSS in chamber (base of avon - carbide 'S')
+    2	3	8.50	013	33	#station 3 is PSS in chamber (base of avon - carbide 'S')
     4	3	11.94	005	-04
     4	5	4.81	206	-31
     6	5	2.38	005	-17
     6	7	3.65	120	-04
     8	7	5.00	333	00
-    8	9	0.72-down
+    8	9	0.72 - down
     10	9	2.26	358	05
     11	10	4.86	350	-10
-    12	11	3.70	000	05	;station 11 is PSS
+    12	11	3.70	000	05	#station 11 is PSS
     12	13	3.14	132	16
-    14	13	3.23	000	11	;station 14 is PSS
+    14	13	3.23	000	11	#station 14 is PSS
     15	14	2.78	244	20
     15	16	9.56	149	-04
     17	16	2.50	013	10

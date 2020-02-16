@@ -1,10 +1,15 @@
 survey vrtnarija -title "Vrtnarija"
 
+## MASTER MAP ##
 map mvrtnarija-p -projection plan -title "Vrtnarija"
 	moriginal_entrance_series-p
+	mfriendship_level-p
 	mbelow_big_rock-p
+	mbeyond_red_cow-p
+	mbelow_balamory-p
 endmap
 
+## SUBMAPS ##
 map moriginal_entrance_series-p -projection plan -title "Vrnarija entrance series"
 	mbclent2-p@bclent2
 	mlaurel-p@laurel
@@ -23,19 +28,46 @@ map moriginal_entrance_series-p -projection plan -title "Vrnarija entrance serie
 	mzimmer-p@zimmer
 endmap
 
-map mbelow_big_rock-p -projection plan
+map mfriendship_level-p -projection plan
 	mfriendship-p@friendship
+	mfallsrd-p@fallsrd
+	mlowerfallsrd-p@lowerfallsrd
 	mcandyMountain-p@candyMountain
+endmap
+
+map mbelow_big_rock-p -projection plan
 	mhighway32-p@highway32
+	mpostiga-p@postiga
 	mleprachaun-p@leprachaun
-	mcascade-p@cascade
 	mweepeople-p@weepeople
 	mgold-p@gold
+	menvy-p@envy
+	mgreed-p@greed
+	mcascade-p@cascade
+	mbrownriceinlet-p@brownriceinlet
 	mdoublethink-p@doublethink
 	mthirdthoughts-p@thirdthoughts
+	mmushroom-p@mushroom
+	msoda-p@soda
+endmap
+
+map mbeyond_red_cow-p -projection plan
+	mmad_cow-p@mad_cow
 	mnitro-p@nitro
 	mpotato-p@potato
+	msmash-p@smash
+	mmiles-p@miles
+	mbeyond-p@beyond
+	mhoover-p@hoover
+	mcolarado-p@colarado
 endmap
+
+map mbelow_balamory-p -projection plan
+	mbalamory-p@balamory
+endmap
+
+#map mbelow_republica-p -projection plan	
+#endmap
 
 ###__________2000____________###
 input "../2000/bclent2/bclent2.th" #bclent is the original but wrong survey!
@@ -72,6 +104,7 @@ input "../2001/pink2/pink2.th"
 input "../2001/skynet/skynet.th"
 input "../2001/zimmer/zimmer.th"
 input "../2001/friendship/friendship.th"
+input "../2001/fallsrd/fallsrd.th"
 
 equate 14@banzai 1@alchemy
 equate 18@pink 12@banzai
@@ -79,6 +112,7 @@ equate 7@pink 13@pink2
 equate 1@pink2 9@skynet
 equate 1@skynet 1@zimmer
 equate 3@zimmer 1@friendship
+equate 4@friendship 1@fallsrd
 
 join pink-p1@pink banzai-p2@banzai
 join pink-p3@pink pink2-p1@pink2
@@ -93,6 +127,10 @@ input "../2003/gold/gold.th"
 input "../2003/doublethink/doublethink.th"
 input "../2003/thirdthoughts/thirdthoughts.th"
 input "../2003/potato/potato.th"
+input "../2003/mushroom/mushroom.th"
+input "../2003/postiga/postiga.th"
+input "../2003/lowerfallsrd/lowerfallsrd.th"
+
 
 equate 11@candyMountain 23@friendship
 equate 1@candyMountain 32@highway32
@@ -102,14 +140,55 @@ equate 18@leprachaun 26@weepeople
 equate 1@gold 24@weepeople
 equate 2@doublethink 36@cascade
 equate 15@doublethink 8@thirdthoughts
+equate 17@mushroom 27@cascade
+equate 5@postiga 26@leprachaun
+equate 7@fallsrd 5@lowerfallsrd
 equate 25@potato 9@nitro  # somehow equated to a survey made the following year... made up leg up the aven?
 
+join friendship-p6@friendship candyMountain-2p@candyMountain
 join weepeople-3p@weepeople gold-1p@gold
+join cascade-2p@cascade mushroom-2p@mushroom
+join postiga-1p@postiga leprachaun-3p@leprachaun
+join postiga-1p@postiga leprachaun-1p@leprachaun
+join lowerfallsrd-1p@lowerfallsrd fallsrd-2p@fallsrd
+join highway32-3p@highway32 candyMountain-1p@candyMountain
 
 ###__________2004____________###
 input "../2004/nitro/nitro.th"
+input "../2004/mad_cow/mad_cow.th"
+input "../2004/balamory/balamory.th"
+input "../2004/smash/smash.th"
+input "../2004/miles/miles.th"
+input "../2004/beyond/beyond.th"
+input "../2004/hoover/hoover.th"
+input "../2004/colarado/colarado.th"
+input "../2004/greed/greed.th"
+input "../2004/envy/envy.th"
+input "../2004/brownriceinlet/brownriceinlet.th"
+input "../2004/soda/soda.th"
 
 equate 2@nitro 16@gold
+equate 14@mad_cow 24@weepeople
+equate 11@balamory 15@doublethink
+equate 17@smash 1@potato
+equate 29@miles 1@smash
+equate 14@beyond 25@miles
+equate 5@hoover 4@colarado
+equate 19@colarado 3@beyond
+equate 23@greed 22@cascade
+equate 45@mad_cow 12@envy
+equate 1@envy 3@greed
+equate 6@brownriceinlet 4@cascade
+equate 26@soda 15@mushroom
 
+join smash-2p@smash potato-1p@potato
+join smash-1p@smash miles-2p@miles
+join colarado_s2_l1@colarado beyond_s2_l1@beyond
+join colarado_s2_l2@colarado beyond_s2_l2@beyond
+join colarado-1p@colarado hoover-1p@hoover
+join greed-2p@greed cascade-3p@cascade
+join mad_cow-2p@mad_cow envy-1p@envy
+join mad_cow-2p@mad_cow leprachaun-1p@leprachaun
+join soda-2p@soda mushroom-2p@mushroom
 
 endsurvey
