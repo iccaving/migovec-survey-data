@@ -1,11 +1,21 @@
 
-survey gold -title "continution of leprachaun Series"
+survey gold -title "continuation of leprachaun Series"
+	input "gold-p.th2"
+
+	map mgold-p -projection plan
+		gold-1p
+		gold-2p
+	endmap
+
+	join gold-1p gold-2p
+
 centreline
     team "Dave Wilson" insts
     team "Brian Cullen" notes
     explo-team "Dave Wilson"
     explo-team "Brian Cullen"
     date 2003.8.7
+    explo-date 2003.8.7
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

@@ -1,0 +1,37 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      VRTNARIJA (GARDENER's WORLD)                                |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../vrtnarija/_xtherion/vrtnarija.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../_layouts/vrtnarija/overview_plan_SLO.thl" # this will change to Vrtnarija eventually
+#input "../../_layouts/prima_ubend_monatip/overview_elevation_SLO.thl"
+
+#----------------------------------------------------------------------------------|
+# select the relevant map definitions, and levels within those maps
+select mvrtnarija-p@vrtnarija -map-level 0
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view, using the LAYOUT overview1 
+export map -projection plan -o ../../_outputs/map/vrtnarija_plan_SLO.pdf -layout overview_plan_SLO
+
+#----------------------------------------------------------------------------------|
+# export an ELEVATION view, using the LAYOUT overview2
+
+#----------------------------------------------------------------------------------|
+# export a .3d model, which can be opened in AVEN and LOCH
+export model -o ../../_outputs/model/vrtnarija.3d -fmt survex
+
+#----------------------------------------------------------------------------------|
+# export a .lox model, which can be opened in LOCH only
+export model -o ../../_outputs/model/vrtnarija.lox

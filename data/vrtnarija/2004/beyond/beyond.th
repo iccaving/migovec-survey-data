@@ -1,11 +1,21 @@
 
 survey beyond -title "Continuation of miles underground"
+
+    input "beyond-p.th2"
+
+    map mbeyond-p -projection plan
+        beyond-1p
+        beyond-2p
+    endmap
+
 centreline
     team "Thomas Ayles" insts
     team "James Hooper" notes
     explo-team "Thomas Ayles"
     explo-team "James Hooper"
     date 2004.8.1
+    explo-date 2004.8.1
+
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
@@ -16,7 +26,7 @@ centreline
     5	6	1.39	240	27
     7	6	12.63	356	-01
     7	8	10.32	168	09
-    8	9	4.25-down		#station 9 is a PSS cairn
+    8	9	4.25 - down		#station 9 is a PSS cairn
     10	9	12.38	346	-07
     10	11	4.49	177	46	#station 11 is a PSS cairn
     12	11	10.44	339	-28

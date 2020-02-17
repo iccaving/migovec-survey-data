@@ -1,0 +1,5 @@
+source rejuvenation_rift.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o rejuvenation_rift.svg -layout test -layout-debug station-names

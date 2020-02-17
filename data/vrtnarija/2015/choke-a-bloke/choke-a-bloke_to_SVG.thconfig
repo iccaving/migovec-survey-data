@@ -1,0 +1,5 @@
+source choke-a-bloke.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o choke-a-bloke.svg -layout test -layout-debug station-names

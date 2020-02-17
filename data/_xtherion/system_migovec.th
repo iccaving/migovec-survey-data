@@ -1,36 +1,36 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A SURVEY DATA FILE FOR:                             |
+#                                                                                  |
+#                      SYSTEM MIGOVEC                                              |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
 encoding  utf-8
-survey system_migovec -title "Caves of the Migovec Plateau"
 
-input "plateau_map.th"
+# start the survey definition
+survey system_migovec -title "System Migovec"
 
-input "../primadona/_xtherion/primadona.th"
-input "../s_ubend/s_ubend.th"
-input "../monatip/_xtherion/s_monatip.th"
-input "../vrtnarija/_xtherion/vrtnarija.th"
+# input the map definitions for PLAN and EXTENDED ELEVATION
+	#input "prima_ubend_monatip_plan.thm"
+	#input "prima_ubend_monatip_extend.thm"
 
-input "../others/gondolin/gondolin.th"
-input "../planika_resurvey_2019/planika.th"
-input "../M17/therion/xtherion/M17.th
-input "../M19/_xtherion/M19.th"
-input "../others/janet_little_cave/janet_little_cave.th"
-input "../others/rowan_cave/rowan_cave.th"
+# input the individual cave data files
+	input "../_xtherion/primadona_ubend_monatip.th"
+	input "../vrtnarija/_xtherion/vrtnarija.th"
 
-#ubend prima connection
-equate 5@drainpipe.s_ubend  8@drugi.primadona
 
-#monatip prima connection
-equate 1@therock.monatip 8@prima1.primadona
-equate 25@therock.monatip 24@prima2.primadona
-equate BV6@brez_volje.primadona 2@doubletime.monatip
-equate 20@testing_the_waters.primadona 8@alkatraz.monatip
+# input DEM tiles
+	#input "../DEM/DEM_10m.th"
 
- #join s2_l2@drugi.primadona:0 s1_l2@bathtub.s_ubend:end
- #join s2_l1@drugi.primadona:end s1_l1@bathtub.s_ubend:0
- join s5_l1@prima1.primadona:end s1_l1@therock.monatip:end
-join s5_l2@prima1.primadona:end s1_l2@therock.monatip:0
+# EQUATE commands for CONNECTIONS
+	# NCB and MONATIP
+	
 
-join s1_l1a@prima2.primadona:0 s3_l1@therock.monatip:end
-join s1_l2@prima2.primadona:end s3_l2@therock.monatip:0
+# JOIN commands for the sketches at connection points
+	# NCB and MONATIP
+
 
 endsurvey
 

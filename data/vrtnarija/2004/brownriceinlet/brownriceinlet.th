@@ -1,10 +1,19 @@
 
 survey brownriceinlet -title "Brown Rice Inlet connects with cascade.4"
+    
+    input "brownriceinlet-p.th2"
+
+    map mbrownriceinlet-p -projection plan
+        brownriceinlet-1p
+    endmap
 centreline
-    team "Jim Evens" insts
+    team "Jim Evans" tape
     team "Dave Wilson" notes
-    explo-team "Jim Evens"
+    team "Mark Evans" insts
+    explo-team "Jim Evans"
     explo-team "Dave Wilson"
+    explo-team "Mark Evans"
+    explo-date 2004.8.3
     date 2004.8.3
     units length meters
     units compass clino degrees

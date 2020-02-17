@@ -1,0 +1,5 @@
+source apollo_traverse.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o apollo_traverse.svg -layout test -layout-debug station-names
