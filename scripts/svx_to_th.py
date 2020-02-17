@@ -51,13 +51,13 @@ with open(svx_file_path) as svx_file:
     for index, line in enumerate(lines):
         if re.search('\d\t\d.*', line):
             if (len(survey_data) == 0):
-                survey_data = line
+                survey_data = line.replace(';', '#')
             else:
-                survey_data = survey_data + '\n    ' + line
+                survey_data = survey_data + '\n    ' + line.replace(';', '#')
 
     # Equates
     survey_equates = ''
-    for match in re.findall("\*equate\s*(.*);", svx_file_contents):
+    for match in re.findall("\*equate\s*([\S]+\s+[\S]+)", svx_file_contents):
         first, second = match.strip().split()
         first_split = first.split('.')[::-1]
         second_split = second.split('.')[::-1]
@@ -66,7 +66,7 @@ with open(svx_file_path) as svx_file:
             survey_equates = line
         else:
             survey_equates = survey_equates + '\n' + line
-    
+
     # Commented out SVX
     converted_from = '\n'.join(['#' + line for line in lines])
         
@@ -85,8 +85,6 @@ centreline
 endcentreline
 endsurvey
 
-{survey_equates}
-
 # Converted From SVX
 {converted_from}
 """.format(
@@ -97,16 +95,24 @@ endsurvey
     survey_data=survey_data.strip(),
     survey_instruments=survey_instruments.strip(),
     survey_book=survey_book.strip(),
-    survey_equates=survey_equates.strip(),
     converted_from=converted_from.strip())
 
 year = survey_date.split('.')[0]
-folder_file_path =  os.path.join('test', year, os.path.basename(svx_file_path).replace('.svx','')) # svx_file_path.replace('.svx', '')
+year_file_path = os.path.join('test', year)
+folder_file_path = os.path.join(year_file_path, os.path.basename(svx_file_path).replace('.svx',''))
 therion_file_path = os.path.join(folder_file_path, os.path.basename(svx_file_path).replace('.svx', '.th'))
+equates_file_path = os.path.join(year_file_path, 'equates.th')
 
+# Write the therion data file
 try:
     os.makedirs(folder_file_path)
 except FileExistsError as e:
     pass
 with open(therion_file_path,'w+') as therion_file:
     therion_file.write(therion_file_contents)
+
+# Write tp the therion equate file
+if survey_equates:
+    survey_equates = survey_equates + '\n'
+    with open(equates_file_path,'a+') as therion_file:
+        therion_file.write(survey_equates)
