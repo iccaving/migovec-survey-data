@@ -1,0 +1,20 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Therion
+        run: sudo apt install -y therion
+      - name: Generate vrtnarija output files
+        run: |
+          cd data
+          therion _config/overview/vrtnarija.thconfig
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: vrtnarija.3d
+          path: data/_outputs/model/vrtnarija.3d
