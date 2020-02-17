@@ -1,0 +1,5 @@
+source potato.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o potato.svg -layout test -layout-debug station-names

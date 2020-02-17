@@ -1,0 +1,5 @@
+source rolling.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o rolling.svg -layout test -layout-debug station-names

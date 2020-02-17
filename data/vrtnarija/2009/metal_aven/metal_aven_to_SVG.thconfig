@@ -1,0 +1,5 @@
+source metal_aven.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o metal_aven.svg -layout test -layout-debug station-names

@@ -1,0 +1,5 @@
+source wet_hammer.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o wet_hammer.svg -layout test -layout-debug station-names

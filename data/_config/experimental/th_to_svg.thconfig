@@ -1,0 +1,7 @@
+source "../../vrtnarija/2001/prisoners/prisoners.th" # try for all file paths?
+
+layout test
+	scale 1 500
+endlayout
+# produces a svg file with centreline and station names
+export map -projection plan -o "../../vrtnarija/2001/prisoners/prisoners.svg" -layout-debug station-names 

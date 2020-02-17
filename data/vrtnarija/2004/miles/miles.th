@@ -1,10 +1,23 @@
 
-survey miles -title "After Smash Storming PassagewaY"
+survey miles -title "After Smash Storming Passageway"
+
+    input "miles-p.th2"
+
+    map mmiles-p -projection plan
+        miles-1p
+        miles-2p
+        miles-3p
+    endmap
+
+    join miles-1p miles-2p
+    join miles-3p miles-1p
+
 centreline
     team "Pippa Crosby" insts
     team "Clewin Griffith" notes
     explo-team "Pippa Crosby"
     explo-team "Clewin Griffith"
+    explo-date 2004.7.30
     date 2004.7.30
     units length meters
     units compass clino degrees
@@ -21,22 +34,22 @@ centreline
     11	10	9.22	165	38
     12	11	3.63	156	05
     13	12	7.01	168	03
-    14	13	3.84	176	-18#stn 15 is PSS cairn
+    14	13	3.84	176	-18 #stn 15 is PSS cairn
     15	14	24.32	165	0
     16	15	24.44	170	-03
     17	16	7.42	166	-35
     18	17	8.68	162	-16
     19	18	8.15	189	-13
     20	19	14.92	188	07
-    21	20	8.61	172	24#stn 21 is PSS cairn
+    21	20	8.61	172	24 #;stn 21 is PSS cairn
     22	21	9.19	161	29	
     23	22	6.16	171	13
     24	23	8.75	160	-02
-    25	24	2.38	142	12#stn 25 is PSS cairn
+    25	24	2.38	142	12 #;stn 25 is PSS cairn
     26	1	2.50	335	-10
-    26	27	5.39-up#27 is bolt at top of pitch
+    26	27	5.39 - up #;27 is bolt at top of pitch
     28	27	4.69	239	-60
-    29	28	3.00	253	-35#stn 29 is Smash PPS 1
+    29	28	3.00	253	-35 #;stn 29 is Smash PPS 1
 endcentreline
 endsurvey
 

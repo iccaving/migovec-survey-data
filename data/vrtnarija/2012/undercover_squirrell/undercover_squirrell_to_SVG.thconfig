@@ -1,0 +1,5 @@
+source undercover_squirrell.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o undercover_squirrell.svg -layout test -layout-debug station-names

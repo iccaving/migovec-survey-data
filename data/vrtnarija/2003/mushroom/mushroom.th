@@ -1,10 +1,22 @@
 
-survey mushroom -title "mushrrom passage leading off from below cactus junction"
+survey mushroom -title "mushroom passage leading off from below cactus junction"
+    
+    input "mushroom-p.th2"
+
+    map mmushroom-p -projection plan
+        mushroom-1p
+        mushroom-2p
+    endmap
+
+    join mushroom-1p mushroom-2p
+
+
 centreline
-    team "James Hooper" insts
-    team "Unknown" notes
+    team "James Hooper" insts notes
+    team "Dave Wilson" tape
     explo-team "James Hooper"
-    explo-team "Unknown"
+    explo-team "Dave Wilson"
+    explo-date 2003.8.4
     date 2003.8.4
     units length meters
     units compass clino degrees

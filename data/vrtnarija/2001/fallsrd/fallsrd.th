@@ -1,36 +1,54 @@
+survey fallsrd -title "Falls rd"
 
-survey fallsrd -title "Name Falls Rd."
-centreline
-    team "Martin Mc Gowan" insts
-    team "Dave Wilson" notes
-    explo-team "Martin Mc Gowan"
-    explo-team "Dave Wilson"
-    date 2001.8.10
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    2	1	7.15	222	30
-    2	3	4.75	222	-43
-    3	4	2.90	-	down
-    4	5	0.50	320	0
-    5	6	10.28	-	down#Station5 is a bolt.
-    6	7	6	240	0
-endcentreline
+	input "fallsrd-p.th2"
+
+	map mfallsrd-p -projection plan
+		fallsrd-2p
+		fallsrd-1p
+	endmap
+
+	centreline
+		team "Martin [Mc Gowan]"
+		team "Dave Wilson"
+
+		explo-team "Martin [Mc Gowan]"
+		explo-team "Dave Wilson"
+
+		date 2001.8.1
+		explo-date 2001.8.1
+
+		units length meters
+    	units compass clino degrees
+    	data normal from to tape compass clino ignoreall # Default
+
+    	2	1	7.15	222	30
+    	2	3	4.75	222	-43
+    	3	4	2.90	-	down
+    	4	5	0.50	320	0
+    	5	6	10.28	-	down #Station5 is a bolt.
+    	6	7	6	240	0
+
+
+	endcentreline
 endsurvey
 
-# Converted From SVX
+
+
+
+
 #;Name Falls Rd.
-#
+
 #;Date:10/8/01
 #;Instruments:Martin Mc Gowan
 #;Book:Dave Wilson
-#
+
 #;Data entered by MartinMc Gowan and corrected by CG.
-# 
+ 
 #;data normal bcra grade 5
 #;from	to	tape	comp	clino
 #*equate fallsrd.1 Friend.4
 #*begin fallsrd
+#*date 2001.08.10
 #2	1	7.15	222	30
 #2	3	4.75	222	-43
 #3	4	2.90	-	down
@@ -38,4 +56,3 @@ endsurvey
 #5	6	10.28	-	down;Station5 is a bolt.
 #6	7	6	240	0
 #*end fallsrd
-#

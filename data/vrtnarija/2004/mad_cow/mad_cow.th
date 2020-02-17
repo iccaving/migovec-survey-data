@@ -1,10 +1,19 @@
 
 survey mad_cow -title "Mad Cow - Resurvey of area by Andy and Rik"
+    
+    input "mad_cow-p.th2"
+    
+    map mmad_cow-p 
+        mad_cow-2p
+        mad_cow-1p
+    endmap
 centreline
+
     team "Andy Jurd" insts
-    team "Unknown" notes
+    team "Richard Venn" notes
     explo-team "Andy Jurd"
-    explo-team "Unknown"
+    explo-team "Richard Venn"
+    explo-date 2004.07.31
     date 2004.07.31
     units length meters
     units compass clino degrees
@@ -22,7 +31,9 @@ centreline
     11	12	8.23	298	+45	#.11 1 1 5 0
     12	13	4.40	152	+12	#.12 1 4 3 1
     1	pseudosump	10.05	130	-5.71
+
     13	14	11.10	143	-22
+    flags duplicate
     15	14	10.82	356	+6
     15	16	17.20	102	+2
     17	16	6.98	350	+9
@@ -49,11 +60,13 @@ centreline
     37	38	19.70	168	+22
     39	38	5.55	348	+13
     40	39	9.65	341	+10
+    flags not duplicate
     41	40	13.30	315	-6
     42	41	2.80	267	-11	#direction of next few legs unclear - arrows have been crossed out & redrawn
     43	42	2.80	230	-24
     44	43	6.50	313	-11
     45	44	4.90	320	+1
+    
 endcentreline
 endsurvey
 

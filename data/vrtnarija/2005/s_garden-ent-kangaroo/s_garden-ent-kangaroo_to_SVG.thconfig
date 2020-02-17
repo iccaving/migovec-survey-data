@@ -1,0 +1,5 @@
+source s_garden-ent-kangaroo.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o s_garden-ent-kangaroo.svg -layout test -layout-debug station-names

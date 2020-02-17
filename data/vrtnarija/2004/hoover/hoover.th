@@ -1,10 +1,16 @@
 
 survey hoover -title "Rift from oxbow near sump"
+    input "hoover-p.th2"
+    
+    map mhoover-p -projection plan
+        hoover-1p
+    endmap
 centreline
-    team "Jim Evens" insts
+    team "Jim Evans" insts
     team "Dave Wilson" notes
-    explo-team "Jim Evens"
+    explo-team "Jim Evans"
     explo-team "Dave Wilson"
+    explo-date 2004.8.4
     date 2004.8.4
     units length meters
     units compass clino degrees

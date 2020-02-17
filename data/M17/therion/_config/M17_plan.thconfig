@@ -1,0 +1,16 @@
+encoding  utf-8
+source ../xtherion/M17.th
+
+input ../layout/map2.th
+input ../layout/map1.th
+input ../layout/layout_tanguy_basic_1.th
+
+select m17-full-p@M17
+
+#export map -projection extended -o ../outputs/M17_extended.pdf -layout map2 -layout-debug station-names
+
+export map -projection plan -o ../outputs/M17_plan_overview.pdf -layout map1
+
+export model -o "../outputs/M17.lox"
+
+export map -o "../outputs/GIS" -fmt esri

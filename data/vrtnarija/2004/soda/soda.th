@@ -1,14 +1,29 @@
 
 survey soda -title "Soda stream, just of 2004 camp"
+
+    input "soda-p.th2"
+
+    map msoda-p -projection plan
+        soda-3p
+        break
+        soda-2p
+        break
+        soda-1p
+    endmap
+
+    join soda-2p soda-1p
+    join soda-3p soda-2p
+
 centreline
     team "Richard Venn" insts
     team "James Hooper" notes
     explo-team "Richard Venn"
     explo-team "James Hooper"
-    date 2004.07.16
+    explo-date 2004.7.26
+    date 2004.7.26
     units length meters
     units compass clino degrees
-    data passage station left right up down ignoreall
+    data normal from to tape compass clino ignoreall
     1	2	2.75	197	-16
     3	2	6.35	119	+10
     3	4	3.95	015	+26

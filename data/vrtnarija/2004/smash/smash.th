@@ -1,11 +1,24 @@
 
 survey smash -title "Smash - Large boulder strewn passage at end of No More Potatoes"
+
+    input "smash-p.th2"
+
+    map msmash-p -projection plan  
+        smash-1p
+        smash-2p
+    endmap
+
+    join smash-1p smash-2p
 centreline
     team "Pippa Crosby" insts
-    team "Tom Ayles, Dave Wilson" notes
+    team "Tom Ayles" notes
+    team "Dave Wilson" notes
     explo-team "Pippa Crosby"
-    explo-team "Tom Ayles, Dave Wilson"
+    explo-team "Tom Ayles"
+    explo-team "Dave Wilson"
     date 2004.07.26
+    explo-date 2004.07.26
+
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

@@ -1,11 +1,22 @@
 
 survey cascade -title "cascade, passages leading down from Playboy junction at end of Highway 32"
+    input "cascade-p.th2"
+    map mcascade-p -projection plan
+        cascade-1p
+        cascade-2p
+        cascade-3p
+    endmap
+
+    join cascade-1p cascade-2p
+    join cascade-2p cascade-3p
+
 centreline
     team "James Hooper" insts
     team "Dave Wilson" notes
     explo-team "James Hooper"
     explo-team "Dave Wilson"
     date 2003.08.03
+    explo-date 2003.08.03
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
@@ -28,6 +39,18 @@ centreline
     18	19	8.05	039	41
     20	19	7.69	162	03
     20	21	2.77	018	53
+    endcentreline
+
+    centreline
+    team "James Hooper" insts notes 
+    team "David Wilson" tape
+    explo-team "James Hooper"
+    explo-team "David Wilson"
+    date 2003.08.04
+    explo-date 2003.08.04
+    units length meters
+    units compass clino degrees
+    data normal from to tape compass clino ignoreall # Default
     1	21	3.15	156	12
     22	23	6.97	228	02	# stn 22 is pss
     24	23	4.51	155	03

@@ -1,0 +1,5 @@
+source krtkovadobradela.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o krtkovadobradela.svg -layout test -layout-debug station-names

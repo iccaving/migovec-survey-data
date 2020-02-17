@@ -1,0 +1,5 @@
+source time_bandits.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o time_bandits.svg -layout test -layout-debug station-names

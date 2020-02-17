@@ -1,0 +1,5 @@
+source urinal2_to_SVG.thconfig
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o urinal2_to_SVG.svgconfig -layout test -layout-debug station-names

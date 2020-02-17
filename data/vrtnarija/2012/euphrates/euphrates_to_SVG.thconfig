@@ -1,0 +1,5 @@
+source euphrates.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o euphrates.svg -layout test -layout-debug station-names

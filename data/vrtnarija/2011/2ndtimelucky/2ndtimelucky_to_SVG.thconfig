@@ -1,0 +1,5 @@
+source 2ndtimelucky.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o 2ndtimelucky.svg -layout test -layout-debug station-names

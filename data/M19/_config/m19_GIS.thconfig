@@ -1,0 +1,4 @@
+source ../_xtherion/M19.th
+
+export map -o "../_outputs/GIS" -fmt esri
+export model -o "../_outputs/GIS_model" -fmt esri
