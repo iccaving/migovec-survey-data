@@ -1,0 +1,31 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Therion dependencies
+        run: sudo apt install -y bwidget gcc ghostscript imagemagick lcdf-typetoolslibfreetype6-dev libjpeg-dev libpng-dev libproj-dev libtk-img-dev libtk-img libvtk6-dev libvtk6.3 libwxgtk3.0-dev tcl-dev texlive-latex-base zlib1g-dev zlib1g
+      - name: Download and unpack Therion
+        run: |
+          curl https://github.com/therion/therion/archive/v5.4.4.tar.gz -L -o therion.zip
+          tar xvzf therion.zip
+      - name: Build Therion
+        run: |
+          cd therion
+          make
+          sudo make install
+          cd ..
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Generate vrtnarija output files
+        run: |
+          cd data
+          therion _config/overview/vrtnarija.thconfig
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: vrtnarija.3d
+          path: data/_outputs/model/vrtnarija.3d
