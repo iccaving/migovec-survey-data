@@ -9,11 +9,11 @@ centreline
     units length meters
     units compass clino degrees
     data passage station left right up down ignoreall
-    1	2	30.80	-	up	; 
-    2	3	4.10	-	up	;	
-    3	4	27.00	5	+70	;
-    4	5	20.40	-	up	;
-    5	6	3.44	340	-24	;	0.	1.5	15.	75	
+    1	2	30.80	-	up	# 
+    2	3	4.10	-	up	#	
+    3	4	27.00	5	+70	#
+    4	5	20.40	-	up	#
+    5	6	3.44	340	-24	#	0.	1.5	15.	75	
     1	0	7.16	291	+27
     0	wall	7.16	291	+27
     0	mudhole	12.16	111	+27
@@ -26,8 +26,6 @@ centreline
     5	2	2	0	40
 endcentreline
 endsurvey
-
-
 
 # Converted From SVX
 #;Happy Monday:

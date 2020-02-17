@@ -9,19 +9,17 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
-    1	2	4.95	213	-25	; LRUD for all shots, too lazy to enter
+    1	2	4.95	213	-25	# LRUD for all shots, too lazy to enter
     3	2	17.88	008	+33	
     4	3	9.30	011	+23	
-    5	4	6.78	316	+12	;tape is indistinct - could be 5.78
-    6	5	4.40	009	-	;clino down as '-' - assume means horizontal
+    5	4	6.78	316	+12	#tape is indistinct - could be 5.78
+    6	5	4.40	009	-	#clino down as '-' - assume means horizontal
     7	6	6.32	344	+24	
     8	7	12.90	005	+25
     9	8	6.59	339	+08
-    10	9	5.12	301	+05	; no direction associated with this shot, assuming 10->9
+    10	9	5.12	301	+05	# no direction associated with this shot, assuming 10->9
 endcentreline
 endsurvey
-
-
 
 # Converted From SVX
 #;#### Nevermore ####:

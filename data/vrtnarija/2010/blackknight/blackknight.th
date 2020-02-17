@@ -9,8 +9,8 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall
-    2	1	7.80	348	+17	; was 1 to 2 in notes - Myles remembers reading instruments from 2
-    2	3	14.00	185	+00	; This is probably the wrong way around - splay leg into sump
+    2	1	7.80	348	+17	# was 1 to 2 in notes - Myles remembers reading instruments from 2
+    2	3	14.00	185	+00	# This is probably the wrong way around - splay leg into sump
     4	1	5.35	357	+07
     4	5	6.50	173	+26
     5	6	4.40	161	+14
@@ -37,15 +37,13 @@ centreline
     10	3	0	5	2
     11	0.5	0	4	1.5
     12	0.5	0.5	1.5	0.5
-    13	0.5	0	2	2	; down is really 20?
+    13	0.5	0	2	2	# down is really 20?
     14	0	3	12	8
-    15	3	0	10	5	;up is 20+ really
+    15	3	0	10	5	#up is 20+ really
     16	8	1	5	15
     17	3	2	5	8
 endcentreline
 endsurvey
-
-
 
 # Converted From SVX
 #;#### Black Knight ####:

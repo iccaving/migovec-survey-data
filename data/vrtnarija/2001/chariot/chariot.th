@@ -9,16 +9,14 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
-    1	2	4.65	348	15	;stn 1 backup bolt at top of Officer's club
+    1	2	4.65	348	15	#stn 1 backup bolt at top of Officer's club
     2	3	2.70	012	34
     3	4	4.90	309	01
     4	5	3.78	350	37
     5	6	4.72	334	79
-    6	7	2.95	101	45	;stn 7 is first relay down swing
+    6	7	2.95	101	45	#stn 7 is first relay down swing
 endcentreline
 endsurvey
-
-
 
 # Converted From SVX
 #;survey down bottom of swing to top of officer's club

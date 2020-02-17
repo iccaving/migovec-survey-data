@@ -9,17 +9,15 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
-    1	2	11.40	084	+20 	; 1PSS Cairn
+    1	2	11.40	084	+20 	# 1PSS Cairn
     2	3	6.80	-	up
     3	4	4.30	105	+09
     4	5	4.80	089	+20
     5	6	4.20	038	+77
     6	7	7.20	059	+23
-    7	8	9.30	062	+84 	; hardy.3 - PSS on Bolt
+    7	8	9.30	062	+84 	# hardy.3 - PSS on Bolt
 endcentreline
 endsurvey
-
-
 
 # Converted From SVX
 #;waffer - Beyond Hardy

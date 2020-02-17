@@ -1,11 +1,11 @@
 
 survey kangaroo01 -title "captain kangaroo 01"
 centreline
-    team "Unknown" insts
-    team "Unknown" notes
-    explo-team "Unknown"
-    explo-team "Unknown"
-    date 1900.01.01
+    team "Marcin Kowalski" insts
+    team "Rik Venn" notes
+    explo-team "Marcin Kowalski"
+    explo-team "Rik Venn"
+    date 2005.07.22
     units length meters
     units compass clino degrees
     data passage station left right up down ignoreall
@@ -20,7 +20,7 @@ centreline
     8	9	3.90	210	+15
     9	10	2.70	180	+8
     10	11	3.75	210	0
-    ; 11	12	there is no 11->12 in the book
+    # 11	12	there is no 11->12 in the book
     12	13	3.70	170	+45
     13	14	2.95	255	-5
     14	15	2.50	140	+60	
@@ -33,17 +33,15 @@ centreline
     21	22	10.45	90	+89
     22	23	5.35	165	+35
     23	24	3.10	40	-1
-    ; LRUD for 1 is 0.15	0.25	8	0
-    ; LRUD for 7 is 4	1	4	1
-    ; LRUD for 15 is 2	2	8	3
-    15	2	2	8	3	Real Data!
+    # LRUD for 1 is 0.15	0.25	8	0
+    # LRUD for 7 is 4	1	4	1
+    # LRUD for 15 is 2	2	8	3
+    15	2	2	8	3	# Real Data!
     16	1.0	0.5	2	1
     17	0.5	1.0	1.0	1.0
     18	1.0	1.0	3.0	1.0
 endcentreline
 endsurvey
-
-
 
 # Converted From SVX
 #; captain kangaroo 01

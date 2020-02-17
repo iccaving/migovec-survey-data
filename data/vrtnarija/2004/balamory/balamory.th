@@ -10,19 +10,17 @@ centreline
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
     2	1	8.2-down
-    2	3	2.3	330	-10	;station 2 is a spit
+    2	3	2.3	330	-10	#station 2 is a spit
     4	3	2.9	169	-34
     5	4	1.8	170	-61
     6	5	3.1	193	-23
-    7	6	1.6	147	+39	;station 7 is a spit
-    8	7	3.8	215	-43	;station 8 is a spit
-    9	8	5.8	175	-51	;station 9 is a PSS
+    7	6	1.6	147	+39	#station 7 is a spit
+    8	7	3.8	215	-43	#station 8 is a spit
+    9	8	5.8	175	-51	#station 9 is a PSS
     10	9	4.2	184	-25
     11	10	3.5-down
 endcentreline
 endsurvey
-
-
 
 # Converted From SVX
 #;ONLY SURVEYED TO DECIMETRE ACCURACY
