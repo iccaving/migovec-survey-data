@@ -5,6 +5,21 @@ encoding  utf-8
 
 scrap M17-3s -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 
+line wall -subtype presumed -outline none -clip off
+  3496.0487 5695.013
+  3460.9117 5306.0147
+  3460.5815 5097.138
+endline
+
+line wall -subtype presumed -outline none -clip off
+  4355.06 4900.32
+  4349.4273 5134.0439
+  4370.9236 5434.9928
+  4362.4607 5621.545
+endline
+
+point 3788.292 8821.1684 label -text d -align t -scale l
+point 3784.8528 8626.1202 entrance -scale l -orientation 180.0
 line border 
   2158.43 4285.193
   2163.4968 4286.46 2405.4334 4285.193 2438.3673 4275.0595
@@ -60,7 +75,6 @@ line border
   3067.9094 4658.8651 3052.7092 4846.3343 3052.7092 4859.0012
   3052.7092 4871.668 3075.5095 4983.1362 3022.3087 5005.9365
 endline
-
 
 area ice
   line_ice3
@@ -267,7 +281,7 @@ line u:texture_MY
 endline
 
 point 3281.02 4398.58 station -name 13
-point 5036.4145 5141.209 water-flow -orientation 180
+point 5036.4145 5141.209 water-flow -orientation 180.0
 line border 
   5123.2955 4928.0374
   5123.2955 4928.0374 5194.95 5039.102 5180.619 5107.1735
@@ -520,10 +534,8 @@ line border -close on -id l202-2328-3792
   5748.0 5598.0 5942.8705 5615.374 5942.8705 5615.374
 endline
 
-point 5713.39 8733.42 label -text c -scale m
-point 5713.39 8433.42 entrance -orientation 180 -scale l
-
-point 6013.39 8733.42 label -text "M-19 doline" -align tr -scale l
+point 5713.39 8733.42 label -text c -align t -scale l
+point 5713.39 8433.42 entrance -scale l -orientation 180.0
 line arrow 
   6588.0 5222.0
   6064.0 5474.0

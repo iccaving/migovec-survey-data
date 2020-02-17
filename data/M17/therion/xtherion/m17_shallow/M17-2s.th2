@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap M17-2s -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 
-point 213.1721 9664.3989 label -text "M17 doline" -align t -scale l
+point 1729.0241 5500.5766 label -text "logger 73" -align tr -scale l
 line border 
   2582.7693 4206.659
   2582.7693 4206.659 2728.438 4117.991 2766.4385 4105.324
@@ -1460,8 +1460,8 @@ line wall -subtype blocks
   1636.5561 4572.7304 1628.956 4466.3289 1628.956 4466.3289
 endline
 
-point 1194.423 9380.1465 label -text b -align t -scale m
-point 352.423 9570.1465 label -text a -align t -scale m
+point 1194.423 9380.1465 label -text b -align t -scale l
+point 412.423 9480.1465 label -text a -align t -scale l
 point 461.2757 9295.3779 entrance -scale l -orientation 150.98871
 point 1193.9429 9161.9219 entrance -scale l -orientation 183.3185
 line wall:invisible 
@@ -4226,7 +4226,7 @@ line u:texture_MY
   1107.0618 8469.5603 1131.2452 8459.7078 1131.2452 8459.7078
 endline
 
-point 1512.0 5218.0 u:logger_MY -scale s
+point 1512.0 5218.0 u:logger_MY -scale xl
 point 180.0 5344.0 remark -text "snow height october 2018" -align l -scale xl
 point 144.0 6038.0 remark -text "snow height june 2019" -align l -scale xl
 line wall 

@@ -15,8 +15,14 @@ layout overview
   symbol-hide point stalagmite
 
   map-comment "Cadastral number: 5878<br><br>Entrance coordinates (UTM 33N):<br>a: 404.465 E 5.122.965 N <br>b: 404.459 E 5.122.963 N <br>c: 404.458 E 5.122.930 N "
-	map-header -10 95 ne
-  legend on
+	map-header -10 95 nw
+  legend off
+
+  code tex-map
+    \def\maplayout{
+  \legendbox{5}{5}{SW}{\scalebar}
+  }
+  endcode
 	
 
   # NORTH ARROW (contributions of Thomas Holder)

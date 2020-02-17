@@ -5,6 +5,7 @@ encoding  utf-8
 
 scrap M17-1s -scale [0 0 100 0 0 0 1 0 m] -projection extended
 
+point 1936.4625 6278.7245 label -text "logger 75" -align t -scale l
 line wall -subtype invisible
   2516.4146 2375.2923
   3496.2894 2498.8965
@@ -1280,7 +1281,7 @@ line rock-border -close on
 endline
 
 point 1922.8266 6279.9492 remark -text "logger 475" -align tr -scale xs
-point 1777.1576 5673.4794 u:logger_MY -scale s
+point 1777.1576 5673.4794 u:logger_MY -scale xl
 point 2837.3725 5345.4078 remark -text mig-21 -align r -scale xs
 point 2762.2061 5302.5636 u:probe_MY 
 area snow
