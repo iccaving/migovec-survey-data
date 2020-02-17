@@ -9,16 +9,14 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
-    1	2	2.60	212	+49	;.1	0.2	0.2	1	0
-    2	3	3.75	189	+38	;.2	0.5	1.4	KAMIN / Chimney (30m?)	2.60
-    3	4	6.10	-	down	;.3	0	3.8	-	6.10
-    4	5	1.60	216	+13	;.4 	1	1	6.90	0.7
-    5	6	2.40	177	+01	;.5	2	0	15	0.4
-    6	7	9.70	149	-69	;.6	4	0	10	9
+    1	2	2.60	212	+49	#.1	0.2	0.2	1	0
+    2	3	3.75	189	+38	#.2	0.5	1.4	KAMIN / Chimney (30m?)	2.60
+    3	4	6.10	-	down	#.3	0	3.8	-	6.10
+    4	5	1.60	216	+13	#.4 	1	1	6.90	0.7
+    5	6	2.40	177	+01	#.5	2	0	15	0.4
+    6	7	9.70	149	-69	#.6	4	0	10	9
 endcentreline
 endsurvey
-
-
 
 # Converted From SVX
 #;Ride the Lightning

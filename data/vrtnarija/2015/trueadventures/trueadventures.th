@@ -11,7 +11,7 @@ centreline
     data normal from to tape compass clino ignoreall
     1	2	3.47	266	-01
     2	3	8.10	342	+00
-    4	3	13.73	173	-05 ; .4 is PSS
+    4	3	13.73	173	-05 # .4 is PSS
     4	5	26.00	297	-15
     5	6	7.56	278	+12
     6	7	7.53	283	-16
@@ -27,7 +27,7 @@ centreline
     16	17	3.18	285	-11
     17	18	2.12	348	+03
     18	19	3.08	234	-12
-    19	20	5.50	288	-08	; .20 is PSS
+    19	20	5.50	288	-08	# .20 is PSS
     20	21	5.94	004	+31
     21	22	2.19	070	+21
     22	23	4.97	018	+34
@@ -38,7 +38,7 @@ centreline
     27	28	2.97	106	+15
     28	29	3.69	022	+68
     29	30	2.86	106	+28
-    30	31	2.87	-	 up ; A.S. 05/2018: clino +90 -> 'up', compass 322 -> -
+    30	31	2.87	-	 up # A.S. 05/2018: clino +90 -> 'up', compass 322 -> -
     31	32	0.80	147	+03
     32	33	1.60	173	+02
     34	33	1.65	278	-21
@@ -47,7 +47,7 @@ centreline
     36	37	1.61	009	-19
     37	38	1.72	325	-21
     38	39	2.95	-	down
-    39	40	20.00	037	+80	; Connors climb
+    39	40	20.00	037	+80	# Connors climb
     41	42	7.62	-	up
     42	43	8.21	152	+21
     42	44	8.76	335	+06
@@ -58,12 +58,10 @@ centreline
     44	49	6.95	-	up
     49	50	1.83	335	+05
     49	51	4.50	148	-06
-    51	20	4.85	052	+26	; uncertainty about tape reading - could be 4.05
+    51	20	4.85	052	+26	# uncertainty about tape reading - could be 4.05
     5	sump	6.43	357	-17
 endcentreline
 endsurvey
-
-
 
 # Converted From SVX
 #;####TrueAdventures####
