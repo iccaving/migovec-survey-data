@@ -1,0 +1,5 @@
+source xanadont.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o xanadont.svg -layout test -layout-debug station-names

@@ -1,11 +1,19 @@
 
-survey thirdthoughts -title "### Thirdthoughts ####:"
+survey thirdthoughts -title "Thirdthoughts"
+    
+    input "thirdthoughts-p.th2"
+    
+    map mthirdthoughts-p -projection plan
+        thirdthoughts-1p
+    endmap
+
 centreline
-    team "###" insts
-    team "PJ/RV" notes
-    explo-team "###"
-    explo-team "PJ/RV"
+    team "Pete Jurd" insts
+    team "Unkown [RV]" notes
+    explo-team "Pete Jurd"
+    explo-team "Unkown [RV]"
     date 2003.8.6
+    explo-date 2003.8.6
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall

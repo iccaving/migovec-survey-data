@@ -1,0 +1,5 @@
+source pick_your_poison.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o pick_your_poison.svg -layout test -layout-debug station-names

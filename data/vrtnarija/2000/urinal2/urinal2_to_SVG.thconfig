@@ -1,0 +1,5 @@
+source urinal2.dxf
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o urinal2.dxf -layout test -layout-debug station-names

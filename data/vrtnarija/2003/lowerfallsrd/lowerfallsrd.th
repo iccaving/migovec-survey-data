@@ -1,11 +1,17 @@
 
 survey lowerfallsrd -title "Lower end of Falls Road"
+    input "lowerfallsrd-p.th2"
+
+    map mlowerfallsrd-p -projection plan
+        lowerfallsrd-1p
+    endmap
 centreline
     team "Colm Caroll" insts
-    team "Martin McGowan" notes
+    team "Martin [Mc Gowan]" notes
     explo-team "Colm Caroll"
-    explo-team "Martin McGowan"
+    explo-team "Martin [Mc Gowan]"
     date 2003.7.29
+    explo-date 2003.7.29
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

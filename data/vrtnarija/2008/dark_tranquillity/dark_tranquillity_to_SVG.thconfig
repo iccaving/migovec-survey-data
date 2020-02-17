@@ -1,0 +1,5 @@
+source dark_tranquillity.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o dark_tranquillity.svg -layout test -layout-debug station-names

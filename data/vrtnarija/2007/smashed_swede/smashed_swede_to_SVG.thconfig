@@ -1,0 +1,5 @@
+source smashed_swede.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o smashed_swede.svg -layout test -layout-debug station-names

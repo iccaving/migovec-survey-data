@@ -1,0 +1,5 @@
+source free_amalgamation.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o free_amalgamation.svg -layout test -layout-debug station-names

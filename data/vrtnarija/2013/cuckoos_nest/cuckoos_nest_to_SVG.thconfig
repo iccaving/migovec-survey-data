@@ -1,0 +1,5 @@
+source cuckoos_nest.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o cuckoos_nest.svg -layout test -layout-debug station-names

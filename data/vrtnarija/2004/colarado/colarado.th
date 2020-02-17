@@ -1,10 +1,18 @@
 
 survey colarado -title "From miles underground to far northern sump"
+    input "colarado-p.th2"
+
+    map mcolarado-p -projection plan
+        colarado-1p
+        colarado-2p
+    endmap
+    
 centreline
-    team "Dr Michael Rogerson" insts
-    team "Jan Luther Evetts" notes
-    explo-team "Dr Michael Rogerson"
-    explo-team "Jan Luther Evetts"
+    team "Michael Rogerson" insts
+    team "Jan Evetts" notes
+    explo-team "Michael Rogerson"
+    explo-team "Jan Evetts"
+    explo-date 2004.8.3
     date 2004.8.3
     units length meters
     units compass clino degrees
