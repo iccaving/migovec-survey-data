@@ -1,0 +1,69 @@
+
+## MASTER MAP ##
+map mvrtnarija-p -projection plan -title "Vrtnarija"
+	moriginal_entrance_series-p
+	mfriendship_level-p
+	mbelow_big_rock-p
+	mbeyond_red_cow-p
+	mbelow_balamory-p
+endmap
+
+## SUBMAPS ##
+map moriginal_entrance_series-p -projection plan -title "Vrtsnarija entrance series"
+	mbclent2-p@bclent2
+	mlaurel-p@laurel
+	murinal-p@urinal
+	murinal2-p@urinal2
+	mpico-p@pico
+	mpico2-p@pico2
+	mtesselator-p@tesselator
+	mspace_odyssey-p@space_odyssey
+	mconcorde-p@concorde
+	malchemy-p@alchemy
+	mbanzai-p@banzai
+	mpink-p@pink
+	mpink2-p@pink2
+	mskynet-p@skynet
+	mzimmer-p@zimmer
+endmap
+
+map mfriendship_level-p -projection plan
+	mfriendship-p@friendship
+	mfallsrd-p@fallsrd
+	mlowerfallsrd-p@lowerfallsrd
+	mcandyMountain-p@candyMountain
+endmap
+
+map mbelow_big_rock-p -projection plan
+	mhighway32-p@highway32
+	mpostiga-p@postiga
+	mleprachaun-p@leprachaun
+	mweepeople-p@weepeople
+	mgold-p@gold
+	menvy-p@envy
+	mgreed-p@greed
+	mcascade-p@cascade
+	mbrownriceinlet-p@brownriceinlet
+	mdoublethink-p@doublethink
+	mthirdthoughts-p@thirdthoughts
+	mmushroom-p@mushroom
+	msoda-p@soda
+endmap
+
+map mbeyond_red_cow-p -projection plan
+	mmad_cow-p@mad_cow
+	mnitro-p@nitro
+	mpotato-p@potato
+	msmash-p@smash
+	mmiles-p@miles
+	mbeyond-p@beyond
+	mhoover-p@hoover
+	mcolarado-p@colarado
+endmap
+
+map mbelow_balamory-p -projection plan
+	mbalamory-p@balamory
+endmap
+
+#map mbelow_republica-p -projection plan	
+#endmap

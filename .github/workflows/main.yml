@@ -1,31 +1,75 @@
-name: CI
+name: Automated Build
 
 on: [push]
+
+env:
+  THERION_VERSION: 5.4.4
+  THERION_PATH: ./therion-5.4.4
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Therion dependencies
-        run: sudo apt install -y bwidget gcc ghostscript imagemagick lcdf-typetoolslibfreetype6-dev libjpeg-dev libpng-dev libproj-dev libtk-img-dev libtk-img libvtk6-dev libvtk6.3 libwxgtk3.0-dev tcl-dev texlive-latex-base zlib1g-dev zlib1g
-      - name: Download and unpack Therion
-        run: |
-          curl https://github.com/therion/therion/archive/v5.4.4.tar.gz -L -o therion.zip
-          tar xvzf therion.zip
-      - name: Build Therion
-        run: |
-          cd therion
-          make
-          sudo make install
-          cd ..
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Generate vrtnarija output files
-        run: |
-          cd data
-          therion _config/overview/vrtnarija.thconfig
-      - name: Upload artifact
-        uses: actions/upload-artifact@v1.0.0
+      - uses: actions/checkout@v2
+      - name: Cache Therion
+        id: cache-therion
+        uses: actions/cache@v1
         with:
-          name: vrtnarija.3d
-          path: data/_outputs/model/vrtnarija.3d
+          path: ${{ env.THERION_PATH }}/bin
+          key: ${{ runner.os }}-${{ env.THERION_VERSION }}
+      - name: Install Therion compilation dependencies
+        if: steps.cache-therion.outputs.cache-hit != 'true'
+        run: sudo apt install -y bwidget lcdf-typetools libtk-img-dev libtk-img libvtk6-dev libvtk6.3 libwxgtk3.0-dev tcl-dev survex texlive-latex-base # Pre-installed: gcc ghostscript imagemagick libfreetype6-dev libjpeg-dev libpng-dev zlib1g zlib1g-dev
+      - name: Install Therion runtime dependencies
+        run: sudo apt install -y libproj-dev texlive-metapost
+      - name: Download and unpack Therion
+        if: steps.cache-therion.outputs.cache-hit != 'true'
+        run: |
+          curl https://github.com/therion/therion/archive/v${THERION_VERSION}.tar.gz -L -O
+          tar xvzf v${THERION_VERSION}.tar.gz
+      - name: Build Therion
+        if: steps.cache-therion.outputs.cache-hit != 'true'
+        run: |
+          make -C $THERION_PATH
+          mkdir ${THERION_PATH}/bin
+          mv ${THERION_PATH}/therion ${THERION_PATH}/bin/therion
+      - name: Generate vrtnarija output files
+        run: ${THERION_PATH}/bin/therion data/_config/automation/vrtnarija.thconfig
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+      - name: Upload vrtnarija 3D
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./data/_outputs/vrtnarija.3d
+          asset_name: vrtnarija.3d
+          asset_content_type: application/octet-stream
+      - name: Upload vrtnarija plan SLO
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./data/_outputs/vrtnarija_plan_SLO.pdf
+          asset_name: vrtnarija_plan_SLO.pdf
+          asset_content_type: application/pdf
+      #- name: Upload 3D
+      #  uses: actions/upload-artifact@v1.0.0
+      #  with:
+      #    name: vrtnarija-3d
+      #    path: data/_outputs/model/vrtnarija.3d
+      #- name: Upload plan
+      #  uses: actions/upload-artifact@v1.0.0
+      #  with:
+      #    name: vrtnarija-plan-slo
+      #    path: data/_outputs/map/vrtnarija_plan_SLO.pdf

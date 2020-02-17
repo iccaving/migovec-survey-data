@@ -1,0 +1,27 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR                            |
+#                                                                                  |
+#                      GITHUB CI GENERATION OF:                                    |
+#                                                                                  |
+#                      VRTNARIJA (GARDENER's WORLD)                                |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../vrtnarija/_xtherion/vrtnarija.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../_layouts/vrtnarija/overview_plan_SLO.thl" # this will change to Vrtnarija eventually
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view, using the LAYOUT overview1 
+export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.pdf -layout overview_plan_SLO
+
+#----------------------------------------------------------------------------------|
+# export a .3d model, which can be opened in AVEN and LOCH
+export model -o ../../_outputs/vrtnarija.3d -fmt survex
