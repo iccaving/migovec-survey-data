@@ -26,12 +26,12 @@ layout overview_plan
 #_____________________________________________________________|
 
   #debug all
-  scale 1 2000
+  scale 1 1000
   
   colour map-fg altitude
   symbol-hide group all
   min-symbol-scale M
-  map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: XXXX<br><br>Vilinska Jama<br>kat. št.: YYYYY<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: XXXX<br><br>Vilinska Jama<br>Cadastral number: XXXX<br>"
+  #map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: XXXX<br><br>Vilinska Jama<br>kat. št.: YYYYY<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: XXXX<br><br>Vilinska Jama<br>Cadastral number: XXXX<br>"
   symbol-show line wall
   symbol-show area water
   symbol-show area sump
@@ -44,18 +44,18 @@ layout overview_plan
   symbol-show point entrance
   symbol-show point camp
   fonts-setup 6 8 8 8 10
-  map-header 0 0 nw
+  map-header 0 0 off
   colour-legend on
   legend on
 
-  code tex-map
-  \framethickness=0.5mm
-      \def\maplayout{
-    \legendbox{-10}{99}{N}{\size[26]\the\cavename}
-    \legendbox{-10}{90}{N}{\size[10]\the\comment}
-    \legendbox{-10}{60}{N}{\scalebar}
-    \legendbox{-10}{50}{N}{\northarrow}
-    }
+  #code tex-map
+  #\framethickness=0.5mm
+  #    \def\maplayout{
+  #  \legendbox{-10}{99}{N}{\size[26]\the\cavename}
+  #  \legendbox{-10}{90}{N}{\size[10]\the\comment}
+  #  \legendbox{-10}{60}{N}{\scalebar}
+  #  \legendbox{-10}{50}{N}{\northarrow}
+  #  }
 
 code metapost 
 #_____________________________________________________________
