@@ -12,17 +12,16 @@ As data is added some artifacts are automatically generated. Here is a list of t
 
 Primadonna is a the cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2016. It is accessed from impressive entrances on the Western cliffs of the Migovec plateau.
 
-
 * [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip.3d) [3d]  
   The 3D file for viewing in Aven or Loch.
 * [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) [PDF]  
   The plan with Slovenian legend and labels. (WIP)
 * [Extended Elevation - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) [PDF]  
   The extended elevation with Slovenian legend and labels. (WIP)
-* Plan - English [PDF]  
-  (WIP)
-* Extended Elevation - English [PDF]  
-  (WIP)
+* [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) [PDF]  
+  The plan with English legend and labels. (WIP)
+* [Extended Elevation - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) [PDF]  
+  The extended elevation with English legend and labels. (WIP)
 
 **Vrtnarija**
 
@@ -34,8 +33,8 @@ Connected to the main system in 2012, Vrtnarija comprises roughly a third of the
   The plan with Slovenian legend and labels. (WIP)
 * Extended Elevation - Slovenian [PDF]  
   (WIP)
-* Plan - English [PDF]  
-  (WIP)
+* [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_ENG.pdf) [PDF]  
+  The plan with English legend and labels. (WIP)
 * Extended Elevation - English [PDF]  
   (WIP)
 
