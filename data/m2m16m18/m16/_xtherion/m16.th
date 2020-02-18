@@ -1,7 +1,21 @@
 survey m16 -title "M16 part of System Migovec"
 
+	map mm16-p -projection plan
+		mentrance-p@entrance
+		mhotline-p@hotline
+		mbrezno-p@brezno
+	endmap
+
 ###__________1996____________###
 
 input "../1996/entrance/entrance.th"
+input "../1996/brezno/brezno.th"
+input "../1996/hotline/hotline.th"
+
+equate 31@brezno 31@entrance
+equate 48@brezno 15@hotline
+equate 50@brezno 18@hotline
+
+join brezno-1p@brezno entrance-6p@entrance
 
 endsurvey

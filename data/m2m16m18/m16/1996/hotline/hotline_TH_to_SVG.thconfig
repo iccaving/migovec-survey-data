@@ -1,0 +1,8 @@
+source hotline.th
+
+layout centreline
+	scale 1 500
+	map-header 0 0 off
+endlayout
+
+export map -o "hotline-p.svg" -layout centreline -layout-debug station-names -projection plan

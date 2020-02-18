@@ -1,0 +1,104 @@
+; System Migovec 
+; (c) 1994 - 1997 Imperial College Caving Club
+; Surveyed to BCRA Grade 5b
+
+; M16 hotline
+
+;Date:8/8/96
+;Instruments: Chris Roberts
+;Book: CV pete
+
+;Data entered by Mark Evans 11/8/96
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*equate hotline.15 brezno.48
+*equate hotline.18 brezno.50
+
+*begin hotline
+*date 1996.08.08
+*team "Chris Roberts" instruments
+*team "Peter Eland" book
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5SmhKQkF3STl3Tm8
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5NmcySFFsQVppblk
+
+*data normal from to tape compass clino
+1       2       16.90   112     +18
+3       2       20.49   326     +01
+3       4       20.45   135     +01
+5       4       5.34    212     +03
+6       4       17.89   166     -12	;changed from 4	6 mje 
+8       7       22.61   237     -35
+9       8       5.42    231     -44
+9       10      7.30    356     +15
+
+*data passage station left right up down
+1	4	5	4	0.5
+2	4	2	3	0.5
+3	1.5	4	4	1
+4	2	1.2	1	1
+
+
+*data passage station left right up down
+8	0	8	1	1
+9	0	5	3	0
+
+
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5UWV0SEJSRmZBMlE
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5aTQtbk5lT01hcTQ
+*data normal from to tape compass clino
+11      10      4.45    150     +06
+
+;this leg added JMF 8-8-08, laser from base of aven jonction to top
+;where Tet and Jarv climbed 2005
+11	LASER_ULRIKA	19.0	-	up
+
+11      12      5.87    124     +31
+1       12      10.48   277     -14
+3       13      4.40    268     -44
+13      14      9.15    208     -42
+14      15      9.50    019     -20
+
+;15 is permanent survey station 47 in m16 (looks like 42 in carbide)
+
+*data passage station left right up down
+11  2   0   19  0
+10  1   1   5   0
+
+*data passage station left right up down
+11  2   0   19  0
+12  2   3   1   0
+
+*data passage station left right up down
+1	4	5	4	0.5
+12  2   3   1   0
+
+; hotline to M16 station 50
+
+;Date:10/8/96
+;Instruments: Jim
+;Book: Mark
+
+;Data entered by Mark Evans 11/8/96
+
+*date 1996.08.10
+*team "Mark Evans" book
+*team "Jim Evans" instruments
+;*ref https://drive.google.com/open?id=0BxkZAUc06EK5WTJlOGtlSUhGU0k
+*data normal from to tape compass clino
+
+6       16      3.00    340     +00
+16      17      24.20   -       Down
+17      18      3.85    286     +08
+
+; hotline 18 in station 50in m16 (shortdrop 50)
+
+*data passage station left right up down
+16  7.5 7.5 0   24
+17  7.5 7.5 24  0
+
+
+
+*end hotline
+
