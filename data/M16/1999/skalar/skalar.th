@@ -1,0 +1,37 @@
+
+survey skalar -title "Skalar extensions off exhibition road"
+centreline
+    team "J Evans" insts
+    team "J Evans" notes
+    explo-team "J Evans"
+    explo-team "J Evans"
+    date 1999.07.15
+    units length meters
+    units compass clino degrees
+    data normal from to tape compass clino ignoreall # Default
+    2	1	26.2	196	-62	#stn 1 is a cairn at bottom of pitch
+    3	2	7.08	091	-4
+endcentreline
+endsurvey
+
+# Converted From SVX
+#;Skalar extensions off exhibition road
+#;Date: 15/7/99
+#;Instruments: J Evans
+#;Book: J Evans
+#
+#;Data entered by C Griffith on 22/7/99
+#
+#;data normal bcra grade 5
+#;from	to	tape	comp	clino
+#
+#*equate exhib.22 skalar.3
+#
+#*begin skalar
+#*date 1999.07.15
+#2	1	26.2	196	-62	;stn 1 is a cairn at bottom of pitch
+#3	2	7.08	091	-4
+#
+#*end skalar
+#
+#
