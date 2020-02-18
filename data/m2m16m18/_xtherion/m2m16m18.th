@@ -1,5 +1,8 @@
 survey m2m16m18 -title "Sistem Migovec (the Old System)"
 	
+	map mm2m16m18-p -projection plan
+		mm16-p@m16
+	endmap
 	input "../m16/_xtherion/m16.th"
 	
 endsurvey
