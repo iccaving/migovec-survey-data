@@ -1,9 +1,49 @@
-# migovec-resurvey-project
+# Migovec Resurvey Project
 
-This contains the survey data of the Tolminski Migovec cave system, as well as minor caves in the same area.
+This contains the survey data of the Tolminski Migovec cave system, as well as minor caves in the same area, collected by the JSPDT and ICCC from 1974 to 2019. 
 
-Most of the data is in survex format, and rolled over from the previous migovecsurveydata repository.
-We are now in the process of migrating the Survex data collected from 1974-2018 and migrating it to Therion.
+From 1974-2018 the the survey data was collected in the Survex format but we are now using Therion and are in the process of migrating the old data.
+
+## Downloads
+
+As data is added some artifacts are automatically generated. Here is a list of the artifacts and the links to the latest versions:
+
+**Primadonna**
+
+Primadonna is a the cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2016. It is accessed from impressive entrances on the Western cliffs of the Migovec plateau.
+
+
+* [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip.3d) [3d]  
+  The 3D file for viewing in Aven or Loch.
+* [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) [PDF]  
+  The plan with Slovenian legend and labels. (WIP)
+* [Extended Elevation - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_EE.pdf) [PDF]  
+  The extended elevation with Slovenian legend and labels. (WIP)
+* Plan - English [PDF]  
+  (WIP)
+* Extended Elevation - English [PDF]  
+  (WIP)
+
+**Vrtnarija**
+
+Connected to the main system in 2012, Vrtnarija comprises roughly a third of the passage in the sytem. It is accessed from entrances on the Eastern side of the Migovec plateau.
+
+* [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija.3d) [3d]  
+  The 3D file for viewing in Aven or Loch. (WIP)
+* [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_SLO.pdf) [PDF]  
+  The plan with Slovenian legend and labels. (WIP)
+* Extended Elevation - Slovenian [PDF]  
+  (WIP)
+* Plan - English [PDF]  
+  (WIP)
+* Extended Elevation - English [PDF]  
+  (WIP)
+
+**M18 / M16 / M2**
+
+Collectively known as 'the old system' these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994 exploration was continued until roughly 2001 and the various entrances were connected into what would become the longest cave in Slovenia.
+
+* Files
 
 ## Structure
 
