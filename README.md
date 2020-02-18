@@ -17,7 +17,7 @@ Primadonna is a the cave system mostly contained in the Western side of Migovec.
   The 3D file for viewing in Aven or Loch.
 * [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) [PDF]  
   The plan with Slovenian legend and labels. (WIP)
-* [Extended Elevation - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE.pdf) [PDF]  
+* [Extended Elevation - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) [PDF]  
   The extended elevation with Slovenian legend and labels. (WIP)
 * Plan - English [PDF]  
   (WIP)
