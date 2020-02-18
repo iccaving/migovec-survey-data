@@ -1,0 +1,5 @@
+source genghis.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o genghis.svg -layout test -layout-debug station-names

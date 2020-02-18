@@ -1,0 +1,5 @@
+source mower.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o mower.svg -layout test -layout-debug station-names
