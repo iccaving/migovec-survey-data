@@ -3,7 +3,10 @@ survey hotline -title "Hotline"
 
 	map mhotline-p -projection plan
 		hotline-1p
+		hotline-2p
 	endmap
+
+	join hotline-1p hotline-2p
 
 	centreline
 		date 1996.08.08
