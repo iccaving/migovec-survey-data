@@ -1,11 +1,20 @@
 
 survey level2n -title "System Migovec"
+
+    input "level2n-p.th2"
+
+    map mlevel2n-p -projection plan
+        level2n-1p
+    endmap
+
+    
 centreline
     team "Colm Carroll" insts
-    team "James "Tetley" Hooper" notes
+    team "James Hooper" notes
     explo-team "Colm Carroll"
-    explo-team "James "Tetley" Hooper"
+    explo-team "James Hooper"
     date 1996.07.28
+    explo-date 1996.07.28
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

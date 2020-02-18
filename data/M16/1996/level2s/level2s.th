@@ -1,11 +1,19 @@
 
 survey level2s -title "System Migovec"
+    input "level2s-p.th2"
+
+    map mlevel2s-p -projection plan
+    level2s-1p
+    level2s-2p
+    endmap
+
 centreline
     team "Tim Wright" insts
-    team "James "Tetley" Hooper" notes
+    team "James Hooper" notes
     explo-team "Tim Wright"
-    explo-team "James "Tetley" Hooper"
+    explo-team "James Hooper"
     date 1996.07.25
+    explo-date 1996.07.25
     units length meters
     units compass clino degrees
     data normal from to tape compass clino

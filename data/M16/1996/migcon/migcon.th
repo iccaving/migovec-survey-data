@@ -1,5 +1,11 @@
 
 survey migcon -title "Mig Country 1"
+    
+    input "migcon-p.th2"
+    
+    map mmigcon-p -projection plan
+        migcon-1p
+    endmap
 centreline
     team "Colm Carroll" insts
     team "James Hooper" notes
