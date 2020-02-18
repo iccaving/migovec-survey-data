@@ -1,0 +1,5 @@
+source entrance.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o entrance.svg -layout test -layout-debug station-names
