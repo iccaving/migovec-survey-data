@@ -17,6 +17,7 @@ jobs:
         with:
           path: ${{ env.THERION_PATH }}/bin
           key: ${{ runner.os }}-${{ env.THERION_VERSION }}
+      #========================= INSTALL DEPENDENCIES ========================#
       - name: Install Therion compilation dependencies
         if: steps.cache-therion.outputs.cache-hit != 'true'
         run: sudo apt install -y bwidget lcdf-typetools libtk-img-dev libtk-img libvtk6-dev libvtk6.3 libwxgtk3.0-dev tcl-dev survex texlive-latex-base # Pre-installed: gcc ghostscript imagemagick libfreetype6-dev libjpeg-dev libpng-dev zlib1g zlib1g-dev
@@ -33,19 +34,53 @@ jobs:
           make -C $THERION_PATH
           mkdir ${THERION_PATH}/bin
           mv ${THERION_PATH}/therion ${THERION_PATH}/bin/therion
-      - name: Generate vrtnarija output files
+      #=========================== GENERATE OUTPUT ===========================#
+      - name: Generate Primadonna output files
+        run: ${THERION_PATH}/bin/therion data/_config/automation/prima_ubend_mona.thconfig
+      - name: Generate Vrtnarija output files
         run: ${THERION_PATH}/bin/therion data/_config/automation/vrtnarija.thconfig
+      #============================ CREATE RELEASE ===========================#
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: build-${{ github.run_number }}
+          release_name: Build ${{ github.run_number }}
           draft: false
           prerelease: false
-      - name: Upload vrtnarija 3D
+      #=============================== UPLOADS ===============================#
+      # Primadonna
+      - name: Upload Primadonna 3D
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./data/_outputs/primadona_ubend_monatip.3d
+          asset_name: primadona_ubend_monatip.3d
+          asset_content_type: application/octet-stream
+      - name: Upload Primadonna plan SLO
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./data/_outputs/primadona_ubend_monatip_plan_SLO.pdf
+          asset_name: primadona_ubend_monatip_plan_SLO.pdf
+          asset_content_type: application/pdf
+      - name: Upload Primadonna EE SLO
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./data/_outputs/primadona_ubend_monatip_EE_SLO.pdf
+          asset_name: primadona_ubend_monatip_EE_SLO.pdf
+          asset_content_type: application/pdf
+      # Vrtnarija
+      - name: Upload Vrtnarija 3D
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -54,7 +89,7 @@ jobs:
           asset_path: ./data/_outputs/vrtnarija.3d
           asset_name: vrtnarija.3d
           asset_content_type: application/octet-stream
-      - name: Upload vrtnarija plan SLO
+      - name: Upload Vrtnarija plan SLO
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -63,13 +98,3 @@ jobs:
           asset_path: ./data/_outputs/vrtnarija_plan_SLO.pdf
           asset_name: vrtnarija_plan_SLO.pdf
           asset_content_type: application/pdf
-      #- name: Upload 3D
-      #  uses: actions/upload-artifact@v1.0.0
-      #  with:
-      #    name: vrtnarija-3d
-      #    path: data/_outputs/model/vrtnarija.3d
-      #- name: Upload plan
-      #  uses: actions/upload-artifact@v1.0.0
-      #  with:
-      #    name: vrtnarija-plan-slo
-      #    path: data/_outputs/map/vrtnarija_plan_SLO.pdf
