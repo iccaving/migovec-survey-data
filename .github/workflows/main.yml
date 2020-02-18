@@ -54,10 +54,12 @@ jobs:
       #    draft: false
       #    prerelease: false
       #=============================== UPLOADS ===============================#
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - name: Upload Files
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           title: Build ${{ github.run_number }}
+          automatic_release_tag: "latest"
           files: |
             ./data/_outputs/primadona_ubend_monatip.3d
             ./data/_outputs/primadona_ubend_monatip_plan_SLO.pdf
