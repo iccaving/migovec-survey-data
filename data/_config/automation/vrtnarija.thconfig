@@ -16,11 +16,14 @@ source "../../vrtnarija/_xtherion/vrtnarija.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/vrtnarija/overview_plan_SLO.thl" # this will change to Vrtnarija eventually
+input "../../_layouts/vrtnarija/overview_plan.thl"
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1 
-export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.pdf -layout overview_plan_SLO
+language fr
+export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.pdf -layout overview_plan
+language en
+export map -projection plan -o ../../_outputs/vrtnarija_plan_ENG.pdf -layout overview_plan
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
