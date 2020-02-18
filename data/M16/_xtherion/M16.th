@@ -4,6 +4,10 @@ survey M16 -title "M16 part of System Migovec"
 		mentrance-p@entrance
 		mhotline-p@hotline
 		mbrezno-p@brezno
+		mmigcon-p@migcon
+		mmigconleft-p@migconleft
+		mlevel2s-p@level2s
+		mlevel2n-p@level2n
 	endmap
 
 ###__________1996____________###
@@ -14,10 +18,10 @@ input "../1996/hotline/hotline.th"
 #input ../1996/goodbag/goodbag.th
 #input ../1996/shordrop/shordrop.th
 #input ../1996/exhib/exhib.th
-#input ../1996/level2s/level2s.th
+input ../1996/level2s/level2s.th
 #input ../1996/rockroll/rockroll.th
 #input ../1996/carwash/carwash.th
-#input ../1996/level2n/level2n.th
+input ../1996/level2n/level2n.th
 input ../1996/migcon/migcon.th
 input ../1996/migcondown/migcondown.th
 input ../1996/migconleft/migconleft.th
@@ -29,8 +33,8 @@ equate 50@brezno 18@hotline
 #equate 29@exhib 4@level2n
 #equate 11@carwash 13@exhib
 #equate 14@level2s 6@void.m18
-#equate 1@level2n 6@level2s
-#equate 7@migcon 1@level2s
+equate 1@level2n 6@level2s
+equate 7@migcon 1@level2s
 equate 1@migconleft 1@migcon
 equate 6@migconleft 7@hotline
 equate 0@migcondown 1@migcon
@@ -39,6 +43,9 @@ equate 0@migcondown 1@migcon
 #equate 1@shordrop2 1@shordrop
 
 join brezno-1p@brezno entrance-6p@entrance
+join migconleft-1p@migconleft hotline-2p@hotline
+join migconleft-1p@migconleft migcon-1p@migcon
+join level2n-1p@level2n level2s-1p@level2s
 
 ###__________1997____________###
 

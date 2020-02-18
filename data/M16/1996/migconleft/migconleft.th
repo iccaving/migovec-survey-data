@@ -1,5 +1,11 @@
 
 survey migconleft -title "Mig Country 2"
+    
+    input "migconleft-p.th2"
+    
+    map mmigconleft-p -projection plan
+        migconleft-1p
+    endmap
 centreline
 
     date 1996.08.10
