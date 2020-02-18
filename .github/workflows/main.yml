@@ -70,6 +70,15 @@ jobs:
           asset_path: ./data/_outputs/primadona_ubend_monatip_plan_SLO.pdf
           asset_name: primadona_ubend_monatip_plan_SLO.pdf
           asset_content_type: application/pdf
+      - name: Upload Primadonna plan ENG
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./data/_outputs/primadona_ubend_monatip_plan_ENG.pdf
+          asset_name: primadona_ubend_monatip_plan_ENG.pdf
+          asset_content_type: application/pdf
       - name: Upload Primadonna EE SLO
         uses: actions/upload-release-asset@v1
         env:
@@ -78,6 +87,15 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./data/_outputs/primadona_ubend_monatip_EE_SLO.pdf
           asset_name: primadona_ubend_monatip_EE_SLO.pdf
+          asset_content_type: application/pdf
+      - name: Upload Primadonna EE ENG
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./data/_outputs/primadona_ubend_monatip_EE_ENG.pdf
+          asset_name: primadona_ubend_monatip_EE_ENG.pdf
           asset_content_type: application/pdf
       # Vrtnarija
       - name: Upload Vrtnarija 3D
@@ -97,4 +115,13 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./data/_outputs/vrtnarija_plan_SLO.pdf
           asset_name: vrtnarija_plan_SLO.pdf
+          asset_content_type: application/pdf
+      - name: Upload Vrtnarija plan ENG
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./data/_outputs/vrtnarija_plan_ENG.pdf
+          asset_name: vrtnarija_plan_ENG.pdf
           asset_content_type: application/pdf
