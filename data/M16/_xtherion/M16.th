@@ -1,6 +1,6 @@
 survey M16 -title "M16 part of System Migovec"
 
-	map mm16-p -projection plan
+	map mM16-p -projection plan
 		mentrance-p@entrance
 		mhotline-p@hotline
 		mbrezno-p@brezno
@@ -18,7 +18,9 @@ input "../1996/hotline/hotline.th"
 #input ../1996/rockroll/rockroll.th
 #input ../1996/carwash/carwash.th
 #input ../1996/level2n/level2n.th
-#input ../1996/migcon/migcon.th
+input ../1996/migcon/migcon.th
+input ../1996/migcondown/migcondown.th
+input ../1996/migconleft/migconleft.th
 
 equate 31@brezno 31@entrance
 equate 48@brezno 15@hotline
@@ -29,9 +31,9 @@ equate 50@brezno 18@hotline
 #equate 14@level2s 6@void.m18
 #equate 1@level2n 6@level2s
 #equate 7@migcon 1@level2s
-#equate 1@migconleft 1@migcon
-#equate 6@migconleft 7@hotline
-#equate 0@migcondown 1@migcon
+equate 1@migconleft 1@migcon
+equate 6@migconleft 7@hotline
+equate 0@migcondown 1@migcon
 #equate 2@migcondown 0@rockroll
 #equate 7@shordrop 50@brezno
 #equate 1@shordrop2 1@shordrop
@@ -142,7 +144,7 @@ join brezno-1p@brezno entrance-6p@entrance
 #equate 20@elephant 12@adder
 #equate 6@bosh 14@waterloo
 #equate 1@polter 1@disillusion
-equate 11@disillusion 1@waffles
+#equate 11@disillusion 1@waffles
 #equate 10@waffles 7@polter
 #equate 22@exhib 9@polter
 #equate 5@sump1 13@fame
