@@ -18,24 +18,20 @@ lookup explo-date
 endlookup
 
 
-layout overview_plan_ENG
+layout overview_plan
 
 #_____________________________________________________________
 #                                                             |
 #                        GENERAL STATEMENTS                   |
 #_____________________________________________________________|
 
-  language en
   #debug all
   scale 1 2000
   
   colour map-fg altitude
   symbol-hide group all
   min-symbol-scale M
-  ## SLO: 
-  ##map-comment "Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: XXXX<br><br>Vilinska Jama<br>kat. št.: YYYYY"
-  ## ENG:
-  map-comment "Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: XXXX<br><br>Vilinska Jama<br>Cadastral number: XXXX<br>"
+  map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: XXXX<br><br>Vilinska Jama<br>kat. št.: YYYYY<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: XXXX<br><br>Vilinska Jama<br>Cadastral number: XXXX<br>"
   symbol-show line wall
   symbol-show area water
   symbol-show area sump

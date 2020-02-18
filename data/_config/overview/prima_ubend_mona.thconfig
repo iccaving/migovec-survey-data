@@ -14,10 +14,8 @@ source "../../_xtherion/primadona_ubend_monatip.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/prima_ubend_monatip/overview_plan_SLO.thl"
-input "../../_layouts/prima_udend_monatip/overview_plan_ENG.thl"
-input "../../_layouts/prima_ubend_monatip/overview_elevation_SLO.thl"
-input "../../_layouts/prima_udend_monatip/overview_elevation_ENG.thl"
+input "../../_layouts/prima_ubend_monatip/overview_plan.thl"
+input "../../_layouts/prima_ubend_monatip/overview_elevation.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -26,13 +24,17 @@ select mprimadona_monatip-e@system_migovec -map-level 0
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1 
-export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout overview_plan_SLO
-export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout overview_plan_ENG
+language fr # slo not yet supported
+export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout overview_plan
+language en
+export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout overview_plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view, using the LAYOUT overview2
-export map -projection extended -o ../../_outputs/map/primadona_ubend_monatip_EE_SLO.pdf -layout overview_elevation_SLO
-export map -projection extended -o ../../_outputs/map/primadona_ubend_monatip_EE_ENG.pdf -layout overview_elevation_ENG
+language fr # slo not yet supported
+export map -projection extended -o ../../_outputs/map/primadona_ubend_monatip_EE_SLO.pdf -layout overview_elevation
+language en
+export map -projection extended -o ../../_outputs/map/primadona_ubend_monatip_EE_ENG.pdf -layout overview_elevation
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH

@@ -14,18 +14,18 @@ source "../../vrtnarija/_xtherion/vrtnarija.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/vrtnarija/overview_plan_SLO.thl" 
-input "../../_layouts/vrtnarija/overview_plan_ENG.thl" 
-#input "../../_layouts/prima_ubend_monatip/overview_elevation_SLO.thl"
+input "../../_layouts/vrtnarija/overview_plan.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
 select mvrtnarija-p@vrtnarija -map-level 0
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview_plan_SLO or ENG 
-export map -projection plan -o ../../_outputs/map/vrtnarija_plan_SLO.pdf -layout overview_plan_SLO
-export map -projection plan -o ../../_outputs/map/vrtnarija_plan_ENG.pdf -layout overview_plan_ENG
+# export a PLAN view, using the LAYOUT overview1
+language fr
+export map -projection plan -o ../../_outputs/map/vrtnarija_plan_SLO.pdf -layout overview_plan
+language en
+export map -projection plan -o ../../_outputs/map/vrtnarija_plan_ENG.pdf -layout overview_plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view, using the LAYOUT overview2
