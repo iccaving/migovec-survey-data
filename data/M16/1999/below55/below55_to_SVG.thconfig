@@ -1,0 +1,5 @@
+source below55.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o below55.svg -layout test -layout-debug station-names

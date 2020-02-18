@@ -1,0 +1,5 @@
+source paradiso.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o paradiso.svg -layout test -layout-debug station-names

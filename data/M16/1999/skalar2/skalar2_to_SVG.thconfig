@@ -1,0 +1,5 @@
+source skalar2.th
+layout test
+ scale 1 500
+ endlayout
+export map -projection plan -o skalar2.svg -layout test -layout-debug station-names
