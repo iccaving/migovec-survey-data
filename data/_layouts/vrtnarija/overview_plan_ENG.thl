@@ -55,10 +55,10 @@ layout overview_plan_ENG
   code tex-map
   \framethickness=0.5mm
       \def\maplayout{
-    \legendbox{-90}{99}{N}{\size[26]\the\cavename}
-    \legendbox{-90}{90}{N}{\size[10]\the\comment}
-    \legendbox{-90}{60}{N}{\scalebar}
-    \legendbox{-90}{50}{N}{\northarrow}
+    \legendbox{-10}{99}{N}{\size[26]\the\cavename}
+    \legendbox{-10}{90}{N}{\size[10]\the\comment}
+    \legendbox{-10}{60}{N}{\scalebar}
+    \legendbox{-10}{50}{N}{\northarrow}
     }
 
 code metapost 
