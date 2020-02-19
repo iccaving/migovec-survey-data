@@ -1,5 +1,12 @@
 
 survey surprise -title "Surprise"
+
+input surprise-p.th2
+
+map msurprise-p -projection plan 
+    surprise-1p
+endmap
+
 centreline
     team "Gergely Ambrus" insts
     team "Nicolas Kral" notes
