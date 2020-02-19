@@ -1,10 +1,28 @@
 
-survey exhib -title "System Migovec"
+survey exhib -title "Exhibition Road"
+    
+    input "exhib-p.th2"
+
+    map mexhib-p -projection plan
+        exhib-3p
+        break
+        exhib-4p
+        exhib-5p
+        exhib-2p
+        exhib-1p
+    endmap
+
+ join exhib-1p exhib-2p
+ join exhib-2p exhib-5p
+ join exhib-5p exhib-3p
+
 centreline
     team "Colm Carroll" insts
-    team "James "Tetley" Hooper" notes
-    explo-team "Colm Carroll"
-    explo-team "James "Tetley" Hooper"
+    team "James Hooper" notes
+
+    #explo-team "Colm Carroll" # think this disagrees with Hollow Mountain 
+    #explo-team "James Hooper"
+
     date 1996.07.29
     units length meters
     units compass clino degrees
