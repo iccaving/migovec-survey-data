@@ -242,12 +242,14 @@ join soda-2p@soda mushroom-2p@mushroom
 #equate 3@fools_road 5@fallsrd
 
 ###__________2010____________###
-#input ../2010/kamikaze/kamikaze.th
+input ../2010/wonderland/wonderland.th
+input ../2010/rolling/rolling.th
+input ../2010/surprise/surprise.th
+input ../2010/kamikaze/kamikaze.th
 #input ../2010/whitebishop/whitebishop.th
 #input ../2010/losthopes/losthopes.th
 #input ../2010/stalemate/stalemate.th
 #input ../2010/roaring/roaring.th
-#input ../2010/wonderland/wonderland.th
 #input ../2010/esoterica/esoterica.th
 #input ../2010/curiousandcuriouser2/curiousandcuriouser2.th
 #input ../2010/blackknight/blackknight.th
@@ -257,19 +259,18 @@ join soda-2p@soda mushroom-2p@mushroom
 #input ../2010/insomnia/insomnia.th
 #input ../2010/serpentine/serpentine.th
 #input ../2010/mudstone/mudstone.th
-#input ../2010/surprise/surprise.th
-#input ../2010/rolling/rolling.th
 #input ../2010/itwillrain/itwillrain.th
 #input ../2010/minos/minos.th
 #input ../2010/korita/korita.th
 #input ../2010/povodni_moz2/povodni_moz2.th
 #input ../2010/povodni_moz/povodni_moz.th
 
+equate 13@wonderland 3b@friendship
+equate 7@rolling 1@wonderland
+equate 2@rolling 12@surprise
+equate 1@surprise 35@kamikaze
 #equate 8@losthopes 30@kamikaze
 #equate 1@surprise 35@kamikaze
-#equate 13@wonderland 3b@friend
-#equate 2@rolling 12@surprise
-#equate 7@rolling 1@wonderland
 #equate 10@mudstone 1@surprise
 #equate 9@crack_in_time 8@sidewinder
 #equate carbide@crack_in_time 3@envy
@@ -294,46 +295,48 @@ join soda-2p@soda mushroom-2p@mushroom
 #equate 15@republica 15@insomnia
 #equate 8@roaring 0@happy_monday
 
+join wonderland-1p@wonderland zimmer-p1@zimmer
+
 ###__________2011____________###
-#input ../2011/serenade/serenade.th
+input ../2011/redbaron/redbaron.th
+input ../2011/throneroom/throneroom.th
+input ../2011/serenade/serenade.th
+input ../2011/amazinggrace/amazinggrace.th
+input ../2011/grace2/grace2.th
+input ../2011/magicdragon/magicdragon.th
+input ../2011/stuckinparadise/stuckinparadise.th
+input ../2011/stuckinparadise2/stuckinparadise2.th
+input ../2011/eastlinks/eastlinks.th
+input ../2011/kneekiller/kneekiller.th
 #input ../2011/herojtelemarkal/herojtelemarkal.th
 #input ../2011/penguinsegg/penguinsegg.th
-#input ../2011/stuckinparadise/stuckinparadise.th
 #input ../2011/daydreamers/daydreamers.th
 #input ../2011/dream2/dream2.th
-#input ../2011/amazinggrace/amazinggrace.th
 #input ../2011/2ndtimelucky/2ndtimelucky.th
 #input ../2011/krtkovadobradela/krtkovadobradela.th
-#input ../2011/kneekiller/kneekiller.th
 #input ../2011/roundpond/roundpond.th
-#input ../2011/eastlinks/eastlinks.th
-#input ../2011/throneroom/throneroom.th
 #input ../2011/yorkshire/yorkshire.th
 #input ../2011/rottenrow/rottenrow.th
 #input ../2011/letnadrugisvet/letnadrugisvet.th
 #input ../2011/drinkyourown/drinkyourown.th
 #input ../2011/stagger_lee/stagger_lee.th
-#input ../2011/magicdragon/magicdragon.th
 #input ../2011/duffersdrop/duffersdrop.th
 #input ../2011/lowerpleasures/lowerpleasures.th
 #input ../2011/salvation/salvation.th
-#input ../2011/stuckinparadise2/stuckinparadise2.th
-#input ../2011/redbaron/redbaron.th
-#input ../2011/grace2/grace2.th
 #input ../2011/longwater/longwater.th
 #input ../2011/winterjourney/winterjourney.th
 
-#equate 12@magicdragon 1@grace2
-#equate 1@redbaron 25@kamikaze
-#equate 1@serenade 11@throneroom
-#equate 17@throneroom 10@redbaron
-#equate 8@amazinggrace 7@serenade
-#equate 1@amazinggrace 14@grace2
-#equate 24@eastlinks 1@stuckinparadise2
-#equate 22@kneekiller 24@eastlinks
+equate 1@redbaron 25@kamikaze
+equate 17@throneroom 10@redbaron
+equate 1@serenade 11@throneroom
+equate 8@amazinggrace 7@serenade
+equate 1@amazinggrace 14@grace2
+equate 12@magicdragon 1@grace2
+equate 6@stuckinparadise 1@magicdragon
+equate 10@stuckinparadise2 4@stuckinparadise
+equate 24@eastlinks 1@stuckinparadise2
+equate 22@kneekiller 24@eastlinks
 #equate 23@salvation 1@kneekiller
-#equate 10@stuckinparadise2 4@stuckinparadise
-#equate 6@stuckinparadise 1@magicdragon
 #equate 3@stagger_lee 2@candyMountain
 #equate 29@stagger_lee 8@soda
 #equate 10@2ndtimelucky 1@lowerpleasures
@@ -355,6 +358,8 @@ join soda-2p@soda mushroom-2p@mushroom
 #equate 14@daydreamers 1@insomnia
 
 ###__________2012____________###
+input ../2012/atlantis/atlantis.th
+input ../2012/brezno_slapov/brezno_slapov.th
 #input ../2012/worm/worm.th
 #input ../2012/euphrates2/euphrates2.th
 #input ../2012/ingloriousbasterd/ingloriousbasterd.th
@@ -363,7 +368,6 @@ join soda-2p@soda mushroom-2p@mushroom
 #input ../2012/minestrone1/minestrone1.th
 #input ../2012/euphrates/euphrates.th
 #input ../2012/hotpants/hotpants.th
-#input ../2012/atlantis/atlantis.th
 #input ../2012/minestrone2/minestrone2.th
 #input ../2012/guillotine/guillotine.th
 #input ../2012/watershipdown/watershipdown.th
@@ -371,7 +375,6 @@ join soda-2p@soda mushroom-2p@mushroom
 #input ../2012/peepshow/peepshow.th
 #input ../2012/invictus/invictus.th
 #input ../2012/bravenewworld/bravenewworld.th
-#input ../2012/brezno_slapov/brezno_slapov.th
 #input ../2012/guillotine2/guillotine2.th
 #input ../2012/apollo/apollo.th
 #input ../2012/milkyway/milkyway.th
@@ -381,15 +384,15 @@ join soda-2p@soda mushroom-2p@mushroom
 #input ../2012/dreamsforthesoul/dreamsforthesoul.th
 #input ../2012/undercover_squirrell/undercover_squirrell.th
 
+equate 32@atlantis 1@eastlinks
+equate 17@brezno_slapov 1@atlantis
 #equate 17@peepshow 1@hotpants
 #equate 15@why_the_face 1@throneroom
 #equate 8@hotpants 1@throneroom
 #equate 13@peepshow 12@undercover_squirrell
-#equate 17@brezno_slapov 1@atlantis
 #equate 1@invictus 12@bravenewworld
 #equate 1@bravenewworld 22@salvation
 #equate 22@atlantis 1@minestrone2
-#equate 32@atlantis 1@eastlinks
 #equate 24@minestrone1 11@minestrone2
 #equate 5@ingloriousbasterd 21@atlantis
 #equate 4@razor 7@guillotine
@@ -431,7 +434,6 @@ join soda-2p@soda mushroom-2p@mushroom
 #input ../2013/hash/hash.th
 #input ../2013/lethe/lethe.th
 #input ../2013/kokain_rute/kokain_rute.th
-#input ../2013/emptyquarter/emptyquarter.th
 #input ../2013/apollo_traverse/apollo_traverse.th
 #input ../2013/straightjacket/straightjacket.th
 #input ../2013/hydrophobia/hydrophobia.th
@@ -462,36 +464,37 @@ join soda-2p@soda mushroom-2p@mushroom
 #equate 1@500m 11@xanadont
 #equate 5@dwarf_pine 1@hydrophobia
 #equate 28@rejuvenation_rift 17@cuckoos_nest
-#equate 19@emptyquarter 7@choke-a-bloke
 
 ###__________2014____________###
+input ../2014/sicsempertyrannis/sicsempertyrannis.th
+input ../2014/jericho/jericho.th
+input ../2014/jericho2/jericho2.th
+input ../2014/squidgygoodness/squidgygoodness.th
+input ../2014/pleasurepalace/pleasurepalace.th
 #input ../2014/stupid/stupid.th
 #input ../2014/AJA/AJA.th
 #input ../2014/yourmum/yourmum.th
 #input ../2014/touchingthevoid/touchingthevoid.th
-#input ../2014/jericho/jericho.th
 #input ../2014/hanginggardensdeep/hanginggardensdeep.th
 #input ../2014/gravity/gravity.th
 #input ../2014/hipsdontlie/hipsdontlie.th
-#input ../2014/pleasurepalace/pleasurepalace.th
-#input ../2014/jericho2/jericho2.th
 #input ../2014/apuntoofar1/apuntoofar1.th
 #input ../2014/rocksteadylove/rocksteadylove.th
 #input ../2014/serrure/serrure.th
 #input ../2014/apuntoofar3/apuntoofar3.th
-#input ../2014/sicsempertyrannis/sicsempertyrannis.th
 #input ../2014/apuntoofar2/apuntoofar2.th
-#input ../2014/squidgygoodness/squidgygoodness.th
 
+equate 24@sicsempertyrannis 10@brezno_slapov
+equate 11@jericho 17@sicsempertyrannis
+equate 8@jericho2 1@jericho
+equate 6@jericho2 8@squidgygoodness
+equate 20@pleasurepalace 15@sicsempertyrannis
 #equate 9@hipsdontlie 2@hipsdontlie
 #equate 3@hipsdontlie 16@cuckoos_nest
-#equate 8@jericho2 1@jericho
 #equate 3@stupid 5@hydrophobia
 #equate 1@gravity 12@highway32
 #equate 27@gravity 1@dwarf_pine
 #equate 1@apuntoofar1 9@apuntoofar2
-#equate 11@jericho 17@sicsempertyrannis
-#equate 24@sicsempertyrannis 10@brezno_slapov
 #equate 1@rocksteadylove 1@hanginggardensdeep
 #equate 5@touchingthevoid 25@sicsempertyrannis
 #equate 11@apuntoofar1 1@kamikaze
@@ -500,24 +503,23 @@ join soda-2p@soda mushroom-2p@mushroom
 #equate 17@serrure 4@serrure
 #equate 8@serrure 12@consort
 #equate 31@AJA 13@rocksteadylove
-#equate 20@pleasurepalace 15@sicsempertyrannis
-#equate 6@jericho2 8@squidgygoodness
 #equate 4@yourmum 1@esoterica
 
 ###__________2015____________###
+input ../2015/jetstream/jetstream.th
+input ../2015/firstdraft/firstdraft.th
+input ../2015/finaldraft/finaldraft.th
+input ../2015/meridianway/meridianway.th
+input ../2015/choke-a-bloke/choke-a-bloke.th
+input ../2015/blast/blast.th
+input ../2015/emptyquarter/emptyquarter.th
 #input ../2015/lazarus/lazarus.th
-#input ../2015/choke-a-bloke/choke-a-bloke.th
-#input ../2015/meridianway/meridianway.th
-#input ../2015/finaldraft/finaldraft.th
 #input ../2015/atworldsend/atworldsend.th
 #input ../2015/andreabocelli/andreabocelli.th
 #input ../2015/pushyourluck/pushyourluck.th
-#input ../2015/jetstream/jetstream.th
 #input ../2015/davyjoneslocker/davyjoneslocker.th
 #input ../2015/trueadventures/trueadventures.th
-#input ../2015/blast/blast.th
 #input ../2015/isdead/isdead.th
-#input ../2015/firstdraft/firstdraft.th
 #input ../2015/touchingthevoidsbottom/touchingthevoidsbottom.th
 #input ../2015/dinnerservice/dinnerservice.th
 #input ../2015/shithole/shithole.th
@@ -525,24 +527,25 @@ join soda-2p@soda mushroom-2p@mushroom
 #input ../2015/formative/formative.th
 #input ../2015/agartha/agartha.th
 
+equate 24@jetstream 1@squidgygoodness
+equate 15@firstdraft 1@jetstream
+equate 12@finaldraft 9@firstdraft
+equate 18@meridianway 1@finaldraft
+equate 1@meridianway 1@choke-a-bloke
+equate 16@meridianway 35@blast
+equate 1@pleasurepalace 1@blast
+equate 19@emptyquarter 7@choke-a-bloke
 #equate 5@formative 11@beyond
 #equate 1@void 1@nitro
 #equate 1@yourmum 3@isdead
 #equate 1@dinnerservice 6@void
 #equate 38@andreabocelli 6@void
 #equate 1@sicsempertyrannis 15@davyjoneslocker
-#equate 18@meridianway 1@finaldraft
 #equate 1@trueadventures 1@colarado
-#equate 12@finaldraft 9@firstdraft
 #equate 9@atworldsend 1@davyjoneslocker
 #equate 30@agartha 39@pushyourluck
-#equate 24@jetstream 1@squidgygoodness
 #equate 1@pushyourluck 3@cuckoos_nest
-#equate 1@meridianway 1@choke-a-bloke
-#equate 15@firstdraft 1@jetstream
 #equate 26@lazarus 9@miles
 #equate 1@touchingthevoidsbottom 27@sicsempertyrannis
-#equate 16@meridianway 35@blast
-#equate 1@pleasurepalace 1@blast
 
 endsurvey

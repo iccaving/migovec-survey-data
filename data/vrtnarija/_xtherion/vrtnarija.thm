@@ -6,6 +6,7 @@ map mvrtnarija-p -projection plan -title "Vrtnarija"
 	mbelow_big_rock-p
 	mbeyond_red_cow-p
 	mbelow_balamory-p
+	mcheetah-p
 endmap
 
 ## SUBMAPS ##
@@ -63,6 +64,10 @@ endmap
 
 map mbelow_balamory-p -projection plan
 	mbalamory-p@balamory
+endmap
+
+map mcheetah-p -projection plan
+	mwonderland-p@wonderland
 endmap
 
 #map mbelow_republica-p -projection plan	

@@ -1,5 +1,12 @@
 
-survey wonderland -title "WONDERLAND"
+survey wonderland -title "Wonderland"
+
+input wonderland-p.th2
+
+map mwonderland-p -projection plan 
+    wonderland-1p
+endmap
+
 centreline
     team "Andy Jurd" insts
     team "Gergely Ambrus" notes
@@ -24,11 +31,11 @@ centreline
     1	2	2	5	0
     2	3	0	1	1
     3	2	2	2	0
-    4	4	2	2	1
+    #4	4	2	2	1
     5	4	3	30	0
     7	5	10	10	20
     8	2	3	4	1
-    9	2	2	3	1	top of leopard pitch
+    9	2	2	3	1	# top of leopard pitch
 endcentreline
 endsurvey
 
