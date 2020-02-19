@@ -37,11 +37,22 @@ jobs:
           make -C $THERION_PATH
           mkdir ${THERION_PATH}/bin
           mv ${THERION_PATH}/therion ${THERION_PATH}/bin/therion
+      - name: Install svgo
+        run: sudo npm install -g svgo
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate Primadonna output files
         run: ${THERION_PATH}/bin/therion data/_config/automation/prima_ubend_mona.thconfig
       - name: Generate Vrtnarija output files
         run: ${THERION_PATH}/bin/therion data/_config/automation/vrtnarija.thconfig
+      #=========================== COMPRESS OUTPUT ===========================#
+      - name: Compress PDFs
+        run: |
+          for file in ./data/_outputs/*.pdf; do
+            gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=temp.pdf $file;                                    
+            mv temp.pdf $file;
+          done
+      - name: Compress SVGs
+        run: svgo -f ./data/_outputs/
       #=============================== UPLOADS ===============================#
       - name: Upload Files
         uses: "marvinpinto/action-automatic-releases@latest"
@@ -51,11 +62,7 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: false
           files: |
-            ./data/_outputs/primadona_ubend_monatip.3d
-            ./data/_outputs/primadona_ubend_monatip_plan_SLO.pdf
-            ./data/_outputs/primadona_ubend_monatip_plan_ENG.pdf
-            ./data/_outputs/primadona_ubend_monatip_EE_SLO.pdf
-            ./data/_outputs/primadona_ubend_monatip_EE_ENG.pdf
-            ./data/_outputs/vrtnarija.3d
-            ./data/_outputs/vrtnarija_plan_SLO.pdf
-            ./data/_outputs/vrtnarija_plan_ENG.pdf
+            ./data/_outputs/*.3d
+            ./data/_outputs/*.lox
+            ./data/_outputs/*.pdf
+            ./data/_outputs/*.svg
