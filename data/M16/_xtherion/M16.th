@@ -5,12 +5,17 @@ survey M16 -title "M16 part of System Migovec"
 		mhotline-p@hotline
 		mbrezno-p@brezno
 		mgoodbag-p@goodbag
+		mshordrop-p@shordrop
+		mshordrop2-p@shordrop2
 		mmigcon-p@migcon
 		mmigconleft-p@migconleft
+		mmigcondown-p@migcondown
+		#mmigcond2@migcond2
 		mlevel2s-p@level2s
 		mlevel2n-p@level2n
 		mexhib-p@exhib
 		mcarwash-p@carwash
+		mrockroll-p@rockroll
 	endmap
 
 ###__________1996____________###
@@ -19,10 +24,11 @@ input "../1996/entrance/entrance.th"
 input "../1996/brezno/brezno.th"
 input "../1996/hotline/hotline.th"
 input "../1996/goodbag/goodbag.th"
-#input ../1996/shordrop/shordrop.th
+input "../1996/shordrop/shordrop.th"
+input "../1996/shordrop2/shordrop2.th"
 input "../1996/exhib/exhib.th"
 input "../1996/level2s/level2s.th"
-#input ../1996/rockroll/rockroll.th
+input "../1996/rockroll/rockroll.th"
 input "../1996/carwash/carwash.th"
 input "../1996/level2n/level2n.th"
 input "../1996/migcon/migcon.th"
@@ -41,23 +47,27 @@ equate 7@migcon 1@level2s
 equate 1@migconleft 1@migcon
 equate 6@migconleft 7@hotline
 equate 0@migcondown 1@migcon
-#equate 2@migcondown 0@rockroll
-#equate 7@shordrop 50@brezno
-#equate 1@shordrop2 1@shordrop
+equate 2@migcondown 0@rockroll
+equate 7@shordrop 50@brezno
+equate 1@shordrop2 1@shordrop
 
 join brezno-1p@brezno entrance-6p@entrance
 join migconleft-1p@migconleft hotline-2p@hotline
-join migconleft-1p@migconleft migcon-1p@migcon
+join migconleft-2p@migconleft migcon-1p@migcon
+join migconleft-2p@migconleft migcondown-1p@migcondown
+join migconleft-1p@migconleft migcondown-1p@migcondown
 join level2n-1p@level2n level2s-1p@level2s
 join level2n-1p@level2n exhib-3p@exhib
 join carwash-1p@carwash exhib-1p@exhib
 join hotline-1p@hotline goodbag-1p@goodbag
+join brezno-4p@brezno shordrop-2p@shordrop
+join shordrop-1p@shordrop shordrop2-1p@shordrop2
 
 
 ###__________1997____________###
 
 #input ../1997/lostcity/lostcity.th
-#input ../1997/death_by_a_1000_blows/death_by_a_1000_blows.th
+#input ../2016/death_by_a_1000_blows/death_by_a_1000_blows.th   ### This was done in 2016
 #input ../1997/mower/mower.th
 #input ../1997/cowboys/cowboys.th
 #input ../1997/deep/deep.th
