@@ -2,7 +2,7 @@ survey s403_123
 	centreline
 		data cartesian from to northing easting altitude
 		flags surface
-		cs epsg:3794
+		cs EPSG:3794
 		 fix 403000_123999 403000 123999 822.02
 		403000_123999	403010_123999	0.0	10.0	2.940
 		403000_123999	403000_123989	-10.0	0.0	-1.310
