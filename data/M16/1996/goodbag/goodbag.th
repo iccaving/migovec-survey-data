@@ -1,14 +1,36 @@
 
-survey goodbag -title "System Migovec"
+survey goodbag -title "Goodybag"
+
+	input "goodbag-p.th2"
+
+	map mgoodbag-p -projection plan
+		goodbag-1p
+	endmap
 centreline
     team "Jim Evans" insts
     team "Mark Evans" notes
     explo-team "Jim Evans"
     explo-team "Mark Evans"
     date 1996.08.11
+    explo-date 1996.08.11
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
+
+    1       2       2.70    122     +58
+    2       3       3.3     103     +22
+    3       4       2.70    131     -03
+    4       5       2.80    123     +17
+    5       6       2.70    098     +22
+    #
+    1       7       9.20    310     -03     #station 7 is marked
+    7       8       10.0    -       down    #top of tight pitch
+    7       9       3.00    243     +53
+    9       10      9.30    354     +49
+    10      100      6.51    314     +04
+    100     11      6.60    288     -10
+    11      12      2.70    298     +18
+    12      13      14.90   331     +15
     
 endcentreline
 endsurvey
