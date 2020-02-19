@@ -22,9 +22,15 @@ input "../../_layouts/vrtnarija/overview_plan.thl"
 # export a PLAN view, using the LAYOUT overview1
 language fr
 export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.pdf -layout overview_plan
+export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.svg -layout overview_plan
 language en
 export map -projection plan -o ../../_outputs/vrtnarija_plan_ENG.pdf -layout overview_plan
+export map -projection plan -o ../../_outputs/vrtnarija_plan_ENG.svg -layout overview_plan
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/vrtnarija.3d -fmt survex
+export model -o ../../_outputs/vrtnarija.3d
+
+#----------------------------------------------------------------------------------|
+# export a .lox model, which can be opened in LOCH
+export model -o ../../_outputs/vrtnarija.lox
