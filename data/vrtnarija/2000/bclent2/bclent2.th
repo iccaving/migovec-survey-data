@@ -26,8 +26,8 @@ survey bclent2 -title "Vrtnarija entrance"
 	join bclent2-p2 bclent2-p3
 
 	centreline
-		cs lat-long
-		fix 0  46.253636  13.764983 1776
+		cs epsg:3794
+		fix 0  404766 124502 1799
 
 		date 2000.08.03
 		explo-date 2000.07.13
