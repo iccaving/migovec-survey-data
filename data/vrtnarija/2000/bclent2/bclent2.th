@@ -26,7 +26,7 @@ survey bclent2 -title "Vrtnarija entrance"
 	join bclent2-p2 bclent2-p3
 
 	centreline
-		cs epsg:3794
+		cs EPSG:3794
 		fix 0  404766 124502 1799
 
 		date 2000.08.03
