@@ -1,5 +1,10 @@
 
 survey migcondown -title "Mig Country 3"
+    input "migcondown-p.th2"
+
+    map mmigcondown-p -projection plan
+        migcondown-1p
+    endmap
 centreline
     date 1996.08.16
     team "Iain McKenna" notes tape
