@@ -1,5 +1,12 @@
 
 survey rolling -title "Rolling Stones"
+
+input "rolling-p"
+
+map mrolling-p -projection plan 
+    rolling-1p
+endmap
+
 centreline
     team "Gergely Ambrus" notes
     team "Nicolas Kral" insts
