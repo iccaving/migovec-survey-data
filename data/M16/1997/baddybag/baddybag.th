@@ -1,10 +1,24 @@
 
 survey baddybag -title "System Migovec"
+    
+    input "baddybag-p.th2"
+
+    map mbaddybag-p -projection plan
+        baddybag-3p
+        break
+        baddybag-2p
+        baddybag-1p
+    endmap
+
 centreline
-    team "Alva, Clewin, Shed" insts
-    team "Alva, Shed" notes
-    explo-team "Alva, Clewin, Shed"
-    explo-team "Alva, Shed"
+    team "Alva Gosson" insts notes
+    team "Clewin Griffiths" insts notes
+    team "Shed" insts notes
+
+    explo-team "Alva Gosson"
+    explo-team "Shed"
+    explo-team "Clewin Griffiths"
+    explo-date 1997.08.02
     date 1997.08.02
     units length meters
     units compass clino degrees
