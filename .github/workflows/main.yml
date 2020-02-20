@@ -44,6 +44,10 @@ jobs:
         run: ${THERION_PATH}/bin/therion data/_config/automation/prima_ubend_mona.thconfig
       - name: Generate Vrtnarija output files
         run: ${THERION_PATH}/bin/therion data/_config/automation/vrtnarija.thconfig
+      - name: Generate Old System output files
+        run: ${THERION_PATH}/bin/therion data/_config/automation/m2m16m18.thconfig
+      - name: Generate Migovec System output files
+        run: ${THERION_PATH}/bin/therion data/_config/automation/system_migovec.thconfig
       #=========================== COMPRESS OUTPUT ===========================#
       - name: Compress PDFs
         run: |
