@@ -3,8 +3,10 @@ survey M16 -title "M16 part of System Migovec"
 	map mM16-p -projection plan
 		mentrance-p@entrance
 		mhotline-p@hotline
+		mlostcity-p@lostcity
 		mbrezno-p@brezno
 		mgoodbag-p@goodbag
+		mbaddybag-p@baddybag
 		mshordrop-p@shordrop
 		mshordrop2-p@shordrop2
 		mmigcon-p@migcon
@@ -16,6 +18,10 @@ survey M16 -title "M16 part of System Migovec"
 		mexhib-p@exhib
 		mcarwash-p@carwash
 		mrockroll-p@rockroll
+		mxxx-p@xxx
+		msajeta-p@sajeta
+		mhotel-p@hotel
+		mpinkp-p@pinkp
 	endmap
 
 ###__________1996____________###
@@ -66,21 +72,21 @@ join shordrop-1p@shordrop shordrop2-1p@shordrop2
 
 ###__________1997____________###
 
-#input ../1997/lostcity/lostcity.th
+input "../1997/lostcity/lostcity.th"
 #input ../2016/death_by_a_1000_blows/death_by_a_1000_blows.th   ### This was done in 2016
 #input ../1997/mower/mower.th
 #input ../1997/cowboys/cowboys.th
 #input ../1997/deep/deep.th
 #input ../1997/challenge/challenge.th
 #input ../1997/tamoka/tamoka.th
-#input ../1997/baddybag/baddybag.th
+input "../1997/baddybag/baddybag.th"
 #input ../1997/teoti/teoti.th
 #input ../1997/batshitb/batshitb.th
 #input ../1997/sifon/sifon.th
-#input ../1997/xxx/xxx.th
-#input ../1997/pinkp/pinkp.th
+input "../1997/xxx/xxx.th"
+input "../1997/pinkp/pinkp.th"
 #input ../1997/doh/doh.th
-#input ../1997/hotel/hotel.th
+input "../1997/hotel/hotel.th"
 #input ../1997/batshita/batshita.th
 #input ../1997/woft/woft.th
 #input ../1997/coldfeet/coldfeet.th
@@ -95,7 +101,7 @@ join shordrop-1p@shordrop shordrop2-1p@shordrop2
 #input ../1997/galac4/galac4.th
 #input ../1997/batshit1/batshit1.th
 #input ../1997/wonder/wonder.th
-#input ../1997/sajeta/sajeta.th
+input "../1997/sajeta/sajeta.th"
 #input ../1997/rameses/rameses.th
 #input ../1997/paradox/paradox.th
 #input ../1997/galact1/galact1.th
@@ -104,11 +110,11 @@ join shordrop-1p@shordrop shordrop2-1p@shordrop2
 
 #equate 6@woft 6@hotline
 #equate 9@death_by_a_1000_blows is@
-#equate 6@hotline 17@lostcity
-#equate 14@baddybag 6@goodbag
-#equate 1@xxx 1@carwash
-#equate 45@hotel 20@sajeta
-#equate 1@sajeta 10@xxx
+equate 6@hotline 17@lostcity
+equate 14@baddybag 6@goodbag
+equate 1@xxx 1@carwash
+equate 45@hotel 20@sajeta
+equate 1@sajeta 10@xxx
 #equate 22@glory 24@fa999
 #equate 1@god 1@deep
 #equate 4b@teoti 4@sinners
@@ -119,7 +125,7 @@ join shordrop-1p@shordrop shordrop2-1p@shordrop2
 #equate 1@pinkp 67@wonder
 #equate 11@glory 0@sinners
 #equate 1@glory 1@coldfeet
-#equate 1@pinkp 1@hotel
+equate 1@pinkp 1@hotel
 #equate 31@god 1@coldfeet
 #equate 28@coldfeet 18@pinkp
 #equate 27@exhib 7@challenge
@@ -137,6 +143,9 @@ join shordrop-1p@shordrop shordrop2-1p@shordrop2
 #equate 9@cowboys 22@paradox
 #equate 13@cowboys 2@rameses
 #equate 1@level2s 27@titanic
+
+join hotline-1p@hotline lostcity-1p@lostcity
+join baddybag-3p@baddybag goodbag-1p@goodbag
 
 
 ###__________1998____________###
