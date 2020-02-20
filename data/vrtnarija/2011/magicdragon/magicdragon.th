@@ -1,5 +1,12 @@
 
 survey magicdragon -title "Magic Dragon"
+
+input magicdragon-p.th2
+
+map mmagicdragon-p -projection plan 
+    magicdragon-1p
+endmap
+
 centreline
     team "Clare Tan" insts
     team "James Hooper" notes

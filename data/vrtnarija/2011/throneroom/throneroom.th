@@ -1,5 +1,12 @@
 
 survey throneroom -title "The Throne Room"
+
+input throneroom-p.th2
+
+map mthroneroom-p -projection plan 
+    throneroom-1p
+endmap
+
 centreline
     team "Clare Tan" insts
     team "JMF" notes

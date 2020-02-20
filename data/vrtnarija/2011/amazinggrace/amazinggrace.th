@@ -1,5 +1,12 @@
 
 survey amazinggrace -title "Amazing Grace"
+input amazinggrace-p.th2
+
+map mamazinggrace-p -projection plan 
+    amazinggrace-1p
+endmap
+
+
 centreline
     team "Jan Evetts" insts
     team "Kate Smith" notes
