@@ -1,5 +1,12 @@
 
 survey stuckinparadise2 -title "Stuck in Paradise 2"
+
+input stuckinparadise2-p.th2
+
+map mstuckinparadise2-p -projection plan 
+    stuckinparadise2-1p
+endmap
+
 centreline
     team "Izi" insts
     team "Gergely Ambrus" notes
