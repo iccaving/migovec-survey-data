@@ -1,5 +1,13 @@
 
 survey kamikaze -title "Kamikaze"
+
+input kamikaze-p.th2
+
+map mkamikaze-p -projection plan 
+    kamikaze-1p
+endmap
+
+
 centreline
     team "James Kirkpatrick" insts
     team "Dave Wilson" notes
