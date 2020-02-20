@@ -1,5 +1,12 @@
 
 survey stuckinparadise -title "Stuck in Paradise"
+
+input stuckinparadise-p.th2
+
+map mstuckinparadise-p -projection plan 
+    stuckinparadise-1p
+endmap
+
 centreline
     team "Gergely Ambrus" insts
     team "Jana Carga" notes
