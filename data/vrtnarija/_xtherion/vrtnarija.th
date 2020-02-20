@@ -270,7 +270,6 @@ equate 7@rolling 1@wonderland
 equate 2@rolling 12@surprise
 equate 1@surprise 35@kamikaze
 #equate 8@losthopes 30@kamikaze
-#equate 1@surprise 35@kamikaze
 #equate 10@mudstone 1@surprise
 #equate 9@crack_in_time 8@sidewinder
 #equate carbide@crack_in_time 3@envy
@@ -297,6 +296,7 @@ equate 1@surprise 35@kamikaze
 
 join wonderland-1p@wonderland zimmer-p1@zimmer
 join surprise-1p@surprise rolling-1p@rolling
+join kamikaze-1p@kamikaze surprise-1p@surprise
 
 ###__________2011____________###
 input ../2011/redbaron/redbaron.th
@@ -357,6 +357,8 @@ equate 22@kneekiller 24@eastlinks
 #equate 4@penguinsegg 1@dream2
 #equate 17@dream2 1@daydreamers
 #equate 14@daydreamers 1@insomnia
+
+join redbaron-1p@redbaron kamikaze-1p@kamikaze 
 
 ###__________2012____________###
 input ../2012/atlantis/atlantis.th
