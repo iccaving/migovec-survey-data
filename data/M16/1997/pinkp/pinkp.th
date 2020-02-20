@@ -1,11 +1,18 @@
 
-survey pinkp -title "System Migovec"
+survey pinkp -title "Pink Panther"
+
+    input "pinkp-p.th2"
+
+    map mpinkp-p -projection plan
+        pinkp-1p
+    endmap
 centreline
-    team "scuzza" insts
-    team "Mike Playford" notes
-    explo-team "scuzza"
-    explo-team "Mike Playford"
+    team "Sarah Windgrove" insts
+    team "Michael Playford" notes
+    explo-team "Sarah Windgrove"
+    explo-team "Michael Playford"
     date 1997.08.01
+    explo-date 1997.08.01
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

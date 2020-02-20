@@ -1,10 +1,24 @@
 
-survey sajeta -title "System Migovec"
+survey sajeta -title "Sajeta"
+
+    input "sajeta-p.th2"
+
+    map msajeta-p -projection plan
+        sajeta-1p
+        sajeta-2p
+        sajeta-3p
+    endmap
+
+    join sajeta-1p sajeta-2p
+    join sajeta-3p sajeta-2p
 centreline
-    team "Michael playford / Sarah Wingrove" insts
-    team "J.Hooper" notes
-    explo-team "Michael playford / Sarah Wingrove"
-    explo-team "J.Hooper"
+    team "Michael Playford"
+    team "Sarah Wingrove" insts
+    team "James Hooper" notes
+    explo-team "Michael Playford"
+    explo-team "Sarah Wingrove"
+    explo-team "James Hooper"
+
     date 1997.7.27
     units length meters
     units compass clino degrees
