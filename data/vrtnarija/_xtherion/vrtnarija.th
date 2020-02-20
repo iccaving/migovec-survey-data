@@ -359,6 +359,13 @@ equate 22@kneekiller 24@eastlinks
 #equate 14@daydreamers 1@insomnia
 
 join redbaron-1p@redbaron kamikaze-1p@kamikaze 
+join throneroom-1p@throneroom redbaron-1p@redbaron
+join serenade-1p@serenade throneroom-1p@throneroom
+join amazinggrace-1p@amazinggrace serenade-1p@serenade
+join grace2-1p@grace2 amazinggrace-1p@amazinggrace
+join magicdragon-1p@magicdragon grace2-1p@grace2
+join stuckinparadise-1p@stuckinparadise magicdragon-1p@magicdragon
+join stuckinparadise2-1p@stuckinparadise2 stuckinparadise-1p@stuckinparadise
 
 ###__________2012____________###
 input ../2012/atlantis/atlantis.th

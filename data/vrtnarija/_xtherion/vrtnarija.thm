@@ -7,6 +7,7 @@ map mvrtnarija-p -projection plan -title "Vrtnarija"
 	mbeyond_red_cow-p
 	mbelow_balamory-p
 	mcheetah-p
+	mbelow_stuck_in_paradise-p
 endmap
 
 ## SUBMAPS ##
@@ -38,7 +39,7 @@ endmap
 map mbelow_big_rock-p -projection plan
 	mhighway32-p@highway32
 	mpostiga-p@postiga
-	mleprachaun-p@leprachaun
+	mleprachaun-p@leprachaun	
 	mweepeople-p@weepeople
 	mgold-p@gold
 	menvy-p@envy
@@ -72,6 +73,16 @@ map mcheetah-p -projection plan
 	msurprise-p@surprise
 	mkamikaze-p@kamikaze
 	mredbaron-p@redbaron
+	mthroneroom-p@throneroom
+	mamazinggrace-p@amazinggrace
+	mserenade-p@serenade
+	mgrace2-p@grace2
+	mmagicdragon-p@magicdragon
+endmap
+
+map mbelow_stuck_in_paradise-p -projection plan
+	mstuckinparadise-p@stuckinparadise
+	mstuckinparadise2-p@stuckinparadise2
 endmap
 
 #map mbelow_republica-p -projection plan	
