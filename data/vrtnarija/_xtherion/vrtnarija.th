@@ -366,6 +366,7 @@ join grace2-1p@grace2 amazinggrace-1p@amazinggrace
 join magicdragon-1p@magicdragon grace2-1p@grace2
 join stuckinparadise-1p@stuckinparadise magicdragon-1p@magicdragon
 join stuckinparadise2-1p@stuckinparadise2 stuckinparadise-1p@stuckinparadise
+join eastlinks-1p@eastlinks stuckinparadise2-1p@stuckinparadise2
 
 ###__________2012____________###
 input ../2012/atlantis/atlantis.th
@@ -420,6 +421,9 @@ equate 17@brezno_slapov 1@atlantis
 #equate 1@perfidia 15@republica
 #equate 18@perfidia 7@mad_cow
 #equate 1@ride_the_lightning 11@worm
+
+join atlantis-1p@atlantis eastlinks-1p@eastlinks
+join brezno_slapov-1p@brezno_slapov atlantis-1p@atlantis
 
 ###__________2013____________###
 #input ../2013/bingo_granny/bingo_granny.th
