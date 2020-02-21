@@ -59,7 +59,7 @@ jobs:
         run: svgo -f ./data/_outputs/
       #=========================== CREATE LISTING ===========================#
       - name: Create listing
-        run: python3 ./scripts/_outputs/create_file_listing.py ./data/_outputs/ ./data/_outputs/listing.jso
+        run: python3 ./scripts/create_file_listing.py ./data/_outputs/ ./data/_outputs/listing.jso
       #=============================== UPLOADS ===============================#
       - name: Upload Files
         uses: "rhyst/automatic-releases@latest"
