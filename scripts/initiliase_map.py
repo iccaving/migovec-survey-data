@@ -3,7 +3,7 @@ from os.path import isfile, join
 import sys
 import re
 
-# Create SVG centerline, scrap template (th2), and insert map definition into
+# Create scrap template (th2) with survey points and centreline, and insert map definition into
 # th file, ready to start drawing.
 #
 # Usage:
