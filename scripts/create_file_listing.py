@@ -20,5 +20,7 @@ for index, name in enumerate(nice_names):
         "type": exts[index]
     })
 
+sorted_listing = sorted(listing, key=lambda t: t['name'])
+
 with open(sys.argv[2], 'w') as f:
-    json.dump(listing, f,  indent=1)
+    json.dump(sorted_listing, f,  indent=1)
