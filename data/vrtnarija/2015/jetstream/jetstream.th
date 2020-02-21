@@ -1,5 +1,12 @@
 
 survey jetstream -title "Jet Stream"
+
+input jetstream-p.th2
+
+map mjetstream-p -projection plan
+    jetstream-1p
+endmap
+
 centreline
     team "James O'Hanlon" insts
     team "Rhys Tyers" notes

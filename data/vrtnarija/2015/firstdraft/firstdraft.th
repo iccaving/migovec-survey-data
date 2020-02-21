@@ -1,5 +1,12 @@
 
 survey firstdraft -title "First Draft"
+
+input firstdraft-p.th2
+
+map mfirstdraft-p -projection plan
+    firstdraft-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes
@@ -9,6 +16,7 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall
+    calibrate tape +3.00 
     2	1	8.28	226	-41
     3	2	5.63	209	+24
     4	3	7.62	171	-13
@@ -23,6 +31,7 @@ centreline
     13	12	4.48	160	-15
     14	13	6.30	162	+11
     15	14	4.40	233	-20
+    calibrate tape 0.00 
 endcentreline
 endsurvey
 

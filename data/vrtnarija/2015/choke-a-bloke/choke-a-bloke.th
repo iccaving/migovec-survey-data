@@ -1,5 +1,12 @@
 
 survey choke-a-bloke -title "choke-a-bloke"
+
+input choke-a-bloke-p.th2
+
+map mchoke-a-bloke-p -projection plan
+    choke-a-bloke-1p
+endmap
+
 centreline
     team "Oliver Myerscough" insts
     team "Clare Tan" notes
