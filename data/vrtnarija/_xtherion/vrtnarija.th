@@ -522,6 +522,7 @@ equate 20@pleasurepalace 15@sicsempertyrannis
 join sicsempertyrannis-1p@sicsempertyrannis brezno_slapov-1p@brezno_slapov
 join jericho-1p@jericho sicsempertyrannis-1p@sicsempertyrannis
 join jericho2-1p@jericho2 jericho-1p@jericho 
+join squidgygoodness-1p@squidgygoodness jericho2-1p@jericho2
 
 ###__________2015____________###
 input ../2015/jetstream/jetstream.th
@@ -566,4 +567,10 @@ equate 19@emptyquarter 7@choke-a-bloke
 #equate 26@lazarus 9@miles
 #equate 1@touchingthevoidsbottom 27@sicsempertyrannis
 
+join jetstream-1p@jetstream squidgygoodness-1p@squidgygoodness
+join firstdraft-1p@firstdraft jetstream-1p@jetstream
+join finaldraft-1p@finaldraft firstdraft-1p@firstdraft
+join meridianway-1p@meridianway finaldraft-1p@finaldraft
+join choke-a-bloke-1p@choke-a-bloke meridianway-1p@meridianway
+join emptyquarter-1p@emptyquarter choke-a-bloke-1p@choke-a-bloke
 endsurvey

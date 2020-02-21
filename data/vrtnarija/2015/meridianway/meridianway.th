@@ -1,5 +1,12 @@
 
 survey meridianway -title "Meridian Way"
+
+input meridianway-p.th2
+
+map mmeridianway-p -projection plan
+    meridianway-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes

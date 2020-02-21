@@ -1,5 +1,12 @@
 
 survey finaldraft -title "Final Draft"
+
+input finaldraft-p.th2
+
+map mfinaldraft-p -projection plan
+    finaldraft-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes
@@ -15,11 +22,13 @@ centreline
     5	4	4.40	221	-60
     6	5	8.30	180	+09
     7	6	4.40	155	-01
+    calibrate tape +3.00 
     8	7	11.86	206	-39
     9	8	7.39	180	-47
     10	9	8.72	093	+37
     11	10	7.14	198	-35
     12	11	6.80	15	+24
+    calibrate tape 0.00 
 endcentreline
 endsurvey
 
