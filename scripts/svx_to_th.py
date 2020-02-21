@@ -2,6 +2,14 @@ import sys
 import os
 import re
 
+# Attempts to convert an SVX file to Therion format
+#
+# Usage:
+#
+# python svx_to_th.py path/to/svx/file.svx
+#
+# find data/ -type f -name "*.svx" -exec python scripts/svx_to_th.py {} \; 
+
 svx_file_path = os.path.abspath(sys.argv[1])
 
 print(svx_file_path)
