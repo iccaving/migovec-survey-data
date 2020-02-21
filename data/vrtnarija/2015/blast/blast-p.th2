@@ -1,0 +1,180 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line wall 
+  351.61 -860.87
+  345.39 -837.72
+endline
+line wall 
+  345.39 -837.72
+  341.46 -825.51
+endline
+line wall 
+  341.46 -825.51
+  293.27 -779.06
+endline
+line wall 
+  293.27 -779.06
+  203.50 -617.09
+endline
+line wall 
+  203.50 -617.09
+  168.46 -600.00
+endline
+line wall 
+  168.46 -600.00
+  152.09 -582.44
+endline
+line wall 
+  152.09 -582.44
+  141.06 -530.55
+endline
+line wall 
+  141.06 -530.55
+  125.55 -495.67
+endline
+line wall 
+  125.55 -495.67
+  94.29 -335.12
+endline
+line wall 
+  94.29 -335.12
+  108.54 -297.95
+endline
+line wall 
+  108.54 -297.95
+  121.93 -326.54
+endline
+line wall 
+  121.93 -326.54
+  124.61 -274.88
+endline
+line wall 
+  124.61 -274.88
+  125.63 -244.41
+endline
+line wall 
+  125.63 -244.41
+  89.65 -232.76
+endline
+line wall 
+  89.65 -232.76
+  73.90 -203.15
+endline
+line wall 
+  73.90 -203.15
+  73.43 -175.51
+endline
+line wall 
+  73.43 -175.51
+  56.73 -127.09
+endline
+line wall 
+  56.73 -127.09
+  -1.93 -57.17
+endline
+line wall 
+  -1.93 -57.17
+  -44.21 81.10
+endline
+line wall 
+  -44.21 81.10
+  -38.94 131.42
+endline
+line wall 
+  -76.34 254.02
+  -38.94 131.42
+endline
+line wall 
+  -76.34 254.02
+  -110.59 330.87
+endline
+line wall 
+  -115.39 357.95
+  -110.59 330.87
+endline
+line wall 
+  -115.39 357.95
+  -126.57 397.09
+endline
+line wall 
+  -126.57 397.09
+  -209.41 466.61
+endline
+line wall 
+  -209.41 466.61
+  -314.69 398.19
+endline
+line wall 
+  -314.69 398.19
+  -323.82 528.35
+endline
+line wall 
+  -323.82 528.35
+  -334.84 606.93
+endline
+line wall 
+  -334.84 606.93
+  -317.44 644.33
+endline
+line wall 
+  -317.44 644.33
+  -323.11 650.16
+endline
+line wall 
+  -323.11 650.16
+  -351.61 706.22
+endline
+line wall 
+  -298.31 757.64
+  -351.61 706.22
+endline
+line wall 
+  -285.63 822.76
+  -298.31 757.64
+endline
+line wall 
+  -285.00 860.87
+  -285.63 822.76
+endline
+endscrap
+
+scrap blast-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 351.61 -860.87 station -name 35
+point 345.39 -837.72 station -name 34
+point 341.46 -825.51 station -name 33
+point 293.27 -779.06 station -name 32
+point 203.50 -617.09 station -name 31
+point 168.46 -600.00 station -name 30
+point 152.09 -582.44 station -name 29
+point 141.06 -530.55 station -name 28
+point 125.55 -495.67 station -name 27
+point 94.29 -335.12 station -name 26
+point 108.54 -297.95 station -name 25
+point 121.93 -326.54 station -name 24
+point 124.61 -274.88 station -name 23
+point 125.63 -244.41 station -name 22
+point 89.65 -232.76 station -name 21
+point 73.90 -203.15 station -name 20
+point 73.43 -175.51 station -name 19
+point 56.73 -127.09 station -name 18
+point -1.93 -57.17 station -name 17
+point -44.21 81.10 station -name 16
+point -38.94 131.42 station -name 15
+point -76.34 254.02 station -name 14
+point -110.59 330.87 station -name 13
+point -115.39 357.95 station -name 12
+point -126.57 397.09 station -name 11
+point -209.41 466.61 station -name 10
+point -314.69 398.19 station -name 9
+point -323.82 528.35 station -name 8
+point -334.84 606.93 station -name 7
+point -317.44 644.33 station -name 6
+point -323.11 650.16 station -name 5
+point -351.61 706.22 station -name 4
+point -298.31 757.64 station -name 3
+point -285.63 822.76 station -name 2
+point -285.00 860.87 station -name 1
+endscrap
