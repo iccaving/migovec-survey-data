@@ -57,6 +57,9 @@ jobs:
           done
       - name: Compress SVGs
         run: svgo -f ./data/_outputs/
+      #=========================== CREATE LISTING ===========================#
+      - name: Create listing
+        run: python3 ./scripts/_outputs/create_file_listing.py ./data/_outputs/ ./data/_outputs/listing.jso
       #=============================== UPLOADS ===============================#
       - name: Upload Files
         uses: "rhyst/automatic-releases@latest"
@@ -66,6 +69,7 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: false
           files: |
+            ./data/_outputs/listing.json
             ./data/_outputs/*.3d
             ./data/_outputs/*.lox
             ./data/_outputs/*.pdf
