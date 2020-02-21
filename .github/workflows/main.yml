@@ -59,7 +59,7 @@ jobs:
         run: svgo -f ./data/_outputs/
       #=============================== UPLOADS ===============================#
       - name: Upload Files
-        uses: "rhyst/automatic-releases@v1"
+        uses: "rhyst/automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           title: Build ${{ github.run_number }}
