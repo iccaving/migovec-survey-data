@@ -1,5 +1,14 @@
 
 survey sicsempertyrannis -title "Sic Semper Tyrannis"
+input sicsempertyrannis-p.th2
+
+map msicsempertyrannis-p -projection plan
+    sicsempertyrannis-1p
+    sicsempertyrannis-2p
+endmap
+
+join sicsempertyrannis-1p sicsempertyrannis-2p
+
 centreline
     team "Tanguy Racine" insts
     team "Rhys Tyers" notes

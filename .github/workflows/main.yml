@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - data/**
 
 env:
   THERION_VERSION: 5.4.4
@@ -40,10 +42,8 @@ jobs:
       - name: Install svgo
         run: sudo npm install -g svgo
       #=========================== GENERATE OUTPUT ===========================#
-      - name: Generate Primadonna output files
-        run: ${THERION_PATH}/bin/therion data/_config/automation/prima_ubend_mona.thconfig
-      - name: Generate Vrtnarija output files
-        run: ${THERION_PATH}/bin/therion data/_config/automation/vrtnarija.thconfig
+      - name: Generate output files
+        run: find data/_config/automation -type f -name "*.thconfig" -exec echo -e "\n\nGenerating {}" \;  -exec ${THERION_PATH}/bin/therion -q {} \;
       #=========================== COMPRESS OUTPUT ===========================#
       - name: Compress PDFs
         run: |
@@ -53,15 +53,19 @@ jobs:
           done
       - name: Compress SVGs
         run: svgo -f ./data/_outputs/
+      #=========================== CREATE LISTING ===========================#
+      - name: Generate listing
+        run: python3 ./scripts/create_file_listing.py ./data/_outputs/ ./data/_outputs/listing.json
       #=============================== UPLOADS ===============================#
       - name: Upload Files
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: "rhyst/automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           title: Build ${{ github.run_number }}
           automatic_release_tag: "latest"
           prerelease: false
           files: |
+            ./data/_outputs/listing.json
             ./data/_outputs/*.3d
             ./data/_outputs/*.lox
             ./data/_outputs/*.pdf

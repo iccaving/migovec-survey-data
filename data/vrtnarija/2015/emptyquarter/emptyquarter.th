@@ -1,5 +1,12 @@
 
 survey emptyquarter -title "Empty Quarter"
+
+input emptyquarter-p.th2
+
+map memptyquarter-p -projection plan
+    emptyquarter-1p
+endmap
+
 centreline
     team "Oliver Myerscough" insts
     team "Clare Tan" notes

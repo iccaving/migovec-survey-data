@@ -1,5 +1,12 @@
 
 survey blast -title "Blast!"
+
+input blast-p.th2
+
+map mblast-p -projection plan
+    blast-1p
+endmap
+
 centreline
     team "Oliver Myerscough" insts
     team "Clare Tan" notes

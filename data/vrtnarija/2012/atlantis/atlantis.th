@@ -1,5 +1,12 @@
 
 survey atlantis -title "Atlantis"
+
+input atlantis-p.th2
+
+map matlantis-p -projection plan 
+    atlantis-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Gergely Ambrus" notes

@@ -1,5 +1,12 @@
 
 survey squidgygoodness -title "Squidgy Goodness"
+
+input squidgygoodness-p.th2
+
+map msquidgygoodness-p -projection plan
+    squidgygoodness-1p
+endmap
+
 centreline
     team "Saber King" insts
     team "Sam Page" notes
