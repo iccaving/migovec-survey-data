@@ -1,78 +1,228 @@
 # Migovec Resurvey Project
 
-This contains the survey data of the Tolminski Migovec cave system, as well as minor caves in the same area, collected by the JSPDT and ICCC from 1974 to 2019. 
+This contains the survey data of the Tolminski Migovec cave system, as well as minor caves in the same area, collected by the JSPDT and ICCC from 1974 to 2019.
 
 From 1974-2018 the the survey data was collected in the Survex format but we are now using Therion and are in the process of migrating the old data.
 
+- [Migovec Resurvey Project](#migovec-resurvey-project)
+  - [Downloads](#downloads)
+  - [Therion Glossary](#therion-glossary)
+    - [Internal Data](#internal-data)
+    - [Exported Data](#exported-data)
+    - [Other Key Words](#other-key-words)
+  - [Repository and File Structure](#repository-and-file-structure)
+    - [Survey data](#survey-data)
+    - [Higher level data](#higher-level-data)
+    - [Exports](#exports)
+  - [How to export data](#how-to-export-data)
+    - [Using existing configs](#using-existing-configs)
+    - [Make your own config](#make-your-own-config)
+  - [Adding data](#adding-data)
+    - [Including new Th file into the structure of the main cave (a.k.a. equating nodes)](#including-new-th-file-into-the-structure-of-the-main-cave-aka-equating-nodes)
+    - [Creating a .th2 map and adding to map](#creating-a-th2-map-and-adding-to-map)
+    - [Additional tips](#additional-tips)
+    - [How do I...?](#how-do-i)
+      - [Compile on therion](#compile-on-therion)
+  - [How to contribute?](#how-to-contribute)
+    - [Translate Survex to Therion format](#translate-survex-to-therion-format)
+  - [Final considerations](#final-considerations)
+
 ## Downloads
 
-As data is added some artifacts are automatically generated. Here is a list of the artifacts and the links to the latest versions:
+As data is added some artifacts are automatically generated. These can be found on the [releases page](https://github.com/tr1813/migresurvey/releases).
+
+Also for convenience here is a list of the artifacts and the links to the latest versions:
+
+**System Migovec**
+
+The full system:
+
+- [Model 3D](https://github.com/tr1813/migresurvey/releases/download/latest/system_migovec.3d) [3d]  
+  The 3D file for viewing in Aven or Loch. (WIP)
+- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/system_migovec_plan_SLO.pdf) [PDF]  
+  The plan with Slovenian legend and labels. (WIP)
+- Extended Elevation - Slovenian [PDF](WIP)
+- Plan - English [PDF]  
+  The plan with English legend and labels. (WIP)
+- Extended Elevation - English [PDF](WIP)
 
 **Primadonna**
 
 Primadonna is a the cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2016. It is accessed from impressive entrances on the Western cliffs of the Migovec plateau.
 
-* [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip.3d) [3d]  
+- [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip.3d) [3d]  
   The 3D file for viewing in Aven or Loch.
-* [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) [PDF]  
+- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) [PDF]  
   The plan with Slovenian legend and labels. (WIP)
-* [Extended Elevation - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) [PDF]  
+- [Extended Elevation - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) [PDF]  
   The extended elevation with Slovenian legend and labels. (WIP)
-* [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) [PDF]  
+- [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) [PDF]  
   The plan with English legend and labels. (WIP)
-* [Extended Elevation - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) [PDF]  
+- [Extended Elevation - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) [PDF]  
   The extended elevation with English legend and labels. (WIP)
 
 **Vrtnarija**
 
 Connected to the main system in 2012, Vrtnarija comprises roughly a third of the passage in the sytem. It is accessed from entrances on the Eastern side of the Migovec plateau.
 
-* [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija.3d) [3d]  
+- [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija.3d) [3d]  
   The 3D file for viewing in Aven or Loch. (WIP)
-* [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_SLO.pdf) [PDF]  
+- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_SLO.pdf) [PDF]  
   The plan with Slovenian legend and labels. (WIP)
-* Extended Elevation - Slovenian [PDF]  
-  (WIP)
-* [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_ENG.pdf) [PDF]  
+- Extended Elevation - Slovenian [PDF](WIP)
+- [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_ENG.pdf) [PDF]  
   The plan with English legend and labels. (WIP)
-* Extended Elevation - English [PDF]  
-  (WIP)
+- Extended Elevation - English [PDF](WIP)
 
 **M18 / M16 / M2**
 
 Collectively known as 'the old system' these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994 exploration was continued until roughly 2001 and the various entrances were connected into what would become the longest cave in Slovenia.
 
-* Files
+- [Model 3D](https://github.com/tr1813/migresurvey/releases/download/latest/m2_m16_m18.3d) [3d]  
+  The 3D file for viewing in Aven or Loch. (WIP)
+- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/m2_m16_m18_plan_SLO.pdf) [PDF]  
+  The plan with Slovenian legend and labels. (WIP)
+- Extended Elevation - Slovenian [PDF](WIP)
+- Plan - English [PDF]  
+  The plan with English legend and labels. (WIP)
+- Extended Elevation - English [PDF](WIP)
 
-## Structure
+## Therion Glossary
 
-**Individual survey data**
+Therion has a complex vocabulary of its own so here is a basic translation.
 
-The raw data, usually created in the cave, or shortly after. These are within the `migovecsurveydata\{cave}\{year}\{passage}` directories.
+### Internal Data
+
+Within Therion there are a few data types its worth knowing about.
+
+- **Survey** - The raw survey data consiting of station to station measurements and passage dimension data (LRUD) as well as metadata such as date of exploration and survey, and names of explores and surveyors.
+- **Scrap** - The most basic drawing element. A scrap is the drawing associated with a small bit of passage. It will consist of the walls and stations of the passage as well as lots of extra information (should you choose to draw it!) like boulders, pits, passage gradients etc. A single set of survey data (a single passage) can have many scraps associated with it. It is often good to split the drawing over many scraps as this allows Therion to do clever things (like depth colouring).
+- **Map** - The higher level drawing element. A map can be made of scraps, or it can be a map of maps. Maps are how you collect individual drawn passages into larger blocks. For example a passage like Aquaduct will have its scraps collected in a map called `maquaduct-p` (don't worry about the name). A bigger map might be called `mbelow_klic_globin` and contain maps from Aquaduct and many other passages. The `mbelow_klic_globin` will be collected into an Primadona map `mprimadona-p` with all the other maps in Primadona and finally that will collected with the maps from Vrntarija and the old system into a full System Migovec map. The advantage of this heirarchical structure is that you can export these maps at any level, whether you want an overview of the full system or a higher resolution look at the pushing front.
+
+### Exported Data
+
+Therion can export to a number of formats.
+
+- **Map** - A 2D representation of the survey data. Usually a `.pdf` or `.svg`.
+- **Atlas** - A 2D representation of the survey data split into pages for convenient printing.
+- **Model** - A 3D representation of the survey data. Usually a `.3d` or `.lox` file viewed in aven or loch.
+- **Database** - Survey data dumped to a database for whatever reason. Usually a `.sql` file.
+
+### Other Key Words
+
+- **equate** - An equate lets Therion know that two stations are the same (that they are joined). This is how basically all the export formats are constructed.
+- **join** - A join lets Therion know that two scraps should be joined. It does its best to match up any walls that are nearby each other to create a seamless passage when exporting maps and atlases.
+
+## Repository and File Structure
+
+It can be hard to know where to start in a repository of this size so here is an overview of how things are organised and what various files and folders are for.
+
+### Survey data
+
+The raw data, usually created in the cave, or shortly after. These are within the `data\{cave}\{year}\{passage}` directories.
 
 These will likely represent single pushing trips.
 
-- `.th` files contain the centerline survey data
-- `.th2` files contain the vector drawings of the cave, also called scraps.
+- `.th` files contain the survey data
+- `.th2` files contain the scraps (drawings)
 
-These `.th` will probably also join export the scraps (`.th2`) as named `maps`. This will be autogenerated by Topodroid in many cases.
+The `.th` will probably also join any scraps (in the `.th2`) within the passage as a named map. This will have been autogenerated by Topodroid in many cases.
 
-**Higher level data**
+### Higher level data
 
-In the `_xtherion` folders you will find `.th` files that define surveys and maps made from multiple individual surveys.
+In the `_xtherion` folders you will find `.th` files that define how these individual passages are connected.
 
-- `{name}.th` will be used to defined equates in the survey and joins between the scraps.
-- `{name}.thm` will be used to combine individual scraps into cohesive named maps.
+- `{name}.th` will be used to defined equates in the survey and join scraps between passages
+- `{name}.thm` will be used to combine individual passage maps into larger maps.
 
-**Surveys**
+### Exports
 
-With the data thus organsied you can produced drawn surveys in pdf, svgs, .3d files etc. This is done through a further two types of file.
+With the data thus organised you can export maps in pdf and svg files and models in .3d and lox files. This is done through a further two types of file.
 
 In the `_config` folders are `.thconfig` files. These are more similar to a shell script if you are familair with those. They contain commands
 to produce output files like pdfs etc. They combine the named maps and `layouts` to make the output.
 
 In the `_layout` folders there layout files (`.thl`) these are complicated but they basically just define which symbols should be on the
 map and how they should like. i.e. should you show mineral symbols, how thick should pit lines be, what colour are waterfalls.
+
+## How to export data
+
+So how do you export the data to a map or model?
+
+### Using existing configs
+
+The easy way is to find yourself the config file that already does what you want. In the `data/_config/overview` directory you'll find a number of useful configs. For example `vrtnarija.thconfig` will export pdfs, svgs, and 3d files that show Vrtnarija. You just need to run it with Therion.
+
+```
+therion data/_config/overview/vrtnarija.thconfig
+```
+
+And you should find the it places the files in the `data/_outputs/maps` and `data/_outputs/models` directories.
+
+### Make your own config
+
+None of the configs export exactly what you want? Make your own!
+
+A config file will look like this:
+
+```
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../_xtherion/primadona_ubend_monatip.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../_layouts/prima_ubend_monatip/overview_plan.thl"
+
+#----------------------------------------------------------------------------------|
+# select the relevant map definitions, and levels within those maps
+select mprima_ubend_monatip-p@system_migovec -map-level 1
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view, using the LAYOUT overview_plan
+language fr # We use fr for Slovenian because sl is not yet supported
+export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout overview_plan
+language en
+export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout overview_plan
+
+#----------------------------------------------------------------------------------|
+# export a .3d model, which can be opened in AVEN and LOCH
+export model -o ../../_outputs/model/primadona_ubend_monatip.3d -fmt survex
+```
+
+You can create your own .thconfig file and select different map. For example, try selecting simply primadona, in plan view:
+
+`select mprimadona-p@primadona.sistem_prima`
+
+maybe one year of exploration in primadona:
+`select m2018-p@primadona.sistem_prima`
+
+a single cave passage:
+`select mthe_aqueduct-p@the_aqueduct.primadona.sistem_prima`
+
+or (god forbid) a single scrap:
+`select m1p@the_aqueduct.primadona.sistem_prima`
+and see what the result is.
+
+If this select statement suffers from a typo or encounters any kind of error, Therion will just compile a map of all the scraps available, but the compilation log will show an amber warning. The map subdivision is really important for the creation of an atlas of the cave.
+
+try exporting an atlas to pdf with the following command (make sure the select command is commented out with a `#`:
+`export atlas -o ../outputs/sys_prima_atlas.pdf -layout local`
+
+and see what the difference is when you try this:
+
+```
+select msystem-p@system_prima
+export atlas -o ../outputs/sys_prima_atlas.pdf -layout local
+```
+
+And of course when you have made your config, run it with Therion:
+
+```
+therion data/_configs/overview/my_nice_config.thconfig
+```
 
 ## Adding data
 
