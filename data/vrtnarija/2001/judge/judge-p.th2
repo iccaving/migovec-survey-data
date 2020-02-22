@@ -1,0 +1,90 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line wall 
+  -56.50 7.99
+  -44.13 30.28
+endline
+line wall 
+  -56.50 7.99
+  -40.98 11.54
+endline
+line wall 
+  -40.98 11.54
+  -40.98 11.54
+endline
+line wall 
+  -29.96 15.79
+  -40.98 11.54
+endline
+line wall 
+  -21.06 -3.35
+  -29.96 15.79
+endline
+line wall 
+  -21.06 -3.35
+  -4.61 2.95
+endline
+line wall 
+  -4.61 2.95
+  -4.61 2.95
+endline
+line wall 
+  -4.61 2.95
+  19.09 14.06
+endline
+line wall 
+  50.04 12.40
+  19.09 14.06
+endline
+line wall 
+  50.04 12.40
+  56.50 26.89
+endline
+line wall 
+  -3.27 18.46
+  56.50 26.89
+endline
+line wall 
+  15.00 14.53
+  6.57 -0.04
+endline
+line wall 
+  -3.27 18.46
+  6.57 -0.04
+endline
+line wall 
+  -3.27 18.46
+  -17.91 -9.09
+endline
+line wall 
+  -7.60 -30.28
+  -17.91 -9.09
+endline
+line wall 
+  -7.60 -30.28
+  -34.45 -22.09
+endline
+endscrap
+
+scrap judge-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -44.13 30.28 station -name 17
+point -56.50 7.99 station -name 16
+point -40.98 11.54 station -name 15
+point -40.98 11.54 station -name 14
+point -29.96 15.79 station -name 13
+point -21.06 -3.35 station -name 12
+point -4.61 2.95 station -name 11
+point -4.61 2.95 station -name 10
+point 19.09 14.06 station -name 9
+point 50.04 12.40 station -name 8
+point 56.50 26.89 station -name 7
+point 15.00 14.53 station -name 6
+point 6.57 -0.04 station -name 5
+point -3.27 18.46 station -name 4
+point -17.91 -9.09 station -name 3
+point -34.45 -22.09 station -name 1
+point -7.60 -30.28 station -name 2
+endscrap

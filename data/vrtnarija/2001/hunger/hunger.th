@@ -1,20 +1,27 @@
 
 survey Hunger -title "Name Hunger Series"
-centreline
-    team "Adrian Hooper" insts
-    team "Martin Mc Gowan" notes
-    explo-team "Adrian Hooper"
-    explo-team "Martin Mc Gowan"
-    date 2001.08.05
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    1	2	3.91	200	5
-    2	3	3.49	175	-67
-    4	3	7.39	043	28
-    4	5	3.15	193	13
-    6	5	6.56	-	up
-endcentreline
+
+input hunger-p.th2
+
+map mhunger-p -projection plan
+    hunger-1p
+endmap
+
+	centreline
+		team "Adrian Hooper" insts
+		team "Martin [Mc Gowan]" notes
+		explo-team "Adrian Hooper"
+		explo-team "Martin [Mc Gowan]"
+		date 2001.08.05
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		1	2	3.91	200	5
+		2	3	3.49	175	-67
+		4	3	7.39	043	28
+		4	5	3.15	193	13
+		6	5	6.56	-	up
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -22,7 +29,7 @@ endsurvey
 #
 #;Date: 05/08/01
 #;Instruments: Adrian Hooper
-#;Book: Martin Mc Gowan
+#;Book: Martin [Mc Gowan]
 #
 #;Data entered by Adrian Hooper
 #

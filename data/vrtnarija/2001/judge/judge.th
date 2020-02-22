@@ -1,31 +1,38 @@
 
 survey judge -title "Judge dred, off Jelly Chamber in GW"
-centreline
-    team "Adrian Hooper" insts
-    team "Martin Mc Gowan" notes
-    explo-team "Adrian Hooper"
-    explo-team "Martin Mc Gowan"
-    date 2001.8.4
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    2	1	4.00	287	27
-    2	3	3.42	334	29
-    4	3	3.97	208	02		#stn4 is pps on top of big boulder in Hall of Justice
-    4	5	4.14	152	50
-    6	5	2.52	210	-32
-    4	7	8.26	082	-22
-    8	7	6.17	024	71
-    8	9	3.93	273	01
-    10	9	3.48	065	17
-    10	11	4.60	-	down
-    12	11	2.92	069	40
-    12	13	2.68	335	0		#stn 13 is pps shonky bolt half out of wall on shelf
-    13	14	1.50	249	0
-    14	15	6.55	-	down
-    16	15	2.15	077	-20
-    16	17	3.24	029	0		#stn 17 is pps on boulder in Jelly Antechamber
-endcentreline
+
+input judge-p.th2
+
+map mjudge-p -projection plan
+    judge-1p
+endmap
+
+	centreline
+		team "Adrian Hooper" insts
+		team "Martin [Mc Gowan]" notes
+		explo-team "Adrian Hooper"
+		explo-team "Martin [Mc Gowan]"
+		date 2001.8.4
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		2	1	4.00	287	27
+		2	3	3.42	334	29
+		4	3	3.97	208	02		#stn4 is pps on top of big boulder in Hall of Justice
+		4	5	4.14	152	50
+		6	5	2.52	210	-32
+		4	7	8.26	082	-22
+		8	7	6.17	024	71
+		8	9	3.93	273	01
+		10	9	3.48	065	17
+		10	11	4.60	-	down
+		12	11	2.92	069	40
+		12	13	2.68	335	0		#stn 13 is pps shonky bolt half out of wall on shelf
+		13	14	1.50	249	0
+		14	15	6.55	-	down
+		16	15	2.15	077	-20
+		16	17	3.24	029	0		#stn 17 is pps on boulder in Jelly Antechamber
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -33,7 +40,7 @@ endsurvey
 #
 #;Date: 4/8/01
 #;Instruments: Adrian Hooper
-#;Book: Martin Mc Gowan
+#;Book: Martin [Mc Gowan]
 #
 #;Data entered by Ben Ogborne on 4/08/01
 #
