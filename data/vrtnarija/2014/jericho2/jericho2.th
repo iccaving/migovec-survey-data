@@ -1,5 +1,11 @@
 
 survey jericho2 -title "Jericho 2"
+input jericho2-p.th2
+
+map mjericho2-p -projection plan
+    jericho2-1p
+endmap
+
 centreline
     team "Tanguy Racine" insts
     team "Sam Page" notes

@@ -1,5 +1,12 @@
 
 survey eastlinks -title "Lost Miles"
+
+input eastlinks-p.th2
+
+map meastlinks-p -projection plan 
+    eastlinks-1p
+endmap
+
 centreline
     team "Izi" insts
     team "Gergely Ambrus" notes

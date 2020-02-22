@@ -1,0 +1,31 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      PRIMADONA, MONATIP, UBEND OVERVIEW                          |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../_xtherion/system_migovec.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../_layouts/system_migovec/overview_plan.thl"
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view, using the LAYOUT overview1 
+language fr
+export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.pdf -layout overview_plan
+export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.svg -layout overview_plan
+
+#----------------------------------------------------------------------------------|
+# export a .3d model, which can be opened in AVEN and LOCH
+export model -o ../../_outputs/system_migovec.3d -fmt survex
+
+#----------------------------------------------------------------------------------|
+# export a .lox model, which can be opened in LOCH only
+export model -o ../../_outputs/system_migovec.lox
