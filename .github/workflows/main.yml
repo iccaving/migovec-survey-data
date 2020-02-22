@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - data/**
 
 env:
   THERION_VERSION: 5.4.4
