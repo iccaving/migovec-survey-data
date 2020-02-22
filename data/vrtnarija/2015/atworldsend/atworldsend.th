@@ -1,5 +1,12 @@
 
 survey atworldsend -title "At Worlds End"
+
+input atworldsend-p.th2
+
+map matworldsend-p -projection plan
+    atworldsend-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes
