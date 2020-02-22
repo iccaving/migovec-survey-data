@@ -100,6 +100,6 @@ os.remove(th_file)
 
 with open(th_file, 'w+') as f:
     for line in th_contents:
-        if line.startswith('centreline'):
+        if line.strip().startswith('centreline'):
             f.write(map_fragment.format(name=name))
         f.write(line)
