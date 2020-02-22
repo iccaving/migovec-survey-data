@@ -1,5 +1,0 @@
-source atworldsend.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o atworldsend.svg -layout test -layout-debug station-names

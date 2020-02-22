@@ -1,5 +1,0 @@
-source formative.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o formative.svg -layout test -layout-debug station-names

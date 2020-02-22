@@ -1,5 +1,0 @@
-source hipsdontlie.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o hipsdontlie.svg -layout test -layout-debug station-names

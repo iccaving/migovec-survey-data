@@ -1,5 +1,0 @@
-source survey skynet -title "Skynet"
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o survey skynet -title "Skynet" -layout test -layout-debug station-names

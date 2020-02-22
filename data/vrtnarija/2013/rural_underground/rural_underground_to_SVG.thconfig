@@ -1,5 +1,0 @@
-source rural_underground.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o rural_underground.svg -layout test -layout-debug station-names
