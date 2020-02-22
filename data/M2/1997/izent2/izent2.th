@@ -1,0 +1,27 @@
+survey izent2 -title "Izent2"
+
+input "izent2-p.th2"
+
+map mizent2-p -projection plan
+	izent2-1p
+endmap
+
+centreline	
+team "Unknown" insts
+team "Unknown" notes
+explo-team "Unknown"
+explo-team "Unknown"
+date 1976		
+
+station 19 entrance 
+
+units length meters
+units compass clino degrees
+data normal from to tape compass clino ignoreall # Default
+16	17	12.95786441	345.5297059	22.0996994
+17	18	4.544914741	37.30394828	43.43897947
+18	19	6.732616505	356.308614	54.777518
+
+endcentreline
+
+endsurvey

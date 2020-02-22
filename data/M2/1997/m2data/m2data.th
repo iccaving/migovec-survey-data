@@ -1,11 +1,13 @@
 
-survey m2 -title "System Migovec"
+survey m2_jpdt -title "M2 - from plan"
+
 centreline
     team "Unknown" insts
     team "Unknown" notes
     explo-team "Unknown"
     explo-team "Unknown"
-    date 1997.09.04
+    date 1976
+
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
@@ -88,6 +90,7 @@ centreline
     50	51	7.750	-	down
     #51	SmelltheGlove	8	30	+20
 endcentreline
+
 endsurvey
 
 # Converted From SVX
