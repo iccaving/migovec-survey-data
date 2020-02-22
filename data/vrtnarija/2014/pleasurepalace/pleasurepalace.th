@@ -1,5 +1,12 @@
 
 survey pleasurepalace -title "Pleasure Palace"
+
+input pleasurepalace-p.th2
+
+map mpleasurepalace-p -projection plan
+    pleasurepalace-1p
+endmap
+
 centreline
     team "David Kirkpatrick" insts
     team "Rhys Tyers" notes

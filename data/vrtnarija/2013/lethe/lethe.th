@@ -1,5 +1,12 @@
 
 survey lethe -title "Lethe"
+
+input lethe-p.th2
+
+map mlethe-p -projection plan
+    lethe-1p
+endmap
+
 centreline
     team "Iztok Mozir" insts
     team "Clare Tan" notes

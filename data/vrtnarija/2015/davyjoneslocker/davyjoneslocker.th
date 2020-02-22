@@ -1,5 +1,12 @@
 
 survey davyjoneslocker -title "Davy Jones' Locker"
+
+input davyjoneslocker-p.th2
+
+map mdavyjoneslocker-p -projection plan
+    davyjoneslocker-1p
+endmap
+
 centreline
     team "Ben Honan" insts
     team "Rhys Tyers" notes

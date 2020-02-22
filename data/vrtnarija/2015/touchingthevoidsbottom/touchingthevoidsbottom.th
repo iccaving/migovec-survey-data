@@ -1,5 +1,12 @@
 
 survey touchingthevoidsbottom -title "Touching the Void's Bottom"
+
+input touchingthevoidsbottom-p.th2
+
+map mtouchingthevoidsbottom-p -projection plan
+    touchingthevoidsbottom-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes

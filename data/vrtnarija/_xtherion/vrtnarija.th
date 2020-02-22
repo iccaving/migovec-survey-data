@@ -426,6 +426,7 @@ survey vrtnarija -title "Vrtnarija"
 	join brezno_slapov-1p@brezno_slapov atlantis-1p@atlantis
 	
 	###__________2013____________###
+	input ../2013/lethe/lethe.th
 	#input ../2013/bingo_granny/bingo_granny.th
 	#input ../2013/curiousandcuriouser/curiousandcuriouser.th
 	#input ../2013/pick_your_poison/pick_your_poison.th
@@ -446,12 +447,12 @@ survey vrtnarija -title "Vrtnarija"
 	#input ../2013/RCC_passage/RCC_passage.th
 	#input ../2013/hash2/hash2.th
 	#input ../2013/hash/hash.th
-	#input ../2013/lethe/lethe.th
 	#input ../2013/kokain_rute/kokain_rute.th
 	#input ../2013/apollo_traverse/apollo_traverse.th
 	#input ../2013/straightjacket/straightjacket.th
 	#input ../2013/hydrophobia/hydrophobia.th
 	
+	equate 29@lethe 1@brezno_slapov
 	#equate 20@rural_underground 1@undercover_squirrell
 	#equate 1@clapton 27@pick_your_poison
 	#equate 4@bingo_granny 10@clapton
@@ -459,7 +460,6 @@ survey vrtnarija -title "Vrtnarija"
 	#equate 11@kokain_lab 7@kokain_rute
 	#equate 1@bingo_granny 1@kokain_rute
 	#equate 1@hash2 8@hash3
-	#equate 29@lethe 1@brezno_slapov
 	#equate 7@hash2 1@hash
 	#equate 6@were_not_alone 18@atlantis
 	#equate 20@hash 24@eastlinks
@@ -479,16 +479,18 @@ survey vrtnarija -title "Vrtnarija"
 	#equate 5@dwarf_pine 1@hydrophobia
 	#equate 28@rejuvenation_rift 17@cuckoos_nest
 	
+	join lethe-1p@lethe brezno_slapov-1p@brezno_slapov
+	
 	###__________2014____________###
 	input ../2014/sicsempertyrannis/sicsempertyrannis.th
 	input ../2014/jericho/jericho.th
 	input ../2014/jericho2/jericho2.th
 	input ../2014/squidgygoodness/squidgygoodness.th
 	input ../2014/pleasurepalace/pleasurepalace.th
+	input ../2014/touchingthevoid/touchingthevoid.th
 	#input ../2014/stupid/stupid.th
 	#input ../2014/AJA/AJA.th
 	#input ../2014/yourmum/yourmum.th
-	#input ../2014/touchingthevoid/touchingthevoid.th
 	#input ../2014/hanginggardensdeep/hanginggardensdeep.th
 	#input ../2014/gravity/gravity.th
 	#input ../2014/hipsdontlie/hipsdontlie.th
@@ -503,6 +505,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 8@jericho2 1@jericho
 	equate 6@jericho2 8@squidgygoodness
 	equate 20@pleasurepalace 15@sicsempertyrannis
+	equate 5@touchingthevoid 25@sicsempertyrannis
 	#equate 9@hipsdontlie 2@hipsdontlie
 	#equate 3@hipsdontlie 16@cuckoos_nest
 	#equate 3@stupid 5@hydrophobia
@@ -510,7 +513,6 @@ survey vrtnarija -title "Vrtnarija"
 	#equate 27@gravity 1@dwarf_pine
 	#equate 1@apuntoofar1 9@apuntoofar2
 	#equate 1@rocksteadylove 1@hanginggardensdeep
-	#equate 5@touchingthevoid 25@sicsempertyrannis
 	#equate 11@apuntoofar1 1@kamikaze
 	#equate 12@hanginggardensdeep 24@pick_your_poison
 	#equate 16@apuntoofar3 1@apuntoofar2
@@ -523,6 +525,7 @@ survey vrtnarija -title "Vrtnarija"
 	join jericho-1p@jericho sicsempertyrannis-1p@sicsempertyrannis
 	join jericho2-1p@jericho2 jericho-1p@jericho
 	join squidgygoodness-1p@squidgygoodness jericho2-1p@jericho2
+	join touchingthevoid-1p@touchingthevoid sicsempertyrannis-2p@sicsempertyrannis
 	
 	###__________2015____________###
 	input ../2015/jetstream/jetstream.th
@@ -532,14 +535,14 @@ survey vrtnarija -title "Vrtnarija"
 	input ../2015/choke-a-bloke/choke-a-bloke.th
 	input ../2015/blast/blast.th
 	input ../2015/emptyquarter/emptyquarter.th
+	input ../2015/touchingthevoidsbottom/touchingthevoidsbottom.th
+	input ../2015/davyjoneslocker/davyjoneslocker.th
+	input ../2015/atworldsend/atworldsend.th
 	#input ../2015/lazarus/lazarus.th
-	#input ../2015/atworldsend/atworldsend.th
 	#input ../2015/andreabocelli/andreabocelli.th
 	#input ../2015/pushyourluck/pushyourluck.th
-	#input ../2015/davyjoneslocker/davyjoneslocker.th
 	#input ../2015/trueadventures/trueadventures.th
 	#input ../2015/isdead/isdead.th
-	#input ../2015/touchingthevoidsbottom/touchingthevoidsbottom.th
 	#input ../2015/dinnerservice/dinnerservice.th
 	#input ../2015/shithole/shithole.th
 	#input ../2015/void/void.th
@@ -554,18 +557,18 @@ survey vrtnarija -title "Vrtnarija"
 	equate 16@meridianway 35@blast
 	equate 1@pleasurepalace 1@blast
 	equate 19@emptyquarter 7@choke-a-bloke
+	equate 1@touchingthevoidsbottom 27@sicsempertyrannis
+	equate 1@sicsempertyrannis 15@davyjoneslocker
+	equate 9@atworldsend 1@davyjoneslocker
 	#equate 5@formative 11@beyond
 	#equate 1@void 1@nitro
 	#equate 1@yourmum 3@isdead
 	#equate 1@dinnerservice 6@void
 	#equate 38@andreabocelli 6@void
-	#equate 1@sicsempertyrannis 15@davyjoneslocker
 	#equate 1@trueadventures 1@colarado
-	#equate 9@atworldsend 1@davyjoneslocker
 	#equate 30@agartha 39@pushyourluck
 	#equate 1@pushyourluck 3@cuckoos_nest
 	#equate 26@lazarus 9@miles
-	#equate 1@touchingthevoidsbottom 27@sicsempertyrannis
 	
 	join jetstream-1p@jetstream squidgygoodness-1p@squidgygoodness
 	join firstdraft-1p@firstdraft jetstream-1p@jetstream
@@ -573,4 +576,9 @@ survey vrtnarija -title "Vrtnarija"
 	join meridianway-1p@meridianway finaldraft-1p@finaldraft
 	join choke-a-bloke-1p@choke-a-bloke meridianway-1p@meridianway
 	join emptyquarter-1p@emptyquarter choke-a-bloke-1p@choke-a-bloke
+	join blast-1p@blast pleasurepalace-1p@pleasurepalace
+	join blast-1p@blast meridianway-1p@meridianway
+	join davyjoneslocker-1p@davyjoneslocker sicsempertyrannis-1p@sicsempertyrannis
+	join atworldsend-1p@atworldsend davyjoneslocker-1p@davyjoneslocker
+	
 endsurvey
