@@ -1,0 +1,34 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      VRTNARIJA (GARDENER's WORLD)                                |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../_xtherion/m2m16m18.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../_layouts/m2m16m18/overview_plan.thl"
+
+#----------------------------------------------------------------------------------|
+# select the relevant map definitions, and levels within those maps
+select mm2m16m18-p@m2m16m18 -map-level 0
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view, using the LAYOUT overview_plan_SLO or ENG
+language fr
+export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.pdf -layout overview_plan
+
+#----------------------------------------------------------------------------------|
+# export a .3d model, which can be opened in AVEN and LOCH
+export model -o ../../_outputs/m2_m16_m18.3d -fmt survex
+
+#----------------------------------------------------------------------------------|
+# export a .lox model, which can be opened in LOCH only
+export model -o ../../_outputs/m2_m16_m18.lox
