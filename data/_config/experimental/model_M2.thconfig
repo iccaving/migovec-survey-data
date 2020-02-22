@@ -1,0 +1,6 @@
+source "../../M2/_xtherion/M2.th"
+
+export model -o "../../_outputs/model/M2.3d" -fmt survex
+export model -o "../../_outputs/model/M2.lox"
+select mM2-p@M2
+export map -o "../../_outputs/map/M2.pdf" -projection plan

@@ -1,0 +1,21 @@
+survey jsl2 -title "JSL2"
+
+centreline
+team "Unknown" insts
+team "Unknown" notes
+explo-team "Unknown"
+explo-team "Unknown"
+date 1976		
+
+units length meters
+units compass clino degrees
+data normal from to tape compass clino ignoreall # Default
+
+h	g	3.809937664	293.1985905	-7.480508892
+g	f	2.942150574	318.8140748	-82.7875946
+f	e	2.034852575	349.3803447	0
+e	d	5.28854895	14.62087399	-80.36399586
+d	b	11.75	182.726311	-63.40898494
+b	a	10.90154806	284.3645824	-44.78041976
+endcentreline
+endsurvey 
