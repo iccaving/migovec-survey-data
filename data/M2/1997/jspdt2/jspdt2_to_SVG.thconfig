@@ -1,0 +1,7 @@
+source jspdt2.th
+
+layout centreline1
+	scale 1 500
+endlayout
+
+export map -o "jspdt2-p.svg" -projection plan -layout centreline1 -layout-debug station-names
