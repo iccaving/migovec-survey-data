@@ -1,576 +1,576 @@
 survey vrtnarija -title "Vrtnarija"
-
-
-input "vrtnarija.thm"
-
-
-#equate 15@mushroom THE_FRIDGE
-#equate 12@friend CAMP_X-RAY
-#equate 9@metal_aven METAL_CAMP
-
-###__________2000____________###
-input ../2000/bclent2/bclent2.th #bclent is the original but wrong survey!
-input ../2000/laurel/laurel.th
-input ../2000/urinal/urinal.th
-input ../2000/urinal2/urinal2.th
-input ../2000/pico/pico.th
-input ../2000/pico2/pico2.th
-input ../2000/tesselator/tesselator.th
-input ../2000/space_odyssey/space_odyssey.th
-input ../2000/concorde/concorde.th
-input ../2000/alchemy/alchemy.th
-#input ../2000/waffer/waffer.th
-#input ../2000/hardy/hardy.th
-
-equate 8@tesselator 1@pico2
-equate 6@pico2 2@pico
-equate 1@urinal2 13@pico
-equate 1@concorde 8@alchemy
-equate 1@urinal 4@urinal2
-equate 15@bclent2 18@laurel
-equate 1@tesselator 6@space_odyssey
-equate 1@laurel 9@urinal
-equate 1@space_odyssey 6@concorde
-#equate 15@bclent2 1@hardy
-#equate 3@hardy 8@waffer
-#equate 5@\surface2 12@\bclent
-
-join laurel-p1@laurel bclent2-p3@bclent2
-join pico-p1@pico urinal2-p1@urinal2
-join tesselator-p1@tesselator pico2-p2@pico2
-join space_odyssey-p2@space_odyssey concorde-p1@concorde
-join alchemy-p2@alchemy concorde-p1@concorde
-
-###__________2001____________###
-input ../2001/banzai/banzai.th #which also includes fistful of tolar
-input ../2001/pink/pink.th
-input ../2001/pink2/pink2.th
-input ../2001/skynet/skynet.th
-input ../2001/zimmer/zimmer.th
-input ../2001/friendship/friendship.th
-input ../2001/fallsrd/fallsrd.th
-#input ../2001/hunger/hunger.th
-#input ../2001/judge/judge.th
-#input ../2001/chariot/chariot.th
-#input ../2001/prisoners/prisoners.th
-
-equate 1@fallsrd 4@friendship
-equate 1@friendship 3@zimmer
-equate 1@skynet 1@zimmer
-equate 9@skynet 1@pink2
-equate 7@pink 13@pink2
-equate 18@pink 12@banzai
-equate 14@banzai 1@alchemy
-#equate 4@Prisoners 12@Judge
-#equate 7@chariot 4@pico2
-#equate 6@Hunger 1@Laurel
-#equate 6@Hunger 17@judge
-#equate 17@judge 1@laurel
-#equate 10@judge 6@vilcon
-
-join pink-p1@pink banzai-p2@banzai
-join pink-p3@pink pink2-p1@pink2
-
-###__________2003____________###
-input "../2003/candyMountain/candyMountain.th"
-input "../2003/highway32/highway32.th"
-input "../2003/leprachaun/leprachaun.th"
-input "../2003/cascade/cascade.th"
-input "../2003/weepeople/weepeople.th"
-input "../2003/gold/gold.th"
-input "../2003/doublethink/doublethink.th"
-input "../2003/thirdthoughts/thirdthoughts.th"
-input "../2003/potato/potato.th"
-input "../2003/mushroom/mushroom.th"
-input "../2003/postiga/postiga.th"
-input "../2003/lowerfallsrd/lowerfallsrd.th"
-
-equate 11@candyMountain 23@friendship
-equate 1@candyMountain 32@highway32
-equate 33@leprachaun 1@highway32
-equate 33@leprachaun 12@cascade
-equate 18@leprachaun 26@weepeople
-equate 1@gold 24@weepeople
-equate 2@doublethink 36@cascade
-equate 15@doublethink 8@thirdthoughts
-equate 17@mushroom 27@cascade
-equate 5@postiga 26@leprachaun
-equate 7@fallsrd 5@lowerfallsrd
-equate 25@potato 9@nitro  # somehow equated to a survey made the following year... made up leg up the aven?
-
-join friendship-p6@friendship candyMountain-2p@candyMountain
-join weepeople-3p@weepeople gold-1p@gold
-join cascade-2p@cascade mushroom-2p@mushroom
-join postiga-1p@postiga leprachaun-3p@leprachaun
-join postiga-1p@postiga leprachaun-1p@leprachaun
-join lowerfallsrd-1p@lowerfallsrd fallsrd-2p@fallsrd
-join highway32-3p@highway32 candyMountain-1p@candyMountain
-
-###__________2004____________###
-input "../2004/nitro/nitro.th"
-input "../2004/mad_cow/mad_cow.th"
-input "../2004/balamory/balamory.th"
-input "../2004/smash/smash.th"
-input "../2004/miles/miles.th"
-input "../2004/beyond/beyond.th"
-input "../2004/hoover/hoover.th"
-input "../2004/colarado/colarado.th"
-input "../2004/greed/greed.th"
-input "../2004/envy/envy.th"
-input "../2004/brownriceinlet/brownriceinlet.th"
-input "../2004/soda/soda.th"
-#input ../2004/nevermore/nevermore.th
-#input ../2004/blind/blind.th
-#input ../2004/cow/cow.th
-
-equate 2@nitro 16@gold
-equate 14@mad_cow 24@weepeople
-equate 11@balamory 15@doublethink
-equate 17@smash 1@potato
-equate 29@miles 1@smash
-equate 14@beyond 25@miles
-equate 5@hoover 4@colarado
-equate 19@colarado 3@beyond
-equate 23@greed 22@cascade
-equate 45@mad_cow 12@envy
-equate 1@envy 3@greed
-equate 6@brownriceinlet 4@cascade
-equate 26@soda 15@mushroom
-#equate 11@mad_cow 12@republica
-#equate 10@cow 24@weepeople
-#equate 9@nitro 25@potato
-#equate 10@nevermore 24@weepeople
-#equate 10@blind 9@doublethink
-
-join smash-2p@smash potato-1p@potato
-join smash-1p@smash miles-2p@miles
-join colarado_s2_l1@colarado beyond_s2_l1@beyond
-join colarado_s2_l2@colarado beyond_s2_l2@beyond
-join colarado-1p@colarado hoover-1p@hoover
-join greed-2p@greed cascade-3p@cascade
-join mad_cow-2p@mad_cow envy-1p@envy
-join mad_cow-2p@mad_cow leprachaun-1p@leprachaun
-join soda-2p@soda mushroom-2p@mushroom
-
-###__________2005____________###
-#input ../2005/olympicrift/olympicrift.th
-#input ../2005/scrotty/scrotty.th
-#input ../2005/zubafu/zubafu.th
-#input ../2005/kangaroo01/kangaroo01.th
-#input ../2005/bonus/bonus.th
-
-#equate 18@bonus 10@zubafu
-#equate 24@kangaroo01 13@pico
-#equate 11@kangaroo01 12@kangaroo01
-#equate 37@scrotty 24@olympicrift
-#equate 1@scrotty 0@bonus
-#equate 1@zubafu 0@kangaroo01
-
-##equate 13@pico.kangaroo 13@pico.garden-ent
-
-
-###__________2007____________###
-#input ../2007/smashed_swede/smashed_swede.th
-#input ../2007/kill_em_all/kill_em_all.th
-#input ../2007/mudslump/mudslump.th
-
-#equate 5@mudslump 22@mudslump
-#equate 23@mudslump 4@mudslump
-#equate 21@scrotty 28@mudslump
-#equate 18@kill_em_all 6@mudslump
-#equate 1@smashed_swede 15@bclent2
-
-###__________2008____________###
-#input ../2008/dangermouse/dangermouse.th
-#input ../2008/breakitdown/breakitdown.th
-#input ../2008/vilinent/vilinent.th
-#input ../2008/dark_tranquillity/dark_tranquillity.th
-#input ../2008/cheesecake/cheesecake.th
-#input ../2008/greenback/greenback.th
-#input ../2008/vilcon/vilcon.th
-#input ../2008/intravenus_de_milo/intravenus_de_milo.th
-#input ../2008/giblet_breakfast/giblet_breakfast.th
-#input ../2008/primula/primula.th
-#input ../2008/haemertight_crawl/haemertight_crawl.th
-
-#equate 9@dangermouse 6@mudslump
-#equate 6@haemertight_crawl 6@mudslump
-#equate 1@dangermouse 7@greenback
-#equate 9@cheesecake 4@kill_em_all
-#equate 6@dark_tranquillity 3@intravenus_de_milo
-#equate 10@intravenus_de_milo 1@kill_em_all
-#equate 1@cheesecake 1@primula
-#equate 2@greenback 4@giblet_breakfast
-#equate 1@breakitdown 1@vilcon
-#equate 9@breakitdown 21@vilinent
-
-#equate 12@vilcon 11@laurel
-#equate 6@vilcon 6@vilcon
-##equate 12@vilcon.vilinska 11@laurel.garden-ent
-##equate 6@vilcon.vilinska 6@vilcon.garden-ent
-
-###__________2009____________###
-#input ../2009/belowzimmer/belowzimmer.th
-#input ../2009/fools_road/fools_road.th
-#input ../2009/ride_the_lightning/ride_the_lightning.th
-#input ../2009/wet_hammer/wet_hammer.th
-#input ../2009/eggsplosive/eggsplosive.th
-#input ../2009/happy_monday/happy_monday.th
-#input ../2009/free_amalgamation/free_amalgamation.th
-#input ../2009/mirage_canyon/mirage_canyon.th
-#input ../2009/walk_the_line/walk_the_line.th
-#input ../2009/walk_the_line_b/walk_the_line_b.th
-#input ../2009/keti/keti.th
-#input ../2009/metal_aven/metal_aven.th
-#input ../2009/republica/republica.th
-
-#equate 4@belowzimmer 3b@friend
-#equate 11@eggsplosive 7@belowzimmer
-#equate 12@republica 3@cow
-#equate 12@republica 7@mad_cow
-#equate 14@walk_the_line 1@wet_hammer
-#equate 14@walk_the_line_b 1@walk_the_line
-#equate 10@free_amalgamation 1@happy_monday
-#equate 19@keti 8@cheesecake
-#equate 5@fools_road 1@free_amalgamation
-#equate 7@ride_the_lightning 1@kill_em_all
-#equate 6@happy_monday 1@walk_the_line_b
-#equate 1@mirage_canyon 11@wet_hammer
-#equate 6@mirage_canyon 1@dark_tranquillity
-#equate 15@metal_aven 6@mudslump
-
-#equate 3@fools_road 5@fallsrd
-
-###__________2010____________###
-input ../2010/wonderland/wonderland.th
-input ../2010/rolling/rolling.th
-input ../2010/surprise/surprise.th
-input ../2010/kamikaze/kamikaze.th
-#input ../2010/whitebishop/whitebishop.th
-#input ../2010/losthopes/losthopes.th
-#input ../2010/stalemate/stalemate.th
-#input ../2010/roaring/roaring.th
-#input ../2010/esoterica/esoterica.th
-#input ../2010/curiousandcuriouser2/curiousandcuriouser2.th
-#input ../2010/blackknight/blackknight.th
-#input ../2010/crack_in_time/crack_in_time.th
-#input ../2010/sidewinder/sidewinder.th
-#input ../2010/consort/consort.th
-#input ../2010/insomnia/insomnia.th
-#input ../2010/serpentine/serpentine.th
-#input ../2010/mudstone/mudstone.th
-#input ../2010/itwillrain/itwillrain.th
-#input ../2010/minos/minos.th
-#input ../2010/korita/korita.th
-#input ../2010/povodni_moz2/povodni_moz2.th
-#input ../2010/povodni_moz/povodni_moz.th
-
-equate 13@wonderland 3b@friendship
-equate 7@rolling 1@wonderland
-equate 2@rolling 12@surprise
-equate 1@surprise 35@kamikaze
-#equate 8@losthopes 30@kamikaze
-#equate 10@mudstone 1@surprise
-#equate 9@crack_in_time 8@sidewinder
-#equate carbide@crack_in_time 3@envy
-#equate 6@stalemate 10@whitebishop
-#equate 1@sidewinder 13@blackknight
-#equate 1@korita 1@eggsplosive
-#equate 17@blackknight 14@korita
-#equate 1@whitebishop 1@sidewinder
-#equate 1@povodni_moz2 10@povodni_moz
-#equate 25@consort 5@wonderland
-#equate 1@minataur 6@palace
-#equate 8@the_queen_bed_chamber 1@minataur
-#equate 17@palace2 1@consort
-#equate 1@palace2 4@minataur
-#equate 23@ouroboros 3@palace2
-#equate 1@ouroboros 5@consort
-#equate 17@esoterica 12@consort
-#equate 17@povodni_moz 9@palace2
-#equate 26@curiousandcuriouser2 1@yorkshire
-#equate 5@consort 11@serpentine
-#equate 9@itwillrain 1@serpentine
-#equate 15@republica 15@insomnia
-#equate 8@roaring 0@happy_monday
-
-join wonderland-1p@wonderland zimmer-p1@zimmer
-join surprise-1p@surprise rolling-1p@rolling
-join kamikaze-1p@kamikaze surprise-1p@surprise
-
-###__________2011____________###
-input ../2011/redbaron/redbaron.th
-input ../2011/throneroom/throneroom.th
-input ../2011/serenade/serenade.th
-input ../2011/amazinggrace/amazinggrace.th
-input ../2011/grace2/grace2.th
-input ../2011/magicdragon/magicdragon.th
-input ../2011/stuckinparadise/stuckinparadise.th
-input ../2011/stuckinparadise2/stuckinparadise2.th
-input ../2011/eastlinks/eastlinks.th
-input ../2011/kneekiller/kneekiller.th
-#input ../2011/herojtelemarkal/herojtelemarkal.th
-#input ../2011/penguinsegg/penguinsegg.th
-#input ../2011/daydreamers/daydreamers.th
-#input ../2011/dream2/dream2.th
-#input ../2011/2ndtimelucky/2ndtimelucky.th
-#input ../2011/krtkovadobradela/krtkovadobradela.th
-#input ../2011/roundpond/roundpond.th
-#input ../2011/yorkshire/yorkshire.th
-#input ../2011/rottenrow/rottenrow.th
-#input ../2011/letnadrugisvet/letnadrugisvet.th
-#input ../2011/drinkyourown/drinkyourown.th
-#input ../2011/stagger_lee/stagger_lee.th
-#input ../2011/duffersdrop/duffersdrop.th
-#input ../2011/lowerpleasures/lowerpleasures.th
-#input ../2011/salvation/salvation.th
-#input ../2011/longwater/longwater.th
-#input ../2011/winterjourney/winterjourney.th
-
-equate 1@redbaron 25@kamikaze
-equate 17@throneroom 10@redbaron
-equate 1@serenade 11@throneroom
-equate 8@amazinggrace 7@serenade
-equate 1@amazinggrace 14@grace2
-equate 12@magicdragon 1@grace2
-equate 6@stuckinparadise 1@magicdragon
-equate 10@stuckinparadise2 4@stuckinparadise
-equate 24@eastlinks 1@stuckinparadise2
-equate 22@kneekiller 24@eastlinks
-#equate 23@salvation 1@kneekiller
-#equate 3@stagger_lee 2@candyMountain
-#equate 29@stagger_lee 8@soda
-#equate 10@2ndtimelucky 1@lowerpleasures
-#equate 12@lowerpleasures 19@friend
-#equate 30@yorkshire 1@2ndtimelucky
-#equate 23@longwater 0@roundpond
-#equate 17@krtkovadobradela 1@letnadrugisvet
-#equate 6@roundpond 1@itwillrain
-#equate 6@duffersdrop 7@rottenrow
-#equate rot@drinkyourown 1@rottenrow
-#equate 11@letnadrugisvet 10@serpentine
-#equate 0@herojtelemarkal1 1@krtkovadobradela
-#equate 0@herojtelemarkal2 6@herojtelemarkal1
-#equate 0@krtekinorel 1@krtkovadobradela
-#equate 7@rottenrow 7@longwater
-#equate 14@winterjourney 11@penguinsegg
-#equate 4@penguinsegg 1@dream2
-#equate 17@dream2 1@daydreamers
-#equate 14@daydreamers 1@insomnia
-
-join redbaron-1p@redbaron kamikaze-1p@kamikaze 
-join throneroom-1p@throneroom redbaron-1p@redbaron
-join serenade-1p@serenade throneroom-1p@throneroom
-join amazinggrace-1p@amazinggrace serenade-1p@serenade
-join grace2-1p@grace2 amazinggrace-1p@amazinggrace
-join magicdragon-1p@magicdragon grace2-1p@grace2
-join stuckinparadise-1p@stuckinparadise magicdragon-1p@magicdragon
-join stuckinparadise2-1p@stuckinparadise2 stuckinparadise-1p@stuckinparadise
-join eastlinks-1p@eastlinks stuckinparadise2-1p@stuckinparadise2
-
-###__________2012____________###
-input ../2012/atlantis/atlantis.th
-input ../2012/brezno_slapov/brezno_slapov.th
-#input ../2012/worm/worm.th
-#input ../2012/euphrates2/euphrates2.th
-#input ../2012/ingloriousbasterd/ingloriousbasterd.th
-#input ../2012/milkyway_percent/milkyway_percent.th
-#input ../2012/razor/razor.th
-#input ../2012/minestrone1/minestrone1.th
-#input ../2012/euphrates/euphrates.th
-#input ../2012/hotpants/hotpants.th
-#input ../2012/minestrone2/minestrone2.th
-#input ../2012/guillotine/guillotine.th
-#input ../2012/watershipdown/watershipdown.th
-#input ../2012/watershipup/watershipup.th
-#input ../2012/peepshow/peepshow.th
-#input ../2012/invictus/invictus.th
-#input ../2012/bravenewworld/bravenewworld.th
-#input ../2012/guillotine2/guillotine2.th
-#input ../2012/apollo/apollo.th
-#input ../2012/milkyway/milkyway.th
-#input ../2012/perfidia/perfidia.th
-#input ../2012/xanadu/xanadu.th
-#input ../2012/why_the_face/why_the_face.th
-#input ../2012/dreamsforthesoul/dreamsforthesoul.th
-#input ../2012/undercover_squirrell/undercover_squirrell.th
-
-equate 32@atlantis 1@eastlinks
-equate 17@brezno_slapov 1@atlantis
-#equate 17@peepshow 1@hotpants
-#equate 15@why_the_face 1@throneroom
-#equate 8@hotpants 1@throneroom
-#equate 13@peepshow 12@undercover_squirrell
-#equate 1@invictus 12@bravenewworld
-#equate 1@bravenewworld 22@salvation
-#equate 22@atlantis 1@minestrone2
-#equate 24@minestrone1 11@minestrone2
-#equate 5@ingloriousbasterd 21@atlantis
-#equate 4@razor 7@guillotine
-#equate 1@guillotine2 1@minataur
-#equate 11@guillotine2 21@guillotine
-#equate 41@milkyway 1@apollo
-#equate 41@milkyway 1@apollo
-#equate 7@apollo 1@the_queen_bed_chamber
-#equate 35@dreamsforthesoul 32@milkyway
-#equate 4@euphrates2 11@euphrates
-#equate 12@xanadu 22@friend
-#equate 1@euphrates2 18@xanadu
-#equate 1@watershipdown 11@watershipup
-#equate 17@watershipdown 1@winterjourney
-#equate 1@perfidia 15@republica
-#equate 18@perfidia 7@mad_cow
-#equate 1@ride_the_lightning 11@worm
-
-join atlantis-1p@atlantis eastlinks-1p@eastlinks
-join brezno_slapov-1p@brezno_slapov atlantis-1p@atlantis
-
-###__________2013____________###
-#input ../2013/bingo_granny/bingo_granny.th
-#input ../2013/curiousandcuriouser/curiousandcuriouser.th
-#input ../2013/pick_your_poison/pick_your_poison.th
-#input ../2013/cuckoos_nest/cuckoos_nest.th
-#input ../2013/hash3/hash3.th
-#input ../2013/slinging/slinging.th
-#input ../2013/500m/500m.th
-#input ../2013/rejuvenation_rift/rejuvenation_rift.th
-#input ../2013/rural_underground/rural_underground.th
-#input ../2013/kokain_lab/kokain_lab.th
-#input ../2013/clapton/clapton.th
-#input ../2013/dwarf_pine/dwarf_pine.th
-#input ../2013/were_not_alone/were_not_alone.th
-#input ../2013/xanadont/xanadont.th
-#input ../2013/beetlejuice/beetlejuice.th
-#input ../2013/time_bandits/time_bandits.th
-#input ../2013/labyrinth/labyrinth.th
-#input ../2013/RCC_passage/RCC_passage.th
-#input ../2013/hash2/hash2.th
-#input ../2013/hash/hash.th
-#input ../2013/lethe/lethe.th
-#input ../2013/kokain_rute/kokain_rute.th
-#input ../2013/apollo_traverse/apollo_traverse.th
-#input ../2013/straightjacket/straightjacket.th
-#input ../2013/hydrophobia/hydrophobia.th
-
-#equate 20@rural_underground 1@undercover_squirrell
-#equate 1@clapton 27@pick_your_poison
-#equate 4@bingo_granny 10@clapton
-#equate 19@kokain_rute 1@thirdthoughts
-#equate 11@kokain_lab 7@kokain_rute
-#equate 1@bingo_granny 1@kokain_rute
-#equate 1@hash2 8@hash3
-#equate 29@lethe 1@brezno_slapov
-#equate 7@hash2 1@hash
-#equate 6@were_not_alone 18@atlantis
-#equate 20@hash 24@eastlinks
-#equate 13@hash 19@eastlinks
-#equate 6@RCC_passage 11@invictus
-#equate 30@labyrinth 16@slinging
-#equate 1@labyrinth 1@curiousandcuriouser
-#equate 14@curiousandcuriouser 14b@curiousandcuriouser2
-#equate 8@beetlejuice 16@milkyway
-#equate 1@apollo_traverse 1@apollo
-#equate 1@time_bandits 17@cuckoos_nest
-#equate 11@xanadont 1@euphrates
-#equate 40@cuckoos_nest 5@xanadont
-#equate 10@straightjacket 1@rejuvenation_rift
-#equate 10@hydrophobia 20@cuckoos_nest
-#equate 1@500m 11@xanadont
-#equate 5@dwarf_pine 1@hydrophobia
-#equate 28@rejuvenation_rift 17@cuckoos_nest
-
-###__________2014____________###
-input ../2014/sicsempertyrannis/sicsempertyrannis.th
-input ../2014/jericho/jericho.th
-input ../2014/jericho2/jericho2.th
-input ../2014/squidgygoodness/squidgygoodness.th
-input ../2014/pleasurepalace/pleasurepalace.th
-#input ../2014/stupid/stupid.th
-#input ../2014/AJA/AJA.th
-#input ../2014/yourmum/yourmum.th
-#input ../2014/touchingthevoid/touchingthevoid.th
-#input ../2014/hanginggardensdeep/hanginggardensdeep.th
-#input ../2014/gravity/gravity.th
-#input ../2014/hipsdontlie/hipsdontlie.th
-#input ../2014/apuntoofar1/apuntoofar1.th
-#input ../2014/rocksteadylove/rocksteadylove.th
-#input ../2014/serrure/serrure.th
-#input ../2014/apuntoofar3/apuntoofar3.th
-#input ../2014/apuntoofar2/apuntoofar2.th
-
-equate 24@sicsempertyrannis 10@brezno_slapov
-equate 11@jericho 17@sicsempertyrannis
-equate 8@jericho2 1@jericho
-equate 6@jericho2 8@squidgygoodness
-equate 20@pleasurepalace 15@sicsempertyrannis
-#equate 9@hipsdontlie 2@hipsdontlie
-#equate 3@hipsdontlie 16@cuckoos_nest
-#equate 3@stupid 5@hydrophobia
-#equate 1@gravity 12@highway32
-#equate 27@gravity 1@dwarf_pine
-#equate 1@apuntoofar1 9@apuntoofar2
-#equate 1@rocksteadylove 1@hanginggardensdeep
-#equate 5@touchingthevoid 25@sicsempertyrannis
-#equate 11@apuntoofar1 1@kamikaze
-#equate 12@hanginggardensdeep 24@pick_your_poison
-#equate 16@apuntoofar3 1@apuntoofar2
-#equate 17@serrure 4@serrure
-#equate 8@serrure 12@consort
-#equate 31@AJA 13@rocksteadylove
-#equate 4@yourmum 1@esoterica
-
-join sicsempertyrannis-1p@sicsempertyrannis brezno_slapov-1p@brezno_slapov
-join jericho-1p@jericho sicsempertyrannis-1p@sicsempertyrannis
-join jericho2-1p@jericho2 jericho-1p@jericho 
-join squidgygoodness-1p@squidgygoodness jericho2-1p@jericho2
-
-###__________2015____________###
-input ../2015/jetstream/jetstream.th
-input ../2015/firstdraft/firstdraft.th
-input ../2015/finaldraft/finaldraft.th
-input ../2015/meridianway/meridianway.th
-input ../2015/choke-a-bloke/choke-a-bloke.th
-input ../2015/blast/blast.th
-input ../2015/emptyquarter/emptyquarter.th
-#input ../2015/lazarus/lazarus.th
-#input ../2015/atworldsend/atworldsend.th
-#input ../2015/andreabocelli/andreabocelli.th
-#input ../2015/pushyourluck/pushyourluck.th
-#input ../2015/davyjoneslocker/davyjoneslocker.th
-#input ../2015/trueadventures/trueadventures.th
-#input ../2015/isdead/isdead.th
-#input ../2015/touchingthevoidsbottom/touchingthevoidsbottom.th
-#input ../2015/dinnerservice/dinnerservice.th
-#input ../2015/shithole/shithole.th
-#input ../2015/void/void.th
-#input ../2015/formative/formative.th
-#input ../2015/agartha/agartha.th
-
-equate 24@jetstream 1@squidgygoodness
-equate 15@firstdraft 1@jetstream
-equate 12@finaldraft 9@firstdraft
-equate 18@meridianway 1@finaldraft
-equate 1@meridianway 1@choke-a-bloke
-equate 16@meridianway 35@blast
-equate 1@pleasurepalace 1@blast
-equate 19@emptyquarter 7@choke-a-bloke
-#equate 5@formative 11@beyond
-#equate 1@void 1@nitro
-#equate 1@yourmum 3@isdead
-#equate 1@dinnerservice 6@void
-#equate 38@andreabocelli 6@void
-#equate 1@sicsempertyrannis 15@davyjoneslocker
-#equate 1@trueadventures 1@colarado
-#equate 9@atworldsend 1@davyjoneslocker
-#equate 30@agartha 39@pushyourluck
-#equate 1@pushyourluck 3@cuckoos_nest
-#equate 26@lazarus 9@miles
-#equate 1@touchingthevoidsbottom 27@sicsempertyrannis
-
-join jetstream-1p@jetstream squidgygoodness-1p@squidgygoodness
-join firstdraft-1p@firstdraft jetstream-1p@jetstream
-join finaldraft-1p@finaldraft firstdraft-1p@firstdraft
-join meridianway-1p@meridianway finaldraft-1p@finaldraft
-join choke-a-bloke-1p@choke-a-bloke meridianway-1p@meridianway
-join emptyquarter-1p@emptyquarter choke-a-bloke-1p@choke-a-bloke
+	
+	
+	input "vrtnarija.thm"
+	
+	
+	#equate 15@mushroom THE_FRIDGE
+	#equate 12@friend CAMP_X-RAY
+	#equate 9@metal_aven METAL_CAMP
+	
+	###__________2000____________###
+	input ../2000/bclent2/bclent2.th #bclent is the original but wrong survey!
+	input ../2000/laurel/laurel.th
+	input ../2000/urinal/urinal.th
+	input ../2000/urinal2/urinal2.th
+	input ../2000/pico/pico.th
+	input ../2000/pico2/pico2.th
+	input ../2000/tesselator/tesselator.th
+	input ../2000/space_odyssey/space_odyssey.th
+	input ../2000/concorde/concorde.th
+	input ../2000/alchemy/alchemy.th
+	#input ../2000/waffer/waffer.th
+	#input ../2000/hardy/hardy.th
+	
+	equate 8@tesselator 1@pico2
+	equate 6@pico2 2@pico
+	equate 1@urinal2 13@pico
+	equate 1@concorde 8@alchemy
+	equate 1@urinal 4@urinal2
+	equate 15@bclent2 18@laurel
+	equate 1@tesselator 6@space_odyssey
+	equate 1@laurel 9@urinal
+	equate 1@space_odyssey 6@concorde
+	#equate 15@bclent2 1@hardy
+	#equate 3@hardy 8@waffer
+	#equate 5@\surface2 12@\bclent
+	
+	join laurel-p1@laurel bclent2-p3@bclent2
+	join pico-p1@pico urinal2-p1@urinal2
+	join tesselator-p1@tesselator pico2-p2@pico2
+	join space_odyssey-p2@space_odyssey concorde-p1@concorde
+	join alchemy-p2@alchemy concorde-p1@concorde
+	
+	###__________2001____________###
+	input ../2001/banzai/banzai.th #which also includes fistful of tolar
+	input ../2001/pink/pink.th
+	input ../2001/pink2/pink2.th
+	input ../2001/skynet/skynet.th
+	input ../2001/zimmer/zimmer.th
+	input ../2001/friendship/friendship.th
+	input ../2001/fallsrd/fallsrd.th
+	#input ../2001/hunger/hunger.th
+	#input ../2001/judge/judge.th
+	#input ../2001/chariot/chariot.th
+	#input ../2001/prisoners/prisoners.th
+	
+	equate 1@fallsrd 4@friendship
+	equate 1@friendship 3@zimmer
+	equate 1@skynet 1@zimmer
+	equate 9@skynet 1@pink2
+	equate 7@pink 13@pink2
+	equate 18@pink 12@banzai
+	equate 14@banzai 1@alchemy
+	#equate 4@Prisoners 12@Judge
+	#equate 7@chariot 4@pico2
+	#equate 6@Hunger 1@Laurel
+	#equate 6@Hunger 17@judge
+	#equate 17@judge 1@laurel
+	#equate 10@judge 6@vilcon
+	
+	join pink-p1@pink banzai-p2@banzai
+	join pink-p3@pink pink2-p1@pink2
+	
+	###__________2003____________###
+	input "../2003/candyMountain/candyMountain.th"
+	input "../2003/highway32/highway32.th"
+	input "../2003/leprachaun/leprachaun.th"
+	input "../2003/cascade/cascade.th"
+	input "../2003/weepeople/weepeople.th"
+	input "../2003/gold/gold.th"
+	input "../2003/doublethink/doublethink.th"
+	input "../2003/thirdthoughts/thirdthoughts.th"
+	input "../2003/potato/potato.th"
+	input "../2003/mushroom/mushroom.th"
+	input "../2003/postiga/postiga.th"
+	input "../2003/lowerfallsrd/lowerfallsrd.th"
+	
+	equate 11@candyMountain 23@friendship
+	equate 1@candyMountain 32@highway32
+	equate 33@leprachaun 1@highway32
+	equate 33@leprachaun 12@cascade
+	equate 18@leprachaun 26@weepeople
+	equate 1@gold 24@weepeople
+	equate 2@doublethink 36@cascade
+	equate 15@doublethink 8@thirdthoughts
+	equate 17@mushroom 27@cascade
+	equate 5@postiga 26@leprachaun
+	equate 7@fallsrd 5@lowerfallsrd
+	equate 25@potato 9@nitro  # somehow equated to a survey made the following year... made up leg up the aven?
+	
+	join friendship-p6@friendship candyMountain-2p@candyMountain
+	join weepeople-3p@weepeople gold-1p@gold
+	join cascade-2p@cascade mushroom-2p@mushroom
+	join postiga-1p@postiga leprachaun-3p@leprachaun
+	join postiga-1p@postiga leprachaun-1p@leprachaun
+	join lowerfallsrd-1p@lowerfallsrd fallsrd-2p@fallsrd
+	join highway32-3p@highway32 candyMountain-1p@candyMountain
+	
+	###__________2004____________###
+	input "../2004/nitro/nitro.th"
+	input "../2004/mad_cow/mad_cow.th"
+	input "../2004/balamory/balamory.th"
+	input "../2004/smash/smash.th"
+	input "../2004/miles/miles.th"
+	input "../2004/beyond/beyond.th"
+	input "../2004/hoover/hoover.th"
+	input "../2004/colarado/colarado.th"
+	input "../2004/greed/greed.th"
+	input "../2004/envy/envy.th"
+	input "../2004/brownriceinlet/brownriceinlet.th"
+	input "../2004/soda/soda.th"
+	#input ../2004/nevermore/nevermore.th
+	#input ../2004/blind/blind.th
+	#input ../2004/cow/cow.th
+	
+	equate 2@nitro 16@gold
+	equate 14@mad_cow 24@weepeople
+	equate 11@balamory 15@doublethink
+	equate 17@smash 1@potato
+	equate 29@miles 1@smash
+	equate 14@beyond 25@miles
+	equate 5@hoover 4@colarado
+	equate 19@colarado 3@beyond
+	equate 23@greed 22@cascade
+	equate 45@mad_cow 12@envy
+	equate 1@envy 3@greed
+	equate 6@brownriceinlet 4@cascade
+	equate 26@soda 15@mushroom
+	#equate 11@mad_cow 12@republica
+	#equate 10@cow 24@weepeople
+	#equate 9@nitro 25@potato
+	#equate 10@nevermore 24@weepeople
+	#equate 10@blind 9@doublethink
+	
+	join smash-2p@smash potato-1p@potato
+	join smash-1p@smash miles-2p@miles
+	join colarado_s2_l1@colarado beyond_s2_l1@beyond
+	join colarado_s2_l2@colarado beyond_s2_l2@beyond
+	join colarado-1p@colarado hoover-1p@hoover
+	join greed-2p@greed cascade-3p@cascade
+	join mad_cow-2p@mad_cow envy-1p@envy
+	join mad_cow-2p@mad_cow leprachaun-1p@leprachaun
+	join soda-2p@soda mushroom-2p@mushroom
+	
+	###__________2005____________###
+	#input ../2005/olympicrift/olympicrift.th
+	#input ../2005/scrotty/scrotty.th
+	#input ../2005/zubafu/zubafu.th
+	#input ../2005/kangaroo01/kangaroo01.th
+	#input ../2005/bonus/bonus.th
+	
+	#equate 18@bonus 10@zubafu
+	#equate 24@kangaroo01 13@pico
+	#equate 11@kangaroo01 12@kangaroo01
+	#equate 37@scrotty 24@olympicrift
+	#equate 1@scrotty 0@bonus
+	#equate 1@zubafu 0@kangaroo01
+	
+	##equate 13@pico.kangaroo 13@pico.garden-ent
+	
+	
+	###__________2007____________###
+	#input ../2007/smashed_swede/smashed_swede.th
+	#input ../2007/kill_em_all/kill_em_all.th
+	#input ../2007/mudslump/mudslump.th
+	
+	#equate 5@mudslump 22@mudslump
+	#equate 23@mudslump 4@mudslump
+	#equate 21@scrotty 28@mudslump
+	#equate 18@kill_em_all 6@mudslump
+	#equate 1@smashed_swede 15@bclent2
+	
+	###__________2008____________###
+	#input ../2008/dangermouse/dangermouse.th
+	#input ../2008/breakitdown/breakitdown.th
+	#input ../2008/vilinent/vilinent.th
+	#input ../2008/dark_tranquillity/dark_tranquillity.th
+	#input ../2008/cheesecake/cheesecake.th
+	#input ../2008/greenback/greenback.th
+	#input ../2008/vilcon/vilcon.th
+	#input ../2008/intravenus_de_milo/intravenus_de_milo.th
+	#input ../2008/giblet_breakfast/giblet_breakfast.th
+	#input ../2008/primula/primula.th
+	#input ../2008/haemertight_crawl/haemertight_crawl.th
+	
+	#equate 9@dangermouse 6@mudslump
+	#equate 6@haemertight_crawl 6@mudslump
+	#equate 1@dangermouse 7@greenback
+	#equate 9@cheesecake 4@kill_em_all
+	#equate 6@dark_tranquillity 3@intravenus_de_milo
+	#equate 10@intravenus_de_milo 1@kill_em_all
+	#equate 1@cheesecake 1@primula
+	#equate 2@greenback 4@giblet_breakfast
+	#equate 1@breakitdown 1@vilcon
+	#equate 9@breakitdown 21@vilinent
+	
+	#equate 12@vilcon 11@laurel
+	#equate 6@vilcon 6@vilcon
+	##equate 12@vilcon.vilinska 11@laurel.garden-ent
+	##equate 6@vilcon.vilinska 6@vilcon.garden-ent
+	
+	###__________2009____________###
+	#input ../2009/belowzimmer/belowzimmer.th
+	#input ../2009/fools_road/fools_road.th
+	#input ../2009/ride_the_lightning/ride_the_lightning.th
+	#input ../2009/wet_hammer/wet_hammer.th
+	#input ../2009/eggsplosive/eggsplosive.th
+	#input ../2009/happy_monday/happy_monday.th
+	#input ../2009/free_amalgamation/free_amalgamation.th
+	#input ../2009/mirage_canyon/mirage_canyon.th
+	#input ../2009/walk_the_line/walk_the_line.th
+	#input ../2009/walk_the_line_b/walk_the_line_b.th
+	#input ../2009/keti/keti.th
+	#input ../2009/metal_aven/metal_aven.th
+	#input ../2009/republica/republica.th
+	
+	#equate 4@belowzimmer 3b@friend
+	#equate 11@eggsplosive 7@belowzimmer
+	#equate 12@republica 3@cow
+	#equate 12@republica 7@mad_cow
+	#equate 14@walk_the_line 1@wet_hammer
+	#equate 14@walk_the_line_b 1@walk_the_line
+	#equate 10@free_amalgamation 1@happy_monday
+	#equate 19@keti 8@cheesecake
+	#equate 5@fools_road 1@free_amalgamation
+	#equate 7@ride_the_lightning 1@kill_em_all
+	#equate 6@happy_monday 1@walk_the_line_b
+	#equate 1@mirage_canyon 11@wet_hammer
+	#equate 6@mirage_canyon 1@dark_tranquillity
+	#equate 15@metal_aven 6@mudslump
+	
+	#equate 3@fools_road 5@fallsrd
+	
+	###__________2010____________###
+	input ../2010/wonderland/wonderland.th
+	input ../2010/rolling/rolling.th
+	input ../2010/surprise/surprise.th
+	input ../2010/kamikaze/kamikaze.th
+	#input ../2010/whitebishop/whitebishop.th
+	#input ../2010/losthopes/losthopes.th
+	#input ../2010/stalemate/stalemate.th
+	#input ../2010/roaring/roaring.th
+	#input ../2010/esoterica/esoterica.th
+	#input ../2010/curiousandcuriouser2/curiousandcuriouser2.th
+	#input ../2010/blackknight/blackknight.th
+	#input ../2010/crack_in_time/crack_in_time.th
+	#input ../2010/sidewinder/sidewinder.th
+	#input ../2010/consort/consort.th
+	#input ../2010/insomnia/insomnia.th
+	#input ../2010/serpentine/serpentine.th
+	#input ../2010/mudstone/mudstone.th
+	#input ../2010/itwillrain/itwillrain.th
+	#input ../2010/minos/minos.th
+	#input ../2010/korita/korita.th
+	#input ../2010/povodni_moz2/povodni_moz2.th
+	#input ../2010/povodni_moz/povodni_moz.th
+	
+	equate 13@wonderland 3b@friendship
+	equate 7@rolling 1@wonderland
+	equate 2@rolling 12@surprise
+	equate 1@surprise 35@kamikaze
+	#equate 8@losthopes 30@kamikaze
+	#equate 10@mudstone 1@surprise
+	#equate 9@crack_in_time 8@sidewinder
+	#equate carbide@crack_in_time 3@envy
+	#equate 6@stalemate 10@whitebishop
+	#equate 1@sidewinder 13@blackknight
+	#equate 1@korita 1@eggsplosive
+	#equate 17@blackknight 14@korita
+	#equate 1@whitebishop 1@sidewinder
+	#equate 1@povodni_moz2 10@povodni_moz
+	#equate 25@consort 5@wonderland
+	#equate 1@minataur 6@palace
+	#equate 8@the_queen_bed_chamber 1@minataur
+	#equate 17@palace2 1@consort
+	#equate 1@palace2 4@minataur
+	#equate 23@ouroboros 3@palace2
+	#equate 1@ouroboros 5@consort
+	#equate 17@esoterica 12@consort
+	#equate 17@povodni_moz 9@palace2
+	#equate 26@curiousandcuriouser2 1@yorkshire
+	#equate 5@consort 11@serpentine
+	#equate 9@itwillrain 1@serpentine
+	#equate 15@republica 15@insomnia
+	#equate 8@roaring 0@happy_monday
+	
+	join wonderland-1p@wonderland zimmer-p1@zimmer
+	join surprise-1p@surprise rolling-1p@rolling
+	join kamikaze-1p@kamikaze surprise-1p@surprise
+	
+	###__________2011____________###
+	input ../2011/redbaron/redbaron.th
+	input ../2011/throneroom/throneroom.th
+	input ../2011/serenade/serenade.th
+	input ../2011/amazinggrace/amazinggrace.th
+	input ../2011/grace2/grace2.th
+	input ../2011/magicdragon/magicdragon.th
+	input ../2011/stuckinparadise/stuckinparadise.th
+	input ../2011/stuckinparadise2/stuckinparadise2.th
+	input ../2011/eastlinks/eastlinks.th
+	input ../2011/kneekiller/kneekiller.th
+	#input ../2011/herojtelemarkal/herojtelemarkal.th
+	#input ../2011/penguinsegg/penguinsegg.th
+	#input ../2011/daydreamers/daydreamers.th
+	#input ../2011/dream2/dream2.th
+	#input ../2011/2ndtimelucky/2ndtimelucky.th
+	#input ../2011/krtkovadobradela/krtkovadobradela.th
+	#input ../2011/roundpond/roundpond.th
+	#input ../2011/yorkshire/yorkshire.th
+	#input ../2011/rottenrow/rottenrow.th
+	#input ../2011/letnadrugisvet/letnadrugisvet.th
+	#input ../2011/drinkyourown/drinkyourown.th
+	#input ../2011/stagger_lee/stagger_lee.th
+	#input ../2011/duffersdrop/duffersdrop.th
+	#input ../2011/lowerpleasures/lowerpleasures.th
+	#input ../2011/salvation/salvation.th
+	#input ../2011/longwater/longwater.th
+	#input ../2011/winterjourney/winterjourney.th
+	
+	equate 1@redbaron 25@kamikaze
+	equate 17@throneroom 10@redbaron
+	equate 1@serenade 11@throneroom
+	equate 8@amazinggrace 7@serenade
+	equate 1@amazinggrace 14@grace2
+	equate 12@magicdragon 1@grace2
+	equate 6@stuckinparadise 1@magicdragon
+	equate 10@stuckinparadise2 4@stuckinparadise
+	equate 24@eastlinks 1@stuckinparadise2
+	equate 22@kneekiller 24@eastlinks
+	#equate 23@salvation 1@kneekiller
+	#equate 3@stagger_lee 2@candyMountain
+	#equate 29@stagger_lee 8@soda
+	#equate 10@2ndtimelucky 1@lowerpleasures
+	#equate 12@lowerpleasures 19@friend
+	#equate 30@yorkshire 1@2ndtimelucky
+	#equate 23@longwater 0@roundpond
+	#equate 17@krtkovadobradela 1@letnadrugisvet
+	#equate 6@roundpond 1@itwillrain
+	#equate 6@duffersdrop 7@rottenrow
+	#equate rot@drinkyourown 1@rottenrow
+	#equate 11@letnadrugisvet 10@serpentine
+	#equate 0@herojtelemarkal1 1@krtkovadobradela
+	#equate 0@herojtelemarkal2 6@herojtelemarkal1
+	#equate 0@krtekinorel 1@krtkovadobradela
+	#equate 7@rottenrow 7@longwater
+	#equate 14@winterjourney 11@penguinsegg
+	#equate 4@penguinsegg 1@dream2
+	#equate 17@dream2 1@daydreamers
+	#equate 14@daydreamers 1@insomnia
+	
+	join redbaron-1p@redbaron kamikaze-1p@kamikaze
+	join throneroom-1p@throneroom redbaron-1p@redbaron
+	join serenade-1p@serenade throneroom-1p@throneroom
+	join amazinggrace-1p@amazinggrace serenade-1p@serenade
+	join grace2-1p@grace2 amazinggrace-1p@amazinggrace
+	join magicdragon-1p@magicdragon grace2-1p@grace2
+	join stuckinparadise-1p@stuckinparadise magicdragon-1p@magicdragon
+	join stuckinparadise2-1p@stuckinparadise2 stuckinparadise-1p@stuckinparadise
+	join eastlinks-1p@eastlinks stuckinparadise2-1p@stuckinparadise2
+	
+	###__________2012____________###
+	input ../2012/atlantis/atlantis.th
+	input ../2012/brezno_slapov/brezno_slapov.th
+	#input ../2012/worm/worm.th
+	#input ../2012/euphrates2/euphrates2.th
+	#input ../2012/ingloriousbasterd/ingloriousbasterd.th
+	#input ../2012/milkyway_percent/milkyway_percent.th
+	#input ../2012/razor/razor.th
+	#input ../2012/minestrone1/minestrone1.th
+	#input ../2012/euphrates/euphrates.th
+	#input ../2012/hotpants/hotpants.th
+	#input ../2012/minestrone2/minestrone2.th
+	#input ../2012/guillotine/guillotine.th
+	#input ../2012/watershipdown/watershipdown.th
+	#input ../2012/watershipup/watershipup.th
+	#input ../2012/peepshow/peepshow.th
+	#input ../2012/invictus/invictus.th
+	#input ../2012/bravenewworld/bravenewworld.th
+	#input ../2012/guillotine2/guillotine2.th
+	#input ../2012/apollo/apollo.th
+	#input ../2012/milkyway/milkyway.th
+	#input ../2012/perfidia/perfidia.th
+	#input ../2012/xanadu/xanadu.th
+	#input ../2012/why_the_face/why_the_face.th
+	#input ../2012/dreamsforthesoul/dreamsforthesoul.th
+	#input ../2012/undercover_squirrell/undercover_squirrell.th
+	
+	equate 32@atlantis 1@eastlinks
+	equate 17@brezno_slapov 1@atlantis
+	#equate 17@peepshow 1@hotpants
+	#equate 15@why_the_face 1@throneroom
+	#equate 8@hotpants 1@throneroom
+	#equate 13@peepshow 12@undercover_squirrell
+	#equate 1@invictus 12@bravenewworld
+	#equate 1@bravenewworld 22@salvation
+	#equate 22@atlantis 1@minestrone2
+	#equate 24@minestrone1 11@minestrone2
+	#equate 5@ingloriousbasterd 21@atlantis
+	#equate 4@razor 7@guillotine
+	#equate 1@guillotine2 1@minataur
+	#equate 11@guillotine2 21@guillotine
+	#equate 41@milkyway 1@apollo
+	#equate 41@milkyway 1@apollo
+	#equate 7@apollo 1@the_queen_bed_chamber
+	#equate 35@dreamsforthesoul 32@milkyway
+	#equate 4@euphrates2 11@euphrates
+	#equate 12@xanadu 22@friend
+	#equate 1@euphrates2 18@xanadu
+	#equate 1@watershipdown 11@watershipup
+	#equate 17@watershipdown 1@winterjourney
+	#equate 1@perfidia 15@republica
+	#equate 18@perfidia 7@mad_cow
+	#equate 1@ride_the_lightning 11@worm
+	
+	join atlantis-1p@atlantis eastlinks-1p@eastlinks
+	join brezno_slapov-1p@brezno_slapov atlantis-1p@atlantis
+	
+	###__________2013____________###
+	#input ../2013/bingo_granny/bingo_granny.th
+	#input ../2013/curiousandcuriouser/curiousandcuriouser.th
+	#input ../2013/pick_your_poison/pick_your_poison.th
+	#input ../2013/cuckoos_nest/cuckoos_nest.th
+	#input ../2013/hash3/hash3.th
+	#input ../2013/slinging/slinging.th
+	#input ../2013/500m/500m.th
+	#input ../2013/rejuvenation_rift/rejuvenation_rift.th
+	#input ../2013/rural_underground/rural_underground.th
+	#input ../2013/kokain_lab/kokain_lab.th
+	#input ../2013/clapton/clapton.th
+	#input ../2013/dwarf_pine/dwarf_pine.th
+	#input ../2013/were_not_alone/were_not_alone.th
+	#input ../2013/xanadont/xanadont.th
+	#input ../2013/beetlejuice/beetlejuice.th
+	#input ../2013/time_bandits/time_bandits.th
+	#input ../2013/labyrinth/labyrinth.th
+	#input ../2013/RCC_passage/RCC_passage.th
+	#input ../2013/hash2/hash2.th
+	#input ../2013/hash/hash.th
+	#input ../2013/lethe/lethe.th
+	#input ../2013/kokain_rute/kokain_rute.th
+	#input ../2013/apollo_traverse/apollo_traverse.th
+	#input ../2013/straightjacket/straightjacket.th
+	#input ../2013/hydrophobia/hydrophobia.th
+	
+	#equate 20@rural_underground 1@undercover_squirrell
+	#equate 1@clapton 27@pick_your_poison
+	#equate 4@bingo_granny 10@clapton
+	#equate 19@kokain_rute 1@thirdthoughts
+	#equate 11@kokain_lab 7@kokain_rute
+	#equate 1@bingo_granny 1@kokain_rute
+	#equate 1@hash2 8@hash3
+	#equate 29@lethe 1@brezno_slapov
+	#equate 7@hash2 1@hash
+	#equate 6@were_not_alone 18@atlantis
+	#equate 20@hash 24@eastlinks
+	#equate 13@hash 19@eastlinks
+	#equate 6@RCC_passage 11@invictus
+	#equate 30@labyrinth 16@slinging
+	#equate 1@labyrinth 1@curiousandcuriouser
+	#equate 14@curiousandcuriouser 14b@curiousandcuriouser2
+	#equate 8@beetlejuice 16@milkyway
+	#equate 1@apollo_traverse 1@apollo
+	#equate 1@time_bandits 17@cuckoos_nest
+	#equate 11@xanadont 1@euphrates
+	#equate 40@cuckoos_nest 5@xanadont
+	#equate 10@straightjacket 1@rejuvenation_rift
+	#equate 10@hydrophobia 20@cuckoos_nest
+	#equate 1@500m 11@xanadont
+	#equate 5@dwarf_pine 1@hydrophobia
+	#equate 28@rejuvenation_rift 17@cuckoos_nest
+	
+	###__________2014____________###
+	input ../2014/sicsempertyrannis/sicsempertyrannis.th
+	input ../2014/jericho/jericho.th
+	input ../2014/jericho2/jericho2.th
+	input ../2014/squidgygoodness/squidgygoodness.th
+	input ../2014/pleasurepalace/pleasurepalace.th
+	#input ../2014/stupid/stupid.th
+	#input ../2014/AJA/AJA.th
+	#input ../2014/yourmum/yourmum.th
+	#input ../2014/touchingthevoid/touchingthevoid.th
+	#input ../2014/hanginggardensdeep/hanginggardensdeep.th
+	#input ../2014/gravity/gravity.th
+	#input ../2014/hipsdontlie/hipsdontlie.th
+	#input ../2014/apuntoofar1/apuntoofar1.th
+	#input ../2014/rocksteadylove/rocksteadylove.th
+	#input ../2014/serrure/serrure.th
+	#input ../2014/apuntoofar3/apuntoofar3.th
+	#input ../2014/apuntoofar2/apuntoofar2.th
+	
+	equate 24@sicsempertyrannis 10@brezno_slapov
+	equate 11@jericho 17@sicsempertyrannis
+	equate 8@jericho2 1@jericho
+	equate 6@jericho2 8@squidgygoodness
+	equate 20@pleasurepalace 15@sicsempertyrannis
+	#equate 9@hipsdontlie 2@hipsdontlie
+	#equate 3@hipsdontlie 16@cuckoos_nest
+	#equate 3@stupid 5@hydrophobia
+	#equate 1@gravity 12@highway32
+	#equate 27@gravity 1@dwarf_pine
+	#equate 1@apuntoofar1 9@apuntoofar2
+	#equate 1@rocksteadylove 1@hanginggardensdeep
+	#equate 5@touchingthevoid 25@sicsempertyrannis
+	#equate 11@apuntoofar1 1@kamikaze
+	#equate 12@hanginggardensdeep 24@pick_your_poison
+	#equate 16@apuntoofar3 1@apuntoofar2
+	#equate 17@serrure 4@serrure
+	#equate 8@serrure 12@consort
+	#equate 31@AJA 13@rocksteadylove
+	#equate 4@yourmum 1@esoterica
+	
+	join sicsempertyrannis-1p@sicsempertyrannis brezno_slapov-1p@brezno_slapov
+	join jericho-1p@jericho sicsempertyrannis-1p@sicsempertyrannis
+	join jericho2-1p@jericho2 jericho-1p@jericho
+	join squidgygoodness-1p@squidgygoodness jericho2-1p@jericho2
+	
+	###__________2015____________###
+	input ../2015/jetstream/jetstream.th
+	input ../2015/firstdraft/firstdraft.th
+	input ../2015/finaldraft/finaldraft.th
+	input ../2015/meridianway/meridianway.th
+	input ../2015/choke-a-bloke/choke-a-bloke.th
+	input ../2015/blast/blast.th
+	input ../2015/emptyquarter/emptyquarter.th
+	#input ../2015/lazarus/lazarus.th
+	#input ../2015/atworldsend/atworldsend.th
+	#input ../2015/andreabocelli/andreabocelli.th
+	#input ../2015/pushyourluck/pushyourluck.th
+	#input ../2015/davyjoneslocker/davyjoneslocker.th
+	#input ../2015/trueadventures/trueadventures.th
+	#input ../2015/isdead/isdead.th
+	#input ../2015/touchingthevoidsbottom/touchingthevoidsbottom.th
+	#input ../2015/dinnerservice/dinnerservice.th
+	#input ../2015/shithole/shithole.th
+	#input ../2015/void/void.th
+	#input ../2015/formative/formative.th
+	#input ../2015/agartha/agartha.th
+	
+	equate 24@jetstream 1@squidgygoodness
+	equate 15@firstdraft 1@jetstream
+	equate 12@finaldraft 9@firstdraft
+	equate 18@meridianway 1@finaldraft
+	equate 1@meridianway 1@choke-a-bloke
+	equate 16@meridianway 35@blast
+	equate 1@pleasurepalace 1@blast
+	equate 19@emptyquarter 7@choke-a-bloke
+	#equate 5@formative 11@beyond
+	#equate 1@void 1@nitro
+	#equate 1@yourmum 3@isdead
+	#equate 1@dinnerservice 6@void
+	#equate 38@andreabocelli 6@void
+	#equate 1@sicsempertyrannis 15@davyjoneslocker
+	#equate 1@trueadventures 1@colarado
+	#equate 9@atworldsend 1@davyjoneslocker
+	#equate 30@agartha 39@pushyourluck
+	#equate 1@pushyourluck 3@cuckoos_nest
+	#equate 26@lazarus 9@miles
+	#equate 1@touchingthevoidsbottom 27@sicsempertyrannis
+	
+	join jetstream-1p@jetstream squidgygoodness-1p@squidgygoodness
+	join firstdraft-1p@firstdraft jetstream-1p@jetstream
+	join finaldraft-1p@finaldraft firstdraft-1p@firstdraft
+	join meridianway-1p@meridianway finaldraft-1p@finaldraft
+	join choke-a-bloke-1p@choke-a-bloke meridianway-1p@meridianway
+	join emptyquarter-1p@emptyquarter choke-a-bloke-1p@choke-a-bloke
 endsurvey
