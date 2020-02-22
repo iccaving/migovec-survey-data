@@ -1,12 +1,12 @@
 
 ## MASTER MAP ##
 map mvrtnarija-p -projection plan -title "Vrtnarija"
-	#moriginal_entrance_series-p
-	#mfriendship_level-p
-	#mbelow_big_rock-p
-	#mbeyond_red_cow-p
-	#mbelow_balamory-p
-	#mcheetah-p
+	moriginal_entrance_series-p
+	mfriendship_level-p
+	mbelow_big_rock-p
+	mbeyond_red_cow-p
+	mbelow_balamory-p
+	mcheetah-p
 	mbelow_stuck_in_paradise-p
 endmap
 
@@ -81,11 +81,12 @@ map mcheetah-p -projection plan
 endmap
 
 map mbelow_stuck_in_paradise-p -projection plan
-	#mstuckinparadise-p@stuckinparadise
-	#mstuckinparadise2-p@stuckinparadise2
-	#meastlinks-p@eastlinks
+	mstuckinparadise-p@stuckinparadise
+	mstuckinparadise2-p@stuckinparadise2
+	meastlinks-p@eastlinks
 	matlantis-p@atlantis
 	mbrezno_slapov-p@brezno_slapov
+	mlethe-p@lethe
 	msicsempertyrannis-p@sicsempertyrannis
 	mjericho-p@jericho
 	mjericho2-p@jericho2
@@ -97,6 +98,11 @@ map mbelow_stuck_in_paradise-p -projection plan
 	mchoke-a-bloke-p@choke-a-bloke
 	memptyquarter-p@emptyquarter
 	mblast-p@blast
+	mpleasurepalace-p@pleasurepalace
+	mtouchingthevoid-p@touchingthevoid
+	mtouchingthevoidsbottom-p@touchingthevoidsbottom
+	mdavyjoneslocker-p@davyjoneslocker
+	matworldsend-p@atworldsend
 endmap
 
 #map mbelow_republica-p -projection plan
