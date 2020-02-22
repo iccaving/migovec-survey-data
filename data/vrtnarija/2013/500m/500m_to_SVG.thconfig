@@ -1,5 +1,0 @@
-source 500m.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o 500m.svg -layout test -layout-debug station-names

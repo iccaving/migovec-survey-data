@@ -1,5 +1,0 @@
-source happy_monday.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o happy_monday.svg -layout test -layout-debug station-names

@@ -1,5 +1,0 @@
-source guillotine.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o guillotine.svg -layout test -layout-debug station-names
