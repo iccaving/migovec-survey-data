@@ -1,5 +1,0 @@
-source void.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o void.svg -layout test -layout-debug station-names

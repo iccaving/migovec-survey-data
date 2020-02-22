@@ -1,5 +1,0 @@
-source mirage_canyon.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o mirage_canyon.svg -layout test -layout-debug station-names

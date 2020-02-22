@@ -1,5 +1,0 @@
-source breakitdown.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o breakitdown.svg -layout test -layout-debug station-names

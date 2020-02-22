@@ -1,5 +1,0 @@
-source razor.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o razor.svg -layout test -layout-debug station-names

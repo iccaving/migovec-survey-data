@@ -1,5 +1,0 @@
-source povodni_moz.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o povodni_moz.svg -layout test -layout-debug station-names

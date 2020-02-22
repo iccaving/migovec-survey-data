@@ -1,5 +1,0 @@
-source fools_road.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o fools_road.svg -layout test -layout-debug station-names

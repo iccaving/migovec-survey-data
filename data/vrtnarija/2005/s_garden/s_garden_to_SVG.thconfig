@@ -1,5 +1,0 @@
-source s_garden.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o s_garden.svg -layout test -layout-debug station-names

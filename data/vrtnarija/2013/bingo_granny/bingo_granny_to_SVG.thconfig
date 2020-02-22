@@ -1,5 +1,0 @@
-source bingo_granny.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o bingo_granny.svg -layout test -layout-debug station-names
