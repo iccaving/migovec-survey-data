@@ -6,6 +6,7 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
 
 - [Migovec Resurvey Project](#migovec-resurvey-project)
   - [Downloads](#downloads)
+  - [Prerequisites](#prerequisites)
   - [Therion Glossary](#therion-glossary)
     - [Internal Data](#internal-data)
     - [Exported Data](#exported-data)
@@ -18,13 +19,16 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
     - [Using existing configs](#using-existing-configs)
     - [Make your own config](#make-your-own-config)
   - [Adding data](#adding-data)
-    - [Including new Th file into the structure of the main cave (a.k.a. equating nodes)](#including-new-th-file-into-the-structure-of-the-main-cave-aka-equating-nodes)
-    - [Creating a .th2 map and adding to map](#creating-a-th2-map-and-adding-to-map)
-    - [Additional tips](#additional-tips)
-    - [How do I...?](#how-do-i)
-      - [Compile on therion](#compile-on-therion)
+    - [Adding survey data](#adding-survey-data)
+    - [Adding scraps](#adding-scraps)
+  - [Converting old data](#converting-old-data)
+    - [Converting Survex into Therion](#converting-survex-into-therion)
+      - [Script](#script)
+      - [Manually](#manually)
+    - [Converting the old drawn survey into Therion format](#converting-the-old-drawn-survey-into-therion-format)
+  - [Additional tips](#additional-tips)
+    - [Connecting caves into systems](#connecting-caves-into-systems)
   - [How to contribute?](#how-to-contribute)
-    - [Translate Survex to Therion format](#translate-survex-to-therion-format)
   - [Final considerations](#final-considerations)
 
 ## Downloads
@@ -86,6 +90,20 @@ Collectively known as 'the old system' these entrances were originally explored 
 - Plan - English [PDF]  
   The plan with English legend and labels. (WIP)
 - Extended Elevation - English [PDF](WIP)
+
+## Prerequisites
+
+To compile the data and draw surveys you will need some software installed.
+
+For compiling and exporting:
+
+- [Therion](https://therion.speleo.sk/download.php) - The main thing.
+- [Survex](https://survex.com/download.html) - Used by Therion to generate `.3D` files.
+
+For drawing we are using Inkscape and the Therion Inkscape extensions because we think its nicer than using the Therion editor:
+
+- [Inkscape](https://inkscape.org/r) - Vector drawing program
+- [Inkscape Therion Extensions](https://github.com/speleo3/inkscape-speleo/) - The extensions that allow you to draw Therion scraps in Inkscape.
 
 ## Therion Glossary
 
@@ -226,12 +244,11 @@ therion data/_configs/overview/my_nice_config.thconfig
 
 ## Adding data
 
-### Including new Th file into the structure of the main cave (a.k.a. equating nodes)
+### Adding survey data
 
-You have a some `.th` and `.th2` files from topodroid or from an svx conversion. Here's what to do with them.
+You have a some `.th` files from topodroid or from an svx conversion. Here's what to do with them.
 
-We have used a pyramidal hierarchy, with a cave, year, passage structure.
-Save the new my_new_passage.svx and my_new_passage.th file pair into a new folder with lower case name (as far as possible, the same as the survex survey name).
+We have used a pyramidal hierarchy, with a cave, year, passage structure. Save the `my_new_passage.th` file into a new folder with lower case name (as far as possible, the same as the survex survey name).
 
 Find the `cave.th`file in the cave/\_xtherion folder. This file contains a series of `input ../year/passage/passage.th` commands to tell the therion compiler to include the relevant survey data. Adding the command `input ../year/my_new_passage.th` to this file in the correct year folder is necessary, but we now need to connect the new data to an existing point in the survey, i.e. equate.
 
@@ -286,11 +303,11 @@ endsurvey
 
 Commit your changes!
 
-### Creating a .th2 map and adding to map
+### Adding scraps
 
-This will only cover where to put additional `my_new_passage_plan.th2` files to be included in the main map and assumes you have drawn the passage already using the Xtherion editor.
+This assumes you have drawn the passage already using the Xtherion editor or Inkscape or Topodroid.
 
-`my_new_passage_plan.th2` resides in the my_passage folder. In `my_new_passage.th`, you need to add the command `input my_new_passage_plan.th2` below the `survey MySurvey` flag. Below the .th2 input command, you should write a `map mMySurvey-p -projection <plan/extended>` and `endmap` command pair.
+`my_new_passage_plan.th2` resides in the `my_passage` folder. In `my_new_passage.th`, you need to add the command `input my_new_passage_plan.th2` below the `survey MySurvey` flag. Below the .th2 input command, you should write a `map mMySurvey-p -projection <plan/extended>` and `endmap` command pair.
 
 Inside the map command block, you will include maps or scraps (you can't use a mix of the two). If using a typical Topodroid export, then the 'map' section of the .th file will look like the example below.
 
@@ -334,87 +351,19 @@ endcentreline
 endsurvey
 ```
 
-### Additional tips
+## Converting old data
 
-You will find that additionally, you need to specify cave connections.
-These are taken into account in the `MySystem.th` file.
+### Converting Survex into Therion
 
-This will look like:
+All the old Survex survey data has already been converted into Therion format, ready for drawing. These instructions remain for posterity.
 
-```
-survey MySystem -title "The actual System name"
-map mMySystem-<p/e> -projection <plan/extended> # The system map contains each cave map.
- mMyCave1-<p/e> #the cavemaps contain the specific year maps, which themselves contain passage maps. The latter contain scraps.
- mMyCave2-<p/e>
-endmap
+#### Script
 
-input MyCave.th
-input MyCave2.th
+The `scripts/svx_to_th.py` was used to convert the bulk of our data and could probably be used in future.
 
-equate stationX@MySurveyX.MyCave1 stationY@MySurveyY.MyCave2 #There is no 'year' layer in the survey hierarchy.
+#### Manually
 
-join LineId1@MySurveyX.MyCave1:0 LineId2@MySurveyY.MyCave2:end #a tedious manual join between two points of lines within surveys of different caves.
-
-endsurvey
-```
-
-### How do I...?
-
-#### Compile on therion
-
-The main .thconfig file is located in the \_config folder.
-
-At the moment, the thconfig file looks like this:
-
-```
-source "prima_ubend_mona.th" # the main MySystem.th file.
-input ../_layouts/layout.th # an altitude colour coded layout (layout name = local. All the relevant commands are found in layout.th
-input ../_layouts/outline_layout.th  # another layout hiding all in-cave features and producing an outline only map of the cave
-
-#select msystem-p@sistem_prima #commented out, but this map (level 0) contains the cascade of:
-                                              #cave maps (level 1)
-                                                #year maps (level 2)
-                                                  #passage maps (level 3)
-                                                    #scrap maps (level 4)
-                                                      #scraps (level 5), the individual building blocks
-
-
-export map -projection plan -o ../_outputs/sys_prima.pdf -layout local #export a pdf map of the system, using the local layout.
-#export model -fmt survex -o ../_outputs/west_plateau.3d #can export an Aven readable .3d file
-#export database -output ../_outputs/west_plateau.sql #exports all the commands to create sql tables which can be queried.
-```
-
-You can create your own .thconfig file and select different map. For example, try selecting simply primadona, in plan view:
-
-`select mprimadona-p@primadona.sistem_prima`
-
-maybe one year of exploration in primadona:
-`select m2018-p@primadona.sistem_prima`
-
-a single cave passage:
-`select mthe_aqueduct-p@the_aqueduct.primadona.sistem_prima`
-
-or (god forbid) a single scrap:
-`select m1p@the_aqueduct.primadona.sistem_prima`
-and see what the result is.
-
-If this select statement suffers from a typo or encounters any kind of error, Therion will just compile a map of all the scraps available, but the compilation log will show an amber warning. The map subdivision is really important for the creation of an atlas of the cave.
-
-try exporting an atlas to pdf with the following command (make sure the select command is commented out with a `#`:
-`export atlas -o ../outputs/sys_prima_atlas.pdf -layout local`
-
-and see what the difference is when you try this:
-
-```
-select msystem-p@system_prima
-export atlas -o ../outputs/sys_prima_atlas.pdf -layout local
-```
-
-## How to contribute?
-
-### Translate Survex to Therion format
-
-We are working off existing .svx files. The aim is to convert the .svx file to .th format. The shot data formats are identical, but the survey flags and block commands are a bit different.
+The aim is to convert the .svx file to .th format. The shot data formats are identical, but the survey flags and block commands are a bit different.
 
 First, we need to translate the survex data into therion format.
 
@@ -454,6 +403,99 @@ endcentreline
 
 endsurvey
 ```
+
+### Converting the old drawn survey into Therion format
+
+You need to have installed Inkscape and the Inkscape Therion extensions.
+
+This assumes you have a `{passage}.th` file (see above for conversion from `.svx`) in the correct `{cave}/{year}/{passage}` directory.
+
+**Create the template**
+
+If there is no `{passage}-p.th2` then run the `scripts/initialise_map.py` script in the passage folder.
+
+```
+python3 scripts/initialise_map.py
+```
+
+This will create you a scrap file (`{passage}-p.th2`) that contains the stations and the centreline.
+
+**Open in inkscape**
+
+Open the `{passage}-p.th2` file in Inkscape. You should see a centreline of the passage you're editing with some station objects at each node.
+
+Have a look at the layers panel, there should be four:
+
+- **{passage}-1p** - This contains the stations and is where you should draw things like walls.
+- **DELETE-ME-survey-legs** - Shows the survery legs to help you draw. This should be deleted or not saved after the passage is drawn.
+- **Symbol legend** - Displays all the possible Therion objects you can place. The intention is that you can copy and paste them from here into the **{passage}-1p** layer.
+- **Background images** - Somewhere to import images to help drawing (old surveys).
+
+**Start drawing**
+
+Open an existing reference survey for the passage you are drawing. This will likely be the surveys from 2018, but in fact older surveys can be useful too especiallys ones produced just after the passage was found.
+
+- Drawing walls  
+  Use the pen tool to draw the walls around the stations. Make sure the nodes are all connected in one long polygon, except where passages will join in from other sides. In order to set the type of lines as walls or pits or anything else you fancy, select for instance all the lines that you wish to 'set', navigate to Extensions>Therion>Set Line Type>... choose from the dropdown menu and click 'Apply' and let it run. This usually changes the styling of the line, depending on what you've chosen. Wall lines do not change too much, but pits are now barbed, chimneys are steepled lines, rock-borders are slightly thinner etc...
+- Drawing points  
+  You can choose them from the 'Symbol Legends' layer, and copy paste them wherever they are needed. I tend to use: 'narrow-end' (=) or 'continuation' (?) often. You can reset the type to anything you want using Extensions>Therion>Set Point Type and change the storming lead to a boulder choke and so forth. Much power.
+- Add labels  
+  I usually just draw a rectangle (does not matter the size or the styling), select the rectangle, navigate to object properties and write the label there  
+  Syntax: point label -scale <xs/s/m/l/xl> -align <br/r/t/b/tl/tr/bl> -text [mylabel]
+
+Also don't draw everything in one scrap (layer). If the passage branches or goes up or down a lot, create a new layer `{passage}-2p`. It is important that you move any survey stations that that you want to drawn around into the new scrap as well.
+
+**Add the scraps to a map**
+
+The passage is drawn and you're happy with how it looks.... for now. Leave Inkscape open, there's always some tweaking!
+
+Go to the .th file and you should see a
+
+```
+map m{passage}-p -projection plan
+     {passage}-1p
+endmap.
+```
+
+This block is a container for our scraps `{passage}-1p` to `{passage}-{n}p`. If you added new scraps in the drawing, also add them in here.
+
+Then go to the `{cave}.thm` file and include (where it belongs) `m{passage}-p@passage` in one of the submaps.
+
+Uncomment the relevant equates and inputs in `{cave}.th`, and compile `{cave}.thconfig`
+
+You should get an output with your new drawing in.
+
+## Additional tips
+
+### Connecting caves into systems
+
+You will find that additionally, you need to specify cave connections.
+These are taken into account in the `MySystem.th` file.
+
+This will look like:
+
+```
+survey MySystem -title "The actual System name"
+map mMySystem-<p/e> -projection <plan/extended> # The system map contains each cave map.
+ mMyCave1-<p/e> #the cavemaps contain the specific year maps, which themselves contain passage maps. The latter contain scraps.
+ mMyCave2-<p/e>
+endmap
+
+input MyCave.th
+input MyCave2.th
+
+equate stationX@MySurveyX.MyCave1 stationY@MySurveyY.MyCave2 #There is no 'year' layer in the survey hierarchy.
+
+join LineId1@MySurveyX.MyCave1:0 LineId2@MySurveyY.MyCave2:end #a tedious manual join between two points of lines within surveys of different caves.
+
+endsurvey
+```
+
+## How to contribute?
+
+- Add new data each year
+- Redraw the old survey data in Therion format
+- Find poorly drawn areas of the survey and improve them
 
 ## Final considerations
 
