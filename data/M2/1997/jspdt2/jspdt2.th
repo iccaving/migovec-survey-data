@@ -1,0 +1,50 @@
+survey jspdt2 -title "Below Silos"
+
+centreline
+team "Unknown" insts
+team "Unknown" notes
+explo-team "Unknown"
+explo-team "Unknown"
+date 1976
+
+units length meters
+units compass clino degrees
+data normal from to tape compass clino ignoreall # Default
+27	28	2.979	299.1	30.2
+28	29	2.861	161.6	74.0
+29	30	3.260	228.4	-22.5
+30	31	8.250	-	down
+31	32	3.041	099.5	00
+32	33	3.132	213.7	-73.3
+33	34	10.028	180	-85.7
+34	35	7.786	171.6	-28.8
+35	36	2.305	130.6	00
+36	37	1.275	191.3	00
+37	38	3.112	150.9	-34.2
+38	39	4.617	056.3	-12.5
+39	40	4.562	141.8	-12.7
+40	41	4.077	230.7	-29.4
+41	42	11.261	227.5	-68.8
+42	43	7.957	283.1	-14.6
+43	44	4.783	222.9	-03.0
+44	45	3.221	164.7	-27.8
+45	46	13.682	153.4	-80.6
+46	47	10.515	160.6	-64.6
+47	48	3.112	142.1	23.7
+48	49	5.932	139.1	-33.2
+49	50	3.945	135.0	-44.2
+50	51	7.750	-	down
+#
+#; Smell the Glove connection
+#; climb up from confluence at bottom of M2 above inpenetrable rift
+#; Pseudoleg at bottom of M2
+#; APSJ and JNH 5 August 2008
+#
+#;51	SmelltheGlove	8	30	+20
+#;in opposite direction to rift which was pushed on Oct08 real data
+#;AJ says, Feb 2009:
+#;Final pitch drops into small chamber with water trickling through ~10cm groove in floor to rift which was opened up
+#;Going upstream one finds a confluence, and a similar stream trickling through an almost identical aven
+#
+endcentreline
+endsurvey
