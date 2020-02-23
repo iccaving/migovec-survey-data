@@ -1,5 +1,12 @@
 
 survey kneekiller -title "Penitence"
+
+input kneekiller-p.th2
+
+map mkneekiller-p -projection plan
+    kneekiller-1p
+endmap
+
 centreline
     team "Izi" insts
     team "Gergely Ambrus" notes

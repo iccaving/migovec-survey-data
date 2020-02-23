@@ -8,6 +8,7 @@ map mvrtnarija-p -projection plan -title "Vrtnarija"
 	mbelow_balamory-p
 	mcheetah-p
 	mbelow_stuck_in_paradise-p
+	mbeyond_atlantis
 endmap
 
 ## SUBMAPS ##
@@ -83,8 +84,17 @@ endmap
 map mbelow_stuck_in_paradise-p -projection plan
 	mstuckinparadise-p@stuckinparadise
 	mstuckinparadise2-p@stuckinparadise2
+	mkneekiller-p@kneekiller
+	mbravenewworld-p@bravenewworld
+	minvictus-p@invictus
+	mRCC_passage-p@RCC_passage
+	msalvation-p@salvation
 	meastlinks-p@eastlinks
 	matlantis-p@atlantis
+endmap
+
+map mbeyond_atlantis-p -projection plan
+	mwere_not_alone-p@were_not_alone
 	mbrezno_slapov-p@brezno_slapov
 	mlethe-p@lethe
 	msicsempertyrannis-p@sicsempertyrannis
