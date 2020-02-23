@@ -1,0 +1,58 @@
+survey wishing_well2 -title "Wishing Well 2"
+
+
+input wishing_well2-p.th2
+
+map mwishing_well2-p -projection plan
+    wishing_well2-1p
+endmap
+
+	centreline
+		date 2019.08.02
+		explo-date 2019.08.02
+
+		team "Zaeem Najeeb" insts
+		team "David [P Wislon]" notes
+
+		explo-team "Zaeem Najeeb"
+		explo-team "David [P Wilson]"
+
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1 2   11.26 280 42 
+		2 3   29.98 342 8  
+		3 4   3.70 275 -11 
+
+	endcentreline
+endsurvey
+
+
+# Converted from Survex
+# 2019.08.02
+# Wishing Well 2
+# Instruments Zaeem Najeeb 
+# Book David Wilson 
+
+#*begin wishing_well2
+#  *date 2019.07.31 
+# *team "zn dpw" 
+#  *units tape meters
+#  *units compass degrees
+#  *units clino degrees
+#  *alias station - ..
+#  *flags not splay
+#  *data normal from to tape compass clino
+#    
+#	1 2   11.26 280 42 
+#	2 3   29.98 342 8  
+#	3 4   3.70 275 -11 
+#	
+#  *flags not splay
+#;Notes:
+#;stn 1 is wishing well stn 1
+#;stn 4 is mig country stn 1 28/07/1996
+#  
+#*end wishing_well2
+
+#*equate wishing_well2.1 wishing_well.1
