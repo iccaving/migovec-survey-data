@@ -39,15 +39,38 @@ input monatip_map.th
   join s5_l2@monatip4:0 s1_l2@doubletime:end
 
 
-
-
-
   ######________________2012________________######
   input "../2012/monatip5/monatip5.th"
 
   equate 27@monatip5 27@monatip2
 
   join monatip5-1e@monatip5 monatip2-e1@monatip2
+
+  ######________________2013________________######
+
+  input "../2013/monatip6/monatip6.th"
+  input "../2013/monatip7/monatip7.th"
+  input "../2013/monatip8/monatip8.th"
+
+  equate 16@monatip6 1@monatip5
+  equate 20@monatip7 8@monatip6
+  equate 8@monatip8 1@monatip7
+
+  join monatip6-2p@monatip6 monatip7-1p@monatip7
+  join monatip6-2p@monatip6 monatip8-1p@monatip8
+  join monatip6-1p@monatip6 monatip9-1p@monatip9
+
+  ######________________2015________________######
+
+  input "../2015/monatip9/monatip9.th"
+  input "../2015/monatip10/monatip10.th"
+  input "../2015/monatip11/monatip11.th"
+
+  equate 8@monatip9 9@monatip6
+  equate 1@monatip10 6@monatip7
+  equate 1@monatip11 8@monatip10
+
+  join monatip7-1p@monatip7 monatip10-1p@monatip10
   
   ######________________2016________________######
   input "../2016/therock/therock.th"
@@ -80,6 +103,16 @@ input monatip_map.th
   join well_hung-e1@well_hung cloacamaxima-e3@cloacamaxima
   join well_hung-e1@well_hung monatip4-e4@monatip4
   join alkatraz_disto_resurvey-1s@alkatraz_disto_resurvey cloacamaxima-e1@cloacamaxima
+ 
+  ######________________2019________________######
 
+  input "../2019/wishing_well/wishing_well.th"
+  input "../2019/wishing_well2/wishing_well2.th"
+  
+  equate 28@monatip11 13@wishing_well
+  equate 1@wishing_well 1@wishing_well2
+
+  join wishing_well2-1p@wishing_well2 wishing_well-2p@wishing_well
+  
 endsurvey
 
