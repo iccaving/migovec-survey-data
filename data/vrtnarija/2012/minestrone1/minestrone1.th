@@ -1,39 +1,48 @@
 
 survey minestrone1 -title "Minestrone"
-centreline
-    team "Kate Smith" insts
-    team "Clare Tan" notes
-    explo-team "Kate Smith"
-    explo-team "Clare Tan"
-    date 2012.7.27
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	4.15	315	-8
-    2	3	2.15	242	-3
-    4	3	4.40	305	+4
-    4	5	8.20	127	+30
-    6	5	7.73	052	+38
-    6	7	12.24	165	-26
-    7	8	7.57	162	-10
-    9	8	6.02	284	+4
-    9	10	6.22	100	+30
-    11	10	2.54	304	-20
-    11	12	7.13	135	0
-    13	12	3.54	302	-58
-    13	14	9.86	115	+25	
-    15	14	3.15	251	-84
-    15	16	12.40	175	+4
-    17	16	5.68	329	-53
-    17	18	7.98	157	-2
-    19	18	5.43	334	+20
-    19	20	5.52	110	+26
-    21	20	4.52	302	-52
-    21	22	2.99	098	+16
-    23	22	4.14	339	-39
-    23	24	6.55	062	+52
-endcentreline
+	
+	input minestrone1-p.th2
+	
+	map mminestrone1-p -projection plan
+		minestrone1-1p
+	endmap
+	
+	centreline
+		team "Kate Smith" insts
+		team "Clare Tan" notes
+		explo-team "Kate Smith"
+		explo-team "Clare Tan"
+		date 2012.7.27
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	4.15	315	-8
+		2	3	2.15	242	-3
+		4	3	4.40	305	+4
+		4	5	8.20	127	+30
+		6	5	7.73	052	+38
+		6	7	12.24	165	-26
+		7	8	7.57	162	-10
+		9	8	6.02	284	+4
+		9	10	6.22	100	+30
+		11	10	2.54	304	-20
+		11	12	7.13	135	0
+		13	12	3.54	302	-58
+		13	14	9.86	115	+25
+		15	14	3.15	251	-84
+		15	16	12.40	175	+4
+		17	16	5.68	329	-53
+		17	18	7.98	157	-2
+		19	18	5.43	334	+20
+		19	20	5.52	110	+26
+		21	20	4.52	302	-52
+		21	22	2.99	098	+16
+		23	22	4.14	339	-39
+		23	24	6.55	062	+52
+	endcentreline
 endsurvey
+
+# 2020.02.23 Rhys - I think 'lead' by station 20 is a small hole in the wall just above head height
 
 # Converted From SVX
 #;####Minestrone####:
@@ -64,7 +73,7 @@ endsurvey
 #11	12	7.13	135	0
 #13	12	3.54	302	-58
 #;Page 2/2
-#13	14	9.86	115	+25	
+#13	14	9.86	115	+25
 #15	14	3.15	251	-84
 #15	16	12.40	175	+4
 #17	16	5.68	329	-53
@@ -77,7 +86,7 @@ endsurvey
 #23	24	6.55	062	+52
 #
 #
-#;NOTES 
+#;NOTES
 #;Flip of page 1
 #;Sta 1 is PSS
 #;Sta 3 is PSS in center of chamber

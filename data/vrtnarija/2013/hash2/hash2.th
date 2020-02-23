@@ -1,5 +1,12 @@
 
 survey hash2 -title "Hash2"
+
+input hash2-p.th2
+
+map mhash2-p -projection plan
+    hash2-1p
+endmap
+
 centreline
     team "Sam Page" insts
     team "Tetley" notes
