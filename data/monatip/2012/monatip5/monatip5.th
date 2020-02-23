@@ -3,30 +3,28 @@ survey monatip5 -title "Hallowine"
 	input "monatip5-e.th2"
 
 	map mmonatip5-p -projection plan
-		mmonatip5-p2
-		mmonatip5-p1
-	endmap
-
-	map mmonatip5-p1 -projection plan
-		monatip5-p1
-	endmap
-
-	map mmonatip5-p2 -projection plan
-		monatip5-p2
+		monatip5-2p
+		monatip5-1p
+		monatip5-3p
+		break
+		monatip5-4p #Telovadci pitch
 	endmap
 
 	map mmonatip5-e -projection extended
 		monatip5-1e
 	endmap
 
+	join monatip5-3p monatip5-2p
+	join monatip5-1p monatip5-2p
+
 	centreline
 		date 2012.10.31
 		explo-date 2012.10.31
 
-		team "Dejan Ristic" insts
+		team "Dejan Ristić" insts
 		team "Nejc Mavr" tape
 		team "Tjaša Rutar" notes
-		explo-team "Dejan Ristic"
+		explo-team "Dejan Ristić"
 		explo-team "Nejc Mavr"
 		explo-team "Tjaša Rutar"
 
