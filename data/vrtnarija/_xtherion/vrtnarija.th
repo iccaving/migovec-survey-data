@@ -309,6 +309,7 @@ survey vrtnarija -title "Vrtnarija"
 	input ../2011/stuckinparadise2/stuckinparadise2.th
 	input ../2011/eastlinks/eastlinks.th
 	input ../2011/kneekiller/kneekiller.th
+	input ../2011/salvation/salvation.th
 	#input ../2011/herojtelemarkal/herojtelemarkal.th
 	#input ../2011/penguinsegg/penguinsegg.th
 	#input ../2011/daydreamers/daydreamers.th
@@ -323,7 +324,6 @@ survey vrtnarija -title "Vrtnarija"
 	#input ../2011/stagger_lee/stagger_lee.th
 	#input ../2011/duffersdrop/duffersdrop.th
 	#input ../2011/lowerpleasures/lowerpleasures.th
-	#input ../2011/salvation/salvation.th
 	#input ../2011/longwater/longwater.th
 	#input ../2011/winterjourney/winterjourney.th
 	
@@ -337,7 +337,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 10@stuckinparadise2 4@stuckinparadise
 	equate 24@eastlinks 1@stuckinparadise2
 	equate 22@kneekiller 24@eastlinks
-	#equate 23@salvation 1@kneekiller
+	equate 23@salvation 1@kneekiller
 	#equate 3@stagger_lee 2@candyMountain
 	#equate 29@stagger_lee 8@soda
 	#equate 10@2ndtimelucky 1@lowerpleasures
@@ -367,10 +367,14 @@ survey vrtnarija -title "Vrtnarija"
 	join stuckinparadise-1p@stuckinparadise magicdragon-1p@magicdragon
 	join stuckinparadise2-1p@stuckinparadise2 stuckinparadise-1p@stuckinparadise
 	join eastlinks-1p@eastlinks stuckinparadise2-1p@stuckinparadise2
+	join kneekiller-1p@kneekiller eastlinks-1p@eastlinks
+	join salvation-1p@salvation kneekiller-1p@kneekiller
 	
 	###__________2012____________###
 	input ../2012/atlantis/atlantis.th
 	input ../2012/brezno_slapov/brezno_slapov.th
+	input ../2012/bravenewworld/bravenewworld.th
+	input ../2012/invictus/invictus.th
 	#input ../2012/worm/worm.th
 	#input ../2012/euphrates2/euphrates2.th
 	#input ../2012/ingloriousbasterd/ingloriousbasterd.th
@@ -384,8 +388,6 @@ survey vrtnarija -title "Vrtnarija"
 	#input ../2012/watershipdown/watershipdown.th
 	#input ../2012/watershipup/watershipup.th
 	#input ../2012/peepshow/peepshow.th
-	#input ../2012/invictus/invictus.th
-	#input ../2012/bravenewworld/bravenewworld.th
 	#input ../2012/guillotine2/guillotine2.th
 	#input ../2012/apollo/apollo.th
 	#input ../2012/milkyway/milkyway.th
@@ -397,12 +399,12 @@ survey vrtnarija -title "Vrtnarija"
 	
 	equate 32@atlantis 1@eastlinks
 	equate 17@brezno_slapov 1@atlantis
+	equate 1@bravenewworld 22@salvation
+	equate 1@invictus 12@bravenewworld
 	#equate 17@peepshow 1@hotpants
 	#equate 15@why_the_face 1@throneroom
 	#equate 8@hotpants 1@throneroom
 	#equate 13@peepshow 12@undercover_squirrell
-	#equate 1@invictus 12@bravenewworld
-	#equate 1@bravenewworld 22@salvation
 	#equate 22@atlantis 1@minestrone2
 	#equate 24@minestrone1 11@minestrone2
 	#equate 5@ingloriousbasterd 21@atlantis
@@ -424,9 +426,12 @@ survey vrtnarija -title "Vrtnarija"
 	
 	join atlantis-1p@atlantis eastlinks-1p@eastlinks
 	join brezno_slapov-1p@brezno_slapov atlantis-1p@atlantis
+	join bravenewworld-1p@bravenewworld salvation-1p@salvation
 	
 	###__________2013____________###
 	input ../2013/lethe/lethe.th
+	input ../2013/were_not_alone/were_not_alone.th
+	input ../2013/RCC_passage/RCC_passage.th
 	#input ../2013/bingo_granny/bingo_granny.th
 	#input ../2013/curiousandcuriouser/curiousandcuriouser.th
 	#input ../2013/pick_your_poison/pick_your_poison.th
@@ -439,12 +444,10 @@ survey vrtnarija -title "Vrtnarija"
 	#input ../2013/kokain_lab/kokain_lab.th
 	#input ../2013/clapton/clapton.th
 	#input ../2013/dwarf_pine/dwarf_pine.th
-	#input ../2013/were_not_alone/were_not_alone.th
 	#input ../2013/xanadont/xanadont.th
 	#input ../2013/beetlejuice/beetlejuice.th
 	#input ../2013/time_bandits/time_bandits.th
 	#input ../2013/labyrinth/labyrinth.th
-	#input ../2013/RCC_passage/RCC_passage.th
 	#input ../2013/hash2/hash2.th
 	#input ../2013/hash/hash.th
 	#input ../2013/kokain_rute/kokain_rute.th
@@ -453,6 +456,8 @@ survey vrtnarija -title "Vrtnarija"
 	#input ../2013/hydrophobia/hydrophobia.th
 	
 	equate 29@lethe 1@brezno_slapov
+	equate 6@were_not_alone 18@atlantis
+	equate 6@RCC_passage 11@invictus
 	#equate 20@rural_underground 1@undercover_squirrell
 	#equate 1@clapton 27@pick_your_poison
 	#equate 4@bingo_granny 10@clapton
@@ -461,10 +466,8 @@ survey vrtnarija -title "Vrtnarija"
 	#equate 1@bingo_granny 1@kokain_rute
 	#equate 1@hash2 8@hash3
 	#equate 7@hash2 1@hash
-	#equate 6@were_not_alone 18@atlantis
 	#equate 20@hash 24@eastlinks
 	#equate 13@hash 19@eastlinks
-	#equate 6@RCC_passage 11@invictus
 	#equate 30@labyrinth 16@slinging
 	#equate 1@labyrinth 1@curiousandcuriouser
 	#equate 14@curiousandcuriouser 14b@curiousandcuriouser2
@@ -480,6 +483,8 @@ survey vrtnarija -title "Vrtnarija"
 	#equate 28@rejuvenation_rift 17@cuckoos_nest
 	
 	join lethe-1p@lethe brezno_slapov-1p@brezno_slapov
+	join were_not_alone-1p@were_not_alone atlantis-1p@atlantis
+	join RCC_passage-1p@RCC_passage invictus-1p@invictus
 	
 	###__________2014____________###
 	input ../2014/sicsempertyrannis/sicsempertyrannis.th

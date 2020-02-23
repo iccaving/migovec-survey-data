@@ -1,5 +1,12 @@
 
 survey salvation -title "Salvation"
+
+input salvation-p.th2
+
+map msalvation-p -projection plan
+    salvation-1p
+endmap
+
 centreline
     team "James Hooper" insts
     team "Unknown" notes

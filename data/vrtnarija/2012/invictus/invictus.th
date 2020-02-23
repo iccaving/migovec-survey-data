@@ -1,27 +1,34 @@
 
 survey invictus -title "Invictus"
-centreline
-    team "Rhys Tyers" insts
-    team "James 'Tetley' Hooper" notes
-    explo-team "Rhys Tyers"
-    explo-team "James 'Tetley' Hooper"
-    date 2012.8.3
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	3.90	100	+34
-    2	3	2.52	117	+09
-    3	4	2.13	061	+09
-    4	5	3.51	094	+12
-    5	6	6.79	121	+01
-    6	7	5.89	114	00
-    7	8	4.30	076	+04
-    8	9	11.27	075	+13
-    9	10	10.80	113	+05
-    10	11	7.12	136	+16
-    11	12	4.75	219	-03
-    12	13	9.98	130	+05
-endcentreline
+
+input invictus-p.th2
+
+map minvictus-p -projection plan
+    invictus-1p
+endmap
+
+	centreline
+		team "Rhys Tyers" insts
+		team "James Hooper" notes
+		explo-team "Rhys Tyers"
+		explo-team "James Hooper"
+		date 2012.8.3
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	3.90	100	+34
+		2	3	2.52	117	+09
+		3	4	2.13	061	+09
+		4	5	3.51	094	+12
+		5	6	6.79	121	+01
+		6	7	5.89	114	00
+		7	8	4.30	076	+04
+		8	9	11.27	075	+13
+		9	10	10.80	113	+05
+		10	11	7.12	136	+16
+		11	12	4.75	219	-03
+		12	13	9.98	130	+05
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -52,7 +59,7 @@ endsurvey
 #10	11	7.12	136	+16
 #11	12	4.75	219	-03
 #12	13	9.98	130	+05
-#;NOTES 
+#;NOTES
 #;Flip of page 1
 #;sta 1 to Sta 4 is through boulder choke
 #;Sta 6 is PSS
