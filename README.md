@@ -111,10 +111,10 @@ Therion has a complex vocabulary of its own so here is a basic translation.
 
 ### Internal Data
 
-Within Therion there are a few data types its worth knowing about.
+Within Therion there are a few data types it's worth knowing about.
 
 - **Survey** - The raw survey data consiting of station to station measurements and passage dimension data (LRUD) as well as metadata such as date of exploration and survey, and names of explores and surveyors.
-- **Scrap** - The most basic drawing element. A scrap is the drawing associated with a small bit of passage. It will consist of the walls and stations of the passage as well as lots of extra information (should you choose to draw it!) like boulders, pits, passage gradients etc. A single set of survey data (a single passage) can have many scraps associated with it. It is often good to split the drawing over many scraps as this allows Therion to do clever things (like depth colouring).
+- **Scrap** - The most basic drawing element. A scrap is the drawing associated with a small bit of passage. It will consist of the walls and stations of the passage as well as lots of extra information (should you choose to draw it!) like boulders, pits, passage gradients etc. A single set of survey data (a single passage) can have many scraps associated with it. It is often good to split the drawing over many scraps as this allows Therion to do clever things (like depth colouring). Scraps cannot overlap themselves.
 - **Map** - The higher level drawing element. A map can be made of scraps, or it can be a map of maps. Maps are how you collect individual drawn passages into larger blocks. For example a passage like Aquaduct will have its scraps collected in a map called `maquaduct-p` (don't worry about the name). A bigger map might be called `mbelow_klic_globin` and contain maps from Aquaduct and many other passages. The `mbelow_klic_globin` will be collected into an Primadona map `mprimadona-p` with all the other maps in Primadona and finally that will collected with the maps from Vrntarija and the old system into a full System Migovec map. The advantage of this heirarchical structure is that you can export these maps at any level, whether you want an overview of the full system or a higher resolution look at the pushing front.
 
 ### Exported Data
