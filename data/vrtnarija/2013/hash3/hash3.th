@@ -1,5 +1,12 @@
 
 survey hash3 -title "Hash 3"
+
+input hash3-p.th2
+
+map mhash3-p -projection plan
+    hash3-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Clare Tan" notes
