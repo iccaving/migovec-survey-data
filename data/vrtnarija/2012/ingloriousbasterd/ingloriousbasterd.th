@@ -1,5 +1,12 @@
 
 survey ingloriousbasterd -title "Inglorious Basterd"
+
+input ingloriousbasterd-p.th2
+
+map mingloriousbasterd-p -projection plan
+    ingloriousbasterd-1p
+endmap
+
 centreline
     team "Oliver Myerscough" insts
     team "Gergely Ambrus" notes
