@@ -1,5 +1,12 @@
 
 survey were_not_alone -title "We're Not Alone"
+
+input were_not_alone-p.th2
+
+map mwere_not_alone-p -projection plan
+    were_not_alone-1p
+endmap
+
 centreline
     team "Dave Wilson" insts
     team "James Hooper" notes

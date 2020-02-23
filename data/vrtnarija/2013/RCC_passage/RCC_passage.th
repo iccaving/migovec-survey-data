@@ -1,5 +1,12 @@
 
 survey RCC_passage -title "RCC Passage of the Year"
+
+input RCC_passage-p.th2
+
+map mRCC_passage-p -projection plan
+    RCC_passage-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Clare Tan" notes
