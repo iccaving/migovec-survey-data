@@ -1,44 +1,44 @@
 
 survey salvation -title "Salvation"
-
-input salvation-p.th2
-
-map msalvation-p -projection plan
-    salvation-1p
-endmap
-
-centreline
-    team "James Hooper" insts
-    team "Unknown" notes
-    explo-team "James Hooper"
-    explo-team "Unknown"
-    date 2011.8.05
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	26.05	334	-01
-    3	2	6.09	203	-03
-    3	4	9.80	345	-02
-    5	4	4.61	216	-26
-    5	6	12.04	015	+06
-    6	7	0.59	-	up
-    7	8	14.49	030	+11
-    9	8	6.91	158	+10
-    10	9	5.36	146	-09
-    11	10	10.31	160	+19
-    12	11	6.10	149	+02
-    12	13	14.34	340	-02	
-    1	14	11.69	274	-19
-    15	14	10.24	049	+17
-    16	15	2.54	035	+14
-    1	17	8.56	144	+13
-    17	18	6.47	112	+01
-    19	18	2.36	254	-10
-    19	20	12.99	091	+22
-    21	20	11.30	298	-14
-    21	22	12.24	104	+05
-    13	23	5.75	275	-19
-endcentreline
+	
+	input salvation-p.th2
+	
+	map m-salvation-p -projection plan
+		salvation-1p
+	endmap
+	
+	centreline
+		team "James Hooper" insts
+		team "Unknown" notes
+		explo-team "James Hooper"
+		explo-team "Unknown"
+		date 2011.8.05
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	26.05	334	-01
+		3	2	6.09	203	-03
+		3	4	9.80	345	-02
+		5	4	4.61	216	-26
+		5	6	12.04	015	+06
+		6	7	0.59	-	up
+		7	8	14.49	030	+11
+		9	8	6.91	158	+10
+		10	9	5.36	146	-09
+		11	10	10.31	160	+19
+		12	11	6.10	149	+02
+		12	13	14.34	340	-02
+		1	14	11.69	274	-19
+		15	14	10.24	049	+17
+		16	15	2.54	035	+14
+		1	17	8.56	144	+13
+		17	18	6.47	112	+01
+		19	18	2.36	254	-10
+		19	20	12.99	091	+22
+		21	20	11.30	298	-14
+		21	22	12.24	104	+05
+		13	23	5.75	275	-19
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -74,7 +74,7 @@ endsurvey
 #10	9	5.36	146	-09
 #11	10	10.31	160	+19
 #12	11	6.10	149	+02
-#12	13	14.34	340	-02	
+#12	13	14.34	340	-02
 #
 #;Page 2/2
 #1	14	11.69	274	-19
@@ -86,7 +86,7 @@ endsurvey
 #19	20	12.99	091	+22
 #21	20	11.30	298	-14
 #21	22	12.24	104	+05
-#13	23	5.75	275	-19		
+#13	23	5.75	275	-19
 #*end salvation
 #; NOTES
 #;Station 1 is a PSS cairn at junction

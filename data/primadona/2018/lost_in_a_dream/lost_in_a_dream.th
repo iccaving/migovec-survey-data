@@ -1,32 +1,32 @@
 survey lost_in_a_dream -title "Lost in a Dream"
 	input "lost_in_a_dream-p.th2"
 	input "lost_in_a_dream-e.th2"
-
-	map mlost_in_a_dream-e -projection extended
+	
+	map  m-lost_in_a_dream-e -projection extended
 		lost_in_a_dream-e1
 	endmap
-
-	map m1-p -projection plan
+	
+	map m-1-p -projection plan
 		lost_in_a_dream-p1
 	endmap
-
-	map m2-p -projection plan
+	
+	map m-2-p -projection plan
 		lost_in_a_dream-p2
 	endmap
-
-	map m3-p -projection plan
+	
+	map m-3-p -projection plan
 		lost_in_a_dream-p3
 	endmap
-
-	map mlost_in_a_dream-p -projection plan
-		m1-p
-		m2-p
-		m3-p
+	
+	map m-lost_in_a_dream-p -projection plan
+		m-1-p
+		m-2-p
+		m-3-p
 	endmap
-
+	
 	join lost_in_a_dream-p1 lost_in_a_dream-p2
 	join lost_in_a_dream-p2 lost_in_a_dream-p3
-
+	
 	centreline
 		# Arun Paul also present
 		team "Rhys Tyers"	 notes
@@ -37,68 +37,68 @@ survey lost_in_a_dream -title "Lost in a Dream"
 		explo-team "Jack Halliday"
 		date 2018.07.20
 		explo-date 2018.07.20
-
+		
 		units length meters
-    	units compass clino degrees
-    	data normal from to length compass clino
-
-    	#Data on 1 page
-
-	#Page 1
-	extend left
-	1	2	4.59	275.9	-03.6
-	extend left
-	2	3	0.88	217.8	+23.3
-	extend left
-	3	4	4.96	007.6	+22.7
-	extend left
-	4	5	2.02	101.2	+22.0
-	extend left
-	5	6	3.82	314.2	+12.1
-	extend left
-	6 	7	3.02	044.4	-16.9
-	extend left
-	7	8	2.09	145.5	+83.5
-	extend left
-	8	9	3.80	035.9	+03.0
-	extend left
-	9	10	1.06	140.5	-02.6
-	extend left
-	10	11	6.61	023.6	+32.4
-	extend right
-	11	12	1.66	218.4	+00.7
-	extend left	
-	12	13	4.62	335.4	+48.5
-	extend left
-	13	14	3.77	329.8	+27.2
-	extend left
-	14	15	2.41	298.0	+07.5
-	extend left
-	15	16	0.94	006.0	+28.4
-	extend left
-	16	17	2.91	309.9	+02.9
-	extend left
-	17	18	3.71	318.6	+18.3
-	extend left
-	18	19	2.75	095.1	+14.0
-	extend left
-	19	20	5.68	338.6	-01.1
-	extend left
-	20	21	5.05	055.8	+17.9
-	extend right
-	21	22	1.32	146.0	+50.3
-	extend right
-	22	23	7.03	085.9	+19.7
-	extend left
-	23	24	1.58	087.4	+24.3
-	extend right
-	24	25	1.97	228.3	+07.5
-
-
-
-	#NOTES 
-	#STN1 is PSS
-	#STN25 is Below Ajdov STN13
-
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		#Data on 1 page
+		
+		#Page 1
+		extend left
+		1	2	4.59	275.9	-03.6
+		extend left
+		2	3	0.88	217.8	+23.3
+		extend left
+		3	4	4.96	007.6	+22.7
+		extend left
+		4	5	2.02	101.2	+22.0
+		extend left
+		5	6	3.82	314.2	+12.1
+		extend left
+		6 	7	3.02	044.4	-16.9
+		extend left
+		7	8	2.09	145.5	+83.5
+		extend left
+		8	9	3.80	035.9	+03.0
+		extend left
+		9	10	1.06	140.5	-02.6
+		extend left
+		10	11	6.61	023.6	+32.4
+		extend right
+		11	12	1.66	218.4	+00.7
+		extend left
+		12	13	4.62	335.4	+48.5
+		extend left
+		13	14	3.77	329.8	+27.2
+		extend left
+		14	15	2.41	298.0	+07.5
+		extend left
+		15	16	0.94	006.0	+28.4
+		extend left
+		16	17	2.91	309.9	+02.9
+		extend left
+		17	18	3.71	318.6	+18.3
+		extend left
+		18	19	2.75	095.1	+14.0
+		extend left
+		19	20	5.68	338.6	-01.1
+		extend left
+		20	21	5.05	055.8	+17.9
+		extend right
+		21	22	1.32	146.0	+50.3
+		extend right
+		22	23	7.03	085.9	+19.7
+		extend left
+		23	24	1.58	087.4	+24.3
+		extend right
+		24	25	1.97	228.3	+07.5
+		
+		
+		
+		#NOTES
+		#STN1 is PSS
+		#STN25 is Below Ajdov STN13
+		
 	endcentreline
 endsurvey

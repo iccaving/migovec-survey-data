@@ -1,71 +1,71 @@
 encoding  utf-8
 survey battery_flattery -title "Battery Flattery"
-  input "battery_flatteryp.th2"
-  input "battery_flattery-e.th2"
-
-  map mbattery_flattery-e -projection extended
-    battery_flattery-1e
-  endmap
-  
-  map mbattery_flattery-p -projection plan
-    battery_flatteryp_1
-    battery_flatteryp_2
-  endmap
-
-  map mbattery_flatteryp_1 -projection plan
-    battery_flatteryp_1
-  endmap
-  
-  map mbattery_flatteryp_2 -projection plan
-    battery_flatteryp_2
-  endmap
-  
-  centreline
-    date 2017.07.20
-    explo-date 2017.07.20
-    explo-team "Rhys Tyers"
-    explo-team "Benjamin Honan"
-    explo-team "Clare Tan"
-    
-    team "Rhys Tyers" insts notes
-    team "Benjamin Honan" tape insts
-    
-    units length meters
-    units compass clino degrees
-    data normal from to length compass clino
-    
-    #PAGE 1/1
-    extend left
-    2	1	1.44	248	+43
-    extend left
-    3	2	3.00	260	+00
-    extend left
-    4	3	7.85	315	+23
-    extend left
-    5	4	11.04	322	-07
-    extend left
-    6	5	5.06	248	+00
-    extend left
-    7	6	5.38	187	+05
-    extend left
-    8	7	7.50	297	+19
-    extend left
-    9	8	2.12	210	-26
-    extend vertical
-    10	1	17.30	-	DOWN
-    extend right
-    11	10	2.73	305	-11
-
-
-    #NOTES
-    #STN 1 is PSS 
-    #STN 5 is crawl bypass over real route
-    #STN 10 is top of the pitch
-    #STN 11 is STN1 of fenestrator
-    
-   
-    
-  endcentreline
+	input "battery_flatteryp.th2"
+	input "battery_flattery-e.th2"
+	
+	map  m-battery_flattery-e -projection extended
+		battery_flattery-1e
+	endmap
+	
+	map m-battery_flattery-p -projection plan
+		battery_flatteryp_1
+		battery_flatteryp_2
+	endmap
+	
+	map mbattery_flatteryp_1 -projection plan
+		battery_flatteryp_1
+	endmap
+	
+	map mbattery_flatteryp_2 -projection plan
+		battery_flatteryp_2
+	endmap
+	
+	centreline
+		date 2017.07.20
+		explo-date 2017.07.20
+		explo-team "Rhys Tyers"
+		explo-team "Benjamin Honan"
+		explo-team "Clare Tan"
+		
+		team "Rhys Tyers" insts notes
+		team "Benjamin Honan" tape insts
+		
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		#PAGE 1/1
+		extend left
+		2	1	1.44	248	+43
+		extend left
+		3	2	3.00	260	+00
+		extend left
+		4	3	7.85	315	+23
+		extend left
+		5	4	11.04	322	-07
+		extend left
+		6	5	5.06	248	+00
+		extend left
+		7	6	5.38	187	+05
+		extend left
+		8	7	7.50	297	+19
+		extend left
+		9	8	2.12	210	-26
+		extend vertical
+		10	1	17.30	-	DOWN
+		extend right
+		11	10	2.73	305	-11
+		
+		
+		#NOTES
+		#STN 1 is PSS
+		#STN 5 is crawl bypass over real route
+		#STN 10 is top of the pitch
+		#STN 11 is STN1 of fenestrator
+		
+		
+		
+	endcentreline
 endsurvey
 
 

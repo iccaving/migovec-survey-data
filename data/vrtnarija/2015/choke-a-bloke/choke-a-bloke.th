@@ -1,30 +1,30 @@
 
 survey choke-a-bloke -title "choke-a-bloke"
-
-input choke-a-bloke-p.th2
-
-map mchoke-a-bloke-p -projection plan
-    choke-a-bloke-1p
-endmap
-
-centreline
-    team "Oliver Myerscough" insts
-    team "Clare Tan" notes
-    explo-team "Oliver Myerscough"
-    explo-team "Clare Tan"
-    date 2015.7.28
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	3.23	240	+11
-    2	3	6.42	187	-3
-    3	4	1.83	166	+3
-    4	5	1.56	192	+31
-    5	6	28.80	171	+00
-    7	6	9.38	330	-8
-    8	7	9.15	291	+11
-    8	9	5.32	121	+03
-endcentreline
+	
+	input choke-a-bloke-p.th2
+	
+	map m-choke-a-bloke-p -projection plan
+		choke-a-bloke-1p
+	endmap
+	
+	centreline
+		team "Oliver Myerscough" insts
+		team "Clare Tan" notes
+		explo-team "Oliver Myerscough"
+		explo-team "Clare Tan"
+		date 2015.7.28
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	3.23	240	+11
+		2	3	6.42	187	-3
+		3	4	1.83	166	+3
+		4	5	1.56	192	+31
+		5	6	28.80	171	+00
+		7	6	9.38	330	-8
+		8	7	9.15	291	+11
+		8	9	5.32	121	+03
+	endcentreline
 endsurvey
 
 # Converted From SVX

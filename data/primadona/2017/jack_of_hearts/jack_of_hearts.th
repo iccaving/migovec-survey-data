@@ -1,143 +1,143 @@
 encoding  utf-8
 survey jack_of_hearts -title "Jack of Hearts streamway"
-  input "jack_of_hearts-p.th2"
-  input "jack_of_hearts-e.th2"
-  
-  map mjack_of_hearts-p -projection plan
-    mjack_of_hearts-1p
-    mjack_of_hearts-2p
-    mjack_of_hearts-3p
-    mjack_of_hearts-4p
-  endmap
-
-  map mjack_of_hearts-1p -projection plan
-    jack_of_heartsp_1
-  endmap
-  
-  map mjack_of_hearts-2p -projection plan
-    jack_of_heartsp_2
-  endmap
-  
-  map mjack_of_hearts-3p -projection plan
-    jack_of_heartsp_3
-  endmap
-  
-  map mjack_of_hearts-4p -projection plan
-    jack_of_heartsp_4
-  endmap
-
-  map mjack_of_hearts-e -projection extended
-    jack_of_hearts-1e
-    jack_of_hearts-2e
-  endmap
-  
-  join jack_of_heartsp_1 jack_of_heartsp_2
-  join jack_of_heartsp_1 jack_of_heartsp_3
-  join jack_of_heartsp_4 jack_of_heartsp_3
-  
-  centreline
-    date 2017.07.20
-    explo-date 2017.07.20
-
-    explo-team "Tanguy Racine"
-    explo-team "Jarvist Frost"
-    
-    
-    team "Jarvist Frost" insts
-    team "Tanguy Racine" tape notes
-    
-    units length meters
-    units compass clino degrees
-    data normal from to length compass clino
-    
-    #Data on 3 pages
-
-    #PAGE 1/3
-    extend vertical
-    1	2	12.60	-	UP
-    extend right
-    3	2	4.42	132	+09
-    extend right
-    5	SUMP	5.60	201	-14
-    extend left
-    5	6	2.80	335	-06
-    extend right
-    7	6	1.91	204	+03
-    extend right
-    8	7	8.66	158	-13
-    extend right
-    9	8	3.40	179	-19
-    extend left
-    9	10	8.99	328	-03
-    extend right
-    11	10	3.08	162	-60
-    extend right
-    12	11	3.63	124	+04
-    extend left
-    12	13	7.61	342	+12
-
-    #Page 2/3
-    extend left
-    13	14	3.04	340	+12
-    extend right
-    15	14	6.59	168	-05
-    extend vertical
-    15	16	4.45	-	UP
-    extend left
-    16	17	1.68	307	+41
-    extend left
-    17	18	6.76	023	+47
-    extend left
-    18	19	4.27	060	+08
-    extend right
-    20	19	3.68	159	-36
-    extend left
-    20	21	3.80	020	-10
-    extend vertical
-    21	22	6.35	-	UP
-    extend left
-    22	23	6.70	348	+16
-    extend vertical
-    23	24	5.85	-	UP
-    24	25	3.96	334	+12
-
-    #Page 3/3
-    extend left
-    25	26	3.28	311	-13
-    extend right
-    3	26	4.77	184	-27
-    extend left
-    3	27	5.73	329	+31
-    extend left
-    27	28	5.35	329	+17
-    extend vertical
-    28	29	19.73	-	UP
-    flags duplicate
-    extend right
-    29	30	7.58	129	+07
-    extend left
-    31	30	7.75	319	+21
-    extend right
-    31	32	4.80	132	-04
-    extend left
-    33	32	3.95	173	+04
-    extend right
-    33	34	5.16	281	+00
-    extend vertical
-    34	35	4.00	-	DOWN
-    flags not duplicate
-
-    #NOTES
-    #STN 1 is bottom of blind pitch Ledge connects to going pitch via rift
-    #STN2 is Yhang bolt far wall
-    # STN3 is PSS cairn in Chamber
-    #Sump is Wall of sump
-    #5 is PSS cairn
-    #STN 16 is bolt
-    #STN 25 is PSS in chamber above first pitch
-    #STN 34 (actually 35) is Smer0 38 carbide on wall
-    
-  endcentreline
+	input "jack_of_hearts-p.th2"
+	input "jack_of_hearts-e.th2"
+	
+	map m-jack_of_hearts-p -projection plan
+		mjack_of_hearts-1p
+		mjack_of_hearts-2p
+		mjack_of_hearts-3p
+		mjack_of_hearts-4p
+	endmap
+	
+	map mjack_of_hearts-1p -projection plan
+		jack_of_heartsp_1
+	endmap
+	
+	map mjack_of_hearts-2p -projection plan
+		jack_of_heartsp_2
+	endmap
+	
+	map mjack_of_hearts-3p -projection plan
+		jack_of_heartsp_3
+	endmap
+	
+	map mjack_of_hearts-4p -projection plan
+		jack_of_heartsp_4
+	endmap
+	
+	map  m-jack_of_hearts-e -projection extended
+		jack_of_hearts-1e
+		jack_of_hearts-2e
+	endmap
+	
+	join jack_of_heartsp_1 jack_of_heartsp_2
+	join jack_of_heartsp_1 jack_of_heartsp_3
+	join jack_of_heartsp_4 jack_of_heartsp_3
+	
+	centreline
+		date 2017.07.20
+		explo-date 2017.07.20
+		
+		explo-team "Tanguy Racine"
+		explo-team "Jarvist Frost"
+		
+		
+		team "Jarvist Frost" insts
+		team "Tanguy Racine" tape notes
+		
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		#Data on 3 pages
+		
+		#PAGE 1/3
+		extend vertical
+		1	2	12.60	-	UP
+		extend right
+		3	2	4.42	132	+09
+		extend right
+		5	SUMP	5.60	201	-14
+		extend left
+		5	6	2.80	335	-06
+		extend right
+		7	6	1.91	204	+03
+		extend right
+		8	7	8.66	158	-13
+		extend right
+		9	8	3.40	179	-19
+		extend left
+		9	10	8.99	328	-03
+		extend right
+		11	10	3.08	162	-60
+		extend right
+		12	11	3.63	124	+04
+		extend left
+		12	13	7.61	342	+12
+		
+		#Page 2/3
+		extend left
+		13	14	3.04	340	+12
+		extend right
+		15	14	6.59	168	-05
+		extend vertical
+		15	16	4.45	-	UP
+		extend left
+		16	17	1.68	307	+41
+		extend left
+		17	18	6.76	023	+47
+		extend left
+		18	19	4.27	060	+08
+		extend right
+		20	19	3.68	159	-36
+		extend left
+		20	21	3.80	020	-10
+		extend vertical
+		21	22	6.35	-	UP
+		extend left
+		22	23	6.70	348	+16
+		extend vertical
+		23	24	5.85	-	UP
+		24	25	3.96	334	+12
+		
+		#Page 3/3
+		extend left
+		25	26	3.28	311	-13
+		extend right
+		3	26	4.77	184	-27
+		extend left
+		3	27	5.73	329	+31
+		extend left
+		27	28	5.35	329	+17
+		extend vertical
+		28	29	19.73	-	UP
+		flags duplicate
+		extend right
+		29	30	7.58	129	+07
+		extend left
+		31	30	7.75	319	+21
+		extend right
+		31	32	4.80	132	-04
+		extend left
+		33	32	3.95	173	+04
+		extend right
+		33	34	5.16	281	+00
+		extend vertical
+		34	35	4.00	-	DOWN
+		flags not duplicate
+		
+		#NOTES
+		#STN 1 is bottom of blind pitch Ledge connects to going pitch via rift
+		#STN2 is Yhang bolt far wall
+		# STN3 is PSS cairn in Chamber
+		#Sump is Wall of sump
+		#5 is PSS cairn
+		#STN 16 is bolt
+		#STN 25 is PSS in chamber above first pitch
+		#STN 34 (actually 35) is Smer0 38 carbide on wall
+		
+	endcentreline
 endsurvey
 
 

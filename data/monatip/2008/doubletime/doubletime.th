@@ -1,93 +1,93 @@
 encoding  utf-8
 survey doubletime
-  input "doubletimep.th2"
-  input "doubletime-e.th2"
-
-  map mdoubletime-e -projection extended
-    doubletime-e1
-  endmap
-
-  map mdoubletime-p -projection plan
-    mdoubletime-p1
-    mdoubletime-p2
-    mdoubletime-p3
-    mdoubletime-p4
-  endmap
-  
-  map mdoubletime-p1 -projection plan
-    doubletimep_1
-  endmap
-  
-  map mdoubletime-p2 -projection plan
-    doubletimep_2
-  endmap
-  
-  map mdoubletime-p3 -projection plan
-    doubletimep_3
-  endmap
-  
-  map mdoubletime-p4 -projection plan
-    doubletimep_4
-  endmap
-  
-  
-  join doubletimep_1 doubletimep_2
-  join doubletimep_2 doubletimep_3
- # join doubletimep_3 doubletimep_4
-  
-  centreline
-    date 2008.08.07
-    explo-team "Dan Greenwald" 
-    explo-team "Iztok Možir"
-    team "Dan Greenwald" insts notes
-    team "Iztok Možir" insts notes
-    units length meters
-    units compass clino degrees
- #PAGE 1
- extend left
-1	2	11.80	000	-44	# .1 0.5 1 3 0
-extend vertical
-2	3	22.50	-	up	# .2 5 2 22.5 0
-extend right
-3	4	3.76	338	+42	# .3 1 1 7 22.5
-extend right
-4	5	3.84	301	+09	# .4 2 0 4 1.7
-extend right
-5	6	4.53	258	+45	# .5 2 0 7 0.7
-extend right
-6	7	3.86	056	+59	# .6 2 0 4 1.7
-extend right
-7	8	4.43	274	-05	# .7 2 0 1 7
-extend right
-8	9	6.55	024	+73	# .8 2 11 6.5 0
-extend right
-9	10	1.58	051	+44	# .9 0.4 0.5 0.6 6.55
-extend right
-10	11	2.46	148	+58	# .10 0 0.5 2 0.4
-extend right
-11	12	1.54	333	+61	# .11 0.7 1 0.4 1
-extend right
-12	13	2.77	354	-03	# .12 0.4 0 0.5 1
-#crossed out leg 13 to 14
-extend right
-13	14	0.95	331	+42	# .13 0.5 0 0.6 1.0
-extend right
-14	15	2.28	046	+63	#.14 0.2 0.2 0.3 1.5
-
-#PAGE 2
-extend left
-15	16	5.11	016	+34	# .15 0.2 0.1 0.5 2.5
-extend left
-16	17	2.28	013	-10	# .16 2 0 1 1
-extend left
-17	18	3.76	069	+08	# .17 1 0 1 1.7
-extend left
-18	19	5.85	034	+57	# .18 1.5 0 3 1
-extend left
-19	20	3.90	292	+36	# .19 1.5 0 3 1
-endcentreline
-
-
+	input "doubletimep.th2"
+	input "doubletime-e.th2"
+	
+	map  m-doubletime-e -projection extended
+		doubletime-e1
+	endmap
+	
+	map m-doubletime-p -projection plan
+		mdoubletime-p1
+		mdoubletime-p2
+		mdoubletime-p3
+		mdoubletime-p4
+	endmap
+	
+	map mdoubletime-p1 -projection plan
+		doubletimep_1
+	endmap
+	
+	map mdoubletime-p2 -projection plan
+		doubletimep_2
+	endmap
+	
+	map mdoubletime-p3 -projection plan
+		doubletimep_3
+	endmap
+	
+	map mdoubletime-p4 -projection plan
+		doubletimep_4
+	endmap
+	
+	
+	join doubletimep_1 doubletimep_2
+	join doubletimep_2 doubletimep_3
+	# join doubletimep_3 doubletimep_4
+	
+	centreline
+		date 2008.08.07
+		explo-team "Dan Greenwald"
+		explo-team "Iztok Možir"
+		team "Dan Greenwald" insts notes
+		team "Iztok Možir" insts notes
+		units length meters
+		units compass clino degrees
+		#PAGE 1
+		extend left
+		1	2	11.80	000	-44	# .1 0.5 1 3 0
+		extend vertical
+		2	3	22.50	-	up	# .2 5 2 22.5 0
+		extend right
+		3	4	3.76	338	+42	# .3 1 1 7 22.5
+		extend right
+		4	5	3.84	301	+09	# .4 2 0 4 1.7
+		extend right
+		5	6	4.53	258	+45	# .5 2 0 7 0.7
+		extend right
+		6	7	3.86	056	+59	# .6 2 0 4 1.7
+		extend right
+		7	8	4.43	274	-05	# .7 2 0 1 7
+		extend right
+		8	9	6.55	024	+73	# .8 2 11 6.5 0
+		extend right
+		9	10	1.58	051	+44	# .9 0.4 0.5 0.6 6.55
+		extend right
+		10	11	2.46	148	+58	# .10 0 0.5 2 0.4
+		extend right
+		11	12	1.54	333	+61	# .11 0.7 1 0.4 1
+		extend right
+		12	13	2.77	354	-03	# .12 0.4 0 0.5 1
+		#crossed out leg 13 to 14
+		extend right
+		13	14	0.95	331	+42	# .13 0.5 0 0.6 1.0
+		extend right
+		14	15	2.28	046	+63	#.14 0.2 0.2 0.3 1.5
+		
+		#PAGE 2
+		extend left
+		15	16	5.11	016	+34	# .15 0.2 0.1 0.5 2.5
+		extend left
+		16	17	2.28	013	-10	# .16 2 0 1 1
+		extend left
+		17	18	3.76	069	+08	# .17 1 0 1 1.7
+		extend left
+		18	19	5.85	034	+57	# .18 1.5 0 3 1
+		extend left
+		19	20	3.90	292	+36	# .19 1.5 0 3 1
+	endcentreline
+	
+	
 endsurvey
 
 

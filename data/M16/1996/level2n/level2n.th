@@ -1,32 +1,32 @@
 
 survey level2n -title "System Migovec"
-
-    input "level2n-p.th2"
-
-    map mlevel2n-p -projection plan
-        level2n-1p
-    endmap
-
-    
-centreline
-    team "Colm Carroll" insts
-    team "James Hooper" notes
-    explo-team "Colm Carroll"
-    explo-team "James Hooper"
-    date 1996.07.28
-    explo-date 1996.07.28
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    2	1	7.49	091	-09	#Stn.1 is 2m from bottom of Faulty Towers rope
-    2	3	9.58	008	-02
-    4	3	22.47	134	12	#Stn.4 is Cairn before Challenger
-    ##########4	5	40	-	down	#this must be an error added after the end of 1996
-endcentreline
+	
+	input "level2n-p.th2"
+	
+	map m-level2n-p -projection plan
+		level2n-1p
+	endmap
+	
+	
+	centreline
+		team "Colm Carroll" insts
+		team "James Hooper" notes
+		explo-team "Colm Carroll"
+		explo-team "James Hooper"
+		date 1996.07.28
+		explo-date 1996.07.28
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		2	1	7.49	091	-09	#Stn.1 is 2m from bottom of Faulty Towers rope
+		2	3	9.58	008	-02
+		4	3	22.47	134	12	#Stn.4 is Cairn before Challenger
+		##########4	5	40	-	down	#this must be an error added after the end of 1996
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #

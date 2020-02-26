@@ -1,35 +1,35 @@
 survey dogfish -title "Dogfish"
 	input "dogfish-p.th2"
 	input "dogfish-e.th2"
-
-	map mdogfish-p -projection plan
+	
+	map m-dogfish-p -projection plan
 		dogfish-p1
 		dogfish-p2
 	endmap
 	map mdogfish-p1 -projection plan
 		dogfish-p1
 	endmap
-
+	
 	map mdogfish-p2 -projection plan
 		dogfish-p2
 	endmap
-
-	map mdogfish-e -projection extended
+	
+	map  m-dogfish-e -projection extended
 		dogfish-1e
 	endmap
-
-
-
+	
+	
+	
 	centreline
-		date 2017.07.18 
-		explo-date 2017.07.18 
-
+		date 2017.07.18
+		explo-date 2017.07.18
+		
 		team "Tanguy Racine" notes
 		team "Jarvist Frost" insts tape
-
+		
 		explo-team "Tanguy Racine"
 		explo-team "Jarvist Frost"
-
+		
 		#Page 1
 		extend right
 		6	7	4.70	107	-05
@@ -49,8 +49,8 @@ survey dogfish -title "Dogfish"
 		4	5	3.11	123	+59
 		extend right
 		5	6	2.14	172	+35
-
-		#NOTES 
+		
+		#NOTES
 		#STN1 is PSS at head of pitch - sound of water
 		#STN6 is PSS cairn in chamber
 		#STN10 is Hammerhead 2 stn24

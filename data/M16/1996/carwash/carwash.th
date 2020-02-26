@@ -1,49 +1,49 @@
 
 survey carwash -title "Bikini Carwash"
-
+	
 	input "carwash-p.th2"
-
-	map mcarwash-p -projection plan
+	
+	map m-carwash-p -projection plan
 		carwash-1p
 		carwash-2p
 		carwash-3p
 	endmap
-
+	
 	join carwash-1p carwash-2p
 	join carwash-2p carwash-3p
-
-centreline
-    team "James Evans" insts
-    team "Iain McKenna" notes
-    explo-team "James Evans"
-    explo-team "Iain McKenna"
-    date 1996.08.20
-    explo-date 1996
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino
-    1       2       5.08    346     26	#a pss on rock at top of xxx 
-    2       3       4.20    290     06
-    3       4       2.96    032     02
-    4       5       4.04    093     09
-    5       6       5.46    077     07	#a pss on wall towards water;
-    7       5       3.32    331     -18	#changed from 5	7	mje
-    7       8       1.29    211     43
-    8       9       3.26    158     -10
-    9       10      9.54    096     -18
-    10      11      22.18   220     38
-endcentreline
+	
+	centreline
+		team "James Evans" insts
+		team "Iain McKenna" notes
+		explo-team "James Evans"
+		explo-team "Iain McKenna"
+		date 1996.08.20
+		explo-date 1996
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino
+		1       2       5.08    346     26	#a pss on rock at top of xxx
+		2       3       4.20    290     06
+		3       4       2.96    032     02
+		4       5       4.04    093     09
+		5       6       5.46    077     07	#a pss on wall towards water;
+		7       5       3.32    331     -18	#changed from 5	7	mje
+		7       8       1.29    211     43
+		8       9       3.26    158     -10
+		9       10      9.54    096     -18
+		10      11      22.18   220     38
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #
 #;M18 Exhibition Rd to end of Bikini Carwash
 #
 #;Date: 20/8/96
-#;Instruments: James Evans 
+#;Instruments: James Evans
 #;Book: Iain McKenna
 #
 #;Data entered by C.Roberts 23/8/96
@@ -58,7 +58,7 @@ endsurvey
 #;*ref https://drive.google.com/open?id=0BxkZAUc06EK5UGdSekpxVjFrVzg
 #
 #*data normal from to tape compass clino
-#1       2       5.08    346     26	;a pss on rock at top of xxx 
+#1       2       5.08    346     26	;a pss on rock at top of xxx
 #2       3       4.20    290     06
 #3       4       2.96    032     02
 #4       5       4.04    093     09

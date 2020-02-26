@@ -1,203 +1,203 @@
 encoding  utf-8
 survey cloacamaxima
-  input "cloacamaximap.th2"
-  input "cloacamaxima-e.th2"
-
-  map mcloacamaxima-e -projection extended
-    cloacamaxima-e1
-    break
-    cloacamaxima-e3
-    break
-    cloacamaxima-e2
-    break
-    cloacamaxima-e4
-  endmap
-  
-  map mcloacamaxima-p -projection plan
-    mcloacamaxima-p1
-    mcloacamaxima-p2
-    mcloacamaxima-p3
-  endmap
-
-  map mcloacamaxima_low-p -projection plan
-    mcloacamaxima-p4
-    mcloacamaxima-p5
-    mcloacamaxima-p6
-  endmap
-
-  map mcloacamaxima-p1 -projection plan
-    cloacamaximap_1
-  endmap
-  
-  map mcloacamaxima-p2 -projection plan
-    cloacamaximap_2
-  endmap
-  
-  map mcloacamaxima-p3 -projection plan
-    cloacamaximap_3
-  endmap
-  
-  map mcloacamaxima-p4 -projection plan
-    cloacamaximap_4
-  endmap
-  
-  map mcloacamaxima-p5 -projection plan
-    cloacamaximap_5
-  endmap
-
-  map mcloacamaxima-p6 -projection plan
-    cloacamaximap_6
-  endmap
-  
-  join cloacamaximap_1 cloacamaximap_2
-  join cloacamaximap_2 cloacamaximap_3
-  join cloacamaximap_4 cloacamaximap_5
-  join cloacamaximap_6 cloacamaximap_5
-  join cloacamaximap_6 cloacamaximap_3
-
-  join cloacamaxima-e2 cloacamaxima-e4
-  join cloacamaxima-e2 cloacamaxima-e3
-  
-  centreline
-    date 2016.07.30
-    explo-date 2016.07.30
-    explo-team "Clare Tan"
-    explo-team "Tanguy Racine"
-    team "Clare Tan" insts notes
-    team "Tanguy Racine" insts notes
-    units length meters
-    units compass clino degrees
-
-    #PAGE 1
-    extend left
-    1  2  1.20  288  +03
-    extend vertical
-    2  3  30.10  -  down
-    extend left
-    4  1  5.34  220  -45
-    extend right
-    4  5  4.06  085  +09
-    extend left
-    6  5  4.38  214  -09
-    extend right
-    6  7  3.72  337  +06
-    extend left
-    8  7  4.62  273  -07
-    extend right
-    8  9  3.55  050  +23
-    extend left
-    10  9  3.65  162  -31
-    extend right
-    10  11  2.65  110  +01
-    extend left
-    12  11  7.39  233  -09
-    extend vertical
-    12  13  38.50  -  up
-
-    #PAGE 2
-    extend left
-    14  15  5.02  311  -02
-    extend left
-    15  16  11.80  322  -45
-    extend right
-    12  16  6.27  198  -05
-    extend right
-    12  17  8.31  017  +31
-    extend left
-    18  17  2.81  206  -10
-    extend right
-    18  19  7.77  026  +12
-    extend left
-    20  19  2.55  219  -11
-    extend right
-    20  21  5.60  139  +04
-    extend left
-    19  22  21.48  336  +08
-    extend right
-    23  22  5.77  181  -13
-    extend left
-    23  24  10.33  320  +09
-    extend right
-    25  24  4.72  123  -10
-
-    #PAGE 3
-    extend vertical
-    25  26  16.75  -  down
-    extend right
-    27  23  2.84  275  -07
-    extend left
-    27  28  3.00  357  +08
-    extend right
-    29  28  5.38  229  -20
-    extend left
-    29  30  4.41  014  +17
-    extend right
-    31  30  6.53  252  -14
-    extend left
-    31  32  2.29  329  +06
-    extend right
-    33  32  4.18  119  +64
-    extend left
-    33  34  5.70  023  +07
-    extend left
-    35  34  5.07  142  -33
-    extend right
-    35  36  6.00  015  +17
-    extend left
-    37  36  3.54  204  -22
-
-    #PAGE 4
-    extend right
-    37  38  1.96  305  +14
-    extend left
-    39  38  27.22  188  -14
-    extend right
-    39  40  8.58  013  +12
-    extend left
-    41  40  2.19  236  -16
-    extend right
-    41  42  9.08  020  +10
-    extend left
-    43  42  2.97  291  +31
-    extend right
-    43  44  1.61  070  -27
-    extend left
-    44  45  6.54  002  +16
-    extend right
-    46  45  4.04  188  -40
-    extend left
-    46  47  4.14  356  +17
-    flags duplicate
-    extend right
-    48  47  2.50  117  +18
-    extend left
-    48  49  1.92  304  +06
-    extend right
-    50  49  3.82  154  -06
-
-    #PAGE 5
-    extend left
-    50  51  3.95  311  +07
-    extend right
-    52  51  12.48  175  -68
-    extend left
-    52  53  6.04  325  -30
-
-
-    flags not duplicate
-#NOTES
-#Stn1 is PSS
-#Stn12 is PSS in chamber in aven (chamber is 20*10 meters)
-#Stn12 to 13 pseudo leg up aven
-#Stn19 is PSS at junction
-#Stn21 is PSS at bottom of aven
-#Stn23 is junction
-#Stn25 is PSS at pitch head
-#Stn34 is PSS in little chamber
-#Stn49 is PSS
-#Stn53 is "Tetley in Iztok Stn27 6/8/07"
-endcentreline
-
-
+	input "cloacamaximap.th2"
+	input "cloacamaxima-e.th2"
+	
+	map  m-cloacamaxima-e -projection extended
+		cloacamaxima-e1
+		break
+		cloacamaxima-e3
+		break
+		cloacamaxima-e2
+		break
+		cloacamaxima-e4
+	endmap
+	
+	map m-cloacamaxima-p -projection plan
+		mcloacamaxima-p1
+		mcloacamaxima-p2
+		mcloacamaxima-p3
+	endmap
+	
+	map m-cloacamaxima_low-p -projection plan
+		mcloacamaxima-p4
+		mcloacamaxima-p5
+		mcloacamaxima-p6
+	endmap
+	
+	map mcloacamaxima-p1 -projection plan
+		cloacamaximap_1
+	endmap
+	
+	map mcloacamaxima-p2 -projection plan
+		cloacamaximap_2
+	endmap
+	
+	map mcloacamaxima-p3 -projection plan
+		cloacamaximap_3
+	endmap
+	
+	map mcloacamaxima-p4 -projection plan
+		cloacamaximap_4
+	endmap
+	
+	map mcloacamaxima-p5 -projection plan
+		cloacamaximap_5
+	endmap
+	
+	map mcloacamaxima-p6 -projection plan
+		cloacamaximap_6
+	endmap
+	
+	join cloacamaximap_1 cloacamaximap_2
+	join cloacamaximap_2 cloacamaximap_3
+	join cloacamaximap_4 cloacamaximap_5
+	join cloacamaximap_6 cloacamaximap_5
+	join cloacamaximap_6 cloacamaximap_3
+	
+	join cloacamaxima-e2 cloacamaxima-e4
+	join cloacamaxima-e2 cloacamaxima-e3
+	
+	centreline
+		date 2016.07.30
+		explo-date 2016.07.30
+		explo-team "Clare Tan"
+		explo-team "Tanguy Racine"
+		team "Clare Tan" insts notes
+		team "Tanguy Racine" insts notes
+		units length meters
+		units compass clino degrees
+		
+		#PAGE 1
+		extend left
+		1  2  1.20  288  +03
+		extend vertical
+		2  3  30.10  -  down
+		extend left
+		4  1  5.34  220  -45
+		extend right
+		4  5  4.06  085  +09
+		extend left
+		6  5  4.38  214  -09
+		extend right
+		6  7  3.72  337  +06
+		extend left
+		8  7  4.62  273  -07
+		extend right
+		8  9  3.55  050  +23
+		extend left
+		10  9  3.65  162  -31
+		extend right
+		10  11  2.65  110  +01
+		extend left
+		12  11  7.39  233  -09
+		extend vertical
+		12  13  38.50  -  up
+		
+		#PAGE 2
+		extend left
+		14  15  5.02  311  -02
+		extend left
+		15  16  11.80  322  -45
+		extend right
+		12  16  6.27  198  -05
+		extend right
+		12  17  8.31  017  +31
+		extend left
+		18  17  2.81  206  -10
+		extend right
+		18  19  7.77  026  +12
+		extend left
+		20  19  2.55  219  -11
+		extend right
+		20  21  5.60  139  +04
+		extend left
+		19  22  21.48  336  +08
+		extend right
+		23  22  5.77  181  -13
+		extend left
+		23  24  10.33  320  +09
+		extend right
+		25  24  4.72  123  -10
+		
+		#PAGE 3
+		extend vertical
+		25  26  16.75  -  down
+		extend right
+		27  23  2.84  275  -07
+		extend left
+		27  28  3.00  357  +08
+		extend right
+		29  28  5.38  229  -20
+		extend left
+		29  30  4.41  014  +17
+		extend right
+		31  30  6.53  252  -14
+		extend left
+		31  32  2.29  329  +06
+		extend right
+		33  32  4.18  119  +64
+		extend left
+		33  34  5.70  023  +07
+		extend left
+		35  34  5.07  142  -33
+		extend right
+		35  36  6.00  015  +17
+		extend left
+		37  36  3.54  204  -22
+		
+		#PAGE 4
+		extend right
+		37  38  1.96  305  +14
+		extend left
+		39  38  27.22  188  -14
+		extend right
+		39  40  8.58  013  +12
+		extend left
+		41  40  2.19  236  -16
+		extend right
+		41  42  9.08  020  +10
+		extend left
+		43  42  2.97  291  +31
+		extend right
+		43  44  1.61  070  -27
+		extend left
+		44  45  6.54  002  +16
+		extend right
+		46  45  4.04  188  -40
+		extend left
+		46  47  4.14  356  +17
+		flags duplicate
+		extend right
+		48  47  2.50  117  +18
+		extend left
+		48  49  1.92  304  +06
+		extend right
+		50  49  3.82  154  -06
+		
+		#PAGE 5
+		extend left
+		50  51  3.95  311  +07
+		extend right
+		52  51  12.48  175  -68
+		extend left
+		52  53  6.04  325  -30
+		
+		
+		flags not duplicate
+		#NOTES
+		#Stn1 is PSS
+		#Stn12 is PSS in chamber in aven (chamber is 20*10 meters)
+		#Stn12 to 13 pseudo leg up aven
+		#Stn19 is PSS at junction
+		#Stn21 is PSS at bottom of aven
+		#Stn23 is junction
+		#Stn25 is PSS at pitch head
+		#Stn34 is PSS in little chamber
+		#Stn49 is PSS
+		#Stn53 is "Tetley in Iztok Stn27 6/8/07"
+	endcentreline
+	
+	
 endsurvey
 

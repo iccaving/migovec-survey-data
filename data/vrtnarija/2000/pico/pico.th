@@ -1,45 +1,45 @@
 survey pico -title "Pico pitch"
-
+	
 	input pico-p.th2
-
-	map mpico-p -projection plan
+	
+	map m-pico-p -projection plan
 		mpico-p1
 		mpico-p2
 		mpico-p3
 		mpico-p4
 		mpico-p5
 	endmap
-
+	
 	map mpico-p1 -projection plan
 		pico-p1
 	endmap
-
+	
 	map mpico-p2 -projection plan
 		pico-p2
 	endmap
-
+	
 	map mpico-p3 -projection plan
 		pico-p3
 	endmap
-
+	
 	map mpico-p4 -projection plan
 		pico-p4
 	endmap
 	map mpico-p5 -projection plan
 		pico-p5
 	endmap
-
-
-	centreline	
+	
+	
+	centreline
 		date 2000.07.28
 		explo-date 2000.07.28
-
+		
 		team "Pete Jurd" insts tape
 		team "Jan Evetts" notes
-
+		
 		explo-team "Jan Evetts"
 		explo-team "Jan Evetts"
-
+		
 		1	2	17.20	-	up	#stn 1 is bottom of rope at base of second pitch after pico pot, stn 2 is bolt at top of this pitch (right hand side wall)
 		2	3	6.60	344	1
 		3	4	7.40	340	43
@@ -50,8 +50,8 @@ survey pico -title "Pico pitch"
 		8	9	17.50	-	up
 		9	10	41.20	-	up	#stn 10 is first rebelay bolt
 		10	11	6.40	174	47
-		11	12	1.80	160	9	
+		11	12	1.80	160	9
 		12	13	2.30	089	12	#stn 13 is large cairn pss at top of pico
-
+		
 	endcentreline
 endsurvey

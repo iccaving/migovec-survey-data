@@ -5,7 +5,7 @@ input ../layout/map2.th
 input ../layout/map1.th
 input ../layout/layout_tanguy_basic_1.th
 
-select m17-full-p@M17
+select m-17-full-p@M17
 
 #export map -projection extended -o ../outputs/M17_extended.pdf -layout map2 -layout-debug station-names
 

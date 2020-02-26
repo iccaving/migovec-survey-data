@@ -2,53 +2,53 @@ survey snow_cold -title "Planika lower chamber"
 	input snow_cold-p.th2
 	input snow_cold-e.th2
 	
-	map msnow_cold-p -projection plan
+	map m-snow_cold-p -projection plan
 		msnow_cold-p1
 		msnow_cold-p2
 		msnow_cold-p3
 		msnow_cold-p4
 	endmap
-
+	
 	map msnow_cold-p1 -projection plan
 		snow_cold-p1
 	endmap
-
+	
 	map msnow_cold-p2 -projection plan
 		snow_cold-p2
 	endmap
-
+	
 	map msnow_cold-p3 -projection plan
 		snow_cold-p3
 	endmap
-
+	
 	map msnow_cold-p4 -projection plan
 		snow_cold-p4
 	endmap
-
-	map msnow_cold-e -projection extended
+	
+	map  m-snow_cold-e -projection extended
 		msnow_cold-e1
 	endmap
-
+	
 	map msnow_cold-e1 -projection extended
 		snow_cold-e1
 	endmap
-
+	
 	centreline
 		date 2007.08.05
 		explo-date 2007.08.05
-
+		
 		team "Jarvist Frost" insts notes
 		team "Jana Čarga" insts tape
 		team "Ben Banfield" insts
-
+		
 		explo-team "Jarvist Frost"
 		explo-team "Jana Čarga"
 		explo-team "Ben	Banfield"
-
+		
 		1	2	2.50	116	-18	#	1 0 0 1.5	# .1 is PSS 18 of Planika survey
 		2	3	4.09	114	-33	#	0.5 0 0.5 1
 		3	4	5.03	-	down	#	0.5 0 0.5 n/a
-		4	5	4.00	285	+20	# 	1 1.5 n/a 0 # made up tape length dogleg to alcove under pitch 
+		4	5	4.00	285	+20	# 	1 1.5 n/a 0 # made up tape length dogleg to alcove under pitch
 		4	6	4.45	008	+39	#	0.5 0.5 1 0.5
 		6	7	6.24	286	-19	#	2 0 0 2		# PSS pencil mark on nodule + paper note nearby in crack
 		8	7	4.30	219	-17	#	4 0 1.5 1	# 7 is bolt across the snow slope

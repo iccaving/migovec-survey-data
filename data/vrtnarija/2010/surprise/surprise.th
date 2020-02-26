@@ -1,43 +1,43 @@
 
 survey surprise -title "Surprise"
-
-input surprise-p.th2
-
-map msurprise-p -projection plan 
-    surprise-1p
-endmap
-
-centreline
-    team "Gergely Ambrus" insts
-    team "Nicolas Kral" notes
-    explo-team "Gergely Ambrus"
-    explo-team "Nicolas Kral"
-    date 2010.7.28
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    3	1	5.18	52	-12
-    4	3	8.99	32	+20
-    5	4	2.88	19	-10
-    6	5	3.81	47	-32
-    6	7	15.27	188	+2
-    8	6	8.25	160	-33
-    8	9	8.07	34	11
-    10	8	11.64	78	14
-    11	10	3.81	113	-1
-    11	12	3.34	112	44
-    #1	1	2	2	0
-    #3	0	1	0.5	0
-    #4	1	1	1	0
-    #5	1	1	1	0
-    #6	2	4	4	0	
-    #7	2	0	1	1	
-    #8	4	4	6	0	
-    #9	0	0	3	2	
-    #10	2	1	0.5	0
-    #11	1	1	1	0
-    #12	6	3	1	1
-endcentreline
+	
+	input surprise-p.th2
+	
+	map m-surprise-p -projection plan
+		surprise-1p
+	endmap
+	
+	centreline
+		team "Gergely Ambrus" insts
+		team "Nicolas Kral" notes
+		explo-team "Gergely Ambrus"
+		explo-team "Nicolas Kral"
+		date 2010.7.28
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		3	1	5.18	52	-12
+		4	3	8.99	32	+20
+		5	4	2.88	19	-10
+		6	5	3.81	47	-32
+		6	7	15.27	188	+2
+		8	6	8.25	160	-33
+		8	9	8.07	34	11
+		10	8	11.64	78	14
+		11	10	3.81	113	-1
+		11	12	3.34	112	44
+		#1	1	2	2	0
+		#3	0	1	0.5	0
+		#4	1	1	1	0
+		#5	1	1	1	0
+		#6	2	4	4	0
+		#7	2	0	1	1
+		#8	4	4	6	0
+		#9	0	0	3	2
+		#10	2	1	0.5	0
+		#11	1	1	1	0
+		#12	6	3	1	1
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -79,13 +79,13 @@ endsurvey
 #;3	0	1	0.5	0
 #;4	1	1	1	0
 #;5	1	1	1	0
-#;6	2	4	4	0	
-#;7	2	0	1	1	
-#;8	4	4	6	0	
-#;9	0	0	3	2	
+#;6	2	4	4	0
+#;7	2	0	1	1
+#;8	4	4	6	0
+#;9	0	0	3	2
 #;10	2	1	0.5	0
 #;11	1	1	1	0
-#;12	6	3	1	1			
+#;12	6	3	1	1
 #*end surprise
 #; NOTES
 #;1 is pps cairn at top of pitch

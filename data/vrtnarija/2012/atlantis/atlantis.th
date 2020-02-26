@@ -1,53 +1,53 @@
 
 survey atlantis -title "Atlantis"
-
-input atlantis-p.th2
-
-map matlantis-p -projection plan 
-    atlantis-1p
-endmap
-
-centreline
-    team "Rhys Tyers" insts
-    team "Gergely Ambrus" notes
-    explo-team "Rhys Tyers"
-    explo-team "Gergely Ambrus"
-    date 2012.7.27
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	16.83	198	-16
-    3	2	14.72	212	-17
-    4	3	17.88	180	-8
-    5	4	15.76	206	-16
-    6	5	20.75	183	-10
-    7	6	18.12	193	-7
-    8	7	14.40	140	-6
-    9	8	29.80	181	-5
-    10	9	13.87	168	0
-    11	10	8.54	132	+6
-    12	11	6.58	182	-7
-    13	12	11.91	207	-17
-    14	13	10.96	163	+3
-    15	14	7.83	111	+12
-    16	15	9.07	169	+2
-    17	16	11.95	177	-14
-    18	17	13.18	218	-18
-    19	18	26.61	195	-14
-    20	19	8.79	143	+6
-    21	20	11.84	090	+18
-    22	21	13.81	175	-4
-    23	22	9.27	160	-3
-    24	23	25.04	179	-8
-    25	24	14.27	183	-14
-    26	25	10.31	173	-24
-    27	26	20.24	165	+7
-    28	27	7.32	156	-2
-    29	28	5.34	128	+4
-    30	29	4.12	152	+12
-    31	30	4.38	121	+22
-    32	31	2.48	058	+10
-endcentreline
+	
+	input atlantis-p.th2
+	
+	map m-atlantis-p -projection plan
+		atlantis-1p
+	endmap
+	
+	centreline
+		team "Rhys Tyers" insts
+		team "Gergely Ambrus" notes
+		explo-team "Rhys Tyers"
+		explo-team "Gergely Ambrus"
+		date 2012.7.27
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	16.83	198	-16
+		3	2	14.72	212	-17
+		4	3	17.88	180	-8
+		5	4	15.76	206	-16
+		6	5	20.75	183	-10
+		7	6	18.12	193	-7
+		8	7	14.40	140	-6
+		9	8	29.80	181	-5
+		10	9	13.87	168	0
+		11	10	8.54	132	+6
+		12	11	6.58	182	-7
+		13	12	11.91	207	-17
+		14	13	10.96	163	+3
+		15	14	7.83	111	+12
+		16	15	9.07	169	+2
+		17	16	11.95	177	-14
+		18	17	13.18	218	-18
+		19	18	26.61	195	-14
+		20	19	8.79	143	+6
+		21	20	11.84	090	+18
+		22	21	13.81	175	-4
+		23	22	9.27	160	-3
+		24	23	25.04	179	-8
+		25	24	14.27	183	-14
+		26	25	10.31	173	-24
+		27	26	20.24	165	+7
+		28	27	7.32	156	-2
+		29	28	5.34	128	+4
+		30	29	4.12	152	+12
+		31	30	4.38	121	+22
+		32	31	2.48	058	+10
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -101,7 +101,7 @@ endsurvey
 #31	30	4.38	121	+22
 #32	31	2.48	058	+10
 #
-#;NOTES 
+#;NOTES
 #;Flip of page 1
 #;Sta 1 is PSS
 #

@@ -1,23 +1,23 @@
 survey zimmer -title "Zimmer"
 	input zimmer-p.th2
-
-	map mzimmer-p -projection plan
+	
+	map m-zimmer-p -projection plan
 		zimmer-p1
 	endmap
 	
 	centreline
 		date 2001.08.08
 		explo-date 2001.08.08
-
+		
 		team "Jim Evans" notes
 		team "Mark Evans" tape
 		team "Iain Mckenna" insts
-
+		
 		explo-team "Jim Evans"
 		explo-team "Mark Evans"
 		explo-team "Iain Mckenna"
-
+		
 		1	2	2.40 	084	05
-		2	3	30.00	-	down	#(it really is 30.00m!) stn 3 is carbide mark on ledge	
+		2	3	30.00	-	down	#(it really is 30.00m!) stn 3 is carbide mark on ledge
 	endcentreline
 endsurvey

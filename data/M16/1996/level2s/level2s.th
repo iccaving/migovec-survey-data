@@ -1,40 +1,40 @@
 
 survey level2s -title "System Migovec"
-    input "level2s-p.th2"
-
-    map mlevel2s-p -projection plan
-    level2s-1p
-    level2s-2p
-    endmap
-
-centreline
-    team "Tim Wright" insts
-    team "James Hooper" notes
-    explo-team "Tim Wright"
-    explo-team "James Hooper"
-    date 1996.07.25
-    explo-date 1996.07.25
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino
-    1	2	13.40	339	12	#Stn.1 is Cairn at top of Titanic
-    2	3	10.49	261	-10
-    3	4	22.53	352	13
-    4	5	6.74	014	-06	#Stn.4 is Cairn at top of chamber/start of Level 2 South
-    5	6	14.40	328	-30
-    6	7	21.43	-	up	#Stn. 6 is 2m up from bottom of rope
-    7	8	6.60	341	50	#stn.7 is top bolt
-    8	9	4.55	013	79
-    9	10	2.97	338	42
-    10	11	6.04	337	22	#Stn.10 is PSS on top of big rock
-    11	12	11.89	027	61
-    12	13	4.95	034	13
-    13	14	6.73	002	43	#stn.14 is void.6
-endcentreline
+	input "level2s-p.th2"
+	
+	map m-level2s-p -projection plan
+		level2s-1p
+		level2s-2p
+	endmap
+	
+	centreline
+		team "Tim Wright" insts
+		team "James Hooper" notes
+		explo-team "Tim Wright"
+		explo-team "James Hooper"
+		date 1996.07.25
+		explo-date 1996.07.25
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino
+		1	2	13.40	339	12	#Stn.1 is Cairn at top of Titanic
+		2	3	10.49	261	-10
+		3	4	22.53	352	13
+		4	5	6.74	014	-06	#Stn.4 is Cairn at top of chamber/start of Level 2 South
+		5	6	14.40	328	-30
+		6	7	21.43	-	up	#Stn. 6 is 2m up from bottom of rope
+		7	8	6.60	341	50	#stn.7 is top bolt
+		8	9	4.55	013	79
+		9	10	2.97	338	42
+		10	11	6.04	337	22	#Stn.10 is PSS on top of big rock
+		11	12	11.89	027	61
+		12	13	4.95	034	13
+		13	14	6.73	002	43	#stn.14 is void.6
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #

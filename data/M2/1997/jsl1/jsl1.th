@@ -1,24 +1,24 @@
 survey jsl1 -title "JSL1"
-
-input "jsl1-p.th2"
-
-map mjsl1-p -projection plan
-	jsl1-1p
-endmap
-
-centreline
-team "Unknown" insts
-team "Unknown" notes
-explo-team "Unknown"
-explo-team "Unknown"
-date 1976		
-
-units length meters
-units compass clino degrees
-data normal from to tape compass clino ignoreall # Default
-d	a	10.06618721	334.7222778	60.37121866
-a	b	3.337757481	347.0053832	-2.146245699
-b	c	7.130480348	300.5792269	-63.386558
-
-endcentreline
+	
+	input "jsl1-p.th2"
+	
+	map m-jsl1-p -projection plan
+		jsl1-1p
+	endmap
+	
+	centreline
+		team "Unknown" insts
+		team "Unknown" notes
+		explo-team "Unknown"
+		explo-team "Unknown"
+		date 1976
+		
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		d	a	10.06618721	334.7222778	60.37121866
+		a	b	3.337757481	347.0053832	-2.146245699
+		b	c	7.130480348	300.5792269	-63.386558
+		
+	endcentreline
 endsurvey

@@ -1,26 +1,26 @@
 
 survey touchingthevoid -title "Touching The Void"
-
-input touchingthevoid-p.th2
-
-map mtouchingthevoid-p -projection plan
-    touchingthevoid-1p
-endmap
-
-centreline
-    team "Gergely" insts
-    team "Gergely" notes
-    explo-team "Gergely"
-    explo-team "Gergely"
-    date 2014.08.07
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	15	297	+26 	#	10	2	5	20
-    2	3	20	-	up  	#	10	10	20	20
-    2	4	20	-	down
-    5	1	24.9	285	+47
-endcentreline
+	
+	input touchingthevoid-p.th2
+	
+	map m-touchingthevoid-p -projection plan
+		touchingthevoid-1p
+	endmap
+	
+	centreline
+		team "Gergely" insts
+		team "Gergely" notes
+		explo-team "Gergely"
+		explo-team "Gergely"
+		date 2014.08.07
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	15	297	+26 	#	10	2	5	20
+		2	3	20	-	up  	#	10	10	20	20
+		2	4	20	-	down
+		5	1	24.9	285	+47
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -45,11 +45,11 @@ endsurvey
 #2	4	20	-	down
 #5	1	24.9	285	+47
 #
-#; L R U D at station 1 - 
-#;NOTES 
+#; L R U D at station 1 -
+#;NOTES
 #;station 5 is sic semper tyrannis 25
 #;leg 5->1 was 1->5 on original survey - corrected as data was entered
-#;same chamber as helms deep 
+#;same chamber as helms deep
 #
 #;LRUD Data as below - introduce a new *data line if there's breaks in the survey
 #;*data passage station left right up down ignoreall

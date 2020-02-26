@@ -1,12 +1,12 @@
 
 survey Prisoners -title "Name Prisoners of Azkaban"
-
-input prisoners-p.th2
-
-map mprisoners-p -projection plan
-    prisoners-1p
-endmap
-
+	
+	input prisoners-p.th2
+	
+	map m-prisoners-p -projection plan
+		prisoners-1p
+	endmap
+	
 	centreline
 		team "Adrian Hooper" insts
 		team "Martin [Mc Gowan]" notes

@@ -1,120 +1,120 @@
 encoding  utf-8
 survey galerija
-  input "galerijap.th2"
-  input "galerija-e1.th2"
-  input "galerija-e2.th2"
-
-  map mgalerija-e -projection extended
-    galerija-e1
-    break
-    galerija-2e
-    galerija-e3
-  endmap
-
-  
-  map mgalerijap_3 -projection plan
-    galerijap_3  
-  endmap
-  
-  map mgalerijap_1 -projection plan
-    galerijap_1  
-  endmap
-  
-  map mgalerijap_2 -projection plan
-    galerijap_2  
-  endmap
-  
-  map mgalerijap_4 -projection plan
-    galerijap_4  
-  endmap
-  
-  map mgalerijap_5 -projection plan
-    galerijap_5  
-  endmap
-  
-  map mgalerijap_6 -projection plan
-    galerijap_6  
-  endmap
-  
-  map mgalerija-p -projection plan
-    mgalerijap_1
-    mgalerijap_2
-    mgalerijap_3
-    mgalerijap_4
-    #mgalerijap_5
-    #mgalerijap_6
-  endmap
-  
-
-  join galerijap_1 galerijap_2
-  #join galerijap_4 galerijap_5
-  centreline
-    date 2001.09.21
-    explo-date 2001.09.21
-    team "Tomaž Tivadar" insts
-    team "Tomaž Kragelj" notes
-
-    explo-team "Tomaž Tivadar"
-    explo-team "Tomaž Kragelj"
-    
-    units length meters
-    units compass clino degrees
-    
-    flags splay
-    extend ignore
-1	2	27.6	0	+90	#stn 1 Rokovo brezno
-    flags not splay
-    extend left
-2	3	2.05	13	+39	#stn 3 PSS svedrovec vijola konec risticeve vizure
-extend left
-3	4	5.15	23	36	
-#4a	5	8.55	38	-18
-extend left
-4	5	3.9	44	9
-extend left
-5	6	5.05	338	30
-extend left
-6	7	8.1	33	2
-extend left
-7	8	6.05	12	32
-extend left	
-8	9	8.7	73	-13	#9 na kamnu pri robu jezera
-9	10	7.95	46	24.5
-10	11	14.05	14	-1.5	#pss papir s podatki
-extend left
-11	12	16.7	63	2
-extend left
-12	13	11.2	86	6
-extend left
-13	14	12.65	78	-3.5
-extend left
-14	15	12.3	24	0
-extend left
-15	16	4.85	51	35
-extend left
-16	17	4.5	100	0	#direkt pod strikom drugega brezna v galeriji
-17	18	21.3	0	90	#pss svedrovc
-extend right
-18	19	4.3	0	68	#pss svedrovc
-extend right
-19	20	10.55	17	3	
-extend right
-20	21	5.5	0	90	#prvo brezno v galeriji
-extend right
-21	22	5.75	253	44
-extend right
-22	23	6.45	317	3	#tunel
-extend right
-23	24	7.5	331	17
-extend right
-24	25	5.8	282	-4
-extend left	#25 pss
-26	25	5.0	52	3
-extend left
-26	27	10	302	24
-extend left
-27	28	3.65	218	0
-extend right
-28	29	3.7	126	0	#mangiare puscica
-  endcentreline
+	input "galerijap.th2"
+	input "galerija-e1.th2"
+	input "galerija-e2.th2"
+	
+	map  m-galerija-e -projection extended
+		galerija-e1
+		break
+		galerija-2e
+		galerija-e3
+	endmap
+	
+	
+	map mgalerijap_3 -projection plan
+		galerijap_3
+	endmap
+	
+	map mgalerijap_1 -projection plan
+		galerijap_1
+	endmap
+	
+	map mgalerijap_2 -projection plan
+		galerijap_2
+	endmap
+	
+	map mgalerijap_4 -projection plan
+		galerijap_4
+	endmap
+	
+	map mgalerijap_5 -projection plan
+		galerijap_5
+	endmap
+	
+	map mgalerijap_6 -projection plan
+		galerijap_6
+	endmap
+	
+	map m-galerija-p -projection plan
+		mgalerijap_1
+		mgalerijap_2
+		mgalerijap_3
+		mgalerijap_4
+		#mgalerijap_5
+		#mgalerijap_6
+	endmap
+	
+	
+	join galerijap_1 galerijap_2
+	#join galerijap_4 galerijap_5
+	centreline
+		date 2001.09.21
+		explo-date 2001.09.21
+		team "Tomaž Tivadar" insts
+		team "Tomaž Kragelj" notes
+		
+		explo-team "Tomaž Tivadar"
+		explo-team "Tomaž Kragelj"
+		
+		units length meters
+		units compass clino degrees
+		
+		flags splay
+		extend ignore
+		1	2	27.6	0	+90	#stn 1 Rokovo brezno
+		flags not splay
+		extend left
+		2	3	2.05	13	+39	#stn 3 PSS svedrovec vijola konec risticeve vizure
+		extend left
+		3	4	5.15	23	36
+		#4a	5	8.55	38	-18
+		extend left
+		4	5	3.9	44	9
+		extend left
+		5	6	5.05	338	30
+		extend left
+		6	7	8.1	33	2
+		extend left
+		7	8	6.05	12	32
+		extend left
+		8	9	8.7	73	-13	#9 na kamnu pri robu jezera
+		9	10	7.95	46	24.5
+		10	11	14.05	14	-1.5	#pss papir s podatki
+		extend left
+		11	12	16.7	63	2
+		extend left
+		12	13	11.2	86	6
+		extend left
+		13	14	12.65	78	-3.5
+		extend left
+		14	15	12.3	24	0
+		extend left
+		15	16	4.85	51	35
+		extend left
+		16	17	4.5	100	0	#direkt pod strikom drugega brezna v galeriji
+		17	18	21.3	0	90	#pss svedrovc
+		extend right
+		18	19	4.3	0	68	#pss svedrovc
+		extend right
+		19	20	10.55	17	3
+		extend right
+		20	21	5.5	0	90	#prvo brezno v galeriji
+		extend right
+		21	22	5.75	253	44
+		extend right
+		22	23	6.45	317	3	#tunel
+		extend right
+		23	24	7.5	331	17
+		extend right
+		24	25	5.8	282	-4
+		extend left	#25 pss
+		26	25	5.0	52	3
+		extend left
+		26	27	10	302	24
+		extend left
+		27	28	3.65	218	0
+		extend right
+		28	29	3.7	126	0	#mangiare puscica
+	endcentreline
 endsurvey

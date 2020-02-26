@@ -1,41 +1,41 @@
 survey hammerhead3 -title "Hammerhead 3"
-
+	
 	input "hammerhead3-p.th2"
-    input "hammerhead3-e.th2"
-
-	map mhammerhead3-p -projection plan
+	input "hammerhead3-e.th2"
+	
+	map m-hammerhead3-p -projection plan
 		hammerhead3-p1
 	endmap
-
-	map mhammerhead3-e -projection extended
+	
+	map  m-hammerhead3-e -projection extended
 		hammerhead3-1e
 	endmap
-
+	
 	centreline
-	date 2017.07.19
-	explo-date 2017.07.19
-
-	team "Tanguy Racine" notes
-	team "Jarvist Frost" tape insts
-
-	explo-team "Tanguy Racine"
-	explo-team "Jarvist Frost"
-
-	#Data on 1 page
-
-	#PAGE 1/1
-	extend vertical
-	1	2	8.76	-	UP
-	extend right
-	2	3	3.75	016	+32
-	extend vertical
-	3	4	2.54	-	UP
-	extend vertical
-	4	5	7.67	018	+14
-
+		date 2017.07.19
+		explo-date 2017.07.19
+		
+		team "Tanguy Racine" notes
+		team "Jarvist Frost" tape insts
+		
+		explo-team "Tanguy Racine"
+		explo-team "Jarvist Frost"
+		
+		#Data on 1 page
+		
+		#PAGE 1/1
+		extend vertical
+		1	2	8.76	-	UP
+		extend right
+		2	3	3.75	016	+32
+		extend vertical
+		3	4	2.54	-	UP
+		extend vertical
+		4	5	7.67	018	+14
+		
 	endcentreline
-
-	#NOTES 
+	
+	#NOTES
 	#STN1 is at bottom of boulder choke
 	#STN 2 is PSS at head of pitch through boulders
 	#STN5 is Hammerhead 2 stn 14 JH/JW middle of large boulder chamber

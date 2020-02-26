@@ -1,62 +1,62 @@
 encoding  utf-8
 survey hotmk #the hall of the mountain king
-
-  input "hall_of_the_mountain_king-1p.th2"
-  input "hall_of_the_mountain_king-e.th2"
-
-  map mhall_of_the_mountain_king-e -projection extended
-    hall_of_the_mountain_king-e1
-    hall_of_the_mountain_king-e2
-  endmap
-  
-  map mhotmk-p -projection plan
-    mhotmk-p2
-    mhotmk-p1
-  endmap
-
-  map mhotmk-p1 -projection plan
-    hotmk-1p
-  endmap
-
-  map mhotmk-p2 -projection plan
-    hotmk-2p
-  endmap
-
-  join hotmk-1p hotmk-2p
-
-
-  
-  centreline
-    date 2016.07.22
-    explo-date 2016.07.22
-
-    explo-team "Jack Hare" 
-    explo-team "Tanguy Racine" 
-    explo-team "William Scott"
-    explo-team "Andrej Fratnik"
-
-    team "William Scott" insts notes
-    team "Jack Hare" notes
-    team "Andrej Fratnik" insts
-
-    #Page 1/1
-    extend vertical
-    1 2 7.00  116 +46
-    extend right
-    2 3 4.73  041 +06
-    3 4 3.06  118 +01
-    4 5 17.00 062 -37
-    5 6 5.20  029 +03
-    6 7 13.00 060 -22
-    7 8 13.01 011 +18
-    8 9 15.00 031 +71
-    extend left
-    9 10  21.30 028 +82
-    extend left
-    10  11  2.00  349 +04
-    extend left
-    11  12  2.70  044 +12
-  endcentreline
-
+	
+	input "hall_of_the_mountain_king-1p.th2"
+	input "hall_of_the_mountain_king-e.th2"
+	
+	map  m-hall_of_the_mountain_king-e -projection extended
+		hall_of_the_mountain_king-e1
+		hall_of_the_mountain_king-e2
+	endmap
+	
+	map m-hotmk-p -projection plan
+		mhotmk-p2
+		mhotmk-p1
+	endmap
+	
+	map mhotmk-p1 -projection plan
+		hotmk-1p
+	endmap
+	
+	map mhotmk-p2 -projection plan
+		hotmk-2p
+	endmap
+	
+	join hotmk-1p hotmk-2p
+	
+	
+	
+	centreline
+		date 2016.07.22
+		explo-date 2016.07.22
+		
+		explo-team "Jack Hare"
+		explo-team "Tanguy Racine"
+		explo-team "William Scott"
+		explo-team "Andrej Fratnik"
+		
+		team "William Scott" insts notes
+		team "Jack Hare" notes
+		team "Andrej Fratnik" insts
+		
+		#Page 1/1
+		extend vertical
+		1 2 7.00  116 +46
+		extend right
+		2 3 4.73  041 +06
+		3 4 3.06  118 +01
+		4 5 17.00 062 -37
+		5 6 5.20  029 +03
+		6 7 13.00 060 -22
+		7 8 13.01 011 +18
+		8 9 15.00 031 +71
+		extend left
+		9 10  21.30 028 +82
+		extend left
+		10  11  2.00  349 +04
+		extend left
+		11  12  2.70  044 +12
+	endcentreline
+	
 endsurvey
 

@@ -1,28 +1,28 @@
 
 survey jericho2 -title "Jericho 2"
-input jericho2-p.th2
-
-map mjericho2-p -projection plan
-    jericho2-1p
-endmap
-
-centreline
-    team "Tanguy Racine" insts
-    team "Sam Page" notes
-    explo-team "Tanguy Racine"
-    explo-team "Sam Page"
-    date 2014.7.26
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	11.3	344	-04
-    3	2	3.48	186	-14
-    3	4	5.75	330	-03
-    5	2	3.21	208	+66
-    6	5	7.09	345	-05
-    7	5	4.10	164	+37
-    8	7	5.63	158	+01
-endcentreline
+	input jericho2-p.th2
+	
+	map m-jericho2-p -projection plan
+		jericho2-1p
+	endmap
+	
+	centreline
+		team "Tanguy Racine" insts
+		team "Sam Page" notes
+		explo-team "Tanguy Racine"
+		explo-team "Sam Page"
+		date 2014.7.26
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	11.3	344	-04
+		3	2	3.48	186	-14
+		3	4	5.75	330	-03
+		5	2	3.21	208	+66
+		6	5	7.09	345	-05
+		7	5	4.10	164	+37
+		8	7	5.63	158	+01
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -47,8 +47,8 @@ endsurvey
 #5	2	3.21	208	+66
 #6	5	7.09	345	-05
 #7	5	4.10	164	+37
-#8	7	5.63	158	+01	
-#;NOTES 
+#8	7	5.63	158	+01
+#;NOTES
 #;holes at 1 and 4 drop thrugh many layers of rift
 #;hole at 6 drops 2m and continues, not free climbable
 #;station 6 is pss, undropped hole

@@ -1,43 +1,43 @@
 
 survey mushroom -title "mushroom passage leading off from below cactus junction"
-    
-    input "mushroom-p.th2"
-
-    map mmushroom-p -projection plan
-        mushroom-1p
-        mushroom-2p
-    endmap
-
-    join mushroom-1p mushroom-2p
-
-
-centreline
-    team "James Hooper" insts notes
-    team "Dave Wilson" tape
-    explo-team "James Hooper"
-    explo-team "Dave Wilson"
-    explo-date 2003.8.4
-    date 2003.8.4
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    1	2	5.20	323	03
-    2	3	2.46	287	-04
-    3	4	2.47	328	-16
-    5	4	2.19	075	-06
-    5	6	2.40	340	00
-    7	6	7.26	334	00
-    8	6	11.34	187	02
-    9	8	2.98	178	00
-    10	9	3.81	185	20
-    11	10	2.97	151	30
-    12	11	4.50	078	14
-    13	12	4.87	086	14
-    13	14	1.39	236	-52
-    14	15	8.06	327	-09
-    15	16	9.70	003	-01
-    16	17	3.46	340	-03
-endcentreline
+	
+	input "mushroom-p.th2"
+	
+	map m-mushroom-p -projection plan
+		mushroom-1p
+		mushroom-2p
+	endmap
+	
+	join mushroom-1p mushroom-2p
+	
+	
+	centreline
+		team "James Hooper" insts notes
+		team "Dave Wilson" tape
+		explo-team "James Hooper"
+		explo-team "Dave Wilson"
+		explo-date 2003.8.4
+		date 2003.8.4
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		1	2	5.20	323	03
+		2	3	2.46	287	-04
+		3	4	2.47	328	-16
+		5	4	2.19	075	-06
+		5	6	2.40	340	00
+		7	6	7.26	334	00
+		8	6	11.34	187	02
+		9	8	2.98	178	00
+		10	9	3.81	185	20
+		11	10	2.97	151	30
+		12	11	4.50	078	14
+		13	12	4.87	086	14
+		13	14	1.39	236	-52
+		14	15	8.06	327	-09
+		15	16	9.70	003	-01
+		16	17	3.46	340	-03
+	endcentreline
 endsurvey
 
 # Converted From SVX

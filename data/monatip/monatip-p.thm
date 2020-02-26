@@ -2,63 +2,63 @@
 # This contains the maps of Monatip cave      |
 #————————————————————————————————————————————-
 
-#map mmonatip-p -projection plan -title "Monatip"
-#  mmonatip_connection-p
-#  mmonatip_entrance-p
-#  malkatraz_disto_resurvey-p@alkatraz_disto_resurvey [-100 0 m] above
-#  mtherock-p@therock [-100 0 m] above
+#map m-monatip-p -projection plan -title "Monatip"
+#  m-monatip_connection-p
+#  m-monatip_entrance-p
+#  m-alkatraz_disto_resurvey-p@alkatraz_disto_resurvey [-100 0 m] above
+#  m-therock-p@therock [-100 0 m] above
 #endmap
 
-map mall-p -projection plan
-	mmonatip5-p@monatip5 # Hallowine
-	mmonatip6-p@monatip6
-	mmonatip9-p@monatip9 #Loozer
-	mmonatip11-p@monatip11
-	mmonatip10-p@monatip10
-	mwishing_well-p@wishing_well
-	mwishing_well2-p@wishing_well2
-	mmonatip7-p@monatip7
-	mmonatip8-p@monatip8 # Telovadci
-	mmonatip1-p@monatip1
-	mmonatip2-p@monatip2
-	mmonatip3-p@monatip3
-	maleksandrija-p@aleksandrija
-	mcloacamaxima-p@cloacamaxima
-	mwell_hung-p@well_hung
+map m-all-p -projection plan
+	m-monatip5-p@monatip5 # Hallowine
+	m-monatip6-p@monatip6
+	m-monatip9-p@monatip9 #Loozer
+	m-monatip11-p@monatip11
+	m-monatip10-p@monatip10
+	m-wishing_well-p@wishing_well
+	m-wishing_well2-p@wishing_well2
+	m-monatip7-p@monatip7
+	m-monatip8-p@monatip8 # Telovadci
+	m-monatip1-p@monatip1
+	m-monatip2-p@monatip2
+	m-monatip3-p@monatip3
+	m-aleksandrija-p@aleksandrija
+	m-cloacamaxima-p@cloacamaxima
+	m-well_hung-p@well_hung
 	high-monatip #[-120 0 m] above
-	mtherock-p@therock
+	m-therock-p@therock
 	mtherock-p3@therock
-	mbroken_hammer-p@broken_hammer
-	mmonatip4-p@monatip4
+	m-broken_hammer-p@broken_hammer
+	m-monatip4-p@monatip4
 	malkatraz_disto_resurvey-p2@alkatraz_disto_resurvey
-	mdoubletime-p@doubletime
+	m-doubletime-p@doubletime
 endmap
 
-map mmonatip_entrance-p -projection plan
-	mmonatip1-p@monatip1
-	mmonatip2-p@monatip2
-	maleksandrija-p@aleksandrija
-	mmonatip3-p@monatip3
-	mcloacamaxima-p@cloacamaxima
-	mcloacamaxima_low-p@cloacamaxima
-	mmonatip4-p@monatip4
-	mbroken_hammer-p@broken_hammer
-	mdoubletime-p@doubletime
+map m-monatip_entrance-p -projection plan
+	m-monatip1-p@monatip1
+	m-monatip2-p@monatip2
+	m-aleksandrija-p@aleksandrija
+	m-monatip3-p@monatip3
+	m-cloacamaxima-p@cloacamaxima
+	m-cloacamaxima_low-p@cloacamaxima
+	m-monatip4-p@monatip4
+	m-broken_hammer-p@broken_hammer
+	m-doubletime-p@doubletime
 endmap
 
-map mmonatip_connection-p -projection plan
-	mmonatip5-p@monatip5
+map m-monatip_connection-p -projection plan
+	m-monatip5-p@monatip5
 endmap
 
-map mmonatip_main-e -projection extended
-	malkatraz_disto_resurvey-e@alkatraz_disto_resurvey
+map  m-monatip_main-e -projection extended
+	m-alkatraz_disto_resurvey-e@alkatraz_disto_resurvey
 endmap
 
 map high-monatip -projection plan
-	mtherock-p@therock
+	m-therock-p@therock
 	mcloacamaxima-p6@cloacamaxima
 	mcloacamaxima-p5@cloacamaxima
 	mcloacamaxima-p4@cloacamaxima
-	malkatraz_disto_resurvey-p@alkatraz_disto_resurvey
+	m-alkatraz_disto_resurvey-p@alkatraz_disto_resurvey
 	mtherock-p3@therock
 endmap

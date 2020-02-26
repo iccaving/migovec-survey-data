@@ -1,29 +1,29 @@
 
 survey waffer -title "waffer - Beyond Hardy"
-
-input waffer-p.th2
-
-map mwaffer-p -projection plan
-    waffer-1p
-endmap
-
-centreline
-    team "Pete Jurd" insts
-    team "Shaggy" notes
-    explo-team "Pete Jurd"
-    explo-team "Shaggy"
-    date 2000.7.23
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    1	2	11.40	084	+20 	# 1PSS Cairn
-    2	3	6.80	-	up
-    3	4	4.30	105	+09
-    4	5	4.80	089	+20
-    5	6	4.20	038	+77
-    6	7	7.20	059	+23
-    7	8	9.30	062	+84 	# hardy.3 - PSS on Bolt
-endcentreline
+	
+	input waffer-p.th2
+	
+	map m-waffer-p -projection plan
+		waffer-1p
+	endmap
+	
+	centreline
+		team "Pete Jurd" insts
+		team "Shaggy" notes
+		explo-team "Pete Jurd"
+		explo-team "Shaggy"
+		date 2000.7.23
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		1	2	11.40	084	+20 	# 1PSS Cairn
+		2	3	6.80	-	up
+		3	4	4.30	105	+09
+		4	5	4.80	089	+20
+		5	6	4.20	038	+77
+		6	7	7.20	059	+23
+		7	8	9.30	062	+84 	# hardy.3 - PSS on Bolt
+	endcentreline
 endsurvey
 
 # Converted From SVX

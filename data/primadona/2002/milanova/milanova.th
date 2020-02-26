@@ -1,54 +1,54 @@
 encoding  utf-8
-survey milanova 
-
-  input "milanovap.th2"
-  input "milanova_extend.th2"
-
-  map mmilanova-e -projection extended
-    milanova_e1
-  endmap
-  
-  map mmilanova-p -projection plan
-    mmilanovap_1
-    mmilanovap_2
-  endmap
-
-  map mmilanovap_1 -projection plan
-    milanovap_1
-  endmap
-  
-  map mmilanovap_2 -projection plan
-    milanovap_2
-  endmap
-  
-  join milanovap_1 milanovap_2
-  
-  centreline
-    date 2002.12.21
-    explo-date 2002.12.21
-    explo-team "Bozo Merila" 
-    explo-team "Tomaž Tivadar" 
-    explo-team "Beguš Tadej"
-    team "Bozo Merila" insts notes
-    team "Tomaž Tivadar" notes insts
-    
-    units length meters
-    units compass clino degrees
-    data normal from to length compass clino
-
-    extend right
-    2 1 44.0  68  76
-    extend right
-    3 2 14  188 40  #stn. 3 tocka oznacena z papirjem PPS
-    extend right
-    4 3 2.6 198 27
-    5 4 3.2 267 53
-    6 5 4.0 249 35
-    7 6 5.0 202 7
-    8 7 5.2 211 43
-    extend vertical
-    9 8 10.4  0 90  #konec strika  
-    
-  endcentreline
+survey milanova
+	
+	input "milanovap.th2"
+	input "milanova_extend.th2"
+	
+	map  m-milanova-e -projection extended
+		milanova_e1
+	endmap
+	
+	map m-milanova-p -projection plan
+		mmilanovap_1
+		mmilanovap_2
+	endmap
+	
+	map mmilanovap_1 -projection plan
+		milanovap_1
+	endmap
+	
+	map mmilanovap_2 -projection plan
+		milanovap_2
+	endmap
+	
+	join milanovap_1 milanovap_2
+	
+	centreline
+		date 2002.12.21
+		explo-date 2002.12.21
+		explo-team "Bozo Merila"
+		explo-team "Tomaž Tivadar"
+		explo-team "Beguš Tadej"
+		team "Bozo Merila" insts notes
+		team "Tomaž Tivadar" notes insts
+		
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		extend right
+		2 1 44.0  68  76
+		extend right
+		3 2 14  188 40  #stn. 3 tocka oznacena z papirjem PPS
+		extend right
+		4 3 2.6 198 27
+		5 4 3.2 267 53
+		6 5 4.0 249 35
+		7 6 5.0 202 7
+		8 7 5.2 211 43
+		extend vertical
+		9 8 10.4  0 90  #konec strika
+		
+	endcentreline
 endsurvey
 

@@ -1,46 +1,46 @@
 survey izent1 -title "Izent1"
-
-input "izent1-p.th2"
-
-map mizent1-p -projection plan
-	izent1-2p
-	izent1-1p
-	izent1-3p
-endmap
-
-join izent1-1p izent1-2p
-join izent1-1p izent1-3p
-
-centreline
-
-team "Unknown" insts
-team "Unknown" notes
-explo-team "Unknown"
-explo-team "Unknown"
-date 1976
-
-station 16 entrance
-
-#;*entrance izent1.16
-#;*entrance izent2.19
-units length meters
-units compass clino degrees
-data normal from to tape compass clino ignoreall # Default
-16	15	24.7326328	248.0088701	-55.46806834
-15	14	7.628073151	337.8336542	-17.15532388
-14	13	17.36735443	226.3639275	-31.21250227
-13	12	5.859020823	284.3813946	-30.79920526
-12	11	2.193741097	213.6900675	34.73648128
-11	10	4.790941974	202.4794344	-35.0296215
-10	9	1.179247642	257.4711923	-12.2395583
-9	8	7.862092597	350.5376778	-67.24190868
-8	7	5.003124024	328.7362683	-35.07449239
-7	6	5.573374202	252.4744316	-26.65141612
-6	5	2.918154382	211.4295656	25.36307871
-5	4	8.038967595	194.5344551	-29.83978047
-4	3	7.678093839	194.0362435	-29.23563458
-3	2	4.346334663	266.6335393	-11.61410455
-2	1	2.25	296.5650512	-6.379370208
-#
-endcentreline
+	
+	input "izent1-p.th2"
+	
+	map m-izent1-p -projection plan
+		izent1-2p
+		izent1-1p
+		izent1-3p
+	endmap
+	
+	join izent1-1p izent1-2p
+	join izent1-1p izent1-3p
+	
+	centreline
+		
+		team "Unknown" insts
+		team "Unknown" notes
+		explo-team "Unknown"
+		explo-team "Unknown"
+		date 1976
+		
+		station 16 entrance
+		
+		#;*entrance izent1.16
+		#;*entrance izent2.19
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		16	15	24.7326328	248.0088701	-55.46806834
+		15	14	7.628073151	337.8336542	-17.15532388
+		14	13	17.36735443	226.3639275	-31.21250227
+		13	12	5.859020823	284.3813946	-30.79920526
+		12	11	2.193741097	213.6900675	34.73648128
+		11	10	4.790941974	202.4794344	-35.0296215
+		10	9	1.179247642	257.4711923	-12.2395583
+		9	8	7.862092597	350.5376778	-67.24190868
+		8	7	5.003124024	328.7362683	-35.07449239
+		7	6	5.573374202	252.4744316	-26.65141612
+		6	5	2.918154382	211.4295656	25.36307871
+		5	4	8.038967595	194.5344551	-29.83978047
+		4	3	7.678093839	194.0362435	-29.23563458
+		3	2	4.346334663	266.6335393	-11.61410455
+		2	1	2.25	296.5650512	-6.379370208
+		#
+	endcentreline
 endsurvey

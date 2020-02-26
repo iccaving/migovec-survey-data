@@ -1,59 +1,59 @@
 encoding  utf-8
 survey hammerhead -title "Hammerhead"
-  #Expedition Cez Rob
-  #Continuation of Déjà Vu
-
-  input "hammerhead-p.th2"
-  input "hammerhead-e.th2"
-
-  map mhammerhead-p -projection plan
-    hammerhead-p1
-  endmap
-
-  map mhammerhead-e -projection extended
-    hammerhead-1e
-  endmap
-  
-
-  centreline
-    date 2017.07.14
-    explo-date 2017.07.14
-    explo-team "Jarvist Frost"
-    explo-team "James Wilson"
-    explo-team "Clare Tan"
-    explo-team "James Hooper"
-
-    team "Jarvist Frost" insts tape
-    team "Clare Tan" insts tape
-    
-    #Data on 1 page
-    #Page 1/1
-    extend left
-    2  1  13.80  260  +12
-    extend right
-    2  3  6.50  097  -24
-    extend right
-    3  4  7.01  018  +27
-    extend right
-    4  5  5.91  080  +56
-    extend right
-    5  6  3.84  338  +37
-    extend right
-    6  7  10.65  063  +02
-    extend vertical
-    7  8  9.25  -  UP
-    extend right
-    8  9  1.67  033  +23
-
-#STN1 is pss cairn
-#STN2 is pss cairn
-#STN3 is pss cairn
-#STN6 is tip of rock in chamber, natural rig
-#STN8 is Y-hang bolt
-#STN9 is Déja Vu stn 13
-#Very cold draught into the cave
-
-
-  endcentreline
+	#Expedition Cez Rob
+	#Continuation of Déjà Vu
+	
+	input "hammerhead-p.th2"
+	input "hammerhead-e.th2"
+	
+	map m-hammerhead-p -projection plan
+		hammerhead-p1
+	endmap
+	
+	map  m-hammerhead-e -projection extended
+		hammerhead-1e
+	endmap
+	
+	
+	centreline
+		date 2017.07.14
+		explo-date 2017.07.14
+		explo-team "Jarvist Frost"
+		explo-team "James Wilson"
+		explo-team "Clare Tan"
+		explo-team "James Hooper"
+		
+		team "Jarvist Frost" insts tape
+		team "Clare Tan" insts tape
+		
+		#Data on 1 page
+		#Page 1/1
+		extend left
+		2  1  13.80  260  +12
+		extend right
+		2  3  6.50  097  -24
+		extend right
+		3  4  7.01  018  +27
+		extend right
+		4  5  5.91  080  +56
+		extend right
+		5  6  3.84  338  +37
+		extend right
+		6  7  10.65  063  +02
+		extend vertical
+		7  8  9.25  -  UP
+		extend right
+		8  9  1.67  033  +23
+		
+		#STN1 is pss cairn
+		#STN2 is pss cairn
+		#STN3 is pss cairn
+		#STN6 is tip of rock in chamber, natural rig
+		#STN8 is Y-hang bolt
+		#STN9 is Déja Vu stn 13
+		#Very cold draught into the cave
+		
+		
+	endcentreline
 endsurvey
 

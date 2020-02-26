@@ -1,46 +1,46 @@
 
 survey baddybag -title "System Migovec"
-    
-    input "baddybag-p.th2"
-
-    map mbaddybag-p -projection plan
-        baddybag-3p
-        break
-        baddybag-2p
-        baddybag-1p
-    endmap
-
-centreline
-    team "Alva Gosson" insts notes
-    team "Clewin Griffiths" insts notes
-    team "Shed" insts notes
-
-    explo-team "Alva Gosson"
-    explo-team "Shed"
-    explo-team "Clewin Griffiths"
-    explo-date 1997.08.02
-    date 1997.08.02
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino
-    1	2	2.90	17	5	#1 PSS on cairn 
-    2	3	3.67	-	up
-    3	4	2.20	20	13
-    4	5	14.47	-	up
-    5	6	6	240	-40	#Leg to aven distance guessed
-    5	7	7.76	100	55
-    7	8	3.65	39	35	#SS7 is prayer bell
-    8	9	3.50	27	-5
-    9	10	14.23	-	up
-    9	11	8	135	35	#Another aven, distance guessed
-    10	12	2.12	56	-25
-    13	12	7.99	15	2
-    14	13	1.55	79	-1
-endcentreline
+	
+	input "baddybag-p.th2"
+	
+	map m-baddybag-p -projection plan
+		baddybag-3p
+		break
+		baddybag-2p
+		baddybag-1p
+	endmap
+	
+	centreline
+		team "Alva Gosson" insts notes
+		team "Clewin Griffiths" insts notes
+		team "Shed" insts notes
+		
+		explo-team "Alva Gosson"
+		explo-team "Shed"
+		explo-team "Clewin Griffiths"
+		explo-date 1997.08.02
+		date 1997.08.02
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino
+		1	2	2.90	17	5	#1 PSS on cairn
+		2	3	3.67	-	up
+		3	4	2.20	20	13
+		4	5	14.47	-	up
+		5	6	6	240	-40	#Leg to aven distance guessed
+		5	7	7.76	100	55
+		7	8	3.65	39	35	#SS7 is prayer bell
+		8	9	3.50	27	-5
+		9	10	14.23	-	up
+		9	11	8	135	35	#Another aven, distance guessed
+		10	12	2.12	56	-25
+		13	12	7.99	15	2
+		14	13	1.55	79	-1
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #
@@ -63,7 +63,7 @@ endsurvey
 #;*ref https://drive.google.com/open?id=0BxkZAUc06EK5eEM0dFJfVWZxdm8
 #
 #*data normal from to tape compass clino
-#1	2	2.90	17	5	;1 PSS on cairn 
+#1	2	2.90	17	5	;1 PSS on cairn
 #2	3	3.67	-	up
 #3	4	2.20	20	13
 #4	5	14.47	-	up
