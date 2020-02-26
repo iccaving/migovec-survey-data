@@ -4,7 +4,7 @@ input ../_layouts/atlas1.th
 
 input ../_layouts/map1.th
 
-select mplateau-p@plateau
+select m-plateau-p@plateau
 
 #export atlas -o ../_outputs/atlas/plateau.pdf -projection plan -layout atlas1
 export map -o ../_outputs/map/plateau.pdf -projection plan -layout map1

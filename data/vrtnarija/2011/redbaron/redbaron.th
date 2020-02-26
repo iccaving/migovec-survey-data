@@ -1,32 +1,32 @@
 
 survey redbaron -title "Red Baron"
-
-input redbaron-p.th2
-
-map mredbaron-p -projection plan 
-    redbaron-1p
-    redbaron-2p
-endmap
-
-centreline
-    team "Johnny Hardman" insts
-    team "James Hooper" notes
-    explo-team "Johnny Hardman"
-    explo-team "James Hooper"
-    date 2011.7.23
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	5.61	198	-12
-    3	2	5.69	228	-13
-    4	3	10.26	196	-18
-    5	4	3.31	067	-16
-    5	6	10.12	194	-18
-    5	7	11.70	350	-06
-    7	8	14.28	335	+14
-    7	9	4.50	047	-25
-    9	10	11.65	167	-22
-endcentreline
+	
+	input redbaron-p.th2
+	
+	map m-redbaron-p -projection plan
+		redbaron-1p
+		redbaron-2p
+	endmap
+	
+	centreline
+		team "Johnny Hardman" insts
+		team "James Hooper" notes
+		explo-team "Johnny Hardman"
+		explo-team "James Hooper"
+		date 2011.7.23
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	5.61	198	-12
+		3	2	5.69	228	-13
+		4	3	10.26	196	-18
+		5	4	3.31	067	-16
+		5	6	10.12	194	-18
+		5	7	11.70	350	-06
+		7	8	14.28	335	+14
+		7	9	4.50	047	-25
+		9	10	11.65	167	-22
+	endcentreline
 endsurvey
 
 # Converted From SVX

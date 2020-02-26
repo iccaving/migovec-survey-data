@@ -1,33 +1,33 @@
 
 survey magicdragon -title "Magic Dragon"
-
-input magicdragon-p.th2
-
-map mmagicdragon-p -projection plan 
-    magicdragon-1p
-endmap
-
-centreline
-    team "Clare Tan" insts
-    team "James Hooper" notes
-    explo-team "Clare Tan"
-    explo-team "James Hooper"
-    date 2011.7.29
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	17.85	122	+05
-    2	3	18.48	321	00
-    4	3	16.59	103	+15
-    4	5	17.82	290	-19
-    5	6	10.33	271	-15
-    7	6	13.10	134	-10
-    7	8	0.90	-	down
-    8	9	7.82	014	+20
-    9	10	2.97	310	+20
-    11	10	3.06	216	-51
-    12	11	7.28	229	-33
-endcentreline
+	
+	input magicdragon-p.th2
+	
+	map m-magicdragon-p -projection plan
+		magicdragon-1p
+	endmap
+	
+	centreline
+		team "Clare Tan" insts
+		team "James Hooper" notes
+		explo-team "Clare Tan"
+		explo-team "James Hooper"
+		date 2011.7.29
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	17.85	122	+05
+		2	3	18.48	321	00
+		4	3	16.59	103	+15
+		4	5	17.82	290	-19
+		5	6	10.33	271	-15
+		7	6	13.10	134	-10
+		7	8	0.90	-	down
+		8	9	7.82	014	+20
+		9	10	2.97	310	+20
+		11	10	3.06	216	-51
+		12	11	7.28	229	-33
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -59,7 +59,7 @@ endsurvey
 #8	9	7.82	014	+20
 #9	10	2.97	310	+20
 #11	10	3.06	216	-51
-#12	11	7.28	229	-33	
+#12	11	7.28	229	-33
 #
 #
 #

@@ -1,45 +1,45 @@
 survey ave_maria -title "Ave Maria pitch series"
-input "ave_maria-p.th2"
-input "ave_maria-e.th2"
-
-map mave_maria-e -projection extended
-	ave_maria-e1
-endmap
-
-map mave_maria-p -projection plan
-	mave_maria-p1
-endmap
-
-map mave_maria-p1 -projection plan
-	ave_maria-p1
-endmap
-
-centreline
-	date 2018.07.19
-	explo-date 2018.07.19
-	team "James Hooper" insts notes
-	team "David [P Wilson]" tape
-
-	explo-team "James Hooper"
-	explo-team "David [P Wilson]"
-
-	units length meters
-	units compass clino degrees
-	data normal from to length compass clino
-	extend right
-	1	2	3.30	060	+55
-	extend right
-	2	3	5.77	045	+24
-	extend right
-	3	4	5.05	080	+51
-	extend left
-	4	5	9.45	045	+80
-	extend left
-	5	6	6.91	005	+72
-	extend left
-	6	7	1.15	245	+61
-	extend left
-	7	8	2.62	298	+18
-endcentreline
-
+	input "ave_maria-p.th2"
+	input "ave_maria-e.th2"
+	
+	map  m-ave_maria-e -projection extended
+		ave_maria-e1
+	endmap
+	
+	map m-ave_maria-p -projection plan
+		mave_maria-p1
+	endmap
+	
+	map mave_maria-p1 -projection plan
+		ave_maria-p1
+	endmap
+	
+	centreline
+		date 2018.07.19
+		explo-date 2018.07.19
+		team "James Hooper" insts notes
+		team "David [P Wilson]" tape
+		
+		explo-team "James Hooper"
+		explo-team "David [P Wilson]"
+		
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		extend right
+		1	2	3.30	060	+55
+		extend right
+		2	3	5.77	045	+24
+		extend right
+		3	4	5.05	080	+51
+		extend left
+		4	5	9.45	045	+80
+		extend left
+		5	6	6.91	005	+72
+		extend left
+		6	7	1.15	245	+61
+		extend left
+		7	8	2.62	298	+18
+	endcentreline
+	
 endsurvey

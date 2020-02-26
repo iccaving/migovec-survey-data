@@ -3,6 +3,6 @@ source ../system_migovec.th
 
 input ../_layouts/map2.th
 
-select mplateau-p@system_migovec
+select m-plateau-p@system_migovec
 
 export map -o ../_outputs/map/plateau_m.pdf -projection plan -layout map2

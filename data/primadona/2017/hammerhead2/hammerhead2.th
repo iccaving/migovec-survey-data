@@ -1,29 +1,29 @@
 survey hammerhead2 -title "Hammerhead 2"
-
+	
 	input "hammerhead2-p.th2"
 	input "hammerhead2-e.th2"
-
-	map mhammerhead2-p -projection plan
+	
+	map m-hammerhead2-p -projection plan
 		hammerhead2-p1
 		hammerhead2-p2
 	endmap
-
-	map mhammerhead2-e -projection extended
+	
+	map  m-hammerhead2-e -projection extended
 		hammerhead2-2e
 		break
 		hammerhead2-1e
 	endmap
-
+	
 	join hammerhead2-p1 hammerhead2-p2
-
+	
 	centreline
 		date 2017.07.18
 		explo-date 2017.07.18
-
+		
 		team "James Hooper" insts notes
 		team "James Wilson" tape
 		explo-team "James Hooper" "James Wilson" "Jarvist Frost" "Tanguy Racine"
-
+		
 		#data on 2 pages
 		#Page 1/2
 		extend right
@@ -48,7 +48,7 @@ survey hammerhead2 -title "Hammerhead 2"
 		10	11	2.89	215	+02
 		extend left
 		11	12	17.40	216	-64
-
+		
 		#Page 2/2
 		extend left
 		14	13	16.65	215	-10
@@ -75,8 +75,8 @@ survey hammerhead2 -title "Hammerhead 2"
 		extend right
 		23	24	2.95	085	-02
 	endcentreline
-
-	#NOTES 
+	
+	#NOTES
 	#STN2 is PSS
 	#STN2 is Hammerhead (16.7.17) STN1
 	#STN6 is PSS
@@ -88,5 +88,5 @@ survey hammerhead2 -title "Hammerhead 2"
 	#STN14 is a PSS
 	#STN17 is a PSS
 	#STN24 is a PSS
-
+	
 endsurvey

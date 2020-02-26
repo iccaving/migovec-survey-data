@@ -3,30 +3,30 @@
 survey stranglehold
 	input stranglehold-p.th2
 	input stranglehold-e.th2
-
-	map mstranglehold-e -projection extended
+	
+	map  m-stranglehold-e -projection extended
 		stranglehold-e1
 		stranglehold-e2
 	endmap
-
-	map mstranglehold-p -projection plan
+	
+	map m-stranglehold-p -projection plan
 		stranglehold-p1
 		stranglehold-p2
 		stranglehold-p3
 	endmap
-
+	
 	join stranglehold-p1 stranglehold-p2
 	join stranglehold-p1 stranglehold-p3
-
+	
 	centreline
 		date 2017.07.19
 		explo-date 2017.07.19
-
+		
 		team "Jack Hare" insts tape
 		team "David [P Wilson]" notes
 		explo-team "Jack Hare"
 		explo-team "David [P Wilson]"
-
+		
 		#Data on 3 pages
 		#Page 1/3
 		extend vertical
@@ -52,7 +52,7 @@ survey stranglehold
 		12	13	2.46	-	UP
 		extend right
 		13	14	5.92	089	+03
-
+		
 		#Page 2/3
 		extend right
 		14	15	2.79	183	+54
@@ -78,7 +78,7 @@ survey stranglehold
 		23	24	1.64	357	+04
 		24	25	3.11	123	+32
 		25	26	2.37	104	+14
-
+		
 		#Page 3/3
 		26	27	4.28	012	-24
 		27	28	3.59	147	+15
@@ -88,12 +88,12 @@ survey stranglehold
 		30	31	5.84	046	+00
 		31	32	4.33	177	+56
 		32	33	3.88	356	+01
-
-#NOTES 
-#STN 1 is PSS in boulder collapse chamber approx 7x5m
-#STN 6 is PSS 
-#STN 7 is fig 8 bolt of Y hang
-#STN 12 is Singing Blade
-#STN 33 is PSS Electric Dreams STN 5
+		
+		#NOTES
+		#STN 1 is PSS in boulder collapse chamber approx 7x5m
+		#STN 6 is PSS
+		#STN 7 is fig 8 bolt of Y hang
+		#STN 12 is Singing Blade
+		#STN 33 is PSS Electric Dreams STN 5
 	endcentreline
 endsurvey

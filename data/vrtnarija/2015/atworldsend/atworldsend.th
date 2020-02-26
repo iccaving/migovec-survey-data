@@ -1,30 +1,30 @@
 
 survey atworldsend -title "At Worlds End"
-
-input atworldsend-p.th2
-
-map matworldsend-p -projection plan
-    atworldsend-1p
-endmap
-
-centreline
-    team "Rhys Tyers" insts
-    team "Tanguy Racine" notes
-    explo-team "Rhys Tyers"
-    explo-team "Tanguy Racine"
-    date 2015.8.4
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	5.03	301	-14
-    3	2	2.29	315	+29
-    4	3	1.63	259	+29
-    5	4	1.91	229	-37
-    6	5	4.24	278	-60
-    7	6	1.95	281	+05
-    8	7	14.71	-	down
-    9	8	1.27	124	+22
-endcentreline
+	
+	input atworldsend-p.th2
+	
+	map m-atworldsend-p -projection plan
+		atworldsend-1p
+	endmap
+	
+	centreline
+		team "Rhys Tyers" insts
+		team "Tanguy Racine" notes
+		explo-team "Rhys Tyers"
+		explo-team "Tanguy Racine"
+		date 2015.8.4
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	5.03	301	-14
+		3	2	2.29	315	+29
+		4	3	1.63	259	+29
+		5	4	1.91	229	-37
+		6	5	4.24	278	-60
+		7	6	1.95	281	+05
+		8	7	14.71	-	down
+		9	8	1.27	124	+22
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -51,7 +51,7 @@ endsurvey
 #7	6	1.95	281	+05
 #8	7	14.71	-	down
 #9	8	1.27	124	+22
-#;NOTES 
+#;NOTES
 #;stn 9 is Davy Jones' Locker stn 1
 #
 #;LRUD Data as below - introduce a new *data line if there's breaks in the survey

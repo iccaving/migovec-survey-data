@@ -1,26 +1,26 @@
 survey gamblers_ruin
 	#Expedition Neprehojene Poti
 	#Draughting rift off Upside Down chamber
-
+	
 	input "gamblers_ruin-p.th2"
 	input "gamblers_ruin-e.th2"
-
-	map mgamblers_ruin-p -projection plan
+	
+	map m-gamblers_ruin-p -projection plan
 		gamblers_ruin-p1
 	endmap
-
-	map mgamblers_ruin-e -projection extended
+	
+	map  m-gamblers_ruin-e -projection extended
 		gamblers_ruin-1e
 	endmap
-
-
+	
+	
 	centreline
 		explo-date 2016.07.26
-		explo-team "Jack Hare" 
-		explo-team "Miriam [North Ridao]" 
-		explo-team "Clare Tan" 
+		explo-team "Jack Hare"
+		explo-team "Miriam [North Ridao]"
+		explo-team "Clare Tan"
 		explo-team "Rhys Tyers"
-
+		
 		date 2016.07.26
 		team "Jack Hare" insts tape
 		team "Miriam [North Ridao]" insts tape
@@ -42,12 +42,12 @@ survey gamblers_ruin
 		8	7	5.08	010	-45
 		extend right
 		8	9	2.11	140	+15
-
-		#NOTES 
+		
+		#NOTES
 		#Stn 1 is a PSS
 		#Stn 7 is cairn in upside down chamber at top of pitch
 		#Stn 9 is Upside Down Chamber Stn 5
-
-
+		
+		
 	endcentreline
 endsurvey

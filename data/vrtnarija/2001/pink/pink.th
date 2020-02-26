@@ -1,8 +1,8 @@
 survey pink -title "Pink series"
 	
 	input pink-p.th2
-
-	map mpink-p -projection plan
+	
+	map m-pink-p -projection plan
 		mpink-p1
 		mpink-p2
 		mpink-p3
@@ -12,29 +12,29 @@ survey pink -title "Pink series"
 	map mpink-p1 -projection plan
 		pink-p1
 	endmap
-
+	
 	map mpink-p2 -projection plan
 		pink-p2
 	endmap
-
+	
 	map mpink-p3 -projection plan
 		pink-p3
 	endmap
-
+	
 	map mpink-p4 -projection plan
 		pink-p4
 	endmap
-
+	
 	centreline
 		date 2001.08.01
 		explo-date 2001.08.01
-
+		
 		team "Dave Wilson"
 		team "James Hooper"
-
+		
 		explo-team "Dave Wilson"
 		explo-team "James Hooper"
-
+		
 		1	2	5.28	282	36		#stn1 is pss on top of boulder
 		3	2	10.65	032	26
 		3	4	3.07	258	-11

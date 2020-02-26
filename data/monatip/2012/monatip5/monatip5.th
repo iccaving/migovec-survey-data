@@ -1,37 +1,37 @@
 survey monatip5 -title "Hallowine"
 	input "monatip5-p.th2"
 	input "monatip5-e.th2"
-
-	map mmonatip5-p -projection plan
+	
+	map m-monatip5-p -projection plan
 		monatip5-2p
 		monatip5-1p
 		monatip5-3p
 		break
 		monatip5-4p #Telovadci pitch
 	endmap
-
-	map mmonatip5-e -projection extended
+	
+	map  m-monatip5-e -projection extended
 		monatip5-1e
 	endmap
-
+	
 	join monatip5-3p monatip5-2p
 	join monatip5-1p monatip5-2p
-
+	
 	centreline
 		date 2012.10.31
 		explo-date 2012.10.31
-
+		
 		team "Dejan Ristić" insts
 		team "Nejc Mavr" tape
 		team "Tjaša Rutar" notes
 		explo-team "Dejan Ristić"
 		explo-team "Nejc Mavr"
 		explo-team "Tjaša Rutar"
-
+		
 		units length meters
 		units compass clino degrees
 		extend right
-		101	102	9.8		140		-43	
+		101	102	9.8		140		-43
 		extend right
 		102	103	9.9		130		-35
 		extend right

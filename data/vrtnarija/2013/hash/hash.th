@@ -1,41 +1,41 @@
 
 survey hash -title "Hash"
-
-input hash-p.th2
-
-map mhash-p -projection plan
-    hash-1p
-endmap
-
-centreline
-    team "Rhys Tyers" insts
-    team "Clare Tan" notes
-    explo-team "Rhys Tyers"
-    explo-team "Clare Tan"
-    date 2013.7.19
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	2.95	312	-05	0.0	1.0	0.5	0.5
-    3	2	6.00	231	-12	0.2	0.1	0.4	0.4
-    4	3	2.64	232	-10	0.4	0.4	0.4	0.1
-    5	4	1.96	255	-41	0.3	0.2	0.4	0.0
-    6	5	3.92	185	+15	0.1	0.1	0.1	0.1
-    7	6	1.47	203	+19	0.3	0.2	0.0	0.4
-    8	7	4.70	124	+35	0.4	0.0	0.1	0.0
-    9	8	2.32	200	+19	0.0	0.4	0.1	0.2
-    10	9	3.68	021	+30	0.5	0.5	0.3	0.3
-    11	10	1.60	285	+01	0.4	0.4	0.4	0.3
-    12	11	4.10	178	+03	0.3	0.3	0.0	0.3
-    13	12	4.30	087	+50	0.5	0.1	0.2	0.4
-    #14	13	4.87	150	-04	2.5	1.0	1.5	0.1
-    #14	15	10.27	010	+05	0.0	0.3	0.0	1.5
-    #16	15	13.75	200	-28	2.5	1.0	1.5	0.4
-    #16	17	6.34	040	+22	0.0	3.0	1.0	1.0
-    #18	17	11.90	183	-19	0.5	4.0	1.5	1.3
-    #18	19	6.30	024	+22	1.5	1.5	0.0	3.0
-    #20	19	2.65	153	-18	3.0	3.0	2.0	0.2
-endcentreline
+	
+	input hash-p.th2
+	
+	map m-hash-p -projection plan
+		hash-1p
+	endmap
+	
+	centreline
+		team "Rhys Tyers" insts
+		team "Clare Tan" notes
+		explo-team "Rhys Tyers"
+		explo-team "Clare Tan"
+		date 2013.7.19
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	2.95	312	-05	0.0	1.0	0.5	0.5
+		3	2	6.00	231	-12	0.2	0.1	0.4	0.4
+		4	3	2.64	232	-10	0.4	0.4	0.4	0.1
+		5	4	1.96	255	-41	0.3	0.2	0.4	0.0
+		6	5	3.92	185	+15	0.1	0.1	0.1	0.1
+		7	6	1.47	203	+19	0.3	0.2	0.0	0.4
+		8	7	4.70	124	+35	0.4	0.0	0.1	0.0
+		9	8	2.32	200	+19	0.0	0.4	0.1	0.2
+		10	9	3.68	021	+30	0.5	0.5	0.3	0.3
+		11	10	1.60	285	+01	0.4	0.4	0.4	0.3
+		12	11	4.10	178	+03	0.3	0.3	0.0	0.3
+		13	12	4.30	087	+50	0.5	0.1	0.2	0.4
+		#14	13	4.87	150	-04	2.5	1.0	1.5	0.1
+		#14	15	10.27	010	+05	0.0	0.3	0.0	1.5
+		#16	15	13.75	200	-28	2.5	1.0	1.5	0.4
+		#16	17	6.34	040	+22	0.0	3.0	1.0	1.0
+		#18	17	11.90	183	-19	0.5	4.0	1.5	1.3
+		#18	19	6.30	024	+22	1.5	1.5	0.0	3.0
+		#20	19	2.65	153	-18	3.0	3.0	2.0	0.2
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -79,11 +79,11 @@ endsurvey
 #;*flags not duplicate
 #
 #
-#;NOTES 
+#;NOTES
 #;Station 1 is PSS
 #;Station 4 is PSS with junction that joins with station 8
 #;Station 13 is PSS in main Lost Miles passage
-# 
+#
 #
 #;LRUD Data as below - introduce a new *data line if there's breaks in the survey
 #;*data passage station left right up down ignoreall

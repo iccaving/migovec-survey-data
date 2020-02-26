@@ -1,36 +1,36 @@
 
 survey davyjoneslocker -title "Davy Jones' Locker"
-
-input davyjoneslocker-p.th2
-
-map mdavyjoneslocker-p -projection plan
-    davyjoneslocker-1p
-endmap
-
-centreline
-    team "Ben Honan" insts
-    team "Rhys Tyers" notes
-    explo-team "Ben Honan"
-    explo-team "Rhys Tyers"
-    date 2015.7.29
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	8.12	230	+18
-    2	3	6.00	275	-03
-    3	4	6.30	290	+05
-    4	5	5.48	247	+17
-    5	6	3.05	267	+15
-    6	7	1.73	258	-33
-    7	8	1.79	267	00
-    8	9	3.64	255	00
-    9	10	5.15	332	+07
-    10	11	2.87	222	+44
-    11	12	2.54	245	-15
-    13	12	1.85	105	-10
-    13	14	4.62	232	+22
-    14	15	1.90	205	+04
-endcentreline
+	
+	input davyjoneslocker-p.th2
+	
+	map m-davyjoneslocker-p -projection plan
+		davyjoneslocker-1p
+	endmap
+	
+	centreline
+		team "Ben Honan" insts
+		team "Rhys Tyers" notes
+		explo-team "Ben Honan"
+		explo-team "Rhys Tyers"
+		date 2015.7.29
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	8.12	230	+18
+		2	3	6.00	275	-03
+		3	4	6.30	290	+05
+		4	5	5.48	247	+17
+		5	6	3.05	267	+15
+		6	7	1.73	258	-33
+		7	8	1.79	267	00
+		8	9	3.64	255	00
+		9	10	5.15	332	+07
+		10	11	2.87	222	+44
+		11	12	2.54	245	-15
+		13	12	1.85	105	-10
+		13	14	4.62	232	+22
+		14	15	1.90	205	+04
+	endcentreline
 endsurvey
 
 # Converted From SVX

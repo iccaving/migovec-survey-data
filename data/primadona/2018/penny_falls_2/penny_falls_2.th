@@ -1,48 +1,48 @@
 survey penny_falls_2 -title "Penny falls 2 (continuation)"
 	input "penny_falls_2-p.th2"
 	input "penny_falls_2-e.th2"
-
-	map mpenny_falls_2-e -projection extended
+	
+	map  m-penny_falls_2-e -projection extended
 		penny_falls_2-e1
 	endmap
-
-	map mpenny_falls_2-p -projection plan
+	
+	map m-penny_falls_2-p -projection plan
 		penny_falls_2-p1
 	endmap
-
+	
 	centreline
 		explo-team "James Wilson"
 		explo-team "James Hooper"
-
+		
 		team "James Wilson"	 notes
 		team "James Hooper"	 insts tape
 		date 2018.07.22
-
+		
 		explo-date 2018.07.22
-
+		
 		units length meters
-    	units compass clino degrees
-    	data normal from to length compass clino
-
-    	#Data on 1 page
-
-    	#Page 1
-    	extend left
-    	2	1	10.33	104	40
-    	extend right
-    	2	3	2.74	225	00
-    	extend right
-    	3	4	15.00	250	-42
-    	extend vertical
-    	2	5	8.62	-	down
-
-
-
-
-
-#NOTES 
-#STN1 is Penny Falls STN1
-
-
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		#Data on 1 page
+		
+		#Page 1
+		extend left
+		2	1	10.33	104	40
+		extend right
+		2	3	2.74	225	00
+		extend right
+		3	4	15.00	250	-42
+		extend vertical
+		2	5	8.62	-	down
+		
+		
+		
+		
+		
+		#NOTES
+		#STN1 is Penny Falls STN1
+		
+		
 	endcentreline
 endsurvey

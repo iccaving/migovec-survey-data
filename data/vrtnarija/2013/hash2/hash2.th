@@ -1,28 +1,28 @@
 
 survey hash2 -title "Hash2"
-
-input hash2-p.th2
-
-map mhash2-p -projection plan
-    hash2-1p
-endmap
-
-centreline
-    team "Sam Page" insts
-    team "Tetley" notes
-    explo-team "Sam Page"
-    explo-team "Tetley"
-    date 2013.7.22
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	3.73	014	+22
-    2	3	5.05	068	+36
-    3	4	10.05	163	-31
-    4	5	4.24	150	-12
-    5	6	2.10	103	00
-    6	7	0.90	064	+30
-endcentreline
+	
+	input hash2-p.th2
+	
+	map m-hash2-p -projection plan
+		hash2-1p
+	endmap
+	
+	centreline
+		team "Sam Page" insts
+		team "Tetley" notes
+		explo-team "Sam Page"
+		explo-team "Tetley"
+		date 2013.7.22
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	3.73	014	+22
+		2	3	5.05	068	+36
+		3	4	10.05	163	-31
+		4	5	4.24	150	-12
+		5	6	2.10	103	00
+		6	7	0.90	064	+30
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -49,9 +49,9 @@ endsurvey
 #6	7	0.90	064	+30
 #
 #
-#;NOTES 
+#;NOTES
 #;Station 1 is PSS
-#;Station 7 is hash station 1 
+#;Station 7 is hash station 1
 #
 #;LRUD Data as below - introduce a new *data line if there's breaks in the survey
 #;*data passage station left right up down ignoreall

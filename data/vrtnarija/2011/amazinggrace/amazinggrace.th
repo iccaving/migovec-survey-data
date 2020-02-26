@@ -1,29 +1,29 @@
 
 survey amazinggrace -title "Amazing Grace"
-input amazinggrace-p.th2
-
-map mamazinggrace-p -projection plan 
-    amazinggrace-1p
-endmap
-
-
-centreline
-    team "Jan Evetts" insts
-    team "Kate Smith" notes
-    explo-team "Jan Evetts"
-    explo-team "Kate Smith"
-    date 2011.7.27
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	8.21	122	-19
-    3	2	24.06	161	-29
-    4	3	13.21	164	-14
-    5	4	10.86	146	+21
-    6	5	4.54	133	-03
-    6	7	5.56	046	-47
-    8	7	1.54	260	+45
-endcentreline
+	input amazinggrace-p.th2
+	
+	map m-amazinggrace-p -projection plan
+		amazinggrace-1p
+	endmap
+	
+	
+	centreline
+		team "Jan Evetts" insts
+		team "Kate Smith" notes
+		explo-team "Jan Evetts"
+		explo-team "Kate Smith"
+		date 2011.7.27
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	8.21	122	-19
+		3	2	24.06	161	-29
+		4	3	13.21	164	-14
+		5	4	10.86	146	+21
+		6	5	4.54	133	-03
+		6	7	5.56	046	-47
+		8	7	1.54	260	+45
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -60,7 +60,7 @@ endsurvey
 #*end amazinggrace
 #; NOTES
 #;Missing station at end of survey - called it 8.
-#;Second to last leg is forwards. Due to missing station at end of survey, wrong leg marked in survey notes. 
+#;Second to last leg is forwards. Due to missing station at end of survey, wrong leg marked in survey notes.
 #;Tied it at 8 with assumed direction although notes say it was 7. Jan and Kate concur.
 #; ### SURVEY TIE IN ###
 #*equate amazinggrace.8 serenade.7

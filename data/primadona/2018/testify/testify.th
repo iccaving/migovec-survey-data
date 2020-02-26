@@ -15,11 +15,11 @@ survey testify
 	
 	input "testify-p.th2"
 	input "testify-e.th2"
-
+	
 	map mtestify-p1 -projection plan
 		testify-p1
 	endmap
-
+	
 	map mtestify-p2 -projection plan
 		testify-p2
 	endmap
@@ -27,20 +27,20 @@ survey testify
 	map mtestify-p3 -projection plan
 		testify-p3
 	endmap
-
+	
 	map mtestify-p4 -projection plan
 		testify-p4
 	endmap
-
+	
 	map mtestify-p5 -projection plan
 		testify-p5
 	endmap
-
+	
 	map mtestify-p6 -projection plan
 		testify-p6
 	endmap
-
-	map mtestify-p -projection plan
+	
+	map m-testify-p -projection plan
 		mtestify-p1
 		mtestify-p2
 		mtestify-p3
@@ -48,8 +48,8 @@ survey testify
 		mtestify-p5
 		mtestify-p6
 	endmap
-
-	map mtestify-e -projection extended
+	
+	map  m-testify-e -projection extended
 		testify-1e
 		testify-2e
 	endmap
@@ -58,18 +58,18 @@ survey testify
 	join testify-p3 testify-p4
 	join testify-p4 testify-p5
 	join testify-p6 testify-p4
-
+	
 	join testify-1e testify-2e
-
+	
 	centreline
-	team "Andy Jurd" insts
-	team "Clare Tan" notes tape
-	explo-team "Andy Jurd"
-	explo-team "Clare Tan"
-	date 2018.08.05
-
-	explo-date 2018.08.05
-
+		team "Andy Jurd" insts
+		team "Clare Tan" notes tape
+		explo-team "Andy Jurd"
+		explo-team "Clare Tan"
+		date 2018.08.05
+		
+		explo-date 2018.08.05
+		
 		#Page 1
 		extend left
 		2	1	4.68	75	-23
@@ -95,9 +95,9 @@ survey testify
 		11	12	2.50	74	39
 		extend left
 		12	13	3.25	21	4
-
+		
 		#1 is PSS cairn at top of continuing pitch
-
+		
 		#Page 2
 		extend left
 		13	14	5.89	66	-1
@@ -125,10 +125,10 @@ survey testify
 		24	25	3.70	60	2
 		extend left
 		25	26	5.61	38	20
-
+		
 		#18-22 is a sandy floor
 		#20-21 is an 8 inch high dug out squeeze
-
+		
 		#Page 3
 		extend left
 		26	28	7.04	80	-3
@@ -154,10 +154,10 @@ survey testify
 		38	39	3.52	206	-12
 		extend right
 		39	40	2.62	256	-3
-
+		
 		#There is no 27
 		#37 is PSS cairn by upstream inlet
-
+		
 		#Page 4
 		extend right
 		40	36	2.42	227	-6
@@ -172,7 +172,7 @@ survey testify
 		extend left
 		44	45	3.62	341	15
 		extend left
-		45	46	4.92	12	-1	
+		45	46	4.92	12	-1
 		extend left
 		46	47	2.90	51	7
 		extend left
@@ -185,9 +185,9 @@ survey testify
 		50	51	4.65	120	4
 		extend vertical
 		51	52	2.49	82	16
-
+		
 		#45 is PSS cairn where streamways converge
-
+		
 		#Page 5
 		extend right
 		52	53	4.44	112	9
@@ -221,11 +221,11 @@ survey testify
 		65	66	28.91	-	up
 		extend left
 		66	67	1.77	26	-48
-
+		
 		#55 is PSS cairn near bottom of pitch
 		#66 is bolt at top of pitch
 		#67 is Canticle for Migovec PSS stn 1 cairn at top of pitch
-
-
+		
+		
 	endcentreline
 endsurvey

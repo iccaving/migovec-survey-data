@@ -1,42 +1,42 @@
 
 survey throneroom -title "The Throne Room"
-
-input throneroom-p.th2
-
-map mthroneroom-p -projection plan 
-    throneroom-1p
-endmap
-
-centreline
-    team "Clare Tan" insts
-    team "JMF" notes
-    explo-team "Clare Tan"
-    explo-team "JMF"
-    date 2011.7.25
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    pit2	1	6.50	-	up
-    1	2	12.00	187	-23
-    2	3	7.50	231	-41
-    3	4	16.68	198	-33
-    4	5	10.90	156	-07
-    5	6	8.05	190	-22
-    6	7	6.46	185	-32
-    7	8	14.60	202	-44
-    8	9	6.79	093	+40
-    9	10	14.36	155	-29
-    11	10	6.93	211	+28
-    8	12	10.95	192	-32
-    12	13	13.50	234	-30
-    13	14	14.20	196	-32
-    14	15	26.42	207	-25
-    15	16	11.87	204	00
-    16	17	12.55	187	-02
-    pit	18	10.83	-	up
-    18	19	4.95	181	+29
-    19	17	3.19	194	+07
-endcentreline
+	
+	input throneroom-p.th2
+	
+	map m-throneroom-p -projection plan
+		throneroom-1p
+	endmap
+	
+	centreline
+		team "Clare Tan" insts
+		team "JMF" notes
+		explo-team "Clare Tan"
+		explo-team "JMF"
+		date 2011.7.25
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		pit2	1	6.50	-	up
+		1	2	12.00	187	-23
+		2	3	7.50	231	-41
+		3	4	16.68	198	-33
+		4	5	10.90	156	-07
+		5	6	8.05	190	-22
+		6	7	6.46	185	-32
+		7	8	14.60	202	-44
+		8	9	6.79	093	+40
+		9	10	14.36	155	-29
+		11	10	6.93	211	+28
+		8	12	10.95	192	-32
+		12	13	13.50	234	-30
+		13	14	14.20	196	-32
+		14	15	26.42	207	-25
+		15	16	11.87	204	00
+		16	17	12.55	187	-02
+		pit	18	10.83	-	up
+		18	19	4.95	181	+29
+		19	17	3.19	194	+07
+	endcentreline
 endsurvey
 
 # Converted From SVX
