@@ -148,7 +148,7 @@ The `.th` will probably also join any scraps (in the `.th2`) within the passage 
 
 ### Higher level data
 
-In the `_xtherion` folders you will find `.th` files that define how these individual passages are connected.
+In the `data\{cave}` folders you will find `.th` files that define how these individual passages are connected.
 
 - `{name}.th` will be used to defined equates in the survey and join scraps between passages
 - `{name}.thm` will be used to combine individual passage maps into larger maps.
@@ -188,22 +188,28 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../_xtherion/primadona_ubend_monatip.th"
+source "../../primadona_ubend_monatip.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/prima_ubend_monatip/overview_plan.thl"
+input "../../_layouts/base-p.thl"
+input "../../_layouts/base-e.thl"
+input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
 select mprima_ubend_monatip-p@system_migovec -map-level 1
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview_plan
+# export a PLAN view and specify the layout
+layout plan
+	copy base-p
+	copy colour-by-new
+endlayout
 language fr # We use fr for Slovenian because sl is not yet supported
-export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout overview_plan
+export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout plan
 language en
-export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout overview_plan
+export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
@@ -250,7 +256,7 @@ You have a some `.th` files from topodroid or from an svx conversion. Here's wha
 
 We have used a pyramidal hierarchy, with a cave, year, passage structure. Save the `my_new_passage.th` file into a new folder with lower case name (as far as possible, the same as the survex survey name).
 
-Find the `cave.th`file in the cave/\_xtherion folder. This file contains a series of `input ../year/passage/passage.th` commands to tell the therion compiler to include the relevant survey data. Adding the command `input ../year/my_new_passage.th` to this file in the correct year folder is necessary, but we now need to connect the new data to an existing point in the survey, i.e. equate.
+Find the `cave.th`file in the `cave` folder. This file contains a series of `input ./year/passage/passage.th` commands to tell the therion compiler to include the relevant survey data. Adding the command `input ./year/passage/my_new_passage.th` to this file in the correct year folder is necessary, but we now need to connect the new data to an existing point in the survey, i.e. equate.
 
 Below the input blocks, you will find a series of `equate` commands, this is where you can tie in your new cave passage to the existing centrelines.
 
@@ -274,8 +280,8 @@ map mYear1-<p/e> -projection <plan/extended> -title "Year 1"
  ...
 endmap
 
-input ../year1/passage_1/passage_1.th
-input ../year1/passage_2/passage_2.th
+input ./year1/passage_1/passage_1.th
+input ./year1/passage_2/passage_2.th
 ...
 
 equate stationX@passage_1 stationY@passage_b #the main equate commands between passages.
@@ -291,8 +297,8 @@ map mYear1-<p/e> -projection <plan/extended> -title "Year 2"
  ...
 endmap
 
-input ../year2/passage_a/passage_a.th
-input ../year2/passage_a/passage_a.th
+input ./year2/passage_a/passage_a.th
+input ./year2/passage_a/passage_a.th
 ...
 
 equate stationX@passage_a stationY@passage_1 #equates to current and previous years.

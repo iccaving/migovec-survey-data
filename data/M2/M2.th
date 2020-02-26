@@ -1,0 +1,32 @@
+survey M2 -title "M2 part of System Migovec"
+	
+	map mM2-p -projection plan
+		mizent1-p@izent1
+		mizent2-p@izent2
+		mjsl1-p@jsl1
+		mjsl2-p@jsl2
+		mjspdt-p@jspdt
+	endmap
+	
+	###__________1997____________###
+	
+	input "./1997/izent1/izent1.th"
+	input "./1997/izent2/izent2.th"
+	input "./1997/jspdt/jspdt.th"
+	input "./1997/jspdt2/jspdt2.th"
+	input "./1997/jsl1/jsl1.th"
+	input "./1997/jsl2/jsl2.th"
+	
+	equate 27@jspdt 27@jspdt2
+	equate 1@izent1 1@jspdt
+	equate 14@izent1 16@izent2
+	equate h@jsl2 11@jspdt
+	equate d@jsl1 19@jspdt
+	
+	join izent1-2p@izent1 izent2-1p@izent2
+	
+	###__________2012____________###
+	
+	#input ./2012/m2_2012_resurvey/m2_2012_resurvey.th
+	
+endsurvey

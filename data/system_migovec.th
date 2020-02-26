@@ -1,0 +1,36 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A SURVEY DATA FILE FOR:                             |
+#                                                                                  |
+#                      SYSTEM MIGOVEC                                              |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
+encoding  utf-8
+
+survey system_migovec -title "System Migovec"
+	#input the map definitions
+	input "./system_migovec-p.thm"
+	input "./system_migovec-e.thm"
+	
+	# input the individual cave data files
+	input "./primadona_ubend_monatip.th"
+	input "./m2m16m18.th"
+	input "./vrtnarija/vrtnarija.th"
+	
+	
+	# input DEM tiles
+	#input "../DEM/DEM_10m.th"
+	
+	# EQUATE commands for CONNECTIONS
+	# NCB and MONATIP
+	#Wishing Well and Mig Country
+	equate 4@wishing_well2.monatip.primadona_ubend_monatip 1@migconleft.M16.m2m16m18
+	
+	# JOIN commands for the sketches at connection points
+	# NCB and MONATIP
+	
+	
+endsurvey
+

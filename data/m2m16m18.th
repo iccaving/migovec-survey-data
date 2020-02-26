@@ -1,0 +1,16 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A SURVEY DATA FILE FOR:                             |
+#                                                                                  |
+#                      THE OLD SYSTEM (M2, M16, M18)                               |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+survey m2m16m18 -title "Sistem Migovec (the Old System)"
+	input "./m2m16m18-p.thm"
+	input "./m2m16m18-e.thm"
+	
+	# input m2
+	input "./M16/M16.th"
+	# input m18
+endsurvey

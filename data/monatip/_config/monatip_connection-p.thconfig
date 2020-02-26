@@ -10,24 +10,24 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../_xtherion/system_migovec.th"
+source "../../system_migovec.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
 input "../../_layouts/prima_ubend_monatip/overview_plan.thl"
 
 layout local
-    copy overview_plan
-    legend off
-    map-comment "<lang:en>New pitches pushed in the Monatip/M2<br>connection. 2019 discoveries marked in red."
-    code tex-map
-    \def\maplayout{
-        \legendbox{40}{60}{NW}{\size[20]Monatip}
-        \legendbox{40}{54}{NW}{\size[14]M2 Connection}
-        \legendbox{40}{48}{NW}{\size[10]\the\comment}
-        \legendbox{40}{35}{NW}{\scalebar}
-        \legendbox{5}{60}{W}{\northarrow}
-    }
+	copy overview_plan
+	legend off
+	map-comment "<lang:en>New pitches pushed in the Monatip/M2<br>connection. 2019 discoveries marked in red."
+	code tex-map
+	\def\maplayout{
+	\legendbox{40}{60}{NW}{\size[20]Monatip}
+	\legendbox{40}{54}{NW}{\size[14]M2 Connection}
+	\legendbox{40}{48}{NW}{\size[10]\the\comment}
+	\legendbox{40}{35}{NW}{\scalebar}
+	\legendbox{5}{60}{W}{\northarrow}
+	}
 endlayout
 
 #----------------------------------------------------------------------------------|
