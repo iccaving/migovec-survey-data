@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Colour the latest additions red
+
+lookup explo-date
+	[1999.12.31 2018.12.31] [100 100 100] "before 2019"
+	2019.12.31 [100 50 50] "	2019 expeditions"
+endlookup
+
+layout colour-by-new
+	colour map-fg explo-date
+endlayout
+
+# Colour all passage base on date of discovery
+
+layout colour-by-date
+	colour map-fg explo-date
+endlayout
+
+# Colour all passages based on depth
+
+layout colour-by-depth
+	colour map-fg depth
+endlayout

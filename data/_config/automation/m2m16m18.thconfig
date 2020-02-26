@@ -2,7 +2,9 @@
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
 #                                                                                  |
-#                      VRTNARIJA (GARDENER's WORLD)                                |
+#                      GITHUB CI GENERATION OF:                                    |
+#                                                                                  |
+#                      M2 M16 M18 (THE OLD SYSTEM)                                 |
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
@@ -14,16 +16,21 @@ source "../../_xtherion/m2m16m18.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/m2m16m18/overview_plan.thl"
+input "../../_layouts/base-p.thl"
+input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select mm2m16m18-p@m2m16m18 -map-level 0
+select mm2m16m18-p@m2m16m18
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview_plan_SLO or ENG
+layout plan
+	copy base-p
+	copy colour-by-depth
+endlayout
 language fr
-export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.pdf -layout overview_plan
+export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH

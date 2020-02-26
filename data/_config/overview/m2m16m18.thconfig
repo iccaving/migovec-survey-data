@@ -2,7 +2,7 @@
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
 #                                                                                  |
-#                      VRTNARIJA (GARDENER's WORLD)                                |
+#                      M2 M16 M18 (THE OLD SYSTEM)                                 |
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
@@ -14,17 +14,20 @@ source "../../_xtherion/m2m16m18.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/m2m16m18/overview_plan.thl" # i'll change this to m2m16m18 specific layout
-#input "../../_layouts/vrtnarija/overview_plan_ENG.thl" 
-#input "../../_layouts/prima_ubend_monatip/overview_elevation_SLO.thl"
+input "../../_layouts/base-p.thl"
+input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select mm2m16m18-p@m2m16m18 -map-level 0
+select mm2m16m18-p@m2m16m18
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview_plan_SLO or ENG 
-export map -projection plan -o ../../_outputs/map/m2m16m18_plan.pdf -layout overview_plan
+# export a PLAN view, using the LAYOUT overview_plan_SLO or ENG
+layout plan
+	copy base-p
+	copy colour-by-depth
+endlayout
+export map -projection plan -o ../../_outputs/map/m2m16m18_plan.pdf -layout plan
 #export map -projection plan -o ../../_outputs/map/vrtnarija_plan_ENG.pdf -layout overview_plan_ENG
 
 #----------------------------------------------------------------------------------|

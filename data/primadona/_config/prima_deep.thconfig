@@ -1,7 +1,22 @@
-source ../_xtherion/primadona.th
+# Produce a map of Klic Globin and deeper
 
-input ../../_layouts/overviewmap.th
+source "../_xtherion/primadona.th"
+input "../../_layouts/base-p.thl"
+input "../../_layouts/mods.thl"
+
+layout local
+	copy base-p
+	copy colour-by-new
+	code tex-map
+	\framethickness=0.5mm
+	\def\maplayout{
+	\legendbox{0}{89}{NW}{\size[26]Primadona}
+	\legendbox{0}{82}{NW}{\size[16]Deep Branch}
+	\legendbox{100}{0}{SE}{\scalebar}
+	\legendbox{80}{25}{SE}{\northarrow}
+	}
+endlayout
 
 select mklic_globin_deep-p@primadona
 
-export map -o ../_outputs/deep_prima_2019.pdf -projection plan -layout overview
+export map -o ../_outputs/deep_prima_2019.pdf -projection plan -layout local
