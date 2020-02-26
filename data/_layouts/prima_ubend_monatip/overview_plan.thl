@@ -9,249 +9,249 @@ encoding  utf-8
 #             the format is good, trust me                    |
 #_____________________________________________________________|
 
- #2017.12.31 [100 100 100] "2016 Neprehojene Poti and 2017 Cez Rob"  
- #2018.12.31 [100 100 100] "2018 Klic Globin" 
+#2017.12.31 [100 100 100] "2016 Neprehojene Poti and 2017 Cez Rob"
+#2018.12.31 [100 100 100] "2018 Klic Globin"
 
 lookup explo-date
- [1999.12.31 2018.12.31] [100 100 100] "before 2018"
- 2019.12.31 [100 50 50] "2018 and 2019 expeditions"  
+	[1999.12.31 2018.12.31] [100 100 100] "before 2019"
+	2019.12.31 [100 50 50] "	2019 expeditions"
 endlookup
 
 
 layout overview_plan
-
-#_____________________________________________________________
-#                                                             |
-#                        GENERAL STATEMENTS                   |
-#_____________________________________________________________|
-
-  #debug all
-  scale 1 2000
-  
-  colour map-fg explo-date
-  symbol-hide group all
-  min-symbol-scale M
-
-  map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
-
-  symbol-show line wall
-  symbol-show area water
-  symbol-show area sump
-  symbol-show line rock-border
-  symbol-show line pit
-  symbol-show line chimney
-  symbol-show point label
-  symbol-show point continuation
-  symbol-show point dig
-  symbol-show point entrance
-  symbol-show point camp
-  fonts-setup 8 12 12 12 12
-  map-header 0 0 nw
-  colour-legend on
-  legend on
-
-  code tex-map
-  \framethickness=0.5mm
-      \def\maplayout{
-    \legendbox{11}{99}{N}{\size[26]\the\cavename}
-    \legendbox{11}{90}{N}{\size[10]\the\comment}
-    \legendbox{13}{70}{N}{\scalebar}
-    \legendbox{13}{65}{N}{\northarrow}
-    }
-
-code metapost 
-#_____________________________________________________________
-#                                                             |
-#                            LEGEND ITEMS                     |
-#_____________________________________________________________|
-
-  # NORTH ARROW (contributions of Thomas Holder)
-  
-   def s_northarrow (expr rot) =
-    begingroup
-      interim defaultscale:=0.5; % scale your north arrow here
-      T:=identity scaled defaultscale rotated -rot;
-      pickup pencircle scaled (0.08cm * defaultscale);
-      thdraw (-.4cm,-1.4cm)--(0,2.8cm)--(.4cm,-1.4cm)--cycle;
-      p:=fullcircle scaled 1.6cm;
-      thclean p; thdraw p;
-      p:=(0.95cm,0)--(0.65cm,0);
-      thdraw p; thdraw p xscaled -1;
-      pickup pencircle scaled (0.12cm * defaultscale);
-      p:=(0.28cm,0.42cm);
-      thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1);
-    endgroup;
-  enddef; 
-
-  ## SCALE BAR (modified from contributions by Thomas Holder)
-  
-  def s_scalebar (expr l, units, txt) =
-    begingroup
-     interim warningcheck:=0;
-     tmp20:=20 * (l / Scale * cm * units / 100);
-     tmp40:=40 * (l / Scale * cm * units / 100);
-     tmp60:=60 * (l / Scale * cm * units / 100);
-     tmp80:=80 * (l / Scale * cm * units / 100);
-     tmp100:=100 * (l / Scale * cm * units / 100);
-     scal10:=10 * l / 100;
-     scal20:=20 * l / 100;
-     scal40:=40 * l / 100;
-     scal60:=60 * l / 100;
-     scal80:=80 * l / 100;
-     brht:= 5bp;
-     lblht:= 8bp;
-    endgroup;
-
-    pickup PenD;
-
-    draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
-    draw (tmp20,0)--(tmp20,brht);
-    draw (tmp40,0)--(tmp40,brht);
-    draw (tmp60,0)--(tmp60,brht);
-    draw (tmp80,0)--(tmp80,brht);
-    fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
-    fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
-
-
-    begingroup
-     label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
-     label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
-     label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
-     label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
-     label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
-     label.top(thTEX(decimal (0)),origin+(0,lblht));
-     label.bot(thTEX("PLAN 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
-    endgroup
-   enddef; 
-       
-    
-    # ROCKBORDERS
-
-    def l_rockborder_MY (expr P) = 
-      T:=identity;
-      pickup PenD;
-      if cycle P: thclean P fi;
-      thdraw P withcolor (0.3,0.3,0.3);
-    enddef;
-
-
-    def l_wall_blocks_MY (expr P)=
-      T:=identity;
-      cas := 0;
-      dlzka := arclength P;
-    if dlzka > 0:
-      mojkrok:=adjust_step(dlzka, 0.5u);
-      pickup PenC;
-      forever:
-        t1 := arctime (cas + mojkrok*1/10) of P;
-        t2 := arctime (cas + mojkrok*9/10) of P;
-        
-        q := ((point t1 of P) + .2u * unitvector(thdir(P,t1) rotated -125)) -- 
-             (subpath (t1,t2) of P) --
-             ((point t2 of P) + .2u * unitvector(thdir(P,t2) rotated -75));
-        
-        thdraw q randomized (u/12) withcolor(0.3,0.3,0.3);
-        cas := cas + mojkrok;
-        exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
-      endfor;
-    fi;
-    enddef;  
-    
-    # FLOWSTONE
-    
-    def l_wall_flowstone_MY (expr P) = 
-      T:=identity;
-      cas := 0;
-      dlzka := arclength P;
-      mojkrok:=adjust_step(dlzka, .75u);
-      pickup PenC;
-      p := (-.25u,-.05u)--(-.175u,.05u)--(-.1u,-.05u);
-      q := (-.025u,-.05u)--(.05u,.05u)--(0.125u,-.05u);
-      forever:
-        t := arctime (cas + mojkrok/2) of P;
-        thdraw p shifted (point t of P + .25u * unitvector(thdir(P,t) rotated -90)) withcolor(0.85,0.45,0.1);
-        thdraw q shifted (point t of P + .25u * unitvector(thdir(P,t) rotated -90)) withcolor(0.85,0.45,0.1);
-        cas := cas + mojkrok;
-        exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
-      endfor;
-      pickup PenA;  
-      thdraw P withcolor(1,0.5,0.1);
-    enddef;
-
-#_____________________________________________________________
-#                                                             |
-#                            POINT TYPES                      |
-#_____________________________________________________________|
-
-     # CAMPSITE
-      def p_camp_MY (expr P,R,S,A)=
-        U:=(0.1u,0.1u);
-        T:=identity aligned A rotated R scaled S shifted P;
-        q:= (0,0)--(0.36u,0)--(0,.75u)--(-0.36u,0)--cycle;
-        p:= (0,0)--(0,.75u);
-        pickup PenB;
-        thfill q withcolor (1,0,0);
-        thdraw q withcolor (0,0,0);
-        thdraw p withcolor (0,0,0);
-     enddef;
-    
-    
-#_____________________________________________________________
-#                                                             |
-#                            AREA TYPES                       |
-#_____________________________________________________________|
-
-     # WATER
-      def a_water_MY (expr p) =
-       T:=identity;
-       thfill p withcolor (0.7,0.7,0.85);
-     enddef;
-    
-     
-     def a_clay_MY (expr Path) =
-      T:=identity;
-      thclean Path;
-      thfill Path withcolor (0.65,0.55,0.1);
-    enddef;
-    
-
-#_____________________________________________________________
-#                                                             |
-#               NOW WE INITIATE ALL THE SYMBOLS               |
-#_____________________________________________________________|
-   
-    
-    # others
-    initsymbol("l_rockborder_MY");
-     # wall types
-    initsymbol("l_wall_blocks_MY");
-
-    initsymbol("l_wall_flowstone_MY");
-    initsymbol("p_camp_MY");
-   
-   
-   ## areas
-    # redefinitions
-
-    initsymbol("a_water_MY");
-    initsymbol("a_clay_MY");
-
-endcode
-
-#_____________________________________________________________
-#                                                             |
-#          WE ASSIGN THE SYMBOLS TYPES AND COLOURS            |
-#_____________________________________________________________|
-
-
- symbol-assign area water MY
- symbol-assign line wall:blocks MY
- symbol-assign line wall:flowstone MY
- symbol-assign line pit AUT
- symbol-assign point camp MY
-
- symbol-assign area clay MY
-
+	
+	#_____________________________________________________________
+	#                                                             |
+	#                        GENERAL STATEMENTS                   |
+	#_____________________________________________________________|
+	
+	#debug all
+	scale 1 2000
+	
+	colour map-fg explo-date
+	symbol-hide group all
+	min-symbol-scale M
+	
+	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
+	
+	symbol-show line wall
+	symbol-show area water
+	symbol-show area sump
+	symbol-show line rock-border
+	symbol-show line pit
+	symbol-show line chimney
+	symbol-show point label
+	symbol-show point continuation
+	symbol-show point dig
+	symbol-show point entrance
+	symbol-show point camp
+	fonts-setup 8 12 12 12 12
+	map-header 0 0 nw
+	colour-legend on
+	legend on
+	
+	code tex-map
+	\framethickness=0.5mm
+	\def\maplayout{
+	\legendbox{11}{99}{N}{\size[26]\the\cavename}
+	\legendbox{11}{90}{N}{\size[10]\the\comment}
+	\legendbox{13}{70}{N}{\scalebar}
+	\legendbox{13}{65}{N}{\northarrow}
+	}
+	
+	code metapost
+		#_____________________________________________________________
+		#                                                             |
+		#                            LEGEND ITEMS                     |
+		#_____________________________________________________________|
+		
+		# NORTH ARROW (contributions of Thomas Holder)
+		
+		def s_northarrow (expr rot) =
+			begingroup
+				interim defaultscale:=0.5; % scale your north arrow here
+				T:=identity scaled defaultscale rotated -rot;
+				pickup pencircle scaled (0.08cm * defaultscale);
+				thdraw (-.4cm,-1.4cm)--(0,2.8cm)--(.4cm,-1.4cm)--cycle;
+				p:=fullcircle scaled 1.6cm;
+				thclean p; thdraw p;
+				p:=(0.95cm,0)--(0.65cm,0);
+				thdraw p; thdraw p xscaled -1;
+				pickup pencircle scaled (0.12cm * defaultscale);
+				p:=(0.28cm,0.42cm);
+				thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1);
+			endgroup;
+		enddef;
+		
+		## SCALE BAR (modified from contributions by Thomas Holder)
+		
+		def s_scalebar (expr l, units, txt) =
+			begingroup
+				interim warningcheck:=0;
+				tmp20:=20 * (l / Scale * cm * units / 100);
+				tmp40:=40 * (l / Scale * cm * units / 100);
+				tmp60:=60 * (l / Scale * cm * units / 100);
+				tmp80:=80 * (l / Scale * cm * units / 100);
+				tmp100:=100 * (l / Scale * cm * units / 100);
+				scal10:=10 * l / 100;
+				scal20:=20 * l / 100;
+				scal40:=40 * l / 100;
+				scal60:=60 * l / 100;
+				scal80:=80 * l / 100;
+				brht:= 5bp;
+				lblht:= 8bp;
+			endgroup;
+			
+			pickup PenD;
+			
+			draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+			draw (tmp20,0)--(tmp20,brht);
+			draw (tmp40,0)--(tmp40,brht);
+			draw (tmp60,0)--(tmp60,brht);
+			draw (tmp80,0)--(tmp80,brht);
+			fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
+			fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+			
+			
+			begingroup
+				label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+				label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
+				label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
+				label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
+				label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
+				label.top(thTEX(decimal (0)),origin+(0,lblht));
+				label.bot(thTEX("PLAN 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+			endgroup
+		enddef;
+		
+		
+		# ROCKBORDERS
+		
+		def l_rockborder_MY (expr P) =
+			T:=identity;
+			pickup PenD;
+			if cycle P: thclean P fi;
+			thdraw P withcolor (0.3,0.3,0.3);
+		enddef;
+		
+		
+		def l_wall_blocks_MY (expr P)=
+			T:=identity;
+			cas := 0;
+			dlzka := arclength P;
+			if dlzka > 0:
+			mojkrok:=adjust_step(dlzka, 0.5u);
+			pickup PenC;
+			forever:
+			t1 := arctime (cas + mojkrok*1/10) of P;
+			t2 := arctime (cas + mojkrok*9/10) of P;
+			
+			q := ((point t1 of P) + .2u * unitvector(thdir(P,t1) rotated -125)) --
+			(subpath (t1,t2) of P) --
+			((point t2 of P) + .2u * unitvector(thdir(P,t2) rotated -75));
+			
+			thdraw q randomized (u/12) withcolor(0.3,0.3,0.3);
+			cas := cas + mojkrok;
+			exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
+			endfor;
+			fi;
+		enddef;
+		
+		# FLOWSTONE
+		
+		def l_wall_flowstone_MY (expr P) =
+			T:=identity;
+			cas := 0;
+			dlzka := arclength P;
+			mojkrok:=adjust_step(dlzka, .75u);
+			pickup PenC;
+			p := (-.25u,-.05u)--(-.175u,.05u)--(-.1u,-.05u);
+			q := (-.025u,-.05u)--(.05u,.05u)--(0.125u,-.05u);
+			forever:
+			t := arctime (cas + mojkrok/2) of P;
+			thdraw p shifted (point t of P + .25u * unitvector(thdir(P,t) rotated -90)) withcolor(0.85,0.45,0.1);
+			thdraw q shifted (point t of P + .25u * unitvector(thdir(P,t) rotated -90)) withcolor(0.85,0.45,0.1);
+			cas := cas + mojkrok;
+			exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
+			endfor;
+			pickup PenA;
+			thdraw P withcolor(1,0.5,0.1);
+		enddef;
+		
+		#_____________________________________________________________
+		#                                                             |
+		#                            POINT TYPES                      |
+		#_____________________________________________________________|
+		
+		# CAMPSITE
+		def p_camp_MY (expr P,R,S,A)=
+			U:=(0.1u,0.1u);
+			T:=identity aligned A rotated R scaled S shifted P;
+			q:= (0,0)--(0.36u,0)--(0,.75u)--(-0.36u,0)--cycle;
+			p:= (0,0)--(0,.75u);
+			pickup PenB;
+			thfill q withcolor (1,0,0);
+			thdraw q withcolor (0,0,0);
+			thdraw p withcolor (0,0,0);
+		enddef;
+		
+		
+		#_____________________________________________________________
+		#                                                             |
+		#                            AREA TYPES                       |
+		#_____________________________________________________________|
+		
+		# WATER
+		def a_water_MY (expr p) =
+			T:=identity;
+			thfill p withcolor (0.7,0.7,0.85);
+		enddef;
+		
+		
+		def a_clay_MY (expr Path) =
+			T:=identity;
+			thclean Path;
+			thfill Path withcolor (0.65,0.55,0.1);
+		enddef;
+		
+		
+		#_____________________________________________________________
+		#                                                             |
+		#               NOW WE INITIATE ALL THE SYMBOLS               |
+		#_____________________________________________________________|
+		
+		
+		# others
+		initsymbol("l_rockborder_MY");
+		# wall types
+		initsymbol("l_wall_blocks_MY");
+		
+		initsymbol("l_wall_flowstone_MY");
+		initsymbol("p_camp_MY");
+		
+		
+		## areas
+		# redefinitions
+		
+		initsymbol("a_water_MY");
+		initsymbol("a_clay_MY");
+		
+	endcode
+	
+	#_____________________________________________________________
+	#                                                             |
+	#          WE ASSIGN THE SYMBOLS TYPES AND COLOURS            |
+	#_____________________________________________________________|
+	
+	
+	symbol-assign area water MY
+	symbol-assign line wall:blocks MY
+	symbol-assign line wall:flowstone MY
+	symbol-assign line pit AUT
+	symbol-assign point camp MY
+	
+	symbol-assign area clay MY
+	
 endlayout
 
 #_____________________________________________________________

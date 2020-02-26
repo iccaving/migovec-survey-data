@@ -2,7 +2,7 @@
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
 #                                                                                  |
-#                      PRIMADONA, MONATIP, UBEND OVERVIEW                          |
+#                      PRIMADONA DEEP - BELOW KLIC GLOBIN                          |
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
@@ -10,22 +10,31 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../_xtherion/system_migovec.th"
+source "../../primadona/_xtherion/primadona.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/system_migovec/overview_plan.thl"
+input "../../_layouts/prima_ubend_monatip/overview_plan.thl"
+
+layout local
+    copy overview_plan
+    legend off
+    map-comment "<lang:en>Passages discovered below Klic Globin<br>pitch. 2019 discoveries marked in red."
+    code tex-map
+    \def\maplayout{
+        \legendbox{55}{40}{W}{\size[20]Primadonna}
+        \legendbox{55}{34}{W}{\size[14]Deep Branch}
+        \legendbox{55}{26}{W}{\size[10]\the\comment}
+        \legendbox{55}{10}{W}{\scalebar}
+        \legendbox{0}{100}{W}{\northarrow}
+    }
+endlayout
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview1
-language fr
-export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.pdf -layout overview_plan
-export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.svg -layout overview_plan
+# select the relevant map definitions, and levels within those maps
+select mklic_globin_deep-p@primadona
 
 #----------------------------------------------------------------------------------|
-# export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/system_migovec.3d -fmt survex
-
-#----------------------------------------------------------------------------------|
-# export a .lox model, which can be opened in LOCH only
-export model -o ../../_outputs/system_migovec.lox
+# export a PLAN view
+language en
+export map -projection plan -o ../../_outputs/map/below_klic_globin_plan_ENG.pdf -layout local
