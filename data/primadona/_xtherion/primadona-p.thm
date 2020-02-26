@@ -3,28 +3,21 @@ encoding  utf-8
 # This contains the maps of Primadona cave   |
 #————————————————————————————————————————————-
 
-###### MAIN MAP #######
-
-map mprimadona_main-p -projection plan
-	mprima_entrance-p
-	mprima_galerija_branch-p
-	mprima_ttt_branch-p
-	mprima_hammerhead_branch-p
-	mprima_upside_down_area-p
-	mprima_hallelujah_branch-p
-	mprima_klic_globin_branch-p
-	mprima_old_slov_route-p
-	mprima_deep-p
+# Everything
+map mall-p -projection plan
+	mentrance-p
+	mgalerija_branch-p
+	mttt_branch-p
+	mhammerhead_branch-p
+	mupside_down_area-p
+	mhallelujah_branch-p
+	mklic_globin_branch-p
+	mold_slov_route-p
+	mdeep-p
 endmap
 
-map mklic_globin_deep-p -projection plan -title "Primadona deep branch"
-	mprima_klic_globin_branch-p
-	mprima_deep-p
-endmap
-
-##### SUB MAPS ######
-##### these are snippets of branches in Prima
-map mprima_entrance-p -projection plan -title "Entrance Series"
+# Submaps
+map mentrance-p -projection plan -title "Entrance Series"
 	mbelladonna-p@belladonna
 	mdrugi-p@drugi
 	mprima1-p@prima1
@@ -35,7 +28,7 @@ map mprima_entrance-p -projection plan -title "Entrance Series"
 	mrisa2-p@risa2
 endmap
 
-map mprima_galerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
+map mgalerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
 	mgalerija-p@galerija
 	msmer1-p@smer1
 	msmer0-p@smer0
@@ -52,7 +45,7 @@ map mprima_galerija_branch-p -projection plan -title "Galerija and Smer0 Branche
 	mthe_atrium-p@the_atrium
 endmap
 
-map mprima_upside_down_area-p -projection plan -title "Area around Upside Down Chamber"
+map mupside_down_area-p -projection plan -title "Area around Upside Down Chamber"
 	mhotmk-p@hotmk
 	mcolony-p@colony
 	mwac-p@wac
@@ -62,7 +55,7 @@ map mprima_upside_down_area-p -projection plan -title "Area around Upside Down C
 	mgamblers_ruin-p@gamblers_ruin
 endmap
 
-map mprima_ttt_branch-p -projection plan
+map mttt_branch-p -projection plan
 	mapple_crumble-p@apple_crumble
 	mpov-p@pov
 	mttt-p@ttt
@@ -77,12 +70,12 @@ map moctarine_region-p -projection plan -title "Octarine Region (2019)"
 	mdeath_star-p@death_star
 endmap
 
-map end_branch -projection plan -title "End of Hallelujah Branch (2019)"
+map mend_branch -projection plan -title "End of Hallelujah Branch (2019)"
 	mangel_delight-p@angel_delight
 	msump_404_lead_not_found-p@sump_404_lead_not_found
 endmap
-	
-map mprima_hallelujah_branch-p -projection plan -title "Hallelujah Branch"
+
+map mhallelujah_branch-p -projection plan -title "Hallelujah Branch"
 	cattlegrid-the_stile [50 0 m] below
 	mplumbers_p-p@plumbers_p
 	mhallelujah-p@hallelujah
@@ -99,8 +92,8 @@ map mprima_hallelujah_branch-p -projection plan -title "Hallelujah Branch"
 	mangel_delight-p@angel_delight
 	msump_404_lead_not_found-p@sump_404_lead_not_found
 endmap
-	
-map mprima_hammerhead_branch-p -projection plan
+
+map mhammerhead_branch-p -projection plan
 	mdejavu-p@dejavu
 	mhammerhead-p@hammerhead
 	mhammerhead2-p@hammerhead2
@@ -109,7 +102,7 @@ map mprima_hammerhead_branch-p -projection plan
 	low_hammerhead [-150 0 m] below
 endmap
 
-map mprima_old_slov_route-p -projection plan
+map mold_slov_route-p -projection plan
 	mzima00-p@zima00
 	mTTTr-p@TTTr
 	pivnica [0 -100 m] below
@@ -118,7 +111,7 @@ map mprima_old_slov_route-p -projection plan
 	mmilanova-p@milanova
 endmap
 
-map mprima_klic_globin_branch-p -projection plan -title "Klic Globin Branch"
+map mklic_globin_branch-p -projection plan -title "Klic Globin Branch"
 	mlost_in_a_dream-p@lost_in_a_dream
 	mlost_in_a_dream_2-p@lost_in_a_dream_2
 	mpenny_falls-p@penny_falls
@@ -131,11 +124,16 @@ map mprima_klic_globin_branch-p -projection plan -title "Klic Globin Branch"
 	mthe_aqueduct-p@the_aqueduct
 	mad_aspera_per_aqua-p@ad_aspera_per_aqua
 	mmouseleum-p@mouseleum
-	mmouseleum_2-p@mouseleum_2 
-	mchocolate_river-p@chocolate_river 
+	mmouseleum_2-p@mouseleum_2
+	mchocolate_river-p@chocolate_river
 endmap
 
-map mprima_deep-p -projection plan
+map mklic_globin_deep-p -projection plan -title "Primadona deep branch"
+	mklic_globin_branch-p
+	mdeep-p
+endmap
+
+map mdeep-p -projection plan
 	martemis-p@artemis
 	mtartarus-p@tartarus
 	mlachrymosa-p@lachrymosa
@@ -170,31 +168,4 @@ map cattlegrid-the_stile -projection plan
 	mbattery_flattery-p@battery_flattery
 	mmud_moses-p@mud_moses
 	mupotyn-p@upotyn
-endmap
-
-############## EXTENDED ELEVATION #############
-
-map mprimadona_main-e -projection extended
-	mprima1-e@prima1
-	mprima2-e@prima2
-	mttt-e@ttt
-	mpov-e@pov
-	msmer0-e@smer0
-	mgalerija-e@galerija
-	mcattlegrid-e@cattlegrid
-	mforget_me_not-e@forget_me_not
-	mkarstaway-e@karstaway
-	mrisanke-e@risanke
-	mrisa2-e@risa2
-	mzima00-e@zima00
-	mspodnji-e@spodnji
-	majdovscina-e@ajdovscina
-	mmilanova-e@milanova
-
-	mbath-e@bath
-	mangel_delight-e@angel_delight
-	msump_404_lead_not_found-e@sump_404_lead_not_found
-	mlachrymosa-e@lachrymosa
-	martemis-e@artemis
-	mposeidon_rift-e@poseidon_rift
 endmap

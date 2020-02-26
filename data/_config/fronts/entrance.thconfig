@@ -17,22 +17,22 @@ source "../../primadona/_xtherion/primadona.th"
 input "../../_layouts/prima_ubend_monatip/overview_plan.thl"
 
 layout local
-    copy overview_plan
-    legend off
-    map-comment "<lang:en>A new entrance. 2019<br>discoveries marked in red."
-    code tex-map
-    \def\maplayout{
-        \legendbox{60}{100}{NW}{\size[20]Belladonna}
-        \legendbox{60}{93}{NW}{\size[14]Entrance Series}
-        \legendbox{60}{86}{NW}{\size[10]\the\comment}
-        \legendbox{55}{62}{NW}{\scalebar}
-        \legendbox{10}{80}{NW}{\northarrow}
-    }
+	copy overview_plan
+	legend off
+	map-comment "<lang:en>A new entrance. 2019<br>discoveries marked in red."
+	code tex-map
+	\def\maplayout{
+	\legendbox{60}{100}{NW}{\size[20]Belladonna}
+	\legendbox{60}{93}{NW}{\size[14]Entrance Series}
+	\legendbox{60}{86}{NW}{\size[10]\the\comment}
+	\legendbox{55}{62}{NW}{\scalebar}
+	\legendbox{10}{80}{NW}{\northarrow}
+	}
 endlayout
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select mprima_entrance-p@primadona
+select mentrance-p@primadona
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view

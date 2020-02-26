@@ -19,11 +19,11 @@ input "../../_layouts/prima_ubend_monatip/overview_elevation.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select mprima_ubend_monatip-p@system_migovec -map-level 2
-select mprimadona_monatip-e@system_migovec -map-level 0
+#select mprimadona-p@primadona_ubend_monatip -map-level 3
+#select mprimadona_e@primadona_ubend_monatip -map-level 0
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview1 
+# export a PLAN view, using the LAYOUT overview1
 language fr # slo not yet supported
 export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout overview_plan
 language en
