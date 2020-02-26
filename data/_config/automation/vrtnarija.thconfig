@@ -16,21 +16,43 @@ source "../../vrtnarija/_xtherion/vrtnarija.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/vrtnarija/overview_plan.thl"
+input "../../_layouts/base-p.thl"
+input "../../_layouts/base-e.thl"
+input "../../_layouts/mods.thl"
+
+#----------------------------------------------------------------------------------|
+# select the relevant map definitions, and levels within those maps
+select mvrtnarija-p@vrtnarija -map-level 0
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1
-#language fr
-#export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.pdf -layout overview_plan
-#export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.svg -layout overview_plan
-#language en
-#export map -projection plan -o ../../_outputs/vrtnarija_plan_ENG.pdf -layout overview_plan
-#export map -projection plan -o ../../_outputs/vrtnarija_plan_ENG.svg -layout overview_plan
+layout plan
+	copy base-p
+	copy colour-by-new
+	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: XXXX<br><br>Vilinska Jama<br>kat. št.: YYYYY<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: XXXX<br><br>Vilinska Jama<br>Cadastral number: XXXX<br>"
+	code tex-map
+	\framethickness=0.5mm
+	\def\maplayout{
+	\legendbox{-5}{99}{NW}{\size[26]\the\cavename}
+	\legendbox{-5}{95}{NW}{\size[10]\the\comment}
+	\legendbox{5}{70}{NW}{\scalebar}
+	\legendbox{5}{65}{NW}{\northarrow}
+	}
+endlayout
+language fr
+export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.svg -layout plan
+language en
+export map -projection plan -o ../../_outputs/vrtnarija_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../_outputs/vrtnarija_plan_ENG.svg -layout plan
+
+#----------------------------------------------------------------------------------|
+# export an ELEVATION view, using the LAYOUT overview2
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-#export model -o ../../_outputs/vrtnarija.3d
+export model -o ../../_outputs/vrtnarija.3d
 
 #----------------------------------------------------------------------------------|
-# export a .lox model, which can be opened in LOCH
+# export a .lox model, which can be opened in LOCH only
 export model -o ../../_outputs/vrtnarija.lox
