@@ -1,41 +1,41 @@
 survey monatip10 -title "Monatip 10"
-
-
-input monatip10-p.th2
-
-map mmonatip10-p -projection plan
-    monatip10-1p
-endmap
-
+	
+	
+	input monatip10-p.th2
+	
+	map m-monatip10-p -projection plan
+		monatip10-1p
+	endmap
+	
 	centreline
-
-	team "Zdenko Rejec" notes insts
-	team "B. Tružnovec" insts tape
-
-	explo-team "Zdenko Rejec"
-	explo-team "B. Tružnovec"
-	explo-team "Grega Maffi"
-	explo-team "Andrej Fratnik"
-
-	date 2015.09.27
-	explo-date 2015.09.27
-
-	 1	2	3.66	55		-74.2	# 
-	 2	3	4.51	55		-84.9	#
-	 3	4	6.86	68		-43.2	#
-	 4	5	3.30	122		+15.8	#
-	 5	6	8.85	138		-1.5	#
-	 6	7	5.47	130		-8.5	#
-	 7	8	7.48	89		+8.9	#
-
-	2	.	16.9	0	-90
-	4	.	3.6		0	-90
-	4	.	6.2		0	+90
-	5	.	7.2		0	-90
-	5	.	6.8		0	+90
-	6	.	7.5		0	-90
-	6	.	6.2		0	+90
-
+		
+		team "Zdenko Rejec" notes insts
+		team "B. Tružnovec" insts tape
+		
+		explo-team "Zdenko Rejec"
+		explo-team "B. Tružnovec"
+		explo-team "Grega Maffi"
+		explo-team "Andrej Fratnik"
+		
+		date 2015.09.27
+		explo-date 2015.09.27
+		
+		1	2	3.66	55		-74.2	#
+		2	3	4.51	55		-84.9	#
+		3	4	6.86	68		-43.2	#
+		4	5	3.30	122		+15.8	#
+		5	6	8.85	138		-1.5	#
+		6	7	5.47	130		-8.5	#
+		7	8	7.48	89		+8.9	#
+		
+		2	.	16.9	0	-90
+		4	.	3.6		0	-90
+		4	.	6.2		0	+90
+		5	.	7.2		0	-90
+		5	.	6.8		0	+90
+		6	.	7.5		0	-90
+		6	.	6.2		0	+90
+		
 	endcentreline
 endsurvey
 
@@ -45,20 +45,20 @@ endsurvey
 
 # ;Merili:  Rejec Z, Trunovec B
 # ;Risal: Zdenko Rejec
-# ;ostali udelezenci: Fratnik A, Maffi G, 
+# ;ostali udelezenci: Fratnik A, Maffi G,
 # ;Data entered by Zdenko Rejec 27/09/15
 
 # ;data normal bcra grade 5
 
-# ;navezava 
-# ;*equate 	monatip10.1     monatip07.6 
+# ;navezava
+# ;*equate 	monatip10.1     monatip07.6
 
 
 # *begin monatip10
 # *date 2015.09.27
 # *data normal from to tape compass clino	;komentar
 # *set decimal (.)
-# 1	2	3.66	55		-74.2	; 
+# 1	2	3.66	55		-74.2	;
 # 2	3	4.51	55		-84.9	;
 # 3	4	6.86	68		-43.2	;
 # 4	5	3.30	122		+15.8	;
@@ -96,7 +96,7 @@ endsurvey
 # ;4 prehod po krajem rovu doline 2.6m v sredino naslednjega brezna
 # ;5 zaèetek naslednjega brezna elipsaste oblike doline 7.8 in irine 2.8m
 # ;6 zaèetek rova irine 1,2m in viine 0,5m do 1.5m
-# ;7 moic: 
+# ;7 moic:
 # ;8 kriièe:levo naprej je potrebno pregledat brezence z monostjo nadaljevanja
 # ;9 spust na dno meandra
 # ;10 zaèetek rova po dnu meandra

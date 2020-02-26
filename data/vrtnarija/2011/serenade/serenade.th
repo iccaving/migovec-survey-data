@@ -1,29 +1,29 @@
 
 survey serenade -title "Serenade"
-
-input serenade-p.th2
-
-map mserenade-p -projection plan 
-    serenade-1p
-endmap
-
-
-centreline
-    team "Jan Evetts" insts
-    team "Kate Smith" notes
-    explo-team "Jan Evetts"
-    explo-team "Kate Smith"
-    date 2011.7.27
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	6.61	191	+34
-    3	2	3.10	004	+19
-    4	3	0.76	008	+21
-    5	4	2.36	041	-16
-    6	5	2.55	039	-52
-    7	6	6.63	131	-34
-endcentreline
+	
+	input serenade-p.th2
+	
+	map m-serenade-p -projection plan
+		serenade-1p
+	endmap
+	
+	
+	centreline
+		team "Jan Evetts" insts
+		team "Kate Smith" notes
+		explo-team "Jan Evetts"
+		explo-team "Kate Smith"
+		date 2011.7.27
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	6.61	191	+34
+		3	2	3.10	004	+19
+		4	3	0.76	008	+21
+		5	4	2.36	041	-16
+		6	5	2.55	039	-52
+		7	6	6.63	131	-34
+	endcentreline
 endsurvey
 
 # Converted From SVX

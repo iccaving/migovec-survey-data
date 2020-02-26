@@ -1,60 +1,60 @@
 survey snakebitetwo -title "Snakebite 2"
-
-input "snakebitetwo-p.th2"
-input "snakebitetwo-e.th2"
-
-map msnakebitetwo-e -projection extended
-	snakebitetwo-e1
-endmap
-
-map msnakebitetwo-p -projection plan
-	msnakebitetwo-p1
-endmap
-
-map msnakebitetwo-p1 -projection plan
-	snakebitetwo-p1
-endmap
-
-centreline
-	date 2018.07.18
-	explo-date 2018.07.18
-	team "James Hooper" insts notes
-	team "David [P Wilson]" tape
-
-	explo-team "James Hooper"
-	explo-team "David [P Wilson]"
-
-	units length meters
-	units compass clino degrees
-	data normal from to length compass clino
-
-	extend right
-	2	1	12.00	165	-03
-	extend right
-	3	2	7.94	168	-10
-	extend vertical
-	3	4	3.58	-	down
-	extend right
-	5	4	3.36	191	+21
-	extend right
-	2	6	6.70	195	-70
-	extend right
-	7	3	11.52	152	-10
-	extend right
-	8	7	6.67	156	-10
-
-	extend left
-	8	9	7.00	340	+15
-	extend right
-	10	8	3.90	067	-18
-	extend left
-	10	11	4.08	312	00
-	extend vertical
-	11	12	2.02	-	up
-	extend right
-	13	12	7.49	159	-14
-	extend right
-	14	13	2.20	155	+25
-
-endcentreline
+	
+	input "snakebitetwo-p.th2"
+	input "snakebitetwo-e.th2"
+	
+	map  m-snakebitetwo-e -projection extended
+		snakebitetwo-e1
+	endmap
+	
+	map m-snakebitetwo-p -projection plan
+		msnakebitetwo-p1
+	endmap
+	
+	map msnakebitetwo-p1 -projection plan
+		snakebitetwo-p1
+	endmap
+	
+	centreline
+		date 2018.07.18
+		explo-date 2018.07.18
+		team "James Hooper" insts notes
+		team "David [P Wilson]" tape
+		
+		explo-team "James Hooper"
+		explo-team "David [P Wilson]"
+		
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		extend right
+		2	1	12.00	165	-03
+		extend right
+		3	2	7.94	168	-10
+		extend vertical
+		3	4	3.58	-	down
+		extend right
+		5	4	3.36	191	+21
+		extend right
+		2	6	6.70	195	-70
+		extend right
+		7	3	11.52	152	-10
+		extend right
+		8	7	6.67	156	-10
+		
+		extend left
+		8	9	7.00	340	+15
+		extend right
+		10	8	3.90	067	-18
+		extend left
+		10	11	4.08	312	00
+		extend vertical
+		11	12	2.02	-	up
+		extend right
+		13	12	7.49	159	-14
+		extend right
+		14	13	2.20	155	+25
+		
+	endcentreline
 endsurvey

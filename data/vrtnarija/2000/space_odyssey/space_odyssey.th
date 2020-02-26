@@ -1,16 +1,16 @@
 survey space_odyssey
-
+	
 	input space_odyssey-p.th2
-
-	map mspace_odyssey-p -projection plan
+	
+	map m-space_odyssey-p -projection plan
 		mspace_odyssey-p1
 		mspace_odyssey-p2
 	endmap
-
+	
 	map mspace_odyssey-p1 -projection plan
 		space_odyssey-p1
 	endmap
-
+	
 	map mspace_odyssey-p2 -projection plan
 		space_odyssey-p2
 	endmap
@@ -18,18 +18,18 @@ survey space_odyssey
 	centreline
 		date 2000.08.01
 		explo-date 2000.08.01
-
+		
 		team "Ben Johnson" insts tape
 		team "James Hooper" notes
-
+		
 		explo-team "Ben Johnson"
 		explo-team "James Hooper"
-
-		1	2	3.98	354	-21	# station 1 is pss cairn	
+		
+		1	2	3.98	354	-21	# station 1 is pss cairn
 		2	3	19.89	-	up
 		4	3	10.60	289	-08
 		5	4	25.90	315	-85
 		6	5	2.73	344	02	# station 6 is pss cairn
-
+		
 	endcentreline
 endsurvey

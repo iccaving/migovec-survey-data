@@ -1,27 +1,27 @@
 survey concorde -title "Concorde pitch"
 	
 	input concorde-p.th2
-
-	map mconcorde-p -projection plan
+	
+	map m-concorde-p -projection plan
 		concorde-p1
 	endmap
-
-	centreline	
-
+	
+	centreline
+		
 		date 2000.08.02
 		explo-date 2000.08.02
-
+		
 		team "Pete Jurd" notes
 		team "Jim Evans" insts tape
-
+		
 		explo-team "Pete Jurd"
 		explo-team "Jim Evans"
-
+		
 		1	2	14.33	-	up
 		2	3	18.05	-	up
 		3	4	20.58	-	up
 		4	5	13.81	-	up
 		6	5	2.70	192	-12
-
+		
 	endcentreline
 endsurvey

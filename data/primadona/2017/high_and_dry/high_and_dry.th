@@ -1,29 +1,29 @@
 survey high_and_dry -title "High and Dry"
-
+	
 	input "high_and_dry-p.th2"
 	input "high_and_dry-e.th2"
-
-	map mhigh_and_dry-p -projection plan
+	
+	map m-high_and_dry-p -projection plan
 		high_and_dry-p1
 		high_and_dry-p2
 	endmap
-
-	map mhigh_and_dry-e -projection extended
+	
+	map  m-high_and_dry-e -projection extended
 		high_and_dry-1e
 	endmap
-
+	
 	centreline
 		explo-date 2017.07.26
 		date 2017.07.26
-
+		
 		team "Tanguy Racine" notes
 		team "James Wilson" tape
 		team "William French" insts
-
-		explo-team "Tanguy Racine" 
-		explo-team "James Wilson" 
+		
+		explo-team "Tanguy Racine"
+		explo-team "James Wilson"
 		explo-team "William French"
-
+		
 		#PAGE 1/1
 		extend left
 		2	1	2.00	232	+04
@@ -46,12 +46,12 @@ survey high_and_dry -title "High and Dry"
 		10	11	2.70	044	+18
 		extend left
 		11	12	1.24	237	+11
-
-
+		
+		
 		#NOTES
 		#STN 1 is PSS
 		#STN 7 is PSS in chamber
 		#STN 12 is Dogfish STN 1
-		endcentreline
-
+	endcentreline
+	
 endsurvey

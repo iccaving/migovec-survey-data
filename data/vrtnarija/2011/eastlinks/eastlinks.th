@@ -1,45 +1,45 @@
 
 survey eastlinks -title "Lost Miles"
-
-input eastlinks-p.th2
-
-map meastlinks-p -projection plan 
-    eastlinks-1p
-endmap
-
-centreline
-    team "Izi" insts
-    team "Gergely Ambrus" notes
-    explo-team "Gergely Ambrus"
-    explo-team "Izi"
-    date 2011.8.03
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	6.49	116	+17
-    3	2	23.89	158	+2
-    4	3	34.52	188	+1
-    5	4	23.30	181	-1
-    6	5	9.65	281	-8
-    7	6	6.79	298	+18
-    8	7	7.57	296	+28
-    9	8	3.88	279	+21
-    10	9	4.08	310	+17
-    11	10	5.74	263	+33
-    12	11	13.41	190	-8
-    13	12	19.90	208	-6
-    14	13	11.66	204	-13
-    15	14	3.53	202	+19
-    16	15	12.39	206	+1
-    17	16	9.40	191	+10
-    18	17	6.90	131	+7
-    19	18	9.51	169	-4
-    20	19	9.75	187	-2
-    21	20	19.54	217	-15
-    22	21	9.32	155	-10
-    23	22	16.91	207	-17
-    23	24	2.31	288	-27
-endcentreline
+	
+	input eastlinks-p.th2
+	
+	map m-eastlinks-p -projection plan
+		eastlinks-1p
+	endmap
+	
+	centreline
+		team "Izi" insts
+		team "Gergely Ambrus" notes
+		explo-team "Gergely Ambrus"
+		explo-team "Izi"
+		date 2011.8.03
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	6.49	116	+17
+		3	2	23.89	158	+2
+		4	3	34.52	188	+1
+		5	4	23.30	181	-1
+		6	5	9.65	281	-8
+		7	6	6.79	298	+18
+		8	7	7.57	296	+28
+		9	8	3.88	279	+21
+		10	9	4.08	310	+17
+		11	10	5.74	263	+33
+		12	11	13.41	190	-8
+		13	12	19.90	208	-6
+		14	13	11.66	204	-13
+		15	14	3.53	202	+19
+		16	15	12.39	206	+1
+		17	16	9.40	191	+10
+		18	17	6.90	131	+7
+		19	18	9.51	169	-4
+		20	19	9.75	187	-2
+		21	20	19.54	217	-15
+		22	21	9.32	155	-10
+		23	22	16.91	207	-17
+		23	24	2.31	288	-27
+	endcentreline
 endsurvey
 
 # Converted From SVX

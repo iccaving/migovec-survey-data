@@ -1,30 +1,30 @@
 survey damp_squib -title "Damp Squib"
 	input "damp_squib-p.th2"
 	input "damp_squib-e.th2"
-
-
-	map mdamp_squib-p -projection plan
+	
+	
+	map m-damp_squib-p -projection plan
 		mdamp_squib-p4
 		mdamp_squib-p3
 		mdamp_squib-p2
 		mdamp_squib-p1
 	endmap
-
-	map mdamp_squib-e -projection extended
+	
+	map  m-damp_squib-e -projection extended
 		damp_squib-e1
 	endmap
 	map mdamp_squib-p1 -projection plan
 		damp_squib-p1
 	endmap
-
+	
 	map mdamp_squib-p2 -projection plan
 		damp_squib-p2
 	endmap
-
+	
 	map mdamp_squib-p3 -projection plan
 		damp_squib-p3
 	endmap
-
+	
 	map mdamp_squib-p4 -projection plan
 		damp_squib-p4
 	endmap
@@ -32,13 +32,13 @@ survey damp_squib -title "Damp Squib"
 	centreline
 		date 2018.08.01
 		explo-date 2018.08.01
-
+		
 		team "Arun Paul"
 		team "Clare Tan"
-
+		
 		explo-team "Arun Paul"
 		explo-team "Clare Tan"
-
+		
 		#Page 1
 		extend right
 		1	2	1.93	095	-51
@@ -64,7 +64,7 @@ survey damp_squib -title "Damp Squib"
 		11	12	1.85	309	71
 		extend right
 		12	13	2.42	024	12
-
+		
 		#Page 2
 		extend right
 		13	14	1.95	327	26
@@ -78,14 +78,14 @@ survey damp_squib -title "Damp Squib"
 		17	18	29.43	-	UP
 		extend left
 		18	19	3.49	112	58
-
-		#NOTES 
+		
+		#NOTES
 		#STN 1 is PSS
 		#STN 1-(9 is choked rift
 		#STTN 16 is PSS in chamber at bottom of big pitch
 		#STN 18 is bolt at top of pitch
 		#stn 19 is diagonalley stn 4
 		#Stopped back sighting at stn 16 to stn15 leg.
-
+		
 	endcentreline
 endsurvey

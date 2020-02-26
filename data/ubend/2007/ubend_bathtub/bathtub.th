@@ -1,40 +1,40 @@
 encoding  utf-8
 survey bathtub
-
-  input "bathtub-p.th2"
-  input "bathtub-e.th2"
-  
-  map mbathtub-p -projection plan
-    bathtubp_1
-  endmap
-
-  map mbathtub-e -projection extended
-    bathtub-1e
-  endmap
-  
-  centreline
-    date 2007.08.04
-    explo-date 2007.08.04
-
-    team "Alvin Chow" insts
-    team "Sandeep Mavadia" notes
-
-    explo-team "Alvin Chow"
-    explo-team "Sandeep Mavadia"
-    
-    units length meters
-    units compass clino degrees
-    
-    extend right
-    1	2	4.44	047	+30	#	1 2.5 (pitch) n/a ; .1 is PSS cairn next to drainpipe pitch
-    extend vertical
-    2	3	13.14	-	up	#	3 1.5 n/a 2
-    extend left
-    4	3	3.02	234	-60	#	.5 1.5 2.5 3.5
-    extend right
-    4	5	3.26	331	+65	#	
-
-  endcentreline
-
+	
+	input "bathtub-p.th2"
+	input "bathtub-e.th2"
+	
+	map m-bathtub-p -projection plan
+		bathtubp_1
+	endmap
+	
+	map  m-bathtub-e -projection extended
+		bathtub-1e
+	endmap
+	
+	centreline
+		date 2007.08.04
+		explo-date 2007.08.04
+		
+		team "Alvin Chow" insts
+		team "Sandeep Mavadia" notes
+		
+		explo-team "Alvin Chow"
+		explo-team "Sandeep Mavadia"
+		
+		units length meters
+		units compass clino degrees
+		
+		extend right
+		1	2	4.44	047	+30	#	1 2.5 (pitch) n/a ; .1 is PSS cairn next to drainpipe pitch
+		extend vertical
+		2	3	13.14	-	up	#	3 1.5 n/a 2
+		extend left
+		4	3	3.02	234	-60	#	.5 1.5 2.5 3.5
+		extend right
+		4	5	3.26	331	+65	#
+		
+	endcentreline
+	
 endsurvey
 

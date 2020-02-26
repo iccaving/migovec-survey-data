@@ -1,80 +1,80 @@
 survey electric_dreams
-
+	
 	input "electric_dreams-p.th2"
 	input "electric_dreams-e.th2"
-
-	map melectric_dreams-e -projection extended
+	
+	map  m-electric_dreams-e -projection extended
 		electric_dreams-e1
 	endmap
-
-	map melectric_dreams-p -projection plan
+	
+	map m-electric_dreams-p -projection plan
 		electric_dreams-p1
 		electric_dreams-p2
 		electric_dreams-p3
 		#electric_dreams-p4
 	endmap
-
+	
 	join electric_dreams-p1 electric_dreams-p3
 	join electric_dreams-p3 electric_dreams-p2
-
+	
 	centreline
-	date 2017.07.07
-	explo-date 2017.07.07
-
-	team "Rhys Tyers" insts
-	team "Jack Hare" insts
-	team "David [P Wilson]" notes
-	explo-team "Rhys Tyers" 
-	explo-team "Jack Hare" 
-	explo-team "David [P Wilson]"
-
-	#data on 2 pages
-	#PAGE 1/2
-	extend left
-	2	1	1.12	295	+01
-	extend left
-	3	2	6.27	269	+00
-	extend left
-	4	3	3.85	197	+09
-	extend left
-	5	4	12.83	253	-04
-	6	5	9.30	270	+13
-	extend vertical
-	7	6	15.11	-	DOWN
-	extend left
-	8	7	7.25	273	-07
-	extend vertical
-	9	8	11.63	-	DOWN
-	extend left
-	10	9	4.80	128	-55
-	11	10	13.70	175	-13
-	12	11	4.88	165	-08
-	13	12	8.51	156	-14
-	14	13	8.06	172	-20
-
-	#PAGE 2/2
-
-	15	14	6.90	275	-50
-	16	15	6.16	298	-06
-	17	16	5.98	272	-16
-	18	17	4.43	325	+07
-	19	18	4.76	219	-10
-	20	19	1.00	-	DOWN
-	21	20	3.55	270	+33
-	22	21	3.85	218	+30
-	23	22	3.99	227	+73
-	24	23	2.67	012	+06
-	25	24	1.00	-	UP
-
-
-
-#NOTES
-#STN 1 IS PSS
-#STN5 IS PSS
-#STN 14 IS PSS
-#STN 18 IS DEAD BAT
-#STN 21 is above Karstaway
-#STN 25 is Y-hang bolt of karstaway
-
+		date 2017.07.07
+		explo-date 2017.07.07
+		
+		team "Rhys Tyers" insts
+		team "Jack Hare" insts
+		team "David [P Wilson]" notes
+		explo-team "Rhys Tyers"
+		explo-team "Jack Hare"
+		explo-team "David [P Wilson]"
+		
+		#data on 2 pages
+		#PAGE 1/2
+		extend left
+		2	1	1.12	295	+01
+		extend left
+		3	2	6.27	269	+00
+		extend left
+		4	3	3.85	197	+09
+		extend left
+		5	4	12.83	253	-04
+		6	5	9.30	270	+13
+		extend vertical
+		7	6	15.11	-	DOWN
+		extend left
+		8	7	7.25	273	-07
+		extend vertical
+		9	8	11.63	-	DOWN
+		extend left
+		10	9	4.80	128	-55
+		11	10	13.70	175	-13
+		12	11	4.88	165	-08
+		13	12	8.51	156	-14
+		14	13	8.06	172	-20
+		
+		#PAGE 2/2
+		
+		15	14	6.90	275	-50
+		16	15	6.16	298	-06
+		17	16	5.98	272	-16
+		18	17	4.43	325	+07
+		19	18	4.76	219	-10
+		20	19	1.00	-	DOWN
+		21	20	3.55	270	+33
+		22	21	3.85	218	+30
+		23	22	3.99	227	+73
+		24	23	2.67	012	+06
+		25	24	1.00	-	UP
+		
+		
+		
+		#NOTES
+		#STN 1 IS PSS
+		#STN5 IS PSS
+		#STN 14 IS PSS
+		#STN 18 IS DEAD BAT
+		#STN 21 is above Karstaway
+		#STN 25 is Y-hang bolt of karstaway
+		
 	endcentreline
 endsurvey

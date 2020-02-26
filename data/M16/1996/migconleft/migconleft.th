@@ -1,33 +1,33 @@
 
 survey migconleft -title "Mig Country 2"
-    
-    input "migconleft-p.th2"
-    
-    map mmigconleft-p -projection plan
-        migconleft-1p
-        migconleft-2p
-    endmap
-centreline
-
-    date 1996.08.10
-    team "Colm Carroll" notes
-    team "Sarah Wingrove" insts
-    explo-team "Colm Carroll"
-    explo-team "Sarah Wingrove"
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino
-
-    2       1       10.87   345     -03
-    2       3       20.23   049     -29
-    3       4       7.53    066     +33
-    4       5       11.53   021     +21
-    5       6       20.33   049     +27
-endcentreline
+	
+	input "migconleft-p.th2"
+	
+	map m-migconleft-p -projection plan
+		migconleft-1p
+		migconleft-2p
+	endmap
+	centreline
+		
+		date 1996.08.10
+		team "Colm Carroll" notes
+		team "Sarah Wingrove" insts
+		explo-team "Colm Carroll"
+		explo-team "Sarah Wingrove"
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino
+		
+		2       1       10.87   345     -03
+		2       3       20.23   049     -29
+		3       4       7.53    066     +33
+		4       5       11.53   021     +21
+		5       6       20.33   049     +27
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #

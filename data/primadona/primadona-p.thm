@@ -4,168 +4,168 @@ encoding  utf-8
 #————————————————————————————————————————————-
 
 # Everything
-map mall-p -projection plan
-	mentrance-p
-	mgalerija_branch-p
-	mttt_branch-p
-	mhammerhead_branch-p
-	mupside_down_area-p
-	mhallelujah_branch-p
-	mklic_globin_branch-p
-	mold_slov_route-p
-	mdeep-p
+map m-all-p -projection plan
+	m-entrance-p
+	m-galerija_branch-p
+	m-ttt_branch-p
+	m-hammerhead_branch-p
+	m-upside_down_area-p
+	m-hallelujah_branch-p
+	m-klic_globin_branch-p
+	m-old_slov_route-p
+	m-deep-p
 endmap
 
 # Submaps
-map mentrance-p -projection plan -title "Entrance Series"
-	mbelladonna-p@belladonna
-	mdrugi-p@drugi
-	mprima1-p@prima1
-	mprima2-p@prima2
-	mbrez_volje-p@brez_volje
-	mpopotresni-p@popotresni
-	mrisanke-p@risanke
-	mrisa2-p@risa2
+map m-entrance-p -projection plan -title "Entrance Series"
+	m-belladonna-p@belladonna
+	m-drugi-p@drugi
+	m-prima1-p@prima1
+	m-prima2-p@prima2
+	m-brez_volje-p@brez_volje
+	m-popotresni-p@popotresni
+	m-risanke-p@risanke
+	m-risa2-p@risa2
 endmap
 
-map mgalerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
-	mgalerija-p@galerija
-	msmer1-p@smer1
-	msmer0-p@smer0
-	mjack_of_hearts-p@jack_of_hearts
-	mquantum_state-p@quantum_state
-	mterminus-p@terminus
-	modessey-p@odessey
-	melectric_dreams-p@electric_dreams
-	mkarstaway-p@karstaway
-	mdysentry-p@dysentry
-	mmore_like_welding-p@more_like_welding
-	mstranglehold-p@stranglehold
-	mmfi-p@mfi
-	mthe_atrium-p@the_atrium
+map m-galerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
+	m-galerija-p@galerija
+	m-smer1-p@smer1
+	m-smer0-p@smer0
+	m-jack_of_hearts-p@jack_of_hearts
+	m-quantum_state-p@quantum_state
+	m-terminus-p@terminus
+	m-odessey-p@odessey
+	m-electric_dreams-p@electric_dreams
+	m-karstaway-p@karstaway
+	m-dysentry-p@dysentry
+	m-more_like_welding-p@more_like_welding
+	m-stranglehold-p@stranglehold
+	m-mfi-p@mfi
+	m-the_atrium-p@the_atrium
 endmap
 
-map mupside_down_area-p -projection plan -title "Area around Upside Down Chamber"
-	mhotmk-p@hotmk
-	mcolony-p@colony
-	mwac-p@wac
-	mwhat_a_disappointment-p@what_a_disappointment
-	mudc-p@udc
-	mtight_and_scrotty-p@tight_and_scrotty
-	mgamblers_ruin-p@gamblers_ruin
+map m-upside_down_area-p -projection plan -title "Area around Upside Down Chamber"
+	m-hotmk-p@hotmk
+	m-colony-p@colony
+	m-wac-p@wac
+	m-what_a_disappointment-p@what_a_disappointment
+	m-udc-p@udc
+	m-tight_and_scrotty-p@tight_and_scrotty
+	m-gamblers_ruin-p@gamblers_ruin
 endmap
 
-map mttt_branch-p -projection plan
-	mapple_crumble-p@apple_crumble
-	mpov-p@pov
-	mttt-p@ttt
-	mbatmere-p@batmere
+map m-ttt_branch-p -projection plan
+	m-apple_crumble-p@apple_crumble
+	m-pov-p@pov
+	m-ttt-p@ttt
+	m-batmere-p@batmere
 endmap
 
-map moctarine_region-p -projection plan -title "Octarine Region (2019)"
-	mpurgatory-p@purgatory
-	mbath-p@bath
-	moctarine-p@octarine
-	moctarine_core-p@octarine_core
-	mdeath_star-p@death_star
+map m-octarine_region-p -projection plan -title "Octarine Region (2019)"
+	m-purgatory-p@purgatory
+	m-bath-p@bath
+	m-octarine-p@octarine
+	m-octarine_core-p@octarine_core
+	m-death_star-p@death_star
 endmap
 
 map mend_branch -projection plan -title "End of Hallelujah Branch (2019)"
-	mangel_delight-p@angel_delight
-	msump_404_lead_not_found-p@sump_404_lead_not_found
+	m-angel_delight-p@angel_delight
+	m-sump_404_lead_not_found-p@sump_404_lead_not_found
 endmap
 
-map mhallelujah_branch-p -projection plan -title "Hallelujah Branch"
+map m-hallelujah_branch-p -projection plan -title "Hallelujah Branch"
 	cattlegrid-the_stile [50 0 m] below
-	mplumbers_p-p@plumbers_p
-	mhallelujah-p@hallelujah
-	msweet_baby_jesus-p@sweet_baby_jesus
-	mholy_moley-p@holy_moley
-	malabaster-p@alabaster
-	mpurgatory-p@purgatory
-	moctarine-p@octarine
-	moctarine_core-p@octarine_core
-	mbath-p@bath
-	mdeath_star-p@death_star
-	mcanticle_for_migovec-p@canticle_for_migovec
-	mtestify-p@testify
-	mangel_delight-p@angel_delight
-	msump_404_lead_not_found-p@sump_404_lead_not_found
+	m-plumbers_p-p@plumbers_p
+	m-hallelujah-p@hallelujah
+	m-sweet_baby_jesus-p@sweet_baby_jesus
+	m-holy_moley-p@holy_moley
+	m-alabaster-p@alabaster
+	m-purgatory-p@purgatory
+	m-octarine-p@octarine
+	m-octarine_core-p@octarine_core
+	m-bath-p@bath
+	m-death_star-p@death_star
+	m-canticle_for_migovec-p@canticle_for_migovec
+	m-testify-p@testify
+	m-angel_delight-p@angel_delight
+	m-sump_404_lead_not_found-p@sump_404_lead_not_found
 endmap
 
-map mhammerhead_branch-p -projection plan
-	mdejavu-p@dejavu
-	mhammerhead-p@hammerhead
-	mhammerhead2-p@hammerhead2
-	mhammerhead3-p@hammerhead3
+map m-hammerhead_branch-p -projection plan
+	m-dejavu-p@dejavu
+	m-hammerhead-p@hammerhead
+	m-hammerhead2-p@hammerhead2
+	m-hammerhead3-p@hammerhead3
 	mdogfish-p2@dogfish
 	low_hammerhead [-150 0 m] below
 endmap
 
-map mold_slov_route-p -projection plan
-	mzima00-p@zima00
-	mTTTr-p@TTTr
+map m-old_slov_route-p -projection plan
+	m-zima00-p@zima00
+	m-TTTr-p@TTTr
 	pivnica [0 -100 m] below
-	mpivnica_2_resurvey-p@pivnica_2_resurvey
-	mspodnji-p@spodnji
-	mmilanova-p@milanova
+	m-pivnica_2_resurvey-p@pivnica_2_resurvey
+	m-spodnji-p@spodnji
+	m-milanova-p@milanova
 endmap
 
-map mklic_globin_branch-p -projection plan -title "Klic Globin Branch"
-	mlost_in_a_dream-p@lost_in_a_dream
-	mlost_in_a_dream_2-p@lost_in_a_dream_2
-	mpenny_falls-p@penny_falls
-	mpenny_falls_2-p@penny_falls_2
-	mtiger_tiger-p@tiger_tiger
-	mdeeper_than_most-p@deeper_than_most
-	mmoonraker-p@moonraker
-	mmoonraker_2-p@moonraker_2
-	mklic_globin-p@klic_globin
-	mthe_aqueduct-p@the_aqueduct
-	mad_aspera_per_aqua-p@ad_aspera_per_aqua
-	mmouseleum-p@mouseleum
-	mmouseleum_2-p@mouseleum_2
-	mchocolate_river-p@chocolate_river
+map m-klic_globin_branch-p -projection plan -title "Klic Globin Branch"
+	m-lost_in_a_dream-p@lost_in_a_dream
+	m-lost_in_a_dream_2-p@lost_in_a_dream_2
+	m-penny_falls-p@penny_falls
+	m-penny_falls_2-p@penny_falls_2
+	m-tiger_tiger-p@tiger_tiger
+	m-deeper_than_most-p@deeper_than_most
+	m-moonraker-p@moonraker
+	m-moonraker_2-p@moonraker_2
+	m-klic_globin-p@klic_globin
+	m-the_aqueduct-p@the_aqueduct
+	m-ad_aspera_per_aqua-p@ad_aspera_per_aqua
+	m-mouseleum-p@mouseleum
+	m-mouseleum_2-p@mouseleum_2
+	m-chocolate_river-p@chocolate_river
 endmap
 
-map mklic_globin_deep-p -projection plan -title "Primadona deep branch"
-	mklic_globin_branch-p
-	mdeep-p
+map m-klic_globin_deep-p -projection plan -title "Primadona deep branch"
+	m-klic_globin_branch-p
+	m-deep-p
 endmap
 
-map mdeep-p -projection plan
-	martemis-p@artemis
-	mtartarus-p@tartarus
-	mlachrymosa-p@lachrymosa
-	mposeidon_rift-p@poseidon_rift
-	mstreet-wise_hercules-p@street-wise_hercules
+map m-deep-p -projection plan
+	m-artemis-p@artemis
+	m-tartarus-p@tartarus
+	m-lachrymosa-p@lachrymosa
+	m-poseidon_rift-p@poseidon_rift
+	m-street-wise_hercules-p@street-wise_hercules
 endmap
 
 ##### SUB-SUB MAPS ######
 ##### These are offset relative to the main map
 
 map pivnica -projection plan
-	mbuckwheat-p@buckwheat
-	msnakebite-p@snakebite
-	msnakebitetwo-p@snakebitetwo
-	mave_maria-p@ave_maria
-	mpivnica_resurvey-p@pivnica_resurvey
+	m-buckwheat-p@buckwheat
+	m-snakebite-p@snakebite
+	m-snakebitetwo-p@snakebitetwo
+	m-ave_maria-p@ave_maria
+	m-pivnica_resurvey-p@pivnica_resurvey
 endmap
 
 map low_hammerhead -projection plan
-	mlumos-p@lumos
+	m-lumos-p@lumos
 	mdogfish-p1@dogfish
-	mdiagonalley-p@diagonalley
-	mhigh_and_dry-p@high_and_dry
-	mdamp_squib-p@damp_squib
+	m-diagonalley-p@diagonalley
+	m-high_and_dry-p@high_and_dry
+	m-damp_squib-p@damp_squib
 endmap
 
 map cattlegrid-the_stile -projection plan
-	mforget_me_not-p@forget_me_not
-	mthe_stile-p@the_stile
-	mcattlegrid-p@cattlegrid
-	mfenestrator-p@fenestrator
-	mbattery_flattery-p@battery_flattery
-	mmud_moses-p@mud_moses
-	mupotyn-p@upotyn
+	m-forget_me_not-p@forget_me_not
+	m-the_stile-p@the_stile
+	m-cattlegrid-p@cattlegrid
+	m-fenestrator-p@fenestrator
+	m-battery_flattery-p@battery_flattery
+	m-mud_moses-p@mud_moses
+	m-upotyn-p@upotyn
 endmap

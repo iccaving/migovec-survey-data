@@ -1,44 +1,44 @@
 encoding  utf-8
 survey ubend
-
-  input "ubendp.th2"
-  input "ubend-e.th2"
-  
-  map mubend1-p -projection plan
-    ubendp_1
-  endmap
-
-  map mubend-e -projection extended
-    ubend-1e
-  endmap
-
-  centreline
-    #cs lat-long
-    #fix 6    46.251636     13.757757    1786.51
-
-    date 2000.07.27
-    explo-date 2000.07.27
-
-    explo-team "Andy Jurd"
-    explo-team "Hugh Penney"
-    
-    team "Andy Jurd" insts
-    team "Hugh Penney" notes
-
-    explo-team "Andy Jurd" "Hugh Penney"
-    
-    extend vertical
-    1	2	7.15	-	up
-    extend left
-    2 3 2.71  290 -7
-    extend left
-    3 4 2.02  348 -23
-    extend left
-    4 5 2.43  350 23
-    extend left
-    5 6 1.85  315 10
-    
-  endcentreline
-
+	
+	input "ubendp.th2"
+	input "ubend-e.th2"
+	
+	map m-ubend1-p -projection plan
+		ubendp_1
+	endmap
+	
+	map  m-ubend-e -projection extended
+		ubend-1e
+	endmap
+	
+	centreline
+		#cs lat-long
+		#fix 6    46.251636     13.757757    1786.51
+		
+		date 2000.07.27
+		explo-date 2000.07.27
+		
+		explo-team "Andy Jurd"
+		explo-team "Hugh Penney"
+		
+		team "Andy Jurd" insts
+		team "Hugh Penney" notes
+		
+		explo-team "Andy Jurd" "Hugh Penney"
+		
+		extend vertical
+		1	2	7.15	-	up
+		extend left
+		2 3 2.71  290 -7
+		extend left
+		3 4 2.02  348 -23
+		extend left
+		4 5 2.43  350 23
+		extend left
+		5 6 1.85  315 10
+		
+	endcentreline
+	
 endsurvey
 

@@ -1,31 +1,31 @@
 survey apple_crumble -title "Apple Crumble"
 	input "apple_crumble-p.th2"
 	input "apple_crumble-e.th2"
-
-	map mapple_crumble-e -projection extended
+	
+	map  m-apple_crumble-e -projection extended
 		apple_crumble-2e
 		break
 		apple_crumble-1e
 	endmap
-
-	map mapple_crumble-p -projection plan
+	
+	map m-apple_crumble-p -projection plan
 		apple_crumble-p1
 		apple_crumble-p2
 		apple_crumble-p3
-	endmap 	
-
+	endmap
+	
 	join apple_crumble-p1 apple_crumble-p2
 	join apple_crumble-p2 apple_crumble-p3
-
+	
 	centreline
 		#Window off Povezava great aven
 		date 2017.07.24
 		explo-date 2017.07.24
-		explo-team "Tanguy Racine" 
+		explo-team "Tanguy Racine"
 		explo-team "James Wilson"
 		team "Tanguy Racine" notes
 		team "James Wilson" insts tape
-
+		
 		#data on three pages
 		extend left
 		2	1	4.04	165	-24
@@ -82,5 +82,5 @@ survey apple_crumble -title "Apple Crumble"
 		26	25	1.28	204	-12
 		flags not duplicate
 	endcentreline
-
+	
 endsurvey

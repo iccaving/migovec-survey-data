@@ -1,40 +1,40 @@
 
 survey gold -title "continuation of leprachaun Series"
 	input "gold-p.th2"
-
-	map mgold-p -projection plan
+	
+	map m-gold-p -projection plan
 		gold-1p
 		gold-2p
 	endmap
-
+	
 	join gold-1p gold-2p
-
-centreline
-    team "Dave Wilson" insts
-    team "Brian Cullen" notes
-    explo-team "Dave Wilson"
-    explo-team "Brian Cullen"
-    date 2003.8.7
-    explo-date 2003.8.7
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    2	1	13.68	135	-15
-    3	2	9.95	222	-15
-    4	3	7.41	147	-23
-    5	4	8.23	184	-24	
-    6	5	3.03	175	18
-    7	6	4.59	120	-12
-    8	7	27.39	199	-31
-    9	8	6.10	205	-23
-    10	9	10.89	060	36
-    11	10	2.13	071	-32
-    12	11	9.40	069	26
-    13	12	13.26	118	49
-    14	13	6.59	094	12
-    15	14	24.96	052	20
-    16	15	11.80	061	34 # stn 16 is PSS on wall (1.5m from floor) paper SS
-endcentreline
+	
+	centreline
+		team "Dave Wilson" insts
+		team "Brian Cullen" notes
+		explo-team "Dave Wilson"
+		explo-team "Brian Cullen"
+		date 2003.8.7
+		explo-date 2003.8.7
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		2	1	13.68	135	-15
+		3	2	9.95	222	-15
+		4	3	7.41	147	-23
+		5	4	8.23	184	-24
+		6	5	3.03	175	18
+		7	6	4.59	120	-12
+		8	7	27.39	199	-31
+		9	8	6.10	205	-23
+		10	9	10.89	060	36
+		11	10	2.13	071	-32
+		12	11	9.40	069	26
+		13	12	13.26	118	49
+		14	13	6.59	094	12
+		15	14	24.96	052	20
+		16	15	11.80	061	34 # stn 16 is PSS on wall (1.5m from floor) paper SS
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -55,7 +55,7 @@ endsurvey
 #2	1	13.68	135	-15
 #3	2	9.95	222	-15
 #4	3	7.41	147	-23
-#5	4	8.23	184	-24	
+#5	4	8.23	184	-24
 #6	5	3.03	175	18
 #7	6	4.59	120	-12
 #8	7	27.39	199	-31
@@ -68,5 +68,5 @@ endsurvey
 #15	14	24.96	052	20
 #16	15	11.80	061	34; stn 16 is PSS on wall (1.5m from floor) paper SS
 #
-#	
+#
 #*end  gold

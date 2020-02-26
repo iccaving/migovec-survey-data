@@ -3,8 +3,8 @@ source s_planika.th
 
 input layouts/layoutplan.th
 input layouts/layoutplan_ee.th
-select mplanika_jama-p@planika_jama
-select mplanika_jama-e@planika_jama
+select m-planika_jama-p@planika_jama
+select  m-planika_jama-e@planika_jama
 
 export map -o ../_outputs/planika-e.pdf  -projection extended -layout local2 -layout-debug station-names
 

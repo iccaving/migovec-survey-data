@@ -1,30 +1,30 @@
 
 survey postiga -title "high level rift above leprachaun"
-    input "postiga-p.th2"
-
-    map mpostiga-p -projection plan
-        postiga-1p
-    endmap
-
-centreline
-    team "Pete Jurd" insts
-    team "James Hooper" notes
-    explo-team "Pete Jurd"
-    explo-team "James Hooper"
-    explo-date 2003.08.9
-    date 2003.08.9
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    1	2	7.57	122	03	#	stn 1 is pss
-    2	3	6.80	127	-13
-    4	3	5.82	285	-16
-    4	5	5.95	248	-09
-endcentreline
+	input "postiga-p.th2"
+	
+	map m-postiga-p -projection plan
+		postiga-1p
+	endmap
+	
+	centreline
+		team "Pete Jurd" insts
+		team "James Hooper" notes
+		explo-team "Pete Jurd"
+		explo-team "James Hooper"
+		explo-date 2003.08.9
+		date 2003.08.9
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		1	2	7.57	122	03	#	stn 1 is pss
+		2	3	6.80	127	-13
+		4	3	5.82	285	-16
+		4	5	5.95	248	-09
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#;high level rift above leprachaun 
+#;high level rift above leprachaun
 #
 #;Date: 9/08/03
 #;Instruments: Pete Jurd

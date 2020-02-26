@@ -1,31 +1,31 @@
 
 survey migcon -title "Mig Country 1"
-    
-    input "migcon-p.th2"
-    
-    map mmigcon-p -projection plan
-        migcon-1p
-    endmap
-centreline
-    team "Colm Carroll" insts
-    team "James Hooper" notes
-    explo-team "Colm Carroll"
-    explo-team "James Hooper"
-    date 1996.07.28
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino
-    2	1	8.80	063	47	#Stn.1 is cairn at top of Mig Country
-    3	2	21.08	111	17.5	
-    4	3	7.88	122	-01	
-    5	4	21.31	111	08	
-    6	5	19.92	121	05	
-    7	6	1.00	-	up	#Stn. 7 is cairn before Titanic (level2s.1)
-endcentreline
+	
+	input "migcon-p.th2"
+	
+	map m-migcon-p -projection plan
+		migcon-1p
+	endmap
+	centreline
+		team "Colm Carroll" insts
+		team "James Hooper" notes
+		explo-team "Colm Carroll"
+		explo-team "James Hooper"
+		date 1996.07.28
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino
+		2	1	8.80	063	47	#Stn.1 is cairn at top of Mig Country
+		3	2	21.08	111	17.5
+		4	3	7.88	122	-01
+		5	4	21.31	111	08
+		6	5	19.92	121	05
+		7	6	1.00	-	up	#Stn. 7 is cairn before Titanic (level2s.1)
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #
@@ -48,10 +48,10 @@ endsurvey
 #
 #*data normal from to tape compass clino
 #2	1	8.80	063	47	;Stn.1 is cairn at top of Mig Country
-#3	2	21.08	111	17.5	
-#4	3	7.88	122	-01	
-#5	4	21.31	111	08	
-#6	5	19.92	121	05	
+#3	2	21.08	111	17.5
+#4	3	7.88	122	-01
+#5	4	21.31	111	08
+#6	5	19.92	121	05
 #7	6	1.00	-	up	;Stn. 7 is cairn before Titanic (level2s.1)
 #
 #*data passage station left right up down

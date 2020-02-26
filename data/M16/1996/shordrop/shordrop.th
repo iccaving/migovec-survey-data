@@ -1,46 +1,46 @@
 
 survey shordrop -title "Short Drop (between Brezno Strahov and Ta Moka)"
-
-    input "shordrop-p.th2"
-
-    map mshordrop-p -projection plan
-        shordrop-2p
-        shordrop-1p
-    endmap
-
-centreline
-    team "Andy Atkinson" insts
-    team "James Hooper" notes
-    explo-team "Andy Atkinson"
-    explo-team "James Hooper"
-    date 1996.08.07
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino
-    2   1   6.23    206 -01.5
-    2	3	20.49	-	up	#Stn 2 is bottom of p25 (carbide mark)
-    4	3	9.09	165.5	-13.5	#Stn. 3 is 12cm. below pitch head bolt (p25)
-    4	5	6.44	355	52.5
-    6	5	5.48	158	-22.5	#Stn 6 is PSS top of rock in chamber marked with carbide 6
-    6	7	4.87	333	14	#Stn 7 is a cairn (JE/SW 4/8/96 Stn 50)
-    8	7	12.29	134	22.5
-
-    data dimensions station left right up down
-    1	0	1	1	-
-    2	1.5	7	-	1
-    3	0	1	0.5 -
-    4	1.8	1.2	1.2	0.4
-    5	2	2	2.5	0
-    6	3	5	9	0.5
-    7	1.5	0.2	1.6	5
-    3	1.5	3	-	2
-    4	0	1.5	1.5	1
-    5	4	0	1	4
-endcentreline
+	
+	input "shordrop-p.th2"
+	
+	map m-shordrop-p -projection plan
+		shordrop-2p
+		shordrop-1p
+	endmap
+	
+	centreline
+		team "Andy Atkinson" insts
+		team "James Hooper" notes
+		explo-team "Andy Atkinson"
+		explo-team "James Hooper"
+		date 1996.08.07
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino
+		2   1   6.23    206 -01.5
+		2	3	20.49	-	up	#Stn 2 is bottom of p25 (carbide mark)
+		4	3	9.09	165.5	-13.5	#Stn. 3 is 12cm. below pitch head bolt (p25)
+		4	5	6.44	355	52.5
+		6	5	5.48	158	-22.5	#Stn 6 is PSS top of rock in chamber marked with carbide 6
+		6	7	4.87	333	14	#Stn 7 is a cairn (JE/SW 4/8/96 Stn 50)
+		8	7	12.29	134	22.5
+		
+		data dimensions station left right up down
+		1	0	1	1	-
+		2	1.5	7	-	1
+		3	0	1	0.5 -
+		4	1.8	1.2	1.2	0.4
+		5	2	2	2.5	0
+		6	3	5	9	0.5
+		7	1.5	0.2	1.6	5
+		3	1.5	3	-	2
+		4	0	1.5	1.5	1
+		5	4	0	1	4
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #
@@ -73,7 +73,7 @@ endsurvey
 #6	5	5.48	158	-22.5	;Stn 6 is PSS top of rock in chamber marked with carbide 6
 #6	7	4.87	333	14	;Stn 7 is a cairn (JE/SW 4/8/96 Stn 50)
 #8	7	12.29	134	22.5
-# 
+#
 #*data passage station left right up down
 #1	0	1	1	-
 #2	1.5	7	-	1

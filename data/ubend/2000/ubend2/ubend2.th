@@ -1,39 +1,39 @@
 encoding  utf-8
 survey ubend2 -title "Ubend 2"
-  
-  input "ubend2-p.th2"
-  input "ubend2-e.th2"
-  
-   map mubend2-p -projection plan
-    ubend2p_1
-   endmap
-
-   map mubend2-e -projection extended
-    ubend2-1e
-   endmap
-
-  centreline
-    date 2000.07.28
-    explo-date 2000.07.28
-
-    explo-team "Andy Jurd"
-    explo-team "Hugh Penney"
-    team "Andy Jurd" insts
-    team "Hugh Penney" notes
-    
-    explo-team "Andy Jurd" "Hugh Penney"
-    units length meters
-      units compass clino degrees
-      extend left
-      1  2  3.90  328  -7
-      extend left
-      2  3  1.58  335  -1
-      extend left
-      3  4  4.25  323  10
-      extend vertical
-      4  5  10.96  -  up
-    
-    
-  endcentreline
+	
+	input "ubend2-p.th2"
+	input "ubend2-e.th2"
+	
+	map m-ubend2-p -projection plan
+		ubend2p_1
+	endmap
+	
+	map  m-ubend2-e -projection extended
+		ubend2-1e
+	endmap
+	
+	centreline
+		date 2000.07.28
+		explo-date 2000.07.28
+		
+		explo-team "Andy Jurd"
+		explo-team "Hugh Penney"
+		team "Andy Jurd" insts
+		team "Hugh Penney" notes
+		
+		explo-team "Andy Jurd" "Hugh Penney"
+		units length meters
+		units compass clino degrees
+		extend left
+		1  2  3.90  328  -7
+		extend left
+		2  3  1.58  335  -1
+		extend left
+		3  4  4.25  323  10
+		extend vertical
+		4  5  10.96  -  up
+		
+		
+	endcentreline
 endsurvey
 

@@ -1,45 +1,45 @@
 encoding  utf-8
 survey ajdovscina
-  input "ajdovscinap.th2"
-  input "ajdovscina_extend.th2"
-
-  map majdovscina-e -projection extended
-    ajdov_e1
-  endmap
-  
-  #map majdovscina-p -projection plan
-    #madjovp_1
-   # madjovp_2
- # endmap
-
- # map madjovp_1 -projection plan
-   # ajdovp_1
-  #endmap
-  
-  #map madjovp_2 -projection plan
-    #ajdovp_2
- # endmap
-  
-  centreline
-    date 2002.07.27
-    team "Ista" insts
-    team "Tomaž Tivadar" notes
-
-    explo-team "Ista"
-    explo-team "Tomaž Tivadar"
-    
-      #flags duplicate
-      extend vertical
-      1  2  12.5  0  90
-      extend left
-      2  3  4.0  17  0
-      extend left
-      3  4  12.5  50  0
-#flags not duplicate
-    
-  endcentreline
-  
-
-
+	input "ajdovscinap.th2"
+	input "ajdovscina_extend.th2"
+	
+	map  m-ajdovscina-e -projection extended
+		ajdov_e1
+	endmap
+	
+	#map m-ajdovscina-p -projection plan
+	#madjovp_1
+	# madjovp_2
+	# endmap
+	
+	# map madjovp_1 -projection plan
+	# ajdovp_1
+	#endmap
+	
+	#map madjovp_2 -projection plan
+	#ajdovp_2
+	# endmap
+	
+	centreline
+		date 2002.07.27
+		team "Ista" insts
+		team "Tomaž Tivadar" notes
+		
+		explo-team "Ista"
+		explo-team "Tomaž Tivadar"
+		
+		#flags duplicate
+		extend vertical
+		1  2  12.5  0  90
+		extend left
+		2  3  4.0  17  0
+		extend left
+		3  4  12.5  50  0
+		#flags not duplicate
+		
+	endcentreline
+	
+	
+	
 endsurvey
 

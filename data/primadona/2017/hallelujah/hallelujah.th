@@ -1,55 +1,55 @@
 encoding  utf-8
 survey hallelujah
-  input "hallelujah-p.th2"
-  input "hallelujah-e.th2"
-  
-  map mhallelujah-p -projection plan
-    hallelujahp_1
-  endmap
-  
-  map mhallelujah-e -projection extended
-    hallelujah-1e
-  endmap
-  
-  centreline
-    date 2017.07.20
-    explo-date 2017.07.20
-    explo-team "Rhys Tyers"
-    explo-team "Benjamin Honan"
-    explo-team "Clare Tan"
-    
-    team "Rhys Tyers" insts notes
-    team "Benjamin Honan" tape insts
-    
-    units length meters
-    units compass clino degrees
-    data normal from to length compass clino
-
-    #PAGE 1
-    extend left
-    1 2 3.57  331 +03
-    extend right
-    3 2 4.71  150 -03
-    extend right
-    4 3 3.99  138 -23
-    extend right
-    5 4 4.36  141 -36 
-    extend right
-    6 5 2.44  065 +24
-    extend right
-    7 6 8.19  149 -07
-    extend right
-    8 7 4.18  138 -12
-    extend right
-    9 8 2.30  160 -15
-    extend left
-    9 10  0.72  244 -06
-
-    #NOTES
-    #STN 1 is PSS
-    #STN10 is Plumber’s Paradise STN 5
-    
-  endcentreline
+	input "hallelujah-p.th2"
+	input "hallelujah-e.th2"
+	
+	map m-hallelujah-p -projection plan
+		hallelujahp_1
+	endmap
+	
+	map  m-hallelujah-e -projection extended
+		hallelujah-1e
+	endmap
+	
+	centreline
+		date 2017.07.20
+		explo-date 2017.07.20
+		explo-team "Rhys Tyers"
+		explo-team "Benjamin Honan"
+		explo-team "Clare Tan"
+		
+		team "Rhys Tyers" insts notes
+		team "Benjamin Honan" tape insts
+		
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		#PAGE 1
+		extend left
+		1 2 3.57  331 +03
+		extend right
+		3 2 4.71  150 -03
+		extend right
+		4 3 3.99  138 -23
+		extend right
+		5 4 4.36  141 -36
+		extend right
+		6 5 2.44  065 +24
+		extend right
+		7 6 8.19  149 -07
+		extend right
+		8 7 4.18  138 -12
+		extend right
+		9 8 2.30  160 -15
+		extend left
+		9 10  0.72  244 -06
+		
+		#NOTES
+		#STN 1 is PSS
+		#STN10 is Plumber’s Paradise STN 5
+		
+	endcentreline
 endsurvey
 
 

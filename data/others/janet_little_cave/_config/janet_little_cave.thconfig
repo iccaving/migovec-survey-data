@@ -4,7 +4,7 @@ input ../_layouts/map100plan.th
 input ../_layouts/map100ee.th
 
 
-select mcave-p@janet_little_cave
+select m-cave-p@janet_little_cave
 
 export map -o ../_outputs/janet_little_cave_plan.pdf -projection plan -layout map100plan -layout-debug station-names
 

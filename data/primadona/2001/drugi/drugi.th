@@ -1,80 +1,80 @@
 encoding  utf-8
 survey drugi
-
-   input "drugi-p.th2"
-   input "drugi-e.th2"
-
-  map mdrugip_1 -projection plan
-   drugip_1  
-  endmap
-  
-  map mdrugip_3 -projection plan
-   drugip_3  
-  endmap
-  
-  map mdrugi-p -projection plan
-    mdrugip_1
-    mdrugip_3
-  endmap
-
-  map mdrugi-e -projection extended
-    drugi-1e
-    drugi-2e
-  endmap
-
-  join drugip_3 drugip_1
-  
-  centreline
-  date 2001.07.18
-  explo-date 2001.07.18
-
-  explo-team "Tomaž Tivadar"
-  explo-team "Beguš Tadej"
-  
-  team "Tomaž Tivadar" notes tape
-  team "Beguš Tadej" insts
-  
-   units length meters
-   units compass clino degrees
-
-   extend right
-  2 1 8.0 145 -73 #stn 1 primadona po cetrtem breznu
-  extend right
-  3 2 5.4 245 -68
-  extend right
-  4 3 8.8 252 -50 #stn 4 is bolt 
-  extend right
-  5 4 3.0 181 -3
-  extend right
-  6 5 4.5 245 -42
-  extend right
-  7 6 12.5  215 -29
-  extend vertical
-  7a  7 20.0  000 -90
-  extend vertical
-  8 7a  8.5 000 -90 #stn 8 is bolt
-  extend right
-  9 8 9.8 177 -69
-  extend right
-  10  9 5.4 150 5 #toc 9 zacetek vhodne ozine
-  extend right
-  11  10  6.4 149 5
-  extend right
-  12  11  1.7 213 0
-  extend right
-  13  12  3.0 137 0 #toc 13 konec vhodne ozine
-  extend right
-  14  13  18.0  140 2 
-  extend left
-  14  15  17.0  283 -28 #stn 15 kota napisa pred jamo "TL"
-  extend vertical
-  10  10a 11.0  0 -90
-  extend right
-  10a 10b 12.3  161 -45 #mera ni tocna odstopok +- 2 stopinji
-  #8  8a  10  0 -90
-
-      
-  endcentreline
-  
-  endsurvey
+	
+	input "drugi-p.th2"
+	input "drugi-e.th2"
+	
+	map mdrugip_1 -projection plan
+		drugip_1
+	endmap
+	
+	map mdrugip_3 -projection plan
+		drugip_3
+	endmap
+	
+	map m-drugi-p -projection plan
+		mdrugip_1
+		mdrugip_3
+	endmap
+	
+	map  m-drugi-e -projection extended
+		drugi-1e
+		drugi-2e
+	endmap
+	
+	join drugip_3 drugip_1
+	
+	centreline
+		date 2001.07.18
+		explo-date 2001.07.18
+		
+		explo-team "Tomaž Tivadar"
+		explo-team "Beguš Tadej"
+		
+		team "Tomaž Tivadar" notes tape
+		team "Beguš Tadej" insts
+		
+		units length meters
+		units compass clino degrees
+		
+		extend right
+		2 1 8.0 145 -73 #stn 1 primadona po cetrtem breznu
+		extend right
+		3 2 5.4 245 -68
+		extend right
+		4 3 8.8 252 -50 #stn 4 is bolt
+		extend right
+		5 4 3.0 181 -3
+		extend right
+		6 5 4.5 245 -42
+		extend right
+		7 6 12.5  215 -29
+		extend vertical
+		7a  7 20.0  000 -90
+		extend vertical
+		8 7a  8.5 000 -90 #stn 8 is bolt
+		extend right
+		9 8 9.8 177 -69
+		extend right
+		10  9 5.4 150 5 #toc 9 zacetek vhodne ozine
+		extend right
+		11  10  6.4 149 5
+		extend right
+		12  11  1.7 213 0
+		extend right
+		13  12  3.0 137 0 #toc 13 konec vhodne ozine
+		extend right
+		14  13  18.0  140 2
+		extend left
+		14  15  17.0  283 -28 #stn 15 kota napisa pred jamo "TL"
+		extend vertical
+		10  10a 11.0  0 -90
+		extend right
+		10a 10b 12.3  161 -45 #mera ni tocna odstopok +- 2 stopinji
+		#8  8a  10  0 -90
+		
+		
+	endcentreline
+	
+endsurvey
 

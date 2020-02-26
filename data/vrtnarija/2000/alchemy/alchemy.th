@@ -1,39 +1,39 @@
 survey alchemy -title "Alchemy & Zlatorog rift"
 	
 	input alchemy-p.th2
-
-	map malchemy-p -projection plan
+	
+	map m-alchemy-p -projection plan
 		malchemy-p2
 		malchemy-p1
 	endmap
-
+	
 	map malchemy-p1 -projection plan
 		alchemy-p1
 	endmap
-
+	
 	map malchemy-p2 -projection plan
 		alchemy-p2
 	endmap
-
-
-
+	
+	
+	
 	centreline
 		date 2000.08.02
 		explo-date 2000.08.02
-
+		
 		team "Bruce Drinkwater"
 		team "Jan Evetts"
-
+		
 		explo-team "Bruce Drinkwater"
 		explo-team "Jan Evetts"
-
+		
 		1	2	12.22	-	up	#pss 1 cairn at bottom of pitch
 		3	2	5.25	254	-24
 		4	3	7.2	247	-21
 		4	5	15.48	-	up
 		5	6	0.7	123	27
 		6	7	12.25	081	2
-		7	8	4.5	010	0	
-
+		7	8	4.5	010	0
+		
 	endcentreline
 endsurvey

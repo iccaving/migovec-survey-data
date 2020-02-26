@@ -1,36 +1,36 @@
 encoding  utf-8
 survey buckwheat
-
-input buckwheat-p.th2
-input "buckwheat-e.th2"
-
-map mbuckwheat-e -projection extended
-	buckwheat-e1
-endmap
-
-map mbuckwheat-p -projection plan
-  buckwheat-p1
-endmap
-
-  centreline
-    date 2017.07.19
-    team "Tanguy Racine" notes
-    team "Jarvist Frost" insts
-    
-    flags duplicate
-    extend left
-	1  2  3.60  337  -02
-	extend vertical
-	2  3  4.71  -  DOWN
-	extend left
-	3  4  4.38  011  -34
-	extend vertical
-	4  5  17.36  -  UP
-	extend left
-	5  6  3.06  009  +56
-	extend left
-	6  7  4.38  028  +18
-flags not duplicate
-  endcentreline
+	
+	input buckwheat-p.th2
+	input "buckwheat-e.th2"
+	
+	map  m-buckwheat-e -projection extended
+		buckwheat-e1
+	endmap
+	
+	map m-buckwheat-p -projection plan
+		buckwheat-p1
+	endmap
+	
+	centreline
+		date 2017.07.19
+		team "Tanguy Racine" notes
+		team "Jarvist Frost" insts
+		
+		flags duplicate
+		extend left
+		1  2  3.60  337  -02
+		extend vertical
+		2  3  4.71  -  DOWN
+		extend left
+		3  4  4.38  011  -34
+		extend vertical
+		4  5  17.36  -  UP
+		extend left
+		5  6  3.06  009  +56
+		extend left
+		6  7  4.38  028  +18
+		flags not duplicate
+	endcentreline
 endsurvey
 

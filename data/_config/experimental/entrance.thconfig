@@ -3,9 +3,9 @@ source "../system_migovec.th"
 
 input ../_layouts/layout1.th
 
-select mentrance_to_knot-p@sistem_migovec
+select m-entrance_to_knot-p@sistem_migovec
 
 export map -o ../_outputs/entrance_series_plan.pdf -projection plan -layout local1
 
-select mprima1-e@prima1.primadona.sistem_migovec
+select  m-prima1-e@prima1.primadona.sistem_migovec
 export map -o ../_outputs/entrance_series_elevation.pdf -projection extended -layout local1 -layout-debug station-names

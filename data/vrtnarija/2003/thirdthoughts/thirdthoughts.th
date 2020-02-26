@@ -1,30 +1,30 @@
 
 survey thirdthoughts -title "Thirdthoughts"
-    
-    input "thirdthoughts-p.th2"
-    
-    map mthirdthoughts-p -projection plan
-        thirdthoughts-1p
-    endmap
-
-centreline
-    team "Pete Jurd" insts
-    team "Unkown [RV]" notes
-    explo-team "Pete Jurd"
-    explo-team "Unkown [RV]"
-    date 2003.8.6
-    explo-date 2003.8.6
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	8.90	-	up	
-    2	3	5.24	012	+62
-    3	4	3.08	039	+53
-    4	5	6.90	323	+42
-    5	6	2.20	344	+12
-    6	7	3.20	-	up
-    7	8	0.24	167	+27
-endcentreline
+	
+	input "thirdthoughts-p.th2"
+	
+	map m-thirdthoughts-p -projection plan
+		thirdthoughts-1p
+	endmap
+	
+	centreline
+		team "Pete Jurd" insts
+		team "Unkown [RV]" notes
+		explo-team "Pete Jurd"
+		explo-team "Unkown [RV]"
+		date 2003.8.6
+		explo-date 2003.8.6
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	8.90	-	up
+		2	3	5.24	012	+62
+		3	4	3.08	039	+53
+		4	5	6.90	323	+42
+		5	6	2.20	344	+12
+		6	7	3.20	-	up
+		7	8	0.24	167	+27
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -46,7 +46,7 @@ endsurvey
 #*data normal from to tape compass clino ignoreall
 #
 #;Plumb legs below are assumed - in notes there are strangely listed as '- -' for comp and clino
-#1	2	8.90	-	up	
+#1	2	8.90	-	up
 #2	3	5.24	012	+62
 #3	4	3.08	039	+53
 #4	5	6.90	323	+42

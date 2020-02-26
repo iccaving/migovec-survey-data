@@ -1,42 +1,42 @@
 survey echorift -title "Echo Rift" #rift below ice in planika
 	input echorift-p.th2
 	input echorift-e.th2
-
-	map mechorift-p -projection plan
+	
+	map m-echorift-p -projection plan
 		mechorift-p1
 		mechorift-p3
 		mechorift-p2
 	endmap
-
+	
 	map mechorift-p1 -projection plan
 		echorift-p1
 	endmap
-
+	
 	map mechorift-p2 -projection plan
 		echorift-p2
 	endmap
-
+	
 	map mechorift-p3 -projection plan
 		echorift-p3
 	endmap
-
-	map mechorift-e -projection extended
+	
+	map  m-echorift-e -projection extended
 		echorift-e1
 	endmap
-
+	
 	centreline
 		date 2008.07.24
 		explo-date 2008.07.24
-
+		
 		team "Jana Čarga" notes
 		team "Jarvist Frost"  insts tape
-
+		
 		explo-team "Jana Čarga"
 		explo-team "Jarvist Frost"
 		
 		b2	b1	3.27	145	-19	# b1: 0.1 ? 0.1 0.8 #unlabelled cairn
 		b2	3	8.40	060	+70	# b2: 1.5 0 - 0.5
-
+		
 		1	2	5.30	128	-15	# .1: 3.0 2.0 - 0.0
 		1	3	4.81	070	+60	# .2: Tight rift
 		3	4	1.05	107	+28	# .3: 0.0 0.45 0.40 -
@@ -49,6 +49,6 @@ survey echorift -title "Echo Rift" #rift below ice in planika
 		10	11	2.93	332	+35	# .10: 2.2 (SNOW) 2.5 0.4
 		11	12	8.46	130	+75	# .11: 0.4 (SNOW) - 1.0
 		12	13	9.90	042	-24	# .12: no LRUD as in big chamber
-
+		
 	endcentreline
 endsurvey

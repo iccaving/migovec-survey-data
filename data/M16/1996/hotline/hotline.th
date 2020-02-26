@@ -1,13 +1,13 @@
 survey hotline -title "Hotline"
 	input "hotline-p.th2"
-
-	map mhotline-p -projection plan
+	
+	map m-hotline-p -projection plan
 		hotline-1p
 		hotline-2p
 	endmap
-
+	
 	join hotline-1p hotline-2p
-
+	
 	centreline
 		date 1996.08.08
 		team "Chris Roberts" insts
@@ -15,23 +15,23 @@ survey hotline -title "Hotline"
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall # Default
-		 1       2       16.90   112     +18
-		 3       2       20.49   326     +01
-		 3       4       20.45   135     +01
-		 5       4       5.34    212     +03
-		 6       4       17.89   166     -12	;changed from 4	6 mje 
-		 8       7       22.61   237     -35
-		 9       8       5.42    231     -44
-		 9       10      7.30    356     +15
-		 11      10      4.45    150     +06
-		 11	LASER_ULRIKA	19.0	-	up # Laser added by JMF + tetley on bolt climb 2005
-		 11      12      5.87    124     +31
-		 1       12      10.48   277     -14
-		 3       13      4.40    268     -44
-		 13      14      9.15    208     -42
-		 14      15      9.50    019     -20
+		1       2       16.90   112     +18
+		3       2       20.49   326     +01
+		3       4       20.45   135     +01
+		5       4       5.34    212     +03
+		6       4       17.89   166     -12	;changed from 4	6 mje
+		8       7       22.61   237     -35
+		9       8       5.42    231     -44
+		9       10      7.30    356     +15
+		11      10      4.45    150     +06
+		11	LASER_ULRIKA	19.0	-	up # Laser added by JMF + tetley on bolt climb 2005
+		11      12      5.87    124     +31
+		1       12      10.48   277     -14
+		3       13      4.40    268     -44
+		13      14      9.15    208     -42
+		14      15      9.50    019     -20
 	endcentreline
-
+	
 	centreline
 		date 1996.08.10
 		team "Jim Evans" insts
@@ -43,10 +43,10 @@ survey hotline -title "Hotline"
 		16      17      24.20   -       Down
 		17      18      3.85    286     +08
 	endcentreline
-
+	
 endsurvey
 
-# ; System Migovec 
+# ; System Migovec
 # ; (c) 1994 - 1997 Imperial College Caving Club
 # ; Surveyed to BCRA Grade 5b
 
@@ -76,7 +76,7 @@ endsurvey
 # 3       2       20.49   326     +01
 # 3       4       20.45   135     +01
 # 5       4       5.34    212     +03
-# 6       4       17.89   166     -12	;changed from 4	6 mje 
+# 6       4       17.89   166     -12	;changed from 4	6 mje
 # 8       7       22.61   237     -35
 # 9       8       5.42    231     -44
 # 9       10      7.30    356     +15

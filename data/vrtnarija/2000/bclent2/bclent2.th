@@ -1,43 +1,43 @@
 survey bclent2 -title "Vrtnarija entrance"
 	#previously known as Ben's Crap Lead
 	# second survey
-
+	
 	input "bclent2-p.th2"
-
-	map mbclent2-p -projection plan
+	
+	map m-bclent2-p -projection plan
 		mbclent2-p1
 		mbclent2-p2
 		mbclent2-p3
 	endmap
-
+	
 	map	mbclent2-p1 -projection plan
 		bclent2-p1
 	endmap
-
+	
 	map mbclent2-p2 -projection plan
 		bclent2-p2
 	endmap
-
+	
 	map mbclent2-p3 -projection plan
 		bclent2-p3
 	endmap
-
+	
 	join bclent2-p1 bclent2-p2
 	join bclent2-p2 bclent2-p3
-
+	
 	centreline
 		cs EPSG:3794
 		fix 0  404766 124502 1799
-
+		
 		date 2000.08.03
 		explo-date 2000.07.13
-
+		
 		team "Mark Evans" insts tape
-		team "Ben Ogborne" notes 
-
+		team "Ben Ogborne" notes
+		
 		explo-team "Ben Ogborne"
 		explo-team "Pete Jurd"
-
+		
 		0	1	6.20	250	-29	#station 0 is pss half bolt hole at entrance to gardeners world
 		2	1	8.43	067	+33
 		2	3	3.73	252	-12

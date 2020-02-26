@@ -1,33 +1,33 @@
 
 survey candyMountain -title "The Big Rock Candy Mountain"
-
-    input "candyMountain-p.th2"
-
-    map mcandyMountain-p -projection plan
-        candyMountain-2p
-        candyMountain-1p
-    endmap
-
-centreline
-    team "Colm Carroll" insts
-    team "Brian Cullen" notes
-    explo-team "Colm Carroll"
-    explo-team "Brian Cullen"
-    date 2003.7.31
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    1	2	3.80	194	-24
-    2	3	19.97	-	up
-    3	4	10.78	-	up
-    4	5	22.10	-	up
-    5	6	5.65	194	+68
-    6	7	4.75	268	+58
-    7	8	9.04	295	+70
-    8	9	3.77	261	+35
-    9	10	5.23	337	+8
-    11	10	1.55	323	0
-endcentreline
+	
+	input "candyMountain-p.th2"
+	
+	map m-candyMountain-p -projection plan
+		candyMountain-2p
+		candyMountain-1p
+	endmap
+	
+	centreline
+		team "Colm Carroll" insts
+		team "Brian Cullen" notes
+		explo-team "Colm Carroll"
+		explo-team "Brian Cullen"
+		date 2003.7.31
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		1	2	3.80	194	-24
+		2	3	19.97	-	up
+		3	4	10.78	-	up
+		4	5	22.10	-	up
+		5	6	5.65	194	+68
+		6	7	4.75	268	+58
+		7	8	9.04	295	+70
+		8	9	3.77	261	+35
+		9	10	5.23	337	+8
+		11	10	1.55	323	0
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -56,5 +56,5 @@ endsurvey
 #9	10	5.23	337	+8
 #11	10	1.55	323	0
 #
-#	
+#
 #*end  candyMountain

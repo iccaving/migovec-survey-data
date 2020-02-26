@@ -1,44 +1,44 @@
 encoding  utf-8
 survey mfi
-  input "mfip.th2"
-  input "mighty_fine_indeed-e.th2"
-
-  map mmighty_fine_indeed-e -projection extended
-    mighty_fine_indeed-e1
-  endmap
-
-  map mmfi-p -projection plan
-    mmfi-p1
-    mmfi-p2
-  endmap
-  
-  map mmfi-p1 -projection plan
-    mfip_1
-  endmap
-  
-  map mmfi-p2 -projection plan
-    mfip_2
-  endmap
-
-  centreline
-    date 2016.07.21
-    explo-date 2016.07.21
-
-    explo-team "Rhys Tyers"
-    explo-team "Jack Hare"
-    team "Jack Hare"  insts tape
-    team "Rhys Tyers"  notes
-
-#Page 1/1
-extend left
-1	2	3.31 050	+48	
-extend left
-2	3	7.80	287	+81
-extend left
-3	4	19.66	050	+65
-extend left
-4	5	1.56	347	-05
-endcentreline
-
+	input "mfip.th2"
+	input "mighty_fine_indeed-e.th2"
+	
+	map  m-mighty_fine_indeed-e -projection extended
+		mighty_fine_indeed-e1
+	endmap
+	
+	map m-mfi-p -projection plan
+		mmfi-p1
+		mmfi-p2
+	endmap
+	
+	map mmfi-p1 -projection plan
+		mfip_1
+	endmap
+	
+	map mmfi-p2 -projection plan
+		mfip_2
+	endmap
+	
+	centreline
+		date 2016.07.21
+		explo-date 2016.07.21
+		
+		explo-team "Rhys Tyers"
+		explo-team "Jack Hare"
+		team "Jack Hare"  insts tape
+		team "Rhys Tyers"  notes
+		
+		#Page 1/1
+		extend left
+		1	2	3.31 050	+48
+		extend left
+		2	3	7.80	287	+81
+		extend left
+		3	4	19.66	050	+65
+		extend left
+		4	5	1.56	347	-05
+	endcentreline
+	
 endsurvey
 

@@ -1,33 +1,33 @@
 
 survey envy -title "Passage off Leprecon series connecting with Greed"
-    
-    input "envy-p.th2"
-    
-    map menvy-p -projection plan
-        envy-1p
-    endmap
-centreline
-    team "Jim Evans" insts
-    team "Dave Wilson" notes
-    explo-team "Jim Evans"
-    explo-team "Dave Wilson"
-    explo-date 2004.8.3
-    date 2004.8.3
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    2	1	0.9	270	0
-    2	3	14.6	-	up
-    3	4	1.96	243	-08
-    4	5	2.83	310	-08
-    5	6	2.40	160	-13
-    6	7	2.35	244	-15
-    7	8	3.03	228	-31
-    8	9	5.42	285	-18
-    9	10	7.80	334	+2
-    10	11	3.30	284	-19
-    11	12	2.45	255	-13
-endcentreline
+	
+	input "envy-p.th2"
+	
+	map m-envy-p -projection plan
+		envy-1p
+	endmap
+	centreline
+		team "Jim Evans" insts
+		team "Dave Wilson" notes
+		explo-team "Jim Evans"
+		explo-team "Dave Wilson"
+		explo-date 2004.8.3
+		date 2004.8.3
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		2	1	0.9	270	0
+		2	3	14.6	-	up
+		3	4	1.96	243	-08
+		4	5	2.83	310	-08
+		5	6	2.40	160	-13
+		6	7	2.35	244	-15
+		7	8	3.03	228	-31
+		8	9	5.42	285	-18
+		9	10	7.80	334	+2
+		10	11	3.30	284	-19
+		11	12	2.45	255	-13
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -63,5 +63,5 @@ endsurvey
 #*equate envy.1 greed.3
 #*equate envy.12 mad_cow.45
 #
-#	
+#
 #

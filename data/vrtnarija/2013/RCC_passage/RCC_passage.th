@@ -1,27 +1,27 @@
 
 survey RCC_passage -title "RCC Passage of the Year"
-
-input RCC_passage-p.th2
-
-map mRCC_passage-p -projection plan
-    RCC_passage-1p
-endmap
-
-centreline
-    team "Rhys Tyers" insts
-    team "Clare Tan" notes
-    explo-team "Rhys Tyers"
-    explo-team "Clare Tan"
-    date 2013.08.01
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	5.05	209	-26
-    3	2	1.30	252	-21
-    4	3	5.88	191	-18
-    5	4	8.87	140	-53
-    6	5	5.40	138	-05
-endcentreline
+	
+	input RCC_passage-p.th2
+	
+	map m-RCC_passage-p -projection plan
+		RCC_passage-1p
+	endmap
+	
+	centreline
+		team "Rhys Tyers" insts
+		team "Clare Tan" notes
+		explo-team "Rhys Tyers"
+		explo-team "Clare Tan"
+		date 2013.08.01
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	5.05	209	-26
+		3	2	1.30	252	-21
+		4	3	5.88	191	-18
+		5	4	8.87	140	-53
+		6	5	5.40	138	-05
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -47,7 +47,7 @@ endsurvey
 #5	4	8.87	140	-53
 #6	5	5.40	138	-05
 #
-#;NOTES 
+#;NOTES
 #;Stn 1 is a PSS
 #;Stn 4 is bottom of pitch
 #;Stn 6 is Invictus.11

@@ -1,28 +1,28 @@
 survey diagonalley -title "Diagonalley"
 	input "diagonalley-p.th2"
 	input "diagonalley-e.th2"
-
-	map mdiagonalley-e -projection extended
+	
+	map  m-diagonalley-e -projection extended
 		diagonalley-e1
 	endmap
-
-	map mdiagonalley-p -projection plan
+	
+	map m-diagonalley-p -projection plan
 		diagonalley-p1
 	endmap
-
+	
 	
 	centreline
 		date 2018.07.30
 		explo-date 2018.07.30
-
+		
 		team "Rebecca Diss"
 		team "David Kirkpatrick"
 		team "Jennifer Ryder"
-
+		
 		explo-team "Jennifer Ryder"
 		explo-team "Rebecca Diss"
 		explo-team "David Kirkpatrick"
-
+		
 		#Page 1
 		extend vertical
 		1	2	9.70	-	down

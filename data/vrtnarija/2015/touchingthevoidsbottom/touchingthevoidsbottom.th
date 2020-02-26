@@ -1,29 +1,29 @@
 
 survey touchingthevoidsbottom -title "Touching the Void's Bottom"
-
-input touchingthevoidsbottom-p.th2
-
-map mtouchingthevoidsbottom-p -projection plan
-    touchingthevoidsbottom-1p
-endmap
-
-centreline
-    team "Rhys Tyers" insts
-    team "Tanguy Racine" notes
-    explo-team "Rhys Tyers"
-    explo-team "Tanguy Racine"
-    date 2015.8.4
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	2.20	151	-19
-    3	2	4.82	025	-34
-    4	3	2.59	140	-09
-    5	4	3.25	091	-40
-    6	5	3.13	147	-21
-    7	6	3.05	155	-15
-    8	7	4.32	308	-20
-endcentreline
+	
+	input touchingthevoidsbottom-p.th2
+	
+	map m-touchingthevoidsbottom-p -projection plan
+		touchingthevoidsbottom-1p
+	endmap
+	
+	centreline
+		team "Rhys Tyers" insts
+		team "Tanguy Racine" notes
+		explo-team "Rhys Tyers"
+		explo-team "Tanguy Racine"
+		date 2015.8.4
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	2.20	151	-19
+		3	2	4.82	025	-34
+		4	3	2.59	140	-09
+		5	4	3.25	091	-40
+		6	5	3.13	147	-21
+		7	6	3.05	155	-15
+		8	7	4.32	308	-20
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -51,7 +51,7 @@ endsurvey
 #7	6	3.05	155	-15
 #8	7	4.32	308	-20
 #
-#;NOTES 
+#;NOTES
 #;stn 15 is Jet Stream stn 1
 #;Survey tape started at 3m (so subtract 3m)
 #

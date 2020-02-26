@@ -1,25 +1,25 @@
 
 survey lowerfallsrd -title "Lower end of Falls Road"
-    input "lowerfallsrd-p.th2"
-
-    map mlowerfallsrd-p -projection plan
-        lowerfallsrd-1p
-    endmap
-centreline
-    team "Colm Caroll" insts
-    team "Martin [Mc Gowan]" notes
-    explo-team "Colm Caroll"
-    explo-team "Martin [Mc Gowan]"
-    date 2003.7.29
-    explo-date 2003.7.29
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    2	1	5.39	242	+25
-    3	2	4.68	-	down
-    4	3	3.81	225	-10
-    4	5	4.14	058	+27
-endcentreline
+	input "lowerfallsrd-p.th2"
+	
+	map m-lowerfallsrd-p -projection plan
+		lowerfallsrd-1p
+	endmap
+	centreline
+		team "Colm Caroll" insts
+		team "Martin [Mc Gowan]" notes
+		explo-team "Colm Caroll"
+		explo-team "Martin [Mc Gowan]"
+		date 2003.7.29
+		explo-date 2003.7.29
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		2	1	5.39	242	+25
+		3	2	4.68	-	down
+		4	3	3.81	225	-10
+		4	5	4.14	058	+27
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -42,5 +42,5 @@ endsurvey
 #4	5	4.14	058	+27
 #
 #; Station 5 is PSS from 2001 Carbide Mark
-#	
+#
 #*end  lowerfallsrd

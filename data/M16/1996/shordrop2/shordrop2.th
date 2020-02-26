@@ -1,37 +1,37 @@
 
 survey shordrop2 -title "Short Drop 2 (between Brezno Strahov and Ta Moka)"
-
-    input "shordrop2-p.th2"
-
-    map mshordrop2-p -projection plan
-        shordrop2-1p
-    endmap
-    
-centreline
-    date 1996.8.16
-    team "Iain McKenna" insts
-    team "Chris Roberts" notes
-    team "Jim Evans"
-
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino
-    1       2       13.52   194     -75
-    2       3       12.60   320     -74
-    3       4       8.12    174     -16
-    4       5       4.46    182.5   -47
-    5       6       1.49    087.5   +13
-    
-    data dimensions station left right up down
-    3  1.5 3   -   2
-    4  0   1.5 1.5 1
-    5  4   0   1   4
-
-endcentreline
+	
+	input "shordrop2-p.th2"
+	
+	map m-shordrop2-p -projection plan
+		shordrop2-1p
+	endmap
+	
+	centreline
+		date 1996.8.16
+		team "Iain McKenna" insts
+		team "Chris Roberts" notes
+		team "Jim Evans"
+		
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino
+		1       2       13.52   194     -75
+		2       3       12.60   320     -74
+		3       4       8.12    174     -16
+		4       5       4.46    182.5   -47
+		5       6       1.49    087.5   +13
+		
+		data dimensions station left right up down
+		3  1.5 3   -   2
+		4  0   1.5 1.5 1
+		5  4   0   1   4
+		
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #
@@ -64,7 +64,7 @@ endsurvey
 #6	5	5.48	158	-22.5	;Stn 6 is PSS top of rock in chamber marked with carbide 6
 #6	7	4.87	333	14	;Stn 7 is a cairn (JE/SW 4/8/96 Stn 50)
 #8	7	12.29	134	22.5
-# 
+#
 #*data passage station left right up down
 #1	0	1	1	-
 #2	1.5	7	-	1

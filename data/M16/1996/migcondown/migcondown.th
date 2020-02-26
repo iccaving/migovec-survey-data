@@ -1,30 +1,30 @@
 
 survey migcondown -title "Mig Country 3"
-    input "migcondown-p.th2"
-
-    map mmigcondown-p -projection plan
-        migcondown-1p
-    endmap
-centreline
-    date 1996.08.16
-    team "Iain McKenna" notes tape
-    team "Mark Evans" insts
-    team "Jim Evans" dog
-    explo-team "Iain McKenna"
-    explo-team "Jim Evans"
-    explo-team "Mark Evans"
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino
-    0       1       7.50    125     -23
-    2       3       28.99   250     +81
-    3       4       31.00   285     +72
-    4       1       1.62    305     +00
-endcentreline
+	input "migcondown-p.th2"
+	
+	map m-migcondown-p -projection plan
+		migcondown-1p
+	endmap
+	centreline
+		date 1996.08.16
+		team "Iain McKenna" notes tape
+		team "Mark Evans" insts
+		team "Jim Evans" dog
+		explo-team "Iain McKenna"
+		explo-team "Jim Evans"
+		explo-team "Mark Evans"
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino
+		0       1       7.50    125     -23
+		2       3       28.99   250     +81
+		3       4       31.00   285     +72
+		4       1       1.62    305     +00
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 

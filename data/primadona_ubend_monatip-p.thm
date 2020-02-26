@@ -1,19 +1,19 @@
 ###### Primadona-Ubend-Monatip #######
 
-map mall-p -projection plan
-	mprimadona-p
-	mubend-p
-	mmonatip-p
+map m-all-p -projection plan
+	m-primadona-p
+	m-ubend-p
+	m-monatip-p
 endmap
 
-map mprimadona-p -projection plan
-	mall-p@primadona
+map m-primadona-p -projection plan
+	m-all-p@primadona
 endmap
 
-map mubend-p -projection plan
-	mall-p@ubend
+map m-ubend-p -projection plan
+	m-all-p@ubend
 endmap
 
-map mmonatip-p -projection plan
-	mall-p@monatip
+map m-monatip-p -projection plan
+	m-all-p@monatip
 endmap

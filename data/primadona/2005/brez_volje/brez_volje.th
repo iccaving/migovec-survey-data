@@ -1,109 +1,109 @@
 encoding  utf-8
 survey brez_volje
-  input "brez_voljep.th2"
-  input "brez_volje-e.th2"
-
-
-  map mbrez_volje-e -projection extended
-    brez_volje-e1
-    #brez_volje-e2
-  endmap
-
-  map mbrez_volje-p -projection plan
-    mbrez_voljep_1
-    mbrez_voljep_2
-    mbrez_voljep_3
-  endmap
-  
-  map mbrez_voljep_1 -projection plan
-    brez_voljep_1
-  endmap
-  
-  map mbrez_voljep_2 -projection plan
-    brez_voljep_2
-  endmap
-  
-  map mbrez_voljep_3 -projection plan
-    brez_voljep_3
-  endmap
-
-  
-  join brez_voljep_1 brez_voljep_2
-  join brez_voljep_2 brez_voljep_3
-  
-  centreline
-    date 2005.10.15
-    explo-team "Bogomir Remškar"
-    explo-team "Beguš Tadej"
-    
-    team "Bogomir Remškar" insts notes
-    team "Beguš Tadej" insts notes
-    units length meters
-    units compass clino degrees
-    extend left
-POP22	BV2	4.9	346	3	#	0.5	0.5	1.5	0.0
-extend left
-BV2	BV3	1.6	50	-5	#	0.0	0.0	0.0	0.0
-extend left
-BV3	BV4	8.2	0	14	#	0.5	0.5	3.0	30.0
-extend left
-BV4	BV5	13.0	10	11	#	0.0	0.0	0.0	0.0
-extend left
-BV5	BV6	8.8	78	45	#	0.0	2.9	0.0	0.0
-extend left
-BV6	BV7	10.0	63	20	#	0.0	0.0	0.0	0.0
-extend vertical
-BV7	BV8	7.9	58	7	#	1.0	0.0	2.0	1.0
-extend right
-BV8	BV9	3.4	82	27	#	0.5	0.0	2.0	2.0
-extend right
-BV9	BV10	2.1	45	-18	#	0.5	0.0	0.0	0.0
-extend right
-BV10	BV11	1.3	10	20	#	0.5	0.0	0.0	0.0
-extend right
-BV11	BV12	3.5	71	19	#	0.0	0.5	1.0	0.5
-extend right
-BV12	BV13	3.0	331	0	#	0.0	2.9	2.9	0.5
-extend right
-BV13	BV14	3.0	309	13	#	0.5	0.0	1.9	0.5
-extend right
-BV14	BV15	1.6	26	10	#	0.0	0.5	0.5	0.5
-extend right
-BV15	BV16	5.7	10	13	#	0.0	0.5	1.0	1.0
-extend right
-BV16	BV17	2.6	320	45	#	0.0	0.5	1.4	1.4
-extend right
-BV17	BV18	1.2	294	30	#	0.5	0.0	1.4	1.4
-extend right
-BV18	BV19	4.4	323	18	#	0.5	0.0	0.5	1.9
-extend right
-BV19	BV20	6.7	0	29	#	0.5	0.0	0.5	1.9
-extend right
-BV20	BV21	3.3	50	16	#	0.0	0.5	1.0	5.0
-extend right
-BV21	BV22	1.1	65	20	#	0.0	0.5	1.9	1.9
-extend right
-BV22	BV23	4.4	104	-9	#	0.5	0.0	0.0	0.0
-extend right
-BV23	BV24	5.7	38	0	#	2.9	0.0	0.0	0.0
-extend right
-BV24	BV25	5.0	0	90	#	0.0	0.0	0.0	0.0
-extend right
-BV25	BV26	6.5	40	75	#	0.5	0.0	0.0	0.0
-extend right
-BV26	BV27	1.5	133	20	#	0.0	0.5	1.9	1.0
-extend right
-BV27	BV28	1.8	8	0	#	0.5	0.0	0.0	0.0
-extend right
-BV28	BV29	3.1	36	10	#	0.0	0.0	0.0	0.0
-extend right
-BV29	BV30	2.5	63	0	#	0.5	0.0	0.0	0.0
-extend right
-BV30	BV31	5.8	23	38	#	0.5	0.0	1.4	1.4
-extend right
-BV31	BV32	0.0	0	0	#	0.0	0.0	0.0	0.0
-endcentreline
-
+	input "brez_voljep.th2"
+	input "brez_volje-e.th2"
+	
+	
+	map  m-brez_volje-e -projection extended
+		brez_volje-e1
+		#brez_volje-e2
+	endmap
+	
+	map m-brez_volje-p -projection plan
+		mbrez_voljep_1
+		mbrez_voljep_2
+		mbrez_voljep_3
+	endmap
+	
+	map mbrez_voljep_1 -projection plan
+		brez_voljep_1
+	endmap
+	
+	map mbrez_voljep_2 -projection plan
+		brez_voljep_2
+	endmap
+	
+	map mbrez_voljep_3 -projection plan
+		brez_voljep_3
+	endmap
+	
+	
+	join brez_voljep_1 brez_voljep_2
+	join brez_voljep_2 brez_voljep_3
+	
+	centreline
+		date 2005.10.15
+		explo-team "Bogomir Remškar"
+		explo-team "Beguš Tadej"
+		
+		team "Bogomir Remškar" insts notes
+		team "Beguš Tadej" insts notes
+		units length meters
+		units compass clino degrees
+		extend left
+		POP22	BV2	4.9	346	3	#	0.5	0.5	1.5	0.0
+		extend left
+		BV2	BV3	1.6	50	-5	#	0.0	0.0	0.0	0.0
+		extend left
+		BV3	BV4	8.2	0	14	#	0.5	0.5	3.0	30.0
+		extend left
+		BV4	BV5	13.0	10	11	#	0.0	0.0	0.0	0.0
+		extend left
+		BV5	BV6	8.8	78	45	#	0.0	2.9	0.0	0.0
+		extend left
+		BV6	BV7	10.0	63	20	#	0.0	0.0	0.0	0.0
+		extend vertical
+		BV7	BV8	7.9	58	7	#	1.0	0.0	2.0	1.0
+		extend right
+		BV8	BV9	3.4	82	27	#	0.5	0.0	2.0	2.0
+		extend right
+		BV9	BV10	2.1	45	-18	#	0.5	0.0	0.0	0.0
+		extend right
+		BV10	BV11	1.3	10	20	#	0.5	0.0	0.0	0.0
+		extend right
+		BV11	BV12	3.5	71	19	#	0.0	0.5	1.0	0.5
+		extend right
+		BV12	BV13	3.0	331	0	#	0.0	2.9	2.9	0.5
+		extend right
+		BV13	BV14	3.0	309	13	#	0.5	0.0	1.9	0.5
+		extend right
+		BV14	BV15	1.6	26	10	#	0.0	0.5	0.5	0.5
+		extend right
+		BV15	BV16	5.7	10	13	#	0.0	0.5	1.0	1.0
+		extend right
+		BV16	BV17	2.6	320	45	#	0.0	0.5	1.4	1.4
+		extend right
+		BV17	BV18	1.2	294	30	#	0.5	0.0	1.4	1.4
+		extend right
+		BV18	BV19	4.4	323	18	#	0.5	0.0	0.5	1.9
+		extend right
+		BV19	BV20	6.7	0	29	#	0.5	0.0	0.5	1.9
+		extend right
+		BV20	BV21	3.3	50	16	#	0.0	0.5	1.0	5.0
+		extend right
+		BV21	BV22	1.1	65	20	#	0.0	0.5	1.9	1.9
+		extend right
+		BV22	BV23	4.4	104	-9	#	0.5	0.0	0.0	0.0
+		extend right
+		BV23	BV24	5.7	38	0	#	2.9	0.0	0.0	0.0
+		extend right
+		BV24	BV25	5.0	0	90	#	0.0	0.0	0.0	0.0
+		extend right
+		BV25	BV26	6.5	40	75	#	0.5	0.0	0.0	0.0
+		extend right
+		BV26	BV27	1.5	133	20	#	0.0	0.5	1.9	1.0
+		extend right
+		BV27	BV28	1.8	8	0	#	0.5	0.0	0.0	0.0
+		extend right
+		BV28	BV29	3.1	36	10	#	0.0	0.0	0.0	0.0
+		extend right
+		BV29	BV30	2.5	63	0	#	0.5	0.0	0.0	0.0
+		extend right
+		BV30	BV31	5.8	23	38	#	0.5	0.0	1.4	1.4
+		extend right
+		BV31	BV32	0.0	0	0	#	0.0	0.0	0.0	0.0
+	endcentreline
+	
 endsurvey
 
 

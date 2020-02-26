@@ -1,31 +1,31 @@
 
 survey stuckinparadise2 -title "Stuck in Paradise 2"
-
-input stuckinparadise2-p.th2
-
-map mstuckinparadise2-p -projection plan 
-    stuckinparadise2-1p
-endmap
-
-centreline
-    team "Izi" insts
-    team "Gergely Ambrus" notes
-    explo-team "Izi"
-    explo-team "Gergely"
-    date 2011.8.03
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	8.87	176	-23
-    3	2	5.60	253	-15
-    4	3	14.58	172	-55
-    5	4	12.06	202	-61
-    6	5	7.94	143	-62
-    7	6	12.96	261	-54
-    8	7	7.73	9	-60
-    9	8	2.62	302	-58
-    9	10	7.33	174	+49
-endcentreline
+	
+	input stuckinparadise2-p.th2
+	
+	map m-stuckinparadise2-p -projection plan
+		stuckinparadise2-1p
+	endmap
+	
+	centreline
+		team "Izi" insts
+		team "Gergely Ambrus" notes
+		explo-team "Izi"
+		explo-team "Gergely"
+		date 2011.8.03
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	8.87	176	-23
+		3	2	5.60	253	-15
+		4	3	14.58	172	-55
+		5	4	12.06	202	-61
+		6	5	7.94	143	-62
+		7	6	12.96	261	-54
+		8	7	7.73	9	-60
+		9	8	2.62	302	-58
+		9	10	7.33	174	+49
+	endcentreline
 endsurvey
 
 # Converted From SVX

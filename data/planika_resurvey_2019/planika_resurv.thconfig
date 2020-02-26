@@ -4,11 +4,11 @@ source planika.th
 input ../_layouts/layout_tanguy_basic_1.th
 input ../_layouts/layout_tanguy_basic_2.th
 
-select mplanika-e@planika
+select  m-planika-e@planika
 
 export map -o planika_extended.pdf -projection extended -layout map2
 
-select mplanika-p@planika
+select m-planika-p@planika
 
 export map -o planika_plan.pdf -projection plan -layout map1
 

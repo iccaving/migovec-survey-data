@@ -1,131 +1,131 @@
 
 ## MASTER MAP ##
-map mall-p -projection plan -title "Vrtnarija"
-	moriginal_entrance_series-p
-	mfriendship_level-p
-	mbelow_big_rock-p
-	mbeyond_red_cow-p
-	mbelow_balamory-p
-	mcheetah-p
-	mbeyond-consort-p
-	mbelow_stuck_in_paradise-p
-	mbeyond_atlantis-p
+map m-all-p -projection plan -title "Vrtnarija"
+	m-original_entrance_series-p
+	m-friendship_level-p
+	m-below_big_rock-p
+	m-beyond_red_cow-p
+	m-below_balamory-p
+	m-cheetah-p
+	m-beyond-consort-p
+	m-below_stuck_in_paradise-p
+	m-beyond_atlantis-p
 endmap
 
 ## SUBMAPS ##
-map moriginal_entrance_series-p -projection plan -title "Vrtsnarija entrance series"
-	mbclent2-p@bclent2
-	mlaurel-p@laurel
-	murinal-p@urinal
-	murinal2-p@urinal2
-	mpico-p@pico
-	mpico2-p@pico2
-	mtesselator-p@tesselator
-	mspace_odyssey-p@space_odyssey
-	mconcorde-p@concorde
-	malchemy-p@alchemy
-	mbanzai-p@banzai
-	mpink-p@pink
-	mpink2-p@pink2
-	mskynet-p@skynet
-	mzimmer-p@zimmer
+map m-original_entrance_series-p -projection plan -title "Vrtsnarija entrance series"
+	m-bclent2-p@bclent2
+	m-laurel-p@laurel
+	m-urinal-p@urinal
+	m-urinal2-p@urinal2
+	m-pico-p@pico
+	m-pico2-p@pico2
+	m-tesselator-p@tesselator
+	m-space_odyssey-p@space_odyssey
+	m-concorde-p@concorde
+	m-alchemy-p@alchemy
+	m-banzai-p@banzai
+	m-pink-p@pink
+	m-pink2-p@pink2
+	m-skynet-p@skynet
+	m-zimmer-p@zimmer
 endmap
 
-map mfriendship_level-p -projection plan
-	mfriendship-p@friendship
-	mfallsrd-p@fallsrd
-	mlowerfallsrd-p@lowerfallsrd
-	mcandyMountain-p@candyMountain
+map m-friendship_level-p -projection plan
+	m-friendship-p@friendship
+	m-fallsrd-p@fallsrd
+	m-lowerfallsrd-p@lowerfallsrd
+	m-candyMountain-p@candyMountain
 endmap
 
-map mbelow_big_rock-p -projection plan
-	mhighway32-p@highway32
-	mpostiga-p@postiga
-	mleprachaun-p@leprachaun
-	mweepeople-p@weepeople
-	mgold-p@gold
-	menvy-p@envy
-	mgreed-p@greed
-	mcascade-p@cascade
-	mbrownriceinlet-p@brownriceinlet
-	mdoublethink-p@doublethink
-	mthirdthoughts-p@thirdthoughts
-	mmushroom-p@mushroom
-	msoda-p@soda
+map m-below_big_rock-p -projection plan
+	m-highway32-p@highway32
+	m-postiga-p@postiga
+	m-leprachaun-p@leprachaun
+	m-weepeople-p@weepeople
+	m-gold-p@gold
+	m-envy-p@envy
+	m-greed-p@greed
+	m-cascade-p@cascade
+	m-brownriceinlet-p@brownriceinlet
+	m-doublethink-p@doublethink
+	m-thirdthoughts-p@thirdthoughts
+	m-mushroom-p@mushroom
+	m-soda-p@soda
 endmap
 
-map mbeyond_red_cow-p -projection plan
-	mmad_cow-p@mad_cow
-	mnitro-p@nitro
-	mpotato-p@potato
-	msmash-p@smash
-	mmiles-p@miles
-	mbeyond-p@beyond
-	mhoover-p@hoover
-	mcolarado-p@colarado
+map m-beyond_red_cow-p -projection plan
+	m-mad_cow-p@mad_cow
+	m-nitro-p@nitro
+	m-potato-p@potato
+	m-smash-p@smash
+	m-miles-p@miles
+	m-beyond-p@beyond
+	m-hoover-p@hoover
+	m-colarado-p@colarado
 endmap
 
-map mbelow_balamory-p -projection plan
-	mbalamory-p@balamory
+map m-below_balamory-p -projection plan
+	m-balamory-p@balamory
 endmap
 
-map mcheetah-p -projection plan
-	mwonderland-p@wonderland
-	mrolling-p@rolling
-	msurprise-p@surprise
-	mkamikaze-p@kamikaze
-	mlosthopes-p@losthopes
-	mredbaron-p@redbaron
-	mthroneroom-p@throneroom
-	mamazinggrace-p@amazinggrace
-	mserenade-p@serenade
-	mgrace2-p@grace2
-	mmagicdragon-p@magicdragon
+map m-cheetah-p -projection plan
+	m-wonderland-p@wonderland
+	m-rolling-p@rolling
+	m-surprise-p@surprise
+	m-kamikaze-p@kamikaze
+	m-losthopes-p@losthopes
+	m-redbaron-p@redbaron
+	m-throneroom-p@throneroom
+	m-amazinggrace-p@amazinggrace
+	m-serenade-p@serenade
+	m-grace2-p@grace2
+	m-magicdragon-p@magicdragon
 endmap
 
-map mbeyond-consort-p -projection plan
-	mconsort-p@consort
+map m-beyond-consort-p -projection plan
+	m-consort-p@consort
 endmap
 
-map mbelow_stuck_in_paradise-p -projection plan
-	mstuckinparadise-p@stuckinparadise
-	mstuckinparadise2-p@stuckinparadise2
-	mkneekiller-p@kneekiller
-	mbravenewworld-p@bravenewworld
-	minvictus-p@invictus
-	mRCC_passage-p@RCC_passage
-	msalvation-p@salvation
-	meastlinks-p@eastlinks
-	mhash-p@hash
-	mhash2-p@hash2
-	mhash3-p@hash3
-	matlantis-p@atlantis
-	mminestrone2-p@minestrone2
-	mminestrone1-p@minestrone1
-	mingloriousbasterd-p@ingloriousbasterd
+map m-below_stuck_in_paradise-p -projection plan
+	m-stuckinparadise-p@stuckinparadise
+	m-stuckinparadise2-p@stuckinparadise2
+	m-kneekiller-p@kneekiller
+	m-bravenewworld-p@bravenewworld
+	m-invictus-p@invictus
+	m-RCC_passage-p@RCC_passage
+	m-salvation-p@salvation
+	m-eastlinks-p@eastlinks
+	m-hash-p@hash
+	m-hash2-p@hash2
+	m-hash3-p@hash3
+	m-atlantis-p@atlantis
+	m-minestrone2-p@minestrone2
+	m-minestrone1-p@minestrone1
+	m-ingloriousbasterd-p@ingloriousbasterd
 endmap
 
-map mbeyond_atlantis-p -projection plan
-	mwere_not_alone-p@were_not_alone
-	mbrezno_slapov-p@brezno_slapov
-	mlethe-p@lethe
-	msicsempertyrannis-p@sicsempertyrannis
-	mjericho-p@jericho
-	mjericho2-p@jericho2
-	msquidgygoodness-p@squidgygoodness
-	mjetstream-p@jetstream
-	mfirstdraft-p@firstdraft
-	mfinaldraft-p@finaldraft
-	mmeridianway-p@meridianway
-	mchoke-a-bloke-p@choke-a-bloke
-	memptyquarter-p@emptyquarter
-	mblast-p@blast
-	mpleasurepalace-p@pleasurepalace
-	mtouchingthevoid-p@touchingthevoid
-	mtouchingthevoidsbottom-p@touchingthevoidsbottom
-	mdavyjoneslocker-p@davyjoneslocker
-	matworldsend-p@atworldsend
+map m-beyond_atlantis-p -projection plan
+	m-were_not_alone-p@were_not_alone
+	m-brezno_slapov-p@brezno_slapov
+	m-lethe-p@lethe
+	m-sicsempertyrannis-p@sicsempertyrannis
+	m-jericho-p@jericho
+	m-jericho2-p@jericho2
+	m-squidgygoodness-p@squidgygoodness
+	m-jetstream-p@jetstream
+	m-firstdraft-p@firstdraft
+	m-finaldraft-p@finaldraft
+	m-meridianway-p@meridianway
+	m-choke-a-bloke-p@choke-a-bloke
+	m-emptyquarter-p@emptyquarter
+	m-blast-p@blast
+	m-pleasurepalace-p@pleasurepalace
+	m-touchingthevoid-p@touchingthevoid
+	m-touchingthevoidsbottom-p@touchingthevoidsbottom
+	m-davyjoneslocker-p@davyjoneslocker
+	m-atworldsend-p@atworldsend
 endmap
 
-#map mbelow_republica-p -projection plan
+#map m-below_republica-p -projection plan
 #endmap

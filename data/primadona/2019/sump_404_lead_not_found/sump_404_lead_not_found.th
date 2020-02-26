@@ -2,202 +2,202 @@
 # 2019.07.26 created by TopoDroid v 4.1.2q
 
 survey sump_404_lead_not_found -title "sump_404_lead_not_found"
-    # small sump off main passage belowTestify 
-
-   input "sump_404_lead_not_found-1p.th2"
-   input "sump_404_lead_not_found-1s.th2"
-   input "sump_404_lead_not_found-sumpp.th2"
-  ## input "sump_404_lead_not_found-sumps.th2"
-   input "sump_404_lead_not_found-crawlp.th2"
-  ## input "sump_404_lead_not_found-crawls.th2"
-
-   map msump_404_lead_not_found-p -projection plan
+	# small sump off main passage belowTestify
+	
+	input "sump_404_lead_not_found-1p.th2"
+	input "sump_404_lead_not_found-1s.th2"
+	input "sump_404_lead_not_found-sumpp.th2"
+	## input "sump_404_lead_not_found-sumps.th2"
+	input "sump_404_lead_not_found-crawlp.th2"
+	## input "sump_404_lead_not_found-crawls.th2"
+	
+	map m-sump_404_lead_not_found-p -projection plan
 		m1p
 		msumpp
 		mcrawlp
-   endmap
-
-   map msump_404_lead_not_found-e -projection extended
-        m1s
-   endmap
-
-   join sump_l1 s1_l1
-   join sump_l2 s1_l2
-
-   join sump_404_lead_not_found-1p sump_404_lead_not_found-crawlp
-   
-   map m1p -projection plan
-     sump_404_lead_not_found-1p
-   endmap
-   map m1s -projection extended
-     sump_404_lead_not_found-1s
-   endmap
-   map msumpp -projection plan
-     sump_404_lead_not_found-sumpp
-   endmap
-  ## map msumps -projection extended
-  ##   sump_404_lead_not_found-sumps
-  ## endmap
-   map mcrawlp -projection plan
-     sump_404_lead_not_found-crawlp
-   endmap
-  ## map mcrawls -projection extended
-  ##   sump_404_lead_not_found-crawls
-  ## endmap
-
-  centerline
-    date 2019.07.25 
-    explo-date 2019.07.25 
-    team "Tanguy Racine" insts notes
-    team  "James Wilson" dog 
-
-    explo-team "Rhys Tyers"
-    explo-team "Tanguy Racine"
-    explo-team "James Wilson"
-
-    units length meters
-    units compass clino degrees
-    data normal from to length compass clino
-
-    # extend auto
-    0 . 0.79 214.7 85.9
-    0 . 1.50 266.2 6.2
-    0 . 4.07 79.7 7.2
-    0 . 1.45 81.5 36.7
-    0 . 4.13 107.6 16.6
-    0 . 3.84 45.7 16.7
-    0 . 4.23 74.1 23.6
-    0 . 4.20 100.8 17.7
-    0 . 2.57 111.0 1.1
-    0 . 2.37 133.4 3.4
-    0 . 1.54 139.1 28.6
-    0 . 0.95 341.1 57.3
-    extend right
-    0 1 2.56 140.3 -1.7
-    # extend auto
-    1 . 0.47 264.3 58.9
-    1 . 0.71 269.6 14.2
-    1 . 1.02 267.7 -16.0
-    1 . 1.64 259.2 -42.4
-    1 . 1.06 218.6 -72.3
-    1 . 0.70 89.8 -56.6
-    1 . 2.00 219.4 -19.7
-    1 . 2.61 206.1 -14.8
-    1 . 1.46 184.8 -18.5
-    1 . 1.95 203.7 -3.0
-    1 . 0.60 241.6 12.8
-    1 . 0.71 310.7 30.4
-    extend right
-    1 2 2.92 195.5 -12.5
-    # extend auto
-    2 . 0.92 77.0 -39.6
-    2 . 0.82 80.7 -22.6
-    2 . 0.88 76.8 6.4
-    2 . 0.84 79.2 31.5
-    2 . 0.49 71.1 63.1
-    2 . 0.90 3.0 36.3
-    2 . 1.11 12.8 25.8
-    2 . 1.34 122.9 -5.5
-    2 . 1.53 141.5 -6.1
-    2 . 1.49 162.0 -7.7
-    extend right
-    2 3 2.06 164.0 -17.4
-    extend left
-    0 4 2.26 89.2 13.2
-    # extend auto
-    4 . 1.89 78.6 16.1
-    4 . 2.03 77.3 42.0
-    4 . 0.90 51.1 73.7
-    4 . 2.21 22.3 59.7
-    4 . 2.94 36.0 39.6
-    4 . 2.28 0.6 40.9
-    4 . 2.51 342.7 5.8
-    4 . 3.15 348.8 -16.1
-    4 . 2.42 307.8 -0.0
-    4 . 1.53 323.1 25.3
-    4 . 1.04 276.6 19.1
-    4 . 8.46 358.5 30.1
-    4 . 3.37 354.5 17.5
-    extend left
-    4 5 2.90 14.8 38.0
-    # extend auto
-    5 . 0.58 255.3 0.9
-    5 . 4.67 220.0 -32.6
-    5 . 4.05 168.1 -14.0
-    5 . 4.66 171.2 -17.9
-    5 . 3.78 178.6 -29.5
-    5 . 1.21 140.4 -8.1
-    5 . 0.66 149.6 81.6
-    5 . 2.79 273.7 -46.1
-    5 . 4.37 8.8 -1.8
-    5 . 5.86 353.7 -1.7
-    5 . 6.72 341.0 -2.8
-    5 . 6.35 331.5 -0.5
-    5 . 6.96 340.3 13.6
-    5 . 5.34 357.7 15.9
-    5 . 0.41 316.1 2.5
-    extend left
-    5 6 1.79 19.0 7.1
-    # extend auto
-    6 . 2.19 11.3 1.6
-    6 . 4.45 344.8 -2.2
-    6 . 5.14 322.5 -3.7
-    6 . 1.89 252.0 0.4
-    6 . 2.73 280.5 -1.7
-    6 . 4.72 282.5 -0.8
-    6 . 5.84 300.2 12.6
-    6 . 5.47 338.1 37.8
-    6 . 7.81 309.8 50.7
-    6 . 3.00 268.1 46.3
-    6 . 15.36 277.3 69.9
-    6 . 11.46 288.8 63.8
-    6 . 7.97 297.0 47.7
-    6 . 6.36 300.0 31.7
-    extend left
-    6 7 5.73 290.3 1.2
-    # extend auto
-    7 . 1.99 78.8 -32.8
-    7 . 3.11 84.5 -24.4
-    7 . 5.42 87.7 -13.1
-    7 . 3.79 66.2 -15.5
-    7 . 8.72 107.0 58.1
-    7 . 6.76 101.4 47.7
-    7 . 6.14 103.6 33.5
-    7 . 6.53 120.1 25.8
-    7 . 10.92 128.9 75.7
-    7 . 3.18 23.2 1.1
-    7 . 6.22 8.2 -0.7
-    7 . 0.50 59.2 69.2
-    7 . 0.64 70.0 -76.0
-    7 . 0.48 77.8 2.8
-    7 . 0.29 261.5 17.4
-    7 . 3.93 345.2 -7.4
-    7 . 2.00 357.2 -6.4
-    7 . 1.17 17.2 -10.5
-    7 . 0.54 53.3 -1.5
-    7 . 0.82 129.6 13.2
-    7 . 2.85 166.3 8.9
-    7 . 1.51 158.8 5.5
-    7 . 1.46 189.6 4.7
-    7 . 1.22 199.3 5.4
-    7 . 4.47 179.2 4.7
-    extend left
-    8 9 10.13 342.4 -4.5
-    extend right
-    8 10 4.69 181.1 3.5
-    # extend auto
-    10 . 0.64 86.1 4.9
-    10 . 0.32 94.9 -45.2
-    10 . 5.37 179.4 -1.9
-    extend right
-    10 11 2.89 175.5 -6.8
-    # extend auto
-    11 . 0.61 161.9 88.8
-    11 . 0.93 51.6 27.4
-    11 . 0.90 277.9 15.4
-    11 . 1.33 247.0 12.0
-    extend right
-    11 7 1.80 197.0 8.1
-  endcenterline
-
+	endmap
+	
+	map  m-sump_404_lead_not_found-e -projection extended
+		m1s
+	endmap
+	
+	join sump_l1 s1_l1
+	join sump_l2 s1_l2
+	
+	join sump_404_lead_not_found-1p sump_404_lead_not_found-crawlp
+	
+	map m1p -projection plan
+		sump_404_lead_not_found-1p
+	endmap
+	map m1s -projection extended
+		sump_404_lead_not_found-1s
+	endmap
+	map msumpp -projection plan
+		sump_404_lead_not_found-sumpp
+	endmap
+	## map msumps -projection extended
+	##   sump_404_lead_not_found-sumps
+	## endmap
+	map mcrawlp -projection plan
+		sump_404_lead_not_found-crawlp
+	endmap
+	## map mcrawls -projection extended
+	##   sump_404_lead_not_found-crawls
+	## endmap
+	
+	centerline
+		date 2019.07.25
+		explo-date 2019.07.25
+		team "Tanguy Racine" insts notes
+		team  "James Wilson" dog
+		
+		explo-team "Rhys Tyers"
+		explo-team "Tanguy Racine"
+		explo-team "James Wilson"
+		
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		# extend auto
+		0 . 0.79 214.7 85.9
+		0 . 1.50 266.2 6.2
+		0 . 4.07 79.7 7.2
+		0 . 1.45 81.5 36.7
+		0 . 4.13 107.6 16.6
+		0 . 3.84 45.7 16.7
+		0 . 4.23 74.1 23.6
+		0 . 4.20 100.8 17.7
+		0 . 2.57 111.0 1.1
+		0 . 2.37 133.4 3.4
+		0 . 1.54 139.1 28.6
+		0 . 0.95 341.1 57.3
+		extend right
+		0 1 2.56 140.3 -1.7
+		# extend auto
+		1 . 0.47 264.3 58.9
+		1 . 0.71 269.6 14.2
+		1 . 1.02 267.7 -16.0
+		1 . 1.64 259.2 -42.4
+		1 . 1.06 218.6 -72.3
+		1 . 0.70 89.8 -56.6
+		1 . 2.00 219.4 -19.7
+		1 . 2.61 206.1 -14.8
+		1 . 1.46 184.8 -18.5
+		1 . 1.95 203.7 -3.0
+		1 . 0.60 241.6 12.8
+		1 . 0.71 310.7 30.4
+		extend right
+		1 2 2.92 195.5 -12.5
+		# extend auto
+		2 . 0.92 77.0 -39.6
+		2 . 0.82 80.7 -22.6
+		2 . 0.88 76.8 6.4
+		2 . 0.84 79.2 31.5
+		2 . 0.49 71.1 63.1
+		2 . 0.90 3.0 36.3
+		2 . 1.11 12.8 25.8
+		2 . 1.34 122.9 -5.5
+		2 . 1.53 141.5 -6.1
+		2 . 1.49 162.0 -7.7
+		extend right
+		2 3 2.06 164.0 -17.4
+		extend left
+		0 4 2.26 89.2 13.2
+		# extend auto
+		4 . 1.89 78.6 16.1
+		4 . 2.03 77.3 42.0
+		4 . 0.90 51.1 73.7
+		4 . 2.21 22.3 59.7
+		4 . 2.94 36.0 39.6
+		4 . 2.28 0.6 40.9
+		4 . 2.51 342.7 5.8
+		4 . 3.15 348.8 -16.1
+		4 . 2.42 307.8 -0.0
+		4 . 1.53 323.1 25.3
+		4 . 1.04 276.6 19.1
+		4 . 8.46 358.5 30.1
+		4 . 3.37 354.5 17.5
+		extend left
+		4 5 2.90 14.8 38.0
+		# extend auto
+		5 . 0.58 255.3 0.9
+		5 . 4.67 220.0 -32.6
+		5 . 4.05 168.1 -14.0
+		5 . 4.66 171.2 -17.9
+		5 . 3.78 178.6 -29.5
+		5 . 1.21 140.4 -8.1
+		5 . 0.66 149.6 81.6
+		5 . 2.79 273.7 -46.1
+		5 . 4.37 8.8 -1.8
+		5 . 5.86 353.7 -1.7
+		5 . 6.72 341.0 -2.8
+		5 . 6.35 331.5 -0.5
+		5 . 6.96 340.3 13.6
+		5 . 5.34 357.7 15.9
+		5 . 0.41 316.1 2.5
+		extend left
+		5 6 1.79 19.0 7.1
+		# extend auto
+		6 . 2.19 11.3 1.6
+		6 . 4.45 344.8 -2.2
+		6 . 5.14 322.5 -3.7
+		6 . 1.89 252.0 0.4
+		6 . 2.73 280.5 -1.7
+		6 . 4.72 282.5 -0.8
+		6 . 5.84 300.2 12.6
+		6 . 5.47 338.1 37.8
+		6 . 7.81 309.8 50.7
+		6 . 3.00 268.1 46.3
+		6 . 15.36 277.3 69.9
+		6 . 11.46 288.8 63.8
+		6 . 7.97 297.0 47.7
+		6 . 6.36 300.0 31.7
+		extend left
+		6 7 5.73 290.3 1.2
+		# extend auto
+		7 . 1.99 78.8 -32.8
+		7 . 3.11 84.5 -24.4
+		7 . 5.42 87.7 -13.1
+		7 . 3.79 66.2 -15.5
+		7 . 8.72 107.0 58.1
+		7 . 6.76 101.4 47.7
+		7 . 6.14 103.6 33.5
+		7 . 6.53 120.1 25.8
+		7 . 10.92 128.9 75.7
+		7 . 3.18 23.2 1.1
+		7 . 6.22 8.2 -0.7
+		7 . 0.50 59.2 69.2
+		7 . 0.64 70.0 -76.0
+		7 . 0.48 77.8 2.8
+		7 . 0.29 261.5 17.4
+		7 . 3.93 345.2 -7.4
+		7 . 2.00 357.2 -6.4
+		7 . 1.17 17.2 -10.5
+		7 . 0.54 53.3 -1.5
+		7 . 0.82 129.6 13.2
+		7 . 2.85 166.3 8.9
+		7 . 1.51 158.8 5.5
+		7 . 1.46 189.6 4.7
+		7 . 1.22 199.3 5.4
+		7 . 4.47 179.2 4.7
+		extend left
+		8 9 10.13 342.4 -4.5
+		extend right
+		8 10 4.69 181.1 3.5
+		# extend auto
+		10 . 0.64 86.1 4.9
+		10 . 0.32 94.9 -45.2
+		10 . 5.37 179.4 -1.9
+		extend right
+		10 11 2.89 175.5 -6.8
+		# extend auto
+		11 . 0.61 161.9 88.8
+		11 . 0.93 51.6 27.4
+		11 . 0.90 277.9 15.4
+		11 . 1.33 247.0 12.0
+		extend right
+		11 7 1.80 197.0 8.1
+	endcenterline
+	
 endsurvey

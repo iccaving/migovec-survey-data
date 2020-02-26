@@ -1,25 +1,25 @@
 
 survey hoover -title "Rift from oxbow near sump"
-    input "hoover-p.th2"
-    
-    map mhoover-p -projection plan
-        hoover-1p
-    endmap
-centreline
-    team "Jim Evans" insts
-    team "Dave Wilson" notes
-    explo-team "Jim Evans"
-    explo-team "Dave Wilson"
-    explo-date 2004.8.4
-    date 2004.8.4
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    2	1	15.3	349	+30
-    2	3	12.75	175	-7
-    3	4	6.70	188	-9
-    4	5	9.45	222	-17
-endcentreline
+	input "hoover-p.th2"
+	
+	map m-hoover-p -projection plan
+		hoover-1p
+	endmap
+	centreline
+		team "Jim Evans" insts
+		team "Dave Wilson" notes
+		explo-team "Jim Evans"
+		explo-team "Dave Wilson"
+		explo-date 2004.8.4
+		date 2004.8.4
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		2	1	15.3	349	+30
+		2	3	12.75	175	-7
+		3	4	6.70	188	-9
+		4	5	9.45	222	-17
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -47,5 +47,5 @@ endsurvey
 #*equate hoover.5 colarado.4
 #
 #
-#	
+#
 #

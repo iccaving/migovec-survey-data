@@ -1,27 +1,27 @@
 survey M16 -title "M16 part of System Migovec"
 	
-	map mall-p -projection plan
-		mentrance-p@entrance
-		mhotline-p@hotline
-		mlostcity-p@lostcity
-		mbrezno-p@brezno
-		mgoodbag-p@goodbag
-		mbaddybag-p@baddybag
-		mshordrop-p@shordrop
-		mshordrop2-p@shordrop2
-		mmigcon-p@migcon
-		mmigconleft-p@migconleft
-		mmigcondown-p@migcondown
+	map m-all-p -projection plan
+		m-entrance-p@entrance
+		m-hotline-p@hotline
+		m-lostcity-p@lostcity
+		m-brezno-p@brezno
+		m-goodbag-p@goodbag
+		m-baddybag-p@baddybag
+		m-shordrop-p@shordrop
+		m-shordrop2-p@shordrop2
+		m-migcon-p@migcon
+		m-migconleft-p@migconleft
+		m-migcondown-p@migcondown
 		#mmigcond2@migcond2
-		mlevel2s-p@level2s
-		mlevel2n-p@level2n
-		mexhib-p@exhib
-		mcarwash-p@carwash
-		mrockroll-p@rockroll
-		mxxx-p@xxx
-		msajeta-p@sajeta
-		mhotel-p@hotel
-		mpinkp-p@pinkp
+		m-level2s-p@level2s
+		m-level2n-p@level2n
+		m-exhib-p@exhib
+		m-carwash-p@carwash
+		m-rockroll-p@rockroll
+		m-xxx-p@xxx
+		m-sajeta-p@sajeta
+		m-hotel-p@hotel
+		m-pinkp-p@pinkp
 	endmap
 	
 	###__________1996____________###

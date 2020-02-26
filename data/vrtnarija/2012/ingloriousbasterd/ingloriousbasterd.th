@@ -1,26 +1,26 @@
 
 survey ingloriousbasterd -title "Inglorious Basterd"
-
-input ingloriousbasterd-p.th2
-
-map mingloriousbasterd-p -projection plan
-    ingloriousbasterd-1p
-endmap
-
-centreline
-    team "Oliver Myerscough" insts
-    team "Gergely Ambrus" notes
-    explo-team "Oliver Myerscough"
-    explo-team "Gergely Ambrus"
-    date 2012.8.9
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	10.22	267	-19
-    3	2	7.00	295	-42
-    4	3	9.58	238	-50
-    5	4	5.69	293	-24
-endcentreline
+	
+	input ingloriousbasterd-p.th2
+	
+	map m-ingloriousbasterd-p -projection plan
+		ingloriousbasterd-1p
+	endmap
+	
+	centreline
+		team "Oliver Myerscough" insts
+		team "Gergely Ambrus" notes
+		explo-team "Oliver Myerscough"
+		explo-team "Gergely Ambrus"
+		date 2012.8.9
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	10.22	267	-19
+		3	2	7.00	295	-42
+		4	3	9.58	238	-50
+		5	4	5.69	293	-24
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -44,7 +44,7 @@ endsurvey
 #4	3	9.58	238	-50
 #5	4	5.69	293	-24
 #
-#;NOTES 
+#;NOTES
 #;none
 #
 #;LRUD Data as below - introduce a new *data line if there's breaks in the survey

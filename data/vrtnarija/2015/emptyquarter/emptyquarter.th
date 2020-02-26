@@ -1,41 +1,41 @@
 
 survey emptyquarter -title "Empty Quarter"
-
-input emptyquarter-p.th2
-
-map memptyquarter-p -projection plan
-    emptyquarter-1p
-endmap
-
-centreline
-    team "Oliver Myerscough" insts
-    team "Clare Tan" notes
-    explo-team "Oliver Myerscough"
-    explo-team "Clare Tan"
-    date 2015.7.28
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	4.46	246	-23
-    3	2	8.35	288	+00
-    3	4	5.33	115	+23
-    5	4	3.76	283	-53
-    5	6	2.60	082	+16
-    7	6	10.37	302	-34
-    7	8	18.70	052	+15
-    9	8	11.39	241	-19
-    9	10	1.45	320	-07
-    9	11	5.34	027	+34
-    12	11	4.71	228	-51
-    12	13	8.55	032	+12
-    14	13	8.14	208	-02
-    14	15	19.36	046	+19
-    16	15	12.70	281	-03
-    16	17	9.65	086	+24
-    18	17	13.56	221	+04
-    18	19	4.50	340	+24
-    20	19	13.12	017	+01
-endcentreline
+	
+	input emptyquarter-p.th2
+	
+	map m-emptyquarter-p -projection plan
+		emptyquarter-1p
+	endmap
+	
+	centreline
+		team "Oliver Myerscough" insts
+		team "Clare Tan" notes
+		explo-team "Oliver Myerscough"
+		explo-team "Clare Tan"
+		date 2015.7.28
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	4.46	246	-23
+		3	2	8.35	288	+00
+		3	4	5.33	115	+23
+		5	4	3.76	283	-53
+		5	6	2.60	082	+16
+		7	6	10.37	302	-34
+		7	8	18.70	052	+15
+		9	8	11.39	241	-19
+		9	10	1.45	320	-07
+		9	11	5.34	027	+34
+		12	11	4.71	228	-51
+		12	13	8.55	032	+12
+		14	13	8.14	208	-02
+		14	15	19.36	046	+19
+		16	15	12.70	281	-03
+		16	17	9.65	086	+24
+		18	17	13.56	221	+04
+		18	19	4.50	340	+24
+		20	19	13.12	017	+01
+	endcentreline
 endsurvey
 
 # Converted From SVX

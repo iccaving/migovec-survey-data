@@ -1,66 +1,66 @@
 survey chocolate_river -title "Chocolate River (continuation of Mouseleum 2"
 	input "chocolate_river-p.th2"
 	input "chocolate_river-e.th2"
-
-	map mchocolate_river-e -projection extended
+	
+	map  m-chocolate_river-e -projection extended
 		chocolate_river-1e
 	endmap
-
-	map m1-p -projection plan
+	
+	map m-1-p -projection plan
 		chocolate_river-p1
 	endmap
-
-	map m2-p -projection plan
+	
+	map m-2-p -projection plan
 		chocolate_river-p2
 	endmap
-
-	map mchocolate_river-p -projection plan
-		m2-p
-		m1-p
+	
+	map m-chocolate_river-p -projection plan
+		m-2-p
+		m-1-p
 	endmap
-
+	
 	join chocolate_river-p1 chocolate_river-p2
-
+	
 	centreline
 		explo-team "James Wilson"
 		explo-team "David [P Wilson]"
-
+		
 		team "James Wilson"	 notes
 		team "David [P Wilson]"	 insts tape
 		date 2018.08.02
 		explo-date 2018.08.02
-
+		
 		units length meters
-    	units compass clino degrees
-    	data normal from to length compass clino
-
-    	#Data on 1 page
-    	#Page 1
-    	extend left
-    	2	1	15.10	054	-01
-    	extend left
-    	3	2	14.80	359	0
-    	extend left
-    	4	3	5.69	321	-10
-    	extend right
-    	5	4	3.75	243	-55
-    	extend right
-    	6	5	7.25	228	-22
-    	extend left
-    	7	6	2.21	021	-29
-    	extend vertical
-    	8	7	2.57	-	down
-    	extend left
-    	9	8	3.28	324	-25
-    	extend left
-    	10	9	4.27	329	-54
-    	extend left
-    	11	10	2.94	010	-32
-    	extend left
-    	12	11	5.85	335	0
-
-    	#NOTES 
-    	#STN1 is  pss
-    	#STN12 is mouseleum_2 STN3
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		#Data on 1 page
+		#Page 1
+		extend left
+		2	1	15.10	054	-01
+		extend left
+		3	2	14.80	359	0
+		extend left
+		4	3	5.69	321	-10
+		extend right
+		5	4	3.75	243	-55
+		extend right
+		6	5	7.25	228	-22
+		extend left
+		7	6	2.21	021	-29
+		extend vertical
+		8	7	2.57	-	down
+		extend left
+		9	8	3.28	324	-25
+		extend left
+		10	9	4.27	329	-54
+		extend left
+		11	10	2.94	010	-32
+		extend left
+		12	11	5.85	335	0
+		
+		#NOTES
+		#STN1 is  pss
+		#STN12 is mouseleum_2 STN3
 	endcentreline
 endsurvey

@@ -1,27 +1,27 @@
 
 survey were_not_alone -title "We're Not Alone"
-
-input were_not_alone-p.th2
-
-map mwere_not_alone-p -projection plan
-    were_not_alone-1p
-endmap
-
-centreline
-    team "Dave Wilson" insts
-    team "James Hooper" notes
-    explo-team "Dave Wilson"
-    explo-team "James Hooper"
-    date 2013.8.7
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	7.00	168	-02
-    1	3	12.85	342	+07
-    3	4	5.32	350	+01
-    4	5	4.08	278	+06
-    5	6	10.71	264	-15
-endcentreline
+	
+	input were_not_alone-p.th2
+	
+	map m-were_not_alone-p -projection plan
+		were_not_alone-1p
+	endmap
+	
+	centreline
+		team "Dave Wilson" insts
+		team "James Hooper" notes
+		explo-team "Dave Wilson"
+		explo-team "James Hooper"
+		date 2013.8.7
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	7.00	168	-02
+		1	3	12.85	342	+07
+		3	4	5.32	350	+01
+		4	5	4.08	278	+06
+		5	6	10.71	264	-15
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -46,9 +46,9 @@ endsurvey
 #4	5	4.08	278	+06
 #5	6	10.71	264	-15
 #
-#;NOTES 
+#;NOTES
 #;Station 1 is PSS
-#;Station 4 is PSS 
+#;Station 4 is PSS
 #;Stn 6 is a PSS
 #
 #;LRUD Data as below - introduce a new *data line if there's breaks in the survey

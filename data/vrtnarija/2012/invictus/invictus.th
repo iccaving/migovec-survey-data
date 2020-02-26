@@ -1,12 +1,12 @@
 
 survey invictus -title "Invictus"
-
-input invictus-p.th2
-
-map minvictus-p -projection plan
-    invictus-1p
-endmap
-
+	
+	input invictus-p.th2
+	
+	map m-invictus-p -projection plan
+		invictus-1p
+	endmap
+	
 	centreline
 		team "Rhys Tyers" insts
 		team "James Hooper" notes
