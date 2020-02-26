@@ -1,0 +1,53 @@
+encoding  utf-8
+survey ubend -title "U-bend 571"
+	
+	map mall-p -projection plan
+		mubend2-p@ubend2
+		mubend1-p@ubend
+		mubend3-p@ubend3
+		mdet-p@det
+		mbathtub-p@bathtub
+	endmap
+	
+	map mall-e -projection extended
+		mdrainpipe-e@drainpipe
+		mubend-e@ubend
+		mubend2-e@ubend2
+		mubend3-e@ubend3
+		mdet-e@det
+		mbathtub-e@bathtub
+	endmap
+	
+	#The includes
+	input "2000/ubend/ubend.th"
+	input "2000/ubend2/ubend2.th"
+	input "2000/ubend3/ubend3.th"
+	input "2007/ubend_det/det.th"
+	input "2007/ubend_drainpipe/drainpipe.th"
+	input "2007/ubend_bathtub/bathtub.th"
+	
+	#The equates
+	equate 1@ubend2  6@ubend
+	equate 1@ubend 1@ubend3
+	equate 7@det 8@ubend3
+	
+	equate 5@bathtub 3@det
+	
+	equate 1@bathtub 6@drainpipe
+	
+	#The joins
+	join ubendp_1@ubend ubend3p_1@ubend3
+	join ubend3p_2@ubend3 detp_1@det
+	
+	join detp_1@det bathtubp_1@bathtub
+	join bathtubp_1@bathtub drainpipep_1@drainpipe
+	
+	join det-1e@det ubend3-1e@ubend3
+	join ubend3-1e@ubend3 ubend-1e@ubend
+	join ubend-1e@ubend ubend2-1e@ubend2
+	join det-1e@det bathtub-1e@bathtub
+	join bathtub-1e@bathtub drainpipe-1e@drainpipe
+	
+	
+endsurvey
+

@@ -1,7 +1,4 @@
 encoding  utf-8
 source ../_xtherion/primadona_extend.th
 
-#input "layout.th"
-#select mprima_orig@primadona
-
 export map -o "../outputs/prima_extend.pdf" -projection extended #-layout local

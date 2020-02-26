@@ -1,0 +1,19 @@
+###### System Migovec #######
+
+map mall-p -projection plan
+	mprimadona_ubend_monatip-p
+	mvrtnarija-p
+	mm2m16m18-p
+endmap
+
+map mprimadona_ubend_monatip-p -projection plan
+	mall-p@primadona_ubend_monatip
+endmap
+
+map mvrtnarija-p -projection plan
+	mall-p@vrtnarija
+endmap
+
+map mm2m16m18-p -projection plan
+	mall-p@m2m16m18
+endmap

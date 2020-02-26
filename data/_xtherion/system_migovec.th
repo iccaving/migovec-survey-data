@@ -9,30 +9,28 @@
 
 encoding  utf-8
 
-# start the survey definition
 survey system_migovec -title "System Migovec"
-
-# input the map definitions for PLAN and EXTENDED ELEVATION
-	#input "prima_ubend_monatip_plan.thm"
-	#input "prima_ubend_monatip_extend.thm"
-
-# input the individual cave data files
-	input "../_xtherion/primadona_ubend_monatip.th"
+	#input the map definitions
+	input "./system_migovec-p.thm"
+	input "./system_migovec-e.thm"
+	
+	# input the individual cave data files
+	input "./primadona_ubend_monatip.th"
+	input "./m2m16m18.th"
 	input "../vrtnarija/_xtherion/vrtnarija.th"
-	input "../M16/_xtherion/M16.th"
-
-
-# input DEM tiles
+	
+	
+	# input DEM tiles
 	#input "../DEM/DEM_10m.th"
-
-# EQUATE commands for CONNECTIONS
+	
+	# EQUATE commands for CONNECTIONS
 	# NCB and MONATIP
 	#Wishing Well and Mig Country
-	equate 4@wishing_well2.monatip.primadona_ubend_monatip 1@migconleft.M16
-
-# JOIN commands for the sketches at connection points
+	equate 4@wishing_well2.monatip.primadona_ubend_monatip 1@migconleft.M16.m2m16m18
+	
+	# JOIN commands for the sketches at connection points
 	# NCB and MONATIP
-
-
+	
+	
 endsurvey
 
