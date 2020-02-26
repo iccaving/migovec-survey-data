@@ -11,33 +11,32 @@ encoding  utf-8
 
 # start the survey definition
 survey primadona_ubend_monatip -title "Primadona, Mona tip, Ubend-571"
-
-# input the map definitions for PLAN and EXTENDED ELEVATION
-	input "prima_ubend_monatip_plan.thm"
-	input "prima_ubend_monatip_extend.thm"
-
-# input the individual cave data files
+	# input the individual cave data files
 	input "../primadona/_xtherion/primadona.th"
-	input "../s_ubend/s_ubend.th"
-	input "../monatip/_xtherion/s_monatip.th"
-
-# EQUATE commands for CONNECTIONS
+	input "../monatip/_xtherion/monatip.th"
+	input "../ubend/ubend.th"
+	
+	# input map definitions
+	input "./primadona_ubend_monatip-e.thm"
+	input "./primadona_ubend_monatip-p.thm"
+	
+	# EQUATE commands for CONNECTIONS
 	# primadona and U-Bend
-	equate 5@drainpipe.s_ubend 8@drugi.primadona
-
+	equate 5@drainpipe.ubend 8@drugi.primadona
+	
 	# monatip and primadona connection
 	equate 1@therock.monatip 8@prima1.primadona
 	equate 25@therock.monatip 24@prima2.primadona
 	equate BV6@brez_volje.primadona 2@doubletime.monatip
-
-# JOIN commands for the sketches at connection points
+	
+	# JOIN commands for the sketches at connection points
 	# Primadona to Monatip at Alkatraz via 'The Rock'
- 	join s5_l1@prima1.primadona:end s1_l1@therock.monatip:end
+	join s5_l1@prima1.primadona:end s1_l1@therock.monatip:end
 	join s5_l2@prima1.primadona:end s1_l2@therock.monatip:0
 	join s1_l1a@prima2.primadona:0 s3_l1@therock.monatip:end
 	join s1_l2@prima2.primadona:end s3_l2@therock.monatip:0
-
-	# joins for Ubend to Primadona? 
-
+	
+	# joins for Ubend to Primadona?
+	
 endsurvey
 

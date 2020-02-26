@@ -1,0 +1,7 @@
+map mall-p -projection plan
+	mM16-p
+endmap
+
+map mM16-p -projection plan
+	mall-p@M16
+endmap

@@ -19,11 +19,11 @@ input "../../_layouts/system_migovec/overview_elevation.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-#select mprima_ubend_monatip-p@system_migovec -map-level 1
-#select mprimadona_monatip-e@system_migovec -map-level 0
+select mprimadona_ubend_monatip-p@system_migovec -map-level 0
+#select mprimadona_ubend_monatip-e@system_migovec -map-level 0
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview1 
+# export a PLAN view, using the LAYOUT overview1
 language fr
 export map -projection plan -o ../../_outputs/map/system_migovec_overview_plan_SLO.pdf -layout overview_plan
 
@@ -34,8 +34,8 @@ export map -projection plan -o ../../_outputs/map/system_migovec_overview_plan_S
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/model/system_migovec.3d -fmt survex
+#export model -o ../../_outputs/model/system_migovec.3d -fmt survex
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-export model -o ../../_outputs/model/system_migovec.lox
+#export model -o ../../_outputs/model/system_migovec.lox
