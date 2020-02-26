@@ -1,8 +1,7 @@
+encoding  utf-8
 survey vrtnarija -title "Vrtnarija"
 	
-	
 	input "vrtnarija.thm"
-	
 	
 	#equate 15@mushroom THE_FRIDGE
 	#equate 12@friend CAMP_X-RAY
@@ -246,8 +245,10 @@ survey vrtnarija -title "Vrtnarija"
 	input ../2010/rolling/rolling.th
 	input ../2010/surprise/surprise.th
 	input ../2010/kamikaze/kamikaze.th
+	input ../2010/losthopes/losthopes.th
+	input ../2010/consort/consort.th
+	#input ../2010/minos/minos.th
 	#input ../2010/whitebishop/whitebishop.th
-	#input ../2010/losthopes/losthopes.th
 	#input ../2010/stalemate/stalemate.th
 	#input ../2010/roaring/roaring.th
 	#input ../2010/esoterica/esoterica.th
@@ -255,12 +256,10 @@ survey vrtnarija -title "Vrtnarija"
 	#input ../2010/blackknight/blackknight.th
 	#input ../2010/crack_in_time/crack_in_time.th
 	#input ../2010/sidewinder/sidewinder.th
-	#input ../2010/consort/consort.th
 	#input ../2010/insomnia/insomnia.th
 	#input ../2010/serpentine/serpentine.th
 	#input ../2010/mudstone/mudstone.th
 	#input ../2010/itwillrain/itwillrain.th
-	#input ../2010/minos/minos.th
 	#input ../2010/korita/korita.th
 	#input ../2010/povodni_moz2/povodni_moz2.th
 	#input ../2010/povodni_moz/povodni_moz.th
@@ -269,7 +268,9 @@ survey vrtnarija -title "Vrtnarija"
 	equate 7@rolling 1@wonderland
 	equate 2@rolling 12@surprise
 	equate 1@surprise 35@kamikaze
-	#equate 8@losthopes 30@kamikaze
+	equate 8@losthopes 30@kamikaze
+	equate 25@consort 5@wonderland
+	#equate 17@palace2 1@consort
 	#equate 10@mudstone 1@surprise
 	#equate 9@crack_in_time 8@sidewinder
 	#equate carbide@crack_in_time 3@envy
@@ -279,10 +280,8 @@ survey vrtnarija -title "Vrtnarija"
 	#equate 17@blackknight 14@korita
 	#equate 1@whitebishop 1@sidewinder
 	#equate 1@povodni_moz2 10@povodni_moz
-	#equate 25@consort 5@wonderland
 	#equate 1@minataur 6@palace
 	#equate 8@the_queen_bed_chamber 1@minataur
-	#equate 17@palace2 1@consort
 	#equate 1@palace2 4@minataur
 	#equate 23@ouroboros 3@palace2
 	#equate 1@ouroboros 5@consort

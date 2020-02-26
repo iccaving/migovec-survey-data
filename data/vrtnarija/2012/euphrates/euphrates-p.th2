@@ -1,0 +1,60 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line wall 
+  -33.54 66.06
+  -15.43 52.44
+endline
+line wall 
+  -15.43 52.44
+  -3.54 25.75
+endline
+line wall 
+  -3.54 25.75
+  1.73 2.91
+endline
+line wall 
+  1.73 2.91
+  24.09 -18.66
+endline
+line wall 
+  24.09 -18.66
+  33.54 -33.86
+endline
+line wall 
+  33.54 -33.86
+  9.29 -45.20
+endline
+line wall 
+  9.29 -45.20
+  14.02 -43.31
+endline
+line wall 
+  14.02 -43.31
+  18.50 -57.09
+endline
+line wall 
+  18.50 -57.09
+  6.38 -57.72
+endline
+line wall 
+  6.38 -57.72
+  -3.62 -66.06
+endline
+endscrap
+
+scrap euphrates-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -33.54 66.06 station -name 11
+point -15.43 52.44 station -name 10
+point -3.54 25.75 station -name 9
+point 1.73 2.91 station -name 8
+point 24.09 -18.66 station -name 7
+point 33.54 -33.86 station -name 6
+point 9.29 -45.20 station -name 5
+point 14.02 -43.31 station -name 4
+point 18.50 -57.09 station -name 3
+point -3.62 -66.06 station -name 1
+point 6.38 -57.72 station -name 2
+endscrap

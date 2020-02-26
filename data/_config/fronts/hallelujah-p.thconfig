@@ -1,0 +1,40 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      PRIMADONA - HALLELUJAH                                      |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../primadona/_xtherion/primadona.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../_layouts/prima_ubend_monatip/overview_plan.thl"
+
+layout local
+    copy overview_plan
+    legend off
+    map-comment "<lang:en>Passages near the Hallelujah streamway. 2019<br>discoveries marked in red. Beam Me TF Up follows<br>the Hallelujah stream, but was unsurveyed last<br>expedition."
+    code tex-map
+    \def\maplayout{
+        \legendbox{0}{100}{NW}{\size[20]Primadonna}
+        \legendbox{0}{93}{NW}{\size[14]Hallelujah Branch}
+        \legendbox{0}{86}{NW}{\size[10]\the\comment}
+        \legendbox{25}{0}{SW}{\scalebar}
+        \legendbox{90}{0}{SE}{\northarrow}
+    }
+endlayout
+
+#----------------------------------------------------------------------------------|
+# select the relevant map definitions, and levels within those maps
+select mprima_hallelujah_branch-p@primadona
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view
+language en
+export map -projection plan -o ../../_outputs/map/hallelujah_plan_ENG.pdf -layout local

@@ -1,14 +1,15 @@
 
 ## MASTER MAP ##
 map mvrtnarija-p -projection plan -title "Vrtnarija"
-	moriginal_entrance_series-p
-	mfriendship_level-p
-	mbelow_big_rock-p
-	mbeyond_red_cow-p
-	mbelow_balamory-p
+	#moriginal_entrance_series-p
+	#mfriendship_level-p
+	#mbelow_big_rock-p
+	#mbeyond_red_cow-p
+	#mbelow_balamory-p
 	mcheetah-p
-	mbelow_stuck_in_paradise-p
-	mbeyond_atlantis-p
+	mbeyond-consort-p
+	#mbelow_stuck_in_paradise-p
+	#mbeyond_atlantis-p
 endmap
 
 ## SUBMAPS ##
@@ -73,12 +74,17 @@ map mcheetah-p -projection plan
 	mrolling-p@rolling
 	msurprise-p@surprise
 	mkamikaze-p@kamikaze
+	mlosthopes-p@losthopes
 	mredbaron-p@redbaron
 	mthroneroom-p@throneroom
 	mamazinggrace-p@amazinggrace
 	mserenade-p@serenade
 	mgrace2-p@grace2
 	mmagicdragon-p@magicdragon
+endmap
+
+map mbeyond-consort-p -projection plan
+	mconsort-p@consort
 endmap
 
 map mbelow_stuck_in_paradise-p -projection plan

@@ -2,7 +2,7 @@
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
 #                                                                                  |
-#                      PRIMADONA, MONATIP, UBEND OVERVIEW                          |
+#                      MONATIP CONNECTION                                          |
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
@@ -14,18 +14,27 @@ source "../../_xtherion/system_migovec.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/system_migovec/overview_plan.thl"
+input "../../_layouts/prima_ubend_monatip/overview_plan.thl"
+
+layout local
+    copy overview_plan
+    legend off
+    map-comment "<lang:en>New pitches pushed in the Monatip/M2<br>connection. 2019 discoveries marked in red."
+    code tex-map
+    \def\maplayout{
+        \legendbox{40}{60}{NW}{\size[20]Monatip}
+        \legendbox{40}{54}{NW}{\size[14]M2 Connection}
+        \legendbox{40}{48}{NW}{\size[10]\the\comment}
+        \legendbox{40}{35}{NW}{\scalebar}
+        \legendbox{5}{60}{W}{\northarrow}
+    }
+endlayout
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview1
-language fr
-export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.pdf -layout overview_plan
-export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.svg -layout overview_plan
+# select the relevant map definitions, and levels within those maps
+select mmonatip_full-p@primadona_ubend_monatip.system_migovec
 
 #----------------------------------------------------------------------------------|
-# export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/system_migovec.3d -fmt survex
-
-#----------------------------------------------------------------------------------|
-# export a .lox model, which can be opened in LOCH only
-export model -o ../../_outputs/system_migovec.lox
+# export a PLAN view
+language en
+export map -projection plan -o ../../_outputs/map/monatip_connection_ENG.pdf -layout local
