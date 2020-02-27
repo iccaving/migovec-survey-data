@@ -4,13 +4,13 @@ survey ma_je_vlazna -title "ma je vlažna"
 	input "ma_je_vlazna-p.th2"
 	input "ma_je_vlazna-e.th2"
 	
-	map  m-ma_je_vlazna-e -projection extended
+	map  m-all-e -projection extended
 		ma_je_vlazna-1e
 		break
 		ma_je_vlazna-2e
 	endmap
 	
-	map m-ma_je_vlazna-p -projection plan -title "ma je vlažna"
+	map m-all-p -projection plan -title "ma je vlažna"
 		ma_je_vlazna-1p
 	endmap
 	

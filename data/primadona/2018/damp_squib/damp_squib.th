@@ -3,14 +3,14 @@ survey damp_squib -title "Damp Squib"
 	input "damp_squib-e.th2"
 	
 	
-	map m-damp_squib-p -projection plan
+	map m-all-p -projection plan
 		mdamp_squib-p4
 		mdamp_squib-p3
 		mdamp_squib-p2
 		mdamp_squib-p1
 	endmap
 	
-	map  m-damp_squib-e -projection extended
+	map  m-all-e -projection extended
 		damp_squib-e1
 	endmap
 	map mdamp_squib-p1 -projection plan

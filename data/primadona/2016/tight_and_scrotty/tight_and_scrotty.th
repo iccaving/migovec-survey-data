@@ -5,11 +5,11 @@ survey tight_and_scrotty
 	input "tight_and_scrotty-p.th2"
 	input "tight_and_scrotty-e.th2"
 	
-	map m-tight_and_scrotty-p -projection plan
+	map m-all-p -projection plan
 		tight_and_scrotty-p1
 	endmap
 	
-	map  m-tight_and_scrotty-e -projection extended
+	map  m-all-e -projection extended
 		tight_and_scrotty-1e
 	endmap
 	

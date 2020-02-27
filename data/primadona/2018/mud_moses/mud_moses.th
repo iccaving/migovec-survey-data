@@ -2,11 +2,11 @@ survey mud_moses -title "Mud Moses"
 	input "mud_moses-p.th2"
 	input "mud_moses-e.th2"
 	
-	map  m-mud_moses-e -projection extended
+	map  m-all-e -projection extended
 		mud_moses-e1
 	endmap
 	
-	map m-mud_moses-p -projection plan
+	map m-all-p -projection plan
 		mmud_moses-p1
 		mmud_moses-p2
 	endmap

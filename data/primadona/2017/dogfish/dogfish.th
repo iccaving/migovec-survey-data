@@ -2,7 +2,7 @@ survey dogfish -title "Dogfish"
 	input "dogfish-p.th2"
 	input "dogfish-e.th2"
 	
-	map m-dogfish-p -projection plan
+	map m-all-p -projection plan
 		dogfish-p1
 		dogfish-p2
 	endmap
@@ -14,7 +14,7 @@ survey dogfish -title "Dogfish"
 		dogfish-p2
 	endmap
 	
-	map  m-dogfish-e -projection extended
+	map  m-all-e -projection extended
 		dogfish-1e
 	endmap
 	

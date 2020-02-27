@@ -4,7 +4,7 @@ survey spodnji
 	input "spodnjip.th2"
 	input "spodnji_extend.th2"
 	
-	map  m-spodnji-e -projection extended
+	map  m-all-e -projection extended
 		spodnji_e1
 	endmap
 	
@@ -16,7 +16,7 @@ survey spodnji
 		spodnjip_3
 	endmap
 	
-	map m-spodnji-p -projection plan
+	map m-all-p -projection plan
 		mspodnjip_3
 		mspodnjip_2
 	endmap

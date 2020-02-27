@@ -5,12 +5,12 @@ survey ttt -title "Primadona mandare junction and TTT branch to TTT pitch"
 	input "ttt-p.th2"
 	input "ttt-e.th2"
 	
-	map  m-ttt-e -projection extended
+	map  m-all-e -projection extended
 		ttt-e1
 		ttt-e2
 	endmap
 	
-	map m-ttt-p -projection plan
+	map m-all-p -projection plan
 		tttp_1
 		tttp_2
 		tttp_3

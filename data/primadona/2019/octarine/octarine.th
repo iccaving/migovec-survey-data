@@ -4,11 +4,11 @@ survey octarine -title "Octarine"
 	input "octarine-p.th2"
 	input "octarine-e.th2"
 	
-	map m-octarine-p -projection plan
+	map m-all-p -projection plan
 		octarine-1p
 	endmap
 	
-	map  m-octarine-e -projection extended
+	map  m-all-e -projection extended
 		octarine-1e
 	endmap
 	

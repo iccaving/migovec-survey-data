@@ -10,12 +10,12 @@ survey mouseleum_2 -title "Mouseleum 2"
 		mouseleum_2-p2
 	endmap
 	
-	map m-mouseleum_2-p -projection plan
+	map m-all-p -projection plan
 		m-1-p
 		m-2-p
 	endmap
 	
-	map  m-mouseleum_2-e -projection extended
+	map  m-all-e -projection extended
 		mouseleum_2-1e
 	endmap
 	centreline

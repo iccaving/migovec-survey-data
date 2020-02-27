@@ -3,11 +3,11 @@ survey ajdovscina
 	input "ajdovscinap.th2"
 	input "ajdovscina_extend.th2"
 	
-	map  m-ajdovscina-e -projection extended
+	map  m-all-e -projection extended
 		ajdov_e1
 	endmap
 	
-	#map m-ajdovscina-p -projection plan
+	#map m-all-p -projection plan
 	#madjovp_1
 	# madjovp_2
 	# endmap
