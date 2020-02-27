@@ -277,13 +277,13 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
 		pivnica_2_resurvey-3p
 	endmap
 	
-	map m-pivnica_2_resurvey-p -projection plan
+	map m-all-p -projection plan
 		m1p
 		m2p
 		m3p
 	endmap
 	
-	map  m-pivnica_2_resurvey-e -projection extended
+	map  m-all-e -projection extended
 		pivnica_2_resurvey-1e
 	endmap
 	

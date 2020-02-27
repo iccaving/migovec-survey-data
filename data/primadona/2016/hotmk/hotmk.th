@@ -4,12 +4,12 @@ survey hotmk #the hall of the mountain king
 	input "hall_of_the_mountain_king-1p.th2"
 	input "hall_of_the_mountain_king-e.th2"
 	
-	map  m-hall_of_the_mountain_king-e -projection extended
+	map  m-all-e -projection extended
 		hall_of_the_mountain_king-e1
 		hall_of_the_mountain_king-e2
 	endmap
 	
-	map m-hotmk-p -projection plan
+	map m-all-p -projection plan
 		mhotmk-p2
 		mhotmk-p1
 	endmap

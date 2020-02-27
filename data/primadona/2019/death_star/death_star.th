@@ -33,7 +33,7 @@ survey death_star -title "Death Star"
 	##   death_star-twos
 	## endmap
 	
-	map m-death_star-p -projection plan
+	map m-all-p -projection plan
 		m2p
 		m1p
 		m3p
@@ -41,7 +41,7 @@ survey death_star -title "Death Star"
 		m4p
 	endmap
 	
-	map  m-death_star-e -projection extended
+	map  m-all-e -projection extended
 		m1s
 	endmap
 	

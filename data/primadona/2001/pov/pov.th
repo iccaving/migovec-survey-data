@@ -4,7 +4,7 @@ survey pov
 	input "povp.th2"
 	input "pov-e.th2"
 	
-	map  m-pov-e -projection extended
+	map  m-all-e -projection extended
 		pov-e1
 		break
 		pov-e2
@@ -30,7 +30,7 @@ survey pov
 		povp_5
 	endmap
 	
-	map m-pov-p -projection plan
+	map m-all-p -projection plan
 		mpovp_1
 		mpovp_2
 		mpovp_3

@@ -4,12 +4,12 @@ survey polnoletna
 	input "polnoletna-p.th2"
 	input "polnoletna-e.th2"
 	
-	map m-polnoletna-p -projection plan
+	map m-all-p -projection plan
 		polnoletna-1p
 		polnoletna-2p
 	endmap
 	
-	map  m-polnoletna-e -projection extended
+	map  m-all-e -projection extended
 		polnoletna-1e
 	endmap
 	

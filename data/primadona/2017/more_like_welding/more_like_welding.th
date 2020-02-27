@@ -4,12 +4,12 @@ survey more_like_welding -title "More like Welding"
 	input "more_like_welding-e.th2"
 	
 	
-	map  m-more_like_welding-e -projection extended
+	map  m-all-e -projection extended
 		more_like_welding-e2
 		more_like_welding-e1
 	endmap
 	
-	map m-more_like_welding-p -projection plan
+	map m-all-p -projection plan
 		mmore_like_welding-p1
 		mmore_like_welding-p2
 		mmore_like_welding-p3

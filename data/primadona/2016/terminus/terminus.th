@@ -4,7 +4,7 @@ survey terminus -title "Terminus"
 	input "terminus-p.th2"
 	input "terminus-e.th2"
 	
-	map m-terminus-p -projection plan
+	map m-all-p -projection plan
 		mterminus-p1
 		mterminus-p2
 		mterminus-p3
@@ -25,7 +25,7 @@ survey terminus -title "Terminus"
 	join terminusp_1 terminusp_2
 	join terminusp_1 terminusp_3
 	
-	map  m-terminus-e -projection extended
+	map  m-all-e -projection extended
 		terminus-1e
 	endmap
 	

@@ -4,7 +4,7 @@ survey prima1 -title "Primadona entrance series"
 	input "prima1-p.th2"
 	input "prima1-e.th2"
 	
-	map m-prima1-p -projection plan
+	map m-all-p -projection plan
 		mprimap_ent
 		mprimap_1
 		mprimap_2
@@ -44,7 +44,7 @@ survey prima1 -title "Primadona entrance series"
 		prima1-e2
 	endmap
 	
-	map  m-prima1-e -projection extended
+	map  m-all-e -projection extended
 		prima1-e1
 		prima1-e2
 		prima1-e3

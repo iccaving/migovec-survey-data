@@ -2,12 +2,12 @@ survey entirely_my_fault -title "Entirely my fault"
 	input "entirely_my_fault-p.th2"
 	input "entirely_my_fault-e.th2"
 	
-	map m-entirely_my_fault-p -projection plan
+	map m-all-p -projection plan
 		entirely_my_fault-p1
 		entirely_my_fault-p2
 	endmap
 	
-	map  m-entirely_my_fault-e -projection extended
+	map  m-all-e -projection extended
 		entirely_my_fault-1e
 	endmap
 	

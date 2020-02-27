@@ -7,11 +7,11 @@ survey purgatory -title "Purgatory"
 	input "purgatory-1p.th2"
 	input "purgatory-1e.th2"
 	
-	map m-purgatory-p -projection plan
+	map m-all-p -projection plan
 		purgatory-1p
 	endmap
 	
-	map  m-purgatory-e -projection extended
+	map  m-all-e -projection extended
 		purgatory-2e
 		purgatory-1e
 	endmap

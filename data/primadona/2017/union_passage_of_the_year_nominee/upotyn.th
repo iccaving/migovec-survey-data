@@ -3,11 +3,11 @@ survey upotyn
 	input "upotynp.th2"
 	input "upotyn-e.th2"
 	
-	map m-upotyn-p -projection plan
+	map m-all-p -projection plan
 		upotynp_1
 	endmap
 	
-	map  m-upotyn-e -projection extended
+	map  m-all-e -projection extended
 		upotyn-1e
 	endmap
 	

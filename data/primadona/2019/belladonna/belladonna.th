@@ -5,14 +5,14 @@ survey belladonna -title "Belladonna"
 	input "belladonna-1p.th2"
 	input "belladonna-1s.th2"
 	
-	map m-belladonna-p -projection plan
+	map m-all-p -projection plan
 		m1p
 	endmap
 	map m1p -projection plan
 		belladonna-1p
 	endmap
 	
-	map  m-belladonna-e -projection extended
+	map  m-all-e -projection extended
 		belladonna-1s
 	endmap
 	

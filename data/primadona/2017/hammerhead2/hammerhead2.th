@@ -3,12 +3,12 @@ survey hammerhead2 -title "Hammerhead 2"
 	input "hammerhead2-p.th2"
 	input "hammerhead2-e.th2"
 	
-	map m-hammerhead2-p -projection plan
+	map m-all-p -projection plan
 		hammerhead2-p1
 		hammerhead2-p2
 	endmap
 	
-	map  m-hammerhead2-e -projection extended
+	map  m-all-e -projection extended
 		hammerhead2-2e
 		break
 		hammerhead2-1e

@@ -5,14 +5,14 @@ survey karstaway
 	input "karstaway-2p.th2"
 	input "karstaway-e.th2"
 	
-	map m-karstaway-p -projection plan
+	map m-all-p -projection plan
 		karstaway-12p
 		karstaway-1p
 		karstaway-11p
 		karstaway-2p
 	endmap
 	
-	map  m-karstaway-e -projection extended
+	map  m-all-e -projection extended
 		karstaway-e1
 	endmap
 	

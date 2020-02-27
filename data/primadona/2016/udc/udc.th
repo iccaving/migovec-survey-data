@@ -3,10 +3,10 @@ survey udc -title "Upside Down Chamber"
 	input "udcp.th2"
 	input "udc-e.th2"
 	
-	map  m-upside_down_chamber-e -projection extended
+	map  m-all-e -projection extended
 		upside_down_chamber-1e
 	endmap
-	map m-udc-p -projection plan
+	map m-all-p -projection plan
 		mudc-p1
 		mudc-p2
 	endmap

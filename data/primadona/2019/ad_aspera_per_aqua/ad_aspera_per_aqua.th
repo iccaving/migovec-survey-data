@@ -74,11 +74,11 @@ survey ad_aspera_per_aqua -title "Ad Aspera Per Aqua"
 	input "ad_aspera_per_aqua-1p.th2"
 	input "ad_aspera_per_aqua-1s.th2"
 	
-	map  m-ad_aspera_per_aqua-e -projection extended
+	map  m-all-e -projection extended
 		ad_aspera_per_aqua-1s
 	endmap
 	
-	map m-ad_aspera_per_aqua-p -projection plan
+	map m-all-p -projection plan
 		m1p
 	endmap
 	

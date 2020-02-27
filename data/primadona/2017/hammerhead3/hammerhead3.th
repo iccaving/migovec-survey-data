@@ -3,11 +3,11 @@ survey hammerhead3 -title "Hammerhead 3"
 	input "hammerhead3-p.th2"
 	input "hammerhead3-e.th2"
 	
-	map m-hammerhead3-p -projection plan
+	map m-all-p -projection plan
 		hammerhead3-p1
 	endmap
 	
-	map  m-hammerhead3-e -projection extended
+	map  m-all-e -projection extended
 		hammerhead3-1e
 	endmap
 	

@@ -8,7 +8,7 @@ survey tartarus -title "Tartarus"
 	
 	
 	
-	map m-tartarus-p -projection plan
+	map m-all-p -projection plan
 		m1p
 	endmap
 	
@@ -16,7 +16,7 @@ survey tartarus -title "Tartarus"
 		tartarus-1p
 	endmap
 	
-	map  m-tartarus-e -projection extended
+	map  m-all-e -projection extended
 		tartarus-1s
 	endmap
 	

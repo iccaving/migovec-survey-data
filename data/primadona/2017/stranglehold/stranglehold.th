@@ -4,12 +4,12 @@ survey stranglehold
 	input stranglehold-p.th2
 	input stranglehold-e.th2
 	
-	map  m-stranglehold-e -projection extended
+	map  m-all-e -projection extended
 		stranglehold-e1
 		stranglehold-e2
 	endmap
 	
-	map m-stranglehold-p -projection plan
+	map m-all-p -projection plan
 		stranglehold-p1
 		stranglehold-p2
 		stranglehold-p3

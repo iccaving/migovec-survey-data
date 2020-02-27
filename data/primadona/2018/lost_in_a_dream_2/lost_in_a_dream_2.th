@@ -3,11 +3,11 @@ survey lost_in_a_dream_2 -title "Lost in a dream 2"
 	input "lost_in_a_dream_2-p.th2"
 	input "lost_in_a_dream_2-e.th2"
 	
-	map  m-lost_in_a_dream_2-e -projection extended
+	map  m-all-e -projection extended
 		lost_in_a_dream_2-e1
 	endmap
 	
-	map m-lost_in_a_dream_2-p -projection plan
+	map m-all-p -projection plan
 		lost_in_a_dream_2-p1
 	endmap
 	

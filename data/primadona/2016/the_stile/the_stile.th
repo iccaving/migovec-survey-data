@@ -3,7 +3,7 @@ survey the_stile
 	input "the_stilep.th2"
 	input "the_stile-s.th2"
 	
-	map m-the_stile-p -projection plan
+	map m-all-p -projection plan
 		mthe_stile-p1
 		mthe_stile-p2
 	endmap
@@ -16,7 +16,7 @@ survey the_stile
 		the_stilep_2
 	endmap
 	
-	map  m-the_stile-e -projection extended
+	map  m-all-e -projection extended
 		the_stile-s1
 	endmap
 	

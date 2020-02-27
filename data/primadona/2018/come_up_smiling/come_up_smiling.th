@@ -2,11 +2,11 @@ survey come_up_smiling -title "Come up Smiling"
 	input "come_up_smiling-p.th2"
 	input "come_up_smiling-s.th2"
 	
-	map m-come_up_smiling-p -projection plan
+	map m-all-p -projection plan
 		come_up_smiling-p1
 	endmap
 	
-	map  m-come_up_smiling-e -projection extended
+	map  m-all-e -projection extended
 		come_up_smiling-s1
 	endmap
 	

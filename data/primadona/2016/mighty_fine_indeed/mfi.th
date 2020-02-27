@@ -3,11 +3,11 @@ survey mfi
 	input "mfip.th2"
 	input "mighty_fine_indeed-e.th2"
 	
-	map  m-mighty_fine_indeed-e -projection extended
+	map  m-all-e -projection extended
 		mighty_fine_indeed-e1
 	endmap
 	
-	map m-mfi-p -projection plan
+	map m-all-p -projection plan
 		mmfi-p1
 		mmfi-p2
 	endmap

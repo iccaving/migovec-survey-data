@@ -11,13 +11,13 @@ survey sump_404_lead_not_found -title "sump_404_lead_not_found"
 	input "sump_404_lead_not_found-crawlp.th2"
 	## input "sump_404_lead_not_found-crawls.th2"
 	
-	map m-sump_404_lead_not_found-p -projection plan
+	map m-all-p -projection plan
 		m1p
 		msumpp
 		mcrawlp
 	endmap
 	
-	map  m-sump_404_lead_not_found-e -projection extended
+	map  m-all-e -projection extended
 		m1s
 	endmap
 	

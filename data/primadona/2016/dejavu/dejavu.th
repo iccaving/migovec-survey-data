@@ -3,7 +3,7 @@ survey dejavu
 	input "dejavu-p.th2"
 	input "dejavu-e.th2"
 	
-	map m-dejavu-p -projection plan
+	map m-all-p -projection plan
 		mdejavu-p1
 		mdejavu-p3
 		mdejavu-p2
@@ -21,7 +21,7 @@ survey dejavu
 		dejavup_3
 	endmap
 	
-	map  m-dejavu-e -projection extended
+	map  m-all-e -projection extended
 		dejavu-1e
 	endmap
 	

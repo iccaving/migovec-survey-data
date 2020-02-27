@@ -4,7 +4,7 @@ survey fenestrator
 	input "fenestratorp.th2"
 	input "fenestrator-s.th2"
 	
-	map m-fenestrator-p -projection plan
+	map m-all-p -projection plan
 		fenestratorp_1
 		fenestratorp_2
 	endmap
@@ -16,7 +16,7 @@ survey fenestrator
 		fenestratorp_2
 	endmap
 	
-	map  m-fenestrator-e -projection extended
+	map  m-all-e -projection extended
 		fenestrator-s1
 	endmap
 	

@@ -3,10 +3,10 @@ survey lumos -title "Lumos"
 	input "lumos-p.th2"
 	input "lumos-e.th2"
 	
-	map  m-lumos-e -projection extended
+	map  m-all-e -projection extended
 		lumos-e1
 	endmap
-	map m-lumos-p -projection plan
+	map m-all-p -projection plan
 		mlumos-p3
 		mlumos-p2
 		mlumos-p1

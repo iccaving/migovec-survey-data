@@ -4,11 +4,11 @@ survey milanova
 	input "milanovap.th2"
 	input "milanova_extend.th2"
 	
-	map  m-milanova-e -projection extended
+	map  m-all-e -projection extended
 		milanova_e1
 	endmap
 	
-	map m-milanova-p -projection plan
+	map m-all-p -projection plan
 		mmilanovap_1
 		mmilanovap_2
 	endmap

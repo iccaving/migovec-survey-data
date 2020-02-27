@@ -3,7 +3,7 @@ survey risa2
 	input "risa2-e.th2"
 	input "risa2-p.th2"
 	
-	map  m-risa2-e -projection extended
+	map  m-all-e -projection extended
 		risa2-e1
 	endmap
 	
@@ -19,7 +19,7 @@ survey risa2
 		risa2p_3
 	endmap
 	
-	map m-risa2-p -projection plan
+	map m-all-p -projection plan
 		mrisa2p_3
 		mrisa2p_2
 		mrisa2p_1

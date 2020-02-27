@@ -2,7 +2,7 @@ survey chocolate_river -title "Chocolate River (continuation of Mouseleum 2"
 	input "chocolate_river-p.th2"
 	input "chocolate_river-e.th2"
 	
-	map  m-chocolate_river-e -projection extended
+	map  m-all-e -projection extended
 		chocolate_river-1e
 	endmap
 	
@@ -14,7 +14,7 @@ survey chocolate_river -title "Chocolate River (continuation of Mouseleum 2"
 		chocolate_river-p2
 	endmap
 	
-	map m-chocolate_river-p -projection plan
+	map m-all-p -projection plan
 		m-2-p
 		m-1-p
 	endmap

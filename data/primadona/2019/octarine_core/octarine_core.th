@@ -312,7 +312,7 @@ survey octarine_core -title "Octarine Core"
 	input "octarine_core-1p.th2"
 	input "octarine_core-1s.th2"
 	
-	map m-octarine_core-p -projection plan
+	map m-all-p -projection plan
 		m2p
 		m1p
 	endmap
@@ -325,7 +325,7 @@ survey octarine_core -title "Octarine Core"
 		octarine_core-1p
 	endmap
 	
-	map  m-octarine_core-e -projection extended
+	map  m-all-e -projection extended
 		octarine_core-1s
 	endmap
 	

@@ -6,11 +6,11 @@ survey hammerhead -title "Hammerhead"
 	input "hammerhead-p.th2"
 	input "hammerhead-e.th2"
 	
-	map m-hammerhead-p -projection plan
+	map m-all-p -projection plan
 		hammerhead-p1
 	endmap
 	
-	map  m-hammerhead-e -projection extended
+	map  m-all-e -projection extended
 		hammerhead-1e
 	endmap
 	

@@ -5,11 +5,11 @@ survey gamblers_ruin
 	input "gamblers_ruin-p.th2"
 	input "gamblers_ruin-e.th2"
 	
-	map m-gamblers_ruin-p -projection plan
+	map m-all-p -projection plan
 		gamblers_ruin-p1
 	endmap
 	
-	map  m-gamblers_ruin-e -projection extended
+	map  m-all-e -projection extended
 		gamblers_ruin-1e
 	endmap
 	

@@ -4,7 +4,7 @@ survey galerija
 	input "galerija-e1.th2"
 	input "galerija-e2.th2"
 	
-	map  m-galerija-e -projection extended
+	map  m-all-e -projection extended
 		galerija-e1
 		break
 		galerija-2e
@@ -36,7 +36,7 @@ survey galerija
 		galerijap_6
 	endmap
 	
-	map m-galerija-p -projection plan
+	map m-all-p -projection plan
 		mgalerijap_1
 		mgalerijap_2
 		mgalerijap_3

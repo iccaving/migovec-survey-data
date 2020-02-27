@@ -3,12 +3,12 @@ survey what_a_disappointment -title "What a Disappointment!"
 	input "what_a_disappointment-p.th2"
 	input "what_a_disappointment-e.th2"
 	
-	map m-what_a_disappointment-p -projection plan
+	map m-all-p -projection plan
 		what_a_disappointment-p1
 		what_a_disappointment-p2
 	endmap
 	
-	map  m-what_a_disappointment-e -projection extended
+	map  m-all-e -projection extended
 		what_a_disappointment-1e
 	endmap
 	join what_a_disappointment-p1 what_a_disappointment-p2

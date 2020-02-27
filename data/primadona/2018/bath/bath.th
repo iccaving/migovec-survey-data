@@ -563,7 +563,7 @@ survey bath -title "Bath"
 		bath-3p
 	endmap
 	
-	map m-bath-p -projection plan
+	map m-all-p -projection plan
 		m1p
 		m2p
 		m3p
@@ -576,7 +576,7 @@ survey bath -title "Bath"
 		bath-1s
 	endmap
 	
-	map  m-bath-e -projection extended
+	map  m-all-e -projection extended
 		m1s
 	endmap
 	
