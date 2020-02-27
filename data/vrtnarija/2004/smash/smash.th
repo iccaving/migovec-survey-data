@@ -3,7 +3,7 @@ survey smash -title "Smash - Large boulder strewn passage at end of No More Pota
 	
 	input "smash-p.th2"
 	
-	map m-smash-p -projection plan
+	map m-all-p -projection plan
 		smash-1p
 		smash-2p
 	endmap

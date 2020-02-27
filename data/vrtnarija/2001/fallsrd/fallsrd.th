@@ -2,7 +2,7 @@ survey fallsrd -title "Falls rd"
 	
 	input "fallsrd-p.th2"
 	
-	map m-fallsrd-p -projection plan
+	map m-all-p -projection plan
 		fallsrd-2p
 		fallsrd-1p
 	endmap
