@@ -3,7 +3,7 @@ survey balamory -title "ONLY SURVEYED TO DECIMETRE ACCURACY"
 	
 	input "balamory-p.th2"
 	
-	map m-balamory-p -projection plan
+	map m-all-p -projection plan
 		balamory-1p
 	endmap
 	centreline

@@ -2,7 +2,7 @@
 survey gold -title "continuation of leprachaun Series"
 	input "gold-p.th2"
 	
-	map m-gold-p -projection plan
+	map m-all-p -projection plan
 		gold-1p
 		gold-2p
 	endmap

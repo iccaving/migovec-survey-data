@@ -2,7 +2,7 @@ survey concorde -title "Concorde pitch"
 	
 	input concorde-p.th2
 	
-	map m-concorde-p -projection plan
+	map m-all-p -projection plan
 		concorde-p1
 	endmap
 	

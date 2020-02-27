@@ -3,7 +3,7 @@ survey brownriceinlet -title "Brown Rice Inlet connects with cascade.4"
 	
 	input "brownriceinlet-p.th2"
 	
-	map m-brownriceinlet-p -projection plan
+	map m-all-p -projection plan
 		brownriceinlet-1p
 	endmap
 	centreline

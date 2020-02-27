@@ -2,7 +2,7 @@
 survey brezno_slapov -title "Brezno Slapov"
 	input brezno_slapov-p.th2
 	
-	map m-brezno_slapov-p -projection plan
+	map m-all-p -projection plan
 		brezno_slapov-1p
 	endmap
 	

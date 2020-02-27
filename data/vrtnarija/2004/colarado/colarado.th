@@ -2,7 +2,7 @@
 survey colarado -title "From miles underground to far northern sump"
 	input "colarado-p.th2"
 	
-	map m-colarado-p -projection plan
+	map m-all-p -projection plan
 		colarado-1p
 		colarado-2p
 	endmap

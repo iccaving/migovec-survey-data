@@ -2,7 +2,7 @@
 survey lowerfallsrd -title "Lower end of Falls Road"
 	input "lowerfallsrd-p.th2"
 	
-	map m-lowerfallsrd-p -projection plan
+	map m-all-p -projection plan
 		lowerfallsrd-1p
 	endmap
 	centreline

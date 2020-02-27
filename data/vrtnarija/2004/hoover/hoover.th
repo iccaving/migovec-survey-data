@@ -2,7 +2,7 @@
 survey hoover -title "Rift from oxbow near sump"
 	input "hoover-p.th2"
 	
-	map m-hoover-p -projection plan
+	map m-all-p -projection plan
 		hoover-1p
 	endmap
 	centreline
