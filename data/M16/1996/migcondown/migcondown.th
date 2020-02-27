@@ -2,7 +2,7 @@
 survey migcondown -title "Mig Country 3"
 	input "migcondown-p.th2"
 	
-	map m-migcondown-p -projection plan
+	map m-all-p -projection plan
 		migcondown-1p
 	endmap
 	centreline

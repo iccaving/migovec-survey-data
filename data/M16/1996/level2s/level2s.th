@@ -2,7 +2,7 @@
 survey level2s -title "System Migovec"
 	input "level2s-p.th2"
 	
-	map m-level2s-p -projection plan
+	map m-all-p -projection plan
 		level2s-1p
 		level2s-2p
 	endmap
