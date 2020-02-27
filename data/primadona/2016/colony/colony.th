@@ -4,11 +4,11 @@ survey colony
 	input "colony-10p.th2"
 	input "colony-e.th2"
 	
-	map  m-colony-e -projection extended
+	map  m-all-e -projection extended
 		colony-1e
 	endmap
 	
-	map m-colony-p -projection plan
+	map m-all-p -projection plan
 		mcolony-p1
 		mcolony-p2
 	endmap

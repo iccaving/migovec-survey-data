@@ -7,7 +7,7 @@ survey holy_moley -title "holy_moley"
 	input "holy_moley-p.th2"
 	input "holy_moley-e.th2"
 	
-	map  m-holy_moley-e -projection extended
+	map  m-all-e -projection extended
 		holy_moley-e1
 	endmap
 	
@@ -19,7 +19,7 @@ survey holy_moley -title "holy_moley"
 		holy_moley-p2
 	endmap
 	
-	map m-holy_moley-p -projection plan
+	map m-all-p -projection plan
 		m1p
 		m2p
 	endmap

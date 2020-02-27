@@ -3,10 +3,10 @@ survey sweet_baby_jesus
 	input "sweet_baby_jesus-p.th2"
 	input "sweet_baby_jesus-e.th2"
 	
-	map  m-sweet_baby_jesus-e -projection extended
+	map  m-all-e -projection extended
 		sweet_baby_jesus-1e
 	endmap
-	map m-sweet_baby_jesus-p -projection plan
+	map m-all-p -projection plan
 		msweet_baby_jesusp_1
 		msweet_baby_jesusp_2
 		msweet_baby_jesusp_3

@@ -3,7 +3,7 @@ survey popotresni
 	input "popotresnip.th2"
 	input "popotresni-e.th2"
 	
-	map  m-popotresni-e -projection extended
+	map  m-all-e -projection extended
 		popotresni-kak-e1
 		popotresni-pop-e1
 		popotresni-pop-e2
@@ -30,7 +30,7 @@ survey popotresni
 		popotresnip_5
 	endmap
 	
-	map m-popotresni-p -projection plan
+	map m-all-p -projection plan
 		mpopotresni-p2
 		mpopotresni-p1
 		mpopotresni-p5

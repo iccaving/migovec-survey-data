@@ -4,11 +4,11 @@ survey TTTr -title "TTT branch resurvey"
 	input "TTTr-p.th2"
 	input "TTTr-e.th2"
 	
-	map  m-ttt_resurvey-e -projection extended
+	map  m-all-e -projection extended
 		ttt_resurvey-e1
 	endmap
 	
-	map m-TTTr-p -projection plan
+	map m-all-p -projection plan
 		mTTTr-p3
 		mTTTr-p1
 		mTTTr-p2

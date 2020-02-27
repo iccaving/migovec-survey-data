@@ -9,12 +9,12 @@ survey angel_delight -title "angel_delight"
 	## input "angel_delight-2s.th2"
 	
 	
-	map m-angel_delight-p -projection plan
+	map m-all-p -projection plan
 		m1p
 		m2p
 	endmap
 	
-	map  m-angel_delight-e -projection extended
+	map  m-all-e -projection extended
 		m1s
 	endmap
 	

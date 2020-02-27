@@ -3,7 +3,7 @@ survey alabaster
 	input "alabaster-p.th2"
 	input "alabaster-e.th2"
 	
-	map m-alabaster-p -projection plan
+	map m-all-p -projection plan
 		malabasterp_1
 		malabasterp_2
 		malabasterp_3
@@ -26,7 +26,7 @@ survey alabaster
 		alabasterp_4
 	endmap
 	
-	map  m-alabaster-e -projection extended
+	map  m-all-e -projection extended
 		alabaster-e1
 	endmap
 	

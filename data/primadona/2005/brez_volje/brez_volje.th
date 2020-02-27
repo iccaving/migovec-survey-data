@@ -4,12 +4,12 @@ survey brez_volje
 	input "brez_volje-e.th2"
 	
 	
-	map  m-brez_volje-e -projection extended
+	map  m-all-e -projection extended
 		brez_volje-e1
 		#brez_volje-e2
 	endmap
 	
-	map m-brez_volje-p -projection plan
+	map m-all-p -projection plan
 		mbrez_voljep_1
 		mbrez_voljep_2
 		mbrez_voljep_3

@@ -2,7 +2,7 @@ encoding  utf-8
 survey plumbers_p
 	input "plumbers_pp.th2"
 	input "plumbers_paradise-e.th2"
-	map m-plumbers_p-p -projection plan
+	map m-all-p -projection plan
 		mplumbers_pp_1
 		mplumbers_pp_2
 	endmap
@@ -15,7 +15,7 @@ survey plumbers_p
 		plumbers_pp_2
 	endmap
 	
-	map  m-plumbers_paradise-e -projection extended
+	map  m-all-e -projection extended
 		plumbers_paradise-e1
 	endmap
 	

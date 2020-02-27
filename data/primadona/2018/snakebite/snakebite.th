@@ -6,11 +6,11 @@ survey snakebite -title "Snakebite"
 	input "snakebite-p.th2"
 	input "snakebite-e.th2"
 	
-	map  m-snakebite-e -projection extended
+	map  m-all-e -projection extended
 		snakebite-e1
 	endmap
 	
-	map m-snakebite-p -projection plan
+	map m-all-p -projection plan
 		msnakebite-p2
 		msnakebite-p1
 	endmap

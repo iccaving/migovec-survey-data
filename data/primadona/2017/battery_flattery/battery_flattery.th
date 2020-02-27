@@ -3,11 +3,11 @@ survey battery_flattery -title "Battery Flattery"
 	input "battery_flatteryp.th2"
 	input "battery_flattery-e.th2"
 	
-	map  m-battery_flattery-e -projection extended
+	map  m-all-e -projection extended
 		battery_flattery-1e
 	endmap
 	
-	map m-battery_flattery-p -projection plan
+	map m-all-p -projection plan
 		battery_flatteryp_1
 		battery_flatteryp_2
 	endmap

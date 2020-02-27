@@ -2,11 +2,11 @@ survey deeper_than_most -title "Tiger Tiger streamway"
 	input "deeper_than_most-p.th2"
 	input "deeper_than_most-e.th2"
 	
-	map  m-deeper_than_most-e -projection extended
+	map  m-all-e -projection extended
 		deeper_than_most-e1
 	endmap
 	
-	map m-deeper_than_most-p -projection plan
+	map m-all-p -projection plan
 		deeper_than_most-p1
 	endmap
 	

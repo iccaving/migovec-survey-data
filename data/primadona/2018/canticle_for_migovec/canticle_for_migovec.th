@@ -20,14 +20,14 @@ survey canticle_for_migovec
 		canticle_for_migovec-p4
 	endmap
 	
-	map m-canticle_for_migovec-p -projection plan
+	map m-all-p -projection plan
 		mcanticle_for_migovec-p1
 		mcanticle_for_migovec-p2
 		mcanticle_for_migovec-p4
 		mcanticle_for_migovec-p3
 	endmap
 	
-	map  m-canticle_for_migovec-e -projection extended
+	map  m-all-e -projection extended
 		canticle_for_migovec-1e
 	endmap
 	

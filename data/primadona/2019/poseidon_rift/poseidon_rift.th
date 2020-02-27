@@ -6,7 +6,7 @@ survey poseidon_rift -title "Poseidon_Rift"
 	input "poseidon_rift-1p.th2"
 	input "poseidon_rift-1s.th2"
 	
-	map m-poseidon_rift-p -projection plan
+	map m-all-p -projection plan
 		m3p
 		m4p
 		m1p
@@ -33,7 +33,7 @@ survey poseidon_rift -title "Poseidon_Rift"
 		poseidon_rift-1s
 	endmap
 	
-	map  m-poseidon_rift-e -projection extended
+	map  m-all-e -projection extended
 		m1s
 	endmap
 	

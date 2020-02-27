@@ -5,11 +5,11 @@ survey risanke
 	input "risanke_extend.th2"
 	
 	
-	map  m-risanke-e -projection extended
+	map  m-all-e -projection extended
 		risanke_e1
 	endmap
 	
-	map m-risanke-p -projection plan
+	map m-all-p -projection plan
 		risankep_1
 	endmap
 	

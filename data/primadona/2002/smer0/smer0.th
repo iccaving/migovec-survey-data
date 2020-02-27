@@ -28,7 +28,7 @@ survey smer0
 		smer0p_6
 	endmap
 	
-	map  m-smer0-e -projection extended
+	map  m-all-e -projection extended
 		smer0-e1
 	endmap
 	
@@ -38,7 +38,7 @@ survey smer0
 	join smer0p_6 smer0p_4
 	join smer0p_4 smer0p_5
 	
-	map m-smer0-p -projection plan
+	map m-all-p -projection plan
 		msmer0p_1
 		msmer0p_2
 		msmer0p_3

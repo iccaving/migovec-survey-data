@@ -182,12 +182,12 @@ survey klic_globin -title "Klic Globin"
 	input "klic_globin-1p.th2"
 	input "klic_globin-1s.th2"
 	
-	map m-klic_globin-p -projection plan
+	map m-all-p -projection plan
 		klic_globin-p1
 		klic_globin-p2
 	endmap
 	
-	map  m-klic_globin-e -projection extended
+	map  m-all-e -projection extended
 		klic_globin-1s
 	endmap
 	

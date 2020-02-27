@@ -447,7 +447,7 @@ survey moonraker -title "Moonraker"
 		moonraker-p3
 	endmap
 	
-	map m-moonraker-p -projection plan
+	map m-all-p -projection plan
 		m1p
 		m2p
 		m3p
@@ -465,7 +465,7 @@ survey moonraker -title "Moonraker"
 		moonraker-3s
 	endmap
 	
-	map  m-moonraker-e -projection extended
+	map  m-all-e -projection extended
 		m1s
 		m2s
 		m3s

@@ -5,7 +5,7 @@ survey street-wise_hercules -title "street-wise_hercules"
 	input "street-wise_hercules-1p.th2"
 	input "street-wise_hercules-1s.th2"
 	
-	map m-street-wise_hercules-p -projection plan
+	map m-all-p -projection plan
 		m1p
 		m2p
 	endmap
@@ -20,7 +20,7 @@ survey street-wise_hercules -title "street-wise_hercules"
 		street-wise_hercules-1p
 	endmap
 	
-	map  m-stree-wise_hercules-e -projection extended
+	map  m-all-e -projection extended
 		street-wise_hercules-1s
 	endmap
 	
