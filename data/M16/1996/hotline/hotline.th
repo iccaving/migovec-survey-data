@@ -1,7 +1,7 @@
 survey hotline -title "Hotline"
 	input "hotline-p.th2"
 	
-	map m-hotline-p -projection plan
+	map m-all-p -projection plan
 		hotline-1p
 		hotline-2p
 	endmap

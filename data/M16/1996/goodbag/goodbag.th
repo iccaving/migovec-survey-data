@@ -3,7 +3,7 @@ survey goodbag -title "Goodybag"
 	
 	input "goodbag-p.th2"
 	
-	map m-goodbag-p -projection plan
+	map m-all-p -projection plan
 		goodbag-1p
 	endmap
 	centreline
