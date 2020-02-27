@@ -1,0 +1,6 @@
+source "../../M18/M18.th"
+
+export model -o "../../_outputs/model/M18.3d" -fmt survex
+export model -o "../../_outputs/model/M18.lox"
+select m-all-p@M18
+export map -o "../../_outputs/map/M18.pdf" -projection plan
