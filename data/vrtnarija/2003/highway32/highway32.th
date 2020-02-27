@@ -3,7 +3,7 @@ survey highway32 -title "Highway 32"
 	
 	input "highway32-p.th2"
 	
-	map m-highway32-p -projection plan
+	map m-all-p -projection plan
 		highway32-3p
 		highway32-1p
 		break

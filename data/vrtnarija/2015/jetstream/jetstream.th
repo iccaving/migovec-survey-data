@@ -3,7 +3,7 @@ survey jetstream -title "Jet Stream"
 	
 	input jetstream-p.th2
 	
-	map m-jetstream-p -projection plan
+	map m-all-p -projection plan
 		jetstream-1p
 	endmap
 	
