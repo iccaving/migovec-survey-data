@@ -4,11 +4,11 @@ survey monatip1
 	input "monatip1p.th2"
 	input "monatip1-e.th2"
 	
-	map  m-monatip1-e -projection extended
+	map  m-all-e -projection extended
 		monatip1-s1
 	endmap
 	
-	map m-monatip1-p -projection plan
+	map m-all-p -projection plan
 		mmonatip1-p1
 		mmonatip1-p2
 		mmonatip1-p5

@@ -4,11 +4,11 @@ survey bathtub
 	input "bathtub-p.th2"
 	input "bathtub-e.th2"
 	
-	map m-bathtub-p -projection plan
+	map m-all-p -projection plan
 		bathtubp_1
 	endmap
 	
-	map  m-bathtub-e -projection extended
+	map  m-all-e -projection extended
 		bathtub-1e
 	endmap
 	

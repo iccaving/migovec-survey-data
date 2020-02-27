@@ -3,11 +3,11 @@ survey det
 	input "det-p.th2"
 	input "det-e.th2"
 	
-	map m-det-p -projection plan
+	map m-all-p -projection plan
 		detp_1
 	endmap
 	
-	map  m-det-e -projection extended
+	map  m-all-e -projection extended
 		det-1e
 	endmap
 	

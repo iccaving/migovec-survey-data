@@ -1,16 +1,20 @@
 
 map  m-all-e -projection extended
-	m-monatip1-e@monatip1
-	m-cloacamaxima-e@cloacamaxima
-	m-well_hung-e@well_hung
-	m-monatip2-e@monatip2
-	m-aleksandrija-e@aleksandrija
-	m-monatip3-e@monatip3
-	m-monatip5-e@monatip5
-	m-therock-e@therock
-	m-alkatraz_disto_resurvey-e@alkatraz_disto_resurvey
-	m-broken_hammer-e@broken_hammer
-	m-monatip4-e@monatip4
-	#malkatraz-e@alkatraz
-	m-doubletime-e@doubletime
+	m-all-e@monatip1
+	m-all-e@cloacamaxima
+	m-all-e@well_hung
+	m-all-e@monatip2
+	m-all-e@aleksandrija
+	m-all-e@monatip3
+	m-all-e@monatip5
+	m-all-e@therock
+	m-all-e@alkatraz_disto_resurvey
+	m-all-e@broken_hammer
+	m-all-e@monatip4
+	#m-all-e@alkatraz
+	m-all-e@doubletime
+endmap
+
+map  m-monatip_main-e -projection extended
+	m-all-e@alkatraz_disto_resurvey
 endmap

@@ -2,12 +2,12 @@ encoding  utf-8
 survey alkatraz
 	input "alkatraz-e.th2"
 	
-	map  m-alkatraz-e -projection extended
+	map  m-all-e -projection extended
 		alkatraz-e1
 	endmap
 	#input "alkatrazp.th2"
 	
-	#map m-alkatraz-p -projection plan
+	#map m-all-p -projection plan
 	# malkatraz-p1
 	# malkatraz-p2
 	#endmap

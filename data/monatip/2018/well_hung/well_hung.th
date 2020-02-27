@@ -2,12 +2,12 @@ survey well_hung -title "Well Hung"
 	input "well_hung-p.th2"
 	input "well_hung-e.th2"
 	
-	map  m-well_hung-e -projection extended
+	map  m-all-e -projection extended
 		well_hung-e1
 	endmap
 	
 	
-	map m-well_hung-p -projection plan
+	map m-all-p -projection plan
 		well_hung-p1
 		well_hung-p2
 	endmap
