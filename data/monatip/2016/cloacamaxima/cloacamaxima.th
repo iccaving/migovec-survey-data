@@ -3,7 +3,7 @@ survey cloacamaxima
 	input "cloacamaximap.th2"
 	input "cloacamaxima-e.th2"
 	
-	map  m-cloacamaxima-e -projection extended
+	map  m-all-e -projection extended
 		cloacamaxima-e1
 		break
 		cloacamaxima-e3
@@ -13,7 +13,12 @@ survey cloacamaxima
 		cloacamaxima-e4
 	endmap
 	
-	map m-cloacamaxima-p -projection plan
+	map m-all-p -projection plan
+		m-cloacamaxima_high-p
+		m-cloacamaxima_low-p
+	endmap
+	
+	map m-cloacamaxima_high-p -projection plan
 		mcloacamaxima-p1
 		mcloacamaxima-p2
 		mcloacamaxima-p3

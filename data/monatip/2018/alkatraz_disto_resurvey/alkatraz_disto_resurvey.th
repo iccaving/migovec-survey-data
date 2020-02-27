@@ -6,7 +6,7 @@ survey alkatraz_disto_resurvey -title "alkatraz_disto_resurvey"
 	input alkatraz_disto_resurvey-1p.th2
 	input alkatraz_disto_resurvey-1s.th2
 	
-	map m-alkatraz_disto_resurvey-p -projection plan
+	map m-all-p -projection plan
 		malkatraz_disto_resurvey-p2
 		malkatraz_disto_resurvey-p1
 	endmap
@@ -19,7 +19,7 @@ survey alkatraz_disto_resurvey -title "alkatraz_disto_resurvey"
 		alkatraz_disto_resurvey-2p
 	endmap
 	
-	map  m-alkatraz_disto_resurvey-e -projection extended
+	map  m-all-e -projection extended
 		alkatraz_disto_resurvey-1s
 	endmap
 	

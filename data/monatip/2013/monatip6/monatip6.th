@@ -2,7 +2,7 @@ survey monatip6 -title "Monatip6"
 	
 	input "monatip6-p.th2"
 	
-	map m-monatip6-p -projection plan
+	map m-all-p -projection plan
 		monatip6-1p
 		break
 		monatip6-2p
