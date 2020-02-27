@@ -1,7 +1,7 @@
 survey entrance -title "M16 entrance series"
 	input "entrance-p.th2"
 	
-	map m-entrance-p -projection plan
+	map m-all-p -projection plan
 		entrance-1p
 		break
 		#entrance-2p

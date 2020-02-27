@@ -2,7 +2,7 @@ survey jspdt -title "M2 to Silos"
 	
 	input "jspdt-p.th2"
 	
-	map m-jspdt-p -projection plan
+	map m-all-p -projection plan
 		jspdt-1p
 		jspdt-2p
 		jspdt-3p

@@ -3,7 +3,7 @@ survey baddybag -title "System Migovec"
 	
 	input "baddybag-p.th2"
 	
-	map m-baddybag-p -projection plan
+	map m-all-p -projection plan
 		baddybag-3p
 		break
 		baddybag-2p

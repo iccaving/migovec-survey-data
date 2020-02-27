@@ -2,7 +2,7 @@ survey brezno -title "Brezno Strahov"
 	
 	input "brezno-p.th2"
 	
-	map m-brezno-p -projection plan
+	map m-all-p -projection plan
 		brezno-1p
 		break
 		brezno-2p
