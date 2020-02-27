@@ -3,11 +3,11 @@ survey drainpipe
 	input "drainpipe-p.th2"
 	input "drainpipe-e.th2"
 	
-	#map m-drainpipe-p -projection plan
+	#map m-all-p -projection plan
 	#drainpipep_1
 	#endmap
 	
-	map  m-drainpipe-e -projection extended
+	map  m-all-e -projection extended
 		drainpipe-1e
 	endmap
 	

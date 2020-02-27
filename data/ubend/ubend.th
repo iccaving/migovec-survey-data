@@ -2,20 +2,20 @@ encoding  utf-8
 survey ubend -title "U-bend 571"
 	
 	map m-all-p -projection plan
-		m-ubend2-p@ubend2
-		m-ubend1-p@ubend
-		m-ubend3-p@ubend3
-		m-det-p@det
-		m-bathtub-p@bathtub
+		m-all-p@ubend2
+		m-all-p@ubend
+		m-all-p@ubend3
+		m-all-p@det
+		m-all-p@bathtub
 	endmap
 	
 	map  m-all-e -projection extended
-		m-drainpipe-e@drainpipe
-		m-ubend-e@ubend
-		m-ubend2-e@ubend2
-		m-ubend3-e@ubend3
-		m-det-e@det
-		m-bathtub-e@bathtub
+		m-all-e@drainpipe
+		m-all-e@ubend
+		m-all-e@ubend2
+		m-all-e@ubend3
+		m-all-e@det
+		m-all-e@bathtub
 	endmap
 	
 	#The includes

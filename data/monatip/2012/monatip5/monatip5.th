@@ -2,7 +2,7 @@ survey monatip5 -title "Hallowine"
 	input "monatip5-p.th2"
 	input "monatip5-e.th2"
 	
-	map m-monatip5-p -projection plan
+	map m-all-p -projection plan
 		monatip5-2p
 		monatip5-1p
 		monatip5-3p
@@ -10,7 +10,7 @@ survey monatip5 -title "Hallowine"
 		monatip5-4p #Telovadci pitch
 	endmap
 	
-	map  m-monatip5-e -projection extended
+	map  m-all-e -projection extended
 		monatip5-1e
 	endmap
 	

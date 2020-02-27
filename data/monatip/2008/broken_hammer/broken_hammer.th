@@ -3,12 +3,12 @@ survey broken_hammer
 	input "broken_hammerp.th2"
 	input "broken_hammer-e.th2"
 	
-	map  m-broken_hammer-e -projection extended
+	map  m-all-e -projection extended
 		broken_hammer-e1
 		broken_hammer-e2
 	endmap
 	
-	map m-broken_hammer-p -projection plan
+	map m-all-p -projection plan
 		mbroken_hammer-p1
 		mbroken_hammer-p2
 	endmap

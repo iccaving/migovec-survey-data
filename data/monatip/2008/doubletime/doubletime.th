@@ -3,11 +3,11 @@ survey doubletime
 	input "doubletimep.th2"
 	input "doubletime-e.th2"
 	
-	map  m-doubletime-e -projection extended
+	map  m-all-e -projection extended
 		doubletime-e1
 	endmap
 	
-	map m-doubletime-p -projection plan
+	map m-all-p -projection plan
 		mdoubletime-p1
 		mdoubletime-p2
 		mdoubletime-p3

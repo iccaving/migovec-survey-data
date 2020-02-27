@@ -4,11 +4,11 @@ survey ubend2 -title "Ubend 2"
 	input "ubend2-p.th2"
 	input "ubend2-e.th2"
 	
-	map m-ubend2-p -projection plan
+	map m-all-p -projection plan
 		ubend2p_1
 	endmap
 	
-	map  m-ubend2-e -projection extended
+	map  m-all-e -projection extended
 		ubend2-1e
 	endmap
 	

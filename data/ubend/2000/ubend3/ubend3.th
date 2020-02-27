@@ -3,13 +3,13 @@ survey ubend3
 	input "ubend3-p.th2"
 	input "ubend3-e.th2"
 	
-	map m-ubend3-p -projection plan
+	map m-all-p -projection plan
 		mubend3p_1
 		mubend3p_3
 		mubend3p_2
 	endmap
 	
-	map  m-ubend3-e -projection extended
+	map  m-all-e -projection extended
 		ubend3-1e
 	endmap
 	map mubend3p_1 -projection plan
