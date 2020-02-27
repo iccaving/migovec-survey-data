@@ -1,24 +1,37 @@
 survey M18 -title "M18 part of System Migovec"
 	
+	map m-all-p -projection plan
+		m-all-p@torn
+		m-all-p@lowerrift
+		m-all-p@upperrift
+		m-all-p@turtle
+		m-all-p@shreddie
+	endmap
+
 	###__________1995____________###
-	
-	#input ./1995/ttc_up/ttc_up.th
-	#input ./1995/ttc/ttc.th
-	#input ./1995/ttc_low/ttc_low.th
-	#input ./1995/turtle/turtle.th
-	#input ./1995/shred/shred.th
+
+	input ./1995/torn/torn.th
+	input ./1995/upperrift/upperrift.th
+	input ./1995/lowerrift/lowerrift.th
+	input ./1995/turtle/turtle.th
+	input ./1995/shreddie/shreddie.th
+
+	equate 17@torn 0@upperrift
+	equate 2@lowerrift 2@torn
+	equate 124@lowerrift 18@turtle
+	equate 8@shreddie 8@turtle
 	
 	###__________1996____________###
 	
 	#input ./1996/boogywoo/boogywoo.th
-	#input ./1996/gallery/gallery.th
+	 input ./1996/gallery/gallery.th
 	#input ./1996/zebra/zebra.th
 	#input ./1996/silos/silos.th
 	#input ./1996/plop/plop.th
 	#input ./1996/dodge/dodge.th
 	#input ./1996/void/void.th
 	
-	#equate 0@gallery 34@shreddie
+	 equate 0@gallery 34@shreddie
 	#equate 104@gallery 89@gallery
 	#equate 12@rockroll 6@boogywoo
 	#equate 17@void 2@gallery

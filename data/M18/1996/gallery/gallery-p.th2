@@ -1,0 +1,303 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+
+scrap DELETE-ME-survey-legs -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
+
+line wall 
+  -567.4 401.73
+  -556.3 402.13
+endline
+
+line wall 
+  -556.3 402.13
+  -476.3 428.11
+endline
+
+line wall 
+  -556.3 402.13
+  -556.3 402.13
+endline
+
+line wall 
+  627.01 -299.21
+  553.62 -341.57
+endline
+
+line wall 
+  627.01 -299.21
+  627.01 -299.21
+endline
+
+line wall 
+  618.19 -312.28
+  627.01 -299.21
+endline
+
+line wall 
+  586.69 -244.72
+  618.19 -312.28
+endline
+
+line wall 
+  -601.65 233.62
+  -729.21 265.43
+endline
+
+line wall 
+  -575.51 314.02
+  -601.65 233.62
+endline
+
+line wall 
+  -540.94 345.12
+  -575.51 314.02
+endline
+
+line wall 
+  -505.83 363.78
+  -540.94 345.12
+endline
+
+line wall 
+  -554.33 385.35
+  -602.36 355.35
+endline
+
+line wall 
+  -505.83 363.78
+  -554.33 385.35
+endline
+
+line wall 
+  -425.83 376.46
+  -505.83 363.78
+endline
+
+line wall 
+  -365.35 393.78
+  -425.83 376.46
+endline
+
+line wall 
+  -633.39 355.43
+  -567.4 401.73
+endline
+
+line wall 
+  -524.65 403.94
+  -633.39 355.43
+endline
+
+line wall 
+  -463.31 381.57
+  -524.65 403.94
+endline
+
+line wall 
+  -463.31 381.57
+  -418.03 417.01
+endline
+
+line wall 
+  -461.42 374.49
+  -463.31 381.57
+endline
+
+line wall 
+  -461.42 374.49
+  -461.42 374.49
+endline
+
+line wall 
+  -415.75 357.87
+  -461.42 374.49
+endline
+
+line wall 
+  -360.08 354.02
+  -415.75 357.87
+endline
+
+line wall 
+  -360.08 354.02
+  -360.08 354.02
+endline
+
+line wall 
+  -305.91 336.38
+  -360.08 354.02
+endline
+
+line wall 
+  195.59 86.54
+  195.59 86.54
+endline
+
+line wall 
+  253.07 96.69
+  195.59 86.54
+endline
+
+line wall 
+  238.58 150.63
+  253.07 96.69
+endline
+
+line wall 
+  -305.91 336.38
+  -365.35 393.78
+endline
+
+line wall 
+  -144.72 296.22
+  -305.91 336.38
+endline
+
+line wall 
+  -27.4 258.11
+  -144.72 296.22
+endline
+
+line wall 
+  79.29 214.96
+  -27.4 258.11
+endline
+
+line wall 
+  79.29 214.96
+  12.91 297.01
+endline
+
+line wall 
+  238.58 150.63
+  79.29 214.96
+endline
+
+line wall 
+  272.91 93.46
+  238.58 150.63
+endline
+
+line wall 
+  421.1 56.54
+  272.91 93.46
+endline
+
+line wall 
+  387.72 70.31
+  387.72 70.31
+endline
+
+line wall 
+  385.43 92.2
+  387.72 70.31
+endline
+
+line wall 
+  385.43 92.2
+  385.43 92.2
+endline
+
+line wall 
+  421.1 56.54
+  385.43 92.2
+endline
+
+line wall 
+  467.09 -42.13
+  421.1 56.54
+endline
+
+line wall 
+  677.8 -345.83
+  729.21 -428.11
+endline
+
+line wall 
+  586.69 -244.72
+  677.8 -345.83
+endline
+
+line wall 
+  576.77 -164.02
+  586.69 -244.72
+endline
+
+line wall 
+  579.29 -143.62
+  579.29 -143.62
+endline
+
+line wall 
+  576.77 -164.02
+  579.29 -143.62
+endline
+
+line wall 
+  467.09 -42.13
+  576.77 -164.02
+endline
+
+line wall 
+  509.21 -22.52
+  467.09 -42.13
+endline
+
+endscrap
+
+
+scrap gallery-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
+
+point -476.3 428.11 station -name 103
+point -556.3 402.13 station -name 102
+point -556.3 402.13 station -name 101
+point 553.62 -341.57 station -name 53
+point 627.01 -299.21 station -name 52
+point 627.01 -299.21 station -name 51
+point 618.19 -312.28 station -name 50
+point -729.21 265.43 station -name 24
+point -601.65 233.62 station -name 23
+point -575.51 314.02 station -name 22
+point -540.94 345.12 station -name 21
+point -602.36 355.35 station -name 20
+point -554.33 385.35 station -name 19
+point -505.83 363.78 station -name 18
+point -425.83 376.46 station -name 17
+point -567.4 401.73 station -name 89
+point -633.39 355.43 station -name 88
+point -524.65 403.94 station -name 87
+point -418.03 417.01 station -name 86
+point -463.31 381.57 station -name 85
+point -461.42 374.49 station -name 84
+point -461.42 374.49 station -name 83
+point -415.75 357.87 station -name 82
+point -360.08 354.02 station -name 81
+point -360.08 354.02 station -name 80
+point 195.59 86.54 station -name 99
+point 195.59 86.54 station -name 98
+point 253.07 96.69 station -name 97
+point -365.35 393.78 station -name 16
+point -305.91 336.38 station -name 15
+point -144.72 296.22 station -name 14
+point -27.4 258.11 station -name 13
+point 12.91 297.01 station -name 12
+point 79.29 214.96 station -name 11
+point 238.58 150.63 station -name 10
+point 272.91 93.46 station -name 9
+point 387.72 70.31 station -name 43
+point 387.72 70.31 station -name 42
+point 385.43 92.2 station -name 41
+point 385.43 92.2 station -name 40
+point 421.1 56.54 station -name 8
+point 729.21 -428.11 station -name 7
+point 677.8 -345.83 station -name 6
+point 586.69 -244.72 station -name 5
+point 579.29 -143.62 station -name 4
+point 579.29 -143.62 station -name 3
+point 576.77 -164.02 station -name 2
+point 467.09 -42.13 station -name 1
+point 509.21 -22.52 station -name 0
+endscrap
+
