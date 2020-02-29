@@ -1,5 +1,11 @@
-
 survey eggsplosive -title "Name Eggsplosive"
+	
+	input "eggsplosive-p.th2" 
+
+	map m-all-p -projection plan
+		eggsplosive-1p
+	endmap
+
 	centreline
 		team "Tim Osborne" insts
 		team "James Kirkpatrick" notes

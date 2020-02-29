@@ -3,9 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap friendship-p1 -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
+scrap friendship-p1 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
-point 392.4684 959.8855 label -text Zimmer -align r -scale l
+point 392.4684 959.8855 label -align r -scale l -text Zimmer
 point 348.855 966.845 passage-height -align t -value 60
 point 376.7858 968.3977 passage-height -align t -value 80
 point 368.75 969.0 water-flow -orientation 287.3
@@ -14,7 +14,6 @@ line rock-border -close on
   319.75 963.25
   321.0 961.5
   324.0 963.5
-  322.5 965.25
 endline
 
 line rock-border -close on
@@ -22,7 +21,6 @@ line rock-border -close on
   321.5 970.25
   321.75 969.0
   325.25 969.0
-  324.75 971.25
 endline
 
 line rock-border -close on
@@ -30,7 +28,6 @@ line rock-border -close on
   325.0 967.0
   325.0 967.0 323.75 965.0 324.5 964.75
   325.25 964.5 326.5 964.5 326.5 964.5
-  326.75 967.5
 endline
 
 line rock-border -close on
@@ -38,7 +35,6 @@ line rock-border -close on
   326.5 959.75
   328.75 958.5
   330.5 961.0
-  328.25 961.75
 endline
 
 line rock-border -close on
@@ -46,7 +42,6 @@ line rock-border -close on
   332.0 964.25
   332.25 961.25
   335.5 961.0
-  335.5 964.5
 endline
 
 line rock-border -close on
@@ -62,7 +57,6 @@ line rock-border -close on
   340.75 961.25
   340.5 958.75
   343.75 958.75
-  342.75 961.75
 endline
 
 line rock-border -close on
@@ -70,7 +64,6 @@ line rock-border -close on
   343.5 966.25
   343.5 963.5
   346.25 963.5
-  346.5 966.5
 endline
 
 line rock-border -close on
@@ -78,7 +71,6 @@ line rock-border -close on
   344.5 973.75
   344.75 971.0
   347.5 971.75
-  346.25 974.25
 endline
 
 line rock-border -close on
@@ -86,7 +78,6 @@ line rock-border -close on
   347.5 969.5
   348.5 966.75
   351.5 968.0
-  351.0 970.5
 endline
 
 line rock-border -close on
@@ -94,7 +85,6 @@ line rock-border -close on
   371.5 979.75
   370.75 977.5
   371.25 975.0
-  373.25 978.75
 endline
 
 line rock-border -close on
@@ -102,7 +92,6 @@ line rock-border -close on
   375.25 976.5
   375.25 974.0
   378.0 974.25
-  378.25 976.0
 endline
 
 line rock-border -close on
@@ -110,7 +99,6 @@ line rock-border -close on
   373.0 972.0
   374.5 969.0
   379.75 969.5
-  378.75 971.75
 endline
 
 line rock-border -close on
@@ -126,7 +114,6 @@ line rock-border -close on
   363.25 978.25
   362.25 976.75
   363.75 974.75
-  365.75 977.75
 endline
 
 line rock-border -close on
@@ -134,7 +121,6 @@ line rock-border -close on
   366.75 975.5
   365.5 971.75
   370.5 971.25
-  371.25 975.0
 endline
 
 line rock-border -close on
@@ -142,7 +128,6 @@ line rock-border -close on
   355.0 975.75
   357.25 970.25
   360.5 970.5
-  359.5 975.25
 endline
 
 line rock-border -close on
@@ -150,7 +135,6 @@ line rock-border -close on
   328.0 974.75
   328.5 971.75
   331.75 973.0
-  330.75 975.25
 endline
 
 line rock-border -close on
@@ -158,7 +142,6 @@ line rock-border -close on
   334.5 976.75
   333.25 974.0
   336.75 972.0
-  338.0 975.75
 endline
 
 line rock-border -close on
@@ -166,7 +149,6 @@ line rock-border -close on
   330.5 970.75
   330.0 968.25
   332.75 967.0
-  334.0 970.0
 endline
 
 line rock-border -close on
@@ -174,7 +156,6 @@ line rock-border -close on
   336.25 966.75
   335.5 964.5
   338.5 961.5
-  339.5 965.75
 endline
 
 line rock-border -close on
@@ -185,7 +166,7 @@ line rock-border -close on
   342.75 969.25 341.25 971.5 341.25 971.5
 endline
 
-line label -text Zimmer -scale xl
+line label -scale xl -text Zimmer
   376.75 955.75
   376.75 955.75 410.5 969.75 431.0 989.25
 endline
@@ -212,19 +193,16 @@ line wall
 endline
 
 line wall 
-  351.0 988.0
-  353.5 984.0
-  353.5 984.0 357.75 981.5 355.25 980.75
-  352.75 980.0 350.62 979.69 349.5 980.25
-  348.5 980.75 345.25 978.75 343.25 980.25
-  341.25 981.75 339.5 982.5 339.5 982.5
+  348.2254 984.5831
+  348.5288 983.7186 349.2091 981.9063 348.798 981.4396
+  347.5967 980.0759 343.738 980.385 342.7666 980.5953
+  340.7666 982.0953 339.0166 982.8453 339.0166 982.8453
 endline
 
 line wall 
   364.25 981.75
-  364.25 981.75 363.25 981.25 362.0 982.0
-  360.75 982.75 360.25 984.25 360.25 984.25
-  358.75 988.0
+  364.25 981.75 358.7334 980.6396 357.4834 981.3896
+  356.2334 982.1396 354.8357 986.4708 354.8357 986.4708
 endline
 
 point 360.4157 972.3787 station -name 3b
@@ -233,10 +211,10 @@ point 340.0158 977.8209 station -name 17
 endscrap
 
 
-scrap friendship-p2 -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
+scrap friendship-p2 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
 point 470.0 811.25 camp 
-line label -text "Camp X-Ray" -scale xl
+line label -scale xl -text "Camp X-Ray"
   451.0 890.0
   451.0 890.0 486.5 855.5 517.5 793.25
 endline
@@ -251,7 +229,6 @@ line rock-border -close on
   360.5 960.75
   362.5 957.25
   365.25 958.5
-  364.5 960.5
 endline
 
 line rock-border -close on
@@ -259,7 +236,6 @@ line rock-border -close on
   372.25 946.5
   372.0 942.5
   376.75 943.5
-  375.5 946.75
 endline
 
 line rock-border -close on
@@ -267,7 +243,6 @@ line rock-border -close on
   373.5 937.75
   373.25 942.0
   379.25 944.75
-  379.75 937.0
 endline
 
 line wall 
@@ -325,7 +300,7 @@ point 452.318 843.5444 station -name 13
 endscrap
 
 
-scrap friendship-p3 -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17] -projection plan
+scrap friendship-p3 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
 point 470.0 811.25 station -name 12
 point 450.367 839.6082 station -name 11
@@ -382,7 +357,6 @@ line rock-border -close on
   499.5 594.25
   501.25 588.75
   507.75 590.5
-  503.25 594.5
 endline
 
 line rock-border -close on
@@ -390,7 +364,6 @@ line rock-border -close on
   488.0 593.75
   488.0 593.75 488.25 589.25 489.25 589.25
   490.25 589.25 497.5 590.0 497.5 590.0
-  495.5 595.5
 endline
 
 line rock-border -close on
@@ -398,7 +371,6 @@ line rock-border -close on
   497.75 614.75
   496.75 611.0
   502.0 608.5
-  503.25 613.0
 endline
 
 line rock-border -close on
@@ -406,7 +378,6 @@ line rock-border -close on
   505.75 608.5
   506.0 601.25
   510.5 602.0
-  508.25 607.75
 endline
 
 line rock-border -close on
@@ -414,7 +385,6 @@ line rock-border -close on
   497.5 605.75
   497.75 595.75
   505.25 596.5
-  504.25 606.5
 endline
 
 line wall 
@@ -535,9 +505,9 @@ endline
 endscrap
 
 
-scrap friendship-p4 -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17] -projection plan
+scrap friendship-p4 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
-line label -text "Friendship Gallery" -scale xl
+line label -scale xl -text "Friendship Gallery"
   285.0 468.0
   285.75 468.5 383.0 636.0 372.0 820.0
 endline
@@ -630,14 +600,13 @@ point 350.1131 478.4682 station -name 33
 endscrap
 
 
-scrap friendship-p5 -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17] -projection plan
+scrap friendship-p5 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
 line rock-border -close on
   356.5 391.75
   354.5 389.25
   358.25 387.5
   358.75 390.75
-  356.5 391.75
 endline
 
 line rock-border -close on
@@ -645,7 +614,6 @@ line rock-border -close on
   362.25 395.0
   361.75 392.0
   364.25 389.75
-  365.5 393.5
 endline
 
 line rock-border -close on
@@ -661,7 +629,6 @@ line rock-border -close on
   360.75 406.75
   359.75 403.5
   362.5 401.75
-  363.5 406.0
 endline
 
 line rock-border -close on
@@ -669,7 +636,6 @@ line rock-border -close on
   356.75 433.0
   357.25 430.25
   359.75 429.5
-  360.75 432.25
 endline
 
 line rock-border -close on
@@ -677,7 +643,6 @@ line rock-border -close on
   347.75 448.75
   348.75 445.25
   351.5 446.5
-  352.25 451.25
 endline
 
 line contour 
@@ -755,7 +720,7 @@ endline
 endscrap
 
 
-scrap friendship-p6 -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17] -projection plan
+scrap friendship-p6 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
 line contour 
   435.75 377.25
