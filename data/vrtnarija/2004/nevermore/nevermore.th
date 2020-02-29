@@ -1,24 +1,24 @@
 
 survey nevermore -title "Nevermore"
-centreline
-    team "Unattributed Notes" insts
-    team "Unattributed Notes" notes
-    explo-team "Unattributed Notes"
-    explo-team "Unattributed Notes"
-    date 2004.8.1
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    1	2	4.95	213	-25	# LRUD for all shots, too lazy to enter
-    3	2	17.88	008	+33	
-    4	3	9.30	011	+23	
-    5	4	6.78	316	+12	#tape is indistinct - could be 5.78
-    6	5	4.40	009	-	#clino down as '-' - assume means horizontal
-    7	6	6.32	344	+24	
-    8	7	12.90	005	+25
-    9	8	6.59	339	+08
-    10	9	5.12	301	+05	# no direction associated with this shot, assuming 10->9
-endcentreline
+	centreline
+		team "Unattributed Notes" insts
+		team "Unattributed Notes" notes
+		explo-team "Unattributed Notes"
+		explo-team "Unattributed Notes"
+		date 2004.8.1
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		1	2	4.95	213	-25	# LRUD for all shots, too lazy to enter
+		3	2	17.88	008	+33
+		4	3	9.30	011	+23
+		5	4	6.78	316	+12	#tape is indistinct - could be 5.78
+		6	5	4.40	009	00	#clino down as '-' - assume means horizontal
+		7	6	6.32	344	+24
+		8	7	12.90	005	+25
+		9	8	6.59	339	+08
+		10	9	5.12	301	+05	# no direction associated with this shot, assuming 10->9
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -38,22 +38,22 @@ endsurvey
 #
 #*begin nevermore
 #*flags duplicate
-#;Data is on 2 pages 
+#;Data is on 2 pages
 #;First side of 1st page contains numeric data
 #
 #;Flipside is labelled 'Nevermore' and contains 'p2/3' label, and Grade II crossection of passage with 1,2,4/5,6,7,8 staions labelled
 #;Cave generally heads across chamber from 8-7 and then up ~30deg slope via boulders (with survey stations on top of them?)
 #
-#;Page 3/3 is nevermore plan, with large spent carbide smear across it. Plan has no north arrow. 
+#;Page 3/3 is nevermore plan, with large spent carbide smear across it. Plan has no north arrow.
 #;Cave straight across chamber 8-7 and up to .5, then jumps @80deg to left (.4) before continuing along original direction to reach end.
 #;End of survey is shown as passage continuing at same width
 #
 #1	2	4.95	213	-25	; LRUD for all shots, too lazy to enter
-#3	2	17.88	008	+33	
-#4	3	9.30	011	+23	
+#3	2	17.88	008	+33
+#4	3	9.30	011	+23
 #5	4	6.78	316	+12	;tape is indistinct - could be 5.78
 #6	5	4.40	009	-	;clino down as '-' - assume means horizontal
-#7	6	6.32	344	+24	
+#7	6	6.32	344	+24
 #8	7	12.90	005	+25
 #9	8	6.59	339	+08
 #10	9	5.12	301	+05	; no direction associated with this shot, assuming 10->9

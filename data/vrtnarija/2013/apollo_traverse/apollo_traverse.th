@@ -1,22 +1,24 @@
 
 survey apollo_traverse -title "Apollo Traverse"
-centreline
-    team "Gergely Ambrus" insts
-    team "Peter Adamko" notes
-    explo-team "Gergely Ambrus"
-    explo-team "Peter Adamko"
-    date 2013.7.14
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    
-endcentreline
+	centreline
+		team "Gergely Ambrus" insts
+		team "Peter Adamko" notes
+		explo-team "Gergely Ambrus"
+		explo-team "Peter Adamko"
+		date 2013.7.14
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2 1 10.97 266 -03
+		3 2 6.49  006 -20
+		3 4 4.17  132 0
+	endcentreline
 endsurvey
 
 # Converted From SVX
 #;####Apollo Traverse####:
 #; ### Traverse over the Apollo Climb ###
-#*date 2013.7.14 ; Expedition Za Mig Na Kuk 
+#*date 2013.7.14 ; Expedition Za Mig Na Kuk
 #
 #;Book + Tape: Peter Adamko
 #;Instruments: Gergely Ambrus
@@ -26,7 +28,7 @@ endsurvey
 #;data normal bcra grade 4
 #;from	to	tape	comp	clino; L R U D
 #
-#*begin apollo_traverse 
+#*begin apollo_traverse
 #*data normal from to tape compass clino ignoreall
 #;data normal bcra grade 4
 #;from   to      tape    comp    clino; L R U D
@@ -45,5 +47,5 @@ endsurvey
 #; Apollo traverse station 1 is apollo pss 1
 #
 #; ### SURVEY TIE IN ###
-#*equate apollo_traverse.1 apollo.1 
+#*equate apollo_traverse.1 apollo.1
 #

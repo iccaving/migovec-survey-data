@@ -1,26 +1,30 @@
 
-survey haemertight_crawl -title "Haemertight Crawl:"
-centreline
-    team "Jarvist Frost / James Kirkpatrick" insts
-    team "Unknown" notes
-    explo-team "Jarvist Frost / James Kirkpatrick"
-    explo-team "Unknown"
-    date 2008.08.15
-    units length meters
-    units compass clino degrees
-    data passage station left right up down ignoreall
-    6	1	3.68	236	+41	# .1 2 0 1.2 0.5
-    1	2	5.90	248	-05	# .2 0.3 0.3 0.5 0.5
-endcentreline
+survey haemertight_crawl -title "Haemertight Crawl"
+	centreline
+		team "Jarvist Frost" insts
+		team "James Kirkpatrick" notes
+		explo-team "Jarvist Frost"
+		explo-team "James Kirkpatrick"
+		date 2008.08.15
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		6	1	3.68	236	+41	# .1 2 0 1.2 0.5
+		1	2	5.90	248	-05	# .2 0.3 0.3 0.5 0.5
+		data dimensions station left right up down ignoreall
+		6 1.5 1.5 3.0 0.0
+		1 2 0 1.2 0.5
+		2 0.3 0.3 0.5 0.5
+	endcentreline
 endsurvey
 
 # Converted From SVX
 #;Haemertight Crawl:
-#; Tight crawl with Haematite floor, 
+#; Tight crawl with Haematite floor,
 #;  bashed to pitch dropping into lower mudslump
 #;   captain Kangaroo, near mud slump
 #*date 2008.08.15 ; 15/08/08
-# 
+#
 #;Instruments + Book / Tape: Jarvist Frost / James Kirkpatrick
 #
 #;Data entered by Jarvist Frost 16/8/08
@@ -28,7 +32,7 @@ endsurvey
 #;data normal bcra grade 4
 #;from	to	tape	comp	clino
 #
-#*begin haemertight_crawl 
+#*begin haemertight_crawl
 #6	1	3.68	236	+41	; .1 2 0 1.2 0.5
 #1	2	5.90	248	-05	; .2 0.3 0.3 0.5 0.5
 #;.1 is above from mudslump pss on large rock
@@ -40,7 +44,7 @@ endsurvey
 #6 1.5 1.5 3.0 0.0
 #1 2 0 1.2 0.5
 #2 0.3 0.3 0.5 0.5
-#*end haemertight_crawl 
+#*end haemertight_crawl
 #
 #*equate haemertight_crawl.6 mudslump.6
 #

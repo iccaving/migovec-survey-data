@@ -1,34 +1,34 @@
 
 survey dinnerservice -title "Void"
-centreline
-    team "Connor Roe" insts
-    team "Jarvist Moore Frost" notes
-    explo-team "Connor Roe"
-    explo-team "Jarvist Moore Frost"
-    date 2015.7.23
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	10.10	250	-17
-    2	3	11.60	231	-12
-    3	4	4.15	219	+26
-    5	6	11.78	341	+02
-    6	7	12.40	-	up
-    4	7	10.25	171	-37
-endcentreline
+	centreline
+		team "Connor Roe" insts
+		team "Jarvist Frost" notes
+		explo-team "Connor Roe"
+		explo-team "Jarvist Frost"
+		date 2015.7.23
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	10.10	250	-17
+		2	3	11.60	231	-12
+		3	4	4.15	219	+26
+		5	6	11.78	341	+02
+		6	7	12.40	-	up
+		4	7	10.25	171	-37
+	endcentreline
 endsurvey
 
 # Converted From SVX
 #;####Void####
 #;##Bolt climb up Nitro aven, Void##:
-#*date 2015.7.23 ; Expedition Pivo Moz 
+#*date 2015.7.23 ; Expedition Pivo Moz
 #
-#;Tape: Connor Roe 
+#;Tape: Connor Roe
 #;Book + Instruments: Jarvist Moore Frost
 #
-#;Data entered by Jarvist Moore Frost 31-7-15 
+#;Data entered by Jarvist Moore Frost 31-7-15
 #
-#*begin dinnerservice 
+#*begin dinnerservice
 #*data normal from to tape compass clino ignoreall
 #;data normal bcra grade 5
 #;from   to      tape    comp    clino; L R U D
@@ -55,8 +55,8 @@ endsurvey
 #;LRUD Data as below - introduce a new *data line if there's breaks in the survey
 #;*data passage station left right up down ignoreall
 #
-#*end dinnerservice 
+#*end dinnerservice
 #
-#*equate dinnerservice.1 void.6 
+#*equate dinnerservice.1 void.6
 #
 #

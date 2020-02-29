@@ -1,48 +1,48 @@
 
 survey blackknight -title "Black Knight"
-centreline
-    team "Myles Denton" insts
-    team "James 'Tetley' Hooper" notes
-    explo-team "Myles Denton"
-    explo-team "James 'Tetley' Hooper"
-    date 2010.7.28
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	7.80	348	+17	# was 1 to 2 in notes - Myles remembers reading instruments from 2
-    2	3	14.00	185	+00	# This is probably the wrong way around - splay leg into sump
-    4	1	5.35	357	+07
-    4	5	6.50	173	+26
-    5	6	4.40	161	+14
-    6	7	6.31	154	-11
-    7	8	4.23	183	-30
-    8	9	7.27	174	-10
-    9	10	5.17	186	-43
-    11	10	1.32	319	+14
-    11	12	9.45	166	+15
-    12	13	6.04	192	+13
-    1	14	8.84	343	+59
-    14	15	6.41	036	+14
-    15	16	17.29	351	+58
-    16	17	5.70	305	+60
-    1	2	2	8	1
-    2	0	0.5	3	0.2
-    3	0	0.5	0.5	0.2
-    4	1	1	5	1.5
-    5	1	0	0.5	0.5
-    6	0	0.5	3	1
-    7	0	0.5	1	2
-    8	0.5	0	2	2.5
-    9	0	0.5	4	2
-    10	3	0	5	2
-    11	0.5	0	4	1.5
-    12	0.5	0.5	1.5	0.5
-    13	0.5	0	2	2	# down is really 20?
-    14	0	3	12	8
-    15	3	0	10	5	#up is 20+ really
-    16	8	1	5	15
-    17	3	2	5	8
-endcentreline
+	centreline
+		team "Myles Denton" insts
+		team "James Hooper" notes
+		explo-team "Myles Denton"
+		explo-team "James Hooper"
+		date 2010.7.28
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	7.80	348	+17	# was 1 to 2 in notes - Myles remembers reading instruments from 2
+		2	3	14.00	185	+00	# This is probably the wrong way around - splay leg into sump
+		4	1	5.35	357	+07
+		4	5	6.50	173	+26
+		5	6	4.40	161	+14
+		6	7	6.31	154	-11
+		7	8	4.23	183	-30
+		8	9	7.27	174	-10
+		9	10	5.17	186	-43
+		11	10	1.32	319	+14
+		11	12	9.45	166	+15
+		12	13	6.04	192	+13
+		1	14	8.84	343	+59
+		14	15	6.41	036	+14
+		15	16	17.29	351	+58
+		16	17	5.70	305	+60
+		1	2	2	8	1
+		2	0	0.5	3	0.2
+		3	0	0.5	0.5	0.2
+		4	1	1	5	1.5
+		5	1	0	0.5	0.5
+		6	0	0.5	3	1
+		7	0	0.5	1	2
+		8	0.5	0	2	2.5
+		9	0	0.5	4	2
+		10	3	0	5	2
+		11	0.5	0	4	1.5
+		12	0.5	0.5	1.5	0.5
+		13	0.5	0	2	2	# down is really 20?
+		14	0	3	12	8
+		15	3	0	10	5	#up is 20+ really
+		16	8	1	5	15
+		17	3	2	5	8
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -51,7 +51,7 @@ endsurvey
 #*date 2010.7.28 ; Expedition Vodna Sled 2010
 #
 #;Tape Worm & Instruments: Myles Denton
-#;Book: James 'Tetley' Hooper
+#;Book: James Hooper
 #
 #;Data entered by Jarv on 29-7-2010
 #
