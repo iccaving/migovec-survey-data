@@ -1,24 +1,24 @@
 
 survey roaring -title "ROARING FLOOR TEASE"
-centreline
-    team "DG" insts
-    team "James Kirk"padding"patrick" notes
-    explo-team "DG"
-    explo-team "James Kirk"padding"patrick"
-    date 2010.7.25
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	3.35	127	9
-    1	3	2.51	356	-30
-    3	4	6.95	304	-40
-    4	5	7.06	322	-44
-    5	6	2.17	030	+07
-    6	7	4.29 	293	64
-    7	8	13.15	282	-29
-    #4 0 0.5 5	2
-    #7 0	1.5	85	5
-endcentreline
+	centreline
+		team "DG" insts
+		team "James Kirkpatrick" notes
+		explo-team "DG"
+		explo-team "James Kirkpatrick"
+		date 2010.7.25
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	3.35	127	9
+		1	3	2.51	356	-30
+		3	4	6.95	304	-40
+		4	5	7.06	322	-44
+		5	6	2.17	030	+07
+		6	7	4.29 	293	64
+		7	8	13.15	282	-29
+		#4 0 0.5 5	2
+		#7 0	1.5	85	5
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -49,7 +49,7 @@ endsurvey
 #5	6	2.17	030	+07
 #
 #; 1 is pss cairn
-#; 2 is end of rift 
+#; 2 is end of rift
 #;4  is top of rope
 #;7 is muddy wimdow
 #;8 is happpy monday pss
@@ -59,15 +59,15 @@ endsurvey
 #6	7	4.29 	293	64
 #7	8	13.15	282	-29
 #
-#; LRUD 
+#; LRUD
 #;1 1 1 1 1
 #;2 SCROT
 #;3 SCROT
 #;4 0 0.5 5	2
 #;5 SCROT
 #;6 SCROT
-#;7 0	1.5	85	5	
-#;8 	
+#;7 0	1.5	85	5
+#;8
 #
 #*end roaring
 #

@@ -1,28 +1,29 @@
 
 survey stalemate -title "STALEMATE"
-centreline
-    team "Myles Denton" insts
-    team "Jarv M. Frost" notes
-    explo-team "Myles Denton"
-    explo-team "Jarv M. Frost"
-    date 2010.8.6
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	LASER	7.72	013	+02
-    1	2	1.83	109	+46
-    2	3	8.68	202	-03
-    3	4	4.51	171	-54
-    5	4	9.87	-	down
-    6	5	3.12	191	-18
-    LASER	0.1	0,1	2	2
-    1	1	0	2	2
-    2	0.1	0.4	1.4	2
-    3	2	0	3	3
-    4	2	1	10	0
-    5	0.3	0.3	2	10
-    6	0	0	0	0
-endcentreline
+	centreline
+		team "Myles Denton" insts
+		team "Jarvist Frost" notes
+		explo-team "Myles Denton"
+		explo-team "Jarvist Frost"
+		date 2010.8.6
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	LASER	7.72	013	+02
+		1	2	1.83	109	+46
+		2	3	8.68	202	-03
+		3	4	4.51	171	-54
+		5	4	9.87	-	down
+		6	5	3.12	191	-18
+		data dimensions station left right up down ignoreall
+		LASER	0.1	0.1	2	2
+		1	1	0	2	2
+		2	0.1	0.4	1.4	2
+		3	2	0	3	3
+		4	2	1	10	0
+		5	0.3	0.3	2	10
+		6	0	0	0	0
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -30,7 +31,7 @@ endsurvey
 #; ### Pitch below White Bishop, Korita, ending in too tight rift taking water. Needs explosive to progress.###
 #*date 2010.8.6 ; Expedition Vodna Sled 2010
 #
-#;Book: Jarv M. Frost
+#;Book: Jarvist Frost
 #;Instruments + Tape: Myles Denton
 #
 #;Data entered by Jarv on 2010-8-7

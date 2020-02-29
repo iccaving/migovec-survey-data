@@ -1,45 +1,45 @@
 
 survey korita -title "KORITA"
-centreline
-    team "Myles Denton" insts
-    team "James 'Tetley' Hooper" notes
-    explo-team "Myles Denton"
-    explo-team "James 'Tetley' Hooper"
-    date 2010.7.24
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	1.05	359	-10
-    2	3	11.60	-	down
-    4	3	4.55	227	-20
-    5	6	4.37	142	+11	# 1.5	2	5	2
-    7	6	4.05	022	-11	
-    7	8	0.87	118	+42
-    8	9	4.20	182	+34
-    10	9	5.96	316	-09
-    10	11	5.80	155	+01
-    12	11	6.38	030	-05
-    3	12	4.25	311	+00
-    4	13	11.25	167	+03
-    15	14	7.20	149	-41
-    16	15	5.95	201	+04
-    17	16	3.98	190	-21
-    17	18	3.31	065	+02
-    18	5	1.62	183	-09
-    5	1.5	2	5	2
-    6	0	1	5	2
-    7	0.5	1	5	0.5
-    8	0.0	0.5	5	0.5
-    9	2.0	0.5	5	2
-    10	0	0.5	2	2.5
-    11	0	1	2	1.5
-    12	0	0	0	0.5
-    14	4	3	15	5
-    15	0	2	6	7
-    16	0	0.5	6	2.5
-    17	0.5	0.5	5	3
-    18	1	1.5	10	2
-endcentreline
+	centreline
+		team "Myles Denton" insts
+		team "James Hooper" notes
+		explo-team "Myles Denton"
+		explo-team "James Hooper"
+		date 2010.7.24
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	1.05	359	-10
+		2	3	11.60	-	down
+		4	3	4.55	227	-20
+		5	6	4.37	142	+11	# 1.5	2	5	2
+		7	6	4.05	022	-11
+		7	8	0.87	118	+42
+		8	9	4.20	182	+34
+		10	9	5.96	316	-09
+		10	11	5.80	155	+01
+		12	11	6.38	030	-05
+		3	12	4.25	311	+00
+		4	13	11.25	167	+03
+		15	14	7.20	149	-41
+		16	15	5.95	201	+04
+		17	16	3.98	190	-21
+		17	18	3.31	065	+02
+		18	5	1.62	183	-09
+		5	1.5	2	5	2
+		6	0	1	5	2
+		7	0.5	1	5	0.5
+		8	0.0	0.5	5	0.5
+		9	2.0	0.5	5	2
+		10	0	0.5	2	2.5
+		11	0	1	2	1.5
+		12	0	0	0	0.5
+		14	4	3	15	5
+		15	0	2	6	7
+		16	0	0.5	6	2.5
+		17	0.5	0.5	5	3
+		18	1	1.5	10	2
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -47,8 +47,8 @@ endsurvey
 #; ###Tolminska Korita - below EGGSPLOSIVE###
 #*date 2010.7.24 ; Expedition Vodna Sled 2010
 #
-#;Tape / Instruments: Myles Denton 
-#;Book: James 'Tetley' Hooper
+#;Tape / Instruments: Myles Denton
+#;Book: James Hooper
 #
 #;Data entered by Jarv on 25.7.24
 #
@@ -68,7 +68,7 @@ endsurvey
 #4	3	4.55	227	-20
 #; break in survey
 #5	6	4.37	142	+11	; 1.5	2	5	2
-#7	6	4.05	022	-11	
+#7	6	4.05	022	-11
 #7	8	0.87	118	+42
 #8	9	4.20	182	+34
 #10	9	5.96	316	-09
