@@ -1,0 +1,37 @@
+
+## MASTER MAP ##
+#map m-all-e -projection extended
+#endmap
+
+centreline
+	# Entrance series
+	extend start 0@bclent2
+	extend left 13@laurel
+	extend right 2@zimmer
+	extend right 11@banzai
+	
+	# Captain K
+	extend left 13@bonus
+	extend right 22@kangaroo01
+	extend right 27@mudslump
+	extend left 8@dangermouse
+	extend right 5@greenback INLET@greenback
+	extend right 2@greenback 1@greenback
+	extend left 7@keti # invalid length reading?
+	extend left 2@kill_em_all
+	extend right 7@intravenus_de_milo
+	extend left 3@dark_tranquillity
+	
+	extend ignore 4@fools_road
+	
+	# Friendship and Beyond
+	extend left 2@candyMountain
+	extend right 11@cascade
+	extend right 9@blind
+	extend left 15@mushroom
+	extend left 22@greed
+	
+	# Below Zimmer
+	extend left 1@belowzimmer
+	
+endcentreline
