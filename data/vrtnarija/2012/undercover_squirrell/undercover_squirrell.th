@@ -1,38 +1,39 @@
 
 survey undercover_squirrell -title "Undercover Squirrell [sic]"
-centreline
-    team "Jonathan Paul Hardman" insts
-    team "Nicolas Kral" notes
-    explo-team "Jonathan Paul Hardman"
-    explo-team "Nicolas Kral"
-    date 2012.08.02
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	4.10	014	+2
-    3	2	4.13	-	up
-    4	3	2.49	325	+10
-    5	4	4.15	350	+20
-    6	5	5.27	325	+20
-    7	6	13.90	345	+18
-    8	7	9.60	010	+27
-    9	8	8.43	338	+13
-    10	9	12.23	356	+20
-    11	10	10.64	355	+40
-    12	11	8.94	015	+23
-    1	1	1	3	0
-    2	1	2	2	4
-    3	0.5	0.5	4	0
-    4	1	0	1	0
-    5	1	1	1	1
-    6	1	1	2	1
-    7	1	1	1	1
-    8	0.5	1	1	0
-    9	1	1	0.5	0
-    10	1	1.5	0	0.5
-    11	1.5	0	2	1
-    12	2	1	2	1
-endcentreline
+	centreline
+		team "Jonathan Hardman" insts
+		team "Nicolas Kral" notes
+		explo-team "Jonathan Hardman"
+		explo-team "Nicolas Kral"
+		date 2012.08.02
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	4.10	014	+2
+		3	2	4.13	-	up
+		4	3	2.49	325	+10
+		5	4	4.15	350	+20
+		6	5	5.27	325	+20
+		7	6	13.90	345	+18
+		8	7	9.60	010	+27
+		9	8	8.43	338	+13
+		10	9	12.23	356	+20
+		11	10	10.64	355	+40
+		12	11	8.94	015	+23
+		data dimensions station left right up down ignoreall
+		1	1	1	3	0
+		2	1	2	2	4
+		3	0.5	0.5	4	0
+		4	1	0	1	0
+		5	1	1	1	1
+		6	1	1	2	1
+		7	1	1	1	1
+		8	0.5	1	1	0
+		9	1	1	0.5	0
+		10	1	1.5	0	0.5
+		11	1.5	0	2	1
+		12	2	1	2	1
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -41,7 +42,7 @@ endsurvey
 #*date 2012.08.02 ; Expedition Sledi Vetra
 #
 #;Book + Tape: Nicolas Kral
-#;Instruments: Jonathan Paul Hardman
+#;Instruments: Jonathan Hardman
 #
 #;Data entered by Clewin Griffith on 2012.08.03
 #
