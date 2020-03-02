@@ -26,7 +26,7 @@ scrap_file = '''encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs -projection {projection} -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap DELETE-ME-survey-legs-{projection_short} -projection {projection} -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 {lines}
 endscrap
 
@@ -76,11 +76,11 @@ projection_short = "e" if projection == "extended" else "p"
 # Create the XVI config
 with open('xvi.thconfig', 'w+') as f:
     f.write(xvi_file.format(th_file=main_th, projection=projection, name=name))
-    
 os.system('therion xvi.thconfig')
 os.remove('xvi.thconfig')
 
 # Extract the stations from the XVI
+seen = set()
 points = []
 lines = []
 with open('xvi.xvi', 'r') as f:
@@ -92,7 +92,9 @@ with open('xvi.xvi', 'r') as f:
             x = match.groups()[0]
             y = match.groups()[1]
             station = match.groups()[2]
-            points.append(point.format(x=x, y=y, station=station))
+            if station not in seen:
+                seen.add(station)
+                points.append(point.format(x=x, y=y, station=station))
         match = re.search(
             "{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*}", line)
         if match:
