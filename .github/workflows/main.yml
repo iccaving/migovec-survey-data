@@ -58,7 +58,7 @@ jobs:
         run: python3 ./scripts/create_file_listing.py ./data/_outputs/ ./data/_outputs/listing.json
       #=============================== UPLOADS ===============================#
       - name: Upload Files
-        uses: "rhyst/automatic-releases@latest"
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           title: Build ${{ github.run_number }}
