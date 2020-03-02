@@ -1,5 +1,12 @@
 
 survey vilcon -title "Vilinska Connection to Jelly Chamber"
+
+input vilcon-e.th2
+
+map m-all-e -projection extended
+    vilcon-1e
+endmap
+
 	centreline
 		team "James Hooper" insts
 		team "Jarvist Frost" notes

@@ -1,5 +1,12 @@
 
 survey hardy -title "Hardy pitch, following pitch and rift in Gardener's World (aka BCL)"
+
+input hardy-e.th2
+
+map m-all-e -projection extended
+    hardy-1e
+endmap
+
 	centreline
 		team "M McGowan" insts
 		team "B Ogborne" insts

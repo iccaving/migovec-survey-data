@@ -5,6 +5,13 @@ survey hoover -title "Rift from oxbow near sump"
 	map m-all-p -projection plan
 		hoover-1p
 	endmap
+
+input hoover-e.th2
+
+map m-all-e -projection extended
+    hoover-1e
+endmap
+
 	centreline
 		team "Jim Evans" insts
 		team "Dave Wilson" notes

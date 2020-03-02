@@ -6,6 +6,13 @@ survey postiga -title "high level rift above leprachaun"
 		postiga-1p
 	endmap
 	
+
+input postiga-e.th2
+
+map m-all-e -projection extended
+    postiga-1e
+endmap
+
 	centreline
 		team "Pete Jurd" insts
 		team "James Hooper" notes

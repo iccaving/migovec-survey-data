@@ -7,6 +7,13 @@ survey wonderland -title "Wonderland"
 		wonderland-1p
 	endmap
 	
+
+input wonderland-e.th2
+
+map m-all-e -projection extended
+    wonderland-1e
+endmap
+
 	centreline
 		team "Andy Jurd" insts
 		team "Gergely Ambrus" notes

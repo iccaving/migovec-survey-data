@@ -14,6 +14,13 @@ survey weepeople -title "continution of leprachaun Series"
 	join weepeople-1p weepeople-2p
 	join weepeople-2p weepeople-3p
 	
+
+input weepeople-e.th2
+
+map m-all-e -projection extended
+    weepeople-1e
+endmap
+
 	centreline
 		team "Martin mcgowan" insts
 		team "Brian Cullen" notes

@@ -7,6 +7,13 @@ survey pleasurepalace -title "Pleasure Palace"
 		pleasurepalace-1p
 	endmap
 	
+
+input pleasurepalace-e.th2
+
+map m-all-e -projection extended
+    pleasurepalace-1e
+endmap
+
 	centreline
 		team "David Kirkpatrick" insts
 		team "Rhys Tyers" notes

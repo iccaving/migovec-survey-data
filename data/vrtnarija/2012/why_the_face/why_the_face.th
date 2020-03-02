@@ -1,5 +1,12 @@
 
 survey why_the_face -title "Why the face?"
+
+input why_the_face-e.th2
+
+map m-all-e -projection extended
+    why_the_face-1e
+endmap
+
 	centreline
 		team "Jonathan Hardman" insts
 		team "Nicolas Kral" notes

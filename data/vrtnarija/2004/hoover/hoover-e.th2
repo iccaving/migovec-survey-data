@@ -1,0 +1,30 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  92.46 -29.49
+  163.62 -51.22
+endline
+line survey 
+  40.36 -21.22
+  92.46 -29.49
+endline
+line survey 
+  -59.29 -9.02
+  40.36 -21.22
+endline
+line survey 
+  -59.29 -9.02
+  -163.62 51.22
+endline
+endscrap
+
+scrap hoover-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 163.62 -51.22 station -name 5
+point 92.46 -29.49 station -name 4
+point 40.36 -21.22 station -name 3
+point -59.29 -9.02 station -name 2
+point -163.62 51.22 station -name 1
+endscrap

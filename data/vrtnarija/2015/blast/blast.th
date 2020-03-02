@@ -7,6 +7,13 @@ survey blast -title "Blast!"
 		blast-1p
 	endmap
 	
+
+input blast-e.th2
+
+map m-all-e -projection extended
+    blast-1e
+endmap
+
 	centreline
 		team "Oliver Myerscough" insts
 		team "Clare Tan" notes

@@ -7,6 +7,13 @@ survey fallsrd -title "Falls rd"
 		fallsrd-1p
 	endmap
 	
+
+input fallsrd-e.th2
+
+map m-all-e -projection extended
+    fallsrd-1e
+endmap
+
 	centreline
 		team "Martin [Mc Gowan]"
 		team "Dave Wilson"

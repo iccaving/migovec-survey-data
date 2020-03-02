@@ -7,6 +7,13 @@ survey minestrone2 -title "Minestrone2"
 		minestrone2-1p
 	endmap
 	
+
+input minestrone2-e.th2
+
+map m-all-e -projection extended
+    minestrone2-1e
+endmap
+
 	centreline
 		team "Rhys Tyers" insts
 		team "Gergely Ambrus" notes

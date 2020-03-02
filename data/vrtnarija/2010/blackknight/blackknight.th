@@ -1,5 +1,12 @@
 
 survey blackknight -title "Black Knight"
+
+input blackknight-e.th2
+
+map m-all-e -projection extended
+    blackknight-1e
+endmap
+
 	centreline
 		team "Myles Denton" insts
 		team "James Hooper" notes

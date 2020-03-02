@@ -1,0 +1,27 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+endscrap
+
+scrap blackknight-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -296.45 130.83 station -name 17
+point -274.01 92.40 station -name 16
+point -201.87 -23.11 station -name 15
+point -152.89 -34.76 station -name 14
+point -117.04 -93.98 station -name 1
+point 296.45 -99.02 station -name 13
+point 250.11 -110.28 station -name 12
+point 178.24 -130.83 station -name 11
+point 168.15 -128.46 station -name 10
+point 138.38 -101.22 station -name 9
+point 82.00 -91.93 station -name 8
+point 53.16 -75.79 station -name 7
+point 4.39 -66.89 station -name 6
+point -29.23 -75.55 station -name 5
+point -75.23 -98.62 station -name 4
+point 51.93 -111.93 station -name 3
+point -58.31 -111.93 station -name 2
+endscrap

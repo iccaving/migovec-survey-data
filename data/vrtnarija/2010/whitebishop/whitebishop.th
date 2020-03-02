@@ -1,5 +1,12 @@
 
 survey whitebishop -title "White Bishop"
+
+input whitebishop-e.th2
+
+map m-all-e -projection extended
+    whitebishop-1e
+endmap
+
 	centreline
 		team "Myles Denton" insts
 		team "Jarvist Frost" notes

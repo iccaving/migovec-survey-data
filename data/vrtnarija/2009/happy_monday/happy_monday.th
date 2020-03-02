@@ -1,5 +1,12 @@
 
 survey happy_monday -title "Happy Monday"
+
+input happy_monday-e.th2
+
+map m-all-e -projection extended
+    happy_monday-1e
+endmap
+
 	centreline
 		team "Dan Greenwald" insts
 		team "Jana Carga" notes

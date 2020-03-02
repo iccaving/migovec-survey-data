@@ -6,6 +6,13 @@ survey jericho -title "Jericho"
 		jericho-1p
 	endmap
 	
+
+input jericho-e.th2
+
+map m-all-e -projection extended
+    jericho-1e
+endmap
+
 	centreline
 		team "David Kirkpatrick" insts
 		team "Rhys Tyers" notes
