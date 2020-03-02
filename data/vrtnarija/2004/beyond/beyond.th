@@ -8,6 +8,13 @@ survey beyond -title "Continuation of miles underground"
 		beyond-2p
 	endmap
 	
+
+input beyond-e.th2
+
+map m-all-e -projection extended
+    beyond-1e
+endmap
+
 	centreline
 		team "Thomas Ayles" insts
 		team "James Hooper" notes

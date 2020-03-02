@@ -7,6 +7,13 @@ survey atlantis -title "Atlantis"
 		atlantis-1p
 	endmap
 	
+
+input atlantis-e.th2
+
+map m-all-e -projection extended
+    atlantis-1e
+endmap
+
 	centreline
 		team "Rhys Tyers" insts
 		team "Gergely Ambrus" notes

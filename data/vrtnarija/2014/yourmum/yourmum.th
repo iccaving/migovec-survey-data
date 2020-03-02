@@ -1,5 +1,12 @@
 
 survey yourmum -title "Your Mum"
+
+input yourmum-e.th2
+
+map m-all-e -projection extended
+    yourmum-1e
+endmap
+
 centreline
     team "William French" insts
     team "James O'Hanlon" notes

@@ -1,5 +1,12 @@
 
 survey 2ndtimelucky -title "2nd Time Lucky"
+
+input 2ndtimelucky-e.th2
+
+map m-all-e -projection extended
+    2ndtimelucky-1e
+endmap
+
 centreline
     team "Ariadne Whitby" insts
     team "Mike Foley" notes

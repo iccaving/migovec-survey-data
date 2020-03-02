@@ -1,5 +1,12 @@
 
 survey labyrinth -title "Labrinth"
+
+input labyrinth-e.th2
+
+map m-all-e -projection extended
+    labyrinth-1e
+endmap
+
 	centreline
 		team "Saber King" insts
 		team "Oliver Myerscough" notes

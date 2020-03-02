@@ -1,0 +1,45 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -93.97 -20.67
+  -104.15 -7.36
+endline
+line survey 
+  -93.97 -20.67
+  -54.03 -22.72
+endline
+line survey 
+  -54.03 -22.72
+  -17.81 -22.72
+endline
+line survey 
+  -17.81 -22.72
+  2.83 -8.54
+endline
+line survey 
+  2.83 -8.54
+  30.19 -11.85
+endline
+line survey 
+  30.19 -11.85
+  51.53 0.28
+endline
+line survey 
+  51.53 0.28
+  104.15 22.72
+endline
+endscrap
+
+scrap squidgygoodness-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -104.15 -7.36 station -name 8
+point -93.97 -20.67 station -name 7
+point -54.03 -22.72 station -name 6
+point -17.81 -22.72 station -name 5
+point 2.83 -8.54 station -name 4
+point 30.19 -11.85 station -name 3
+point 51.53 0.28 station -name 2
+point 104.15 22.72 station -name 1
+endscrap

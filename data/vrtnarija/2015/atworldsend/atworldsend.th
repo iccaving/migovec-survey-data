@@ -7,6 +7,13 @@ survey atworldsend -title "At Worlds End"
 		atworldsend-1p
 	endmap
 	
+
+input atworldsend-e.th2
+
+map m-all-e -projection extended
+    atworldsend-1e
+endmap
+
 	centreline
 		team "Rhys Tyers" insts
 		team "Tanguy Racine" notes

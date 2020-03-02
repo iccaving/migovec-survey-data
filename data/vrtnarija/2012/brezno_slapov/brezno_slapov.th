@@ -7,6 +7,13 @@ survey brezno_slapov -title "Brezno Slapov"
 	endmap
 	
 	
+
+input brezno_slapov-e.th2
+
+map m-all-e -projection extended
+    brezno_slapov-1e
+endmap
+
 	centreline
 		team "Iztok Mozir" insts
 		team "Jana Carga" notes

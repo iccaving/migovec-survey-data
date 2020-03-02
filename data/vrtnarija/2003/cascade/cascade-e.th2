@@ -1,0 +1,185 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  69.12 -146.93
+  180.64 -129.29
+endline
+line survey 
+  180.64 -129.29
+  204.06 -122.13
+endline
+line survey 
+  204.06 -122.13
+  220.31 -115.91
+endline
+line survey 
+  220.31 -115.91
+  258.08 -94.09
+endline
+line survey 
+  309.57 -103.15
+  258.08 -94.09
+endline
+line survey 
+  309.57 -103.15
+  354.35 -106.30
+endline
+line survey 
+  354.35 -106.30
+  442.92 -104.72
+endline
+line survey 
+  442.92 -104.72
+  553.90 -64.33
+endline
+line survey 
+  165.12 -93.46
+  133.46 -88.66
+endline
+line survey 
+  210.50 -86.61
+  165.12 -93.46
+endline
+line survey 
+  210.50 -86.61
+  285.05 -85.75
+endline
+line survey 
+  323.16 -103.62
+  285.05 -85.75
+endline
+line survey 
+  323.16 -103.62
+  352.60 -104.25
+endline
+line survey 
+  352.60 -104.25
+  388.07 -102.52
+endline
+line survey 
+  442.92 -104.72
+  388.07 -102.52
+endline
+line survey 
+  -180.96 -33.31
+  -156.70 -27.80
+endline
+line survey 
+  -143.57 -45.20
+  -156.70 -27.80
+endline
+line survey 
+  -143.57 -45.20
+  -83.10 -41.34
+endline
+line survey 
+  -35.27 -81.97
+  -83.10 -41.34
+endline
+line survey 
+  15.61 -84.09
+  -35.27 -81.97
+endline
+line survey 
+  31.12 -87.95
+  15.61 -84.09
+endline
+line survey 
+  74.66 -83.70
+  31.12 -87.95
+endline
+line survey 
+  98.03 -81.42
+  74.66 -83.70
+endline
+line survey 
+  98.03 -81.42
+  133.46 -88.66
+endline
+line survey 
+  -542.36 142.99
+  -553.90 146.93
+endline
+line survey 
+  -542.36 142.99
+  -446.81 85.04
+endline
+line survey 
+  -446.81 85.04
+  -437.51 76.06
+endline
+line survey 
+  -417.91 75.83
+  -437.51 76.06
+endline
+line survey 
+  -387.44 72.91
+  -417.91 75.83
+endline
+line survey 
+  -336.16 41.81
+  -387.44 72.91
+endline
+line survey 
+  -336.16 41.81
+  -282.66 32.99
+endline
+line survey 
+  -282.66 32.99
+  -256.62 0.08
+endline
+line survey 
+  -217.43 6.69
+  -256.62 0.08
+endline
+line survey 
+  -217.43 -16.61
+  -217.43 6.69
+endline
+line survey 
+  -180.96 -33.31
+  -217.43 -16.61
+endline
+endscrap
+
+scrap cascade-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 180.64 -129.29 station -name 35
+point 69.12 -146.93 station -name 36
+point 204.06 -122.13 station -name 34
+point 220.31 -115.91 station -name 33
+point 258.08 -94.09 station -name 32
+point 309.57 -103.15 station -name 31
+point 354.35 -106.30 station -name 30
+point 442.92 -104.72 station -name 22
+point 553.90 -64.33 station -name 29
+point 133.46 -88.66 station -name 13
+point 165.12 -93.46 station -name 28
+point 210.50 -86.61 station -name 27
+point 285.05 -85.75 station -name 26
+point 323.16 -103.62 station -name 25
+point 352.60 -104.25 station -name 24
+point 388.07 -102.52 station -name 23
+point -156.70 -27.80 station -name 21
+point -180.96 -33.31 station -name 1
+point -143.57 -45.20 station -name 20
+point -83.10 -41.34 station -name 19
+point -35.27 -81.97 station -name 18
+point 15.61 -84.09 station -name 17
+point 31.12 -87.95 station -name 16
+point 74.66 -83.70 station -name 15
+point 98.03 -81.42 station -name 14
+point -553.90 146.93 station -name 12
+point -542.36 142.99 station -name 11
+point -446.81 85.04 station -name 10
+point -437.51 76.06 station -name 9
+point -417.91 75.83 station -name 8
+point -387.44 72.91 station -name 7
+point -336.16 41.81 station -name 6
+point -282.66 32.99 station -name 5
+point -256.62 0.08 station -name 4
+point -217.43 6.69 station -name 3
+point -217.43 -16.61 station -name 2
+endscrap

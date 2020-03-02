@@ -7,6 +7,13 @@ survey touchingthevoid -title "Touching The Void"
 		touchingthevoid-1p
 	endmap
 	
+
+input touchingthevoid-e.th2
+
+map m-all-e -projection extended
+    touchingthevoid-1e
+endmap
+
 	centreline
 		team "Gergely" insts
 		team "Gergely" notes

@@ -1,0 +1,50 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  58.10 116.81
+  41.36 143.58
+endline
+line survey 
+  41.36 143.58
+  26.21 130.43
+endline
+line survey 
+  26.21 111.38
+  26.21 130.43
+endline
+line survey 
+  26.21 62.09
+  26.21 111.38
+endline
+line survey 
+  26.21 62.09
+  -16.11 42.32
+endline
+line survey 
+  -26.79 -79.80
+  -16.11 42.32
+endline
+line survey 
+  -26.79 -143.58
+  -26.79 -79.80
+endline
+line survey 
+  -58.10 -136.34
+  -26.79 -143.58
+endline
+endscrap
+
+scrap itwillrain-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 41.36 143.58 station -name 8
+point 58.10 116.81 station -name 9
+point 26.21 130.43 station -name 7
+point 26.21 111.38 station -name 6
+point 26.21 62.09 station -name 5
+point -16.11 42.32 station -name 4
+point -26.79 -79.80 station -name 3
+point -26.79 -143.58 station -name 2
+point -58.10 -136.34 station -name 1
+endscrap

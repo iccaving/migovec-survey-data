@@ -1,5 +1,12 @@
 
 survey krtkovadobradela -title "KRTKOVA DOBRA DELA"
+
+input krtkovadobradela-e.th2
+
+map m-all-e -projection extended
+    krtkovadobradela-1e
+endmap
+
 centreline
     team "Tjasa" insts
     team "Unknown" notes

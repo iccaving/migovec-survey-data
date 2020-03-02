@@ -7,6 +7,13 @@ survey thirdthoughts -title "Thirdthoughts"
 		thirdthoughts-1p
 	endmap
 	
+
+input thirdthoughts-e.th2
+
+map m-all-e -projection extended
+    thirdthoughts-1e
+endmap
+
 	centreline
 		team "Pete Jurd" insts
 		team "Unkown [RV]" notes

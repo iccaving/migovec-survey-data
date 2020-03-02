@@ -1,5 +1,12 @@
 
 survey dreamsforthesoul -title "Dreams for the Soul"
+
+input dreamsforthesoul-e.th2
+
+map m-all-e -projection extended
+    dreamsforthesoul-1e
+endmap
+
 centreline
     team "Gergely Ambrus" insts
     team "Karin Rutar" notes

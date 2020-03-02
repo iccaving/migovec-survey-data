@@ -1,5 +1,12 @@
 
 survey formative -title "Formative"
+
+input formative-e.th2
+
+map m-all-e -projection extended
+    formative-1e
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes

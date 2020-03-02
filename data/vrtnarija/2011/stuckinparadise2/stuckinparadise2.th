@@ -7,6 +7,13 @@ survey stuckinparadise2 -title "Stuck in Paradise 2"
 		stuckinparadise2-1p
 	endmap
 	
+
+input stuckinparadise2-e.th2
+
+map m-all-e -projection extended
+    stuckinparadise2-1e
+endmap
+
 	centreline
 		team "Izi" insts
 		team "Gergely Ambrus" notes

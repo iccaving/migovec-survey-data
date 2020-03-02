@@ -1,5 +1,12 @@
 
 survey kokain_lab -title "Kokain Lab"
+
+input kokain_lab-e.th2
+
+map m-all-e -projection extended
+    kokain_lab-1e
+endmap
+
 centreline
     team "Erik Poncina" insts
     team "Grega Maffi" notes

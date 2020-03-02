@@ -1,5 +1,12 @@
 
 survey beetlejuice -title "Beetle Juice"
+
+input beetlejuice-e.th2
+
+map m-all-e -projection extended
+    beetlejuice-1e
+endmap
+
 centreline
     team "Sam Page" insts
     team "Tetley" notes

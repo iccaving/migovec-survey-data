@@ -1,5 +1,12 @@
 
 survey crack_in_time -title "THE CRACK IN TIME"
+
+input crack_in_time-e.th2
+
+map m-all-e -projection extended
+    crack_in_time-1e
+endmap
+
 centreline
     team "Jarvist Frost" insts
     team "Jana Carga" notes

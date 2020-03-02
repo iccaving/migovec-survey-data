@@ -1,5 +1,12 @@
 
 survey xanadont -title "Xanadont"
+
+input xanadont-e.th2
+
+map m-all-e -projection extended
+    xanadont-1e
+endmap
+
 centreline
     team "Dave Kirkpatrick" insts
     team "Rhys Tyers" notes

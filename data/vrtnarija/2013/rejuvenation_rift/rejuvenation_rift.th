@@ -1,5 +1,12 @@
 
 survey rejuvenation_rift -title "Rejuvenation Rift"
+
+input rejuvenation_rift-e.th2
+
+map m-all-e -projection extended
+    rejuvenation_rift-1e
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Clare Tan" notes

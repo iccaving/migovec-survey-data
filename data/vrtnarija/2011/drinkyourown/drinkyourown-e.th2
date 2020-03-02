@@ -1,0 +1,38 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  46.80 139.72
+  39.50 141.69
+endline
+line survey 
+  39.50 113.90
+  39.50 141.69
+endline
+line survey 
+  2.02 113.90
+  39.50 113.90
+endline
+line survey 
+  2.02 113.90
+  -7.43 113.90
+endline
+line survey 
+  -7.43 -22.80
+  -7.43 113.90
+endline
+line survey 
+  -7.43 -22.80
+  -46.80 -22.80
+endline
+line survey 
+  -46.80 -141.69
+  -46.80 -22.80
+endline
+endscrap
+
+scrap drinkyourown-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+endscrap

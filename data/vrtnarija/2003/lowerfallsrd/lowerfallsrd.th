@@ -5,6 +5,13 @@ survey lowerfallsrd -title "Lower end of Falls Road"
 	map m-all-p -projection plan
 		lowerfallsrd-1p
 	endmap
+
+input lowerfallsrd-e.th2
+
+map m-all-e -projection extended
+    lowerfallsrd-1e
+endmap
+
 	centreline
 		team "Colm Caroll" insts
 		team "Martin [Mc Gowan]" notes

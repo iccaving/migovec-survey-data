@@ -1,5 +1,12 @@
 
 survey pick_your_poison -title "Pick Your Poison"
+
+input pick_your_poison-e.th2
+
+map m-all-e -projection extended
+    pick_your_poison-1e
+endmap
+
 centreline
     team "Grega Maffi" insts
     team "Clare Tan" notes

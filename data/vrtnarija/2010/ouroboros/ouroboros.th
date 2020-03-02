@@ -1,112 +1,11 @@
-
-survey palace -title "The Palace of King Minas"
-	centreline
-		team "Dan Greenwald" insts
-		team "Iztok Mozir" notes
-		explo-team "Dan Greenwald"
-		explo-team "Iztok Mozir"
-		date 2010.7.29
-		units length meters
-		units compass clino degrees
-		data normal from to compass clino tape ignoreall
-		#;CLINO WAS READ AS PERCENT
-		#;2	1	234	-22	3.33
-		#;3	2	194	-72	8.55
-		#;4	3	192	-12	8.90
-		#;5	4	182	-51	9.73
-		#;6	5	044	-06	2.43
-		#;TO BE CONVERTED LATER
-		#;*end palace
-		#;[CG] The palace section was resurveyed by Jana and Gergely as guillotine2. This connected guillotine2.1 with palace.6, which becomes minataur.1
-	endcentreline
-endsurvey
-
-
-survey minataur -title "The Palace of King Minas"
-	centreline
-		team "Dan Greenwald" insts
-		team "Iztok Mozir" notes
-		explo-team "Dan Greenwald"
-		explo-team "Iztok Mozir"
-		date 2010.7.29
-		units length meters
-		units compass clino degrees
-		data normal from to compass clino tape ignoreall
-		1	2	034	+21	17.30
-		2	3	014	+27	24.65
-		3	4	012	+11	28.10
-		#;stn 4 is beginning of minataur rift
-		#;stn 1 is PALACE of king minas (believe pss .6)
-		data dimensions station left up right down ignoreall
-		1	0	0	0	0
-		2	1.5	15	0.5	0.3
-		3	1	10	1	0.3
-		4	0.5	15	0	1.2
-	endcentreline
-endsurvey
-
-survey the_queen_bed_chamber -title "The Palace of King Minas"
-	centreline
-		team "Dan Greenwald" insts
-		team "Iztok Mozir" notes
-		explo-team "Dan Greenwald"
-		explo-team "Iztok Mozir"
-		date 2010.7.29
-		units length meters
-		units compass clino degrees
-		data normal from to compass clino tape ignoreall
-		1	2	169	-24	7.25
-		2	3	157	-66	5.33
-		3	4	126	-12	15.03
-		4	5	071	+08	6.38
-		5	6	015	+07	15.17
-		6	7	081	+02	11.28
-		7	8	072	+19	29.00
-		data dimensions station left up right down ignoreall
-		1	2.7	20	4	1
-		2	0.0	25	0.3	3
-		3	7.0	1.5	0	2
-		4	2	0.7	6	0.2
-		5	2	4	3	0.2
-		6	0	4	6	0.6
-		7	4	3	1	0.2
-		8	0	0	0	0
-	endcentreline
-endsurvey
-
-survey palace2 -title "The Palace of King Minas"
-	centreline
-		team "Dan Greenwald" insts
-		team "Iztok Mozir" notes
-		explo-team "Dan Greenwald"
-		explo-team "Iztok Mozir"
-		date 2010.7.29
-		units length meters
-		units compass clino degrees
-		data normal from to compass clino tape ignoreall
-		1	2	105	+08	10.20
-		2	3	172	-03	11.00
-		3	4	064	+08	8.19
-		4	5	053	+47	4.87
-		5	6	088	+35	10.21
-		6	7	167	-04	16.34
-		7	8	121	-04	26.11
-		8	9	064	+30	7.43
-		9	10	174	-01	10.97
-		9	9b	069	+30	13.25 #JKP Blind climb off beginning of palace of king minos
-		#					; 9b is a cairn
-		10	11	170	+12	8.28
-		11	12	147	-14	20.65
-		12	13	172	-19	14.35
-		13	14	177	-25	12.33
-		14	15	171	+03	12.12
-		15	16	068	+02	8.34
-		16	17	177	-24	12.30
-	endcentreline
-endsurvey
-
-
 survey ouroboros -title "The Palace of King Minas"
+
+input ouroboros-e.th2
+
+map m-all-e -projection extended
+    ouroboros-1e
+endmap
+
 	centreline
 		team "Dan Greenwald" insts
 		team "Iztok Mozir" notes
@@ -141,6 +40,7 @@ survey ouroboros -title "The Palace of King Minas"
 	endcentreline
 endsurvey
 
+# Split from one file called minos.svx
 # Converted From SVX
 #;#### The Palace of King Minas ####:
 #; ###LOCATION/DESCRIPTION###
