@@ -87,7 +87,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 11@candyMountain 23@friendship
 	equate 1@candyMountain 32@highway32
 	equate 33@leprachaun 1@highway32
-	equate 33@leprachaun 12@cascade
+	equate 31@leprachaun 12@cascade
 	equate 18@leprachaun 26@weepeople
 	equate 1@gold 24@weepeople
 	equate 2@doublethink 36@cascade
@@ -313,7 +313,6 @@ survey vrtnarija -title "Vrtnarija"
 	input ./2011/2ndtimelucky/2ndtimelucky.th
 	input ./2011/krtkovadobradela/krtkovadobradela.th
 	input ./2011/roundpond/roundpond.th
-	input ./2011/yorkshire/yorkshire.th
 	input ./2011/rottenrow/rottenrow.th
 	input ./2011/letnadrugisvet/letnadrugisvet.th
 	input ./2011/drinkyourown/drinkyourown.th
@@ -338,7 +337,6 @@ survey vrtnarija -title "Vrtnarija"
 	equate 29@stagger_lee 8@soda
 	equate 10@2ndtimelucky 1@lowerpleasures
 	equate 12@lowerpleasures 19@friendship
-	equate 30@yorkshire 1@2ndtimelucky
 	equate 23@longwater 0@roundpond
 	equate 17@krtkovadobradela 1@letnadrugisvet
 	equate 6@roundpond 1@itwillrain
@@ -392,6 +390,7 @@ survey vrtnarija -title "Vrtnarija"
 	input ./2012/why_the_face/why_the_face.th
 	input ./2012/dreamsforthesoul/dreamsforthesoul.th
 	input ./2012/undercover_squirrell/undercover_squirrell.th
+	input ./2012/yorkshire/yorkshire.th
 	
 	equate 32@atlantis 1@eastlinks
 	equate 17@brezno_slapov 1@atlantis
@@ -419,6 +418,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@perfidia 15@republica
 	equate 18@perfidia 7@mad_cow
 	equate 1@ride_the_lightning 11@worm
+	equate 30@yorkshire 1@2ndtimelucky
 	
 	join atlantis-1p@atlantis eastlinks-1p@eastlinks
 	join brezno_slapov-1p@brezno_slapov atlantis-1p@atlantis
