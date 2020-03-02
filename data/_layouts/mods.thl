@@ -22,3 +22,22 @@ endlayout
 layout colour-by-depth
 	colour map-fg depth
 endlayout
+
+# Show centreline and stations
+
+layout show-centreline
+	code metapost
+		def l_survey_cave (expr P) =
+			T:=identity;
+			pair zz[];
+			pickup PenC;
+			for t = 0 upto length P - 1:
+			zz1 := point t of P;
+			zz2 := point t+1 of P;
+			draw zz1 -- zz2 withcolor (0.5,0.3,0.3);
+			endfor;
+		enddef;
+	endcode
+	symbol-show line survey
+	symbol-show point station
+endlayout
