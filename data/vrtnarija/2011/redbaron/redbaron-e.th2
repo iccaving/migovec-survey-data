@@ -1,0 +1,55 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -92.11 -3.94
+  -177.16 -38.27
+endline
+line survey 
+  -60.00 11.02
+  -92.11 -3.94
+endline
+line survey 
+  -60.00 11.02
+  -169.10 38.27
+endline
+line survey 
+  31.62 20.63
+  -60.00 11.02
+endline
+line survey 
+  31.62 20.63
+  -44.16 -3.94
+endline
+line survey 
+  31.62 20.63
+  56.68 13.46
+endline
+line survey 
+  56.68 13.46
+  133.51 -11.50
+endline
+line survey 
+  133.51 -11.50
+  177.16 -21.57
+endline
+line survey 
+  177.16 -21.57
+  133.96 -30.71
+endline
+endscrap
+
+scrap redbaron-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -177.16 -38.27 station -name 10
+point -92.11 -3.94 station -name 9
+point -60.00 11.02 station -name 7
+point -169.10 38.27 station -name 8
+point 31.62 20.63 station -name 5
+point -44.16 -3.94 station -name 6
+point 56.68 13.46 station -name 4
+point 133.51 -11.50 station -name 3
+point 177.16 -21.57 station -name 2
+point 133.96 -30.71 station -name 1
+endscrap

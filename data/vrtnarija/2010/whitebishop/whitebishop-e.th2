@@ -1,0 +1,21 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+endscrap
+
+scrap whitebishop-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 84.82 -59.96 station -name 11
+point 38.05 -59.09 station -name 10
+point 32.33 -42.56 station -name 9
+point -12.94 -42.56 station -name 8
+point -32.14 -23.98 station -name 7
+point -63.86 -22.87 station -name 6
+point -113.46 -33.43 station -name 5
+point -113.46 46.42 station -name 4
+point -133.39 38.39 station -name 3
+point -143.18 37.36 station -name 2
+point -143.18 65.08 station -name 1
+endscrap

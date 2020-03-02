@@ -1,5 +1,12 @@
 
 survey mudstone -title "MUD STONE SQUEEZE"
+
+input mudstone-e.th2
+
+map m-all-e -projection extended
+    mudstone-1e
+endmap
+
 centreline
     team "Gergely Ambrus###" insts
     team "Nicolas Kral###" notes

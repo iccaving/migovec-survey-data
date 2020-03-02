@@ -1,5 +1,12 @@
 
 survey euphrates2 -title "Euphrates"
+
+input euphrates2-e.th2
+
+map m-all-e -projection extended
+    euphrates2-1e
+endmap
+
 centreline
     team "Jonny Hardman" insts
     team "Kate Smith" notes

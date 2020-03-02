@@ -7,6 +7,13 @@ survey losthopes -title "Lost Hopes"
 		losthopes-1p
 	endmap
 	
+
+input losthopes-e.th2
+
+map m-all-e -projection extended
+    losthopes-1e
+endmap
+
 	centreline
 		team "Tharatorn Supasiti" insts
 		team "Nicolas Kral" notes

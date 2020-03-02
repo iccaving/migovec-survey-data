@@ -1,5 +1,12 @@
 
 survey rottenrow -title "Rotten Row"
+
+input rottenrow-e.th2
+
+map m-all-e -projection extended
+    rottenrow-1e
+endmap
+
 centreline
     team "Clare Tan" insts
     team "JMF" notes

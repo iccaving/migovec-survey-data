@@ -1,0 +1,70 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  203.20 32.99
+  281.49 39.84
+endline
+line survey 
+  165.85 34.88
+  203.20 32.99
+endline
+line survey 
+  111.96 19.45
+  165.85 34.88
+endline
+line survey 
+  27.25 12.05
+  111.96 19.45
+endline
+line survey 
+  -59.22 -7.87
+  27.25 12.05
+endline
+line survey 
+  -93.00 -10.24
+  -59.22 -7.87
+endline
+line survey 
+  -139.37 -10.24
+  -93.00 -10.24
+endline
+line survey 
+  -192.83 -11.18
+  -139.37 -10.24
+endline
+line survey 
+  -219.86 -16.93
+  -192.83 -11.18
+endline
+line survey 
+  -236.43 -19.61
+  -219.86 -16.93
+endline
+line survey 
+  -256.03 -22.68
+  -236.43 -19.61
+endline
+line survey 
+  -281.49 -39.84
+  -256.03 -22.68
+endline
+endscrap
+
+scrap invictus-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 281.49 39.84 station -name 13
+point 203.20 32.99 station -name 12
+point 165.85 34.88 station -name 11
+point 111.96 19.45 station -name 10
+point 27.25 12.05 station -name 9
+point -59.22 -7.87 station -name 8
+point -93.00 -10.24 station -name 7
+point -139.37 -10.24 station -name 6
+point -192.83 -11.18 station -name 5
+point -219.86 -16.93 station -name 4
+point -236.43 -19.61 station -name 3
+point -256.03 -22.68 station -name 2
+point -281.49 -39.84 station -name 1
+endscrap

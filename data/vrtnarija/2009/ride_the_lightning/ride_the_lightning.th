@@ -1,5 +1,12 @@
 
 survey ride_the_lightning -title "Ride the Lightning"
+
+input ride_the_lightning-e.th2
+
+map m-all-e -projection extended
+    ride_the_lightning-1e
+endmap
+
 	centreline
 		team "Eric Boncina" insts
 		team "Iztok Mozir" notes

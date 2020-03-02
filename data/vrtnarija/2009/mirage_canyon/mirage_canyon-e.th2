@@ -1,0 +1,35 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  69.21 102.01
+  107.91 129.41
+endline
+line survey 
+  41.25 85.79
+  69.21 102.01
+endline
+line survey 
+  -6.44 72.72
+  41.25 85.79
+endline
+line survey 
+  -41.98 -24.69
+  -6.44 72.72
+endline
+line survey 
+  -107.91 -129.41
+  -41.98 -24.69
+endline
+endscrap
+
+scrap mirage_canyon-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 107.91 129.41 station -name 6
+point 69.21 102.01 station -name 5
+point 41.25 85.79 station -name 4
+point -6.44 72.72 station -name 3
+point -41.98 -24.69 station -name 2
+point -107.91 -129.41 station -name 1
+endscrap

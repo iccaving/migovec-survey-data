@@ -1,5 +1,12 @@
 
 survey undercover_squirrell -title "Undercover Squirrell [sic]"
+
+input undercover_squirrell-e.th2
+
+map m-all-e -projection extended
+    undercover_squirrell-1e
+endmap
+
 	centreline
 		team "Jonathan Hardman" insts
 		team "Nicolas Kral" notes

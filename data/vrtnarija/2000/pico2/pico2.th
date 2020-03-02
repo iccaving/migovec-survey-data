@@ -15,6 +15,13 @@ survey pico2 -title "Tera and Nova pitches"
 		pico2-p1
 	endmap
 	
+
+input pico2-e.th2
+
+map m-all-e -projection extended
+    pico2-1e
+endmap
+
 	centreline
 		date 2000.07.28
 		explo-date 2000.07.28

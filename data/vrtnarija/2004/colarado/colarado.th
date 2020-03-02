@@ -7,6 +7,13 @@ survey colarado -title "From miles underground to far northern sump"
 		colarado-2p
 	endmap
 	
+
+input colarado-e.th2
+
+map m-all-e -projection extended
+    colarado-1e
+endmap
+
 	centreline
 		team "Michael Rogerson" insts
 		team "Jan Evetts" notes

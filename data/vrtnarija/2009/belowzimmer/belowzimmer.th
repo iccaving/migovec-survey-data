@@ -1,5 +1,12 @@
 
 survey belowzimmer -title "Name Below Zimmer"
+
+input belowzimmer-e.th2
+
+map m-all-e -projection extended
+    belowzimmer-1e
+endmap
+
 	centreline
 		team "Dave Wilson" insts
 		team "Jana Carga" notes

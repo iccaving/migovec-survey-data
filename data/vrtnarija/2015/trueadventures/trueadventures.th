@@ -1,5 +1,12 @@
 
 survey trueadventures -title "TrueAdventures"
+
+input trueadventures-e.th2
+
+map m-all-e -projection extended
+    trueadventures-1e
+endmap
+
 centreline
     team "Connor Roe" insts
     team "Jarvist Frost" notes

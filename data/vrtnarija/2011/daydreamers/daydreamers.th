@@ -1,5 +1,12 @@
 
 survey daydreamers -title "Daydreamers"
+
+input daydreamers-e.th2
+
+map m-all-e -projection extended
+    daydreamers-1e
+endmap
+
 centreline
     team "Clare Tan" insts
     team "James Hooper" notes

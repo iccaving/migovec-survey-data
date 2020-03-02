@@ -6,6 +6,13 @@ survey nitro -title "Strap on the Nitro Aven (this replaces madeupleg)"
 		nitro-1p
 	endmap
 	
+
+input nitro-e.th2
+
+map m-all-e -projection extended
+    nitro-1e
+endmap
+
 	centreline
 		team "Thomas [P. Ayles]" insts
 		team "James Hooper" notes

@@ -20,6 +20,13 @@ survey tesselator -title "Tesselator"
 		tesselator-p3
 	endmap
 	
+
+input tesselator-e.th2
+
+map m-all-e -projection extended
+    tesselator-1e
+endmap
+
 	centreline
 		
 		date 2000.07.31

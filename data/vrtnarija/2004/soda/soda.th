@@ -14,6 +14,13 @@ survey soda -title "Soda stream, just of 2004 camp"
 	join soda-2p soda-1p
 	join soda-3p soda-2p
 	
+
+input soda-e.th2
+
+map m-all-e -projection extended
+    soda-1e
+endmap
+
 	centreline
 		team "Richard Venn" insts
 		team "James Hooper" notes

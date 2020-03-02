@@ -1,5 +1,12 @@
 
 survey rural_underground -title "Rural Underground"
+
+input rural_underground-e.th2
+
+map m-all-e -projection extended
+    rural_underground-1e
+endmap
+
 	centreline
 		team "Aljosa Boncina" insts
 		team "Nejc Maver" notes

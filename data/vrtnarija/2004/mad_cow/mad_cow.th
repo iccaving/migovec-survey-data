@@ -7,6 +7,13 @@ survey mad_cow -title "Mad Cow - Resurvey of area by Andy and Rik"
 		mad_cow-2p
 		mad_cow-1p
 	endmap
+
+input mad_cow-e.th2
+
+map m-all-e -projection extended
+    mad_cow-1e
+endmap
+
 	centreline
 		
 		team "Andy Jurd" insts

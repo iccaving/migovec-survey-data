@@ -1,0 +1,45 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -109.40 -88.19
+  -128.60 -101.10
+endline
+line survey 
+  -11.01 29.13
+  -109.40 -88.19
+endline
+line survey 
+  -11.01 29.13
+  27.71 48.82
+endline
+line survey 
+  27.71 48.82
+  49.05 78.19
+endline
+line survey 
+  79.05 91.57
+  49.05 78.19
+endline
+line survey 
+  79.05 91.57
+  128.13 101.10
+endline
+line survey 
+  79.05 91.57
+  128.60 85.43
+endline
+endscrap
+
+scrap hotpants-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -128.60 -101.10 station -name 8
+point -109.40 -88.19 station -name 7
+point -11.01 29.13 station -name 6
+point 27.71 48.82 station -name 5
+point 49.05 78.19 station -name 4
+point 79.05 91.57 station -name 1
+point 128.13 101.10 station -name 3
+point 128.60 85.43 station -name 2
+endscrap

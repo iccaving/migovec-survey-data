@@ -30,6 +30,13 @@ survey pico -title "Pico pitch"
 	endmap
 	
 	
+
+input pico-e.th2
+
+map m-all-e -projection extended
+    pico-1e
+endmap
+
 	centreline
 		date 2000.07.28
 		explo-date 2000.07.28

@@ -9,6 +9,13 @@ survey gold -title "continuation of leprachaun Series"
 	
 	join gold-1p gold-2p
 	
+
+input gold-e.th2
+
+map m-all-e -projection extended
+    gold-1e
+endmap
+
 	centreline
 		team "Dave Wilson" insts
 		team "Brian Cullen" notes

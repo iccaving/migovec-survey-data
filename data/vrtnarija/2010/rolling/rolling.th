@@ -7,6 +7,13 @@ survey rolling -title "Rolling Stones"
 		rolling-1p
 	endmap
 	
+
+input rolling-e.th2
+
+map m-all-e -projection extended
+    rolling-1e
+endmap
+
 	centreline
 		team "Gergely Ambrus" notes
 		team "Nicolas Kral" insts

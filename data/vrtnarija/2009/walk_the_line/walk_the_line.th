@@ -1,5 +1,12 @@
 
 survey walk_the_line -title "Walk the Line:"
+
+input walk_the_line-e.th2
+
+map m-all-e -projection extended
+    walk_the_line-1e
+endmap
+
 centreline
     team "Tim Osborne" insts
     team "Tharatorn Supasiti" notes

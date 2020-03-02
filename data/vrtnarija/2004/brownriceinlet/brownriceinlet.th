@@ -6,6 +6,13 @@ survey brownriceinlet -title "Brown Rice Inlet connects with cascade.4"
 	map m-all-p -projection plan
 		brownriceinlet-1p
 	endmap
+
+input brownriceinlet-e.th2
+
+map m-all-e -projection extended
+    brownriceinlet-1e
+endmap
+
 	centreline
 		team "Jim Evans" tape
 		team "Dave Wilson" notes

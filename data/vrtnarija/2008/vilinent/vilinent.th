@@ -1,5 +1,12 @@
 
 survey vilinent -title "Vilinska Jama entrance"
+
+input vilinent-e.th2
+
+map m-all-e -projection extended
+    vilinent-1e
+endmap
+
 	centreline
 		team "Dan Greenwald" insts
 		team "James Hooper" notes

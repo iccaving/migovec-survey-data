@@ -1,5 +1,12 @@
 
 survey clapton -title "Clapton"
+
+input clapton-e.th2
+
+map m-all-e -projection extended
+    clapton-1e
+endmap
+
 centreline
     team "Andrej Fratnik/Gergely Ambrus?" insts
     team "Andreja Fratnik" notes

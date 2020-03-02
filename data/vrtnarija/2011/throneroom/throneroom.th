@@ -7,6 +7,13 @@ survey throneroom -title "The Throne Room"
 		throneroom-1p
 	endmap
 	
+
+input throneroom-e.th2
+
+map m-all-e -projection extended
+    throneroom-1e
+endmap
+
 	centreline
 		team "Clare Tan" insts
 		team "JMF" notes

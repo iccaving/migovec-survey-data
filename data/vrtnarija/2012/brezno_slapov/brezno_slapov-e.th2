@@ -1,0 +1,27 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+endscrap
+
+scrap brezno_slapov-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -365.79 113.82 station -name 16
+point -383.96 114.76 station -name 17
+point -302.88 119.33 station -name 15
+point -223.95 109.65 station -name 14
+point -176.66 124.06 station -name 13
+point -55.74 96.18 station -name 12
+point 29.68 56.34 station -name 11
+point 46.43 50.59 station -name 10
+point 69.44 52.17 station -name 9
+point 102.57 48.70 station -name 8
+point 121.43 33.98 station -name 7
+point 146.94 18.62 station -name 6
+point 158.40 7.91 station -name 5
+point 173.97 0.35 station -name 4
+point 250.37 -18.70 station -name 3
+point 265.73 -28.31 station -name 2
+point 383.96 -124.06 station -name 1
+endscrap

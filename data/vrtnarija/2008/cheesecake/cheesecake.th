@@ -1,5 +1,12 @@
 
 survey cheesecake -title "Cheesecake:"
+
+input cheesecake-e.th2
+
+map m-all-e -projection extended
+    cheesecake-1e
+endmap
+
 	centreline
 		team "Jarvist Frost / James Kirkpatrick" insts
 		team "Unknown" notes

@@ -1,5 +1,12 @@
 
 survey xanadu -title "Xanadu"
+
+input xanadu-e.th2
+
+map m-all-e -projection extended
+    xanadu-1e
+endmap
+
 	centreline
 		team "Rhys Tyers" insts
 		team "James Hooper" notes

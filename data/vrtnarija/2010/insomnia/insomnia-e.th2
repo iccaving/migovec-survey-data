@@ -1,0 +1,25 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+endscrap
+
+scrap insomnia-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -234.76 227.72 station -name 15
+point -215.61 230.08 station -name 14
+point -178.45 184.17 station -name 13
+point -155.63 190.31 station -name 12
+point -108.47 154.72 station -name 11
+point -108.47 -95.67 station -name 10
+point -63.59 -95.67 station -name 9
+point -24.31 -104.02 station -name 8
+point 4.55 -126.54 station -name 7
+point 26.13 -137.09 station -name 6
+point 38.68 -140.39 station -name 5
+point 96.30 -173.70 station -name 4
+point 150.80 -200.31 station -name 3
+point 198.54 -230.08 station -name 2
+point 234.76 -230.08 station -name 1
+endscrap

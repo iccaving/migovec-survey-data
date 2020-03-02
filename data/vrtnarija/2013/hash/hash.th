@@ -7,6 +7,13 @@ survey hash -title "Hash"
 		hash-1p
 	endmap
 	
+
+input hash-e.th2
+
+map m-all-e -projection extended
+    hash-1e
+endmap
+
 	centreline
 		team "Rhys Tyers" insts
 		team "Clare Tan" notes

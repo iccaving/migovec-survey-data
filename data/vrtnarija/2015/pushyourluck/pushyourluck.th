@@ -1,5 +1,12 @@
 
 survey pushyourluck -title "Push Your Luck"
+
+input pushyourluck-e.th2
+
+map m-all-e -projection extended
+    pushyourluck-1e
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes

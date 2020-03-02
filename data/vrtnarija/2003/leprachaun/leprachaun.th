@@ -8,6 +8,13 @@ survey leprachaun -title "leprachaun Series"
 		leprachaun-2p
 		leprachaun-3p
 	endmap
+
+input leprachaun-e.th2
+
+map m-all-e -projection extended
+    leprachaun-1e
+endmap
+
 	centreline
 		team "Colm Carroll" insts
 		team "Brian Cullen" notes

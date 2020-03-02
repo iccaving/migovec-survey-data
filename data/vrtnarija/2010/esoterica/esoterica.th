@@ -1,5 +1,12 @@
 
 survey esoterica -title "ESOTERICA"
+
+input esoterica-e.th2
+
+map m-all-e -projection extended
+    esoterica-1e
+endmap
+
 centreline
     team "James###" insts
     team "Jan###" notes

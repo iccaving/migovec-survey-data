@@ -1,0 +1,95 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -722.32 -47.64
+  -689.27 -58.98
+endline
+line survey 
+  -689.27 -58.98
+  -602.73 -74.57
+endline
+line survey 
+  -602.73 -74.57
+  -545.33 -68.50
+endline
+line survey 
+  -545.33 -68.50
+  -482.64 -59.69
+endline
+line survey 
+  -482.64 -59.69
+  -414.66 -48.98
+endline
+line survey 
+  -414.66 -48.98
+  -372.41 -51.89
+endline
+line survey 
+  -372.41 -51.89
+  -317.39 -32.99
+endline
+line survey 
+  -317.39 -32.99
+  -291.17 -32.52
+endline
+line survey 
+  -291.17 -32.52
+  -213.08 -18.74
+endline
+line survey 
+  -213.08 -18.74
+  -96.22 14.80
+endline
+line survey 
+  -96.22 14.80
+  -15.67 26.06
+endline
+line survey 
+  -15.67 26.06
+  110.39 30.47
+endline
+line survey 
+  110.39 30.47
+  298.56 40.39
+endline
+line survey 
+  298.56 40.39
+  370.74 44.17
+endline
+line survey 
+  370.74 44.17
+  414.29 33.31
+endline
+line survey 
+  414.29 33.31
+  648.48 74.57
+endline
+line survey 
+  648.48 74.57
+  722.32 73.31
+endline
+endscrap
+
+scrap meridianway-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -689.27 -58.98 station -name 17
+point -722.32 -47.64 station -name 18
+point -602.73 -74.57 station -name 16
+point -545.33 -68.50 station -name 15
+point -482.64 -59.69 station -name 14
+point -414.66 -48.98 station -name 13
+point -372.41 -51.89 station -name 12
+point -317.39 -32.99 station -name 11
+point -291.17 -32.52 station -name 10
+point -213.08 -18.74 station -name 9
+point -96.22 14.80 station -name 8
+point -15.67 26.06 station -name 7
+point 110.39 30.47 station -name 6
+point 298.56 40.39 station -name 5
+point 370.74 44.17 station -name 4
+point 414.29 33.31 station -name 3
+point 648.48 74.57 station -name 2
+point 722.32 73.31 station -name 1
+endscrap

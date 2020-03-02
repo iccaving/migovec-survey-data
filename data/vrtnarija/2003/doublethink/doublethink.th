@@ -6,6 +6,13 @@ survey doublethink -title "continuation of passages going down from Playboy junc
 	map m-all-p -projection plan
 		doublethink-1p
 	endmap
+
+input doublethink-e.th2
+
+map m-all-e -projection extended
+    doublethink-1e
+endmap
+
 	centreline
 		team "Tim Wright" notes
 		team "Jan Evetts" insts

@@ -1,5 +1,12 @@
 
 survey cuckoos_nest -title "Cuckoo's Nest"
+
+input cuckoos_nest-e.th2
+
+map m-all-e -projection extended
+    cuckoos_nest-1e
+endmap
+
 centreline
     team "Iztok Mozir" insts
     team "Clare Tan" notes

@@ -1,5 +1,12 @@
 
 survey wet_hammer -title "Wet Hammer Passage:"
+
+input wet_hammer-e.th2
+
+map m-all-e -projection extended
+    wet_hammer-1e
+endmap
+
 centreline
     team "Dan Greenwald" insts
     team "James Kirkpatrick" notes

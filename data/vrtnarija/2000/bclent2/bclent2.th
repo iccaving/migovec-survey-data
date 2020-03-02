@@ -25,6 +25,13 @@ survey bclent2 -title "Vrtnarija entrance"
 	join bclent2-p1 bclent2-p2
 	join bclent2-p2 bclent2-p3
 	
+
+input bclent2-e.th2
+
+map m-all-e -projection extended
+    bclent2-1e
+endmap
+
 	centreline
 		cs EPSG:3794
 		fix 0  404766 124502 1799
