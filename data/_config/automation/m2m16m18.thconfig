@@ -21,21 +21,21 @@ input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-m2m16m18-p@m2m16m18
+select m-all-p@m2m16m18
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview_plan_SLO or ENG
 layout plan
 	copy base-p
-	copy colour-by-depth
+	#copy colour-by-depth
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
 	code tex-map
 	\framethickness=0.5mm
 	\def\maplayout{
-	\legendbox{-5}{99}{NW}{\size[26]\the\cavename}
-	\legendbox{-5}{95}{NW}{\size[10]\the\comment}
-	\legendbox{5}{70}{NW}{\scalebar}
-	\legendbox{5}{65}{NW}{\northarrow}
+	\legendbox{100}{180}{NE}{\size[26]\the\cavename}
+	\legendbox{0}{170}{NW}{\size[10]\the\comment}
+	\legendbox{30}{170}{NW}{\scalebar}
+	\legendbox{30}{150}{NW}{\northarrow}
 	}
 endlayout
 
