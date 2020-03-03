@@ -512,11 +512,10 @@ endcode
 #_____________________________________________________________|
 
  ## survey lines and stations
- symbol-assign point station AUT
+ #symbol-assign point station AUT
  symbol-assign line survey MY
- symbol-assign point station MY
+ #symbol-assign point station MY
  symbol-hide point passage-height
- symbol-colour point station-name [70 0 0]
  
  ## water and ice
  symbol-assign area ice MY

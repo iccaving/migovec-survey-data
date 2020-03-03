@@ -13,7 +13,7 @@ encoding  utf-8
 
 scrap The_Aqueduct-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
-point 1764.33 5849.47 station -name "18"
+point 1764.33 5849.47 station -name "18" 
 
 point 1675.56 5299.92 station -name "17"
 
@@ -1570,7 +1570,7 @@ point 1170.78 1448.72 station -name "7"
 
 point 1278.59 1802.46 station -name "8"
 
-point 246.53 -1694.99 station -name "0"
+point 246.53 -1694.99 station -name "0" -subtype fixed
 
 point 389.49 -1614.20 station -name "1"
 
