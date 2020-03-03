@@ -15,6 +15,7 @@ survey the_aqueduct -title "The_Aqueduct"
 		explo-team "Alexander Seaton"
 		
 		# declination 0.00 degrees
+		mark 0 8 29 37 fixed # set these stations as PSS
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
