@@ -3,11 +3,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap DELETE-ME-survey-legs -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-
-endscrap
-
-
 scrap monatip6-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
 line pit -outline out
