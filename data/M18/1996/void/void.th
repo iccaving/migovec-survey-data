@@ -1,10 +1,18 @@
 
-survey void -title "System Migovec"
+survey void -title "Void"
+
+input void-p.th2
+
+map m-all-p -projection plan
+    void-1p
+    void-2p
+endmap
+
 centreline
     team "Sarah Wingrove" insts
-    team "James "Tetley" Hooper" notes
+    team "James Hooper" notes
     explo-team "Sarah Wingrove"
-    explo-team "James "Tetley" Hooper"
+    explo-team "James Hooper"
     date 1996.07.24
     units length meters
     units compass clino degrees
