@@ -1,11 +1,16 @@
-
 survey gallery -title "NCB"
 
-#input gallery-p.th2
+input "gallery-p.th2"
 
-#map mgallery-p -projection plan
-#    gallery-1p
-#endmap
+map m-all-p -projection plan
+    ncb-2p
+    ncb-3p
+    ncb-1p
+    ncb-5p
+    ncb-6p
+    ncb-4p
+    ncb-7p
+endmap
 
 centreline
     #team "Unknown" insts
@@ -110,13 +115,6 @@ centreline
     23	0	4	1	1
     24	4	1	1	0
 endcentreline
-
-
-input gallery-p.th2
-
-map mgallery-p -projection plan
-    gallery-1p
-endmap
 
 centreline
 
