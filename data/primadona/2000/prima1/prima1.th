@@ -67,6 +67,9 @@ survey prima1 -title "Primadona entrance series"
 		team "Thomas Ayles"  insts
 		team "James Hooper" notes
 		# declination 0.00 degrees
+
+		mark 1 8 19 35 fixed
+		
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
