@@ -236,7 +236,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@mirage_canyon 11@wet_hammer
 	equate 6@mirage_canyon 1@dark_tranquillity
 	equate 15@metal_aven 6@mudslump
-	equate 11@mad_cow 12@republica
+	#equate 11@mad_cow 12@republica # wrong....
 	equate 3@fools_road 5@fallsrd
 	
 	###__________2010____________###
@@ -558,7 +558,7 @@ survey vrtnarija -title "Vrtnarija"
 	input ./2015/isdead/isdead.th
 	input ./2015/dinnerservice/dinnerservice.th
 	# input ./2015/shithole/shithole.th # No tie in
-	input ./2015/void/void.th
+	input ./2015/void2/void2.th
 	input ./2015/formative/formative.th
 	input ./2015/agartha/agartha.th
 	
@@ -574,10 +574,10 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@sicsempertyrannis 15@davyjoneslocker
 	equate 9@atworldsend 1@davyjoneslocker
 	equate 5@formative 11@beyond
-	equate 1@void 1@nitro
+	equate 1@void2 1@nitro
 	equate 1@yourmum 3@isdead
-	equate 1@dinnerservice 6@void
-	equate 38@andreabocelli 6@void
+	equate 1@dinnerservice 6@void2
+	equate 38@andreabocelli 6@void2
 	equate 1@trueadventures 1@colarado
 	equate 30@agartha 39@pushyourluck
 	equate 1@pushyourluck 3@cuckoos_nest
