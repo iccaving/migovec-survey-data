@@ -8,6 +8,7 @@ survey pov
 		pov-e1
 		break
 		pov-e2
+		pov-e3
 	endmap
 	
 	map mpovp_1 -projection plan
@@ -55,17 +56,17 @@ survey pov
 		
 		units length meters
 		units compass clino degrees
-		extend right
+		extend left
 		1  2  12.4  43  12  #tocka 1 enaka tocki ttt 14
-		extend right
+		extend left
 		2  3  7.7  65  0
-		extend right
+		extend left
 		3  4  7.3  343  2
-		extend right
+		extend left
 		4  5  9.75  313  -6
-		extend right
+		extend left
 		5  6  15.2  26  10
-		extend right
+		extend left
 		6  7  8.4  22  -14
 		extend right
 		7  8  1.2  358  -7
@@ -105,6 +106,7 @@ survey pov
 		24  25  3.3  291.5  21  #tocka 23 je PSS
 		extend left
 		25  26  4.85  317  0
+		extend ignore 26
 		extend left
 		26  27  2.2  355  44  # zacetek puscice za mangiare
 		flags duplicate
