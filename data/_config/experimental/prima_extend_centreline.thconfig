@@ -1,0 +1,15 @@
+source ../../primadona/primadona.th
+
+select primadona
+
+layout local
+	debug all
+	scale 1 500
+	#symbol-hide group all
+	symbol-show line survey
+	symbol-show point station
+	symbol-assign line survey AUT
+	symbol-assign point station AUT
+endlayout
+
+export map -projection extended -o ../../_outputs/primadona_centreline_extended.pdf -layout-debug station-names -layout local
