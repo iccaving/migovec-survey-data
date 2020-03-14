@@ -20,7 +20,7 @@ input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-vrtnarija-p@vrtnarija -map-level 0
+select m-all-p@vrtnarija -map-level 0
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1
@@ -36,6 +36,7 @@ layout plan
 	\legendbox{5}{70}{NW}{\scalebar}
 	\legendbox{5}{65}{NW}{\northarrow}
 	}
+	scale 1 2000
 endlayout
 language fr
 export map -projection plan -o ../../_outputs/map/vrtnarija_plan_SLO.pdf -layout plan
