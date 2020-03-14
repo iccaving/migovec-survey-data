@@ -1,19 +1,19 @@
 
 survey wonderland -title "Wonderland"
 	
+	input wonderland-e.th2
+	
+	map m-all-e -projection extended
+		wonderland-1e
+	endmap
+	
 	input wonderland-p.th2
 	
 	map m-all-p -projection plan
 		wonderland-1p
+		wonderland-2p
 	endmap
 	
-
-input wonderland-e.th2
-
-map m-all-e -projection extended
-    wonderland-1e
-endmap
-
 	centreline
 		team "Andy Jurd" insts
 		team "Gergely Ambrus" notes

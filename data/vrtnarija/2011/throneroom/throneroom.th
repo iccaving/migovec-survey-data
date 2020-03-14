@@ -9,12 +9,13 @@ survey throneroom -title "The Throne Room"
 	endmap
 	
 	join throneroom-1p throneroom-2p
-input throneroom-e.th2
-
-map m-all-e -projection extended
-    throneroom-1e
-endmap
-
+	
+	input throneroom-e.th2
+	
+	map m-all-e -projection extended
+		throneroom-1e
+	endmap
+	
 	centreline
 		team "Clare Tan" insts
 		team "JMF" notes

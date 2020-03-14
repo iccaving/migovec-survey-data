@@ -294,9 +294,11 @@ survey vrtnarija -title "Vrtnarija"
 	equate 15@republica 15@insomnia
 	equate 8@roaring 0@happy_monday
 	
-	join wonderland-1p@wonderland zimmer-p1@zimmer
+	# join wonderland-1p@wonderland zimmer-p1@zimmer
 	join surprise-1p@surprise rolling-1p@rolling
 	join kamikaze-1p@kamikaze surprise-1p@surprise
+	join consort-1p@consort wonderland-2p@wonderland
+	join rolling-1p@rolling wonderland-2p@wonderland
 	join consort-2p@consort palace2-1p@palace2
 	join palace2-1p@palace2 ouroboros-1p@ouroboros
 	join minataur-1p@minataur palace2-1p@palace2
@@ -363,8 +365,8 @@ survey vrtnarija -title "Vrtnarija"
 	
 	join redbaron-1p@redbaron kamikaze-1p@kamikaze
 	join throneroom-1p@throneroom redbaron-1p@redbaron
-	join serenade-1p@serenade throneroom-1p@throneroom
-	join amazinggrace-1p@amazinggrace serenade-1p@serenade
+	join line@serenade:0 east@amazinggrace:end
+	join amaz@throneroom:end west@amazinggrace:0
 	join grace2-1p@grace2 amazinggrace-1p@amazinggrace
 	join magicdragon-1p@magicdragon grace2-1p@grace2
 	join stuckinparadise-1p@stuckinparadise magicdragon-1p@magicdragon
