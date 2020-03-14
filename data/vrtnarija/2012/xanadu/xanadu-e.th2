@@ -1,0 +1,114 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  0.88 -31.50
+  40.45 -23.86
+endline
+line survey 
+  40.45 -23.86
+  65.84 -41.50
+endline
+line survey 
+  65.84 -41.50
+  86.55 -41.50
+endline
+line survey 
+  152.69 -41.73
+  86.55 -41.50
+endline
+line survey 
+  0.88 -31.50
+  -63.42 -55.12
+endline
+line survey 
+  -96.59 -5.28
+  -73.97 -12.36
+endline
+line survey 
+  -96.59 -5.28
+  -127.05 20.47
+endline
+line survey 
+  -133.58 35.12
+  -127.05 20.47
+endline
+line survey 
+  -152.69 71.26
+  -133.58 35.12
+endline
+line survey 
+  -60.15 87.01
+  -152.69 71.26
+endline
+line survey 
+  -73.97 -55.04
+  -73.97 -12.36
+endline
+line survey 
+  -73.97 -55.04
+  -63.42 -55.12
+endline
+line survey 
+  -63.42 -83.46
+  -63.42 -55.12
+endline
+line survey 
+  -63.42 -76.06
+  -63.42 -83.46
+endline
+line survey 
+  -63.42 -76.06
+  -103.11 -78.50
+endline
+line survey 
+  -55.81 -77.48
+  -103.11 -78.50
+endline
+line survey 
+  -55.81 -77.48
+  -41.41 -86.93
+endline
+line survey 
+  -41.41 -86.93
+  -18.12 -86.22
+endline
+line survey 
+  -18.12 -86.22
+  40.34 -83.46
+endline
+line survey 
+  -12.37 -87.01
+  33.85 -77.17
+endline
+line survey 
+  -12.37 -87.01
+  -63.42 -83.46
+endline
+endscrap
+
+scrap xanadu-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 40.45 -23.86 station -name 21
+point 0.88 -31.50 station -name 17
+point 65.84 -41.50 station -name 20
+point 86.55 -41.50 station -name 19
+point 152.69 -41.73 station -name 18
+point -63.42 -55.12 station -name 9
+point -73.97 -12.36 station -name 11
+point -96.59 -5.28 station -name 16
+point -127.05 20.47 station -name 15
+point -133.58 35.12 station -name 14
+point -152.69 71.26 station -name 13
+point -60.15 87.01 station -name 12
+point -73.97 -55.04 station -name 10
+point -63.42 -83.46 station -name 1
+point -63.42 -76.06 station -name 8
+point -103.11 -78.50 station -name 7
+point -55.81 -77.48 station -name 6
+point -41.41 -86.93 station -name 5
+point -18.12 -86.22 station -name 4
+point 33.85 -77.17 station -name 3
+point -12.37 -87.01 station -name 2
+endscrap

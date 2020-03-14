@@ -1,0 +1,65 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  101.59 93.78
+  80.90 59.37
+endline
+line survey 
+  58.66 121.65
+  101.59 93.78
+endline
+line survey 
+  43.78 121.89
+  58.66 121.65
+endline
+line survey 
+  35.96 96.30
+  43.78 121.89
+endline
+line survey 
+  10.72 50.79
+  35.96 96.30
+endline
+line survey 
+  -21.83 71.89
+  10.72 50.79
+endline
+line survey 
+  -39.94 71.57
+  -21.83 71.89
+endline
+line survey 
+  -66.78 34.65
+  -39.94 71.57
+endline
+line survey 
+  -66.78 -92.91
+  -66.78 34.65
+endline
+line survey 
+  -77.80 -92.52
+  -66.78 -92.91
+endline
+line survey 
+  -101.59 -121.89
+  -77.80 -92.52
+endline
+endscrap
+
+scrap letnadrugisvet-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 80.90 59.37 station -name 12
+point 101.59 93.78 station -name 11
+point 58.66 121.65 station -name 10
+point 43.78 121.89 station -name 9
+point 35.96 96.30 station -name 8
+point 10.72 50.79 station -name 7
+point -21.83 71.89 station -name 6
+point -39.94 71.57 station -name 5
+point -66.78 34.65 station -name 4
+point -66.78 -92.91 station -name 3
+point -77.80 -92.52 station -name 2
+point -101.59 -121.89 station -name 1
+endscrap

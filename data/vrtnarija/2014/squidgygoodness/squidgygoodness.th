@@ -7,6 +7,13 @@ survey squidgygoodness -title "Squidgy Goodness"
 		squidgygoodness-1p
 	endmap
 	
+
+input squidgygoodness-e.th2
+
+map m-all-e -projection extended
+    squidgygoodness-1e
+endmap
+
 	centreline
 		team "Saber King" insts
 		team "Sam Page" notes

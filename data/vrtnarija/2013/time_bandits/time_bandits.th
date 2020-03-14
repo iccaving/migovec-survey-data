@@ -1,5 +1,12 @@
 
 survey time_bandits -title "Time Bandits"
+
+input time_bandits-e.th2
+
+map m-all-e -projection extended
+    time_bandits-1e
+endmap
+
 centreline
     team "James Hooper" insts
     team "Unknown" notes

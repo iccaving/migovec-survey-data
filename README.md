@@ -26,10 +26,12 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
       - [Script](#script)
       - [Manually](#manually)
     - [Converting the old drawn survey into Therion format](#converting-the-old-drawn-survey-into-therion-format)
-  - [Additional tips](#additional-tips)
+  - [Additional steps](#additional-steps)
     - [Connecting caves into systems](#connecting-caves-into-systems)
   - [How to contribute?](#how-to-contribute)
   - [Final considerations](#final-considerations)
+  - [Tips](#tips)
+    - [How do I show the centerline of undrawn maps?](#how-do-i-show-the-centerline-of-undrawn-maps)
 
 ## Downloads
 
@@ -471,7 +473,7 @@ Uncomment the relevant equates and inputs in `{cave}.th`, and compile `{cave}.th
 
 You should get an output with your new drawing in.
 
-## Additional tips
+## Additional steps
 
 ### Connecting caves into systems
 
@@ -506,3 +508,40 @@ endsurvey
 ## Final considerations
 
 This survey data was collected between the year 1974-2019 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
+
+## Tips
+
+### How do I show the centerline of undrawn maps?
+
+Therion by default shows only drawn maps, even when you have told it to disaply centerlines and stations (which obviously exist for undrawn passages). To show these undrawn centerlines you must include the survey name in a map and then select that map. For example my config might look like this:
+
+```
+# Input the data and layouts as normal
+source "../vrtnarija.th"
+
+input "../../_layouts/base-p.thl"
+input "../../_layouts/mods.thl"
+
+# Create a source block to define a special map
+source
+  # This map includes the full vrtnarija map (m-all-p) as well as the survey
+  # itself (vrtnarija)
+  map include-centerline -projection plan
+    vrtnarija
+    m-all-p@vrtnarija
+  endmap
+endsource
+# Select the new map
+select include-centerline
+
+# Setup the layout with the show-centerline mod
+layout plan
+	copy show-centreline
+	map-header 0 0 off
+	scale 1 2000
+endlayout
+
+# And export as normal
+language en
+export map -projection plan -o ../_outputs/plan_ENG.pdf -layout plan
+```

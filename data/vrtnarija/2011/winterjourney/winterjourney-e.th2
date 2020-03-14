@@ -1,0 +1,75 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -200.79 54.72
+  -228.49 63.70
+endline
+line survey 
+  -159.47 31.81
+  -200.79 54.72
+endline
+line survey 
+  -144.44 12.60
+  -159.47 31.81
+endline
+line survey 
+  -98.05 -7.09
+  -144.44 12.60
+endline
+line survey 
+  -75.84 -32.68
+  -98.05 -7.09
+endline
+line survey 
+  -49.52 -53.94
+  -75.84 -32.68
+endline
+line survey 
+  -49.52 -53.94
+  -36.15 -63.70
+endline
+line survey 
+  8.88 -30.39
+  -49.52 -53.94
+endline
+line survey 
+  40.77 -35.43
+  8.88 -30.39
+endline
+line survey 
+  85.21 -29.13
+  40.77 -35.43
+endline
+line survey 
+  146.96 -52.83
+  85.21 -29.13
+endline
+line survey 
+  192.83 -36.14
+  146.96 -52.83
+endline
+line survey 
+  228.49 -12.99
+  192.83 -36.14
+endline
+endscrap
+
+scrap winterjourney-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -228.49 63.70 station -name 14
+point -200.79 54.72 station -name 13
+point -159.47 31.81 station -name 12
+point -144.44 12.60 station -name 11
+point -98.05 -7.09 station -name 10
+point -75.84 -32.68 station -name 9
+point -49.52 -53.94 station -name 7
+point -36.15 -63.70 station -name 8
+point 8.88 -30.39 station -name 6
+point 40.77 -35.43 station -name 5
+point 85.21 -29.13 station -name 4
+point 146.96 -52.83 station -name 3
+point 192.83 -36.14 station -name 2
+point 228.49 -12.99 station -name 1
+endscrap

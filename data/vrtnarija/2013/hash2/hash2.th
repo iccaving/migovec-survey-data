@@ -7,6 +7,13 @@ survey hash2 -title "Hash2"
 		hash2-1p
 	endmap
 	
+
+input hash2-e.th2
+
+map m-all-e -projection extended
+    hash2-1e
+endmap
+
 	centreline
 		team "Sam Page" insts
 		team "Tetley" notes

@@ -1,5 +1,12 @@
 
 survey metal_aven -title "Metal	Aven:"
+
+input metal_aven-e.th2
+
+map m-all-e -projection extended
+    metal_aven-1e
+endmap
+
 centreline
     team "Iztok	Mozir" insts
     team "James	Kirkpatrick" notes

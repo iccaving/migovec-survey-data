@@ -1,5 +1,12 @@
 
 survey olympicrift -title "olympic rift, on from captain kangaroo"
+
+input olympicrift-e.th2
+
+map m-all-e -projection extended
+    olympicrift-1e
+endmap
+
 centreline
     team "Marcin Kowalski" insts
     team "Rik Venn" notes

@@ -12,26 +12,112 @@ centreline
 	
 	# Captain K
 	extend left 13@bonus
-	extend right 22@kangaroo01
+	extend right 21@kangaroo01
 	extend right 27@mudslump
 	extend left 8@dangermouse
 	extend right 5@greenback INLET@greenback
 	extend right 2@greenback 1@greenback
-	extend left 7@keti # invalid length reading?
+	extend left 7@keti
 	extend left 2@kill_em_all
-	extend right 7@intravenus_de_milo
+	extend right 6@intravenus_de_milo
 	extend left 3@dark_tranquillity
+	extend right 8@roaring
 	
+	# Snap off bottom of Captain K
 	extend ignore 4@fools_road
 	
 	# Friendship and Beyond
-	extend left 2@candyMountain
+	extend left 6@fallsrd
+	extend left 1@candyMountain
+	extend left 31@leprachaun
+	extend left 11@cascade 12@cascade
 	extend right 11@cascade
 	extend right 9@blind
-	extend left 15@mushroom
-	extend left 22@greed
+	extend left 14@mushroom
+	extend left 21@greed
+	extend right 15@mad_cow
+	extend left 13@mad_cow
+	extend right 25@soda
+	extend left 35@soda
+	extend left 30@cascade
+	extend right 7@balamory
+	extend left 22@blind
+	extend left 15@stagger_lee
+	extend right 13@republica
+	extend right 14@insomnia
+	extend right 3@colarado
+	extend left 4@envy
+	extend right 2@pick_your_poison 4@pick_your_poison
+	extend right 4@pick_your_poison
+	extend right 23@lazarus
 	
-	# Below Zimmer
+	# Break loop between Leprechaun - Envy - Greed - Cascade - Leprechaun
+	extend ignore 3@envy
+	# Break loop between Big Rock - High 32 - Soda - Stagger - Big Rock
+	extend ignore 2@stagger_lee
+	# Break loop between Big Rock - Friend - Xanadu - Soda - High 32 - Big Rock
+	
+	
+	# Yorkshire
+	extend left 4@lowerpleasures
+	extend right 6@2ndtimelucky
+	
+	#Xanadu/Cuckoo's Nest
+	extend left 12@xanadu 13@xanadu
+	extend left 8@xanadu 7@xanadu
+	extend left 27@rejuvenation_rift
+	extend left 12@time_bandits
+	extend right 16@rejuvenation_rift
+	extend left 5@euphrates
+	extend right 2@euphrates
+	extend left 9@hydrophobia
+	
+	# Snap off Gravity/Soda join so main passage follows High32
+	extend ignore 3@gravity
+	
+	# Below Zimmer / Korita
+	extend right 3@belowzimmer 1@belowzimmer
 	extend left 1@belowzimmer
+	extend right 7@eggsplosive
+	extend left 4@apuntoofar1
+	
+	# Snap off bottom of Korita
+	extend ignore carbide@crack_in_time
+	
+	# Cheetah and beyond
+	extend right 28@kamikaze
+	extend right 13@wonderland 12@wonderland
+	extend left 12@wonderland
+	extend right 3@wonderland
+	extend left 7@rolling
+	extend left 3@redbaron
+	extend right 5@stuckinparadise
+	extend right 7@hotpants
+	extend left 10@peepshow
+	extend right 6@peepshow
+	extend left 2@peepshow
+	extend right 13@why_the_face
+	
+	# Below Stuck In Paradise
+	extend left 21@kneekiller
+	extend right 5@bravenewworld
+	extend left 17@meridianway
+	extend left 15@emptyquarter
+	
+	# Follow Blast rather than Jericho
+	extend ignore 10@jericho
+	
+	# # Prince Consort and beyong
+	extend right 23@ouroboros
+	extend left 2@palace2
+	extend left 9b@palace2
+	extend left 16@povodni_moz
+	extend right 8@krtkovadobradela
+	extend left 0@krtekinorel
+	extend right 1@herojtelemarkal1
+	extend right 25@milkyway
+	extend right 12@milkyway 13@milkyway
+	extend right 3@dreamsforthesoul
+	extend left 1@dreamsforthesoul
 	
 endcentreline

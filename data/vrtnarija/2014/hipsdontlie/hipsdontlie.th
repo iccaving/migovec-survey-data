@@ -1,5 +1,12 @@
 
 survey hipsdontlie -title "Hips Don't Lie"
+
+input hipsdontlie-e.th2
+
+map m-all-e -projection extended
+    hipsdontlie-1e
+endmap
+
 centreline
     team "Sarah Gian" insts
     team "Rhys Tyers" notes

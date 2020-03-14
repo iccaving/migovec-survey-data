@@ -1,5 +1,12 @@
 
 survey scrotty -title "Scrotty - the continuation of captain kangaroo from Bonus chamber"
+
+input scrotty-e.th2
+
+map m-all-e -projection extended
+    scrotty-1e
+endmap
+
 	centreline
 		team "Clewin Griffith " insts
 		team "Jo King" notes

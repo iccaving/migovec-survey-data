@@ -7,6 +7,13 @@ survey hash3 -title "Hash 3"
 		hash3-1p
 	endmap
 	
+
+input hash3-e.th2
+
+map m-all-e -projection extended
+    hash3-1e
+endmap
+
 	centreline
 		team "Rhys Tyers" insts
 		team "Clare Tan" notes

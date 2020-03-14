@@ -1,0 +1,80 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -192.51 31.81
+  -207.43 32.83
+endline
+line survey 
+  -158.78 18.19
+  -192.51 31.81
+endline
+line survey 
+  -158.78 18.19
+  -144.44 15.67
+endline
+line survey 
+  -125.12 20.87
+  -144.44 15.67
+endline
+line survey 
+  -108.86 5.12
+  -125.12 20.87
+endline
+line survey 
+  -68.61 0.24
+  -108.86 5.12
+endline
+line survey 
+  -39.95 0.24
+  -68.61 0.24
+endline
+line survey 
+  -25.86 0.24
+  -39.95 0.24
+endline
+line survey 
+  -14.43 7.64
+  -25.86 0.24
+endline
+line survey 
+  8.77 1.42
+  -14.43 7.64
+endline
+line survey 
+  50.03 -11.18
+  8.77 1.42
+endline
+line survey 
+  99.45 -15.51
+  50.03 -11.18
+endline
+line survey 
+  146.63 -13.07
+  99.45 -15.51
+endline
+line survey 
+  207.43 -32.83
+  146.63 -13.07
+endline
+endscrap
+
+scrap davyjoneslocker-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -207.43 32.83 station -name 15
+point -192.51 31.81 station -name 14
+point -158.78 18.19 station -name 13
+point -144.44 15.67 station -name 12
+point -125.12 20.87 station -name 11
+point -108.86 5.12 station -name 10
+point -68.61 0.24 station -name 9
+point -39.95 0.24 station -name 8
+point -25.86 0.24 station -name 7
+point -14.43 7.64 station -name 6
+point 8.77 1.42 station -name 5
+point 50.03 -11.18 station -name 4
+point 99.45 -15.51 station -name 3
+point 146.63 -13.07 station -name 2
+point 207.43 -32.83 station -name 1
+endscrap

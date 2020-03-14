@@ -1,0 +1,14 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+endscrap
+
+scrap minataur-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 258.65 89.57 station -name 4
+point 41.46 47.36 station -name 3
+point -131.48 -40.75 station -name 2
+point -258.65 -89.57 station -name 1
+endscrap

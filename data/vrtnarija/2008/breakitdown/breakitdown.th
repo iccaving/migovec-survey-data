@@ -1,5 +1,12 @@
 
 survey breakitdown -title "Vilinska Jama entrance"
+
+input breakitdown-e.th2
+
+map m-all-e -projection extended
+    breakitdown-1e
+endmap
+
 	centreline
 		team "Dan Greenwald" insts
 		team "James Hooper" notes

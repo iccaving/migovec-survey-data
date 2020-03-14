@@ -7,6 +7,13 @@ survey judge -title "Judge dred, off Jelly Chamber in GW"
 		judge-1p
 	endmap
 	
+
+input judge-e.th2
+
+map m-all-e -projection extended
+    judge-1e
+endmap
+
 	centreline
 		team "Adrian Hooper" insts
 		team "Martin [Mc Gowan]" notes

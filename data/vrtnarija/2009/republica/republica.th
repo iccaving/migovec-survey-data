@@ -1,5 +1,12 @@
 
 survey republica -title "Republica Palma de Coco"
+
+input republica-e.th2
+
+map m-all-e -projection extended
+    republica-1e
+endmap
+
 	centreline
 		team "Samo Rutar" insts
 		team "James Hooper" notes

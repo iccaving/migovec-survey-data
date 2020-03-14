@@ -1,12 +1,16 @@
 
 survey serenade -title "Serenade"
+	input serenade-e.th2
+	
+	map m-all-e -projection extended
+		serenade-1e
+	endmap
 	
 	input serenade-p.th2
 	
 	map m-all-p -projection plan
 		serenade-1p
 	endmap
-	
 	
 	centreline
 		team "Jan Evetts" insts

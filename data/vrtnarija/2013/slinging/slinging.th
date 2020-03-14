@@ -1,5 +1,12 @@
 
 survey slinging -title "DATA"
+
+input slinging-e.th2
+
+map m-all-e -projection extended
+    slinging-1e
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Oliver Myerscough" notes

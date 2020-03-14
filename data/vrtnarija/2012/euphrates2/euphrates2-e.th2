@@ -1,0 +1,25 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  36.62 -0.24
+  8.38 2.20
+endline
+line survey 
+  -15.18 0.55
+  8.38 2.20
+endline
+line survey 
+  -36.62 -2.20
+  -15.18 0.55
+endline
+endscrap
+
+scrap euphrates2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 8.38 2.20 station -name 3
+point 36.62 -0.24 station -name 4
+point -15.18 0.55 station -name 2
+point -36.62 -2.20 station -name 1
+endscrap

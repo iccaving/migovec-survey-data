@@ -1,5 +1,18 @@
 
 survey serpentine -title "SERPENTINE"
+	
+	input serpentine-e.th2
+	
+	map m-all-e -projection extended
+		serpentine-1e
+	endmap
+	
+	input serpentine-p.th2
+	
+	map m-all-p -projection plan
+		serpentine-1p
+	endmap
+	
 	centreline
 		team "Jarvist Frost" insts
 		team "Mike Foley" notes

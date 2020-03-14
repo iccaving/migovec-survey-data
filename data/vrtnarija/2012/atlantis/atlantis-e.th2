@@ -1,0 +1,165 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -1566.15 145.39
+  -1546.92 148.78
+endline
+line survey 
+  -1546.92 148.78
+  -1514.94 161.77
+endline
+line survey 
+  -1514.94 161.77
+  -1483.21 168.46
+endline
+line survey 
+  -1483.21 168.46
+  -1441.26 171.38
+endline
+line survey 
+  -1441.26 171.38
+  -1383.66 169.41
+endline
+line survey 
+  -1383.66 169.41
+  -1225.48 188.86
+endline
+line survey 
+  -1225.48 188.86
+  -1151.32 155.79
+endline
+line survey 
+  -1151.32 155.79
+  -1042.29 128.62
+endline
+line survey 
+  -1042.29 128.62
+  -847.04 101.14
+endline
+line survey 
+  -847.04 101.14
+  -774.15 97.36
+endline
+line survey 
+  -774.15 97.36
+  -665.68 89.80
+endline
+line survey 
+  -665.68 89.80
+  -577.01 118.62
+endline
+line survey 
+  -577.01 118.62
+  -508.18 125.79
+endline
+line survey 
+  -508.18 125.79
+  -304.87 75.16
+endline
+line survey 
+  -304.87 75.16
+  -206.17 43.03
+endline
+line survey 
+  -206.17 43.03
+  -114.87 20.28
+endline
+line survey 
+  -114.87 20.28
+  -43.50 22.80
+endline
+line survey 
+  -43.50 22.80
+  16.81 35.63
+endline
+line survey 
+  16.81 35.63
+  102.99 40.12
+endline
+line survey 
+  102.99 40.12
+  192.67 12.72
+endline
+line survey 
+  192.67 12.72
+  244.09 6.42
+endline
+line survey 
+  244.09 6.42
+  310.97 13.43
+endline
+line survey 
+  310.97 13.43
+  420.18 13.43
+endline
+line survey 
+  420.18 13.43
+  653.93 -7.05
+endline
+line survey 
+  653.93 -7.05
+  766.70 -18.86
+endline
+line survey 
+  766.70 -18.86
+  908.31 -36.26
+endline
+line survey 
+  908.31 -36.26
+  1069.22 -64.61
+endline
+line survey 
+  1069.22 -64.61
+  1188.50 -98.86
+endline
+line survey 
+  1188.50 -98.86
+  1327.92 -118.46
+endline
+line survey 
+  1327.92 -118.46
+  1438.76 -152.32
+endline
+line survey 
+  1438.76 -152.32
+  1566.15 -188.86
+endline
+endscrap
+
+scrap atlantis-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -1546.92 148.78 station -name 31
+point -1566.15 145.39 station -name 32
+point -1514.94 161.77 station -name 30
+point -1483.21 168.46 station -name 29
+point -1441.26 171.38 station -name 28
+point -1383.66 169.41 station -name 27
+point -1225.48 188.86 station -name 26
+point -1151.32 155.79 station -name 25
+point -1042.29 128.62 station -name 24
+point -847.04 101.14 station -name 23
+point -774.15 97.36 station -name 22
+point -665.68 89.80 station -name 21
+point -577.01 118.62 station -name 20
+point -508.18 125.79 station -name 19
+point -304.87 75.16 station -name 18
+point -206.17 43.03 station -name 17
+point -114.87 20.28 station -name 16
+point -43.50 22.80 station -name 15
+point 16.81 35.63 station -name 14
+point 102.99 40.12 station -name 13
+point 192.67 12.72 station -name 12
+point 244.09 6.42 station -name 11
+point 310.97 13.43 station -name 10
+point 420.18 13.43 station -name 9
+point 653.93 -7.05 station -name 8
+point 766.70 -18.86 station -name 7
+point 908.31 -36.26 station -name 6
+point 1069.22 -64.61 station -name 5
+point 1188.50 -98.86 station -name 4
+point 1327.92 -118.46 station -name 3
+point 1438.76 -152.32 station -name 2
+point 1566.15 -188.86 station -name 1
+endscrap

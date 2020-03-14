@@ -98,10 +98,10 @@ line floor-step
 endline
 
 area water
-  l46-378--204
+  l46-378-204
 endarea
 
-line border -id l46-378--204 -close on
+line border -id l46-378-204 -close on
   375.0 -191.0
   336.5 -211.0
   336.5 -211.0 326.5 -218.0 335.0 -221.5
@@ -136,10 +136,10 @@ line wall -id s1_l6
 endline
 
 area clay
-  l35-452--137
+  l35-452-137
 endarea
 
-line border -id l35-452--137 -close on -subtype invisible
+line border -id l35-452-137 -close on -subtype invisible
   487.0 -199.0
   452.0 -139.0
   286.0 -255.0
@@ -190,7 +190,7 @@ endscrap
 
 scrap the_stilep_2 -scale [326.0 -735.0 530.0 -733.0 0.0 0.0 14 0.0 m]
 
-line wall -close off
+line wall -outline in
   304.0 -191.0
   304.0 -191.0 300.0 -207.0 295.0 -207.0
   290.0 -207.0 273.0 -207.0 273.0 -207.0

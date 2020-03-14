@@ -7,6 +7,13 @@ survey euphrates -title "Euphrates"
 		euphrates-1p
 	endmap
 	
+
+input euphrates-e.th2
+
+map m-all-e -projection extended
+    euphrates-1e
+endmap
+
 	centreline
 		team "Kate Smith" insts
 		team "Clare Tan" notes

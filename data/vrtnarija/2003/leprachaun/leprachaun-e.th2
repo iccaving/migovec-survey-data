@@ -1,0 +1,170 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  747.11 154.69
+  692.66 143.19
+endline
+line survey 
+  666.81 92.48
+  692.66 143.19
+endline
+line survey 
+  641.57 95.47
+  666.81 92.48
+endline
+line survey 
+  641.57 95.47
+  568.44 89.65
+endline
+line survey 
+  568.44 89.65
+  514.80 99.65
+endline
+line survey 
+  514.80 99.65
+  454.71 83.03
+endline
+line survey 
+  454.71 83.03
+  412.62 104.21
+endline
+line survey 
+  412.62 104.21
+  367.41 77.68
+endline
+line survey 
+  367.41 77.68
+  358.15 76.10
+endline
+line survey 
+  358.15 31.30
+  358.15 76.10
+endline
+line survey 
+  358.15 31.30
+  318.23 27.52
+endline
+line survey 
+  318.23 27.52
+  303.38 25.55
+endline
+line survey 
+  303.38 25.55
+  262.05 26.02
+endline
+line survey 
+  262.05 26.02
+  241.23 31.85
+endline
+line survey 
+  232.34 32.09
+  241.23 31.85
+endline
+line survey 
+  -747.11 -154.69
+  -710.12 -142.40
+endline
+line survey 
+  -710.12 -142.40
+  -673.72 -130.35
+endline
+line survey 
+  -673.72 -130.35
+  -617.03 -129.88
+endline
+line survey 
+  -617.03 -129.88
+  -505.89 -88.07
+endline
+line survey 
+  -505.89 -88.07
+  -420.02 -65.79
+endline
+line survey 
+  -420.02 -65.79
+  -349.63 -13.98
+endline
+line survey 
+  -349.63 -13.98
+  -209.96 33.66
+endline
+line survey 
+  -209.96 33.66
+  -113.62 58.86
+endline
+line survey 
+  -113.62 58.86
+  -78.57 52.87
+endline
+line survey 
+  -78.57 52.87
+  -59.09 33.66
+endline
+line survey 
+  -59.09 33.66
+  -14.45 29.25
+endline
+line survey 
+  -14.45 29.25
+  27.36 24.37
+endline
+line survey 
+  27.36 24.37
+  50.93 28.31
+endline
+line survey 
+  50.93 28.31
+  112.96 39.72
+endline
+line survey 
+  112.96 39.72
+  155.73 26.97
+endline
+line survey 
+  155.73 26.97
+  195.08 28.54
+endline
+line survey 
+  195.08 28.54
+  232.34 32.09
+endline
+endscrap
+
+scrap leprachaun-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 692.66 143.19 station -name 32
+point 747.11 154.69 station -name 33
+point 666.81 92.48 station -name 31
+point 641.57 95.47 station -name 30
+point 568.44 89.65 station -name 29
+point 514.80 99.65 station -name 28
+point 454.71 83.03 station -name 27
+point 412.62 104.21 station -name 26
+point 367.41 77.68 station -name 25
+point 358.15 76.10 station -name 24
+point 358.15 31.30 station -name 23
+point 318.23 27.52 station -name 22
+point 303.38 25.55 station -name 21
+point 262.05 26.02 station -name 20
+point 241.23 31.85 station -name 19
+point 232.34 32.09 station -name 1
+point -710.12 -142.40 station -name 17
+point -747.11 -154.69 station -name 18
+point -673.72 -130.35 station -name 16
+point -617.03 -129.88 station -name 15
+point -505.89 -88.07 station -name 14
+point -420.02 -65.79 station -name 13
+point -349.63 -13.98 station -name 12
+point -209.96 33.66 station -name 11
+point -113.62 58.86 station -name 10
+point -78.57 52.87 station -name 9
+point -59.09 33.66 station -name 8
+point -14.45 29.25 station -name 7
+point 27.36 24.37 station -name 6
+point 50.93 28.31 station -name 5
+point 112.96 39.72 station -name 4
+point 155.73 26.97 station -name 3
+point 195.08 28.54 station -name 2
+endscrap

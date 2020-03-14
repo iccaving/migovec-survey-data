@@ -7,6 +7,13 @@ survey surprise -title "Surprise"
 		surprise-1p
 	endmap
 	
+
+input surprise-e.th2
+
+map m-all-e -projection extended
+    surprise-1e
+endmap
+
 	centreline
 		team "Gergely Ambrus" insts
 		team "Nicolas Kral" notes
