@@ -1,5 +1,12 @@
 
 survey dinnerservice -title "Void"
+
+input dinnerservice-e.th2
+
+map m-all-e -projection extended
+    dinnerservice-1e
+endmap
+
 	centreline
 		team "Connor Roe" insts
 		team "Jarvist Frost" notes

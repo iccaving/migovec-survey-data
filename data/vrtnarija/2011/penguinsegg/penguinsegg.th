@@ -1,5 +1,12 @@
 
 survey penguinsegg -title "Penguin's Egg"
+
+input penguinsegg-e.th2
+
+map m-all-e -projection extended
+    penguinsegg-1e
+endmap
+
 centreline
     team "Clare Tan" insts
     team "James Hooper" notes

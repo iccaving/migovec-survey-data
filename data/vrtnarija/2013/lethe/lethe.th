@@ -7,6 +7,13 @@ survey lethe -title "Lethe"
 		lethe-1p
 	endmap
 	
+
+input lethe-e.th2
+
+map m-all-e -projection extended
+    lethe-1e
+endmap
+
 	centreline
 		team "Iztok Mozir" insts
 		team "Clare Tan" notes

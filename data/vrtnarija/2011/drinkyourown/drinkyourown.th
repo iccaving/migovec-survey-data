@@ -1,5 +1,12 @@
 
 survey drinkyourown -title "Drink Your Own"
+
+input drinkyourown-e.th2
+
+map m-all-e -projection extended
+    drinkyourown-1e
+endmap
+
 	centreline
 		team "Jim Evans" insts
 		team "Jarvist Frost" notes

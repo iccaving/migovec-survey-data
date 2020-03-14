@@ -1,5 +1,12 @@
 
 survey haemertight_crawl -title "Haemertight Crawl"
+
+input haemertight_crawl-e.th2
+
+map m-all-e -projection extended
+    haemertight_crawl-1e
+endmap
+
 	centreline
 		team "Jarvist Frost" insts
 		team "James Kirkpatrick" notes

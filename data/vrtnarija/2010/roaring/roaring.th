@@ -1,5 +1,12 @@
 
 survey roaring -title "ROARING FLOOR TEASE"
+
+input roaring-e.th2
+
+map m-all-e -projection extended
+    roaring-1e
+endmap
+
 	centreline
 		team "DG" insts
 		team "James Kirkpatrick" notes

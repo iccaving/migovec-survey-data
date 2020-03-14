@@ -2,13 +2,13 @@ encoding  utf-8
 
 # Colour the latest additions red
 
-lookup explo-date
+lookup explo-date:latest
 	[1999.12.31 2018.12.31] [100 100 100] "before 2019"
 	2019.12.31 [100 50 50] "	2019 expeditions"
 endlookup
 
 layout colour-by-new
-	colour map-fg explo-date
+	colour map-fg explo-date:latest
 endlayout
 
 # Colour all passage base on date of discovery
@@ -21,4 +21,29 @@ endlayout
 
 layout colour-by-depth
 	colour map-fg depth
+endlayout
+
+# Show centreline and stations
+
+layout show-centreline
+	code metapost
+		def l_survey_cave (expr P) =
+			T:=identity;
+			pair zz[];
+			pickup PenC;
+			for t = 0 upto length P - 1:
+			zz1 := point t of P;
+			zz2 := point t+1 of P;
+			draw zz1 -- zz2 withcolor (0.5,0.3,0.3);
+			endfor;
+		enddef;
+	endcode
+	symbol-show line survey
+	symbol-show point station
+	symbol-colour point station [50 30 30]
+endlayout
+
+layout basic
+	scale 1 2000
+	min-symbol-scale M
 endlayout

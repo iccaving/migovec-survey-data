@@ -39,6 +39,13 @@ survey friendship
 	join friendship-p4 friendship-p5
 	join friendship-p5 friendship-p6
 	
+
+input friendship-e.th2
+
+map m-all-e -projection extended
+    friendship-1e
+endmap
+
 	centreline
 		date 2001.08.09
 		explo-date 2001.08.09

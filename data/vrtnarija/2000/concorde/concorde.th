@@ -6,6 +6,13 @@ survey concorde -title "Concorde pitch"
 		concorde-p1
 	endmap
 	
+
+input concorde-e.th2
+
+map m-all-e -projection extended
+    concorde-1e
+endmap
+
 	centreline
 		
 		date 2000.08.02

@@ -1,5 +1,12 @@
 
 survey agartha -title "Agartha"
+
+input agartha-e.th2
+
+map m-all-e -projection extended
+    agartha-1e
+endmap
+
 centreline
     team "Jim Evans" insts
     team "David Kirkpatrick" notes

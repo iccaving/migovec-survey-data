@@ -8,6 +8,13 @@ survey kamikaze -title "Kamikaze"
 	endmap
 	
 	
+
+input kamikaze-e.th2
+
+map m-all-e -projection extended
+    kamikaze-1e
+endmap
+
 	centreline
 		team "James Kirkpatrick" insts
 		team "Dave Wilson" notes

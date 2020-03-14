@@ -1,5 +1,12 @@
 
 survey mirage_canyon -title "Mirage Canyon:"
+
+input mirage_canyon-e.th2
+
+map m-all-e -projection extended
+    mirage_canyon-1e
+endmap
+
 centreline
     team "Dan Greenwald" insts
     team "James Kirkpatrick" notes

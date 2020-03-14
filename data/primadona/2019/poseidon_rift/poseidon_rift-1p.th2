@@ -878,7 +878,6 @@ line rock-border -close on
   395.08 2776.09
   389.61 2768.34
   400.2 2761.83
-  403.16 2772.48
 endline
 
 line rock-border -close on
@@ -886,7 +885,6 @@ line rock-border -close on
   393.62 2788.28
   386.46 2781.73
   391.88 2774.82
-  400.61 2782.91
 endline
 
 line rock-border -close on
@@ -894,7 +892,6 @@ line rock-border -close on
   382.1 2759.07
   381.01 2750.25
   389.17 2747.17
-  391.03 2760.98
 endline
 
 line wall 
@@ -914,6 +911,7 @@ line wall
 endline
 
 #point 00.0 2580.0 label -text "Poseidon<br>Rift" -align tl -scale xl
+
 line wall 
   364.29 2049.03
   372.66 2090.68 376.54 2134.99 374.64 2177.6
@@ -942,7 +940,6 @@ line rock-border -close on
   289.54 2365.3
   303.03 2349.89
   312.19 2344.43
-  340.89 2380.25
 endline
 
 line floor-step 
@@ -954,7 +951,7 @@ line floor-step
   354.43 2478.19 347.93 2470.16 344.01 2461.57
 endline
 
-line wall -close on
+line wall -close on -outline in
   340.32 2459.86
   327.08 2480.05 342.71 2507.45 347.7 2527.82
   350.98 2541.16 348.35 2562.59 362.3 2570.57
@@ -982,7 +979,6 @@ line rock-border -close on
   406.46 2631.99
   415.06 2624.11
   423.78 2623.99
-  423.54 2640.71
 endline
 
 line rock-border -close on
@@ -991,7 +987,6 @@ line rock-border -close on
   407.82 2600.19
   411.32 2590.94
   419.75 2590.3
-  423.78 2603.2
 endline
 
 line rock-border -close on
@@ -999,7 +994,6 @@ line rock-border -close on
   421.58 2563.7
   413.27 2555.48
   421.48 2543.98
-  430.7 2562.1
 endline
 
 line rock-border -close on
@@ -1009,7 +1003,6 @@ line rock-border -close on
   396.64 2526.85
   409.39 2524.35
   418.78 2525.55
-  407.06 2547.77
 endline
 
 line rock-border -close on
@@ -1018,7 +1011,6 @@ line rock-border -close on
   386.57 2575.44
   388.41 2565.32
   398.13 2558.04
-  403.96 2578.11
 endline
 
 line rock-border -close on
@@ -1027,7 +1019,6 @@ line rock-border -close on
   325.75 2698.96
   324.41 2687.78
   333.43 2681.05
-  345.65 2695.87
 endline
 
 line rock-border -close on
@@ -1037,7 +1028,6 @@ line rock-border -close on
   346.97 2740.8
   349.84 2731.96
   363.79 2723.31
-  377.5 2755.19
 endline
 
 line wall 
@@ -1060,7 +1050,6 @@ line rock-border -close on
   322.97 2076.69
   340.11 2074.77
   350.94 2074.35
-  348.82 2144.73
 endline
 
 line rock-border -close on
@@ -1069,7 +1058,6 @@ line rock-border -close on
   325.41 2039.17
   331.99 2027.55
   346.58 2024.61
-  346.33 2053.52
 endline
 
 line rock-border -close on
@@ -1078,7 +1066,6 @@ line rock-border -close on
   327.46 2243.49
   333.61 2235.69
   345.0 2231.75
-  343.88 2258.21
 endline
 
 line floor-step 
@@ -1121,13 +1108,11 @@ line rock-border -close on
   342.22 2550.36
   332.69 2552.63
   337.55 2545.97
-  342.22 2550.36
 endline
 
 line rock-border -close on
   338.48 2542.88
   336.96 2533.98
-  338.48 2542.88
 endline
 
 line rock-border -close on
@@ -1135,14 +1120,12 @@ line rock-border -close on
   310.37 2554.66
   304.71 2547.3
   316.28 2543.9
-  318.5 2553.72
 endline
 
 line rock-border -close on
   324.29 2538.4
   321.11 2526.93
   331.9 2527.64
-  324.29 2538.4
 endline
 
 line rock-border -close on
@@ -1150,21 +1133,18 @@ line rock-border -close on
   319.06 2501.4
   324.35 2493.54
   332.95 2494.78
-  325.41 2509.24
 endline
 
 line rock-border -close on
   307.85 2505.32
   301.43 2499.77
   312.12 2495.1
-  307.85 2505.32
 endline
 
 line rock-border -close on
   326.16 2486.25
   317.47 2478.67
   327.26 2473.85
-  326.16 2486.25
 endline
 
 line rock-border -close on
@@ -1172,21 +1152,18 @@ line rock-border -close on
   283.43 2510.11
   287.31 2500.87
   297.39 2500.27
-  292.53 2512.42
 endline
 
 line rock-border -close on
   297.95 2492.05
   293.91 2482.85
   298.87 2473.04
-  297.95 2492.05
 endline
 
 line rock-border -close on
   309.35 2532.6
   303.58 2527.58
   317.07 2527.6
-  309.35 2532.6
 endline
 
 line rock-border -close on
@@ -1194,7 +1171,6 @@ line rock-border -close on
   319.89 2574.46
   326.64 2567.49
   332.88 2573.16
-  330.82 2576.15
 endline
 
 line rock-border -close on
@@ -1202,7 +1178,6 @@ line rock-border -close on
   338.74 2571.22
   335.12 2563.44
   346.77 2560.81
-  348.2 2572.41
 endline
 
 line rock-border -close on
@@ -1211,7 +1186,6 @@ line rock-border -close on
   317.63 2201.44
   326.16 2196.93
   336.28 2196.18
-  335.08 2212.19
 endline
 
 line rock-border -close on
@@ -1220,7 +1194,6 @@ line rock-border -close on
   330.17 2174.94
   336.44 2166.19
   345.62 2161.06
-  351.48 2181.77
 endline
 
 line rock-border -close on
@@ -1229,7 +1202,6 @@ line rock-border -close on
   294.86 2027.6
   301.42 2018.94
   314.79 2010.29
-  315.45 2039.57
 endline
 
 point 294.14 2527.6 water-flow -orientation 125.0

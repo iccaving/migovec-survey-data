@@ -10,6 +10,13 @@ survey greed -title "Side passage off doublethink"
 	
 	join greed-1p greed-2p
 	
+
+input greed-e.th2
+
+map m-all-e -projection extended
+    greed-1e
+endmap
+
 	centreline
 		team "Thomas Ayles" insts
 		team "James Hooper" notes

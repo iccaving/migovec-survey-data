@@ -9,6 +9,13 @@ survey smash -title "Smash - Large boulder strewn passage at end of No More Pota
 	endmap
 	
 	join smash-1p smash-2p
+
+input smash-e.th2
+
+map m-all-e -projection extended
+    smash-1e
+endmap
+
 	centreline
 		team "Pippa Crosby" insts
 		team "Tom Ayles" notes

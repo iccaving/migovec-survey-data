@@ -1,5 +1,12 @@
 
 survey lowerpleasures -title "Lower Pleasures"
+
+input lowerpleasures-e.th2
+
+map m-all-e -projection extended
+    lowerpleasures-1e
+endmap
+
 centreline
     team "Gergely Ambrus" insts
     team "Jana Carga" notes

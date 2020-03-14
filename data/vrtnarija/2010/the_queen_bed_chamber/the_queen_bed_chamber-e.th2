@@ -1,0 +1,18 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+endscrap
+
+scrap the_queen_bed_chamber-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 328.98 49.49 station -name 8
+point 113.07 -24.84 station -name 7
+point 24.31 -27.91 station -name 6
+point -94.25 -42.48 station -name 5
+point -144.00 -49.49 station -name 4
+point -259.76 -24.84 station -name 3
+point -276.83 13.43 station -name 2
+point -328.98 36.65 station -name 1
+endscrap

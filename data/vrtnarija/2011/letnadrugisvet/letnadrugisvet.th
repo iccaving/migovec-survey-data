@@ -1,5 +1,12 @@
 
 survey letnadrugisvet -title "LET NA DRUGI SVET"
+
+input letnadrugisvet-e.th2
+
+map m-all-e -projection extended
+    letnadrugisvet-1e
+endmap
+
 centreline
     team "Izi" insts
     team "Unknown" notes

@@ -1,0 +1,34 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  233.34 83.11
+  186.81 68.86
+endline
+line survey 
+  151.97 158.94
+  233.34 83.11
+endline
+line survey 
+  98.68 193.58
+  151.97 158.94
+endline
+endscrap
+
+scrap wonderland-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -42.46 200.98 station -name 9
+point 98.68 193.58 station -name 10
+point -87.78 158.70 station -name 8
+point -100.91 109.72 station -name 7
+point -168.24 -75.24 station -name 5
+point 186.81 68.86 station -name 13
+point 233.34 83.11 station -name 12
+point 151.97 158.94 station -name 11
+point -199.85 -111.61 station -name 6
+point -233.34 -78.70 station -name 4
+point -171.90 -90.59 station -name 3
+point -86.51 -121.69 station -name 2
+point -171.51 -200.98 station -name 1
+endscrap

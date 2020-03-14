@@ -1,5 +1,12 @@
 
 survey curiousandcuriouser -title "Curious And Curiouser"
+
+input curiousandcuriouser-e.th2
+
+map m-all-e -projection extended
+    curiousandcuriouser-1e
+endmap
+
 centreline
     team "Tim Child" insts
     team "Rhys Tyers" notes

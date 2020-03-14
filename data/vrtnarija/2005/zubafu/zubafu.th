@@ -1,5 +1,12 @@
 
 survey zubafu -title "Zubafu - the continuation of captain kangaroo and Chinese passage"
+
+input zubafu-e.th2
+
+map m-all-e -projection extended
+    zubafu-1e
+endmap
+
 centreline
     team "Clewin Griffith " insts
     team "Jo King" notes

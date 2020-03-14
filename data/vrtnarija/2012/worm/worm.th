@@ -1,5 +1,12 @@
 
 survey worm -title "Worm pitch"
+
+input worm-e.th2
+
+map m-all-e -projection extended
+    worm-1e
+endmap
+
 	centreline
 		team "Dan Greenwald" insts
 		team "Clewin Griffith" notes

@@ -1,0 +1,165 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  637.35 -26.14
+  534.34 -19.53
+endline
+line survey 
+  516.71 -20.08
+  534.34 -19.53
+endline
+line survey 
+  478.97 -23.86
+  516.71 -20.08
+endline
+line survey 
+  435.50 -23.54
+  478.97 -23.86
+endline
+line survey 
+  400.33 -22.20
+  435.50 -23.54
+endline
+line survey 
+  386.79 -22.36
+  400.33 -22.20
+endline
+line survey 
+  357.71 -15.43
+  386.79 -22.36
+endline
+line survey 
+  332.49 -17.95
+  357.71 -15.43
+endline
+line survey 
+  276.82 -14.72
+  332.49 -17.95
+endline
+line survey 
+  233.68 -15.20
+  276.82 -14.72
+endline
+line survey 
+  233.68 -15.20
+  211.74 -5.28
+endline
+line survey 
+  5.90 12.05
+  -33.94 24.96
+endline
+line survey 
+  5.90 12.05
+  44.68 26.14
+endline
+line survey 
+  84.45 15.51
+  44.68 26.14
+endline
+line survey 
+  84.45 15.51
+  119.19 9.37
+endline
+line survey 
+  211.74 -5.28
+  119.19 9.37
+endline
+line survey 
+  211.74 -5.28
+  163.12 -8.43
+endline
+line survey 
+  99.65 -16.85
+  163.12 -8.43
+endline
+line survey 
+  99.65 -16.85
+  51.31 -17.40
+endline
+line survey 
+  -134.89 -4.57
+  51.31 -17.40
+endline
+line survey 
+  -134.89 -4.57
+  -188.30 -17.80
+endline
+line survey 
+  -188.30 -17.80
+  -217.82 -18.19
+endline
+line survey 
+  -285.98 -24.02
+  -217.82 -18.19
+endline
+line survey 
+  -285.98 -24.02
+  -308.83 -18.43
+endline
+line survey 
+  -308.83 -18.43
+  -387.64 -16.69
+endline
+line survey 
+  -387.64 -16.69
+  -436.62 -19.13
+endline
+line survey 
+  -510.71 -17.48
+  -436.62 -19.13
+endline
+line survey 
+  -510.71 -17.48
+  -530.13 -25.04
+endline
+line survey 
+  -546.25 -25.83
+  -530.13 -25.04
+endline
+line survey 
+  -546.25 -25.83
+  -556.55 -25.43
+endline
+line survey 
+  -637.35 -7.48
+  -556.55 -25.43
+endline
+endscrap
+
+scrap highway32-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 534.34 -19.53 station -name 31
+point 637.35 -26.14 station -name 32
+point 516.71 -20.08 station -name 30
+point 478.97 -23.86 station -name 29
+point 435.50 -23.54 station -name 28
+point 400.33 -22.20 station -name 27
+point 386.79 -22.36 station -name 26
+point 357.71 -15.43 station -name 25
+point 332.49 -17.95 station -name 24
+point 276.82 -14.72 station -name 23
+point 233.68 -15.20 station -name 22
+point 211.74 -5.28 station -name 16
+point -33.94 24.96 station -name 21
+point 5.90 12.05 station -name 20
+point 44.68 26.14 station -name 19
+point 84.45 15.51 station -name 18
+point 119.19 9.37 station -name 17
+point 163.12 -8.43 station -name 15
+point 99.65 -16.85 station -name 14
+point 51.31 -17.40 station -name 13
+point -134.89 -4.57 station -name 12
+point -188.30 -17.80 station -name 11
+point -217.82 -18.19 station -name 10
+point -285.98 -24.02 station -name 9
+point -308.83 -18.43 station -name 8
+point -387.64 -16.69 station -name 7
+point -436.62 -19.13 station -name 6
+point -510.71 -17.48 station -name 5
+point -530.13 -25.04 station -name 4
+point -546.25 -25.83 station -name 3
+point -556.55 -25.43 station -name 2
+point -637.35 -7.48 station -name 1
+endscrap
