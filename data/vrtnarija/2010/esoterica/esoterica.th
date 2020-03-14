@@ -1,46 +1,57 @@
 
 survey esoterica -title "ESOTERICA"
-
-input esoterica-e.th2
-
-map m-all-e -projection extended
-    esoterica-1e
-endmap
-
-centreline
-    team "James###" insts
-    team "Jan###" notes
-    explo-team "James###"
-    explo-team "Jan###"
-    date 2010.7.29
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    1	2	5.30	296	0
-    2	3	8.71	-	UP
-    3	4	1.25	202	-5
-    4	5	5.79	5	55
-    6	5	2.91	158	+7
-    7	6	6.66	102	-40
-    8	7	2.20	106	-19
-    9	8	1.25	79	21
-    10	9	4.19	152	-18
-    11	10	3.92	172	-1
-    12	11	2.46	270	-10
-    13	12	5.79	315	-66
-    14	13	2.31	260	-36
-    15	14	2.89	10	-38
-    16	15	4.62	119	-40
-    17	16	2.99	68	-35
-    # 1	1	0	1	0
-    # 2	2	1	9	0
-    # 3	4	2	9	9
-    # 4	4	2	3	9
-    # 6	2	0	4	1
-    # 12 	1	0	2	1
-    # 13	6	1	1.5	0.5
-    # 14	2	0	4	0.5
-endcentreline
+	
+	input esoterica-e.th2
+	
+	map m-all-e -projection extended
+		esoterica-1e
+	endmap
+	
+	
+	input esoterica-p.th2
+	
+	map m-all-p -projection plan
+		esoterica-1p
+		esoterica-2p
+	endmap
+	
+	join esoterica-1p esoterica-2p
+	
+	centreline
+		team "James###" insts
+		team "Jan Evetts" notes
+		explo-team "James###"
+		explo-team "Jan Evetts"
+		date 2010.7.29
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		1	2	5.30	296	0
+		2	3	8.71	-	UP
+		3	4	1.25	202	-5
+		4	5	5.79	5	55
+		6	5	2.91	158	+7
+		7	6	6.66	102	-40
+		8	7	2.20	106	-19
+		9	8	1.25	79	21
+		10	9	4.19	152	-18
+		11	10	3.92	172	-1
+		12	11	2.46	270	-10
+		13	12	5.79	315	-66
+		14	13	2.31	260	-36
+		15	14	2.89	10	-38
+		16	15	4.62	119	-40
+		17	16	2.99	68	-35
+		data dimensions station left right up down ignoreall
+		1	1	0	1	0
+		2	2	1	9	0
+		3	4	2	9	9
+		4	4	2	3	9
+		6	2	0	4	1
+		12 	1	0	2	1
+		13	6	1	1.5	0.5
+		14	2	0	4	0.5
+	endcentreline
 endsurvey
 
 # Converted From SVX

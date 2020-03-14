@@ -282,7 +282,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 17@blackknight 14@korita
 	equate 1@whitebishop 1@sidewinder
 	equate 1@povodni_moz2 10@povodni_moz
-	# equate 1@minataur 6@palace
+	# equate 1@minataur 6@palace # No data - replaced by guillotine2
 	equate 8@the_queen_bed_chamber 1@minataur
 	equate 1@palace2 4@minataur
 	equate 23@ouroboros 3@palace2
@@ -297,6 +297,11 @@ survey vrtnarija -title "Vrtnarija"
 	join wonderland-1p@wonderland zimmer-p1@zimmer
 	join surprise-1p@surprise rolling-1p@rolling
 	join kamikaze-1p@kamikaze surprise-1p@surprise
+	join consort-2p@consort palace2-1p@palace2
+	join palace2-1p@palace2 ouroboros-1p@ouroboros
+	join minataur-1p@minataur palace2-1p@palace2
+	join the_queen_bed_chamber-1p@the_queen_bed_chamber minataur-1p@minataur
+	join esoterica-1p@esoterica consort-2p@consort
 	
 	###__________2011____________###
 	input ./2011/redbaron/redbaron.th
