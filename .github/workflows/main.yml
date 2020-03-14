@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - data/**
+      - .github/workflows/**
 
 env:
   THERION_VERSION: 5.4.4
@@ -23,6 +24,8 @@ jobs:
           path: ${{ env.THERION_PATH }}/bin
           key: ${{ runner.os }}-${{ env.THERION_VERSION }}
       #========================= INSTALL DEPENDENCIES ========================#
+      - name: Run apt update
+        run: sudo apt update
       - name: Install Therion compilation dependencies
         if: steps.cache-therion.outputs.cache-hit != 'true'
         run: sudo apt install -y bwidget lcdf-typetools libtk-img-dev libtk-img libvtk6-dev libvtk6.3 libwxgtk3.0-dev tcl-dev survex texlive-latex-base # Pre-installed: gcc ghostscript imagemagick libfreetype6-dev libjpeg-dev libpng-dev zlib1g zlib1g-dev
