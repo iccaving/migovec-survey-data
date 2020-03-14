@@ -1,12 +1,19 @@
 
 survey the_queen_bed_chamber -title "The Palace of King Minas"
-
-input the_queen_bed_chamber-e.th2
-
-map m-all-e -projection extended
-    the_queen_bed_chamber-1e
-endmap
-
+	
+	input the_queen_bed_chamber-e.th2
+	
+	map m-all-e -projection extended
+		the_queen_bed_chamber-1e
+	endmap
+	
+	
+	input the_queen_bed_chamber-p.th2
+	
+	map m-all-p -projection plan
+		the_queen_bed_chamber-1p
+	endmap
+	
 	centreline
 		team "Dan Greenwald" insts
 		team "Iztok Mozir" notes

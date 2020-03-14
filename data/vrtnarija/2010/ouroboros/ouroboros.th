@@ -1,11 +1,18 @@
 survey ouroboros -title "The Palace of King Minas"
-
-input ouroboros-e.th2
-
-map m-all-e -projection extended
-    ouroboros-1e
-endmap
-
+	
+	input ouroboros-e.th2
+	
+	map m-all-e -projection extended
+		ouroboros-1e
+	endmap
+	
+	
+	input ouroboros-p.th2
+	
+	map m-all-p -projection plan
+		ouroboros-1p
+	endmap
+	
 	centreline
 		team "Dan Greenwald" insts
 		team "Iztok Mozir" notes
