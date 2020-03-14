@@ -1,5 +1,12 @@
 
 survey rocksteadylove -title "Rock Steady Love"
+
+input rocksteadylove-e.th2
+
+map m-all-e -projection extended
+    rocksteadylove-1e
+endmap
+
 centreline
     team "James Hooper" insts
     team "Clare Tan" notes

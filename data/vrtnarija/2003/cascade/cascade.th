@@ -10,6 +10,13 @@ survey cascade -title "cascade, passages leading down from Playboy junction at e
 	join cascade-1p cascade-2p
 	join cascade-2p cascade-3p
 	
+	
+	input cascade-e.th2
+	
+	map m-all-e -projection extended
+		cascade-1e
+	endmap
+	
 	centreline
 		team "James Hooper" insts
 		team "Dave Wilson" notes

@@ -8,6 +8,13 @@ survey candyMountain -title "The Big Rock Candy Mountain"
 		candyMountain-1p
 	endmap
 	
+
+input candyMountain-e.th2
+
+map m-all-e -projection extended
+    candyMountain-1e
+endmap
+
 	centreline
 		team "Colm Carroll" insts
 		team "Brian Cullen" notes

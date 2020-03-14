@@ -1,5 +1,12 @@
 
 survey serrure -title "Serrure"
+
+input serrure-e.th2
+
+map m-all-e -projection extended
+    serrure-1e
+endmap
+
 centreline
     team "William French" insts
     team "Tanguy Racine" notes

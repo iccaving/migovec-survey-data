@@ -11,6 +11,13 @@ survey mushroom -title "mushroom passage leading off from below cactus junction"
 	join mushroom-1p mushroom-2p
 	
 	
+
+input mushroom-e.th2
+
+map m-all-e -projection extended
+    mushroom-1e
+endmap
+
 	centreline
 		team "James Hooper" insts notes
 		team "Dave Wilson" tape

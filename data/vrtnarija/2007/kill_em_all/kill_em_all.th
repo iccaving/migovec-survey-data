@@ -1,5 +1,12 @@
 
 survey kill_em_all -title "Kill 'em All"
+
+input kill_em_all-e.th2
+
+map m-all-e -projection extended
+    kill_em_all-1e
+endmap
+
 	centreline
 		team "Izzy Morjir" insts
 		team "Richard Venn" notes

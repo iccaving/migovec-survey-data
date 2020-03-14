@@ -87,7 +87,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 11@candyMountain 23@friendship
 	equate 1@candyMountain 32@highway32
 	equate 33@leprachaun 1@highway32
-	equate 33@leprachaun 12@cascade
+	equate 31@leprachaun 12@cascade
 	equate 18@leprachaun 26@weepeople
 	equate 1@gold 24@weepeople
 	equate 2@doublethink 36@cascade
@@ -203,7 +203,7 @@ survey vrtnarija -title "Vrtnarija"
 	
 	equate 10@judge 6@vilcon
 	equate 12@vilcon 11@laurel
-	equate 6@vilcon 6@vilcon
+	#equate 6@vilcon 6@vilcon
 	#equate 12@vilcon.vilinska 11@laurel.garden-ent
 	#equate 6@vilcon.vilinska 6@vilcon.garden-ent
 	
@@ -236,7 +236,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@mirage_canyon 11@wet_hammer
 	equate 6@mirage_canyon 1@dark_tranquillity
 	equate 15@metal_aven 6@mudslump
-	equate 11@mad_cow 12@republica
+	#equate 11@mad_cow 12@republica # wrong....
 	equate 3@fools_road 5@fallsrd
 	
 	join belowzimmer-1p@belowzimmer eggsplosive-1p@eggsplosive
@@ -249,7 +249,11 @@ survey vrtnarija -title "Vrtnarija"
 	input ./2010/kamikaze/kamikaze.th
 	input ./2010/losthopes/losthopes.th
 	input ./2010/consort/consort.th
-	input ./2010/minos/minos.th
+	input ./2010/the_queen_bed_chamber/the_queen_bed_chamber.th
+	input ./2010/palace2/palace2.th
+	input ./2010/ouroboros/ouroboros.th
+	input ./2010/minataur/minataur.th
+	# input ./2010/palace/palace.th # No data - replaced by guillotine2
 	input ./2010/whitebishop/whitebishop.th
 	input ./2010/stalemate/stalemate.th
 	input ./2010/roaring/roaring.th
@@ -281,7 +285,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 17@blackknight 14@korita
 	equate 1@whitebishop 1@sidewinder
 	equate 1@povodni_moz2 10@povodni_moz
-	# equate 1@minataur 6@palace
+	# equate 1@minataur 6@palace # No data - replaced by guillotine2
 	equate 8@the_queen_bed_chamber 1@minataur
 	equate 1@palace2 4@minataur
 	equate 23@ouroboros 3@palace2
@@ -293,9 +297,16 @@ survey vrtnarija -title "Vrtnarija"
 	equate 15@republica 15@insomnia
 	equate 8@roaring 0@happy_monday
 	
-	join wonderland-1p@wonderland zimmer-p1@zimmer
+	# join wonderland-1p@wonderland zimmer-p1@zimmer
 	join surprise-1p@surprise rolling-1p@rolling
 	join kamikaze-1p@kamikaze surprise-1p@surprise
+	join consort-1p@consort wonderland-2p@wonderland
+	join rolling-1p@rolling wonderland-2p@wonderland
+	join consort-2p@consort palace2-1p@palace2
+	join palace2-1p@palace2 ouroboros-1p@ouroboros
+	join minataur-1p@minataur palace2-1p@palace2
+	join the_queen_bed_chamber-1p@the_queen_bed_chamber minataur-1p@minataur
+	join esoterica-1p@esoterica consort-2p@consort
 	
 	###__________2011____________###
 	input ./2011/redbaron/redbaron.th
@@ -316,7 +327,6 @@ survey vrtnarija -title "Vrtnarija"
 	input ./2011/2ndtimelucky/2ndtimelucky.th
 	input ./2011/krtkovadobradela/krtkovadobradela.th
 	input ./2011/roundpond/roundpond.th
-	input ./2011/yorkshire/yorkshire.th
 	input ./2011/rottenrow/rottenrow.th
 	input ./2011/letnadrugisvet/letnadrugisvet.th
 	input ./2011/drinkyourown/drinkyourown.th
@@ -341,7 +351,6 @@ survey vrtnarija -title "Vrtnarija"
 	equate 29@stagger_lee 8@soda
 	equate 10@2ndtimelucky 1@lowerpleasures
 	equate 12@lowerpleasures 19@friendship
-	equate 30@yorkshire 1@2ndtimelucky
 	equate 23@longwater 0@roundpond
 	equate 17@krtkovadobradela 1@letnadrugisvet
 	equate 6@roundpond 1@itwillrain
@@ -359,8 +368,8 @@ survey vrtnarija -title "Vrtnarija"
 	
 	join redbaron-1p@redbaron kamikaze-1p@kamikaze
 	join throneroom-1p@throneroom redbaron-1p@redbaron
-	join serenade-1p@serenade throneroom-1p@throneroom
-	join amazinggrace-1p@amazinggrace serenade-1p@serenade
+	join line@serenade:0 east@amazinggrace:end
+	join amaz@throneroom:end west@amazinggrace:0
 	join grace2-1p@grace2 amazinggrace-1p@amazinggrace
 	join magicdragon-1p@magicdragon grace2-1p@grace2
 	join stuckinparadise-1p@stuckinparadise magicdragon-1p@magicdragon
@@ -395,6 +404,7 @@ survey vrtnarija -title "Vrtnarija"
 	input ./2012/why_the_face/why_the_face.th
 	input ./2012/dreamsforthesoul/dreamsforthesoul.th
 	input ./2012/undercover_squirrell/undercover_squirrell.th
+	input ./2012/yorkshire/yorkshire.th
 	
 	equate 32@atlantis 1@eastlinks
 	equate 17@brezno_slapov 1@atlantis
@@ -422,6 +432,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@perfidia 15@republica
 	equate 18@perfidia 7@mad_cow
 	equate 1@ride_the_lightning 11@worm
+	equate 30@yorkshire 1@2ndtimelucky
 	
 	join atlantis-1p@atlantis eastlinks-1p@eastlinks
 	join brezno_slapov-1p@brezno_slapov atlantis-1p@atlantis
@@ -557,7 +568,7 @@ survey vrtnarija -title "Vrtnarija"
 	input ./2015/isdead/isdead.th
 	input ./2015/dinnerservice/dinnerservice.th
 	# input ./2015/shithole/shithole.th # No tie in
-	input ./2015/void/void.th
+	input ./2015/void2/void2.th
 	input ./2015/formative/formative.th
 	input ./2015/agartha/agartha.th
 	
@@ -573,10 +584,10 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@sicsempertyrannis 15@davyjoneslocker
 	equate 9@atworldsend 1@davyjoneslocker
 	equate 5@formative 11@beyond
-	equate 1@void 1@nitro
+	equate 1@void2 1@nitro
 	equate 1@yourmum 3@isdead
-	equate 1@dinnerservice 6@void
-	equate 38@andreabocelli 6@void
+	equate 1@dinnerservice 6@void2
+	equate 38@andreabocelli 6@void2
 	equate 1@trueadventures 1@colarado
 	equate 30@agartha 39@pushyourluck
 	equate 1@pushyourluck 3@cuckoos_nest

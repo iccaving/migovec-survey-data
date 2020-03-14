@@ -1,0 +1,50 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  148.36 88.86
+  117.79 70.67
+endline
+line survey 
+  38.09 -48.70
+  117.79 70.67
+endline
+line survey 
+  38.09 -48.70
+  4.32 -37.52
+endline
+line survey 
+  -11.56 -65.87
+  4.32 -37.52
+endline
+line survey 
+  -11.56 -65.87
+  -55.06 -87.76
+endline
+line survey 
+  -74.91 -82.40
+  -55.06 -87.76
+endline
+line survey 
+  -74.91 -82.40
+  -124.72 -87.28
+endline
+line survey 
+  -148.36 -88.86
+  -124.72 -87.28
+endline
+endscrap
+
+scrap skynet-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 117.79 70.67 station -name 8
+point 148.36 88.86 station -name 9
+point 38.09 -48.70 station -name 7
+point 4.32 -37.52 station -name 6
+point -11.56 -65.87 station -name 5
+point -55.06 -87.76 station -name 4
+point -74.91 -82.40 station -name 3
+point -124.72 -87.28 station -name 2
+point -148.36 -88.86 station -name 1
+endscrap

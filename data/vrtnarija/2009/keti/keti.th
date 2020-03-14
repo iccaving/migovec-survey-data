@@ -1,5 +1,12 @@
 
 survey keti -title "K * E * T * I"
+
+input keti-e.th2
+
+map m-all-e -projection extended
+    keti-1e
+endmap
+
 	centreline
 		team "Eric Boncina" insts
 		team "Iztok Mozir" notes

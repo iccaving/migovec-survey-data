@@ -7,6 +7,13 @@ survey ingloriousbasterd -title "Inglorious Basterd"
 		ingloriousbasterd-1p
 	endmap
 	
+
+input ingloriousbasterd-e.th2
+
+map m-all-e -projection extended
+    ingloriousbasterd-1e
+endmap
+
 	centreline
 		team "Oliver Myerscough" insts
 		team "Gergely Ambrus" notes

@@ -1,5 +1,12 @@
 
 survey mudslump -title "mudslump:"
+
+input mudslump-e.th2
+
+map m-all-e -projection extended
+    mudslump-1e
+endmap
+
 	centreline
 		team "Ben Banfield" insts
 		team "Richard Venn " notes

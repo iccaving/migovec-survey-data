@@ -38,6 +38,9 @@ survey street-wise_hercules -title "street-wise_hercules"
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
+
+		station 0 fixed
+		station 11 fixed
 		# extend auto
 		0 . 6.81 45.4 82.5
 		0 . 32.40 174.3 -60.3

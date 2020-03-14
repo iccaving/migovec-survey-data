@@ -1,5 +1,12 @@
 
 survey dream2 -title "Dream.2"
+
+input dream2-e.th2
+
+map m-all-e -projection extended
+    dream2-1e
+endmap
+
 centreline
     team "Clare Tan" insts
     team "James Hooper" notes

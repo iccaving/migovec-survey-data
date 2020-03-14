@@ -2,24 +2,22 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line wall 
+
+scrap prisoners-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
+
+line survey 
   -6.81 1.73
   6.26 8.43
 endline
-line wall 
+
+line survey 
   6.26 8.43
   6.81 -8.43
 endline
-line wall 
-  6.81 -8.43
-  6.81 -8.43
-endline
-endscrap
 
-scrap prisoners-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 point -6.81 1.73 station -name 4
 point 6.26 8.43 station -name 3
 point 6.81 -8.43 station -name 1
 point 6.81 -8.43 station -name 2
 endscrap
+

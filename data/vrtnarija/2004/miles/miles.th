@@ -12,6 +12,13 @@ survey miles -title "After Smash Storming Passageway"
 	join miles-1p miles-2p
 	join miles-3p miles-1p
 	
+
+input miles-e.th2
+
+map m-all-e -projection extended
+    miles-1e
+endmap
+
 	centreline
 		team "Pippa Crosby" insts
 		team "Clewin Griffith" notes

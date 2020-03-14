@@ -1,14 +1,16 @@
 map m-all-p -projection plan
+	m-M18-p
 	m-M16-p
+
 endmap
 
 map m-M16-p -projection plan
 	m-all-p@M16
 endmap
 
-#map m-M18-p -projection plan
-#	m-all-p@M18
-#endmap
+map m-M18-p -projection plan
+	m-all-p@M18
+endmap
 
 #map m-M2-p -projection plan
 #	m-all-p@M2

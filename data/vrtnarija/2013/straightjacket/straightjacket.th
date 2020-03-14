@@ -1,5 +1,12 @@
 
 survey straightjacket -title "Straightjacket"
+
+input straightjacket-e.th2
+
+map m-all-e -projection extended
+    straightjacket-1e
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Clare Tan" notes

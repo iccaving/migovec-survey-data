@@ -1,5 +1,12 @@
 
 survey roundpond -title "Round Pond"
+
+input roundpond-e.th2
+
+map m-all-e -projection extended
+    roundpond-1e
+endmap
+
 centreline
     team "Jan Evetts" insts
     team "JMF" notes

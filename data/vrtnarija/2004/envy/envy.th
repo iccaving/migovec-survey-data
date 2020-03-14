@@ -6,6 +6,13 @@ survey envy -title "Passage off Leprecon series connecting with Greed"
 	map m-all-p -projection plan
 		envy-1p
 	endmap
+
+input envy-e.th2
+
+map m-all-e -projection extended
+    envy-1e
+endmap
+
 	centreline
 		team "Jim Evans" insts
 		team "Dave Wilson" notes

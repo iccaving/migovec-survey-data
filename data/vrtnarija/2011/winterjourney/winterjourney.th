@@ -1,5 +1,12 @@
 
 survey winterjourney -title "Winter Journey"
+
+input winterjourney-e.th2
+
+map m-all-e -projection extended
+    winterjourney-1e
+endmap
+
 centreline
     team "Andrej Fratnik" insts
     team "Jarvist Frost" notes

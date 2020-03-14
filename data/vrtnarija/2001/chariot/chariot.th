@@ -7,6 +7,13 @@ survey chariot -title "survey down bottom of swing to top of officer's club"
 		chariot-1p
 	endmap
 	
+
+input chariot-e.th2
+
+map m-all-e -projection extended
+    chariot-1e
+endmap
+
 	centreline
 		team "Clewin Griffith" insts
 		team "Helen Jones" notes

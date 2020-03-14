@@ -1,5 +1,12 @@
 
 survey stagger_lee -title "Stagger Lee"
+
+input stagger_lee-e.th2
+
+map m-all-e -projection extended
+    stagger_lee-1e
+endmap
+
 	centreline
 		team "Tharatorn Supasiti" insts
 		team "Tim Osborne" notes

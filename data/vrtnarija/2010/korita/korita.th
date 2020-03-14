@@ -1,5 +1,12 @@
 
 survey korita -title "KORITA"
+
+input korita-e.th2
+
+map m-all-e -projection extended
+    korita-1e
+endmap
+
 	centreline
 		team "Myles Denton" insts
 		team "James Hooper" notes
@@ -26,6 +33,7 @@ survey korita -title "KORITA"
 		17	16	3.98	190	-21
 		17	18	3.31	065	+02
 		18	5	1.62	183	-09
+		data dimensions station left right up down ignoreall
 		5	1.5	2	5	2
 		6	0	1	5	2
 		7	0.5	1	5	0.5

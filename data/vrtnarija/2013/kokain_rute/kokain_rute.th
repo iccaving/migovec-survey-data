@@ -1,5 +1,12 @@
 
 survey kokain_rute -title "Kokain Rute"
+
+input kokain_rute-e.th2
+
+map m-all-e -projection extended
+    kokain_rute-1e
+endmap
+
 centreline
     team "Erik Poncina" insts
     team "Grega Maffi" notes

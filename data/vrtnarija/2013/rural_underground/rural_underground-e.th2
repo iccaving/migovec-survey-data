@@ -1,0 +1,115 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -342.50 -80.91
+  -337.13 -94.92
+endline
+line survey 
+  -348.98 -52.87
+  -342.50 -80.91
+endline
+line survey 
+  -338.35 -59.25
+  -348.98 -52.87
+endline
+line survey 
+  -305.95 -65.55
+  -338.35 -59.25
+endline
+line survey 
+  -263.38 -49.17
+  -305.95 -65.55
+endline
+line survey 
+  -221.10 -32.09
+  -263.38 -49.17
+endline
+line survey 
+  -206.38 -16.89
+  -221.10 -32.09
+endline
+line survey 
+  -201.29 -8.70
+  -206.38 -16.89
+endline
+line survey 
+  -187.11 -2.72
+  -201.29 -8.70
+endline
+line survey 
+  -178.55 7.83
+  -187.11 -2.72
+endline
+line survey 
+  -140.17 9.17
+  -178.55 7.83
+endline
+line survey 
+  -102.44 25.24
+  -140.17 9.17
+endline
+line survey 
+  -31.49 48.31
+  -102.44 25.24
+endline
+line survey 
+  -14.50 47.99
+  -31.49 48.31
+endline
+line survey 
+  70.45 45.00
+  -14.50 47.99
+endline
+line survey 
+  103.73 39.17
+  70.45 45.00
+endline
+line survey 
+  126.36 69.17
+  103.73 39.17
+endline
+line survey 
+  190.16 94.92
+  126.36 69.17
+endline
+line survey 
+  232.70 87.44
+  190.16 94.92
+endline
+line survey 
+  273.67 86.02
+  232.70 87.44
+endline
+line survey 
+  348.98 70.04
+  273.67 86.02
+endline
+endscrap
+
+scrap rural_underground-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -337.13 -94.92 station -name 22
+point -342.50 -80.91 station -name 21
+point -348.98 -52.87 station -name 20
+point -338.35 -59.25 station -name 19
+point -305.95 -65.55 station -name 18
+point -263.38 -49.17 station -name 17
+point -221.10 -32.09 station -name 16
+point -206.38 -16.89 station -name 15
+point -201.29 -8.70 station -name 14
+point -187.11 -2.72 station -name 13
+point -178.55 7.83 station -name 12
+point -140.17 9.17 station -name 11
+point -102.44 25.24 station -name 10
+point -31.49 48.31 station -name 9
+point -14.50 47.99 station -name 8
+point 70.45 45.00 station -name 7
+point 103.73 39.17 station -name 6
+point 126.36 69.17 station -name 5
+point 190.16 94.92 station -name 4
+point 232.70 87.44 station -name 3
+point 273.67 86.02 station -name 2
+point 348.98 70.04 station -name 1
+endscrap

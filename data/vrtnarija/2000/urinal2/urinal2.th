@@ -5,6 +5,13 @@ survey urinal2 -title 'Piston' #last pitch of Urinal Series
 		urinal2-p1
 	endmap
 	
+
+input urinal2-e.th2
+
+map m-all-e -projection extended
+    urinal2-1e
+endmap
+
 	centreline
 		date 2000.07.24
 		explo-date 2000.07.24

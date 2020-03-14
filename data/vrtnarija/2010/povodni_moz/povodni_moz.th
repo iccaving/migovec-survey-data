@@ -1,5 +1,12 @@
 
 survey povodni_moz -title "Povodni Moz"
+
+input povodni_moz-e.th2
+
+map m-all-e -projection extended
+    povodni_moz-1e
+endmap
+
 	centreline
 		team "Eric" insts
 		team "Izi" notes

@@ -1,0 +1,55 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -155.80 190.12
+  -193.67 233.66
+endline
+line survey 
+  -155.80 190.12
+  -144.87 172.64
+endline
+line survey 
+  -144.87 172.64
+  -114.44 119.96
+endline
+line survey 
+  -114.44 119.96
+  -54.45 37.36
+endline
+line survey 
+  -54.45 37.36
+  -25.10 -17.83
+endline
+line survey 
+  -25.10 -17.83
+  20.94 -100.91
+endline
+line survey 
+  20.94 -100.91
+  86.78 -194.92
+endline
+line survey 
+  86.78 -194.92
+  129.38 -206.34
+endline
+line survey 
+  129.38 -206.34
+  193.67 -233.66
+endline
+endscrap
+
+scrap stuckinparadise2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -193.67 233.66 station -name 10
+point -155.80 190.12 station -name 9
+point -144.87 172.64 station -name 8
+point -114.44 119.96 station -name 7
+point -54.45 37.36 station -name 6
+point -25.10 -17.83 station -name 5
+point 20.94 -100.91 station -name 4
+point 86.78 -194.92 station -name 3
+point 129.38 -206.34 station -name 2
+point 193.67 -233.66 station -name 1
+endscrap

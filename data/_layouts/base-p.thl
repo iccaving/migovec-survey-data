@@ -3,17 +3,11 @@ encoding  utf-8
 #                                                             |
 #             THIS IS A THERION LAYOUT DEFINITION FILE        |
 #                                                             |
-#             it contains the redefinition for a the          |
-#             base layout with a Tanguy approved style        |
+#             it contains the redefinition for the            |
+#             base layout                                     |
 #                                                             |
-#             the format is good, trust me                    |
 #_____________________________________________________________|
 
-# Colour latest passage
-#lookup explo-date
-#	[1999.12.31 2018.12.31] [100 100 100] "before 2019"
-#	2019.12.31 [100 50 50] "	2019 expeditions"
-#endlookup
 
 layout base-p
 	#_____________________________________________________________
@@ -21,15 +15,6 @@ layout base-p
 	#                        OVERWRITE THESE                      |
 	#_____________________________________________________________|
 	
-	#map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
-	#code tex-map
-	#\framethickness=0.5mm
-	#\def\maplayout{
-	#\legendbox{11}{99}{N}{\size[26]\the\cavename}
-	#\legendbox{11}{90}{N}{\size[10]\the\comment}
-	#\legendbox{13}{70}{N}{\scalebar}
-	#\legendbox{13}{65}{N}{\northarrow}
-	#}
 	legend off # on - Maps the symbols on the survey to their meaning
 	colour-legend off # on - Maps the colours on the survey to their meaning
 	map-header 0 0 off # 0 0 nw
@@ -40,10 +25,8 @@ layout base-p
 	#                        GENERAL STATEMENTS                   |
 	#_____________________________________________________________|
 	
-	#debug all
-	scale 1 2000
+	
 	symbol-hide group all
-	min-symbol-scale M
 	symbol-show line wall
 	symbol-show area water
 	symbol-show area sump
@@ -55,7 +38,7 @@ layout base-p
 	symbol-show point dig
 	symbol-show point entrance
 	symbol-show point camp
-	fonts-setup 8 12 12 12 12
+	fonts-setup 6 7 10 12 14
 	
 	code metapost
 		#_____________________________________________________________

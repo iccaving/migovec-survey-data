@@ -1,5 +1,12 @@
 
 survey cow -title "Stuff near Red Cow Junction - superseded by mad-cow"
+
+input cow-e.th2
+
+map m-all-e -projection extended
+    cow-1e
+endmap
+
 	centreline
 		team "Tim Comer" insts
 		team "Martin [Mc Gowan]" notes

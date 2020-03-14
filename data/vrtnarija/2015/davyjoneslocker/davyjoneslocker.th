@@ -7,6 +7,13 @@ survey davyjoneslocker -title "Davy Jones' Locker"
 		davyjoneslocker-1p
 	endmap
 	
+
+input davyjoneslocker-e.th2
+
+map m-all-e -projection extended
+    davyjoneslocker-1e
+endmap
+
 	centreline
 		team "Ben Honan" insts
 		team "Rhys Tyers" notes

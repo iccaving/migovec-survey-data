@@ -7,6 +7,13 @@ survey meridianway -title "Meridian Way"
 		meridianway-1p
 	endmap
 	
+
+input meridianway-e.th2
+
+map m-all-e -projection extended
+    meridianway-1e
+endmap
+
 	centreline
 		team "Rhys Tyers" insts
 		team "Tanguy Racine" notes

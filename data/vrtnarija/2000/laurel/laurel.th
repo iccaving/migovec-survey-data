@@ -32,6 +32,13 @@ survey laurel -title "Laurel pitch & Jelly Chamber"
 	join laurel-p2 laurel-p3
 	join laurel-p4 laurel-p5
 	
+
+input laurel-e.th2
+
+map m-all-e -projection extended
+    laurel-1e
+endmap
+
 	centreline
 		
 		date 2000.07.19

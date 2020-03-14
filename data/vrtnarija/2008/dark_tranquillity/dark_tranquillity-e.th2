@@ -1,0 +1,16 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+endscrap
+
+scrap dark_tranquillity-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 67.25 168.50 station -name 5
+point 59.73 171.50 station -name 6
+point 67.25 24.17 station -name 4
+point 67.25 -171.50 station -name 3
+point -5.31 -165.83 station -name 2
+point -67.25 -120.00 station -name 1
+endscrap

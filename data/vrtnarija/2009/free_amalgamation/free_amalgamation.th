@@ -1,5 +1,12 @@
 
 survey free_amalgamation -title "Free Amalgamation:"
+
+input free_amalgamation-e.th2
+
+map m-all-e -projection extended
+    free_amalgamation-1e
+endmap
+
 centreline
     team "Tim Osborne" insts
     team "Thara" notes

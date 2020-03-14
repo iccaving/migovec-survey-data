@@ -12,5 +12,7 @@ survey m2m16m18 -title "Sistem Migovec (the Old System)"
 	
 	# input m2
 	input "./M16/M16.th"
-	# input m18
+	input "./M18/M18.th"
+
+	equate 6@void.M18 14@level2s.M16
 endsurvey

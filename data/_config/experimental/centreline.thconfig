@@ -1,11 +1,9 @@
-source "../plateau.th"
+source "../../system_migovec.th"
 
-layout mycentreline
-	debug all
-	scale 1 1000
-	symbol-hide group all
-	symbol-show point station
-	symbol-show line survey
-endlayout
+#select @primadona.primadona_ubend_monatip.system_migovec
+#select bclent2@vrtnarija.system_migovec
 
-export map -projection extended -o ../_outputs/centreline_extended.pdf -layout mycentreline
+#select vrtnarija@system_migovec
+
+export model -o ../../_outputs/troubleshoot.lox
+#export model -o ../../_outputs/troubleshoot.3d

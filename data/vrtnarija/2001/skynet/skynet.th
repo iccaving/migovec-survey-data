@@ -15,6 +15,13 @@ survey skynet -title "Skynet"
 		skynet-p2
 	endmap
 	
+
+input skynet-e.th2
+
+map m-all-e -projection extended
+    skynet-1e
+endmap
+
 	centreline
 		date 2001.08.06
 		explo-date 2001.08.06

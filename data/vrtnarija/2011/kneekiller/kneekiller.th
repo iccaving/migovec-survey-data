@@ -7,6 +7,13 @@ survey kneekiller -title "Penitence"
 		kneekiller-1p
 	endmap
 	
+
+input kneekiller-e.th2
+
+map m-all-e -projection extended
+    kneekiller-1e
+endmap
+
 	centreline
 		team "Izi" insts
 		team "Gergely Ambrus" notes

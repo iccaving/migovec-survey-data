@@ -1,5 +1,12 @@
 
 survey povodni_moz2 -title "Po Vodni Moz 2"
+
+input povodni_moz2-e.th2
+
+map m-all-e -projection extended
+    povodni_moz2-1e
+endmap
+
 	centreline
 		team "Jst" insts
 		team "James Hooper" notes
