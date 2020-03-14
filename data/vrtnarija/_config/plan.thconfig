@@ -10,17 +10,36 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../vrtnarija/vrtnarija.th"
+source "../vrtnarija.th"
 
-input "../../_layouts/mods.thl"
 #----------------------------------------------------------------------------------|
-# export an ELEVATION view
-layout extended
+# input the layout files
+input "../../_layouts/base-p.thl"
+input "../../_layouts/base-e.thl"
+input "../../_layouts/mods.thl"
+
+# Show centerline of undrawn maps
+#source
+#map include-centerline -projection plan
+#	vrtnarija
+#	m-all-p@vrtnarija
+#endmap
+#endsource
+#select include-centerline
+
+#----------------------------------------------------------------------------------|
+# select the relevant map definitions, and levels within those maps
+# select m-beyond-consort-p@vrtnarija -map-level 0
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view
+layout plan
 	copy show-centreline
-	scale 1 2000
 	map-header 0 0 off
+	scale 1 2000
 endlayout
 
-language fr
-
-export map -projection extended -o ../_outputs/EE_SLO.pdf -layout extended #-layout-debug station-names
+#language fr
+#export map -projection plan -o ../_outputs/map/plan_SLO.pdf -layout plan
+language en
+export map -projection plan -o ../_outputs/plan_ENG.pdf -layout plan

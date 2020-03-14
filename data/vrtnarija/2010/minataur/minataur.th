@@ -1,11 +1,18 @@
 survey minataur -title "The Palace of King Minas"
-
-input minataur-e.th2
-
-map m-all-e -projection extended
-    minataur-1e
-endmap
-
+	
+	input minataur-e.th2
+	
+	map m-all-e -projection extended
+		minataur-1e
+	endmap
+	
+	
+	input minataur-p.th2
+	
+	map m-all-p -projection plan
+		minataur-1p
+	endmap
+	
 	centreline
 		team "Dan Greenwald" insts
 		team "Iztok Mozir" notes
