@@ -1,5 +1,10 @@
 
 survey serenade -title "Serenade"
+	input serenade-e.th2
+	
+	map m-all-e -projection extended
+		serenade-1e
+	endmap
 	
 	input serenade-p.th2
 	
@@ -7,14 +12,6 @@ survey serenade -title "Serenade"
 		serenade-1p
 	endmap
 	
-	
-
-input serenade-e.th2
-
-map m-all-e -projection extended
-    serenade-1e
-endmap
-
 	centreline
 		team "Jan Evetts" insts
 		team "Kate Smith" notes
