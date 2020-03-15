@@ -3,28 +3,13 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap jericho-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap jericho-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-line gradient 
-  445.5731 724.7766
-  425.6472 733.4192
-endline
-
-line gradient 
-  473.6615 687.5655
-  460.4576 707.2514
-endline
-
-line gradient 
-  496.4684 648.1937
-  487.5857 665.959
-endline
-
-line gradient 
-  520.9557 606.1812
-  508.712 627.3075
-endline
-
+point 618.5921 607.3882 label -text Jericho -align r -scale l
+point 432.1291 730.5383 gradient -orientation 303.156042
+point 467.1796 699.8091 gradient -orientation 329.537414
+point 490.4666 657.0763 gradient -orientation 331.491896
+point 513.9936 618.1847 gradient -orientation 326.855845
 line floor-step 
   604.6207 568.4899
   619.6252 580.4935 620.3454 582.174 620.3454 582.174

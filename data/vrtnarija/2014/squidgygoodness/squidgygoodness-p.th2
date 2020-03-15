@@ -3,8 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap squidgygoodness-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap squidgygoodness-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
+point 544.2426 606.9014 label -text "Squidgy Goodness" -align r -scale l
 line wall 
   538.4672 579.8877
   528.6213 599.2399 533.2418 597.8819 527.0935 613.6692
@@ -32,7 +33,5 @@ point 502.069 671.9059 station -name 4
 point 502.8578 645.7514 station -name 3
 point 515.3803 628.7775 station -name 2
 point 531.1676 580.9062 station -name 1
-point 468.9427 581.4051 u:unknown -orientation 180.0
-point 464.9428 577.4051 u:unknown -orientation 180.0
 endscrap
 

@@ -22,6 +22,8 @@ survey M16 -title "M16 part of System Migovec"
 		m-all-p@sajeta
 		m-all-p@hotel
 		m-all-p@pinkp
+		m-all-p@coldfeet
+		m-all-p@doh
 	endmap
 	
 	###__________1996____________###
@@ -85,11 +87,11 @@ survey M16 -title "M16 part of System Migovec"
 	#input ./1997/sifon/sifon.th
 	input "./1997/xxx/xxx.th"
 	input "./1997/pinkp/pinkp.th"
-	#input ./1997/doh/doh.th
+	input "./1997/doh/doh.th"
 	input "./1997/hotel/hotel.th"
 	#input ./1997/batshita/batshita.th
 	#input ./1997/woft/woft.th
-	#input ./1997/coldfeet/coldfeet.th
+	input "./1997/coldfeet/coldfeet.th"
 	#input ./1997/glory/glory.th
 	#input ./1997/fa999/fa999.th
 	#input ./1997/batshit2/batshit2.th
@@ -121,13 +123,13 @@ survey M16 -title "M16 part of System Migovec"
 	#equate 13@teoti 14@glory
 	#equate 12@sifon 27@fa999
 	#equate 5@glory 20@rameses
-	#equate 19@doh 18@pinkp
+	equate 19@doh 18@pinkp
 	#equate 1@pinkp 67@wonder
 	#equate 11@glory 0@sinners
 	#equate 1@glory 1@coldfeet
 	equate 1@pinkp 1@hotel
 	#equate 31@god 1@coldfeet
-	#equate 28@coldfeet 18@pinkp
+	equate 28@coldfeet 18@pinkp
 	#equate 27@exhib 7@challenge
 	#equate 1@migcon2 0@rockroll
 	#equate 1@galact3 1@galact2

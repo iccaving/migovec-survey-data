@@ -43,7 +43,14 @@ layout show-centreline
 	symbol-colour point station [50 30 30]
 endlayout
 
-layout basic
+layout general_overview
 	scale 1 2000
 	min-symbol-scale M
+	fonts-setup 10 10 10 10 10
+endlayout
+
+layout subsystem_overview
+	scale 1 2000
+	min-symbol-scale S
+	fonts-setup 10 10 10 10 10
 endlayout
