@@ -1,12 +1,20 @@
 
 survey mudslump -title "mudslump:"
-
-input mudslump-e.th2
-
-map m-all-e -projection extended
-    mudslump-1e
-endmap
-
+	
+	input mudslump-e.th2
+	
+	map m-all-e -projection extended
+		mudslump-1e
+	endmap
+	
+	input mudslump-p.th2
+	
+	map m-all-p -projection plan
+		mudslump-1p
+		break
+		mudslump-2p
+	endmap
+	
 	centreline
 		team "Ben Banfield" insts
 		team "Richard Venn " notes

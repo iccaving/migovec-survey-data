@@ -183,6 +183,9 @@ survey vrtnarija -title "Vrtnarija"
 	equate 18@kill_em_all 6@mudslump
 	equate 1@smashed_swede 15@bclent2
 	
+	join mudslump-1p@mudslump scrotty-1p@scrotty
+	join kill_em_all-1p@kill_em_all mudslump-2p@mudslump
+	
 	###__________2008____________###
 	input ./2008/dangermouse/dangermouse.th
 	input ./2008/breakitdown/breakitdown.th
@@ -212,6 +215,10 @@ survey vrtnarija -title "Vrtnarija"
 	#equate 6@vilcon 6@vilcon
 	#equate 12@vilcon.vilinska 11@laurel.garden-ent
 	#equate 6@vilcon.vilinska 6@vilcon.garden-ent
+	
+	join dangermouse-1p@dangermouse mudslump-2p@mudslump
+	join dangermouse-1p@dangermouse greenback-1p@greenback
+	join giblet_breakfast-1p@giblet_breakfast greenback-1p@greenback
 	
 	###__________2009____________###
 	input ./2009/belowzimmer/belowzimmer.th

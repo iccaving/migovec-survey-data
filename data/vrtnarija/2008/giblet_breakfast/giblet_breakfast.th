@@ -1,12 +1,18 @@
 
 survey giblet_breakfast -title "Giblet Breakfast:"
-
-input giblet_breakfast-e.th2
-
-map m-all-e -projection extended
-    giblet_breakfast-1e
-endmap
-
+	
+	input giblet_breakfast-e.th2
+	
+	map m-all-e -projection extended
+		giblet_breakfast-1e
+	endmap
+	
+	input giblet_breakfast-p.th2
+	
+	map m-all-p -projection plan
+		giblet_breakfast-1p
+	endmap
+	
 	centreline
 		team "DG" insts
 		team "TO" notes
