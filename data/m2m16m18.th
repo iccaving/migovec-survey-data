@@ -13,6 +13,8 @@ survey m2m16m18 -title "Sistem Migovec (the Old System)"
 	# input m2
 	input "./M16/M16.th"
 	input "./M18/M18.th"
+	input "./M2/M2.th"
 
-	equate 6@void.M18 14@level2s.M16
+	equate 6@void.M18 14@level2s.M16 # connection between M18 and Level2. 
+	equate 8@silos.M18 24@jspdt.M2 # connection in Silos
 endsurvey

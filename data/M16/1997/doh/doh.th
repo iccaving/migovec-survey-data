@@ -1,11 +1,22 @@
 
 survey doh -title "System Migovec"
+
+input doh-p.th2
+
+map m-all-p -projection plan
+    doh-2p
+    doh-1p
+endmap
+
+join doh-1p doh-2p
+
 centreline
     team "Mike Playford" insts
     team "Mike Playford" notes
     explo-team "Mike Playford"
     explo-team "Mike Playford"
     date 1997.07.31
+    explo-date 1997.07.31
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
