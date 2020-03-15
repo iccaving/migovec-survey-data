@@ -1,12 +1,18 @@
-
 survey greenback -title "Greenback:"
-
-input greenback-e.th2
-
-map m-all-e -projection extended
-    greenback-1e
-endmap
-
+	
+	input greenback-e.th2
+	
+	map m-all-e -projection extended
+		greenback-1e
+	endmap
+	
+	
+	input greenback-p.th2
+	
+	map m-all-p -projection plan
+		greenback-1p
+	endmap
+	
 	centreline
 		team "Jarvist Frost / Paul Huttom" insts
 		team "Unknown" notes
