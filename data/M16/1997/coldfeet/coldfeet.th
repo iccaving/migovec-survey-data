@@ -1,11 +1,22 @@
 
 survey coldfeet -title "System Migovec"
+
+input coldfeet-p.th2
+
+map m-all-p -projection plan
+    coldfeet-1p
+endmap
+
 centreline
-    team "Mike Playford and Scuzza" insts
-    team "Goaty and Mike Playford" notes
-    explo-team "Mike Playford and Scuzza"
-    explo-team "Goaty and Mike Playford"
+    team "Mike Playford" insts notes
+    team "Sarah Wingrove" insts notes
+    team "Michael Rogerson" notes
+    explo-team "Michael Rogerson"
+    explo-team "Sarah Wingrove"
+    explo-team "Mike Playford"
+
     date 1997.08.01
+    explo-date 1997.08.01
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
