@@ -3,67 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap DELETE-ME-survey-legs -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line wall 
-  528.9096 589.8315
-  528.9096 589.8315
-endline
-
-line wall 
-  525.9196 584.4715
-  528.9096 589.8315
-endline
-
-line wall 
-  517.5696 527.7815
-  517.5696 527.7815
-endline
-
-line wall 
-  520.0096 524.4715
-  517.5696 527.7815
-endline
-
-line wall 
-  520.0096 511.1615
-  520.0096 524.4715
-endline
-
-line wall 
-  531.5896 485.2615
-  520.0096 511.1615
-endline
-
-line wall 
-  540.0096 466.3615
-  531.5896 485.2615
-endline
-
-line wall 
-  531.8196 448.0115
-  540.0096 466.3615
-endline
-
-line wall 
-  538.9096 428.4915
-  531.8196 448.0115
-endline
-
-line wall 
-  538.9096 428.4915
-  538.9096 428.4915
-endline
-
-line wall 
-  557.3296 424.2315
-  538.9096 428.4915
-endline
-
-endscrap
-
-
-scrap bonus-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap bonus-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
 line wall 
   610.6136 494.1608

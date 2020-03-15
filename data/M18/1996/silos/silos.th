@@ -1,5 +1,12 @@
 
 survey silos -title "System Migovec"
+
+input silos-p.th2
+
+map m-all-p -projection plan
+    silos-1p
+endmap
+
 centreline
     team "Sazza" insts
     team "Pete" notes
@@ -9,6 +16,16 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
+
+    1       2        7.6    150     -11     #;1-4 surveyed in '95
+    2       3        3.2    081     -37     #
+    3       4        6.1    070     -70     #Stn 4 is last bolt at top of pitch
+    
+    4       5       67.43   -       down
+    5       6       13.60   -       down
+    6       7       26.30   -       down
+    7       8       5.26    203     -1
+    8       9       8.37    -       down
     
 endcentreline
 endsurvey

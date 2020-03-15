@@ -3,8 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap stuckinparadise-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap stuckinparadise-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
+point 502.6486 579.3785 label -text "Stuck in Paradise" -align tr -scale l
 line wall 
   447.3504 561.2145
   442.4753 564.6096 444.2524 563.5911 441.027 565.5009
