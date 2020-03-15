@@ -1,12 +1,17 @@
-
-survey kangaroo01 -title "captain kangaroo 01"
-
-input kangaroo01-e.th2
-
-map m-all-e -projection extended
-    kangaroo01-1e
-endmap
-
+survey kangaroo01 -title "Captain Kangaroo"
+	
+	input kangaroo01-e.th2
+	
+	map m-all-e -projection extended
+		kangaroo01-1e
+	endmap
+	
+	input kangaroo01-p.th2
+	
+	map m-all-p -projection plan
+		kangaroo01-1p
+	endmap
+	
 	centreline
 		team "Marcin Kowalski" insts
 		team "Rik Venn" notes

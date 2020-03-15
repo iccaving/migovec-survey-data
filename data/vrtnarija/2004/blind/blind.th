@@ -1,12 +1,17 @@
-
 survey blind -title "Side passage off doublethink"
-
-input blind-e.th2
-
-map m-all-e -projection extended
-    blind-1e
-endmap
-
+	
+	input blind-e.th2
+	
+	map m-all-e -projection extended
+		blind-1e
+	endmap
+	
+	input blind-p.th2
+	
+	map m-all-p -projection plan
+		blind-1p
+	endmap
+	
 	centreline
 		team "Thomas Ayles" insts
 		team "James Hooper" notes

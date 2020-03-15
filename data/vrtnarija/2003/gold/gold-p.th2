@@ -3,13 +3,12 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap gold-1p -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
+scrap gold-1p -projection plan -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 
 line wall 
   1152.9343 -340.0742
   1152.9343 -317.679
-  1174.5 -295.2839
-  1201.0424 -276.2066
+  1174.2926 -293.0029
 endline
 
 line floor-step 
@@ -85,7 +84,6 @@ line wall
 endline
 
 line wall 
-  1191.9184 -243.8581
   1172.0117 -252.1526
   1129.7097 -241.3697
   1120.592 -228.9403 1118.4717 -238.8004 1107.3146 -211.5095
@@ -122,7 +120,7 @@ point 1128.2582 -292.3808 station -name 1
 endscrap
 
 
-scrap gold-2p -scale [0 0 90 0 0 0 250 0 inch]
+scrap gold-2p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
 line pit 
   549.983 452.7261

@@ -149,6 +149,8 @@ survey vrtnarija -title "Vrtnarija"
 	join mad_cow-2p@mad_cow envy-1p@envy
 	join mad_cow-2p@mad_cow leprachaun-1p@leprachaun
 	join soda-2p@soda mushroom-2p@mushroom
+	join blind-1p@blind doublethink-1p@doublethink
+	join cow-1p@cow gold-1p@gold
 	
 	###__________2005____________###
 	input ./2005/olympicrift/olympicrift.th
@@ -165,6 +167,10 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@zubafu 0@kangaroo01
 	#equate 13@pico.kangaroo 13@pico.garden-ent
 	
+	join kangaroo01-1p@kangaroo01 zubafu-1p@zubafu
+	join bonus-1p@bonus zubafu-1p@zubafu
+	join scrotty-1p@scrotty bonus-1p@bonus
+	join olympicrift-1p@olympicrift scrotty-1p@scrotty
 	
 	###__________2007____________###
 	input ./2007/smashed_swede/smashed_swede.th
