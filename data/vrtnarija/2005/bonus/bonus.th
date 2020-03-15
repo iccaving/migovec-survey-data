@@ -1,12 +1,17 @@
-
 survey bonus -title "Bonus - the continuation of captain kangaroo from Zubafu"
-
-input bonus-e.th2
-
-map m-all-e -projection extended
-    bonus-1e
-endmap
-
+	
+	input bonus-e.th2
+	
+	map m-all-e -projection extended
+		bonus-1e
+	endmap
+	
+	input bonus-p.th2
+	
+	map m-all-p -projection plan
+		bonus-1p
+	endmap
+	
 	centreline
 		team "Marcin Kowalski" insts
 		team "Rik Venn" notes

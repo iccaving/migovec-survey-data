@@ -1,12 +1,5 @@
 
 survey nevermore -title "Nevermore"
-
-input nevermore-e.th2
-
-map m-all-e -projection extended
-    nevermore-1e
-endmap
-
 	centreline
 		team "Unattributed Notes" insts
 		team "Unattributed Notes" notes
@@ -16,6 +9,7 @@ endmap
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall # Default
+		flags duplicate
 		1	2	4.95	213	-25	# LRUD for all shots, too lazy to enter
 		3	2	17.88	008	+33
 		4	3	9.30	011	+23
