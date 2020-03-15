@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap carwash-1p -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 
-point 264.0757 666.2744 label -text "Bikini<br>Carwash" -align tr -scale l
+point 18.9149 734.896 label -text "Bikini<br>Carwash" -align tl -scale l
 line rock-border -close on
   208.8313 656.7333
   205.9957 657.845
@@ -1206,7 +1206,7 @@ point 133.645 710.4232 station -name 4
 point 121.5143 690.8275 station -name 3
 point 151.0634 680.563 station -name 2
 point 159.3579 646.763 station -name 1
-point 209.2827 720.1919 passage-height -value 10
+point 209.2827 720.1919 passage-height -align t -value 10
 line chimney 
   198.2401 721.6995
   198.2401 721.6995 198.6072 715.0562 202.4923 711.7288

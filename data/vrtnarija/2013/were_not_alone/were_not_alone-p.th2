@@ -3,8 +3,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap were_not_alone-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap were_not_alone-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
+point 593.9775 606.0302 continuation -align r -scale l
+point 569.8721 734.1963 label -text "We're not<br>Alone" -align r -scale l
 line rock-border -close on
   513.2134 785.7548
   513.8736 779.9931
