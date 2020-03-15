@@ -32,6 +32,14 @@ map m-original_entrance_series-p -projection plan -title "Vrtsnarija entrance se
 	m-all-p@zimmer
 endmap
 
+map m-captain_kangaroo -projection plan
+	m-all-p@kangaroo01
+	m-all-p@zubafu
+	m-all-p@bonus
+	m-all-p@scrotty
+	m-all-p@olympicrift
+endmap
+
 map m-friendship_level-p -projection plan
 	m-all-p@friendship
 	m-all-p@fallsrd
@@ -49,12 +57,14 @@ map m-below_big_rock-p -projection plan
 	m-all-p@postiga
 	m-all-p@leprachaun
 	m-all-p@weepeople
+	m-all-p@cow
 	m-all-p@gold
 	m-all-p@envy
 	m-all-p@greed
 	m-all-p@cascade
 	m-all-p@brownriceinlet
 	m-all-p@doublethink
+	m-all-p@blind
 	m-all-p@thirdthoughts
 	m-all-p@mushroom
 	m-all-p@soda
