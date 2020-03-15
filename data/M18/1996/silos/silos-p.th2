@@ -1,0 +1,39 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+
+scrap silos-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
+
+line wall:pit 
+  -41.0498 33.7836
+  -38.3649 25.4635
+  -38.3649 25.4635 -31.9142 12.2225 -31.2352 10.8644
+  -30.5561 9.5064 -27.84 5.7717 -27.84 5.7717
+  -21.7288 2.7161
+  -16.2966 -4.7532
+  -4.95 -10.75
+  6.9637 -8.7317
+  6.9637 -8.7317 2.0371 2.3766 2.0371 3.7346
+  2.0371 5.0927 4.4137 3.3951 1.0185 10.5249
+  -2.3766 17.6547 -14.599 33.6118 -16.2966 36.6674
+  -17.9942 39.723 -26.1425 46.5132 -26.1425 46.5132
+  -26.1425 46.5132
+endline
+
+point -2.95 -10.75 station -name 2
+point -32.32 40.12 station -name 1
+endscrap
+
+
+scrap silos-2p -scale [0 0 90 0 0 0 250 0 inch]
+
+point 16.18 -40.12 station -name 9
+point 16.18 -40.12 station -name 8
+point 32.32 -2.01 station -name 7
+point 32.32 -2.01 station -name 6
+point 32.32 -2.01 station -name 5
+point 32.32 -2.01 station -name 4
+point 16.89 -7.6 station -name 3
+endscrap
+

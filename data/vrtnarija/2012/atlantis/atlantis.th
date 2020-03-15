@@ -4,9 +4,15 @@ survey atlantis -title "Atlantis"
 	input atlantis-p.th2
 	
 	map m-all-p -projection plan
+		atlantis-4p
+		atlantis-3p
+		atlantis-2p
 		atlantis-1p
 	endmap
 	
+	join atlantis-1p atlantis-2p
+	join atlantis-2p atlantis-3p
+	join atlantis-3p atlantis-4p
 
 input atlantis-e.th2
 
