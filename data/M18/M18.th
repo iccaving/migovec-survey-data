@@ -8,6 +8,7 @@ survey M18 -title "M18 part of System Migovec"
 		m-all-p@shreddie
 		m-all-p@gallery
 		m-all-p@void
+		m-all-p@silos
 	endmap
 
 	###__________1995____________###
@@ -28,7 +29,7 @@ survey M18 -title "M18 part of System Migovec"
 	#input ./1996/boogywoo/boogywoo.th
 	input ./1996/gallery/gallery.th
 	#input ./1996/zebra/zebra.th
-	#input ./1996/silos/silos.th
+	input ./1996/silos/silos.th
 	#input ./1996/plop/plop.th
 	#input ./1996/dodge/dodge.th
 	input ./1996/void/void.th
@@ -39,7 +40,7 @@ survey M18 -title "M18 part of System Migovec"
 	equate 17@void 2@gallery
 	#equate 0@zebra 80@gallery
 	#equate 0@plop 10@gallery
-	#equate 1@silos 2@gallery
+	equate 1@silos 2@gallery
 	#equate 0@dodge 12@gallery
 	
 	###__________1999____________###
