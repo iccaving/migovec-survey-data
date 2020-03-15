@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap migcon-1p -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 
-point 114.6625 700.5852 label -text Titanic -align tr -scale l
+point 134.6625 700.5852 label -text Titanic -align tr -scale s
 line pit 
   125.513 607.6235
   125.513 607.6235 122.6983 628.2224 123.2848 630.5685
@@ -17,7 +17,7 @@ line pit
   48.387 656.597 32.9911 640.7612 32.9911 640.7612
 endline
 
-point 493.5311 563.1514 label -text "Mig Country" -align tr -scale l
+point 813.5311 443.1514 label -text "Mig Country" -align tr -scale l
 line rock-border -close on
   217.1201 570.5071
   211.521 566.8236

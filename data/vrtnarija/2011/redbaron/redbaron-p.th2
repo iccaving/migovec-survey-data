@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap redbaron-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap redbaron-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
 line pit 
   521.5559 577.6126
@@ -48,8 +48,9 @@ point 513.3432 515.7198 station -name 1
 endscrap
 
 
-scrap redbaron-2p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap redbaron-2p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
+point 503.1904 678.4427 label -text "Red Baron" -align l -scale s
 line wall 
   553.5463 745.9641
   552.1883 757.168 550.6896 768.3172 547.2945 779.1816
