@@ -3,8 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap minestrone1-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap minestrone1-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
+point 286.8857 881.5435 label -text Minestrone -align r -scale l
 line rock-border -close on
   207.0019 1077.622
   210.1228 1070.2998
