@@ -22,8 +22,7 @@ input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-#select m-primadona_ubend_monatip-p@system_migovec -map-level 0
-select system_migovec
+# select m-all-p@system_migovec
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
@@ -41,8 +40,8 @@ layout plan
 	}
 endlayout
 language fr
-export map -projection plan -o ../../_outputs/map/system_migovec_plan_SLO.pdf -layout plan
-export map -projection plan -o ../../_outputs/map/system_migovec_plan_SLO.svg -layout plan
+export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.svg -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view, using the LAYOUT overview2
