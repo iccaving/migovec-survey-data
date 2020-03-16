@@ -1,12 +1,17 @@
-
 survey dark_tranquillity -title "dark_tranquillity:Dark tranquillity"
-
-input dark_tranquillity-e.th2
-
-map m-all-e -projection extended
-    dark_tranquillity-1e
-endmap
-
+	
+	input dark_tranquillity-e.th2
+	
+	map m-all-e -projection extended
+		dark_tranquillity-1e
+	endmap
+	
+	input dark_tranquillity-p.th2
+	
+	map m-all-p -projection plan
+		dark_tranquillity-1p
+	endmap
+	
 	centreline
 		team "James Kirkpatrick" notes
 		team "Izy" insts

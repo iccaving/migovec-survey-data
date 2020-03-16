@@ -1,0 +1,48 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+line wall 
+  497.4134 1098.755
+  522.6034 1098.755
+endline
+
+line wall 
+  497.4134 1098.755
+  461.9834 1098.755
+endline
+
+line wall 
+  497.4134 1098.755
+  497.4134 1040.175
+endline
+
+line wall 
+  497.4134 1098.755
+  497.4134 1098.755
+endline
+
+endscrap
+
+
+scrap primula-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+line wall 
+  489.5856 1104.8662
+  463.8403 1107.1715 455.2801 1103.2386 455.9591 1091.0162
+  456.6381 1078.7937 463.5896 1046.2758 485.3184 1038.8065
+  507.0472 1031.3372 513.861 1037.4449 517.9352 1044.2352
+  522.0093 1051.0255 538.8884 1089.6193 528.024 1099.1256
+  517.1596 1108.632 504.6524 1105.9394 504.6524 1105.9394
+endline
+
+point 522.6034 1098.755 station -name east
+point 461.9834 1098.755 station -name west
+point 497.4134 1040.175 station -name south
+point 497.4134 1098.755 station -name ridge
+point 497.4134 1098.755 station -name 1
+endscrap
+
