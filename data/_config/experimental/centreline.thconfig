@@ -5,5 +5,8 @@ source "../../system_migovec.th"
 
 #select vrtnarija@system_migovec
 
-export model -o ../../_outputs/troubleshoot.lox
-#export model -o ../../_outputs/troubleshoot.3d
+#export model -o ../../_outputs/troubleshoot.lox
+
+select dysentery@primadona.primadona_ubend_monatip.system_migovec
+
+export map -o ../../_outputs/troubleshoot.svg -projection extended -layout-debug all

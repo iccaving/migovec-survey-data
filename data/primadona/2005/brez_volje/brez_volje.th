@@ -6,7 +6,8 @@ survey brez_volje
 	
 	map  m-all-e -projection extended
 		brez_volje-e1
-		#brez_volje-e2
+		brez_volje-e2
+		brez_volje-e3
 	endmap
 	
 	map m-all-p -projection plan
@@ -30,9 +31,13 @@ survey brez_volje
 	
 	join brez_voljep_1 brez_voljep_2
 	join brez_voljep_2 brez_voljep_3
+
+	join brez_volje-e1 brez_volje-e2
+	join brez_volje-e2 brez_volje-e3
 	
 	centreline
 		date 2005.10.15
+		explo-date 2005.10.15
 		explo-team "Bogomir Remškar"
 		explo-team "Beguš Tadej"
 		
@@ -52,27 +57,27 @@ survey brez_volje
 		BV5	BV6	8.8	78	45	#	0.0	2.9	0.0	0.0
 		extend left
 		BV6	BV7	10.0	63	20	#	0.0	0.0	0.0	0.0
-		extend vertical
+		extend left
 		BV7	BV8	7.9	58	7	#	1.0	0.0	2.0	1.0
-		extend right
+		extend left
 		BV8	BV9	3.4	82	27	#	0.5	0.0	2.0	2.0
-		extend right
+		extend left
 		BV9	BV10	2.1	45	-18	#	0.5	0.0	0.0	0.0
-		extend right
+		extend left
 		BV10	BV11	1.3	10	20	#	0.5	0.0	0.0	0.0
-		extend right
+		extend left
 		BV11	BV12	3.5	71	19	#	0.0	0.5	1.0	0.5
-		extend right
+		extend left
 		BV12	BV13	3.0	331	0	#	0.0	2.9	2.9	0.5
-		extend right
+		extend left
 		BV13	BV14	3.0	309	13	#	0.5	0.0	1.9	0.5
-		extend right
+		extend left
 		BV14	BV15	1.6	26	10	#	0.0	0.5	0.5	0.5
-		extend right
+		extend left
 		BV15	BV16	5.7	10	13	#	0.0	0.5	1.0	1.0
-		extend right
+		extend left
 		BV16	BV17	2.6	320	45	#	0.0	0.5	1.4	1.4
-		extend right
+		extend vertical
 		BV17	BV18	1.2	294	30	#	0.5	0.0	1.4	1.4
 		extend right
 		BV18	BV19	4.4	323	18	#	0.5	0.0	0.5	1.9
@@ -100,8 +105,8 @@ survey brez_volje
 		BV29	BV30	2.5	63	0	#	0.5	0.0	0.0	0.0
 		extend right
 		BV30	BV31	5.8	23	38	#	0.5	0.0	1.4	1.4
-		extend right
-		BV31	BV32	0.0	0	0	#	0.0	0.0	0.0	0.0
+		
+		#BV31	BV32	0.0	0	0	#	0.0	0.0	0.0	0.0
 	endcentreline
 	
 endsurvey

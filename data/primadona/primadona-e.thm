@@ -2,8 +2,8 @@ map  m-all-e -projection extended
 	m-entrance-e
 	m-electric_branch-e #[-200 0 m ] below
 	m-karstaway_branch-e
-	m-hammerhead_branch-e [-400 0 m] none
-	m-ttt_branch-e [-400 0 m] none
+	m-hammerhead_branch-e [-400 0 m] below
+	m-ttt_branch-e [-400 0 m] below
 	m-fenestrator_branch-e
 	m-deep-e
 endmap
@@ -18,7 +18,7 @@ map  m-karstaway_branch-e -projection extended
 	m-all-e@wac
 	m-all-e@what_a_disappointment
 	m-all-e@mfi
-	
+	m-all-e@dysentery
 	m-all-e@hotmk
 	m-all-e@colony
 	m-all-e@udc
@@ -41,10 +41,12 @@ endmap
 
 map  m-ttt_branch-e -projection extended
 	m-all-e@prima2
+	m-prima1-e2@prima1
 	m-all-e@apple_crumble
 	m-all-e@ttt
 	m-all-e@pov ##extremely distorted? why?
-	
+	m-all-e@mandare_resurvey
+	m-all-e@batmere
 	
 	m-all-e@TTTr
 	m-ttt_bottom-e@zima00
@@ -58,7 +60,7 @@ map  m-deep-e -projection extended
 	m-all-e@buckwheat
 	m-all-e@TTTr
 	m-all-e@lost_in_a_dream
-	m-all-e@ajdovscina ## reason not included yet: immense distortion
+	#m-all-e@ajdovscina ## reason not included yet: immense distortion
 	
 	m-all-e@pivnica_resurvey
 	m-all-e@pivnica_2_resurvey
@@ -71,7 +73,7 @@ map  m-deep-e -projection extended
 	m-all-e@penny_falls_2
 	m-all-e@tiger_tiger
 	m-all-e@deeper_than_most
-	m-all-e@spodnji    ## no longer needed since it is covered by pivnica_2_resurvey and spodnji resurvey
+	#m-all-e@spodnji    ## no longer needed since it is covered by pivnica_2_resurvey and spodnji resurvey
 	m-all-e@milanova
 	m-all-e@spodnji_main_chamber_resurvey
 	m-all-e@polnoletna
@@ -93,6 +95,7 @@ endmap
 
 map  m-entrance-e -projection extended
 	m-all-e@prima1
+	m-prima1-e2@prima1
 	m-all-e@drugi
 	m-all-e@risanke
 	#m-all-e@testing_the_waters
