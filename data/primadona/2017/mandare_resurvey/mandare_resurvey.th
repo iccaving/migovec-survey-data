@@ -1,8 +1,13 @@
-survey mandare_low -title "Manđare resurvey"
+survey mandare_resurvey -title "Manđare resurvey"
 	input mandare_resurvey-p.th2
+	input mandare_resurvey-e.th2
 	
 	map m-all-p -projection plan
 		mandare_low-p1
+	endmap
+
+	map m-all-e -projection extended
+		mandare_resurvey-e1
 	endmap
 	
 	centreline
@@ -13,15 +18,17 @@ survey mandare_low -title "Manđare resurvey"
 		team "Rebecca Diss" notes
 		team "Larry Jiang" insts
 		
-		
 		#Page 1
+		extend left
 		1	2	2.83	165	-22
 		2	3	5.07	-	DOWN
-		flags duplicate
+		extend left
 		3	4	3.34	004	-05
+		extend left
 		4	5	6.34	027	+23
+		extend left
 		5	6	6.81	047	+03
+		extend left
 		6	7	3.99	010	-21
-		flags not duplicate
 	endcentreline
 endsurvey

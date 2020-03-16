@@ -40,13 +40,12 @@ survey prima1 -title "Primadona entrance series"
 		prima1p_7
 	endmap
 	
-	map mprima1-e2 -projection extended
+	map m-prima1-e2 -projection extended
 		prima1-e2
 	endmap
 	
 	map  m-all-e -projection extended
 		prima1-e1
-		prima1-e2
 		prima1-e3
 	endmap
 	
@@ -57,7 +56,11 @@ survey prima1 -title "Primadona entrance series"
 	join prima1p_4 prima1p_5
 	join prima1p_5 prima1p_6
 	join prima1p_6 prima1p_7
-	
+
+	join p_e2_l1 p_e3_l1
+	join p_e2_l2 p_e3_l2	
+	join p_e1_l3 p_e3_l3
+	join p_e1_l4 p_e3_l4		
 	centreline
 		cs EPSG:3794
 		fix 35 404188 124289 1735
@@ -129,7 +132,7 @@ survey prima1 -title "Primadona entrance series"
 		extend right
 		35  34  3.93  081  -1  #stn 35 is top left of painted T at entrance,
 		
-		
+		extend start 35
 	endcentreline
 	
 endsurvey
