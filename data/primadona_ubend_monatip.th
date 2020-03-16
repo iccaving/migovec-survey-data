@@ -35,6 +35,9 @@ survey primadona_ubend_monatip -title "Primadona, Mona tip, Ubend-571"
 	join s5_l2@prima1.primadona:end s1_l2@therock.monatip:0
 	join s1_l1a@prima2.primadona:0 s3_l1@therock.monatip:end
 	join s1_l2@prima2.primadona:end s3_l2@therock.monatip:0
+
+	join dt_e1_l1@doubletime.monatip bv_e1_l1@brez_volje.primadona
+	join dt_e1_l2@doubletime.monatip bv_e1_l2@brez_volje.primadona
 	
 	# joins for Ubend to Primadona?
 	
