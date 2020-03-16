@@ -1,12 +1,17 @@
-
 survey intravenus_de_milo -title "intravenus_de_milo: Intravenus de milo"
-
-input intravenus_de_milo-e.th2
-
-map m-all-e -projection extended
-    intravenus_de_milo-1e
-endmap
-
+	
+	input intravenus_de_milo-e.th2
+	
+	map m-all-e -projection extended
+		intravenus_de_milo-1e
+	endmap
+	
+	input intravenus_de_milo-p.th2
+	
+	map m-all-p -projection plan
+		intravenus_de_milo-1p
+	endmap
+	
 	centreline
 		team "James Kirkpatrick" insts
 		team "Clewin Griffith" notes
