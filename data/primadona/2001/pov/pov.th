@@ -56,17 +56,17 @@ survey pov
 		
 		units length meters
 		units compass clino degrees
-		extend left
+		extend right
 		1  2  12.4  43  12  #tocka 1 enaka tocki ttt 14
-		extend left
+		extend right
 		2  3  7.7  65  0
-		extend left
+		extend right
 		3  4  7.3  343  2
-		extend left
+		extend right
 		4  5  9.75  313  -6
-		extend left
+		extend right
 		5  6  15.2  26  10
-		extend left
+		extend right
 		6  7  8.4  22  -14
 		extend right
 		7  8  1.2  358  -7
@@ -86,9 +86,9 @@ survey pov
 		14  15  5.4  13  58
 		extend left
 		15  16  5.7  358  11 #tocka 15 PSS je 10 cm pod svedrovcem
-		extend right
+		extend left
 		16  17  7.05  62  14
-		extend right
+		extend left
 		17  18  9.4  352  30  #tocka 18 je PSS
 		extend left
 		18  19  6.95  7  9  #tocka 19 stojis na lulcku
@@ -106,7 +106,7 @@ survey pov
 		24  25  3.3  291.5  21  #tocka 23 je PSS
 		extend left
 		25  26  4.85  317  0
-		extend ignore 26
+		#extend ignore 27 28
 		extend left
 		26  27  2.2  355  44  # zacetek puscice za mangiare
 		flags duplicate
