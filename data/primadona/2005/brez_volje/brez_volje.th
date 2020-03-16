@@ -6,7 +6,8 @@ survey brez_volje
 	
 	map  m-all-e -projection extended
 		brez_volje-e1
-		#brez_volje-e2
+		brez_volje-e2
+		brez_volje-e3
 	endmap
 	
 	map m-all-p -projection plan
@@ -30,6 +31,9 @@ survey brez_volje
 	
 	join brez_voljep_1 brez_voljep_2
 	join brez_voljep_2 brez_voljep_3
+
+	join brez_volje-e1 brez_volje-e2
+	join brez_volje-e2 brez_volje-e3
 	
 	centreline
 		date 2005.10.15
@@ -53,7 +57,7 @@ survey brez_volje
 		BV5	BV6	8.8	78	45	#	0.0	2.9	0.0	0.0
 		extend left
 		BV6	BV7	10.0	63	20	#	0.0	0.0	0.0	0.0
-		extend vertical
+		extend left
 		BV7	BV8	7.9	58	7	#	1.0	0.0	2.0	1.0
 		extend left
 		BV8	BV9	3.4	82	27	#	0.5	0.0	2.0	2.0
@@ -73,36 +77,36 @@ survey brez_volje
 		BV15	BV16	5.7	10	13	#	0.0	0.5	1.0	1.0
 		extend left
 		BV16	BV17	2.6	320	45	#	0.0	0.5	1.4	1.4
-		extend left
+		extend vertical
 		BV17	BV18	1.2	294	30	#	0.5	0.0	1.4	1.4
-		extend left
+		extend right
 		BV18	BV19	4.4	323	18	#	0.5	0.0	0.5	1.9
-		extend left
+		extend right
 		BV19	BV20	6.7	0	29	#	0.5	0.0	0.5	1.9
-		extend left
+		extend right
 		BV20	BV21	3.3	50	16	#	0.0	0.5	1.0	5.0
-		extend left
+		extend right
 		BV21	BV22	1.1	65	20	#	0.0	0.5	1.9	1.9
-		extend left
+		extend right
 		BV22	BV23	4.4	104	-9	#	0.5	0.0	0.0	0.0
-		extend left
+		extend right
 		BV23	BV24	5.7	38	0	#	2.9	0.0	0.0	0.0
-		extend left
+		extend right
 		BV24	BV25	5.0	0	90	#	0.0	0.0	0.0	0.0
-		extend left
+		extend right
 		BV25	BV26	6.5	40	75	#	0.5	0.0	0.0	0.0
-		extend left
+		extend right
 		BV26	BV27	1.5	133	20	#	0.0	0.5	1.9	1.0
-		extend left
+		extend right
 		BV27	BV28	1.8	8	0	#	0.5	0.0	0.0	0.0
-		extend left
+		extend right
 		BV28	BV29	3.1	36	10	#	0.0	0.0	0.0	0.0
-		extend left
+		extend right
 		BV29	BV30	2.5	63	0	#	0.5	0.0	0.0	0.0
-		extend left
+		extend right
 		BV30	BV31	5.8	23	38	#	0.5	0.0	1.4	1.4
-		extend left
-		BV31	BV32	0.0	0	0	#	0.0	0.0	0.0	0.0
+		
+		#BV31	BV32	0.0	0	0	#	0.0	0.0	0.0	0.0
 	endcentreline
 	
 endsurvey

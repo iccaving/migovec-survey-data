@@ -19,7 +19,8 @@ survey primadona -title "Primadona"
 	join s1_l1@prima2:0 s7_l4@prima1:end
 	join s1_l1@prima2:end s7_l3@prima1:end
 	join ttt-e1@ttt zima00-3e@zima00
-	join prima1-e3@prima1 prima1-e3@prima1
+
+	join prima1-e2@prima1 prima2-e2@prima2
 	
 	###______________2001_____________ ###
 	
@@ -49,6 +50,7 @@ survey primadona -title "Primadona"
 	
 	join s3_l1@drugi:0 s2_l1@prima1:end
 	join s3_l2@drugi:end s2_l2@prima1:0
+	join pov-e1@pov risa2-e1@risa2
 	
 	join galerija-2e@galerija galerija-e1@galerija
 	join drugi-2e@drugi prima1-e1@prima1
@@ -240,8 +242,8 @@ survey primadona -title "Primadona"
 	equate 5@hammerhead3 14@hammerhead2
 	equate 10@dogfish 24@hammerhead2
 	equate 1@dogfish 12@high_and_dry
-	equate 47@TTTr 1@mandare_low
-	equate 1@batmere 7@mandare_low
+	equate 47@TTTr 1@mandare_resurvey
+	equate 1@batmere 7@mandare_resurvey
 	equate 19@entirely_my_fault 11@karstaway
 	equate 9@what_a_disappointment 9@wac
 	
@@ -258,7 +260,7 @@ survey primadona -title "Primadona"
 	join dejavup_1@dejavu zima00p_1@zima00
 	join s3_l1@pov:end s3_l1@apple_crumble:end
 	join s3_l6@pov s3_l2@apple_crumble
-	join batmere-p1@batmere mandare_low-p1@mandare_low
+	join batmere-p1@batmere mandare_low-p1@mandare_resurvey
 	join electric_dreams-p1@electric_dreams more_like_welding-p3@more_like_welding
 	join TTTr-p3@TTTr zima00p_2@zima00
 	join jack_of_hearts-2e@jack_of_hearts smer0-e1@smer0
@@ -269,6 +271,16 @@ survey primadona -title "Primadona"
 	join hammerhead2-2e@hammerhead2 dogfish-1e@dogfish
 	join dogfish-1e@dogfish high_and_dry-1e@high_and_dry
 	join hammerhead2-1e@hammerhead2 hammerhead3-1e@hammerhead3
+	join batmere-e1@batmere mandare_resurvey-e1@mandare_resurvey
+
+
+	join apple_crumble-1e@apple_crumble pov-e2@pov
+	join pov_e2_l1@pov ac_e2_l1@apple_crumble
+	join pov_e2_l2@pov ac_e2_l2@apple_crumble
+	join ttt-e2@ttt batmere-e1@batmere
+	join ttt-e1@ttt mandare_resurvey-e1@mandare_resurvey
+	join batmere-e1@batmere mandare_resurvey-e1@mandare_resurvey
+	join ttt-e1@ttt ttt-e2@ttt
 	
 	###______________ 2018_____________ ###
 	input "./2018/pivnica_resurvey/pivnica_resurvey.th"
@@ -376,7 +388,7 @@ survey primadona -title "Primadona"
 	
 	###other ###
 	#inputs
-	input "./2018/dysentry/dysentry.th"
+	input "./2018/dysentery/dysentery.th"
 	input "./2018/lumos/lumos.th"
 	input "./2018/diagonalley/diagonalley.th"
 	input "./2018/damp_squib/damp_squib.th"
@@ -384,7 +396,7 @@ survey primadona -title "Primadona"
 	input "./2018/come_up_smiling/come_up_smiling.th"
 	input "./2018/come_up_smiling_2/come_up_smiling_2.th"
 	
-	equate 0@dysentry 6@more_like_welding
+	equate 0@dysentery 6@more_like_welding
 	equate 1@lumos 6@hammerhead2
 	equate 3@lumos 3@hammerhead
 	equate 19@lumos 1@diagonalley
@@ -394,10 +406,10 @@ survey primadona -title "Primadona"
 	equate 0@come_up_smiling_2 46@smer0
 	equate 8@come_up_smiling 23@cattlegrid
 	
-	join l2@dysentry:0 l2a@more_like_welding:0
-	join l3@dysentry:0 l3@more_like_welding:end
-	join l1@more_like_welding:0 l1@dysentry:end
-	join l2@more_like_welding:end l2@dysentry:end
+	join l2@dysentery:0 l2a@more_like_welding:0
+	join l3@dysentery:0 l3@more_like_welding:end
+	join l1@more_like_welding:0 l1@dysentery:end
+	join l2@more_like_welding:end l2@dysentery:end
 	join come_up_smiling-p1@come_up_smiling come_up_smiling_2-p1@come_up_smiling_2
 	join electric_dreams-p1@electric_dreams odessey-p1@odessey
 	join lost_in_a_dream-e1@lost_in_a_dream lost_in_a_dream_2-e1@lost_in_a_dream_2
