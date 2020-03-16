@@ -6,8 +6,11 @@ survey monatip4
 	map  m-all-e -projection extended
 		monatip4-e1
 		monatip4-e2
+		break
 		monatip4-e4
 	endmap
+
+	join monatip4-e1 monatip4-e2
 	
 	map m-all-p -projection plan
 		mmonatip4-p1
@@ -80,11 +83,11 @@ survey monatip4
 		11  12  3.70  112  -03  # .11 1.5 0 0.5 1.7
 		extend left
 		12  13  3.32  125  +14  # .12 0 0.5 0 0.5
-		extend left
+		extend right
 		13  14  4.54  133  -14  # .13 1 1 0 1
-		extend left
+		extend right
 		14  15  4.16  164  +03  # .14 1 2 1 0
-		extend left
+		extend right
 		15  16  2.65  126  -12  # .15 3 0 0 1.5
 		extend right
 		
@@ -129,7 +132,7 @@ survey monatip4
 		33  34  2.04  223  -16  # .33 1 0 0 1.7
 		extend right
 		34  35  2.02  117  +07  # .34 2 1 0.5 0.5
-		extend right
+		extend left
 		35  36  3.67  245  -36  # .35 0 0.5 0.3 1.7
 		extend left
 		36  37  2.35  172  -23  # .36 2 0 1 1.7
