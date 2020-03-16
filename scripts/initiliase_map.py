@@ -87,7 +87,7 @@ with open('xvi.xvi', 'r') as f:
     xvi_lines = f.readlines()
     xvi_lines.reverse()
     for line in xvi_lines:
-        match = re.search("{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(\d+)\s*}", line)
+        match = re.search("{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(\S+)\s*}", line)
         if match:
             x = match.groups()[0]
             y = match.groups()[1]
@@ -96,7 +96,7 @@ with open('xvi.xvi', 'r') as f:
                 seen.add(station)
                 points.append(point.format(x=x, y=y, station=station))
         match = re.search(
-            "{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*}", line)
+            "^\s*{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*.*}", line)
         if match:
             x1 = match.groups()[0]
             y1 = match.groups()[1]

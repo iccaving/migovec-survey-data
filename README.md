@@ -32,6 +32,8 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
   - [Final considerations](#final-considerations)
   - [Tips](#tips)
     - [How do I show the centerline of undrawn maps?](#how-do-i-show-the-centerline-of-undrawn-maps)
+    - [How Do I Make a Pillar (solid rock within a passage)?](#how-do-i-make-a-pillar-solid-rock-within-a-passage)
+    - [How Do I Control Which Passage Appears On Top of Another?](#how-do-i-control-which-passage-appears-on-top-of-another)
 
 ## Downloads
 
@@ -544,4 +546,29 @@ endlayout
 # And export as normal
 language en
 export map -projection plan -o ../_outputs/plan_ENG.pdf -layout plan
+```
+
+### How Do I Make a Pillar (solid rock within a passage)?
+
+Firstly draw the wall clockwise, the opposite way to exterior walls, so that
+the blue and yellow ticks point outwards into the passage. Then set an option
+on the wall `-outline in`. In Inkscape this is done in `Object Properties` pane
+in the `title` text box. In the `th2` file you can add this option on the line
+defintion `line wall -outline in`.
+
+### How Do I Control Which Passage Appears On Top of Another?
+
+Therion decides this based on the passage order in the map definition. The
+higher in the map definition, the higher z-index it is given and the higher it
+appears on the survey.
+
+Sometimes this is a bit buggy (for example two scraps defined in a map) and it
+is necessary to seperate the scraps with a `break` command:
+
+```
+map m-all-p -projection plan
+  wonderland-1p    # this one will be rendered on top
+  break
+	wonderland-2p    # this one underneath
+endmap
 ```
