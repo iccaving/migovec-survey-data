@@ -24,6 +24,7 @@ survey hotmk #the hall of the mountain king
 	
 	join hotmk-1p hotmk-2p
 	
+	join hall_of_the_mountain_king-e2 hall_of_the_mountain_king-e1
 	
 	
 	centreline
@@ -42,7 +43,7 @@ survey hotmk #the hall of the mountain king
 		mark 1 8 12 fixed
 		
 		#Page 1/1
-		extend vertical
+		extend right
 		1 2 7.00  116 +46
 		extend right
 		2 3 4.73  041 +06
@@ -52,11 +53,11 @@ survey hotmk #the hall of the mountain king
 		6 7 13.00 060 -22
 		7 8 13.01 011 +18
 		8 9 15.00 031 +71
-		extend left
+		extend right
 		9 10  21.30 028 +82
-		extend left
+		extend right
 		10  11  2.00  349 +04
-		extend left
+		extend right
 		11  12  2.70  044 +12
 	endcentreline
 	

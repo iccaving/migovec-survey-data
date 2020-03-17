@@ -5,8 +5,24 @@ encoding  utf-8
 
 scrap monatip1-s1 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
+line wall -subtype invisible
+  8443.4372 -474.91
+  8426.4704 -287.0816
+endline
+
+line wall -subtype invisible
+  890.5162 229.8058
+  882.4541 -50.0077
+endline
+
 point 983.8671 942.8507 label -text MONATIP -align l -scale xl
-point 450.0 0.0 entrance -align l -scale xl -orientation 90.0
+point 450.0 -0.0 entrance -align l -scale xl -orientation 90.0
+line wall -outline none -clip off
+  890.5162 229.8058
+  1016.9721 596.4972
+  1069.8843 764.0567
+endline
+
 line wall 
   4662.5876 -113.1794
   4664.246 -60.0447
@@ -52,11 +68,9 @@ line wall
   2013.4921 226.1171
   1607.8295 102.6518
   1281.5349 85.0173
-  1034.6098 67.3669
+  1090.1044 106.045
   972.8779 137.9207
-  937.6025 305.4803
-  1016.9721 596.4972
-  1069.8843 764.0567
+  890.5162 229.8058
 endline
 
 line wall 
@@ -85,7 +99,6 @@ line wall
   8183.5204 -481.3671
   8292.3576 -460.4679
   8378.5928 -479.8563 8320.1354 -485.361 8443.4372 -474.91
-  8559.1066 -472.3969
 endline
 
 line wall 
