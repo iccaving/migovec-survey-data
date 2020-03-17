@@ -1,17 +1,22 @@
-
 survey cheesecake -title "Cheesecake:"
-
-input cheesecake-e.th2
-
-map m-all-e -projection extended
-    cheesecake-1e
-endmap
-
+	
+	input cheesecake-e.th2
+	
+	map m-all-e -projection extended
+		cheesecake-1e
+	endmap
+	
+	input cheesecake-p.th2
+	
+	map m-all-p -projection plan
+		cheesecake-1p
+	endmap
+	
 	centreline
-		team "Jarvist Frost / James Kirkpatrick" insts
-		team "Unknown" notes
-		explo-team "Jarvist Frost / James Kirkpatrick"
-		explo-team "Unknown"
+		team "Jarvist Frost" notes
+		team "James Kirkpatrick" insts
+		explo-team "Jarvist Frost"
+		explo-team "James Kirkpatrick"
 		date 2008.08.15
 		units length meters
 		units compass clino degrees

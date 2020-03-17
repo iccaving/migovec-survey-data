@@ -1,12 +1,17 @@
-
 survey primula -title "Primula"
-
-input primula-e.th2
-
-map m-all-e -projection extended
-    primula-1e
-endmap
-
+	
+	input primula-e.th2
+	
+	map m-all-e -projection extended
+		primula-1e
+	endmap
+	
+	input primula-p.th2
+	
+	map m-all-p -projection plan
+		primula-1p
+	endmap
+	
 	centreline
 		team "DG" insts
 		team "TO" notes
