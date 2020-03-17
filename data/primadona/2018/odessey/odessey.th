@@ -1,5 +1,6 @@
-survey odessey -title 'Odyssey'
+survey odessey -title "Odyssey"
 	input odessey-p.th2
+	input odessey-e.th2
 	
 	map m-all-p -projection plan
 		modessey-p1
@@ -13,7 +14,11 @@ survey odessey -title 'Odyssey'
 	map modessey-p2 -projection plan
 		odessey-p2
 	endmap
-	
+
+	map m-all-e -projection extended
+		odessey-e1
+	endmap
+
 	centreline
 		date 2018.07.28
 		explo-date 2018.07.28
@@ -29,12 +34,17 @@ survey odessey -title 'Odyssey'
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
-		
+		extend right
 		1	2	2.9	349	+27
+		extend right
 		2	3	7	314	+21
+		extend right
 		3	4	13.67	034	+47
+		extend right
 		4	5	4.86	074	+16
+		extend right
 		5	6	8.29	024	+53
+		extend right
 		6	7	7	006	-35
 		
 	endcentreline

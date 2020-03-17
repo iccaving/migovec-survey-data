@@ -423,12 +423,15 @@ survey primadona -title "Primadona"
 	join snakebitetwo-e1@snakebitetwo ave_maria-e1@ave_maria
 	join come_up_smiling-s1@come_up_smiling come_up_smiling_2-s1@come_up_smiling_2
 	join come_up_smiling_2-s1@come_up_smiling_2 smer0-e1@smer0
+	join odessey-e1@odessey electric_dreams-e1@electric_dreams
+	join odessey-e1@odessey electric_dreams-e2@electric_dreams
+
 	
 	###______________ 2019_____________ ###
 	
 	input "./2019/ad_aspera_per_aqua/ad_aspera_per_aqua.th"
 	input "./2019/artemis/artemis.th"
-	#input ./2019/power_grab/power_grab.th
+	input "./2019/power_grab/power_grab.th"
 	input "./2019/tartarus/tartarus.th"
 	input "./2019/poseidon_rift/poseidon_rift.th"
 	input "./2019/lachrymosa/lachrymosa.th"
@@ -463,6 +466,7 @@ survey primadona -title "Primadona"
 	equate 15@spodnji_main_chamber_resurvey 0@pivnica_2_resurvey
 	equate 10@polnoletna 10@ma_je_vlazna
 	equate 33@polnoletna 0@spodnji_main_chamber_resurvey
+	equate 11@power_grab 1@odessey
 	
 	
 	join the_aqueduct-p2@the_aqueduct ad_aspera_per_aqua-1p@ad_aspera_per_aqua
@@ -492,6 +496,7 @@ survey primadona -title "Primadona"
 	join artemis-1s@artemis poseidon_rift-1s@poseidon_rift
 	join ma_je_vlazna-1e@ma_je_vlazna polnoletna-1e@polnoletna
 	join polnoletna-1e@polnoletna milanova_e1@milanova
+	join power_grab-e1@power_grab electric_dreams-e2@electric_dreams
 	
 endsurvey
 

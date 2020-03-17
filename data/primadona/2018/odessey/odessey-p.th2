@@ -1,13 +1,9 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 646.0 747.75
-##XTHERION## xth_me_area_zoom_to 400
-
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
 
 
 scrap odessey-p1 -projection plan -scale [0.0 0.0 910.3753066877721 1024.0 0.0 0.0 112.33 126.35]
-
-line wall
-endline
 
 line wall
   469.75 391.75
@@ -33,8 +29,6 @@ line floor-step
   474.0 525.0 485.0 532.0 476.0 535.5
 endline
 
-line rock-border
-endline
 
 line rock-border -close on
   403.25 490.75
@@ -208,5 +202,3 @@ point 500.28903838543727 572.5809259992086 station -name 6
 point 483.8369608231104 535.6245350217649 station -name 5
 
 endscrap
-
-

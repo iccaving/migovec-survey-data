@@ -5,6 +5,7 @@ survey bravenewworld -title "Brave New World"
 	
 	map m-all-p -projection plan
 		bravenewworld-1p
+		bravenewworld-2p
 	endmap
 	
 
@@ -20,6 +21,8 @@ endmap
 		explo-team "Rhys Tyers"
 		explo-team "James Hooper"
 		date 2012.7.21
+
+		mark 6 11 12 fixed
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
