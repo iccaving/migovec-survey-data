@@ -3,7 +3,7 @@
 survey death_star -title "Death Star"
 	
 	input "death_star-1p.th2"
-	input "death_star-1s.th2"
+	input "death_star-e.th2"
 	input "death_star-2p.th2"
 	#input "death_star-twos.th2"
 	
@@ -23,8 +23,20 @@ survey death_star -title "Death Star"
 		death_star-5p
 	endmap
 	
-	map m1s -projection extended
-		death_star-1s
+	map m1e -projection extended
+		death_star-e1
+	endmap
+
+	map m2e -projection extended
+		death_star-e2
+	endmap
+
+	map m3e -projection extended
+		death_star-e3
+	endmap
+
+	map m4e -projection extended
+		death_star-e4
 	endmap
 	map m2p -projection plan
 		death_star-2p
@@ -42,9 +54,15 @@ survey death_star -title "Death Star"
 	endmap
 	
 	map  m-all-e -projection extended
-		m1s
+		m1e
+		m2e
+		m3e
+		m4e
 	endmap
 	
+	join death_star-e1 death_star-e3
+	join death_star-e2 death_star-e3
+	join death_star-e1 death_star-e4
 	join death_star-3p death_star-1p
 	
 	centerline
@@ -380,7 +398,7 @@ survey death_star -title "Death Star"
 		11 . 3.11 58.6 6.6
 		11 . 2.36 33.6 5.0
 		11 . 2.34 41.2 22.5
-		extend left
+		extend vertical
 		11 12 3.98 287.6 8.0
 		# extend auto
 		12 . 4.13 97.7 -8.3

@@ -5,6 +5,11 @@ encoding  utf-8
 
 scrap cattlegrid-e1 -scale [328.0 -734.0 501.0 -735.0 0 0 15 0 m] -projection extended
 
+line wall -subtype invisible
+  815.79 547.81
+  769.7442 551.5343
+endline
+
 line rock-border -close on -clip off
   792.9364 557.4593
   792.2592 557.6285 775.6692 561.1836 775.6692 561.1836

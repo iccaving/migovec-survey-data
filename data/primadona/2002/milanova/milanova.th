@@ -1,11 +1,12 @@
 encoding  utf-8
 survey milanova
 	
-	input "milanovap.th2"
-	input "milanova_extend.th2"
+	input "milanova-p.th2"
+	input "milanova-e.th2"
 	
 	map  m-all-e -projection extended
 		milanova_e1
+		milanova_e2
 	endmap
 	
 	map m-all-p -projection plan

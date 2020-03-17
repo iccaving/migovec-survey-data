@@ -310,6 +310,21 @@ endscrap
 
 scrap zima00-3e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
+line wall:invisible 
+  -1750.6993 1040.9388
+  -1706.4941 1082.963
+endline
+
+line wall:invisible 
+  -1609.8919 1259.4439
+  -1612.66 1574.9968
+endline
+
+line wall:invisible 
+  -2761.3834 1608.2129
+  -2783.5276 1508.5646
+endline
+
 point -829.2573 1048.1147 remark -text 2018 -align tr
 point -878.6785 989.8857 camp -align t
 line rock-border -close on
