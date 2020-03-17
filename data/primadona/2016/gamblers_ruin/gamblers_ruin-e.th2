@@ -5,17 +5,18 @@ encoding  utf-8
 
 scrap gamblers_ruin-1e -scale [331.0 -735.0 536.0 -734.0 0.0 0.0 8 0.0 m] -projection extended
 
-point 695.5519 634.3528 label -text "Gambler's Ruin" -align tl -scale m
+point 695.5519 634.3528 label -text "Gambler's Ruin" -align tl
 line wall -subtype blocks
   354.2489 163.59
   434.2786 160.0593
 endline
 
 line wall -subtype blocks
-  1050.9778 929.7564
+  1089.675 962.2121
+  1043.4998 923.0979
   965.0636 853.2574
   912.1028 828.5424
-  912.1028 828.5424 899.5715 792.4577 899.5715 792.4577
+  899.5715 792.4577
   850.9036 768.5201
 endline
 
@@ -32,7 +33,8 @@ line wall -subtype blocks
   917.9873 750.8665
   1000.2581 821.4845
   1075.6928 869.7341
-  1108.6462 890.9184
+  1109.562 901.221
+  1154.8332 936.2732
 endline
 
 line wall 

@@ -5,6 +5,24 @@ encoding  utf-8
 
 scrap tartarus-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
 
+line wall:invisible 
+  262.27 967.25
+  42.7688 942.287
+endline
+
+line wall:invisible 
+  -35.29 815.62
+  -97.93 788.04
+endline
+
+line wall:invisible 
+  1378.4068 39.1169
+  1365.3678 212.3491
+endline
+
+point 1190.6911 198.8875 station -name 10
+point 949.6552 272.6472 station -name 9
+point 630.9082 347.7239 station -name 8
 line wall 
   1365.3678 212.3491
   1259.1932 236.5644
@@ -21,7 +39,7 @@ line wall
   1378.4068 39.1169
 endline
 
-point -260.7797 705.9678 label -text Tartarus -align l -scale m
+point -260.7797 705.9678 label -text Tartarus -align l
 line wall 
   127.84 487.36
   210.7418 421.4836
@@ -55,7 +73,6 @@ line rock-border -close on
   -149.18 660.64
   -139.93 661.61
   -126.06 662.4
-  -115.8 685.32
 endline
 
 line rock-border -close on
@@ -64,7 +81,6 @@ line rock-border -close on
   -140.71 602.79
   -128.69 593.29
   -120.05 590.37
-  -122.56 606.52
 endline
 
 line rock-border -close on
@@ -74,14 +90,12 @@ line rock-border -close on
   -116.43 582.06
   -104.87 576.93
   -93.47 576.95
-  -94.69 591.74
 endline
 
 line rock-border -close on
   -68.91 577.95
   -80.98 576.96
   -79.37 566.65
-  -68.91 577.95
 endline
 
 line rock-border -close on
@@ -90,7 +104,6 @@ line rock-border -close on
   -39.44 557.11
   -49.65 547.2
   -62.79 552.09
-  -55.99 571.14
 endline
 
 line rock-border -close on
@@ -98,7 +111,6 @@ line rock-border -close on
   -34.59 555.88
   -31.79 542.15
   -22.07 540.18
-  -21.31 557.54
 endline
 
 line rock-border -close on
@@ -106,7 +118,6 @@ line rock-border -close on
   -11.28 540.72
   -11.64 530.61
   -2.82 528.76
-  5.21 539.5
 endline
 
 line rock-border -close on
@@ -114,7 +125,6 @@ line rock-border -close on
   0.26 555.85
   -10.31 549.13
   1.13 543.59
-  12.69 555.15
 endline
 
 line rock-border -close on
@@ -123,7 +133,6 @@ line rock-border -close on
   32.74 532.02
   30.26 519.61
   39.13 512.33
-  54.17 527.94
 endline
 
 line rock-border -close on
@@ -134,7 +143,6 @@ line rock-border -close on
   59.52 506.98
   65.45 496.39
   79.57 491.51
-  99.56 507.06
 endline
 
 line rock-border -close on
@@ -143,7 +151,6 @@ line rock-border -close on
   103.43 499.76
   111.76 490.63
   127.84 487.36
-  127.11 509.64
 endline
 
 line rock-border -close on
@@ -158,7 +165,6 @@ line rock-border -close on
   -94.34 626.98
   -82.64 622.51
   -74.6 621.99
-  -47.18 658.63
 endline
 
 line rock-border -close on
@@ -176,7 +182,6 @@ line rock-border -close on
   -111.3 730.91
   -120.54 722.19
   -131.0 689.15
-  -109.49 677.21
 endline
 
 line rock-border -close on
@@ -196,7 +201,6 @@ line rock-border -close on
   34.75 648.87
   52.54 646.79
   62.41 646.0
-  53.65 705.6
 endline
 
 line rock-border -close on
@@ -209,7 +213,6 @@ line rock-border -close on
   54.96 612.52
   71.8 613.73
   83.43 616.76
-  77.54 629.45
 endline
 
 line rock-border -close on
@@ -217,7 +220,6 @@ line rock-border -close on
   -4.97 761.35
   -12.92 748.1
   -4.85 741.28
-  7.68 759.81
 endline
 
 line rock-border -close on
@@ -226,7 +228,6 @@ line rock-border -close on
   -43.25 761.67
   -40.64 754.05
   -25.64 754.91
-  -28.64 770.3
 endline
 
 line rock-border -close on
@@ -235,7 +236,6 @@ line rock-border -close on
   20.7 816.84
   17.81 808.91
   21.06 801.29
-  49.24 814.68
 endline
 
 line rock-border -close on
@@ -243,7 +243,6 @@ line rock-border -close on
   -6.67 787.07
   -9.43 778.62
   -4.13 771.21
-  10.48 787.07
 endline
 
 line rock-border -close on
@@ -259,11 +258,9 @@ line rock-border -close on
   -54.51 774.14
   -40.37 776.02
   -22.35 777.11
-  -25.84 802.1
 endline
 
-line rock-border -close on
-  146.68 1021.24
+line rock-border -close on -clip off
   110.46 1007.24
   80.18 1002.58
   58.82 997.43
@@ -279,7 +276,6 @@ line rock-border -close on
   164.52 931.58
   158.41 963.88
   135.74 1007.29
-  146.68 1021.24
 endline
 
 line rock-border -close on
@@ -296,7 +292,6 @@ line rock-border -close on
   179.91 849.59
   190.25 836.15
   198.49 843.32
-  253.79 923.88
 endline
 
 point 229.29 827.21 u:water_drip 
@@ -330,7 +325,6 @@ line rock-border -close on
   193.55 590.79
   209.96 588.74
   222.25 587.05
-  228.99 613.4
 endline
 
 line rock-border -close on
@@ -342,7 +336,6 @@ line rock-border -close on
   121.55 626.54
   136.76 626.14
   148.18 627.14
-  140.22 647.65
 endline
 
 line wall 
