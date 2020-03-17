@@ -41,7 +41,7 @@ survey primadona -title "Primadona"
 	
 	join s1_l1@risanke:end s7_l1@prima1:0
 	join s1_l2@risanke:0 s7_l2@prima1:end
-	join risa2p_1@risa2 risankep_1@risanke
+	join risa2p_1@risa2 risanke-p1@risanke
 	join risa2p_3@risa2 povp_1@pov
 	join s4_l1@pov:end s4_l1@ttt:end
 	join s4_l2@pov:0 s4_l2@ttt:end
@@ -99,6 +99,9 @@ survey primadona -title "Primadona"
 	
 	equate 18@smer1 43@smer0
 	equate 30@smer0 1@smer1
+
+	join smer0-e2@smer0 smer1-e1@smer1
+	join smer0-e1@smer0 smer1-e2@smer1
 	
 	###______________2016_____________ ###
 	input "./2016/karstaway/karstaway.th"

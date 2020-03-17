@@ -5,6 +5,12 @@ survey monatip8 -title "Monatip 8"
 	map m-all-p -projection plan
 		monatip8-1p
 	endmap
+
+	input monatip8-e.th2
+	
+	map m-all-e -projection extended
+		monatip8-e1
+	endmap
 	
 	centreline
 		
@@ -23,13 +29,19 @@ survey monatip8 -title "Monatip 8"
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
-		
+		extend right
 		1	2	9.6	55		45	#
+		extend right
 		2	3	5.0	343		21	#
+		extend right
 		3	4	23.8	0		90	#
+		extend right
 		4	5	4.8	90		61	#
+		extend right
 		5	6	7.0	327		6	#
+		extend right
 		6	7	25.5	59		75	#
+		extend right
 		7	8	4.0	35		30	#
 		
 		
