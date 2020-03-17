@@ -1,7 +1,7 @@
 encoding  utf-8
 survey smer0
-	input "smer0p.th2"
-	input "smer0_extend.th2"
+	input "smer0-p.th2"
+	input "smer0-e.th2"
 	
 	
 	map msmer0p_1 -projection plan
@@ -30,6 +30,7 @@ survey smer0
 	
 	map  m-all-e -projection extended
 		smer0-e1
+		smer0-e2
 	endmap
 	
 	join smer0p_2 smer0p_1
@@ -37,6 +38,8 @@ survey smer0
 	join smer0p_3 smer0p_6
 	join smer0p_6 smer0p_4
 	join smer0p_4 smer0p_5
+
+	join smer0-e1 smer0-e2
 	
 	map m-all-p -projection plan
 		msmer0p_1

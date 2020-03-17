@@ -1,16 +1,16 @@
 encoding  utf-8
 survey risanke
 	
-	input "risankep.th2"
-	input "risanke_extend.th2"
+	input "risanke-p.th2"
+	input "risanke-e.th2"
 	
 	
 	map  m-all-e -projection extended
-		risanke_e1
+		risanke-e1
 	endmap
 	
 	map m-all-p -projection plan
-		risankep_1
+		risanke-p1
 	endmap
 	
 	centreline

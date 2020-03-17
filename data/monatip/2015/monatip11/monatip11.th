@@ -1,6 +1,14 @@
 survey monatip11 -title "Monatip 11"
 	
 	input "monatip11-p.th2"
+	input "monatip11-e.th2"
+
+	map m-all-e -projection extended
+		monatip11-e1
+		monatip11-e2
+		monatip11-e3
+		monatip11-e4
+	endmap
 	
 	map m-all-p -projection plan
 		monatip11-4p
@@ -25,9 +33,7 @@ survey monatip11 -title "Monatip 11"
 		explo-team "Dejan Ristić"
 		explo-team "Nejc Mavr"
 		
-		walls on
-		
-		
+		extend right
 		1	2	3.7	108	2	#
 		2	3	3.6	240	-67	#
 		3	4	4.7	141	6	#
@@ -56,6 +62,7 @@ survey monatip11 -title "Monatip 11"
 		25	26	7.0 10 20	#
 		26	27	29 330 0	#
 		27	28	10.7 308 -8	#
+		extend right
 		28	29	14.0 341 4	#
 		29	30	25.4 324 -2	#
 		30	31	20.0 7 8	#

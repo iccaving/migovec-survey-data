@@ -1,12 +1,18 @@
 survey monatip7 -title "Monatip7"
 	
 	input "monatip7-p.th2"
+	input "monatip7-e.th2"
 	
 	map m-all-p -projection plan
 		monatip7-1p
 		monatip7-2p
 	endmap
 	
+	map m-all-e -projection extended
+		monatip7-e1
+    endmap
+
+
 	centreline
 		explo-team "Dejan Ristić"
 		explo-team "Zdenko Rejec"
@@ -22,22 +28,30 @@ survey monatip7 -title "Monatip7"
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
+		extend right
 		1	2	23.0	100		85	#moic
+		extend right
 		2	3	11.0	125		84	#
+		extend right
 		3	4	10.5	72		62	#
+		extend right
 		4	5	2.5		291		70	#
+		extend left
 		5	6	7.0		323		45	#
 		6	7	21.0	335		3	#
+		extend left
 		7	8	7.5		23		15	#
 		8	9	12.0	357		-9	#narobe smer 375
 		9	10	5.0		295		-8	#med tockama je luknja
 		10	11	6.0		295		-8	#
 		11	12	10.0	261		12	#
 		12	13	12.5	289		9	#
+		extend left
 		13	14	0.0		000		0	#
 		14	15	9.5		281		-5	#napeta precka, pod precko so nepregledana brezna
 		15	16	5.0		305		-9	#
 		16	17	10.0	322		8	#
+		extend left
 		17	18	2.0		242		35	#
 		18	19	7.3		297		-14	#
 		19	20	11.5	202		-11	#

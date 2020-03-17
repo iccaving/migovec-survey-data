@@ -6,9 +6,15 @@ survey monatip9 -title "Monatip 9"
 		monatip9-1p
 		monatip9-2p
 	endmap
+
+	input monatip9-e.th2
+	
+	map m-all-e -projection extended
+		monatip9-e1
+	endmap
 	
 	centreline
-		team "B. Tružnovec" insts tape
+		team "Bruce Tružnovec" insts tape
 		team "Dejan Ristić" insts notes
 		
 		explo-team "Dejan Ristić"
@@ -21,13 +27,21 @@ survey monatip9 -title "Monatip 9"
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
+		extend vertical
 		0	1	29.0	0		90	# 0 je dno brezna, rov pod Luzerjem
+		extend right
 		1	2	8.0		62		56	#
+		extend left
 		2	3	8.5		272		3	#
+		extend vertical
 		3	4	3.9		75		46	#
+		extend left
 		4	5	2.3		238		17	#
+		extend left
 		5	6	5.7		160		-15	#
+		extend vertical
 		6	7	7.4		193		-39	#preèka v Luzerju
+		extend left
 		7	8	7.3		290		7	#preèka na svedrovec v Luzerju
 	endcentreline
 	

@@ -6,20 +6,27 @@ survey monatip10 -title "Monatip 10"
 	map m-all-p -projection plan
 		monatip10-1p
 	endmap
+
+	input monatip10-e.th2
+	
+	map m-all-e -projection extended
+		monatip10-e1
+	endmap
 	
 	centreline
 		
 		team "Zdenko Rejec" notes insts
-		team "B. Tružnovec" insts tape
+		team "Bruce Tružnovec" insts tape
 		
 		explo-team "Zdenko Rejec"
-		explo-team "B. Tružnovec"
+		explo-team "Bruce Tružnovec"
 		explo-team "Grega Maffi"
 		explo-team "Andrej Fratnik"
 		
 		date 2015.09.27
 		explo-date 2015.09.27
 		
+		extend right
 		1	2	3.66	55		-74.2	#
 		2	3	4.51	55		-84.9	#
 		3	4	6.86	68		-43.2	#
@@ -27,7 +34,7 @@ survey monatip10 -title "Monatip 10"
 		5	6	8.85	138		-1.5	#
 		6	7	5.47	130		-8.5	#
 		7	8	7.48	89		+8.9	#
-		
+
 		2	.	16.9	0	-90
 		4	.	3.6		0	-90
 		4	.	6.2		0	+90

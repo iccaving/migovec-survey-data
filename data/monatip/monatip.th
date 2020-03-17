@@ -63,6 +63,10 @@ survey monatip
 	join monatip6-2p@monatip6 monatip7-1p@monatip7
 	join monatip6-2p@monatip6 monatip8-1p@monatip8
 	join monatip6-1p@monatip6 monatip9-1p@monatip9
+
+	join monatip6-e1@monatip6 monatip5-1e@monatip5
+	join monatip6-e1@monatip6 monatip7-e1@monatip7
+	join monatip7-e1@monatip7 monatip8-e1@monatip8
 	
 	######________________2015________________######
 	
@@ -75,6 +79,10 @@ survey monatip
 	equate 1@monatip11 8@monatip10
 	
 	join monatip7-1p@monatip7 monatip10-1p@monatip10
+
+	join monatip9-e1@monatip9 monatip7-e1@monatip7
+	join monatip9-e1@monatip9 monatip6-e1@monatip6
+	join monatip7-e1@monatip7 monatip10-e1@monatip10
 	
 	######________________2016________________######
 	input "./2016/therock/therock.th"
