@@ -1,11 +1,5 @@
-source ../plateau.th
+source ../../system_migovec.th
 
-input ../_layouts/atlas1.th
+select m-all-p@system_migovec
 
-input ../_layouts/map1.th
-
-select m-plateau-p@plateau
-
-#export atlas -o ../_outputs/atlas/plateau.pdf -projection plan -layout atlas1
-export map -o ../_outputs/map/plateau.pdf -projection plan -layout map1
-#export model -o ../_outputs/model/plateau.3d
+export map -o ../../_outputs/GIS/system_migovec -fmt esri

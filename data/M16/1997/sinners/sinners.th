@@ -1,11 +1,21 @@
 
 survey sinners -title "System Migovec"
+
+input sinners-p.th2
+
+map m-all-p -projection plan
+    sinners-1p
+endmap
+
 centreline
-    team "m rogerson" insts
-    team "j evans" notes
-    explo-team "m rogerson"
-    explo-team "j evans"
+    team "Michael Rogerson" insts
+    team "Jim Evans" notes
+    explo-team "Michael Rogerson"
+    explo-team "Jim Evans"
     date 1997.08.14
+    explo-date 1997.08.14
+
+    mark 2 4 fixed
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

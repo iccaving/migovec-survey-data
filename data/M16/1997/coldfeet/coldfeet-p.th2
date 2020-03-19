@@ -5,9 +5,9 @@ encoding  utf-8
 
 scrap coldfeet-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point -64.3377 -70.2791 label -text Coldfeet -align bl -scale s
+point -128.3416 26.8216 label -text Coldfeet -align tr -scale l
 line wall 
-  -227.588 81.6244
+  -234.19 79.4638
   -205.0213 86.4258
   -193.0177 83.0648
   -179.0935 84.9854
@@ -87,7 +87,7 @@ line wall
   -200.7 100.8301
   -207.422 101.3103
   -222.3064 96.5088
-  -229.0284 94.5883
+  -238.3912 91.4674
 endline
 
 point 213.15 36.5 station -name 28

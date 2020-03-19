@@ -1,11 +1,22 @@
 
 survey sifon -title "System Migovec"
+
+input sifon-p.th2
+
+map m-all-p -projection plan
+    sifon-1p
+    sifon-2p
+    sifon-3p # bottomest + sump
+endmap
+
+join sifon-1p sifon-2p
+join sifon-2p sifon-3p
 centreline
-    team "(JSPDT extensions beteen 97-98 expeditions)" insts
-    team "J.Hooper" notes
-    explo-team "(JSPDT extensions beteen 97-98 expeditions)"
-    explo-team "J.Hooper"
-    date 1997.07.30
+    team "JSPDT" insts
+    #team "J.Hooper" notes
+    explo-team "JSPDT"
+    #explo-team "J.Hooper"
+    date 1997.12.31 # giving an estimated winter 97/98 date for mag. declination
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

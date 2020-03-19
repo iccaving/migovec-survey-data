@@ -1,9 +1,34 @@
 
 survey wonder -title "System Migovec"
+
+input wonder-p.th2
+
+map m-all-p -projection plan
+    #wonder-1p # 61 tp 67
+    wonder-2p # 57 to 60
+    wonder-3p # 50 to 57
+    wonder-4p # passage between 34 and 49
+    wonder-5p 
+    wonder-6p 
+    wonder-7p # pitch between 28 and 33
+    wonder-8p #stn 17 to 28
+    wonder-9p #stn 7 to 16
+    wonder-10p #stn 1 to 6
+endmap
+
+    join wonder-2p wonder-3p
+    join wonder-4p wonder-3p
+    join wonder-4p wonder-5p
+    join wonder-6p wonder-5p
+    join wonder-6p wonder-7p
+    join wonder-8p wonder-7p
+    join wonder-8p wonder-9p
+    join wonder-10p wonder-9p
+
 centreline
-    team "(JSPDT extensions beteen 97-98 expeditions)" insts
+    #team "(JSPDT extensions beteen 97-98 expeditions)" insts
     team "JSPDT" notes
-    explo-team "(JSPDT extensions beteen 97-98 expeditions)"
+    #explo-team "(JSPDT extensions beteen 97-98 expeditions)"
     explo-team "JSPDT"
     date 1997.07.30
     units length meters

@@ -1,9 +1,20 @@
 
 survey god -title "System Migovec"
+
+input god-p.th2
+
+map m-all-p -projection plan
+    god-1p # 24
+    god-2p # 17 to 23
+    god-3p # 12 to 16 
+    god-4p #  8 to 11
+    god-5p # 1 to 8 
+endmap
+
 centreline
-    team "Dejan Ristic" insts
+    team "Dejan Ristić" insts
     team "Milan Podpecan" notes
-    explo-team "Dejan Ristic"
+    explo-team "Dejan Ristić"
     explo-team "Milan Podpecan"
     date 1997.08.02
     units length meters
