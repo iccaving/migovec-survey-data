@@ -1,10 +1,22 @@
 
-survey deep -title "System Migovec"
+survey deep -title "Blind bedding plane at bottom of God series"
+
+input deep-p.th2
+
+map m-all-p -projection plan
+    deep-1p
+    deep-2p
+    deep-3p
+    deep-4p
+endmap
+
+join deep-4p deep-3p
+join deep-3p deep-2p
+join deep-2p deep-1p
+
 centreline
-    team "J hooper" insts
-    team "j hooper" notes
-    explo-team "J hooper"
-    explo-team "j hooper"
+    team "James Hooper" insts notes
+    explo-team "James hooper"
     date 1997.08.03
     units length meters
     units compass clino degrees
