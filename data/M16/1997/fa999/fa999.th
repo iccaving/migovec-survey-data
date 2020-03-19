@@ -1,11 +1,25 @@
 
 survey fa999 -title "System Migovec"
+
+input fa999-p.th2
+
+map m-all-p -projection plan
+    fa999-1p
+    fa999-2p
+    fa999-3p
+    fa999-4p
+endmap
+
+join fa999-2p fa999-3p
+join fa999-3p fa999-4p
+
 centreline
-    team "alva gossen" insts
-    team "m evns" notes
-    explo-team "alva gossen"
-    explo-team "m evns"
+    team "Alva Gosson" insts
+    team "Mark Evans" notes
+    explo-team "Alva Gosson"
+    explo-team "Mark Evans"
     date 1997.08.10
+    explo-date 1997.08.10
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
