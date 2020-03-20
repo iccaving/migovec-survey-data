@@ -2,32 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line wall 
-  497.4134 1098.755
-  522.6034 1098.755
-endline
-
-line wall 
-  497.4134 1098.755
-  461.9834 1098.755
-endline
-
-line wall 
-  497.4134 1098.755
-  497.4134 1040.175
-endline
-
-line wall 
-  497.4134 1098.755
-  497.4134 1098.755
-endline
-
-endscrap
-
-
 scrap primula-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line wall 

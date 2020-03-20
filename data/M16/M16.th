@@ -30,6 +30,10 @@ survey M16 -title "M16 part of System Migovec"
 	map m-galaktika-p -projection plan
 		m-all-p@shordrop
 		m-all-p@shordrop2
+		m-all-p@tamoka
+		m-all-p@galact1
+		m-all-p@galact2
+		m-all-p@galact3 # Galaktika chamber proper
 	endmap
 
 	map m-hotel_tolminka-p -projection plan
@@ -43,8 +47,13 @@ survey M16 -title "M16 part of System Migovec"
 		m-all-p@teotihuacan
 		m-all-p@sinners
 		m-all-p@god
+		m-all-p@glory
+		m-all-p@rameses
+		m-all-p@cowboys
+		m-all-p@paradox
 		m-all-p@wonder
 		m-all-p@deep
+
 	endmap
 	
 	###__________1996____________###
@@ -98,10 +107,10 @@ survey M16 -title "M16 part of System Migovec"
 	input "./1997/lostcity/lostcity.th"
 	#input ./2016/death_by_a_1000_blows/death_by_a_1000_blows.th   ### This was done in 2016
 	#input ./1997/mower/mower.th
-	#input ./1997/cowboys/cowboys.th
+	input ./1997/cowboys/cowboys.th
 	input ./1997/deep/deep.th
 	#input ./1997/challenge/challenge.th
-	#input ./1997/tamoka/tamoka.th
+	input ./1997/tamoka/tamoka.th
 	input "./1997/baddybag/baddybag.th"
 	input ./1997/teotihuacan/teotihuacan.th
 	#input ./1997/batshitb/batshitb.th
@@ -111,27 +120,27 @@ survey M16 -title "M16 part of System Migovec"
 	input "./1997/doh/doh.th"
 	input "./1997/hotel/hotel.th"
 	#input ./1997/batshita/batshita.th
-	#input ./1997/woft/woft.th
+	input ./1997/woft/woft.th
 	input "./1997/coldfeet/coldfeet.th"
 	input ./1997/glory/glory.th
 	input ./1997/fa999/fa999.th
 	#input ./1997/batshit2/batshit2.th
 	#input ./1997/window/window.th
 	#input ./1997/migcon2/migcon2.th
-	#input ./1997/galact3/galact3.th
+	input ./1997/galact3/galact3.th
 	input ./1997/sinners/sinners.th
 	input ./1997/god/god.th
 	#input ./1997/galac4/galac4.th
 	#input ./1997/batshit1/batshit1.th
 	input ./1997/wonder/wonder.th
 	input "./1997/sajeta/sajeta.th"
-	#input ./1997/rameses/rameses.th
-	#input ./1997/paradox/paradox.th
-	#input ./1997/galact1/galact1.th
-	#input ./1997/galact2/galact2.th
+	input ./1997/rameses/rameses.th
+	input ./1997/paradox/paradox.th
+	input ./1997/galact1/galact1.th
+	input ./1997/galact2/galact2.th
 	#input ./1997/titanic/titanic.th
 	
-	#equate 6@woft 6@hotline
+	equate 6@woft 6@hotline
 	#equate 9@death_by_a_1000_blows is@
 	equate 6@hotline 17@lostcity
 	equate 14@baddybag 6@goodbag
@@ -143,7 +152,7 @@ survey M16 -title "M16 part of System Migovec"
 	equate 4b@teotihuacan 4@sinners
 	equate 13@teotihuacan 14@glory
 	equate 12@sifon 27@fa999
-	#equate 5@glory 20@rameses
+	equate 5@glory 20@rameses
 	equate 19@doh 18@pinkp
 	equate 1@pinkp 67@wonder
 	equate 11@glory 0@sinners
@@ -153,18 +162,18 @@ survey M16 -title "M16 part of System Migovec"
 	equate 28@coldfeet 18@pinkp
 	#equate 27@exhib 7@challenge
 	#equate 1@migcon2 0@rockroll
-	#equate 1@galact3 1@galact2
+	equate 1@galact3 1@galact2
 	#equate 12@batshita 1@batshit1
 	#equate 13@batshitb 1@batshit2
-	#equate 8@galact1 10@galact2
-	#equate 6@shordrop2 1@tamoka
+	equate 8@galact1 10@galact2
+	equate 6@shordrop2 1@tamoka
 	#equate 9@mower 7@batshit2
 	#equate 7@shordrop 1@batshita
-	#equate 3@tamoka 1@galact1
+	equate 3@tamoka 1@galact1
 	#equate 4@galact3 6@window
 	#equate 10@batshit1 16@batshitb
-	#equate 9@cowboys 22@paradox
-	#equate 13@cowboys 2@rameses
+	equate 9@cowboys 22@paradox
+	equate 13@cowboys 2@rameses
 	#equate 1@level2s 27@titanic
 	
 	join hotline-1p@hotline lostcity-1p@lostcity
@@ -178,7 +187,12 @@ survey M16 -title "M16 part of System Migovec"
 	join god-3p@god teotihuacan-2p@teotihuacan
 	join sinners-1p@sinners teotihuacan-1p@teotihuacan
 	join sinners-1p@sinners god-2p@god
-	
+	join god-1p@god rameses-1p@rameses
+	join rameses-4p@rameses cowboys-1p@cowboys
+	join shordrop2-1p@shordrop2 tamoka-1p@tamoka
+	join tamoka-1p@tamoka galact1-1p@galact1
+	join galact2-1p@galact2 galact1-1p@galact1
+	join galact2-2p@galact2 galact3-1p@galact3
 	
 	###__________1998____________###
 	

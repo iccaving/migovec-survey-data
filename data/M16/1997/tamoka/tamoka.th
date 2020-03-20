@@ -1,11 +1,18 @@
 
 survey tamoka -title "System Migovec"
+
+input tamoka-p.th2
+
+map m-all-p -projection plan
+    tamoka-1p
+endmap
+
 centreline
     team "Oliver Mann" insts
     team "Jim Evans" notes
-    explo-team "Oliver Mann"
-    explo-team "Jim Evans"
+    explo-team "JSPDT"
     date 1997.7.26
+    explo-date 1983
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

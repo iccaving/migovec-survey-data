@@ -1,11 +1,24 @@
 
 survey cowboys -title "System Migovec"
+
+input cowboys-p.th2
+
+map m-all-p -projection plan
+    cowboys-1p # 10 13
+    cowboys-2p # 5 9
+    cowboys-3p # 1 4
+endmap
+
 centreline
     team "Jim Evans" insts
-    team "Alva Gossen & Jim Evans" notes
+    team "Alva Gosson" notes
     explo-team "Jim Evans"
-    explo-team "Alva Gossen & Jim Evans"
+    explo-team "Alva Gosson"
     date 1997.08.22
+    explo-date 1997.08.22
+
+    mark 1 9 fixed
+    
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
