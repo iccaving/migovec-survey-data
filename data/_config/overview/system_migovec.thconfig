@@ -13,6 +13,7 @@ encoding  utf-8
 source "../../system_migovec.th"
 
 export model -o "../../system_migovec.3d"
+export map -o "../../_outputs/GIS/system_migovec" -fmt esri
 #----------------------------------------------------------------------------------|
 # input the layout files
 input "../../_layouts/base-p.thl"

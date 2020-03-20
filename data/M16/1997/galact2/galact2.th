@@ -1,10 +1,18 @@
 
 survey galact2 -title "System Migovec"
+
+input galact2-p.th2
+
+map m-all-p -projection plan
+    galact2-1p
+    galact2-2p
+endmap
+
 centreline
-    team "s wingrove" insts
-    team "m evans" notes
-    explo-team "s wingrove"
-    explo-team "m evans"
+    team "Sarah Wingrove" insts
+    team "Mark Evans" notes
+    explo-team "JSPDT"
+    explo-date 1985
     date 1997.8.4
     units length meters
     units compass clino degrees
