@@ -1,11 +1,25 @@
 
-survey rameses -title "System Migovec"
+survey rameses -title "Rameses"
+
+input rameses-p.th2
+
+map m-all-p -projection plan
+    rameses-1p # 13 to 2O connect to glory 
+    rameses-2p # 8 to 10 avens
+    rameses-3p # 11 and 12 side pitchl
+    rameses-4p # 1 to 6 
+endmap
+
 centreline
-    team "a gossen" insts
-    team "j hooper" notes
-    explo-team "a gossen"
-    explo-team "j hooper"
+    team "Alva Gosson" insts
+    team "James Hooper" notes
+    explo-team "Alva Gosson"
+    explo-team "James Hooper"
     date 1997.08.11
+    explo-date 1997.08.11
+
+    mark 2 8 fixed
+    
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

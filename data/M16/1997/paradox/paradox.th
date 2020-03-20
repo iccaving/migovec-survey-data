@@ -1,11 +1,23 @@
 
 survey paradox -title "System Migovec"
+
+input paradox-p.th2
+
+map m-all-p -projection plan
+    paradox-2p
+    break
+    paradox-1p
+endmap
+
 centreline
-    team "m rogerson" insts
-    team "j evans" notes
-    explo-team "m rogerson"
-    explo-team "j evans"
+    team "Michael Rogerson" insts
+    team "Jim Evans" notes
+    explo-team "Michael Rogerson"
+    explo-team "Jim Evans"
     date 1997.08.15
+    explo-date 1997.08.15
+
+    mark 1 18 22 fixed
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
