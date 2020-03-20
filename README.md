@@ -452,6 +452,10 @@ Open an existing reference survey for the passage you are drawing. This will lik
 - Add labels  
   I usually just draw a rectangle (does not matter the size or the styling), select the rectangle, navigate to object properties and write the label there  
   Syntax: point label -scale <xs/s/m/l/xl> -align <br/r/t/b/tl/tr/bl> -text [mylabel]
+  Choose the scale of the point label carefully. The current set up is:
+  	- scale xs for labels only to be included in a very detailed view of the passage
+	- scale s for labels to be shown on a cave but not full system map (eg. primadona_ubend_monatip, but not: sysem_migovec). Essentially these labels would clutter the general map appearing above or below passages. 
+	-scale m, l or xl for passage names that appear on the very general system_migovec map, like cave entrance names, or passages that somehow extend away from the main tangle of passages and thus have plenty of white space for a label.
 
 Also don't draw everything in one scrap (layer). If the passage branches or goes up or down a lot, create a new layer `{passage}-2p`. It is important that you move any survey stations that that you want to drawn around into the new scrap as well.
 
