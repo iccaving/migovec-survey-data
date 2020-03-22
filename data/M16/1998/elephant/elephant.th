@@ -1,11 +1,23 @@
 
-survey elephant -title "[Elephant]"
+survey elephant -title "Elephant"
+
+input elephant-p.th2
+
+map m-all-p -projection plan
+    elephant-1p # 5 to 16
+    elephant-2p # 1 to 4 (chamber)
+    elephant-3p # 17 to 19
+endmap
+
 centreline
-    team "[Iain McKenna]" insts
-    team "[Colm Carroll]" notes
-    explo-team "[Iain McKenna]"
-    explo-team "[Colm Carroll]"
+    team "Iain McKenna" insts
+    team "Colm Carroll" notes
+    explo-team "Iain McKenna"
+    explo-team "Colm Carroll"
     date 1998.07.31
+    explo-date 1998.07.31
+
+    mark 2 16 fixed
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

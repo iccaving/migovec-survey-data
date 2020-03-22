@@ -1,11 +1,23 @@
 
-survey waterloo -title "WATERLOO (	bELOW Elephant )"
+survey waterloo -title "Waterloo Chamber  (below Elephant)"
+
+input waterloo-p.th2
+
+map m-all-p -projection plan
+    waterloo-1p
+    waterloo-2p
+    waterloo-3p
+endmap
+
 centreline
-    team "J Evans" insts
-    team "I McKenns" notes
-    explo-team "J Evans"
-    explo-team "I McKenns"
+    team "Jim Evans" insts
+    team "Iain McKenna" notes
+    explo-team "Jim Evans"
+    explo-team "Iain McKenna"
     date 1998.08.06
+    explo-date 1998.08.06
+
+    mark 1 13 fixed
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

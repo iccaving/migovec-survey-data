@@ -199,29 +199,29 @@ survey M16 -title "M16 part of System Migovec"
 	#input ./1998/waffles/waffles.th
 	#input ./1998/olympic/olympic.th
 	#input ./1998/trunk/trunk.th
-	#input ./1998/waterloo/waterloo.th
+	input ./1998/waterloo/waterloo.th
 	#input ./1998/polter/polter.th
 	#input ./1998/fame/fame.th
-	#input ./1998/adder/adder.th
+	input ./1998/adder/adder.th
 	#input ./1998/sump2/sump2.th
 	#input ./1998/mousse/mousse.th
-	#input ./1998/elephant/elephant.th
+	input ./1998/elephant/elephant.th
 	#input ./1998/maiden/maiden.th
 	#input ./1998/pencil/pencil.th
 	#input ./1998/sump1/sump1.th
 	#input ./1998/arrow/arrow.th
 	#input ./1998/marwood/marwood.th
 	#input ./1998/bridge/bridge.th
-	#input ./1998/bosh/bosh.th
+	input ./1998/bosh/bosh.th
 	
 	#equate 1@trunk 16@elephant
 	#equate 6@arrow 13@sajeta
 	#equate 10@elephant 1@mousse
-	#equate 1@adder 29@hotel
-	#equate 1@elephant 1@bosh
+	equate 1@adder 29@hotel
+	equate 1@elephant 1@bosh
 	#equate 15@bridge 20@sajeta
-	#equate 20@elephant 12@adder
-	#equate 6@bosh 14@waterloo
+	equate 20@elephant 12@adder
+	equate 6@bosh 14@waterloo
 	#equate 1@polter 1@disillusion
 	#equate 11@disillusion 1@waffles
 	#equate 10@waffles 7@polter
@@ -233,6 +233,10 @@ survey M16 -title "M16 part of System Migovec"
 	#equate 1@sump2 1@sump1
 	#equate 9@maiden 1@olympic
 	#equate 10@olympic 1@titanic
+
+	join adder-1p@adder hotel-2p@hotel
+	join adder-1p@adder elephant-3p@elephant
+	join waterloo-1p@waterloo bosh-1p@bosh
 	
 	###__________1999____________###
 	
