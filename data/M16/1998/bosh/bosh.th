@@ -1,11 +1,20 @@
 
 survey bosh -title "below elephant chamber"
+
+input bosh-p.th2
+
+map m-all-p -projection plan
+    bosh-1p
+endmap
+
 centreline
-    team "C Carroll" insts
-    team "J Hooper" notes
-    explo-team "C Carroll"
-    explo-team "J Hooper"
+    team "Colm Carroll" insts
+    team "James Hooper" notes
+    explo-team "Colm Carroll"
+    explo-team "James Hooper"
     date 1998.08.05
+    explo-date 1998.08.05
+    
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

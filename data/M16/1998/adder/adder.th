@@ -1,11 +1,22 @@
 
 survey adder -title "Rift below spliut pitch in warriors for mig"
+
+input adder-p.th2
+
+map m-all-p -projection plan
+    adder-1p
+endmap
+
 centreline
-    team "J.Evans" insts
-    team "J.Hooper" notes
-    explo-team "J.Evans"
-    explo-team "J.Hooper"
+    team "Jim Evans" insts
+    team "James Hooper" notes
+    explo-team "Jim Evans"
+    explo-team "James Hooper"
     date 1998.07.28
+    explo-date 1998.07.28
+
+    mark 3 6 11 12 fixed
+    
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

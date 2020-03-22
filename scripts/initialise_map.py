@@ -18,7 +18,7 @@ layout test
   scale 1 500
   endlayout
 
-select {name}@vrtnarija
+select {name}@monatip.primadona_ubend_monatip
 
 export map -projection {projection} -o xvi.xvi -layout test -layout-debug station-names'''
 
@@ -57,6 +57,7 @@ th_files = [f for f in os.listdir(os.getcwd()) if isfile(
     join(os.getcwd(), f)) and f.endswith('.th')]
 if (len(th_files) > 1):
     print('Error: More than one th file.')
+    print(th_files)
     sys.exit(1)
 th_file = th_files[0]
 

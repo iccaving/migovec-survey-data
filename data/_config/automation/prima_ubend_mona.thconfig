@@ -27,6 +27,7 @@ input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
+
 layout plan
 	copy base-p
 	copy subsystem_overview
@@ -50,6 +51,7 @@ export map -projection plan -o ../../_outputs/primadona_ubend_monatip_plan_ENG.s
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
+
 layout ee
 	copy base-e
 	copy colour-by-new

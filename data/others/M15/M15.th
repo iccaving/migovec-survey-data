@@ -1,0 +1,39 @@
+survey M15 -title "M-15 (Tolminski Migovec)"
+	
+	input M15.th2 # contains both ee and plan
+
+	map m-all-p -projection plan
+		m15-1p
+		m15-2p
+	endmap
+
+	map m-all-e -projection extended
+		m15-1e
+	endmap
+
+	join m15-1p m15-2p
+
+	centreline
+		cs epsg:32633 # UTM33N fix
+		fix 4 404537 5122941 1860
+
+		date 1977.01.05
+		explo-date 1976.10.11
+
+		team "[?] Lesjak"
+		team "[?] Rutar"
+		team "[?] Ožek"
+		# all measurements back-calculated from the original drawn survey
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		extend right
+		4 3 9.96 193 -65.0 # 0.78 PL # 9.03 VH
+		extend right
+		3 2 29.84 260 -82.0 #3.29 # 29.53 VH
+		extend left
+		2 1 19.39 310 -39.5 #14.71 # 12.31 VH PL from top of snow to far end of snow plug.
+		extend vertical 
+		1 0 6.5 - down  # estimated from the survey, between last station and boulder floor
+	endcentreline
+endsurvey

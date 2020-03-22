@@ -48,8 +48,8 @@ survey janet_little_cave -title "Janet's little cave"
 	
 	
 	centerline
-		cs long-lat
-		fix 0 13.760889 46.255194 1889
+		cs epsg:32633 # UTM33N fix
+		fix 0 404491 5123145 1885
 		date 2019.07.24
 		explo-date 2000.08
 		

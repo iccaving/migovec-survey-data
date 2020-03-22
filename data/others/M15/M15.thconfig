@@ -1,0 +1,23 @@
+source M15.th
+
+export model -o M15.3d
+
+input ../../_layouts/detailed-p.thl
+
+layout local_plan
+	copy detailed
+	map-header  40 100 off
+	legend off
+endlayout
+
+export map -o M15_plan.pdf -layout local_plan
+
+layout local_ee
+	copy detailed
+	map-comment "Snow pit of the Migovec Plateau<br>Cadastral Number: 4631"
+	map-image 105 25 sw M15_plan.pdf
+endlayout
+
+export map -o M15_extended.pdf -layout local_ee -projection extended
+
+
