@@ -7,12 +7,29 @@ map m-all-e -projection extended
     milkyway-1e
 endmap
 
+
+input milkyway-p.th2
+
+map m-all-p -projection plan
+    milkyway-1p
+    milkyway-2p
+    milkyway-3p
+    milkyway-4p
+    milkyway-5p
+endmap
+
+	join milkyway-2p milkyway-1p
+	join milkyway-2p milkyway-3p
+	join milkyway-3p milkyway-4p
+	join milkyway-4p milkyway-5p
+
 	centreline
 		team "Sam Page" insts
 		team "Clare Tan" notes
 		explo-team "Sam Page"
 		explo-team "Clare Tan"
 		date 2012.8.11
+		explo-date 2012.8.11
 		units length meters
 		units compass degrees
 		units clino percent
