@@ -2381,14 +2381,14 @@ line floor-step
   1028.55 862.61 995.9 848.63 975.48 828.1
 endline
 
-point 1052.79 -66.02 station -name 0
-point 453.44 219.8 station -name 1
-point 255.3 652.88 station -name 2
-point 369.16 965.0 station -name 3
-point 956.19 1034.59 station -name 4
-point 1154.73 628.13 station -name 5
-point 882.18 110.28 station -name 6
-point 1080.36 378.93 station -name 8
+point 1052.79 -66.02 station -name 1
+point 453.44 219.8 station -name 101
+point 255.3 652.88 station -name 102
+point 369.16 965.0 station -name 103
+point 956.19 1034.59 station -name 104
+point 1154.73 628.13 station -name 105
+point 882.18 110.28 station -name 106
+point 1080.36 378.93 station -name 108
 endscrap
 
 
@@ -2435,8 +2435,8 @@ line u:underlay_MY -close on -outline none -clip off
   2577.68 -146.5 2631.53 -128.01 2665.29 -132.48
 endline
 
-point 2594.73 628.13 station -name 5
-point 2520.36 378.93 station -name 8
-point 2506.08 209.95 station -name 10
+point 2594.73 628.13 station -name 105
+point 2520.36 378.93 station -name 108
+point 2506.08 209.95 station -name 1
 endscrap
 

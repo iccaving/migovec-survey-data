@@ -1,0 +1,6 @@
+encoding  utf-8
+source ../../plateau.th
+
+select m-all-p@M17.plateau
+
+export map -o ../../_outputs/map/M17_plan.pdf

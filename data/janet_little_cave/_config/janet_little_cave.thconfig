@@ -1,0 +1,18 @@
+source "../janet_little_cave.th"
+
+input ../../_layouts/detailed-p.thl
+#input ../_layouts/map100ee.th
+
+
+select m-cave-p@janet_little_cave
+
+layout local
+	copy detailed
+	scale 1 250
+endlayout
+
+export map -o ../_outputs/janet_little_cave_plan.pdf -projection plan -layout local
+
+#select mcave-s@janet_little_cave
+#export map -o ../_outputs/janet_little_cave_ee.pdf -projection extended -layout map100ee -layout-debug station-names
+#export model -o ../_outputs/janet_little_cave.lox
