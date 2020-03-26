@@ -1,0 +1,25 @@
+# 2018.10.23 created by TopoDroid v 4.1.1a
+
+survey M17 -title "M-17 (Frigidare), Tolminski Migovec"
+	
+	input m17_shallow/m17_shallow.th
+	input M17_deep/m17_deep.th
+	#input TH_404_124_m17_surf.th
+	
+	equate 1@M17_shallow 10@M17_deep
+	
+	join s1_l1@M17_shallow s1_l1@M17_deep
+	join s1_l2@M17_shallow s1_l2@M17_deep
+	
+	map  m-17-full-e -projection extended
+		mm17-s@M17_shallow
+		mm17_deep-s@M17_deep
+	endmap
+	
+	map m-17-full-p -projection plan
+		m-M17only-p@M17_shallow
+		m1p_underlay@M17_deep
+		m1p_underlay@M17_deep [-20 0 m] none
+		m1p@M17_deep [-40 0 m] none
+	endmap
+endsurvey
