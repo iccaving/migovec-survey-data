@@ -4,6 +4,7 @@ survey M16 -title "M16 part of System Migovec"
 		m-entrance_series-p
 		m-exhibition_road-p 
 		m-galaktika-p
+		m-elephant_branch-p
 		m-hotel_tolminka-p
 	endmap
 
@@ -49,13 +50,21 @@ survey M16 -title "M16 part of System Migovec"
 		m-all-p@god
 		m-all-p@glory
 		m-all-p@rameses
+		m-all-p@sifon
+		m-all-p@fa999
 		m-all-p@cowboys
 		m-all-p@paradox
 		m-all-p@wonder
 		m-all-p@deep
-
 	endmap
 	
+
+	map m-elephant_branch-p -projection plan
+		m-all-p@adder
+		m-all-p@elephant
+		m-all-p@bosh
+		m-all-p@waterloo
+	endmap
 	###__________1996____________###
 	
 	input "./1996/entrance/entrance.th"
