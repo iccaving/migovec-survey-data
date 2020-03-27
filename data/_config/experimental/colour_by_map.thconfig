@@ -1,0 +1,24 @@
+encoding  utf-8
+source "../../system_migovec.th"
+
+
+lookup map:cave
+	m-all-p@primadona.primadona_ubend_monatip.system_migovec [70 0 100] "Primadona"
+	m-all-p@monatip.primadona_ubend_monatip.system_migovec [70 50 0] "Monatip"
+	m-all-p@vrtnarija.system_migovec [100 0 0] "Vrtnarija"
+	m-all-p@m2m16m18.system_migovec [20 100 40] "Vrtnarija"
+endlookup
+
+lookup topo:me
+"Tanguy Racine" [100 0 0] "Tanguy Racine"
+endlookup
+
+
+layout local
+	scale 1 4000
+	symbol-hide group all
+	colour map-fg topo:me
+	statistics topo-length on
+endlayout
+
+export map -o ../../_outputs/colour_by_map_plan.pdf -projection plan -layout local

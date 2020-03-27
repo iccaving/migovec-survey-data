@@ -11,20 +11,23 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../janet_little_cave.th"
+source "../gondolin.th"
+
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
-export model -o ../_outputs/janet_little_cave.lox
-export model -o ../_outputs/janet_little_cave.3d
+export model -o ../_outputs/gondolin.lox
+export model -o ../_outputs/gondolin.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
 input ../../_layouts/detailed-p.thl
 
+
 #----------------------------------------------------------------------------------|
 # select a relevant map (which contains commands for offsets of overlying bits)
-select m-all-e@janet_little_cave
+select m-all-e@gondolin
+
 
 #----------------------------------------------------------------------------------|
 # define a local layout without legend or header for extended elevation
@@ -37,23 +40,21 @@ endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../_outputs/janet_little_cave_ee.pdf -projection extended -layout local-e
+export map -o ../_outputs/gondolin_ee.pdf -projection extended -layout local-e -layout-debug station-names
 
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
-select m-all-p@janet_little_cave
+select m-all-p@gondolin
 
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
 layout local
 	copy detailed
 	scale 1 250
-	map-image 100 0 sw ../_outputs/janet_little_cave_ee.pdf
+	map-image 100 0 sw ../_outputs/gondolin_ee.pdf
 endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan and elevation
-export map -o ../_outputs/janet_little_cave_plan_ee.pdf -projection plan -layout local
-
-
+export map -o ../_outputs/gondolin_plan_ee.pdf -projection plan -layout local

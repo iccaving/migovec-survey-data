@@ -10,17 +10,18 @@ survey janet_little_cave -title "Janet's little cave"
 	input "janet_little_cave-LOWp.th2"
 	input "janet_little_cave-XLOWp.th2"
 	
-	map m-cave-p -projection plan
-		mENTp
+	map m-all-p -projection plan
+		mENTp [0 -10 m] none
 		mCHAMBERp
 		mLOWp
-		mXLOWp
+		mXLOWp [10 0 m] below
 	endmap
+
 	map m1p -projection plan
 		janet_little_cave-1p
 	endmap
 	
-	map mcave-s -projection extended
+	map m-all-e -projection extended
 		m1s
 		mCHAMBERs
 	endmap
@@ -45,7 +46,6 @@ survey janet_little_cave -title "Janet's little cave"
 	map mXLOWp -projection plan
 		janet_little_cave-XLOWp
 	endmap
-	
 	
 	centerline
 		cs epsg:32633 # UTM33N fix
