@@ -1,9 +1,21 @@
 encoding  utf-8
 source "../system_migovec.th"
 
-input ../_layouts/layout1.th
 
-select m-entrance_to_knot-p@sistem_migovec
+lookup map:local
+	m-all-p@primadona.primadona_ubend_monatip.system_migovec [0 0 100] "Primadona"
+	m-all-p@monatip.primadona_ubend_monatip.system_migovec [0 100 100] "Monatip"
+endlookup
+
+
+layout local
+	scale 1 5000
+	symbol-hide group all
+	symbol-show line wall
+	colour map-fg map:local
+endlayout
+
+select m-all-p@sistem_migovec -map-level 2
 
 export map -o ../_outputs/entrance_series_plan.pdf -projection plan -layout local1
 

@@ -1,7 +1,60 @@
-source ../rowan_cave.th
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                                                                                  |
+#                      A SMALL CAVE OF THE MIGOVEC PLATEAU                         |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
 
-input ../_layouts/map100plan.th
-input ../_layouts/map100ee.th
+encoding  utf-8
 
-export map -o ../_outputs/rowan_cave_plan.pdf -projection plan -layout map100plan -layout-debug station-names
-export map -o ../_outputs/rowan_cave_plan_ee.pdf -projection extended -layout map100ee -layout-debug station-names
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../rowan_cave.th"
+
+
+#----------------------------------------------------------------------------------|
+# export a model openable in Loch and one in Aven
+export model -o ../_outputs/rowan_cave.lox
+export model -o ../_outputs/rowan_cave.3d
+
+#----------------------------------------------------------------------------------|
+# select a relevant layout definition file
+input ../../_layouts/detailed-p.thl
+
+
+#----------------------------------------------------------------------------------|
+# select a relevant map (which contains commands for offsets of overlying bits)
+select m-all-e@rowan_cave
+
+
+#----------------------------------------------------------------------------------|
+# define a local layout without legend or header for extended elevation
+layout local-e
+	copy detailed
+	legend off
+	map-header 100 0 off
+	scale 1 100
+endlayout
+
+#----------------------------------------------------------------------------------|
+# export the pdf map in elevation view
+export map -o ../_outputs/rowan_cave_ee.pdf -projection extended -layout local-e -layout-debug station-names
+
+
+#----------------------------------------------------------------------------------|
+# select a relevant map definition for plan view
+select m-all-p@rowan_cave
+
+#----------------------------------------------------------------------------------|
+# define a local layout with legend, header and elevation map produced above
+layout local
+	copy detailed
+	scale 1 100
+	map-image 0 0 nw ../_outputs/rowan_cave_ee.pdf
+endlayout
+
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan and elevation
+export map -o ../_outputs/rowan_cave_plan_ee.pdf -projection plan -layout local
