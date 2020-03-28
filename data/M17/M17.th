@@ -321,8 +321,8 @@ survey M17 -title "M-17 (Frigidare), Tolminski Migovec<br>Cad. number: 5878"
 		21 22 8.17 278.1 78.1
 		22 0A 1.86 328.6 47.5
 		
-		cs lat-long
-		fix 0  46.253580 13.760417 1879
+		#cs epsg 3794
+		fix 0  404421 124503 1879
 	endcenterline
 
 

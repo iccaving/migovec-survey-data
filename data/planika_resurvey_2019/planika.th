@@ -274,8 +274,8 @@ survey planika -title "Planika Jama 2019 resurvey"
 		extend left
 		14 15 2.63 279.1 -6.8
 		
-		cs lat-long
-		fix 15   46.252267  13.757831 1787
+		#cs epsg:3794
+		fix 15 404230 124355 1787
 	endcenterline
 	
 endsurvey
