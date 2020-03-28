@@ -14,8 +14,8 @@ survey M15 -title "M-15 (Tolminski Migovec)"
 	join m15-1p m15-2p
 
 	centreline
-		cs epsg:32633 # UTM33N fix
-		fix 4 404537 5122941 1860
+		#cs epsg:3794 
+		fix 4 404424 124692 1860
 
 		date 1977.01.05
 		explo-date 1976.10.11

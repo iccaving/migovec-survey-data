@@ -19,7 +19,10 @@ survey plateau -title "Migovec Plateau"
 	# input the individual cave data files
 	
 	# first the connected caves of System Migovec
-	input "./system_migovec.th"
+	centreline
+	cs epsg:3794
+	endcentreline
+	input "./system_migovec.th"	
 	
 	input "./gondolin/gondolin.th"
 	input "./planika_resurvey_2019/planika.th"
@@ -27,7 +30,10 @@ survey plateau -title "Migovec Plateau"
 	input "./M19/M19.th"
 	input "./janet_little_cave/janet_little_cave.th"
 	input "./rowan_cave/rowan_cave.th"
-	input "./others/M15/M15.th"
+	#input "./others/M15/M15.th"
+
+	# input some surface files
+	#input "./DEM/s404124.th"
 	
 endsurvey
 

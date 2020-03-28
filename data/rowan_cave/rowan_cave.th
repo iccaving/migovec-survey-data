@@ -36,8 +36,9 @@ survey rowan_cave -title "Rowan Cave"
 	## endmap
 	
 	centerline
-		cs long-lat
-		fix 0 13.760750 46.257556 1819
+		# cs fix epsg:3794
+
+		fix 0 404460 124948 1819
 		explo-date 2019.07.20
 		date 2019.07.24
 		

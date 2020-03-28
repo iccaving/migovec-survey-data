@@ -19,7 +19,36 @@ survey system_migovec -title "System Migovec"
 	input "./m2m16m18.th"
 	input "./vrtnarija/vrtnarija.th"
 	
-	
+	centreline
+	#entrance fixes (EPSG:3754)
+	#Primadona
+	station 35@prima1.primadona.primadona_ubend_monatip entrance
+	fix 35@prima1.primadona.primadona_ubend_monatip 404188 124289 1735
+	#Monatip
+	station 1@monatip1.monatip.primadona_ubend_monatip entrance
+	fix 1@monatip1.monatip.primadona_ubend_monatip 404190 124384 1724
+	#Ubend
+	station 5@ubend2.ubend.primadona_ubend_monatip entrance
+	fix 5@ubend2.ubend.primadona_ubend_monatip 404220 124292 1794
+	#Belladonna
+	station 3@belladonna.primadona.primadona_ubend_monatip entrance
+	#Vrtnarija
+	station 0@bclent2.vrtnarija entrance
+    fix 0@bclent2.vrtnarija 404766 124501 1799
+	#Vilinska Jama
+	station 1@vilinent.vrtnarija entrance
+	fix 1@vilinent.vrtnarija 404793 124544 1781
+	#M2
+	station 16@izent1.M2.m2m16m18 entrance
+    fix 16@izent1.M2.m2m16m18 404697 124423 1861
+	#M16
+	station 1@entrance.M16.m2m16m18 entrance
+    fix 1@entrance.M16.m2m16m18  404696 124327 1852
+	#M18
+	station 26@torn.M18.m2m16m18 entrance
+	fix 26@torn.M18.m2m16m18 404681 124458 1849
+	endcentreline
+
 	# input DEM tiles
 	#input "../DEM/DEM_10m.th"
 	
