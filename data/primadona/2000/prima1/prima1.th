@@ -60,10 +60,9 @@ survey prima1 -title "Primadona entrance series"
 	join p_e2_l1 p_e3_l1
 	join p_e2_l2 p_e3_l2	
 	join p_e1_l3 p_e3_l3
-	join p_e1_l4 p_e3_l4		
+	join p_e1_l4 p_e3_l4
+
 	centreline
-		cs EPSG:3794
-		fix 35 404188 124289 1735
 		
 		explo-date 2000.01.01
 		date 2000.07.20

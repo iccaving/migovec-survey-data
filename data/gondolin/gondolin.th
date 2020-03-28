@@ -47,8 +47,8 @@ survey gondolin -title "Gondolin"
 		gondolinp_7
 	endmap
 	centreline
-		cs epsg:32633 # UTM 33T
-		fix bcairn 404363 5122726 1863
+		#cs epsg:32633 # UTM 33T
+		fix bcairn 404343 124264 1863
 	endcentreline
 	
 	centreline

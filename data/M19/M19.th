@@ -445,8 +445,8 @@ survey M19 -title "M19"
 		extend left
 		24 25 5.64 215.5 56.2
 		
-		cs lat-long
-		fix 25  46.253019 13.760197 1850
+		# fix epsg:3794
+		fix 25  404405 124443 1850
 	endcenterline
 	
 	input "M19-15p.th2"

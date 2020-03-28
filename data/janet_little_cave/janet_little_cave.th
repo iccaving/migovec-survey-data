@@ -9,6 +9,8 @@ survey janet_little_cave -title "Janet's little cave"
 	input "janet_little_cave-CHAMBERs.th2"
 	input "janet_little_cave-LOWp.th2"
 	input "janet_little_cave-XLOWp.th2"
+
+	input "../DEM/s404124.th"
 	
 	map m-all-p -projection plan
 		mENTp [0 -10 m] none
@@ -48,8 +50,8 @@ survey janet_little_cave -title "Janet's little cave"
 	endmap
 	
 	centerline
-		cs epsg:32633 # UTM33N fix
-		fix 0 404491 5123145 1885
+		#cs epsg:3794 fix in new slovenian
+		fix 0 404465 124680 1885
 		date 2019.07.24
 		explo-date 2000.08
 		
