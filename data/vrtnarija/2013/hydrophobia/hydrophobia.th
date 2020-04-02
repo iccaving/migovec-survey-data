@@ -7,6 +7,13 @@ map m-all-e -projection extended
     hydrophobia-1e
 endmap
 
+
+input hydrophobia-p.th2
+
+map m-all-p -projection plan
+    hydrophobia-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Clare Tan" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     pushyourluck-1e
 endmap
 
+
+input pushyourluck-p.th2
+
+map m-all-p -projection plan
+    pushyourluck-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes

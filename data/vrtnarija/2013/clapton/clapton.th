@@ -7,6 +7,13 @@ map m-all-e -projection extended
     clapton-1e
 endmap
 
+
+input clapton-p.th2
+
+map m-all-p -projection plan
+    clapton-1p
+endmap
+
 centreline
     team "Andrej Fratnik/Gergely Ambrus?" insts
     team "Andreja Fratnik" notes

@@ -1,0 +1,55 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -13.19 112.01
+  -1.06 109.88
+endline
+line survey 
+  -6.73 87.91
+  -13.19 112.01
+endline
+line survey 
+  -30.20 95.55
+  -6.73 87.91
+endline
+line survey 
+  -28.78 53.90
+  -30.20 95.55
+endline
+line survey 
+  -2.17 -0.67
+  -28.78 53.90
+endline
+line survey 
+  -5.24 -25.63
+  -2.17 -0.67
+endline
+line survey 
+  -3.58 -14.13
+  -5.24 -25.63
+endline
+line survey 
+  -3.58 -14.13
+  23.19 -101.54
+endline
+line survey 
+  30.20 -112.01
+  23.19 -101.54
+endline
+endscrap
+
+scrap crack_in_time-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -1.06 109.88 station -name 9
+point -13.19 112.01 station -name 8
+point -6.73 87.91 station -name 7
+point -30.20 95.55 station -name 6
+point -28.78 53.90 station -name 5
+point -2.17 -0.67 station -name 4
+point -5.24 -25.63 station -name 3
+point -3.58 -14.13 station -name 2
+point 23.19 -101.54 station -name 1
+point 30.20 -112.01 station -name carbide
+endscrap

@@ -1,0 +1,65 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  43.39 -128.19
+  32.20 -70.87
+endline
+line survey 
+  32.20 -70.87
+  16.22 -26.93
+endline
+line survey 
+  10.63 -27.87
+  16.22 -26.93
+endline
+line survey 
+  10.63 -27.87
+  0.39 16.30
+endline
+line survey 
+  0.39 16.30
+  4.41 35.04
+endline
+line survey 
+  4.41 35.04
+  1.65 66.61
+endline
+line survey 
+  1.65 66.61
+  -34.02 101.10
+endline
+line survey 
+  -34.02 101.10
+  -34.02 101.10
+endline
+line survey 
+  -34.02 101.10
+  -43.39 118.66
+endline
+line survey 
+  -43.39 118.66
+  -41.02 128.19
+endline
+line survey 
+  -41.02 128.19
+  -41.02 128.19
+endline
+endscrap
+
+scrap whitebishop-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 43.39 -128.19 station -name DEADRIFT
+point 32.20 -70.87 station -name 11
+point 16.22 -26.93 station -name 10
+point 10.63 -27.87 station -name 9
+point 0.39 16.30 station -name 8
+point 4.41 35.04 station -name 7
+point 1.65 66.61 station -name 6
+point -34.02 101.10 station -name 5
+point -34.02 101.10 station -name 4
+point -43.39 118.66 station -name 3
+point -41.02 128.19 station -name 2
+point -41.02 128.19 station -name 1
+endscrap

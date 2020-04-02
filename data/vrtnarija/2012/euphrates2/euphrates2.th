@@ -7,6 +7,13 @@ map m-all-e -projection extended
     euphrates2-1e
 endmap
 
+
+input euphrates2-p.th2
+
+map m-all-p -projection plan
+    euphrates2-1p
+endmap
+
 centreline
     team "Jonny Hardman" insts
     team "Kate Smith" notes

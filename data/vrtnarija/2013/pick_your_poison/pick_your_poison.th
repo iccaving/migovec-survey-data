@@ -7,6 +7,13 @@ map m-all-e -projection extended
     pick_your_poison-1e
 endmap
 
+
+input pick_your_poison-p.th2
+
+map m-all-p -projection plan
+    pick_your_poison-1p
+endmap
+
 centreline
     team "Grega Maffi" insts
     team "Clare Tan" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     why_the_face-1e
 endmap
 
+
+input why_the_face-p.th2
+
+map m-all-p -projection plan
+    why_the_face-1p
+endmap
+
 	centreline
 		team "Jonathan Hardman" insts
 		team "Nicolas Kral" notes

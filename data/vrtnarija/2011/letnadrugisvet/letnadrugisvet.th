@@ -7,6 +7,13 @@ map m-all-e -projection extended
     letnadrugisvet-1e
 endmap
 
+
+input letnadrugisvet-p.th2
+
+map m-all-p -projection plan
+    letnadrugisvet-1p
+endmap
+
 centreline
     team "Izi" insts
     team "Unknown" notes

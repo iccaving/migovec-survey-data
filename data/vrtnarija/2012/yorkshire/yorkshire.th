@@ -7,6 +7,13 @@ map m-all-e -projection extended
     yorkshire-1e
 endmap
 
+
+input yorkshire-p.th2
+
+map m-all-p -projection plan
+    yorkshire-1p
+endmap
+
 	centreline
 		team "Thara" insts
 		team "Oli" notes

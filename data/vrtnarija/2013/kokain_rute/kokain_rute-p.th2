@@ -1,0 +1,105 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  94.65 244.41
+  94.65 244.41
+endline
+line survey 
+  88.19 204.09
+  94.65 244.41
+endline
+line survey 
+  106.54 190.79
+  88.19 204.09
+endline
+line survey 
+  122.99 157.09
+  106.54 190.79
+endline
+line survey 
+  118.43 124.57
+  122.99 157.09
+endline
+line survey 
+  106.93 114.88
+  118.43 124.57
+endline
+line survey 
+  98.35 96.46
+  106.93 114.88
+endline
+line survey 
+  55.04 65.04
+  98.35 96.46
+endline
+line survey 
+  33.62 47.72
+  55.04 65.04
+endline
+line survey 
+  36.69 4.33
+  33.62 47.72
+endline
+line survey 
+  38.58 -32.60
+  36.69 4.33
+endline
+line survey 
+  24.02 -55.91
+  38.58 -32.60
+endline
+line survey 
+  -23.31 -49.29
+  24.02 -55.91
+endline
+line survey 
+  -38.19 -32.20
+  -23.31 -49.29
+endline
+line survey 
+  -85.12 -61.50
+  -38.19 -32.20
+endline
+line survey 
+  -122.99 -142.76
+  -85.12 -61.50
+endline
+line survey 
+  -119.06 -218.43
+  -122.99 -142.76
+endline
+line survey 
+  -98.74 -244.41
+  -119.06 -218.43
+endline
+line survey 
+  -25.35 -227.48
+  -98.74 -244.41
+endline
+endscrap
+
+scrap kokain_rute-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 94.65 244.41 station -name 19
+point 94.65 244.41 station -name 18
+point 88.19 204.09 station -name 17
+point 106.54 190.79 station -name 16
+point 122.99 157.09 station -name 15
+point 118.43 124.57 station -name 14
+point 106.93 114.88 station -name 13
+point 98.35 96.46 station -name 12
+point 55.04 65.04 station -name 11b
+point 33.62 47.72 station -name 11
+point 36.69 4.33 station -name 10
+point 38.58 -32.60 station -name 9
+point 24.02 -55.91 station -name 8
+point -23.31 -49.29 station -name 7
+point -38.19 -32.20 station -name 6
+point -85.12 -61.50 station -name 5
+point -122.99 -142.76 station -name 4
+point -119.06 -218.43 station -name 3
+point -98.74 -244.41 station -name 2
+point -25.35 -227.48 station -name 1
+endscrap

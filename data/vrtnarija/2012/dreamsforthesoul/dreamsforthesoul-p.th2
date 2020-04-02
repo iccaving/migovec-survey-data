@@ -1,0 +1,180 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -272.05 486.30
+  -290.00 427.56
+endline
+line survey 
+  -290.00 427.56
+  -269.29 337.64
+endline
+line survey 
+  -269.29 337.64
+  -262.36 271.89
+endline
+line survey 
+  -262.36 271.89
+  -286.77 97.87
+endline
+line survey 
+  -286.77 97.87
+  -234.96 87.80
+endline
+line survey 
+  -234.96 87.80
+  -271.81 74.41
+endline
+line survey 
+  -271.81 74.41
+  -297.32 65.12
+endline
+line survey 
+  -297.32 65.12
+  -299.69 53.86
+endline
+line survey 
+  -299.69 53.86
+  -300.16 24.80
+endline
+line survey 
+  -300.16 24.80
+  -248.11 31.18
+endline
+line survey 
+  -248.11 31.18
+  -217.87 10.00
+endline
+line survey 
+  -217.87 10.00
+  -221.34 -3.86
+endline
+line survey 
+  -221.34 -3.86
+  -209.29 -26.54
+endline
+line survey 
+  -209.29 -26.54
+  -199.61 -43.39
+endline
+line survey 
+  -199.61 -43.39
+  -195.83 -22.20
+endline
+line survey 
+  -195.83 -22.20
+  -203.39 -64.80
+endline
+line survey 
+  -195.83 -22.20
+  -148.43 95.04
+endline
+line survey 
+  -195.83 -22.20
+  -169.92 -63.62
+endline
+line survey 
+  -169.92 -63.62
+  -119.37 -99.06
+endline
+line survey 
+  -119.37 -99.06
+  -104.57 -43.94
+endline
+line survey 
+  -119.37 -99.06
+  -88.66 -150.08
+endline
+line survey 
+  -88.66 -150.08
+  -97.56 -195.67
+endline
+line survey 
+  -97.56 -195.67
+  -50.71 -262.52
+endline
+line survey 
+  -50.71 -262.52
+  -62.99 -325.35
+endline
+line survey 
+  -62.99 -325.35
+  -60.39 -399.06
+endline
+line survey 
+  -60.39 -399.06
+  -22.83 -431.73
+endline
+line survey 
+  -22.83 -431.73
+  50.31 -461.26
+endline
+line survey 
+  50.31 -461.26
+  135.51 -440.08
+endline
+line survey 
+  50.31 -461.26
+  68.35 -460.00
+endline
+line survey 
+  68.35 -460.00
+  84.88 -471.57
+endline
+line survey 
+  84.88 -471.57
+  106.69 -486.30
+endline
+line survey 
+  106.69 -486.30
+  155.59 -442.28
+endline
+line survey 
+  155.59 -442.28
+  213.78 -455.75
+endline
+line survey 
+  213.78 -455.75
+  300.16 -449.69
+endline
+endscrap
+
+scrap dreamsforthesoul-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -272.05 486.30 station -name 35
+point -290.00 427.56 station -name 34
+point -269.29 337.64 station -name 33
+point -262.36 271.89 station -name 32
+point -286.77 97.87 station -name 31
+point -234.96 87.80 station -name 30
+point -271.81 74.41 station -name 29
+point -297.32 65.12 station -name 28
+point -299.69 53.86 station -name 27
+point -300.16 24.80 station -name 26
+point -248.11 31.18 station -name 25
+point -217.87 10.00 station -name 24
+point -221.34 -3.86 station -name 23
+point -209.29 -26.54 station -name 22
+point -199.61 -43.39 station -name 21
+point -203.39 -64.80 station -name 20
+point -148.43 95.04 station -name 19
+point -195.83 -22.20 station -name 18
+point -169.92 -63.62 station -name 17
+point -104.57 -43.94 station -name 16
+point -119.37 -99.06 station -name 15
+point -88.66 -150.08 station -name 14
+point -97.56 -195.67 station -name 13
+point -50.71 -262.52 station -name 12
+point -62.99 -325.35 station -name 11
+point -60.39 -399.06 station -name 10
+point -22.83 -431.73 station -name 9
+point 135.51 -440.08 station -name 8
+point 50.31 -461.26 station -name 7
+point 68.35 -460.00 station -name 6
+point 84.88 -471.57 station -name 5
+point 106.69 -486.30 station -name 4
+point 155.59 -442.28 station -name 3
+point 300.16 -449.69 station -name 1
+point 213.78 -455.75 station -name 2
+endscrap

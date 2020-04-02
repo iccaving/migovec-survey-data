@@ -7,6 +7,13 @@ map m-all-e -projection extended
     void2-1e
 endmap
 
+
+input void2-p.th2
+
+map m-all-p -projection plan
+    void2-1p
+endmap
+
 	centreline
 		team "Connor Roe" insts
 		team "Jarvist Frost" notes

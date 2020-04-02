@@ -7,6 +7,13 @@ map m-all-e -projection extended
     apuntoofar3-1e
 endmap
 
+
+input apuntoofar3-p.th2
+
+map m-all-p -projection plan
+    apuntoofar3-1p
+endmap
+
 centreline
     team "Tanguy Racine" insts
     team "Aileen Brown" notes

@@ -1,0 +1,165 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  182.83 275.63
+  158.50 229.88
+endline
+line survey 
+  158.50 229.88
+  158.50 229.88
+endline
+line survey 
+  180.55 245.94
+  158.50 229.88
+endline
+line survey 
+  158.50 229.88
+  142.13 205.63
+endline
+line survey 
+  142.13 205.63
+  145.91 175.31
+endline
+line survey 
+  145.91 175.31
+  92.36 152.56
+endline
+line survey 
+  92.36 152.56
+  37.95 103.58
+endline
+line survey 
+  37.95 103.58
+  10.63 73.27
+endline
+line survey 
+  10.63 73.27
+  7.48 57.05
+endline
+line survey 
+  7.48 57.05
+  -38.82 33.43
+endline
+line survey 
+  -38.82 33.43
+  -15.43 42.87
+endline
+line survey 
+  -15.43 42.87
+  -36.69 25.71
+endline
+line survey 
+  -36.69 25.71
+  -92.68 -7.99
+endline
+line survey 
+  -92.68 -7.99
+  -69.21 -23.82
+endline
+line survey 
+  -69.21 -23.82
+  -96.77 -46.10
+endline
+line survey 
+  -96.77 -46.10
+  -130.16 -85.87
+endline
+line survey 
+  -130.16 -85.87
+  -116.93 -122.17
+endline
+line survey 
+  -116.93 -122.17
+  -136.85 -145.87
+endline
+line survey 
+  -136.85 -145.87
+  -138.66 -172.09
+endline
+line survey 
+  -138.66 -172.09
+  -154.65 -194.84
+endline
+line survey 
+  -154.65 -194.84
+  -162.20 -218.07
+endline
+line survey 
+  -162.20 -218.07
+  -172.20 -230.91
+endline
+line survey 
+  -172.20 -230.91
+  -182.83 -233.11
+endline
+line survey 
+  -182.83 -233.11
+  -180.55 -249.41
+endline
+line survey 
+  -180.55 -249.41
+  -168.58 -261.38
+endline
+line survey 
+  -168.58 -261.38
+  -175.43 -229.09
+endline
+line survey 
+  -175.43 -229.09
+  -149.06 -249.72
+endline
+line survey 
+  -149.06 -249.72
+  -139.13 -275.63
+endline
+line survey 
+  -139.13 -275.63
+  -134.17 -261.22
+endline
+line survey 
+  -134.17 -261.22
+  -122.52 -247.83
+endline
+line survey 
+  -122.52 -247.83
+  -107.24 -205.87
+endline
+endscrap
+
+scrap agartha-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 182.83 275.63 station -name 32
+point 158.50 229.88 station -name 31
+point 180.55 245.94 station -name 30
+point 158.50 229.88 station -name 29
+point 142.13 205.63 station -name 28
+point 145.91 175.31 station -name 27
+point 92.36 152.56 station -name 26
+point 37.95 103.58 station -name 25
+point 10.63 73.27 station -name 24
+point 7.48 57.05 station -name 23
+point -38.82 33.43 station -name 22
+point -15.43 42.87 station -name 21
+point -36.69 25.71 station -name 20
+point -92.68 -7.99 station -name 19
+point -69.21 -23.82 station -name 18
+point -96.77 -46.10 station -name 17
+point -130.16 -85.87 station -name 16
+point -116.93 -122.17 station -name 15
+point -136.85 -145.87 station -name 14
+point -138.66 -172.09 station -name 13
+point -154.65 -194.84 station -name 12
+point -162.20 -218.07 station -name 11
+point -172.20 -230.91 station -name 10
+point -182.83 -233.11 station -name 9
+point -180.55 -249.41 station -name 8
+point -168.58 -261.38 station -name 7
+point -175.43 -229.09 station -name 6
+point -149.06 -249.72 station -name 5
+point -139.13 -275.63 station -name 4
+point -134.17 -261.22 station -name 3
+point -107.24 -205.87 station -name 1
+point -122.52 -247.83 station -name 2
+endscrap

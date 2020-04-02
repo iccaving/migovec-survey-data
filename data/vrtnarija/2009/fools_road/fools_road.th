@@ -7,6 +7,13 @@ map m-all-e -projection extended
     fools_road-1e
 endmap
 
+
+input fools_road-p.th2
+
+map m-all-p -projection plan
+    fools_road-1p
+endmap
+
 centreline
     team "Dan Greenwald" insts
     team "Jarvist Frost" notes

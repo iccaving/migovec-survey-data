@@ -7,6 +7,13 @@ map m-all-e -projection extended
     daydreamers-1e
 endmap
 
+
+input daydreamers-p.th2
+
+map m-all-p -projection plan
+    daydreamers-1p
+endmap
+
 centreline
     team "Clare Tan" insts
     team "James Hooper" notes

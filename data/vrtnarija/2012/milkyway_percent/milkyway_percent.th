@@ -7,6 +7,13 @@ map m-all-e -projection extended
     milkyway_percent-1e
 endmap
 
+
+input milkyway_percent-p.th2
+
+map m-all-p -projection plan
+    milkyway_percent-1p
+endmap
+
 centreline
     team "Sam Page" insts
     team "Clare Tan" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     yourmum-1e
 endmap
 
+
+input yourmum-p.th2
+
+map m-all-p -projection plan
+    yourmum-1p
+endmap
+
 centreline
     team "William French" insts
     team "James O'Hanlon" notes

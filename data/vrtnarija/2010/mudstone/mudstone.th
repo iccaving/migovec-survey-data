@@ -7,6 +7,13 @@ map m-all-e -projection extended
     mudstone-1e
 endmap
 
+
+input mudstone-p.th2
+
+map m-all-p -projection plan
+    mudstone-1p
+endmap
+
 centreline
     team "Gergely Ambrus###" insts
     team "Nicolas Kral###" notes

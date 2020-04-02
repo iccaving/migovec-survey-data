@@ -7,6 +7,13 @@ map m-all-e -projection extended
     wet_hammer-1e
 endmap
 
+
+input wet_hammer-p.th2
+
+map m-all-p -projection plan
+    wet_hammer-1p
+endmap
+
 centreline
     team "Dan Greenwald" insts
     team "James Kirkpatrick" notes

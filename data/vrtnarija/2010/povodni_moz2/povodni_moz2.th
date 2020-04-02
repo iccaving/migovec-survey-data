@@ -7,6 +7,13 @@ map m-all-e -projection extended
     povodni_moz2-1e
 endmap
 
+
+input povodni_moz2-p.th2
+
+map m-all-p -projection plan
+    povodni_moz2-1p
+endmap
+
 	centreline
 		team "Jst" insts
 		team "James Hooper" notes

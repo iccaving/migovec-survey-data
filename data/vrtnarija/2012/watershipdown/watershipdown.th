@@ -7,6 +7,13 @@ map m-all-e -projection extended
     watershipdown-1e
 endmap
 
+
+input watershipdown-p.th2
+
+map m-all-p -projection plan
+    watershipdown-1p
+endmap
+
 centreline
     team "Clare Tan" insts
     team "Jarvist Frost" notes
