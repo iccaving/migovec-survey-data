@@ -7,6 +7,13 @@ map m-all-e -projection extended
     andreabocelli-1e
 endmap
 
+
+input andreabocelli-p.th2
+
+map m-all-p -projection plan
+    andreabocelli-1p
+endmap
+
 centreline
     team "Tjasha" insts
     team "Maffi" notes

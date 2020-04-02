@@ -7,6 +7,13 @@ map m-all-e -projection extended
     formative-1e
 endmap
 
+
+input formative-p.th2
+
+map m-all-p -projection plan
+    formative-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes

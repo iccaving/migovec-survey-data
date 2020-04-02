@@ -7,6 +7,13 @@ map m-all-e -projection extended
     crack_in_time-1e
 endmap
 
+
+input crack_in_time-p.th2
+
+map m-all-p -projection plan
+    crack_in_time-1p
+endmap
+
 centreline
     team "Jarvist Frost" insts
     team "Jana Carga" notes

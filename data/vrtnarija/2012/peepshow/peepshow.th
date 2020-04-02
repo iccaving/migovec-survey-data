@@ -7,6 +7,13 @@ map m-all-e -projection extended
     peepshow-1e
 endmap
 
+
+input peepshow-p.th2
+
+map m-all-p -projection plan
+    peepshow-1p
+endmap
+
 	centreline
 		team "Jonathan Hardman" insts
 		team "Nicolas Kral" notes

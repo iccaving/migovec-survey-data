@@ -7,6 +7,13 @@ map m-all-e -projection extended
     razor-1e
 endmap
 
+
+input razor-p.th2
+
+map m-all-p -projection plan
+    razor-1p
+endmap
+
 	centreline
 		team "Gergely Ambrus" insts
 		team "Jana Carga" notes

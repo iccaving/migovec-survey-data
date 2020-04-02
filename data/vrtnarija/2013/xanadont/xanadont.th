@@ -7,6 +7,13 @@ map m-all-e -projection extended
     xanadont-1e
 endmap
 
+
+input xanadont-p.th2
+
+map m-all-p -projection plan
+    xanadont-1p
+endmap
+
 centreline
     team "Dave Kirkpatrick" insts
     team "Rhys Tyers" notes

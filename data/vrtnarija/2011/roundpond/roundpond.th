@@ -7,6 +7,13 @@ map m-all-e -projection extended
     roundpond-1e
 endmap
 
+
+input roundpond-p.th2
+
+map m-all-p -projection plan
+    roundpond-1p
+endmap
+
 centreline
     team "Jan Evetts" insts
     team "JMF" notes

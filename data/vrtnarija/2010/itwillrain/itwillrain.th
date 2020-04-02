@@ -7,6 +7,13 @@ map m-all-e -projection extended
     itwillrain-1e
 endmap
 
+
+input itwillrain-p.th2
+
+map m-all-p -projection plan
+    itwillrain-1p
+endmap
+
 centreline
     team "William French" insts
     team "James KP" notes

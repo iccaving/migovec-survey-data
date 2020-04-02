@@ -7,6 +7,13 @@ map m-all-e -projection extended
     undercover_squirrell-1e
 endmap
 
+
+input undercover_squirrell-p.th2
+
+map m-all-p -projection plan
+    undercover_squirrell-1p
+endmap
+
 	centreline
 		team "Jonathan Hardman" insts
 		team "Nicolas Kral" notes

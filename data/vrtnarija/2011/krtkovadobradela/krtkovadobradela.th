@@ -7,6 +7,13 @@ map m-all-e -projection extended
     krtkovadobradela-1e
 endmap
 
+
+input krtkovadobradela-p.th2
+
+map m-all-p -projection plan
+    krtkovadobradela-1p
+endmap
+
 centreline
     team "Tjasa" insts
     team "Unknown" notes
