@@ -1,0 +1,45 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  10.79 13.50
+  44.72 8.70
+endline
+line survey 
+  -12.13 37.20
+  10.79 13.50
+endline
+line survey 
+  -20.24 6.97
+  -12.13 37.20
+endline
+line survey 
+  -22.83 1.22
+  -20.24 6.97
+endline
+line survey 
+  -12.13 -33.58
+  -22.83 1.22
+endline
+line survey 
+  -29.21 -37.20
+  -12.13 -33.58
+endline
+line survey 
+  -44.72 -23.19
+  -29.21 -37.20
+endline
+endscrap
+
+scrap rottenrow-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 44.72 8.70 station -name pitch
+point 10.79 13.50 station -name 7
+point -12.13 37.20 station -name 6
+point -20.24 6.97 station -name 5
+point -22.83 1.22 station -name 4
+point -12.13 -33.58 station -name 3
+point -29.21 -37.20 station -name 2
+point -44.72 -23.19 station -name 1
+endscrap

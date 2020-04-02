@@ -7,6 +7,13 @@ map m-all-e -projection extended
     time_bandits-1e
 endmap
 
+
+input time_bandits-p.th2
+
+map m-all-p -projection plan
+    time_bandits-1p
+endmap
+
 centreline
     team "James Hooper" insts
     team "Unknown" notes

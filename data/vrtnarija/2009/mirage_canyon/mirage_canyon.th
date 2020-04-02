@@ -7,6 +7,13 @@ map m-all-e -projection extended
     mirage_canyon-1e
 endmap
 
+
+input mirage_canyon-p.th2
+
+map m-all-p -projection plan
+    mirage_canyon-1p
+endmap
+
 centreline
     team "Dan Greenwald" insts
     team "James Kirkpatrick" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     straightjacket-1e
 endmap
 
+
+input straightjacket-p.th2
+
+map m-all-p -projection plan
+    straightjacket-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Clare Tan" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     curiousandcuriouser-1e
 endmap
 
+
+input curiousandcuriouser-p.th2
+
+map m-all-p -projection plan
+    curiousandcuriouser-1p
+endmap
+
 centreline
     team "Tim Child" insts
     team "Rhys Tyers" notes

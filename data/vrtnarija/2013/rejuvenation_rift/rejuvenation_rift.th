@@ -7,6 +7,13 @@ map m-all-e -projection extended
     rejuvenation_rift-1e
 endmap
 
+
+input rejuvenation_rift-p.th2
+
+map m-all-p -projection plan
+    rejuvenation_rift-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Clare Tan" notes

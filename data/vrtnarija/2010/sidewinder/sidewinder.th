@@ -7,6 +7,13 @@ map m-all-e -projection extended
     sidewinder-1e
 endmap
 
+
+input sidewinder-p.th2
+
+map m-all-p -projection plan
+    sidewinder-1p
+endmap
+
 	centreline
 		team "Myles Denton" insts
 		team "James Hooper" notes

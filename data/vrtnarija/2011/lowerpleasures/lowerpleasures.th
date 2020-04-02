@@ -7,6 +7,13 @@ map m-all-e -projection extended
     lowerpleasures-1e
 endmap
 
+
+input lowerpleasures-p.th2
+
+map m-all-p -projection plan
+    lowerpleasures-1p
+endmap
+
 centreline
     team "Gergely Ambrus" insts
     team "Jana Carga" notes

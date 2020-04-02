@@ -7,6 +7,13 @@ map m-all-e -projection extended
     apollo-1e
 endmap
 
+
+input apollo-p.th2
+
+map m-all-p -projection plan
+    apollo-1p
+endmap
+
 centreline
     team "Sam Page" insts
     team "Clare Tan" notes

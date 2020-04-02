@@ -7,6 +7,13 @@ map m-all-e -projection extended
     kokain_lab-1e
 endmap
 
+
+input kokain_lab-p.th2
+
+map m-all-p -projection plan
+    kokain_lab-1p
+endmap
+
 centreline
     team "Erik Poncina" insts
     team "Grega Maffi" notes

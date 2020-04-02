@@ -7,6 +7,13 @@ map m-all-e -projection extended
     2ndtimelucky-1e
 endmap
 
+
+input 2ndtimelucky-p.th2
+
+map m-all-p -projection plan
+    2ndtimelucky-1p
+endmap
+
 centreline
     team "Ariadne Whitby" insts
     team "Mike Foley" notes

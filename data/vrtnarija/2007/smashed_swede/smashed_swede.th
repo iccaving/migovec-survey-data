@@ -7,6 +7,13 @@ map m-all-e -projection extended
     smashed_swede-1e
 endmap
 
+
+input smashed_swede-p.th2
+
+map m-all-p -projection plan
+    smashed_swede-1p
+endmap
+
 centreline
     team "Andrew Jurd" insts
     team "Andrew Jurd" notes

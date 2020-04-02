@@ -7,6 +7,13 @@ map m-all-e -projection extended
     winterjourney-1e
 endmap
 
+
+input winterjourney-p.th2
+
+map m-all-p -projection plan
+    winterjourney-1p
+endmap
+
 centreline
     team "Andrej Fratnik" insts
     team "Jarvist Frost" notes

@@ -1,0 +1,80 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -65.00 -16.50
+  -142.48 -2.80
+endline
+line survey 
+  -65.00 -16.50
+  -65.00 -16.50
+endline
+line survey 
+  -65.00 -16.50
+  -58.07 -31.30
+endline
+line survey 
+  -17.60 -47.68
+  -58.07 -31.30
+endline
+line survey 
+  17.68 -31.22
+  -17.60 -47.68
+endline
+line survey 
+  17.68 -31.22
+  60.51 -45.16
+endline
+line survey 
+  60.51 -45.16
+  107.91 -11.93
+endline
+line survey 
+  107.91 -11.93
+  107.91 -11.93
+endline
+line survey 
+  142.48 32.32
+  107.91 -11.93
+endline
+line survey 
+  142.48 32.32
+  142.48 32.32
+endline
+line survey 
+  142.48 32.32
+  142.48 32.32
+endline
+line survey 
+  137.05 47.20
+  142.48 32.32
+endline
+line survey 
+  137.05 47.20
+  137.05 47.20
+endline
+line survey 
+  122.56 47.68
+  137.05 47.20
+endline
+endscrap
+
+scrap rocksteadylove-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -142.48 -2.80 station -name 15
+point -65.00 -16.50 station -name 14
+point -65.00 -16.50 station -name 13
+point -58.07 -31.30 station -name 12
+point -17.60 -47.68 station -name 11
+point 17.68 -31.22 station -name 10
+point 60.51 -45.16 station -name 9
+point 107.91 -11.93 station -name 8
+point 107.91 -11.93 station -name 7
+point 142.48 32.32 station -name 6
+point 142.48 32.32 station -name 5
+point 142.48 32.32 station -name 4
+point 137.05 47.20 station -name 3
+point 137.05 47.20 station -name 2
+point 122.56 47.68 station -name 1
+endscrap

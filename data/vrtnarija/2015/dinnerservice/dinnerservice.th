@@ -7,6 +7,13 @@ map m-all-e -projection extended
     dinnerservice-1e
 endmap
 
+
+input dinnerservice-p.th2
+
+map m-all-p -projection plan
+    dinnerservice-1p
+endmap
+
 	centreline
 		team "Connor Roe" insts
 		team "Jarvist Frost" notes

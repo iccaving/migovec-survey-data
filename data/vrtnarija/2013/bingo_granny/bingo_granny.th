@@ -7,6 +7,13 @@ map m-all-e -projection extended
     bingo_granny-1e
 endmap
 
+
+input bingo_granny-p.th2
+
+map m-all-p -projection plan
+    bingo_granny-1p
+endmap
+
 centreline
     team "James Hooper" insts
     team "Unknown" notes

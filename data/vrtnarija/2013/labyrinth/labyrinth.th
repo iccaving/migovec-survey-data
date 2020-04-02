@@ -7,6 +7,13 @@ map m-all-e -projection extended
     labyrinth-1e
 endmap
 
+
+input labyrinth-p.th2
+
+map m-all-p -projection plan
+    labyrinth-1p
+endmap
+
 	centreline
 		team "Saber King" insts
 		team "Oliver Myerscough" notes

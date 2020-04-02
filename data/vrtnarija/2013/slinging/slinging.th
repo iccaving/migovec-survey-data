@@ -7,6 +7,13 @@ map m-all-e -projection extended
     slinging-1e
 endmap
 
+
+input slinging-p.th2
+
+map m-all-p -projection plan
+    slinging-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Oliver Myerscough" notes

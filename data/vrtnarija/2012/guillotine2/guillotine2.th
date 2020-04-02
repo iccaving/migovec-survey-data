@@ -7,6 +7,13 @@ map m-all-e -projection extended
     guillotine2-1e
 endmap
 
+
+input guillotine2-p.th2
+
+map m-all-p -projection plan
+    guillotine2-1p
+endmap
+
 	centreline
 		team "Gergely Ambrus" insts
 		team "Jana Carga" notes

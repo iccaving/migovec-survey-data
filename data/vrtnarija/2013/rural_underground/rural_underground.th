@@ -7,6 +7,13 @@ map m-all-e -projection extended
     rural_underground-1e
 endmap
 
+
+input rural_underground-p.th2
+
+map m-all-p -projection plan
+    rural_underground-1p
+endmap
+
 	centreline
 		team "Aljosa Boncina" insts
 		team "Nejc Maver" notes

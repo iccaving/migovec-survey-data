@@ -7,6 +7,13 @@ map m-all-e -projection extended
     AJA-1e
 endmap
 
+
+input AJA-p.th2
+
+map m-all-p -projection plan
+    AJA-1p
+endmap
+
 centreline
     team "Grega / Erik" insts
     team "Unknown" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     serrure-1e
 endmap
 
+
+input serrure-p.th2
+
+map m-all-p -projection plan
+    serrure-1p
+endmap
+
 centreline
     team "William French" insts
     team "Tanguy Racine" notes

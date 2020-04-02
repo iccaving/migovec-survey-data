@@ -1,0 +1,65 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -55.98 -12.05
+  -111.50 -21.89
+endline
+line survey 
+  -55.98 -12.05
+  -39.61 8.90
+endline
+line survey 
+  -39.61 8.90
+  1.26 -12.83
+endline
+line survey 
+  9.92 2.20
+  1.26 -12.83
+endline
+line survey 
+  9.92 2.20
+  37.95 -12.68
+endline
+line survey 
+  37.95 -12.68
+  37.95 -12.68
+endline
+line survey 
+  54.72 -4.09
+  37.95 -12.68
+endline
+line survey 
+  54.72 -4.09
+  105.83 1.26
+endline
+line survey 
+  86.54 19.29
+  105.83 1.26
+endline
+line survey 
+  86.54 19.29
+  86.54 19.29
+endline
+line survey 
+  111.50 21.89
+  86.54 19.29
+endline
+endscrap
+
+scrap vilcon-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -111.50 -21.89 station -name 12
+point -55.98 -12.05 station -name 11
+point -39.61 8.90 station -name 10
+point 1.26 -12.83 station -name 9
+point 9.92 2.20 station -name 8
+point 37.95 -12.68 station -name 7
+point 37.95 -12.68 station -name 6
+point 54.72 -4.09 station -name 5
+point 105.83 1.26 station -name 4
+point 86.54 19.29 station -name 3
+point 86.54 19.29 station -name 2
+point 111.50 21.89 station -name 1
+endscrap

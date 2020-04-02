@@ -7,6 +7,13 @@ map m-all-e -projection extended
     gravity-1e
 endmap
 
+
+input gravity-p.th2
+
+map m-all-p -projection plan
+    gravity-1p
+endmap
+
 centreline
     team "William French" insts
     team "Sam Page" notes

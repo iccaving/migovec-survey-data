@@ -7,6 +7,13 @@ map m-all-e -projection extended
     dwarf_pine-1e
 endmap
 
+
+input dwarf_pine-p.th2
+
+map m-all-p -projection plan
+    dwarf_pine-1p
+endmap
+
 centreline
     team "Dave Kirkpatrick" insts
     team "Sam Page" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     hanginggardensdeep-1e
 endmap
 
+
+input hanginggardensdeep-p.th2
+
+map m-all-p -projection plan
+    hanginggardensdeep-1p
+endmap
+
 centreline
     team "James Hooper" insts
     team "Clare Tan" notes

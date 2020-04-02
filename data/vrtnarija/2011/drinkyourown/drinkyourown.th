@@ -7,6 +7,13 @@ map m-all-e -projection extended
     drinkyourown-1e
 endmap
 
+
+input drinkyourown-p.th2
+
+map m-all-p -projection plan
+    drinkyourown-1p
+endmap
+
 	centreline
 		team "Jim Evans" insts
 		team "Jarvist Frost" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     watershipup-1e
 endmap
 
+
+input watershipup-p.th2
+
+map m-all-p -projection plan
+    watershipup-1p
+endmap
+
 centreline
     team "Oliver Myerscourgh" insts
     team "Jarvist Frost" notes

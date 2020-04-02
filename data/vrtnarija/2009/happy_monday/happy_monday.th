@@ -7,6 +7,13 @@ map m-all-e -projection extended
     happy_monday-1e
 endmap
 
+
+input happy_monday-p.th2
+
+map m-all-p -projection plan
+    happy_monday-1p
+endmap
+
 	centreline
 		team "Dan Greenwald" insts
 		team "Jana Carga" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     ride_the_lightning-1e
 endmap
 
+
+input ride_the_lightning-p.th2
+
+map m-all-p -projection plan
+    ride_the_lightning-1p
+endmap
+
 	centreline
 		team "Eric Boncina" insts
 		team "Iztok Mozir" notes

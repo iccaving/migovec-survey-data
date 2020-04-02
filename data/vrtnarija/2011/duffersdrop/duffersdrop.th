@@ -7,6 +7,13 @@ map m-all-e -projection extended
     duffersdrop-1e
 endmap
 
+
+input duffersdrop-p.th2
+
+map m-all-p -projection plan
+    duffersdrop-1p
+endmap
+
 centreline
     team "Myles Denton" insts
     team "Mike Foley" notes

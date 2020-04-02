@@ -7,6 +7,13 @@ map m-all-e -projection extended
     keti-1e
 endmap
 
+
+input keti-p.th2
+
+map m-all-p -projection plan
+    keti-1p
+endmap
+
 	centreline
 		team "Eric Boncina" insts
 		team "Iztok Mozir" notes

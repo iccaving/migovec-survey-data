@@ -7,6 +7,13 @@ map m-all-e -projection extended
     stalemate-1e
 endmap
 
+
+input stalemate-p.th2
+
+map m-all-p -projection plan
+    stalemate-1p
+endmap
+
 	centreline
 		team "Myles Denton" insts
 		team "Jarvist Frost" notes

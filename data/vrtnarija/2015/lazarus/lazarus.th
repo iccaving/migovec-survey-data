@@ -7,6 +7,13 @@ map m-all-e -projection extended
     lazarus-1e
 endmap
 
+
+input lazarus-p.th2
+
+map m-all-p -projection plan
+    lazarus-1p
+endmap
+
 centreline
     team "Rhys Tyers" insts
     team "Tanguy Racine" notes

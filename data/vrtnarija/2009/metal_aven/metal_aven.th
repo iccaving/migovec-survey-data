@@ -7,6 +7,13 @@ map m-all-e -projection extended
     metal_aven-1e
 endmap
 
+
+input metal_aven-p.th2
+
+map m-all-p -projection plan
+    metal_aven-1p
+endmap
+
 centreline
     team "Iztok	Mozir" insts
     team "James	Kirkpatrick" notes

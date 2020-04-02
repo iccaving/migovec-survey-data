@@ -7,6 +7,13 @@ map m-all-e -projection extended
     rottenrow-1e
 endmap
 
+
+input rottenrow-p.th2
+
+map m-all-p -projection plan
+    rottenrow-1p
+endmap
+
 centreline
     team "Clare Tan" insts
     team "JMF" notes

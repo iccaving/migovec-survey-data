@@ -1,5 +1,12 @@
 
 survey nevermore -title "Nevermore"
+
+input nevermore-p.th2
+
+map m-all-p -projection plan
+    nevermore-1p
+endmap
+
 	centreline
 		team "Unattributed Notes" insts
 		team "Unattributed Notes" notes

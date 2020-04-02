@@ -7,6 +7,13 @@ map m-all-e -projection extended
     vilcon-1e
 endmap
 
+
+input vilcon-p.th2
+
+map m-all-p -projection plan
+    vilcon-1p
+endmap
+
 	centreline
 		team "James Hooper" insts
 		team "Jarvist Frost" notes

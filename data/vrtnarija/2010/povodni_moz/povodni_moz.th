@@ -7,6 +7,13 @@ map m-all-e -projection extended
     povodni_moz-1e
 endmap
 
+
+input povodni_moz-p.th2
+
+map m-all-p -projection plan
+    povodni_moz-1p
+endmap
+
 	centreline
 		team "Eric" insts
 		team "Izi" notes

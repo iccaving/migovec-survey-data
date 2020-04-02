@@ -7,6 +7,13 @@ map m-all-e -projection extended
     cuckoos_nest-1e
 endmap
 
+
+input cuckoos_nest-p.th2
+
+map m-all-p -projection plan
+    cuckoos_nest-1p
+endmap
+
 centreline
     team "Iztok Mozir" insts
     team "Clare Tan" notes

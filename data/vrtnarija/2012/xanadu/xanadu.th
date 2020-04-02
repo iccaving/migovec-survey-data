@@ -7,6 +7,13 @@ map m-all-e -projection extended
     xanadu-1e
 endmap
 
+
+input xanadu-p.th2
+
+map m-all-p -projection plan
+    xanadu-1p
+endmap
+
 	centreline
 		team "Rhys Tyers" insts
 		team "James Hooper" notes

@@ -7,6 +7,13 @@ map m-all-e -projection extended
     walk_the_line_b-1e
 endmap
 
+
+input walk_the_line_b-p.th2
+
+map m-all-p -projection plan
+    walk_the_line_b-1p
+endmap
+
 centreline
     team "Dan Greenwald" insts
     team "Jana Carga" notes
