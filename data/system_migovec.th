@@ -10,9 +10,10 @@
 encoding  utf-8
 
 survey system_migovec -title "System Migovec"
+
 	#input the map definitions
-	input "./system_migovec-p.thm"
-	input "./system_migovec-e.thm"
+	input "./system_migovec-p.thm" #plan view
+	input "./system_migovec-e.thm" #extended elevation view
 	
 	# input the individual cave data files
 	input "./primadona_ubend_monatip.th"
@@ -20,6 +21,7 @@ survey system_migovec -title "System Migovec"
 	input "./vrtnarija/vrtnarija.th"
 	
 	centreline
+	cs epsg:3794
 	#entrance fixes (EPSG:3754)
 	#Primadona
 	station 35@prima1.primadona.primadona_ubend_monatip entrance
@@ -48,13 +50,11 @@ survey system_migovec -title "System Migovec"
 	station 26@torn.M18.m2m16m18 entrance
 	fix 26@torn.M18.m2m16m18 404681 124458 1849
 	endcentreline
-
-	# input DEM tiles
-	#input "../DEM/DEM_10m.th"
 	
 	# EQUATE commands for CONNECTIONS
 	# NCB and MONATIP
 	equate 6@gallery.M18.m2m16m18 40@monatip11.monatip.primadona_ubend_monatip
+	
 	#Wishing Well and Mig Country
 	equate 4@wishing_well2.monatip.primadona_ubend_monatip 1@migconleft.M16.m2m16m18
 
