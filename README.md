@@ -54,9 +54,9 @@ The full system:
   The plan with English legend and labels. (WIP)
 - Extended Elevation - English [PDF](WIP)
 
-**Primadonna**
+**Primadona**
 
-Primadonna is a the cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2016. It is accessed from impressive entrances on the Western cliffs of the Migovec plateau.
+Primadona (in full Primadona/Monatip/Ubend) is a cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2015. It is accessed from impressive entrances midway across the western cliffs of the Migovec plateau.
 
 - [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip.3d) [3d]  
   The 3D file for viewing in Aven or Loch.
@@ -84,7 +84,7 @@ Connected to the main system in 2012, Vrtnarija comprises roughly a third of the
 
 **M18 / M16 / M2**
 
-Collectively known as 'the old system' these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994 exploration was continued until roughly 2001 and the various entrances were connected into what would become the longest cave in Slovenia.
+Collectively known as 'the old system' or sometimes 'sysmig', these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994, exploration was continued until roughly 2001. M2/M8 and M16/M18 connections were made early on in 1996. 
 
 - [Model 3D](https://github.com/tr1813/migresurvey/releases/download/latest/m2_m16_m18.3d) [3d]  
   The 3D file for viewing in Aven or Loch. (WIP)
@@ -115,11 +115,17 @@ Therion has a complex vocabulary of its own so here is a basic translation.
 
 ### Internal Data
 
-Within Therion there are a few data types it's worth knowing about.
+- **survey** : main data structure, which can be nested *ad nauseam* to represent karst areas, caves or passages. Each survey has an object id, which must be unique within the scope of the higher level survey. Likewise, any object within a survey has unique id (from stations, to maps, scraps)
+- **centreline**: survey data specification., with syntex mostly derived from Survex, 
+- **Scrap** - The most basic drawing element, a piece of 2D map. It will consist of the walls and stations of the passage as well as lots of extra information (should you choose to draw it!) like boulders, pits, passage gradients etc. A single set of survey data (a single passage) can have many scraps associated with it. It is often good to split the drawing over many scraps as this allows Therion to do clever things (like depth colouring). Scraps cannot overlap themselves.
+- **Map** - The higher level drawing element. A map can be made of scraps, or it can be a map of maps. Maps are how you collect individual drawn passages into larger blocks. For example a passage like Aqueduct will have its scraps collected in a map called `m-all-p` (). A bigger map might be called `m-below_klic_globin-p` and contain maps from Aqueduct and many other passages (e.g. m-all-p@aqueduct, m-all-p@klic_globin, etc...). The `mbelow_klic_globin` will be collected into an Primadona map `m-all-p@Primadona` with all the other maps in Primadona and finally that will collected with the maps from Vrntarija and the old system into a full System Migovec map. The advantage of this heirarchical structure is that you can export these maps at any level, whether you want an overview of the full system or a higher resolution look at the pushing front.
 
-- **Survey** - The raw survey data consiting of station to station measurements and passage dimension data (LRUD) as well as metadata such as date of exploration and survey, and names of explores and surveyors.
-- **Scrap** - The most basic drawing element. A scrap is the drawing associated with a small bit of passage. It will consist of the walls and stations of the passage as well as lots of extra information (should you choose to draw it!) like boulders, pits, passage gradients etc. A single set of survey data (a single passage) can have many scraps associated with it. It is often good to split the drawing over many scraps as this allows Therion to do clever things (like depth colouring). Scraps cannot overlap themselves.
-- **Map** - The higher level drawing element. A map can be made of scraps, or it can be a map of maps. Maps are how you collect individual drawn passages into larger blocks. For example a passage like Aquaduct will have its scraps collected in a map called `maquaduct-p` (don't worry about the name). A bigger map might be called `mbelow_klic_globin` and contain maps from Aquaduct and many other passages. The `mbelow_klic_globin` will be collected into an Primadona map `mprimadona-p` with all the other maps in Primadona and finally that will collected with the maps from Vrntarija and the old system into a full System Migovec map. The advantage of this heirarchical structure is that you can export these maps at any level, whether you want an overview of the full system or a higher resolution look at the pushing front.
+### A note on scope
+Scope can be roughly understood as the level of the survey we are working in. 
+If we are for instance equating stations between two different passages of a cave (say M16), then we are within the M6 scope. 
+As mentioned previously, all objects in Therion have an id, whether is a survey, a map, a scrap, a line or a point.
+Due to the hierarchical nature of the data structure and the fact that each id must be unique within each level of survey, which is why we have uniquely named stations in each passage, but may have  
+
 
 ### Exported Data
 
@@ -133,7 +139,7 @@ Therion can export to a number of formats.
 ### Other Key Words
 
 - **equate** - An equate lets Therion know that two stations are the same (that they are joined). This is how basically all the export formats are constructed.
-- **join** - A join lets Therion know that two scraps should be joined. It does its best to match up any walls that are nearby each other to create a seamless passage when exporting maps and atlases.
+- **join** - A join lets Therion know that two scraps, or lines should be joined. It does its best to match up any walls that are nearby each other to create a seamless passage when exporting maps and atlases. 
 
 ## Repository and File Structure
 
@@ -145,10 +151,10 @@ The raw data, usually created in the cave, or shortly after. These are within th
 
 These will likely represent single pushing trips.
 
-- `.th` files contain the survey data
-- `.th2` files contain the scraps (drawings)
+- `.th` files contain the survey data (between `centreline/endcentreline` flags)
+- `.th2` files contain the scraps (drawings beginning with `scrap {scrap-id}/endscrap` flags)
 
-The `.th` will probably also join any scraps (in the `.th2`) within the passage as a named map. This will have been autogenerated by Topodroid in many cases.
+The `.th` will probably also enclose any scraps (in the `.th2`) within the passage as a named map. This will have been autogenerated by Topodroid in many cases.
 
 ### Higher level data
 
@@ -157,15 +163,17 @@ In the `data\{cave}` folders you will find `.th` files that define how these ind
 - `{name}.th` will be used to defined equates in the survey and join scraps between passages
 - `{name}.thm` will be used to combine individual passage maps into larger maps.
 
+In the `{name}.th` file, passages are arranged by year of discovery.
+In the `{name}.thm`file, passage map definitions are ordered by cave sub-region, and these subregions are themselves ordered into a map definition for the cave (a high level m-all-p, within the scope of the cave).  
+
 ### Exports
 
 With the data thus organised you can export maps in pdf and svg files and models in .3d and lox files. This is done through a further two types of file.
 
-In the `_config` folders are `.thconfig` files. These are more similar to a shell script if you are familair with those. They contain commands
-to produce output files like pdfs etc. They combine the named maps and `layouts` to make the output.
+In the `_config` folders are `.thconfig` files. These are more similar to a shell script if you are familiar with those. They contain commands to produce output files like pdfs etc. They combine the named maps and `layouts` to make the output.
 
 In the `_layout` folders there layout files (`.thl`) these are complicated but they basically just define which symbols should be on the
-map and how they should like. i.e. should you show mineral symbols, how thick should pit lines be, what colour are waterfalls.
+map and how they should be like. i.e. should you show mineral symbols, how thick should pit lines be, what colour are waterfalls.
 
 ## How to export data
 
@@ -220,37 +228,8 @@ export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_E
 export model -o ../../_outputs/model/primadona_ubend_monatip.3d -fmt survex
 ```
 
-You can create your own .thconfig file and select different map. For example, try selecting simply primadona, in plan view:
 
-`select mprimadona-p@primadona.sistem_prima`
 
-maybe one year of exploration in primadona:
-`select m2018-p@primadona.sistem_prima`
-
-a single cave passage:
-`select mthe_aqueduct-p@the_aqueduct.primadona.sistem_prima`
-
-or (god forbid) a single scrap:
-`select m1p@the_aqueduct.primadona.sistem_prima`
-and see what the result is.
-
-If this select statement suffers from a typo or encounters any kind of error, Therion will just compile a map of all the scraps available, but the compilation log will show an amber warning. The map subdivision is really important for the creation of an atlas of the cave.
-
-try exporting an atlas to pdf with the following command (make sure the select command is commented out with a `#`:
-`export atlas -o ../outputs/sys_prima_atlas.pdf -layout local`
-
-and see what the difference is when you try this:
-
-```
-select msystem-p@system_prima
-export atlas -o ../outputs/sys_prima_atlas.pdf -layout local
-```
-
-And of course when you have made your config, run it with Therion:
-
-```
-therion data/_configs/overview/my_nice_config.thconfig
-```
 
 ## Adding data
 
@@ -258,55 +237,87 @@ therion data/_configs/overview/my_nice_config.thconfig
 
 You have a some `.th` files from topodroid or from an svx conversion. Here's what to do with them.
 
-We have used a pyramidal hierarchy, with a cave, year, passage structure. Save the `my_new_passage.th` file into a new folder with lower case name (as far as possible, the same as the survex survey name).
+We have used a pyramidal hierarchy,
 
-Find the `cave.th`file in the `cave` folder. This file contains a series of `input ./year/passage/passage.th` commands to tell the therion compiler to include the relevant survey data. Adding the command `input ./year/passage/my_new_passage.th` to this file in the correct year folder is necessary, but we now need to connect the new data to an existing point in the survey, i.e. equate.
+```
+survey plateau
+  survey system_migovec
+    survey primadona_ubend_monatip
+      survey primadona
+        YEAR N
+        survey {passage1}
+        endsurvey
+        ...
+
+        survey {passage2}
+        endsurvey
+
+        YEAR N+1
+        survey {passage3}
+        endsurvey
+        ...
+      endsurvey
+
+      survey {other_main_entrance}
+      endsurvey
+      ...
+    endsurvey
+
+    survey {other_system}
+    endsurvey
+    ...
+  endsurvey
+
+  survey {other_cave}
+  endsurvey
+  ...
+
+  surface  # a DEM of the plateau (WIP)
+  endsurface
+endsurvey 
+```
+With a system,cave, passage structure. Save the `{my_new_passage}.th` file into a new folder with lower case name (as far as possible, the same as the survex survey name).
+
+Find the `{cave}.th`file in the `{cave}` folder. This file contains a series of `input ./year/passage/passage.th` commands to tell the therion compiler to include the relevant survey data. Adding the command `input ./year/passage/my_new_passage.th` to this file in the correct year folder is necessary, but we now need to connect the new data to an existing point in the survey, i.e. equate.
 
 Below the input blocks, you will find a series of `equate` commands, this is where you can tie in your new cave passage to the existing centrelines.
 
-The main cave.th file will therefore look similar to this:
+The main `{cave}.th` file will therefore look similar to this:
 
 ```
-survey MyCave -title "The name of the cave"
+survey {cave} -title "The name of the cave"
 
 #ignore the 'map' blocks for now.
 
-map mMyCave-<p/e> -projection <plan/extended>
+map m-all-<p/e> -projection <plan/extended>
  mYear1-<p/e>
  mYear2-<p/e>
  ...
 endmap
 
 #______Year1______
-map mYear1-<p/e> -projection <plan/extended> -title "Year 1"
- mPassage1-<p/e>
- mPassage2-<p/e>
- ...
-endmap
 
-input ./year1/passage_1/passage_1.th
+
+input ./{year1/passage_1/passage_1.th
 input ./year1/passage_2/passage_2.th
+input ./year1/passage_3/passage_3.th
 ...
 
-equate stationX@passage_1 stationY@passage_b #the main equate commands between passages.
+equate stationX@passage_1 stationY@passage_2 #the main equate commands between passages.
+equate stationZ@passage_2 stationW@passage_3 #the main equate commands between passages.
 ...
 
 join scrapX@passage_1 scrapY@passage_b #some join commands between survey maps
 ...
 
 #______Year2______
-map mYear1-<p/e> -projection <plan/extended> -title "Year 2"
- mPassageA-<p/e>
- mPassageB-<p/e>
- ...
-endmap
-
-input ./year2/passage_a/passage_a.th
-input ./year2/passage_a/passage_a.th
+ 
+input ./year2/passage_4/passage_4.th
+input ./year2/passage_5/passage_5.th
 ...
 
-equate stationX@passage_a stationY@passage_1 #equates to current and previous years.
-                                             #The scope here is the cave, so we need to indicate the survey at a very low level.
+equate stationN@passage_4 stationM@passage_3 #equates to current and previous years.
+                                             #The scope here is the cave, so we need to indicate the passage id
 
 endsurvey
 ```
@@ -322,12 +333,12 @@ This assumes you have drawn the passage already using the Xtherion editor or Ink
 Inside the map command block, you will include maps or scraps (you can't use a mix of the two). If using a typical Topodroid export, then the 'map' section of the .th file will look like the example below.
 
 ```
-survey MySurvey -title "The name you gave to the cave passage"
+survey {passage} -title "The name you gave to the cave passage"
 
-input my_survey_p.th2  # including the plan view drawing from xtherion
-input my_survey_e.th2 # including the extended elevation view from xtherion
+input {passage}_p.th2  # including the plan view drawing from xtherion or Inkscape
+input {passage}_e.th2 # including the extended elevation view from xtherion or Inkscape
 
-map mMySurvey-<p/e> -projection <plan/extended> # this is a map of maps
+map m-all-<p/e> -projection <plan/extended> # this is a map of maps
  m1<p/e>            #this is a map
  m2<p/e>
  ...
@@ -371,7 +382,7 @@ All the old Survex survey data has already been converted into Therion format, r
 
 The `scripts/svx_to_th.py` was used to convert the bulk of our data and could probably be used in future.
 
-#### Manually
+#### Manually (don't do this anymore)
 
 The aim is to convert the .svx file to .th format. The shot data formats are identical, but the survey flags and block commands are a bit different.
 
@@ -466,7 +477,7 @@ The passage is drawn and you're happy with how it looks.... for now. Leave Inksc
 Go to the .th file and you should see a
 
 ```
-map m{passage}-p -projection plan
+map m-{all}-p -projection plan
      {passage}-1p
 endmap.
 ```
