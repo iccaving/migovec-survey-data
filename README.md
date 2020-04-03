@@ -124,7 +124,7 @@ Therion has a complex vocabulary of its own so here is a basic translation.
 Scope can be roughly understood as the level of the survey we are working in. 
 If we are for instance equating stations between two different passages of a cave (say M16), then we are within the M6 scope. 
 As mentioned previously, all objects in Therion have an id, whether is a survey, a map, a scrap, a line or a point.
-Due to the hierarchical nature of the data structure and the fact that each id must be unique within each level of survey, which is why we have uniquely named stations in each passage, but may have  
+Due to the hierarchical nature of the data structure and the fact that each id must be unique within each level of survey, which is why we have uniquely named stations in each passage, and uniquely named passages in each cave, and so forth.
 
 
 ### Exported Data
