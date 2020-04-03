@@ -12,15 +12,21 @@ encoding  utf-8
 # select a source data file.
 source "../../vrtnarija/vrtnarija.th"
 
+input "../../_layouts/base-e.thl"
 input "../../_layouts/mods.thl"
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
-layout extended
+
+layout ee
+	copy base-e
 	copy show-centreline
 	scale 1 2000
 	map-header 0 0 off
 endlayout
 
+
 language fr
 
-export map -projection extended -o ../_outputs/EE_SLO.pdf -layout extended #-layout-debug station-names
+select m-all-e@vrtnarija
+
+export map -projection extended -o ../_outputs/EE_SLO_map.pdf -layout ee #-layout-debug station-names
