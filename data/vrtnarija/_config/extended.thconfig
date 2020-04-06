@@ -18,7 +18,7 @@ input "../../_layouts/mods.thl"
 # export an ELEVATION view
 
 layout ee
-	copy base-e
+	#copy base-e
 	copy show-centreline
 	scale 1 2000
 	map-header 0 0 off
@@ -26,7 +26,5 @@ endlayout
 
 
 language fr
-
-select m-all-e@vrtnarija
 
 export map -projection extended -o ../_outputs/EE_SLO_map.pdf -layout ee #-layout-debug station-names
