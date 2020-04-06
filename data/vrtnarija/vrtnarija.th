@@ -122,9 +122,9 @@ survey vrtnarija -title "Vrtnarija"
 	input "./2004/envy/envy.th"
 	input "./2004/brownriceinlet/brownriceinlet.th"
 	input "./2004/soda/soda.th"
-	input ./2004/nevermore/nevermore.th
-	input ./2004/blind/blind.th
-	input ./2004/cow/cow.th
+	input "./2004/nevermore/nevermore.th"
+	input "./2004/blind/blind.th"
+	input "./2004/cow/cow.th"
 	
 	equate 2@nitro 16@gold
 	equate 14@mad_cow 24@weepeople
@@ -461,6 +461,7 @@ survey vrtnarija -title "Vrtnarija"
 	join ingloriousbasterd-1p@ingloriousbasterd atlantis-3p@atlantis
 	join minestrone2-1p@minestrone2 atlantis-3p@atlantis
 	join minestrone1-1p@minestrone1 minestrone2-1p@minestrone2
+	join milkyway-4p@milkyway dreamsforthesoul-1p@dreamsforthesoul
 	
 	###__________2013____________###
 	input ./2013/lethe/lethe.th
@@ -523,7 +524,7 @@ survey vrtnarija -title "Vrtnarija"
 	join hash-1p@hash eastlinks-1p@eastlinks
 	join hash2-1p@hash2 hash-1p@hash
 	join hash3-1p@hash3 hash2-1p@hash2
-	
+	join beetlejuice-1p@beetlejuice milkyway-5p@milkyway
 	
 	###__________2014____________###
 	input ./2014/sicsempertyrannis/sicsempertyrannis.th

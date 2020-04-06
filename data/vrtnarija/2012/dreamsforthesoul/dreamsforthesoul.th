@@ -7,14 +7,18 @@ map m-all-e -projection extended
     dreamsforthesoul-1e
 endmap
 
-
-
-
 input dreamsforthesoul-p.th2
 
 map m-all-p -projection plan
     dreamsforthesoul-1p
+    dreamsforthesoul-2p
+    dreamsforthesoul-3p
+    dreamsforthesoul-4p
 endmap
+
+join dreamsforthesoul-1p dreamsforthesoul-2p
+join dreamsforthesoul-3p dreamsforthesoul-2p
+join dreamsforthesoul-3p dreamsforthesoul-4p
 
 centreline
     team "Gergely Ambrus" insts

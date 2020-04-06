@@ -2,12 +2,15 @@
 map m-all-p -projection plan -title "Vrtnarija"
 	m-original_entrance_series-p
 	m-friendship_level-p
+	m-above_apollo-p
+	m-beyond-consort-p
 	m-below_zimmer-p
 	m-below_big_rock-p
 	m-beyond_red_cow-p
 	m-below_balamory-p
 	m-cheetah-p
-	m-beyond-consort-p
+
+	
 	m-below_stuck_in_paradise-p
 	m-beyond_atlantis-p
 endmap
@@ -56,6 +59,11 @@ map m-friendship_level-p -projection plan
 	m-all-p@candyMountain
 endmap
 
+map m-above_apollo-p -projection plan
+	m-all-p@milkyway
+	m-all-p@beetlejuice
+	m-all-p@dreamsforthesoul
+endmap
 map m-below_zimmer-p -projection plan
 	m-all-p@belowzimmer
 	m-all-p@eggsplosive
