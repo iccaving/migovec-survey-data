@@ -31,15 +31,6 @@ endscrap
 
 scrap deep-2p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point 26.69 1.22 station -name 7
-point 52.44 -28.39 station -name 6
-point 64.25 -42.48 station -name 5
-point 76.93 -43.58 station -name 4
-endscrap
-
-
-scrap deep-3p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-
 line wall 
   -3.361 -0.7202
   -3.361 -0.7202 10.5632 -9.6029 12.2437 -10.083
@@ -60,6 +51,15 @@ line wall
   13.9242 16.565 8.4025 20.4061 7.2022 20.4061
   6.0018 20.4061 -11.5234 21.6065 -11.5234 21.6065
 endline
+
+point 26.69 1.22 station -name 7
+point 52.44 -28.39 station -name 6
+point 64.25 -42.48 station -name 5
+point 76.93 -43.58 station -name 4
+endscrap
+
+
+scrap deep-3p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
 line wall 
   -11.5234 21.6065
@@ -87,11 +87,11 @@ endscrap
 
 scrap deep-4p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point -161.6883 43.5731 water-flow -orientation 345
-
+point -161.6883 43.5731 water-flow -orientation 345.0
 area water
   sump_god 
 endarea
+
 line border -close on -id sump_god -clip off
   -153.4598 73.165
   -153.4598 73.165 -156.2867 78.0233 -158.4474 78.2634
