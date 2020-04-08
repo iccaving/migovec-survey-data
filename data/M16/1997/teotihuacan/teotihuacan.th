@@ -4,11 +4,13 @@ survey teotihuacan -title "Teotihuacan"
 input teotihuacan-p.th2
 
 map m-all-p -projection plan
+    teotihuacan-3p
     teotihuacan-1p
     teotihuacan-2p
 endmap
 
  join teotihuacan-1p teotihuacan-2p
+ #join teotihuacan-1p teotihuacan-3p
 
 centreline
     team "Michael Rogerson" insts

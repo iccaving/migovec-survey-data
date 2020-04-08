@@ -28,6 +28,7 @@ select m-all-p@m2m16m18
 layout plan
 	copy base-p
 	copy subsystem_overview
+	scale 1 500
 	#copy colour-by-depth
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
 	code tex-map
@@ -41,7 +42,7 @@ layout plan
 endlayout
 
 language fr
-export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.pdf -layout plan -layout-debug all
 export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.svg -layout plan
 
 language en

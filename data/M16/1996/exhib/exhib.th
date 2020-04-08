@@ -9,12 +9,13 @@ survey exhib -title "Exhibition Road"
 		exhib-4p
 		exhib-5p
 		exhib-2p
-		exhib-1p
+		exhib-6p
 	endmap
 	
-	join exhib-1p exhib-2p
+	join exhib-6p exhib-2p
 	join exhib-2p exhib-5p
 	join exhib-5p exhib-3p
+
 	
 	centreline
 		team "Colm Carroll" insts

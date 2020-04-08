@@ -9,6 +9,9 @@ map m-all-p -projection plan
     cowboys-3p # 1 4
 endmap
 
+    join cowboys-1p cowboys-2p
+    join cowboys-2p cowboys-3p
+
 centreline
     team "Jim Evans" insts
     team "Alva Gosson" notes
