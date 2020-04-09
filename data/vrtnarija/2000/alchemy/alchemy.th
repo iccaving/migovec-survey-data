@@ -3,7 +3,6 @@ survey alchemy -title "Alchemy & Zlatorog rift"
 	input alchemy-p.th2
 	
 	map m-all-p -projection plan
-		malchemy-p2
 		malchemy-p1
 	endmap
 	
@@ -11,9 +10,7 @@ survey alchemy -title "Alchemy & Zlatorog rift"
 		alchemy-p1
 	endmap
 	
-	map malchemy-p2 -projection plan
-		alchemy-p2
-	endmap
+
 	
 	
 	

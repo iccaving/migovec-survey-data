@@ -569,8 +569,7 @@ survey bath -title "Bath"
 		m3p
 	endmap
 	
-	join s1_l1:end s3_l1:0
-	join s1_l2:end s3_l2:0
+	join bath-1p bath-3p
 	join bath-2p bath-3p
 	map m1s -projection extended
 		bath-1s
