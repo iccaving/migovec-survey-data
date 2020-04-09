@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap alchemy-p1 -scale [0.0 0.0 1024.0 906.6675255656655 0.0 0.0 124.19 109.96]
 
-point 631.4155 580.2806 passage-height -value 15
+point 631.4155 580.2806 passage-height -align t -value 15
 area water
   l9-514-476
 endarea
@@ -63,53 +63,5 @@ line wall -close on
   658.0 564.0 656.5 581.0 656.5 581.0
 endline
 
-endscrap
-
-
-scrap alchemy-p2 -scale [0.0 0.0 1024.0 906.6675255656655 0.0 0.0 124.19 109.96]
-
-line wall:invisible 
-  660.25 564.25
-  661.25 581.0
-endline
-
-line wall 
-  661.25 581.0
-  656.5 579.5 644.75 581.25 643.0 580.75
-  641.25 580.25 637.25 579.5 637.25 579.5
-  637.25 575.0
-  637.25 575.0 635.0 571.5 633.0 573.75
-  631.0 576.0 631.75 576.0 627.5 575.0
-endline
-
-line floor-step 
-  656.75 564.75
-  656.75 564.75 660.25 573.5 658.75 581.25
-endline
-
-line pit -close on -outline in
-  639.0 575.5
-  646.5 571.75
-  653.5 573.5
-  655.75 579.0
-  643.0 579.25
-endline
-
-line pit -outline out
-  625.75 562.5
-  625.75 562.5 630.5 570.75 627.5 575.0
-endline
-
-line wall 
-  625.75 562.5
-  625.75 562.5 627.1 563.33 632.25 562.5
-  646.25 560.25 643.75 565.5 647.75 564.25
-  651.75 563.0 656.75 564.75 656.75 564.75
-  660.25 564.25
-endline
-
-point 734.2971 586.8687 station -name 7
-point 634.6098 571.0375 station -name 6
-point 630.2397 573.841 station -name 5
 endscrap
 

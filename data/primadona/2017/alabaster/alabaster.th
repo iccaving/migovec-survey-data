@@ -4,26 +4,26 @@ survey alabaster
 	input "alabaster-e.th2"
 	
 	map m-all-p -projection plan
-		malabasterp_1
-		malabasterp_2
-		malabasterp_3
-		malabasterp_4
+		malabaster-1p
+		malabaster-2p
+		malabaster-3p
+		malabaster-4p
 	endmap
 	
-	map malabasterp_1 -projection plan
-		alabasterp_1
+	map malabaster-1p -projection plan
+		alabaster-1p
 	endmap
 	
-	map malabasterp_2 -projection plan
-		alabasterp_2
+	map malabaster-2p -projection plan
+		alabaster-2p
 	endmap
 	
-	map malabasterp_3 -projection plan
-		alabasterp_3
+	map malabaster-3p -projection plan
+		alabaster-3p
 	endmap
 	
-	map malabasterp_4 -projection plan
-		alabasterp_4
+	map malabaster-4p -projection plan
+		alabaster-4p
 	endmap
 	
 	map  m-all-e -projection extended
@@ -33,7 +33,7 @@ survey alabaster
 	join s4_l1 s3_l1
 	join s4_l2 s3_l1
 	
-	join alabasterp_3 alabasterp_4
+	join alabaster-3p alabaster-4p
 	
 	
 	centreline
