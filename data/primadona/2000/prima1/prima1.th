@@ -5,39 +5,39 @@ survey prima1 -title "Primadona entrance series"
 	input "prima1-e.th2"
 	
 	map m-all-p -projection plan
-		mprimap_ent
-		mprimap_1
-		mprimap_2
-		mprimap_3
-		mprimap_4
-		mprimap_5
-		mprimap_6
-		mprimap_7
+		mprima1-entp
+		mprima1-1p
+		mprima1-2p
+		mprima1-3p
+		mprima1-4p
+		mprima1-5p
+		mprima1-6p
+		mprima1-7p
 	endmap
 	
-	map mprimap_ent -projection plan
-		prima1p_ent
+	map mprima1-entp -projection plan
+		prima1-entp
 	endmap
-	map mprimap_1 -projection plan
-		prima1p_1
+	map mprima1-1p -projection plan
+		prima1-1p
 	endmap
-	map mprimap_2 -projection plan
-		prima1p_2
+	map mprima1-2p -projection plan
+		prima1-2p
 	endmap
-	map mprimap_3 -projection plan
-		prima1p_3
+	map mprima1-3p -projection plan
+		prima1-3p
 	endmap
-	map mprimap_4 -projection plan
-		prima1p_4
+	map mprima1-4p -projection plan
+		prima1-4p
 	endmap
-	map mprimap_5 -projection plan
-		prima1p_5
+	map mprima1-5p -projection plan
+		prima1-5p
 	endmap
-	map mprimap_6 -projection plan
-		prima1p_6
+	map mprima1-6p -projection plan
+		prima1-6p
 	endmap
-	map mprimap_7 -projection plan
-		prima1p_7
+	map mprima1-7p -projection plan
+		prima1-7p
 	endmap
 	
 	map m-prima1-e2 -projection extended
@@ -49,13 +49,13 @@ survey prima1 -title "Primadona entrance series"
 		prima1-e3
 	endmap
 	
-	join prima1p_ent prima1p_1
-	join prima1p_1 prima1p_2
-	join prima1p_2 prima1p_3
-	join prima1p_3 prima1p_4
-	join prima1p_4 prima1p_5
-	join prima1p_5 prima1p_6
-	join prima1p_6 prima1p_7
+	join prima1-entp prima1-1p
+	join prima1-1p prima1-2p
+	join prima1-2p prima1-3p
+	join prima1-3p prima1-4p
+	join prima1-4p prima1-5p
+	join prima1-5p prima1-6p
+	join prima1-6p prima1-7p
 
 	join p_e2_l1 p_e3_l1
 	join p_e2_l2 p_e3_l2	

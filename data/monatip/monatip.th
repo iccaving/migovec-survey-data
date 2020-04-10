@@ -25,22 +25,21 @@ survey monatip
 	equate 20@doubletime 50@monatip4
 	
 	#Scrap joins
-	join monatip2p_1@monatip2 monatip1p_5@monatip1
-	join monatip3p_2@monatip3 broken_hammerp_1@broken_hammer
+	join monatip2-1p@monatip2 monatip1-5p@monatip1
+	join monatip3p_2@monatip3 broken_hammer-1p@broken_hammer
 	join monatip1-s1@monatip1 monatip2-e1@monatip2
 	join monatip2-e1@monatip2 monatip3-e1@monatip3
 	join monatip3-e1@monatip3 broken_hammer-e1@broken_hammer
 	join monatip4-e4@monatip4 broken_hammer-e2@broken_hammer
+	join alkatraz_disto_resurvey-2p@alkatraz_disto_resurvey monatip4-5p@monatip4
+	join doubletime-1p@doubletime monatip4-5p@monatip4
+	join monatip4-1p@monatip4 broken_hammer-2p@broken_hammer
+	join monatip4-6p@monatip4 broken_hammer-2p@broken_hammer
 	
 	#Line joins
-	join s2_l2@monatip4:0 s2_l2@broken_hammer:0
-	join s2_l1@monatip4:end s2_l1@broken_hammer:end
-	join alkatraz_disto_resurvey-2p@alkatraz_disto_resurvey monatip4p_5@monatip4
-	join s5_l1@monatip4:end s1_l1@doubletime:0
-	join s5_l2@monatip4:0 s1_l2@doubletime:end
+	#join s2_l2@monatip4:0 s2_l2@broken_hammer:0
+	#join s2_l1@monatip4:end s2_l1@broken_hammer:end
 	
-	join doubletime_e2_l1@doubletime monatip4_e1_l1@monatip4
-	join doubletime_e2_l2@doubletime monatip4_e1_l2@monatip4
 
 	
 	######________________2012________________######
@@ -49,6 +48,7 @@ survey monatip
 	equate 27@monatip5 27@monatip2
 	
 	join monatip5-1e@monatip5 monatip2-e1@monatip2
+	join monatip2-1p@monatip2 monatip5-1p@monatip5
 	
 	######________________2013________________######
 	
@@ -91,7 +91,7 @@ survey monatip
 	join alkatraz_disto_resurvey-1p@alkatraz_disto_resurvey therockp_2@therock
 	equate 14@therock 7@alkatraz
 	
-	join cloacamaximap_1@cloacamaxima monatip2p_3@monatip2
+	join cloacamaximap_1@cloacamaxima monatip2-3p@monatip2
 	join cm_e4_l1@cloacamaxima m2_e1_l1@monatip2
 	join cm_e4_l2@cloacamaxima m2_e1_l2@monatip2
 	
@@ -112,7 +112,7 @@ survey monatip
 	equate 0@aleksandrija 49@cloacamaxima
 	equate PSEUDO12@therock 0@alkatraz_disto_resurvey
 	
-	join aleksandrija-1p@aleksandrija monatip2p_2@monatip2
+	join aleksandrija-1p@aleksandrija monatip2-2p@monatip2
 	
 	join well_hung-e1@well_hung cloacamaxima-e3@cloacamaxima
 	join well_hung-e1@well_hung monatip4-e4@monatip4

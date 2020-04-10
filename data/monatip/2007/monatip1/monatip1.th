@@ -1,7 +1,7 @@
 encoding  utf-8
 survey monatip1
 	
-	input "monatip1p.th2"
+	input "monatip1-p.th2"
 	input "monatip1-e.th2"
 	
 	map  m-all-e -projection extended
@@ -9,33 +9,33 @@ survey monatip1
 	endmap
 	
 	map m-all-p -projection plan
-		mmonatip1-p1
-		mmonatip1-p2
-		mmonatip1-p5
-		mmonatip1-p3
-		mmonatip1-p4
+		mmonatip1-1p
+		mmonatip1-2p
+		mmonatip1-5p
+		mmonatip1-3p
+		mmonatip1-4p
 	endmap
 	
-	map mmonatip1-p1 -projection plan
-		monatip1p_1
+	map mmonatip1-1p -projection plan
+		monatip1-1p
 	endmap
 	
-	map mmonatip1-p2 -projection plan
-		monatip1p_2
+	map mmonatip1-2p -projection plan
+		monatip1-2p
 	endmap
-	map mmonatip1-p3 -projection plan
-		monatip1p_3
-	endmap
-	
-	map mmonatip1-p4 -projection plan
-		monatip1p_4
+	map mmonatip1-3p -projection plan
+		monatip1-3p
 	endmap
 	
-	map mmonatip1-p5 -projection plan
-		monatip1p_5
+	map mmonatip1-4p -projection plan
+		monatip1-4p
 	endmap
 	
-	join monatip1p_4 monatip1p_5
+	map mmonatip1-5p -projection plan
+		monatip1-5p
+	endmap
+	
+	join monatip1-4p monatip1-5p
 	
 	
 	centreline

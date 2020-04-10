@@ -1,6 +1,6 @@
 encoding  utf-8
 survey monatip4
-	input "monatip4p.th2"
+	input "monatip4-p.th2"
 	input "monatip4-e.th2"
 	
 	map  m-all-e -projection extended
@@ -13,37 +13,43 @@ survey monatip4
 	join monatip4-e1 monatip4-e2
 	
 	map m-all-p -projection plan
-		mmonatip4-p1
-		mmonatip4-p2
-		mmonatip4-p3
-		mmonatip4-p4
-		mmonatip4-p5
+		mmonatip4-6p
+		mmonatip4-1p
+		mmonatip4-2p
+		mmonatip4-3p
+		mmonatip4-4p
+		mmonatip4-5p
 	endmap
 	
-	map mmonatip4-p1 -projection plan
-		monatip4p_1
+	map mmonatip4-1p -projection plan
+		monatip4-1p
 	endmap
 	
-	map mmonatip4-p2 -projection plan
-		monatip4p_2
+	map mmonatip4-2p -projection plan
+		monatip4-2p
 	endmap
 	
-	map mmonatip4-p3 -projection plan
-		monatip4p_3
+	map mmonatip4-3p -projection plan
+		monatip4-3p
 	endmap
 	
-	map mmonatip4-p4 -projection plan
-		monatip4p_4
+	map mmonatip4-4p -projection plan
+		monatip4-4p
 	endmap
 	
-	map mmonatip4-p5 -projection plan
-		monatip4p_5
+	map mmonatip4-5p -projection plan
+		monatip4-5p
+	endmap
+
+	map mmonatip4-6p -projection plan
+		monatip4-6p
 	endmap
 	
-	join monatip4p_1 monatip4p_2
-	join monatip4p_2 monatip4p_3
-	join monatip4p_3 monatip4p_4
-	join monatip4p_4 monatip4p_5
+	join monatip4-1p monatip4-2p
+	join monatip4-2p monatip4-3p
+	join monatip4-3p monatip4-4p
+	join monatip4-4p monatip4-5p
+	join monatip4-6p monatip4-1p
 	
 	
 	centreline

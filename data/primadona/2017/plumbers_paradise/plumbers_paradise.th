@@ -1,18 +1,18 @@
 encoding  utf-8
-survey plumbers_p
-	input "plumbers_pp.th2"
+survey plumbers_paradise
+	input "plumbers_paradise-p.th2"
 	input "plumbers_paradise-e.th2"
 	map m-all-p -projection plan
-		mplumbers_pp_1
-		mplumbers_pp_2
+		mplumbers_paradise-1p
+		mplumbers_paradise-2p
 	endmap
 	
-	map mplumbers_pp_1 -projection plan
-		plumbers_pp_1
+	map mplumbers_paradise-1p -projection plan
+		plumbers_paradise-1p
 	endmap
 	
-	map mplumbers_pp_2 -projection plan
-		plumbers_pp_2
+	map mplumbers_paradise-2p -projection plan
+		plumbers_paradise-2p
 	endmap
 	
 	map  m-all-e -projection extended
@@ -20,7 +20,7 @@ survey plumbers_p
 	endmap
 	
 	
-	join plumbers_pp_1 plumbers_pp_2
+	join plumbers_paradise-1p plumbers_paradise-2p
 	
 	centreline
 		date 2017.07.20

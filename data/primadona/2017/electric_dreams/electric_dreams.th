@@ -9,14 +9,14 @@ survey electric_dreams
 	endmap
 	
 	map m-all-p -projection plan
-		electric_dreams-p1
-		electric_dreams-p2
-		electric_dreams-p3
-		#electric_dreams-p4
+		electric_dreams-1p
+		electric_dreams-2p
+		electric_dreams-3p
+		#electric_dreams-4p
 	endmap
 	
-	join electric_dreams-p1 electric_dreams-p3
-	join electric_dreams-p3 electric_dreams-p2
+	join electric_dreams-1p electric_dreams-3p
+	join electric_dreams-3p electric_dreams-2p
 	
 	centreline
 		date 2017.07.07

@@ -205,7 +205,6 @@ survey artemis -title "Artemis"
 	input "artemis-1s.th2"
 	
 	map m-all-p -projection plan
-		m2p
 		m1p
 		m3p
 	endmap
@@ -214,15 +213,10 @@ survey artemis -title "Artemis"
 		m1s
 	endmap
 	
-	join artemis-1p artemis-2p
-	join artemis-3p artemis-2p
+	join artemis-1p artemis-3p
 	
 	map m1p -projection plan
 		artemis-1p
-	endmap
-	
-	map m2p -projection plan
-		artemis-2p
 	endmap
 	
 	map m3p -projection plan
