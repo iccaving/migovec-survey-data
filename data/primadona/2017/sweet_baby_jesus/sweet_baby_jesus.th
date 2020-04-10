@@ -7,24 +7,24 @@ survey sweet_baby_jesus
 		sweet_baby_jesus-1e
 	endmap
 	map m-all-p -projection plan
-		msweet_baby_jesusp_1
-		msweet_baby_jesusp_2
-		msweet_baby_jesusp_3
+		msweet_baby_jesus-1p
+		msweet_baby_jesus-2p
+		msweet_baby_jesus-3p
 	endmap
-	map msweet_baby_jesusp_1 -projection plan
-		sweet_baby_jesusp_1
-	endmap
-	
-	map msweet_baby_jesusp_2 -projection plan
-		sweet_baby_jesusp_2
+	map msweet_baby_jesus-1p -projection plan
+		sweet_baby_jesus-1p
 	endmap
 	
-	map msweet_baby_jesusp_3 -projection plan
-		sweet_baby_jesusp_3
+	map msweet_baby_jesus-2p -projection plan
+		sweet_baby_jesus-2p
 	endmap
 	
-	join sweet_baby_jesusp_1 sweet_baby_jesusp_2
-	join sweet_baby_jesusp_3 sweet_baby_jesusp_2
+	map msweet_baby_jesus-3p -projection plan
+		sweet_baby_jesus-3p
+	endmap
+	
+	join sweet_baby_jesus-1p sweet_baby_jesus-2p
+	join sweet_baby_jesus-3p sweet_baby_jesus-2p
 	
 	centreline
 		date 2017.07.28

@@ -8,6 +8,7 @@ survey poseidon_rift -title "Poseidon_Rift"
 	
 	map m-all-p -projection plan
 		m3p
+		m5p
 		m4p
 		m1p
 		m2p
@@ -28,6 +29,10 @@ survey poseidon_rift -title "Poseidon_Rift"
 	map m4p -projection plan
 		poseidon_rift-4p
 	endmap
+
+	map m5p -projection plan
+		poseidon_rift-5p
+	endmap
 	
 	map m1s -projection extended
 		poseidon_rift-1s
@@ -36,6 +41,10 @@ survey poseidon_rift -title "Poseidon_Rift"
 	map  m-all-e -projection extended
 		m1s
 	endmap
+
+	join poseidon_rift-3p poseidon_rift-5p
+	join poseidon_rift-5p poseidon_rift-1p
+	join poseidon_rift-1p poseidon_rift-4p
 	
 	centerline
 		explo-date 2019.07.17

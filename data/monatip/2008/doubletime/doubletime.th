@@ -1,6 +1,6 @@
 encoding  utf-8
 survey doubletime
-	input "doubletimep.th2"
+	input "doubletime-p.th2"
 	input "doubletime-e.th2"
 	
 	map  m-all-e -projection extended
@@ -9,32 +9,32 @@ survey doubletime
 	endmap
 	
 	map m-all-p -projection plan
-		mdoubletime-p1
-		mdoubletime-p2
-		mdoubletime-p3
-		mdoubletime-p4
+		mdoubletime-1p
+		mdoubletime-2p
+		mdoubletime-3p
+		mdoubletime-4p
 	endmap
 	
-	map mdoubletime-p1 -projection plan
-		doubletimep_1
+	map mdoubletime-1p -projection plan
+		doubletime-1p
 	endmap
 	
-	map mdoubletime-p2 -projection plan
-		doubletimep_2
+	map mdoubletime-2p -projection plan
+		doubletime-2p
 	endmap
 	
-	map mdoubletime-p3 -projection plan
-		doubletimep_3
+	map mdoubletime-3p -projection plan
+		doubletime-3p
 	endmap
 	
-	map mdoubletime-p4 -projection plan
-		doubletimep_4
+	map mdoubletime-4p -projection plan
+		doubletime-4p
 	endmap
 	
 	
-	join doubletimep_1 doubletimep_2
-	join doubletimep_2 doubletimep_3
-	# join doubletimep_3 doubletimep_4
+	join doubletime-1p doubletime-2p
+	join doubletime-2p doubletime-3p
+	# join doubletime-3p doubletime-4p
 
 	join doubletime-e1 doubletime-e2
 	

@@ -11,19 +11,19 @@ survey ttt -title "Primadona mandare junction and TTT branch to TTT pitch"
 	endmap
 	
 	map m-all-p -projection plan
-		tttp_1
-		tttp_2
-		tttp_3
-		tttp_4
-		tttp_5
-		tttp_6
+		ttt-1p
+		ttt-2p
+		ttt-3p
+		ttt-4p
+		ttt-5p
+		ttt-6p
 	endmap
 	
-	join tttp_1 tttp_2
-	join tttp_2 tttp_3
-	join tttp_3 tttp_4
-	join tttp_4 tttp_5
-	join tttp_5 tttp_6
+	join ttt-1p ttt-2p
+	join ttt-2p ttt-3p
+	join ttt-3p ttt-4p
+	join ttt-4p ttt-5p
+	join ttt-5p ttt-6p
 	
 	
 	centreline

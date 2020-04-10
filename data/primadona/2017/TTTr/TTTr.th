@@ -9,24 +9,24 @@ survey TTTr -title "TTT branch resurvey"
 	endmap
 	
 	map m-all-p -projection plan
-		mTTTr-p3
-		mTTTr-p1
-		mTTTr-p2
+		mTTTr-3p
+		mTTTr-1p
+		mTTTr-2p
 	endmap
 	
-	map mTTTr-p1 -projection plan
-		TTTr-p1
+	map mTTTr-1p -projection plan
+		TTTr-1p
 	endmap
 	
-	map mTTTr-p2 -projection plan
-		TTTr-p2
+	map mTTTr-2p -projection plan
+		TTTr-2p
 	endmap
 	
-	map mTTTr-p3 -projection plan
-		TTTr-p3
+	map mTTTr-3p -projection plan
+		TTTr-3p
 	endmap
 	
-	join TTTr-p1 TTTr-p2
+	join TTTr-1p TTTr-2p
 	
 	centreline
 		date 2017.07.17

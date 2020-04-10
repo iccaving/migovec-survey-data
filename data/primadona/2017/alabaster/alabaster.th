@@ -7,7 +7,6 @@ survey alabaster
 		malabaster-1p
 		malabaster-2p
 		malabaster-3p
-		malabaster-4p
 	endmap
 	
 	map malabaster-1p -projection plan
@@ -22,19 +21,10 @@ survey alabaster
 		alabaster-3p
 	endmap
 	
-	map malabaster-4p -projection plan
-		alabaster-4p
-	endmap
-	
+
 	map  m-all-e -projection extended
 		alabaster-e1
 	endmap
-	
-	join s4_l1 s3_l1
-	join s4_l2 s3_l1
-	
-	join alabaster-3p alabaster-4p
-	
 	
 	centreline
 		date 2017.07.30

@@ -4,7 +4,7 @@ encoding  utf-8
 
 
 
-scrap doubletimep_1 -scale [327.0 -736.0 521.0 -735.0 0 0 10 0 m]
+scrap doubletime-1p -scale [327.0 -736.0 521.0 -735.0 0 0 10 0 m]
 
 line wall
 endline
@@ -51,7 +51,7 @@ endscrap
 
 
 
-scrap doubletimep_2 -scale [327.0 -736.0 521.0 -735.0 0 0 10 0 m]
+scrap doubletime-2p -scale [327.0 -736.0 521.0 -735.0 0 0 10 0 m]
 
 line label -text "Double Time"
   304.0 -339.0
@@ -141,7 +141,7 @@ endscrap
 
 
 
-scrap doubletimep_3 -scale [327.0 -736.0 521.0 -735.0 0 0 10 0 m]
+scrap doubletime-3p -scale [327.0 -736.0 521.0 -735.0 0 0 10 0 m]
 
 line pit -clip off
   257.0 -286.0
@@ -190,7 +190,7 @@ endscrap
 
 
 
-scrap doubletimep_4 -scale [327.0 -736.0 521.0 -735.0 0 0 10 0 m]
+scrap doubletime-4p -scale [327.0 -736.0 521.0 -735.0 0 0 10 0 m]
 
 point 395.0 -471.0 station -name "1"
 

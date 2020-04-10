@@ -1,20 +1,25 @@
 encoding  utf-8
 survey cattlegrid
 	
-	input "cattlegrid.th2"
+	input "cattlegrid-p.th2"
 	input "cattlegrid-e.th2"
 	
 	map m-all-p -projection plan
-		mcattlegrid-p1
-		mcattlegrid-p2
+		mcattlegrid-1p
+		mcattlegrid-2p
+		mcattlegrid-3p
 	endmap
 	
-	map mcattlegrid-p1 -projection plan
-		cattlegridp_1
+	map mcattlegrid-1p -projection plan
+		cattlegrid-1p
 	endmap
 	
-	map mcattlegrid-p2 -projection plan
-		cattlegridp_2
+	map mcattlegrid-2p -projection plan
+		cattlegrid-2p
+	endmap
+
+	map mcattlegrid-3p -projection plan
+		cattlegrid-3p
 	endmap
 	
 	
@@ -25,6 +30,9 @@ survey cattlegrid
 		break
 		cattlegrid-e1
 	endmap
+
+	join cattlegrid-1p cattlegrid-3p
+	join cattlegrid-2p cattlegrid-3p
 	
 	centreline
 		date 2016.07.22

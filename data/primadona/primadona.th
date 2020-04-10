@@ -14,8 +14,8 @@ survey primadona -title "Primadona"
 	equate 1@prima2 34@ttt
 	equate 1@ttt 22@zima00
 	
-	join tttp_1@ttt prima2p_5@prima2
-	join zima00p_1@zima00 tttp_6@ttt
+	join ttt-1p@ttt prima2p_5@prima2
+	join zima00p_1@zima00 ttt-6p@ttt
 	join s1_l1@prima2:0 s7_l4@prima1:end
 	join s1_l1@prima2:end s7_l3@prima1:end
 	join ttt-e1@ttt zima00-3e@zima00
@@ -42,7 +42,7 @@ survey primadona -title "Primadona"
 	join s1_l1@risanke:end s7_l1@prima1:0
 	join s1_l2@risanke:0 s7_l2@prima1:end
 	join risa2p_1@risa2 risanke-p1@risanke
-	join risa2p_3@risa2 povp_1@pov
+	join risa2p_3@risa2 pov-1p@pov
 	join s4_l1@pov:end s4_l1@ttt:end
 	join s4_l2@pov:0 s4_l2@ttt:end
 	#join s1_l1@galerija:0 s3_l1@risa2:end
@@ -148,8 +148,7 @@ survey primadona -title "Primadona"
 	join s2_l1@hotmk:0 s1_l1@colony:end
 	join terminusp_1@terminus quantum_statep_1@quantum_state
 	
-	join s2_l1@the_stile:end s2_l1@cattlegrid:0
-	join s2_l2@the_stile:0 s2_l2@cattlegrid:end
+	join the_stile-2p@the_stile cattlegrid-2p@cattlegrid
 	join s1_l1@the_stile:0 s1_l4@smer0:end
 	join s1_l2@the_stile:end s1_l5@smer0:0
 	join s1_l4@the_stile:end s4_l3@galerija:0
@@ -203,7 +202,7 @@ survey primadona -title "Primadona"
 	input "./2017/TTTr/TTTr.th"
 	input "./2017/fenestrator/fenestrator.th"
 	input "./2017/battery_flattery/battery_flattery.th"
-	input "./2017/plumbers_p/plumbers_p.th"
+	input "./2017/plumbers_paradise/plumbers_paradise.th"
 	input "./2017/union_passage_of_the_year_nominee/upotyn.th"
 	input "./2017/hallelujah/hallelujah.th"
 	input "./2017/sweet_baby_jesus/sweet_baby_jesus.th"
@@ -233,8 +232,8 @@ survey primadona -title "Primadona"
 	equate 11@fenestrator 8@cattlegrid
 	equate 11@battery_flattery 1@fenestrator
 	equate 13@upotyn 8@cattlegrid
-	equate 25@plumbers_p 9@upotyn
-	equate 5@plumbers_p 10@hallelujah
+	equate 25@plumbers_paradise 9@upotyn
+	equate 5@plumbers_paradise 10@hallelujah
 	equate 24@sweet_baby_jesus 1@hallelujah
 	equate 26@alabaster 1@sweet_baby_jesus
 	equate 35@jack_of_hearts 39@smer0
@@ -255,12 +254,11 @@ survey primadona -title "Primadona"
 	equate 19@entirely_my_fault 11@karstaway
 	equate 9@what_a_disappointment 9@wac
 	
-	join fenestratorp_2@fenestrator cattlegridp_2@cattlegrid
-	join fenestratorp_1@fenestrator battery_flatteryp_2@battery_flattery
+	join fenestrator-1p@fenestrator battery_flatteryp_2@battery_flattery
 	join s1_l1@fenestrator:0 s1_l1@upotyn:end
 	join s1_l2@fenestrator:end s1_l2@upotyn:0
-	join hallelujahp_1@hallelujah plumbers_pp_2@plumbers_p
-	join alabaster-1p@alabaster sweet_baby_jesusp_1@sweet_baby_jesus
+	join hallelujahp_1@hallelujah plumbers_paradise-2p@plumbers_paradise
+	join alabaster-1p@alabaster sweet_baby_jesus-1p@sweet_baby_jesus
 	join wacp_3@wac what_a_disappointment-p2@what_a_disappointment
 	join high_and_dry-p2@high_and_dry dogfish-p1@dogfish
 	join hammerhead2-p1@hammerhead2 hammerhead-p1@hammerhead
@@ -268,12 +266,12 @@ survey primadona -title "Primadona"
 	join dejavup_1@dejavu zima00p_1@zima00
 	join s3_l1@pov:end s3_l1@apple_crumble:end
 	join s3_l6@pov s3_l2@apple_crumble
-	join batmere-p1@batmere mandare_low-p1@mandare_resurvey
-	join electric_dreams-p1@electric_dreams more_like_welding-p3@more_like_welding
-	join TTTr-p3@TTTr zima00p_2@zima00
+	join batmere-1p@batmere mandare_low-p1@mandare_resurvey
+	join electric_dreams-1p@electric_dreams more_like_welding-p3@more_like_welding
+	join TTTr-3p@TTTr zima00p_2@zima00
 	join jack_of_hearts-2e@jack_of_hearts smer0-e1@smer0
 	join cattlegrid-e2@cattlegrid fenestrator-e1@fenestrator
-	join plumbers_paradise-e1@plumbers_p fenestrator-e1@fenestrator
+	join plumbers_paradise-e1@plumbers_paradise fenestrator-e1@fenestrator
 	join hammerhead2-1e@hammerhead2 hammerhead-1e@hammerhead
 	join hammerhead-1e@hammerhead dejavu-1e@dejavu
 	join hammerhead2-2e@hammerhead2 dogfish-1e@dogfish
@@ -388,9 +386,8 @@ survey primadona -title "Primadona"
 	equate 1@mud_moses 1@upotyn
 	
 	
-	join s1_l2@purgatory:end s4_l2@alabaster
-	join s1_l1@purgatory:end s4_l1@alabaster
-	join holy_moley-p2@holy_moley sweet_baby_jesusp_1@sweet_baby_jesus
+	join purgatory-1p@purgatory alabaster-3p@alabaster
+	join holy_moley-p2@holy_moley sweet_baby_jesus-1p@sweet_baby_jesus
 	join s1_l1@holy_moley s3_l1@alabaster
 	join s1_l2@holy_moley s3_l2@alabaster
 	
@@ -419,7 +416,8 @@ survey primadona -title "Primadona"
 	join l1@more_like_welding:0 l1@dysentery:end
 	join l2@more_like_welding:end l2@dysentery:end
 	join come_up_smiling-p1@come_up_smiling come_up_smiling_2-p1@come_up_smiling_2
-	join electric_dreams-p1@electric_dreams odessey-p1@odessey
+	join s1_l1@electric_dreams s1_l1@odessey
+	join s1_l2@electric_dreams s1_l2@odessey
 	join lost_in_a_dream-e1@lost_in_a_dream lost_in_a_dream_2-e1@lost_in_a_dream_2
 	join lost_in_a_dream_2-e1@lost_in_a_dream_2 ave_maria-e1@ave_maria
 	join lost_in_a_dream_2-e1@lost_in_a_dream_2 penny_falls-e1@penny_falls
@@ -480,7 +478,7 @@ survey primadona -title "Primadona"
 	
 	
 	join the_aqueduct-p2@the_aqueduct ad_aspera_per_aqua-1p@ad_aspera_per_aqua
-	join klic_globin-p1@klic_globin artemis-2p@artemis
+	join klic_globin-p1@klic_globin artemis-1p@artemis
 	join artemis-1p@artemis tartarus-1p@tartarus
 	join artemis-3p@artemis poseidon_rift-3p@poseidon_rift
 	join lachrymosa-1p@lachrymosa artemis-1p@artemis
