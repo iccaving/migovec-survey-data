@@ -1,7 +1,7 @@
 encoding  utf-8
 survey pov
 	
-	input "povp.th2"
+	input "pov-p.th2"
 	input "pov-e.th2"
 	
 	map  m-all-e -projection extended
@@ -11,38 +11,38 @@ survey pov
 		pov-e3
 	endmap
 	
-	map mpovp_1 -projection plan
-		povp_1
+	map mpov-1p -projection plan
+		pov-1p
 	endmap
 	
-	map mpovp_2 -projection plan
-		povp_2
+	map mpov-2p -projection plan
+		pov-2p
 	endmap
 	
-	map mpovp_3 -projection plan
-		povp_3
+	map mpov-3p -projection plan
+		pov-3p
 	endmap
 	
-	map mpovp_4 -projection plan
-		povp_4
+	map mpov-4p -projection plan
+		pov-4p
 	endmap
 	
-	map mpovp_5 -projection plan
-		povp_5
+	map mpov-5p -projection plan
+		pov-5p
 	endmap
 	
 	map m-all-p -projection plan
-		mpovp_1
-		mpovp_2
-		mpovp_3
-		mpovp_4
-		mpovp_5
+		mpov-1p
+		mpov-2p
+		mpov-3p
+		mpov-4p
+		mpov-5p
 	endmap
 	
-	join povp_1 povp_2
+	join pov-1p pov-2p
 	join s3_l1 s2_l1
 	join s3_l2 s2_l2
-	join povp_3 povp_4
+	join pov-3p pov-4p
 	join s3_l2 s5_l2
 	join s3_l3 s5_l3
 	join pov-e2 pov-e3

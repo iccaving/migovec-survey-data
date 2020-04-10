@@ -701,31 +701,35 @@ survey dysentery -title "Dysentry"
 		21 . 1.57 357.0 19.8
 	endcenterline
 	
-	input "dysentery-1p.th2"
+	input "dysentery-p.th2"
     input "dysentery-e.th2"
 	
 	map m1p -projection plan
-		dysentry-1p
+		dysentery-1p
 	endmap
 	
 	map m2p -projection plan
-		dysentry-p2
+		dysentery-2p
 	endmap
 	
 	map m3p -projection plan
-		dysentry-p3
+		dysentery-3p
 	endmap
 	
 	map m4p -projection plan
-		dysentry-p4
+		dysentery-4p
 	endmap
 	
 	map m5p -projection plan
-		dysentry-p5
+		dysentery-5p
 	endmap
 	
 	map m6p -projection plan
-		dysentry-p6
+		dysentery-6p
+	endmap
+
+	map m7p -projection plan
+		dysentery-7p
 	endmap
 	
 	map m-all-p -projection plan
@@ -733,6 +737,7 @@ survey dysentery -title "Dysentry"
 		m2p
 		m3p
 		m4p
+		m7p
 		m5p
 		m6p
 	endmap
@@ -747,11 +752,11 @@ survey dysentery -title "Dysentry"
 
 	join dysentery-3e dysentery-4e
 	
-	join dysentry-1p dysentry-p4
-	join dysentry-p3 dysentry-p2
-	join dysentry-p3 dysentry-p4
-	join dysentry-p5 dysentry-p3
-	join dysentry-p6 dysentry-1p
+	join dysentery-1p dysentery-4p
+	join dysentery-3p dysentery-2p
+	join dysentery-3p dysentery-4p
+	join dysentery-5p dysentery-3p
+	join dysentery-6p dysentery-1p
 	
 	## map m1s -projection extended
 	##   Dysentery-1s

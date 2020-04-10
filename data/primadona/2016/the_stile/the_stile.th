@@ -1,26 +1,26 @@
 encoding  utf-8
 survey the_stile
-	input "the_stilep.th2"
+	input "the_stile-p.th2"
 	input "the_stile-s.th2"
 	
 	map m-all-p -projection plan
-		mthe_stile-p1
-		mthe_stile-p2
+		mthe_stile-1p
+		mthe_stile-2p
 	endmap
 	
-	map mthe_stile-p1 -projection plan
-		the_stilep_1
+	map mthe_stile-1p -projection plan
+		the_stile-1p
 	endmap
 	
-	map mthe_stile-p2 -projection plan
-		the_stilep_2
+	map mthe_stile-2p -projection plan
+		the_stile-2p
 	endmap
 	
 	map  m-all-e -projection extended
 		the_stile-s1
 	endmap
 	
-	join the_stilep_1 the_stilep_2
+	join the_stile-1p the_stile-2p
 	
 	centreline
 		date 2016.07.20
