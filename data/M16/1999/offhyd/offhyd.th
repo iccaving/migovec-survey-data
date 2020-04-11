@@ -1,17 +1,17 @@
 
 survey offhyd -title "System Migovec"
 centreline
-    team "J Evans" insts
-    team "J Hooper" notes
-    explo-team "J Evans"
-    explo-team "J Hooper"
+    team "Jim Evans" insts
+    team "James Hooper" notes
+    explo-team "Jim Evans"
+    explo-team "James Hooper"
     date 1999.8.11
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
     2	1	8.08	197	-33	#stn 1 is pss
     3	2	5.96	208	-56
-    4	3	8.71	238	-47#STN 4 IS PSS HYDRANT STN 13
+    4	3	8.71	238	-47 #STN 4 IS PSS HYDRANT STN 13
     6	5	3.37	244	-33
     7	6	8.80	209	-33
     7	4	6.90	032	-18

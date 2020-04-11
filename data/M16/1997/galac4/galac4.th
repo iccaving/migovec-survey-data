@@ -2,13 +2,13 @@
 survey galact4 -title "System Migovec"
 centreline
     team "Shed" insts
-    team "Alva" notes
+    team "Alva Gosson" notes
     explo-team "Shed"
-    explo-team "Alva"
+    explo-team "Alva Gosson"
     date 1997.08.14
     units length meters
     units compass clino degrees
-    data passage station left right up down ignoreall
+    data normal from to tape compass clino
     1	2	11.61	310	-9	#1 Is a PSS
     3	2	5.92	013	-14
     3	4	15.91	204	-2
