@@ -3,38 +3,38 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  12.48 -1.85
-  -10.67 9.41
-endline
-line survey 
-  -10.67 9.41
-  -10.67 9.41
-endline
-line survey 
-  1.69 20.59
-  -10.67 9.41
-endline
-line survey 
-  1.69 20.59
-  1.69 20.59
-endline
-line survey 
-  1.69 20.59
-  1.69 20.59
-endline
-line survey 
-  -12.48 -20.59
-  1.69 20.59
-endline
+	#line survey
+	#	12.48 -1.85
+	#	-10.67 9.41
+	#endline
+	line survey
+		-10.67 9.41
+		-10.67 9.41
+	endline
+	line survey
+		1.69 20.59
+		-10.67 9.41
+	endline
+	line survey
+		1.69 20.59
+		1.69 20.59
+	endline
+	line survey
+		1.69 20.59
+		1.69 20.59
+	endline
+	line survey
+		-12.48 -20.59
+		1.69 20.59
+	endline
 endscrap
 
 scrap apollo-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 12.48 -1.85 station -name 7
-point -10.67 9.41 station -name 6
-point -10.67 9.41 station -name 5
-point 1.69 20.59 station -name 4
-point 1.69 20.59 station -name 3
-point 1.69 20.59 station -name 2
-point -12.48 -20.59 station -name 1
+	point 12.48 -1.85 station -name 7
+	point -10.67 9.41 station -name 6
+	point -10.67 9.41 station -name 5
+	point 1.69 20.59 station -name 4
+	point 1.69 20.59 station -name 3
+	point 1.69 20.59 station -name 2
+	point -12.48 -20.59 station -name 1
 endscrap
