@@ -1,11 +1,7 @@
 survey M2 -title "M2 part of System Migovec"
 	
-	map m-all-p -projection plan
-		m-all-p@izent1
-		m-all-p@izent2
-		m-all-p@jsl1
-		m-all-p@jspdt
-	endmap
+	input M2-p.thm
+	input M2-e.thm
 	
 	###__________1997____________###
 	

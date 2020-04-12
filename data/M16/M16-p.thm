@@ -1,0 +1,65 @@
+map m-all-p -projection plan
+		m-entrance_series-p
+		m-exhibition_road-p 
+		m-galaktika-p
+		m-elephant_branch-p
+		m-hotel_tolminka-p
+	endmap
+
+	map m-exhibition_road-p -projection plan
+		m-all-p@migcon
+		m-all-p@migconleft
+		m-all-p@migcondown
+		#m-all-p@migcond2
+		m-all-p@level2s
+		m-all-p@level2n
+		m-all-p@exhib
+		m-all-p@rockroll
+	endmap
+
+	map m-entrance_series-p -projection plan
+		m-all-p@entrance
+		m-all-p@hotline
+		m-all-p@lostcity
+		m-all-p@brezno
+		m-all-p@goodbag
+		m-all-p@baddybag
+	endmap
+
+	map m-galaktika-p -projection plan
+		m-all-p@shordrop
+		m-all-p@shordrop2
+		m-all-p@tamoka
+		m-all-p@galact1
+		m-all-p@galact2
+		m-all-p@galact3 # Galaktika chamber proper
+	endmap
+
+	map m-hotel_tolminka-p -projection plan
+		m-all-p@carwash
+		m-all-p@xxx
+		m-all-p@sajeta
+		m-all-p@hotel
+		m-all-p@pinkp
+		m-all-p@coldfeet
+		m-all-p@doh
+		m-all-p@teotihuacan
+		m-all-p@sinners
+		m-all-p@god
+		m-all-p@glory
+		m-all-p@rameses
+		m-all-p@sifon
+		m-all-p@fa999
+		m-all-p@cowboys
+		m-all-p@paradox
+		m-all-p@wonder
+		m-all-p@deep
+	endmap
+	
+
+	map m-elephant_branch-p -projection plan
+		m-all-p@adder
+		m-all-p@elephant
+		m-all-p@bosh
+		m-all-p@waterloo
+	endmap
