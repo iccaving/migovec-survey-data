@@ -10,18 +10,18 @@ import re
 #
 # ## Plan
 # 
-# python3 initiliase_map.py
+# python3 initialise_map.py
 #
 # ## EE
 #
-# python3 initiliase_map.py {top_level_th} {namespace}
+# python3 initialise_map.py {top_level_th} {namespace}
 #
 # top_level_th = The th file in which the extend file is included
 # namespace    = The namespace of the current survey within the top level th
 # 
 # e.g. 
-# python3 initiliase_map.py ../../vrtnarija.th vrtanrija
-# python3 initiliase_map.py ../../../primadona_ubend_monatip.th monatip.primadona_ubend_monatip
+# python3 initialise_map.py ../../vrtnarija.th vrtanrija
+# python3 initialise_map.py ../../../primadona_ubend_monatip.th monatip.primadona_ubend_monatip
 #
 
 # Templates
