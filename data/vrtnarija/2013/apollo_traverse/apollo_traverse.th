@@ -1,19 +1,18 @@
-
 survey apollo_traverse -title "Apollo Traverse"
-
-input apollo_traverse-e.th2
-
-map m-all-e -projection extended
-    apollo_traverse-1e
-endmap
-
-
-input apollo_traverse-p.th2
-
-map m-all-p -projection plan
-    apollo_traverse-1p
-endmap
-
+	
+	input apollo_traverse-e.th2
+	
+	map m-all-e -projection extended
+		apollo_traverse-1e
+	endmap
+	
+	
+	input apollo_traverse-p.th2
+	
+	map m-all-p -projection plan
+		apollo_traverse-1p
+	endmap
+	
 	centreline
 		team "Gergely Ambrus" insts
 		team "Peter Adamko" notes
