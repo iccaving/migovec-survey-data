@@ -1,16 +1,33 @@
 map m-all-e -projection extended
+	m-NCB-e
+	m-entrance_series-e
+endmap
+
+map m-NCB-e -projection extended
+	m-all-e@void
+	m-all-e@dodge
+	m-all-e@gallery
+	m-all-e@plopzilla
+endmap
+
+map m-entrance_series-e -projection extended
 	m-all-e@torn
 	m-all-e@upperrift
 	m-all-e@lowerrift
+	m-all-e@turtle
+	m-all-e@shreddie
 endmap
-
 centreline
 extend start 26@torn
 extend left 32@shreddie
 extend right 122@lowerrift
+extend right 1@torn 2@torn
+extend right 2@torn 3@torn
 extend left 3@torn
 extend right 1@upperrift 2@upperrift
 extend right 2@upperrift
+extend right 121@lowerrift 122@lowerrift
+extend right 122@lowerrift 123@lowerrift
 extend left 2@gallery 5@gallery
 extend right 7@gallery 6@gallery
 extend right 6@gallery 5@gallery
@@ -20,4 +37,15 @@ extend right 1@gallery 8@gallery
 extend left 1@gallery 2@gallery
 extend left 2@gallery 5@gallery
 extend right 8@gallery
+extend right 6@turtle 7@turtle
+extend left 6@turtle 5@turtle
+extend left 5@turtle
+extend left 85@gallery 86@gallery
+extend vertical 3@zebra 4@zebra
+
+# Touching the void, connection to Level 2
+extend left 1@void 2@void
+extend left 2@void 3@void
+extend right 16@void
+extend right 17@void 16@void
 endcentreline

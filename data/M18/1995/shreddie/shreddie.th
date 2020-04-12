@@ -9,6 +9,13 @@ map m-all-p -projection plan
     shreddie-2p
 endmap
 
+
+input shreddie-e.th2
+
+map m-all-e -projection extended
+    shreddie-1e
+endmap
+
 centreline
     #team "Unknown" insts
     #team "Unknown" notes

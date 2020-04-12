@@ -15,6 +15,11 @@ survey M18 -title "M18 part of System Migovec"
 	equate 2@lowerrift 2@torn
 	equate 124@lowerrift 18@turtle
 	equate 8@shreddie 8@turtle
+
+	join upperrift-1e@upperrift torn-1e@torn
+	join torn-1e@torn lowerrift-1e@lowerrift
+	join lowerrift-1e@lowerrift turtle-1e@turtle
+	join turtle-1e@turtle shreddie-1e@shreddie
 	
 	###__________1996____________###
 	
