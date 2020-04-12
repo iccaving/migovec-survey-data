@@ -1,5 +1,12 @@
 
 survey plopzilla -title "plopzilla"
+
+input plopzilla-e.th2
+
+map m-all-e -projection extended
+    plopzilla-1e
+endmap
+
 centreline
     team "Andrew Jurd" insts
     team "Richard Venn" notes

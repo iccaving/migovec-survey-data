@@ -1,5 +1,12 @@
 
 survey dodge -title "System Migovec"
+
+input dodge-e.th2
+
+map m-all-e -projection extended
+    dodge-1e
+endmap
+
 centreline
     team "Chris Roberts" insts
     team "Jim Evans" notes
