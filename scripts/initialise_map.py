@@ -6,10 +6,23 @@ import re
 # Create scrap template (th2) with survey points and centreline, and insert map definition into
 # th file, ready to start drawing.
 #
-# Usage:
+# # Usage
 #
-# python initiliase_map.py
-
+# ## Plan
+# 
+# python3 initiliase_map.py
+#
+# ## EE
+#
+# python3 initiliase_map.py {top_level_th} {namespace}
+#
+# top_level_th = The th file in which the extend file is included
+# namespace    = The namespace of the current survey within the top level th
+# 
+# e.g. 
+# python3 initiliase_map.py ../../vrtnarija.th vrtanrija
+# python3 initiliase_map.py ../../../primadona_ubend_monatip.th monatip.primadona_ubend_monatip
+#
 
 # Templates
 
@@ -18,7 +31,7 @@ layout test
   scale 1 500
   endlayout
 
-select {name}@monatip.primadona_ubend_monatip
+select {name}@{namespace}
 
 export map -projection {projection} -o xvi.xvi -layout test -layout-debug station-names'''
 
@@ -63,20 +76,24 @@ th_file = th_files[0]
 
 name = th_file.replace('.th', '')
 
-# 
+# Set up different projections
 if len(sys.argv) == 3:
     main_th = sys.argv[1]
-    projection = sys.argv[2]
+    namespace = sys.argv[2]
+    projection = "extended"
+    projection_short = "e"
     select = name
 else:
     main_th = th_file
     projection = "plan"
-    select = "all"
-projection_short = "e" if projection == "extended" else "p"
+    projection_short = "p"
+    # These should not select anything and therefore default to everything
+    select = "all" 
+    namespace = "all"
 
 # Create the XVI config
 with open('xvi.thconfig', 'w+') as f:
-    f.write(xvi_file.format(th_file=main_th, projection=projection, name=name))
+    f.write(xvi_file.format(th_file=main_th, projection=projection, name=name, namespace=namespace))
 os.system('therion xvi.thconfig')
 os.remove('xvi.thconfig')
 
