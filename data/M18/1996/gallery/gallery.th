@@ -12,6 +12,16 @@ map m-all-p -projection plan
     ncb-7p
 endmap
 
+input "gallery-e.th2"
+
+map m-all-e -projection extended
+    gallery-1e
+    gallery-2e
+    gallery-3e
+    gallery-4e
+    gallery-5e
+endmap
+
 centreline
     #team "Unknown" insts
     #team "Unknown" notes

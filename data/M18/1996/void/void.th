@@ -8,6 +8,13 @@ map m-all-p -projection plan
     void-2p
 endmap
 
+
+input void-e.th2
+
+map m-all-e -projection extended
+    void-1e
+endmap
+
 centreline
     team "Sarah Wingrove" insts
     team "James Hooper" notes
