@@ -21,6 +21,7 @@ survey wishing_well2 -title "Wishing Well 2"
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
 		1 2   11.26 280 42
+		extend vertical
 		2 3   29.98 342 8
 		3 4   3.70 275 -11
 		

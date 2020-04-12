@@ -1,0 +1,77 @@
+centreline
+
+#extend left 8@entrance 7@entrance
+
+# Level 2
+extend left 6@level2s 5@level2s
+extend left 5@level2s
+
+extend right 1@level2n 2@level2n
+extend right 2@level2n
+
+# Deep M16
+extend right 6@arrow 5@arrow
+extend right 5@arrow
+extend left 67@wonder 66@wonder
+extend right 66@wonder
+extend left 49@wonder
+extend right 19@doh 18@doh
+extend right 18@doh
+extend left 26@hotel
+
+# Towards connection with Vrtnarija
+extend right 1@adder 2@adder
+extend right 2@adder
+extend left 1@elephant 2@elephant
+extend left 2@elephant
+extend left 10@waterloo
+
+#M16 entrance
+extend right 10@entrance
+extend right 4@woft 3@woft
+extend left 3@woft
+extend left 1@spiny 2@spiny
+extend left 2@spiny
+extend right 1@dinsdale
+extend left 11@dinsdale
+extend right 12@goodbag 11@goodbag
+extend right 11@goodbag 
+
+
+# Rock and Roll, Toilet Humour
+extend right 6@rockroll
+extend left 10@rockroll
+extend right 9@toilet
+
+# Batshit passage, Tamoka, Mower
+extend left 1@batshita 2@batshita
+extend left 2@batshita
+extend right 4@batshita 
+extend left 9@mower
+extend left 14@frogshit 13@frogshit
+extend left 13@frogshit
+
+# Galaktika loop
+extend right 13@galact3 12@galact3
+extend right 12@galact3
+extend left 7@galact3 6@galact3
+extend right 6@window 5@window
+extend right 5@window
+extend left 4@galact3 5@galact3
+extend left 4@galact3 3@galact3
+extend left 3@galact3
+extend right 1@galact4 9@galact4
+extend right 9@galact4
+extend left 6@galact4 5@galact4
+extend left 1@galact4 2@galact4
+extend right 2@galact4 3@galact4
+extend right 3@galact4 4@galact4
+extend right 4@galact4 5@galact4
+
+# Hydrant branch
+extend right 1@hydrant 2@hydrant
+extend right 2@hydrant
+extend left 16@hydrant
+
+
+endcentreline

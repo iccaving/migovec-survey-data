@@ -7,6 +7,13 @@ map m-all-p -projection plan
     upperrift-1p
 endmap
 
+
+input upperrift-e.th2
+
+map m-all-e -projection extended
+    upperrift-1e
+endmap
+
 centreline
     team "Mark Evans" insts
     team "Tony Hayden" notes

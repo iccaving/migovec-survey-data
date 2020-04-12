@@ -1,0 +1,23 @@
+map m-all-e -projection extended
+	m-all-e@torn
+	m-all-e@upperrift
+	m-all-e@lowerrift
+endmap
+
+centreline
+extend start 26@torn
+extend left 32@shreddie
+extend right 122@lowerrift
+extend left 3@torn
+extend right 1@upperrift 2@upperrift
+extend right 2@upperrift
+extend left 2@gallery 5@gallery
+extend right 7@gallery 6@gallery
+extend right 6@gallery 5@gallery
+
+# NCB
+extend right 1@gallery 8@gallery
+extend left 1@gallery 2@gallery
+extend left 2@gallery 5@gallery
+extend right 8@gallery
+endcentreline
