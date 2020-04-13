@@ -2,64 +2,45 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -52.87 -35.28
-  -46.10 -54.88
-endline
-line survey 
-  -22.01 -5.51
-  -52.87 -35.28
-endline
-line survey 
-  -19.17 9.13
-  -22.01 -5.51
-endline
-line survey 
-  -19.80 16.93
-  -19.17 9.13
-endline
-line survey 
-  -4.69 37.09
-  -19.80 16.93
-endline
-line survey 
-  19.96 15.67
-  -4.69 37.09
-endline
-line survey 
-  31.30 1.65
-  19.96 15.67
-endline
-line survey 
-  40.04 27.01
-  31.30 1.65
-endline
-line survey 
-  40.04 27.01
-  40.04 27.01
-endline
-line survey 
-  36.65 37.48
-  40.04 27.01
-endline
-line survey 
-  52.87 54.88
-  36.65 37.48
-endline
-endscrap
 
 scrap letnadrugisvet-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -46.10 -54.88 station -name 12
+
+line pit 
+  28.8586 18.5034
+  28.5191 16.4664
+  28.5191 16.4664 25.6332 -7.9785 29.7074 -13.7502
+endline
+
+line wall 
+  51.9454 60.2264
+  46.3435 57.3406 35.4791 45.9669 33.9513 43.5903
+  32.4235 41.2137 31.2352 40.5347 32.2537 37.9883
+  33.2722 35.442 35.1396 33.9142 35.4791 30.8586
+  35.8186 27.803 34.121 12.8644 32.2537 10.8273
+  30.3864 8.7903 31.0654 9.9785 29.1981 11.8459
+  27.3308 13.7132 17.9942 23.7288 17.9942 23.7288
+endline
+
+line wall 
+  13.3737 14.8059
+  17.9571 10.2225 25.9356 1.0556 28.1425 -2.3395
+  30.3493 -5.7346 38.6674 -6.7532 38.8371 -3.3581
+  39.0069 0.0371 47.1552 21.7659 46.6459 24.9913
+  46.1367 28.2166 39.8557 30.9327 42.9113 34.8371
+  45.9669 38.7415 58.8684 51.643 58.8684 51.643
+endline
+
+point -46.1 -54.88 station -name 12
 point -52.87 -35.28 station -name 11
 point -22.01 -5.51 station -name 10
 point -19.17 9.13 station -name 9
-point -19.80 16.93 station -name 8
+point -19.8 16.93 station -name 8
 point -4.69 37.09 station -name 7
 point 19.96 15.67 station -name 6
-point 31.30 1.65 station -name 5
+point 31.3 1.65 station -name 5
 point 40.04 27.01 station -name 4
 point 40.04 27.01 station -name 3
 point 36.65 37.48 station -name 2
 point 52.87 54.88 station -name 1
 endscrap
+

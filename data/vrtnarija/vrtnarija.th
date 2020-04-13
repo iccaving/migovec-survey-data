@@ -342,7 +342,9 @@ survey vrtnarija -title "Vrtnarija"
 	input ./2011/eastlinks/eastlinks.th
 	input ./2011/kneekiller/kneekiller.th
 	input ./2011/salvation/salvation.th
-	input ./2011/herojtelemarkal/herojtelemarkal.th
+	input ./2011/herojtelemarkal1/herojtelemarkal1.th
+	input ./2011/herojtelemarkal2/herojtelemarkal2.th
+	input ./2011/krtekinorel/krtekinorel.th
 	input ./2011/penguinsegg/penguinsegg.th
 	input ./2011/daydreamers/daydreamers.th
 	input ./2011/dream2/dream2.th
@@ -405,6 +407,11 @@ survey vrtnarija -title "Vrtnarija"
 	join roundpond-1p@roundpond longwater-1p@longwater
 	join longwater-1p@longwater rottenrow-1p@rottenrow
 	join longwater-1p@longwater duffersdrop-1p@duffersdrop
+	join herojtelemarkal1-1p@herojtelemarkal1 herojtelemarkal2-1p@herojtelemarkal2
+	join krtekinorel-1p@krtekinorel herojtelemarkal1-1p@herojtelemarkal1
+	join krtkovadobradela-1p@krtkovadobradela herojtelemarkal1-1p@herojtelemarkal1
+	join yourmum-1p@yourmum esoterica-2p@esoterica
+	join isdead-1p@isdead yourmum-1p@yourmum
 	
 	###__________2012____________###
 	input ./2012/atlantis/atlantis.th

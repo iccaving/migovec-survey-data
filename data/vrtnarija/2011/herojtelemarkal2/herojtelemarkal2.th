@@ -1,41 +1,11 @@
-
-survey herojtelemarkal1 -title "HEROJTELEMARKAL"
-
-input herojtelemarkal-e.th2
-
-map m-all-e -projection extended
-    herojtelemarkal-1e
-endmap
-
-	centreline
-		team "Tjasa" insts
-		team "Erik" notes
-		explo-team "Tjasa"
-		explo-team "Erik"
-		date 2011.08.02
-		units length meters
-		units compass clino degrees
-		data normal from to tape compass clino ignoreall
-		0	1	0.85	020	-09
-		1	2	7.00	045	+18.5
-		2	3	8.40	028	+11
-		3	4	11.50	026	+27.7
-		4	5	2.30	000	+15
-		5	6	7.20	020	+18.5
-		6	7	3.70	290	+21.3
-		7	8	3.20	194	-07
-	endcentreline
-endsurvey
-
-
-survey herojtelemarkal2 -title "HEROJTELEMARKAL"
-
-input herojtelemarkal-e.th2
-
-map m-all-e -projection extended
-    herojtelemarkal-1e
-endmap
-
+survey herojtelemarkal2 -title "Herojtelemarkal"
+	
+	input herojtelemarkal2-p.th2
+	
+	map m-all-p -projection plan
+		herojtelemarkal2-1p
+	endmap
+	
 	centreline
 		team "Tjasa" insts
 		team "Erik" notes
@@ -57,40 +27,7 @@ endmap
 	endcentreline
 endsurvey
 
-
-survey krtekinorel -title "HEROJTELEMARKAL"
-
-input herojtelemarkal-e.th2
-
-map m-all-e -projection extended
-    herojtelemarkal-1e
-endmap
-
-	centreline
-		team "Tjasa" insts
-		team "Erik" notes
-		explo-team "Tjasa"
-		explo-team "Erik"
-		date 2011.08.02
-		units length meters
-		units compass clino degrees
-		data normal from to tape compass clino ignoreall
-		0	1	4.50	220	-33
-		1	2	10.00	148	-78
-		2	3	6.30	320	-08
-		3	4	8.50	305	-02
-		4	5	5.90	228	-29.5
-		5	6	4.20	250	-18.5
-		6	7	5.50	288	+3.3
-		7	8	3.30	318	+8.4
-		8	9	6.60	169	-11.5
-		9	10	3.60	194	-40.5
-		10	11	4.40	251	-11
-		11	12	3.30	216	-17.5
-	endcentreline
-endsurvey
-
-
+# Split into three seperate files for therion
 # Converted From SVX
 #;####HEROJTELEMARKAL####:
 #;###Continuation after Krtkovadobradela, below first Serpentine pitch###

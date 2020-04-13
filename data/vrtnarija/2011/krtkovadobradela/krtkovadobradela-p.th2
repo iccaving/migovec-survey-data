@@ -2,89 +2,53 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  68.46 -136.77
-  66.02 -139.13
-endline
-line survey 
-  71.93 -127.17
-  68.46 -136.77
-endline
-line survey 
-  68.78 -124.49
-  71.93 -127.17
-endline
-line survey 
-  62.56 -117.56
-  68.78 -124.49
-endline
-line survey 
-  43.03 -94.25
-  62.56 -117.56
-endline
-line survey 
-  40.67 -77.72
-  43.03 -94.25
-endline
-line survey 
-  40.67 -77.72
-  11.38 -38.82
-endline
-line survey 
-  11.38 -38.82
-  0.98 14.49
-endline
-line survey 
-  0.98 14.49
-  -5.47 22.20
-endline
-line survey 
-  -38.62 61.73
-  -5.47 22.20
-endline
-line survey 
-  -61.14 90.55
-  -38.62 61.73
-endline
-line survey 
-  -61.14 90.55
-  -64.13 112.20
-endline
-line survey 
-  -71.93 112.91
-  -64.13 112.20
-endline
-line survey 
-  -43.35 135.20
-  -71.93 112.91
-endline
-line survey 
-  -45.87 138.74
-  -43.35 135.20
-endline
-line survey 
-  -57.60 139.13
-  -45.87 138.74
-endline
-endscrap
 
 scrap krtkovadobradela-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 66.02 -139.13 station -name 17
-point 68.46 -136.77 station -name 16
-point 71.93 -127.17 station -name 15
-point 68.78 -124.49 station -name 14
-point 62.56 -117.56 station -name 13
-point 43.03 -94.25 station -name 12
-point 40.67 -77.72 station -name 11
-point 11.38 -38.82 station -name 10
-point 0.98 14.49 station -name 9
-point -5.47 22.20 station -name 8
-point -38.62 61.73 station -name 7
-point -61.14 90.55 station -name 6
-point -64.13 112.20 station -name 5
-point -71.93 112.91 station -name 4
-point -43.35 135.20 station -name 3
-point -45.87 138.74 station -name 2
-point -57.60 139.13 station -name 1
+
+line wall 
+  365.7276 1059.1043
+  368.9405 1055.8527 337.1499 1041.6694 335.7299 1036.0362
+  335.0403 1033.3005 342.0229 1033.0403 343.0847 1030.327
+  344.6125 1026.4226 345.6239 1006.9947 351.9049 1000.2044
+  358.1859 993.4142 380.5938 966.0834 385.1772 961.5
+  389.7606 956.9166 403.1713 938.5829 405.7177 932.4717
+  408.264 926.3604 416.5821 881.8843 417.7704 878.9984
+  418.9587 876.1126 435.425 855.7418 439.4992 850.9886
+  443.5734 846.2354 448.8358 819.7534 453.9285 816.5281
+  459.0212 813.3027 476.1666 800.7407 476.8456 795.8178
+  477.5246 790.8949 473.6202 783.5953 473.6202 783.5953
+endline
+
+line wall 
+  480.9198 779.0119
+  482.7871 782.4071 488.389 790.2158 488.8983 793.1017
+  489.4076 795.9876 482.9568 803.6266 478.8827 807.531
+  474.8085 811.4354 458.0027 833.5037 457.8329 837.5779
+  457.6631 841.652 460.2095 848.2725 454.947 854.214
+  449.6846 860.1555 427.9558 884.2609 427.2767 887.3165
+  426.5977 890.3721 417.0914 939.941 416.2426 941.6385
+  415.3938 943.3361 397.0601 972.5342 392.986 975.2503
+  388.9118 977.9664 361.9205 1005.1274 359.544 1011.2386
+  357.1674 1017.3498 350.5572 1035.5155 348.664 1038.6621
+  353.9173 1046.2295 377.0234 1052.7129 371.7764 1063.3918
+endline
+
+point 478.1884 783.6656 station -name 17
+point 480.6284 786.0256 station -name 16
+point 484.0984 795.6256 station -name 15
+point 480.9484 798.3056 station -name 14
+point 474.7284 805.2356 station -name 13
+point 455.1984 828.5456 station -name 12
+point 452.8384 845.0756 station -name 11
+point 423.5484 883.9756 station -name 10
+point 413.1484 937.2856 station -name 9
+point 406.6984 944.9956 station -name 8
+point 373.5484 984.5256 station -name 7
+point 351.0284 1013.3456 station -name 6
+point 348.0384 1034.9956 station -name 5
+point 340.2384 1035.7056 station -name 4
+point 368.8184 1057.9956 station -name 3
+point 366.2984 1061.5356 station -name 2
+point 354.5684 1061.9256 station -name 1
 endscrap
+

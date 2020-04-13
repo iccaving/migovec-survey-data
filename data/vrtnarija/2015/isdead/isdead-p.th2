@@ -2,19 +2,25 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -5.94 -2.05
-  5.94 2.05
-endline
-line survey 
-  5.94 2.05
-  5.94 2.05
-endline
-endscrap
 
 scrap isdead-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -5.94 -2.05 station -name 3
-point 5.94 2.05 station -name 1
-point 5.94 2.05 station -name 2
+
+line pit 
+  400.1996 1067.479
+  400.1996 1067.479 404.3408 1052.4145 408.242 1047.313
+endline
+
+line wall 
+  404.4008 1052.5345
+  406.5615 1053.4948 404.4008 1052.8946 407.5818 1053.9149
+  410.7627 1054.9353 417.9049 1056.1356 419.4654 1060.1568
+  421.0258 1064.178 421.2059 1068.7994 417.9649 1069.2195
+  414.7239 1069.6397 410.9428 1070.4199 407.3417 1068.3793
+  403.7406 1066.3387 403.4406 1065.0183 400.7998 1064.058
+endline
+
+point 398.7591 1057.2297 station -name 3
+point 410.6391 1061.3297 station -name 1
+point 410.6391 1061.3297 station -name 2
 endscrap
+
