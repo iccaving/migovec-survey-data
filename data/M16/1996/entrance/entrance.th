@@ -16,7 +16,15 @@ survey entrance -title "M16 entrance series"
 	
 	join entrance-4p entrance-5p
 	join entrance-5p entrance-6p
-	
+ 
+
+
+input entrance-e.th2
+
+map m-all-e -projection extended
+    entrance-1e
+endmap
+
 	centreline
 		explo-date 1983.01.01 #unknown??
 		date 1996.08.03
