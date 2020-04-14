@@ -1,5 +1,12 @@
 
 survey leki -title "System Migovec"
+
+input leki-e.th2
+
+map m-all-e -projection extended
+    leki-1e
+endmap
+
 centreline
     team "Jan Evetts" insts
     team "James Hooper" notes

@@ -7,6 +7,13 @@ survey migconleft -title "Mig Country 2"
 		migconleft-1p
 		migconleft-2p
 	endmap
+
+input migconleft-e.th2
+
+map m-all-e -projection extended
+    migconleft-1e
+endmap
+
 	centreline
 		
 		date 1996.08.10

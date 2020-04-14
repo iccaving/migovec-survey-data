@@ -6,7 +6,14 @@ survey level2s -title "System Migovec"
 		level2s-1p
 		level2s-2p
 	endmap
-	
+
+input level2s-e.th2
+
+map m-all-e -projection extended
+    level2s-1e
+    level2s-2e
+endmap
+
 	centreline
 		team "Tim Wright" insts
 		team "James Hooper" notes

@@ -37,6 +37,8 @@ survey M18 -title "M18 part of System Migovec"
 	#equate 0@plop 10@gallery ## commented out because it creates a new station on equate
 	equate 1@silos 2@gallery
 	equate 0@dodge 12@gallery
+
+	join dodge-1e@dodge gallery-1e@gallery
 	
 	###__________1999____________###
 	
@@ -44,6 +46,8 @@ survey M18 -title "M18 part of System Migovec"
 	
 	equate 20@leki 80@gallery
 	
+	join leki-1e@leki zebra-1e@zebra
+
 	###__________2007____________###
 	
 	input ./2007/plopzilla/plopzilla.th
