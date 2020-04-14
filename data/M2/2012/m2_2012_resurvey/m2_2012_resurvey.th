@@ -10,6 +10,7 @@ centreline
     units compass clino degrees
     data normal from to tape compass clino
     #*fix m2_2012.1 	0	0	0
+    flags duplicate
     1	2	8.3	173	-44
     2	3	7.9	206	-45
     3	4	7.3	134	-26
@@ -101,6 +102,7 @@ centreline
     89	90	4.2	336	8
     90	91	5.3	1	45
     91	92	10.4	2	26
+    flags not duplicate
 endcentreline
 endsurvey
 

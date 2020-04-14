@@ -1,0 +1,61 @@
+survey echo_rift
+	centreline
+		team "Jarvist Frost"
+		team "James Kirkpatrick"
+
+		date 2011.10.22
+		explo-date 2010.10
+		data normal from to tape compass clino ignoreall
+		1	2	3.65	004	-10
+		1	tightrift	3.89	280	-35
+		1	floor	2.20	-	down
+		2	3	2.23	293	+35
+		3	4	4.98	053	-08
+		4	5	3.78	091	+54	
+		5	6	3.89	087	-16
+		6	7	11.28	-	up
+		7	8	5.02	085	+38
+		8	9	5.70	089	-24
+		10	9	21.60	-	down
+		11	10	15.80	-	down
+		11	12	8.88	011	+68
+		12	13	5.45	064	+06
+
+		#end of page 1
+
+		# page 2 of 2
+		14	13	24.80	-	down
+		14	15	6.61	032	+68
+	endcentreline
+endsurvey
+
+#*begin echo_rift
+#; Data by JF and JK
+#; Data 22-10-11
+#; Entered 23-10-11 by JK and JF
+
+#; this is a survey from Oct 2011 of the finds from 2010
+#; in particular the big pitch and the 2011 pushing front
+
+#1	2	3.65	004	-10
+#1	tightrift	3.89	280	-35
+#1	floor	2.20	-	down
+#2	3	2.23	293	+35
+#3	4	4.98	053	-08
+#4	5	3.78	091	+54	
+#5	6	3.89	087	-16
+#6	7	11.28	-	up
+#7	8	5.02	085	+38
+#8	9	5.70	089	-24
+#10	9	21.60	-	down
+#11	10	15.80	-	down
+#11	12	8.88	011	+68
+#12	13	5.45	064	+06
+
+#; end of page 1
+
+#; page 2 of 2
+#14	13	24.80	-	down
+#14	15	6.61	032	+68
+
+#*end echo_rift
