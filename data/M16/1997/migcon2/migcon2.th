@@ -1,5 +1,12 @@
 
 survey migcon2 -title "System Migovec"
+
+input migcon2-e.th2
+
+map m-all-e -projection extended
+    migcon2-1e
+endmap
+
 centreline
     team "Alva Gosson" insts
     team "Iain McKenna" notes

@@ -6,6 +6,9 @@ endmap
 map m-NCB-e -projection extended
 	m-all-e@void
 	m-all-e@dodge
+	m-all-e@zebra
+	m-all-e@leki
+	m-all-e@silos
 	m-all-e@gallery
 	m-all-e@plopzilla
 endmap
@@ -17,6 +20,7 @@ map m-entrance_series-e -projection extended
 	m-all-e@turtle
 	m-all-e@shreddie
 endmap
+
 centreline
 extend start 26@torn
 extend left 32@shreddie

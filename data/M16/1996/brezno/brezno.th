@@ -12,6 +12,14 @@ survey brezno -title "Brezno Strahov"
 		brezno-4p
 	endmap
 	
+
+input brezno-e.th2
+
+map m-all-e -projection extended
+    brezno-2e
+    brezno-1e
+endmap
+
 	centreline
 		date 1996.08.04
 		team "Jim Evans" notes

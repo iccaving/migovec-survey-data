@@ -8,6 +8,13 @@ survey hotline -title "Hotline"
 	
 	join hotline-1p hotline-2p
 	
+
+input hotline-e.th2
+
+map m-all-e -projection extended
+    hotline-1e
+endmap
+
 	centreline
 		date 1996.08.08
 		team "Chris Roberts" insts
@@ -31,7 +38,8 @@ survey hotline -title "Hotline"
 		13      14      9.15    208     -42
 		14      15      9.50    019     -20
 	endcentreline
-	
+
+
 	centreline
 		date 1996.08.10
 		team "Jim Evans" insts

@@ -1,23 +1,61 @@
+map m-all-e -projection extended
+	m-entrance-e
+	m-level2-e
+endmap
+
+map m-level2-e -projection extended
+	m-all-e@level2s
+	m-all-e@migcon
+	m-all-e@migcondown
+	m-all-e@migconleft
+	m-all-e@migcon2
+endmap
+
+map m-entrance-e -projection extended
+	m-all-e@entrance
+	m-all-e@hotline
+	m-all-e@brezno
+endmap
+
 centreline
 
 #extend left 8@entrance 7@entrance
 
 # Level 2
+extend start 6@level2s
 extend left 6@level2s 5@level2s
+extend left 5@level2s 4@level2s
 extend left 5@level2s
+extend right 1@level2s 2@level2s
 
 extend right 1@level2n 2@level2n
 extend right 2@level2n
+extend left 0@migcondown 1@migcondown
+extend left 1@migcondown
 
 # Deep M16
+extend left 9@sajeta
 extend right 6@arrow 5@arrow
-extend right 5@arrow
+extend left 5@arrow
 extend left 67@wonder 66@wonder
+extend right 9@wonder
 extend right 66@wonder
 extend left 49@wonder
 extend right 19@doh 18@doh
 extend right 18@doh
 extend left 26@hotel
+extend right 23@marwood
+extend right 29@god
+extend left 11@god
+extend right 3@glory
+extend left 15@glory
+extend left 12@teotihuacan
+extend ignore 1@sinners
+extend right 1@sinners 0@sinners
+extend right 4b@teotihuacan 3@sinners
+extend right 3@sinners 2@sinners
+extend right 2@sinners 1@sinners
+extend left 19@rameses
 
 # Towards connection with Vrtnarija
 extend right 1@adder 2@adder
@@ -37,11 +75,47 @@ extend left 11@dinsdale
 extend right 12@goodbag 11@goodbag
 extend right 11@goodbag 
 
+extend left 3@hotline 4@hotline
+extend left 4@hotline 5@hotline
+extend right 4@hotline 6@hotline
+extend right 6@hotline 16@hotline
+extend right 13@hotline 14@hotline
+extend left 17@hotline 18@hotline
+extend right 48@brezno 47@brezno
+extend vertical 49@brezno 50@brezno
+extend left 35@brezno 36@brezno
+extend left 35@brezno 33@brezno
+extend left 33@brezno
+extend right 47@brezno
+extend right 38@brezno 39@brezno
+extend right 38@brezno 37@brezno
+extend right 37@brezno 36@brezno
+extend left 36@brezno 35@brezno
+extend left 35@brezno
+
+
+# Titanic pitch series
+extend right 24@titanic
+extend left 17@titanic
+extend right 6@titanic
+extend left 2@titanic
+extend right 3@olympic
+
+# Paradiso Pitch series
+extend right 7@paradiso
+extend left  10@paradiso2 
+extend right 6@paradiso2
+extend right 12@paradiso2
+extend left 13@below55
+extend left 5@gloworm
+extend right 5@penelope
 
 # Rock and Roll, Toilet Humour
-extend right 6@rockroll
+extend right 3@rockroll
 extend left 10@rockroll
+extend right 6@boogywoo
 extend right 9@toilet
+extend left 5@toilet
 
 # Batshit passage, Tamoka, Mower
 extend left 1@batshita 2@batshita

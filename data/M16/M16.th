@@ -50,6 +50,12 @@ survey M16 -title "M16 part of System Migovec"
 	join hotline-1p@hotline goodbag-1p@goodbag
 	join brezno-4p@brezno shordrop-1p@shordrop
 	join shordrop-1p@shordrop shordrop2-1p@shordrop2
+
+	join level2s-2e@level2s migcon-1e@migcon
+	join migcon-1e@migcon migcondown-1e@migcondown
+	join migcondown-1e@migcondown migconleft-1e@migconleft 
+	join hotline-1e@hotline brezno-1e@brezno
+	join hotline-1e@hotline migconleft-1e@migconleft
 	
 	
 	###__________1997____________###
@@ -146,6 +152,8 @@ survey M16 -title "M16 part of System Migovec"
 	join galact2-1p@galact2 galact1-1p@galact1
 	join galact2-2p@galact2 galact3-1p@galact3
 	
+	join migcon2-1e@migcon2 migconleft-1e@migconleft
+	join migcon2-1e@migcon2 migcondown-1e@migcondown
 	###__________1998____________###
 	
 	input ./1998/waffles/waffles.th
