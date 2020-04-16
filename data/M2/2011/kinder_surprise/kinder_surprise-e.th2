@@ -1,0 +1,95 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  125.94 -28.31
+  113.69 -23.11
+endline
+line survey 
+  113.69 -23.11
+  88.34 -22.72
+endline
+line survey 
+  88.34 -22.72
+  66.45 -20.75
+endline
+line survey 
+  66.45 -20.75
+  66.45 -31.38
+endline
+line survey 
+  162.31 -44.84
+  127.72 -43.03
+endline
+line survey 
+  127.72 -43.03
+  97.47 -40.91
+endline
+line survey 
+  66.45 -31.38
+  97.47 -40.91
+endline
+line survey 
+  26.94 -34.21
+  66.45 -31.38
+endline
+line survey 
+  -0.53 -16.34
+  26.94 -34.21
+endline
+line survey 
+  -0.53 -16.34
+  -29.64 -44.45
+endline
+line survey 
+  -29.64 -44.45
+  -53.27 -0.04
+endline
+line survey 
+  -62.33 5.24
+  -53.27 -0.04
+endline
+line survey 
+  -77.02 18.94
+  -62.33 5.24
+endline
+line survey 
+  -113.18 22.09
+  -77.02 18.94
+endline
+line survey 
+  -113.18 44.84
+  -113.18 22.09
+endline
+line survey 
+  -113.18 44.84
+  -162.31 25.00
+endline
+line survey 
+  -162.31 13.66
+  -162.31 25.00
+endline
+endscrap
+
+scrap kinder_surprise-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 113.69 -23.11 station -name 14
+point 125.94 -28.31 station -name 15
+point 88.34 -22.72 station -name 13
+point 66.45 -20.75 station -name 12
+point 66.45 -31.38 station -name 9
+point 127.72 -43.03 station -name 11
+point 162.31 -44.84 station -name riftpitch
+point 97.47 -40.91 station -name 10
+point 26.94 -34.21 station -name 8
+point -0.53 -16.34 station -name 7
+point -29.64 -44.45 station -name 6
+point -53.27 -0.04 station -name 5
+point -62.33 5.24 station -name 4
+point -77.02 18.94 station -name 3
+point -113.18 22.09 station -name 2
+point -113.18 44.84 station -name 1
+point -162.31 25.00 station -name 0
+point -162.31 13.66 station -name bot
+endscrap
