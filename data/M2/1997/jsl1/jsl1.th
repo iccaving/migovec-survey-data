@@ -6,6 +6,13 @@ survey jsl1 -title "JSL1"
 		jsl1-1p
 	endmap
 	
+
+input jsl1-e.th2
+
+map m-all-e -projection extended
+    jsl1-1e
+endmap
+
 	centreline
 		team "Unknown" insts
 		team "Unknown" notes

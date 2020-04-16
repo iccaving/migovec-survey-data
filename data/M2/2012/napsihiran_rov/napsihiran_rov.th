@@ -1,4 +1,11 @@
 survey napsihiran_rov
+
+input napsihiran_rov-e.th2
+
+map m-all-e -projection extended
+    napsihiran_rov-1e
+endmap
+
 	centreline
 		date 2012
 		data normal from to tape compass clino ignoreall

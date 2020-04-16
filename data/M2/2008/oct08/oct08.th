@@ -1,5 +1,12 @@
 survey oct08 -title "October 2008 extensions"
 
+
+input oct08-e.th2
+
+map m-all-e -projection extended
+    oct08-1e
+endmap
+
 centreline
 team "James Hooper"
 team "Andrej Fratnik"

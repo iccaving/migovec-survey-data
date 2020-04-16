@@ -1,5 +1,12 @@
 survey wizard_of_oz
 
+
+input wizard_of_oz-e.th2
+
+map m-all-e -projection extended
+    wizard_of_oz-1e
+endmap
+
 centreline
 	team "Jarvist Frost"
 	team "James Kirkpatrick"

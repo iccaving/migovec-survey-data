@@ -1,4 +1,11 @@
 survey kinder_surprise
+
+input kinder_surprise-e.th2
+
+map m-all-e -projection extended
+    kinder_surprise-1e
+endmap
+
 	centreline
 		team "Jarvist Frost"
 		team "James Kirkpatrick"

@@ -6,6 +6,13 @@ survey izent2 -title "Izent2"
 		izent2-1p
 	endmap
 	
+
+input izent2-e.th2
+
+map m-all-e -projection extended
+    izent2-1e
+endmap
+
 	centreline
 		team "Unknown" insts
 		team "Unknown" notes
