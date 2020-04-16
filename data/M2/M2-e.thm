@@ -1,11 +1,15 @@
-#map m-all-e -projection extended
-# #m-all-e@izent1
-#endmap
+map m-all-e -projection extended
+ m-all-e@izent2
+endmap
 
 centreline
 extend start 16@izent1
 extend right 16@izent1 15@izent1
 extend left 9@izent1
+extend right 16@izent2 17@izent2
+extend right 17@izent2 18@izent2
+extend right 18@izent2 19@izent2
+
 extend right 2@jspdt
 extend left 25@jspdt
 
