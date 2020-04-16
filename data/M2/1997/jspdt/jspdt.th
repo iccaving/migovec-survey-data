@@ -10,6 +10,13 @@ survey jspdt -title "M2 to Silos"
 		jspdt-4p
 	endmap
 	
+
+input jspdt-e.th2
+
+map m-all-e -projection extended
+    jspdt-1e
+endmap
+
 	centreline
 		team "Unknown" insts
 		team "Unknown" notes

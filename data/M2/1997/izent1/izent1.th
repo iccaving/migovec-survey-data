@@ -11,6 +11,13 @@ survey izent1 -title "Izent1"
 	join izent1-1p izent1-2p
 	join izent1-1p izent1-3p
 	
+
+input izent1-e.th2
+
+map m-all-e -projection extended
+    izent1-1e
+endmap
+
 	centreline
 		
 		team "Unknown" insts
