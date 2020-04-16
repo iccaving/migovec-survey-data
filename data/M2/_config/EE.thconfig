@@ -1,0 +1,17 @@
+encoding  utf-8
+source ../M2.th
+
+layout local
+	scale 1 500
+endlayout
+
+source
+	map	localM2 -projection extended
+		M2
+		
+		#m-all-e@M2
+	endmap
+endsource
+
+select localM2
+export map -o ../_outputs/M2_EE.pdf -layout local -projection extended -layout-debug station-names
