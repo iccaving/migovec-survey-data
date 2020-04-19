@@ -15,10 +15,14 @@ input jspdt-e.th2
 
 map m-all-e -projection extended
     jspdt-1e
+	jspdt-2e
+	jspdt-3e
 endmap
+join line69:john line70:jane
 
 	centreline
-		team "Unknown" insts
+	#explo team can be found in original survey notes
+		team "Unknown" insts 
 		team "Unknown" notes
 		explo-team "Unknown"
 		explo-team "Unknown"
