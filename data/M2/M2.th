@@ -19,6 +19,10 @@ survey M2 -title "M2 part of System Migovec"
 	equate d@jsl1 19@jspdt
 	
 	join izent1-2p@izent1 izent2-1p@izent2
+	join izent1-1e@izent1 izent2-1e@izent2
+	join izent1-1e@izent1 jspdt-1e@jspdt
+	join jspdt-1e@jspdt jspdt-2e@jspdt
+	join jsl2-1e@jsl2 jspdt-2e@jspdt
 
 	###__________2008____________###
 	input ./2008/oct08/oct08.th

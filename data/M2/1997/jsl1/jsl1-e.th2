@@ -2,24 +2,23 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -20.15 33.43
-  -45.30 -16.73
-endline
-line survey 
-  6.11 34.45
-  -20.15 33.43
-endline
-line survey 
-  45.30 -34.45
-  6.11 34.45
-endline
-endscrap
 
 scrap jsl1-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -45.30 -16.73 station -name c
-point -20.15 33.43 station -name b
-point 6.11 34.45 station -name a
-point 45.30 -34.45 station -name d
+
+line wall 
+  486.1875 638.5641
+  484.7965 648.903 449.2766 663.3028 445.1854 659.4613
+  438.9144 658.4801 415.8203 658.4376 416.7103 657.2966
+  418.1382 655.4661 392.4863 596.0762 397.9089 597.0331
+  404.6967 593.9445 410.9218 605.5137 414.545 619.2712
+  420.3167 624.7034 427.8157 650.0487 434.9455 649.3697
+  444.8145 648.3652 465.7462 640.6178 468.6768 628.1369
+  472.18 613.2177 484.1472 597.8314 483.0286 588.876
+endline
+
+point 402.8568 605.2573 station -name c
+point 428.0068 655.4173 station -name b
+point 454.2668 656.4373 station -name a
+point 493.4568 587.5373 station -name d
 endscrap
+
