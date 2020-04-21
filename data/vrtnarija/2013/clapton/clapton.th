@@ -15,9 +15,11 @@ map m-all-p -projection plan
 endmap
 
 centreline
-    team "Andrej Fratnik/Gergely Ambrus?" insts
+    team "Andrej Fratnik" insts
+    team "Gergely Ambrus" insts
     team "Andreja Fratnik" notes
-    explo-team "Andrej Fratnik/Gergely Ambrus?"
+    explo-team "Andrej Fratnik"
+    explo-team "Gergely Ambrus"
     explo-team "Andreja Fratnik"
     date 2013.08.02
     units length meters
