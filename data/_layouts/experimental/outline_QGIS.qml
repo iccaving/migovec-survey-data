@@ -451,9 +451,9 @@
     <property key="labeling/previewBkgrdColor" value="#ffffff"/>
     <property key="labeling/priority" value="5"/>
     <property key="labeling/quadOffset" value="4"/>
-    <property key="labeling/repeatDistance" value="0"/>
-    <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
-    <property key="labeling/repeatDistanceUnit" value="1"/>
+    <property key="labeling/repeatdistance" value="0"/>
+    <property key="labeling/repeatdistanceMapUnitScale" value="0,0,0,0,0,0"/>
+    <property key="labeling/repeatdistanceUnit" value="1"/>
     <property key="labeling/reverseDirectionSymbol" value="false"/>
     <property key="labeling/rightDirectionSymbol" value=">"/>
     <property key="labeling/scaleMax" value="10000000"/>
