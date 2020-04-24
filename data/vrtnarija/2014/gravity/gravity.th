@@ -23,7 +23,9 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall
+    flags duplicate
     2	1	11.35	349	+04
+    flags not duplicate
     2	3	7.49	269	+07
     4	3	4.78	350	-11
     4	5	3.22	249	+65
