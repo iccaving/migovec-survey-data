@@ -4,6 +4,12 @@ map m-all-e -projection extended
  m-all-e@jspdt
  m-all-e@jsl2
  m-all-e@jsl1
+ m-all-e@jspdt2
+ m-all-e@kinder_surprise
+ m-all-e@echo_rift
+ m-all-e@oct08
+ m-all-e@wizard_of_oz
+ m-all-e@napsihiran_rov
 endmap
 
 centreline
@@ -27,4 +33,10 @@ extend right 2@oct08
 extend right 1@napsihiran_rov 2@napsihiran_rov
 extend right 2@napsihiran_rov
 extend left 10@echo_rift
+
+extend right d@jsl1 a@jsl1
+extend right a@jsl1 b@jsl1
+extend right b@jsl1 c@jsl1
+extend right h@jsl2 g@jsl2
+extend right g@jsl2
 endcentreline
