@@ -4,20 +4,20 @@ encoding  utf-8
 
 
 scrap prisoners-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-
-line survey 
-  -6.81 1.73
-  6.26 8.43
-endline
-
-line survey 
-  6.26 8.43
-  6.81 -8.43
-endline
-
-point -6.81 1.73 station -name 4
-point 6.26 8.43 station -name 3
-point 6.81 -8.43 station -name 1
-point 6.81 -8.43 station -name 2
+	
+	line survey
+		-6.81 1.73
+		6.26 8.43
+	endline
+	
+	line survey
+		6.26 8.43
+		6.81 -8.43
+	endline
+	
+	point -6.81 1.73 station -name 4
+	point 6.26 8.43 station -name 3
+	point 6.81 -8.43 station -name 1
+	point 6.81 -8.43 station -name 2
 endscrap
 
