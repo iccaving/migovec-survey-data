@@ -40,6 +40,7 @@ layout show-centreline
 	endcode
 	symbol-show line survey
 	symbol-show point station
+	symbol-assign point station AUT
 	symbol-colour point station [50 30 30]
 endlayout
 
