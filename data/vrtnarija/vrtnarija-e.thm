@@ -1,10 +1,21 @@
-
 ## MASTER MAP ##
 map m-all-e -projection extended
+	m-entrance-e
+endmap
+
+map m-entrance-e -projection extended
 	m-all-e@bclent2
 	m-all-e@laurel
 	m-all-e@hardy
 	m-all-e@waffer
+	m-all-e@urinal
+	m-all-e@urinal2
+	m-all-e@pico
+	m-all-e@pico2
+	m-all-e@chariot
+	m-all-e@tesselator
+	m-all-e@space_odyssey
+	m-all-e@concorde
 endmap
 
 centreline
