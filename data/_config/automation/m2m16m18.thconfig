@@ -17,6 +17,7 @@ source "../../m2m16m18.th"
 #----------------------------------------------------------------------------------|
 # input the layout files
 input "../../_layouts/base-p.thl"
+input "../../_layouts/base-e.thl"
 input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
@@ -42,17 +43,44 @@ layout plan
 endlayout
 
 language fr
-export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.pdf -layout plan -layout-debug all
-export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.svg -layout plan
+#export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.pdf -layout plan -layout-debug all
+#export map -projection plan -o ../../_outputs/m2_m16_m18_plan_SLO.svg -layout plan
 
 language en
-export map -projection plan -o ../../_outputs/m2_m16_m18_plan_ENG.pdf -layout plan
-export map -projection plan -o ../../_outputs/m2_m16_m18_plan_ENG.svg -layout plan
+#export map -projection plan -o ../../_outputs/m2_m16_m18_plan_ENG.pdf -layout plan
+#export map -projection plan -o ../../_outputs/m2_m16_m18_plan_ENG.svg -layout plan
 
 #----------------------------------------------------------------------------------|
+# select the relevant map definitions, and levels within those maps
+select m-all-p@m2m16m18
+
+#----------------------------------------------------------------------------------|
+# export an ELEVATION view
+
+layout ee
+	copy base-e
+	copy colour-by-new
+	scale 1 2000
+	copy show-centreline
+	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
+	code tex-map
+	\framethickness=0.5mm
+	\def\maplayout{
+	\legendbox{55}{105}{NE}{\size[26]\the\cavename}
+	\legendbox{-35}{95}{N}{\size[10]\the\comment}
+	\legendbox{-32}{67}{N}{\scalebar}
+	}
+endlayout
+language fr # slo not yet supported
+export map -projection extended -o ../../_outputs/m2m16m18_EE_SLO.pdf -layout ee 
+#export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.svg -layout ee
+language en
+export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.pdf -layout ee
+#export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.svg -layout ee
+#----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/m2_m16_m18.3d -fmt survex
+#export model -o ../../_outputs/m2_m16_m18.3d -fmt survex
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-export model -o ../../_outputs/m2_m16_m18.lox
+#export model -o ../../_outputs/m2_m16_m18.lox
