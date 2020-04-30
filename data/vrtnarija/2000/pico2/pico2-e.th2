@@ -2,34 +2,30 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  137.77 -31.69
-  148.17 42.09
-endline
-line survey 
-  108.62 -42.09
-  137.77 -31.69
-endline
-line survey 
-  89.52 -17.60
-  108.62 -42.09
-endline
-line survey 
-  -45.59 10.83
-  89.52 -17.60
-endline
-line survey 
-  -148.17 13.74
-  -45.59 10.83
-endline
-endscrap
 
 scrap pico2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 148.17 42.09 station -name 6
-point 137.77 -31.69 station -name 5
-point 108.62 -42.09 station -name 4
-point 89.52 -17.60 station -name 3
-point -45.59 10.83 station -name 2
-point -148.17 13.74 station -name 1
+
+line wall -id wall
+  572.093 768.1896
+  548.3512 758.8621 521.2432 774.1443 504.2675 769.3912
+  487.2919 764.638 425.3612 777.6389 416.1944 775.9413
+  407.0275 774.2438 299.7415 773.9043 299.7415 773.9043
+endline
+
+line wall -id wall2
+  297.5637 723.6281
+  318.274 720.912 388.4025 717.6333 411.1499 713.2197
+  433.8973 708.806 485.5032 703.8099 498.7442 699.0567
+  511.9852 694.3035 536.4301 687.8528 545.2574 685.4762
+  554.0847 683.0996 561.554 685.8157 565.2887 681.7415
+  569.0233 677.6674 542.5672 658.6164 542.5672 658.6164
+endline
+
+point 603.346 776.7095 station -name 6
+point 592.946 702.9295 station -name 5
+point 563.796 692.5295 station -name 4
+point 544.696 717.0195 station -name 3
+point 409.586 745.4495 station -name 2
+point 307.006 748.3595 station -name 1
 endscrap
+

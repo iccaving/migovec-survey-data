@@ -18,12 +18,13 @@ input "../../_layouts/mods.thl"
 # export an ELEVATION view
 
 layout ee
-	#copy base-e
-	copy show-centreline
+	copy base-e
+	#copy show-centreline
 	scale 1 2000
 	map-header 0 0 off
 endlayout
 
+select m-entrance-e@vrtnarija
 
 language fr
 
