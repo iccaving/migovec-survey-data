@@ -150,6 +150,13 @@ layout base-e
 			if cycle P: thclean P fi;
 			thdraw P withcolor (0.3,0.3,0.3);
 		enddef;
+
+		# EXPOSURE OF BEDROCK
+    
+    	def l_u_texture_MY (expr P)=
+      		T:=identity;
+      		thdraw P withpen PenD withcolor (0.3,0.3,0.3);
+    	enddef;
 		
 		#_____________________________________________________________
 		#                                                             |
@@ -196,6 +203,7 @@ layout base-e
 		
 		# others
 		initsymbol("l_rockborder_MY");
+		initsymbol("l_u_texture_MY");
 		
 		# wall types
 		initsymbol("l_wall_blocks_MY");
@@ -222,6 +230,7 @@ layout base-e
 	symbol-assign line wall:blocks MY
 	symbol-assign line wall:flowstone MY
 	symbol-assign point camp MY
+	symbol-assign line rock-border MY
 	
 	symbol-assign area clay MY
 	
