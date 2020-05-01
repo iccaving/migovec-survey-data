@@ -1,5 +1,5 @@
 
-survey hotpants -title "Watership Down"
+survey hotpants -title "Hotpants"
 
 input hotpants-e.th2
 
@@ -12,13 +12,14 @@ input hotpants-p.th2
 
 map m-all-p -projection plan
     hotpants-1p
+    hotpants-2p
 endmap
 
 centreline
     team "Clare Tan" insts
-    team "Unknown" notes
+    team "Jarvist Frost" notes
     explo-team "Clare Tan"
-    explo-team "Unknown"
+    explo-team "Jarvist Frost"
     date 2012.7.22
     units length meters
     units compass clino degrees
