@@ -2,44 +2,47 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  4.61 -66.18
-  13.58 -83.11
-endline
-line survey 
-  26.73 29.72
-  4.61 -66.18
-endline
-line survey 
-  26.73 29.72
-  -8.62 13.98
-endline
-line survey 
-  -8.62 13.98
-  -26.73 25.24
-endline
-line survey 
-  -0.51 39.80
-  -26.73 25.24
-endline
-line survey 
-  -0.51 39.80
-  -16.50 -6.57
-endline
-line survey 
-  -0.51 39.80
-  -24.53 83.11
-endline
-endscrap
 
 scrap hotpants-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 13.58 -83.11 station -name 8
-point 4.61 -66.18 station -name 7
-point 26.73 29.72 station -name 6
-point -8.62 13.98 station -name 5
-point -26.73 25.24 station -name 4
-point -16.50 -6.57 station -name 3
-point -24.53 83.11 station -name 2
-point -0.51 39.80 station -name 1
+
+line wall 
+  549.0413 703.396
+  540.9224 704.6396 584.5111 821.4287 553.5178 882.3822
+  495.9006 995.6961 445.9656 997.6167 411.3953 1014.9018
+  376.825 1032.187 267.3523 1310.6702 267.3523 1310.6702
+  305.7637 1037.9487
+  259.67 947.6817 250.0671 882.3822 246.2259 784.433
+  242.3848 686.4837 223.1791 548.2024 319.2077 542.4406
+  415.2364 536.6789 453.6479 561.6464 486.2977 601.9784
+  492.6295 609.8 507.3116 639.5452 510.4836 634.4659
+endline
+
+point 320.7306 781.2625 station -name 4
+point 377.6707 604.2084 station -name 3
+point 332.9758 1103.3662 station -name 2
+point 466.6708 862.3033 station -name 1
 endscrap
+
+
+scrap hotpants-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
+
+point 545.0956 178.1876 station -name 8
+point 495.1687 272.4198 station -name 7
+point 618.2884 806.1981 station -name 6
+point 421.5306 718.5894 station -name 5
+line wall 
+  524.3167 706.7712
+  533.9196 697.1683 549.2841 704.8506 543.5224 660.6774
+  537.7607 616.5042 472.9413 321.8162 472.9413 321.8162
+  472.9413 321.8162 447.4855 283.2564 449.0165 232.739
+endline
+
+line wall 
+  556.9664 234.31
+  526.2373 286.1655 547.3636 330.3387 580.0133 432.1291
+  612.6631 533.9195 668.3597 804.7205 641.4717 839.2908
+  614.5837 873.8611 528.1578 814.3233 528.1578 814.3233
+endline
+
+endscrap
+
