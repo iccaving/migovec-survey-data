@@ -35,6 +35,7 @@ select m-cheetah-p@vrtnarija
 # export a PLAN view
 layout plan
 	copy show-centreline
+	copy base-p
 	map-header 0 0 off
 	scale 1 2000
 endlayout
