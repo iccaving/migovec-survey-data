@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap throneroom-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
+scrap throneroom-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line wall -subtype invisible
   530.2752 629.308
@@ -144,9 +144,9 @@ point 584.9348 1181.333 station -name 1
 endscrap
 
 
-scrap throneroom-2p -scale [0 0 90 0 0 0 250 0 inch] -projection plan
+scrap throneroom-2p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
-point 551.6849 998.6985 label -text Throneroom -align r -scale l
+point 256.3088 1016.3531 label -align r -scale l -text Throneroom
 line pit 
   280.4038 252.7955
   276.5627 258.3172 247.514 273.4417 243.4327 273.2016
