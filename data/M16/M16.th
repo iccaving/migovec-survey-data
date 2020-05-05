@@ -52,11 +52,15 @@ survey M16 -title "M16 part of System Migovec"
 	join shordrop-1p@shordrop shordrop2-1p@shordrop2
 
 	join level2s-2e@level2s migcon-1e@migcon
+	join level2s-2e@level2s level2n-1e@level2n
 	join migcon-1e@migcon migcondown-1e@migcondown
 	join migcondown-1e@migcondown migconleft-1e@migconleft 
 	join hotline-1e@hotline brezno-1e@brezno
 	join hotline-1e@hotline migconleft-1e@migconleft
-	
+	join migcondown-1e@migcondown rockroll-1e@rockroll
+	join boogywoo-1e@boogywoo rockroll-1e@rockroll
+
+
 	
 	###__________1997____________###
 	
@@ -245,6 +249,8 @@ survey M16 -title "M16 part of System Migovec"
 	equate 12@obelix 12@getafix
 	equate 1@boogywoo 10@toilet
 	equate 1@gloworm 7@below55
+
+	join boogywoo-1e@boogywoo toilet-1e@toilet
 	
 	###__________2001____________###
 	
