@@ -13,7 +13,10 @@ map m-all-e -projection extended
 endmap
 
 centreline
+
+
 extend start 16@izent1
+extend vertical 16@izent2 17@izent2
 extend right 16@izent1 15@izent1
 extend left 9@izent1
 extend right 16@izent2 17@izent2
@@ -22,8 +25,9 @@ extend right 18@izent2 19@izent2
 
 extend right 2@jspdt
 extend left 25@jspdt
+
 extend left 1@m2_2012_resurvey
-extend right 4@m2_2012_resurvey
+extend right 5@m2_2012_resurvey
 extend vertical 36@m2_2012_resurvey 37@m2_2012_resurvey
 extend left 11@m2_2012_resurvey
 extend right 22@m2_2012_resurvey

@@ -17,4 +17,6 @@ survey m2m16m18 -title "Sistem Migovec (the Old System)"
 
 	equate 6@void.M18 14@level2s.M16 # connection between M18 and Level2. 
 	equate 8@silos.M18 24@jspdt.M2 # connection in Silos
+
+	join jspdt-3e@jspdt.M2 silos-1e@silos.M18 
 endsurvey
