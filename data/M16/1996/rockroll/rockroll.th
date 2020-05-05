@@ -11,6 +11,13 @@ survey rockroll -title "Rock&Roll"
 		rockroll-3p
 	endmap
 	
+
+input rockroll-e.th2
+
+map m-all-e -projection extended
+    rockroll-1e
+endmap
+
 	centreline
 		team "Andy Atkinson" insts
 		team "James Hooper" notes

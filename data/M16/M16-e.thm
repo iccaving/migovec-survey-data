@@ -1,6 +1,7 @@
 map m-all-e -projection extended
 	m-entrance-e
 	m-level2-e
+	m-below_mig_country-e
 endmap
 
 map m-level2-e -projection extended
@@ -10,6 +11,12 @@ map m-level2-e -projection extended
 	m-all-e@migconleft
 	m-all-e@migcon2
 	m-all-e@level2n
+endmap
+
+map m-below_mig_country-e -projection extended
+	m-all-e@rockroll
+	m-all-e@boogywoo
+	m-all-e@toilet
 endmap
 
 map m-entrance-e -projection extended
