@@ -3,132 +3,16 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
-
-line survey 
-  -288.74 -262.17
-  -288.74 -323.35
-endline
-
-line survey 
-  -266.47 -240.2
-  -288.74 -262.17
-endline
-
-line survey 
-  -227.38 -214.37
-  -266.47 -240.2
-endline
-
-line survey 
-  -204.95 -224.29
-  -227.38 -214.37
-endline
-
-line survey 
-  -169.43 -149.8
-  -204.95 -224.29
-endline
-
-line survey 
-  -151.84 -43.74
-  -169.43 -149.8
-endline
-
-line survey 
-  -129.4 -31.61
-  -151.84 -43.74
-endline
-
-line survey 
-  -91.79 -29.49
-  -129.4 -31.61
-endline
-
-line survey 
-  -31.16 -13.27
-  -91.79 -29.49
-endline
-
-line survey 
-  0.9 69.33
-  -31.16 -13.27
-endline
-
-line survey 
-  28.87 85.31
-  0.9 69.33
-endline
-
-line survey 
-  63.91 93.35
-  28.87 85.31
-endline
-
-line survey 
-  99.41 101.38
-  63.91 93.35
-endline
-
-line survey 
-  119.67 115.47
-  99.41 101.38
-endline
-
-line survey 
-  129.71 115.55
-  119.67 115.47
-endline
-
-line survey 
-  147.86 115.63
-  129.71 115.55
-endline
-
-line survey 
-  201.59 145.24
-  147.86 115.63
-endline
-
-line survey 
-  207.51 224.13
-  201.59 145.24
-endline
-
-line survey 
-  214.59 247.99
-  207.51 224.13
-endline
-
-line survey 
-  238.54 248.15
-  214.59 247.99
-endline
-
-line survey 
-  238.54 313.27
-  238.54 248.15
-endline
-
-line survey 
-  262.25 323.35
-  238.54 313.27
-endline
-
-line survey 
-  268.46 301.77
-  262.25 323.35
-endline
-
-line survey 
-  288.74 290.2
-  268.46 301.77
-endline
-
-endscrap
-
-
 scrap jspdt2-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+
+point 266.857 144.6324 camp -align r
+point 96.0287 191.5772 label -text Gasa -align l -scale l
+line wall:blocks 
+  -304.0509 -325.7774
+  -296.0085 -326.4976
+  -296.0085 -326.4976 -293.1939 -328.6054 -290.9669 -326.9777
+  -288.74 -325.35 -279.5696 -329.4927 -279.5696 -329.4927
+endline
 
 line wall -subtype blocks
   258.8784 302.1663
@@ -211,8 +95,8 @@ line wall -subtype blocks
 endline
 
 line wall 
-  -284.8512 -314.7283
-  -284.8512 -314.7283 -279.6836 -284.9652 -279.9237 -283.7648
+  -279.5696 -329.4927
+  -279.5696 -329.4927 -279.6836 -284.9652 -279.9237 -283.7648
   -280.1637 -282.5644 -282.8045 -277.2829 -280.4038 -276.8027
   -278.0031 -276.3226 -271.5211 -265.9995 -271.5211 -265.9995
 endline
@@ -260,8 +144,8 @@ line wall
   -241.7522 -210.0628 -276.7029 -233.5847 -276.7029 -233.5847
   -292.66 -236.3008
   -300.1292 -252.2579
-  -300.1292 -252.2579 -301.1478 -262.7828 -301.1478 -266.5175
-  -301.1478 -270.2521 -301.1478 -318.8024 -301.1478 -318.8024
+  -300.1292 -252.2579 -298.7768 -263.632 -301.1478 -266.5175
+  -310.8707 -278.3503
 endline
 
 line wall 
