@@ -1,4 +1,5 @@
 map m-all-e -projection extended
+	m-galaktika-hydrant-e 
 	m-entrance-e
 	m-level2-e
 	m-below_mig_country-e
@@ -13,7 +14,7 @@ map m-level2-e -projection extended
 	m-all-e@migcon2
 	m-all-e@level2n
 	m-all-e@exhib
-
+	m-all-e@challenge
 endmap
 
 map m-below_mig_country-e -projection extended
@@ -28,6 +29,11 @@ map m-entrance-e -projection extended
 	m-all-e@brezno
 endmap
 
+map m-galaktika-hydrant-e -projection extended
+	m-all-e@shordrop
+	m-all-e@shordrop2
+	m-all-e@tamoka
+endmap
 centreline
 
 #extend left 8@entrance 7@entrance
@@ -50,8 +56,28 @@ extend left 10@exhib 9@exhib
 extend left 9@exhib
 extend left 13@exhib 16@exhib
 
+extend left 3@skalar 2@skalar
+extend left 2@skalar
+extend right 1@skalar2 2@skalar2
+extend right 2@skalar2
+
+extend left 2@obelix
+
+extend left 7@polter 6@polter
+extend left 6@polter
+extend right 1@disillusion 2@disillusion
+
+extend vertical 2@disillusion 3@disillusion
+extend left 3@disillusion 4@disillusion
+extend right 5@disillusion
+extend left 8@disillusion 9@disillusion
+extend left 9@disillusion 10@disillusion
+extend left 9@waffles
+
+extend left 7@challenge 6@challenge
+extend left 6@challenge
 # Deep M16
-extend left 9@sajeta
+extend left 3@xxx
 extend right 6@arrow 5@arrow
 extend left 5@arrow
 extend left 67@wonder 66@wonder
@@ -109,6 +135,9 @@ extend right 38@brezno 37@brezno
 extend right 37@brezno 36@brezno
 extend left 36@brezno 35@brezno
 extend left 35@brezno
+extend right 1@shordrop 2@shordrop
+extend left 7@shordrop 6@shordrop
+extend left 6@shordrop
 
 
 # Titanic pitch series

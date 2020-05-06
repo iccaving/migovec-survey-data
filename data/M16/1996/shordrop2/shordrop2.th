@@ -7,6 +7,13 @@ survey shordrop2 -title "Short Drop 2 (between Brezno Strahov and Ta Moka)"
 		shordrop2-1p
 	endmap
 	
+
+input shordrop2-e.th2
+
+map m-all-e -projection extended
+    shordrop2-1e
+endmap
+
 	centreline
 		date 1996.8.16
 		team "Iain McKenna" insts

@@ -7,6 +7,13 @@ survey shordrop -title "Short Drop (between Brezno Strahov and Ta Moka)"
 		shordrop-1p
 	endmap
 	
+
+input shordrop-e.th2
+
+map m-all-e -projection extended
+    shordrop-1e
+endmap
+
 	centreline
 		team "Andy Atkinson" insts
 		team "James Hooper" notes
