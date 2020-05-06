@@ -5,12 +5,15 @@ map m-all-e -projection extended
 endmap
 
 map m-level2-e -projection extended
+	m-all-e@carwash
 	m-all-e@level2s
 	m-all-e@migcon
 	m-all-e@migcondown
 	m-all-e@migconleft
 	m-all-e@migcon2
 	m-all-e@level2n
+	m-all-e@exhib
+
 endmap
 
 map m-below_mig_country-e -projection extended
@@ -40,6 +43,12 @@ extend right 1@level2n 2@level2n
 extend right 2@level2n
 extend left 0@migcondown 1@migcondown
 extend left 1@migcondown
+
+extend right 7@exhib 6@exhib
+extend right 6@exhib
+extend left 10@exhib 9@exhib
+extend left 9@exhib
+extend left 13@exhib 16@exhib
 
 # Deep M16
 extend left 9@sajeta
