@@ -1,5 +1,12 @@
 
 survey window -title "System Migovec"
+
+input window-e.th2
+
+map m-all-e -projection extended
+    window-1e
+endmap
+
 centreline
     team "Hugh Penney" insts
     team "Oliver Mann" notes
