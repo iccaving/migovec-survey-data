@@ -43,6 +43,7 @@ survey vrtnarija -title "Vrtnarija"
 	join bclent2-1e@bclent2 laurel-1e@laurel
 	join laurel-1e@laurel hardy-1e@hardy
 	join waffer-1e@waffer hardy-1e@hardy
+	join urinal-1e@urinal laurel-1e@laurel
 	join urinal2-1e@urinal2 urinal-1e@urinal
 	join urinal2-1e@urinal2 pico-1e@pico
 	join wall@chariot:end wall@pico:0
@@ -51,6 +52,7 @@ survey vrtnarija -title "Vrtnarija"
 	join pico2-1e@pico2 tesselator-1e@tesselator
 	join space_odyssey-1e@space_odyssey tesselator-1e@tesselator
 	join concorde-1e@concorde space_odyssey-1e@space_odyssey
+	join alchemy-1e@alchemy concorde-1e@concorde
 	
 	###__________2001____________###
 	input ./2001/banzai/banzai.th #which also includes fistful of tolar
@@ -80,6 +82,11 @@ survey vrtnarija -title "Vrtnarija"
 	
 	join pink-p1@pink banzai-p2@banzai
 	join pink-p3@pink pink2-p1@pink2
+	join banzai-1e@banzai alchemy-1e@alchemy
+	join pink-1e@pink banzai-1e@banzai
+	join pink2-1e@pink2 pink-1e@pink
+	join skynet-1e@skynet pink2-1e@pink2
+	join zimmer-1e@zimmer skynet-1e@skynet
 	
 	###__________2003____________###
 	input "./2003/candyMountain/candyMountain.th"
@@ -424,6 +431,8 @@ survey vrtnarija -title "Vrtnarija"
 	join krtkovadobradela-1p@krtkovadobradela herojtelemarkal1-1p@herojtelemarkal1
 	join yourmum-1p@yourmum esoterica-2p@esoterica
 	join isdead-1p@isdead yourmum-1p@yourmum
+	join yorkshire-1p@yorkshire 2ndtimelucky-1p@2ndtimelucky
+	join 2ndtimelucky-1p@2ndtimelucky lowerpleasures-1p@lowerpleasures
 	
 	###__________2012____________###
 	input ./2012/atlantis/atlantis.th
@@ -492,6 +501,7 @@ survey vrtnarija -title "Vrtnarija"
 	join guillotine2-1p@guillotine2 the_queen_bed_chamber-1p@the_queen_bed_chamber
 	join undercover_squirrell-1p@undercover_squirrell peepshow-1p@peepshow
 	join hotpants-2p@hotpants throneroom-1p@throneroom
+	join curiousandcuriouser2-1p@curiousandcuriouser2 yorkshire-1p@yorkshire
 	
 	###__________2013____________###
 	input ./2013/lethe/lethe.th
