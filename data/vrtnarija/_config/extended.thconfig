@@ -17,13 +17,14 @@ input "../../_layouts/mods.thl"
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
 
-source
-	map include-centerline -projection extended
-		vrtnarija
-		m-all-e@vrtnarija
-	endmap
-endsource
-select include-centerline
+#source
+#	map include-centerline -projection extended
+#		vrtnarija
+#		m-all-e@vrtnarija
+#	endmap
+#endsource
+#select include-centerline
+select m-entrance-e@vrtnarija
 
 
 layout ee
@@ -33,7 +34,6 @@ layout ee
 	map-header 0 0 off
 endlayout
 
-#select m-entrance-e@vrtnarija
 
 language fr
 
