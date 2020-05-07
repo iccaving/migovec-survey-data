@@ -93,7 +93,7 @@ survey M16 -title "M16 part of System Migovec"
 	input ./1997/galact3/galact3.th
 	input ./1997/sinners/sinners.th
 	input ./1997/god/god.th
-	input ./1997/galac4/galac4.th
+	input ./1997/galact4/galact4.th
 	input ./1997/batshit1/batshit1.th
 	input ./1997/wonder/wonder.th
 	input "./1997/sajeta/sajeta.th"
@@ -163,6 +163,9 @@ survey M16 -title "M16 part of System Migovec"
 	join migcon2-1e@migcon2 migcondown-1e@migcondown
 	join challenge-1e@challenge exhib-1e@exhib
 	join shordrop2-1e@shordrop2 tamoka-1e@tamoka
+	join galact2-1e@galact2 galact4-1e@galact4
+	join galact2-1e@galact2 galact1-1e@galact1
+	join galact3-1e@galact3 window-1e@window
 	###__________1998____________###
 	
 	input ./1998/waffles/waffles.th
