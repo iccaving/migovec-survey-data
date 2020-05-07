@@ -28,8 +28,13 @@ centreline
 	# Entrance series
 	extend start 0@bclent2
 	extend left 13@laurel
+	extend left 13@laurel
 	extend right 2@zimmer
 	extend right 11@banzai
+	
+	# Ensure main line is down Laurel not Vil
+	extend ignore 15@judge
+	
 	
 	# Captain K
 	extend left 13@bonus
