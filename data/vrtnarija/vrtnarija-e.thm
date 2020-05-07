@@ -16,14 +16,25 @@ map m-entrance-e -projection extended
 	m-all-e@tesselator
 	m-all-e@space_odyssey
 	m-all-e@concorde
+	m-all-e@alchemy
+	m-all-e@banzai
+	m-all-e@pink
+	m-all-e@pink2
+	m-all-e@skynet
+	m-all-e@zimmer
 endmap
 
 centreline
 	# Entrance series
 	extend start 0@bclent2
 	extend left 13@laurel
+	extend left 13@laurel
 	extend right 2@zimmer
 	extend right 11@banzai
+	
+	# Ensure main line is down Laurel not Vil
+	extend ignore 15@judge
+	
 	
 	# Captain K
 	extend left 13@bonus
