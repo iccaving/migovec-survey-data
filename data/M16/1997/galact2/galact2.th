@@ -8,6 +8,13 @@ map m-all-p -projection plan
     galact2-2p
 endmap
 
+
+input galact2-e.th2
+
+map m-all-e -projection extended
+    galact2-1e
+endmap
+
 centreline
     team "Sarah Wingrove" insts
     team "Mark Evans" notes

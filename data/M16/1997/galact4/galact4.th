@@ -1,5 +1,20 @@
 
 survey galact4 -title "System Migovec"
+
+
+input galact4-p.th2
+
+map m-all-p -projection plan
+    galact4-1p
+endmap
+
+
+input galact4-e.th2
+
+map m-all-e -projection extended
+    galact4-1e
+endmap
+
 centreline
     team "Tim Wright" insts
     team "Alva Gosson" notes

@@ -33,6 +33,11 @@ map m-galaktika-hydrant-e -projection extended
 	m-all-e@shordrop
 	m-all-e@shordrop2
 	m-all-e@tamoka
+	m-all-e@galact1
+	m-all-e@galact2
+	m-all-e@galact4
+	m-all-e@galact3
+	m-all-e@window
 endmap
 centreline
 
@@ -180,13 +185,15 @@ extend right 5@window
 extend left 4@galact3 5@galact3
 extend left 4@galact3 3@galact3
 extend left 3@galact3
-extend right 1@galact4 9@galact4
-extend right 9@galact4
-extend left 6@galact4 5@galact4
-extend left 1@galact4 2@galact4
-extend right 2@galact4 3@galact4
-extend right 3@galact4 4@galact4
-extend right 4@galact4 5@galact4
+
+
+extend left 1@galact4 9@galact4
+extend left 9@galact4
+extend right 6@galact4 5@galact4
+extend right 1@galact4 2@galact4
+extend left 2@galact4 3@galact4
+extend left 3@galact4 4@galact4
+extend left 4@galact4 5@galact4
 
 # Hydrant branch
 extend right 1@hydrant 2@hydrant
