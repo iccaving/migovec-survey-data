@@ -2,79 +2,68 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -6.22 145.28
-  7.72 132.20
-endline
-line survey 
-  -6.22 145.28
-  7.64 110.87
-endline
-line survey 
-  7.64 110.87
-  22.05 93.07
-endline
-line survey 
-  22.05 93.07
-  22.83 140.24
-endline
-line survey 
-  22.83 140.24
-  22.83 140.24
-endline
-line survey 
-  0.39 101.42
-  22.83 140.24
-endline
-line survey 
-  0.39 101.42
-  -16.22 65.83
-endline
-line survey 
-  -16.22 65.83
-  4.88 46.14
-endline
-line survey 
-  1.89 24.72
-  4.88 46.14
-endline
-line survey 
-  8.58 14.09
-  1.89 24.72
-endline
-line survey 
-  8.58 14.09
-  3.54 -43.31
-endline
-line survey 
-  -1.18 -97.56
-  3.54 -43.31
-endline
-line survey 
-  -1.18 -97.56
-  0.47 -145.28
-endline
-line survey 
-  -22.83 -117.56
-  0.47 -145.28
-endline
-endscrap
 
 scrap insomnia-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 7.72 132.20 station -name 15
-point -6.22 145.28 station -name 14
-point 7.64 110.87 station -name 13
-point 22.05 93.07 station -name 12
-point 22.83 140.24 station -name 11
-point 22.83 140.24 station -name 10
-point 0.39 101.42 station -name 9
-point -16.22 65.83 station -name 8
-point 4.88 46.14 station -name 7
-point 1.89 24.72 station -name 6
-point 8.58 14.09 station -name 5
-point 3.54 -43.31 station -name 4
-point -1.18 -97.56 station -name 3
-point 0.47 -145.28 station -name 2
-point -22.83 -117.56 station -name 1
+
+line wall 
+  508.3678 1006.7076
+  516.508 1002.4132 514.3198 998.7193 512.2765 992.5241
+  510.1266 985.1536 511.1813 982.3376 508.0808 980.8522
+  503.1578 983.7381 499.0837 984.9264 499.0837 984.9264
+  499.1131 984.9204 490.9713 998.9796 493.3342 1001.5274
+  493.6084 1001.8231 497.1142 999.7072 501.4062 998.8263
+endline
+
+line wall 
+  503.3276 1008.0132
+  481.7685 1026.1772 487.5403 1028.8933 481.7685 1026.1772
+  475.9968 1023.4611 464.2836 1002.0718 469.5461 1000.544
+  474.8085 999.0162 504.5159 949.6171 512.3247 955.0493
+  517.1531 958.4081 521.0609 978.5549 521.0511 996.125
+  521.0451 1006.9705 519.469 1018.5365 515.9266 1019.4748
+endline
+
+point 496.6183 1004.0686 station -name 15
+point 482.6783 1017.1486 station -name 14
+point 496.5383 982.7386 station -name 13
+point 510.9483 964.9386 station -name 12
+point 511.7283 1012.1086 station -name 11
 endscrap
+
+
+scrap insomnia-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
+
+line wall 
+  456.0 746.5
+  494.0 707.0 485.0 695.0 500.0 707.5
+  515.0 720.0 499.0 822.0 503.5 826.5
+  508.0 831.0 517.5 899.0 509.0 898.5
+  500.5 898.0 497.5 903.5 501.5 913.0
+  505.5 922.5 504.9712 928.1827 484.0 942.5
+  479.4202 945.6267 492.1096 965.6818 496.5453 982.3004
+  499.573 993.6441 502.2635 1004.2436 505.4778 1006.8744
+  506.264 1007.5179 508.0218 1006.6269 508.7344 1006.3787
+endline
+
+line wall 
+  515.2478 1019.591
+  512.3221 1020.4924 504.747 1019.1097 502.4163 1016.1373
+  460.8008 963.066 458.5265 965.3901 459.0 954.5
+  459.5 943.0 459.5 909.0 468.0 907.5
+  476.5 906.0 479.0 894.0 482.0 887.0
+  485.0 880.0 486.5 762.0 479.5 766.0
+  472.5 770.0 456.5 771.0 456.5 771.0
+endline
+
+point 511.7283 1012.1086 station -name 10
+point 489.2883 973.2886 station -name 9
+point 472.6783 937.6986 station -name 8
+point 493.7783 918.0086 station -name 7
+point 490.7883 896.5886 station -name 6
+point 497.4783 885.9586 station -name 5
+point 492.4383 828.5586 station -name 4
+point 487.7183 774.3086 station -name 3
+point 489.3683 726.5886 station -name 2
+point 466.0683 754.3086 station -name 1
+endscrap
+

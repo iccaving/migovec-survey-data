@@ -10,7 +10,7 @@ map m-all-p -projection plan -title "Vrtnarija"
 	m-below_balamory-p
 	m-cheetah-p
 	m-yorkshire_extensions-p
-	
+	m-below_republica-p
 	m-below_stuck_in_paradise-p
 	m-beyond_atlantis-p
 endmap
@@ -197,5 +197,9 @@ map m-yorkshire_extensions-p -projection plan
 	m-all-p@curiousandcuriouser2
 endmap
 
-#map m-below_republica-p -projection plan
-#endmap
+map m-below_republica-p -projection plan
+	m-all-p@mad_cow
+	m-all-p@republica
+	m-all-p@perfidia
+	m-all-p@insomnia
+endmap
