@@ -1,5 +1,12 @@
 
 survey bridge -title "Inlet Rift to bottom of pawoden"
+
+input bridge-e.th2
+
+map m-all-e -projection extended
+    bridge-1e
+endmap
+
 centreline
     team "Martin McGowan" insts
     team "James Hooper" notes
