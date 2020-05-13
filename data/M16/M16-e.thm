@@ -1,8 +1,10 @@
 map m-all-e -projection extended
 	m-galaktika-hydrant-e 
+	m-below_xxx-e
 	m-entrance-e
 	m-level2-e
 	m-below_mig_country-e
+
 endmap
 
 map m-level2-e -projection extended
@@ -38,6 +40,14 @@ map m-galaktika-hydrant-e -projection extended
 	m-all-e@galact4
 	m-all-e@galact3
 	m-all-e@window
+endmap
+
+map m-below_xxx-e -projection extended
+	m-all-e@xxx
+	m-all-e@bridge
+	m-all-e@arrow
+	m-all-e@sajeta
+	m-all-e@hotel
 endmap
 centreline
 
@@ -82,9 +92,17 @@ extend left 9@waffles
 extend left 7@challenge 6@challenge
 extend left 6@challenge
 # Deep M16
+
 extend left 3@xxx
 extend right 6@arrow 5@arrow
-extend left 5@arrow
+extend left 15@bridge 14@bridge
+extend right 14@bridge 13@bridge
+extend right 13@bridge
+extend right 32@hotel 31@hotel 
+extend right 31@hotel
+extend left 29@hotel 28@hotel
+extend left 28@hotel
+extend right 5@arrow
 extend left 67@wonder 66@wonder
 extend right 9@wonder
 extend right 66@wonder
