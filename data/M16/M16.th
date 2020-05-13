@@ -213,6 +213,13 @@ survey M16 -title "M16 part of System Migovec"
 	join adder-1p@adder elephant-3p@elephant
 	join waterloo-1p@waterloo bosh-1p@bosh
 	join bridge-1e@bridge sajeta-3e@sajeta
+	join e1_l1@adder e1_l1@hotel
+	join e1_l2@adder e1_l2@hotel
+	join elephant-1e@elephant adder-1e@adder
+	join bosh-1e@bosh elephant-1e@elephant
+	join bosh-1e@bosh waterloo-1e@waterloo
+	join elephant-1e@elephant trunk-1e@trunk
+	join elephant-1e@elephant mousse-1e@mousse
 	
 	###__________1999____________###
 	

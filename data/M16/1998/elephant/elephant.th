@@ -9,6 +9,13 @@ map m-all-p -projection plan
     elephant-3p # 17 to 19
 endmap
 
+
+input elephant-e.th2
+
+map m-all-e -projection extended
+    elephant-1e
+endmap
+
 centreline
     team "Iain McKenna" insts
     team "Colm Carroll" notes
