@@ -11,6 +11,18 @@ survey sajeta -title "Sajeta"
 	
 	join sajeta-1p sajeta-2p
 	join sajeta-3p sajeta-2p
+
+input sajeta-e.th2
+
+map m-all-e -projection extended
+    sajeta-1e
+    sajeta-2e
+    sajeta-3e
+endmap
+
+join sajeta-1e sajeta-2e
+join sajeta-2e sajeta-3e
+
 	centreline
 		team "Michael Playford"
 		team "Sarah Wingrove" insts

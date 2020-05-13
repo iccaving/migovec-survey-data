@@ -14,6 +14,13 @@ survey hotel -title "Hotel Tolminka"
 	join hotel-1p hotel-2p
 	join hotel-2p hotel-4p
 	join hotel-3p hotel-4p
+
+input hotel-e.th2
+
+map m-all-e -projection extended
+    hotel-1e
+endmap
+
 	centreline
 		team "Alva Gosson" insts
 		team "James Hooper" notes
