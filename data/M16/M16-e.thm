@@ -4,7 +4,7 @@ map m-all-e -projection extended
 	m-entrance-e
 	m-level2-e
 	m-below_mig_country-e
-
+	m-northern_line-e
 endmap
 
 map m-level2-e -projection extended
@@ -49,6 +49,16 @@ map m-below_xxx-e -projection extended
 	m-all-e@sajeta
 	m-all-e@hotel
 endmap
+
+map m-northern_line-e -projection extended
+	m-all-e@adder
+	m-all-e@elephant
+	m-all-e@trunk
+	m-all-e@bosh
+	m-all-e@waterloo
+	m-all-e@mousse
+endmap
+
 centreline
 
 #extend left 8@entrance 7@entrance
@@ -129,6 +139,11 @@ extend right 2@adder
 extend left 1@elephant 2@elephant
 extend left 2@elephant
 extend left 10@waterloo
+extend left 1@mousse 2@mousse
+extend left 2@mousse
+extend right 3@mousse 4@mousse
+extend right 4@mousse
+extend right 12@elephant 13@elephant
 
 #M16 entrance
 extend right 10@entrance

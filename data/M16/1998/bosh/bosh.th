@@ -7,6 +7,13 @@ map m-all-p -projection plan
     bosh-1p
 endmap
 
+
+input bosh-e.th2
+
+map m-all-e -projection extended
+    bosh-1e
+endmap
+
 centreline
     team "Colm Carroll" insts
     team "James Hooper" notes
