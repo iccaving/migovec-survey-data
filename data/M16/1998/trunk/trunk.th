@@ -1,5 +1,12 @@
 
 survey trunk -title "continuing rift east off elephant chamber"
+
+input trunk-e.th2
+
+map m-all-e -projection extended
+    trunk-1e
+endmap
+
 centreline
     team "Colm Carroll" insts
     team "James Hooper" notes

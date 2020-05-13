@@ -9,6 +9,13 @@ map m-all-p -projection plan
     waterloo-3p
 endmap
 
+
+input waterloo-e.th2
+
+map m-all-e -projection extended
+    waterloo-1e
+endmap
+
 centreline
     team "Jim Evans" insts
     team "Iain McKenna" notes
