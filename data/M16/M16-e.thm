@@ -40,6 +40,9 @@ map m-galaktika-hydrant-e -projection extended
 	m-all-e@galact4
 	m-all-e@galact3
 	m-all-e@window
+	m-all-e@offhyd
+	m-all-e@hydrant
+	m-all-e@hydrant2
 endmap
 
 map m-below_xxx-e -projection extended
@@ -88,6 +91,8 @@ extend right 2@skalar2
 
 extend left 2@obelix
 
+extend left 2@offhyd 1@offhyd
+extend left 3@offhyd 2@offhyd
 extend left 7@polter 6@polter
 extend left 6@polter
 extend right 1@disillusion 2@disillusion

@@ -1,11 +1,18 @@
 
 survey hydrant -title "System Migovec"
+
+input hydrant-e.th2
+
+map m-all-e -projection extended
+    hydrant-1e
+endmap
+
 centreline
     team "Thomas Ayles" insts
     team "James Hooper" notes
-    explo-team "Thomas Ayles"
-    explo-team "James Hooper"
+    explo-team "JSPDT"
     date 1999.8.2
+    explo-date 1986
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
