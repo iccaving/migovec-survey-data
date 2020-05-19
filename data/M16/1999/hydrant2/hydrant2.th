@@ -1,5 +1,12 @@
 
 survey hydrant2 -title "System Migovec"
+
+input hydrant2-e.th2
+
+map m-all-e -projection extended
+    hydrant2-1e
+endmap
+
 centreline
     team "Jim Evans" insts
     team "Alva Gosson" notes
@@ -12,6 +19,9 @@ centreline
     2	1	12.25	035	82
     3	2	31.35	070	82	#3 IS AT BOTTOM OF PITCH PSS
     3	4	19.31	161	40
+    flags duplicate
+    3 rotting_communism 122.00 - DOWN # Artistic licence
+    flags not duplicate
 endcentreline
 endsurvey
 
