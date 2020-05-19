@@ -1,5 +1,12 @@
 
 survey batshita -title "System Migovec"
+
+input batshita-e.th2
+
+map m-all-e -projection extended
+    batshita-1e
+endmap
+
 centreline
     team "Jim Evans" insts
     team "James Hooper" notes

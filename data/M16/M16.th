@@ -167,6 +167,15 @@ survey M16 -title "M16 part of System Migovec"
 	join galact3-1e@galact3 window-1e@window
 	join carwash-1e@carwash xxx-1e@xxx
 	join sajeta-1e@sajeta xxx-1e@xxx
+	join batshit2-1e@batshit2 mower-1e@mower
+	join batshitb-1e@batshitb batshit2-1e@batshit2
+	join batshita-1e@batshita shordrop-1e@shordrop
+	join batshita-1e@batshita batshit1-1e@batshit1
+	join batshit1-1e@batshit1 batshitb-1e@batshitb
+	join woft-2e@woft hotline-1e@hotline
+	join woft-2e@woft shordrop-1e@shordrop
+	join woft-1e@woft batshita-1e@batshita
+	join woft-1e@woft shordrop-1e@shordrop
 	###__________1998____________###
 	
 	input ./1998/waffles/waffles.th
@@ -258,6 +267,9 @@ survey M16 -title "M16 part of System Migovec"
 	join offhyd-1e@offhyd hydrant-1e@hydrant
 	join offhyd-2e@offhyd hydrant-1e@hydrant
 	join hydrant-1e@hydrant tamoka-1e@tamoka
+	join spiny-1e@spiny dinsdale-1e@dinsdale 
+	join spiny-1e@spiny brezno-1e@brezno
+	join frogshit-1e@frogshit batshit1-1e@batshit1
 	
 	
 	###__________2000____________###
