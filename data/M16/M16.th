@@ -3,7 +3,6 @@ survey M16 -title "M16 part of System Migovec"
 	input M16-e.thm
 	input M16-p.thm
 	
-	
 	###__________1996____________###
 	
 	input "./1996/entrance/entrance.th"
@@ -254,6 +253,11 @@ survey M16 -title "M16 part of System Migovec"
 	equate 1@hydrant 3@tamoka
 	equate 13@hydrant 4@offhyd
 	equate 3@hydrant 9@offhyd
+
+	join hydrant-1e@hydrant hydrant2-1e@hydrant2
+	join offhyd-1e@offhyd hydrant-1e@hydrant
+	join offhyd-2e@offhyd hydrant-1e@hydrant
+	join hydrant-1e@hydrant tamoka-1e@tamoka
 	
 	
 	###__________2000____________###

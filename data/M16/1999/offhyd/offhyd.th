@@ -1,5 +1,13 @@
 
 survey offhyd -title "System Migovec"
+
+input offhyd-e.th2
+
+map m-all-e -projection extended
+    offhyd-1e
+    offhyd-2e
+endmap
+
 centreline
     team "Jim Evans" insts
     team "James Hooper" notes
