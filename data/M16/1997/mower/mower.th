@@ -1,5 +1,12 @@
 
 survey mower -title "System Migovec"
+
+input mower-e.th2
+
+map m-all-e -projection extended
+    mower-1e
+endmap
+
 centreline
     team "Mark Evans" insts
     team "James Hooper" notes

@@ -5,6 +5,11 @@ encoding  utf-8
 
 scrap hotline-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
+line wall -subtype invisible
+  -391.4435 75.1183
+  -351.4772 75.494
+endline
+
 point -48.2108 124.2617 label -text Hotline -align t -scale l
 line wall -close on -outline in
   165.1694 115.9547
@@ -139,8 +144,13 @@ endline
 line wall -subtype blocks
   -438.73 75.6
   -413.1635 74.4222
-  -383.6346 72.7417
-  -352.6654 76.3428
+  -395.8063 75.8478
+  -391.4434 75.1183
+endline
+
+line wall -subtype blocks
+  -351.4771 75.494
+  -346.6269 76.0419
   -315.6943 72.0216
   -308.012 70.8212
   -308.012 70.8212 -301.05 68.4204 -299.8496 67.9403

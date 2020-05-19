@@ -1,5 +1,12 @@
 
 survey batshit1 -title "System Migovec"
+
+input batshit1-e.th2
+
+map m-all-e -projection extended
+    batshit1-1e
+endmap
+
 centreline
     team "Jim Evans" insts
     team "Michael Playford" notes

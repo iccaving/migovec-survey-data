@@ -1,5 +1,12 @@
 
 survey spiny -title "System Migovec"
+
+input spiny-e.th2
+
+map m-all-e -projection extended
+    spiny-1e
+endmap
+
 centreline
     team "Clewin Griffith" insts
     team "Bruce Drinkwater" notes
