@@ -29,6 +29,15 @@ map m-entrance-e -projection extended
 	m-all-e@entrance
 	m-all-e@hotline
 	m-all-e@brezno
+	m-all-e@woft
+    m-all-e@batshit2
+    m-all-e@batshit1
+    m-all-e@frogshit
+    m-all-e@batshita
+    m-all-e@batshitb
+	m-all-e@dinsdale
+	m-all-e@spiny
+	m-all-e@mower
 endmap
 
 map m-galaktika-hydrant-e -projection extended
@@ -77,6 +86,11 @@ extend right 1@level2n 2@level2n
 extend right 2@level2n
 extend left 0@migcondown 1@migcondown
 extend left 1@migcondown
+
+extend right 1@spiny 2@spiny 
+extend right 2@spiny
+extend left 4@spiny 5@spiny 
+extend left 5@spiny 
 
 extend right 7@exhib 6@exhib
 extend right 6@exhib
@@ -154,8 +168,6 @@ extend right 12@elephant 13@elephant
 extend right 10@entrance
 extend right 4@woft 3@woft
 extend left 3@woft
-extend left 1@spiny 2@spiny
-extend left 2@spiny
 extend right 1@dinsdale
 extend left 11@dinsdale
 extend right 12@goodbag 11@goodbag

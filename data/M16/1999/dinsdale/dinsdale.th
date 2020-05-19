@@ -1,5 +1,12 @@
 
 survey dinsdale -title "System Migovec"
+
+input dinsdale-e.th2
+
+map m-all-e -projection extended
+    dinsdale-1e
+endmap
+
 centreline
     team "Michael Rogerson" insts
     team "Thomas Ayles" notes
