@@ -1,4 +1,3 @@
-
 survey consort -title "PRINCE CONSORT ROAD"
 	
 	input consort-p.th2
@@ -7,16 +6,15 @@ survey consort -title "PRINCE CONSORT ROAD"
 		consort-2p
 		consort-1p
 	endmap
-
+	
 	join consort-2p consort-1p
 	
-
-input consort-e.th2
-
-map m-all-e -projection extended
-    consort-1e
-endmap
-
+	input consort-e.th2
+	
+	map m-all-e -projection extended
+		consort-1e
+	endmap
+	
 	centreline
 		team "Andy Jurd" insts
 		team "Gergely Ambrus" notes
