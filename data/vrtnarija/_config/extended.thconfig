@@ -1,3 +1,4 @@
+encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
@@ -6,7 +7,6 @@
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
@@ -17,14 +17,15 @@ input "../../_layouts/mods.thl"
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
 
-#source
-#	map include-centerline -projection extended
-#		vrtnarija
-#		m-all-e@vrtnarija
-#	endmap
-#endsource
-#select include-centerline
-select m-entrance-e@vrtnarija
+# source
+# 	map include-centerline -projection extended
+# 		vrtnarija
+# 		m-all-e@vrtnarija
+# 	endmap
+# endsource
+# select include-centerline
+select m-all-e@vrtnarija
+
 
 
 layout ee
