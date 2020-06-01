@@ -14,6 +14,7 @@ map m-all-p -projection plan -title "Vrtnarija"
 	m-below_stuck_in_paradise-p
 	m-beyond_atlantis-p
 	m-cuckoos_nest-p
+	m-beyond_xanadu-p
 endmap
 
 ## SUBMAPS ##
@@ -73,6 +74,7 @@ map m-below_zimmer-p -projection plan
 	m-all-p@whitebishop
 	m-all-p@stalemate
 	m-all-p@sidewinder
+	m-all-p@crack_in_time
 endmap
 
 map m-below_big_rock-p -projection plan
@@ -216,4 +218,9 @@ endmap
 map m-cuckoos_nest-p -projection plan
 	m-all-p@cuckoos_nest
 	m-all-p@pushyourluck
+endmap
+
+map m-beyond_xanadu-p -projection plan
+	m-all-p@xanadu
+	m-all-p@euphrates2
 endmap
