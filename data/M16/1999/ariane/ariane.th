@@ -1,5 +1,12 @@
 
 survey ariane -title "Ariane 5"
+
+input ariane-e.th2
+
+map m-all-e -projection extended
+    ariane-1e
+endmap
+
 centreline
     team "Thomas Ayles" insts
     team "Michael Rogerson" notes

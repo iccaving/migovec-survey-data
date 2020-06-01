@@ -1,6 +1,8 @@
 ## MASTER MAP ##
 map m-all-e -projection extended
 	m-entrance-e
+	m-cheetah-e
+	m-beyond-consort-e
 endmap
 
 map m-entrance-e -projection extended
@@ -23,6 +25,15 @@ map m-entrance-e -projection extended
 	m-all-e@skynet
 	m-all-e@zimmer
 endmap
+
+map m-cheetah-e -projection extended
+	m-all-e@wonderland
+endmap
+
+map m-beyond-consort-e -projection extended
+	m-all-e@consort
+endmap
+
 
 centreline
 	# Entrance series
@@ -124,6 +135,10 @@ centreline
 	extend left 2@peepshow
 	extend right 13@why_the_face
 	
+	# Snap off wrong way in consort
+	extend ignore 17@consort
+	extend ignore 2@ouroboros
+	
 	# Below Stuck In Paradise
 	extend left 21@kneekiller
 	extend right 5@bravenewworld
@@ -146,4 +161,5 @@ centreline
 	extend right 3@dreamsforthesoul
 	extend left 1@dreamsforthesoul
 	
+	# Entrance series
 endcentreline
