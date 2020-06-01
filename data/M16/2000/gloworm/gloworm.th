@@ -1,5 +1,12 @@
 
 survey gloworm -title "Paradiso series, Bear Necessities and passages below"
+
+input gloworm-e.th2
+
+map m-all-e -projection extended
+    gloworm-1e
+endmap
+
 centreline
     team "Hillary Greaves" insts
     team "Pete Jurd" notes
