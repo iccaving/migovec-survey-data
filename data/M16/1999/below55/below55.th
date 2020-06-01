@@ -1,5 +1,12 @@
 
 survey below55 -title "Paradiso series below 55 metre freehang (big pitch below paradiso)"
+
+input below55-e.th2
+
+map m-all-e -projection extended
+    below55-1e
+endmap
+
 centreline
     team "Alva Gosson" insts
     team "Jim Evans" insts
@@ -7,7 +14,7 @@ centreline
     explo-team "Alva Gosson"
     explo-team "Jim Evans"
     explo-team "James Hooper"
-    date 1999.09.09
+    date 1999.08.09
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
