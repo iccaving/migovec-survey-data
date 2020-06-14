@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap cuckoos_nest-2p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
+scrap cuckoos_nest-2p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line wall -close on -outline in
   -85.4655 -324.3369
@@ -15,7 +15,7 @@ line wall -close on -outline in
   -93.3879 -301.5301 -85.4655 -323.1366 -85.4655 -324.3369
 endline
 
-point -13.2039 -160.1279 label -text "Cuckooo's Nest" -align r -scale l
+point -13.2039 -160.1279 label -align r -scale l -text "Cuckoo's Nest"
 line wall 
   178.9232 -349.5283
   178.9232 -349.5283 176.0373 -333.8259 171.9632 -332.7225
@@ -139,7 +139,7 @@ point 175.35 -352.87 station -name 1
 endscrap
 
 
-scrap cuckoos_nest-1p -scale [0 0 90 0 0 0 250 0 inch]
+scrap cuckoos_nest-1p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall 
   -135.1592 -31.4903
