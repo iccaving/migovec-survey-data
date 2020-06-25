@@ -1,16 +1,34 @@
 encoding  utf-8
 source planika.th
 
-input ../_layouts/layout_tanguy_basic_1.th
-input ../_layouts/layout_tanguy_basic_2.th
+input ../_layouts/detailed-p.thl
+input ../_layouts/detailed-e.thl
 
 select  m-planika-e@planika
 
-export map -o planika_extended.pdf -projection extended -layout map2
+layout local-e
+	copy detailed-e
+	scale 1 500
+	symbol-hide line survey
+	symbol-hide point station
+	map-comment "Cadastral Number: 8953"
+	symbol-hide line arrow
+	symbol-hide point remark
+	symbol-hide point station-name
+	symbol-colour line border [0 70 90]
+	code tex-map
+	    \def\maplayout{
+	  \legendbox{1}{120}{SW}{\size[15]\the\cavename}
+	  \legendbox{1}{112}{SW}{\the\comment}
+	  }
+	 endcode
+endlayout
+
+export map -o planika_extended.pdf -projection extended -layout local-e
 
 select m-planika-p@planika
 
-export map -o planika_plan.pdf -projection plan -layout map1
+export map -o planika_plan.pdf -projection plan -layout local-p
 
 export model -o planika_resurv.3d -fmt survex
 

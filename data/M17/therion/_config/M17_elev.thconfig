@@ -1,16 +1,27 @@
 encoding  utf-8
-source ../xtherion/M17.th
+source ../../M17.th
 
-input ../layout/map2.th
-input ../layout/map1.th
-input ../layout/overviewmap.th
+input ../../../_layouts/detailed-p.thl
+input ../../../_layouts/detailed-e.thl
 
 select  m-17-full-e@M17
 
 #export map -projection extended -o ../outputs/M17_extended.pdf -layout map2 -layout-debug station-names
 
-export map -projection extended -o ../outputs/M17_extended_overview.pdf -layout overview
+layout local-e
+	copy detailed-e
+	scale 1 500
+
+	symbol-hide line survey
+	symbol-hide point station
+	symbol-hide point station-name
+	symbol-hide point remark
+	symbol-colour line border [0 70 90]
+
+endlayout
+
+export map -projection extended -o ../M17_extended_overview.pdf -layout local-e 
 
 #export model -o "../outputs/M17.lox"
 
-#export model -o "../outputs/M17_survex.3d" -fmt survex
+export model -o "../M17_survex.3d" -fmt survex

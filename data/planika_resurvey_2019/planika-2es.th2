@@ -16,18 +16,18 @@ line wall -subtype invisible
 endline
 
 line arrow 
-  340.0 406.0
+  342.355 337.7043
   608.0 413.0
 endline
 
-point 329.0 408.0 remark -text "Snow levels 06/19" -align l -scale xs
-point 311.0 625.0 remark -text "Snow levels 08/08" -align l -scale xs
+point 329.0 328.0 remark -text "Snow levels 06/19" -align l -scale s
+point 311.0 625.0 remark -text "Snow levels 08/08" -align l -scale s
 line arrow 
   325.0 625.0
   546.0 617.0
 endline
 
-line wall -subtype presumed -outline none
+line u:snowlevel_MY
   521.0 355.0
   519.0 515.0
   519.0 515.0 547.0 618.0 562.0 629.0
@@ -50,7 +50,7 @@ line wall -close on -outline in
   1052.0 824.0
 endline
 
-point 333.0 1964.0 label -text "Entrance pitch (P37)" -align tl -scale s
+point 385.0 2046.0 label -text "Entrance pitch (P37)" -align tl -scale s
 line wall 
   988.27 1123.36
   977.66 1119.92 970.87 1110.82 967.67 1105.65

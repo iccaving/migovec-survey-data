@@ -6,7 +6,7 @@
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-survey m2m16m18 -title "Sistem Migovec (the Old System)"
+survey m2m16m18 -title "Sistem Migovec (the Old System)" -attr cadastral_n 6001
 	input "./m2m16m18-p.thm"
 	input "./m2m16m18-e.thm"
 	
