@@ -27,7 +27,9 @@ layout base-e
 	scale 1 2000
 	#symbol-hide group all
 	min-symbol-scale M
-	
+	grid bottom
+  	grid-size 10 10 10 m
+  	grid-coords border
 	
 	
 	code metapost
@@ -36,6 +38,19 @@ layout base-e
 		#                            LEGEND ITEMS                     |
 		#_____________________________________________________________|
 		
+
+		# VERTICAL GRID less obnoxious
+
+		def s_vgrid (expr xpos, ypos, xsize, ysize) =
+		pickup PenB;
+		  if xpos < 0: draw (-10, if ypos <0: 0 else: -ysize/2 fi) -- (-10,if ypos >0: 0 else: ysize/2 fi)  fi;
+		  if xpos < 0: draw (-10,0) -- (0,0) fi;
+		  pickup PenD;
+		  draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 3;
+
+		  
+		enddef;
+
 		# NORTH ARROW (contributions of Thomas Holder)
 		
 		def s_northarrow (expr rot) =

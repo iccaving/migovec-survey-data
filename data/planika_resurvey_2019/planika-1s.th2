@@ -191,12 +191,12 @@ line wall
   132.0 1327.0
 endline
 
-line wall -subtype presumed -outline none
+line u:snowlevel_MY 
   794.06 863.74
   794.06 863.74 958.72 564.26 1074.86 497.63
 endline
 
-line wall -subtype presumed -outline none
+line u:snowlevel_MY 
   205.0 1015.0
   205.0 1015.0 306.0 1086.0 316.0 1090.0
   326.0 1094.0 431.0 1078.0 431.0 1078.0
@@ -297,7 +297,7 @@ line border -id l62-76-192
 endline
 
 line arrow 
-  688.0 1277.0
+  800.1409 1386.7717
   692.0 1027.0
 endline
 
@@ -307,11 +307,11 @@ line arrow
 endline
 
 line arrow 
-  1199.0 146.0
+  1197.3247 119.1959
   1117.0 220.0
 endline
 
-point 1204.0 133.0 remark -text "5 m unsurveyed<br>ice igloo" -align r -scale xs
+point 1204.0 107.0 remark -text "5 m unsurveyed<br>ice igloo" -align r -scale s
 line wall -close on -outline in
   1257.0 344.0
   1277.0 336.0
@@ -323,8 +323,8 @@ line wall -close on -outline in
   1257.0 344.0
 endline
 
-point 693.0 1285.0 remark -text "bridge to Acre Lane<br>inaccessible 19/06/19" -align tr -scale xs
-point 1315.0 683.0 remark -text "granular snow cone" -align r -scale xs
+point 813.0 1405.0 remark -text "bridge to Acre Lane<br>inaccessible 19/06/19" -align tr -scale s
+point 1315.0 683.0 remark -text "granular snow cone" -align r -scale s
 line rock-border -close on
   867.25 729.75
   872.75 733.75

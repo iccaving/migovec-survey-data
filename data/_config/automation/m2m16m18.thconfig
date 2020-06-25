@@ -59,8 +59,8 @@ language en
 
 source 
 map local-e -projection extended
-	m-all-e@m2m16m18
-	M16@m2m16m18
+	m-all-e@m2m16m18 [10 0 m] none
+	M16@m2m16m18 [10 0 m] none
 endmap
 
 endsource
@@ -71,14 +71,16 @@ layout ee
 	copy base-e
 	copy colour-by-new
 	scale 1 2000
+	grid-size 10 10 50 m
 	copy show-centreline
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
 	code tex-map
-	\framethickness=0.5mm
 	\def\maplayout{
-	\legendbox{55}{105}{NE}{\size[26]\the\cavename}
-	\legendbox{-35}{95}{N}{\size[10]\the\comment}
-	\legendbox{-32}{67}{N}{\scalebar}
+	\legendbox{80}{99}{NW}{\the\cavename}
+	\legendbox{80}{97}{NW}{\size[10]\the\comment}
+	\legendbox{80}{80}{NW}{\scalebar}
+	\legendbox{80}{87}{NW}{\size[10]{\sl Depth:} \the\cavedepth}
+	\legendbox{80}{85}{NW}{\size[10]{\sl Length:} \the\cavelength}
 	}
 endlayout
 

@@ -5,6 +5,7 @@ encoding  utf-8
 
 scrap M17-3s -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 
+point 3419.7102 4548.2683 u:logger_MY -scale m
 line wall -subtype presumed -outline none -clip off
   3496.0487 5695.013
   3460.9117 5306.0147
@@ -602,7 +603,7 @@ line wall
   3799.3001 4931.5148 3664.0904 5007.8775 3628.6567 5040.3105
 endline
 
-line u:oldsnow_MY 
+line u:snowlevel_MY 
   5263.01 6091.93
   5263.01 6091.93 5358.0 6298.0 5374.0 6326.0
   5390.0 6354.0 5534.0 6486.0 5588.0 6474.0
@@ -611,7 +612,7 @@ line u:oldsnow_MY
   5986.0 6374.0 6012.0 6234.0 6040.0 6214.0
 endline
 
-line u:oldsnow_MY 
+line u:snowlevel_MY 
   3342.7897 4366.1309
   3342.7897 4366.1309 4312.5286 4701.8644 4484.5286 4899.8644
 endline
