@@ -3,8 +3,11 @@ source M15.th
 export model -o M15.3d
 
 input ../../_layouts/detailed-p.thl
+input ../../_layouts/detailed-e.thl
 
 layout local_plan
+	symbol-hide line survey
+	symbol-hide point station
 	copy detailed
 	map-header  40 100 off
 	legend off
@@ -13,9 +16,23 @@ endlayout
 export map -o M15_plan.pdf -layout local_plan
 
 layout local_ee
-	copy detailed
-	map-comment "Snow pit of the Migovec Plateau<br>Cadastral Number: 4631"
-	map-image 105 25 sw M15_plan.pdf
+	copy detailed-e
+	symbol-hide line survey
+	symbol-hide point station
+	map-comment "Cadastral Number: 4631"
+	symbol-hide line arrow
+	symbol-hide point remark
+	symbol-hide point station-name
+	symbol-colour line border [0 70 90]
+
+	code tex-map
+	    \def\maplayout{
+	  \legendbox{1}{110}{SW}{\size[15]\the\cavename}
+	  \legendbox{1}{105}{SW}{\the\comment}
+	  }
+	 endcode
+
+	 scale 1 500
 endlayout
 
 export map -o M15_extended.pdf -layout local_ee -projection extended

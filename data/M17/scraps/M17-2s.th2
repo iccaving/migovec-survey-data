@@ -5,7 +5,9 @@ encoding  utf-8
 
 scrap M17-2s -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 
-point 1729.0241 5500.5766 label -text "logger 73" -align tr -scale l
+point 44.7841 5390.2085 remark -text "snow-height October 2018" -align l -scale s
+point 66.2804 6015.3941 remark -text "snow-height July 2019" -align l -scale s
+point 1751.024 5648.5767 label -text "logger 73" -align tr -scale l
 line border 
   2582.7693 4206.659
   2582.7693 4206.659 2728.438 4117.991 2766.4385 4105.324
@@ -4181,7 +4183,6 @@ line arrow
   1530.719 5230.7775
 endline
 
-point 1712.0 5486.0 remark -text "logger 473" -align tr -scale xl
 point 1173.3423 5315.8672 water-flow -orientation 180.0
 line u:texture_MY 
   1218.1263 8906.6526
@@ -4226,9 +4227,7 @@ line u:texture_MY
   1107.0618 8469.5603 1131.2452 8459.7078 1131.2452 8459.7078
 endline
 
-point 1512.0 5218.0 u:logger_MY -scale xl
-point 180.0 5344.0 remark -text "snow height october 2018" -align l -scale xl
-point 144.0 6038.0 remark -text "snow height june 2019" -align l -scale xl
+point 1512.0 5218.0 u:logger_MY -scale m
 line wall 
   212.93 9268.73
   212.93 9268.73 235.6088 9254.669 245.99 9246.34
@@ -4472,7 +4471,7 @@ line wall
   984.27 6851.23
 endline
 
-line u:oldsnow_MY 
+line u:snowlevel_MY 
   297.43 6034.37
   297.43 6034.37 390.0 6062.0 402.0 6078.0
   414.0 6094.0 444.0 6110.0 456.0 6110.0
