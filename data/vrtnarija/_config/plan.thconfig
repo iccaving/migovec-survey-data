@@ -29,7 +29,7 @@ input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-all-p@vrtnarija
+select m-beyond_xanadu-p@vrtnarija
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
@@ -38,6 +38,7 @@ layout plan
 	copy base-p
 	map-header 0 0 off
 	scale 1 2000
+	symbol-show point water-flow
 endlayout
 
 #language fr
