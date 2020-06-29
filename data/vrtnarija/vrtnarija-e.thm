@@ -48,6 +48,9 @@ centreline
 	extend left 13@laurel
 	extend right 2@zimmer
 	extend right 11@banzai
+
+	extend right 1@hardy 2@hardy
+	extend right 2@hardy
 	
 	# Ensure main line is down Laurel not Vil
 	extend ignore 15@judge
@@ -130,9 +133,22 @@ centreline
 	# Cheetah and beyond
 	extend right 28@kamikaze
 	extend right 13@wonderland 12@wonderland
-	extend left 12@wonderland
+	extend left 12@wonderland 11@wonderland
+	extend left 3@wonderland
+	extend left 5@wonderland 4@wonderland
+	extend right 4@wonderland 3@wonderland
 	extend right 3@wonderland
+	extend left 5@wonderland 6@wonderland
 	extend left 7@rolling
+	extend left 22@consort 23@consort
+	extend left 9@consort 10@consort
+	extend left 12@consort 15@consort
+	extend right 15@consort 16@consort
+	extend right 16@consort 17@consort
+	extend left 14@consort 17@consort
+	extend left 7@consort 6@consort
+	extend left 6@consort 3@consort
+	extend left 3@consort 1@consort
 	extend left 3@redbaron
 	extend right 5@stuckinparadise
 	extend right 7@hotpants
@@ -140,7 +156,15 @@ centreline
 	extend right 6@peepshow
 	extend left 2@peepshow
 	extend right 13@why_the_face
-	
+	extend left 3@consort 4@consort
+	extend left 4@consort 5@consort
+	extend left 1@consort 2@consort
+	extend left 7@consort 8@consort
+
+	extend right 4@palace2 3@palace2
+	extend left 3@palace2 2@palace2
+	extend left 2@palace2 1@palace2
+
 	# Snap off wrong way in consort
 	extend ignore 17@consort
 	extend ignore 2@ouroboros
