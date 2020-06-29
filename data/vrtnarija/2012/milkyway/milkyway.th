@@ -1,28 +1,28 @@
-
 survey milkyway -title "Milky Way"
-
-input milkyway-e.th2
-
-map m-all-e -projection extended
-    milkyway-1e
-endmap
-
-
-input milkyway-p.th2
-
-map m-all-p -projection plan
-    milkyway-1p
-    milkyway-2p
-    milkyway-3p
-    milkyway-4p
-    milkyway-5p
-endmap
-
+	
+	input milkyway-e.th2
+	
+	map m-all-e -projection extended
+		milkyway-1e
+		break
+		milkyway-2e
+	endmap
+	
+	input milkyway-p.th2
+	
+	map m-all-p -projection plan
+		milkyway-1p
+		milkyway-2p
+		milkyway-3p
+		milkyway-4p
+		milkyway-5p
+	endmap
+	
 	join milkyway-2p milkyway-1p
 	join milkyway-2p milkyway-3p
 	join milkyway-3p milkyway-4p
 	join milkyway-4p milkyway-5p
-
+	
 	centreline
 		team "Sam Page" insts
 		team "Clare Tan" notes

@@ -1,5 +1,19 @@
 
 survey titanic -title "System Migovec"
+
+input titanic-p.th2
+
+map m-all-p -projection plan
+    titanic-1p
+endmap
+
+
+input titanic-e.th2
+
+map m-all-e -projection extended
+    titanic-1e
+endmap
+
 centreline
     team "Clewin Griffith" insts
     team "Oliver Mann" notes
