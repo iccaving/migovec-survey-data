@@ -1,5 +1,12 @@
 
 survey skalar -title "Skalar extensions off exhibition road"
+
+input skalar-e.th2
+
+map m-all-e -projection extended
+    skalar-1e
+endmap
+
 centreline
     team "Jim Evans" insts
     team "Jim Evans" notes

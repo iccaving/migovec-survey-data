@@ -176,6 +176,11 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join woft-2e@woft shordrop-1e@shordrop
 	join woft-1e@woft batshita-1e@batshita
 	join woft-1e@woft shordrop-1e@shordrop
+	join l1@titanic:0 l1@migcon:end
+	join l1@titanic:end l1@migcon:0
+	join l2@titanic l2@migcon
+	join l3@titanic l3@migcon
+
 	###__________1998____________###
 	
 	input ./1998/waffles/waffles.th
@@ -228,6 +233,10 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join bosh-1e@bosh waterloo-1e@waterloo
 	join elephant-1e@elephant trunk-1e@trunk
 	join elephant-1e@elephant mousse-1e@mousse
+	join titanic-1e@titanic olympic-1e@olympic
+	join olympic-1e@olympic maiden-1e@maiden
+
+
 	
 	###__________1999____________###
 	

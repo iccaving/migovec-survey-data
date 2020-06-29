@@ -42,18 +42,38 @@ layout plan
 endlayout
 language fr
 #export model -o ../../_outputs/system_migovec.lox
-export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.pdf -layout plan
-export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.svg -layout plan
+#export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.pdf -layout plan
+#export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.svg -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view, using the LAYOUT overview2
-#language fr
-#export map -projection extended -o ../../_outputs/map/system_migovec_overview_elevation_SLO.pdf -layout overview_elevation
+language sl
+
+select m-all-e@system_migovec
+
+layout ee
+	copy base-e
+	copy colour-by-new
+	scale 1 2000
+	grid-size 10 10 100 m
+	copy show-centreline
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
+	code tex-map
+	\def\maplayout{
+	\legendbox{80}{99}{NW}{\the\cavename}
+	\legendbox{80}{97}{NW}{\size[10]\the\comment}
+	\legendbox{80}{80}{NW}{\scalebar}
+	\legendbox{80}{87}{NW}{\size[10]{\sl Depth:} \the\cavedepth}
+	\legendbox{80}{85}{NW}{\size[10]{\sl Length:} \the\cavelength}
+	}
+endlayout
+
+export map -projection extended -o ../../_outputs/map/system_migovec_overview_elevation_SLO.pdf -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/system_migovec.3d
+#export model -o ../../_outputs/system_migovec.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-export model -o ../../_outputs/system_migovec.lox
+#export model -o ../../_outputs/system_migovec.lox
