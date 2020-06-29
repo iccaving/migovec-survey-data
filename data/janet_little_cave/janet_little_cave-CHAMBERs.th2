@@ -5,6 +5,99 @@ encoding  utf-8
 
 scrap janet_little_cave-CHAMBERs -scale [0 0 39 0 0 0 1 0 m] -projection extended
 
+point 105.2688 1138.3852 station-name -text 22 -align t -scale xs
+point 143.272 1142.7556 station-name -text 21 -align t -scale xs
+point 265.8322 1080.0503 station-name -text 20 -align t -scale xs
+point 555.2264 939.3902 map-connection 
+point 603.0493 970.4015 station-name -text 15 -align tr -scale xs
+point 115.9097 977.0617 station-name -text 19 -align l -scale xs
+point 170.66 955.13 station-name -text 18 -align b -scale xs
+point 257.581 1008.5045 station-name -text 17 -align t -scale xs
+point 427.5358 979.3419 station-name -text 16 -align t -scale xs
+line rock-border -close on
+  279.2 979.7
+  273.066 972.4226
+  266.932 965.1452
+  266.932 965.1452
+  266.932 965.1452
+  271.6075 963.1228
+  276.2831 961.1004
+  282.4626 961.7742
+  288.6421 962.448
+  288.5431 966.9046
+  288.4441 971.3612
+  283.8221 975.5306
+endline
+
+line rock-border -close on
+  255.7614 976.6817
+  250.631 977.2517
+  245.5005 977.8218
+  224.9788 977.4417
+  204.4571 977.0617
+  204.0544 972.793
+  203.6518 968.5243
+  208.9618 968.6948
+  214.2718 968.8654
+  233.4965 964.9829
+  252.7211 961.1004
+  254.2413 968.891
+endline
+
+line rock-border -close on
+  330.0949 960.3436
+  325.4208 966.2324
+  320.7468 972.1213
+  320.7468 972.1213 319.0367 973.6414 316.6615 975.114
+  314.2863 976.5867 311.246 978.0118 308.5858 977.8218
+  305.9256 977.6318 302.6953 976.9667 300.1301 976.3492
+  297.5649 975.7316 295.6647 975.1616 295.6647 975.1616
+  297.0499 969.0944
+  298.435 963.0272
+  308.2608 958.6435
+  318.0866 954.2598
+  324.0907 957.3017
+endline
+
+line rock-border -close on
+  426.0156 963.7606
+  416.0238 971.4975
+  406.0319 979.2345
+  384.2911 981.1884
+  362.5503 983.1422
+  362.5503 983.1422 359.7951 982.0021 356.7548 980.672
+  353.7146 979.3419 350.3893 977.8218 349.2492 977.0617
+  348.1091 976.3016 346.779 973.2614 345.7339 970.4111
+  344.6888 967.5609 343.9288 964.9007 343.9288 964.9007
+  343.9288 964.9007 345.4236 963.763 347.1667 962.6312
+  348.9098 961.4994 350.9011 960.3735 351.894 960.3968
+  352.8869 960.4202 370.2772 959.2659 387.4193 958.1059
+  404.5614 956.9458 421.4552 955.7799 421.4552 955.7799
+  423.7354 959.7703
+endline
+
+line rock-border -close on
+  536.9849 966.0408
+  532.9946 969.8411
+  529.0042 973.6414
+  525.1021 975.6707
+  521.2 977.7
+  509.7108 976.8108
+  498.2217 975.9216
+  495.1814 970.4112
+  492.1412 964.9007
+  496.5205 960.24
+  500.8998 955.5792
+  516.2821 957.5797
+  531.6645 959.5803
+  534.3247 962.8105
+endline
+
+point 471.9995 855.8316 station-name -text 25 -align l -scale xs
+point 546.8514 855.3455 station-name -text 24 -align t -scale xs
+point 627.1996 842.4468 station-name -text 23 -align tr -scale xs
+point 608.389 801.3321 station-name -text 26 -align tr -scale xs
+point 738.9718 772.9846 station-name -text 27 -align tr -scale xs
 line wall -close on -outline in
   505.1993 955.0417
   520.7853 964.1783
@@ -145,7 +238,6 @@ line wall -subtype blocks
 endline
 
 point 774.2 751.7 breakdown-choke -scale xs
-point 132.2 606.7 label -text "EXTENDED ELEVATION" -align br -scale xl
 line u:texture_MY 
   633.2 1069.7
   736.2 1051.7
@@ -184,11 +276,11 @@ line u:texture_MY
   406.0319 979.2345
 endline
 
-point 435.2 719.7 label -text "Bedding Chamber" -align br
+point 715.2 999.7 label -text "Bedding Chamber" -align br
 point 593.22 967.16 station -name 15
 point 427.38 973.86 station -name 16
 point 256.32 1003.41 station -name 17
-point 170.66 967.13 station -name 18
+point 170.0917 966.5632 station -name 18
 point 122.74 971.72 station -name 19
 point 265.53 1075.91 station -name 20
 point 143.36 1138.61 station -name 21

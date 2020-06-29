@@ -4,7 +4,7 @@ source ../../M17.th
 input ../../../_layouts/detailed-p.thl
 input ../../../_layouts/detailed-e.thl
 
-select  m-17-full-e@M17
+select  m-all-e@M17
 
 #export map -projection extended -o ../outputs/M17_extended.pdf -layout map2 -layout-debug station-names
 
@@ -18,6 +18,15 @@ layout local-e
 	symbol-hide point remark
 	symbol-colour line border [0 70 90]
 
+    map-comment "Cadastral Number: 4631"
+
+
+	code tex-map
+	    \def\maplayout{
+	  \legendbox{1}{110}{SW}{\size[15]\the\cavename}
+	  \legendbox{1}{105}{SW}{\the\comment}
+	  }
+	 endcode
 endlayout
 
 export map -projection extended -o ../M17_extended_overview.pdf -layout local-e 
