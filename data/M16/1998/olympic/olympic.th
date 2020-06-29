@@ -1,5 +1,12 @@
 
 survey olympic -title "pitches following on from below Britanic"
+
+input olympic-e.th2
+
+map m-all-e -projection extended
+    olympic-1e
+endmap
+
 centreline
     team "Phil Brooks" insts
     team "Sarah Wingrove" notes

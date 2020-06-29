@@ -71,7 +71,7 @@ layout ee
 	copy base-e
 	copy colour-by-new
 	scale 1 2000
-	grid-size 10 10 50 m
+	grid-size 10 10 100 m
 	copy show-centreline
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
 	code tex-map
@@ -83,8 +83,6 @@ layout ee
 	\legendbox{80}{85}{NW}{\size[10]{\sl Length:} \the\cavelength}
 	}
 endlayout
-
-
 
 language sl # slo not yet supported
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_SLO.pdf -layout ee 

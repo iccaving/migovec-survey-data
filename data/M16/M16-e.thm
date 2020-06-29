@@ -6,6 +6,7 @@ map m-all-e -projection extended
 	m-below_paradiso-e
 	m-below_mig_country-e
 	m-northern_line-e
+	m-titanic_branch-e
 endmap
 
 map m-level2-e -projection extended
@@ -80,6 +81,16 @@ map m-below_paradiso-e -projection extended
 	m-all-e@below55
 	m-all-e@gloworm
 	m-all-e@penelope
+endmap
+
+map m-titanic_branch-e -projection extended
+	m-all-e@titanic
+	m-all-e@olympic
+	m-all-e@maiden
+endmap
+
+map m-gauls_branch-e -projection extended
+	m-all-e@skalar
 endmap
 
 centreline
