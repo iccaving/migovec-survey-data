@@ -5,11 +5,13 @@ encoding  utf-8
 
 scrap M17-1s -scale [0 0 100 0 0 0 1 0 m] -projection extended
 
-point 1841.579 6357.7246 label -text "logger 75" -align t -scale l
+point 1841.579 6357.7246 label -text "logger 75" -align t -scale s
 line wall -subtype invisible
   2516.4146 2375.2923
   3496.2894 2498.8965
 endline
+
+point 1841.579 5857.7246 u:logger_MY -scale m
 
 line wall:invisible -close on -outline in
   2016.561 5394.8088

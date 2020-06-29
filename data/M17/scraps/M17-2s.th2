@@ -5,9 +5,10 @@ encoding  utf-8
 
 scrap M17-2s -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 
+point 1782.2248 5717.813 label -text "logger 73" -align tr -scale s
+point 457.1422 8673.1862 label -text "Entrance shaft (P40)" -align l -scale s
 point 44.7841 5390.2085 remark -text "snow-height October 2018" -align l -scale s
 point 66.2804 6015.3941 remark -text "snow-height July 2019" -align l -scale s
-point 1751.024 5648.5767 label -text "logger 73" -align tr -scale l
 line border 
   2582.7693 4206.659
   2582.7693 4206.659 2728.438 4117.991 2766.4385 4105.324

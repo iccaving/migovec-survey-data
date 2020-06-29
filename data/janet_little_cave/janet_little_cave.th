@@ -25,7 +25,7 @@ survey janet_little_cave -title "Janet's little cave"
 	
 	map m-all-e -projection extended
 		m1s
-		mCHAMBERs
+		mCHAMBERs [20 0 m] none
 	endmap
 	
 	map mENTp -projection plan
