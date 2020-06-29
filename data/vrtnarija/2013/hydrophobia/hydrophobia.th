@@ -7,12 +7,16 @@ map m-all-e -projection extended
     hydrophobia-1e
 endmap
 
-
 input hydrophobia-p.th2
 
 map m-all-p -projection plan
     hydrophobia-1p
+    hydrophobia-2p
+    hydrophobia-3p
 endmap
+
+join hydrophobia-1p hydrophobia-2p
+join hydrophobia-2p hydrophobia-3p
 
 centreline
     team "Rhys Tyers" insts
