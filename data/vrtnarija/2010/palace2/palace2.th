@@ -1,17 +1,18 @@
 survey palace2 -title "The Palace of King Minas"
 	
-	input palace2-e.th2
-	
-	map m-all-e -projection extended
-		palace2-1e
-	endmap
-	
 	input palace2-p.th2
 	
 	map m-all-p -projection plan
 		palace2-1p
 	endmap
 	
+
+input palace2-e.th2
+
+map m-all-e -projection extended
+    palace2-1e
+endmap
+
 	centreline
 		team "Dan Greenwald" insts
 		team "Iztok Možir" notes
