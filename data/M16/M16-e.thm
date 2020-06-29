@@ -185,6 +185,9 @@ extend right 2@adder
 extend left 1@elephant 2@elephant
 extend left 2@elephant
 extend left 10@waterloo
+extend right 14@waterloo 13@waterloo
+extend right 13@waterloo 12@waterloo
+extend right 12@waterloo
 extend left 1@mousse 2@mousse
 extend left 2@mousse
 extend right 3@mousse 4@mousse
