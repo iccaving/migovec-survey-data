@@ -76,19 +76,16 @@ layout ee
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
 	code tex-map
 	\def\maplayout{
-	\legendbox{80}{99}{NW}{\the\cavename}
-	\legendbox{80}{97}{NW}{\size[10]\the\comment}
-	\legendbox{80}{80}{NW}{\scalebar}
-	\legendbox{80}{87}{NW}{\size[10]{\sl Depth:} \the\cavedepth}
-	\legendbox{80}{85}{NW}{\size[10]{\sl Length:} \the\cavelength}
-	}
+	\legendbox{1}{99}{NW}{\the\cavename}
+	\legendbox{1}{97}{NW}{\size[10]\the\comment}
+	\legendbox{1}{80}{NW}{\scalebar}	}
 endlayout
 
 language sl # slo not yet supported
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_SLO.pdf -layout ee 
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.svg -layout ee
 language en
-export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.pdf -layout ee -layout-debug station-names
+export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.pdf -layout ee
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.svg -layout ee
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH

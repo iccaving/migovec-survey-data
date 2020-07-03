@@ -1,5 +1,12 @@
 
 survey skalar2 -title "Skalar extensions off exhibition road"
+
+input skalar2-e.th2
+
+map m-all-e -projection extended
+    skalar2-1e
+endmap
+
 centreline
     team "H Hunt-Grubbe" insts
     team "Andy Jurd" notes
