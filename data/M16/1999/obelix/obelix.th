@@ -1,5 +1,12 @@
 
 survey obelix -title "Skalar extensions off exhibition road"
+
+input obelix-e.th2
+
+map m-all-e -projection extended
+    obelix-1e
+endmap
+
 centreline
     team "Jan Evetts" insts
     team "Thomas Ayles" insts

@@ -1,5 +1,12 @@
 
 survey getafix -title "Skalar extensions off exhibition road"
+
+input getafix-e.th2
+
+map m-all-e -projection extended
+    getafix-1e
+endmap
+
 centreline
     team "Clewin Griffith" insts
     team "James Hooper" notes

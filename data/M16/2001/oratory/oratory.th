@@ -1,5 +1,12 @@
 
 survey oratory -title "System Migovec"
+
+input oratory-e.th2
+
+map m-all-e -projection extended
+    oratory-1e
+endmap
+
 centreline
     team "Adrian Hooper" insts
     team "James Hooper" notes

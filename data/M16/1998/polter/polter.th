@@ -1,5 +1,12 @@
 
 survey polter -title "poltageist extensions off exhibition road (aka stal series)"
+
+input polter-e.th2
+
+map m-all-e -projection extended
+    polter-1e
+endmap
+
 centreline
     team "Jan Evetts" insts
     team "Jim Evans" notes
