@@ -43,15 +43,15 @@ layout base-e
 
 	def s_vgrid (expr xpos, ypos, xsize, ysize) =
       pickup PenB;
-      if ypos = 0 : if xpos < 0: draw (-10, -ysize) -- (-10, 0);
+      if ypos > -1 : if xpos < 0: draw (-10, -ysize) -- (-10, 0);
       draw (-10, -ysize/5) -- (-7, -ysize/5);
       draw (-10, -2*ysize/5) -- (-7, -2*ysize/5);
       draw (-10, -3*ysize/5) -- (-7, -3*ysize/5);
       draw (-10, -4*ysize/5) -- (-7, -4*ysize/5);
        fi fi;
-      if xpos < 0: draw (-10,0) -- (0,0) fi;
+      draw (-10,0) -- (0,0);
       pickup PenD;
-      if ypos = 0 : draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.25 else: if ypos<0 : draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.25 fi fi;
+      if ypos = 0 : draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.25 else: if ypos=0 : draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.25 fi fi;
      enddef;
 
 		# NORTH ARROW (contributions of Thomas Holder)
@@ -114,23 +114,29 @@ layout base-e
 		enddef;
 		
 		# ROCKBORDERS
+
+		#(0.1+.1*normaldeviate*u)
 		
 		def l_wall_blocks_MY (expr P)=
 			T:=identity;
 			cas := 0;
 			dlzka := arclength P;
 			if dlzka > 0:
-			mojkrok:=adjust_step(dlzka, 0.5u);
-			pickup PenC;
+			mojkrok:=adjust_step(dlzka, 0.3u);
+			pickup PenD;
 			forever:
-			t1 := arctime (cas + mojkrok*1/10) of P;
-			t2 := arctime (cas + mojkrok*9/10) of P;
+			t_0 := arctime(cas) of P;
+			t_end := arctime(cas+mojkrok) of P;
+			t1 := arctime (cas + (2+1.3*normaldeviate)/10*mojkrok) of P;
+			t2 := arctime (cas + (8-1.2*normaldeviate)/10*mojkrok) of P;
+			t3 := arctime (cas + (2.5+1.2*normaldeviate)/10*mojkrok) of P;
+			t4 := arctime (cas + (8.5-1.3*normaldeviate)/10*mojkrok) of P;
+			sk := 1-.25*normaldeviate;
+			q := (point t_0 of P) -- ((point t1 of P) + .05*sk*u * unitvector(thdir(P,t1) rotated (-88+normaldeviate*4))) --
+			((point t2 of P) + .05*sk*u * unitvector(thdir(P,t2) rotated (-88+normaldeviate*4))) -- (point t_end of P) -- ((point t4 of P) - .1*sk*u * unitvector(thdir(P,t4) rotated (-88+normaldeviate*4))) --
+			((point t3 of P) - .1*sk*u * unitvector(thdir(P,t3) rotated (-88+normaldeviate*4))) -- cycle;
 			
-			q := ((point t1 of P) + .2u * unitvector(thdir(P,t1) rotated -125)) --
-			(subpath (t1,t2) of P) --
-			((point t2 of P) + .2u * unitvector(thdir(P,t2) rotated -75));
-			
-			thdraw q randomized (u/12) withcolor(0.3,0.3,0.3);
+			thdraw q withcolor(0.3,0.3,0.3);
 			cas := cas + mojkrok;
 			exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
 			endfor;

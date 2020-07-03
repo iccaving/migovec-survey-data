@@ -1,10 +1,18 @@
 survey waffles -title "Waffles"
+
+input waffles-e.th2
+
+map m-all-e -projection extended
+    waffles-1e
+endmap
+
 centreline
     team "Stéphane Pire" insts
     team "Cécile Chabot" notes
     explo-team "Stéphane pire"
     explo-team "Cécile Chabot"
     date 1998.07.30
+    explo-date 1998.07.30
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

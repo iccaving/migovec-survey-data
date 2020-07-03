@@ -1,5 +1,7 @@
 map m-all-e -projection extended
 	m-galaktika-hydrant-e 
+	m-poltergeist-e
+	m-gauls_branch-e
 	m-below_xxx-e
 	m-entrance-e
 	m-level2-e
@@ -7,9 +9,12 @@ map m-all-e -projection extended
 	m-below_mig_country-e
 	m-northern_line-e
 	m-titanic_branch-e
+	
+	
 endmap
 
 map m-level2-e -projection extended
+	m-all-e@oratory
 	m-all-e@carwash
 	m-all-e@level2s
 	m-all-e@migcon
@@ -91,6 +96,15 @@ endmap
 
 map m-gauls_branch-e -projection extended
 	m-all-e@skalar
+	m-all-e@skalar2
+	m-all-e@obelix
+	m-all-e@getafix
+endmap
+
+map m-poltergeist-e -projection extended
+	m-all-e@polter
+	m-all-e@waffles
+	m-all-e@disillusion
 endmap
 
 centreline
@@ -138,12 +152,13 @@ extend left 7@polter 6@polter
 extend left 6@polter
 extend right 1@disillusion 2@disillusion
 
-extend vertical 2@disillusion 3@disillusion
-extend left 3@disillusion 4@disillusion
+extend right 2@disillusion 3@disillusion
+extend vertical 3@disillusion 4@disillusion
 extend right 5@disillusion
 extend left 8@disillusion 9@disillusion
 extend left 9@disillusion 10@disillusion
-extend left 9@waffles
+extend left 6@waffles
+extend left 5@waffles 6@waffles
 
 extend left 7@challenge 6@challenge
 extend left 6@challenge
@@ -283,6 +298,11 @@ extend left 4@galact4 5@galact4
 extend right 1@hydrant 2@hydrant
 extend right 2@hydrant
 extend left 16@hydrant
+
+
+
+#Skalar and obelix
+extend right 9@obelix 16@obelix
 
 
 endcentreline
