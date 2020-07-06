@@ -2,29 +2,57 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
 line survey 
-  -4.13 6.81
-  4.13 -2.01
+  486.3388 899.0006
+  612.162 764.647
 endline
+
 line survey 
-  -1.14 27.91
-  -4.13 6.81
+  531.885 1220.4134
+  486.3388 899.0006
 endline
+
 line survey 
-  11.77 -9.57
-  -1.14 27.91
+  728.5409 649.4867
+  531.885 1220.4134
 endline
+
 line survey 
-  -11.77 -27.91
-  11.77 -9.57
+  369.9599 370.1165
+  728.5409 649.4867
 endline
+
 endscrap
 
+
 scrap dwarf_pine-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 4.13 -2.01 station -name 5
-point -4.13 6.81 station -name 4
-point -1.14 27.91 station -name 3
-point 11.77 -9.57 station -name 2
-point -11.77 -27.91 station -name 1
+
+line pit 
+  439.351 1085.9142
+  542.6898 982.7964 595.3724 875.7872 595.3724 875.7872
+endline
+
+line wall 
+  362.2652 289.027
+  428.0776 361.3849 429.8334 272.396 429.8334 272.396
+endline
+
+line wall 
+  772.5496 516.1695
+  794.2385 715.6197 640.2961 1168.4863 602.7416 1237.3325
+  518.5869 1391.6076 482.9408 1217.8138 454.208 1164.8498
+  428.4265 1117.3259 430.0864 877.9084 478.0339 806.6822
+  538.5109 716.8433 440.1284 491.2001 351.8551 426.0136
+endline
+
+point 991.0162 1086.0845 label -align r -text "Dwarf Pine"
+point 612.162 764.647 station -name 5
+point 486.3388 899.0006 station -name 4
+point 531.885 1220.4134 station -name 3
+point 728.5409 649.4867 station -name 2
+point 369.9599 370.1165 station -name 1
 endscrap
+
