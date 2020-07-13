@@ -5,13 +5,14 @@ encoding  utf-8
 
 scrap m17_deep-1p -scale [0 0 98 0 0 0 1 0 m] -projection plan
 
+point 1405.4237 -126.4882 map-connection 
+point 529.9195 1177.1161 label -text "Bottom ice chamber" -align t
 point 263.3529 577.6373 gradient -orientation 139.75684
 point 429.8119 361.4892 gradient -orientation 141.64568
 point 709.3138 103.1052 gradient -orientation 148.3884
 point 1150.3057 144.0989 gradient -orientation 189.50437
 point 1027.3249 363.9736 gradient -orientation 182.76815
 point 1073.2874 760.2453 gradient -orientation 176.57278
-point 489.4389 1159.0014 label -text "deepest ice level" -align t -scale l
 line rock-border -close on
   1008.8474 -149.9777
   992.327 -146.0612
@@ -2381,7 +2382,7 @@ line floor-step
   1028.55 862.61 995.9 848.63 975.48 828.1
 endline
 
-point 1052.79 -66.02 station -name 1
+point 1052.79 -66.02 station -name 100
 point 453.44 219.8 station -name 101
 point 255.3 652.88 station -name 102
 point 369.16 965.0 station -name 103
