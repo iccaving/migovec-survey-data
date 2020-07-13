@@ -1,17 +1,17 @@
 
 survey vilinent -title "Vilinska Jama entrance"
 
-input vilinent-e.th2
-
-map m-all-e -projection extended
-    vilinent-1e
-endmap
-
-
 input vilinent-p.th2
 
 map m-all-p -projection plan
     vilinent-1p
+endmap
+
+
+input vilinent-e.th2
+
+map m-all-e -projection extended
+    vilinent-1e
 endmap
 
 	centreline

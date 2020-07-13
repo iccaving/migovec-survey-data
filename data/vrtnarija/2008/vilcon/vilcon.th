@@ -1,17 +1,17 @@
 
 survey vilcon -title "Vilinska Connection to Jelly Chamber"
 
-input vilcon-e.th2
-
-map m-all-e -projection extended
-    vilcon-1e
-endmap
-
-
 input vilcon-p.th2
 
 map m-all-p -projection plan
     vilcon-1p
+endmap
+
+
+input vilcon-e.th2
+
+map m-all-e -projection extended
+    vilcon-1e
 endmap
 
 	centreline

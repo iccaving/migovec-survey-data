@@ -10,6 +10,10 @@ map m-entrance-e -projection extended
 	m-all-e@laurel
 	m-all-e@hardy
 	m-all-e@waffer
+	m-all-e@vilinent
+	m-all-e@breakitdown
+	m-all-e@vilcon
+	m-all-e@prisoners
 	m-all-e@urinal
 	m-all-e@urinal2
 	m-all-e@pico
@@ -44,21 +48,34 @@ endmap
 centreline
 	# Entrance series
 	extend start 0@bclent2
-	extend left 13@laurel
-	extend left 13@laurel
+	extend left 13@laurel 12@laurel
+	extend left 14@laurel
 	extend right 2@zimmer
 	extend right 11@banzai
+
+	# Vilinska Jama entrance
+	extend left 12@vilcon 11@vilcon
+	extend left 11@vilcon
+	extend left 9@vilcon 8@vilcon
+	extend left 8@vilcon
 
 	extend right 1@hardy 2@hardy
 	extend right 2@hardy
 	
 	# Ensure main line is down Laurel not Vil
 	extend ignore 15@judge
+
+	#extend prisoners
+	extend left 4@prisoners 3@prisoners
+	extend left 3@prisoners
 	
 	
 	# Captain K
 	extend left 13@bonus
-	extend right 21@kangaroo01
+	extend left 24@kangaroo01 23@kangaroo01
+	extend left 23@kangaroo01 22@kangaroo01
+	extend left 22@kangaroo01
+	extend right 17@kangaroo01
 	extend right 27@mudslump
 	extend left 8@dangermouse
 	extend right 5@greenback INLET@greenback
@@ -68,6 +85,17 @@ centreline
 	extend right 6@intravenus_de_milo
 	extend left 3@dark_tranquillity
 	extend right 8@roaring
+
+	extend right 6@mirage_canyon 5@mirage_canyon
+	extend right 5@mirage_canyon
+	extend left 4@mirage_canyon 3@mirage_canyon
+	extend left 3@mirage_canyon
+
+	extend left 1@intravenus_de_milo 2@intravenus_de_milo
+	extend left 14@mudslump 13@mudslump
+	extend left 13@mudslump
+	extend right 7@mudslump
+
 	
 	# Snap off bottom of Captain K
 	extend ignore 4@fools_road

@@ -2,109 +2,221 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+
 line survey 
-  195.29 -54.29
-  183.22 -51.22
+  455.29 165.7
+  443.22 168.71
 endline
+
 line survey 
-  183.22 -51.22
-  160.95 -42.24
+  443.22 168.71
+  420.95 177.71
 endline
+
 line survey 
-  160.95 -42.24
-  144.85 -37.05
+  420.95 177.71
+  404.85 182.94
 endline
+
 line survey 
-  144.85 -37.05
-  121.87 -21.54
+  404.85 182.94
+  381.87 198.44
 endline
+
 line survey 
-  121.87 -21.54
-  109.21 -32.17
+  381.87 198.44
+  369.21 187.81
 endline
+
 line survey 
-  97.22 -38.78
-  109.21 -32.17
+  357.22 181.17
+  369.21 187.81
 endline
+
 line survey 
-  62.69 -35.16
-  97.22 -38.78
+  322.69 184.8
+  357.22 181.17
 endline
+
 line survey 
-  39.02 -33.90
-  62.69 -35.16
+  299.02 186.04
+  322.69 184.8
 endline
+
 line survey 
-  8.34 1.38
-  39.02 -33.90
+  268.34 221.34
+  299.02 186.04
 endline
+
 line survey 
-  8.34 1.38
-  -2.64 2.32
+  268.34 221.34
+  257.36 222.3
 endline
+
 line survey 
-  -13.26 7.52
-  -2.64 2.32
+  246.74 227.48
+  257.36 222.3
 endline
+
 line survey 
-  -13.26 7.52
-  -18.61 11.22
+  246.74 227.48
+  241.39 231.22
 endline
+
 line survey 
-  -18.61 11.22
-  -34.33 3.27
+  241.39 231.22
+  225.67 223.22
 endline
+
 line survey 
-  -34.33 3.27
-  -40.32 -2.32
+  225.67 223.22
+  219.68 217.63
 endline
+
 line survey 
-  -40.32 -2.32
-  -48.94 -4.13
+  219.68 217.63
+  211.06 215.8
 endline
+
 line survey 
-  -72.38 11.61
-  -48.94 -4.13
+  187.62 231.61
+  211.06 215.8
 endline
+
 line survey 
-  -72.38 11.61
-  -92.05 2.01
+  187.62 231.61
+  167.95 222.01
 endline
+
 line survey 
-  -116.12 26.97
-  -92.05 2.01
+  143.88 246.93
+  167.95 222.01
 endline
+
 line survey 
-  -116.12 26.97
-  -158.15 42.24
+  143.88 246.93
+  101.85 262.23
 endline
+
 line survey 
-  -195.29 54.29
-  -158.15 42.24
+  64.71 274.3
+  101.85 262.23
 endline
+
 endscrap
 
-scrap vilinent-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 183.22 -51.22 station -name 20
-point 195.29 -54.29 station -name 21
-point 160.95 -42.24 station -name 19
-point 144.85 -37.05 station -name 18
-point 121.87 -21.54 station -name 17
-point 109.21 -32.17 station -name 16
-point 97.22 -38.78 station -name 15
-point 62.69 -35.16 station -name 14
-point 39.02 -33.90 station -name 13
-point 8.34 1.38 station -name 12
-point -2.64 2.32 station -name 11
-point -13.26 7.52 station -name 10
-point -18.61 11.22 station -name 9
-point -34.33 3.27 station -name 8
-point -40.32 -2.32 station -name 7
-point -48.94 -4.13 station -name 6
-point -72.38 11.61 station -name 5
-point -92.05 2.01 station -name 4
-point -116.12 26.97 station -name 3
-point -158.15 42.24 station -name 2
-point -195.29 54.29 station -name 1
+
+scrap vilinent-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+
+point -57.5922 290.9311 label -text "VILINSKA<br>JAMA" -align l -scale l
+point 19.0752 331.6414 entrance -align tl -scale l -orientation 135
+line rock-border -close on
+  295.7156 214.572
+  295.8853 203.7076
+  313.54 195.3896
+  342.2288 195.3896
+  341.8893 209.3096
+  297.5829 219.1555
+endline
+
+line rock-border -close on
+  277.0424 195.2198
+  270.2521 208.9701
+  251.0696 214.0628
+  236.6404 213.5535
+  233.0755 205.7447
+  236.1311 199.294
+  277.3819 185.0344
+  277.8912 192.1642
+endline
+
+line rock-border -close on
+  225.0969 238.8472
+  208.291 239.8657
+  199.8032 239.8657
+  199.8032 230.8686
+  209.9886 225.2667
+  228.8316 229.1711
+  229.6804 235.2823
+endline
+
+line wall 
+  458.537 174.2921
+  458.537 174.2921 446.0533 177.6531 434.0497 181.9744
+  422.0461 186.2957 411.0028 196.8588 406.6815 196.8588
+  402.3602 196.8588 384.1148 202.6205 384.1148 202.6205
+  355.3062 207.9021
+  355.3062 207.9021 333.6997 205.0213 330.3387 205.5014
+  326.9777 205.9816 306.3315 215.1043 306.3315 215.1043
+  293.3677 224.227
+  262.6385 235.2703
+  239.5916 238.1512
+  216.5447 245.3533
+  198.2993 246.3136
+  171.8914 249.6746
+  169.4907 258.3172
+  154.1261 261.1981
+  117.155 269.8406
+  113.794 276.5626
+  106.1117 277.5229
+  102.7507 294.8081
+endline
+
+line wall:blocks 
+  160.3679 214.144
+  160.3679 214.144 182.4545 209.8227 185.3354 209.8227
+  188.2162 209.8227 241.5122 202.6205 245.3533 199.2595
+  249.1945 195.8985 275.1222 188.6964 278.0031 185.8155
+  280.8839 182.9347 288.5662 180.5339 308.2521 178.1332
+  327.938 175.7325 372.1112 172.8517 372.1112 172.8517
+  393.7177 165.1694
+  428.288 157.4871
+  458.0569 156.0466
+endline
+
+line wall 
+  133.4799 240.0717
+  136.8409 230.949
+  144.5232 229.9887
+  144.5232 223.2667
+  146.9239 216.5447
+  155.0863 214.144
+endline
+
+line wall:blocks 
+  97.4691 251.115
+  121.9564 243.4327
+  133.4799 240.0717
+endline
+
+line wall 
+  63.3789 263.1186
+  88.3464 255.9165
+  97.4691 251.115
+endline
+
+point 443.22 168.71 station -name 20
+point 455.29 165.7 station -name 21
+point 420.95 177.71 station -name 19
+point 404.85 182.94 station -name 18
+point 381.87 198.44 station -name 17
+point 369.21 187.81 station -name 16
+point 357.22 181.17 station -name 15
+point 322.69 184.8 station -name 14
+point 299.02 186.04 station -name 13
+point 268.34 221.34 station -name 12
+point 257.36 222.3 station -name 11
+point 246.74 227.48 station -name 10
+point 241.39 231.22 station -name 9
+point 225.67 223.22 station -name 8
+point 219.68 217.63 station -name 7
+point 211.06 215.8 station -name 6
+point 187.62 231.61 station -name 5
+point 167.95 222.01 station -name 4
+point 143.88 246.93 station -name 3
+point 101.85 262.23 station -name 2
+point 64.71 274.3 station -name 1
 endscrap
+
