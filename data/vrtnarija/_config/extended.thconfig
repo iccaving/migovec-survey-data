@@ -10,27 +10,27 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../vrtnarija/vrtnarija.th"
+source "../../system_migovec.th"
 
 input "../../_layouts/base-e.thl"
 input "../../_layouts/mods.thl"
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
 
-# source
-# 	map include-centerline -projection extended
-# 		vrtnarija
-# 		m-all-e@vrtnarija
-# 	endmap
-# endsource
-# select include-centerline
-select m-all-e@vrtnarija
+ source
+ 	map include-centerline -projection extended
+ 		#vrtnarija@system_migovec
+ 		m-all-e@vrtnarija.system_migovec
+ 	endmap
+ endsource
+ select include-centerline
+#select m-all-e@vrtnarija.system_migovec
 
 
 
 layout ee
 	copy base-e
-	#copy show-centreline
+	copy show-centreline
 	scale 1 2000
 	grid-size 10 10 100 m
 	map-header 0 0 off
@@ -39,4 +39,4 @@ endlayout
 
 language fr
 
-export map -projection extended -o ../_outputs/EE_SLO_map.pdf -layout ee #-layout-debug station-names
+export map -projection extended -o ../_outputs/EE_SLO.pdf -layout ee #-layout-debug station-names

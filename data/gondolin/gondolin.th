@@ -46,8 +46,9 @@ survey gondolin -title "Gondolin"
 	map mgondolin-7p -projection plan
 		gondolinp_7
 	endmap
+	
 	centreline
-		#cs epsg:32633 # UTM 33T
+		cs epsg:3794 # UTM 33T
 		fix bcairn 404343 124264 1863
 	endcentreline
 	
