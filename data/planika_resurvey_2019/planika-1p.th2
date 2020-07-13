@@ -5,6 +5,9 @@ encoding  utf-8
 
 scrap planika-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 
+point 399.1621 301.7288 u:gradice_MY -orientation 209.97949
+point 444.2119 386.59 u:gradice_MY -orientation 206.56184
+point 457.8316 692.5095 u:gradice_MY -orientation 203.93442
 point 689.8904 397.0667 station-name -text 7 -align r -scale xs
 point 377.9468 298.5858 station-name -text 1 -align t -scale xs
 line rock-border -close on
@@ -528,14 +531,14 @@ line wall
   501.58 757.03 485.87 765.34 478.68 779.52
 endline
 
-line contour 
+line border 
   501.8 795.25
   487.49 771.58 500.62 695.37 472.51 686.66
   458.27 682.25 406.0 725.31 391.27 728.03
   375.6 730.94 360.67 741.26 347.9 750.18
 endline
 
-line contour 
+line border 
   500.38 761.93
   502.36 737.64 508.32 688.98 508.4 664.08
   508.41 658.89 504.58 636.72 497.01 624.33
@@ -545,7 +548,7 @@ line contour
   394.23 652.11 374.21 673.53 372.41 675.67
 endline
 
-line contour 
+line border 
   554.14 693.4
   547.53 669.09 537.25 572.79 533.55 548.13
   532.05 538.17 532.11 522.88 523.2 515.86
@@ -556,7 +559,7 @@ line contour
   344.75 565.54 338.23 575.97 333.88 586.44
 endline
 
-line contour 
+line border 
   552.35 478.48
   550.13 477.93 547.97 477.11 545.7 476.82
   531.29 474.98 518.77 432.52 507.72 422.71
@@ -565,7 +568,7 @@ line contour
   377.7 440.3 361.05 458.61 346.09 476.74
 endline
 
-line contour 
+line border 
   528.89 395.16
   521.86 389.37 515.43 382.37 510.05 375.04
   502.21 364.38 498.31 350.26 489.01 340.65
@@ -576,7 +579,7 @@ line contour
   358.41 392.44 338.41 404.37 322.68 420.11
 endline
 
-line contour 
+line border 
   491.96 327.02
   479.74 316.03 467.02 302.76 450.95 297.6
   434.81 292.41 413.62 295.69 397.97 301.2
@@ -830,7 +833,7 @@ line wall
   376.82 681.25 371.07 672.44 369.48 664.88
 endline
 
-line contour 
+line border 
   334.83 637.61
   348.39 602.91 379.85 561.73 418.41 553.25
   439.06 548.71 468.1 555.46 486.71 564.84
@@ -839,7 +842,7 @@ line contour
   537.45 608.51 535.56 675.78 532.4 724.5
 endline
 
-line border -close on -id 1p-a4
+line border -close on -id 1p-a4 -visibility off
   499.44 321.44
   511.45 340.82 512.1 365.51 517.39 386.8
   518.01 389.33 519.32 391.63 520.26 394.07
@@ -879,7 +882,6 @@ line border -close on -id 1p-a4
   391.27 300.7 414.64 292.24 436.59 294.87
   453.09 296.85 467.4 307.55 481.53 314.51
   488.3 317.85 494.6 320.22 499.05 323.2
-  499.44 321.44
 endline
 
 area snow
@@ -892,7 +894,7 @@ line border -close on -outline in
   291.35 279.41 341.47 282.07 341.47 282.07
 endline
 
-line border -close on -id 1p-a7
+line border -close on -id 1p-a7 -visibility off
   397.24 298.58
   396.21 298.9 395.15 299.15 394.14 299.53
   392.86 300.0 391.62 300.58 390.36 301.12
@@ -916,7 +918,6 @@ line border -close on -id 1p-a7
   385.05 277.77 394.13 283.3 400.35 284.33
   403.84 284.33 415.18 282.58 416.01 285.76
   418.0 293.37 406.26 297.85 401.85 302.26
-  397.24 298.58
 endline
 
 area ice
@@ -1000,7 +1001,6 @@ line wall -subtype ice -outline none -clip off
   240.0 373.0 256.0 337.0 267.0 330.0
   278.0 323.0 289.0 285.0 289.0 285.0
 endline
-
 
 point 239.89 312.4 station -name 2
 line wall -subtype ice -outline none -clip off
