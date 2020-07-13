@@ -1,5 +1,4 @@
 import os
-import os
 from os.path import isfile, join
 import sys
 import re

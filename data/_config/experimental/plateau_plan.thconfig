@@ -1,5 +1,5 @@
-source ../../system_migovec.th
+source ../../plateau.th
 
-select m-all-p@system_migovec
 
-export map -o ../../_outputs/GIS/system_migovec -fmt esri
+
+export map -o ../../_outputs/GIS/plateau -fmt esri
