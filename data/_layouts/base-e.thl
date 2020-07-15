@@ -41,18 +41,18 @@ layout base-e
 
 		# VERTICAL GRID less obnoxious
 
-	def s_vgrid (expr xpos, ypos, xsize, ysize) =
-      pickup PenB;
-      if ypos > -1 : if xpos < 0: draw (-10, -ysize) -- (-10, 0);
-      draw (-10, -ysize/5) -- (-7, -ysize/5);
-      draw (-10, -2*ysize/5) -- (-7, -2*ysize/5);
-      draw (-10, -3*ysize/5) -- (-7, -3*ysize/5);
-      draw (-10, -4*ysize/5) -- (-7, -4*ysize/5);
-       fi fi;
-      draw (-10,0) -- (0,0);
-      pickup PenD;
-      if ypos = 0 : draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.25 else: if ypos=0 : draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.25 fi fi;
-     enddef;
+		 def s_vgrid (expr xpos, ypos, xsize, ysize) =
+		   pickup PenB;
+		   if ypos > -1 : if xpos < 0: draw (-10, -ysize) -- (-10, 0);
+		   draw (-10, -ysize/5) -- (-7, -ysize/5);
+		   draw (-10, -2*ysize/5) -- (-7, -2*ysize/5);
+		   draw (-10, -3*ysize/5) -- (-7, -3*ysize/5);
+		   draw (-10, -4*ysize/5) -- (-7, -4*ysize/5);
+		    fi fi;
+		   if xpos <0 : draw (-10,0) -- (0,0) fi;
+		   pickup PenD;
+		   draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.5;
+		  enddef;
 
 		# NORTH ARROW (contributions of Thomas Holder)
 		

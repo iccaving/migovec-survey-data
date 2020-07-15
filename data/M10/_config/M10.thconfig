@@ -1,0 +1,81 @@
+#----------------------------------------------------------------------------------|
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                                                                                  |
+#                      A SMALL CAVE OF THE MIGOVEC PLATEAU                         |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../M10.th"
+
+
+#----------------------------------------------------------------------------------|
+# export a model openable in Loch and one in Aven
+export model -o ../_outputs/M10.lox
+export model -o ../_outputs/M10.3d
+
+#----------------------------------------------------------------------------------|
+# select a relevant layout definition file
+input ../../_layouts/detailed-p.thl
+input ../../_layouts/detailed-e.thl
+
+
+#----------------------------------------------------------------------------------|
+# select a relevant map (which contains commands for offsets of overlying bits)
+ 
+#----------------------------------------------------------------------------------|
+# select a relevant map definition for plan view
+ 
+#----------------------------------------------------------------------------------|
+# define a local layout with legend, header and elevation map produced above
+layout local
+	copy detailed
+	legend off
+	map-header 0 0 off
+	scale 1 200
+	symbol-colour line contour [0 70 90] 
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show point gradient
+
+	map-comment "Migovec Plateau<br>Cadastral Number: 4626<br>Length: 81 m, Depth: 45 m<br>Entrance elevation: 1862 m<br>Coordinates (EPSG:3794): 404597 / 124280" #Lat Long 46.25155 13.76265
+ #3911
+	code tex-map
+		\def\maplayout{
+		\legendbox{-40}{105}{SW}{\size[26]\the\cavename}
+		\legendbox{-40}{100}{NW}{\size[10]\the\comment}
+		\legendbox{-10}{60}{N}{\scalebar}
+		\legendbox{-10}{65}{S}{\northarrow}
+	}
+	endcode
+endlayout
+
+select m-all-p@M10
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+export map -o ../_outputs/M10_plan.pdf -projection plan -layout local
+
+
+#----------------------------------------------------------------------------------|
+# define a local layout without legend or header for extended elevation
+layout local-e
+	copy detailed-e
+	legend off
+	map-header 0 0 off
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show area snow
+	scale 1 400
+	grid-size 10 10 10 m
+	map-image -10 120  ne ../_outputs/M10_plan.pdf
+endlayout
+
+#----------------------------------------------------------------------------------|
+# export the pdf map in elevation view
+export map -o ../_outputs/M10_ee.pdf -projection extended -layout local-e
