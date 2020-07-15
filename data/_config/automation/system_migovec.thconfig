@@ -54,12 +54,20 @@ select m-all-e@system_migovec
 layout ee
 	copy base-e
 	copy colour-by-new
-	scale 1 2000
-	symbol-hide line label
-	symbol-colour point water-flow [0 10 90]
-	grid-size 10 10 100 m
-	copy show-centreline
+	
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
+	
+	symbol-assign line survey AUT
+	symbol-assign point station AUT
+
+	symbol-colour line survey [70 0 0]
+	symbol-colour point station [70 0 0]
+	grid-size 10 10 100 m
+	fonts-setup 5 8 10 10 10 
+	min-symbol-scale M
+	symbol-hide line label
+	symbol-hide point remark
+
 	code tex-map
 	\def\maplayout{
 	\legendbox{0}{99}{NW}{\the\cavename}
@@ -70,7 +78,8 @@ layout ee
 	}
 endlayout
 
-export map -projection extended -o ../../_outputs/map/system_migovec_overview_elevation_SLO.pdf -layout ee 
+export map -projection extended -o ../../_outputs/map/system_migovec_overview_elevation_SLO.pdf -layout ee
+export map -projection extended -o ../../_outputs/map/system_migovec_overview_elevation_SLO.svg -layout ee 
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
