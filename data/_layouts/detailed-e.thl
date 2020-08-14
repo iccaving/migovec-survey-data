@@ -162,6 +162,18 @@ code metapost
     thclean (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle;
     thfill (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle;
 enddef;
+
+def p_anchor_MY (expr P,R,S,A)=
+  U:=(.1u,.1u);
+  T:=identity aligned A rotated R scaled S shifted P;
+  q:= origin--(0,0.15u);
+  pickup PenD;
+  thdraw q rotated (45) shifted (-.1u,.1u);
+  thdraw q rotated (135) shifted (-.1u,-.1u);
+  thdraw q rotated (225) shifted (.1u,-.1u);
+  thdraw q rotated (315) shifted (.1u,.1u);
+  thdraw (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle;
+enddef;
     
     # NOW SOME USER DEFINED POINTS
     
@@ -550,6 +562,7 @@ enddef;
     initsymbol("p_airdraught_MY");
     initsymbol("p_gradient_MY");
     initsymbol("p_station_fixed_MY");
+    initsymbol("p_anchor_MY");
     
     initsymbol("p_u_logger_MY");
     initsymbol("p_u_waterdrip_MY");
@@ -640,6 +653,7 @@ endcode
  symbol-assign line wall MY
  symbol-assign point breakdown-choke AUT
  symbol-assign point air-draught MY
+ symbol-assign point anchor MY
 
 endlayout
 
