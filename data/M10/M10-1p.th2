@@ -8,7 +8,7 @@ scrap M10-1p -scale [0 0 39.3701 0 0 0 1 0 m] -projection plan
 point 214.2469 278.237 u:gradice_MY -orientation 219.07533
 point 306.6453 452.4378 u:gradice_MY -orientation 271.329078
 point 405.1738 394.563 u:gradice_MY -orientation 168.6228
-point 224.9874 146.6144 label -text "Let it Go" -align b -scale m
+point 224.9874 146.6144 label -text "Let it Go" -align b
 point 97.0769 180.245 narrow-end -scale xs
 line floor-step 
   688.72 267.53
@@ -310,7 +310,7 @@ line rock-border -close on
   164.74 430.55
 endline
 
-line border -close on -id 1p-a2 -visibility off
+line border -close on -id 1p-a2
   266.01 579.67
   287.53 603.56
   312.58 645.84
@@ -349,7 +349,7 @@ area snow
   1p-a2
 endarea
 
-line border -close on -id 1p-a7
+line border -close on -id 1p-a7 -visibility off
   748.29 141.02
   740.2 149.12 727.45 160.1 716.21 163.22
   707.75 165.57 692.21 158.83 685.37 168.55
