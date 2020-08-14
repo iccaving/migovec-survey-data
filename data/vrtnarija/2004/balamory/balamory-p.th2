@@ -3,9 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap balamory-1p -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
+scrap balamory-1p -projection plan -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 
-point 117.7818 519.4426 label -text Balamory -align r -scale l
+point 148.9733 637.5354 label -align l -scale m -text Balamory
 line pit 
   189.2958 529.3245
   189.2958 529.3245 184.0172 527.4183 182.551 523.1661
