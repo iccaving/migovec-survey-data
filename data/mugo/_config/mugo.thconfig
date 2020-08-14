@@ -11,13 +11,13 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../M15.th"
+source "../mugo.th"
 
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
-export model -o ../_outputs/M15.lox
-export model -o ../_outputs/M15.3d
+export model -o ../_outputs/mugo.lox
+export model -o ../_outputs/mugo.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
@@ -27,14 +27,14 @@ input ../../_layouts/detailed-e.thl
 
 #----------------------------------------------------------------------------------|
 # select a relevant map (which contains commands for offsets of overlying bits)
-#select m-all-e@M15
+select m-all-e@mugo
 
 
 
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
-#select m-all-p@M15
+select m-all-p@mugo
 
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
@@ -42,27 +42,27 @@ layout local
 	copy detailed
 	legend off
 	map-header 0 0 off
-	scale 1 200
-	symbol-colour line contour [0 70 90] 
-	symbol-colour line border [0 70 90]
+	scale 1 150
+	#symbol-colour line contour [0 70 90] 
+	#symbol-colour line border [0 70 90]
 	symbol-show point label
 	symbol-show point gradient
 
-	map-comment "Migovec Plateau<br>Cadastral Number: 4631<br>Length: 93 m, Depth: 51 m<br>Entrance elevation: 1860 m<br>Coordinates (EPSG:3794): 404521 / 124474"
+	map-comment "Migovec Plateau<br>Cadastral Number: XXXXs<br>Length: 38 m, Depth: 7 m<br>Entrance elevation: 1698 m (a)<br>Coordinates (EPSG:3794): 404140 / 124443"
 
 	code tex-map
 		\def\maplayout{
-		\legendbox{-10}{135}{SW}{\size[26]\the\cavename}
-		\legendbox{-10}{130}{NW}{\size[10]\the\comment}
-		\legendbox{15}{20}{N}{\scalebar}
-		\legendbox{15}{25}{S}{\northarrow}
+		\legendbox{-90}{95}{SW}{\size[26]\the\cavename}
+		\legendbox{-90}{90}{NW}{\size[10]\the\comment}
+		\legendbox{-45}{20}{N}{\scalebar}
+		\legendbox{-45}{25}{S}{\northarrow}
 	}
 	endcode
 endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
-export map -o ../_outputs/M15_plan.pdf -projection plan -layout local
+export map -o ../_outputs/mugo_plan.pdf -projection plan -layout local
 
 
 #----------------------------------------------------------------------------------|
@@ -70,14 +70,15 @@ export map -o ../_outputs/M15_plan.pdf -projection plan -layout local
 layout local-e
 	copy detailed-e
 	legend off
+	grid-size 10 10 5 m
 	map-header 0 0 off
 	symbol-colour line border [0 70 90]
 	symbol-show point label
 	symbol-show area snow
-	scale 1 400
-	map-image -5 110  ne ../_outputs/M15_plan.pdf
+	scale 1 150
+	map-image 100 105  se ../_outputs/mugo_plan.pdf
 endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../_outputs/M15_ee.pdf -projection extended -layout local-e
+export map -o ../_outputs/mugo_ee.pdf -projection extended -layout local-e
