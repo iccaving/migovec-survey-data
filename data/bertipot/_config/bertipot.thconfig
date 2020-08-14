@@ -1,0 +1,80 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                                                                                  |
+#                      A SMALL CAVE OF THE MIGOVEC PLATEAU                         |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../bertipot.th"
+
+#----------------------------------------------------------------------------------|
+# export a model openable in Loch and one in Aven
+export model -o ../_outputs/bertipot.lox
+export model -o ../_outputs/bertipot.3d
+
+#----------------------------------------------------------------------------------|
+# select a relevant layout definition file
+input ../../_layouts/detailed-p.thl
+input ../../_layouts/detailed-e.thl
+
+
+#----------------------------------------------------------------------------------|
+# select a relevant map (which contains commands for offsets of overlying bits)
+select m-all-e@bertipot
+
+#----------------------------------------------------------------------------------|
+# select a relevant map definition for plan view
+select m-all-p@bertipot
+
+#----------------------------------------------------------------------------------|
+# define a local layout with legend, header and elevation map produced above
+layout local
+	copy detailed
+	legend off
+	map-header 0 0 off
+	scale 1 200
+	symbol-colour line contour [0 70 90] 
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show point gradient
+
+	map-comment "Planja Plateau<br>Cadastral Number: XXXX<br>Length: 62 m, Depth: 47 m<br>Entrance elevation: 1749 m (b)<br>Coordinates (EPSG:3794): 403706 / 125587 (b)"
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{0}{135}{SW}{\size[26]\the\cavename}
+		\legendbox{0}{130}{NW}{\size[10]\the\comment}
+		\legendbox{45}{120}{N}{\scalebar}
+		\legendbox{45}{125}{S}{\northarrow}
+	}
+	endcode
+endlayout
+
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+export map -o ../_outputs/bertipot_plan.pdf -projection plan -layout local
+
+
+#----------------------------------------------------------------------------------|
+# define a local layout without legend or header for extended elevation
+layout local-e
+	copy detailed-e
+	legend off
+	grid-size 10 10 10 m
+	map-header 0 0 off
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show area snow
+	scale 1 400
+	map-image -5 105  ne ../_outputs/bertipot_plan.pdf
+endlayout
+
+#----------------------------------------------------------------------------------|
+# export the pdf map in elevation view
+export map -o ../_outputs/bertipot_ee.pdf -projection extended -layout local-e
