@@ -1,0 +1,80 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                                                                                  |
+#                      A SMALL CAVE OF THE MIGOVEC PLATEAU                         |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../coincidence.th"
+
+#----------------------------------------------------------------------------------|
+# export a model openable in Loch and one in Aven
+export model -o ../_outputs/coincidence.lox
+export model -o ../_outputs/coincidence.3d
+
+#----------------------------------------------------------------------------------|
+# select a relevant layout definition file
+input ../../_layouts/detailed-p.thl
+input ../../_layouts/detailed-e.thl
+
+
+#----------------------------------------------------------------------------------|
+# select a relevant map (which contains commands for offsets of overlying bits)
+select m-all-e@coincidence
+
+#----------------------------------------------------------------------------------|
+# select a relevant map definition for plan view
+select m-all-p@coincidence
+
+#----------------------------------------------------------------------------------|
+# define a local layout with legend, header and elevation map produced above
+layout local
+	copy detailed
+	legend off
+	map-header 0 0 off
+	scale 1 200
+	symbol-colour line contour [0 70 90] 
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show point gradient
+
+	map-comment "Planja Plateau<br>Cadastral Number: XXXX<br>Length: 203 m, Depth: 50 m<br>Entrance elevation: 1315 m (b)<br>Coordinates (EPSG:3794): _____ / _____"
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{0}{135}{SW}{\size[26]\the\cavename}
+		\legendbox{0}{130}{NW}{\size[10]\the\comment}
+		\legendbox{45}{120}{N}{\scalebar}
+		\legendbox{45}{125}{S}{\northarrow}
+	}
+	endcode
+endlayout
+
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+export map -o ../_outputs/coincidence_plan.pdf -projection plan -layout local
+
+
+#----------------------------------------------------------------------------------|
+# define a local layout without legend or header for extended elevation
+layout local-e
+	copy detailed-e
+	legend off
+	grid-size 10 10 10 m
+	map-header 0 0 off
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show area snow
+	scale 1 200
+	map-image -5 105  ne ../_outputs/coincidence_plan.pdf
+endlayout
+
+#----------------------------------------------------------------------------------|
+# export the pdf map in elevation view
+export map -o ../_outputs/coincidence_ee.pdf -projection extended -layout local-e
