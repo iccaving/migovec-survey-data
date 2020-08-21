@@ -594,6 +594,8 @@ survey vrtnarija -title "Vrtnarija"
 	join kokain_rute-1p@kokain_rute thirdthoughts-1p@thirdthoughts
 	join kokain_lab-1p@kokain_lab kokain_rute-1p@kokain_rute
 	join bingo_granny-1p@bingo_granny kokain_rute-1p@kokain_rute
+	join clapton-1p@clapton bingo_granny-1p@bingo_granny
+	join pick_your_poison-1p@pick_your_poison clapton-1p@clapton
 	
 	###__________2014____________###
 	input ./2014/sicsempertyrannis/sicsempertyrannis.th
