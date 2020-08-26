@@ -1,6 +1,6 @@
 # 2020.08.14 created by TopoDroid v 5.0.5c
 
-survey coincidence -title "coincidence"
+survey coincidence -title "Coincidence Cave"
     # coincidence cave and its extensions 
 
    input "coincidence-1p.th2"
@@ -8,16 +8,26 @@ survey coincidence -title "coincidence"
 
    map m-all-p -projection plan
     m1p
-    m6p [-10 0 m] below
-    m5p [-10 0 m] below
+    m2p
+    m3p
+    m4p
+    m6p [-5 0 m] below
+    m5p [10 0 m] below
     m1p1 [10 0 m] below
    endmap
 
    map m1p -projection plan
      coincidence-1p
-     coincidence-1p4
-     coincidence-1p3
+   endmap
+
+   map m2p -projection plan
      coincidence-1p2
+   endmap
+   map m3p -projection plan
+     coincidence-1p3
+   endmap
+   map m4p -projection plan
+     coincidence-1p4
    endmap
 
    map m6p -projection plan
@@ -31,14 +41,19 @@ survey coincidence -title "coincidence"
    map m1p1 -projection plan
     coincidence-1p1
    endmap
-   
-   map m-all-e -projection extended
-    m1s
-   endmap
+
 
    map m1s -projection extended
      coincidence-1s
-     coincidence-1s1
+   endmap
+
+   map m2s -projection extended
+     coincidence-2s
+   endmap
+
+   map m-all-e -projection extended
+     m2s
+     m1s
    endmap
 
   centerline
