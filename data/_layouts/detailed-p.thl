@@ -87,7 +87,7 @@ code metapost
      label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
      label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
      label.top(thTEX(decimal (0)),origin+(0,lblht));
-     label.bot(thTEX("PLAN 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+     label.bot(thTEX("TLORIS 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
     endgroup
    enddef; 
        
@@ -660,7 +660,6 @@ endcode
  ## water and ice
  symbol-assign area ice MY
  symbol-assign area snow MY
-  symbol-assign area water MY
  
  symbol-colour area ice [0 70 90]
  symbol-colour area snow [0 70 90]

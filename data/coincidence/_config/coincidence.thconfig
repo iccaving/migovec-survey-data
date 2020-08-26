@@ -39,19 +39,17 @@ layout local
 	legend off
 	map-header 0 0 off
 	scale 1 200
-	symbol-colour line contour [0 70 90] 
-	symbol-colour line border [0 70 90]
 	symbol-show point label
 	symbol-show point gradient
 
-	map-comment "Planja Plateau<br>Cadastral Number: XXXX<br>Length: 203 m, Depth: 50 m<br>Entrance elevation: 1315 m (b)<br>Coordinates (EPSG:3794): _____ / _____"
+	map-comment "Tolminski Migovec<br>Cadastral Number: XXXX<br>Length: 203 m, Depth: 50 m<br>Entrance elevation: 1310 m<br>Coordinates (EPSG:3794): 404773 / 123067<br>Survey: ICCC/JSPDT 2020<br>BCRA Grade 5c"
 
 	code tex-map
 		\def\maplayout{
-		\legendbox{0}{135}{SW}{\size[26]\the\cavename}
-		\legendbox{0}{130}{NW}{\size[10]\the\comment}
-		\legendbox{45}{120}{N}{\scalebar}
-		\legendbox{45}{125}{S}{\northarrow}
+		\legendbox{-70}{95}{SW}{\size[40]\the\cavename}
+		\legendbox{-70}{90}{NW}{\size[18]\the\comment}
+		\legendbox{-45}{50}{N}{\scalebar}
+		\legendbox{-45}{53}{S}{\northarrow}
 	}
 	endcode
 endlayout
@@ -68,7 +66,6 @@ layout local-e
 	legend off
 	grid-size 10 10 10 m
 	map-header 0 0 off
-	symbol-colour line border [0 70 90]
 	symbol-show point label
 	symbol-show area snow
 	scale 1 200

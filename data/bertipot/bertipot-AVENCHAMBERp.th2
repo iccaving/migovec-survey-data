@@ -11,7 +11,7 @@ line u:icepit_MY
   1374.8163 505.5199 1355.0293 492.5823 1355.0293 492.5823
 endline
 
-point 1284.6332 458.9063 label -text "snow chamber" -align l
+point 1284.6332 458.9063 label -text "snow chamber<lang:sl>Dvorana s snegom" -align l
 point 1350.75 874.7585 map-connection 
 point 1379.2415 647.108 u:gradice_MY -orientation 267.103176
 point 1430.0953 674.0148 u:gradice_MY -orientation 274.248104
@@ -849,7 +849,7 @@ line u:texture_MY
 endline
 
 point 290.9907 -182.6844 station -name 0
-point 109.209 -124.8941 label -text "unclimbed aven" -align l
+point 109.209 -124.8941 label -text "unclimbed aven<lang:sl>kamin" -align l
 line u:texture_MY 
   130.1376 -165.9064
   136.8918 -160.2938
@@ -1064,8 +1064,13 @@ endline
 
 point 212.8517 964.2839 label -text a -align tl
 point 789.9581 72.2986 label -text b -align bl
-point 972.6074 210.4272 label -text "side shaft" -align tr
-point 531.205 697.8725 label -text "main shaft" -align tr
+
+
+point 212.8517 1064.2839 label -text "<lang:sl>Vhod (p.....)" -align tl
+point 789.9581 -28 label -text "<lang:sl>Vhod (p.....)" -align bl
+
+point 972.6074 210.4272 label -text "side <lang:sl>Stransko brezno" -align tr
+point 531.205 697.8725 label -text "main shaft<lang:sl>Glavno brezno" -align tr
 point 537.5975 510.6907 u:gradice_MY -orientation 48.123266
 point 664.0593 413.2881 u:gradice_MY -orientation 48.123266
 line u:texture_MY 
