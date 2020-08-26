@@ -1,5 +1,5 @@
 source ../../plateau.th
 
-
-
 export map -o ../../_outputs/GIS/plateau -fmt esri
+export model -o ../../_outputs/model/plateau.3d -fmt survex
+export model -o ../../_outputs/model/plateau.lox

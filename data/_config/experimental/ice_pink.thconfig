@@ -1,70 +1,7 @@
-encoding  utf-8
-source ../../M17.th
+source ../../bertipot/bertipot.th
 
-input ../../../_layouts/detailed-p.thl
-input ../../../_layouts/detailed-e.thl
-
-select  m-all-p@M17
-
-
-#export map -projection extended -o ../outputs/M17_extended.pdf -layout map2 -layout-debug station-names
-
-layout local
-	copy detailed
-	scale 1 400
-
-	symbol-hide line survey
-	symbol-hide point station
-	symbol-hide point station-name
-	symbol-hide point remark
-	symbol-hide line label
-	symbol-show point entrance
-	symbol-show point label
-	symbol-colour line border [0 70 90]
-
-    map-comment "Migovec Plateau<br>Cadastral Number: 5878<br>Length: ___ m, Depth: 98 m<br>Entrance elevation: 1879 m<br>Coordinates (EPSG:3794): _____ / _____"
-
-		code tex-map
-		\def\maplayout{
-		\legendbox{-10}{135}{SW}{\size[26]\the\cavename}
-		\legendbox{-10}{130}{NW}{\size[10]\the\comment}
-		\legendbox{50}{-30}{N}{\scalebar}
-		\legendbox{50}{-25}{S}{\northarrow}
-	}
-	endcode
-endlayout
-
-#----------------------------------------------------------------------------------|
-# export the pdf map containing plan
-export map -o ../_outputs/M17_plan.pdf -projection plan -layout local
-
-select  m-all-e@M17
-
-#----------------------------------------------------------------------------------|
-# define a local layout without legend or header for extended elevation
-layout local-e
-	copy detailed-e
-	legend off
-	map-header 0 0 off
-	symbol-colour line border [0 70 90]
-	symbol-show point label
-	symbol-hide line label
-	symbol-hide point remark
-	symbol-hide line arrow
-	symbol-show area snow
-	scale 1 400
-	map-image -5 100  ne ../_outputs/M17_plan.pdf
-endlayout
-
-
-
-#----------------------------------------------------------------------------------|
-# export the pdf map in elevation view
-#export map -o ../_outputs/M17_ee.pdf -projection extended -layout local-e
-
-
+select m-all-e@M15
 layout local-pink-e
-
 	
 	legend off
 	map-header 0 0 off
@@ -140,4 +77,4 @@ layout local-pink-e
 	#map-image -5 100  ne ../_outputs/M17_elevation.pdf
 endlayout
 
-export map -o ../_outputs/M17_ee_pink.png -projection extended -layout local-pink-e
+export map -o ../../_outputs/bertipot_ee_pink.pdf -projection extended -layout local-pink-e

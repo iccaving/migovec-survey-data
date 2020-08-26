@@ -4,6 +4,78 @@ encoding  utf-8
 
 
 scrap bertipot-AVENCHAMBERs -scale [0 0 39.3701 0 0 0 1 0 m] -projection extended
+area snow
+  snow56
+endarea
+line border -subtype invisible -id snow56 -close on
+  843.1185 1047.5065
+  949.9947 1094.7442
+  954.5977 1152.2989
+  919.5402 1176.4369
+  840.4717 1165.1071
+  824.7126 1155.1725
+  810.3677 1143.1393
+  801.4179 1093.5083
+  794.9089 1091.0675
+  772.1275 1152.0891
+  775.7888 1161.039
+  762.2822 1173.316
+  728.6036 1223.8643
+  679.7935 1261.1501
+  657.1696 1300.3009
+  611.7014 1294.3533
+  562.8052 1294.819
+  499.114 1277.4234
+  474.7486 1283.4891
+  430.66 1276.49
+  417.4943 1246.8047
+  422.2699 1202.5337
+  412.1467 1162.4408
+  392.16 1105.23
+  405.1838 1036.5548
+  401.9294 1003.1963
+  412.5064 917.7659
+  404.3702 868.9486
+  403.5566 830.7084
+  432.847 796.5362
+  454.0012 748.5325
+  445.0513 728.5988
+  448.3058 700.122
+  474.3417 679.3746
+  480.0371 652.1183
+  504.8526 632.5914
+  527.634 619.9802
+  538.2111 587.8421
+  533.9513 532.8697
+  540.48 524.88
+  541.0588 468.6465
+  523.5659 439.3561
+  504.8526 395.8273
+  474.7485 382.4025
+  460.1033 299.0063
+  439.356 223.3394
+  383.4195 202.3886
+  381.8949 187.6911
+  396.6895 173.8967
+  408.5931 156.6926
+  426.6787 142.074
+  470.0283 134.4118
+  502.1604 112.0277
+  569.7584 148.2798
+  558.9584 155.8087
+  506.4798 196.4899
+  494.2154 199.7384
+  507.2497 215.7313
+  562.35 252.32
+  588.48 275.56
+  627.53 391.54
+  630.5698 403.6805
+  640.3207 418.6087
+  650.4909 424.3041
+  659.034 466.6124
+  669.6111 475.1555
+  677.7473 484.9189
+endline
 
 point 1122.2493 2107.3425 entrance -orientation 213.42497
 point 124.7126 2052.8738 entrance -orientation 140.18342
@@ -21,10 +93,12 @@ line border
   931.6092 1166.0921 954.5977 1152.2989 954.5977 1152.2989
 endline
 
+point 1500.0 2000.0 station-name -text "0-10 merilne postaje" -align tr -scale s
+point 1500.0 1950.0 label -text "1690-1760 nadmorske višine" -align r -scale s
 point 929.282 1638.9366 anchor -scale xs
-point 1162.0596 1626.165 label -text "side shaft" -align r
-point 121.8222 1626.165 label -text "main shaft" -align l
-point 665.543 398.675 label -text "snow chamber" -align r
+point 1162.0596 1626.165 label -text "Stransko brezno" -align r
+point 121.8222 1626.165 label -text "Glavno brezno" -align l
+point 665.543 398.675 label -text "Dvorana s snegom" -align r
 line border 
   556.9076 464.2815
   556.9076 464.2815 642.63 517.2108 642.63 519.512
@@ -37,7 +111,7 @@ line border
   598.3305 433.2144 659.3142 478.0892 659.3142 478.0892
 endline
 
-point 511.5782 92.0746 label -text "ice igloo" -align r
+point 511.5782 92.0746 label -text "Led<lang:fr>something else" -align r
 point 343.177 179.7869 label -text 07.08.20 -align l -scale s
 point 368.3862 198.8795 air-draught -align bl -orientation 330.0
 line rock-border -close on
@@ -72,7 +146,7 @@ line rock-border -close on
 endline
 
 point 150.7333 585.0983 continuation 
-point 233.0227 679.6191 label -text "unclimbed aven" -align l
+point 233.0227 679.6191 label -text kamin -align l
 point 129.4465 1909.4797 u:grass_MY -align t -clip off
 point 64.4356 1952.6285 u:grass_MY -align t -clip off
 point 185.2523 1967.0116 u:grass_MY -align t -clip off

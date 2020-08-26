@@ -42,7 +42,7 @@ layout plan
 endlayout
 language fr
 #export model -o ../../_outputs/system_migovec.lox
-#export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.pdf -layout plan
 #export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.svg -layout plan
 
 #----------------------------------------------------------------------------------|
