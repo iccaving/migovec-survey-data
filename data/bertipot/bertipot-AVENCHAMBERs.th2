@@ -7,6 +7,7 @@ scrap bertipot-AVENCHAMBERs -scale [0 0 39.3701 0 0 0 1 0 m] -projection extende
 area snow
   snow56
 endarea
+
 line border -subtype invisible -id snow56 -close on
   843.1185 1047.5065
   949.9947 1094.7442
@@ -93,12 +94,12 @@ line border
   931.6092 1166.0921 954.5977 1152.2989 954.5977 1152.2989
 endline
 
-point 1500.0 2000.0 station-name -text "0-10 merilne postaje" -align tr -scale s
-point 1500.0 1950.0 label -text "1690-1760 nadmorske višine" -align r -scale s
+point 1500.0 2000.0 station-name -text "<lang:sl>0-10 merilne postaje" -align tr -scale s
+point 1500.0 1950.0 label -text "<lang:sl>1690-1760 nadmorske višine" -align r -scale s
 point 929.282 1638.9366 anchor -scale xs
-point 1162.0596 1626.165 label -text "Stransko brezno" -align r
-point 121.8222 1626.165 label -text "Glavno brezno" -align l
-point 665.543 398.675 label -text "Dvorana s snegom" -align r
+point 1162.0596 1626.165 label -text "<lang:en>Side shaft<lang:sl>Stransko brezno" -align r
+point 121.8222 1626.165 label -text "<lang:en>Main shaft<lang:sl>Glavno brezno" -align l
+point 665.543 398.675 label -text "<lang:en>Snow chamber<lang:sl>Dvorana s snegom" -align r
 line border 
   556.9076 464.2815
   556.9076 464.2815 642.63 517.2108 642.63 519.512
@@ -111,7 +112,7 @@ line border
   598.3305 433.2144 659.3142 478.0892 659.3142 478.0892
 endline
 
-point 511.5782 92.0746 label -text "Led<lang:fr>something else" -align r
+point 511.5782 92.0746 label -text "Igloo<lang:sl>Led<lang:fr>something else" -align r
 point 343.177 179.7869 label -text 07.08.20 -align l -scale s
 point 368.3862 198.8795 air-draught -align bl -orientation 330.0
 line rock-border -close on
@@ -146,7 +147,7 @@ line rock-border -close on
 endline
 
 point 150.7333 585.0983 continuation 
-point 233.0227 679.6191 label -text kamin -align l
+point 233.0227 679.6191 label -text "Aven<lang:sl>kamin" -align l
 point 129.4465 1909.4797 u:grass_MY -align t -clip off
 point 64.4356 1952.6285 u:grass_MY -align t -clip off
 point 185.2523 1967.0116 u:grass_MY -align t -clip off

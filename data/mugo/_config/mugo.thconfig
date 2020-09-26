@@ -13,7 +13,6 @@ encoding  utf-8
 # select a source data file.
 source "../mugo.th"
 
-
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
 export model -o ../_outputs/mugo.lox
@@ -26,59 +25,211 @@ input ../../_layouts/detailed-e.thl
 
 
 #----------------------------------------------------------------------------------|
-# select a relevant map (which contains commands for offsets of overlying bits)
-select m-all-e@mugo
-
-
-
-
-#----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
 select m-all-p@mugo
 
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
-layout local
+layout local-slo
 	copy detailed
 	legend off
 	map-header 0 0 off
-	scale 1 150
-	#symbol-colour line contour [0 70 90] 
-	#symbol-colour line border [0 70 90]
+	scale 1 200
+	symbol-colour line contour [0 70 90] 
+	symbol-colour line border [0 70 90]
 	symbol-show point label
 	symbol-show point gradient
 
-	map-comment "Migovec Plateau<br>Cadastral Number: XXXXs<br>Length: 38 m, Depth: 7 m<br>Entrance elevation: 1698 m (a)<br>Coordinates (EPSG:3794): 404140 / 124443"
+	map-comment "Planja Plateau<br>Cadastral Number: XXXX<br>Length: 62 m, Depth: 47 m<br>Entrance elevation: 1749 m (b)<br>Coordinates (EPSG:3794): 403706 / 125587 (b)"
+
+	code metapost
+
+		# NORTH ARROW (contributions of Thomas Holder)
+		
+		 def s_northarrow (expr rot) =
+		  begingroup
+		    interim defaultscale:=0.5; % scale your north arrow here
+		    T:=identity scaled defaultscale rotated -rot;
+		    pickup pencircle scaled (0.08cm * defaultscale);
+		    thdraw (-.4cm,-1.4cm)--(0,2.8cm)--(.4cm,-1.4cm)--cycle;
+		    p:=fullcircle scaled 1.6cm;
+		    thclean p; thdraw p;
+		    p:=(0.95cm,0)--(0.65cm,0);
+		    thdraw p; thdraw p xscaled -1;
+		    pickup pencircle scaled (0.12cm * defaultscale);
+		    p:=(0.28cm,0.42cm);
+		    thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1);
+		  endgroup;
+		enddef;
+
+		## SCALE BAR (modified from contributions by Thomas Holder)
+  
+  		def s_scalebar (expr l, units, txt) =
+  		  begingroup
+  		   interim warningcheck:=0;
+  		   tmp20:=20 * (l / Scale * cm * units / 100);
+  		   tmp40:=40 * (l / Scale * cm * units / 100);
+  		   tmp60:=60 * (l / Scale * cm * units / 100);
+  		   tmp80:=80 * (l / Scale * cm * units / 100);
+  		   tmp100:=100 * (l / Scale * cm * units / 100);
+  		   scal10:=10 * l / 100;
+  		   scal20:=20 * l / 100;
+  		   scal40:=40 * l / 100;
+  		   scal60:=60 * l / 100;
+  		   scal80:=80 * l / 100;
+  		   brht:= 5bp;
+  		   lblht:= 8bp;
+  		  endgroup;
+
+  		  pickup PenD;
+
+  		  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+  		  draw (tmp20,0)--(tmp20,brht);
+  		  draw (tmp40,0)--(tmp40,brht);
+  		  draw (tmp60,0)--(tmp60,brht);
+  		  draw (tmp80,0)--(tmp80,brht);
+  		  fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
+  		  fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+
+
+  		  begingroup
+  		   label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+  		   label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
+  		   label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
+  		   label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
+  		   label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
+  		   label.top(thTEX(decimal (0)),origin+(0,lblht));
+  		   label.bot(thTEX("TLORIS 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+  		  endgroup
+  		 enddef; 
+	endcode
 
 	code tex-map
-		\def\maplayout{
+	\def\maplayout{
 		\legendbox{-90}{95}{SW}{\size[26]\the\cavename}
-		\legendbox{-90}{90}{NW}{\size[10]\the\comment}
 		\legendbox{-45}{20}{N}{\scalebar}
 		\legendbox{-45}{25}{S}{\northarrow}
 	}
 	endcode
 endlayout
 
-#----------------------------------------------------------------------------------|
-# export the pdf map containing plan
-export map -o ../_outputs/mugo_plan.pdf -projection plan -layout local
+layout local-en
+	copy detailed
+	legend off
+	map-header 0 0 off
+	scale 1 200
+	symbol-colour line contour [0 70 90] 
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show point gradient
+	language en
 
-
+	code tex-map
+		\def\maplayout{
+		\legendbox{-90}{95}{SW}{\size[26]\the\cavename}
+		\legendbox{-45}{20}{N}{\scalebar}
+		\legendbox{-45}{25}{S}{\northarrow}
+	}
+	endcode
+endlayout
 #----------------------------------------------------------------------------------|
-# define a local layout without legend or header for extended elevation
-layout local-e
+# select a relevant map (which contains commands for offsets of overlying bits)
+select m-all-e@mugo
+
+layout local-e-slo
 	copy detailed-e
 	legend off
+	map-header 0 0 off
 	grid-size 10 10 5 m
 	map-header 0 0 off
 	symbol-colour line border [0 70 90]
 	symbol-show point label
 	symbol-show area snow
-	scale 1 150
-	map-image 100 105  se ../_outputs/mugo_plan.pdf
+	scale 1 200
+
+	map-comment "Migovec Plateau<br>Cadastral Number: XXXXs<br>Length: 38 m, Depth: 7 m<br>Entrance elevation: 1698 m (a)<br>Coordinates (EPSG:3794): 404140 / 124443"
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{2}{125}{SW}{\size[25]\the\cavename}
+		\legendbox{35}{120}{N}{\scalebar}
+	}
+	endcode
+	code metapost
+	
+	def s_scalebar (expr l, units, txt) =
+  		  begingroup
+  		   interim warningcheck:=0;
+  		   tmp20:=20 * (l / Scale * cm * units / 100);
+  		   tmp40:=40 * (l / Scale * cm * units / 100);
+  		   tmp60:=60 * (l / Scale * cm * units / 100);
+  		   tmp80:=80 * (l / Scale * cm * units / 100);
+  		   tmp100:=100 * (l / Scale * cm * units / 100);
+  		   scal10:=10 * l / 100;
+  		   scal20:=20 * l / 100;
+  		   scal40:=40 * l / 100;
+  		   scal60:=60 * l / 100;
+  		   scal80:=80 * l / 100;
+  		   brht:= 5bp;
+  		   lblht:= 8bp;
+  		  endgroup;
+
+  		  pickup PenD;
+
+  		  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+  		  draw (tmp20,0)--(tmp20,brht);
+  		  draw (tmp40,0)--(tmp40,brht);
+  		  draw (tmp60,0)--(tmp60,brht);
+  		  draw (tmp80,0)--(tmp80,brht);
+  		  fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
+  		  fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+
+
+  		  begingroup
+  		   label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+  		   label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
+  		   label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
+  		   label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
+  		   label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
+  		   label.top(thTEX(decimal (0)),origin+(0,lblht));
+  		   label.bot(thTEX("PROFIL 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+  		  endgroup
+  		 enddef; 
+	endcode
+
+	#map-image -2 102 ne "../_outputs/mugo_plan_EN.pdf"
 endlayout
 
+layout local-e-en
+	copy detailed-e
+	legend off
+	map-header 0 0 off
+	grid-size 10 10 5 m
+	map-header 0 0 off
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show area snow
+	scale 1 200
+
+	language en
+	code tex-map
+		\def\maplayout{
+		\legendbox{2}{125}{SW}{\size[25]\the\cavename}
+		\legendbox{35}{120}{N}{\scalebar}
+	}
+	
+endlayout
 #----------------------------------------------------------------------------------|
-# export the pdf map in elevation view
-export map -o ../_outputs/mugo_ee.pdf -projection extended -layout local-e
+# define a local layout without legend or header for extended elevation
+
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+
+language sl
+export map -o ../_outputs/mugo_profil_SLO.pdf -projection extended -layout local-e-slo
+export map -o ../_outputs/mugo_tloris_SLO.pdf -projection plan -layout local-slo
+
+language en
+export map -o ../_outputs/mugo_EE_EN.pdf -projection extended -layout local-e-en
+export map -o ../_outputs/mugo_plan_EN.pdf -projection plan -layout local-en
+
