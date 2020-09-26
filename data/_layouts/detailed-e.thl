@@ -18,7 +18,7 @@ layout detailed-e
 #                        GENERAL STATEMENTS                   |
 #_____________________________________________________________|
 
-  language en
+
   #debug all
   scale 1 250
   legend on
@@ -90,7 +90,7 @@ code metapost
      label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
      label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
      label.top(thTEX(decimal (0)),origin+(0,lblht));
-     #label.bot(thTEX("LÄNGSCHNITT 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+     #label.bot(thTEX("EXTENDED ELEVATION 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
     endgroup
    enddef; 
        

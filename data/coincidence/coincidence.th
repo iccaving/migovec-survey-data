@@ -1,6 +1,6 @@
 # 2020.08.14 created by TopoDroid v 5.0.5c
 
-survey coincidence -title "Coincidence Cave"
+survey coincidence -title "<lang:en>Coincidence Cave<lang:sl>Naklju08.08ja jama"
     # coincidence cave and its extensions 
 
    input "coincidence-1p.th2"
@@ -60,7 +60,7 @@ survey coincidence -title "Coincidence Cave"
     date 2020.08.08 
     
     cs epsg:3794
-    fix 0 404773 123067 1310
+    fix 0 404773 123067 0 #1310
     team "Tanguy Racine" insts dog notes
     team "Jana Čarga" insts
     team "Chloe Snowling" 

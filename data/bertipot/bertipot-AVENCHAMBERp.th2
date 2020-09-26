@@ -849,7 +849,7 @@ line u:texture_MY
 endline
 
 point 290.9907 -182.6844 station -name 0
-point 109.209 -124.8941 label -text "unclimbed aven<lang:sl>kamin" -align l
+point 109.209 -124.8941 label -text "unclimbed<br>aven<lang:sl>kamin" -align tl
 line u:texture_MY 
   130.1376 -165.9064
   136.8918 -160.2938
@@ -960,9 +960,11 @@ endscrap
 
 
 scrap bertipot-AVENCHAMBER3p -scale [0 0 39.3701 0 0 0 1 0 m] -projection plan
+
 area snow
   snow7
 endarea
+
 line border -subtype invisible -id snow7 -close on
   512.3693 664.3868
   509.7056 664.7673 488.7771 667.6212 487.255 668.953
@@ -1064,12 +1066,9 @@ endline
 
 point 212.8517 964.2839 label -text a -align tl
 point 789.9581 72.2986 label -text b -align bl
-
-
-point 212.8517 1064.2839 label -text "<lang:sl>Vhod (p.....)" -align tl
-point 789.9581 -28 label -text "<lang:sl>Vhod (p.....)" -align bl
-
-point 972.6074 210.4272 label -text "side <lang:sl>Stransko brezno" -align tr
+point 452.5789 967.632 label -text "<lang:sl>Vhod <bf>p18<bf>" -align tl
+point 1101.984 66.3688 label -text "<lang:sl>Vhod <bf>p9<bf>" -align bl
+point 972.6074 210.4272 label -text "side<br>shaft<lang:sl>Stransko brezno" -align tr
 point 531.205 697.8725 label -text "main shaft<lang:sl>Glavno brezno" -align tr
 point 537.5975 510.6907 u:gradice_MY -orientation 48.123266
 point 664.0593 413.2881 u:gradice_MY -orientation 48.123266
