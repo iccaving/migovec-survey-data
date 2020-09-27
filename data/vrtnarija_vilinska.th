@@ -1,0 +1,15 @@
+survey vrtnarija_vilinska -title "Vrtnarija Vilinska"
+	
+	# map definitions
+	input vrtnarija_vilinska-e.thm
+	input vrtnarija_vilinska-p.thm
+
+    # data files
+	input vrtnarija/vrtnarija.th
+	input vilinska/vilinska.th
+
+
+    # equates
+	equate 10@judge.vrtnarija 6@vilcon.vilinska
+	equate 12@vilcon.vilinska 11@laurel.vrtnarija
+endsurvey
