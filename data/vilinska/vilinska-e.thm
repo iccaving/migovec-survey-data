@@ -1,0 +1,16 @@
+####### Vilinska #######
+
+map m-all-e -projection extended
+	m-all-e@vilinent
+	m-all-e@breakitdown
+	m-all-e@vilcon
+endmap
+
+centreline
+	# Entrance series
+	# Vilinska Jama entrance
+	extend left 12@vilcon 11@vilcon
+	extend left 11@vilcon
+	extend left 9@vilcon 8@vilcon
+	extend left 8@vilcon
+endcentreline

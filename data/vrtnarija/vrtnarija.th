@@ -206,12 +206,12 @@ survey vrtnarija -title "Vrtnarija"
 	
 	###__________2008____________###
 	input ./2008/dangermouse/dangermouse.th
-	input ./2008/breakitdown/breakitdown.th
-	input ./2008/vilinent/vilinent.th
+	#input ./2008/breakitdown/breakitdown.th ## moved Vilinska to new entrance
+	#input ./2008/vilinent/vilinent.th
 	input ./2008/dark_tranquillity/dark_tranquillity.th
 	input ./2008/cheesecake/cheesecake.th
 	input ./2008/greenback/greenback.th
-	input ./2008/vilcon/vilcon.th
+	#input ./2008/vilcon/vilcon.th
 	input ./2008/intravenus_de_milo/intravenus_de_milo.th
 	input ./2008/giblet_breakfast/giblet_breakfast.th
 	input ./2008/primula/primula.th
@@ -225,11 +225,11 @@ survey vrtnarija -title "Vrtnarija"
 	equate 10@intravenus_de_milo 1@kill_em_all
 	equate 1@cheesecake 1@primula
 	equate 2@greenback 4@giblet_breakfast
-	equate 1@breakitdown 1@vilcon
-	equate 9@breakitdown 21@vilinent
+	#equate 1@breakitdown 1@vilcon
+	#equate 9@breakitdown 21@vilinent
 	
-	equate 10@judge 6@vilcon
-	equate 12@vilcon 11@laurel
+	#equate 10@judge 6@vilcon
+	#equate 12@vilcon 11@laurel
 	#equate 6@vilcon 6@vilcon
 	#equate 12@vilcon.vilinska 11@laurel.garden-ent
 	#equate 6@vilcon.vilinska 6@vilcon.garden-ent

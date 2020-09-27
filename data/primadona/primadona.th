@@ -443,7 +443,7 @@ survey primadona -title "Primadona"
 	input "./2019/tartarus/tartarus.th"
 	input "./2019/poseidon_rift/poseidon_rift.th"
 	input "./2019/lachrymosa/lachrymosa.th"
-	input "./2019/belladonna/belladonna.th"
+	#input "./2019/belladonna/belladonna.th" # moved to separate entrance
 	input "./2019/forget_me_not/forget_me_not.th"
 	input "./2019/street-wise_hercules/street-wise_hercules.th"
 	input "./2019/angel_delight/angel_delight.th"
@@ -460,7 +460,7 @@ survey primadona -title "Primadona"
 	equate 13@tartarus 7@artemis
 	equate 18@poseidon_rift 0@artemis
 	equate 14@lachrymosa 7@artemis
-	equate shit@belladonna 35@prima1
+	#equate shit@belladonna 35@prima1
 	equate 10@forget_me_not 10@the_stile
 	equate 21@cattlegrid 0@forget_me_not
 	equate 11@street-wise_hercules 10@poseidon_rift
@@ -497,9 +497,9 @@ survey primadona -title "Primadona"
 	join lachrymosa-1s@lachrymosa artemis-1s@artemis
 	join tartarus-1s@tartarus artemis-1s@artemis
 	join poseidon_rift-1s@poseidon_rift street-wise_hercules-1s@street-wise_hercules
-	join drugi-1e@drugi belladonna-1s@belladonna
-	join belladonna-1p@belladonna drugip_1@drugi
-	join s1_l1@belladonna ent_l1@prima1
+	#join drugi-1e@drugi belladonna-1s@belladonna
+	#join belladonna-1p@belladonna drugip_1@drugi
+	#join s1_l1@belladonna ent_l1@prima1
 	join artemis-1s@artemis poseidon_rift-1s@poseidon_rift
 	join ma_je_vlazna-1e@ma_je_vlazna polnoletna-1e@polnoletna
 	join polnoletna-1e@polnoletna milanova_e2@milanova

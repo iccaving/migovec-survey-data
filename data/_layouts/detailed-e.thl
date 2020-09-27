@@ -159,8 +159,8 @@ code metapost
     pickup PenD;
     pair z;
     z:=(0,.7u);
-    thclean (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle;
-    thfill (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle;
+    thclean (-.07u,-.07u)..(-.07u,.07u)..(.07u,.07u)..(.07u,-.07u)..cycle;
+    thfill (-.07u,-.07u)..(-.07u,.07u)..(.07u,.07u)..(.07u,-.07u)..cycle;
 enddef;
 
 def p_anchor_MY (expr P,R,S,A)=

@@ -69,7 +69,6 @@ layout ee
 	symbol-hide point remark
 
 	code tex-map
-	\def\maplayout{
 	\framethickness=0.5mm
 	\def\maplayout{
 	\legendbox{91}{99}{N}{\size[26]\the\cavename}
@@ -89,8 +88,11 @@ export map -projection extended -o ../../_outputs/primadona_ubend_monatip_EE_ENG
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/primadona_ubend_monatip.3d
+select primadona_ubend_monatip@system_migovec
+export model -o ../../_outputs/model/primadona_ubend_monatip.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-export model -o ../../_outputs/primadona_ubend_monatip.lox
+# export a .3d model, which can be opened in AVEN and LOCH
+select primadona_ubend_monatip@system_migovec
+export model -o ../../_outputs/model/primadona_ubend_monatip.lox

@@ -1,0 +1,13 @@
+survey vilinska -title "Vilinska jama"
+
+	input "vilinska-p.thm"
+	input "vilinska-e.thm"
+	
+	###______________ 2008______________###
+	input "vilcon/vilcon.th"
+	input "breakitdown/breakitdown.th"
+	input "vilinent/vilinent.th"
+
+	equate 1@breakitdown 1@vilcon
+	equate 9@breakitdown 21@vilinent
+endsurvey

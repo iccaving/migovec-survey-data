@@ -10,11 +10,12 @@
 encoding  utf-8
 
 # start the survey definition
-survey primadona_ubend_monatip -title "Primadona, Mona tip, Ubend-571"
+survey primadona_ubend_monatip -title "Primadona, Mona tip, Ubend-571, Belladonna"
 	# input the individual cave data files
 	input "./primadona/primadona.th"
 	input "./monatip/monatip.th"
 	input "./ubend/ubend.th"
+	input "./belladonna/belladonna.th"
 	
 	# input map definitions
 	input "./primadona_ubend_monatip-e.thm"
@@ -28,6 +29,9 @@ survey primadona_ubend_monatip -title "Primadona, Mona tip, Ubend-571"
 	equate 1@therock.monatip 8@prima1.primadona
 	equate 25@therock.monatip 24@prima2.primadona
 	equate BV6@brez_volje.primadona 2@doubletime.monatip
+
+	# Belladonna and primadona connection
+	equate shit@belladonna 35@prima1.primadona
 	
 	# JOIN commands for the sketches at connection points
 	# Primadona to Monatip at Alkatraz via 'The Rock'
@@ -44,6 +48,11 @@ survey primadona_ubend_monatip -title "Primadona, Mona tip, Ubend-571"
 	join therock-e1@therock.monatip prima1-e3@prima1.primadona
 	
 	# joins for Ubend to Primadona?
+
+	# join Belladona Primadona
+	join drugi-1e@drugi.primadona belladonna-1s@belladonna
+	join belladonna-1p@belladonna drugip_1@drugi.primadona
+	join s1_l1@belladonna ent_l1@prima1.primadona
 	
 endsurvey
 

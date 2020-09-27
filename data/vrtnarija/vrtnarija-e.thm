@@ -10,9 +10,6 @@ map m-entrance-e -projection extended
 	m-all-e@laurel
 	m-all-e@hardy
 	m-all-e@waffer
-	m-all-e@vilinent
-	m-all-e@breakitdown
-	m-all-e@vilcon
 	m-all-e@prisoners
 	m-all-e@urinal
 	m-all-e@urinal2
@@ -52,12 +49,6 @@ centreline
 	extend left 14@laurel
 	extend right 2@zimmer
 	extend right 11@banzai
-
-	# Vilinska Jama entrance
-	extend left 12@vilcon 11@vilcon
-	extend left 11@vilcon
-	extend left 9@vilcon 8@vilcon
-	extend left 8@vilcon
 
 	extend right 1@hardy 2@hardy
 	extend right 2@hardy

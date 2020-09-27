@@ -1,3 +1,4 @@
+encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
@@ -7,12 +8,10 @@
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
 source "../rowan_cave.th"
-
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
@@ -22,25 +21,7 @@ export model -o ../_outputs/rowan_cave.3d
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
 input ../../_layouts/detailed-p.thl
-
-
-#----------------------------------------------------------------------------------|
-# select a relevant map (which contains commands for offsets of overlying bits)
-select m-all-e@rowan_cave
-
-
-#----------------------------------------------------------------------------------|
-# define a local layout without legend or header for extended elevation
-layout local-e
-	copy detailed
-	legend off
-	map-header 100 0 off
-	scale 1 100
-endlayout
-
-#----------------------------------------------------------------------------------|
-# export the pdf map in elevation view
-export map -o ../_outputs/rowan_cave_ee.pdf -projection extended -layout local-e -layout-debug station-names
+input ../../_layouts/detailed-e.thl
 
 
 #----------------------------------------------------------------------------------|
@@ -49,12 +30,201 @@ select m-all-p@rowan_cave
 
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
-layout local
+layout local-slo
 	copy detailed
+	legend off
+	map-header 0 0 off
 	scale 1 100
-	map-image 0 0 nw ../_outputs/rowan_cave_ee.pdf
+	symbol-show point label
+	symbol-show point gradient
+
+	map-comment "Planja <br>Cadastral Number: XXXX<br>Length: 62 m, Globina: 47 m<br>Vhod: 1749 m (b)<br>Coordinates (EPSG:3794): 403706 / 125587 (b)"
+
+	code metapost
+
+		# NORTH ARROW (contributions of Thomas Holder)
+		
+		 def s_northarrow (expr rot) =
+		  begingroup
+		    interim defaultscale:=0.5; % scale your north arrow here
+		    T:=identity scaled defaultscale rotated -rot;
+		    pickup pencircle scaled (0.08cm * defaultscale);
+		    thdraw (-.4cm,-1.4cm)--(0,2.8cm)--(.4cm,-1.4cm)--cycle;
+		    p:=fullcircle scaled 1.6cm;
+		    thclean p; thdraw p;
+		    p:=(0.95cm,0)--(0.65cm,0);
+		    thdraw p; thdraw p xscaled -1;
+		    pickup pencircle scaled (0.12cm * defaultscale);
+		    p:=(0.28cm,0.42cm);
+		    thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1);
+		  endgroup;
+		enddef;
+
+		## SCALE BAR (modified from contributions by Thomas Holder)
+  
+  		def s_scalebar (expr l, units, txt) =
+  		  begingroup
+  		   interim warningcheck:=0;
+  		   tmp20:=20 * (l / Scale * cm * units / 100);
+  		   tmp40:=40 * (l / Scale * cm * units / 100);
+  		   tmp60:=60 * (l / Scale * cm * units / 100);
+  		   tmp80:=80 * (l / Scale * cm * units / 100);
+  		   tmp100:=100 * (l / Scale * cm * units / 100);
+  		   scal10:=10 * l / 100;
+  		   scal20:=20 * l / 100;
+  		   scal40:=40 * l / 100;
+  		   scal60:=60 * l / 100;
+  		   scal80:=80 * l / 100;
+  		   brht:= 5bp;
+  		   lblht:= 8bp;
+  		  endgroup;
+
+  		  pickup PenD;
+
+  		  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+  		  draw (tmp20,0)--(tmp20,brht);
+  		  draw (tmp40,0)--(tmp40,brht);
+  		  draw (tmp60,0)--(tmp60,brht);
+  		  draw (tmp80,0)--(tmp80,brht);
+  		  fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
+  		  fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+
+
+  		  begingroup
+  		   label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+  		   label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
+  		   label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
+  		   label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
+  		   label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
+  		   label.top(thTEX(decimal (0)),origin+(0,lblht));
+  		   label.bot(thTEX("TLORIS 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+  		  endgroup
+  		 enddef; 
+	endcode
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{-10}{115}{SW}{\size[25]\the\cavename}
+		\legendbox{50}{-60}{N}{\scalebar}
+		\legendbox{50}{-55}{S}{\northarrow}
+	}
+	endcode
 endlayout
 
+layout local-en
+	copy detailed
+	legend off
+	map-header 0 0 off
+	scale 1 100
+	symbol-show point label
+	symbol-show point gradient
+	language en
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{-10}{115}{SW}{\size[25]\the\cavename}
+		\legendbox{50}{-60}{N}{\scalebar}
+		\legendbox{50}{-55}{S}{\northarrow}
+	}
+	endcode
+endlayout
 #----------------------------------------------------------------------------------|
-# export the pdf map containing plan and elevation
-export map -o ../_outputs/rowan_cave_plan_ee.pdf -projection plan -layout local
+# select a relevant map (which contains commands for offsets of overlying bits)
+select m-all-e@rowan_cave
+
+layout local-e-slo
+	copy detailed-e
+	legend off
+	map-header 0 0 off
+	grid-size 10 10 5 m
+	map-header 0 0 off
+	symbol-show point label
+	symbol-show area snow
+	scale 1 200
+
+	map-comment "<lang:en>Planja Plateau<br>Cadastral Number: XXXX<br>Length: 62 m, Depth: 47 m<br>Entrance elevation: 1749 m (b)<br>Coordinates (EPSG:3794): 403706 / 125587 (b)"
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{2}{125}{SW}{\size[20]\the\cavename}
+		\legendbox{50}{120}{N}{\scalebar}
+	}
+	endcode
+	code metapost
+	
+	def s_scalebar (expr l, units, txt) =
+  		  begingroup
+  		   interim warningcheck:=0;
+  		   tmp20:=20 * (l / Scale * cm * units / 100);
+  		   tmp40:=40 * (l / Scale * cm * units / 100);
+  		   tmp60:=60 * (l / Scale * cm * units / 100);
+  		   tmp80:=80 * (l / Scale * cm * units / 100);
+  		   tmp100:=100 * (l / Scale * cm * units / 100);
+  		   scal10:=10 * l / 100;
+  		   scal20:=20 * l / 100;
+  		   scal40:=40 * l / 100;
+  		   scal60:=60 * l / 100;
+  		   scal80:=80 * l / 100;
+  		   brht:= 5bp;
+  		   lblht:= 8bp;
+  		  endgroup;
+
+  		  pickup PenD;
+
+  		  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+  		  draw (tmp20,0)--(tmp20,brht);
+  		  draw (tmp40,0)--(tmp40,brht);
+  		  draw (tmp60,0)--(tmp60,brht);
+  		  draw (tmp80,0)--(tmp80,brht);
+  		  fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
+  		  fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+
+
+  		  begingroup
+  		   label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+  		   label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
+  		   label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
+  		   label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
+  		   label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
+  		   label.top(thTEX(decimal (0)),origin+(0,lblht));
+  		   label.bot(thTEX("PROFIL 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+  		  endgroup
+  		 enddef; 
+	endcode
+
+	#map-image -2 102 ne "../_outputs/rowan_cave_plan_EN.pdf"
+endlayout
+
+layout local-e-en
+	copy detailed-e
+	legend off
+	map-header 0 0 off
+	grid-size 10 10 5 m
+	map-header 0 0 off
+	symbol-show point label
+	symbol-show area snow
+	scale 1 200
+
+	language en
+	code tex-map
+		\def\maplayout{
+		\legendbox{2}{125}{SW}{\size[20]\the\cavename}
+		\legendbox{50}{120}{N}{\scalebar}
+	}
+	
+endlayout
+#----------------------------------------------------------------------------------|
+# define a local layout without legend or header for extended elevation
+
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+
+language sl
+export map -o ../_outputs/jerebika_profil_SLO.pdf -projection extended -layout local-e-slo
+export map -o ../_outputs/jerebika_tloris_SLO.pdf -projection plan -layout local-slo
+export map -o ../_outputs/jerebika_profil_SLO.svg -projection extended -layout local-e-slo
+export map -o ../_outputs/jerebika_tloris_SLO.svg -projection plan -layout local-slo
+
+language en
+export map -o ../_outputs/jerebika_EE_EN.pdf -projection extended -layout local-e-en
+export map -o ../_outputs/jerebika_plan_EN.pdf -projection plan -layout local-en
