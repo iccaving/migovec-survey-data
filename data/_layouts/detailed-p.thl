@@ -120,8 +120,8 @@ code metapost
     pickup PenD;
     pair z;
     z:=(0,.7u);
-    thclean (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle;
-    thfill (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle;
+    thclean (-.07u,-.07u)..(-.07u,.07u)..(.07u,.07u)..(.07u,-.07u)..cycle;
+    thfill (-.07u,-.07u)..(-.07u,.07u)..(.07u,.07u)..(.07u,-.07u)..cycle;
 enddef;
     
     def p_airdraught_MY (expr P,R,S,A)=
@@ -203,6 +203,82 @@ enddef;
     ##### SPECIFIC WALL TYPES
     # BLOCKS
 
+        def l_u_bigpit_MY (expr P) =
+      T:=identity;
+      laenge:= arclength P;
+      symsize:=adjust_step(laenge,0.5u);
+      triangle_width:=symsize/2;
+      cur:=(symsize-triangle_width)/2;
+      pickup PenC;
+      forever:
+        t1 := arctime (cur) of P;
+        t  := arctime (cur + triangle_width/2) of P;
+        t2 := arctime (cur + triangle_width) of P;
+
+          thfill (subpath (t1,t2) of P) --
+            ((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+            cycle;
+
+          thdraw (point t2 of P) --((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+            (point t1 of P);
+        cur := cur + symsize;
+        exitif cur > laenge - (1*symsize/3); % for rounding errors
+        t1:=arctime (cur) of P;
+      endfor;
+      thdraw P;
+    enddef;
+
+    def l_u_wallpit_MY (expr P) =
+      T:=identity;
+      laenge:= arclength P;
+      symsize:=adjust_step(laenge,0.5u);
+      triangle_width:=symsize/2;
+      cur:=(symsize-triangle_width)/2;
+      thdraw P withpen PenA;
+      pickup PenC;
+      forever:
+        t1 := arctime (cur) of P;
+        t  := arctime (cur + triangle_width/2) of P;
+        t2 := arctime (cur + triangle_width) of P;
+
+          thfill (subpath (t1,t2) of P) --
+            ((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+            cycle;
+
+          thdraw (point t2 of P) --((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+            (point t1 of P);
+        cur := cur + symsize;
+        exitif cur > laenge - (1*symsize/3); % for rounding errors
+        t1:=arctime (cur) of P;
+      endfor;
+      
+    enddef;
+
+    def l_u_wallsmallpit_MY (expr P) =
+      T:=identity;
+      laenge:= arclength P;
+      symsize:=adjust_step(laenge,0.5u);
+      triangle_width:=symsize/2;
+      cur:=(symsize-triangle_width)/2;
+      thdraw P withpen PenA;
+      pickup PenC;
+      forever:
+        t1 := arctime (cur) of P;
+        t  := arctime (cur + triangle_width/2) of P;
+        t2 := arctime (cur + triangle_width) of P;
+
+          thclean (subpath (t1,t2) of P) --
+            ((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+            cycle;
+
+          thdraw (point t2 of P) --((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+            (point t1 of P);
+        cur := cur + symsize;
+        exitif cur > laenge - (1*symsize/3); % for rounding errors
+        t1:=arctime (cur) of P;
+      endfor;
+      
+    enddef;
 
     def l_u_icepit_MY (expr P) =
       T:=identity;
@@ -615,6 +691,9 @@ enddef;
    ## lines
     # redefinitions
     # wall types
+    initsymbol("l_u_wallpit_MY");
+    initsymbol("l_u_bigpit_MY");
+    initsymbol("l_u_wallsmallpit_MY");
     initsymbol("l_wall_blocks_MY");
     initsymbol("l_wall_ice_MY");
     initsymbol("l_wall_flowstone_MY");

@@ -2,18 +2,6 @@
 
 map m-all-p -projection plan
 	m-all-p@m2m16m18
-	m-all-p@vrtnarija
+	m-all-p@vrtnarija_vilinska
 	m-all-p@primadona_ubend_monatip	
-endmap
-
-map m-primadona_ubend_monatip-p -projection plan
-	m-all-p@primadona_ubend_monatip
-endmap
-
-map m-vrtnarija-p -projection plan
-	m-all-p@vrtnarija
-endmap
-
-map m-m2m16m18-p -projection plan
-	m-all-p@m2m16m18
 endmap
