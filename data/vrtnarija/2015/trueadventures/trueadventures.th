@@ -11,8 +11,28 @@ endmap
 input trueadventures-p.th2
 
 map m-all-p -projection plan
-    trueadventures-1p
+    m1p
+    m2p
+    m4p
+    m3p
 endmap
+
+map m1p -projection plan
+        trueadventures-1p
+    endmap
+
+map m2p -projection plan
+        trueadventures-2p
+    endmap
+
+map m4p -projection plan
+        trueadventures-4p
+    endmap
+
+map m3p -projection plan
+        trueadventures-3p
+endmap
+
 
 centreline
     team "Connor Roe" insts

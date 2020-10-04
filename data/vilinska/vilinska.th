@@ -10,4 +10,7 @@ survey vilinska -title "Vilinska jama"
 
 	equate 1@breakitdown 1@vilcon
 	equate 9@breakitdown 21@vilinent
+
+	join breakitdown-1p@breakitdown vilinent-1p@vilinent
+	join breakitdown-1p@breakitdown vilcon-1p@vilcon
 endsurvey

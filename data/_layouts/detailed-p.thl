@@ -254,6 +254,44 @@ enddef;
       
     enddef;
 
+     def l_u_wallstep_MY (expr P) =
+      T:=identity;
+      laenge:= arclength P;
+      symsize:=adjust_step(laenge,0.25u);
+      ministep:=symsize/5;
+      cur:=0;
+      pickup PenC;
+      forever:
+        t0 := arctime (cur) of P;
+        t1 := arctime (cur+ministep) of P;
+        t2 := arctime (cur+2*ministep) of P;
+        t3a := arctime (cur+3*ministep) of P;
+        t4 := arctime (cur+4*ministep) of P;
+        t5 := arctime (cur+5*ministep) of P;
+
+        thclean (subpath (t5,t0) of P) -- ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
+        ((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) .. 
+        ((point t2 of P) + symsize/2 * unitvector(thdir(P,t2) rotated 90)) ..
+        ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) ..
+        ((point t4 of P) + symsize/2 * unitvector(thdir(P,t4) rotated 90)) ..
+        ((point t5 of P) + symsize/2 * unitvector(thdir(P,t5) rotated 90))--cycle;
+
+        thdraw ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
+        ((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) .. 
+        ((point t2 of P) + symsize/2 * unitvector(thdir(P,t2) rotated 90)) ..
+        ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) ..
+        ((point t4 of P) + symsize/2 * unitvector(thdir(P,t4) rotated 90)) ..
+        ((point t5 of P) + symsize/2 * unitvector(thdir(P,t5) rotated 90));
+
+        thdraw ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) -- 
+        ((point t3a of P) + 4/3*symsize * unitvector(thdir(P,t3a) rotated 90)) withpen PenC;
+        
+        cur := cur + symsize;
+        exitif cur > laenge - (1*symsize/3); % for rounding errors
+      endfor;
+      pickup PenA;
+      thdraw P;
+    enddef;
     def l_u_wallsmallpit_MY (expr P) =
       T:=identity;
       laenge:= arclength P;
@@ -694,6 +732,7 @@ enddef;
     initsymbol("l_u_wallpit_MY");
     initsymbol("l_u_bigpit_MY");
     initsymbol("l_u_wallsmallpit_MY");
+    initsymbol("l_u_wallstep_MY");
     initsymbol("l_wall_blocks_MY");
     initsymbol("l_wall_ice_MY");
     initsymbol("l_wall_flowstone_MY");
