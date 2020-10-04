@@ -1,0 +1,18 @@
+source ../../plateau.th
+
+source
+	map only_ice_caves -projection plan
+		M17@plateau
+		M15@plateau
+		M10@plateau
+		planika@plateau
+		bertipot@plateau
+	endmap
+endsource
+
+
+select only_ice_caves
+
+export map -fmt esri -o ../../_outputs/GIS/ice_caves
+
+export map -o ../../_outputs/ice_caves.kml

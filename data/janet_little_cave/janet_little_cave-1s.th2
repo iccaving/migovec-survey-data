@@ -177,7 +177,7 @@ point 2556.2418 1830.7127 station-name -text 3 -align l -scale xs
 point 2608.2575 1878.5432 station-name -text 2 -align l -scale xs
 point 2668.3446 1925.7758 station-name -text 0 -align r -scale xs
 point 2719.7624 1883.6252 station-name -text 1 -align r -scale xs
-point 2275.0461 1837.1443 label -text "Entrance doline" -align l -scale s
+point 2275.0461 1837.1443 label -text "Entrance doline" -align l
 line u:texture_MY 
   2601.9798 1828.3212
   2547.5726 1825.9297
@@ -418,7 +418,6 @@ point 1606.1 1479.32 station -name 13
 point 2158.22 1454.34 station -name 14
 point 2490.93 1538.29 station -name 15
 point 2182.5 1343.4 label -text "Bone Chamber" -align br
-point 1793.5 1309.4 label -text "Low Chamber" -align bl
 line wall 
   2496.5 1652.4
   2461.5 1645.4
