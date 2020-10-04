@@ -13,14 +13,21 @@ survey janet_little_cave -title "Janet's little cave"
 	#input "../DEM/s404124.th"
 	
 	map m-all-p -projection plan
-		mENTp [0 -10 m] none
-		mCHAMBERp
-		mLOWp
-		mXLOWp [10 0 m] below
+		mENTp 
+		break
+		mCHAMBERp-underlay
+		mLOWp-underlay
+		mXLOWp-underlay
+		break
+		m-level1-p [ 0 -18 m] none
 	endmap
 
-	map m1p -projection plan
-		janet_little_cave-1p
+	map m-level1-p -projection plan
+		mCHAMBERp
+		mLOWp
+		break
+		mXLOWp-underlay
+		mXLOWp [10 0 m] none
 	endmap
 	
 	map m-all-e -projection extended
@@ -38,6 +45,10 @@ survey janet_little_cave -title "Janet's little cave"
 	map mCHAMBERp -projection plan
 		janet_little_cave-CHAMBERp
 	endmap
+
+	map mCHAMBERp-underlay -projection plan
+		janet_little_cave-CHAMBERp-underlay
+	endmap
 	map mCHAMBERs -projection extended
 		janet_little_cave-CHAMBERs
 	endmap
@@ -48,10 +59,18 @@ survey janet_little_cave -title "Janet's little cave"
 	map mXLOWp -projection plan
 		janet_little_cave-XLOWp
 	endmap
+
+	map mLOWp-underlay -projection plan
+		janet_little_cave-LOWp-underlay
+	endmap
+
+	map mXLOWp-underlay -projection plan
+		janet_little_cave-XLOWp-underlay
+	endmap
 	
 	centerline
 		cs epsg:3794 #fix in new slovenian
-		fix 0 404465 124680 1885
+		fix 0 404465 124680 0  #1885
 		date 2019.07.24
 		explo-date 2000.08
 		

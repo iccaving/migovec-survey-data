@@ -1,3 +1,4 @@
+encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
@@ -7,7 +8,6 @@
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
@@ -23,11 +23,6 @@ export model -o ../_outputs/janet_little_cave.3d
 input ../../_layouts/detailed-p.thl
 input ../../_layouts/detailed-e.thl
 
-#----------------------------------------------------------------------------------|
-# select a relevant map (which contains commands for offsets of overlying bits)
-select m-all-e@janet_little_cave
-
-
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
@@ -35,33 +30,179 @@ select m-all-p@janet_little_cave
 
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
-layout local
+layout local-slo
 	copy detailed
-	scale 1 250
+	legend off
+	map-header 0 0 off
+	scale 1 200
+	symbol-show point label
+	symbol-show point gradient
+
+	code metapost
+		## SCALE BAR (modified from contributions by Thomas Holder)
+  
+  		def s_scalebar (expr l, units, txt) =
+  		  begingroup
+  		   interim warningcheck:=0;
+  		   tmp20:=20 * (l / Scale * cm * units / 100);
+  		   tmp40:=40 * (l / Scale * cm * units / 100);
+  		   tmp60:=60 * (l / Scale * cm * units / 100);
+  		   tmp80:=80 * (l / Scale * cm * units / 100);
+  		   tmp100:=100 * (l / Scale * cm * units / 100);
+  		   scal10:=10 * l / 100;
+  		   scal20:=20 * l / 100;
+  		   scal40:=40 * l / 100;
+  		   scal60:=60 * l / 100;
+  		   scal80:=80 * l / 100;
+  		   brht:= 5bp;
+  		   lblht:= 8bp;
+  		  endgroup;
+
+  		  pickup PenD;
+
+  		  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+  		  draw (tmp20,0)--(tmp20,brht);
+  		  draw (tmp40,0)--(tmp40,brht);
+  		  draw (tmp60,0)--(tmp60,brht);
+  		  draw (tmp80,0)--(tmp80,brht);
+  		  fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
+  		  fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+
+
+  		  begingroup
+  		   label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+  		   label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
+  		   label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
+  		   label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
+  		   label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
+  		   label.top(thTEX(decimal (0)),origin+(0,lblht));
+  		   label.bot(thTEX("TLORIS 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+  		  endgroup
+  		 enddef; 
+	endcode
+
 	code tex-map
-	\def\maplayout{
-	\legendbox{0}{180}{NW}{\size[26]\the\cavename}
-	\legendbox{50}{120}{N}{\scalebar}
-	\legendbox{50}{150}{N}{\northarrow}
+		\def\maplayout{
+		\legendbox{2}{105}{SW}{\size[25]\the\cavename}
+		\legendbox{105}{88}{N}{\scalebar}
+		\legendbox{105}{92}{S}{\northarrow}
 	}
 	endcode
 endlayout
 
-#----------------------------------------------------------------------------------|
-# export the pdf map containing plan and elevation
-export map -o ../_outputs/janet_little_cave_plan.pdf -projection plan -layout local
+layout local-en
+	copy detailed
+	legend off
+	map-header 0 0 off
+	scale 1 200
+	symbol-show point label
+	symbol-show point gradient
+	language en
 
-
+	code tex-map
+		\def\maplayout{
+		\legendbox{2}{105}{SW}{\size[25]\the\cavename}
+		\legendbox{105}{88}{N}{\scalebar}
+		\legendbox{105}{92}{S}{\northarrow}
+	}
+	endcode
+endlayout
 #----------------------------------------------------------------------------------|
-# define a local layout without legend or header for extended elevation
-layout local-e
+# select a relevant map (which contains commands for offsets of overlying bits)
+select m-all-e@janet_little_cave
+
+layout local-e-slo
 	copy detailed-e
 	legend off
-	map-header 100 0 off
-	scale 1 250
+	map-header 0 0 off
 	grid-size 10 10 5 m
+	map-header 0 0 off
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show area snow
+	scale 1 200
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{2}{125}{SW}{\size[25]\the\cavename}
+		\legendbox{35}{120}{N}{\scalebar}
+	}
+	endcode
+	code metapost
+	
+	def s_scalebar (expr l, units, txt) =
+  		  begingroup
+  		   interim warningcheck:=0;
+  		   tmp20:=20 * (l / Scale * cm * units / 100);
+  		   tmp40:=40 * (l / Scale * cm * units / 100);
+  		   tmp60:=60 * (l / Scale * cm * units / 100);
+  		   tmp80:=80 * (l / Scale * cm * units / 100);
+  		   tmp100:=100 * (l / Scale * cm * units / 100);
+  		   scal10:=10 * l / 100;
+  		   scal20:=20 * l / 100;
+  		   scal40:=40 * l / 100;
+  		   scal60:=60 * l / 100;
+  		   scal80:=80 * l / 100;
+  		   brht:= 5bp;
+  		   lblht:= 8bp;
+  		  endgroup;
+
+  		  pickup PenD;
+
+  		  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+  		  draw (tmp20,0)--(tmp20,brht);
+  		  draw (tmp40,0)--(tmp40,brht);
+  		  draw (tmp60,0)--(tmp60,brht);
+  		  draw (tmp80,0)--(tmp80,brht);
+  		  fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
+  		  fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+
+
+  		  begingroup
+  		   label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+  		   label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
+  		   label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
+  		   label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
+  		   label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
+  		   label.top(thTEX(decimal (0)),origin+(0,lblht));
+  		   label.bot(thTEX("PROFIL 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+  		  endgroup
+  		 enddef; 
+	endcode
+
+	#map-image -2 102 ne "../_outputs/janet_little_cave_plan_EN.pdf"
 endlayout
 
+layout local-e-en
+	copy detailed-e
+	legend off
+	map-header 0 0 off
+	grid-size 10 10 5 m
+	map-header 0 0 off
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show area snow
+	scale 1 200
+
+	language en
+	code tex-map
+		\def\maplayout{
+		\legendbox{2}{125}{SW}{\size[25]\the\cavename}
+		\legendbox{35}{120}{N}{\scalebar}
+	}
+	
+endlayout
 #----------------------------------------------------------------------------------|
-# export the pdf map in elevation view
-export map -o ../_outputs/janet_little_cave_ee.pdf -projection extended -layout local-e
+# define a local layout without legend or header for extended elevation
+
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+
+language sl
+export map -o ../_outputs/janet_little_cave_profil_SLO.pdf -projection extended -layout local-e-slo
+export map -o ../_outputs/janet_little_cave_tloris_SLO.pdf -projection plan -layout local-slo
+
+language en
+export map -o ../_outputs/janet_little_cave_EE_EN.pdf -projection extended -layout local-e-en
+export map -o ../_outputs/janet_little_cave_plan_EN.pdf -projection plan -layout local-en
+
