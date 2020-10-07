@@ -1,0 +1,78 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+
+scrap DELETE-ME-survey-legs-p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
+
+line survey 
+  227.72 470.75
+  209.53 476.02
+endline
+
+line survey 
+  266.46 472.8
+  227.72 470.75
+endline
+
+line survey 
+  287.72 482.72
+  266.46 472.8
+endline
+
+line survey 
+  290.47 478.62
+  287.72 482.72
+endline
+
+line survey 
+  281.34 521.54
+  290.47 478.62
+endline
+
+line survey 
+  264.02 529.25
+  281.34 521.54
+endline
+
+endscrap
+
+
+scrap mousse-1p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
+
+line wall 
+  281.5506 486.5104
+  281.5506 486.5104 281.8315 485.106 277.4308 484.3569
+  273.0301 483.6079 271.6256 482.7652 267.5995 481.7352
+  263.5733 480.7053 263.5733 480.9862 260.858 480.2371
+  258.1427 479.4881 243.5361 477.8963 240.4463 477.6154
+  237.3564 477.3345 238.8545 475.4619 233.9857 478.2708
+  229.1168 481.0798 230.2404 480.9862 227.4315 482.297
+  224.6225 483.6079 222.8435 484.5442 220.4091 484.6378
+  217.9746 484.7314 214.323 485.106 212.1695 484.8251
+  210.016 484.5442 207.3006 483.7015 207.1134 482.297
+  206.9261 480.8925 206.6452 472.8402 206.5516 471.9975
+  206.458 471.1548 204.7726 470.2185 208.1433 469.5631
+  211.5141 468.9077 218.0683 468.7204 221.2518 468.1586
+  224.4352 467.5968 239.0418 465.4433 240.9144 467.035
+  242.7871 468.6268 247.4686 470.8739 253.5547 470.7803
+  259.6408 470.6867 269.1912 470.6867 269.6594 470.8739
+  270.1275 471.0612 280.427 475.0873 280.427 475.0873
+endline
+
+point 209.53 476.02 station -name 7
+point 209.53 476.02 station-name -text 7 -align tr -scale xs
+point 227.72 470.75 station -name 6
+point 227.72 470.75 station-name -text 6 -align tr -scale xs
+point 266.46 472.8 station -name 5
+point 266.46 472.8 station-name -text 5 -align tr -scale xs
+point 287.72 482.72 station -name 4
+point 287.72 482.72 station-name -text 4 -align tr -scale xs
+point 290.47 478.62 station -name 3
+point 290.47 478.62 station-name -text 3 -align tr -scale xs
+point 281.34 521.54 station -name 2
+point 281.34 521.54 station-name -text 2 -align tr -scale xs
+point 264.02 529.25 station -name 1
+point 264.02 529.25 station-name -text 1 -align tr -scale xs
+endscrap
+

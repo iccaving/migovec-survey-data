@@ -2,164 +2,112 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  637.35 -26.14
-  534.34 -19.53
-endline
-line survey 
-  516.71 -20.08
-  534.34 -19.53
-endline
-line survey 
-  478.97 -23.86
-  516.71 -20.08
-endline
-line survey 
-  435.50 -23.54
-  478.97 -23.86
-endline
-line survey 
-  400.33 -22.20
-  435.50 -23.54
-endline
-line survey 
-  386.79 -22.36
-  400.33 -22.20
-endline
-line survey 
-  357.71 -15.43
-  386.79 -22.36
-endline
-line survey 
-  332.49 -17.95
-  357.71 -15.43
-endline
-line survey 
-  276.82 -14.72
-  332.49 -17.95
-endline
-line survey 
-  233.68 -15.20
-  276.82 -14.72
-endline
-line survey 
-  233.68 -15.20
-  211.74 -5.28
-endline
-line survey 
-  5.90 12.05
-  -33.94 24.96
-endline
-line survey 
-  5.90 12.05
-  44.68 26.14
-endline
-line survey 
-  84.45 15.51
-  44.68 26.14
-endline
-line survey 
-  84.45 15.51
-  119.19 9.37
-endline
-line survey 
-  211.74 -5.28
-  119.19 9.37
-endline
-line survey 
-  211.74 -5.28
-  163.12 -8.43
-endline
-line survey 
-  99.65 -16.85
-  163.12 -8.43
-endline
-line survey 
-  99.65 -16.85
-  51.31 -17.40
-endline
-line survey 
-  -134.89 -4.57
-  51.31 -17.40
-endline
-line survey 
-  -134.89 -4.57
-  -188.30 -17.80
-endline
-line survey 
-  -188.30 -17.80
-  -217.82 -18.19
-endline
-line survey 
-  -285.98 -24.02
-  -217.82 -18.19
-endline
-line survey 
-  -285.98 -24.02
-  -308.83 -18.43
-endline
-line survey 
-  -308.83 -18.43
-  -387.64 -16.69
-endline
-line survey 
-  -387.64 -16.69
-  -436.62 -19.13
-endline
-line survey 
-  -510.71 -17.48
-  -436.62 -19.13
-endline
-line survey 
-  -510.71 -17.48
-  -530.13 -25.04
-endline
-line survey 
-  -546.25 -25.83
-  -530.13 -25.04
-endline
-line survey 
-  -546.25 -25.83
-  -556.55 -25.43
-endline
-line survey 
-  -637.35 -7.48
-  -556.55 -25.43
-endline
-endscrap
 
 scrap highway32-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 534.34 -19.53 station -name 31
-point 637.35 -26.14 station -name 32
-point 516.71 -20.08 station -name 30
-point 478.97 -23.86 station -name 29
-point 435.50 -23.54 station -name 28
-point 400.33 -22.20 station -name 27
-point 386.79 -22.36 station -name 26
-point 357.71 -15.43 station -name 25
-point 332.49 -17.95 station -name 24
-point 276.82 -14.72 station -name 23
-point 233.68 -15.20 station -name 22
-point 211.74 -5.28 station -name 16
-point -33.94 24.96 station -name 21
-point 5.90 12.05 station -name 20
-point 44.68 26.14 station -name 19
-point 84.45 15.51 station -name 18
-point 119.19 9.37 station -name 17
-point 163.12 -8.43 station -name 15
-point 99.65 -16.85 station -name 14
-point 51.31 -17.40 station -name 13
-point -134.89 -4.57 station -name 12
-point -188.30 -17.80 station -name 11
-point -217.82 -18.19 station -name 10
-point -285.98 -24.02 station -name 9
-point -308.83 -18.43 station -name 8
-point -387.64 -16.69 station -name 7
-point -436.62 -19.13 station -name 6
-point -510.71 -17.48 station -name 5
-point -530.13 -25.04 station -name 4
-point -546.25 -25.83 station -name 3
-point -556.55 -25.43 station -name 2
-point -637.35 -7.48 station -name 1
+
+line wall -close on -outline in
+  571.0604 1067.2582
+  574.4231 1067.7881 589.3941 1065.3909 596.1843 1065.9002
+  602.9746 1066.4094 620.799 1063.6933 627.4195 1061.6563
+  634.04 1059.6192 687.5132 1053.1684 687.5132 1053.1684
+  687.5132 1053.1684 653.7317 1051.9801 647.7903 1051.9801
+  641.8488 1051.9801 570.5511 1041.2855 559.6867 1042.6435
+  548.8223 1044.0016 523.3588 1047.7362 523.3588 1047.7362
+  523.6984 1051.6406
+  523.6984 1051.6406 529.1306 1058.2611 534.0535 1059.4494
+  538.9764 1060.6377 571.0604 1067.2582 571.0604 1067.2582
+endline
+
+point 279.8837 982.2694 water-flow -orientation 250.53245
+point 862.5707 1022.174 water-flow -orientation 250.53245
+line wall 
+  -360.1186 1010.4166
+  -352.0546 1012.1074 -236.6019 996.8001 -220.034 996.7896
+  -164.9356 996.7547 7.9802 1003.0197 34.5703 1003.0197
+  63.3789 1003.0197 251.5952 1003.98 263.1186 1004.9403
+  274.6421 1005.9006 287.1258 1002.5396 280.4038 996.7779
+  273.6818 991.0162 261.6782 984.7743 261.6782 984.7743
+endline
+
+line wall -close on -outline in
+  391.4582 1017.1801
+  391.4582 1017.1801 414.2055 1022.2728 417.6006 1024.3099
+  420.9958 1026.3469 490.9354 1025.3284 501.1208 1019.5567
+  511.3062 1013.785 546.955 1024.9889 551.7082 1025.3284
+  556.4613 1025.6679 638.9629 1022.2728 646.7717 1018.8777
+  654.5805 1015.4825 779.5212 1018.5381 787.33 1019.2172
+  795.1388 1019.8962 809.0588 1014.464 803.2871 1009.3713
+  797.5154 1004.2786 758.8109 1011.4084 740.1377 1006.3157
+  721.4645 1001.223 667.8215 1009.0318 655.2595 1011.4084
+  642.6976 1013.785 633.1912 1009.7108 625.0429 1005.6367
+  616.8946 1001.5625 576.8321 1003.9391 562.2331 999.8649
+  547.634 995.7908 371.7664 994.0932 364.2971 1000.544
+  356.8279 1006.9947 376.5196 1012.0874 391.4582 1017.1801
+endline
+
+line wall 
+  203.0286 1055.8845
+  160.929 1049.7733 124.9407 1047.7362 93.0265 1049.7733
+  61.1123 1051.8104 64.5074 1055.8845 31.2352 1050.4523
+  -2.0371 1045.0201 -25.803 1040.946 -38.7044 1038.9089
+  -51.6059 1036.8718 -118.8294 1049.0943 -126.2987 1047.7362
+  -133.768 1046.3782 -255.3136 1047.7362 -272.9682 1045.6992
+  -290.6229 1043.6621 -331.7039 1046.7177 -357.5069 1048.4153
+endline
+
+line wall 
+  896.0111 1045.6508
+  888.2023 1043.1045 873.9057 1038.9089 861.6833 1049.0943
+  849.4608 1059.2797 848.7818 1066.7489 823.6578 1075.5763
+  798.5339 1084.4036 611.8019 1095.268 580.5667 1094.589
+  549.3316 1093.91 509.2691 1070.1441 487.5403 1064.0328
+  465.8114 1057.9216 248.5233 1053.8475 248.5233 1053.8475
+endline
+
+line wall 
+  278.4004 968.9693
+  313.7097 979.1547 432.5392 975.0805 463.7744 981.8708
+  495.0095 988.661 630.1356 983.9078 642.358 987.303
+  654.5805 990.6981 757.7924 996.1303 807.3612 1000.8835
+  856.9301 1005.6367 903.9489 1003.9381 909.9353 1001.559
+endline
+
+point 815.4565 1027.5272 station -name 31
+point 918.4665 1020.9172 station -name 32
+point 797.8265 1026.9772 station -name 30
+point 760.0865 1023.1972 station -name 29
+point 716.6165 1023.5172 station -name 28
+point 681.4465 1024.8572 station -name 27
+point 667.9065 1024.6972 station -name 26
+point 638.8265 1031.6272 station -name 25
+point 613.6065 1029.1072 station -name 24
+point 557.9365 1032.3372 station -name 23
+point 514.7965 1031.8572 station -name 22
+point 492.8565 1041.7772 station -name 16
+point 444.2365 1038.6272 station -name 15
+point 380.7665 1030.2072 station -name 14
+point 332.4265 1029.6572 station -name 13
+point 146.2265 1042.4872 station -name 12
+point 92.8165 1029.2572 station -name 11
+point 63.2965 1028.8672 station -name 10
+point -4.8635 1023.0372 station -name 9
+point -27.7135 1028.6272 station -name 8
+point -106.5235 1030.3672 station -name 7
+point -155.5035 1027.9272 station -name 6
+point -229.5935 1029.5772 station -name 5
+point -249.0135 1022.0172 station -name 4
+point -265.1335 1021.2272 station -name 3
+point -275.4335 1021.6272 station -name 2
+point -356.2335 1039.5772 station -name 1
 endscrap
+
+
+scrap highway32-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
+
+point 247.1765 1072.0172 station -name 21
+point 287.0165 1059.1072 station -name 20
+point 325.7965 1073.1972 station -name 19
+point 365.5665 1062.5672 station -name 18
+point 400.3065 1056.4272 station -name 17
+endscrap
+
