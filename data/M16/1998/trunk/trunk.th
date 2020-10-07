@@ -7,6 +7,22 @@ map m-all-e -projection extended
     trunk-1e
 endmap
 
+
+input trunk-p.th2
+
+map m-all-p -projection plan
+    m1p
+    m2p    
+endmap
+
+map m1p -projection plan
+    trunk-1p
+endmap
+
+map m2p -projection plan
+    trunk-2p
+endmap
+
 centreline
     team "Colm Carroll" insts
     team "James Hooper" notes

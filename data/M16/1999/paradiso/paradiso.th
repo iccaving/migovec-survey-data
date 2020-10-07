@@ -8,6 +8,13 @@ map m-all-e -projection extended
     paradiso-1e
 endmap
 
+
+input paradiso-p.th2
+
+map m-all-p -projection plan
+    paradiso-1p
+endmap
+
 centreline
     team "Michael Rogerson" insts
     team "Thomas Ayles" notes

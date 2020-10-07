@@ -1,0 +1,128 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+
+scrap DELETE-ME-survey-legs-p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
+
+line survey 
+  214.41 503.62
+  191.5 484.41
+endline
+
+line survey 
+  214.41 503.62
+  214.41 503.62
+endline
+
+line survey 
+  214.41 503.62
+  214.41 503.62
+endline
+
+line survey 
+  242.13 524.49
+  214.41 503.62
+endline
+
+line survey 
+  242.13 524.49
+  242.13 524.49
+endline
+
+line survey 
+  256.06 531.89
+  242.13 524.49
+endline
+
+line survey 
+  259.53 529.69
+  256.06 531.89
+endline
+
+line survey 
+  251.02 573.7
+  259.53 529.69
+endline
+
+line survey 
+  308.5 460.94
+  251.02 573.7
+endline
+
+line survey 
+  285.98 426.3
+  308.5 460.94
+endline
+
+endscrap
+
+
+scrap paradiso-1p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
+
+line border:invisible -close on -id blocks1
+  216.2893 490.6302
+  216.2893 490.6302 237.8246 504.1132 238.9482 506.1731
+  240.0717 508.233 237.6373 526.2103 237.2628 527.1466
+  236.8883 528.0829 215.353 544.0003 207.1134 544.0003
+  198.8738 544.0003 193.8177 541.3786 192.3196 540.4423
+  190.8214 539.506 187.638 537.8206 187.4507 533.139
+  187.2634 528.4574 181.271 509.7311 181.271 509.7311
+  181.271 509.7311 181.4583 499.0571 181.0838 498.4953
+  180.7092 497.9335 185.5781 491.9411 187.638 491.0048
+  189.6979 490.0684 209.3605 489.5067 209.3605 489.5067
+endline
+
+line wall 
+  207.4879 483.8888
+  231.8322 493.6264
+  231.8322 493.6264 245.6896 500.3679 245.3151 501.866
+  244.9406 503.3641 245.6896 508.233 248.3113 510.1056
+  250.933 511.9783 260.6707 515.7235 260.6707 515.7235
+  260.6707 515.7235 265.5396 519.0943 266.2886 520.9669
+  267.0377 522.8396 267.7867 541.1914 267.7867 543.4385
+  267.7867 545.6857 262.9179 558.7941 262.5434 560.6668
+  262.1688 562.5394 258.5975 570.1343 251.02 575.7
+  243.4425 581.2657 228.4614 583.5129 228.4614 583.5129
+endline
+
+line wall 
+  228.4614 583.5129
+  207.8624 578.6441
+  207.8624 578.6441 199.6228 577.895 196.6266 575.6478
+  193.6304 573.4007 191.0087 568.1573 190.2597 566.6592
+  189.5106 565.1611 190.2597 554.2998 190.2597 554.2998
+  190.2597 554.2998 193.2559 552.4272 190.6342 548.6819
+  188.0125 544.9366 188.7616 546.0602 186.8889 543.8131
+  185.0163 541.5659 181.6456 538.5697 181.6456 535.948
+  181.6456 533.3263 183.1436 523.5886 182.7691 519.0943
+  182.3946 514.6 181.271 509.7311 181.271 509.7311
+  175.2786 504.1132
+  172.2824 497.3717
+  176.7767 484.6378
+endline
+
+point 191.5 484.41 station -name 11
+point 191.5 484.41 station-name -text 11 -align tr -scale xs
+point 214.41 503.62 station -name 10
+point 214.41 503.62 station-name -text 10 -align tr -scale xs
+point 214.41 503.62 station -name 9
+point 214.41 503.62 station-name -text 9 -align tr -scale xs
+point 214.41 503.62 station -name 8
+point 214.41 503.62 station-name -text 8 -align tr -scale xs
+point 242.13 524.49 station -name 7
+point 242.13 524.49 station-name -text 7 -align tr -scale xs
+point 242.13 524.49 station -name 6
+point 242.13 524.49 station-name -text 6 -align tr -scale xs
+point 256.06 531.89 station -name 5
+point 256.06 531.89 station-name -text 5 -align tr -scale xs
+point 259.53 529.69 station -name 4
+point 259.53 529.69 station-name -text 4 -align tr -scale xs
+point 251.02 573.7 station -name 3
+point 251.02 573.7 station-name -text 3 -align tr -scale xs
+point 308.5 460.94 station -name 2
+point 308.5 460.94 station-name -text 2 -align tr -scale xs
+point 285.98 426.3 station -name 1
+point 285.98 426.3 station-name -text 1 -align tr -scale xs
+endscrap
+
