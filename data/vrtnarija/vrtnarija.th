@@ -123,6 +123,12 @@ survey vrtnarija -title "Vrtnarija"
 	join lowerfallsrd-1p@lowerfallsrd fallsrd-2p@fallsrd
 	join highway32-3p@highway32 candyMountain-1p@candyMountain
 	
+	join candyMountain-1e@candyMountain friendship-1e@friendship
+	join highway32-1e@highway32 candyMountain-1e@candyMountain
+	join weepeople-1e@weepeople leprachaun-1e@leprachaun
+	join gold-1e@gold weepeople-1e@weepeople
+	join gold-1e@gold nitro-1e@nitro
+	
 	###__________2004____________###
 	input "./2004/nitro/nitro.th"
 	input "./2004/mad_cow/mad_cow.th"
@@ -170,7 +176,7 @@ survey vrtnarija -title "Vrtnarija"
 	join blind-1p@blind doublethink-1p@doublethink
 	join cow-1p@cow gold-1p@gold
 	join miles-3p@miles beyond-1p@beyond
-
+	
 	###__________2005____________###
 	input ./2005/olympicrift/olympicrift.th
 	input ./2005/scrotty/scrotty.th
@@ -712,7 +718,7 @@ survey vrtnarija -title "Vrtnarija"
 	join lazarus-1p@lazarus miles-3p@miles
 	join trueadventures-3p@trueadventures colarado-1p@colarado
 	join andreabocelli-1p@andreabocelli dinnerservice-1p@dinnerservice
-	join void2-1p@void2 dinnerservice-1p@dinnerservice 
+	join void2-1p@void2 dinnerservice-1p@dinnerservice
 	join void2-1p@void2 nitro-1p@nitro
 	
 endsurvey

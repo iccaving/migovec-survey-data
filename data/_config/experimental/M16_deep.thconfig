@@ -1,0 +1,13 @@
+encoding  utf-8
+source ../../system_migovec.th
+
+input ../../_layouts/base-p.thl
+
+select m-all-p@M16.m2m16m18.system_migovec
+
+layout local 
+	copy base-p
+	scale 1 2000
+endlayout
+
+export map -o ../../_outputs/map/m16.pdf -projection plan -layout local

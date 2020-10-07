@@ -7,6 +7,27 @@ map m-all-e -projection extended
     penelope-1e
 endmap
 
+
+input penelope-p.th2
+
+map m-all-p -projection plan
+    m3p
+    m2p
+    m1p
+endmap
+
+map m1p -projection plan
+    penelope-1p
+endmap
+map m2p -projection plan
+    penelope-2p
+endmap
+map m3p -projection plan
+    penelope-3p
+endmap
+
+join penelope-2p penelope-3p
+
 centreline
     team "Hillary Greaves" insts
     team "James Hooper" notes

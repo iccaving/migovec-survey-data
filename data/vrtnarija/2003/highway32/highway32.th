@@ -1,4 +1,3 @@
-
 survey highway32 -title "Highway 32"
 	
 	input "highway32-p.th2"
@@ -13,13 +12,14 @@ survey highway32 -title "Highway 32"
 	join highway32-3p highway32-2p
 	join highway32-2p highway32-1p
 	
-
-input highway32-e.th2
-
-map m-all-e -projection extended
-    highway32-1e
-endmap
-
+	
+	input highway32-e.th2
+	
+	map m-all-e -projection extended
+		highway32-1e
+		highway32-2e
+	endmap
+	
 	centreline
 		team "James Roberts" insts
 		team "James Hooper" notes
