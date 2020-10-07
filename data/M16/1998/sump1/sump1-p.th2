@@ -1,35 +1,75 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+scrap DELETE-ME-survey-legs-p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
+
 line survey 
-  14.49 52.83
-  19.61 -93.31
+  264.49 552.83
+  269.61 406.69
 endline
+
 line survey 
-  9.76 82.60
-  14.49 52.83
+  259.76 582.6
+  264.49 552.83
 endline
+
 line survey 
-  -19.61 47.56
-  9.76 82.60
+  230.39 547.56
+  259.76 582.6
 endline
+
 line survey 
-  -13.15 93.31
-  -19.61 47.56
+  236.85 593.31
+  230.39 547.56
 endline
+
 endscrap
 
-scrap sump1-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-point 19.61 -93.31 station -name 5
-point 19.61 -93.31 station-name -align tr -scale xs -text 5
-point 14.49 52.83 station -name 4
-point 14.49 52.83 station-name -align tr -scale xs -text 4
-point 9.76 82.60 station -name 3
-point 9.76 82.60 station-name -align tr -scale xs -text 3
-point -19.61 47.56 station -name 2
-point -19.61 47.56 station-name -align tr -scale xs -text 2
-point -13.15 93.31 station -name 1
-point -13.15 93.31 station-name -align tr -scale xs -text 1
+
+scrap sump1-1p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
+
+line wall 
+  277.0127 410.7521
+  277.0127 410.7521 278.072 449.4174 278.072 450.7415
+  278.072 452.0657 274.8941 463.4534 274.8941 467.9555
+  274.8941 472.4576 268.803 517.7437 268.803 517.7437
+  268.803 517.7437 269.0678 544.7564 270.1271 546.6102
+  271.1864 548.464 268.2733 562.5 268.5381 564.8835
+  268.803 567.2669 264.3009 588.5858 261.9174 589.2479
+  259.5339 589.91 257.6801 588.8506 256.7532 588.7182
+  255.8263 588.5858 251.589 586.4672 251.0593 585.8051
+  250.5297 585.143 246.822 583.6864 246.822 583.6864
+  246.822 583.6864 243.6441 583.1568 243.7765 584.3485
+  243.9089 585.5403 242.1875 589.91 242.1875 589.91
+  243.6441 592.4258
+  243.6441 596.5307
+endline
+
+line wall 
+  228.1515 585.0106
+  225.8869 576.1384
+  222.1928 566.7373
+  222.1928 566.7373 222.1928 536.2818 227.2246 534.9576
+  232.2564 533.6335 244.7034 539.7246 244.7034 539.7246
+  253.178 539.4597
+  253.178 539.4597 252.9131 506.6208 255.0318 499.2055
+  257.1504 491.7903 258.4746 485.4343 259.2691 478.8136
+  260.0636 472.1928 257.9449 469.8093 259.2691 462.6589
+  260.5932 455.5085 267.7436 441.4725 265.3602 434.322
+  262.9767 427.1716 262.447 409.428 262.447 409.428
+endline
+
+point 269.61 406.69 station -name 5
+point 269.61 406.69 station-name -text 5 -align tr -scale xs
+point 264.49 552.83 station -name 4
+point 264.49 552.83 station-name -text 4 -align tr -scale xs
+point 259.76 582.6 station -name 3
+point 259.76 582.6 station-name -text 3 -align tr -scale xs
+point 230.39 547.56 station -name 2
+point 230.39 547.56 station-name -text 2 -align tr -scale xs
+point 236.85 593.31 station -name 1
+point 236.85 593.31 station-name -text 1 -align tr -scale xs
 endscrap
+

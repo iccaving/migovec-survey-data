@@ -7,6 +7,13 @@ map m-all-e -projection extended
     paradiso2-1e
 endmap
 
+
+input paradiso2-p.th2
+
+map m-all-p -projection plan
+    paradiso2-1p
+endmap
+
 centreline
     team "Clewin Griffith" insts
     team "Paul Huggins" notes
