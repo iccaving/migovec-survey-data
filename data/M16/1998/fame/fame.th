@@ -1,5 +1,21 @@
 
 survey fame -title "[Passages below antivox]"
+
+input fame-p.th2
+
+map m-all-p -projection plan
+    m1p
+    m2p
+endmap
+
+map m1p -projection plan
+    fame-1p
+endmap
+
+map m2p -projection plan
+    fame-2p
+endmap
+
 centreline
     team "Paul Huggins" insts
     team "James Hooper" notes
