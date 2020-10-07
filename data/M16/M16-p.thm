@@ -2,7 +2,9 @@ map m-all-p -projection plan -title "M16"
 		m-entrance_series-p
 		m-exhibition_road-p 
 		m-galaktika-p
+		m-hole_in_hill-p
 		m-elephant_branch-p
+		m-brokenpencil-p
 		m-hotel_tolminka-p
 	endmap
 
@@ -15,6 +17,14 @@ map m-all-p -projection plan -title "M16"
 		m-all-p@level2n
 		m-all-p@exhib
 		m-all-p@rockroll
+	endmap
+
+	map m-hole_in_hill-p -projection plan
+		m-all-p@paradiso
+		m-all-p@paradiso2
+		m-all-p@below55
+		m-all-p@gloworm
+		m-all-p@penelope
 	endmap
 
 	map m-entrance_series-p -projection plan
@@ -60,8 +70,9 @@ map m-all-p -projection plan -title "M16"
 	map m-brokenpencil-p -projection plan
 		m-all-p@pencil
 		m-all-p@fame
-		
-		m-all-p@
+		m-all-p@marwood
+		m-all-p@sump1
+		m-all-p@sump2
 	endmap
 
 	map m-elephant_branch-p -projection plan
@@ -69,4 +80,6 @@ map m-all-p -projection plan -title "M16"
 		m-all-p@elephant
 		m-all-p@bosh
 		m-all-p@waterloo
+		m-all-p@mousse
+		m-all-p@trunk
 	endmap
