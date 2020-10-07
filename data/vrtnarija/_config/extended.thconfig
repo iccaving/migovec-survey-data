@@ -17,13 +17,13 @@ input "../../_layouts/mods.thl"
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
 
- source
- 	map include-centerline -projection extended
- 		#vrtnarija@system_migovec
- 		m-all-e@vrtnarija.system_migovec
- 	endmap
- endsource
- select include-centerline
+source
+	map include-centerline -projection extended
+		#vrtnarija@system_migovec
+		m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
+	endmap
+endsource
+select include-centerline
 #select m-all-e@vrtnarija.system_migovec
 
 

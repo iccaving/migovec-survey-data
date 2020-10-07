@@ -3,6 +3,7 @@ map m-all-e -projection extended
 	m-entrance-e
 	m-cheetah-e
 	m-beyond-consort-e
+	m-friendship-e
 endmap
 
 map m-entrance-e -projection extended
@@ -41,6 +42,16 @@ map m-beyond-consort-e -projection extended
 	m-all-e@dreamsforthesoul
 endmap
 
+map m-friendship-e -projection extended
+	m-all-e@friendship
+	m-all-e@candyMountain
+	m-all-e@highway32
+	m-all-e@leprachaun
+	m-all-e@weepeople
+	m-all-e@gold
+	m-all-e@nitro
+endmap
+
 
 centreline
 	# Entrance series
@@ -49,13 +60,13 @@ centreline
 	extend left 14@laurel
 	extend right 2@zimmer
 	extend right 11@banzai
-
+	
 	extend right 1@hardy 2@hardy
 	extend right 2@hardy
 	
 	# Ensure main line is down Laurel not Vil
 	extend ignore 15@judge
-
+	
 	#extend prisoners
 	extend left 4@prisoners 3@prisoners
 	extend left 3@prisoners
@@ -76,17 +87,17 @@ centreline
 	extend right 6@intravenus_de_milo
 	extend left 3@dark_tranquillity
 	extend right 8@roaring
-
+	
 	extend right 6@mirage_canyon 5@mirage_canyon
 	extend right 5@mirage_canyon
 	extend left 4@mirage_canyon 3@mirage_canyon
 	extend left 3@mirage_canyon
-
+	
 	extend left 1@intravenus_de_milo 2@intravenus_de_milo
 	extend left 14@mudslump 13@mudslump
 	extend left 13@mudslump
 	extend right 7@mudslump
-
+	
 	
 	# Snap off bottom of Captain K
 	extend ignore 4@fools_road
@@ -179,11 +190,11 @@ centreline
 	extend left 4@consort 5@consort
 	extend left 1@consort 2@consort
 	extend left 7@consort 8@consort
-
+	
 	extend right 4@palace2 3@palace2
 	extend left 3@palace2 2@palace2
 	extend left 2@palace2 1@palace2
-
+	
 	# Snap off wrong way in consort
 	extend ignore 17@consort
 	extend ignore 2@ouroboros
