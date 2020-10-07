@@ -3,4 +3,6 @@ source ../../plateau.th
 #export model -o ../../_outputs/model/plateau.lox
 export model -o ../../_outputs/model/plateau.3d
 
+select m-all-p@plateau -map-level 1
+
 export map -o ../../_outputs/GIS/plateau -fmt esri

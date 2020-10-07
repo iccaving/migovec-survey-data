@@ -1,5 +1,32 @@
 
 survey pencil -title "Pitches below Paradox (Broken Pencil Passages)"
+
+input pencil-p.th2
+
+map m-all-p -projection plan
+    m4p
+    m1p
+    m2p
+    m3p
+endmap
+
+
+map m1p -projection plan
+    pencil-1p
+endmap
+
+map m2p -projection plan
+    pencil-2p
+endmap
+
+map m3p -projection plan
+    pencil-3p
+endmap
+
+map m4p -projection plan
+    pencil-4p
+endmap
+
 centreline
     team "Jim Evans" insts
     team "James Hooper" notes
