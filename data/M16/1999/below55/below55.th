@@ -7,6 +7,31 @@ map m-all-e -projection extended
     below55-1e
 endmap
 
+
+input below55-p.th2
+
+
+map m-all-p -projection plan
+    m1p
+    m2p
+    m3p
+endmap
+
+map m1p -projection plan
+    below55-1p
+endmap
+
+map m2p -projection plan
+    below55-2p
+endmap
+
+map m3p -projection plan
+    below55-3p
+endmap
+
+join below55-3p below55-2p
+join below55-2p below55-1p
+
 centreline
     team "Alva Gosson" insts
     team "Jim Evans" insts

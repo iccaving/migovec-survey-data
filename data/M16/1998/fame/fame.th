@@ -16,6 +16,8 @@ map m2p -projection plan
     fame-2p
 endmap
 
+join fame-1p fame-2p
+
 centreline
     team "Paul Huggins" insts
     team "James Hooper" notes

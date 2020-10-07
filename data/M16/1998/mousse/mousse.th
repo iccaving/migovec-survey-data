@@ -7,6 +7,13 @@ map m-all-e -projection extended
     mousse-1e
 endmap
 
+
+input mousse-p.th2
+
+map m-all-p -projection plan
+    mousse-1p
+endmap
+
 centreline
     team "Kate Atherton" insts
     team "Clewin Griffith" notes

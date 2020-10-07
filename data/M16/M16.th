@@ -239,7 +239,14 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join polter-1e@polter exhib-1e@exhib
 	join disillusion-1e@disillusion polter-1e@polter
 	join disillusion-1e@disillusion waffles-1e@waffles
-	
+	join fame-1p@fame marwood-1p@marwood
+	join fame-2p@fame sump1-1p@sump1
+	join sump1-1p@sump1 sump2-2p@sump2
+	join fame-1p@fame pencil-3p@pencil
+	join trunk-1p@trunk elephant-1p@elephant
+	join mousse-1p@mousse elephant-1p@elephant
+
+
 	###__________1999____________###
 	
 	input ./1999/obelix/obelix.th
@@ -274,6 +281,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	equate 13@hydrant 4@offhyd
 	equate 3@hydrant 9@offhyd
 
+	# extended elevation
 	join hydrant-1e@hydrant hydrant2-1e@hydrant2
 	join offhyd-1e@offhyd hydrant-1e@hydrant
 	join offhyd-2e@offhyd hydrant-1e@hydrant
@@ -289,6 +297,10 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join exhib-1e@exhib skalar-1e@skalar
 	join skalar-1e@skalar skalar2-1e@skalar2
 	join skalar2-1e@skalar2 obelix-1e@obelix
+
+	# plan
+	join paradiso2-1p@paradiso2 paradiso-1p@paradiso
+	join paradiso2-1p@paradiso2 below55-1p@below55
 
 	
 	
@@ -306,6 +318,10 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 
 	join boogywoo-1e@boogywoo toilet-1e@toilet
 	join getafix-1e@getafix obelix-1e@obelix
+
+	join penelope-3p@penelope gloworm-1p@gloworm
+	join gloworm_l2@gloworm below55_l2@below55
+	join gloworm_l1@gloworm below55_l1@below55
 	
 	###__________2001____________###
 	

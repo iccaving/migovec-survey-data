@@ -1,5 +1,23 @@
 
 survey sump2 -title "passage leading down towards sump"
+
+input sump2-p.th2
+
+map m-all-p -projection plan
+    m1p
+    m2p
+endmap
+
+map m1p -projection plan
+    sump2-1p
+endmap
+
+map m2p -projection plan
+    sump2-2p
+endmap
+
+join sump2-2p sump2-1p
+
 centreline
     team "JSPDT" insts
     team "JSPDT" notes
