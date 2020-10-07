@@ -1,5 +1,12 @@
 
 survey marwood -title "main inlet below antivox"
+
+input marwood-p.th2
+
+map m-all-p -projection plan
+    marwood-1p
+endmap
+
 centreline
     team "Jim Evans" insts
     team "Iain McKenna" notes
