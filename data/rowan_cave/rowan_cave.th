@@ -10,7 +10,7 @@ survey rowan_cave -title "<lang:en>Rowan Cave<lang:slo>Jerebika jama"
 	input "rowan_cave-3p.th2"
 	## input "rowan_cave-3s.th2"
 	
-	map m-rowan_cave-p -projection plan
+	map m-all-p -projection plan -title "Rowan cave"
 		m1p
 		m2p
 		m3p
@@ -38,7 +38,7 @@ survey rowan_cave -title "<lang:en>Rowan Cave<lang:slo>Jerebika jama"
 	centerline
 		cs epsg:3794
 
-		fix 0 404460 124948 0 #1819
+		fix 0 404460 124948 1819
 		explo-date 2019.07.20
 		date 2019.07.24
 		

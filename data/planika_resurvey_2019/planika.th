@@ -14,7 +14,7 @@ survey planika -title "Planika Jama"
 	input "planika-2es.th2"
 	input "planika-3es.th2"
 	
-	map m-planika-p -projection plan
+	map m-all-p -projection plan -title "Planika jama"
 		m5p
 		m1p
 		m2p

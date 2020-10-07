@@ -1,0 +1,142 @@
+
+survey M1 -title "M1 repush, resurvey 2007"
+
+
+input M1-p.th2
+
+map m-all-p -projection plan
+    M1-1p
+endmap
+
+
+
+input M1-e.th2
+
+map m-all-e -projection extended
+    M1-1e
+endmap
+
+centreline
+    team "Richard Venn" insts
+    team "Jutta Schnabel" notes
+    explo-team "Richard Venn"
+    explo-team "Jutta Schnabel"
+
+    cs epsg:3794
+    fix 1 404650 124351 1855
+    date 2007.8.3
+    units length meters
+    units compass clino degrees
+    data normal from to tape compass clino ignoreall # Default
+    extend left
+    1	2	2.83	329	-04	#	0 4 1 1	# .1 is red spot by M1
+    extend right
+    3	2	16.15	063	+39	#	3 1 2 1
+    extend right
+    4	3	14.60	007	+69	#	2 0 2 ~20 # .4 is bolt on right side of y-hang
+    extend right
+    4	5	7.40	086	-35	#	5 5 ~20 0
+    extend right
+    6	5	2.33	048	+02	#	0 4 3 1 # 6 is PSS: cairn
+    extend left
+    6	7	6.05	220	-41	#	0 2 1 0 
+    extend vertical
+    7	8	10.02	-	down	#	2 2 10 0
+    extend right
+    9	10	4.55	042	-10	#	6 3 0 1
+    extend right
+    11	10	8.12	036	-46	#	0 2 2 0
+    extend left
+    11	12	3.50	224	-09	#	
+    extend vertical
+    12	13	10.00	-	down	#	there is a lead at 150deg from 13
+    extend right
+    15	14	6.75	069	+44	#
+    extend vertical
+    16	15	14.60	179	+44	#	0 5 20 10
+    extend right
+    16	17	1.05	109	+20	#	1 10 3 0 # .17 is PSS: cairn
+    extend right
+    18	17	25.00	054	+24	#	3 7 0 8
+    extend left
+    19	20	8.96	345	+26	#	0 2 20 0
+    extend right
+    19	17	16.10	057	+31	#
+    extend left
+    21	17	8.00	325	+11	#	0 1 0 1 # lead through squeeze at 21
+    extend right
+    23	22	6.44	131	-09	#	0 1 1 1 # AVEN # 22 is toward squeezy rift
+    extend left
+    23	24	3.60	269	+46	#	1 0 0 1 # 
+    extend left
+    24	25	3.15	233	+09	#	1 0 1 0
+    extend right
+    26	25	5.70	089	+22	#	- - - -
+    extend left
+    26	27	3.65	062	+42	#	0 10 2 1
+    extend right
+    28	27	8.79	131	-39	#	AVEN
+endcentreline
+
+    equate 4 9
+    equate 14 10
+    equate 26 17
+endsurvey
+
+# Converted From SVX
+#;M1 repush, resurvey 2007
+#;M1 repush, resurvey 2007
+#
+#;Date: 3/8/07
+#;Instruments: Richard Venn
+#;Book: Jutta Schnabel
+#
+#;Data entered by Jarvist Frost 3/8/07
+#
+#;data normal bcra grade 5
+#;from	to	tape	comp	clino
+#
+#*entrance M1.1
+#*begin M1
+#1	2	2.83	329	-04	;	0 4 1 1	; .1 is red spot by M1
+#3	2	16.15	063	+39	;	3 1 2 1
+#4	3	14.60	007	+69	;	2 0 2 ~20 ; .4 is bolt on right side of y-hang
+#4	5	7.40	086	-35	;	5 5 ~20 0
+#6	5	2.33	048	+02	;	0 4 3 1 ; 6 is PSS: cairn
+#6	7	6.05	220	-41	;	0 2 1 0 
+#7	8	10.02	-	down	;	2 2 10 0
+#
+#*equate 4 9
+#9	10	4.55	042	-10	;	6 3 0 1
+#11	10	8.12	036	-46	;	0 2 2 0
+#11	12	3.50	224	-09	;	
+#
+#;PAGE 2
+#
+#12	13	10.00	-	down	;	there is a lead at 150deg from 13
+#
+#*equate 14 10
+#15	14	6.75	069	+44	;	
+#16	15	14.60	179	+44	;	0 5 20 10
+#16	17	1.05	109	+20	;	1 10 3 0 ; .17 is PSS: cairn
+#18	17	25.00	054	+24	;	3 7 0 8
+#
+#;17 is the PSS cairn, near some strange rune-like red markings like "RL"
+#
+#19	20	8.96	345	+26	;	0 2 20 0
+#19	17	16.10	057	+31	;
+#21	17	8.00	325	+11	;	0 1 0 1 ; lead through squeeze at 21
+#
+#;PAGE 3
+#
+#*equate 26 17
+#23	22	6.44	131	-09	;	0 1 1 1 ; AVEN ; 22 is toward squeezy rift
+#23	24	3.60	269	+46	;	1 0 0 1 ; 
+#24	25	3.15	233	+09	;	1 0 1 0
+#26	25	5.70	089	+22	;	- - - -
+#
+#26	27	3.65	062	+42	;	0 10 2 1
+#28	27	8.79	131	-39	;	AVEN
+#
+#*end M1
+#

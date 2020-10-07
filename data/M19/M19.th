@@ -453,7 +453,7 @@ survey M19 -title "M19"
 	input "M19-234p.th2"
 	input "M19-1s.th2"
 	
-	map m-m19-p -projection plan
+	map m-all-p -projection plan -title "M19"
 		m1p
 		m6p
 		m4p

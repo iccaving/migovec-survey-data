@@ -4,7 +4,7 @@ survey gondolin -title "Gondolin"
 	input "gondolin-p.th2"
 	input "gondolin-e.th2"
 	
-	map m-all-p -projection plan
+	map m-all-p -projection plan -title "Gondolin"
 		mgondolin-1p
 		mgondolin-2p
 		mgondolin-3p

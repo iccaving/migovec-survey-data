@@ -36,14 +36,14 @@ select {name}@{namespace}
 export map -projection {projection} -o xvi.xvi -layout test -layout-debug station-names'''
 
 scrap_file = '''encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust -250 -500 250 500
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-{projection_short} -projection {projection} -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap DELETE-ME-survey-legs-{projection_short} -projection {projection} -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 {lines}
 endscrap
 
-scrap {name}-1{projection_short} -projection {projection} -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap {name}-1{projection_short} -projection {projection} -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 {points}
 endscrap
 '''
@@ -58,6 +58,7 @@ endmap
 '''
 
 point = """point {x} {y} station -name {station}"""
+station_name = """point {x} {y} station-name -align tr -scale xs -text {station}"""
 
 line_t = """line survey 
   {x1} {y1}
@@ -113,6 +114,7 @@ with open('xvi.xvi', 'r') as f:
             if station not in seen:
                 seen.add(station)
                 points.append(point.format(x=x, y=y, station=station))
+                points.append(station_name.format(x=x, y=y, station=station))
         match = re.search(
             "^\s*{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*.*}", line)
         if match:

@@ -6,7 +6,7 @@ survey bertipot -title "Bertijeva jama"
    input "bertipot-AVENCHAMBERp.th2"
    input "bertipot-AVENCHAMBERs.th2"
 
-   map m-all-p -projection plan
+   map m-all-p -projection plan -title "Bertijeva jama"
      m3p
      m-124-p [-10 0 m] none
      m-underlay2-p
@@ -57,7 +57,7 @@ survey bertipot -title "Bertijeva jama"
     date 2020.08.07 
 
     cs epsg:3794
-    fix 10 403706 125587 0 #1749
+    fix 10 403706 125587 1749
     team "Tanguy Racine" insts dog notes
     team "Chloe Snowling" insts
 
