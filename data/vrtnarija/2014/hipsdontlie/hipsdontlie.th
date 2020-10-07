@@ -1,10 +1,10 @@
 
 survey hipsdontlie -title "Hips Don't Lie"
 
-input hipsdontlie-e.th2
+input hipsdontlie-p.th2
 
-map m-all-e -projection extended
-    hipsdontlie-1e
+map m-all-p -projection plan
+    hipsdontlie-1p
 endmap
 
 centreline
@@ -22,7 +22,7 @@ centreline
     6	5	1.73	080	+26
     7	6	6.30	330	+04
     8	7	3.83	011	-09
-    9	8	1.07	060	-29
+    2	8	1.07	060	-29
 endcentreline
 endsurvey
 

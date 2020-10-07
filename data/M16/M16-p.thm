@@ -56,7 +56,13 @@ map m-all-p -projection plan -title "M16"
 		m-all-p@wonder
 		m-all-p@deep
 	endmap
-	
+
+	map m-brokenpencil-p -projection plan
+		m-all-p@pencil
+		m-all-p@fame
+		
+		m-all-p@
+	endmap
 
 	map m-elephant_branch-p -projection plan
 		m-all-p@adder
