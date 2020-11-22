@@ -16,9 +16,8 @@ source "../../m2m16m18.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/base-p.thl"
+input "../../_layouts/overview-p.thl"
 input "../../_layouts/base-e.thl"
-input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -27,8 +26,7 @@ select m-all-p@m2m16m18
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview_plan_SLO or ENG
 layout plan
-	copy base-p
-	copy subsystem_overview
+	copy overview
 	scale 1 500
 	#copy colour-by-depth
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
@@ -40,6 +38,34 @@ layout plan
 	\legendbox{30}{170}{NW}{\scalebar}
 	\legendbox{30}{150}{NW}{\northarrow}
 	}
+
+	code metapost
+	
+  	def p_u_label_MY (expr P,R,S,A)=
+  		T:=identity shifted P;
+    	U:=(0,0);
+    	save lvl;
+    	save style;
+    	if known ATTR_style:
+    		style:= scantokens(ATTR_style);
+    	else:
+    		style :=0;
+    	fi;
+    	if known ATTR_text:
+    		 if known ATTR_lvl:
+    		 lvl := scantokens(ATTR_lvl);
+    		 else: lvl :=0;
+    		 fi;
+    		 if lvl < 3:
+      			U:=(S*u*(length ATTR_text)/4,S*u*(length ATTR_text)/4);
+      			create_styled_label(ATTR_text,P,R,S,A,style);
+      		else:;
+    		fi;
+    	fi;
+  	enddef;
+		initsymbol("p_u_label_MY");
+		
+	endcode
 endlayout
 
 language fr

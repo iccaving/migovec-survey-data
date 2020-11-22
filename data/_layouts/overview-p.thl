@@ -1,0 +1,159 @@
+layout overview
+	scale 1 2000
+	fonts-setup 6 8 10 12 14
+
+	code metapost
+
+		% https://www.mail-archive.com/therion@speleo.sk/msg07234.html
+        % define a custom attribute called label_mode
+
+	vardef create_styled_label (expr plaintext,P,R,S,A,defaultstyle)=
+    save textsize, style, thetext, sufx, athick;
+    string textsize;
+    if S = 0.5:
+      textsize:="\thtinysize";
+    elseif S = 0.7:
+      textsize:="\thsmallsize";
+    elseif S = 1.4:
+      textsize:="\thlargesize";
+    elseif S = 2:
+      textsize:="\thhugesize";
+    else: % normal is 1
+      textsize:="\thnormalsize";
+    fi;
+    if known ATTR_labelstyle:
+      style:=scantokens(ATTR_labelstyle);
+    else:
+      style:=defaultstyle;
+    fi;
+    picture thetext;
+    thetext:=thTEX("\thframed {" & textsize &" "& plaintext & "}");
+    % store the alignment suffix as a string, it will be turned back into a suffix with scantokens
+    string sufx;
+    if A = (-1,1):
+      sufx:="ulft";
+    elseif A = (0,1):
+      sufx:="top";
+    elseif A = (1,1):
+      sufx:="urt";
+    elseif A = (-1,0):
+      sufx:="lft";
+    elseif A = (1,0):
+      sufx:="rt";
+    elseif A = (-1,-1):
+      sufx:="llft";
+    elseif A = (0,-1):
+      sufx:="bot";
+    elseif A = (1,-1):
+      sufx:="lrt";
+    else:
+      sufx:="";
+    fi;
+    if style >= 100:
+      % create the label, passing the alignment as a suffix
+      lab:=thelabel.scantokens(sufx)(thetext,P);
+      % process_label looks for a variable called "lab"
+      process_label(P,R);
+      % define all the different ornamentations that you want
+      if style = 100:
+        pickup PenA;
+        athick:=(xpart (lrcorner PenA)) - (xpart (llcorner PenA));
+        % make bounding box measurements temporarily be larger than the object being measured
+        % "interim" modifies internal variable, must be inside vardef or def+begingroup to make
+        % sure it gets reset to default correctly afterwards
+        interim bboxmargin:=5athick;
+        % rounded rectangle
+        % rotating around P is undesirable when alignment is also used, but this is what regular labels do
+        draw ((bbox lab) smoothed 5athick) rotatedaround (P,R) dashed evenly;
+      fi;
+    else:
+      % create the label, passing the alignment as a suffix
+      p_label.scantokens(sufx)(thetext,P,R,style);
+    fi;
+  enddef;
+
+  def l_survey_cave_MY (expr P) =
+      T:=identity;
+      draw P withpen PenD withcolor (0.7,0,0);
+    enddef;
+
+# CLAY
+    beginpattern(pattern_clay_MY);
+          pickup PenC;
+          p:=(-.05u,0)--(.05u,0);
+          draw p;
+          patternxstep(0.3u);
+          patternystep(0.03u);
+          patterncolor(0.3,0.3,0.3);
+      endpattern;
+
+    def a_clay_MY (expr path)=
+      T:=identity;
+      thclean path;
+      thfill path withpattern pattern_clay_MY;
+    enddef;
+
+  # WATER
+    def a_water_MY (expr p) =
+      T:=identity;
+      thfill p withcolor (0.85,0.85,0.85);
+    enddef;
+  initsymbol("a_water_MY");
+
+  # WATER
+    def a_sump_MY (expr p) =
+      T:=identity;
+      thfill p withcolor (0.35,0.35,0.35);
+    enddef;
+  initsymbol("a_sump_MY");
+
+  # BOULDER FLOOR
+  def a_u_smallblocks_MY (expr p) =
+    T:=identity;
+    pickup PenD;
+    path q, qq; q = bbox p;
+    picture tmp_pic;
+    uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
+    tmp_pic := image(
+      for i = xpart llcorner q step 0.4uu until xpart urcorner q:
+        for j = ypart llcorner q step 0.4uu until ypart urcorner q:
+          k := (4+normaldeviate)/5;
+
+          qq := punked (((-.17uu,.07uu)--(-.17uu,-.07uu)--(0,-.12uu)--(.17uu,-.08uu)--(.15uu,.06uu)--(0,.13uu)--cycle)
+         randomized (uu/9))
+           rotated uniformdeviate(360)
+           scaled k
+           shifted ((i,j) randomized 0.25uu);
+
+    if xpart (p intersectiontimes qq) < 0:
+      thclean qq;
+      thdraw qq withcolor(0.3,0.3,0.3);
+    fi;
+        endfor;
+      endfor;
+    );
+    clip tmp_pic to p;
+    drawoptions();
+    draw tmp_pic;
+  enddef;
+  
+
+  initsymbol("l_survey_cave_MY");
+  initsymbol("a_clay_MY");
+  initsymbol("a_u_smallblocks_MY");
+
+
+
+  endcode
+
+  symbol-hide point station
+  symbol-hide point passage-height
+  symbol-hide line label
+  symbol-hide line gradient
+  symbol-assign area water MY
+  symbol-assign area sump MY
+  symbol-assign area clay MY
+  symbol-assign line survey MY
+
+
+endlayout
