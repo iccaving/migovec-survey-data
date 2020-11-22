@@ -45,7 +45,7 @@ endscrap
 
 scrap sidewinder-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 391.1187 575.8135 label -align l -scale m -text Sidewinder
+point 391.1187 575.8135 u:label_MY -align l -scale m -attr lvl 0 -attr text Sidewinder
 line wall 
   389.0816 1129.8982
   389.0816 1129.8982 406.6402 955.4292 429.1441 928.9068

@@ -22,14 +22,12 @@ input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-# select m-all-p@system_migovec
+ select m-all-p@system_migovec
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
 layout plan
-	copy base-p
-	copy general_overview
-	colour map-fg altitude
+	copy subsystem_overview
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
 	code tex-map
 	\framethickness=0.5mm
@@ -37,29 +35,28 @@ layout plan
 	\legendbox{-5}{99}{NW}{\size[26]\the\cavename}
 	\legendbox{-5}{95}{NW}{\size[10]\the\comment}
 	\legendbox{5}{70}{NW}{\scalebar}
-	\legendbox{5}{65}{NW}{\northarrow}
+	\legendbox{5}{65}{N W}{\northarrow}
 	}
+	endcode
 
 	code metapost
-		## https://www.mail-archive.com/therion@speleo.sk/msg07234.html
-          # define a custom attribute called label_mode
-		vardef p_label@#(expr txt,pos,rot,mode_) =
-		  if known ATTR_label_mode:
-		    mode := scantokens(ATTR_label_mode);
-		  else:
-		    mode := mode_;
-		  fi;
-		  if (mode=1) or (mode=4): interim labeloffset:=(u/8) 
-		  fi;
-		  lab:=thelabel@#(txt, pos);
-		  if mode>1: pickup PenD fi;
-		  	if mode=1: process_label(pos,0);
-		  	elseif mode=2: ;       
-		  	elseif mode=3: ;       
-		  	elseif mode=5: process_boxedlabel; 
-		  else: process_label(pos,rot); 
-		  fi;
-		enddef;
+		def p_u_label_MY (expr P,R,S,A)=
+  		T:=identity shifted P;
+    	U:=(0,0);
+    	save lvl;
+    	if known ATTR_text:
+    		 if known ATTR_lvl:
+    		 lvl := scantokens(ATTR_lvl);
+    		 else: lvl :=0;
+    		 fi;
+    		 if lvl < 2:
+      			U:=(S*u*(length ATTR_text)/4,S*u*(length ATTR_text)/4);
+      			create_styled_label(ATTR_text,P,R,S,A,0);
+      		else:;
+    		fi;
+    	fi;
+  	enddef;
+		initsymbol("p_u_label_MY");
 	endcode
 endlayout
 language fr

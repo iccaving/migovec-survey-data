@@ -5,6 +5,9 @@ encoding  utf-8
 
 scrap mushroom-1p -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 
+point 1000 0 u:label_MY -attr text "Mushroom" -attr lvl 2
+
+point 1000 0 u:label_MY -attr text "Mushroom \par Broom" -attr lvl 3
 line wall 
   446.4801 283.8704
   446.4801 283.8704 453.3716 284.7502 453.3716 283.4305

@@ -146,7 +146,7 @@ endscrap
 
 scrap korita-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 488.3059 1123.0557 label -align r -text Korita
+point 488.3059 1123.0557 u:label_MY -align l -attr lvl 0 -attr text Korita
 line pit 
   543.2203 282.4746
   570.3814 312.3517 594.8263 285.1907 594.8263 285.1907

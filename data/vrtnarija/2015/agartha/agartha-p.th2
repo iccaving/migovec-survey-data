@@ -165,7 +165,7 @@ endscrap
 
 scrap agartha-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 188.2163 546.4033 label -align l -text Agartha
+point 188.2163 546.4033 u:label_MY -align l -attr lvl 0 -attr text Agartha
 line wall 
   819.6049 1140.3408
   800.3992 1076.9618 743.2621 1055.8355 750.9444 1005.9006

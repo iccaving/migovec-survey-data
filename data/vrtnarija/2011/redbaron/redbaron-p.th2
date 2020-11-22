@@ -105,7 +105,7 @@ line wall
 endline
 
 point 495.8583 825.5252 station -name 8
-point 469.1904 804.4427 label -text "Red Baron" -align l -scale s
+point 469.1904 804.4427 u:label_MY -attr lvl 0 -attr text "Red Baron" -align l -scale s
 point 539.8252 731.4801 station -name 7
 point 537.2789 574.6253 station -name 6
 point 554.7638 644.5649 station -name 5

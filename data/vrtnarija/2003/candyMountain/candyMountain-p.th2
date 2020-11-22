@@ -6,7 +6,7 @@ encoding  utf-8
 scrap candyMountain-1p -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 
 point 436.6516 456.1531 passage-height -align t -value 80
-point 495.9808 479.5409 label -text "Big Rock<br>Candy Mountain" -align r -scale s
+point 495.9808 479.5409 u:label_MY -attr lvl 0 -attr text "Big Rock<br>Candy Mountain" -align r -scale s
 line pit 
   417.4845 441.604
   418.3161 440.7639 441.4993 427.3753 452.8762 427.685

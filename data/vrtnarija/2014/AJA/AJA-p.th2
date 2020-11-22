@@ -155,7 +155,7 @@ endscrap
 
 scrap AJA-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 461.0583 579.2087 label -align r -scale m -text AJA
+point 461.0583 579.2087 u:label_MY -align l -scale m -attr lvl 0 -attr text AJA
 line pit 
   808.5616 649.6341
   814.8035 670.2803 804.2403 680.8435 784.5545 689.486

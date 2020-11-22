@@ -65,7 +65,7 @@ endscrap
 
 scrap hanginggardensdeep-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -71.4065 1183.7561 label -align r -scale m -text "Hanging Gardens Deep" -attr label_mode 3
+point -71.4065 1183.7561 u:label_MY -align l -scale m -attr lvl 0 -attr text "Hanging Gardens Deep" -attr lvl 3
 line wall 
   181.9788 726.5572
   188.7691 770.0148 241.7331 798.5339 267.536 802.608

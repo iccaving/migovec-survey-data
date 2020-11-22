@@ -70,7 +70,7 @@ line wall -subtype invisible
   446.3586 -228.0175 450.5317 -246.3618 451.158 -252.3011
 endline
 
-point 437.9492 21.7731 label -text "Miles Underground" -align r -scale xl
+point 437.9492 21.7731 u:label_MY -attr lvl 0 -attr text "Miles Underground" -align r -scale xl
 line wall 
   307.9173 645.7465
   307.9173 645.7465 310.0142 613.7439 313.7824 598.2393

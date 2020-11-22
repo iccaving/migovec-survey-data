@@ -60,7 +60,7 @@ line pit
   421.566 532.9593 409.0822 638.5908 409.0822 638.5908
 endline
 
-point 388.2012 235.6804 label -align l -scale m -text "2nd Time Lucky" -attr label_mode 3
+point 388.2012 235.6804 u:label_MY -align l -scale m -attr lvl 0 -attr text "2nd Time Lucky" -attr lvl 3
 line wall 
   96.4216 793.1017
   100.4958 765.9407 138.5212 734.7055 138.5212 711.6186

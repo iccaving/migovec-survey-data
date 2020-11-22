@@ -35,7 +35,7 @@ endscrap
 
 scrap 500m-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 818.2256 644.3951 label -align r -scale m -text 500m
+point 818.2256 644.3951 u:label_MY -align l -scale m -attr lvl 0 -attr text 500m
 line wall 
   129.0148 313.7097
   142.5953 294.697 143.9534 289.2648 187.411 263.4619

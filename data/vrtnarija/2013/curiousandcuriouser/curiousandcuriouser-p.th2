@@ -75,7 +75,7 @@ endscrap
 
 scrap curiousandcuriouser-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 744.2224 553.1253 label -align tr -text "Curious And<br>Curiouser" -attr label_mode 2
+point 744.2224 553.1253 u:label_MY -align tr -attr text "Curious And<br>Curiouser" -attr lvl 2
 line wall 
   904.1223 191.8247
   904.1223 191.8247 889.3629 207.3461 872.8872 217.6276

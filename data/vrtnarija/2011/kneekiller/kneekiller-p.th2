@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap kneekiller-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point 601.6165 972.7039 label -text Penitence -align tr -scale l
+point 601.6165 972.7039 u:label_MY -attr lvl 0 -attr text Penitence -align tr -scale l
 line wall 
   1118.7343 632.1107
   1112.0123 634.5114 1082.2434 645.5547 1072.1604 657.0781

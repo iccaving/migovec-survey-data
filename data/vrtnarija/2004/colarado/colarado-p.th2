@@ -39,7 +39,7 @@ line wall
   176.6859 588.4153 151.6126 590.4681 151.6126 590.4681
 endline
 
-point 236.1856 531.2622 label -text Colarado -align b -scale l
+point 236.1856 531.2622 u:label_MY -attr lvl 0 -attr text Colarado -align b -scale l
 line wall -close on -outline in
   481.0805 607.5715
   483.1541 595.1298

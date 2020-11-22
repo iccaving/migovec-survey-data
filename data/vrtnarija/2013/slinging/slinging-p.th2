@@ -134,7 +134,7 @@ line pit
   706.2911 898.8286 659.7171 929.0776 625.1468 949.2437
 endline
 
-point 169.0105 716.9439 label -align bl -text "Slinging<br>In The<br>Rain" -attr label_mode 1
+point 169.0105 716.9439 u:label_MY -align bl -attr text "Slinging<br>In The<br>Rain" -attr lvl 1
 line rock-border -close on
   7.9224 336.4605
   2.6408 334.9001 -3.241 333.2196 -6.3619 328.8983

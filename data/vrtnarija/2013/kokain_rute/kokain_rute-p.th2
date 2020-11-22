@@ -110,7 +110,7 @@ line pit
   126.5748 159.277 116.6033 159.3777 111.603 154.8039
 endline
 
-point -71.9767 95.7426 label -align l -scale m -text "Kokain Rute" -attr label_mode 3
+point -71.9767 95.7426 u:label_MY -align l -scale m -attr lvl 0 -attr text "Kokain Rute" -attr lvl 3
 line rock-border -close on
   -121.5456 -204.7262
   -124.2617 -214.572 -125.2802 -228.4921 -124.2617 -232.2267

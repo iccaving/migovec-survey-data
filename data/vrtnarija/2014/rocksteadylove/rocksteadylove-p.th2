@@ -85,7 +85,7 @@ line pit
   321.858 503.8369 325.9322 521.4915 328.6483 554.0847
 endline
 
-point 95.5183 273.0559 label -align r -scale m -text "Rock Steady Love"
+point 95.5183 273.0559 u:label_MY -align l -scale m -attr lvl 0 -attr text "Rock Steady Love"
 line pit 
   941.0812 699.0889
   921.8755 713.4932 893.0669 700.0492 865.2186 677.0023
