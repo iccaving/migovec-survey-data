@@ -518,7 +518,7 @@ endscrap
 
 scrap wonder-10p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point -734.7055 -442.7246 label -text Wonderstuff -align l -scale l
+point -734.7055 -442.7246 label -text Wonderstuff -align l -scale l -attr label_mode 1
 line border -close on -id sump_wonder -clip off
   -756.9436 -487.71
   -756.9436 -487.71 -759.3469 -488.546 -760.1872 -489.0261

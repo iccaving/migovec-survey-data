@@ -90,7 +90,7 @@ endscrap
 
 scrap dream2-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 552.7267 837.2383 label -align r -scale m -text "Dream 2"
+point 552.7267 837.2383 label -align r -scale m -text "Dream 2" -attr label_mode 3
 line wall 
   484.027 1060.5945
   479.2938 1044.3662 465.7392 1034.2291 468.62 1016.9439

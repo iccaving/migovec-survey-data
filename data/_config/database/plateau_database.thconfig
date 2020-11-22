@@ -1,3 +1,4 @@
-source ../prima_ubend_monatip.th
+source ../../plateau.th
 
-export database -o prima_ubend_monatip.sql
+#export database -o ../../_outputs/database/MigovecPlateau.sql
+export database -o ../../_outputs/database/MigovecPlateau.csv

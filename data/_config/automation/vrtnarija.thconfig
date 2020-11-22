@@ -1,3 +1,4 @@
+encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR                            |
@@ -8,7 +9,6 @@
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
@@ -22,23 +22,21 @@ input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-all-p@vrtnarija -map-level 0
+select m-below_balamory-p@vrtnarija
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1
 layout plan
-	copy base-p
 	copy subsystem_overview
 	copy colour-by-new
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: 8283<br><br>Vilinska Jama<br>kat. št.: 10868<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: 8283<br><br>Vilinska Jama<br>Cadastral number: 10868<br>"
-	code tex-map
-	\framethickness=0.5mm
-	\def\maplayout{
-	\legendbox{-5}{99}{NW}{\size[26]\the\cavename}
-	\legendbox{-5}{95}{NW}{\size[10]\the\comment}
-	\legendbox{5}{70}{NW}{\scalebar}
-	\legendbox{5}{65}{NW}{\northarrow}
-	}
+	#code tex-map
+	#\def\maplayout{
+	#\legendbox{-5}{99}{NW}{\size[26]\the\cavename}
+	#\legendbox{-5}{95}{NW}{\size[10]\the\comment}
+	#\legendbox{5}{70}{NW}{\scalebar}
+	#\legendbox{5}{65}{NW}{\northarrow}
+	#}
 endlayout
 language fr
 export map -projection plan -o ../../_outputs/vrtnarija_plan_SLO.pdf -layout plan

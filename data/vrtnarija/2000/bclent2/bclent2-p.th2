@@ -216,7 +216,8 @@ line contour
 endline
 
 point 799.0 523.5 entrance -align r -scale l -orientation 277.9
-point 642.6429 -120.1115 label -text Oh-so-fag-arse -align tr
+
+point 642.6429 -120.1115 label -text Oh-so-fag-arse -align tr -attr mode 4
 line pit 
   645.0 525.75
   645.0 525.75 644.5 528.75 639.75 530.5

@@ -24,7 +24,6 @@ layout detailed
   statistics topo-length off
   fonts-setup 5 7 12 18 20
   symbol-hide point label
-  #map-image 100 -10 ne "../outputs/map/banane_elevation.pdf"
 
 code metapost 
 #_____________________________________________________________
@@ -513,6 +512,15 @@ enddef;
        T:=identity;
        thfill p withcolor (0.2,0.2,0.5);
      enddef;
+
+    beginpattern(pattern_clay_MY);
+        pickup PenC;
+        p:=(-.05u,0)--(.05u,0);
+        draw p
+        patternxstep(0.3u);
+        patternystep(0.03u);
+        patterncolor(0.3,0.3,0.3);
+     endpattern;
     
      # ICE
       beginpattern(pattern_ice_MY);
@@ -524,6 +532,8 @@ enddef;
         patternystep(0.6u);
         patterncolor(0,0.7,0.9);
      endpattern;
+
+
      
      def a_ice_MY (expr Path) =
       T:=identity;
