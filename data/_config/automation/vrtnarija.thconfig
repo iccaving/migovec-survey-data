@@ -16,9 +16,8 @@ source "../../vrtnarija/vrtnarija.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/base-p.thl"
+input "../../_layouts/overview-p.thl"
 input "../../_layouts/base-e.thl"
-input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -27,7 +26,7 @@ select m-all-p@vrtnarija
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1
 layout plan
-	copy subsystem_overview
+	copy overview
 	copy colour-by-new
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: 8283<br><br>Vilinska Jama<br>kat. št.: 10868<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: 8283<br><br>Vilinska Jama<br>Cadastral number: 10868<br>"
 	code tex-map
@@ -46,6 +45,12 @@ layout plan
   		T:=identity shifted P;
     	U:=(0,0);
     	save lvl;
+    	save style;
+    	if known ATTR_style:
+    		style:= scantokens(ATTR_style);
+    	else:
+    		style :=0;
+    	fi;
     	if known ATTR_text:
     		 if known ATTR_lvl:
     		 lvl := scantokens(ATTR_lvl);
@@ -53,7 +58,7 @@ layout plan
     		 fi;
     		 if lvl < 3:
       			U:=(S*u*(length ATTR_text)/4,S*u*(length ATTR_text)/4);
-      			create_styled_label(ATTR_text,P,R,S,A,0);
+      			create_styled_label(ATTR_text,P,R,S,A,style);
       		else:;
     		fi;
     	fi;

@@ -219,8 +219,8 @@ endscrap
 
 scrap cascade-3p -scale [0 0 90 0 0 0 250 0 inch]
 
-point 263.3426 619.3536 u:label_MY -attr lvl 0 -attr text "Playboy<br>Junction" -align l -scale s
-point 1109.6753 -61.5834 u:label_MY -attr lvl 0 -attr text "Cactus<br>Junction" -align tr -scale s
+point 263.3426 619.3536 u:label_MY -attr lvl 3 -attr text "Playboy Junction" -align l -scale s
+point 1109.6753 -61.5834 u:label_MY -attr lvl 3 -attr text "Cactus Junction" -align tr -scale s
 line wall 
   985.3353 17.5953
   995.306 5.2786 1016.4203 -28.1524 1016.4203 -28.1524
