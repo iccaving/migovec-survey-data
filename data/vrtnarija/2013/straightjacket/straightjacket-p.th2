@@ -55,7 +55,7 @@ endscrap
 
 scrap straightjacket-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -293.339 2077.8179 label -align l -text "Straight Jacket"
+point -293.339 2077.8179 u:label_MY -align l -attr lvl 0 -attr text "Straight Jacket"
 line wall 
   376.7055 381.2057
   372.8643 411.9348 361.0679 476.3023 361.0679 518.555

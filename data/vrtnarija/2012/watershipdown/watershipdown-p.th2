@@ -131,7 +131,7 @@ line arrow
   64.6562 795.33
 endline
 
-point -1500.0 600.00 label -align l -scale l -text "Watership Down" -attr label_mode 2 
+point -1500.0 600.00 u:label_MY -align l -scale m -attr lvl 0 -attr text "Watership Down" -attr lvl 2 
 
 line wall:presumed 
   140.2171 794.7975

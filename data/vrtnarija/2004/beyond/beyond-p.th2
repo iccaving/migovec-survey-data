@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap beyond-2p -scale [0 0 90 0 0 0 250 0 inch]
 
-point 427.9171 538.7086 label -text "To Infinity<br>and Beyond" -align r -scale xl
+point 427.9171 538.7086 u:label_MY -attr lvl 0 -attr text "To Infinity<br>and Beyond" -align r -scale xl
 line wall -id beyond_s2_l2
   374.5758 493.5645
   384.7602 493.3408

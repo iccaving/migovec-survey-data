@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap squidgygoodness-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point 544.2426 606.9014 label -text "Squidgy Goodness" -align r -scale l
+point 544.2426 606.9014 u:label_MY -attr lvl 0 -attr text "Squidgy Goodness" -align r -scale l
 line wall 
   538.4672 579.8877
   528.6213 599.2399 533.2418 597.8819 527.0935 613.6692
