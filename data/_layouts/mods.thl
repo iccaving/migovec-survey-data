@@ -50,8 +50,133 @@ layout general_overview
 	fonts-setup 10 10 10 10 10
 endlayout
 
+
+### This might move somewhere else as it grows bigger.
+
 layout subsystem_overview
+	
 	scale 1 2000
-	min-symbol-scale S
-	fonts-setup 10 10 10 10 10
+
+	fonts-setup 6 10 10 10 10
+	symbol-show group cave-centreline
+	
+    # hide stuff we don't really need at that scale.
+	symbol-hide point station
+	symbol-hide line label
+	symbol-hide point passage-height
+
+	code metapost
+
+	def l_survey_cave_MY (expr P) =
+      T:=identity;
+      draw P withpen PenD withcolor (0.7,0,0);
+    enddef;
+
+
+	# CLAY
+		beginpattern(pattern_clay_MY);
+        	pickup PenC;
+        	p:=(-.05u,0)--(.05u,0);
+        	draw p;
+        	patternxstep(0.3u);
+        	patternystep(0.03u);
+        	patterncolor(0.3,0.3,0.3);
+     	endpattern;
+
+		def a_clay_MY (expr path)=
+			T:=identity;
+			thclean path;
+			thfill path withpattern pattern_clay_MY;
+		enddef;
+
+	# WATER
+		def a_water_MY (expr p) =
+			T:=identity;
+			thfill p withcolor (0.85,0.85,0.85);
+		enddef;
+	initsymbol("a_water_MY");
+
+	# WATER
+		def a_sump_MY (expr p) =
+			T:=identity;
+			thfill p withcolor (0.35,0.35,0.35);
+		enddef;
+	initsymbol("a_sump_MY");
+
+	# BOULDER FLOOR
+	def a_u_smallblocks_MY (expr p) =
+	  T:=identity;
+	  pickup PenD;
+	  path q, qq; q = bbox p;
+	  picture tmp_pic;
+	  uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
+	  tmp_pic := image(
+	    for i = xpart llcorner q step 0.4uu until xpart urcorner q:
+	      for j = ypart llcorner q step 0.4uu until ypart urcorner q:
+	        k := (4+normaldeviate)/5;
+
+	        qq := punked (((-.17uu,.07uu)--(-.17uu,-.07uu)--(0,-.12uu)--(.17uu,-.08uu)--(.15uu,.06uu)--(0,.13uu)--cycle)
+	       randomized (uu/9))
+	         rotated uniformdeviate(360)
+	         scaled k
+	         shifted ((i,j) randomized 0.25uu);
+
+	  if xpart (p intersectiontimes qq) < 0:
+	    thclean qq;
+	    thdraw qq withcolor(0.3,0.3,0.3);
+	  fi;
+	      endfor;
+	    endfor;
+	  );
+	  clip tmp_pic to p;
+	  drawoptions();
+	  draw tmp_pic;
+	enddef;
+	
+
+	initsymbol("l_survey_cave_MY");
+	initsymbol("a_clay_MY");
+	initsymbol("a_u_smallblocks_MY");
+
+
+## https://www.mail-archive.com/therion@speleo.sk/msg07234.html
+
+# define a custom attribute called label_mode
+
+	vardef p_label@#(expr txt,pos,rot,mode_) =
+
+  if known ATTR_label_mode:
+
+    mode := scantokens(ATTR_label_mode);
+
+  else:
+
+    mode := mode_;
+
+  fi;
+
+  if (mode=1) or (mode=4): interim labeloffset:=(u/8) fi;
+
+  lab:=thelabel@#(txt, pos);
+
+  if mode>1: pickup PenD fi;
+
+  if mode=1: process_label(pos,0);
+
+  elseif mode=2: process_label(pos,0);       
+
+  elseif mode=3: ;
+
+  elseif mode=4: ;
+  
+  elseif mode=5: process_boxedlabel;
+
+  else: process_label(pos,rot); fi;
+
+enddef;
+	endcode
+	symbol-assign area water MY
+	symbol-assign area sump MY
+	symbol-assign area clay MY
+	symbol-assign line survey MY
 endlayout
