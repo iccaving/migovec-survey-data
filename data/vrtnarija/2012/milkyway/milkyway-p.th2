@@ -142,7 +142,7 @@ endscrap
 
 scrap milkyway-5p -scale [0 0 90 0 0 0 250 0 inch]
 
-point -294.8081 -65.2995 label -text "Milky Way" -align l -scale l
+point -294.8081 -65.2995 u:label_MY -attr lvl 0 -attr text "Milky Way" -align l -scale l
 point -40.39 -600.75 station -name 30
 point -80.08 -585.47 station -name 29
 point -72.99 -527.99 station -name 28

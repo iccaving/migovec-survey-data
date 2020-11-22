@@ -145,7 +145,7 @@ endscrap
 
 scrap yorkshire-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 187.411 854.893 label -align l -scale m -text Yorkshire
+point 187.411 854.893 u:label_MY -align l -scale m -attr lvl 0 -attr text Yorkshire
 line wall 
   903.8701 36.2508
   903.8701 36.2508 903.8701 36.4909 900.269 40.092

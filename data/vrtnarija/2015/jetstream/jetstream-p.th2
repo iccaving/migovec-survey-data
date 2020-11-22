@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap jetstream-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point 622.6663 636.9259 label -text Jetstream -align r -scale l
+point 622.6663 636.9259 u:label_MY -attr lvl 0 -attr text Jetstream -align r -scale l
 line rock-border -close on
   578.3928 243.7929
   577.1325 238.5113

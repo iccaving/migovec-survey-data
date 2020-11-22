@@ -25,7 +25,7 @@ endscrap
 
 scrap bingo_granny-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 727.1254 615.3509 label -align r -scale s -text "Bingo Granny"
+point 727.1254 615.3509 u:label_MY -align l -scale m -attr lvl 0 -attr text "Bingo Granny"
 line pit 
   499.3426 702.2832
   499.3426 702.2832 437.6869 693.0662 420.3588 630.0214
