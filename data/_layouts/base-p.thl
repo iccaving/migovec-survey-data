@@ -194,6 +194,35 @@ layout base-p
 			thclean Path;
 			thfill Path withcolor (0.65,0.55,0.1);
 		enddef;
+
+		def a_u_smallblocks_MY (expr p) =
+		  T:=identity;
+		  pickup PenD;
+		  path q, qq; q = bbox p;
+		  picture tmp_pic;
+		  uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
+		  tmp_pic := image(
+		    for i = xpart llcorner q step 0.4uu until xpart urcorner q:
+		      for j = ypart llcorner q step 0.4uu until ypart urcorner q:
+		        k := (4+normaldeviate)/5;
+
+		        qq := punked (((-.17uu,.07uu)--(-.17uu,-.07uu)--(0,-.12uu)--(.17uu,-.08uu)--(.15uu,.06uu)--(0,.13uu)--cycle)
+		       randomized (uu/9))
+		         rotated uniformdeviate(360)
+		         scaled k
+		         shifted ((i,j) randomized 0.25uu);
+
+		  if xpart (p intersectiontimes qq) < 0:
+		    thclean qq;
+		    thdraw qq withcolor(0.3,0.3,0.3);
+		  fi;
+		      endfor;
+		    endfor;
+		  );
+		  clip tmp_pic to p;
+		  drawoptions();
+		  draw tmp_pic;
+		enddef;
 		
 		
 		#_____________________________________________________________
@@ -216,6 +245,7 @@ layout base-p
 		
 		initsymbol("a_water_MY");
 		initsymbol("a_clay_MY");
+		initsymbol("a_u_smallblocks_MY");
 		
 	endcode
 	
