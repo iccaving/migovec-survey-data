@@ -148,7 +148,7 @@ line wall
   795.5978 531.5188 773.5112 555.0459 773.5112 555.0459
 endline
 
-point 510.6271 631.4936 label -text "Northern Line" -align tr -scale l
+point 510.6271 631.4936 u:label_MY -attr lvl 2 -attr text "Northern Line" -align tr -scale l
 point 696.353 497.6766 station -name 15
 point 677.313 504.9866 station -name 11
 point 726.923 476.2666 station -name 14

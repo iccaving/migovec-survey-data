@@ -167,7 +167,7 @@ line rock-border -close on
   414.5922 410.7521
 endline
 
-point 219.4728 509.3566 label -text "Trunk Passage" -align bl
+point 239.4728 449.3566 u:label_MY -attr lvl 2 -attr text "Trunk Passage" -align bl
 line wall 
   389.3008 391.1547
   400.4237 392.7436
@@ -361,7 +361,7 @@ point 88.54 577.95 station -name 11
 point 88.54 577.95 station-name -text 11 -align tr -scale xs
 point 60.2 573.94 station -name 10
 point 60.2 573.94 station-name -text 10 -align tr -scale xs
-line label -text "Trunk Passage"
+line u:label_MY -attr lvl 2 -attr text "Trunk Passage"
   86.8902 524.3377
   86.8902 524.3377 214.2294 419.4701 372.2797 366.2873
 endline

@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap coldfeet-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point -128.3416 26.8216 label -text Coldfeet -align tr -scale l
+point -128.3416 26.8216 u:label_MY -attr lvl 2 -attr text Coldfeet -align tr -scale l
 line wall 
   -234.19 79.4638
   -205.0213 86.4258

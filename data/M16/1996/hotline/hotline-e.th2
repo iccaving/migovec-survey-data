@@ -10,7 +10,7 @@ line wall -subtype invisible
   -351.4772 75.494
 endline
 
-point -48.2108 124.2617 label -text Hotline -align t -scale l
+point -48.2108 124.2617 u:label_MY -attr lvl 2 -attr text Hotline -align t -scale l
 line wall -close on -outline in
   165.1694 115.9547
   166.3697 114.9944 171.1712 110.1929 171.1712 110.1929

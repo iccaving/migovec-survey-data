@@ -20,7 +20,7 @@ endscrap
 
 scrap tamoka-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 331.3644 809.0588 label -text "Ta moka" -align l -scale l
+point 331.3644 809.0588 u:label_MY -attr lvl 2 -attr text "Ta moka" -align l -scale l
 point 391.5891 726.8814 water-flow -orientation 178.25028
 point 384.1449 932.1416 water-flow -orientation 180.27594
 point 315.1015 1008.2618 water-flow -orientation 159.29643

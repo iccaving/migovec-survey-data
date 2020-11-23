@@ -433,7 +433,7 @@ line rock-border -close on
   82.9087 -44.6059
 endline
 
-point -111.3462 -49.5343 label -text Waterloo -align bl -scale s
+point -111.3462 -49.5343 u:label_MY -attr lvl 2 -attr text Waterloo -align bl -scale s
 line wall -subtype invisible
   208.4608 -69.9396
   199.294 -7.4693

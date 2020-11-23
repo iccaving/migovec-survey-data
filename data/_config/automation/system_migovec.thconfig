@@ -21,7 +21,7 @@ input "../../_layouts/base-e.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
- select m-all-p@system_migovec
+ select m-all-p@system_migovec -map-level 3
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
@@ -65,6 +65,8 @@ layout plan
 		initsymbol("p_u_label_MY");
 		
 	endcode
+	symbol-hide line label
+	symbol-hide point remark
 endlayout
 language fr
 #export model -o ../../_outputs/system_migovec.lox
@@ -90,7 +92,6 @@ layout ee
 	symbol-colour point station [70 0 0]
 	grid-size 10 10 100 m
 	fonts-setup 5 8 10 10 10 
-	min-symbol-scale M
 	symbol-hide line label
 	symbol-hide point remark
 

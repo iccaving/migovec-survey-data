@@ -60,7 +60,7 @@ endscrap
 
 scrap paradiso-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 342.8224 293.2554 label -text Paradiso -align r -scale l
+point 342.8224 293.2554 u:label_MY -attr lvl 2 -attr text Paradiso -align r -scale l
 line wall 
   345.9635 112.0392
   342.9078 110.3416 335.0991 106.9465 333.4015 106.9465

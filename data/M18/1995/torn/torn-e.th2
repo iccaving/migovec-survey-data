@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point -203.8774 265.1595 label -text "<lang:en>M18 Torn T-Shirt<lang:sl>M18 Jama Strgane Srajce" -align t -scale xl
+point -203.8774 265.1595 u:label_MY -attr lvl 2 -attr text "<lang:en>M18 Torn T-Shirt<lang:sl>M18 Jama Strgane Srajce" -align t -scale xl
 line wall 
   121.4763 -222.0664
   140.442 -222.3064
