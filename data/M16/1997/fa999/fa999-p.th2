@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap fa999-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point -53.656 -40.8122 label -text FA999 -align r -scale s
+point -53.656 -40.8122 u:label_MY -attr lvl 2 -attr text FA999 -align r -scale s
 line wall 
   86.4258 160.1279
   86.4258 160.1279 85.8967 168.0588 86.0665 168.7378

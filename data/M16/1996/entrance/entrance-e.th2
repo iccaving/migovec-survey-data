@@ -7,8 +7,8 @@ scrap entrance-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 
 point -58.3962 346.982 entrance -orientation 152.05224
 point 1.0186 349.6981 entrance -orientation 188.60933
-point -24.4873 433.0894 label -text M16 -align t -scale l
-point -128.3358 54.3221 label -text "Vhodni Del" -align l -scale l
+point -24.4873 433.0894 u:label_MY -attr lvl 2 -attr text M16 -align t -scale l
+point -128.3358 54.3221 u:label_MY -attr lvl 2 -attr text "Vhodni Del" -align l -scale l
 line wall 
   318.5752 -302.4904
   304.1709 -310.8929

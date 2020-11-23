@@ -35,7 +35,7 @@ endscrap
 
 scrap arrow-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 179.6022 91.3289 label -text "Always<br>the Sun" -align tr -scale l
+point 179.6022 91.3289 u:label_MY -attr lvl 2 -attr text "Always<br>the Sun" -align tr -scale l
 line wall 
   193.692 0.5093
   196.0686 19.0127

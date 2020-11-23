@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap izent1-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 218.4563 1270.8926 label -text "M2 (KAVKNA JAMA)" -align tl -scale xl
+point 218.4563 1270.8926 u:label_MY -attr lvl 2 -attr text "M2 (KAVKNA JAMA)" -align tl -scale xl
 line u:texture_MY 
   294.3429 1326.8678
   294.3429 1326.8678 293.8478 1271.9001 294.3279 1268.059

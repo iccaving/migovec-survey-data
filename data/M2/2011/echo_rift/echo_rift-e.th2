@@ -90,7 +90,7 @@ endscrap
 
 scrap echo_rift-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 83.3049 191.3372 label -text "Echo Rift" -align right
+point 83.3049 191.3372 u:label_MY -attr lvl 2 -attr text "Echo Rift" -align right
 line wall -subtype blocks
   34.6303 116.7924
   82.1621 108.3046

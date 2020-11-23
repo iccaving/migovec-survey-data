@@ -16,7 +16,7 @@ line wall -subtype invisible
   -30.6691 -132.3996
 endline
 
-point 13.8339 79.0074 label -text Teotihuacan -align l -scale s
+point 13.8339 79.0074 u:label_MY -attr lvl 2 -attr text Teotihuacan -align l -scale s
 line wall:invisible 
   -10.3107 -57.3307
   4.4413 -50.7152

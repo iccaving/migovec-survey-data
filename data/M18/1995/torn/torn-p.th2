@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap torn-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point 219.7407 103.8128 label -text M-18 -align tr -scale xl
+point 219.7407 103.8128 u:label_MY -attr lvl 1 -attr text M-18 -align tr -attr style 6
 point 173.5768 72.2693 entrance -orientation 223.57402
 line wall 
   -131.61 5.95
