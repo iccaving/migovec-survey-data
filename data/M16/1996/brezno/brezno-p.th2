@@ -153,7 +153,7 @@ line pit
   213.3427 634.163 220.6741 629.3243 220.6741 629.3243
 endline
 
-point 256.3839 542.688 label -text "Brezno Strahov" -align bl -scale l
+point 256.3839 542.688 u:label_MY -attr lvl 2 -attr text "Brezno Strahov" -align bl -scale l
 line rock-border -close on
   208.2107 600.2921
   204.9849 598.5326

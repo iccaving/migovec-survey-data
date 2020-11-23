@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap zebra-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 131.3914 74.3533 label -text Zebra -align t -scale s
+point 131.3914 74.3533 u:label_MY -attr lvl 2 -attr text Zebra -align t -scale s
 line wall 
   86.6659 -26.4079
   86.6659 -26.4079 88.1063 -42.4927 88.1063 -43.453

@@ -230,7 +230,7 @@ endscrap
 
 scrap hotel-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 0.4801 -63.379 label -text "Warriors for Mig" -align tl -scale l
+point 0.4801 -63.379 u:label_MY -attr lvl 2 -attr text "Warriors for Mig" -align tl -scale l
 line wall 
   -689.5503 -280.098
   -689.5503 -280.098 -640.321 -266.178 -637.6049 -266.857

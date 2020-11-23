@@ -95,8 +95,8 @@ endscrap
 
 scrap gloworm-1p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
 
-point 200.7415 478.8135 label -text Gloworm -align l
-line label -text Gloworm
+point 200.7415 478.8135 u:label_MY -attr lvl 2 -attr text Gloworm -align l
+line u:label_MY -attr lvl 2 -attr text Gloworm
   115.4661 558.7924
   115.4661 558.7924 200.2119 438.5593 283.3686 362.2881
 endline

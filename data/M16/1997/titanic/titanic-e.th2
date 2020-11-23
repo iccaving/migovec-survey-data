@@ -140,7 +140,7 @@ endscrap
 
 scrap titanic-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 419.6454 850.3341 label -text Titanic -align r -scale l
+point 419.6454 850.3341 u:label_MY -attr lvl 2 -attr text Titanic -align r -scale l
 line wall -subtype invisible
   389.6906 1069.3867
   298.1538 1055.6918
@@ -237,7 +237,7 @@ line wall
   292.4074 -144.043 278.4832 -139.2416 278.4832 -139.2416
 endline
 
-point 581.9248 318.4629 label -text Britannic -align r -scale l
+point 581.9248 318.4629 u:label_MY -attr lvl 2 -attr text Britannic -align r -scale l
 line wall -subtype blocks
   235.7505 -141.1622
   242.4725 -158.4473

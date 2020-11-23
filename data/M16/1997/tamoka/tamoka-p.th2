@@ -122,6 +122,6 @@ endline
 point -7.4 -8.82 station -name 3
 point -7.4 -8.82 station -name 2
 point 7.4 8.82 station -name 1
-point 38.1272 -26.7626 label -text "Ta Moka" -align r -scale xs
+point 38.1272 -26.7626 u:label_MY -attr lvl 2 -attr text "Ta Moka" -align r -scale xs
 endscrap
 
