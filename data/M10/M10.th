@@ -32,7 +32,7 @@ survey M10 -title "M10"
     team "Tanguy Racine"
 
     cs epsg:3794
-    fix 14 404597 124280 1862
+    fix 14 404597 124280 0 #1862
     mark 14 fixed
     station 14 entrance
     units length meters

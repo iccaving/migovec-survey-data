@@ -45,7 +45,7 @@ layout local
 	symbol-show point gradient
 
 	map-comment "Migovec Plateau<br>Cadastral Number: 4626<br>Length: 81 m, Depth: 45 m<br>Entrance elevation: 1862 m<br>Coordinates (EPSG:3794): 404597 / 124280" #Lat Long 46.25155 13.76265
- #3911
+
 	code tex-map
 		\def\maplayout{
 		\legendbox{-40}{105}{SW}{\size[26]\the\cavename}
@@ -60,6 +60,7 @@ select m-all-p@M10
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
 export map -o ../_outputs/M10_plan.pdf -projection plan -layout local
+export map -o ../_outputs/M10_plan.svg -projection plan -layout local
 
 
 #----------------------------------------------------------------------------------|
@@ -73,9 +74,10 @@ layout local-e
 	symbol-show area snow
 	scale 1 400
 	grid-size 10 10 10 m
-	map-image -10 120  ne ../_outputs/M10_plan.pdf
+	#map-image -10 120  ne ../_outputs/M10_plan.pdf
 endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
 export map -o ../_outputs/M10_ee.pdf -projection extended -layout local-e
+export map -o ../_outputs/M10_ee.svg -projection extended -layout local-e
