@@ -33,7 +33,6 @@ select m-all-p@coincidence
 layout local-slo
 	copy detailed
 	legend off
-	colour map-fg altitude
 	map-header 0 0 off
 	scale 1 200
 	symbol-show point label
@@ -110,6 +109,7 @@ layout local-en
 	}
 	endcode
 endlayout
+
 #----------------------------------------------------------------------------------|
 # select a relevant map (which contains commands for offsets of overlying bits)
 select m-all-e@coincidence

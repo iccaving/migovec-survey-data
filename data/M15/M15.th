@@ -42,7 +42,7 @@ survey M15 -title "M-15"
     data normal from to length compass clino
 
     cs epsg:3794
-    fix 14 404521 124474 1860
+    fix 14 404521 124474 0 #1860
     # extend auto
     #90 . 5.94 129.6 -7.5
     #90 . 6.17 152.8 -10.1
