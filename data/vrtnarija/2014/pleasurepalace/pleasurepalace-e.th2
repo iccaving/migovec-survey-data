@@ -2,97 +2,152 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -307.20 109.49
-  -296.92 112.01
-endline
-line survey 
-  -296.92 112.01
-  -275.83 97.91
-endline
-line survey 
-  -275.83 97.91
-  -275.83 19.57
-endline
-line survey 
-  -275.83 19.57
-  -266.33 20.20
-endline
-line survey 
-  -266.33 20.20
-  -248.34 6.18
-endline
-line survey 
-  -248.34 6.18
-  -188.18 -17.91
-endline
-line survey 
-  -188.18 -17.91
-  -131.48 -15.00
-endline
-line survey 
-  -131.48 -15.00
-  -50.19 -20.67
-endline
-line survey 
-  -50.19 -20.67
-  -19.48 -9.41
-endline
-line survey 
-  -19.48 -9.41
-  21.60 -7.99
-endline
-line survey 
-  21.60 -7.99
-  43.15 -20.43
-endline
-line survey 
-  43.15 -20.43
-  60.83 -34.29
-endline
-line survey 
-  60.83 -34.29
-  104.95 -65.24
-endline
-line survey 
-  104.95 -65.24
-  125.57 -72.17
-endline
-line survey 
-  125.57 -72.17
-  158.54 -88.86
-endline
-line survey 
-  158.54 -88.86
-  194.91 -97.83
-endline
-line survey 
-  194.91 -97.83
-  228.04 -107.91
-endline
-line survey 
-  228.04 -107.91
-  266.81 -112.01
-endline
-line survey 
-  266.81 -112.01
-  307.20 -112.01
-endline
-endscrap
 
 scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+line border -close on -id pleasurepalace-1e_blocks_1 -visibility on
+  153.4736 -93.9839
+  153.4736 -93.9839 165.1383 -91.4843 168.3044 -92.6507
+  171.4705 -93.8172 179.9691 -102.4824 179.9691 -102.4824
+  166.3048 -105.9818
+  145.6416 -104.8153
+endline
+
+area blocks 
+  pleasurepalace-1e_blocks_1
+endarea
+
+line border -close on -id pleasurepalace-1e_blocks_2 -visibility on
+  134.9768 -84.8188
+  146.3082 -93.6506
+  142.9754 -101.8158
+  128.8112 -99.9828
+endline
+
+area blocks 
+  pleasurepalace-1e_blocks_2
+endarea
+
+line border -close on -id pleasurepalace-1e_blocks_3 -visibility on
+  115.7646 -69.2943
+  130.6679 -79.6648
+  126.6449 -81.1527
+  112.1474 -78.9864
+endline
+
+area blocks 
+  pleasurepalace-1e_blocks_3
+endarea
+
+line border -close on -id pleasurepalace-1e_blocks_4 -visibility on
+  94.9837 -64.1556
+  112.4807 -72.1543
+  105.3152 -76.3202
+  94.6504 -70.9878
+endline
+
+area blocks 
+  pleasurepalace-1e_blocks_4
+endarea
+
+line border -close on -id pleasurepalace-1e_blocks_5 -visibility on
+  78.4865 -74.4872
+  86.9851 -74.4872 94.4838 -72.8208 92.984 -74.8205
+  91.4843 -76.8201 89.0942 -85.9838 89.0942 -85.9838
+  77.1667 -81.8716
+endline
+
+area blocks 
+  pleasurepalace-1e_blocks_5
+endarea
+
+line border -close on -id pleasurepalace-1e_blocks_6 -visibility on
+  98.983 -76.3202
+  107.9814 -82.1525 116.8133 -85.152 116.8133 -85.152
+  117.1465 -85.8186 126.6449 -86.3185 126.6449 -86.3185
+  126.9782 -86.6517 122.479 -95.1503 116.8133 -94.1505
+  111.1476 -93.1507 89.9845 -84.6521 92.6507 -84.1522
+  95.317 -83.6523 98.983 -76.3202 98.983 -76.3202
+endline
+
+area blocks 
+  pleasurepalace-1e_blocks_6
+endarea
+
+line border -close on -id pleasurepalace-1e_blocks_7 -visibility on
+  73.3207 -52.8243
+  82.4858 -55.6571 80.1529 -48.325 84.1522 -56.6569
+  88.1515 -64.9888 93.3173 -68.155 84.3188 -70.9878
+  75.3204 -73.8206 61.0551 -71.2841 63.388 -69.1178
+  65.7209 -66.9515 73.3207 -52.8243 73.3207 -52.8243
+endline
+
+area blocks 
+  pleasurepalace-1e_blocks_7
+endarea
+
+line border -close on -id pleasurepalace-1e_blocks_8 -visibility on
+  53.9564 -40.7764
+  67.4685 -47.4903 70.0312 -39.7022 67.7015 -47.7589
+  65.3718 -55.8156 66.9198 -64.3926 60.8626 -63.3184
+  58.1577 -62.8387 54.5166 -53.9404 54.5328 -53.5245
+  54.569 -52.5946 53.9564 -40.7764 53.9564 -40.7764
+endline
+
+area blocks 
+  pleasurepalace-1e_blocks_8
+endarea
+
+line wall 
+  -295.2826 96.6501
+  -292.9497 85.9852 -295.6159 42.9926 -293.2829 32.3278
+  -290.95 21.6629 -294.616 3.666 -286.2841 5.3324
+  -277.9522 6.9988 -267.954 11.6647 -264.6212 9.665
+  -261.2884 7.6653 -265.9543 -10.3316 -261.955 -14.9974
+  -257.9557 -19.6633 -259.2888 -30.9947 -223.9615 -32.3278
+  -188.6343 -33.6609 -49.6581 -45.6588 -39.3266 -41.9928
+  -28.995 -38.3267 -18.3302 -21.3297 -10.6648 -19.6633
+  -2.9995 -17.9969 14.6641 -15.664 21.9962 -19.33
+  29.3283 -22.996 47.6585 -36.6604 47.9918 -41.6595
+  48.325 -46.6586 62.3226 -78.6532 67.9883 -79.9863
+  73.654 -81.3194 129.3111 -106.6483 146.3082 -108.3147
+  163.3053 -109.9811 274.1196 -120.6459 282.7847 -119.9794
+  293.4205 -121.2636 302.2975 -120.1501 309.7801 -120.6459
+endline
+
+line wall 
+  308.1137 -99.4829
+  308.1137 -99.4829 255.956 -96.9833 251.2902 -94.9837
+  246.6243 -92.984 203.965 -76.6535 201.9653 -73.3207
+  199.9656 -69.988 189.9674 -55.9904 182.9686 -54.6573
+  175.9698 -53.3242 157.6396 -47.3252 148.9744 -47.3252
+  140.3092 -47.3252 131.9773 -53.3242 119.3128 -51.3245
+  106.6483 -49.3249 91.6509 -37.9935 91.6509 -33.6609
+  91.6509 -29.3283 46.3254 8.3319 34.994 9.9983
+  23.6626 11.6647 10.9981 -0.3333 6.6655 -0.6666
+  2.3329 -0.9998 -14.6641 0.9998 -21.3297 5.6657
+  -27.9952 10.3316 -34.3274 23.6626 -50.658 24.3292
+  -66.9885 24.9957 -79.653 22.4962 -82.6525 14.4975
+  -79.9967 6.4989 -88.6973 -20.4964 -107.1482 -14.4975
+  -112.6473 -11.8313 -108.648 13.6643 -129.3111 16.6638
+  -149.9742 19.6633 -158.3061 -4.9991 -169.6375 -2.9995
+  -180.9689 -0.9998 -200.9655 4.9991 -211.9636 10.6648
+  -222.9617 16.3305 -253.6231 35.3273 -254.9562 42.9926
+  -256.2893 50.658 -258.6222 87.9849 -259.9553 90.9844
+  -261.2884 93.9839 -262.9548 99.9828 -262.9548 99.9828
+endline
+
 point -296.92 112.01 station -name 19
-point -307.20 109.49 station -name 20
+point -307.2 109.49 station -name 20
 point -275.83 97.91 station -name 18
 point -275.83 19.57 station -name 17
-point -266.33 20.20 station -name 16
+point -266.33 20.2 station -name 16
 point -248.34 6.18 station -name 15
 point -188.18 -17.91 station -name 14
-point -131.48 -15.00 station -name 13
+point -131.48 -15.0 station -name 13
 point -50.19 -20.67 station -name 12
 point -19.48 -9.41 station -name 11
-point 21.60 -7.99 station -name 10
+point 21.6 -7.99 station -name 10
 point 43.15 -20.43 station -name 9
 point 60.83 -34.29 station -name 8
 point 104.95 -65.24 station -name 7
@@ -101,5 +156,6 @@ point 158.54 -88.86 station -name 5
 point 194.91 -97.83 station -name 4
 point 228.04 -107.91 station -name 3
 point 266.81 -112.01 station -name 2
-point 307.20 -112.01 station -name 1
+point 307.2 -112.01 station -name 1
 endscrap
+
