@@ -42,7 +42,7 @@ layout plan
 	endcode
 
 	code metapost
-    min_label_level("1"); % yeah, now it works!
+    max_label_level("1"); % yeah, now it works!
 	endcode
 
 	symbol-hide line label

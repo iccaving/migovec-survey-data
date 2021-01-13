@@ -44,7 +44,7 @@ layout plan
 	endcode
 
 	code metapost
-  	min_label_level("2");
+  	max_label_level("2");
 	endcode
 endlayout
 language fr # slo not yet supported
