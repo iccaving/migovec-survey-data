@@ -21,7 +21,7 @@ input "../../_layouts/user_label.thl" # input this to have the label hierarchy
 source
 	map include-centerline -projection extended
 		#vrtnarija@vrtnarija_vilinska.system_migovec
-		m-kangaroo_branch-e@vrtnarija.vrtnarija_vilinska.system_migovec
+		m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
 	endmap
 endsource
 select include-centerline
@@ -39,7 +39,7 @@ layout ee
 	copy user_label
 
 	code metapost
-		min_label_level("2"); % yeah, now it works!
+		max_label_level("2"); % yeah, now it works!
 	endcode
 endlayout
 

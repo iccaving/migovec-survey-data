@@ -2,8 +2,8 @@ layout user_label
 
 code metapost
 
-	vardef min_label_level (expr mylevel)=
-		minl := scantokens(mylevel);
+	vardef max_label_level (expr mylevel)=
+		maxl := scantokens(mylevel);
 	enddef;
     
 	
@@ -22,7 +22,7 @@ code metapost
     		 lvl := scantokens(ATTR_lvl);
     		 else: lvl :=0;
     		 fi;
-    		 if lvl < minl+1:
+    		 if lvl < maxl+1:
       			U:=(S*u*(length ATTR_text)/4,S*u*(length ATTR_text)/4);
       			create_styled_label(ATTR_text,P,R,S,A,style);
       		else:;

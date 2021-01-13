@@ -45,7 +45,7 @@ layout plan
 
 
   code metapost
-    min_label_level("2"); % yeah, now it works!
+    max_label_level("2"); % yeah, now it works!
 
 	endcode
 endlayout
