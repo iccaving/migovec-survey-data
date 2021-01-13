@@ -4,6 +4,7 @@ map m-all-e -projection extended
 	m-cheetah-e
 	m-beyond-consort-e
 	m-friendship-e
+	m-kangaroo_branch-e
 endmap
 
 map m-entrance-e -projection extended
@@ -50,6 +51,11 @@ map m-friendship-e -projection extended
 	m-all-e@weepeople
 	m-all-e@gold
 	m-all-e@nitro
+endmap
+
+map m-kangaroo_branch-e -projection extended
+	m-all-e@kangaroo01
+	m-all-e@bonus
 endmap
 
 
