@@ -14,13 +14,14 @@ source "../../system_migovec.th"
 
 input "../../_layouts/base-e.thl"
 input "../../_layouts/mods.thl"
+input "../../_layouts/user_label.thl" # input this to have the label hierarchy
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
 
 source
 	map include-centerline -projection extended
-		#vrtnarija@system_migovec
-		m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
+		#vrtnarija@vrtnarija_vilinska.system_migovec
+		m-kangaroo_branch-e@vrtnarija.vrtnarija_vilinska.system_migovec
 	endmap
 endsource
 select include-centerline
@@ -31,9 +32,15 @@ select include-centerline
 layout ee
 	copy base-e
 	copy show-centreline
-	scale 1 2000
+	scale 1 4000
 	grid-size 10 10 100 m
 	map-header 0 0 off
+
+	copy user_label
+
+	code metapost
+		min_label_level("2"); % yeah, now it works!
+	endcode
 endlayout
 
 
