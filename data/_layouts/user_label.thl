@@ -1,0 +1,105 @@
+layout user_label
+
+code metapost
+
+	vardef min_label_level (expr mylevel)=
+		minl := scantokens(mylevel);
+	enddef;
+    
+	
+  	def p_u_label_MY (expr P,R,S,A)=
+  		T:=identity shifted P;
+    	U:=(0,0);
+    	save lvl;
+    	save style;
+    	if known ATTR_style:
+    		style:= scantokens(ATTR_style);
+    	else:
+    		style :=0;
+    	fi;
+    	if known ATTR_text:
+    		 if known ATTR_lvl:
+    		 lvl := scantokens(ATTR_lvl);
+    		 else: lvl :=0;
+    		 fi;
+    		 if lvl < minl+1:
+      			U:=(S*u*(length ATTR_text)/4,S*u*(length ATTR_text)/4);
+      			create_styled_label(ATTR_text,P,R,S,A,style);
+      		else:;
+    		fi;
+    	fi;
+  	enddef;
+		initsymbol("p_u_label_MY");
+
+		code metapost
+
+		% https://www.mail-archive.com/therion@speleo.sk/msg07234.html
+        % define a custom attribute called label_mode
+
+	vardef create_styled_label (expr plaintext,P,R,S,A,defaultstyle)=
+    save textsize, style, thetext, sufx, athick;
+    string textsize;
+    if S = 0.5:
+      textsize:="\thtinysize";
+    elseif S = 0.7:
+      textsize:="\thsmallsize";
+    elseif S = 1.4:
+      textsize:="\thlargesize";
+    elseif S = 2:
+      textsize:="\thhugesize";
+    else: % normal is 1
+      textsize:="\thnormalsize";
+    fi;
+    if known ATTR_labelstyle:
+      style:=scantokens(ATTR_labelstyle);
+    else:
+      style:=defaultstyle;
+    fi;
+    picture thetext;
+    thetext:=thTEX("\thframed {" & textsize &" "& plaintext & "}");
+    % store the alignment suffix as a string, it will be turned back into a suffix with scantokens
+    string sufx;
+    if A = (-1,1):
+      sufx:="ulft";
+    elseif A = (0,1):
+      sufx:="top";
+    elseif A = (1,1):
+      sufx:="urt";
+    elseif A = (-1,0):
+      sufx:="lft";
+    elseif A = (1,0):
+      sufx:="rt";
+    elseif A = (-1,-1):
+      sufx:="llft";
+    elseif A = (0,-1):
+      sufx:="bot";
+    elseif A = (1,-1):
+      sufx:="lrt";
+    else:
+      sufx:="";
+    fi;
+    if style >= 100:
+      % create the label, passing the alignment as a suffix
+      lab:=thelabel.scantokens(sufx)(thetext,P);
+      % process_label looks for a variable called "lab"
+      process_label(P,R);
+      % define all the different ornamentations that you want
+      if style = 100:
+        pickup PenA;
+        athick:=(xpart (lrcorner PenA)) - (xpart (llcorner PenA));
+        % make bounding box measurements temporarily be larger than the object being measured
+        % "interim" modifies internal variable, must be inside vardef or def+begingroup to make
+        % sure it gets reset to default correctly afterwards
+        interim bboxmargin:=5athick;
+        % rounded rectangle
+        % rotating around P is undesirable when alignment is also used, but this is what regular labels do
+        draw ((bbox lab) smoothed 5athick) rotatedaround (P,R) dashed evenly;
+      fi;
+    else:
+      % create the label, passing the alignment as a suffix
+      p_label.scantokens(sufx)(thetext,P,R,style);
+    fi;
+  enddef;
+		
+	endcode
+endlayout

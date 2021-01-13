@@ -18,6 +18,7 @@ source "../../vrtnarija/vrtnarija.th"
 # input the layout files
 input "../../_layouts/overview-p.thl"
 input "../../_layouts/base-e.thl"
+input "../../_layouts/user_label.thl" # input this to have the label hierarchy
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -28,6 +29,8 @@ select m-all-p@vrtnarija
 layout plan
 	copy overview
 	copy colour-by-new
+  copy user_label
+
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: 8283<br><br>Vilinska Jama<br>kat. št.: 10868<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: 8283<br><br>Vilinska Jama<br>Cadastral number: 10868<br>"
 	code tex-map
 	\def\maplayout{
@@ -36,35 +39,14 @@ layout plan
 	\legendbox{5}{70}{NW}{\scalebar}
 	\legendbox{5}{65}{NW}{\northarrow}
 	}
+  endcode
 
-	endcode
 
-	code metapost
-	
-  	def p_u_label_MY (expr P,R,S,A)=
-  		T:=identity shifted P;
-    	U:=(0,0);
-    	save lvl;
-    	save style;
-    	if known ATTR_style:
-    		style:= scantokens(ATTR_style);
-    	else:
-    		style :=0;
-    	fi;
-    	if known ATTR_text:
-    		 if known ATTR_lvl:
-    		 lvl := scantokens(ATTR_lvl);
-    		 else: lvl :=0;
-    		 fi;
-    		 if lvl < 3:
-      			U:=(S*u*(length ATTR_text)/4,S*u*(length ATTR_text)/4);
-      			create_styled_label(ATTR_text,P,R,S,A,style);
-      		else:;
-    		fi;
-    	fi;
-  	enddef;
-		initsymbol("p_u_label_MY");
-		
+
+
+  code metapost
+    min_label_level("2"); % yeah, now it works!
+
 	endcode
 endlayout
 
