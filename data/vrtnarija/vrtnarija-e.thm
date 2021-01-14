@@ -4,6 +4,7 @@ map m-all-e -projection extended
 	m-cheetah-e
 	m-beyond-consort-e
 	m-friendship-e
+	m-below-friendship-e
 	m-kangaroo_branch-e
 	m-s_extensions-e
 endmap
@@ -46,18 +47,30 @@ endmap
 
 map m-friendship-e -projection extended
 	m-all-e@friendship
-	m-all-e@candyMountain
-	m-all-e@highway32
-	m-all-e@leprachaun
-	m-all-e@weepeople
-	m-all-e@gold
-	m-all-e@nitro
 	m-all-e@pushyourluck
 	m-all-e@agartha
 	m-all-e@time_bandits
 	m-all-e@rejuvenation_rift
 	m-all-e@straightjacket
 endmap
+
+map m-below-friendship-e -projection extended
+	m-all-e@candyMountain
+	m-all-e@highway32
+	m-all-e@leprachaun
+	m-all-e@weepeople
+	m-all-e@gold
+	m-all-e@nitro
+	m-all-e@potato
+	m-all-e@smash
+	m-all-e@miles
+	m-all-e@beyond
+	m-all-e@formative
+	m-all-e@colarado
+	m-all-e@hoover
+	m-all-e@trueadventures
+endmap
+
 map m-s_extensions-e -projection extended
 	m-all-e@choke-a-bloke
 	m-all-e@emptyquarter
@@ -72,7 +85,6 @@ map m-kangaroo_branch-e -projection extended
 	m-all-e@bonus
 endmap
 
-
 centreline
 	# Entrance series
 	extend start 0@bclent2
@@ -80,20 +92,20 @@ centreline
 	extend left 14@laurel
 	extend right 2@zimmer
 	extend right 11@banzai
-
+	
 	extend right 1@hardy 2@hardy
 	extend right 2@hardy
-
+	
 	# Ensure main line is down Laurel not Vil
 	extend ignore 15@judge
 	extend left 7@chariot 6@chariot
 	extend left 6@chariot
-
+	
 	#extend prisoners
 	extend left 4@prisoners 3@prisoners
 	extend left 3@prisoners
-
-
+	
+	
 	# Captain K
 	extend left 13@bonus
 	extend left 24@kangaroo01 23@kangaroo01
@@ -109,21 +121,21 @@ centreline
 	extend right 6@intravenus_de_milo
 	extend left 3@dark_tranquillity
 	extend right 8@roaring
-
+	
 	extend right 6@mirage_canyon 5@mirage_canyon
 	extend right 5@mirage_canyon
 	extend left 4@mirage_canyon 3@mirage_canyon
 	extend left 3@mirage_canyon
-
+	
 	extend left 1@intravenus_de_milo 2@intravenus_de_milo
 	extend left 14@mudslump 13@mudslump
 	extend left 13@mudslump
 	extend right 7@mudslump
-
-
+	
+	
 	# Snap off bottom of Captain K
 	extend ignore 4@fools_road
-
+	
 	# Friendship and Beyond
 	extend left 6@fallsrd
 	extend left 1@candyMountain
@@ -148,18 +160,18 @@ centreline
 	extend right 2@pick_your_poison 4@pick_your_poison
 	extend right 4@pick_your_poison
 	extend right 23@lazarus
-
+	
 	# Break loop between Leprechaun - Envy - Greed - Cascade - Leprechaun
 	extend ignore 3@envy
 	# Break loop between Big Rock - High 32 - Soda - Stagger - Big Rock
 	extend ignore 2@stagger_lee
 	# Break loop between Big Rock - Friend - Xanadu - Soda - High 32 - Big Rock
-
-
+	
+	
 	# Yorkshire
 	extend left 4@lowerpleasures
 	extend right 6@2ndtimelucky
-
+	
 	#Xanadu/Cuckoo's Nest
 	extend left 12@xanadu 13@xanadu
 	extend left 8@xanadu 7@xanadu
@@ -169,19 +181,19 @@ centreline
 	extend left 5@euphrates
 	extend right 2@euphrates
 	extend left 9@hydrophobia
-
+	
 	# Snap off Gravity/Soda join so main passage follows High32
 	extend ignore 3@gravity
-
+	
 	# Below Zimmer / Korita
 	extend right 3@belowzimmer 1@belowzimmer
 	extend left 1@belowzimmer
 	extend right 7@eggsplosive
 	extend left 4@apuntoofar1
-
+	
 	# Snap off bottom of Korita
 	extend ignore carbide@crack_in_time
-
+	
 	# Cheetah and beyond
 	extend right 28@kamikaze
 	extend right 13@wonderland 12@wonderland
@@ -212,24 +224,24 @@ centreline
 	extend left 4@consort 5@consort
 	extend left 1@consort 2@consort
 	extend left 7@consort 8@consort
-
+	
 	extend right 4@palace2 3@palace2
 	extend left 3@palace2 2@palace2
 	extend left 2@palace2 1@palace2
-
+	
 	# Snap off wrong way in consort
 	extend ignore 17@consort
 	extend ignore 2@ouroboros
-
+	
 	# Below Stuck In Paradise
 	extend left 21@kneekiller
 	extend right 5@bravenewworld
 	extend left 17@meridianway
 	extend left 15@emptyquarter
-
+	
 	# Follow Blast rather than Jericho
 	extend ignore 10@jericho
-
+	
 	# # Prince Consort and beyong
 	extend right 23@ouroboros
 	extend left 2@palace2
@@ -242,6 +254,8 @@ centreline
 	extend right 12@milkyway 13@milkyway
 	extend right 3@dreamsforthesoul
 	extend left 1@dreamsforthesoul
-
+	
+	extend left 44@trueadventures 42@trueadventures
+	extend left 42@trueadventures
 	# Entrance series
 endcentreline
