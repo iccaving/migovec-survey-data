@@ -112,6 +112,15 @@ layout base-e
 				label.bot(thTEX("IZTEGNJENI PROFIL 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
 			endgroup
 		enddef;
+
+		def p_waterflow_permanent_MY (expr P,R,S,A)=
+    U:=(.2u,.2u);
+      T:=identity aligned A rotated R scaled S shifted P;
+      pickup PenD;
+      thdraw (-.07u,.28u)--(.07u,.28u)--(0,0.43u)--cycle;
+	  thfill (-.07u,.28u)--(.07u,.28u)--(0,0.43u)--cycle;      
+	  thdraw (-0.04u,0.29u)..(.04u,.2u)..(-0.05u,0.1u)..(.05u,0)..(-0.05u,-0.1u)..(0,-0.2u);
+    enddef;
 		
 		# ROCKBORDERS
 
@@ -224,7 +233,8 @@ layout base-e
 		
 		## lines
 		# redefinitions
-		
+		initsymbol("p_waterflow_permanent_MY");
+
 		# others
 		initsymbol("l_rockborder_MY");
 		initsymbol("l_u_texture_MY");
