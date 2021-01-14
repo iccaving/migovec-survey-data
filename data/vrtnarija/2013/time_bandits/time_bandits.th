@@ -5,8 +5,10 @@ input time_bandits-e.th2
 
 map m-all-e -projection extended
     time_bandits-1e
+    time_bandits-2e
 endmap
 
+join time_bandits-1e time_bandits-2e
 
 input time_bandits-p.th2
 
@@ -16,9 +18,9 @@ endmap
 
 centreline
     team "James Hooper" insts
-    team "Unknown" notes
+    team "Oliver Myerscough" notes
     explo-team "James Hooper"
-    explo-team "Unknown"
+    explo-team "Oliver Myerscough"
     date 2013.07.31
     units length meters
     units compass clino degrees
@@ -26,7 +28,7 @@ centreline
     1	2	2.84	123	-22
     2	3	11.97	173	-02
     3	4	3.75	188	+01
-    4	5	4.55 	217 	+16
+    4	5	4.55 	217 +16
     5	6	6.80	318	+34
     6	7	12.28	347	+11
     8	7	3.79	087	-27
