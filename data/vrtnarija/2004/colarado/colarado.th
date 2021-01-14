@@ -1,4 +1,3 @@
-
 survey colarado -title "From miles underground to far northern sump"
 	input "colarado-p.th2"
 	
@@ -8,13 +7,13 @@ survey colarado -title "From miles underground to far northern sump"
 	endmap
 	
 	join colarado-1p colarado-2p
-
-input colarado-e.th2
-
-map m-all-e -projection extended
-    colarado-1e
-endmap
-
+	
+	input colarado-e.th2
+	
+	map m-all-e -projection extended
+		colarado-1e
+	endmap
+	
 	centreline
 		team "Michael Rogerson" insts
 		team "Jan Evetts" notes

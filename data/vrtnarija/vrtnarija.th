@@ -177,6 +177,13 @@ survey vrtnarija -title "Vrtnarija"
 	join cow-1p@cow gold-1p@gold
 	join miles-3p@miles beyond-1p@beyond
 	
+	join potato-1e@potato nitro-1e@nitro
+	join smash-1e@smash potato-1e@potato
+	join miles-1e@miles smash-1e@smash
+	join beyond-1e@beyond miles-1e@miles
+	join colarado-1e@colarado beyond-1e@beyond
+	join hoover-1e@hoover colarado-1e@colarado
+	
 	###__________2005____________###
 	input ./2005/olympicrift/olympicrift.th
 	input ./2005/scrotty/scrotty.th
@@ -197,7 +204,7 @@ survey vrtnarija -title "Vrtnarija"
 	join kangaroo01-1e@kangaroo01 zubafu-1e@zubafu
 	join bonus-1p@bonus zubafu-1p@zubafu
 	join bonus-1e@bonus zubafu-1e@zubafu
-
+	
 	join scrotty-1p@scrotty bonus-1p@bonus
 	join olympicrift-1p@olympicrift scrotty-1p@scrotty
 	
@@ -734,4 +741,5 @@ survey vrtnarija -title "Vrtnarija"
 	join void2-1p@void2 nitro-1p@nitro
 	join pushyourluck-1e@pushyourluck agartha-1e@agartha
 	
+	join trueadventures-1e@trueadventures colarado-1e@colarado
 endsurvey
