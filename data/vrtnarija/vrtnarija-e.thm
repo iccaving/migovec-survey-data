@@ -65,6 +65,7 @@ endmap
 
 map m-kangaroo_branch-e -projection extended
 	m-all-e@kangaroo01
+	m-all-e@zubafu
 	m-all-e@bonus
 endmap
 
@@ -82,6 +83,8 @@ centreline
 
 	# Ensure main line is down Laurel not Vil
 	extend ignore 15@judge
+	extend left 7@chariot 6@chariot
+	extend left 6@chariot
 
 	#extend prisoners
 	extend left 4@prisoners 3@prisoners

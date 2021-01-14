@@ -193,7 +193,11 @@ survey vrtnarija -title "Vrtnarija"
 	#equate 13@pico.kangaroo 13@pico.garden-ent
 	
 	join kangaroo01-1p@kangaroo01 zubafu-1p@zubafu
+	join kangaroo01-1e@kangaroo01 pico-1e@pico
+	join kangaroo01-1e@kangaroo01 zubafu-1e@zubafu
 	join bonus-1p@bonus zubafu-1p@zubafu
+	join bonus-1e@bonus zubafu-1e@zubafu
+
 	join scrotty-1p@scrotty bonus-1p@bonus
 	join olympicrift-1p@olympicrift scrotty-1p@scrotty
 	
@@ -713,6 +717,7 @@ survey vrtnarija -title "Vrtnarija"
 	join meridianway-1p@meridianway finaldraft-1p@finaldraft
 	join choke-a-bloke-1p@choke-a-bloke meridianway-1p@meridianway
 	join choke-a-bloke-1e@choke-a-bloke meridianway-1e@meridianway
+	join blast-1e@blast meridianway-1e@meridianway
 	join emptyquarter-1p@emptyquarter choke-a-bloke-1p@choke-a-bloke
 	join blast-1p@blast pleasurepalace-1p@pleasurepalace
 	join blast-1e@blast pleasurepalace-1e@pleasurepalace
