@@ -5,8 +5,16 @@ input cuckoos_nest-e.th2
 
 map m-all-e -projection extended
     cuckoos_nest-1e
+    cuckoos_nest-2e
+    cuckoos_nest-3e
+    cuckoos_nest-4e
+    cuckoos_nest-5e
 endmap
 
+join cuckoos_nest-1e cuckoos_nest-2e
+join cuckoos_nest-2e cuckoos_nest-3e
+join cuckoos_nest-3e cuckoos_nest-4e
+join cuckoos_nest-4e cuckoos_nest-5e
 
 input cuckoos_nest-p.th2
 
