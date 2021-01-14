@@ -106,8 +106,12 @@ For compiling and exporting:
 
 For drawing we are using Inkscape and the Therion Inkscape extensions because we think its nicer than using the Therion editor:
 
-- [Inkscape](https://inkscape.org/r) - Vector drawing program
+- [Inkscape](https://inkscape.org/release/) - Vector drawing program
 - [Inkscape Therion Extensions](https://github.com/speleo3/inkscape-speleo/) - The extensions that allow you to draw Therion scraps in Inkscape.
+
+(Optional) For editing the text files:
+- [VSCode](https://code.visualstudio.com/Download)
+- [VSCode Therion Extension](https://marketplace.visualstudio.com/items?itemName=rhystyers.therion)
 
 ## Therion Glossary
 
@@ -122,7 +126,7 @@ Therion has a complex vocabulary of its own so here is a basic translation.
 
 ### A note on scope
 Scope can be roughly understood as the level of the survey we are working in. 
-If we are for instance equating stations between two different passages of a cave (say M16), then we are within the M6 scope. 
+If we are for instance equating stations between two different passages of a cave (say M16), then we are within the M16 scope. 
 As mentioned previously, all objects in Therion have an id, whether is a survey, a map, a scrap, a line or a point.
 Due to the hierarchical nature of the data structure and the fact that each id must be unique within each level of survey, which is why we have uniquely named stations in each passage, and uniquely named passages in each cave, and so forth.
 
