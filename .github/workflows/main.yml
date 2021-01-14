@@ -9,8 +9,8 @@ on:
       - .github/workflows/**
 
 env:
-  THERION_VERSION: 5.4.4
-  THERION_PATH: ./therion-5.4.4
+  THERION_VERSION: 5.5.6
+  THERION_PATH: ./therion-5.5.6
 
 jobs:
   build:
