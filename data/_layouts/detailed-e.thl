@@ -99,6 +99,14 @@ code metapost
 #                            POINT TYPES                      |
 #_____________________________________________________________|
     
+    def p_waterflow_MY (expr P,R,S,A)=
+    U:=(.2u,.2u);
+      T:=identity aligned A rotated R scaled S shifted P;
+      pickup PenC;
+      thfill (-.1u,.3u)--(.1u,.3u)--(0,0.4u)--cycle;
+      thdraw (0,0.3u)..(.05u,.2u)..(-0.05u,0.1u)..(0,0);
+    enddef;
+
     def p_u_probe_MY (expr P,R,S,A)=
       U:=(.2u,.2u);
       T:=identity aligned A rotated R scaled S shifted P;
@@ -563,6 +571,7 @@ enddef;
     initsymbol("p_gradient_MY");
     initsymbol("p_station_fixed_MY");
     initsymbol("p_anchor_MY");
+    initsymbol("p_waterflow_MY");
     
     initsymbol("p_u_logger_MY");
     initsymbol("p_u_waterdrip_MY");
@@ -609,6 +618,7 @@ endcode
  symbol-assign point station AUT
  symbol-assign line survey MY
  symbol-assign point station MY
+ symbol-assign point water-flow MY
  symbol-assign point station:fixed MY
  symbol-hide point passage-height
  symbol-colour point station-name [70 0 0]
@@ -620,7 +630,7 @@ endcode
  symbol-colour area ice [0 70 90]
  symbol-colour area snow [0 70 90]
  symbol-colour area water [10 35 70]
- symbol-colour point water-flow [10 35 70]
+ symbol-colour point waterflow [10 35 70]
  symbol-colour point station-name [70 0 0]
  symbol-colour point station:fixed [70 0 0]
  
