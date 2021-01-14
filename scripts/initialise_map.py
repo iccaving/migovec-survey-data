@@ -20,8 +20,7 @@ import re
 # namespace    = The namespace of the current survey within the top level th
 # 
 # e.g. 
-# python3 initialise_map.py ../../vrtnarija.th vrtanrija
-# python3 initialise_map.py ../../../primadona_ubend_monatip.th monatip.primadona_ubend_monatip
+# python3 ../../../../scripts/initialise_map.py ../../../system_migovec.th vrtnarija.vrtnarija_vilinska.system_migovec
 #
 
 # Templates
@@ -95,6 +94,7 @@ else:
 # Create the XVI config
 with open('xvi.thconfig', 'w+') as f:
     f.write(xvi_file.format(th_file=main_th, projection=projection, name=name, namespace=namespace))
+
 os.system('therion xvi.thconfig')
 os.remove('xvi.thconfig')
 

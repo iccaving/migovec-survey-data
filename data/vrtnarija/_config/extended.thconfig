@@ -20,13 +20,12 @@ input "../../_layouts/user_label.thl" # input this to have the label hierarchy
 
 source
 	map include-centerline -projection extended
-		#vrtnarija@vrtnarija_vilinska.system_migovec
+		vrtnarija@vrtnarija_vilinska.system_migovec
 		m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
 	endmap
 endsource
-select include-centerline
-#select m-all-e@vrtnarija.system_migovec
-
+#select include-centerline
+select m-all-e@vrtnarija.system_migovec
 
 
 layout ee
