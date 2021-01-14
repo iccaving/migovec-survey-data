@@ -5,8 +5,11 @@ input rejuvenation_rift-e.th2
 
 map m-all-e -projection extended
     rejuvenation_rift-1e
+    break
+    rejuvenation_rift-2e
 endmap
 
+#join rejuvenation_rift-1e rejuvenation_rift-2e
 
 input rejuvenation_rift-p.th2
 
