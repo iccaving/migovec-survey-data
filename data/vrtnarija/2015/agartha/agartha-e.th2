@@ -1,11 +1,12 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust -618.0 -172.0 605.0 195.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap agartha-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line wall 
+scrap agartha-1e -projection extended -scale [-48.0 125.0 100.0 132.0 0.0 0.0 150 300]
+
+line wall
   -330.0064 -35.3093
   -330.9119 -33.0454 -331.8173 -30.782 -331.8169 -28.9711
   -331.8165 -27.1602 -330.911 -25.8018 -325.2567 -24.8972
@@ -41,16 +42,20 @@ line wall
   411.4894 0.0 416.9218 -4.0743 423.2596 -6.3377
   429.5975 -8.601 436.8406 -9.0538 444.7621 -8.7142
   452.6836 -8.3747 461.2857 -7.2428 469.8856 -6.1112
+  smooth off
 endline
 
-line wall 
+line wall
   -486.1822 -8.8273
   -478.0329 -9.0537 -469.8846 -9.2801 -464.453 -10.5248
   -459.0214 -11.7696 -456.305 -14.0333 -455.0601 -16.9751
   -453.8153 -19.9168 -454.0416 -23.5384 -454.268 -27.161
+  smooth off
 endline
 
-line wall 
+point -185.0 62.0 u:label_MY -id agarthaLabel -attr text "Agartha" -attr align br -attr lvl 2
+
+line wall
   470.91 4.36
   461.9684 5.3963 453.026 6.4328 445.3856 7.4037
   437.7453 8.3746 431.4083 9.2799 426.4283 10.7512
@@ -83,39 +88,73 @@ line wall
   -353.9986 3.6215 -373.2366 3.8478 -390.3258 3.5083
   -407.415 3.1689 -422.3528 2.2635 -437.7446 2.3767
   -453.1365 2.4898 -468.9793 3.6214 -484.8241 4.7532
+  smooth off
 endline
 
 point -443.62 -15.35 station -name 31
+
 point -391.85 -10.79 station -name 32
+
 point -443.62 -33.86 station -name 29
+
 point -470.91 -37.64 station -name 30
+
 point -414.37 -35.35 station -name 28
+
 point -383.78 -32.68 station -name 27
+
 point -325.63 -20.31 station -name 26
+
 point -252.44 -17.8 station -name 25
+
 point -211.62 -9.06 station -name 24
+
 point -195.09 -8.82 station -name 23
+
 point -143.13 -7.87 station -name 22
+
 point -117.94 -8.35 station -name 21
+
 point -90.6 -10.24 station -name 20
+
 point -25.26 -11.42 station -name 19
+
 point 3.07 -12.36 station -name 18
+
 point 38.5 -11.73 station -name 17
+
 point 90.46 -12.68 station -name 16
+
 point 129.02 -11.34 station -name 15
+
 point 160.0 -9.69 station -name 14
+
 point 186.27 -0.16 station -name 13
+
 point 214.09 -5.51 station -name 12
+
 point 238.47 -4.25 station -name 11
+
 point 254.75 3.7 station -name 10
+
 point 265.6 1.73 station -name 9
+
 point 282.08 0.31 station -name 8
+
 point 299.0 2.68 station -name 7
+
 point 332.01 24.17 station -name 6
+
 point 365.45 37.64 station -name 5
+
 point 393.26 22.83 station -name 4
+
 point 408.54 12.6 station -name 3
+
 point 426.27 2.36 station -name 2
+
 point 470.91 2.36 station -name 1
+
 endscrap
+
 
