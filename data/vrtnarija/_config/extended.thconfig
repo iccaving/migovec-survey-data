@@ -25,7 +25,7 @@ source
 	endmap
 endsource
 #select include-centerline
-select m-all-e@vrtnarija.system_migovec
+select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
 
 
 layout ee
@@ -38,7 +38,7 @@ layout ee
 	copy user_label
 
 	code metapost
-		max_label_level("2"); % yeah, now it works!
+		max_label_level("3"); % yeah, now it works!
 	endcode
 	symbol-assign point water-flow MY
 endlayout
