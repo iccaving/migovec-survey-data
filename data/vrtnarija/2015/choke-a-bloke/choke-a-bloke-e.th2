@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap choke-a-bloke-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   233.6841 2.1613
   229.3098 0.5366 228.8099 1.5364 229.3098 0.5366
   229.8097 -0.4632 229.4348 -2.0879 230.5596 -1.8796
@@ -14,7 +14,7 @@ line rock-border -close on -line-visibility on
   234.4756 1.6614 233.6841 2.1613 233.6841 2.1613
 endline
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   219.02 -5.5875
   214.6457 -7.2122 214.1458 -6.2124 214.6457 -7.2122
   215.1456 -8.212 214.7707 -9.8367 215.8955 -9.6284
@@ -23,14 +23,14 @@ line rock-border -close on -line-visibility on
   219.8115 -6.0874 219.02 -5.5875 219.02 -5.5875
 endline
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   221.9698 -6.052
   219.1205 -8.2275 225.3216 -12.071 227.9964 -9.6201
   230.6085 -7.2268 233.7906 -5.5265 230.3558 -4.9639
   226.9211 -4.4012 221.9698 -6.052 221.9698 -6.052
 endline
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   249.5076 -6.5664
   253.1429 -8.8872 254.3236 -11.4585 255.0306 -9.0603
   255.7377 -6.662 255.3941 -4.4422 253.4464 -4.242
@@ -38,7 +38,7 @@ line rock-border -close on -line-visibility on
   249.1977 -4.6918 249.5076 -6.5664 249.5076 -6.5664
 endline
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   237.7297 -4.9577
   233.3554 -6.5824 232.8555 -5.5826 233.3554 -6.5824
   233.8553 -7.5822 233.4804 -9.2069 234.6052 -8.9986
@@ -47,7 +47,7 @@ line rock-border -close on -line-visibility on
   238.5212 -5.4576 237.7297 -4.9577 237.7297 -4.9577
 endline
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   246.5612 1.6109
   242.2482 1.6249 239.8746 3.1654 240.5609 0.7613
   241.4754 -1.0348 242.7346 -1.8666 244.0616 -2.1274
@@ -55,7 +55,7 @@ line rock-border -close on -line-visibility on
   247.8263 0.1934 246.5612 1.6109 246.5612 1.6109
 endline
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   248.8798 -9.1858
   251.7938 -7.0977 245.7121 -3.0679 242.9642 -5.4365
   240.2807 -7.7495 237.0485 -9.3525 240.4646 -10.019
@@ -82,7 +82,7 @@ endscrap
 
 scrap choke-a-bloke-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   -167.4712 -9.0817
   -168.5544 -10.9981 -171.2622 -10.8731 -168.5127 -11.5813
   -165.7632 -12.2895 -162.7637 -12.3312 -162.2221 -11.248
@@ -90,7 +90,7 @@ line rock-border -close on -line-visibility on
   -164.2634 -9.2067 -167.4712 -9.0817 -167.4712 -9.0817
 endline
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   -166.3048 1.3747
   -170.679 -0.25 -171.1789 0.7498 -170.679 -0.25
   -170.1791 -1.2498 -170.554 -2.8745 -169.4292 -2.6662
@@ -99,7 +99,7 @@ line rock-border -close on -line-visibility on
   -165.5132 0.8748 -166.3048 1.3747 -166.3048 1.3747
 endline
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   -162.0764 6.1567
   -166.171 4.8016 -168.9106 5.5086 -167.4966 3.4466
   -166.0826 1.3845 -164.1438 0.2499 -162.7593 1.6344
@@ -107,7 +107,7 @@ line rock-border -close on -line-visibility on
   -160.4268 5.214 -162.0764 6.1567 -162.0764 6.1567
 endline
 
-line rock-border -close on -line-visibility on
+line rock-border -close on 
   -152.2238 -8.0819
   -149.3099 -5.9938 -155.3915 -1.964 -158.1395 -4.3326
   -160.823 -6.6456 -164.0551 -8.2486 -160.6391 -8.9151
