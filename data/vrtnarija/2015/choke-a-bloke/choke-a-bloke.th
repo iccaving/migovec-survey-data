@@ -12,7 +12,10 @@ input choke-a-bloke-e.th2
 
 map m-all-e -projection extended
     choke-a-bloke-1e
+	choke-a-bloke-2e
 endmap
+
+join choke-a-bloke-1e choke-a-bloke-2e
 
 	centreline
 		team "Oliver Myerscough" insts
