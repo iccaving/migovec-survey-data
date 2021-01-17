@@ -7,6 +7,13 @@ map m-all-e -projection extended
     getafix-1e
 endmap
 
+
+input getafix-p.th2
+
+map m-all-p -projection plan
+    getafix-1p
+endmap
+
 centreline
     team "Clewin Griffith" insts
     team "James Hooper" notes
