@@ -202,6 +202,8 @@ survey vrtnarija -title "Vrtnarija"
 	join kangaroo01-1p@kangaroo01 zubafu-1p@zubafu
 	join kangaroo01-1e@kangaroo01 pico-1e@pico
 	join kangaroo01-1e@kangaroo01 zubafu-1e@zubafu
+	join scrotty-1e@scrotty bonus-1e@bonus 
+	join scrotty-1e@scrotty olympicrift-1e@olympicrift
 	join bonus-1p@bonus zubafu-1p@zubafu
 	join bonus-1e@bonus zubafu-1e@zubafu
 	
@@ -221,6 +223,11 @@ survey vrtnarija -title "Vrtnarija"
 	
 	join mudslump-1p@mudslump scrotty-1p@scrotty
 	join kill_em_all-1p@kill_em_all mudslump-2p@mudslump
+
+	# point join elevation
+	join 1e_l1@mudslump:0 1e_l1@scrotty:end 
+	join 1e_l2@mudslump:end 1e_l2@scrotty:0 
+
 	
 	###__________2008____________###
 	input ./2008/dangermouse/dangermouse.th
@@ -260,6 +267,8 @@ survey vrtnarija -title "Vrtnarija"
 	join cheesecake-1p@cheesecake kill_em_all-1p@kill_em_all
 	join primula-1p@primula cheesecake-1p@cheesecake
 	
+	join greenback-1e@greenback giblet_breakfast-1e@giblet_breakfast
+
 	###__________2009____________###
 	input ./2009/belowzimmer/belowzimmer.th
 	input ./2009/fools_road/fools_road.th
@@ -623,6 +632,7 @@ survey vrtnarija -title "Vrtnarija"
 	join straightjacket-1e@straightjacket rejuvenation_rift-1e@rejuvenation_rift
 	join cuckoos_nest-3e@cuckoos_nest time_bandits-1e@time_bandits
 	join cuckoos_nest-3e@cuckoos_nest rejuvenation_rift-1e@rejuvenation_rift
+	join cuckoos_nest-4e@cuckoos_nest hydrophobia-1e@hydrophobia
 	
 	###__________2014____________###
 	input ./2014/sicsempertyrannis/sicsempertyrannis.th
@@ -678,6 +688,7 @@ survey vrtnarija -title "Vrtnarija"
 	join AJA-1p@AJA rocksteadylove-1p@rocksteadylove
 	join hipsdontlie-1p@hipsdontlie cuckoos_nest-2p@cuckoos_nest
 	join hipsdontlie-1e@hipsdontlie cuckoos_nest-3e@cuckoos_nest
+	join stupidpitch@stupid:top hydropitch@hydrophobia:top
 	
 	###__________2015____________###
 	input ./2015/jetstream/jetstream.th
@@ -724,6 +735,7 @@ survey vrtnarija -title "Vrtnarija"
 	
 	join jetstream-1p@jetstream squidgygoodness-1p@squidgygoodness
 	join firstdraft-1p@firstdraft jetstream-1p@jetstream
+	join firstdraft-1e@firstdraft jetstream-1e@jetstream
 	join finaldraft-1p@finaldraft firstdraft-1p@firstdraft
 	join meridianway-1p@meridianway finaldraft-1p@finaldraft
 	join choke-a-bloke-1p@choke-a-bloke meridianway-1p@meridianway

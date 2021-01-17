@@ -5,6 +5,7 @@ survey scrotty -title "Scrotty - the continuation of captain kangaroo from Bonus
 	
 	map m-all-e -projection extended
 		scrotty-1e
+		scrotty-2e
 	endmap
 	
 	input scrotty-p.th2
@@ -12,6 +13,8 @@ survey scrotty -title "Scrotty - the continuation of captain kangaroo from Bonus
 	map m-all-p -projection plan
 		scrotty-1p
 	endmap
+
+	join scrotty-1e scrotty-2e
 	
 	centreline
 		team "Clewin Griffith " insts
