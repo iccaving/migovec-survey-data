@@ -2,7 +2,13 @@
 survey hipsdontlie -title "Hips Don't Lie"
 
 input hipsdontlie-p.th2
+input hipsdontlie-e.th2
 
+map m-all-e -projection extended
+    hipsdontlie-1e
+endmap
+#The elevation has an unsurveyed connection to rejuvenation rift, copied from the old inkscape survey
+#It is joined in the th2 file with an extra join command
 map m-all-p -projection plan
     hipsdontlie-1p
 endmap
