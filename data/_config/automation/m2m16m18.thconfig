@@ -1,3 +1,4 @@
+encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
@@ -8,7 +9,6 @@
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
@@ -18,16 +18,17 @@ source "../../m2m16m18.th"
 # input the layout files
 input "../../_layouts/overview-p.thl"
 input "../../_layouts/base-e.thl"
+input "../../_layouts/base-p.thl"
 input "../../_layouts/user_label.thl" # input this to have the label hierarchy
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-all-p@m2m16m18
+select m-exhibition_road-p@M16.m2m16m18
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview_plan_SLO or ENG
 layout plan
-	copy overview
+	copy base-p
 	copy user_label
 	scale 1 2000
 	#copy colour-by-depth
@@ -73,7 +74,6 @@ select local-e
 
 layout ee
 	copy base-e
-	copy colour-by-new
 	scale 1 2000
 	grid-size 10 10 100 m
 	copy show-centreline
@@ -85,15 +85,15 @@ layout ee
 	\legendbox{1}{80}{NW}{\scalebar}	}
 endlayout
 
-language sl # slo not yet supported
+#language sl # slo not yet supported
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_SLO.pdf -layout ee 
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.svg -layout ee
 language en
-export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.pdf -layout ee
+#export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.pdf -layout ee
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.svg -layout ee
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/m2_m16_m18.3d -fmt survex
+#export model -o ../../_outputs/m2_m16_m18.3d -fmt survex
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only

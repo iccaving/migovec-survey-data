@@ -3,8 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap zimmer-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap zimmer-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
+point 621.5678 928.9068 u:label_MY -attr lvl 1 -align r -attr text Zimmer
 point 423.5208 977.3282 water-flow -orientation 142.11894
 point 576.4931 994.772 water-flow -orientation 203.52687
 line wall 
