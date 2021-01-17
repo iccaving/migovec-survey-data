@@ -1,20 +1,34 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust 0 0 478.000000 451.000000
+##XTHERION## xth_me_area_zoom_to 400
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  8.79 27.28
-  5.68 26.73
-endline
-line survey 
-  5.68 26.73
-  -8.79 -27.28
-endline
-endscrap
+
 
 scrap stupid-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 5.68 26.73 station -name 1
-point 8.79 27.28 station -name 3
-point -8.79 -27.28 station -name 2
+
+point 364.0 302.0 u:label_MY -attr text Stupid -attr lvl 3 -attr align br
+
+point 335.0 305.0 water-flow -orientation 191.50000030808354
+
+line wall -id stupidpitch
+  150.5 236.5
+  mark bottom
+  147.69 242.42 222.13 252.4 231.75 250.0
+  236.61 248.78 243.45 250.6692 248.1973 249.4827
+  267.8909 244.5593 325.94 256.55 334.1574 272.9849
+  336.51 277.69 345.6052 279.409 342.528 287.7945
+  smooth off
+  342.528 298.3145 347.4996 308.0726 345.7475 319.0234
+  smooth off
+  mark top
+endline
+
+point 337.68 319.73 station -name 1
+
+point 340.79 320.28 station -name 3
+
+point 323.21 265.72 station -name 2
+
 endscrap
+
+
