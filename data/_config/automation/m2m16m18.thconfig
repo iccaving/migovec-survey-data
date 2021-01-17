@@ -73,7 +73,6 @@ select local-e
 
 layout ee
 	copy base-e
-	copy colour-by-new
 	scale 1 2000
 	grid-size 10 10 100 m
 	copy show-centreline
@@ -89,11 +88,11 @@ language sl # slo not yet supported
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_SLO.pdf -layout ee 
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.svg -layout ee
 language en
-export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.pdf -layout ee
+#export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.pdf -layout ee
 #export map -projection extended -o ../../_outputs/m2m16m18_EE_ENG.svg -layout ee
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/m2_m16_m18.3d -fmt survex
+#export model -o ../../_outputs/m2_m16_m18.3d -fmt survex
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
