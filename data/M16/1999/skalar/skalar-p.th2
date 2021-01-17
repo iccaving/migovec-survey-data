@@ -2,19 +2,24 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -27.80 47.01
-  27.80 46.06
-endline
-line survey 
-  27.80 46.06
-  1.10 -47.01
-endline
-endscrap
 
 scrap skalar-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -27.80 47.01 station -name 3
-point 1.10 -47.01 station -name 1
-point 27.80 46.06 station -name 2
+
+point 966.0487 1049.5936 label -align r -scale m -text Skalar
+line wall 
+  183.4665 982.1272
+  246.5959 895.3016 369.1092 903.4122 532.4125 906.2459
+  605.1116 907.5075 641.0 794.4597 391.1187 142.5953
+endline
+
+line wall 
+  651.8644 256.6716
+  816.1886 723.841 903.1465 867.8888 760.8945 987.5594
+  715.081 1026.1004 729.0169 1050.7121 729.0169 1050.7121
+endline
+
+point 217.8597 974.7063 station -name 3
+point 476.4421 133.4632 station -name 1
+point 715.3401 966.2061 station -name 2
 endscrap
+
