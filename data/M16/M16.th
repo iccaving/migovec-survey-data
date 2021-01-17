@@ -301,6 +301,9 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	# plan
 	join paradiso2-1p@paradiso2 paradiso-1p@paradiso
 	join paradiso2-1p@paradiso2 below55-1p@below55
+	join skalar2-1p@skalar2 skalar-1p@skalar
+	join obelix-1p@obelix skalar2-1p@skalar2
+	join getafix-1p@getafix obelix-1p@obelix
 
 	
 	
