@@ -7,6 +7,13 @@ map m-all-e -projection extended
     skalar-1e
 endmap
 
+
+input skalar-p.th2
+
+map m-all-p -projection plan
+    skalar-1p
+endmap
+
 centreline
     team "Jim Evans" insts
     team "Jim Evans" notes
