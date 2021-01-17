@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
 line survey 
   1081.7856 625.5629
@@ -193,8 +193,11 @@ endline
 endscrap
 
 
-scrap friendship-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap friendship-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
+point 492.6272 799.919 u:label_MY -attr lvl 1 -align tr -attr text "Friendship Gallery"
+point 257.3569 812.1627 camp -align t
+point 118.8355 733.5392 water-flow -orientation 180
 line wall 
   2020.9239 496.7084
   2014.442 496.2283 1958.5053 495.5081 1954.424 495.7482
