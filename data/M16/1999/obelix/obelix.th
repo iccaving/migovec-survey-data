@@ -7,6 +7,13 @@ map m-all-e -projection extended
     obelix-1e
 endmap
 
+
+input obelix-p.th2
+
+map m-all-p -projection plan
+    obelix-1p
+endmap
+
 centreline
     team "Jan Evetts" insts
     team "Thomas Ayles" insts
