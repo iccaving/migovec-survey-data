@@ -624,6 +624,8 @@ survey vrtnarija -title "Vrtnarija"
 	join cuckoos_nest-3e@cuckoos_nest time_bandits-1e@time_bandits
 	join cuckoos_nest-3e@cuckoos_nest rejuvenation_rift-1e@rejuvenation_rift
 	join cuckoos_nest-4e@cuckoos_nest hydrophobia-1e@hydrophobia
+	join dwarfline-bottom@dwarf_pine:top stupidpitch@stupid:bottom
+	join dwarfline-top@dwarf_pine:top roof@hydrophobia:end
 	
 	###__________2014____________###
 	input ./2014/sicsempertyrannis/sicsempertyrannis.th
@@ -680,6 +682,7 @@ survey vrtnarija -title "Vrtnarija"
 	join hipsdontlie-1p@hipsdontlie cuckoos_nest-2p@cuckoos_nest
 	join hipsdontlie-1e@hipsdontlie cuckoos_nest-3e@cuckoos_nest
 	join stupidpitch@stupid:top hydropitch@hydrophobia:top
+	join gravity-1e@gravity hydrophobia-2e@hydrophobia
 	
 	###__________2015____________###
 	input ./2015/jetstream/jetstream.th

@@ -1,30 +1,37 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust 0 0 370.000000 450.000000
+##XTHERION## xth_me_area_zoom_to 400
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  39.37 86.69
-  51.40 92.28
-endline
-line survey 
-  18.06 -49.76
-  39.37 86.69
-endline
-line survey 
-  -21.54 -31.42
-  18.06 -49.76
-endline
-line survey 
-  -51.40 -92.28
-  -21.54 -31.42
-endline
-endscrap
+
 
 scrap dwarf_pine-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 51.40 92.28 station -name 5
-point 39.37 86.69 station -name 4
-point 18.06 -49.76 station -name 3
-point -21.54 -31.42 station -name 2
-point -51.40 -92.28 station -name 1
+
+line wall -id dwarfline-top
+  149.7212 305.2974
+  mark top
+  149.7212 305.2974 164.69 204.86 158.0 199.0
+  151.31 193.15 110.5 171.0 110.5 171.0
+  smooth off
+endline
+
+line wall -id dwarfline-bottom
+  133.829 125.4647
+  162.25 179.0 203.25 160.75 205.7621 164.7769
+  208.35 168.93 215.7993 230.0186 215.7993 230.0186
+  smooth off
+  mark top
+endline
+
+point 236.4 318.28 station -name 5
+
+point 224.37 312.69 station -name 4
+
+point 203.06 176.24 station -name 3
+
+point 163.46 194.58 station -name 2
+
+point 133.6 133.72 station -name 1
+
 endscrap
+
+
