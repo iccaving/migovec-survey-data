@@ -7,6 +7,13 @@ map m-all-e -projection extended
     skalar2-1e
 endmap
 
+
+input skalar2-p.th2
+
+map m-all-p -projection plan
+    skalar2-1p
+endmap
+
 centreline
     team "H Hunt-Grubbe" insts
     team "Andy Jurd" notes
