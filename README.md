@@ -9,6 +9,7 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
   - [Prerequisites](#prerequisites)
   - [Therion Glossary](#therion-glossary)
     - [Internal Data](#internal-data)
+    - [A note on scope](#a-note-on-scope)
     - [Exported Data](#exported-data)
     - [Other Key Words](#other-key-words)
   - [Repository and File Structure](#repository-and-file-structure)
@@ -24,7 +25,7 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
   - [Converting old data](#converting-old-data)
     - [Converting Survex into Therion](#converting-survex-into-therion)
       - [Script](#script)
-      - [Manually](#manually)
+      - [Manually (don't do this anymore)](#manually-dont-do-this-anymore)
     - [Converting the old drawn survey into Therion format](#converting-the-old-drawn-survey-into-therion-format)
   - [Additional steps](#additional-steps)
     - [Connecting caves into systems](#connecting-caves-into-systems)
@@ -34,6 +35,9 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
     - [How do I show the centerline of undrawn maps?](#how-do-i-show-the-centerline-of-undrawn-maps)
     - [How Do I Make a Pillar (solid rock within a passage)?](#how-do-i-make-a-pillar-solid-rock-within-a-passage)
     - [How Do I Control Which Passage Appears On Top of Another?](#how-do-i-control-which-passage-appears-on-top-of-another)
+    - [How do I create a skeleton th2 file for a survey?](#how-do-i-create-a-skeleton-th2-file-for-a-survey)
+    - [How do I see the EE in aven or loch?](#how-do-i-see-the-ee-in-aven-or-loch)
+    - [Therion Error: Map is too large for PDF format. Try smaller scale!](#therion-error-map-is-too-large-for-pdf-format-try-smaller-scale)
 
 ## Downloads
 
@@ -84,7 +88,7 @@ Connected to the main system in 2012, Vrtnarija comprises roughly a third of the
 
 **M18 / M16 / M2**
 
-Collectively known as 'the old system' or sometimes 'sysmig', these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994, exploration was continued until roughly 2001. M2/M8 and M16/M18 connections were made early on in 1996. 
+Collectively known as 'the old system' or sometimes 'sysmig', these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994, exploration was continued until roughly 2001. M2/M8 and M16/M18 connections were made early on in 1996.
 
 - [Model 3D](https://github.com/tr1813/migresurvey/releases/download/latest/m2_m16_m18.3d) [3d]  
   The 3D file for viewing in Aven or Loch. (WIP)
@@ -110,6 +114,7 @@ For drawing we are using Inkscape and the Therion Inkscape extensions because we
 - [Inkscape Therion Extensions](https://github.com/speleo3/inkscape-speleo/) - The extensions that allow you to draw Therion scraps in Inkscape.
 
 (Optional) For editing the text files:
+
 - [VSCode](https://code.visualstudio.com/Download)
 - [VSCode Therion Extension](https://marketplace.visualstudio.com/items?itemName=rhystyers.therion)
 
@@ -119,17 +124,17 @@ Therion has a complex vocabulary of its own so here is a basic translation.
 
 ### Internal Data
 
-- **survey** : main data structure, which can be nested *ad nauseam* to represent karst areas, caves or passages. Each survey has an object id, which must be unique within the scope of the higher level survey. Likewise, any object within a survey has unique id (from stations, to maps, scraps)
-- **centreline**: survey data specification., with syntex mostly derived from Survex, 
+- **survey** : main data structure, which can be nested _ad nauseam_ to represent karst areas, caves or passages. Each survey has an object id, which must be unique within the scope of the higher level survey. Likewise, any object within a survey has unique id (from stations, to maps, scraps)
+- **centreline**: survey data specification., with syntex mostly derived from Survex,
 - **Scrap** - The most basic drawing element, a piece of 2D map. It will consist of the walls and stations of the passage as well as lots of extra information (should you choose to draw it!) like boulders, pits, passage gradients etc. A single set of survey data (a single passage) can have many scraps associated with it. It is often good to split the drawing over many scraps as this allows Therion to do clever things (like depth colouring). Scraps cannot overlap themselves.
 - **Map** - The higher level drawing element. A map can be made of scraps, or it can be a map of maps. Maps are how you collect individual drawn passages into larger blocks. For example a passage like Aqueduct will have its scraps collected in a map called `m-all-p` (). A bigger map might be called `m-below_klic_globin-p` and contain maps from Aqueduct and many other passages (e.g. m-all-p@aqueduct, m-all-p@klic_globin, etc...). The `m-below_klic_globin` will be collected into an Primadona map `m-all-p@Primadona` with all the other maps in Primadona and finally that will collected with the maps from Vrntarija and the old system into a full System Migovec map. The advantage of this heirarchical structure is that you can export these maps at any level, whether you want an overview of the full system or a higher resolution look at the pushing front.
 
 ### A note on scope
-Scope can be roughly understood as the level of the survey we are working in. 
-If we are for instance equating stations between two different passages of a cave (say M16), then we are within the M16 scope. 
+
+Scope can be roughly understood as the level of the survey we are working in.
+If we are for instance equating stations between two different passages of a cave (say M16), then we are within the M16 scope.
 As mentioned previously, all objects in Therion have an id, whether is a survey, a map, a scrap, a line or a point.
 Due to the hierarchical nature of the data structure and the fact that each id must be unique within each level of survey, which is why we have uniquely named stations in each passage, and uniquely named passages in each cave, and so forth.
-
 
 ### Exported Data
 
@@ -143,7 +148,7 @@ Therion can export to a number of formats.
 ### Other Key Words
 
 - **equate** - An equate lets Therion know that two stations are the same (that they are joined). This is how basically all the export formats are constructed.
-- **join** - A join lets Therion know that two scraps, or lines should be joined. It does its best to match up any walls that are nearby each other to create a seamless passage when exporting maps and atlases. 
+- **join** - A join lets Therion know that two scraps, or lines should be joined. It does its best to match up any walls that are nearby each other to create a seamless passage when exporting maps and atlases.
 
 ## Repository and File Structure
 
@@ -168,7 +173,7 @@ In the `data\{cave}` folders you will find `.th` files that define how these ind
 - `{name}.thm` will be used to combine individual passage maps into larger maps.
 
 In the `{name}.th` file, passages are arranged by year of discovery.
-In the `{name}.thm`file, passage map definitions are ordered by cave sub-region, and these subregions are themselves ordered into a map definition for the cave (a high level m-all-p, within the scope of the cave).  
+In the `{name}.thm`file, passage map definitions are ordered by cave sub-region, and these subregions are themselves ordered into a map definition for the cave (a high level m-all-p, within the scope of the cave).
 
 ### Exports
 
@@ -232,9 +237,6 @@ export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_E
 export model -o ../../_outputs/model/primadona_ubend_monatip.3d -fmt survex
 ```
 
-
-
-
 ## Adding data
 
 ### Adding survey data
@@ -278,8 +280,9 @@ survey plateau
 
   surface  # a DEM of the plateau (WIP)
   endsurface
-endsurvey 
+endsurvey
 ```
+
 With a system,cave, passage structure. Save the `{my_new_passage}.th` file into a new folder with lower case name (as far as possible, the same as the survex survey name).
 
 Find the `{cave}.th`file in the `{cave}` folder. This file contains a series of `input ./year/passage/passage.th` commands to tell the therion compiler to include the relevant survey data. Adding the command `input ./year/passage/my_new_passage.th` to this file in the correct year folder is necessary, but we now need to connect the new data to an existing point in the survey, i.e. equate.
@@ -315,7 +318,7 @@ join scrapX@passage_1 scrapY@passage_b #some join commands between survey maps
 ...
 
 #______Year2______
- 
+
 input ./year2/passage_4/passage_4.th
 input ./year2/passage_5/passage_5.th
 ...
@@ -467,10 +470,9 @@ Open an existing reference survey for the passage you are drawing. This will lik
 - Add labels  
   I usually just draw a rectangle (does not matter the size or the styling), select the rectangle, navigate to object properties and write the label there  
   Syntax: point label -scale <xs/s/m/l/xl> -align <br/r/t/b/tl/tr/bl> -text [mylabel]
-  Choose the scale of the point label carefully. The current set up is:
-  	- scale xs for labels only to be included in a very detailed view of the passage
-	- scale s for labels to be shown on a cave but not full system map (eg. primadona_ubend_monatip, but not: sysem_migovec). Essentially these labels would clutter the general map appearing above or below passages. 
-	-scale m, l or xl for passage names that appear on the very general system_migovec map, like cave entrance names, or passages that somehow extend away from the main tangle of passages and thus have plenty of white space for a label.
+  Choose the scale of the point label carefully. The current set up is: - scale xs for labels only to be included in a very detailed view of the passage
+  - scale s for labels to be shown on a cave but not full system map (eg. primadona_ubend_monatip, but not: sysem_migovec). Essentially these labels would clutter the general map appearing above or below passages.
+    -scale m, l or xl for passage names that appear on the very general system_migovec map, like cave entrance names, or passages that somehow extend away from the main tangle of passages and thus have plenty of white space for a label.
 
 Also don't draw everything in one scrap (layer). If the passage branches or goes up or down a lot, create a new layer `{passage}-2p`. It is important that you move any survey stations that that you want to drawn around into the new scrap as well.
 
@@ -591,3 +593,31 @@ map m-all-p -projection plan
 	wonderland-2p    # this one underneath
 endmap
 ```
+
+### How do I create a skeleton th2 file for a survey?
+
+Run the `create_2d.py` script:
+
+```
+ python3 scripts/create_2d.py.py data/system_migovec.th <survey_selector> --projection <projection>
+```
+
+Replace `<survey_selector>` with the selector for the survey you want to compile i.e. `firstdraft@vrtnarija.vrtnarija_vilinska.system_migovec`. Also replace `<projection>` with either `plan` or `extended`.
+
+The selector is relative to the survey file you set. We have set `data/system_migovec.th` so we need a full selector `firstdraft@vrtnarija.vrtnarija_vilinska.system_migovec`. If you were to set `data/vrtnarija/vrtnarija.th` then you would only need to select `firstdraft`. (In fact just `firstdraft` will work even when using `data/system_migovec.th` because the script can work out if there's only one `firstdraft` in the whole system).
+
+For the EE it is important to always generate from the highest level survey (`data/system_migovec.th`) because of how the extends are defined and how they cascade. For the plan this does not matter so you could just do `python3 scripts/create_2d.py.py data/vrtnarija/2015/firstdraft/firstdraft-p.th2 firstdraft --projection plan`.
+
+### How do I see the EE in aven or loch?
+
+This is a bit of a hack but the `create_2d.py` can be used to generate a `.plt` file that will open in aven and loch.
+
+```
+ python3 scripts/create_2d.py.py data/system_migovec.th <survey_selector> --projection extended --format plt --out <name>.plt
+```
+
+Then just open the `.plt` in aven or loch.
+
+### Therion Error: Map is too large for PDF format. Try smaller scale!
+
+This error often happens if you have an empty scrap, i.e. a scrap with no stations in it. If you have been making a new map with multiple scraps ensure you have copied the relevent stations across into the new layers.

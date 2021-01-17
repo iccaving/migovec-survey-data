@@ -29,7 +29,7 @@ input "../../_layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-all-p@vrtnarija
+select m-below_republica-p@vrtnarija
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
@@ -42,6 +42,6 @@ layout plan
 endlayout
 
 #language fr
-export map -projection plan -o ../_outputs/plan_SLO.pdf -layout plan
+#export map -projection plan -o ../_outputs/map/plan_SLO.pdf -layout plan
 language en
-#export map -projection plan -o ../_outputs/plan_ENG.pdf -layout plan
+export map -projection plan -o ../_outputs/plan_ENG.pdf -layout plan
