@@ -7,6 +7,7 @@ map m-all-e -projection extended
 	m-below-friendship-e
 	m-kangaroo_branch-e
 	m-s_extensions-e
+	m-watership-e
 endmap
 
 map m-entrance-e -projection extended
@@ -90,6 +91,10 @@ map m-kangaroo_branch-e -projection extended
 	m-all-e@olympicrift
 endmap
 
+map m-watership-e -projection extended
+	m-all-e@watershipdown
+endmap
+
 centreline
 	# Entrance series
 	extend start 0@bclent2
@@ -160,6 +165,8 @@ centreline
 	extend left 15@stagger_lee
 	extend right 13@republica
 	extend right 14@insomnia
+	extend left 1@watershipdown 3@watershipdown
+	extend left 3@watershipdown
 	extend right 3@colarado
 	extend left 4@envy
 	extend right 2@pick_your_poison 4@pick_your_poison
@@ -263,4 +270,7 @@ centreline
 	extend left 44@trueadventures 42@trueadventures
 	extend left 42@trueadventures
 	# Entrance series
+
+
+
 endcentreline
