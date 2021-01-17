@@ -25,13 +25,13 @@ source
 	endmap
 endsource
 #select include-centerline
-select m-all-e@vrtnarija.system_migovec
+select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
 
 
 layout ee
 	copy base-e
 	copy show-centreline
-	scale 1 1000
+	scale 1 4000
 	grid-size 10 10 100 m
 	map-header 0 0 off
 
@@ -46,4 +46,4 @@ endlayout
 
 language fr
 
-export map -projection extended -o ../_outputs/EE_SLO.pdf -layout ee #-layout-debug station-names
+export map -projection extended -o ../_outputs/EE_SLO.pdf -layout ee # -layout-debug station-names
