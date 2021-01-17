@@ -3,8 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap urinal2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap urinal2-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
+point 490.0866 1057.4253 u:label_MY -attr lvl 2 -attr text "Urinal Series" -align tl
 line wall -subtype blocks
   404.0407 981.6534
   405.1211 984.1741 411.0028 985.2544 412.9234 985.6145
