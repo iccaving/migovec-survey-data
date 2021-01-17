@@ -3,8 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap concorde-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap concorde-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
+point 292.1288 962.3324 u:label_MY -attr lvl 1 -align l -attr text Concorde
 point 437.972 719.767 water-flow -orientation 178.57799
 line rock-border -close on
   366.3495 699.7491
