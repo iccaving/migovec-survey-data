@@ -1,0 +1,20 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -27.80 47.01
+  27.80 46.06
+endline
+line survey 
+  27.80 46.06
+  1.10 -47.01
+endline
+endscrap
+
+scrap skalar-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point -27.80 47.01 station -name 3
+point 1.10 -47.01 station -name 1
+point 27.80 46.06 station -name 2
+endscrap
