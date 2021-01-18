@@ -62,7 +62,7 @@ def get_length(filepath):
     return 0
 
 
-undrawnre = re.compile(r".*DELETE-ME")
+drawnre = re.compile(r".*line wall")
 surveyre = re.compile(r".*cent\w\wline")
 
 
@@ -78,10 +78,10 @@ def is_survey(filepath):
 
 
 def is_drawn(filepath):
-    # If a file contains the DELETE-ME layer then it likely hasn't been drawn
+    # If a file contains a wall then it likely has been drawn
     with open(filepath, "r") as tmp:
-        matches = undrawnre.findall(tmp.read())
-        return len(matches) == 0
+        matches = drawnre.findall(tmp.read())
+        return len(matches) > 0
 
 
 def get_drawn_length(source):
@@ -120,6 +120,9 @@ for system in systems:
                 json_data[system][projection] = {}
             json_data[system][projection][state] = 0
 
+need_plan = []
+need_extended = []
+
 for result in results:
     if not result:
         continue
@@ -138,60 +141,20 @@ for result in results:
                 json_data[system][projection]["percent"] = round(json_data[system][projection]["drawn"] / json_data[system][projection]["total"] * 100, 1)
             else:
                 json_data[system][projection]["percent"] = 100
-# plan_total = sum(system_plan_total.values())
-# extended_total = sum(system_extended_total.values())
-# plan_drawn = sum(system_plan_drawn.values())
-# extended_drawn = sum(system_extended_drawn.values())
+    if not proj_is_drawn["plan"]:
+        need_plan.append(source.name)
+    if not proj_is_drawn["extended"]:
+        need_extended.append(source.name)
 
-# total = plan_total + extended_total
-# total_drawn = plan_drawn + extended_drawn
+print("Need plan:")
+pprint.pprint(need_plan)
 
-# json_data = {
-#     # Complete Totals
-#     "total_drawn": total_drawn,
-#     "total": total,
-#     "total_percent_drawn": round((total_drawn / total) * 100, 1),
-#     # All systems totals
-#     "plan_drawn": plan_drawn,
-#     "plan_total": plan_total,
-#     "plan_percent_drawn": round((plan_drawn / plan_total) * 100, 1),
-#     "extended_drawn": extended_drawn,
-#     "extended_total": extended_total,
-#     "extended_percent_drawn": round((extended_drawn / extended_total) * 100, 1),
-#     # Per system
-#     # Prima
-#     "primadona_ubend_monatip_drawn": system_plan_drawn["primadona_ubend_monatip"]
-#     + system_extended_drawn["primadona_ubend_monatip"],
-#     "primadona_ubend_monatip_total": system_plan_total["primadona_ubend_monatip"]
-#     + system_extended_total["primadona_ubend_monatip"],
-#     "primadona_ubend_monatip_plan_drawn": system_plan_drawn["primadona_ubend_monatip"],
-#     "primadona_ubend_monatip_plan_total": system_plan_total["primadona_ubend_monatip"],
-#     "primadona_ubend_monatip_extended_drawn": system_extended_drawn[
-#         "primadona_ubend_monatip"
-#     ],
-#     "primadona_ubend_monatip_extended_total": system_extended_total[
-#         "primadona_ubend_monatip"
-#     ],
-#     # Old Sys
-#     "m2m16m18_drawn": system_plan_drawn["m2m16m18"] + system_extended_drawn["m2m16m18"],
-#     "m2m16m18_total": system_plan_total["m2m16m18"]
-#     + system_extended_total["primadona_ubend_monatip"],
-#     "m2m16m18_plan_drawn": system_plan_drawn["m2m16m18"],
-#     "m2m16m18_plan_total": system_plan_total["m2m16m18"],
-#     "m2m16m18_extended_drawn": system_extended_drawn["m2m16m18"],
-#     "m2m16m18_extended_total": system_extended_total["m2m16m18"],
-#     # Vrtnarija
-#     "vrtnarija_vilinska_drawn": system_plan_drawn["vrtnarija_vilinska"]
-#     + system_extended_drawn["vrtnarija_vilinska"],
-#     "vrtnarija_vilinska_total": system_plan_total["vrtnarija_vilinska"]
-#     + system_extended_total["vrtnarija_vilinska"],
-#     "vrtnarija_vilinska_plan_drawn": system_plan_drawn["vrtnarija_vilinska"],
-#     "vrtnarija_vilinska_plan_total": system_plan_total["vrtnarija_vilinska"],
-#     "vrtnarija_vilinska_extended_drawn": system_extended_drawn["vrtnarija_vilinska"],
-#     "vrtnarija_vilinska_extended_total": system_extended_total["vrtnarija_vilinska"],
-# }
+print("Need extended:")
+pprint.pprint(need_extended)
 
+print("Results:")
 pprint.pprint(json_data)
+
 
 if args.json:
     with open(args.json, "w+") as f:
