@@ -1,60 +1,39 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 392.000000 342.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -62.13 8.19
-  -39.54 19.76
+scrap euphrates-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+line wall 
+  130.9517 171.0
+  169.0929 191.9777
+  169.0929 191.9777 193.2491 204.0558 203.4201 203.4201
+  213.5911 202.7844 227.5762 202.7844 231.3903 202.1487
+  235.2045 201.513 256.8178 202.7844 228.8476 191.9777
+  200.8773 181.171 201.513 157.6506 201.513 152.5651
+  201.513 147.4795 206.5985 130.316 206.5985 130.316
+  212.9554 123.9591 230.7546 120.145 230.7546 120.145
 endline
-line survey 
-  -39.54 19.76
-  -10.28 33.54
+
+line wall 
+  237.7472 148.1152
+  234.5688 151.9294 241.5613 168.4572 242.8327 171.6357
+  244.1041 174.8141 266.9889 195.1561 267.6245 204.0558
+  268.2602 212.9554 227.5762 221.855 227.5762 221.855
+  227.5762 221.855 147.4796 224.3978 134.1301 214.8625
+  120.7807 205.3271 114.4238 202.1487 114.4238 202.1487
 endline
-line survey 
-  -10.28 33.54
-  13.14 37.80
-endline
-line survey 
-  13.14 37.80
-  44.25 33.31
-endline
-line survey 
-  44.25 33.31
-  62.13 28.19
-endline
-line survey 
-  62.13 28.19
-  35.33 14.25
-endline
-line survey 
-  35.33 14.25
-  30.22 12.44
-endline
-line survey 
-  30.22 12.44
-  15.77 -18.90
-endline
-line survey 
-  15.77 -18.90
-  27.91 -24.72
-endline
-line survey 
-  27.91 -24.72
-  40.93 -37.80
-endline
+
+point 156.46 191.76 station -name 10
+point 133.87 180.19 station -name 11
+point 185.72 205.54 station -name 9
+point 209.14 209.8 station -name 8
+point 240.25 205.31 station -name 7
+point 258.13 200.19 station -name 6
+point 231.33 186.25 station -name 5
+point 226.22 184.44 station -name 4
+point 211.77 153.1 station -name 3
+point 223.91 147.28 station -name 2
+point 236.93 134.2 station -name 1
 endscrap
 
-scrap euphrates-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -39.54 19.76 station -name 10
-point -62.13 8.19 station -name 11
-point -10.28 33.54 station -name 9
-point 13.14 37.80 station -name 8
-point 44.25 33.31 station -name 7
-point 62.13 28.19 station -name 6
-point 35.33 14.25 station -name 5
-point 30.22 12.44 station -name 4
-point 15.77 -18.90 station -name 3
-point 27.91 -24.72 station -name 2
-point 40.93 -37.80 station -name 1
-endscrap
