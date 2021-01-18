@@ -41,11 +41,17 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
 
 ## Downloads
 
+![Automated Build](https://github.com/iccaving/migovec-survey-data/workflows/Automated%20Build/badge.svg)
+
 As data is added some artifacts are automatically generated. These can be found on the [releases page](https://github.com/tr1813/migresurvey/releases).
 
 Also for convenience here is a list of the artifacts and the links to the latest versions:
 
 **System Migovec**
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.system_migovec.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.system_migovec.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.system_migovec.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
 
 The full system:
 
@@ -59,6 +65,10 @@ The full system:
 - Extended Elevation - English [PDF](WIP)
 
 **Primadona**
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.primadona_ubend_monatip.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.primadona_ubend_monatip.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.primadona_ubend_monatip.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
 
 Primadona (in full Primadona/Monatip/Ubend) is a cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2015. It is accessed from impressive entrances midway across the western cliffs of the Migovec plateau.
 
@@ -75,6 +85,10 @@ Primadona (in full Primadona/Monatip/Ubend) is a cave system mostly contained in
 
 **Vrtnarija**
 
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.vrtnarija_vilinska.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.vrtnarija_vilinska.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.vrtnarija_vilinska.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+
 Connected to the main system in 2012, Vrtnarija comprises roughly a third of the passage in the sytem. It is accessed from entrances on the Eastern side of the Migovec plateau.
 
 - [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija.3d) [3d]  
@@ -87,6 +101,10 @@ Connected to the main system in 2012, Vrtnarija comprises roughly a third of the
 - Extended Elevation - English [PDF](WIP)
 
 **M18 / M16 / M2**
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.m2m16m18.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.m2m16m18.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.m2m16m18.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
 
 Collectively known as 'the old system' or sometimes 'sysmig', these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994, exploration was continued until roughly 2001. M2/M8 and M16/M18 connections were made early on in 1996.
 

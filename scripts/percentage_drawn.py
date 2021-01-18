@@ -7,23 +7,23 @@ import tempfile
 import subprocess
 import multiprocessing as mp
 import json
+import pprint
 
 from helpers.survey import Survey, SourceFile
 
 # Parse arguments
-
 parser = argparse.ArgumentParser(description="Create a skeleton scrap")
 parser.add_argument(
     "survey_file",
     help='The survey file (*.th) to work from. e.g. "data/system_migovec.th"',
 )
 parser.add_argument("--json", help="Output to specified json file")
+parser.add_argument("--therion-path", help="Path to therion binary", default="therion")
 args = parser.parse_args()
 
 ENTRY_FILE = abspath(args.survey_file)
 
-# Normalise name, namespace, key, file path
-
+# Parse survey
 survey = Survey(ENTRY_FILE)
 
 lengthre = re.compile(r".*Total length of survey legs =\s*(\S+)m")
@@ -47,7 +47,8 @@ def get_length(filepath):
                     tmp.write(config)
                     tmp.flush()
                     subprocess.check_output(
-                        "therion " + config_file + " -l " + log_file, shell=True
+                        args.therion_path + " " + config_file + " -l " + log_file,
+                        shell=True,
                     )
                     tmp2.flush()
                     log = tmp2.read()
@@ -61,36 +62,41 @@ def get_length(filepath):
     return 0
 
 
-undrawnre = re.compile(r".*DELETE-ME")
+drawnre = re.compile(r".*line wall")
+surveyre = re.compile(r".*cent\w\wline")
+
+
+def is_survey(filepath):
+    # We don't want to process the higher level files that combine surveys
+    # because this would duplicate the total length without adding drawn
+    # length.
+    # If the file contains a centreline then it's probably a low level
+    # survey
+    with open(filepath, "r") as tmp:
+        matches = surveyre.findall(tmp.read())
+        return len(matches) > 0
 
 
 def is_drawn(filepath):
+    # If a file contains a wall then it likely has been drawn
     with open(filepath, "r") as tmp:
-        matches = undrawnre.findall(tmp.read())
-        return len(matches) == 0
+        matches = drawnre.findall(tmp.read())
+        return len(matches) > 0
 
 
 def get_drawn_length(source):
-    plan_total = 0
-    plan_drawn = 0
-    extended_total = 0
-    extended_drawn = 0
-    th2s = [
-        s for s in survey.sources if s.dirname == source.dirname and s.type == "th2"
-    ]
-    if len(th2s) > 0:
-        print("Processing: {}".format(source.name))
-        length = float(get_length(source.name))
-        for th2 in th2s:
-            if th2.projection == "plan":
-                plan_total = plan_total + length
-                if is_drawn(th2.name):
-                    plan_drawn = plan_drawn + length
-            if th2.projection == "extended":
-                extended_total = extended_total + length
-                if is_drawn(th2.name):
-                    extended_drawn = extended_drawn + length
-    return (plan_drawn, plan_total, extended_drawn, extended_total)
+    if not is_survey(source.name):
+        return None
+    th2s = [s for s in survey.sources if s.dirname == source.dirname and s.type == "th2"]
+    print("Processing: {}".format(source.name))
+    length = float(get_length(source.name))
+    plan_th2 = next((x for x in th2s if x.projection == "plan"), None)
+    extended_th2 = next((x for x in th2s if x.projection == "extended"), None)
+    proj_is_drawn = {
+        "plan": plan_th2 and is_drawn(plan_th2.name),
+        "extended": extended_th2 and is_drawn(extended_th2.name),
+    }
+    return (length, proj_is_drawn, source)
 
 
 th_sources = [s for s in survey.sources if s.type == "th"]
@@ -98,27 +104,61 @@ th_sources = [s for s in survey.sources if s.type == "th"]
 pool = mp.Pool(mp.cpu_count())
 results = pool.map(get_drawn_length, th_sources)
 
-plan_total = 0
-plan_drawn = 0
-extended_total = 0
-extended_drawn = 0
+systems = [
+    "system_migovec",
+    "primadona_ubend_monatip",
+    "m2m16m18",
+    "vrtnarija_vilinska",
+]
+json_data = {}
+for system in systems:
+    for projection in ["plan", "extended", "all"]:
+        for state in ["drawn", "total"]:
+            if not system in json_data:
+                json_data[system] = {}
+            if not projection in json_data[system]:
+                json_data[system][projection] = {}
+            json_data[system][projection][state] = 0
+
+need_plan = []
+need_extended = []
 
 for result in results:
-    plan_drawn = plan_drawn + result[0]
-    plan_total = plan_total + result[1]
-    extended_drawn = extended_drawn + result[2]
-    extended_total = extended_total + result[3]
+    if not result:
+        continue
+    length, proj_is_drawn, source = result
+    for system in systems:
+        if system in source.namespace:
+            for projection in ["plan", "extended"]:
+                if proj_is_drawn[projection]:
+                    json_data[system][projection]["drawn"] = json_data[system][projection]["drawn"] + length
+                    json_data[system]["all"]["drawn"] = json_data[system]["all"]["drawn"] + length
+                json_data[system][projection]["total"] = json_data[system][projection]["total"] + length
+                json_data[system]["all"]["total"] = json_data[system]["all"]["total"] + length
+    for system in systems:
+        for projection in ["plan", "extended", "all"]:
+            if json_data[system][projection]["total"] > 0:
+                json_data[system][projection]["percent"] = round(json_data[system][projection]["drawn"] / json_data[system][projection]["total"] * 100, 1)
+            else:
+                json_data[system][projection]["percent"] = 100
+    if not proj_is_drawn["plan"]:
+        need_plan.append(source.name)
+    if not proj_is_drawn["extended"]:
+        need_extended.append(source.name)
 
-print(plan_drawn, plan_total, extended_drawn, extended_total)
+print("Need plan:")
+pprint.pprint(need_plan)
+
+print("Need extended:")
+pprint.pprint(need_extended)
+
+print("Results:")
+pprint.pprint(json_data)
+
 
 if args.json:
     with open(args.json, "w+") as f:
         json.dump(
-            {
-                "plan_drawn": plan_drawn,
-                "plan_total": plan_total,
-                "extended_drawn": extended_drawn,
-                "extended_total": extended_total,
-            },
+            json_data,
             f,
         )

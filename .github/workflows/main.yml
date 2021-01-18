@@ -89,9 +89,9 @@ jobs:
         run: sudo apt update
       - name: Install Therion compilation dependencies
         if: steps.cache-therion.outputs.cache-hit != 'true'
-        run: sudo apt install -y bwidget lcdf-typetools libtk-img-dev libtk-img libvtk6-dev libvtk6.3 libwxgtk3.0-dev tcl-dev survex texlive-latex-base # Pre-installed: gcc ghostscript imagemagick libfreetype6-dev libjpeg-dev libpng-dev zlib1g zlib1g-dev
+        run: sudo apt install -y bwidget lcdf-typetools libtk-img-dev libtk-img libvtk6-dev libvtk6.3 libwxgtk3.0-dev tcl-dev texlive-latex-base # Pre-installed: gcc ghostscript imagemagick libfreetype6-dev libjpeg-dev libpng-dev zlib1g zlib1g-dev
       - name: Install Therion runtime dependencies
-        run: sudo apt install -y libproj-dev texlive-metapost
+        run: sudo apt install -y libproj-dev texlive-metapost survex
       - name: Download and unpack Therion
         if: steps.cache-therion.outputs.cache-hit != 'true'
         run: |
@@ -105,7 +105,7 @@ jobs:
           mv ${THERION_PATH}/therion ${THERION_PATH}/bin/therion
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate coverage
-        run: python3 ./scripts/percentage_drawn.py data/system_migovec.th --json ./data/_outputs/coverage.json
+        run: python3 ./scripts/percentage_drawn.py data/system_migovec.th --json ./data/_outputs/coverage.json --therion-path ${THERION_PATH}/bin/therion
       #=============================== UPLOADS ===============================#
       - name: Upload Files
         uses: "marvinpinto/action-automatic-releases@latest"
