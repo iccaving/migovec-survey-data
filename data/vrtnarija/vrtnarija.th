@@ -124,7 +124,7 @@ survey vrtnarija -title "Vrtnarija"
 	join highway32-3p@highway32 candyMountain-1p@candyMountain
 	
 	join candyMountain-1e@candyMountain friendship-1e@friendship
-	join highway32-1e@highway32 candyMountain-1e@candyMountain
+	join highway32-1e@highway32 candyMountain-3e@candyMountain
 	join weepeople-1e@weepeople leprachaun-1e@leprachaun
 	join gold-1e@gold weepeople-1e@weepeople
 	join gold-1e@gold nitro-1e@nitro
@@ -546,12 +546,13 @@ survey vrtnarija -title "Vrtnarija"
 	join curiousandcuriouser2-1p@curiousandcuriouser2 yorkshire-1p@yorkshire
 	join xanadu-1p@xanadu euphrates2-1p@euphrates2
 	join euphrates2-1p@euphrates2 euphrates-1p@euphrates
+
 	join euphrates-1e@euphrates xanadont-2e@xanadont
 	join 500m-1e@500m xanadont-2e@xanadont
-	
 	join apollo-1e@apollo the_queen_bed_chamber-1e@the_queen_bed_chamber
 	join milkyway-1e@milkyway apollo-1e@apollo
 	join dreamsforthesoul-1e@dreamsforthesoul milkyway-1e@milkyway
+	join euphrates2-1e@euphrates2 euphrates-1e@euphrates
 	
 	###__________2013____________###
 	input ./2013/lethe/lethe.th
@@ -631,6 +632,7 @@ survey vrtnarija -title "Vrtnarija"
 	join bingo_granny-1p@bingo_granny kokain_rute-1p@kokain_rute
 	join clapton-1p@clapton bingo_granny-1p@bingo_granny
 	join pick_your_poison-1p@pick_your_poison clapton-1p@clapton
+
 	join straightjacket-1e@straightjacket rejuvenation_rift-1e@rejuvenation_rift
 	join cuckoos_nest-3e@cuckoos_nest time_bandits-1e@time_bandits
 	join cuckoos_nest-3e@cuckoos_nest rejuvenation_rift-1e@rejuvenation_rift
@@ -638,6 +640,8 @@ survey vrtnarija -title "Vrtnarija"
 	join dwarfline-bottom@dwarf_pine:top stupidpitch@stupid:bottom
 	join dwarfline-top@dwarf_pine:top roof@hydrophobia:end
 	join cuckoos_nest-5e@cuckoos_nest xanadont-1e@xanadont
+	join xanadont-3e@xanadont candyMountain-1e@candyMountain
+	join 500m-1e@500m candyMountain-2e@candyMountain
 	
 	###__________2014____________###
 	input ./2014/sicsempertyrannis/sicsempertyrannis.th
@@ -692,6 +696,7 @@ survey vrtnarija -title "Vrtnarija"
 	join rocksteadylove-1p@rocksteadylove hanginggardensdeep-1p@hanginggardensdeep
 	join AJA-1p@AJA rocksteadylove-1p@rocksteadylove
 	join hipsdontlie-1p@hipsdontlie cuckoos_nest-2p@cuckoos_nest
+
 	join hipsdontlie-1e@hipsdontlie cuckoos_nest-3e@cuckoos_nest
 	join stupidpitch@stupid:top hydropitch@hydrophobia:top
 	join gravity-1e@gravity hydrophobia-2e@hydrophobia
@@ -761,9 +766,9 @@ survey vrtnarija -title "Vrtnarija"
 	join andreabocelli-1p@andreabocelli dinnerservice-1p@dinnerservice
 	join void2-1p@void2 dinnerservice-1p@dinnerservice
 	join void2-1p@void2 nitro-1p@nitro
+
 	join pushyourluck-1e@pushyourluck agartha-1e@agartha
-	join cuckoos_nest-1e@cuckoos_nest pushyourluck-1e@pushyourluck
-	
+	join cuckoos_nest-1e@cuckoos_nest pushyourluck-1e@pushyourluck	
 	join lazarus-1e@lazarus miles-1e@miles
 	join trueadventures-1e@trueadventures colarado-1e@colarado
 endsurvey

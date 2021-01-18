@@ -1,26 +1,37 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 380.000000 294.000000
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
+
+
 
 scrap 500m-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line wall 
-  248.0966 145.9071
-  248.0966 145.9071 212.0297 150.2788 206.0186 150.8253
+line wall
+  239.5 147.5
+  239.5 147.5 212.0297 150.2788 206.0186 150.8253
   200.0074 151.3717 165.0335 149.1859 156.29 155.197
+  smooth off
 endline
 
-line wall 
+line wall
   152.4646 131.6989
   167.2193 130.6059 224.2798 125.0332 233.8885 126.2342
   242.6319 127.3271 247.5502 119.6766 247.5502 119.6766
+  smooth off
 endline
 
 point 246.18 135.32 station -name 6
+
 point 228.51 134.14 station -name 5
+
 point 195.54 137.61 station -name 4
+
 point 152.92 139.81 station -name 3
+
 point 145.25 149.97 station -name 2
+
 point 133.82 161.86 station -name 1
+
 endscrap
+
 
