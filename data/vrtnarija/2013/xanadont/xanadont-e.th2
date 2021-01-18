@@ -1,60 +1,70 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -342.0 -171.0 343.0 169.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust 0 0 685.000000 340.000000
+##XTHERION## xth_me_area_zoom_to 400
 
 
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap xanadont-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-line survey
-  -208.52 -37.32
-  -194.3 9.13
+line wall -subtype unsurveyed
+  198.2536 192.8594
+  198.2536 192.8594 201.5 212.0 214.5 215.75
+  smooth off
 endline
 
-line survey
-  -194.3 9.13
-  -162.02 3.86
+line wall -subtype unsurveyed
+  211.75 227.75
+  211.75 227.75 208.39 227.13 200.8581 218.0483
+  192.3 207.73 184.3502 195.3872 184.3502 195.3872
+  smooth off
 endline
 
-line survey
-  -162.02 3.86
-  -120.39 -8.27
+point 147.58 179.964 station -name 10
+
+point 179.86 174.694 station -name 9
+
+point 221.49 162.564 station -name 8
+
+endscrap
+
+
+
+scrap xanadont-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
+
+line wall
+  141.5613 127.026
+  141.5613 127.026 144.0892 176.9517 152.3048 173.1599
+  160.5205 169.368 182.6394 157.3606 193.3829 155.4647
+  204.1264 153.5688 236.9889 150.4089 243.9405 152.9368
+  smooth off
 endline
 
-line survey
-  -120.39 -8.27
-  -76.54 19.92
+line wall
+  233.829 188.3271
+  232.4071 182.6394 226.1377 181.2069 217.6051 180.5065
+  194.5086 178.6106 195.0023 183.9033 198.2017 193.6989
+  smooth off
 endline
 
-line survey
-  -76.54 19.92
-  -1.95 25.91
+line wall
+  184.9303 195.5948
+  179.2821 188.3271 166.2279 191.882 158.3777 194.7258
+  150.5274 197.5697 145.3532 199.7026 145.3532 199.7026
+  smooth off
+  145.3532 199.7026 130.1859 183.9033 124.4981 161.1524
+  118.8104 138.4015 116.2825 132.0818 116.2825 132.0818
+  smooth off
+  116.2825 132.0818 108.6989 132.0818 109.3309 135.2416
+  smooth off
 endline
 
-line survey
-  -1.95 25.91
-  15.94 28.9
-endline
+point 147.7 180.13 station -name 10
 
-line survey
-  15.94 28.9
-  41.26 22.99
-endline
+point 133.48 133.68 station -name 11
 
-line survey
-  41.26 22.99
-  69.19 12.28
-endline
+point 179.98 174.86 station -name 9
 
-line survey
-  69.19 12.28
-  127.37 21.5
-endline
-
-line survey
-  127.37 21.5
-  208.52 37.32
-endline
+point 221.61 162.73 station -name 8
 
 endscrap
 
@@ -62,27 +72,32 @@ endscrap
 
 scrap xanadont-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -194.30 9.13 station -name 10
+line wall
+  243.9405 152.9368
+  250.8922 155.4647 257.8439 173.1599 269.8513 175.0558
+  281.8587 176.9517 357.6952 185.1673 357.6952 185.1673
+  smooth off
+endline
 
-point -208.52 -37.32 station -name 11
+line wall
+  357.6952 212.342
+  357.6952 212.342 236.5407 199.174 233.829 188.3271
+  smooth off
+endline
 
-point -162.02 3.86 station -name 9
+point 265.46 190.92 station -name 7
 
-point -120.39 -8.27 station -name 8
+point 340.05 196.91 station -name 6
 
-point -76.54 19.92 station -name 7
+point 357.94 199.9 station -name 5
 
-point -1.95 25.91 station -name 6
+point 383.26 193.99 station -name 4
 
-point 15.94 28.90 station -name 5
+point 411.19 183.28 station -name 3
 
-point 41.26 22.99 station -name 4
+point 469.37 192.5 station -name 2
 
-point 69.19 12.28 station -name 3
-
-point 127.37 21.50 station -name 2
-
-point 208.52 37.32 station -name 1
+point 550.52 208.32 station -name 1
 
 endscrap
 

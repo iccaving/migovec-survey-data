@@ -5,7 +5,12 @@ input xanadont-e.th2
 
 map m-all-e -projection extended
     xanadont-1e
+    xanadont-2e
+    xanadont-3e
 endmap
+
+join xanadont-1e xanadont-2e
+join xanadont-2e xanadont-3e
 
 
 input xanadont-p.th2
