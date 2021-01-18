@@ -8,6 +8,8 @@ map m-all-e -projection extended
 	m-kangaroo_branch-e
 	m-s_extensions-e
 	m-watership-e
+	m-yorkshire_extensions-e
+
 endmap
 
 map m-entrance-e -projection extended
@@ -107,6 +109,10 @@ endmap
 
 map m-watership-e -projection extended
 	m-all-e@watershipdown
+endmap
+
+map m-yorkshire_extensions-e -projection extended
+	m-all-e@slinging
 endmap
 
 centreline
