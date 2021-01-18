@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <title>Survey - Imperial College Caving Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="ICCC" />
+    <meta name="theme-color" content="#2D2D2D" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="msapplication-navbutton-color" content="#2D2D2D" />
+    <!-- Windows Phone -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2D2D2D" />
+    <!-- iOS Safari -->
+    <script src="../js/hammer.js"></script>
+    <script src="../js/inject.js"></script>
+    <script src="../js/svg.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/survey.css" />
+  </head>
+  <body>
+    <div id="loading">
+      <p>Loading <span id="survey-name">survey</span></p>
+      <div class="loader-container">
+        <div class="loader">Loading</div>
+      </div>
+      <p>Click, drag and scroll to move the map.</p>
+    </div>
+    <div id="controls">
+      <select id="switch-survey"></select>
+      <button id="switch-colour">Light</button>
+    </div>
+    <img id="svg" class="svg" src="" />
+
+    <script>
+      (function () {
+        var cors_api_host = "cors-anywhere-iccc.herokuapp.com";
+        var cors_api_url = "https://" + cors_api_host + "/";
+        var slice = [].slice;
+        var origin = window.location.protocol + "//" + window.location.host;
+        var open = XMLHttpRequest.prototype.open;
+        XMLHttpRequest.prototype.open = function () {
+          var args = slice.call(arguments);
+          var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
+          if (
+            targetOrigin &&
+            targetOrigin[0].toLowerCase() !== origin &&
+            targetOrigin[1] !== cors_api_host
+          ) {
+            args[1] = cors_api_url + args[1];
+          }
+          return open.apply(this, args);
+        };
+      })();
+      function getJSON(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.responseType = "json";
+        xhr.onload = function () {
+          var status = xhr.status;
+          if (status === 200) {
+            callback(null, xhr.response);
+          } else {
+            callback(status, xhr.response);
+          }
+        };
+        xhr.send();
+      }
+    </script>
+    <script>
+      function init(surveys) {
+        const surveyDirectory =
+            "https://github.com/iccaving/migovec-survey-data/releases/download/latest/",
+          eventsHandler = {
+            haltEventListeners: [
+              "touchstart",
+              "touchend",
+              "touchmove",
+              "touchleave",
+              "touchcancel",
+            ],
+            init: function (options) {
+              var instance = options.instance,
+                initialScale = 1,
+                pannedX = 0,
+                pannedY = 0;
+              this.hammer = Hammer(options.svgElement, {
+                inputClass: Hammer.SUPPORT_POINTER_EVENTS
+                  ? Hammer.PointerEventInput
+                  : Hammer.TouchInput,
+              });
+              this.hammer.get("pinch").set({
+                enable: true,
+              });
+              this.hammer.on("doubletap", function (ev) {
+                instance.zoomIn();
+              });
+              this.hammer.on("panstart panmove", function (ev) {
+                if (ev.type === "panstart") {
+                  pannedX = 0;
+                  pannedY = 0;
+                }
+                instance.panBy({
+                  x: ev.deltaX - pannedX,
+                  y: ev.deltaY - pannedY,
+                });
+                pannedX = ev.deltaX;
+                pannedY = ev.deltaY;
+              });
+              this.hammer.on("pinchstart pinchmove", function (ev) {
+                if (ev.type === "pinchstart") {
+                  initialScale = instance.getZoom();
+                  instance.zoomAtPoint(initialScale * ev.scale, {
+                    x: ev.center.x,
+                    y: ev.center.y,
+                  });
+                }
+                instance.zoomAtPoint(initialScale * ev.scale, {
+                  x: ev.center.x,
+                  y: ev.center.y,
+                });
+              });
+              options.svgElement.addEventListener("touchmove", function (e) {
+                e.preventDefault();
+              });
+            },
+            destroy: function () {
+              this.hammer.destroy();
+            },
+          };
+
+        let night = false;
+        const loading = document.getElementById("loading");
+        const switchSurveySelect = document.getElementById("switch-survey");
+        const switchColourButton = document.getElementById("switch-colour");
+        const surveyName = document.getElementById("survey-name");
+
+        const svg = () => document.getElementById("svg");
+        const survey =
+          surveys.find((s) => s.file === window.location.hash.slice(1)) ||
+          surveys[0];
+        svg().src = surveyDirectory + survey.file;
+        surveyName.innerText = survey.name;
+        surveys.forEach((survey) => {
+          const option = document.createElement("option");
+          option.innerText = survey.name;
+          option.value = survey.file;
+          switchSurveySelect.appendChild(option);
+        });
+        switchSurveySelect.value = survey.file;
+
+        const initiliase = () =>
+          SVGInject(svg(), {
+            onAllFinish: function () {
+              loading.style.display = "none";
+              svgPanZoom(document.getElementById("svg"), {
+                customEventsHandler: eventsHandler,
+              });
+              svg().addEventListener("click", () =>
+                document.activeElement.blur()
+              );
+            },
+          });
+
+        document.addEventListener("DOMContentLoaded", initiliase);
+        initiliase();
+        switchSurveySelect.addEventListener(
+          "change",
+          ({ target: { value } }) => {
+            loading.style.display = "flex";
+            const img = document.createElement("img");
+            img.class = "svg";
+            img.id = "svg";
+            img.src = surveyDirectory + value;
+            svg().replaceWith(img);
+            surveyName.innerText = surveys.find((s) => s.file === value).name;
+            window.location.hash = value;
+            initiliase();
+          }
+        );
+        switchColourButton.addEventListener("click", () => {
+          switchColourButton.innerText = night ? "Light" : "Dark";
+          document.body.style.filter = night ? "" : "invert(1)";
+          night = !night;
+        });
+      }
+      getJSON(
+        "https://github.com/iccaving/migovec-survey-data/releases/download/latest/listing.json",
+        (err, data) => {
+          init(data.filter((l) => l.type === "SVG"));
+        }
+      );
+    </script>
+  </body>
+</html>

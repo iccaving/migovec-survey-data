@@ -5,6 +5,7 @@ This contains the survey data of the Tolminski Migovec cave system, as well as m
 From 1974-2018 the the survey data was collected in the Survex format but we are now using Therion and are in the process of migrating the old data.
 
 - [Migovec Resurvey Project](#migovec-resurvey-project)
+  - [View](#view)
   - [Downloads](#downloads)
   - [Prerequisites](#prerequisites)
   - [Therion Glossary](#therion-glossary)
@@ -38,6 +39,10 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
     - [How do I create a skeleton th2 file for a survey?](#how-do-i-create-a-skeleton-th2-file-for-a-survey)
     - [How do I see the EE in aven or loch?](#how-do-i-see-the-ee-in-aven-or-loch)
     - [Therion Error: Map is too large for PDF format. Try smaller scale!](#therion-error-map-is-too-large-for-pdf-format-try-smaller-scale)
+
+## View
+
+You can view any of the 3D models or PDF maps in your browser [here](https://iccaving.github.io/migovec-survey-data/).
 
 ## Downloads
 
