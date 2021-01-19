@@ -12,7 +12,7 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../data/m2m16m18.th"
+source "../../data/system_migovec.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
@@ -41,8 +41,8 @@ endlayout
 
 source
 	map local-p -projection plan
-		m-all-p@m2m16m18
-		m2m16m18
+		m-all-p@m2m16m18.system_migovec
+		m2m16m18@system_migovec
 	endmap
 endsource
 
@@ -72,8 +72,8 @@ endlayout
 
 source
 	map local-e -projection extended
-		m-all-e@m2m16m18 [10 0 m] none
-		m2m16m18 [10 0 m] none
+		m-all-e@m2m16m18.system_migovec [10 0 m] none
+		m2m16m18@system_migovec [10 0 m] none
 	endmap
 endsource
 
@@ -90,6 +90,7 @@ export map -projection extended -o ../../outputs/m2m16m18_EE_ENG.svg -layout ee
 # export 3d MODELS
 
 # export a .3d model, which can be opened in AVEN and LOCH
+select m2m16m18@system_migovec
 export model -o ../../outputs/m2_m16_m18.3d -fmt survex
 
 # export a .lox model, which can be opened in LOCH only

@@ -10,12 +10,12 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../m2m16m18.th"
+source "../../data/m2m16m18.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/base-p.thl"
-input "../../_layouts/mods.thl"
+input "../../layouts/base-p.thl"
+input "../../layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -27,16 +27,16 @@ layout plan
 	copy base-p
 	copy colour-by-depth
 endlayout
-export map -projection plan -o ../../_outputs/map/m2m16m18_plan.pdf -layout plan
-#export map -projection plan -o ../../_outputs/map/vrtnarija_plan_ENG.pdf -layout overview_plan_ENG
+export map -projection plan -o ../../outputs/m2m16m18_plan.pdf -layout plan
+#export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout overview_plan_ENG
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view, using the LAYOUT overview2
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/model/m2m16m18.3d -fmt survex
+export model -o ../../outputs/m2m16m18.3d -fmt survex
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-export model -o ../../_outputs/model/m2m16m18.lox
+export model -o ../../outputs/m2m16m18.lox

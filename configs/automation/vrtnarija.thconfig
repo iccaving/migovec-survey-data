@@ -12,7 +12,7 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../data/system_migovec.th
+source "../../data/system_migovec.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
@@ -49,14 +49,14 @@ source
 	endmap
 endsource
 
-# select local-p
+select local-p
 
-# language sl
-# export map -projection plan -o ../../outputs/vrtnarija_plan_SLO.pdf -layout plan
-# export map -projection plan -o ../../outputs/vrtnarija_plan_SLO.svg -layout plan
-# language en
-# export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
-# export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.svg -layout plan
+language sl
+export map -projection plan -o ../../outputs/vrtnarija_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../outputs/vrtnarija_plan_SLO.svg -layout plan
+language en
+export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.svg -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
@@ -84,23 +84,23 @@ source
 	endmap
 endsource
 
-# select local-e
+select local-e
 
 # language sl
-# export map -projection extended -o ../../outputs/vrtnarija_EE_SLO.pdf -layout ee
-# export map -projection extended -o ../../outputs/vrtnarija_EE_SLO.svg -layout ee
+export map -projection extended -o ../../outputs/vrtnarija_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/vrtnarija_EE_SLO.svg -layout ee
 # language en
-# export map -projection extended -o ../../outputs/vrtnarija_EE_ENG.pdf -layout ee
-# export map -projection extended -o ../../outputs/vrtnarija_EE_ENG.svg -layout ee
+export map -projection extended -o ../../outputs/vrtnarija_EE_ENG.pdf -layout ee
+export map -projection extended -o ../../outputs/vrtnarija_EE_ENG.svg -layout ee
+
+
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-#export model -o ../../outputs/vrtnarija.3d
-
-select vrtnarija@vrtnarija_vilinska.system_migovec
-select m-entrance-e@vrtnarija.vrtnarija_vilinska.system_migovec
-select m-entrance-p@vrtnarija.vrtnarija_vilinska.system_migovec
+select vrtnarija_vilinska@system_migovec
+export model -o ../../outputs/vrtnarija.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
+select vrtnarija_vilinska@system_migovec
 export model -o ../../outputs/vrtnarija.lox

@@ -1,4 +1,4 @@
-map  m-all-e -projection extended
+map m-all-e -projection extended
 	m-entrance-e
 	m-electric_branch-e [-300 0 m ] below
 	m-karstaway_branch-e
@@ -8,8 +8,7 @@ map  m-all-e -projection extended
 	m-deep-e
 endmap
 
-map  m-karstaway_branch-e -projection extended
-	
+map m-karstaway_branch-e -projection extended
 	m-all-e@galerija
 	m-all-e@karstaway
 	m-all-e@entirely_my_fault
@@ -26,7 +25,7 @@ map  m-karstaway_branch-e -projection extended
 	m-all-e@tight_and_scrotty
 endmap
 
-map  m-hammerhead_branch-e -projection extended
+map m-hammerhead_branch-e -projection extended
 	m-all-e@dejavu
 	m-all-e@hammerhead
 	m-all-e@dogfish
@@ -56,7 +55,7 @@ map  m-ttt_branch-e -projection extended
 	m-all-e@risanke
 endmap
 
-map  m-deep-e -projection extended
+map m-deep-e -projection extended
 	m-all-e@buckwheat
 	m-all-e@TTTr
 	m-all-e@lost_in_a_dream
@@ -138,13 +137,13 @@ map  m-electric_branch-e -projection extended
 	m-all-e@dysentery
 	m-all-e@electric_dreams
 	m-all-e@odessey
-	 m-all-e@power_grab
+	m-all-e@power_grab
 	m-all-e@more_like_welding
 	m-all-e@stranglehold
 	m-all-e@the_atrium
 endmap
 
 centreline
-extend right 21@plumbers_paradise
-extend right 4@risanke
+	extend right 21@plumbers_paradise
+	extend right 4@risanke
 endcentreline

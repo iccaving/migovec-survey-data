@@ -1,19 +1,18 @@
-
 survey korita -title "KORITA"
-
-input korita-e.th2
-
-map m-all-e -projection extended
-    korita-1e
-endmap
-
-
-input korita-p.th2
-
-map m-all-p -projection plan
-    korita-1p
-endmap
-
+	
+	input korita-e.th2
+	
+	map m-all-e -projection extended
+		korita-1e
+	endmap
+	
+	
+	input korita-p.th2
+	
+	map m-all-p -projection plan
+		korita-1p
+	endmap
+	
 	centreline
 		team "Myles Denton" insts
 		team "James Hooper" notes
