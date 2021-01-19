@@ -5,6 +5,23 @@ encoding  utf-8
 
 scrap euphrates-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+line wall -subtype invisible
+  207.4219 1110.0917
+  180.534 942.0415
+  215.3444 909.6318
+  227.0738 927.5607
+endline
+
+line wall -subtype invisible
+  379.9082 44.1741
+  447.2943 82.3222
+endline
+
+line wall -subtype invisible
+  413.4036 119.5557
+  352.773 108.3201
+endline
+
 line wall 
   352.773 108.3201
   343.156 79.9835 361.3492 61.665 379.9082 44.1741
@@ -15,7 +32,7 @@ line pit
   575.692 215.1043 513.7535 244.3931 450.8547 214.6241
 endline
 
-point 525.277 799.9191 u:label_MY -align l -scale m -attr lvl 0 -attr text Euphrates
+point 525.277 799.9191 u:label_MY -align l -attr lvl 0 -attr text Euphrates -scale m
 line wall 
   227.0738 927.5607
   195.6621 1052.3083 304.683 902.8948 312.4145 841.6774
