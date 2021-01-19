@@ -103,7 +103,7 @@ def get_drawn_length(source):
 th_sources = [s for s in survey.sources if s.type == "th"]
 
 pool = mp.Pool(mp.cpu_count())
-results = pool.map(get_drawn_length, th_sources[0:10])
+results = pool.map(get_drawn_length, th_sources)
 
 systems = [
     "system_migovec",

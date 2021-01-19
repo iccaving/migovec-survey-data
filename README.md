@@ -48,97 +48,109 @@ You can view any of the 3D models or PDF maps in your browser [here](https://icc
 
 ![Automated Build](https://github.com/iccaving/migovec-survey-data/workflows/Automated%20Build/badge.svg)
 
-As data is added some artifacts are automatically generated. These can be found on the [releases page](https://github.com/tr1813/migresurvey/releases).
+As data is added some artifacts are automatically generated. These can be found on the [releases page](https://github.com/tr1813/migresurveyhttps://github.com/iccaving/migovec-survey-data/releases).
 
 Also for convenience here is a list of the artifacts and the links to the latest versions:
 
 **System Migovec**
 
-![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.system_migovec.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
-![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.system_migovec.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
-![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.system_migovec.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.system_migovec.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.system_migovec.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.system_migovec.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.system_migovec.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.system_migovec.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
 
 The full system:
 
 - 3D Model  
-  [3D](/releases/download/latest/system_migovec.3d) |
-  [LOX](/releases/download/latest/system_migovec.lox)
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/system_migovec.3d) |
+  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/system_migovec.lox)
 - Plan View (WIP)  
-  [SLO PDF](/releases/latest/download/system_migovec_plan_SLO.pdf) |
-  [ENG PDF](/releases/latest/download/system_migovec_plan_ENG.pdf) |
-  [SLO SVG](/releases/latest/download/system_migovec_plan_SLO.svg) |
-  [ENG SVG](/releases/latest/download/system_migovec_plan_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_plan_ENG.svg)
 - Extended Elevation (WIP)  
-  [SLO PDF](/releases/latest/download/system_migovec_EE_SLO.pdf) |
-  [ENG PDF](/releases/latest/download/system_migovec_EE_ENG.pdf) |
-  [SLO SVG](/releases/latest/download/system_migovec_EE_SLO.svg) |
-  [ENG SVG](/releases/latest/download/system_migovec_EE_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_EE_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_EE_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_EE_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_EE_ENG.svg)
 
 **Primadona**
 
-![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.primadona_ubend_monatip.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
-![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.primadona_ubend_monatip.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
-![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.primadona_ubend_monatip.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.primadona_ubend_monatip.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.primadona_ubend_monatip.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.primadona_ubend_monatip.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.primadona_ubend_monatip.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.primadona_ubend_monatip.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
 
 Primadona (in full Primadona/Monatip/Ubend) is a cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2015. It is accessed from impressive entrances midway across the western cliffs of the Migovec plateau.
 
 - 3D Model  
-  [3D](/releases/download/latest/primadona_ubend_monatip.3d) |
-  [LOX](/releases/download/latest/primadona_ubend_monatip.lox)
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/primadona_ubend_monatip.3d) |
+  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/primadona_ubend_monatip.lox)
 - Plan View (WIP)  
-  [SLO PDF](/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) |
-  [ENG PDF](/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) |
-  [SLO SVG](/releases/latest/download/primadona_ubend_monatip_plan_SLO.svg) |
-  [ENG SVG](/releases/latest/download/primadona_ubend_monatip_plan_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_ENG.svg)
 - Extended Elevation (WIP)  
-  [SLO PDF](/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) |
-  [ENG PDF](/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) |
-  [SLO SVG](/releases/latest/download/primadona_ubend_monatip_EE_SLO.svg) |
-  [ENG SVG](/releases/latest/download/primadona_ubend_monatip_EE_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_ENG.svg)
 
 **Vrtnarija**
 
-![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.vrtnarija_vilinska.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
-![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.vrtnarija_vilinska.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
-![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.vrtnarija_vilinska.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.vrtnarija_vilinska.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.vrtnarija_vilinska.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.vrtnarija_vilinska.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.vrtnarija_vilinska.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.vrtnarija_vilinska.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
 
 Connected to the main system in 2012, Vrtnarija comprises roughly a third of the passage in the sytem. It is accessed from entrances on the Eastern side of the Migovec plateau.
 
 - 3D Model  
-  [3D](/releases/download/latest/vrtnarija.3d) |
-  [LOX](/releases/download/latest/vrtnarija.lox)
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/vrtnarija.3d) |
+  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/vrtnarija.lox)
 - Plan View (WIP)  
-  [SLO PDF](/releases/latest/download/vrtnarija_plan_SLO.pdf) |
-  [ENG PDF](/releases/latest/download/vrtnarija_plan_ENG.pdf) |
-  [SLO SVG](/releases/latest/download/vrtnarija_plan_SLO.svg) |
-  [ENG SVG](/releases/latest/download/vrtnarija_plan_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_plan_ENG.svg)
 - Extended Elevation (WIP)  
-  [SLO PDF](/releases/latest/download/vrtnarija_EE_SLO.pdf) |
-  [ENG PDF](/releases/latest/download/vrtnarija_EE_ENG.pdf) |
-  [SLO SVG](/releases/latest/download/vrtnarija_EE_SLO.svg) |
-  [ENG SVG](/releases/latest/download/vrtnarija_EE_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_EE_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_EE_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_EE_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_EE_ENG.svg)
 
 **M18 / M16 / M2**
 
-![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.m2m16m18.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
-![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.m2m16m18.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
-![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.m2m16m18.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Fcoverage%2Fcoverage.json&suffix=%)
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.m2m16m18.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.m2m16m18.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.m2m16m18.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.m2m16m18.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.m2m16m18.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
 
 Collectively known as 'the old system' or sometimes 'sysmig', these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994, exploration was continued until roughly 2001. M2/M8 and M16/M18 connections were made early on in 1996.
 
 - 3D Model  
-  [3D](/releases/download/latest/m2_m16_m18.3d) |
-  [LOX](/releases/download/latest/m2_m16_m18.lox)
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/m2_m16_m18.3d) |
+  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/m2_m16_m18.lox)
 - Plan View (WIP)  
-  [SLO PDF](/releases/latest/download/m2_m16_m18_plan_SLO.pdf) |
-  [ENG PDF](/releases/latest/download/m2_m16_m18_plan_ENG.pdf) |
-  [SLO SVG](/releases/latest/download/m2_m16_m18_plan_SLO.svg) |
-  [ENG SVG](/releases/latest/download/m2_m16_m18_plan_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_plan_ENG.svg)
 - Extended Elevation (WIP)  
-  [SLO PDF](/releases/latest/download/m2_m16_m18_EE_SLO.pdf) |
-  [ENG PDF](/releases/latest/download/m2_m16_m18_EE_ENG.pdf) |
-  [SLO SVG](/releases/latest/download/m2_m16_m18_EE_SLO.svg) |
-  [ENG SVG](/releases/latest/download/m2_m16_m18_EE_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.svg)
 
 ## Prerequisites
 
@@ -151,7 +163,7 @@ For compiling and exporting:
 
 For drawing we are using Inkscape and the Therion Inkscape extensions because we think its nicer than using the Therion editor:
 
-- [Inkscape](https://inkscape.org/release/) - Vector drawing program
+- [Inkscape](https://inkscape.orghttps://github.com/iccaving/migovec-survey-data/release/) - Vector drawing program
 - [Inkscape Therion Extensions](https://github.com/speleo3/inkscape-speleo/) - The extensions that allow you to draw Therion scraps in Inkscape.
 
 (Optional) For editing the text files:
