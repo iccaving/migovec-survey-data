@@ -1,10 +1,9 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {265.437130 1 1.0} {893.789370 {}} "/Users/AchilleTalon/Desktop/Screen%20Shot%202021-01-17%20at%2020.39.45.png" 0 {}
 
-##XTHERION## xth_me_image_insert {265.437130 1 1.0} {893.789370 1} "/Users/AchilleTalon/Desktop/Screen%20Shot%202021-01-17%20at%2020.39.45.png" 0 {}
-
-scrap mudslump-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap mudslump-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line wall 
   537.0334 698.152
@@ -142,16 +141,19 @@ line survey
   399.0634 733.2771
 endline
 
-point 555.4324 740.3408 u:label_MY -attr lvl 1 -align tr -attr text Mudslump
+point 555.4324 740.3408 u:label_MY -align tr -attr lvl 1 -attr text Mudslump
 endscrap
 
-scrap mudslump-3e -scale [0 0 90 0 0 0 200 0 inch] -projection extended
+
+scrap mudslump-3e -projection extended -scale [0 0 90 0 0 0 200 0 inch]
+
+line wall -subtype invisible
+  435.1674 590.0
+  447.4173 610.5
+endline
 
 line wall 
-  468.6673 612.0
-  456.9173 612.5
-  456.9173 612.5 452.1673 610.25 450.9173 610.25
-  449.6673 610.25 447.4173 610.5 447.4173 610.5
+  447.4173 610.5
   447.4173 610.5 444.1673 616.5 443.9173 617.25
   443.6673 618.0 437.6673 634.25 437.6673 634.25
   436.1673 646.0
@@ -174,9 +176,6 @@ line wall
   417.4174 586.75 422.4174 586.75 423.6674 588.0
   424.9174 589.25 424.4174 589.25 427.9174 589.5
   431.4174 589.75 435.1674 590.0 435.1674 590.0
-  435.1674 590.0 438.4174 589.0 439.1674 587.25
-  439.9174 585.5 440.6674 582.75 441.4174 581.5
-  442.1674 580.25 444.1674 576.0 444.1674 576.0
 endline
 
 point 402.8434 623.2771 station -name 8
@@ -185,7 +184,7 @@ point 475.7434 566.9771 station -name 6
 endscrap
 
 
-scrap mudslump-2e -scale [0 0 90 0 0 0 200 0 inch] -projection extended
+scrap mudslump-2e -projection extended -scale [0 0 90 0 0 0 200 0 inch]
 
 point 342.4134 743.2771 station -name 23
 point 342.4134 743.2771 station -name 4
