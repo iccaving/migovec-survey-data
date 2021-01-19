@@ -202,9 +202,9 @@ In the `{name}.thm`file, passage map definitions are ordered by cave sub-region,
 
 With the data thus organised you can export maps in pdf and svg files and models in .3d and lox files. This is done through a further two types of file.
 
-In the `_config` folders are `.thconfig` files. These are more similar to a shell script if you are familiar with those. They contain commands to produce output files like pdfs etc. They combine the named maps and `layouts` to make the output.
+In the `configs` folder there are `.thconfig` files. These are more similar to a shell script if you are familiar with those. They contain commands to produce output files like pdfs etc. They combine the named maps and `layouts` to make the output.
 
-In the `_layout` folders there layout files (`.thl`) these are complicated but they basically just define which symbols should be on the
+In the `layouts` folders there are layout files (`.thl`) these are complicated but they basically just define which symbols should be on the
 map and how they should be like. i.e. should you show mineral symbols, how thick should pit lines be, what colour are waterfalls.
 
 ## How to export data
@@ -213,13 +213,13 @@ So how do you export the data to a map or model?
 
 ### Using existing configs
 
-The easy way is to find yourself the config file that already does what you want. In the `data/_config/overview` directory you'll find a number of useful configs. For example `vrtnarija.thconfig` will export pdfs, svgs, and 3d files that show Vrtnarija. You just need to run it with Therion.
+The easy way is to find yourself the config file that already does what you want. In the `configs/overview` directory you'll find a number of useful configs. For example `vrtnarija.thconfig` will export pdfs, svgs, and 3d files that show Vrtnarija. You just need to run it with Therion.
 
 ```
-therion data/_config/overview/vrtnarija.thconfig
+therion configs/overview/vrtnarija.thconfig
 ```
 
-And you should find the it places the files in the `data/_outputs/maps` and `data/_outputs/models` directories.
+And you should find the it places the files in the `outputs/maps` and `outputs/models` directories.
 
 ### Make your own config
 
@@ -232,13 +232,13 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../primadona_ubend_monatip.th"
+source "../../data/primadona_ubend_monatip.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/base-p.thl"
-input "../../_layouts/base-e.thl"
-input "../../_layouts/mods.thl"
+input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -250,14 +250,14 @@ layout plan
 	copy base-p
 	copy colour-by-new
 endlayout
-language fr # We use fr for Slovenian because sl is not yet supported
-export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout plan
+language sl
+export map -projection plan -o ../../outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout plan
 language en
-export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/model/primadona_ubend_monatip.3d -fmt survex
+export model -o ../../outputs/model/primadona_ubend_monatip.3d -fmt survex
 ```
 
 ## Adding data
@@ -563,10 +563,10 @@ Therion by default shows only drawn maps, even when you have told it to disaply 
 
 ```
 # Input the data and layouts as normal
-source "../vrtnarija.th"
+source "../../data/vrtnarija.th"
 
-input "../../_layouts/base-p.thl"
-input "../../_layouts/mods.thl"
+input "../../layouts/base-p.thl"
+input "../../layouts/mods.thl"
 
 # Create a source block to define a special map
 source
@@ -589,7 +589,7 @@ endlayout
 
 # And export as normal
 language en
-export map -projection plan -o ../_outputs/plan_ENG.pdf -layout plan
+export map -projection plan -o ../outputs/plan_ENG.pdf -layout plan
 ```
 
 ### How Do I Make a Pillar (solid rock within a passage)?

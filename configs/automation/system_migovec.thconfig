@@ -52,7 +52,7 @@ layout plan
 	symbol-hide point remark
 endlayout
 
-select m-all-p@system_migovec
+# select m-all-p@system_migovec
 
 # language sl
 # export map -projection plan -o ../../outputs/system_migovec_plan_SLO.pdf -layout plan
@@ -89,7 +89,7 @@ layout ee
 	}
 endlayout
 
-select m-all-e@system_migovec
+# select m-all-e@system_migovec
 
 # language sl
 # export map -projection extended -o ../../outputs/map/system_migovec_overview_elevation_SLO.pdf -layout ee
