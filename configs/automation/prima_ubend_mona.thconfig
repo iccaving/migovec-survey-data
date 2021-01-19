@@ -12,18 +12,14 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../system_migovec.th"
+source "../../data/system_migovec.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/overview-p.thl"
-input "../../_layouts/base-e.thl"
-input "../../_layouts/user_label.thl" # input this to have the label hierarchy
-
-#----------------------------------------------------------------------------------|
-# select the relevant map definitions, and levels within those maps
-#select m-primadona-p@primadona_ubend_monatip -map-level 3
-#select mprimadona_e@primadona_ubend_monatip -map-level 0
+input "../../layouts/overview-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
+input "../../layouts/user_label.thl" # input this to have the label hierarchy
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
@@ -47,12 +43,15 @@ layout plan
   	max_label_level("2");
 	endcode
 endlayout
-language fr # slo not yet supported
-export map -projection plan -o ../../_outputs/primadona_ubend_monatip_plan_ENG.pdf -layout plan
+
+select m-all-p@primadona_ubend_monatip.system_migovec
+
+language sl 
+export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
 export map -projection plan -o ../../_outputs/primadona_ubend_monatip_plan_ENG.svg -layout plan
 language en
-export map -projection plan -o ../../_outputs/primadona_ubend_monatip_plan_ENG.pdf -layout plan
-export map -projection plan -o ../../_outputs/primadona_ubend_monatip_plan_ENG.svg -layout plan
+export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_ENG.svg -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
@@ -84,20 +83,20 @@ endlayout
 
 select m-all-e@primadona_ubend_monatip.system_migovec
 
-language sl # slo not yet supported
-export map -projection extended -o ../../_outputs/primadona_ubend_monatip_EE_ENG.pdf -layout ee
-export map -projection extended -o ../../_outputs/primadona_ubend_monatip_EE_ENG.svg -layout ee
+language sl 
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_ENG.svg -layout ee
 language en
-export map -projection extended -o ../../_outputs/primadona_ubend_monatip_EE_ENG.pdf -layout ee
-export map -projection extended -o ../../_outputs/primadona_ubend_monatip_EE_ENG.svg -layout ee
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_ENG.svg -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
 select primadona_ubend_monatip@system_migovec
-export model -o ../../_outputs/model/primadona_ubend_monatip.3d
+export model -o ../../outputs/primadona_ubend_monatip.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
 # export a .3d model, which can be opened in AVEN and LOCH
 select primadona_ubend_monatip@system_migovec
-export model -o ../../_outputs/model/primadona_ubend_monatip.lox
+export model -o ../../outputs/primadona_ubend_monatip.lox

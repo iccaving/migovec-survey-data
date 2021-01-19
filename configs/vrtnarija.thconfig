@@ -1,15 +1,20 @@
+encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
-#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                      THIS IS A CONFIGURATION FILE FOR                            |
+#                                                                                  |
+#                      GITHUB CI GENERATION OF:                                    |
 #                                                                                  |
 #                      VRTNARIJA (GARDENER's WORLD)                                |
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../vrtnarija/vrtnarija.th"
+source "../data/vrtnarija/vrtnarija.th"
 
-export model -o ../_outputs/vrtnarija.3d -fmt survex
+
+#----------------------------------------------------------------------------------|
+# export a .lox model, which can be opened in LOCH only
+export model -o ../outputs/vrtnarija.lox

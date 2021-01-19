@@ -12,13 +12,15 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../system_migovec.th"
+source "../../data/system_migovec.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/overview-p.thl"
-input "../../_layouts/base-e.thl"
-input "../../_layouts/user_label.thl" # input this to have the label hierarchy
+input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/overview-p.thl"
+input "../../layouts/mods.thl"
+input "../../layouts/user_label.thl" # input this to have the label hierarchy
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -26,11 +28,12 @@ input "../../_layouts/user_label.thl" # input this to have the label hierarchy
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
+
 layout plan
-	copy overview
+	copy base-p
 	copy user_label
 	
-	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
 	code tex-map
 	\framethickness=0.5mm
 	\def\maplayout{
@@ -48,17 +51,18 @@ layout plan
 	symbol-hide line label
 	symbol-hide point remark
 endlayout
-language fr
-#export model -o ../../_outputs/system_migovec.lox
-export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.pdf -layout plan
-#export map -projection plan -o ../../_outputs/system_migovec_plan_SLO.svg -layout plan
+
+select m-all-p@system_migovec
+
+# language sl
+# export map -projection plan -o ../../outputs/system_migovec_plan_SLO.pdf -layout plan
+# export map -projection plan -o ../../outputs/system_migovec_plan_SLO.svg -layout plan
+# language en
+# export map -projection plan -o ../../outputs/system_migovec_plan_ENG.pdf -layout plan
+# export map -projection plan -o ../../outputs/system_migovec_plan_ENG.svg -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view, using the LAYOUT overview2
-language sl
-
-select m-all-e@system_migovec
-
 layout ee
 	copy base-e
 	copy colour-by-new
@@ -85,13 +89,19 @@ layout ee
 	}
 endlayout
 
-export map -projection extended -o ../../_outputs/map/system_migovec_overview_elevation_SLO.pdf -layout ee
-export map -projection extended -o ../../_outputs/map/system_migovec_overview_elevation_SLO.svg -layout ee 
+select m-all-e@system_migovec
+
+# language sl
+# export map -projection extended -o ../../outputs/map/system_migovec_overview_elevation_SLO.pdf -layout ee
+# export map -projection extended -o ../../outputs/map/system_migovec_overview_elevation_SLO.svg -layout ee 
+# language en
+# export map -projection extended -o ../../outputs/map/system_migovec_overview_elevation_ENG.pdf -layout ee
+# export map -projection extended -o ../../outputs/map/system_migovec_overview_elevation_ENG.svg -layout ee 
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/model/system_migovec.3d
+export model -o ../../outputs/system_migovec.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-#export model -o ../../_outputs/system_migovec.lox
+export model -o ../../outputs/system_migovec.lox

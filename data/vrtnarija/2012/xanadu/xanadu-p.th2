@@ -3,116 +3,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line survey 
-  756.5273 917.9175
-  770.8225 713.5895
-endline
-
-line survey 
-  770.8225 713.5895
-  727.9887 589.2317
-endline
-
-line survey 
-  727.9887 589.2317
-  835.2544 589.2317
-endline
-
-line survey 
-  980.0191 278.881
-  835.2544 589.2317
-endline
-
-line survey 
-  756.5273 917.9175
-  473.8865 741.7655
-endline
-
-line survey 
-  398.4742 600.6264
-  426.5984 714.4182
-endline
-
-line survey 
-  398.4742 600.6264
-  298.9258 723.3786
-endline
-
-line survey 
-  266.3472 714.0039
-  298.9258 723.3786
-endline
-
-line survey 
-  223.0991 802.9345
-  266.3473 714.0039
-endline
-
-line survey 
-  371.1269 346.9904
-  223.0991 802.9345
-endline
-
-line survey 
-  426.5984 714.4182
-  426.5984 714.4182
-endline
-
-line survey 
-  426.5984 714.4182
-  473.8865 741.7655
-endline
-
-line survey 
-  473.8865 741.7655
-  473.8865 741.7655
-endline
-
-line survey 
-  473.8865 741.3512
-  473.8865 741.7655
-endline
-
-line survey 
-  473.8865 741.3512
-  657.445 833.493
-endline
-
-line survey 
-  745.4951 603.4751
-  657.445 833.493
-endline
-
-line survey 
-  745.4951 603.4751
-  709.6536 532.5171
-endline
-
-line survey 
-  709.6536 532.5171
-  606.8421 469.7426
-endline
-
-line survey 
-  606.8421 469.7425
-  473.8865 741.7655
-endline
-
-line survey 
-  221.0274 664.2815
-  73.8283 852.6569
-endline
-
-line survey 
-  221.0274 664.2815
-  473.8865 741.7655
-endline
-
-endscrap
-
-
 scrap xanadu-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
 point 473.8865 741.7655 station -name 1
@@ -123,13 +13,13 @@ point 709.6536 532.5171 station -name 5
 point 606.8421 469.7426 station -name 4
 point 73.8283 852.6569 station -name 3
 point 221.0274 664.2815 station -name 2
-line wall -close on
+line wall -close on -outline in
   511.8204 732.6202
-  511.8204 732.6202 603.2758 510.2976 616.8563 498.0751
-  633.702 485.9868 662.6882 537.5188 701.8793 550.9709
-  715.4598 557.7611 718.5737 600.162 718.5737 612.3844
-  718.5737 624.6069 658.9842 796.3121 646.7617 800.3862
-  634.5393 804.4604 501.3772 745.5417 511.8204 732.6202
+  501.3772 745.5417 634.5393 804.4604 646.7617 800.3862
+  658.9842 796.3121 718.5737 624.6069 718.5737 612.3844
+  718.5737 600.162 715.4598 557.7611 701.8793 550.9709
+  662.6882 537.5188 633.702 485.9868 616.8563 498.0751
+  603.2758 510.2976 511.8204 732.6202 511.8204 732.6202
 endline
 
 line wall 
@@ -152,7 +42,7 @@ endscrap
 scrap xanadu-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 point 473.8865 741.7655 station -name 9
-point 917.074 875.7817 u:label_MY -align l -scale m -attr lvl 0 -attr text Xanadu
+point 917.074 875.7817 u:label_MY -align l -attr lvl 0 -attr text Xanadu -scale m
 line wall 
   397.9089 354.4513
   369.3898 435.9343 266.178 688.5318 277.0424 693.964

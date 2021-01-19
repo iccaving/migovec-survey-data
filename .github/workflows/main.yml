@@ -6,6 +6,8 @@ on:
       - master
     paths:
       - data/**
+      - configs/**
+      - layouts/**
       - .github/workflows/**
   workflow_dispatch:
 
@@ -47,19 +49,19 @@ jobs:
         run: sudo npm install -g svgo
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate output files
-        run: find data/_config/automation -type f -name "*.thconfig" -exec echo -e "\n\nGenerating {}" \;  -exec ${THERION_PATH}/bin/therion -q {} \;
+        run: find configs/automation -type f -name "*.thconfig" -exec echo -e "\n\nGenerating {}" \;  -exec ${THERION_PATH}/bin/therion -q {} \;
       #=========================== COMPRESS OUTPUT ===========================#
       - name: Compress PDFs
         run: |
-          for file in ./data/_outputs/*.pdf; do
+          for file in ./outputs/*.pdf; do
             gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=temp.pdf $file;                                    
             mv temp.pdf $file;
           done
       - name: Compress SVGs
-        run: svgo -f ./data/_outputs/
+        run: svgo -f ./outputs/
       #=========================== CREATE LISTING ===========================#
       - name: Generate listing
-        run: python3 ./scripts/create_file_listing.py ./data/_outputs/ ./data/_outputs/listing.json
+        run: python3 ./scripts/create_file_listing.py ./outputs/ ./outputs/listing.json
       #=============================== UPLOADS ===============================#
       - name: Upload Files
         uses: "marvinpinto/action-automatic-releases@latest"
@@ -69,11 +71,11 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: false
           files: |
-            ./data/_outputs/listing.json
-            ./data/_outputs/*.3d
-            ./data/_outputs/*.lox
-            ./data/_outputs/*.pdf
-            ./data/_outputs/*.svg
+            ./outputs/listing.json
+            ./outputs/*.3d
+            ./outputs/*.lox
+            ./outputs/*.pdf
+            ./outputs/*.svg
   coverage:
     runs-on: ubuntu-latest
     steps:
@@ -105,7 +107,7 @@ jobs:
           mv ${THERION_PATH}/therion ${THERION_PATH}/bin/therion
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate coverage
-        run: python3 ./scripts/percentage_drawn.py data/system_migovec.th --json ./data/_outputs/coverage.json --therion-path ${THERION_PATH}/bin/therion
+        run: python3 ./scripts/percentage_drawn.py data/system_migovec.th --json ./outputs/coverage.json --therion-path ${THERION_PATH}/bin/therion
       #=============================== UPLOADS ===============================#
       - name: Upload Files
         uses: "marvinpinto/action-automatic-releases@latest"
@@ -115,4 +117,4 @@ jobs:
           automatic_release_tag: "coverage"
           prerelease: false
           files: |
-            ./data/_outputs/coverage.json
+            ./outputs/coverage.json

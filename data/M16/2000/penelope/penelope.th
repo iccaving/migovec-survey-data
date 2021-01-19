@@ -1,65 +1,63 @@
-
 survey penelope -title "Paradiso series, Pitches beyond rift (twisted sisters) at bottom of Bear Necessities"
-
-input penelope-e.th2
-
-map m-all-e -projection extended
-    penelope-1e
-endmap
-
-
-input penelope-p.th2
-
-map m-all-p -projection plan
-    m3p
-    m2p
-    m1p
-endmap
-
-map m1p -projection plan
-    penelope-1p
-endmap
-map m2p -projection plan
-    penelope-2p
-endmap
-map m3p -projection plan
-    penelope-3p
-endmap
-
-join penelope-2p penelope-3p
-
-centreline
-    team "Hillary Greaves" insts
-    team "James Hooper" notes
-    explo-team "Hillary Greaves"
-    explo-team "James Hooper"
-    date 2000.07.23
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    1	2	1.33	112	30	#stn 2 is gloworm pitch bolt
-    2	3	5.28	225	-76
-    3	4	36.62	125	-81
-    5	4	3.40	245	-14
-    6	5	7.92	331	41
-    7	6	5.90	296	-21
-    7	8	6.66	136	-26	#stn 8 is pitch bolt (penelope)
-    8	9	27.91	-	down
-    9	10	4.33	115	25
-    11	10	8.60	246	00
-    9	12	4.56	289	-04	#stn 12 is pitch bolt (Hole in 					#the Hill)
-    13	14	10.00	- 	up
-    15	14	5.70	072	-20
-    15	16	7.05	220	26	#stn 16 is a pss
-    16	17	6.38	208	-08
-    17	18	10.00	- 	down
-    15	19	50.70	- 	up	#stn 19 is bolt rebelay
-    19 	12	32.12	- 	up
-endcentreline
+	
+	input penelope-e.th2
+	
+	map m-all-e -projection extended
+		penelope-1e
+	endmap
+	
+	input penelope-p.th2
+	
+	map m-all-p -projection plan
+		m3p
+		m2p
+		m1p
+	endmap
+	
+	map m1p -projection plan
+		penelope-1p
+	endmap
+	map m2p -projection plan
+		penelope-2p
+	endmap
+	map m3p -projection plan
+		penelope-3p
+	endmap
+	
+	join penelope-1p penelope-3p
+	
+	centreline
+		team "Hillary Greaves" insts
+		team "James Hooper" notes
+		explo-team "Hillary Greaves"
+		explo-team "James Hooper"
+		date 2000.07.23
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		1	2	1.33	112	30	#stn 2 is gloworm pitch bolt
+		2	3	5.28	225	-76
+		3	4	36.62	125	-81
+		5	4	3.40	245	-14
+		6	5	7.92	331	41
+		7	6	5.90	296	-21
+		7	8	6.66	136	-26	#stn 8 is pitch bolt (penelope)
+		8	9	27.91	-	down
+		9	10	4.33	115	25
+		11	10	8.60	246	00
+		9	12	4.56	289	-04	#stn 12 is pitch bolt (Hole in 					#the Hill)
+		13	14	10.00	- 	up
+		15	14	5.70	072	-20
+		15	16	7.05	220	26	#stn 16 is a pss
+		16	17	6.38	208	-08
+		17	18	10.00	- 	down
+		15	19	50.70	- 	up	#stn 19 is bolt rebelay
+		19 	12	32.12	- 	up
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#;Paradiso series, Pitches beyond rift (twisted sisters) at bottom of Bear Necessities 
+#;Paradiso series, Pitches beyond rift (twisted sisters) at bottom of Bear Necessities
 #;Date: 23/7/00
 #;Instruments: H Greaves
 #;Book: J Hooper
@@ -91,7 +89,7 @@ endsurvey
 #16	17	6.38	208	-08
 #17	18	10.00	- 	down
 #15	19	50.70	- 	up	;stn 19 is bolt rebelay
-#19 	12	32.12	- 	up	
+#19 	12	32.12	- 	up
 #
 #*end penelope
 #
