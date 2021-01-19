@@ -60,14 +60,19 @@ Also for convenience here is a list of the artifacts and the links to the latest
 
 The full system:
 
-- [Model 3D](https://github.com/tr1813/migresurvey/releases/download/latest/system_migovec.3d) [3d]  
-  The 3D file for viewing in Aven or Loch. (WIP)
-- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/system_migovec_plan_SLO.pdf) [PDF]  
-  The plan with Slovenian legend and labels. (WIP)
-- Extended Elevation - Slovenian [PDF](WIP)
-- Plan - English [PDF]  
-  The plan with English legend and labels. (WIP)
-- Extended Elevation - English [PDF](WIP)
+- 3D Model  
+  [3D](/releases/download/latest/system_migovec.3d) |
+  [LOX](/releases/download/latest/system_migovec.lox)
+- Plan View (WIP)  
+  [SLO PDF](/releases/latest/download/system_migovec_plan_SLO.pdf) |
+  [ENG PDF](/releases/latest/download/system_migovec_plan_ENG.pdf) |
+  [SLO SVG](/releases/latest/download/system_migovec_plan_SLO.svg) |
+  [ENG SVG](/releases/latest/download/system_migovec_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](/releases/latest/download/system_migovec_EE_SLO.pdf) |
+  [ENG PDF](/releases/latest/download/system_migovec_EE_ENG.pdf) |
+  [SLO SVG](/releases/latest/download/system_migovec_EE_SLO.svg) |
+  [ENG SVG](/releases/latest/download/system_migovec_EE_ENG.svg)
 
 **Primadona**
 
@@ -77,16 +82,19 @@ The full system:
 
 Primadona (in full Primadona/Monatip/Ubend) is a cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2015. It is accessed from impressive entrances midway across the western cliffs of the Migovec plateau.
 
-- [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip.3d) [3d]  
-  The 3D file for viewing in Aven or Loch.
-- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) [PDF]  
-  The plan with Slovenian legend and labels. (WIP)
-- [Extended Elevation - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) [PDF]  
-  The extended elevation with Slovenian legend and labels. (WIP)
-- [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) [PDF]  
-  The plan with English legend and labels. (WIP)
-- [Extended Elevation - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) [PDF]  
-  The extended elevation with English legend and labels. (WIP)
+- 3D Model  
+  [3D](/releases/download/latest/primadona_ubend_monatip.3d) |
+  [LOX](/releases/download/latest/primadona_ubend_monatip.lox)
+- Plan View (WIP)  
+  [SLO PDF](/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) |
+  [ENG PDF](/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) |
+  [SLO SVG](/releases/latest/download/primadona_ubend_monatip_plan_SLO.svg) |
+  [ENG SVG](/releases/latest/download/primadona_ubend_monatip_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) |
+  [ENG PDF](/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) |
+  [SLO SVG](/releases/latest/download/primadona_ubend_monatip_EE_SLO.svg) |
+  [ENG SVG](/releases/latest/download/primadona_ubend_monatip_EE_ENG.svg)
 
 **Vrtnarija**
 
@@ -96,14 +104,19 @@ Primadona (in full Primadona/Monatip/Ubend) is a cave system mostly contained in
 
 Connected to the main system in 2012, Vrtnarija comprises roughly a third of the passage in the sytem. It is accessed from entrances on the Eastern side of the Migovec plateau.
 
-- [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija.3d) [3d]  
-  The 3D file for viewing in Aven or Loch. (WIP)
-- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_SLO.pdf) [PDF]  
-  The plan with Slovenian legend and labels. (WIP)
-- Extended Elevation - Slovenian [PDF](WIP)
-- [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_ENG.pdf) [PDF]  
-  The plan with English legend and labels. (WIP)
-- Extended Elevation - English [PDF](WIP)
+- 3D Model  
+  [3D](/releases/download/latest/vrtnarija.3d) |
+  [LOX](/releases/download/latest/vrtnarija.lox)
+- Plan View (WIP)  
+  [SLO PDF](/releases/latest/download/vrtnarija_plan_SLO.pdf) |
+  [ENG PDF](/releases/latest/download/vrtnarija_plan_ENG.pdf) |
+  [SLO SVG](/releases/latest/download/vrtnarija_plan_SLO.svg) |
+  [ENG SVG](/releases/latest/download/vrtnarija_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](/releases/latest/download/vrtnarija_EE_SLO.pdf) |
+  [ENG PDF](/releases/latest/download/vrtnarija_EE_ENG.pdf) |
+  [SLO SVG](/releases/latest/download/vrtnarija_EE_SLO.svg) |
+  [ENG SVG](/releases/latest/download/vrtnarija_EE_ENG.svg)
 
 **M18 / M16 / M2**
 
@@ -113,14 +126,19 @@ Connected to the main system in 2012, Vrtnarija comprises roughly a third of the
 
 Collectively known as 'the old system' or sometimes 'sysmig', these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994, exploration was continued until roughly 2001. M2/M8 and M16/M18 connections were made early on in 1996.
 
-- [Model 3D](https://github.com/tr1813/migresurvey/releases/download/latest/m2_m16_m18.3d) [3d]  
-  The 3D file for viewing in Aven or Loch. (WIP)
-- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/m2_m16_m18_plan_SLO.pdf) [PDF]  
-  The plan with Slovenian legend and labels. (WIP)
-- Extended Elevation - Slovenian [PDF](WIP)
-- Plan - English [PDF]  
-  The plan with English legend and labels. (WIP)
-- Extended Elevation - English [PDF](WIP)
+- 3D Model  
+  [3D](/releases/download/latest/m2_m16_m18.3d) |
+  [LOX](/releases/download/latest/m2_m16_m18.lox)
+- Plan View (WIP)  
+  [SLO PDF](/releases/latest/download/m2_m16_m18_plan_SLO.pdf) |
+  [ENG PDF](/releases/latest/download/m2_m16_m18_plan_ENG.pdf) |
+  [SLO SVG](/releases/latest/download/m2_m16_m18_plan_SLO.svg) |
+  [ENG SVG](/releases/latest/download/m2_m16_m18_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](/releases/latest/download/m2_m16_m18_EE_SLO.pdf) |
+  [ENG PDF](/releases/latest/download/m2_m16_m18_EE_ENG.pdf) |
+  [SLO SVG](/releases/latest/download/m2_m16_m18_EE_SLO.svg) |
+  [ENG SVG](/releases/latest/download/m2_m16_m18_EE_ENG.svg)
 
 ## Prerequisites
 
