@@ -27,9 +27,10 @@ ENTRY_FILE = abspath(args.survey_file)
 survey = Survey(ENTRY_FILE)
 
 lengthre = re.compile(r".*Total length of survey legs =\s*(\S+)m")
+depthre = re.compile(r".*Vertical range =\s*(\S+)m")
 
 
-def get_length(filepath):
+def get_stats(filepath):
     config_template = """source {}
     layout test
     scale 1 500
@@ -52,14 +53,14 @@ def get_length(filepath):
                     )
                     tmp2.flush()
                     log = tmp2.read()
-
-        match = lengthre.findall(log)
-        if len(match) == 1:
-            return match[0]
+        lenmatch = lengthre.findall(log)
+        depmatch = depthre.findall(log)
+        if len(lenmatch) == 1 and len(depmatch) == 1:
+            return {"length": lenmatch[0], "depth": depmatch[0]}
     except Exception as e:
         print(filepath)
         print(e)
-    return 0
+    return {"length": 0, "depth": 0}
 
 
 drawnre = re.compile(r".*line wall")
@@ -89,7 +90,7 @@ def get_drawn_length(source):
         return None
     th2s = [s for s in survey.sources if s.dirname == source.dirname and s.type == "th2"]
     print("Processing: {}".format(source.name))
-    length = float(get_length(source.name))
+    length = float(get_stats(source.name)["length"])
     plan_th2 = next((x for x in th2s if x.projection == "plan"), None)
     extended_th2 = next((x for x in th2s if x.projection == "extended"), None)
     proj_is_drawn = {
@@ -102,7 +103,7 @@ def get_drawn_length(source):
 th_sources = [s for s in survey.sources if s.type == "th"]
 
 pool = mp.Pool(mp.cpu_count())
-results = pool.map(get_drawn_length, th_sources)
+results = pool.map(get_drawn_length, th_sources[0:10])
 
 systems = [
     "system_migovec",
@@ -145,6 +146,16 @@ for result in results:
         need_plan.append(source.name)
     if not proj_is_drawn["extended"]:
         need_extended.append(source.name)
+
+for system in systems:
+    filepath = survey.get_survey_file(survey.get_survey_key(system, "system_migovec" if system != "system_migovec" else ""))
+    stats = get_stats(filepath)
+    length = float(stats["length"])
+    length_km = round(length / 1000, 1)
+    depth = round(float(stats["depth"]))
+    json_data[system]["stats"] = {"length": length, "length_km": length_km, "depth": depth}
+
+# json_data["system_migovec"]["stats"] = {"length": round(float(get_length(survey.source.name)) / 1000, 1)}
 
 print("Need plan:")
 pprint.pprint(need_plan)
