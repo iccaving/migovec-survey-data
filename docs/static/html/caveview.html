@@ -9,8 +9,12 @@
     <!-- Windows Phone -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#2D2D2D" />
     <!-- iOS Safari -->
-    <script src="../js/CaveView2.js"></script>
-    <link type="text/css" href="../css/caveview2.css" rel="stylesheet" />
+    <script src="../CaveView/js/CaveView2.js"></script>
+    <link
+      type="text/css"
+      href="../CaveView/css/caveview.css"
+      rel="stylesheet"
+    />
     <style>
       body {
         margin: 0;
@@ -63,13 +67,24 @@
         // display the user interface - and a blank canvas
         // the configuration object specifies the location of CaveView, surveys and terrain files
         const viewer = new CV2.CaveViewer("scene", {
-          home: "./docs/static/",
+          view: {
+            cameraType: CV2.CAMERA_PERSPECTIVE,
+            box: true,
+            terrain: true,
+            walls: true,
+            HUD: true,
+            entrances: true,
+          },
+          home: "../CaveView/",
+          terrainDirectory: "../js",
           surveyDirectory:
             "https://github.com/iccaving/migovec-survey-data/releases/download/latest/",
         });
         const ui1 = new CV2.CaveViewUI(viewer);
         ui1.loadCaveList(
-          listing.filter((l) => l.type === "3D").map((l) => l.file)
+          listing
+            .filter((l) => l.type === "3D" || l.type === "LOX")
+            .map((l) => l.file)
         );
       }
       window.onload = () =>
