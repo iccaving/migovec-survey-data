@@ -115,6 +115,7 @@ endmap
 
 map m-yorkshire_extensions-e -projection extended
 	m-all-e@slinging
+	m-all-e@labyrinth
 endmap
 
 centreline
@@ -205,6 +206,7 @@ centreline
 	# Yorkshire
 	extend left 4@lowerpleasures
 	extend right 6@2ndtimelucky
+	extend left 7@labyrinth
 	
 	#Xanadu/Cuckoo's Nest
 	extend left 12@xanadu 13@xanadu
