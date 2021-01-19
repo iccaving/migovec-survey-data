@@ -644,3 +644,13 @@ Then just open the `.plt` in aven or loch.
 ### Therion Error: Map is too large for PDF format. Try smaller scale!
 
 This error often happens if you have an empty scrap, i.e. a scrap with no stations in it. If you have been making a new map with multiple scraps ensure you have copied the relevent stations across into the new layers.
+
+Alternatively this might acutally be the scale so you can try changing the scale in your layout:
+
+```
+layout plan
+  ...
+	scale 1 2000
+  ...
+endlayout
+```
