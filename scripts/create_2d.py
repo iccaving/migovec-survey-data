@@ -20,6 +20,7 @@ parser.add_argument(
 parser.add_argument("--projection", help="The projection to produce", default="plan")
 parser.add_argument("--format", help="The output format", default="th2")
 parser.add_argument("--out", help="Output path")
+parser.add_argument("--therion-path", help="Path to therion binary", default="therion")
 args = parser.parse_args()
 
 ENTRY_FILE = abspath(args.survey_file)
@@ -67,14 +68,15 @@ export map -projection {projection} -o xvi.xvi -layout test -layout-debug statio
 with open("xvi.thconfig", "w+") as f:
     f.write(
         xvi_file.format(
-            th_file=ENTRY_FILE,
+            th_file=ENTRY_FILE.replace('\\','/'),
             projection=PROJECTION,
             name=survey_name,
             namespace=survey_namespace,
         )
     )
 
-os.system("therion xvi.thconfig")
+os.system('"{}" {}'.format(args.therion_path, "xvi.thconfig"))
+
 os.remove("xvi.thconfig")
 # Parse the XVI file
 
