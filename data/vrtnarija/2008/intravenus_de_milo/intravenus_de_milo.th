@@ -4,7 +4,11 @@ survey intravenus_de_milo -title "intravenus_de_milo: Intravenus de milo"
 	
 	map m-all-e -projection extended
 		intravenus_de_milo-1e
+		break
+		intravenus_de_milo-2e
 	endmap
+
+	join intravenus_de_milo-2e intravenus_de_milo-1e
 	
 	input intravenus_de_milo-p.th2
 	
