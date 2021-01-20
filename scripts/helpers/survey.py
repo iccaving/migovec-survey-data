@@ -35,7 +35,7 @@ class Survey:
         namespace = source_file.namespace.copy()
         data = ""
 
-        with open(source_file.name, "r") as file:
+        with open(source_file.name, "r", encoding="utf-8") as file:
             data = file.read()
 
         for line in data.splitlines():
