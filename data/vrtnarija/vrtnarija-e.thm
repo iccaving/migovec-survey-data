@@ -49,6 +49,7 @@ endmap
 
 map m-friendship-e -projection extended
 	m-all-e@friendship
+	m-all-e@xanadu
 	m-all-e@euphrates2
 	m-all-e@euphrates
 	m-all-e@xanadont
@@ -210,7 +211,9 @@ centreline
 	
 	#Xanadu/Cuckoo's Nest
 	extend left 12@xanadu 13@xanadu
-	extend left 8@xanadu 7@xanadu
+	extend right 8@xanadu 7@xanadu
+	extend right 7@xanadu 6@xanadu
+	extend left 5@xanadu
 	extend left 27@rejuvenation_rift
 	extend left 12@time_bandits
 	extend right 16@rejuvenation_rift

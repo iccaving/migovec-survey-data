@@ -1,114 +1,139 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 590.000000 441.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  0.88 -31.50
-  40.45 -23.86
+scrap xanadu-4e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
+
+line wall 
+  247.5502 210.6636
+  247.5502 210.6636 227.0576 213.9424 213.1227 222.5493
+  199.1877 231.1561 188.9415 250.0093 186.0725 254.1078
+  183.2035 258.2063 172.5474 274.6004 170.908 278.289
+  169.2686 281.9777 166.3996 288.1255 168.039 291.4043
 endline
-line survey 
-  40.45 -23.86
-  65.84 -41.50
+
+line wall 
+  142.0 294.25
+  142.0 294.25 141.8085 296.3225 144.2677 289.355
+  146.7268 282.3876 165.5799 237.7138 172.1375 232.7955
+  178.6952 227.8773 208.2045 208.2045 211.0734 207.3848
+  213.9424 206.5651 213.9424 200.8271 213.9424 200.8271
 endline
-line survey 
-  65.84 -41.50
-  86.55 -41.50
-endline
-line survey 
-  152.69 -41.73
-  86.55 -41.50
-endline
-line survey 
-  0.88 -31.50
-  -63.42 -55.12
-endline
-line survey 
-  -96.59 -5.28
-  -73.97 -12.36
-endline
-line survey 
-  -96.59 -5.28
-  -127.05 20.47
-endline
-line survey 
-  -133.58 35.12
-  -127.05 20.47
-endline
-line survey 
-  -152.69 71.26
-  -133.58 35.12
-endline
-line survey 
-  -60.15 87.01
-  -152.69 71.26
-endline
-line survey 
-  -73.97 -55.04
-  -73.97 -12.36
-endline
-line survey 
-  -73.97 -55.04
-  -63.42 -55.12
-endline
-line survey 
-  -63.42 -83.46
-  -63.42 -55.12
-endline
-line survey 
-  -63.42 -76.06
-  -63.42 -83.46
-endline
-line survey 
-  -63.42 -76.06
-  -103.11 -78.50
-endline
-line survey 
-  -55.81 -77.48
-  -103.11 -78.50
-endline
-line survey 
-  -55.81 -77.48
-  -41.41 -86.93
-endline
-line survey 
-  -41.41 -86.93
-  -18.12 -86.22
-endline
-line survey 
-  -18.12 -86.22
-  40.34 -83.46
-endline
-line survey 
-  -12.37 -87.01
-  33.85 -77.17
-endline
-line survey 
-  -12.37 -87.01
-  -63.42 -83.46
-endline
+
+point 229.61 208.56 station -name 11
+point 243.43 308.01 station -name 12
+point 150.89 292.26 station -name 13
+point 170.0 256.04 station -name 14
+point 176.53 241.47 station -name 15
+point 206.99 215.72 station -name 16
 endscrap
 
-scrap xanadu-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 40.45 -23.86 station -name 21
-point 0.88 -31.50 station -name 17
-point 65.84 -41.50 station -name 20
-point 86.55 -41.50 station -name 19
-point 152.69 -41.73 station -name 18
-point -63.42 -55.12 station -name 9
-point -73.97 -12.36 station -name 11
-point -96.59 -5.28 station -name 16
-point -127.05 20.47 station -name 15
-point -133.58 35.12 station -name 14
-point -152.69 71.26 station -name 13
-point -60.15 87.01 station -name 12
-point -73.97 -55.04 station -name 10
-point -63.42 -83.46 station -name 1
-point -63.42 -76.06 station -name 8
-point -103.11 -78.50 station -name 7
-point -55.81 -77.48 station -name 6
-point -41.41 -86.93 station -name 5
-point -18.12 -86.22 station -name 4
-point 33.85 -77.17 station -name 3
-point -12.37 -87.01 station -name 2
+
+scrap xanadu-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
+
+line wall 
+  457.2699 203.3738
+  457.2699 203.3738 407.6039 200.8049 399.0408 203.3738
+  390.4777 205.9427 333.533 219.2155 321.9728 214.5058
+  310.4126 209.7961 298.8524 204.6583 291.1456 202.9456
+  283.4388 201.233 265.4563 197.8078 265.4563 197.8078
+endline
+
+line wall 
+  264.1718 169.5495
+  264.1718 169.5495 303.5621 182.8223 308.2718 184.1068
+  312.9815 185.3913 335.6738 191.3854 338.2427 191.3854
+  340.8117 191.3854 343.8087 191.3854 348.0903 188.3884
+  352.3718 185.3913 365.2165 169.9777 378.0612 172.1184
+  390.9058 174.2592 434.1495 176.4 438.0029 175.9718
+  441.8563 175.5437 458.5544 175.1155 458.5544 175.1155
+endline
+
+point 240.16 165.88 station -name 9
+point 304.46 189.43 station -name 17
+point 456.27 179.19 station -name 18
+point 390.13 179.43 station -name 19
+point 369.42 179.5 station -name 20
+point 344.03 197.06 station -name 21
 endscrap
+
+
+scrap xanadu-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
+
+point 137.0 164.0 water-flow -orientation 107.30000347228177 -scale 2
+line wall 
+  129.7311 139.5786
+  129.7311 139.5786 183.6786 125.0214 195.667 125.0214
+  207.6553 125.0214 223.0689 125.4495 223.0689 125.4495
+endline
+
+line wall 
+  210.6524 174.6874
+  210.6524 174.6874 184.535 162.699 168.6932 166.9806
+  152.8515 171.2621 132.3 178.9689 132.3 178.9689
+endline
+
+point 189.214 133.99 station -name 2
+point 240.264 137.54 station -name 1
+point 143.004 143.76 station -name 3
+endscrap
+
+
+scrap xanadu-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line border -close on -id xanadu-1e_water_1 -visibility on
+  318.8643 125.4145
+  241.8123 128.6933
+  261.4851 109.0204
+  309.0279 108.2007
+endline
+
+area water 
+  xanadu-1e_water_1
+endarea
+
+area water
+endarea
+
+area water
+endarea
+
+point 270.0 86.0 u:label_MY -attr text Xanadu -attr lvl 2 -attr align br
+line wall 
+  265.4563 197.8078
+  265.4563 197.8078 257.7495 198.2359 253.0398 202.5175
+  248.3301 206.799 247.5502 210.6636 247.5502 210.6636
+endline
+
+line wall 
+  223.0689 125.4495
+  223.0689 125.4495 230.3476 126.3058 232.9165 128.4466
+  235.4854 130.5874 238.9107 140.8631 247.9019 129.3029
+  256.8932 117.7427 281.2981 114.3175 293.7146 117.7427
+  306.1311 121.168 316.4068 131.8718 323.2573 131.8718
+  330.1078 131.8718 364.3602 128.8748 364.3602 128.8748
+  364.3602 128.8748 420.0204 132.7282 354.0845 144.7165
+  288.1485 156.7049 281.7262 155.4204 281.7262 155.4204
+  281.7262 155.4204 251.7553 154.1359 251.3272 157.9893
+  250.899 161.8427 248.7583 164.4117 254.7524 166.5524
+  260.7466 168.6932 264.1718 169.5495 264.1718 169.5495
+endline
+
+line wall 
+  213.9424 200.8271
+  213.9424 200.8271 216.6466 196.9515 217.0748 194.3825
+  217.5029 191.8136 217.5029 181.1097 215.7903 179.3971
+  214.0777 177.6845 210.6524 174.6874 210.6524 174.6874
+endline
+
+point 289.45 134.7 station -name 4
+point 312.75 133.99 station -name 5
+point 327.14 143.52 station -name 6
+point 279.84 142.5 station -name 7
+point 240.16 144.86 station -name 8
+point 240.16 137.54 station -name 1
+point 240.16 165.88 station -name 9
+point 229.61 165.88 station -name 10
+point 229.61 208.56 station -name 11
+endscrap
+

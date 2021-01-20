@@ -548,11 +548,12 @@ survey vrtnarija -title "Vrtnarija"
 	join watershipdown-1p@watershipdown winterjourney-1p@winterjourney
 	join watershipup-1p@watershipup watershipdown-1p@watershipdown
 	
-	
 	join apollo-1e@apollo the_queen_bed_chamber-1e@the_queen_bed_chamber
 	join milkyway-1e@milkyway apollo-1e@apollo
 	join dreamsforthesoul-1e@dreamsforthesoul milkyway-1e@milkyway
 	join euphrates2-1e@euphrates2 euphrates-1e@euphrates
+	join xanadu-3e@xanadu euphrates2-1e@euphrates2
+	join xanadu-4e@xanadu friendship-1e@friendship
 	
 	###__________2013____________###
 	input ./2013/lethe/lethe.th

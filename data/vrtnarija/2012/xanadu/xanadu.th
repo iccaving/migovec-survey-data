@@ -5,7 +5,14 @@ input xanadu-e.th2
 
 map m-all-e -projection extended
     xanadu-1e
+	xanadu-2e
+	xanadu-3e
+	xanadu-4e
 endmap
+
+join xanadu-4e xanadu-1e
+join xanadu-2e xanadu-1e
+join xanadu-3e xanadu-1e
 
 
 input xanadu-p.th2
