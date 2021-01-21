@@ -2,38 +2,32 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -93.97 -20.67
-  -104.15 -7.36
-endline
-line survey 
-  -93.97 -20.67
-  -54.03 -22.72
-endline
-line survey 
-  -54.03 -22.72
-  -17.81 -22.72
-endline
-line survey 
-  -17.81 -22.72
-  2.83 -8.54
-endline
-line survey 
-  2.83 -8.54
-  30.19 -11.85
-endline
-line survey 
-  30.19 -11.85
-  51.53 0.28
-endline
-line survey 
-  51.53 0.28
-  104.15 22.72
-endline
-endscrap
 
 scrap squidgygoodness-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+point -67.5802 -39.9719 paleo-material 
+line wall 
+  66.4611 73.8203
+  66.4611 73.8203 64.5405 70.6994 53.9773 64.9376
+  43.4142 59.1759 21.3664 54.0161 16.5649 52.5757
+  11.7635 51.1353 -7.6823 38.6516 -16.3249 38.4115
+  -20.1187 38.3061 -36.447 41.3241 -52.2272 42.5886
+  -72.3949 44.2047 -92.4276 44.1732 -92.4276 44.1732
+endline
+
+line wall -subtype presumed
+  60.4981 -9.6029
+  60.4981 -9.6029 71.8292 -5.9612 79.2715 -0.4396
+  86.7137 5.0821 97.9971 12.2842 97.9971 12.2842
+endline
+
+line wall 
+  -89.4267 -48.9764
+  -87.2661 -48.9764 -5.7617 -39.3736 -4.5614 -39.3736
+  -3.361 -39.3736 43.2129 -17.8854 43.2129 -17.8854
+  60.4981 -9.6029
+endline
+
 point -104.15 -7.36 station -name 8
 point -93.97 -20.67 station -name 7
 point -54.03 -22.72 station -name 6
@@ -43,3 +37,4 @@ point 30.19 -11.85 station -name 3
 point 51.53 0.28 station -name 2
 point 104.15 22.72 station -name 1
 endscrap
+
