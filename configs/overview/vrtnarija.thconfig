@@ -21,7 +21,7 @@ input "../../layouts/user_label.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-all-p@vrtnarija.vrtnarija_vilinska.system_migovec -map-level 0
+#select m-all-p@vrtnarija.vrtnarija_vilinska.system_migovec -map-level 0
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1
@@ -73,8 +73,8 @@ layout ee
 	endcode
 endlayout
 
-#select m-kangaroo_branch-e@vrtnarija.vrtnarija_vilinska.system_migovec
-select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
+select m-kangaroo_branch-e@vrtnarija.vrtnarija_vilinska.system_migovec
+#select m-friendship-e@vrtnarija.vrtnarija_vilinska.system_migovec
 
 
 language sl

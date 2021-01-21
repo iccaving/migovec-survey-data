@@ -48,6 +48,9 @@ map m-beyond-consort-e -projection extended
 endmap
 
 map m-friendship-e -projection extended
+	m-all-e@fallsrd
+	m-all-e@lowerfallsrd
+	#m-all-e@fools_road ## this is because the scrap is extremely small
 	m-all-e@friendship
 	m-all-e@xanadu
 	m-all-e@euphrates2

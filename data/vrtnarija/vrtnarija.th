@@ -87,7 +87,9 @@ survey vrtnarija -title "Vrtnarija"
 	join zimmer-1e@zimmer skynet-1e@skynet
 	join wall@chariot:end wall@pico:0
 	join wall2@chariot:0 wall2@pico2:end
-	
+
+	join fallsrd-1e@fallsrd friendship-1e@friendship
+
 	###__________2003____________###
 	input "./2003/candyMountain/candyMountain.th"
 	input "./2003/highway32/highway32.th"
@@ -128,6 +130,8 @@ survey vrtnarija -title "Vrtnarija"
 	join weepeople-1e@weepeople leprachaun-1e@leprachaun
 	join gold-1e@gold weepeople-1e@weepeople
 	join gold-1e@gold nitro-1e@nitro
+	join fallsrd-1e@fallsrd lowerfallsrd-1e@lowerfallsrd
+
 	
 	###__________2004____________###
 	input "./2004/nitro/nitro.th"
@@ -203,7 +207,7 @@ survey vrtnarija -title "Vrtnarija"
 	join kangaroo01-1e@kangaroo01 pico-1e@pico
 	join kangaroo01-1e@kangaroo01 zubafu-1e@zubafu
 	join scrotty-1e@scrotty bonus-1e@bonus
-	join scrotty-1e@scrotty olympicrift-1e@olympicrift
+	join scrotty-2e@scrotty olympicrift-1e@olympicrift
 	join bonus-1p@bonus zubafu-1p@zubafu
 	join bonus-1e@bonus zubafu-1e@zubafu
 	
