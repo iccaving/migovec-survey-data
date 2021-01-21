@@ -1,27 +1,33 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -144.0 -144.0 768.0 1280.0
+##XTHERION## xth_me_area_zoom_to 25
 
 
-scrap zimmer-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+
+scrap zimmer-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 point 621.5678 928.9068 u:label_MY -attr lvl 1 -align r -attr text Zimmer
+
 point 423.5208 977.3282 water-flow -orientation 142.11894
+
 point 576.4931 994.772 water-flow -orientation 203.52687
-line wall 
+
+line wall
   566.9862 1033.1372
   542.8808 1009.0318 532.0164 997.4883 518.4359 999.8649
   504.8554 1002.2415 497.0466 1000.2044 494.67 1006.6552
   492.2934 1013.1059 480.75 1090.5148 482.108 1094.2495
   483.4661 1097.9841 489.2378 1095.268 489.2378 1095.268
+  smooth off
 endline
 
-line wall 
+line wall
   579.8877 853.1955
   577.1716 860.6647 581.2458 877.3009 584.3014 886.8072
   587.357 896.3136 594.8263 899.0297 599.919 914.6473
   605.0116 930.2648 605.6907 968.2903 606.7092 980.8522
   607.7278 993.4142 610.1043 997.8279 610.1043 997.8279
+  smooth off
 endline
 
 line wall -id cheetzim
@@ -38,10 +44,15 @@ line wall -id cheetzim
   427.4465 899.3692 453.2495 885.7887 457.3236 880.696
   461.3978 875.6033 478.0339 872.8872 480.4105 867.1155
   482.7871 861.3438 483.4661 853.535 483.4661 853.535
+  smooth off
 endline
 
 point 476.1095 874.9867 station -name 3
+
 point 476.1095 1110.8867 station -name 2
+
 point 457.2895 1109.1567 station -name 1
+
 endscrap
+
 

@@ -1,90 +1,91 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust 0 0 903.000000 522.000000
+##XTHERION## xth_me_area_zoom_to 400
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -289.59 128.46
-  -317.54 113.58
-endline
-line survey 
-  -226.26 94.84
-  -289.59 128.46
-endline
-line survey 
-  -205.28 30.28
-  -226.26 94.84
-endline
-line survey 
-  -168.73 17.68
-  -205.28 30.28
-endline
-line survey 
-  -127.15 -7.28
-  -168.73 17.68
-endline
-line survey 
-  -94.01 -9.65
-  -127.15 -7.28
-endline
-line survey 
-  -35.70 -39.33
-  -94.01 -9.65
-endline
-line survey 
-  4.73 -89.25
-  -35.70 -39.33
-endline
-line survey 
-  66.26 -105.79
-  4.73 -89.25
-endline
-line survey 
-  66.26 -105.79
-  87.74 -102.01
-endline
-line survey 
-  135.29 -101.14
-  87.74 -102.01
-endline
-line survey 
-  135.29 -101.14
-  166.68 -113.19
-endline
-line survey 
-  197.25 -117.52
-  166.68 -113.19
-endline
-line survey 
-  197.25 -117.52
-  231.02 -128.46
-endline
-line survey 
-  285.10 -121.85
-  231.02 -128.46
-endline
-line survey 
-  317.54 -121.85
-  285.10 -121.85
-endline
-endscrap
+
 
 scrap dream2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -317.54 113.58 station -name 17
-point -289.59 128.46 station -name 16
-point -226.26 94.84 station -name 15
-point -205.28 30.28 station -name 14
-point -168.73 17.68 station -name 13
-point -127.15 -7.28 station -name 12
-point -94.01 -9.65 station -name 11
-point -35.70 -39.33 station -name 10
-point 4.73 -89.25 station -name 9
-point 66.26 -105.79 station -name 8
-point 87.74 -102.01 station -name 7
-point 135.29 -101.14 station -name 6
-point 166.68 -113.19 station -name 5
-point 197.25 -117.52 station -name 4
-point 231.02 -128.46 station -name 3
-point 285.10 -121.85 station -name 2
-point 317.54 -121.85 station -name 1
+
+point 428.0 233.0 water-flow -orientation 138.5
+
+line ceiling-step -reverse on
+  133.25 372.75
+  clip off
+  133.25 372.75 163.71 396.18 187.0 377.75
+  197.62 369.35 220.5 354.75 220.5 354.75
+  smooth off
+endline
+
+line wall
+  789.0 182.0
+  781.38 184.97 778.6622 185.758 769.9887 186.0466
+  735.4263 187.1987 709.9331 165.3688 699.5239 157.6991
+  688.5385 149.6039 634.7639 169.8417 633.6074 175.0457
+  632.451 180.2496 583.8805 188.9229 566.5335 177.3584
+  549.1865 165.7942 503.5072 192.9715 500.0378 192.3922
+  496.5684 191.814 468.236 249.636 456.0932 249.636
+  443.9503 249.636 400.6398 284.2502 391.3322 282.0164
+  362.4215 275.0778 345.6528 325.9612 333.5109 320.7573
+  321.3681 315.5532 284.3622 317.8662 273.954 316.7097
+  263.5459 315.5533 261.2329 369.906 258.92 382.6268
+  256.6071 395.3476 211.506 420.7894 208.6148 424.8369
+  205.7236 428.8845 162.3572 444.4965 153.1055 441.6053
+  smooth off
+endline
+
+line wall
+  191.0121 347.7141
+  191.0121 347.7141 198.644 297.6811 216.5461 290.1739
+  smooth off
+  225.7967 289.5974 246.247 287.0957 249.3374 288.8282
+  smooth off
+  258.9163 290.8163 282.2066 263.772 282.2066 263.772
+  smooth off
+  282.2066 263.772 323.7847 227.3908 335.912 233.1656
+  348.0392 238.9404 365.988 246.0782 372.3404 235.1061
+  378.6918 224.134 440.9661 152.7351 451.9384 151.5802
+  462.9107 150.4251 500.5398 151.372 506.8921 147.3297
+  513.2445 143.2873 545.0054 128.2729 551.3577 133.4702
+  557.7101 138.6675 609.6831 145.0198 613.148 141.5549
+  616.6129 138.0901 690.18 106.69 700.0 109.0
+  709.81 111.31 742.92 110.46 751.0 107.0
+  smooth off
+endline
+
+point 133.46 375.58 station -name 17
+
+point 161.41 390.46 station -name 16
+
+point 224.74 356.84 station -name 15
+
+point 245.72 292.28 station -name 14
+
+point 282.27 279.68 station -name 13
+
+point 323.85 254.72 station -name 12
+
+point 356.99 252.35 station -name 11
+
+point 415.3 222.67 station -name 10
+
+point 455.73 172.75 station -name 9
+
+point 517.26 156.21 station -name 8
+
+point 538.74 159.99 station -name 7
+
+point 586.29 160.86 station -name 6
+
+point 617.68 148.81 station -name 5
+
+point 648.25 144.48 station -name 4
+
+point 682.02 133.54 station -name 3
+
+point 736.1 140.15 station -name 2
+
+point 768.54 140.15 station -name 1
+
 endscrap
+
+
