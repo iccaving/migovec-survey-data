@@ -13,8 +13,10 @@ input firstdraft-e.th2
 map m-all-e -projection extended
     firstdraft-1e
 	firstdraft-2e
+	firstdraft-3e
 endmap
-
+join firstdraft-1e firstdraft-2e
+join firstdraft-2e firstdraft-3e
 	centreline
 		team "Rhys Tyers" insts
 		team "Tanguy Racine" notes
