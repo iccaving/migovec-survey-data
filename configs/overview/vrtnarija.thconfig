@@ -1,3 +1,4 @@
+encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
@@ -6,7 +7,6 @@
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
@@ -65,7 +65,7 @@ layout ee
 
 	copy show-centreline
 	colour map-fg [95 95 82]
-	scale 1 2000
+	scale 1 1000
 	grid-size 10 10 100 m
 	map-header 0 0 off
 	code metapost
@@ -73,7 +73,9 @@ layout ee
 	endcode
 endlayout
 
+select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
 #select m-kangaroo_branch-e@vrtnarija.vrtnarija_vilinska.system_migovec
+#select m-s_extensions-e@vrtnarija.vrtnarija_vilinska.system_migovec
 #select m-friendship-e@vrtnarija.vrtnarija_vilinska.system_migovec
 select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
 
