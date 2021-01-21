@@ -487,6 +487,9 @@ survey vrtnarija -title "Vrtnarija"
 
 	join lowerpleasures-1e@lowerpleasures friendship-1e@friendship
 	join 2ndtimelucky-1e@2ndtimelucky lowerpleasures-1e@lowerpleasures
+	join penguinsegg-1e@penguinsegg winterjourney-1e@winterjourney
+	join dream2-1e@dream2 penguinsegg-1e@penguinsegg
+	join daydreamers-1e@daydreamers dream2-1e@dream2
 	
 	###__________2012____________###
 	input ./2012/atlantis/atlantis.th
@@ -567,6 +570,8 @@ survey vrtnarija -title "Vrtnarija"
 	join euphrates2-1e@euphrates2 euphrates-1e@euphrates
 	join xanadu-3e@xanadu euphrates2-1e@euphrates2
 	join xanadu-4e@xanadu friendship-1e@friendship
+	join watershipup-1e@watershipup watershipdown-1e@watershipdown
+	join winterjourney-1e@winterjourney watershipdown-1e@watershipdown
 	
 	###__________2013____________###
 	input ./2013/lethe/lethe.th

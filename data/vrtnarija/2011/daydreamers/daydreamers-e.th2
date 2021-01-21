@@ -1,75 +1,94 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 676.000000 518.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -184.23 118.54
-  -204.05 125.79
-endline
-line survey 
-  -184.23 118.54
-  -164.89 114.45
-endline
-line survey 
-  -164.89 56.34
-  -164.89 114.45
-endline
-line survey 
-  -138.85 79.72
-  -164.89 56.34
-endline
-line survey 
-  -98.59 68.23
-  -138.85 79.72
-endline
-line survey 
-  -98.59 68.23
-  -69.15 41.69
-endline
-line survey 
-  -69.15 -7.60
-  -69.15 41.69
-endline
-line survey 
-  -23.04 12.95
-  -69.15 -7.60
-endline
-line survey 
-  -23.04 12.95
-  28.90 -0.98
-endline
-line survey 
-  71.45 -13.98
-  28.90 -0.98
-endline
-line survey 
-  98.62 -21.77
-  71.45 -13.98
-endline
-line survey 
-  146.43 -101.38
-  98.62 -21.77
-endline
-line survey 
-  146.43 -101.38
-  204.05 -125.79
-endline
-endscrap
+
 
 scrap daydreamers-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -204.05 125.79 station -name 14
-point -184.23 118.54 station -name 13
-point -164.89 114.45 station -name 12
-point -164.89 56.34 station -name 11
-point -138.85 79.72 station -name 10
-point -98.59 68.23 station -name 9
-point -69.15 41.69 station -name 8
-point -69.15 -7.60 station -name 7
-point -23.04 12.95 station -name 6
-point 28.90 -0.98 station -name 5
-point 71.45 -13.98 station -name 4
-point 98.62 -21.77 station -name 3
-point 146.43 -101.38 station -name 1
-point 204.05 -125.79 station -name 2
+
+point 178.0 176.0 u:label_MY -attr text "Daydreamers" -attr lvl 2 -attr align br
+
+point 450.0 199.0 water-flow -orientation 165.7
+
+line border -id daydreamers-1e_water_1 -close on -visibility on
+  483.7228 152.7399
+  428.5764 153.7611
+  428.5764 153.7611 440.1503 130.6133 451.0434 132.9961
+  461.9366 135.379 483.7228 152.7399 483.7228 152.7399
+  smooth off
+endline
+
+area water
+  daydreamers-1e_water_1
+endarea
+
+line wall
+  505.1904 207.6816
+  496.6465 205.0117 489.7054 232.779 488.1026 241.8567
+  486.5005 250.9344 445.3838 246.1295 442.1799 245.5946
+  438.9768 245.0606 380.7722 269.6239 377.0343 267.4879
+  373.2963 265.352 367.9563 274.9638 360.4804 286.7115
+  353.0045 298.4591 308.1498 279.7705 301.2087 279.2356
+  294.2668 278.7017 311.3537 314.4787 313.4897 323.0224
+  smooth off
+  307.6158 334.7701 316.1597 328.3623 283.3811 339.8508
+  smooth off
+  253.092 336.5982 191.2329 355.6203 199.0724 364.7722
+  206.678 373.6513 195.989 380.4371 176.1795 384.9529
+  156.3691 389.4688 147.8995 393.7829 140.0147 394.7492
+  smooth off
+endline
+
+line wall
+  124.7612 371.2193
+  136.725 371.1417 149.8936 370.1036 154.7127 366.2615
+  164.3518 358.5771 155.4833 303.1657 178.8114 310.3713
+  182.2284 311.4273 179.1196 293.6074 179.9873 290.0148
+  180.8576 286.4222 180.4043 279.046 216.5066 257.7893
+  218.0813 256.8623 242.8346 256.0207 251.5599 249.7091
+  255.9325 246.5454 296.8778 251.7848 303.1489 250.332
+  309.4208 248.8794 335.2004 247.6717 340.0934 247.0848
+  344.9864 246.4973 345.3653 247.0666 349.6001 247.5626
+  smooth off
+  362.9264 249.1976
+  364.9355 241.0105 366.8439 232.5878 373.0723 234.2461
+  smooth off
+  427.4773 230.4928
+  427.4773 230.4928 424.0929 140.6217 451.0565 142.7198
+  469.6765 144.1687 486.5087 156.992 484.1406 155.2164
+  smooth off
+  484.1406 155.2164 516.1804 133.8569 538.6073 132.255
+  smooth off
+endline
+
+point 133.95 385.79 station -name 14
+
+point 153.77 378.54 station -name 13
+
+point 173.11 374.45 station -name 12
+
+point 173.11 316.34 station -name 11
+
+point 199.15 339.72 station -name 10
+
+point 239.41 328.23 station -name 9
+
+point 268.85 301.69 station -name 8
+
+point 268.85 252.4 station -name 7
+
+point 314.96 272.95 station -name 6
+
+point 366.9 259.02 station -name 5
+
+point 409.45 246.02 station -name 4
+
+point 436.62 238.23 station -name 3
+
+point 484.43 158.62 station -name 1
+
+point 542.05 134.21 station -name 2
+
 endscrap
+
+
