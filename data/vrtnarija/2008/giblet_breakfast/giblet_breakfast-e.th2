@@ -1,17 +1,21 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {52.698227 1 1.0} {651.556400 {}} "/Users/AchilleTalon/Desktop/Screen%20Shot%202021-01-17%20at%2023.07.56.png" 0 {}
 
-##XTHERION## xth_me_image_insert {52.698227 1 1.0} {651.556400 1} "/Users/AchilleTalon/Desktop/Screen%20Shot%202021-01-17%20at%2023.07.56.png" 0 {}
-
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 endscrap
 
 
-scrap giblet_breakfast-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap giblet_breakfast-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 168.0588 305.5614 u:label_MY -attr lvl 1 -attr text "Giblet Breakfast" -align l
+line wall -subtype invisible
+  354.4513 403.6806
+  346.303 446.1197
+endline
+
+point 168.0588 305.5614 u:label_MY -align l -attr lvl 1 -attr text "Giblet Breakfast"
 line wall 
   346.303 446.1197
   344.9449 446.1197 342.2288 447.1382 340.8708 447.4778
@@ -29,7 +33,6 @@ line wall
   292.9995 433.5577 294.018 429.4836 295.3761 428.465
   296.7341 427.4465 313.7098 427.786 315.7468 427.786
   317.7839 427.786 327.2903 433.5577 328.9878 426.428
-  330.6854 419.2982 330.6854 419.2982 330.6854 419.2982
   330.6854 419.2982
 endline
 
