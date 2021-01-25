@@ -137,7 +137,7 @@ line pit -close on -outline in
   606.6346 492.9706 600.362 498.7988 596.5 499.5
 endline
 
-line label -text "Electric Dreams"
+line u:label_MY -attr lvl 1 -attr text "Electric Dreams"
   689.75 672.75
   689.75 672.75 725.25 579.5 728.25 496.25
 endline

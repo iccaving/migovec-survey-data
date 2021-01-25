@@ -10,7 +10,7 @@ encoding  utf-8
 
 scrap sump_404_lead_not_found-sumpp -projection plan -scale [0 0 39 0 0 0 1 0 m]
 
-line label -text "<lang:en>Sump 404 Lead not Found<lang:fr>Sifon 404" -scale l
+line u:label_MY -attr lvl 1 -attr text "<lang:en>Sump 404 Lead not Found<lang:fr>Sifon 404" -scale l
   338.0 -275.0
   338.0 -275.0 479.0 306.0 507.0 569.0
   smooth off

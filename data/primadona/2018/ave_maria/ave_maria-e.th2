@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap ave_maria-e1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
 
-point 1007.8129 197.2303 label -text "Ave Maria" -align r -scale xl
+point 1007.8129 197.2303 u:label_MY -attr lvl 1 -attr text "Ave Maria" -align r -scale xl
 line wall 
   624.3586 -224.1081
   624.3586 -224.1081 625.1647 -214.0313 634.8385 -215.6435
