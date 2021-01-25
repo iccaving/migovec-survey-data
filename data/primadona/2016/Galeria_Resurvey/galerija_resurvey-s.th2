@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap galerija_resurvey-s1 -projection extended -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-line label -text "Galerija Resurvey"
+line u:label_MY -attr lvl 1 -attr text "Galerija Resurvey"
   169.0 536.0
   169.0 536.0 477.0 513.0 618.0 468.0
 endline

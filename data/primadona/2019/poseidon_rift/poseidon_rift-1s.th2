@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap poseidon_rift-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
 
-point -6.2879 2842.3226 label -text "Poseidon<br>Rift" -align l -scale xl
+point -6.2879 2842.3226 u:label_MY -attr lvl 1 -attr text "Poseidon<br>Rift" -align l -scale xl
 line wall -subtype blocks
   1307.0119 2023.2594
   1285.884 2068.0946

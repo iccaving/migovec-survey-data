@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap smer1-e1 -scale [327.0 -736.0 541.0 -735.0 0 0 30 0 m] -projection extended
 
-point 774.8917 1000.1397 label -text Smer1 -align t -scale l
+point 774.8917 1000.1397 u:label_MY -attr lvl 1 -attr text Smer1 -align t -scale l
 line wall 
   1529.8166 874.4326
   1529.8166 874.4326 1509.2624 869.7345 1506.9134 873.8453

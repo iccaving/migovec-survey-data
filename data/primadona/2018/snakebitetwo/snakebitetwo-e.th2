@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap snakebitetwo-e1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
 
-point 1215.5774 1781.8485 label -text Snakebite -align tr -scale xl
+point 1215.5774 1781.8485 u:label_MY -attr lvl 1 -attr text Snakebite -align tr -scale xl
 line wall -subtype blocks
   1754.6239 1600.8051
   1754.6239 1600.8051 1989.4359 1593.3183 2001.0064 1593.3183

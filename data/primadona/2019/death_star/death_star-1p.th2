@@ -593,8 +593,8 @@ area water
   1p-a16
 endarea
 
-point 6640.0 1550.0 label -text "Death Star" -align tr -scale xl
-line label -text "Death Star" -scale xl
+point 6640.0 1550.0 u:label_MY -attr lvl 1 -attr text "Death Star" -align tr -scale xl
+line u:label_MY -attr lvl 1 -attr text "Death Star" -scale xl
   6430.5 1612.6
   6430.5 1612.6 7054.5 1446.6 8034.5 988.6
 endline

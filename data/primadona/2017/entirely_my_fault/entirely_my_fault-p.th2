@@ -35,7 +35,7 @@ line wall
   smooth off
 endline
 
-line label -text "Entirely my Fault"
+line u:label_MY -attr lvl 1 -attr text "Entirely my Fault"
   418.25 362.25
   418.25 362.25 461.75 412.75 475.75 450.0
   smooth off

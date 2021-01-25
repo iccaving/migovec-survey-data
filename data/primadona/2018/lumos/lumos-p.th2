@@ -34,7 +34,7 @@ line wall
   smooth off
 endline
 
-line label -text "Lumos"
+line u:label_MY -attr lvl 1 -attr text "Lumos"
   503.25 448.25
   503.25 448.25 552.0 471.5 594.5 474.75
   smooth off
