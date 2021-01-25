@@ -648,8 +648,8 @@ line wall -subtype presumed
   3092.0 6165.54 3111.0 5871.0 3088.18 5780.18
 endline
 
-point 1948.0 6124.0 label -text Karstaway -align tl -scale xl
-line label -text Karstaway
+point 1948.0 6124.0 u:label_MY -attr lvl 1 -attr text Karstaway -align tl -scale xl
+line u:label_MY -attr lvl 1 -attr text Karstaway
   144.0 2696.0
   144.0 2696.0 964.0 4864.0 2396.0 6220.0
 endline
@@ -1627,7 +1627,7 @@ line rock-border -close on
   7942.99 1174.06
 endline
 
-line label -text "Crack for Mice"
+line u:label_MY -attr lvl 1 -attr text "Crack for Mice"
   7148.0 1112.0
   7148.0 1112.0 7500.0 476.0 7904.0 144.0
 endline

@@ -36,15 +36,15 @@ endline
 
 point 419.7174 485.8213 dig -scale xl
 point 283.4825 576.6812 entrance -align l -scale xl -orientation 90.0
-point 248.7948 580.6166 label -text PRIMADONA -align l -scale s
-point 577.4813 387.731 label -text "<lang:end>Bear Pitch<lang:fr>M+" -align r -scale m
+point 248.7948 580.6166 u:label_MY -attr lvl 1 -attr text PRIMADONA -align l -scale s
+point 577.4813 387.731 u:label_MY -attr lvl 1 -attr text "<lang:end>Bear Pitch<lang:fr>M+" -align r -scale m
 line wall -subtype invisible
   329.0563 565.9603
   305.0 557.75
 endline
 
-point 538.5 213.75 label -text "Spiral Climb" -align t -scale s
-point 689.5 119.25 label -text "Lost and Found" -align bl -scale s
+point 538.5 213.75 u:label_MY -attr lvl 1 -attr text "Spiral Climb" -align t -scale s
+point 689.5 119.25 u:label_MY -attr lvl 1 -attr text "Lost and Found" -align bl -scale s
 point 309.0 560.75 station -name 35
 point 319.25 561.5 station -name 34
 point 384.25 500.75 station -name 33
@@ -157,17 +157,17 @@ line wall -id p_e1_l4
   527.094 417.7935 526.0271 420.8443 526.0271 420.8443
 endline
 
-line label -text "Bear pitch" -scale s
+line u:label_MY -attr lvl 1 -attr text "Bear pitch" -scale s
   470.0 362.75
   470.0 362.75 515.0 325.75 555.0 312.75
 endline
 
-line label -text "Entrance chamber" -scale s
+line u:label_MY -attr lvl 1 -attr text "Entrance chamber" -scale s
   280.0 495.75
   280.0 495.75 345.0 473.75 384.0 460.75
 endline
 
-line label -text "Entrance series" -scale s
+line u:label_MY -attr lvl 1 -attr text "Entrance series" -scale s
   493.0 529.75
   493.0 529.75 666.0 397.75 785.0 281.75
 endline
@@ -667,7 +667,7 @@ point 741.25 217.5 station -name 4
 point 750.0 165.25 station -name 3
 point 778.5 165.5 station -name 2
 point 793.5 168.5 station -name 1
-line label -text "Lost and Found Junction" -scale s
+line u:label_MY -attr lvl 1 -attr text "Lost and Found Junction" -scale s
   704.0 139.5
   704.0 139.5 741.25 134.0 792.5 140.5
 endline

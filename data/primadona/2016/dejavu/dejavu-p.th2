@@ -23,8 +23,8 @@ endline
 
 point 558.5 753.0 water-flow -align b -orientation 204.8
 point 560.5 792.0 continuation -align t -scale l
-point 330.0 800.0 label -text "Déjà Vu" -align tr -scale l
-line label -text "Déjà Vu" -scale l
+point 330.0 800.0 u:label_MY -attr lvl 1 -attr text "Déjà Vu" -align tr -scale l
+line u:label_MY -attr lvl 1 -attr text "Déjà Vu" -scale l
   308.0 773.5
   308.0 773.5 396.99 854.25 515.5 800.5
 endline

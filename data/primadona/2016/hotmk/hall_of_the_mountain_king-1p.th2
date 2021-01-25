@@ -84,7 +84,7 @@ line contour
   smooth off
 endline
 
-line label -text "Hall of the Mountain King"
+line u:label_MY -attr lvl 1 -attr text "Hall of the Mountain King"
   -3080.0 -5220.0
   -3080.0 -5220.0 -1908.0 -5064.0 -1128.0 -4512.0
   smooth off

@@ -58,7 +58,7 @@ line wall
   smooth off
 endline
 
-line label -text "Colony"
+line u:label_MY -attr lvl 1 -attr text "Colony"
   484.0 -2522.0
   484.0 -2522.0 856.0 -3308.0 1432.0 -3800.0
   smooth off
@@ -478,7 +478,7 @@ line rock-border -close on
   611.02 43.95
 endline
 
-line label -text "The Folly"
+line u:label_MY -attr lvl 1 -attr text "The Folly"
   822.0 -58.0
   822.0 -58.0 886.0 214.0 898.0 386.0
   smooth off
@@ -710,7 +710,7 @@ line rock-border -close on
   1513.87 -3109.29
 endline
 
-point 1313.68 -1604.23 label -text "Colony" -align bl -scale s
+point 1313.68 -1604.23 u:label_MY -attr lvl 1 -attr text "Colony" -align bl -scale s
 
 point 500.00 -600.00 station -name "10"
 

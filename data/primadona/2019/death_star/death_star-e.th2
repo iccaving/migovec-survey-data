@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap death_star-e1 -scale [0 0 39 0 0 0 1 0 m] -projection extended
 
-point 3275.7612 1890.3754 label -text "Death Star" -align tr
+point 3275.7612 1890.3754 u:label_MY -attr lvl 1 -attr text "Death Star" -align tr
 line wall 
   3371.9326 1636.41
   3372.7326 1647.73 3372.3126 1652.25 3372.4926 1656.76

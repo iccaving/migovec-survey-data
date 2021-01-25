@@ -6,7 +6,7 @@ encoding  utf-8
 scrap ttt_resurvey-e1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
 
 point 836.2542 289.0602 low-end -align br -scale xs
-point 639.1398 -139.9576 label -text "Ajdovščina" -align r -scale xl
+point 639.1398 -139.9576 u:label_MY -attr lvl 1 -attr text "Ajdovščina" -align r -scale xl
 line rock-border -close on
   98.965 -1085.316
   18.1436 -1088.6148

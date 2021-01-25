@@ -105,7 +105,7 @@ point 184.0 654.0 station -name 16
 point 184.0 654.0 station -name 15
 point 235.0 623.0 station -name 14
 point 345.0 462.0 station -name 11
-line label -text "Donji Milanovac"
+line u:label_MY -attr lvl 1 -attr text "Donji Milanovac"
   92.5 529.5
   92.5 529.5 224.0 382.5 404.5 305.0
 endline
