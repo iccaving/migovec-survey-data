@@ -56,11 +56,11 @@ endlayout
 select m-all-p@system_migovec
 
 language sl
-#export map -projection plan -o ../../outputs/system_migovec_plan_SLO.pdf -layout plan
-#export map -projection plan -o ../../outputs/system_migovec_plan_SLO.svg -layout plan
+export map -projection plan -o ../../outputs/system_migovec_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../outputs/system_migovec_plan_SLO.svg -layout plan
 language en
-#export map -projection plan -o ../../outputs/system_migovec_plan_ENG.pdf -layout plan
-#export map -projection plan -o ../../outputs/system_migovec_plan_ENG.svg -layout plan
+export map -projection plan -o ../../outputs/system_migovec_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/system_migovec_plan_ENG.svg -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view, using the LAYOUT overview2
@@ -103,15 +103,15 @@ select m-all-e@system_migovec
 
 language sl
 export map -projection extended -o ../../outputs/system_migovec_EE_SLO.pdf -layout ee
-#export map -projection extended -o ../../outputs/system_migovec_EE_SLO.svg -layout ee 
+export map -projection extended -o ../../outputs/system_migovec_EE_SLO.svg -layout ee 
 language en
-#export map -projection extended -o ../../outputs/system_migovec_EE_ENG.pdf -layout ee
-#export map -projection extended -o ../../outputs/system_migovec_EE_ENG.svg -layout ee 
+export map -projection extended -o ../../outputs/system_migovec_EE_ENG.pdf -layout ee
+export map -projection extended -o ../../outputs/system_migovec_EE_ENG.svg -layout ee 
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-#export model -o ../../outputs/system_migovec.3d
+export model -o ../../outputs/system_migovec.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-#export model -o ../../outputs/system_migovec.lox
+export model -o ../../outputs/system_migovec.lox
