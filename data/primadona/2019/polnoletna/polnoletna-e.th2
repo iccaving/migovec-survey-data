@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap polnoletna-1e -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 
-point 210.4724 468.5093 label -text Polnoletna -align l -scale m
+point 210.4724 468.5093 u:label_MY -attr lvl 1 -attr text Polnoletna -align l -scale m
 line wall -subtype blocks
   428.0795 134.3694
   428.0795 134.3694 530.9375 124.8566 558.8816 112.3709

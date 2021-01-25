@@ -1611,7 +1611,7 @@ line wall -subtype presumed
   71.56 -1917.43
 endline
 
-line label -text "The Aqueduct" -scale xl
+line u:label_MY -attr lvl 1 -attr text "The Aqueduct" -scale xl
   12.0 48.0
   12.0 48.0 556.0 4796.0 1756.0 8016.0
   smooth off
@@ -1775,7 +1775,7 @@ line wall -reverse on
   smooth off
 endline
 
-point -308.0 -1440.0 label -text "The Aqueduct" -align l
+point -308.0 -1440.0 u:label_MY -attr lvl 1 -attr text "The Aqueduct" -align l
 
 line rock-border -close on
   330.73 -1409.54

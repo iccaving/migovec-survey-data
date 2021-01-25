@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap come_up_smiling_2-s1 -scale [0 0 90 0 0 0 500 0 inch] -projection extended
 
-point 285.1386 250.9688 label -text "Come Up<br>Smiling" -align tl -scale s
+point 285.1386 250.9688 u:label_MY -attr lvl 1 -attr text "Come Up<br>Smiling" -align tl -scale s
 line wall 
   274.1942 220.3913
   274.5284 224.9028
