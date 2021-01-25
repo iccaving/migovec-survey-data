@@ -22,7 +22,7 @@ line border -close on -id water1
   648.4342 636.1781
 endline
 
-point 216.9769 754.426 label -text Terminus -align l -scale xl
+point 216.9769 754.426 u:label_MY -attr lvl 1 -attr text Terminus -align l -scale xl
 line wall 
   1274.911 934.9989
   1274.911 934.9989 1229.9746 914.4566 1227.7278 913.8146

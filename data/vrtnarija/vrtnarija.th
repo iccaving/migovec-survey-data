@@ -286,7 +286,7 @@ survey vrtnarija -title "Vrtnarija"
 	join cheesecake-1e@cheesecake kill_em_all-1e@kill_em_all
 	join kill_em_all-1e@kill_em_all ride_the_lightning-1e@ride_the_lightning
 	join ride_the_lightning-1e@ride_the_lightning worm-1e@worm
-	
+
 	###__________2009____________###
 	input ./2009/belowzimmer/belowzimmer.th
 	input ./2009/fools_road/fools_road.th
@@ -325,6 +325,14 @@ survey vrtnarija -title "Vrtnarija"
 	join republica-1p@republica mad_cow-1p@mad_cow
 	# join republica-1p@republica perfidia-1p@perfidia #...quite awkward...
 	# join republica-1p@republica insomnia-1p@insomnia #...quite awkward...
+
+	join dark_tranquillity-1e@dark_tranquillity mirage_canyon-1e@mirage_canyon
+	join wet_hammer-1e@wet_hammer mirage_canyon-1e@mirage_canyon
+	join walk_the_line-1e@walk_the_line wet_hammer-1e@wet_hammer
+	join walk_the_line_b-1e@walk_the_line_b walk_the_line-1e@walk_the_line
+	join happy_monday-1e@happy_monday walk_the_line_b-1e@walk_the_line_b
+	join free_amalgamation-1e@free_amalgamation happy_monday-1e@happy_monday
+
 	
 	###__________2010____________###
 	input ./2010/wonderland/wonderland.th
@@ -404,6 +412,8 @@ survey vrtnarija -title "Vrtnarija"
 	join palace2-1e@palace2 consort-1e@consort
 	join the_queen_bed_chamber-1e@the_queen_bed_chamber minataur-1e@minataur
 	join republica-1e@republica insomnia-1e@insomnia
+	join roaring-1e@roaring happy_monday-1e@happy_monday
+
 	
 	###__________2011____________###
 	input ./2011/redbaron/redbaron.th

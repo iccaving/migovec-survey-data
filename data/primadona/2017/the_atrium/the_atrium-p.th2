@@ -85,7 +85,7 @@ line pit -close on -outline in -clip off
   560.5947 584.4808 566.44 580.195 570.0 583.25
 endline
 
-line label -text "The Atrium"
+line u:label_MY -attr lvl 1 -attr text "The Atrium"
   511.25 605.75
   511.25 605.75 558.75 629.5 589.75 630.75
 endline

@@ -121,6 +121,14 @@ map m-kangaroo_branch-e -projection extended
 	m-all-e@keti
 	m-all-e@worm
 	m-all-e@ride_the_lightning
+	m-all-e@dark_tranquillity
+	m-all-e@mirage_canyon
+	m-all-e@wet_hammer
+	m-all-e@walk_the_line
+	m-all-e@walk_the_line_b
+	m-all-e@happy_monday
+	m-all-e@free_amalgamation
+	m-all-e@roaring
 endmap
 
 map m-watership-e -projection extended
@@ -166,10 +174,13 @@ centreline
 	
 	# Captain K
 	extend left 13@bonus
+
 	extend left 24@kangaroo01 23@kangaroo01
 	extend left 23@kangaroo01 22@kangaroo01
 	extend left 22@kangaroo01
-	extend right 17@kangaroo01
+	extend vertical 17@kangaroo01 16@kangaroo01
+	extend vertical 16@kangaroo01 15@kangaroo01
+	extend right 15@kangaroo01
 	extend right 27@mudslump
 	extend left 8@dangermouse
 	extend right 5@greenback INLET@greenback
@@ -181,11 +192,10 @@ centreline
 	extend right 8@roaring
 	
 	extend right 6@mirage_canyon 5@mirage_canyon
-	extend right 5@mirage_canyon
+	extend vertical 5@mirage_canyon 4@mirage_canyon
 	extend left 4@mirage_canyon 3@mirage_canyon
 	extend left 3@mirage_canyon
 	
-	extend left 1@intravenus_de_milo 2@intravenus_de_milo
 	extend left 14@mudslump 13@mudslump
 	extend left 13@mudslump
 	extend right 7@mudslump
