@@ -2,44 +2,47 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -48.39 -24.92
-  -4.07 -24.13
+
+scrap jericho2-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+point -30.641 51.1815 u:label_MY -attr text Jericho2 -attr lvl 3 -attr align tr
+line wall -clip off -close on -outline in
+  -63.3789 14.8845
+  -58.863 14.1949 -55.0695 19.3491 -34.2221 17.4623
+  -17.3535 15.9356 19.0405 13.2344 24.2472 17.0451
+  32.8898 17.8853 54.7382 21.7265 58.9394 20.2861
+  63.1407 18.8456 68.7823 19.2057 67.2219 15.6047
+  65.6614 12.0036 63.9809 9.4828 60.98 7.9224
+  57.9791 6.3619 6.842 1.8005 4.6814 3.1209
+  2.5208 4.4413 -55.2165 -0.2401 -55.9367 2.8808
+  -60.9882 5.09 -64.8056 14.5841 -63.3789 14.8845
 endline
-line survey 
-  -4.07 -24.13
-  21.71 -4.84
+
+line wall 
+  -62.6308 -31.6603
+  -62.6308 -31.6603 -2.1327 -30.9402 1.2283 -29.4997
+  1.2283 -29.4997 0.716 -24.9662 6.6543 -20.3196
+  11.5797 -16.4655 9.3285 -12.8839 15.3507 -12.6782
+  32.0622 -12.1074 52.27 -11.6228 57.7779 -11.8024
+  63.4765 -10.5415 68.7823 -27.6858 68.7823 -27.6858
 endline
-line survey 
-  77.33 0.04
-  21.71 -4.84
+
+line wall 
+  65.0594 50.295
+  50.5351 51.1353 13.5641 42.9728 8.5225 43.6931
+  3.481 44.4133 -32.1696 43.453 -38.6515 42.4927
+  -45.1335 41.5324 -84.2652 43.0929 -87.8663 40.4521
+  -91.4673 37.8113 -92.5477 20.046 -97.3491 19.5658
+  -102.1505 19.0857 -114.2741 9.963 -114.2741 9.963
 endline
-line survey 
-  21.71 -4.84
-  11.43 18.31
-endline
-line survey 
-  -15.16 24.92
-  -60.37 22.56
-endline
-line survey 
-  -15.16 24.92
-  11.43 18.31
-endline
-line survey 
-  -77.33 24.53
-  11.43 18.31
-endline
+
+point 80.28 24.53 station -name 1
+point -8.48 18.31 station -name 2
+point -35.07 24.92 station -name 3
+point -80.28 22.56 station -name 4
+point 1.8 -4.84 station -name 5
+point 57.42 0.04 station -name 6
+point -23.98 -24.13 station -name 7
+point -68.31 -24.92 station -name 8
 endscrap
 
-scrap jericho2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -4.07 -24.13 station -name 7
-point -48.39 -24.92 station -name 8
-point 21.71 -4.84 station -name 5
-point 77.33 0.04 station -name 6
-point 11.43 18.31 station -name 2
-point -60.37 22.56 station -name 4
-point -15.16 24.92 station -name 3
-point -77.33 24.53 station -name 1
-endscrap
