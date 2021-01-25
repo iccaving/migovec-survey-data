@@ -200,7 +200,7 @@ line contour
   smooth off
 endline
 
-line label -text "Blue Danube"
+line u:label_MY -attr lvl 1 -attr text "Blue Danube"
   -96.0 -492.0
   -96.0 -880.0 296.0 -1100.0 296.0 -1100.0
   smooth off

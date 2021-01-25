@@ -424,8 +424,8 @@ line wall:invisible
   5070.4021 2536.7307
 endline
 
-point 3122.8515 3486.1919 label -text "Salome Viados" -align tr -scale xl
-point 4690.3423 2365.0415 label -text Smer0 -align bl -scale xl
+point 3122.8515 3486.1919 u:label_MY -attr lvl 1 -attr text "Salome Viados" -align tr -scale xl
+point 4690.3423 2365.0415 u:label_MY -attr lvl 1 -attr text Smer0 -align bl -scale xl
 line wall 
   1570.0 4176.0
   1570.0 4176.0 1572.0 4150.0 1582.0 4114.0

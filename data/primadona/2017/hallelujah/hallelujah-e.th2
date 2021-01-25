@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap hallelujah-1e -scale [327.0 -735.0 527.0 -734.0 0.0 0.0 14 0.0 m] -projection extended
 
-point 225.4227 648.4068 label -text Hallelujah -align t -scale xl
+point 225.4227 648.4068 u:label_MY -attr lvl 1 -attr text Hallelujah -align t -scale xl
 point 1272.2773 234.9651 water-flow -orientation 102.54524
 point 139.254 462.9206 water-flow -orientation 102.54524
 point 939.6194 318.4541 water-flow -orientation 102.54524

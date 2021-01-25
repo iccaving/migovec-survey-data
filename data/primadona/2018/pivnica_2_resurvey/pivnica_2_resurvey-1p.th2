@@ -538,7 +538,7 @@ line rock-border -close on
   smooth off
 endline
 
-line label -text "Spodnji"
+line u:label_MY -attr lvl 1 -attr text "Spodnji"
   988.0 -2924.0
   988.0 -2924.0 1456.0 -1108.0 1384.0 104.0
 endline
@@ -758,7 +758,7 @@ point 25.97 -2252.56 station -name "7"
 point 17.48 -2350.70 station -name "8"
 
 
-point 377 -2350 label -text "Spodnji" -align r -scale xl
+point 377 -2350 u:label_MY -attr lvl 1 -attr text "Spodnji" -align r -scale xl
 
 endscrap
 

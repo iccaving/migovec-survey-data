@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap fenestrator-1p -scale [326.0 -736.0 528.0 -734.0 0.0 0.0 14 0.0 m]
 
-point 559.5 722.5 label -text Fenestrator -align t -scale s
+point 559.5 722.5 u:label_MY -attr lvl 1 -attr text Fenestrator -align t -scale s
 point 349.5 430.5 water 
 line contour 
   341.0 432.5
