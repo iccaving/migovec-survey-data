@@ -70,7 +70,7 @@ endscrap
 
 scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 63.1494 -26.482 u:label_MY -attr lvl 2 -attr text "Rock&Roll" -align r -scale l
+point 63.1494 -26.482 u:label_MY -attr lvl 2 -attr text "Rock\&Roll" -align r -scale l
 point 57.5878 -62.8841 water-flow -orientation 255.81295
 line wall 
   -13.9242 -66.7399
