@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap street-wise_hercules-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
 
-point 1783.5566 3869.7581 label -text "Street-wise Hercules" -align br -scale m
+point 1783.5566 3869.7581 u:label_MY -attr lvl 1 -attr text "Street-wise Hercules" -align br -scale m
 line rock-border -close on -clip off
   2143.8282 4632.6492
   2122.885 4629.9837

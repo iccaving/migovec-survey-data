@@ -169,7 +169,7 @@ endscrap
 
 scrap stranglehold-p2 -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 115.29]
 
-line label -text "Stranglehold"
+line u:label_MY -attr lvl 1 -attr text "Stranglehold"
   393.0 332.0
   393.0 332.0 557.5 285.5 691.0 349.5
 endline

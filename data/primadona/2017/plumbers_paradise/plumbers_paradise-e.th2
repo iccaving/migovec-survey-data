@@ -25,7 +25,7 @@ line wall -subtype invisible
   214.1729 194.0435
 endline
 
-line label -text "Plumbers' Paradise" -scale xl
+line u:label_MY -attr lvl 1 -attr text "Plumbers' Paradise" -scale xl
   216.7487 283.5287
   216.7487 283.5287 309.8591 235.0655 434.6422 230.4863
 endline

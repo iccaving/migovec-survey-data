@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap risa2p_1 -scale [326.0 -736.0 520.0 -736.0 0.0 0.0 15 0.0 m]
 
-line label -text "Risanke"
+line u:label_MY -attr lvl 1 -attr text "Risanke"
   207.0 -63.0
   207.0 -63.0 284.0 -177.0 335.0 -323.0
   smooth off

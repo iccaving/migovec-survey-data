@@ -40,7 +40,7 @@ line wall -id s1_l1
   1428.55 1677.79 1422.6 1665.14 1402.85 1630.67
 endline
 
-line label -text Purgatory
+line u:label_MY -attr lvl 1 -attr text Purgatory
   136.0 476.0
   136.0 476.0 604.0 1516.0 1056.0 2216.0
 endline

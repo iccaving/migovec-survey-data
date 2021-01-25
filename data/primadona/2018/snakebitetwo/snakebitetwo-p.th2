@@ -63,7 +63,7 @@ point -256.0 1788.0 station -name 10
 
 point -190.0 2108.0 station -name 9
 
-line label -text "Snakebite 2" -scale l
+line u:label_MY -attr lvl 1 -attr text "Snakebite 2" -scale l
   198.0 2040.0
   198.0 2040.0 604.0 1528.0 668.0 710.0
   smooth off

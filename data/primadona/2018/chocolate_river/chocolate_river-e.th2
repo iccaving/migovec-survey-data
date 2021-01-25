@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap chocolate_river-1e -scale [327.0 -732.0 500.0 -732.0 0 0 15 0 m] -projection extended
 
-point 861.825 348.6361 label -text "Chocolate River" -align r -scale xl
+point 861.825 348.6361 u:label_MY -attr lvl 1 -attr text "Chocolate River" -align r -scale xl
 point 262.6198 338.6631 low-end -align l -scale xs
 line wall 
   843.5413 602.945

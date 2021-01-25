@@ -26,7 +26,7 @@ line wall -subtype invisible
 endline
 
 point 250.8665 178.0182 water-flow -orientation 165.0
-line label -text Fenestrator -scale xl
+line u:label_MY -attr lvl 1 -attr text Fenestrator -scale xl
   299.6166 226.9127
   299.6166 226.9127 340.9431 233.0352 391.0705 226.9127
 endline

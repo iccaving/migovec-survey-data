@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap mud_moses-e1 -scale [0.0 0.0 943.3314616019818 1024 0.0 0.0 111.56 121.1] -projection extended
 
-point 161.5975 492.1377 label -text "Mud Moses" -align l -scale l
+point 161.5975 492.1377 u:label_MY -attr lvl 1 -attr text "Mud Moses" -align l -scale l
 point 164.6235 565.0843 continuation -align tl
 line wall -subtype clay
   543.7405 248.9844
