@@ -139,7 +139,7 @@ endscrap
 
 scrap stranglehold-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
-point 4361.2788 1341.7915 label -text Stranglehold -align br -scale l
+point 4361.2788 1341.7915 u:label_MY -attr lvl 1 -attr text Stranglehold -align br -scale l
 line wall -subtype blocks
   2001.0 156.0
   2001.0 156.0 2010.0 192.0 2020.0 209.0
