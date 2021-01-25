@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap damp_squib-p1 -scale [0.0 0.0 874.7234842550524 1024.0 0.0 0.0 109.05 127.66]
 
-line label -text "Damp Squib"
+line u:label_MY -attr lvl 1 -attr text "Damp Squib"
   569.25 639.75
   569.25 639.75 584.25 676.75 602.5 715.75
 endline

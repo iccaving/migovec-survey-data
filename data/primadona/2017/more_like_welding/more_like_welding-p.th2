@@ -342,7 +342,7 @@ line floor-step
   smooth off
 endline
 
-line label -text "More like Welding"
+line u:label_MY -attr lvl 1 -attr text "More like Welding"
   334.0 -419.5
   334.0 -419.5 466.0 -479.0 564.0 -545.0
   smooth off

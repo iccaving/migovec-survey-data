@@ -158,7 +158,7 @@ line pit -scale l -clip off
   2257.5 2310.75 2286.2961 2311.4257 2297.2961 2328.1757
 endline
 
-line label -text "Entrance Series" -scale xl
+line u:label_MY -attr lvl 1 -attr text "Entrance Series" -scale xl
   1840.0 2200.0
   1728.67 1470.19 2212.0 964.0 2212.0 964.0
 endline
@@ -593,7 +593,7 @@ line wall -subtype blocks
   2248.5 1853.5 2260.5 1860.0 2262.5 1860.5
 endline
 
-point 1942.0 2374.0 label -text PRIMADONA -align l -scale l
+point 1942.0 2374.0 u:label_MY -attr lvl 1 -attr text PRIMADONA -align l -scale l
 point 2188.0001 2327.4999 entrance -scale xl -orientation 120.6
 line wall 
   2201.5 2262.5
@@ -1189,8 +1189,8 @@ scrap prima1-3p -scale [0 0 90 0 0 0 250 0 inch]
 
 point 2605.4999 1154.0 water-flow -orientation 203.9
 point 2435.5 1268.0 archeo-material -scale s
-point 2362.0 1294.0 label -text "M +" -align l -scale l
-line label -text "Bear Pitch" -scale l
+point 2362.0 1294.0 u:label_MY -attr lvl 1 -attr text "M +" -align l -scale l
+line u:label_MY -attr lvl 1 -attr text "Bear Pitch" -scale l
   2380.5 1288.0
   2380.5 1288.0 2411.5 1350.0 2447.0 1388.0
 endline
@@ -1428,7 +1428,7 @@ line wall -subtype invisible
   2671.0 693.0
 endline
 
-line label -text "Spiral Climb" -scale l
+line u:label_MY -attr lvl 1 -attr text "Spiral Climb" -scale l
   2488.25 663.0
   2488.25 663.0 2521.5 742.25 2580.5 772.5
 endline
@@ -2456,7 +2456,7 @@ endline
 
 point 2788.0 223.5 station -name 1
 point 2774.0 513.0 dig -scale xl -clip off
-line label -text "Lost and Found"
+line u:label_MY -attr lvl 1 -attr text "Lost and Found"
   2688.0 252.0
   2688.0 252.0 2712.0 174.0 2783.0 132.0
 endline

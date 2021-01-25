@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap forget_me_not-s1 -projection extended -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-line label -text "Forget me Not"
+line u:label_MY -attr lvl 1 -attr text "Forget me Not"
   250.0 586.0
   250.0 586.0 391.0 557.0 651.0 475.0
 endline

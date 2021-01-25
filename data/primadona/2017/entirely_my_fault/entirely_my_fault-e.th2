@@ -10,7 +10,7 @@ line wall:invisible
   715.0924 490.6533
 endline
 
-point 1021.1477 138.6743 label -text "Entirely<br>My Fault" -align r -scale s
+point 1021.1477 138.6743 u:label_MY -attr lvl 1 -attr text "Entirely<br>My Fault" -align r -scale s
 line wall -subtype invisible
   968.2007 -280.9584
   1005.0612 -258.8422
