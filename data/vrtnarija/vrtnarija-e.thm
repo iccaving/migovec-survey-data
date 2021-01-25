@@ -91,6 +91,8 @@ map m-below-friendship-e -projection extended
 endmap
 
 map m-s_extensions-e -projection extended
+	m-all-e@jericho
+	m-all-e@jericho2
 	m-all-e@squidgygoodness
 	m-all-e@jetstream
 	m-all-e@choke-a-bloke
@@ -310,6 +312,7 @@ centreline
 	# Below Stuck In Paradise
 	extend left 21@kneekiller
 	extend right 5@bravenewworld
+	extend right 2@jericho2 1@jericho2
 	extend left 17@meridianway
 	extend right 9@firstdraft 8@firstdraft
 	extend right 7@firstdraft
