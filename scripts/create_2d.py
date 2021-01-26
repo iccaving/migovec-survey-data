@@ -65,25 +65,27 @@ print("Parsing 2D XVI file")
 stations = {}
 lines = []
 with open(join(tmpdir, "xvi.xvi"), "r", encoding="utf-8") as f:
-    xvi_lines = f.readlines()
+    xvi_content = f.read()
+    xvi_stations, xvi_shots = xvi_content.split("XVIshots")
+
     # Extract all the stations
-    for line in xvi_lines:
-        match = re.search("{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s([^@]+)@([^\s}]*)\s*}", line)
+    for line in xvi_stations.split("\n"):
+        if line:
+            print(line)
+        match = re.search("{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s([^@]+)(?:@([^\s}]*))?\s*}", line)
         if match:
             x = match.groups()[0]
             y = match.groups()[1]
             station_number = match.groups()[2]
             namespace = match.groups()[3]
-            namespace_array = namespace.split(".")
-            print(namespace)
+            namespace_array = namespace.split(".") if namespace else []
             station = station_number
             if len(namespace_array) > 1:
                 station = "{}@{}".format(station_number, ".".join(namespace_array[0:-1]))
-
             stations["{}.{}".format(x, y)] = [x, y, station]
 
     # Extract all the lines
-    for line in xvi_lines:
+    for line in xvi_shots.split("\n"):
         match = re.search(
             "^\s*{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*.*}",
             line,
@@ -151,7 +153,7 @@ endscrap"""
             f.write(th2_file_header)
             f.write(
                 th2_file.format(
-                    name=survey_name,
+                    name=survey.name,
                     points="\n".join(th2_points),
                     lines="\n".join(th2_lines),
                     names="\n".join(th2_names),
