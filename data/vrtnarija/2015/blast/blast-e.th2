@@ -3,9 +3,41 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap blast-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap blast-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-point -188.5403 -92.0218 u:label_MY -attr lvl 1 -align br -attr text "Blast!"
+point 104.11 -2.99 station -name 17
+line wall -subtype presumed
+  103.0661 -8.3202
+  103.0661 -8.3202 120.516 -11.6435 127.7182 -12.3637
+  134.9203 -13.084 177.9905 -14.2928 177.9905 -14.2928
+endline
+
+line wall -subtype presumed
+  183.797 -0.211
+  183.797 -0.211 149.4438 0.4604 135.4005 3.9612
+  102.8864 11.0945
+endline
+
+line wall -subtype presumed
+  587.7068 15.6607
+  587.6978 15.6588 542.2689 23.0304 535.8293 28.1153
+  522.1328 29.033
+  503.3152 34.8885
+endline
+
+line wall -subtype presumed
+  498.0809 15.1071
+  498.0809 15.1071 512.5711 6.6343 519.7732 5.9141
+  520.4817 2.8453 584.9066 -0.4443 585.3626 -0.6226
+endline
+
+point 499.11 21.97 station -name 26
+endscrap
+
+
+scrap blast-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+point -188.5403 -92.0218 u:label_MY -align br -attr lvl 1 -attr text "Blast!"
 line wall 
   -1099.5978 -170.3835
   -1061.4206 -162.6066 -1056.943 -164.4919 -1037.6188 -164.0206
