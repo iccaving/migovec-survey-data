@@ -153,7 +153,7 @@ endscrap"""
             f.write(th2_file_header)
             f.write(
                 th2_file.format(
-                    name=survey_name,
+                    name=survey.name,
                     points="\n".join(th2_points),
                     lines="\n".join(th2_lines),
                     names="\n".join(th2_names),
