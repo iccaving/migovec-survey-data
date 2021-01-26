@@ -1,15 +1,15 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 370.000000 450.000000
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 
 
 
 scrap dwarf_pine-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line wall -id dwarfline-top
-  149.7212 305.2974
+  150.5 298.5
   mark top
-  149.7212 305.2974 164.69 204.86 158.0 199.0
+  150.5 298.5 164.69 204.86 158.0 199.0
   151.31 193.15 110.5 171.0 110.5 171.0
   smooth off
 endline
