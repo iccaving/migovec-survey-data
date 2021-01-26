@@ -3,9 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap pleasurepalace-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 136.3607 -124.8373 u:label_MY -align bl -attr lvl 1 -attr text "Pleasure Palace"
+point 136.3607 -124.8373 u:label_MY -attr lvl 1 -attr text "Pleasure Palace" -align bl
 line rock-border -close on
   153.4736 -93.9839
   153.4736 -93.9839 156.3898 -93.359 159.7017 -92.8799
@@ -19,6 +19,8 @@ line rock-border -close on
   149.5576 -99.3996
 endline
 
+
+
 line rock-border -close on
   134.9768 -84.8188
   140.6425 -89.2347
@@ -29,6 +31,7 @@ line rock-border -close on
   128.8112 -99.9828
   131.894 -92.4008
 endline
+
 
 line rock-border -close on
   115.7646 -69.2943
@@ -41,6 +44,8 @@ line rock-border -close on
   113.956 -74.1403
 endline
 
+
+
 line rock-border -close on
   94.9837 -64.1556
   103.7322 -68.155
@@ -52,6 +57,8 @@ line rock-border -close on
   94.817 -67.5717
 endline
 
+
+
 line rock-border -close on
   78.4865 -74.4872
   82.7358 -74.4872 86.7351 -74.0706 89.4847 -73.904
@@ -62,6 +69,8 @@ line rock-border -close on
   77.1667 -81.8716
   77.8266 -78.1794
 endline
+
+
 
 line rock-border -close on
   98.983 -76.3202
@@ -77,6 +86,7 @@ line rock-border -close on
   98.0665 -78.1532 98.983 -76.3202 98.983 -76.3202
 endline
 
+
 line rock-border -close on
   73.3207 -52.8243
   77.9032 -54.2407 79.6113 -53.1159 80.6736 -52.6784
@@ -89,6 +99,8 @@ line rock-border -close on
   71.4207 -56.3561 73.3207 -52.8243 73.3207 -52.8243
 endline
 
+
+
 line rock-border -close on
   53.9564 -40.7764
   60.7125 -44.1334 64.7311 -43.8648 66.7696 -43.7641
@@ -100,6 +112,7 @@ line rock-border -close on
   54.5509 -53.0596 54.4068 -49.8725 54.2582 -46.8017
   54.1095 -43.7309 53.9564 -40.7764 53.9564 -40.7764
 endline
+
 
 line wall 
   -295.2826 96.6501
@@ -137,7 +150,7 @@ line wall
   -180.9689 -0.9998 -200.9655 4.9991 -211.9636 10.6648
   -222.9617 16.3305 -253.6231 35.3273 -254.9562 42.9926
   -256.2893 50.658 -258.6222 87.9849 -259.9553 90.9844
-  -261.2884 93.9839 -260.9548 95.9828 -260.9548 95.9828
+  -261.2884 93.9839 -262.9548 99.9828 -262.9548 99.9828
 endline
 
 point -296.92 112.01 station -name 19

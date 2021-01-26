@@ -2,26 +2,34 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap mirage_canyon-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line wall 
-  542.3821 923.3759
-  536.6204 929.1377 520.2355 947.5632 513.0333 961.4873
-  505.8312 975.4115 492.8673 995.8176 485.4251 999.4187
-  477.9828 1003.0197 450.1345 1013.823 444.3728 1010.9421
-  438.6111 1008.0612 431.4089 991.2562 430.2086 975.8916
-  429.0082 960.527 439.0912 939.8809 451.815 940.1209
-  464.5388 940.361 484.2247 949.2437 487.8258 951.1642
-  491.4269 953.0848 509.6723 950.444 511.8329 944.9224
-  513.9936 939.4007 524.7968 920.9152 525.7571 919.4748
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  -17.24 36.77
+  6.54 6.30
 endline
-
-point 498.1544 967.8 station -name 6
-point 474.3744 998.27 station -name 5
-point 446.6544 1002.21 station -name 4
-point 452.4844 954.81 station -name 3
-point 486.8144 964.02 station -name 2
-point 536.5744 920.79 station -name 1
+line survey 
+  -44.96 40.71
+  -17.24 36.77
+endline
+line survey 
+  -39.13 -6.69
+  -44.96 40.71
+endline
+line survey 
+  -4.80 2.52
+  -39.13 -6.69
+endline
+line survey 
+  44.96 -40.71
+  -4.80 2.52
+endline
 endscrap
 
+scrap mirage_canyon-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 6.54 6.30 station -name 6
+point -17.24 36.77 station -name 5
+point -44.96 40.71 station -name 4
+point -39.13 -6.69 station -name 3
+point -4.80 2.52 station -name 2
+point 44.96 -40.71 station -name 1
+endscrap

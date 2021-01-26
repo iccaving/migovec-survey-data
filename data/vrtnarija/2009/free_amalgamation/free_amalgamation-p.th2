@@ -2,38 +2,54 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap free_amalgamation-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line wall 
-  338.6639 727.9153
-  347.1517 730.2918 377.0771 738.326 381.782 743.7026
-  386.487 749.0792 468.8671 796.4968 474.469 800.0617
-  480.071 803.6266 501.4603 819.4139 505.1949 820.9417
-  508.9296 822.4696 537.7881 825.6949 538.2974 818.9047
-  538.8067 812.1144 534.7325 782.9163 535.4116 777.4841
-  536.0906 772.0519 541.1833 763.2246 547.8038 765.6012
-  554.4243 767.9778 582.6038 804.8149 580.9062 815.17
-  579.2087 825.5252 578.5297 836.7291 573.0975 837.2383
-  567.6653 837.7476 552.0477 840.294 546.2759 839.2754
-  540.5042 838.2569 521.3218 834.1827 516.0593 833.1642
-  510.7969 832.1457 491.2749 830.9574 486.1822 828.2413
-  481.0895 825.5252 458.3422 808.0403 449.5148 803.4568
-  440.6875 798.8734 406.3967 770.3543 399.946 767.808
-  393.4952 765.2616 382.2913 755.5855 375.8406 753.7182
-  369.3898 751.8509 356.3186 746.7582 348.5098 744.5514
-  340.701 742.3445 334.9293 739.1192 334.9293 739.1192
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+line survey 
+  117.76 33.50
+  90.67 -8.07
 endline
-
-point 545.617 772.8092 station -name 10
-point 572.707 814.3792 station -name 9
-point 571.997 827.7692 station -name 8
-point 561.447 816.1192 station -name 7
-point 568.527 826.1192 station -name 6
-point 554.357 828.6392 station -name 5
-point 502.387 827.7692 station -name 4
-point 446.557 790.0492 station -name 3
-point 386.487 751.0792 station -name 2
-point 337.187 733.1192 station -name 1
+line survey 
+  117.05 46.89
+  117.76 33.50
+endline
+line survey 
+  106.50 35.24
+  117.05 46.89
+endline
+line survey 
+  113.58 45.24
+  106.50 35.24
+endline
+line survey 
+  99.41 47.76
+  113.58 45.24
+endline
+line survey 
+  47.44 46.89
+  99.41 47.76
+endline
+line survey 
+  -8.39 9.17
+  47.44 46.89
+endline
+line survey 
+  -68.46 -29.80
+  -8.39 9.17
+endline
+line survey 
+  -117.76 -47.76
+  -68.46 -29.80
+endline
 endscrap
 
+scrap free_amalgamation-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+point 90.67 -8.07 station -name 10
+point 117.76 33.50 station -name 9
+point 117.05 46.89 station -name 8
+point 106.50 35.24 station -name 7
+point 113.58 45.24 station -name 6
+point 99.41 47.76 station -name 5
+point 47.44 46.89 station -name 4
+point -8.39 9.17 station -name 3
+point -68.46 -29.80 station -name 2
+point -117.76 -47.76 station -name 1
+endscrap
