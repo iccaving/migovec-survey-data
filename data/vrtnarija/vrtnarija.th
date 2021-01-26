@@ -87,9 +87,9 @@ survey vrtnarija -title "Vrtnarija"
 	join zimmer-1e@zimmer skynet-1e@skynet
 	join wall@chariot:end wall@pico:0
 	join wall2@chariot:0 wall2@pico2:end
-
+	
 	join fallsrd-1e@fallsrd friendship-1e@friendship
-
+	
 	###__________2003____________###
 	input "./2003/candyMountain/candyMountain.th"
 	input "./2003/highway32/highway32.th"
@@ -131,7 +131,7 @@ survey vrtnarija -title "Vrtnarija"
 	join gold-1e@gold weepeople-1e@weepeople
 	join gold-1e@gold nitro-1e@nitro
 	join fallsrd-1e@fallsrd lowerfallsrd-1e@lowerfallsrd
-
+	
 	
 	###__________2004____________###
 	input "./2004/nitro/nitro.th"
@@ -227,7 +227,7 @@ survey vrtnarija -title "Vrtnarija"
 	
 	join mudslump-1p@mudslump scrotty-1p@scrotty
 	join kill_em_all-1p@kill_em_all mudslump-2p@mudslump
-
+	
 	join kill_em_all-1e@kill_em_all mudslump-3e@mudslump
 	join kill_em_all-1e@kill_em_all dangermouse-1e@dangermouse
 	
@@ -275,18 +275,18 @@ survey vrtnarija -title "Vrtnarija"
 	join primula-1p@primula cheesecake-1p@cheesecake
 	
 	join greenback-1e@greenback giblet_breakfast-1e@giblet_breakfast
-
-
+	
+	
 	join 1e_l1@kill_em_all 1e_l13@haemertight_crawl
 	join 1e_l3@kill_em_all 1e_l13@haemertight_crawl
 	join 1e_l2@kill_em_all:0 1e_l2@haemertight_crawl:end
 	join 1e_l2@kill_em_all:end 1e_l2@haemertight_crawl:0
-
+	
 	join cheesecake-1e@cheesecake keti-1e@keti
 	join cheesecake-1e@cheesecake kill_em_all-1e@kill_em_all
 	join kill_em_all-1e@kill_em_all ride_the_lightning-1e@ride_the_lightning
 	join ride_the_lightning-1e@ride_the_lightning worm-1e@worm
-
+	
 	###__________2009____________###
 	input ./2009/belowzimmer/belowzimmer.th
 	input ./2009/fools_road/fools_road.th
@@ -319,13 +319,16 @@ survey vrtnarija -title "Vrtnarija"
 	equate 7@mad_cow 12@republica # changed from 11@mad_cow....
 	equate 3@fools_road 5@fallsrd
 	
+	join mirage_canyon-1p@mirage_canyon wet_hammer-1p@wet_hammer
 	join belowzimmer-1p@belowzimmer eggsplosive-1p@eggsplosive
 	join belowzimmer-1p@belowzimmer friendship-p1@friendship
-	
 	join republica-1p@republica mad_cow-1p@mad_cow
+	join wet_hammer-1p@wet_hammer walk_the_line-1p@walk_the_line
+	join walk_the_line-1p@walk_the_line walk_the_line_b-1p@walk_the_line_b
+	join walk_the_line_b-1p@walk_the_line_b happy_monday-1p@happy_monday
 	# join republica-1p@republica perfidia-1p@perfidia #...quite awkward...
 	# join republica-1p@republica insomnia-1p@insomnia #...quite awkward...
-
+	
 	join dark_tranquillity-1e@dark_tranquillity mirage_canyon-1e@mirage_canyon
 	join wet_hammer-1e@wet_hammer mirage_canyon-1e@mirage_canyon
 	join walk_the_line-1e@walk_the_line wet_hammer-1e@wet_hammer
@@ -333,7 +336,7 @@ survey vrtnarija -title "Vrtnarija"
 	join happy_monday-1e@happy_monday walk_the_line_b-1e@walk_the_line_b
 	join free_amalgamation-1e@free_amalgamation happy_monday-1e@happy_monday
 	join mad_cow-1e@mad_cow republica-2e@republica
-
+	
 	
 	###__________2010____________###
 	input ./2010/wonderland/wonderland.th
@@ -408,13 +411,13 @@ survey vrtnarija -title "Vrtnarija"
 	join sidewinder-1p@sidewinder blackknight-1p@blackknight
 	join sidewinder-1p@sidewinder crack_in_time-1p@crack_in_time
 	join cheetzim@zimmer cheetzim@wonderland
-
+	
 	join wonderland-1e@wonderland consort-1e@consort
 	join palace2-1e@palace2 consort-1e@consort
 	join the_queen_bed_chamber-1e@the_queen_bed_chamber minataur-1e@minataur
 	join republica-1e@republica insomnia-1e@insomnia
 	join roaring-1e@roaring happy_monday-1e@happy_monday
-
+	
 	
 	###__________2011____________###
 	input ./2011/redbaron/redbaron.th
@@ -501,7 +504,7 @@ survey vrtnarija -title "Vrtnarija"
 	join dream2-1p@dream2 daydreamers-1p@daydreamers
 	join penguinsegg-1p@penguinsegg dream2-1p@dream2
 	join winterjourney-1p@winterjourney penguinsegg-1p@penguinsegg
-
+	
 	join lowerpleasures-1e@lowerpleasures friendship-1e@friendship
 	join 2ndtimelucky-1e@2ndtimelucky lowerpleasures-1e@lowerpleasures
 	join penguinsegg-1e@penguinsegg winterjourney-1e@winterjourney
