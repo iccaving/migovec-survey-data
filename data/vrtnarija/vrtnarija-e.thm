@@ -111,9 +111,9 @@ map m-s_extensions-e -projection extended
 endmap
 
 map m-kangaroo_branch-e -projection extended
-    m-all-e@metal_aven
-    m-all-e@intravenus_de_milo
-    break
+	m-all-e@metal_aven
+	m-all-e@intravenus_de_milo
+	break
 	m-all-e@kangaroo01
 	m-all-e@zubafu
 	m-all-e@bonus
@@ -188,7 +188,7 @@ centreline
 	
 	# Captain K
 	extend left 13@bonus
-
+	
 	extend left 24@kangaroo01 23@kangaroo01
 	extend left 23@kangaroo01 22@kangaroo01
 	extend left 22@kangaroo01
