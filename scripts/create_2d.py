@@ -66,13 +66,20 @@ stations = {}
 lines = []
 with open(join(tmpdir, "xvi.xvi"), "r", encoding="utf-8") as f:
     xvi_lines = f.readlines()
-    # Extract all the stationss
+    # Extract all the stations
     for line in xvi_lines:
-        match = re.search("{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(\S+)\s*}", line)
+        match = re.search("{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s([^@]+)@([^\s}]*)\s*}", line)
         if match:
             x = match.groups()[0]
             y = match.groups()[1]
-            station = match.groups()[2]
+            station_number = match.groups()[2]
+            namespace = match.groups()[3]
+            namespace_array = namespace.split(".")
+            print(namespace)
+            station = station_number
+            if len(namespace_array) > 1:
+                station = "{}@{}".format(station_number, ".".join(namespace_array[0:-1]))
+
             stations["{}.{}".format(x, y)] = [x, y, station]
 
     # Extract all the lines

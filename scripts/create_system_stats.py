@@ -94,12 +94,11 @@ for result in results:
             else:
                 json_data[system][projection]["percent"] = 100
     if not proj_is_drawn["plan"]:
-        need_plan.append(source.name)
+        need_plan.append(".".join(source.id))
     if not proj_is_drawn["extended"]:
-        need_extended.append(source.name)
+        need_extended.append(".".join(source.id))
 
 for system in systems:
-    print(system)
     file_path = loader.get_survey_by_id(system).file_path
     try:
         log = compile_file(survey.file_path, therion_path=args.therion_path)
