@@ -16,8 +16,15 @@ input sicsempertyrannis-e.th2
 
 map m-all-e -projection extended
     sicsempertyrannis-1e
+	sicsempertyrannis-2e
+	sicsempertyrannis-3e
+	sicsempertyrannis-4e
+	sicsempertyrannis-5e
 endmap
-
+join sicsempertyrannis-1e sicsempertyrannis-2e
+join sicsempertyrannis-2e sicsempertyrannis-3e
+join sicsempertyrannis-3e sicsempertyrannis-4e
+join sicsempertyrannis-4e sicsempertyrannis-5e
 	centreline
 		team "Tanguy Racine" insts
 		team "Rhys Tyers" notes
