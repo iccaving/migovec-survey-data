@@ -729,6 +729,8 @@ survey vrtnarija -title "Vrtnarija"
 	
 	join sicsempertyrannis-1p@sicsempertyrannis brezno_slapov-1p@brezno_slapov
 	join jericho-1p@jericho sicsempertyrannis-1p@sicsempertyrannis
+	#Note:Adjust break in jericho first
+	#join jericho-1e@jericho sicsempertyrannis-2e@sicsempertyrannis
 	join jericho2-1p@jericho2 jericho-1p@jericho
 	join jericho2-1e@jericho2 jericho-1e@jericho
 	join squidgygoodness-1p@squidgygoodness jericho2-1p@jericho2
@@ -802,6 +804,7 @@ survey vrtnarija -title "Vrtnarija"
 	join choke-a-bloke-1e@choke-a-bloke meridianway-1e@meridianway
 	join emptyquarter-1p@emptyquarter choke-a-bloke-1p@choke-a-bloke
 	join emptyquarter-1e@emptyquarter choke-a-bloke-1e@choke-a-bloke
+	join pleasurepalace-1e@pleasurepalace sicsempertyrannis-3e@sicsempertyrannis
 	join blast-1p@blast pleasurepalace-1p@pleasurepalace
 	join blast-1e@blast pleasurepalace-1e@pleasurepalace
 	join blast-1p@blast meridianway-1p@meridianway
