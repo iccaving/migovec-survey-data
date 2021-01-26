@@ -1,10 +1,15 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 478.000000 451.000000
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 
 
 
 scrap stupid-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+line wall
+  79.0 320.0
+  79.0 309.0
+endline
 
 point 364.0 302.0 u:label_MY -attr text Stupid -attr lvl 3 -attr align bl
 
@@ -12,7 +17,6 @@ point 335.0 305.0 water-flow -orientation 191.50000030808354
 
 line wall -id stupidpitch
   150.5 236.5
-  mark bottom
   147.69 242.42 222.13 252.4 231.75 250.0
   236.61 248.78 243.45 250.6692 248.1973 249.4827
   267.8909 244.5593 325.94 256.55 334.1574 272.9849
@@ -20,7 +24,6 @@ line wall -id stupidpitch
   smooth off
   342.528 298.3145 347.4996 308.0726 345.7475 319.0234
   smooth off
-  mark top
 endline
 
 point 337.68 319.73 station -name 1

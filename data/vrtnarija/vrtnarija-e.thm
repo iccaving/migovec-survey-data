@@ -61,7 +61,6 @@ map m-friendship-e -projection extended
 	m-all-e@2ndtimelucky
 	m-all-e@cuckoos_nest
 	m-all-e@hydrophobia
-	m-all-e@stupid
 	m-all-e@pushyourluck
 	m-all-e@agartha
 	m-all-e@time_bandits
@@ -132,6 +131,7 @@ map m-kangaroo_branch-e -projection extended
 endmap
 
 map m-watership-e -projection extended
+	m-all-e@mad_cow
 	m-all-e@republica
 	m-all-e@insomnia
 	m-all-e@dream2
@@ -215,6 +215,7 @@ centreline
 	extend left 21@greed
 	extend right 15@mad_cow
 	extend left 13@mad_cow
+	extend left 6@mad_cow
 	extend right 25@soda
 	extend left 35@soda
 	extend left 30@cascade

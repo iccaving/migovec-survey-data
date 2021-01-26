@@ -1,12 +1,8 @@
 
 survey stupid -title "Stupid"
 
-input stupid-e.th2
-
-map m-all-e -projection extended
-    stupid-1e
-endmap
-
+# input stupid-e.th2
+# Extended elevation is drawn in hydrophobia-e.th2, stupid-e.th2 is obsolete
 
 input stupid-p.th2
 
