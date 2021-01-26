@@ -69,6 +69,10 @@ map m-friendship-e -projection extended
 	m-all-e@straightjacket
 	m-all-e@dwarf_pine
 	m-all-e@gravity
+	m-all-e@belowzimmer
+	m-all-e@eggsplosive
+	break
+	m-all-e@korita
 endmap
 
 map m-below-friendship-e -projection extended
@@ -266,6 +270,7 @@ centreline
 	extend right 3@belowzimmer 1@belowzimmer
 	extend left 1@belowzimmer
 	extend right 7@eggsplosive
+	extend left 4@korita
 	extend left 4@apuntoofar1
 	
 	# Snap off bottom of Korita
