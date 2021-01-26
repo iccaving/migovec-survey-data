@@ -9,6 +9,7 @@ map m-all-e -projection extended
 	m-s_extensions-e
 	m-watership-e
 	m-yorkshire_extensions-e
+	m-below_balamory-e
 endmap
 
 map m-entrance-e -projection extended
@@ -154,7 +155,12 @@ map m-yorkshire_extensions-e -projection extended
 	m-all-e@yorkshire
 	m-all-e@curiousandcuriouser
 	m-all-e@curiousandcuriouser2
+endmap
 
+map m-below_balamory-e -projection extended
+	m-all-e@pick_your_poison
+	m-all-e@clapton
+	m-all-e@AJA
 endmap
 
 centreline
