@@ -396,7 +396,9 @@ survey vrtnarija -title "Vrtnarija"
 	
 	# join wonderland-1p@wonderland zimmer-p1@zimmer
 	join surprise-1p@surprise rolling-1p@rolling
-	join kamikaze-1p@kamikaze surprise-1p@surprise
+	join mud@kamikaze:end kam@mudstone:0
+	join surp@kamikaze:0 kam@surprise:end
+	join mud@surprise:0 surp@mudstone:end
 	join consort-1p@consort wonderland-2p@wonderland
 	join rolling-1p@rolling wonderland-2p@wonderland
 	join consort-2p@consort palace2-1p@palace2
