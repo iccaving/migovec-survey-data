@@ -2,46 +2,93 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+
 line survey 
   82.65 79.53
   105.43 77.95
 endline
+
 line survey 
   40.63 27.64
   82.65 79.53
 endline
+
 line survey 
   -18.38 38.03
   40.63 27.64
 endline
+
 line survey 
   -31.33 35.75
   -18.38 38.03
 endline
+
 line survey 
   -78.55 34.09
   -31.33 35.75
 endline
+
 line survey 
   5.72 -7.24
   40.63 27.64
 endline
+
 line survey 
   -22.39 -7.24
   5.72 -7.24
 endline
+
 line survey 
   -50.93 -52.91
   -22.39 -7.24
 endline
+
 line survey 
   -50.93 -52.91
   -105.43 -79.53
 endline
+
 endscrap
 
-scrap clapton-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+scrap clapton-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+
+line wall 
+  -258.7666 90.9684
+  -258.7666 90.9684 -261.1674 58.7988 -263.5681 43.4342
+  -265.9688 28.0696 -275.0915 -8.9014 -278.9327 -24.266
+  -282.7738 -39.6306 -284.6944 -87.6449 -283.2539 -107.8109
+endline
+
+line wall -subtype presumed
+  -258.7666 232.6108
+  -258.7666 232.6108 -258.2865 155.7878 -257.8064 143.3041
+  -257.3262 130.8204 -256.8461 93.3692 -256.8461 93.3692
+endline
+
+line wall -subtype presumed
+  -26.2548 57.0447
+  -26.2548 57.0447 -74.6428 54.8046 -96.8118 60.5863
+  -142.6185 75.5931 -143.6572 78.3801 -169.9708 109.9528
+  -185.8058 128.9527 -186.7758 178.6134 -186.7758 178.6134
+  -186.7758 178.6134 -190.1368 223.2667 -191.0971 231.4291
+endline
+
+line wall 
+  103.2309 123.877
+  103.2309 123.877 59.596 72.0398 47.8978 66.7341
+  37.367 61.9578 -17.7288 55.769 -24.9309 56.7293
+endline
+
+line wall 
+  115.4983 64.5477
+  115.4983 64.5477 104.5169 68.9102 87.7217 34.0095
+  70.9266 -0.8911 -2.9886 -50.8799 -42.5437 -65.943
+  -82.9001 -81.3112 -65.1487 -75.425 -94.5541 -82.7713
+endline
+
 point 105.43 77.95 station -name 10
 point 82.65 79.53 station -name 9
 point 40.63 27.64 station -name 5
@@ -53,3 +100,4 @@ point -22.39 -7.24 station -name 3
 point -50.93 -52.91 station -name 2
 point -105.43 -79.53 station -name 1
 endscrap
+
