@@ -38,6 +38,8 @@ map m-all-p -projection plan -title "M16"
 		m-all-p@brezno
 		m-all-p@goodbag
 		m-all-p@baddybag
+		m-all-p@spiny
+		m-all-p@dinsdale
 	endmap
 
 	map m-galaktika-p -projection plan
@@ -46,7 +48,12 @@ map m-all-p -projection plan -title "M16"
 		m-all-p@tamoka
 		m-all-p@galact1
 		m-all-p@galact2
-		m-all-p@galact3 # Galaktika chamber proper
+		m-all-p@window
+		m-all-p@galact3
+		m-all-p@galact4 # Galaktika chamber proper
+		m-all-p@offhyd
+		m-all-p@hydrant
+		m-all-p@hydrant2
 	endmap
 
 	map m-hotel_tolminka-p -projection plan

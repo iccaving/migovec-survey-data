@@ -1,6 +1,12 @@
 
 survey window -title "System Migovec"
 
+input window-p.th2
+
+map m-all-p -projection plan
+    window-1p
+endmap
+
 input window-e.th2
 
 map m-all-e -projection extended

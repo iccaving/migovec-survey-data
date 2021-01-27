@@ -1,6 +1,15 @@
 
 survey offhyd -title "System Migovec"
 
+input offhyd-p.th2
+
+map m-all-p -projection plan
+    offhyd-1p
+    break
+    offhyd-2p
+    offhyd-3p
+endmap
+
 input offhyd-e.th2
 
 map m-all-e -projection extended
