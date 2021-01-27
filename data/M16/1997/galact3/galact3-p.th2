@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap galact3-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
+scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 area u:smallblocks_MY -attr scale 2
   blocks1
@@ -29,8 +28,7 @@ area u:smallblocks_MY -attr scale 1
   blocks7
 endarea
 
-
-line border -subtype invisible -id blocks7 -close on
+line border -close on -id blocks7 -subtype invisible
   -28.8086 265.0392
   -28.8086 265.0392 -26.4079 265.5193 -21.1263 265.5193
   -15.8447 265.5193 19.6859 277.0428 19.6859 277.0428
@@ -47,7 +45,7 @@ line border -subtype invisible -id blocks7 -close on
   -12.9639 282.8045
 endline
 
-line border -subtype invisible -id blocks5 -close on
+line border -close on -id blocks5 -subtype invisible
   71.2977 113.3972
   6.1112 145.3114
   -65.526 126.6382
@@ -59,7 +57,7 @@ line border -subtype invisible -id blocks5 -close on
   18.3337 66.5445
 endline
 
-line border -subtype invisible -id blocks2 -close on
+line border -close on -id blocks2 -subtype invisible
   -44.8157 -111.3602
   -44.8157 -111.3602 3.3951 -98.4587 12.9015 -101.1748
   22.4078 -103.8909 134.447 -129.0148 134.447 -129.0148
@@ -71,7 +69,7 @@ line border -subtype invisible -id blocks2 -close on
   16.9756 61.7913 -71.2977 -74.0138 -71.2977 -74.0138
 endline
 
-line border -subtype invisible -id blocks3 -close on
+line border -close on -id blocks3 -subtype invisible
   -81.82 -285.55
   -81.82 -285.55 -65.8655 -281.1165 -67.9025 -278.4004
   -69.9396 -275.6843 -99.1377 -219.3252 -99.1377 -215.9301
@@ -87,7 +85,7 @@ line border -subtype invisible -id blocks3 -close on
   -148.0275 -264.8199 -81.82 -285.55 -81.82 -285.55
 endline
 
-line border -subtype invisible -id blocks4 -close on
+line border -close on -id blocks4 -subtype invisible
   42.0996 -345.6239
   42.0996 -345.6239 145.3114 -290.6229 152.7807 -279.0794
   160.25 -267.536 179.2627 -249.8814 172.4725 -215.2511
@@ -117,7 +115,7 @@ line border -subtype invisible -id blocks4 -close on
   156.8549 -359.2044 134.06 -367.31 134.06 -367.31
 endline
 
-line border -subtype invisible -id blocks1 -close on
+line border -close on -id blocks1 -subtype invisible
   71.2977 -339.5127
   74.0138 -338.1547 167.7193 -286.5487 173.1515 -251.2394
   178.5837 -215.9301 160.929 -146.6695 141.9163 -137.8422
@@ -154,8 +152,8 @@ line pit
   -126.2987 -4.0742
 endline
 
-point 178.9232 108.6441 u:label_MY -attr lvl 1 -attr text Galaktikđa -scale l -align r
-point 94.2882 332.1993 water-flow -align r -scale l -orientation 70.0
+point 178.9232 108.6441 u:label_MY -align r -attr lvl 1 -attr text "Galaktikđa" -scale l
+point 94.2882 332.1993 water-flow -align r -orientation 70.0 -scale l
 line wall 
   90.8672 333.9398
   82.7047 333.5797
@@ -184,8 +182,8 @@ line wall
 endline
 
 line wall 
-  -167.0402 -259.3877
-  -167.0402 -259.3877 -137.8422 -262.7828 -133.089 -266.857
+  -141.1124 -276.6729
+  -141.1124 -276.6729 -137.8422 -262.7828 -133.089 -266.857
   -128.3358 -270.9311 -110.3416 -277.3819 -106.2675 -280.098
   -102.1933 -282.8141 -45.1552 -298.4317 -41.7601 -302.8453
   -38.3649 -307.259 -4.0742 -329.6668 -1.0185 -332.7225
@@ -227,7 +225,9 @@ line wall
   -149.3856 -97.7797 -145.9905 -118.1504 -147.3485 -122.9036
   -148.7066 -127.6568 -149.3856 -131.0519 -152.7807 -148.0275
   -156.1758 -165.0032 -152.1017 -163.6451 -163.6451 -191.4852
-  -175.1886 -219.3252 -184.6949 -220.0042 -184.6949 -220.0042
+  -167.2644 -200.214 -170.6834 -206.2728 -173.672 -210.4778
+  -177.8168 -216.3096 -190.5742 -224.5483 -199.3697 -229.8044
+  -204.4591 -232.8459 -206.7815 -237.7695 -206.7815 -237.7695
 endline
 
 point -64.13 122.24 station -name 16
