@@ -1,6 +1,14 @@
 
 survey spiny -title "System Migovec"
 
+
+input spiny-p.th2
+
+map m-all-p -projection plan
+    spiny-1p
+endmap
+
+
 input spiny-e.th2
 
 map m-all-e -projection extended

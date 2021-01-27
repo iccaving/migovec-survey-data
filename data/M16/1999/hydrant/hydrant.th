@@ -1,6 +1,17 @@
 
 survey hydrant -title "System Migovec"
 
+input hydrant-p.th2
+
+map m-all-p -projection plan
+    hydrant-2p
+    hydrant-1p
+    break
+    hydrant-3p
+endmap
+
+join hydrant-2p hydrant-1p
+
 input hydrant-e.th2
 
 map m-all-e -projection extended

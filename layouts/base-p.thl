@@ -196,33 +196,49 @@ layout base-p
 		enddef;
 
 		def a_u_smallblocks_MY (expr p) =
-		  T:=identity;
-		  pickup PenD;
-		  path q, qq; q = bbox p;
-		  picture tmp_pic;
-		  uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
-		  tmp_pic := image(
-		    for i = xpart llcorner q step 0.4uu until xpart urcorner q:
-		      for j = ypart llcorner q step 0.4uu until ypart urcorner q:
-		        k := (4+normaldeviate)/5;
+    T:=identity;
+    pickup PenD;
+    save S,sc;
+    string S;
+    numeric sc;
+    
+    if known ATTR_scale:
+      sc :=scantokens(ATTR_scale);
+    else: sc:=1;
+    fi;
 
-		        qq := punked (((-.17uu,.07uu)--(-.17uu,-.07uu)--(0,-.12uu)--(.17uu,-.08uu)--(.15uu,.06uu)--(0,.13uu)--cycle)
-		       randomized (uu/9))
-		         rotated uniformdeviate(360)
-		         scaled k
-		         shifted ((i,j) randomized 0.25uu);
+    %if S='xs' : sc:=0.5;
+    %elseif S='s' : sc:=0.7;
+    %elseif S=''l' : sc:=1.4;
+    %elseif S='xl' : sc:=2
+    %else: sc:=1;
+    %fi;
 
-		  if xpart (p intersectiontimes qq) < 0:
-		    thclean qq;
-		    thdraw qq withcolor(0.3,0.3,0.3);
-		  fi;
-		      endfor;
-		    endfor;
-		  );
-		  clip tmp_pic to p;
-		  drawoptions();
-		  draw tmp_pic;
-		enddef;
+    path q, qq; q = bbox p;
+    picture tmp_pic;
+    uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
+    tmp_pic := image(
+      for i = xpart llcorner q step 0.4uu*sc until xpart urcorner q:
+        for j = ypart llcorner q step 0.4uu*sc until ypart urcorner q:
+          k := (4+normaldeviate)/5;
+
+          qq := punked (((-.17uu*sc,.07uu*sc)--(-.17uu*sc,-.07uu*sc)--(0,-.12uu*sc)--(.17uu*sc,-.08uu*sc)--(.15uu*sc,.06uu*sc)--(0,.13uu*sc)--cycle)
+         randomized (uu/9))
+           rotated uniformdeviate(360)
+           scaled k
+           shifted ((i,j) randomized 0.25uu);
+
+    if xpart (p intersectiontimes qq) < 0:
+      thclean qq;
+      thdraw qq withcolor(0.3,0.3,0.3);
+    fi;
+        endfor;
+      endfor;
+    );
+    clip tmp_pic to p;
+    drawoptions();
+    draw tmp_pic;
+  enddef;
 		
 		
 		#_____________________________________________________________
