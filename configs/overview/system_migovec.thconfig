@@ -104,7 +104,7 @@ layout ee
 	endcode
 endlayout
 
-select m-all-e@M16.m2m16m18.system_migovec
+select m-all-e@system_migovec
 
 language sl
 export map -projection extended -o ../../outputs/system_migovec_overview_elevation_SLO.pdf -layout ee

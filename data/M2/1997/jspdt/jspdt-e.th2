@@ -182,7 +182,8 @@ endscrap
 
 scrap jspdt-3e -scale [0 0 96 0 0 0 250 0 inch] -projection extended
 
-point 871.4604 33.6101 u:label_MY -attr lvl 2 -attr text "<lang:en>Silos<lang:sl>Silos" -align l -scale l
+point 871.4604 33.6101 u:label_MY -attr lvl 2 -attr text "Silos" -align l
+
 line wall -subtype blocks
   959.5996 -425.7939
   959.5996 -425.7939 965.5321 -427.8571 970.6074 -427.3038
