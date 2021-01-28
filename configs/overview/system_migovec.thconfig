@@ -30,7 +30,7 @@ source
 		M16@m2m16m18.system_migovec
 	endmap
 endsource
-select local-p
+#select local-p
 #select  m-primadona_ubend_monatip-e@system_migovec -map-level 0
 
 #----------------------------------------------------------------------------------|
@@ -70,7 +70,7 @@ layout plan
 endlayout
 
 language fr
-export map -projection plan -o ../../outputs/system_migovec_overview_plan_SLO.pdf -layout plan
+#export map -projection plan -o ../../outputs/system_migovec_overview_plan_SLO.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view, using the LAYOUT overview2
@@ -79,7 +79,9 @@ layout ee
 	copy base-e
 	copy colour-by-new
 	copy user_label
-	copy show-centreline
+
+	symbol-assign point water-flow MY
+	symbol-colour point water-flow [10 10 80]
 
 	
 	symbol-assign point water-flow MY
@@ -92,20 +94,20 @@ layout ee
 	\legendbox{5}{70}{NW}{\scalebar}
 	\legendbox{5}{65}{NW}{\northarrow}
 	}
-	symbol-hide point remark
-	symbol-hide point station
-	symbol-hide line survey
-	symbol-hide line label
-
+	copy show-centreline
+	colour map-fg [95 95 82]
+	scale 1 4000
+	grid-size 10 10 100 m
+	map-header 0 0 off
 	code metapost
-		max_label_level("2"); % yeah, now it works!
+    max_label_level("2"); % yeah, now it works!
 	endcode
 endlayout
 
-select m-all-e@system_migovec
+select m-all-e@M16.m2m16m18.system_migovec
 
 language sl
-#export map -projection extended -o ../../outputs/system_migovec_overview_elevation_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/system_migovec_overview_elevation_SLO.pdf -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
