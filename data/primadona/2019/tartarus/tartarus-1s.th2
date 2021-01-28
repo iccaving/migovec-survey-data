@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 2006.900000 1758.400000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap tartarus-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
+scrap tartarus-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 
 line wall:invisible 
   262.27 967.25
@@ -39,7 +38,7 @@ line wall
   1378.4068 39.1169
 endline
 
-point -260.7797 705.9678 u:label_MY -attr lvl 1 -attr text Tartarus -align l
+point -260.7797 705.9678 u:label_MY -align l -attr lvl 1 -attr text Tartarus
 line wall 
   127.84 487.36
   210.7418 421.4836
@@ -260,7 +259,7 @@ line rock-border -close on
   -22.35 777.11
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   110.46 1007.24
   80.18 1002.58
   58.82 997.43
@@ -294,10 +293,7 @@ line rock-border -close on
   198.49 843.32
 endline
 
-point 229.29 827.21 u:water_drip 
-point 277.59 832.11 u:water_drip 
-point 237.69 643.68 u:water_drip 
-point 270.59 633.88 u:water_drip 
+point 269.29 767.21 water-flow -orientation 180
 line wall 
   336.32 642.25
   335.51 648.68 334.6 655.1 333.91 661.54
