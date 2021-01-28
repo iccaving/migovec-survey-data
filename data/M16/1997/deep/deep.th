@@ -1,6 +1,12 @@
 
 survey deep -title "Blind bedding plane at bottom of God series"
 
+input deep-e.th2
+
+map m-all-e -projection extended
+    deep-1e
+endmap
+
 input deep-p.th2
 
 map m-all-p -projection plan
