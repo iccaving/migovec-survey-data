@@ -1,5 +1,14 @@
 
-survey god -title "System Migovec"
+survey god -title "Good not Grand"
+
+input god-e.th2
+
+map m-all-e -projection extended
+    god-1e
+    god-2e
+endmap
+
+join god-1e god-2e
 
 input god-p.th2
 

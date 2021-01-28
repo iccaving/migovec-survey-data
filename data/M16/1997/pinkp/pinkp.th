@@ -1,11 +1,18 @@
 
 survey pinkp -title "Pink Panther"
 	
-	input "pinkp-p.th2"
-	
-	map m-all-p -projection plan
-		pinkp-1p
-	endmap
+input "pinkp-e.th2"
+
+map m-all-e -projection extended
+	pinkp-1e
+endmap
+
+input "pinkp-p.th2"
+
+map m-all-p -projection plan
+	pinkp-1p
+endmap
+
 	centreline
 		team "Sarah Wingrove" insts
 		team "Michael Playford" notes

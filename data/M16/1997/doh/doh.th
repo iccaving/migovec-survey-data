@@ -1,6 +1,14 @@
 
 survey doh -title "System Migovec"
 
+
+input doh-e.th2
+
+map m-all-e -projection extended
+    doh-1e
+endmap
+
+
 input doh-p.th2
 
 map m-all-p -projection plan

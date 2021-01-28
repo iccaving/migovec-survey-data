@@ -1,6 +1,12 @@
 
 survey coldfeet -title "System Migovec"
 
+input coldfeet-e.th2
+
+map m-all-e -projection extended
+    coldfeet-1e
+endmap
+
 input coldfeet-p.th2
 
 map m-all-p -projection plan

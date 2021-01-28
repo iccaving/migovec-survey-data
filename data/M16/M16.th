@@ -186,6 +186,10 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join l1@titanic:end l1@migcon:0
 	join l2@titanic l2@migcon
 	join l3@titanic l3@migcon
+	join hotel-1e@hotel pinkp-1e@pinkp
+	join pinkp-1e@pinkp doh-1e@doh
+	join doh-1e@doh coldfeet-1e@coldfeet
+	join deep-1e@deep god-2e@god
 
 	###__________1998____________###
 	
