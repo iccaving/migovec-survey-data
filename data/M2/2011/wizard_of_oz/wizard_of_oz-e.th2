@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap wizard_of_oz-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point -30.6986 73.567 u:label_MY -attr lvl 2 -attr text "Wizard<br>of Oz" -align t -scale l
+point -30.6986 -23.567 u:label_MY -attr lvl 2 -attr text "Wizard of Oz" -align b
 line u:texture_MY 
   -65.7797 23.527
   -41.4124 20.6462

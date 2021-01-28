@@ -141,8 +141,8 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		548.9921 -196.0686 565.2887 -194.8803 565.2887 -194.8803
 	endline
 	
-	point 400.625 154.8178 u:label_MY -attr lvl 2 -attr text "Hole in<br>the Hill" -align l -scale l
-	point 555.4428 619.2712 u:label_MY -attr lvl 2 -attr text "Penelope Pot" -align r -scale l
+	point 400.625 154.8178 u:label_MY -attr lvl 2 -attr text "Hole in the Hill" -align l
+	point 555.4428 619.2712 u:label_MY -attr lvl 2 -attr text "Penelope Pot" -align r
 	line wall
 		576.4926 490.9354
 		555.7661 480.8637
