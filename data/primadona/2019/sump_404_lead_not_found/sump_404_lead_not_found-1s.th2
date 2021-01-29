@@ -5,7 +5,8 @@ encoding  utf-8
 
 scrap sump_404_lead_not_found-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
 
-point 4515.0547 487.8596 label -text "Sump 404<br>Lead not Found<lang:fr>Sifon 404" -align br
+point 4515.0547 487.8596 u:label_MY -attr lvl 1 -attr text "Sifon 404" -align br
+
 line wall 
   4288.17 193.9
   4288.17 208.5 4264.9996 218.7378 4249.58 224.17

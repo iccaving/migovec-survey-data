@@ -202,7 +202,7 @@ line floor-step
   smooth off
 endline
 
-line label -text "Holey Moley"
+line u:label_MY -attr lvl 1 -attr text "Holey Moley"
   47.0 -102.0
   47.0 -102.0 18.0 -388.0 175.0 -609.0
   smooth off

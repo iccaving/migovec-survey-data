@@ -1,0 +1,102 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      GITHUB CI GENERATION OF:                                    |
+#                                                                                  |
+#                      PRIMADONA, MONATIP, UBEND OVERVIEW                          |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+encoding  utf-8
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../data/system_migovec.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../layouts/overview-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
+input "../../layouts/user_label.thl" # input this to have the label hierarchy
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view
+
+layout plan
+	copy overview
+	copy colour-by-new
+	copy user_label
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
+	code tex-map
+	\framethickness=0.5mm
+	\def\maplayout{
+	\legendbox{-5}{99}{NW}{\size[26]\the\cavename}
+	\legendbox{-5}{95}{NW}{\size[10]\the\comment}
+	\legendbox{5}{70}{NW}{\scalebar}
+	\legendbox{5}{65}{NW}{\northarrow}
+	}
+	endcode
+
+	code metapost
+  	max_label_level("2");
+	endcode
+endlayout
+
+select m-all-p@primadona_ubend_monatip.system_migovec
+
+language sl 
+export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../_outputs/primadona_ubend_monatip_plan_ENG.svg -layout plan
+language en
+export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_ENG.svg -layout plan
+
+#----------------------------------------------------------------------------------|
+# export an ELEVATION view
+ 
+layout ee
+	copy base-e
+	copy colour-by-new
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
+	
+	symbol-assign line survey AUT
+	symbol-assign point station AUT
+
+	symbol-colour line survey [70 0 0]
+	symbol-colour point station [70 0 0]
+	grid-size 10 10 100 m
+	fonts-setup 5 8 10 10 10 
+	min-symbol-scale M
+	symbol-hide line label
+	symbol-hide point remark
+
+	code tex-map
+	\framethickness=0.5mm
+	\def\maplayout{
+	\legendbox{91}{99}{N}{\size[26]\the\cavename}
+	\legendbox{91}{90}{N}{\size[10]\the\comment}
+	\legendbox{93}{70}{N}{\scalebar}
+	}
+endlayout
+
+select m-all-e@primadona_ubend_monatip.system_migovec
+
+language sl 
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_ENG.svg -layout ee
+language en
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_ENG.svg -layout ee
+
+#----------------------------------------------------------------------------------|
+# export a .3d model, which can be opened in AVEN and LOCH
+select primadona_ubend_monatip@system_migovec
+export model -o ../../outputs/primadona_ubend_monatip.3d
+
+#----------------------------------------------------------------------------------|
+# export a .lox model, which can be opened in LOCH only
+# export a .3d model, which can be opened in AVEN and LOCH
+select primadona_ubend_monatip@system_migovec
+export model -o ../../outputs/primadona_ubend_monatip.lox

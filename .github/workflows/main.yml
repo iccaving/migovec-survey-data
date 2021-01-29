@@ -6,7 +6,10 @@ on:
       - master
     paths:
       - data/**
+      - configs/**
+      - layouts/**
       - .github/workflows/**
+  workflow_dispatch:
 
 env:
   THERION_VERSION: 5.5.6
@@ -30,7 +33,7 @@ jobs:
         if: steps.cache-therion.outputs.cache-hit != 'true'
         run: sudo apt install -y bwidget lcdf-typetools libtk-img-dev libtk-img libvtk6-dev libvtk6.3 libwxgtk3.0-dev tcl-dev survex texlive-latex-base # Pre-installed: gcc ghostscript imagemagick libfreetype6-dev libjpeg-dev libpng-dev zlib1g zlib1g-dev
       - name: Install Therion runtime dependencies
-        run: sudo apt install -y libproj-dev texlive-metapost
+        run: sudo apt install -y libproj-dev texlive-metapost survex
       - name: Download and unpack Therion
         if: steps.cache-therion.outputs.cache-hit != 'true'
         run: |
@@ -46,19 +49,22 @@ jobs:
         run: sudo npm install -g svgo
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate output files
-        run: find data/_config/automation -type f -name "*.thconfig" -exec echo -e "\n\nGenerating {}" \;  -exec ${THERION_PATH}/bin/therion -q {} \;
+        run: find configs/automation -type f -name "*.thconfig" -exec echo -e "\n\nGenerating {}" \;  -exec ${THERION_PATH}/bin/therion -q {} \;
       #=========================== COMPRESS OUTPUT ===========================#
       - name: Compress PDFs
         run: |
-          for file in ./data/_outputs/*.pdf; do
+          for file in ./outputs/*.pdf; do
             gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=temp.pdf $file;                                    
             mv temp.pdf $file;
           done
       - name: Compress SVGs
-        run: svgo -f ./data/_outputs/
+        run: svgo -f ./outputs/
       #=========================== CREATE LISTING ===========================#
       - name: Generate listing
-        run: python3 ./scripts/create_file_listing.py ./data/_outputs/ ./data/_outputs/listing.json
+        run: python3 ./scripts/create_file_listing.py ./outputs/ ./outputs/listing.json
+      #=========================== GENERATE STATS ===========================#
+      - name: Generate stats
+        run: python3 ./scripts/create_system_stats.py data/system_migovec.th --json ./outputs/stats.json --therion-path ${THERION_PATH}/bin/therion
       #=============================== UPLOADS ===============================#
       - name: Upload Files
         uses: "marvinpinto/action-automatic-releases@latest"
@@ -68,8 +74,9 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: false
           files: |
-            ./data/_outputs/listing.json
-            ./data/_outputs/*.3d
-            ./data/_outputs/*.lox
-            ./data/_outputs/*.pdf
-            ./data/_outputs/*.svg
+            ./outputs/listing.json
+            ./outputs/stats.json
+            ./outputs/*.3d
+            ./outputs/*.lox
+            ./outputs/*.pdf
+            ./outputs/*.svg

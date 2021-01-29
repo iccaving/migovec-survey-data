@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Cave View - Imperial College Caving Club</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="ICCC" />
+    <meta name="theme-color" content="#2D2D2D" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="msapplication-navbutton-color" content="#2D2D2D" />
+    <!-- Windows Phone -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2D2D2D" />
+    <!-- iOS Safari -->
+    <script src="../CaveView/js/CaveView2.js"></script>
+    <link
+      type="text/css"
+      href="../CaveView/css/caveview.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      #scene {
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scene"></div>
+    <script>
+      (function () {
+        var cors_api_host = "cors-anywhere-iccc.herokuapp.com";
+        var cors_api_url = "https://" + cors_api_host + "/";
+        var slice = [].slice;
+        var origin = window.location.protocol + "//" + window.location.host;
+        var open = XMLHttpRequest.prototype.open;
+        XMLHttpRequest.prototype.open = function () {
+          var args = slice.call(arguments);
+          var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
+          if (
+            targetOrigin &&
+            targetOrigin[0].toLowerCase() !== origin &&
+            targetOrigin[1] !== cors_api_host
+          ) {
+            args[1] = cors_api_url + args[1];
+          }
+          return open.apply(this, args);
+        };
+      })();
+      function getJSON(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.responseType = "json";
+        xhr.onload = function () {
+          var status = xhr.status;
+          if (status === 200) {
+            callback(null, xhr.response);
+          } else {
+            callback(status, xhr.response);
+          }
+        };
+        xhr.send();
+      }
+    </script>
+    <script>
+      function display(listing) {
+        // display the user interface - and a blank canvas
+        // the configuration object specifies the location of CaveView, surveys and terrain files
+        const viewer = new CV2.CaveViewer("scene", {
+          view: {
+            cameraType: CV2.CAMERA_PERSPECTIVE,
+            box: true,
+            terrain: true,
+            walls: true,
+            HUD: true,
+            entrances: true,
+          },
+          home: "../CaveView/",
+          terrainDirectory: "../js",
+          surveyDirectory:
+            "https://github.com/iccaving/migovec-survey-data/releases/download/latest/",
+        });
+        const ui1 = new CV2.CaveViewUI(viewer);
+        ui1.loadCaveList(
+          listing
+            .filter((l) => l.type === "3D" || l.type === "LOX")
+            .map((l) => l.file)
+        );
+      }
+      window.onload = () =>
+        getJSON(
+          "https://github.com/iccaving/migovec-survey-data/releases/download/latest/listing.json",
+          (err, data) => display(data)
+        );
+    </script>
+  </body>
+</html>

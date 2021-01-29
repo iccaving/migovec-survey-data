@@ -102,7 +102,7 @@ line floor-step
   356.22 943.98 372.8 958.62 377.14 968.86
 endline
 
-point 146.59 1485.82 label -text "horrible crawl in water" -align t -scale s
+point 146.59 1485.82 u:label_MY -attr lvl 1 -attr text "horrible crawl in water" -align t -scale s
 point 346.74 814.56 clay -scale xs
 point 354.63 924.39 clay -scale xs
 point 331.73 1016.44 clay -scale xs

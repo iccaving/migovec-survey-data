@@ -17,7 +17,10 @@ input mad_cow-e.th2
 
 map m-all-e -projection extended
     mad_cow-1e
+	mad_cow-2e
 endmap
+
+join mad_cow-1e mad_cow-2e
 
 	centreline
 		

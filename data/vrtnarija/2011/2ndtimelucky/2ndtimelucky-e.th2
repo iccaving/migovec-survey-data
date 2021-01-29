@@ -1,55 +1,43 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 393.000000 510.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -9.59 121.89
-  -6.46 121.57
+
+scrap 2ndtimelucky-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+
+point 123.0 84.0 u:label_MY -attr lvl 3 -attr text "2nd Time lucky" -attr align br
+point 137.0 160.0 crystal 
+line wall 
+  251.1644 149.9656
+  227.0935 154.8279
+  227.0935 154.8279 207.6547 156.3086 192.2376 158.9899
+  176.8206 161.6711 149.4782 168.8144 149.4782 173.5066
+  149.4782 178.1987 152.8297 226.4607 152.8297 226.4607
+  152.8297 226.4607 147.4672 341.7533 148.8079 344.4345
+  150.1485 347.1157 152.8297 364.5437 156.1812 365.214
+  159.5327 365.8843 189.6965 373.928 189.6965 373.928
 endline
-line survey 
-  -44.66 112.44
-  -9.59 121.89
+
+line wall 
+  187.6856 394.0371
+  187.6856 394.0371 146.7969 387.3341 140.0939 379.9607
+  133.3908 372.5873 124.0065 351.1375 124.0065 343.0939
+  124.0065 335.0502 119.3144 160.7707 119.3144 160.7707
+  119.3144 160.7707 122.6659 147.3646 134.7314 143.3428
+  146.7969 139.321 189.6965 136.6397 189.6965 136.6397
+  189.6965 136.6397 221.8712 130.607 229.9149 130.607
+  237.9585 130.607 258.738 129.2664 258.738 129.2664
 endline
-line survey 
-  -62.63 91.81
-  -44.66 112.44
-endline
-line survey 
-  -62.63 -102.28
-  -62.63 91.81
-endline
-line survey 
-  -36.99 -107.80
-  -62.63 -102.28
-endline
-line survey 
-  9.54 -115.98
-  -36.99 -107.80
-endline
-line survey 
-  20.13 -116.85
-  9.54 -115.98
-endline
-line survey 
-  34.63 -119.45
-  20.13 -116.85
-endline
-line survey 
-  62.63 -121.89
-  34.63 -119.45
-endline
+
+point 189.54 377.57 station -name 10
+point 186.41 377.89 station -name 9
+point 151.34 368.44 station -name 8
+point 133.37 347.81 station -name 7
+point 133.37 153.72 station -name 6
+point 159.01 148.2 station -name 5
+point 205.54 140.02 station -name 4
+point 216.13 139.15 station -name 3
+point 230.63 136.55 station -name 2
+point 258.63 134.11 station -name 1
 endscrap
 
-scrap 2ndtimelucky-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -6.46 121.57 station -name 10
-point -9.59 121.89 station -name 9
-point -44.66 112.44 station -name 8
-point -62.63 91.81 station -name 7
-point -62.63 -102.28 station -name 6
-point -36.99 -107.80 station -name 5
-point 9.54 -115.98 station -name 4
-point 20.13 -116.85 station -name 3
-point 34.63 -119.45 station -name 2
-point 62.63 -121.89 station -name 1
-endscrap

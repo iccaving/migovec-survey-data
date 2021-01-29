@@ -67,7 +67,7 @@ line wall -subtype invisible
   2248.4382 2482.0
 endline
 
-point 2261.7182 3002.7387 label -text "Donji Milanovac" -align r -scale xl
+point 2261.7182 3002.7387 u:label_MY -attr lvl 1 -attr text "Donji Milanovac" -align r
 line wall -subtype invisible
   2124.5998 3405.001
   1936.8322 3411.9888

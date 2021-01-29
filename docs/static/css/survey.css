@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Computer Modern";
+  src: url("http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf");
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url("http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url("http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf");
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url("http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Computer Modern", sans-serif;
+}
+
+#svg {
+  height: 100vh;
+  width: 100vw;
+  cursor: grab;
+  position: fixed;
+  background: white;
+}
+
+#svg:active {
+  cursor: grabbing;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#controls {
+  position: fixed;
+  top: 5;
+  left: 5;
+  z-index: 50;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+select {
+  width: 350px;
+  background-color: white;
+  color: black;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select:focus,
+select:hover {
+  border-color: #87cefa;
+  outline: 0;
+  background-image: linear-gradient(45deg, transparent 50%, 87cefa 50%),
+    linear-gradient(135deg, 87cefa 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+}
+
+select:focus {
+  background-image: linear-gradient(45deg, #87cefa 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #87cefa 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+}
+
+button:hover {
+  background-color: #87cefa;
+}
+
+.loader-container {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #87cefa;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
+.loader {
+  color: #87cefa;
+  text-indent: -9999em;
+  position: relative;
+  font-size: 8px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.loader:after {
+  left: 1.5em;
+}
+
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+text {
+  font-family: sans-serif;
+}

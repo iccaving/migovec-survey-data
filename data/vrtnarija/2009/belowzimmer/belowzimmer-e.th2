@@ -1,55 +1,56 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 442.000000 400.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -20.97 11.65
-  -9.68 19.29
-endline
-line survey 
-  -20.97 -66.61
-  -20.97 11.65
-endline
-line survey 
-  -63.07 -44.65
-  -20.97 -66.61
-endline
-line survey 
-  -87.29 -51.34
-  -63.07 -44.65
-endline
-line survey 
-  6.94 17.64
-  -9.68 19.29
-endline
-line survey 
-  28.23 40.94
-  6.94 17.64
-endline
-line survey 
-  46.11 66.14
-  46.11 47.56
-endline
-line survey 
-  87.29 66.61
-  46.11 66.14
-endline
-line survey 
-  87.29 66.61
-  28.23 40.94
-endline
-endscrap
+
 
 scrap belowzimmer-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -9.68 19.29 station -name 6
-point -20.97 11.65 station -name 10
-point -20.97 -66.61 station -name 9
-point -63.07 -44.65 station -name 8
-point -87.29 -51.34 station -name 7
-point 6.94 17.64 station -name 5
-point 28.23 40.94 station -name 2
-point 46.11 47.56 station -name 4
-point 46.11 66.14 station -name 3
-point 87.29 66.61 station -name 1
+
+point 205.0 199.0 water-flow -orientation 187.8
+
+line wall
+  133.0855 139.7769
+  133.0855 139.7769 150.1859 151.6729 163.5688 144.2379
+  176.9517 136.803 190.3346 122.6766 197.026 121.1896
+  203.7175 119.7026 230.4833 122.6766 231.2268 132.342
+  231.9703 142.0074 218.5874 173.9777 218.5874 177.6952
+  218.5874 181.4126 208.1784 205.2045 214.1264 206.6915
+  220.0744 208.1784 233.4573 207.4349 235.6877 212.6394
+  237.9182 217.8439 243.3354 221.2003 246.0967 222.3048
+  smooth off
+  253.5316 225.2788
+endline
+
+line wall
+  239.4052 251.3011
+  239.4052 251.3011 234.9442 234.2007 220.0744 228.9963
+  200.4253 222.1191 182.1561 208.1784 182.1561 208.1784
+  smooth off
+  182.1561 208.1784 174.7212 173.9777 159.8513 165.7993
+  144.9814 157.6208 130.1115 154.6468 130.1115 154.6468
+  smooth off
+endline
+
+point 211.32 220.29 station -name 6
+
+point 200.03 212.65 station -name 10
+
+point 200.03 134.39 station -name 9
+
+point 157.93 156.35 station -name 8
+
+point 133.71 149.66 station -name 7
+
+point 227.94 218.64 station -name 5
+
+point 249.23 241.94 station -name 2
+
+point 267.11 248.56 station -name 4
+
+point 267.11 267.14 station -name 3
+
+point 308.29 267.61 station -name 1
+
 endscrap
+
+

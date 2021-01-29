@@ -2,10 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 4045.600000 3126.200000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap angel_delight-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 
-scrap angel_delight-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
-
-point 3062.9332 1145.0874 label -text "Angel Delight" -align l -scale m
+point 3062.9332 1145.0874 u:label_MY -align l -attr lvl 1 -attr text "Angel Delight" -scale m
 line wall 
   3302.953 1458.23
   3289.463 1450.12 3271.883 1450.84 3256.753 1450.92
@@ -148,7 +147,7 @@ line wall
   2517.953 568.35 2525.763 561.35 2541.033 555.91
 endline
 
-line border -close on -id 1s-a6
+line border -close on -id angel_delight-1s_water_1 -visibility on
   2720.103 567.26
   2716.293 548.45 2694.903 547.95 2677.663 543.43
   2662.563 544.15 2633.573 542.47 2599.183 544.85
@@ -156,11 +155,11 @@ line border -close on -id 1s-a6
   2521.593 553.33 2520.293 557.28 2512.653 566.87
 endline
 
-area water
-  1s-a6
+area water 
+  angel_delight-1s_water_1
 endarea
 
-line border -close on -id 1s-a8
+line border -close on -id angel_delight-1s_water_2 -visibility on
   3324.823 728.91
   3311.263 728.01 3318.543 711.34 3306.903 706.24
   3304.283 705.09 3295.053 703.56 3291.213 703.4
@@ -176,11 +175,11 @@ line border -close on -id 1s-a8
   3004.543 717.65 3021.503 719.84 3021.503 724.23
 endline
 
-area water
-  1s-a8
+area water 
+  angel_delight-1s_water_2
 endarea
 
-line border -close on -id 1s-a10
+line border -close on -id angel_delight-1s_water_3 -visibility on
   2937.873 685.68
   2929.033 680.62 2935.263 677.72 2924.713 676.6
   2909.633 675.01 2893.293 678.31 2878.063 678.31
@@ -188,14 +187,12 @@ line border -close on -id 1s-a10
   2847.423 681.08 2844.113 675.91 2844.503 685.57
 endline
 
-area water
-  1s-a10
+area water 
+  angel_delight-1s_water_3
 endarea
 
-point 3222.863 835.05 u:water_drip 
-point 3254.483 902.57 u:water_drip 
-point 3226.513 973.75 u:water_drip 
-line u:user 
+point 3254.483 902.57 water-flow -orientation 180
+line u:texture_MY 
   3392.103 1390.9
   3375.513 1393.43 3358.033 1391.56 3341.283 1390.9
   3336.703 1390.72 3327.513 1392.83 3323.453 1390.9
@@ -205,14 +202,14 @@ line u:user
   3292.883 1381.27 3291.333 1381.05 3289.763 1380.91
 endline
 
-line u:user 
+line u:texture_MY 
   3410.763 880.24
   3396.393 879.09 3381.853 873.37 3367.323 874.07
   3365.913 874.14 3364.383 875.07 3363.093 874.48
   3356.053 871.27 3360.473 852.95 3361.633 847.69
 endline
 
-line u:user 
+line u:texture_MY 
   3416.113 801.7
   3412.273 801.7 3408.433 801.7 3404.603 801.7
   3402.543 801.7 3400.483 801.8 3398.433 801.7
@@ -238,7 +235,7 @@ line u:texture_MY
   2701.823 710.55 2701.613 701.2 2700.833 697.85
 endline
 
-line u:user 
+line u:texture_MY 
   2456.493 603.49
   2452.883 603.49 2449.273 603.49 2445.663 603.49
   2439.693 603.49 2434.293 603.15 2429.783 603.0
@@ -246,7 +243,7 @@ line u:user
   2377.093 596.56 2362.003 599.17 2350.493 594.07
 endline
 
-line u:user 
+line u:texture_MY 
   2350.493 594.07
   2338.933 595.67 2336.933 588.26 2335.233 587.15
   2329.653 583.53 2321.933 587.98 2315.963 587.45

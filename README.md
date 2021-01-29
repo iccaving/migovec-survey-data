@@ -5,6 +5,7 @@ This contains the survey data of the Tolminski Migovec cave system, as well as m
 From 1974-2018 the the survey data was collected in the Survex format but we are now using Therion and are in the process of migrating the old data.
 
 - [Migovec Resurvey Project](#migovec-resurvey-project)
+  - [View](#view)
   - [Downloads](#downloads)
   - [Prerequisites](#prerequisites)
   - [Therion Glossary](#therion-glossary)
@@ -39,65 +40,117 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
     - [How do I see the EE in aven or loch?](#how-do-i-see-the-ee-in-aven-or-loch)
     - [Therion Error: Map is too large for PDF format. Try smaller scale!](#therion-error-map-is-too-large-for-pdf-format-try-smaller-scale)
 
+## View
+
+You can view any of the 3D models or PDF maps in your browser [here](https://iccaving.github.io/migovec-survey-data/).
+
 ## Downloads
 
-As data is added some artifacts are automatically generated. These can be found on the [releases page](https://github.com/tr1813/migresurvey/releases).
+![Automated Build](https://github.com/iccaving/migovec-survey-data/workflows/Automated%20Build/badge.svg)
+
+As data is added some artifacts are automatically generated. These can be found on the [releases page](https://github.com/tr1813/migresurveyhttps://github.com/iccaving/migovec-survey-data/releases).
 
 Also for convenience here is a list of the artifacts and the links to the latest versions:
 
 **System Migovec**
 
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.system_migovec.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.system_migovec.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.system_migovec.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.system_migovec.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.system_migovec.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+
 The full system:
 
-- [Model 3D](https://github.com/tr1813/migresurvey/releases/download/latest/system_migovec.3d) [3d]  
-  The 3D file for viewing in Aven or Loch. (WIP)
-- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/system_migovec_plan_SLO.pdf) [PDF]  
-  The plan with Slovenian legend and labels. (WIP)
-- Extended Elevation - Slovenian [PDF](WIP)
-- Plan - English [PDF]  
-  The plan with English legend and labels. (WIP)
-- Extended Elevation - English [PDF](WIP)
+- 3D Model  
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/system_migovec.3d) |
+  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/system_migovec.lox)
+- Plan View (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_EE_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_EE_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_EE_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/system_migovec_EE_ENG.svg)
 
 **Primadona**
 
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.primadona_ubend_monatip.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.primadona_ubend_monatip.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.primadona_ubend_monatip.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.primadona_ubend_monatip.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.primadona_ubend_monatip.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+
 Primadona (in full Primadona/Monatip/Ubend) is a cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2015. It is accessed from impressive entrances midway across the western cliffs of the Migovec plateau.
 
-- [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip.3d) [3d]  
-  The 3D file for viewing in Aven or Loch.
-- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) [PDF]  
-  The plan with Slovenian legend and labels. (WIP)
-- [Extended Elevation - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) [PDF]  
-  The extended elevation with Slovenian legend and labels. (WIP)
-- [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) [PDF]  
-  The plan with English legend and labels. (WIP)
-- [Extended Elevation - English](https://github.com/tr1813/migresurvey/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) [PDF]  
-  The extended elevation with English legend and labels. (WIP)
+- 3D Model  
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/primadona_ubend_monatip.3d) |
+  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/primadona_ubend_monatip.lox)
+- Plan View (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_ENG.svg)
 
 **Vrtnarija**
 
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.vrtnarija_vilinska.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.vrtnarija_vilinska.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.vrtnarija_vilinska.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.vrtnarija_vilinska.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.vrtnarija_vilinska.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+
 Connected to the main system in 2012, Vrtnarija comprises roughly a third of the passage in the sytem. It is accessed from entrances on the Eastern side of the Migovec plateau.
 
-- [Model 3D](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija.3d) [3d]  
-  The 3D file for viewing in Aven or Loch. (WIP)
-- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_SLO.pdf) [PDF]  
-  The plan with Slovenian legend and labels. (WIP)
-- Extended Elevation - Slovenian [PDF](WIP)
-- [Plan - English](https://github.com/tr1813/migresurvey/releases/latest/download/vrtnarija_plan_ENG.pdf) [PDF]  
-  The plan with English legend and labels. (WIP)
-- Extended Elevation - English [PDF](WIP)
+- 3D Model  
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/vrtnarija.3d) |
+  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/vrtnarija.lox)
+- Plan View (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_EE_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_EE_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_EE_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrtnarija_EE_ENG.svg)
 
 **M18 / M16 / M2**
 
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.m2m16m18.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.m2m16m18.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.m2m16m18.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.m2m16m18.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.m2m16m18.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+
 Collectively known as 'the old system' or sometimes 'sysmig', these entrances were originally explored by the JSDPT from the 70s. Joined by ICCC in 1994, exploration was continued until roughly 2001. M2/M8 and M16/M18 connections were made early on in 1996.
 
-- [Model 3D](https://github.com/tr1813/migresurvey/releases/download/latest/m2_m16_m18.3d) [3d]  
-  The 3D file for viewing in Aven or Loch. (WIP)
-- [Plan - Slovenian](https://github.com/tr1813/migresurvey/releases/latest/download/m2_m16_m18_plan_SLO.pdf) [PDF]  
-  The plan with Slovenian legend and labels. (WIP)
-- Extended Elevation - Slovenian [PDF](WIP)
-- Plan - English [PDF]  
-  The plan with English legend and labels. (WIP)
-- Extended Elevation - English [PDF](WIP)
+- 3D Model  
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/m2_m16_m18.3d) |
+  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/m2_m16_m18.lox)
+- Plan View (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.svg)
 
 ## Prerequisites
 
@@ -110,7 +163,7 @@ For compiling and exporting:
 
 For drawing we are using Inkscape and the Therion Inkscape extensions because we think its nicer than using the Therion editor:
 
-- [Inkscape](https://inkscape.org/release/) - Vector drawing program
+- [Inkscape](https://inkscape.orghttps://github.com/iccaving/migovec-survey-data/release/) - Vector drawing program
 - [Inkscape Therion Extensions](https://github.com/speleo3/inkscape-speleo/) - The extensions that allow you to draw Therion scraps in Inkscape.
 
 (Optional) For editing the text files:
@@ -179,9 +232,9 @@ In the `{name}.thm`file, passage map definitions are ordered by cave sub-region,
 
 With the data thus organised you can export maps in pdf and svg files and models in .3d and lox files. This is done through a further two types of file.
 
-In the `_config` folders are `.thconfig` files. These are more similar to a shell script if you are familiar with those. They contain commands to produce output files like pdfs etc. They combine the named maps and `layouts` to make the output.
+In the `configs` folder there are `.thconfig` files. These are more similar to a shell script if you are familiar with those. They contain commands to produce output files like pdfs etc. They combine the named maps and `layouts` to make the output.
 
-In the `_layout` folders there layout files (`.thl`) these are complicated but they basically just define which symbols should be on the
+In the `layouts` folders there are layout files (`.thl`) these are complicated but they basically just define which symbols should be on the
 map and how they should be like. i.e. should you show mineral symbols, how thick should pit lines be, what colour are waterfalls.
 
 ## How to export data
@@ -190,13 +243,13 @@ So how do you export the data to a map or model?
 
 ### Using existing configs
 
-The easy way is to find yourself the config file that already does what you want. In the `data/_config/overview` directory you'll find a number of useful configs. For example `vrtnarija.thconfig` will export pdfs, svgs, and 3d files that show Vrtnarija. You just need to run it with Therion.
+The easy way is to find yourself the config file that already does what you want. In the `configs/overview` directory you'll find a number of useful configs. For example `vrtnarija.thconfig` will export pdfs, svgs, and 3d files that show Vrtnarija. You just need to run it with Therion.
 
 ```
-therion data/_config/overview/vrtnarija.thconfig
+therion configs/overview/vrtnarija.thconfig
 ```
 
-And you should find the it places the files in the `data/_outputs/maps` and `data/_outputs/models` directories.
+And you should find the it places the files in the `outputs/maps` and `outputs/models` directories.
 
 ### Make your own config
 
@@ -209,13 +262,13 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../primadona_ubend_monatip.th"
+source "../../data/primadona_ubend_monatip.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/base-p.thl"
-input "../../_layouts/base-e.thl"
-input "../../_layouts/mods.thl"
+input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -227,14 +280,14 @@ layout plan
 	copy base-p
 	copy colour-by-new
 endlayout
-language fr # We use fr for Slovenian because sl is not yet supported
-export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout plan
+language sl
+export map -projection plan -o ../../outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout plan
 language en
-export map -projection plan -o ../../_outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../_outputs/model/primadona_ubend_monatip.3d -fmt survex
+export model -o ../../outputs/model/primadona_ubend_monatip.3d -fmt survex
 ```
 
 ## Adding data
@@ -540,10 +593,10 @@ Therion by default shows only drawn maps, even when you have told it to disaply 
 
 ```
 # Input the data and layouts as normal
-source "../vrtnarija.th"
+source "../../data/vrtnarija.th"
 
-input "../../_layouts/base-p.thl"
-input "../../_layouts/mods.thl"
+input "../../layouts/base-p.thl"
+input "../../layouts/mods.thl"
 
 # Create a source block to define a special map
 source
@@ -566,7 +619,7 @@ endlayout
 
 # And export as normal
 language en
-export map -projection plan -o ../_outputs/plan_ENG.pdf -layout plan
+export map -projection plan -o ../outputs/plan_ENG.pdf -layout plan
 ```
 
 ### How Do I Make a Pillar (solid rock within a passage)?
@@ -621,3 +674,13 @@ Then just open the `.plt` in aven or loch.
 ### Therion Error: Map is too large for PDF format. Try smaller scale!
 
 This error often happens if you have an empty scrap, i.e. a scrap with no stations in it. If you have been making a new map with multiple scraps ensure you have copied the relevent stations across into the new layers.
+
+Alternatively this might acutally be the scale so you can try changing the scale in your layout:
+
+```
+layout plan
+  ...
+	scale 1 2000
+  ...
+endlayout
+```

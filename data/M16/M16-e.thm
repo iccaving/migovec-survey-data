@@ -9,8 +9,7 @@ map m-all-e -projection extended
 	m-below_mig_country-e
 	m-northern_line-e
 	m-titanic_branch-e
-	
-	
+	m-old_deep-e	
 endmap
 
 map m-level2-e -projection extended
@@ -105,6 +104,15 @@ map m-poltergeist-e -projection extended
 	m-all-e@polter
 	m-all-e@waffles
 	m-all-e@disillusion
+endmap
+
+map m-old_deep-e -projection extended
+	m-all-e@pinkp
+	m-all-e@doh
+	m-all-e@coldfeet
+	m-all-e@wonder
+	m-all-e@god
+	m-all-e@deep
 endmap
 
 centreline

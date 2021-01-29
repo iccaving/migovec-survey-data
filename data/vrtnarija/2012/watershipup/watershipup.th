@@ -5,7 +5,10 @@ input watershipup-e.th2
 
 map m-all-e -projection extended
     watershipup-1e
+    watershipup-2e
 endmap
+
+join watershipup-1e watershipup-2e
 
 
 input watershipup-p.th2

@@ -1,6 +1,18 @@
 
 survey wonder -title "System Migovec"
 
+
+input wonder-e.th2
+
+map m-all-e -projection extended
+    wonder-1e
+    wonder-2e
+    wonder-3e
+endmap
+
+join wonder-3e wonder-2e
+join wonder-2e wonder-1e
+
 input wonder-p.th2
 
 map m-all-p -projection plan

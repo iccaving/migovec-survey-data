@@ -1,0 +1,89 @@
+encoding  utf-8
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      VRTNARIJA (GARDENER's WORLD)                                |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../data/system_migovec.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
+input "../../layouts/user_label.thl"
+
+#----------------------------------------------------------------------------------|
+# select the relevant map definitions, and levels within those maps
+#select m-all-p@vrtnarija.vrtnarija_vilinska.system_migovec -map-level 0
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view, using the LAYOUT overview1
+layout plan
+	copy base-p
+	copy colour-by-new
+	copy user_label
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: XXXX<br><br>Vilinska Jama<br>kat. št.: YYYYY<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: XXXX<br><br>Vilinska Jama<br>Cadastral number: XXXX<br>"
+	code tex-map
+	\framethickness=0.5mm
+	\def\maplayout{
+	\legendbox{-5}{99}{NW}{\size[26]\the\cavename}
+	\legendbox{-5}{95}{NW}{\size[10]\the\comment}
+	\legendbox{5}{70}{NW}{\scalebar}
+	\legendbox{5}{65}{NW}{\northarrow}
+	}
+	scale 1 2000
+
+	code metapost
+    max_label_level("2"); % yeah, now it works!
+	endcode
+endlayout
+language sl
+#export map -projection plan -o ../../outputs/vrtnarija_plan_SLO.pdf -layout plan
+language en
+#export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
+
+#----------------------------------------------------------------------------------|
+# export an ELEVATION view
+
+layout ee
+	copy base-e
+	copy colour-by-new
+	copy user_label
+
+	symbol-assign point water-flow MY
+	symbol-colour point water-flow [10 10 80]
+
+
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: XXXX<br><br>Vilinska Jama<br>kat. št.: YYYYY<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: XXXX<br><br>Vilinska Jama<br>Cadastral number: XXXX<br>"
+
+	copy show-centreline
+	colour map-fg [95 95 82]
+	scale 1 4000
+	grid-size 10 10 100 m
+	map-header 0 0 off
+	code metapost
+    max_label_level("2"); % yeah, now it works!
+	endcode
+endlayout
+
+select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
+
+language sl
+export map -projection extended -o ../../outputs/vrtnarija_EE.pdf -layout ee
+language en
+#export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
+
+#----------------------------------------------------------------------------------|
+# export a .3d model, which can be opened in AVEN and LOCH
+#export model -o ../../outputs/vrtnarija.3d -fmt survex
+
+#----------------------------------------------------------------------------------|
+# export a .lox model, which can be opened in LOCH only
+#export model -o ../../outputs/vrtnarija.lox

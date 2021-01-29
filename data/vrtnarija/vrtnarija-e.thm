@@ -8,6 +8,8 @@ map m-all-e -projection extended
 	m-kangaroo_branch-e
 	m-s_extensions-e
 	m-watership-e
+	m-yorkshire_extensions-e
+	m-below_balamory-e
 endmap
 
 map m-entrance-e -projection extended
@@ -47,11 +49,19 @@ map m-beyond-consort-e -projection extended
 endmap
 
 map m-friendship-e -projection extended
+	m-all-e@fallsrd
+	m-all-e@lowerfallsrd
+	#m-all-e@fools_road ## this is because the scrap is extremely small
 	m-all-e@friendship
+	m-all-e@xanadu
+	m-all-e@euphrates2
+	m-all-e@euphrates
 	m-all-e@xanadont
+	m-all-e@500m
+	m-all-e@lowerpleasures
+	m-all-e@2ndtimelucky
 	m-all-e@cuckoos_nest
 	m-all-e@hydrophobia
-	m-all-e@stupid
 	m-all-e@pushyourluck
 	m-all-e@agartha
 	m-all-e@time_bandits
@@ -60,6 +70,11 @@ map m-friendship-e -projection extended
 	m-all-e@straightjacket
 	m-all-e@dwarf_pine
 	m-all-e@gravity
+	m-all-e@belowzimmer
+	m-all-e@eggsplosive
+	break
+	m-all-e@korita
+	m-all-e@blackknight
 endmap
 
 map m-below-friendship-e -projection extended
@@ -81,17 +96,24 @@ map m-below-friendship-e -projection extended
 endmap
 
 map m-s_extensions-e -projection extended
+	m-all-e@sicsempertyrannis
+	m-all-e@jericho
+	m-all-e@jericho2
+	m-all-e@squidgygoodness
+	m-all-e@jetstream
 	m-all-e@choke-a-bloke
 	m-all-e@emptyquarter
 	m-all-e@meridianway
 	m-all-e@finaldraft
 	m-all-e@firstdraft
-	m-all-e@jetstream
 	m-all-e@blast
 	m-all-e@pleasurepalace
 endmap
 
 map m-kangaroo_branch-e -projection extended
+	m-all-e@metal_aven
+	m-all-e@intravenus_de_milo
+	break
 	m-all-e@kangaroo01
 	m-all-e@zubafu
 	m-all-e@bonus
@@ -102,11 +124,45 @@ map m-kangaroo_branch-e -projection extended
 	m-all-e@dangermouse
 	m-all-e@greenback
 	m-all-e@giblet_breakfast
-
+	m-all-e@haemertight_crawl
+	m-all-e@cheesecake
+	m-all-e@keti
+	m-all-e@worm
+	m-all-e@ride_the_lightning
+	m-all-e@dark_tranquillity
+	m-all-e@mirage_canyon
+	m-all-e@wet_hammer
+	m-all-e@walk_the_line
+	m-all-e@walk_the_line_b
+	m-all-e@happy_monday
+	m-all-e@free_amalgamation
+	m-all-e@roaring
 endmap
 
 map m-watership-e -projection extended
+	m-all-e@mad_cow
+	m-all-e@republica
+	m-all-e@insomnia
+	m-all-e@dream2
+	m-all-e@daydreamers
+	m-all-e@penguinsegg
+	m-all-e@winterjourney
+	m-all-e@watershipup
 	m-all-e@watershipdown
+endmap
+
+map m-yorkshire_extensions-e -projection extended
+	m-all-e@slinging
+	m-all-e@labyrinth
+	m-all-e@yorkshire
+	m-all-e@curiousandcuriouser
+	m-all-e@curiousandcuriouser2
+endmap
+
+map m-below_balamory-e -projection extended
+	m-all-e@pick_your_poison
+	m-all-e@clapton
+	m-all-e@AJA
 endmap
 
 centreline
@@ -132,10 +188,13 @@ centreline
 	
 	# Captain K
 	extend left 13@bonus
+	
 	extend left 24@kangaroo01 23@kangaroo01
 	extend left 23@kangaroo01 22@kangaroo01
 	extend left 22@kangaroo01
-	extend right 17@kangaroo01
+	extend vertical 17@kangaroo01 16@kangaroo01
+	extend vertical 16@kangaroo01 15@kangaroo01
+	extend right 15@kangaroo01
 	extend right 27@mudslump
 	extend left 8@dangermouse
 	extend right 5@greenback INLET@greenback
@@ -147,11 +206,10 @@ centreline
 	extend right 8@roaring
 	
 	extend right 6@mirage_canyon 5@mirage_canyon
-	extend right 5@mirage_canyon
+	extend vertical 5@mirage_canyon 4@mirage_canyon
 	extend left 4@mirage_canyon 3@mirage_canyon
 	extend left 3@mirage_canyon
 	
-	extend left 1@intravenus_de_milo 2@intravenus_de_milo
 	extend left 14@mudslump 13@mudslump
 	extend left 13@mudslump
 	extend right 7@mudslump
@@ -171,6 +229,7 @@ centreline
 	extend left 21@greed
 	extend right 15@mad_cow
 	extend left 13@mad_cow
+	extend left 6@mad_cow
 	extend right 25@soda
 	extend left 35@soda
 	extend left 30@cascade
@@ -178,6 +237,7 @@ centreline
 	extend left 22@blind
 	extend left 15@stagger_lee
 	extend right 13@republica
+	extend right 23@republica
 	extend right 14@insomnia
 	extend left 1@watershipdown 3@watershipdown
 	extend left 3@watershipdown
@@ -197,10 +257,13 @@ centreline
 	# Yorkshire
 	extend left 4@lowerpleasures
 	extend right 6@2ndtimelucky
+	extend left 7@labyrinth
 	
 	#Xanadu/Cuckoo's Nest
 	extend left 12@xanadu 13@xanadu
-	extend left 8@xanadu 7@xanadu
+	extend right 8@xanadu 7@xanadu
+	extend right 7@xanadu 6@xanadu
+	extend left 5@xanadu
 	extend left 27@rejuvenation_rift
 	extend left 12@time_bandits
 	extend right 16@rejuvenation_rift
@@ -215,6 +278,7 @@ centreline
 	extend right 3@belowzimmer 1@belowzimmer
 	extend left 1@belowzimmer
 	extend right 7@eggsplosive
+	extend left 4@korita
 	extend left 4@apuntoofar1
 	
 	# Snap off bottom of Korita
@@ -262,8 +326,10 @@ centreline
 	# Below Stuck In Paradise
 	extend left 21@kneekiller
 	extend right 5@bravenewworld
+	extend right 2@jericho2 1@jericho2
 	extend left 17@meridianway
-	extend right 10@firstdraft
+	extend right 9@firstdraft 8@firstdraft
+	extend right 7@firstdraft
 	extend left 15@emptyquarter
 	
 	# Follow Blast rather than Jericho

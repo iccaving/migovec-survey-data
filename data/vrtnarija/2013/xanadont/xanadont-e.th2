@@ -1,104 +1,81 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 685.000000 340.000000
-##XTHERION## xth_me_area_zoom_to 400
-
-
+##XTHERION## xth_me_area_zoom_to 100
 
 scrap xanadont-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
 line wall -subtype unsurveyed
   198.2536 192.8594
   198.2536 192.8594 201.5 212.0 214.5 215.75
-  smooth off
 endline
 
 line wall -subtype unsurveyed
   211.75 227.75
   211.75 227.75 208.39 227.13 200.8581 218.0483
   192.3 207.73 184.3502 195.3872 184.3502 195.3872
-  smooth off
 endline
 
 point 147.58 179.964 station -name 10
-
 point 179.86 174.694 station -name 9
-
 point 221.49 162.564 station -name 8
-
 endscrap
-
 
 
 scrap xanadont-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-line wall
-  141.5613 127.026
-  141.5613 127.026 144.0892 176.9517 152.3048 173.1599
-  160.5205 169.368 182.6394 157.3606 193.3829 155.4647
-  204.1264 153.5688 236.9889 150.4089 243.9405 152.9368
-  smooth off
+line wall 
+  109.3309 115.6506
+  137.1376 104.9071
 endline
 
-line wall
+line wall 
+  147.881 123.8662
+  147.881 123.8662 151.0409 174.4238 159.2565 170.632
+  167.4722 166.8401 182.6394 157.3606 193.3829 155.4647
+  204.1264 153.5688 236.9889 150.4089 243.9405 152.9368
+endline
+
+line wall 
   233.829 188.3271
   232.4071 182.6394 226.1377 181.2069 217.6051 180.5065
   194.5086 178.6106 195.0023 183.9033 198.2017 193.6989
-  smooth off
 endline
 
-line wall
+line wall 
   184.9303 195.5948
   179.2821 188.3271 166.2279 191.882 158.3777 194.7258
   150.5274 197.5697 145.3532 199.7026 145.3532 199.7026
-  smooth off
   145.3532 199.7026 130.1859 183.9033 124.4981 161.1524
-  118.8104 138.4015 116.2825 132.0818 116.2825 132.0818
-  smooth off
-  116.2825 132.0818 108.6989 132.0818 109.3309 135.2416
-  smooth off
+  118.8104 138.4015 121.6542 137.7695 121.6542 137.7695
+  121.6542 137.7695 118.1784 136.5056 118.8104 139.6654
 endline
 
 point 147.7 180.13 station -name 10
-
 point 133.48 133.68 station -name 11
-
 point 179.98 174.86 station -name 9
-
 point 221.61 162.73 station -name 8
-
 endscrap
-
 
 
 scrap xanadont-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line wall
+line wall 
   243.9405 152.9368
   250.8922 155.4647 257.8439 173.1599 269.8513 175.0558
   281.8587 176.9517 357.6952 185.1673 357.6952 185.1673
-  smooth off
 endline
 
-line wall
+line wall 
   357.6952 212.342
   357.6952 212.342 236.5407 199.174 233.829 188.3271
-  smooth off
 endline
 
 point 265.46 190.92 station -name 7
-
 point 340.05 196.91 station -name 6
-
 point 357.94 199.9 station -name 5
-
 point 383.26 193.99 station -name 4
-
 point 411.19 183.28 station -name 3
-
 point 469.37 192.5 station -name 2
-
 point 550.52 208.32 station -name 1
-
 endscrap
-
 

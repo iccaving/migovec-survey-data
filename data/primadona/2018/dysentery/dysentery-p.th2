@@ -1487,7 +1487,7 @@ line contour
   883.0 453.0 832.14 427.94 787.07 470.47
 endline
 
-line label -text Dysentry -scale s
+line u:label_MY -attr lvl 1 -attr text Dysentry -scale s
   150.0 766.0
   150.0 766.0 1278.0 846.0 1918.0 1102.0
 endline

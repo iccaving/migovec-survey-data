@@ -3,108 +3,10 @@ from os.path import isfile, join, dirname, abspath
 import sys
 import re
 import argparse
+import shutil
 
-# Classes
-
-
-class SourceFile:
-    name = None
-    namespace = []
-
-    def __init__(self, name, namespace=[]):
-        self.name = name
-        self.dirname = dirname(name)
-        self.namespace = namespace.copy()
-
-
-class Survey:
-    source = None
-    sources = []
-    survey_dict = {}
-
-    def __init__(self, source_path):
-        self.source = SourceFile(source_path, [])
-        self.parse(self.source)
-
-    def parse(self, source_file):
-        inputReg = r"(?:\n|^)\s*(?:input|source)\s+\"?([^\s\"]+)?"
-        surveyReg = r"(?:\n|^)\s*survey\s+(\S+)"
-        endSurveyReg = r"(?:\n|^)\s*endsurvey"
-
-        namespace = source_file.namespace.copy()
-        data = ""
-
-        with open(source_file.name, "r") as file:
-            data = file.read()
-
-        for line in data.splitlines():
-            match = re.match(surveyReg, line)
-            if match:
-                namespace.append(match.group(1))
-                self.survey_dict[".".join(namespace)] = source_file.name
-                continue
-
-            match = re.match(endSurveyReg, line)
-            if match:
-                namespace.pop()
-                continue
-
-            match = re.match(inputReg, line)
-            if match:
-                name = abspath(join(source_file.dirname, match.group(1)))
-                new_file = SourceFile(name, namespace)
-                self.sources.append(new_file)
-                self.parse(new_file)
-
-    @staticmethod
-    def convert_from_internal(path):
-        parts = path.split(".")
-        return "{}@{}".format(parts[-1], ".".join(list(reversed(parts[0:-1]))))
-
-    @staticmethod
-    def convert_to_internal(path):
-        parts = path.split("@")
-        if len(parts) == 1:
-            return parts[0]
-        return "{}.{}".format(".".join(list(reversed(parts[1].split(".")))), parts[0])
-
-    @staticmethod
-    def get_survey_name(key):
-        return key.split(".")[-1]
-
-    @staticmethod
-    def get_survey_namespace(key):
-        return ".".join(list(reversed(key.split(".")[0:-1])))
-
-    def get_survey_key(self, name, namespace):
-        if name and namespace:
-            key = "{}.{}".format(".".join(namespace.split(".")[::-1]), name)
-            if key in self.survey_dict:
-                return key
-        else:
-            similair = []
-            for key in self.survey_dict.keys():
-                if name == key:
-                    return key
-                if name in key:
-                    similair.append(key)
-            if len(similair) == 1:
-                return similair[0]
-            elif len(similair) > 1:
-                raise Exception(
-                    "Multiple surveys match that name:\n\t{}".format(
-                        "\n\t".join(self.convert_from_internal(key) for key in similair)
-                    )
-                )
-            else:
-                raise Exception("No survey matches that name")
-        return None
-
-    def get_survey_file(self, key):
-        if key in self.survey_dict:
-            return self.survey_dict[key]
-        return None
-
+from helpers.survey import Survey, SurveyLoader, NoSurveysFoundException
+from helpers.therion import compile_template
 
 # Parse arguments
 
@@ -118,21 +20,14 @@ parser.add_argument(
     help='The selector for the survey to produce a scrap for.  e.g. "roundpond@vrtnarija.vrtnarija_vilinska.system_migovec"',
 )
 parser.add_argument("--projection", help="The projection to produce", default="plan")
-parser.add_argument("--format", help="The output format", default="th2")
+parser.add_argument("--format", help="The output format. Either th2 for producing skeleton for drawing or plt for visualising in aven/loch", default="th2")
 parser.add_argument("--out", help="Output path")
+parser.add_argument("--therion-path", help="Path to therion binary", default="therion")
 args = parser.parse_args()
 
 ENTRY_FILE = abspath(args.survey_file)
 PROJECTION = args.projection
-TARGET_SELECTION = args.survey_selector
-TARGET_SURVEY = (
-    args.survey_selector.split("@")[0]
-    if "@" in args.survey_selector
-    else args.survey_selector
-)
-TARGET_NAMESPACE = (
-    args.survey_selector.split("@")[1] if "@" in args.survey_selector else ""
-)
+TARGET = args.survey_selector
 OUTPUT = args.out
 FORMAT = args.format
 
@@ -141,57 +36,56 @@ if FORMAT not in ["th2", "plt"]:
     exit(1)
 
 # Normalise name, namespace, key, file path
-
-survey = Survey(ENTRY_FILE)
-try:
-    survey_key = survey.get_survey_key(TARGET_SURVEY, TARGET_NAMESPACE)
-except Exception as e:
-    print(e)
-    exit(1)
-
-survey_name = Survey.get_survey_name(survey_key)
-survey_namespace = Survey.get_survey_namespace(survey_key)
-survey_filepath = survey.get_survey_file(survey_key)
+print("Parsing survey")
+loader = SurveyLoader(ENTRY_FILE)
+survey = loader.get_survey_by_id(TARGET)
+if not survey:
+    raise NoSurveysFoundException("No survey found with that selector")
 
 # Produce the parseable XVI file
-
-xvi_file = """source {th_file}
+print("Compiling 2D XVI file")
+template = """source {th_file}
 layout test
   scale 1 500
 endlayout
 
-select {name}@{namespace}
+select {selector}
 
-export map -projection {projection} -o xvi.xvi -layout test -layout-debug station-names"""
+export map -projection {projection} -o {tmpdir}/xvi.xvi -layout test -layout-debug station-names"""
+template_args = {
+    "th_file": ENTRY_FILE.replace("\\", "/"),
+    "projection": PROJECTION,
+    "selector": survey.therion_id,
+    # tmpdir provided in compile_template
+}
+log, tmpdir = compile_template(template, template_args, cleanup=False, therion_path=args.therion_path)
 
-with open("xvi.thconfig", "w+") as f:
-    f.write(
-        xvi_file.format(
-            th_file=ENTRY_FILE,
-            projection=PROJECTION,
-            name=survey_name,
-            namespace=survey_namespace,
-        )
-    )
-
-os.system("therion xvi.thconfig")
-os.remove("xvi.thconfig")
-
+print("Parsing 2D XVI file")
 # Parse the XVI file
-
 stations = {}
 lines = []
-with open("xvi.xvi", "r") as f:
-    xvi_lines = f.readlines()
-    for line in xvi_lines:
-        match = re.search("{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(\S+)\s*}", line)
+with open(join(tmpdir, "xvi.xvi"), "r", encoding="utf-8") as f:
+    xvi_content = f.read()
+    xvi_stations, xvi_shots = xvi_content.split("XVIshots")
+
+    # Extract all the stations
+    for line in xvi_stations.split("\n"):
+        if line:
+            print(line)
+        match = re.search("{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s([^@]+)(?:@([^\s}]*))?\s*}", line)
         if match:
             x = match.groups()[0]
             y = match.groups()[1]
-            station = Survey.convert_to_internal(match.groups()[2])
+            station_number = match.groups()[2]
+            namespace = match.groups()[3]
+            namespace_array = namespace.split(".") if namespace else []
+            station = station_number
+            if len(namespace_array) > 1:
+                station = "{}@{}".format(station_number, ".".join(namespace_array[0:-1]))
             stations["{}.{}".format(x, y)] = [x, y, station]
 
-    for line in xvi_lines:
+    # Extract all the lines
+    for line in xvi_shots.split("\n"):
         match = re.search(
             "^\s*{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s*.*}",
             line,
@@ -201,16 +95,16 @@ with open("xvi.xvi", "r") as f:
             y1 = match.groups()[1]
             x2 = match.groups()[2]
             y2 = match.groups()[3]
-            station1 = stations["{}.{}".format(x1, y1)][2]
-            station2 = stations["{}.{}".format(x2, y2)][2]
+            key1 = "{}.{}".format(x1, y1)
+            key2 = "{}.{}".format(x2, y2)
+            station1 = stations[key1][2] if key1 in stations else None  # Splays won't have stations
+            station2 = stations[key2][2] if key2 in stations else None
             lines.append([x1, y1, x2, y2, station1, station2])
-os.remove("xvi.xvi")
+shutil.rmtree(tmpdir)
 
-output_file_name = "{name}-{projection_short}.{format}".format(
-    name=TARGET_SURVEY, projection_short=PROJECTION[0], format=FORMAT
-)
-
-output_path = OUTPUT if OUTPUT else join(dirname(survey_filepath), output_file_name)
+output_file_name = "{name}-{projection_short}.{format}".format(name=survey.name, projection_short=PROJECTION[0], format=FORMAT)
+output_path = OUTPUT if OUTPUT else join(dirname(survey.file_path), output_file_name)
+print("Writing output to: {}".format(output_path))
 
 # Write TH2
 if FORMAT == "th2":
@@ -242,9 +136,7 @@ endscrap"""
     th2_points = []
     th2_names = []
     for line in lines:
-        th2_lines.append(
-            th2_line.format(x1=line[0], y1=line[1], x2=line[2], y2=line[3])
-        )
+        th2_lines.append(th2_line.format(x1=line[0], y1=line[1], x2=line[2], y2=line[3]))
         coords1 = "{}.{}".format(line[0], line[1])
         if coords1 not in seen:
             seen.add(coords1)
@@ -261,7 +153,7 @@ endscrap"""
             f.write(th2_file_header)
             f.write(
                 th2_file.format(
-                    name=survey_name,
+                    name=survey.name,
                     points="\n".join(th2_points),
                     lines="\n".join(th2_lines),
                     names="\n".join(th2_names),
@@ -274,7 +166,7 @@ endscrap"""
         with open(output_path, "a") as f:
             f.write(
                 th2_file.format(
-                    name="DUPLICATE_" + survey_name,
+                    name="DUPLICATE_" + survey.name,
                     points="\n".join(th2_points),
                     lines="\n".join(th2_lines),
                     names="\n".join(th2_names),
@@ -286,22 +178,16 @@ endscrap"""
 # Plot file (for viewing EE in 3D viewer)
 if FORMAT == "plt":
     plt_command = """{type} 0 {x} {y} S{station} P -9 -9 -9 -9"""
-
-    plt_file = """NX D 1 1 1 C{name}.3d\n{points}"""
-
+    plt_file = """NX D 1 1 1 C{name}.plt\n{points}"""
     plt_lines = []
     for line in lines:
-        plt_lines.append(
-            plt_command.format(type="M", x=line[0], y=line[1], station=line[4])
-        )
-        plt_lines.append(
-            plt_command.format(type="D", x=line[2], y=line[3], station=line[5])
-        )
+        plt_lines.append(plt_command.format(type="M", x=line[0], y=line[1], station=line[4]))
+        plt_lines.append(plt_command.format(type="D", x=line[2], y=line[3], station=line[5]))
 
     with open(output_path, "w+") as f:
         f.write(
             plt_file.format(
-                name=survey_name,
+                name=survey.name,
                 points="\n".join(plt_lines),
             )
         )

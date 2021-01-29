@@ -1,60 +1,80 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust 0 0 513.000000 388.000000
+##XTHERION## xth_me_area_zoom_to 400
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  122.81 -33.50
-  95.34 -16.97
-endline
-line survey 
-  52.35 10.98
-  95.34 -16.97
-endline
-line survey 
-  52.35 10.98
-  8.83 27.68
-endline
-line survey 
-  8.83 27.68
-  -29.29 49.65
-endline
-line survey 
-  -29.29 49.65
-  -47.15 59.96
-endline
-line survey 
-  -47.15 59.96
-  -86.60 60.67
-endline
-line survey 
-  -122.81 51.61
-  -86.60 60.67
-endline
-line survey 
-  -122.81 -13.19
-  -122.81 51.61
-endline
-line survey 
-  -111.84 -5.79
-  -122.81 -13.19
-endline
-line survey 
-  -36.23 -60.67
-  -111.84 -5.79
-endline
-endscrap
+
 
 scrap penguinsegg-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 95.34 -16.97 station -name 10
-point 122.81 -33.50 station -name 11
-point 52.35 10.98 station -name 9
-point 8.83 27.68 station -name 8
-point -29.29 49.65 station -name 7
-point -47.15 59.96 station -name 6
-point -86.60 60.67 station -name 5
-point -122.81 51.61 station -name 4
-point -122.81 -13.19 station -name 3
-point -111.84 -5.79 station -name 2
-point -36.23 -60.67 station -name 1
+
+line ceiling-step -reverse on
+  clip off
+  108.25 241.0
+  138.25 241.25
+endline
+
+point 131.0 75.0 u:label_MY -attr text "Penguin's Egg" -attr level 1 -attr align br
+
+point 127.0 225.0 water-flow -orientation 171.6
+
+line wall
+  389.2217 167.5342
+  381.8995 173.2891 355.4497 193.3274 350.9322 199.5389
+  346.4148 205.7502 290.5118 227.2079 285.9944 224.3846
+  281.4769 221.5612 259.4551 242.4551 254.9376 241.8894
+  250.4201 241.3248 237.997 256.571 236.8677 262.2177
+  235.7383 267.8644 192.1348 273.2949 183.7882 270.1231
+  176.7301 267.4409 169.9491 267.3713 163.2189 268.7932
+  156.4886 270.215 149.8093 273.1284 142.9525 276.4124
+  136.0967 279.6964 129.0635 283.351 121.6277 286.2551
+  smooth off
+endline
+
+line wall
+  234.0052 133.0397
+  234.0052 133.0397 183.1094 164.9269 170.1216 180.7378
+  157.1339 196.5486 136.8062 206.7128 139.0649 220.8297
+  141.3236 234.9466 138.4993 248.4986 144.1471 241.7226
+  149.7939 234.9466 180.8507 230.9938 181.4154 234.3819
+  181.981 237.7699 194.4031 256.9689 199.4853 250.1927
+  204.5665 243.4167 224.3305 227.0411 229.4127 227.6058
+  234.4948 228.1714 244.6592 215.183 242.4004 211.7949
+  240.1417 208.4067 267.8103 186.3846 272.3278 190.3372
+  276.8453 194.2899 301.6905 201.0661 305.6433 198.2427
+  309.5961 195.4194 317.5017 194.8547 319.1958 192.0313
+  320.8898 189.2079 373.4046 157.0214 376.7927 153.0688
+  smooth off
+endline
+
+line wall
+  103.7423 230.2156
+  111.6469 226.8275 117.05 174.7461 122.6727 175.2678
+  145.9887 177.4314 146.705 177.0135 147.9771 168.3393
+  149.4429 158.345 227.7799 122.8998 227.7799 122.8998
+  smooth off
+endline
+
+point 351.34 178.03 station -name 10
+
+point 378.81 161.5 station -name 11
+
+point 308.35 205.98 station -name 9
+
+point 264.83 222.68 station -name 8
+
+point 226.71 244.65 station -name 7
+
+point 208.85 254.96 station -name 6
+
+point 169.4 255.67 station -name 5
+
+point 133.19 246.61 station -name 4
+
+point 133.19 181.81 station -name 3
+
+point 144.16 189.21 station -name 2
+
+point 219.77 134.33 station -name 1
+
 endscrap
+
+

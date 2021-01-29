@@ -5,7 +5,10 @@ input republica-e.th2
 
 map m-all-e -projection extended
     republica-1e
+	republica-2e
 endmap
+
+join republica-1e republica-2e
 
 
 input republica-p.th2

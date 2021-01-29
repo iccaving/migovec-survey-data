@@ -1,0 +1,97 @@
+encoding  utf-8
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      GITHUB CI GENERATION OF:                                    |
+#                                                                                  |
+#                      M2 M16 M18 (THE OLD SYSTEM)                                 |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../data/system_migovec.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../layouts/overview-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/base-p.thl"
+input "../../layouts/user_label.thl" # input this to have the label hierarchy
+
+#----------------------------------------------------------------------------------|
+# export a PLAN view, using the LAYOUT overview_plan_SLO or ENG
+layout plan
+	copy base-p
+	copy user_label
+	scale 1 2000
+	#copy colour-by-depth
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
+	code tex-map
+	\framethickness=0.5mm
+	\def\maplayout{
+	\legendbox{100}{180}{NE}{\size[26]\the\cavename}
+	\legendbox{0}{170}{NW}{\size[10]\the\comment}
+	\legendbox{30}{170}{NW}{\scalebar}
+	\legendbox{30}{150}{NW}{\northarrow}
+	}
+endlayout
+
+source
+	map local-p -projection plan
+		m-all-p@m2m16m18.system_migovec
+		m2m16m18@system_migovec
+	endmap
+endsource
+
+select local-p
+
+language sl
+export map -projection plan -o ../../outputs/m2_m16_m18_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../outputs/m2_m16_m18_plan_SLO.svg -layout plan
+
+language en
+export map -projection plan -o ../../outputs/m2_m16_m18_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/m2_m16_m18_plan_ENG.svg -layout plan
+
+#----------------------------------------------------------------------------------|
+# export an ELEVATION view
+layout ee
+	copy base-e
+	scale 1 2000
+	grid-size 10 10 100 m
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
+	code tex-map
+	\def\maplayout{
+	\legendbox{1}{99}{NW}{\the\cavename}
+	\legendbox{1}{97}{NW}{\size[10]\the\comment}
+	\legendbox{1}{80}{NW}{\scalebar}	}
+endlayout
+
+source
+	map local-e -projection extended
+		m-all-e@m2m16m18.system_migovec [10 0 m] none
+		m2m16m18@system_migovec [10 0 m] none
+	endmap
+endsource
+
+select local-e
+
+language sl
+export map -projection extended -o ../../outputs/m2m16m18_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/m2m16m18_EE_SLO.svg -layout ee
+language en
+export map -projection extended -o ../../outputs/m2m16m18_EE_ENG.pdf -layout ee
+export map -projection extended -o ../../outputs/m2m16m18_EE_ENG.svg -layout ee
+
+#----------------------------------------------------------------------------------|
+# export 3d MODELS
+
+# export a .3d model, which can be opened in AVEN and LOCH
+select m2m16m18@system_migovec
+export model -o ../../outputs/m2_m16_m18.3d -fmt survex
+
+# export a .lox model, which can be opened in LOCH only
+export model -o ../../outputs/m2_m16_m18.lox

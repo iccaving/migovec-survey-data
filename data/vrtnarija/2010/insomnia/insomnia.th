@@ -5,8 +5,10 @@ input insomnia-e.th2
 
 map m-all-e -projection extended
     insomnia-1e
+	insomnia-2e
 endmap
 
+join insomnia-1e insomnia-2e
 
 input insomnia-p.th2
 
