@@ -4,6 +4,16 @@ encoding  utf-8
 
 scrap eggsplosive-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+line border -close on -id eggsplosive-1e_water_1 -visibility on
+  186.3978 292.9108
+  104.6766 292.9108
+  134.9777 264.4461
+endline
+
+area water 
+  eggsplosive-1e_water_1
+endarea
+
 point 383.073 258.962 u:label_MY -attr text Eggsplosive -attr lvl 3 -attr align br
 point 303.213 182.997 water-flow -orientation 181.200870386292
 line rock-border -clip off -close on

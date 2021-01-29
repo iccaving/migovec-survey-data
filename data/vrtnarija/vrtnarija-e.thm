@@ -10,6 +10,7 @@ map m-all-e -projection extended
 	m-watership-e
 	m-yorkshire_extensions-e
 	m-below_balamory-e
+	m-korita-e
 endmap
 
 map m-entrance-e -projection extended
@@ -70,12 +71,20 @@ map m-friendship-e -projection extended
 	m-all-e@straightjacket
 	m-all-e@dwarf_pine
 	m-all-e@gravity
+endmap
+
+map m-korita-e -projection extended
 	m-all-e@belowzimmer
 	m-all-e@eggsplosive
 	break
 	m-all-e@korita
 	m-all-e@blackknight
+	m-all-e@whitebishop
+	m-all-e@sidewinder
+	m-all-e@stalemate
+	m-all-e@crack_in_time
 endmap
+
 
 map m-below-friendship-e -projection extended
 	m-all-e@candyMountain
