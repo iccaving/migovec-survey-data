@@ -222,14 +222,17 @@ centreline
 	extend left 6@fallsrd
 	extend left 1@candyMountain
 	extend left 31@leprachaun
+	extend ignore 45@mad_cow 44@mad_cow #JIMMY experiments
+#	extend ignore 10@cow
 	extend left 11@cascade 12@cascade
 	extend right 11@cascade
 	extend right 9@blind
 	extend left 14@mushroom
 	extend left 21@greed
 	extend right 15@mad_cow
-	extend left 13@mad_cow
+	extend left 13@mad_cow #JIMMY Experiments
 	extend left 6@mad_cow
+	extend left 2@cow #Must be flipped the same way as mad cow sump
 	extend right 25@soda
 	extend left 35@soda
 	extend left 30@cascade

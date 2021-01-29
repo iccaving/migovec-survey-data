@@ -65,7 +65,7 @@ layout ee
 
 	copy show-centreline
 	colour map-fg [95 95 82]
-	scale 1 4000
+	scale 1 2000
 	grid-size 10 10 100 m
 	map-header 0 0 off
 	code metapost
@@ -78,11 +78,11 @@ select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
 language sl
 export map -projection extended -o ../../outputs/vrtnarija_EE.pdf -layout ee
 language en
-#export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-#export model -o ../../outputs/vrtnarija.3d -fmt survex
+export model -o ../../outputs/vrtnarija.3d -fmt survex
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only

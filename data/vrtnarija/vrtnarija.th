@@ -7,7 +7,7 @@ survey vrtnarija -title "Vrtnarija"
 	#equate 15@mushroom THE_FRIDGE
 	#equate 12@friend CAMP_X-RAY
 	#equate 9@metal_aven METAL_CAMP
-	
+	equate 1@leprachaun 45@mad_cow
 	###__________2000____________###
 	input ./2000/bclent2/bclent2.th #bclent is the original but wrong survey!
 	input ./2000/laurel/laurel.th
@@ -152,6 +152,7 @@ survey vrtnarija -title "Vrtnarija"
 	
 	equate 2@nitro 16@gold
 	equate 14@mad_cow 24@weepeople
+	equate 13@mad_cow 8@nevermore #New, written in original svx file, makes sense in 3d
 	equate 11@balamory 15@doublethink
 	equate 17@smash 1@potato
 	equate 29@miles 1@smash
@@ -316,7 +317,6 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@mirage_canyon 11@wet_hammer
 	equate 6@mirage_canyon 1@dark_tranquillity
 	equate 15@metal_aven 6@mudslump
-	equate 7@mad_cow 12@republica # changed from 11@mad_cow....
 	equate 3@fools_road 5@fallsrd
 	
 	join mirage_canyon-1p@mirage_canyon wet_hammer-1p@wet_hammer
