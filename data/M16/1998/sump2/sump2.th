@@ -1,6 +1,12 @@
 
 survey sump2 -title "passage leading down towards sump"
 
+input sump2-e.th2
+
+map m-all-e -projection extended
+    sump2-1e
+endmap
+
 input sump2-p.th2
 
 map m-all-p -projection plan

@@ -1,0 +1,247 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {-1862.807400 1 1.0} {1508.609300 {}} "/Users/AchilleTalon/Desktop/Screen%20Shot%202021-01-29%20at%2014.12.27.png" 0 {}
+
+scrap DELETE-ME-survey-legs-marwood-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line survey 
+  641.74 610.28
+  714.6 629.8
+endline
+
+line survey 
+  599.53 601.3
+  641.74 610.28
+endline
+
+line survey 
+  542.2 576.97
+  599.53 601.3
+endline
+
+line survey 
+  478.49 549.88
+  542.2 576.97
+endline
+
+line survey 
+  439.46 542.32
+  478.49 549.88
+endline
+
+line survey 
+  382.95 522.87
+  439.46 542.32
+endline
+
+line survey 
+  332.34 529.96
+  382.95 522.87
+endline
+
+line survey 
+  265.74 494.53
+  332.34 529.96
+endline
+
+line survey 
+  241.03 492.4
+  265.74 494.53
+endline
+
+line survey 
+  203.77 475.79
+  241.03 492.4
+endline
+
+line survey 
+  165.17 453.5
+  203.77 475.79
+endline
+
+line survey 
+  121.22 436.65
+  165.17 453.5
+endline
+
+line survey 
+  53.59 431.93
+  121.22 436.65
+endline
+
+line survey 
+  37.05 397.99
+  53.59 431.93
+endline
+
+line survey 
+  0.88 396.1
+  37.05 397.99
+endline
+
+line survey 
+  -36.18 404.69
+  0.88 396.1
+endline
+
+line survey 
+  -63.51 407.52
+  -36.18 404.69
+endline
+
+line survey 
+  -100.68 383.43
+  -63.51 407.52
+endline
+
+line survey 
+  -126.57 370.2
+  -100.68 383.43
+endline
+
+line survey 
+  -168.63 381.46
+  -126.57 370.2
+endline
+
+line survey 
+  -182.77 392.95
+  -168.63 381.46
+endline
+
+line survey 
+  -196.78 392.72
+  -182.77 392.95
+endline
+
+line survey 
+  -214.6 383.58
+  -196.78 392.72
+endline
+
+line survey 
+  -214.6 383.58
+  -196.51 386.18
+endline
+
+point 641.74 610.28 station-name -align tr -scale xs -text 2
+point 714.6 629.8 station-name -align tr -scale xs -text 1
+point 599.53 601.3 station-name -align tr -scale xs -text 3
+point 542.2 576.97 station-name -align tr -scale xs -text 4
+point 478.49 549.88 station-name -align tr -scale xs -text 5
+point 439.46 542.32 station-name -align tr -scale xs -text 6
+point 382.95 522.87 station-name -align tr -scale xs -text 7
+point 332.34 529.96 station-name -align tr -scale xs -text 8
+point 265.74 494.53 station-name -align tr -scale xs -text 9
+point 241.03 492.4 station-name -align tr -scale xs -text 10
+point 203.77 475.79 station-name -align tr -scale xs -text 11
+point 165.17 453.5 station-name -align tr -scale xs -text 12
+point 121.22 436.65 station-name -align tr -scale xs -text 13
+point 53.59 431.93 station-name -align tr -scale xs -text 14
+point 37.05 397.99 station-name -align tr -scale xs -text 15
+point 0.88 396.1 station-name -align tr -scale xs -text 16
+point -36.18 404.69 station-name -align tr -scale xs -text 17
+point -63.51 407.52 station-name -align tr -scale xs -text 18
+point -100.68 383.43 station-name -align tr -scale xs -text 19
+point -126.57 370.2 station-name -align tr -scale xs -text 20
+point -168.63 381.46 station-name -align tr -scale xs -text 21
+point -182.77 392.95 station-name -align tr -scale xs -text 22
+point -196.78 392.72 station-name -align tr -scale xs -text 23
+point -214.6 383.58 station-name -align tr -scale xs -text 24
+point -196.51 386.18 station-name -align tr -scale xs -text 25
+endscrap
+
+
+scrap marwood-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+point 292.3729 486.2288 water-flow -orientation 233
+point 375.0 453.9195 u:label_MY -align r -attr lvl 1 -attr text "Marwood Inlet"
+point 730.4026 782.3093 water-flow -orientation 180
+line wall 
+  -148.0887 357.3165
+  -148.0887 357.3165 -131.1654 360.7062 -122.6429 362.0458
+  -101.317 365.398 -79.58 366.0909 -58.4098 370.3166
+  -43.4974 373.2932 -29.3469 379.5402 -14.3944 382.3079
+  -3.2542 384.3699 8.403 383.0768 19.4237 385.7034
+  42.4505 391.1915 62.9344 404.7127 85.6876 411.2428
+  101.8414 415.8789 118.5756 418.2728 135.1875 420.8189
+  140.5912 421.6471 146.1899 421.3026 151.4831 422.6695
+  162.2132 425.4403 171.6308 432.0593 182.2034 435.3814
+  199.4496 440.8004 217.3539 443.9674 235.1695 447.0339
+  246.3918 448.9655 257.7498 450.0164 269.0678 451.2712
+  279.9983 452.483 292.1548 449.3655 301.9068 454.4492
+  315.8993 461.7433 320.3153 480.5963 332.6271 490.4661
+  343.2261 498.9628 355.9321 504.7444 368.6441 509.5339
+  375.7771 512.2214 383.4311 513.2587 390.8898 514.8305
+  408.1034 518.458 426.7613 517.1301 442.7966 524.3644
+  448.5273 526.9498 452.1097 533.0031 457.6271 536.0169
+  473.6995 544.7965 492.3455 547.704 509.5339 554.0254
+  522.3349 558.7333 535.2815 563.1492 547.6695 568.8559
+  562.5921 575.7303 575.7675 586.2614 591.1017 592.161
+  618.5976 602.7397 648.5157 605.4813 676.9068 613.3475
+  681.5352 614.6298 686.0862 616.1768 690.678 617.5847
+  703.386 621.4813 720.1688 619.1404 728.8136 629.2373
+  736.933 638.7205 733.4743 653.8455 734.1102 666.3136
+  735.0102 683.9601 731.3672 701.6212 731.9915 719.2797
+  732.2175 725.6707 734.1102 738.3475 734.1102 738.3475
+endline
+
+line wall 
+  702.3305 754.2373
+  702.3305 754.2373 702.1908 736.3862 700.2119 727.7542
+  698.688 721.1071 695.2114 715.0642 692.7966 708.6864
+  690.2649 701.9998 688.337 695.0697 685.3814 688.5593
+  683.5524 684.5306 681.1441 680.791 679.0254 676.9068
+  676.9068 673.0226 676.2588 667.8412 672.6695 665.2542
+  661.3192 657.0734 644.6342 662.2484 631.3559 657.839
+  627.6092 656.5948 624.2938 654.3079 620.7627 652.5424
+  617.2316 650.7768 613.7627 648.8812 610.1695 647.2458
+  604.2609 644.5565 598.3626 641.7497 592.161 639.8305
+  575.9519 634.8143 557.4719 636.978 542.3729 629.2373
+  537.7017 626.8425 534.6242 622.1534 530.7203 618.6441
+  527.5582 615.8015 524.9703 612.109 521.1864 610.1695
+  486.728 592.5075 443.3753 600.1244 407.839 584.7458
+  396.8734 580.0003 388.3782 570.8412 378.178 564.6186
+  370.6238 560.0103 363.1995 554.9016 354.8729 551.9068
+  344.3814 548.1333 333.1482 546.436 322.0339 545.5509
+  289.2815 542.9426 255.2788 557.1375 223.517 548.7288
+  211.1058 545.4431 202.0773 534.5084 190.678 528.6017
+  161.3259 513.3925 126.9379 507.9595 99.5763 489.4068
+  96.2698 487.1648 94.399 483.1878 91.1017 480.9322
+  83.1416 475.4869 73.2882 473.505 64.6186 469.2797
+  49.8494 462.0815 36.5652 451.7569 21.1864 445.9746
+  7.9575 441.0006 -6.3431 439.5626 -20.1271 436.4407
+  -29.6523 434.2833 -39.2111 432.2752 -48.7288 430.0848
+  -56.1572 428.3752 -63.7762 427.2955 -70.9746 424.7881
+  -82.014 420.9428 -92.44 415.4595 -102.7542 409.9576
+  -113.6487 404.1462 -133.2284 392.2519 -134.4605 390.8035
+endline
+
+point 641.74 610.28 station -name 2
+point 714.6 629.8 station -name 1
+point 599.53 601.3 station -name 3
+point 542.2 576.97 station -name 4
+point 478.49 549.88 station -name 5
+point 439.46 542.32 station -name 6
+point 382.95 522.87 station -name 7
+point 332.34 529.96 station -name 8
+point 265.74 494.53 station -name 9
+point 241.03 492.4 station -name 10
+point 203.77 475.79 station -name 11
+point 165.17 453.5 station -name 12
+point 121.22 436.65 station -name 13
+point 53.59 431.93 station -name 14
+point 37.05 397.99 station -name 15
+point 0.88 396.1 station -name 16
+point -36.18 404.69 station -name 17
+point -63.51 407.52 station -name 18
+point -100.68 383.43 station -name 19
+point -126.57 370.2 station -name 20
+point -168.63 381.46 station -name 21
+point -182.77 392.95 station -name 22
+point -196.78 392.72 station -name 23
+point -214.6 383.58 station -name 24
+point -196.51 386.18 station -name 25
+endscrap
+

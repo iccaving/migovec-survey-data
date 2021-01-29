@@ -1,6 +1,12 @@
 
 survey fa999 -title "System Migovec"
 
+input fa999-e.th2
+
+map m-all-e -projection extended
+    fa999-1e
+endmap
+
 input fa999-p.th2
 
 map m-all-p -projection plan

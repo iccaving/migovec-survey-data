@@ -1,6 +1,13 @@
 
 survey sifon -title "System Migovec"
 
+input sifon-e.th2
+
+map m-all-e -projection extended
+    sifon-1e
+endmap
+
+
 input sifon-p.th2
 
 map m-all-p -projection plan
@@ -39,7 +46,7 @@ endsurvey
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #
-#;bottom of FA999 to sump
+#;bottom of sifon to sump
 #
 #;Date: 30/7/97
 #;Instruments:(JSPDT extensions beteen 97-98 expeditions)
@@ -51,7 +58,7 @@ endsurvey
 #;data normal bcra grade 3
 #;from	to	tape	comp	clino
 #
-#*equate sifon.12 fa999.27	;this equate is only approximate to nearest 3metres)
+#*equate sifon.12 sifon.27	;this equate is only approximate to nearest 3metres)
 #
 #*begin sifon
 #*date 1997.07.30
