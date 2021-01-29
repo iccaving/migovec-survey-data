@@ -1,6 +1,12 @@
 
 survey pencil -title "Pitches below Paradox (Broken Pencil Passages)"
 
+input pencil-e.th2
+
+map m-all-e -projection extended
+    pencil-1e
+endmap
+
 input pencil-p.th2
 
 map m-all-p -projection plan

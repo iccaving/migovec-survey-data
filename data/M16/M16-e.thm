@@ -111,8 +111,22 @@ map m-old_deep-e -projection extended
 	m-all-e@doh
 	m-all-e@coldfeet
 	m-all-e@wonder
+	m-all-e@rameses
+
+	m-all-e@cowboys
+	m-all-e@paradox
+	m-all-e@teotihuacan
+	m-all-e@sinners
 	m-all-e@god
 	m-all-e@deep
+	m-all-e@glory
+	m-all-e@fa999
+	m-all-e@sifon
+	m-all-e@pencil
+	m-all-e@marwood
+	m-all-e@fame
+	m-all-e@sump1
+	m-all-e@sump2
 endmap
 
 centreline
@@ -200,7 +214,6 @@ extend right 1@sinners 0@sinners
 extend right 4b@teotihuacan 3@sinners
 extend right 3@sinners 2@sinners
 extend right 2@sinners 1@sinners
-extend left 19@rameses
 
 # Towards connection with Vrtnarija
 extend right 1@adder 2@adder
@@ -306,6 +319,13 @@ extend left 4@galact4 5@galact4
 extend right 1@hydrant 2@hydrant
 extend right 2@hydrant
 extend left 16@hydrant
+
+# Rameses
+extend right 20@rameses 19@rameses
+extend right 19@rameses 
+extend left 13@rameses 11@rameses
+extend left 8@rameses
+extend left 11@rameses 8@rameses
 
 
 

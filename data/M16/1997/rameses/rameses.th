@@ -1,6 +1,12 @@
 
 survey rameses -title "Rameses"
 
+input rameses-e.th2
+
+map m-all-e -projection extended
+    rameses-1e
+endmap
+
 input rameses-p.th2
 
 map m-all-p -projection plan

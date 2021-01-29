@@ -1,6 +1,13 @@
 
 survey fame -title "[Passages below antivox]"
 
+input fame-e.th2
+
+map m-all-e -projection extended
+    fame-1e
+endmap
+
+
 input fame-p.th2
 
 map m-all-p -projection plan

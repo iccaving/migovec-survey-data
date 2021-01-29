@@ -1,0 +1,61 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-sinners-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line survey 
+  262.21 489.84
+  262.21 510.16
+endline
+
+line survey 
+  224.73 503.78
+  262.21 510.16
+endline
+
+line survey 
+  179.67 500.87
+  224.73 503.78
+endline
+
+point 262.21 510.16 station-name -align tr -scale xs -text 2
+point 224.73 503.78 station-name -align tr -scale xs -text 3
+point 179.67 500.87 station-name -align tr -scale xs -text 4
+endscrap
+
+
+scrap sinners-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line wall -subtype invisible
+  271.3451 488.3836
+  254.3038 517.0344
+endline
+
+line wall -subtype invisible
+  216.1258 516.6322
+  243.817 494.001
+endline
+
+line wall 
+  254.3038 517.0344
+  251.2716 517.1051 251.0391 517.5612 248.0093 517.304
+  244.9701 517.0461 238.5719 519.2574 235.5774 518.7197
+  232.3873 518.147 229.4233 516.553 226.2142 516.0981
+  224.8536 515.9052 217.4953 516.7132 216.1258 516.6322
+endline
+
+line wall 
+  243.817 494.001
+  245.0245 492.9643 247.8567 494.7917 249.2477 493.6265
+  250.6287 492.4695 249.462 489.8125 250.5585 488.3831
+  251.7319 486.8533 253.6941 485.7437 255.6146 485.5741
+  257.9302 485.3696 259.9118 487.4906 262.21 487.84
+  264.7736 488.2298 267.9666 488.3804 271.3451 488.3836
+endline
+
+point 262.21 510.16 station -name 2
+point 224.73 503.78 station -name 3
+point 179.67 500.87 station -name 4
+endscrap
+

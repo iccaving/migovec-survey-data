@@ -1,6 +1,12 @@
 
 survey marwood -title "main inlet below antivox"
 
+input marwood-e.th2
+
+map m-all-e -projection extended
+    marwood-1e
+endmap
+
 input marwood-p.th2
 
 map m-all-p -projection plan
