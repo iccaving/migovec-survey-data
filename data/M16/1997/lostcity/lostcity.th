@@ -1,6 +1,12 @@
 
 survey lostcity -title "Lost City"
 	
+	input "lostcity-e.th2"
+	
+	map m-all-e -projection extended
+		lostcity-1e
+	endmap
+
 	input "lostcity-p.th2"
 	
 	map m-all-p -projection plan

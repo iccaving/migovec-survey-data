@@ -1,6 +1,12 @@
 
 survey goodbag -title "Goodybag"
 	
+	input "goodbag-e.th2"
+	
+	map m-all-e -projection extended
+		goodbag-1e
+	endmap
+
 	input "goodbag-p.th2"
 	
 	map m-all-p -projection plan

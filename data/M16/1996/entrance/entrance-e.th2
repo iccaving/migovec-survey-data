@@ -2,13 +2,37 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap entrance-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-scrap entrance-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+line wall -subtype invisible
+  6.1218 325.3572
+  -17.3151 333.741
+endline
+
+line wall -subtype invisible
+  -39.2517 331.299
+  -67.7002 332.3793
+endline
+
+line wall -subtype invisible
+  127.8265 -222.2111
+  142.1311 -216.9339
+endline
+
+line wall -subtype invisible
+  95.4031 -105.5885
+  85.5572 -98.7982
+endline
+
+line wall -subtype invisible
+  -87.8663 -128.6785
+  -76.8867 -132.9113
+endline
 
 point -58.3962 346.982 entrance -orientation 152.05224
 point 1.0186 349.6981 entrance -orientation 188.60933
-point -24.4873 433.0894 u:label_MY -attr lvl 2 -attr text M16 -align t -scale l
-point -128.3358 54.3221 u:label_MY -attr lvl 2 -attr text "Vhodni Del" -align l -scale l
+point -24.4873 433.0894 u:label_MY -align t -attr lvl 2 -attr text M16 -attr style 6
+point -128.3358 54.3221 u:label_MY -align l -attr lvl 2 -attr text "Vhodni Del" -scale l
 line wall 
   318.5752 -302.4904
   304.1709 -310.8929
@@ -124,13 +148,13 @@ line wall
 endline
 
 line wall -close on
-  -85.2255 115.4745
-  -85.2255 115.4745 -81.6244 124.8373 -81.6244 126.2777
-  -81.6244 127.7182 -83.545 148.3643 -83.545 148.3643
-  -98.9096 157.4871
-  -98.9096 157.4871 -101.3103 155.5665 -101.3103 153.6459
-  -101.3103 151.7254 -102.2706 135.8806 -102.2706 133.4799
-  -102.2706 131.0792 -91.3258 116.8252 -91.3258 116.8252
+  -91.3258 116.8252
+  -91.3258 116.8252 -102.2706 131.0792 -102.2706 133.4799
+  -102.2706 135.8806 -101.3103 151.7254 -101.3103 153.6459
+  -101.3103 155.5665 -98.9096 157.4871 -98.9096 157.4871
+  -83.545 148.3643
+  -83.545 148.3643 -81.6244 127.7182 -81.6244 126.2777
+  -81.6244 124.8373 -85.2255 115.4745 -85.2255 115.4745
 endline
 
 line wall -subtype blocks

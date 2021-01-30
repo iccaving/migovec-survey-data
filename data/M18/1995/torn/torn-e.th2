@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point -203.8774 265.1595 u:label_MY -attr lvl 1 -attr text "M18 Jama Strgane Srajce" -align t  -attr style 6
+point -203.8774 265.1595 u:label_MY -attr lvl 1 -attr text "M18 Jama Strgane Srajce" -align tr  -attr style 6
 line wall 
   121.4763 -222.0664
   140.442 -222.3064
@@ -55,7 +55,7 @@ line wall
   117.155 -205.9816
 endline
 
-point -193.4374 238.6774 entrance 
+point -203.4374 248.6774 entrance -orientation 165
 line wall 
   -34.6303 154.4783
   -40.2322 155.6665

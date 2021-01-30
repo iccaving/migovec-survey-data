@@ -36,7 +36,10 @@ map m-entrance-e -projection extended
 	m-all-e@entrance
 	m-all-e@hotline
 	m-all-e@brezno
+	m-all-e@lostcity
 	m-all-e@woft
+	m-all-e@goodbag
+	m-all-e@baddybag
     m-all-e@batshit2
     m-all-e@batshit1
     m-all-e@frogshit
@@ -236,8 +239,8 @@ extend right 4@woft 3@woft
 extend left 3@woft
 extend right 1@dinsdale
 extend left 11@dinsdale
-extend right 12@goodbag 11@goodbag
-extend right 11@goodbag 
+extend left 12@goodbag 11@goodbag
+extend left 11@goodbag 
 
 extend left 3@hotline 4@hotline
 extend left 4@hotline 5@hotline

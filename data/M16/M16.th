@@ -146,7 +146,6 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join offhyd-1p@offhyd hydrant-1p@hydrant
 	join offhyd-2p@offhyd hydrant-1p@hydrant
 	join offhyd-3p@offhyd hydrant-2p@hydrant
-
 	join hotel-1p@hotel sajeta-3p@sajeta
 	join coldfeet-1p@coldfeet god-1p@god
 	join deep-1p@deep god-5p@god
@@ -176,7 +175,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join batshit2-1e@batshit2 mower-1e@mower
 	join batshitb-1e@batshitb batshit2-1e@batshit2
 	join batshita-1e@batshita shordrop-1e@shordrop
-	join batshita-1e@batshita batshit1-1e@batshit1
+	join batshita-1e@batshita frogshit-1e@frogshit
 	join batshit1-1e@batshit1 batshitb-1e@batshitb
 	join woft-2e@woft hotline-1e@hotline
 	join woft-2e@woft shordrop-1e@shordrop
@@ -201,6 +200,9 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join sinners-1e@sinners god-1e@god
 	join teotihuacan-1e@teotihuacan glory-1e@glory
 	join rameses-1e@rameses god-1e@god
+	join goodbag-1e@goodbag baddybag-1e@baddybag
+	join goodbag-1e@goodbag hotline-1e@hotline
+	join hotline-1e@hotline lostcity-1e@lostcity
 
 	###__________1998____________###
 	
