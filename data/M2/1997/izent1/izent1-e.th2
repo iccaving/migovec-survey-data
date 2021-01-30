@@ -2,10 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap izent1-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-scrap izent1-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
-
-point 218.4563 1270.8926 u:label_MY -attr lvl 2 -attr text "M2 (KAVKNA JAMA)" -align tl -scale xl
+point 138.4563 1410.8926 u:label_MY -align t -attr lvl 2 -attr text "M2 (Kavkna jama)" -attr style 6
 line u:texture_MY 
   294.3429 1326.8678
   294.3429 1326.8678 293.8478 1271.9001 294.3279 1268.059
@@ -44,11 +43,11 @@ line border -close on -id izent1-1e_debris_1 -visibility on
   660.4374 780.7133 645.5529 784.0743 645.5529 784.0743
 endline
 
-area debris
+area debris 
   izent1-1e_debris_1
 endarea
 
-point 235.8334 1250.2287 entrance -align tl -orientation 138.76299
+point 197.8334 1300.2287 entrance -orientation 138.76299
 line wall 
   636.7835 877.7697
   636.7835 870.0539 630.9605 830.8473 628.4333 828.3212
@@ -71,7 +70,7 @@ line border -close on -id izent1-1e_snow_1 -visibility on
   377.3111 1018.4289
 endline
 
-area snow
+area snow 
   izent1-1e_snow_1
 endarea
 

@@ -61,7 +61,6 @@ endsource
 # export an ELEVATION view
 layout ee
 	copy base-e
-	
 
 	copy colour-by-new
 	symbol-assign point water-flow MY
@@ -79,7 +78,6 @@ layout ee
 	copy user_label
 	scale 1 4000
 	colour map-fg [95 95 82]
-	scale 1 2000
 	grid-size 10 10 100 m
 	map-header 0 0 off
 
