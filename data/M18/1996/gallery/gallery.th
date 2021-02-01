@@ -3,12 +3,34 @@ survey gallery -title "NCB"
 input "gallery-p.th2"
 
 map m-all-p -projection plan
-    ncb-2p
-    ncb-3p
+    m2p
+    m3p
+    m1p
+    m5p
+    m6p
+    m4p
+    m7p
+endmap
+
+map m1p -projection plan
     ncb-1p
-    ncb-5p
-    ncb-6p
+endmap
+map m2p -projection plan
+    ncb-2p
+endmap
+map m3p -projection plan
+    ncb-3p
+endmap
+map m4p -projection plan
     ncb-4p
+endmap
+map m5p -projection plan
+    ncb-5p
+endmap
+map m6p -projection plan
+    ncb-6p
+endmap
+map m7p -projection plan
     ncb-7p
 endmap
 

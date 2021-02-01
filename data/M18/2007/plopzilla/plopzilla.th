@@ -1,6 +1,14 @@
 
 survey plopzilla -title "plopzilla"
 
+input plopzilla-p.th2
+
+map m-all-p -projection plan
+    plopzilla-2p
+    break
+    plopzilla-1p
+endmap
+
 input plopzilla-e.th2
 
 map m-all-e -projection extended

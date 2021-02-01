@@ -1,5 +1,11 @@
 
-survey leki -title "System Migovec"
+survey leki -title "Leki"
+
+input leki-p.th2
+
+map m-all-p -projection plan
+    leki-1p
+endmap
 
 input leki-e.th2
 

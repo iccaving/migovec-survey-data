@@ -38,6 +38,8 @@ survey M18 -title "M18 part of System Migovec"
 	equate 1@silos 2@gallery
 	equate 0@dodge 12@gallery
 
+	join ncb-3p@gallery dodge-1p@dodge
+	join ncb-3p@gallery plopzilla-2p@plopzilla
 	join dodge-1e@dodge gallery-1e@gallery
 	
 	###__________1999____________###
@@ -47,6 +49,7 @@ survey M18 -title "M18 part of System Migovec"
 	equate 20@leki 80@gallery
 	
 	join leki-1e@leki zebra-1e@zebra
+	join leki-1p@leki zebra-1p@zebra
 
 	###__________2007____________###
 	

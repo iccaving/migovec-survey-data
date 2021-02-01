@@ -1,5 +1,11 @@
 
-survey dodge -title "System Migovec"
+survey dodge -title "Dodge City"
+
+input dodge-p.th2
+
+map m-all-p -projection plan
+    dodge-1p
+endmap
 
 input dodge-e.th2
 
