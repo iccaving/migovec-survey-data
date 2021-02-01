@@ -162,6 +162,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join tamoka-1p@tamoka galact1-1p@galact1
 	join galact2-1p@galact2 galact1-1p@galact1
 	join galact2-2p@galact2 galact3-1p@galact3
+	join doh-2p@doh pinkp-1p@pinkp
 	
 	join migcon2-1e@migcon2 migconleft-1e@migconleft
 	join migcon2-1e@migcon2 migcondown-1e@migcondown
@@ -268,6 +269,8 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join fame-1p@fame pencil-3p@pencil
 	join trunk-1p@trunk elephant-1p@elephant
 	join mousse-1p@mousse elephant-1p@elephant
+	join bridge-1p@bridge hotel-1p@hotel
+	join arrow-1p@arrow sajeta-2p@sajeta
 
 	join sump2-1e@sump2 sump1-1e@sump1
 	join fame-1e@fame sump1-1e@sump1
@@ -363,6 +366,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	equate 6@carwash 9@oratory
 
 	join carwash-1e@carwash oratory-1e@oratory
+	join carwash-3p@carwash oratory-1p@oratory
 	
 	
 	# UNSORTED EQUATES

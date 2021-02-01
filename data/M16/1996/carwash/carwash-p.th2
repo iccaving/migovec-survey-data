@@ -2,9 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 925.000000 783.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap carwash-1p -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
-
+scrap carwash-1p -projection plan -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 
 area u:smallblocks_MY -attr scale 0.8
   blocksS
@@ -18,8 +16,7 @@ area u:smallblocks_MY -attr scale 1.4
   blocksL
 endarea
 
-
-line border -subtype invisible -id blocksS -close on
+line border -close on -id blocksS -subtype invisible
   258.9438 628.4445
   260.1168 629.6175 264.2224 637.2422 263.9291 640.7612
   263.6359 644.2803 258.064 658.3565 256.3045 661.289
@@ -34,7 +31,7 @@ line border -subtype invisible -id blocksS -close on
   253.6652 633.7231 256.5977 626.3917 256.5977 626.3917
 endline
 
-line border -subtype invisible -id blocksM -close on
+line border -close on -id blocksM -subtype invisible
   258.3573 597.0663
   257.7708 598.5326 236.3632 615.8346 234.8969 617.5941
   233.4306 619.3536 224.3397 627.5648 219.6477 626.3917
@@ -50,7 +47,7 @@ line border -subtype invisible -id blocksM -close on
   258.064 614.3683 258.3573 597.0663 258.3573 597.0663
 endline
 
-line border -subtype invisible -id blocksL -close on
+line border -close on -id blocksL -subtype invisible
   251.6124 566.2746
   251.6124 566.2746 258.3573 577.4182 258.064 580.644
   257.7708 583.8698 256.0112 592.9607 254.2517 595.8933
@@ -63,7 +60,7 @@ line border -subtype invisible -id blocksL -close on
   123.4602 562.4623 116.1288 554.2511 116.1288 554.2511
 endline
 
-point 345.8937 647.2129 u:label_MY -attr lvl 2 -attr text "Bikini Carwash" -align tr -scale m
+point 105.8937 721.2129 u:label_MY -align tl -attr lvl 2 -attr text "Bikini Carwash" -scale m
 line wall:invisible 
   113.1945 553.1874
   254.545 565.688
@@ -103,7 +100,7 @@ point 248.6799 651.9049 station -name 10
 endscrap
 
 
-scrap carwash-2p -scale [0 0 90 0 0 0 250 0 inch]
+scrap carwash-2p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
 line floor-step 
   191.6818 665.2121
@@ -149,7 +146,7 @@ point 175.2196 688.1218 station -name 7
 endscrap
 
 
-scrap carwash-3p -scale [0 0 90 0 0 0 250 0 inch]
+scrap carwash-3p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
 point 203.215 717.7846 station -name 6
 point 133.645 710.4232 station -name 4
@@ -157,11 +154,6 @@ point 121.5143 690.8275 station -name 3
 point 151.0634 680.563 station -name 2
 point 159.3579 646.763 station -name 1
 point 209.2827 720.1919 passage-height -align t -value 10
-line chimney 
-  198.2401 721.6995
-  198.2401 721.6995 198.6072 715.0562 202.4923 711.7288
-endline
-
 line pit -outline out
   149.5598 649.2656
   149.5598 649.2656 152.9323 654.8374 156.0114 652.9313
@@ -172,7 +164,8 @@ line wall
   169.941 705.8637
   169.941 705.8637 175.073 708.0631 178.8853 709.2362
   182.6976 710.4092 192.5216 714.2215 193.9879 713.7816
-  195.4542 713.3417 202.4923 711.7288 202.4923 711.7288
+  194.7691 713.5472 198.3086 713.4508 201.4458 713.4118
+  204.1974 713.3776 206.6395 713.3877 206.6395 713.3877
 endline
 
 line wall 
@@ -189,8 +182,8 @@ line wall
 endline
 
 line wall 
-  198.2401 721.6995
-  198.2401 721.6995 194.721 721.113 193.548 721.2596
+  200.21 724.2915
+  200.21 724.2915 194.721 721.113 193.548 721.2596
   192.375 721.4062 190.6155 723.6056 188.8559 721.9927
   187.0964 720.3798 186.6565 719.2068 182.4043 717.154
   178.1521 715.1012 173.8999 713.9282 173.1668 713.4883
@@ -209,17 +202,6 @@ line wall
   143.4015 680.0573 146.0408 674.7787 146.0408 673.7523
   146.0408 672.726 150.7328 663.7817 148.9733 662.1688
   147.2138 660.5559 149.1199 648.6791 149.1199 648.6791
-endline
-
-line chimney -outline out
-  202.4923 711.7288
-  202.9321 710.9957 213.0494 710.5558 213.7826 711.7288
-  214.5157 712.9018 218.4746 716.2743 218.0348 719.5001
-  217.5949 722.7259 217.8881 726.0983 214.9556 727.7112
-  212.023 729.3241 209.9703 731.2302 209.0905 731.5235
-  208.2107 731.8168 204.1052 731.6701 202.0524 729.9106
-  199.9996 728.1511 198.3867 724.4854 198.3867 724.4854
-  198.2401 721.6995
 endline
 
 endscrap

@@ -1,6 +1,12 @@
 
 survey bridge -title "Inlet Rift to bottom of pawoden"
 
+input bridge-p.th2
+
+map m-all-p -projection plan
+    bridge-1p
+endmap
+
 input bridge-e.th2
 
 map m-all-e -projection extended
