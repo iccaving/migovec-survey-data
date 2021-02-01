@@ -1,60 +1,61 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 614.000000 334.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  154.34 -0.12
-  173.26 18.15
+scrap surprise-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+line rock-border -close on
+  341.4498 200.5242
+  346.4164 193.0744
+  358.2119 199.9033
 endline
-line survey 
-  154.34 -0.12
-  124.34 -0.67
+
+line rock-border -close on
+  329.0335 193.0744
+  337.7249 198.0409
+  325.9294 203.6282
 endline
-line survey 
-  124.34 -0.67
-  35.41 21.54
+
+line rock-border -close on
+  339.1809 182.8149
+  347.2849 189.9655
+  334.4137 192.8258
 endline
-line survey 
-  35.41 21.54
-  -26.96 33.66
+
+line wall 
+  476.7881 193.0744
+  476.7881 193.0744 447.6097 191.2119 438.9182 195.5576
+  430.2268 199.9033 378.6989 216.0446 365.6617 222.8736
+  352.6245 229.7026 310.2271 237.3213 295.9483 238.563
+  281.6695 239.8046 267.0658 218.5827 259.0887 218.6086
+  244.1375 218.657 235.8979 200.9943 251.0364 199.9033
+  256.2906 199.5247 284.3346 194.9368 291.1636 193.6952
+  297.9926 192.4535 341.6113 189.6433 333.3792 188.7286
+  288.6803 183.7621 309.4173 184.9391 285.5762 166.3792
+  276.6436 159.4253 268.6533 191.0592 203.0074 168.2416
+  186.8271 162.6176 133.4758 185.6245 133.4758 185.6245
 endline
-line survey 
-  35.41 21.54
-  -19.07 -13.82
+
+line wall 
+  134.3293 144.3587
+  134.3293 144.3587 163.3022 156.6503 173.8379 152.2604
+  184.3735 147.8706 237.9296 126.7993 247.5873 126.7993
+  257.2449 126.7993 287.6102 156.3673 293.2416 145.2367
+  296.0444 139.6971 338.896 187.3792 346.7978 183.8673
+  354.6995 180.3554 422.3031 161.9181 430.2048 161.9181
+  438.1065 161.9181 467.0795 164.552 467.0795 164.552
 endline
-line survey 
-  -19.07 -13.82
-  -139.23 -9.65
-endline
-line survey 
-  -19.07 -13.82
-  -44.51 -29.72
-endline
-line survey 
-  -44.51 -29.72
-  -66.84 -33.66
-endline
-line survey 
-  -66.84 -33.66
-  -133.36 -9.49
-endline
-line survey 
-  -133.36 -9.49
-  -173.26 -17.99
-endline
+
+point 480.26 186.15 station -name 12
+point 461.34 167.88 station -name 11
+point 431.34 167.33 station -name 10
+point 342.41 189.54 station -name 8
+point 280.04 201.66 station -name 9
+point 287.93 154.18 station -name 6
+point 167.77 158.35 station -name 7
+point 262.49 138.28 station -name 5
+point 240.16 134.34 station -name 4
+point 173.64 158.51 station -name 3
+point 133.74 150.01 station -name 1
 endscrap
 
-scrap surprise-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 173.26 18.15 station -name 12
-point 154.34 -0.12 station -name 11
-point 124.34 -0.67 station -name 10
-point 35.41 21.54 station -name 8
-point -26.96 33.66 station -name 9
-point -19.07 -13.82 station -name 6
-point -139.23 -9.65 station -name 7
-point -44.51 -29.72 station -name 5
-point -66.84 -33.66 station -name 4
-point -133.36 -9.49 station -name 3
-point -173.26 -17.99 station -name 1
-endscrap
