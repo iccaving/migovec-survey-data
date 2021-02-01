@@ -1,5 +1,11 @@
 
-survey mower -title "System Migovec"
+survey mower -title "Mower"
+
+input mower-p.th2
+
+map m-all-p -projection plan
+    mower-1p
+endmap
 
 input mower-e.th2
 

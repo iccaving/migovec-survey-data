@@ -1,6 +1,12 @@
 
 survey toilet -title "System Migovec"
 
+input toilet-p.th2
+
+map m-all-p -projection plan
+    toilet-1p
+endmap
+
 input toilet-e.th2
 
 map m-all-e -projection extended

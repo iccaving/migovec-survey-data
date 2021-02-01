@@ -1,6 +1,12 @@
 
 survey batshit2 -title "System Migovec"
 
+input batshit2-p.th2
+
+map m-all-p -projection plan
+    batshit2-1p
+endmap
+
 input batshit2-e.th2
 
 map m-all-e -projection extended
