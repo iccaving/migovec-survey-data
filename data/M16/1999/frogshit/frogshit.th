@@ -1,6 +1,16 @@
 
 survey frogshit -title "System Migovec"
 
+input frogshit-p.th2
+
+map m-all-p -projection plan
+    frogshit-1p
+    break
+    frogshit-2p
+endmap
+
+join frogshit-1p frogshit-2p
+
 input frogshit-e.th2
 
 map m-all-e -projection extended
