@@ -1,61 +1,34 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -206.0 -169.0 207.0 167.0
+##XTHERION## xth_me_area_adjust 0 0 413.000000 336.000000
 ##XTHERION## xth_me_area_zoom_to 100
-
-
-
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line survey
-  -72.66 34.57
-  -29.38 5.35
-endline
-
-line survey
-  -29.38 5.35
-  -17.02 -10.47
-endline
-
-line survey
-  -17.02 -10.47
-  0.84 -15.59
-endline
-
-line survey
-  0.84 -15.59
-  6.43 -13.46
-endline
-
-line survey
-  6.43 -13.46
-  29.51 -5.51
-endline
-
-line survey
-  72.66 -34.57
-  29.51 -5.51
-endline
-
-endscrap
-
-
 
 scrap serenade-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -29.38 5.35 station -name 6
+line wall 
+  276.9814 149.2639
+  276.9814 149.2639 244.8178 180.1784 240.1338 180.4907
+  235.4498 180.803 221.0855 181.4275 217.3383 181.1152
+  213.5911 180.803 213.2788 180.803 213.2788 180.803
+  137.71 227.9554
+endline
 
-point -72.66 34.57 station -name 7
+line wall 
+  132.4015 194.5428
+  132.4015 194.5428 164.8773 173.6208 168.6245 168.9368
+  172.3717 164.2528 167.6877 163.0037 174.5576 158.0074
+  181.4275 153.0111 190.171 148.3271 199.2268 147.0781
+  208.2825 145.829 225.7695 149.8885 227.0186 151.1376
+  228.2677 152.3866 231.3903 155.197 234.2007 153.6357
+  237.0111 152.0744 275.1078 122.7212 277.606 122.0966
+  280.1041 121.4721 287.9108 124.5948 287.9108 124.5948
+endline
 
-point -17.02 -10.47 station -name 5
-
-point 0.84 -15.59 station -name 4
-
-point 6.43 -13.46 station -name 3
-
-point 29.51 -5.51 station -name 2
-
-point 72.66 -34.57 station -name 1
-
+point 176.62 174.35 station -name 6
+point 133.34 203.57 station -name 7
+point 188.98 158.53 station -name 5
+point 206.84 153.41 station -name 4
+point 212.43 155.54 station -name 3
+point 235.51 163.49 station -name 2
+point 278.66 134.43 station -name 1
 endscrap
-
 

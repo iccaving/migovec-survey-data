@@ -527,6 +527,12 @@ survey vrtnarija -title "Vrtnarija"
 	join insomnia-2e@insomnia daydreamers-1e@daydreamers
 	join redbaron-1e@redbaron kamikaze-2e@kamikaze
 	join throneroom-1e@throneroom redbaron-1e@redbaron
+	join serenade-1e@serenade throneroom-2e@throneroom
+	join amazinggrace-1e@amazinggrace serenade-1e@serenade
+	join grace2-1e@grace2 amazinggrace-1e@amazinggrace
+	join magicdragon-1e@magicdragon grace2-1e@grace2
+	join stuckinparadise-1e@stuckinparadise magicdragon-1e@magicdragon
+	join stuckinparadise2-1e@stuckinparadise2 stuckinparadise-1e@stuckinparadise
 	
 	###__________2012____________###
 	input ./2012/atlantis/atlantis.th
