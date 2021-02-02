@@ -428,6 +428,9 @@ survey vrtnarija -title "Vrtnarija"
 	join sidewinder-1e@sidewinder crack_in_time-1e@crack_in_time
 	join rolling-1e@rolling wonderland-1e@wonderland
 	join surprise-1e@surprise rolling-1e@rolling
+	join kamikaze-1e@kamikaze surprise-1e@surprise
+	join mudstone-1e@mudstone kamikaze-1e@kamikaze
+	join losthopes-1e@losthopes kamikaze-1e@kamikaze
 	
 	
 	###__________2011____________###
@@ -522,6 +525,7 @@ survey vrtnarija -title "Vrtnarija"
 	join dream2-1e@dream2 penguinsegg-1e@penguinsegg
 	join daydreamers-1e@daydreamers dream2-1e@dream2
 	join insomnia-2e@insomnia daydreamers-1e@daydreamers
+	join redbaron-1e@redbaron kamikaze-2e@kamikaze
 	
 	###__________2012____________###
 	input ./2012/atlantis/atlantis.th
@@ -756,6 +760,7 @@ survey vrtnarija -title "Vrtnarija"
 	join yourmum-1p@yourmum esoterica-2p@esoterica
 	join hipsdontlie-1e@hipsdontlie cuckoos_nest-3e@cuckoos_nest
 	join gravity-1e@gravity dwarf_pine-1e@dwarf_pine
+	join apuntoofar1-1e@apuntoofar1 kamikaze-3e@kamikaze
 	
 	###__________2015____________###
 	input ./2015/jetstream/jetstream.th

@@ -13,7 +13,12 @@ input kamikaze-e.th2
 
 map m-all-e -projection extended
     kamikaze-1e
+	kamikaze-2e
+	kamikaze-3e
 endmap
+
+join kamikaze-1e kamikaze-2e
+join kamikaze-2e kamikaze-3e
 
 	centreline
 		team "James Kirkpatrick" insts
