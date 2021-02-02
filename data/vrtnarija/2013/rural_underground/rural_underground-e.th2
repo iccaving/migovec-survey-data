@@ -1,115 +1,69 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 965.000000 456.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -342.50 -80.91
-  -337.13 -94.92
+scrap rural_underground-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+point 475.0706 406.8401 u:label_MY -attr text "Rural Underground" -attr lvl 2 -attr align br
+line rock-border -close on
+  820.461 305.5539
+  820.0372 302.5874 821.3085 298.3494 824.6989 297.9257
+  828.0892 297.5019 835.7175 302.1636 833.1747 303.8587
+  830.632 305.5539 825.5465 308.5204 823.4275 308.0967
+  821.3085 307.6729 820.461 305.5539 820.461 305.5539
 endline
-line survey 
-  -348.98 -52.87
-  -342.50 -80.91
+
+line wall 
+  127.1375 172.9071
+  127.1375 172.9071 125.4424 128.8327 130.5279 127.9851
+  135.6134 127.1376 169.5167 127.9851 168.6691 131.3755
+  167.8216 134.7658 150.8699 164.4312 155.1078 163.5836
+  159.3457 162.7361 183.9256 155.9554 188.1636 158.4981
+  192.4015 161.0409 272.9219 189.0112 274.6171 194.0967
+  276.3123 199.1822 302.5874 231.3903 308.5204 231.3903
+  314.4535 231.3903 347.5093 233.0855 351.7472 233.9331
+  355.9851 234.7807 449.2193 272.0743 453.4572 272.0743
+  457.6952 272.0743 572.119 266.1413 583.1376 263.5985
+  594.1561 261.0558 606.8699 281.3978 609.4126 285.6357
+  611.9554 289.8736 625.5167 299.197 629.7546 299.197
+  633.9926 299.197 672.9814 318.6915 680.6097 316.9963
+  688.2379 315.3011 746.7212 310.2156 751.8067 309.368
+  756.8922 308.5205 817.9182 296.6543 823.8513 295.8067
+  829.7844 294.9591 853.5167 290.7212 848.4312 296.6543
+  843.3457 302.5874 823.0037 311.0632 819.6134 311.9108
+  816.223 312.7584 750.1115 329.71 745.026 328.0149
+  739.9405 326.3197 690.7807 333.1004 690.7807 333.1004
+  677.2193 333.948 628.0595 324.6245 621.2788 320.3866
+  614.4981 316.1487 585.6803 287.3309 578.052 288.1784
+  570.4238 289.026 445.829 295.8067 435.658 290.7212
+  425.487 285.6357 354.29 256.8178 344.119 258.513
+  333.948 260.2082 274.6171 250.0372 266.9888 242.4089
+  259.3606 234.7807 244.9517 205.1152 231.3903 203.4201
+  217.829 201.7249 194.9442 187.316 185.6208 186.4684
+  176.2974 185.6208 127.9851 191.5539 127.9851 191.5539
 endline
-line survey 
-  -338.35 -59.25
-  -348.98 -52.87
-endline
-line survey 
-  -305.95 -65.55
-  -338.35 -59.25
-endline
-line survey 
-  -263.38 -49.17
-  -305.95 -65.55
-endline
-line survey 
-  -221.10 -32.09
-  -263.38 -49.17
-endline
-line survey 
-  -206.38 -16.89
-  -221.10 -32.09
-endline
-line survey 
-  -201.29 -8.70
-  -206.38 -16.89
-endline
-line survey 
-  -187.11 -2.72
-  -201.29 -8.70
-endline
-line survey 
-  -178.55 7.83
-  -187.11 -2.72
-endline
-line survey 
-  -140.17 9.17
-  -178.55 7.83
-endline
-line survey 
-  -102.44 25.24
-  -140.17 9.17
-endline
-line survey 
-  -31.49 48.31
-  -102.44 25.24
-endline
-line survey 
-  -14.50 47.99
-  -31.49 48.31
-endline
-line survey 
-  70.45 45.00
-  -14.50 47.99
-endline
-line survey 
-  103.73 39.17
-  70.45 45.00
-endline
-line survey 
-  126.36 69.17
-  103.73 39.17
-endline
-line survey 
-  190.16 94.92
-  126.36 69.17
-endline
-line survey 
-  232.70 87.44
-  190.16 94.92
-endline
-line survey 
-  273.67 86.02
-  232.70 87.44
-endline
-line survey 
-  348.98 70.04
-  273.67 86.02
-endline
+
+point 144.87 134.08 station -name 22
+point 139.5 148.09 station -name 21
+point 133.02 176.13 station -name 20
+point 143.65 169.75 station -name 19
+point 176.05 163.45 station -name 18
+point 218.62 179.83 station -name 17
+point 260.9 196.91 station -name 16
+point 275.62 212.11 station -name 15
+point 280.71 220.3 station -name 14
+point 294.89 226.28 station -name 13
+point 303.45 236.83 station -name 12
+point 341.83 238.17 station -name 11
+point 379.56 254.24 station -name 10
+point 450.51 277.31 station -name 9
+point 467.5 276.99 station -name 8
+point 552.45 274.0 station -name 7
+point 585.73 268.17 station -name 6
+point 608.36 298.17 station -name 5
+point 672.16 323.92 station -name 4
+point 714.7 316.44 station -name 3
+point 755.67 315.02 station -name 2
+point 830.98 299.04 station -name 1
 endscrap
 
-scrap rural_underground-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -337.13 -94.92 station -name 22
-point -342.50 -80.91 station -name 21
-point -348.98 -52.87 station -name 20
-point -338.35 -59.25 station -name 19
-point -305.95 -65.55 station -name 18
-point -263.38 -49.17 station -name 17
-point -221.10 -32.09 station -name 16
-point -206.38 -16.89 station -name 15
-point -201.29 -8.70 station -name 14
-point -187.11 -2.72 station -name 13
-point -178.55 7.83 station -name 12
-point -140.17 9.17 station -name 11
-point -102.44 25.24 station -name 10
-point -31.49 48.31 station -name 9
-point -14.50 47.99 station -name 8
-point 70.45 45.00 station -name 7
-point 103.73 39.17 station -name 6
-point 126.36 69.17 station -name 5
-point 190.16 94.92 station -name 4
-point 232.70 87.44 station -name 3
-point 273.67 86.02 station -name 2
-point 348.98 70.04 station -name 1
-endscrap
