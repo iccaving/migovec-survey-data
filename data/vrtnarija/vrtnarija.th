@@ -526,6 +526,7 @@ survey vrtnarija -title "Vrtnarija"
 	join daydreamers-1e@daydreamers dream2-1e@dream2
 	join insomnia-2e@insomnia daydreamers-1e@daydreamers
 	join redbaron-1e@redbaron kamikaze-2e@kamikaze
+	join throneroom-1e@throneroom redbaron-1e@redbaron
 	
 	###__________2012____________###
 	input ./2012/atlantis/atlantis.th
@@ -608,6 +609,10 @@ survey vrtnarija -title "Vrtnarija"
 	join xanadu-4e@xanadu friendship-1e@friendship
 	join watershipup-1e@watershipup watershipdown-1e@watershipdown
 	join winterjourney-1e@winterjourney watershipdown-1e@watershipdown
+	join why_the_face-1e@why_the_face throneroom-3e@throneroom
+	join hotpants-1e@hotpants throneroom-3e@throneroom
+	join peepshow-1e@peepshow hotpants-1e@hotpants
+	join undercover_squirrell-1e@undercover_squirrell peepshow-1e@peepshow
 	
 	###__________2013____________###
 	input ./2013/lethe/lethe.th
@@ -699,6 +704,7 @@ survey vrtnarija -title "Vrtnarija"
 	join cuckoos_nest-5e@cuckoos_nest xanadont-1e@xanadont
 	join xanadont-3e@xanadont candyMountain-1e@candyMountain
 	join 500m-1e@500m candyMountain-2e@candyMountain
+	join rural_underground-1e@rural_underground undercover_squirrell-1e@undercover_squirrell
 	
 	###__________2014____________###
 	input ./2014/sicsempertyrannis/sicsempertyrannis.th
@@ -761,6 +767,8 @@ survey vrtnarija -title "Vrtnarija"
 	join hipsdontlie-1e@hipsdontlie cuckoos_nest-3e@cuckoos_nest
 	join gravity-1e@gravity dwarf_pine-1e@dwarf_pine
 	join apuntoofar1-1e@apuntoofar1 kamikaze-3e@kamikaze
+	join apuntoofar2-1e@apuntoofar2 apuntoofar1-1e@apuntoofar1
+	join apuntoofar3-1e@apuntoofar3 apuntoofar2-1e@apuntoofar2
 	
 	###__________2015____________###
 	input ./2015/jetstream/jetstream.th

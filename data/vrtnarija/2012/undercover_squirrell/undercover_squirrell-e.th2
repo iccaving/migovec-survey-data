@@ -1,22 +1,43 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 844.000000 525.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-endscrap
-
 scrap undercover_squirrell-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -223.63 -102.40 station -name 11
-point -288.43 -129.88 station -name 12
-point -159.45 -48.54 station -name 10
-point -68.96 -15.55 station -name 9
-point -4.29 -0.67 station -name 8
-point 63.07 33.66 station -name 7
-point 167.16 67.52 station -name 6
-point 206.15 81.69 station -name 5
-point 236.86 92.87 station -name 4
-point 256.17 96.26 station -name 3
-point 256.17 128.78 station -name 2
-point 288.43 129.88 station -name 1
+
+point 249.0974 384.9258 u:label_MY -attr text "Undercover Squirrel" -attr lvl 3 -attr align br
+line wall 
+  205.6261 154.459
+  205.6261 154.459 264.2779 209.6606 273.9382 210.3506
+  283.5984 211.0406 356.0506 244.1616 360.1907 244.1616
+  364.3308 244.1616 447.1333 260.7221 453.3435 263.4822
+  459.5537 266.2423 505.095 299.3633 513.3753 300.7433
+  521.6555 302.1234 601.0079 327.6541 603.768 329.7242
+  606.5281 331.7942 685.1904 353.1849 685.1904 355.945
+  685.1904 358.705 679.6702 389.756 683.1203 389.0659
+  686.5705 388.3759 707.9611 388.3759 707.9611 388.3759
+endline
+
+line wall 
+  709.3411 415.2867
+  709.3411 415.2867 648.6193 398.7262 647.2393 393.8961
+  645.8592 389.066 563.0568 353.1849 558.9167 353.8749
+  554.7765 354.5649 416.0824 288.3229 401.592 290.393
+  387.1015 292.4631 279.4583 255.892 270.4881 250.3718
+  261.5178 244.8517 224.2567 205.5205 217.3565 202.7604
+  210.4563 200.0003 147.6644 159.9791 147.6644 159.9791
+endline
+
+point 198.37 161.6 station -name 11
+point 133.57 134.12 station -name 12
+point 262.55 215.46 station -name 10
+point 353.04 248.45 station -name 9
+point 417.71 263.33 station -name 8
+point 485.07 297.66 station -name 7
+point 589.16 331.52 station -name 6
+point 628.15 345.69 station -name 5
+point 658.86 356.87 station -name 4
+point 678.17 360.26 station -name 3
+point 678.17 392.78 station -name 2
+point 710.43 393.88 station -name 1
 endscrap
+

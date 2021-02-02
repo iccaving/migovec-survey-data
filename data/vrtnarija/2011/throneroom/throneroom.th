@@ -14,7 +14,11 @@ survey throneroom -title "The Throne Room"
 	
 	map m-all-e -projection extended
 		throneroom-1e
+		throneroom-2e
+		throneroom-3e
 	endmap
+	join throneroom-1e throneroom-2e
+	join throneroom-2e throneroom-3e
 	
 	centreline
 		team "Clare Tan" insts

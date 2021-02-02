@@ -5,7 +5,11 @@ input peepshow-e.th2
 
 map m-all-e -projection extended
     peepshow-1e
+	peepshow-2e
+	peepshow-3e
 endmap
+join peepshow-1e peepshow-2e
+join peepshow-2e peepshow-3e
 
 
 input peepshow-p.th2
