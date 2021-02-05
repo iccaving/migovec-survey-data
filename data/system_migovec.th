@@ -21,7 +21,7 @@ survey system_migovec -title "System Migovec"
 	input "./vrtnarija_vilinska.th"
 	
 	centreline
-		cs epsg:3794
+		#cs epsg:3794
 		#entrance fixes (EPSG:3754)
 		#Primadona
 		station 35@prima1.primadona.primadona_ubend_monatip entrance

@@ -1,5 +1,11 @@
 survey napsihiran_rov
 
+input napsihiran_rov-p.th2
+
+map m-all-p -projection plan
+    napsihiran_rov-1p
+endmap
+
 input napsihiran_rov-e.th2
 
 map m-all-e -projection extended

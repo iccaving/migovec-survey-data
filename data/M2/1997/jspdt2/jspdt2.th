@@ -1,5 +1,15 @@
 survey jspdt2 -title "Below Silos"
 
+input jspdt2-p.th2
+
+map m-all-p -projection plan
+    jspdt2-3p
+    jspdt2-2p
+    jspdt2-1p
+endmap
+
+join jspdt2-1p jspdt2-2p
+join jspdt2-3p jspdt2-2p
 
 input jspdt2-e.th2
 
