@@ -1,5 +1,11 @@
 survey waffles -title "Waffles"
 
+input waffles-p.th2
+
+map m-all-p -projection plan
+    waffles-1p
+endmap
+
 input waffles-e.th2
 
 map m-all-e -projection extended

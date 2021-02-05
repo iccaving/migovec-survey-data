@@ -1,106 +1,133 @@
 map m-all-p -projection plan -title "M16"
-		m-entrance_series-p
-		m-exhibition_road-p 
-		m-galaktika-p
-		m-hole_in_hill-p
-		m-elephant_branch-p
-		m-brokenpencil-p
-		m-hotel_tolminka-p
-	endmap
+	m-entrance_series-p
+	m-exhibition_road-p 
+	m-skalar_series-p
+	m-white_star-p
+	m-mig_country-p
+	m-galaktika-p
+	m-poltergeist-p
+	m-hole_in_hill-p
+	m-elephant_branch-p
+	m-brokenpencil-p
+	m-white_star-p
+	m-hotel_tolminka-p
+	m-below_hotel-p
+endmap
 
-	map m-exhibition_road-p -projection plan
-		m-all-p@genghis
-		m-all-p@migcon
-		m-all-p@migconleft
-		m-all-p@migcondown
-		#m-all-p@migcond2
-		m-all-p@oratory
-		m-all-p@level2s
-		m-all-p@level2n
-		m-all-p@exhib
-		m-all-p@rockroll
-		m-all-p@boogywoo
-		m-all-p@toilet
-		m-all-p@skalar
-		m-all-p@skalar2
-		m-all-p@obelix
-		m-all-p@getafix
-	endmap
+map m-exhibition_road-p -projection plan
+	m-all-p@genghis
+	m-all-p@migcon
+	m-all-p@migconleft
+	m-all-p@migcondown
+	#m-all-p@migcond2
+	m-all-p@oratory
+	m-all-p@level2s
+	m-all-p@level2n
+	m-all-p@exhib
+endmap
 
-	map m-hole_in_hill-p -projection plan
-		m-all-p@paradiso
-		m-all-p@paradiso2
-		m-all-p@below55
-		m-all-p@gloworm
-		m-all-p@penelope
-	endmap
+map m-poltergeist-p -projection plan
+	m-all-p@polter
+ 	m-all-p@disillusion
+	m-all-p@waffles
+endmap
 
-	map m-entrance_series-p -projection plan
-		m-all-p@entrance
-		m-all-p@hotline
-		m-all-p@lostcity
-		m-all-p@brezno
-		m-all-p@goodbag
-		m-all-p@baddybag
-		m-all-p@spiny
-		m-all-p@dinsdale
-	endmap
+map m-skalar_series-p -projection plan
+	m-all-p@skalar
+	m-all-p@skalar2
+	m-all-p@obelix
+	m-all-p@getafix
+endmap
+	
+map m-mig_country-p -projection plan
+	m-all-p@rockroll
+	m-all-p@boogywoo
+	m-all-p@toilet
+endmap
 
-	map m-galaktika-p -projection plan
-		m-all-p@shordrop
-		m-all-p@shordrop2
-		m-all-p@tamoka
-		m-all-p@mower
-		m-all-p@batshit2
-		m-all-p@batshitb
-		m-all-p@frogshit
-		m-all-p@galact1
-		m-all-p@galact2
-		m-all-p@window
-		m-all-p@galact3
-		m-all-p@galact4 # Galaktika chamber proper
-		m-all-p@offhyd
-		m-all-p@hydrant
-		m-all-p@hydrant2
-	endmap
+map m-white_star-p -projection plan
+	m-all-p@titanic
+	m-all-p@olympic
+	m-all-p@maiden
+endmap
+	
+map m-hole_in_hill-p -projection plan
+	m-all-p@paradiso
+	m-all-p@paradiso2
+	m-all-p@below55
+	m-all-p@gloworm
+	m-all-p@penelope
+endmap
 
-	map m-hotel_tolminka-p -projection plan
-		m-all-p@carwash
-		m-all-p@xxx
-		m-all-p@arrow
-		m-all-p@sajeta
-		m-all-p@hotel
-		m-all-p@bridge
-		m-all-p@pinkp
-		m-all-p@doh
-		m-all-p@coldfeet
-		m-all-p@teotihuacan
-		m-all-p@sinners
-		m-all-p@god
-		m-all-p@glory
-		m-all-p@rameses
-		m-all-p@sifon
-		m-all-p@fa999
-		m-all-p@cowboys
-		m-all-p@paradox
-		m-all-p@pencil
-		m-all-p@wonder
-		m-all-p@deep
-	endmap
+map m-entrance_series-p -projection plan
+	m-all-p@entrance
+	m-all-p@hotline
+	m-all-p@lostcity
+	m-all-p@brezno
+	m-all-p@goodbag
+	m-all-p@baddybag
+	m-all-p@spiny
+	m-all-p@dinsdale
+endmap
 
-	map m-brokenpencil-p -projection plan
-		m-all-p@pencil
-		m-all-p@fame
-		m-all-p@marwood
-		m-all-p@sump1
-		m-all-p@sump2
-	endmap
+map m-galaktika-p -projection plan
+	m-all-p@shordrop
+	m-all-p@shordrop2
+	m-all-p@tamoka
+	m-all-p@mower
+	m-all-p@batshit2
+	m-all-p@batshitb
+	m-all-p@frogshit
+	m-all-p@galact1
+	m-all-p@galact2
+	m-all-p@window
+	m-all-p@galact3
+	m-all-p@galact4 # Galaktika chamber proper
+	m-all-p@offhyd
+	m-all-p@hydrant
+	m-all-p@hydrant2
+endmap
 
-	map m-elephant_branch-p -projection plan
-		m-all-p@adder
-		m-all-p@elephant
-		m-all-p@bosh
-		m-all-p@waterloo
-		m-all-p@mousse
-		m-all-p@trunk
-	endmap
+map m-hotel_tolminka-p -projection plan
+	m-all-p@carwash
+	m-all-p@xxx
+	m-all-p@arrow
+	m-all-p@sajeta
+	m-all-p@hotel
+	m-all-p@bridge
+	m-all-p@pinkp
+	m-all-p@doh
+endmap
+
+map m-below_hotel-p -projection plan
+	m-all-p@coldfeet
+	m-all-p@teotihuacan
+	m-all-p@sinners
+	m-all-p@god
+	m-all-p@glory
+	m-all-p@rameses
+	m-all-p@sifon
+	m-all-p@fa999
+	m-all-p@cowboys
+	m-all-p@paradox
+	m-all-p@pencil
+	m-all-p@wonder
+	m-all-p@deep
+endmap
+
+map m-brokenpencil-p -projection plan
+	m-all-p@pencil
+	m-all-p@fame
+	m-all-p@marwood
+	m-all-p@sump1
+	m-all-p@sump2
+endmap
+
+map m-elephant_branch-p -projection plan
+	m-all-p@adder
+	m-all-p@elephant
+	m-all-p@bosh
+	m-all-p@waterloo
+	m-all-p@mousse
+	m-all-p@trunk
+endmap	

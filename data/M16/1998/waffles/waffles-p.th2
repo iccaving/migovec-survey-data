@@ -1,0 +1,96 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-waffles-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line survey 
+  267.2 508.11
+  278.7 490.55
+endline
+
+line survey 
+  278.7 490.55
+  276.97 491.26
+endline
+
+line survey 
+  276.97 491.26
+  276.34 498.03
+endline
+
+line survey 
+  276.34 498.03
+  288.46 469.37
+endline
+
+line survey 
+  288.46 469.37
+  285.71 470.47
+endline
+
+line survey 
+  285.71 470.47
+  288.62 480.55
+endline
+
+line survey 
+  288.62 480.55
+  296.73 491.42
+endline
+
+line survey 
+  296.73 491.42
+  262.01 519.53
+endline
+
+line survey 
+  262.01 519.53
+  203.27 530.63
+endline
+
+point 267.2 508.11 station-name -align tr -scale xs -text 1
+point 278.7 490.55 station-name -align tr -scale xs -text 2
+point 276.97 491.26 station-name -align tr -scale xs -text 3
+point 276.34 498.03 station-name -align tr -scale xs -text 4
+point 288.46 469.37 station-name -align tr -scale xs -text 5
+point 285.71 470.47 station-name -align tr -scale xs -text 6
+point 288.62 480.55 station-name -align tr -scale xs -text 7
+point 296.73 491.42 station-name -align tr -scale xs -text 8
+point 262.01 519.53 station-name -align tr -scale xs -text 9
+point 203.27 530.63 station-name -align tr -scale xs -text 10
+endscrap
+
+
+scrap waffles-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line wall 
+  262.4033 506.1815
+  265.7235 500.8692
+  265.7235 500.8692 267.6049 498.2131 267.6049 496.6637
+  267.6049 495.1143 267.7156 488.9167 267.7156 488.2526
+  267.7156 487.5886 268.5778 480.061 268.5778 480.061
+  268.5778 480.061 271.082 473.9569 271.395 472.3918
+  271.7081 470.8267 275.4644 465.6617 281.0989 465.6617
+  286.7334 465.6617 290.8027 466.6008 290.8027 466.6008
+  290.8027 466.6008 302.0717 466.6008 304.2629 469.105
+  306.4541 471.6092 314.5928 482.2522 314.5928 483.8173
+  314.5928 485.3824 313.0277 491.956 312.0886 493.8342
+  311.1495 495.7124 303.9499 506.0423 303.3238 507.2944
+  302.6978 508.5465 302.6978 509.7986 300.1936 511.0507
+  297.6893 512.3028 287.6725 514.494 287.6725 514.494
+  278.9077 519.1894
+endline
+
+point 267.2 508.11 station -name 1
+point 278.7 490.55 station -name 2
+point 276.97 491.26 station -name 3
+point 276.34 498.03 station -name 4
+point 288.46 469.37 station -name 5
+point 285.71 470.47 station -name 6
+point 288.62 480.55 station -name 7
+point 296.73 491.42 station -name 8
+point 262.01 519.53 station -name 9
+point 203.27 530.63 station -name 10
+endscrap
+

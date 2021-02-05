@@ -252,6 +252,19 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join adder-1p@adder hotel-2p@hotel
 	join adder-1p@adder elephant-3p@elephant
 	join waterloo-1p@waterloo bosh-1p@bosh
+	join fame-1p@fame marwood-1p@marwood
+	join fame-2p@fame sump1-1p@sump1
+	join sump1-1p@sump1 sump2-2p@sump2
+	join fame-1p@fame pencil-3p@pencil
+	join trunk-1p@trunk elephant-1p@elephant
+	join mousse-1p@mousse elephant-1p@elephant
+	join bridge-1p@bridge hotel-1p@hotel
+	join arrow-1p@arrow sajeta-2p@sajeta
+	join olympic-1p@olympic titanic-3p@titanic
+	join polter-2p@polter exhib-2p@exhib
+	join polter-1p@polter disillusion-1p@disillusion
+	join waffles-1p@waffles disillusion-1p@disillusion
+
 	join bridge-1e@bridge sajeta-3e@sajeta
 	join e1_l1@adder e1_l1@hotel
 	join e1_l2@adder e1_l2@hotel
@@ -266,15 +279,6 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join polter-1e@polter exhib-1e@exhib
 	join disillusion-1e@disillusion polter-1e@polter
 	join disillusion-1e@disillusion waffles-1e@waffles
-	join fame-1p@fame marwood-1p@marwood
-	join fame-2p@fame sump1-1p@sump1
-	join sump1-1p@sump1 sump2-2p@sump2
-	join fame-1p@fame pencil-3p@pencil
-	join trunk-1p@trunk elephant-1p@elephant
-	join mousse-1p@mousse elephant-1p@elephant
-	join bridge-1p@bridge hotel-1p@hotel
-	join arrow-1p@arrow sajeta-2p@sajeta
-
 	join sump2-1e@sump2 sump1-1e@sump1
 	join fame-1e@fame sump1-1e@sump1
 	join fame-1e@fame marwood-1e@marwood

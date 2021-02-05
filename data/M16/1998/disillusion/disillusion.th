@@ -1,6 +1,12 @@
 
 survey disillusion -title "belgium waffle series off ehibition road"
 
+input disillusion-p.th2
+
+map m-all-p -projection plan
+    disillusion-1p
+endmap
+
 input disillusion-e.th2
 
 map m-all-e -projection extended
