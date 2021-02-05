@@ -5,8 +5,12 @@ input titanic-p.th2
 
 map m-all-p -projection plan
     titanic-1p
+    titanic-2p
+    titanic-3p
 endmap
 
+join titanic-1p titanic-2p
+join titanic-2p titanic-3p
 
 input titanic-e.th2
 

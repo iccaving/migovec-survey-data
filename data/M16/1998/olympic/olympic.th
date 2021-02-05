@@ -1,6 +1,14 @@
 
 survey olympic -title "pitches following on from below Britanic"
 
+input olympic-p.th2
+
+map m-all-p -projection plan
+    olympic-1p
+    break
+    olympic-2p
+endmap
+
 input olympic-e.th2
 
 map m-all-e -projection extended

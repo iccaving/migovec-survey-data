@@ -1,6 +1,12 @@
 
 survey maiden -title "below olympic"
 
+input maiden-p.th2
+
+map m-all-p -projection plan
+    maiden-1p
+endmap
+
 input maiden-e.th2
 
 map m-all-e -projection extended

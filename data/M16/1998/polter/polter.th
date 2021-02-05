@@ -1,6 +1,14 @@
 
 survey polter -title "poltageist extensions off exhibition road (aka stal series)"
 
+input polter-p.th2
+
+map m-all-p -projection plan
+    polter-2p
+    break
+    polter-1p
+endmap
+
 input polter-e.th2
 
 map m-all-e -projection extended
