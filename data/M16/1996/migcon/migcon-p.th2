@@ -2,8 +2,12 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 925.000000 783.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap migcon-1p -projection plan -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 
-scrap migcon-1p -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
+line wall -subtype invisible
+  74.6173 684.5837
+  27.4161 648.7269
+endline
 
 area u:smallblocks_MY -attr scale 1
   blocksS
@@ -13,7 +17,7 @@ area u:smallblocks_MY -attr scale 1.5
   blocksM
 endarea
 
-line border -subtype invisible -id blocksS -close on
+line border -close on -id blocksS -subtype invisible
   588.0794 495.1811
   588.0794 497.2548 561.5371 537.0683 561.5371 537.0683
   561.5371 537.0683 542.045 513.8438 538.7272 511.7701
@@ -45,7 +49,7 @@ line border -subtype invisible -id blocksS -close on
   578.3334 486.2646 588.0794 493.1075 588.0794 495.1811
 endline
 
-line border -subtype invisible -id blocksM -close on
+line border -close on -id blocksM -subtype invisible
   571.9052 480.6658
   571.9052 480.6658 530.018 487.7161 527.9444 490.2045
   525.8708 492.6928 498.0842 505.964 487.3014 507.2082
@@ -74,22 +78,22 @@ line border -subtype invisible -id blocksM -close on
   564.0254 459.1001 571.9052 480.6658 571.9052 480.6658
 endline
 
-point 134.6625 700.5852 u:label_MY -attr lvl 2 -attr text Titanic -align tr -scale s
+point 134.662 700.585 u:label_MY -align tr -attr lvl 2 -attr text Titanic -scale s
 line pit 
-  125.513 607.6235
-  125.513 607.6235 122.6983 628.2224 123.2848 630.5685
+  123.0753 607.8038
+  123.0753 607.8038 122.6983 628.2224 123.2848 630.5685
   123.8713 632.9145 115.6897 661.1208 115.6897 661.1208
   96.866 670.3713
   84.8677 674.3051
   74.4867 668.9136
   74.4867 668.9136 55.4251 658.943 51.9061 657.77
-  48.387 656.597 32.9911 640.7612 32.9911 640.7612
+  48.387 656.597 32.9911 640.3213 32.9911 640.3213
 endline
 
-point 813.5311 443.1514 u:label_MY -attr lvl 2 -attr text "Mig Country" -align tr -scale l
+point 813.531 443.151 u:label_MY -align tr -attr lvl 2 -attr text "Mig Country" -scale l
 line wall 
-  22.8739 650.8785
-  32.1114 640.9078
+  27.4161 648.7269
+  32.9911 640.3213
 endline
 
 line wall:pit 
@@ -165,16 +169,17 @@ line wall
   137.0715 671.7915 132.0078 671.0777 132.0078 671.0777
   119.0614 670.3799
   119.0614 670.3799 106.1582 672.726 100.8796 674.4855
-  95.601 676.245 88.5629 680.3506 86.2168 682.6966
-  83.8708 685.0426 73.9001 690.3212 73.9001 690.3212
+  95.601 676.245 88.802 676.2866 86.4559 678.6326
+  85.5876 679.5008 81.1649 679.934 79.1 681.1893
+  75.5853 683.326 74.6173 684.5837 74.6173 684.5837
 endline
 
-point 68.8443 680.9778 station -name 7
-point 68.8443 680.9778 station -name 6
-point 197.8236 603.6316 station -name 5
-point 346.9171 546.8143 station -name 4
-point 396.7734 514.5151 station -name 3
-point 538.8553 460.1164 station -name 2
-point 580.0575 480.9375 station -name 1
+point 68.8443 680.978 station -name 7
+point 68.8443 680.978 station -name 6
+point 197.824 603.632 station -name 5
+point 346.917 546.814 station -name 4
+point 396.773 514.515 station -name 3
+point 538.855 460.116 station -name 2
+point 580.058 480.938 station -name 1
 endscrap
 

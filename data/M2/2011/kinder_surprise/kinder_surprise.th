@@ -1,5 +1,11 @@
 survey kinder_surprise
 
+input kinder_surprise-p.th2
+
+map m-all-p -projection plan
+    kinder_surprise-1p
+endmap
+
 input kinder_surprise-e.th2
 
 map m-all-e -projection extended

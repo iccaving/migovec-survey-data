@@ -33,6 +33,8 @@ survey M2 -title "M2 part of System Migovec"
 
 	join oct08-1e@oct08 jspdt2-1e@jspdt2
 
+	join jspdt2-1p@jspdt2 oct08-1p@oct08
+
 	###__________2011____________###
 	input ./2011/wizard_of_oz/wizard_of_oz.th
 	input ./2011/kinder_surprise/kinder_surprise.th
@@ -46,6 +48,9 @@ survey M2 -title "M2 part of System Migovec"
 	join kinder_surprise-1e@kinder_surprise wizard_of_oz-1e@wizard_of_oz
 	join kinder_surprise-1e@kinder_surprise echo_rift-1e@echo_rift 
 
+	join kinder_surprise-1p@kinder_surprise wizard_of_oz-1p@wizard_of_oz
+	join kinder_surprise-1p@kinder_surprise echo_rift-1p@echo_rift
+	join kinder_surprise-1p@kinder_surprise oct08-1p@oct08
 
 	
 	###__________2012____________###
@@ -60,5 +65,6 @@ survey M2 -title "M2 part of System Migovec"
 
 	join napsihiran_rov-1e@napsihiran_rov wizard_of_oz-1e@wizard_of_oz
 
+	join wizard_of_oz-1p@wizard_of_oz napsihiran_rov-1p@napsihiran_rov
 	
 endsurvey
