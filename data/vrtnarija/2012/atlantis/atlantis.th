@@ -18,8 +18,12 @@ input atlantis-e.th2
 
 map m-all-e -projection extended
     atlantis-1e
+	atlantis-2e
+	atlantis-3e
 endmap
 
+join atlantis-1e atlantis-2e
+join atlantis-2e atlantis-3e
 	centreline
 		team "Rhys Tyers" insts
 		team "Gergely Ambrus" notes
