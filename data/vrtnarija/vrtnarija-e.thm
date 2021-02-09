@@ -126,6 +126,8 @@ map m-below-friendship-e -projection extended
 endmap
 
 map m-s_extensions-e -projection extended
+	m-all-e@atlantis
+	m-all-e@lethe
 	m-all-e@sicsempertyrannis
 	m-all-e@brezno_slapov
 	m-all-e@jericho
@@ -364,6 +366,7 @@ centreline
 	extend ignore 2@ouroboros
 	
 	# Below Stuck In Paradise
+	extend left 13@lethe
 	extend left 21@kneekiller
 	extend right 5@bravenewworld
 	extend right 2@jericho2 1@jericho2
