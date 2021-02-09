@@ -13,12 +13,13 @@ input salvation-e.th2
 map m-all-e -projection extended
     salvation-1e
 endmap
+join trunkfloor:end branchroof:0
 
 	centreline
 		team "James Hooper" insts
-		team "Unknown" notes
+		team "Clare Tan" notes
 		explo-team "James Hooper"
-		explo-team "Unknown"
+		explo-team "Clare Tan"
 		date 2011.8.05
 		units length meters
 		units compass clino degrees
