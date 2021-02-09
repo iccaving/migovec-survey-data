@@ -535,6 +535,7 @@ survey vrtnarija -title "Vrtnarija"
 	join stuckinparadise2-1e@stuckinparadise2 stuckinparadise-1e@stuckinparadise
 	join kneekiller-1e@kneekiller stuckinparadise2-1e@stuckinparadise2
 	join eastlinks-1e@eastlinks stuckinparadise2-1e@stuckinparadise2
+	join salvation-1e@salvation kneekiller-1e@kneekiller
 	
 	###__________2012____________###
 	input ./2012/atlantis/atlantis.th
@@ -621,6 +622,8 @@ survey vrtnarija -title "Vrtnarija"
 	join hotpants-1e@hotpants throneroom-3e@throneroom
 	join peepshow-1e@peepshow hotpants-1e@hotpants
 	join undercover_squirrell-1e@undercover_squirrell peepshow-1e@peepshow
+	join bravenewworld-1e@bravenewworld salvation-1e@salvation
+	join invictus-1e@invictus bravenewworld-1e@bravenewworld
 	
 	###__________2013____________###
 	input ./2013/lethe/lethe.th
@@ -713,6 +716,7 @@ survey vrtnarija -title "Vrtnarija"
 	join xanadont-3e@xanadont candyMountain-1e@candyMountain
 	join 500m-1e@500m candyMountain-2e@candyMountain
 	join rural_underground-1e@rural_underground undercover_squirrell-1e@undercover_squirrell
+	join RCC_passage-1e@RCC_passage invictus-1e@invictus
 	
 	###__________2014____________###
 	input ./2014/sicsempertyrannis/sicsempertyrannis.th
