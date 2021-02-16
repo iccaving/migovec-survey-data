@@ -1,5 +1,0 @@
-source polter.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o polter.svg -layout test -layout-debug station-names

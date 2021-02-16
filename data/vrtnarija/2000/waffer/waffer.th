@@ -1,4 +1,3 @@
-
 survey waffer -title "waffer - Beyond Hardy"
 	
 	input waffer-p.th2
@@ -7,13 +6,12 @@ survey waffer -title "waffer - Beyond Hardy"
 		waffer-1p
 	endmap
 	
-
-input waffer-e.th2
-
-map m-all-e -projection extended
-    waffer-1e
-endmap
-
+	input waffer-e.th2
+	
+	map m-all-e -projection extended
+		waffer-1e
+	endmap
+	
 	centreline
 		team "Pete Jurd" insts
 		team "Shaggy" notes

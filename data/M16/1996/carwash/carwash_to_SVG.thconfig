@@ -1,5 +1,0 @@
-source carwash.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o carwash.svg -layout test -layout-debug station-names
