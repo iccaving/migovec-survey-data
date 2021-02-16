@@ -1,15 +1,10 @@
-import os
 import re
-from os.path import isfile, join, dirname, abspath
-import sys
+from os.path import  join,  abspath
 import argparse
 import tempfile
 import subprocess
-import multiprocessing as mp
-import json
-import pprint
 
-from helpers.survey import Survey, SourceFile
+from helpers.survey import Survey
 
 # Parse arguments
 parser = argparse.ArgumentParser(description="Create a skeleton scrap")

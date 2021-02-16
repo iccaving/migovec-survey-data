@@ -1,31 +1,33 @@
-
 survey migcon2 -title "System Migovec"
-
-input migcon2-e.th2
-
-map m-all-e -projection extended
-    migcon2-1e
-endmap
-
-centreline
-    team "Alva Gosson" insts
-    team "Iain McKenna" notes
-    explo-team "Alva Gosson"
-    explo-team "Iain McKenna"
-    date 1997.08.04
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    2	1	10.70	202	+25	#SS1 isRock and Roll 0
-    2	3	27.69	-	up
-    3	4	4.25	30	58
-    4	5	22.44	31	50
-    5	6	1.67	135	12	#SS 6 is bolt on bridge for traverse (not guide line)
-endcentreline
+	
+	input migcon2-e.th2
+	
+	map m-all-e -projection extended
+		migcon2-1e
+	endmap
+	
+	# NODRAW PLAN
+	# Probably drawn in some other plan cos its just a pitch
+	
+	centreline
+		team "Alva Gosson" insts
+		team "Iain McKenna" notes
+		explo-team "Alva Gosson"
+		explo-team "Iain McKenna"
+		date 1997.08.04
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		2	1	10.70	202	+25	#SS1 isRock and Roll 0
+		2	3	27.69	-	up
+		3	4	4.25	30	58
+		4	5	22.44	31	50
+		5	6	1.67	135	12	#SS 6 is bolt on bridge for traverse (not guide line)
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #
