@@ -720,7 +720,10 @@ survey vrtnarija -title "Vrtnarija"
 	join 500m-1e@500m candyMountain-2e@candyMountain
 	join rural_underground-1e@rural_underground undercover_squirrell-1e@undercover_squirrell
 	join RCC_passage-1e@RCC_passage invictus-1e@invictus
-	
+	join hash-1e@hash hash2-1e@hash2
+	join hash2-1e@hash2 hash3-1e@hash3
+	join hash-1e@hash eastlinks-1e@eastlinks
+
 	###__________2014____________###
 	input ./2014/sicsempertyrannis/sicsempertyrannis.th
 	input ./2014/jericho/jericho.th
