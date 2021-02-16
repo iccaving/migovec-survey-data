@@ -1,5 +1,0 @@
-source window.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o window.svg -layout test -layout-debug station-names

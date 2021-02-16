@@ -1,48 +1,48 @@
 # 2019.07.20 created by Tanguy Racine
 
 survey power_grab -title "Power Grab"
-
+	
 	input "power_grab-e.th2"
-
+	
 	map m-all-e -projection extended
 		power_grab-e1
 	endmap
-
-  centerline
-    date 2019.07.20 
-	explo-date 2019.07.20
 	
-    team "David [P Wilson]" notes tape
-	team "Christopher Bradley" insts
-	explo-team "David [P Wilson]"
-	explo-team "Christopher Bradley"
-
-	mark 1 7 9 fixed
+	centerline
+		date 2019.07.20
+		explo-date 2019.07.20
+		
+		team "David [P Wilson]" notes tape
+		team "Christopher Bradley" insts
+		explo-team "David [P Wilson]"
+		explo-team "Christopher Bradley"
+		
+		mark 1 7 9 fixed
+		
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		extend vertical
+		2	3	4.90	-	up
+		extend right
+		3	1	1.25	115	0
+		extend right
+		1	4	3.10	041	+6
+		extend left
+		5	4	1.70	328	-3
+		extend right
+		5	6	2.66	010	+17
+		extend right
+		6	7	9.00	082	+8
+		extend right
+		7	8	3.43	026	+44
+		extend right
+		8	9	6.52	057	-14
+		extend right
+		9	10	7.22	351	+36
+		extend right
+		10	11	3.56	253	+31
+		
+	endcenterline
 	
-    units length meters
-    units compass clino degrees
-    data normal from to length compass clino
-    extend vertical
-	2	3	4.90	-	up
-	extend right
-	3	1	1.25	115	0
-	extend right
-	1	4	3.10	041	+6
-	extend left
-	5	4	1.70	328	-3
-	extend right
-	5	6	2.66	010	+17
-	extend right
-	6	7	9.00	082	+8
-	extend right
-	7	8	3.43	026	+44
-	extend right
-	8	9	6.52	057	-14
-	extend right
-	9	10	7.22	351	+36
-	extend right
-	10	11	3.56	253	+31
-	
-  endcenterline
-
 endsurvey
