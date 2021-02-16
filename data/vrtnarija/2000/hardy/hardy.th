@@ -1,12 +1,16 @@
-
 survey hardy -title "Hardy pitch, following pitch and rift in Gardener's World (aka BCL)"
-
-input hardy-e.th2
-
-map m-all-e -projection extended
-    hardy-1e
-endmap
-
+	
+	input hardy-e.th2
+	
+	map m-all-e -projection extended
+		hardy-1e
+	endmap
+	
+	input hardy-p.th2
+	map m-all-p -projection plan
+		hardy-1p
+	endmap
+	
 	centreline
 		team "Martin McGowan" insts
 		team "Ben Ogborne" insts
