@@ -1,26 +1,25 @@
-
 survey plop -title "System Migovec"
-centreline
-    team "CV Pete" insts
-    team "CV Pete" notes
-    explo-team "CV Pete"
-    explo-team "CV Pete"
-    date 1996.08.16
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino
-    
-endcentreline
+	# NODRAW
+	centreline
+		team "CV Pete" insts
+		team "CV Pete" notes
+		explo-team "CV Pete"
+		explo-team "CV Pete"
+		date 1996.08.16
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #
 #;pitch down off NCB
 #
-#;Date: 16/8/96 
+#;Date: 16/8/96
 #;Instruments: CV Pete
 #;Book: CV Pete
 #
@@ -32,7 +31,7 @@ endsurvey
 #
 #*begin plop
 #*date 1996.08.16
-#*team "Peter Eland" 
+#*team "Peter Eland"
 #*team "Sarah Wingrove"
 #;notes
 #;*ref https://drive.google.com/open?id=0BxkZAUc06EK5SllHRVIzbjV5Wlk
