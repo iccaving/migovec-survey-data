@@ -5,6 +5,10 @@ survey alkatraz
 	map  m-all-e -projection extended
 		alkatraz-e1
 	endmap
+	
+	# NODRAW PLAN
+	# Plan is drawn in resurvey
+	
 	#input "alkatrazp.th2"
 	
 	#map m-all-p -projection plan

@@ -1,41 +1,40 @@
-
 survey plopzilla -title "plopzilla"
-
-input plopzilla-p.th2
-
-map m-all-p -projection plan
-    plopzilla-2p
-    break
-    plopzilla-1p
-endmap
-
-input plopzilla-e.th2
-
-map m-all-e -projection extended
-    plopzilla-1e
-endmap
-
-centreline
-    team "Andy Jurd" insts
-    team "Richard Venn" notes
-    explo-team "Andy Jurd"
-    explo-team "Richard Venn"
-    date 2007.07.31
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall
-    2	1	5.85	347	-35
-    3	2	3.95	354	-22
-    3	4	12.10	155	-12
-    4	5	11.30	-	up
-    5	6	2.5	185	+67
-    6	7	10.20	55	+68
-    7	8	4.68	60	+38
-    8	9	76.2	-	up
-    10	9	3.22	90	+12
-    11	10	8.97	69	+4
-    11	12	3.55	85	+25
-endcentreline
+	
+	input plopzilla-p.th2
+	
+	map m-all-p -projection plan
+		plopzilla-2p
+		break
+		plopzilla-1p
+	endmap
+	
+	input plopzilla-e.th2
+	
+	map m-all-e -projection extended
+		plopzilla-1e
+	endmap
+	
+	centreline
+		team "Andy Jurd" insts
+		team "Richard Venn" notes
+		explo-team "Andy Jurd"
+		explo-team "Richard Venn"
+		date 2007.07.31
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall
+		2	1	5.85	347	-35
+		3	2	3.95	354	-22
+		3	4	12.10	155	-12
+		4	5	11.30	-	up
+		5	6	2.5	185	+67
+		6	7	10.20	55	+68
+		7	8	4.68	60	+38
+		8	9	76.2	-	up
+		10	9	3.22	90	+12
+		11	10	8.97	69	+4
+		11	12	3.55	85	+25
+	endcentreline
 endsurvey
 
 # Converted From SVX
@@ -71,11 +70,11 @@ endsurvey
 #;Where the hell is the LRUD data? Oh well - at least I've been there...
 #1   1.0 1.0 50.0 0.0
 #2   5.0 5.0 50.0 0.0
-#3   5.0 5.0 50.0 0.0 
+#3   5.0 5.0 50.0 0.0
 #4   5.0 5.0 50.0 0.0 Bot of 2nd pitch down?
 #5   5.0 5.0 50.0 0.0
 #6   5.0 5.0 50.0 25.0
-#7   5.0 5.0 50.0 5.0 
+#7   5.0 5.0 50.0 5.0
 #8  10.0 10.0 0.0 0.0 I think this is in the centre of the rock bridge
 #9  2.0 2.0  5.0 67.0 24m Measured by Andy (aven above pitch bolt) with Laser Disto 2008 ?
 #10 0.25 0.25 0.25 0.25 Tiny tube onto plop itself

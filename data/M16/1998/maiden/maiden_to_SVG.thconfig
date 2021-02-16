@@ -1,5 +1,0 @@
-source maiden.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o maiden.svg -layout test -layout-debug station-names

@@ -10,6 +10,9 @@ scrap_reg = r"(?:\n|^)\s*scrap\s+(\S+)"
 end_scrap_reg = r"(?:\n|^)\s*endscrap"
 projection_reg = r"(?:\n|^).*-projection\s+(\S+)"
 drawnre = re.compile(r".*line wall")
+drawnexemptre = re.compile(r".*NODRAW")
+drawnexemptplanre = re.compile(r".*NODRAW PLAN")
+drawnexemptextendedre = re.compile(r".*NODRAW EE")
 
 
 class NoSurveysFoundException(Exception):
@@ -48,6 +51,8 @@ class Survey:
     children = []
     data = None
     scraps = []
+    plan_drawn_override = False
+    extended_drawn_override = False
 
     def __init__(self, id, parent, file_path):
         self.id = id
@@ -96,6 +101,18 @@ class Survey:
                 scrap.data = data[:]
                 data = []
                 continue
+            
+            # Exempt drawing
+            match = drawnexemptplanre.match(line)
+            if match:
+                self.plan_drawn_override = True
+            match = drawnexemptextendedre.match(line)
+            if match:
+                self.extended_drawn_override = True
+            match = drawnexemptre.match(line)
+            if match:
+                self.plan_drawn_override = True
+                self.extended_drawn_override = True
 
             data = data + [line]
         self.scraps = scraps
@@ -122,8 +139,8 @@ class SurveyLoader:
         for line in data.splitlines():
             if not line.strip():
                 continue
-            if line.lstrip().startswith("#"):
-                continue
+            # if line.lstrip().startswith("#"):
+            #     continue
             match = re.match(input_reg, line)
             if match:
                 new_file_path = abspath(join(dirname(file_path), match.group(1)))
