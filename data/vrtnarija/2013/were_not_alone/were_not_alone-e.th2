@@ -2,34 +2,41 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  -73.94 10.91
-  -155.40 -10.91
-endline
-line survey 
-  -41.99 7.52
-  -73.94 10.91
-endline
-line survey 
-  -0.11 6.81
-  -41.99 7.52
-endline
-line survey 
-  100.32 -5.55
-  -0.11 6.81
-endline
-line survey 
-  100.32 -5.55
-  155.40 -7.44
-endline
-endscrap
 
 scrap were_not_alone-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -155.40 -10.91 station -name 6
+
+point 29.0283 24.9542 u:label_MY -align tr -attr text "We're Not Alone" -attr lvl 3
+line rock-border -close on
+  146.6695 -4.2439
+  148.0275 -3.2254 154.648 -0.1698 154.648 -0.1698
+  158.2129 -5.0927
+  157.7037 -10.3551
+  149.3856 -11.8829
+endline
+
+line wall 
+  153.6459 2.8809
+  153.6459 2.8809 70.5811 3.8411 66.4999 4.5614
+  62.4187 5.2816 -14.4043 15.6047 -22.8068 15.6047
+  -31.2093 15.6047 -65.2995 19.2057 -70.341 19.4458
+  -72.7245 19.5593 -82.5523 23.12 -91.9785 21.552
+  -102.4903 19.8033 -112.7301 12.8345 -116.2742 11.4422
+endline
+
+line wall 
+  -97.3728 6.4989
+  -95.6916 6.257 -93.1488 7.6 -90.0599 7.2
+  -83.1943 6.3109 -77.4581 1.5473 -74.6623 1.6805
+  -69.6208 1.9206 -30.249 -3.1209 -19.6859 -2.4007
+  -9.1227 -1.6805 59.2977 -12.0036 66.7399 -12.2437
+  74.1822 -12.4837 157.0069 -13.6841 157.0069 -13.6841
+endline
+
+point -155.4 -10.91 station -name 6
 point -73.94 10.91 station -name 5
 point -41.99 7.52 station -name 4
 point -0.11 6.81 station -name 3
 point 100.32 -5.55 station -name 1
-point 155.40 -7.44 station -name 2
+point 155.4 -7.44 station -name 2
 endscrap
+
