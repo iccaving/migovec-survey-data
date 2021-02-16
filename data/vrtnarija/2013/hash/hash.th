@@ -1,18 +1,17 @@
 
 survey hash -title "Hash"
-	
+		
 	input hash-p.th2
 	
 	map m-all-p -projection plan
 		hash-1p
 	endmap
 	
+	input hash-e.th2
 
-input hash-e.th2
-
-map m-all-e -projection extended
-    hash-1e
-endmap
+	map m-all-e -projection extended
+    	hash-1e
+	endmap
 
 	centreline
 		team "Rhys Tyers" insts
@@ -20,6 +19,7 @@ endmap
 		explo-team "Rhys Tyers"
 		explo-team "Clare Tan"
 		date 2013.7.19
+		explo-date 2013.7.19
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
