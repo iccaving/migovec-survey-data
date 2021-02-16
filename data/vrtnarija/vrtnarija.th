@@ -39,6 +39,7 @@ survey vrtnarija -title "Vrtnarija"
 	join pico-p1@pico urinal2-p1@urinal2
 	join tesselator-p1@tesselator pico2-p2@pico2
 	join space_odyssey-p2@space_odyssey concorde-p1@concorde
+	join waffer-1p@waffer hardy-1p@hardy
 	
 	join bclent2-1e@bclent2 laurel-1e@laurel
 	join laurel-1e@laurel hardy-1e@hardy
@@ -131,6 +132,7 @@ survey vrtnarija -title "Vrtnarija"
 	join gold-1e@gold weepeople-1e@weepeople
 	join gold-1e@gold nitro-1e@nitro
 	join fallsrd-1e@fallsrd lowerfallsrd-1e@lowerfallsrd
+	join doublethink-1e@doublethink thirdthoughts-1e@thirdthoughts
 	
 	
 	###__________2004____________###
@@ -602,7 +604,9 @@ survey vrtnarija -title "Vrtnarija"
 	join brezno_slapov-1e@brezno_slapov atlantis-1e@atlantis
 	join bravenewworld-1p@bravenewworld salvation-1p@salvation
 	join ingloriousbasterd-1p@ingloriousbasterd atlantis-3p@atlantis
+	join ingloriousbasterd-1e@ingloriousbasterd atlantis-2e@atlantis
 	join minestrone2-1p@minestrone2 atlantis-3p@atlantis
+	join minestrone2-1e@minestrone2 atlantis-2e@atlantis
 	join minestrone1-1p@minestrone1 minestrone2-1p@minestrone2
 	join milkyway-4p@milkyway dreamsforthesoul-1p@dreamsforthesoul
 	join guillotine2-1p@guillotine2 guillotine-1p@guillotine
@@ -688,6 +692,7 @@ survey vrtnarija -title "Vrtnarija"
 	join lethe-1p@lethe brezno_slapov-1p@brezno_slapov
 	join lethe-1e@lethe brezno_slapov-1e@brezno_slapov
 	join were_not_alone-1p@were_not_alone atlantis-1p@atlantis
+	join were_not_alone-1e@were_not_alone atlantis-1e@atlantis
 	join RCC_passage-1p@RCC_passage invictus-1p@invictus
 	join hash-1p@hash eastlinks-1p@eastlinks
 	join hash2-1p@hash2 hash-1p@hash
@@ -723,10 +728,15 @@ survey vrtnarija -title "Vrtnarija"
 	join 500m-1e@500m candyMountain-2e@candyMountain
 	join rural_underground-1e@rural_underground undercover_squirrell-1e@undercover_squirrell
 	join RCC_passage-1e@RCC_passage invictus-1e@invictus
+	join pick_your_poison-1e@pick_your_poison clapton-1e@clapton
+	join clapton-1e@clapton bingo_granny-1e@bingo_granny
+	join bingo_granny-1e@bingo_granny kokain_rute-1e@kokain_rute
+	join kokain_lab-1e@kokain_lab kokain_rute-1e@kokain_rute
+	join kokain_rute-1e@kokain_rute thirdthoughts-1e@thirdthoughts
 	join hash-1e@hash hash2-1e@hash2
 	join hash2-1e@hash2 hash3-1e@hash3
 	join hash-1e@hash eastlinks-1e@eastlinks
-
+	
 	###__________2014____________###
 	input ./2014/sicsempertyrannis/sicsempertyrannis.th
 	input ./2014/jericho/jericho.th
@@ -790,6 +800,10 @@ survey vrtnarija -title "Vrtnarija"
 	join apuntoofar1-1e@apuntoofar1 kamikaze-3e@kamikaze
 	join apuntoofar2-1e@apuntoofar2 apuntoofar1-1e@apuntoofar1
 	join apuntoofar3-1e@apuntoofar3 apuntoofar2-1e@apuntoofar2
+	join AJA-1e@AJA rocksteadylove-1e@rocksteadylove
+	join rocksteadylove-1e@rocksteadylove hanginggardensdeep-1e@hanginggardensdeep
+	join hanginggardensdeep-1e@hanginggardensdeep pick_your_poison-1e@pick_your_poison
+	join esoterica-1e@esoterica yourmum-1e@yourmum
 	
 	###__________2015____________###
 	input ./2015/jetstream/jetstream.th
