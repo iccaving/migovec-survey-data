@@ -1,0 +1,56 @@
+survey sad_face -title "Sad Face"
+  #input sad_face-p.th2
+  
+  #map m-all-p -projection plan
+  #  sad_face-1p
+  #endmap
+
+  #input sad_face-e.th2
+
+  #map m-all-e -projection plan
+  #  sad_face-1e
+  #endmap
+  
+  centreline
+    
+    date 2019.08.03
+    explo-date 2019.08.03
+    
+    team "Jack Halliday" insts
+    team "David [P Wilson]" notes
+    explo-team "Jack Halliday"
+    explo-team "David [P Wilson]"
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    0 1 24.4  - UP
+    1 2 11.0  188 +41
+  endcentreline
+endsurvey
+
+#; 2019.08.03
+#; :(
+#; Instruments Jack Halliday  
+#; Book Jack Halliday 
+#; Tape David Wilson 
+
+#*begin sad_face
+# *date 2019.08.02 
+#  *team "jwdh dpw" 
+#  *units tape meters
+#  *units compass degrees
+#  *units clino degrees
+#  *alias station - ..
+ # *flags not splay
+#  *data normal from to tape compass clino
+    
+#	0 1   24.4 - UP
+#	1 2   11.0 188 +41
+	
+#  *flags not splay
+#;Notes:
+#;stn 2 is wishing well stn 10
+
+#*end sad_face
+#*equate sad_face.10 sad_face.2

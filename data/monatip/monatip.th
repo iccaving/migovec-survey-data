@@ -122,9 +122,11 @@ survey monatip
 	
 	input "./2019/wishing_well/wishing_well.th"
 	input "./2019/wishing_well2/wishing_well2.th"
+	input "./2019/sad_face/sad_face.th"
 	
 	equate 28@monatip11 13@wishing_well
 	equate 1@wishing_well 1@wishing_well2
+	equate 10@wishing_well 2@sad_face
 	
 	join wishing_well2-1p@wishing_well2 wishing_well-2p@wishing_well
 	
