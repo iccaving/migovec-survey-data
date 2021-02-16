@@ -11,6 +11,7 @@ map m-all-e -projection extended
 	m-yorkshire_extensions-e
 	m-below_balamory-e
 	m-korita-e
+	m-serpentine-e
 endmap
 
 map m-entrance-e -projection extended
@@ -68,6 +69,12 @@ map m-beyond-consort-e -projection extended
 	m-all-e@apollo
 	m-all-e@milkyway
 	m-all-e@dreamsforthesoul
+endmap
+
+map m-serpentine-e -projection extended
+	m-all-e@serpentine
+	m-all-e@itwillrain
+	m-all-e@roundpond
 endmap
 
 map m-friendship-e -projection extended
