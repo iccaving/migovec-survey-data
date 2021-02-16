@@ -10,34 +10,27 @@ encoding  utf-8
 
 
 layout base-p
-	#_____________________________________________________________
-	#                                                             |
-	#                        OVERWRITE THESE                      |
-	#_____________________________________________________________|
-	
-	legend off # on - Maps the symbols on the survey to their meaning
-	colour-legend off # on - Maps the colours on the survey to their meaning
-	map-header 0 0 off # 0 0 nw
-	#colour map-fg [100 100 100] # explo-date
 	
 	#_____________________________________________________________
 	#                                                             |
 	#                        GENERAL STATEMENTS                   |
 	#_____________________________________________________________|
 	
+	# hide unnecessary symbols for large scale
 	
-	symbol-hide group all
-	symbol-show line wall
-	symbol-show area water
-	symbol-show area sump
-	symbol-show line rock-border
-	symbol-show line pit
-	symbol-show line chimney
-	symbol-show point label
-	symbol-show point continuation
-	symbol-show point dig
-	symbol-show point entrance
-	symbol-show point camp
+	symbol-hide point remark
+	symbol-hide point label
+	symbol-hide point passage-height
+	symbol-hide point station
+	symbol-hide line arrow
+	symbol-hide line contour
+	symbol-hide line rock-border
+	symbol-hide line floor-step
+	symbol-hide point gradient
+	symbol-hide line label
+	symbol-hide line survey
+	symbol-hide point station-name
+
 	fonts-setup 6 7 10 12 14
 	
 	code metapost
