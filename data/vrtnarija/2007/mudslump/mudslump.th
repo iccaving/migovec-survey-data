@@ -1,4 +1,3 @@
-
 survey mudslump -title "mudslump:"
 	
 	input mudslump-e.th2
@@ -9,7 +8,7 @@ survey mudslump -title "mudslump:"
 		mudslump-1e
 		mudslump-2e
 	endmap
-
+	
 	join mudslump-1e mudslump-2e
 	
 	input mudslump-p.th2
@@ -79,6 +78,9 @@ survey mudslump -title "mudslump:"
 		26  0.5 0.5 0.5 0.5
 		27  4 0 7 1
 	endcentreline
+	
+	equate 5 22
+	equate 23 4
 endsurvey
 
 # Converted From SVX

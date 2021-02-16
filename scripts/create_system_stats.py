@@ -1,15 +1,10 @@
-import os
-import re
-from os.path import isfile, join, dirname, abspath
-import sys
-import argparse
-import tempfile
-import subprocess
+from os.path import abspath
 import multiprocessing as mp
 import json
 import pprint
+import argparse
 
-from helpers.survey import Survey, SurveyLoader
+from helpers.survey import  SurveyLoader
 from helpers.therion import compile_file, get_stats_from_log
 
 # Parse arguments
@@ -45,8 +40,8 @@ def get_drawn_length(survey):
         return None
     stats = get_stats_from_log(log)
     proj_is_drawn = {
-        "plan": any([s.is_drawn() for s in survey.scraps if s.projection == "plan"]),
-        "extended": any([s.is_drawn() for s in survey.scraps if s.projection == "extended"]),
+        "plan": any([s.is_drawn() for s in survey.scraps if s.projection == "plan"]) or survey.plan_drawn_override,
+        "extended": any([s.is_drawn() for s in survey.scraps if s.projection == "extended"]) or survey.extended_drawn_override,
     }
     length = float(stats["length"])
     return (length, proj_is_drawn, survey)
