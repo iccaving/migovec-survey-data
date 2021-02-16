@@ -1,5 +1,0 @@
-source hotline.th
-layout test
- scale 1 500
- endlayout
-export map -projection plan -o hotline.svg -layout test -layout-debug station-names

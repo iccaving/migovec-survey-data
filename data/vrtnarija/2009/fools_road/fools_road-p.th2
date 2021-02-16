@@ -3,28 +3,28 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  1.02 6.73
-  14.96 18.86
-endline
-line survey 
-  1.02 6.73
-  1.02 6.73
-endline
-line survey 
-  1.02 6.73
-  1.02 6.73
-endline
-line survey 
-  -14.96 -18.86
-  1.02 6.73
-endline
+	line survey
+		1.02 6.73
+		14.96 18.86
+	endline
+	line survey
+		1.02 6.73
+		1.02 6.73
+	endline
+	line survey
+		1.02 6.73
+		1.02 6.73
+	endline
+	line survey
+		-14.96 -18.86
+		1.02 6.73
+	endline
 endscrap
 
 scrap fools_road-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 14.96 18.86 station -name 5
-point 1.02 6.73 station -name 4
-point 1.02 6.73 station -name 3
-point 1.02 6.73 station -name 2
-point -14.96 -18.86 station -name 1
+	point 14.96 18.86 station -name 5
+	point 1.02 6.73 station -name 4
+	point 1.02 6.73 station -name 3
+	point 1.02 6.73 station -name 2
+	point -14.96 -18.86 station -name 1
 endscrap
