@@ -2,13 +2,15 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 2352.000000 386.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-
 scrap eastlinks-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 912.6869 338.4848 u:label_MY -attr text "Lost Miles" -attr lvl 2 -attr align br
+line wall -subtype invisible
+  596.3934 173.5221
+  560.757 175.9968
+endline
 
-line wall
+point 1446.6869 250.4848 u:label_MY -align t -attr text "Lost Miles" -attr lvl 2
+line wall 
   162.0 211.0
   162.0 211.0 256.8869 178.1106 270.1862 176.7107
   283.4855 175.3107 338.0827 171.8109 351.3821 166.2112
@@ -27,10 +29,9 @@ line wall
   1853.5054 174.6108 2069.7944 169.0111 2080.9938 171.111
   2092.1933 173.2109 2174.789 178.1106 2187.3884 183.0104
   2199.9878 187.9101 2213.2871 194.2098 2213.2871 194.2098
-  smooth off
 endline
 
-line wall
+line wall 
   2216.0869 242.5073
   2216.0869 242.5073 2181.0887 226.4081 2141.1908 225.0082
   2101.2928 223.6083 1992.7983 222.9083 1968.9995 222.2084
@@ -46,67 +47,40 @@ line wall
   839.2572 185.8102 794.4595 190.01 772.7606 184.4103
   751.0617 178.8106 677.5654 169.0111 655.8665 166.9112
   643.7401 165.7376 593.1098 163.5619 596.3934 173.5221
-  smooth off
 endline
 
-line wall
+line wall 
   560.757 175.9968
   553.5314 163.9578 526.1052 169.4022 521.4734 169.711
   510.9739 170.411 455.6767 183.7103 435.3778 190.71
   415.0788 197.7096 347.8822 215.9087 331.7831 218.0086
   315.6839 220.1085 265.2865 227.1081 248.4873 233.4078
   231.6882 239.7075 183.7 265.8 169.0 256.0
-  smooth off
 endline
 
 point 133.86 246.17 station -name 24
-
 point 150.06 254.43 station -name 23
-
 point 277.39 215.54 station -name 22
-
 point 349.66 202.78 station -name 21
-
 point 498.28 162.94 station -name 20
-
 point 575.0 160.26 station -name 19
-
 point 649.7 155.06 station -name 18
-
 point 703.63 161.68 station -name 17
-
 point 776.52 174.51 station -name 16
-
 point 874.07 176.24 station -name 15
-
 point 900.35 185.3 station -name 14
-
 point 989.8 164.59 station -name 13
-
 point 1145.64 148.21 station -name 12
-
 point 1250.2 133.57 station -name 11
-
 point 1288.11 158.13 station -name 10
-
 point 1318.83 167.58 station -name 9
-
 point 1347.35 178.53 station -name 8
-
 point 1399.98 206.48 station -name 7
-
 point 1450.83 223.02 station -name 6
-
 point 1526.07 212.46 station -name 5
-
 point 1709.51 209.24 station -name 4
-
 point 1981.28 213.96 station -name 3
-
 point 2169.28 220.57 station -name 2
-
 point 2218.14 235.46 station -name 1
-
 endscrap
-
 

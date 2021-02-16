@@ -1,32 +1,34 @@
-
 survey woft -title "Waste of Fucking Time"
-
-input woft-e.th2
-
-map m-all-e -projection extended
-    woft-1e
-    woft-2e
-endmap
-
-centreline
-    team "Alva Gosson" insts
-    team "Jim Evans" notes
-    explo-team "Alva Gosson"
-    explo-team "Jim Evans"
-    date 1997.07.25
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    1	2	6.1	050	-02
-    2	3	26.4	-	up
-    3	4	6.4	302	32
-    4	5	20.2	-	up
-    5	6	17.4	355	20
-endcentreline
+	
+	input woft-e.th2
+	
+	map m-all-e -projection extended
+		woft-1e
+		woft-2e
+	endmap
+	
+	# NODRAW PLAN
+	# Short and vertical so not bothered
+	
+	centreline
+		team "Alva Gosson" insts
+		team "Jim Evans" notes
+		explo-team "Alva Gosson"
+		explo-team "Jim Evans"
+		date 1997.07.25
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		1	2	6.1	050	-02
+		2	3	26.4	-	up
+		3	4	6.4	302	32
+		4	5	20.2	-	up
+		5	6	17.4	355	20
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #

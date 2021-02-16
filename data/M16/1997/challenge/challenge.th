@@ -1,32 +1,33 @@
-
 survey challenge -title "System Migovec"
-
-input challenge-e.th2
-
-map m-all-e -projection extended
-    challenge-1e
-endmap
-
-centreline
-    team "Tim Wright" insts
-    team "Alva Gosson" notes
-    explo-team "Tim Wright"
-    explo-team "Alva Gosson"
-    date 1997.08.07
-    units length meters
-    units compass clino degrees
-    data normal from to tape compass clino ignoreall # Default
-    2	1	12.50	-	down
-    3	2	4.71	140	-18
-    3	4	15.00	329	-35
-    5	3	7.44	203	-60
-    6	5	6.86	310	-77
-    7	6	4.03	010	-05
-endcentreline
+	input challenge-e.th2
+	
+	map m-all-e -projection extended
+		challenge-1e
+	endmap
+	
+	# NODRAW PLAN
+	# Probably drawn in Challenger Traverse or something
+	
+	centreline
+		team "Tim Wright" insts
+		team "Alva Gosson" notes
+		explo-team "Tim Wright"
+		explo-team "Alva Gosson"
+		date 1997.08.07
+		units length meters
+		units compass clino degrees
+		data normal from to tape compass clino ignoreall # Default
+		2	1	12.50	-	down
+		3	2	4.71	140	-18
+		3	4	15.00	329	-35
+		5	3	7.44	203	-60
+		6	5	6.86	310	-77
+		7	6	4.03	010	-05
+	endcentreline
 endsurvey
 
 # Converted From SVX
-#; System Migovec 
+#; System Migovec
 #; (c) 1994 - 1997 Imperial College Caving Club
 #; Surveyed to BCRA Grade 5b
 #
@@ -51,7 +52,7 @@ endsurvey
 #3	4	15.00	329	-35
 #5	3	7.44	203	-60
 #6	5	6.86	310	-77
-#7	6	4.03	010	-05 
+#7	6	4.03	010	-05
 #
 #*end challenge
 #
