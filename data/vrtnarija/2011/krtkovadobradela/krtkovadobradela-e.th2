@@ -1,90 +1,62 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 445.000000 414.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
-  85.20 71.97
-  88.61 73.94
+scrap krtkovadobradela-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+point 200.7841 211.5835 u:label_MY -align bl -attr text "Krtkova Dobra Dela" -attr lvl 2
+line wall 
+  377.0824 120.7137
+  390.6857 123.4343
 endline
-line survey 
-  75.00 61.02
-  85.20 71.97
+
+line wall 
+  394.4946 133.7728
+  394.4946 133.7728 409.1861 139.2141 406.4655 146.8319
+  403.7448 154.4497 405.9213 165.8765 396.6711 167.5089
+  387.4209 169.1413 351.5083 171.3178 347.1553 170.7737
+  342.8022 170.2295 333.0079 156.0821 326.4783 157.1704
+  319.9487 158.2587 300.36 165.8765 299.8159 168.053
+  299.2718 170.2295 248.1235 245.3195 236.6968 246.9519
+  225.27 248.5843 182.2837 245.3195 177.3865 245.8637
+  172.4894 246.4078 126.2383 245.8637 118.6205 250.7609
+  111.0026 255.658 83.252 264.9082 80.5313 269.8054
+  77.8107 274.7026 65.8398 289.3941 62.0309 291.0265
+  58.222 292.6589 48.9718 291.5706 48.9718 291.5706
 endline
-line survey 
-  70.86 52.52
-  75.00 61.02
+
+line wall 
+  47.8835 276.8791
+  47.8835 276.8791 57.6778 269.2613 58.222 264.9082
+  58.7661 260.5552 64.7515 248.0402 68.5604 247.4961
+  72.3694 246.9519 117.5322 229.5398 124.6059 230.0839
+  131.6796 230.628 173.5776 224.6426 179.5631 225.7309
+  185.5485 226.8191 221.4611 231.1721 224.1818 228.4515
+  226.9024 225.7309 267.1681 169.6854 271.5211 165.8765
+  275.8742 162.0676 312.875 144.1113 316.6839 143.5671
+  320.4929 143.023 332.4637 140.3024 335.7285 143.023
+  338.9933 145.7437 348.2435 155.538 353.6848 154.9939
+  359.1261 154.4497 384.1561 156.6263 386.3327 153.9056
+  388.5092 151.185 393.4063 145.1995 390.1416 143.5671
+  386.8768 141.9348 372.7294 133.2287 372.7294 133.2287
 endline
-line survey 
-  61.58 48.19
-  70.86 52.52
-endline
-line survey 
-  31.15 33.39
-  61.58 48.19
-endline
-line survey 
-  14.42 28.90
-  31.15 33.39
-endline
-line survey 
-  14.42 28.90
-  -34.28 25.43
-endline
-line survey 
-  -34.28 25.43
-  -88.61 25.43
-endline
-line survey 
-  -88.61 25.43
-  -78.60 14.33
-endline
-line survey 
-  -26.94 -45.04
-  -78.60 14.33
-endline
-line survey 
-  9.56 -59.84
-  -26.94 -45.04
-endline
-line survey 
-  9.56 -59.84
-  31.46 -50.94
-endline
-line survey 
-  39.22 -49.61
-  31.46 -50.94
-endline
-line survey 
-  75.41 -50.87
-  39.22 -49.61
-endline
-line survey 
-  79.75 -65.98
-  75.41 -50.87
-endline
-line survey 
-  68.00 -73.94
-  79.75 -65.98
-endline
+
+point 383.05 134.06 station -name 1
+point 394.8 142.02 station -name 2
+point 390.46 157.13 station -name 3
+point 354.26 158.39 station -name 4
+point 346.5 156.98 station -name 5
+point 324.6 148.16 station -name 6
+point 288.1 162.88 station -name 7
+point 236.44 222.33 station -name 8
+point 226.43 233.43 station -name 9
+point 172.1 233.43 station -name 10
+point 123.4 236.9 station -name 11
+point 106.67 241.31 station -name 12
+point 76.23 256.19 station -name 13
+point 66.96 260.52 station -name 14
+point 62.82 269.02 station -name 15
+point 52.61 279.97 station -name 16
+point 49.2 281.94 station -name 17
 endscrap
 
-scrap krtkovadobradela-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point 88.61 73.94 station -name 17
-point 85.20 71.97 station -name 16
-point 75.00 61.02 station -name 15
-point 70.86 52.52 station -name 14
-point 61.58 48.19 station -name 13
-point 31.15 33.39 station -name 12
-point 14.42 28.90 station -name 11
-point -34.28 25.43 station -name 10
-point -88.61 25.43 station -name 9
-point -78.60 14.33 station -name 8
-point -26.94 -45.04 station -name 7
-point 9.56 -59.84 station -name 6
-point 31.46 -50.94 station -name 5
-point 39.22 -49.61 station -name 4
-point 75.41 -50.87 station -name 3
-point 79.75 -65.98 station -name 2
-point 68.00 -73.94 station -name 1
-endscrap
