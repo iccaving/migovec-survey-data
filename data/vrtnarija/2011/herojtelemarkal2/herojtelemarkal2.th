@@ -5,6 +5,11 @@ survey herojtelemarkal2 -title "Herojtelemarkal"
 	map m-all-p -projection plan
 		herojtelemarkal2-1p
 	endmap
+
+	input herojtelemarkal2-e.th2
+	map m-all-e -projection extended
+		herojtelemarkal2-1e
+	endmap
 	
 	centreline
 		team "Tjaša Rutar" insts

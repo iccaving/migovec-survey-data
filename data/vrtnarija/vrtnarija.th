@@ -542,6 +542,9 @@ survey vrtnarija -title "Vrtnarija"
 	join salvation-1e@salvation kneekiller-1e@kneekiller
 	join roundpond-1e@roundpond itwillrain-1e@itwillrain
 	join krtkovadobradela-1e@krtkovadobradela letnadrugisvet-1e@letnadrugisvet
+	join krtekinorel-1e@krtekinorel krtkovadobradela-1e@krtkovadobradela
+	join herojtelemarkal1-1e@herojtelemarkal1 krtkovadobradela-1e@krtkovadobradela
+	join herojtelemarkal2-1e@herojtelemarkal2 herojtelemarkal1-1e@herojtelemarkal1
 	
 	###__________2012____________###
 	input ./2012/atlantis/atlantis.th

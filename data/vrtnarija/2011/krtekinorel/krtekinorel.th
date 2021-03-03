@@ -6,6 +6,11 @@ survey krtekinorel -title "Krtekinorel"
 	map m-all-p -projection plan
 		krtekinorel-1p
 	endmap
+
+	input krtekinorel-e.th2
+	map m-all-e -projection extended
+		krtekinorel-1e
+	endmap
 	
 	centreline
 		team "Tjaša Rutar" insts
