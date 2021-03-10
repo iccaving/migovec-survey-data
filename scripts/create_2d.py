@@ -19,10 +19,13 @@ parser.add_argument(
     "survey_selector",
     help='The selector for the survey to produce a scrap for.  e.g. "roundpond@vrtnarija.vrtnarija_vilinska.system_migovec"',
 )
-parser.add_argument("--projection", help="The projection to produce", default="plan")
-parser.add_argument("--format", help="The output format. Either th2 for producing skeleton for drawing or plt for visualising in aven/loch", default="th2")
+parser.add_argument(
+    "--projection", help="The projection to produce", default="plan")
+parser.add_argument(
+    "--format", help="The output format. Either th2 for producing skeleton for drawing or plt for visualising in aven/loch", default="th2")
 parser.add_argument("--out", help="Output path")
-parser.add_argument("--therion-path", help="Path to therion binary", default="therion")
+parser.add_argument(
+    "--therion-path", help="Path to therion binary", default="therion")
 args = parser.parse_args()
 
 ENTRY_FILE = abspath(args.survey_file)
@@ -58,7 +61,8 @@ template_args = {
     "selector": survey.therion_id,
     # tmpdir provided in compile_template
 }
-log, tmpdir = compile_template(template, template_args, cleanup=False, therion_path=args.therion_path)
+log, tmpdir = compile_template(
+    template, template_args, cleanup=False, therion_path=args.therion_path)
 
 print("Parsing 2D XVI file")
 # Parse the XVI file
@@ -70,9 +74,8 @@ with open(join(tmpdir, "xvi.xvi"), "r", encoding="utf-8") as f:
 
     # Extract all the stations
     for line in xvi_stations.split("\n"):
-        if line:
-            print(line)
-        match = re.search("{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s([^@]+)(?:@([^\s}]*))?\s*}", line)
+        match = re.search(
+            "{\s*(-?\d+\.\d+)\s*(-?\d+\.\d+)\s([^@]+)(?:@([^\s}]*))?\s*}", line)
         if match:
             x = match.groups()[0]
             y = match.groups()[1]
@@ -81,7 +84,8 @@ with open(join(tmpdir, "xvi.xvi"), "r", encoding="utf-8") as f:
             namespace_array = namespace.split(".") if namespace else []
             station = station_number
             if len(namespace_array) > 1:
-                station = "{}@{}".format(station_number, ".".join(namespace_array[0:-1]))
+                station = "{}@{}".format(station_number,
+                                         ".".join(namespace_array[0:-1]))
             stations["{}.{}".format(x, y)] = [x, y, station]
 
     # Extract all the lines
@@ -97,13 +101,16 @@ with open(join(tmpdir, "xvi.xvi"), "r", encoding="utf-8") as f:
             y2 = match.groups()[3]
             key1 = "{}.{}".format(x1, y1)
             key2 = "{}.{}".format(x2, y2)
-            station1 = stations[key1][2] if key1 in stations else None  # Splays won't have stations
+            # Splays won't have stations
+            station1 = stations[key1][2] if key1 in stations else None
             station2 = stations[key2][2] if key2 in stations else None
             lines.append([x1, y1, x2, y2, station1, station2])
 shutil.rmtree(tmpdir)
 
-output_file_name = "{name}-{projection_short}.{format}".format(name=survey.name, projection_short=PROJECTION[0], format=FORMAT)
-output_path = OUTPUT if OUTPUT else join(dirname(survey.file_path), output_file_name)
+output_file_name = "{name}-{projection_short}.{format}".format(
+    name=survey.name, projection_short=PROJECTION[0], format=FORMAT)
+output_path = OUTPUT if OUTPUT else join(
+    dirname(survey.file_path), output_file_name)
 print("Writing output to: {}".format(output_path))
 
 # Write TH2
@@ -136,17 +143,22 @@ endscrap"""
     th2_points = []
     th2_names = []
     for line in lines:
-        th2_lines.append(th2_line.format(x1=line[0], y1=line[1], x2=line[2], y2=line[3]))
+        th2_lines.append(th2_line.format(
+            x1=line[0], y1=line[1], x2=line[2], y2=line[3]))
         coords1 = "{}.{}".format(line[0], line[1])
         if coords1 not in seen:
             seen.add(coords1)
-            th2_points.append(th2_point.format(x=line[0], y=line[1], station=line[4]))
-            th2_names.append(th2_name.format(x=line[0], y=line[1], station=line[4]))
+            th2_points.append(th2_point.format(
+                x=line[0], y=line[1], station=line[4]))
+            th2_names.append(th2_name.format(
+                x=line[0], y=line[1], station=line[4]))
         coords2 = "{}.{}".format(line[2], line[3])
         if "{}.{}".format(line[2], line[3]) not in seen:
             seen.add(coords2)
-            th2_points.append(th2_point.format(x=line[2], y=line[3], station=line[5]))
-            th2_names.append(th2_name.format(x=line[2], y=line[3], station=line[5]))
+            th2_points.append(th2_point.format(
+                x=line[2], y=line[3], station=line[5]))
+            th2_names.append(th2_name.format(
+                x=line[2], y=line[3], station=line[5]))
 
     if not isfile(output_path):
         with open(output_path, "w+") as f:
@@ -181,8 +193,10 @@ if FORMAT == "plt":
     plt_file = """NX D 1 1 1 C{name}.plt\n{points}"""
     plt_lines = []
     for line in lines:
-        plt_lines.append(plt_command.format(type="M", x=line[0], y=line[1], station=line[4]))
-        plt_lines.append(plt_command.format(type="D", x=line[2], y=line[3], station=line[5]))
+        plt_lines.append(plt_command.format(
+            type="M", x=line[0], y=line[1], station=line[4]))
+        plt_lines.append(plt_command.format(
+            type="D", x=line[2], y=line[3], station=line[5]))
 
     with open(output_path, "w+") as f:
         f.write(
