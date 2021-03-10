@@ -1,13 +1,12 @@
 
 survey atworldsend -title "At Worlds End"
 	
-	input atworldsend-p.th2
+input atworldsend-p.th2
 	
-	map m-all-p -projection plan
-		atworldsend-1p
-	endmap
+map m-all-p -projection plan
+	atworldsend-1p
+endmap
 	
-
 input atworldsend-e.th2
 
 map m-all-e -projection extended
@@ -23,13 +22,21 @@ endmap
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
+		extend left
 		2	1	5.03	301	-14
+		extend left
 		3	2	2.29	315	+29
+		extend left
 		4	3	1.63	259	+29
+		extend left
 		5	4	1.91	229	-37
+		extend left
 		6	5	4.24	278	-60
+		extend left
 		7	6	1.95	281	+05
+		extend vertical
 		8	7	14.71	-	down
+		extend left
 		9	8	1.27	124	+22
 	endcentreline
 endsurvey
