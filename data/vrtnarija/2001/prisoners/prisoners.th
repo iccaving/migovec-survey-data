@@ -1,4 +1,3 @@
-
 survey prisoners -title "Name Prisoners of Azkaban"
 	
 	input prisoners-p.th2
@@ -6,14 +5,14 @@ survey prisoners -title "Name Prisoners of Azkaban"
 	map m-all-p -projection plan
 		prisoners-1p
 	endmap
-
-
-input prisoners-e.th2
-
-map m-all-e -projection extended
-    prisoners-1e
-endmap
-
+	
+	
+	input prisoners-e.th2
+	
+	map m-all-e -projection extended
+		prisoners-1e
+	endmap
+	
 	centreline
 		team "Adrian Hooper" insts
 		team "Martin [McGowan]" notes
@@ -23,7 +22,7 @@ endmap
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall # Default
-		2	1	16.4	-	down
+		2	1	16.4	0	down
 		3	2	3.47	178	-52
 		4	3	4.24	063	-64	#station 4 is station 12 in judge
 	endcentreline

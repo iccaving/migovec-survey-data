@@ -1,23 +1,20 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap prisoners-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-scrap prisoners-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-	
-	line survey
-		-6.81 1.73
-		6.26 8.43
-	endline
-	
-	line survey
-		6.26 8.43
-		6.81 -8.43
-	endline
-	
-	point -6.81 1.73 station -name 4
-	point 6.26 8.43 station -name 3
-	point 6.81 -8.43 station -name 1
-	point 6.81 -8.43 station -name 2
+line wall -close on
+  246.5278 510.6027
+  237.5992 502.7902 238.6533 505.3943 240.2654 495.9697
+  241.8775 486.5451 248.2639 482.7629 256.4484 485.8631
+  264.6329 488.9633 266.6791 491.1334 265.935 498.3259
+  265.191 505.5183 267.9812 511.4087 258.5565 512.5248
+  249.1319 513.6409 246.5278 510.6027 246.5278 510.6027
+endline
+
+point 256.81 491.57 station -name 1
+point 256.26 508.43 station -name 3
+point 243.19 501.73 station -name 4
 endscrap
 
