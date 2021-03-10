@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 928.250000 680.250000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap bclent2-p1 -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74] -projection plan
+scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
 
 line wall 
   624.0429 506.9448
@@ -71,7 +70,7 @@ line wall
   605.4874 554.6848
 endline
 
-point 629.1593 528.6597 station -name 6
+point 629.159 528.66 station -name 6
 line wall -close on -outline in
   633.5 518.5
   636.6443 519.3387 638.4339 514.2514 641.0 512.25
@@ -92,7 +91,7 @@ line wall -close on -outline in
   641.6977 504.783 634.852 509.1066 634.852 509.1066
 endline
 
-point 627.8437 513.4568 station -name 8
+point 627.844 513.457 station -name 8
 line rock-border -close on
   669.25 500.5
   666.25 498.5
@@ -215,24 +214,22 @@ line contour
   770.0 520.25 775.75 530.75 775.25 541.0
 endline
 
-point 799.0 523.5 entrance -align r -scale l -orientation 277.9
-
-point 829.0 533.5 u:label_MY -align tr -scale l -attr text "VRTNARIJA" -attr lvl 1 -attr style 6 # box label
-
+point 799.0 523.5 entrance -align r -orientation 277.900029411315 -scale l
+point 829.0 533.5 u:label_MY -align tr -attr text VRTNARIJA -attr lvl 1 -attr style 6 -scale l
 line pit 
   645.0 525.75
   645.0 525.75 644.5 528.75 639.75 530.5
 endline
 
-point 658.5418 504.0281 station -name 4
-point 677.3991 494.4533 station -name 3
-point 702.7616 502.6394 station -name 2
-point 750.2705 522.8855 station -name 1
-point 787.5467 536.4073 station -name 0
+point 658.542 504.028 station -name 4
+point 677.399 494.453 station -name 3
+point 702.762 502.639 station -name 2
+point 750.27 522.885 station -name 1
+point 787.547 536.407 station -name 0
 endscrap
 
 
-scrap bclent2-p2 -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74] -projection plan
+scrap bclent2-p2 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
 
 line pit 
   602.2808 486.8691
@@ -289,13 +286,13 @@ line wall
   574.75 511.75 570.75 513.5 570.75 513.5
 endline
 
-point 580.7002 503.0779 station -name 11
-point 609.7903 496.3536 station -name 10
-point 612.9332 507.3903 station -name 9
+point 580.7 503.078 station -name 11
+point 609.79 496.354 station -name 10
+point 612.933 507.39 station -name 9
 endscrap
 
 
-scrap bclent2-p3 -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74] -projection plan
+scrap bclent2-p3 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
 
 point 494.25 534.5 station -name 15
 point 530.25 508.25 station -name 14
@@ -306,8 +303,8 @@ line pit
   546.25 511.5 559.0 517.25 559.5 517.5
 endline
 
-point 580.7002 503.0779 station -name 12
-line rock-border -close on -clip off
+point 580.7 503.078 station -name 12
+line rock-border -clip off -close on
   570.25 511.0
   570.25 511.0 565.5 513.25 565.0 512.5
   564.5 511.75 565.0 507.5 565.0 507.5
@@ -321,7 +318,7 @@ line rock-border -close on
   546.75 492.75 552.0 491.5 552.0 491.5
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   566.75 503.75
   557.25 502.5
   556.75 494.75
@@ -360,26 +357,14 @@ endline
 line wall 
   570.75 513.5
   560.25 515.0 552.0 522.25 548.25 524.5
-  544.5 526.75 538.25 529.0 532.0 530.5
-  525.75 532.0 500.0 540.5 500.0 540.5
+  544.5 526.75 538.1612 528.2898 531.9112 529.7898
+  525.6612 531.2898 497.3367 541.4766 497.3367 541.4766
 endline
 
 line wall 
-  480.5 541.25
-  477.5 541.5 472.5 538.5 472.5 536.5
-  472.5 534.5 473.5 535.0 473.75 532.75
-  474.0 530.5 472.0 528.0 472.0 528.0
-endline
-
-line wall 
-  472.0 528.0
-  472.0 528.0 468.5 523.5 463.75 515.75
-endline
-
-line wall 
-  480.5 519.0
-  485.93 524.82 484.55 527.46 496.5 517.0
-  504.5 510.0 523.25 507.75 528.25 504.25
+  488.845 520.4204
+  493.1209 518.6056 496.9237 515.6265 500.3174 514.1591
+  508.3174 507.1591 523.25 507.75 528.25 504.25
   533.25 500.75 555.5 486.0 555.5 486.0
 endline
 
