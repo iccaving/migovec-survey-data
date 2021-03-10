@@ -6,7 +6,8 @@ map m-all-e -projection extended
 	m-friendship-e
 	m-below-friendship-e
 	m-kangaroo_branch-e
-	m-s_extensions-e
+	m-below_paradise-e
+	m-beyond_atlantis-e
 	m-watership-e
 	m-yorkshire_extensions-e
 	m-below_balamory-e
@@ -140,13 +141,25 @@ map m-below-friendship-e -projection extended
 	m-all-e@trueadventures
 endmap
 
-map m-s_extensions-e -projection extended
+map m-below_paradise-e -projection extended
 	m-all-e@minestrone2
 	m-all-e@were_not_alone
 	m-all-e@ingloriousbasterd
 	m-all-e@atlantis
-	m-all-e@lethe
+	m-all-e@kneekiller
+	m-all-e@eastlinks
+	m-all-e@hash
+	m-all-e@hash2
+	m-all-e@hash3
+	m-all-e@salvation
+	m-all-e@bravenewworld
+	m-all-e@invictus
+	m-all-e@RCC_passage
+endmap
+
+map m-beyond_atlantis-e -projection extended
 	m-all-e@sicsempertyrannis
+	m-all-e@lethe
 	m-all-e@brezno_slapov
 	m-all-e@jericho
 	m-all-e@jericho2
@@ -159,15 +172,7 @@ map m-s_extensions-e -projection extended
 	m-all-e@firstdraft
 	m-all-e@blast
 	m-all-e@pleasurepalace
-	m-all-e@kneekiller
-	m-all-e@eastlinks
-	m-all-e@hash
-	m-all-e@hash2
-	m-all-e@hash3
-	m-all-e@salvation
-	m-all-e@bravenewworld
-	m-all-e@invictus
-	m-all-e@RCC_passage
+	m-all-e@atworldsend
 endmap
 
 map m-kangaroo_branch-e -projection extended
