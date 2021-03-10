@@ -1,0 +1,24 @@
+source "../../data/system_migovec.th"
+
+input "../../layouts/user_label.thl" # input this to have the label hierarchy
+
+layout wb
+	scale 1 2000
+	#symbol-hide group all
+	symbol-show line wall
+
+
+	symbol-colour line wall [100 100 100]
+	colour map-fg [0 0 0]
+	colour map-bg [0 0 0]
+
+	copy user_label
+
+	code metapost
+    max_label_level("3"); % yeah, now it works!
+	endcode
+
+	#symbol-colour group survey [100 100 100]
+endlayout
+
+export map -o ../../outputs/system_wb.pdf -layout wb

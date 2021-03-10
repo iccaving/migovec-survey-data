@@ -2,6 +2,79 @@ layout user_label
 
 code metapost
 
+def p_LABEL(expr pos)=
+    T:=identity shifted pos;
+    pickup PenD;
+    p:=fullcircle scaled .1u;
+    thclean p; thdraw p;
+
+    if known ATTR_text:
+    text := scantokens(ATTR_text);
+      thdrawoptions(withcolor .8red + .4blue);
+      txtm:=image(
+        draw txt;
+        interim labeloffset:=0;
+        label.urt(btex text etex);
+      );
+      % draw label
+      lab:=thelabel@#(txtm, pos);
+      draw lab _thop_; % use color
+      thdrawoptions();
+      bboxmargin:=0.8bp;
+      write_circ_bbox((bbox lab) smoothed 2);
+
+  enddef;
+
+def p_altitude(expr pos)=
+    T:=identity shifted pos;
+    pickup PenD;
+    p:=(-.3u,0)--(.3u,0);
+    thdraw p; thdraw p rotated 90;
+    p:=fullcircle scaled .2u;
+    thclean p; thdraw p;
+  enddef;
+
+
+  vardef p_label@#(expr txt,pos,rot,mode) =
+    if mode=1:
+      thdrawoptions(withcolor .8red + .4blue);
+      p_altitude(pos);
+      % append "m" to label
+      picture txtm;
+      txtm:=image(
+        draw txt;
+        interim labeloffset:=0;
+        label.urt(btex \thaltitude m etex, lrcorner txt);
+      );
+      % give extra offset in case of l/r/t/b alignment
+      pair ctmp;
+      ctmp:=center thelabel@#("x", (0,0));
+      if (xpart ctmp * ypart ctmp)=0:
+        interim labeloffset:=(.4u);
+      else: % diagonal alignment
+        interim labeloffset:=(.2u);
+      fi;
+      % draw label
+      lab:=thelabel@#(txtm, pos);
+      draw lab _thop_; % use color
+      thdrawoptions();
+      bboxmargin:=0.8bp;
+      write_circ_bbox((bbox lab) smoothed 2);
+    else:
+      if mode=7: interim labeloffset:=(u/8) fi;
+      lab:=thelabel@#(txt, pos);
+      if mode>1: pickup PenD fi;
+      if mode=2: process_uplabel;
+      elseif mode=3: process_downlabel;
+      elseif mode=4: process_updownlabel;
+      elseif mode=5: process_circledlabel;
+      elseif mode=6: process_boxedlabel;
+      elseif mode=7: process_label(pos,rot);  % station name
+      elseif mode=8: process_filledlabel(pos, rot);
+      else: process_label(pos,rot); fi;
+    fi;
+  enddef;
+
 	vardef max_label_level (expr mylevel)=
 		maxl := scantokens(mylevel);
 	enddef;
@@ -31,7 +104,6 @@ code metapost
   	enddef;
 		initsymbol("p_u_label_MY");
 
-		code metapost
 
 		% https://www.mail-archive.com/therion@speleo.sk/msg07234.html
         % define a custom attribute called label_mode
@@ -59,24 +131,33 @@ code metapost
     thetext:=thTEX("\thframed {" & textsize & " " & plaintext & "}");
     if A = (-1,1):
       p_label.ulft(thetext,P,R,style);
+
     elseif A = (0,1):
       p_label.top(thetext,P,R,style);
+
     elseif A = (1,1):
       p_label.urt(thetext,P,R,style);
+
     elseif A = (-1,0):
       p_label.lft(thetext,P,R,style);
+
     elseif A = (1,0):
       p_label.rt(thetext,P,R,style);
+
     elseif A = (-1,-1):
       p_label.llft(thetext,P,R,style);
+
     elseif A = (0,-1):
       p_label.bot(thetext,P,R,style);
+
     elseif A = (1,-1):
       p_label.lrt(thetext,P,R,style);
+
     else:
       p_label(thetext,P,R,style);
+
     fi;
   enddef;
-		
+
 	endcode
 endlayout

@@ -22,7 +22,7 @@ input "../../layouts/user_label.thl"
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
 #select m-all-p@vrtnarija.vrtnarija_vilinska.system_migovec -map-level 0
-select m-original_entrance_series-p@vrtnarija.vrtnarija_vilinska.system_migovec
+#select m-original_entrance_series-p@vrtnarija.vrtnarija_vilinska.system_migovec
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1
@@ -50,7 +50,7 @@ endlayout
 language sl
 #export map -projection plan -o ../../outputs/vrtnarija_plan_SLO.pdf -layout plan
 language en
-export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
+#export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
@@ -76,10 +76,10 @@ layout ee
 	endcode
 endlayout
 
-# select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
+ select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
 
 # language sl
-# #export map -projection extended -o ../../outputs/vrtnarija_EE.pdf -layout ee
+export map -projection extended -o ../../outputs/vrtnarija_EE.pdf -layout ee
 # language en
 # export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
 
