@@ -546,6 +546,7 @@ survey vrtnarija -title "Vrtnarija"
 	join krtekinorel-1e@krtekinorel krtkovadobradela-1e@krtkovadobradela
 	join herojtelemarkal1-1e@herojtelemarkal1 krtkovadobradela-1e@krtkovadobradela
 	join herojtelemarkal2-1e@herojtelemarkal2 herojtelemarkal1-1e@herojtelemarkal1
+	join stagger_lee-1p@stagger_lee candyMountain-1p@candyMountain
 	
 	###__________2012____________###
 	input ./2012/atlantis/atlantis.th
@@ -776,7 +777,6 @@ survey vrtnarija -title "Vrtnarija"
 	equate 11@apuntoofar1 1@kamikaze
 	equate 12@hanginggardensdeep 24@pick_your_poison
 	equate 16@apuntoofar3 1@apuntoofar2
-	equate 17@serrure 4@serrure
 	equate 8@serrure 12@consort
 	equate 31@AJA 13@rocksteadylove
 	equate 4@yourmum 1@esoterica
@@ -809,11 +809,13 @@ survey vrtnarija -title "Vrtnarija"
 	join rocksteadylove-1e@rocksteadylove hanginggardensdeep-1e@hanginggardensdeep
 	join hanginggardensdeep-1e@hanginggardensdeep pick_your_poison-1e@pick_your_poison
 	join esoterica-1e@esoterica yourmum-1e@yourmum
+	join esoterica-2p@esoterica serrure-1p@serrure
 	join davyjoneslocker-1e@davyjoneslocker atworldsend-1e@atworldsend
 	join davyjoneslocker-1e@davyjoneslocker sicsempertyrannis-1e@sicsempertyrannis
 	join sicsempertyrannis-1e@sicsempertyrannis touchingthevoidsbottom-1e@touchingthevoidsbottom
 	join touchingthevoid-1e@touchingthevoid sicsempertyrannis-1e@sicsempertyrannis
 	join touchingthevoid-1e@touchingthevoid touchingthevoidsbottom-1e@touchingthevoidsbottom
+
 	
 	###__________2015____________###
 	input ./2015/jetstream/jetstream.th

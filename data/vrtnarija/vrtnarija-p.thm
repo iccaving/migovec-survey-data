@@ -4,7 +4,7 @@ map m-all-p -projection plan -title "Vrtnarija"
 	m-captain_kangaroo
 	m-friendship_level-p
 	m-above_apollo-p
-	m-beyond-consort-p
+	m-beyond_consort-p
 	m-below_zimmer-p
 	m-below_big_rock-p
 	m-beyond_red_cow-p
@@ -89,6 +89,7 @@ endmap
 
 map m-below_big_rock-p -projection plan
 	m-all-p@highway32
+	m-all-p@stagger_lee
 	m-all-p@postiga
 	m-all-p@leprachaun
 	m-all-p@weepeople
@@ -157,8 +158,9 @@ map m-cheetah-p -projection plan
 	m-all-p@apuntoofar3
 endmap
 
-map m-beyond-consort-p -projection plan
+map m-beyond_consort-p -projection plan
 	m-all-p@consort
+	m-all-p@serrure
 	m-all-p@palace2
 	m-all-p@povodni_moz
 	m-all-p@povodni_moz2
