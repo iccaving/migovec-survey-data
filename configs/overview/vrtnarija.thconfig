@@ -76,10 +76,10 @@ layout ee
 	endcode
 endlayout
 
- select m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
+ select m-beyond_atlantis-e@vrtnarija.vrtnarija_vilinska.system_migovec
 
 # language sl
-export map -projection extended -o ../../outputs/vrtnarija_EE.pdf -layout ee
+export map -projection extended -o ../../outputs/vrtnarija_EE_temp.pdf -layout ee
 # language en
 # export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
 
