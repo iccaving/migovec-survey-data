@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap esoterica-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line wall 
@@ -36,18 +35,23 @@ line wall
   456.0505 999.6103 455.4563 999.6103 455.4563 999.6103
 endline
 
-point 438.2501 973.3486 station -name 17
-point 456.1301 980.5886 station -name 16
-point 480.5401 967.0486 station -name 15
-point 483.6101 984.7586 station -name 14
-point 469.1201 982.1586 station -name 13
-point 456.0501 995.3086 station -name 12
+point 438.25 973.349 station -name 17
+point 456.13 980.589 station -name 16
+point 480.54 967.049 station -name 15
+point 483.61 984.759 station -name 14
+point 469.12 982.159 station -name 13
+point 456.05 995.309 station -name 12
 endscrap
 
 
 scrap esoterica-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
-point 554.5942 872.5482 water-flow -orientation 103.58846
+line wall:invisible 
+  441.39 1003.1414
+  426.8003 1000.8647
+endline
+
+point 554.594 872.548 water-flow -orientation 103.58844539418445
 line wall 
   569.1494 873.5492
   567.1123 874.1009 548.6948 878.0404 545.8089 878.9316
@@ -73,9 +77,14 @@ endline
 
 line wall 
   454.6765 1000.0789
-  452.5758 1000.379 447.1742 1002.0594 445.1936 1002.0594
-  443.2131 1002.0594 433.9103 1000.9791 432.1698 1000.0789
-  430.4292 999.1786 429.4089 994.7373 429.529 992.8767
+  452.9642 1000.3235 449.0587 1001.4852 446.6005 1001.9064
+  446.2877 1001.9604 444.8012 1002.3422 443.4917 1002.6674
+  442.467 1002.9219 441.5508 1003.1414 441.39 1003.1414
+endline
+
+line wall 
+  426.8003 1000.8647
+  426.8003 1000.8647 429.4089 994.7373 429.529 992.8767
   429.649 991.0161 430.5493 977.9923 430.7293 976.9119
   430.9094 975.8316 431.6296 970.8501 432.4698 967.6091
   433.3101 964.3682 435.9509 957.4061 437.3313 953.625
@@ -94,17 +103,17 @@ line wall
   551.4854 869.0597 566.0097 865.9388 566.0097 865.9388
 endline
 
-point 456.0501 995.3086 station -name 12
-point 436.9901 995.3086 station -name 11
-point 441.2501 964.7586 station -name 10
-point 455.9701 937.0486 station -name 9
-point 465.0301 938.7786 station -name 8
-point 480.7701 934.2886 station -name 7
-point 520.0601 925.9386 station -name 6
-point 528.5701 904.8386 station -name 5
-point 526.2901 878.7786 station -name 4
-point 529.9901 887.8286 station -name 3
-point 529.9901 887.8286 station -name 2
-point 567.4701 869.5686 station -name 1
+point 456.05 995.309 station -name 12
+point 436.99 995.309 station -name 11
+point 441.25 964.759 station -name 10
+point 455.97 937.049 station -name 9
+point 465.03 938.779 station -name 8
+point 480.77 934.289 station -name 7
+point 520.06 925.939 station -name 6
+point 528.57 904.839 station -name 5
+point 526.29 878.779 station -name 4
+point 529.99 887.829 station -name 3
+point 529.99 887.829 station -name 2
+point 567.47 869.569 station -name 1
 endscrap
 

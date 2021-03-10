@@ -7,7 +7,6 @@ map m-all-e -projection extended
     serrure-1e
 endmap
 
-
 input serrure-p.th2
 
 map m-all-p -projection plan
@@ -54,7 +53,7 @@ centreline
     extend left
     15	16	3.71	325	+27
     extend left
-    16	17	1.16	253	+12
+    16	4	1.16	253	+12
     extend ignore
 endcentreline
 endsurvey
