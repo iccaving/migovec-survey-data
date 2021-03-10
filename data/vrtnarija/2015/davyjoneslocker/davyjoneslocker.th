@@ -1,12 +1,11 @@
 
 survey davyjoneslocker -title "Davy Jones' Locker"
 	
-	input davyjoneslocker-p.th2
-	
-	map m-all-p -projection plan
-		davyjoneslocker-1p
-	endmap
-	
+input davyjoneslocker-p.th2
+
+map m-all-p -projection plan
+	davyjoneslocker-1p
+endmap
 
 input davyjoneslocker-e.th2
 
@@ -23,19 +22,33 @@ endmap
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
+		extend left
 		1	2	8.12	230	+18
+		extend left
 		2	3	6.00	275	-03
+		extend left
 		3	4	6.30	290	+05
+		extend left
 		4	5	5.48	247	+17
+		extend left
 		5	6	3.05	267	+15
+		extend left
 		6	7	1.73	258	-33
+		extend left
 		7	8	1.79	267	00
+		extend left
 		8	9	3.64	255	00
+		extend left
 		9	10	5.15	332	+07
+		extend left
 		10	11	2.87	222	+44
+		extend left
 		11	12	2.54	245	-15
+		extend left
 		13	12	1.85	105	-10
+		extend left
 		13	14	4.62	232	+22
+		extend left
 		14	15	1.90	205	+04
 	endcentreline
 endsurvey
