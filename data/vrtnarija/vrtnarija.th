@@ -546,6 +546,11 @@ survey vrtnarija -title "Vrtnarija"
 	join krtekinorel-1e@krtekinorel krtkovadobradela-1e@krtkovadobradela
 	join herojtelemarkal1-1e@herojtelemarkal1 krtkovadobradela-1e@krtkovadobradela
 	join herojtelemarkal2-1e@herojtelemarkal2 herojtelemarkal1-1e@herojtelemarkal1
+	join longwater-1e@longwater roundpond-1e@roundpond
+	join rottenrow-1e@rottenrow longwater-1e@longwater
+	join duffersdrop-1e@duffersdrop rottenrow-1e@rottenrow
+	join drinkyourown-1e@drinkyourown rottenrow-1e@rottenrow
+	join drinkyourown-1e@drinkyourown duffersdrop-1e@duffersdrop
 	join stagger_lee-1p@stagger_lee candyMountain-1p@candyMountain
 	
 	###__________2012____________###
