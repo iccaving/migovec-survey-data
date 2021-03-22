@@ -4,9 +4,10 @@ survey wishing_well -title "Whishing Well"
 	
 	map m-all-p -projection plan
 		wishing_well-1p
+		break
 		wishing_well-2p
 	endmap
-	
+	join wishing_well-1p wishing_well-2p
 	centreline
 		
 		date 2019.07.30

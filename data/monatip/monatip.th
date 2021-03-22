@@ -128,7 +128,9 @@ survey monatip
 	equate 1@wishing_well 1@wishing_well2
 	equate 10@wishing_well 2@sad_face
 	
-	join wishing_well2-1p@wishing_well2 wishing_well-2p@wishing_well
+	join wishing_well2-1p@wishing_well2 wishing_well-1p@wishing_well
+	join wishing_well-1p@wishing_well monatip11-3p@monatip11
+	join wishing_well-1p@wishing_well monatip11-3Ap@monatip11
 	
 endsurvey
 

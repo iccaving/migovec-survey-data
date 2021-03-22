@@ -1,3 +1,4 @@
+encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
@@ -6,7 +7,6 @@
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
@@ -20,8 +20,8 @@ input "../../layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-#select m-all-p@primadona_ubend_monatip -map-level 3
-select m-all-e@primadona_ubend_monatip -map-level 1
+select m-all-p@primadona_ubend_monatip -map-level 3
+#select m-all-e@primadona_ubend_monatip -map-level 1
 
 #select primadona_ubend_monatip
 #----------------------------------------------------------------------------------|
@@ -48,7 +48,7 @@ layout local
 	symbol-assign line survey AUT
 endlayout
 language fr # slo not yet supported
-#export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
 language en
 #export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_ENG.pdf -layout plan
 
@@ -68,14 +68,14 @@ layout ee
 	}
 endlayout
 language sl # slo not yet supported
-export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
+#export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
 
 language en
 #export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_ENG.pdf -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-#export model -o ../../outputs/primadona_ubend_monatip.3d -fmt survex
+export model -o ../../outputs/primadona_ubend_monatip.3d -fmt survex
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
