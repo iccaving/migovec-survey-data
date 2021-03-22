@@ -1,9 +1,9 @@
 survey sad_face -title "Sad Face"
-  #input sad_face-p.th2
+  input sad_face-p.th2
   
-  #map m-all-p -projection plan
-  #  sad_face-1p
-  #endmap
+  map m-all-p -projection plan
+    sad_face-1p
+  endmap
 
   #input sad_face-e.th2
 
@@ -25,7 +25,7 @@ survey sad_face -title "Sad Face"
     units compass clino degrees
     data normal from to length compass clino
     0 1 24.4  - UP
-    1 2 11.0  188 +41
+    1 2 11.0  008 +41 #Minus 180 off compass to correct for survey team error DPW (orig:188)
   endcentreline
 endsurvey
 

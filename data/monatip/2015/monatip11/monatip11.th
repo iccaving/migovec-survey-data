@@ -13,12 +13,13 @@ survey monatip11 -title "Monatip 11"
 	map m-all-p -projection plan
 		monatip11-4p
 		monatip11-3p
+		monatip11-3Ap
 		monatip11-2p
 		monatip11-1p
 	endmap
 	
 	join monatip11-4p monatip11-3p
-	join monatip11-3p monatip11-2p
+	join monatip11-3Ap monatip11-2p
 	join monatip11-2p monatip11-1p
 	
 	centreline
