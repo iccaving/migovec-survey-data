@@ -5,6 +5,7 @@ encoding  utf-8
 
 scrap wishing_well-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 187.256 -11.1245 u:label_MY -align br -attr lvl 2 -attr text "Wishing Well"
 point 150.98 4.25 station -name 5
 line pit 
   134.1924 26.6889
@@ -72,7 +73,6 @@ line pit
   6.6729 -83.735 11.2238 -82.814 12.2539 -83.9506
 endline
 
-point 161.6081 -54.6615 label -align br -scale l -text "Wishing<br>Well"
 line wall 
   159.9211 -4.2896
   159.4378 -3.5681 146.3196 18.7782 146.469 21.1299
