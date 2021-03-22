@@ -1,3 +1,4 @@
+encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
@@ -6,7 +7,6 @@
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
-encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
@@ -26,8 +26,11 @@ input "../../layouts/user_label.thl"
 
 source
 	map local-p -projection plan
-		m-all-p@M16.m2m16m18.system_migovec
-		M16@m2m16m18.system_migovec
+		#m-all-p@M16.m2m16m18.system_migovec
+		m-all-p@migcon.M16.m2m16m18.system_migovec
+		m-all-p@migconleft.M16.m2m16m18.system_migovec
+		m-all-p@migcondown.M16.m2m16m18.system_migovec
+		m-all-p@monatip.primadona_ubend_monatip.system_migovec
 	endmap
 endsource
 #select local-p
@@ -70,7 +73,7 @@ layout plan
 endlayout
 
 language fr
-#export map -projection plan -o ../../outputs/system_migovec_overview_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../outputs/system_migovec_overview_plan_SLO.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view, using the LAYOUT overview2
@@ -107,7 +110,7 @@ endlayout
 select m-all-e@system_migovec
 
 language sl
-export map -projection extended -o ../../outputs/system_migovec_overview_elevation_SLO.pdf -layout ee
+#export map -projection extended -o ../../outputs/system_migovec_overview_elevation_SLO.pdf -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
