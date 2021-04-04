@@ -415,9 +415,8 @@ survey primadona -title "Primadona"
 	join l3@dysentery:0 l3@more_like_welding:end
 	join l1@more_like_welding:0 l1@dysentery:end
 	join l2@more_like_welding:end l2@dysentery:end
+	join odessey-p1@odessey power_grab-1p@power_grab
 	join come_up_smiling-p1@come_up_smiling come_up_smiling_2-p1@come_up_smiling_2
-	join s1_l1@electric_dreams s1_l1@odessey
-	join s1_l2@electric_dreams s1_l2@odessey
 	join lost_in_a_dream-e1@lost_in_a_dream lost_in_a_dream_2-e1@lost_in_a_dream_2
 	join lost_in_a_dream_2-e1@lost_in_a_dream_2 ave_maria-e1@ave_maria
 	join lost_in_a_dream_2-e1@lost_in_a_dream_2 penny_falls-e1@penny_falls
@@ -503,6 +502,7 @@ survey primadona -title "Primadona"
 	join artemis-1s@artemis poseidon_rift-1s@poseidon_rift
 	join ma_je_vlazna-1e@ma_je_vlazna polnoletna-1e@polnoletna
 	join polnoletna-1e@polnoletna milanova_e2@milanova
+	join power_grab-1p@power_grab electric_dreams-1p@electric_dreams
 	join power_grab-e1@power_grab electric_dreams-e2@electric_dreams
 	
 endsurvey
