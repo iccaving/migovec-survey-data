@@ -7,7 +7,13 @@ survey power_grab -title "Power Grab"
 	map m-all-e -projection extended
 		power_grab-e1
 	endmap
-	
+	input "power_grab-p.th2"
+	map m-all-p -projection plan
+		power_grab-1p
+		power_grab-2p
+		power_grab-3p
+	endmap
+	join power_grab-2p power_grab-3p
 	centerline
 		date 2019.07.20
 		explo-date 2019.07.20
@@ -46,3 +52,11 @@ survey power_grab -title "Power Grab"
 	endcenterline
 	
 endsurvey
+
+#NOTES:
+#;stn 1 is pss next to 5m undescended pitch
+#;stn 7 is pss
+#;stn 8 is flake bolt
+#;stn 9 is pss
+#;stn 10 is alpine bolt near odessy pss
+# Equate is: power_grab.11 rokovo_brezno_resurvey.1 (also known as Odessey)
