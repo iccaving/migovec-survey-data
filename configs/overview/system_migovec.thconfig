@@ -26,14 +26,15 @@ input "../../layouts/user_label.thl"
 
 source
 	map local-p -projection plan
-		#m-all-p@M16.m2m16m18.system_migovec
-		m-all-p@migcon.M16.m2m16m18.system_migovec
-		m-all-p@migconleft.M16.m2m16m18.system_migovec
-		m-all-p@migcondown.M16.m2m16m18.system_migovec
-		m-all-p@monatip.primadona_ubend_monatip.system_migovec
+		m-all-p@m2m16m18.system_migovec
+		m-all-p@primadona_ubend_monatip.system_migovec
+		m-all-p@vrtnarija_vilinska.system_migovec
+		#m-all-p@migcon.M16.m2m16m18.system_migovec
+		#m-all-p@migconleft.M16.m2m16m18.system_migovec
+		#m-all-p@migcondown.M16.m2m16m18.system_migovec
 	endmap
 endsource
-#select local-p
+select local-p
 #select  m-primadona_ubend_monatip-e@system_migovec -map-level 0
 
 #----------------------------------------------------------------------------------|
@@ -57,7 +58,7 @@ layout plan
 
 	map-header 0 0 off	
 
-	scale 1 2000
+	scale 1 1000
 	symbol-hide point remark
 	symbol-show point station
 	symbol-show line survey
@@ -68,7 +69,7 @@ layout plan
 	symbol-hide point station-name
 
 	code metapost
-		max_label_level("2"); % yeah, now it works!
+		max_label_level("3"); % yeah, now it works!
 	endcode
 endlayout
 
