@@ -12,8 +12,10 @@ input worm-p.th2
 
 map m-all-p -projection plan
     worm-1p
+	break
+	worm-2p
 endmap
-
+join worm-1p worm-2p
 	centreline
 		team "Dan Greenwald" insts
 		team "Clewin Griffith" notes
