@@ -27,7 +27,7 @@ input "../../layouts/user_label.thl"
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1
 layout plan
-	copy base-p
+	copy base-p #Comment line out to hide symbols for large scale.
 	copy colour-by-new
 	copy user_label
 	#map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: XXXX<br><br>Vilinska Jama<br>kat. št.: YYYYY<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: XXXX<br><br>Vilinska Jama<br>Cadastral number: XXXX<br>"
@@ -47,6 +47,7 @@ layout plan
 endlayout
 
  select m-all-p@vrtnarija.vrtnarija_vilinska.system_migovec
+ #select m-captain_kangaroo@vrtnarija.vrtnarija_vilinska.system_migovec
 
 language sl
 export map -projection plan -o ../../outputs/vrtnarija_plan_temp.pdf -layout plan
