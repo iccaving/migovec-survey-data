@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap dysentery-1p -scale [0 0 100 0 0 0 1 0 m] -projection plan
+scrap dysentery-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
 line rock-border -close on
   5575.0 3585.5
@@ -314,7 +314,7 @@ point 7768.8 1191.25 station -name 0
 endscrap
 
 
-scrap dysentery-5p -scale [0 0 100 0 0 0 1 0 m]
+scrap dysentery-5p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
 line wall 
   3310.3945 1508.2968
@@ -747,7 +747,7 @@ point 3708.9 1545.95 station -name 38
 endscrap
 
 
-scrap dysentery-4p -scale [0 0 100 0 0 0 1 0 m]
+scrap dysentery-4p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
 point 5534.9 1188.2 station -name 21
 point 5278.97 2225.55 station -name 22
@@ -1001,7 +1001,7 @@ endline
 endscrap
 
 
-scrap dysentery-7p -scale [0 0 90 0 0 0 250 0 inch]
+scrap dysentery-7p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall -subtype invisible
   3918.0 271.0
@@ -1176,8 +1176,9 @@ endline
 endscrap
 
 
-scrap dysentery-2p -scale [0 0 100 0 0 0 1 0 m]
+scrap dysentery-2p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
+point 1213.6631 835.9767 u:label_MY -align tl -attr lvl 3 -attr text Dysentery
 line wall:invisible 
   2473.51 868.74
   2311.82 1046.88
@@ -1439,7 +1440,7 @@ area clay
   l388-2774-2938
 endarea
 
-line border -subtype invisible -id l388-2774-2938 -close on
+line border -close on -id l388-2774-2938 -subtype invisible
   2451.0 839.0
   2290.0 1051.0
   1930.0 858.0
@@ -1487,15 +1488,10 @@ line contour
   883.0 453.0 832.14 427.94 787.07 470.47
 endline
 
-line u:label_MY -attr lvl 1 -attr text Dysentry -scale s
-  150.0 766.0
-  150.0 766.0 1278.0 846.0 1918.0 1102.0
-endline
-
 endscrap
 
 
-scrap dysentery-3p -scale [0 0 100 0 0 0 1 0 m]
+scrap dysentery-3p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
 point 2526.47 1019.33 station -name 49
 point 2616.23 924.03 station -name 42
@@ -1758,7 +1754,7 @@ area clay
   l355-2211-2901
 endarea
 
-line border -subtype invisible -id l355-2211-2901 -close on
+line border -close on -id l355-2211-2901 -subtype invisible
   2835.0 889.0
   2851.0 1090.0
   2851.0 1090.0 2772.0 1397.0 2774.0 1404.0
@@ -1843,7 +1839,7 @@ point 3119.86 1669.31 station -name 53
 endscrap
 
 
-scrap dysentery-6p -scale [0 0 100 0 0 0 1 0 m]
+scrap dysentery-6p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
 line wall 
   6048.65 3883.2
