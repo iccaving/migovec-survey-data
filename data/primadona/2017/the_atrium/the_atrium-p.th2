@@ -3,8 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap the_atrium-2p -scale [0.0 0.0 1024.0 939.3873157807584 0.0 0.0 120.78 110.8]
+scrap the_atrium-2p -projection plan -scale [0.0 0.0 1024.0 939.3873157807584 0.0 0.0 120.78 110.8]
 
+point 565.7502 621.7949 u:label_MY -align tl -attr lvl 3 -attr text "The Atrium"
 line contour 
   599.25 562.25
   599.75 563.5 612.0 617.25 596.5 626.25
@@ -73,7 +74,7 @@ line rock-border -close on
   563.0 581.0
 endline
 
-line pit -close on -outline in -clip off
+line pit -clip off -close on -outline in
   570.0 583.25
   572.0276 584.99 569.332 588.5834 569.5 591.25
   569.612 593.0279 571.6252 595.1188 570.5 596.5
@@ -83,11 +84,6 @@ line pit -close on -outline in -clip off
   551.3377 589.6307 552.9931 588.5753 554.25 587.5
   554.8474 586.9889 555.5219 586.5465 556.25 586.25
   560.5947 584.4808 566.44 580.195 570.0 583.25
-endline
-
-line u:label_MY -attr lvl 1 -attr text "The Atrium"
-  511.25 605.75
-  511.25 605.75 558.75 629.5 589.75 630.75
 endline
 
 line wall 

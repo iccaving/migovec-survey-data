@@ -130,11 +130,6 @@ line pit -close on -outline in
   606.6346 492.9706 600.362 498.7988 596.5 499.5
 endline
 
-line u:label_MY -attr lvl 1 -attr text "Electric Dreams"
-  689.75 672.75
-  689.75 672.75 725.25 579.5 728.25 496.25
-endline
-
 point 512.25 477.75 passage-height -align t -value 3
 point 479.5 459.0 passage-height -align t -value 4
 point 560.5 496.75 passage-height -align t -value 3
@@ -208,6 +203,7 @@ endscrap
 
 scrap electric_dreams-3p -projection plan -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
 
+point 721.7601 559.8018 u:label_MY -align br -attr lvl 2 -attr text "Electric Dreams"
 point 681.6465 605.9098 station -name 11
 point 689.3194 518.0023 station -name 10
 point 703.673 506.7575 station -name 9
