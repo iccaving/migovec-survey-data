@@ -29,6 +29,7 @@ layout base-p
 	symbol-hide point gradient
 	symbol-hide line label
 	symbol-hide line survey
+	symbol-hide line gradient
 	symbol-hide point station-name
 	
 #_____________________________________________________________
@@ -823,7 +824,7 @@ endcode
  symbol-assign line contour MY
  symbol-assign line wall MY
  symbol-assign point air-draught MY
-  symbol-assign point station:fixed MY
+ symbol-assign point station:fixed MY
 
 
     symbol-assign area blocks MY
