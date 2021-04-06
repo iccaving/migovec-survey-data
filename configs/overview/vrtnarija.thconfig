@@ -18,6 +18,7 @@ input "../../layouts/base-p.thl"
 input "../../layouts/base-e.thl"
 input "../../layouts/mods.thl"
 input "../../layouts/user_label.thl"
+input "../../layouts/detailed-p.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -27,9 +28,10 @@ input "../../layouts/user_label.thl"
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1
 layout plan
-	copy base-p #Comment line out to hide symbols for large scale.
 	copy colour-by-new
 	copy user_label
+	copy base-p #For less detailed plan (for larger scale)
+	#copy detailed-p #For Tanguy approved symbols
 	#map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: XXXX<br><br>Vilinska Jama<br>kat. št.: YYYYY<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: XXXX<br><br>Vilinska Jama<br>Cadastral number: XXXX<br>"
 	code tex-map
 	\framethickness=0.5mm

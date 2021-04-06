@@ -11,9 +11,11 @@ endmap
 input metal_aven-p.th2
 
 map m-all-p -projection plan
+    metal_aven-2p
+    break
     metal_aven-1p
 endmap
-
+join metal_aven-1p metal_aven-2p
 centreline
     team "Iztok	Možir" insts
     team "James	Kirkpatrick" notes
