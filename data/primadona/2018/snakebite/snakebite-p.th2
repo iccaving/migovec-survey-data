@@ -23,7 +23,7 @@ line wall -id s1_l1
   smooth off
 endline
 
-point 97.0 59.0 u:label_MY -attr lvl 1 -attr text P5 -scale s -align br
+point 97.0 59.0 u:label_MY -attr lvl 4 -attr text P5 -scale s -align br
 
 line wall
 endline
@@ -50,8 +50,6 @@ line pit
   417.0 146.0 446.0 183.0 407.0 202.0
   smooth off
 endline
-
-point -44.0 -122.0 map-connection
 
 line u:label_MY -attr lvl 1 -attr text "Snakebite"
   -186.0 174.0

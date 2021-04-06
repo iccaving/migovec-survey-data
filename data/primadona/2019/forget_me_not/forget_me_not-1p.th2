@@ -4,11 +4,14 @@ encoding  utf-8
 
 scrap forget_me_not-1p -projection plan -scale [0 0 39 0 0 0 1 0 m]
 
-line wall -close on -outline none
-  12.146 4087.1233
-  3327.9993 4087.1233
-  3327.9993 -6.073
-  12.146 -6.073
+point 3444.5022 492.1572 u:label_MY -align tl -attr text "Below Knot Very Good" -attr lvl 1 -scale xs
+line wall -clip off -close on -outline none
+  -1238.8289 3942.164
+  3196.0662 4413.3064
+  3413.5461 2378.2963
+  3631.0256 343.2861
+  -803.8692 -127.8562
+  -1021.3491 1907.1539
 endline
 
 line wall -subtype invisible

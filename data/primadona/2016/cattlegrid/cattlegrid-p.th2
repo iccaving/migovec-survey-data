@@ -35,7 +35,6 @@ line wall
   466.0 595.5 452.5 608.5 452.0 616.0
 endline
 
-point 313.0 508.0 map-connection 
 line wall -close on -outline in
   413.5 499.5
   413.5 499.5 424.0 493.5 424.0 490.5
@@ -140,6 +139,9 @@ line wall
   310.0 502.5 319.5 485.5 316.5 480.5
   313.5 475.5 327.5 467.0 310.5 463.0
 endline
+
+point 313.0 580.0 u:label_MY -attr lvl 1 -align l -attr text "Cattlegrid"
+
 
 point 483.0 560.0 station -name 4
 point 458.0 499.0 station -name 16
