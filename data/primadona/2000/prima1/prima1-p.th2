@@ -593,7 +593,7 @@ line wall -subtype blocks
   2248.5 1853.5 2260.5 1860.0 2262.5 1860.5
 endline
 
-point 1942.0 2374.0 u:label_MY -attr lvl 1 -attr text PRIMADONA -align l -scale l
+point 1942.0 2374.0 u:label_MY -attr lvl 1 -attr text PRIMADONA -align l -attr style 6
 point 2188.0001 2327.4999 entrance -scale xl -orientation 120.6
 line wall 
   2201.5 2262.5
