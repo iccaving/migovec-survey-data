@@ -70,13 +70,13 @@ map m-octarine_region-p -projection plan -title "Octarine Region (2019)"
 	m-all-p@death_star
 endmap
 
-map mend_branch -projection plan -title "End of Hallelujah Branch (2019)"
+map m-end_branch -projection plan -title "End of Hallelujah Branch (2019)"
 	m-all-p@angel_delight
 	m-all-p@sump_404_lead_not_found
 endmap
 
 map m-hallelujah_branch-p -projection plan -title "Hallelujah Branch"
-	cattlegrid-the_stile [50 0 m] below
+	cattlegrid-the_stile [-200 0 m] below
 	m-all-p@plumbers_paradise
 	m-all-p@hallelujah
 	m-all-p@sweet_baby_jesus

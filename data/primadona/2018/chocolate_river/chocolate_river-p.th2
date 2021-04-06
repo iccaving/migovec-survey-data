@@ -68,14 +68,7 @@ line border -id l27-324--127 -close on -subtype invisible
   352.0 -148.0
 endline
 
-
-point 310 -50 u:label_MY -attr lvl 1 -attr text "Chocolate River" -scale xl -align tl
-
-line u:label_MY -attr lvl 1 -attr text "Chocolate River" -scale xl
-  81.5 -228.5
-  176.85 -125.33 327.0 -53.5 327.0 -53.5
-  smooth off
-endline
+point 310 -50 u:label_MY -attr lvl 1 -attr text "Chocolate River" -align tl
 
 line wall
 endline
