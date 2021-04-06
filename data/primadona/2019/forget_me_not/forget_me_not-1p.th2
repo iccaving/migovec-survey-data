@@ -2,8 +2,14 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1613.800000 3552.700000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap forget_me_not-1p -projection plan -scale [0 0 39 0 0 0 1 0 m]
 
-scrap forget_me_not-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
+line wall -close on -outline none
+  12.146 4087.1233
+  3327.9993 4087.1233
+  3327.9993 -6.073
+  12.146 -6.073
+endline
 
 line wall -subtype invisible
   676.89 498.49
@@ -349,8 +355,8 @@ point 612.25 984.16 pebbles -scale xs
 point 619.85 1016.2 pebbles -scale xs
 point 629.05 943.32 pebbles -scale xs
 point 585.43 947.72 pebbles -scale xs
-point 679.3 1016.39 gradient -orientation 232.0
-point 698.0 982.63 gradient -orientation 232.0
+point 679.3 1016.39 gradient -orientation 232.0000301522839
+point 698.0 982.63 gradient -orientation 232.0000301522839
 line chimney 
   656.42 1032.18
   658.01 1004.14 666.22 965.98 693.05 950.75
@@ -597,7 +603,7 @@ line rock-border -close on
   741.98 580.625
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   594.91 583.43
   585.375 589.99
   575.84 596.55
@@ -620,7 +626,7 @@ line rock-border -close on -clip off
   598.92 563.075
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   639.01 572.17
   629.92 569.885
   620.83 567.6
@@ -633,7 +639,7 @@ line rock-border -close on -clip off
   636.76 560.915
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   630.46 597.39
   623.865 603.17
   617.27 608.95
@@ -646,7 +652,7 @@ line rock-border -close on -clip off
   626.31 591.27
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   599.41 626.66
   592.1 630.995
   584.79 635.33
@@ -738,7 +744,7 @@ line rock-border -close on
   388.06 541.505
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   558.72 626.01
   552.69 630.46
   546.66 634.91
@@ -772,7 +778,7 @@ line rock-border -close on
   519.03 616.515
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   540.56 592.3
   532.385 592.055
   524.21 591.81
@@ -787,7 +793,7 @@ line rock-border -close on -clip off
   537.855 581.565
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   564.99 651.45
   557.96 651.615
   550.93 651.78
@@ -853,8 +859,8 @@ line rock-border -close on
   490.22 642.855
 endline
 
-point 568.62 669.95 water-flow -orientation 174.1
-point 503.61 675.24 water-flow -orientation 172.4
+point 568.62 669.95 water-flow -orientation 174.09997467756074
+point 503.61 675.24 water-flow -orientation 172.40002564750546
 line floor-step 
   736.94 1439.75
   736.24 1436.71 722.09 1423.85 724.48 1421.69
