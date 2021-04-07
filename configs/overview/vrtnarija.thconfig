@@ -49,7 +49,7 @@ layout plan
 endlayout
 
  select m-all-p@vrtnarija.vrtnarija_vilinska.system_migovec
- #select m-captain_kangaroo@vrtnarija.vrtnarija_vilinska.system_migovec
+ #select m-beyond_consort-p@vrtnarija.vrtnarija_vilinska.system_migovec
 
 language sl
 export map -projection plan -o ../../outputs/vrtnarija_plan_temp.pdf -layout plan

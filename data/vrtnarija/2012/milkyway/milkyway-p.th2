@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap milkyway-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
+scrap milkyway-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line wall 
   150.0646 82.1621
@@ -38,7 +38,22 @@ point 202.6 96.97 station -name 8
 endscrap
 
 
-scrap milkyway-3p -scale [0 0 90 0 0 0 250 0 inch]
+scrap milkyway-3p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
+
+line pit -close on
+  281.1165 204.896
+  279.9607 203.3129 279.6507 201.6504 279.1392 199.7339
+  278.5268 196.9558 281.6689 195.8085 283.5584 195.4832
+  284.2524 195.3719 284.9365 195.5423 285.5709 195.8123
+  287.696 196.413 290.0364 196.4724 291.9435 197.6888
+  292.8311 198.218 293.0703 199.2971 293.0907 200.2561
+  293.112 202.7583 292.3939 205.2024 291.5393 207.5313
+  291.2143 208.2362 291.0498 209.1952 290.2057 209.4658
+  288.6888 209.975 287.0481 209.743 285.5052 209.4788
+  284.4506 209.2489 283.3492 209.025 282.4368 208.4209
+  281.9993 207.7794 282.0159 206.8709 281.6327 206.1623
+  281.4696 205.7366 281.2976 205.3143 281.1165 204.896
+endline
 
 point 235.75 -18.46 station -name 37
 point 173.31 46.18 station -name 15
@@ -49,8 +64,8 @@ point 319.13 120.35 station -name 11
 point 286.69 208.23 station -name 9
 point 320.55 199.17 station -name 10
 line wall 
-  279.4435 193.4978
-  279.4435 193.4978 285.0956 192.3701 294.3279 197.8191
+  275.9635 194.9407
+  275.9635 194.9407 285.0956 192.3701 294.3279 197.8191
   303.5603 203.2681 311.6727 192.5037 311.6727 192.5037
   317.1049 176.8861
   317.1049 176.8861 314.7283 157.1944 314.0493 153.1202
@@ -78,7 +93,7 @@ line wall
   334.66 177.1729 331.299 189.1765 332.2593 191.5772
   333.2196 193.978 334.66 201.1801 332.7394 204.061
   330.8189 206.9418 317.855 212.2234 314.0138 212.2234
-  310.1727 212.2234 286.69 210.23 286.69 210.23
+  310.1727 212.2234 279.9846 210.5695 279.9846 210.5695
 endline
 
 line wall 
@@ -95,7 +110,7 @@ endline
 endscrap
 
 
-scrap milkyway-4p -scale [0 0 90 0 0 0 250 0 inch]
+scrap milkyway-4p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
 point 337.64 -237.13 station -name 36
 point 351.73 -286.26 station -name 35
@@ -140,9 +155,9 @@ endline
 endscrap
 
 
-scrap milkyway-5p -scale [0 0 90 0 0 0 250 0 inch]
+scrap milkyway-5p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
-point -294.8081 -65.2995 u:label_MY -attr lvl 1 -attr text "Milky Way" -align l -scale l
+point -294.8081 -65.2995 u:label_MY -align l -attr lvl 1 -attr text "Milky Way" -scale l
 point -40.39 -600.75 station -name 30
 point -80.08 -585.47 station -name 29
 point -72.99 -527.99 station -name 28
@@ -217,7 +232,7 @@ endline
 endscrap
 
 
-scrap milkyway-2p -scale [0 0 90 0 0 0 250 0 inch]
+scrap milkyway-2p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall 
   192.1642 56.0196
