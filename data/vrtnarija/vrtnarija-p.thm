@@ -16,7 +16,44 @@ map m-all-p -projection plan -title "Vrtnarija"
 	m-below_republica-p
 	m-below_stuck_in_paradise-p
 	m-beyond_atlantis-p
+	m-frames-p
 endmap
+
+## FRAMES IN PLACE
+
+map m-frames-p -projection plan
+	m-watership-offset [-300 0 m] below  
+	m-metalaven-offset [300 0 m] below 
+	m-xanadu_bypass-offset [200 0 m] below 
+endmap
+
+map m-metalaven-offset -projection plan
+	m-metal_camp-p [130 0 m] none    # 130 m width of watership down frame
+	m-metalaven-empty [-300 0 m] none
+endmap
+
+map m-metalaven-empty -projection plan
+	metalaven-frame@keti
+endmap
+
+map m-watership-offset -projection plan
+	m-watership_deep-p [-95 0 m] none # -95 m width of watership down frame
+	m-watership-empty [300 0 m] none
+endmap
+
+map m-watership-empty -projection plan
+	watershipdown-frame@watershipdown
+endmap
+
+map m-xanadu_bypass-offset -projection plan
+	m-xanadu_bypass-p [75 0 m] none # 75 m width of xanadu frame
+	m-xanadu_bypass-empty [-200 0 m] none
+endmap
+
+map m-xanadu_bypass-empty -projection plan
+	xanadu_bypass-frame@500m
+endmap
+
 
 ## SUBMAPS ##
 map m-original_entrance_series-p -projection plan -title "Vrtsnarija entrance series"
@@ -47,7 +84,7 @@ map m-captain_kangaroo -projection plan
 	m-all-p@bonus
 	m-all-p@scrotty
 	m-all-p@olympicrift
-	m-metal_camp-p [250 0 m] below
+	#m-metal_camp-p [250 0 m] below
 	m-all-p@walk_the_line
 	m-all-p@walk_the_line_b
 	m-all-p@happy_monday
@@ -79,6 +116,11 @@ map m-friendship_level-p -projection plan
 	m-all-p@fallsrd
 	m-all-p@lowerfallsrd
 	m-all-p@candyMountain
+endmap
+
+map m-watership_deep-p -projection plan
+	m-all-p@watershipdown
+	m-all-p@watershipup
 endmap
 
 map m-above_apollo-p -projection plan
@@ -255,16 +297,16 @@ map m-below_republica-p -projection plan
 	m-all-p@dream2
 	m-all-p@penguinsegg
 	m-all-p@winterjourney
-	m-all-p@watershipdown
-	m-all-p@watershipup
 endmap
+
+
 
 map m-cuckoos_nest-p -projection plan
 	m-all-p@cuckoos_nest
 	m-all-p@pushyourluck
 endmap
 
-map m-xanadu_maze-p -projection plan
+map m-xanadu_bypass-p -projection plan
 	m-all-p@xanadu
 	m-all-p@euphrates2
 	m-all-p@euphrates
@@ -273,7 +315,7 @@ map m-xanadu_maze-p -projection plan
 endmap
 
 map m-beyond_xanadu-p -projection plan
-	m-xanadu_maze-p [250 0 m] below
+	#m-xanadu_maze-p [250 0 m] below
 	m-all-p@cuckoos_nest
 	m-all-p@pushyourluck
 	m-all-p@dwarf_pine
