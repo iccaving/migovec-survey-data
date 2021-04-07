@@ -122,11 +122,11 @@ map m-watership_deep-p -projection plan
 	m-all-p@watershipup
 endmap
 
-map m-above_apollo-p -projection plan
-	m-all-p@milkyway
-	m-all-p@beetlejuice
-	m-all-p@dreamsforthesoul
-endmap
+#map m-above_apollo-p -projection plan                   #Now Within m-beyond-consort-p  DELETE ME?
+#	m-all-p@milkyway
+#	m-all-p@beetlejuice
+#	m-all-p@dreamsforthesoul
+#endmap
 map m-below_zimmer-p -projection plan
 	m-all-p@belowzimmer
 	m-all-p@eggsplosive
