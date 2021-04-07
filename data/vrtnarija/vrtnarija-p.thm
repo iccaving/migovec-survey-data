@@ -3,7 +3,6 @@ map m-all-p -projection plan -title "Vrtnarija"
 	m-original_entrance_series-p
 	m-captain_kangaroo
 	m-friendship_level-p
-	m-above_apollo-p
 	m-beyond_consort-p
 	m-below_zimmer-p
 	m-below_big_rock-p
@@ -81,11 +80,6 @@ map m-friendship_level-p -projection plan
 	m-all-p@candyMountain
 endmap
 
-map m-above_apollo-p -projection plan
-	m-all-p@milkyway
-	m-all-p@beetlejuice
-	m-all-p@dreamsforthesoul
-endmap
 map m-below_zimmer-p -projection plan
 	m-all-p@belowzimmer
 	m-all-p@eggsplosive
@@ -175,6 +169,11 @@ map m-beyond_consort-p -projection plan
 	m-all-p@povodni_moz
 	m-all-p@povodni_moz2
 	m-all-p@ouroboros
+	m-all-p@apollo_traverse
+	m-all-p@apollo
+	m-all-p@milkyway
+	m-all-p@beetlejuice
+	m-all-p@dreamsforthesoul
 	m-all-p@minataur
 	m-all-p@the_queen_bed_chamber
 	m-all-p@serpentine
