@@ -8,14 +8,14 @@ map m-all-p -projection plan -title "Vrtnarija"
 	m-below_zimmer-p
 	m-below_big_rock-p
 	m-beyond_red_cow-p
+	m-yorkshire_extensions-p
+	m-cuckoos_nest-p
+	m-beyond_xanadu-p
 	m-below_balamory-p
 	m-cheetah-p
-	m-yorkshire_extensions-p
 	m-below_republica-p
 	m-below_stuck_in_paradise-p
 	m-beyond_atlantis-p
-	m-cuckoos_nest-p
-	m-beyond_xanadu-p
 endmap
 
 ## SUBMAPS ##
@@ -47,6 +47,15 @@ map m-captain_kangaroo -projection plan
 	m-all-p@bonus
 	m-all-p@scrotty
 	m-all-p@olympicrift
+	m-metal_camp-p [250 0 m] below
+	m-all-p@walk_the_line
+	m-all-p@walk_the_line_b
+	m-all-p@happy_monday
+	m-all-p@free_amalgamation
+	m-all-p@roaring
+endmap
+
+map m-metal_camp-p -projection plan
 	m-all-p@mudslump
 	m-all-p@ride_the_lightning
 	m-all-p@haemertight_crawl
@@ -63,11 +72,6 @@ map m-captain_kangaroo -projection plan
 	m-all-p@dark_tranquillity
 	m-all-p@mirage_canyon
 	m-all-p@wet_hammer
-	m-all-p@walk_the_line
-	m-all-p@walk_the_line_b
-	m-all-p@happy_monday
-	m-all-p@free_amalgamation
-	m-all-p@roaring
 endmap
 
 map m-friendship_level-p -projection plan
@@ -260,12 +264,16 @@ map m-cuckoos_nest-p -projection plan
 	m-all-p@pushyourluck
 endmap
 
-map m-beyond_xanadu-p -projection plan
+map m-xanadu_maze-p -projection plan
 	m-all-p@xanadu
 	m-all-p@euphrates2
 	m-all-p@euphrates
 	m-all-p@500m
 	m-all-p@xanadont
+endmap
+
+map m-beyond_xanadu-p -projection plan
+	m-xanadu_maze-p [250 0 m] below
 	m-all-p@cuckoos_nest
 	m-all-p@pushyourluck
 	m-all-p@dwarf_pine

@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap wet_hammer-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 506.0943 489.0461 u:label_MY -align bl -attr lvl 1 -attr text "Wet Hammer"
 line wall 
   425.6928 670.5806
   428.5786 667.8645 427.7298 663.7903 427.2206 661.0742
@@ -13,8 +13,14 @@ line wall
   447.5284 617.2879 468.6973 563.2516 478.5432 550.8594
   488.389 538.4672 519.6242 515.8896 525.5657 505.0252
   531.5072 494.1608 539.1462 480.071 536.0906 473.2807
-  533.035 466.4905 529.6398 456.9841 530.1491 450.0241
+  533.7592 468.0997 531.23 461.3375 530.3884 455.3316
+endline
+
+line wall -id alt_1
+  530.3884 455.3315
+  530.127 453.4661 530.0284 451.6736 530.1491 450.0241
   530.6584 443.0641 526.4145 442.0456 531.3374 437.4621
+  altitude .
   536.2603 432.8787 551.7082 434.4065 551.7082 434.4065
 endline
 
@@ -34,16 +40,16 @@ line wall
   443.5734 679.0254 440.6875 679.3649 440.6875 679.3649
 endline
 
-point 435.2484 674.0079 station -name 11
-point 430.5284 635.5879 station -name 10
-point 447.5284 619.2879 station -name 9
-point 477.6884 604.5679 station -name 8
-point 515.4084 539.2079 station -name 7
-point 556.6684 500.7079 station -name 6
-point 543.8284 467.3179 station -name 5
-point 540.1284 461.8079 station -name 4
-point 535.5584 454.8779 station -name 3
-point 549.5784 449.7579 station -name 2
-point 562.4084 449.5279 station -name 1
+point 435.248 674.008 station -name 11
+point 430.528 635.588 station -name 10
+point 447.528 619.288 station -name 9
+point 477.688 604.568 station -name 8
+point 515.408 539.208 station -name 7
+point 556.668 500.708 station -name 6
+point 543.828 467.318 station -name 5
+point 540.128 461.808 station -name 4
+point 535.558 454.878 station -name 3
+point 549.578 449.758 station -name 2
+point 562.408 449.528 station -name 1
 endscrap
 

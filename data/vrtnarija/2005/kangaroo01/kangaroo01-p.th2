@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap kangaroo01-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 294.6621 775.882 u:label_MY -align tl -attr text "Captain Kangaroo" -attr lvl 1
 line wall 
   300.6385 701.0938
   306.0707 702.1123 308.6171 703.6401 312.3517 701.7728
@@ -53,30 +53,30 @@ line wall
   321.0093 709.7513 301.8268 711.2791 301.8268 711.2791
 endline
 
-point 431.7357 408.4835 station -name 24
-point 416.0657 389.8235 station -name 23
-point 407.1757 423.1335 station -name 22
-point 405.6757 423.1335 station -name 21
-point 406.0657 422.1035 station -name 20
-point 406.0657 421.1635 station -name 19
-point 405.9157 419.8235 station -name 18
-point 439.5357 413.9135 station -name 17
-point 435.2057 463.3635 station -name 16
-point 441.5857 499.3535 station -name 15
-point 435.2057 506.8335 station -name 14
-point 457.5657 512.8135 station -name 13
-point 454.0257 533.1335 station -name 12
-point 454.0257 533.1335 station -name 11
-point 468.7457 558.7235 station -name 10
-point 468.7457 579.7435 station -name 9
-point 483.6257 605.4135 station -name 8
-point 474.8057 655.4935 station -name 7
-point 368.5057 646.2035 station -name 6
-point 370.0857 655.0235 station -name 5
-point 354.0957 682.6635 station -name 4
-point 331.6557 686.5935 station -name 3
-point 319.6157 696.6735 station -name 2
-point 319.6157 706.1235 station -name 1
-point 302.6857 706.1235 station -name 0
+point 431.736 408.483 station -name 24
+point 416.066 389.824 station -name 23
+point 407.176 423.134 station -name 22
+point 405.676 423.134 station -name 21
+point 406.066 422.103 station -name 20
+point 406.066 421.163 station -name 19
+point 405.916 419.824 station -name 18
+point 439.536 413.913 station -name 17
+point 435.206 463.363 station -name 16
+point 441.586 499.353 station -name 15
+point 435.206 506.834 station -name 14
+point 457.566 512.813 station -name 13
+point 454.026 533.134 station -name 12
+point 454.026 533.134 station -name 11
+point 468.746 558.723 station -name 10
+point 468.746 579.744 station -name 9
+point 483.626 605.413 station -name 8
+point 474.806 655.494 station -name 7
+point 368.506 646.203 station -name 6
+point 370.086 655.024 station -name 5
+point 354.096 682.663 station -name 4
+point 331.656 686.593 station -name 3
+point 319.616 696.673 station -name 2
+point 319.616 706.124 station -name 1
+point 302.686 706.124 station -name 0
 endscrap
 

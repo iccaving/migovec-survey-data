@@ -2,8 +2,17 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap keti-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+point -508.4053 569.9955 u:label_MY -align br -attr lvl 1 -attr text "Metal Aven area" -scale xs
+line wall -clip off -close on -outline none
+  -555.5959 610.9449
+  469.9221 610.9449
+  469.9221 16.4857
+  469.9221 -577.9735
+  -555.5959 -577.9735
+  -555.5959 16.4857
+endline
 
 line pit 
   -45.748 -61.854
@@ -11,7 +20,7 @@ line pit
   -38.7424 -58.1682 -37.8828 -57.729 -36.8478 -56.2219
 endline
 
-point 68.4289 26.584 narrow-end -orientation 352.5902501
+point 68.4289 26.584 narrow-end -orientation 352.59026800919366
 line rock-border -close on
   59.0784 13.2359
   64.0013 9.2466
@@ -83,7 +92,7 @@ line rock-border -close on
   -20.792 -50.4227
 endline
 
-point 20.4092 -27.3032 u:label_MY -align r -attr lvl 3 -attr text KETI
+point 24.4092 -31.3032 u:label_MY -align br -attr lvl 1 -attr text KETI
 line wall 
   65.5392 25.8063
   65.5392 25.8063 65.6205 22.967 65.7082 22.4643
