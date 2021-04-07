@@ -4,16 +4,7 @@ encoding  utf-8
 
 scrap euphrates-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -1732.1282 2485.6394 u:label_MY -align br -attr lvl 1 -attr text "Xanadu Bypass" -scale xs
-line wall -clip off -close on -outline none
-  -1993.25 2699.7341
-  2172.8804 2699.7341
-  2172.8804 278.3564
-  2172.8804 -2663.0212
-  -1993.25 -2663.0212
-  -1993.25 278.3564
-endline
-
+point -1732.13 2485.64 u:label_MY -align br -attr lvl 1 -attr text "Xanadu Bypass" -scale xs
 line wall -subtype invisible
   207.4219 1110.0917
   180.534 942.0415
