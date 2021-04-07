@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
@@ -35,7 +34,18 @@ endscrap
 
 scrap 500m-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 818.2256 644.3951 u:label_MY -align l -scale m -attr lvl 3 -attr text 500m
+line wall -clip off -close on -outline none
+  -2982.3004 4105.3126
+  130.7648 4105.3126
+  2903.83 4105.3126
+  2903.8299 311.9596
+  2903.8299 -3029.4178
+  130.7648 -3029.418
+  -2982.3005 -3029.418
+  -2982.3005 311.9596
+endline
+
+point 818.226 644.395 u:label_MY -align l -attr lvl 3 -attr text 500m -scale m
 line wall 
   129.0148 313.7097
   142.5953 294.697 143.9534 289.2648 187.411 263.4619
@@ -50,11 +60,30 @@ line wall
   453.589 547.2945 271.6102 330.0064 215.9301 377.5381
 endline
 
-point 857.9284 948.0262 station -name 6
-point 686.7949 917.832 station -name 5
-point 554.3139 621.9873 station -name 4
-point 291.0239 295.9483 station -name 3
-point 215.194 299.0956 station -name 2
-point 146.2489 387.3179 station -name 1
+point 857.928 948.026 station -name 6
+point 686.795 917.832 station -name 5
+point 554.314 621.987 station -name 4
+point 291.024 295.948 station -name 3
+point 215.194 299.096 station -name 2
+point 146.249 387.318 station -name 1
+endscrap
+
+
+scrap xanadu_bypass-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
+
+line wall -clip off -close on -outline none
+  -2982.3004 4105.3126
+  130.7648 4105.3126
+  2903.83 4105.3126
+  2903.8299 311.9596
+  2903.8299 -3029.4178
+  130.7648 -3029.418
+  -2982.3005 -3029.418
+  -2982.3005 311.9596
+endline
+
+point 2904.2383 -3004.9016 map-connection 
+point 857.928 948.026 station -name 6
+point 146.249 387.318 station -name 1
 endscrap
 

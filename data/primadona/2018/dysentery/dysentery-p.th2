@@ -52,8 +52,8 @@ line rock-border -close on
   5589.5 3809.0 5593.5 3846.0 5593.5 3846.0
 endline
 
-point 5660.0 4210.0 narrow-end -align t
-point 5654.0 2578.0 narrow-end -align b
+point 5660.0 4210.0 narrow-end -scale xs -align t
+point 5654.0 2578.0 narrow-end -scale xs -align b
 line u:texture_MY 
   5620.0 3033.0
   5709.0 3071.0
@@ -197,7 +197,7 @@ line rock-border -close on
   5586.0 3104.0
 endline
 
-point 5681.0 3288.0 narrow-end -align t
+point 5681.0 3288.0 narrow-end -scale xs -align t
 line wall 
   5578.9 3149.31
   5578.9 3149.31 5573.0 3184.0 5578.0 3208.0
@@ -776,7 +776,7 @@ line floor-step
   4269.0 981.0 4153.26 995.68 4145.63 998.84
 endline
 
-point 4217.0 544.0 narrow-end 
+point 4217.0 544.0 narrow-end -scale xs 
 line wall 
   4089.0 902.0
   4114.2326 897.9815 4139.6498 893.8359 4165.2 893.69
@@ -1234,7 +1234,7 @@ line wall
   2470.2475 863.1943 2473.51 868.74 2473.51 868.74
 endline
 
-point 2329.0 739.0 narrow-end -align b
+point 2329.0 739.0 narrow-end -scale xs -align b
 line wall -subtype invisible
   185.1 557.83
   309.19 290.54
