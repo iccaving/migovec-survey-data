@@ -2,10 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 925.000000 783.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap balamory-1p -projection plan -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 
-point 148.9733 637.5354 u:label_MY -align l -scale m -attr lvl 1 -attr text Balamory
+point 162.9733 523.5354 u:label_MY -align l -attr lvl 1 -attr text Balamory -scale m
 line pit 
   189.2958 529.3245
   189.2958 529.3245 184.0172 527.4183 182.551 523.1661
@@ -53,16 +52,16 @@ line wall
   185.7768 667.7406
 endline
 
-point 186.4366 663.7084 station -name 11
-point 186.4366 663.7084 station -name 10
-point 184.5304 635.1161 station -name 9
-point 187.0964 607.3302 station -name 8
-point 174.9997 590.2481 station -name 7
-point 179.985 582.2569 station -name 6
-point 175.2196 561.5092 station -name 5
-point 176.4659 554.5444 station -name 4
-point 179.6917 536.7292 station -name 3
-point 188.3427 522.2131 station -name 2
-point 188.3427 522.2131 station -name 1
+point 186.437 663.708 station -name 11
+point 186.437 663.708 station -name 10
+point 184.53 635.116 station -name 9
+point 187.096 607.33 station -name 8
+point 175.0 590.248 station -name 7
+point 179.985 582.257 station -name 6
+point 175.22 561.509 station -name 5
+point 176.466 554.544 station -name 4
+point 179.692 536.729 station -name 3
+point 188.343 522.213 station -name 2
+point 188.343 522.213 station -name 1
 endscrap
 
