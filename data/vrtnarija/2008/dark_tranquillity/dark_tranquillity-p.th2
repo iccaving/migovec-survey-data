@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap dark_tranquillity-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line chimney -close on
@@ -30,7 +29,7 @@ line pit
   479.2859 971.6061 478.7366 973.6728 478.1629 975.7116
 endline
 
-point 531.8347 890.3556 u:label_MY -align br -attr lvl 3 -attr text "Dark Tranquility"
+point 439.835 856.356 u:label_MY -align l -attr lvl 1 -attr text "Dark Tranquility"
 line pit -clip off
   536.6013 852.5476
   514.4371 844.2452
@@ -55,11 +54,11 @@ line wall
   505.5822 859.5763 509.5057 851.6316 514.4371 844.2452
 endline
 
-point 484.7304 972.3418 station -name 6
-point 477.5604 969.9818 station -name 5
-point 477.5604 969.9818 station -name 4
-point 477.5604 969.9818 station -name 3
-point 498.8204 900.6118 station -name 2
-point 528.8204 846.4418 station -name 1
+point 484.73 972.342 station -name 6
+point 477.56 969.982 station -name 5
+point 477.56 969.982 station -name 4
+point 477.56 969.982 station -name 3
+point 498.82 900.612 station -name 2
+point 528.82 846.442 station -name 1
 endscrap
 

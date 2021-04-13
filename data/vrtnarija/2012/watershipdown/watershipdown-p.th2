@@ -2,105 +2,18 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap watershipdown-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-scrap DELETE-ME-survey-legs-p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-
-line survey 
-  772.3674 364.0741
-  942.7127 540.4208
+line wall -clip off -close on -outline none
+  -791.677 1833.677
+  1520.6592 1833.677
+  1520.6592 1020.1086
+  1520.6592 -442.7908
+  -791.677 -442.7908
+  -791.677 1020.1086
 endline
 
-line survey 
-  719.6182 352.8926
-  772.3674 364.0741
-endline
-
-line survey 
-  664.4052 367.8329
-  719.6182 352.8926
-endline
-
-line survey 
-  642.5159 493.1676
-  664.4052 367.8329
-endline
-
-line survey 
-  696.7497 615.2805
-  642.5159 493.1676
-endline
-
-line survey 
-  678.5875 693.6463
-  696.7497 615.2805
-endline
-
-line survey 
-  658.9408 695.3836
-  678.5875 693.6463
-endline
-
-line survey 
-  543.5558 620.2712
-  658.9408 695.3836
-endline
-
-line survey 
-  473.4024 679.2113
-  543.5558 620.2712
-endline
-
-line survey 
-  381.644 753.5657
-  473.4024 679.2113
-endline
-
-line survey 
-  206.2765 741.1522
-  381.644 753.5657
-endline
-
-line survey 
-  418.9475 528.9866
-  494.7864 473.7736
-endline
-
-line survey 
-  357.7648 594.6546
-  418.9476 528.9866
-endline
-
-line survey 
-  242.8536 650.5941
-  357.7648 594.6546
-endline
-
-line survey 
-  206.2765 741.1522
-  242.8536 650.5941
-endline
-
-line survey 
-  219.2269 789.3846
-  167.2358 847.0929
-endline
-
-line survey 
-  206.2765 741.1522
-  219.2269 789.3846
-endline
-
-line survey 
-  111.2963 770.2432
-  206.2765 741.1522
-endline
-
-endscrap
-
-
-scrap watershipdown-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-
-line border:invisible -close on -id water1
+line border -close on -id watershipdown-1p_water_1 -visibility on
   80.6641 750.9444
   153.6459 689.486
   153.6459 689.486 178.6134 693.3272 181.9744 705.3308
@@ -108,7 +21,11 @@ line border:invisible -close on -id water1
   172.3715 789.3559 147.4041 801.3595 147.4041 801.3595
 endline
 
-line border:invisible -close on -id sump1
+area water -id water1
+  watershipdown-1p_water_1
+endarea
+
+line border -close on -id watershipdown-1p_sump_1 -visibility on
   80.6641 750.9444
   147.4041 801.3595
   108.9926 870.02
@@ -118,21 +35,28 @@ line border:invisible -close on -id sump1
   55.6966 783.114
 endline
 
-area sump
-  sump1 
+area sump -id sump1
+  watershipdown-1p_sump_1
 endarea
 
-area water
-  water1
-endarea
+#area sump
 
-line arrow
-  -1500.0 600.00
+# sump1
+
+#endarea
+
+#area water
+
+# water1
+
+#endarea
+
+line arrow 
+  -1500.0 600.0
   64.6562 795.33
 endline
 
-point -1500.0 600.00 u:label_MY -align l -scale m -attr lvl 1 -attr text "Watership Down" -attr lvl 2 
-
+point -1500.0 600.0 u:label_MY -align l -attr lvl 1 -attr text "Watership Down" -attr lvl 2 -scale m
 line wall:presumed 
   140.2171 794.7975
   134.9366 800.0801 130.771 806.7368 128.0763 816.6115
@@ -142,12 +66,12 @@ line wall:presumed
   46.0375 876.9622 34.149 867.4059 32.1937 864.473
 endline
 
-line wall:presumed
+line wall:presumed 
   32.1937 864.473
   28.8857 859.5109 26.1622 841.6151 29.1707 834.6543
   32.4234 827.1285 35.2652 818.49 41.4965 811.799
   49.4694 803.2381 61.53 793.7534 67.6562 785.33
-   altitude .
+  altitude .
   75.5383 774.492 90.2455 772.4744 97.0675 761.7026
 endline
 
@@ -234,24 +158,41 @@ line wall
   733.6592 396.5985 739.421 419.6454 747.1033 432.1291
 endline
 
-point 942.7127 540.4208 station -name 17
-point 772.3674 364.0741 station -name 16
-point 719.6182 352.8926 station -name 15
-point 664.4052 367.8329 station -name 14
-point 642.5159 493.1676 station -name 13
-point 696.7497 615.2805 station -name 12
-point 678.5875 693.6463 station -name 11
-point 658.9408 695.3836 station -name 10
-point 543.5558 620.2712 station -name 9
-point 473.4024 679.2113 station -name 8
-point 381.644 753.5657 station -name 7
-point 494.7864 473.7736 station -name 6
-point 418.9475 528.9866 station -name 5
-point 357.7648 594.6546 station -name 4
-point 242.8536 650.5941 station -name 3
-point 167.2358 847.0929 station -name sump2
-point 219.2269 789.3846 station -name 2
-point 206.2765 741.1522 station -name 1
-point 111.2963 770.2432 station -name sump
+point 942.713 540.421 station -name 17
+point 772.367 364.074 station -name 16
+point 719.618 352.893 station -name 15
+point 664.405 367.833 station -name 14
+point 642.516 493.168 station -name 13
+point 696.75 615.28 station -name 12
+point 678.587 693.646 station -name 11
+point 658.941 695.384 station -name 10
+point 543.556 620.271 station -name 9
+point 473.402 679.211 station -name 8
+point 381.644 753.566 station -name 7
+point 494.786 473.774 station -name 6
+point 418.947 528.987 station -name 5
+point 357.765 594.655 station -name 4
+point 242.854 650.594 station -name 3
+point 167.236 847.093 station -name sump2
+point 219.227 789.385 station -name 2
+point 206.276 741.152 station -name 1
+point 111.296 770.243 station -name sump
+endscrap
+
+
+scrap watershipdown-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
+
+point -797.7555 -441.8484 map-connection 
+line wall -clip off -close on -outline none
+  -791.677 1833.677
+  1520.6592 1833.677
+  1520.6592 1020.1086
+  1520.6592 -442.7908
+  -791.677 -442.7908
+  -791.677 1020.1086
+endline
+
+point 167.236 847.093 station -name sump2
+point 942.713 540.421 station -name 17
 endscrap
 

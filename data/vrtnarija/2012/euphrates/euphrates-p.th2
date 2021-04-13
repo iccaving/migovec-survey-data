@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap euphrates-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point -1732.13 2485.64 u:label_MY -align br -attr lvl 1 -attr text "Xanadu Bypass" -scale xs
 line wall -subtype invisible
   207.4219 1110.0917
   180.534 942.0415
@@ -32,7 +32,7 @@ line pit
   575.692 215.1043 513.7535 244.3931 450.8547 214.6241
 endline
 
-point 525.277 799.9191 u:label_MY -align l -attr lvl 1 -attr text Euphrates -scale m
+point 525.277 799.919 u:label_MY -align r -attr lvl 1 -attr text Euphrates -scale m
 line wall 
   227.0738 927.5607
   195.6621 1052.3083 304.683 902.8948 312.4145 841.6774
@@ -51,8 +51,19 @@ line wall
   688.1242 369.8656 655.4742 433.5619 607.7472 472.064
   547.6682 530.3585 491.8845 593.6594 441.732 660.6774
   422.9373 717.3376 420.4848 778.0334 408.7943 836.4137
-  404.4531 889.2767 377.485 935.1573 348.1905 977.9244
-  305.3731 1038.7952 278.8559 1081.029 207.4219 1110.0917
+  405.2636 879.4075 386.7659 917.7828 364.2224 953.6207
+endline
+
+line wall -id alt_1
+  364.2224 953.6207
+  altitude .
+  359.0476 961.8472 353.6596 969.9401 348.1905 977.9244
+  330.8282 1002.6073 316.1461 1024.2258 300.0625 1043.1443
+endline
+
+line wall 
+  300.0625 1043.1443
+  276.4823 1070.8808 249.8896 1092.8138 207.4219 1110.0917
 endline
 
 line wall 
@@ -109,16 +120,16 @@ line survey
   379.8114 86.662
 endline
 
-point 153.7523 1084.8881 station -name 11
-point 290.5815 981.9829 station -name 10
-point 380.4158 780.3279 station -name 9
-point 420.233 607.7614 station -name 8
-point 589.1729 444.7903 station -name 7
-point 660.5719 329.9475 station -name 6
-point 477.3523 244.2687 station -name 5
-point 513.0895 258.5485 station -name 4
-point 546.938 154.4344 station -name 3
-point 379.8114 86.662 station -name 1
-point 455.3659 149.6744 station -name 2
+point 153.752 1084.89 station -name 11
+point 290.582 981.983 station -name 10
+point 380.416 780.328 station -name 9
+point 420.233 607.761 station -name 8
+point 589.173 444.79 station -name 7
+point 660.572 329.947 station -name 6
+point 477.352 244.269 station -name 5
+point 513.09 258.548 station -name 4
+point 546.938 154.434 station -name 3
+point 379.811 86.662 station -name 1
+point 455.366 149.674 station -name 2
 endscrap
 

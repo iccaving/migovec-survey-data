@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
@@ -155,7 +154,20 @@ endscrap
 
 scrap AJA-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 461.0583 579.2087 u:label_MY -align l -scale m -attr lvl 1 -attr text AJA
+line border -close on -id AJA-1p_water_1 -visibility on
+  59.9005 788.7765
+  118.5266 804.7075
+  105.1445 885.637
+  53.5281 902.2052
+  27.4013 877.3528
+  16.5682 846.7653
+endline
+
+area water 
+  AJA-1p_water_1
+endarea
+
+point 121.0583 879.2087 u:label_MY -align tr -attr lvl 1 -attr text AJA -scale m
 line pit 
   808.5616 649.6341
   814.8035 670.2803 804.2403 680.8435 784.5545 689.486
@@ -193,7 +205,16 @@ line wall
   113.5269 746.0606 105.6316 792.2368 99.8698 810.4822
   94.1081 828.7277 108.5124 834.4894 101.7904 854.6554
   95.0684 874.8214 106.5918 884.4243 88.3464 884.4243
+endline
+
+line wall -id alt_1
+  88.3464 884.4243
+  altitude .
   70.1009 884.4243 59.5378 895.9477 48.0143 882.5037
+endline
+
+line wall 
+  48.0143 882.5037
   36.4909 869.0597 23.0469 861.3774 28.8086 846.0128
   34.5703 830.6482 53.7761 815.2836 58.5775 806.641
   63.3789 797.9985 75.3825 801.3595 78.2634 778.3126
@@ -226,35 +247,35 @@ line wall
   779.753 633.7894 792.052 657.234 812.451 652.3111
 endline
 
-point 920.6891 621.0646 station -name 31
-point 877.2396 643.2213 station -name 30
-point 809.6545 679.1041 station -name 29
-point 787.1494 664.5141 station -name 28
-point 787.1494 664.5141 station -name 27
-point 757.5235 629.1748 station -name 26
-point 760.0596 557.0887 station -name 25
-point 728.2319 528.4521 station -name 24
-point 755.0012 458.7768 station -name 23
-point 755.0012 458.7768 station -name 22
-point 782.4393 416.5257 station -name 21
-point 692.2377 392.2787 station -name 20
-point 672.2687 417.8495 station -name 19
-point 630.9095 412.0386 station -name 18
-point 611.8184 441.4416 station -name 17
-point 555.0888 469.0888 station -name 16
-point 550.2533 503.1042 station -name 14
-point 492.7572 439.1284 station -name 13
-point 486.8348 383.4996 station -name 12
-point 441.9639 363.5306 station -name 11
-point 390.8362 389.5335 station -name 10
-point 367.2441 435.9512 station -name 9
-point 310.18 501.5714 station -name 8
-point 305.47 554.9984 station -name 7
-point 217.902 572.0131 station -name 6
-point 214.2789 597.6815 station -name 5
-point 181.6987 613.5954 station -name 4
-point 112.9013 682.3928 station -name 3
-point 125.847 710.1514 station -name 2
-point 86.564 787.2959 station -name 1
+point 920.689 621.065 station -name 31
+point 877.24 643.221 station -name 30
+point 809.654 679.104 station -name 29
+point 787.149 664.514 station -name 28
+point 787.149 664.514 station -name 27
+point 757.524 629.175 station -name 26
+point 760.06 557.089 station -name 25
+point 728.232 528.452 station -name 24
+point 755.001 458.777 station -name 23
+point 755.001 458.777 station -name 22
+point 782.439 416.526 station -name 21
+point 692.238 392.279 station -name 20
+point 672.269 417.849 station -name 19
+point 630.909 412.039 station -name 18
+point 611.818 441.442 station -name 17
+point 555.089 469.089 station -name 16
+point 550.253 503.104 station -name 14
+point 492.757 439.128 station -name 13
+point 486.835 383.5 station -name 12
+point 441.964 363.531 station -name 11
+point 390.836 389.534 station -name 10
+point 367.244 435.951 station -name 9
+point 310.18 501.571 station -name 8
+point 305.47 554.998 station -name 7
+point 217.902 572.013 station -name 6
+point 214.279 597.682 station -name 5
+point 181.699 613.595 station -name 4
+point 112.901 682.393 station -name 3
+point 125.847 710.151 station -name 2
+point 86.564 787.296 station -name 1
 endscrap
 
