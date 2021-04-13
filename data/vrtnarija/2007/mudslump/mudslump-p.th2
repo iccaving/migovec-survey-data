@@ -2,13 +2,18 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap mudslump-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line wall 
+line wall -id alt_1
   554.9163 1011.2706
-  557.1969 1013.7913 558.4069 1020.665 557.3265 1024.1461
-  556.2462 1027.6271 540.2814 1041.9114 535.6001 1044.192
+  557.1969 1013.7913 558.4068 1020.665 557.3265 1024.1461
+  altitude .
+  556.9283 1025.4291 554.5082 1028.1797 551.3762 1031.2559
+endline
+
+line wall 
+  551.3762 1031.2559
+  546.0107 1036.526 538.556 1042.752 535.6001 1044.192
   530.9187 1046.4727 522.3961 1054.6352 516.7544 1052.9547
   511.1127 1051.2742 508.2319 1048.9935 507.1515 1046.2327
   506.0712 1043.4718 503.6705 1041.5513 503.0703 1041.4312
@@ -37,22 +42,22 @@ line wall
   546.4033 1022.2255 548.924 1019.8248 547.6036 1017.6641
 endline
 
-point 539.0409 1002.577 station -name 28
-point 551.4809 1018.407 station -name 27
-point 513.0609 1046.357 station -name 26
-point 500.7709 1034.867 station -name 25
-point 473.6109 1032.977 station -name 24
-point 444.5509 998.167 station -name 5
-point 471.0909 996.287 station -name 4
-point 476.0509 1009.907 station -name 3
-point 438.8809 992.977 station -name 1
-point 433.9209 1012.897 station -name 2
+point 539.041 1002.58 station -name 28
+point 551.481 1018.41 station -name 27
+point 513.061 1046.36 station -name 26
+point 500.771 1034.87 station -name 25
+point 473.611 1032.98 station -name 24
+point 444.551 998.167 station -name 5
+point 471.091 996.287 station -name 4
+point 476.051 1009.91 station -name 3
+point 438.881 992.977 station -name 1
+point 433.921 1012.9 station -name 2
 endscrap
 
 
 scrap mudslump-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
-point 437.2358 933.7977 u:label_MY -align l -attr lvl 3 -attr text "Mud Slump"
+point 517.2358 1067.7977 u:label_MY -align t -attr lvl 1 -attr text "Mud Slump"
 line wall -subtype invisible
   386.3225 792.6445
   346.328 781.969
@@ -112,8 +117,8 @@ line wall
   408.8422 879.1427 405.7212 876.5019 405.7212 876.5019
 endline
 
-point 471.0909 996.287 station -name 23
-point 444.5509 998.167 station -name 22
+point 471.091 996.287 station -name 23
+point 444.551 998.167 station -name 22
 line wall 
   364.1584 764.3502
   383.3987 792.0444 405.1835 772.4375 409.6298 774.6745
@@ -133,21 +138,21 @@ line wall
   451.3011 997.7457 477.5627 992.7567 478.2829 997.258
 endline
 
-point 459.9909 966.437 station -name 21
-point 476.1309 965.577 station -name 20
-point 475.2609 953.287 station -name 19
-point 471.6409 965.967 station -name 18
-point 443.6109 927.387 station -name 17
-point 448.2509 915.337 station -name 16
-point 454.8709 899.747 station -name 15
-point 458.7309 892.427 station -name 14
-point 451.7209 864.157 station -name 13
-point 462.9809 856.517 station -name 12
-point 462.9809 828.247 station -name 11
-point 449.5109 821.087 station -name 10
-point 434.6309 821.317 station -name 9
-point 417.7009 798.017 station -name 8
-point 352.9809 769.357 station -name 6
-point 413.4509 790.137 station -name 7
+point 459.991 966.437 station -name 21
+point 476.131 965.577 station -name 20
+point 475.261 953.287 station -name 19
+point 471.641 965.967 station -name 18
+point 443.611 927.387 station -name 17
+point 448.251 915.337 station -name 16
+point 454.871 899.747 station -name 15
+point 458.731 892.427 station -name 14
+point 451.721 864.157 station -name 13
+point 462.981 856.517 station -name 12
+point 462.981 828.247 station -name 11
+point 449.511 821.087 station -name 10
+point 434.631 821.317 station -name 9
+point 417.701 798.017 station -name 8
+point 352.981 769.357 station -name 6
+point 413.451 790.137 station -name 7
 endscrap
 

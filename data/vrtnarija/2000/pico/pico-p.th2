@@ -2,18 +2,17 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap pico-p1 -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-p1 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 
 line wall:invisible 
   537.8484 720.1188
   545.5452 754.3585
 endline
 
-point 537.7197 735.4777 station -name 13
-point 520.9353 735.1794 station -name 12
-point 516.3849 747.6371 station -name 11
-point 513.028 780.0125 station -name 10
+point 537.72 735.478 station -name 13
+point 520.935 735.179 station -name 12
+point 516.385 747.637 station -name 11
+point 513.028 780.013 station -name 10
 line floor-step 
   519.75 745.75
   519.75 745.75 517.75 761.75 518.25 767.25
@@ -51,7 +50,7 @@ endline
 endscrap
 
 
-scrap pico-p2 -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-p2 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 
 area u:smallblocks_MY -attr scale 0.6
   blocks
@@ -80,12 +79,12 @@ line wall:invisible
   527.0 644.5
 endline
 
-point 385.9183 726.9541 u:label_MY -attr lvl 1 -attr text Pico -align l -scale l
-point 505.7042 706.6957 passage-height -align t -scale xl -value 65
-point 513.028 780.0125 station -name 8
-point 517.5784 648.497 station -name 7
-point 496.7912 803.9314 water-flow -orientation 199.4
-point 435.1706 798.436 water-flow -orientation 161.6
+point 477.9183 844.9541 u:label_MY -align t -attr lvl 1 -attr text Pico -scale l
+point 505.704 706.696 passage-height -align t -scale xl -value 65
+point 513.028 780.013 station -name 8
+point 517.578 648.497 station -name 7
+point 496.791 803.931 water-flow -orientation 199.39998636290872
+point 435.171 798.436 water-flow -orientation 161.60000179809316
 line contour 
   505.0 761.0
   505.0 761.0 452.5 753.0 435.5 760.0
@@ -109,7 +108,7 @@ line contour
   573.5 695.5 539.0 679.0 549.5 656.75
 endline
 
-line label -text Pico -scale xl
+line label -scale xl -text Pico
   342.5 819.5
   342.5 819.5 341.0 708.0 416.0 645.0
 endline
@@ -134,16 +133,15 @@ line wall
   561.5 743.0 550.75 751.75 542.25 758.75
 endline
 
-line wall
+line wall 
   542.25 758.75
   536.8624 763.1869 524.3437 783.995 514.4978 799.7843
   508.8099 808.9058 461.4138 805.7114 436.0943 799.2332
   altitude .
   434.8802 798.9225 433.7487 798.2507 432.7841 797.4507
-
 endline
 
-line wall
+line wall 
   432.7841 797.4507
   416.5498 783.9867 383.5 767.75 393.0 748.25
   399.86 734.18 401.9287 708.9053 407.6787 696.6553
@@ -155,9 +153,9 @@ endline
 endscrap
 
 
-scrap pico-p3 -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-p3 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 
-point 508.3283 620.0008 station -name 6
+point 508.328 620.001 station -name 6
 line wall 
   522.0 566.5
   522.0 566.5 508.988 581.5168 511.25 589.75
@@ -167,7 +165,7 @@ line wall
   527.6073 634.6422 527.0 644.5 527.0 644.5
 endline
 
-point 501.9875 587.2525 station -name 4
+point 501.988 587.253 station -name 4
 line rock-border -close on
   498.0 631.25
   492.625 634.125
@@ -228,9 +226,9 @@ endline
 endscrap
 
 
-scrap pico-p4 -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-p4 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 
-point 529.3648 501.9875 station -name 2
+point 529.365 501.988 station -name 2
 line pit -close on -outline in
   529.75 534.75
   529.75 534.75 524.0 536.0 523.0 534.0
@@ -281,8 +279,8 @@ line rock-border -close on
   520.25 531.5
 endline
 
-point 515.7881 549.2824 station -name 3
-line rock-border -close on -clip off
+point 515.788 549.282 station -name 3
+line rock-border -clip off -close on
   518.5 568.0
   514.5 566.5
   510.5 565.0
@@ -296,7 +294,7 @@ endline
 endscrap
 
 
-scrap pico-p5 -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-p5 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 
 line wall 
   542.0 478.5
@@ -315,6 +313,6 @@ line wall
   529.0 485.5 531.25 480.0 532.25 478.0
 endline
 
-point 529.3648 501.9875 station -name 1
+point 529.365 501.988 station -name 1
 endscrap
 

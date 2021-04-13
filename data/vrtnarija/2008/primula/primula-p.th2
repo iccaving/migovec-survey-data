@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap primula-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line ceiling-meander -clip off
@@ -55,7 +54,7 @@ area u:smallblocks_MY -attr scale 1.8
   primula-1p_u_smallblocks_MY_1
 endarea
 
-point 452.8001 1080.2582 u:label_MY -align l -attr lvl 3 -attr text Primula
+point 462.8001 1128.2582 u:label_MY -align l -attr lvl 1 -attr text Primula
 line pit 
   504.6524 1105.9394
   503.7213 1104.5629 502.7575 1103.2044 501.9153 1101.7713
@@ -75,10 +74,10 @@ line wall
   517.1596 1108.632 504.6524 1105.9394 504.6524 1105.9394
 endline
 
-point 522.6034 1098.755 station -name east
-point 461.9834 1098.755 station -name west
-point 497.4134 1040.175 station -name south
-point 497.4134 1098.755 station -name ridge
-point 497.4134 1098.755 station -name 1
+point 522.603 1098.76 station -name east
+point 461.983 1098.76 station -name west
+point 497.413 1040.17 station -name south
+point 497.413 1098.76 station -name ridge
+point 497.413 1098.76 station -name 1
 endscrap
 

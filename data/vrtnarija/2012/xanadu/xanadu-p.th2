@@ -2,17 +2,16 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap xanadu-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
-point 473.8865 741.7655 station -name 1
-point 473.8865 741.3512 station -name 8
+point 473.887 741.765 station -name 1
+point 473.887 741.351 station -name 8
 point 657.445 833.493 station -name 7
-point 745.4951 603.4751 station -name 6
-point 709.6536 532.5171 station -name 5
-point 606.8421 469.7426 station -name 4
-point 73.8283 852.6569 station -name 3
-point 221.0274 664.2815 station -name 2
+point 745.495 603.475 station -name 6
+point 709.654 532.517 station -name 5
+point 606.842 469.743 station -name 4
+point 73.8283 852.657 station -name 3
+point 221.027 664.282 station -name 2
 line wall -close on -outline in
   511.8204 732.6202
   501.3772 745.5417 634.5393 804.4604 646.7617 800.3862
@@ -41,8 +40,8 @@ endscrap
 
 scrap xanadu-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 473.8865 741.7655 station -name 9
-point 917.074 875.7817 u:label_MY -align l -attr lvl 1 -attr text Xanadu -scale m
+point 473.887 741.765 station -name 9
+point 757.074 995.7817 u:label_MY -align tr -attr lvl 1 -attr text Xanadu -scale m
 line wall 
   397.9089 354.4513
   369.3898 435.9343 266.178 688.5318 277.0424 693.964
@@ -72,17 +71,17 @@ line wall
   183.0559 824.8563 298.5382 483.0683 352.8602 335.0408
 endline
 
-point 770.8225 713.5895 station -name 21
-point 727.9887 589.2317 station -name 20
-point 835.2544 589.2317 station -name 19
-point 980.0191 278.881 station -name 18
-point 756.5273 917.9175 station -name 17
-point 398.4742 600.6264 station -name 16
-point 298.9258 723.3786 station -name 15
-point 266.3472 714.0039 station -name 14
-point 223.0991 802.9345 station -name 13
-point 371.1269 346.9904 station -name 12
-point 426.5984 714.4182 station -name 11
-point 426.5984 714.4182 station -name 10
+point 770.822 713.59 station -name 21
+point 727.989 589.232 station -name 20
+point 835.254 589.232 station -name 19
+point 980.019 278.881 station -name 18
+point 756.527 917.918 station -name 17
+point 398.474 600.626 station -name 16
+point 298.926 723.379 station -name 15
+point 266.347 714.004 station -name 14
+point 223.099 802.934 station -name 13
+point 371.127 346.99 station -name 12
+point 426.598 714.418 station -name 11
+point 426.598 714.418 station -name 10
 endscrap
 

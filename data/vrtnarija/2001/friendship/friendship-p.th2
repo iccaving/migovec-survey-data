@@ -2,13 +2,12 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 646.500000 1118.250000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap friendship-p1 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
-point 392.4684 959.8855 u:label_MY -align tl -scale m -attr lvl 1 -attr text Zimmer
+point 392.468 959.885 u:label_MY -align br -attr lvl 2 -attr text Zimmer
 point 348.855 966.845 passage-height -align t -value 60
-point 376.7858 968.3977 passage-height -align t -value 80
-point 368.75 969.0 water-flow -orientation 287.3
+point 376.786 968.398 passage-height -align t -value 80
+point 368.75 969.0 water-flow -orientation 287.3000034722818
 line rock-border -close on
   322.5 965.25
   319.75 963.25
@@ -166,7 +165,7 @@ line rock-border -close on
   342.75 969.25 341.25 971.5 341.25 971.5
 endline
 
-line u:label_MY -scale xl -attr lvl 1 -attr text Zimmer
+line u:label_MY -attr lvl 1 -attr text Zimmer -scale xl
   376.75 955.75
   376.75 955.75 410.5 969.75 431.0 989.25
 endline
@@ -205,16 +204,16 @@ line wall
   356.2334 982.1396 354.8357 986.4708 354.8357 986.4708
 endline
 
-point 360.4157 972.3787 station -name 3b
-point 319.6501 955.162 station -name 18
-point 340.0158 977.8209 station -name 17
+point 360.416 972.379 station -name 3b
+point 319.65 955.162 station -name 18
+point 340.016 977.821 station -name 17
 endscrap
 
 
 scrap friendship-p2 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
 point 470.0 811.25 camp 
-line u:label_MY -scale xl -attr lvl 1 -attr text "Camp X-Ray"
+line u:label_MY -attr lvl 1 -attr text "Camp X-Ray" -scale xl
   451.0 890.0
   451.0 890.0 486.5 855.5 517.5 793.25
 endline
@@ -271,7 +270,7 @@ line wall
   448.5 864.0 449.0 867.5 449.0 867.5
 endline
 
-point 448.5 870.75 water-flow -align tr -orientation 209.8
+point 448.5 870.75 water-flow -align tr -orientation 209.80001484714646
 point 444.0 856.25 clay 
 point 424.5 864.5 clay 
 point 400.0 892.0 clay 
@@ -293,17 +292,17 @@ line wall
   451.37 839.11 456.25 825.25 457.25 825.5
 endline
 
-point 358.5332 963.6163 station -name 16
-point 387.6955 903.8884 station -name 15
-point 434.006 862.1644 station -name 14
-point 452.318 843.5444 station -name 13
+point 358.533 963.616 station -name 16
+point 387.695 903.888 station -name 15
+point 434.006 862.164 station -name 14
+point 452.318 843.544 station -name 13
 endscrap
 
 
 scrap friendship-p3 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
 point 470.0 811.25 station -name 12
-point 450.367 839.6082 station -name 11
+point 450.367 839.608 station -name 11
 line contour 
   441.25 846.0
   441.25 846.0 430.75 841.25 429.0 845.75
@@ -437,13 +436,13 @@ area sand
   l79-286-699
 endarea
 
-point 423.8745 841.9357 station -name 10
-point 418.9799 802.0942 station -name 9
-point 414.5302 778.1004 station -name 8
-point 439.6536 698.4175 station -name 7
+point 423.875 841.936 station -name 10
+point 418.98 802.094 station -name 9
+point 414.53 778.1 station -name 8
+point 439.654 698.418 station -name 7
 point 465.0 678.5 station -name 6
-point 475.4561 643.1393 station -name 5
-point 497.9782 602.5106 station -name 4
+point 475.456 643.139 station -name 5
+point 497.978 602.511 station -name 4
 line border -close on -id l79-286-699
   410.5 832.0
   406.75 795.75
@@ -507,7 +506,7 @@ endscrap
 
 scrap friendship-p4 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 
-line u:label_MY -scale xl -attr lvl 1 -attr text "Friendship Gallery"
+line u:label_MY -attr lvl 1 -attr text "Friendship Gallery" -scale xl
   285.0 468.0
   285.75 468.5 383.0 636.0 372.0 820.0
 endline
@@ -592,11 +591,11 @@ line contour
   479.75 576.75 475.25 586.75 467.0 588.25
 endline
 
-point 461.2515 574.8543 station -name 37
-point 456.4253 568.6591 station -name 36
-point 423.2584 543.6726 station -name 35
-point 396.2525 505.0976 station -name 34
-point 350.1131 478.4682 station -name 33
+point 461.252 574.854 station -name 37
+point 456.425 568.659 station -name 36
+point 423.258 543.673 station -name 35
+point 396.252 505.098 station -name 34
+point 350.113 478.468 station -name 33
 endscrap
 
 
@@ -665,14 +664,14 @@ line contour
   332.0 357.5 331.5 350.75 338.25 349.75
 endline
 
-point 346.4849 444.1033 station -name 32
-point 353.1936 429.7275 station -name 31
-point 375.8183 394.5068 station -name 30
-point 386.8055 401.9001 station -name 29
-point 366.6794 396.3551 station -name 22
-point 357.2667 377.9062 station -name 21
-point 325.0239 343.3359 station -name 20
-point 300.1402 359.4916 station -name 19
+point 346.485 444.103 station -name 32
+point 353.194 429.728 station -name 31
+point 375.818 394.507 station -name 30
+point 386.805 401.9 station -name 29
+point 366.679 396.355 station -name 22
+point 357.267 377.906 station -name 21
+point 325.024 343.336 station -name 20
+point 300.14 359.492 station -name 19
 line wall 
   391.5 406.25
   384.25 403.5
@@ -767,11 +766,11 @@ line wall
   403.0 405.5 391.5 406.25 391.5 406.25
 endline
 
-point 410.3544 402.9269 station -name 28
-point 429.6933 381.0552 station -name 27
-point 424.4906 351.3795 station -name 26
-point 436.8811 330.74 station -name 25
-point 441.6046 319.6159 station -name 24
+point 410.354 402.927 station -name 28
+point 429.693 381.055 station -name 27
+point 424.491 351.38 station -name 26
+point 436.881 330.74 station -name 25
+point 441.605 319.616 station -name 24
 point 466.75 300.5 station -name 23
 endscrap
 

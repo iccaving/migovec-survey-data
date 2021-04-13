@@ -76,7 +76,7 @@ map m-end_branch -projection plan -title "End of Hallelujah Branch (2019)"
 endmap
 
 map m-hallelujah_branch-p -projection plan -title "Hallelujah Branch"
-	cattlegrid-the_stile [-200 0 m] below
+	cattlegrid-the_stile [-300 0 m] below
 	m-all-p@plumbers_paradise
 	m-all-p@hallelujah
 	m-all-p@sweet_baby_jesus
@@ -99,7 +99,7 @@ map m-hammerhead_branch-p -projection plan
 	m-all-p@hammerhead2
 	m-all-p@hammerhead3
 	m-all-p@dogfish
-	low_hammerhead [-150 0 m] below
+	low_hammerhead [-200 0 m] below
 endmap
 
 map m-old_slov_route-p -projection plan

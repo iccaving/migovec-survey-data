@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
@@ -40,7 +39,7 @@ endscrap
 
 scrap stalemate-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 751.0021 1033.4767 u:label_MY -align l -scale m -attr lvl 1 -attr text Stalemate
+point 751.002 1033.48 u:label_MY -align r -attr lvl 2 -attr text Stalemate -scale m
 line pit 
   401.1065 131.9591
   365.9085 136.5341 336.9129 154.7948 322.2506 178.2281
@@ -62,12 +61,12 @@ line wall
   589.6162 996.7779 570.4105 1071.6802 616.5042 1238.7702
 endline
 
-point 355.3455 249.7289 station -name 6
-point 321.0879 74.5409 station -name 5
-point 321.0879 74.5409 station -name 4
-point 295.777 232.2942 station -name 3
-point 491.4584 716.4128 station -name 2
-point 523.9573 1193.8786 station -name LASER
-point 419.1962 741.1119 station -name 1
+point 355.346 249.729 station -name 6
+point 321.088 74.5409 station -name 5
+point 321.088 74.5409 station -name 4
+point 295.777 232.294 station -name 3
+point 491.458 716.413 station -name 2
+point 523.957 1193.88 station -name LASER
+point 419.196 741.112 station -name 1
 endscrap
 

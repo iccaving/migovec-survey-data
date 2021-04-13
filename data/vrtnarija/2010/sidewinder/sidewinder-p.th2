@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
@@ -45,7 +44,7 @@ endscrap
 
 scrap sidewinder-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 391.1187 575.8135 u:label_MY -align l -scale m -attr lvl 1 -attr text Sidewinder
+point 431.1187 615.8135 u:label_MY -align l -attr lvl 2 -attr text Sidewinder
 line wall 
   389.0816 1129.8982
   389.0816 1129.8982 406.6402 955.4292 429.1441 928.9068
@@ -68,12 +67,12 @@ line wall
 endline
 
 point 313.362 76.7354 station -name 8
-point 391.8567 157.9438 station -name 7
-point 395.1132 250.3464 station -name 6
-point 425.507 365.2052 station -name 5
-point 562.2791 527.6221 station -name 4
-point 583.107 697.5017 station -name 3
-point 411.1242 1083.6659 station -name 2
-point 391.8567 1161.6857 station -name 1
+point 391.857 157.944 station -name 7
+point 395.113 250.346 station -name 6
+point 425.507 365.205 station -name 5
+point 562.279 527.622 station -name 4
+point 583.107 697.502 station -name 3
+point 411.124 1083.67 station -name 2
+point 391.857 1161.69 station -name 1
 endscrap
 

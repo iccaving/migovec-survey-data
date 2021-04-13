@@ -2,8 +2,17 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap keti-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+point -508.405 569.995 u:label_MY -align br -attr lvl 1 -attr text "Metal Aven area" -scale xs
+line wall -clip off -close on -outline none
+  -555.5959 610.9449
+  469.9221 610.9449
+  469.9221 16.4857
+  469.9221 -577.9735
+  -555.5959 -577.9735
+  -555.5959 16.4857
+endline
 
 line pit 
   -45.748 -61.854
@@ -11,7 +20,7 @@ line pit
   -38.7424 -58.1682 -37.8828 -57.729 -36.8478 -56.2219
 endline
 
-point 68.4289 26.584 narrow-end -orientation 352.5902501
+point 68.4289 26.584 narrow-end -orientation 352.59026800919366
 line rock-border -close on
   59.0784 13.2359
   64.0013 9.2466
@@ -83,7 +92,7 @@ line rock-border -close on
   -20.792 -50.4227
 endline
 
-point 20.4092 -27.3032 u:label_MY -align r -attr lvl 3 -attr text KETI
+point 24.4092 -31.3032 u:label_MY -align br -attr lvl 1 -attr text KETI
 line wall 
   65.5392 25.8063
   65.5392 25.8063 65.6205 22.967 65.7082 22.4643
@@ -114,13 +123,11 @@ line wall
   72.5294 22.9127 71.2501 26.3016 71.2501 26.3016
 endline
 
-line survey 
-  -43.8888 -53.1429
+line survey -close on
   -43.8888 -53.1429
 endline
 
-line survey 
-  -38.2188 -68.0329
+line survey -close on
   -38.2188 -68.0329
 endline
 
@@ -143,5 +150,26 @@ point 1.69 -24.45 station -name 4
 point 28.39 1.38 station -name 3
 point 54.06 5.39 station -name 2
 point 72.48 12.87 station -name 1
+endscrap
+
+
+scrap metalaven-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
+
+point 469.9221 -577.9735 map-connection 
+line wall -clip off -close on -outline none
+  -555.5959 610.9449
+  469.9221 610.9449
+  469.9221 16.4857
+  469.9221 -577.9735
+  -555.5959 -577.9735
+  -555.5959 16.4857
+endline
+
+point -36.1 -66.5 station -name 8
+line survey -close on
+  -38.2188 -68.0329
+endline
+
+point -52.4 66.5 station -name 19
 endscrap
 
