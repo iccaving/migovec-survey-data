@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap watershipdown-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line wall -clip off -close on -outline none
+line rock-edge -clip off -close on -outline none
   -791.677 1833.677
   1520.6592 1833.677
   1520.6592 1020.1086
@@ -183,7 +183,8 @@ endscrap
 scrap watershipdown-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 
 point -797.7555 -441.8484 map-connection 
-line wall -clip off -close on -outline none
+
+line rock-edge -clip off -close on -outline none
   -791.677 1833.677
   1520.6592 1833.677
   1520.6592 1020.1086

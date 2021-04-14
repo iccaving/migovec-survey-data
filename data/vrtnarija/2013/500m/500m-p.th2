@@ -34,7 +34,7 @@ endscrap
 
 scrap 500m-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line wall -clip off -close on -outline none
+line rock-edge -clip off -close on -outline none
   -2982.3004 4105.3126
   130.7648 4105.3126
   2903.83 4105.3126
@@ -71,7 +71,7 @@ endscrap
 
 scrap xanadu_bypass-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 
-line wall -clip off -close on -outline none
+line rock-edge -clip off -close on -outline none
   -2982.3004 4105.3126
   130.7648 4105.3126
   2903.83 4105.3126

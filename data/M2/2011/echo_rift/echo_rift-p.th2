@@ -4,7 +4,19 @@ encoding  utf-8
 
 scrap echo_rift-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 268.6266 482.8322 u:label_MY -align br -attr lvl 2 -attr text "Echo Rift"
+point 46.8876 267.4104 u:label_MY -align tr -attr lvl 1 -attr text "Deep M2" -scale xs
+line rock-edge -clip off -close on -outline none
+  6.4841 1381.2013
+  583.0033 1381.2013
+  899.5224 1381.2013
+  899.5224 808.5514
+  899.5224 235.9016
+  583.0033 235.9016
+  6.4841 235.9016
+  6.4841 808.5514
+endline
+
+point 268.627 482.832 u:label_MY -align br -attr lvl 2 -attr text "Echo Rift"
 line wall 
   138.9138 440.3052
   138.9138 440.3052 160.4578 436.2657 161.3555 435.8169
@@ -85,5 +97,24 @@ point 304.84 500.47 station -name 11
 point 309.88 526.14 station -name 12
 point 348.23 544.88 station -name 14
 point 358.54 561.42 station -name 15
+endscrap
+
+
+scrap deepM2-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
+
+point 899.1692 1385.9608 map-connection 
+point 348.23 544.88 station -name 14
+point 141.46 442.91 station -name tightrift
+line rock-edge -clip off -close on -outline none
+  6.4841 1381.2013
+  583.0033 1381.2013
+  899.5224 1381.2013
+  899.5224 808.5514
+  899.5224 235.9016
+  583.0033 235.9016
+  6.4841 235.9016
+  6.4841 808.5514
+endline
+
 endscrap
 
