@@ -4,18 +4,6 @@ encoding  utf-8
 
 scrap ave_maria-p1 -projection plan -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-point -1423.7815 4864.7373 u:label_MY -align br -attr lvl 1 -attr text "Pivnica Area" -scale xs
-line wall -clip off -close on -outline none
-  -1636.7738 5072.5015
-  1017.9933 5072.5015
-  3672.7604 5072.5015
-  3672.7604 1469.6031
-  3672.7604 -1825.2954
-  1017.9933 -1825.2954
-  -1636.7738 -1825.2954
-  -1636.7738 1469.6031
-endline
-
 line wall 
   537.0 595.0
   537.0 595.0 549.0 563.0 557.0 555.0

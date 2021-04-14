@@ -45,7 +45,6 @@ line rock-border -close on
   649.25 557.25
   650.5 555.75
   652.25 556.75
-  651.0 558.75
 endline
 
 line wall 
@@ -127,8 +126,8 @@ endscrap
 
 scrap lumos-p1 -projection plan -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
 
-point 464.2198 658.5493 u:label_MY -align br -attr text "Lumos Branch" -scale xs
-line wall -clip off -close on -outline none
+point 464.22 658.549 u:label_MY -align br -attr text "Lumos Branch" -scale xs
+line rock-edge -clip off -close on -outline none
   411.2018 701.7142
   849.4092 701.7142
   849.4092 380.7654
@@ -158,7 +157,6 @@ line rock-border -close on
   640.25 536.75
   640.5 535.0
   642.25 533.5
-  642.5 536.75
 endline
 
 line rock-border -close on
@@ -175,7 +173,6 @@ line rock-border -close on
   650.75 531.0
   650.25 529.5
   651.25 528.25
-  654.75 530.0
 endline
 
 line rock-border -close on
@@ -183,7 +180,6 @@ line rock-border -close on
   655.25 526.25
   655.5 524.25
   658.0 523.25
-  659.75 527.0
 endline
 
 line rock-border -close on
@@ -191,7 +187,6 @@ line rock-border -close on
   658.5 532.75
   657.75 530.75
   659.25 528.75
-  663.5 530.5
 endline
 
 line rock-border -close on
@@ -199,7 +194,6 @@ line rock-border -close on
   664.75 527.5
   664.25 525.75
   667.5 525.25
-  669.0 527.5
 endline
 
 line pit 
@@ -230,5 +224,22 @@ endline
 
 point 640.215 539.15 station -name 19
 point 670.605 521.638 station -name 18
+endscrap
+
+
+scrap lumos-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
+
+point 406.625 79.8282 map-connection 
+point 640.215 539.15 station -name 19
+point 739.395 617.442 station -name 5
+line rock-edge -clip off -close on -outline none
+  411.2018 701.7142
+  849.4092 701.7142
+  849.4092 380.7654
+  849.4092 79.8166
+  411.2018 79.8166
+  411.2018 380.7654
+endline
+
 endscrap
 
