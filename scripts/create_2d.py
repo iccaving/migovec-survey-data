@@ -155,10 +155,11 @@ endscrap"""
         coords2 = "{}.{}".format(line[2], line[3])
         if "{}.{}".format(line[2], line[3]) not in seen:
             seen.add(coords2)
-            th2_points.append(th2_point.format(
-                x=line[2], y=line[3], station=line[5]))
-            th2_names.append(th2_name.format(
-                x=line[2], y=line[3], station=line[5]))
+            if line[5] != None: 
+                th2_points.append(th2_point.format(
+                    x=line[2], y=line[3], station=line[5]))
+                th2_names.append(th2_name.format(
+                    x=line[2], y=line[3], station=line[5]))
 
     if not isfile(output_path):
         with open(output_path, "w+") as f:
