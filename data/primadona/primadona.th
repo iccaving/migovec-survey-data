@@ -505,5 +505,9 @@ survey primadona -title "Primadona"
 	join power_grab-1p@power_grab electric_dreams-1p@electric_dreams
 	join power_grab-e1@power_grab electric_dreams-e2@electric_dreams
 	
+	###______________ 2021_____________ ###
+	input "./2021/hades/hades.th"
+
+	equate 6@hades 0@street-wise_hercules
 endsurvey
 
