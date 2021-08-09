@@ -3,10 +3,44 @@
 survey brezno_planja_ent -title "Brezno pod Vrhom Planje"
     # pitch below Vrh Planja 
 
+    input brezno_planja_ent-p.th2
+
+    map m-all-p -projection plan
+        m1p
+        #break
+        m2p
+        m3p
+        m4p
+    endmap
+
+    map m1p -projection plan
+        brezno_planja_ent-1p
+    endmap
+
+    map m2p -projection plan
+        brezno_planja_ent-2p
+    endmap
+
+    map m3p -projection plan
+        brezno_planja_ent-3p
+    endmap
+
+    map m4p -projection plan
+        brezno_planja_ent-4p
+    endmap
+
   centerline
     date 2021.08.03 
-    team "Tanguy Racine"
-    team "Chloe Snowling"
+
+    team "Tanguy Racine" notes dog
+    team "Chloe Snowling" insts
+
+    explo-team "Tanguy Racine"
+    explo-team "Chloe Snowling"
+    explo-team "Jana Čarga"
+    explo-team "Dejan Rile"
+    explo-team "Zdenko Rejec"
+    explo-date 2021.08.01 
 
     units length meters
     units compass clino degrees
