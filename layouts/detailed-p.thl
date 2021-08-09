@@ -121,6 +121,15 @@ code metapost
     thclean (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle;
     thfill (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle withcolor(0.7,0,0);
 enddef;
+
+  def p_station_temporary_MY (expr pos)=
+    T:=identity shifted pos;
+    pickup PenD;
+    pair z;
+    z:=(0,.7u);
+    thclean (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle;
+    thdraw (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle withcolor(0.7,0,0);
+enddef;
     
     def p_airdraught_MY (expr P,R,S,A)=
       U:=(.2u,.2u);
@@ -733,6 +742,7 @@ enddef;
     initsymbol("l_contour_MY");
     initsymbol("l_u_dripline_MY");
     initsymbol("p_station_fixed_MY");
+    initsymbol("p_station_temporary_MY");
     
     # user defined
     initsymbol("l_u_texture_MY");
@@ -757,9 +767,7 @@ endcode
 #_____________________________________________________________|
 
  ## survey lines and stations
- symbol-assign point station AUT
  symbol-assign line survey MY
- symbol-assign point station MY
  symbol-hide point passage-height
  symbol-colour point station-name [70 0 0]
  
@@ -808,6 +816,7 @@ endcode
  symbol-assign point breakdown-choke AUT
  symbol-assign point air-draught MY
   symbol-assign point station:fixed MY
+  symbol-assign point station:temporary MY
 
     
 
