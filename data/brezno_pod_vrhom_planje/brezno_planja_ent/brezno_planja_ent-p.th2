@@ -182,9 +182,10 @@ endline
 point 1693.15 476.58 station -name 1
 endscrap
 
+
 scrap brezno_planja_ent-2p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 1425.9093 621.5074 label -align tl -scale xs -text "<bf>p13"
+point 1425.91 621.507 label -align tl -scale xs -text "<bf>p13"
 point 1567.66 607.421 gradient -orientation 254.03237870139696
 point 1550.1 620.5 station-name -align t -scale xs -text 13
 point 1632.1 590.5 station-name -align r -scale xs -text 12
@@ -1793,7 +1794,7 @@ area u:smallblocks_MY -attr scale 1
   brezno_planja_ent-2p_u_smallblocks_MY_11
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_1 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_12 -visibility off
   1150.4453 425.5027
   1148.5 418.1121
   1159.0039 406.8289
@@ -1838,20 +1839,20 @@ line border -close on -id brezno_planja_ent-2p_blocks_1 -visibility off
   1150.4453 425.5027
 endline
 
-line border -close on -id brezno_planja_ent-2p_blocks_2 -visibility off
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_12
+endarea
+
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_13 -visibility off
   1220.9785 376.9012
   1220.9785 376.9012
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_1
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_13
 endarea
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_2
-endarea
-
-line border -close on -id brezno_planja_ent-2p_blocks_3 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_14 -visibility off
   1262.1387 384.5691
   1262.076 384.5592 1262.0119 384.5599 1261.9492 384.5496
   1256.045 383.5812 1250.1262 382.5799 1244.2812 381.2957
@@ -1937,11 +1938,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_3 -visibility off
   1262.1387 384.5691
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_3
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_14
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_4 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_15 -visibility off
   1261.5508 344.1004
   1258.5642 344.2074 1255.5741 344.1182 1252.5898 343.9598
   1249.4949 343.7955 1246.3735 343.8142 1243.2812 343.6551
@@ -2015,11 +2016,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_4 -visibility off
   1267.942 343.4287 1264.7616 343.9853 1261.5508 344.1004
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_4
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_15
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_5 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_16 -visibility off
   1278.4492 318.9109
   1275.7666 318.7219 1273.0954 318.3659 1270.4707 317.7801
   1267.6717 317.1553 1265.0151 316.0117 1262.25 315.2508
@@ -2076,11 +2077,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_5 -visibility off
   1284.7819 318.9612 1281.6091 319.1336 1278.4492 318.9109
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_5
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_16
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_6 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_17 -visibility off
   1356.3926 219.3113
   1356.1836 220.4656
   1355.8397 222.2589 1355.4857 224.052 1354.9902 225.8094
@@ -2110,11 +2111,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_6 -visibility off
   1356.3926 219.3113
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_6
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_17
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_7 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_18 -visibility off
   1332.9922 370.7606
   1339.6094 364.2508
   1346.5293 359.2098
@@ -2186,11 +2187,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_7 -visibility off
   1332.9922 370.7606
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_7
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_18
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_8 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_19 -visibility off
   1407.4785 353.5125
   1407.7765 353.2253 1408.1098 352.9736 1408.3691 352.6492
   1409.1661 351.6527 1409.8176 350.5573 1410.3789 349.4109
@@ -2266,11 +2267,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_8 -visibility off
   1407.4785 353.5125
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_8
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_19
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_9 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_20 -visibility off
   1657.2383 205.5516
   1655.8867 204.8523
   1654.6534 204.2331 1653.416 203.6112 1652.1191 203.1395
@@ -2293,11 +2294,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_9 -visibility off
   1657.2383 205.5516
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_9
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_20
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_10 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_21 -visibility off
   1500.8301 318.6356
   1509.8926 304.782
   1521.9395 294.8602
@@ -2342,11 +2343,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_10 -visibility off
   1500.8301 318.6356
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_10
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_21
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_11 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_22 -visibility off
   1599.1895 283.2586
   1602.5996 279.5106
   1613.4902 269.0906
@@ -2428,11 +2429,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_11 -visibility off
   1599.1895 283.2586
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_11
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_22
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_12 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_23 -visibility off
   1633.5781 303.45
   1634.4062 302.7273
   1636.6411 300.7553 1638.8774 298.7827 1640.9961 296.6863
@@ -2471,11 +2472,11 @@ line border -close on -id brezno_planja_ent-2p_blocks_12 -visibility off
   1633.5781 303.45
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_12
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_23
 endarea
 
-line border -close on -id brezno_planja_ent-2p_blocks_13 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_24 -visibility off
   1694.0762 358.8484
   1700.1992 349.4402
   1704.7109 342.5906
@@ -2511,14 +2512,80 @@ line border -close on -id brezno_planja_ent-2p_blocks_13 -visibility off
   1694.0762 358.8484
 endline
 
-area u:smallblocks_MY -attr scale 0.9 
-  brezno_planja_ent-2p_blocks_13
+area u:smallblocks_MY -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_MY_24
 endarea
 
 endscrap
 
 
 scrap brezno_planja_ent-3p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line rock-border -close on
+  736.6227 620.6411
+  733.9928 617.6167
+  731.363 614.5924
+  731.363 614.5924 731.4287 613.146 731.5273 611.5352
+  731.6259 609.9244 731.7574 608.1492 731.8889 607.4918
+  732.0204 606.8343 733.9271 604.9934 735.8008 603.3169
+  737.6746 601.6404 739.5155 600.1282 739.5155 600.1282
+  742.1454 603.6785
+  744.7752 607.2288
+  744.1178 610.6476
+  743.4603 614.0664
+  742.4084 616.0388
+  741.3564 618.0112
+  738.9896 619.3261
+endline
+
+line rock-border -close on
+  745.0382 656.9331
+  745.0382 656.9331 743.1973 656.8673 741.2249 656.6372
+  739.2525 656.4071 737.1486 656.0126 736.6227 655.3552
+  736.0967 654.6977 735.505 654.106 735.0448 653.5143
+  734.5845 652.9225 734.2558 652.3308 734.2558 651.6734
+  734.2558 651.0159 734.2558 649.7667 734.5845 648.5833
+  734.9133 647.3998 735.5707 646.2822 736.8857 645.8877
+  738.2006 645.4932 741.1592 644.77 743.789 644.1454
+  746.4189 643.5208 748.72 642.9948 748.72 642.9948
+  748.983 645.7562
+  749.246 648.5175
+  747.1421 652.7253
+endline
+
+line rock-border -close on
+  782.3822 580.6672
+  781.8562 580.7987 779.6866 582.1794 777.6484 583.5272
+  775.6103 584.875 773.7036 586.1899 773.7036 586.1899
+  773.7036 586.1899 771.534 586.3872 769.2329 586.4858
+  766.9318 586.5844 764.4991 586.5844 763.9732 586.1899
+  763.4472 585.7955 763.0527 585.2037 762.7897 584.7106
+  762.5268 584.2175 762.3953 583.8231 762.3953 583.8231
+  762.3953 583.8231 763.4472 581.5877 764.6635 579.3852
+  765.8798 577.1827 767.2605 575.0131 767.918 575.1446
+  768.5754 575.276 770.5478 575.4075 772.3558 575.5062
+  774.1639 575.6048 775.8075 575.6705 775.8075 575.6705
+  778.8319 575.9335
+  781.8562 576.1965
+  782.1192 578.4319
+endline
+
+line rock-border -close on
+  855.2292 569.8848
+  848.5231 568.5699
+  841.8169 567.255
+  841.8169 567.255 841.4882 566.992 841.1266 566.5318
+  840.765 566.0715 840.3705 565.4141 840.239 564.6251
+  840.1075 563.8362 841.028 561.7323 841.9813 559.8256
+  842.9346 557.919 843.9208 556.2096 843.9208 556.2096
+  851.4159 558.0505
+  858.911 559.8914
+  858.911 559.8914 859.8314 560.4831 860.719 561.2721
+  861.6066 562.061 862.4613 563.0472 862.3298 563.8362
+  862.1983 564.6251 861.8696 565.9401 861.5737 567.0577
+  861.2779 568.1754 861.0149 569.0959 861.0149 569.0959
+  858.122 569.4904
+endline
 
 point 1516.21 508.458 gradient -orientation 164.52207456743628
 point 1460.24 533.628 gradient -orientation 128.34504846382487
@@ -2533,7 +2600,7 @@ line contour
 endline
 
 point 1292.13 625.164 label -align t -scale xs -text 03.08.2021
-point 932.372 603.106 station-name -align tr -scale xs -text 27
+point 926.372 601.106 station-name -align tr -scale xs -text 27
 point 916.372 663.106 station-name -align tr -scale xs -text 26
 line wall:presumed -outline none
   963.1953 583.186
@@ -2608,29 +2675,13 @@ point 514.168 864.658 gradient -orientation 168.21101099368016
 point 400.005 889.747 gradient -orientation 279.3444858361338
 point 447.844 885.218 gradient -orientation 269.7959000399611
 line wall:invisible -close on -outline in
-  278.9326 900.6933
+  282.3514 898.3264
   291.3883 885.5955
-  312.5253 880.6887
-  318.1869 872.0074
-  323.8486 859.1742
-  318.5644 849.3606
-  312.9027 835.7726
-  309.1282 827.0913
-  299.6921 828.6011
-  292.5206 832.753
-  286.104 832.3756
-  280.8198 828.6011
-  253.2662 818.0326
-  233.639 811.2386
-  207.2178 821.4296
-  205.3306 828.9786
-  191.7425 828.9786
-  178.5319 837.2824
-  165.3213 855.0223
-  165.3213 867.4781
-  196.4552 885.8171
-  213.3433 895.7649
-  236.1661 907.4163
+  291.3883 885.5955 283.7811 883.2212 279.9151 882.2666
+  272.5893 880.4578 265.2531 878.3983 257.737 877.7303
+  253.5766 877.3606 245.2104 878.0369 245.2104 878.0369
+  232.3554 885.154 244.5459 890.2529 241.0135 897.7827
+  175.4537 814.1654 282.3514 898.3264 282.3514 898.3264
 endline
 
 line pit -clip off
@@ -2697,7 +2748,7 @@ line u:texture_MY
   1423.0151 527.0182
 endline
 
-point 1482.46 393.827 continuation -align b -scale xs
+point 1482.46 393.827 continuation -align b -scale s
 point 1479.12 644.686 dig -align tl -scale xs
 line rock-border -close on
   1485.0797 471.7912
@@ -2905,7 +2956,7 @@ line wall
   280.7143 923.5399 275.2101 916.0342 274.7097 914.0327
   274.2094 912.0311 267.7044 907.5277 267.7044 907.5277
   267.7044 907.5277 259.6983 907.0273 253.1933 907.0273
-  246.6883 907.0273 233.6784 912.5315 233.6784 912.5315
+  246.6883 907.0273 234.9801 913.8332 234.9801 913.8332
 endline
 
 line wall -close on -outline in
@@ -3020,8 +3071,8 @@ line wall
 endline
 
 line wall 
-  164.1253 873.5017
-  164.1253 873.5017 160.1223 857.4895 163.6249 853.4864
+  164.8691 868.1089
+  164.8691 868.1089 160.1223 857.4895 163.6249 853.4864
   167.1276 849.4834 174.6333 837.4742 175.1337 834.4719
   175.6341 831.4696 192.6471 824.4643 196.6501 825.465
   200.6532 826.4658 202.6547 825.9654 203.6555 821.9624
@@ -3403,9 +3454,8 @@ line floor-step
   1186.41 573.45
 endline
 
-line floor-step 
-  924.6409 603.3245
-  924.6409 603.3245 915.6174 606.7039 911.3451 605.3462
+line floor-step -close on
+  911.3451 605.3462
   904.0476 603.0271 897.9305 596.7298 891.93 593.12
   889.8344 591.8593 890.8432 588.2791 891.02 585.84
   891.2094 583.2259 892.6193 580.8346 893.11 578.26
@@ -3433,6 +3483,7 @@ line floor-step
   938.308 584.1009 938.4407 586.8184 937.69 589.34
   936.9259 591.9065 935.5103 594.303 933.82 596.38
   932.0292 598.5805 927.35 601.91 927.35 601.91
+  927.35 601.91 915.6174 606.7039 911.3451 605.3462
 endline
 
 line border -close on -id brezno_planja_ent-3p_clay_1 -visibility off
@@ -3954,8 +4005,15 @@ endscrap
 
 scrap brezno_planja_ent-4p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
+line wall:invisible 
+  164.892 868.1105
+  236.1611 907.2954
+  279.1592 900.8522
+  289.5471 900.4577
+endline
+
 point 466.353 1043.23 label -align t -scale s -text "<bf>p10"
-point 276.215 904.183 station-name -align bl -scale xs -text 33
+point 250.215 918.183 station-name -align bl -scale xs -text 33
 point 238.215 866.183 station-name -align l -scale xs -text 34
 point 389.549 1007.94 station-name -align tr -scale xs -text 35
 line floor-step 
@@ -4037,18 +4095,14 @@ line wall
   88.9263 977.6735 103.3059 949.2928 104.0627 947.0223
   104.8196 944.7518 129.7946 907.6677 135.8492 906.154
   141.9037 904.6404 154.0415 906.8783 161.9595 903.1267
-  167.038 900.7205 172.9333 897.4506 174.0686 891.396
-  175.2038 885.3415 175.2038 879.6653 172.1765 875.8812
-  169.1492 872.0971 163.8515 865.2857 164.2299 861.8801
-  164.3561 860.7448 164.6083 858.4744 164.6083 858.4744
+  167.038 900.7205 173.1792 896.945 174.0686 891.396
+  174.4944 888.7394 171.353 886.7324 170.3169 884.2493
+  169.2328 881.6512 168.6758 878.8621 167.7631 876.1989
+  166.8354 873.492 164.7943 868.1443 164.7943 868.1443
 endline
 
 line wall 
-  326.9462 856.2039
-  326.9462 856.2039 324.6663 866.21 322.7837 870.9619
-  321.4745 874.2663 320.5132 876.2596 317.8644 880.4221
-  315.2155 884.5846 300.4575 889.1256 295.5382 891.7744
-  290.6189 894.4233 288.3484 896.6938 289.4836 900.0995
+  289.4836 900.0995
   290.6189 903.5051 293.2677 906.154 296.295 907.2892
   299.3223 908.4245 315.5939 907.6677 322.7837 908.8029
   329.9735 909.9381 336.0281 908.4245 343.2178 914.1006
@@ -4063,24 +4117,24 @@ endline
 
 line wall -close on -outline in
   250.1838 915.1254
-  252.7727 916.6349 256.3365 917.6782 257.4083 920.4769
-  258.841 924.2176 256.8732 929.3069 255.0002 932.2502
-  253.1271 935.1936 251.2541 946.4318 251.5217 948.5724
-  251.7893 950.713 254.7813 957.9575 252.0568 961.1485
-  250.5411 962.9238 247.4312 961.8319 245.0999 961.9512
-  238.0623 962.3112 227.1722 960.8809 223.9613 961.6836
-  220.7504 962.4864 202.5552 965.4297 199.3443 965.4297
-  196.1334 965.4297 186.3304 964.4724 180.0788 962.7539
-  176.5329 961.7792 173.1118 960.2834 169.9109 958.4727
-  167.411 957.0586 163.7567 955.2618 162.9539 953.3888
-  162.1512 951.5157 156.6275 948.7433 157.3348 945.6291
-  158.1216 942.1653 163.4891 942.1506 166.7 940.5451
-  169.9109 938.9396 177.1355 933.053 179.2761 929.8421
-  181.4167 926.6311 184.6276 916.4632 191.5846 914.5902
-  198.5416 912.7172 210.0474 914.8578 212.188 913.7875
-  214.3286 912.7172 217.5395 912.4496 224.2289 914.3226
-  230.9183 916.1957 238.4181 911.7381 245.3674 912.9848
-  247.0967 913.295 248.6661 914.2404 250.1838 915.1254
+  248.6661 914.2404 247.0967 913.295 245.3674 912.9848
+  238.4181 911.7381 230.9183 916.1957 224.2289 914.3226
+  217.5395 912.4496 214.3286 912.7172 212.188 913.7875
+  210.0474 914.8578 198.5416 912.7172 191.5846 914.5902
+  184.6276 916.4632 181.4167 926.6311 179.2761 929.8421
+  177.1355 933.053 169.9109 938.9396 166.7 940.5451
+  163.4891 942.1506 158.1216 942.1653 157.3348 945.6291
+  156.6275 948.7433 162.1512 951.5157 162.9539 953.3888
+  163.7567 955.2618 167.411 957.0586 169.9109 958.4727
+  173.1118 960.2834 176.5329 961.7792 180.0788 962.7539
+  186.3304 964.4724 196.1334 965.4297 199.3443 965.4297
+  202.5552 965.4297 220.7504 962.4864 223.9613 961.6836
+  227.1722 960.8809 238.0623 962.3112 245.0999 961.9512
+  247.4312 961.8319 250.5411 962.9238 252.0568 961.1485
+  254.7813 957.9575 251.7893 950.713 251.5217 948.5724
+  251.2541 946.4318 253.1271 935.1936 255.0002 932.2502
+  256.8732 929.3069 258.841 924.2176 257.4083 920.4769
+  256.3365 917.6782 252.7727 916.6349 250.1838 915.1254
 endline
 
 line pit 
