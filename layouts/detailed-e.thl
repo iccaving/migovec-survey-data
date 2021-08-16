@@ -284,6 +284,31 @@ enddef;
       pickup PenA;
       thdraw P;
     enddef;
+
+    def l_wall_debris_MY (expr P)=
+      T:=identity;
+      cas := 0;
+      dlzka := arclength P;
+      if dlzka > 0:
+      mojkrok:=adjust_step(dlzka, 0.2u);
+      pickup PenC;
+      forever:
+      t_0 := arctime(cas) of P;
+      t_end := arctime(cas+mojkrok) of P;
+      t1 := arctime (cas + (3+0.5*normaldeviate)/10*mojkrok) of P;
+      t2 := arctime (cas + (8-0.5*normaldeviate)/10*mojkrok) of P;
+      t3 := arctime (cas + (6+0.5*normaldeviate)/10*mojkrok) of P;
+      sk := 1-.25*normaldeviate;
+      q := (point t_0 of P + .02*sk*u * unitvector(thdir(P,t_0))) .. ((point t1 of P) - .06*sk*u * unitvector(thdir(P,t1) rotated (88+normaldeviate*2))) ..
+      ((point t2 of P) + .03*sk*u * unitvector(thdir(P,t2) rotated (-20+normaldeviate*2))) .. ((point t3 of P) - .07*sk*u *unitvector(thdir(P,t3) rotated (-20+normaldeviate*2))) .. cycle;
+      
+      thclean q;
+      thfill q withcolor(0.7,0.3,0.2);
+      cas := cas + mojkrok;
+      exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
+      endfor;
+      fi;
+    enddef;
     
     # ICE
     def l_wall_ice_MY (expr P) = 
@@ -585,6 +610,7 @@ enddef;
     initsymbol("l_wall_blocks_MY");
     initsymbol("l_wall_ice_MY");
     initsymbol("l_wall_flowstone_MY");
+    initsymbol("l_wall_debris_MY");
     initsymbol("l_wall_clay_MY");
     
     # others
@@ -617,6 +643,7 @@ endcode
  ## survey lines and stations
  symbol-assign point station AUT
  symbol-assign line survey MY
+ symbol-assign line wall:debris MY
  symbol-assign point station MY
  symbol-assign point water-flow MY
  symbol-assign point station:fixed MY
