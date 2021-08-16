@@ -74,6 +74,10 @@ layout local-e
 	#map-image -5 110  ne ../_outputs/brezno_pod_vrhom_planje_plan.pdf
 endlayout
 
+
+# select a relevant map definition for plan view
+select m-all-e@brezno_pod_vrhom_planje
+
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
 export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e

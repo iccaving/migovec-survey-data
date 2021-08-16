@@ -29,6 +29,26 @@ survey brezno_planja_ent -title "Brezno pod Vrhom Planje"
         brezno_planja_ent-4p
     endmap
 
+     input brezno_planja_ent-s.th2
+
+    map m-all-e -projection extended
+        m1s
+        m2s
+        m3s
+    endmap
+
+    map m1s -projection extended
+        brezno_planja_ent-1s  # entrance chamber and NE extension
+    endmap
+
+    map m2s -projection extended
+        brezno_planja_ent-2s   # opened up pitch and continuing muddy tube
+    endmap
+
+    map m3s -projection extended
+        brezno_planja_ent-3s  # south chamber
+    endmap
+
   centerline
     date 2021.08.03 
 
