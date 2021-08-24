@@ -12,7 +12,7 @@ encoding  utf-8
 # select a source data file.
 source "../../data/system_migovec.th"
 
-#export model -o "../../outputs/system_migovec.3d"
+export model -o "../../outputs/system_migovec.3d"
 #export map -o "../../outputs/GIS/system_migovec" -fmt esri
 #----------------------------------------------------------------------------------|
 # input the layout files

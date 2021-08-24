@@ -507,7 +507,9 @@ survey primadona -title "Primadona"
 	
 	###______________ 2021_____________ ###
 	input "./2021/hades/hades.th"
+	input "./2021/glavobol/glavobol.th"
 
 	equate 6@hades 0@street-wise_hercules
+	equate 1.5@glavobol 1@ma_je_vlazna
 endsurvey
 

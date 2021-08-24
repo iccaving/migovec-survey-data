@@ -49,7 +49,7 @@ layout plan
 	
 endlayout
 
-select m-galerija_branch-p@primadona.primadona_ubend_monatip.system_migovec  #-map-level 3
+select m-all-p@primadona.primadona_ubend_monatip.system_migovec  #-map-level 3
 
 #layout local
 #	scale 1 200
@@ -79,15 +79,15 @@ layout ee
 	}
 endlayout
 language sl # slo not yet supported
-#export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
 
 language en
-#export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_ENG.pdf -layout ee
+export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_ENG.pdf -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-#export model -o ../../outputs/primadona_ubend_monatip.3d -fmt survex
+export model -o ../../outputs/primadona_ubend_monatip.3d -fmt survex
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-#export model -o ../../outputs/primadona_ubend_monatip.lox
+export model -o ../../outputs/primadona_ubend_monatip.lox

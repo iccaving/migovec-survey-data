@@ -9,9 +9,9 @@ encoding  utf-8
 #----------------------------------------------------------------------------------|
 
 
-#----------------------------------------------------------------------------------|
+#-----------é-----------------------------------------------------------------------|
 # select a source data file.
-source "../brezno_pod_vrhom_planje.th"
+source "../planja_jama.th"
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
@@ -48,10 +48,10 @@ layout local
 
 	code tex-map
 		\def\maplayout{
-		\legendbox{0}{-5}{SW}{\size[26]\the\cavename}
-		%\legendbox{-10}{130}{NW}{\size[10]\the\comment}
-		\legendbox{15}{20}{N}{\scalebar}
-		\legendbox{15}{25}{S}{\northarrow}
+		\legendbox{-10}{135}{SW}{\size[26]\the\cavename}
+		\legendbox{-10}{130}{NW}{\size[10]\the\comment}
+		\legendbox{-15}{20}{N}{\scalebar}
+		\legendbox{-15}{25}{S}{\northarrow}
 	}
 	endcode
 endlayout

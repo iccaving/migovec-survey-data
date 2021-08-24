@@ -1,7 +1,9 @@
 survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"
 	
 	input "./brezno_planja_ent/brezno_planja_ent.th"
+	input "./okna/okna.th"
 
+	equate 10@okna 35@brezno_planja_ent
 
 	map m-all-p -projection plan
 		m-all-p@brezno_planja_ent

@@ -1,0 +1,12 @@
+survey vrh_planja
+	input planja_jama/planja_jama.th
+	input brezno_pod_vrhom_planje/brezno_pod_vrhom_planje.th
+
+	map m-all-p -projection plan
+		m-all-p@brezno_pod_vrhom_planje
+		m-all-p@planja_jama
+	endmap
+
+	#equate 0@brezno_planja_ent.brezno_pod_vrhom_planje S8@planja_jama
+
+endsurvey

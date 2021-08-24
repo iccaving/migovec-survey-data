@@ -9,14 +9,14 @@ encoding  utf-8
 #----------------------------------------------------------------------------------|
 
 
-#----------------------------------------------------------------------------------|
+#-----------é-----------------------------------------------------------------------|
 # select a source data file.
-source "../brezno_pod_vrhom_planje.th"
+source "../planja_jama.th"
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
-export model -o ../../../outputs/brezno_pod_vrhom_planje.lox
-export model -o ../../../outputs/brezno_pod_vrhom_planje.3d
+export model -o ../../../outputs/planja_jama.lox
+export model -o ../../../outputs/planja_jama.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
@@ -26,13 +26,13 @@ input ../../../layouts/detailed-e.thl
 
 #----------------------------------------------------------------------------------|
 # select a relevant map (which contains commands for offsets of overlying bits)
-#select m-all-e@brezno_pod_vrhom_planje
+#select m-all-e@planja_jama
 
 
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
-select m-all-p@brezno_pod_vrhom_planje
+select m-all-p@planja_jama
 
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
@@ -48,17 +48,17 @@ layout local
 
 	code tex-map
 		\def\maplayout{
-		\legendbox{0}{-5}{SW}{\size[26]\the\cavename}
-		%\legendbox{-10}{130}{NW}{\size[10]\the\comment}
-		\legendbox{15}{20}{N}{\scalebar}
-		\legendbox{15}{25}{S}{\northarrow}
+		\legendbox{-10}{135}{SW}{\size[26]\the\cavename}
+		\legendbox{-10}{130}{NW}{\size[10]\the\comment}
+		\legendbox{-15}{20}{N}{\scalebar}
+		\legendbox{-15}{25}{S}{\northarrow}
 	}
 	endcode
 endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
-export map -o ../../../outputs/brezno_pod_vrhom_planje_plan.pdf -projection plan -layout local
+export map -o ../../../outputs/planja_jama_plan.pdf -projection plan -layout local
 
 
 #----------------------------------------------------------------------------------|
@@ -71,13 +71,13 @@ layout local-e
 	symbol-show point label
 	symbol-show area snow
 	scale 1 400
-	#map-image -5 110  ne ../_outputs/brezno_pod_vrhom_planje_plan.pdf
+	#map-image -5 110  ne ../_outputs/planja_jama_plan.pdf
 endlayout
 
 
 # select a relevant map definition for plan view
-select m-all-e@brezno_pod_vrhom_planje
+select m-all-e@planja_jama
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e
+export map -o ../../../outputs/planja_jama_ee.pdf -projection extended -layout local-e

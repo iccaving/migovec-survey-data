@@ -1,0 +1,8 @@
+source ../../data/vrh_planja.th
+
+select m-all-p@vrh_planja
+
+input ../../layouts/detailed-p.thl
+
+export map -projection plan -o ../../outputs/vrh_planja.pdf -layout detailed-p
+export model -o ../../outputs/vrh_planja.3d
