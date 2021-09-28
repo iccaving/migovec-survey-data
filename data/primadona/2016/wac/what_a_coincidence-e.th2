@@ -99,7 +99,7 @@ endscrap
 
 scrap what_a_coincidence-e3 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
-point 2404.9722 -1487.9558 u:label_MY -attr lvl 1 -attr text "What a Coincidence!" -align b
+point 2404.9722 -1487.9558 label -text "What a Coincidence!" -align b
 
 line wall -subtype blocks
   -2127.5023 -878.5637

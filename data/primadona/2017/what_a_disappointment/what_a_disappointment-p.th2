@@ -75,7 +75,7 @@ line wall
   smooth off
 endline
 
-line u:label_MY -attr lvl 1 -attr text "What a Disappointment"
+line label -text "What a Disappointment"
   388.5 547.0
   399.5 514.5 441.0 449.0 465.5 417.0
 endline

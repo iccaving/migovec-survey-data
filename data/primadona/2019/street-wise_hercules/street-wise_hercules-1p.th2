@@ -244,7 +244,7 @@ endline
 
 point 107.05 1824.98 station -name 3
 point 78.84 1882.07 station -name 2
-line u:label_MY -attr lvl 1 -attr text "Street-wise Hercules" -scale xl
+line label -text "Street-wise Hercules" -scale xl
   182.2 1437.2
   182.2 1437.2 338.2 1973.2 306.2 2429.2
 endline

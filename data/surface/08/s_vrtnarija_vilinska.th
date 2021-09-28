@@ -1,0 +1,27 @@
+#GW/Vilinska surface survey
+
+survey s_vrtnarija_vilinska
+
+	centreline
+		date 2008.07.28
+		team "Dan Greenwald"
+		team "James Hooper"
+
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		flags surface
+		2	GW	4.49	267	-22
+		3	2	10.25	268	+03
+		3	4	28.28	021	-16
+		4	5	8.44	309	-25
+		6	5	12.08	203	+04
+		6	7	20.78	113	-22
+		7	VIL	15.28	204	+11
+		flags not surface
+	endcentreline
+
+#.1 is PSS bolt hole at entrance of gardeners' world
+#.5 is half bolt hole at top of higher entrance (?) of vilinska jama
+#.8 is PSS spit at lower entrance (?) of vilinska jama
+endsurvey

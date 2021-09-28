@@ -15,8 +15,8 @@ source "../planja_jama.th"
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
-export model -o ../../../outputs/planja_jama.lox
-export model -o ../../../outputs/planja_jama.3d
+#export model -o ../../../outputs/planja_jama.lox
+#export model -o ../../../outputs/planja_jama.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
@@ -45,10 +45,12 @@ layout local
 	symbol-show point gradient
 
 	map-comment "Vrh Planja<br>Cadastral Number: XXXX<br>Length: XX m, Depth: XX m<br>Entrance elevation: 1868 m<br>Coordinates (lat-long):  46.264686\°N / 13.752099\°E"
-
+ 
 	code tex-map
 		\def\maplayout{
-		\legendbox{-10}{135}{SW}{\size[26]\the\cavename}
+		\legendbox{-10}{145}{SW}{\size[26]\the\cavename}
+		\legendbox{-10}{140}{NW}{\size[10] \the\cavelength}
+		\legendbox{-10}{135}{NW}{\size[10]\the\cavedepth}
 		\legendbox{-10}{130}{NW}{\size[10]\the\comment}
 		\legendbox{-15}{20}{N}{\scalebar}
 		\legendbox{-15}{25}{S}{\northarrow}
@@ -80,4 +82,4 @@ select m-all-e@planja_jama
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../../../outputs/planja_jama_ee.pdf -projection extended -layout local-e
+export map -o ../../../outputs/planja_jama_ee.pdf -projection extended -layout local-e 

@@ -111,7 +111,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 33@leprachaun 1@highway32
 	equate 31@leprachaun 12@cascade
 	equate 18@leprachaun 26@weepeople
-	equate 1@gold 24@weepeople
+	equate 1@gold 10@cow
 	equate 2@doublethink 36@cascade
 	equate 15@doublethink 8@thirdthoughts
 	equate 17@mushroom 27@cascade
@@ -154,7 +154,7 @@ survey vrtnarija -title "Vrtnarija"
 	input "./2004/cow/cow.th"
 	
 	equate 2@nitro 16@gold
-	equate 14@mad_cow 24@weepeople
+	equate 14@mad_cow 10@cow
 	equate 11@balamory 15@doublethink
 	equate 17@smash 1@potato
 	equate 29@miles 1@smash
@@ -166,7 +166,8 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@envy 3@greed
 	equate 6@brownriceinlet 4@cascade
 	equate 26@soda 15@mushroom
-	equate 10@cow 24@weepeople
+	#equate 10@cow 24@weepeople
+	equate 1@nevermore 9@gold
 	equate 9@nitro 25@potato
 	equate 10@nevermore 24@weepeople
 	equate 10@blind 9@doublethink
@@ -309,7 +310,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 4@belowzimmer 3b@friendship
 	equate 11@eggsplosive 7@belowzimmer
 	equate 12@republica 3@cow
-	equate 12@republica 7@mad_cow
+	#equate 12@republica 7@mad_cow
 	equate 14@walk_the_line 1@wet_hammer
 	equate 14@walk_the_line_b 1@walk_the_line
 	equate 10@free_amalgamation 1@happy_monday
@@ -320,7 +321,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@mirage_canyon 11@wet_hammer
 	equate 6@mirage_canyon 1@dark_tranquillity
 	equate 15@metal_aven 6@mudslump
-	equate 7@mad_cow 12@republica # changed from 11@mad_cow....
+	#equate 7@mad_cow 12@republica # changed from 11@mad_cow....
 	equate 3@fools_road 5@fallsrd
 	
 	join mirage_canyon-1p@mirage_canyon wet_hammer-1p@wet_hammer
@@ -601,7 +602,7 @@ survey vrtnarija -title "Vrtnarija"
 	equate 1@watershipdown 11@watershipup
 	equate 17@watershipdown 1@winterjourney
 	equate 1@perfidia 15@republica
-	equate 18@perfidia 7@mad_cow
+	equate 18@perfidia 3@cow
 	equate 1@ride_the_lightning 11@worm
 	equate 30@yorkshire 1@2ndtimelucky
 	

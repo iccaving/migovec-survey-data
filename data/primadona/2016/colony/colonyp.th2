@@ -91,9 +91,9 @@ line rock-border -close on
   172.0 -80.0
 endline
 
-point 153.0 -307.0 u:label_MY -attr lvl 1 -attr text "Colony"
+point 153.0 -307.0 label -text "Colony"
 
-point 274.0 132.0 u:label_MY -attr lvl 1 -attr text "The Folly"
+point 274.0 132.0 label -text "The Folly"
 
 line pit -outline out
   114.0 126.0

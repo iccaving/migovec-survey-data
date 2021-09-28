@@ -70,7 +70,7 @@ endscrap
 
 scrap pov-2p -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
-point 437.75 737.75 u:label_MY -attr lvl 1 -attr text Mlinotest -align r
+point 437.75 737.75 label -text Mlinotest -align r
 area water
   l37-286-218
 endarea
@@ -300,7 +300,7 @@ line wall
   425.0 538.25
 endline
 
-line u:label_MY -attr lvl 1 -attr text Povezava
+line label -text Povezava
   365.25 482.75
   365.25 482.75 380.75 533.0 401.25 573.25
 endline

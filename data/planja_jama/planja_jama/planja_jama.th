@@ -15,9 +15,11 @@ survey planja_jama -title "planja jama"
     team "Tanguy Racine"
     team "Chloe Snowling"
 
-    cs long-lat
+    cs epgs:3794
     #fix 0 13.752303 46.264940 1889 
     
+    #fix 0 404174 125263 1868 
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

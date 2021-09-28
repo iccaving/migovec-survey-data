@@ -3,6 +3,12 @@
 survey hades -title "hades"
     # downward continuation of Street Wise Hercules 
   
+  input "hades-e.th2"
+  input "hades-p.th2"
+
+  map m-all-e -projection extended
+    hades-1s
+  endmap
   centerline
     date 2021.07.30 
     

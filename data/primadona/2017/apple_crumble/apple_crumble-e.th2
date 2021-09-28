@@ -20,7 +20,7 @@ line wall:invisible
   1009.8554 349.5654
 endline
 
-point 1015.9415 585.2601 u:label_MY -attr lvl 1 -attr text "Apple Crumble" -align tl
+point 1015.9415 585.2601 label -text "Apple Crumble" -align tl
 line wall -subtype blocks
   1009.8554 349.5654
   1011.5372 352.2563 1030.0684 360.8772 1035.8142 369.2499

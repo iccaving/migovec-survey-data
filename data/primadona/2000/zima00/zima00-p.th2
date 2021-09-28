@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 
-line u:label_MY -attr lvl 1 -attr text "Brezno TTT" -scale xl
+line label -text "Brezno TTT" -scale xl
   194.25 325.25
   194.25 325.25 295.5 387.0 346.0 490.0
   368.92 536.74 364.0 550.5 364.0 550.5
@@ -592,7 +592,7 @@ line wall
   smooth off
 endline
 
-line u:label_MY -attr lvl 1 -attr text "The Manger"
+line label -text "The Manger"
   -183.75 394.25
   -183.75 394.25 -173.75 353.25 -131.75 332.25
   smooth off
@@ -673,7 +673,7 @@ line floor-step
   smooth off
 endline
 
-point 62.5 406.75 u:label_MY -attr lvl 1 -attr text "P4" -scale s -align br
+point 62.5 406.75 label -text "P4" -scale s -align br
 
 line pit
   -22.75 392.25

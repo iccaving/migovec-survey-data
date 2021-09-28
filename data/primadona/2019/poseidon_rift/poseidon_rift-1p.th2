@@ -875,7 +875,7 @@ line wall
   252.25 2247.89 257.38 2234.07 260.8 2225.64
 endline
 
-#point 00.0 2580.0 u:label_MY -attr lvl 1 -attr text "Poseidon<br>Rift" -align tl -scale xl
+#point 00.0 2580.0 label -text "Poseidon<br>Rift" -align tl -scale xl
 
 line wall 
   364.29 2049.03
@@ -1170,7 +1170,7 @@ line rock-border -close on
 endline
 
 point 294.14 2527.6 water-flow -orientation 125.0
-line u:label_MY -attr lvl 1 -attr text "Poseidon Rift" -scale xl
+line label -text "Poseidon Rift" -scale xl
   84.0 2100.0
   84.0 2100.0 80.0 2532.0 284.0 2860.0
 endline

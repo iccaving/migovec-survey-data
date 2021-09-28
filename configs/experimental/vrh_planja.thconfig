@@ -1,8 +1,15 @@
 source ../../data/vrh_planja.th
+export model -o ../../outputs/vrh_planja.3d
+
 
 select m-all-p@vrh_planja
 
 input ../../layouts/detailed-p.thl
 
+input ../../layouts/detailed-e.thl
+
 export map -projection plan -o ../../outputs/vrh_planja.pdf -layout detailed-p
-export model -o ../../outputs/vrh_planja.3d
+
+export map -projection extended -o ../../outputs/vrh_planja_ee.pdf -layout detailed-e
+
+

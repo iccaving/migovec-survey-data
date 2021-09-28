@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap octarine_core-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
 
-point 655.5746 2679.8049 u:label_MY -attr lvl 1 -attr text Octarine -align l -scale m
+point 655.5746 2679.8049 label -text Octarine -align l -scale m
 line wall 
   630.1522 3079.34
   630.6422 3076.09 631.0022 3072.82 631.6222 3069.59

@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap testify-1e -scale [0.0 0.0 1024.0 883.534821214303 0.0 0.0 208.35 179.77] -projection extended
 
-point 2077.4797 -387.3268 u:label_MY -attr lvl 1 -attr text "Testify!" -align tr -scale m
+point 2077.4797 -387.3268 label -text "Testify!" -align tr -scale m
 line wall 
   2877.8646 -518.0156
   2877.8646 -518.0156 2848.0704 -524.7871 2841.976 -524.7871

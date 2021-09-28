@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap zima00_1e -scale [249.0 -714.0 545.0 -713.0 0.0 0.0 80 0.0 m] -projection extended
 
-point -1045.6038 2273.2382 u:label_MY -attr lvl 1 -attr text TTT -align r -scale xl
+point -1045.6038 2273.2382 label -text TTT -align r -scale xl
 line wall 
   481.1465 820.342
   479.368 813.6635 473.25 813.0 467.75 811.0
@@ -183,10 +183,10 @@ line wall -close on -outline in
   479.0 747.5 480.5 755.5 480.5 755.5
 endline
 
-point 543.6788 348.2436 u:label_MY -attr lvl 1 -attr text Spodnji -align t -scale xl
-point 788.5798 614.5688 u:label_MY -attr lvl 1 -attr text Snakebite -align t -scale xl
-point 833.977 490.8442 u:label_MY -attr lvl 1 -attr text "Freudian Slip" -align t -scale xl
-point 529.5 503.75 u:label_MY -attr lvl 1 -attr text Pivnica -align t -scale xl
+point 543.6788 348.2436 label -text Spodnji -align t -scale xl
+point 788.5798 614.5688 label -text Snakebite -align t -scale xl
+point 833.977 490.8442 label -text "Freudian Slip" -align t -scale xl
+point 529.5 503.75 label -text Pivnica -align t -scale xl
 line wall 
   422.5 806.5
   430.5 800.5

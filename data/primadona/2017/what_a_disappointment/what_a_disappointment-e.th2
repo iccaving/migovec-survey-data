@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap what_a_disappointment-1e -scale [0.0 0.0 931 1024 0.0 0.0 105 116] -projection extended
 
-point 540.2197 30.3882 u:label_MY -attr lvl 1 -attr text "What a<br>Disappointment!" -align bl -scale s
+point 540.2197 30.3882 label -text "What a<br>Disappointment!" -align bl -scale s
 line wall -subtype clay
   299.7399 611.52
   299.7399 611.52 322.5531 603.9156 322.5531 601.3808

@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap popotresnip_1 -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m]
 
-line u:label_MY -attr lvl 1 -attr text "Popotresni Rov"
+line label -text "Popotresni Rov"
   432.0 -253.5
   432.0 -253.5 465.76 -154.74 463.0 -81.0
   smooth off
@@ -454,7 +454,7 @@ line wall -id s4_l1
   smooth off
 endline
 
-line u:label_MY -attr lvl 1 -attr text "Sejna Soba"
+line label -text "Sejna Soba"
   36.0 -467.5
   36.0 -467.5 153.5 -549.5 212.5 -587.5
   smooth off

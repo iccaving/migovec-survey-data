@@ -511,5 +511,7 @@ survey primadona -title "Primadona"
 
 	equate 6@hades 0@street-wise_hercules
 	equate 1.5@glavobol 1@ma_je_vlazna
+
+	join hades-1s@hades street-wise_hercules-1s@street-wise_hercules
 endsurvey
 

@@ -8,11 +8,10 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"
 	map m-all-p -projection plan
 		m-all-p@brezno_planja_ent
 	endmap
-	
-	centreline
-	cs long-lat
-	fix 0@brezno_planja_ent 13.752099 46.264686 1868 
-	endcentreline
 
+	centreline
+	cs epsg:3794
+	fix 0@brezno_planja_ent 404177 125263 1877
+	endcentreline
 
 endsurvey

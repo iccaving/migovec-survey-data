@@ -103,7 +103,7 @@ line wall -reverse on
   smooth off
 endline
 
-line u:label_MY -attr lvl 1 -attr text "Tiger Tiger" -scale l
+line label -text "Tiger Tiger" -scale l
   225.0 -289.0
   225.0 -289.0 337.0 -392.0 560.0 -419.0
   smooth off

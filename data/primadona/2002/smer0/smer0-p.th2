@@ -264,7 +264,7 @@ line wall
   363.5 1010.5
 endline
 
-line u:label_MY -attr lvl 1 -attr text "Smer 0"
+line label -text "Smer 0"
   387.5 1026.25
   387.5 1026.25 454.5 977.5 506.75 932.0
 endline
@@ -665,8 +665,8 @@ line wall
   228.0 1344.0 239.25 1344.25 239.25 1344.25
 endline
 
-point 209.0 1340.0 u:label_MY -attr lvl 1 -attr text "Salome Viados" -align l -scale l
-line u:label_MY -attr lvl 1 -attr text "Salome Viados"
+point 209.0 1340.0 label -text "Salome Viados" -align l -scale l
+line label -text "Salome Viados"
   209.25 1347.75
   209.25 1347.75 224.25 1300.0 262.5 1268.25
 endline

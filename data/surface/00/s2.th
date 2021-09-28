@@ -1,0 +1,22 @@
+# Surface2, surface survey from M18 to Bens Crap Lead BCL
+
+survey s2 
+	centreline
+		team "Pete Jurd" insts
+		team "Ben Ogborne" notes
+		date 2000.07.13
+
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		flags surface
+		M18	1	35.90	044	-10	#station M18 is red dot at M18
+		2	1	17.90	268	+37
+		3	2	25.30	294	+11.5
+		3	4	30.05	056	-62.5
+		4	GW	19.08	344.5	-34.5	
+		flags not surface
+		#station GW is half bolt hole  at entrance of BCL.
+	endcentreline
+endsurvey s2
+

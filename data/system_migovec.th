@@ -21,42 +21,81 @@ survey system_migovec -title "System Migovec"
 	input "./vrtnarija_vilinska.th"
 	
 	centreline
-		cs epsg:3794
-		#entrance fixes (EPSG:3754)
-		#Primadona
-		station 35@prima1.primadona.primadona_ubend_monatip entrance
-		fix 35@prima1.primadona.primadona_ubend_monatip 404188 124289 1735
-		#Monatip
-		station 1@monatip1.monatip.primadona_ubend_monatip entrance
-		fix 1@monatip1.monatip.primadona_ubend_monatip 404190 124384 1724
-		#Ubend
-		station 5@ubend2.ubend.primadona_ubend_monatip entrance
-		fix 5@ubend2.ubend.primadona_ubend_monatip 404220 124292 1794
-		#Belladonna
-		station 3@belladonna.primadona_ubend_monatip entrance
-		#Vrtnarija
-		station 0@bclent2.vrtnarija.vrtnarija_vilinska entrance
-		fix 0@bclent2.vrtnarija.vrtnarija_vilinska 404766 124501 1799
-		#Vilinska Jama
-		station 1@vilinent.vilinska.vrtnarija_vilinska entrance
-		fix 1@vilinent.vilinska.vrtnarija_vilinska 404793 124544 1781
+		cs epsg:3912
+		#entrance fixes (EPSG:3901)
+
 		#M2
 		station 16@izent1.M2.m2m16m18 entrance
-		fix 16@izent1.M2.m2m16m18 404697 124423 1861
+		fix 16@izent1.M2.m2m16m18 405070 123937 1858
+
 		#M16
 		station 1@entrance.M16.m2m16m18 entrance
-		fix 1@entrance.M16.m2m16m18  404696 124327 1852
+		fix 1@entrance.M16.m2m16m18 405073 123841 1852
+
+		#Primadona
+		station 35@prima1.primadona.primadona_ubend_monatip entrance
+		fix 35@prima1.primadona.primadona_ubend_monatip 404561 123804 1727
+
+		#Vrtnarija
+		station 0@bclent2.vrtnarija.vrtnarija_vilinska entrance
+		fix 0@bclent2.vrtnarija.vrtnarija_vilinska 405134 124013 1798
+
+		### other entrances not fixed, survey points
+		#Monatip
+		station 1@monatip1.monatip.primadona_ubend_monatip entrance
+		#fix 1@monatip1.monatip.primadona_ubend_monatip 404190 124384 1741
+		#Ubend
+		station 5@ubend2.ubend.primadona_ubend_monatip entrance
+		#fix 5@ubend2.ubend.primadona_ubend_monatip 404220 124292 1779
+		#Belladonna
+		station 3@belladonna.primadona_ubend_monatip entrance
+		
+
+		#Vilinska Jama
+		station 1@vilinent.vilinska.vrtnarija_vilinska entrance
+		#fix 1@vilinent.vilinska.vrtnarija_vilinska 404793 124544 1779	
+
 		#M18
 		station 26@torn.M18.m2m16m18 entrance
-		fix 26@torn.M18.m2m16m18 404681 124458 1849
+		#fix 26@torn.M18.m2m16m18 404681 124458 1840
 	endcentreline
 	
+	# EQUATE commands for SURFACE FIXES
+	input "./surface/96/sM2_M18_M16.th"
+	input "./surface/00/s1.th"
+	input "./surface/00/s2.th"
+	input "./surface/08/s_vrtnarija_vilinska.th"
+	input "./surface/01/sM16_M4_M18.th"
+	input "./surface/01/sM10_M4_M15.th"
+	
+	# link Vrtnarija to M18
+	equate GW@s2 0@bclent2.vrtnarija.vrtnarija_vilinska
+	equate M18@s2 26@torn.M18.m2m16m18
+
+	# link Vilinska Jama to Vrtnarija
+	equate GW@s_vrtnarija_vilinska 0@bclent2.vrtnarija.vrtnarija_vilinska
+	equate VIL@s_vrtnarija_vilinska 1@vilinent.vilinska.vrtnarija_vilinska
+
+	# link M16 to M10
+	equate M16@s1 1@entrance.M16.m2m16m18
+	equate M16@sM2_M18_M16 1@entrance.M16.m2m16m18
+
+	# link M2 to M18
+	equate M2@sM2_M18_M16 19@izent2.M2.m2m16m18
+	equate M18@sM2_M18_M16 26@torn.M18.m2m16m18
+
+	# link M16 to M18 via M4
+	equate M18@sM16_M4_M18 26@torn.M18.m2m16m18
+
+	# link M10 to M15
+	equate M4@sM16_M4_M18 M4@sM10_M4_M15
+
 	# EQUATE commands for CONNECTIONS
 	# NCB and MONATIP
 	equate 6@gallery.M18.m2m16m18 40@monatip11.monatip.primadona_ubend_monatip
 	
 	#Wishing Well and Mig Country
-	equate 4@wishing_well2.monatip.primadona_ubend_monatip 1@migconleft.M16.m2m16m18
+	#equate 4@wishing_well2.monatip.primadona_ubend_monatip 1@migconleft.M16.m2m16m18
 	
 	# Waterloo and Dreams for the Soul
 	equate 1@dreamsforthesoul.vrtnarija.vrtnarija_vilinska 13@waterloo.M16.m2m16m18

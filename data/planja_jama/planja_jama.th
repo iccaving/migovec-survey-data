@@ -6,17 +6,26 @@ survey planja_jama -title "planja jama"
   input planja_jama-1p.th2
   
   map m-all-p -projection plan
+    surface_survey
     planja_jama-1p
   endmap
 
+  input planja_jama-e.th2
+
+  map m-all-e -projection extended
+    planja_jama-surface
+    planja_jama-2e
+    break
+    planja_jama-1e
+  endmap
 
   centerline
     date 2021.08.03 
     team "Tanguy Racine"
     team "Chloe Snowling"
 
-    cs long-lat
-    fix 0 13.752303 46.264940 1889 
+    cs epsg:3794
+    fix 0 404188 125289 1897 
     
     units length meters
     units compass clino degrees
@@ -173,7 +182,7 @@ survey planja_jama -title "planja jama"
     4 . 3.54 35.6 59.5
     4 . 2.98 24.8 56.2
     4 . 2.60 20.9 48.4
-    extend left
+    extend right
     5 4 2.58 307.6 -9.4
     # extend auto
     5 . 1.64 348.5 55.9
@@ -231,6 +240,7 @@ survey planja_jama -title "planja jama"
     6 . 3.07 272.2 -36.8
     6 . 0.61 282.1 -0.7
     6 . 0.39 292.4 -1.1
+    extend ignore 5
     extend right
     7 6 1.82 95.2 5.5
     # extend auto
@@ -262,7 +272,7 @@ survey planja_jama -title "planja jama"
     7 . 0.80 347.2 25.7
     7 . 1.20 243.9 11.6
     7 . 2.26 227.7 17.8
-    extend left
+    extend right
     7 8 1.86 305.5 58.5
     # extend auto
     8 . 0.93 221.3 43.0
@@ -289,7 +299,7 @@ survey planja_jama -title "planja jama"
     8 . 1.16 19.7 16.0
     8 . 1.37 19.1 20.3
     8 . 1.72 18.3 22.7
-    extend left
+    extend right
     8 9 2.04 10.8 37.1
     # extend auto
     9 . 2.59 154.8 84.9
@@ -308,7 +318,7 @@ survey planja_jama -title "planja jama"
     extend vertical
 #   5 5A 15.00 180.0 -90.0
     #7 7A 15.00 180.0 -90.0
-    extend left
+    extend right
     10 7 2.69 32.6 -11.6
     # extend auto
     10 . 2.70 33.1 -10.1
@@ -339,7 +349,7 @@ survey planja_jama -title "planja jama"
     10 . 1.58 187.5 33.8
     10 . 2.07 186.0 19.6
     10 . 1.07 50.2 -73.8
-    extend vertical
+    extend left
     10 11 2.80 188.2 -31.9
     # extend auto
     11 . 2.22 205.1 -79.5
@@ -397,7 +407,7 @@ survey planja_jama -title "planja jama"
     12 . 1.78 177.4 -56.8
     12 . 1.35 186.9 -58.4
     12 . 1.33 170.6 -74.1
-    extend right
+    extend left
     12 13 3.28 166.1 -21.1
     # extend auto
     13 . 0.51 47.2 -87.8
@@ -413,7 +423,7 @@ survey planja_jama -title "planja jama"
     13 . 0.60 62.9 -4.5
     13 . 0.71 253.5 53.8
     13 . 0.67 113.2 19.4
-    extend left
+    extend right
     14 13 2.93 31.3 20.2
     # extend auto
     14 . 0.94 296.4 16.3
@@ -456,7 +466,7 @@ survey planja_jama -title "planja jama"
     14 . 2.03 29.3 -5.7
     14 . 2.41 31.1 6.9
     14 . 2.74 22.2 10.7
-    extend left
+    extend right
     15 12 2.70 163.7 -69.8
     # extend auto
     15 . 1.50 53.4 67.6
@@ -474,6 +484,7 @@ survey planja_jama -title "planja jama"
     extend left
     15 16 1.66 190.4 -8.4
     # extend auto
+    extend ignore 20
     16 . 1.66 176.8 -11.9
     16 . 0.96 164.3 35.4
     16 . 1.27 135.8 64.1
@@ -555,7 +566,7 @@ survey planja_jama -title "planja jama"
     18 . 0.48 45.2 -20.1
     18 . 2.03 204.5 -9.8
     18 . 1.97 204.6 -9.7
-    extend ignore
+    extend left
     18 19 1.98 204.7 -9.6
     # extend auto
     19 . 1.97 201.3 -8.7
@@ -569,7 +580,7 @@ survey planja_jama -title "planja jama"
     19 . 2.05 110.9 -23.2
     19 . 1.33 89.0 -15.8
     19 . 1.05 90.2 -13.0
-    extend right
+    extend vertical
     19 20 1.94 106.6 -17.2
     # extend auto
     20 . 1.93 104.2 -15.9
@@ -601,31 +612,31 @@ survey planja_jama -title "planja jama"
     21 . 1.16 39.0 60.4
     21 . 1.75 31.5 61.7
     21 . 0.85 32.7 53.4
-    extend vertical
+    extend left
    flags surface
     0 S1 3.04 182.9 -22.3
    flags not surface
     # extend auto
     #22 . 3.05 186.5 -19.6
     S1 . 3.42 205.4 -40.5
-    extend right
+    extend left
    flags surface
     S1 S2 3.41 205.4 -40.7
    flags not surface
     # extend auto
     S1 . 2.88 205.5 -40.6
     S1 . 3.41 205.5 -40.6
-    extend right
+    extend left
    flags surface
     S2 S3 3.88 166.2 -26.6
    flags not surface
-    extend vertical
+    extend left
    flags surface
     S3 S4 3.09 172.9 -32.5
    flags not surface
     # extend auto
     S4 . 5.32 198.5 -43.3
-    extend right
+    extend left
    flags surface
     S4 S5 5.97 199.6 -42.4
    flags not surface
@@ -633,7 +644,7 @@ survey planja_jama -title "planja jama"
    flags surface
     S5 S6 5.71 206.1 -25.1
    flags not surface
-    extend vertical
+    extend left
    flags surface
     S6 S7 7.31 171.5 -32.9
    flags not surface

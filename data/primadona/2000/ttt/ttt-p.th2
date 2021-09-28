@@ -457,7 +457,7 @@ line wall -subtype unsurveyed
   2541.0 1463.5
 endline
 
-point 3005.0 990.5 u:label_MY -attr lvl 1 -attr text "Manđare" -align r -scale s
+point 3005.0 990.5 label -text "Manđare" -align r -scale s
 point 2855.0 990.5 station -name 14
 point 2740.0 1086.5 station -name 15
 point 2642.0 1262.5 station -name 16
@@ -559,7 +559,7 @@ line floor-step
 endline
 
 point 2985.0 895.5 continuation -align br
-line u:label_MY -attr lvl 1 -attr text "Manđare"
+line label -text "Manđare"
   2787.5 672.5
   2790.0 673.0 3040.5 817.0 3122.5 942.5
 endline
