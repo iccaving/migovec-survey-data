@@ -67,6 +67,15 @@ survey system_migovec -title "System Migovec"
 	input "./surface/08/s_vrtnarija_vilinska.th"
 	input "./surface/01/sM16_M4_M18.th"
 	input "./surface/01/sM10_M4_M15.th"
+
+	centreline
+		extend ignore M2@sM2_M18_M16
+		extend ignore 1@s1
+		extend ignore 1@s2
+		extend ignore 2@s_vrtnarija_vilinska
+		extend ignore M16@sM16_M4_M18
+		extend ignore M10@sM10_M4_M15
+	endcentreline
 	
 	# link Vrtnarija to M18
 	equate GW@s2 0@bclent2.vrtnarija.vrtnarija_vilinska

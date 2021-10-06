@@ -6,7 +6,7 @@ survey planja_jama -title "planja jama"
   input planja_jama-1p.th2
   
   map m-all-p -projection plan
-    surface_survey
+    #surface_survey
     planja_jama-1p
   endmap
 
@@ -25,7 +25,7 @@ survey planja_jama -title "planja jama"
     team "Chloe Snowling"
 
     cs epsg:3794
-    fix 0 404188 125289 1897 
+    fix 0 404188 125289 0 #1897 
     
     units length meters
     units compass clino degrees

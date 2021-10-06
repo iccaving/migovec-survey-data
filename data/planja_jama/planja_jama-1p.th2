@@ -4,6 +4,7 @@ encoding  utf-8
 
 scrap planja_jama-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
+point 438.4178 458.9336 label -align r -text "<lang:sl>TLORIS<lang:en>PLAN"
 point 435.292 803.455 gradient -orientation 142.96090773228033 -scale xs
 point 292.595 1044.57 gradient -orientation 213.22806375745967 -scale xs
 point 375.883 866.642 gradient -orientation 123.2247585404667 -scale xs
@@ -36,8 +37,8 @@ area u:smallblocks_MY -attr scale 0.75
   planja_jama-1p_u_smallblocks_MY_1
 endarea
 
-point 170.3073 958.4915 u:grass_MY 
-point 162.3861 983.1983 u:grass_MY 
+point 170.307 958.491 u:grass_MY 
+point 162.386 983.198 u:grass_MY 
 line floor-step 
   232.7345 1005.8305
   232.7345 1005.8305 225.1904 975.6542 231.6029 963.9609
@@ -79,8 +80,8 @@ line u:texture_MY
   296.3293 1020.0346 270.4572 1033.6375 270.4572 1033.6375
 endline
 
-point 316.867 910.9448 label -align bl -scale xs -text "<bf>p6"
-point 374.4792 789.7192 label -align l -scale xs -text "<bf>c2"
+point 316.867 910.945 label -align bl -scale xs -text "<bf>p6"
+point 374.479 789.719 label -align l -scale xs -text "<bf>c2"
 line u:texture_MY 
   343.9394 846.2645
   359.1426 852.7992
@@ -880,17 +881,17 @@ line wall
   444.98 713.77
 endline
 
-point 4.9203 630.6361 label -align t -text "Planja Jama"
-point 192.8712 1000.1942 station-name -align t -scale xs -text 0
+point 4.9203 630.636 label -align t -text "Planja Jama"
+point 192.871 1000.19 station-name -align t -scale xs -text 0
 point 359.731 969.373 station-name -align t -scale xs -text 1
 point 374.733 902.915 station-name -align t -scale xs -text 2
 point 424.927 864.334 station-name -align t -scale xs -text 3
-point 453.5549 740.2905 station-name -align t -scale xs -text 4
+point 453.555 740.29 station-name -align t -scale xs -text 4
 point 573.856 703.14 station-name -align t -scale xs -text 5
-point 478.7235 679.0942 station-name -align t -scale xs -text 6
+point 478.724 679.094 station-name -align t -scale xs -text 6
 point 416.686 640.336 station-name -align t -scale xs -text 7
-point 372.6539 697.9349 station-name -align t -scale xs -text 8
-point 418.0459 752.199 station-name -align t -scale xs -text 9
+point 372.654 697.935 station-name -align t -scale xs -text 8
+point 418.046 752.199 station-name -align t -scale xs -text 9
 point 324.53 493.328 station-name -align t -scale xs -text 11
 point 390.8 384.106 station-name -align t -scale xs -text 12
 point 390.587 266.993 station-name -align t -scale xs -text 13
@@ -900,7 +901,7 @@ point 272.46 369.374 station-name -align t -scale xs -text 16
 point 269.745 332.957 station-name -align t -scale xs -text 17
 point 195.355 282.558 station-name -align t -scale xs -text 18
 point 242.301 127.541 station-name -align t -scale xs -text 20
-point 574.0131 811.8006 station-name -align t -scale xs -text 21
+point 574.013 811.801 station-name -align t -scale xs -text 21
 point 137.183 194.518 station-name -align t -scale xs -text 19
 point 177.05 981.88 station -name 0
 point 343.94 965.49 station -name 1
@@ -1050,11 +1051,11 @@ endscrap
 
 scrap surface_survey -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 
-point 182.7516 868.342 station-name -align t -scale xs -text S1
-point 141.5544 776.5466 station-name -align t -scale xs -text S2
-point 175.9794 649.101 station-name -align t -scale xs -text S3
-point 188.6005 541.5557 station-name -align t -scale xs -text S4
-point 133.3537 375.5007 station-name -align t -scale xs -text S5
+point 182.752 868.342 station-name -align t -scale xs -text S1
+point 141.554 776.547 station-name -align t -scale xs -text S2
+point 175.979 649.101 station-name -align t -scale xs -text S3
+point 188.601 541.556 station-name -align t -scale xs -text S4
+point 133.354 375.501 station-name -align t -scale xs -text S5
 point 171.46 871.3 station -name S1
 point 127.73 779.33 station -name S2
 point 160.43 646.64 station -name S3
@@ -1063,8 +1064,6 @@ point 114.91 381.32 station -name S5
 point 114.91 401.32 station -name S6
 point 114.91 411.32 station -name S7
 point 114.91 421.32 station -name S8
-
-
 line wall:invisible -close on
   161.2756 983.475
   152.089 861.4975

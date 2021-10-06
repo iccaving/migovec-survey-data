@@ -5,6 +5,10 @@ encoding  utf-8
 
 scrap planja_jama-1e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
+point 91.2439 354.7072 station-name -align t -scale xs -text 0
+point 78.0377 413.671 entrance -orientation 140
+point 375.8593 231.7465 station-name -align t -scale xs -text 2
+point 282.2437 255.0677 station-name -align t -scale xs -text 1
 line u:texture_MY 
   413.5597 214.2466
   413.5597 214.2466 409.9128 182.8832 407.7246 177.0481
@@ -13,7 +17,7 @@ line u:texture_MY
   401.8896 136.9321 397.5948 113.4691 397.5948 113.4691
 endline
 
-point 695.8573 -15.3781 narrow-end -align tr -scale xs
+point 695.857 -15.3781 narrow-end -align tr -scale xs
 line u:texture_MY 
   586.57 -146.4817
   586.9816 -144.8351 590.6863 -128.7817 590.6863 -125.077
@@ -38,7 +42,7 @@ line wall:blocks
   550.3554 -168.8795 559.167 -158.0291 559.167 -158.0291
 endline
 
-point 479.316 -105.062 station -name 5
+point 479.316 -111.062 station -name 5
 point 587.967 -115.652 station -name 4
 point 452.52 -12.9447 station -name 3
 point 95.7524 341.086 station -name 0
@@ -81,6 +85,14 @@ line wall
   681.0883 -81.8406 680.2035 -73.7125 680.2035 -73.7125
   675.8391 -66.8787 673.3539 -58.7852 676.4212 -53.7554
   682.2502 -44.1968 697.5209 -40.3041 698.3342 -33.0391
+endline
+
+line wall:invisible 
+  698.3342 -33.0391
+  688.1719 -9.4185
+endline
+
+line wall 
   688.1719 -9.4185
   675.6365 -14.7435
   648.0496 -33.5961
@@ -177,6 +189,39 @@ endscrap
 
 scrap planja_jama-2e -projection extended -scale [0 0 96 0 0 0 1000 0 inch]
 
+line rock-border -clip off -close on
+  -394.5889 -334.88
+  -395.2152 -335.1932 -396.3113 -335.0366 -398.0337 -336.1327
+  -399.7561 -337.2288 -399.7561 -340.2038 -399.7561 -340.2038
+  -397.5639 -341.7697
+  -391.144 -337.0722
+  -391.7704 -334.0971
+endline
+
+line rock-border -clip off -close on
+  -398.0337 -323.6061
+  -403.8272 -323.6061
+  -406.0194 -324.389
+  -406.0194 -324.389 -405.7062 -326.7377 -406.3326 -329.243
+  -406.9589 -331.7484 -401.1653 -333.001 -399.9127 -333.001
+  -398.66 -333.001 -394.4323 -332.2181 -394.2757 -331.5918
+  -394.1191 -330.9655 -394.7454 -328.147 -394.902 -327.5206
+  -395.0586 -326.8943 -398.0337 -323.6061 -398.0337 -323.6061
+endline
+
+line rock-border -clip off -close on
+  -394.902 -321.8836
+  -389.8914 -313.115
+  -396.6126 -305.2985
+  -396.6126 -305.2985 -401.7917 -305.4424 -403.2009 -306.0688
+  -404.6102 -306.6951 -410.5603 -308.4175 -410.7169 -309.8268
+  -410.8735 -311.236 -411.0301 -312.8018 -410.8735 -314.0545
+  -410.7169 -315.3072 -409.1511 -317.3427 -408.6813 -317.9691
+  -408.2116 -318.5954 -401.1653 -321.5705 -401.1653 -321.5705
+endline
+
+point 479.0458 -120.4796 station-name -align tl -scale xs -text 5
+point -247.5038 -14.0514 label -align tl -text "<lang:sl>IZTEGNJENI PROFIL<lang:en>EXTENDED ELEVATION"
 line rock-border -clip off -close on
   87.8906 -237.241
   84.7111 -236.2098
@@ -423,45 +468,43 @@ line wall
   356.9595 -77.7544 356.5429 -90.2774 356.9545 -92.3355
   356.9545 -92.3355 364.636 -99.5138 369.2778 -100.5453
   373.9196 -101.5768 378.0456 -100.5453 383.7188 -101.5768
-  389.3921 -102.6083 426.5262 -106.2185 428.5892 -105.187
-  430.6522 -104.1555 435.8097 -102.6083 435.8097 -102.6083
+  389.3921 -102.6083 420.3061 -99.9984 422.3691 -98.9669
+  424.4321 -97.9354 439.5958 -88.816 439.5958 -88.816
   463.1445 -75.7892
   472.428 -73.2105
 endline
 
-point 710.3277 -128.9506 station-name -scale xs -text 21
-point 592.9533 -96.1192 station-name -scale xs -text 4
-point 477.7308 6.4454 station-name -scale xs -text 3
-point 351.4816 228.2973 station-name -scale xs -text 2
-point 274.0038 254.4438 station-name -scale xs -text 1
-point 95.7331 354.416 station-name -scale xs -text 0
-point -343.4088 -333.9325 station-name -scale xs -text 20
-point -340.3373 -300.1467 station-name -scale xs -text 19
-point -257.4086 -281.2793 station-name -scale xs -text 18
-point -163.9492 -243.1058 station-name -scale xs -text 17
-point -121.1598 -154.2267 station-name -scale xs -text 16
-point -53.6778 -141.6611 station-name -scale xs -text 15
-point -334.6025 -303.11 station -name 19
-point -333.8755 -326.3584 station -name 20
-point -252.4875 -287.7605 station -name 18
-point -155.3145 -249.1485 station -name 17
-point -117.0204 -163.1886 station -name 16
-point -51.9045 -153.5813 station -name 15
-point -225.9781 -350.2883 station-name -align t -scale xs -text 14
-point -124.7141 -296.3981 station-name -align t -scale xs -text 13
-point 0.0976 -255.3218 station-name -align t -scale xs -text 12
-point 124.3705 -166.8406 station-name -align t -scale xs -text 11
-point 181.898 -96.9267 station-name -align t -scale xs -text 10
+point 718.3277 -122.9506 station-name -align t -scale xs -text 21
+point 612.9533 -110.1192 station-name -align t -scale xs -text 4
+point 477.7308 -7.5546 station-name -align t -scale xs -text 3
+point -363.1155 -381.2731 station-name -align t -scale xs -text 20
+point -354.3688 -290.1467 station-name -align t -scale xs -text 19
+point -283.7019 -271.2793 station-name -align t -scale xs -text 18
+point -171.9492 -243.1058 station-name -align t -scale xs -text 17
+point -151.9137 -169.9964 station-name -align t -scale xs -text 16
+point -24.1384 -154.9387 station-name -align t -scale xs -text 15
+point -334.603 -303.11 station -name 19
+point -333.875 -326.358 station -name 20
+point -252.488 -287.76 station -name 18
+point -155.315 -249.149 station -name 17
+point -117.02 -163.189 station -name 16
+point -51.9045 -153.581 station -name 15
+point -259.7846 -373.977 station-name -align t -scale xs -text 14
+point -110.3453 -346.7038 station-name -align t -scale xs -text 13
+point 0.0976 -225.3218 station-name -align t -scale xs -text 12
+point 106.3705 -146.8406 station-name -align t -scale xs -text 11
+point 167.898 -80.9267 station-name -align t -scale xs -text 10
 point 272.846 -115.714 station-name -align t -scale xs -text 7
-point 374.043 -122.973 station-name -align t -scale xs -text 6
+point 360.9598 -159.1178 station-name -align t -scale xs -text 6
 point 307.433 -59.3516 station-name -align t -scale xs -text 8
-point 366.784 -3.8429 station-name -align t -scale xs -text 9
+point 374.784 -9.8429 station-name -align t -scale xs -text 9
 point -244.241 -336.096 station -name 14
 point -138.264 -296.242 station -name 13
 point -14.7101 -250.047 station -name 12
 point 99.6918 -163.092 station -name 11
 point 176.001 -108.141 station -name 10
-point 350.768 -124.04 station -name 6
+point 350.768 -124.04 station 
+point 350.768 -124.04 station -name 6 -visibility off
 point 277.753 -129.591 station -name 7
 point 318.4 -63.408 station -name 8
 point 380.1 -17.5066 station -name 9
@@ -470,13 +513,5 @@ endscrap
 
 scrap planja_jama-surface -projection extended -scale [0 0 96 0 0 0 1000 0 inch]
 
-point -306.8274 -41.4627 station -name S1
-point -306.8274 -51.4627 station -name S2
-point -306.8274 -61.4627 station -name S3
-point -306.8274 -71.4627 station -name S4
-point -306.8274 -81.4627 station -name S5
-point -513.1281 -336.2435 station -name S7
-point -653.4124 -493.5476 station -name S8
-point -514.4864 -176.5497 station -name S6
 endscrap
 

@@ -58,6 +58,8 @@ layout local
 	endcode
 endlayout
 
+lang sl
+
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
 export map -o ../../../outputs/planja_jama_plan.pdf -projection plan -layout local
@@ -80,6 +82,7 @@ endlayout
 # select a relevant map definition for plan view
 select m-all-e@planja_jama
 
+lang sl
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../../../outputs/planja_jama_ee.pdf -projection extended -layout local-e 
+export map -o ../../../outputs/planja_jama_ee.pdf -projection extended -layout local-e
