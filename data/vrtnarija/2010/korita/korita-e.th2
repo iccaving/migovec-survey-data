@@ -4,9 +4,9 @@ encoding  utf-8
 
 scrap korita-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 347.61 294.7633 u:label_MY -attr text Korita -attr lvl 2 -attr align br
-point 540.438 161.2619 water-flow -orientation 129.98620509384804
-point 323.5766 203.9045 water-flow -orientation 118.55662524229511
+point 323.61 260.7633 u:label_MY -align tr -attr text Korita -attr lvl 1
+point 540.438 161.262 water-flow -orientation 129.98620509384804
+point 323.577 203.905 water-flow -orientation 118.55662524229511
 line wall 
   589.706 201.5592
   589.706 201.5592 572.1204 206.8349 549.8452 212.6968
@@ -53,8 +53,8 @@ point 453.56 178.02 station -name 17
 point 482.82 167.23 station -name 16
 point 529.55 171.01 station -name 15
 point 572.34 134.47 station -name 14
-point 8.406 239.4224 station -name 13
-point 96.866 234.7824 station -name 4
+point 8.406 239.422 station -name 13
+point 96.866 234.782 station -name 4
 point 175.27 221.72 station -name 12
 point 141.8 221.32 station -name 3
 point 225.31 217.94 station -name 11

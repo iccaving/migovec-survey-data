@@ -357,6 +357,16 @@ centreline
 	extend right 2@euphrates
 	extend left 9@hydrophobia
 	
+	# Extend Serpentine left below itwillrain stn 1
+	extend left 2@itwillrain 1@itwillrain
+	extend left 1@itwillrain
+	extend left rot@drinkyourown
+	extend left 1@duffersdrop
+	extend left 1@rottenrow
+	extend left 1@longwater
+	extend left 13@longwater 12@longwater
+	extend left 12@longwater
+
 	# Snap off Gravity/Soda join so main passage follows High32
 	extend ignore 3@gravity
 	

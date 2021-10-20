@@ -23,11 +23,17 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall
+    extend right
     1	2	2.75	132	+15
+    extend right
     2	3	2.26	078	+12
+    extend right
     3	4	4.65	343	+06
+    extend right
     4	5	1.54	024	+59
+    extend right
     5	6	4.04	015	+10
+    extend right
     6	7	4.55	136	-23
     7	pitch	4.45	098	-12
 endcentreline

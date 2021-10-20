@@ -4,179 +4,9 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs_mad_cow-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point -324.97 -160.98 station-name -align tr -scale xs -text 22
-point -288.13 -119.02 station-name -align tr -scale xs -text 23
-point -240.37 -117.68 station-name -align tr -scale xs -text 24
-point -180.22 -83.43 station-name -align tr -scale xs -text 25
-point -118.16 -74.13 station-name -align tr -scale xs -text 26
-point -41.64 -60.04 station-name -align tr -scale xs -text 27
-point 21.66 -68.39 station-name -align tr -scale xs -text 28
-point 63.02 -66.5 station-name -align tr -scale xs -text 29
-point 285.02 13.82 station-name -align tr -scale xs -text 30
-point 516.72 61.61 station-name -align tr -scale xs -text 31
-point 558.24 101.38 station-name -align tr -scale xs -text 32
-point 669.75 136.18 station-name -align tr -scale xs -text 33
-point 702.74 143.58 station-name -align tr -scale xs -text 34
-point 820.0 182.48 station-name -align tr -scale xs -text 35
-point 908.11 200.28 station-name -align tr -scale xs -text 36
-point 1053.9 282.09 station-name -align tr -scale xs -text 37
-point 1197.72 337.68 station-name -align tr -scale xs -text 38
-point 1240.3 327.6 station-name -align tr -scale xs -text 39
-point 1315.13 313.66 station-name -align tr -scale xs -text 40
-point 1419.28 323.27 station-name -align tr -scale xs -text 41
-point 1440.93 327.36 station-name -align tr -scale xs -text 42
-point 1461.07 336.1 station-name -align tr -scale xs -text 43
-point 1511.31 345.47 station-name -align tr -scale xs -text 44
-point 1549.88 344.61 station-name -align tr -scale xs -text 45
-point -832.62 -265.31 station-name -align tr -scale xs -text 16
-point -778.33 -274.37 station-name -align tr -scale xs -text 17
-point -737.78 -274.61 station-name -align tr -scale xs -text 18
-point -596.77 -204.92 station-name -align tr -scale xs -text 19
-point -525.49 -189.17 station-name -align tr -scale xs -text 20
-point -470.04 -166.02 station-name -align tr -scale xs -text 21
-line survey 
-  1240.3 327.6
-  1197.72 337.68
-endline
-
-line survey 
-  1315.13 313.66
-  1240.3 327.6
-endline
-
-line survey 
-  1419.28 323.27
-  1315.13 313.66
-endline
-
-line survey 
-  1440.93 327.36
-  1419.28 323.27
-endline
-
-line survey 
-  1461.07 336.1
-  1440.93 327.36
-endline
-
-line survey 
-  1511.31 345.47
-  1461.07 336.1
-endline
-
-line survey 
-  1549.88 344.61
-  1511.31 345.47
-endline
-
-line survey 
-  516.72 61.61
-  558.24 101.38
-endline
-
-line survey 
-  669.75 136.18
-  558.24 101.38
-endline
-
-line survey 
-  669.75 136.18
-  702.74 143.58
-endline
-
-line survey 
-  820.0 182.48
-  702.74 143.58
-endline
-
-line survey 
-  820.0 182.48
-  908.11 200.28
-endline
-
-line survey 
-  1053.9 282.09
-  908.11 200.28
-endline
-
-line survey 
-  1053.9 282.09
-  1197.72 337.68
-endline
-
-line survey 
-  -288.13 -119.02
-  -324.97 -160.98
-endline
-
-line survey 
-  -288.13 -119.02
-  -240.37 -117.68
-endline
-
-line survey 
-  -180.22 -83.43
-  -240.37 -117.68
-endline
-
-line survey 
-  -180.22 -83.43
-  -118.16 -74.13
-endline
-
-line survey 
-  -41.64 -60.04
-  -118.16 -74.13
-endline
-
-line survey 
-  -41.64 -60.04
-  21.66 -68.39
-endline
-
-line survey 
-  63.02 -66.5
-  21.66 -68.39
-endline
-
-line survey 
-  63.02 -66.5
-  285.02 13.82
-endline
-
-line survey 
-  516.72 61.61
-  285.02 13.82
-endline
-
 line survey 
   -778.33 -274.37
   -832.62 -265.31
-endline
-
-line survey 
-  -778.33 -274.37
-  -737.78 -274.61
-endline
-
-line survey 
-  -596.77 -204.92
-  -737.78 -274.61
-endline
-
-line survey 
-  -596.77 -204.92
-  -525.49 -189.17
-endline
-
-line survey 
-  -470.04 -166.02
-  -525.49 -189.17
-endline
-
-line survey 
-  -470.04 -166.02
-  -324.97 -160.98
 endline
 
 line survey 
@@ -235,8 +65,8 @@ line survey
 endline
 
 line survey 
-  -937.77 -231.85
-  -971.66 -224.53
+  -937.8774 -231.85
+  -903.9874 -224.53
 endline
 
 line survey 
@@ -245,13 +75,13 @@ line survey
 endline
 
 line survey 
-  -971.66 -224.53
-  -1052.7 -258.07
+  -903.9874 -224.53
+  -822.9474 -258.07
 endline
 
 line survey 
-  -967.97 -267.91
-  -1052.7 -258.07
+  -907.6774 -267.91
+  -822.9474 -258.07
 endline
 
 line survey 
@@ -270,76 +100,14 @@ point -1244.2 -264.45 station-name -align tr -scale xs -text 8
 point -1121.82 -270.04 station-name -align tr -scale xs -text 9
 point -1079.43 -285.08 station-name -align tr -scale xs -text 10
 point -983.6 -277.2 station-name -align tr -scale xs -text 11
-point -937.77 -231.85 station-name -align tr -scale xs -text 12
-point -971.66 -224.53 station-name -align tr -scale xs -text 13
+point -937.8774 -231.85 station-name -align tr -scale xs -text 12
+point -903.9874 -224.53 station-name -align tr -scale xs -text 13
 point -1549.88 -345.47 station-name -align tr -scale xs -text pseudosump
-point -1052.7 -258.07 station-name -align tr -scale xs -text 14
-point -967.97 -267.91 station-name -align tr -scale xs -text 15
+point -822.9474 -258.07 station-name -align tr -scale xs -text 14
 endscrap
 
 
 scrap mad_cow-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
-
-line wall 
-  -1042.1302 -270.7964
-  -1039.6588 -267.5012 -1006.6777 -243.5648 -1003.3825 -240.6815
-  -1000.0874 -237.7982 -971.2545 -230.384 -971.2545 -230.384
-endline
-
-line wall 
-  -969.6069 -192.4895
-  -969.6069 -192.4895 -1028.055 -199.1797 -1037.1168 -204.1225
-  -1046.1785 -209.0653 -1088.2677 -252.7193 -1088.2677 -252.7193
-endline
-
-point -971.66 -224.53 station -name 13
-point -1052.7 -258.07 station -name 14
-point -967.97 -267.91 station -name 15
-point -832.62 -265.31 station -name 16
-point -778.33 -274.37 station -name 17
-point -737.78 -274.61 station -name 18
-point -596.77 -204.92 station -name 19
-point -525.49 -189.17 station -name 20
-point -470.04 -166.02 station -name 21
-point -324.97 -160.98 station -name 22
-point -288.13 -119.02 station -name 23
-point -240.37 -117.68 station -name 24
-point -180.22 -83.43 station -name 25
-point -118.16 -74.13 station -name 26
-point -41.64 -60.04 station -name 27
-point 21.66 -68.39 station -name 28
-point 63.02 -66.5 station -name 29
-point 285.02 13.82 station -name 30
-point 516.72 61.61 station -name 31
-point 558.24 101.38 station -name 32
-point 669.75 136.18 station -name 33
-point 702.74 143.58 station -name 34
-point 820.0 182.48 station -name 35
-point 908.11 200.28 station -name 36
-point 1053.9 282.09 station -name 37
-point 1197.72 337.68 station -name 38
-point 1240.3 327.6 station -name 39
-point 1315.13 313.66 station -name 40
-point 1419.28 323.27 station -name 41
-point 1440.93 327.36 station -name 42
-point 1461.07 336.1 station -name 43
-point 1511.31 345.47 station -name 44
-point 1549.88 344.61 station -name 45
-endscrap
-
-
-scrap mad_cow-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-
-line wall 
-  -971.2545 -230.384
-  -971.2545 -230.384 -958.0738 -231.2078 -954.7786 -233.6792
-  -951.4834 -236.1506 -966.3117 -241.9172 -977.8449 -254.2741
-  -989.378 -266.631 -1033.0392 -268.2786 -1033.0392 -268.2786
-  -1033.0392 -268.2786 -1077.5241 -270.75 -1100.5904 -260.0407
-  -1123.6566 -249.3313 -1154.9608 -236.1506 -1188.7364 -235.3268
-  -1222.512 -234.503 -1236.5166 -235.3268 -1266.1732 -227.9127
-  -1295.8298 -220.4985 -1307.363 -232.0316 -1312.3057 -227.0889
-endline
 
 line wall 
   -1598.1627 -358.0723
@@ -352,10 +120,33 @@ line wall
   -1300.7726 -265.8072 -1228.2786 -278.988 -1215.9217 -278.1642
   -1203.5648 -277.3404 -1131.0708 -274.0452 -1104.7093 -283.1069
   -1078.3479 -292.1687 -1041.2771 -296.2877 -1029.744 -294.6401
-  -1029.744 -294.6401 -966.3117 -294.6401 -959.7214 -288.0497
-  -953.131 -281.4593 -920.1792 -237.7982 -921.8268 -232.0316
-  -923.4744 -226.2651 -919.3554 -194.137 -930.8886 -191.6657
-  -942.4217 -189.1943 -969.6069 -192.4895 -969.6069 -192.4895
+  -1029.744 -294.6401 -966.3117 -294.64 -959.7214 -288.0497
+  -954.7958 -283.1241 -935.1447 -257.4908 -926.2189 -242.4473
+  -923.2022 -237.363 -912.7131 -231.2265 -904.4667 -230.413
+  -893.2547 -229.307 -875.56 -237.7982 -872.2649 -240.6815
+  -868.9697 -243.5648 -835.9886 -267.5012 -833.5172 -270.7964
+endline
+
+point -903.987 -224.53 station -name 13
+point -822.947 -258.07 station -name 14
+endscrap
+
+
+scrap mad_cow-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+point -905.4729 -191.6198 u:label_MY -align tr -attr text "Red Cow" -attr lvl 1
+line wall 
+  -820.9474 -258.07
+  -820.9474 -258.07 -850.9616 -219.7861 -872.0983 -209.4732
+  -880.815 -205.2202 -891.1849 -205.5531 -900.8766 -205.1807
+  -911.1564 -204.7856 -922.4447 -202.8059 -931.6605 -207.3774
+  -942.1172 -212.5645 -946.5571 -225.3934 -954.7786 -233.6792
+  -962.0387 -240.996 -968.7438 -249.4352 -977.8449 -254.2741
+  -994.6044 -263.1848 -1014.0964 -267.0728 -1033.0392 -268.2786
+  -1055.6773 -269.7196 -1078.3468 -264.4884 -1100.5904 -260.0407
+  -1130.5131 -254.0575 -1158.7388 -240.9221 -1188.7364 -235.3268
+  -1214.2271 -230.5722 -1240.2845 -229.381 -1266.1732 -227.9127
+  -1281.5285 -227.0418 -1307.363 -232.0316 -1312.3057 -227.0889
 endline
 
 line wall 
@@ -378,8 +169,8 @@ point -1244.2 -264.45 station -name 8
 point -1121.82 -270.04 station -name 9
 point -1079.43 -285.08 station -name 10
 point -983.6 -277.2 station -name 11
-point -937.77 -231.85 station -name 12
-point -971.66 -224.53 station -name 13
+point -937.877 -231.85 station -name 12
+point -903.987 -224.53 station -name 13
 point -1549.88 -345.47 station -name pseudosump
 endscrap
 
