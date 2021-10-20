@@ -24,7 +24,8 @@ endscrap
 
 scrap yourmum-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 503.3158 652.0103 u:label_MY -align tr -attr text "Your Mum" -attr lvl 1 -scale xl
+point 503.3158 652.0103 label -align tr -text "Your Mum" -scale xs
+
 line wall 
   513.6721 614.6187
   513.2361 615.7088 499.5003 639.6918 499.5003 639.6918

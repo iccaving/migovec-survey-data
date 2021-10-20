@@ -4,9 +4,12 @@ survey vrh_planja
 
 	map m-all-p -projection plan
 		m-all-p@brezno_pod_vrhom_planje
-		m-all-p@planja_jama
+		m-all-p@planja_jama 
 	endmap
 
-	#equate 0@brezno_planja_ent.brezno_pod_vrhom_planje S8@planja_jama
+	map m-all-e -projection extended
+		m-all-e@brezno_pod_vrhom_planje
+		m-all-e@planja_jama [15 0 m] none
+	endmap
 
 endsurvey

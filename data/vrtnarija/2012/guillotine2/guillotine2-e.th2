@@ -7,6 +7,9 @@ scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.
 endscrap
 
 scrap guillotine2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+point 157.7844 337.4833 u:label_MY -attr text "Brave New World" -attr lvl 1 -attr align bl
+
 point -180.58 -70.24 station -name 10
 point -230.15 -98.90 station -name 11
 point -101.70 -40.00 station -name 9

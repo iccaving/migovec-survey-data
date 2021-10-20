@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap plopzilla-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 90.267 68.1804 u:label_MY -attr lvl 2 -attr text Plopzilla -align r -scale l
+point 90.267 68.1804 label -text Plopzilla -align r -scale l
 line wall -subtype blocks
   9.5064 -424.7304
   15.2781 -428.8046

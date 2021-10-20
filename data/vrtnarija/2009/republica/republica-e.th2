@@ -127,7 +127,7 @@ line u:texture_MY
   smooth off
 endline
 
-point 280.0 207.0 u:label_MY -attr text "Republica Palma de Coco" -attr lvl 1 -attr align br
+point 280.0 207.0 u:label_MY -attr text "Republica Palma de Coco" -attr lvl 1 -align tl
 # &#127796; de &#129381; for the palma de coco emojis, not supported by font
 point 234.77 250.56 station -name 2
 

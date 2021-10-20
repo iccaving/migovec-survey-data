@@ -40,7 +40,7 @@ endscrap
 
 scrap skalar2-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 88.8265 -27.3682 u:label_MY -attr lvl 2 -attr text Skalar -align r -scale l
+point 88.8265 -27.3682 label -text Skalar -align r -scale l
 line wall -subtype blocks
   61.7913 -62.6401
   61.7913 -62.6401 66.5445 -60.603 67.563 -60.2635

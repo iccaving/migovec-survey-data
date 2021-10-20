@@ -208,9 +208,9 @@ line rock-border -close on
   412.2032 -668.2462 419.8855 -670.4069 419.8855 -670.4069
 endline
 
-point 254.7071 -392.7574 u:label_MY -attr lvl 2 -attr text R.C -align l -scale l
-point 458.0569 -401.3999 u:label_MY -attr lvl 2 -attr text R.S -align r -scale l
-point 458.0569 -401.3999 u:label_MY -attr lvl 2 -attr text R.S -align r -scale l
+point 254.7071 -392.7574 label -text R.C -align l -scale l
+point 458.0569 -401.3999 label -text R.S -align r -scale l
+point 458.0569 -401.3999 label -text R.S -align r -scale l
 line wall 
   398.5879 551.3686
   393.1557 518.0964

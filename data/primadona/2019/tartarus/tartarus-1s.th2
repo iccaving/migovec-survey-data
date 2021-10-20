@@ -38,7 +38,8 @@ line wall
   1378.4068 39.1169
 endline
 
-point -260.7797 705.9678 u:label_MY -align l -attr lvl 1 -attr text Tartarus
+point -260.7797 705.9678 label -align l -text Tartarus
+
 line wall 
   127.84 487.36
   210.7418 421.4836

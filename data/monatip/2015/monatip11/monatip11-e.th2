@@ -10,7 +10,7 @@ line wall -subtype invisible
   1609.9692 131.731
 endline
 
-point 2354.1434 578.0928 u:label_MY -attr lvl 2 -attr text "Vzporedni Svet" -align t
+point 2354.1434 578.0928 label -text "Vzporedni Svet" -align t
 line wall 
   2119.9174 466.4905
   2119.9174 466.4905 2092.0773 464.4534 2089.0217 464.1139
@@ -192,7 +192,7 @@ endscrap
 
 scrap monatip11-e2 -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 3470.9572 287.606 u:label_MY -attr text "Singing Rock" -align br
+point 3470.9572 287.606 label -text "Singing Rock" -align br
 
 line wall -subtype unsurveyed
   3107.0085 432.1291
@@ -338,7 +338,7 @@ line wall -subtype invisible
   5184.5893 718.2947
 endline
 
-point 4576.7279 951.6444 u:label_MY -attr text "Pravokotni Svet" -align t -attr lvl 2
+point 4576.7279 951.6444 label -text "Pravokotni Svet" -align t
 line wall 
   5222.0405 855.6157
   5167.3042 852.7348

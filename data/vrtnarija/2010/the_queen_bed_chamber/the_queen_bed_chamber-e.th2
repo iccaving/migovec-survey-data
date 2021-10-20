@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap the_queen_bed_chamber-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 357.7844 1059.4833 u:label_MY -attr text "Queen's Bedchamber" -attr lvl 1 -align b
 line rock-border -close on
   96.4216 1132.2749
   88.4431 1134.0574
@@ -157,13 +157,13 @@ line wall
   259.7576 1151.8642 273.2016 1168.6692 273.2016 1168.6692
 endline
 
-point 843.6813 1190.2527 station -name 8
-point 627.7713 1115.9227 station -name 7
-point 539.0113 1112.8527 station -name 6
-point 420.4513 1098.2827 station -name 5
-point 370.7013 1091.2727 station -name 4
-point 254.9413 1115.9227 station -name 3
-point 237.8713 1154.1927 station -name 2
-point 185.7213 1177.4127 station -name 1
+point 843.681 1190.25 station -name 8
+point 627.771 1115.92 station -name 7
+point 539.011 1112.85 station -name 6
+point 420.451 1098.28 station -name 5
+point 370.701 1091.27 station -name 4
+point 254.941 1115.92 station -name 3
+point 237.871 1154.19 station -name 2
+point 185.721 1177.41 station -name 1
 endscrap
 

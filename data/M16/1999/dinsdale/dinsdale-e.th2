@@ -140,7 +140,7 @@ endscrap
 
 scrap dinsdale-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 115.0948 205.0656 u:label_MY -attr lvl 2 -attr text Dinsdale -align l -scale l
+point 115.0948 205.0656 label -text Dinsdale -align l -scale l
 line wall 
   115.9547 61.2183
   120.7561 88.1063

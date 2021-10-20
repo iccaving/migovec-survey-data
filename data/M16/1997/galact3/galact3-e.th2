@@ -90,7 +90,7 @@ endscrap
 
 scrap galact3-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point -457.5767 61.4584 u:label_MY -attr lvl 2 -attr text Galaktika -align l -scale l
+point -457.5767 61.4584 label -text Galaktika -align l -scale l
 line u:texture_MY 
   -425.4878 -166.7515
   -425.4878 -166.7515 -373.6139 -155.7216 -370.9317 -155.2935

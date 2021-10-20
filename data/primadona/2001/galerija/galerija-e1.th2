@@ -200,10 +200,8 @@ line wall
   427.0 3428.0
 endline
 
-line label -text "Sejna soba" -scale xl
-  696.0 3450.0
-  696.0 3450.0 853.0 3441.0 1218.0 3378.0
-endline
+point 0 3428.0 label -text "Sejna<br>soba" -align b
+ 
 
 point 517.0 3455.0 camp -scale xl
 line wall 

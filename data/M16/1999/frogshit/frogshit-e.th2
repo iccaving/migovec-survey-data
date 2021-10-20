@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap frogshit-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -22.7474 -40.0625 u:label_MY -attr lvl 2 -attr text "Frogshit" -align br
+point -22.7474 -40.0625 label -text "Frogshit" -align br
 line wall -subtype invisible
   7.3406 154.8206
   4.7456 163.0769

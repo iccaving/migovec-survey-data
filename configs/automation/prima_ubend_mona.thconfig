@@ -47,7 +47,7 @@ endlayout
 select m-all-p@primadona_ubend_monatip.system_migovec
 
 language sl 
-export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
+#export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
 #export map -projection plan -o ../../_outputs/primadona_ubend_monatip_plan_ENG.svg -layout plan
 language en
 #export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
@@ -71,7 +71,7 @@ layout ee
 	min-symbol-scale M
 	symbol-hide line label
 	symbol-hide point remark
-
+	symbol-hide line map-connection
 	code tex-map
 	\framethickness=0.5mm
 	\def\maplayout{
@@ -81,7 +81,14 @@ layout ee
 	}
 endlayout
 
-select m-all-e@primadona_ubend_monatip.system_migovec
+source 
+	map local-e
+	m-all-e@primadona_ubend_monatip.system_migovec [0 -1858 m] none
+	glavobol@primadona.primadona_ubend_monatip.system_migovec [0 -1858 m] none
+	endmap
+endsource
+
+select local-e
 
 language sl 
 export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
@@ -99,4 +106,4 @@ select primadona_ubend_monatip@system_migovec
 # export a .lox model, which can be opened in LOCH only
 # export a .3d model, which can be opened in AVEN and LOCH
 #select primadona_ubend_monatip@system_migovec
-export model -o ../../outputs/primadona_ubend_monatip.lox
+#export model -o ../../outputs/primadona_ubend_monatip.lox

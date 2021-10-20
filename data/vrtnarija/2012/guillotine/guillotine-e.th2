@@ -86,6 +86,10 @@ endline
 endscrap
 
 scrap guillotine-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+point 157.7844 337.4833 u:label_MY -attr text "Guillotine" -attr lvl 1 -attr align bl
+
+
 point 206.37 79.53 station -name 20
 point 227.17 91.50 station -name 21
 point 183.45 73.78 station -name 19

@@ -195,8 +195,8 @@ line wall -subtype invisible
   712.2977 1133.9725
 endline
 
-point 464.4534 66.5445 u:label_MY -attr lvl 2 -attr text Hydrant -align r -scale l
-point 682.4206 486.1822 u:label_MY -attr lvl 2 -attr text "Gauntlet<br>Gulf" -align r -scale l
+point 464.4534 66.5445 label -text Hydrant -align r -scale l
+point 682.4206 486.1822 label -text "Gauntlet<br>Gulf" -align r -scale l
 line wall 
   586.7353 1229.1673
   572.6597 1225.3172
