@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap labyrinth-1e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
-scrap labyrinth-1e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
-
+point -49.7619 97.8368 u:label_MY -align tr -attr text Labyrinth -attr lvl 1
 point -225.98 45.24 station -name 1
 point -223.84 46.26 station -name 2
 point -175.81 46.26 station -name 3

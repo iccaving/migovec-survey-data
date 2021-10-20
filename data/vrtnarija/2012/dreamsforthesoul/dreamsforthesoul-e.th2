@@ -2,12 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap dreamsforthesoul-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 157.7844 337.4833 u:label_MY -attr text "Dreams for the Soul" -attr lvl 1 -attr align bl
-
-
+point 409.3036 946.3287 u:label_MY -align bl -attr text "Dreams for the Soul" -attr lvl 1
 line rock-border -close on
   197.172 1025.1586
   194.7954 1023.8855 190.9759 1017.6894 192.2491 1016.2464
@@ -87,40 +84,40 @@ line wall
   -49.4548 1063.5178 -137.8012 1067.359 -137.8012 1067.359
 endline
 
-point 1096.1175 1022.0747 station -name 34
-point 1157.5475 1049.4047 station -name 35
-point 1003.8475 982.8647 station -name 33
-point 937.6975 958.8547 station -name 32
-point 761.9475 908.4547 station -name 31
-point 709.1575 915.8547 station -name 30
-point 669.9775 930.8948 station -name 29
-point 642.8475 929.4847 station -name 28
-point 631.3875 923.8948 station -name 27
-point 602.2875 922.3148 station -name 26
-point 549.8175 926.9647 station -name 25
-point 512.9275 948.2247 station -name 24
-point 498.6075 938.2247 station -name 23
-point 472.9175 952.4747 station -name 22
-point 453.4775 974.0448 station -name 21
-point 431.9375 980.6648 station -name 18
-point 388.6275 980.6648 station -name 20
-point 305.4775 1161.2147 station -name 19
-point 383.0275 983.1848 station -name 17
-point 321.2875 1023.2647 station -name 15
-point 264.1975 1049.8747 station -name 16
-point 261.7475 1035.9347 station -name 14
-point 215.2975 1027.7447 station -name 13
-point 133.7275 1034.9147 station -name 12
-point 69.7075 1034.9147 station -name 11
-point -4.0625 1033.5747 station -name 10
-point -53.8425 1055.7747 station -name 9
-point -132.7025 1059.8747 station -name 7
-point -220.4925 1121.3747 station -name 8
-point -150.7925 1056.4047 station -name 6
-point -170.9325 1048.6147 station -name 5
-point -197.2925 1047.7447 station -name 4
-point -131.5325 1082.7047 station -name 3
-point -71.8025 1092.1547 station -name 2
-point -158.3725 1123.6547 station -name 1
+point 1096.12 1022.07 station -name 34
+point 1157.55 1049.4 station -name 35
+point 1003.85 982.865 station -name 33
+point 937.697 958.855 station -name 32
+point 761.947 908.455 station -name 31
+point 709.158 915.855 station -name 30
+point 669.977 930.895 station -name 29
+point 642.847 929.485 station -name 28
+point 631.388 923.895 station -name 27
+point 602.288 922.315 station -name 26
+point 549.817 926.965 station -name 25
+point 512.928 948.225 station -name 24
+point 498.608 938.225 station -name 23
+point 472.918 952.475 station -name 22
+point 453.478 974.045 station -name 21
+point 431.938 980.665 station -name 18
+point 388.627 980.665 station -name 20
+point 305.478 1161.21 station -name 19
+point 383.027 983.185 station -name 17
+point 321.288 1023.26 station -name 15
+point 264.197 1049.87 station -name 16
+point 261.748 1035.93 station -name 14
+point 215.298 1027.74 station -name 13
+point 133.727 1034.91 station -name 12
+point 69.7075 1034.91 station -name 11
+point -4.0625 1033.57 station -name 10
+point -53.8425 1055.77 station -name 9
+point -132.702 1059.87 station -name 7
+point -220.493 1121.37 station -name 8
+point -150.792 1056.4 station -name 6
+point -170.933 1048.61 station -name 5
+point -197.292 1047.74 station -name 4
+point -131.532 1082.7 station -name 3
+point -71.8025 1092.15 station -name 2
+point -158.373 1123.65 station -name 1
 endscrap
 

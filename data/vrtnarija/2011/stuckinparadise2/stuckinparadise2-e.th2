@@ -4,14 +4,20 @@ encoding  utf-8
 
 scrap stuckinparadise2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -26.6041 383.372 u:label_MY -attr text "Stuck in Paradise" -attr lvl 1 -align l
+point 93.3959 383.372 u:label_MY -align l -attr text "Stuck in Paradise" -attr lvl 1
 line rock-border -close on
   162.3532 333.5743
+  168.9923 332.5218
   190.8288 329.0599
+  206.4875 326.5774
   218.29 324.7063
-  209.8954 358.9303
-  200.5539 397.0149
-  180.3368 363.4401
+  219.0009 358.0197
+  212.4289 373.6066
+  207.4786 383.3648
+  200.0986 391.5516
+  185.7887 384.1444
+  172.5971 363.8954
+  168.2046 350.894
 endline
 
 line wall -subtype clay
@@ -175,9 +181,9 @@ line wall
   153.5742 590.8503 136.2276 597.8944 141.2631 602.1947
 endline
 
-line wall
-  504.0000 110.0000
-  559.0000 110.0000
+line wall 
+  504.0 110.0
+  559.0 110.0
 endline
 
 point 133.33 601.66 station -name 10

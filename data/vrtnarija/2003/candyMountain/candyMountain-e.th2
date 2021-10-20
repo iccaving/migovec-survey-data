@@ -28,9 +28,30 @@ endscrap
 
 scrap candyMountain-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
+line wall -subtype invisible
+  880.5551 908.3951
+  904.321 1031.2987
+endline
+
+line wall -subtype invisible
+  731.8779 1016.2071
+  728.4534 991.2362
+endline
+
+line wall 
+  737.1446 1209.3998
+  742.3167 1183.3718
+endline
+
+line wall -subtype invisible
+  708.428 1315.6982
+  713.6824 1304.3743
+endline
+
+point 842.7787 1164.3768 u:label_MY -align br -attr text Mountain -attr lvl 1
 point 760.053 1240.47 station -name 6
 point 758.0 1000.0 water-flow -orientation 139.30000498036569 -scale 2
-point 696.0 1078.0 u:label_MY -attr text "Big Rock Candy Mountain" -attr lvl 1 -attr align bl
+point 842.7787 1186.3768 u:label_MY -align tr -attr text "Big Rock Candy" -attr lvl 1
 point 776.723 781.582 station -name 2
 line wall 
   904.321 1031.2987
@@ -59,13 +80,13 @@ line wall
   738.2993 1012.6255 731.8779 1016.2071 731.8779 1016.2071
 endline
 
-line wall 
+line wall -subtype invisible
   740.5174 1227.4688
   741.7239 1220.3517 737.1446 1209.3998 737.1446 1209.3998
 endline
 
 point 776.723 1198.82 station -name 5
-point 776.723 1024.492 station -name 4
+point 776.723 1024.49 station -name 4
 point 776.723 939.212 station -name 3
 endscrap
 

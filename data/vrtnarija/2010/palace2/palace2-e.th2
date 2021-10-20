@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap palace2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 84.3863 1122.891 u:label_MY -align tl -attr text "Palace of King Minos" -attr lvl 1
 line wall 
   779.8189 934.3093
   786.9487 939.402 786.9487 945.5132 796.1155 952.643
@@ -68,23 +68,23 @@ line wall
   -260.2386 1067.7594 -274.883 1070.6403 -274.883 1070.6403
 endline
 
-point 964.8195 943.8682 station -name 17
-point 876.3395 981.6582 station -name 16
-point 810.7095 978.5182 station -name 15
-point 715.4095 971.9782 station -name 14
-point 627.4195 1011.4282 station -name 13
-point 520.5795 1045.9982 station -name 12
-point 362.8195 1080.7982 station -name 11
-point 299.0395 1066.4682 station -name 10
-point 122.3295 1118.8282 station -name 9b
-point 212.6795 1066.6982 station -name 9
-point 162.0095 1036.7782 station -name 8
-point -43.0805 1044.1082 station -name 7
-point -171.4205 1050.2482 station -name 6
-point -237.2805 1003.2382 station -name 5
-point -263.4305 974.8082 station -name 4
-point -199.5705 965.0482 station -name 3
-point -286.0705 969.5382 station -name 2
-point -365.6005 958.3582 station -name 1
+point 964.819 943.868 station -name 17
+point 876.34 981.658 station -name 16
+point 810.71 978.518 station -name 15
+point 715.409 971.978 station -name 14
+point 627.419 1011.43 station -name 13
+point 520.58 1046.0 station -name 12
+point 362.82 1080.8 station -name 11
+point 299.039 1066.47 station -name 10
+point 122.329 1118.83 station -name 9b
+point 212.679 1066.7 station -name 9
+point 162.01 1036.78 station -name 8
+point -43.0805 1044.11 station -name 7
+point -171.421 1050.25 station -name 6
+point -237.28 1003.24 station -name 5
+point -263.43 974.808 station -name 4
+point -199.571 965.048 station -name 3
+point -286.07 969.538 station -name 2
+point -365.601 958.358 station -name 1
 endscrap
 

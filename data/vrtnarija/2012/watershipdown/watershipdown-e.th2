@@ -1,10 +1,9 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {229.953840 1 1.0} {884.952030 {}} "/Users/AchilleTalon/Desktop/Screen%20Shot%202021-01-17%20at%2017.17.49.png" 0 {}
 
-##XTHERION## xth_me_image_insert {229.953840 1 1.0} {884.952030 1} "/Users/AchilleTalon/Desktop/Screen%20Shot%202021-01-17%20at%2017.17.49.png" 0 {}
-
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
   323.073 642.7592
@@ -99,10 +98,10 @@ endline
 endscrap
 
 
-scrap watershipdown-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap watershipdown-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 477.5246 567.3258 u:label_MY -attr lvl 1 -attr text "Watership Down" -align bl
-point 739.968 513.0037 continuation -align br
+point 477.525 567.326 u:label_MY -align bl -attr lvl 1 -attr text "Watership Down"
+point 739.968 513.004 continuation -align br
 line rock-border -close on
   727.9317 524.7494
   728.1718 535.0725
@@ -232,7 +231,18 @@ endline
 
 line wall 
   740.7366 535.1594
-  740.7366 535.1594 740.0821 549.8971 731.2179 560.4043
+  740.7366 535.1594 740.4989 540.511 738.3704 547.0636
+endline
+
+line wall -id alt1
+  738.3704 547.0636
+  altitude .
+  737.9278 548.4262 737.4034 549.8408 736.7824 551.2699
+endline
+
+line wall 
+  736.7824 551.2699
+  735.4339 554.3732 733.6298 557.5453 731.2179 560.4043
   729.3345 562.6368 725.5297 564.7695 721.7081 566.5043
   716.5091 568.8642 711.2789 570.4876 710.8123 570.6236
   705.0839 572.2936 695.2997 575.3027 694.2875 576.6523
@@ -320,22 +330,22 @@ line wall
   477.2626 713.4932 470.0605 716.3741 470.0605 716.3741
 endline
 
-point 245.473 687.5592 station -name 17
-point 323.073 642.7592 station -name 16
-point 340.113 638.8192 station -name 15
-point 358.203 640.7092 station -name 14
-point 398.523 659.5292 station -name 13
-point 440.803 682.9092 station -name 12
-point 466.283 695.3492 station -name 11
-point 472.513 698.0292 station -name 10
-point 516.113 638.0292 station -name 9
-point 545.093 635.9792 station -name 8
-point 582.463 627.3192 station -name 7
-point 638.143 573.6192 station -name 1
-point 508.1938 559.6092 station -name 6
-point 537.9038 555.4292 station -name 5
-point 566.2838 563.5392 station -name 4
-point 606.7638 563.5392 station -name 3
-point 653.953 575.2792 station -name 2
+point 245.473 687.559 station -name 17
+point 323.073 642.759 station -name 16
+point 340.113 638.819 station -name 15
+point 358.203 640.709 station -name 14
+point 398.523 659.529 station -name 13
+point 440.803 682.909 station -name 12
+point 466.283 695.349 station -name 11
+point 472.513 698.029 station -name 10
+point 516.113 638.029 station -name 9
+point 545.093 635.979 station -name 8
+point 582.463 627.319 station -name 7
+point 638.143 573.619 station -name 1
+point 508.194 559.609 station -name 6
+point 537.904 555.429 station -name 5
+point 566.284 563.539 station -name 4
+point 606.764 563.539 station -name 3
+point 653.953 575.279 station -name 2
 endscrap
 

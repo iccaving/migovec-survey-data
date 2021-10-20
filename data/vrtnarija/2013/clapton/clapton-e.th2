@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
   82.65 79.53
@@ -53,8 +52,9 @@ endline
 endscrap
 
 
-scrap clapton-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap clapton-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point -283.5237 -4.8184 u:label_MY -align bl -attr lvl 1 -attr text Clapton
 line wall 
   101.3798 104.7997
   101.3798 104.7997 90.955 103.8156 88.1192 101.3954

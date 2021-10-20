@@ -8,7 +8,7 @@ scrap RCC_passage-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 
 point 204.0 333.0 water-flow -orientation 182.1
 
-point 351.9702 289.7398 u:label_MY -attr text "RCC Passage of the Year" -attr lvl 2 -attr align br
+point 351.9702 289.7398 u:label_MY -attr text "RCC Passage of the Year" -align br -attr lvl 1
 
 line rock-border -close on
   157.9182 147.5465

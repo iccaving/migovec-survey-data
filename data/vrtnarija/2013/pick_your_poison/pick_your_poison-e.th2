@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
   -289.77 252.2
@@ -133,8 +132,9 @@ endline
 endscrap
 
 
-scrap pick_your_poison-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap pick_your_poison-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point -82.7462 -11.4328 u:label_MY -align tr -attr text "Pick Your Poison" -attr lvl 1
 line water-flow 
   -155.3342 -90.26
   -122.3352 -113.3661

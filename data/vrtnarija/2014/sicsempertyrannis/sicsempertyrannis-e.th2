@@ -281,7 +281,7 @@ endscrap
 
 scrap sicsempertyrannis-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-point -340.141 -104.754 u:label_MY -align br -attr lvl 2 -attr text "Sic Semper Tyrannis"
+point -340.141 -104.754 u:label_MY -align tl -attr lvl 1 -attr text "Sic Semper Tyrannis"
 line wall 
   -104.7397 0.1698
   -108.4631 0.1228 -135.743 -1.323 -138.8957 2.5329

@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap colarado-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line border -close on -id colarado-1e_water_1 -visibility on
@@ -17,8 +16,9 @@ area water
   colarado-1e_water_1
 endarea
 
-point -193.0912 6.8672 water-flow -orientation 127.78549
-point 112.8341 31.4489 water-flow -orientation 229.28631
+point -218.8181 -239.9999 u:label_MY -align bl -attr text "Colarado Sump" -attr lvl 1
+point -193.091 6.8672 water-flow -orientation 127.78550036120166
+point 112.834 31.4489 water-flow -orientation 229.2863081067821
 line wall 
   -233.1558 -146.3912
   -245.3782 -148.4283 -255.1105 -170.3018 -262.5798 -176.4131
@@ -44,8 +44,18 @@ endline
 
 line wall 
   -84.2503 -206.5815
-  -104.6211 -209.9767 -112.1074 -222.6452 -132.4782 -221.287
-  -152.849 -219.929 -196.8745 -186.4979 -204.6833 -188.8745
+  -104.6211 -209.9767 -112.1074 -222.645 -132.4782 -221.287
+endline
+
+line wall -id alt1
+  -132.4782 -221.287
+  altitude .
+  -136.499 -221.019 -141.4414 -219.5014 -146.8449 -217.2562
+endline
+
+line wall 
+  -146.845 -217.2562
+  -168.8176 -208.1267 -198.4158 -186.967 -204.6833 -188.8745
   -212.4921 -191.2511 -208.658 -195.7882 -214.0902 -196.8068
   -219.5224 -197.8253 -225.3935 -185.8189 -223.696 -178.6891
   -221.9984 -171.5593 -210.1155 -159.6764 -210.7945 -155.2627
