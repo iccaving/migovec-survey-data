@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
   -38.14 114.01
@@ -53,9 +52,9 @@ endline
 endscrap
 
 
-scrap toilet-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap toilet-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 104.169 -24.1095 label -text "Toilet Humour" -align r
+point -264.3502 -169.2837 label -align r -text "Toilet Humour"
 line wall 
   84.1992 -46.1737
   84.1992 -46.1737 89.9709 -22.7474 89.9709 -21.3893

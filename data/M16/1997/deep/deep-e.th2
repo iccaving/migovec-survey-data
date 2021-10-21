@@ -4,8 +4,7 @@ encoding  utf-8
 
 scrap deep-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point -53.2699 178.8072 u:label_MY -attr text "Good not Grand" -attr lvl 1 -align l
-
+point 111.4359 137.6144 u:label_MY -align r -attr text "Good not Grand" -attr lvl 1
 line border -close on -id deep-1e_water_1 -visibility on
   55.9918 158.0503
   23.7825 158.0503
@@ -112,7 +111,13 @@ line wall
   60.6734 200.7464 29.5876 190.2597 28.464 188.7616
   27.3405 187.2634 19.1009 183.1436 19.1009 183.1436
   17.2282 178.6493
-  17.2282 178.6493 -4.1198 160.2975 -5.9924 159.1739
+  17.2282 178.6493 9.3322 171.8615 2.7232 166.2894
+endline
+
+line wall -id alt1
+  2.7232 166.2894
+  altitude .
+  -1.5348 162.6995 -5.2587 159.6142 -5.9924 159.1739
   -7.8651 158.0503 -14.9811 149.4362 -14.9811 149.4362
 endline
 

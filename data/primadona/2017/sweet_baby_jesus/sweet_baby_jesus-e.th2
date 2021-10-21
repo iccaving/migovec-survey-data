@@ -2,10 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 853.000000 1109.500000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap sweet_baby_jesus-1e -projection extended -scale [328.0 -734.0 530.0 -737.0 0.0 0.0 25 0.0 m]
 
-scrap sweet_baby_jesus-1e -scale [328.0 -734.0 530.0 -737.0 0.0 0.0 25 0.0 m] -projection extended
-
-point 2213.2605 767.6197 label -text "Sweet Baby Jesus" -align t
+point 2280.9128 535.6685 u:label_MY -attr lvl 1 -align t -attr text "Sweet Baby Jesus"
 line wall -subtype invisible
   2510.2292 89.0604
   2554.1476 82.0417
@@ -170,25 +169,25 @@ line wall
   3073.3558 163.2023
 endline
 
-point 557.6883 639.9605 station -name 21
-point 835.0633 635.8469 station -name 20
-point 1007.0554 647.6153 station -name 19
-point 1100.6851 602.938 station -name 18
-point 1139.4706 571.7921 station -name 17
-point 1321.6449 570.6168 station -name 16
-point 1432.1247 529.4807 station -name 14
-point 1576.6888 473.6531 station -name 13
-point 1770.0286 456.0233 station -name 12
-point 1847.0119 443.0948 station -name 11
-point 2060.2354 198.627 station -name 10
-point 2243.6816 159.2556 station -name 9
-point 2514.5924 101.3712 station -name 8
-point 2554.2594 107.2477 station -name 7
-point 2801.0762 82.1253 station -name 6
-point 2997.648 99.3144 station -name 5
-point 3072.8684 122.2331 station -name 4
-point 3073.3558 146.6848 station -name 3
-point 3150.2302 162.0597 station -name 2
-point 3326.8338 134.6342 station -name 1
+point 557.688 639.961 station -name 21
+point 835.063 635.847 station -name 20
+point 1007.06 647.615 station -name 19
+point 1100.69 602.938 station -name 18
+point 1139.47 571.792 station -name 17
+point 1321.64 570.617 station -name 16
+point 1432.12 529.481 station -name 14
+point 1576.69 473.653 station -name 13
+point 1770.03 456.023 station -name 12
+point 1847.01 443.095 station -name 11
+point 2060.24 198.627 station -name 10
+point 2243.68 159.256 station -name 9
+point 2514.59 101.371 station -name 8
+point 2554.26 107.248 station -name 7
+point 2801.08 82.1253 station -name 6
+point 2997.65 99.3144 station -name 5
+point 3072.87 122.233 station -name 4
+point 3073.36 146.685 station -name 3
+point 3150.23 162.06 station -name 2
+point 3326.83 134.634 station -name 1
 endscrap
 

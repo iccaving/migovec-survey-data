@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap smash-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 259.6898 824.7431 u:label_MY -align tl -attr text Smash -attr lvl 1
 line rock-border -close on
   216.098 716.1864
   214.4004 712.4518 209.3077 700.5689 201.4989 699.8898
@@ -195,22 +195,22 @@ line wall
   925.5757 848.3305 928.9367 847.3702 928.9367 847.3702
 endline
 
-point 936.6218 866.3278 station -name 17
-point 898.4818 904.4378 station -name 16
-point 847.9418 922.7878 station -name 15
-point 704.8718 922.7878 station -name 14
-point 659.1718 868.3778 station -name 13
-point 581.7418 846.1678 station -name 12
-point 473.9418 846.1678 station -name 11
-point 440.3418 853.8878 station -name 10
-point 397.5018 830.1878 station -name 9
-point 366.5518 827.9878 station -name 8
-point 350.2918 813.3378 station -name 7
-point 321.7418 801.8378 station -name 6
-point 293.3418 770.2678 station -name 5
-point 245.3318 739.0878 station -name 4
-point 217.3818 739.0878 station -name 3
-point 172.8118 710.1878 station -name 2
-point 119.9418 668.8478 station -name 1
+point 936.622 866.328 station -name 17
+point 898.482 904.438 station -name 16
+point 847.942 922.788 station -name 15
+point 704.872 922.788 station -name 14
+point 659.172 868.378 station -name 13
+point 581.742 846.168 station -name 12
+point 473.942 846.168 station -name 11
+point 440.342 853.888 station -name 10
+point 397.502 830.188 station -name 9
+point 366.552 827.988 station -name 8
+point 350.292 813.338 station -name 7
+point 321.742 801.838 station -name 6
+point 293.342 770.268 station -name 5
+point 245.332 739.088 station -name 4
+point 217.382 739.088 station -name 3
+point 172.812 710.188 station -name 2
+point 119.942 668.848 station -name 1
 endscrap
 

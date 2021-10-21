@@ -2,9 +2,20 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap minestrone2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 305.4349 -105.733 u:label_MY -align bl -attr text Minestrone -attr lvl 1
+point 275.25 -89.06 station -name 11
+point 216.27 -85.98 station -name 10
+point 192.03 -85.51 station -name 9
+point 130.34 -60.63 station -name 8
+point 75.89 -32.91 station -name 7
+point 11.11 4.49 station -name 6
+point -38.59 19.69 station -name 5
+point -72.14 30.63 station -name 4
+point -124.54 57.32 station -name 3
+point -170.73 62.99 station -name 2
+point -275.25 89.06 station -name 1
 line wall 
   263.5988 -72.0215
   263.5988 -72.0215 208.3823 -72.5017 193.978 -70.5811
@@ -30,17 +41,5 @@ line wall
   270.8009 -96.989
 endline
 
-point 267.536 -121.4285 u:label_MY -align bl -attr text Minestrone -attr lvl 2
-point 275.25 -89.06 station -name 11
-point 216.27 -85.98 station -name 10
-point 192.03 -85.51 station -name 9
-point 130.34 -60.63 station -name 8
-point 75.89 -32.91 station -name 7
-point 11.11 4.49 station -name 6
-point -38.59 19.69 station -name 5
-point -72.14 30.63 station -name 4
-point -124.54 57.32 station -name 3
-point -170.73 62.99 station -name 2
-point -275.25 89.06 station -name 1
 endscrap
 

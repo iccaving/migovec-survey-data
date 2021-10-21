@@ -15,42 +15,15 @@ map m-all-p -projection plan -title "Vrtnarija"
 	m-below_republica-p
 	m-below_stuck_in_paradise-p
 	m-beyond_atlantis-p
-	m-frames-p
+	m-offsets-p
 endmap
 
-## FRAMES IN PLACE
+## OFFSETS
 
-map m-frames-p -projection plan
-	m-watership-offset [-300 0 m] below  
-	m-metalaven-offset [300 0 m] below 
-	m-xanadu_bypass-offset [200 0 m] below 
-endmap
-
-map m-metalaven-offset -projection plan
-	m-metal_camp-p [130 0 m] none    # 130 m width of watership down frame
-	m-metalaven-empty [-300 0 m] none
-endmap
-
-map m-metalaven-empty -projection plan
-	metalaven-frame@keti
-endmap
-
-map m-watership-offset -projection plan
-	m-watership_deep-p [-95 0 m] none # -95 m width of watership down frame
-	m-watership-empty [300 0 m] none
-endmap
-
-map m-watership-empty -projection plan
-	watershipdown-frame@watershipdown
-endmap
-
-map m-xanadu_bypass-offset -projection plan
-	m-xanadu_bypass-p [75 0 m] none # 75 m width of xanadu frame
-	m-xanadu_bypass-empty [-200 0 m] none
-endmap
-
-map m-xanadu_bypass-empty -projection plan
-	xanadu_bypass-frame@500m
+map m-offsets-p -projection plan
+	m-watership_deep-p [-300 0 m] below  
+	m-metal_camp-p [300 0 m] below 
+	m-xanadu_bypass-p [200 0 m] below 
 endmap
 
 

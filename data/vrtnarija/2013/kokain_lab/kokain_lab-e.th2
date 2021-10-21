@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
   211.09 -15.83
@@ -58,8 +57,9 @@ endline
 endscrap
 
 
-scrap kokain_lab-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap kokain_lab-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point -100.3102 -11.2569 u:label_MY -align br -attr text Kokain -attr lvl 1
 line wall 
   -298.7712 -12.2225
   -297.4131 -12.562 -296.0551 -10.5249 -276.3633 -12.2225

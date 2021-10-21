@@ -5,7 +5,8 @@ encoding  utf-8
 
 scrap the_stile-s1 -scale [0 0 90 0 0 0 500 0 inch] -projection extended
 
-point 466.6658 241.1991 label -text "The Stile" -align r
+point 466.6658 241.1991 u:label_MY -attr text "The Stile" -align r -attr lvl 2
+
 line wall -subtype invisible
   392.3504 265.3258
   392.86 258.5295

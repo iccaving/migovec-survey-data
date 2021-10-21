@@ -14,43 +14,18 @@ map m-all-p -projection plan -title "Primadona"
 	m-klic_globin_branch-p
 	m-old_slov_route-p
 	m-deep-p
-	m-frames-p
+	m-offsets-p
 endmap
 
 ## FRAMES IN PLACE
 
-map m-frames-p -projection plan
-	m-lumos-offset [-300 0 m] below  
-	m-pivnica-offset [0 -100 m] below 
-	m-cattlegrid-offset [-250 0 m] below 
+map m-offsets-p -projection plan
+	m-below_lumos-p [-300 0 m] below  
+	m-pivnica-p [0 -100 m] below 
+	m-below_cattlegrid-p [-250 0 m] below 
 endmap
 
-map m-lumos-offset -projection plan
-	m-below_lumos-p [-57 0 m] none # width of lumos frame
-	m-lumos-empty [300 0 m] none
-endmap
 
-map m-lumos-empty -projection plan
-	lumos-frame@lumos
-endmap
-
-map m-pivnica-offset -projection plan
-	m-pivnica-p [0 -137 m] none    # height of pivnica frame
-	m-pivnica-empty [0 100 m] none
-endmap
-
-map m-pivnica-empty -projection plan
-	pivnica-frame@snakebitetwo
-endmap
-
-map m-cattlegrid-offset -projection plan
-	m-below_cattlegrid-p [-138 0 m] none    # height of pivnica frame
-	m-cattlegrid-empty [250 0 m] none
-endmap
-
-map m-cattlegrid-empty -projection plan
-	cattlegrid-frame@mud_moses
-endmap
 
 # Submaps
 map m-entrance-p -projection plan -title "Entrance Series"

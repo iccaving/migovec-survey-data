@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
   786.56 62.4
@@ -193,8 +192,9 @@ endline
 endscrap
 
 
-scrap andreabocelli-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap andreabocelli-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point -926.0084 -173.1561 u:label_MY -align b -attr text "Andrea Bocelli" -attr lvl 1
 line wall 
   -918.5966 -132.5748
   -918.5966 -132.5748 -919.2756 -108.1298 -920.6337 -103.3767

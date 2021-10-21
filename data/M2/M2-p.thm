@@ -3,20 +3,11 @@ map m-all-p -projection plan -title "M2 - Kavkna jama"
 		m-all-p@izent2
 		m-all-p@jsl1
 		m-all-p@jspdt
-		m-frames-p
+		m-offset-p
 endmap
 
-map m-frames-p -projection plan
-	deepM2-offset [200 100 m] below
-endmap
-
-map deepM2-offset -projection plan
-	deepM2-empty [-200 -100 m] none
-	m-deepM2-p [120 200 m] none
-endmap
-
-map deepM2-empty -projection plan
-	deepM2-frame@echo_rift
+map m-offset-p -projection plan
+	m-deepM2-p [200 100 m] below
 endmap
 
 map m-deepM2-p -projection plan

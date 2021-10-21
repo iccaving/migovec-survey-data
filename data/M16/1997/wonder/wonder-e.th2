@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap wonder-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point -113.2944 -749.0538 u:label_MY -align r -attr text "Earthquake Way" -attr lvl 1
+point -218.0414 -764.0801 u:label_MY -align l -attr text "Earthquake Way" -attr lvl 1
 line border -close on -id wonder-1e_water_1 -visibility on
   -114.9364 -771.9809
   -134.0042 -771.9809
@@ -64,10 +64,16 @@ line wall
   -176.4022 -732.5746 -191.3832 -731.451 -191.3832 -731.451
 endline
 
-line wall 
+line wall -id alt1
   -123.5939 -783.5102
+  altitude . 
   -123.9684 -780.1395 -127.7137 -766.282 -128.0882 -764.7839
-  -128.4627 -763.2858 -132.208 -756.1698 -135.2042 -750.5519
+  -128.2495 -764.1387 -129.0361 -762.4513 -130.1188 -760.2903
+endline
+
+line wall 
+  -130.1188 -760.2903
+  -131.5499 -757.434 -133.4985 -753.7502 -135.2042 -750.5519
   -138.2004 -744.934 -147.5636 -727.7058 -147.1891 -726.2077
   -146.8145 -724.7095 -144.1929 -722.0879 -146.0655 -716.47
   -147.9381 -710.8521 -149.0617 -706.3577 -149.8108 -704.4851
@@ -185,7 +191,7 @@ endscrap
 
 scrap wonder-2e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 
-point 394.8623 391.1547 u:label_MY -align r -attr text "Wonder Stuff" -attr lvl 1
+point 319.078 392.897 u:label_MY -align l -attr text "Wonder Stuff" -attr lvl 1
 line survey 
   520.69 622.44
   520.69 857.87

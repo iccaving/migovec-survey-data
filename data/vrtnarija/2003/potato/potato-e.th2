@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap potato-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 499.6898 564.7431 u:label_MY -align bl -attr text Potato -attr lvl 1
 line wall 
   1099.0484 614.1136
   1092.3264 607.8718
@@ -68,30 +68,30 @@ line wall
   1124.9762 563.139 1123.5357 588.5866 1134.0989 594.3483
 endline
 
-point 1123.5974 590.4959 station -name 24
-point 1136.5474 596.7959 station -name 25
-point 1057.6274 506.0059 station -name 23
-point 1030.3974 515.9259 station -name 22
-point 971.0874 503.3359 station -name 21
-point 892.0874 529.0059 station -name 20
-point 854.8374 491.7559 station -name 19
-point 813.9574 474.4359 station -name 18
-point 792.6674 475.9259 station -name 17
-point 723.7874 500.9659 station -name 16
-point 658.4074 522.2259 station -name 15
-point 495.9774 616.0059 station -name 14
-point 433.4974 639.9459 station -name 13
-point 312.2474 734.6659 station -name 12
-point 242.3074 764.4359 station -name 11
-point 102.7974 809.7059 station -name 10
-point 35.9074 856.5559 station -name 9
-point -39.8826 891.9159 station -name 8
-point -146.2326 918.4459 station -name 7
-point -236.7626 939.3159 station -name 6
-point -457.9826 1042.4659 station -name 5
-point -493.8626 1052.7859 station -name 4
-point -605.2426 1060.5759 station -name 3
-point -683.0326 1084.3559 station -name 2
-point -752.4326 1104.2759 station -name 1
+point 1123.6 590.496 station -name 24
+point 1136.55 596.796 station -name 25
+point 1057.63 506.006 station -name 23
+point 1030.4 515.926 station -name 22
+point 971.087 503.336 station -name 21
+point 892.087 529.006 station -name 20
+point 854.837 491.756 station -name 19
+point 813.957 474.436 station -name 18
+point 792.667 475.926 station -name 17
+point 723.787 500.966 station -name 16
+point 658.407 522.226 station -name 15
+point 495.977 616.006 station -name 14
+point 433.497 639.946 station -name 13
+point 312.247 734.666 station -name 12
+point 242.307 764.436 station -name 11
+point 102.797 809.706 station -name 10
+point 35.9074 856.556 station -name 9
+point -39.8826 891.916 station -name 8
+point -146.233 918.446 station -name 7
+point -236.763 939.316 station -name 6
+point -457.983 1042.47 station -name 5
+point -493.863 1052.79 station -name 4
+point -605.243 1060.58 station -name 3
+point -683.033 1084.36 station -name 2
+point -752.433 1104.28 station -name 1
 endscrap
 

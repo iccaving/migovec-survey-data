@@ -22,8 +22,10 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
+    extend left
     2	1	12.25	035	82
     3	2	31.35	070	82	#3 IS AT BOTTOM OF PITCH PSS
+    extend right
     3	4	19.31	161	40
     flags duplicate
     3 rotting_communism 122.00 - DOWN # Artistic licence

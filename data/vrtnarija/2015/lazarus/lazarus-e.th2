@@ -2,11 +2,11 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap lazarus-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 885.2794 673.0865 continuation 
-point 947.7498 677.1607 continuation 
+point 579.6898 564.7431 u:label_MY -align br -attr text Lazarus -attr lvl 1
+point 884.155 710.759 continuation 
+point 984.86 695.716 continuation 
 line wall 
   962.3772 702.2857
   954.9349 699.1647 917.7238 680.6792 915.8032 674.4374
@@ -73,31 +73,31 @@ line wall
   275.0518 586.8112 267.2494 583.8103 254.8857 582.6099
 endline
 
-point 252.225 614.1594 station -name 25
-point 304.395 602.1093 station -name 26
-point 167.655 574.7093 station -name 24
-point 242.045 566.9094 station -name 23
-point 242.045 584.7894 station -name 22
-point 258.615 574.4693 station -name 21
-point 297.775 587.9393 station -name 20
-point 312.795 568.7193 station -name 19
-point 343.705 567.0693 station -name 18
-point 383.785 550.8493 station -name 17
-point 397.175 561.0094 station -name 16
-point 468.385 603.7594 station -name 15
-point 505.785 583.8393 station -name 14
-point 522.455 584.7093 station -name 13
-point 556.055 583.6093 station -name 12
-point 567.855 584.1594 station -name 11
-point 624.045 615.3393 station -name 10
-point 669.635 595.9693 station -name 9
-point 731.975 589.4293 station -name 8
-point 748.395 595.4194 station -name 7
-point 770.785 607.7794 station -name 6
-point 787.795 621.5593 station -name 5
-point 821.555 625.7293 station -name 4
-point 846.675 630.6093 station -name 3
-point 885.635 636.7494 station -name 2
-point 936.675 649.5094 station -name 1
+point 252.225 614.159 station -name 25
+point 304.395 602.109 station -name 26
+point 167.655 574.709 station -name 24
+point 242.045 566.909 station -name 23
+point 242.045 584.789 station -name 22
+point 258.615 574.469 station -name 21
+point 297.775 587.939 station -name 20
+point 312.795 568.719 station -name 19
+point 343.705 567.069 station -name 18
+point 383.785 550.849 station -name 17
+point 397.175 561.009 station -name 16
+point 468.385 603.759 station -name 15
+point 505.785 583.839 station -name 14
+point 522.455 584.709 station -name 13
+point 556.055 583.609 station -name 12
+point 567.855 584.159 station -name 11
+point 624.045 615.339 station -name 10
+point 669.635 595.969 station -name 9
+point 731.975 589.429 station -name 8
+point 748.395 595.419 station -name 7
+point 770.785 607.779 station -name 6
+point 787.795 621.559 station -name 5
+point 821.555 625.729 station -name 4
+point 846.675 630.609 station -name 3
+point 885.635 636.749 station -name 2
+point 936.675 649.509 station -name 1
 endscrap
 

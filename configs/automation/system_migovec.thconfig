@@ -24,15 +24,25 @@ input "../../layouts/user_label.thl" # input this to have the label hierarchy
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
- select m-all-p@system_migovec -map-level 3
+select m-all-p@system_migovec -map-level 5
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
+
+lookup map:bigmaps -title "Colour key"
+  	m2m16m18@system_migovec [97 94 80] "Front"
+  	primadona_ubend_monatip@system_migovec [90 84 94]
+  	vrtnarija_vilinska@system_migovec [80 94 97] " "
+endlookup
 
 layout plan
 	copy base-p
 	copy user_label
 	scale 1 2000
+	symbol-hide line rock-edge
+	colour map-fg [97 94 80]
+
+	
 	
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
 	code tex-map
@@ -52,8 +62,6 @@ layout plan
 	symbol-hide line label
 	symbol-hide point remark
 endlayout
-
-select m-all-p@system_migovec
 
 language sl
 #export map -projection plan -o ../../outputs/system_migovec_plan_SLO.pdf -layout plan
@@ -107,7 +115,7 @@ source
 
 	#guillotine@vrtnarija.vrtnarija_vilinska.system_migovec [0 -1858 m] none
  	m-all-e@system_migovec [0 -1858 m] none
-
+ 	m2_2012_resurvey@M2.m2m16m18.system_migovec [0 -1858 m] none
 	glavobol@primadona.primadona_ubend_monatip.system_migovec [0 -1858 m] none
 	endmap
 endsource

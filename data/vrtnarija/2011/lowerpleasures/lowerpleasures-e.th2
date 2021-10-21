@@ -2,13 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 405.000000 338.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-
 scrap lowerpleasures-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 302.0 222.0 u:label_MY -attr text "Lower pleasures" -attr lvl 3 -attr align br
-
-line wall
+point 130.1453 240.8412 u:label_MY -align t -attr text "Lower pleasures" -attr lvl 1
+line wall 
   202.2974 128.7918
   202.2974 128.7918 233.71 140.4145 239.9926 143.8699
   246.2751 147.3253 265.1227 156.1208 268.2639 160.5186
@@ -16,16 +13,14 @@ line wall
   277.3736 175.9108 277.3736 187.5335 271.7193 187.5335
   266.0651 187.5335 226.171 188.4758 223.9721 188.79
   221.7732 189.1041 181.5651 196.0149 176.8532 195.0725
-  smooth off
   176.8532 195.0725 163.0316 201.0409 168.3717 202.2974
   173.7119 203.5539 219.2602 201.9833 218.632 203.868
   218.0037 205.7528 228.9981 224.9145 218.0037 225.8569
   207.0093 226.7993 147.3253 228.3699 144.4981 227.4275
   141.671 226.4851 131.619 225.5428 131.619 225.5428
-  smooth off
 endline
 
-line wall
+line wall 
   131.9331 202.2974
   131.9331 202.2974 144.184 195.3866 146.3829 193.1877
   148.5818 190.9889 153.6078 185.0205 154.8643 183.7639
@@ -35,33 +30,19 @@ line wall
   244.3903 171.513 257.8978 172.4554 256.3271 170.5706
   254.7565 168.6859 245.3327 163.974 237.4796 160.2045
   229.6264 156.4349 201.0409 146.0688 201.0409 146.0688
-  smooth off
 endline
 
 point 133.42 205.79 station -name 12
-
 point 149.58 195.71 station -name 11
-
 point 164.26 182.95 station -name 10
-
 point 185.35 182.24 station -name 9
-
 point 209.77 178.39 station -name 8
-
 point 231.01 177.6 station -name 7
-
 point 242.7 176.57 station -name 6
-
 point 270.58 173.66 station -name 5
-
 point 258.83 161.93 station -name 4
-
 point 250.9 154.29 station -name 3
-
 point 233.14 146.73 station -name 2
-
 point 203.72 134.21 station -name 1
-
 endscrap
-
 

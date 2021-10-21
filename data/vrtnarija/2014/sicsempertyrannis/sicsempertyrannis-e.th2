@@ -4,7 +4,13 @@ encoding  utf-8
 
 scrap sicsempertyrannis-5e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-point 491.4868 -13.8008 water-flow -orientation 180
+point 491.487 -13.8008 water-flow -orientation 180.0
+point 417.33 -57.99 station -name 3
+point 452.63 -49.88 station -name 2
+point 487.61 -73.5 station -name 1
+point 360.83 -40.59 station -name 6
+point 374.53 -55.79 station -name 5
+point 389.49 -62.4 station -name 4
 line rock-border -close on
   466.8298 -67.6534
   466.8298 -67.6534 452.4852 -75.7443 449.0652 -74.0974
@@ -50,37 +56,19 @@ line wall:blocks
   474.4209 -77.6435 483.4479 -78.1008 483.4479 -78.1008
 endline
 
-point 417.33 -57.99 station -name 3
-point 452.63 -49.88 station -name 2
-point 487.61 -73.5 station -name 1
-point 360.83 -40.59 station -name 6
-point 374.53 -55.79 station -name 5
-point 389.49 -62.4 station -name 4
 endscrap
 
 
 scrap sicsempertyrannis-4e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-line wall -subtype invisible
-  483.4479 -78.1008
-  494.6802 -63.807
-endline
-
-line wall -subtype invisible
-  496.7071 -23.2566
-  479.7315 -19.6917
-endline
-
-line wall -subtype invisible
-  554.4857 37.8708
-  575.3043 64.1679
-endline
-
-line wall -subtype invisible
-  522.8813 79.9817
-  437.4993 137.4804
-endline
-
+point 506.78 73.5 station -name 26
+point 571.25 40.67 station -name 27
+point 462.16 50.75 station -name 25
+point 360.83 -40.59 station -name 6
+point 374.53 -55.79 station -name 5
+point 389.49 -62.4 station -name 4
+point 320.5 -44.76 station -name 7
+point 263.04 -16.73 station -name 8
 line rock-border -clip off -close on
   521.2476 94.7611
   521.2476 94.7611 508.5159 85.085 510.553 82.7084
@@ -162,6 +150,26 @@ line rock-border -close on
   289.0951 -37.6859 291.1322 -34.9698 291.1322 -34.9698
 endline
 
+line wall -subtype invisible
+  483.4479 -78.1008
+  494.6802 -63.807
+endline
+
+line wall -subtype invisible
+  496.7071 -23.2566
+  479.7315 -19.6917
+endline
+
+line wall -subtype invisible
+  554.4857 37.8708
+  575.3043 64.1679
+endline
+
+line wall -subtype invisible
+  522.8813 79.9817
+  437.4993 137.4804
+endline
+
 line wall 
   575.3043 64.1679
   568.6838 66.3747 567.835 72.9952 565.6282 74.6928
@@ -207,19 +215,21 @@ line wall
   351.7352 -59.245 363.2415 -54.603 363.2415 -54.603
 endline
 
-point 506.78 73.5 station -name 26
-point 571.25 40.67 station -name 27
-point 462.16 50.75 station -name 25
-point 360.83 -40.59 station -name 6
-point 374.53 -55.79 station -name 5
-point 389.49 -62.4 station -name 4
-point 320.5 -44.76 station -name 7
-point 263.04 -16.73 station -name 8
 endscrap
 
 
 scrap sicsempertyrannis-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
+point 320.5 -44.76 station -name 7
+point 7.62 -30.43 station -name 14
+point 43.17 -32.32 station -name 13
+point 76.01 -22.87 station -name 12
+point 88.65 -26.5 station -name 11
+point 148.04 -22.4 station -name 10
+point 201.06 -9.17 station -name 9
+point 263.04 -16.73 station -name 8
+point -79.88 -6.57 station -name 16
+point -62.32 -18.15 station -name 15
 line wall -close on -outline in
   256.1565 -34.8104
   259.9975 -36.0113 262.3984 -42.2526 259.5175 -47.5342
@@ -266,22 +276,17 @@ line wall
   -66.3747 -22.4078 -53.5727 -24.0301 -51.8751 -28.7833
 endline
 
-point 320.5 -44.76 station -name 7
-point 7.62 -30.43 station -name 14
-point 43.17 -32.32 station -name 13
-point 76.01 -22.87 station -name 12
-point 88.65 -26.5 station -name 11
-point 148.04 -22.4 station -name 10
-point 201.06 -9.17 station -name 9
-point 263.04 -16.73 station -name 8
-point -79.88 -6.57 station -name 16
-point -62.32 -18.15 station -name 15
 endscrap
 
 
 scrap sicsempertyrannis-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-point -340.141 -104.754 u:label_MY -align tl -attr lvl 1 -attr text "Sic Semper Tyrannis"
+point -180.141 15.246 u:label_MY -align tl -attr lvl 1 -attr text "Sic Semper Tyrannis"
+point -176.34 -13.43 station -name 17
+point -79.88 -6.57 station -name 16
+point -62.32 -18.15 station -name 15
+point -305.85 -26.81 station -name 19
+point -257.15 -23.35 station -name 18
 line wall 
   -104.7397 0.1698
   -108.4631 0.1228 -135.743 -1.323 -138.8957 2.5329
@@ -301,16 +306,18 @@ line wall
   -231.6692 -6.0018 -284.2449 -14.4043 -284.2449 -14.4043
 endline
 
-point -176.34 -13.43 station -name 17
-point -79.88 -6.57 station -name 16
-point -62.32 -18.15 station -name 15
-point -305.85 -26.81 station -name 19
-point -257.15 -23.35 station -name 18
 endscrap
 
 
 scrap sicsempertyrannis-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point -571.25 -61.61 station -name 24
+point -543.67 -54.76 station -name 23
+point -518.92 -64.76 station -name 22
+point -483.33 -71.06 station -name 21
+point -353.14 -38.54 station -name 20
+point -305.85 -26.81 station -name 19
+point -257.15 -23.35 station -name 18
 line wall 
   -582.7956 -67.8885
   -582.7956 -67.8885 -574.1826 -66.529 -564.8067 -64.7066
@@ -338,12 +345,5 @@ line wall
   -581.2432 -45.1668 -585.4391 -40.8454 -585.4391 -40.8454
 endline
 
-point -571.25 -61.61 station -name 24
-point -543.67 -54.76 station -name 23
-point -518.92 -64.76 station -name 22
-point -483.33 -71.06 station -name 21
-point -353.14 -38.54 station -name 20
-point -305.85 -26.81 station -name 19
-point -257.15 -23.35 station -name 18
 endscrap
 

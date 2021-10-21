@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap leprachaun-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point -200.3102 804.7431 u:label_MY -align br -attr text Leprechaun -attr lvl 1
 line wall -close on -outline in
   276.5627 940.1209
   276.5627 940.1209 280.6439 938.2004 284.9652 937.0
@@ -120,38 +120,38 @@ line wall
   -679.0254 715.6928 -702.1123 706.1864 -702.1123 706.1864
 endline
 
-point 746.982 987.8976 station -name 32
-point 801.432 999.3976 station -name 33
-point 721.132 937.1876 station -name 31
-point 695.892 940.1776 station -name 30
-point 622.762 934.3576 station -name 29
-point 569.122 944.3576 station -name 28
-point 509.032 927.7376 station -name 27
-point 466.942 948.9176 station -name 26
-point 421.732 922.3876 station -name 25
-point 412.472 920.8076 station -name 24
-point 412.472 876.0076 station -name 23
-point 372.552 872.2276 station -name 22
-point 357.702 870.2576 station -name 21
-point 316.372 870.7276 station -name 20
-point 295.552 876.5576 station -name 19
-point 286.662 876.7976 station -name 1
-point -655.798 702.3076 station -name 17
-point -692.788 690.0176 station -name 18
-point -619.398 714.3576 station -name 16
-point -562.708 714.8276 station -name 15
-point -451.568 756.6376 station -name 14
-point -365.698 778.9176 station -name 13
-point -295.308 830.7276 station -name 12
-point -155.638 878.3676 station -name 11
-point -59.298 903.5676 station -name 10
-point -24.248 897.5776 station -name 9
-point -4.768 878.3676 station -name 8
-point 39.872 873.9576 station -name 7
-point 81.682 869.0776 station -name 6
-point 105.252 873.0176 station -name 5
-point 167.282 884.4276 station -name 4
-point 210.052 871.6776 station -name 3
-point 249.402 873.2476 station -name 2
+point 746.982 987.898 station -name 32
+point 801.432 999.398 station -name 33
+point 721.132 937.188 station -name 31
+point 695.892 940.178 station -name 30
+point 622.762 934.358 station -name 29
+point 569.122 944.358 station -name 28
+point 509.032 927.738 station -name 27
+point 466.942 948.918 station -name 26
+point 421.732 922.388 station -name 25
+point 412.472 920.808 station -name 24
+point 412.472 876.008 station -name 23
+point 372.552 872.228 station -name 22
+point 357.702 870.258 station -name 21
+point 316.372 870.728 station -name 20
+point 295.552 876.558 station -name 19
+point 286.662 876.798 station -name 1
+point -655.798 702.308 station -name 17
+point -692.788 690.018 station -name 18
+point -619.398 714.358 station -name 16
+point -562.708 714.828 station -name 15
+point -451.568 756.638 station -name 14
+point -365.698 778.918 station -name 13
+point -295.308 830.728 station -name 12
+point -155.638 878.368 station -name 11
+point -59.298 903.568 station -name 10
+point -24.248 897.578 station -name 9
+point -4.768 878.368 station -name 8
+point 39.872 873.958 station -name 7
+point 81.682 869.078 station -name 6
+point 105.252 873.018 station -name 5
+point 167.282 884.428 station -name 4
+point 210.052 871.678 station -name 3
+point 249.402 873.248 station -name 2
 endscrap
 
