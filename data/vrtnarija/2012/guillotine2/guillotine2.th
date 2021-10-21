@@ -23,16 +23,26 @@ endmap
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
+		extend right
 		2	1	14.79	004	+20
+		extend right
 		3	2	7.60	017	+29
+		extend right
 		4	3	3.72	026	-32
 		4	5	1.93	-	down
+		extend left
 		6	5	5.17	008	+40
+		extend left
 		7	6	3.26	000	+33
+		extend left
 		8	7	8.25	004	+12
+		extend left
 		9	8	4.25	039	+30
+		extend left
 		10	9	10.73	012	+21
+		extend left
 		11	10	7.27	027	+30
+
 		data dimensions station left right up down ignoreall
 		2	0	1	2	0
 		3	1	0	0	1

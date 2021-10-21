@@ -6,6 +6,7 @@ survey milkyway -title "Milky Way"
 		milkyway-1e
 		break
 		milkyway-2e
+		milkyway-3e
 	endmap
 	
 	input milkyway-p.th2
@@ -18,6 +19,9 @@ survey milkyway -title "Milky Way"
 		milkyway-4p
 		milkyway-5p
 	endmap
+	
+	join milkyway-2e milkyway-3e
+	join milkyway-3e milkyway-1e
 	
 	join milkyway-2p milkyway-1p
 	join milkyway-2p milkyway-3p
@@ -35,45 +39,85 @@ survey milkyway -title "Milky Way"
 		units compass degrees
 		units clino percent
 		data normal from to tape compass clino ignoreall
+		extend left
 		2	1	16.78	010	+16
+		extend right
 		2	3	10.83	171	-22
+		extend left
 		4	3	17.42	330	+46
+		extend right
 		4	5	10.13	195	-12
+		extend left
 		6	5	13.88	286	+06
+		extend right
 		6	7	12.31	152	-16
+		extend left
 		8	7	4.58	287	+24
+		extend left
 		10	9	5.00	285	-51
+		extend right
 		10	11	10.29	181	-24
+		extend left
 		12	11	16.48	035	+34
+		extend right
 		12	13	2.15	284	+25
+		extend left
 		14	13	4.06	022	-24
+		extend right
 		14	15	9.30	317	+30
+		extend left
 		8	15	7.45	210	+04
+		extend right
 		17	16	10.13	021	+12
+		extend left
 		17	18	14.24	165	-46
+		extend right
 		19	18	4.62	326	+10
+		extend right
 		20	19	1.50	011	-11
+		extend left
 		20	21	4.55	174	-64
+		extend right
 		22	21	11.45	339	+24
+		extend left
 		22	23	9.93	168	-19
+		extend right
 		24	23	3.15	336	+50
+		extend left
 		24	25	11.35	167	-30
+		extend right
 		26	25	12.00	331	+11
+		extend right
 		26	27	24.65	154	-16
+		extend left
 		28	27	7.53	334	-05
+		extend right
 		28	29	7.62	187	-27
+		extend left
 		30	29	5.40	291	-02
+		extend right
 		30	31	15.05	098	+18
+		extend left
 		32	31	4.80	259	-56
+		extend right
 		32	33	17.60	080	+32
+		extend left
 		34	33	19.36	216	-33
+		extend right
 		34	35	25.20	009	+36
+		extend left
 		36	35	6.60	164	-18
+		extend right
 		36	37	31.30	335	+21
+		extend left
 		13	37	5.73	176	-37
+		extend left
 		38	8	11.30	067	-42
+		extend right
 		38	39	11.26	024	+80
+		extend left
 		40	39	6.76	202	-32
+		extend left
 		41	40	3.94	227	-50
 		units compass degrees
 	endcentreline

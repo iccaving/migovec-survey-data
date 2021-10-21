@@ -102,8 +102,12 @@ endlayout
 
 source 
 	map local-e
-	m-all-e@system_migovec [0 -1858 m] none
-	guillotine@vrtnarija.vrtnarija_vilinska.system_migovec [0 -1858 m] none
+	#m-beyond-consort-e@vrtnarija.vrtnarija_vilinska.system_migovec [0 -1858 m] none
+	#m-serpentine-e@vrtnarija.vrtnarija_vilinska.system_migovec [0 -1858 m] none
+
+	#guillotine@vrtnarija.vrtnarija_vilinska.system_migovec [0 -1858 m] none
+ 	m-all-e@system_migovec [0 -1858 m] none
+
 	glavobol@primadona.primadona_ubend_monatip.system_migovec [0 -1858 m] none
 	endmap
 endsource

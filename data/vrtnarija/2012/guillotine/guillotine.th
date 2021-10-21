@@ -24,6 +24,7 @@ survey guillotine -title "Guillotine"
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
+		extend right
 		2	1	4.07	293	-23
 		3	2	2.60	236	-34
 		4	3	2.20	267	-10
@@ -35,7 +36,9 @@ survey guillotine -title "Guillotine"
 		11	10	3.68	158	-28
 		6	11	4.20	227	-3
 		12	6	6.50	208	-15
+		extend right
 		13	12	4.10	201	-19
+		extend right
 		14	13	5.21	180	-45
 		15	14	5.51	209	-26
 		16	15	2.74	201	-5

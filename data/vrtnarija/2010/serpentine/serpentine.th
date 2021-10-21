@@ -24,6 +24,7 @@ survey serpentine -title "SERPENTINE"
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
+		extend right
 		1	2	5.64	092	39
 		2	3	2.98	109	50
 		3	4	4.30	048	11

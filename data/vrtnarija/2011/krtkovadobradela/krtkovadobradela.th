@@ -5,8 +5,10 @@ input krtkovadobradela-e.th2
 
 map m-all-e -projection extended
     krtkovadobradela-1e
+    krtkovadobradela-2e
 endmap
 
+join krtkovadobradela-1e krtkovadobradela-2e
 
 input krtkovadobradela-p.th2
 
@@ -30,9 +32,13 @@ centreline
     6	5	3	352	22
     6	7	5	142	22
     7	8	10	140	49
+    extend left
     9	8	1.90	320	-48
+    extend left
     10	9	6.90	349	0
+    extend left
     11	10	6.20	323	-4
+    extend right
     11	12	2.20	172	15
     12	13	4.30	140	26
     13	14	1.30	138	25

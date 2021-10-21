@@ -544,7 +544,7 @@ survey vrtnarija -title "Vrtnarija"
 	join eastlinks-1e@eastlinks stuckinparadise2-1e@stuckinparadise2
 	join salvation-1e@salvation kneekiller-1e@kneekiller
 	join roundpond-1e@roundpond itwillrain-1e@itwillrain
-	join krtkovadobradela-1e@krtkovadobradela letnadrugisvet-1e@letnadrugisvet
+	join krtkovadobradela-2e@krtkovadobradela letnadrugisvet-1e@letnadrugisvet
 	join krtekinorel-1e@krtekinorel krtkovadobradela-1e@krtkovadobradela
 	join herojtelemarkal1-1e@herojtelemarkal1 krtkovadobradela-1e@krtkovadobradela
 	join herojtelemarkal2-1e@herojtelemarkal2 herojtelemarkal1-1e@herojtelemarkal1
@@ -617,6 +617,7 @@ survey vrtnarija -title "Vrtnarija"
 	join minestrone2-1e@minestrone2 atlantis-2e@atlantis
 	join minestrone1-1p@minestrone1 minestrone2-1p@minestrone2
 	join apollo-1p@apollo milkyway-1p@milkyway
+	join milkyway-1e@milkyway beetlejuice-1e@beetlejuice
 	join milkyway-4p@milkyway dreamsforthesoul-1p@dreamsforthesoul
 	join guillotine2-1p@guillotine2 guillotine-1p@guillotine
 	join guillotine2-1p@guillotine2 the_queen_bed_chamber-1p@the_queen_bed_chamber
@@ -629,8 +630,10 @@ survey vrtnarija -title "Vrtnarija"
 	join watershipup-1p@watershipup watershipdown-1p@watershipdown
 	
 	join apollo-1e@apollo the_queen_bed_chamber-1e@the_queen_bed_chamber
-	join milkyway-1e@milkyway apollo-1e@apollo
+	join milkyway-3e@milkyway apollo-1e@apollo
 	join dreamsforthesoul-1e@dreamsforthesoul milkyway-1e@milkyway
+	join guillotine2-1e@guillotine2 the_queen_bed_chamber-1e@the_queen_bed_chamber
+	join guillotine2-1e@guillotine2 guillotine-1e@guillotine
 	join euphrates2-1e@euphrates2 euphrates-1e@euphrates
 	join xanadu-3e@xanadu euphrates2-1e@euphrates2
 	join xanadu-4e@xanadu friendship-1e@friendship

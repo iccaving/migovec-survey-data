@@ -7,7 +7,7 @@ scrap belladonna-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
 
 
 
-point 1900 4394 label -text "BELLADONNA" -align l -scale m
+point 1900 4394 u:label_MY -attr text "BELLADONNA" -align l -attr lvl 1 -attr style 6
 
 point 2131.2105 4245.9268 entrance -align l -scale xl -orientation 90
 

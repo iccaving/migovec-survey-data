@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap ubend2-1e -scale [338.0 -395.0 493.0 -636.0 0.0 0.0 3.87 0.0 m] -projection extended
 
-point 405.7235 1013.7275 label -text "U-BEND 571" -align tl -scale m
+point 405.7235 1013.7275 u:label_MY -attr text "U-BEND 571" -align tl -attr style 6 -attr lvl 1
 point 745.3051 1319.4619 entrance -align t -scale xl -orientation 180
 line wall 
   681.4661 850.8051

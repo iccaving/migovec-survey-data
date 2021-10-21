@@ -15,7 +15,7 @@ line wall -subtype invisible
   882.4541 -50.0077
 endline
 
-point 983.8671 942.8507 label -align l -text MONATIP -attr style 6
+point 983.8671 942.8507 u:label_MY -align l -attr text "MONATIP" -attr style 6 -attr lvl 1
 
 point 450.0 -0.0 entrance -align l -scale xl -orientation 90.0
 line wall -outline none -clip off

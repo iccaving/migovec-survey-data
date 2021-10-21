@@ -36,7 +36,7 @@ endline
 
 point 419.7174 485.8213 dig -scale xl
 point 283.4825 576.6812 entrance -align l -scale xl -orientation 90.0
-point 248.7948 580.6166 label -text PRIMADONA -align l -scale s
+point 248.7948 580.6166 u:label_MY -attr text "PRIMADONA" -align l -attr style 6 -attr lvl 1
 point 577.4813 387.731 label -text "<lang:end>Bear Pitch<lang:fr>M+" -align r -scale m
 line wall -subtype invisible
   329.0563 565.9603
