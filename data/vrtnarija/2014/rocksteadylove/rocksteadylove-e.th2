@@ -93,12 +93,7 @@ line wall
   114.0763 -193.5223 146.6695 -199.6335 153.4598 -200.3125
 endline
 
-line water-flow 
-  45.6242 -89.8278
-  74.1096 -118.313
-endline
-
-point -274.7167 39.8788 water-flow -orientation 165
+point -274.717 39.8788 water-flow -orientation 165.00000507213028
 line rock-border -close on
   13.4714 -76.3026
   13.4714 -76.3026 20.2144 -71.5447 23.8669 -73.6593
@@ -288,5 +283,6 @@ point -153.18 106.81 station -name 4
 point -169.01 106.81 station -name 3
 point -169.01 151.38 station -name 2
 point -183.54 147.2 station -name 1
+point 70.2857 -105.7083 water-flow -orientation 137.101
 endscrap
 

@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1282.000000 958.250000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap what_a_coincidence-e1 -scale [0.0 0.0 1024.0 700.2833165491776 0.0 0.0 238.32 162.98] -projection extended
+scrap what_a_coincidence-e1 -projection extended -scale [0.0 0.0 1024.0 700.2833165491776 0.0 0.0 238.32 162.98]
 
 line wall -subtype presumed
   7400.32 -759.4121
@@ -85,22 +84,21 @@ line wall
   5374.0292 -1945.7214 5402.5538 -1957.0368 5402.5538 -1957.0368
 endline
 
-point 5864.7132 -1712.4658 station -name 7
-point 7718.7848 -1392.7108 station -name 5
-point 5339.3628 -1398.237 station -name 13
-point 5210.1624 -1441.3038 station -name 12
-point 5061.79 -1636.5402 station -name 11
-point 5234.0576 -1857.6167 station -name 10
-point 5409.196 -1903.5547 station -name 9
-point 5633.1436 -1777.2252 station -name 8
-point 7169.808 -1504.4686 station -name 6
+point 5864.71 -1712.47 station -name 7
+point 7718.78 -1392.71 station -name 5
+point 5339.36 -1398.24 station -name 13
+point 5210.16 -1441.3 station -name 12
+point 5061.79 -1636.54 station -name 11
+point 5234.06 -1857.62 station -name 10
+point 5409.2 -1903.55 station -name 9
+point 5633.14 -1777.23 station -name 8
+point 7169.81 -1504.47 station -name 6
 endscrap
 
 
-scrap what_a_coincidence-e3 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap what_a_coincidence-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
-point 2404.9722 -1487.9558 label -text "What a Coincidence!" -align b
-
+point 2392.5542 -1743.7657 label -align b -text "What a Coincidence!"
 line wall -subtype blocks
   -2127.5023 -878.5637
   -2127.5023 -878.5637 -1771.483 -780.9455 -1754.2563 -780.9455
@@ -189,30 +187,30 @@ line wall
   4805.4612 -1421.1335
 endline
 
-point 4792.2652 -1393.7259 station -name 13
-point -2170.5691 -806.7856 station -name 30
-point -1722.6739 -691.9407 station -name 29
-point -671.8428 -706.2963 station -name 28
-point -683.3273 -970.4396 station -name 27
-point 200.9786 -979.053 station -name 26
-point 241.1743 -1136.9648 station -name 25
-point 867.0792 -1099.6402 station -name 24
-point 1013.5065 -1154.1915 station -name 23
-point 1007.7642 -944.5995 station -name 22
-point 1220.2274 -824.0124 station -name 21
-point 1579.1178 -849.8525 station -name 20
-point 2064.3376 -964.6974 station -name 19
-point 2876.8654 -973.3108 station -name 18
-point 3261.596 -1237.4541 station -name 17
-point 3752.558 -1263.2942 station -name 16
-point 4433.0144 -1576.2466 station -name 15
-point 4700.0288 -1481.4996 station -name 14
+point 4792.27 -1393.73 station -name 13
+point -2170.57 -806.786 station -name 30
+point -1722.67 -691.941 station -name 29
+point -671.843 -706.296 station -name 28
+point -683.327 -970.44 station -name 27
+point 200.979 -979.053 station -name 26
+point 241.174 -1136.96 station -name 25
+point 867.079 -1099.64 station -name 24
+point 1013.51 -1154.19 station -name 23
+point 1007.76 -944.6 station -name 22
+point 1220.23 -824.012 station -name 21
+point 1579.12 -849.852 station -name 20
+point 2064.34 -964.697 station -name 19
+point 2876.87 -973.311 station -name 18
+point 3261.6 -1237.45 station -name 17
+point 3752.56 -1263.29 station -name 16
+point 4433.01 -1576.25 station -name 15
+point 4700.03 -1481.5 station -name 14
 endscrap
 
 
-scrap what_a_coincidence-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap what_a_coincidence-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
-line wall -subtype clay -id e1_l8
+line wall -id e1_l8 -subtype clay
   8679.4054 -585.7091
   8679.4054 -585.7091 8731.0856 -686.1984 8782.7658 -723.523
   8834.446 -760.8476 8817.2194 -769.461 8883.2552 -798.1722
@@ -220,7 +218,7 @@ line wall -subtype clay -id e1_l8
   9026.8114 -895.7904 9087.0104 -1031.3369 9087.0104 -1031.3369
 endline
 
-line wall -subtype clay -id e1_l2
+line wall -id e1_l2 -subtype clay
   8752.0292 -1266.839
   8752.0292 -1266.839 8841.3576 -1222.1748 8861.6596 -1222.1748
   8881.9612 -1222.1748 9057.7272 -1204.3566 9057.7272 -1204.3566
@@ -260,10 +258,10 @@ line wall -id e1_l7
   8854.017 -489.9726
 endline
 
-point 9885.3512 -1395.3659 station -name 5
-point 9078.5656 -1200.1295 station -name 4
-point 8742.6444 -1182.9028 station -name 3
-point 8696.7064 -1871.9723 station -name 2
-point 8314.8468 -2245.2183 station -name 1
+point 9885.35 -1395.37 station -name 5
+point 9078.57 -1200.13 station -name 4
+point 8742.64 -1182.9 station -name 3
+point 8696.71 -1871.97 station -name 2
+point 8314.85 -2245.22 station -name 1
 endscrap
 

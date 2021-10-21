@@ -47,9 +47,10 @@ code metapost
       draw (-10, 3*ysize/5) -- (-7, 3*ysize/5);
       draw (-10, 4*ysize/5) -- (-7, 4*ysize/5);
        fi fi;
+
       if xpos <0 : draw (-10,0) -- (0,0) fi;
       pickup PenD;
-      draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.25;
+      draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.5;
      enddef;
 
 

@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 924.499986 863.249987
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap prima1-e1 -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m] -projection extended
+scrap prima1-e1 -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m]
 
 line rock-border -close on
   420.4229 503.01
@@ -34,17 +33,17 @@ line wall:invisible
   513.7932 426.6521
 endline
 
-point 419.7174 485.8213 dig -scale xl
-point 283.4825 576.6812 entrance -align l -scale xl -orientation 90.0
-point 248.7948 580.6166 u:label_MY -attr text "PRIMADONA" -align l -attr style 6 -attr lvl 1
-point 577.4813 387.731 label -text "<lang:end>Bear Pitch<lang:fr>M+" -align r -scale m
+point 419.717 485.821 dig -scale xl
+point 283.483 576.681 entrance -align l -orientation 90.0 -scale xl
+point 248.795 580.617 u:label_MY -align l -attr text PRIMADONA -attr style 6 -attr lvl 1
+point 577.481 387.731 label -align r -text "<lang:end>Bear Pitch<lang:fr>M+"
 line wall -subtype invisible
   329.0563 565.9603
   305.0 557.75
 endline
 
-point 538.5 213.75 label -text "Spiral Climb" -align t -scale s
-point 689.5 119.25 label -text "Lost and Found" -align bl -scale s
+point 538.5 213.75 label -align t -scale s -text "Spiral Climb"
+point 689.5 119.25 label -align bl -scale s -text "Lost and Found"
 point 309.0 560.75 station -name 35
 point 319.25 561.5 station -name 34
 point 384.25 500.75 station -name 33
@@ -157,17 +156,17 @@ line wall -id p_e1_l4
   527.094 417.7935 526.0271 420.8443 526.0271 420.8443
 endline
 
-line label -text "Bear pitch" -scale s
+line label -scale s -text "Bear pitch"
   470.0 362.75
   470.0 362.75 515.0 325.75 555.0 312.75
 endline
 
-line label -text "Entrance chamber" -scale s
+line label -scale s -text "Entrance chamber"
   280.0 495.75
   280.0 495.75 345.0 473.75 384.0 460.75
 endline
 
-line label -text "Entrance series" -scale s
+line label -scale s -text "Entrance series"
   493.0 529.75
   493.0 529.75 666.0 397.75 785.0 281.75
 endline
@@ -379,13 +378,26 @@ line wall
   327.7143 561.8139 329.0563 565.9603 329.0563 565.9603
 endline
 
-line wall 
+line wall -id alt1
   305.0 557.75
-  307.5 558.25 310.75 556.75 312.0 554.75
+  altitude .
+  305.5293 557.8558 306.0922 557.8721 306.6626 557.8129
+  306.8401 557.7945 307.0182 557.7688 307.1963 557.7362
+endline
+
+line wall 
+  307.1963 557.7362
+  307.5236 557.6763 307.8506 557.5933 308.1727 557.4897
+endline
+
+line wall 
+  308.1726 557.4897
+  308.4004 557.4164 308.6256 557.3329 308.8466 557.24
+  310.1782 556.6803 311.3552 555.7817 312.0 554.75
   313.25 552.75 316.5 546.75 318.25 544.75
 endline
 
-line wall -subtype blocks -outline none -clip off
+line wall -clip off -outline none -subtype blocks
   272.0 516.75
   272.0 516.75 284.0 538.0 284.5 540.25
   285.0 542.5 283.5 545.75 286.25 548.0
@@ -402,7 +414,7 @@ point 642.0 253.75 station -name 12
 endscrap
 
 
-scrap prima1-e3 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap prima1-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall -close on -outline in
   1257.8394 462.9452
@@ -498,7 +510,7 @@ line rock-border -close on
   1379.7421 425.3247
 endline
 
-line wall -subtype blocks -id p_e3_l2
+line wall -id p_e3_l2 -subtype blocks
   1376.9552 334.8889
   1376.9552 334.8889 1384.5935 345.4497 1383.5329 347.571
   1382.4722 349.6924 1384.0909 358.6126 1383.7374 361.441
@@ -507,7 +519,7 @@ line wall -subtype blocks -id p_e3_l2
   1403.5133 386.0969 1390.1986 395.1796 1401.5123 399.4221
 endline
 
-line wall -subtype blocks -id p_e3_l1
+line wall -id p_e3_l1 -subtype blocks
   1276.75 331.5
   1312.9608 323.1283
   1324.9822 321.0428
@@ -540,15 +552,15 @@ line wall -id p_e3_l4
   1247.3584 511.4292 1244.7892 517.9883 1244.7892 517.9883
 endline
 
-point 1168.1203 480.1159 station -name 12
-point 1317.4897 452.6345 station -name 11
-point 1395.4074 436.7923 station -name 10
-point 1304.8806 370.9986 station -name 9
-point 1305.0422 340.4458 station -name 8
+point 1168.12 480.116 station -name 12
+point 1317.49 452.635 station -name 11
+point 1395.41 436.792 station -name 10
+point 1304.88 370.999 station -name 9
+point 1305.04 340.446 station -name 8
 endscrap
 
 
-scrap prima1-e2 -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m] -projection extended
+scrap prima1-e2 -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m]
 
 line wall:blocks -id p_e2_l1
   720.4509 225.393
@@ -667,7 +679,7 @@ point 741.25 217.5 station -name 4
 point 750.0 165.25 station -name 3
 point 778.5 165.5 station -name 2
 point 793.5 168.5 station -name 1
-line label -text "Lost and Found Junction" -scale s
+line label -scale s -text "Lost and Found Junction"
   704.0 139.5
   704.0 139.5 741.25 134.0 792.5 140.5
 endline

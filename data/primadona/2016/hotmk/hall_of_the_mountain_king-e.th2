@@ -2,15 +2,14 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 4826.000000 5500.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap hall_of_the_mountain_king-e1 -scale [0 0 100 0 0 0 1 0 m] -projection extended
+scrap hall_of_the_mountain_king-e1 -projection extended -scale [0 0 100 0 0 0 1 0 m]
 
 line wall:invisible 
   3227.8602 1501.6656
   3470.6529 2324.1706
 endline
 
-point 1721.5598 2845.7491 continuation -scale l
+point 1721.56 2845.75 continuation -scale l
 line wall:invisible 
   1826.0995 2814.8505
   1655.128 2824.1201
@@ -88,16 +87,16 @@ line wall:blocks
   3050.7088 1571.7021 3209.321 1516.0849 3227.8602 1501.6656
 endline
 
-point 2776.7424 1716.9249 station -name 6
-point 2461.0632 1698.3858 station -name 5
-point 1640.7087 2316.8702 station -name 4
-point 1454.8029 2314.2954 station -name 3
-point 1172.5969 2285.4568 station -name 2
-point 877.5165 1979.047 station -name 1
+point 2776.74 1716.92 station -name 6
+point 2461.06 1698.39 station -name 5
+point 1640.71 2316.87 station -name 4
+point 1454.8 2314.3 station -name 3
+point 1172.6 2285.46 station -name 2
+point 877.516 1979.05 station -name 1
 endscrap
 
 
-scrap hall_of_the_mountain_king-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap hall_of_the_mountain_king-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall 
   7753.3104 3061.7055
@@ -117,7 +116,7 @@ line wall
   6873.546 2301.3772
 endline
 
-point 7572.1846 1915.2959 label -text "Hall of the<br>Mountain King" -align r
+point 7716.9214 1893.5853 label -align r -text "Hall of the<br>Mountain King"
 line wall -subtype blocks
   6160.7358 650.9278
   6334.9196 588.4534
@@ -187,11 +186,11 @@ line wall
   7840.7045 2974.3114 7852.357 2993.2468 7852.357 2993.2468
 endline
 
-point 7859.1474 3023.9718 station -name 12
-point 7698.4754 2991.0134 station -name 11
-point 7578.782 2979.684 station -name 10
-point 7399.0014 1706.3692 station -name 9
-point 7104.0478 846.266 station -name 8
-point 6354.392 605.1366 station -name 7
+point 7859.15 3023.97 station -name 12
+point 7698.48 2991.01 station -name 11
+point 7578.78 2979.68 station -name 10
+point 7399.0 1706.37 station -name 9
+point 7104.05 846.266 station -name 8
+point 6354.39 605.137 station -name 7
 endscrap
 

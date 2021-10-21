@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
   -183.6 -131.54
@@ -133,9 +132,9 @@ endline
 endscrap
 
 
-scrap olympicrift-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap olympicrift-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -29.2583 -35.0468 u:label_MY -attr lvl 1 -attr text "Olympic Rift" -align tl
+point -43.2583 -35.0468 u:label_MY -align tl -attr lvl 1 -attr text "Olympic Rift"
 line wall 
   196.3787 126.0376
   199.7397 126.7579 207.9021 125.3174 209.5826 126.2777

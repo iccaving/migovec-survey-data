@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 855.000000 1111.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap lost_in_a_dream_2-e1 -scale [330.0 -733.0 527.0 -734.0 0.0 0.0 350 0.0 cm] -projection extended
+scrap lost_in_a_dream_2-e1 -projection extended -scale [330.0 -733.0 527.0 -734.0 0.0 0.0 350 0.0 cm]
 
 line wall -subtype invisible
   194.1896 744.982
@@ -55,10 +54,11 @@ line wall
   517.2505 447.813
 endline
 
-point 179.7549 724.8451 station -name 4
-point 269.2163 653.6921 station -name 3
-point 417.3477 532.1911 station -name 2
-point 477.6821 498.9032 station -name 1
-point -410.0 940.0 label -text "Lost in a Dream" -align tr
+point 179.755 724.845 station -name 4
+point 269.216 653.692 station -name 3
+point 417.348 532.191 station -name 2
+point 477.682 498.903 station -name 1
+
+point 356.0052 446.8719 label -align bl -text "Lost in a Dream"
 endscrap
 

@@ -29,10 +29,10 @@ line wall -subtype invisible
   -76.8867 -132.9113
 endline
 
-point -58.3962 346.982 entrance -orientation 152.05224
-point 1.0186 349.6981 entrance -orientation 188.60933
-point -24.4873 433.0894 u:label_MY -align t -attr lvl 2 -attr text M16 -attr style 6
-point -128.3358 54.3221 u:label_MY -align l -attr lvl 2 -attr text "Vhodni Del" -scale l
+point -58.3962 346.982 entrance -orientation 152.05224949427995
+point 1.0186 349.698 entrance -orientation 188.60931033702158
+point -24.4873 433.089 u:label_MY -align t -attr lvl 1 -attr text M16 -attr style 6
+point -128.336 54.3221 u:label_MY -align l -attr lvl 2 -attr text "Vhodni Del" -scale l
 line wall 
   318.5752 -302.4904
   304.1709 -310.8929
@@ -206,10 +206,15 @@ line wall
   -43.0929 295.5283
 endline
 
-line wall 
+line wall -id alt1
   -67.7002 332.3793
+  altitude .
   -60.6181 325.8974
   -60.6181 325.8974 -57.9773 322.1763 -58.2174 321.4561
+endline
+
+line wall 
+  -58.2174 321.4561
   -58.4575 320.7358 -57.8573 315.3342 -58.0974 314.9741
   -58.3374 314.614 -56.777 311.4931 -56.777 311.4931
   -54.4963 310.2927

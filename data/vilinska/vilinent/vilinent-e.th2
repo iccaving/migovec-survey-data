@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line survey 
   455.29 165.7
@@ -108,10 +107,11 @@ endline
 endscrap
 
 
-scrap vilinent-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap vilinent-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -57.5922 290.9311 label -text "VILINSKA<br>JAMA" -align l -scale l
-point 19.0752 331.6414 entrance -align tl -scale l -orientation 135
+point -11.6541 284.0404 u:label_MY -align l -attr text "VILINSKA JAMA" -attr style 6
+
+point 19.0752 331.641 entrance -align tl -orientation 135.0 -scale l
 line rock-border -close on
   295.7156 214.572
   295.8853 203.7076
@@ -191,8 +191,13 @@ line wall:blocks
   133.4799 240.0717
 endline
 
-line wall 
+line wall -id alt1
   63.3789 263.1186
+  65.5529 262.4915
+  altitude .
+  67.6496 261.8867
+  69.1142 261.4642
+  70.4531 261.078
   88.3464 255.9165
   97.4691 251.115
 endline

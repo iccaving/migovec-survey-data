@@ -100,22 +100,23 @@ layout ee
 
 	code tex-map
 	\def\maplayout{
-	\legendbox{0}{99}{NW}{\the\cavename}
-	\legendbox{5}{97}{NW}{\size[10]\the\comment}
-	\legendbox{5}{80}{NW}{\scalebar}
-	\legendbox{5}{87}{NW}{\size[10]{\sl Depth:} \the\cavedepth}
-	\legendbox{5}{85}{NW}{\size[10]{\sl Length:} \the\cavelength}
+	\legendbox{1}{99}{NW}{\size[60]\the\cavename}
+	\legendbox{1}{94}{NW}{\size[10]\the\comment}
+	\legendbox{1}{72}{NW}{\scalebar}
+	\legendbox{1}{17}{NW}{\size[10]{\sl Depth:} \the\cavedepth}
+	\legendbox{1}{15}{NW}{\size[10]{\sl Length:} \the\cavelength}
+
+	%\legendbox{50}{99}{NE}{\the\cavename}
+	\legendbox{99}{94}{NE}{\size[10]\the\comment}
+	\legendbox{99}{72}{NE}{\scalebar}
+	%\legendbox{99}{17}{NE}{\size[10]{\sl Depth:} \the\cavedepth}
+	%\legendbox{55}{15}{NE}{\size[10]{\sl Length:} \the\cavelength}
 	}
 endlayout
 
 source 
 	map local-e
-	#m-beyond-consort-e@vrtnarija.vrtnarija_vilinska.system_migovec [0 -1858 m] none
-	#m-serpentine-e@vrtnarija.vrtnarija_vilinska.system_migovec [0 -1858 m] none
-
-	#guillotine@vrtnarija.vrtnarija_vilinska.system_migovec [0 -1858 m] none
- 	m-all-e@system_migovec [0 -1858 m] none
- 	m2_2012_resurvey@M2.m2m16m18.system_migovec [0 -1858 m] none
+	m-all-e@system_migovec [0 -1858 m] none
 	glavobol@primadona.primadona_ubend_monatip.system_migovec [0 -1858 m] none
 	endmap
 endsource

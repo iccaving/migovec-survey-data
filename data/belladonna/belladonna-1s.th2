@@ -2,15 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 2963.200000 4596.300000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 
-scrap belladonna-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
-
-
-
-point 1900 4394 u:label_MY -attr text "BELLADONNA" -align l -attr lvl 1 -attr style 6
-
-point 2131.2105 4245.9268 entrance -align l -scale xl -orientation 90
-
+point 1900.0 4394.0 u:label_MY -align l -attr text BELLADONNA -attr lvl 1 -attr style 6
+point 2131.21 4245.93 entrance -align l -orientation 90.0 -scale xl
 line wall 
   3128.3078 3483.7423
   3112.4838 3631.0284
@@ -82,8 +77,15 @@ line wall
   2440.8714 4246.952 2425.0472 4247.5606 2422.917 4246.6477
   2420.7868 4245.7348 2414.092 4245.7348 2412.5706 4245.7348
   2411.049 4245.7348 2397.9636 4249.9951 2393.0946 4249.9951
-  2388.2258 4249.9951 2381.2266 4251.821 2379.0964 4252.4296
-  2376.9662 4253.0382 2361.4002 4244.8774 2359.9018 4251.5445
+  2391.2624 4249.9951 2389.1284 4250.2537 2387.0658 4250.6087
+  2383.6474 4251.197 2380.425 4252.05 2379.0964 4252.4296
+  2378.2185 4252.6804 2375.0584 4251.4417 2371.5415 4250.3654
+endline
+
+line wall -id alt1
+  2371.5415 4250.3654
+  altitude .
+  2366.5251 4248.8301 2360.7827 4247.6251 2359.9018 4251.5445
   2358.4034 4258.2115 2352.6214 4260.9503 2352.6214 4260.9503
 endline
 
@@ -118,10 +120,10 @@ line wall -subtype blocks
   2840.3726 3679.5737
 endline
 
-point 2552.8088 4146.9271 station -name 1
-point 2701.8734 3719.387 station -name 0
-point 2447.5868 4230.379 station -name 2
-point 2353.8546 4245.4972 station -name 3
-point 2895.807 3724.3695 station -name 4
+point 2552.81 4146.93 station -name 1
+point 2701.87 3719.39 station -name 0
+point 2447.59 4230.38 station -name 2
+point 2353.85 4245.5 station -name 3
+point 2895.81 3724.37 station -name 4
 endscrap
 

@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap izent1-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 138.4563 1410.8926 u:label_MY -align t -attr lvl 2 -attr text "M2 (Kavkna jama)" -attr style 6
+point 139.9876 1334.3292 u:label_MY -align tl -attr lvl 1 -attr text "M2 (Kavkna jama)" -attr style 6
 line u:texture_MY 
   294.3429 1326.8678
   294.3429 1326.8678 293.8478 1271.9001 294.3279 1268.059
@@ -47,7 +47,7 @@ area debris
   izent1-1e_debris_1
 endarea
 
-point 197.8334 1300.2287 entrance -orientation 138.76299
+point 197.833 1300.23 entrance -orientation 138.76299440526233
 line wall 
   636.7835 877.7697
   636.7835 870.0539 630.9605 830.8473 628.4333 828.3212
@@ -156,8 +156,19 @@ endline
 
 line wall 
   220.499 1200.1552
-  220.499 1200.1552 242.1352 1196.5467 242.1352 1186.9057
-  242.1352 1181.3139 249.5266 1172.3956 253.3111 1168.6111
+  220.499 1200.1552 234.6048 1197.8026 240.0373 1191.8215
+endline
+
+line wall -id alt1
+  240.0373 1191.8215
+  altitude .
+  241.3329 1190.395 242.1352 1188.7622 242.1352 1186.9057
+  242.1352 1185.3376 242.7165 1183.5079 243.6365 1181.6031
+endline
+
+line wall 
+  243.6365 1181.6031
+  245.9971 1176.7157 250.5879 1171.3343 253.3111 1168.6111
   254.3164 1167.6058 253.3111 1159.9626 253.3111 1158.3345
   253.3111 1148.5086 280.5 1139.0 280.5 1139.0
   283.96 1135.74 295.63 1125.25 297.5 1121.5
@@ -183,21 +194,21 @@ line wall
   296.0889 1286.9739 294.3429 1326.8678 294.3429 1326.8678
 endline
 
-point 413.4744 723.962 station -name 1
+point 413.474 723.962 station -name 1
 point 431.713 726.076 station -name 2
-point 466.4493 733.3404 station -name 3
-point 521.1238 764.0248 station -name 4
-point 578.0263 796.7404 station -name 5
-point 599.5396 786.5433 station -name 6
-point 640.1827 807.1861 station -name 7
-point 673.5926 830.772 station -name 8
-point 648.7839 890.3378 station -name 9
-point 639.3744 892.4621 station -name 10
-point 607.3635 915.219 station -name 11
-point 592.6586 904.8561 station -name 12
-point 551.5906 929.5819 station -name 13
-point 430.3866 1002.7748 station -name 14
-point 368.8415 1021.1378 station -name 15
-point 254.4459 1187.3477 station -name 16
+point 466.449 733.34 station -name 3
+point 521.124 764.025 station -name 4
+point 578.026 796.74 station -name 5
+point 599.54 786.543 station -name 6
+point 640.183 807.186 station -name 7
+point 673.593 830.772 station -name 8
+point 648.784 890.338 station -name 9
+point 639.374 892.462 station -name 10
+point 607.364 915.219 station -name 11
+point 592.659 904.856 station -name 12
+point 551.591 929.582 station -name 13
+point 430.387 1002.77 station -name 14
+point 368.841 1021.14 station -name 15
+point 254.446 1187.35 station -name 16
 endscrap
 

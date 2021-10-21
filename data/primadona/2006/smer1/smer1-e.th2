@@ -2,10 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 852.000000 1108.750000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap smer1-e1 -projection extended -scale [327.0 -736.0 541.0 -735.0 0 0 30 0 m]
 
-scrap smer1-e1 -scale [327.0 -736.0 541.0 -735.0 0 0 30 0 m] -projection extended
-
-point 774.8917 1000.1397 label -text Smer1 -align t -scale l
+point 483.297 978.1326 label -align t -scale l -text Smer1
 line wall 
   1529.8166 874.4326
   1529.8166 874.4326 1509.2624 869.7345 1506.9134 873.8453
@@ -66,21 +65,21 @@ line wall:clay
   1501.4267 845.4096 1515.3183 844.7974 1531.0251 844.197
 endline
 
-point 1473.746 856.2593 station -name 12
-point 1392.3557 893.6324 station -name 11
-point 1320.101 899.8613 station -name 10
-point 1261.1346 913.98 station -name 9
-point 1163.9645 926.8529 station -name 8
-point 946.37 927.2682 station -name 7
-point 829.6829 904.4291 station -name 6
-point 653.1988 921.0394 station -name 5
-point 571.8085 874.1154 station -name 4
-point 355.4597 759.5045 station -name 3
-point 181.0519 637.8343 station -name 2
+point 1473.75 856.259 station -name 12
+point 1392.36 893.632 station -name 11
+point 1320.1 899.861 station -name 10
+point 1261.13 913.98 station -name 9
+point 1163.96 926.853 station -name 8
+point 946.37 927.268 station -name 7
+point 829.683 904.429 station -name 6
+point 653.199 921.039 station -name 5
+point 571.808 874.115 station -name 4
+point 355.46 759.505 station -name 3
+point 181.052 637.834 station -name 2
 endscrap
 
 
-scrap smer1-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap smer1-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall 
   1932.9717 635.7107
@@ -124,10 +123,10 @@ line wall:clay
   1705.9951 802.7867 1731.8346 792.216 1731.8346 792.216
 endline
 
-point 1885.4035 683.5726 station -name 17
-point 1750.627 805.1357 station -name 16
-point 1738.5881 805.4294 station -name 15
-point 1611.6112 856.6746 station -name 14
-point 1545.1702 856.6746 station -name 13
+point 1885.4 683.573 station -name 17
+point 1750.63 805.136 station -name 16
+point 1738.59 805.429 station -name 15
+point 1611.61 856.675 station -name 14
+point 1545.17 856.675 station -name 13
 endscrap
 

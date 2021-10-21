@@ -2,11 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1528.000000 1552.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap ubend2-1e -projection extended -scale [338.0 -395.0 493.0 -636.0 0.0 0.0 3.87 0.0 m]
 
-scrap ubend2-1e -scale [338.0 -395.0 493.0 -636.0 0.0 0.0 3.87 0.0 m] -projection extended
-
-point 405.7235 1013.7275 u:label_MY -attr text "U-BEND 571" -align tl -attr style 6 -attr lvl 1
-point 745.3051 1319.4619 entrance -align t -scale xl -orientation 180
+point 465.7235 1013.7275 u:label_MY -align tl -attr text "U-BEND 571" -attr style 6 -attr lvl 1
+point 745.305 1319.46 entrance -align t -orientation 180.0 -scale xl
 line wall 
   681.4661 850.8051
   692.9746 829.4322
@@ -37,6 +36,11 @@ line wall
   792.4407 689.6864
   792.4407 689.6864 782.5763 739.0085 781.7542 744.7627
   780.9322 750.517 766.1356 801.4831 766.1356 801.4831
+endline
+
+line wall -id alt1
+  766.1356 801.4831
+  altitude .
   772.7119 845.8729
   774.3559 851.6271
 endline
@@ -49,10 +53,10 @@ line wall -subtype blocks
   1009.4576 485.0
 endline
 
-point 708.6356 851.7723 station -name 5
-point 708.5629 520.2328 station -name 4
-point 835.2789 498.1447 station -name 3
-point 883.2754 498.1525 station -name 2
-point 1001.4428 512.5381 station -name 1
+point 708.636 851.772 station -name 5
+point 708.563 520.233 station -name 4
+point 835.279 498.145 station -name 3
+point 883.275 498.152 station -name 2
+point 1001.44 512.538 station -name 1
 endscrap
 

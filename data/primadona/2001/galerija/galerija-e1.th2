@@ -1,10 +1,9 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 3571.000000 4948.000000
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {136.000000 1 1.0} {4804.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2001/galerija/galerija_extend.gif" 0 {}
 
-##XTHERION## xth_me_image_insert {136.000000 1 1.0} {4804.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/primadona/2001/galerija/galerija_extend.gif" 0 {}
-
-scrap galerija-e1 -scale [1382.0 -3962.0 2948.0 -3976.0 0.0 0.0 100 0.0 m] -projection extended
+scrap galerija-e1 -projection extended -scale [1382.0 -3962.0 2948.0 -3976.0 0.0 0.0 100 0.0 m]
 
 line wall:invisible 
   1282.0 2675.0
@@ -44,9 +43,8 @@ line wall
   1181.6567 3165.0
 endline
 
-point 2835.0 2290.0 label -text Karstaway -align t
-
-line rock-border -close on -clip off
+point 2835.0 2290.0 label -align t -text Karstaway
+line rock-border -clip off -close on
   1365.0 2681.0
   1348.0 2664.0
   1350.0 2647.0
@@ -54,7 +52,7 @@ line rock-border -close on -clip off
   1386.0 2670.0
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   1369.0 2732.0
   1336.0 2716.0
   1335.0 2674.0
@@ -64,21 +62,21 @@ endline
 area water
 endarea
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   1408.0 2709.0
   1378.0 2701.0
   1380.0 2679.0
   1413.0 2689.0
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   1435.0 2692.0
   1409.0 2685.0
   1406.0 2647.0
   1450.0 2661.0
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   1485.0 2705.0
   1482.0 2702.0 1463.0 2684.0 1461.0 2679.0
   1459.0 2674.0 1501.0 2661.0 1501.0 2661.0
@@ -152,7 +150,7 @@ point 1330.0 3078.0 station -name 18
 point 1326.0 2740.0 station -name 17
 point 1396.0 2744.0 station -name 16
 point 1452.0 2700.0 station -name 15
-point 1238.0 2530.0 remark -text "Immobilisation area" -align br -scale xl
+point 1238.0 2530.0 remark -align br -scale xl -text "Immobilisation area"
 line arrow 
   1258.0 2546.0
   1428.0 2720.0
@@ -161,7 +159,7 @@ endline
 endscrap
 
 
-scrap galerija-e3 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap galerija-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 point 1068.0 3300.0 station -name 22
 point 1138.0 3238.0 station -name 21
@@ -200,9 +198,7 @@ line wall
   427.0 3428.0
 endline
 
-point 0 3428.0 label -text "Sejna<br>soba" -align b
- 
-
+point 70.0 3376.0 label -align b -text "Sejna<br>soba"
 point 517.0 3455.0 camp -scale xl
 line wall 
   427.0 3346.0

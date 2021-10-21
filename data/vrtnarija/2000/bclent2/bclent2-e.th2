@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap bclent2-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap bclent2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line wall:invisible 
   554.1289 882.8674
@@ -41,7 +40,7 @@ line wall -close on -outline in
   335.9478 1051.1314 340.022 1053.1684 340.022 1053.1684
 endline
 
-point 223.893 1187.7696 u:label_MY -attr lvl 1 -attr text "VRTNARIJA" -align tr -scale l -attr style 6 # boxed label
+point 223.893 1187.77 u:label_MY -align tr -attr lvl 1 -attr text VRTNARIJA -attr style 6 -scale l
 line wall 
   361.548 996.7779
   362.0282 996.7779
@@ -91,10 +90,20 @@ line wall -subtype blocks
   440.7717 965.0884
 endline
 
-line wall -subtype blocks
+line wall -id alt1
   185.3354 1126.8967
-  185.3354 1126.8967 191.0971 1123.5358 193.0177 1122.5755
-  194.9382 1121.6152 215.1043 1108.6513 217.0248 1107.2109
+  185.3354 1126.8967 186.1106 1126.4445 187.1871 1125.8245
+  altitude .
+  187.8541 1125.4403 188.6367 1124.9917 189.4222 1124.5463
+  190.1293 1124.1455 190.8387 1123.7472 191.4683 1123.4008
+  192.0883 1123.0597 192.6309 1122.7689 193.0177 1122.5755
+  193.2761 1122.4463 193.8649 1122.0997 194.6952 1121.5931
+  195.3284 1121.2067 196.1021 1120.7273 196.9768 1120.1802
+endline
+
+line wall:blocks 
+  196.9768 1120.1802
+  203.4781 1116.1137 215.5598 1108.3097 217.0248 1107.2109
   218.9454 1105.7704 240.5519 1096.1676 242.4725 1095.2073
   244.393 1094.247 242.4725 1092.8066 247.754 1089.4456
   253.0356 1086.0846 268.8803 1077.442 270.3208 1076.4817
@@ -153,22 +162,22 @@ line wall
   427.8078 1062.0774 438.371 1062.0774 438.371 1062.0774
 endline
 
-point 143.5629 1171.5501 entrance -orientation 133.42853
-point 563.2081 884.9937 station -name 15
-point 515.0581 903.5037 station -name 14
-point 515.0581 938.1437 station -name 13
-point 461.3481 935.3137 station -name 12
-point 461.3481 974.2837 station -name 11
-point 429.1681 979.9537 station -name 10
-point 416.8181 971.9237 station -name 9
-point 399.4881 980.7437 station -name 8
-point 399.4881 1028.5437 station -name 7
-point 383.0181 1042.3937 station -name 6
-point 383.0181 1059.8037 station -name 5
-point 341.7081 1058.3037 station -name 4
-point 318.9681 1064.4437 station -name 3
-point 290.2381 1070.5037 station -name 2
-point 234.5681 1106.6537 station -name 1
-point 191.8681 1130.3537 station -name 0
+point 143.563 1171.55 entrance -orientation 133.42853868950914
+point 563.208 884.994 station -name 15
+point 515.058 903.504 station -name 14
+point 515.058 938.144 station -name 13
+point 461.348 935.314 station -name 12
+point 461.348 974.284 station -name 11
+point 429.168 979.954 station -name 10
+point 416.818 971.924 station -name 9
+point 399.488 980.744 station -name 8
+point 399.488 1028.54 station -name 7
+point 383.018 1042.39 station -name 6
+point 383.018 1059.8 station -name 5
+point 341.708 1058.3 station -name 4
+point 318.968 1064.44 station -name 3
+point 290.238 1070.5 station -name 2
+point 234.568 1106.65 station -name 1
+point 191.868 1130.35 station -name 0
 endscrap
 

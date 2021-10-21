@@ -154,21 +154,13 @@ endscrap
 
 scrap AJA-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 254.8787 -165.7815 water-flow -orientation 99.7619
+point 73.262 -73.5675 water-flow -orientation 99.7619
 line wall:invisible 
   480.1435 -241.9923
   486.3351 -262.5435
   559.1733 -260.6758
   565.609 -240.0717
-endline
-
-line water-flow 
-  189.4141 -122.7646
-  217.8994 -151.2499
-endline
-
-line water-flow 
-  19.6793 -57.3384
-  56.1893 -74.3632
 endline
 
 area water
@@ -297,7 +289,7 @@ line wall -close on -outline in
   -512.0436 139.1835 -504.5645 142.8136 -504.5645 142.8136
 endline
 
-point 613.7844 -202.5167 u:label_MY -align r -attr text "AJA!?" -attr lvl 1
+point 613.784 -202.517 u:label_MY -align r -attr text "AJA!?" -attr lvl 1
 line wall -id alt1
   565.609 -240.0717
   altitude .
@@ -394,5 +386,6 @@ point 400.57 -193.11 station -name 4
 point 470.38 -209.17 station -name 3
 point 492.35 -211.14 station -name 2
 point 554.5 -233.74 station -name 1
+point -253.5886 8.9975 water-flow -orientation 128.705
 endscrap
 

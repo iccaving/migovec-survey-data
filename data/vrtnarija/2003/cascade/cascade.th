@@ -14,8 +14,12 @@ survey cascade -title "cascade, passages leading down from Playboy junction at e
 	input cascade-e.th2
 	
 	map m-all-e -projection extended
+		cascade-2e
+		break
 		cascade-1e
 	endmap
+
+	
 	
 	centreline
 		team "James Hooper" insts
@@ -35,16 +39,23 @@ survey cascade -title "cascade, passages leading down from Playboy junction at e
 		6	7	7.68	014	32
 		7	8	3.89	333	06
 		8	9	2.49	331	01
+		extend left
 		10	9	1.67	266	-45
+		extend left
 		11	10	14.47	180	-33
+		extend right
 		11	12	1.55	048	19	# stn 12 is pss at Playboy junction (leprachaun stn 31)
 		14	13	4.60	085	-12	# STN 13 is pss cactus junction
+		extend left
 		14	15	2.98	292	-05
 		15	16	5.55	263	-05
 		16	17	2.04	226	15
 		17	18	6.47	340	03
+		extend left
 		18	19	8.05	039	41
+		extend right
 		20	19	7.69	162	03
+		extend left
 		20	21	2.77	018	53
 	endcentreline
 	

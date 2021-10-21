@@ -11,6 +11,7 @@ map m-all-e -projection extended
 	m-beyond_atlantis-e
 	m-watership-e
 	m-yorkshire_extensions-e
+	m-below_bigrock-e
 	m-below_balamory-e
 	m-korita-e
 	m-serpentine-e
@@ -131,6 +132,18 @@ map m-korita-e -projection extended
 	m-all-e@crack_in_time
 endmap
 
+map m-below_bigrock-e -projection extended
+	m-all-e@stagger_lee
+	m-all-e@doublethink
+	m-all-e@cascade
+	m-all-e@brownriceinlet
+	m-all-e@greed
+	m-all-e@envy
+	m-all-e@mushroom
+	m-all-e@blind
+	m-all-e@soda
+endmap
+
 
 map m-below-friendship-e -projection extended
 	m-all-e@candyMountain
@@ -236,7 +249,9 @@ map m-yorkshire_extensions-e -projection extended
 	m-all-e@curiousandcuriouser2
 endmap
 
+
 map m-below_balamory-e -projection extended
+	m-all-e@balamory
 	m-all-e@pick_your_poison
 	m-all-e@clapton
 	m-all-e@AJA
@@ -246,7 +261,7 @@ map m-below_balamory-e -projection extended
 	m-all-e@kokain_rute
 	m-all-e@kokain_lab
 	m-all-e@thirdthoughts
-	m-all-e@doublethink
+
 endmap
 
 map m-beyond_red_cow-e -projection extended
@@ -315,7 +330,8 @@ centreline
 	extend left 11@cascade 12@cascade
 	extend right 11@cascade
 	extend right 9@blind
-	extend left 14@mushroom
+	extend right 17@mushroom 16@mushroom
+	extend right 14@mushroom
 	extend left 21@greed
 	extend right 15@mad_cow
 	extend left 13@mad_cow

@@ -2,10 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 12104.500000 4654.400000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap death_star-e1 -projection extended -scale [0 0 39 0 0 0 1 0 m]
 
-scrap death_star-e1 -scale [0 0 39 0 0 0 1 0 m] -projection extended
-
-point 3275.7612 1890.3754 label -text "Death Star" -align tr
+point 3205.4119 1500.5226 u:label_MY -align bl -attr text "Death Star" -attr lvl 1
 line wall 
   3371.9326 1636.41
   3372.7326 1647.73 3372.3126 1652.25 3372.4926 1656.76
@@ -235,26 +234,26 @@ line rock-border -close on
   3052.8526 1642.49
 endline
 
-point 3244.4126 1603.32 station -name 11
-point 3244.9326 1575.31 station -name 12
-point 3178.1526 1571.74 station -name 13
-point 3196.0826 1626.03 station -name 14
-point 3149.4926 1621.82 station -name 15
-point 3106.5226 1608.94 station -name 16
-point 3048.0226 1674.51 station -name 17
-point 2956.4626 1694.2 station -name 18
-point 2870.4726 1711.47 station -name 19
-point 2812.8526 1705.62 station -name 20
-point 2601.9826 1693.46 station -name 21
-point 2487.5926 1669.22 station -name 22
-point 2427.3826 1663.61 station -name 23
-point 2395.3026 1760.03 station -name 24
-point 2311.0226 1796.9 station -name 25
-point 2225.4126 1815.49 station -name 26
+point 3244.41 1603.32 station -name 11
+point 3244.93 1575.31 station -name 12
+point 3178.15 1571.74 station -name 13
+point 3196.08 1626.03 station -name 14
+point 3149.49 1621.82 station -name 15
+point 3106.52 1608.94 station -name 16
+point 3048.02 1674.51 station -name 17
+point 2956.46 1694.2 station -name 18
+point 2870.47 1711.47 station -name 19
+point 2812.85 1705.62 station -name 20
+point 2601.98 1693.46 station -name 21
+point 2487.59 1669.22 station -name 22
+point 2427.38 1663.61 station -name 23
+point 2395.3 1760.03 station -name 24
+point 2311.02 1796.9 station -name 25
+point 2225.41 1815.49 station -name 26
 endscrap
 
 
-scrap death_star-e3 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap death_star-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall -subtype invisible
   783.7226 1741.95
@@ -345,30 +344,30 @@ line wall
   1472.3126 1688.9 1493.0726 1690.73 1509.2326 1690.48
 endline
 
-point 824.3126 1714.31 u:clay -scale xs
-point 988.0326 1704.75 u:clay -scale xs
-point 1171.4726 1701.54 u:clay -scale xs
-point 1485.0126 1706.98 u:clay -scale xs
-point 1690.3026 1731.97 u:clay -scale xs
-point 1942.0726 1742.88 u:clay -scale xs
-point 2102.4126 1767.79 station -name 27
-point 1957.6426 1757.36 station -name 28
-point 1839.7326 1754.48 station -name 29
-point 1702.3426 1750.1 station -name 30
-point 1636.3626 1765.65 station -name 31
-point 1477.2526 1705.2 station -name 32
-point 1375.2126 1697.86 station -name 33
-point 1254.8926 1724.46 station -name 34
-point 1047.6026 1707.78 station -name 35
-point 967.6926 1722.13 station -name 36
-point 862.8226 1715.83 station -name 37
-point 798.7526 1725.32 station -name 38
-point 1532.5726 1791.9 station -name 40
-point 1487.3326 1840.95 station -name 41
+point 824.313 1714.31 u:clay -scale xs
+point 988.033 1704.75 u:clay -scale xs
+point 1171.47 1701.54 u:clay -scale xs
+point 1485.01 1706.98 u:clay -scale xs
+point 1690.3 1731.97 u:clay -scale xs
+point 1942.07 1742.88 u:clay -scale xs
+point 2102.41 1767.79 station -name 27
+point 1957.64 1757.36 station -name 28
+point 1839.73 1754.48 station -name 29
+point 1702.34 1750.1 station -name 30
+point 1636.36 1765.65 station -name 31
+point 1477.25 1705.2 station -name 32
+point 1375.21 1697.86 station -name 33
+point 1254.89 1724.46 station -name 34
+point 1047.6 1707.78 station -name 35
+point 967.693 1722.13 station -name 36
+point 862.823 1715.83 station -name 37
+point 798.753 1725.32 station -name 38
+point 1532.57 1791.9 station -name 40
+point 1487.33 1840.95 station -name 41
 endscrap
 
 
-scrap death_star-e4 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap death_star-e4 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall -subtype invisible
   4358.7726 1043.34
@@ -505,21 +504,21 @@ line wall
   3377.4226 1470.51 3380.5126 1469.63 3386.8826 1469.85
 endline
 
-point 3979.3826 1511.88 station -name 2
-point 4085.8226 1468.22 station -name 1
-point 3921.9826 1510.72 station -name 3
-point 3811.6526 1519.11 station -name 4
-point 3766.6926 1495.16 station -name 5
-point 3667.3326 1494.13 station -name 6
-point 3616.2526 1514.89 station -name 7
-point 3586.4926 1513.73 station -name 8
-point 3365.2026 1528.94 station -name 9
-point 3326.1126 1543.06 station -name 10
-point 4154.4326 1430.96 station -name 0
+point 3979.38 1511.88 station -name 2
+point 4085.82 1468.22 station -name 1
+point 3921.98 1510.72 station -name 3
+point 3811.65 1519.11 station -name 4
+point 3766.69 1495.16 station -name 5
+point 3667.33 1494.13 station -name 6
+point 3616.25 1514.89 station -name 7
+point 3586.49 1513.73 station -name 8
+point 3365.2 1528.94 station -name 9
+point 3326.11 1543.06 station -name 10
+point 4154.43 1430.96 station -name 0
 endscrap
 
 
-scrap death_star-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap death_star-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall -subtype invisible
   529.4819 2547.245
@@ -625,16 +624,16 @@ line wall -id ds_s1_l1
   574.6648 2561.8608 541.4078 2549.4407 529.4819 2547.245
 endline
 
-point 1433.7926 1980.64 station -name 42
-point 1372.2126 2060.98 station -name 43
-point 1262.3626 2113.21 station -name 44
-point 1204.5526 2211.37 station -name 45
-point 1040.9726 2254.97 station -name 46
-point 980.8426 2379.35 station -name 47
-point 865.7026 2400.82 station -name 48
-point 791.6226 2399.19 station -name 49
-point 750.8726 2412.81 station -name 50
-point 627.2126 2464.12 station -name 51
-point 544.3226 2435.09 station -name 52
+point 1433.79 1980.64 station -name 42
+point 1372.21 2060.98 station -name 43
+point 1262.36 2113.21 station -name 44
+point 1204.55 2211.37 station -name 45
+point 1040.97 2254.97 station -name 46
+point 980.843 2379.35 station -name 47
+point 865.703 2400.82 station -name 48
+point 791.623 2399.19 station -name 49
+point 750.873 2412.81 station -name 50
+point 627.213 2464.12 station -name 51
+point 544.323 2435.09 station -name 52
 endscrap
 

@@ -2,10 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 853.000000 1202.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap drugi-1e -projection extended -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m]
 
-scrap drugi-1e -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m] -projection extended
+point 514.7655 1005.9688 u:label_MY -align l -attr text "Drugi vhod" -attr lvl 1
 
-point 898.562 776.1126 label -text "Drugi vhod" -align br -scale m
 line wall -subtype invisible
   1875.1541 681.9155
   1987.3056 967.8259
@@ -50,7 +50,7 @@ line wall
   1315.3242 995.7246
 endline
 
-line wall -subtype blocks -outline in
+line wall -outline in -subtype blocks
   1760.3443 919.3263
   1760.3443 919.3263 1790.267 929.5127 1793.4502 930.1494
   1796.6335 930.786 1824.0095 931.4227 1827.1928 930.1494
@@ -142,17 +142,17 @@ line wall -subtype blocks
   828.3336 848.1416 881.1271 887.4936 881.1271 887.4936
 endline
 
-point 407.8643 666.7186 station -name 15
-point 864.3482 911.167 station -name 14
-point 1406.8167 928.7241 station -name 13
-point 1498.6537 928.2739 station -name 12
-point 1550.8747 928.7241 station -name 11
-point 1741.7516 945.831 station -name 10
-point 1924.075 949.4324 station -name 9
+point 407.864 666.719 station -name 15
+point 864.348 911.167 station -name 14
+point 1406.82 928.724 station -name 13
+point 1498.65 928.274 station -name 12
+point 1550.87 928.724 station -name 11
+point 1741.75 945.831 station -name 10
+point 1924.08 949.432 station -name 9
 endscrap
 
 
-scrap drugi-2e -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m] -projection extended
+scrap drugi-2e -projection extended -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m]
 
 line wall 
   2871.303 -1028.8306
@@ -188,9 +188,9 @@ line wall
   2811.4576 -1059.3898 2816.5508 -1065.7564 2816.5508 -1065.7564
 endline
 
-point 2544.875 -494.9744 station -name 4
-point 2716.5964 -699.0445 station -name 3
-point 2777.715 -849.9311 station -name 2
-point 2848.7018 -1081.6727 station -name 1
+point 2544.88 -494.974 station -name 4
+point 2716.6 -699.044 station -name 3
+point 2777.72 -849.931 station -name 2
+point 2848.7 -1081.67 station -name 1
 endscrap
 
