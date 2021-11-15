@@ -5,11 +5,11 @@ survey sad_face -title "Sad Face"
     sad_face-1p
   endmap
 
-  #input sad_face-e.th2
+  input sad_face-e.th2
 
-  #map m-all-e -projection plan
-  #  sad_face-1e
-  #endmap
+  map m-all-e -projection extended
+    sad_face-1e
+  endmap
   
   centreline
     

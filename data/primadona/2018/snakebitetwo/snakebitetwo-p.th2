@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap pivnica-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 
-point -269.0377 754.1534 u:label_MY -align br -attr text "Pivnica Area" -scale xs
+point -269.038 754.153 u:label_MY -align br -attr text "Pivnica Area" -scale xs
 line rock-edge -clip off -close on -outline none
   -286.9792 767.0488
   457.9271 767.0488
@@ -24,7 +24,7 @@ endscrap
 
 scrap snakebitetwo-p1 -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-line rock-edge -clip off -close on -outline none
+line rock-edge -clip off -close on -outline none -visibility off
   -286.9792 767.0488
   457.9271 767.0488
   739.3913 767.0488

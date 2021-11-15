@@ -130,7 +130,17 @@ survey monatip
 	
 	join wishing_well2-1p@wishing_well2 wishing_well-1p@wishing_well
 	join wishing_well-1p@wishing_well monatip11-3p@monatip11
-	join wishing_well-1p@wishing_well monatip11-3Ap@monatip11
+	
+	join l1@wishing_well l1@monatip11
+	join l2@wishing_well l2@monatip11
+	
+	######________________2021________________######
+	input "./2021/extra_dunkel/extra_dunkel.th"
+
+	equate 24@monatip11 0@extra_dunkel
+
+	join monatip11-3Ap@monatip11 extra_dunkel-1p@extra_dunkel
+	join monatip11_l1@monatip11 extra_dunkel_l1@extra_dunkel
 	
 endsurvey
 

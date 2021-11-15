@@ -20,9 +20,9 @@ endmap
 ## FRAMES IN PLACE
 
 map m-offsets-p -projection plan
-	m-below_lumos-p [-300 0 m] below  
+	m-below_lumos-p [-200 0 m] below  
 	m-pivnica-p [0 -100 m] below 
-	m-below_cattlegrid-p [-250 0 m] below 
+	m-below_cattlegrid-p [-150 0 m] below 
 endmap
 
 
@@ -91,6 +91,7 @@ map m-hallelujah_branch-p -projection plan -title "Hallelujah Branch"
 	m-all-p@plumbers_paradise
 	m-all-p@hallelujah
 	m-all-p@sweet_baby_jesus
+	m-all-p@beam_me_up
 	m-all-p@holy_moley
 	m-all-p@alabaster
 	m-all-p@purgatory

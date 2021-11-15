@@ -19,7 +19,6 @@ survey monatip11 -title "Monatip 11"
 	endmap
 	
 	join monatip11-4p monatip11-3p
-	join monatip11-3Ap monatip11-2p
 	join monatip11-2p monatip11-1p
 	
 	centreline
@@ -58,7 +57,9 @@ survey monatip11 -title "Monatip 11"
 		21	22	16.8 100 11	#
 		22 	23 	3.2 65 20	#
 		23	24	14.3 118 -53	#
+		flags duplicate
 		24 	24a	11.2 170 -2	#
+		flags not duplicate
 		24	25	52.2 52 20	#
 		25	26	7.0 10 20	#
 		26	27	29 330 0	#

@@ -1,23 +1,84 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-sad_face-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-    line survey
-        -32.68 -124.49
-        -32.68 67.64
-    endline
-    line survey
-        -32.68 67.64
-        32.68 124.49
-    endline
-    point -32.68 -124.49 station-name -align tr -scale xs -text 0
-    point -32.68 67.64 station-name -align tr -scale xs -text 1
-    point 32.68 124.49 station-name -align tr -scale xs -text 2
+
+line survey 
+  217.32 375.51
+  217.32 567.64
+endline
+
+line survey 
+  217.32 567.64
+  282.68 624.49
+endline
+
+point 217.32 375.51 station-name -align tr -scale xs -text 0
+point 217.32 567.64 station-name -align tr -scale xs -text 1
+point 282.68 624.49 station-name -align tr -scale xs -text 2
 endscrap
 
+
 scrap sad_face-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-    point -32.68 -124.49 station -name 0
-    point -32.68 67.64 station -name 1
-    point 32.68 124.49 station -name 2
+
+line wall 
+  175.2606 578.5614
+  175.8013 531.1966
+  175.8013 483.7101
+  175.8013 457.4409
+  166.7081 418.0372
+  185.9194 371.3554
+  185.9194 371.3554
+endline
+
+line wall 
+  72.2101 708.5495
+  93.9601 676.3595
+  93.9601 676.3595 98.3102 659.8294 98.3102 654.6094
+  98.3102 649.3894 98.4712 621.4731 98.4712 621.4731
+endline
+
+line wall 
+  232.2904 681.5795
+  232.2904 681.5795 207.0603 657.2195 202.7103 655.4794
+  198.3603 653.7394 174.0003 650.2594 174.0003 650.2594
+  146.1602 673.7495
+  146.1602 673.7495 133.1102 674.6195 133.1102 680.7095
+  133.1102 686.7995 126.1502 711.1595 126.1502 711.1595
+  87.8701 721.5996
+endline
+
+line wall:blocks 
+  98.4712 621.4731
+  126.0251 609.7289
+  135.9625 601.5982
+  154.0306 588.4988
+  175.2606 578.5614
+endline
+
+line wall 
+  239.0393 373.8678
+  239.0393 373.8678 244.0137 404.7889 244.0137 407.0694
+  244.0137 409.3499 246.2943 433.2952 246.2943 433.2952
+  238.8826 481.1857
+  233.7515 509.1219
+  241.1631 534.7775
+  241.1631 534.7775 238.8826 547.8904 238.8826 554.1618
+  238.8826 560.4332 252.6485 584.618 252.6485 584.618
+  256.4477 595.3824
+  271.0115 609.9461
+endline
+
+line wall:blocks 
+  185.9194 371.3554
+  193.2773 371.3554 197.2254 370.6375 207.634 370.6375
+  218.0426 370.6375 226.1182 371.1759 227.5539 371.1759
+  228.9896 371.1759 239.0393 373.8678 239.0393 373.8678
+endline
+
+point 217.32 375.51 station -name 0
+point 217.32 567.64 station -name 1
+point 282.68 624.49 station -name 2
 endscrap
+

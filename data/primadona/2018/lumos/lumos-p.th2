@@ -127,15 +127,6 @@ endscrap
 scrap lumos-p1 -projection plan -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
 
 point 464.22 658.549 u:label_MY -align br -attr text "Lumos Branch" -scale xs
-line rock-edge -clip off -close on -outline none
-  411.2018 701.7142
-  849.4092 701.7142
-  849.4092 380.7654
-  849.4092 79.8166
-  411.2018 79.8166
-  411.2018 380.7654
-endline
-
 line contour 
   643.0 530.75
   643.0 530.75 649.0 537.75 646.0 542.25
@@ -232,7 +223,7 @@ scrap lumos-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 point 406.625 79.8282 map-connection 
 point 640.215 539.15 station -name 19
 point 739.395 617.442 station -name 5
-line rock-edge -clip off -close on -outline none
+line rock-edge -clip off -close on -outline none -visibility off
   411.2018 701.7142
   849.4092 701.7142
   849.4092 380.7654

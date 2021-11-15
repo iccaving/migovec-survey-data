@@ -89,7 +89,7 @@ scrap cattlegrid-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 
 point 23.5 83.07 station -name 7
 point 9.41 -82.44 station -name 1
-point -375.5429 -749.3527 map-connection 
+point -375.543 -749.353 map-connection 
 line rock-edge -clip off -close on -outline none
   -363.098 196.1901
   300.1415 196.1901
@@ -135,8 +135,8 @@ endscrap
 
 scrap mud_moses-p1 -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 635.9515 -719.9893 u:label_MY -align tl -attr text "Below Knot Very Good" -attr lvl 2 -scale xs
-line rock-edge -clip off -close on -outline none
+point 635.952 -719.989 u:label_MY -align tl -attr text "Below Knot Very Good" -attr lvl 2 -scale xs
+line rock-edge -clip off -close on -outline none -visibility off
   -363.098 196.1901
   300.1415 196.1901
   683.3809 196.1901
