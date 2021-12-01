@@ -582,7 +582,7 @@ survey vrtnarija -title "Vrtnarija"
 	input ./2012/dreamsforthesoul/dreamsforthesoul.th
 	input ./2012/undercover_squirrell/undercover_squirrell.th
 	input ./2012/yorkshire/yorkshire.th
-	
+
 	equate 32@atlantis 1@eastlinks
 	equate 17@brezno_slapov 1@atlantis
 	equate 1@bravenewworld 22@salvation
@@ -650,6 +650,8 @@ survey vrtnarija -title "Vrtnarija"
 	join undercover_squirrell-1e@undercover_squirrell peepshow-1e@peepshow
 	join bravenewworld-1e@bravenewworld salvation-1e@salvation
 	join invictus-1e@invictus bravenewworld-1e@bravenewworld
+	join minestrone1-1e@minestrone1 minestrone2-1e@minestrone2
+
 	
 	###__________2013____________###
 	input ./2013/lethe/lethe.th
@@ -797,9 +799,9 @@ survey vrtnarija -title "Vrtnarija"
 	equate 4@yourmum 1@esoterica
 	
 	join sicsempertyrannis-1p@sicsempertyrannis brezno_slapov-1p@brezno_slapov
+	join touchingthevoid-1e@touchingthevoid sicsempertyrannis-4e@sicsempertyrannis
 	join jericho-1p@jericho sicsempertyrannis-1p@sicsempertyrannis
-	#Note:Adjust break in jericho first
-	#join jericho-1e@jericho sicsempertyrannis-2e@sicsempertyrannis
+	join jericho-1e@jericho sicsempertyrannis-2e@sicsempertyrannis
 	join jericho2-1p@jericho2 jericho-1p@jericho
 	join jericho2-1e@jericho2 jericho-1e@jericho
 	join squidgygoodness-1p@squidgygoodness jericho2-1p@jericho2
@@ -827,10 +829,10 @@ survey vrtnarija -title "Vrtnarija"
 	join esoterica-2p@esoterica serrure-1p@serrure
 	join davyjoneslocker-1e@davyjoneslocker atworldsend-1e@atworldsend
 	join davyjoneslocker-1e@davyjoneslocker sicsempertyrannis-1e@sicsempertyrannis
-	join sicsempertyrannis-1e@sicsempertyrannis touchingthevoidsbottom-1e@touchingthevoidsbottom
+	join sicsempertyrannis-4e@sicsempertyrannis touchingthevoidsbottom-1e@touchingthevoidsbottom
 	join touchingthevoid-1e@touchingthevoid sicsempertyrannis-1e@sicsempertyrannis
 	join touchingthevoid-1e@touchingthevoid touchingthevoidsbottom-1e@touchingthevoidsbottom
-
+	
 	
 	###__________2015____________###
 	input ./2015/jetstream/jetstream.th
@@ -905,7 +907,7 @@ survey vrtnarija -title "Vrtnarija"
 	join andreabocelli-1e@andreabocelli void2-1e@void2
 	join void2-1e@void2 dinnerservice-1e@dinnerservice
 	join void2-1e@void2 nitro-1e@nitro
-
+	
 	join pushyourluck-1e@pushyourluck agartha-1e@agartha
 	join cuckoos_nest-1e@cuckoos_nest pushyourluck-1e@pushyourluck
 	join lazarus-1e@lazarus miles-1e@miles
