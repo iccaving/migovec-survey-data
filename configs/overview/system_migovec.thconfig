@@ -107,7 +107,7 @@ endlayout
 select m-all-e@system_migovec
 
 language sl
-#export map -projection extended -o ../../outputs/system_migovec_overview_elevation_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/system_migovec_overview_elevation_SLO.pdf -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
