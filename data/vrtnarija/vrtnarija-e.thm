@@ -165,6 +165,7 @@ endmap
 
 map m-below_paradise-e -projection extended
 	m-all-e@minestrone2
+	m-all-e@minestrone1
 	m-all-e@were_not_alone
 	m-all-e@ingloriousbasterd
 	m-all-e@atlantis
@@ -452,7 +453,7 @@ centreline
 	# Follow Blast rather than Jericho
 	extend ignore 10@jericho
 	
-	# # Prince Consort and beyong
+	# # Prince Consort and beyond
 	extend right 23@ouroboros
 	extend left 2@palace2
 	extend left 9b@palace2
@@ -467,6 +468,11 @@ centreline
 	
 	extend left 44@trueadventures 42@trueadventures
 	extend left 42@trueadventures
+
+	extend left 1@minestrone2 2@minestrone2
+	extend left 2@minestrone2
+	extend right 24@minestrone1 23@minestrone1
+	extend right 23@minestrone1
 	# Entrance series
 	
 	
