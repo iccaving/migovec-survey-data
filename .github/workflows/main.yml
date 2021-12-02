@@ -12,8 +12,8 @@ on:
   workflow_dispatch:
 
 env:
-  THERION_VERSION: 5.5.6
-  THERION_PATH: ./therion-5.5.6
+  THERION_VERSION: 6.0.4
+  THERION_PATH: ./therion-6.0.4
   EXPECTED_OUTPUTS: m2_m16_m18.3d m2_m16_m18_plan_ENG.pdf primadona_ubend_monatip.lox primadona_ubend_monatip_plan_SLO.pdf system_migovec_EE_SLO.svg vrtnarija.lox vrtnarija_plan_ENG.svg m2_m16_m18.lox m2_m16_m18_plan_ENG.svg primadona_ubend_monatip_EE_ENG.pdf system_migovec.3d system_migovec_plan_ENG.pdf vrtnarija_EE_ENG.pdf vrtnarija_plan_SLO.pdf m2_m16_m18_EE_ENG.pdf m2_m16_m18_plan_SLO.pdf primadona_ubend_monatip_EE_ENG.svg system_migovec.lox system_migovec_plan_ENG.svg vrtnarija_EE_ENG.svg vrtnarija_plan_SLO.svg m2_m16_m18_EE_ENG.svg m2_m16_m18_plan_SLO.svg primadona_ubend_monatip_EE_SLO.pdf system_migovec_EE_ENG.pdf system_migovec_plan_SLO.pdf vrtnarija_EE_SLO.pdf m2_m16_m18_EE_SLO.pdf plateau.3d primadona_ubend_monatip_EE_SLO.svg system_migovec_EE_ENG.svg system_migovec_plan_SLO.svg vrtnarija_EE_SLO.svg m2_m16_m18_EE_SLO.svg primadona_ubend_monatip.3d primadona_ubend_monatip_plan_ENG.svg system_migovec_EE_SLO.pdf vrtnarija.3d vrtnarija_plan_ENG.pdf
 
 jobs:
