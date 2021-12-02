@@ -87,6 +87,7 @@ survey vrtnarija -title "Vrtnarija"
 	join pink2-1e@pink2 pink-1e@pink
 	join skynet-1e@skynet pink2-1e@pink2
 	join zimmer-1e@zimmer skynet-1e@skynet
+	join zimmer-1e@zimmer friendship-1e@friendship
 	join wall@chariot:end wall@pico:0
 	join wall2@chariot:0 wall2@pico2:end
 	
@@ -422,7 +423,7 @@ survey vrtnarija -title "Vrtnarija"
 	join whitebishop-1p@whitebishop blackknight-1p@blackknight
 	join sidewinder-1p@sidewinder blackknight-1p@blackknight
 	join sidewinder-1p@sidewinder crack_in_time-1p@crack_in_time
-	join cheetzim@zimmer cheetzim@wonderland
+	
 	
 	join wonderland-1e@wonderland consort-1e@consort
 	join palace2-1e@palace2 consort-1e@consort
@@ -436,6 +437,8 @@ survey vrtnarija -title "Vrtnarija"
 	join stalemate-1e@stalemate whitebishop-1e@whitebishop
 	join sidewinder-1e@sidewinder crack_in_time-1e@crack_in_time
 	join rolling-1e@rolling wonderland-1e@wonderland
+	join wonderland-1e@wonderland friendship-1e@friendship
+	join belowzimmer-1e@belowzimmer friendship-1e@friendship
 	join surprise-1e@surprise rolling-1e@rolling
 	join kamikaze-1e@kamikaze surprise-1e@surprise
 	join mudstone-1e@mudstone kamikaze-1e@kamikaze

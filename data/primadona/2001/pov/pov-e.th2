@@ -1,11 +1,11 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 3571.000000 4948.000000
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {136.000000 1 1.0} {4804.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/primadona/2001/pov/pov_extend.gif" 0 {}
 
-##XTHERION## xth_me_image_insert {136.000000 1 1.0} {4804.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/primadona/2001/pov/pov_extend.gif" 0 {}
+scrap pov-e1 -projection extended -scale [1382.0 -3962.0 3070.0 -3975.0 0.0 0.0 140 0.0 m]
 
-scrap pov-e1 -scale [1382.0 -3962.0 3070.0 -3975.0 0.0 0.0 140 0.0 m] -projection extended
-
+point 1068.8751 3198.6043 u:label_MY -align tr -attr lvl 2 -attr text "Mlinotest"
 line rock-border -close on
   1080.855 3130.449
   1066.4931 3139.7148
@@ -80,7 +80,6 @@ line wall
   1644.2464 2987.7558
 endline
 
-point 950.0 3236.0 label -text Mlinotest -align tr
 line wall 
   1434.0 3105.0
   1410.0 3109.0 1385.0 3115.0 1377.0 3115.0
@@ -154,7 +153,7 @@ point 1657.0 3006.0 station -name 16
 endscrap
 
 
-scrap pov-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap pov-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall:invisible 
   2796.6538 3134.0
@@ -210,7 +209,7 @@ line wall -subtype invisible
   2263.2694 2560.9617
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   2320.6538 2505.0
   2319.6538 2497.5
   2318.6538 2490.0
@@ -221,7 +220,7 @@ line rock-border -close on -clip off
   2337.6538 2502.0
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   2682.6538 2598.0
   2678.1538 2590.5
   2673.6538 2583.0
@@ -232,7 +231,7 @@ line rock-border -close on -clip off
   2690.1538 2595.0
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   2656.6538 2574.0
   2654.1538 2567.5
   2651.6538 2561.0
@@ -243,7 +242,7 @@ line rock-border -close on -clip off
   2671.6538 2573.5
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   2761.6538 2625.0
   2755.6538 2613.0
   2749.6538 2601.0
@@ -254,7 +253,7 @@ line rock-border -close on -clip off
   2776.6538 2622.0
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   2727.6538 2603.0
   2727.6538 2603.0 2719.9038 2598.25 2712.0288 2593.125
   2704.1538 2588.0 2696.1538 2582.5 2695.6538 2581.0
@@ -332,7 +331,7 @@ line wall
   2900.8088 2767.9141 2906.0408 2770.0085 2903.9455 2777.0941
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   2273.5902 2468.0
   2285.5902 2466.5
   2297.5902 2465.0
@@ -369,20 +368,20 @@ line wall
   2590.3757 2566.6348 2601.6009 2566.7333 2612.9545 2566.6468
 endline
 
-point 2869.6538 2746.0 station -name 15
-point 2836.6538 2690.0 station -name 14
-point 2707.6538 2611.0 station -name 13
-point 2574.6538 2580.0 station -name 12
-point 2543.6538 2580.0 station -name 11
-point 2430.6538 2567.0 station -name 10
-point 2329.6538 2540.0 station -name 9
-point 2244.5902 2479.0 station -name 8
+point 2869.65 2746.0 station -name 15
+point 2836.65 2690.0 station -name 14
+point 2707.65 2611.0 station -name 13
+point 2574.65 2580.0 station -name 12
+point 2543.65 2580.0 station -name 11
+point 2430.65 2567.0 station -name 10
+point 2329.65 2540.0 station -name 9
+point 2244.59 2479.0 station -name 8
 endscrap
 
 
-scrap pov-e3 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap pov-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
-point 1858.1208 2221.7515 water-flow -align b -scale xs
+point 1858.12 2221.75 water-flow -align b -scale xs
 line rock-border -close on
   1639.9423 2264.339
   1639.9423 2264.339 1639.6147 2271.8737 1636.9939 2271.2185
@@ -434,7 +433,7 @@ line wall:invisible
   1896.3244 2180.2886
 endline
 
-point 1796.8605 2314.9536 water-flow -align t -scale xs
+point 1796.86 2314.95 water-flow -align t -scale xs
 area water
   l69-2688-2117
 endarea
@@ -469,7 +468,7 @@ line wall -subtype invisible
   1863.3831 2231.3626
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   1765.5902 2269.0
   1765.5902 2269.0 1785.5902 2257.0 1782.5902 2254.0
   1779.5902 2251.0 1767.5902 2248.0 1764.5902 2250.0
@@ -555,12 +554,12 @@ line wall
   2222.6718 2231.5125 2224.218 2241.8355 2244.8281 2244.1013
 endline
 
-point 2226.5902 2281.0 station -name 7
-point 2126.5902 2306.0 station -name 6
-point 1947.5902 2272.0 station -name 5
-point 1828.5902 2282.0 station -name 4
-point 1740.5902 2281.0 station -name 3
-point 1647.5902 2281.0 station -name 2
-point 1501.5902 2251.0 station -name 1
+point 2226.59 2281.0 station -name 7
+point 2126.59 2306.0 station -name 6
+point 1947.59 2272.0 station -name 5
+point 1828.59 2282.0 station -name 4
+point 1740.59 2281.0 station -name 3
+point 1647.59 2281.0 station -name 2
+point 1501.59 2251.0 station -name 1
 endscrap
 

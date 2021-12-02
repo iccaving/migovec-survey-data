@@ -2,10 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap urinal-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-scrap urinal-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
-
-point 460.1246 986.539 water-flow -orientation 190
+point 444.2216 1033.4475 u:label_MY -align l -attr text "Urinal Series" -attr lvl 1 -scale m
+point 460.125 986.539 water-flow -orientation 189.9999875177303
 line wall 
   566.955 1111.0229
   566.955 1111.0229 551.9003 1113.578 541.8761 1113.2175
@@ -30,14 +30,14 @@ line wall
   554.9485 1088.4661 575.5364 1086.637 575.5364 1086.637
 endline
 
-point 570.2661 1101.3985 station -name 9
-point 541.8061 1092.1885 station -name 8
-point 523.6061 1075.8085 station -name 7
-point 506.3161 1052.8185 station -name 6
-point 506.3161 1025.5785 station -name 5
-point 477.6061 1045.7385 station -name 4
-point 458.4161 1020.2185 station -name 3
-point 458.4161 965.8885 station -name 2
-point 407.3061 963.2185 station -name 1
+point 570.266 1101.4 station -name 9
+point 541.806 1092.19 station -name 8
+point 523.606 1075.81 station -name 7
+point 506.316 1052.82 station -name 6
+point 506.316 1025.58 station -name 5
+point 477.606 1045.74 station -name 4
+point 458.416 1020.22 station -name 3
+point 458.416 965.889 station -name 2
+point 407.306 963.218 station -name 1
 endscrap
 

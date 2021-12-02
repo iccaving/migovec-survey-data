@@ -150,12 +150,6 @@ point 1330.0 3078.0 station -name 18
 point 1326.0 2740.0 station -name 17
 point 1396.0 2744.0 station -name 16
 point 1452.0 2700.0 station -name 15
-point 1238.0 2530.0 remark -align br -scale xl -text "Immobilisation area"
-line arrow 
-  1258.0 2546.0
-  1428.0 2720.0
-endline
-
 endscrap
 
 
@@ -198,7 +192,7 @@ line wall
   427.0 3428.0
 endline
 
-point 70.0 3376.0 label -align b -text "Sejna<br>soba"
+point 70.0 3376.0 u:label_MY -align b -attr text "Sejna soba" -attr lvl 1
 point 517.0 3455.0 camp -scale xl
 line wall 
   427.0 3346.0

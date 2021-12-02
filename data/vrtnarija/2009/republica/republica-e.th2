@@ -84,14 +84,13 @@ endscrap
 
 scrap republica-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 314.8507 410.6685 u:label_MY -align bl -attr text "de Coco" -attr lvl 1
 line u:texture_MY 
   278.5 128.0
   278.5 128.0 339.0 145.0 367.0 142.0
   395.0 139.0 400.5 141.5 400.5 141.5
 endline
 
-point 314.8507 430.6685 u:label_MY -align tl -attr text "Republica Palma" -attr lvl 1
+point 314.8507 422.6685 u:label_MY -align tl -attr text Republica -attr lvl 1
 # &#127796; de &#129381; for the palma de coco emojis, not supported by font
 
 point 234.77 250.56 station -name 2

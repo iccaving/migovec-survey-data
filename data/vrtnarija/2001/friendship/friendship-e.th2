@@ -194,9 +194,32 @@ endscrap
 
 scrap friendship-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 492.6272 799.919 u:label_MY -align tr -attr lvl 1 -attr text "Friendship Gallery"
-point 257.3569 812.1627 camp -align t
-point 118.8355 733.5392 water-flow -orientation 180.0
+line wall -subtype invisible
+  -372.5464 777.2597
+  -356.831 728.2648
+endline
+
+line wall -subtype invisible
+  -378.5552 859.072
+  -378.5552 811.926
+endline
+
+line wall 
+  -366.969 947.269
+  -367.462 904.8315
+  -367.462 904.8315 -365.6131 882.6451 -368.8487 876.6363
+  -372.0842 870.6274 -378.5552 859.072 -378.5552 859.072
+endline
+
+line wall 
+  -378.5552 811.926
+  -378.5552 811.926 -365.1509 806.3794 -365.1509 795.7484
+  -365.1509 785.1174 -372.5464 777.2597 -372.5464 777.2597
+endline
+
+point 492.627 799.919 u:label_MY -align tr -attr lvl 1 -attr text "Friendship Gallery"
+point 257.357 812.163 camp -align t
+point 118.835 733.539 water-flow -orientation 180.0
 line wall 
   2020.9239 496.7084
   2014.442 496.2283 1958.5053 495.5081 1954.424 495.7482
@@ -219,16 +242,20 @@ endline
 
 line wall -subtype invisible
   -219.3278 938.2625
-  -396.5508 945.8824
-  -375.5011 698.7172
+  -366.969 947.269
+endline
+
+line wall:blocks 
+  -356.831 728.2648
+  -356.831 728.2648 -327.2903 731.4703 -310.3146 732.1494
+  -293.339 732.8284 -273.4304 721.0752 -268.6772 721.7542
+  -265.8605 722.1566 -244.5206 722.8149 -229.0132 725.4042
 endline
 
 line wall 
-  -375.5011 698.7172
-  -375.5011 698.7172 -327.2903 703.4703 -310.3146 704.1494
-  -293.339 704.8284 -272.9682 690.5689 -268.215 691.2479
-  -263.4619 691.9269 -206.4237 723.8411 -213.214 734.0265
-  -220.0042 744.2119 -267.536 750.3231 -258.7087 759.8295
+  -229.0132 725.4041
+  -218.352 727.1842 -210.4476 729.8769 -213.214 734.0265
+  -220.0043 744.2118 -267.536 750.3231 -258.7087 759.8295
   -249.8814 769.3358 -190.1271 758.4714 -137.1631 753.7182
   -84.1992 748.965 96.4216 749.6441 112.0392 738.7797
 endline
@@ -306,42 +333,42 @@ line wall
   -221.8172 909.6063 -219.3278 920.5343 -219.3278 938.2625
 endline
 
-point 976.0456 673.1229 station -name 4
-point 1081.7856 625.5629 station -name 37
-point 1099.8856 609.7329 station -name 36
-point 1195.3456 612.7329 station -name 35
-point 1303.7056 606.8229 station -name 34
-point 1426.3056 572.4129 station -name 33
-point 1505.7456 547.2229 station -name 32
-point 1542.2256 508.2429 station -name 31
-point 1625.0256 524.3029 station -name 22
-point 1646.5156 522.3329 station -name 30
-point 1676.9656 505.8029 station -name 29
-point 1731.1556 510.9929 station -name 28
-point 1798.3956 531.2329 station -name 27
-point 1867.6756 508.8729 station -name 26
-point 1923.1256 503.5129 station -name 25
-point 1950.8756 492.2529 station -name 24
-point 2022.1256 492.7329 station -name 23
-point 1672.7056 538.0029 station -name 21
-point 1781.4556 561.0729 station -name 20
-point 1849.6956 549.0329 station -name 19
-point -295.2144 756.5929 station -name 17
-point -225.0844 732.4129 station -name 18
-point -241.5244 773.8329 station -name 16
-point -88.6644 779.8929 station -name 15
-point 54.7656 770.2129 station -name 14
-point 114.8156 758.0829 station -name 13
-point 215.4556 773.1229 station -name 12
-point 309.4456 789.5829 station -name 11
-point 370.6056 771.9429 station -name 10
-point 462.9656 753.5129 station -name 9
-point 519.0956 742.8129 station -name 8
-point 711.2556 727.8429 station -name 7
-point 782.9056 726.0329 station -name 6
-point 869.2256 722.3329 station -name 5
-point -343.7444 892.0229 station -name 3
-point -328.6844 932.8129 station -name 2
-point -308.9544 924.4629 station -name 1
+point 976.046 673.123 station -name 4
+point 1081.79 625.563 station -name 37
+point 1099.89 609.733 station -name 36
+point 1195.35 612.733 station -name 35
+point 1303.71 606.823 station -name 34
+point 1426.31 572.413 station -name 33
+point 1505.75 547.223 station -name 32
+point 1542.23 508.243 station -name 31
+point 1625.03 524.303 station -name 22
+point 1646.52 522.333 station -name 30
+point 1676.97 505.803 station -name 29
+point 1731.16 510.993 station -name 28
+point 1798.4 531.233 station -name 27
+point 1867.68 508.873 station -name 26
+point 1923.13 503.513 station -name 25
+point 1950.88 492.253 station -name 24
+point 2022.13 492.733 station -name 23
+point 1672.71 538.003 station -name 21
+point 1781.46 561.073 station -name 20
+point 1849.7 549.033 station -name 19
+point -295.214 756.593 station -name 17
+point -225.084 732.413 station -name 18
+point -241.524 773.833 station -name 16
+point -88.6644 779.893 station -name 15
+point 54.7656 770.213 station -name 14
+point 114.816 758.083 station -name 13
+point 215.456 773.123 station -name 12
+point 309.446 789.583 station -name 11
+point 370.606 771.943 station -name 10
+point 462.966 753.513 station -name 9
+point 519.096 742.813 station -name 8
+point 711.256 727.843 station -name 7
+point 782.906 726.033 station -name 6
+point 869.226 722.333 station -name 5
+point -343.744 892.023 station -name 3
+point -328.684 932.813 station -name 2
+point -308.954 924.463 station -name 1
 endscrap
 
