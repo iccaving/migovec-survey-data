@@ -104,6 +104,5 @@ export model -o ../../outputs/primadona_ubend_monatip.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-# export a .3d model, which can be opened in AVEN and LOCH
-#select primadona_ubend_monatip@system_migovec
+select primadona_ubend_monatip@system_migovec
 export model -o ../../outputs/primadona_ubend_monatip.lox
