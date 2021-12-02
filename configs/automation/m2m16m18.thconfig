@@ -37,6 +37,9 @@ layout plan
 	\legendbox{30}{170}{NW}{\scalebar}
 	\legendbox{30}{150}{NW}{\northarrow}
 	}
+	code metapost
+  	max_label_level("2");
+	endcode
 endlayout
 
 source

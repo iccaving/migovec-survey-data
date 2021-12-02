@@ -14,6 +14,7 @@ on:
 env:
   THERION_VERSION: 5.5.6
   THERION_PATH: ./therion-5.5.6
+  EXPECTED_OUTPUTS: m2_m16_m18.3d m2_m16_m18_plan_ENG.pdf primadona_ubend_monatip.lox primadona_ubend_monatip_plan_SLO.pdf system_migovec_EE_SLO.svg vrtnarija.lox vrtnarija_plan_ENG.svg m2_m16_m18.lox m2_m16_m18_plan_ENG.svg primadona_ubend_monatip_EE_ENG.pdf system_migovec.3d system_migovec_plan_ENG.pdf vrtnarija_EE_ENG.pdf vrtnarija_plan_SLO.pdf m2_m16_m18_EE_ENG.pdf m2_m16_m18_plan_SLO.pdf primadona_ubend_monatip_EE_ENG.svg system_migovec.lox system_migovec_plan_ENG.svg vrtnarija_EE_ENG.svg vrtnarija_plan_SLO.svg m2_m16_m18_EE_ENG.svg m2_m16_m18_plan_SLO.svg primadona_ubend_monatip_EE_SLO.pdf system_migovec_EE_ENG.pdf system_migovec_plan_SLO.pdf vrtnarija_EE_SLO.pdf m2_m16_m18_EE_SLO.pdf plateau.3d primadona_ubend_monatip_EE_SLO.svg system_migovec_EE_ENG.svg system_migovec_plan_SLO.svg vrtnarija_EE_SLO.svg m2_m16_m18_EE_SLO.svg primadona_ubend_monatip.3d primadona_ubend_monatip_plan_ENG.svg system_migovec_EE_SLO.pdf vrtnarija.3d vrtnarija_plan_ENG.pdf
 
 jobs:
   build:
@@ -50,12 +51,28 @@ jobs:
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate output files
         run: find configs/automation -type f -name "*.thconfig" -exec echo -e "\n\nGenerating {}" \;  -exec ${THERION_PATH}/bin/therion -q {} \;
+      - name: Check outputs exist
+        run: |
+          for file in $EXPECTED_OUTPUTS; do
+            if test ! -f outputs/$file; then
+              GONE="$GONE $file"
+            fi
+          done
+          if test -n "$GONE"; then
+            echo "These outputs are missing: $GONE"
+            exit 1
+          fi
       #=========================== COMPRESS OUTPUT ===========================#
       - name: Compress PDFs
         run: |
           for file in ./outputs/*.pdf; do
             gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=temp.pdf $file;                                    
             mv temp.pdf $file;
+          done
+      - name: Replace invalid characters in SVGs
+        run: |
+          for file in ./outputs/*.svg; do
+            sed -i 's/\&#x26;/\&amp;/' $file
           done
       - name: Compress SVGs
         run: svgo -f ./outputs/
