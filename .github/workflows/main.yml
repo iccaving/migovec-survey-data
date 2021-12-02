@@ -50,7 +50,7 @@ jobs:
         run: sudo npm install -g svgo
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate output files
-        run: find configs/automation -type f -name "*.thconfig" -exec echo -e "\n\nGenerating {}" \;  -exec ${THERION_PATH}/bin/therion -q {} \;
+        run: for file in configs/automation/*.thconfig; do echo "Generating $file" && ${THERION_PATH}/bin/therion -q $file || echo "Generating $file failed"; done
       - name: Check outputs exist
         run: |
           for file in $EXPECTED_OUTPUTS; do
