@@ -1,0 +1,229 @@
+layout custom_lines
+
+
+	code metapost 
+
+		## redefinitions of existing line styles
+
+	    # simple black line
+		def l_contour_MY (expr P)(text txt) =
+	  		T:=identity;
+	  		pickup PenC;
+	  		thdraw P;
+		enddef;
+
+
+    	# red centreline	
+		def l_survey_cave_MY (expr P) =
+		  T:=identity;
+		  draw P withpen PenD withcolor (0.7,0,0);
+		enddef;
+	
+		# grey rock borders 
+		def l_rockborder_MY (expr P) = 
+		  T:=identity;
+		  pickup PenC;
+		  if cycle P: thclean P fi;
+		  thdraw P withcolor (0.3,0.3,0.3);
+		enddef;
+
+		# orange wall line with chevrons
+		def l_wall_flowstone_MY (expr P) = 
+		  T:=identity;
+		  cas := 0;
+		  dlzka := arclength P;
+		  mojkrok:=adjust_step(dlzka, .75u);
+		  pickup PenC;
+		  p := (-.25u,-.05u)--(-.175u,.05u)--(-.1u,-.05u);
+		  q := (-.025u,-.05u)--(.05u,.05u)--(0.125u,-.05u);
+		  forever:
+		    t := arctime (cas + mojkrok/2) of P;
+		    thdraw p shifted (point t of P + .25u * unitvector(thdir(P,t) rotated -90)) withcolor(0.85,0.45,0.1);
+		    thdraw q shifted (point t of P + .25u * unitvector(thdir(P,t) rotated -90)) withcolor(0.85,0.45,0.1);
+		    cas := cas + mojkrok;
+		    exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
+		  endfor;
+		  pickup PenA;  
+		  thdraw P withcolor(1,0.5,0.1);
+		enddef;
+
+		# plan view defition of wall blocks is Austrian style, but grey
+		def l_wall_blocks_MY (expr P)=
+		  T:=identity;
+		  cas := 0;
+		  dlzka := arclength P;
+			if dlzka > 0:
+		  	mojkrok:=adjust_step(dlzka, 0.5u);
+		  	pickup PenC;
+		  	forever:
+		    	t1 := arctime (cas + mojkrok*1/10) of P;
+		    	t2 := arctime (cas + mojkrok*9/10) of P;
+		    	q := ((point t1 of P) + .2u * unitvector(thdir(P,t1) rotated -125)) -- 
+		         (subpath (t1,t2) of P) --
+		         ((point t2 of P) + .2u * unitvector(thdir(P,t2) rotated -75));
+		    
+		    	thdraw q randomized (u/12) withcolor(0.3,0.3,0.3);
+		    	cas := cas + mojkrok;
+		    	exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
+		  	endfor;
+			fi;
+		enddef;  
+
+		# blue wall line with perpendicular dashes
+		def l_wall_ice_MY (expr P) = 
+		  	T:=identity;
+		  	cas := 0;
+		  	dlzka := arclength P;
+		  	mojkrok:=adjust_step(dlzka, .9u);
+		  	pickup PenC;
+		  	p := (0,-0.15u)--(0,0.15u);
+		  	forever:
+		    	t1 := arctime (cas + mojkrok/6) of P;
+		    	t2 := arctime (cas + mojkrok*2/6) of P;
+		    	t3 := arctime (cas + mojkrok*3/6) of P;
+		    	t5 := arctime (cas + mojkrok*5/6) of P;
+		    	q := subpath(t1,t3) of P;
+		    	p := (point t5 of P + .45u * unitvector(thdir(P,t5) rotated -90))--
+		    	  (point t5 of P + .2u * unitvector(thdir(P,t5) rotated -90));
+		    	thdraw q shifted ( .3u * unitvector(thdir(P,t2) rotated -90)) withcolor(0,0.7,0.9);
+		    	thdraw p  withcolor(0,0.7,0.9);
+		    	cas := cas + mojkrok;
+		    	exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
+		  	endfor;
+		  	pickup PenA;  
+		  	thdraw P withcolor(0,0.7,0.9);
+		enddef;
+	
+		# initialise redefined symbols
+	    initsymbol("l_wall_blocks_MY");
+	    initsymbol("l_wall_ice_MY");
+	    initsymbol("l_wall_flowstone_MY");
+	    initsymbol("l_rockborder_MY");
+	    initsymbol("l_survey_cave_MY");
+	    initsymbol("l_pit_MY");
+	    initsymbol("l_contour_MY");
+
+
+        # grey dashed line
+    	def l_u_fault_MY (expr P)=
+    		T:=identity;
+    		pickup PenC;
+    	  thdraw P withcolor (0.5,0.5,0.5) dashed evenly scaled (2*optical_zoom);
+    	enddef;
+
+    	# blueish overlay line
+    	def l_u_overlay_MY (expr P)=
+    		T:=identity;
+    		pickup PenA;
+    		thdraw P withcolor (0.5,0.75,0.95);
+    	enddef;
+
+    	# grey overlay line
+    	def l_u_underlay_MY (expr Path)=
+    	  T:=identity;
+    	  pickup PenA;
+    	  thdraw Path withcolor(0.55,0.55,0.55);
+    	enddef;
+
+    	# a pinkish line
+    	def l_u_mine_MY (expr Path)=
+    	  T:=identity;
+    	  pickup PenA;
+    	  thdraw Path withcolor(0.82,0.55,0.82);
+    	enddef;
+
+    	# a thin grey, dashed line
+    	def l_u_dripline_MY (expr Path)=
+    	  T:=identity;
+    	  pickup PenC;
+    	  thdraw Path withcolor (0.25,0.25,0.25) dashed evenly scaled (1*optical_zoom);
+    	enddef;
+    	 
+    	# thin grey line
+    	def l_u_texture_MY (expr P)=
+    	  T:=identity;
+    	  thdraw P withpen PenD withcolor (0.3,0.3,0.3);
+    	enddef;
+    	
+    	# line made of orange crescents for flowstone inside a passage
+    	def l_u_wall_flowstone_MY (expr P)=
+    	  T:=identity;
+    	  cas := 0;
+    	  dlzka := arclength P;
+    	  if dlzka > 0:
+    	    mojkrok:=adjust_step(dlzka, 0.5u);
+    	    pickup PenC;
+    	    forever:
+    	      t1 := arctime (cas + mojkrok*2.5/10) of P;
+    	      t1b := arctime (cas + mojkrok*4/10) of P;
+    	      t2 := arctime (cas + mojkrok*7.5/10) of P;
+    	      t2b := arctime (cas + mojkrok*6/10) of P;
+    	      t2a :=arctime (cas +mojkrok*7.49/10) of P;
+    	      
+    	      q := ((point t1 of P) + 0.05u * unitvector(thdir(P,t1) rotated -115)) .. 
+    	            ((point t1b of P) - .01u * unitvector(thdir(P,t1b) rotated -90)) ..
+    	           ((point t2b of P) - .01u * unitvector(thdir(P,t1b) rotated -90)) ..
+    	           ((point t2 of P) + .05u * unitvector(thdir(P,t2) rotated -65))--
+    	           ((point t2a of P) + .05u * unitvector(thdir(P,t2a) rotated -65)) ..
+    	           ((point t2b of P) + .01u * unitvector(thdir(P,t1b) rotated -90)) ..
+    	           ((point t1b of P) + .01u * unitvector(thdir(P,t1b) rotated -90)) ..
+    	           ((point t1 of P) + .05u * unitvector(thdir(P,t1) rotated -115));
+    	      
+    	      thdraw q withcolor(0.85,0.45,0.1);
+    	      cas := cas + mojkrok;
+    	      exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
+    	    endfor;
+    	  fi;
+    	enddef;
+
+    	def l_u_icepit_MY (expr P) =
+    	    T:=identity;
+    	    laenge:= arclength P;
+    	    symsize:=adjust_step(laenge,0.5u);
+    	    triangle_width:=symsize/2;
+    	    cur:=(symsize-triangle_width)/2;
+    	    pickup PenC;
+    	    forever:
+    	      t1 := arctime (cur) of P;
+    	      t  := arctime (cur + triangle_width/2) of P;
+    	      t2 := arctime (cur + triangle_width) of P;
+    	      if ATTR__height >= 10:
+    	        thfill (subpath (t1,t2) of P) --
+    	          ((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+    	          cycle;
+    	      else:
+    	        thclean (subpath (t1,t2) of P) --
+    	          ((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+    	          cycle;
+    	        thfill (point t2 of P) --((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+    	          (point t1 of P)--cycle withcolor (0, 0.7,0.9);
+    	      fi;
+    	      cur := cur + symsize;
+    	      exitif cur > laenge - (1*symsize/3); % for rounding errors
+    	      t1:=arctime (cur) of P;
+    	    endfor;
+    	    thdraw P withcolor (0, 0.7,0.9);
+    	  enddef;
+
+		# initialise new line symbols
+	    initsymbol("l_u_overlay_MY");
+	    initsymbol("l_u_mine_MY");
+	    initsymbol("l_u_underlay_MY");
+	    initsymbol("l_u_fault_MY");
+	    initsymbol("l_u_icepit_MY");
+	    initsymbol("l_u_wallstep_MY");
+	    initsymbol("l_u_dripline_MY");
+	    initsymbol("l_u_texture_MY");
+	    initsymbol("l_u_wall_flowstone_MY");	
+
+endlayout
+
+# define legend label
+text en "line u:flowstone_MY" "flowstone  wall"
+text en "line u:openshaft_MY" "open shaft"
+text en "line u:texture_MY" "bedrock exposed"
+text en "line u:wall_flowstone_MY" "wall flowstone"
+text en "line u:overlay_MY" "overlying passage"
+text en "line u:mine_MY" "mine addit"
+text en "line u:dripline_MY" "dripline"
+text en "line u:icepit_MY" "ice pit"

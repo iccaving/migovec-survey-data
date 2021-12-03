@@ -1,14 +1,13 @@
 encoding  utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
-#                      THIS IS A CONFIGURATION FILE FOR                            |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
 #                                                                                  |
 #                      GITHUB CI GENERATION OF:                                    |
 #                                                                                  |
-#                      VRTNARIJA (GARDENER's WORLD)                                |
+#                      SYSTEM MIGOVEC OVERVIEW                                     |
 #                                                                                  |
 #----------------------------------------------------------------------------------|
-
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
@@ -16,40 +15,29 @@ source "../../data/system_migovec.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../layouts/overview-p.thl"
+input "../../layouts/base-p.thl"
 input "../../layouts/base-e.thl"
-input "../../layouts/user_label.thl" # input this to have the label hierarchy
+input "../../layouts/overview-p.thl"
+input "../../layouts/mods.thl"
+input "../../layouts/metapost/user_label.thl" # input this to have the label hierarchy
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview1
+# export a PLAN view
+
 layout plan
-	copy overview
+	copy base-p
 	copy colour-by-new
-  	copy user_label
+	copy user_label
 
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: 8283<br><br>Vilinska Jama<br>kat. št.: 10868<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: 8283<br><br>Vilinska Jama<br>Cadastral number: 10868<br>"
-	code tex-map
-	\def\maplayout{
-	\legendbox{-5}{99}{NW}{\size[26]\the\cavename}
-	\legendbox{-5}{95}{NW}{\size[10]\the\comment}
-	\legendbox{5}{70}{NW}{\scalebar}
-	\legendbox{5}{65}{NW}{\northarrow}
-	}
-  endcode
 
-  code metapost
-    max_label_level("2"); % yeah, now it works!
+	code metapost
+    max_label_level("2"); 
 	endcode
+
 endlayout
 
-source
-	map local-p -projection plan
-		m-all-p@vrtnarija.vrtnarija_vilinska.system_migovec
-		vrtnarija@vrtnarija_vilinska.system_migovec
-	endmap
-endsource
-
-select local-p
+select m-all-p@vrtnarija_vilinska.system_migovec
 
 language sl
 export map -projection plan -o ../../outputs/vrtnarija_plan_SLO.pdf -layout plan
@@ -58,41 +46,32 @@ language en
 export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.pdf -layout plan
 export map -projection plan -o ../../outputs/vrtnarija_plan_ENG.svg -layout plan
 
+
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
-
+ 
 layout ee
-	debug on
 	copy base-e
-	copy show-centreline
-	scale 1 2000
-	grid-size 10 10 100 m
-	map-header 0 0 off
-
+	copy colour-by-new
 	copy user_label
 
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: 8283<br><br>Vilinska Jama<br>kat. št.: 10868<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: 8283<br><br>Vilinska Jama<br>Cadastral number: 10868<br>"
+	
 	code metapost
-		max_label_level("3"); % yeah, now it works!
+    max_label_level("2"); % yeah, now it works!
 	endcode
-	symbol-assign point water-flow MY
+	
 endlayout
 
-source
-	map local-e -projection extended
-		m-all-e@vrtnarija.vrtnarija_vilinska.system_migovec
-		vrtnarija@vrtnarija_vilinska.system_migovec
-	endmap
-endsource
+select m-all-e@vrtnarija_vilinska.system_migovec
 
-select local-e
-
-# language sl
+language sl
 export map -projection extended -o ../../outputs/vrtnarija_EE_SLO.pdf -layout ee
 export map -projection extended -o ../../outputs/vrtnarija_EE_SLO.svg -layout ee
-# language en
+
+language en
 export map -projection extended -o ../../outputs/vrtnarija_EE_ENG.pdf -layout ee
 export map -projection extended -o ../../outputs/vrtnarija_EE_ENG.svg -layout ee
-
 
 
 #----------------------------------------------------------------------------------|

@@ -30,9 +30,6 @@ line rock-border -close on
   460.3476 330.1511
 endline
 
-point 385.807 280.185 breakdown-choke 
-point 356.319 280.185 breakdown-choke 
-point 331.745 281.004 breakdown-choke 
 line wall 
   903.0207 372.099
   866.3379 384.6483
@@ -208,7 +205,7 @@ endline
 area water
 endarea
 
-point 1541.0 301.0 u:label_MY -attr text "Cuckoo's nest" -align br -attr lvl 1
+point 1541.0 301.0 u:label_MY -align br -attr text "Cuckoo's nest" -attr lvl 1
 line wall 
   1366.7787 274.6312
   1371.0246 276.4566 1377.87 286.17 1382.309 290.4789

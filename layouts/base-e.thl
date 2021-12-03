@@ -3,290 +3,113 @@ encoding  utf-8
 #                                                             |
 #             THIS IS A THERION LAYOUT DEFINITION FILE        |
 #                                                             |
-#             it contains the redefinition for a layout       |
-#             with a Tanguy approved style                    |
+#             it contains the redefinition for the            |
+#             base layout                                     |
 #                                                             |
-#             the format is good, trust me                    |
 #_____________________________________________________________|
 
-# first we open the layout
 
-#lookup explo-date
-#[1999.12.31 2018.12.31] [100 100 100] "before 2018"
-#2019.12.31 [100 50 50] "2018 and 2019 expeditions"
-#endlookup
+# input the custom point, line and area definitions
+input metapost/points.thl
+input metapost/lines.thl
+input metapost/areas.thl
+input metapost/scalebar_arrow.thl
+input metapost/grid.thl
 
 layout base-e
-	
-	#_____________________________________________________________
-	#                                                             |
-	#                        GENERAL STATEMENTS                   |
-	#_____________________________________________________________|
-	
-	
-	scale 1 2000
-	#symbol-hide group all
-	min-symbol-scale M
-	grid bottom
-  	grid-size 10 10 10 m
-  	grid-coords border
-	
-	
-	code metapost
-		#_____________________________________________________________
-		#                                                             |
-		#                            LEGEND ITEMS                     |
-		#_____________________________________________________________|
-		
+	# copy custom metapost definitions
+  copy custom_points
+  copy custom_lines
+  copy custom_areas
+  copy custom_scalebar_arrow
+  copy custom_grid
 
-		# VERTICAL GRID less obnoxious
-
-		 def s_vgrid (expr xpos, ypos, xsize, ysize) =
-		   pickup PenB;
-		   if ypos > -1 : if xpos < 0: draw (-10, -ysize) -- (-10, 0);
-		   draw (-10, -ysize/5) -- (-7, -ysize/5);
-		   draw (-10, -2*ysize/5) -- (-7, -2*ysize/5);
-		   draw (-10, -3*ysize/5) -- (-7, -3*ysize/5);
-		   draw (-10, -4*ysize/5) -- (-7, -4*ysize/5);
-		    fi fi;
-		   if xpos <0 : draw (-10,0) -- (0,0) fi;
-		   pickup PenD;
-		   draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.5;
-		  enddef;
-
-		# NORTH ARROW (contributions of Thomas Holder)
-		
-		def s_northarrow (expr rot) =
-			begingroup
-				interim defaultscale:=0.5; % scale your north arrow here
-				T:=identity scaled defaultscale rotated -rot;
-				pickup pencircle scaled (0.08cm * defaultscale);
-				thdraw (-.4cm,-1.4cm)--(0,2.8cm)--(.4cm,-1.4cm)--cycle;
-				p:=fullcircle scaled 1.6cm;
-				thclean p; thdraw p;
-				p:=(0.95cm,0)--(0.65cm,0);
-				thdraw p; thdraw p xscaled -1;
-				pickup pencircle scaled (0.12cm * defaultscale);
-				p:=(0.28cm,0.42cm);
-				thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1);
-			endgroup;
-		enddef;
-		
-		## SCALE BAR (modified from contributions by Thomas Holder)
-		
-		def s_scalebar (expr l, units, txt) =
-			begingroup
-				interim warningcheck:=0;
-				tmp20:=20 * (l / Scale * cm * units / 100);
-				tmp40:=40 * (l / Scale * cm * units / 100);
-				tmp60:=60 * (l / Scale * cm * units / 100);
-				tmp80:=80 * (l / Scale * cm * units / 100);
-				tmp100:=100 * (l / Scale * cm * units / 100);
-				scal10:=10 * l / 100;
-				scal20:=20 * l / 100;
-				scal40:=40 * l / 100;
-				scal60:=60 * l / 100;
-				scal80:=80 * l / 100;
-				brht:= 5bp;
-				lblht:= 8bp;
-			endgroup;
-			
-			pickup PenD;
-			
-			draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
-			draw (tmp20,0)--(tmp20,brht);
-			draw (tmp40,0)--(tmp40,brht);
-			draw (tmp60,0)--(tmp60,brht);
-			draw (tmp80,0)--(tmp80,brht);
-			fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
-			fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
-			
-			
-			begingroup
-				label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
-				label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
-				label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
-				label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
-				label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
-				label.top(thTEX(decimal (0)),origin+(0,lblht));
-				label.bot(thTEX("IZTEGNJENI PROFIL 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
-			endgroup
-		enddef;
-
-		def p_waterflow_permanent_MY (expr P,R,S,A)=
-    U:=(.2u,.2u);
-      T:=identity aligned A rotated R scaled S shifted P;
-      pickup PenD;
-      thdraw (-.07u,.28u)--(.07u,.28u)--(0,0.43u)--cycle;
-	  thfill (-.07u,.28u)--(.07u,.28u)--(0,0.43u)--cycle;      
-	  thdraw (-0.04u,0.29u)..(.04u,.2u)..(-0.05u,0.1u)..(.05u,0)..(-0.05u,-0.1u)..(0,-0.2u);
-    enddef;
-		
-		# ROCKBORDERS
-
-		#(0.1+.1*normaldeviate*u)
-		
-		def l_wall_blocks_MY (expr P)=
-			T:=identity;
-			cas := 0;
-			dlzka := arclength P;
-			if dlzka > 0:
-			mojkrok:=adjust_step(dlzka, 0.3u);
-			pickup PenD;
-			forever:
-			t_0 := arctime(cas) of P;
-			t_end := arctime(cas+mojkrok) of P;
-			t1 := arctime (cas + (2+1.3*normaldeviate)/10*mojkrok) of P;
-			t2 := arctime (cas + (8-1.2*normaldeviate)/10*mojkrok) of P;
-			t3 := arctime (cas + (2.5+1.2*normaldeviate)/10*mojkrok) of P;
-			t4 := arctime (cas + (8.5-1.3*normaldeviate)/10*mojkrok) of P;
-			sk := 1-.25*normaldeviate;
-			q := (point t_0 of P) -- ((point t1 of P) + .05*sk*u * unitvector(thdir(P,t1) rotated (-88+normaldeviate*4))) --
-			((point t2 of P) + .05*sk*u * unitvector(thdir(P,t2) rotated (-88+normaldeviate*4))) -- (point t_end of P) -- ((point t4 of P) - .1*sk*u * unitvector(thdir(P,t4) rotated (-88+normaldeviate*4))) --
-			((point t3 of P) - .1*sk*u * unitvector(thdir(P,t3) rotated (-88+normaldeviate*4))) -- cycle;
-			
-			thdraw q withcolor(0.3,0.3,0.3);
-			cas := cas + mojkrok;
-			exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
-			endfor;
-			fi;
-		enddef;
-		
-		# FLOWSTONE
-		
-		def l_wall_flowstone_MY (expr P) =
-			T:=identity;
-			cas := 0;
-			dlzka := arclength P;
-			mojkrok:=adjust_step(dlzka, .75u);
-			pickup PenC;
-			p := (-.25u,-.05u)--(-.175u,.05u)--(-.1u,-.05u);
-			q := (-.025u,-.05u)--(.05u,.05u)--(0.125u,-.05u);
-			forever:
-			t := arctime (cas + mojkrok/2) of P;
-			thdraw p shifted (point t of P + .25u * unitvector(thdir(P,t) rotated -90)) withcolor(0.85,0.45,0.1);
-			thdraw q shifted (point t of P + .25u * unitvector(thdir(P,t) rotated -90)) withcolor(0.85,0.45,0.1);
-			cas := cas + mojkrok;
-			exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
-			endfor;
-			pickup PenA;
-			thdraw P withcolor(1,0.5,0.1);
-		enddef;
-		
-		
-		
-		# ROCKBORDERS
-		
-		def l_rockborder_MY (expr P) =
-			T:=identity;
-			pickup PenD;
-			if cycle P: thclean P fi;
-			thdraw P withcolor (0.3,0.3,0.3);
-		enddef;
-
-		# EXPOSURE OF BEDROCK
-    
-    	def l_u_texture_MY (expr P)=
-      		T:=identity;
-      		thdraw P withpen PenD withcolor (0.3,0.3,0.3);
-    	enddef;
-		
-		#_____________________________________________________________
-		#                                                             |
-		#                            POINT TYPES                      |
-		#_____________________________________________________________|
-		
-		# CAMPSITE
-		def p_camp_MY (expr P,R,S,A)=
-			U:=(0.1u,0.1u);
-			T:=identity aligned A rotated R scaled S shifted P;
-			q:= (0,0)--(0.36u,0)--(0,.75u)--(-0.36u,0)--cycle;
-			p:= (0,0)--(0,.75u);
-			pickup PenB;
-			thfill q withcolor (1,0,0);
-			thdraw q withcolor (0,0,0);
-			thdraw p withcolor (0,0,0);
-		enddef;
-		#_____________________________________________________________
-		#                                                             |
-		#                            AREA TYPES                       |
-		#_____________________________________________________________|
-		
-		# WATER
-		def a_water_MY (expr p) =
-			T:=identity;
-			thfill p withcolor (0.7,0.7,0.85);
-		enddef;
-		
-		
-		def a_clay_MY (expr Path) =
-			T:=identity;
-			thclean Path;
-			thfill Path withcolor (0.65,0.55,0.1);
-		enddef;
-		
-		
-		#_____________________________________________________________
-		#                                                             |
-		#               NOW WE INITIATE ALL THE SYMBOLS               |
-		#_____________________________________________________________|
-		
-		## lines
-		# redefinitions
-		initsymbol("p_waterflow_permanent_MY");
-
-		# others
-		initsymbol("l_rockborder_MY");
-		initsymbol("l_u_texture_MY");
-		
-		# wall types
-		initsymbol("l_wall_blocks_MY");
-		
-		initsymbol("l_wall_flowstone_MY");
-		initsymbol("p_camp_MY");
-		
-		
-		## areas
-		# redefinitions
-		
-		initsymbol("a_water_MY");
-		initsymbol("a_clay_MY");
-		
-	endcode
+  code tex-map
+    \framethickness=0.5mm
+		\def\maplayout{
+			\legendbox{1}{99}{NW}{\size[60]\the\cavename}
+			\legendbox{1}{94}{NW}{\size[10]\the\comment}
+			\legendbox{1}{72}{NW}{\scalebar}
+			\legendbox{1}{17}{NW}{\size[10]{\sl Depth:} \the\cavedepth}
+			\legendbox{1}{15}{NW}{\size[10]{\sl Length:} \the\cavelength}
+			\legendbox{99}{94}{NE}{\size[10]\the\comment}
+			\legendbox{99}{72}{NE}{\scalebar}
+		}
+  endcode
 	
-	#_____________________________________________________________
-	#                                                             |
-	#          WE ASSIGN THE SYMBOLS TYPES AND COLOURS            |
-	#_____________________________________________________________|
+	# hide unnecessary symbols for large scale
 	
-	
-	symbol-assign area water MY
-	symbol-assign line wall:blocks MY
-	symbol-assign line wall:flowstone MY
-	symbol-assign point camp MY
-	symbol-assign line rock-border MY
-	
-	symbol-assign area clay MY
-	
+	symbol-hide point remark
+	symbol-hide point label
+	symbol-hide point passage-height
+	symbol-hide line arrow
+	symbol-hide line contour
+	symbol-hide line rock-border
+  symbol-hide line rock-edge
+	symbol-hide line floor-step
+	symbol-hide point gradient
+	symbol-hide line label
+	symbol-hide line gradient
+	symbol-hide point station-name
+	symbol-hide line map-connection
+
+  ## general statements
+  scale 1 2000
+  legend on
+  map-header -5 95 ne
+  statistics topo-length off
+  fonts-setup 6 7 10 12 14
+  grid-size 50 50 100 m
+  
+
+
+  ## survey lines and stations
+  symbol-assign line survey MY
+  symbol-assign point station MY
+  symbol-hide point passage-height
+  symbol-colour point station-name [70 0 0]
+ 
+  ## water and ice
+  symbol-assign area ice MY
+  symbol-assign area snow MY
+ 
+
+  symbol-colour area ice [0 70 90]
+  symbol-colour area water [0 10 70]
+  symbol-colour area sump [0 10 70]
+  symbol-assign point water-flow MY
+  symbol-colour point water-flow [0 10 70]
+ 
+  ## formation
+  symbol-colour point flowstone [85 45 10]
+  symbol-color line wall:flowstone [85 45 10]
+  symbol-colour point flowstone [85 45 10]
+  symbol-colour point pillar [85 45 10]
+  symbol-colour point stalagmite [85 45 10]
+  symbol-colour point stalactite [85 45 10]
+  symbol-colour point curtain [85 45 10]
+  symbol-colour point helictite [85 45 10]
+  symbol-colour point soda-straw [85 45 10]
+  symbol-colour point crystal [85 45 10]
+ 
+  ## sedimentary fills
+  symbol-assign line rock-border MY
+  symbol-assign area clay MY
+  symbol-assign area sand MY
+  symbol-assign area pebbles MY
+  
+  symbol-colour area clay [65 55 10]
+  symbol-colour line wall:clay [65 55 10]
+  symbol-colour area sand [85 75 10]
+
+  ## misc
+  symbol-assign point gradient MY
+  symbol-assign line contour MY
+  symbol-assign line pit AUT
+  symbol-assign line wall MY
+  symbol-assign point breakdown-choke AUT
+  symbol-assign point air-draught MY
+  symbol-assign point station:fixed MY
+  symbol-assign point station:temporary MY
+
 endlayout
-
-#_____________________________________________________________
-#                                                             |
-#          FINALLY, WE DEFINE THE LEGEND LABELS               |
-#_____________________________________________________________|
-
-#english labels
-text en "point u:logger_MY"  "logger"
-text en "line u:flowstone_MY" "flowstone  wall"
-text en "line u:openshaft_MY" "open shaft"
-text en "line u:texture_MY" "bedrock exposed"
-text en "point u:waterdrip_MY" "water drips"
-text en "point u:sampled_MY" "sample taken"
-text en "line u:wall_flowstone_MY" "wall flowstone"
-
-
-#german labels
-text de "line u:openshaft_MY" "Eingangskessel"
-text de "line u:texture_MY" "Felsboden"
-text de "line u:flowstone_MY" "flächiger Sinter"
-
