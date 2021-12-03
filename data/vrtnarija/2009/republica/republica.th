@@ -8,7 +8,6 @@ map m-all-e -projection extended
 	republica-2e
 endmap
 
-join republica-1e republica-2e
 
 
 input republica-p.th2
@@ -26,20 +25,34 @@ endmap
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall # Default
+		extend right
 		2	1	5.40	152	-05	# .2
+		extend right
 		2	3	3.09	297	+05
+		extend left
 		4	3	16.20	136	-19
+		extend right 
 		4	5	15.00	238	-07
+		extend left
 		6	5	14.81	058	+21
+		extend right 
 		6	7	7.35	204	-03
+		extend left
 		8	7	8.75	047	+25
+		extend right 
 		8	9	5.22	098	-28
+		extend left
 		10	9	4.71	335	-05
+		extend right 
 		10	11	8.66	115	+22
+		extend left
 		12	11	4.09	025	+20
+		extend right
 		1	13	1.72	170	-35
 		13	14	13.33	-	down
+		extend left
 		15	14	9.10	034	00
+		extend ignore
 		17	16	2.99	222	+31
 		17	18	1.99	048	-01
 		19	18	2.48	183	-01
@@ -47,6 +60,7 @@ endmap
 		20	21	2.93	108	-22
 		22	21	3.25	214	+15
 		23	22	3.85	144	-03
+		extend right
 		15	23	0.80	084	00
 	endcentreline
 endsurvey

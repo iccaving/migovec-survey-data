@@ -32,22 +32,36 @@ join mad_cow-1e mad_cow-2e
 		date 2004.07.31
 		units length meters
 		units compass clino degrees
-		data normal from to tape compass clino ignoreall # Default
+		data normal from to tape compass clino  # Default
+		extend right
 		1	2	4.30	24	+36	#.1 1 1 1 1
+		extend right
 		2	3	3.70	22	-23	#.2 0 1 0 1
+		extend right
 		3	4	8.10	282	+31	#.3 2 0 4 0
+		extend right
 		4	5	3.30	245	+30	#.4 2 0 2 2
+		extend right
 		5	6	2.32	267	+16	#.5 1 1 1 1
+		extend right
 		6	7	3.49	311	+63	#.6 0 3 5 2
+		extend right
 		7	8	8.45	220	-10	#.7 2 0 1 P
+		extend left
 		9	8	15.58	57	+4	#.8 0 3 2 0
+		extend right
 		9	10	5.73	198	-20	#.9 0 3 2 0
+		extend left
 		11	10	12.20	121	-4	#.10 1 1 2 0
+		extend left
 		11	12	8.23	298	+45	#.11 1 1 5 0
+		extend right
 		13	12	4.40	152	+12	#.12 1 4 3 1
+		extend left
 		1	pseudosump	10.05	130	-5.71
-		
+		extend left
 		13	14	11.10	143	-22
+		extend ignore
 		flags duplicate
 		15	14	10.82	356	+6
 		15	16	17.20	102	+2
