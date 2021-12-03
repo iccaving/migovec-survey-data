@@ -11,14 +11,23 @@ survey nevermore -title "Nevermore"
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall # Default
 		flags duplicate
+		extend right
 		1	2	4.95	213	-25	# LRUD for all shots, too lazy to enter
+		extend left
 		3	2	17.88	008	+33
+		extend left
 		4	3	9.30	011	+23
+		extend left
 		5	4	6.78	316	+12	#tape is indistinct - could be 5.78
+		extend left
 		6	5	4.40	009	00	#clino down as '-' - assume means horizontal
+		extend left
 		7	6	6.32	344	+24
+		extend left
 		8	7	12.90	005	+25
+		extend left
 		9	8	6.59	339	+08
+		extend left
 		10	9	5.12	301	+05	# no direction associated with this shot, assuming 10->9
 		flags not duplicate
 	endcentreline

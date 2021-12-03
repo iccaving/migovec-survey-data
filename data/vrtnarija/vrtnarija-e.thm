@@ -334,9 +334,7 @@ centreline
 	extend right 17@mushroom 16@mushroom
 	extend right 14@mushroom
 	extend left 21@greed
-	extend right 15@mad_cow
-	extend left 13@mad_cow
-	extend left 6@mad_cow
+	extend left 25@potato
 	extend right 25@soda
 	extend left 35@soda
 	extend left 30@cascade
@@ -353,7 +351,8 @@ centreline
 	extend right 2@pick_your_poison 4@pick_your_poison
 	extend right 4@pick_your_poison
 	extend right 23@lazarus
-	
+
+
 	# Break loop between Leprechaun - Envy - Greed - Cascade - Leprechaun
 	extend ignore 3@envy
 	# Break loop between Big Rock - High 32 - Soda - Stagger - Big Rock
@@ -390,6 +389,11 @@ centreline
 
 	# Snap off Gravity/Soda join so main passage follows High32
 	extend ignore 3@gravity
+
+	# perfidia republica loop
+	extend ignore 16@perfidia
+	#extend ignore 9@cow
+	extend ignore 15@mad_cow
 	
 	# Below Zimmer / Korita
 	extend right 3@belowzimmer 1@belowzimmer
