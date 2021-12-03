@@ -80,7 +80,7 @@ endscrap
 
 scrap below55-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 477.9716 890.5012 label -text Gloworm -align r -scale l
+point 477.9716 890.5012 u:label_MY -attr lvl 1 -attr text Gloworm -align r -scale m
 line wall 
   454.2157 776.8722
   454.2157 776.8722 450.3746 829.6879 450.3746 836.4099

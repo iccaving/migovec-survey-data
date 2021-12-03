@@ -11,7 +11,7 @@ point 287.75 -347.0 u:logger_MY -id logger1
 
 point 278.5 -333.75 label -text "Logger 473"
 
-point 259.0 -130.0 label -text "Entrance shaft" -scale l
+point 259.0 -130.0 u:label_MY -attr lvl 1 -attr text "Entrance shaft" -scale l
 
 area snow
   l73-169--123
@@ -369,9 +369,9 @@ point 318.0 -361.0 station -name "19"
 
 point 166.0 -272.0 station -name "22"
 
-point 491.5 -533.0 label -text "Ice shaft" -scale l
+point 491.5 -533.0 u:label_MY -attr lvl 1 -attr text "Ice shaft" -scale l
 
-point 484.0 -333.0 label -text "Ice room" -scale l
+point 484.0 -333.0 u:label_MY -attr lvl 1 -attr text "Ice room" -scale l
 
 point 341.5 -359.5 station -name "21"
 

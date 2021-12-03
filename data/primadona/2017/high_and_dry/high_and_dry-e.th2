@@ -30,7 +30,7 @@ line wall -subtype blocks
   457.1875 -661.107 481.0274 -643.6769 481.0274 -643.6769
 endline
 
-point 364.3538 112.8284 label -text "High and Dry" -align tl -scale m
+point 364.3538 112.8284 u:label_MY -attr text "High and Dry" -align tl -scale m
 line wall -subtype blocks
   534.682 -348.294
   534.682 -348.294 540.4348 -324.1455 539.2813 -318.3778

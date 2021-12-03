@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap dejavu-1e -scale [326.0 -736.0 498.0 -736.0 0.0 0.0 15 0.0 m] -projection extended
 
-point 1357.9768 192.8094 label -text "Déjà Vu" -align bl -scale m
+point 1357.9768 192.8094 u:label_MY -attr text "Déjà Vu" -align bl -scale m
 line wall -subtype invisible
   161.2286 546.8475
   236.8564 403.9025

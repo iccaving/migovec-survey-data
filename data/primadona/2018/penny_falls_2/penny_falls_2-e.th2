@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap penny_falls_2-e1 -scale [330.0 -733.0 519.0 -733.0 0.0 0.0 8 0.0 m] -projection extended
 
-point 305.9768 890.6705 label -text "Penny Falls" -align tr
+point 305.9768 890.6705 u:label_MY -attr text "Penny Falls" -align tr
 line wall 
   350.7182 388.3792
   350.7182 388.3792 343.204 539.6882 343.204 544.3958

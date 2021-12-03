@@ -40,7 +40,7 @@ layout base-e
 	# hide unnecessary symbols for large scale
 	
 	symbol-hide point remark
-	symbol-hide point label
+	#symbol-hide point label
 	symbol-hide point passage-height
 	symbol-hide line arrow
 	symbol-hide line contour
@@ -52,6 +52,8 @@ layout base-e
 	symbol-hide line gradient
 	symbol-hide point station-name
 	symbol-hide line map-connection
+  symbol-hide point anchor
+  symbol-hide point dig
 
   ## general statements
   scale 1 2000
@@ -98,16 +100,16 @@ layout base-e
   symbol-assign area clay MY
   symbol-assign area sand MY
   symbol-assign area pebbles MY
+  symbol-assign line wall:blocks MYEE # this is an example of symbol different between plan view and EE. 
   
   symbol-colour area clay [65 55 10]
-  symbol-colour line wall:clay [65 55 10]
+  symbol-colour line wall:clay [35 25 5]
   symbol-colour area sand [85 75 10]
 
   ## misc
   symbol-assign point gradient MY
   symbol-assign line contour MY
   symbol-assign line pit AUT
-  symbol-assign line wall MY
   symbol-assign point breakdown-choke AUT
   symbol-assign point air-draught MY
   symbol-assign point station:fixed MY

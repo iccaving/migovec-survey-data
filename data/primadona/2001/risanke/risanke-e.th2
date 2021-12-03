@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap risanke-e1 -scale [1366.0 -3966.0 2800.0 -3968.0 0.0 0.0 10 0.0 m] -projection extended
 
-point 1604.6481 2665.8247 label -text Risanke -align bl -scale l
+point 1604.6481 2665.8247 u:label_MY -attr text Risanke -align bl -scale l
 line rock-border -close on -clip off
   2388.0 944.0
   2340.0 872.0

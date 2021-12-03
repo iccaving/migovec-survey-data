@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap testing_the_waters-e1 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
-point -309.3016 2740.4204 label -text "Testing the Waters" -align t -scale xl
+point -309.3016 2740.4204 u:label_MY -attr text "Testing the Waters" -align t -scale xl
 line wall -subtype blocks
   -859.8927 1859.2752
   -1014.605 1592.8651

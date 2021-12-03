@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap gamblers_ruin-1e -scale [331.0 -735.0 536.0 -734.0 0.0 0.0 8 0.0 m] -projection extended
 
-point 695.5519 634.3528 label -text "Gambler's Ruin" -align tl
+point 695.5519 634.3528 u:label_MY -attr text "Gambler's Ruin" -align tl
 line wall -subtype blocks
   354.2489 163.59
   434.2786 160.0593

@@ -68,7 +68,7 @@ line wall -id udc_l2
   1668.7492 781.7951 1649.5393 891.0746 1649.5393 891.0746
 endline
 
-point 683.697 402.9047 label -text "Upside Down Chamber" -align tl
+point 683.697 402.9047 u:label_MY -attr text "Upside Down Chamber" -align tl
 line rock-border -close on
   610.9133 -525.9167
   559.7825 -521.9324

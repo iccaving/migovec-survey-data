@@ -163,7 +163,7 @@ line wall
   -495.3711 1311.8327 -509.6372 1296.7752 -513.4653 1295.4992
 endline
 
-point 222.9389 1617.1031 label -text "Brez Volje" -align tl -scale l
+point 222.9389 1617.1031 u:label_MY -attr text "Brez Volje" -align tl -scale l
 point 776.178 1956.9825 station -name BV31
 point 645.7397 1853.7799 station -name BV30
 point 562.3766 1850.129 station -name BV29
