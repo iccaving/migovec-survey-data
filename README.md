@@ -48,7 +48,7 @@ You can view any of the 3D models or PDF maps in your browser [here](https://icc
 
 ![Automated Build](https://github.com/iccaving/migovec-survey-data/workflows/Automated%20Build/badge.svg)
 
-As data is added some artifacts are automatically generated. These can be found on the [releases page](https://github.com/tr1813/migresurveyhttps://github.com/iccaving/migovec-survey-data/releases).
+As data is added some artifacts are automatically generated. These can be found on the [releases page](https://github.com/iccaving/migovec-survey-data/releases).
 
 Also for convenience here is a list of the artifacts and the links to the latest versions:
 
@@ -163,7 +163,7 @@ For compiling and exporting:
 
 For drawing we are using Inkscape and the Therion Inkscape extensions because we think its nicer than using the Therion editor:
 
-- [Inkscape](https://inkscape.orghttps://github.com/iccaving/migovec-survey-data/release/) - Vector drawing program
+- [Inkscape](https://inkscape.org) - Vector drawing program
 - [Inkscape Therion Extensions](https://github.com/speleo3/inkscape-speleo/) - The extensions that allow you to draw Therion scraps in Inkscape.
 
 (Optional) For editing the text files:
