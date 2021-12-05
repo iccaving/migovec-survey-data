@@ -98,7 +98,7 @@ endscrap
 
 scrap what_a_coincidence-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
-point 2392.5542 -1743.7657 label -align b -text "What a Coincidence!"
+point 2392.55 -1743.77 label -align b -text "What a Coincidence!"
 line wall -subtype blocks
   -2127.5023 -878.5637
   -2127.5023 -878.5637 -1771.483 -780.9455 -1754.2563 -780.9455
@@ -210,6 +210,7 @@ endscrap
 
 scrap what_a_coincidence-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
+point 8692.1201 -1134.6101 u:connectionmarker_MY -attr code 1
 line wall -id e1_l8 -subtype clay
   8679.4054 -585.7091
   8679.4054 -585.7091 8731.0856 -686.1984 8782.7658 -723.523

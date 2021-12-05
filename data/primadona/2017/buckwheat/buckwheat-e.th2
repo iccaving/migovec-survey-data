@@ -4,6 +4,7 @@ encoding  utf-8
 
 scrap buckwheat-e1 -projection extended -scale [-117.0 -287.0 465.0 -287.0 0.0 0.0 14.7828 0.0 m]
 
+point 712.6982 679.3339 u:connectionmarker_MY -attr code 1
 line rock-border -close on
   860.5689 85.7861
   860.5689 85.7861 839.1105 86.2332 836.4282 81.7627
@@ -35,7 +36,7 @@ line rock-border -close on
   538.6938 65.6689 566.8578 75.504 566.8578 75.504
 endline
 
-point 945.9035 92.0964 map-connection -scale s
+point 945.904 92.0964 map-connection -scale s
 line wall -subtype invisible
   839.7194 9.3301
   895.4529 16.3682 906.0504 38.319 939.2415 52.8712

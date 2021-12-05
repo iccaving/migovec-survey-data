@@ -1,10 +1,13 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 853.000000 1109.500000
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {130.000000 1 1.0} {970.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2017/more_like_welding/more_like_welding-p.gif" 0 {}
 
-##XTHERION## xth_me_image_insert {130.000000 1 1.0} {970.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/migresurvey/migovecsurveydata/primadona/2017/more_like_welding/more_like_welding-p.gif" 0 {}
+scrap more_like_welding-e1 -projection extended -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
 
-scrap more_like_welding-e1 -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m] -projection extended
+point 782.7972 628.1448 u:connectionmarker_MY -attr code 2
+
+point 982.7972 628.1448 u:connectionmarker_MY -attr rbg (0.1,0.1,0.1)
 
 line wall 
   778.7174 700.5964
@@ -45,14 +48,14 @@ line wall -subtype blocks
   750.4609 549.3407
 endline
 
-point 155.142 633.4963 station -name 5
-point 263.2712 698.1388 station -name 5
-point 454.848 698.1388 station -name 4
-point 776.8851 602.938 station -name 3
+point 155.142 633.496 station -name 5
+point 263.271 698.139 station -name 5
+point 454.848 698.139 station -name 4
+point 776.885 602.938 station -name 3
 endscrap
 
 
-scrap more_like_welding-e2 -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m] -projection extended
+scrap more_like_welding-e2 -projection extended -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
 
 line wall 
   2117.9226 644.0742
@@ -125,15 +128,15 @@ line wall -subtype blocks
   1221.3363 -148.7085
 endline
 
-point 2122.0363 614.1035 station -name 15
-point 2063.2704 615.2789 station -name 14
-point 2065.621 96.3761 station -name 13
-point 1234.6713 -55.8276 station -name 11
-point 1235.259 -132.2233 station -name 12
-point 1575.5135 -18.2174 station -name 6
-point 1343.3882 -26.4447 station -name 10
-point 1160.6263 -125.759 station -name 9
-point 1095.9838 -289.0146 station -name 8
-point 1095.6265 -398.781 station -name 7
+point 2122.04 614.104 station -name 15
+point 2063.27 615.279 station -name 14
+point 2065.62 96.3761 station -name 13
+point 1234.67 -55.8276 station -name 11
+point 1235.26 -132.223 station -name 12
+point 1575.51 -18.2174 station -name 6
+point 1343.39 -26.4447 station -name 10
+point 1160.63 -125.759 station -name 9
+point 1095.98 -289.015 station -name 8
+point 1095.63 -398.781 station -name 7
 endscrap
 

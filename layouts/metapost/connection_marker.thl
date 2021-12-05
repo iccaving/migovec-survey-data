@@ -1,0 +1,46 @@
+layout connection_marker
+	
+	code metapost
+
+		def p_u_connectionmarker_MY (expr P,R,S,A)=
+			save RGB;
+ !		    color RGB;
+ 			if known ATTR_code:
+ 		  		COLORCODE := scantokens(ATTR_code);
+				if COLORCODE=0:
+					RGB:=(240/255,2/255,127/255);
+				elseif COLORCODE=1:
+					RGB:=(190/255,174/255,212/255);
+				elseif COLORCODE=2:
+			    	RGB:=(253/255,192/255,134/255);
+				elseif COLORCODE=3:
+			    	RGB:=(56/255,108/255,176/255);
+			    elseif COLORCODE=4:
+			    	RGB:=(191/255,91/255,23/255);
+			    elseif COLORCODE=5:
+					RGB:=(127/255,201/255,127/255);
+				else:
+					RGB:=(102/255,102/255,102/255);
+				fi;
+			else:
+				if known ATTR_rgb:
+					RGB:= scantokens(ATTR_rgb);
+				else:
+				RGB:=(102/255,102/255,102/255);
+				fi;
+			fi;
+
+			
+
+
+	      U:=(.2u,.2u);
+	      T:=identity aligned A rotated R scaled S shifted P;
+	      thdraw (-.25u,-.25u)..(-.25u,.25u)..(.25u,.25u)..(.25u,-.25u)..cycle withcolor(RGB);
+	      thfill (-.15u,-.15u)..(-.15u,.15u)..(.15u,.15u)..(.15u,-.15u)..cycle withcolor(RGB);
+	      thdraw (0,-.45u)--(0,.45u) withcolor(RGB);
+	      thdraw (-.45u,0)--(.45u,0) withcolor(RGB);
+	    enddef;
+	    initsymbol("p_u_connectionmarker_MY")
+	endcode
+
+endlayout

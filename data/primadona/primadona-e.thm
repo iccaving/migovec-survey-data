@@ -1,10 +1,10 @@
 map m-all-e -projection extended
 	m-entrance-e
-	m-electric_branch-e [1100 0 m ] none
+	m-electric_branch-e [-700 0 m ] none
 	m-hammerhead_branch-e
 	m-ttt_branch-e
-	m-karstaway_branch-e [1450 0 m ] none
-	m-fenestrator_branch-e [1450 0 m] none
+	m-karstaway_branch-e [-500 0 m ] none
+	m-fenestrator_branch-e [-500 0 m] none
 	m-deep-e
 endmap
 

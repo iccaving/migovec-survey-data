@@ -15,6 +15,7 @@ input metapost/lines.thl
 input metapost/areas.thl
 input metapost/scalebar_arrow.thl
 input metapost/grid.thl
+input metapost/connection_marker.thl
 
 layout base-e
 	# copy custom metapost definitions
@@ -23,6 +24,7 @@ layout base-e
   copy custom_areas
   copy custom_scalebar_arrow
   copy custom_grid
+  copy connection_marker
 
   code tex-map
     \framethickness=0.5mm

@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1656.000000 890.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap mighty_fine_indeed-e1 -projection extended -scale [1077.0 264.0 1274.0 506.0 0 0 8.30 0 m]
 
-scrap mighty_fine_indeed-e1 -scale [1077.0 264.0 1274.0 506.0 0 0 8.30 0 m] -projection extended
-
+point 1225.0154 -346.6923 u:connectionmarker_MY -attr code 2
 line rock-border -close on
   1542.0822 -379.7737
   1523.8762 -510.6498
@@ -68,10 +68,10 @@ line wall
   1163.9142 -1236.5643 1139.327 -1252.8048 1139.327 -1252.8048
 endline
 
-point 2110.9528 421.7847 station -name 5
-point 2019.5169 433.5829 station -name 4
-point 1513.6702 -641.5258 station -name 3
-point 1441.4064 -1109.0284 station -name 2
-point 1305.7274 -1259.4552 station -name 1
+point 2110.95 421.785 station -name 5
+point 2019.52 433.583 station -name 4
+point 1513.67 -641.526 station -name 3
+point 1441.41 -1109.03 station -name 2
+point 1305.73 -1259.46 station -name 1
 endscrap
 
