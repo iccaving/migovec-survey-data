@@ -2,9 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 973.000000 918.250000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap electric_dreams-e1 -projection extended -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
 
-scrap electric_dreams-e1 -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82] -projection extended
-
+point 8121.7334 -345.2396 u:connectionmarker_MY -align b -attr code 13 -id electricdreams
 line wall:invisible 
   7904.3428 -319.053
   8218.1493 -266.0169
@@ -114,34 +114,34 @@ line wall
   6179.8273 -131.4316 6174.4542 -184.6315 6065.5872 -174.4561
 endline
 
-point 8167.9504 -361.8528 station -name 24
-point 8006.4784 -345.3165 station -name 23
-point 7935.47 -116.7267 station -name 22
-point 7733.1436 1.9454 station -name 21
-point 7555.1352 118.6721 station -name 20
+point 8167.95 -361.853 station -name 24
+point 8006.48 -345.317 station -name 23
+point 7935.47 -116.727 station -name 22
+point 7733.14 1.9454 station -name 21
+point 7555.14 118.672 station -name 20
 point 7553.19 61.2815 station -name 19
-point 7272.0732 7.7818 station -name 18
-point 7003.6016 46.6907 station -name 17
-point 6661.2032 -58.3633 station -name 16
-point 6295.4596 -93.3814 station -name 15
-point 6015.3156 -420.2161 station -name 14
-point 5563.9724 -579.7426 station -name 13
-point 5054.266 -700.3602 station -name 12
-point 4766.34 -739.2691 station -name 11
-point 3964.8167 -933.8136 station -name 10
-point 3797.5085 -1163.376 station -name 9
-point 3793.6176 -1875.4089 station -name 8
+point 7272.07 7.7818 station -name 18
+point 7003.6 46.6907 station -name 17
+point 6661.2 -58.3633 station -name 16
+point 6295.46 -93.3814 station -name 15
+point 6015.32 -420.216 station -name 14
+point 5563.97 -579.743 station -name 13
+point 5054.27 -700.36 station -name 12
+point 4766.34 -739.269 station -name 11
+point 3964.82 -933.814 station -name 10
+point 3797.51 -1163.38 station -name 9
+point 3793.62 -1875.41 station -name 8
 endscrap
 
 
-scrap electric_dreams-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap electric_dreams-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall:invisible 
   3036.2943 -1540.7392
   3035.2853 -1905.5487
 endline
 
-point 2959.9046 -851.6463 u:label_MY -attr text "Electric Dreams" -align tl -scale l
+point 2959.9 -851.646 u:label_MY -align tl -attr text "Electric Dreams" -scale l
 line wall:invisible 
   4090.06 -1649.7185
   3873.7946 -704.3263
@@ -215,12 +215,12 @@ line wall:blocks
   3254.4642 -2801.2432 3351.7622 -2917.5319 3898.5652 -2855.823
 endline
 
-point 3365.6197 -1929.8814 station -name 7
-point 3353.947 -2844.2405 station -name 6
-point 2817.0042 -2715.8411 station -name 5
-point 2042.7172 -2774.2044 station -name 4
-point 1809.2638 -2727.5138 station -name 3
-point 1431.8474 -2739.1864 station -name 2
-point 1357.9206 -2731.4047 station -name 1
+point 3365.62 -1929.88 station -name 7
+point 3353.95 -2844.24 station -name 6
+point 2817.0 -2715.84 station -name 5
+point 2042.72 -2774.2 station -name 4
+point 1809.26 -2727.51 station -name 3
+point 1431.85 -2739.19 station -name 2
+point 1357.92 -2731.4 station -name 1
 endscrap
 

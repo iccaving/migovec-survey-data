@@ -2,13 +2,12 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 3464.000000 3033.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap galerija-2e -projection extended -scale [1382.0 -3962.0 2948.0 -3976.0 0.0 0.0 100 0.0 m]
 
-scrap galerija-2e -scale [1382.0 -3962.0 2948.0 -3976.0 0.0 0.0 100 0.0 m] -projection extended
-
-point 2140.3306 677.7112 u:label_MY -attr text "Quantum State" -align bl -attr lvl 2
-
-point 1518.8726 903.2959 u:label_MY -attr text "Knot Very Good" -align tr -attr lvl 2
-point 2718.8726 913.2959 label -text Galerija -align tr
+point 3311.1422 669.6254 u:connectionmarker_MY -align r -attr code 13 -id electricdreams
+point 2140.33 677.711 u:label_MY -align bl -attr text "Quantum State" -attr lvl 2
+point 1518.87 903.296 u:label_MY -align tr -attr text "Knot Very Good" -attr lvl 2
+point 2718.87 913.296 label -align tr -text Galerija
 line wall 
   2095.0 836.0
   2095.0 836.0 2084.0 838.0 2073.0 832.0
@@ -305,7 +304,7 @@ line rock-border -close on
   3150.0 674.0
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   3276.0 639.0
   3258.0 631.0
   3259.0 619.0

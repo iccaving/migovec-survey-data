@@ -4,6 +4,7 @@ encoding  utf-8
 
 scrap hall_of_the_mountain_king-e1 -projection extended -scale [0 0 100 0 0 0 1 0 m]
 
+point 1763.1828 2845.0404 u:connectionmarker_MY -align t -attr code 5 -id atrium
 line wall:invisible 
   3227.8602 1501.6656
   3470.6529 2324.1706
@@ -116,7 +117,7 @@ line wall
   6873.546 2301.3772
 endline
 
-point 7716.9214 1893.5853 label -align r -text "Hall of the<br>Mountain King"
+point 7716.92 1893.59 label -align r -text "Hall of the<br>Mountain King"
 line wall -subtype blocks
   6160.7358 650.9278
   6334.9196 588.4534

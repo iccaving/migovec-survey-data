@@ -2,11 +2,11 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 865.000000 785.250000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap the_atrium-e1 -projection extended -scale [0.0 0.0 1024.0 939.3873157807584 0.0 0.0 120.78 110.8]
 
-scrap the_atrium-e1 -scale [0.0 0.0 1024.0 939.3873157807584 0.0 0.0 120.78 110.8] -projection extended
-
-point 1308.8673 -112.9048 map-connection -scale s
-point 437.916 364.8427 u:label_MY -attr text "The Atrium" -align l -scale m -attr lvl 1
+point 499.1946 -68.0083 u:connectionmarker_MY -align b -attr code 5 -id atrium
+point 1308.87 -112.905 map-connection -scale s
+point 437.916 364.843 u:label_MY -align l -attr text "The Atrium" -attr lvl 1 -scale m
 line wall -subtype invisible
   828.1778 698.7751
   827.0015 834.0598
@@ -94,14 +94,14 @@ line wall -subtype blocks
   1242.7579 -128.1022 1303.439 -91.0528 1303.439 -91.0528
 endline
 
-point 1030.5167 701.1278 station -name 9
-point 915.2306 599.9584 station -name 8
-point 1303.439 -87.0528 station -name 7
-point 1061.8084 -140.4611 station -name 6
-point 828.1778 75.2889 station -name 5
-point 480.5549 -689.9521 station -name 4
-point 480.7993 -217.1083 station -name 3
-point 529.8774 59.8919 station -name 2
-point 603.0787 110.6337 station -name 1
+point 1030.52 701.128 station -name 9
+point 915.231 599.958 station -name 8
+point 1303.44 -87.0528 station -name 7
+point 1061.81 -140.461 station -name 6
+point 828.178 75.2889 station -name 5
+point 480.555 -689.952 station -name 4
+point 480.799 -217.108 station -name 3
+point 529.877 59.8919 station -name 2
+point 603.079 110.634 station -name 1
 endscrap
 
