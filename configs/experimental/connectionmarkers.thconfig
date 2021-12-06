@@ -1,0 +1,83 @@
+source 
+	
+	survey connection_colors
+
+		centreline
+		units length meters
+    	units compass clino degrees
+    	data normal from to length compass clino
+    	flags duplicate
+		1 2 100 0 0
+		flags not duplicate
+		endcentreline
+
+		map m-connection_colors -projection plan
+			connection_colors
+		endmap
+
+		scrap connection_colors -scale [0 0 50 0 0 0 1 0 m] -projection plan
+
+
+		point 2 0 label -align tr -text "attr code 0"
+		point 12 0 label -align tr -text "attr code 1"
+		point 22 0 label -align tr -text "attr code 2"
+		point 32 0 label -align tr -text "attr code 3"
+		point 42 0 label -align tr -text "attr code 4"
+		point 2 -10 label -align tr -text "attr code 5"
+		point 12 -10 label -align tr -text "attr code 6"
+		point 22 -10 label -align tr -text "attr code 7"
+		point 32 -10 label -align tr -text "attr code 8"
+		point 42 -10 label -align tr -text "attr code 9"
+		point 2 -20 label -align tr -text "attr code 10"
+		point 12 -20 label -align tr -text "attr code 11"
+		point 22 -20 label -align tr -text "attr code 12"
+		point 32 -20 label -align tr -text "attr code 13"
+		point 42 -20 label -align tr -text "attr code 14"
+		point 2  -30 label -align tr -text "attr code 15"
+		point 12 -30 label -align tr -text "attr code 16"
+		point 22 -30 label -align tr -text "attr code 17"
+		point 32 -30 label -align tr -text "no code, no rgb"
+		point 42 -30 label -align tr -text "attr rgb (0,1,0)"
+
+		point 0 0 u:connectionmarker_MY -attr code 0
+		point 10 0 u:connectionmarker_MY -attr code 1
+		point 20 0 u:connectionmarker_MY -attr code 2
+		point 30 0 u:connectionmarker_MY -attr code 3
+		point 40 0 u:connectionmarker_MY -attr code 4
+		point 0 -10 u:connectionmarker_MY -attr code 5
+		point 10 -10 u:connectionmarker_MY -attr code 6
+		point 20 -10 u:connectionmarker_MY -attr code 7
+		point 30 -10 u:connectionmarker_MY -attr code 8
+		point 40 -10 u:connectionmarker_MY -attr code 9
+		point 0 -20 u:connectionmarker_MY -attr code 10
+		point 10 -20 u:connectionmarker_MY -attr code 11
+		point 20 -20 u:connectionmarker_MY -attr code 12
+		point 30 -20 u:connectionmarker_MY -attr code 13
+		point 40 -20 u:connectionmarker_MY -attr code 14
+		point 0 -30 u:connectionmarker_MY -attr code 15
+		point 10 -30 u:connectionmarker_MY -attr code 16
+		point 20 -30 u:connectionmarker_MY -attr code 17
+		point 30 -30 u:connectionmarker_MY
+		point 40 -30 u:connectionmarker_MY -attr rgb (0,1,0)
+
+		point 0 0 station -name 1 -visibility off
+		point 0 50 station -name 2 -visibility off
+		endscrap
+
+
+	endsurvey
+	
+endsource
+
+input ../../layouts/metapost/connection_marker.thl
+
+layout local
+	copy connection_marker
+	scale 1 500
+	map-header 0 0 off
+	symbol-hide line survey
+endlayout
+
+select m-connection_colors@connection_colors
+
+export map -o connectioncolors.pdf -projection plan -layout local

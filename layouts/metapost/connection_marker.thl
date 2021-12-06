@@ -10,7 +10,7 @@ layout connection_marker
 				if COLORCODE=0:
 					RGB:=(240/255,2/255,127/255);
 				elseif COLORCODE=1:
-					RGB:=(190/255,174/255,212/255);
+					RGB:=(140/255,154/255,212/255);
 				elseif COLORCODE=2:
 			    	RGB:=(253/255,192/255,134/255);
 				elseif COLORCODE=3:
@@ -18,29 +18,54 @@ layout connection_marker
 			    elseif COLORCODE=4:
 			    	RGB:=(191/255,91/255,23/255);
 			    elseif COLORCODE=5:
-					RGB:=(127/255,201/255,127/255);
+					RGB:=(126/255,201/255,126/255);
+ 				elseif COLORCODE=6:
+					RGB:=(141/255,211/255,199/255);
+				elseif COLORCODE=7:
+					RGB:=(255/255,255/255,179/255);
+				elseif COLORCODE=8:
+			    	RGB:=(190/255,186/255,218/255);
+				elseif COLORCODE=9:
+			    	RGB:=(251/255,128/255,114/255);
+			    elseif COLORCODE=10:
+			    	RGB:=(128/255,177/255,211/255);
+			    elseif COLORCODE=11:
+					RGB:=(253/255,180/255,98/255);
+					elseif COLORCODE=12:
+			    	RGB:=(202/255,178/255,214/255);
+			    elseif COLORCODE=13:
+					RGB:=(255/255,127/255,0/255);
+				elseif COLORCODE=14:
+			    	RGB:=(179/255,222,105);
+			    elseif COLORCODE=15:
+					RGB:=(252/255,205/255,229/255);
+					elseif COLORCODE=16:
+			    	RGB:=(217/255,217/255,217/255);
+			    elseif COLORCODE=17:
+					RGB:=( 188/255,128/255,189/255);	
+
 				else:
-					RGB:=(102/255,102/255,102/255);
+					RGB:=(51/255,51/255,51/255);
 				fi;
 			else:
 				if known ATTR_rgb:
 					RGB:= scantokens(ATTR_rgb);
 				else:
-				RGB:=(102/255,102/255,102/255);
+				RGB:=(51/255,51/255,51/255);
 				fi;
 			fi;
 
-			
-
-
 	      U:=(.2u,.2u);
 	      T:=identity aligned A rotated R scaled S shifted P;
-	      thdraw (-.25u,-.25u)..(-.25u,.25u)..(.25u,.25u)..(.25u,-.25u)..cycle withcolor(RGB);
-	      thfill (-.15u,-.15u)..(-.15u,.15u)..(.15u,.15u)..(.15u,-.15u)..cycle withcolor(RGB);
-	      thdraw (0,-.45u)--(0,.45u) withcolor(RGB);
-	      thdraw (-.45u,0)--(.45u,0) withcolor(RGB);
+	      pickup PenC;
+	      thfill (-.65u,-.65u)..(-.65u,.65u)..(.65u,.65u)..(.65u,-.65u)..cycle withcolor(RGB);
+	      thdraw (-.65u,-.65u)..(-.65u,.65u)..(.65u,.65u)..(.65u,-.65u)..cycle withcolor(0,0,0);
+	      thfill (-.3u,-.3u)..(-.3u,.3u)..(.3u,.3u)..(.3u,-.3u)..cycle withcolor(0,0,0);
+	      thdraw (0,-.85u)--(0,.85u) withcolor(0,0,0);
+	      thdraw (-.85u,0)--(.85u,0) withcolor(0,0,0);
 	    enddef;
 	    initsymbol("p_u_connectionmarker_MY")
 	endcode
 
 endlayout
+
