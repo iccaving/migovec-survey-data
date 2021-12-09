@@ -3,7 +3,7 @@
 survey beam_me_up -title "beam me up"
 
    input "beam_me_up-p.th2"
-  # input "beam_me_up-1s.th2"
+   input "beam_me_up-e.th2"
 
    map m-all-p -projection plan
      beam_me_up-1p
@@ -14,11 +14,16 @@ survey beam_me_up -title "beam me up"
      break
      beam_me_up-1p3
    endmap
-  # map m1s -projection extended
-  #   beam_me_up-1s
-  #   beam_me_up-1s2
-  #   beam_me_up-1s2
-  # endmap
+
+  map m-all-e -projection extended
+     beam_me_up-1s
+     beam_me_up-1s1
+     beam_me_up-1s2
+   endmap
+
+   join beam_me_up-1s beam_me_up-1s1
+   join beam_me_up-1s1 beam_me_up-1s2
+   join beam_me_up-1s2 beam_me_up-1s
 
   centerline
     date 2021.10.24
