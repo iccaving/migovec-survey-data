@@ -93,9 +93,9 @@ layout base-p
   symbol-assign area sand MY
   symbol-assign area pebbles MY
   symbol-assign point debris MY
-  
+
   symbol-colour area clay [65 55 10]
-  symbol-colour line wall:clay [65 55 10]
+  symbol-colour line wall:clay [70 30 20]
   symbol-colour area sand [85 75 10]
 
   ## misc
