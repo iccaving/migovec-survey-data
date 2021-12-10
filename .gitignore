@@ -337,7 +337,7 @@ venv.bak/
 *.shp
 *.shx
 *.svg
-!*symbology.svg
+
 !*kataster.svg
 *.json
 *.xvi
@@ -345,6 +345,7 @@ venv.bak/
 *.ipynb
 *.db
 outputs/*
+!outputs/symbology.svg
 **/scratch/
 
 thTMPDIR/
