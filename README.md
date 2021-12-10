@@ -157,8 +157,7 @@ Collectively known as 'the old system' or sometimes 'sysmig', these entrances we
 
 Main symbology and symbol codes:
 
-![Alt text](./outputs/symbology.svg)
-<img src="./outputs/symbology.svg">
+![symbology of migovec-survey-data](./outputs/symbology.svg)
 
 [symbology PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/symbology.pdf)
 
