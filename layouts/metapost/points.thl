@@ -3,6 +3,24 @@ layout custom_points
 	code metapost 
 		
 		## redefinitions of existing labels
+
+		def p_debris_MY (expr P,R,S,A)=
+        	U:=(.2u,.2u);
+        	T:=identity aligned A rotated R scaled S shifted P;
+        	pickup PenD;
+        	p:=(0.1u,0)--(0u,0u);
+        	k:= 5*(normaldeviate);
+        	thclean (-0.2u,-0.2u)--(0.2u,-0.2u)--(0.2u,0.2u)--(0.2u,-0.2u)--cycle;
+        	thdraw p rotated (45+k) shifted (-0.15u,-0.15u) withcolor(0.7,0.3,.2);
+        	thdraw p rotated (-40+k) shifted (-0.2u,0.2u) withcolor(0.7,0.3,.2);
+        	thdraw p rotated (10-k) shifted (-0.15u,0.03u) withcolor(0.7,0.3,.2);
+        	thdraw p rotated (-60+k) shifted (0u,0.12u) withcolor(0.7,0.3,.2);
+        	thdraw p rotated (70+k) shifted (0.1u,0.18u) withcolor(0.7,0.3,.2);
+        	thdraw p rotated (-42-k) shifted (0.18u,0.06u) withcolor(0.7,0.3,.2);
+        	thdraw p rotated (32+k) shifted (0.05u,-0.16u) withcolor(0.7,0.3,0.2);
+        	thdraw p rotated (82-k) shifted (0.02u,0.22u) withcolor(0.7,0.3,0.2);
+    	enddef;
+
 	   	
 	    def p_waterflow_permanent_MY (expr P,R,S,A)=
 	    U:=(.2u,.2u);
@@ -72,7 +90,33 @@ layout custom_points
 	      thdraw (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle withcolor(1,0.5,0.1);
 	    enddef;
 
+	    def p_snow_MY (expr P,R,S,A)=
+        	U:=(.2u,.2u);
+        	T:=identity aligned A rotated R scaled S shifted P;
+        	pickup PenD;
+       		 p := (0,0)--(0,.1*u);
+        	thdraw p withcolor(0,0.7,0.9); 
+        	thdraw p rotated (60) withcolor(0,0.7,0.9); 
+        	thdraw p rotated (120)withcolor(0,0.7,0.9);
+        	thdraw p rotated (180) withcolor(0,0.7,0.9);
+        	thdraw p rotated (240) withcolor(0,0.7,0.9);
+        	thdraw p rotated (300) withcolor(0,0.7,0.9);
+    	enddef;
+
+    	def p_anchor_MY (expr P,R,S,A)=
+  			U:=(.1u,.1u);
+  			T:=identity aligned A rotated R scaled S shifted P;
+  			q:= origin--(0,0.15u);
+  			pickup PenD;
+  			thdraw q rotated (45) shifted (-.1u,.1u);
+  			thdraw q rotated (135) shifted (-.1u,-.1u);
+  			thdraw q rotated (225) shifted (.1u,-.1u);
+  			thdraw q rotated (315) shifted (.1u,.1u);
+  			thdraw (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle;
+		enddef;
+
 	    # initialise the symbols here
+	    initsymbol("p_debris_MY")
 	    initsymbol("p_waterflow_permanent_MY");
     	initsymbol("p_station_fixed_MY");
     	initsymbol("p_station_temporary_MY");
@@ -81,6 +125,8 @@ layout custom_points
     	initsymbol("p_pillar_MY");
     	initsymbol("p_stalagmite_MY");
     	initsymbol("p_stalactite_MY");
+    	initsymbol("p_snow_MY");
+    	initsymbol("p_anchor_MY");
     	
   
 	    ## new definitions

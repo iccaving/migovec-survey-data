@@ -152,6 +152,13 @@ Collectively known as 'the old system' or sometimes 'sysmig', these entrances we
   [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_SLO.svg) |
   [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.svg)
 
+
+### Symbology
+
+Main symbology and symbol codes:
+
+[symbology](https://github.com/iccaving/migovec-survey-data/releases/latest/download/symbology.pdf)
+
 ## Prerequisites
 
 To compile the data and draw surveys you will need some software installed.

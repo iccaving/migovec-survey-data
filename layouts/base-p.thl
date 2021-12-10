@@ -46,7 +46,6 @@ layout base-p
 	symbol-hide line floor-step
 	symbol-hide point gradient
 	symbol-hide line label
-	symbol-hide line survey
 	symbol-hide line gradient
 	symbol-hide point station-name
 
@@ -65,6 +64,7 @@ layout base-p
   ## water and ice
   symbol-assign area ice MY
   symbol-assign area snow MY
+  symbol-assign point snow MY
  
   symbol-colour area ice [0 70 90]
   symbol-colour area water [0 10 70]
@@ -92,6 +92,7 @@ layout base-p
   symbol-assign area clay MY
   symbol-assign area sand MY
   symbol-assign area pebbles MY
+  symbol-assign point debris MY
   
   symbol-colour area clay [65 55 10]
   symbol-colour line wall:clay [65 55 10]
@@ -99,6 +100,7 @@ layout base-p
 
   ## misc
   symbol-assign point gradient MY
+  symbol-assign point anchor MY
   symbol-assign line contour MY
   symbol-assign line pit AUT
   symbol-assign line wall MY

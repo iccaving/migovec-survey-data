@@ -18,6 +18,34 @@ layout custom_lines
 		  T:=identity;
 		  draw P withpen PenD withcolor (0.7,0,0);
 		enddef;
+		
+		# wall debris
+		def l_wall_debris_MY (expr P)=
+      		T:=identity;
+      		cas := 0;
+      		dlzka := arclength P;
+      		if dlzka > 0:
+      			mojkrok:=adjust_step(dlzka, 0.2u);
+      			pickup PenC;
+      			forever:
+      				t_0 := arctime(cas) of P;
+      				t_end := arctime(cas+mojkrok) of P;
+      				t1 := arctime (cas + (3+0.5*normaldeviate)/10*mojkrok) of P;
+      				t2 := arctime (cas + (8-0.5*normaldeviate)/10*mojkrok) of P;
+      				t3 := arctime (cas + (6+0.5*normaldeviate)/10*mojkrok) of P;
+      				sk := 1-.25*normaldeviate;
+      				q := (point t_0 of P + .02*sk*u * unitvector(thdir(P,t_0))) .. 
+      				((point t1 of P) - .06*sk*u * unitvector(thdir(P,t1) rotated (88+normaldeviate*2))) ..
+      				((point t2 of P) + .03*sk*u * unitvector(thdir(P,t2) rotated (-20+normaldeviate*2))) .. ((point t3 of P) - .07*sk*u *unitvector(thdir(P,t3) rotated (-20+normaldeviate*2))) .. cycle;
+      
+      				thclean q;
+      				thfill q withcolor(0.7,0.3,0.2);
+      				cas := cas + mojkrok;
+      				exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
+      			endfor;
+      		fi;
+    	enddef;
+    
 	
 		# grey rock borders 
 		def l_rockborder_MY (expr P) = 
@@ -125,6 +153,7 @@ layout custom_lines
 		# initialise redefined symbols
 		initsymbol("l_wall_blocks_MYEE");
 	    initsymbol("l_wall_blocks_MY");
+	    initsymbol("l_wall_debris_MY");
 	    initsymbol("l_wall_ice_MY");
 	    initsymbol("l_wall_flowstone_MY");
 	    initsymbol("l_rockborder_MY");
@@ -204,6 +233,68 @@ layout custom_lines
     	  fi;
     	enddef;
 
+    	def l_u_bigpit_MY (expr P) =
+  			T:=identity;
+    	    laenge:= arclength P;
+    	    symsize:=adjust_step(laenge,0.5u);
+    	    triangle_width:=symsize/2;
+    	    cur:=(symsize-triangle_width)/2;
+    	    pickup PenC;
+    	    forever:
+    	      t1 := arctime (cur) of P;
+    	      t  := arctime (cur + triangle_width/2) of P;
+    	      t2 := arctime (cur + triangle_width) of P;
+    	      if ATTR__height >= 10:
+    	        thfill (subpath (t1,t2) of P) --
+    	          ((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+    	          cycle;
+    	      else:
+    	        thclean (subpath (t1,t2) of P) --
+    	          ((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+    	          cycle;
+    	        thfill (point t2 of P) --((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+    	          (point t1 of P)--cycle;
+    	      fi;
+    	      cur := cur + symsize;
+    	      exitif cur > laenge - (1*symsize/3); % for rounding errors
+    	      t1:=arctime (cur) of P;
+    	    endfor;
+    	    thdraw P;
+    	  enddef;
+
+    	def l_u_icestep_MY (expr P) =
+      		T:=identity;
+      		laenge:= arclength P;
+      		symsize:=adjust_step(laenge,0.25u);
+      		ministep:=symsize/5;
+      		cur:=0;
+      		pickup PenC;
+      		forever:
+        		t0 := arctime (cur) of P;
+        		t1 := arctime (cur+ministep) of P;
+        		t2 := arctime (cur+2*ministep) of P;
+        		t3a := arctime (cur+3*ministep) of P;
+        		t4 := arctime (cur+4*ministep) of P;
+        		t5 := arctime (cur+5*ministep) of P;
+
+        		thclean (subpath (t5,t0) of P) --
+        				 ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
+        		((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) .. 
+        		((point t2 of P) + symsize/2 * unitvector(thdir(P,t2) rotated 90)) ..
+        		((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) ..
+        		((point t4 of P) + symsize/2 * unitvector(thdir(P,t4) rotated 90)) ..
+        		((point t5 of P) + symsize/2 * unitvector(thdir(P,t5) rotated 90))--cycle;
+
+        		thdraw P withcolor (0, 0.7,0.9);
+        		thdraw (point t3a of P)  -- 
+        		((point t3a of P) + 2/3*symsize * unitvector(thdir(P,t3a) rotated 90))
+        		withpen PenC withcolor (0, 0.7,0.9);
+        
+        		cur := cur + symsize;
+        		exitif cur > laenge - (1*symsize/3); % for rounding errors
+      		endfor;
+    	enddef;
+
     	def l_u_icepit_MY (expr P) =
     	    T:=identity;
     	    laenge:= arclength P;
@@ -238,8 +329,10 @@ layout custom_lines
 	    initsymbol("l_u_mine_MY");
 	    initsymbol("l_u_underlay_MY");
 	    initsymbol("l_u_fault_MY");
+	    initsymbol("l_u_icestep_MY");
 	    initsymbol("l_u_icepit_MY");
 	    initsymbol("l_u_wallstep_MY");
+	    initsymbol("l_u_bigpit_MY");
 	    initsymbol("l_u_dripline_MY");
 	    initsymbol("l_u_texture_MY");
 	    initsymbol("l_u_wall_flowstone_MY");	
