@@ -270,3 +270,4 @@ endlayout
 select m-symbology@symbology
 
 export map -o ../../outputs/symbology.pdf -projection plan -layout local
+export map -o ../../outputs/symbology.svg -projection plan -layout local
