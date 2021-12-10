@@ -45,7 +45,8 @@ layout custom_lines
       			endfor;
       		fi;
     	enddef;
-    
+    	
+
 	
 		# grey rock borders 
 		def l_rockborder_MY (expr P) = 
@@ -233,6 +234,45 @@ layout custom_lines
     	  fi;
     	enddef;
 
+    	 def l_u_wallstep (expr P) =
+    	  T:=identity;
+    	  laenge:= arclength P;
+    	  symsize:=adjust_step(laenge,0.25u);
+    	  ministep:=symsize/5;
+    	  cur:=0;
+    	  pickup PenC;
+    	  forever:
+    	    t0 := arctime (cur) of P;
+    	    t1 := arctime (cur+ministep) of P;
+    	    t2 := arctime (cur+2*ministep) of P;
+    	    t3a := arctime (cur+3*ministep) of P;
+    	    t4 := arctime (cur+4*ministep) of P;
+    	    t5 := arctime (cur+5*ministep) of P;
+
+    	    thclean (subpath (t5,t0) of P) -- ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
+    	    ((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) .. 
+    	    ((point t2 of P) + symsize/2 * unitvector(thdir(P,t2) rotated 90)) ..
+    	    ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) ..
+    	    ((point t4 of P) + symsize/2 * unitvector(thdir(P,t4) rotated 90)) ..
+    	    ((point t5 of P) + symsize/2 * unitvector(thdir(P,t5) rotated 90))--cycle;
+
+    	    thdraw ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
+    	    ((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) .. 
+    	    ((point t2 of P) + symsize/2 * unitvector(thdir(P,t2) rotated 90)) ..
+    	    ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) ..
+    	    ((point t4 of P) + symsize/2 * unitvector(thdir(P,t4) rotated 90)) ..
+    	    ((point t5 of P) + symsize/2 * unitvector(thdir(P,t5) rotated 90));
+
+    	    thdraw ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) -- 
+    	    ((point t3a of P) + 4/3*symsize * unitvector(thdir(P,t3a) rotated 90)) withpen PenC;
+    	    
+    	    cur := cur + symsize;
+    	    exitif cur > laenge - (1*symsize/3); % for rounding errors
+    	  endfor;
+    	  pickup PenA;
+    	  thdraw P;
+    	enddef;
+
     	def l_u_bigpit_MY (expr P) =
   			T:=identity;
     	    laenge:= arclength P;
@@ -295,6 +335,51 @@ layout custom_lines
       		endfor;
     	enddef;
 
+    	def l_u_wallbigpit (expr P) =
+    	   T:=identity;
+    	   laenge:= arclength P;
+    	   symsize:=adjust_step(laenge,0.5u);
+    	   ministep:=symsize/5;
+    	   cur:=0;
+    	   pickup PenC;
+    	   forever:
+    	     t0 := arctime (cur) of P;
+    	     t1 := arctime (cur+ministep) of P;
+    	     t2 := arctime (cur+2*ministep) of P;
+    	     t3a := arctime (cur+3*ministep) of P;
+    	     t4 := arctime (cur+4*ministep) of P;
+    	     t5 := arctime (cur+5*ministep) of P;
+
+    	     thclean (subpath (t5,t0) of P) -- ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
+    	     ((point t1 of P) + symsize/4 * unitvector(thdir(P,t1) rotated 90)) .. 
+    	     ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) ..
+    	     ((point t3a of P) + symsize/4 * unitvector(thdir(P,t3a) rotated 90)) ..
+    	     ((point t4 of P) + symsize/4 * unitvector(thdir(P,t4) rotated 90)) ..
+    	     ((point t5 of P) + symsize/4 * unitvector(thdir(P,t5) rotated 90))--cycle;
+
+    	     thdraw ((point t0 of P) + symsize/4 * unitvector(thdir(P,t0) rotated 90)) ..
+    	     ((point t1 of P) + symsize/4 * unitvector(thdir(P,t1) rotated 90)) .. 
+    	     ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) ..
+    	     ((point t3a of P) + symsize/4 * unitvector(thdir(P,t3a) rotated 90)) ..
+    	     ((point t4 of P) + symsize/4 * unitvector(thdir(P,t4) rotated 90)) ..
+    	     ((point t5 of P) + symsize/4 * unitvector(thdir(P,t5) rotated 90));
+
+    	     thfill ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) -- 
+    	     ((point t3a of P) + 3/4*symsize * unitvector(thdir(P,t3a) rotated 90)) -- 
+    	     ((point t4 of P) + symsize/4 * unitvector(thdir(P,t4) rotated 90)) .. 
+    	     ((point t3a of P) + symsize/4 * unitvector(thdir(P,t3a) rotated 90)) .. cycle withpen PenC;
+
+    	     thdraw ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) -- 
+    	     ((point t3a of P) + 3/4*symsize * unitvector(thdir(P,t3a) rotated 90)) -- 
+    	     ((point t4 of P) + symsize/4 * unitvector(thdir(P,t4) rotated 90)) withpen PenC;
+    	     
+    	     cur := cur + symsize;
+    	     exitif cur > laenge - (1*symsize/3); % for rounding errors
+    	   endfor;
+    	   pickup PenA;
+    	   thdraw P;
+    	 enddef;
+
     	def l_u_icepit_MY (expr P) =
     	    T:=identity;
     	    laenge:= arclength P;
@@ -331,8 +416,9 @@ layout custom_lines
 	    initsymbol("l_u_fault_MY");
 	    initsymbol("l_u_icestep_MY");
 	    initsymbol("l_u_icepit_MY");
-	    initsymbol("l_u_wallstep_MY");
+	    initsymbol("l_u_wallstep");
 	    initsymbol("l_u_bigpit_MY");
+	    initsymbol("l_u_wallbigpit");
 	    initsymbol("l_u_dripline_MY");
 	    initsymbol("l_u_texture_MY");
 	    initsymbol("l_u_wall_flowstone_MY");	

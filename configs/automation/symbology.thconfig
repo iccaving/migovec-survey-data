@@ -190,12 +190,12 @@ source
 		point 21 -30 label -text "u:bigpit MY" -align tr
 	
 
-		line u:wallstep_MY -clip off
+		line u:wallstep -clip off
 		31 -32
 		39 -32
 		endline
 
-		point 31 -30 label -text "u:wallstep MY" -align tr
+		point 31 -30 label -text "u:wallstep" -align tr
 	
 
 		line u:icepit_MY -clip off
@@ -211,6 +211,13 @@ source
 		endline
 
 		point 51 -30 label -text "u:icestep MY" -align tr
+
+		line u:wallbigpit -clip off
+		61 -32
+		69 -32
+		endline
+
+		point 61 -30 label -text "u:wallbigpit" -align tr
 	
 
 
@@ -262,4 +269,4 @@ endlayout
 
 select m-symbology@symbology
 
-export map -o ../../ouputs/symbology.pdf -projection plan -layout local
+export map -o ../../outputs/symbology.pdf -projection plan -layout local
