@@ -223,7 +223,7 @@ source
 
 
 		point 0 0 station -name 1 -visibility off
-		point 0 50 station -name 2 -visibility off
+		point 0 20 station -name 2 -visibility off
 		endscrap
 
 
@@ -244,6 +244,7 @@ layout local
 	copy base-p
 
 	scale 1 1700
+	base-scale 1 4000
 	map-header 0 0 off
 	#symbol-hide line survey
 	symbol-show point station
@@ -262,7 +263,7 @@ layout local
 	code tex-map
 	\framethickness=0mm
     \def\maplayout{
-      \legendbox{1}{110}{SW}{\size[7]\the\cavename}
+      \legendbox{1}{110}{SW}{\size[14]\the\cavename}
     }
 	endcode
 endlayout
