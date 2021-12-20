@@ -17,12 +17,12 @@ map m-all-p -projection plan -title "Primadona"
 	m-offsets-p
 endmap
 
-## FRAMES IN PLACE
+## OFFSETS
 
 map m-offsets-p -projection plan
 	m-below_lumos-p [-200 0 m] below  
-	m-pivnica-p [0 -100 m] below 
-	m-below_cattlegrid-p [-150 0 m] below 
+	m-pivnica-p [-200 0 m] below 
+	m-below_cattlegrid-p [-200 0 m] below 
 endmap
 
 
@@ -152,6 +152,8 @@ map m-deep-p -projection plan
 	m-all-p@lachrymosa
 	m-all-p@poseidon_rift
 	m-all-p@street-wise_hercules
+	m-all-p@hades
+	m-all-p@below_hades
 endmap
 
 ##### SUB-SUB MAPS ######

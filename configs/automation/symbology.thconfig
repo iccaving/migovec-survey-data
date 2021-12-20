@@ -88,52 +88,52 @@ source
 		point 55 -14 u:connectionmarker_MY -scale xs   -attr code 6
 		point 51 -12 label -text "u:connectionmarker MY<br>-attr code 6" -align tr
 
-		line wall:bedrock
+		line wall:bedrock -clip off -outline none
 		1 -30.5
 		9 -30.5
 		endline
 		point 1 -28 label -text "wall" -align tr
 
-		line wall:presumed
+		line wall:presumed -clip off -outline none
 		11 -30.5
 		19 -30.5
 		endline
 		point 11 -28 label -text "wall:presumed" -align tr
 
-		line wall:blocks
+		line wall:blocks -clip off -outline none
 		21 -30.5
 		29 -30.5
 		endline
 		point 21 -28 label -text "wall:blocks" -align tr
 
-		line wall:ice
+		line wall:ice -clip off -outline none
 		31 -30.5
 		39 -30.5
 		endline
 
 		point 31 -28 label -text "wall:ice" -align tr
 
-		line wall:flowstone
+		line wall:flowstone -clip off -outline none
 		41 -30.5
 		49 -30.5
 		endline
 
 		point 41 -28 label -text "wall:flowstone" -align tr
 
-		line wall:debris
+		line wall:debris -clip off -outline none
 		51 -30.5
 		59 -30.5
 		endline
 
 		point 51 -28 label -text "wall:debris" -align tr
 
-		line wall:clay
+		line wall:clay -clip off -outline none
 		61 -30.5
 		69 -30.5
 		endline
 		point 61 -28 label -text "wall:clay" -align tr
 
-		line wall:pit
+		line wall:pit -clip off -outline none
 		11 -36.5
 		19 -36.5
 		endline
@@ -175,7 +175,7 @@ source
 
 		point 51 -34 label -text "floor-step" -align tr
 
-		line wall:unsurveyed
+		line wall:unsurveyed -clip off -outline none
 		61 -36.5
 		69 -36.5
 		endline

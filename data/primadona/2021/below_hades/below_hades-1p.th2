@@ -1,0 +1,63 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 3374.900000 12355.000000
+##XTHERION## xth_me_area_zoom_to 500
+##XTHERION## xth_me_image_insert {-293.750000 1 1.0} {-293.660000 0} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2021/below_hades/below_hades-1p.xvi" 0 {}
+
+scrap below_hades-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+point 446.15 954.68 station -name 1
+point 580.35 254.49 station -name 0
+point 444.82 964.84 station -name 2
+point 366.92 1582.65 station -name 3
+point 228.6 2165.64 station -name 4
+point 340.87 2348.02 station -name 5
+point 468.36 2894.18 station -name 6
+point 435.19 3521.55 station -name 7
+point 845.32 4172.31 station -name 8
+point 1199.95 4384.58 station -name 9
+point 1383.32 4785.23 station -name 10
+point 1529.22 5175.67 station -name 11
+point 1830.57 5483.61 station -name 12
+point 2387.88 6099.03 station -name 13
+point 2763.1 6632.58 station -name 14
+point 2752.85 7183.03 station -name 15
+point 2801.66 7304.24 station -name 16
+point 2859.38 7669.06 station -name 17
+point 2851.3 8510.28 station -name 18
+point 2852.47 8713.22 station -name 19
+endscrap
+
+
+scrap below_hades-2p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+point 2519.63 8983.58 station -name 20
+point 2455.95 9098.1 station -name 21
+point 2542.64 9254.19 station -name 22
+point 2454.7 9801.38 station -name 23
+point 2596.16 10209.89 station -name 24
+point 2230.97 10618.43 station -name 25
+point 2110.01 10783.72 station -name 26
+point 2410.23 11138.79 station -name 27
+point 2325.92 11211.4 station -name 28
+point 1655.7 10999.43 station -name 29
+point 1060.43 11703.4 station -name 30
+point 1114.46 12127.8 station -name 31
+point 964.12 12151.4 station -name 32
+point 837.5 11897.8 station -name 33
+point 561.48 11827.4 station -name 34
+point 562.6 11226.4 station -name 35
+point 320.11 11153.14 station -name 36
+point 294.1 10988.67 station -name 37
+point 206.29 11042.32 station -name 38
+endscrap
+
+
+scrap below_hades-3p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+point 561.48 11827.4 station -name 43
+point 562.6 11226.4 station -name 39
+point 320.11 11153.14 station -name 40
+point 294.1 10988.67 station -name 41
+point 206.29 11042.32 station -name 42
+endscrap
+
