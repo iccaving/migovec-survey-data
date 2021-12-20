@@ -153,50 +153,6 @@ Collectively known as 'the old system' or sometimes 'sysmig', these entrances we
   [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.svg)
 
 
-### Symbology
-
-Throughout the process of migrating the survey data, we have used metapost to redefine several symbols to our liking.
-You can find the general symbology below and download a pdf. 
-
-There are two main types of symbol definitions:
-
-1. Symbols which existed already in the therion source code, such as  `point station` or `line wall:blocks`.
-2. User defined symbols which are not available in the source code and require a different prefix, for instance `u:grass_MY`
-
-All the metapost definitions are located in the `layouts/metapost` directory.
-
-```
-layouts
-  |__ metapost
-  |    |__ areas.thl
-  |    |__ lines.thl
-  |    |__ points.thl
-  |    |__ ...
-  |
-  |__ base-e.thl
-  |__ base-p.thl
-```
-
-The `base-e.thl` and `base-p.thl` layout definition files contain the therion language modifiers, e.g. symbol colour specification or style assignments.
-
-To use either base-e or base-p therion layouts in your config file, simply call:
-
-```
-input {path/to/layouts}/base-e.thl
-
-layout local-e
-  copy base-e
-endlayout
-
-export -o {path/to/map} -projection extended -layout local-e
-
-```
-
-Main symbology and symbol codes:
-
-![symbology of migovec-survey-data](./outputs/symbology.svg)
-
-[symbology PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/symbology.pdf)
 
 ## Prerequisites
 
@@ -632,6 +588,52 @@ endsurvey
 This survey data was collected between the year 1974-2019 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
 
 ## Tips
+
+### Symbology
+
+Throughout the process of migrating the survey data, we have used metapost to redefine several symbols to our liking.
+You can find the general symbology below and download a pdf. 
+
+There are two main types of symbol definitions:
+
+1. Symbols which existed already in the therion source code, such as  `point station` or `line wall:blocks`.
+2. User defined symbols which are not available in the source code and require a different prefix, for instance `u:grass_MY`
+
+All the metapost definitions are located in the `layouts/metapost` directory.
+
+```
+layouts
+  |__ metapost
+  |    |__ areas.thl
+  |    |__ lines.thl
+  |    |__ points.thl
+  |    |__ ...
+  |
+  |__ base-e.thl
+  |__ base-p.thl
+```
+
+The `base-e.thl` and `base-p.thl` layout definition files contain the therion language modifiers, e.g. symbol colour specification or style assignments.
+
+To use either base-e or base-p therion layouts in your config file, simply call:
+
+```
+input {path/to/layouts}/base-e.thl
+
+layout local-e
+  copy base-e
+endlayout
+
+export -o {path/to/map} -projection extended -layout local-e
+
+```
+
+Main symbology and symbol codes:
+
+![symbology of migovec-survey-data](./outputs/symbology.svg)
+
+[symbology PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/symbology.pdf)
+
 
 ### How do I show the centerline of undrawn maps?
 
