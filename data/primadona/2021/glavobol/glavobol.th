@@ -1,7 +1,13 @@
 survey glavobol
-	
+	input glavobol-e.th2
+
+	map m-all-e -projection extended
+		glavobol-1e
+	endmap
+
 	centreline -title "glavobol1"
 	    date 2021.07.28
+	    explo-date 2021.07.28
 	    team "Iztok Možir"
 	    team "Andrej Fratnik"
 		units length meters
@@ -15,7 +21,8 @@ survey glavobol
 	endcentreline
 
 	centreline -title "glavobol2"
-		date 2021.08.21
+		date 2021.08.21 
+		explo-date 2021.07.28
 		team "Iztok Možir"
 		team "Andrej Fratnik"
 		units length meters

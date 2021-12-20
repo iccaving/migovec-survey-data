@@ -5,7 +5,8 @@ map m-all-e -projection extended
 	m-ttt_branch-e
 	m-karstaway_branch-e [-500 0 m ] none
 	m-fenestrator_branch-e [-500 0 m] none
-	m-deep-e
+	m-below_manger-e
+	m-below_klic_globin-e
 endmap
 
 map m-karstaway_branch-e -projection extended
@@ -54,7 +55,7 @@ map  m-ttt_branch-e -projection extended
 	m-all-e@risanke
 endmap
 
-map m-deep-e -projection extended
+map m-below_manger-e -projection extended
 	m-all-e@buckwheat
 	m-all-e@TTTr
 	m-all-e@lost_in_a_dream
@@ -76,6 +77,10 @@ map m-deep-e -projection extended
 	m-all-e@spodnji_main_chamber_resurvey
 	m-all-e@polnoletna
 	m-all-e@ma_je_vlazna
+	m-all-e@glavobol
+endmap
+
+map m-below_klic_globin-e -projection extended
 	m-all-e@klic_globin
 	m-all-e@the_aqueduct
 	m-all-e@moonraker
@@ -90,6 +95,7 @@ map m-deep-e -projection extended
 	m-all-e@poseidon_rift
 	m-all-e@street-wise_hercules
 	m-all-e@hades
+	m-all-e@below_hades
 endmap
 
 map  m-entrance-e -projection extended

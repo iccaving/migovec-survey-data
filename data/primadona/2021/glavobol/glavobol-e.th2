@@ -1,0 +1,138 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-glavobol-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line survey 
+  223.72 511.42
+  152.77 561.1
+endline
+
+line survey 
+  152.77 561.1
+  128.24 579.53
+endline
+
+line survey 
+  128.24 579.53
+  128.24 654.33
+endline
+
+line survey 
+  128.24 654.33
+  120.4 655.04
+endline
+
+line survey 
+  379.6 344.96
+  358.47 358.66
+endline
+
+line survey 
+  358.47 358.66
+  322.08 375.67
+endline
+
+line survey 
+  322.08 375.67
+  280.91 391.42
+endline
+
+line survey 
+  280.91 391.42
+  261.94 418.5
+endline
+
+line survey 
+  261.94 418.5
+  261.94 468.11
+endline
+
+line survey 
+  261.94 468.11
+  249.3 495.28
+endline
+
+line survey 
+  249.3 495.28
+  226.08 511.5
+endline
+
+line survey 
+  226.08 511.5
+  223.72 511.42
+endline
+
+point 223.72 511.42 station-name -align tr -scale xs -text 2.9
+point 152.77 561.1 station-name -align tr -scale xs -text 1.2
+point 128.24 579.53 station-name -align tr -scale xs -text 1.3
+point 128.24 654.33 station-name -align tr -scale xs -text 1.4
+point 120.4 655.04 station-name -align tr -scale xs -text 1.5
+point 379.6 344.96 station-name -align tr -scale xs -text 2.1
+point 358.47 358.66 station-name -align tr -scale xs -text 2.2
+point 322.08 375.67 station-name -align tr -scale xs -text 2.3
+point 280.91 391.42 station-name -align tr -scale xs -text 2.4
+point 261.94 418.5 station-name -align tr -scale xs -text 2.5
+point 261.94 468.11 station-name -align tr -scale xs -text 2.6
+point 249.3 495.28 station-name -align tr -scale xs -text 2.7
+point 226.08 511.5 station-name -align tr -scale xs -text 2.8
+endscrap
+
+
+scrap glavobol-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+point 199.457 461.284 u:label_MY -align bl -attr lvl 1 -attr text Glavobol
+line wall 
+  435.7149 322.5011
+  435.7149 322.5011 413.6773 350.2055 412.418 352.7241
+  411.1587 355.2427 407.3809 360.9095 404.8623 364.6874
+  402.3437 368.4652 394.1583 372.8727 387.2322 376.021
+  380.3061 379.1692 358.2685 397.4289 358.2685 397.4289
+  301.6003 413.7997
+  293.415 430.8002
+  293.415 430.8002 279.5627 486.209 282.0813 489.3572
+  284.5999 492.5055 284.5999 498.8019 283.9703 505.0984
+  283.3406 511.3948 247.4508 517.0616 244.9322 519.5802
+  242.4136 522.0988 212.8203 533.4324 210.3017 539.0992
+  207.7831 544.7661 203.3756 553.5811 197.0791 557.9886
+  190.7827 562.3962 183.2269 567.4333 183.2269 569.9519
+  183.2269 572.4705 180.0787 591.9895 180.0787 591.9895
+  177.5601 617.805
+  178.1898 632.9165
+  172.0034 644.1326
+  153.997 655.5386
+endline
+
+line wall 
+  120.8089 641.5118
+  120.8089 641.5118 120.2623 600.8045 118.3734 596.397
+  116.4845 591.9895 115.8548 574.9891 115.8548 572.4705
+  115.8548 569.9519 139.7814 554.8404 146.0778 547.2847
+  152.3743 539.7289 223.5243 495.6537 223.5243 495.6537
+  223.5243 477.394
+  223.5243 477.394 218.4871 462.2825 219.7464 458.5046
+  221.0057 454.7267 222.265 431.4298 222.265 425.1334
+  222.265 418.8369 219.1167 402.4661 219.1167 402.4661
+  224.7836 393.0214
+  281.4517 372.8727
+  306.0079 365.317
+  306.0079 365.317 306.6375 354.613 307.8968 350.8351
+  309.1561 347.0573 309.1561 319.3529 309.1561 319.3529
+endline
+
+point 223.72 511.42 station -name 2.9
+point 152.77 561.1 station -name 1.2
+point 128.24 579.53 station -name 1.3
+point 128.24 654.33 station -name 1.4
+point 120.4 655.04 station -name 1.5
+point 379.6 344.96 station -name 2.1
+point 358.47 358.66 station -name 2.2
+point 322.08 375.67 station -name 2.3
+point 280.91 391.42 station -name 2.4
+point 261.94 418.5 station -name 2.5
+point 261.94 468.11 station -name 2.6
+point 249.3 495.28 station -name 2.7
+point 226.08 511.5 station -name 2.8
+endscrap
+

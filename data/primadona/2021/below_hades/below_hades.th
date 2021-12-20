@@ -3,7 +3,7 @@
 survey below_hades -title "primadona migovc-"
 
    input "below_hades-p.th2"
-  # input "below_hades-1s.th2"
+   input "below_hades-e.th2"
 
   map m-all-p -projection plan
   	m1p
@@ -12,10 +12,14 @@ survey below_hades -title "primadona migovc-"
    map m1p -projection plan
      below_hades-1p
    endmap
-  # map m1s -projection extended
-  #   below_hades-1s
-  # endmap
+  
+   map m-all-e -projection extended
+     below_hades-2e
+     break
+     below_hades-1e
+   endmap
 
+   join below_hades-1e below_hades-2e
   centerline
     date 2021.12.18 
     explo-date 2021.12.18 

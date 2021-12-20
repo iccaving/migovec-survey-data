@@ -1,0 +1,40 @@
+survey surface
+# EQUATE commands for SURFACE FIXES
+	input "./surface/96/sM2_M18_M16.th"
+	input "./surface/00/s1.th"
+	input "./surface/00/s2.th"
+	input "./surface/08/s_vrtnarija_vilinska.th"
+	input "./surface/01/sM16_M4_M18.th"
+	input "./surface/01/sM10_M4_M15.th"
+
+	centreline
+		extend ignore M2@sM2_M18_M16
+		extend ignore 1@s1
+		extend ignore 1@s2
+		extend ignore 2@s_vrtnarija_vilinska
+		extend ignore M16@sM16_M4_M18
+		extend ignore M10@sM10_M4_M15
+	endcentreline
+	
+	# link Vrtnarija to M18
+	equate GW@s2 0@bclent2.vrtnarija.vrtnarija_vilinska
+	equate M18@s2 26@torn.M18.m2m16m18
+
+	# link Vilinska Jama to Vrtnarija
+	equate GW@s_vrtnarija_vilinska 0@bclent2.vrtnarija.vrtnarija_vilinska
+	equate VIL@s_vrtnarija_vilinska 1@vilinent.vilinska.vrtnarija_vilinska
+
+	# link M16 to M10
+	equate M16@s1 1@entrance.M16.m2m16m18
+	equate M16@sM2_M18_M16 1@entrance.M16.m2m16m18
+
+	# link M2 to M18
+	equate M2@sM2_M18_M16 19@izent2.M2.m2m16m18
+	equate M18@sM2_M18_M16 26@torn.M18.m2m16m18
+
+	# link M16 to M18 via M4
+	equate M18@sM16_M4_M18 26@torn.M18.m2m16m18
+
+	# link M10 to M15
+	equate M4@sM16_M4_M18 M4@sM10_M4_M15
+endsurvey
