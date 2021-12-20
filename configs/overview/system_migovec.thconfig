@@ -12,17 +12,18 @@ encoding  utf-8
 # select a source data file.
 source "../../data/system_migovec.th"
 
-export model -o "../../outputs/system_migovec.3d"
-#export map -o "../../outputs/GIS/system_migovec" -fmt esri
-#----------------------------------------------------------------------------------|
+
 # input the layout files
 input "../../layouts/base-p.thl"
 input "../../layouts/base-e.thl"
+input "../../layouts/overview-p.thl"
 input "../../layouts/mods.thl"
-input "../../layouts/user_label.thl"
+input "../../layouts/metapost/user_label.thl" # input this to have the label hierarchy
+
 
 #----------------------------------------------------------------------------------|
-# select the relevant map definitions, and levels within those maps
+# export a PLAN view
+
 
 source
 	map local-p -projection plan
@@ -36,7 +37,7 @@ select local-p
 #select  m-primadona_ubend_monatip-e@system_migovec -map-level 0
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view
+
 layout plan
 	copy base-p
 	copy user_label

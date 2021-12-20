@@ -16,14 +16,16 @@ source "../../data/system_migovec.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../layouts/overview-p.thl"
-input "../../layouts/base-e.thl"
 input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/overview-p.thl"
 input "../../layouts/mods.thl"
-input "../../layouts/user_label.thl" # input this to have the label hierarchy
+input "../../layouts/metapost/user_label.thl" # input this to have the label hierarchy
+
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview_plan_SLO or ENG
+# export a PLAN view
+
 layout plan
 	copy base-p
 	copy show-centreline
@@ -62,7 +64,7 @@ endsource
 select local-p
 
 #language sl
-export map -projection plan -o ../../outputs/m2_m16_m18_plan_SLO.pdf -layout plan
+#export map -projection plan -o ../../outputs/m2_m16_m18_plan_SLO.pdf -layout plan
 #export map -projection plan -o ../../outputs/m2_m16_m18_plan_SLO.svg -layout plan
 
 #language en
@@ -73,7 +75,8 @@ export map -projection plan -o ../../outputs/m2_m16_m18_plan_SLO.pdf -layout pla
 # export an ELEVATION view
 layout ee
 	copy base-e
-
+	copy show-centreline
+	copy user_label
 	copy colour-by-new
 	symbol-assign point water-flow MY
 	symbol-colour point water-flow [10 10 80]
@@ -86,8 +89,7 @@ layout ee
 	\legendbox{1}{97}{NW}{\size[10]\the\comment}
 	\legendbox{1}{80}{NW}{\scalebar}	}
 
-	copy show-centreline
-	copy user_label
+	
 	scale 1 4000
 	colour map-fg [95 95 82]
 	grid-size 10 10 100 m
@@ -108,7 +110,7 @@ endsource
 select local-e
 
 language sl
-#export map -projection extended -o ../../outputs/m2m16m18_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/m2m16m18_EE_SLO.pdf -layout ee
 #export map -projection extended -o ../../outputs/m2m16m18_EE_SLO.svg -layout ee
 #language en
 #export map -projection extended -o ../../outputs/m2m16m18_EE_ENG.pdf -layout ee
@@ -118,8 +120,8 @@ language sl
 # export 3d MODELS
 
 # export a .3d model, which can be opened in AVEN and LOCH
-#select m2m16m18@system_migovec
-#export model -o ../../outputs/m2_m16_m18.3d -fmt survex
+select m2m16m18@system_migovec
+export model -o ../../outputs/m2_m16_m18.3d -fmt survex
 
 # export a .lox model, which can be opened in LOCH only
 #export model -o ../../outputs/m2_m16_m18.lox

@@ -10,8 +10,6 @@ layout custom_grid
                    fi fi;
 
                   if xpos <0 : draw (-10,0) -- (0,0) fi;
-                  pickup PenD;
-                  draw (if xpos <0: 0 else: -xsize/2 fi,0) -- (if xpos > 0: 0 else: xsize/2 fi,0) withcolor 0.1black+0.5white dashed evenly xscaled 0.5;
             enddef;
       endcode
 endlayout

@@ -293,7 +293,7 @@ point 184.83 -158.51 station -name "0"
 
 
 endscrap
-scrap hades-1p1 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+scrap hades-2p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line wall
   -193.38 -442.80
@@ -467,7 +467,7 @@ line rock-border -close on
   -273.27 -605.00
 endline
 
-line u:user
+line u:texture_MY
   -25.92 -1021.10
   -26.22 -1020.53 -26.53 -1019.97 -26.82 -1019.40
   -27.19 -1018.65 -27.51 -1017.87 -27.90 -1017.13
@@ -497,7 +497,7 @@ line pit
   -206.17 -610.66 -226.19 -578.85 -241.90 -547.42
 endline
 
-line u:user
+line u:texture_MY
   -249.91 -280.69
   -255.90 -273.60
   -260.92 -266.40
@@ -513,7 +513,7 @@ line u:user
   -335.78 -219.32
 endline
 
-line u:user
+line u:texture_MY
   -249.91 -225.04
   -255.48 -217.16
   -260.26 -210.06
@@ -531,7 +531,7 @@ line u:user
   -332.61 -178.50
 endline
 
-line u:user
+line u:texture_MY
   -269.53 -360.06
   -269.53 -351.88
   -269.53 -342.62
@@ -550,7 +550,7 @@ line u:user
   -333.32 -277.82
 endline
 
-line u:user
+line u:texture_MY
   -204.11 -479.54
   -210.14 -469.68
   -214.68 -462.41
@@ -568,7 +568,7 @@ line u:user
   -233.96 -354.34
 endline
 
-line u:user
+line u:texture_MY
   -200.84 -510.63
   -197.16 -521.27
   -194.11 -530.74
@@ -594,20 +594,20 @@ line u:user
   -130.51 -723.80
 endline
 
-line u:user
+line u:texture_MY
   -204.93 -574.46
   -199.61 -592.05
   -195.91 -599.06
 endline
 
-line u:user
+line u:texture_MY
   -161.58 -695.57
   -158.72 -706.62
   -156.68 -717.66
   -154.22 -725.03
 endline
 
-line u:user
+line u:texture_MY
   -211.47 -540.91
   -214.24 -529.31
   -216.79 -519.22
@@ -620,11 +620,11 @@ line u:user
   -233.55 -458.71
 endline
 
-line u:user
+line u:texture_MY
   -245.95 -185.48
 endline
 
-line u:user
+line u:texture_MY
   -262.52 -212.57
   -263.47 -220.70
   -266.62 -228.17
@@ -635,20 +635,20 @@ line u:user
   -288.10 -273.20
 endline
 
-line u:user
+line u:texture_MY
   -268.25 -143.72
   -271.91 -157.11
   -277.81 -164.44
 endline
 
-line u:user
+line u:texture_MY
   -286.09 -182.29
   -287.72 -192.67
   -292.25 -200.33
   -297.19 -211.69
 endline
 
-line u:user
+line u:texture_MY
   -295.33 -109.93
   -296.74 -117.85
   -298.51 -126.51
@@ -664,7 +664,7 @@ line u:user
   -318.07 -229.13
 endline
 
-line u:user
+line u:texture_MY
   -238.94 -260.07
   -242.84 -271.09
   -251.62 -278.77
@@ -676,12 +676,12 @@ line u:user
   -290.11 -321.68
 endline
 
-line u:user
+line u:texture_MY
   -264.75 -330.52
   -273.38 -336.21
 endline
 
-line u:user
+line u:texture_MY
   -239.90 -308.20
   -246.47 -312.09
   -251.87 -318.27
@@ -690,7 +690,7 @@ line u:user
   -273.19 -334.66
 endline
 
-line u:user
+line u:texture_MY
   -284.50 -326.69
   -286.89 -316.49
   -291.55 -310.03
@@ -701,7 +701,7 @@ line u:user
   -330.89 -301.75
 endline
 
-line u:user
+line u:texture_MY
   -316.67 -312.03
   -317.79 -301.67
   -318.58 -291.83
@@ -712,13 +712,13 @@ line u:user
   -322.09 -250.58
 endline
 
-line u:user
+line u:texture_MY
   -298.20 -298.32
   -294.87 -291.10
   -291.39 -283.86
 endline
 
-line u:user
+line u:texture_MY
   -175.14 -554.93
   -183.25 -558.10
   -192.29 -563.88
@@ -727,7 +727,7 @@ line u:user
   -214.11 -576.75
 endline
 
-line u:user
+line u:texture_MY
   -197.58 -497.53
   -207.89 -499.44
   -214.42 -505.27
@@ -735,7 +735,7 @@ line u:user
   -230.49 -512.57
 endline
 
-line u:user
+line u:texture_MY
   -189.75 -450.47
   -197.69 -454.67
   -206.67 -459.41
@@ -745,7 +745,7 @@ line u:user
   -235.67 -475.23
 endline
 
-line u:user
+line u:texture_MY
   -201.86 -417.67
   -211.52 -418.53
   -218.01 -423.69
@@ -754,17 +754,17 @@ line u:user
   -242.93 -432.03
 endline
 
-line u:user
+line u:texture_MY
   -244.97 -390.93
   -255.65 -392.18
 endline
 
-line u:user
+line u:texture_MY
   -217.54 -390.93
   -226.01 -391.28
 endline
 
-line u:user
+line u:texture_MY
   -241.41 -369.19
   -239.50 -377.19
   -238.39 -386.03
@@ -777,13 +777,13 @@ line u:user
   -233.57 -454.04
 endline
 
-line u:user
+line u:texture_MY
   -172.64 -486.12
   -181.09 -492.03
   -188.68 -496.46
 endline
 
-line u:user
+line u:texture_MY
   -167.66 -585.59
   -175.29 -588.43
   -183.94 -593.03
@@ -792,26 +792,26 @@ line u:user
   -208.32 -607.72
 endline
 
-line u:user
+line u:texture_MY
   -140.22 -639.78
   -148.07 -640.91
   -158.43 -644.90
   -166.71 -647.51
 endline
 
-line u:user
+line u:texture_MY
   -121.34 -662.24
   -131.32 -664.13
   -138.68 -669.62
   -148.84 -675.56
 endline
 
-line u:user
+line u:texture_MY
   -169.08 -687.20
   -180.84 -688.98
 endline
 
-line u:user
+line u:texture_MY
   -170.51 -672.58
   -172.80 -663.57
   -179.13 -655.22
@@ -822,13 +822,19 @@ line u:user
   -193.91 -610.50
 endline
 
+point -61.28 -206.19 u:label_MY -attr text "Hades" -align l -scale m
 
 point -241.28 -406.19 station -name "2"
 point -250.25 -343.96 station -name "3"
 
 
 endscrap
-scrap hades-1p2 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+scrap hades-3p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+
+point -241.28 -406.19 station -name "2"
+point -250.25 -343.96 station -name "3"
+
 
 line wall
   -603.05 -1183.02

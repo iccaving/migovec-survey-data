@@ -9,6 +9,13 @@ survey hades -title "hades"
   map m-all-e -projection extended
     hades-1s
   endmap
+
+  map m-all-p -projection plan
+    hades-1p
+    hades-2p
+    hades-3p
+  endmap
+
   centerline
     date 2021.07.30 
     
