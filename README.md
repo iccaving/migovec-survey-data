@@ -33,6 +33,7 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
   - [How to contribute?](#how-to-contribute)
   - [Final considerations](#final-considerations)
   - [Tips](#tips)
+    - [Symbols](#symbols)
     - [How do I show the centerline of undrawn maps?](#how-do-i-show-the-centerline-of-undrawn-maps)
     - [How Do I Make a Pillar (solid rock within a passage)?](#how-do-i-make-a-pillar-solid-rock-within-a-passage)
     - [How Do I Control Which Passage Appears On Top of Another?](#how-do-i-control-which-passage-appears-on-top-of-another)
@@ -589,7 +590,7 @@ This survey data was collected between the year 1974-2019 by Imperial College Ca
 
 ## Tips
 
-### Symbology
+### Symbols
 
 Throughout the process of migrating the survey data, we have used metapost to redefine several symbols to our liking.
 You can find the general symbology below and download a pdf. 
