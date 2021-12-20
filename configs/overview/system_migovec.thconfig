@@ -66,7 +66,7 @@ layout plan
 	symbol-hide point station-name
 
 	code metapost
-		max_label_level("1"); % yeah, now it works!
+		set_label_level("1"); % yeah, now it works!
 	endcode
 endlayout
 
@@ -101,7 +101,7 @@ layout ee
 	grid-size 10 10 100 m
 	map-header 0 0 off
 	code metapost
-    max_label_level("1"); % yeah, now it works!
+    set_label_level("1"); % yeah, now it works!
 	endcode
 endlayout
 

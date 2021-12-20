@@ -11,9 +11,11 @@ survey hades -title "hades"
   endmap
 
   map m-all-p -projection plan
-    hades-1p
     hades-2p
-    hades-3p
+    break
+    hades-1p
+    
+    #hades-3p
   endmap
 
   centerline

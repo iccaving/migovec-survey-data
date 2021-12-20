@@ -15,7 +15,7 @@ layout wb
 	copy user_label
 
 	code metapost
-    max_label_level("3"); % yeah, now it works!
+    set_label_level("3"); % yeah, now it works!
 	endcode
 
 	#symbol-colour group survey [100 100 100]

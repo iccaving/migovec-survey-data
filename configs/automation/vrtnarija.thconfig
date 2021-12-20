@@ -32,7 +32,7 @@ layout plan
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: 8283<br><br>Vilinska Jama<br>kat. št.: 10868<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: 8283<br><br>Vilinska Jama<br>Cadastral number: 10868<br>"
 
 	code metapost
-    max_label_level("2"); 
+    set_label_level("2"); 
 	endcode
 
 endlayout
@@ -58,7 +58,7 @@ layout ee
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2015<br>Natančmost meritev IV/B<br><br>Vrtnarija<br>kat. št.: 8283<br><br>Vilinska Jama<br>kat. št.: 10868<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2015<br>BCRA grade 4-5b<br><br>Vrtnarija<br>Cadastral number: 8283<br><br>Vilinska Jama<br>Cadastral number: 10868<br>"
 	
 	code metapost
-		max_label_level("2");
+		set_label_level("2");
 	endcode
 	
 endlayout

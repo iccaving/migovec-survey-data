@@ -50,7 +50,7 @@ layout plan
 	}
 
 	code metapost
-  	max_label_level("1");
+  	set_label_level("1");
 	endcode
 endlayout
 
@@ -96,7 +96,7 @@ layout ee
 	map-header 0 0 off
 
 	code metapost
-  	max_label_level("2");
+  	set_label_level("2");
 	endcode
 endlayout
 

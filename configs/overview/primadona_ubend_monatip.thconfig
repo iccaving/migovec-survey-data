@@ -40,7 +40,7 @@ layout plan
 	scale 1 1000
 	
 	code metapost
-    max_label_level("3"); % yeah, now it works!
+    set_label_level("3"); % yeah, now it works!
 	endcode
 	
 endlayout

@@ -38,7 +38,7 @@ layout plan
 	scale 1 2000
 
 	code metapost
-    max_label_level("2"); % yeah, now it works!
+    set_label_level("2"); % yeah, now it works!
 	endcode
 endlayout
 
@@ -70,7 +70,7 @@ layout ee
 	grid-size 10 10 100 m
 	map-header 0 0 off
 	code metapost
-    max_label_level("2"); % yeah, now it works!
+    set_label_level("2"); % yeah, now it works!
 	endcode
 endlayout
 

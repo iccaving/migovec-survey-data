@@ -75,7 +75,7 @@ def p_altitude(expr pos)=
     fi;
   enddef;
 
-	vardef max_label_level (expr mylevel)=
+	vardef set_label_level (expr mylevel)=
 		maxl := scantokens(mylevel);
 	enddef;
     
