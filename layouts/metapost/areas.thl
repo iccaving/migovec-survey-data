@@ -1,15 +1,15 @@
 layout custom_areas
-
+	
 	code metapost
-
-		## redifinition of existing areas
-
+		
+		# redifinition of existing areas
+		
 		# blueish water area
 		def a_water_MY (expr p) =
-		  T:=identity;
-		  thfill p withcolor (0.1,0.1,0.25);
+			T:=identity;
+			thfill p withcolor (0.1,0.1,0.25);
 		enddef;
-
+		
 		# define an ice pattern
 		beginpattern(pattern_ice_MY);
 			pickup PenC;
@@ -19,87 +19,87 @@ layout custom_areas
 			patternxstep(0.6u);
 			patternystep(0.6u);
 		endpattern;
-		   
+		
 		# ice filled with that pattern
 		def a_ice_MY (expr Path) =
-		    T:=identity;
-		    thclean Path;
-		    thfill Path withpattern pattern_ice_MY;
+			T:=identity;
+			thclean Path;
+			thfill Path withpattern pattern_ice_MY;
 		enddef;
-	
+		
 		# random blue crystal in snow area
 		def a_snow_MY (expr P) =
-		  	T:=identity;
-		  	pickup PenC;
-		  	path q; q = bbox P;
-		  	picture tmp_pic, tmp_sn; 
-		  	pair z;
-		  	tmp_sn := image(
-		    	pickup PenD;
-		    	p := origin--(0,.1*u);
-		    	draw p; draw p rotated (60); draw p rotated (120);
-		    	draw p rotated (180); draw p rotated (240); draw p rotated (300);
-		  	);
-		  	tmp_pic := image(
-		    	for i = xpart llcorner q step 0.5u until xpart urcorner q:
-		      		for j = ypart llcorner q step 0.5u until ypart urcorner q:
-		        		z:=((i,j) randomized 0.25u);
-		  				if xpart (P intersectiontimes ((bbox tmp_sn) shifted z)) < 0:
-		          			draw tmp_sn shifted z withcolor(0,0.7,0.9);
-		  				fi;
-		      		endfor;  
-		    	endfor;
-		  	);
-		  	clip tmp_pic to P;
-		  	drawoptions();
-		  	draw tmp_pic;
+			T:=identity;
+			pickup PenC;
+			path q; q = bbox P;
+			picture tmp_pic, tmp_sn;
+			pair z;
+			tmp_sn := image(
+			pickup PenD;
+			p := origin--(0,.1*u);
+			draw p; draw p rotated (60); draw p rotated (120);
+			draw p rotated (180); draw p rotated (240); draw p rotated (300);
+			);
+			tmp_pic := image(
+			for i = xpart llcorner q step 0.5u until xpart urcorner q:
+			for j = ypart llcorner q step 0.5u until ypart urcorner q:
+			z:=((i,j) randomized 0.25u);
+			if xpart (P intersectiontimes ((bbox tmp_sn) shifted z)) < 0:
+			draw tmp_sn shifted z withcolor(0,0.7,0.9);
+			fi;
+			endfor;
+			endfor;
+			);
+			clip tmp_pic to P;
+			drawoptions();
+			draw tmp_pic;
 		enddef;
-
+		
 		# define a clay pattern
 		beginpattern(pattern_clay_MY);
-		   	pickup PenD;
-		   	p:= (-.008u,0)--(.008u,0);
-		   	draw p;
-		   	draw p rotated 25 shifted(.1u,0.1u);
-		   	patternxstep(0.2u);
-		   	patternystep(0.2u);
-		   	patterncolor(0.65,0.55,0.1);
+			pickup PenD;
+			p:= (-.008u,0)--(.008u,0);
+			draw p;
+			draw p rotated 25 shifted(.1u,0.1u);
+			patternxstep(0.2u);
+			patternystep(0.2u);
+			patterncolor(0.65,0.55,0.1);
 		endpattern;
-		   
+		
 		# fill clay areas with clay pattern
 		def a_clay_MY (expr Path) =
-		    T:=identity;
-		    thclean Path;
-		    thfill Path withpattern pattern_clay_MY;
+			T:=identity;
+			thclean Path;
+			thfill Path withpattern pattern_clay_MY;
 		enddef;
-		  
+		
 		# randomly put dots in sand
 		def a_sand_MY (expr p) =
-		    T:=identity;
-		    thclean p;
-		    pickup PenB;
-		    thfill p withcolor(0.85,0.8,0.5);
-		    path q; q = bbox p;
-		    picture tmp_pic, tmp_sand;
-		    pair z;
-		    tmp_sand := image (
-		      draw (-.005u,0)--(.007u,0);
-		    );
-		    tmp_pic := image(
-		      for i = xpart llcorner q step .35u until xpart urcorner q:
-		        for j = ypart llcorner q step .35u until ypart urcorner q:
-		          z := ((i,j) randomized 0.2u);
-		          if xpart (p intersectiontimes ((bbox tmp_sand) shifted z)) < 0:
-		            draw tmp_sand shifted z;
-		          fi;
-		        endfor;
-		      endfor;
-		      );
-		    clip tmp_pic to p;
-		    drawoptions();
-		    draw tmp_pic;
+			T:=identity;
+			thclean p;
+			pickup PenB;
+			thfill p withcolor(0.85,0.8,0.5);
+			path q; q = bbox p;
+			picture tmp_pic, tmp_sand;
+			pair z;
+			tmp_sand := image (
+			draw (-.005u,0)--(.007u,0);
+			);
+			tmp_pic := image(
+			for i = xpart llcorner q step .35u until xpart urcorner q:
+			for j = ypart llcorner q step .35u until ypart urcorner q:
+			z := ((i,j) randomized 0.2u);
+			if xpart (p intersectiontimes ((bbox tmp_sand) shifted z)) < 0:
+			draw tmp_sand shifted z;
+			fi;
+			endfor;
+			endfor;
+			);
+			clip tmp_pic to p;
+			drawoptions();
+			draw tmp_pic;
 		enddef;
-
+		
 		# grey pebbles, randomly oriented in area
 		def a_pebbles_MY (expr p) =
 			T:=identity;
@@ -112,82 +112,83 @@ layout custom_areas
 			pair z;
 			pair za;
 			tmp_pebblea := image (
-			    draw (((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle) scaled 0.035u) withcolor(0.5,0.5,0.5);
-			    fill (((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle) scaled 0.035u) withcolor(0.95,0.95,0.95);
+			draw (((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle) scaled 0.035u) withcolor(0.5,0.5,0.5);
+			fill (((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle) scaled 0.035u) withcolor(0.95,0.95,0.95);
 			);
 			
 			tmp_pebbleb := image (
-			    draw (((((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle)rotated 35)  scaled 0.025u) shifted (0.2u,0.2u)) withcolor(0.5,0.5,0.5);
-			    fill (((((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle)rotated 35) scaled 0.025u) shifted (0.2u,0.2u)) withcolor(0.95,0.95,0.95);
+			draw (((((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle)rotated 35)  scaled 0.025u) shifted (0.2u,0.2u)) withcolor(0.5,0.5,0.5);
+			fill (((((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle)rotated 35) scaled 0.025u) shifted (0.2u,0.2u)) withcolor(0.95,0.95,0.95);
 			);
 			tmp_pic := image(
-			    for i = xpart llcorner q step .4u until xpart urcorner q:
-			      	for j = ypart llcorner q step .4u until ypart urcorner q:
-			        	z := ((i,j) randomized 0.3u);
-			        	za :=((i,j) randomized 0.4u) ;
-			        	if xpart (p intersectiontimes ((bbox tmp_pebblea) shifted z)) < 0:
-			          		draw tmp_pebblea shifted z;
-			          		draw tmp_pebbleb shifted z;
-			        	fi;
-			    	endfor;
-			    endfor;
+			for i = xpart llcorner q step .4u until xpart urcorner q:
+			for j = ypart llcorner q step .4u until ypart urcorner q:
+			z := ((i,j) randomized 0.3u);
+			za :=((i,j) randomized 0.4u) ;
+			if xpart (p intersectiontimes ((bbox tmp_pebblea) shifted z)) < 0:
+			draw tmp_pebblea shifted z;
+			draw tmp_pebbleb shifted z;
+			fi;
+			endfor;
+			endfor;
 			);
 			clip tmp_pic to p;
 			drawoptions();
 			draw tmp_pic;
-		enddef; 
-
+		enddef;
+		
 		initsymbol("a_snow_MY");
-    	initsymbol("a_ice_MY");
-    	initsymbol("a_water_MY");
-    	initsymbol("a_clay_MY");
-    	initsymbol("a_sand_MY");
-    	initsymbol("a_pebbles_MY");
-
+		initsymbol("a_ice_MY");
+		initsymbol("a_water_MY");
+		initsymbol("a_clay_MY");
+		initsymbol("a_sand_MY");
+		initsymbol("a_pebbles_MY");
+		
 		## new definitions
-
+		
 		# randomly fill boulder areas with boulders, scalable as wished
 		def a_u_smallblocks_MY (expr p) =
-		  T:=identity;
-		  pickup PenD;
-		  save S,sc;
-		  string S;
-		  numeric sc;
-		  
-		  # if scale attribute is given use that, otherwise default to 1.
-		  if known ATTR_scale:
-		    sc :=scantokens(ATTR_scale);
-		  else: sc:=1;
-		  fi;
-
-		  path q, qq; q = bbox p;
-		  picture tmp_pic;
-		  uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
-		  tmp_pic := image(
-		    for i = xpart llcorner q step 0.4uu*sc until xpart urcorner q:
-		      for j = ypart llcorner q step 0.4uu*sc until ypart urcorner q:
-		        k := (4+normaldeviate)/5;
-
-		        qq := punked (((-.17uu*sc,.07uu*sc)--(-.17uu*sc,-.07uu*sc)--(0,-.12uu*sc)--(.17uu*sc,-.08uu*sc)--(.15uu*sc,.06uu*sc)--(0,.13uu*sc)--cycle)
-		       randomized (uu/9))
-		         rotated uniformdeviate(360)
-		         scaled k
-		         shifted ((i,j) randomized 0.25uu);
-
-		  if xpart (p intersectiontimes qq) < 0:
-		    thclean qq;
-		    thdraw qq withcolor(0.3,0.3,0.3);
-		  fi;
-		      endfor;
-		    endfor;
-		  );
-		  clip tmp_pic to p;
-		  drawoptions();
-		  draw tmp_pic;
+			T:=identity;
+			pickup PenD;
+			save S,sc;
+			string S;
+			numeric sc;
+			
+			# if scale attribute is given use that, otherwise default to 1.
+			if known ATTR_scale:
+			sc :=scantokens(ATTR_scale);
+			else: sc:=1;
+			fi;
+			
+			path q, qq; q = bbox p;
+			picture tmp_pic;
+			uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
+			tmp_pic := image(
+			for i = xpart llcorner q step 0.4uu*sc until xpart urcorner q:
+			for j = ypart llcorner q step 0.4uu*sc until ypart urcorner q:
+			k := (4+normaldeviate)/5;
+			
+			qq := punked (((-.17uu*sc,.07uu*sc)--(-.17uu*sc,-.07uu*sc)--(0,-.12uu*sc)--(.17uu*sc,-.08uu*sc)--(.15uu*sc,.06uu*sc)--(0,.13uu*sc)--cycle)
+			randomized (uu/9))
+			rotated uniformdeviate(360)
+			scaled k
+			shifted ((i,j) randomized 0.25uu);
+			
+			if xpart (p intersectiontimes qq) < 0:
+			thclean qq;
+			thdraw qq withcolor(0.3,0.3,0.3);
+			fi;
+			endfor;
+			endfor;
+			);
+			clip tmp_pic to p;
+			drawoptions();
+			draw tmp_pic;
 		enddef;
-
-    	# initialise redefined symbols
-    	initsymbol("a_u_smallblocks_MY");
+		
+		# initialise redefined symbols
+		initsymbol("a_u_smallblocks_MY");
+	endcode
 endlayout
 
 # define legend label

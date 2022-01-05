@@ -24,18 +24,18 @@ input "../../_layouts/mods.thl"
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
 source
-map system_with_centreline -projection extended
-	m-all-e@M16.m2m16m18.system_migovec
-	m-all-e@primadona_ubend_monatip.system_migovec
-	m-all-e@M18.m2m16m18.system_migovec
-	M2@m2m16m18.system_migovec
-	M16@m2m16m18.system_migovec
-	#m-all-e@vrtnarija.system_migovec
-	#vrtnarija@system_migovec
-
-	
-	#vrtnarija@system_migovec
-endmap
+	map system_with_centreline -projection extended
+		m-all-e@M16.m2m16m18.system_migovec
+		m-all-e@primadona_ubend_monatip.system_migovec
+		m-all-e@M18.m2m16m18.system_migovec
+		M2@m2m16m18.system_migovec
+		M16@m2m16m18.system_migovec
+		#m-all-e@vrtnarija.system_migovec
+		#vrtnarija@system_migovec
+		
+		
+		#vrtnarija@system_migovec
+	endmap
 endsource
 
 select system_with_centreline

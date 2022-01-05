@@ -1,4 +1,4 @@
-encoding  utf-8
+encoding utf-8
 #----------------------------------------------------------------------------------|
 #                                                                                  |
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
@@ -22,7 +22,6 @@ input "../../layouts/overview-p.thl"
 input "../../layouts/mods.thl"
 input "../../layouts/metapost/user_label.thl" # input this to have the label hierarchy
 
-
 #----------------------------------------------------------------------------------|
 # export a PLAN view
 
@@ -31,26 +30,27 @@ layout plan
 	copy show-centreline
 	copy user_label
 	copy colour-by-new
-
+	
 	symbol-assign point water-flow MY
 	symbol-colour point water-flow [10 10 80]
 	scale 1 2000
 	symbol-show line survey
 	symbol-show point station
 	colour map-fg [95 95 82]
-
+	
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
-	code tex-map
-	\framethickness=0.5mm
-	\def\maplayout{
-	\legendbox{100}{180}{NE}{\size[26]\the\cavename}
-	\legendbox{0}{170}{NW}{\size[10]\the\comment}
-	\legendbox{30}{170}{NW}{\scalebar}
-	\legendbox{30}{150}{NW}{\northarrow}
-	}
-
+	code texmap
+		\framethickness=0.5mm
+		\def\maplayout{
+		\legendbox{100}{180}{NE}{\size[26]\the\cavename}
+		\legendbox{0}{170}{NW}{\size[10]\the\comment}
+		\legendbox{30}{170}{NW}{\scalebar}
+		\legendbox{30}{150}{NW}{\northarrow}
+		}
+	endcode
+	
 	code metapost
-  	set_label_level("1");
+		set_label_level("1");
 	endcode
 endlayout
 
@@ -84,19 +84,19 @@ layout ee
 	grid-size 10 10 100 m
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
 	code tex-map
-	\def\maplayout{
-	\legendbox{1}{99}{NW}{\the\cavename}
-	\legendbox{1}{97}{NW}{\size[10]\the\comment}
-	\legendbox{1}{80}{NW}{\scalebar}	}
-
+		\def\maplayout{
+		\legendbox{1}{99}{NW}{\the\cavename}
+		\legendbox{1}{97}{NW}{\size[10]\the\comment}
+		\legendbox{1}{80}{NW}{\scalebar}	}
+	endcode
 	
 	scale 1 4000
 	colour map-fg [95 95 82]
 	grid-size 10 10 100 m
 	map-header 0 0 off
-
+	
 	code metapost
-  	set_label_level("2");
+		set_label_level("2");
 	endcode
 endlayout
 
