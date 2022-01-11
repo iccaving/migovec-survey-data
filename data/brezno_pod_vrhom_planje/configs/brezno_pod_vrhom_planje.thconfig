@@ -25,13 +25,13 @@ input ../../../layouts/detailed-e.thl
 
 source
 	map localmap-p -projection plan
-	 m-all-p@brezno_pod_vrhom_planje
-	 okna@brezno_pod_vrhom_planje
+		m-all-p@brezno_pod_vrhom_planje
 	endmap
-
+	
 	map localmap-e -projection extended
-	 m-all-e@brezno_pod_vrhom_planje
-	 okna@brezno_pod_vrhom_planje
+		m-all-e@brezno_pod_vrhom_planje
+		okna@brezno_pod_vrhom_planje
+		prazen_list@brezno_pod_vrhom_planje
 	endmap
 endsource
 #----------------------------------------------------------------------------------|
@@ -52,16 +52,16 @@ layout local
 	scale 1 200
 	symbol-show point label
 	symbol-show point gradient
-
+	
 	map-comment "Vrh Planja<br>Cadastral Number: XXXX<br>Length: XX m, Depth: XX m<br>Entrance elevation: 1868 m<br>Coordinates (lat-long):  46.264686\°N / 13.752099\°E"
-
+	
 	code tex-map
 		\def\maplayout{
 		\legendbox{0}{-5}{SW}{\size[26]\the\cavename}
 		%\legendbox{-10}{130}{NW}{\size[10]\the\comment}
 		\legendbox{15}{20}{N}{\scalebar}
 		\legendbox{15}{25}{S}{\northarrow}
-	}
+		}
 	endcode
 endlayout
 

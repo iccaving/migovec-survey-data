@@ -4,11 +4,13 @@ encoding utf-8
 survey prazen_list
 	
 	#input "prazen_list-1e.th2"
-	#input "prazen_list-1p.th2"
+	input "prazen_list-p.th2"
 	
-	#map m-all-p -projection plan
-	#	prazen_list-1p
-	#endmap
+	map m-all-p -projection plan
+		prazen_list-1p
+		break
+		prazen_list-2p
+	endmap
 	
 	#map m-all-e -projection extended
 	#	prazen_list-1e
@@ -17,11 +19,11 @@ survey prazen_list
 	centreline
 		
 		date 2021.10.23
-		# Splays on 2 should be on 1 # Corrected by Rhys 2021-01-05
+		# Splays on 2 should be on 1 # Corrected - Rhys 2021-01-05
 		# 1, 4, 7 PSS
 		# Station 14 is hanger in rift
 		# Station 18 is station 35
-		# First half 13 splays should be on 12
+		# First half 13 splays should be on 12 # Tried to correct this but probably just don't trust the splays on these stations very much - Rhys 2021-01-11
 		team "Rhys Tyers" notes
 		team "Jana Carga" instruments
 		team "André Fratnik" assistant
@@ -204,24 +206,24 @@ survey prazen_list
 		11	-	2.007	225.37	17.51
 		11	12	3.150	220.16	35.87		#  {from: 3.153 220.17 35.76, 3.146 220.32 35.85, 3.151 219.98 36.00}
 		12	13	3.244	220.17	10.44		#  {from: 3.244 220.37 10.43, 3.245 220.18 10.41, 3.244 219.97 10.50}
-		13	-	0.551	320.93	40.12
-		13	-	0.796	306.43	4.50
-		13	-	0.903	277.92	-25.99
-		13	-	1.162	225.85	-69.21
-		13	-	5.666	58.49	-48.09
-		13	-	4.864	65.00	-44.63
-		13	-	2.365	68.49	-31.42
-		13	-	1.795	29.68	-50.12
-		13	-	1.198	32.22	-20.88
-		13	-	1.050	48.06	-10.97
-		13	-	0.545	201.80	11.84
-		13	-	3.331	221.04	12.13
-		13	-	3.130	230.87	-1.37
-		13	-	3.280	204.54	-19.80
-		13	-	2.670	214.35	-41.56
-		13	-	2.594	205.63	-54.53
-		13	-	1.129	241.15	10.72
-		13	-	3.198	234.43	7.72
+		12	-	0.551	320.93	40.12
+		12	-	0.796	306.43	4.50
+		12	-	0.903	277.92	-25.99
+		12	-	1.162	225.85	-69.21
+		12	-	5.666	58.49	-48.09
+		12	-	4.864	65.00	-44.63
+		12	-	2.365	68.49	-31.42
+		12	-	1.795	29.68	-50.12
+		12	-	1.198	32.22	-20.88
+		12	-	1.050	48.06	-10.97
+		12	-	0.545	201.80	11.84
+		12	-	3.331	221.04	12.13
+		12	-	3.130	230.87	-1.37
+		12	-	3.280	204.54	-19.80
+		12	-	2.670	214.35	-41.56
+		12	-	2.594	205.63	-54.53
+		12	-	1.129	241.15	10.72
+		12	-	3.198	234.43	7.72
 		13	14	2.154	3.00	-20.66		#  {from: 2.159 2.77 -20.50, 2.147 3.32 -20.87, 2.156 2.90 -20.60}
 		13	15	2.639	155.08	70.11		#  {from: 2.647 155.64 69.70, 2.637 155.06 70.22, 2.633 154.56 70.40}
 		13	-	0.983	322.28	88.71
