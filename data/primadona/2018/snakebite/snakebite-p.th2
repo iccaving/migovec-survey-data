@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap snakebite-p1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-point -70.0 -315.0 label -text P7 -scale s -align b
+point -70.0 -315.0 u:label_MY -attr lvl 1 -attr text P7 -scale s -align b
 
 line pit
   -29.0 -256.0

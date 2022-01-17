@@ -1,9 +1,8 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {79.130000 1 1.0} {-692.280000 0} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2021/below_hades/below_hades-1p.xvi" 0 {}
 
-scrap DELETE-ME-survey-legs-below_hades-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+scrap DELETE-ME-survey-legs-deveti_krog-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 line survey 
   -62.8 -721.34
@@ -2732,10 +2731,11 @@ point 25.24 1600.08 station-name -align tr -scale xs -text 43
 endscrap
 
 
-scrap below_hades-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+scrap deveti_krog-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
+point 532.9492 447.488 u:label_MY -align r -attr lvl 1 -attr text "Deveti Krog"
 point 122.226 1503.81 water-flow -orientation 26.616861827836118
-point 98.377 1455.368 water-flow -orientation 46.13362153155265
+point 98.377 1455.37 water-flow -orientation 46.13362153155265
 point -19.377 1542.94 water-flow -orientation 140.89252276961835
 line pit 
   52.5931 1465.9799
@@ -2898,8 +2898,8 @@ line chimney -outline out
   543.8056 1380.664 537.1704 1388.2084 528.8072 1391.4323
 endline
 
-point 587.3964 1058.1015 continuation -scale l
-point 645.8338 938.54 continuation -scale l
+point 587.396 1058.1 continuation -scale l
+point 645.834 938.54 continuation -scale l
 line wall -close on -outline in
   274.551 1567.0995
   274.551 1567.0995 283.3733 1573.0987 286.5493 1572.7458
@@ -2911,7 +2911,7 @@ line wall -close on -outline in
   262.9055 1565.6879 272.0807 1566.3937 274.551 1567.0995
 endline
 
-point -57.848 -781.7408 breakdown-choke -align b
+point -57.848 -781.741 breakdown-choke -align b
 line wall 
   207.6899 1563.3234
   213.7865 1574.2972

@@ -20,8 +20,8 @@ export model -o ../_outputs/mugo.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
-input ../../_layouts/detailed-p.thl
-input ../../_layouts/detailed-e.thl
+input ../../../layouts/detailed-p.thl
+input ../../../layouts/detailed-e.thl
 
 
 #----------------------------------------------------------------------------------|
@@ -109,6 +109,7 @@ layout local-slo
 		\legendbox{-90}{95}{SW}{\size[26]\the\cavename}
 		\legendbox{-45}{20}{N}{\scalebar}
 		\legendbox{-45}{25}{S}{\northarrow}
+		\legendbox{-20}{25}{N}{\the\cavelength m}
 	}
 	endcode
 endlayout

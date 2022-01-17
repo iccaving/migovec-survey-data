@@ -302,11 +302,7 @@ endscrap
 
 scrap testify-p2 -scale [0.0 0.0 1024.0 883.534821214303 0.0 0.0 208.35 179.77]
 
-line label -text "Testify!" -scale xl
-  389.0 230.0
-  389.0 230.0 465.0 292.0 488.0 342.0
-  smooth off
-endline
+
 
 line wall
   427.5 309.75
@@ -393,7 +389,7 @@ line wall
   smooth off
 endline
 
-point 262.0 194.0 label -text "Testify!" -align br
+point 262.0 194.0 u:label_MY -attr text "Testify!" -align br -attr lvl 1
 
 line wall
   322.5 242.75

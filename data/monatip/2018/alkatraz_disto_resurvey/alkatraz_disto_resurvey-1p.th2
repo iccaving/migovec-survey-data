@@ -159,7 +159,7 @@ line floor-step -outline in
 endline
 
 point 819.79 136.15 map-connection 
-point 87.0 582.0 label -text Alkatraz -align l -scale xl
+point 87.0 582.0 u:label_MY -attr text Alkatraz -align l -attr lvl 1
 line label -text Alkatraz
   1471.0 202.0
   1471.0 202.0 1999.0 774.0 2487.0 1642.0

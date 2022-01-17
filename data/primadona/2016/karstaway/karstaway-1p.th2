@@ -648,7 +648,8 @@ line wall -subtype presumed
   3092.0 6165.54 3111.0 5871.0 3088.18 5780.18
 endline
 
-point 1948.0 6124.0 label -text Karstaway -align tl
+point 1948.0 5824.0 u:label_MY -attr lvl 1 -attr text Karstaway -align tl
+
 line label -text Karstaway
   144.0 2696.0
   144.0 2696.0 964.0 4864.0 2396.0 6220.0

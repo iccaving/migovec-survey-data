@@ -1,9 +1,9 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 3374.900000 12355.000000
 ##XTHERION## xth_me_area_zoom_to 500
-##XTHERION## xth_me_image_insert {-293.750000 1 1.0} {-293.660000 0} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2021/below_hades/below_hades-1p.xvi" 0 {}
+##XTHERION## xth_me_image_insert {-293.750000 1 1.0} {-293.660000 0} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2021/deveti_krog/deveti_krog-1p.xvi" 0 {}
 
-scrap below_hades-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+scrap deveti_krog-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 446.15 954.68 station -name 1
 point 580.35 254.49 station -name 0
@@ -28,7 +28,7 @@ point 2852.47 8713.22 station -name 19
 endscrap
 
 
-scrap below_hades-2p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+scrap deveti_krog-2p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 2519.63 8983.58 station -name 20
 point 2455.95 9098.1 station -name 21
@@ -52,7 +52,7 @@ point 206.29 11042.32 station -name 38
 endscrap
 
 
-scrap below_hades-3p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+scrap deveti_krog-3p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 561.48 11827.4 station -name 43
 point 562.6 11226.4 station -name 39

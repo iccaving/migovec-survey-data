@@ -5,8 +5,9 @@ encoding  utf-8
 
 scrap monatip5-1e -scale [0.0 0.0 1024.0 745.1034776135276 0.0 0.0 188.06 136.84] -projection extended
 
-point 3018.9885 -927.3713 label -text "Ni naš<br>problem" -align bl
-point 2265.0154 552.7071 label -text Hallowine -align t
+point 3018.9885 -927.3713 u:label_MY -attr text "Ni naš problem" -align bl -attr lvl 3
+point 2265.0154 552.7071 u:label_MY -attr text Hallowine -align t -attr lvl 2
+
 line wall 
   3702.2622 -1091.1145
   3686.689 -863.4993

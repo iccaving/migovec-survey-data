@@ -131,7 +131,7 @@ line slope
   smooth off
 endline
 
-point 235.0 -125.5 label -text "Hall of the <br> Mountain King" -scale xl -align l
+point 235.0 -125.5 u:label_MY -attr lvl 2 -attr text "Hall of the <br> Mountain King" -scale m -align l
 
 line slope -close on
   497.0 -220.0

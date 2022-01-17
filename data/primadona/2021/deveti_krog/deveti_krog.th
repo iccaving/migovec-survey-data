@@ -1,25 +1,25 @@
 # 2021.12.20 created by TopoDroid v 5.1.40
 
-survey below_hades -title "primadona migovc-"
+survey deveti_krog -title "primadona migovc-"
 
-   input "below_hades-p.th2"
-   input "below_hades-e.th2"
+   input "deveti_krog-p.th2"
+   input "deveti_krog-e.th2"
 
   map m-all-p -projection plan
   	m1p
   endmap
 
    map m1p -projection plan
-     below_hades-1p
+     deveti_krog-1p
    endmap
   
    map m-all-e -projection extended
-     below_hades-2e
+     deveti_krog-2e
      break
-     below_hades-1e
+     deveti_krog-1e
    endmap
 
-   join below_hades-1e below_hades-2e
+   join deveti_krog-1e deveti_krog-2e
   centerline
     date 2021.12.18 
     explo-date 2021.12.18 

@@ -21,39 +21,41 @@ layout custom_scalebar_arrow
   		def s_scalebar (expr l, units, txt) =
   		  	begingroup
   		   		interim warningcheck:=0;
-  		   		tmp20:=20 * (l / Scale * cm * units / 100);
   		   		tmp40:=40 * (l / Scale * cm * units / 100);
-  		   		tmp60:=60 * (l / Scale * cm * units / 100);
   		   		tmp80:=80 * (l / Scale * cm * units / 100);
+  		   		tmp120:=120 * (l / Scale * cm * units / 100);
   		   		tmp100:=100 * (l / Scale * cm * units / 100);
+  		   		tmp160:=160 * (l / Scale * cm * units / 100);
+  		   		tmp200:=200 * (l / Scale * cm * units / 100);
   		   		scal10:=10 * l / 100;
-  		   		scal20:=20 * l / 100;
   		   		scal40:=40 * l / 100;
-  		   		scal60:=60 * l / 100;
   		   		scal80:=80 * l / 100;
+  		   		scal120:=120 * l /100;
+  		   		scal160:=160 * l /100;
+  		   		scal200:=200 * l /100;
   		   		brht:= 5bp;
   		   		lblht:= 8bp;
   		  	endgroup;
 
   		  	pickup PenD;
 
-  		  	draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
-  		  	draw (tmp20,0)--(tmp20,brht);
+  		  	draw (0,0)--(0,brht)--(tmp200,brht)--(tmp200,0)--(0,0);
   		  	draw (tmp40,0)--(tmp40,brht);
-  		  	draw (tmp60,0)--(tmp60,brht);
   		  	draw (tmp80,0)--(tmp80,brht);
-  		  	fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
-  		  	fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+  		  	draw (tmp120,0)--(tmp120,brht);
+  		  	draw (tmp160,0)--(tmp160,brht);
+  		  	fill (tmp40,0)--(tmp80,0)--(tmp80,brht)--(tmp40,brht)--cycle;
+  		  	fill (tmp120,0)--(tmp160,0)--(tmp160,brht)--(tmp120,brht)--cycle;
 
 
   		 	begingroup
-  		 		label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+  		 		label.top(thTEX(decimal (2*l) & "\thinspace" & txt),origin+(tmp200,lblht));
+  		 		label.top(thTEX(decimal (scal160)),origin+(tmp160,lblht));
+  		 		label.top(thTEX(decimal (scal120)),origin+(tmp120,lblht));
   		 		label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
-  		 		label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
   		 		label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
-  		 		label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
   		 		label.top(thTEX(decimal (0)),origin+(0,lblht));
-  		 		label.bot(thTEX("PLAN 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+  		 		#label.bot(thTEX("PLAN 1 : " & decimal round(Scale*100)),(tmp80+scal10,-2lblht));
   		 	endgroup
   		enddef; 
    endcode

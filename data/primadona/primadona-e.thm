@@ -4,6 +4,7 @@ map m-all-e -projection extended
 	m-hammerhead_branch-e
 	m-ttt_branch-e
 	m-karstaway_branch-e [-500 0 m ] none
+	m-smer0_branch-e [-500 0 m] none
 	m-fenestrator_branch-e [-500 0 m] none
 	m-below_manger-e
 	m-below_klic_globin-e
@@ -95,7 +96,7 @@ map m-below_klic_globin-e -projection extended
 	m-all-e@poseidon_rift
 	m-all-e@street-wise_hercules
 	m-all-e@hades
-	m-all-e@below_hades
+	m-all-e@deveti_krog
 endmap
 
 map  m-entrance-e -projection extended
@@ -110,7 +111,7 @@ map  m-entrance-e -projection extended
 	
 endmap
 
-map  m-fenestrator_branch-e -projection extended
+map m-smer0_branch-e -projection extended
 	m-all-e@smer0
 	m-all-e@smer1
 	m-all-e@galerija
@@ -122,10 +123,12 @@ map  m-fenestrator_branch-e -projection extended
 	m-all-e@forget_me_not
 	m-all-e@cattlegrid
 	m-all-e@the_stile
-	
-	m-all-e@plumbers_paradise
 	m-all-e@upotyn
 	m-all-e@mud_moses
+endmap
+
+map  m-fenestrator_branch-e -projection extended
+	m-all-e@plumbers_paradise
 	m-all-e@hallelujah
 	m-all-e@alabaster
 	m-all-e@beam_me_up

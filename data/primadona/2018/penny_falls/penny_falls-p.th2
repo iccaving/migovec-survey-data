@@ -146,7 +146,7 @@ point 321.0 -358.0 station -name "9"
 
 point 349.0 -441.0 station -name "8"
 
-line label -text "Penny Falls" -scale xl
+line u:label_MY -attr lvl 1 -attr text "Penny Falls" -scale m
   239.0 -855.0
   239.0 -855.0 556.0 -623.0 722.0 -371.0
 endline

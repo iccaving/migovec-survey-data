@@ -17,6 +17,23 @@ map m-all-p -projection plan -title "Primadona"
 	m-offsets-p
 endmap
 
+map m-all-no-offset-p -projection plan -title "Primadona"
+	m-entrance-p
+	m-galerija_branch-p
+	m-ttt_branch-p
+	m-hammerhead_branch-p
+	m-upside_down_area-p
+	m-hallelujah_branch-p
+	m-below_lumos-p  
+	m-pivnica-p 
+	m-below_cattlegrid-p
+	m-klic_globin_branch-p
+	m-old_slov_route-p
+	m-deep-p
+	
+endmap
+
+
 ## OFFSETS
 
 map m-offsets-p -projection plan
@@ -153,7 +170,7 @@ map m-deep-p -projection plan
 	m-all-p@poseidon_rift
 	m-all-p@street-wise_hercules
 	m-all-p@hades
-	m-all-p@below_hades
+	m-all-p@deveti_krog
 endmap
 
 ##### SUB-SUB MAPS ######

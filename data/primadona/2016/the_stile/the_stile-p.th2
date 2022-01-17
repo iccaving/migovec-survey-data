@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap the_stile-1p -scale [326.0 -735.0 530.0 -733.0 0.0 0.0 14 0.0 m]
 
-point 556.0 463.0 label -text "The Stile" -align r
+point 556.0 463.0 u:label_MY -attr lvl 3 -attr text "The Stile" -align r
 line floor-step 
   546.8526 732.8121
   546.8526 732.8121 551.2263 764.6769 535.8194 767.9702

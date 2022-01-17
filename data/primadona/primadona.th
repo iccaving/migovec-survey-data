@@ -509,16 +509,16 @@ survey primadona -title "Primadona"
 	input "./2021/hades/hades.th"
 	input "./2021/glavobol/glavobol.th"
 	input "./2021/beam_me_up/beam_me_up.th"
-	input "./2021/below_hades/below_hades.th"
+	input "./2021/deveti_krog/deveti_krog.th"
 
 	equate 6@hades 0@street-wise_hercules
 	equate 1.5@glavobol 1@ma_je_vlazna
 	equate 1@hallelujah 0@beam_me_up
-	equate 43@below_hades 0@hades
+	equate 43@deveti_krog 0@hades
 
 	join hades-1s@hades street-wise_hercules-1s@street-wise_hercules
 	join hallelujah-1e@hallelujah beam_me_up-1s@beam_me_up
-	join hades-1s@hades below_hades-2e@below_hades
+	join hades-1s@hades deveti_krog-2e@deveti_krog
 	join glavobol-1e@glavobol ma_je_vlazna-1e@ma_je_vlazna
 endsurvey
 

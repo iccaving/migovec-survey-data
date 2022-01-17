@@ -34,8 +34,8 @@ line wall:invisible
 endline
 
 point 419.717 485.821 dig -scale xl
-point 283.483 576.681 entrance -align l -orientation 90.0 -scale xl
-point 248.795 580.617 u:label_MY -align l -attr text PRIMADONA -attr style 6 -attr lvl 1
+point 283.483 526.681 entrance -align l -orientation 90.0 -scale xl
+point 248.795 520.617 u:label_MY -align l -attr text PRIMADONA -attr style 6 -attr lvl 1
 point 577.481 387.731 u:label_MY -align r -attr text "M+" -attr lvl 1
 line wall -subtype invisible
   329.0563 565.9603
@@ -43,7 +43,11 @@ line wall -subtype invisible
 endline
 
 point 538.5 213.75 u:label_MY -align t -scale s -attr text "Spiral Climb" -attr lvl 2
-point 689.5 119.25 u:label_MY -align bl -scale s -attr text "Lost and Found" -attr lvl 2
+point 679.5 139.25 u:label_MY -align tl -scale s -attr text "Lost and" -attr lvl 2
+
+point 679.5 129.25 u:label_MY -align bl -scale s -attr text "Found" -attr lvl 2
+
+
 point 309.0 560.75 station -name 35
 point 319.25 561.5 station -name 34
 point 384.25 500.75 station -name 33

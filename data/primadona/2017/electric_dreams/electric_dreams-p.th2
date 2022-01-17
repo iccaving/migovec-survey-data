@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 973.000000 918.250000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap electric_dreams-1p -projection plan -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
 
 line pit 
@@ -134,7 +133,7 @@ point 512.25 477.75 passage-height -align t -value 3
 point 479.5 459.0 passage-height -align t -value 4
 point 560.5 496.75 passage-height -align t -value 3
 point 620.0 494.25 passage-height -align t -value 30
-point 611.7677 516.9428 passage-height -align t -value 30
+point 611.768 516.943 passage-height -align t -value 30
 line wall 
   602.1647 467.9789
   603.3833 468.6244 604.3677 472.2709 604.9762 471.8285
@@ -192,23 +191,24 @@ line wall
   651.0669 520.9426 651.1492 519.1667 652.2646 521.1184
 endline
 
-point 656.1143 509.271 station -name 6
-point 596.1864 509.271 station -name 5
-point 515.2242 484.5326 station -name 4
-point 507.882 460.4556 station -name 3
-point 466.4087 459.728 station -name 2
-point 459.728 462.8368 station -name 1
+point 656.114 509.271 station -name 6
+point 596.186 509.271 station -name 5
+point 515.224 484.533 station -name 4
+point 507.882 460.456 station -name 3
+point 466.409 459.728 station -name 2
+point 459.728 462.837 station -name 1
 endscrap
 
 
 scrap electric_dreams-3p -projection plan -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
 
-point 721.7601 559.8018 u:label_MY -align br -attr lvl 2 -attr text "Electric Dreams"
-point 681.6465 605.9098 station -name 11
-point 689.3194 518.0023 station -name 10
-point 703.673 506.7575 station -name 9
-point 703.673 506.7575 station -name 8
-point 658.1143 509.021 station -name 7
+point 605.7601 429.8018 u:label_MY -align br -attr lvl 2 -attr text "Electric Dreams"
+
+point 681.646 605.91 station -name 11
+point 689.319 518.002 station -name 10
+point 703.673 506.757 station -name 9
+point 703.673 506.757 station -name 8
+point 658.114 509.021 station -name 7
 line wall 
   671.5 610.0
   671.5 610.0 673.25 608.75 674.75 604.5
@@ -487,20 +487,20 @@ line wall
   671.5 623.0 671.5 610.0 671.5 610.0
 endline
 
-point 783.3784 713.9109 station -name 20
+point 783.378 713.911 station -name 20
 point 818.634 719.151 station -name 25
 point 818.634 719.151 station -name 24
-point 822.272 736.3489 station -name 23
-point 816.6496 731.0572 station -name 22
-point 803.0236 713.6609 station -name 21
-point 783.3784 713.6609 station -name 19
-point 763.8654 689.5839 station -name 18
-point 747.1306 713.3964 station -name 17
-point 709.163 714.7193 station -name 16
-point 673.3783 733.7692 station -name 15
-point 644.1419 736.3489 station -name 14
-point 651.1533 686.7397 station -name 13
-point 673.3121 636.7998 station -name 12
-point 681.6465 605.9098 station -name 11
+point 822.272 736.349 station -name 23
+point 816.65 731.057 station -name 22
+point 803.024 713.661 station -name 21
+point 783.378 713.661 station -name 19
+point 763.865 689.584 station -name 18
+point 747.131 713.396 station -name 17
+point 709.163 714.719 station -name 16
+point 673.378 733.769 station -name 15
+point 644.142 736.349 station -name 14
+point 651.153 686.74 station -name 13
+point 673.312 636.8 station -name 12
+point 681.646 605.91 station -name 11
 endscrap
 

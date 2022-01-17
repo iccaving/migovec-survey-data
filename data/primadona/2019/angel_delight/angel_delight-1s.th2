@@ -4,7 +4,8 @@ encoding  utf-8
 
 scrap angel_delight-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 
-point 3062.9332 1145.0874 label -text "Angel<br>Delight" -align l
+point 3062.9332 1145.0874 u:label_MY -attr text "Angel Delight" -align l -attr lvl 2
+
 line wall 
   3302.953 1458.23
   3289.463 1450.12 3271.883 1450.84 3256.753 1450.92

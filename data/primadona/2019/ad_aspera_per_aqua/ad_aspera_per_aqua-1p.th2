@@ -1848,8 +1848,8 @@ line pit
 endline
 
 
-point 780 5800 label -text "Ad Aspera Per Aqua" -align l
-line label -text "Ad Aspera Per Aqua" -scale xl
+point 780 5800 u:label_MY -attr lvl 1 -attr text "Ad Aspera Per Aqua" -align l
+line u:label_MY -attr lvl 2 -attr text "Ad Aspera Per Aqua" -scale m
   782.8 5818.4
   782.8 5818.4 970.8 7374.4 1350.8 8758.4
 endline

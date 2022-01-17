@@ -1,9 +1,9 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {-1309.310000 1 1.0} {761.924000 0} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2021/below_hades/below_hades-1s.xvi" 0 {}
+##XTHERION## xth_me_image_insert {-1309.310000 1 1.0} {761.924000 0} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2021/deveti_krog/deveti_krog-1s.xvi" 0 {}
 
-scrap DELETE-ME-survey-legs-below_hades-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+scrap DELETE-ME-survey-legs-deveti_krog-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 line survey 
   -1310.14 761.3
@@ -2732,7 +2732,7 @@ point 1185.39 590.83 station-name -align tr -scale xs -text 43
 endscrap
 
 
-scrap below_hades-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+scrap deveti_krog-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 line wall 
   1619.1115 300.6445
@@ -2966,7 +2966,10 @@ point 1620.64 281.38 station -name 34
 endscrap
 
 
-scrap below_hades-2e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+scrap deveti_krog-2e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+point -818.9375 738.4221 u:label_MY -align t -attr text "Deveti Krog" -attr lvl 1
+
 
 point 1118.9375 538.4221 u:label_MY -align tl -attr text Hades -attr lvl 1
 point 1489.0 206.156 water-flow -orientation 181.83854210186146

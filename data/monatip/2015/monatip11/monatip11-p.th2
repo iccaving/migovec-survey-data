@@ -263,6 +263,8 @@ endscrap
 
 scrap monatip11-4p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
+point 952.9194 516.2716 u:label_MY -align bl -attr text "Pravokotni svet" -attr lvl 2
+point 408.8404 -38.8212 u:label_MY -align bl -attr text "Vzporedni svet" -attr lvl 2
 line wall 
   1001.5625 989.34
   1001.5625 989.34 991.3771 992.0562 982.5498 998.8464

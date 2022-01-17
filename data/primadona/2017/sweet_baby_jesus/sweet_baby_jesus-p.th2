@@ -212,7 +212,7 @@ point 259.0 856.0 station -name 24
 point 240.0 896.0 station -name 23
 point 254.0 908.0 station -name 21
 point 293.0 848.0 station -name 20
-point 599.0 458.5 label -text "Sweet Baby Jesus" -align tr -scale l
+point 599.0 458.5 u:label_MY -attr lvl 1 -attr text "Sweet Baby Jesus" -align tr -scale l
 point 328.0 817.0 station -name 19
 point 393.0 775.0 station -name 16
 line wall 

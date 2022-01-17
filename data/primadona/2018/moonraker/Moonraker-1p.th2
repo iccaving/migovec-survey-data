@@ -873,7 +873,7 @@ line wall
   696.0 1504.0
 endline
 
-point 138.0 1260.0 label -text Moonraker -align l
+point 138.0 1260.0 u:label_MY -attr lvl 1 -attr text Moonraker -align l
 line wall -subtype unsurveyed
   640.0 1372.0
   640.0 1372.0 668.7969 1262.5199 684.0 1208.0
@@ -980,7 +980,7 @@ point 1322.0 1510.0 crystal -scale xs
 point 1304.0 1606.0 crystal -scale xs
 point 1258.0 1710.0 crystal -scale xs
 point 1212.0 1786.0 crystal -scale xs
-line label -text Moonraker -scale xl
+line u:label_MY -attr lvl 1 -attr text Moonraker -scale xl
   1618.0 136.0
   1618.0 136.0 2364.0 692.0 2720.0 1456.0
 endline
