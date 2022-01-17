@@ -1,0 +1,10 @@
+encoding  utf-8
+survey planja -title "Planja"
+	
+	input "planja-p.thm"
+	input "planja-e.thm"
+	
+	###__________2021____________###
+	input ./2021/planja_jama/planja_jama.th
+	
+endsurvey

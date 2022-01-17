@@ -13,10 +13,10 @@ encoding  utf-8
 survey plateau -title "Migovec Plateau"
 	
 	# input the individual cave data files
-
+	
 	# first the connected caves of System Migovec
-	input "./system_migovec.th"	
-
+	input "./system_migovec.th"
+	
 	# other caves
 	input "./gondolin/gondolin.th"
 	input "./planika_resurvey_2019/planika.th"
@@ -30,11 +30,11 @@ survey plateau -title "Migovec Plateau"
 	input "./mugo/mugo.th"
 	input "./bertipot/bertipot.th"
 	input "./coincidence/coincidence.th"
-	input "./planja_jama/planja_jama.th"
+	input "./planja/planja.th"
 	input "./brezno_pod_vrhom_planje/brezno_pod_vrhom_planje.th"
-
-	equate S8@planja_jama 0@brezno_planja_ent.brezno_pod_vrhom_planje
-
+	
+	equate S8@planja 0@brezno_planja_ent.brezno_pod_vrhom_planje
+	
 	map m-all-p -projection plan
 		m-all-p@gondolin
 		m-all-p@planika

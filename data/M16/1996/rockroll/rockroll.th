@@ -1,4 +1,3 @@
-
 survey rockroll -title "Rock&Roll"
 	
 	input "rockroll-p.th2"
@@ -11,13 +10,13 @@ survey rockroll -title "Rock&Roll"
 		rockroll-3p
 	endmap
 	
-
-input rockroll-e.th2
-
-map m-all-e -projection extended
-    rockroll-1e
-endmap
-
+	
+	input rockroll-e.th2
+	
+	map m-all-e -projection extended
+		rockroll-1e
+	endmap
+	
 	centreline
 		team "Andy Atkinson" insts
 		team "James Hooper" notes
@@ -29,7 +28,7 @@ endmap
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino
-		1  0   20.32   339 39  # Stn.0 is cairn on rock on big ledge near base of Mig Country
+		1	0   20.32   339 39  # Stn.0 is cairn on rock on big ledge near base of Mig Country
 		1	2	9.50	280	-04.5	#Stn.1 is carbide mark on wall at bottom of Mig Country
 		3	2	4.39	066.5	40.5
 		3	4	2.95	037	-28

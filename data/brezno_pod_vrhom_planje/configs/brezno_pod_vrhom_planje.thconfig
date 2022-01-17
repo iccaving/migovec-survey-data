@@ -9,9 +9,9 @@ encoding  utf-8
 #----------------------------------------------------------------------------------|
 
 
-#-----------é-----------------------------------------------------------------------|
+#----------------------------------------------------------------------------------|
 # select a source data file.
-source "../planja_jama.th"
+source "../brezno_pod_vrhom_planje.th"
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
@@ -23,16 +23,25 @@ export model -o ../../../outputs/brezno_pod_vrhom_planje.3d
 input ../../../layouts/detailed-p.thl
 input ../../../layouts/detailed-e.thl
 
-
+source
+	map localmap-p -projection plan
+		m-all-p@brezno_pod_vrhom_planje
+	endmap
+	
+	map localmap-e -projection extended
+		m-all-e@brezno_pod_vrhom_planje
+		okna@brezno_pod_vrhom_planje
+		prazen_list@brezno_pod_vrhom_planje
+	endmap
+endsource
 #----------------------------------------------------------------------------------|
 # select a relevant map (which contains commands for offsets of overlying bits)
 #select m-all-e@brezno_pod_vrhom_planje
 
-
+select localmap-p
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
-select m-all-p@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
@@ -43,16 +52,16 @@ layout local
 	scale 1 200
 	symbol-show point label
 	symbol-show point gradient
-
+	
 	map-comment "Vrh Planja<br>Cadastral Number: XXXX<br>Length: XX m, Depth: XX m<br>Entrance elevation: 1868 m<br>Coordinates (lat-long):  46.264686\°N / 13.752099\°E"
-
+	
 	code tex-map
 		\def\maplayout{
-		\legendbox{-10}{135}{SW}{\size[26]\the\cavename}
-		\legendbox{-10}{130}{NW}{\size[10]\the\comment}
-		\legendbox{-15}{20}{N}{\scalebar}
-		\legendbox{-15}{25}{S}{\northarrow}
-	}
+		\legendbox{0}{-5}{SW}{\size[26]\the\cavename}
+		%\legendbox{-10}{130}{NW}{\size[10]\the\comment}
+		\legendbox{15}{20}{N}{\scalebar}
+		\legendbox{15}{25}{S}{\northarrow}
+		}
 	endcode
 endlayout
 
@@ -60,6 +69,7 @@ endlayout
 # export the pdf map containing plan
 export map -o ../../../outputs/brezno_pod_vrhom_planje_plan.pdf -projection plan -layout local
 
+select localmap-e
 
 #----------------------------------------------------------------------------------|
 # define a local layout without legend or header for extended elevation
