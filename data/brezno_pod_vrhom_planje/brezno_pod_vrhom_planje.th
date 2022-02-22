@@ -1,7 +1,7 @@
 survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"
 	
-	input brezno_pod_vrhom_planje-e.th
-	input brezno_pod_vrhom_planje-p.th
+	input brezno_pod_vrhom_planje-e.thm
+	input brezno_pod_vrhom_planje-p.thm
 	
 	centreline
 		cs epsg:3794
@@ -15,4 +15,6 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"
 	
 	equate 10@okna 35@brezno_planja_ent
 	equate 18@prazen_list 35@brezno_planja_ent
+
+	join prazen_list-1e@prazen_list brezno_planja_ent-2e@brezno_planja_ent
 endsurvey

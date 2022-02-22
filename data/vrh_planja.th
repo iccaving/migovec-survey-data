@@ -1,15 +1,15 @@
-survey vrh_planja
+survey vrh_planja -title "Vrh Planja"
 	input planja_jama/planja_jama.th
 	input brezno_pod_vrhom_planje/brezno_pod_vrhom_planje.th
 
 	map m-all-p -projection plan
 		m-all-p@brezno_pod_vrhom_planje
-		m-all-p@planja_jama 
+		m-all-p@planja_jama
 	endmap
 
 	map m-all-e -projection extended
 		m-all-e@brezno_pod_vrhom_planje
-		m-all-e@planja_jama [15 0 m] none
+		m-all-e@planja_jama [115 0 m] none
 	endmap
 
 endsurvey

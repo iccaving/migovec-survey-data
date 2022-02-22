@@ -30,8 +30,6 @@ source
 	
 	map localmap-e -projection extended
 		m-all-e@brezno_pod_vrhom_planje
-		okna@brezno_pod_vrhom_planje
-		prazen_list@brezno_pod_vrhom_planje
 	endmap
 endsource
 #----------------------------------------------------------------------------------|
@@ -90,4 +88,4 @@ select m-all-e@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e
+export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e 

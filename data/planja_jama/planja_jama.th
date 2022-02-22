@@ -24,8 +24,8 @@ survey planja_jama -title "planja jama"
 		team "Tanguy Racine"
 		team "Chloe Snowling"
 		
-		cs epsg:3794
-		fix 0 404188 125289 0 #1897
+		#cs epsg:3794
+		#fix 0 404188 125289 0 #1897
 		
 		units length meters
 		units compass clino degrees
@@ -654,3 +654,4 @@ survey planja_jama -title "planja jama"
 	endcenterline
 	
 endsurvey
+
