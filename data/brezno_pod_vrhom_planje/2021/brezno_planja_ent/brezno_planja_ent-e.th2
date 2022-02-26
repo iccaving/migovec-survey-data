@@ -1,7 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 2850.800000 2459.000000
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {-293.670000 1 1.0} {-293.720000 0} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/brezno_pod_vrhom_planje/brezno_planja_ent/brezno_planja_ent-1s.xvi" 0 {}
 
 scrap brezno_planja_ent-1e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
@@ -13,6 +12,7 @@ line rock-border -clip off -close on
   2733.6486 2043.4813 2761.5219 2043.4813 2761.5219 2043.4813
   2768.7483 2064.1282
   2767.7159 2071.8708
+  2762.038 2082.7104
 endline
 
 line rock-border -clip off -close on
@@ -24,6 +24,7 @@ line rock-border -clip off -close on
   2755.844 2093.55
   2755.844 2093.55 2780.1041 2100.2602 2781.6526 2102.3249
   2783.2011 2104.3896 2782.6849 2109.5513 2782.6849 2109.5513
+  2770.813 2129.6821
 endline
 
 line wall:blocks -clip off -outline none
@@ -166,6 +167,7 @@ line rock-border -clip off -close on
   2304.69 2119.37
   2292.7 2114.5
   2281.48 2107.22
+  2267.93 2121.17
 endline
 
 line wall 
@@ -1899,6 +1901,8 @@ endscrap
 
 scrap brezno_planja_ent-3e -projection extended -scale [0 0 96 0 0 0 1000 0 inch]
 
+point 2493.8522 1812.5969 label -align br -text "Entrance Chamber"
+point 1353.8523 1732.5969 label -align tl -text "South Chamber"
 point 1303.68 1632.99 station-name -align l -scale xs -text 7
 point 1425.93 1711.29 station-name -align tl -scale xs -text 6
 point 1619.11 1749.58 station-name -align tl -scale xs -text 5
@@ -1916,7 +1920,6 @@ line u:texture_MY
   1836.94 1715.0707
 endline
 
-point 1445.45 1866.95 label -align tr -scale s -text "SOUTH CHAMBER"
 line wall 
   2159.47 1898.35
   2153.44 1889.0
@@ -2070,6 +2073,7 @@ line wall -close on -outline in
   1756.26 1749.38
   1764.19 1748.59
   1772.96 1749.5
+  1789.655 1750.485
 endline
 
 line wall:blocks 
@@ -2202,6 +2206,7 @@ line rock-border -close on
   1427.14 1695.72
   1422.79 1680.93
   1421.25 1664.74
+  1454.3 1669.49
 endline
 
 line rock-border -close on
@@ -2212,6 +2217,7 @@ line rock-border -close on
   1614.75 1730.19
   1617.47 1722.55
   1626.97 1721.41
+  1632.84 1723.41
 endline
 
 line rock-border -close on
@@ -2231,6 +2237,7 @@ line rock-border -close on
   2024.5 1587.18
   2037.96 1581.88
   2053.74 1574.28
+  2092.41 1579.09
 endline
 
 point 2065.7 1613.29 station -name 3
@@ -2269,6 +2276,7 @@ line wall -close on -outline in
   568.5632 440.3281
   585.7416 439.9091
   587.8366 452.0597
+  588.6745 462.5344
 endline
 
 line u:texture_MY 
@@ -2551,6 +2559,7 @@ line rock-border -close on
   2079.87 534.14
   2079.5987 522.3792
   2082.92 514.52
+  2105.37 506.12
 endline
 
 line rock-border -close on
@@ -2561,6 +2570,7 @@ line rock-border -close on
   2063.08 521.71
   2070.4442 524.8855
   2076.1039 529.0755
+  2074.79 545.24
 endline
 
 line rock-border -close on
@@ -2572,6 +2582,7 @@ line rock-border -close on
   2019.99 587.23
   2009.76 579.71
   2014.17 567.14
+  2027.57 557.64
 endline
 
 line wall 

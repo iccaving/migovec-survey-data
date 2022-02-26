@@ -26,19 +26,23 @@ survey system_migovec -title "System Migovec"
 
 		#M2
 		station 16@izent1.M2.m2m16m18 entrance
-		fix 16@izent1.M2.m2m16m18 405070 123937 1858
+		fix 16@izent1.M2.m2m16m18 404702 124429 1858
+		#fix 16@izent1.M2.m2m16m18 405070 123937 1858
 
 		#M16
 		station 1@entrance.M16.m2m16m18 entrance
-		fix 1@entrance.M16.m2m16m18 405073 123841 1852
+		fix 1@entrance.M16.m2m16m18 404697 124331 1852
+		#fix 1@entrance.M16.m2m16m18 405073 123841 1852  # old GK? 
 
 		#Primadona
 		station 35@prima1.primadona.primadona_ubend_monatip entrance
-		fix 35@prima1.primadona.primadona_ubend_monatip 404561 123804 1727
+		fix 35@prima1.primadona.primadona_ubend_monatip 404188 124291 1727
+		#fix 35@prima1.primadona.primadona_ubend_monatip 404561 123804 1727 # old GK? 
 
 		#Vrtnarija
 		station 0@bclent2.vrtnarija.vrtnarija_vilinska entrance
-		fix 0@bclent2.vrtnarija.vrtnarija_vilinska 405134 124013 1798
+		fix 0@bclent2.vrtnarija.vrtnarija_vilinska 404764 124501 1798
+		#fix 0@bclent2.vrtnarija.vrtnarija_vilinska 405134 124013 1798
 
 		### other entrances not fixed, survey points
 		#Monatip
@@ -57,9 +61,9 @@ survey system_migovec -title "System Migovec"
 
 		#M18
 		station 26@torn.M18.m2m16m18 entrance
-		#fix 26@torn.M18.m2m16m18 404681 124458 1840
+		fix 26@torn.M18.m2m16m18 404682 124454 1847
 
-		fix 1@sifon.M16.m2m16m18 404541.08 123649.76 892.67
+		fix 1@sifon.M16.m2m16m18 404174.93 124162.49 892.67
 
 	endcentreline
 	

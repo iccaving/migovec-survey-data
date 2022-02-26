@@ -1,0 +1,91 @@
+encoding  utf-8
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                                                                                  |
+#                      A SMALL CAVE OF THE MIGOVEC PLATEAU                         |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../planja_jama.th"
+
+#----------------------------------------------------------------------------------|
+# export a model openable in Loch and one in Aven
+export model -o ../../../outputs/planja_jama.lox
+export model -o ../../../outputs/planja_jama.3d
+
+#----------------------------------------------------------------------------------|
+# select a relevant layout definition file
+input ../../../layouts/detailed-p.thl
+input ../../../layouts/detailed-e.thl
+
+source
+	map localmap-p -projection plan
+		m-all-p@planja_jama
+	endmap
+	
+	map localmap-e -projection extended
+		m-all-e@planja_jama
+	endmap
+endsource
+#----------------------------------------------------------------------------------|
+# select a relevant map (which contains commands for offsets of overlying bits)
+#select m-all-e@planja_jama
+
+select localmap-p
+
+#----------------------------------------------------------------------------------|
+# select a relevant map definition for plan view
+
+#----------------------------------------------------------------------------------|
+# define a local layout with legend, header and elevation map produced above
+layout local
+	copy detailed-p
+	legend off
+	map-header 0 0 off
+	scale 1 200
+	symbol-show point label
+	symbol-show point gradient
+	
+	map-comment "Vrh Planja<br>Cadastral Number: XXXX<br>Length: XX m, Depth: XX m<br>Entrance elevation: 1868 m<br>Coordinates (lat-long):  46.264686\°N / 13.752099\°E"
+	
+	code tex-map
+		\def\maplayout{
+		\legendbox{0}{-5}{SW}{\size[26]\the\cavename}
+		%\legendbox{-10}{130}{NW}{\size[10]\the\comment}
+		\legendbox{15}{20}{N}{\scalebar}
+		\legendbox{15}{25}{S}{\northarrow}
+		}
+	endcode
+endlayout
+
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+export map -o ../../../outputs/planja_jama_plan.pdf -projection plan -layout local
+
+select localmap-e
+
+#----------------------------------------------------------------------------------|
+# define a local layout without legend or header for extended elevation
+layout local-e
+	copy detailed-e
+	legend off
+	map-header 0 0 off
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show area snow
+	scale 1 400
+	#map-image -5 110  ne ../_outputs/planja_jama_plan.pdf
+endlayout
+
+
+# select a relevant map definition for plan view
+select m-all-e@planja_jama
+
+#----------------------------------------------------------------------------------|
+# export the pdf map in elevation view
+export map -o ../../../outputs/planja_jama_ee.pdf -projection extended -layout local-e 

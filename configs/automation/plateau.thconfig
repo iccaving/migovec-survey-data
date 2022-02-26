@@ -5,4 +5,4 @@ export model -o ../../outputs/plateau.3d
 
 select m-all-p@plateau -map-level 1
 
-export map -o ../../plateau -fmt esri
+export map -o ../../outputs/plateau -fmt esri

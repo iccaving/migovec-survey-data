@@ -5,7 +5,8 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"
 	
 	centreline
 		cs epsg:3794
-		fix 0@brezno_planja_ent 404177 125263 0 #1877
+		fix 0@brezno_planja_ent 403804 125750 0 #1877
+		#fix 0@brezno_planja_ent 404177 125263 1877  # GK fix
 	endcentreline
 	
 	###__________2021____________###
@@ -13,7 +14,8 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"
 	input "./2021/okna/okna.th"
 	input "./2021/prazen_list/prazen_list.th"
 	
-	equate 10@okna 35@brezno_planja_ent
+	#equate 10@okna 35@brezno_planja_ent
+	equate 5@okna 14@prazen_list
 	equate 18@prazen_list 35@brezno_planja_ent
 
 	join prazen_list-1e@prazen_list brezno_planja_ent-2e@brezno_planja_ent

@@ -1,0 +1,109 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-okna-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line survey 
+  223.9 553.15
+  261.69 540.16
+endline
+
+line survey 
+  261.69 540.16
+  257.52 545.12
+endline
+
+line survey 
+  257.52 545.12
+  242.32 523.54
+endline
+
+line survey 
+  242.32 523.54
+  232.48 522.13
+endline
+
+line survey 
+  232.48 522.13
+  241.77 504.65
+endline
+
+line survey 
+  241.77 504.65
+  249.96 458.27
+endline
+
+line survey 
+  249.96 458.27
+  276.1 458.27
+endline
+
+line survey 
+  276.1 458.27
+  256.57 447.4
+endline
+
+line survey 
+  256.57 447.4
+  240.59 446.85
+endline
+
+line survey 
+  248.31 512.2
+  245.39 523.23
+endline
+
+line survey 
+  245.39 523.23
+  232.48 522.13
+endline
+
+point 223.9 553.15 station-name -align tr -scale xs -text 1
+point 261.69 540.16 station-name -align tr -scale xs -text 2
+point 257.52 545.12 station-name -align tr -scale xs -text 3
+point 242.32 523.54 station-name -align tr -scale xs -text 4
+point 241.77 504.65 station-name -align tr -scale xs -text 6
+point 249.96 458.27 station-name -align tr -scale xs -text 7
+point 276.1 458.27 station-name -align tr -scale xs -text 8
+point 256.57 447.4 station-name -align tr -scale xs -text 9
+point 240.59 446.85 station-name -align tr -scale xs -text 10
+endscrap
+
+
+scrap okna-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+point 322.8625 539.4689 label -align tl -text "<bf>p9"
+line border -close on -id okna-1p_u_smallblocks_MY_1 -visibility off
+  336.9648 547.447
+  325.5316 538.2753
+  325.9982 533.4353
+  329.6777 527.8472
+  336.211 528.0985
+  353.5492 536.2651
+  350.5339 547.447
+  340.2314 548.9547
+  336.9648 547.447
+  336.9648 547.447
+endline
+
+area u:smallblocks_MY -attr scale 0.9
+  okna-1p_u_smallblocks_MY_1
+endarea
+
+line wall 
+  324.6521 535.5112
+  324.6521 535.5112 323.7633 532.9523 324.6524 530.6826
+  325.3836 528.8162 327.8866 527.2268 328.17 526.7165
+  328.5602 526.0143 332.5555 526.1301 336.3753 527.5218
+  338.7065 528.3711 341.0512 530.6417 342.2416 530.7369
+  345.3826 530.9882 353.4235 533.8779 353.8005 536.5164
+  354.1774 539.1548 353.5492 547.3213 350.1569 548.4521
+  346.7647 549.5829 334.8289 546.5675 334.8289 546.5675
+endline
+
+point 332.0858 544.0243 station -name 13
+point 347.9158 534.0943 station -name 11
+point 344.9958 545.1243 station -name 12
+endscrap
+

@@ -1,0 +1,60 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-okna-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line survey 
+  248.04 513.07
+  258.01 510.79
+endline
+
+line survey 
+  258.01 510.79
+  277.83 535.28
+endline
+
+line survey 
+  282.38 440.63
+  270.95 486.46
+endline
+
+line survey 
+  270.95 486.46
+  258.01 510.79
+endline
+
+endscrap
+
+
+scrap okna-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line wall:blocks 
+  273.2406 439.4932
+  291.1622 439.4932
+endline
+
+line wall 
+  290.9025 439.2335
+  290.9025 439.2335 288.5649 455.0773 287.7857 458.9733
+  287.0065 462.8693 283.6299 481.3105 282.3313 484.4273
+  281.0326 487.5441 276.3574 495.8556 275.0587 498.4529
+  273.76 501.0503 270.3835 511.1799 270.3835 511.1799
+endline
+
+line wall 
+  255.3189 502.6087
+  255.8384 498.1932 263.1109 483.6481 263.1109 483.6481
+  268.0459 472.4795
+  268.0459 472.4795 273.2406 453.7786 273.5003 451.1813
+  273.76 448.5839 273.2406 439.753 273.2406 439.753
+endline
+
+point 258.01 510.79 station-name -align tr -scale xs -text 13
+point 282.38 440.63 station-name -align tr -scale xs -text 11
+point 270.95 486.46 station-name -align tr -scale xs -text 12
+point 258.01 510.79 station -name 13
+point 282.38 440.63 station -name 11
+point 270.95 486.46 station -name 12
+endscrap
+
