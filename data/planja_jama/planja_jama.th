@@ -1,6 +1,6 @@
 # 2021.08.03 created by TopoDroid v 5.1.40
 
-survey planja_jama -title "Planja jama"
+survey planja_jama -title "Planja jama" -entrance 0
 	# cave above pitch of Vrh Planja
 	
 	input planja_jama-1p.th2
@@ -18,15 +18,15 @@ survey planja_jama -title "Planja jama"
 		break
 		planja_jama-1e
 	endmap
-	
+
+
+
 	centerline
 		date 2021.08.03
 		team "Tanguy Racine"
 		team "Chloe Snowling"
 		
-		cs epsg:3794
-		fix 0 403819 125777 0 #1897
-		#fix 0 404188 125289 1897
+
 		
 		units length meters
 		units compass clino degrees

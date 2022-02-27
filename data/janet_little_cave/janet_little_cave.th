@@ -1,6 +1,6 @@
 # 2019.07.30 created by TopoDroid v 4.1.3u
 
-survey janet_little_cave -title "Janet's little cave"
+survey janet_little_cave -title "Janet's little cave" -entrance 5
 	# cave near kuk
 	
 	input "janet_little_cave-1p.th2"
@@ -69,8 +69,7 @@ survey janet_little_cave -title "Janet's little cave"
 	endmap
 	
 	centerline
-		cs epsg:3794 #fix in new slovenian
-		fix 0 404465 124680 1885
+		
 		date 2019.07.24
 		explo-date 2000.08
 		

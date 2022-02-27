@@ -1,6 +1,6 @@
 # 2020.07.15 created by TopoDroid v 5.0.4c
 
-survey M10 -title "M10"
+survey M10 -title "M10" -entrance 14 -attr cadastral_n 4626
     # snow pit 
 
    input "M10-1p.th2"
@@ -31,8 +31,7 @@ survey M10 -title "M10"
     date 2020.07.09 
     team "Tanguy Racine"
 
-    cs epsg:3794
-    fix 14 404597 124280 1862
+    
     mark 14 fixed
     station 14 entrance
     units length meters

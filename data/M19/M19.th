@@ -1,7 +1,7 @@
 encoding  utf-8
 # 2018.10.06 created by TopoDroid v 4.1.0c
 
-survey M19 -title "M19"
+survey M19 -title "M19" -entrance 25 -attr cadastral_n 8285
 	# shake hole near M17
 	
 	centerline
@@ -445,8 +445,7 @@ survey M19 -title "M19"
 		extend left
 		24 25 5.64 215.5 56.2
 		
-		cs epsg:3794
-		fix 25 404405 124443 1850 
+
 	endcenterline
 	
 	input "M19-15p.th2"

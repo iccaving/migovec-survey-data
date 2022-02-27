@@ -1,6 +1,6 @@
 # 2020.08.11 created by TopoDroid v 5.0.5c
 
-survey mugo -title "Mugo"
+survey mugo -title "Mugo" -entrance 0 -attr cadastral_n 14025
     # cave under Gondolin West cliff of Migovec Plateau 
 
    input "mugo-1p.th2"
@@ -51,8 +51,7 @@ survey mugo -title "Mugo"
 
   centerline
 
-    cs epsg:3794
-    fix 7 404140 124443 1698
+
 
     mark 7 6 3 fixed
     

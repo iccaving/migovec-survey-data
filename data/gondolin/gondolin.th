@@ -1,5 +1,5 @@
 encoding  utf-8
-survey gondolin -title "Gondolin"
+survey gondolin -title "Gondolin" -entrance 16 -attr cadastral_n 13636
 	
 	input "gondolin-p.th2"
 	input "gondolin-e.th2"
@@ -48,12 +48,7 @@ survey gondolin -title "Gondolin"
 	endmap
 	
 	centreline
-		cs epsg:3794 # UTM 33T
-		fix bcairn 404343 124264 1863
-	endcentreline
-	
-	centreline
-		#fix station 16 entrance
+
 		mark 1 16 9 fixed
 		date 2017.07.17
 		explo-date 2017.07.17

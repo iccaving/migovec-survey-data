@@ -1,5 +1,5 @@
 
-survey M1 -title "M1 repush, resurvey 2007"
+survey M1 -title "M1 repush, resurvey 2007" -entrance 1 -attr cadastral_n 4621
 
 
 input M1-p.th2
@@ -22,8 +22,7 @@ centreline
     explo-team "Richard Venn"
     explo-team "Jutta Schnabel"
 
-    cs epsg:3794
-    fix 1 404650 124351 1855
+
     date 2007.8.3
     units length meters
     units compass clino degrees

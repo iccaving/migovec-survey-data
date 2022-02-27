@@ -1,4 +1,4 @@
-survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
+survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 1@entrance
 	
 	input M16-e.thm
 	input M16-p.thm
@@ -377,7 +377,12 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001
 	join carwash-1e@carwash oratory-1e@oratory
 	join carwash-3p@carwash oratory-1p@oratory
 	
+	###__________2017____________###
 	
+	input ./2017/death_by_a_1000_blows/death_by_a_1000_blows.th
+	
+	equate 9@death_by_a_1000_blows 33@brezno
+
 	# UNSORTED EQUATES
 	
 	#equate 8@silos.m18 24@JSPDT.m2

@@ -1,6 +1,6 @@
 # 2020.08.11 created by TopoDroid v 5.0.5c
 
-survey bertipot -title "Bertijeva jama"
+survey bertipot -title "Bertijeva jama" -entrance 10 -attr cadastral_n 14024
     # cave on Planja 
 
    input "bertipot-AVENCHAMBERp.th2"
@@ -54,10 +54,7 @@ survey bertipot -title "Bertijeva jama"
    endmap
 
   centerline
-    date 2020.08.07 
-
-    cs epsg:3794
-    fix 10 403706 125587 1749
+    date 2020.08.07     
     team "Tanguy Racine" insts dog notes
     team "Chloe Snowling" insts
 

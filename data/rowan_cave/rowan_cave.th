@@ -1,6 +1,6 @@
 # 2019.07.31 created by TopoDroid v 4.1.3u
 
-survey rowan_cave -title "<lang:en>Rowan Cave<lang:slo>Jerebika jama"
+survey rowan_cave -title "<lang:en>Rowan Cave<lang:slo>Jerebika jama" -entrance 0
 	# cave near kuk
 	
 	input "rowan_cave-1p.th2"
@@ -34,11 +34,10 @@ survey rowan_cave -title "<lang:en>Rowan Cave<lang:slo>Jerebika jama"
 	## map m3s -projection extended
 	##   rowan_cave-3s
 	## endmap
-	
-	centerline
-		cs epsg:3794
 
-		fix 0 404460 124948 1819
+	centerline
+		
+
 		explo-date 2019.07.20
 		date 2019.07.24
 		

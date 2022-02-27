@@ -15,13 +15,13 @@ source "../coincidence.th"
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
-export model -o ../_outputs/coincidence.lox
-export model -o ../_outputs/coincidence.3d
+export model -o ../outputs/coincidence.lox
+export model -o ../outputs/coincidence.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
-input ../../_layouts/detailed-p.thl
-input ../../_layouts/detailed-e.thl
+input ../../../layouts/detailed-p.thl
+input ../../../layouts/detailed-e.thl
 
 
 #----------------------------------------------------------------------------------|
@@ -175,7 +175,7 @@ layout local-e-slo
   		 enddef; 
 	endcode
 
-	#map-image -2 102 ne "../_outputs/coincidence_plan_EN.pdf"
+	#map-image -2 102 ne "../outputs/coincidence_plan_EN.pdf"
 endlayout
 
 layout local-e-en
@@ -204,10 +204,10 @@ endlayout
 # export the pdf map containing plan
 
 language sl
-export map -o ../_outputs/naključja_profil_SLO.pdf -projection extended -layout local-e-slo
-export map -o ../_outputs/naključja_tloris_SLO.pdf -projection plan -layout local-slo
+export map -o ../outputs/naključja_profil_SLO.pdf -projection extended -layout local-e-slo
+export map -o ../outputs/naključja_tloris_SLO.pdf -projection plan -layout local-slo
 
 language en
-export map -o ../_outputs/coincidence_EE_EN.pdf -projection extended -layout local-e-en
-export map -o ../_outputs/coincidence_plan_EN.pdf -projection plan -layout local-en
+export map -o ../outputs/coincidence_EE_EN.pdf -projection extended -layout local-e-en
+export map -o ../outputs/coincidence_plan_EN.pdf -projection plan -layout local-en
 

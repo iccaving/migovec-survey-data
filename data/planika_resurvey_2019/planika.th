@@ -1,6 +1,6 @@
 # 2019.06.20 created by TopoDroid v 4.1.2q
 
-survey planika -title "Planika Jama"
+survey planika -title "Planika Jama" -entrance 15 -attr cadastral_n 8953
 	
 	input "planika-1p.th2"
 	
@@ -274,8 +274,7 @@ survey planika -title "Planika Jama"
 		extend left
 		14 15 2.63 279.1 -6.8
 		
-		cs epsg:3794
-		fix 15 404230 124355 1787
+		
 	endcenterline
 	
 endsurvey

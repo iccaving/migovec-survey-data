@@ -44,7 +44,7 @@ survey plateau -title "Migovec Plateau"
 		m-all-p@M15
 		m-all-p@rowan_cave
 		m-all-p@bertipot
-		m-all-p@coincidence
+		m-all-p@coincidence_ent.coincidence
 		m-all-p@M10
 		m-all-p@M17
 		m-all-p@mugo
@@ -60,6 +60,59 @@ survey plateau -title "Migovec Plateau"
 		m-all-p@monatip.primadona_ubend_monatip.system_migovec
 		m-all-p@belladonna.primadona_ubend_monatip.system_migovec
 	endmap
+
+
+	# where all the actual geographic information should be?
+	# all entrances are given in EPSG:3794, the official Slovene coordinate system.
+
+	centreline -title entrances
+		cs epsg:3794
+		
+		# PLANJA JAMA
+		fix 0@planja_jama 403819 125777 1897
+		#fix 0 404188 125289 1897
+		
+		# BREZNO POD VRHOM PLANJE
+		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 403804 125750 1877
+		#fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 404177 125263 1877  # GK fix
+		
+		# COINCIDENCE
+	    fix 0@coincidence_ent.coincidence 404773 123067 1310
+		# GONDOLIN
+		fix bcairn@gondolin 404343 124264 1863
+
+		# BERTIJEVA JAMA
+		fix 10@bertipot 403706 125587 1749
+
+		# JANETS LITTLE CAVE
+		fix 0@janet_little_cave 404465 124680 1885
+
+		# M1
+        fix 1@M1 404650 124351 1855
+
+        # M10
+	    fix 14@M10 404597 124280 1862
+
+	    # M15
+    	fix 14@M15 404521 124474 1860
+
+    	# M17
+		fix 0@M17  404421 124503 1879
+
+		# M19
+		fix 25@M19 404405 124443 1850 
+
+		# MUGO
+    	fix 7@mugo 404140 124443 1698
+
+    	# PLANIKA 
+		fix 15@planika 404230 124355 1787
+
+		# ROWAN CAVE
+		fix 0@rowan_cave 404460 124948 1819
+
+
+	endcentreline
 	
 endsurvey
 
