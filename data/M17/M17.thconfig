@@ -1,0 +1,31 @@
+source M17.th
+
+input ../../layouts/detailed-p.thl
+input ../../layouts/detailed-e.thl
+
+
+layout local-p
+  copy detailed-p
+  scale 1 400
+  symbol-hide line label
+  symbol-color line border [0 70 90]
+  symbol-show point label
+  symbol-color line water-flow [0 70 90]
+  legend off
+endlayout
+
+select m-all-p@M17
+export map -o M17_plan.pdf -projection plan -layout local-p
+
+layout local-e
+  copy detailed-e
+  scale 1 400
+  symbol-hide line label
+  symbol-color line border [0 70 90]
+  symbol-show point label
+  symbol-color line water-flow [0 70 90]
+  legend off
+endlayout
+select m-all-e@M17
+
+export map -o M17_ee.pdf -projection extended -layout local-p

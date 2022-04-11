@@ -2,21 +2,26 @@
 
 survey M17 -title "M-17 (Frigidare)" -entrance 0 -attr cadastral_n 5878
 
-	input "scraps/M17-1p.th2"
 	input "scraps/M17-1s.th2"
-	input "scraps/M17-2p.th2"
 	input "scraps/M17-2s.th2"
-	input "scraps/M17-3p.th2"
+	#input "scraps/M17-3p.th2"
 	input "scraps/M17-3s.th2"
 	input "scraps/m17_deep-1p.th2"
    	input "scraps/m17_deep-1s.th2"
-	
+
+	input M17-1p.th2
+  input M17-2p.th2
+	input M17-4p.th2
+	input M17-3p.th2
+
+	input M17-e.th2
+
 	# MAP DEFINTIONS
-	map  m-all-e -projection extended
-		mm17-s
-		mm17_deep-s
-	endmap
 	
+	map  m-all-e -projection extended
+		m1s
+	endmap
+
 	map m-all-p -projection plan
 		m-M17only-p
 		m1p_underlay
@@ -35,37 +40,24 @@ survey M17 -title "M-17 (Frigidare)" -entrance 0 -attr cadastral_n 5878
 	map mM17-p1
 		M17-1p
 	endmap
-	
+
 	map mM17-p2
 		M17-2p
 	endmap
-	
+
 	map mM17-p3
 		M17-3p
 	endmap
-	
+
 	map mM17-p4
 		M17-4p
 	endmap
-	
+
 	map m1s -projection extended
-		M17-1s
+		M17-1e
 	endmap
-	
-	
-	map m2s -projection extended
-		M17-2s
-	endmap
-	
-	map m3s -projection extended
-		M17-3s
-	endmap
-	
-	map mm17-s -projection extended
-		m1s #[20 0 m] none
-		m2s
-		m3s
-	endmap
+
+
 
     map m1p_underlay -projection plan
 	   m17_deep-underlay
@@ -87,7 +79,7 @@ survey M17 -title "M-17 (Frigidare)" -entrance 0 -attr cadastral_n 5878
 		date 2018.10.19
 		team "Tanguy Racine" insts tape
 		team "Jana Čarga" notes
-		
+
 		# declination 0.00 degrees
 		units length meters
 		units compass clino degrees
@@ -321,13 +313,13 @@ survey M17 -title "M-17 (Frigidare)" -entrance 0 -attr cadastral_n 5878
 		extend left
 		21 22 8.17 278.1 78.1
 		22 0A 1.86 328.6 47.5
-		
+
 
 	endcenterline
 
 
 	centerline
-	  date 2019.06.19 
+	  date 2019.06.19
 	  team "Tanguy Racine"
 	  team "Charlotte Honiat"
 	  units length meters

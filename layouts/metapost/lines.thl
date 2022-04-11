@@ -1,7 +1,7 @@
 layout custom_lines
 
 
-	code metapost 
+	code metapost
 
 		## redefinitions of existing line styles
 
@@ -13,12 +13,12 @@ layout custom_lines
 		enddef;
 
 
-    	# red centreline	
+    	# red centreline
 		def l_survey_cave_MY (expr P) =
 		  T:=identity;
 		  draw P withpen PenD withcolor (0.7,0,0);
 		enddef;
-		
+
 		# wall debris
 		def l_wall_debris_MY (expr P)=
       		T:=identity;
@@ -34,10 +34,10 @@ layout custom_lines
       				t2 := arctime (cas + (8-0.5*normaldeviate)/10*mojkrok) of P;
       				t3 := arctime (cas + (6+0.5*normaldeviate)/10*mojkrok) of P;
       				sk := 1-.25*normaldeviate;
-      				q := (point t_0 of P + .02*sk*u * unitvector(thdir(P,t_0))) .. 
+      				q := (point t_0 of P + .02*sk*u * unitvector(thdir(P,t_0))) ..
       				((point t1 of P) - .06*sk*u * unitvector(thdir(P,t1) rotated (88+normaldeviate*2))) ..
       				((point t2 of P) + .03*sk*u * unitvector(thdir(P,t2) rotated (-20+normaldeviate*2))) .. ((point t3 of P) - .07*sk*u *unitvector(thdir(P,t3) rotated (-20+normaldeviate*2))) .. cycle;
-      
+
       				thclean q;
       				thfill q withcolor(0.7,0.3,0.2);
       				cas := cas + mojkrok;
@@ -45,11 +45,11 @@ layout custom_lines
       			endfor;
       		fi;
     	enddef;
-    	
 
-	
-		# grey rock borders 
-		def l_rockborder_MY (expr P) = 
+
+
+		# grey rock borders
+		def l_rockborder_MY (expr P) =
 		  T:=identity;
 		  pickup PenC;
 		  if cycle P: thclean P fi;
@@ -57,7 +57,7 @@ layout custom_lines
 		enddef;
 
 		# orange wall line with chevrons
-		def l_wall_flowstone_MY (expr P) = 
+		def l_wall_flowstone_MY (expr P) =
 		  T:=identity;
 		  cas := 0;
 		  dlzka := arclength P;
@@ -72,11 +72,11 @@ layout custom_lines
 		    cas := cas + mojkrok;
 		    exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
 		  endfor;
-		  pickup PenA;  
+		  pickup PenA;
 		  thdraw P withcolor(1,0.5,0.1);
 		enddef;
 
-		# extended view definition of wall blocks 
+		# extended view definition of wall blocks
 		 def l_wall_blocks_MYEE (expr P)=
       		T:=identity;
       		cas := 0;
@@ -95,7 +95,7 @@ layout custom_lines
       				q := (point t_0 of P) -- ((point t1 of P) + .05*sk*u * unitvector(thdir(P,t1) rotated (-88+normaldeviate*4))) --
       		((point t2 of P) + .05*sk*u * unitvector(thdir(P,t2) rotated (-88+normaldeviate*4))) -- (point t_end of P) -- ((point t4 of P) - .1*sk*u * unitvector(thdir(P,t4) rotated (-88+normaldeviate*4))) --
       		((point t3 of P) - .1*sk*u * unitvector(thdir(P,t3) rotated (-88+normaldeviate*4))) -- cycle;
-      		
+
       				thdraw q withcolor(0.3,0.3,0.3);
       				cas := cas + mojkrok;
       				exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
@@ -115,19 +115,19 @@ layout custom_lines
 		  	forever:
 		    	t1 := arctime (cas + mojkrok*1/10) of P;
 		    	t2 := arctime (cas + mojkrok*9/10) of P;
-		    	q := ((point t1 of P) + .2u * unitvector(thdir(P,t1) rotated -125)) -- 
+		    	q := ((point t1 of P) + .2u * unitvector(thdir(P,t1) rotated -125)) --
 		         (subpath (t1,t2) of P) --
 		         ((point t2 of P) + .2u * unitvector(thdir(P,t2) rotated -75));
-		    
+
 		    	thdraw q randomized (u/12) withcolor(0.3,0.3,0.3);
 		    	cas := cas + mojkrok;
 		    	exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
 		  	endfor;
 			fi;
-		enddef;  
+		enddef;
 
 		# blue wall line with perpendicular dashes
-		def l_wall_ice_MY (expr P) = 
+		def l_wall_ice_MY (expr P) =
 		  	T:=identity;
 		  	cas := 0;
 		  	dlzka := arclength P;
@@ -147,10 +147,10 @@ layout custom_lines
 		    	cas := cas + mojkrok;
 		    	exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
 		  	endfor;
-		  	pickup PenA;  
+		  	pickup PenA;
 		  	thdraw P withcolor(0,0.7,0.9);
 		enddef;
-	
+
 		# initialise redefined symbols
 		initsymbol("l_wall_blocks_MYEE");
 	    initsymbol("l_wall_blocks_MY");
@@ -196,13 +196,20 @@ layout custom_lines
     	  pickup PenC;
     	  thdraw Path withcolor (0.25,0.25,0.25) dashed evenly scaled (1*optical_zoom);
     	enddef;
-    	 
+
+			# a thick, blue dashed line
+    	def l_u_oldsnow_MY (expr Path)=
+    	  T:=identity;
+    	  pickup PenA;
+    	  thdraw Path withcolor (0,0.7,0.9) dashed evenly scaled (1*optical_zoom);
+    	enddef;
+
     	# thin grey line
     	def l_u_texture_MY (expr P)=
     	  T:=identity;
     	  thdraw P withpen PenD withcolor (0.3,0.3,0.3);
     	enddef;
-    	
+
     	# line made of orange crescents for flowstone inside a passage
     	def l_u_wall_flowstone_MY (expr P)=
     	  T:=identity;
@@ -217,8 +224,8 @@ layout custom_lines
     	      t2 := arctime (cas + mojkrok*7.5/10) of P;
     	      t2b := arctime (cas + mojkrok*6/10) of P;
     	      t2a :=arctime (cas +mojkrok*7.49/10) of P;
-    	      
-    	      q := ((point t1 of P) + 0.05u * unitvector(thdir(P,t1) rotated -115)) .. 
+
+    	      q := ((point t1 of P) + 0.05u * unitvector(thdir(P,t1) rotated -115)) ..
     	            ((point t1b of P) - .01u * unitvector(thdir(P,t1b) rotated -90)) ..
     	           ((point t2b of P) - .01u * unitvector(thdir(P,t1b) rotated -90)) ..
     	           ((point t2 of P) + .05u * unitvector(thdir(P,t2) rotated -65))--
@@ -226,7 +233,7 @@ layout custom_lines
     	           ((point t2b of P) + .01u * unitvector(thdir(P,t1b) rotated -90)) ..
     	           ((point t1b of P) + .01u * unitvector(thdir(P,t1b) rotated -90)) ..
     	           ((point t1 of P) + .05u * unitvector(thdir(P,t1) rotated -115));
-    	      
+
     	      thdraw q withcolor(0.85,0.45,0.1);
     	      cas := cas + mojkrok;
     	      exitif cas > dlzka - (2*mojkrok/3); % for rounding errors
@@ -250,22 +257,22 @@ layout custom_lines
     	    t5 := arctime (cur+5*ministep) of P;
 
     	    thclean (subpath (t5,t0) of P) -- ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
-    	    ((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) .. 
+    	    ((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) ..
     	    ((point t2 of P) + symsize/2 * unitvector(thdir(P,t2) rotated 90)) ..
     	    ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) ..
     	    ((point t4 of P) + symsize/2 * unitvector(thdir(P,t4) rotated 90)) ..
     	    ((point t5 of P) + symsize/2 * unitvector(thdir(P,t5) rotated 90))--cycle;
 
     	    thdraw ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
-    	    ((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) .. 
+    	    ((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) ..
     	    ((point t2 of P) + symsize/2 * unitvector(thdir(P,t2) rotated 90)) ..
     	    ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) ..
     	    ((point t4 of P) + symsize/2 * unitvector(thdir(P,t4) rotated 90)) ..
     	    ((point t5 of P) + symsize/2 * unitvector(thdir(P,t5) rotated 90));
 
-    	    thdraw ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) -- 
+    	    thdraw ((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) --
     	    ((point t3a of P) + 4/3*symsize * unitvector(thdir(P,t3a) rotated 90)) withpen PenC;
-    	    
+
     	    cur := cur + symsize;
     	    exitif cur > laenge - (1*symsize/3); % for rounding errors
     	  endfor;
@@ -319,17 +326,17 @@ layout custom_lines
 
         		thclean (subpath (t5,t0) of P) --
         				 ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
-        		((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) .. 
+        		((point t1 of P) + symsize/2 * unitvector(thdir(P,t1) rotated 90)) ..
         		((point t2 of P) + symsize/2 * unitvector(thdir(P,t2) rotated 90)) ..
         		((point t3a of P) + symsize/2 * unitvector(thdir(P,t3a) rotated 90)) ..
         		((point t4 of P) + symsize/2 * unitvector(thdir(P,t4) rotated 90)) ..
         		((point t5 of P) + symsize/2 * unitvector(thdir(P,t5) rotated 90))--cycle;
 
         		thdraw P withcolor (0, 0.7,0.9);
-        		thdraw (point t3a of P)  -- 
+        		thdraw (point t3a of P)  --
         		((point t3a of P) + 2/3*symsize * unitvector(thdir(P,t3a) rotated 90))
         		withpen PenC withcolor (0, 0.7,0.9);
-        
+
         		cur := cur + symsize;
         		exitif cur > laenge - (1*symsize/3); % for rounding errors
       		endfor;
@@ -351,28 +358,28 @@ layout custom_lines
     	     t5 := arctime (cur+5*ministep) of P;
 
     	     thclean (subpath (t5,t0) of P) -- ((point t0 of P) + symsize/2 * unitvector(thdir(P,t0) rotated 90)) ..
-    	     ((point t1 of P) + symsize/4 * unitvector(thdir(P,t1) rotated 90)) .. 
+    	     ((point t1 of P) + symsize/4 * unitvector(thdir(P,t1) rotated 90)) ..
     	     ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) ..
     	     ((point t3a of P) + symsize/4 * unitvector(thdir(P,t3a) rotated 90)) ..
     	     ((point t4 of P) + symsize/4 * unitvector(thdir(P,t4) rotated 90)) ..
     	     ((point t5 of P) + symsize/4 * unitvector(thdir(P,t5) rotated 90))--cycle;
 
     	     thdraw ((point t0 of P) + symsize/4 * unitvector(thdir(P,t0) rotated 90)) ..
-    	     ((point t1 of P) + symsize/4 * unitvector(thdir(P,t1) rotated 90)) .. 
+    	     ((point t1 of P) + symsize/4 * unitvector(thdir(P,t1) rotated 90)) ..
     	     ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) ..
     	     ((point t3a of P) + symsize/4 * unitvector(thdir(P,t3a) rotated 90)) ..
     	     ((point t4 of P) + symsize/4 * unitvector(thdir(P,t4) rotated 90)) ..
     	     ((point t5 of P) + symsize/4 * unitvector(thdir(P,t5) rotated 90));
 
-    	     thfill ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) -- 
-    	     ((point t3a of P) + 3/4*symsize * unitvector(thdir(P,t3a) rotated 90)) -- 
-    	     ((point t4 of P) + symsize/4 * unitvector(thdir(P,t4) rotated 90)) .. 
+    	     thfill ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) --
+    	     ((point t3a of P) + 3/4*symsize * unitvector(thdir(P,t3a) rotated 90)) --
+    	     ((point t4 of P) + symsize/4 * unitvector(thdir(P,t4) rotated 90)) ..
     	     ((point t3a of P) + symsize/4 * unitvector(thdir(P,t3a) rotated 90)) .. cycle withpen PenC;
 
-    	     thdraw ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) -- 
-    	     ((point t3a of P) + 3/4*symsize * unitvector(thdir(P,t3a) rotated 90)) -- 
+    	     thdraw ((point t2 of P) + symsize/4 * unitvector(thdir(P,t2) rotated 90)) --
+    	     ((point t3a of P) + 3/4*symsize * unitvector(thdir(P,t3a) rotated 90)) --
     	     ((point t4 of P) + symsize/4 * unitvector(thdir(P,t4) rotated 90)) withpen PenC;
-    	     
+
     	     cur := cur + symsize;
     	     exitif cur > laenge - (1*symsize/3); % for rounding errors
     	   endfor;
@@ -420,8 +427,9 @@ layout custom_lines
 	    initsymbol("l_u_bigpit_MY");
 	    initsymbol("l_u_wallbigpit");
 	    initsymbol("l_u_dripline_MY");
+			initsymbol("l_u_oldsnow_MY");
 	    initsymbol("l_u_texture_MY");
-	    initsymbol("l_u_wall_flowstone_MY");	
+	    initsymbol("l_u_wall_flowstone_MY");
 
 endlayout
 
@@ -433,4 +441,5 @@ text en "line u:wall_flowstone_MY" "wall flowstone"
 text en "line u:overlay_MY" "overlying passage"
 text en "line u:mine_MY" "mine addit"
 text en "line u:dripline_MY" "dripline"
+text en "line u:oldsnow_MY" "old snow level"
 text en "line u:icepit_MY" "ice pit"
