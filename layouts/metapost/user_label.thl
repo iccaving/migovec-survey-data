@@ -51,7 +51,7 @@ layout user_label
 					ctmp:=center thelabel@#("x", (0,0));
 					if (xpart ctmp * ypart ctmp)=0:
 						interim labeloffset:=(.4u);
-						else: % diagonal alignment
+					else: % diagonal alignment
 						interim labeloffset:=(.2u);
 					fi;
 					% draw label
@@ -60,18 +60,31 @@ layout user_label
 					thdrawoptions();
 					bboxmargin:=0.8bp;
 					write_circ_bbox((bbox lab) smoothed 2);
-					else:
-					if mode=7: interim labeloffset:=(u/8) fi;
+				else:
+					if mode=7:
+						interim labeloffset:=(u/8);
+					fi;
 					lab:=thelabel@#(txt, pos);
-					if mode>1: pickup PenD fi;
-					if mode=2: process_uplabel;
-						elseif mode=3: process_downlabel;
-						elseif mode=4: process_updownlabel;
-						elseif mode=5: process_circledlabel;
-						elseif mode=6: process_boxedlabel;
-						elseif mode=7: process_label(pos,rot);  % station name
-						elseif mode=8: process_filledlabel(pos, rot);
-					else: process_label(pos,rot); fi;
+					if mode>1:
+						pickup PenD
+					fi;
+					if mode=2:
+						process_uplabel;
+					elseif mode=3:
+						process_downlabel;
+					elseif mode=4:
+						process_updownlabel;
+					elseif mode=5:
+						process_circledlabel;
+					elseif mode=6:
+						process_boxedlabel;
+					elseif mode=7:
+						process_label(pos,rot);  % station name
+					elseif mode=8:
+						process_filledlabel(pos, rot);
+					else:
+						process_label(pos,rot);
+					fi;
 				fi;
 			enddef;
 			
@@ -87,18 +100,18 @@ layout user_label
 				save style;
 				if known ATTR_style:
 					style:= scantokens(ATTR_style);
-					else:
+				else:
 					style :=0;
 				fi;
 				if known ATTR_text:
 					if known ATTR_lvl:
 						lvl := scantokens(ATTR_lvl);
-						else: lvl :=0;
+					else: lvl :=0;
 					fi;
 					if lvl < maxl+1:
 						U:=(S*u*(length ATTR_text)/4,S*u*(length ATTR_text)/4);
 						create_styled_label(ATTR_text,P,R,S,A,style);
-						else:;
+					else:;
 					fi;
 				fi;
 			enddef;
@@ -113,18 +126,18 @@ layout user_label
 				string textsize;
 				if S = 0.5:
 					textsize:="\thtinysize";
-					elseif S = 0.7:
+				elseif S = 0.7:
 					textsize:="\thsmallsize";
-					elseif S = 1.4:
+				elseif S = 1.4:
 					textsize:="\thlargesize";
-					elseif S = 2:
+				elseif S = 2:
 					textsize:="\thhugesize";
-					else: % normal is 1
+				else: % normal is 1
 					textsize:="\thnormalsize";
 				fi;
 				if known ATTR_labelstyle:
 					style:=scantokens(ATTR_labelstyle);
-					else:
+				else:
 					style:=defaultstyle;
 				fi;
 				picture thetext;
@@ -132,28 +145,28 @@ layout user_label
 				if A = (-1,1):
 					p_label.ulft(thetext,P,R,style);
 					
-					elseif A = (0,1):
+				elseif A = (0,1):
 					p_label.top(thetext,P,R,style);
 					
-					elseif A = (1,1):
+				elseif A = (1,1):
 					p_label.urt(thetext,P,R,style);
 					
-					elseif A = (-1,0):
+				elseif A = (-1,0):
 					p_label.lft(thetext,P,R,style);
 					
-					elseif A = (1,0):
+				elseif A = (1,0):
 					p_label.rt(thetext,P,R,style);
 					
-					elseif A = (-1,-1):
+				elseif A = (-1,-1):
 					p_label.llft(thetext,P,R,style);
 					
-					elseif A = (0,-1):
+				elseif A = (0,-1):
 					p_label.bot(thetext,P,R,style);
 					
-					elseif A = (1,-1):
+				elseif A = (1,-1):
 					p_label.lrt(thetext,P,R,style);
 					
-					else:
+				else:
 					p_label(thetext,P,R,style);
 					
 				fi;
