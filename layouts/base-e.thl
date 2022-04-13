@@ -19,25 +19,25 @@ input metapost/connection_marker.thl
 
 layout base-e
 	# copy custom metapost definitions
-  copy custom_points
-  copy custom_lines
-  copy custom_areas
-  copy custom_scalebar_arrow
-  copy custom_grid
-  copy connection_marker
-
-  code tex-map
-    \framethickness=0.5mm
+	copy custom_points
+	copy custom_lines
+	copy custom_areas
+	copy custom_scalebar_arrow
+	copy custom_grid
+	copy connection_marker
+	
+	code tex-map
+		\framethickness=0.5mm
 		\def\maplayout{
-			\legendbox{1}{99}{NW}{\size[60]\the\cavename}
-			\legendbox{1}{94}{NW}{\size[10]\the\comment}
-			\legendbox{1}{72}{NW}{\scalebar}
-			\legendbox{1}{17}{NW}{\size[10]{\sl Depth:} \the\cavedepth}
-			\legendbox{1}{15}{NW}{\size[10]{\sl Length:} \the\cavelength}
-			\legendbox{99}{94}{NE}{\size[10]\the\comment}
-			\legendbox{99}{72}{NE}{\scalebar}
+		\legendbox{1}{99}{NW}{\size[60]\the\cavename}
+		\legendbox{1}{94}{NW}{\size[10]\the\comment}
+		\legendbox{1}{72}{NW}{\scalebar}
+		\legendbox{1}{17}{NW}{\size[10]{\sl Depth:} \the\cavedepth}
+		\legendbox{1}{15}{NW}{\size[10]{\sl Length:} \the\cavelength}
+		\legendbox{99}{94}{NE}{\size[10]\the\comment}
+		\legendbox{99}{72}{NE}{\scalebar}
 		}
-  endcode
+	endcode
 	
 	# hide unnecessary symbols for large scale
 	
@@ -47,75 +47,75 @@ layout base-e
 	symbol-hide line arrow
 	symbol-hide line contour
 	symbol-hide line rock-border
-  symbol-hide line rock-edge
+	symbol-hide line rock-edge
 	symbol-hide line floor-step
 	symbol-hide point gradient
 	symbol-hide line label
 	symbol-hide line gradient
 	symbol-hide point station-name
 	symbol-hide line map-connection
-  symbol-hide point anchor
-  symbol-hide point dig
-
-  ## general statements
-  scale 1 2000
-  legend on
-  map-header -5 95 ne
-  statistics topo-length off
-  fonts-setup 6 7 10 12 14
-  grid-size 50 50 100 m
-  grid bottom
-  grid-coords border
-  
-
-
-  ## survey lines and stations
-  symbol-assign line survey MY
-  symbol-assign point station MY
-  symbol-hide point passage-height
-  symbol-colour point station-name [70 0 0]
- 
-  ## water and ice
-  symbol-assign area ice MY
-  symbol-assign area snow MY
- 
-
-  symbol-colour area ice [0 70 90]
-  symbol-colour area water [0 10 70]
-  symbol-colour area sump [0 10 70]
-  symbol-assign point water-flow MY
-  symbol-colour point water-flow [0 10 70]
- 
-  ## formation
-  symbol-colour point flowstone [85 45 10]
-  symbol-color line wall:flowstone [85 45 10]
-  symbol-colour point flowstone [85 45 10]
-  symbol-colour point pillar [85 45 10]
-  symbol-colour point stalagmite [85 45 10]
-  symbol-colour point stalactite [85 45 10]
-  symbol-colour point curtain [85 45 10]
-  symbol-colour point helictite [85 45 10]
-  symbol-colour point soda-straw [85 45 10]
-  symbol-colour point crystal [85 45 10]
- 
-  ## sedimentary fills
-  symbol-assign line rock-border MY
-  symbol-assign area clay MY
-  symbol-assign area sand MY
-  symbol-assign area pebbles MY
-  symbol-assign line wall:blocks MYEE # this is an example of symbol different between plan view and EE. 
-  
-  symbol-colour area clay [65 55 10]
-  symbol-colour line wall:clay [35 25 5]
-  symbol-colour area sand [85 75 10]
-
-  ## misc
-  symbol-assign point gradient MY
-  symbol-assign line contour MY
-  symbol-assign line pit AUT
-  symbol-assign point breakdown-choke AUT
-  symbol-assign point air-draught MY
-  symbol-assign point station:fixed MY
-  symbol-assign point station:temporary MY
-
+	symbol-hide point anchor
+	symbol-hide point dig
+	
+	## general statements
+	scale 1 2000
+	legend on
+	map-header -5 95 ne
+	statistics topo-length off
+	fonts-setup 6 7 10 12 14
+	grid-size 50 50 100 m
+	grid bottom
+	grid-coords border
+	
+	
+	
+	## survey lines and stations
+	symbol-assign line survey MY
+	symbol-assign point station MY
+	symbol-hide point passage-height
+	symbol-colour point station-name [70 0 0]
+	
+	## water and ice
+	symbol-assign area ice MY
+	symbol-assign area snow MY
+	
+	
+	symbol-colour area ice [0 70 90]
+	symbol-colour area water [0 10 70]
+	symbol-colour area sump [0 10 70]
+	symbol-assign point water-flow MY
+	symbol-colour point water-flow [0 10 70]
+	
+	## formation
+	symbol-colour point flowstone [85 45 10]
+	symbol-color line wall:flowstone [85 45 10]
+	symbol-colour point flowstone [85 45 10]
+	symbol-colour point pillar [85 45 10]
+	symbol-colour point stalagmite [85 45 10]
+	symbol-colour point stalactite [85 45 10]
+	symbol-colour point curtain [85 45 10]
+	symbol-colour point helictite [85 45 10]
+	symbol-colour point soda-straw [85 45 10]
+	symbol-colour point crystal [85 45 10]
+	
+	## sedimentary fills
+	symbol-assign line rock-border MY
+	symbol-assign area clay MY
+	symbol-assign area sand MY
+	symbol-assign area pebbles MY
+	symbol-assign line wall:blocks MYEE # this is an example of symbol different between plan view and EE.
+	
+	symbol-colour area clay [65 55 10]
+	symbol-colour line wall:clay [35 25 5]
+	symbol-colour area sand [85 75 10]
+	
+	## misc
+	symbol-assign point gradient MY
+	symbol-assign line contour MY
+	symbol-assign line pit AUT
+	symbol-assign point breakdown-choke AUT
+	symbol-assign point air-draught MY
+	symbol-assign point station:fixed MY
+	symbol-assign point station:temporary MY
+	
 endlayout
