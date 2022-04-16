@@ -21,55 +21,6 @@ layout custom_points
         	thdraw p rotated (82-k) shifted (0.02u,0.22u) withcolor(0.7,0.3,0.2);
     	enddef;
 
-		def p_altitude(expr pos)=
-    	T:=identity shifted pos;
-    	pickup PenD;
-    	p:=(-.3u,0)--(.3u,0);
-    	thdraw p; thdraw p rotated 90;
-    	p:=fullcircle scaled .2u;
-    	thclean p; thdraw p;
-  		enddef;
-
-			vardef p_label@#(expr txt,pos,rot,mode) =
-    if mode=1:
-      thdrawoptions(withcolor .8red + .4blue);
-      p_altitude(pos);
-      % append "m" to label
-      picture txtm;
-      txtm:=image(
-        draw txt;
-        interim labeloffset:=0;
-        label.urt(btex \thaltitude m etex, lrcorner txt);
-      );
-      % give extra offset in case of l/r/t/b alignment
-      pair ctmp;
-      ctmp:=center thelabel@#("x", (0,0));
-      if (xpart ctmp * ypart ctmp)=0:
-        interim labeloffset:=(.4u);
-      else: % diagonal alignment
-        interim labeloffset:=(.2u);
-      fi;
-      % draw label
-      lab:=thelabel@#(txtm, pos);
-      draw lab _thop_; % use color
-      thdrawoptions();
-      bboxmargin:=0.8bp;
-      write_circ_bbox((bbox lab) smoothed 2);
-    else:
-      if mode=7: interim labeloffset:=(u/8) fi;
-      lab:=thelabel@#(txt, pos);
-      if mode>1: pickup PenD fi;
-      if mode=2: process_uplabel;
-      elseif mode=3: process_downlabel;
-      elseif mode=4: process_updownlabel;
-      elseif mode=5: process_circledlabel;
-      elseif mode=6: process_boxedlabel;
-      elseif mode=7: process_label(pos,rot);  % station name
-      elseif mode=8: process_filledlabel(pos, rot);
-      else: process_label(pos,rot); fi;
-    fi;
-  enddef;
-
 	    def p_waterflow_permanent_MY (expr P,R,S,A)=
 	    U:=(.2u,.2u);
 	      T:=identity aligned A rotated R scaled S shifted P;

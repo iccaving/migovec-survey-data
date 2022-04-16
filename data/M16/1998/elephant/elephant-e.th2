@@ -105,7 +105,7 @@ endscrap
 
 scrap elephant-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 235.5104 68.4204 u:label_MY -attr text Elephant -align r -scale m -attr lvl 1
+point 235.5104 68.4204 u:label -attr text Elephant -align r -scale m -attr lvl 1
 line wall -subtype invisible
   279.419 14.2595
   255.6531 27.84

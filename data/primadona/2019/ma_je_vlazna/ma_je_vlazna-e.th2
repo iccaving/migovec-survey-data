@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap ma_je_vlazna-1e -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 
-point 623.9854 815.4321 u:label_MY -attr text "Ma je vlažna" -align r -attr lvl 2
+point 623.9854 815.4321 u:label -attr text "Ma je vlažna" -align r -attr lvl 2
 
 point 664.6742 490.2025 station -name 3
 line wall 

@@ -1,6 +1,21 @@
 layout connection_marker
-	
+
 	code metapost
+		def p_u_label_NEW (expr pos,rot,S,A)=
+		if known ATTR_text:
+			mytext := scantokens(ATTR_text);
+		fi;
+			begingroup
+    	interim labeloffset:=3.5bp;
+			#txt:=thTEX(mytext);
+    	lab:=label.urt(mytext, P);
+  		endgroup
+
+			process_label(pos, if horiz_labels: 0 else: rot fi);
+		enddef;
+
+		initsymbol("p_u_label_NEW");
+
 
 		def p_u_connectionmarker_MY (expr P,R,S,A)=
 			save RGB;
@@ -42,7 +57,7 @@ layout connection_marker
 					elseif COLORCODE=16:
 			    	RGB:=(217/255,217/255,217/255);
 			    elseif COLORCODE=17:
-					RGB:=( 188/255,128/255,189/255);	
+					RGB:=( 188/255,128/255,189/255);
 
 				else:
 					RGB:=(51/255,51/255,51/255);
@@ -68,4 +83,3 @@ layout connection_marker
 	endcode
 
 endlayout
-

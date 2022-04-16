@@ -9,7 +9,7 @@ line wall -subtype invisible
   1609.9692 131.731
 endline
 
-point 2354.14 578.093 u:label_MY -align t -attr text "Vzporedni Svet" -attr lvl 2
+point 2354.14 578.093 u:label -align t -attr text "Vzporedni Svet" -attr lvl 2
 line wall 
   2119.9174 466.4905
   2119.9174 466.4905 2092.0773 464.4534 2089.0217 464.1139
@@ -359,7 +359,7 @@ line wall -subtype invisible
   5184.5893 718.2947
 endline
 
-point 4576.73 951.644 u:label_MY -align t -attr text "Pravokotni Svet" -attr lvl 2
+point 4576.73 951.644 u:label -align t -attr text "Pravokotni Svet" -attr lvl 2
 line wall 
   5222.0405 855.6157
   5167.3042 852.7348

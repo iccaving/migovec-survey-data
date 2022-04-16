@@ -143,7 +143,7 @@ endscrap
 
 scrap penelope-2p -scale [0 0 90 0 0 0 200 0 inch]
 	
-	point 175.3178 430.7415 u:label_MY -attr lvl 2 -attr text "Hole in the Hill" -align l
+	point 175.3178 430.7415 u:label -attr lvl 2 -attr text "Hole in the Hill" -align l
 	line wall -close on
 		295.0212 497.3517
 		295.0212 497.3517 293.697 505.5614 292.6377 506.0911

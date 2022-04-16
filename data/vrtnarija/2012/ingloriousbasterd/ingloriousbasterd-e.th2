@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap ingloriousbasterd-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -40.1598 -76.3202 u:label_MY -align br -attr text "Inglorious Basterd" -attr lvl 3
+point -40.1598 -76.3202 u:label -align br -attr text "Inglorious Basterd" -attr lvl 3
 line rock-border -close on -outline in
   64.6556 -64.4889
   63.989 -58.6566

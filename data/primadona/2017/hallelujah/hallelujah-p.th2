@@ -70,7 +70,7 @@ line wall
   smooth off
 endline
 
-point 456.0 -300.5 u:label_MY -align tr -attr text "Hallelujah" -attr lvl 1
+point 456.0 -300.5 u:label -align tr -attr text "Hallelujah" -attr lvl 1
 
 line wall
   441.0 -526.0

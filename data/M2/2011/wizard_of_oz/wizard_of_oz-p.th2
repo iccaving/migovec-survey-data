@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap wizard_of_oz-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 275.0366 471.948 u:label_MY -align r -attr lvl 2 -attr text "Wizard of Oz"
+point 275.0366 471.948 u:label -align r -attr lvl 2 -attr text "Wizard of Oz"
 line wall 
   262.8206 394.9344
   262.8206 394.9344 268.0909 404.2117 271.088 408.6182

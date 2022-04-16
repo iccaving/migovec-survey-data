@@ -9,7 +9,7 @@ endscrap
 
 scrap haemertight_crawl-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 174.7642 185.7135 u:label_MY -align tr -attr text "Haemertight Crawl" -attr lvl 3 -scale xs
+point 174.7642 185.7135 u:label -align tr -attr text "Haemertight Crawl" -attr lvl 3 -scale xs
 line wall -id 1e_l13
   200.652 166.0217
   200.652 166.0217 193.013 173.6608 190.1271 175.1886

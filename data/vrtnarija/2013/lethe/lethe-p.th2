@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap lethe-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point 266.4843 988.4861 u:label_MY -attr lvl 1 -attr text Lethe -align l -scale l
+point 266.4843 988.4861 u:label -attr lvl 1 -attr text Lethe -align l -scale l
 point 397.3186 826.3275 water-flow -orientation 77.19736
 point 615.7846 1065.9183 water-flow -orientation 196.02332
 line border -close on -id lethe-1p_water_1 -visibility on

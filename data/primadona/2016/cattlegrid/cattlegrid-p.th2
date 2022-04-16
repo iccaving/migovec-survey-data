@@ -140,7 +140,7 @@ line wall
   313.5 475.5 327.5 467.0 310.5 463.0
 endline
 
-point 313.0 580.0 u:label_MY -attr lvl 3 -align l -attr text "Cattlegrid"
+point 313.0 580.0 u:label -attr lvl 3 -align l -attr text "Cattlegrid"
 
 
 point 483.0 560.0 station -name 4

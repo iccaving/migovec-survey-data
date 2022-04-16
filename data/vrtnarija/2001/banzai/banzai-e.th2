@@ -81,8 +81,8 @@ endscrap
 scrap banzai-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
 point 676.4791 714.165 water-flow -orientation 165
-point 407.4153 1018.5381 u:label_MY -attr lvl 1 -attr text "Fistful of Tolars" -align r
-point 708.2235 726.5318 u:label_MY -attr lvl 1 -attr text "Banzai Stream" -align r
+point 407.4153 1018.5381 u:label -attr lvl 1 -attr text "Fistful of Tolars" -align r
+point 708.2235 726.5318 u:label -attr lvl 1 -attr text "Banzai Stream" -align r
 line rock-border -close on
   416.0443 747.8235
   410.0425 745.1827 406.3214 741.4616 413.6436 737.9805

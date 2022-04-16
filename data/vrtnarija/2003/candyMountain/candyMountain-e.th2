@@ -48,10 +48,10 @@ line wall -subtype invisible
   713.6824 1304.3743
 endline
 
-point 842.7787 1164.3768 u:label_MY -align br -attr text Mountain -attr lvl 1
+point 842.7787 1164.3768 u:label -align br -attr text Mountain -attr lvl 1
 point 760.053 1240.47 station -name 6
 point 758.0 1000.0 water-flow -orientation 139.30000498036569 -scale 2
-point 842.7787 1186.3768 u:label_MY -align tr -attr text "Big Rock Candy" -attr lvl 1
+point 842.7787 1186.3768 u:label -align tr -attr text "Big Rock Candy" -attr lvl 1
 point 776.723 781.582 station -name 2
 line wall 
   904.321 1031.2987

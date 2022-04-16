@@ -131,7 +131,7 @@ line wall -reverse on
   smooth off
 endline
 
-point 532.5 400.25 u:label_MY -attr lvl 1 -attr text "Apple Crumble" -align br
+point 532.5 400.25 u:label -attr lvl 1 -attr text "Apple Crumble" -align br
 
 line label
   469.0 448.5

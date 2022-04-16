@@ -32,7 +32,7 @@ endscrap
 
 scrap polter-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 81.4425 540.2737 u:label_MY -align t -attr lvl 2 -attr text Poltergeist
+point 81.4425 540.2737 u:label -align t -attr lvl 2 -attr text Poltergeist
 line wall -subtype invisible
   66.9257 529.361
   62.3921 523.9637

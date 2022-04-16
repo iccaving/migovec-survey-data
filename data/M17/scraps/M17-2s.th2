@@ -1463,8 +1463,8 @@ line wall -subtype blocks
   1636.5561 4572.7304 1628.956 4466.3289 1628.956 4466.3289
 endline
 
-point 1194.423 9380.1465 u:label_MY -attr lvl 1 -attr text b -align t -scale l
-point 412.423 9480.1465 u:label_MY -attr lvl 1 -attr text a -align t -scale l
+point 1194.423 9380.1465 u:label -attr lvl 1 -attr text b -align t -scale l
+point 412.423 9480.1465 u:label -attr lvl 1 -attr text a -align t -scale l
 point 461.2757 9295.3779 entrance -scale l -orientation 150.98871
 point 1193.9429 9161.9219 entrance -scale l -orientation 183.3185
 line wall:invisible 

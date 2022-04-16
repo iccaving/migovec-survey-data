@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap watershipup-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-point 639.6898 744.7431 u:label_MY -align tr -attr text "Watership Up" -attr lvl 1
+point 639.6898 744.7431 u:label -align tr -attr text "Watership Up" -attr lvl 1
 area water
   visibility on
   wetwater

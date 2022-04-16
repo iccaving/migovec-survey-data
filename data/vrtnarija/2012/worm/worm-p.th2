@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap worm-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
-point -24.7274 1.9807 u:label_MY -align t -attr lvl 3 -attr text Worm
+point -24.7274 1.9807 u:label -align t -attr lvl 3 -attr text Worm
 line floor-step 
   13.8041 22.7468
   13.8041 22.7468 15.6347 22.3867 15.8447 22.3867

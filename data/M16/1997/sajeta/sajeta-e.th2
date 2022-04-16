@@ -10,7 +10,7 @@ line wall -subtype invisible
 endline
 
 point 903.4437 456.9837 water-flow -orientation 229.73142
-point 940.4502 783.5953 u:label_MY -align r -attr lvl 2 -attr text Sajeta -scale l
+point 940.4502 783.5953 u:label -align r -attr lvl 2 -attr text Sajeta -scale l
 line wall -subtype invisible
   894.616 318.2932
   893.937 326.102
@@ -206,7 +206,7 @@ endscrap
 scrap sajeta-3e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 point 158.6878 -211.7428 water-flow -orientation 127.74402
-point 337.386 -262.1825 u:label_MY -align r -attr lvl 2 -attr text Pawoden -scale l
+point 337.386 -262.1825 u:label -align r -attr lvl 2 -attr text Pawoden -scale l
 line wall -subtype blocks
   288.5662 -115.7146
   292.8875 -113.794 360.5878 -84.9854 362.9885 -83.545

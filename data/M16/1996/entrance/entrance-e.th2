@@ -31,8 +31,8 @@ endline
 
 point -58.3962 346.982 entrance -orientation 152.05224949427995
 point 1.0186 349.698 entrance -orientation 188.60931033702158
-point -24.4873 433.089 u:label_MY -align t -attr lvl 1 -attr text M16 -attr style 6
-point -128.336 54.3221 u:label_MY -align l -attr lvl 2 -attr text "Vhodni Del" -scale l
+point -24.4873 433.089 u:label -align t -attr lvl 1 -attr text M16 -attr style 6
+point -128.336 54.3221 u:label -align l -attr lvl 2 -attr text "Vhodni Del" -scale l
 line wall 
   318.5752 -302.4904
   304.1709 -310.8929

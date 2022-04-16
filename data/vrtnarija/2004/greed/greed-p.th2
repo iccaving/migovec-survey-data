@@ -62,7 +62,7 @@ endscrap
 
 scrap greed-2p -scale [0 0 90 0 0 0 250 0 inch]
 
-point 460.7029 365.3952 u:label_MY -attr lvl 1 -attr text Greed -align tr -scale s
+point 460.7029 365.3952 u:label -attr lvl 1 -attr text Greed -align tr -scale s
 line wall 
   565.9813 117.3018
   565.1015 118.7681 553.0781 149.8531 551.9051 154.8384

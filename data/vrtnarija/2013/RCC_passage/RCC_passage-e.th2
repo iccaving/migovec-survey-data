@@ -5,7 +5,7 @@ encoding  utf-8
 scrap RCC_passage-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 point 204.0 333.0 water-flow -orientation 182.10000032823626
-point 271.7823 253.7666 u:label_MY -align br -attr text "RCC Passage of the Year" -attr lvl 1
+point 271.7823 253.7666 u:label -align br -attr text "RCC Passage of the Year" -attr lvl 1
 line rock-border -close on
   157.9182 147.5465
   157.9182 147.5465 155.9108 145.8736 158.2528 144.5353

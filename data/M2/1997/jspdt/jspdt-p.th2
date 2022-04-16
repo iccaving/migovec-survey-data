@@ -184,7 +184,7 @@ endscrap
 scrap jspdt-4p -scale [0 0 90 0 0 0 250 0 inch]
 
 point 128.1522 584.4563 passage-height -align t -orientation 180.0 -value 80
-point 123.4602 619.6469 u:label_MY -attr lvl 2 -attr text Silos -align tr -scale l
+point 123.4602 619.6469 u:label -attr lvl 2 -attr text Silos -align tr -scale l
 point 91.3488 607.9167 passage-height -align t -orientation 180.0 -value 100
 line wall -close on
   41.0577 548.6806

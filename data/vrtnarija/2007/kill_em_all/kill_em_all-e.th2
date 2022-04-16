@@ -92,7 +92,7 @@ line wall
 endline
 
 point 533.4719 258.169 station -name 2
-point 383.6123 669.7902 u:label_MY -align r -attr text "Kill'em All" -attr lvl 2
+point 383.6123 669.7902 u:label -align r -attr text "Kill'em All" -attr lvl 2
 line wall -subtype invisible
   324.1779 738.5897
   288.5264 731.4205

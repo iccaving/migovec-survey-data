@@ -12,7 +12,7 @@ line ceiling-step -reverse on
   138.25 241.25
 endline
 
-point 131.0 75.0 u:label_MY -attr text "Penguin's Egg" -attr level 1 -attr align br
+point 131.0 75.0 u:label -attr text "Penguin's Egg" -attr level 1 -attr align br
 
 point 127.0 225.0 water-flow -orientation 171.6
 

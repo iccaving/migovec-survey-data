@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap pivnica_resurvey-e1 -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m] -projection extended
 
-point 938.2256 -305.2151 u:label_MY -attr text "Pivnica" -align tl
+point 938.2256 -305.2151 u:label -attr text "Pivnica" -align tl
 line wall -subtype invisible
   1282.4425 191.1049
   1298.5469 199.6939

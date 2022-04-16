@@ -38,7 +38,7 @@ scrap spodnji_resurvey-1e -scale [0 0 39 0 0 0 1 0 m] -projection extended
 		1349.902 848.9976 1329.0571 755.1339 1329.0571 755.1339
 	endline
 	
-	point 2527.2614 1281.0017 u:label_MY -attr text Spodnji -align r
+	point 2527.2614 1281.0017 u:label -attr text Spodnji -align r
 	line wall -subtype blocks
 		1616.2874 922.0993
 		1623.414 924.3263 1626.955 940.3388 1633.6361 940.3388

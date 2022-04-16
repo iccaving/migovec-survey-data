@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap amazinggrace-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point 528.8554 641.7961 u:label_MY -attr lvl 1 -attr text "Amazing Grace" -align r -scale l
+point 528.8554 641.7961 u:label -attr lvl 1 -attr text "Amazing Grace" -align r -scale l
 line wall -id west
   416.2844 806.1609
   403.0804 800.8793 391.557 788.8757 389.3964 782.8739

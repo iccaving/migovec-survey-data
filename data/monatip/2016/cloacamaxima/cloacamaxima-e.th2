@@ -260,7 +260,7 @@ endscrap
 
 scrap cloacamaxima-e4 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
-point 2633.8781 -979.232 u:label_MY -attr text "Cloaca Maxima" -align l -attr lvl 2 -align l
+point 2633.8781 -979.232 u:label -attr text "Cloaca Maxima" -align l -attr lvl 2 -align l
 
 line wall -id cm_e4_l2
   2984.9196 -999.6524

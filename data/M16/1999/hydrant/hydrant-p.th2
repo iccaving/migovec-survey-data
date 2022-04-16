@@ -115,7 +115,7 @@ line wall -subtype invisible
   460.7324 685.3953
 endline
 
-point 501.1059 655.3644 u:label_MY -align r -attr text "Gauntlet Gulf" -attr lvl 1
+point 501.1059 655.3644 u:label -align r -attr text "Gauntlet Gulf" -attr lvl 1
 line wall 
   425.4626 689.1295
   415.7249 682.7625
@@ -217,7 +217,7 @@ line wall
   200.6795 443.916 227.5251 457.6719 227.5251 457.6719
 endline
 
-point 160.7521 457.6271 u:label_MY -align l -attr text Hydrant -attr lvl 1
+point 160.7521 457.6271 u:label -align l -attr text Hydrant -attr lvl 1
 point 229.65 478.66 station -name 20
 
 

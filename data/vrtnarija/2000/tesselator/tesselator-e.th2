@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap tesselator-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 312.0122 1031.1001 u:label_MY -attr lvl 1 -attr text Tesselator -align l
+point 312.0122 1031.1001 u:label -attr lvl 1 -attr text Tesselator -align l
 line rock-border -close on
   434.3498 863.418
   433.6896 859.2768

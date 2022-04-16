@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap turtle-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point 24.2472 112.8337 u:label_MY -attr lvl 1 -attr text Turtle -align tr -scale l
+point 24.2472 112.8337 u:label -attr lvl 1 -attr text Turtle -align tr -scale l
 line wall -subtype invisible
   -22.9171 -101.3445
   -24.6147 -105.928

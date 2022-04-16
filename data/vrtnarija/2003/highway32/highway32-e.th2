@@ -103,7 +103,7 @@ endscrap
 
 scrap highway32-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-point 412.294 1073.7476 u:label_MY -align t -attr text "Highway 32" -attr lvl 1
+point 412.294 1073.7476 u:label -align t -attr text "Highway 32" -attr lvl 1
 point 247.177 1072.02 station -name 21
 point 287.017 1059.11 station -name 20
 point 325.796 1073.2 station -name 19

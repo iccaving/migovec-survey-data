@@ -193,7 +193,7 @@ line wall -subtype unsurveyed
   1028.1812 471.8771 1004.5201 478.8679 1004.5201 478.8679
 endline
 
-point 657.603 231.072 u:label_MY -align r -attr text "Soda Stream" -attr lvl 1
+point 657.603 231.072 u:label -align r -attr text "Soda Stream" -attr lvl 1
 line wall -close on -outline in
   590.8706 254.0531
   598.3835 251.8434

@@ -84,7 +84,7 @@ endscrap
 scrap fame-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 point 402.9909 608.9807 water-flow -orientation 230
-point 167.3729 618.644 u:label_MY -align l -attr lvl 1 -attr text "Broken Pencil"
+point 167.3729 618.644 u:label -align l -attr lvl 1 -attr text "Broken Pencil"
 line wall -subtype invisible
   594.7487 718.3426
   573.7752 749.8029

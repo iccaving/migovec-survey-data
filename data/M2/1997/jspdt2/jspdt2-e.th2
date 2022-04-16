@@ -6,7 +6,7 @@ encoding  utf-8
 scrap jspdt2-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
 point 266.857 144.6324 camp -align r
-point 96.0287 191.5772 u:label_MY -attr lvl 1 -attr text Gasa -align l -scale l
+point 96.0287 191.5772 u:label -attr lvl 1 -attr text Gasa -align l -scale l
 line wall:blocks 
   -304.0509 -325.7774
   -296.0085 -326.4976

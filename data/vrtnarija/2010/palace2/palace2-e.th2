@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap palace2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 84.3863 1122.891 u:label_MY -align tl -attr text "Palace of King Minos" -attr lvl 1
+point 84.3863 1122.891 u:label -align tl -attr text "Palace of King Minos" -attr lvl 1
 line wall 
   779.8189 934.3093
   786.9487 939.402 786.9487 945.5132 796.1155 952.643

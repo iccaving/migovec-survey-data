@@ -109,7 +109,7 @@ endscrap
 
 scrap vilinent-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -11.6541 284.0404 u:label_MY -align l -attr text "VILINSKA JAMA" -attr style 6
+point -11.6541 284.0404 u:label -align l -attr text "VILINSKA JAMA" -attr style 6
 
 point 19.0752 331.641 entrance -align tl -orientation 135.0 -scale l
 line rock-border -close on

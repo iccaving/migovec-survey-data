@@ -1,5 +1,5 @@
-source 
-	
+source
+
 	survey symbology -title "System Migovec symbology"
 
 		centreline
@@ -34,6 +34,15 @@ source
 
 		point 45 -2 stalagmite
 		point 41 0 label -text "stalagmite" -align tr
+
+
+		#point 141 0 label -text "User defined Label display 0" -attr display 0
+		#point 141 5 label -text "User defined Label display 1" -attr display 1
+		#point 141 10 label -text "User defined Label display 2" -attr display 2
+
+		point 141 15 u:label -attr text "User defined lvl 1" -attr lvl 1
+		point 151 15 u:label -attr text "User defined lvl 4" -attr lvl 4
+		point 161 15 u:label -attr text "User defined lvl 5" -attr lvl 5
 
 		point 55 -2 stalactite
 		point 51 0 label -text "stalactite" -align tr
@@ -82,7 +91,7 @@ source
 		point 35 -14 pillar
 		point 31 -12 label -text "pillar" -align tr
 
-		point 45 -14 u:logger_MY 
+		point 45 -14 u:logger_MY
 		point 41 -12 label -text "u:logger MY" -align tr
 
 		point 55 -14 u:connectionmarker_MY -scale xs   -attr code 6
@@ -152,14 +161,14 @@ source
 		endline
 
 		point 21 -34 label -text "u:wallstep" -align tr
-	
+
 		line u:bigpit_MY -clip off
 		31 -36.5
 		39 -36.5
 		endline
 
 		point 31 -34 label -text "u:bigpit MY" -align tr
-		
+
 		line pit -clip off
 		41 -36.5
 		49 -36.5
@@ -237,7 +246,7 @@ source
 		endline
 
 		point 61 -40 label -text "u:wall flowstone MY" -align tr
-	
+
 
 		line rock-edge -visibility on -id snow1 -close on -clip off
 		1 -57
@@ -343,20 +352,25 @@ source
 
 
 	endsurvey
-	
+
 endsource
 
 input ../../layouts/metapost/connection_marker.thl
+input ../../layouts/metapost/user_label.thl # input this to have the label hierarchy
 input ../../layouts/metapost/lines.thl
 input ../../layouts/metapost/areas.thl
 input ../../layouts/metapost/points.thl
 input ../../layouts/base-p.thl
+input ../../layouts/metapost/user_label.thl
 
 
 
 layout local
 	copy connection_marker
 	copy base-p
+	copy user_label
+
+
 
 	scale 1 1700
 	base-scale 1 4000
@@ -371,6 +385,8 @@ layout local
 	symbol-show point label
 	symbol-show line floor-step
 	symbol-show line arrow
+	symbol-show point remark
+	#symbol-assign point remark MY
 	symbol-show line rock-edge
 	symbol-show point gradient
 	symbol-show line rock-border
@@ -391,6 +407,10 @@ layout local
     \def\maplayout{
       \legendbox{1}{110}{SW}{\size[14]\the\cavename}
     }
+	endcode
+
+	code metapost
+    set_label_level("4");
 	endcode
 endlayout
 

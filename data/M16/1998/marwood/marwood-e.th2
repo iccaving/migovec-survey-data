@@ -156,7 +156,7 @@ endscrap
 scrap marwood-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 point 292.3729 486.2288 water-flow -orientation 233
-point 375.0 453.9195 u:label_MY -align r -attr lvl 1 -attr text "Marwood Inlet"
+point 375.0 453.9195 u:label -align r -attr lvl 1 -attr text "Marwood Inlet"
 point 730.4026 782.3093 water-flow -orientation 180
 line wall 
   -148.0887 357.3165

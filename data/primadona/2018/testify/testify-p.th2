@@ -389,7 +389,7 @@ line wall
   smooth off
 endline
 
-point 262.0 194.0 u:label_MY -attr text "Testify!" -align br -attr lvl 1
+point 262.0 194.0 u:label -attr text "Testify!" -align br -attr lvl 1
 
 line wall
   322.5 242.75

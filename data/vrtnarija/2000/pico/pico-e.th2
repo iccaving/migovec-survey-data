@@ -5,7 +5,7 @@ encoding  utf-8
 scrap pico-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 point 646.0729 1061.8963 water-flow -orientation 220.0
-point 435.3236 903.4062 u:label_MY -align l -attr lvl 1 -attr text Pico
+point 435.3236 903.4062 u:label -align l -attr lvl 1 -attr text Pico
 line wall -subtype invisible
   231.7536 556.2419
   268.0401 418.8051

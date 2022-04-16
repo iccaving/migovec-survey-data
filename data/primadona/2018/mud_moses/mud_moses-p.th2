@@ -135,7 +135,7 @@ endscrap
 
 scrap mud_moses-p1 -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 635.952 -719.989 u:label_MY -align tl -attr text "Below Knot Very Good" -attr lvl 2 -scale xs
+point 635.952 -719.989 u:label -align tl -attr text "Below Knot Very Good" -attr lvl 2 -scale xs
 line rock-edge -clip off -close on -outline none -visibility off
   -363.098 196.1901
   300.1415 196.1901
@@ -147,7 +147,7 @@ line rock-edge -clip off -close on -outline none -visibility off
   -363.098 -357.2415
 endline
 
-point 38.7112 -4.4884 u:label_MY -align r -attr lvl 3 -attr text "Mud Moses"
+point 38.7112 -4.4884 u:label -align r -attr lvl 3 -attr text "Mud Moses"
 point 5.4612 -84.4884 clay 
 point -22.5388 -82.9884 clay 
 point -38.5388 -57.7384 clay 

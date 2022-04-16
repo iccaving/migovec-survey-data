@@ -77,7 +77,7 @@ line wall -id unserv-top -subtype unsurveyed
   smooth off
 endline
 
-point 89.5 12.5 u:label_MY -attr text "Hips don't lie" -attr align br -attr lvl 3
+point 89.5 12.5 u:label -attr text "Hips don't lie" -attr align br -attr lvl 3
 
 line wall -id unserv-bot -reverse on -subtype unsurveyed
   -53.5 -19.0

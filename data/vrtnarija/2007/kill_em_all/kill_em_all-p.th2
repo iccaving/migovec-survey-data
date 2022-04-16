@@ -5,7 +5,7 @@ encoding  utf-8
 scrap kill_em_all-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 point 496.569 980.752 camp -align r -scale l
-point 540.6798 979.0153 u:label_MY -align r -attr lvl 1 -attr text Kill-Em-All
+point 540.6798 979.0153 u:label -align r -attr lvl 1 -attr text Kill-Em-All
 line pit 
   369.0079 1013.7001
   369.0079 1013.7001 365.6128 1005.3821 367.1406 1004.9576

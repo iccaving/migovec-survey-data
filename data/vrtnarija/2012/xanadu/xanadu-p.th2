@@ -41,7 +41,7 @@ endscrap
 scrap xanadu-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 point 473.887 741.765 station -name 9
-point 757.074 995.7817 u:label_MY -align tr -attr lvl 1 -attr text Xanadu -scale m
+point 757.074 995.7817 u:label -align tr -attr lvl 1 -attr text Xanadu -scale m
 line wall 
   397.9089 354.4513
   369.3898 435.9343 266.178 688.5318 277.0424 693.964

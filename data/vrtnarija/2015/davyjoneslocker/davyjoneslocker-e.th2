@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap davyjoneslocker-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 412.9639 347.9241 u:label_MY -align tr -attr lvl 1 -attr text "Davy Jones' Locker"
+point 412.9639 347.9241 u:label -align tr -attr lvl 1 -attr text "Davy Jones' Locker"
 point 561.573 275.597 water-flow -orientation 160.00001514790688
 point 539.439 336.861 water-flow -orientation 180.0
 line border -close on -id davyjoneslocker-1e_water_1 -visibility on

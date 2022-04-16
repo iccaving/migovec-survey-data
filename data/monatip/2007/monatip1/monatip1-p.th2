@@ -143,7 +143,7 @@ line wall
 endline
 
 point 157.5 709.5 entrance -scale xl -orientation 98.6
-point 109.0 710.0 u:label_MY -attr text "MONA TIP" -align l -attr style 6 # boxed label for entrance
+point 109.0 710.0 u:label -attr text "MONA TIP" -align l -attr style 6 # boxed label for entrance
 point 333.0 715.0 station -name 7
 point 351.5 716.5 station -name 8
 point 333.0 715.0 station -name 6

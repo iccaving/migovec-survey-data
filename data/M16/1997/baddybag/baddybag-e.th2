@@ -89,8 +89,8 @@ endscrap
 
 scrap baddybag-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 111.2288 346.3983 u:label_MY -align l -attr lvl 2 -attr text "Body Bag"
-point 184.8517 594.2797 u:label_MY -align l -attr lvl 1 -attr text "Baddy Bag"
+point 111.2288 346.3983 u:label -align l -attr lvl 2 -attr text "Body Bag"
+point 184.8517 594.2797 u:label -align l -attr lvl 1 -attr text "Baddy Bag"
 line wall 
   354.3024 670.5904
   351.3062 670.2159 329.7709 671.9013 325.2766 670.9649

@@ -58,7 +58,7 @@ endscrap
 
 scrap kamikaze-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-point 576.3367 186.0851 u:label_MY -align tr -attr text Kamikaze -attr lvl 1
+point 576.3367 186.0851 u:label -align tr -attr text Kamikaze -attr lvl 1
 line rock-border -close on
   178.0368 187.4278
   177.2485 185.8218 172.2704 168.6871 172.2704 168.6871

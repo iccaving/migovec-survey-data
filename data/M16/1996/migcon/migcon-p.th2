@@ -78,7 +78,7 @@ line border -close on -id blocksM -subtype invisible
   564.0254 459.1001 571.9052 480.6658 571.9052 480.6658
 endline
 
-point 134.662 700.585 u:label_MY -align tr -attr lvl 2 -attr text Titanic -scale s
+point 134.662 700.585 u:label -align tr -attr lvl 2 -attr text Titanic -scale s
 line pit 
   123.0753 607.8038
   123.0753 607.8038 122.6983 628.2224 123.2848 630.5685
@@ -90,7 +90,7 @@ line pit
   48.387 656.597 32.9911 640.3213 32.9911 640.3213
 endline
 
-point 813.531 443.151 u:label_MY -align tr -attr lvl 2 -attr text "Mig Country" -scale l
+point 813.531 443.151 u:label -align tr -attr lvl 2 -attr text "Mig Country" -scale l
 line wall 
   27.4161 648.7269
   32.9911 640.3213

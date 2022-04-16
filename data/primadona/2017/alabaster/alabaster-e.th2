@@ -5,8 +5,8 @@ encoding  utf-8
 
 scrap alabaster-e1 -scale [328.0 -734.0 528.0 -734.0 0.0 0.0 14 0.0 m] -projection extended
 
-point 501.9547 329.3612 u:label_MY -attr text "Adequately" -align tl -scale m  -attr lvl 3
-point 501.9547 319.3612 u:label_MY -attr text "Hammered" -align bl -scale m  -attr lvl 3
+point 501.9547 329.3612 u:label -attr text "Adequately" -align tl -scale m  -attr lvl 3
+point 501.9547 319.3612 u:label -attr text "Hammered" -align bl -scale m  -attr lvl 3
 
 line wall 
   552.3994 575.9057
@@ -49,7 +49,7 @@ line wall
   675.8077 878.5501
 endline
 
-point 1570.7321 280.0723 u:label_MY -attr text Alabaster -align r -scale m
+point 1570.7321 280.0723 u:label -attr text Alabaster -align r -scale m
 line wall 
   1101.7078 840.9399
   1101.7078 840.9399 1059.1025 846.8165 1050.2876 847.4041
