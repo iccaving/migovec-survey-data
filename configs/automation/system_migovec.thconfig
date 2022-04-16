@@ -18,10 +18,8 @@ source "../../data/system_migovec.th"
 # input the layout files
 input "../../layouts/base-p.thl"
 input "../../layouts/base-e.thl"
-input "../../layouts/overview-p.thl"
 input "../../layouts/mods.thl"
 input "../../layouts/metapost/user_label.thl" # input this to have the label hierarchy
-
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
@@ -29,17 +27,14 @@ input "../../layouts/metapost/user_label.thl" # input this to have the label hie
 layout plan
 	copy base-p
 	copy user_label
-	copy colour-by-new
 	
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
 	
 	code metapost
-    set_label_level("1"); 
+		set_label_level("1");
 	endcode
-
+	
 endlayout
-
-select m-all-p@system_migovec -map-level 2
 
 language sl
 export map -projection plan -o ../../outputs/system_migovec_plan_SLO.pdf -layout plan
@@ -52,13 +47,12 @@ export map -projection plan -o ../../outputs/system_migovec_plan_ENG.svg -layout
 # export an ELEVATION view
 layout ee
 	copy base-e
-	copy colour-by-new
 	copy user_label
-
+	
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
-
+	
 	code metapost
-    set_label_level("1");
+		set_label_level("1");
 	endcode
 	
 endlayout
@@ -66,7 +60,7 @@ endlayout
 select m-all-e@system_migovec
 
 language sl
-export map -projection extended -o ../../outputs/system_migovec_EE_SLO.pdf -layout ee 
+export map -projection extended -o ../../outputs/system_migovec_EE_SLO.pdf -layout ee
 export map -projection extended -o ../../outputs/system_migovec_EE_SLO.svg -layout ee
 language en
 export map -projection extended -o ../../outputs/system_migovec_EE_ENG.pdf -layout ee
@@ -78,4 +72,4 @@ export model -o ../../outputs/system_migovec.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-# export model -o ../../outputs/system_migovec.lox
+export model -o ../../outputs/system_migovec.lox
