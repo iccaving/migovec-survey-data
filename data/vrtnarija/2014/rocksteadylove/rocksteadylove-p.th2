@@ -4,72 +4,72 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line survey 
+line survey
   308.4542 521.5269
   79.1254 562.0768
 endline
 
-line survey 
+line survey
   308.4542 521.5269
   308.4542 521.5269
 endline
 
-line survey 
+line survey
   308.4542 521.5269
   328.966 477.7212
 endline
 
-line survey 
+line survey
   448.7509 429.2389
   328.966 477.7212
 endline
 
-line survey 
+line survey
   553.1743 477.958
   448.7509 429.2389
 endline
 
-line survey 
+line survey
   553.1743 477.958
   679.9445 436.6978
 endline
 
-line survey 
+line survey
   679.9445 436.6977
   820.2412 535.0534
 endline
 
-line survey 
+line survey
   820.2412 535.0534
   820.2412 535.0534
 endline
 
-line survey 
+line survey
   922.5631 666.0266
   820.2412 535.0534
 endline
 
-line survey 
+line survey
   922.5631 666.0266
   922.5631 666.0266
 endline
 
-line survey 
+line survey
   922.5631 666.0266
   922.5631 666.0266
 endline
 
-line survey 
+line survey
   906.4911 710.0691
   922.5631 666.0266
 endline
 
-line survey 
+line survey
   906.4911 710.0691
   906.4911 710.0691
 endline
 
-line survey 
+line survey
   863.6029 711.4898
   906.4911 710.0691
 endline
@@ -79,13 +79,16 @@ endscrap
 
 scrap rocksteadylove-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line pit 
+line pit
   263.4619 499.7627
   321.858 503.8369 325.9322 521.4915 328.6483 554.0847
 endline
 
-point 255.5183 13.0559 u:label -align b -attr lvl 1 -attr text "Rock Steady Love" -scale m
-line pit 
+point 295.5183 -73.0559 u:label -align tl -attr lvl 1 -attr text "Rock Steady" -scale l
+
+point 295.5183 -113.0559 u:label -align bl -attr lvl 1 -attr text "Love" -scale l
+
+line pit
   941.0812 699.0889
   921.8755 713.4932 893.0669 700.0492 865.2186 677.0023
 endline
@@ -123,7 +126,7 @@ line rock-border -close on
   620.3454 465.7392 633.7894 470.5406 633.7894 470.5406
 endline
 
-line wall 
+line wall
   74.9024 584.3346
   68.1804 575.2119 67.6093 576.0264 67.2201 564.6487
   66.5342 544.5976 80.484 555.346 109.0376 541.0167
@@ -138,7 +141,7 @@ line wall -id alt_1
   344.2629 438.371 388.4361 434.0497 416.2844 417.7248
 endline
 
-line wall 
+line wall
   416.2844 417.7248
   444.1327 401.4 461.898 396.5985 479.1832 408.122
   496.4684 419.6454 548.3239 410.0425 566.5693 408.122
@@ -149,7 +152,7 @@ line wall
   954.5252 679.8832 933.3989 705.3308 917.0741 722.6159
 endline
 
-line wall 
+line wall
   865.2186 688.5258
   878.6626 675.0817 887.3052 652.0349 877.7023 640.5114
   868.0994 628.988 847.9334 597.2985 833.5291 584.8148
@@ -178,4 +181,3 @@ point 906.491 710.069 station -name 3
 point 906.491 710.069 station -name 2
 point 863.603 711.49 station -name 1
 endscrap
-

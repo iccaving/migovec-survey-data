@@ -5,9 +5,9 @@ encoding  utf-8
 
 scrap vilinent-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point 328.7333 314.4372 label -text "VILINSKA JAMA" -align r -attr display 1
+point 328.7333 314.4372 u:label -attr text "VILINSKA JAMA" -align tr -attr lvl 1 -attr style 6
 point 294.8081 283.8848 entrance -orientation 220
-line wall 
+line wall
   130.7124 43.1181
   130.7124 43.1181 161.608 43.1181 164.6637 43.4576
   167.7193 43.7971 171.7934 44.8157 171.7934 47.5318
@@ -39,7 +39,7 @@ line wall
   294.018 261.7643 299.4502 268.5546 299.4502 268.5546
 endline
 
-line wall 
+line wall
   284.365 278.0031
   284.365 278.0031 277.1628 269.9607 276.4426 269.1204
   275.7224 268.2802 273.8018 267.1998 273.0816 266.7197
@@ -121,4 +121,3 @@ point 227.6628 248.0479 station -name 3
 point 269.3929 242.9279 station -name 2
 point 292.2328 272.2179 station -name 1
 endscrap
-

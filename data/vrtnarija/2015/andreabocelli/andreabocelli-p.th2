@@ -5,187 +5,187 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs-p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-line survey 
+line survey
   570.35 1092.48
   478.62 1084.45
 endline
 
-line survey 
+line survey
   568.23 1122.48
   570.35 1092.48
 endline
 
-line survey 
+line survey
   561.3 1115.55
   568.23 1122.48
 endline
 
-line survey 
+line survey
   566.73 1084.76
   561.3 1115.55
 endline
 
-line survey 
+line survey
   551.85 999.96
   566.73 1084.76
 endline
 
-line survey 
+line survey
   542.01 957.6
   551.85 999.96
 endline
 
-line survey 
+line survey
   537.68 907.68
   542.01 957.6
 endline
 
-line survey 
+line survey
   535.39 865.08
   537.68 907.68
 endline
 
-line survey 
+line survey
   515.08 809.17
   535.39 865.08
 endline
 
-line survey 
+line survey
   496.73 752.87
   515.08 809.17
 endline
 
-line survey 
+line survey
   486.26 703.58
   496.73 752.87
 endline
 
-line survey 
+line survey
   483.03 641.22
   486.26 703.58
 endline
 
-line survey 
+line survey
   451.85 545.39
   483.03 641.22
 endline
 
-line survey 
+line survey
   442.87 540.2
   451.85 545.39
 endline
 
-line survey 
+line survey
   423.9 485.16
   442.87 540.2
 endline
 
-line survey 
+line survey
   402.48 501.38
   423.9 485.16
 endline
 
-line survey 
+line survey
   402.48 501.38
   389.65 488.54
 endline
 
-line survey 
+line survey
   400.43 468.31
   389.65 488.54
 endline
 
-line survey 
+line survey
   394.21 397.76
   400.43 468.31
 endline
 
-line survey 
+line survey
   405.16 335.79
   394.21 397.76
 endline
 
-line survey 
+line survey
   432.17 349.57
   405.16 335.79
 endline
 
-line survey 
+line survey
   437.28 368.54
   432.17 349.57
 endline
 
-line survey 
+line survey
   506.18 387.05
   437.28 368.54
 endline
 
-line survey 
+line survey
   521.38 375.16
   506.18 387.05
 endline
 
-line survey 
+line survey
   495.55 228.39
   521.38 375.16
 endline
 
-line survey 
+line survey
   528.54 208.54
   495.55 228.39
 endline
 
-line survey 
+line survey
   564.92 187.52
   528.54 208.54
 endline
 
-line survey 
+line survey
   558.78 148.78
   564.92 187.52
 endline
 
-line survey 
+line survey
   550.12 120.51
   558.78 148.78
 endline
 
-line survey 
+line survey
   546.42 77.36
   550.12 120.51
 endline
 
-line survey 
+line survey
   551.85 46.5
   546.42 77.36
 endline
 
-line survey 
+line survey
   539.33 31.61
   551.85 46.5
 endline
 
-line survey 
+line survey
   529.8 -6.73
   539.33 31.61
 endline
 
-line survey 
+line survey
   526.89 -48.46
   529.8 -6.73
 endline
 
-line survey 
+line survey
   524.45 -118.94
   526.89 -48.46
 endline
 
-line survey 
+line survey
   517.99 -152.09
   524.45 -118.94
 endline
 
-line survey 
+line survey
   514.45 -202.48
   517.99 -152.09
 endline
@@ -195,7 +195,7 @@ endscrap
 
 scrap andreabocelli-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-line wall 
+line wall
   516.6344 1082.4835
   516.6344 1082.4835 553.8455 1083.6838 556.2462 1083.4438
   558.6469 1083.2037 558.887 1080.803 559.1271 1077.9221
@@ -244,7 +244,7 @@ line wall
   507.911 -167.7193 502.4788 -202.3496 502.4788 -202.3496
 endline
 
-line wall 
+line wall
   525.277 -201.1801
   525.277 -201.1801 526.2373 -166.1296 527.1975 -161.3282
   528.1578 -156.5268 527.6777 -151.2452 529.5983 -146.4438
@@ -303,7 +303,7 @@ line wall
   534.1596 1097.1279 519.9954 1096.1676 519.9954 1096.1676
 endline
 
-point 445.5732 -163.7289 u:label -attr lvl 2 -attr text "Andrea Bocelli" -align l -attr display 1
+point 445.5732 -163.7289 u:label -attr lvl 1 -attr text "Andrea Bocelli" -align l
 point 478.62 1084.45 station -name 38
 point 570.35 1092.48 station -name 37
 point 568.23 1122.48 station -name 36
@@ -343,4 +343,3 @@ point 524.45 -118.94 station -name 3
 point 517.99 -152.09 station -name 2
 point 514.45 -202.48 station -name 1
 endscrap
-

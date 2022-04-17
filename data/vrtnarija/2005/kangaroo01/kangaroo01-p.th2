@@ -4,8 +4,11 @@ encoding  utf-8
 
 scrap kangaroo01-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 294.6621 775.882 u:label -align tl -attr text "Captain Kangaroo" -attr lvl 1
-line wall 
+point 80.6621 655.882 u:label -align tl -attr text "Captain" -attr lvl 1
+point 80.6621 555.882 u:label -align tl -attr text "Kangaroo" -attr lvl 1
+
+
+line wall
   300.6385 701.0938
   306.0707 702.1123 308.6171 703.6401 312.3517 701.7728
   316.0863 699.9055 315.4073 697.8684 316.7654 694.643
@@ -31,7 +34,7 @@ line wall
   428.465 464.2836 423.0328 428.2953 423.0328 428.2953
 endline
 
-line wall 
+line wall
   436.0192 426.7675
   439.4143 444.5919 444.2524 496.0281 445.95 499.2534
   447.6475 502.4788 451.8914 501.7998 454.0983 502.3091
@@ -79,4 +82,3 @@ point 319.616 696.673 station -name 2
 point 319.616 706.124 station -name 1
 point 302.686 706.124 station -name 0
 endscrap
-

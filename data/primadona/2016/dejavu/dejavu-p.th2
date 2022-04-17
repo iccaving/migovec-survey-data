@@ -6,7 +6,8 @@ encoding  utf-8
 
 scrap dejavup_1 -scale [326.0 -736.0 498.0 -736.0 0.0 0.0 15 0.0 m]
 
-point 425.8221 467.9992 camp -align l -scale l
+point 425.8221 467.9992 u:connectionmarker_MY -attr text "Camp Manger" -attr offset 4 -align tl -attr code 14
+
 point 432.0 782.0 station -name 10
 point 436.0 759.0 station -name 11
 line wall -subtype invisible
@@ -24,7 +25,7 @@ endline
 point 558.5 753.0 water-flow -align b -orientation 204.8
 point 560.5 792.0 continuation -align t -scale l
 
-point 330.0 850.0 u:label -attr lvl 1 -attr text "Deja Vu" -align tr 
+point 330.0 850.0 u:label -attr lvl 1 -attr text "Deja Vu" -align tr
 
 
 

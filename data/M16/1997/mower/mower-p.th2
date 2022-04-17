@@ -4,42 +4,42 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs-mower-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-line survey 
+line survey
   200.16 619.88
   200.16 619.88
 endline
 
-line survey 
+line survey
   200.16 619.88
   208.11 552.64
 endline
 
-line survey 
+line survey
   208.11 552.64
   204.72 493.27
 endline
 
-line survey 
+line survey
   204.72 493.27
   238.66 456.42
 endline
 
-line survey 
+line survey
   238.66 456.42
   255.75 391.3
 endline
 
-line survey 
+line survey
   255.75 391.3
   299.84 380.12
 endline
 
-line survey 
+line survey
   299.84 380.12
   299.84 380.12
 endline
 
-line survey 
+line survey
   270.63 382.8
   299.84 380.12
 endline
@@ -56,8 +56,8 @@ endscrap
 
 scrap mower-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 231.1462 558.362 u:label -align tr -attr lvl 1 -attr text Mower
-line wall 
+point 171.1462 558.362 u:label -align tl -attr lvl 1 -attr text Mower
+line wall
   255.7491 480.6046
   249.0668 490.9317 235.0948 506.7262 230.8424 517.6608
   226.5901 528.5955 215.0479 562.6144 215.0479 569.9041
@@ -82,7 +82,7 @@ line wall
   260.6089 386.4452 264.2538 385.2302 264.2538 385.2302
 endline
 
-line wall 
+line wall
   274.4291 391.305
   273.6698 391.1531 267.2912 397.5317 267.2912 397.5317
   267.2912 397.5317 263.6463 399.6578 259.6977 409.3775
@@ -105,4 +105,3 @@ point 255.75 391.3 station -name 6
 point 299.84 380.12 station -name 8
 point 270.63 382.8 station -name 9
 endscrap
-
