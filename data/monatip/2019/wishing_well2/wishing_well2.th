@@ -1,9 +1,9 @@
 survey wishing_well2 -title "Wishing Well 2"
-	
-	
+
+
 	input wishing_well2-p.th2
 	input wishing_well2-e.th2
-	
+
 	map m-all-p -projection plan
 		wishing_well2-1p
 	endmap
@@ -14,21 +14,21 @@ survey wishing_well2 -title "Wishing Well 2"
 	centreline
 		date 2019.08.02
 		explo-date 2019.08.02
-		
+
 		team "Zaeem Najeeb" insts
 		team "David [P Wilson]" notes
-		
+
 		explo-team "Zaeem Najeeb"
 		explo-team "David [P Wilson]"
-		
+
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
 		1 2   11.26 280 42
-		extend vertical
 		2 3   29.98 342 8
+		extend vertical
 		3 4   3.70 275 -11
-		
+
 	endcentreline
 endsurvey
 
