@@ -14,7 +14,7 @@ line wall -subtype presumed
   7502.245 -760.8476
 endline
 
-line wall 
+line wall
   5645.5522 -1906.4511
   5634.7644 -1867.6909 5701.4122 -1838.6737 5701.4122 -1828.5227
   5701.4122 -1818.3717 5757.6208 -1806.8697 5757.6208 -1806.8697
@@ -35,7 +35,7 @@ line wall
   7497.5364 -924.5457
 endline
 
-line wall 
+line wall
   7398.0744 -915.2357
   7397.174 -971.6132
   7397.174 -971.6132 7379.7432 -1122.6954 7379.7432 -1147.0577
@@ -64,7 +64,7 @@ line wall
   5363.7636 -1402.8618
 endline
 
-line wall 
+line wall
   5363.258 -1401.8259
   5356.798 -1365.2191
   5356.798 -1365.2191 5334.5468 -1363.7835 5328.0868 -1363.7835
@@ -141,7 +141,7 @@ line wall -subtype blocks
   4507.6636 -1604.9579
 endline
 
-line wall 
+line wall
   4772.9784 -1398.8014
   4772.9784 -1398.8014 4720.1932 -1421.1335 4705.982 -1433.3146
   4691.7708 -1445.4958 4659.2876 -1475.9486 4649.1368 -1475.9486
@@ -179,7 +179,7 @@ line wall
   -2161.9558 -691.9407
 endline
 
-line wall 
+line wall
   4507.6636 -1604.9579
   4515.7844 -1602.9277 4594.3216 -1565.277 4612.5932 -1547.0053
   4630.8648 -1528.7336 4750.646 -1486.0996 4750.646 -1486.0996
@@ -210,7 +210,7 @@ endscrap
 
 scrap what_a_coincidence-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
-point 8692.1201 -1134.6101 u:connectionmarker_MY -attr code 6 -id whatacoincidence
+point 8692.1201 -1134.6101 u:connectionmarker_MY  -align tr -attr code 6 -id whatacoincidence -attr text "to Ajodvscina" -attr offset 2
 line wall -id e1_l8 -subtype clay
   8679.4054 -585.7091
   8679.4054 -585.7091 8731.0856 -686.1984 8782.7658 -723.523
@@ -265,4 +265,3 @@ point 8742.64 -1182.9 station -name 3
 point 8696.71 -1871.97 station -name 2
 point 8314.85 -2245.22 station -name 1
 endscrap
-

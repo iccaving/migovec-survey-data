@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap buckwheat-e1 -projection extended -scale [-117.0 -287.0 465.0 -287.0 0.0 0.0 14.7828 0.0 m]
 
-point 712.6982 679.3339 u:connectionmarker_MY -attr code 6 -id whatacoincidence
+point 712.6982 679.3339 u:connectionmarker_MY -align tr -attr code 6 -id whatacoincidence -attr text "to What a Coincidence!"
 line rock-border -close on
   860.5689 85.7861
   860.5689 85.7861 839.1105 86.2332 836.4282 81.7627
@@ -52,7 +52,7 @@ line wall -subtype invisible
   693.5459 737.0869
 endline
 
-line wall 
+line wall
   939.2415 52.8712
   926.8013 104.1874 894.1455 149.2834 881.7052 158.6136
   869.2649 167.9439 849.0495 195.9345 849.0495 195.9345
@@ -112,4 +112,3 @@ point 615.017 140.731 station -name 3
 point 616.572 282.239 station -name 2
 point 725.424 285.349 station -name 1
 endscrap
-

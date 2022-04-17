@@ -3,21 +3,60 @@ encoding  utf-8
 source ../../data/system_migovec.th
 
 lookup map:cave
-	m-all-e@primadona.primadona_ubend_monatip.system_migovec [70 0 100] "Primadona"
-	m-all-e@monatip.primadona_ubend_monatip.system_migovec [70 50 0] "Monatip"
-	m-all-e@vrtnarija_vilinska.system_migovec [100 0 0] "Vrtnarija"
-	m-all-e@m2m16m18.system_migovec [20 100 40] "Vrtnarija"
+	m-all-e@primadona.primadona_ubend_monatip.system_migovec [95 70 100] "Primadona"
+  m-all-e@belladonna.primadona_ubend_monatip.system_migovec [95 70 100] ""
+  m-all-e@ubend.primadona_ubend_monatip.system_migovec [95 70 100] ""
+	m-all-e@monatip.primadona_ubend_monatip.system_migovec [80 89.6 100] "Monatip"
+	m-all-e@vrtnarija_vilinska.system_migovec [92.2 100 66.7] "Vrtnarija"
+	m-all-e@m2m16m18.system_migovec [66.7 100 72.2] "M2-M16-M18"
+
+
+  m-all-p@primadona.primadona_ubend_monatip.system_migovec [95 70 100] "Primadona"
+  m-all-p@belladonna.primadona_ubend_monatip.system_migovec [95 70 100] ""
+  m-all-p@ubend.primadona_ubend_monatip.system_migovec [95 70 100] ""
+  m-all-p@monatip.primadona_ubend_monatip.system_migovec [80 89.6 100] "Monatip"
+  m-all-p@vrtnarija_vilinska.system_migovec [92.2 100 66.7] "Vrtnarija"
+  m-all-p@m2m16m18.system_migovec [66.7 100 72.2] "M2-M16-M18"
 endlookup
 
+
+
 input ../../layouts/base-e.thl
+input ../../layouts/base-p.thl
+
 input ../../layouts/metapost/user_label.thl
+
+layout local-p
+  copy base-p
+  copy user_label
+  scale 1 2000
+  base-scale 1 3000
+  fonts-setup 6 8 10 12 14
+  colour map-fg map:cave
+
+  symbol-hide line survey
+  symbol-hide point station
+
+  code metapost
+    set_label_level("1");
+  endcode
+endlayout
+
+select m-all-e@system_migovec
+export map -o ../../outputs/system_migovec_plan_ENG.pdf -projection plan -layout local-p
+
+
 
 layout local-e
   copy base-e
   copy user_label
   scale 1 2000
-  fonts-setup 8 10 14 18 24
+  base-scale 1 3000
+  fonts-setup 6 8 10 12 14
   colour map-fg map:cave
+
+  symbol-hide line survey
+  symbol-hide point station
 
   code metapost
     set_label_level("1");

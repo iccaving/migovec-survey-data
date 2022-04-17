@@ -1,21 +1,6 @@
 layout connection_marker
 
 	code metapost
-		def p_u_label_NEW (expr pos,rot,S,A)=
-		if known ATTR_text:
-			mytext := scantokens(ATTR_text);
-		fi;
-			begingroup
-    	interim labeloffset:=3.5bp;
-			#txt:=thTEX(mytext);
-    	lab:=label.urt(mytext, P);
-  		endgroup
-
-			process_label(pos, if horiz_labels: 0 else: rot fi);
-		enddef;
-
-		initsymbol("p_u_label_NEW");
-
 
 		def p_u_connectionmarker_MY (expr P,R,S,A)=
 			save RGB;
@@ -72,12 +57,59 @@ layout connection_marker
 
 	      U:=(.2u,.2u);
 	      T:=identity aligned A rotated R scaled S shifted P;
-	      pickup PenC;
-	      thfill (-.65u,-.65u)..(-.65u,.65u)..(.65u,.65u)..(.65u,-.65u)..cycle withcolor(RGB);
-	      thdraw (-.65u,-.65u)..(-.65u,.65u)..(.65u,.65u)..(.65u,-.65u)..cycle withcolor(0,0,0);
-	      thfill (-.3u,-.3u)..(-.3u,.3u)..(.3u,.3u)..(.3u,-.3u)..cycle withcolor(0,0,0);
-	      thdraw (0,-.85u)--(0,.85u) withcolor(0,0,0);
-	      thdraw (-.85u,0)--(.85u,0) withcolor(0,0,0);
+	      pickup PenB;
+				thfill (-.15u,-.15u)..(-.15u,.15u)..(.15u,.15u)..(.15u,-.15u)..cycle withcolor(RGB);
+				thdraw (-.15u,-.15u)..(-.15u,.15u)..(.15u,.15u)..(.15u,-.15u)..cycle withcolor(0,0,0);
+
+
+				begingroup
+					if known ATTR_offset:
+						offset := scantokens(ATTR_offset);
+					else:
+						offset:= 1; % keep default offset
+					fi;
+					if known ATTR_text:
+						picture thetext;
+
+						thetext := thTEX("\thframed{ \thtinysize\si " & ATTR_text & "}");
+
+						if A = (1,1):
+							p_label.urt(thetext,P shifted (2.5u*offset,1u),R,0);
+							pickup PenB;
+							thdraw (2.45u*offset,1u)--(.15u,1u)--(0,0.15u) withcolor(0,0,0);
+
+						elseif A = (1,0):
+								p_label.rt(thetext,P shifted (2.5u*offset,0),R,0);
+								pickup PenB;
+								thdraw (2.45u*offset,0)--(.15u,0) withcolor(0,0,0);
+
+						elseif A = (1,-1):
+								p_label.lrt(thetext,P shifted (2.5u*offset,-1u),R,0);
+								pickup PenB;
+								thdraw (2.45u*offset,-1u)--(.15u,-1u)--(0,-0.15u) withcolor(0,0,0);
+
+						elseif A = (-1,1):
+					 		p_label.ulft(thetext,P shifted (-2.5u*offset-0.2u,1u),R,0);
+							pickup PenB;
+					 		thdraw (-2.45u*offset,1u)--(-.15u,1u)--(0,0.15u) withcolor(0,0,0);
+
+						elseif A = (-1,0):
+							p_label.lft(thetext,P shifted (-2.5u*offset-0.2u,0),R,0);
+							pickup PenB;
+							thdraw (-2.45u*offset,0)--(-.15u,0) withcolor(0,0,0);
+
+						elseif A = (-1,-1):
+								p_label.llft(thetext,P shifted (-2.5u*offset-0.2u,-1u),R,0);
+								pickup PenB;
+								thdraw (-2.45u*offset,-1u)--(-.15u,-1u)--(0,-0.15u) withcolor(0,0,0);
+
+						else:
+								p_label.rt(thetext,P shifted (2.5u*offset,0),R,0);
+								pickup PenB;
+								thdraw (2.45u*offset,0)--(.15u,0) withcolor(0,0,0);
+						fi;
+					fi;
+				endgroup
 	    enddef;
 	    initsymbol("p_u_connectionmarker_MY")
 	endcode

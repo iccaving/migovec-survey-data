@@ -5,9 +5,9 @@ encoding  utf-8
 
 scrap more_like_welding-e1 -projection extended -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
 
-point 782.7972 628.1448 u:connectionmarker_MY -attr code 2 -id mightyfine
+point 782.7972 628.1448 u:connectionmarker_MY -align r -attr code 2 -id mightyfine -attr text "to Mighty Fine Indeed"
 
-line wall 
+line wall
   778.7174 700.5964
   778.7174 700.5964 772.8999 701.4275 762.0959 698.1032
   751.292 694.7789 740.488 707.245 738.8258 710.5693
@@ -55,7 +55,7 @@ endscrap
 
 scrap more_like_welding-e2 -projection extended -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
 
-line wall 
+line wall
   2117.9226 644.0742
   2117.9226 644.0742 2089.7386 651.1474 2086.8298 651.9785
   2083.921 652.8096 2064.8062 651.9785 2060.651 651.5629
@@ -85,7 +85,7 @@ line wall
   974.3385 -110.4799
 endline
 
-line wall 
+line wall
   2127.3252 98.7267
   2127.3252 98.7267 2123.7992 145.7394 2123.7992 156.3173
   2123.7992 166.8951 2117.9226 186.8755 2117.9226 230.3623
@@ -137,4 +137,3 @@ point 1160.63 -125.759 station -name 9
 point 1095.98 -289.015 station -name 8
 point 1095.63 -398.781 station -name 7
 endscrap
-

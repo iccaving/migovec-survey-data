@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap mighty_fine_indeed-e1 -projection extended -scale [1077.0 264.0 1274.0 506.0 0 0 8.30 0 m]
 
-point 1225.0154 -346.6923 u:connectionmarker_MY -attr code 2 -id mightyfine
+point 1225.0154 -346.6923 u:connectionmarker_MY -align tl -attr code 2 -id mightyfine -attr text "to More like Welding"
 line rock-border -close on
   1542.0822 -379.7737
   1523.8762 -510.6498
@@ -16,7 +16,7 @@ line rock-border -close on
   1439.9461 -366.8268
 endline
 
-line wall 
+line wall
   1337.1006 -1268.0705
   1337.1006 -1268.0705 1368.463 -1258.7325 1382.9848 -1251.3854
   1391.9314 -1246.859 1400.0752 -1240.8264 1408.0125 -1234.7002
@@ -38,7 +38,7 @@ line wall
   2083.7606 508.8967
 endline
 
-line wall 
+line wall
   2083.7606 508.8967
   1946.1082 504.7254
   1770.9142 550.6096
@@ -51,7 +51,7 @@ line wall
   1316.2442 -279.4761
 endline
 
-line wall 
+line wall
   1257.8462 -458.8413
   1257.8462 -488.0403 1258.511 -549.1085 1282.8738 -583.9798
   1299.6724 -608.024 1343.6095 -604.2815 1357.957 -629.864
@@ -74,4 +74,3 @@ point 1513.67 -641.526 station -name 3
 point 1441.41 -1109.03 station -name 2
 point 1305.73 -1259.46 station -name 1
 endscrap
-

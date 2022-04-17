@@ -4,14 +4,16 @@ encoding  utf-8
 
 scrap galerija-2e -projection extended -scale [1382.0 -3962.0 2948.0 -3976.0 0.0 0.0 100 0.0 m]
 
-point 3311.1422 669.6254 u:connectionmarker_MY -align r -attr code 13 -id electricdreams
+
+
+point 3311.1422 669.6254 u:connectionmarker_MY -align tr -attr code 13 -id electricdreams -attr text "to Electric Dreams"
 point 2140.33 677.711 u:label -align bl -attr text "Quantum State" -attr lvl 3
 
 point 1520.87 1063.296 u:label -align tr -attr text "Knot" -attr lvl 2
 point 1520.87 1043.296 u:label -align br -attr text "Very Good" -attr lvl 2
 
-point 2718.87 913.296 label -align tr -text Galerija
-line wall 
+point 2718.87 913.296 u:label -align tr -attr text "Galerija" -attr lvl 2
+line wall
   2095.0 836.0
   2095.0 836.0 2084.0 838.0 2073.0 832.0
   2062.0 826.0 2046.0 824.0 2034.0 817.0
@@ -30,7 +32,7 @@ line wall
   1590.0 850.0 1592.0 847.0 1578.0 852.0
 endline
 
-line wall 
+line wall
   2267.757 694.8274
   2268.757 704.8274 2262.536 721.8436 2266.536 729.8436
   2270.536 737.8436 2276.3312 745.8114 2284.3312 748.8114
@@ -87,7 +89,7 @@ line rock-border -close on
   2607.0 795.0
 endline
 
-line rock-border 
+line rock-border
   2590.0 799.0
   2565.0 794.0
   2564.0 775.0
@@ -136,7 +138,7 @@ line wall -close on -outline in
   2402.0 967.0 2412.0 966.0 2412.0 966.0
 endline
 
-line wall 
+line wall
   2291.0 1024.0
   2291.0 1024.0 2256.0 996.0 2248.0 985.0
   2240.0 974.0 2235.0 960.0 2230.0 945.0
@@ -146,7 +148,7 @@ line wall
   2143.0 833.0 2095.0 836.0 2095.0 836.0
 endline
 
-line wall 
+line wall
   2721.0 835.0
   2703.0 854.0
   2703.0 854.0 2697.0 866.0 2695.0 870.0
@@ -198,7 +200,7 @@ line wall -subtype presumed
   2858.0 774.0 2856.0 759.0 2856.0 759.0
 endline
 
-line wall 
+line wall
   3281.0 695.0
   3271.0 698.0 3244.0 708.0 3234.0 707.0
   3224.0 706.0 3217.0 704.0 3208.0 709.0
@@ -217,7 +219,7 @@ line wall
   2734.0 798.0
 endline
 
-line wall 
+line wall
   3301.0 426.0
   3291.0 470.0 3287.0 485.0 3290.0 507.0
   3293.0 529.0 3291.0 552.0 3290.0 561.0
@@ -283,7 +285,7 @@ line rock-border -close on
   3219.0 613.0
 endline
 
-line rock-border 
+line rock-border
   3256.0 655.0
   3220.0 658.0
   3213.0 636.0
@@ -329,4 +331,3 @@ point 3096.0 644.0 station -name 4
 point 3160.0 592.0 station -name 3
 point 3184.0 572.0 station -name 2
 endscrap
-

@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap the_atrium-e1 -projection extended -scale [0.0 0.0 1024.0 939.3873157807584 0.0 0.0 120.78 110.8]
 
-point 499.1946 -68.0083 u:connectionmarker_MY -align b -attr code 5 -id atrium
+point 499.1946 -68.0083 u:connectionmarker_MY -align br -attr code 5 -id atrium -attr text "to Hall of the Mountain King" -attr offset 2.5
 point 1308.87 -112.905 map-connection -scale s
 point 437.916 364.843 u:label -align l -attr text "The Atrium" -attr lvl 1 -scale m
 line wall -subtype invisible
@@ -17,7 +17,7 @@ line wall -subtype invisible
   983.2262 701.2349
 endline
 
-line wall 
+line wall
   827.0015 834.0598
   756.4181 836.4126
   756.4181 836.4126 724.6556 831.707 718.7737 831.707
@@ -26,7 +26,7 @@ line wall
   667.0126 792.8862 650.7247 762.3001 650.7247 762.3001
 endline
 
-line wall 
+line wall
   983.2262 701.2349
   983.2262 701.2349 955.7757 708.7214 948.2892 707.8896
   940.8027 707.0577 943.1483 701.1758 936.4937 701.1758
@@ -47,7 +47,7 @@ line wall -subtype blocks
   461.6671 39.512 471.6491 -26.6186 471.6491 -26.6186
 endline
 
-line wall 
+line wall
   650.7247 762.3001
   574.0778 515.2584
   574.0778 515.2584 578.7834 484.6723 569.3723 454.0861
@@ -61,7 +61,7 @@ line wall
   297.6264 81.1708
 endline
 
-line wall 
+line wall
   1307.439 -87.0528
   1307.439 -87.0528 1307.6409 -32.4415 1309.3046 -19.964
   1310.9682 -7.4865 1294.0279 216.4556 1294.0279 216.4556
@@ -104,4 +104,3 @@ point 480.799 -217.108 station -name 3
 point 529.877 59.8919 station -name 2
 point 603.079 110.634 station -name 1
 endscrap
-
