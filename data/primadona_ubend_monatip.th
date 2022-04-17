@@ -16,15 +16,15 @@ survey primadona_ubend_monatip -title "<bf>Primadona, Mona tip, Ubend-571, Bella
 	input "./monatip/monatip.th"
 	input "./ubend/ubend.th"
 	input "./belladonna/belladonna.th"
-	
+
 	# input map definitions
 	input "./primadona_ubend_monatip-e.thm"
 	input "./primadona_ubend_monatip-p.thm"
-	
+
 	# EQUATE commands for CONNECTIONS
 	# primadona and U-Bend
 	equate 5@drainpipe.ubend 8@drugi.primadona
-	
+
 	# monatip and primadona connection
 	equate 1@therock.monatip 8@prima1.primadona
 	equate 25@therock.monatip 24@prima2.primadona
@@ -32,7 +32,7 @@ survey primadona_ubend_monatip -title "<bf>Primadona, Mona tip, Ubend-571, Bella
 
 	# Belladonna and primadona connection
 	equate shit@belladonna 35@prima1.primadona
-	
+
 	# JOIN commands for the sketches at connection points
 	# Primadona to Monatip at Alkatraz via 'The Rock'
 	join s5_l1@prima1.primadona:end s1_l1@therock.monatip:end
@@ -46,13 +46,14 @@ survey primadona_ubend_monatip -title "<bf>Primadona, Mona tip, Ubend-571, Bella
 	join therock-e2@therock.monatip alkatraz_disto_resurvey-1s@alkatraz_disto_resurvey.monatip
 
 	join therock-e1@therock.monatip prima1-e3@prima1.primadona
-	
+
 	# joins for Ubend to Primadona?
 
 	# join Belladona Primadona
 	join drugi-1e@drugi.primadona belladonna-1s@belladonna
+	join drugi-1e@drugi.primadona drainpipe-1e@drainpipe.ubend
+	join drugi-2e@drugi.primadona drainpipe-1e@drainpipe.ubend
 	join belladonna-1p@belladonna drugip_1@drugi.primadona
 	#join s1_l1@belladonna ent_l1@prima1.primadona
-	
-endsurvey
 
+endsurvey

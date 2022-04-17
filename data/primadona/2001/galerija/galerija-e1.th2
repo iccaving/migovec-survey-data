@@ -43,7 +43,8 @@ line wall
   1181.6567 3165.0
 endline
 
-point 2835.0 2290.0 label -align t -text Karstaway
+point 2835.0 2290.0 u:label -align t -attr text Karstaway -attr lvl 1 -scale l
+
 line rock-border -clip off -close on
   1365.0 2681.0
   1348.0 2664.0
@@ -193,7 +194,7 @@ line wall
   427.0 3428.0
 endline
 
-point 130.0 3376.0 u:label -align b -attr text "Sejna soba" -attr lvl 1
+point 130.0 3376.0 u:label -align b -attr text "Sejna soba" -attr lvl 2
 
 point 517.0 3459.0 camp -align t -scale xs
 

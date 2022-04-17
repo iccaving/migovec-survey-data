@@ -2,8 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 855.000000 1111.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
-scrap drainpipe-1e -scale [366.0 -357.0 190.0 -458.0 0.0 0.0 4.96 0.0 m] -projection extended
+scrap drainpipe-1e -projection extended -scale [366.0 -357.0 190.0 -458.0 0.0 0.0 4.96 0.0 m]
 
 line wall:invisible 
   1276.1775 -268.6924
@@ -17,7 +16,7 @@ endline
 
 line wall -subtype invisible
   684.5722 1094.5391
-  634.9676 670.7522
+  612.7476 754.5045
 endline
 
 line rock-border -close on
@@ -29,6 +28,7 @@ line rock-border -close on
   913.5788 -45.4896
   934.2082 -52.6981
   920.6524 -31.7584
+  907.0967 -10.8186
 endline
 
 line rock-border -close on
@@ -42,6 +42,7 @@ line rock-border -close on
   1034.007 -137.3128
   1048.5704 -155.6212
   1061.8745 -153.3882
+  1075.1786 -151.1552
 endline
 
 line rock-border -close on
@@ -53,6 +54,7 @@ line rock-border -close on
   1147.7263 -177.4661
   1128.7099 -177.6739
   1142.1599 -206.3431
+  1155.6098 -235.0123
 endline
 
 line wall 
@@ -92,8 +94,8 @@ line wall -subtype blocks
 endline
 
 line wall 
-  634.9676 670.7522
-  635.7998 663.2624 703.2079 640.793 702.3757 620.8203
+  612.7476 754.5045
+  613.5798 747.0147 703.2079 640.793 702.3757 620.8203
   701.5435 600.8475 718.1875 539.2648 719.8519 531.775
   721.5163 524.2852 715.6909 476.8499 715.6909 476.8499
   712.3621 447.7229
@@ -127,11 +129,11 @@ line wall -subtype blocks
   1276.1775 -268.6924
 endline
 
-point 774.4047 876.7956 station -name 6
-point 736.7436 828.5424 station -name 5
-point 739.0975 195.3665 station -name 4
-point 976.2442 -48.2532 station -name 3
-point 1127.4767 -141.8173 station -name 1
-point 1279.2977 -252.4465 station -name 2
+point 774.405 876.796 station -name 6
+point 736.744 828.542 station -name 5
+point 739.097 195.367 station -name 4
+point 976.244 -48.2532 station -name 3
+point 1127.48 -141.817 station -name 1
+point 1279.3 -252.446 station -name 2
 endscrap
 

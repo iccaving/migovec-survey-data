@@ -31,11 +31,9 @@ layout base-e
 		\def\maplayout{
 		\legendbox{1}{99}{NW}{\size[60]\the\cavename}
 		\legendbox{1}{94}{NW}{\size[10]\the\comment}
-		\legendbox{1}{72}{NW}{\scalebar}
-		\legendbox{1}{17}{NW}{\size[10]{\sl Depth:} \the\cavedepth}
-		\legendbox{1}{15}{NW}{\size[10]{\sl Length:} \the\cavelength}
+		\legendbox{1}{12}{NW}{\scalebar}
 		\legendbox{99}{94}{NE}{\size[10]\the\comment}
-		\legendbox{99}{72}{NE}{\scalebar}
+		\legendbox{99}{12}{NE}{\scalebar}
 		}
 	endcode
 
