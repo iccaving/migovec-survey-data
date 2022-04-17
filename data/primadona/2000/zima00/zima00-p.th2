@@ -522,7 +522,7 @@ endline
 line wall
 endline
 
-point 126.75 355.5 continuation -align b -scale xl
+point 126.75 355.5 continuation -align b -scale xs
 
 line pit -reverse on
   159.25 378.0
@@ -718,7 +718,7 @@ endline
 
 point -76.0 420.5 label -align tl -text "P3" -scale xs
 
-point -33.5 459.25 continuation -align t -scale l
+point -33.5 459.25 continuation -align t -scale xs
 
 line wall
   -53.75 454.5
@@ -844,7 +844,7 @@ line wall
   smooth off
 endline
 
-point 197.5 631.0 continuation -align t -scale l
+point 197.5 631.0 continuation -align t -scale xs
 
 line wall
 endline

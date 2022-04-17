@@ -23,7 +23,7 @@ line wall
 endline
 
 point 558.5 753.0 water-flow -align b -orientation 204.8
-point 560.5 792.0 continuation -align t -scale l
+point 560.5 792.0 continuation -align t -scale xs
 
 point 330.0 850.0 u:label -attr lvl 1 -attr text "Deja Vu" -align tr
 
@@ -492,5 +492,5 @@ line wall -subtype invisible
   283.0 555.5
 endline
 
-point 265.5 560.5 continuation -align l
+point 265.5 560.5 continuation -align l -scale xs
 endscrap

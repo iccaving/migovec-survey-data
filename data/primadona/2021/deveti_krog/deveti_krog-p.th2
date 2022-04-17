@@ -2,6 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+
 scrap DELETE-ME-survey-legs-deveti_krog-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 line survey 
@@ -2734,9 +2735,9 @@ endscrap
 scrap deveti_krog-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 point 532.9492 447.488 u:label -align r -attr lvl 1 -attr text "Deveti Krog"
-point 122.226 1503.81 water-flow -orientation 26.616861827836118
-point 98.377 1455.37 water-flow -orientation 46.13362153155265
-point -19.377 1542.94 water-flow -orientation 140.89252276961835
+point 122.226 1503.81 water-flow -orientation 26.6168618278
+point 98.377 1455.37 water-flow -orientation 46.1336215316
+point -19.377 1542.94 water-flow -orientation 140.89252277
 line pit 
   52.5931 1465.9799
   51.7755 1459.9848 30.2478 1447.4497 45.508 1418.8369
@@ -2898,8 +2899,8 @@ line chimney -outline out
   543.8056 1380.664 537.1704 1388.2084 528.8072 1391.4323
 endline
 
-point 587.396 1058.1 continuation -scale l
-point 645.834 938.54 continuation -scale l
+point 587.396 1058.1 continuation -scale xs
+point 645.834 938.54 continuation -scale xs
 line wall -close on -outline in
   274.551 1567.0995
   274.551 1567.0995 283.3733 1573.0987 286.5493 1572.7458
@@ -2911,7 +2912,7 @@ line wall -close on -outline in
   262.9055 1565.6879 272.0807 1566.3937 274.551 1567.0995
 endline
 
-point -57.848 -781.741 breakdown-choke -align b
+point -49.848 -749.741 breakdown-choke -align b
 line wall 
   207.6899 1563.3234
   213.7865 1574.2972
