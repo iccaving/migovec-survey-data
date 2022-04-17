@@ -131,6 +131,12 @@ map m-old_deep-e -projection extended
 	m-all-e@sump1
 	m-all-e@sump2
 endmap
+map m-m16_monatip_con-e -projection extended #Relevant passages for connections with monatip
+	m-all-e@migcon
+	m-all-e@migcondown
+	m-all-e@migconleft
+	m-all-e@migcon2
+endmap
 
 centreline
 

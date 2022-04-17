@@ -2,11 +2,15 @@ survey wishing_well2 -title "Wishing Well 2"
 	
 	
 	input wishing_well2-p.th2
+	input wishing_well2-e.th2
 	
 	map m-all-p -projection plan
 		wishing_well2-1p
 	endmap
-	
+	map m-all-e -projection extended
+		wishing_well2-1e
+	endmap
+
 	centreline
 		date 2019.08.02
 		explo-date 2019.08.02

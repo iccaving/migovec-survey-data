@@ -1,9 +1,9 @@
 
 map  m-all-e -projection extended
-	m-all-e@extra_dunkel
-	#m-all-e@wishing_well
-	#m-all-e@wishing_well2
+	m-all-e@wishing_well
+	m-all-e@wishing_well2
 	m-all-e@sad_face
+	m-all-e@extra_dunkel
 	m-all-e@therock
 	m-all-e@monatip1
 	m-all-e@cloacamaxima
@@ -30,3 +30,19 @@ endmap
 map  m-monatip_main-e -projection extended
 	m-all-e@alkatraz_disto_resurvey
 endmap
+
+map monatip_m16_con-e -projection extended #relevant passages for connections with M16
+m-all-e@wishing_well
+m-all-e@wishing_well2
+#m-all-e@sad_face
+#m-all-e@extra_dunkel
+m-all-e@monatip11
+endmap
+
+
+centerline
+#Monatip M16 Wishing Well connection
+extend left 13@wishing_well 12@wishing_well
+extend left 12@wishing_well 11@wishing_well
+extend right 1@wishing_well 2@wishing_well
+endcenterline

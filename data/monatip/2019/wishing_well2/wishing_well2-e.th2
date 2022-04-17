@@ -1,0 +1,26 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+
+scrap wishing_well2-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line floor-step 
+  292.0715 505.7633
+  292.0715 505.7633 287.0022 504.8535 284.7925 504.2035
+  282.5827 503.5536 281.5429 501.4739 278.8132 499.0042
+  276.0836 496.5345 237.4787 462.999 237.4787 462.999
+endline
+
+line wall 
+  269.8444 565.4255
+  269.8444 565.4255 235.009 538.1291 225.6502 535.5294
+  216.2915 532.9297 186.7854 534.7495 186.7854 534.7495
+endline
+
+point 217.06 448.39 station -name 1
+point 282.94 510.12 station -name 2
+point 282.94 551.61 station -name 3
+point 282.94 546.42 station -name 4
+endscrap
+
