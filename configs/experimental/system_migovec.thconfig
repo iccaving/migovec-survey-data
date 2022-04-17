@@ -2,5 +2,30 @@ encoding  utf-8
 
 source ../../data/system_migovec.th
 
-export database -o ../../outputs/system_migovec.sql
-export model -o ../../outputs/system_migovec.3d
+lookup map:cave
+	m-all-e@primadona.primadona_ubend_monatip.system_migovec [70 0 100] "Primadona"
+	m-all-e@monatip.primadona_ubend_monatip.system_migovec [70 50 0] "Monatip"
+	m-all-e@vrtnarija_vilinska.system_migovec [100 0 0] "Vrtnarija"
+	m-all-e@m2m16m18.system_migovec [20 100 40] "Vrtnarija"
+endlookup
+
+input ../../layouts/base-e.thl
+input ../../layouts/metapost/user_label.thl
+
+layout local-e
+  copy base-e
+  copy user_label
+  scale 1 2000
+  fonts-setup 8 10 14 18 24
+  colour map-fg map:cave
+
+  code metapost
+    set_label_level("1");
+  endcode
+endlayout
+
+select m-all-e@system_migovec
+export map -o ../../outputs/system_migovec_EE_ENG.pdf -projection extended -layout local-e
+
+#export database -o ../../outputs/system_migovec.sql
+#export model -o ../../outputs/system_migovec.3d

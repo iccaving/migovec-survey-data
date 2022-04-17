@@ -1,13 +1,13 @@
 layout user_label
-	
+
 	code metapost
-		
+
 		def p_LABEL(expr pos)=
 			T:=identity shifted pos;
 			pickup PenD;
 			p:=fullcircle scaled .1u;
 			thclean p; thdraw p;
-			
+
 			if known ATTR_text:
 				text := scantokens(ATTR_text);
 				thdrawoptions(withcolor .8red + .4blue);
@@ -22,9 +22,9 @@ layout user_label
 				thdrawoptions();
 				bboxmargin:=0.8bp;
 				write_circ_bbox((bbox lab) smoothed 2);
-				
+
 			enddef;
-			
+
 			def p_altitude(expr pos)=
 				T:=identity shifted pos;
 				pickup PenD;
@@ -33,8 +33,8 @@ layout user_label
 				p:=fullcircle scaled .2u;
 				thclean p; thdraw p;
 			enddef;
-			
-			
+
+
 			vardef p_label@#(expr txt,pos,rot,mode) =
 				if mode=1:
 					thdrawoptions(withcolor .8red + .4blue);
@@ -87,13 +87,13 @@ layout user_label
 					fi;
 				fi;
 			enddef;
-			
+
 			vardef set_label_level (expr mylevel)=
 				maxl := scantokens(mylevel);
 			enddef;
-			
-			
-			def p_u_label_MY (expr P,R,S,A)=
+
+
+			def p_u_label (expr P,R,S,A)=
 				T:=identity shifted P;
 				U:=(0,0);
 				save lvl;
@@ -115,12 +115,12 @@ layout user_label
 					fi;
 				fi;
 			enddef;
-			initsymbol("p_u_label_MY");
-			
-			
+			initsymbol("p_u_label");
+
+
 			% https://www.mail-archive.com/therion@speleo.sk/msg07234.html
 			% define a custom attribute called label_mode
-			
+
 			vardef create_styled_label (expr plaintext,P,R,S,A,defaultstyle)=
 				save textsize, style, thetext;
 				string textsize;
@@ -144,33 +144,33 @@ layout user_label
 				thetext:=thTEX("\thframed {" & textsize & " " & plaintext & "}");
 				if A = (-1,1):
 					p_label.ulft(thetext,P,R,style);
-					
+
 				elseif A = (0,1):
 					p_label.top(thetext,P,R,style);
-					
+
 				elseif A = (1,1):
 					p_label.urt(thetext,P,R,style);
-					
+
 				elseif A = (-1,0):
 					p_label.lft(thetext,P,R,style);
-					
+
 				elseif A = (1,0):
 					p_label.rt(thetext,P,R,style);
-					
+
 				elseif A = (-1,-1):
 					p_label.llft(thetext,P,R,style);
-					
+
 				elseif A = (0,-1):
 					p_label.bot(thetext,P,R,style);
-					
+
 				elseif A = (1,-1):
 					p_label.lrt(thetext,P,R,style);
-					
+
 				else:
 					p_label(thetext,P,R,style);
-					
+
 				fi;
 			enddef;
-			
+
 		endcode
 	endlayout
