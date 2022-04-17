@@ -183,8 +183,8 @@ line wall
   289.6675 522.0081 299.4877 527.2793 299.4877 527.2793
 endline
 
-point 245.594 528.879 continuation 
-point 317.334 535.983 continuation 
+point 245.594 528.879 continuation -scale xs
+point 317.334 535.983 continuation -scale xs
 point 160.925 526.777 dig 
 line floor-step 
   284.6718 543.822
@@ -372,8 +372,8 @@ line wall
 endline
 
 point 312.536 502.488 station -name 11
-point 255.94 426.617 continuation 
-point 272.516 458.73 continuation 
+point 255.94 426.617 continuation -scale xs
+point 272.516 458.73 continuation -scale xs
 line chimney -outline none
   280.9994 457.2595
   280.9994 457.2595 281.5006 457.9754 282.1449 458.8345

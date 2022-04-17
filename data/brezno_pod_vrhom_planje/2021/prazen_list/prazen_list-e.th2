@@ -1343,8 +1343,8 @@ line wall:invisible
   201.3568 426.349
 endline
 
-point 270.694 321.003 continuation 
-point 270.428 491.948 continuation 
+point 270.694 321.003 continuation -scale xs
+point 270.428 491.948 continuation -scale xs
 line wall -subtype blocks
   402.4603 492.4296
   419.6389 513.4676

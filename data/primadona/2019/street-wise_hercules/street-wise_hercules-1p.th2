@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap street-wise_hercules-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 
-point 159.0685 2381.0877 continuation -scale xl
+point 159.0685 2381.0877 continuation -scale xs
 point 230.2 2673.2 u:label -attr text "Street-wise Hercules" -align tl -attr lvl 3
 line wall 
   20.96 1984.71

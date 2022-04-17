@@ -2747,7 +2747,7 @@ area u:smallblocks_MY -attr scale 0.9
   brezno_planja_ent-3p_u_smallblocks_MY_3
 endarea
 
-point 275.156 755.623 continuation -align br -scale s
+point 275.156 755.623 continuation -align br -scale xs
 point 934.836 444.056 narrow-end -align bl -scale s
 line wall -clip off -outline none
   965.1478 584.7884
@@ -2757,7 +2757,7 @@ line wall -clip off -outline none
   879.252 587.6201 876.4203 587.1482 876.4203 587.1482
 endline
 
-point 943.054 726.443 continuation -align br -scale s
+point 943.054 726.443 continuation -align br -scale xs
 point 334.438 823.208 label -align t -scale s -text "<bf>p6"
 point 334.675 894.3 gradient -orientation 244.80596045405622
 point 360.077 907.447 gradient -orientation 261.82332246732767
@@ -2839,7 +2839,7 @@ line u:texture_MY
   1423.0151 527.0182
 endline
 
-point 1482.46 393.827 continuation -align b -scale s
+point 1482.46 393.827 continuation -align b -scale xs
 point 1479.12 644.686 dig -align tl -scale xs
 line rock-border -close on
   1485.0797 471.7912

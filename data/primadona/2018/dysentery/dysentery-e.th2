@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap dysentery-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 
-point 1828.8338 266.7698 continuation 
+point 1828.8338 266.7698 continuation -scale xs
 line wall 
   2278.9334 362.5491
   2213.0834 363.6715
@@ -304,7 +304,7 @@ point 464.6914 223.3662 station -name 51
 point 418.2971 236.0872 station -name 50
 point 621.0851 289.5903 station -name 38
 point 343.9402 488.9066 u:label -attr text Dysentery -align t -scale l
-point -135.985 303.191 continuation 
+point -135.985 303.191 continuation -scale xs
 line rock-border -close on -clip off
   -129.6355 291.5477
   -144.9802 292.606
@@ -499,7 +499,7 @@ endscrap
 
 scrap dysentery-4e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 
-point 873.5849 502.1419 continuation 
+point 873.5849 502.1419 continuation -scale xs
 line wall -subtype invisible
   895.7095 487.8886
   842.5805 490.1334
