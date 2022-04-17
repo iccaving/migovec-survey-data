@@ -2968,7 +2968,7 @@ endscrap
 
 scrap coincidence-2s -scale [0 0 39.3701 0 0 0 1 0 m] -projection extended
 
-point 346.2864 1450.0746 continuation -align tl
+point 346.2864 1450.0746 continuation -align tl -scale xs
 line rock-border -close on
   237.5566 770.8996
   236.1825 770.8996 224.8457 766.4337 224.8457 766.4337
@@ -3029,7 +3029,7 @@ point 2178.5728 592.2882 station-name -text 19 -align t -scale xs
 point 2106.0334 792.9108 station-name -text 14 -align t -scale xs
 point 2176.5378 758.5856 station-name -text 13 -align r -scale xs
 point 1124.7438 1519.1257 label -text "continuing chimney" -align tr -scale s
-point 888.0461 1708.0742 continuation 
+point 888.0461 1708.0742 continuation -scale xs
 line rock-border -close on -clip off
   256.623 390.9465
   237.5944 399.1652
@@ -3054,9 +3054,9 @@ line border -close on -id water1
 endline
 
 point 868.465 904.1924 water-flow -orientation 180.0
-point 842.9259 876.4488 continuation 
-point 2858.6606 2471.935 continuation 
-point 2608.8286 2369.7261 continuation 
+point 842.9259 876.4488 continuation -scale xs
+point 2858.6606 2471.935 continuation -scale xs
+point 2608.8286 2369.7261 continuation -scale xs
 line u:texture_MY 
   1457.7517 388.7906
   1457.2381 388.344 1454.3398 387.8964 1438.0812 392.3906
@@ -3079,7 +3079,7 @@ line u:texture_MY
   1345.7665 216.6831 1326.8189 222.5131 1326.8189 222.5131
 endline
 
-point 1044.7908 1540.1011 continuation 
+point 1044.7908 1540.1011 continuation -scale xs
 line wall 
   2053.65 863.11
   2055.85 860.91 2051.86 844.49 2049.38 843.46

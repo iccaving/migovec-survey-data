@@ -921,7 +921,7 @@ line u:texture_MY
   825.06 664.31 820.14 662.25 815.86 660.11
 endline
 
-point 966.48 704.92 continuation 
+point 966.48 704.92 continuation -scale xs
 point 996.2 696.46 label -text "aven +12m" -align r -scale s
 line u:splay -visibility off
   962.15 279.98
@@ -1787,7 +1787,7 @@ line border -subtype invisible -id smallblocks1 -close on
   491.3501 1315.3802 497.5481 1310.7317 497.5481 1310.7317
 endline
 
-point 418.3816 1536.5128 continuation 
+point 418.3816 1536.5128 continuation -scale xs
 point 584.4757 1472.6557 label -text "mud ramp" -align r -scale s
 point 715.6377 1160.5337 label -text "<bf>p4<bf>" -align r
 line u:texture_MY 
@@ -2583,7 +2583,7 @@ line border -subtype invisible -id smallblocks8 -close on
   215.4922 2903.8954
 endline
 
-point 287.9421 2545.9014 continuation 
+point 287.9421 2545.9014 continuation -scale xs
 line u:texture_MY 
   409.3809 2370.1326
   414.0294 2349.6791
@@ -2867,7 +2867,7 @@ point 446.376 2416.9368 station-name -text 28 -align r -scale xs
 point 530.0 2480.0 label -text "2019 Extensions" -align r -scale xl
 point 121.4002 2808.4214 water-flow -orientation 90.0
 point 122.715 2850.4952 water-flow -orientation 90.0
-point 163.5573 3046.512 continuation 
+point 163.5573 3046.512 continuation -scale xs
 area u:smallblocks_MY
   smallblocks2
 endarea
@@ -3074,8 +3074,8 @@ line u:texture_MY
   456.6753 2390.9711 472.0147 2356.7862 478.5887 2333.558
 endline
 
-point 472.7832 2438.7425 continuation 
-point 452.322 2507.0026 continuation 
+point 472.7832 2438.7425 continuation -scale xs
+point 452.322 2507.0026 continuation -scale xs
 line rock-border -close on
   390.0585 1967.3851
   381.2932 1971.3295

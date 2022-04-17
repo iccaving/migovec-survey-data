@@ -268,7 +268,7 @@ line pit
   360.61 24.95
 endline
 
-point 451.28 101.80 continuation -align t
+point 451.28 101.80 continuation -align t -scale xs
 
 line wall
   -33.57 1868.7
@@ -1913,7 +1913,7 @@ endline
 
 point 583.74 -723.8299999999999 label -scale s -align b -text "red alcove"
 
-point -790.05 2570.66 continuation
+point -790.05 2570.66 continuation -scale xs
 
 area snow
   l471-967-3193

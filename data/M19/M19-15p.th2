@@ -1667,7 +1667,7 @@ line pit
   smooth off
 endline
 
-point -790.05 2570.66 continuation
+point -790.05 2570.66 continuation -scale xs
 
 endscrap
 
@@ -1709,7 +1709,7 @@ line pit
   360.61 24.95
 endline
 
-point 451.28 101.80 continuation -align t
+point 451.28 101.80 continuation -align t -scale xs
 
 line rock-border -close on
   258.14 -372.8
