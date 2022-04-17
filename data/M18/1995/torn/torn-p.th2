@@ -5,9 +5,9 @@ encoding  utf-8
 
 scrap torn-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-point 219.7407 103.8128 u:label -attr lvl 1 -attr text M-18 -align tr -attr style 6
+point 389.7407 103.8128 u:label -attr lvl 1 -attr text M-18 -align tr -attr style 6
 point 173.5768 72.2693 entrance -orientation 223.57402
-line wall 
+line wall
   -131.61 5.95
   -131.61 5.95 -122.9961 -4.8507 -116.7949 -6.9621
   -111.786 -8.6675 -106.2319 -6.3195 -100.9502 -6.0018
@@ -40,7 +40,7 @@ line wall
   130.0214 23.0042 135.4005 27.1281 135.4005 27.1281
 endline
 
-line wall 
+line wall
   128.9185 31.8095
   128.9185 31.8095 126.6978 29.9027 125.9176 28.6886
   124.9174 27.1321 124.8366 25.1088 123.877 23.527
@@ -110,4 +110,3 @@ point -98.78 -5.12 station -name 3
 point -116.89 -5.75 station -name 2
 point -131.61 7.95 station -name 1
 endscrap
-

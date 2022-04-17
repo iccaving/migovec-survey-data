@@ -155,7 +155,11 @@ layout custom_points
 	      thfill (-.2u,-.2u)--(-.2u,.2u)--(.2u,.2u)..(.2u,-.2u)--cycle;
 	    enddef;
 
+
+
 	    # a straight blue arrow for drips
+
+
 	    def p_u_waterdrip_MY (expr P,R,S,A)=
 	      U:=(.2u,.2u);
 	      T:=identity aligned A rotated R scaled S shifted P;

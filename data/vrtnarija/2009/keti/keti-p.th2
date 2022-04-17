@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap keti-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -508.405 569.995 u:label -align br -attr lvl 1 -attr text "Metal Aven area" -scale xs
+point -508.405 569.995 u:label -align br -attr lvl 2 -attr text "Metal Aven area" -scale xs
 
 line rock-edge -clip off -close on -outline none
   -555.5959 610.9449
@@ -15,7 +15,7 @@ line rock-edge -clip off -close on -outline none
   -555.5959 16.4857
 endline
 
-line pit 
+line pit
   -45.748 -61.854
   -42.7157 -63.4535 -40.8533 -59.4676 -39.9596 -59.1974
   -38.7424 -58.1682 -37.8828 -57.729 -36.8478 -56.2219
@@ -93,8 +93,8 @@ line rock-border -close on
   -20.792 -50.4227
 endline
 
-point 24.4092 -31.3032 u:label -align br -attr lvl 1 -attr text KETI
-line wall 
+point 24.4092 -31.3032 u:label -align br -attr lvl 2 -attr text KETI
+line wall
   65.5392 25.8063
   65.5392 25.8063 65.6205 22.967 65.7082 22.4643
   65.9263 21.2138 65.4883 18.6435 63.3401 17.1797
@@ -109,7 +109,7 @@ line wall
   -36.6938 -58.249 -37.9829 -53.7193 -38.328 -53.3362
 endline
 
-line wall 
+line wall
   -46.9479 -60.6548
   -40.4703 -69.8333
   -29.8325 -70.3384 -11.3961 -67.4969 -9.561 -66.2322
@@ -156,7 +156,7 @@ endscrap
 
 scrap metalaven-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 
-point 469.9221 -577.9735 map-connection 
+point 469.9221 -577.9735 map-connection
 line rock-edge -clip off -close on -outline none
   -555.5959 610.9449
   469.9221 610.9449
@@ -173,4 +173,3 @@ endline
 
 point -52.4 66.5 station -name 19
 endscrap
-

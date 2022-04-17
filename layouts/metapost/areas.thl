@@ -1,15 +1,15 @@
 layout custom_areas
-	
+
 	code metapost
-		
+
 		# redifinition of existing areas
-		
+
 		# blueish water area
 		def a_water_MY (expr p) =
 			T:=identity;
-			thfill p withcolor (0.1,0.1,0.25);
+			thfill p withcolor (0.0352, 0.5568, 0.8392);
 		enddef;
-		
+
 		# define an ice pattern
 		beginpattern(pattern_ice_MY);
 			pickup PenC;
@@ -19,14 +19,14 @@ layout custom_areas
 			patternxstep(0.6u);
 			patternystep(0.6u);
 		endpattern;
-		
+
 		# ice filled with that pattern
 		def a_ice_MY (expr Path) =
 			T:=identity;
 			thclean Path;
 			thfill Path withpattern pattern_ice_MY;
 		enddef;
-		
+
 		# random blue crystal in snow area
 		def a_snow_MY (expr P) =
 			T:=identity;
@@ -54,7 +54,7 @@ layout custom_areas
 			drawoptions();
 			draw tmp_pic;
 		enddef;
-		
+
 		# define a clay pattern
 		beginpattern(pattern_clay_MY);
 			pickup PenD;
@@ -65,14 +65,14 @@ layout custom_areas
 			patternystep(0.2u);
 			patterncolor(0.65,0.55,0.1);
 		endpattern;
-		
+
 		# fill clay areas with clay pattern
 		def a_clay_MY (expr Path) =
 			T:=identity;
 			thclean Path;
 			thfill Path withpattern pattern_clay_MY;
 		enddef;
-		
+
 		# randomly put dots in sand
 		def a_sand_MY (expr p) =
 			T:=identity;
@@ -99,7 +99,7 @@ layout custom_areas
 			drawoptions();
 			draw tmp_pic;
 		enddef;
-		
+
 		# grey pebbles, randomly oriented in area
 		def a_pebbles_MY (expr p) =
 			T:=identity;
@@ -115,7 +115,7 @@ layout custom_areas
 			draw (((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle) scaled 0.035u) withcolor(0.5,0.5,0.5);
 			fill (((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle) scaled 0.035u) withcolor(0.95,0.95,0.95);
 			);
-			
+
 			tmp_pebbleb := image (
 			draw (((((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle)rotated 35)  scaled 0.025u) shifted (0.2u,0.2u)) withcolor(0.5,0.5,0.5);
 			fill (((((-.12u,0)..(.05u,0)..(.007u,0.003u)..(-0.004u,0.005u)--cycle)rotated 35) scaled 0.025u) shifted (0.2u,0.2u)) withcolor(0.95,0.95,0.95);
@@ -136,16 +136,16 @@ layout custom_areas
 			drawoptions();
 			draw tmp_pic;
 		enddef;
-		
+
 		initsymbol("a_snow_MY");
 		initsymbol("a_ice_MY");
 		initsymbol("a_water_MY");
 		initsymbol("a_clay_MY");
 		initsymbol("a_sand_MY");
 		initsymbol("a_pebbles_MY");
-		
+
 		## new definitions
-		
+
 		# randomly fill boulder areas with boulders, scalable as wished
 		def a_u_smallblocks_MY (expr p) =
 			T:=identity;
@@ -153,13 +153,13 @@ layout custom_areas
 			save S,sc;
 			string S;
 			numeric sc;
-			
+
 			# if scale attribute is given use that, otherwise default to 1.
 			if known ATTR_scale:
 			sc :=scantokens(ATTR_scale);
 			else: sc:=1;
 			fi;
-			
+
 			path q, qq; q = bbox p;
 			picture tmp_pic;
 			uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
@@ -167,13 +167,13 @@ layout custom_areas
 			for i = xpart llcorner q step 0.4uu*sc until xpart urcorner q:
 			for j = ypart llcorner q step 0.4uu*sc until ypart urcorner q:
 			k := (4+normaldeviate)/5;
-			
+
 			qq := punked (((-.17uu*sc,.07uu*sc)--(-.17uu*sc,-.07uu*sc)--(0,-.12uu*sc)--(.17uu*sc,-.08uu*sc)--(.15uu*sc,.06uu*sc)--(0,.13uu*sc)--cycle)
 			randomized (uu/9))
 			rotated uniformdeviate(360)
 			scaled k
 			shifted ((i,j) randomized 0.25uu);
-			
+
 			if xpart (p intersectiontimes qq) < 0:
 			thclean qq;
 			thdraw qq withcolor(0.3,0.3,0.3);
@@ -185,7 +185,7 @@ layout custom_areas
 			drawoptions();
 			draw tmp_pic;
 		enddef;
-		
+
 		# initialise redefined symbols
 		initsymbol("a_u_smallblocks_MY");
 	endcode

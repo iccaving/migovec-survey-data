@@ -7,7 +7,7 @@ lookup map:cave
   m-all-e@belladonna.primadona_ubend_monatip.system_migovec [95 70 100] ""
   m-all-e@ubend.primadona_ubend_monatip.system_migovec [95 70 100] ""
 	m-all-e@monatip.primadona_ubend_monatip.system_migovec [80 89.6 100] "Monatip"
-	m-all-e@vrtnarija_vilinska.system_migovec [92.2 100 66.7] "Vrtnarija"
+	m-all-e@vrtnarija_vilinska.system_migovec [100 92.2 66.7] "Vrtnarija"
 	m-all-e@m2m16m18.system_migovec [66.7 100 72.2] "M2-M16-M18"
 
 
@@ -15,7 +15,7 @@ lookup map:cave
   m-all-p@belladonna.primadona_ubend_monatip.system_migovec [95 70 100] ""
   m-all-p@ubend.primadona_ubend_monatip.system_migovec [95 70 100] ""
   m-all-p@monatip.primadona_ubend_monatip.system_migovec [80 89.6 100] "Monatip"
-  m-all-p@vrtnarija_vilinska.system_migovec [92.2 100 66.7] "Vrtnarija"
+  m-all-p@vrtnarija_vilinska.system_migovec [100 92.2  66.7] "Vrtnarija"
   m-all-p@m2m16m18.system_migovec [66.7 100 72.2] "M2-M16-M18"
 endlookup
 
@@ -33,6 +33,7 @@ layout local-p
   base-scale 1 3000
   fonts-setup 6 8 10 12 14
   colour map-fg map:cave
+	symbol-colour area water [3.52 55.68 83.92]
 
   symbol-hide line survey
   symbol-hide point station
@@ -64,7 +65,7 @@ layout local-e
 endlayout
 
 select m-all-e@system_migovec
-export map -o ../../outputs/system_migovec_EE_ENG.pdf -projection extended -layout local-e
+#export map -o ../../outputs/system_migovec_EE_ENG.pdf -projection extended -layout local-e
 
 #export database -o ../../outputs/system_migovec.sql
 #export model -o ../../outputs/system_migovec.3d

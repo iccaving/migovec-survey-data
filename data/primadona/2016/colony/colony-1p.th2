@@ -710,7 +710,7 @@ line rock-border -close on
   1513.87 -3109.29
 endline
 
-point 1313.68 -1604.23 u:label -attr lvl 1 -attr text "Colony" -align bl -scale s
+point 1313.68 -1604.23 u:label -attr lvl 2 -attr text "Colony" -align bl -scale s
 
 point 500.00 -600.00 station -name "10"
 
@@ -731,5 +731,3 @@ point 1691.13 -3440.33 station -name "7"
 point 1675.79 -3493.81 station -name "8"
 
 endscrap
-
-

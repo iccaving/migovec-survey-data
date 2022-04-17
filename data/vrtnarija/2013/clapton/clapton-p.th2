@@ -5,47 +5,47 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line survey 
+line survey
   702.3879 633.7263
   730.449 694.2622
 endline
 
-line survey 
+line survey
   580.6146 616.6851
   702.3879 633.7263
 endline
 
-line survey 
+line survey
   425.7234 541.1833
   580.6146 616.6851
 endline
 
-line survey 
+line survey
   390.7348 555.9153
   425.7234 541.1833
 endline
 
-line survey 
+line survey
   252.8849 553.4015
   390.7348 555.9153
 endline
 
-line survey 
+line survey
   479.5948 602.4207
   580.6146 616.6851
 endline
 
-line survey 
+line survey
   454.2522 524.4051
   479.5948 602.4207
 endline
 
-line survey 
+line survey
   458.6367 441.0696
   454.2522 524.4051
 endline
 
-line survey 
+line survey
   458.6367 441.0696
   303.5117 476.9936
 endline
@@ -55,8 +55,8 @@ endscrap
 
 scrap clapton-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 480.75 364.6367 u:label -align l -scale m -attr lvl 1 -attr text Clapton
-line wall 
+point -280.75 554.6367 u:label -align bl -scale l -attr lvl 1 -attr text Clapton
+line wall
   305.3712 447.4937
   318.8153 462.8583 347.7604 449.1048 414.9805 426.0579
   482.2006 403.011 472.3824 415.9782 483.9447 426.4639
@@ -66,7 +66,7 @@ line wall
   735.3268 620.5784 751.943 668.3497 750.0224 706.7612
 endline
 
-line wall 
+line wall
   706.9477 694.5488
   713.8144 661.5595 674.6516 650.9183 622.8485 636.4855
   576.5417 623.584 483.1126 641.5482 460.0657 606.9779
@@ -87,4 +87,3 @@ point 454.2522 524.4051 station -name 3
 point 303.5117 476.9936 station -name 1
 point 458.6367 441.0696 station -name 2
 endscrap
-

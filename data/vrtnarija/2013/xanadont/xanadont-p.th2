@@ -4,52 +4,52 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line survey 
+line survey
   675.797 1139.9236
   709.0988 1179.5356
 endline
 
-line survey 
+line survey
   709.0988 1179.5356
   778.3286 1084.1896
 endline
 
-line survey 
+line survey
   778.3286 1084.1896
   660.2586 988.8436
 endline
 
-line survey 
+line survey
   660.2586 988.8436
   547.1128 875.6978
 endline
 
-line survey 
+line survey
   547.1128 875.6978
   608.2815 610.5966
 endline
 
-line survey 
+line survey
   608.2815 610.5966
   568.086 559.2032
 endline
 
-line survey 
+line survey
   568.086 559.2032
   482.4788 524.4424
 endline
 
-line survey 
+line survey
   482.4789 524.4424
   412.9937 450.0331
 endline
 
-line survey 
+line survey
   412.9937 450.0331
   248.1262 316.4977
 endline
 
-line survey 
+line survey
   248.1262 316.4977
   359.0106 41.9495
 endline
@@ -59,7 +59,7 @@ endscrap
 
 scrap xanadont-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line wall:invisible 
+line wall:invisible
   916.4715 535.4295
   913.8166 682.8153
 endline
@@ -69,13 +69,13 @@ line pit -clip off
   885.0669 664.1425 867.6624 607.834 884.555 561.7634
 endline
 
-point 686.605 466.7 u:label -align br -attr lvl 1 -attr text "Xanadon't" -scale m
-line pit 
+point 686.605 466.7 u:label -align br -attr lvl 2 -attr text "Xanadon't" -scale m
+line pit
   709.412 1142.0213
   709.412 1142.0213 682.0438 1172.0302 688.7658 1189.0753
 endline
 
-line wall 
+line wall
   691.7422 1148.8028
   709.3968 1165.0994 724.6067 1142.7516 731.5475 1133.4782
   739.5622 1122.7702 756.4343 1092.5519 752.6997 1080.669
@@ -92,7 +92,7 @@ line wall
   286.5487 122.2246 298.7712 38.0254 305.5614 28.5191
 endline
 
-line wall 
+line wall
   376.1801 33.9513
   376.1801 33.9513 374.822 57.0381 369.3898 78.7669
 endline
@@ -146,4 +146,3 @@ point 412.994 450.033 station -name 3
 point 359.011 41.9495 station -name 1
 point 248.126 316.498 station -name 2
 endscrap
-

@@ -145,16 +145,16 @@ point -11.9062 149.8048 passage-height -align t -value 90
 point 54.7364 -196.2455 passage-height -align t -value 100
 point -80.0343 -152.8221 passage-height -align t -value 50
 point 23.6841 -298.9597 passage-height -align t -value 30
-line pit 
+line pit
   -66.4174 126.107
   -81.8226 69.0908
   -118.1504 16.9756
   -126.2987 -4.0742
 endline
 
-point 178.9232 108.6441 u:label -align r -attr lvl 1 -attr text "Galaktikđa" -scale l
+point 278.9232 -108.6441 u:label -align r -attr lvl 1 -attr text "Galaktika" -scale l
 point 94.2882 332.1993 water-flow -align r -orientation 70.0 -scale l
-line wall 
+line wall
   90.8672 333.9398
   82.7047 333.5797
   82.7047 333.5797 78.0233 332.3793 76.943 332.7394
@@ -181,7 +181,7 @@ line wall
   -81.1435 117.1319
 endline
 
-line wall 
+line wall
   -141.1124 -276.6729
   -141.1124 -276.6729 -137.8422 -262.7828 -133.089 -266.857
   -128.3358 -270.9311 -110.3416 -277.3819 -106.2675 -280.098
@@ -216,7 +216,7 @@ line wall
   79.4637 324.697 89.1867 327.818 89.1867 327.818
 endline
 
-line wall 
+line wall
   -130.7124 2.0371
   -126.1658 -4.0714
   -130.3485 -15.6155
@@ -247,4 +247,3 @@ point -130.59 -100.43 station -name 3
 point -119.25 5.94 station -name 2
 point -30.51 54.84 station -name 1
 endscrap
-

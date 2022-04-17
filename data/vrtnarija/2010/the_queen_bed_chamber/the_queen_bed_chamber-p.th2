@@ -5,7 +5,10 @@ encoding  utf-8
 
 scrap the_queen_bed_chamber-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 346.8596 480.7123 u:label -align r -attr lvl 1 -attr text "The Queen's Bedchamber"
+point 130.8596 680.7123 u:label -align tr -attr lvl 1 -attr text "The Queen's"
+point 130.8596 630.7123 u:label -align br -attr lvl 1 -attr text "Bedchamber"
+
+
 line rock-border -close on
   290.1267 374.1518
   288.8063 365.5092
@@ -41,12 +44,12 @@ line rock-border -close on
   275.3623 384.3549
 endline
 
-line wall 
+line wall
   747.1509 499.1696
   748.7819 508.6715 757.7485 525.9652 757.7485 525.9652
 endline
 
-line wall 
+line wall
   746.112 549.606
   732.443 541.7932 726.304 541.4478 725.8963 536.3009
   725.4886 531.1541 714.8872 522.0482 700.6162 523.6318
@@ -94,4 +97,3 @@ point 271.6081 380.0848 station -name 3
 point 264.9181 395.8348 station -name 2
 point 254.9981 447.0148 station -name 1
 endscrap
-

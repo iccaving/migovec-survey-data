@@ -4,13 +4,13 @@ encoding  utf-8
 
 scrap stagger_lee-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line pit 
+line pit
   39.7879 -24.4306
   28.6011 -27.3147 1.747 -57.6772 17.8757 -79.7632
 endline
 
-point 105.289 -104.38 u:label -attr lvl 1 -attr text "Stagger Lee"
-line wall 
+point 105.289 -104.38 u:label -attr lvl 2 -attr text "Stagger Lee"
+line wall
   -33.2464 0.5408
   -33.2464 0.5408 -11.6994 -9.0516 -13.225 -22.2591
   -14.2373 -31.0229 -19.2033 -44.5214 -15.7815 -48.037
@@ -58,7 +58,7 @@ endscrap
 
 scrap stagger_lee-2p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 
-line wall 
+line wall
   -2.8139 -49.5387
   -2.1604 -49.9527 -1.6658 -50.7657 -1.4859 -52.3719
   -0.9799 -56.89 -2.2784 -54.5091 -0.98 -56.89
@@ -72,7 +72,7 @@ line wall
   42.0287 -122.9581 47.7325 -122.9581 47.7325 -122.9581
 endline
 
-line wall 
+line wall
   44.684 -113.5154
   44.684 -113.5154 31.5319 -116.3694 29.6419 -113.1201
   27.8529 -110.0444 28.5153 -98.0164 28.3693 -97.1405
@@ -97,37 +97,37 @@ point 53.58 -117.68 station -name 22
 point 53.58 -117.68 station -name 21
 point 63.43 -114.21 station -name 20
 point 71.77 -122.56 station -name 19
-line survey 
+line survey
   -45.16 -29.65
   -60.28 -39.49
 endline
 
-line survey 
+line survey
   -29.25 -32.17
   -45.16 -29.65
 endline
 
-line survey 
+line survey
   6.89 -53.03
   -29.25 -32.17
 endline
 
-line survey 
+line survey
   6.1 -61.38
   6.89 -53.03
 endline
 
-line survey 
+line survey
   20.75 -66.42
   6.1 -61.38
 endline
 
-line survey 
+line survey
   24.37 -117.2
   20.75 -66.42
 endline
 
-line survey 
+line survey
   24.37 -117.2
   53.58 -117.68
 endline
@@ -136,15 +136,14 @@ line survey -close on
   53.58 -117.68
 endline
 
-line survey 
+line survey
   71.77 -122.56
   53.58 -117.68
 endline
 
-line survey 
+line survey
   71.77 -122.56
   63.43 -114.21
 endline
 
 endscrap
-

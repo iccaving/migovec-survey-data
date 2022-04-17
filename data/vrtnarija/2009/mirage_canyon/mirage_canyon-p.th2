@@ -4,8 +4,8 @@ encoding  utf-8
 
 scrap mirage_canyon-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 550.0783 934.0246 u:label -align r -attr lvl 1 -attr text "Mirage Canyon"
-line wall 
+point 550.0783 934.0246 u:label -align r -attr lvl 2 -attr text "Mirage Canyon"
+line wall
   542.3821 923.3759
   536.6204 929.1377 520.2355 947.5632 513.0333 961.4873
   505.8312 975.4115 492.8673 995.8176 485.4251 999.4187
@@ -30,4 +30,3 @@ point 452.484 954.81 station -name 3
 point 486.814 964.02 station -name 2
 point 536.574 920.79 station -name 1
 endscrap
-

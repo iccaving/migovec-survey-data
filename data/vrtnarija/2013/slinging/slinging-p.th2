@@ -5,77 +5,77 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line survey 
+line survey
   849.0163 830.0884
   853.326 843.7153
 endline
 
-line survey 
+line survey
   842.0967 868.3287
   849.0163 830.0884
 endline
 
-line survey 
+line survey
   842.0967 868.3287
   845.1923 902.745
 endline
 
-line survey 
+line survey
   845.1923 902.745
   691.0475 974.6732
 endline
 
-line survey 
+line survey
   691.0475 974.6732
   666.9197 890.3017
 endline
 
-line survey 
+line survey
   666.9197 890.3017
   541.9406 765.3227
 endline
 
-line survey 
+line survey
   541.9406 765.3227
   463.0928 719.6771
 endline
 
-line survey 
+line survey
   463.0928 719.6771
   430.5885 728.2964
 endline
 
-line survey 
+line survey
   430.5885 728.2964
   381.3617 716.0959
 endline
 
-line survey 
+line survey
   381.3617 716.0959
   406.6731 510.8122
 endline
 
-line survey 
+line survey
   406.6731 510.8122
   209.7659 362.4338
 endline
 
-line survey 
+line survey
   209.7659 362.4338
   112.9815 332.7824
 endline
 
-line survey 
+line survey
   691.0475 974.6732
   658.786 853.5182
 endline
 
-line survey 
+line survey
   658.786 853.5182
   604.066 792.8193
 endline
 
-line survey 
+line survey
   604.066 792.8193
   397.5987 926.8728
 endline
@@ -107,11 +107,11 @@ line border -close on -id slinging-1p_water_1 -visibility on
   576.7847 444.2277 611.7536 442.1417 641.0 496.3676
 endline
 
-area water 
+area water
   slinging-1p_water_1
 endarea
 
-line pit 
+line pit
   665.4449 677.6674
   655.2595 711.6187 632.1727 748.286 576.4926 780.8792
   520.8125 813.4725 454.947 820.9417 428.465 858.2881
@@ -119,7 +119,7 @@ line pit
   341.5498 994.0932 340.8708 996.1303 340.8708 996.1303
 endline
 
-line pit 
+line pit
   296.0551 973.0434
   296.0551 973.0434
   296.0551 973.0434 298.7712 968.9693 302.8453 959.4629
@@ -129,12 +129,16 @@ line pit
   389.0816 505.1949 431.1811 459.7002 465.8114 431.8602
 endline
 
-line pit 
+line pit
   717.8145 859.4568
   706.2911 898.8286 659.7171 929.0776 625.1468 949.2437
 endline
 
-point 169.0105 716.9439 u:label -align bl -attr text "Slinging In The Rain" -attr lvl 2
+point 169.0105 656.9439 u:label -align tl -attr text "Slinging In" -attr lvl 1
+
+point 169.0105 606.9439 u:label -align bl -attr text "The Rain" -attr lvl 1
+
+
 line rock-border -close on
   7.9224 336.4605
   2.6408 334.9001 -3.241 333.2196 -6.3619 328.8983
@@ -208,7 +212,7 @@ line rock-border -close on
   431.2232 777.9771 419.6377 784.9534 419.6377 784.9534
 endline
 
-line wall 
+line wall
   -24.5697 265.5542
   34.5891 268.661 114.6829 298.4287 127.2448 305.898
   154.118 321.8766 221.3623 358.5254 230.8686 362.5996
@@ -229,7 +233,7 @@ line wall
   823.9268 872.5552 819.5226 861.169 819.5226 861.169
 endline
 
-line wall 
+line wall
   869.492 898.6901
   871.5291 921.098 844.1983 942.657 818.7773 953.861
   796.0219 963.8901 765.4314 976.4386 749.6441 981.8708
@@ -266,4 +270,3 @@ point 658.786 853.5182 station -name 3
 point 397.5987 926.8728 station -name 1
 point 604.066 792.8193 station -name 2
 endscrap
-

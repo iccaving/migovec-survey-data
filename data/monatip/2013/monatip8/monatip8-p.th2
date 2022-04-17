@@ -6,12 +6,15 @@ encoding  utf-8
 
 scrap monatip8-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
-line pit 
+point -45.87 -86.43 u:label -attr text "Telovadci" -align br -scale l -attr lvl 1
+
+
+line pit
   12.4837 -7.2022
   11.2834 -7.2022 6.2419 -5.7617 -1.6805 -5.7617
 endline
 
-line wall 
+line wall
   33.6118 82.5016
   33.6118 82.5016 22.5776 80.9738 23.4264 77.2391
   24.2752 73.5045 20.201 63.6586 19.6917 61.9611
@@ -60,4 +63,3 @@ point -7.8 -14.61 station -name 3
 point 2.91 -49.8 station -name 2
 point -40.87 -80.43 station -name 1
 endscrap
-

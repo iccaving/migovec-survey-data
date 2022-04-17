@@ -7,13 +7,13 @@ scrap palace2-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 
 point 674.2723 809.3983 gradient -orientation 255.54108
 point 689.4861 881.8576 u:label -attr lvl 2 -attr text "Palace of King Minos" -align tr -scale l
-line floor-step 
+line floor-step
   758.1319 302.1663
   716.7113 304.2034
   701.0938 301.1478
 endline
 
-point 867.4533 245.1132 u:label -attr lvl 2 -attr text "Royal Albert Hall" -align r -scale l
+point 867.4533 245.1132 u:label -attr lvl 1 -attr text "Royal Albert Hall" -align r -scale l
 line rock-border -close on
   689.5503 261.4248
   689.5503 261.4248 688.1923 250.8999 689.5503 250.2209
@@ -116,7 +116,7 @@ line wall -close on -outline in
   661.2776 606.6613 661.8178 607.5016 661.8178 607.5016
 endline
 
-line wall 
+line wall
   268.8941 959.1234
   269.1271 961.9184 297.0736 979.4942 305.5614 980.5127
   314.0493 981.5313 335.0991 982.2103 338.8337 980.1732
@@ -147,7 +147,7 @@ line wall
   749.6441 100.8353 790.5316 65.1058 799.0194 64.7662
 endline
 
-line wall 
+line wall
   135.1261 1042.304
   140.2188 1041.9645 177.9047 1032.4582 182.9973 1030.7606
   188.09 1029.063 199.294 1026.0074 202.0101 1023.9703
@@ -157,7 +157,7 @@ line wall
   216.2696 940.7897 236.8634 947.8211 238.0602 945.0979
 endline
 
-line wall 
+line wall
   866.0065 101.8103
   863.2926 114.7412 851.1584 152.1017 848.7818 162.6266
   846.4052 173.1515 842.6706 225.776 836.8988 230.1896
@@ -210,4 +210,3 @@ point 222.5929 945.5496 station -name 3
 point 210.5429 1031.2196 station -name 2
 point 133.6929 1051.7696 station -name 1
 endscrap
-

@@ -21,7 +21,7 @@ line wall -close on -outline in
   603.2758 510.2976 511.8204 732.6202 511.8204 732.6202
 endline
 
-line wall 
+line wall
   52.964 832.4852
   80.125 794.4597 184.8879 643.6479 217.4812 642.2898
   250.0744 640.9318 453.2794 710.8231 453.2794 710.8231
@@ -41,8 +41,8 @@ endscrap
 scrap xanadu-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 point 473.887 741.765 station -name 9
-point 757.074 995.7817 u:label -align tr -attr lvl 1 -attr text Xanadu -scale m
-line wall 
+point 757.074 995.7817 u:label -align tr -attr lvl 2 -attr text Xanadu -scale m
+line wall
   397.9089 354.4513
   369.3898 435.9343 266.178 688.5318 277.0424 693.964
   287.9068 699.3962 370.1854 595.8831 386.0842 584.6891
@@ -56,7 +56,7 @@ line wall
   839.9744 562.7956 899.0297 382.9703 957.4259 266.178
 endline
 
-line wall 
+line wall
   962.2369 353.0657
   962.2369 353.0657 880.6761 573.3 852.8559 597.0481
   826.522 619.5275 772.1066 599.9203 753.1557 607.5147
@@ -84,4 +84,3 @@ point 371.127 346.99 station -name 12
 point 426.598 714.418 station -name 11
 point 426.598 714.418 station -name 10
 endscrap
-

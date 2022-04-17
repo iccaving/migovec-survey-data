@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap pico-p1 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 
-line wall:invisible 
+line wall:invisible
   537.8484 720.1188
   545.5452 754.3585
 endline
@@ -13,13 +13,13 @@ point 537.72 735.478 station -name 13
 point 520.935 735.179 station -name 12
 point 516.385 747.637 station -name 11
 point 513.028 780.013 station -name 10
-line floor-step 
+line floor-step
   519.75 745.75
   519.75 745.75 517.75 761.75 518.25 767.25
   518.75 772.75 520.0 787.75 520.0 787.75
 endline
 
-line floor-step 
+line floor-step
   538.8673 723.8534
   538.8673 723.8534 536.0 743.5 536.25 744.75
   536.5 746.0 537.25 756.5 537.25 756.5
@@ -32,7 +32,7 @@ line pit -outline out
   514.25 769.5 514.75 791.25 514.75 791.25
 endline
 
-line wall 
+line wall
   487.5 719.5
   487.5 719.5 495.22 719.7 497.0 720.0
   503.0 721.0 506.5165 720.2822 511.25 720.75
@@ -40,7 +40,7 @@ line wall
   529.3699 722.6242 534.5613 722.3998 537.8484 720.1188
 endline
 
-line wall 
+line wall
   545.5452 754.3585
   545.5452 754.3585 534.5078 762.5037 533.1627 762.573
   531.6282 762.652 524.2877 770.8707 522.4227 771.5368
@@ -74,36 +74,36 @@ line border:invisible -close on -id blocks
   520.9353 737.1794 501.1243 755.3753 501.1243 755.3753
 endline
 
-line wall:invisible 
+line wall:invisible
   484.2094 652.1598
   527.0 644.5
 endline
 
-point 477.9183 844.9541 u:label -align t -attr lvl 1 -attr text Pico -scale l
+point 477.9183 844.9541 u:label -align t -attr lvl 2 -attr text Pico -scale l
 point 505.704 706.696 passage-height -align t -scale xl -value 65
 point 513.028 780.013 station -name 8
 point 517.578 648.497 station -name 7
 point 496.791 803.931 water-flow -orientation 199.39998636290872
 point 435.171 798.436 water-flow -orientation 161.60000179809316
-line contour 
+line contour
   505.0 761.0
   505.0 761.0 452.5 753.0 435.5 760.0
   418.5 767.0 405.0 794.0 389.25 792.75
 endline
 
-line contour 
+line contour
   536.25 744.75
   536.25 744.75 479.0 707.0 453.5 719.5
   428.0 732.0 409.639 712.5163 403.639 711.0163
 endline
 
-line contour 
+line contour
   571.0 723.0
   571.0 723.0 536.0 682.5 519.5 678.5
   503.0 674.5 451.0429 660.0122 451.0429 660.0122
 endline
 
-line contour 
+line contour
   573.5 695.5
   573.5 695.5 539.0 679.0 549.5 656.75
 endline
@@ -113,7 +113,7 @@ line label -scale xl -text Pico
   342.5 819.5 341.0 708.0 416.0 645.0
 endline
 
-line floor-step 
+line floor-step
   570.5 740.0
   570.5 740.0 540.0 749.5 536.25 744.75
   532.5 740.0 521.5 740.0 520.0 743.5
@@ -123,7 +123,7 @@ line floor-step
   514.75 791.25
 endline
 
-line wall 
+line wall
   527.0 644.5
   527.0 644.5 527.3775 647.824 528.6795 648.6633
   537.0129 654.0351 545.3918 652.6418 549.5 656.75
@@ -133,7 +133,7 @@ line wall
   561.5 743.0 550.75 751.75 542.25 758.75
 endline
 
-line wall 
+line wall
   542.25 758.75
   536.8624 763.1869 524.3437 783.995 514.4978 799.7843
   508.8099 808.9058 461.4138 805.7114 436.0943 799.2332
@@ -141,7 +141,7 @@ line wall
   434.8802 798.9225 433.7487 798.2507 432.7841 797.4507
 endline
 
-line wall 
+line wall
   432.7841 797.4507
   416.5498 783.9867 383.5 767.75 393.0 748.25
   399.86 734.18 401.9287 708.9053 407.6787 696.6553
@@ -156,7 +156,7 @@ endscrap
 scrap pico-p3 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 
 point 508.328 620.001 station -name 6
-line wall 
+line wall
   522.0 566.5
   522.0 566.5 508.988 581.5168 511.25 589.75
   512.6156 594.7204 520.7944 594.4635 524.0 598.5
@@ -199,20 +199,20 @@ line rock-border -close on
   507.75 611.0
 endline
 
-line floor-step 
+line floor-step
   511.25 589.75
   508.75 593.25 509.25 610.0 509.25 613.0
   509.25 616.0 512.0 633.5 513.0 635.5
   514.0 637.5 527.0 644.5 527.0 644.5
 endline
 
-line floor-step 
+line floor-step
   522.0 566.5
   514.0 572.0 506.74 583.39 502.25 582.75
   498.75 582.25 505.0 568.0 503.0 561.5
 endline
 
-line wall 
+line wall
   484.2094 652.1598
   484.2094 652.1598 486.1901 645.23 485.75 641.75
   485.3189 638.3412 481.383 635.6663 481.75 632.25
@@ -237,7 +237,7 @@ line pit -close on -outline in
   534.0 536.0 529.75 534.75 529.75 534.75
 endline
 
-line wall 
+line wall
   538.75 487.75
   538.75 487.75 539.9782 491.0313 540.25 492.75
   540.8359 496.4549 540.7409 500.2568 540.5 504.0
@@ -257,7 +257,7 @@ line pit -close on -outline in
   534.0 515.0 535.25 520.75 535.25 520.75
 endline
 
-line wall 
+line wall
   503.0 561.5
   505.5 557.0 506.0866 554.3714 508.0 551.0
   509.483 548.3869 512.179 546.3903 513.0 543.5
@@ -296,7 +296,7 @@ endscrap
 
 scrap pico-p5 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 
-line wall 
+line wall
   542.0 478.5
   542.5 481.5 539.5 485.5 540.5 490.0
   541.5 494.5 543.0 509.0 542.5 512.0
@@ -315,4 +315,3 @@ endline
 
 point 529.365 501.988 station -name 1
 endscrap
-

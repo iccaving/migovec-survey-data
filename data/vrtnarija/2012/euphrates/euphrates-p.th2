@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap euphrates-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -1732.13 2485.64 u:label -align br -attr lvl 1 -attr text "Xanadu Bypass" -scale xs
+point -1732.13 2485.64 u:label -align br -attr lvl 2 -attr text "Xanadu Bypass" -scale xs
 line wall -subtype invisible
   207.4219 1110.0917
   180.534 942.0415
@@ -22,18 +22,18 @@ line wall -subtype invisible
   352.773 108.3201
 endline
 
-line wall 
+line wall
   352.773 108.3201
   343.156 79.9835 361.3492 61.665 379.9082 44.1741
 endline
 
-line pit 
+line pit
   575.692 215.1043
   575.692 215.1043 513.7535 244.3931 450.8547 214.6241
 endline
 
-point 525.277 799.919 u:label -align r -attr lvl 1 -attr text Euphrates -scale m
-line wall 
+point 525.277 799.919 u:label -align r -attr lvl 2 -attr text Euphrates -scale m
+line wall
   227.0738 927.5607
   195.6621 1052.3083 304.683 902.8948 312.4145 841.6774
   324.4652 746.2608 342.7294 620.8413 351.6015 598.8496
@@ -43,7 +43,7 @@ line wall
   452.9062 172.2231 413.7252 119.427 413.4036 119.5557
 endline
 
-line wall 
+line wall
   447.2943 82.3222
   463.27 133.7906 582.9901 96.9761 580.8939 178.9918
   574.4697 216.1058 570.9261 260.3142 609.9008 273.9195
@@ -61,61 +61,61 @@ line wall -id alt_1
   330.8282 1002.6073 316.1461 1024.2258 300.0625 1043.1443
 endline
 
-line wall 
+line wall
   300.0625 1043.1443
   276.4823 1070.8808 249.8896 1092.8138 207.4219 1110.0917
 endline
 
-line wall 
+line wall
   0.0 0.0
 endline
 
-line survey 
+line survey
   153.7523 1084.8881
   290.5815 981.9829
 endline
 
-line survey 
+line survey
   290.5815 981.9829
   380.4158 780.3279
 endline
 
-line survey 
+line survey
   380.4158 780.3279
   420.2331 607.7614
 endline
 
-line survey 
+line survey
   420.233 607.7614
   589.1729 444.7903
 endline
 
-line survey 
+line survey
   589.1729 444.7903
   660.5719 329.9475
 endline
 
-line survey 
+line survey
   660.5719 329.9475
   477.3523 244.2687
 endline
 
-line survey 
+line survey
   477.3523 244.2687
   513.0895 258.5485
 endline
 
-line survey 
+line survey
   513.0895 258.5485
   546.938 154.4344
 endline
 
-line survey 
+line survey
   546.938 154.4344
   455.3659 149.6744
 endline
 
-line survey 
+line survey
   455.3659 149.6744
   379.8114 86.662
 endline
@@ -132,4 +132,3 @@ point 546.938 154.434 station -name 3
 point 379.811 86.662 station -name 1
 point 455.366 149.674 station -name 2
 endscrap
-

@@ -2,38 +2,6 @@ layout user_label
 
 	code metapost
 
-		def p_LABEL(expr pos)=
-			T:=identity shifted pos;
-			pickup PenD;
-			p:=fullcircle scaled .1u;
-			thclean p; thdraw p;
-
-			if known ATTR_text:
-				text := scantokens(ATTR_text);
-				thdrawoptions(withcolor .8red + .4blue);
-				txtm:=image(
-				draw txt;
-				interim labeloffset:=0;
-				label.urt(btex text etex);
-				);
-				% draw label
-				lab:=thelabel@#(txtm, pos);
-				draw lab _thop_; % use color
-				thdrawoptions();
-				bboxmargin:=0.8bp;
-				write_circ_bbox((bbox lab) smoothed 2);
-
-			enddef;
-
-			def p_altitude(expr pos)=
-				T:=identity shifted pos;
-				pickup PenD;
-				p:=(-.3u,0)--(.3u,0);
-				thdraw p; thdraw p rotated 90;
-				p:=fullcircle scaled .2u;
-				thclean p; thdraw p;
-			enddef;
-
 
 			vardef p_label@#(expr txt,pos,rot,mode) =
 				if mode=1:

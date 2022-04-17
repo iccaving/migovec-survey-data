@@ -54,8 +54,8 @@ area u:smallblocks_MY -attr scale 1.8
   primula-1p_u_smallblocks_MY_1
 endarea
 
-point 462.8001 1128.2582 u:label -align l -attr lvl 1 -attr text Primula
-line pit 
+point 462.8001 1128.2582 u:label -align l -attr lvl 2 -attr text Primula
+line pit
   504.6524 1105.9394
   503.7213 1104.5629 502.7575 1103.2044 501.9153 1101.7713
   501.3394 1101.3193 500.5527 1101.3022 499.855 1101.1991
@@ -64,7 +64,7 @@ line pit
   489.2856 1103.7715 489.3224 1104.3844 489.5856 1104.8662
 endline
 
-line wall 
+line wall
   489.5856 1104.8662
   463.8403 1107.1715 455.2801 1103.2386 455.9591 1091.0162
   456.6381 1078.7937 463.5896 1046.2758 485.3184 1038.8065
@@ -80,4 +80,3 @@ point 497.413 1040.17 station -name south
 point 497.413 1098.76 station -name ridge
 point 497.413 1098.76 station -name 1
 endscrap
-
