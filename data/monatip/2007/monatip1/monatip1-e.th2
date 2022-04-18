@@ -14,7 +14,7 @@ scrap monatip1-s1 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 		882.4541 -50.008
 	endline
 	
-	point 1323.8672 1062.8504 label -align t -text MONATIP -attr style 6 -attr lvl 1
+	point 1323.8672 1062.8504 label -align t -text MONATIP -attr style 6 -attr level 1
 	point 450.0 -0.0003 entrance -align l -orientation 90.0 -scale xl
 	line wall -clip off -outline none
 		890.5162 229.8055

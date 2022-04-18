@@ -77,7 +77,7 @@ scrap hipsdontlie-1e -projection extended -scale [33.0 45.0 500 1000.0 0.0 0.0 1
 		smooth off
 	endline
 	
-	point 89.5 12.5 label -text "Hips don't lie" -attr align br -attr lvl 3
+	point 89.5 12.5 label -text "Hips don't lie" -attr align br -attr level 3
 	
 	line wall -id unserv-bot -reverse on -subtype unsurveyed
 		-53.5 -19.0

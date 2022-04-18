@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap jericho-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	
-	point 628.5921 607.3882 label -attr lvl 1 -text Jericho -align r -scale l
+	point 628.5921 607.3882 label -attr level 1 -text Jericho -align r -scale l
 	
 	point 432.1291 730.5383 gradient -orientation 303.156042
 	point 467.1796 699.8091 gradient -orientation 329.537414

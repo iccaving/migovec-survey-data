@@ -110,7 +110,7 @@ endscrap
 
 scrap zebra-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 290.8201 631.8269 label -align tr -attr lvl 2 -text Zebra
+	point 290.8201 631.8269 label -align tr -attr level 2 -text Zebra
 	line wall
 		278.4608 585.011
 		280.7643 587.0069 283.0051 589.2319 284.4532 591.9398

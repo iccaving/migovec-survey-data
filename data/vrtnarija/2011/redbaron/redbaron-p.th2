@@ -105,7 +105,7 @@ scrap redbaron-2p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	endline
 	
 	point 495.8583 825.5252 station -name 8
-	point 519.1904 834.4427 label -attr lvl 2 -text "Red Baron" -align t
+	point 519.1904 834.4427 label -attr level 2 -text "Red Baron" -align t
 	point 539.8252 731.4801 station -name 7
 	point 537.2789 574.6253 station -name 6
 	point 554.7638 644.5649 station -name 5

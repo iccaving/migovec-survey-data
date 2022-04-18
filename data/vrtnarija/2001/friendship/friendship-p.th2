@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap friendship-p1 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 	
-	point 392.468 959.885 label -align br -attr lvl 2 -text Zimmer
+	point 392.468 959.885 label -align br -attr level 2 -text Zimmer
 	point 348.855 966.845 passage-height -align t -value 60
 	point 376.786 968.398 passage-height -align t -value 80
 	point 368.75 969.0 water-flow -orientation 287.3000034722818
@@ -165,7 +165,7 @@ scrap friendship-p1 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0
 		342.75 969.25 341.25 971.5 341.25 971.5
 	endline
 	
-	line label -attr lvl 1 -text Zimmer -scale xl
+	line label -attr level 1 -text Zimmer -scale l
 		376.75 955.75
 		376.75 955.75 410.5 969.75 431.0 989.25
 	endline
@@ -213,7 +213,7 @@ endscrap
 scrap friendship-p2 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 	
 	point 470.0 811.25 camp
-	line label -attr lvl 1 -text "Camp X-Ray" -scale xl
+	line label -attr level 1 -text "Camp X-Ray" -scale l
 		451.0 890.0
 		451.0 890.0 486.5 855.5 517.5 793.25
 	endline
@@ -506,7 +506,7 @@ endscrap
 
 scrap friendship-p4 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 	
-	line label -attr lvl 1 -text "Friendship Gallery" -scale xl
+	line label -attr level 1 -text "Friendship Gallery" -scale l
 		285.0 468.0
 		285.75 468.5 383.0 636.0 372.0 820.0
 	endline

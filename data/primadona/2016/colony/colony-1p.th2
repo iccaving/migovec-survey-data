@@ -710,7 +710,7 @@ scrap colony-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 		1513.87 -3109.29
 	endline
 	
-	point 1313.68 -1604.23 label -attr lvl 2 -text "Colony" -align bl -scale s
+	point 1313.68 -1604.23 label -attr level 2 -text "Colony" -align bl -scale s
 	
 	point 500.00 -600.00 station -name "10"
 	

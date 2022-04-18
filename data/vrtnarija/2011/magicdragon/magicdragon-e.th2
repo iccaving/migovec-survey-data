@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap magicdragon-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 247.5709 298.2893 label -align tr -text "Magic Dragon" -attr lvl 1
+	point 247.5709 298.2893 label -align tr -text "Magic Dragon" -attr level 1
 	line rock-border -close on
 		715.7566 141.5537
 		712.3788 139.8648 708.6633 137.8381 712.0411 135.8115

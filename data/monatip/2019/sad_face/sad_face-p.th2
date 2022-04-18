@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap sad_face-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point -83.4216 -1.8538 label -align bl -attr lvl 3 -text ":("
+	point -83.4216 -1.8538 label -align bl -attr level 3 -text ":("
 	line wall -close on -outline in
 		-43.695 -2.2196
 		-43.695 -2.2196 -37.7243 -12.3177 -37.5405 -14.5236

@@ -131,7 +131,7 @@ scrap hotmkp_2 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		smooth off
 	endline
 	
-	point 235.0 -125.5 label -attr lvl 2 -text "Hall of the <br> Mountain King" -scale m -align l
+	point 235.0 -125.5 label -attr level 2 -text "Hall of the <br> Mountain King" -scale m -align l
 	
 	line slope -close on
 		497.0 -220.0

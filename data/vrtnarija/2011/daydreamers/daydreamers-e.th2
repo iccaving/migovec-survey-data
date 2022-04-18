@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap daydreamers-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 353.5726 201.8904 label -align bl -text Daydreamers -attr lvl 1
+	point 353.5726 201.8904 label -align bl -text Daydreamers -attr level 1
 	point 450.0 199.0 water-flow -orientation 165.70000450750229
 	line border -close on -id daydreamers-1e_water_1 -visibility on
 		483.7228 152.7399

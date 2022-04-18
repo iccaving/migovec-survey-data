@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap zimmer-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 765.568 1072.907 label -align r -attr lvl 1 -text Zimmer
+	point 765.568 1072.907 label -align r -attr level 1 -text Zimmer
 	point 567.521 1121.328 water-flow -orientation 142.11895096424166
 	point 720.493 1138.772 water-flow -orientation 203.5268641795495
 	line wall

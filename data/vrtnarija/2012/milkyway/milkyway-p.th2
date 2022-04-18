@@ -122,7 +122,7 @@ endscrap
 
 scrap milkyway-5p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 	
-	point -294.8081 -65.2995 label -align l -attr lvl 1 -text "Milky Way" -scale l
+	point -294.8081 -65.2995 label -align l -attr level 1 -text "Milky Way" -scale l
 	point -40.39 -600.75 station -name 30
 	point -80.08 -585.47 station -name 29
 	point -72.99 -527.99 station -name 28

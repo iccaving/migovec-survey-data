@@ -6,7 +6,7 @@ encoding  utf-8
 scrap street-wise_hercules-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 	
 	point 159.0685 2381.0877 continuation -scale xs
-	point 230.2 2673.2 label -text "Street-wise Hercules" -align tl -attr lvl 3
+	point 230.2 2673.2 label -text "Street-wise Hercules" -align tl -attr level 3
 	line wall
 		20.96 1984.71
 		26.72 1963.62 29.01 1940.47 26.81 1918.72
@@ -244,7 +244,7 @@ scrap street-wise_hercules-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 	
 	point 107.05 1824.98 station -name 3
 	point 78.84 1882.07 station -name 2
-	line label -attr lvl 2 -text "Street-wise Hercules" -scale m
+	line label -attr level 2 -text "Street-wise Hercules" -scale m
 		182.2 1437.2
 		182.2 1437.2 338.2 1973.2 306.2 2429.2
 	endline

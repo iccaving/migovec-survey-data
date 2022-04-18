@@ -146,7 +146,7 @@ scrap penny_falls-p2 -scale [330.0 -733.0 518.0 -733.0 0.0 0.0 8 0.0 m]
 	
 	point 349.0 -441.0 station -name "8"
 	
-	line label -attr lvl 1 -text "Penny Falls" -scale m
+	line label -attr level 1 -text "Penny Falls" -scale l
 		239.0 -855.0
 		239.0 -855.0 556.0 -623.0 722.0 -371.0
 	endline

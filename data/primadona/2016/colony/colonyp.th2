@@ -91,9 +91,9 @@ scrap colonyp_1 -scale [328.0 -734.0 517.0 -735.0 0 0 10 0 m]
 		172.0 -80.0
 	endline
 	
-	point 153.0 -307.0 label -attr lvl 1 -text "Colony"
+	point 153.0 -307.0 label -attr level 1 -text "Colony"
 	
-	point 274.0 132.0 label -attr lvl 1 -text "The Folly"
+	point 274.0 132.0 label -attr level 1 -text "The Folly"
 	
 	line pit -outline out
 		114.0 126.0

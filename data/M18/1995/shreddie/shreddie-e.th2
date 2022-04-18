@@ -10,7 +10,7 @@ scrap shreddie-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		180.1406 69.596
 	endline
 	
-	point 3.8411 229.2685 label -attr lvl 1 -text Shreddies -align tr -scale l
+	point 3.8411 229.2685 label -attr level 1 -text Shreddies -align tr -scale l
 	line wall -subtype invisible
 		175.8676 178.2442
 		162.2288 191.1356

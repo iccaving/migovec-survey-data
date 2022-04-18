@@ -92,7 +92,7 @@ scrap kill_em_all-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 	endline
 	
 	point 533.4719 258.169 station -name 2
-	point 383.6123 669.7902 label -align r -text "Kill'em All" -attr lvl 2
+	point 383.6123 669.7902 label -align r -text "Kill'em All" -attr level 2
 	line wall -subtype invisible
 		324.1779 738.5897
 		288.5264 731.4205

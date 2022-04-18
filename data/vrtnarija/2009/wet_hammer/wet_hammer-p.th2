@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap wet_hammer-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 506.0943 489.0461 label -align bl -attr lvl 2 -text "Wet Hammer"
+	point 506.0943 489.0461 label -align bl -attr level 2 -text "Wet Hammer"
 	line wall
 		425.6928 670.5806
 		428.5786 667.8645 427.7298 663.7903 427.2206 661.0742

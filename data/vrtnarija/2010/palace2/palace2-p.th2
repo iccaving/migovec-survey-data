@@ -6,8 +6,8 @@ encoding  utf-8
 scrap palace2-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	
 	point 674.2723 809.3983 gradient -orientation 255.54108
-	point 689.4861 981.8576 label -attr lvl 1 -text "Palace of" -align tr -scale l
-	point 689.4861 931.8576 label -attr lvl 1 -text "King Minos" -align br -scale l
+	point 689.4861 981.8576 label -attr level 1 -text "Palace of" -align tr -scale l
+	point 689.4861 931.8576 label -attr level 1 -text "King Minos" -align br -scale l
 	
 	line floor-step
 		758.1319 302.1663
@@ -15,7 +15,7 @@ scrap palace2-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 		701.0938 301.1478
 	endline
 	
-	point 897.4533 245.1132 label -attr lvl 1 -text "Royal Albert Hall" -align r -scale l
+	point 897.4533 245.1132 label -attr level 1 -text "Royal Albert Hall" -align r -scale l
 	line rock-border -close on
 		689.5503 261.4248
 		689.5503 261.4248 688.1923 250.8999 689.5503 250.2209

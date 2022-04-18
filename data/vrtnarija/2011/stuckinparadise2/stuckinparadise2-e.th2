@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap stuckinparadise2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 93.3959 383.372 label -align l -text "Stuck in Paradise" -attr lvl 1
+	point 93.3959 383.372 label -align l -text "Stuck in Paradise" -attr level 1
 	line rock-border -close on
 		162.3532 333.5743
 		168.9923 332.5218

@@ -167,7 +167,7 @@ scrap trunk-1p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
 		414.5922 410.7521
 	endline
 	
-	point 239.4728 449.3566 label -attr lvl 2 -text "Trunk Passage" -align bl
+	point 239.4728 449.3566 label -attr level 2 -text "Trunk Passage" -align bl
 	line wall
 		389.3008 391.1547
 		400.4237 392.7436
@@ -361,7 +361,7 @@ scrap trunk-2p -scale [0 0 90 0 0 0 200 0 inch]
 	point 88.54 577.95 station-name -text 11 -align tr -scale xs
 	point 60.2 573.94 station -name 10
 	point 60.2 573.94 station-name -text 10 -align tr -scale xs
-	line label -attr lvl 2 -text "Trunk Passage"
+	line label -attr level 2 -text "Trunk Passage"
 		86.8902 524.3377
 		86.8902 524.3377 214.2294 419.4701 372.2797 366.2873
 	endline

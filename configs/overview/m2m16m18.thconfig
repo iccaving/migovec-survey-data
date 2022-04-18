@@ -20,7 +20,6 @@ input "../../layouts/base-p.thl"
 input "../../layouts/base-e.thl"
 input "../../layouts/overview-p.thl"
 input "../../layouts/mods.thl"
-input "../../layouts/metapost/user_label.thl" # input this to have the label hierarchy
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
@@ -28,7 +27,6 @@ input "../../layouts/metapost/user_label.thl" # input this to have the label hie
 layout plan
 	copy base-p
 	copy show-centreline
-	copy user_label
 	copy colour-by-new
 	
 	symbol-assign point water-flow MY
@@ -76,7 +74,6 @@ select local-p
 layout ee
 	copy base-e
 	copy show-centreline
-	copy user_label
 	copy colour-by-new
 	symbol-assign point water-flow MY
 	symbol-colour point water-flow [10 10 80]

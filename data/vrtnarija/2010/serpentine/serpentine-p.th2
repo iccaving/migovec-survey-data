@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap serpentine-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 325.3336 987.435 label -text "Serpentine" -align tl -attr lvl 1 -scale l
+	point 325.3336 987.435 label -text "Serpentine" -align tl -attr level 1 -scale l
 	
 	point 445.3336 787.435 water-flow -orientation 210.67673
 	line wall

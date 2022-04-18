@@ -9,7 +9,7 @@ scrap monatip11-e1 -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 3
 		1609.9692 131.731
 	endline
 	
-	point 2354.14 578.093 label -align t -text "Vzporedni Svet" -attr lvl 2
+	point 2354.14 578.093 label -align t -text "Vzporedni Svet" -attr level 2
 	line wall
 		2119.9174 466.4905
 		2119.9174 466.4905 2092.0773 464.4534 2089.0217 464.1139
@@ -371,7 +371,7 @@ scrap monatip11-e3 -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 3
 		5184.5893 718.2947
 	endline
 	
-	point 4576.73 951.644 label -align t -text "Pravokotni Svet" -attr lvl 2
+	point 4576.73 951.644 label -align t -text "Pravokotni Svet" -attr level 2
 	line wall
 		4292.4827 849.7339
 		4278.0784 842.0516 4042.8081 743.2621 4021.6818 731.7387

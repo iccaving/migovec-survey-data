@@ -252,6 +252,8 @@ therion configs/overview/vrtnarija.thconfig
 
 And you should find the it places the files in the `outputs/maps` and `outputs/models` directories.
 
+Note that in order for compilation to be correct you must ensure Therion uses the `therion.ini` file in the root of this repository. You can do this either by simply running all `therion` commands from the root directory, or by setting the `$THERION` environment variable to the root directory.
+
 ### Make your own config
 
 None of the configs export exactly what you want? Make your own!

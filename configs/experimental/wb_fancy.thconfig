@@ -1,8 +1,10 @@
 source "../../data/system_migovec.th"
 
-input "../../layouts/metapost/user_label.thl" # input this to have the label hierarchy
+input "../../layouts/metapost/label.thl" # input this to have the label hierarchy
 
 layout wb
+	copy custom_label
+	
 	scale 1 2000
 	#symbol-hide group all
 	symbol-show line wall
@@ -12,7 +14,6 @@ layout wb
 	colour map-fg [0 0 0]
 	colour map-bg [0 0 0]
 	
-	copy user_label
 	
 	code metapost
 		set_label_level("3"); % yeah, now it works!

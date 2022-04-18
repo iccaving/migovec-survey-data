@@ -1,0 +1,64 @@
+# Overwrite the point label function to allow specifying
+# style and label level
+layout custom_label
+	code metapost
+		# Set the maximum label level that will appear
+		max_level := 100;
+		vardef set_label_level (expr mylevel)=
+			max_level := scantokens(mylevel);
+		enddef;
+		
+		vardef p_label@#(expr txt,pos,rot,mode_)=
+			
+			# Allow specifiying the style on a single label
+			if known ATTR_style:
+				mode := scantokens(ATTR_style);
+			else:
+				mode := mode_;
+			fi;
+			
+			# Specify the level at which this label should appear
+			if known ATTR_level:
+				level := scantokens(ATTR_level);
+			else:
+				level := 0;
+			fi;
+			
+			if (level <= max_level):
+				if (mode=1) or (mode=7):
+					interim labeloffset:=(u/8);
+				fi;
+				lab:=thelabel@#(txt, pos);
+				if mode>1:
+					pickup PenD
+				fi;
+				if mode=1:
+					pickup pencircle scaled (u/6);
+					drawdot(pos);
+					process_label(pos,0);
+				elseif mode=2:
+					process_uplabel;
+				elseif mode=3:
+					process_downlabel;
+				elseif mode=4:
+					process_updownlabel;
+				elseif mode=5:
+					process_circledlabel;
+				elseif mode=6:
+					process_boxedlabel;
+				elseif mode=7:
+					process_label(pos,rot);  % station name
+				elseif mode=8:
+					process_filledlabel(pos, rot);
+				else:
+					process_label(pos,rot);
+				fi;
+			else:
+				# Metapost is expecting some sort of drawing so
+				# we just draw an empty string
+				lab:=thelabel@#("", pos);
+				process_label(pos,rot);
+			fi;
+		enddef;
+	endcode
+endlayout

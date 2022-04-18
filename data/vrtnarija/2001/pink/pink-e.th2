@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap pink-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 	
-	point 141.2373 1138.7256 label -attr lvl 1 -align l -text Pink
+	point 141.2373 1138.7256 label -attr level 1 -align l -text Pink
 	line rock-border -close on
 		325.5373 1092.8066
 		318.3351 1087.0449 306.3315 1082.9636 305.6113 1076.4817

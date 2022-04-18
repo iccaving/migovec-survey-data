@@ -45,7 +45,7 @@ scrap mirage_canyon-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 1
 		271.7612 142.6026
 	endline
 	
-	point 388.9162 206.4617 label -align r -text "Mirage Canyon" -attr lvl 1
+	point 388.9162 206.4617 label -align r -text "Mirage Canyon" -attr level 1
 	line rock-border -clip off -close on
 		248.2342 245.8335
 		223.2667 228.5483

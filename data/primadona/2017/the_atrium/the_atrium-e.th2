@@ -6,7 +6,7 @@ scrap the_atrium-e1 -projection extended -scale [0.0 0.0 1024.0 939.387315780758
 	
 	point 499.1946 -68.0083 u:connectionmarker -align br -attr code 5 -id atrium -attr text "to Hall of the Mountain King" -attr offset 2.5
 	point 1308.87 -112.905 map-connection -scale s
-	point 437.916 364.843 label -align l -text "The Atrium" -attr lvl 1 -scale m
+	point 437.916 364.843 label -align l -text "The Atrium" -attr level 1 -scale l
 	line wall -subtype invisible
 		828.1778 698.7751
 		827.0015 834.0598

@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap blast-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	
-	point 442.7246 236.3009 label -attr lvl 1 -text "Blast!" -align l -scale l
+	point 442.7246 236.3009 label -attr level 1 -text "Blast!" -align l -scale l
 	line wall
 		312.3477 1065.2749
 		314.7484 1056.6323 315.2286 1035.0259 312.8279 1028.3039

@@ -27,7 +27,7 @@ scrap candyMountain-1p -projection plan -scale [0.0 0.0 1023.9999999999999 838.6
 	endline
 	
 	point 436.652 456.153 passage-height -align t -value 80
-	point 495.981 479.541 label -align r -attr lvl 3 -text "Big Rock Candy Mountain" -scale s
+	point 495.981 479.541 label -align r -attr level 3 -text "Big Rock Candy Mountain" -scale s
 	line pit
 		467.1722 384.7304
 		469.596 384.7964 485.2386 390.2571 490.7095 401.8448

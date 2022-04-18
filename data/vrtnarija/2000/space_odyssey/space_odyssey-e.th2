@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap space_odyssey-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 	
-	point 511.3528 1015.0233 label -attr lvl 1 -text "Space Odyssey" -align tl
+	point 511.3528 1015.0233 label -attr level 1 -text "Space Odyssey" -align tl
 	line u:texture
 		541.5228 964.5556
 		541.5228 964.5556 621.3083 958.4444 637.9444 959.4629

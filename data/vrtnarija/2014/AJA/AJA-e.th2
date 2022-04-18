@@ -289,7 +289,7 @@ scrap AJA-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		-512.0436 139.1835 -504.5645 142.8136 -504.5645 142.8136
 	endline
 	
-	point 613.784 -202.517 label -align r -text "AJA!?" -attr lvl 1 -scale l
+	point 613.784 -202.517 label -align r -text "AJA!?" -attr level 1 -scale l
 	line wall -id alt1
 		565.609 -240.0717
 		altitude .

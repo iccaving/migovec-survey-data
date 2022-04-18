@@ -115,7 +115,7 @@ scrap hydrant-2p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 		460.7324 685.3953
 	endline
 	
-	point 501.1059 655.3644 label -align r -text "Gauntlet Gulf" -attr lvl 2
+	point 501.1059 655.3644 label -align r -text "Gauntlet Gulf" -attr level 2
 	line wall
 		425.4626 689.1295
 		415.7249 682.7625
@@ -217,7 +217,7 @@ scrap hydrant-3p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 		200.6795 443.916 227.5251 457.6719 227.5251 457.6719
 	endline
 	
-	point 160.7521 457.6271 label -align l -text Hydrant -attr lvl 1
+	point 160.7521 457.6271 label -align l -text Hydrant -attr level 1
 	point 229.65 478.66 station -name 20
 	
 	

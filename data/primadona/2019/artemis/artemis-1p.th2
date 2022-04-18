@@ -606,7 +606,7 @@ scrap artemis-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 	point 877.03 661.68 station -name 5
 	point 932.86 549.04 station -name 4
 	point 981.1 513.89 station -name 3
-	line label -attr lvl 2 -text Artemis -scale xl
+	line label -attr level 2 -text Artemis -scale xl
 		854.0 2.0
 		854.0 2.0 1266.0 42.0 1470.0 162.0
 	endline
@@ -804,7 +804,7 @@ scrap artemis-3p -scale [0 0 39 0 0 0 1 0 m]
 	point 1170.81 375.96 water-flow -orientation 99.0
 	point 1327.3 482.02 water-flow -orientation 359.0
 	point 1321.42 419.74 station -name 0
-	point 1160.0 54.0 label -attr lvl 1 -text Artemis -align br
+	point 1160.0 54.0 label -attr level 1 -text Artemis -align br
 	point 1175.36 407.05 station -name 2
 	point 1176.27 415.64 station -name 1
 	line wall

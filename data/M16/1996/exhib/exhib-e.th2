@@ -164,7 +164,7 @@ scrap exhib-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		1088.9205 658.4215
 	endline
 	
-	point 1606.5601 572.8112 label -attr lvl 1 -text "Exhibition Road" -align tr -scale l
+	point 1606.5601 572.8112 label -attr level 1 -text "Exhibition Road" -align tr -scale l
 	line wall -subtype blocks
 		1935.2225 369.8991
 		1935.2225 369.8991 1945.7474 371.7664 1949.3566 370.2301

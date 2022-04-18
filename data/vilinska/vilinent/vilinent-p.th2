@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap vilinent-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	
-	point 328.7333 314.4372 label -text "VILINSKA JAMA" -align tr -attr lvl 1 -attr style 6
+	point 328.7333 314.4372 label -text "VILINSKA JAMA" -align tr -attr level 1 -attr style 6
 	point 294.8081 283.8848 entrance -orientation 220
 	line wall
 		130.7124 43.1181

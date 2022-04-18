@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap emptyquarter-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	
-	point 470.6163 613.6897 label -attr lvl 1 -text "Empty Quarter" -align tl -scale l
+	point 470.6163 613.6897 label -attr level 1 -text "Empty Quarter" -align tl -scale l
 	line wall
 		886.2131 828.3261
 		886.0567 819.5405 875.0816 799.4383 868.5796 793.4371

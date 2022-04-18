@@ -131,7 +131,7 @@ endscrap
 
 scrap paradox-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point -188.822 624.3178 label -align t -attr lvl 1 -text "Paradox Passage"
+	point -188.822 624.3178 label -align t -attr level 1 -text "Paradox Passage"
 	line wall -subtype invisible
 		135.3093 460.0932
 		168.4322 435.1165

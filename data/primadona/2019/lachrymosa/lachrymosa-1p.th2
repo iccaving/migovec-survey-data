@@ -175,7 +175,7 @@ scrap lachrymosa-1p -projection plan -scale [0 0 39 0 0 0 1 0 m]
 		314.14 256.7
 	endline
 	
-	point 97.37 -726.35 label -attr lvl 4 -text "too low" -scale s
+	point 97.37 -726.35 label -attr level 4 -text "too low" -scale s
 	
 	point 134.64 -596.63 water-flow -orientation 6.00
 	
@@ -238,7 +238,7 @@ scrap lachrymosa-1p -projection plan -scale [0 0 39 0 0 0 1 0 m]
 		363.83 515.5
 	endline
 	
-	point 420.0 12.0 label -attr lvl 1 -text "Lachrymosa" -align r
+	point 420.0 12.0 label -attr level 1 -text "Lachrymosa" -align r
 	
 	line rock-border -close on
 		373.35 490.39
@@ -698,7 +698,7 @@ scrap lachrymosa-1p -projection plan -scale [0 0 39 0 0 0 1 0 m]
 	
 	point 587.58 1444.34 clay -scale xs
 	
-	line label -attr lvl 2 -text "Lachrymosa" -scale m
+	line label -attr level 2 -text "Lachrymosa" -scale m
 		588.0 -540.0
 		588.0 -540.0 848.0 480.0 980.0 1596.0
 	endline

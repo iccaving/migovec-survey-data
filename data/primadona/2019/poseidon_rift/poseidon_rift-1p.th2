@@ -470,7 +470,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 	
 	point 345.79 1049.41 water-flow -orientation 125.0
 	point 299.94 1120.78 water-flow -orientation 125.0
-	point 488.44 1927.19 label -attr lvl 4 -text "pitch under boulders" -align t -scale s
+	point 488.44 1927.19 label -attr level 4 -text "pitch under boulders" -align t -scale s
 	line wall -id s1_l1
 		274.0 655.0
 		278.72 656.54 282.43 655.4 286.81 657.81
@@ -782,7 +782,7 @@ scrap poseidon_rift-5p -scale [0 0 90 0 0 0 250 0 inch]
 		206.74 507.58
 	endline
 	
-	point 245.87 533.68 label -attr lvl 4 -text squeeze -align t -scale xs
+	point 245.87 533.68 label -attr level 4 -text squeeze -align t -scale xs
 endscrap
 
 
@@ -875,7 +875,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		252.25 2247.89 257.38 2234.07 260.8 2225.64
 	endline
 	
-	#point 00.0 2580.0 label -attr lvl 2 -text "Poseidon<br>Rift" -align tl -scale xl
+	#point 00.0 2580.0 label -attr level 2 -text "Poseidon<br>Rift" -align tl -scale xl
 	
 	line wall
 		364.29 2049.03
@@ -1170,7 +1170,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 	endline
 	
 	point 294.14 2527.6 water-flow -orientation 125.0
-	line label -attr lvl 2 -text "Poseidon Rift" -scale m
+	line label -attr level 2 -text "Poseidon Rift" -scale m
 		84.0 2100.0
 		84.0 2100.0 80.0 2532.0 284.0 2860.0
 	endline

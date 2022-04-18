@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 	
-	line label -attr lvl 2 -text "Brezno TTT" -scale m
+	line label -attr level 2 -text "Brezno TTT" -scale m
 		194.25 325.25
 		194.25 325.25 295.5 387.0 346.0 490.0
 		368.92 536.74 364.0 550.5 364.0 550.5
@@ -237,7 +237,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 	endline
 	
-	point 262.0 396.0 label -align br -text "TTT" -attr lvl 1
+	point 262.0 396.0 label -align br -text "TTT" -attr level 1
 	
 	point 232.0 621.25 label -align t -text "p41" -scale s
 	
@@ -673,7 +673,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 	endline
 	
-	point 62.5 406.75 label -attr lvl 3 -text "P4" -scale s -align br
+	point 62.5 406.75 label -attr level 3 -text "P4" -scale s -align br
 	
 	line pit
 		-22.75 392.25

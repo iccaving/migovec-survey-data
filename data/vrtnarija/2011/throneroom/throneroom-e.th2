@@ -45,7 +45,7 @@ endscrap
 
 scrap throneroom-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 	
-	point 886.0771 323.4263 label -align bl -text "Throne Room" -attr lvl 1
+	point 886.0771 323.4263 label -align bl -text "Throne Room" -attr level 1
 	point 562.67 568.09 station -name 7
 	point 1093.9 242.19 station -name 15
 	line wall

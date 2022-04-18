@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap krtekinorel-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 209.957 128.2204 label -align br -attr lvl 1 -text "Krtek in Orel"
+	point 209.957 128.2204 label -align br -attr level 1 -text "Krtek in Orel"
 	point 141.217 138.334 water-flow -orientation 223.89753983628134
 	point 531.518 260.201 water-flow -orientation 188.4134924479167
 	line wall

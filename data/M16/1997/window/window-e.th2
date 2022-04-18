@@ -35,7 +35,7 @@ endscrap
 
 scrap window-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 	
-	point 140.5883 157.6459 label -text Window -align tl -scale m -attr lvl 1
+	point 140.5883 157.6459 label -text Window -align tl -scale l -attr level 1
 	line wall -subtype presumed
 		197.7071 257.4742
 		197.7071 257.4742 197.6318 239.497 196.9527 235.4229

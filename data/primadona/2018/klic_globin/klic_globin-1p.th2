@@ -20,7 +20,7 @@ scrap klic_globin-p1 -scale [0 0 100 0 0 0 1 0 m] -projection plan
 		1740.2402 1462.4617
 	endline
 	
-	point 1277.0 3677.0 label -attr lvl 1 -text "Klic Globin" -align t
+	point 1277.0 3677.0 label -attr level 1 -text "Klic Globin" -align t
 	line wall
 		2014.0 765.23
 		2058.0 584.0
@@ -337,7 +337,7 @@ scrap klic_globin-p1 -scale [0 0 100 0 0 0 1 0 m] -projection plan
 		2501.12 3023.48 2382.28 3047.78 2296.14 2921.89
 	endline
 	
-	line label -attr lvl 2 -text "Klic Globin" -scale m
+	line label -attr level 2 -text "Klic Globin" -scale m
 		1636.0 3294.0
 		1636.0 3294.0 2410.0 3436.0 3194.0 3406.0
 	endline

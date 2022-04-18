@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap genghis-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 191.3562 473.7704 label -align l -attr lvl 2 -text Genghis
+	point 191.3562 473.7704 label -align l -attr level 2 -text Genghis
 	line pit -clip off
 		233.3472 562.5436
 		233.3472 562.5436 237.2783 553.0911 246.9432 553.9502

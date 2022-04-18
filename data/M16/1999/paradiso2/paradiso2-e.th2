@@ -78,7 +78,7 @@ scrap paradiso2-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection exten
 	
 	point 510.3637 720.3796 water-flow -orientation 178.92194
 	point 519.04 548.0399 water-flow -orientation 178.92194
-	point 622.6663 680.3835 label -attr lvl 1 -text "Father Shed" -align r -scale m
+	point 622.6663 680.3835 label -attr level 1 -text "Father Shed" -align r -scale l
 	line wall -close on
 		525.1538 909.2151
 		521.4915 895.6346

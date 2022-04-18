@@ -135,7 +135,7 @@ endscrap
 
 scrap lazarus-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	
-	point 386.3655 780.8792 label -attr lvl 1 -text Lazarus -align l -attr display 1
+	point 386.3655 780.8792 label -attr level 1 -text Lazarus -align l -attr display 1
 	line chimney -outline out
 		281.6042 999.1786
 		281.6042 999.1786 286.1655 1003.98 286.1655 1009.0215

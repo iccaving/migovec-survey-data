@@ -74,7 +74,7 @@ scrap sump2-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500
 	sump2-1e_water_1
 	endarea
 	
-	point -7.8686 376.1286 label -align l -attr lvl 1 -text "Pencil Sump"
+	point -7.8686 376.1286 label -align l -attr level 1 -text "Pencil Sump"
 	line wall
 		100.2611 364.9309
 		100.2611 364.9309 109.1498 379.107 114.9364 385.0636

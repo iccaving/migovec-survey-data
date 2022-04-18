@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap snakebite-p1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 	
-	point -70.0 -315.0 label -attr lvl 3 -text P7 -scale s -align b
+	point -70.0 -315.0 label -attr level 3 -text P7 -scale s -align b
 	
 	line pit
 		-29.0 -256.0
@@ -23,7 +23,7 @@ scrap snakebite-p1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 		smooth off
 	endline
 	
-	point 97.0 59.0 label -attr lvl 4 -text P5 -scale s -align br
+	point 97.0 59.0 label -attr level 4 -text P5 -scale s -align br
 	
 	line wall
 	endline
