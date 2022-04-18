@@ -4,44 +4,44 @@ encoding  utf-8
 
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line survey 
-  411.0698 1009.669
-  538.856 283.1954
-endline
-
-line survey 
-  297.9176 851.0469
-  538.856 283.1954
-endline
-
-line survey 
-  376.314 295.4775
-  297.9176 851.0469
-endline
-
+	
+	line survey
+		411.0698 1009.669
+		538.856 283.1954
+	endline
+	
+	line survey
+		297.9176 851.0469
+		538.856 283.1954
+	endline
+	
+	line survey
+		376.314 295.4775
+		297.9176 851.0469
+	endline
+	
 endscrap
 
 
 scrap euphrates2-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-point 300.4397 -709.6521 u:label -align l -scale m -attr lvl 3 -attr text Euphrates2
-line wall 
-  563.4946 1078.1559
-  563.4946 1078.1559 414.109 1148.7745 370.6514 1135.194
-  327.1937 1121.6135 306.9195 1062.9609 256.5751 942.3508
-  235.1078 890.9216 292.793 668.627 250.1309 653.8084
-endline
-
-line wall 
-  681.8038 416.7646
-  687.5655 351.465 556.9664 169.0105 483.9846 165.1694
-  411.0028 161.3282 328.3616 185.7166 250.5335 279.1988
-endline
-
-point 411.0698 1009.669 station -name 4
-point 538.856 283.1954 station -name 3
-point 297.9176 851.0469 station -name 2
-point 376.314 295.4775 station -name 1
+	
+	point 300.4397 -709.6521 label -align l -scale m -attr lvl 3 -text Euphrates2
+	line wall
+		563.4946 1078.1559
+		563.4946 1078.1559 414.109 1148.7745 370.6514 1135.194
+		327.1937 1121.6135 306.9195 1062.9609 256.5751 942.3508
+		235.1078 890.9216 292.793 668.627 250.1309 653.8084
+	endline
+	
+	line wall
+		681.8038 416.7646
+		687.5655 351.465 556.9664 169.0105 483.9846 165.1694
+		411.0028 161.3282 328.3616 185.7166 250.5335 279.1988
+	endline
+	
+	point 411.0698 1009.669 station -name 4
+	point 538.856 283.1954 station -name 3
+	point 297.9176 851.0469 station -name 2
+	point 376.314 295.4775 station -name 1
 endscrap
 

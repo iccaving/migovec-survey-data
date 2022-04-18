@@ -4,80 +4,80 @@ encoding  utf-8
 
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-
-line survey 
-  245.31 461.3
-  251.69 465.0
-endline
-
-line survey 
-  251.69 465.0
-  257.36 494.21
-endline
-
-line survey 
-  257.36 494.21
-  232.64 537.05
-endline
-
-line survey 
-  232.64 537.05
-  244.69 539.17
-endline
-
-line survey 
-  244.69 539.17
-  245.24 548.86
-endline
-
-line survey 
-  245.24 548.86
-  233.82 551.93
-endline
-
-line survey 
-  245.31 461.3
-  267.36 448.07
-endline
-
+	
+	line survey
+		245.31 461.3
+		251.69 465.0
+	endline
+	
+	line survey
+		251.69 465.0
+		257.36 494.21
+	endline
+	
+	line survey
+		257.36 494.21
+		232.64 537.05
+	endline
+	
+	line survey
+		232.64 537.05
+		244.69 539.17
+	endline
+	
+	line survey
+		244.69 539.17
+		245.24 548.86
+	endline
+	
+	line survey
+		245.24 548.86
+		233.82 551.93
+	endline
+	
+	line survey
+		245.31 461.3
+		267.36 448.07
+	endline
+	
 endscrap
 
 
 scrap hipsdontlie-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-
-point 269.2849 490.1621 u:label -align l -scale m -attr lvl 4 -attr text "Hips Don't Lie"
-line wall 
-  229.2105 543.2513
-  231.6449 540.0678 229.2105 535.948 230.334 533.3263
-  233.2034 526.6312 237.6373 519.4688 240.6335 515.7235
-  243.6298 511.9783 253.1802 499.2443 252.8057 494.001
-  252.4311 488.7576 250.5585 474.3383 248.1241 470.7803
-  245.6896 467.2223 232.7685 461.0426 241.7571 456.9228
-  250.7458 452.803 261.7943 444.938 266.8504 443.8144
-  271.9065 442.6908 277.1499 446.6233 273.9664 449.9941
-  270.783 453.3648 254.3038 457.8591 254.8656 461.4171
-  255.4273 464.9751 265.3523 487.634 263.2924 494.1882
-  261.2325 500.7425 236.1392 530.5173 241.9444 531.4537
-  247.7495 532.39 250.5585 533.8881 250.184 541.3786
-  249.8094 548.8692 253.5567 557.1088 244.7533 557.1088
-  241.5699 557.1088 241.1953 558.6069 238.0118 558.7941
-endline
-
-point 251.69 465.0 station -name 8
-point 251.69 465.0 station-name -align tr -scale xs -text 8
-point 257.36 494.21 station -name 7
-point 257.36 494.21 station-name -align tr -scale xs -text 7
-point 232.64 537.05 station -name 6
-point 232.64 537.05 station-name -align tr -scale xs -text 6
-point 244.69 539.17 station -name 5
-point 244.69 539.17 station-name -align tr -scale xs -text 5
-point 233.82 551.93 station -name 3
-point 233.82 551.93 station-name -align tr -scale xs -text 3
-point 245.24 548.86 station -name 4
-point 245.24 548.86 station-name -align tr -scale xs -text 4
-point 267.36 448.07 station -name 1
-point 267.36 448.07 station-name -align tr -scale xs -text 1
-point 245.31 461.3 station -name 2
-point 245.31 461.3 station-name -align tr -scale xs -text 2
+	
+	point 269.2849 490.1621 label -align l -scale m -attr lvl 4 -text "Hips Don't Lie"
+	line wall
+		229.2105 543.2513
+		231.6449 540.0678 229.2105 535.948 230.334 533.3263
+		233.2034 526.6312 237.6373 519.4688 240.6335 515.7235
+		243.6298 511.9783 253.1802 499.2443 252.8057 494.001
+		252.4311 488.7576 250.5585 474.3383 248.1241 470.7803
+		245.6896 467.2223 232.7685 461.0426 241.7571 456.9228
+		250.7458 452.803 261.7943 444.938 266.8504 443.8144
+		271.9065 442.6908 277.1499 446.6233 273.9664 449.9941
+		270.783 453.3648 254.3038 457.8591 254.8656 461.4171
+		255.4273 464.9751 265.3523 487.634 263.2924 494.1882
+		261.2325 500.7425 236.1392 530.5173 241.9444 531.4537
+		247.7495 532.39 250.5585 533.8881 250.184 541.3786
+		249.8094 548.8692 253.5567 557.1088 244.7533 557.1088
+		241.5699 557.1088 241.1953 558.6069 238.0118 558.7941
+	endline
+	
+	point 251.69 465.0 station -name 8
+	point 251.69 465.0 station-name -align tr -scale xs -text 8
+	point 257.36 494.21 station -name 7
+	point 257.36 494.21 station-name -align tr -scale xs -text 7
+	point 232.64 537.05 station -name 6
+	point 232.64 537.05 station-name -align tr -scale xs -text 6
+	point 244.69 539.17 station -name 5
+	point 244.69 539.17 station-name -align tr -scale xs -text 5
+	point 233.82 551.93 station -name 3
+	point 233.82 551.93 station-name -align tr -scale xs -text 3
+	point 245.24 548.86 station -name 4
+	point 245.24 548.86 station-name -align tr -scale xs -text 4
+	point 267.36 448.07 station -name 1
+	point 267.36 448.07 station-name -align tr -scale xs -text 1
+	point 245.31 461.3 station -name 2
+	point 245.31 461.3 station-name -align tr -scale xs -text 2
 endscrap
 
