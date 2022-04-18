@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 223.7818 508.7394 u:label -align l -attr text Window -attr lvl 3
+	point 223.7818 508.7394 label -align l -text Window -attr lvl 3
 	line border -close on -id window-1p_u_smallblocks_MY_1 -visibility off
 		253.4707 629.2061
 		249.2445 614.4554

@@ -3,152 +3,152 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-zebra-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-
-line survey 
-  219.02 392.2
-  246.73 381.42
-endline
-
-line survey 
-  246.73 381.42
-  239.25 420.63
-endline
-
-line survey 
-  239.25 420.63
-  259.88 447.87
-endline
-
-line survey 
-  259.88 447.87
-  239.33 466.54
-endline
-
-line survey 
-  239.33 466.54
-  252.32 514.49
-endline
-
-line survey 
-  252.32 514.49
-  265.0 540.31
-endline
-
-line survey 
-  265.0 540.31
-  246.26 545.04
-endline
-
-line survey 
-  246.26 545.04
-  241.14 542.44
-endline
-
-line survey 
-  241.14 542.44
-  254.69 583.62
-endline
-
-line survey 
-  241.14 542.44
-  250.2 531.65
-endline
-
-line survey 
-  246.26 545.04
-  255.39 571.34
-endline
-
-line survey 
-  255.39 571.34
-  278.23 591.1
-endline
-
-line survey 
-  278.23 591.1
-  265.47 611.73
-endline
-
-line survey 
-  265.47 611.73
-  280.98 618.58
-endline
-
-line survey 
-  265.47 611.73
-  251.14 611.5
-endline
-
-line survey 
-  239.33 466.54
-  239.33 466.54
-endline
-
-line survey 
-  254.69 583.62
-  254.69 583.62
-endline
-
-point 219.02 392.2 station-name -align tr -scale xs -text 0
-point 246.73 381.42 station-name -align tr -scale xs -text 1
-point 239.25 420.63 station-name -align tr -scale xs -text 2
-point 259.88 447.87 station-name -align tr -scale xs -text 3
-point 239.33 466.54 station-name -align tr -scale xs -text 50
-point 252.32 514.49 station-name -align tr -scale xs -text 5
-point 265.0 540.31 station-name -align tr -scale xs -text 6
-point 246.26 545.04 station-name -align tr -scale xs -text 7
-point 241.14 542.44 station-name -align tr -scale xs -text 8
-point 254.69 583.62 station-name -align tr -scale xs -text 51
-point 250.2 531.65 station-name -align tr -scale xs -text 10
-point 255.39 571.34 station-name -align tr -scale xs -text 11
-point 278.23 591.1 station-name -align tr -scale xs -text 12
-point 265.47 611.73 station-name -align tr -scale xs -text 13
-point 280.98 618.58 station-name -align tr -scale xs -text 14
-point 251.14 611.5 station-name -align tr -scale xs -text 15
+	
+	line survey
+		219.02 392.2
+		246.73 381.42
+	endline
+	
+	line survey
+		246.73 381.42
+		239.25 420.63
+	endline
+	
+	line survey
+		239.25 420.63
+		259.88 447.87
+	endline
+	
+	line survey
+		259.88 447.87
+		239.33 466.54
+	endline
+	
+	line survey
+		239.33 466.54
+		252.32 514.49
+	endline
+	
+	line survey
+		252.32 514.49
+		265.0 540.31
+	endline
+	
+	line survey
+		265.0 540.31
+		246.26 545.04
+	endline
+	
+	line survey
+		246.26 545.04
+		241.14 542.44
+	endline
+	
+	line survey
+		241.14 542.44
+		254.69 583.62
+	endline
+	
+	line survey
+		241.14 542.44
+		250.2 531.65
+	endline
+	
+	line survey
+		246.26 545.04
+		255.39 571.34
+	endline
+	
+	line survey
+		255.39 571.34
+		278.23 591.1
+	endline
+	
+	line survey
+		278.23 591.1
+		265.47 611.73
+	endline
+	
+	line survey
+		265.47 611.73
+		280.98 618.58
+	endline
+	
+	line survey
+		265.47 611.73
+		251.14 611.5
+	endline
+	
+	line survey
+		239.33 466.54
+		239.33 466.54
+	endline
+	
+	line survey
+		254.69 583.62
+		254.69 583.62
+	endline
+	
+	point 219.02 392.2 station-name -align tr -scale xs -text 0
+	point 246.73 381.42 station-name -align tr -scale xs -text 1
+	point 239.25 420.63 station-name -align tr -scale xs -text 2
+	point 259.88 447.87 station-name -align tr -scale xs -text 3
+	point 239.33 466.54 station-name -align tr -scale xs -text 50
+	point 252.32 514.49 station-name -align tr -scale xs -text 5
+	point 265.0 540.31 station-name -align tr -scale xs -text 6
+	point 246.26 545.04 station-name -align tr -scale xs -text 7
+	point 241.14 542.44 station-name -align tr -scale xs -text 8
+	point 254.69 583.62 station-name -align tr -scale xs -text 51
+	point 250.2 531.65 station-name -align tr -scale xs -text 10
+	point 255.39 571.34 station-name -align tr -scale xs -text 11
+	point 278.23 591.1 station-name -align tr -scale xs -text 12
+	point 265.47 611.73 station-name -align tr -scale xs -text 13
+	point 280.98 618.58 station-name -align tr -scale xs -text 14
+	point 251.14 611.5 station-name -align tr -scale xs -text 15
 endscrap
 
 
 scrap zebra-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-
-point 290.8201 631.8269 u:label -align tr -attr lvl 2 -attr text Zebra
-line wall 
-  278.4608 585.011
-  280.7643 587.0069 283.0051 589.2319 284.4532 591.9398
-  284.9389 594.2711 283.3767 596.4238 282.1778 598.2866
-  279.4912 600.995 275.8927 602.5976 273.1568 605.2689
-  271.6575 606.6809 269.94 608.0096 269.0156 609.8907
-  269.3344 611.7469 272.2695 609.9512 273.6644 610.5628
-  277.2651 610.7801 280.3348 612.85 283.7314 613.7894
-  285.5822 615.0918 285.806 617.6521 285.9846 619.7352
-  285.949 622.3276 283.0682 622.9531 280.9952 622.6741
-  276.2507 622.718 271.4984 622.9587 266.7576 622.7127
-  264.3144 622.1504 261.7676 622.555 259.29 622.2596
-  256.2197 623.0042 253.3531 621.0599 250.3829 620.5911
-  247.9813 619.9899 245.2165 620.0269 243.3715 618.1215
-  241.9595 616.7287 238.7177 615.3521 239.8845 612.9133
-  239.9594 610.49 241.5562 608.794 243.9629 608.3941
-  249.3539 607.2263 254.9125 607.1876 260.3372 606.2735
-  262.2115 607.8757 263.6265 604.6316 265.1379 603.6998
-  266.5616 602.0746 268.0417 600.462 269.2497 598.6725
-  270.1298 596.2909 268.1633 594.0668 268.345 591.634
-  268.2775 591.05 268.2159 590.4652 268.1613 589.8799
-endline
-
-point 219.02 392.2 station -name 0
-point 246.73 381.42 station -name 1
-point 239.25 420.63 station -name 2
-point 259.88 447.87 station -name 3
-point 239.33 466.54 station -name 50
-point 252.32 514.49 station -name 5
-point 265.0 540.31 station -name 6
-point 246.26 545.04 station -name 7
-point 241.14 542.44 station -name 8
-point 254.69 583.62 station -name 51
-point 250.2 531.65 station -name 10
-point 255.39 571.34 station -name 11
-point 278.23 591.1 station -name 12
-point 265.47 611.73 station -name 13
-point 280.98 618.58 station -name 14
-point 251.14 611.5 station -name 15
+	
+	point 290.8201 631.8269 label -align tr -attr lvl 2 -text Zebra
+	line wall
+		278.4608 585.011
+		280.7643 587.0069 283.0051 589.2319 284.4532 591.9398
+		284.9389 594.2711 283.3767 596.4238 282.1778 598.2866
+		279.4912 600.995 275.8927 602.5976 273.1568 605.2689
+		271.6575 606.6809 269.94 608.0096 269.0156 609.8907
+		269.3344 611.7469 272.2695 609.9512 273.6644 610.5628
+		277.2651 610.7801 280.3348 612.85 283.7314 613.7894
+		285.5822 615.0918 285.806 617.6521 285.9846 619.7352
+		285.949 622.3276 283.0682 622.9531 280.9952 622.6741
+		276.2507 622.718 271.4984 622.9587 266.7576 622.7127
+		264.3144 622.1504 261.7676 622.555 259.29 622.2596
+		256.2197 623.0042 253.3531 621.0599 250.3829 620.5911
+		247.9813 619.9899 245.2165 620.0269 243.3715 618.1215
+		241.9595 616.7287 238.7177 615.3521 239.8845 612.9133
+		239.9594 610.49 241.5562 608.794 243.9629 608.3941
+		249.3539 607.2263 254.9125 607.1876 260.3372 606.2735
+		262.2115 607.8757 263.6265 604.6316 265.1379 603.6998
+		266.5616 602.0746 268.0417 600.462 269.2497 598.6725
+		270.1298 596.2909 268.1633 594.0668 268.345 591.634
+		268.2775 591.05 268.2159 590.4652 268.1613 589.8799
+	endline
+	
+	point 219.02 392.2 station -name 0
+	point 246.73 381.42 station -name 1
+	point 239.25 420.63 station -name 2
+	point 259.88 447.87 station -name 3
+	point 239.33 466.54 station -name 50
+	point 252.32 514.49 station -name 5
+	point 265.0 540.31 station -name 6
+	point 246.26 545.04 station -name 7
+	point 241.14 542.44 station -name 8
+	point 254.69 583.62 station -name 51
+	point 250.2 531.65 station -name 10
+	point 255.39 571.34 station -name 11
+	point 278.23 591.1 station -name 12
+	point 265.47 611.73 station -name 13
+	point 280.98 618.58 station -name 14
+	point 251.14 611.5 station -name 15
 endscrap
 

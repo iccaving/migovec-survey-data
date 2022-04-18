@@ -4,48 +4,48 @@ encoding  utf-8
 
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line survey 
-  705.4778 357.5926
-  440.7327 684.1493
-endline
-
-line survey 
-  440.7327 684.1493
-  440.7327 684.1493
-endline
-
-line survey 
-  236.5841 802.1829
-  440.7327 684.1493
-endline
-
+	
+	line survey
+		705.4778 357.5926
+		440.7327 684.1493
+	endline
+	
+	line survey
+		440.7327 684.1493
+		440.7327 684.1493
+	endline
+	
+	line survey
+		236.5841 802.1829
+		440.7327 684.1493
+	endline
+	
 endscrap
 
 
 scrap bingo_granny-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-point 727.1254 615.3509 u:label -align l -scale m -attr lvl 3 -attr text "Bingo Granny"
-line pit 
-  499.3426 702.2832
-  499.3426 702.2832 437.6869 693.0662 420.3588 630.0214
-endline
-
-line wall 
-  749.0238 389.8765
-  720.2152 437.8909 560.8076 608.8219 503.1904 677.9626
-  445.5731 747.1033 357.2267 835.4497 257.3569 852.7348
-endline
-
-line wall 
-  231.4291 725.9769
-  290.9669 720.2152 361.0679 702.9301 414.844 641.4717
-  468.62 580.0133 645.3128 364.909 654.9157 336.1004
-endline
-
-point 705.4778 357.5926 station -name 4
-point 440.7327 684.1493 station -name 3
-point 440.7327 684.1493 station -name 2
-point 236.5841 802.1829 station -name 1
+	
+	point 727.1254 615.3509 label -align l -scale m -attr lvl 3 -text "Bingo Granny"
+	line pit
+		499.3426 702.2832
+		499.3426 702.2832 437.6869 693.0662 420.3588 630.0214
+	endline
+	
+	line wall
+		749.0238 389.8765
+		720.2152 437.8909 560.8076 608.8219 503.1904 677.9626
+		445.5731 747.1033 357.2267 835.4497 257.3569 852.7348
+	endline
+	
+	line wall
+		231.4291 725.9769
+		290.9669 720.2152 361.0679 702.9301 414.844 641.4717
+		468.62 580.0133 645.3128 364.909 654.9157 336.1004
+	endline
+	
+	point 705.4778 357.5926 station -name 4
+	point 440.7327 684.1493 station -name 3
+	point 440.7327 684.1493 station -name 2
+	point 236.5841 802.1829 station -name 1
 endscrap
 

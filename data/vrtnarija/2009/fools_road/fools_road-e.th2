@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap fools_road-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point -177.413 -15.6047 u:label -align l -attr text "Fools Road" -attr lvl 2
+	point -177.413 -15.6047 label -align l -text "Fools Road" -attr lvl 2
 	line rock-border -close on
 		-126.5302 38.7008
 		-119.848 41.081

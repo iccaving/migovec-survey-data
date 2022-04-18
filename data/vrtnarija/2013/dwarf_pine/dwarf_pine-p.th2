@@ -4,55 +4,55 @@ encoding  utf-8
 
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line survey 
-  486.3388 899.0006
-  612.162 764.647
-endline
-
-line survey 
-  531.885 1220.4134
-  486.3388 899.0006
-endline
-
-line survey 
-  728.5409 649.4867
-  531.885 1220.4134
-endline
-
-line survey 
-  369.9599 370.1165
-  728.5409 649.4867
-endline
-
+	
+	line survey
+		486.3388 899.0006
+		612.162 764.647
+	endline
+	
+	line survey
+		531.885 1220.4134
+		486.3388 899.0006
+	endline
+	
+	line survey
+		728.5409 649.4867
+		531.885 1220.4134
+	endline
+	
+	line survey
+		369.9599 370.1165
+		728.5409 649.4867
+	endline
+	
 endscrap
 
 
 scrap dwarf_pine-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-
-line pit 
-  439.351 1085.9142
-  542.6898 982.7964 595.3724 875.7872 595.3724 875.7872
-endline
-
-line wall 
-  333.2165 231.9394
-  469.8501 376.5589 405.805 123.5515 405.805 123.5515
-endline
-
-line wall 
-  772.5496 516.1695
-  794.2385 715.6197 640.2961 1168.4863 602.7416 1237.3325
-  518.5869 1391.6076 482.9408 1217.8138 454.208 1164.8498
-  428.4265 1117.3259 430.0864 877.9084 478.0339 806.6822
-  538.5109 716.8433 480.1909 547.5592 391.9176 482.3727
-endline
-
-point 991.0162 1086.0845 u:label -align l -attr lvl 1 -attr text "Dwarf Pine" -attr lvl 3
-point 612.162 764.647 station -name 5
-point 486.3388 899.0006 station -name 4
-point 531.885 1220.4134 station -name 3
-point 728.5409 649.4867 station -name 2
-point 369.9599 370.1165 station -name 1
+	
+	line pit
+		439.351 1085.9142
+		542.6898 982.7964 595.3724 875.7872 595.3724 875.7872
+	endline
+	
+	line wall
+		333.2165 231.9394
+		469.8501 376.5589 405.805 123.5515 405.805 123.5515
+	endline
+	
+	line wall
+		772.5496 516.1695
+		794.2385 715.6197 640.2961 1168.4863 602.7416 1237.3325
+		518.5869 1391.6076 482.9408 1217.8138 454.208 1164.8498
+		428.4265 1117.3259 430.0864 877.9084 478.0339 806.6822
+		538.5109 716.8433 480.1909 547.5592 391.9176 482.3727
+	endline
+	
+	point 991.0162 1086.0845 label -align l -attr lvl 1 -text "Dwarf Pine" -attr lvl 3
+	point 612.162 764.647 station -name 5
+	point 486.3388 899.0006 station -name 4
+	point 531.885 1220.4134 station -name 3
+	point 728.5409 649.4867 station -name 2
+	point 369.9599 370.1165 station -name 1
 endscrap
 
