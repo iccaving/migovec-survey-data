@@ -106,21 +106,7 @@ jobs:
             echo "These outputs are missing: $GONE"
             exit 1
           fi
-      - name: Add fonts to SVGs
-        run: |
-          for file in ./outputs/*.svg; do
-            tmp="${file}.tmp"
-            while IFS= read -r line; do
-                if [[ "$line" == *"<defs>"* ]]; then
-                    echo $line >>$tmp
-                    echo "<style>$(cat docs/static/fonts/open-sans.css)text{font-family: \"Open Sans\"}</style>" >>$tmp
-                else
-                    echo $line >>$tmp
-                fi
-            done <"$file"
-            mv $tmp $file
-          done
-      #=========================== COMPRESS OUTPUT ===========================#
+      #=========================== PROCESS OUTPUT ===========================#
       - name: Compress PDFs
         run: |
           for file in ./outputs/*.pdf; do
@@ -136,7 +122,13 @@ jobs:
             sed -i 's/\&#x3e;/\&gt;/' $file;
           done
       - name: Compress SVGs
-        run: svgo -f ./outputs/
+        run: svgo --config .github/svgo.conf.js -f ./outputs/
+      - name: Add fonts to SVGs
+        run: |
+          for file in ./outputs/*.svg; do
+            sed -i 's/<\/svg>//' $file
+            echo "<style>$(cat docs/static/fonts/open-sans.css | tr -d '[:space:]')text{font-family: \"Open Sans\"}</style></svg>" >>$file
+          done
       #=========================== CREATE LISTING ===========================#
       - name: Generate listing
         run: python3 ./scripts/create_file_listing.py ./outputs/ ./outputs/listing.json
