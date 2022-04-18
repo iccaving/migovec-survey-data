@@ -19,14 +19,14 @@ input metapost/label.thl
 
 layout base-p
 	# copy custom metapost definitions
-	
+
 	copy custom_points
 	copy custom_lines
 	copy custom_areas
 	copy custom_scalebar_arrow
 	copy connection_marker
 	copy custom_label
-	
+
 	code tex-map
 		\framethickness=0.5mm
 		\def\maplayout{
@@ -34,13 +34,11 @@ layout base-p
 		\legendbox{1}{75}{NW}{\size[10]\the\comment}
 		\legendbox{25}{5}{N}{\scalebar}
 		\legendbox{25}{7}{S}{\northarrow}
-		%\legendbox{15}{1}{SE} {\hbox{\loadpicture{"../../layouts/logos/logo_iccc.png"}}}
-		
 		}
 	endcode
-	
+
 	# hide unnecessary symbols for large scale
-	
+
 	symbol-hide point remark
 	# symbol-hide point label
 	symbol-hide point passage-height
@@ -54,42 +52,42 @@ layout base-p
 	symbol-hide line label
 	symbol-hide line gradient
 	symbol-hide point station-name
-	
+
 	## general statements
 	scale 1 2000
 	legend on
 	map-header -5 95 ne
 	statistics topo-length off
 	fonts-setup 6 7 10 12 14
-	
-	
+
+
 	## survey lines and stations
 	symbol-assign line survey MY
 	symbol-hide point passage-height
 	symbol-colour point station-name [70 0 0]
-	
+
 	## water and ice
 	symbol-assign area ice MY
 	symbol-assign area snow MY
 	symbol-assign area water MY
 	symbol-assign area sump MY
-	
+
 	symbol-assign point snow MY
 	symbol-assign point water-flow MY
-	
+
 	symbol-colour area ice [0 70 90]
-	
+
 	symbol-colour area water [3.52 55.68 83.92]
 	symbol-colour area sump [15.68 20.39 50.98]
-	
-	
+
+
 	symbol-colour point water-flow [0 10 70]
-	
+
 	## formations
 	symbol-assign point stalagmite MY
 	symbol-assign point stalactite MY
 	symbol-assign point pillar MY
-	
+
 	symbol-colour point flowstone [85 45 10]
 	symbol-color line wall:flowstone [85 45 10]
 	symbol-colour point flowstone [85 45 10]
@@ -100,18 +98,18 @@ layout base-p
 	symbol-colour point helictite [85 45 10]
 	symbol-colour point soda-straw [85 45 10]
 	symbol-colour point crystal [85 45 10]
-	
+
 	## sedimentary fills
 	symbol-assign line rock-border MY
 	symbol-assign area clay MY
 	symbol-assign area sand MY
 	symbol-assign area pebbles MY
 	symbol-assign point debris MY
-	
+
 	symbol-colour area clay [65 55 10]
 	symbol-colour line wall:clay [70 30 20]
 	symbol-colour area sand [85 75 10]
-	
+
 	## misc
 	symbol-assign point gradient MY
 	symbol-assign point anchor MY
@@ -122,7 +120,7 @@ layout base-p
 	symbol-assign point air-draught MY
 	symbol-assign point station:fixed MY
 	symbol-assign point station:temporary MY
-	
+
 	symbol-hide point air-draught
 	symbol-hide point crystal
 	symbol-hide point popcorn
@@ -139,5 +137,5 @@ layout base-p
 	symbol-hide line u:texture
 	symbol-hide line survey
 	symbol-hide point station
-	
+
 endlayout
