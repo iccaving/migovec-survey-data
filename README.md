@@ -23,11 +23,6 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
   - [Adding data](#adding-data)
     - [Adding survey data](#adding-survey-data)
     - [Adding scraps](#adding-scraps)
-  - [Converting old data](#converting-old-data)
-    - [Converting Survex into Therion](#converting-survex-into-therion)
-      - [Script](#script)
-      - [Manually (don't do this anymore)](#manually-dont-do-this-anymore)
-    - [Converting the old drawn survey into Therion format](#converting-the-old-drawn-survey-into-therion-format)
   - [Additional steps](#additional-steps)
     - [Connecting caves into systems](#connecting-caves-into-systems)
   - [How to contribute?](#how-to-contribute)
@@ -553,6 +548,7 @@ export -o {path/to/map} -projection extended -layout local-e
 Main symbology and symbol codes:
 
 ![symbology of migovec-survey-data](./outputs/symbology.svg)
+![](https://cors-anywhere-iccc.herokuapp.com/https://github.com/iccaving/migovec-survey-data/releases/download/latest/symbology.svg)
 
 [symbology PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/symbology.pdf)
 
