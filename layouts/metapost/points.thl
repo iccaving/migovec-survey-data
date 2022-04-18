@@ -160,7 +160,7 @@ layout custom_points
 	    # a straight blue arrow for drips
 
 
-	    def p_u_waterdrip_MY (expr P,R,S,A)=
+	    def p_u_waterdrip (expr P,R,S,A)=
 	      U:=(.2u,.2u);
 	      T:=identity aligned A rotated R scaled S shifted P;
 	      pickup PenD;
@@ -172,7 +172,7 @@ layout custom_points
 	    enddef;
 
 	    # green grass
-	    def p_u_grass_MY (expr P,R,S,A)=
+	    def p_u_grass (expr P,R,S,A)=
 	      U:=(.2u,.2u);
 	      T:=identity aligned A rotated R scaled S shifted P;
 	      pickup PenC;
@@ -185,8 +185,8 @@ layout custom_points
 	    initsymbol("p_u_gradice_MY");
 	    initsymbol("p_u_sampled_MY");
 	    initsymbol("p_u_logger_MY");
-	    initsymbol("p_u_waterdrip_MY");
-	    initsymbol("p_u_grass_MY");
+	    initsymbol("p_u_waterdrip");
+	    initsymbol("p_u_grass");
 
 	endcode
 
@@ -197,5 +197,5 @@ endlayout
 text en "point u:gradice_MY"  "ice gradient"
 text en "point u:sampled_MY"  "sampled"
 text en "point u:logger_MY"  "logger"
-text en "point u:waterdrip_MY" "water drips"
-text en "point u:grass_MY" "grass"
+text en "point u:waterdrip" "water drips"
+text en "point u:grass" "grass"

@@ -153,7 +153,7 @@ code metapost
       thfill (-.2u,-.2u)--(-.2u,.2u)--(.2u,.2u)..(.2u,-.2u)--cycle;
     enddef;
     
-    def p_u_waterdrip_MY (expr P,R,S,A)=
+    def p_u_waterdrip (expr P,R,S,A)=
       U:=(.2u,.2u);
       T:=identity aligned A rotated R scaled S shifted P;
       pickup PenD;
@@ -484,7 +484,7 @@ code metapost
     initsymbol("p_gradient_MY");
     
     initsymbol("p_u_logger_MY");
-    initsymbol("p_u_waterdrip_MY");
+    initsymbol("p_u_waterdrip");
     initsymbol("p_u_sampled_MY");
    
    ## lines
@@ -587,7 +587,7 @@ text en "point u:logger_MY"  "logger"
 text en "line u:flowstone_MY" "flowstone  wall"
 text en "line u:openshaft_MY" "open shaft"
 text en "line u:texture" "bedrock exposed"
-text en "point u:waterdrip_MY" "water drips"
+text en "point u:waterdrip" "water drips"
 text en "point u:sampled_MY" "sample taken"
 text en "line u:wall_flowstone_MY" "wall flowstone"
 text en "line u:overlay_MY" "overlying passage"

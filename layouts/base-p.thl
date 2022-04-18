@@ -28,10 +28,12 @@ layout base-p
   code tex-map
     \framethickness=0.5mm
     \def\maplayout{
-      \legendbox{-5}{99}{NW}{\size[26]\the\cavename}
-      \legendbox{-5}{95}{NW}{\size[10]\the\comment}
-      \legendbox{5}{70}{NW}{\scalebar}
-      \legendbox{5}{65}{N W}{\northarrow}
+      \legendbox{1}{79}{W}{\size[26]\the\cavename}
+      \legendbox{1}{75}{NW}{\size[10]\the\comment}
+      \legendbox{25}{5}{N}{\scalebar}
+      \legendbox{25}{7}{S}{\northarrow}
+      %\legendbox{15}{1}{SE} {\hbox{\loadpicture{"../../layouts/logos/logo_iccc.png"}}}
+
     }
   endcode
 

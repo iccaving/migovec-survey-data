@@ -69,10 +69,9 @@ layout base-e
 	grid-coords border
 
 
-
 	## survey lines and stations
-	symbol-assign line survey MY
-	symbol-assign point station MY
+	symbol-hide line survey
+	symbol-hide point station
 	symbol-hide point passage-height
 	symbol-colour point station-name [70 0 0]
 

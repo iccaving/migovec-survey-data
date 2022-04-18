@@ -171,9 +171,9 @@ point 257.5935 826.0103 station-name -text 9 -align t -scale xs
 point 442.9468 878.6063 station-name -text 13 -align t -scale xs
 point 570.635 928.8781 station-name -text 14 -align l -scale xs
 point 600.2589 1035.0667 entrance -scale l -orientation 235.0
-point 525.6025 1011.7736 u:grass_MY 
-point 559.6569 947.6976 u:grass_MY 
-point 482.5865 991.1617 u:grass_MY 
+point 525.6025 1011.7736 u:grass 
+point 559.6569 947.6976 u:grass 
+point 482.5865 991.1617 u:grass 
 line wall:pit 
   555.88 895.24
   578.0284 910.9547
@@ -202,10 +202,10 @@ area clay
   clay1
 endarea
 
-point 156.3813 903.7854 u:grass_MY 
-point 466.4554 906.922 u:grass_MY 
-point 390.2811 816.8571 u:grass_MY 
-point 316.7954 824.4745 u:grass_MY 
+point 156.3813 903.7854 u:grass 
+point 466.4554 906.922 u:grass 
+point 390.2811 816.8571 u:grass 
+point 316.7954 824.4745 u:grass 
 line border -close on -id blocks11 -visibility off
   285.1589 825.6934
   285.1589 825.6934 306.7042 836.7829 306.3874 840.9019
@@ -461,10 +461,10 @@ line u:texture
   179.2336 535.4603
 endline
 
-point 305.5932 591.4708 u:grass_MY 
-point 239.2768 555.6241 u:grass_MY 
-point 339.6477 789.524 u:grass_MY 
-point 319.932 646.1371 u:grass_MY 
+point 305.5932 591.4708 u:grass 
+point 239.2768 555.6241 u:grass 
+point 339.6477 789.524 u:grass 
+point 319.932 646.1371 u:grass 
 line u:texture 
   110.6701 578.0349
   128.3761 581.1649
@@ -711,20 +711,20 @@ line border -close on -id blocks8 -visibility off
 endline
 
 point 556.6936 366.4687 breakdown-choke -align br -scale xs
-point 311.4184 1012.2217 u:grass_MY 
-point 346.3689 1042.6914 u:grass_MY 
-point 264.8615 1063.9158 u:grass_MY 
-point 271.0908 934.2551 u:grass_MY 
-point 146.5235 949.938 u:grass_MY 
-point 436.8819 943.6649 u:grass_MY 
-point 510.8158 957.5555 u:grass_MY 
-point 510.8158 910.9547 u:grass_MY 
-point 389.273 778.2098 u:grass_MY 
-point 435.9857 686.4647 u:grass_MY 
-point 500.0617 733.0654 u:grass_MY 
-point 473.6247 768.464 u:grass_MY 
-point 508.5753 800.7261 u:grass_MY 
-point 514.1764 829.4034 u:grass_MY 
+point 311.4184 1012.2217 u:grass 
+point 346.3689 1042.6914 u:grass 
+point 264.8615 1063.9158 u:grass 
+point 271.0908 934.2551 u:grass 
+point 146.5235 949.938 u:grass 
+point 436.8819 943.6649 u:grass 
+point 510.8158 957.5555 u:grass 
+point 510.8158 910.9547 u:grass 
+point 389.273 778.2098 u:grass 
+point 435.9857 686.4647 u:grass 
+point 500.0617 733.0654 u:grass 
+point 473.6247 768.464 u:grass 
+point 508.5753 800.7261 u:grass 
+point 514.1764 829.4034 u:grass 
 line u:texture 
   461.3237 822.525
   480.968 852.6251

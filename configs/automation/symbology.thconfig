@@ -29,7 +29,7 @@ source
 		point 25 -2 debris -clip off
 		point 21 0 label -text "debris" -align tr
 
-		point 35 -2 u:grass_MY
+		point 35 -2 u:grass
 		point 31 0 label -text "u:grass MY" -align tr
 
 		point 45 -2 stalagmite
@@ -56,7 +56,7 @@ source
 		point 45 -8 snow -orientation 90
 		point 41 -6 label -text "snow" -align tr
 
-		point 55 -8 u:waterdrip_MY
+		point 55 -8 u:waterdrip
 		point 51 -6 label -text "u:waterdrip MY" -align tr
 
 		point 65 -8 helictite
