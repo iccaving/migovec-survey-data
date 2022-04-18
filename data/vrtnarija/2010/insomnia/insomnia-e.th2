@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap insomnia-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-line u:texture_MY 
+line u:texture 
   314.3642 263.5756
   314.3642 263.5756 340.6408 263.5756 368.8285 245.4209
   397.0161 227.2661 393.1941 229.1771 393.1941 229.1771
@@ -51,13 +51,13 @@ scrap insomnia-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 
 point 173.0 404.0 u:label -align bl -attr text Insomnia -attr lvl 1
 point 230.0 554.0 water-flow -orientation 144.10002863662822
 point 251.778 274.564 water-flow -orientation 115.09997318073987
-line u:texture_MY 
+line u:texture 
   237.923 316.6067
   237.923 316.6067 266.5885 284.1192 288.0875 280.2971
   309.5866 276.4751 299.0759 277.9083 299.0759 277.9083
 endline
 
-line u:texture_MY 
+line u:texture 
   247.9559 514.8759
   247.9559 514.8759 259.8999 517.7424 267.544 514.8759
 endline

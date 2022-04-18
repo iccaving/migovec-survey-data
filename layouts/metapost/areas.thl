@@ -10,6 +10,12 @@ layout custom_areas
 			thfill p withcolor (0.0352, 0.5568, 0.8392);
 		enddef;
 
+
+		def a_sump_MY (expr p) =
+			T:=identity;
+			thfill p withcolor (0.1568, 0.2039, 0.5098);
+		enddef;
+
 		# define an ice pattern
 		beginpattern(pattern_ice_MY);
 			pickup PenC;
@@ -140,6 +146,7 @@ layout custom_areas
 		initsymbol("a_snow_MY");
 		initsymbol("a_ice_MY");
 		initsymbol("a_water_MY");
+		initsymbol("a_sump_MY");
 		initsymbol("a_clay_MY");
 		initsymbol("a_sand_MY");
 		initsymbol("a_pebbles_MY");

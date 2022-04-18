@@ -55,7 +55,7 @@ line wall
   231.5 911.72 237.5 899.72 231.0 895.72
 endline
 
-line u:texture_MY 
+line u:texture 
   326.26 954.81
   330.62 954.62 334.98 954.48 339.34 954.23
   343.46 954.01 347.6 953.98 351.69 953.4
@@ -131,20 +131,20 @@ line wall
   429.4 1394.3 411.55 1460.71 393.82 1523.73
 endline
 
-line u:texture_MY -outline out
+line u:texture -outline out
   238.34 1776.79
   238.34 1776.79 240.5 1767.22 238.5 1757.22
   236.5 1747.22 237.5 1727.72 237.5 1727.72
   236.69 1666.16
 endline
 
-line u:texture_MY -outline out
+line u:texture -outline out
   226.61 1603.56
   229.0 1550.22
   229.0 1550.22 230.5 1476.22 229.0 1474.72
 endline
 
-line u:texture_MY -outline out
+line u:texture -outline out
   217.47 1355.17
   203.0 1337.22
   190.5 1321.22
@@ -272,13 +272,13 @@ line rock-border -close on
   392.05 966.75
 endline
 
-line u:texture_MY 
+line u:texture 
   248.5 1157.24
   300.1 1164.28 352.99 1144.46 403.14 1135.04
   438.07 1128.47 475.32 1124.56 509.23 1113.67
 endline
 
-line u:texture_MY 
+line u:texture 
   422.18 1320.75
   395.91 1320.75 368.97 1325.89 342.61 1325.89
 endline

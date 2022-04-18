@@ -124,7 +124,7 @@ layout overview
     enddef;
     initsymbol("l_u_openshaft_MY");
     
-    def l_u_texture_MY (expr P)=
+    def l_u_texture (expr P)=
       T:=identity;
       thdraw P withpen PenD;
     enddef;
@@ -358,7 +358,7 @@ layout overview
     initsymbol("a_water_MY");
     initsymbol("p_u_logger_MY");
     initsymbol("l_u_flowstone_MY");
-    initsymbol("l_u_texture_MY");
+    initsymbol("l_u_texture");
     initsymbol("l_u_contour_MY");
     initsymbol("p_pillar_MY");
     initsymbol("p_stalagmite_MY");

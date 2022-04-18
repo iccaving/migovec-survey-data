@@ -105,42 +105,42 @@ line wall -close on
 endline
 
 point 285.445 264.9167 station-name -align tr -scale xs -text 4
-line u:texture_MY 
+line u:texture 
   396.4498 629.612
   383.2411 623.7415
 endline
 
-line u:texture_MY 
+line u:texture 
   407.8973 603.4882
   411.4196 626.0897
   411.4196 626.0897 412.3003 635.4826 412.3003 636.9503
   412.3003 638.4178 409.952 643.7013 409.952 643.7013
 endline
 
-line u:texture_MY 
+line u:texture 
   380.3059 697.4166
   382.3606 696.2425 394.9822 689.7849 397.3304 681.2726
   399.6785 672.7604 402.3204 668.651 402.3204 668.651
 endline
 
-line u:texture_MY 
+line u:texture 
   403.2009 691.546
   384.4153 670.9992
 endline
 
-line u:texture_MY 
+line u:texture 
   423.1607 636.3631
   396.7434 625.2091
 endline
 
-line u:texture_MY 
+line u:texture 
   366.2167 706.2223
   366.2167 706.2223 395.5692 697.4166 400.8526 688.0237
   406.1362 678.6309 417.2902 648.1042 417.2902 642.2337
   417.2902 636.3631 411.4196 602.3141 411.4196 602.3141
 endline
 
-line u:texture_MY 
+line u:texture 
   402.0269 558.8722
   402.0269 558.8722 391.4598 587.6378 391.4598 601.7271
   391.4598 615.8163 392.634 618.7516 392.047 624.035
@@ -149,32 +149,32 @@ line u:texture_MY
   348.6051 688.0237 321.6007 709.7447 321.6007 709.7447
 endline
 
-line u:texture_MY 
+line u:texture 
   358.3884 664.7062
   394.0877 703.7265
 endline
 
-line u:texture_MY 
+line u:texture 
   318.538 700.4055
   326.8402 720.3307
 endline
 
-line u:texture_MY 
+line u:texture 
   340.1237 685.4616
   355.0676 712.0286
 endline
 
-line u:texture_MY 
+line u:texture 
   376.6532 635.6486
   427.7116 670.5177
 endline
 
-line u:texture_MY 
+line u:texture 
   404.0504 580.024
   389.1064 575.0427
 endline
 
-line u:texture_MY 
+line u:texture 
   383.7101 600.7795
   423.1454 613.2327
 endline
@@ -207,7 +207,7 @@ line border -close on -id blocks1 -subtype invisible
   269.3531 506.6246 308.6855 518.3656 308.6855 518.3656
 endline
 
-line u:texture_MY 
+line u:texture 
   400.8526 528.3455
   400.8526 528.3455 374.6598 568.7759 376.13 613.5726
   376.6656 629.8951 370.0171 644.6721 365.9684 649.7768

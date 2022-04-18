@@ -106,7 +106,7 @@ layout local-pink-e
 		  fi;
 		enddef;
 
-		def l_u_texture_MY (expr P)=
+		def l_u_texture (expr P)=
 		  T:=identity;
 		  thdraw P withpen PenD withcolor (0.3,0.3,0.3);
 		enddef;
@@ -114,7 +114,7 @@ layout local-pink-e
 		initsymbol("l_wall_blocks_MY");
 		initsymbol("a_snow_MY");
 		initsymbol("a_ice_MY");
-		initsymbol("l_u_texture_MY");
+		initsymbol("l_u_texture");
 	endcode
 
 	symbol-hide group all

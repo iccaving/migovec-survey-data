@@ -17,6 +17,8 @@ input metapost/scalebar_arrow.thl
 input metapost/grid.thl
 input metapost/connection_marker.thl
 
+
+
 layout base-e
 	# copy custom metapost definitions
 	copy custom_points
@@ -55,6 +57,7 @@ layout base-e
 	symbol-hide point anchor
 	symbol-hide point dig
 
+
 	## general statements
 	scale 1 2000
 	legend on
@@ -76,11 +79,13 @@ layout base-e
 	## water and ice
 	symbol-assign area ice MY
 	symbol-assign area snow MY
+	symbol-assign area water MY
+	symbol-assign area sump MY
 
 
 	symbol-colour area ice [0 70 90]
-	symbol-colour area water [0 10 70]
-	symbol-colour area sump [0 10 70]
+	symbol-colour area water [3.52 55.68 83.92]
+	symbol-colour area sump [15.68 20.39 50.98]
 	symbol-assign point water-flow MY
 	symbol-colour point water-flow [0 10 70]
 
@@ -100,6 +105,8 @@ layout base-e
 	symbol-assign line rock-border MY
 	symbol-assign area clay MY
 	symbol-assign area sand MY
+	symbol-assign area water MY
+	symbol-assign area sump MY
 	symbol-assign area pebbles MY
 	symbol-assign line wall:blocks MYEE # this is an example of symbol different between plan view and EE.
 

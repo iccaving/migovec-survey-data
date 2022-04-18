@@ -26,14 +26,18 @@ input ../../layouts/base-p.thl
 
 input ../../layouts/metapost/user_label.thl
 
+maps-offset off
+
 layout local-p
   copy base-p
   copy user_label
+
   scale 1 2000
   base-scale 1 3000
   fonts-setup 6 8 10 12 14
   colour map-fg map:cave
 	symbol-colour area water [3.52 55.68 83.92]
+	symbol-colour area sump [15.68 20.39 50.98]
 
   symbol-hide line survey
   symbol-hide point station
@@ -43,8 +47,8 @@ layout local-p
   endcode
 endlayout
 
-#select m-all-e@system_migovec
-#export map -o ../../outputs/system_migovec_plan_ENG.pdf -projection plan -layout local-p
+select m-all-p@primadona.primadona_ubend_monatip.system_migovec
+export map -o ../../outputs/system_migovec_plan_ENG.pdf -projection plan -layout local-p
 
 
 
@@ -75,9 +79,9 @@ endsource
 
 #select m-local-e
 
-select m-all-e@system_migovec
+#select m-all-e@system_migovec
 
-export map -o ../../outputs/system_migovec_EE_ENG.pdf -projection extended -layout local-e
+#export map -o ../../outputs/system_migovec_EE_ENG.pdf -projection extended -layout local-e
 
 #export database -o ../../outputs/system_migovec.sql
 #export model -o ../../outputs/system_migovec.3d

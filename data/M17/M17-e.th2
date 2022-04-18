@@ -1411,20 +1411,20 @@ point 449.9854 801.9431 label -align t -text c
 point 390.2775 305.6231 label -align r -text "Ice shaft (P40)"
 point 17.1111 694.256 label -align l -text "Entrance shaft (P40)"
 point 257.1111 534.256 label -align t -text "Main ice chamber"
-line u:texture_MY 
+line u:texture 
   93.8103 818.4039
   95.5316 817.3711
   98.1135 815.4777
 endline
 
-line u:texture_MY 
+line u:texture 
   77.458 819.781
   83.6547 818.0597
   86.0645 816.5105
   91.0562 814.2728
 endline
 
-line u:texture_MY 
+line u:texture 
   51.1223 820.9859
   65.0648 813.24
   65.0648 813.24 72.4663 809.7975 73.1548 809.6253
@@ -1433,7 +1433,7 @@ line u:texture_MY
   87.6137 802.3959
 endline
 
-line u:texture_MY 
+line u:texture 
   97.9414 828.9038
   97.9414 828.9038 95.8758 828.7317 95.8758 828.0431
   95.8758 827.3546 93.8103 823.5678 93.8103 823.5678
@@ -1443,13 +1443,13 @@ line u:texture_MY
   89.5071 800.1582
 endline
 
-line u:texture_MY 
+line u:texture 
   80.04 827.0104
   89.5071 823.3957
   93.466 822.1908
 endline
 
-line u:texture_MY 
+line u:texture 
   30.1226 840.6086
   30.1226 840.6086 38.3848 837.166 39.0733 837.166
   39.7618 837.166 48.5404 833.207 49.7453 833.207
@@ -1457,39 +1457,39 @@ line u:texture_MY
   60.9337 832.0021
 endline
 
-line u:texture_MY 
+line u:texture 
   18.0735 846.2888
   27.1964 840.6086
   28.9177 834.2398
 endline
 
-line u:texture_MY 
+line u:texture 
   68.6852 795.1286
   80.5275 788.0232
   88.4223 783.2863
 endline
 
-line u:texture_MY 
+line u:texture 
   71.4484 744.9963
   82.896 743.0225
   89.2118 743.4173
 endline
 
-line u:texture_MY 
+line u:texture 
   57.2377 697.6271
   57.2377 697.6271 61.9746 694.8639 63.5536 694.8639
   65.1325 694.8639 69.8695 693.6797 69.8695 693.6797
   74.6064 692.8902
 endline
 
-line u:texture_MY 
+line u:texture 
   42.2375 687.3638
   60.3956 682.6269
   63.5536 681.0479
   70.6589 674.7321
 endline
 
-line u:texture_MY 
+line u:texture 
   35.1321 607.6258
   45.0007 601.7047
   54.4745 599.731
@@ -1497,33 +1497,33 @@ line u:texture_MY
   62.7641 589.0729
 endline
 
-line u:texture_MY 
+line u:texture 
   45.7902 622.2313
   45.0007 609.5995
   45.0007 606.8363
 endline
 
-line u:texture_MY 
+line u:texture 
   35.9216 634.4683
   48.1586 626.5734
   56.8429 624.5997
   61.5798 619.8628
 endline
 
-line u:texture_MY 
+line u:texture 
   63.5536 630.1261
   62.3693 643.1526
   62.3693 648.679
   63.9483 661.7056
 endline
 
-line u:texture_MY 
+line u:texture 
   49.3428 680.6532
   48.9481 657.3634
   49.7376 644.7316
 endline
 
-line u:texture_MY 
+line u:texture 
   171.8791 477.3341
   171.8791 477.3341 176.0962 488.452 176.0962 489.9855
   176.0962 491.519 170.6012 497.3974 170.6012 497.3974
@@ -1531,7 +1531,7 @@ line u:texture_MY
   167.7898 501.3589
 endline
 
-line u:texture_MY 
+line u:texture 
   140.1869 510.3043
   151.3047 506.9817
   158.5888 503.148
@@ -1539,13 +1539,13 @@ line u:texture_MY
   169.5789 504.0425
 endline
 
-line u:texture_MY 
+line u:texture 
   161.4002 523.4668
   161.4002 523.4668 163.5727 516.3104 163.5727 514.2658
   163.5727 512.2211 164.7228 504.6814 164.7228 504.6814
 endline
 
-line u:texture_MY 
+line u:texture 
   130.0914 521.2943
   130.0914 522.1888 128.4301 529.6007 128.4301 529.6007
   118.8458 537.2682
@@ -1554,7 +1554,7 @@ line u:texture_MY
   98.7826 562.0597
 endline
 
-line u:texture_MY 
+line u:texture 
   142.7427 497.7807
   142.7427 506.0872
   142.7427 506.0872 139.548 509.1541 139.548 509.7931
@@ -1562,7 +1562,7 @@ line u:texture_MY
   135.2031 535.8625 134.1807 543.9133 134.1807 543.9133
 endline
 
-line u:texture_MY 
+line u:texture 
   160.7613 486.7907
   159.8667 502.1256
 endline
@@ -1597,20 +1597,20 @@ point 38.9122 845.8288 entrance -orientation 145
 point 91.6161 842.8735 entrance -orientation 180
 point 287.9599 801.8883 entrance -orientation 180
 point 448.2254 785.2821 entrance -orientation 180
-line u:texture_MY 
+line u:texture 
   362.8833 603.2667
   362.8833 611.5858
   362.0227 617.323
 endline
 
-line u:texture_MY 
+line u:texture 
   270.7547 644.4306
   270.7547 644.4306 289.6749 633.3394 294.2419 633.3394
   298.8088 633.3394 335.3444 619.6386 335.3444 619.6386
   346.4355 617.6813
 endline
 
-line u:texture_MY 
+line u:texture 
   262.2732 741.6413
   291.6322 730.5501
   314.4669 721.4162
@@ -1618,7 +1618,7 @@ line u:texture_MY
   314.4669 679.6613 314.4669 655.5217 314.4669 655.5217
 endline
 
-line u:texture_MY 
+line u:texture 
   389.1328 669.4924
   406.0872 662.7515
   411.6025 658.6661
@@ -1627,31 +1627,31 @@ line u:texture_MY
   411.3982 728.1177
 endline
 
-line u:texture_MY 
+line u:texture 
   395.6695 611.6842
   402.6146 603.1049
   407.3128 596.7726
 endline
 
-line u:texture_MY 
+line u:texture 
   398.1207 638.6478
   398.1207 638.6478 418.1391 630.8855 418.7519 629.4556
   419.3647 628.0258 422.8373 625.166 425.0842 625.166
   427.3312 625.166 428.9654 622.919 428.9654 622.919
 endline
 
-line u:texture_MY 
+line u:texture 
   485.3437 715.6572
   490.8589 713.4103
   495.5571 711.5719
 endline
 
-line u:texture_MY 
+line u:texture 
   490.2461 734.8586
   498.8254 729.9561
 endline
 
-line u:texture_MY 
+line u:texture 
   474.7217 689.7151
   483.5052 704.0139
   483.5052 704.0139 483.5052 716.2701 483.5052 718.517
@@ -1662,7 +1662,7 @@ line u:texture_MY
   513.3285 765.2947
 endline
 
-line u:texture_MY 
+line u:texture 
   468.185 763.4562
   475.9473 758.5538
   475.9473 758.5538 476.5601 736.0842 476.5601 734.45
@@ -1671,23 +1671,23 @@ line u:texture_MY
   471.8619 694.4133
 endline
 
-line u:texture_MY 
+line u:texture 
   466.3466 746.9104
   466.3466 746.9104 467.368 744.6635 469.4107 744.6635
   471.4534 744.6635 475.1302 739.5567 475.1302 739.5567
 endline
 
-line u:texture_MY 
+line u:texture 
   469.8192 729.5476
   474.5174 725.8707
 endline
 
-line u:texture_MY 
+line u:texture 
   437.5447 737.1055
   464.9167 724.0323
 endline
 
-line u:texture_MY 
+line u:texture 
   403.636 767.7459
   431.2123 756.9196
   431.2123 756.9196 431.6208 756.7154 431.6208 752.2214
@@ -1696,7 +1696,7 @@ line u:texture_MY
   416.5049 738.7397
 endline
 
-line u:texture_MY 
+line u:texture 
   467.9808 687.0596
   467.9808 687.0596 466.7552 721.3768 466.7552 722.8067
   466.7552 724.2366 466.3466 728.9348 466.3466 730.7732
@@ -1708,7 +1708,7 @@ line u:texture_MY
   405.8829 781.0234 389.3371 788.9899 389.3371 788.9899
 endline
 
-line u:texture_MY 
+line u:texture 
   453.4777 632.1111
   453.4777 632.1111 456.9502 651.3125 458.1759 659.0747
   459.4015 666.8369 463.4869 670.3095 463.4869 671.3308

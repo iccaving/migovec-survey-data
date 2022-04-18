@@ -511,7 +511,7 @@ line rock-border -close on
   675.23 680.0
 endline
 
-line u:texture_MY 
+line u:texture 
   922.58 263.9
   922.28 264.47 921.97 265.03 921.68 265.6
   921.31 266.35 920.99 267.13 920.6 267.87
@@ -541,7 +541,7 @@ line pit
   742.33 674.34 722.31 706.15 706.6 737.58
 endline
 
-line u:texture_MY 
+line u:texture 
   698.59 1004.31
   692.6 1011.4
   687.58 1018.6
@@ -557,7 +557,7 @@ line u:texture_MY
   612.72 1065.68
 endline
 
-line u:texture_MY 
+line u:texture 
   698.59 1059.96
   693.02 1067.84
   688.24 1074.94
@@ -575,7 +575,7 @@ line u:texture_MY
   615.89 1106.5
 endline
 
-line u:texture_MY 
+line u:texture 
   678.97 924.94
   678.97 933.12
   678.97 942.38
@@ -594,7 +594,7 @@ line u:texture_MY
   615.18 1007.18
 endline
 
-line u:texture_MY 
+line u:texture 
   744.39 805.46
   738.36 815.32
   733.82 822.59
@@ -612,7 +612,7 @@ line u:texture_MY
   714.54 930.66
 endline
 
-line u:texture_MY 
+line u:texture 
   747.66 774.37
   751.34 763.73
   754.39 754.26
@@ -638,20 +638,20 @@ line u:texture_MY
   817.99 561.2
 endline
 
-line u:texture_MY 
+line u:texture 
   743.57 710.54
   748.89 692.95
   752.59 685.94
 endline
 
-line u:texture_MY 
+line u:texture 
   786.92 589.43
   789.78 578.38
   791.82 567.34
   794.28 559.97
 endline
 
-line u:texture_MY 
+line u:texture 
   737.03 744.09
   734.26 755.69
   731.71 765.78
@@ -664,11 +664,11 @@ line u:texture_MY
   714.95 826.29
 endline
 
-line u:texture_MY 
+line u:texture 
   702.55 1099.52
 endline
 
-line u:texture_MY 
+line u:texture 
   685.98 1072.43
   685.03 1064.3
   681.88 1056.83
@@ -679,20 +679,20 @@ line u:texture_MY
   660.4 1011.8
 endline
 
-line u:texture_MY 
+line u:texture 
   680.25 1141.28
   676.59 1127.89
   670.69 1120.56
 endline
 
-line u:texture_MY 
+line u:texture 
   662.41 1102.71
   660.78 1092.33
   656.25 1084.67
   651.31 1073.31
 endline
 
-line u:texture_MY 
+line u:texture 
   653.17 1175.07
   651.76 1167.15
   649.99 1158.49
@@ -708,7 +708,7 @@ line u:texture_MY
   630.43 1055.87
 endline
 
-line u:texture_MY 
+line u:texture 
   709.56 1024.93
   705.66 1013.91
   696.88 1006.23
@@ -720,12 +720,12 @@ line u:texture_MY
   658.39 963.32
 endline
 
-line u:texture_MY 
+line u:texture 
   683.75 954.48
   675.12 948.79
 endline
 
-line u:texture_MY 
+line u:texture 
   708.6 976.8
   702.03 972.91
   696.63 966.73
@@ -734,7 +734,7 @@ line u:texture_MY
   675.31 950.34
 endline
 
-line u:texture_MY 
+line u:texture 
   664.0 958.31
   661.61 968.51
   656.95 974.97
@@ -745,7 +745,7 @@ line u:texture_MY
   617.61 983.25
 endline
 
-line u:texture_MY 
+line u:texture 
   631.83 972.97
   630.71 983.33
   629.92 993.17
@@ -756,13 +756,13 @@ line u:texture_MY
   626.41 1034.42
 endline
 
-line u:texture_MY 
+line u:texture 
   650.3 986.68
   653.63 993.9
   657.11 1001.14
 endline
 
-line u:texture_MY 
+line u:texture 
   773.36 730.07
   765.25 726.9
   756.21 721.12
@@ -771,7 +771,7 @@ line u:texture_MY
   734.39 708.25
 endline
 
-line u:texture_MY 
+line u:texture 
   750.92 787.47
   740.61 785.56
   734.08 779.73
@@ -779,7 +779,7 @@ line u:texture_MY
   718.01 772.43
 endline
 
-line u:texture_MY 
+line u:texture 
   758.75 834.53
   750.81 830.33
   741.83 825.59
@@ -789,7 +789,7 @@ line u:texture_MY
   712.83 809.77
 endline
 
-line u:texture_MY 
+line u:texture 
   746.64 867.33
   736.98 866.47
   730.49 861.31
@@ -798,17 +798,17 @@ line u:texture_MY
   705.57 852.97
 endline
 
-line u:texture_MY 
+line u:texture 
   703.53 894.07
   692.85 892.82
 endline
 
-line u:texture_MY 
+line u:texture 
   730.96 894.07
   722.49 893.72
 endline
 
-line u:texture_MY 
+line u:texture 
   707.09 915.81
   709.0 907.81
   710.11 898.97
@@ -821,13 +821,13 @@ line u:texture_MY
   714.93 830.96
 endline
 
-line u:texture_MY 
+line u:texture 
   775.86 798.88
   767.41 792.97
   759.82 788.54
 endline
 
-line u:texture_MY 
+line u:texture 
   780.84 699.41
   773.21 696.57
   764.56 691.97
@@ -836,26 +836,26 @@ line u:texture_MY
   740.18 677.28
 endline
 
-line u:texture_MY 
+line u:texture 
   808.28 645.22
   800.43 644.09
   790.07 640.1
   781.79 637.49
 endline
 
-line u:texture_MY 
+line u:texture 
   827.16 622.76
   817.18 620.87
   809.82 615.38
   799.66 609.44
 endline
 
-line u:texture_MY 
+line u:texture 
   779.42 597.8
   767.66 596.02
 endline
 
-line u:texture_MY 
+line u:texture 
   777.99 612.42
   775.7 621.43
   769.37 629.78

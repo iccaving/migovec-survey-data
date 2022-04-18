@@ -939,32 +939,32 @@ line floor-step
   932.88 1702.81
 endline
 
-line u:texture_MY
+line u:texture
   1418.0 342.0
   1406.0 460.0
 endline
 
-line u:texture_MY
+line u:texture
   1344.0 392.0
   1344.0 392.0 1410.0 380.0 1434.0 396.0
 endline
 
-line u:texture_MY
+line u:texture
   1298.0 526.0
   1298.0 526.0 1344.0 500.0 1388.0 502.0
 endline
 
-line u:texture_MY
+line u:texture
   1392.0 446.0
   1392.0 446.0 1454.0 456.0 1518.0 508.0
 endline
 
-line u:texture_MY
+line u:texture
   1328.0 392.0
   1360.0 554.0
 endline
 
-line u:texture_MY
+line u:texture
   1468.0 398.0
   1442.0 556.0
 endline
@@ -1080,7 +1080,7 @@ endline
 endscrap
 
 scrap moonraker-p2 -scale [0 0 100 0 0 0 1 0 m]
-point 3782.8152 3289.1976 u:connectionmarker_MY -attr text "Tranquillity Base" -attr offset 2.25 -align tl -attr code 15
+point 3782.8152 3289.1976 u:connectionmarker -attr text "Tranquillity Base" -attr offset 2.25 -align tl -attr code 18
 
 line wall
   2646.33 2614.94

@@ -45,7 +45,7 @@ layout map2
     enddef;
     initsymbol("l_u_openshaft_MY");
     
-    def l_u_texture_MY (expr P)=
+    def l_u_texture (expr P)=
       T:=identity;
       thdraw P withpen PenD;
     enddef;
@@ -205,7 +205,7 @@ layout map2
     initsymbol("a_water_MY");
     initsymbol("p_u_logger_MY");
     initsymbol("l_u_flowstone_MY");
-    initsymbol("l_u_texture_MY");
+    initsymbol("l_u_texture");
     initsymbol("l_u_contour_MY");
     initsymbol("p_pillar_MY");
     initsymbol("p_stalagmite_MY");
@@ -242,7 +242,7 @@ text en "line u:flowstone_MY" "flowstone  wall"
 
 text en "line u:openshaft_MY" "open shaft"
 text de "line u:openshaft_MY" "Eingangskessel"
-text en "line u:texture_MY" "bedrock wall"
-text de "line u:texture_MY" "Felsboden"
+text en "line u:texture" "bedrock wall"
+text de "line u:texture" "Felsboden"
 text de "line u:flowstone_MY" "flächiger Sinter"
 

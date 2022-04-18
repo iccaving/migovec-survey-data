@@ -4,9 +4,9 @@ encoding  utf-8
 
 # 2019.02.24 created by TopoDroid v. 4.1.1a
 
-#P  u:texture_MY label air-draught anchor blocks continuation curtain debris entrance u:fault flowstone flowstone:floor flowstone:wall u:fossil gradient helictite karren low-end u:mud narrow-end water-flow:paleo pebbles pillar scallop section soda-straw stalactite stalagmite u:water_drip water-flow clay
-#L  u:texture_MY wall u:anticline arrow border chimney contour floor-step gour-rim u:joint pit wall:presumed rock-border section slope u:syncline wall:blocks wall:clay wall:flowstone wall:ice wall:sand wall:pit
-#A  u:texture_MY water blocks clay debris ice pebbles sand snow
+#P  u:texture label air-draught anchor blocks continuation curtain debris entrance u:fault flowstone flowstone:floor flowstone:wall u:fossil gradient helictite karren low-end u:mud narrow-end water-flow:paleo pebbles pillar scallop section soda-straw stalactite stalagmite u:water_drip water-flow clay
+#L  u:texture wall u:anticline arrow border chimney contour floor-step gour-rim u:joint pit wall:presumed rock-border section slope u:syncline wall:blocks wall:clay wall:flowstone wall:ice wall:sand wall:pit
+#A  u:texture water blocks clay debris ice pebbles sand snow
 
 
 
@@ -245,39 +245,39 @@ line floor-step
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2376.79 2828.77
   2322.13 2844.83 2257.8 2854.95 2215.26 2894.58
   2206.0 2903.21 2196.64 2911.73 2187.33 2920.3
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2358.98 2643.82
   2297.18 2645.89 2232.39 2650.9 2173.31 2669.2
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2336.71 2434.36
   2320.12 2435.1 2303.46 2435.02 2286.93 2436.58
   2221.55 2442.77 2163.87 2488.23 2111.23 2524.6
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2207.54 2242.72
   2149.79 2252.84 2090.45 2279.24 2047.18 2318.51
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2171.91 2265.0
   2177.15 2337.87 2196.42 2410.87 2208.81 2482.04
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2287.72 2436.58
   2289.73 2464.8 2292.74 2499.28 2296.62 2537.97
   2299.68 2568.42 2310.73 2599.18 2305.53 2629.33
@@ -285,44 +285,44 @@ line u:texture_MY
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2227.59 2628.22
   2243.64 2712.52 2250.79 2802.99 2237.99 2887.4
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2336.71 2826.54
   2339.42 2889.63 2342.94 2955.15 2336.71 3018.18
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2330.03 2735.18
   2303.06 2736.33 2256.97 2735.38 2230.09 2746.71
   2213.2 2753.83 2204.15 2772.62 2190.89 2785.27
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2203.09 2476.69
   2204.51 2512.51 2206.28 2548.82 2208.32 2583.47
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2078.38 2302.88
   2095.18 2348.58 2113.32 2398.93 2148.01 2433.78
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2031.61 2106.79
   2039.06 2153.58 2051.42 2201.0 2063.89 2246.73
   smooth off
 endline
 
-line u:texture_MY
+line u:texture
   2167.46 2191.47
   2105.08 2203.59 2043.18 2228.57 1986.63 2257.43
   smooth off

@@ -58,6 +58,7 @@ layout base-p
   statistics topo-length off
   fonts-setup 6 7 10 12 14
 
+
   ## survey lines and stations
   symbol-assign line survey MY
   symbol-hide point passage-height
@@ -67,12 +68,17 @@ layout base-p
   symbol-assign area ice MY
   symbol-assign area snow MY
   symbol-assign area water MY
+  symbol-assign area sump MY
+
   symbol-assign point snow MY
   symbol-assign point water-flow MY
 
   symbol-colour area ice [0 70 90]
-  symbol-colour area water [0 10 70]
-  symbol-colour area sump [0 10 70]
+
+  symbol-colour area water [3.52 55.68 83.92]
+	symbol-colour area sump [15.68 20.39 50.98]
+
+
   symbol-colour point water-flow [0 10 70]
 
   ## formations
@@ -106,7 +112,7 @@ layout base-p
   symbol-assign point gradient MY
   symbol-assign point anchor MY
   symbol-assign line contour MY
-  symbol-assign line pit AUT
+  symbol-assign line pit MY
   symbol-assign line wall MY
   #symbol-assign point breakdown-choke AUT
   symbol-assign point air-draught MY
@@ -123,5 +129,11 @@ layout base-p
   symbol-hide point wall-altitude
   symbol-hide line slope
   symbol-hide point stalactite
+  symbol-hide point stalactites
+  symbol-hide point clay
+  symbol-hide point sand
+  symbol-hide line u:texture
+  symbol-hide line survey
+  symbol-hide point station
 
 endlayout

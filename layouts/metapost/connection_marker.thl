@@ -2,7 +2,7 @@ layout connection_marker
 
 	code metapost
 
-		def p_u_connectionmarker_MY (expr P,R,S,A)=
+		def p_u_connectionmarker (expr P,R,S,A)=
 			save RGB;
  !		    color RGB;
  			if known ATTR_code:
@@ -111,7 +111,8 @@ layout connection_marker
 					fi;
 				endgroup
 	    enddef;
-	    initsymbol("p_u_connectionmarker_MY")
+
+	    initsymbol("p_u_connectionmarker");
 	endcode
 
 endlayout

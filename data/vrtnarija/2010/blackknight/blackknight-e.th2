@@ -20,7 +20,7 @@ area water
   blackknight-2e_water_1
 endarea
 
-line u:texture_MY 
+line u:texture 
   367.7967 170.9783
   367.7967 170.9783 388.9225 187.6019 407.9704 192.4504
 endline
@@ -94,25 +94,25 @@ scrap blackknight-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 
 point 319.907 303.537 u:label -align tr -attr text "Black Knight" -attr lvl 1
 point 297.147 284.227 water-flow -orientation 159.89985130044235
-line u:texture_MY 
+line u:texture 
   234.2436 216.9278
   249.117 226.2237 266.5566 237.9663 277.004 228.0828
   287.4526 218.1993 303.0386 166.9986 303.9629 193.6882
   304.8934 220.3778 305.8215 210.4208 303.9629 221.5757
 endline
 
-line u:texture_MY 
+line u:texture 
   370.892 224.3646
   370.892 224.3646 373.6811 213.2095 342.0757 217.8573
   294.8832 224.7972 302.1032 232.7308 302.1032 232.7308
 endline
 
-line u:texture_MY 
+line u:texture 
   266.3236 320.2442
   267.5358 319.5516
 endline
 
-line u:texture_MY -id horsey
+line u:texture -id horsey
   192.4737 284.4866
   192.4737 284.4866 251.7994 283.5896 255.583 288.2966
   255.1894 288.8618

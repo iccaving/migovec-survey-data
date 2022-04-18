@@ -35,15 +35,6 @@ source
 		point 45 -2 stalagmite
 		point 41 0 label -text "stalagmite" -align tr
 
-
-		#point 141 0 label -text "User defined Label display 0" -attr display 0
-		#point 141 5 label -text "User defined Label display 1" -attr display 1
-		#point 141 10 label -text "User defined Label display 2" -attr display 2
-
-		point 141 15 u:label -attr text "User defined lvl 1" -attr lvl 1
-		point 151 15 u:label -attr text "User defined lvl 4" -attr lvl 4
-		point 161 15 u:label -attr text "User defined lvl 5" -attr lvl 5
-
 		point 55 -2 stalactite
 		point 51 0 label -text "stalactite" -align tr
 
@@ -76,14 +67,14 @@ source
 		1 -14
 		7 -14
 		endline
-		point 1 -12 label -text "gradient&contour" -align tr
+		point 1 -12 label -text "gradient\&contour" -align tr
 
 		point 14 -14 u:gradice_MY -orientation 0
 		line border -clip off
 		11 -14
 		17 -14
 		endline
-		point 11 -12 label -text "gradice&border" -align tr
+		# 11 -12 label -text "gradice\&border" -align tr
 
 		point 25 -14 curtain
 		point 21 -12 label -text "curtain" -align tr
@@ -94,8 +85,11 @@ source
 		point 45 -14 u:logger_MY
 		point 41 -12 label -text "u:logger MY" -align tr
 
-		point 55 -14 u:connectionmarker_MY -scale xs   -attr code 6
-		point 51 -12 label -text "u:connectionmarker MY<br>-attr code 6" -align tr
+		point 35 -19 u:connectionmarker  -attr code 2 -attr text "a connection code 2, top right aligned, offset x 2 " -attr offset 2 -align tr
+		point 25 -19 u:connectionmarker  -attr code 15 -attr text "a connection code 15, left aligned, offset x 0.25" -attr offset 0.25 -align l
+
+		point 35 -21 u:connectionmarker  -attr code 6 -attr text "a connection code 6, right aligned, default offset " -align r
+		point 25 -21 u:connectionmarker  -attr code 18 -attr text "a connection code 18, bottom left aligned, offset x 0.5" -attr offset 0.5 -align bl
 
 		line wall:bedrock -clip off -outline none
 		1 -30.5
@@ -213,11 +207,11 @@ source
 
 		point 21 -40 label -text "survey" -align tr
 
-		line u:texture_MY -clip off
+		line u:texture -clip off
 		31 -42.5
 		39 -42.5
 		endline
-		point 31 -40 label -text "u:texture MY" -align tr
+		point 31 -40 label -text "u:texture" -align tr
 
 		line arrow -clip off
 		41 -42.5
@@ -361,12 +355,9 @@ input ../../layouts/metapost/lines.thl
 input ../../layouts/metapost/areas.thl
 input ../../layouts/metapost/points.thl
 input ../../layouts/base-p.thl
-input ../../layouts/metapost/user_label.thl
-
 
 
 layout local
-	copy connection_marker
 	copy base-p
 	copy user_label
 
@@ -405,12 +396,12 @@ layout local
 	code tex-map
 	\framethickness=0mm
     \def\maplayout{
-      \legendbox{1}{110}{SW}{\size[14]\the\cavename}
+      \legendbox{1}{101}{NW}{\size[14]\the\cavename}
     }
 	endcode
 
 	code metapost
-    set_label_level("4");
+    set_label_level("3");
 	endcode
 endlayout
 

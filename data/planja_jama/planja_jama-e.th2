@@ -9,7 +9,7 @@ point 91.2439 354.7072 station-name -align t -scale xs -text 0
 point 78.0377 413.671 entrance -orientation 140
 point 375.8593 231.7465 station-name -align t -scale xs -text 2
 point 282.2437 255.0677 station-name -align t -scale xs -text 1
-line u:texture_MY 
+line u:texture 
   413.5597 214.2466
   413.5597 214.2466 409.9128 182.8832 407.7246 177.0481
   405.5365 171.2131 400.4308 166.8368 400.4308 161.7311
@@ -18,7 +18,7 @@ line u:texture_MY
 endline
 
 point 695.857 -15.3781 narrow-end -align tr -scale xs
-line u:texture_MY 
+line u:texture 
   586.57 -146.4817
   586.9816 -144.8351 590.6863 -128.7817 590.6863 -125.077
   590.6863 -121.3723 594.3909 -106.1421 593.9793 -103.2607

@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap snakebite-p1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-point -70.0 -315.0 u:label -attr lvl 1 -attr text P7 -scale s -align b
+point -70.0 -315.0 u:label -attr lvl 3 -attr text P7 -scale s -align b
 
 line pit
   -29.0 -256.0
@@ -374,5 +374,3 @@ point 206.0 -20.0 station -name 18
 point 183.0 42.0 station -name 17
 
 endscrap
-
-
