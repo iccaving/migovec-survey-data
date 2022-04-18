@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap minestrone1-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	
-	point 286.8857 881.5435 label -attr level 1 -text Minestrone -align r -scale l
+	point 286.8857 881.5435 label -attr level 1 -scale l -text Minestrone -align r
 	line rock-border -close on
 		207.0019 1077.622
 		210.1228 1070.2998

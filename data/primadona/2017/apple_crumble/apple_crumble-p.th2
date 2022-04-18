@@ -108,7 +108,7 @@ scrap apple_crumble-p2 -projection plan -scale [0.0 0.0 879.5449374288966 1024.0
 		620.5 588.75 619.25 584.75 619.25 584.75
 	endline
 	
-	point 661.5 529.25 label -align br -attr level 1 -text "Apple Crumble"
+	point 661.5 529.25 label -align br -attr level 1 -scale l -text "Apple Crumble"
 	line label -text ""
 		598.0 577.5
 		611.5 538.0

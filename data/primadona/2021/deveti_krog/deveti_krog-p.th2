@@ -2734,7 +2734,7 @@ endscrap
 
 scrap deveti_krog-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 532.9492 447.488 label -align r -attr level 1 -text "Deveti Krog"
+	point 532.9492 447.488 label -align r -attr level 1 -scale l -text "Deveti Krog"
 	point 122.226 1503.81 water-flow -orientation 26.6168618278
 	point 98.377 1455.37 water-flow -orientation 46.1336215316
 	point -19.377 1542.94 water-flow -orientation 140.89252277

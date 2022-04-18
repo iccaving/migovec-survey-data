@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap lowerpleasures-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 130.1453 240.8412 label -align t -text "Lower pleasures" -attr level 1
+	point 130.1453 240.8412 label -align t -text "Lower pleasures" -attr level 1 -scale l
 	line wall
 		202.2974 128.7918
 		202.2974 128.7918 233.71 140.4145 239.9926 143.8699

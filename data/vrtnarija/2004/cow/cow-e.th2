@@ -57,7 +57,7 @@ endscrap
 
 scrap cow-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 319.907 303.537 label -align tr -text "Red Cow" -attr level 1
+	point 319.907 303.537 label -align tr -text "Red Cow" -attr level 1 -scale l
 	
 	
 	point 147.92 7.36 station -name 9

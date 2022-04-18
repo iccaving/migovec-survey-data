@@ -251,7 +251,7 @@ scrap lostcity-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 
 		-197.1682 572.6086 -194.3856 579.4492 -194.3856 579.4492
 	endline
 	
-	point -284.9576 502.1186 label -align l -attr level 1 -text "Lost City"
+	point -284.9576 502.1186 label -align l -attr level 1 -scale l -text "Lost City"
 	point 45.28 626.3 station -name 1
 	point 45.28 587.72 station -name 2
 	point 76.84 570.94 station -name 3

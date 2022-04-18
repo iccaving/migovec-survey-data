@@ -5,8 +5,8 @@ encoding  utf-8
 
 scrap the_queen_bed_chamber-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 130.8596 680.7123 label -align tr -attr level 1 -text "The Queen's"
-	point 130.8596 630.7123 label -align br -attr level 1 -text "Bedchamber"
+	point 130.8596 680.7123 label -align tr -attr level 1 -scale l -text "The Queen's"
+	point 130.8596 630.7123 label -align br -attr level 1 -scale l -text "Bedchamber"
 	
 	
 	line rock-border -close on

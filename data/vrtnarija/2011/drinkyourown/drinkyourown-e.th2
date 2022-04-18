@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap drinkyourown-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 136.0033 319.1489 label -align bl -text "Drink Your Own!" -attr level 1
+	point 136.0033 319.1489 label -align bl -text "Drink Your Own!" -attr level 1 -scale l
 	point 158.195 214.15 water-flow -orientation 175.00170914461708 -scale 2
 	point 167.015 331.317 water-flow -orientation 154.09922597269613 -scale 1.5
 	point 246.9 336.95 water-flow -orientation 229.65127996376935

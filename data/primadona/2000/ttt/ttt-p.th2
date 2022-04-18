@@ -456,7 +456,7 @@ scrap ttt-3p -projection plan -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.
 		2541.0 1463.5
 	endline
 	
-	point 3005.0 990.5 label -align r -attr level 1 -text "Manđare" -scale l
+	point 3005.0 990.5 label -align r -attr level 1 -scale l -text "Manđare"
 	point 2855.0 990.5 station -name 14
 	point 2740.0 1086.5 station -name 15
 	point 2642.0 1262.5 station -name 16
@@ -930,7 +930,7 @@ endscrap
 
 scrap ttt-6p -projection plan -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 	
-	point 2486.3069 2723.6587 label -align l -attr level 1 -text "Stara Jama"
+	point 2486.3069 2723.6587 label -align l -attr level 1 -scale l -text "Stara Jama"
 	line floor-step
 		2252.0 339.5
 		2252.0 339.5 2253.25 349.0 2253.0 352.25

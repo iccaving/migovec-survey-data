@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap brezno_slapov-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 108.9006 -8.0143 label -align bl -attr level 1 -text "Brezno Slapov"
+	point 108.9006 -8.0143 label -align bl -attr level 1 -scale l -text "Brezno Slapov"
 	point 265.73 -28.31 station -name 2
 	point 383.96 -124.06 station -name 1
 	point 250.37 -18.7 station -name 3

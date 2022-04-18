@@ -4,8 +4,8 @@ encoding  utf-8
 
 scrap kangaroo01-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 80.6621 655.882 label -align tl -text "Captain" -attr level 1
-	point 80.6621 555.882 label -align tl -text "Kangaroo" -attr level 1
+	point 80.6621 655.882 label -align tl -text "Captain" -attr level 1 -scale l
+	point 80.6621 555.882 label -align tl -text "Kangaroo" -attr level 1 -scale l
 	
 	
 	line wall

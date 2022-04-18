@@ -86,7 +86,7 @@ endscrap
 
 scrap republica-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 314.8507 350.6685 label -align tl -text Republica -attr level 1
+	point 314.8507 350.6685 label -align tl -text Republica -attr level 1 -scale l
 	# &#127796; de &#129381; for the palma de coco emojis, not supported by font
 	
 	point 234.77 250.56 station -name 2

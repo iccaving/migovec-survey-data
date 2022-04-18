@@ -70,7 +70,7 @@ scrap miles-3p -scale [0 0 90 0 0 0 250 0 inch]
 		446.3586 -228.0175 450.5317 -246.3618 451.158 -252.3011
 	endline
 	
-	point 437.9492 21.7731 label -attr level 1 -text "Miles Underground" -align r
+	point 437.9492 21.7731 label -attr level 1 -scale l -text "Miles Underground" -align r
 	line wall
 		307.9173 645.7465
 		307.9173 645.7465 310.0142 613.7439 313.7824 598.2393

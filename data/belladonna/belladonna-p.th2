@@ -254,7 +254,7 @@ endscrap
 
 scrap belladonna-1p -projection plan -scale [0 0 90 0 0 0 200 0 inch]
 	
-	point 5.3217 1452.0345 label -text BELLADONNA -align tr -attr level 1 -attr style 6
+	point 5.3217 1452.0345 label -text BELLADONNA -align tr -attr level 1 -scale l -attr style 6
 	point 82.1845 1080.4249 entrance -orientation 185 -scale xl
 	
 	point 83.535 506.5607 station-name -align tr -scale xs -text 6

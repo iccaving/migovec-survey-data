@@ -70,7 +70,7 @@ scrap hallelujahp_1 -scale [327.0 -735.0 527.0 -734.0 0.0 0.0 14 0.0 m]
 		smooth off
 	endline
 	
-	point 456.0 -300.5 label -align tr -text "Hallelujah" -attr level 1
+	point 456.0 -300.5 label -align tr -text "Hallelujah" -attr level 1 -scale l
 	
 	line wall
 		441.0 -526.0

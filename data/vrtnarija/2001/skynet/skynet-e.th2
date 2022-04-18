@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap skynet-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 	
-	point 494.3792 984.1928 label -attr level 1 -align tl -text Skynet
+	point 494.3792 984.1928 label -attr level 1 -scale l -align tl -text Skynet
 	line wall
 		595.9446 1077.0351
 		585.8349 1073.1815 590.3364 1074.5611 584.0946 1071.9203

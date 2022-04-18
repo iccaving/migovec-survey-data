@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap wonderland-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 357.784 1057.48 label -align tl -text Wonderland -attr level 1
+	point 357.784 1057.48 label -align tl -text Wonderland -attr level 1 -scale l
 	line rock-border -close on
 		395.2775 683.8332
 		381.7978 666.1411

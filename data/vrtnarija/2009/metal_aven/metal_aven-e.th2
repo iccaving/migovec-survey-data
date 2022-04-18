@@ -49,7 +49,7 @@ scrap metal_aven-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 	point 632.33 590.24 station -name 3
 	point 643.82 602.13 station -name 2
 	point 670.96 604.57 station -name 1
-	point 639.311 624.1865 label -align tr -text "Metal Aven" -attr level 1
+	point 639.311 624.1865 label -align tr -text "Metal Aven" -attr level 1 -scale l
 	line rock-border -close on
 		594.8978 496.9485
 		601.1396 519.5153

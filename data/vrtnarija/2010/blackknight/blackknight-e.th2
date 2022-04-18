@@ -92,7 +92,7 @@ endscrap
 
 scrap blackknight-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 319.907 303.537 label -align tr -text "Black Knight" -attr level 1
+	point 319.907 303.537 label -align tr -text "Black Knight" -attr level 1 -scale l
 	point 297.147 284.227 water-flow -orientation 159.89985130044235
 	line u:texture
 		234.2436 216.9278

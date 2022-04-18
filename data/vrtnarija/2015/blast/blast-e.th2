@@ -36,7 +36,7 @@ endscrap
 
 scrap blast-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point -188.54 -92.0218 label -align br -attr level 1 -text "Blast!"
+	point -188.54 -92.0218 label -align br -attr level 1 -scale l -text "Blast!"
 	line wall
 		-1099.5978 -170.3835
 		-1061.4206 -162.6066 -1056.943 -164.4919 -1037.6188 -164.0206

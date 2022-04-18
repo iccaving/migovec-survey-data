@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap apollo-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 473.784 1102.0 label -text Apollo -attr level 1 -attr align t
+	point 473.784 1102.0 label -text Apollo -attr level 1 -scale l -attr align t
 	line wall
 		591.4312 1070.8231
 		577.8506 1070.1441 533.5846 1068.1456 517.7569 1068.786

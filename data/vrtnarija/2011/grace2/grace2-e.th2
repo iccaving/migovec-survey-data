@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap grace2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 892.0223 384.8364 label -align tr -text "Amazing Grace" -attr level 1
+	point 892.0223 384.8364 label -align tr -text "Amazing Grace" -attr level 1 -scale l
 	line rock-border -close on
 		839.2825 327.7955
 		836.1376 323.0781 837.71 318.3606 843.4758 319.4089

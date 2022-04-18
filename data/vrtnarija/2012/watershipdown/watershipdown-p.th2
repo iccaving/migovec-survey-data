@@ -56,7 +56,7 @@ scrap watershipdown-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 3
 		64.6562 795.33
 	endline
 	
-	point -1500.0 600.0 label -align l -attr level 1 -text "Watership Down" -attr level 2 -scale l
+	point -1500.0 600.0 label -align l -attr level 1 -scale l -text "Watership Down" -attr level 2
 	line wall:presumed
 		140.2171 794.7975
 		134.9366 800.0801 130.771 806.7368 128.0763 816.6115

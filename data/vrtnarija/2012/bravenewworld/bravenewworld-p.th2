@@ -6,7 +6,7 @@ encoding  utf-8
 scrap bravenewworld-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	
 	point 689.0059 978.2949 continuation -align tr -scale xs
-	point 593.6028 974.179 label -attr level 1 -text "Brave New World" -align t -scale l
+	point 593.6028 974.179 label -attr level 1 -scale l -text "Brave New World" -align t
 	line wall
 		680.2655 965.3894
 		674.4085 942.2884 658.0969 933.0327 649.2696 927.94

@@ -48,7 +48,7 @@ endscrap
 
 scrap insomnia-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 173.0 404.0 label -align bl -text Insomnia -attr level 1
+	point 173.0 404.0 label -align bl -text Insomnia -attr level 1 -scale l
 	point 230.0 554.0 water-flow -orientation 144.10002863662822
 	point 251.778 274.564 water-flow -orientation 115.09997318073987
 	line u:texture

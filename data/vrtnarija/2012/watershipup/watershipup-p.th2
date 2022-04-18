@@ -60,7 +60,7 @@ endscrap
 
 scrap watershipup-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 145.9905 1036.8718 label -align l -scale l -attr level 1 -text "Watership Up" -attr level 3
+	point 145.9905 1036.8718 label -align l -scale l -attr level 1  -text "Watership Up" -attr level 3
 	line wall
 		258.0297 632.8517
 		247.1652 645.0742 213.214 708.9025 202.3496 729.2733

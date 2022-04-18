@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap miles-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point -300.3102 -35.2569 label -align t -text "Miles Undeground" -attr level 1
+	point -300.3102 -35.2569 label -align t -text "Miles Undeground" -attr level 1 -scale l
 	line wall
 		317.595 -136.4984
 		310.3529 -131.3749 348.9741 -121.0756 373.9416 -119.155

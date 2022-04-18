@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap wonder-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point -218.0414 -764.0801 label -align l -text "Earthquake Way" -attr level 1
+	point -218.0414 -764.0801 label -align l -text "Earthquake Way" -attr level 1 -scale l
 	line border -close on -id wonder-1e_water_1 -visibility on
 		-114.9364 -771.9809
 		-134.0042 -771.9809
@@ -191,7 +191,7 @@ endscrap
 
 scrap wonder-2e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 	
-	point 319.078 392.897 label -align l -text "Wonder Stuff" -attr level 1
+	point 319.078 392.897 label -align l -text "Wonder Stuff" -attr level 1 -scale l
 	line survey
 		520.69 622.44
 		520.69 857.87

@@ -86,7 +86,7 @@ endscrap
 
 scrap obelix-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 	
-	point 20.0179 -29.1663 label -attr level 1 -text Obelix -align r -scale l
+	point 20.0179 -29.1663 label -attr level 1 -scale l -text Obelix -align r
 	line wall
 		93.1478 -171.8914
 		75.8627 -180.0538

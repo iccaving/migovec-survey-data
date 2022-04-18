@@ -238,7 +238,7 @@ scrap lachrymosa-1p -projection plan -scale [0 0 39 0 0 0 1 0 m]
 		363.83 515.5
 	endline
 	
-	point 420.0 12.0 label -attr level 1 -text "Lachrymosa" -align r
+	point 420.0 12.0 label -attr level 1 -scale l -text "Lachrymosa" -align r
 	
 	line rock-border -close on
 		373.35 490.39

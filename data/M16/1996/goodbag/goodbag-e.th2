@@ -89,7 +89,7 @@ endscrap
 
 scrap goodbag-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 247.089 591.4746 label -align tl -attr level 1 -text "Goody Bag"
+	point 247.089 591.4746 label -align tl -attr level 1 -scale l -text "Goody Bag"
 	line wall
 		15.3602 522.2458
 		15.3602 522.2458 25.9534 518.5381 32.839 517.4788

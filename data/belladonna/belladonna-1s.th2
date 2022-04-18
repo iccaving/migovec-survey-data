@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 	
-	point 1900.0 4394.0 label -align l -text BELLADONNA -attr level 1 -attr style 6
+	point 1900.0 4394.0 label -align l -text BELLADONNA -attr level 1 -scale l -attr style 6
 	point 2131.21 4245.93 entrance -align l -orientation 90.0 -scale xl
 	line wall
 		3128.3078 3483.7423

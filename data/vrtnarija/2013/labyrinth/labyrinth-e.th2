@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap labyrinth-1e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 	
-	point -49.7619 97.8368 label -align tr -text Labyrinth -attr level 1
+	point -49.7619 97.8368 label -align tr -text Labyrinth -attr level 1 -scale l
 	point -225.98 45.24 station -name 1
 	point -223.84 46.26 station -name 2
 	point -175.81 46.26 station -name 3

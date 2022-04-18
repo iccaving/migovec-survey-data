@@ -159,7 +159,7 @@ scrap alkatraz_disto_resurvey-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 	endline
 	
 	point 819.79 136.15 map-connection
-	point 87.0 582.0 label -text Alkatraz -align l -attr level 1
+	point 87.0 582.0 label -text Alkatraz -align l -attr level 1 -scale l
 	line label -text Alkatraz
 		1471.0 202.0
 		1471.0 202.0 1999.0 774.0 2487.0 1642.0

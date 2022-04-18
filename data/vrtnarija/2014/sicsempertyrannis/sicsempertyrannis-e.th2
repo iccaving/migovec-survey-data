@@ -281,7 +281,7 @@ endscrap
 
 scrap sicsempertyrannis-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 	
-	point -180.141 15.246 label -align tl -attr level 1 -text "Sic Semper Tyrannis"
+	point -180.141 15.246 label -align tl -attr level 1 -scale l -text "Sic Semper Tyrannis"
 	point -176.34 -13.43 station -name 17
 	point -79.88 -6.57 station -name 16
 	point -62.32 -18.15 station -name 15

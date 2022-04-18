@@ -34,7 +34,7 @@ endscrap
 scrap rejuvenation_rift-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
 	point 150.0 272.0 water-flow -clip off -orientation 180.89999867747568 -scale 0.4
-	point 222.5 274.0 label -text "Rejuvenation rift" -align tr -attr level 1
+	point 222.5 274.0 label -text "Rejuvenation rift" -align tr -attr level 1 -scale l
 	point 236.69 238.6566 water-flow -orientation 103.20000597471874 -scale 2
 	line wall
 		137.8111 251.4878

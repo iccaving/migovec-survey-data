@@ -138,7 +138,7 @@ scrap pick_your_poison-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.
 	point 171.619 -184.07 water-flow -orientation 111.47572025945908
 	point -55.7625 -139.677 water-flow -orientation 103.94775200632276
 	point -338.365 -47.1 water-flow -orientation 114.43338049594266
-	point -82.7462 -11.4328 label -align tr -text "Pick Your Poison" -attr level 1
+	point -82.7462 -11.4328 label -align tr -text "Pick Your Poison" -attr level 1 -scale l
 	line survey
 		-117.27 -107.72
 		-158.38 -94.33

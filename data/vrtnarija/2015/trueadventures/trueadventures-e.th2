@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap trueadventures-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 739.6898 394.7431 label -align r -text "True Adventures" -attr level 1
+	point 739.6898 394.7431 label -align r -text "True Adventures" -attr level 1 -scale l
 	line wall
 		550.7571 278.5228
 		550.7571 278.5228 545.4589 304.2006 553.1846 312.5397

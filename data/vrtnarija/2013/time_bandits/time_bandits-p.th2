@@ -110,7 +110,7 @@ endscrap
 
 scrap time_bandits-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 139.8792 627.759 label -align l -attr level 1 -text "Time Bandits"
+	point 139.8792 627.759 label -align l -attr level 1 -scale l -text "Time Bandits"
 	point 943.048 553.3295 water-flow -orientation 312.932551525
 	point 39.4499 181.7164 water-flow -orientation 48.695885186
 	line wall

@@ -56,7 +56,7 @@ endscrap
 
 scrap mower-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 171.1462 558.362 label -align tl -attr level 1 -text Mower
+	point 171.1462 558.362 label -align tl -attr level 1 -scale l -text Mower
 	line wall
 		255.7491 480.6046
 		249.0668 490.9317 235.0948 506.7262 230.8424 517.6608

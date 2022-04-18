@@ -11,7 +11,7 @@ scrap M17s_1 -projection [elevation 90] -scale [326.0 -733.0 547.0 -736.0 0.0 0.
 	
 	point 278.5 -333.75 label -text "Logger 473"
 	
-	point 259.0 -130.0 label -attr level 1 -text "Entrance shaft" -scale l
+	point 259.0 -130.0 label -attr level 1 -scale l -text "Entrance shaft"
 	
 	area snow
 	l73-169--123
@@ -369,9 +369,9 @@ scrap M17s_2 -projection [elevation 90] -scale [326.0 -733.0 547.0 -736.0 0.0 0.
 	
 	point 166.0 -272.0 station -name "22"
 	
-	point 491.5 -533.0 label -attr level 1 -text "Ice shaft" -scale l
+	point 491.5 -533.0 label -attr level 1 -scale l -text "Ice shaft"
 	
-	point 484.0 -333.0 label -attr level 1 -text "Ice room" -scale l
+	point 484.0 -333.0 label -attr level 1 -scale l -text "Ice room"
 	
 	point 341.5 -359.5 station -name "21"
 	

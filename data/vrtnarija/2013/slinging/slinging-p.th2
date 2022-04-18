@@ -134,9 +134,9 @@ scrap slinging-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		706.2911 898.8286 659.7171 929.0776 625.1468 949.2437
 	endline
 	
-	point 169.0105 656.9439 label -align tl -text "Slinging In" -attr level 1
+	point 169.0105 656.9439 label -align tl -text "Slinging In" -attr level 1 -scale l
 	
-	point 169.0105 606.9439 label -align bl -text "The Rain" -attr level 1
+	point 169.0105 606.9439 label -align bl -text "The Rain" -attr level 1 -scale l
 	
 	
 	line rock-border -close on

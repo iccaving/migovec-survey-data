@@ -29,7 +29,7 @@ endscrap
 
 scrap lowerfallsrd-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 233.431 210.7442 label -align b -attr level 1 -text "Falls Road"
+	point 233.431 210.7442 label -align b -attr level 1 -scale l -text "Falls Road"
 	point 212.8236 232.0293 water-flow -orientation 230
 	line wall
 		211.0231 219.6656

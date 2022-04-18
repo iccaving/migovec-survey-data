@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap magicdragon-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	
-	point 583.2087 642.9062 label -attr level 1 -text "Magic Dragon" -align tr -scale l
+	point 583.2087 642.9062 label -attr level 1 -scale l -text "Magic Dragon" -align tr
 	point 239.2716 744.6363 station -name 8
 	line wall
 		832.5688 426.8476

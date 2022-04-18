@@ -31,7 +31,7 @@ scrap nitro-1p -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.
 		422.0291 225.3542 405.3957 195.7776 406.862 178.1824
 	endline
 	
-	point 304.2193 316.4324 label -attr level 1 -text Nitro -align tl -scale l
+	point 304.2193 316.4324 label -attr level 1 -scale l -text Nitro -align tl
 	line wall -subtype invisible
 		540.8008 251.3231
 		534.1653 285.3305

@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap lazarus-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 579.6898 564.7431 label -align br -text Lazarus -attr level 1
+	point 579.6898 564.7431 label -align br -text Lazarus -attr level 1 -scale l
 	point 884.155 710.759 continuation -scale xs
 	point 984.86 695.716 continuation -scale xs
 	line wall

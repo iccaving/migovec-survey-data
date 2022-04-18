@@ -1847,7 +1847,7 @@ scrap ad_aspera_per_aqua-1p -projection plan -scale [0 0 39 0 0 0 1 0 m]
 		1537.65 9223.66 1532.81 9226.93 1528.3 9230.14
 	endline
 	
-	point 780.0 5800.0 label -align l -attr level 1 -text "Ad Aspera Per Aqua"
+	point 780.0 5800.0 label -align l -attr level 1 -scale l -text "Ad Aspera Per Aqua"
 	line label -attr level 2 -text "Ad Aspera Per Aqua" -scale m
 		782.8 5818.4
 		782.8 5818.4 970.8 7374.4 1350.8 8758.4

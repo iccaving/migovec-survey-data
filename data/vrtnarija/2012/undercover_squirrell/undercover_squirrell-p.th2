@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap undercover_squirrell-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point -34.2908 1130.9169 label -align l -attr level 1 -text "Undercover Squirrell"
+	point -34.2908 1130.9169 label -align l -attr level 1 -scale l -text "Undercover Squirrell"
 	line wall
 		138.7209 248.0258
 		138.7209 248.0258 160.3702 346.1862 162.7468 357.0506

@@ -593,7 +593,7 @@ scrap prima1-entp -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		2248.5 1853.5 2260.5 1860.0 2262.5 1860.5
 	endline
 	
-	point 1942.0 2374.0 label -attr level 1 -text PRIMADONA -align l -attr style 6
+	point 1942.0 2374.0 label -attr level 1 -scale l -text PRIMADONA -align l -attr style 6
 	point 2188.0001 2327.4999 entrance -scale xl -orientation 120.6
 	line wall
 		2201.5 2262.5
@@ -1189,7 +1189,7 @@ scrap prima1-3p -scale [0 0 90 0 0 0 250 0 inch]
 	
 	point 2605.4999 1154.0 water-flow -orientation 203.9
 	point 2435.5 1268.0 archeo-material -scale s
-	point 2362.0 1294.0 label -attr level 1 -text "M +" -align l -scale l
+	point 2362.0 1294.0 label -attr level 1 -scale l -text "M +" -align l
 	line label -text "Bear Pitch" -scale l
 		2380.5 1288.0
 		2380.5 1288.0 2411.5 1350.0 2447.0 1388.0

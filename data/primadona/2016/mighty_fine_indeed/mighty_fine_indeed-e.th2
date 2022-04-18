@@ -5,7 +5,7 @@ encoding  utf-8
 scrap mighty_fine_indeed-e1 -projection extended -scale [1077.0 264.0 1274.0 506.0 0 0 8.30 0 m]
 	
 	
-	point 1225.0154 -446.6923 label -align bl -attr level 1 -text "Mighty Fine Indeed"
+	point 1225.0154 -446.6923 label -align bl -attr level 1 -scale l -text "Mighty Fine Indeed"
 	
 	point 1225.0154 -346.6923 u:connectionmarker -align tl -attr code 2 -id mightyfine -attr text "to More like Welding"
 	line rock-border -close on

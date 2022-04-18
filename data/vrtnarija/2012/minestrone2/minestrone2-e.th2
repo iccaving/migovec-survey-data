@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap minestrone2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point -7.7948 126.267 label -align bl -text Minestrone -attr level 1
+	point -7.7948 126.267 label -align bl -text Minestrone -attr level 1 -scale l
 	point 18.3901 130.94 station -name 11
 	point 77.3701 134.02 station -name 10
 	point 101.61 134.49 station -name 9

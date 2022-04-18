@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap M17-3s -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 	
-	point 3788.292 8821.1684 label -attr level 1 -text d -align t -scale l
+	point 3788.292 8821.1684 label -attr level 1 -scale l -text d -align t
 	point 3784.8528 8626.1202 entrance -scale l -orientation 180.0
 	line border
 		2158.43 4285.193
@@ -526,7 +526,7 @@ scrap M17-3s -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 		5748.0 5598.0 5942.8705 5615.374 5942.8705 5615.374
 	endline
 	
-	point 5713.39 8733.42 label -attr level 1 -text c -align t -scale l
+	point 5713.39 8733.42 label -attr level 1 -scale l -text c -align t
 	point 5713.39 8433.42 entrance -scale l -orientation 180.0
 	line arrow
 		6588.0 5222.0

@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap apuntoofar2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 216.5353 131.8552 label -align br -text "A Pun Too Far" -attr level 1
+	point 216.5353 131.8552 label -align br -text "A Pun Too Far" -attr level 1 -scale l
 	line wall
 		299.7249 242.2156
 		299.7249 242.2156 271.9851 235.4498 268.6022 232.0669

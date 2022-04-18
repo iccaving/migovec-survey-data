@@ -217,7 +217,7 @@ scrap hydrant-3p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 		200.6795 443.916 227.5251 457.6719 227.5251 457.6719
 	endline
 	
-	point 160.7521 457.6271 label -align l -text Hydrant -attr level 1
+	point 160.7521 457.6271 label -align l -text Hydrant -attr level 1 -scale l
 	point 229.65 478.66 station -name 20
 	
 	

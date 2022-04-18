@@ -16,7 +16,7 @@ scrap colarado-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 30
 	colarado-1e_water_1
 	endarea
 	
-	point -218.8181 -239.9999 label -align bl -text "Colarado Sump" -attr level 1
+	point -218.8181 -239.9999 label -align bl -text "Colarado Sump" -attr level 1 -scale l
 	point -193.091 6.8672 water-flow -orientation 127.78550036120166
 	point 112.834 31.4489 water-flow -orientation 229.2863081067821
 	line wall

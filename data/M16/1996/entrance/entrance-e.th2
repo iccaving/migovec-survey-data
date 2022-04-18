@@ -31,7 +31,7 @@ scrap entrance-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 30
 	
 	point -58.3962 346.982 entrance -orientation 152.05224949427995
 	point 1.0186 349.698 entrance -orientation 188.60931033702158
-	point -24.4873 433.089 label -align t -attr level 1 -text M16 -attr style 6
+	point -24.4873 433.089 label -align t -attr level 1 -scale l -text M16 -attr style 6
 	point -128.336 54.3221 label -align l -attr level 2 -text "Vhodni Del" -scale l
 	line wall
 		318.5752 -302.4904

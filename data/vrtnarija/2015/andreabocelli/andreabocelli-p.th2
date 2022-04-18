@@ -303,7 +303,7 @@ scrap andreabocelli-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection p
 		534.1596 1097.1279 519.9954 1096.1676 519.9954 1096.1676
 	endline
 	
-	point 445.5732 -163.7289 label -attr level 1 -text "Andrea Bocelli" -align l
+	point 445.5732 -163.7289 label -attr level 1 -scale l -text "Andrea Bocelli" -align l
 	point 478.62 1084.45 station -name 38
 	point 570.35 1092.48 station -name 37
 	point 568.23 1122.48 station -name 36

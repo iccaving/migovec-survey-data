@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap rural_underground-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 114.0763 847.4237 label -align l -attr level 1 -text "Rural Underground"
+	point 114.0763 847.4237 label -align l -attr level 1 -scale l -text "Rural Underground"
 	line wall
 		753.7182 59.7542
 		746.928 64.5074 732.6684 78.0879 728.5943 99.1377

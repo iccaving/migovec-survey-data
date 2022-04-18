@@ -15,7 +15,7 @@ scrap gamblers_ruin-p1 -projection plan -scale [331.0 -735.0 536.0 -734.0 0.0 0.
 	
 	point 357.0 -439.0 station -name 6
 	
-	point 200 95 label -attr level 1 -text "Gambler's Ruin" -align t
+	point 200 95 label -attr level 1 -scale l -text "Gambler's Ruin" -align t
 	
 	line label -text "Gambler's Ruin"
 		190.0 51.0

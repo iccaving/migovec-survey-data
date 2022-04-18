@@ -164,7 +164,7 @@ scrap mad_cow-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 5
 		-1311.5287 -245.0898 -1317.0105 -235.0397 -1317.0105 -235.0397
 	endline
 	
-	point -1091.6342 -141.6198 label -align tr -text "Red Cow" -attr level 1
+	point -1091.6342 -141.6198 label -align tr -text "Red Cow" -attr level 1 -scale l
 	line wall
 		-1332.9006 -244.3886
 		-1332.9006 -244.3886 -1323.0151 -249.3313 -1323.8389 -258.3931

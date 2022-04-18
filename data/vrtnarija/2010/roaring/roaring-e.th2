@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap roaring-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 551.7082 580.7365 label -align r -text Roaring -attr level 1
+	point 551.7082 580.7365 label -align r -text Roaring -attr level 1 -scale l
 	point 591.2614 687.5133 air-draught -orientation 270 -scale xs
 	point 649.6576 674.6117 continuation -align r -scale xs
 	line wall

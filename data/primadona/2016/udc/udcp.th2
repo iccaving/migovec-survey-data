@@ -24,7 +24,7 @@ scrap udcp_1 -scale [328.0 -734.0 501.0 -735.0 0 0 15 0 m]
 		542.0 191.0 540.8693 186.1472 540.8693 186.1472
 	endline
 	
-	point 247.5 354.0 label -attr level 1 -text "Upside Down Chamber" -align l
+	point 247.5 354.0 label -attr level 1 -scale l -text "Upside Down Chamber" -align l
 	
 	line floor-step
 		352.5 520.0

@@ -6,7 +6,7 @@ scrap hydrophobia-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 	
 	point 307.98 125.321 water-flow -orientation 197.29221044810353
 	point 156.95 161.002 blocks
-	point 42.0 -65.0 label -align br -text Hydrophobia -attr level 1
+	point 42.0 -65.0 label -align br -text Hydrophobia -attr level 1 -scale l
 	line wall -close on -outline in
 		137.5261 112.0609
 		138.8872 129.3359 130.6235 136.9446 141.7917 148.6015

@@ -145,7 +145,7 @@ scrap pick_your_poison-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 15
 		839.3441 391.7921 816.3063 416.2511 832.1228 440.4081
 	endline
 	
-	point 238.6313 755.2657 label -align l -attr level 1 -text "Pick Your Poison" -attr level 3
+	point 238.6313 755.2657 label -align l -attr level 1 -scale l -text "Pick Your Poison" -attr level 3
 	line rock-border -close on
 		132.8002 745.5921
 		126.618 747.574 124.448 741.148 126.6117 737.1839

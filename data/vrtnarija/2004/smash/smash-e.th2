@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap smash-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 259.6898 824.7431 label -align tl -text Smash -attr level 1
+	point 259.6898 824.7431 label -align tl -text Smash -attr level 1 -scale l
 	line rock-border -close on
 		216.098 716.1864
 		214.4004 712.4518 209.3077 700.5689 201.4989 699.8898
