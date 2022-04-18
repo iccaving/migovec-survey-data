@@ -106,6 +106,20 @@ jobs:
             echo "These outputs are missing: $GONE"
             exit 1
           fi
+      - name: Add fonts to SVGs
+        run: |
+          for file in ./outputs/*.svg; do
+            tmp="${file}.tmp"
+            while IFS= read -r line; do
+                if [[ "$line" == *"<defs>"* ]]; then
+                    echo $line >>$tmp
+                    echo "<style>$(cat docs/static/fonts/open-sans.css)text{font-family: \"Open Sans\"}</style>" >>$tmp
+                else
+                    echo $line >>$tmp
+                fi
+            done <"$file"
+            mv $tmp $file
+          done
       #=========================== COMPRESS OUTPUT ===========================#
       - name: Compress PDFs
         run: |
