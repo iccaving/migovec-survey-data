@@ -114,9 +114,12 @@ jobs:
             mv temp.pdf $file;
           done
       - name: Replace invalid characters in SVGs
+        # See https://github.com/svg/svgo/issues/1498
         run: |
           for file in ./outputs/*.svg; do
-            sed -i 's/\&#x26;/\&amp;/' $file
+            sed -i 's/\&#x26;/\&amp;/' $file;
+            sed -i 's/\&#x3c;/\&lt;/' $file;
+            sed -i 's/\&#x3e;/\&gt;/' $file;
           done
       - name: Compress SVGs
         run: svgo -f ./outputs/
