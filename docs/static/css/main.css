@@ -7,57 +7,35 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-#svg {
-  height: 100vh;
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+iframe {
   width: 100vw;
-  cursor: grab;
-  position: fixed;
-  background: white;
+  height: 100vh;
+  margin: 0;
+  border: none;
 }
 
-#svg:active {
-  cursor: grabbing;
-}
+/* Controls */
 
-#loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#controls {
-  position: fixed;
-  top: 5;
-  left: 5;
-  z-index: 50;
-}
-
-button {
+#controls button {
   background-color: white;
   color: black;
   border: 1px solid lightgrey;
   border-radius: 5px;
   padding: 10px;
-  font-family: sans-serif;
   cursor: pointer;
 }
 
-select {
+#controls select {
   width: 350px;
   background-color: white;
   color: black;
   border: 1px solid lightgrey;
   border-radius: 5px;
   padding: 10px;
-  font-family: sans-serif;
   cursor: pointer;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -74,8 +52,8 @@ select {
   background-repeat: no-repeat;
 }
 
-select:focus,
-select:hover {
+#controls select:focus,
+#controls select:hover {
   border-color: #87cefa;
   outline: 0;
   background-image: linear-gradient(45deg, transparent 50%, 87cefa 50%),
@@ -83,7 +61,7 @@ select:hover {
     linear-gradient(to right, #ccc, #ccc);
 }
 
-select:focus {
+#controls select:focus {
   background-image: linear-gradient(45deg, #87cefa 50%, transparent 50%),
     linear-gradient(135deg, transparent 50%, #87cefa 50%),
     linear-gradient(to right, #ccc, #ccc);
@@ -91,8 +69,82 @@ select:focus {
     calc(100% - 2.5em) 0.5em;
 }
 
-button:hover {
+#controls button:hover {
   background-color: #87cefa;
+}
+
+#controls {
+  box-sizing: border-box;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100vw;
+  background: white;
+  padding: 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#controls > *:not(:first-child) {
+  margin-left: 5px;
+}
+
+/* Homepage */
+
+article {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Caveview */
+
+#scene {
+  height: calc(100vh - 50px);
+  width: 100vw;
+  margin-top: 50px;
+}
+
+#scene > .cv-frame > .page:nth-child(2) .header:first-child,
+#scene > .cv-frame > .page:nth-child(2) .control:nth-child(2) {
+  display: none;
+}
+
+#scene > .cv-frame > .page:nth-child(2) .header:nth-child(3) {
+  padding-top: 5px;
+}
+
+.caveview #controls {
+  filter: invert(0.9);
+}
+
+/* SVG */
+
+#svg {
+  height: 100vh;
+  width: 100vw;
+  cursor: grab;
+  position: fixed;
+  background: white;
+}
+
+#svg:active {
+  cursor: grabbing;
+}
+
+#loading {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .loader-container {

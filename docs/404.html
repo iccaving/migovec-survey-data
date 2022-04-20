@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>Imperial College Caving Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="ICCC" />
+    <meta name="theme-color" content="#2D2D2D" />
+    <meta name="msapplication-navbutton-color" content="#2D2D2D" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2D2D2D" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/migovec-survey-data/static/css/main.css"
+      onerror="this.onerror=null;this.href='/static/css/main.css';"
+    />
+    <link
+      rel="icon"
+      href="/migovec-survey-data/static/images/iclogo.png"
+      onerror="this.onerror=null;this.href='/static/images/iclogo.png';"
+    />
+  </head>
+  <body>
+    <article>
+      <h1>Migovec Survey Data</h1>
+      <h3>Survey and 3D file viewers</h3>
+      <p>
+        This site presents data from the exploration of the Migovec System. The
+        cave is located in the Julian Alps of the North West of Slovenia, near
+        to Tolmin. It has been jointly explored by the Jamarska Sekcija -
+        Planinsko društvo Tolmin (JSPDT) since the 1970s, joined by the Imperial
+        College Caving Club (ICCC) since 1994.
+      </p>
+      <p>
+        You can view the 3D survey of the cave, as well as the 2D survey
+        drawings that we produce. The survey data is available in our
+        <a href="https://github.com/iccaving/migovec-survey-data"
+          >Github repository</a
+        >
+        and the files presented here will automatically update with the latest
+        data.
+      </p>
+      <h4>2D Surveys</h4>
+      <ul class="list-2d"></ul>
+      <h4>3D Surveys</h4>
+      <ul class="list-3d"></ul>
+    </article>
+    <script>
+      const url = window.location.pathname.match(
+        /(\/migovec-survey-data\/|\/)?(\dd\/)?(.*)?/
+      );
+      const base = url[1] || "/";
+      const viewer = url[2] || "";
+      const file = url[3] || "";
+      const body = document.body;
+      const article = document.querySelector("article");
+
+      if (viewer.toLowerCase() === "2d/") {
+        article.parentElement.removeChild(article);
+        body.innerHTML = `<iframe src="${base}survey.html#${file}"></iframe>\n${body.innerHTML}`;
+      } else if (viewer.toLowerCase() === "3d/") {
+        article.parentElement.removeChild(article);
+        body.innerHTML = `<iframe src="${base}caveview.html#${file}"></iframe>\n${body.innerHTML}`;
+      } else {
+        // Hompage
+        (async () => {
+          const cors = "https://cors-anywhere-iccc.herokuapp.com";
+          const response = await fetch(
+            `${cors}/https://github.com/iccaving/migovec-survey-data/releases/download/latest/listing.json`
+          );
+          const json = await response.json();
+          const list2D = document.querySelector(".list-2d");
+          const list3D = document.querySelector(".list-3d");
+          for (let file of json) {
+            if (file.type === "SVG") {
+              list2D.innerHTML = `${list2D.innerHTML}\n<li><a href="${base}2d/${file.file}">${file.name}</a></li>`;
+            }
+            if (file.type === "3D") {
+              list3D.innerHTML = `${list3D.innerHTML}\n<li><a href="${base}3d/${file.file}">${file.name}</a></li>`;
+            }
+          }
+        })();
+      }
+      const bc = new BroadcastChannel("iframe");
+      bc.onmessage = function (message) {
+        const url = window.location.pathname.match(
+          /(\/migovec-survey-data\/|\/)?(\dd\/)?(.*)?/
+        );
+        const base = url[1] || "/";
+        const viewer = url[2] || "";
+
+        if (message.data.type === "home") {
+          window.location = base;
+        }
+        if (message.data.type === "filechange") {
+          if (message.data.file !== file) {
+            window.history.pushState(
+              {},
+              "",
+              `${base}${viewer}${message.data.file}`
+            );
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

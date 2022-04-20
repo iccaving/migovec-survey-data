@@ -1,411 +1,150 @@
 (function (factory) {
 	typeof define === 'function' && define.amd ? define(factory) :
 	factory();
-}((function () { 'use strict';
+})((function () { 'use strict';
 
-	// Polyfills
+	class TerrainMeshLoader {
 
-	if ( Number.EPSILON === undefined ) {
+		constructor ( tileSpec ) {
 
-		Number.EPSILON = Math.pow( 2, - 52 );
+			const tileFile = tileSpec.url + tileSpec.z + '/' + tileSpec.x + '/' + tileSpec.y + '.terrain';
 
-	}
+			const options = {
+				headers: {
+					'Accept': 'application/vnd.quantized-mesh;extensions=octvertexnormals,metadata;q=0.9;access_token=' + tileSpec.accessToken
+				}
+			};
 
-	if ( Number.isInteger === undefined ) {
-
-		// Missing in IE
-		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
-
-		Number.isInteger = function ( value ) {
-
-			return typeof value === 'number' && isFinite( value ) && Math.floor( value ) === value;
-
-		};
+			return fetch( tileFile, options )
+				.then( response => {
+					if ( ! response.ok ) throw TypeError;
+					return response.arrayBuffer();
+				} );
+		}
 
 	}
 
 	//
 
-	if ( Math.sign === undefined ) {
+	const _lut = [];
 
-		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign
-
-		Math.sign = function ( x ) {
-
-			return ( x < 0 ) ? - 1 : ( x > 0 ) ? 1 : + x;
-
-		};
-
-	}
-
-	if ( 'name' in Function.prototype === false ) {
-
-		// Missing in IE
-		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name
-
-		Object.defineProperty( Function.prototype, 'name', {
-
-			get: function () {
-
-				return this.toString().match( /^\s*function\s*([^\(\s]*)/ )[ 1 ];
-
-			}
-
-		} );
-
-	}
-
-	if ( Object.assign === undefined ) {
-
-		// Missing in IE
-		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
-
-		Object.assign = function ( target ) {
-
-			if ( target === undefined || target === null ) {
-
-				throw new TypeError( 'Cannot convert undefined or null to object' );
-
-			}
-
-			var output = Object( target );
-
-			for ( var index = 1; index < arguments.length; index ++ ) {
-
-				var source = arguments[ index ];
-
-				if ( source !== undefined && source !== null ) {
-
-					for ( var nextKey in source ) {
-
-						if ( Object.prototype.hasOwnProperty.call( source, nextKey ) ) {
-
-							output[ nextKey ] = source[ nextKey ];
-
-						}
-
-					}
-
-				}
-
-			}
-
-			return output;
-
-		};
-
-	}
-
-	function TerrainMeshLoader ( tileSpec, loadCallback, errorCallback ) {
-
-		if ( ! loadCallback ) alert( 'No callback specified' );
-
-		this.loadCallback  = loadCallback;
-		this.errorCallback = errorCallback;
-
-		this.x = tileSpec.x;
-		this.y = tileSpec.y;
-		this.z = tileSpec.z;
-
-		this.tileFile = tileSpec.url + this.z + '/' + this.x + '/' + this.y + '.terrain';
-		this.accessToken = tileSpec.accessToken;
-
-	}
-
-	TerrainMeshLoader.prototype.constructor = TerrainMeshLoader;
-
-	TerrainMeshLoader.prototype.load = function () {
-
-		const self = this;
-		const xhr = new XMLHttpRequest();
-
-		//this.tileFile += '?v=1.0.0';
-
-		xhr.addEventListener( 'load', _loaded);
-		xhr.addEventListener( 'error', this.errorCallback );
-
-		xhr.open( 'GET', this.tileFile );
-
-		xhr.responseType = 'arraybuffer';
-		xhr.setRequestHeader( 'Accept', 'application/vnd.quantized-mesh;extensions=octvertexnormals;q=0.9;access_token=' + this.accessToken );
-
-		xhr.send();
-
-		return true;
-
-		function _loaded ( /* request */ ) {
-
-			if (xhr.status === 200) {
-
-				self.loadCallback( xhr.response, self.x, self.y );
-
-			} else {
-
-				self.errorCallback( xhr.response, self.x, self.y );
-
-			}
-
-		}
-
-	};
-
-	// EOF
-
-	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 * @author thezwap
-	 */
-
-	var _lut = [];
-
-	for ( var i = 0; i < 256; i ++ ) {
+	for ( let i = 0; i < 256; i ++ ) {
 
 		_lut[ i ] = ( i < 16 ? '0' : '' ) + ( i ).toString( 16 );
 
 	}
 
-	var MathUtils = {
+	const hasRandomUUID = typeof crypto !== 'undefined' && 'randomUUID' in crypto;
 
-		DEG2RAD: Math.PI / 180,
-		RAD2DEG: 180 / Math.PI,
+	function generateUUID() {
 
-		generateUUID: function () {
+		if ( hasRandomUUID ) {
 
-			// http://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript/21963136#21963136
+			return crypto.randomUUID().toUpperCase();
 
-			var d0 = Math.random() * 0xffffffff | 0;
-			var d1 = Math.random() * 0xffffffff | 0;
-			var d2 = Math.random() * 0xffffffff | 0;
-			var d3 = Math.random() * 0xffffffff | 0;
-			var uuid = _lut[ d0 & 0xff ] + _lut[ d0 >> 8 & 0xff ] + _lut[ d0 >> 16 & 0xff ] + _lut[ d0 >> 24 & 0xff ] + '-' +
+		}
+
+		// TODO Remove this code when crypto.randomUUID() is available everywhere
+		// http://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript/21963136#21963136
+
+		const d0 = Math.random() * 0xffffffff | 0;
+		const d1 = Math.random() * 0xffffffff | 0;
+		const d2 = Math.random() * 0xffffffff | 0;
+		const d3 = Math.random() * 0xffffffff | 0;
+		const uuid = _lut[ d0 & 0xff ] + _lut[ d0 >> 8 & 0xff ] + _lut[ d0 >> 16 & 0xff ] + _lut[ d0 >> 24 & 0xff ] + '-' +
 				_lut[ d1 & 0xff ] + _lut[ d1 >> 8 & 0xff ] + '-' + _lut[ d1 >> 16 & 0x0f | 0x40 ] + _lut[ d1 >> 24 & 0xff ] + '-' +
 				_lut[ d2 & 0x3f | 0x80 ] + _lut[ d2 >> 8 & 0xff ] + '-' + _lut[ d2 >> 16 & 0xff ] + _lut[ d2 >> 24 & 0xff ] +
 				_lut[ d3 & 0xff ] + _lut[ d3 >> 8 & 0xff ] + _lut[ d3 >> 16 & 0xff ] + _lut[ d3 >> 24 & 0xff ];
 
-			// .toUpperCase() here flattens concatenated strings to save heap memory space.
-			return uuid.toUpperCase();
-
-		},
-
-		clamp: function ( value, min, max ) {
-
-			return Math.max( min, Math.min( max, value ) );
-
-		},
-
-		// compute euclidian modulo of m % n
-		// https://en.wikipedia.org/wiki/Modulo_operation
-
-		euclideanModulo: function ( n, m ) {
-
-			return ( ( n % m ) + m ) % m;
-
-		},
-
-		// Linear mapping from range <a1, a2> to range <b1, b2>
-
-		mapLinear: function ( x, a1, a2, b1, b2 ) {
-
-			return b1 + ( x - a1 ) * ( b2 - b1 ) / ( a2 - a1 );
-
-		},
-
-		// https://en.wikipedia.org/wiki/Linear_interpolation
-
-		lerp: function ( x, y, t ) {
-
-			return ( 1 - t ) * x + t * y;
-
-		},
-
-		// http://en.wikipedia.org/wiki/Smoothstep
-
-		smoothstep: function ( x, min, max ) {
-
-			if ( x <= min ) return 0;
-			if ( x >= max ) return 1;
-
-			x = ( x - min ) / ( max - min );
-
-			return x * x * ( 3 - 2 * x );
-
-		},
-
-		smootherstep: function ( x, min, max ) {
-
-			if ( x <= min ) return 0;
-			if ( x >= max ) return 1;
-
-			x = ( x - min ) / ( max - min );
-
-			return x * x * x * ( x * ( x * 6 - 15 ) + 10 );
-
-		},
-
-		// Random integer from <low, high> interval
-
-		randInt: function ( low, high ) {
-
-			return low + Math.floor( Math.random() * ( high - low + 1 ) );
-
-		},
-
-		// Random float from <low, high> interval
-
-		randFloat: function ( low, high ) {
-
-			return low + Math.random() * ( high - low );
-
-		},
-
-		// Random float from <-range/2, range/2> interval
-
-		randFloatSpread: function ( range ) {
-
-			return range * ( 0.5 - Math.random() );
-
-		},
-
-		degToRad: function ( degrees ) {
-
-			return degrees * MathUtils.DEG2RAD;
-
-		},
-
-		radToDeg: function ( radians ) {
-
-			return radians * MathUtils.RAD2DEG;
-
-		},
-
-		isPowerOfTwo: function ( value ) {
-
-			return ( value & ( value - 1 ) ) === 0 && value !== 0;
-
-		},
-
-		ceilPowerOfTwo: function ( value ) {
-
-			return Math.pow( 2, Math.ceil( Math.log( value ) / Math.LN2 ) );
-
-		},
-
-		floorPowerOfTwo: function ( value ) {
-
-			return Math.pow( 2, Math.floor( Math.log( value ) / Math.LN2 ) );
-
-		},
-
-		setQuaternionFromProperEuler: function ( q, a, b, c, order ) {
-
-			// Intrinsic Proper Euler Angles - see https://en.wikipedia.org/wiki/Euler_angles
-
-			// rotations are applied to the axes in the order specified by 'order'
-			// rotation by angle 'a' is applied first, then by angle 'b', then by angle 'c'
-			// angles are in radians
-
-			var cos = Math.cos;
-			var sin = Math.sin;
-
-			var c2 = cos( b / 2 );
-			var s2 = sin( b / 2 );
-
-			var c13 = cos( ( a + c ) / 2 );
-			var s13 = sin( ( a + c ) / 2 );
-
-			var c1_3 = cos( ( a - c ) / 2 );
-			var s1_3 = sin( ( a - c ) / 2 );
-
-			var c3_1 = cos( ( c - a ) / 2 );
-			var s3_1 = sin( ( c - a ) / 2 );
-
-			if ( order === 'XYX' ) {
-
-				q.set( c2 * s13, s2 * c1_3, s2 * s1_3, c2 * c13 );
-
-			} else if ( order === 'YZY' ) {
-
-				q.set( s2 * s1_3, c2 * s13, s2 * c1_3, c2 * c13 );
-
-			} else if ( order === 'ZXZ' ) {
-
-				q.set( s2 * c1_3, s2 * s1_3, c2 * s13, c2 * c13 );
-
-			} else if ( order === 'XZX' ) {
-
-				q.set( c2 * s13, s2 * s3_1, s2 * c3_1, c2 * c13 );
-
-			} else if ( order === 'YXY' ) {
-
-				q.set( s2 * c3_1, c2 * s13, s2 * s3_1, c2 * c13 );
-
-			} else if ( order === 'ZYZ' ) {
-
-				q.set( s2 * s3_1, s2 * c3_1, c2 * s13, c2 * c13 );
-
-			} else {
-
-				console.warn( 'THREE.MathUtils: .setQuaternionFromProperEuler() encountered an unknown order.' );
-
-			}
-
-		}
-
-	};
-
-	/**
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 * @author bhouston / http://clara.io
-	 */
-
-	function Quaternion( x, y, z, w ) {
-
-		this._x = x || 0;
-		this._y = y || 0;
-		this._z = z || 0;
-		this._w = ( w !== undefined ) ? w : 1;
+		// .toUpperCase() here flattens concatenated strings to save heap memory space.
+		return uuid.toUpperCase();
 
 	}
 
-	Object.assign( Quaternion, {
+	function clamp( value, min, max ) {
 
-		slerp: function ( qa, qb, qm, t ) {
+		return Math.max( min, Math.min( max, value ) );
 
-			return qm.copy( qa ).slerp( qb, t );
+	}
 
-		},
+	// compute euclidian modulo of m % n
+	// https://en.wikipedia.org/wiki/Modulo_operation
+	function euclideanModulo( n, m ) {
 
-		slerpFlat: function ( dst, dstOffset, src0, srcOffset0, src1, srcOffset1, t ) {
+		return ( ( n % m ) + m ) % m;
+
+	}
+
+	// https://en.wikipedia.org/wiki/Linear_interpolation
+	function lerp( x, y, t ) {
+
+		return ( 1 - t ) * x + t * y;
+
+	}
+
+	class Quaternion {
+
+		constructor( x = 0, y = 0, z = 0, w = 1 ) {
+
+			this._x = x;
+			this._y = y;
+			this._z = z;
+			this._w = w;
+
+		}
+
+		static slerp( qa, qb, qm, t ) {
+
+			console.warn( 'THREE.Quaternion: Static .slerp() has been deprecated. Use qm.slerpQuaternions( qa, qb, t ) instead.' );
+			return qm.slerpQuaternions( qa, qb, t );
+
+		}
+
+		static slerpFlat( dst, dstOffset, src0, srcOffset0, src1, srcOffset1, t ) {
 
 			// fuzz-free, array-based Quaternion SLERP operation
 
-			var x0 = src0[ srcOffset0 + 0 ],
+			let x0 = src0[ srcOffset0 + 0 ],
 				y0 = src0[ srcOffset0 + 1 ],
 				z0 = src0[ srcOffset0 + 2 ],
-				w0 = src0[ srcOffset0 + 3 ],
+				w0 = src0[ srcOffset0 + 3 ];
 
-				x1 = src1[ srcOffset1 + 0 ],
+			const x1 = src1[ srcOffset1 + 0 ],
 				y1 = src1[ srcOffset1 + 1 ],
 				z1 = src1[ srcOffset1 + 2 ],
 				w1 = src1[ srcOffset1 + 3 ];
 
+			if ( t === 0 ) {
+
+				dst[ dstOffset + 0 ] = x0;
+				dst[ dstOffset + 1 ] = y0;
+				dst[ dstOffset + 2 ] = z0;
+				dst[ dstOffset + 3 ] = w0;
+				return;
+
+			}
+
+			if ( t === 1 ) {
+
+				dst[ dstOffset + 0 ] = x1;
+				dst[ dstOffset + 1 ] = y1;
+				dst[ dstOffset + 2 ] = z1;
+				dst[ dstOffset + 3 ] = w1;
+				return;
+
+			}
+
 			if ( w0 !== w1 || x0 !== x1 || y0 !== y1 || z0 !== z1 ) {
 
-				var s = 1 - t,
-
-					cos = x0 * x1 + y0 * y1 + z0 * z1 + w0 * w1,
-
+				let s = 1 - t;
+				const cos = x0 * x1 + y0 * y1 + z0 * z1 + w0 * w1,
 					dir = ( cos >= 0 ? 1 : - 1 ),
 					sqrSin = 1 - cos * cos;
 
 				// Skip the Slerp for tiny steps to avoid numeric problems:
 				if ( sqrSin > Number.EPSILON ) {
 
-					var sin = Math.sqrt( sqrSin ),
+					const sin = Math.sqrt( sqrSin ),
 						len = Math.atan2( sin, cos * dir );
 
 					s = Math.sin( s * len ) / sin;
@@ -413,7 +152,7 @@
 
 				}
 
-				var tDir = t * dir;
+				const tDir = t * dir;
 
 				x0 = x0 * s + x1 * tDir;
 				y0 = y0 * s + y1 * tDir;
@@ -423,7 +162,7 @@
 				// Normalize in case we just did a lerp:
 				if ( s === 1 - t ) {
 
-					var f = 1 / Math.sqrt( x0 * x0 + y0 * y0 + z0 * z0 + w0 * w0 );
+					const f = 1 / Math.sqrt( x0 * x0 + y0 * y0 + z0 * z0 + w0 * w0 );
 
 					x0 *= f;
 					y0 *= f;
@@ -441,85 +180,80 @@
 
 		}
 
-	} );
+		static multiplyQuaternionsFlat( dst, dstOffset, src0, srcOffset0, src1, srcOffset1 ) {
 
-	Object.defineProperties( Quaternion.prototype, {
+			const x0 = src0[ srcOffset0 ];
+			const y0 = src0[ srcOffset0 + 1 ];
+			const z0 = src0[ srcOffset0 + 2 ];
+			const w0 = src0[ srcOffset0 + 3 ];
 
-		x: {
+			const x1 = src1[ srcOffset1 ];
+			const y1 = src1[ srcOffset1 + 1 ];
+			const z1 = src1[ srcOffset1 + 2 ];
+			const w1 = src1[ srcOffset1 + 3 ];
 
-			get: function () {
+			dst[ dstOffset ] = x0 * w1 + w0 * x1 + y0 * z1 - z0 * y1;
+			dst[ dstOffset + 1 ] = y0 * w1 + w0 * y1 + z0 * x1 - x0 * z1;
+			dst[ dstOffset + 2 ] = z0 * w1 + w0 * z1 + x0 * y1 - y0 * x1;
+			dst[ dstOffset + 3 ] = w0 * w1 - x0 * x1 - y0 * y1 - z0 * z1;
 
-				return this._x;
-
-			},
-
-			set: function ( value ) {
-
-				this._x = value;
-				this._onChangeCallback();
-
-			}
-
-		},
-
-		y: {
-
-			get: function () {
-
-				return this._y;
-
-			},
-
-			set: function ( value ) {
-
-				this._y = value;
-				this._onChangeCallback();
-
-			}
-
-		},
-
-		z: {
-
-			get: function () {
-
-				return this._z;
-
-			},
-
-			set: function ( value ) {
-
-				this._z = value;
-				this._onChangeCallback();
-
-			}
-
-		},
-
-		w: {
-
-			get: function () {
-
-				return this._w;
-
-			},
-
-			set: function ( value ) {
-
-				this._w = value;
-				this._onChangeCallback();
-
-			}
+			return dst;
 
 		}
 
-	} );
+		get x() {
 
-	Object.assign( Quaternion.prototype, {
+			return this._x;
 
-		isQuaternion: true,
+		}
 
-		set: function ( x, y, z, w ) {
+		set x( value ) {
+
+			this._x = value;
+			this._onChangeCallback();
+
+		}
+
+		get y() {
+
+			return this._y;
+
+		}
+
+		set y( value ) {
+
+			this._y = value;
+			this._onChangeCallback();
+
+		}
+
+		get z() {
+
+			return this._z;
+
+		}
+
+		set z( value ) {
+
+			this._z = value;
+			this._onChangeCallback();
+
+		}
+
+		get w() {
+
+			return this._w;
+
+		}
+
+		set w( value ) {
+
+			this._w = value;
+			this._onChangeCallback();
+
+		}
+
+		set( x, y, z, w ) {
 
 			this._x = x;
 			this._y = y;
@@ -530,15 +264,15 @@
 
 			return this;
 
-		},
+		}
 
-		clone: function () {
+		clone() {
 
 			return new this.constructor( this._x, this._y, this._z, this._w );
 
-		},
+		}
 
-		copy: function ( quaternion ) {
+		copy( quaternion ) {
 
 			this._x = quaternion.x;
 			this._y = quaternion.y;
@@ -549,9 +283,9 @@
 
 			return this;
 
-		},
+		}
 
-		setFromEuler: function ( euler, update ) {
+		setFromEuler( euler, update ) {
 
 			if ( ! ( euler && euler.isEuler ) ) {
 
@@ -559,64 +293,69 @@
 
 			}
 
-			var x = euler._x, y = euler._y, z = euler._z, order = euler.order;
+			const x = euler._x, y = euler._y, z = euler._z, order = euler._order;
 
 			// http://www.mathworks.com/matlabcentral/fileexchange/
 			// 	20696-function-to-convert-between-dcm-euler-angles-quaternions-and-euler-vectors/
 			//	content/SpinCalc.m
 
-			var cos = Math.cos;
-			var sin = Math.sin;
+			const cos = Math.cos;
+			const sin = Math.sin;
 
-			var c1 = cos( x / 2 );
-			var c2 = cos( y / 2 );
-			var c3 = cos( z / 2 );
+			const c1 = cos( x / 2 );
+			const c2 = cos( y / 2 );
+			const c3 = cos( z / 2 );
 
-			var s1 = sin( x / 2 );
-			var s2 = sin( y / 2 );
-			var s3 = sin( z / 2 );
+			const s1 = sin( x / 2 );
+			const s2 = sin( y / 2 );
+			const s3 = sin( z / 2 );
 
-			if ( order === 'XYZ' ) {
+			switch ( order ) {
 
-				this._x = s1 * c2 * c3 + c1 * s2 * s3;
-				this._y = c1 * s2 * c3 - s1 * c2 * s3;
-				this._z = c1 * c2 * s3 + s1 * s2 * c3;
-				this._w = c1 * c2 * c3 - s1 * s2 * s3;
+				case 'XYZ':
+					this._x = s1 * c2 * c3 + c1 * s2 * s3;
+					this._y = c1 * s2 * c3 - s1 * c2 * s3;
+					this._z = c1 * c2 * s3 + s1 * s2 * c3;
+					this._w = c1 * c2 * c3 - s1 * s2 * s3;
+					break;
 
-			} else if ( order === 'YXZ' ) {
+				case 'YXZ':
+					this._x = s1 * c2 * c3 + c1 * s2 * s3;
+					this._y = c1 * s2 * c3 - s1 * c2 * s3;
+					this._z = c1 * c2 * s3 - s1 * s2 * c3;
+					this._w = c1 * c2 * c3 + s1 * s2 * s3;
+					break;
 
-				this._x = s1 * c2 * c3 + c1 * s2 * s3;
-				this._y = c1 * s2 * c3 - s1 * c2 * s3;
-				this._z = c1 * c2 * s3 - s1 * s2 * c3;
-				this._w = c1 * c2 * c3 + s1 * s2 * s3;
+				case 'ZXY':
+					this._x = s1 * c2 * c3 - c1 * s2 * s3;
+					this._y = c1 * s2 * c3 + s1 * c2 * s3;
+					this._z = c1 * c2 * s3 + s1 * s2 * c3;
+					this._w = c1 * c2 * c3 - s1 * s2 * s3;
+					break;
 
-			} else if ( order === 'ZXY' ) {
+				case 'ZYX':
+					this._x = s1 * c2 * c3 - c1 * s2 * s3;
+					this._y = c1 * s2 * c3 + s1 * c2 * s3;
+					this._z = c1 * c2 * s3 - s1 * s2 * c3;
+					this._w = c1 * c2 * c3 + s1 * s2 * s3;
+					break;
 
-				this._x = s1 * c2 * c3 - c1 * s2 * s3;
-				this._y = c1 * s2 * c3 + s1 * c2 * s3;
-				this._z = c1 * c2 * s3 + s1 * s2 * c3;
-				this._w = c1 * c2 * c3 - s1 * s2 * s3;
+				case 'YZX':
+					this._x = s1 * c2 * c3 + c1 * s2 * s3;
+					this._y = c1 * s2 * c3 + s1 * c2 * s3;
+					this._z = c1 * c2 * s3 - s1 * s2 * c3;
+					this._w = c1 * c2 * c3 - s1 * s2 * s3;
+					break;
 
-			} else if ( order === 'ZYX' ) {
+				case 'XZY':
+					this._x = s1 * c2 * c3 - c1 * s2 * s3;
+					this._y = c1 * s2 * c3 - s1 * c2 * s3;
+					this._z = c1 * c2 * s3 + s1 * s2 * c3;
+					this._w = c1 * c2 * c3 + s1 * s2 * s3;
+					break;
 
-				this._x = s1 * c2 * c3 - c1 * s2 * s3;
-				this._y = c1 * s2 * c3 + s1 * c2 * s3;
-				this._z = c1 * c2 * s3 - s1 * s2 * c3;
-				this._w = c1 * c2 * c3 + s1 * s2 * s3;
-
-			} else if ( order === 'YZX' ) {
-
-				this._x = s1 * c2 * c3 + c1 * s2 * s3;
-				this._y = c1 * s2 * c3 + s1 * c2 * s3;
-				this._z = c1 * c2 * s3 - s1 * s2 * c3;
-				this._w = c1 * c2 * c3 - s1 * s2 * s3;
-
-			} else if ( order === 'XZY' ) {
-
-				this._x = s1 * c2 * c3 - c1 * s2 * s3;
-				this._y = c1 * s2 * c3 - s1 * c2 * s3;
-				this._z = c1 * c2 * s3 + s1 * s2 * c3;
-				this._w = c1 * c2 * c3 + s1 * s2 * s3;
+				default:
+					console.warn( 'THREE.Quaternion: .setFromEuler() encountered an unknown order: ' + order );
 
 			}
 
@@ -624,15 +363,15 @@
 
 			return this;
 
-		},
+		}
 
-		setFromAxisAngle: function ( axis, angle ) {
+		setFromAxisAngle( axis, angle ) {
 
 			// http://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm
 
 			// assumes axis is normalized
 
-			var halfAngle = angle / 2, s = Math.sin( halfAngle );
+			const halfAngle = angle / 2, s = Math.sin( halfAngle );
 
 			this._x = axis.x * s;
 			this._y = axis.y * s;
@@ -643,26 +382,25 @@
 
 			return this;
 
-		},
+		}
 
-		setFromRotationMatrix: function ( m ) {
+		setFromRotationMatrix( m ) {
 
 			// http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm
 
 			// assumes the upper 3x3 of m is a pure rotation matrix (i.e, unscaled)
 
-			var te = m.elements,
+			const te = m.elements,
 
 				m11 = te[ 0 ], m12 = te[ 4 ], m13 = te[ 8 ],
 				m21 = te[ 1 ], m22 = te[ 5 ], m23 = te[ 9 ],
 				m31 = te[ 2 ], m32 = te[ 6 ], m33 = te[ 10 ],
 
-				trace = m11 + m22 + m33,
-				s;
+				trace = m11 + m22 + m33;
 
 			if ( trace > 0 ) {
 
-				s = 0.5 / Math.sqrt( trace + 1.0 );
+				const s = 0.5 / Math.sqrt( trace + 1.0 );
 
 				this._w = 0.25 / s;
 				this._x = ( m32 - m23 ) * s;
@@ -671,7 +409,7 @@
 
 			} else if ( m11 > m22 && m11 > m33 ) {
 
-				s = 2.0 * Math.sqrt( 1.0 + m11 - m22 - m33 );
+				const s = 2.0 * Math.sqrt( 1.0 + m11 - m22 - m33 );
 
 				this._w = ( m32 - m23 ) / s;
 				this._x = 0.25 * s;
@@ -680,7 +418,7 @@
 
 			} else if ( m22 > m33 ) {
 
-				s = 2.0 * Math.sqrt( 1.0 + m22 - m11 - m33 );
+				const s = 2.0 * Math.sqrt( 1.0 + m22 - m11 - m33 );
 
 				this._w = ( m13 - m31 ) / s;
 				this._x = ( m12 + m21 ) / s;
@@ -689,7 +427,7 @@
 
 			} else {
 
-				s = 2.0 * Math.sqrt( 1.0 + m33 - m11 - m22 );
+				const s = 2.0 * Math.sqrt( 1.0 + m33 - m11 - m22 );
 
 				this._w = ( m21 - m12 ) / s;
 				this._x = ( m13 + m31 ) / s;
@@ -702,17 +440,17 @@
 
 			return this;
 
-		},
+		}
 
-		setFromUnitVectors: function ( vFrom, vTo ) {
+		setFromUnitVectors( vFrom, vTo ) {
 
 			// assumes direction vectors vFrom and vTo are normalized
 
-			var EPS = 0.000001;
+			let r = vFrom.dot( vTo ) + 1;
 
-			var r = vFrom.dot( vTo ) + 1;
+			if ( r < Number.EPSILON ) {
 
-			if ( r < EPS ) {
+				// vFrom and vTo point in opposite directions
 
 				r = 0;
 
@@ -745,37 +483,43 @@
 
 			return this.normalize();
 
-		},
+		}
 
-		angleTo: function ( q ) {
+		angleTo( q ) {
 
-			return 2 * Math.acos( Math.abs( MathUtils.clamp( this.dot( q ), - 1, 1 ) ) );
+			return 2 * Math.acos( Math.abs( clamp( this.dot( q ), - 1, 1 ) ) );
 
-		},
+		}
 
-		rotateTowards: function ( q, step ) {
+		rotateTowards( q, step ) {
 
-			var angle = this.angleTo( q );
+			const angle = this.angleTo( q );
 
 			if ( angle === 0 ) return this;
 
-			var t = Math.min( 1, step / angle );
+			const t = Math.min( 1, step / angle );
 
 			this.slerp( q, t );
 
 			return this;
 
-		},
+		}
 
-		inverse: function () {
+		identity() {
+
+			return this.set( 0, 0, 0, 1 );
+
+		}
+
+		invert() {
 
 			// quaternion is assumed to have unit length
 
 			return this.conjugate();
 
-		},
+		}
 
-		conjugate: function () {
+		conjugate() {
 
 			this._x *= - 1;
 			this._y *= - 1;
@@ -785,29 +529,29 @@
 
 			return this;
 
-		},
+		}
 
-		dot: function ( v ) {
+		dot( v ) {
 
 			return this._x * v._x + this._y * v._y + this._z * v._z + this._w * v._w;
 
-		},
+		}
 
-		lengthSq: function () {
+		lengthSq() {
 
 			return this._x * this._x + this._y * this._y + this._z * this._z + this._w * this._w;
 
-		},
+		}
 
-		length: function () {
+		length() {
 
 			return Math.sqrt( this._x * this._x + this._y * this._y + this._z * this._z + this._w * this._w );
 
-		},
+		}
 
-		normalize: function () {
+		normalize() {
 
-			var l = this.length();
+			let l = this.length();
 
 			if ( l === 0 ) {
 
@@ -831,9 +575,9 @@
 
 			return this;
 
-		},
+		}
 
-		multiply: function ( q, p ) {
+		multiply( q, p ) {
 
 			if ( p !== undefined ) {
 
@@ -844,20 +588,20 @@
 
 			return this.multiplyQuaternions( this, q );
 
-		},
+		}
 
-		premultiply: function ( q ) {
+		premultiply( q ) {
 
 			return this.multiplyQuaternions( q, this );
 
-		},
+		}
 
-		multiplyQuaternions: function ( a, b ) {
+		multiplyQuaternions( a, b ) {
 
 			// from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/code/index.htm
 
-			var qax = a._x, qay = a._y, qaz = a._z, qaw = a._w;
-			var qbx = b._x, qby = b._y, qbz = b._z, qbw = b._w;
+			const qax = a._x, qay = a._y, qaz = a._z, qaw = a._w;
+			const qbx = b._x, qby = b._y, qbz = b._z, qbw = b._w;
 
 			this._x = qax * qbw + qaw * qbx + qay * qbz - qaz * qby;
 			this._y = qay * qbw + qaw * qby + qaz * qbx - qax * qbz;
@@ -868,18 +612,18 @@
 
 			return this;
 
-		},
+		}
 
-		slerp: function ( qb, t ) {
+		slerp( qb, t ) {
 
 			if ( t === 0 ) return this;
 			if ( t === 1 ) return this.copy( qb );
 
-			var x = this._x, y = this._y, z = this._z, w = this._w;
+			const x = this._x, y = this._y, z = this._z, w = this._w;
 
 			// http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/
 
-			var cosHalfTheta = w * qb._w + x * qb._x + y * qb._y + z * qb._z;
+			let cosHalfTheta = w * qb._w + x * qb._x + y * qb._y + z * qb._z;
 
 			if ( cosHalfTheta < 0 ) {
 
@@ -907,11 +651,11 @@
 
 			}
 
-			var sqrSinHalfTheta = 1.0 - cosHalfTheta * cosHalfTheta;
+			const sqrSinHalfTheta = 1.0 - cosHalfTheta * cosHalfTheta;
 
 			if ( sqrSinHalfTheta <= Number.EPSILON ) {
 
-				var s = 1 - t;
+				const s = 1 - t;
 				this._w = s * w + t * this._w;
 				this._x = s * x + t * this._x;
 				this._y = s * y + t * this._y;
@@ -924,9 +668,9 @@
 
 			}
 
-			var sinHalfTheta = Math.sqrt( sqrSinHalfTheta );
-			var halfTheta = Math.atan2( sinHalfTheta, cosHalfTheta );
-			var ratioA = Math.sin( ( 1 - t ) * halfTheta ) / sinHalfTheta,
+			const sinHalfTheta = Math.sqrt( sqrSinHalfTheta );
+			const halfTheta = Math.atan2( sinHalfTheta, cosHalfTheta );
+			const ratioA = Math.sin( ( 1 - t ) * halfTheta ) / sinHalfTheta,
 				ratioB = Math.sin( t * halfTheta ) / sinHalfTheta;
 
 			this._w = ( w * ratioA + this._w * ratioB );
@@ -938,17 +682,44 @@
 
 			return this;
 
-		},
+		}
 
-		equals: function ( quaternion ) {
+		slerpQuaternions( qa, qb, t ) {
+
+			this.copy( qa ).slerp( qb, t );
+
+		}
+
+		random() {
+
+			// Derived from http://planning.cs.uiuc.edu/node198.html
+			// Note, this source uses w, x, y, z ordering,
+			// so we swap the order below.
+
+			const u1 = Math.random();
+			const sqrt1u1 = Math.sqrt( 1 - u1 );
+			const sqrtu1 = Math.sqrt( u1 );
+
+			const u2 = 2 * Math.PI * Math.random();
+
+			const u3 = 2 * Math.PI * Math.random();
+
+			return this.set(
+				sqrt1u1 * Math.cos( u2 ),
+				sqrtu1 * Math.sin( u3 ),
+				sqrtu1 * Math.cos( u3 ),
+				sqrt1u1 * Math.sin( u2 ),
+			);
+
+		}
+
+		equals( quaternion ) {
 
 			return ( quaternion._x === this._x ) && ( quaternion._y === this._y ) && ( quaternion._z === this._z ) && ( quaternion._w === this._w );
 
-		},
+		}
 
-		fromArray: function ( array, offset ) {
-
-			if ( offset === undefined ) offset = 0;
+		fromArray( array, offset = 0 ) {
 
 			this._x = array[ offset ];
 			this._y = array[ offset + 1 ];
@@ -959,12 +730,9 @@
 
 			return this;
 
-		},
+		}
 
-		toArray: function ( array, offset ) {
-
-			if ( array === undefined ) array = [];
-			if ( offset === undefined ) offset = 0;
+		toArray( array = [], offset = 0 ) {
 
 			array[ offset ] = this._x;
 			array[ offset + 1 ] = this._y;
@@ -973,45 +741,46 @@
 
 			return array;
 
-		},
+		}
 
-		_onChange: function ( callback ) {
+		fromBufferAttribute( attribute, index ) {
+
+			this._x = attribute.getX( index );
+			this._y = attribute.getY( index );
+			this._z = attribute.getZ( index );
+			this._w = attribute.getW( index );
+
+			return this;
+
+		}
+
+		_onChange( callback ) {
 
 			this._onChangeCallback = callback;
 
 			return this;
 
-		},
+		}
 
-		_onChangeCallback: function () {}
-
-	} );
-
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author kile / http://kile.stravaganza.org/
-	 * @author philogb / http://blog.thejit.org/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author egraether / http://egraether.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 */
-
-	var _vector = new Vector3();
-	var _quaternion = new Quaternion();
-
-	function Vector3( x, y, z ) {
-
-		this.x = x || 0;
-		this.y = y || 0;
-		this.z = z || 0;
+		_onChangeCallback() {}
 
 	}
 
-	Object.assign( Vector3.prototype, {
+	Quaternion.prototype.isQuaternion = true;
 
-		isVector3: true,
+	class Vector3 {
 
-		set: function ( x, y, z ) {
+		constructor( x = 0, y = 0, z = 0 ) {
+
+			this.x = x;
+			this.y = y;
+			this.z = z;
+
+		}
+
+		set( x, y, z ) {
+
+			if ( z === undefined ) z = this.z; // sprite.scale.set(x,y)
 
 			this.x = x;
 			this.y = y;
@@ -1019,9 +788,9 @@
 
 			return this;
 
-		},
+		}
 
-		setScalar: function ( scalar ) {
+		setScalar( scalar ) {
 
 			this.x = scalar;
 			this.y = scalar;
@@ -1029,33 +798,33 @@
 
 			return this;
 
-		},
+		}
 
-		setX: function ( x ) {
+		setX( x ) {
 
 			this.x = x;
 
 			return this;
 
-		},
+		}
 
-		setY: function ( y ) {
+		setY( y ) {
 
 			this.y = y;
 
 			return this;
 
-		},
+		}
 
-		setZ: function ( z ) {
+		setZ( z ) {
 
 			this.z = z;
 
 			return this;
 
-		},
+		}
 
-		setComponent: function ( index, value ) {
+		setComponent( index, value ) {
 
 			switch ( index ) {
 
@@ -1068,9 +837,9 @@
 
 			return this;
 
-		},
+		}
 
-		getComponent: function ( index ) {
+		getComponent( index ) {
 
 			switch ( index ) {
 
@@ -1081,15 +850,15 @@
 
 			}
 
-		},
+		}
 
-		clone: function () {
+		clone() {
 
 			return new this.constructor( this.x, this.y, this.z );
 
-		},
+		}
 
-		copy: function ( v ) {
+		copy( v ) {
 
 			this.x = v.x;
 			this.y = v.y;
@@ -1097,9 +866,9 @@
 
 			return this;
 
-		},
+		}
 
-		add: function ( v, w ) {
+		add( v, w ) {
 
 			if ( w !== undefined ) {
 
@@ -1114,9 +883,9 @@
 
 			return this;
 
-		},
+		}
 
-		addScalar: function ( s ) {
+		addScalar( s ) {
 
 			this.x += s;
 			this.y += s;
@@ -1124,9 +893,9 @@
 
 			return this;
 
-		},
+		}
 
-		addVectors: function ( a, b ) {
+		addVectors( a, b ) {
 
 			this.x = a.x + b.x;
 			this.y = a.y + b.y;
@@ -1134,9 +903,9 @@
 
 			return this;
 
-		},
+		}
 
-		addScaledVector: function ( v, s ) {
+		addScaledVector( v, s ) {
 
 			this.x += v.x * s;
 			this.y += v.y * s;
@@ -1144,9 +913,9 @@
 
 			return this;
 
-		},
+		}
 
-		sub: function ( v, w ) {
+		sub( v, w ) {
 
 			if ( w !== undefined ) {
 
@@ -1161,9 +930,9 @@
 
 			return this;
 
-		},
+		}
 
-		subScalar: function ( s ) {
+		subScalar( s ) {
 
 			this.x -= s;
 			this.y -= s;
@@ -1171,9 +940,9 @@
 
 			return this;
 
-		},
+		}
 
-		subVectors: function ( a, b ) {
+		subVectors( a, b ) {
 
 			this.x = a.x - b.x;
 			this.y = a.y - b.y;
@@ -1181,9 +950,9 @@
 
 			return this;
 
-		},
+		}
 
-		multiply: function ( v, w ) {
+		multiply( v, w ) {
 
 			if ( w !== undefined ) {
 
@@ -1198,9 +967,9 @@
 
 			return this;
 
-		},
+		}
 
-		multiplyScalar: function ( scalar ) {
+		multiplyScalar( scalar ) {
 
 			this.x *= scalar;
 			this.y *= scalar;
@@ -1208,9 +977,9 @@
 
 			return this;
 
-		},
+		}
 
-		multiplyVectors: function ( a, b ) {
+		multiplyVectors( a, b ) {
 
 			this.x = a.x * b.x;
 			this.y = a.y * b.y;
@@ -1218,9 +987,9 @@
 
 			return this;
 
-		},
+		}
 
-		applyEuler: function ( euler ) {
+		applyEuler( euler ) {
 
 			if ( ! ( euler && euler.isEuler ) ) {
 
@@ -1228,20 +997,20 @@
 
 			}
 
-			return this.applyQuaternion( _quaternion.setFromEuler( euler ) );
+			return this.applyQuaternion( _quaternion$2.setFromEuler( euler ) );
 
-		},
+		}
 
-		applyAxisAngle: function ( axis, angle ) {
+		applyAxisAngle( axis, angle ) {
 
-			return this.applyQuaternion( _quaternion.setFromAxisAngle( axis, angle ) );
+			return this.applyQuaternion( _quaternion$2.setFromAxisAngle( axis, angle ) );
 
-		},
+		}
 
-		applyMatrix3: function ( m ) {
+		applyMatrix3( m ) {
 
-			var x = this.x, y = this.y, z = this.z;
-			var e = m.elements;
+			const x = this.x, y = this.y, z = this.z;
+			const e = m.elements;
 
 			this.x = e[ 0 ] * x + e[ 3 ] * y + e[ 6 ] * z;
 			this.y = e[ 1 ] * x + e[ 4 ] * y + e[ 7 ] * z;
@@ -1249,20 +1018,20 @@
 
 			return this;
 
-		},
+		}
 
-		applyNormalMatrix: function ( m ) {
+		applyNormalMatrix( m ) {
 
 			return this.applyMatrix3( m ).normalize();
 
-		},
+		}
 
-		applyMatrix4: function ( m ) {
+		applyMatrix4( m ) {
 
-			var x = this.x, y = this.y, z = this.z;
-			var e = m.elements;
+			const x = this.x, y = this.y, z = this.z;
+			const e = m.elements;
 
-			var w = 1 / ( e[ 3 ] * x + e[ 7 ] * y + e[ 11 ] * z + e[ 15 ] );
+			const w = 1 / ( e[ 3 ] * x + e[ 7 ] * y + e[ 11 ] * z + e[ 15 ] );
 
 			this.x = ( e[ 0 ] * x + e[ 4 ] * y + e[ 8 ] * z + e[ 12 ] ) * w;
 			this.y = ( e[ 1 ] * x + e[ 5 ] * y + e[ 9 ] * z + e[ 13 ] ) * w;
@@ -1270,19 +1039,19 @@
 
 			return this;
 
-		},
+		}
 
-		applyQuaternion: function ( q ) {
+		applyQuaternion( q ) {
 
-			var x = this.x, y = this.y, z = this.z;
-			var qx = q.x, qy = q.y, qz = q.z, qw = q.w;
+			const x = this.x, y = this.y, z = this.z;
+			const qx = q.x, qy = q.y, qz = q.z, qw = q.w;
 
 			// calculate quat * vector
 
-			var ix = qw * x + qy * z - qz * y;
-			var iy = qw * y + qz * x - qx * z;
-			var iz = qw * z + qx * y - qy * x;
-			var iw = - qx * x - qy * y - qz * z;
+			const ix = qw * x + qy * z - qz * y;
+			const iy = qw * y + qz * x - qx * z;
+			const iz = qw * z + qx * y - qy * x;
+			const iw = - qx * x - qy * y - qz * z;
 
 			// calculate result * inverse quat
 
@@ -1292,27 +1061,27 @@
 
 			return this;
 
-		},
+		}
 
-		project: function ( camera ) {
+		project( camera ) {
 
 			return this.applyMatrix4( camera.matrixWorldInverse ).applyMatrix4( camera.projectionMatrix );
 
-		},
+		}
 
-		unproject: function ( camera ) {
+		unproject( camera ) {
 
 			return this.applyMatrix4( camera.projectionMatrixInverse ).applyMatrix4( camera.matrixWorld );
 
-		},
+		}
 
-		transformDirection: function ( m ) {
+		transformDirection( m ) {
 
 			// input: THREE.Matrix4 affine matrix
 			// vector interpreted as a direction
 
-			var x = this.x, y = this.y, z = this.z;
-			var e = m.elements;
+			const x = this.x, y = this.y, z = this.z;
+			const e = m.elements;
 
 			this.x = e[ 0 ] * x + e[ 4 ] * y + e[ 8 ] * z;
 			this.y = e[ 1 ] * x + e[ 5 ] * y + e[ 9 ] * z;
@@ -1320,9 +1089,9 @@
 
 			return this.normalize();
 
-		},
+		}
 
-		divide: function ( v ) {
+		divide( v ) {
 
 			this.x /= v.x;
 			this.y /= v.y;
@@ -1330,15 +1099,15 @@
 
 			return this;
 
-		},
+		}
 
-		divideScalar: function ( scalar ) {
+		divideScalar( scalar ) {
 
 			return this.multiplyScalar( 1 / scalar );
 
-		},
+		}
 
-		min: function ( v ) {
+		min( v ) {
 
 			this.x = Math.min( this.x, v.x );
 			this.y = Math.min( this.y, v.y );
@@ -1346,9 +1115,9 @@
 
 			return this;
 
-		},
+		}
 
-		max: function ( v ) {
+		max( v ) {
 
 			this.x = Math.max( this.x, v.x );
 			this.y = Math.max( this.y, v.y );
@@ -1356,9 +1125,9 @@
 
 			return this;
 
-		},
+		}
 
-		clamp: function ( min, max ) {
+		clamp( min, max ) {
 
 			// assumes min < max, componentwise
 
@@ -1368,9 +1137,9 @@
 
 			return this;
 
-		},
+		}
 
-		clampScalar: function ( minVal, maxVal ) {
+		clampScalar( minVal, maxVal ) {
 
 			this.x = Math.max( minVal, Math.min( maxVal, this.x ) );
 			this.y = Math.max( minVal, Math.min( maxVal, this.y ) );
@@ -1378,17 +1147,17 @@
 
 			return this;
 
-		},
+		}
 
-		clampLength: function ( min, max ) {
+		clampLength( min, max ) {
 
-			var length = this.length();
+			const length = this.length();
 
 			return this.divideScalar( length || 1 ).multiplyScalar( Math.max( min, Math.min( max, length ) ) );
 
-		},
+		}
 
-		floor: function () {
+		floor() {
 
 			this.x = Math.floor( this.x );
 			this.y = Math.floor( this.y );
@@ -1396,9 +1165,9 @@
 
 			return this;
 
-		},
+		}
 
-		ceil: function () {
+		ceil() {
 
 			this.x = Math.ceil( this.x );
 			this.y = Math.ceil( this.y );
@@ -1406,9 +1175,9 @@
 
 			return this;
 
-		},
+		}
 
-		round: function () {
+		round() {
 
 			this.x = Math.round( this.x );
 			this.y = Math.round( this.y );
@@ -1416,9 +1185,9 @@
 
 			return this;
 
-		},
+		}
 
-		roundToZero: function () {
+		roundToZero() {
 
 			this.x = ( this.x < 0 ) ? Math.ceil( this.x ) : Math.floor( this.x );
 			this.y = ( this.y < 0 ) ? Math.ceil( this.y ) : Math.floor( this.y );
@@ -1426,9 +1195,9 @@
 
 			return this;
 
-		},
+		}
 
-		negate: function () {
+		negate() {
 
 			this.x = - this.x;
 			this.y = - this.y;
@@ -1436,47 +1205,47 @@
 
 			return this;
 
-		},
+		}
 
-		dot: function ( v ) {
+		dot( v ) {
 
 			return this.x * v.x + this.y * v.y + this.z * v.z;
 
-		},
+		}
 
 		// TODO lengthSquared?
 
-		lengthSq: function () {
+		lengthSq() {
 
 			return this.x * this.x + this.y * this.y + this.z * this.z;
 
-		},
+		}
 
-		length: function () {
+		length() {
 
 			return Math.sqrt( this.x * this.x + this.y * this.y + this.z * this.z );
 
-		},
+		}
 
-		manhattanLength: function () {
+		manhattanLength() {
 
 			return Math.abs( this.x ) + Math.abs( this.y ) + Math.abs( this.z );
 
-		},
+		}
 
-		normalize: function () {
+		normalize() {
 
 			return this.divideScalar( this.length() || 1 );
 
-		},
+		}
 
-		setLength: function ( length ) {
+		setLength( length ) {
 
 			return this.normalize().multiplyScalar( length );
 
-		},
+		}
 
-		lerp: function ( v, alpha ) {
+		lerp( v, alpha ) {
 
 			this.x += ( v.x - this.x ) * alpha;
 			this.y += ( v.y - this.y ) * alpha;
@@ -1484,15 +1253,19 @@
 
 			return this;
 
-		},
+		}
 
-		lerpVectors: function ( v1, v2, alpha ) {
+		lerpVectors( v1, v2, alpha ) {
 
-			return this.subVectors( v2, v1 ).multiplyScalar( alpha ).add( v1 );
+			this.x = v1.x + ( v2.x - v1.x ) * alpha;
+			this.y = v1.y + ( v2.y - v1.y ) * alpha;
+			this.z = v1.z + ( v2.z - v1.z ) * alpha;
 
-		},
+			return this;
 
-		cross: function ( v, w ) {
+		}
+
+		cross( v, w ) {
 
 			if ( w !== undefined ) {
 
@@ -1503,12 +1276,12 @@
 
 			return this.crossVectors( this, v );
 
-		},
+		}
 
-		crossVectors: function ( a, b ) {
+		crossVectors( a, b ) {
 
-			var ax = a.x, ay = a.y, az = a.z;
-			var bx = b.x, by = b.y, bz = b.z;
+			const ax = a.x, ay = a.y, az = a.z;
+			const bx = b.x, by = b.y, bz = b.z;
 
 			this.x = ay * bz - az * by;
 			this.y = az * bx - ax * bz;
@@ -1516,80 +1289,80 @@
 
 			return this;
 
-		},
+		}
 
-		projectOnVector: function ( v ) {
+		projectOnVector( v ) {
 
-			var denominator = v.lengthSq();
+			const denominator = v.lengthSq();
 
 			if ( denominator === 0 ) return this.set( 0, 0, 0 );
 
-			var scalar = v.dot( this ) / denominator;
+			const scalar = v.dot( this ) / denominator;
 
 			return this.copy( v ).multiplyScalar( scalar );
 
-		},
+		}
 
-		projectOnPlane: function ( planeNormal ) {
+		projectOnPlane( planeNormal ) {
 
-			_vector.copy( this ).projectOnVector( planeNormal );
+			_vector$4.copy( this ).projectOnVector( planeNormal );
 
-			return this.sub( _vector );
+			return this.sub( _vector$4 );
 
-		},
+		}
 
-		reflect: function ( normal ) {
+		reflect( normal ) {
 
 			// reflect incident vector off plane orthogonal to normal
 			// normal is assumed to have unit length
 
-			return this.sub( _vector.copy( normal ).multiplyScalar( 2 * this.dot( normal ) ) );
+			return this.sub( _vector$4.copy( normal ).multiplyScalar( 2 * this.dot( normal ) ) );
 
-		},
+		}
 
-		angleTo: function ( v ) {
+		angleTo( v ) {
 
-			var denominator = Math.sqrt( this.lengthSq() * v.lengthSq() );
+			const denominator = Math.sqrt( this.lengthSq() * v.lengthSq() );
 
 			if ( denominator === 0 ) return Math.PI / 2;
 
-			var theta = this.dot( v ) / denominator;
+			const theta = this.dot( v ) / denominator;
 
 			// clamp, to handle numerical problems
 
-			return Math.acos( MathUtils.clamp( theta, - 1, 1 ) );
+			return Math.acos( clamp( theta, - 1, 1 ) );
 
-		},
+		}
 
-		distanceTo: function ( v ) {
+		distanceTo( v ) {
 
 			return Math.sqrt( this.distanceToSquared( v ) );
 
-		},
+		}
 
-		distanceToSquared: function ( v ) {
+		distanceToSquared( v ) {
 
-			var dx = this.x - v.x, dy = this.y - v.y, dz = this.z - v.z;
+			const dx = this.x - v.x, dy = this.y - v.y, dz = this.z - v.z;
 
 			return dx * dx + dy * dy + dz * dz;
 
-		},
+		}
 
-		manhattanDistanceTo: function ( v ) {
+		manhattanDistanceTo( v ) {
 
 			return Math.abs( this.x - v.x ) + Math.abs( this.y - v.y ) + Math.abs( this.z - v.z );
 
-		},
+		}
 
-		setFromSpherical: function ( s ) {
+		setFromSpherical( s ) {
 
 			return this.setFromSphericalCoords( s.radius, s.phi, s.theta );
 
-		},
+		}
 
-		setFromSphericalCoords: function ( radius, phi, theta ) {
+		setFromSphericalCoords( radius, phi, theta ) {
 
-			var sinPhiRadius = Math.sin( phi ) * radius;
+			const sinPhiRadius = Math.sin( phi ) * radius;
 
 			this.x = sinPhiRadius * Math.sin( theta );
 			this.y = Math.cos( phi ) * radius;
@@ -1597,15 +1370,15 @@
 
 			return this;
 
-		},
+		}
 
-		setFromCylindrical: function ( c ) {
+		setFromCylindrical( c ) {
 
 			return this.setFromCylindricalCoords( c.radius, c.theta, c.y );
 
-		},
+		}
 
-		setFromCylindricalCoords: function ( radius, theta, y ) {
+		setFromCylindricalCoords( radius, theta, y ) {
 
 			this.x = radius * Math.sin( theta );
 			this.y = y;
@@ -1613,11 +1386,11 @@
 
 			return this;
 
-		},
+		}
 
-		setFromMatrixPosition: function ( m ) {
+		setFromMatrixPosition( m ) {
 
-			var e = m.elements;
+			const e = m.elements;
 
 			this.x = e[ 12 ];
 			this.y = e[ 13 ];
@@ -1625,13 +1398,13 @@
 
 			return this;
 
-		},
+		}
 
-		setFromMatrixScale: function ( m ) {
+		setFromMatrixScale( m ) {
 
-			var sx = this.setFromMatrixColumn( m, 0 ).length();
-			var sy = this.setFromMatrixColumn( m, 1 ).length();
-			var sz = this.setFromMatrixColumn( m, 2 ).length();
+			const sx = this.setFromMatrixColumn( m, 0 ).length();
+			const sy = this.setFromMatrixColumn( m, 1 ).length();
+			const sz = this.setFromMatrixColumn( m, 2 ).length();
 
 			this.x = sx;
 			this.y = sy;
@@ -1639,29 +1412,27 @@
 
 			return this;
 
-		},
+		}
 
-		setFromMatrixColumn: function ( m, index ) {
+		setFromMatrixColumn( m, index ) {
 
 			return this.fromArray( m.elements, index * 4 );
 
-		},
+		}
 
-		setFromMatrix3Column: function ( m, index ) {
+		setFromMatrix3Column( m, index ) {
 
 			return this.fromArray( m.elements, index * 3 );
 
-		},
+		}
 
-		equals: function ( v ) {
+		equals( v ) {
 
 			return ( ( v.x === this.x ) && ( v.y === this.y ) && ( v.z === this.z ) );
 
-		},
+		}
 
-		fromArray: function ( array, offset ) {
-
-			if ( offset === undefined ) offset = 0;
+		fromArray( array, offset = 0 ) {
 
 			this.x = array[ offset ];
 			this.y = array[ offset + 1 ];
@@ -1669,12 +1440,9 @@
 
 			return this;
 
-		},
+		}
 
-		toArray: function ( array, offset ) {
-
-			if ( array === undefined ) array = [];
-			if ( offset === undefined ) offset = 0;
+		toArray( array = [], offset = 0 ) {
 
 			array[ offset ] = this.x;
 			array[ offset + 1 ] = this.y;
@@ -1682,9 +1450,9 @@
 
 			return array;
 
-		},
+		}
 
-		fromBufferAttribute: function ( attribute, index, offset ) {
+		fromBufferAttribute( attribute, index, offset ) {
 
 			if ( offset !== undefined ) {
 
@@ -1700,114 +1468,563 @@
 
 		}
 
-	} );
+		random() {
 
-	var _points = [
-		new Vector3(),
-		new Vector3(),
-		new Vector3(),
-		new Vector3(),
-		new Vector3(),
-		new Vector3(),
-		new Vector3(),
-		new Vector3()
-	];
+			this.x = Math.random();
+			this.y = Math.random();
+			this.z = Math.random();
 
-	var _vector$1 = new Vector3();
+			return this;
 
-	var _box = new Box3();
+		}
 
-	// triangle centered vertices
+		randomDirection() {
 
-	var _v0 = new Vector3();
-	var _v1 = new Vector3();
-	var _v2 = new Vector3();
+			// Derived from https://mathworld.wolfram.com/SpherePointPicking.html
 
-	// triangle edge vectors
+			const u = ( Math.random() - 0.5 ) * 2;
+			const t = Math.random() * Math.PI * 2;
+			const f = Math.sqrt( 1 - u ** 2 );
 
-	var _f0 = new Vector3();
-	var _f1 = new Vector3();
-	var _f2 = new Vector3();
+			this.x = f * Math.cos( t );
+			this.y = f * Math.sin( t );
+			this.z = u;
 
-	var _center = new Vector3();
-	var _extents = new Vector3();
-	var _triangleNormal = new Vector3();
-	var _testAxis = new Vector3();
+			return this;
 
-	/**
-	 * @author bhouston / http://clara.io
-	 * @author WestLangley / http://github.com/WestLangley
-	 */
+		}
 
-	function Box3( min, max ) {
+		*[ Symbol.iterator ]() {
 
-		this.min = ( min !== undefined ) ? min : new Vector3( + Infinity, + Infinity, + Infinity );
-		this.max = ( max !== undefined ) ? max : new Vector3( - Infinity, - Infinity, - Infinity );
+			yield this.x;
+			yield this.y;
+			yield this.z;
+
+		}
 
 	}
 
+	Vector3.prototype.isVector3 = true;
 
-	Object.assign( Box3.prototype, {
+	const _vector$4 = /*@__PURE__*/ new Vector3();
+	const _quaternion$2 = /*@__PURE__*/ new Quaternion();
 
-		isBox3: true,
+	class Vector2 {
 
-		set: function ( min, max ) {
+		constructor( x = 0, y = 0 ) {
+
+			this.x = x;
+			this.y = y;
+
+		}
+
+		get width() {
+
+			return this.x;
+
+		}
+
+		set width( value ) {
+
+			this.x = value;
+
+		}
+
+		get height() {
+
+			return this.y;
+
+		}
+
+		set height( value ) {
+
+			this.y = value;
+
+		}
+
+		set( x, y ) {
+
+			this.x = x;
+			this.y = y;
+
+			return this;
+
+		}
+
+		setScalar( scalar ) {
+
+			this.x = scalar;
+			this.y = scalar;
+
+			return this;
+
+		}
+
+		setX( x ) {
+
+			this.x = x;
+
+			return this;
+
+		}
+
+		setY( y ) {
+
+			this.y = y;
+
+			return this;
+
+		}
+
+		setComponent( index, value ) {
+
+			switch ( index ) {
+
+				case 0: this.x = value; break;
+				case 1: this.y = value; break;
+				default: throw new Error( 'index is out of range: ' + index );
+
+			}
+
+			return this;
+
+		}
+
+		getComponent( index ) {
+
+			switch ( index ) {
+
+				case 0: return this.x;
+				case 1: return this.y;
+				default: throw new Error( 'index is out of range: ' + index );
+
+			}
+
+		}
+
+		clone() {
+
+			return new this.constructor( this.x, this.y );
+
+		}
+
+		copy( v ) {
+
+			this.x = v.x;
+			this.y = v.y;
+
+			return this;
+
+		}
+
+		add( v, w ) {
+
+			if ( w !== undefined ) {
+
+				console.warn( 'THREE.Vector2: .add() now only accepts one argument. Use .addVectors( a, b ) instead.' );
+				return this.addVectors( v, w );
+
+			}
+
+			this.x += v.x;
+			this.y += v.y;
+
+			return this;
+
+		}
+
+		addScalar( s ) {
+
+			this.x += s;
+			this.y += s;
+
+			return this;
+
+		}
+
+		addVectors( a, b ) {
+
+			this.x = a.x + b.x;
+			this.y = a.y + b.y;
+
+			return this;
+
+		}
+
+		addScaledVector( v, s ) {
+
+			this.x += v.x * s;
+			this.y += v.y * s;
+
+			return this;
+
+		}
+
+		sub( v, w ) {
+
+			if ( w !== undefined ) {
+
+				console.warn( 'THREE.Vector2: .sub() now only accepts one argument. Use .subVectors( a, b ) instead.' );
+				return this.subVectors( v, w );
+
+			}
+
+			this.x -= v.x;
+			this.y -= v.y;
+
+			return this;
+
+		}
+
+		subScalar( s ) {
+
+			this.x -= s;
+			this.y -= s;
+
+			return this;
+
+		}
+
+		subVectors( a, b ) {
+
+			this.x = a.x - b.x;
+			this.y = a.y - b.y;
+
+			return this;
+
+		}
+
+		multiply( v ) {
+
+			this.x *= v.x;
+			this.y *= v.y;
+
+			return this;
+
+		}
+
+		multiplyScalar( scalar ) {
+
+			this.x *= scalar;
+			this.y *= scalar;
+
+			return this;
+
+		}
+
+		divide( v ) {
+
+			this.x /= v.x;
+			this.y /= v.y;
+
+			return this;
+
+		}
+
+		divideScalar( scalar ) {
+
+			return this.multiplyScalar( 1 / scalar );
+
+		}
+
+		applyMatrix3( m ) {
+
+			const x = this.x, y = this.y;
+			const e = m.elements;
+
+			this.x = e[ 0 ] * x + e[ 3 ] * y + e[ 6 ];
+			this.y = e[ 1 ] * x + e[ 4 ] * y + e[ 7 ];
+
+			return this;
+
+		}
+
+		min( v ) {
+
+			this.x = Math.min( this.x, v.x );
+			this.y = Math.min( this.y, v.y );
+
+			return this;
+
+		}
+
+		max( v ) {
+
+			this.x = Math.max( this.x, v.x );
+			this.y = Math.max( this.y, v.y );
+
+			return this;
+
+		}
+
+		clamp( min, max ) {
+
+			// assumes min < max, componentwise
+
+			this.x = Math.max( min.x, Math.min( max.x, this.x ) );
+			this.y = Math.max( min.y, Math.min( max.y, this.y ) );
+
+			return this;
+
+		}
+
+		clampScalar( minVal, maxVal ) {
+
+			this.x = Math.max( minVal, Math.min( maxVal, this.x ) );
+			this.y = Math.max( minVal, Math.min( maxVal, this.y ) );
+
+			return this;
+
+		}
+
+		clampLength( min, max ) {
+
+			const length = this.length();
+
+			return this.divideScalar( length || 1 ).multiplyScalar( Math.max( min, Math.min( max, length ) ) );
+
+		}
+
+		floor() {
+
+			this.x = Math.floor( this.x );
+			this.y = Math.floor( this.y );
+
+			return this;
+
+		}
+
+		ceil() {
+
+			this.x = Math.ceil( this.x );
+			this.y = Math.ceil( this.y );
+
+			return this;
+
+		}
+
+		round() {
+
+			this.x = Math.round( this.x );
+			this.y = Math.round( this.y );
+
+			return this;
+
+		}
+
+		roundToZero() {
+
+			this.x = ( this.x < 0 ) ? Math.ceil( this.x ) : Math.floor( this.x );
+			this.y = ( this.y < 0 ) ? Math.ceil( this.y ) : Math.floor( this.y );
+
+			return this;
+
+		}
+
+		negate() {
+
+			this.x = - this.x;
+			this.y = - this.y;
+
+			return this;
+
+		}
+
+		dot( v ) {
+
+			return this.x * v.x + this.y * v.y;
+
+		}
+
+		cross( v ) {
+
+			return this.x * v.y - this.y * v.x;
+
+		}
+
+		lengthSq() {
+
+			return this.x * this.x + this.y * this.y;
+
+		}
+
+		length() {
+
+			return Math.sqrt( this.x * this.x + this.y * this.y );
+
+		}
+
+		manhattanLength() {
+
+			return Math.abs( this.x ) + Math.abs( this.y );
+
+		}
+
+		normalize() {
+
+			return this.divideScalar( this.length() || 1 );
+
+		}
+
+		angle() {
+
+			// computes the angle in radians with respect to the positive x-axis
+
+			const angle = Math.atan2( - this.y, - this.x ) + Math.PI;
+
+			return angle;
+
+		}
+
+		distanceTo( v ) {
+
+			return Math.sqrt( this.distanceToSquared( v ) );
+
+		}
+
+		distanceToSquared( v ) {
+
+			const dx = this.x - v.x, dy = this.y - v.y;
+			return dx * dx + dy * dy;
+
+		}
+
+		manhattanDistanceTo( v ) {
+
+			return Math.abs( this.x - v.x ) + Math.abs( this.y - v.y );
+
+		}
+
+		setLength( length ) {
+
+			return this.normalize().multiplyScalar( length );
+
+		}
+
+		lerp( v, alpha ) {
+
+			this.x += ( v.x - this.x ) * alpha;
+			this.y += ( v.y - this.y ) * alpha;
+
+			return this;
+
+		}
+
+		lerpVectors( v1, v2, alpha ) {
+
+			this.x = v1.x + ( v2.x - v1.x ) * alpha;
+			this.y = v1.y + ( v2.y - v1.y ) * alpha;
+
+			return this;
+
+		}
+
+		equals( v ) {
+
+			return ( ( v.x === this.x ) && ( v.y === this.y ) );
+
+		}
+
+		fromArray( array, offset = 0 ) {
+
+			this.x = array[ offset ];
+			this.y = array[ offset + 1 ];
+
+			return this;
+
+		}
+
+		toArray( array = [], offset = 0 ) {
+
+			array[ offset ] = this.x;
+			array[ offset + 1 ] = this.y;
+
+			return array;
+
+		}
+
+		fromBufferAttribute( attribute, index, offset ) {
+
+			if ( offset !== undefined ) {
+
+				console.warn( 'THREE.Vector2: offset has been removed from .fromBufferAttribute().' );
+
+			}
+
+			this.x = attribute.getX( index );
+			this.y = attribute.getY( index );
+
+			return this;
+
+		}
+
+		rotateAround( center, angle ) {
+
+			const c = Math.cos( angle ), s = Math.sin( angle );
+
+			const x = this.x - center.x;
+			const y = this.y - center.y;
+
+			this.x = x * c - y * s + center.x;
+			this.y = x * s + y * c + center.y;
+
+			return this;
+
+		}
+
+		random() {
+
+			this.x = Math.random();
+			this.y = Math.random();
+
+			return this;
+
+		}
+
+		*[ Symbol.iterator ]() {
+
+			yield this.x;
+			yield this.y;
+
+		}
+
+	}
+
+	Vector2.prototype.isVector2 = true;
+
+	class Box3 {
+
+		constructor( min = new Vector3( + Infinity, + Infinity, + Infinity ), max = new Vector3( - Infinity, - Infinity, - Infinity ) ) {
+
+			this.min = min;
+			this.max = max;
+
+		}
+
+		set( min, max ) {
 
 			this.min.copy( min );
 			this.max.copy( max );
 
 			return this;
 
-		},
+		}
 
-		setFromArray: function ( array ) {
+		setFromArray( array ) {
 
-			var minX = + Infinity;
-			var minY = + Infinity;
-			var minZ = + Infinity;
+			let minX = + Infinity;
+			let minY = + Infinity;
+			let minZ = + Infinity;
 
-			var maxX = - Infinity;
-			var maxY = - Infinity;
-			var maxZ = - Infinity;
+			let maxX = - Infinity;
+			let maxY = - Infinity;
+			let maxZ = - Infinity;
 
-			for ( var i = 0, l = array.length; i < l; i += 3 ) {
+			for ( let i = 0, l = array.length; i < l; i += 3 ) {
 
-				var x = array[ i ];
-				var y = array[ i + 1 ];
-				var z = array[ i + 2 ];
-
-				if ( x < minX ) minX = x;
-				if ( y < minY ) minY = y;
-				if ( z < minZ ) minZ = z;
-
-				if ( x > maxX ) maxX = x;
-				if ( y > maxY ) maxY = y;
-				if ( z > maxZ ) maxZ = z;
-
-			}
-
-			this.min.set( minX, minY, minZ );
-			this.max.set( maxX, maxY, maxZ );
-
-			return this;
-
-		},
-
-		setFromBufferAttribute: function ( attribute ) {
-
-			var minX = + Infinity;
-			var minY = + Infinity;
-			var minZ = + Infinity;
-
-			var maxX = - Infinity;
-			var maxY = - Infinity;
-			var maxZ = - Infinity;
-
-			for ( var i = 0, l = attribute.count; i < l; i ++ ) {
-
-				var x = attribute.getX( i );
-				var y = attribute.getY( i );
-				var z = attribute.getZ( i );
+				const x = array[ i ];
+				const y = array[ i + 1 ];
+				const z = array[ i + 2 ];
 
 				if ( x < minX ) minX = x;
 				if ( y < minY ) minY = y;
@@ -1824,13 +2041,46 @@
 
 			return this;
 
-		},
+		}
 
-		setFromPoints: function ( points ) {
+		setFromBufferAttribute( attribute ) {
+
+			let minX = + Infinity;
+			let minY = + Infinity;
+			let minZ = + Infinity;
+
+			let maxX = - Infinity;
+			let maxY = - Infinity;
+			let maxZ = - Infinity;
+
+			for ( let i = 0, l = attribute.count; i < l; i ++ ) {
+
+				const x = attribute.getX( i );
+				const y = attribute.getY( i );
+				const z = attribute.getZ( i );
+
+				if ( x < minX ) minX = x;
+				if ( y < minY ) minY = y;
+				if ( z < minZ ) minZ = z;
+
+				if ( x > maxX ) maxX = x;
+				if ( y > maxY ) maxY = y;
+				if ( z > maxZ ) maxZ = z;
+
+			}
+
+			this.min.set( minX, minY, minZ );
+			this.max.set( maxX, maxY, maxZ );
+
+			return this;
+
+		}
+
+		setFromPoints( points ) {
 
 			this.makeEmpty();
 
-			for ( var i = 0, il = points.length; i < il; i ++ ) {
+			for ( let i = 0, il = points.length; i < il; i ++ ) {
 
 				this.expandByPoint( points[ i ] );
 
@@ -1838,120 +2088,106 @@
 
 			return this;
 
-		},
+		}
 
-		setFromCenterAndSize: function ( center, size ) {
+		setFromCenterAndSize( center, size ) {
 
-			var halfSize = _vector$1.copy( size ).multiplyScalar( 0.5 );
+			const halfSize = _vector$3.copy( size ).multiplyScalar( 0.5 );
 
 			this.min.copy( center ).sub( halfSize );
 			this.max.copy( center ).add( halfSize );
 
 			return this;
 
-		},
+		}
 
-		setFromObject: function ( object ) {
+		setFromObject( object ) {
 
 			this.makeEmpty();
 
 			return this.expandByObject( object );
 
-		},
+		}
 
-		clone: function () {
+		clone() {
 
 			return new this.constructor().copy( this );
 
-		},
+		}
 
-		copy: function ( box ) {
+		copy( box ) {
 
 			this.min.copy( box.min );
 			this.max.copy( box.max );
 
 			return this;
 
-		},
+		}
 
-		makeEmpty: function () {
+		makeEmpty() {
 
 			this.min.x = this.min.y = this.min.z = + Infinity;
 			this.max.x = this.max.y = this.max.z = - Infinity;
 
 			return this;
 
-		},
+		}
 
-		isEmpty: function () {
+		isEmpty() {
 
 			// this is a more robust check for empty than ( volume <= 0 ) because volume can get positive with two negative axes
 
 			return ( this.max.x < this.min.x ) || ( this.max.y < this.min.y ) || ( this.max.z < this.min.z );
 
-		},
+		}
 
-		getCenter: function ( target ) {
-
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Box3: .getCenter() target is now required' );
-				target = new Vector3();
-
-			}
+		getCenter( target ) {
 
 			return this.isEmpty() ? target.set( 0, 0, 0 ) : target.addVectors( this.min, this.max ).multiplyScalar( 0.5 );
 
-		},
+		}
 
-		getSize: function ( target ) {
-
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Box3: .getSize() target is now required' );
-				target = new Vector3();
-
-			}
+		getSize( target ) {
 
 			return this.isEmpty() ? target.set( 0, 0, 0 ) : target.subVectors( this.max, this.min );
 
-		},
+		}
 
-		expandByPoint: function ( point ) {
+		expandByPoint( point ) {
 
 			this.min.min( point );
 			this.max.max( point );
 
 			return this;
 
-		},
+		}
 
-		expandByVector: function ( vector ) {
+		expandByVector( vector ) {
 
 			this.min.sub( vector );
 			this.max.add( vector );
 
 			return this;
 
-		},
+		}
 
-		expandByScalar: function ( scalar ) {
+		expandByScalar( scalar ) {
 
 			this.min.addScalar( - scalar );
 			this.max.addScalar( scalar );
 
 			return this;
 
-		},
+		}
 
-		expandByObject: function ( object ) {
+		expandByObject( object ) {
 
 			// Computes the world-axis-aligned bounding box of an object (including its children),
 			// accounting for both the object's, and children's, world transforms
 
 			object.updateWorldMatrix( false, false );
 
-			var geometry = object.geometry;
+			const geometry = object.geometry;
 
 			if ( geometry !== undefined ) {
 
@@ -1961,17 +2197,16 @@
 
 				}
 
-				_box.copy( geometry.boundingBox );
-				_box.applyMatrix4( object.matrixWorld );
+				_box$2.copy( geometry.boundingBox );
+				_box$2.applyMatrix4( object.matrixWorld );
 
-				this.expandByPoint( _box.min );
-				this.expandByPoint( _box.max );
+				this.union( _box$2 );
 
 			}
 
-			var children = object.children;
+			const children = object.children;
 
-			for ( var i = 0, l = children.length; i < l; i ++ ) {
+			for ( let i = 0, l = children.length; i < l; i ++ ) {
 
 				this.expandByObject( children[ i ] );
 
@@ -1979,35 +2214,28 @@
 
 			return this;
 
-		},
+		}
 
-		containsPoint: function ( point ) {
+		containsPoint( point ) {
 
 			return point.x < this.min.x || point.x > this.max.x ||
 				point.y < this.min.y || point.y > this.max.y ||
 				point.z < this.min.z || point.z > this.max.z ? false : true;
 
-		},
+		}
 
-		containsBox: function ( box ) {
+		containsBox( box ) {
 
 			return this.min.x <= box.min.x && box.max.x <= this.max.x &&
 				this.min.y <= box.min.y && box.max.y <= this.max.y &&
 				this.min.z <= box.min.z && box.max.z <= this.max.z;
 
-		},
+		}
 
-		getParameter: function ( point, target ) {
+		getParameter( point, target ) {
 
 			// This can potentially have a divide by zero if the box
 			// has a size dimension of 0.
-
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Box3: .getParameter() target is now required' );
-				target = new Vector3();
-
-			}
 
 			return target.set(
 				( point.x - this.min.x ) / ( this.max.x - this.min.x ),
@@ -2015,33 +2243,33 @@
 				( point.z - this.min.z ) / ( this.max.z - this.min.z )
 			);
 
-		},
+		}
 
-		intersectsBox: function ( box ) {
+		intersectsBox( box ) {
 
 			// using 6 splitting planes to rule out intersections.
 			return box.max.x < this.min.x || box.min.x > this.max.x ||
 				box.max.y < this.min.y || box.min.y > this.max.y ||
 				box.max.z < this.min.z || box.min.z > this.max.z ? false : true;
 
-		},
+		}
 
-		intersectsSphere: function ( sphere ) {
+		intersectsSphere( sphere ) {
 
 			// Find the point on the AABB closest to the sphere center.
-			this.clampPoint( sphere.center, _vector$1 );
+			this.clampPoint( sphere.center, _vector$3 );
 
 			// If that point is inside the sphere, the AABB and sphere intersect.
-			return _vector$1.distanceToSquared( sphere.center ) <= ( sphere.radius * sphere.radius );
+			return _vector$3.distanceToSquared( sphere.center ) <= ( sphere.radius * sphere.radius );
 
-		},
+		}
 
-		intersectsPlane: function ( plane ) {
+		intersectsPlane( plane ) {
 
 			// We compute the minimum and maximum dot product values. If those values
 			// are on the same side (back or front) of the plane, then there is no intersection.
 
-			var min, max;
+			let min, max;
 
 			if ( plane.normal.x > 0 ) {
 
@@ -2081,9 +2309,9 @@
 
 			return ( min <= - plane.constant && max >= - plane.constant );
 
-		},
+		}
 
-		intersectsTriangle: function ( triangle ) {
+		intersectsTriangle( triangle ) {
 
 			if ( this.isEmpty() ) {
 
@@ -2097,23 +2325,23 @@
 
 			// translate triangle to aabb origin
 			_v0.subVectors( triangle.a, _center );
-			_v1.subVectors( triangle.b, _center );
+			_v1$3.subVectors( triangle.b, _center );
 			_v2.subVectors( triangle.c, _center );
 
 			// compute edge vectors for triangle
-			_f0.subVectors( _v1, _v0 );
-			_f1.subVectors( _v2, _v1 );
+			_f0.subVectors( _v1$3, _v0 );
+			_f1.subVectors( _v2, _v1$3 );
 			_f2.subVectors( _v0, _v2 );
 
 			// test against axes that are given by cross product combinations of the edges of the triangle and the edges of the aabb
 			// make an axis testing of each of the 3 sides of the aabb against each of the 3 sides of the triangle = 9 axis of separation
 			// axis_ij = u_i x f_j (u0, u1, u2 = face normals of aabb = x,y,z axes vectors since aabb is axis aligned)
-			var axes = [
+			let axes = [
 				0, - _f0.z, _f0.y, 0, - _f1.z, _f1.y, 0, - _f2.z, _f2.y,
 				_f0.z, 0, - _f0.x, _f1.z, 0, - _f1.x, _f2.z, 0, - _f2.x,
 				- _f0.y, _f0.x, 0, - _f1.y, _f1.x, 0, - _f2.y, _f2.x, 0
 			];
-			if ( ! satForAxes( axes, _v0, _v1, _v2, _extents ) ) {
+			if ( ! satForAxes( axes, _v0, _v1$3, _v2, _extents ) ) {
 
 				return false;
 
@@ -2121,7 +2349,7 @@
 
 			// test 3 face normals from the aabb
 			axes = [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ];
-			if ( ! satForAxes( axes, _v0, _v1, _v2, _extents ) ) {
+			if ( ! satForAxes( axes, _v0, _v1$3, _v2, _extents ) ) {
 
 				return false;
 
@@ -2132,49 +2360,35 @@
 			_triangleNormal.crossVectors( _f0, _f1 );
 			axes = [ _triangleNormal.x, _triangleNormal.y, _triangleNormal.z ];
 
-			return satForAxes( axes, _v0, _v1, _v2, _extents );
+			return satForAxes( axes, _v0, _v1$3, _v2, _extents );
 
-		},
+		}
 
-		clampPoint: function ( point, target ) {
-
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Box3: .clampPoint() target is now required' );
-				target = new Vector3();
-
-			}
+		clampPoint( point, target ) {
 
 			return target.copy( point ).clamp( this.min, this.max );
 
-		},
+		}
 
-		distanceToPoint: function ( point ) {
+		distanceToPoint( point ) {
 
-			var clampedPoint = _vector$1.copy( point ).clamp( this.min, this.max );
+			const clampedPoint = _vector$3.copy( point ).clamp( this.min, this.max );
 
 			return clampedPoint.sub( point ).length();
 
-		},
+		}
 
-		getBoundingSphere: function ( target ) {
-
-			if ( target === undefined ) {
-
-				console.error( 'THREE.Box3: .getBoundingSphere() target is now required' );
-				//target = new Sphere(); // removed to avoid cyclic dependency
-
-			}
+		getBoundingSphere( target ) {
 
 			this.getCenter( target.center );
 
-			target.radius = this.getSize( _vector$1 ).length() * 0.5;
+			target.radius = this.getSize( _vector$3 ).length() * 0.5;
 
 			return target;
 
-		},
+		}
 
-		intersect: function ( box ) {
+		intersect( box ) {
 
 			this.min.max( box.min );
 			this.max.min( box.max );
@@ -2184,18 +2398,18 @@
 
 			return this;
 
-		},
+		}
 
-		union: function ( box ) {
+		union( box ) {
 
 			this.min.min( box.min );
 			this.max.max( box.max );
 
 			return this;
 
-		},
+		}
 
-		applyMatrix4: function ( matrix ) {
+		applyMatrix4( matrix ) {
 
 			// transform of empty box is an empty box.
 			if ( this.isEmpty() ) return this;
@@ -2214,38 +2428,70 @@
 
 			return this;
 
-		},
+		}
 
-		translate: function ( offset ) {
+		translate( offset ) {
 
 			this.min.add( offset );
 			this.max.add( offset );
 
 			return this;
 
-		},
+		}
 
-		equals: function ( box ) {
+		equals( box ) {
 
 			return box.min.equals( this.min ) && box.max.equals( this.max );
 
 		}
 
-	} );
+	}
+
+	Box3.prototype.isBox3 = true;
+
+	const _points = [
+		/*@__PURE__*/ new Vector3(),
+		/*@__PURE__*/ new Vector3(),
+		/*@__PURE__*/ new Vector3(),
+		/*@__PURE__*/ new Vector3(),
+		/*@__PURE__*/ new Vector3(),
+		/*@__PURE__*/ new Vector3(),
+		/*@__PURE__*/ new Vector3(),
+		/*@__PURE__*/ new Vector3()
+	];
+
+	const _vector$3 = /*@__PURE__*/ new Vector3();
+
+	const _box$2 = /*@__PURE__*/ new Box3();
+
+	// triangle centered vertices
+
+	const _v0 = /*@__PURE__*/ new Vector3();
+	const _v1$3 = /*@__PURE__*/ new Vector3();
+	const _v2 = /*@__PURE__*/ new Vector3();
+
+	// triangle edge vectors
+
+	const _f0 = /*@__PURE__*/ new Vector3();
+	const _f1 = /*@__PURE__*/ new Vector3();
+	const _f2 = /*@__PURE__*/ new Vector3();
+
+	const _center = /*@__PURE__*/ new Vector3();
+	const _extents = /*@__PURE__*/ new Vector3();
+	const _triangleNormal = /*@__PURE__*/ new Vector3();
+	const _testAxis = /*@__PURE__*/ new Vector3();
 
 	function satForAxes( axes, v0, v1, v2, extents ) {
 
-		var i, j;
-
-		for ( i = 0, j = axes.length - 3; i <= j; i += 3 ) {
+		for ( let i = 0, j = axes.length - 3; i <= j; i += 3 ) {
 
 			_testAxis.fromArray( axes, i );
 			// project the aabb onto the seperating axis
-			var r = extents.x * Math.abs( _testAxis.x ) + extents.y * Math.abs( _testAxis.y ) + extents.z * Math.abs( _testAxis.z );
+			const r = extents.x * Math.abs( _testAxis.x ) + extents.y * Math.abs( _testAxis.y ) + extents.z * Math.abs( _testAxis.z );
 			// project all 3 vertices of the triangle onto the seperating axis
-			var p0 = v0.dot( _testAxis );
-			var p1 = v1.dot( _testAxis );
-			var p2 = v2.dot( _testAxis );
+			const p0 = v0.dot( _testAxis );
+			const p1 = v1.dot( _testAxis );
+			const p2 = v2.dot( _testAxis );
 			// actual test, basically see if either of the most extreme of the triangle points intersects r
 			if ( Math.max( - Math.max( p0, p1, p2 ), Math.min( p0, p1, p2 ) ) > r ) {
 
@@ -2265,15 +2511,13 @@
 	 * https://github.com/mrdoob/eventdispatcher.js/
 	 */
 
-	function EventDispatcher() {}
+	class EventDispatcher {
 
-	Object.assign( EventDispatcher.prototype, {
-
-		addEventListener: function ( type, listener ) {
+		addEventListener( type, listener ) {
 
 			if ( this._listeners === undefined ) this._listeners = {};
 
-			var listeners = this._listeners;
+			const listeners = this._listeners;
 
 			if ( listeners[ type ] === undefined ) {
 
@@ -2287,28 +2531,28 @@
 
 			}
 
-		},
+		}
 
-		hasEventListener: function ( type, listener ) {
+		hasEventListener( type, listener ) {
 
 			if ( this._listeners === undefined ) return false;
 
-			var listeners = this._listeners;
+			const listeners = this._listeners;
 
 			return listeners[ type ] !== undefined && listeners[ type ].indexOf( listener ) !== - 1;
 
-		},
+		}
 
-		removeEventListener: function ( type, listener ) {
+		removeEventListener( type, listener ) {
 
 			if ( this._listeners === undefined ) return;
 
-			var listeners = this._listeners;
-			var listenerArray = listeners[ type ];
+			const listeners = this._listeners;
+			const listenerArray = listeners[ type ];
 
 			if ( listenerArray !== undefined ) {
 
-				var index = listenerArray.indexOf( listener );
+				const index = listenerArray.indexOf( listener );
 
 				if ( index !== - 1 ) {
 
@@ -2318,22 +2562,23 @@
 
 			}
 
-		},
+		}
 
-		dispatchEvent: function ( event ) {
+		dispatchEvent( event ) {
 
 			if ( this._listeners === undefined ) return;
 
-			var listeners = this._listeners;
-			var listenerArray = listeners[ event.type ];
+			const listeners = this._listeners;
+			const listenerArray = listeners[ event.type ];
 
 			if ( listenerArray !== undefined ) {
 
 				event.target = this;
 
-				var array = listenerArray.slice( 0 );
+				// Make a copy, in case listeners are removed while iterating.
+				const array = listenerArray.slice( 0 );
 
-				for ( var i = 0, l = array.length; i < l; i ++ ) {
+				for ( let i = 0, l = array.length; i < l; i ++ ) {
 
 					array[ i ].call( this, event );
 
@@ -2345,66 +2590,44 @@
 
 		}
 
-	} );
-
-	/**
-	 * @author supereggbert / http://www.paulbrunt.co.uk/
-	 * @author philogb / http://blog.thejit.org/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author egraether / http://egraether.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 */
-
-	function Vector4( x, y, z, w ) {
-
-		this.x = x || 0;
-		this.y = y || 0;
-		this.z = z || 0;
-		this.w = ( w !== undefined ) ? w : 1;
-
 	}
 
-	Object.defineProperties( Vector4.prototype, {
+	class Vector4 {
 
-		"width": {
+		constructor( x = 0, y = 0, z = 0, w = 1 ) {
 
-			get: function () {
-
-				return this.z;
-
-			},
-
-			set: function ( value ) {
-
-				this.z = value;
-
-			}
-
-		},
-
-		"height": {
-
-			get: function () {
-
-				return this.w;
-
-			},
-
-			set: function ( value ) {
-
-				this.w = value;
-
-			}
+			this.x = x;
+			this.y = y;
+			this.z = z;
+			this.w = w;
 
 		}
 
-	} );
+		get width() {
 
-	Object.assign( Vector4.prototype, {
+			return this.z;
 
-		isVector4: true,
+		}
 
-		set: function ( x, y, z, w ) {
+		set width( value ) {
+
+			this.z = value;
+
+		}
+
+		get height() {
+
+			return this.w;
+
+		}
+
+		set height( value ) {
+
+			this.w = value;
+
+		}
+
+		set( x, y, z, w ) {
 
 			this.x = x;
 			this.y = y;
@@ -2413,9 +2636,9 @@
 
 			return this;
 
-		},
+		}
 
-		setScalar: function ( scalar ) {
+		setScalar( scalar ) {
 
 			this.x = scalar;
 			this.y = scalar;
@@ -2424,41 +2647,41 @@
 
 			return this;
 
-		},
+		}
 
-		setX: function ( x ) {
+		setX( x ) {
 
 			this.x = x;
 
 			return this;
 
-		},
+		}
 
-		setY: function ( y ) {
+		setY( y ) {
 
 			this.y = y;
 
 			return this;
 
-		},
+		}
 
-		setZ: function ( z ) {
+		setZ( z ) {
 
 			this.z = z;
 
 			return this;
 
-		},
+		}
 
-		setW: function ( w ) {
+		setW( w ) {
 
 			this.w = w;
 
 			return this;
 
-		},
+		}
 
-		setComponent: function ( index, value ) {
+		setComponent( index, value ) {
 
 			switch ( index ) {
 
@@ -2472,9 +2695,9 @@
 
 			return this;
 
-		},
+		}
 
-		getComponent: function ( index ) {
+		getComponent( index ) {
 
 			switch ( index ) {
 
@@ -2486,15 +2709,15 @@
 
 			}
 
-		},
+		}
 
-		clone: function () {
+		clone() {
 
 			return new this.constructor( this.x, this.y, this.z, this.w );
 
-		},
+		}
 
-		copy: function ( v ) {
+		copy( v ) {
 
 			this.x = v.x;
 			this.y = v.y;
@@ -2503,9 +2726,9 @@
 
 			return this;
 
-		},
+		}
 
-		add: function ( v, w ) {
+		add( v, w ) {
 
 			if ( w !== undefined ) {
 
@@ -2521,9 +2744,9 @@
 
 			return this;
 
-		},
+		}
 
-		addScalar: function ( s ) {
+		addScalar( s ) {
 
 			this.x += s;
 			this.y += s;
@@ -2532,9 +2755,9 @@
 
 			return this;
 
-		},
+		}
 
-		addVectors: function ( a, b ) {
+		addVectors( a, b ) {
 
 			this.x = a.x + b.x;
 			this.y = a.y + b.y;
@@ -2543,9 +2766,9 @@
 
 			return this;
 
-		},
+		}
 
-		addScaledVector: function ( v, s ) {
+		addScaledVector( v, s ) {
 
 			this.x += v.x * s;
 			this.y += v.y * s;
@@ -2554,9 +2777,9 @@
 
 			return this;
 
-		},
+		}
 
-		sub: function ( v, w ) {
+		sub( v, w ) {
 
 			if ( w !== undefined ) {
 
@@ -2572,9 +2795,9 @@
 
 			return this;
 
-		},
+		}
 
-		subScalar: function ( s ) {
+		subScalar( s ) {
 
 			this.x -= s;
 			this.y -= s;
@@ -2583,9 +2806,9 @@
 
 			return this;
 
-		},
+		}
 
-		subVectors: function ( a, b ) {
+		subVectors( a, b ) {
 
 			this.x = a.x - b.x;
 			this.y = a.y - b.y;
@@ -2594,9 +2817,20 @@
 
 			return this;
 
-		},
+		}
 
-		multiplyScalar: function ( scalar ) {
+		multiply( v ) {
+
+			this.x *= v.x;
+			this.y *= v.y;
+			this.z *= v.z;
+			this.w *= v.w;
+
+			return this;
+
+		}
+
+		multiplyScalar( scalar ) {
 
 			this.x *= scalar;
 			this.y *= scalar;
@@ -2605,12 +2839,12 @@
 
 			return this;
 
-		},
+		}
 
-		applyMatrix4: function ( m ) {
+		applyMatrix4( m ) {
 
-			var x = this.x, y = this.y, z = this.z, w = this.w;
-			var e = m.elements;
+			const x = this.x, y = this.y, z = this.z, w = this.w;
+			const e = m.elements;
 
 			this.x = e[ 0 ] * x + e[ 4 ] * y + e[ 8 ] * z + e[ 12 ] * w;
 			this.y = e[ 1 ] * x + e[ 5 ] * y + e[ 9 ] * z + e[ 13 ] * w;
@@ -2619,15 +2853,15 @@
 
 			return this;
 
-		},
+		}
 
-		divideScalar: function ( scalar ) {
+		divideScalar( scalar ) {
 
 			return this.multiplyScalar( 1 / scalar );
 
-		},
+		}
 
-		setAxisAngleFromQuaternion: function ( q ) {
+		setAxisAngleFromQuaternion( q ) {
 
 			// http://www.euclideanspace.com/maths/geometry/rotations/conversions/quaternionToAngle/index.htm
 
@@ -2635,7 +2869,7 @@
 
 			this.w = 2 * Math.acos( q.w );
 
-			var s = Math.sqrt( 1 - q.w * q.w );
+			const s = Math.sqrt( 1 - q.w * q.w );
 
 			if ( s < 0.0001 ) {
 
@@ -2653,16 +2887,16 @@
 
 			return this;
 
-		},
+		}
 
-		setAxisAngleFromRotationMatrix: function ( m ) {
+		setAxisAngleFromRotationMatrix( m ) {
 
 			// http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToAngle/index.htm
 
 			// assumes the upper 3x3 of m is a pure rotation matrix (i.e, unscaled)
 
-			var angle, x, y, z,		// variables for result
-				epsilon = 0.01,		// margin to allow for rounding errors
+			let angle, x, y, z; // variables for result
+			const epsilon = 0.01,		// margin to allow for rounding errors
 				epsilon2 = 0.1,		// margin to distinguish between 0 and 180 degrees
 
 				te = m.elements,
@@ -2696,12 +2930,12 @@
 
 				angle = Math.PI;
 
-				var xx = ( m11 + 1 ) / 2;
-				var yy = ( m22 + 1 ) / 2;
-				var zz = ( m33 + 1 ) / 2;
-				var xy = ( m12 + m21 ) / 4;
-				var xz = ( m13 + m31 ) / 4;
-				var yz = ( m23 + m32 ) / 4;
+				const xx = ( m11 + 1 ) / 2;
+				const yy = ( m22 + 1 ) / 2;
+				const zz = ( m33 + 1 ) / 2;
+				const xy = ( m12 + m21 ) / 4;
+				const xz = ( m13 + m31 ) / 4;
+				const yz = ( m23 + m32 ) / 4;
 
 				if ( ( xx > yy ) && ( xx > zz ) ) {
 
@@ -2767,9 +3001,9 @@
 
 			// as we have reached here there are no singularities so we can handle normally
 
-			var s = Math.sqrt( ( m32 - m23 ) * ( m32 - m23 ) +
-			                   ( m13 - m31 ) * ( m13 - m31 ) +
-			                   ( m21 - m12 ) * ( m21 - m12 ) ); // used to normalize
+			let s = Math.sqrt( ( m32 - m23 ) * ( m32 - m23 ) +
+				( m13 - m31 ) * ( m13 - m31 ) +
+				( m21 - m12 ) * ( m21 - m12 ) ); // used to normalize
 
 			if ( Math.abs( s ) < 0.001 ) s = 1;
 
@@ -2783,9 +3017,9 @@
 
 			return this;
 
-		},
+		}
 
-		min: function ( v ) {
+		min( v ) {
 
 			this.x = Math.min( this.x, v.x );
 			this.y = Math.min( this.y, v.y );
@@ -2794,9 +3028,9 @@
 
 			return this;
 
-		},
+		}
 
-		max: function ( v ) {
+		max( v ) {
 
 			this.x = Math.max( this.x, v.x );
 			this.y = Math.max( this.y, v.y );
@@ -2805,9 +3039,9 @@
 
 			return this;
 
-		},
+		}
 
-		clamp: function ( min, max ) {
+		clamp( min, max ) {
 
 			// assumes min < max, componentwise
 
@@ -2818,9 +3052,9 @@
 
 			return this;
 
-		},
+		}
 
-		clampScalar: function ( minVal, maxVal ) {
+		clampScalar( minVal, maxVal ) {
 
 			this.x = Math.max( minVal, Math.min( maxVal, this.x ) );
 			this.y = Math.max( minVal, Math.min( maxVal, this.y ) );
@@ -2829,17 +3063,17 @@
 
 			return this;
 
-		},
+		}
 
-		clampLength: function ( min, max ) {
+		clampLength( min, max ) {
 
-			var length = this.length();
+			const length = this.length();
 
 			return this.divideScalar( length || 1 ).multiplyScalar( Math.max( min, Math.min( max, length ) ) );
 
-		},
+		}
 
-		floor: function () {
+		floor() {
 
 			this.x = Math.floor( this.x );
 			this.y = Math.floor( this.y );
@@ -2848,9 +3082,9 @@
 
 			return this;
 
-		},
+		}
 
-		ceil: function () {
+		ceil() {
 
 			this.x = Math.ceil( this.x );
 			this.y = Math.ceil( this.y );
@@ -2859,9 +3093,9 @@
 
 			return this;
 
-		},
+		}
 
-		round: function () {
+		round() {
 
 			this.x = Math.round( this.x );
 			this.y = Math.round( this.y );
@@ -2870,9 +3104,9 @@
 
 			return this;
 
-		},
+		}
 
-		roundToZero: function () {
+		roundToZero() {
 
 			this.x = ( this.x < 0 ) ? Math.ceil( this.x ) : Math.floor( this.x );
 			this.y = ( this.y < 0 ) ? Math.ceil( this.y ) : Math.floor( this.y );
@@ -2881,9 +3115,9 @@
 
 			return this;
 
-		},
+		}
 
-		negate: function () {
+		negate() {
 
 			this.x = - this.x;
 			this.y = - this.y;
@@ -2892,45 +3126,45 @@
 
 			return this;
 
-		},
+		}
 
-		dot: function ( v ) {
+		dot( v ) {
 
 			return this.x * v.x + this.y * v.y + this.z * v.z + this.w * v.w;
 
-		},
+		}
 
-		lengthSq: function () {
+		lengthSq() {
 
 			return this.x * this.x + this.y * this.y + this.z * this.z + this.w * this.w;
 
-		},
+		}
 
-		length: function () {
+		length() {
 
 			return Math.sqrt( this.x * this.x + this.y * this.y + this.z * this.z + this.w * this.w );
 
-		},
+		}
 
-		manhattanLength: function () {
+		manhattanLength() {
 
 			return Math.abs( this.x ) + Math.abs( this.y ) + Math.abs( this.z ) + Math.abs( this.w );
 
-		},
+		}
 
-		normalize: function () {
+		normalize() {
 
 			return this.divideScalar( this.length() || 1 );
 
-		},
+		}
 
-		setLength: function ( length ) {
+		setLength( length ) {
 
 			return this.normalize().multiplyScalar( length );
 
-		},
+		}
 
-		lerp: function ( v, alpha ) {
+		lerp( v, alpha ) {
 
 			this.x += ( v.x - this.x ) * alpha;
 			this.y += ( v.y - this.y ) * alpha;
@@ -2939,23 +3173,26 @@
 
 			return this;
 
-		},
+		}
 
-		lerpVectors: function ( v1, v2, alpha ) {
+		lerpVectors( v1, v2, alpha ) {
 
-			return this.subVectors( v2, v1 ).multiplyScalar( alpha ).add( v1 );
+			this.x = v1.x + ( v2.x - v1.x ) * alpha;
+			this.y = v1.y + ( v2.y - v1.y ) * alpha;
+			this.z = v1.z + ( v2.z - v1.z ) * alpha;
+			this.w = v1.w + ( v2.w - v1.w ) * alpha;
 
-		},
+			return this;
 
-		equals: function ( v ) {
+		}
+
+		equals( v ) {
 
 			return ( ( v.x === this.x ) && ( v.y === this.y ) && ( v.z === this.z ) && ( v.w === this.w ) );
 
-		},
+		}
 
-		fromArray: function ( array, offset ) {
-
-			if ( offset === undefined ) offset = 0;
+		fromArray( array, offset = 0 ) {
 
 			this.x = array[ offset ];
 			this.y = array[ offset + 1 ];
@@ -2964,12 +3201,9 @@
 
 			return this;
 
-		},
+		}
 
-		toArray: function ( array, offset ) {
-
-			if ( array === undefined ) array = [];
-			if ( offset === undefined ) offset = 0;
+		toArray( array = [], offset = 0 ) {
 
 			array[ offset ] = this.x;
 			array[ offset + 1 ] = this.y;
@@ -2978,9 +3212,9 @@
 
 			return array;
 
-		},
+		}
 
-		fromBufferAttribute: function ( attribute, index, offset ) {
+		fromBufferAttribute( attribute, index, offset ) {
 
 			if ( offset !== undefined ) {
 
@@ -2997,503 +3231,31 @@
 
 		}
 
-	} );
+		random() {
 
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author philogb / http://blog.thejit.org/
-	 * @author egraether / http://egraether.com/
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
-	 */
+			this.x = Math.random();
+			this.y = Math.random();
+			this.z = Math.random();
+			this.w = Math.random();
 
-	function Vector2( x, y ) {
+			return this;
 
-		this.x = x || 0;
-		this.y = y || 0;
+		}
+
+		*[ Symbol.iterator ]() {
+
+			yield this.x;
+			yield this.y;
+			yield this.z;
+			yield this.w;
+
+		}
 
 	}
 
-	Object.defineProperties( Vector2.prototype, {
+	Vector4.prototype.isVector4 = true;
 
-		"width": {
-
-			get: function () {
-
-				return this.x;
-
-			},
-
-			set: function ( value ) {
-
-				this.x = value;
-
-			}
-
-		},
-
-		"height": {
-
-			get: function () {
-
-				return this.y;
-
-			},
-
-			set: function ( value ) {
-
-				this.y = value;
-
-			}
-
-		}
-
-	} );
-
-	Object.assign( Vector2.prototype, {
-
-		isVector2: true,
-
-		set: function ( x, y ) {
-
-			this.x = x;
-			this.y = y;
-
-			return this;
-
-		},
-
-		setScalar: function ( scalar ) {
-
-			this.x = scalar;
-			this.y = scalar;
-
-			return this;
-
-		},
-
-		setX: function ( x ) {
-
-			this.x = x;
-
-			return this;
-
-		},
-
-		setY: function ( y ) {
-
-			this.y = y;
-
-			return this;
-
-		},
-
-		setComponent: function ( index, value ) {
-
-			switch ( index ) {
-
-				case 0: this.x = value; break;
-				case 1: this.y = value; break;
-				default: throw new Error( 'index is out of range: ' + index );
-
-			}
-
-			return this;
-
-		},
-
-		getComponent: function ( index ) {
-
-			switch ( index ) {
-
-				case 0: return this.x;
-				case 1: return this.y;
-				default: throw new Error( 'index is out of range: ' + index );
-
-			}
-
-		},
-
-		clone: function () {
-
-			return new this.constructor( this.x, this.y );
-
-		},
-
-		copy: function ( v ) {
-
-			this.x = v.x;
-			this.y = v.y;
-
-			return this;
-
-		},
-
-		add: function ( v, w ) {
-
-			if ( w !== undefined ) {
-
-				console.warn( 'THREE.Vector2: .add() now only accepts one argument. Use .addVectors( a, b ) instead.' );
-				return this.addVectors( v, w );
-
-			}
-
-			this.x += v.x;
-			this.y += v.y;
-
-			return this;
-
-		},
-
-		addScalar: function ( s ) {
-
-			this.x += s;
-			this.y += s;
-
-			return this;
-
-		},
-
-		addVectors: function ( a, b ) {
-
-			this.x = a.x + b.x;
-			this.y = a.y + b.y;
-
-			return this;
-
-		},
-
-		addScaledVector: function ( v, s ) {
-
-			this.x += v.x * s;
-			this.y += v.y * s;
-
-			return this;
-
-		},
-
-		sub: function ( v, w ) {
-
-			if ( w !== undefined ) {
-
-				console.warn( 'THREE.Vector2: .sub() now only accepts one argument. Use .subVectors( a, b ) instead.' );
-				return this.subVectors( v, w );
-
-			}
-
-			this.x -= v.x;
-			this.y -= v.y;
-
-			return this;
-
-		},
-
-		subScalar: function ( s ) {
-
-			this.x -= s;
-			this.y -= s;
-
-			return this;
-
-		},
-
-		subVectors: function ( a, b ) {
-
-			this.x = a.x - b.x;
-			this.y = a.y - b.y;
-
-			return this;
-
-		},
-
-		multiply: function ( v ) {
-
-			this.x *= v.x;
-			this.y *= v.y;
-
-			return this;
-
-		},
-
-		multiplyScalar: function ( scalar ) {
-
-			this.x *= scalar;
-			this.y *= scalar;
-
-			return this;
-
-		},
-
-		divide: function ( v ) {
-
-			this.x /= v.x;
-			this.y /= v.y;
-
-			return this;
-
-		},
-
-		divideScalar: function ( scalar ) {
-
-			return this.multiplyScalar( 1 / scalar );
-
-		},
-
-		applyMatrix3: function ( m ) {
-
-			var x = this.x, y = this.y;
-			var e = m.elements;
-
-			this.x = e[ 0 ] * x + e[ 3 ] * y + e[ 6 ];
-			this.y = e[ 1 ] * x + e[ 4 ] * y + e[ 7 ];
-
-			return this;
-
-		},
-
-		min: function ( v ) {
-
-			this.x = Math.min( this.x, v.x );
-			this.y = Math.min( this.y, v.y );
-
-			return this;
-
-		},
-
-		max: function ( v ) {
-
-			this.x = Math.max( this.x, v.x );
-			this.y = Math.max( this.y, v.y );
-
-			return this;
-
-		},
-
-		clamp: function ( min, max ) {
-
-			// assumes min < max, componentwise
-
-			this.x = Math.max( min.x, Math.min( max.x, this.x ) );
-			this.y = Math.max( min.y, Math.min( max.y, this.y ) );
-
-			return this;
-
-		},
-
-		clampScalar: function ( minVal, maxVal ) {
-
-			this.x = Math.max( minVal, Math.min( maxVal, this.x ) );
-			this.y = Math.max( minVal, Math.min( maxVal, this.y ) );
-
-			return this;
-
-		},
-
-		clampLength: function ( min, max ) {
-
-			var length = this.length();
-
-			return this.divideScalar( length || 1 ).multiplyScalar( Math.max( min, Math.min( max, length ) ) );
-
-		},
-
-		floor: function () {
-
-			this.x = Math.floor( this.x );
-			this.y = Math.floor( this.y );
-
-			return this;
-
-		},
-
-		ceil: function () {
-
-			this.x = Math.ceil( this.x );
-			this.y = Math.ceil( this.y );
-
-			return this;
-
-		},
-
-		round: function () {
-
-			this.x = Math.round( this.x );
-			this.y = Math.round( this.y );
-
-			return this;
-
-		},
-
-		roundToZero: function () {
-
-			this.x = ( this.x < 0 ) ? Math.ceil( this.x ) : Math.floor( this.x );
-			this.y = ( this.y < 0 ) ? Math.ceil( this.y ) : Math.floor( this.y );
-
-			return this;
-
-		},
-
-		negate: function () {
-
-			this.x = - this.x;
-			this.y = - this.y;
-
-			return this;
-
-		},
-
-		dot: function ( v ) {
-
-			return this.x * v.x + this.y * v.y;
-
-		},
-
-		cross: function ( v ) {
-
-			return this.x * v.y - this.y * v.x;
-
-		},
-
-		lengthSq: function () {
-
-			return this.x * this.x + this.y * this.y;
-
-		},
-
-		length: function () {
-
-			return Math.sqrt( this.x * this.x + this.y * this.y );
-
-		},
-
-		manhattanLength: function () {
-
-			return Math.abs( this.x ) + Math.abs( this.y );
-
-		},
-
-		normalize: function () {
-
-			return this.divideScalar( this.length() || 1 );
-
-		},
-
-		angle: function () {
-
-			// computes the angle in radians with respect to the positive x-axis
-
-			var angle = Math.atan2( this.y, this.x );
-
-			if ( angle < 0 ) angle += 2 * Math.PI;
-
-			return angle;
-
-		},
-
-		distanceTo: function ( v ) {
-
-			return Math.sqrt( this.distanceToSquared( v ) );
-
-		},
-
-		distanceToSquared: function ( v ) {
-
-			var dx = this.x - v.x, dy = this.y - v.y;
-			return dx * dx + dy * dy;
-
-		},
-
-		manhattanDistanceTo: function ( v ) {
-
-			return Math.abs( this.x - v.x ) + Math.abs( this.y - v.y );
-
-		},
-
-		setLength: function ( length ) {
-
-			return this.normalize().multiplyScalar( length );
-
-		},
-
-		lerp: function ( v, alpha ) {
-
-			this.x += ( v.x - this.x ) * alpha;
-			this.y += ( v.y - this.y ) * alpha;
-
-			return this;
-
-		},
-
-		lerpVectors: function ( v1, v2, alpha ) {
-
-			return this.subVectors( v2, v1 ).multiplyScalar( alpha ).add( v1 );
-
-		},
-
-		equals: function ( v ) {
-
-			return ( ( v.x === this.x ) && ( v.y === this.y ) );
-
-		},
-
-		fromArray: function ( array, offset ) {
-
-			if ( offset === undefined ) offset = 0;
-
-			this.x = array[ offset ];
-			this.y = array[ offset + 1 ];
-
-			return this;
-
-		},
-
-		toArray: function ( array, offset ) {
-
-			if ( array === undefined ) array = [];
-			if ( offset === undefined ) offset = 0;
-
-			array[ offset ] = this.x;
-			array[ offset + 1 ] = this.y;
-
-			return array;
-
-		},
-
-		fromBufferAttribute: function ( attribute, index, offset ) {
-
-			if ( offset !== undefined ) {
-
-				console.warn( 'THREE.Vector2: offset has been removed from .fromBufferAttribute().' );
-
-			}
-
-			this.x = attribute.getX( index );
-			this.y = attribute.getY( index );
-
-			return this;
-
-		},
-
-		rotateAround: function ( center, angle ) {
-
-			var c = Math.cos( angle ), s = Math.sin( angle );
-
-			var x = this.x - center.x;
-			var y = this.y - center.y;
-
-			this.x = x * c - y * s + center.x;
-			this.y = x * s + y * c + center.y;
-
-			return this;
-
-		}
-
-	} );
-
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 */
-
-	var _colorKeywords = { 'aliceblue': 0xF0F8FF, 'antiquewhite': 0xFAEBD7, 'aqua': 0x00FFFF, 'aquamarine': 0x7FFFD4, 'azure': 0xF0FFFF,
+	const _colorKeywords = { 'aliceblue': 0xF0F8FF, 'antiquewhite': 0xFAEBD7, 'aqua': 0x00FFFF, 'aquamarine': 0x7FFFD4, 'azure': 0xF0FFFF,
 		'beige': 0xF5F5DC, 'bisque': 0xFFE4C4, 'black': 0x000000, 'blanchedalmond': 0xFFEBCD, 'blue': 0x0000FF, 'blueviolet': 0x8A2BE2,
 		'brown': 0xA52A2A, 'burlywood': 0xDEB887, 'cadetblue': 0x5F9EA0, 'chartreuse': 0x7FFF00, 'chocolate': 0xD2691E, 'coral': 0xFF7F50,
 		'cornflowerblue': 0x6495ED, 'cornsilk': 0xFFF8DC, 'crimson': 0xDC143C, 'cyan': 0x00FFFF, 'darkblue': 0x00008B, 'darkcyan': 0x008B8B,
@@ -3518,21 +3280,8 @@
 		'springgreen': 0x00FF7F, 'steelblue': 0x4682B4, 'tan': 0xD2B48C, 'teal': 0x008080, 'thistle': 0xD8BFD8, 'tomato': 0xFF6347, 'turquoise': 0x40E0D0,
 		'violet': 0xEE82EE, 'wheat': 0xF5DEB3, 'white': 0xFFFFFF, 'whitesmoke': 0xF5F5F5, 'yellow': 0xFFFF00, 'yellowgreen': 0x9ACD32 };
 
-	var _hslA = { h: 0, s: 0, l: 0 };
-	var _hslB = { h: 0, s: 0, l: 0 };
-
-	function Color( r, g, b ) {
-
-		if ( g === undefined && b === undefined ) {
-
-			// r is THREE.Color, hex or string
-			return this.set( r );
-
-		}
-
-		return this.setRGB( r, g, b );
-
-	}
+	const _hslA = { h: 0, s: 0, l: 0 };
+	const _hslB = { h: 0, s: 0, l: 0 };
 
 	function hue2rgb( p, q, t ) {
 
@@ -3557,13 +3306,22 @@
 
 	}
 
-	Object.assign( Color.prototype, {
+	class Color {
 
-		isColor: true,
+		constructor( r, g, b ) {
 
-		r: 1, g: 1, b: 1,
+			if ( g === undefined && b === undefined ) {
 
-		set: function ( value ) {
+				// r is THREE.Color, hex or string
+				return this.set( r );
+
+			}
+
+			return this.setRGB( r, g, b );
+
+		}
+
+		set( value ) {
 
 			if ( value && value.isColor ) {
 
@@ -3581,9 +3339,9 @@
 
 			return this;
 
-		},
+		}
 
-		setScalar: function ( scalar ) {
+		setScalar( scalar ) {
 
 			this.r = scalar;
 			this.g = scalar;
@@ -3591,9 +3349,9 @@
 
 			return this;
 
-		},
+		}
 
-		setHex: function ( hex ) {
+		setHex( hex ) {
 
 			hex = Math.floor( hex );
 
@@ -3603,9 +3361,9 @@
 
 			return this;
 
-		},
+		}
 
-		setRGB: function ( r, g, b ) {
+		setRGB( r, g, b ) {
 
 			this.r = r;
 			this.g = g;
@@ -3613,14 +3371,14 @@
 
 			return this;
 
-		},
+		}
 
-		setHSL: function ( h, s, l ) {
+		setHSL( h, s, l ) {
 
 			// h,s,l ranges are in 0.0 - 1.0
-			h = MathUtils.euclideanModulo( h, 1 );
-			s = MathUtils.clamp( s, 0, 1 );
-			l = MathUtils.clamp( l, 0, 1 );
+			h = euclideanModulo( h, 1 );
+			s = clamp( s, 0, 1 );
+			l = clamp( l, 0, 1 );
 
 			if ( s === 0 ) {
 
@@ -3628,8 +3386,8 @@
 
 			} else {
 
-				var p = l <= 0.5 ? l * ( 1 + s ) : l + s - ( l * s );
-				var q = ( 2 * l ) - p;
+				const p = l <= 0.5 ? l * ( 1 + s ) : l + s - ( l * s );
+				const q = ( 2 * l ) - p;
 
 				this.r = hue2rgb( q, p, h + 1 / 3 );
 				this.g = hue2rgb( q, p, h );
@@ -3639,9 +3397,9 @@
 
 			return this;
 
-		},
+		}
 
-		setStyle: function ( style ) {
+		setStyle( style ) {
 
 			function handleAlpha( string ) {
 
@@ -3656,42 +3414,42 @@
 			}
 
 
-			var m;
+			let m;
 
-			if ( m = /^((?:rgb|hsl)a?)\(\s*([^\)]*)\)/.exec( style ) ) {
+			if ( m = /^((?:rgb|hsl)a?)\(([^\)]*)\)/.exec( style ) ) {
 
 				// rgb / hsl
 
-				var color;
-				var name = m[ 1 ];
-				var components = m[ 2 ];
+				let color;
+				const name = m[ 1 ];
+				const components = m[ 2 ];
 
 				switch ( name ) {
 
 					case 'rgb':
 					case 'rgba':
 
-						if ( color = /^(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(,\s*([0-9]*\.?[0-9]+)\s*)?$/.exec( components ) ) {
+						if ( color = /^\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(?:,\s*(\d*\.?\d+)\s*)?$/.exec( components ) ) {
 
 							// rgb(255,0,0) rgba(255,0,0,0.5)
 							this.r = Math.min( 255, parseInt( color[ 1 ], 10 ) ) / 255;
 							this.g = Math.min( 255, parseInt( color[ 2 ], 10 ) ) / 255;
 							this.b = Math.min( 255, parseInt( color[ 3 ], 10 ) ) / 255;
 
-							handleAlpha( color[ 5 ] );
+							handleAlpha( color[ 4 ] );
 
 							return this;
 
 						}
 
-						if ( color = /^(\d+)\%\s*,\s*(\d+)\%\s*,\s*(\d+)\%\s*(,\s*([0-9]*\.?[0-9]+)\s*)?$/.exec( components ) ) {
+						if ( color = /^\s*(\d+)\%\s*,\s*(\d+)\%\s*,\s*(\d+)\%\s*(?:,\s*(\d*\.?\d+)\s*)?$/.exec( components ) ) {
 
 							// rgb(100%,0%,0%) rgba(100%,0%,0%,0.5)
 							this.r = Math.min( 100, parseInt( color[ 1 ], 10 ) ) / 100;
 							this.g = Math.min( 100, parseInt( color[ 2 ], 10 ) ) / 100;
 							this.b = Math.min( 100, parseInt( color[ 3 ], 10 ) ) / 100;
 
-							handleAlpha( color[ 5 ] );
+							handleAlpha( color[ 4 ] );
 
 							return this;
 
@@ -3702,14 +3460,14 @@
 					case 'hsl':
 					case 'hsla':
 
-						if ( color = /^([0-9]*\.?[0-9]+)\s*,\s*(\d+)\%\s*,\s*(\d+)\%\s*(,\s*([0-9]*\.?[0-9]+)\s*)?$/.exec( components ) ) {
+						if ( color = /^\s*(\d*\.?\d+)\s*,\s*(\d+)\%\s*,\s*(\d+)\%\s*(?:,\s*(\d*\.?\d+)\s*)?$/.exec( components ) ) {
 
 							// hsl(120,50%,50%) hsla(120,50%,50%,0.5)
-							var h = parseFloat( color[ 1 ] ) / 360;
-							var s = parseInt( color[ 2 ], 10 ) / 100;
-							var l = parseInt( color[ 3 ], 10 ) / 100;
+							const h = parseFloat( color[ 1 ] ) / 360;
+							const s = parseInt( color[ 2 ], 10 ) / 100;
+							const l = parseInt( color[ 3 ], 10 ) / 100;
 
-							handleAlpha( color[ 5 ] );
+							handleAlpha( color[ 4 ] );
 
 							return this.setHSL( h, s, l );
 
@@ -3719,12 +3477,12 @@
 
 				}
 
-			} else if ( m = /^\#([A-Fa-f0-9]+)$/.exec( style ) ) {
+			} else if ( m = /^\#([A-Fa-f\d]+)$/.exec( style ) ) {
 
 				// hex color
 
-				var hex = m[ 1 ];
-				var size = hex.length;
+				const hex = m[ 1 ];
+				const size = hex.length;
 
 				if ( size === 3 ) {
 
@@ -3756,12 +3514,12 @@
 
 			return this;
 
-		},
+		}
 
-		setColorName: function ( style ) {
+		setColorName( style ) {
 
 			// color keywords
-			var hex = _colorKeywords[ style ];
+			const hex = _colorKeywords[ style.toLowerCase() ];
 
 			if ( hex !== undefined ) {
 
@@ -3777,15 +3535,15 @@
 
 			return this;
 
-		},
+		}
 
-		clone: function () {
+		clone() {
 
 			return new this.constructor( this.r, this.g, this.b );
 
-		},
+		}
 
-		copy: function ( color ) {
+		copy( color ) {
 
 			this.r = color.r;
 			this.g = color.g;
@@ -3793,11 +3551,9 @@
 
 			return this;
 
-		},
+		}
 
-		copyGammaToLinear: function ( color, gammaFactor ) {
-
-			if ( gammaFactor === undefined ) gammaFactor = 2.0;
+		copyGammaToLinear( color, gammaFactor = 2.0 ) {
 
 			this.r = Math.pow( color.r, gammaFactor );
 			this.g = Math.pow( color.g, gammaFactor );
@@ -3805,13 +3561,11 @@
 
 			return this;
 
-		},
+		}
 
-		copyLinearToGamma: function ( color, gammaFactor ) {
+		copyLinearToGamma( color, gammaFactor = 2.0 ) {
 
-			if ( gammaFactor === undefined ) gammaFactor = 2.0;
-
-			var safeInverse = ( gammaFactor > 0 ) ? ( 1.0 / gammaFactor ) : 1.0;
+			const safeInverse = ( gammaFactor > 0 ) ? ( 1.0 / gammaFactor ) : 1.0;
 
 			this.r = Math.pow( color.r, safeInverse );
 			this.g = Math.pow( color.g, safeInverse );
@@ -3819,25 +3573,25 @@
 
 			return this;
 
-		},
+		}
 
-		convertGammaToLinear: function ( gammaFactor ) {
+		convertGammaToLinear( gammaFactor ) {
 
 			this.copyGammaToLinear( this, gammaFactor );
 
 			return this;
 
-		},
+		}
 
-		convertLinearToGamma: function ( gammaFactor ) {
+		convertLinearToGamma( gammaFactor ) {
 
 			this.copyLinearToGamma( this, gammaFactor );
 
 			return this;
 
-		},
+		}
 
-		copySRGBToLinear: function ( color ) {
+		copySRGBToLinear( color ) {
 
 			this.r = SRGBToLinear( color.r );
 			this.g = SRGBToLinear( color.g );
@@ -3845,9 +3599,9 @@
 
 			return this;
 
-		},
+		}
 
-		copyLinearToSRGB: function ( color ) {
+		copyLinearToSRGB( color ) {
 
 			this.r = LinearToSRGB( color.r );
 			this.g = LinearToSRGB( color.g );
@@ -3855,54 +3609,47 @@
 
 			return this;
 
-		},
+		}
 
-		convertSRGBToLinear: function () {
+		convertSRGBToLinear() {
 
 			this.copySRGBToLinear( this );
 
 			return this;
 
-		},
+		}
 
-		convertLinearToSRGB: function () {
+		convertLinearToSRGB() {
 
 			this.copyLinearToSRGB( this );
 
 			return this;
 
-		},
+		}
 
-		getHex: function () {
+		getHex() {
 
 			return ( this.r * 255 ) << 16 ^ ( this.g * 255 ) << 8 ^ ( this.b * 255 ) << 0;
 
-		},
+		}
 
-		getHexString: function () {
+		getHexString() {
 
 			return ( '000000' + this.getHex().toString( 16 ) ).slice( - 6 );
 
-		},
+		}
 
-		getHSL: function ( target ) {
+		getHSL( target ) {
 
 			// h,s,l ranges are in 0.0 - 1.0
 
-			if ( target === undefined ) {
+			const r = this.r, g = this.g, b = this.b;
 
-				console.warn( 'THREE.Color: .getHSL() target is now required' );
-				target = { h: 0, s: 0, l: 0 };
+			const max = Math.max( r, g, b );
+			const min = Math.min( r, g, b );
 
-			}
-
-			var r = this.r, g = this.g, b = this.b;
-
-			var max = Math.max( r, g, b );
-			var min = Math.min( r, g, b );
-
-			var hue, saturation;
-			var lightness = ( min + max ) / 2.0;
+			let hue, saturation;
+			const lightness = ( min + max ) / 2.0;
 
 			if ( min === max ) {
 
@@ -3911,7 +3658,7 @@
 
 			} else {
 
-				var delta = max - min;
+				const delta = max - min;
 
 				saturation = lightness <= 0.5 ? delta / ( max + min ) : delta / ( 2 - max - min );
 
@@ -3933,15 +3680,15 @@
 
 			return target;
 
-		},
+		}
 
-		getStyle: function () {
+		getStyle() {
 
 			return 'rgb(' + ( ( this.r * 255 ) | 0 ) + ',' + ( ( this.g * 255 ) | 0 ) + ',' + ( ( this.b * 255 ) | 0 ) + ')';
 
-		},
+		}
 
-		offsetHSL: function ( h, s, l ) {
+		offsetHSL( h, s, l ) {
 
 			this.getHSL( _hslA );
 
@@ -3951,9 +3698,9 @@
 
 			return this;
 
-		},
+		}
 
-		add: function ( color ) {
+		add( color ) {
 
 			this.r += color.r;
 			this.g += color.g;
@@ -3961,9 +3708,9 @@
 
 			return this;
 
-		},
+		}
 
-		addColors: function ( color1, color2 ) {
+		addColors( color1, color2 ) {
 
 			this.r = color1.r + color2.r;
 			this.g = color1.g + color2.g;
@@ -3971,9 +3718,9 @@
 
 			return this;
 
-		},
+		}
 
-		addScalar: function ( s ) {
+		addScalar( s ) {
 
 			this.r += s;
 			this.g += s;
@@ -3981,9 +3728,9 @@
 
 			return this;
 
-		},
+		}
 
-		sub: function ( color ) {
+		sub( color ) {
 
 			this.r = Math.max( 0, this.r - color.r );
 			this.g = Math.max( 0, this.g - color.g );
@@ -3991,9 +3738,9 @@
 
 			return this;
 
-		},
+		}
 
-		multiply: function ( color ) {
+		multiply( color ) {
 
 			this.r *= color.r;
 			this.g *= color.g;
@@ -4001,9 +3748,9 @@
 
 			return this;
 
-		},
+		}
 
-		multiplyScalar: function ( s ) {
+		multiplyScalar( s ) {
 
 			this.r *= s;
 			this.g *= s;
@@ -4011,9 +3758,9 @@
 
 			return this;
 
-		},
+		}
 
-		lerp: function ( color, alpha ) {
+		lerp( color, alpha ) {
 
 			this.r += ( color.r - this.r ) * alpha;
 			this.g += ( color.g - this.g ) * alpha;
@@ -4021,32 +3768,40 @@
 
 			return this;
 
-		},
+		}
 
-		lerpHSL: function ( color, alpha ) {
+		lerpColors( color1, color2, alpha ) {
+
+			this.r = color1.r + ( color2.r - color1.r ) * alpha;
+			this.g = color1.g + ( color2.g - color1.g ) * alpha;
+			this.b = color1.b + ( color2.b - color1.b ) * alpha;
+
+			return this;
+
+		}
+
+		lerpHSL( color, alpha ) {
 
 			this.getHSL( _hslA );
 			color.getHSL( _hslB );
 
-			var h = MathUtils.lerp( _hslA.h, _hslB.h, alpha );
-			var s = MathUtils.lerp( _hslA.s, _hslB.s, alpha );
-			var l = MathUtils.lerp( _hslA.l, _hslB.l, alpha );
+			const h = lerp( _hslA.h, _hslB.h, alpha );
+			const s = lerp( _hslA.s, _hslB.s, alpha );
+			const l = lerp( _hslA.l, _hslB.l, alpha );
 
 			this.setHSL( h, s, l );
 
 			return this;
 
-		},
+		}
 
-		equals: function ( c ) {
+		equals( c ) {
 
 			return ( c.r === this.r ) && ( c.g === this.g ) && ( c.b === this.b );
 
-		},
+		}
 
-		fromArray: function ( array, offset ) {
-
-			if ( offset === undefined ) offset = 0;
+		fromArray( array, offset = 0 ) {
 
 			this.r = array[ offset ];
 			this.g = array[ offset + 1 ];
@@ -4054,12 +3809,9 @@
 
 			return this;
 
-		},
+		}
 
-		toArray: function ( array, offset ) {
-
-			if ( array === undefined ) array = [];
-			if ( offset === undefined ) offset = 0;
+		toArray( array = [], offset = 0 ) {
 
 			array[ offset ] = this.r;
 			array[ offset + 1 ] = this.g;
@@ -4067,73 +3819,89 @@
 
 			return array;
 
-		},
+		}
 
-		toJSON: function () {
+		fromBufferAttribute( attribute, index ) {
+
+			this.r = attribute.getX( index );
+			this.g = attribute.getY( index );
+			this.b = attribute.getZ( index );
+
+			if ( attribute.normalized === true ) {
+
+				// assuming Uint8Array
+
+				this.r /= 255;
+				this.g /= 255;
+				this.b /= 255;
+
+			}
+
+			return this;
+
+		}
+
+		toJSON() {
 
 			return this.getHex();
 
 		}
 
-	} );
+	}
 
 	Color.NAMES = _colorKeywords;
 
-	var StaticDrawUsage = 35044;
+	Color.prototype.isColor = true;
+	Color.prototype.r = 1;
+	Color.prototype.g = 1;
+	Color.prototype.b = 1;
 
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 */
+	const StaticDrawUsage = 35044;
 
-	var _vector$2 = new Vector3();
+	const _vector$2 = /*@__PURE__*/ new Vector3();
+	const _vector2 = /*@__PURE__*/ new Vector2();
 
-	function BufferAttribute( array, itemSize, normalized ) {
+	class BufferAttribute {
 
-		if ( Array.isArray( array ) ) {
+		constructor( array, itemSize, normalized ) {
 
-			throw new TypeError( 'THREE.BufferAttribute: array should be a Typed Array.' );
+			if ( Array.isArray( array ) ) {
+
+				throw new TypeError( 'THREE.BufferAttribute: array should be a Typed Array.' );
+
+			}
+
+			this.name = '';
+
+			this.array = array;
+			this.itemSize = itemSize;
+			this.count = array !== undefined ? array.length / itemSize : 0;
+			this.normalized = normalized === true;
+
+			this.usage = StaticDrawUsage;
+			this.updateRange = { offset: 0, count: - 1 };
+
+			this.version = 0;
 
 		}
 
-		this.name = '';
+		onUploadCallback() {}
 
-		this.array = array;
-		this.itemSize = itemSize;
-		this.count = array !== undefined ? array.length / itemSize : 0;
-		this.normalized = normalized === true;
-
-		this.usage = StaticDrawUsage;
-		this.updateRange = { offset: 0, count: - 1 };
-
-		this.version = 0;
-
-	}
-
-	Object.defineProperty( BufferAttribute.prototype, 'needsUpdate', {
-
-		set: function ( value ) {
+		set needsUpdate( value ) {
 
 			if ( value === true ) this.version ++;
 
 		}
 
-	} );
-
-	Object.assign( BufferAttribute.prototype, {
-
-		isBufferAttribute: true,
-
-		onUploadCallback: function () {},
-
-		setUsage: function ( value ) {
+		setUsage( value ) {
 
 			this.usage = value;
 
 			return this;
 
-		},
+		}
 
-		copy: function ( source ) {
+		copy( source ) {
 
 			this.name = source.name;
 			this.array = new source.array.constructor( source.array );
@@ -4145,14 +3913,14 @@
 
 			return this;
 
-		},
+		}
 
-		copyAt: function ( index1, attribute, index2 ) {
+		copyAt( index1, attribute, index2 ) {
 
 			index1 *= this.itemSize;
 			index2 *= attribute.itemSize;
 
-			for ( var i = 0, l = this.itemSize; i < l; i ++ ) {
+			for ( let i = 0, l = this.itemSize; i < l; i ++ ) {
 
 				this.array[ index1 + i ] = attribute.array[ index2 + i ];
 
@@ -4160,23 +3928,24 @@
 
 			return this;
 
-		},
+		}
 
-		copyArray: function ( array ) {
+		copyArray( array ) {
 
 			this.array.set( array );
 
 			return this;
 
-		},
+		}
 
-		copyColorsArray: function ( colors ) {
+		copyColorsArray( colors ) {
 
-			var array = this.array, offset = 0;
+			const array = this.array;
+			let offset = 0;
 
-			for ( var i = 0, l = colors.length; i < l; i ++ ) {
+			for ( let i = 0, l = colors.length; i < l; i ++ ) {
 
-				var color = colors[ i ];
+				let color = colors[ i ];
 
 				if ( color === undefined ) {
 
@@ -4193,15 +3962,16 @@
 
 			return this;
 
-		},
+		}
 
-		copyVector2sArray: function ( vectors ) {
+		copyVector2sArray( vectors ) {
 
-			var array = this.array, offset = 0;
+			const array = this.array;
+			let offset = 0;
 
-			for ( var i = 0, l = vectors.length; i < l; i ++ ) {
+			for ( let i = 0, l = vectors.length; i < l; i ++ ) {
 
-				var vector = vectors[ i ];
+				let vector = vectors[ i ];
 
 				if ( vector === undefined ) {
 
@@ -4217,15 +3987,16 @@
 
 			return this;
 
-		},
+		}
 
-		copyVector3sArray: function ( vectors ) {
+		copyVector3sArray( vectors ) {
 
-			var array = this.array, offset = 0;
+			const array = this.array;
+			let offset = 0;
 
-			for ( var i = 0, l = vectors.length; i < l; i ++ ) {
+			for ( let i = 0, l = vectors.length; i < l; i ++ ) {
 
-				var vector = vectors[ i ];
+				let vector = vectors[ i ];
 
 				if ( vector === undefined ) {
 
@@ -4242,15 +4013,16 @@
 
 			return this;
 
-		},
+		}
 
-		copyVector4sArray: function ( vectors ) {
+		copyVector4sArray( vectors ) {
 
-			var array = this.array, offset = 0;
+			const array = this.array;
+			let offset = 0;
 
-			for ( var i = 0, l = vectors.length; i < l; i ++ ) {
+			for ( let i = 0, l = vectors.length; i < l; i ++ ) {
 
-				var vector = vectors[ i ];
+				let vector = vectors[ i ];
 
 				if ( vector === undefined ) {
 
@@ -4268,29 +4040,41 @@
 
 			return this;
 
-		},
+		}
 
-		applyMatrix3: function ( m ) {
+		applyMatrix3( m ) {
 
-			for ( var i = 0, l = this.count; i < l; i ++ ) {
+			if ( this.itemSize === 2 ) {
 
-				_vector$2.x = this.getX( i );
-				_vector$2.y = this.getY( i );
-				_vector$2.z = this.getZ( i );
+				for ( let i = 0, l = this.count; i < l; i ++ ) {
 
-				_vector$2.applyMatrix3( m );
+					_vector2.fromBufferAttribute( this, i );
+					_vector2.applyMatrix3( m );
 
-				this.setXYZ( i, _vector$2.x, _vector$2.y, _vector$2.z );
+					this.setXY( i, _vector2.x, _vector2.y );
+
+				}
+
+			} else if ( this.itemSize === 3 ) {
+
+				for ( let i = 0, l = this.count; i < l; i ++ ) {
+
+					_vector$2.fromBufferAttribute( this, i );
+					_vector$2.applyMatrix3( m );
+
+					this.setXYZ( i, _vector$2.x, _vector$2.y, _vector$2.z );
+
+				}
 
 			}
 
 			return this;
 
-		},
+		}
 
-		applyMatrix4: function ( m ) {
+		applyMatrix4( m ) {
 
-			for ( var i = 0, l = this.count; i < l; i ++ ) {
+			for ( let i = 0, l = this.count; i < l; i ++ ) {
 
 				_vector$2.x = this.getX( i );
 				_vector$2.y = this.getY( i );
@@ -4304,11 +4088,11 @@
 
 			return this;
 
-		},
+		}
 
-		applyNormalMatrix: function ( m ) {
+		applyNormalMatrix( m ) {
 
-			for ( var i = 0, l = this.count; i < l; i ++ ) {
+			for ( let i = 0, l = this.count; i < l; i ++ ) {
 
 				_vector$2.x = this.getX( i );
 				_vector$2.y = this.getY( i );
@@ -4322,11 +4106,11 @@
 
 			return this;
 
-		},
+		}
 
-		transformDirection: function ( m ) {
+		transformDirection( m ) {
 
-			for ( var i = 0, l = this.count; i < l; i ++ ) {
+			for ( let i = 0, l = this.count; i < l; i ++ ) {
 
 				_vector$2.x = this.getX( i );
 				_vector$2.y = this.getY( i );
@@ -4340,75 +4124,73 @@
 
 			return this;
 
-		},
+		}
 
-		set: function ( value, offset ) {
-
-			if ( offset === undefined ) offset = 0;
+		set( value, offset = 0 ) {
 
 			this.array.set( value, offset );
 
 			return this;
 
-		},
+		}
 
-		getX: function ( index ) {
+		getX( index ) {
 
 			return this.array[ index * this.itemSize ];
 
-		},
+		}
 
-		setX: function ( index, x ) {
+		setX( index, x ) {
 
 			this.array[ index * this.itemSize ] = x;
 
 			return this;
 
-		},
+		}
 
-		getY: function ( index ) {
+		getY( index ) {
 
 			return this.array[ index * this.itemSize + 1 ];
 
-		},
+		}
 
-		setY: function ( index, y ) {
+		setY( index, y ) {
 
 			this.array[ index * this.itemSize + 1 ] = y;
 
 			return this;
 
-		},
+		}
 
-		getZ: function ( index ) {
+		getZ( index ) {
 
 			return this.array[ index * this.itemSize + 2 ];
 
-		},
+		}
 
-		setZ: function ( index, z ) {
+		setZ( index, z ) {
 
 			this.array[ index * this.itemSize + 2 ] = z;
 
 			return this;
 
-		},
+		}
 
-		getW: function ( index ) {
+		getW( index ) {
 
 			return this.array[ index * this.itemSize + 3 ];
 
-		},
+		}
 
-		setW: function ( index, w ) {
+		setW( index, w ) {
 
 			this.array[ index * this.itemSize + 3 ] = w;
 
 			return this;
 
-		},
+		}
 
-		setXY: function ( index, x, y ) {
+		setXY( index, x, y ) {
 
 			index *= this.itemSize;
 
@@ -4417,9 +4199,9 @@
 
 			return this;
 
-		},
+		}
 
-		setXYZ: function ( index, x, y, z ) {
+		setXYZ( index, x, y, z ) {
 
 			index *= this.itemSize;
 
@@ -4429,9 +4211,9 @@
 
 			return this;
 
-		},
+		}
 
-		setXYZW: function ( index, x, y, z, w ) {
+		setXYZW( index, x, y, z, w ) {
 
 			index *= this.itemSize;
 
@@ -4442,154 +4224,111 @@
 
 			return this;
 
-		},
+		}
 
-		onUpload: function ( callback ) {
+		onUpload( callback ) {
 
 			this.onUploadCallback = callback;
 
 			return this;
 
-		},
+		}
 
-		clone: function () {
+		clone() {
 
 			return new this.constructor( this.array, this.itemSize ).copy( this );
 
-		},
+		}
 
-		toJSON: function () {
+		toJSON() {
 
-			return {
+			const data = {
 				itemSize: this.itemSize,
 				type: this.array.constructor.name,
 				array: Array.prototype.slice.call( this.array ),
 				normalized: this.normalized
 			};
 
+			if ( this.name !== '' ) data.name = this.name;
+			if ( this.usage !== StaticDrawUsage ) data.usage = this.usage;
+			if ( this.updateRange.offset !== 0 || this.updateRange.count !== - 1 ) data.updateRange = this.updateRange;
+
+			return data;
+
 		}
 
-	} );
+	}
 
-	//
+	BufferAttribute.prototype.isBufferAttribute = true;
 
-	function Int8BufferAttribute( array, itemSize, normalized ) {
+	class Uint16BufferAttribute extends BufferAttribute {
 
-		BufferAttribute.call( this, new Int8Array( array ), itemSize, normalized );
+		constructor( array, itemSize, normalized ) {
+
+			super( new Uint16Array( array ), itemSize, normalized );
+
+		}
 
 	}
 
-	Int8BufferAttribute.prototype = Object.create( BufferAttribute.prototype );
-	Int8BufferAttribute.prototype.constructor = Int8BufferAttribute;
+	class Uint32BufferAttribute extends BufferAttribute {
 
+		constructor( array, itemSize, normalized ) {
 
-	function Uint8BufferAttribute( array, itemSize, normalized ) {
+			super( new Uint32Array( array ), itemSize, normalized );
 
-		BufferAttribute.call( this, new Uint8Array( array ), itemSize, normalized );
-
-	}
-
-	Uint8BufferAttribute.prototype = Object.create( BufferAttribute.prototype );
-	Uint8BufferAttribute.prototype.constructor = Uint8BufferAttribute;
-
-
-	function Uint8ClampedBufferAttribute( array, itemSize, normalized ) {
-
-		BufferAttribute.call( this, new Uint8ClampedArray( array ), itemSize, normalized );
+		}
 
 	}
 
-	Uint8ClampedBufferAttribute.prototype = Object.create( BufferAttribute.prototype );
-	Uint8ClampedBufferAttribute.prototype.constructor = Uint8ClampedBufferAttribute;
+	class Float16BufferAttribute extends BufferAttribute {
 
+		constructor( array, itemSize, normalized ) {
 
-	function Int16BufferAttribute( array, itemSize, normalized ) {
+			super( new Uint16Array( array ), itemSize, normalized );
 
-		BufferAttribute.call( this, new Int16Array( array ), itemSize, normalized );
-
-	}
-
-	Int16BufferAttribute.prototype = Object.create( BufferAttribute.prototype );
-	Int16BufferAttribute.prototype.constructor = Int16BufferAttribute;
-
-
-	function Uint16BufferAttribute( array, itemSize, normalized ) {
-
-		BufferAttribute.call( this, new Uint16Array( array ), itemSize, normalized );
+		}
 
 	}
 
-	Uint16BufferAttribute.prototype = Object.create( BufferAttribute.prototype );
-	Uint16BufferAttribute.prototype.constructor = Uint16BufferAttribute;
+	Float16BufferAttribute.prototype.isFloat16BufferAttribute = true;
 
+	class Float32BufferAttribute extends BufferAttribute {
 
-	function Int32BufferAttribute( array, itemSize, normalized ) {
+		constructor( array, itemSize, normalized ) {
 
-		BufferAttribute.call( this, new Int32Array( array ), itemSize, normalized );
+			super( new Float32Array( array ), itemSize, normalized );
 
-	}
-
-	Int32BufferAttribute.prototype = Object.create( BufferAttribute.prototype );
-	Int32BufferAttribute.prototype.constructor = Int32BufferAttribute;
-
-
-	function Uint32BufferAttribute( array, itemSize, normalized ) {
-
-		BufferAttribute.call( this, new Uint32Array( array ), itemSize, normalized );
+		}
 
 	}
 
-	Uint32BufferAttribute.prototype = Object.create( BufferAttribute.prototype );
-	Uint32BufferAttribute.prototype.constructor = Uint32BufferAttribute;
+	const _box$1 = /*@__PURE__*/ new Box3();
+	const _v1$2 = /*@__PURE__*/ new Vector3();
+	const _toFarthestPoint = /*@__PURE__*/ new Vector3();
+	const _toPoint = /*@__PURE__*/ new Vector3();
 
+	class Sphere {
 
-	function Float32BufferAttribute( array, itemSize, normalized ) {
+		constructor( center = new Vector3(), radius = - 1 ) {
 
-		BufferAttribute.call( this, new Float32Array( array ), itemSize, normalized );
+			this.center = center;
+			this.radius = radius;
 
-	}
+		}
 
-	Float32BufferAttribute.prototype = Object.create( BufferAttribute.prototype );
-	Float32BufferAttribute.prototype.constructor = Float32BufferAttribute;
-
-
-	function Float64BufferAttribute( array, itemSize, normalized ) {
-
-		BufferAttribute.call( this, new Float64Array( array ), itemSize, normalized );
-
-	}
-
-	Float64BufferAttribute.prototype = Object.create( BufferAttribute.prototype );
-	Float64BufferAttribute.prototype.constructor = Float64BufferAttribute;
-
-	var _box$1 = new Box3();
-
-	/**
-	 * @author bhouston / http://clara.io
-	 * @author mrdoob / http://mrdoob.com/
-	 */
-
-	function Sphere( center, radius ) {
-
-		this.center = ( center !== undefined ) ? center : new Vector3();
-		this.radius = ( radius !== undefined ) ? radius : 0;
-
-	}
-
-	Object.assign( Sphere.prototype, {
-
-		set: function ( center, radius ) {
+		set( center, radius ) {
 
 			this.center.copy( center );
 			this.radius = radius;
 
 			return this;
 
-		},
+		}
 
-		setFromPoints: function ( points, optionalCenter ) {
+		setFromPoints( points, optionalCenter ) {
 
-			var center = this.center;
+			const center = this.center;
 
 			if ( optionalCenter !== undefined ) {
 
@@ -4601,9 +4340,9 @@
 
 			}
 
-			var maxRadiusSq = 0;
+			let maxRadiusSq = 0;
 
-			for ( var i = 0, il = points.length; i < il; i ++ ) {
+			for ( let i = 0, il = points.length; i < il; i ++ ) {
 
 				maxRadiusSq = Math.max( maxRadiusSq, center.distanceToSquared( points[ i ] ) );
 
@@ -4613,71 +4352,67 @@
 
 			return this;
 
-		},
+		}
 
-		clone: function () {
-
-			return new this.constructor().copy( this );
-
-		},
-
-		copy: function ( sphere ) {
+		copy( sphere ) {
 
 			this.center.copy( sphere.center );
 			this.radius = sphere.radius;
 
 			return this;
 
-		},
+		}
 
-		empty: function () {
+		isEmpty() {
 
-			return ( this.radius <= 0 );
+			return ( this.radius < 0 );
 
-		},
+		}
 
-		containsPoint: function ( point ) {
+		makeEmpty() {
+
+			this.center.set( 0, 0, 0 );
+			this.radius = - 1;
+
+			return this;
+
+		}
+
+		containsPoint( point ) {
 
 			return ( point.distanceToSquared( this.center ) <= ( this.radius * this.radius ) );
 
-		},
+		}
 
-		distanceToPoint: function ( point ) {
+		distanceToPoint( point ) {
 
 			return ( point.distanceTo( this.center ) - this.radius );
 
-		},
+		}
 
-		intersectsSphere: function ( sphere ) {
+		intersectsSphere( sphere ) {
 
-			var radiusSum = this.radius + sphere.radius;
+			const radiusSum = this.radius + sphere.radius;
 
 			return sphere.center.distanceToSquared( this.center ) <= ( radiusSum * radiusSum );
 
-		},
+		}
 
-		intersectsBox: function ( box ) {
+		intersectsBox( box ) {
 
 			return box.intersectsSphere( this );
 
-		},
+		}
 
-		intersectsPlane: function ( plane ) {
+		intersectsPlane( plane ) {
 
 			return Math.abs( plane.distanceToPoint( this.center ) ) <= this.radius;
 
-		},
+		}
 
-		clampPoint: function ( point, target ) {
+		clampPoint( point, target ) {
 
-			var deltaLengthSq = this.center.distanceToSquared( point );
-
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Sphere: .clampPoint() target is now required' );
-				target = new Vector3();
-
-			}
+			const deltaLengthSq = this.center.distanceToSquared( point );
 
 			target.copy( point );
 
@@ -4690,14 +4425,15 @@
 
 			return target;
 
-		},
+		}
 
-		getBoundingBox: function ( target ) {
+		getBoundingBox( target ) {
 
-			if ( target === undefined ) {
+			if ( this.isEmpty() ) {
 
-				console.warn( 'THREE.Sphere: .getBoundingBox() target is now required' );
-				target = new Box3();
+				// Empty sphere produces empty bounding box
+				target.makeEmpty();
+				return target;
 
 			}
 
@@ -4706,306 +4442,44 @@
 
 			return target;
 
-		},
+		}
 
-		applyMatrix4: function ( matrix ) {
+		applyMatrix4( matrix ) {
 
 			this.center.applyMatrix4( matrix );
 			this.radius = this.radius * matrix.getMaxScaleOnAxis();
 
 			return this;
 
-		},
+		}
 
-		translate: function ( offset ) {
+		translate( offset ) {
 
 			this.center.add( offset );
 
 			return this;
 
-		},
-
-		equals: function ( sphere ) {
-
-			return sphere.center.equals( this.center ) && ( sphere.radius === this.radius );
-
 		}
 
-	} );
+		expandByPoint( point ) {
 
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 */
+			// from https://github.com/juj/MathGeoLib/blob/2940b99b99cfe575dd45103ef20f4019dee15b54/src/Geometry/Sphere.cpp#L649-L671
 
-	function DirectGeometry() {
+			_toPoint.subVectors( point, this.center );
 
-		this.vertices = [];
-		this.normals = [];
-		this.colors = [];
-		this.uvs = [];
-		this.uvs2 = [];
+			const lengthSq = _toPoint.lengthSq();
 
-		this.groups = [];
+			if ( lengthSq > ( this.radius * this.radius ) ) {
 
-		this.morphTargets = {};
+				const length = Math.sqrt( lengthSq );
+				const missingRadiusHalf = ( length - this.radius ) * 0.5;
 
-		this.skinWeights = [];
-		this.skinIndices = [];
+				// Nudge this sphere towards the target point. Add half the missing distance to radius,
+				// and the other half to position. This gives a tighter enclosure, instead of if
+				// the whole missing distance were just added to radius.
 
-		// this.lineDistances = [];
-
-		this.boundingBox = null;
-		this.boundingSphere = null;
-
-		// update flags
-
-		this.verticesNeedUpdate = false;
-		this.normalsNeedUpdate = false;
-		this.colorsNeedUpdate = false;
-		this.uvsNeedUpdate = false;
-		this.groupsNeedUpdate = false;
-
-	}
-
-	Object.assign( DirectGeometry.prototype, {
-
-		computeGroups: function ( geometry ) {
-
-			var group;
-			var groups = [];
-			var materialIndex = undefined;
-
-			var faces = geometry.faces;
-
-			for ( var i = 0; i < faces.length; i ++ ) {
-
-				var face = faces[ i ];
-
-				// materials
-
-				if ( face.materialIndex !== materialIndex ) {
-
-					materialIndex = face.materialIndex;
-
-					if ( group !== undefined ) {
-
-						group.count = ( i * 3 ) - group.start;
-						groups.push( group );
-
-					}
-
-					group = {
-						start: i * 3,
-						materialIndex: materialIndex
-					};
-
-				}
-
-			}
-
-			if ( group !== undefined ) {
-
-				group.count = ( i * 3 ) - group.start;
-				groups.push( group );
-
-			}
-
-			this.groups = groups;
-
-		},
-
-		fromGeometry: function ( geometry ) {
-
-			var faces = geometry.faces;
-			var vertices = geometry.vertices;
-			var faceVertexUvs = geometry.faceVertexUvs;
-
-			var hasFaceVertexUv = faceVertexUvs[ 0 ] && faceVertexUvs[ 0 ].length > 0;
-			var hasFaceVertexUv2 = faceVertexUvs[ 1 ] && faceVertexUvs[ 1 ].length > 0;
-
-			// morphs
-
-			var morphTargets = geometry.morphTargets;
-			var morphTargetsLength = morphTargets.length;
-
-			var morphTargetsPosition;
-
-			if ( morphTargetsLength > 0 ) {
-
-				morphTargetsPosition = [];
-
-				for ( var i = 0; i < morphTargetsLength; i ++ ) {
-
-					morphTargetsPosition[ i ] = {
-						name: morphTargets[ i ].name,
-					 	data: []
-					};
-
-				}
-
-				this.morphTargets.position = morphTargetsPosition;
-
-			}
-
-			var morphNormals = geometry.morphNormals;
-			var morphNormalsLength = morphNormals.length;
-
-			var morphTargetsNormal;
-
-			if ( morphNormalsLength > 0 ) {
-
-				morphTargetsNormal = [];
-
-				for ( var i = 0; i < morphNormalsLength; i ++ ) {
-
-					morphTargetsNormal[ i ] = {
-						name: morphNormals[ i ].name,
-					 	data: []
-					};
-
-				}
-
-				this.morphTargets.normal = morphTargetsNormal;
-
-			}
-
-			// skins
-
-			var skinIndices = geometry.skinIndices;
-			var skinWeights = geometry.skinWeights;
-
-			var hasSkinIndices = skinIndices.length === vertices.length;
-			var hasSkinWeights = skinWeights.length === vertices.length;
-
-			//
-
-			if ( vertices.length > 0 && faces.length === 0 ) {
-
-				console.error( 'THREE.DirectGeometry: Faceless geometries are not supported.' );
-
-			}
-
-			for ( var i = 0; i < faces.length; i ++ ) {
-
-				var face = faces[ i ];
-
-				this.vertices.push( vertices[ face.a ], vertices[ face.b ], vertices[ face.c ] );
-
-				var vertexNormals = face.vertexNormals;
-
-				if ( vertexNormals.length === 3 ) {
-
-					this.normals.push( vertexNormals[ 0 ], vertexNormals[ 1 ], vertexNormals[ 2 ] );
-
-				} else {
-
-					var normal = face.normal;
-
-					this.normals.push( normal, normal, normal );
-
-				}
-
-				var vertexColors = face.vertexColors;
-
-				if ( vertexColors.length === 3 ) {
-
-					this.colors.push( vertexColors[ 0 ], vertexColors[ 1 ], vertexColors[ 2 ] );
-
-				} else {
-
-					var color = face.color;
-
-					this.colors.push( color, color, color );
-
-				}
-
-				if ( hasFaceVertexUv === true ) {
-
-					var vertexUvs = faceVertexUvs[ 0 ][ i ];
-
-					if ( vertexUvs !== undefined ) {
-
-						this.uvs.push( vertexUvs[ 0 ], vertexUvs[ 1 ], vertexUvs[ 2 ] );
-
-					} else {
-
-						console.warn( 'THREE.DirectGeometry.fromGeometry(): Undefined vertexUv ', i );
-
-						this.uvs.push( new Vector2(), new Vector2(), new Vector2() );
-
-					}
-
-				}
-
-				if ( hasFaceVertexUv2 === true ) {
-
-					var vertexUvs = faceVertexUvs[ 1 ][ i ];
-
-					if ( vertexUvs !== undefined ) {
-
-						this.uvs2.push( vertexUvs[ 0 ], vertexUvs[ 1 ], vertexUvs[ 2 ] );
-
-					} else {
-
-						console.warn( 'THREE.DirectGeometry.fromGeometry(): Undefined vertexUv2 ', i );
-
-						this.uvs2.push( new Vector2(), new Vector2(), new Vector2() );
-
-					}
-
-				}
-
-				// morphs
-
-				for ( var j = 0; j < morphTargetsLength; j ++ ) {
-
-					var morphTarget = morphTargets[ j ].vertices;
-
-					morphTargetsPosition[ j ].data.push( morphTarget[ face.a ], morphTarget[ face.b ], morphTarget[ face.c ] );
-
-				}
-
-				for ( var j = 0; j < morphNormalsLength; j ++ ) {
-
-					var morphNormal = morphNormals[ j ].vertexNormals[ i ];
-
-					morphTargetsNormal[ j ].data.push( morphNormal.a, morphNormal.b, morphNormal.c );
-
-				}
-
-				// skins
-
-				if ( hasSkinIndices ) {
-
-					this.skinIndices.push( skinIndices[ face.a ], skinIndices[ face.b ], skinIndices[ face.c ] );
-
-				}
-
-				if ( hasSkinWeights ) {
-
-					this.skinWeights.push( skinWeights[ face.a ], skinWeights[ face.b ], skinWeights[ face.c ] );
-
-				}
-
-			}
-
-			this.computeGroups( geometry );
-
-			this.verticesNeedUpdate = geometry.verticesNeedUpdate;
-			this.normalsNeedUpdate = geometry.normalsNeedUpdate;
-			this.colorsNeedUpdate = geometry.colorsNeedUpdate;
-			this.uvsNeedUpdate = geometry.uvsNeedUpdate;
-			this.groupsNeedUpdate = geometry.groupsNeedUpdate;
-
-			if ( geometry.boundingSphere !== null ) {
-
-				this.boundingSphere = geometry.boundingSphere.clone();
-
-			}
-
-			if ( geometry.boundingBox !== null ) {
-
-				this.boundingBox = geometry.boundingBox.clone();
+				this.center.add( _toPoint.multiplyScalar( missingRadiusHalf / length ) );
+				this.radius += missingRadiusHalf;
 
 			}
 
@@ -5013,55 +4487,61 @@
 
 		}
 
-	} );
+		union( sphere ) {
 
-	var _v1$1 = new Vector3();
-	var _m1 = new Matrix4();
-	var _zero = new Vector3( 0, 0, 0 );
-	var _one = new Vector3( 1, 1, 1 );
-	var _x = new Vector3();
-	var _y = new Vector3();
-	var _z = new Vector3();
+			// from https://github.com/juj/MathGeoLib/blob/2940b99b99cfe575dd45103ef20f4019dee15b54/src/Geometry/Sphere.cpp#L759-L769
 
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author supereggbert / http://www.paulbrunt.co.uk/
-	 * @author philogb / http://blog.thejit.org/
-	 * @author jordi_ros / http://plattsoft.com
-	 * @author D1plo1d / http://github.com/D1plo1d
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author timknip / http://www.floorplanner.com/
-	 * @author bhouston / http://clara.io
-	 * @author WestLangley / http://github.com/WestLangley
-	 */
+			// To enclose another sphere into this sphere, we only need to enclose two points:
+			// 1) Enclose the farthest point on the other sphere into this sphere.
+			// 2) Enclose the opposite point of the farthest point into this sphere.
 
-	function Matrix4() {
+			_toFarthestPoint.subVectors( sphere.center, this.center ).normalize().multiplyScalar( sphere.radius );
 
-		this.elements = [
+			this.expandByPoint( _v1$2.copy( sphere.center ).add( _toFarthestPoint ) );
+			this.expandByPoint( _v1$2.copy( sphere.center ).sub( _toFarthestPoint ) );
 
-			1, 0, 0, 0,
-			0, 1, 0, 0,
-			0, 0, 1, 0,
-			0, 0, 0, 1
+			return this;
 
-		];
+		}
 
-		if ( arguments.length > 0 ) {
+		equals( sphere ) {
 
-			console.error( 'THREE.Matrix4: the constructor no longer reads arguments. use .set() instead.' );
+			return sphere.center.equals( this.center ) && ( sphere.radius === this.radius );
+
+		}
+
+		clone() {
+
+			return new this.constructor().copy( this );
 
 		}
 
 	}
 
-	Object.assign( Matrix4.prototype, {
+	class Matrix4 {
 
-		isMatrix4: true,
+		constructor() {
 
-		set: function ( n11, n12, n13, n14, n21, n22, n23, n24, n31, n32, n33, n34, n41, n42, n43, n44 ) {
+			this.elements = [
 
-			var te = this.elements;
+				1, 0, 0, 0,
+				0, 1, 0, 0,
+				0, 0, 1, 0,
+				0, 0, 0, 1
+
+			];
+
+			if ( arguments.length > 0 ) {
+
+				console.error( 'THREE.Matrix4: the constructor no longer reads arguments. use .set() instead.' );
+
+			}
+
+		}
+
+		set( n11, n12, n13, n14, n21, n22, n23, n24, n31, n32, n33, n34, n41, n42, n43, n44 ) {
+
+			const te = this.elements;
 
 			te[ 0 ] = n11; te[ 4 ] = n12; te[ 8 ] = n13; te[ 12 ] = n14;
 			te[ 1 ] = n21; te[ 5 ] = n22; te[ 9 ] = n23; te[ 13 ] = n24;
@@ -5070,9 +4550,9 @@
 
 			return this;
 
-		},
+		}
 
-		identity: function () {
+		identity() {
 
 			this.set(
 
@@ -5085,18 +4565,18 @@
 
 			return this;
 
-		},
+		}
 
-		clone: function () {
+		clone() {
 
 			return new Matrix4().fromArray( this.elements );
 
-		},
+		}
 
-		copy: function ( m ) {
+		copy( m ) {
 
-			var te = this.elements;
-			var me = m.elements;
+			const te = this.elements;
+			const me = m.elements;
 
 			te[ 0 ] = me[ 0 ]; te[ 1 ] = me[ 1 ]; te[ 2 ] = me[ 2 ]; te[ 3 ] = me[ 3 ];
 			te[ 4 ] = me[ 4 ]; te[ 5 ] = me[ 5 ]; te[ 6 ] = me[ 6 ]; te[ 7 ] = me[ 7 ];
@@ -5105,11 +4585,11 @@
 
 			return this;
 
-		},
+		}
 
-		copyPosition: function ( m ) {
+		copyPosition( m ) {
 
-			var te = this.elements, me = m.elements;
+			const te = this.elements, me = m.elements;
 
 			te[ 12 ] = me[ 12 ];
 			te[ 13 ] = me[ 13 ];
@@ -5117,9 +4597,26 @@
 
 			return this;
 
-		},
+		}
 
-		extractBasis: function ( xAxis, yAxis, zAxis ) {
+		setFromMatrix3( m ) {
+
+			const me = m.elements;
+
+			this.set(
+
+				me[ 0 ], me[ 3 ], me[ 6 ], 0,
+				me[ 1 ], me[ 4 ], me[ 7 ], 0,
+				me[ 2 ], me[ 5 ], me[ 8 ], 0,
+				0, 0, 0, 1
+
+			);
+
+			return this;
+
+		}
+
+		extractBasis( xAxis, yAxis, zAxis ) {
 
 			xAxis.setFromMatrixColumn( this, 0 );
 			yAxis.setFromMatrixColumn( this, 1 );
@@ -5127,9 +4624,9 @@
 
 			return this;
 
-		},
+		}
 
-		makeBasis: function ( xAxis, yAxis, zAxis ) {
+		makeBasis( xAxis, yAxis, zAxis ) {
 
 			this.set(
 				xAxis.x, yAxis.x, zAxis.x, 0,
@@ -5140,18 +4637,18 @@
 
 			return this;
 
-		},
+		}
 
-		extractRotation: function ( m ) {
+		extractRotation( m ) {
 
 			// this method does not support reflection matrices
 
-			var te = this.elements;
-			var me = m.elements;
+			const te = this.elements;
+			const me = m.elements;
 
-			var scaleX = 1 / _v1$1.setFromMatrixColumn( m, 0 ).length();
-			var scaleY = 1 / _v1$1.setFromMatrixColumn( m, 1 ).length();
-			var scaleZ = 1 / _v1$1.setFromMatrixColumn( m, 2 ).length();
+			const scaleX = 1 / _v1$1.setFromMatrixColumn( m, 0 ).length();
+			const scaleY = 1 / _v1$1.setFromMatrixColumn( m, 1 ).length();
+			const scaleZ = 1 / _v1$1.setFromMatrixColumn( m, 2 ).length();
 
 			te[ 0 ] = me[ 0 ] * scaleX;
 			te[ 1 ] = me[ 1 ] * scaleX;
@@ -5175,9 +4672,9 @@
 
 			return this;
 
-		},
+		}
 
-		makeRotationFromEuler: function ( euler ) {
+		makeRotationFromEuler( euler ) {
 
 			if ( ! ( euler && euler.isEuler ) ) {
 
@@ -5185,16 +4682,16 @@
 
 			}
 
-			var te = this.elements;
+			const te = this.elements;
 
-			var x = euler.x, y = euler.y, z = euler.z;
-			var a = Math.cos( x ), b = Math.sin( x );
-			var c = Math.cos( y ), d = Math.sin( y );
-			var e = Math.cos( z ), f = Math.sin( z );
+			const x = euler.x, y = euler.y, z = euler.z;
+			const a = Math.cos( x ), b = Math.sin( x );
+			const c = Math.cos( y ), d = Math.sin( y );
+			const e = Math.cos( z ), f = Math.sin( z );
 
 			if ( euler.order === 'XYZ' ) {
 
-				var ae = a * e, af = a * f, be = b * e, bf = b * f;
+				const ae = a * e, af = a * f, be = b * e, bf = b * f;
 
 				te[ 0 ] = c * e;
 				te[ 4 ] = - c * f;
@@ -5210,7 +4707,7 @@
 
 			} else if ( euler.order === 'YXZ' ) {
 
-				var ce = c * e, cf = c * f, de = d * e, df = d * f;
+				const ce = c * e, cf = c * f, de = d * e, df = d * f;
 
 				te[ 0 ] = ce + df * b;
 				te[ 4 ] = de * b - cf;
@@ -5226,7 +4723,7 @@
 
 			} else if ( euler.order === 'ZXY' ) {
 
-				var ce = c * e, cf = c * f, de = d * e, df = d * f;
+				const ce = c * e, cf = c * f, de = d * e, df = d * f;
 
 				te[ 0 ] = ce - df * b;
 				te[ 4 ] = - a * f;
@@ -5242,7 +4739,7 @@
 
 			} else if ( euler.order === 'ZYX' ) {
 
-				var ae = a * e, af = a * f, be = b * e, bf = b * f;
+				const ae = a * e, af = a * f, be = b * e, bf = b * f;
 
 				te[ 0 ] = c * e;
 				te[ 4 ] = be * d - af;
@@ -5258,7 +4755,7 @@
 
 			} else if ( euler.order === 'YZX' ) {
 
-				var ac = a * c, ad = a * d, bc = b * c, bd = b * d;
+				const ac = a * c, ad = a * d, bc = b * c, bd = b * d;
 
 				te[ 0 ] = c * e;
 				te[ 4 ] = bd - ac * f;
@@ -5274,7 +4771,7 @@
 
 			} else if ( euler.order === 'XZY' ) {
 
-				var ac = a * c, ad = a * d, bc = b * c, bd = b * d;
+				const ac = a * c, ad = a * d, bc = b * c, bd = b * d;
 
 				te[ 0 ] = c * e;
 				te[ 4 ] = - f;
@@ -5303,17 +4800,17 @@
 
 			return this;
 
-		},
+		}
 
-		makeRotationFromQuaternion: function ( q ) {
+		makeRotationFromQuaternion( q ) {
 
 			return this.compose( _zero, q, _one );
 
-		},
+		}
 
-		lookAt: function ( eye, target, up ) {
+		lookAt( eye, target, up ) {
 
-			var te = this.elements;
+			const te = this.elements;
 
 			_z.subVectors( eye, target );
 
@@ -5356,9 +4853,9 @@
 
 			return this;
 
-		},
+		}
 
-		multiply: function ( m, n ) {
+		multiply( m, n ) {
 
 			if ( n !== undefined ) {
 
@@ -5369,29 +4866,29 @@
 
 			return this.multiplyMatrices( this, m );
 
-		},
+		}
 
-		premultiply: function ( m ) {
+		premultiply( m ) {
 
 			return this.multiplyMatrices( m, this );
 
-		},
+		}
 
-		multiplyMatrices: function ( a, b ) {
+		multiplyMatrices( a, b ) {
 
-			var ae = a.elements;
-			var be = b.elements;
-			var te = this.elements;
+			const ae = a.elements;
+			const be = b.elements;
+			const te = this.elements;
 
-			var a11 = ae[ 0 ], a12 = ae[ 4 ], a13 = ae[ 8 ], a14 = ae[ 12 ];
-			var a21 = ae[ 1 ], a22 = ae[ 5 ], a23 = ae[ 9 ], a24 = ae[ 13 ];
-			var a31 = ae[ 2 ], a32 = ae[ 6 ], a33 = ae[ 10 ], a34 = ae[ 14 ];
-			var a41 = ae[ 3 ], a42 = ae[ 7 ], a43 = ae[ 11 ], a44 = ae[ 15 ];
+			const a11 = ae[ 0 ], a12 = ae[ 4 ], a13 = ae[ 8 ], a14 = ae[ 12 ];
+			const a21 = ae[ 1 ], a22 = ae[ 5 ], a23 = ae[ 9 ], a24 = ae[ 13 ];
+			const a31 = ae[ 2 ], a32 = ae[ 6 ], a33 = ae[ 10 ], a34 = ae[ 14 ];
+			const a41 = ae[ 3 ], a42 = ae[ 7 ], a43 = ae[ 11 ], a44 = ae[ 15 ];
 
-			var b11 = be[ 0 ], b12 = be[ 4 ], b13 = be[ 8 ], b14 = be[ 12 ];
-			var b21 = be[ 1 ], b22 = be[ 5 ], b23 = be[ 9 ], b24 = be[ 13 ];
-			var b31 = be[ 2 ], b32 = be[ 6 ], b33 = be[ 10 ], b34 = be[ 14 ];
-			var b41 = be[ 3 ], b42 = be[ 7 ], b43 = be[ 11 ], b44 = be[ 15 ];
+			const b11 = be[ 0 ], b12 = be[ 4 ], b13 = be[ 8 ], b14 = be[ 12 ];
+			const b21 = be[ 1 ], b22 = be[ 5 ], b23 = be[ 9 ], b24 = be[ 13 ];
+			const b31 = be[ 2 ], b32 = be[ 6 ], b33 = be[ 10 ], b34 = be[ 14 ];
+			const b41 = be[ 3 ], b42 = be[ 7 ], b43 = be[ 11 ], b44 = be[ 15 ];
 
 			te[ 0 ] = a11 * b11 + a12 * b21 + a13 * b31 + a14 * b41;
 			te[ 4 ] = a11 * b12 + a12 * b22 + a13 * b32 + a14 * b42;
@@ -5415,11 +4912,11 @@
 
 			return this;
 
-		},
+		}
 
-		multiplyScalar: function ( s ) {
+		multiplyScalar( s ) {
 
-			var te = this.elements;
+			const te = this.elements;
 
 			te[ 0 ] *= s; te[ 4 ] *= s; te[ 8 ] *= s; te[ 12 ] *= s;
 			te[ 1 ] *= s; te[ 5 ] *= s; te[ 9 ] *= s; te[ 13 ] *= s;
@@ -5428,16 +4925,16 @@
 
 			return this;
 
-		},
+		}
 
-		determinant: function () {
+		determinant() {
 
-			var te = this.elements;
+			const te = this.elements;
 
-			var n11 = te[ 0 ], n12 = te[ 4 ], n13 = te[ 8 ], n14 = te[ 12 ];
-			var n21 = te[ 1 ], n22 = te[ 5 ], n23 = te[ 9 ], n24 = te[ 13 ];
-			var n31 = te[ 2 ], n32 = te[ 6 ], n33 = te[ 10 ], n34 = te[ 14 ];
-			var n41 = te[ 3 ], n42 = te[ 7 ], n43 = te[ 11 ], n44 = te[ 15 ];
+			const n11 = te[ 0 ], n12 = te[ 4 ], n13 = te[ 8 ], n14 = te[ 12 ];
+			const n21 = te[ 1 ], n22 = te[ 5 ], n23 = te[ 9 ], n24 = te[ 13 ];
+			const n31 = te[ 2 ], n32 = te[ 6 ], n33 = te[ 10 ], n34 = te[ 14 ];
+			const n41 = te[ 3 ], n42 = te[ 7 ], n43 = te[ 11 ], n44 = te[ 15 ];
 
 			//TODO: make this more efficient
 			//( based on http://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm )
@@ -5478,12 +4975,12 @@
 
 			);
 
-		},
+		}
 
-		transpose: function () {
+		transpose() {
 
-			var te = this.elements;
-			var tmp;
+			const te = this.elements;
+			let tmp;
 
 			tmp = te[ 1 ]; te[ 1 ] = te[ 4 ]; te[ 4 ] = tmp;
 			tmp = te[ 2 ]; te[ 2 ] = te[ 8 ]; te[ 8 ] = tmp;
@@ -5495,11 +4992,11 @@
 
 			return this;
 
-		},
+		}
 
-		setPosition: function ( x, y, z ) {
+		setPosition( x, y, z ) {
 
-			var te = this.elements;
+			const te = this.elements;
 
 			if ( x.isVector3 ) {
 
@@ -5517,45 +5014,28 @@
 
 			return this;
 
-		},
+		}
 
-		getInverse: function ( m, throwOnDegenerate ) {
+		invert() {
 
 			// based on http://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm
-			var te = this.elements,
-				me = m.elements,
+			const te = this.elements,
 
-				n11 = me[ 0 ], n21 = me[ 1 ], n31 = me[ 2 ], n41 = me[ 3 ],
-				n12 = me[ 4 ], n22 = me[ 5 ], n32 = me[ 6 ], n42 = me[ 7 ],
-				n13 = me[ 8 ], n23 = me[ 9 ], n33 = me[ 10 ], n43 = me[ 11 ],
-				n14 = me[ 12 ], n24 = me[ 13 ], n34 = me[ 14 ], n44 = me[ 15 ],
+				n11 = te[ 0 ], n21 = te[ 1 ], n31 = te[ 2 ], n41 = te[ 3 ],
+				n12 = te[ 4 ], n22 = te[ 5 ], n32 = te[ 6 ], n42 = te[ 7 ],
+				n13 = te[ 8 ], n23 = te[ 9 ], n33 = te[ 10 ], n43 = te[ 11 ],
+				n14 = te[ 12 ], n24 = te[ 13 ], n34 = te[ 14 ], n44 = te[ 15 ],
 
 				t11 = n23 * n34 * n42 - n24 * n33 * n42 + n24 * n32 * n43 - n22 * n34 * n43 - n23 * n32 * n44 + n22 * n33 * n44,
 				t12 = n14 * n33 * n42 - n13 * n34 * n42 - n14 * n32 * n43 + n12 * n34 * n43 + n13 * n32 * n44 - n12 * n33 * n44,
 				t13 = n13 * n24 * n42 - n14 * n23 * n42 + n14 * n22 * n43 - n12 * n24 * n43 - n13 * n22 * n44 + n12 * n23 * n44,
 				t14 = n14 * n23 * n32 - n13 * n24 * n32 - n14 * n22 * n33 + n12 * n24 * n33 + n13 * n22 * n34 - n12 * n23 * n34;
 
-			var det = n11 * t11 + n21 * t12 + n31 * t13 + n41 * t14;
+			const det = n11 * t11 + n21 * t12 + n31 * t13 + n41 * t14;
 
-			if ( det === 0 ) {
+			if ( det === 0 ) return this.set( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 );
 
-				var msg = "THREE.Matrix4: .getInverse() can't invert matrix, determinant is 0";
-
-				if ( throwOnDegenerate === true ) {
-
-					throw new Error( msg );
-
-				} else {
-
-					console.warn( msg );
-
-				}
-
-				return this.identity();
-
-			}
-
-			var detInv = 1 / det;
+			const detInv = 1 / det;
 
 			te[ 0 ] = t11 * detInv;
 			te[ 1 ] = ( n24 * n33 * n41 - n23 * n34 * n41 - n24 * n31 * n43 + n21 * n34 * n43 + n23 * n31 * n44 - n21 * n33 * n44 ) * detInv;
@@ -5579,12 +5059,12 @@
 
 			return this;
 
-		},
+		}
 
-		scale: function ( v ) {
+		scale( v ) {
 
-			var te = this.elements;
-			var x = v.x, y = v.y, z = v.z;
+			const te = this.elements;
+			const x = v.x, y = v.y, z = v.z;
 
 			te[ 0 ] *= x; te[ 4 ] *= y; te[ 8 ] *= z;
 			te[ 1 ] *= x; te[ 5 ] *= y; te[ 9 ] *= z;
@@ -5593,21 +5073,21 @@
 
 			return this;
 
-		},
+		}
 
-		getMaxScaleOnAxis: function () {
+		getMaxScaleOnAxis() {
 
-			var te = this.elements;
+			const te = this.elements;
 
-			var scaleXSq = te[ 0 ] * te[ 0 ] + te[ 1 ] * te[ 1 ] + te[ 2 ] * te[ 2 ];
-			var scaleYSq = te[ 4 ] * te[ 4 ] + te[ 5 ] * te[ 5 ] + te[ 6 ] * te[ 6 ];
-			var scaleZSq = te[ 8 ] * te[ 8 ] + te[ 9 ] * te[ 9 ] + te[ 10 ] * te[ 10 ];
+			const scaleXSq = te[ 0 ] * te[ 0 ] + te[ 1 ] * te[ 1 ] + te[ 2 ] * te[ 2 ];
+			const scaleYSq = te[ 4 ] * te[ 4 ] + te[ 5 ] * te[ 5 ] + te[ 6 ] * te[ 6 ];
+			const scaleZSq = te[ 8 ] * te[ 8 ] + te[ 9 ] * te[ 9 ] + te[ 10 ] * te[ 10 ];
 
 			return Math.sqrt( Math.max( scaleXSq, scaleYSq, scaleZSq ) );
 
-		},
+		}
 
-		makeTranslation: function ( x, y, z ) {
+		makeTranslation( x, y, z ) {
 
 			this.set(
 
@@ -5620,11 +5100,11 @@
 
 			return this;
 
-		},
+		}
 
-		makeRotationX: function ( theta ) {
+		makeRotationX( theta ) {
 
-			var c = Math.cos( theta ), s = Math.sin( theta );
+			const c = Math.cos( theta ), s = Math.sin( theta );
 
 			this.set(
 
@@ -5637,11 +5117,11 @@
 
 			return this;
 
-		},
+		}
 
-		makeRotationY: function ( theta ) {
+		makeRotationY( theta ) {
 
-			var c = Math.cos( theta ), s = Math.sin( theta );
+			const c = Math.cos( theta ), s = Math.sin( theta );
 
 			this.set(
 
@@ -5654,11 +5134,11 @@
 
 			return this;
 
-		},
+		}
 
-		makeRotationZ: function ( theta ) {
+		makeRotationZ( theta ) {
 
-			var c = Math.cos( theta ), s = Math.sin( theta );
+			const c = Math.cos( theta ), s = Math.sin( theta );
 
 			this.set(
 
@@ -5671,17 +5151,17 @@
 
 			return this;
 
-		},
+		}
 
-		makeRotationAxis: function ( axis, angle ) {
+		makeRotationAxis( axis, angle ) {
 
 			// Based on http://www.gamedev.net/reference/articles/article1199.asp
 
-			var c = Math.cos( angle );
-			var s = Math.sin( angle );
-			var t = 1 - c;
-			var x = axis.x, y = axis.y, z = axis.z;
-			var tx = t * x, ty = t * y;
+			const c = Math.cos( angle );
+			const s = Math.sin( angle );
+			const t = 1 - c;
+			const x = axis.x, y = axis.y, z = axis.z;
+			const tx = t * x, ty = t * y;
 
 			this.set(
 
@@ -5692,11 +5172,11 @@
 
 			);
 
-			 return this;
+			return this;
 
-		},
+		}
 
-		makeScale: function ( x, y, z ) {
+		makeScale( x, y, z ) {
 
 			this.set(
 
@@ -5709,34 +5189,34 @@
 
 			return this;
 
-		},
+		}
 
-		makeShear: function ( x, y, z ) {
+		makeShear( xy, xz, yx, yz, zx, zy ) {
 
 			this.set(
 
-				1, y, z, 0,
-				x, 1, z, 0,
-				x, y, 1, 0,
+				1, yx, zx, 0,
+				xy, 1, zy, 0,
+				xz, yz, 1, 0,
 				0, 0, 0, 1
 
 			);
 
 			return this;
 
-		},
+		}
 
-		compose: function ( position, quaternion, scale ) {
+		compose( position, quaternion, scale ) {
 
-			var te = this.elements;
+			const te = this.elements;
 
-			var x = quaternion._x, y = quaternion._y, z = quaternion._z, w = quaternion._w;
-			var x2 = x + x,	y2 = y + y, z2 = z + z;
-			var xx = x * x2, xy = x * y2, xz = x * z2;
-			var yy = y * y2, yz = y * z2, zz = z * z2;
-			var wx = w * x2, wy = w * y2, wz = w * z2;
+			const x = quaternion._x, y = quaternion._y, z = quaternion._z, w = quaternion._w;
+			const x2 = x + x,	y2 = y + y, z2 = z + z;
+			const xx = x * x2, xy = x * y2, xz = x * z2;
+			const yy = y * y2, yz = y * z2, zz = z * z2;
+			const wx = w * x2, wy = w * y2, wz = w * z2;
 
-			var sx = scale.x, sy = scale.y, sz = scale.z;
+			const sx = scale.x, sy = scale.y, sz = scale.z;
 
 			te[ 0 ] = ( 1 - ( yy + zz ) ) * sx;
 			te[ 1 ] = ( xy + wz ) * sx;
@@ -5760,18 +5240,18 @@
 
 			return this;
 
-		},
+		}
 
-		decompose: function ( position, quaternion, scale ) {
+		decompose( position, quaternion, scale ) {
 
-			var te = this.elements;
+			const te = this.elements;
 
-			var sx = _v1$1.set( te[ 0 ], te[ 1 ], te[ 2 ] ).length();
-			var sy = _v1$1.set( te[ 4 ], te[ 5 ], te[ 6 ] ).length();
-			var sz = _v1$1.set( te[ 8 ], te[ 9 ], te[ 10 ] ).length();
+			let sx = _v1$1.set( te[ 0 ], te[ 1 ], te[ 2 ] ).length();
+			const sy = _v1$1.set( te[ 4 ], te[ 5 ], te[ 6 ] ).length();
+			const sz = _v1$1.set( te[ 8 ], te[ 9 ], te[ 10 ] ).length();
 
 			// if determine is negative, we need to invert one scale
-			var det = this.determinant();
+			const det = this.determinant();
 			if ( det < 0 ) sx = - sx;
 
 			position.x = te[ 12 ];
@@ -5779,25 +5259,25 @@
 			position.z = te[ 14 ];
 
 			// scale the rotation part
-			_m1.copy( this );
+			_m1$2.copy( this );
 
-			var invSX = 1 / sx;
-			var invSY = 1 / sy;
-			var invSZ = 1 / sz;
+			const invSX = 1 / sx;
+			const invSY = 1 / sy;
+			const invSZ = 1 / sz;
 
-			_m1.elements[ 0 ] *= invSX;
-			_m1.elements[ 1 ] *= invSX;
-			_m1.elements[ 2 ] *= invSX;
+			_m1$2.elements[ 0 ] *= invSX;
+			_m1$2.elements[ 1 ] *= invSX;
+			_m1$2.elements[ 2 ] *= invSX;
 
-			_m1.elements[ 4 ] *= invSY;
-			_m1.elements[ 5 ] *= invSY;
-			_m1.elements[ 6 ] *= invSY;
+			_m1$2.elements[ 4 ] *= invSY;
+			_m1$2.elements[ 5 ] *= invSY;
+			_m1$2.elements[ 6 ] *= invSY;
 
-			_m1.elements[ 8 ] *= invSZ;
-			_m1.elements[ 9 ] *= invSZ;
-			_m1.elements[ 10 ] *= invSZ;
+			_m1$2.elements[ 8 ] *= invSZ;
+			_m1$2.elements[ 9 ] *= invSZ;
+			_m1$2.elements[ 10 ] *= invSZ;
 
-			quaternion.setFromRotationMatrix( _m1 );
+			quaternion.setFromRotationMatrix( _m1$2 );
 
 			scale.x = sx;
 			scale.y = sy;
@@ -5805,9 +5285,9 @@
 
 			return this;
 
-		},
+		}
 
-		makePerspective: function ( left, right, top, bottom, near, far ) {
+		makePerspective( left, right, top, bottom, near, far ) {
 
 			if ( far === undefined ) {
 
@@ -5815,14 +5295,14 @@
 
 			}
 
-			var te = this.elements;
-			var x = 2 * near / ( right - left );
-			var y = 2 * near / ( top - bottom );
+			const te = this.elements;
+			const x = 2 * near / ( right - left );
+			const y = 2 * near / ( top - bottom );
 
-			var a = ( right + left ) / ( right - left );
-			var b = ( top + bottom ) / ( top - bottom );
-			var c = - ( far + near ) / ( far - near );
-			var d = - 2 * far * near / ( far - near );
+			const a = ( right + left ) / ( right - left );
+			const b = ( top + bottom ) / ( top - bottom );
+			const c = - ( far + near ) / ( far - near );
+			const d = - 2 * far * near / ( far - near );
 
 			te[ 0 ] = x;	te[ 4 ] = 0;	te[ 8 ] = a;	te[ 12 ] = 0;
 			te[ 1 ] = 0;	te[ 5 ] = y;	te[ 9 ] = b;	te[ 13 ] = 0;
@@ -5831,18 +5311,18 @@
 
 			return this;
 
-		},
+		}
 
-		makeOrthographic: function ( left, right, top, bottom, near, far ) {
+		makeOrthographic( left, right, top, bottom, near, far ) {
 
-			var te = this.elements;
-			var w = 1.0 / ( right - left );
-			var h = 1.0 / ( top - bottom );
-			var p = 1.0 / ( far - near );
+			const te = this.elements;
+			const w = 1.0 / ( right - left );
+			const h = 1.0 / ( top - bottom );
+			const p = 1.0 / ( far - near );
 
-			var x = ( right + left ) * w;
-			var y = ( top + bottom ) * h;
-			var z = ( far + near ) * p;
+			const x = ( right + left ) * w;
+			const y = ( top + bottom ) * h;
+			const z = ( far + near ) * p;
 
 			te[ 0 ] = 2 * w;	te[ 4 ] = 0;	te[ 8 ] = 0;	te[ 12 ] = - x;
 			te[ 1 ] = 0;	te[ 5 ] = 2 * h;	te[ 9 ] = 0;	te[ 13 ] = - y;
@@ -5851,14 +5331,14 @@
 
 			return this;
 
-		},
+		}
 
-		equals: function ( matrix ) {
+		equals( matrix ) {
 
-			var te = this.elements;
-			var me = matrix.elements;
+			const te = this.elements;
+			const me = matrix.elements;
 
-			for ( var i = 0; i < 16; i ++ ) {
+			for ( let i = 0; i < 16; i ++ ) {
 
 				if ( te[ i ] !== me[ i ] ) return false;
 
@@ -5866,13 +5346,11 @@
 
 			return true;
 
-		},
+		}
 
-		fromArray: function ( array, offset ) {
+		fromArray( array, offset = 0 ) {
 
-			if ( offset === undefined ) offset = 0;
-
-			for ( var i = 0; i < 16; i ++ ) {
+			for ( let i = 0; i < 16; i ++ ) {
 
 				this.elements[ i ] = array[ i + offset ];
 
@@ -5880,14 +5358,11 @@
 
 			return this;
 
-		},
+		}
 
-		toArray: function ( array, offset ) {
+		toArray( array = [], offset = 0 ) {
 
-			if ( array === undefined ) array = [];
-			if ( offset === undefined ) offset = 0;
-
-			var te = this.elements;
+			const te = this.elements;
 
 			array[ offset ] = te[ 0 ];
 			array[ offset + 1 ] = te[ 1 ];
@@ -5913,126 +5388,104 @@
 
 		}
 
-	} );
-
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 * @author bhouston / http://clara.io
-	 */
-
-	var _matrix = new Matrix4();
-	var _quaternion$1 = new Quaternion();
-
-	function Euler( x, y, z, order ) {
-
-		this._x = x || 0;
-		this._y = y || 0;
-		this._z = z || 0;
-		this._order = order || Euler.DefaultOrder;
-
 	}
 
-	Euler.RotationOrders = [ 'XYZ', 'YZX', 'ZXY', 'XZY', 'YXZ', 'ZYX' ];
+	Matrix4.prototype.isMatrix4 = true;
 
-	Euler.DefaultOrder = 'XYZ';
+	const _v1$1 = /*@__PURE__*/ new Vector3();
+	const _m1$2 = /*@__PURE__*/ new Matrix4();
+	const _zero = /*@__PURE__*/ new Vector3( 0, 0, 0 );
+	const _one = /*@__PURE__*/ new Vector3( 1, 1, 1 );
+	const _x = /*@__PURE__*/ new Vector3();
+	const _y = /*@__PURE__*/ new Vector3();
+	const _z = /*@__PURE__*/ new Vector3();
 
-	Object.defineProperties( Euler.prototype, {
+	const _matrix = /*@__PURE__*/ new Matrix4();
+	const _quaternion$1 = /*@__PURE__*/ new Quaternion();
 
-		x: {
+	class Euler {
 
-			get: function () {
-
-				return this._x;
-
-			},
-
-			set: function ( value ) {
-
-				this._x = value;
-				this._onChangeCallback();
-
-			}
-
-		},
-
-		y: {
-
-			get: function () {
-
-				return this._y;
-
-			},
-
-			set: function ( value ) {
-
-				this._y = value;
-				this._onChangeCallback();
-
-			}
-
-		},
-
-		z: {
-
-			get: function () {
-
-				return this._z;
-
-			},
-
-			set: function ( value ) {
-
-				this._z = value;
-				this._onChangeCallback();
-
-			}
-
-		},
-
-		order: {
-
-			get: function () {
-
-				return this._order;
-
-			},
-
-			set: function ( value ) {
-
-				this._order = value;
-				this._onChangeCallback();
-
-			}
-
-		}
-
-	} );
-
-	Object.assign( Euler.prototype, {
-
-		isEuler: true,
-
-		set: function ( x, y, z, order ) {
+		constructor( x = 0, y = 0, z = 0, order = Euler.DefaultOrder ) {
 
 			this._x = x;
 			this._y = y;
 			this._z = z;
-			this._order = order || this._order;
+			this._order = order;
+
+		}
+
+		get x() {
+
+			return this._x;
+
+		}
+
+		set x( value ) {
+
+			this._x = value;
+			this._onChangeCallback();
+
+		}
+
+		get y() {
+
+			return this._y;
+
+		}
+
+		set y( value ) {
+
+			this._y = value;
+			this._onChangeCallback();
+
+		}
+
+		get z() {
+
+			return this._z;
+
+		}
+
+		set z( value ) {
+
+			this._z = value;
+			this._onChangeCallback();
+
+		}
+
+		get order() {
+
+			return this._order;
+
+		}
+
+		set order( value ) {
+
+			this._order = value;
+			this._onChangeCallback();
+
+		}
+
+		set( x, y, z, order = this._order ) {
+
+			this._x = x;
+			this._y = y;
+			this._z = z;
+			this._order = order;
 
 			this._onChangeCallback();
 
 			return this;
 
-		},
+		}
 
-		clone: function () {
+		clone() {
 
 			return new this.constructor( this._x, this._y, this._z, this._order );
 
-		},
+		}
 
-		copy: function ( euler ) {
+		copy( euler ) {
 
 			this._x = euler._x;
 			this._y = euler._y;
@@ -6043,146 +5496,156 @@
 
 			return this;
 
-		},
+		}
 
-		setFromRotationMatrix: function ( m, order, update ) {
-
-			var clamp = MathUtils.clamp;
+		setFromRotationMatrix( m, order = this._order, update = true ) {
 
 			// assumes the upper 3x3 of m is a pure rotation matrix (i.e, unscaled)
 
-			var te = m.elements;
-			var m11 = te[ 0 ], m12 = te[ 4 ], m13 = te[ 8 ];
-			var m21 = te[ 1 ], m22 = te[ 5 ], m23 = te[ 9 ];
-			var m31 = te[ 2 ], m32 = te[ 6 ], m33 = te[ 10 ];
+			const te = m.elements;
+			const m11 = te[ 0 ], m12 = te[ 4 ], m13 = te[ 8 ];
+			const m21 = te[ 1 ], m22 = te[ 5 ], m23 = te[ 9 ];
+			const m31 = te[ 2 ], m32 = te[ 6 ], m33 = te[ 10 ];
 
-			order = order || this._order;
+			switch ( order ) {
 
-			if ( order === 'XYZ' ) {
+				case 'XYZ':
 
-				this._y = Math.asin( clamp( m13, - 1, 1 ) );
+					this._y = Math.asin( clamp( m13, - 1, 1 ) );
 
-				if ( Math.abs( m13 ) < 0.9999999 ) {
+					if ( Math.abs( m13 ) < 0.9999999 ) {
 
-					this._x = Math.atan2( - m23, m33 );
-					this._z = Math.atan2( - m12, m11 );
+						this._x = Math.atan2( - m23, m33 );
+						this._z = Math.atan2( - m12, m11 );
 
-				} else {
+					} else {
 
-					this._x = Math.atan2( m32, m22 );
-					this._z = 0;
+						this._x = Math.atan2( m32, m22 );
+						this._z = 0;
 
-				}
+					}
 
-			} else if ( order === 'YXZ' ) {
+					break;
 
-				this._x = Math.asin( - clamp( m23, - 1, 1 ) );
+				case 'YXZ':
 
-				if ( Math.abs( m23 ) < 0.9999999 ) {
+					this._x = Math.asin( - clamp( m23, - 1, 1 ) );
 
-					this._y = Math.atan2( m13, m33 );
-					this._z = Math.atan2( m21, m22 );
+					if ( Math.abs( m23 ) < 0.9999999 ) {
 
-				} else {
+						this._y = Math.atan2( m13, m33 );
+						this._z = Math.atan2( m21, m22 );
 
-					this._y = Math.atan2( - m31, m11 );
-					this._z = 0;
+					} else {
 
-				}
+						this._y = Math.atan2( - m31, m11 );
+						this._z = 0;
 
-			} else if ( order === 'ZXY' ) {
+					}
 
-				this._x = Math.asin( clamp( m32, - 1, 1 ) );
+					break;
 
-				if ( Math.abs( m32 ) < 0.9999999 ) {
+				case 'ZXY':
 
-					this._y = Math.atan2( - m31, m33 );
-					this._z = Math.atan2( - m12, m22 );
+					this._x = Math.asin( clamp( m32, - 1, 1 ) );
 
-				} else {
+					if ( Math.abs( m32 ) < 0.9999999 ) {
 
-					this._y = 0;
-					this._z = Math.atan2( m21, m11 );
+						this._y = Math.atan2( - m31, m33 );
+						this._z = Math.atan2( - m12, m22 );
 
-				}
+					} else {
 
-			} else if ( order === 'ZYX' ) {
+						this._y = 0;
+						this._z = Math.atan2( m21, m11 );
 
-				this._y = Math.asin( - clamp( m31, - 1, 1 ) );
+					}
 
-				if ( Math.abs( m31 ) < 0.9999999 ) {
+					break;
 
-					this._x = Math.atan2( m32, m33 );
-					this._z = Math.atan2( m21, m11 );
+				case 'ZYX':
 
-				} else {
+					this._y = Math.asin( - clamp( m31, - 1, 1 ) );
 
-					this._x = 0;
-					this._z = Math.atan2( - m12, m22 );
+					if ( Math.abs( m31 ) < 0.9999999 ) {
 
-				}
+						this._x = Math.atan2( m32, m33 );
+						this._z = Math.atan2( m21, m11 );
 
-			} else if ( order === 'YZX' ) {
+					} else {
 
-				this._z = Math.asin( clamp( m21, - 1, 1 ) );
+						this._x = 0;
+						this._z = Math.atan2( - m12, m22 );
 
-				if ( Math.abs( m21 ) < 0.9999999 ) {
+					}
 
-					this._x = Math.atan2( - m23, m22 );
-					this._y = Math.atan2( - m31, m11 );
+					break;
 
-				} else {
+				case 'YZX':
 
-					this._x = 0;
-					this._y = Math.atan2( m13, m33 );
+					this._z = Math.asin( clamp( m21, - 1, 1 ) );
 
-				}
+					if ( Math.abs( m21 ) < 0.9999999 ) {
 
-			} else if ( order === 'XZY' ) {
+						this._x = Math.atan2( - m23, m22 );
+						this._y = Math.atan2( - m31, m11 );
 
-				this._z = Math.asin( - clamp( m12, - 1, 1 ) );
+					} else {
 
-				if ( Math.abs( m12 ) < 0.9999999 ) {
+						this._x = 0;
+						this._y = Math.atan2( m13, m33 );
 
-					this._x = Math.atan2( m32, m22 );
-					this._y = Math.atan2( m13, m11 );
+					}
 
-				} else {
+					break;
 
-					this._x = Math.atan2( - m23, m33 );
-					this._y = 0;
+				case 'XZY':
 
-				}
+					this._z = Math.asin( - clamp( m12, - 1, 1 ) );
 
-			} else {
+					if ( Math.abs( m12 ) < 0.9999999 ) {
 
-				console.warn( 'THREE.Euler: .setFromRotationMatrix() given unsupported order: ' + order );
+						this._x = Math.atan2( m32, m22 );
+						this._y = Math.atan2( m13, m11 );
+
+					} else {
+
+						this._x = Math.atan2( - m23, m33 );
+						this._y = 0;
+
+					}
+
+					break;
+
+				default:
+
+					console.warn( 'THREE.Euler: .setFromRotationMatrix() encountered an unknown order: ' + order );
 
 			}
 
 			this._order = order;
 
-			if ( update !== false ) this._onChangeCallback();
+			if ( update === true ) this._onChangeCallback();
 
 			return this;
 
-		},
+		}
 
-		setFromQuaternion: function ( q, order, update ) {
+		setFromQuaternion( q, order, update ) {
 
 			_matrix.makeRotationFromQuaternion( q );
 
 			return this.setFromRotationMatrix( _matrix, order, update );
 
-		},
+		}
 
-		setFromVector3: function ( v, order ) {
+		setFromVector3( v, order = this._order ) {
 
-			return this.set( v.x, v.y, v.z, order || this._order );
+			return this.set( v.x, v.y, v.z, order );
 
-		},
+		}
 
-		reorder: function ( newOrder ) {
+		reorder( newOrder ) {
 
 			// WARNING: this discards revolution information -bhouston
 
@@ -6190,15 +5653,15 @@
 
 			return this.setFromQuaternion( _quaternion$1, newOrder );
 
-		},
+		}
 
-		equals: function ( euler ) {
+		equals( euler ) {
 
 			return ( euler._x === this._x ) && ( euler._y === this._y ) && ( euler._z === this._z ) && ( euler._order === this._order );
 
-		},
+		}
 
-		fromArray: function ( array ) {
+		fromArray( array ) {
 
 			this._x = array[ 0 ];
 			this._y = array[ 1 ];
@@ -6209,12 +5672,9 @@
 
 			return this;
 
-		},
+		}
 
-		toArray: function ( array, offset ) {
-
-			if ( array === undefined ) array = [];
-			if ( offset === undefined ) offset = 0;
+		toArray( array = [], offset = 0 ) {
 
 			array[ offset ] = this._x;
 			array[ offset + 1 ] = this._y;
@@ -6223,9 +5683,9 @@
 
 			return array;
 
-		},
+		}
 
-		toVector3: function ( optionalResult ) {
+		toVector3( optionalResult ) {
 
 			if ( optionalResult ) {
 
@@ -6237,108 +5697,100 @@
 
 			}
 
-		},
+		}
 
-		_onChange: function ( callback ) {
+		_onChange( callback ) {
 
 			this._onChangeCallback = callback;
 
 			return this;
 
-		},
+		}
 
-		_onChangeCallback: function () {}
-
-	} );
-
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 */
-
-	function Layers() {
-
-		this.mask = 1 | 0;
+		_onChangeCallback() {}
 
 	}
 
-	Object.assign( Layers.prototype, {
+	Euler.prototype.isEuler = true;
 
-		set: function ( channel ) {
+	Euler.DefaultOrder = 'XYZ';
+	Euler.RotationOrders = [ 'XYZ', 'YZX', 'ZXY', 'XZY', 'YXZ', 'ZYX' ];
+
+	class Layers {
+
+		constructor() {
+
+			this.mask = 1 | 0;
+
+		}
+
+		set( channel ) {
 
 			this.mask = 1 << channel | 0;
 
-		},
+		}
 
-		enable: function ( channel ) {
+		enable( channel ) {
 
 			this.mask |= 1 << channel | 0;
 
-		},
+		}
 
-		enableAll: function () {
+		enableAll() {
 
 			this.mask = 0xffffffff | 0;
 
-		},
+		}
 
-		toggle: function ( channel ) {
+		toggle( channel ) {
 
 			this.mask ^= 1 << channel | 0;
 
-		},
+		}
 
-		disable: function ( channel ) {
+		disable( channel ) {
 
 			this.mask &= ~ ( 1 << channel | 0 );
 
-		},
+		}
 
-		disableAll: function () {
+		disableAll() {
 
 			this.mask = 0;
 
-		},
+		}
 
-		test: function ( layers ) {
+		test( layers ) {
 
 			return ( this.mask & layers.mask ) !== 0;
 
 		}
 
-	} );
+	}
 
-	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 * @author bhouston / http://clara.io
-	 * @author tschw
-	 */
+	class Matrix3 {
 
-	function Matrix3() {
+		constructor() {
 
-		this.elements = [
+			this.elements = [
 
-			1, 0, 0,
-			0, 1, 0,
-			0, 0, 1
+				1, 0, 0,
+				0, 1, 0,
+				0, 0, 1
 
-		];
+			];
 
-		if ( arguments.length > 0 ) {
+			if ( arguments.length > 0 ) {
 
-			console.error( 'THREE.Matrix3: the constructor no longer reads arguments. use .set() instead.' );
+				console.error( 'THREE.Matrix3: the constructor no longer reads arguments. use .set() instead.' );
+
+			}
 
 		}
 
-	}
+		set( n11, n12, n13, n21, n22, n23, n31, n32, n33 ) {
 
-	Object.assign( Matrix3.prototype, {
-
-		isMatrix3: true,
-
-		set: function ( n11, n12, n13, n21, n22, n23, n31, n32, n33 ) {
-
-			var te = this.elements;
+			const te = this.elements;
 
 			te[ 0 ] = n11; te[ 1 ] = n21; te[ 2 ] = n31;
 			te[ 3 ] = n12; te[ 4 ] = n22; te[ 5 ] = n32;
@@ -6346,9 +5798,9 @@
 
 			return this;
 
-		},
+		}
 
-		identity: function () {
+		identity() {
 
 			this.set(
 
@@ -6360,18 +5812,12 @@
 
 			return this;
 
-		},
+		}
 
-		clone: function () {
+		copy( m ) {
 
-			return new this.constructor().fromArray( this.elements );
-
-		},
-
-		copy: function ( m ) {
-
-			var te = this.elements;
-			var me = m.elements;
+			const te = this.elements;
+			const me = m.elements;
 
 			te[ 0 ] = me[ 0 ]; te[ 1 ] = me[ 1 ]; te[ 2 ] = me[ 2 ];
 			te[ 3 ] = me[ 3 ]; te[ 4 ] = me[ 4 ]; te[ 5 ] = me[ 5 ];
@@ -6379,11 +5825,21 @@
 
 			return this;
 
-		},
+		}
 
-		setFromMatrix4: function ( m ) {
+		extractBasis( xAxis, yAxis, zAxis ) {
 
-			var me = m.elements;
+			xAxis.setFromMatrix3Column( this, 0 );
+			yAxis.setFromMatrix3Column( this, 1 );
+			zAxis.setFromMatrix3Column( this, 2 );
+
+			return this;
+
+		}
+
+		setFromMatrix4( m ) {
+
+			const me = m.elements;
 
 			this.set(
 
@@ -6395,33 +5851,33 @@
 
 			return this;
 
-		},
+		}
 
-		multiply: function ( m ) {
+		multiply( m ) {
 
 			return this.multiplyMatrices( this, m );
 
-		},
+		}
 
-		premultiply: function ( m ) {
+		premultiply( m ) {
 
 			return this.multiplyMatrices( m, this );
 
-		},
+		}
 
-		multiplyMatrices: function ( a, b ) {
+		multiplyMatrices( a, b ) {
 
-			var ae = a.elements;
-			var be = b.elements;
-			var te = this.elements;
+			const ae = a.elements;
+			const be = b.elements;
+			const te = this.elements;
 
-			var a11 = ae[ 0 ], a12 = ae[ 3 ], a13 = ae[ 6 ];
-			var a21 = ae[ 1 ], a22 = ae[ 4 ], a23 = ae[ 7 ];
-			var a31 = ae[ 2 ], a32 = ae[ 5 ], a33 = ae[ 8 ];
+			const a11 = ae[ 0 ], a12 = ae[ 3 ], a13 = ae[ 6 ];
+			const a21 = ae[ 1 ], a22 = ae[ 4 ], a23 = ae[ 7 ];
+			const a31 = ae[ 2 ], a32 = ae[ 5 ], a33 = ae[ 8 ];
 
-			var b11 = be[ 0 ], b12 = be[ 3 ], b13 = be[ 6 ];
-			var b21 = be[ 1 ], b22 = be[ 4 ], b23 = be[ 7 ];
-			var b31 = be[ 2 ], b32 = be[ 5 ], b33 = be[ 8 ];
+			const b11 = be[ 0 ], b12 = be[ 3 ], b13 = be[ 6 ];
+			const b21 = be[ 1 ], b22 = be[ 4 ], b23 = be[ 7 ];
+			const b31 = be[ 2 ], b32 = be[ 5 ], b33 = be[ 8 ];
 
 			te[ 0 ] = a11 * b11 + a12 * b21 + a13 * b31;
 			te[ 3 ] = a11 * b12 + a12 * b22 + a13 * b32;
@@ -6437,11 +5893,11 @@
 
 			return this;
 
-		},
+		}
 
-		multiplyScalar: function ( s ) {
+		multiplyScalar( s ) {
 
-			var te = this.elements;
+			const te = this.elements;
 
 			te[ 0 ] *= s; te[ 3 ] *= s; te[ 6 ] *= s;
 			te[ 1 ] *= s; te[ 4 ] *= s; te[ 7 ] *= s;
@@ -6449,34 +5905,27 @@
 
 			return this;
 
-		},
+		}
 
-		determinant: function () {
+		determinant() {
 
-			var te = this.elements;
+			const te = this.elements;
 
-			var a = te[ 0 ], b = te[ 1 ], c = te[ 2 ],
+			const a = te[ 0 ], b = te[ 1 ], c = te[ 2 ],
 				d = te[ 3 ], e = te[ 4 ], f = te[ 5 ],
 				g = te[ 6 ], h = te[ 7 ], i = te[ 8 ];
 
 			return a * e * i - a * f * h - b * d * i + b * f * g + c * d * h - c * e * g;
 
-		},
+		}
 
-		getInverse: function ( matrix, throwOnDegenerate ) {
+		invert() {
 
-			if ( matrix && matrix.isMatrix4 ) {
+			const te = this.elements,
 
-				console.error( "THREE.Matrix3: .getInverse() no longer takes a Matrix4 argument." );
-
-			}
-
-			var me = matrix.elements,
-				te = this.elements,
-
-				n11 = me[ 0 ], n21 = me[ 1 ], n31 = me[ 2 ],
-				n12 = me[ 3 ], n22 = me[ 4 ], n32 = me[ 5 ],
-				n13 = me[ 6 ], n23 = me[ 7 ], n33 = me[ 8 ],
+				n11 = te[ 0 ], n21 = te[ 1 ], n31 = te[ 2 ],
+				n12 = te[ 3 ], n22 = te[ 4 ], n32 = te[ 5 ],
+				n13 = te[ 6 ], n23 = te[ 7 ], n33 = te[ 8 ],
 
 				t11 = n33 * n22 - n32 * n23,
 				t12 = n32 * n13 - n33 * n12,
@@ -6484,25 +5933,9 @@
 
 				det = n11 * t11 + n21 * t12 + n31 * t13;
 
-			if ( det === 0 ) {
+			if ( det === 0 ) return this.set( 0, 0, 0, 0, 0, 0, 0, 0, 0 );
 
-				var msg = "THREE.Matrix3: .getInverse() can't invert matrix, determinant is 0";
-
-				if ( throwOnDegenerate === true ) {
-
-					throw new Error( msg );
-
-				} else {
-
-					console.warn( msg );
-
-				}
-
-				return this.identity();
-
-			}
-
-			var detInv = 1 / det;
+			const detInv = 1 / det;
 
 			te[ 0 ] = t11 * detInv;
 			te[ 1 ] = ( n31 * n23 - n33 * n21 ) * detInv;
@@ -6518,11 +5951,12 @@
 
 			return this;
 
-		},
+		}
 
-		transpose: function () {
+		transpose() {
 
-			var tmp, m = this.elements;
+			let tmp;
+			const m = this.elements;
 
 			tmp = m[ 1 ]; m[ 1 ] = m[ 3 ]; m[ 3 ] = tmp;
 			tmp = m[ 2 ]; m[ 2 ] = m[ 6 ]; m[ 6 ] = tmp;
@@ -6530,17 +5964,17 @@
 
 			return this;
 
-		},
+		}
 
-		getNormalMatrix: function ( matrix4 ) {
+		getNormalMatrix( matrix4 ) {
 
-			return this.setFromMatrix4( matrix4 ).getInverse( this ).transpose();
+			return this.setFromMatrix4( matrix4 ).invert().transpose();
 
-		},
+		}
 
-		transposeIntoArray: function ( r ) {
+		transposeIntoArray( r ) {
 
-			var m = this.elements;
+			const m = this.elements;
 
 			r[ 0 ] = m[ 0 ];
 			r[ 1 ] = m[ 3 ];
@@ -6554,12 +5988,12 @@
 
 			return this;
 
-		},
+		}
 
-		setUvTransform: function ( tx, ty, sx, sy, rotation, cx, cy ) {
+		setUvTransform( tx, ty, sx, sy, rotation, cx, cy ) {
 
-			var c = Math.cos( rotation );
-			var s = Math.sin( rotation );
+			const c = Math.cos( rotation );
+			const s = Math.sin( rotation );
 
 			this.set(
 				sx * c, sx * s, - sx * ( c * cx + s * cy ) + cx + tx,
@@ -6567,28 +6001,30 @@
 				0, 0, 1
 			);
 
-		},
+			return this;
 
-		scale: function ( sx, sy ) {
+		}
 
-			var te = this.elements;
+		scale( sx, sy ) {
+
+			const te = this.elements;
 
 			te[ 0 ] *= sx; te[ 3 ] *= sx; te[ 6 ] *= sx;
 			te[ 1 ] *= sy; te[ 4 ] *= sy; te[ 7 ] *= sy;
 
 			return this;
 
-		},
+		}
 
-		rotate: function ( theta ) {
+		rotate( theta ) {
 
-			var c = Math.cos( theta );
-			var s = Math.sin( theta );
+			const c = Math.cos( theta );
+			const s = Math.sin( theta );
 
-			var te = this.elements;
+			const te = this.elements;
 
-			var a11 = te[ 0 ], a12 = te[ 3 ], a13 = te[ 6 ];
-			var a21 = te[ 1 ], a22 = te[ 4 ], a23 = te[ 7 ];
+			const a11 = te[ 0 ], a12 = te[ 3 ], a13 = te[ 6 ];
+			const a21 = te[ 1 ], a22 = te[ 4 ], a23 = te[ 7 ];
 
 			te[ 0 ] = c * a11 + s * a21;
 			te[ 3 ] = c * a12 + s * a22;
@@ -6600,25 +6036,25 @@
 
 			return this;
 
-		},
+		}
 
-		translate: function ( tx, ty ) {
+		translate( tx, ty ) {
 
-			var te = this.elements;
+			const te = this.elements;
 
 			te[ 0 ] += tx * te[ 2 ]; te[ 3 ] += tx * te[ 5 ]; te[ 6 ] += tx * te[ 8 ];
 			te[ 1 ] += ty * te[ 2 ]; te[ 4 ] += ty * te[ 5 ]; te[ 7 ] += ty * te[ 8 ];
 
 			return this;
 
-		},
+		}
 
-		equals: function ( matrix ) {
+		equals( matrix ) {
 
-			var te = this.elements;
-			var me = matrix.elements;
+			const te = this.elements;
+			const me = matrix.elements;
 
-			for ( var i = 0; i < 9; i ++ ) {
+			for ( let i = 0; i < 9; i ++ ) {
 
 				if ( te[ i ] !== me[ i ] ) return false;
 
@@ -6626,13 +6062,11 @@
 
 			return true;
 
-		},
+		}
 
-		fromArray: function ( array, offset ) {
+		fromArray( array, offset = 0 ) {
 
-			if ( offset === undefined ) offset = 0;
-
-			for ( var i = 0; i < 9; i ++ ) {
+			for ( let i = 0; i < 9; i ++ ) {
 
 				this.elements[ i ] = array[ i + offset ];
 
@@ -6640,14 +6074,11 @@
 
 			return this;
 
-		},
+		}
 
-		toArray: function ( array, offset ) {
+		toArray( array = [], offset = 0 ) {
 
-			if ( array === undefined ) array = [];
-			if ( offset === undefined ) offset = 0;
-
-			var te = this.elements;
+			const te = this.elements;
 
 			array[ offset ] = te[ 0 ];
 			array[ offset + 1 ] = te[ 1 ];
@@ -6665,129 +6096,127 @@
 
 		}
 
-	} );
+		clone() {
 
-	var _object3DId = 0;
-
-	var _v1$2 = new Vector3();
-	var _q1 = new Quaternion();
-	var _m1$1 = new Matrix4();
-	var _target = new Vector3();
-
-	var _position = new Vector3();
-	var _scale = new Vector3();
-	var _quaternion$2 = new Quaternion();
-
-	var _xAxis = new Vector3( 1, 0, 0 );
-	var _yAxis = new Vector3( 0, 1, 0 );
-	var _zAxis = new Vector3( 0, 0, 1 );
-
-	var _addedEvent = { type: 'added' };
-	var _removedEvent = { type: 'removed' };
-
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 * @author elephantatwork / www.elephantatwork.ch
-	 */
-
-	function Object3D() {
-
-		Object.defineProperty( this, 'id', { value: _object3DId ++ } );
-
-		this.uuid = MathUtils.generateUUID();
-
-		this.name = '';
-		this.type = 'Object3D';
-
-		this.parent = null;
-		this.children = [];
-
-		this.up = Object3D.DefaultUp.clone();
-
-		var position = new Vector3();
-		var rotation = new Euler();
-		var quaternion = new Quaternion();
-		var scale = new Vector3( 1, 1, 1 );
-
-		function onRotationChange() {
-
-			quaternion.setFromEuler( rotation, false );
+			return new this.constructor().fromArray( this.elements );
 
 		}
-
-		function onQuaternionChange() {
-
-			rotation.setFromQuaternion( quaternion, undefined, false );
-
-		}
-
-		rotation._onChange( onRotationChange );
-		quaternion._onChange( onQuaternionChange );
-
-		Object.defineProperties( this, {
-			position: {
-				configurable: true,
-				enumerable: true,
-				value: position
-			},
-			rotation: {
-				configurable: true,
-				enumerable: true,
-				value: rotation
-			},
-			quaternion: {
-				configurable: true,
-				enumerable: true,
-				value: quaternion
-			},
-			scale: {
-				configurable: true,
-				enumerable: true,
-				value: scale
-			},
-			modelViewMatrix: {
-				value: new Matrix4()
-			},
-			normalMatrix: {
-				value: new Matrix3()
-			}
-		} );
-
-		this.matrix = new Matrix4();
-		this.matrixWorld = new Matrix4();
-
-		this.matrixAutoUpdate = Object3D.DefaultMatrixAutoUpdate;
-		this.matrixWorldNeedsUpdate = false;
-
-		this.layers = new Layers();
-		this.visible = true;
-
-		this.castShadow = false;
-		this.receiveShadow = false;
-
-		this.frustumCulled = true;
-		this.renderOrder = 0;
-
-		this.userData = {};
 
 	}
 
-	Object3D.DefaultUp = new Vector3( 0, 1, 0 );
-	Object3D.DefaultMatrixAutoUpdate = true;
+	Matrix3.prototype.isMatrix3 = true;
 
-	Object3D.prototype = Object.assign( Object.create( EventDispatcher.prototype ), {
+	let _object3DId = 0;
 
-		constructor: Object3D,
+	const _v1 = /*@__PURE__*/ new Vector3();
+	const _q1 = /*@__PURE__*/ new Quaternion();
+	const _m1$1 = /*@__PURE__*/ new Matrix4();
+	const _target = /*@__PURE__*/ new Vector3();
 
-		isObject3D: true,
+	const _position = /*@__PURE__*/ new Vector3();
+	const _scale = /*@__PURE__*/ new Vector3();
+	const _quaternion = /*@__PURE__*/ new Quaternion();
 
-		onBeforeRender: function () {},
-		onAfterRender: function () {},
+	const _xAxis = /*@__PURE__*/ new Vector3( 1, 0, 0 );
+	const _yAxis = /*@__PURE__*/ new Vector3( 0, 1, 0 );
+	const _zAxis = /*@__PURE__*/ new Vector3( 0, 0, 1 );
 
-		applyMatrix4: function ( matrix ) {
+	const _addedEvent = { type: 'added' };
+	const _removedEvent = { type: 'removed' };
+
+	class Object3D extends EventDispatcher {
+
+		constructor() {
+
+			super();
+
+			Object.defineProperty( this, 'id', { value: _object3DId ++ } );
+
+			this.uuid = generateUUID();
+
+			this.name = '';
+			this.type = 'Object3D';
+
+			this.parent = null;
+			this.children = [];
+
+			this.up = Object3D.DefaultUp.clone();
+
+			const position = new Vector3();
+			const rotation = new Euler();
+			const quaternion = new Quaternion();
+			const scale = new Vector3( 1, 1, 1 );
+
+			function onRotationChange() {
+
+				quaternion.setFromEuler( rotation, false );
+
+			}
+
+			function onQuaternionChange() {
+
+				rotation.setFromQuaternion( quaternion, undefined, false );
+
+			}
+
+			rotation._onChange( onRotationChange );
+			quaternion._onChange( onQuaternionChange );
+
+			Object.defineProperties( this, {
+				position: {
+					configurable: true,
+					enumerable: true,
+					value: position
+				},
+				rotation: {
+					configurable: true,
+					enumerable: true,
+					value: rotation
+				},
+				quaternion: {
+					configurable: true,
+					enumerable: true,
+					value: quaternion
+				},
+				scale: {
+					configurable: true,
+					enumerable: true,
+					value: scale
+				},
+				modelViewMatrix: {
+					value: new Matrix4()
+				},
+				normalMatrix: {
+					value: new Matrix3()
+				}
+			} );
+
+			this.matrix = new Matrix4();
+			this.matrixWorld = new Matrix4();
+
+			this.matrixAutoUpdate = Object3D.DefaultMatrixAutoUpdate;
+			this.matrixWorldNeedsUpdate = false;
+
+			this.layers = new Layers();
+			this.visible = true;
+
+			this.castShadow = false;
+			this.receiveShadow = false;
+
+			this.frustumCulled = true;
+			this.renderOrder = 0;
+
+			this.animations = [];
+
+			this.userData = {};
+
+		}
+
+		onBeforeRender( /* renderer, scene, camera, geometry, material, group */ ) {}
+
+		onAfterRender( /* renderer, scene, camera, geometry, material, group */ ) {}
+
+		applyMatrix4( matrix ) {
 
 			if ( this.matrixAutoUpdate ) this.updateMatrix();
 
@@ -6795,47 +6224,47 @@
 
 			this.matrix.decompose( this.position, this.quaternion, this.scale );
 
-		},
+		}
 
-		applyQuaternion: function ( q ) {
+		applyQuaternion( q ) {
 
 			this.quaternion.premultiply( q );
 
 			return this;
 
-		},
+		}
 
-		setRotationFromAxisAngle: function ( axis, angle ) {
+		setRotationFromAxisAngle( axis, angle ) {
 
 			// assumes axis is normalized
 
 			this.quaternion.setFromAxisAngle( axis, angle );
 
-		},
+		}
 
-		setRotationFromEuler: function ( euler ) {
+		setRotationFromEuler( euler ) {
 
 			this.quaternion.setFromEuler( euler, true );
 
-		},
+		}
 
-		setRotationFromMatrix: function ( m ) {
+		setRotationFromMatrix( m ) {
 
 			// assumes the upper 3x3 of m is a pure rotation matrix (i.e, unscaled)
 
 			this.quaternion.setFromRotationMatrix( m );
 
-		},
+		}
 
-		setRotationFromQuaternion: function ( q ) {
+		setRotationFromQuaternion( q ) {
 
 			// assumes q is normalized
 
 			this.quaternion.copy( q );
 
-		},
+		}
 
-		rotateOnAxis: function ( axis, angle ) {
+		rotateOnAxis( axis, angle ) {
 
 			// rotate object on axis in object space
 			// axis is assumed to be normalized
@@ -6846,9 +6275,9 @@
 
 			return this;
 
-		},
+		}
 
-		rotateOnWorldAxis: function ( axis, angle ) {
+		rotateOnWorldAxis( axis, angle ) {
 
 			// rotate object on axis in world space
 			// axis is assumed to be normalized
@@ -6860,70 +6289,70 @@
 
 			return this;
 
-		},
+		}
 
-		rotateX: function ( angle ) {
+		rotateX( angle ) {
 
 			return this.rotateOnAxis( _xAxis, angle );
 
-		},
+		}
 
-		rotateY: function ( angle ) {
+		rotateY( angle ) {
 
 			return this.rotateOnAxis( _yAxis, angle );
 
-		},
+		}
 
-		rotateZ: function ( angle ) {
+		rotateZ( angle ) {
 
 			return this.rotateOnAxis( _zAxis, angle );
 
-		},
+		}
 
-		translateOnAxis: function ( axis, distance ) {
+		translateOnAxis( axis, distance ) {
 
 			// translate object by distance along axis in object space
 			// axis is assumed to be normalized
 
-			_v1$2.copy( axis ).applyQuaternion( this.quaternion );
+			_v1.copy( axis ).applyQuaternion( this.quaternion );
 
-			this.position.add( _v1$2.multiplyScalar( distance ) );
+			this.position.add( _v1.multiplyScalar( distance ) );
 
 			return this;
 
-		},
+		}
 
-		translateX: function ( distance ) {
+		translateX( distance ) {
 
 			return this.translateOnAxis( _xAxis, distance );
 
-		},
+		}
 
-		translateY: function ( distance ) {
+		translateY( distance ) {
 
 			return this.translateOnAxis( _yAxis, distance );
 
-		},
+		}
 
-		translateZ: function ( distance ) {
+		translateZ( distance ) {
 
 			return this.translateOnAxis( _zAxis, distance );
 
-		},
+		}
 
-		localToWorld: function ( vector ) {
+		localToWorld( vector ) {
 
 			return vector.applyMatrix4( this.matrixWorld );
 
-		},
+		}
 
-		worldToLocal: function ( vector ) {
+		worldToLocal( vector ) {
 
-			return vector.applyMatrix4( _m1$1.getInverse( this.matrixWorld ) );
+			return vector.applyMatrix4( _m1$1.copy( this.matrixWorld ).invert() );
 
-		},
+		}
 
-		lookAt: function ( x, y, z ) {
+		lookAt( x, y, z ) {
 
 			// This method does not support objects having non-uniformly-scaled parent(s)
 
@@ -6937,7 +6366,7 @@
 
 			}
 
-			var parent = this.parent;
+			const parent = this.parent;
 
 			this.updateWorldMatrix( true, false );
 
@@ -6959,17 +6388,17 @@
 
 				_m1$1.extractRotation( parent.matrixWorld );
 				_q1.setFromRotationMatrix( _m1$1 );
-				this.quaternion.premultiply( _q1.inverse() );
+				this.quaternion.premultiply( _q1.invert() );
 
 			}
 
-		},
+		}
 
-		add: function ( object ) {
+		add( object ) {
 
 			if ( arguments.length > 1 ) {
 
-				for ( var i = 0; i < arguments.length; i ++ ) {
+				for ( let i = 0; i < arguments.length; i ++ ) {
 
 					this.add( arguments[ i ] );
 
@@ -6981,12 +6410,12 @@
 
 			if ( object === this ) {
 
-				console.error( "THREE.Object3D.add: object can't be added as a child of itself.", object );
+				console.error( 'THREE.Object3D.add: object can\'t be added as a child of itself.', object );
 				return this;
 
 			}
 
-			if ( ( object && object.isObject3D ) ) {
+			if ( object && object.isObject3D ) {
 
 				if ( object.parent !== null ) {
 
@@ -7001,19 +6430,19 @@
 
 			} else {
 
-				console.error( "THREE.Object3D.add: object not an instance of THREE.Object3D.", object );
+				console.error( 'THREE.Object3D.add: object not an instance of THREE.Object3D.', object );
 
 			}
 
 			return this;
 
-		},
+		}
 
-		remove: function ( object ) {
+		remove( object ) {
 
 			if ( arguments.length > 1 ) {
 
-				for ( var i = 0; i < arguments.length; i ++ ) {
+				for ( let i = 0; i < arguments.length; i ++ ) {
 
 					this.remove( arguments[ i ] );
 
@@ -7023,7 +6452,7 @@
 
 			}
 
-			var index = this.children.indexOf( object );
+			const index = this.children.indexOf( object );
 
 			if ( index !== - 1 ) {
 
@@ -7036,15 +6465,48 @@
 
 			return this;
 
-		},
+		}
 
-		attach: function ( object ) {
+		removeFromParent() {
+
+			const parent = this.parent;
+
+			if ( parent !== null ) {
+
+				parent.remove( this );
+
+			}
+
+			return this;
+
+		}
+
+		clear() {
+
+			for ( let i = 0; i < this.children.length; i ++ ) {
+
+				const object = this.children[ i ];
+
+				object.parent = null;
+
+				object.dispatchEvent( _removedEvent );
+
+			}
+
+			this.children.length = 0;
+
+			return this;
+
+
+		}
+
+		attach( object ) {
 
 			// adds object as a child of this, while maintaining the object's world transform
 
 			this.updateWorldMatrix( true, false );
 
-			_m1$1.getInverse( this.matrixWorld );
+			_m1$1.copy( this.matrixWorld ).invert();
 
 			if ( object.parent !== null ) {
 
@@ -7056,34 +6518,34 @@
 
 			object.applyMatrix4( _m1$1 );
 
-			object.updateWorldMatrix( false, false );
-
 			this.add( object );
+
+			object.updateWorldMatrix( false, true );
 
 			return this;
 
-		},
+		}
 
-		getObjectById: function ( id ) {
+		getObjectById( id ) {
 
 			return this.getObjectByProperty( 'id', id );
 
-		},
+		}
 
-		getObjectByName: function ( name ) {
+		getObjectByName( name ) {
 
 			return this.getObjectByProperty( 'name', name );
 
-		},
+		}
 
-		getObjectByProperty: function ( name, value ) {
+		getObjectByProperty( name, value ) {
 
 			if ( this[ name ] === value ) return this;
 
-			for ( var i = 0, l = this.children.length; i < l; i ++ ) {
+			for ( let i = 0, l = this.children.length; i < l; i ++ ) {
 
-				var child = this.children[ i ];
-				var object = child.getObjectByProperty( name, value );
+				const child = this.children[ i ];
+				const object = child.getObjectByProperty( name, value );
 
 				if ( object !== undefined ) {
 
@@ -7095,109 +6557,81 @@
 
 			return undefined;
 
-		},
+		}
 
-		getWorldPosition: function ( target ) {
+		getWorldPosition( target ) {
 
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Object3D: .getWorldPosition() target is now required' );
-				target = new Vector3();
-
-			}
-
-			this.updateMatrixWorld( true );
+			this.updateWorldMatrix( true, false );
 
 			return target.setFromMatrixPosition( this.matrixWorld );
 
-		},
+		}
 
-		getWorldQuaternion: function ( target ) {
+		getWorldQuaternion( target ) {
 
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Object3D: .getWorldQuaternion() target is now required' );
-				target = new Quaternion();
-
-			}
-
-			this.updateMatrixWorld( true );
+			this.updateWorldMatrix( true, false );
 
 			this.matrixWorld.decompose( _position, target, _scale );
 
 			return target;
 
-		},
+		}
 
-		getWorldScale: function ( target ) {
+		getWorldScale( target ) {
 
-			if ( target === undefined ) {
+			this.updateWorldMatrix( true, false );
 
-				console.warn( 'THREE.Object3D: .getWorldScale() target is now required' );
-				target = new Vector3();
-
-			}
-
-			this.updateMatrixWorld( true );
-
-			this.matrixWorld.decompose( _position, _quaternion$2, target );
+			this.matrixWorld.decompose( _position, _quaternion, target );
 
 			return target;
 
-		},
+		}
 
-		getWorldDirection: function ( target ) {
+		getWorldDirection( target ) {
 
-			if ( target === undefined ) {
+			this.updateWorldMatrix( true, false );
 
-				console.warn( 'THREE.Object3D: .getWorldDirection() target is now required' );
-				target = new Vector3();
-
-			}
-
-			this.updateMatrixWorld( true );
-
-			var e = this.matrixWorld.elements;
+			const e = this.matrixWorld.elements;
 
 			return target.set( e[ 8 ], e[ 9 ], e[ 10 ] ).normalize();
 
-		},
+		}
 
-		raycast: function () {},
+		raycast() {}
 
-		traverse: function ( callback ) {
+		traverse( callback ) {
 
 			callback( this );
 
-			var children = this.children;
+			const children = this.children;
 
-			for ( var i = 0, l = children.length; i < l; i ++ ) {
+			for ( let i = 0, l = children.length; i < l; i ++ ) {
 
 				children[ i ].traverse( callback );
 
 			}
 
-		},
+		}
 
-		traverseVisible: function ( callback ) {
+		traverseVisible( callback ) {
 
 			if ( this.visible === false ) return;
 
 			callback( this );
 
-			var children = this.children;
+			const children = this.children;
 
-			for ( var i = 0, l = children.length; i < l; i ++ ) {
+			for ( let i = 0, l = children.length; i < l; i ++ ) {
 
 				children[ i ].traverseVisible( callback );
 
 			}
 
-		},
+		}
 
-		traverseAncestors: function ( callback ) {
+		traverseAncestors( callback ) {
 
-			var parent = this.parent;
+			const parent = this.parent;
 
 			if ( parent !== null ) {
 
@@ -7207,17 +6641,17 @@
 
 			}
 
-		},
+		}
 
-		updateMatrix: function () {
+		updateMatrix() {
 
 			this.matrix.compose( this.position, this.quaternion, this.scale );
 
 			this.matrixWorldNeedsUpdate = true;
 
-		},
+		}
 
-		updateMatrixWorld: function ( force ) {
+		updateMatrixWorld( force ) {
 
 			if ( this.matrixAutoUpdate ) this.updateMatrix();
 
@@ -7241,19 +6675,19 @@
 
 			// update children
 
-			var children = this.children;
+			const children = this.children;
 
-			for ( var i = 0, l = children.length; i < l; i ++ ) {
+			for ( let i = 0, l = children.length; i < l; i ++ ) {
 
 				children[ i ].updateMatrixWorld( force );
 
 			}
 
-		},
+		}
 
-		updateWorldMatrix: function ( updateParents, updateChildren ) {
+		updateWorldMatrix( updateParents, updateChildren ) {
 
-			var parent = this.parent;
+			const parent = this.parent;
 
 			if ( updateParents === true && parent !== null ) {
 
@@ -7277,9 +6711,9 @@
 
 			if ( updateChildren === true ) {
 
-				var children = this.children;
+				const children = this.children;
 
-				for ( var i = 0, l = children.length; i < l; i ++ ) {
+				for ( let i = 0, l = children.length; i < l; i ++ ) {
 
 					children[ i ].updateWorldMatrix( false, true );
 
@@ -7287,14 +6721,14 @@
 
 			}
 
-		},
+		}
 
-		toJSON: function ( meta ) {
+		toJSON( meta ) {
 
 			// meta is a string when called from JSON.stringify
-			var isRootObject = ( meta === undefined || typeof meta === 'string' );
+			const isRootObject = ( meta === undefined || typeof meta === 'string' );
 
-			var output = {};
+			const output = {};
 
 			// meta is a hash used to collect geometries, materials.
 			// not providing it implies that this is the root object
@@ -7307,7 +6741,9 @@
 					materials: {},
 					textures: {},
 					images: {},
-					shapes: {}
+					shapes: {},
+					skeletons: {},
+					animations: {}
 				};
 
 				output.metadata = {
@@ -7320,7 +6756,7 @@
 
 			// standard Object3D serialization
 
-			var object = {};
+			const object = {};
 
 			object.uuid = this.uuid;
 			object.type = this.type;
@@ -7345,6 +6781,7 @@
 				object.type = 'InstancedMesh';
 				object.count = this.count;
 				object.instanceMatrix = this.instanceMatrix.toJSON();
+				if ( this.instanceColor !== null ) object.instanceColor = this.instanceColor.toJSON();
 
 			}
 
@@ -7362,21 +6799,43 @@
 
 			}
 
-			if ( this.isMesh || this.isLine || this.isPoints ) {
+			if ( this.isScene ) {
+
+				if ( this.background ) {
+
+					if ( this.background.isColor ) {
+
+						object.background = this.background.toJSON();
+
+					} else if ( this.background.isTexture ) {
+
+						object.background = this.background.toJSON( meta ).uuid;
+
+					}
+
+				}
+
+				if ( this.environment && this.environment.isTexture ) {
+
+					object.environment = this.environment.toJSON( meta ).uuid;
+
+				}
+
+			} else if ( this.isMesh || this.isLine || this.isPoints ) {
 
 				object.geometry = serialize( meta.geometries, this.geometry );
 
-				var parameters = this.geometry.parameters;
+				const parameters = this.geometry.parameters;
 
 				if ( parameters !== undefined && parameters.shapes !== undefined ) {
 
-					var shapes = parameters.shapes;
+					const shapes = parameters.shapes;
 
 					if ( Array.isArray( shapes ) ) {
 
-						for ( var i = 0, l = shapes.length; i < l; i ++ ) {
+						for ( let i = 0, l = shapes.length; i < l; i ++ ) {
 
-							var shape = shapes[ i ];
+							const shape = shapes[ i ];
 
 							serialize( meta.shapes, shape );
 
@@ -7392,13 +6851,28 @@
 
 			}
 
+			if ( this.isSkinnedMesh ) {
+
+				object.bindMode = this.bindMode;
+				object.bindMatrix = this.bindMatrix.toArray();
+
+				if ( this.skeleton !== undefined ) {
+
+					serialize( meta.skeletons, this.skeleton );
+
+					object.skeleton = this.skeleton.uuid;
+
+				}
+
+			}
+
 			if ( this.material !== undefined ) {
 
 				if ( Array.isArray( this.material ) ) {
 
-					var uuids = [];
+					const uuids = [];
 
-					for ( var i = 0, l = this.material.length; i < l; i ++ ) {
+					for ( let i = 0, l = this.material.length; i < l; i ++ ) {
 
 						uuids.push( serialize( meta.materials, this.material[ i ] ) );
 
@@ -7420,7 +6894,7 @@
 
 				object.children = [];
 
-				for ( var i = 0; i < this.children.length; i ++ ) {
+				for ( let i = 0; i < this.children.length; i ++ ) {
 
 					object.children.push( this.children[ i ].toJSON( meta ).object );
 
@@ -7428,19 +6902,39 @@
 
 			}
 
+			//
+
+			if ( this.animations.length > 0 ) {
+
+				object.animations = [];
+
+				for ( let i = 0; i < this.animations.length; i ++ ) {
+
+					const animation = this.animations[ i ];
+
+					object.animations.push( serialize( meta.animations, animation ) );
+
+				}
+
+			}
+
 			if ( isRootObject ) {
 
-				var geometries = extractFromCache( meta.geometries );
-				var materials = extractFromCache( meta.materials );
-				var textures = extractFromCache( meta.textures );
-				var images = extractFromCache( meta.images );
-				var shapes = extractFromCache( meta.shapes );
+				const geometries = extractFromCache( meta.geometries );
+				const materials = extractFromCache( meta.materials );
+				const textures = extractFromCache( meta.textures );
+				const images = extractFromCache( meta.images );
+				const shapes = extractFromCache( meta.shapes );
+				const skeletons = extractFromCache( meta.skeletons );
+				const animations = extractFromCache( meta.animations );
 
 				if ( geometries.length > 0 ) output.geometries = geometries;
 				if ( materials.length > 0 ) output.materials = materials;
 				if ( textures.length > 0 ) output.textures = textures;
 				if ( images.length > 0 ) output.images = images;
 				if ( shapes.length > 0 ) output.shapes = shapes;
+				if ( skeletons.length > 0 ) output.skeletons = skeletons;
+				if ( animations.length > 0 ) output.animations = animations;
 
 			}
 
@@ -7453,35 +6947,35 @@
 			// and return as array
 			function extractFromCache( cache ) {
 
-				var values = [];
-				for ( var key in cache ) {
+				const values = [];
+				for ( const key in cache ) {
 
-					var data = cache[ key ];
+					const data = cache[ key ];
 					delete data.metadata;
 					values.push( data );
 
 				}
+
 				return values;
 
 			}
 
-		},
+		}
 
-		clone: function ( recursive ) {
+		clone( recursive ) {
 
 			return new this.constructor().copy( this, recursive );
 
-		},
+		}
 
-		copy: function ( source, recursive ) {
-
-			if ( recursive === undefined ) recursive = true;
+		copy( source, recursive = true ) {
 
 			this.name = source.name;
 
 			this.up.copy( source.up );
 
 			this.position.copy( source.position );
+			this.rotation.order = source.rotation.order;
 			this.quaternion.copy( source.quaternion );
 			this.scale.copy( source.scale );
 
@@ -7504,9 +6998,9 @@
 
 			if ( recursive === true ) {
 
-				for ( var i = 0; i < source.children.length; i ++ ) {
+				for ( let i = 0; i < source.children.length; i ++ ) {
 
-					var child = source.children[ i ];
+					const child = source.children[ i ];
 					this.add( child.clone() );
 
 				}
@@ -7517,19 +7011,20 @@
 
 		}
 
-	} );
+	}
 
-	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 */
+	Object3D.DefaultUp = new Vector3( 0, 1, 0 );
+	Object3D.DefaultMatrixAutoUpdate = true;
+
+	Object3D.prototype.isObject3D = true;
 
 	function arrayMax( array ) {
 
 		if ( array.length === 0 ) return - Infinity;
 
-		var max = array[ 0 ];
+		let max = array[ 0 ];
 
-		for ( var i = 1, l = array.length; i < l; ++ i ) {
+		for ( let i = 1, l = array.length; i < l; ++ i ) {
 
 			if ( array[ i ] > max ) max = array[ i ];
 
@@ -7539,59 +7034,52 @@
 
 	}
 
-	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
-	 */
+	let _id = 0;
 
-	var _bufferGeometryId = 1; // BufferGeometry uses odd numbers as Id
+	const _m1 = /*@__PURE__*/ new Matrix4();
+	const _obj = /*@__PURE__*/ new Object3D();
+	const _offset = /*@__PURE__*/ new Vector3();
+	const _box = /*@__PURE__*/ new Box3();
+	const _boxMorphTargets = /*@__PURE__*/ new Box3();
+	const _vector$1 = /*@__PURE__*/ new Vector3();
 
-	var _m1$2 = new Matrix4();
-	var _obj = new Object3D();
-	var _offset = new Vector3();
-	var _box$2 = new Box3();
-	var _boxMorphTargets = new Box3();
-	var _vector$3 = new Vector3();
+	class BufferGeometry extends EventDispatcher {
 
-	function BufferGeometry() {
+		constructor() {
 
-		Object.defineProperty( this, 'id', { value: _bufferGeometryId += 2 } );
+			super();
 
-		this.uuid = MathUtils.generateUUID();
+			Object.defineProperty( this, 'id', { value: _id ++ } );
 
-		this.name = '';
-		this.type = 'BufferGeometry';
+			this.uuid = generateUUID();
 
-		this.index = null;
-		this.attributes = {};
+			this.name = '';
+			this.type = 'BufferGeometry';
 
-		this.morphAttributes = {};
-		this.morphTargetsRelative = false;
+			this.index = null;
+			this.attributes = {};
 
-		this.groups = [];
+			this.morphAttributes = {};
+			this.morphTargetsRelative = false;
 
-		this.boundingBox = null;
-		this.boundingSphere = null;
+			this.groups = [];
 
-		this.drawRange = { start: 0, count: Infinity };
+			this.boundingBox = null;
+			this.boundingSphere = null;
 
-		this.userData = {};
+			this.drawRange = { start: 0, count: Infinity };
 
-	}
+			this.userData = {};
 
-	BufferGeometry.prototype = Object.assign( Object.create( EventDispatcher.prototype ), {
+		}
 
-		constructor: BufferGeometry,
-
-		isBufferGeometry: true,
-
-		getIndex: function () {
+		getIndex() {
 
 			return this.index;
 
-		},
+		}
 
-		setIndex: function ( index ) {
+		setIndex( index ) {
 
 			if ( Array.isArray( index ) ) {
 
@@ -7603,58 +7091,66 @@
 
 			}
 
-		},
+			return this;
 
-		getAttribute: function ( name ) {
+		}
+
+		getAttribute( name ) {
 
 			return this.attributes[ name ];
 
-		},
+		}
 
-		setAttribute: function ( name, attribute ) {
+		setAttribute( name, attribute ) {
 
 			this.attributes[ name ] = attribute;
 
 			return this;
 
-		},
+		}
 
-		deleteAttribute: function ( name ) {
+		deleteAttribute( name ) {
 
 			delete this.attributes[ name ];
 
 			return this;
 
-		},
+		}
 
-		addGroup: function ( start, count, materialIndex ) {
+		hasAttribute( name ) {
+
+			return this.attributes[ name ] !== undefined;
+
+		}
+
+		addGroup( start, count, materialIndex = 0 ) {
 
 			this.groups.push( {
 
 				start: start,
 				count: count,
-				materialIndex: materialIndex !== undefined ? materialIndex : 0
+				materialIndex: materialIndex
 
 			} );
 
-		},
+		}
 
-		clearGroups: function () {
+		clearGroups() {
 
 			this.groups = [];
 
-		},
+		}
 
-		setDrawRange: function ( start, count ) {
+		setDrawRange( start, count ) {
 
 			this.drawRange.start = start;
 			this.drawRange.count = count;
 
-		},
+		}
 
-		applyMatrix4: function ( matrix ) {
+		applyMatrix4( matrix ) {
 
-			var position = this.attributes.position;
+			const position = this.attributes.position;
 
 			if ( position !== undefined ) {
 
@@ -7664,11 +7160,11 @@
 
 			}
 
-			var normal = this.attributes.normal;
+			const normal = this.attributes.normal;
 
 			if ( normal !== undefined ) {
 
-				var normalMatrix = new Matrix3().getNormalMatrix( matrix );
+				const normalMatrix = new Matrix3().getNormalMatrix( matrix );
 
 				normal.applyNormalMatrix( normalMatrix );
 
@@ -7676,7 +7172,7 @@
 
 			}
 
-			var tangent = this.attributes.tangent;
+			const tangent = this.attributes.tangent;
 
 			if ( tangent !== undefined ) {
 
@@ -7700,69 +7196,79 @@
 
 			return this;
 
-		},
+		}
 
-		rotateX: function ( angle ) {
+		applyQuaternion( q ) {
+
+			_m1.makeRotationFromQuaternion( q );
+
+			this.applyMatrix4( _m1 );
+
+			return this;
+
+		}
+
+		rotateX( angle ) {
 
 			// rotate geometry around world x-axis
 
-			_m1$2.makeRotationX( angle );
+			_m1.makeRotationX( angle );
 
-			this.applyMatrix4( _m1$2 );
+			this.applyMatrix4( _m1 );
 
 			return this;
 
-		},
+		}
 
-		rotateY: function ( angle ) {
+		rotateY( angle ) {
 
 			// rotate geometry around world y-axis
 
-			_m1$2.makeRotationY( angle );
+			_m1.makeRotationY( angle );
 
-			this.applyMatrix4( _m1$2 );
+			this.applyMatrix4( _m1 );
 
 			return this;
 
-		},
+		}
 
-		rotateZ: function ( angle ) {
+		rotateZ( angle ) {
 
 			// rotate geometry around world z-axis
 
-			_m1$2.makeRotationZ( angle );
+			_m1.makeRotationZ( angle );
 
-			this.applyMatrix4( _m1$2 );
+			this.applyMatrix4( _m1 );
 
 			return this;
 
-		},
+		}
 
-		translate: function ( x, y, z ) {
+		translate( x, y, z ) {
 
 			// translate geometry
 
-			_m1$2.makeTranslation( x, y, z );
+			_m1.makeTranslation( x, y, z );
 
-			this.applyMatrix4( _m1$2 );
+			this.applyMatrix4( _m1 );
 
 			return this;
 
-		},
+		}
 
-		scale: function ( x, y, z ) {
+		scale( x, y, z ) {
 
 			// scale geometry
 
-			_m1$2.makeScale( x, y, z );
+			_m1.makeScale( x, y, z );
 
-			this.applyMatrix4( _m1$2 );
+			this.applyMatrix4( _m1 );
 
 			return this;
 
-		},
+		}
 
-		lookAt: function ( vector ) {
+		lookAt( vector ) {
 
 			_obj.lookAt( vector );
 
@@ -7772,9 +7278,9 @@
 
 			return this;
 
-		},
+		}
 
-		center: function () {
+		center() {
 
 			this.computeBoundingBox();
 
@@ -7784,63 +7290,15 @@
 
 			return this;
 
-		},
+		}
 
-		setFromObject: function ( object ) {
+		setFromPoints( points ) {
 
-			// console.log( 'THREE.BufferGeometry.setFromObject(). Converting', object, this );
+			const position = [];
 
-			var geometry = object.geometry;
+			for ( let i = 0, l = points.length; i < l; i ++ ) {
 
-			if ( object.isPoints || object.isLine ) {
-
-				var positions = new Float32BufferAttribute( geometry.vertices.length * 3, 3 );
-				var colors = new Float32BufferAttribute( geometry.colors.length * 3, 3 );
-
-				this.setAttribute( 'position', positions.copyVector3sArray( geometry.vertices ) );
-				this.setAttribute( 'color', colors.copyColorsArray( geometry.colors ) );
-
-				if ( geometry.lineDistances && geometry.lineDistances.length === geometry.vertices.length ) {
-
-					var lineDistances = new Float32BufferAttribute( geometry.lineDistances.length, 1 );
-
-					this.setAttribute( 'lineDistance', lineDistances.copyArray( geometry.lineDistances ) );
-
-				}
-
-				if ( geometry.boundingSphere !== null ) {
-
-					this.boundingSphere = geometry.boundingSphere.clone();
-
-				}
-
-				if ( geometry.boundingBox !== null ) {
-
-					this.boundingBox = geometry.boundingBox.clone();
-
-				}
-
-			} else if ( object.isMesh ) {
-
-				if ( geometry && geometry.isGeometry ) {
-
-					this.fromGeometry( geometry );
-
-				}
-
-			}
-
-			return this;
-
-		},
-
-		setFromPoints: function ( points ) {
-
-			var position = [];
-
-			for ( var i = 0, l = points.length; i < l; i ++ ) {
-
-				var point = points[ i ];
+				const point = points[ i ];
 				position.push( point.x, point.y, point.z || 0 );
 
 			}
@@ -7849,237 +7307,9 @@
 
 			return this;
 
-		},
+		}
 
-		updateFromObject: function ( object ) {
-
-			var geometry = object.geometry;
-
-			if ( object.isMesh ) {
-
-				var direct = geometry.__directGeometry;
-
-				if ( geometry.elementsNeedUpdate === true ) {
-
-					direct = undefined;
-					geometry.elementsNeedUpdate = false;
-
-				}
-
-				if ( direct === undefined ) {
-
-					return this.fromGeometry( geometry );
-
-				}
-
-				direct.verticesNeedUpdate = geometry.verticesNeedUpdate;
-				direct.normalsNeedUpdate = geometry.normalsNeedUpdate;
-				direct.colorsNeedUpdate = geometry.colorsNeedUpdate;
-				direct.uvsNeedUpdate = geometry.uvsNeedUpdate;
-				direct.groupsNeedUpdate = geometry.groupsNeedUpdate;
-
-				geometry.verticesNeedUpdate = false;
-				geometry.normalsNeedUpdate = false;
-				geometry.colorsNeedUpdate = false;
-				geometry.uvsNeedUpdate = false;
-				geometry.groupsNeedUpdate = false;
-
-				geometry = direct;
-
-			}
-
-			var attribute;
-
-			if ( geometry.verticesNeedUpdate === true ) {
-
-				attribute = this.attributes.position;
-
-				if ( attribute !== undefined ) {
-
-					attribute.copyVector3sArray( geometry.vertices );
-					attribute.needsUpdate = true;
-
-				}
-
-				geometry.verticesNeedUpdate = false;
-
-			}
-
-			if ( geometry.normalsNeedUpdate === true ) {
-
-				attribute = this.attributes.normal;
-
-				if ( attribute !== undefined ) {
-
-					attribute.copyVector3sArray( geometry.normals );
-					attribute.needsUpdate = true;
-
-				}
-
-				geometry.normalsNeedUpdate = false;
-
-			}
-
-			if ( geometry.colorsNeedUpdate === true ) {
-
-				attribute = this.attributes.color;
-
-				if ( attribute !== undefined ) {
-
-					attribute.copyColorsArray( geometry.colors );
-					attribute.needsUpdate = true;
-
-				}
-
-				geometry.colorsNeedUpdate = false;
-
-			}
-
-			if ( geometry.uvsNeedUpdate ) {
-
-				attribute = this.attributes.uv;
-
-				if ( attribute !== undefined ) {
-
-					attribute.copyVector2sArray( geometry.uvs );
-					attribute.needsUpdate = true;
-
-				}
-
-				geometry.uvsNeedUpdate = false;
-
-			}
-
-			if ( geometry.lineDistancesNeedUpdate ) {
-
-				attribute = this.attributes.lineDistance;
-
-				if ( attribute !== undefined ) {
-
-					attribute.copyArray( geometry.lineDistances );
-					attribute.needsUpdate = true;
-
-				}
-
-				geometry.lineDistancesNeedUpdate = false;
-
-			}
-
-			if ( geometry.groupsNeedUpdate ) {
-
-				geometry.computeGroups( object.geometry );
-				this.groups = geometry.groups;
-
-				geometry.groupsNeedUpdate = false;
-
-			}
-
-			return this;
-
-		},
-
-		fromGeometry: function ( geometry ) {
-
-			geometry.__directGeometry = new DirectGeometry().fromGeometry( geometry );
-
-			return this.fromDirectGeometry( geometry.__directGeometry );
-
-		},
-
-		fromDirectGeometry: function ( geometry ) {
-
-			var positions = new Float32Array( geometry.vertices.length * 3 );
-			this.setAttribute( 'position', new BufferAttribute( positions, 3 ).copyVector3sArray( geometry.vertices ) );
-
-			if ( geometry.normals.length > 0 ) {
-
-				var normals = new Float32Array( geometry.normals.length * 3 );
-				this.setAttribute( 'normal', new BufferAttribute( normals, 3 ).copyVector3sArray( geometry.normals ) );
-
-			}
-
-			if ( geometry.colors.length > 0 ) {
-
-				var colors = new Float32Array( geometry.colors.length * 3 );
-				this.setAttribute( 'color', new BufferAttribute( colors, 3 ).copyColorsArray( geometry.colors ) );
-
-			}
-
-			if ( geometry.uvs.length > 0 ) {
-
-				var uvs = new Float32Array( geometry.uvs.length * 2 );
-				this.setAttribute( 'uv', new BufferAttribute( uvs, 2 ).copyVector2sArray( geometry.uvs ) );
-
-			}
-
-			if ( geometry.uvs2.length > 0 ) {
-
-				var uvs2 = new Float32Array( geometry.uvs2.length * 2 );
-				this.setAttribute( 'uv2', new BufferAttribute( uvs2, 2 ).copyVector2sArray( geometry.uvs2 ) );
-
-			}
-
-			// groups
-
-			this.groups = geometry.groups;
-
-			// morphs
-
-			for ( var name in geometry.morphTargets ) {
-
-				var array = [];
-				var morphTargets = geometry.morphTargets[ name ];
-
-				for ( var i = 0, l = morphTargets.length; i < l; i ++ ) {
-
-					var morphTarget = morphTargets[ i ];
-
-					var attribute = new Float32BufferAttribute( morphTarget.data.length * 3, 3 );
-					attribute.name = morphTarget.name;
-
-					array.push( attribute.copyVector3sArray( morphTarget.data ) );
-
-				}
-
-				this.morphAttributes[ name ] = array;
-
-			}
-
-			// skinning
-
-			if ( geometry.skinIndices.length > 0 ) {
-
-				var skinIndices = new Float32BufferAttribute( geometry.skinIndices.length * 4, 4 );
-				this.setAttribute( 'skinIndex', skinIndices.copyVector4sArray( geometry.skinIndices ) );
-
-			}
-
-			if ( geometry.skinWeights.length > 0 ) {
-
-				var skinWeights = new Float32BufferAttribute( geometry.skinWeights.length * 4, 4 );
-				this.setAttribute( 'skinWeight', skinWeights.copyVector4sArray( geometry.skinWeights ) );
-
-			}
-
-			//
-
-			if ( geometry.boundingSphere !== null ) {
-
-				this.boundingSphere = geometry.boundingSphere.clone();
-
-			}
-
-			if ( geometry.boundingBox !== null ) {
-
-				this.boundingBox = geometry.boundingBox.clone();
-
-			}
-
-			return this;
-
-		},
-
-		computeBoundingBox: function () {
+		computeBoundingBox() {
 
 			if ( this.boundingBox === null ) {
 
@@ -8087,8 +7317,21 @@
 
 			}
 
-			var position = this.attributes.position;
-			var morphAttributesPosition = this.morphAttributes.position;
+			const position = this.attributes.position;
+			const morphAttributesPosition = this.morphAttributes.position;
+
+			if ( position && position.isGLBufferAttribute ) {
+
+				console.error( 'THREE.BufferGeometry.computeBoundingBox(): GLBufferAttribute requires a manual bounding box. Alternatively set "mesh.frustumCulled" to "false".', this );
+
+				this.boundingBox.set(
+					new Vector3( - Infinity, - Infinity, - Infinity ),
+					new Vector3( + Infinity, + Infinity, + Infinity )
+				);
+
+				return;
+
+			}
 
 			if ( position !== undefined ) {
 
@@ -8098,23 +7341,23 @@
 
 				if ( morphAttributesPosition ) {
 
-					for ( var i = 0, il = morphAttributesPosition.length; i < il; i ++ ) {
+					for ( let i = 0, il = morphAttributesPosition.length; i < il; i ++ ) {
 
-						var morphAttribute = morphAttributesPosition[ i ];
-						_box$2.setFromBufferAttribute( morphAttribute );
+						const morphAttribute = morphAttributesPosition[ i ];
+						_box.setFromBufferAttribute( morphAttribute );
 
 						if ( this.morphTargetsRelative ) {
 
-							_vector$3.addVectors( this.boundingBox.min, _box$2.min );
-							this.boundingBox.expandByPoint( _vector$3 );
+							_vector$1.addVectors( this.boundingBox.min, _box.min );
+							this.boundingBox.expandByPoint( _vector$1 );
 
-							_vector$3.addVectors( this.boundingBox.max, _box$2.max );
-							this.boundingBox.expandByPoint( _vector$3 );
+							_vector$1.addVectors( this.boundingBox.max, _box.max );
+							this.boundingBox.expandByPoint( _vector$1 );
 
 						} else {
 
-							this.boundingBox.expandByPoint( _box$2.min );
-							this.boundingBox.expandByPoint( _box$2.max );
+							this.boundingBox.expandByPoint( _box.min );
+							this.boundingBox.expandByPoint( _box.max );
 
 						}
 
@@ -8130,13 +7373,13 @@
 
 			if ( isNaN( this.boundingBox.min.x ) || isNaN( this.boundingBox.min.y ) || isNaN( this.boundingBox.min.z ) ) {
 
-				console.error( 'THREE.BufferGeometry.computeBoundingBox: Computed min/max have NaN values. The "position" attribute is likely to have NaN values.', this );
+				console.error( 'THREE.BufferGeometry.computeBoundingBox(): Computed min/max have NaN values. The "position" attribute is likely to have NaN values.', this );
 
 			}
 
-		},
+		}
 
-		computeBoundingSphere: function () {
+		computeBoundingSphere() {
 
 			if ( this.boundingSphere === null ) {
 
@@ -8144,38 +7387,48 @@
 
 			}
 
-			var position = this.attributes.position;
-			var morphAttributesPosition = this.morphAttributes.position;
+			const position = this.attributes.position;
+			const morphAttributesPosition = this.morphAttributes.position;
+
+			if ( position && position.isGLBufferAttribute ) {
+
+				console.error( 'THREE.BufferGeometry.computeBoundingSphere(): GLBufferAttribute requires a manual bounding sphere. Alternatively set "mesh.frustumCulled" to "false".', this );
+
+				this.boundingSphere.set( new Vector3(), Infinity );
+
+				return;
+
+			}
 
 			if ( position ) {
 
 				// first, find the center of the bounding sphere
 
-				var center = this.boundingSphere.center;
+				const center = this.boundingSphere.center;
 
-				_box$2.setFromBufferAttribute( position );
+				_box.setFromBufferAttribute( position );
 
 				// process morph attributes if present
 
 				if ( morphAttributesPosition ) {
 
-					for ( var i = 0, il = morphAttributesPosition.length; i < il; i ++ ) {
+					for ( let i = 0, il = morphAttributesPosition.length; i < il; i ++ ) {
 
-						var morphAttribute = morphAttributesPosition[ i ];
+						const morphAttribute = morphAttributesPosition[ i ];
 						_boxMorphTargets.setFromBufferAttribute( morphAttribute );
 
 						if ( this.morphTargetsRelative ) {
 
-							_vector$3.addVectors( _box$2.min, _boxMorphTargets.min );
-							_box$2.expandByPoint( _vector$3 );
+							_vector$1.addVectors( _box.min, _boxMorphTargets.min );
+							_box.expandByPoint( _vector$1 );
 
-							_vector$3.addVectors( _box$2.max, _boxMorphTargets.max );
-							_box$2.expandByPoint( _vector$3 );
+							_vector$1.addVectors( _box.max, _boxMorphTargets.max );
+							_box.expandByPoint( _vector$1 );
 
 						} else {
 
-							_box$2.expandByPoint( _boxMorphTargets.min );
-							_box$2.expandByPoint( _boxMorphTargets.max );
+							_box.expandByPoint( _boxMorphTargets.min );
+							_box.expandByPoint( _boxMorphTargets.max );
 
 						}
 
@@ -8183,18 +7436,18 @@
 
 				}
 
-				_box$2.getCenter( center );
+				_box.getCenter( center );
 
 				// second, try to find a boundingSphere with a radius smaller than the
 				// boundingSphere of the boundingBox: sqrt(3) smaller in the best case
 
-				var maxRadiusSq = 0;
+				let maxRadiusSq = 0;
 
-				for ( var i = 0, il = position.count; i < il; i ++ ) {
+				for ( let i = 0, il = position.count; i < il; i ++ ) {
 
-					_vector$3.fromBufferAttribute( position, i );
+					_vector$1.fromBufferAttribute( position, i );
 
-					maxRadiusSq = Math.max( maxRadiusSq, center.distanceToSquared( _vector$3 ) );
+					maxRadiusSq = Math.max( maxRadiusSq, center.distanceToSquared( _vector$1 ) );
 
 				}
 
@@ -8202,23 +7455,23 @@
 
 				if ( morphAttributesPosition ) {
 
-					for ( var i = 0, il = morphAttributesPosition.length; i < il; i ++ ) {
+					for ( let i = 0, il = morphAttributesPosition.length; i < il; i ++ ) {
 
-						var morphAttribute = morphAttributesPosition[ i ];
-						var morphTargetsRelative = this.morphTargetsRelative;
+						const morphAttribute = morphAttributesPosition[ i ];
+						const morphTargetsRelative = this.morphTargetsRelative;
 
-						for ( var j = 0, jl = morphAttribute.count; j < jl; j ++ ) {
+						for ( let j = 0, jl = morphAttribute.count; j < jl; j ++ ) {
 
-							_vector$3.fromBufferAttribute( morphAttribute, j );
+							_vector$1.fromBufferAttribute( morphAttribute, j );
 
 							if ( morphTargetsRelative ) {
 
 								_offset.fromBufferAttribute( position, j );
-								_vector$3.add( _offset );
+								_vector$1.add( _offset );
 
 							}
 
-							maxRadiusSq = Math.max( maxRadiusSq, center.distanceToSquared( _vector$3 ) );
+							maxRadiusSq = Math.max( maxRadiusSq, center.distanceToSquared( _vector$1 ) );
 
 						}
 
@@ -8236,78 +7489,232 @@
 
 			}
 
-		},
+		}
 
-		computeFaceNormals: function () {
+		computeTangents() {
 
-			// backwards compatibility
+			const index = this.index;
+			const attributes = this.attributes;
 
-		},
+			// based on http://www.terathon.com/code/tangent.html
+			// (per vertex tangents)
 
-		computeVertexNormals: function () {
+			if ( index === null ||
+				 attributes.position === undefined ||
+				 attributes.normal === undefined ||
+				 attributes.uv === undefined ) {
 
-			var index = this.index;
-			var attributes = this.attributes;
+				console.error( 'THREE.BufferGeometry: .computeTangents() failed. Missing required attributes (index, position, normal or uv)' );
+				return;
 
-			if ( attributes.position ) {
+			}
 
-				var positions = attributes.position.array;
+			const indices = index.array;
+			const positions = attributes.position.array;
+			const normals = attributes.normal.array;
+			const uvs = attributes.uv.array;
 
-				if ( attributes.normal === undefined ) {
+			const nVertices = positions.length / 3;
 
-					this.setAttribute( 'normal', new BufferAttribute( new Float32Array( positions.length ), 3 ) );
+			if ( attributes.tangent === undefined ) {
+
+				this.setAttribute( 'tangent', new BufferAttribute( new Float32Array( 4 * nVertices ), 4 ) );
+
+			}
+
+			const tangents = attributes.tangent.array;
+
+			const tan1 = [], tan2 = [];
+
+			for ( let i = 0; i < nVertices; i ++ ) {
+
+				tan1[ i ] = new Vector3();
+				tan2[ i ] = new Vector3();
+
+			}
+
+			const vA = new Vector3(),
+				vB = new Vector3(),
+				vC = new Vector3(),
+
+				uvA = new Vector2(),
+				uvB = new Vector2(),
+				uvC = new Vector2(),
+
+				sdir = new Vector3(),
+				tdir = new Vector3();
+
+			function handleTriangle( a, b, c ) {
+
+				vA.fromArray( positions, a * 3 );
+				vB.fromArray( positions, b * 3 );
+				vC.fromArray( positions, c * 3 );
+
+				uvA.fromArray( uvs, a * 2 );
+				uvB.fromArray( uvs, b * 2 );
+				uvC.fromArray( uvs, c * 2 );
+
+				vB.sub( vA );
+				vC.sub( vA );
+
+				uvB.sub( uvA );
+				uvC.sub( uvA );
+
+				const r = 1.0 / ( uvB.x * uvC.y - uvC.x * uvB.y );
+
+				// silently ignore degenerate uv triangles having coincident or colinear vertices
+
+				if ( ! isFinite( r ) ) return;
+
+				sdir.copy( vB ).multiplyScalar( uvC.y ).addScaledVector( vC, - uvB.y ).multiplyScalar( r );
+				tdir.copy( vC ).multiplyScalar( uvB.x ).addScaledVector( vB, - uvC.x ).multiplyScalar( r );
+
+				tan1[ a ].add( sdir );
+				tan1[ b ].add( sdir );
+				tan1[ c ].add( sdir );
+
+				tan2[ a ].add( tdir );
+				tan2[ b ].add( tdir );
+				tan2[ c ].add( tdir );
+
+			}
+
+			let groups = this.groups;
+
+			if ( groups.length === 0 ) {
+
+				groups = [ {
+					start: 0,
+					count: indices.length
+				} ];
+
+			}
+
+			for ( let i = 0, il = groups.length; i < il; ++ i ) {
+
+				const group = groups[ i ];
+
+				const start = group.start;
+				const count = group.count;
+
+				for ( let j = start, jl = start + count; j < jl; j += 3 ) {
+
+					handleTriangle(
+						indices[ j + 0 ],
+						indices[ j + 1 ],
+						indices[ j + 2 ]
+					);
+
+				}
+
+			}
+
+			const tmp = new Vector3(), tmp2 = new Vector3();
+			const n = new Vector3(), n2 = new Vector3();
+
+			function handleVertex( v ) {
+
+				n.fromArray( normals, v * 3 );
+				n2.copy( n );
+
+				const t = tan1[ v ];
+
+				// Gram-Schmidt orthogonalize
+
+				tmp.copy( t );
+				tmp.sub( n.multiplyScalar( n.dot( t ) ) ).normalize();
+
+				// Calculate handedness
+
+				tmp2.crossVectors( n2, t );
+				const test = tmp2.dot( tan2[ v ] );
+				const w = ( test < 0.0 ) ? - 1.0 : 1.0;
+
+				tangents[ v * 4 ] = tmp.x;
+				tangents[ v * 4 + 1 ] = tmp.y;
+				tangents[ v * 4 + 2 ] = tmp.z;
+				tangents[ v * 4 + 3 ] = w;
+
+			}
+
+			for ( let i = 0, il = groups.length; i < il; ++ i ) {
+
+				const group = groups[ i ];
+
+				const start = group.start;
+				const count = group.count;
+
+				for ( let j = start, jl = start + count; j < jl; j += 3 ) {
+
+					handleVertex( indices[ j + 0 ] );
+					handleVertex( indices[ j + 1 ] );
+					handleVertex( indices[ j + 2 ] );
+
+				}
+
+			}
+
+		}
+
+		computeVertexNormals() {
+
+			const index = this.index;
+			const positionAttribute = this.getAttribute( 'position' );
+
+			if ( positionAttribute !== undefined ) {
+
+				let normalAttribute = this.getAttribute( 'normal' );
+
+				if ( normalAttribute === undefined ) {
+
+					normalAttribute = new BufferAttribute( new Float32Array( positionAttribute.count * 3 ), 3 );
+					this.setAttribute( 'normal', normalAttribute );
 
 				} else {
 
 					// reset existing normals to zero
 
-					var array = attributes.normal.array;
+					for ( let i = 0, il = normalAttribute.count; i < il; i ++ ) {
 
-					for ( var i = 0, il = array.length; i < il; i ++ ) {
-
-						array[ i ] = 0;
+						normalAttribute.setXYZ( i, 0, 0, 0 );
 
 					}
 
 				}
 
-				var normals = attributes.normal.array;
-
-				var vA, vB, vC;
-				var pA = new Vector3(), pB = new Vector3(), pC = new Vector3();
-				var cb = new Vector3(), ab = new Vector3();
+				const pA = new Vector3(), pB = new Vector3(), pC = new Vector3();
+				const nA = new Vector3(), nB = new Vector3(), nC = new Vector3();
+				const cb = new Vector3(), ab = new Vector3();
 
 				// indexed elements
 
 				if ( index ) {
 
-					var indices = index.array;
+					for ( let i = 0, il = index.count; i < il; i += 3 ) {
 
-					for ( var i = 0, il = index.count; i < il; i += 3 ) {
+						const vA = index.getX( i + 0 );
+						const vB = index.getX( i + 1 );
+						const vC = index.getX( i + 2 );
 
-						vA = indices[ i + 0 ] * 3;
-						vB = indices[ i + 1 ] * 3;
-						vC = indices[ i + 2 ] * 3;
-
-						pA.fromArray( positions, vA );
-						pB.fromArray( positions, vB );
-						pC.fromArray( positions, vC );
+						pA.fromBufferAttribute( positionAttribute, vA );
+						pB.fromBufferAttribute( positionAttribute, vB );
+						pC.fromBufferAttribute( positionAttribute, vC );
 
 						cb.subVectors( pC, pB );
 						ab.subVectors( pA, pB );
 						cb.cross( ab );
 
-						normals[ vA ] += cb.x;
-						normals[ vA + 1 ] += cb.y;
-						normals[ vA + 2 ] += cb.z;
+						nA.fromBufferAttribute( normalAttribute, vA );
+						nB.fromBufferAttribute( normalAttribute, vB );
+						nC.fromBufferAttribute( normalAttribute, vC );
 
-						normals[ vB ] += cb.x;
-						normals[ vB + 1 ] += cb.y;
-						normals[ vB + 2 ] += cb.z;
+						nA.add( cb );
+						nB.add( cb );
+						nC.add( cb );
 
-						normals[ vC ] += cb.x;
-						normals[ vC + 1 ] += cb.y;
-						normals[ vC + 2 ] += cb.z;
+						normalAttribute.setXYZ( vA, nA.x, nA.y, nA.z );
+						normalAttribute.setXYZ( vB, nB.x, nB.y, nB.z );
+						normalAttribute.setXYZ( vC, nC.x, nC.y, nC.z );
 
 					}
 
@@ -8315,27 +7722,19 @@
 
 					// non-indexed elements (unconnected triangle soup)
 
-					for ( var i = 0, il = positions.length; i < il; i += 9 ) {
+					for ( let i = 0, il = positionAttribute.count; i < il; i += 3 ) {
 
-						pA.fromArray( positions, i );
-						pB.fromArray( positions, i + 3 );
-						pC.fromArray( positions, i + 6 );
+						pA.fromBufferAttribute( positionAttribute, i + 0 );
+						pB.fromBufferAttribute( positionAttribute, i + 1 );
+						pC.fromBufferAttribute( positionAttribute, i + 2 );
 
 						cb.subVectors( pC, pB );
 						ab.subVectors( pA, pB );
 						cb.cross( ab );
 
-						normals[ i ] = cb.x;
-						normals[ i + 1 ] = cb.y;
-						normals[ i + 2 ] = cb.z;
-
-						normals[ i + 3 ] = cb.x;
-						normals[ i + 4 ] = cb.y;
-						normals[ i + 5 ] = cb.z;
-
-						normals[ i + 6 ] = cb.x;
-						normals[ i + 7 ] = cb.y;
-						normals[ i + 8 ] = cb.z;
+						normalAttribute.setXYZ( i + 0, cb.x, cb.y, cb.z );
+						normalAttribute.setXYZ( i + 1, cb.x, cb.y, cb.z );
+						normalAttribute.setXYZ( i + 2, cb.x, cb.y, cb.z );
 
 					}
 
@@ -8343,13 +7742,13 @@
 
 				this.normalizeNormals();
 
-				attributes.normal.needsUpdate = true;
+				normalAttribute.needsUpdate = true;
 
 			}
 
-		},
+		}
 
-		merge: function ( geometry, offset ) {
+		merge( geometry, offset ) {
 
 			if ( ! ( geometry && geometry.isBufferGeometry ) ) {
 
@@ -8369,22 +7768,22 @@
 
 			}
 
-			var attributes = this.attributes;
+			const attributes = this.attributes;
 
-			for ( var key in attributes ) {
+			for ( const key in attributes ) {
 
 				if ( geometry.attributes[ key ] === undefined ) continue;
 
-				var attribute1 = attributes[ key ];
-				var attributeArray1 = attribute1.array;
+				const attribute1 = attributes[ key ];
+				const attributeArray1 = attribute1.array;
 
-				var attribute2 = geometry.attributes[ key ];
-				var attributeArray2 = attribute2.array;
+				const attribute2 = geometry.attributes[ key ];
+				const attributeArray2 = attribute2.array;
 
-				var attributeOffset = attribute2.itemSize * offset;
-				var length = Math.min( attributeArray2.length, attributeArray1.length - attributeOffset );
+				const attributeOffset = attribute2.itemSize * offset;
+				const length = Math.min( attributeArray2.length, attributeArray1.length - attributeOffset );
 
-				for ( var i = 0, j = attributeOffset; i < length; i ++, j ++ ) {
+				for ( let i = 0, j = attributeOffset; i < length; i ++, j ++ ) {
 
 					attributeArray1[ j ] = attributeArray2[ i ];
 
@@ -8394,42 +7793,49 @@
 
 			return this;
 
-		},
+		}
 
-		normalizeNormals: function () {
+		normalizeNormals() {
 
-			var normals = this.attributes.normal;
+			const normals = this.attributes.normal;
 
-			for ( var i = 0, il = normals.count; i < il; i ++ ) {
+			for ( let i = 0, il = normals.count; i < il; i ++ ) {
 
-				_vector$3.x = normals.getX( i );
-				_vector$3.y = normals.getY( i );
-				_vector$3.z = normals.getZ( i );
+				_vector$1.fromBufferAttribute( normals, i );
 
-				_vector$3.normalize();
+				_vector$1.normalize();
 
-				normals.setXYZ( i, _vector$3.x, _vector$3.y, _vector$3.z );
+				normals.setXYZ( i, _vector$1.x, _vector$1.y, _vector$1.z );
 
 			}
 
-		},
+		}
 
-		toNonIndexed: function () {
+		toNonIndexed() {
 
 			function convertBufferAttribute( attribute, indices ) {
 
-				var array = attribute.array;
-				var itemSize = attribute.itemSize;
+				const array = attribute.array;
+				const itemSize = attribute.itemSize;
+				const normalized = attribute.normalized;
 
-				var array2 = new array.constructor( indices.length * itemSize );
+				const array2 = new array.constructor( indices.length * itemSize );
 
-				var index = 0, index2 = 0;
+				let index = 0, index2 = 0;
 
-				for ( var i = 0, l = indices.length; i < l; i ++ ) {
+				for ( let i = 0, l = indices.length; i < l; i ++ ) {
 
-					index = indices[ i ] * itemSize;
+					if ( attribute.isInterleavedBufferAttribute ) {
 
-					for ( var j = 0; j < itemSize; j ++ ) {
+						index = indices[ i ] * attribute.data.stride + attribute.offset;
+
+					} else {
+
+						index = indices[ i ] * itemSize;
+
+					}
+
+					for ( let j = 0; j < itemSize; j ++ ) {
 
 						array2[ index2 ++ ] = array[ index ++ ];
 
@@ -8437,7 +7843,7 @@
 
 				}
 
-				return new BufferAttribute( array2, itemSize );
+				return new BufferAttribute( array2, itemSize, normalized );
 
 			}
 
@@ -8445,23 +7851,23 @@
 
 			if ( this.index === null ) {
 
-				console.warn( 'THREE.BufferGeometry.toNonIndexed(): Geometry is already non-indexed.' );
+				console.warn( 'THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed.' );
 				return this;
 
 			}
 
-			var geometry2 = new BufferGeometry();
+			const geometry2 = new BufferGeometry();
 
-			var indices = this.index.array;
-			var attributes = this.attributes;
+			const indices = this.index.array;
+			const attributes = this.attributes;
 
 			// attributes
 
-			for ( var name in attributes ) {
+			for ( const name in attributes ) {
 
-				var attribute = attributes[ name ];
+				const attribute = attributes[ name ];
 
-				var newAttribute = convertBufferAttribute( attribute, indices );
+				const newAttribute = convertBufferAttribute( attribute, indices );
 
 				geometry2.setAttribute( name, newAttribute );
 
@@ -8469,18 +7875,18 @@
 
 			// morph attributes
 
-			var morphAttributes = this.morphAttributes;
+			const morphAttributes = this.morphAttributes;
 
-			for ( name in morphAttributes ) {
+			for ( const name in morphAttributes ) {
 
-				var morphArray = [];
-				var morphAttribute = morphAttributes[ name ]; // morphAttribute: array of Float32BufferAttributes
+				const morphArray = [];
+				const morphAttribute = morphAttributes[ name ]; // morphAttribute: array of Float32BufferAttributes
 
-				for ( var i = 0, il = morphAttribute.length; i < il; i ++ ) {
+				for ( let i = 0, il = morphAttribute.length; i < il; i ++ ) {
 
-					var attribute = morphAttribute[ i ];
+					const attribute = morphAttribute[ i ];
 
-					var newAttribute = convertBufferAttribute( attribute, indices );
+					const newAttribute = convertBufferAttribute( attribute, indices );
 
 					morphArray.push( newAttribute );
 
@@ -8494,22 +7900,22 @@
 
 			// groups
 
-			var groups = this.groups;
+			const groups = this.groups;
 
-			for ( var i = 0, l = groups.length; i < l; i ++ ) {
+			for ( let i = 0, l = groups.length; i < l; i ++ ) {
 
-				var group = groups[ i ];
+				const group = groups[ i ];
 				geometry2.addGroup( group.start, group.count, group.materialIndex );
 
 			}
 
 			return geometry2;
 
-		},
+		}
 
-		toJSON: function () {
+		toJSON() {
 
-			var data = {
+			const data = {
 				metadata: {
 					version: 4.5,
 					type: 'BufferGeometry',
@@ -8526,9 +7932,9 @@
 
 			if ( this.parameters !== undefined ) {
 
-				var parameters = this.parameters;
+				const parameters = this.parameters;
 
-				for ( var key in parameters ) {
+				for ( const key in parameters ) {
 
 					if ( parameters[ key ] !== undefined ) data[ key ] = parameters[ key ];
 
@@ -8538,9 +7944,11 @@
 
 			}
 
+			// for simplicity the code assumes attributes are not shared across geometries, see #15811
+
 			data.data = { attributes: {} };
 
-			var index = this.index;
+			const index = this.index;
 
 			if ( index !== null ) {
 
@@ -8551,38 +7959,30 @@
 
 			}
 
-			var attributes = this.attributes;
+			const attributes = this.attributes;
 
-			for ( var key in attributes ) {
+			for ( const key in attributes ) {
 
-				var attribute = attributes[ key ];
+				const attribute = attributes[ key ];
 
-				var attributeData = attribute.toJSON();
-
-				if ( attribute.name !== '' ) attributeData.name = attribute.name;
-
-				data.data.attributes[ key ] = attributeData;
+				data.data.attributes[ key ] = attribute.toJSON( data.data );
 
 			}
 
-			var morphAttributes = {};
-			var hasMorphAttributes = false;
+			const morphAttributes = {};
+			let hasMorphAttributes = false;
 
-			for ( var key in this.morphAttributes ) {
+			for ( const key in this.morphAttributes ) {
 
-				var attributeArray = this.morphAttributes[ key ];
+				const attributeArray = this.morphAttributes[ key ];
 
-				var array = [];
+				const array = [];
 
-				for ( var i = 0, il = attributeArray.length; i < il; i ++ ) {
+				for ( let i = 0, il = attributeArray.length; i < il; i ++ ) {
 
-					var attribute = attributeArray[ i ];
+					const attribute = attributeArray[ i ];
 
-					var attributeData = attribute.toJSON();
-
-					if ( attribute.name !== '' ) attributeData.name = attribute.name;
-
-					array.push( attributeData );
+					array.push( attribute.toJSON( data.data ) );
 
 				}
 
@@ -8603,7 +8003,7 @@
 
 			}
 
-			var groups = this.groups;
+			const groups = this.groups;
 
 			if ( groups.length > 0 ) {
 
@@ -8611,7 +8011,7 @@
 
 			}
 
-			var boundingSphere = this.boundingSphere;
+			const boundingSphere = this.boundingSphere;
 
 			if ( boundingSphere !== null ) {
 
@@ -8624,41 +8024,15 @@
 
 			return data;
 
-		},
+		}
 
-		clone: function () {
-
-			/*
-			 // Handle primitives
-
-			 var parameters = this.parameters;
-
-			 if ( parameters !== undefined ) {
-
-			 var values = [];
-
-			 for ( var key in parameters ) {
-
-			 values.push( parameters[ key ] );
-
-			 }
-
-			 var geometry = Object.create( this.constructor.prototype );
-			 this.constructor.apply( geometry, values );
-			 return geometry;
-
-			 }
+		clone() {
 
 			 return new this.constructor().copy( this );
-			 */
 
-			return new BufferGeometry().copy( this );
+		}
 
-		},
-
-		copy: function ( source ) {
-
-			var name, i, l;
+		copy( source ) {
 
 			// reset
 
@@ -8669,43 +8043,47 @@
 			this.boundingBox = null;
 			this.boundingSphere = null;
 
+			// used for storing cloned, shared data
+
+			const data = {};
+
 			// name
 
 			this.name = source.name;
 
 			// index
 
-			var index = source.index;
+			const index = source.index;
 
 			if ( index !== null ) {
 
-				this.setIndex( index.clone() );
+				this.setIndex( index.clone( data ) );
 
 			}
 
 			// attributes
 
-			var attributes = source.attributes;
+			const attributes = source.attributes;
 
-			for ( name in attributes ) {
+			for ( const name in attributes ) {
 
-				var attribute = attributes[ name ];
-				this.setAttribute( name, attribute.clone() );
+				const attribute = attributes[ name ];
+				this.setAttribute( name, attribute.clone( data ) );
 
 			}
 
 			// morph attributes
 
-			var morphAttributes = source.morphAttributes;
+			const morphAttributes = source.morphAttributes;
 
-			for ( name in morphAttributes ) {
+			for ( const name in morphAttributes ) {
 
-				var array = [];
-				var morphAttribute = morphAttributes[ name ]; // morphAttribute: array of Float32BufferAttributes
+				const array = [];
+				const morphAttribute = morphAttributes[ name ]; // morphAttribute: array of Float32BufferAttributes
 
-				for ( i = 0, l = morphAttribute.length; i < l; i ++ ) {
+				for ( let i = 0, l = morphAttribute.length; i < l; i ++ ) {
 
-					array.push( morphAttribute[ i ].clone() );
+					array.push( morphAttribute[ i ].clone( data ) );
 
 				}
 
@@ -8717,18 +8095,18 @@
 
 			// groups
 
-			var groups = source.groups;
+			const groups = source.groups;
 
-			for ( i = 0, l = groups.length; i < l; i ++ ) {
+			for ( let i = 0, l = groups.length; i < l; i ++ ) {
 
-				var group = groups[ i ];
+				const group = groups[ i ];
 				this.addGroup( group.start, group.count, group.materialIndex );
 
 			}
 
 			// bounding box
 
-			var boundingBox = source.boundingBox;
+			const boundingBox = source.boundingBox;
 
 			if ( boundingBox !== null ) {
 
@@ -8738,7 +8116,7 @@
 
 			// bounding sphere
 
-			var boundingSphere = source.boundingSphere;
+			const boundingSphere = source.boundingSphere;
 
 			if ( boundingSphere !== null ) {
 
@@ -8755,628 +8133,692 @@
 
 			this.userData = source.userData;
 
+			// geometry generator parameters
+
+			if ( source.parameters !== undefined ) this.parameters = Object.assign( {}, source.parameters );
+
 			return this;
 
-		},
+		}
 
-		dispose: function () {
+		dispose() {
 
 			this.dispatchEvent( { type: 'dispose' } );
 
 		}
 
-	} );
+	}
 
-	function TerrainMeshGeometry( x, y, resolution, meshData, offsets, transform, clip ) {
+	BufferGeometry.prototype.isBufferGeometry = true;
 
-		BufferGeometry.call( this );
+	class TerrainMeshGeometry extends BufferGeometry {
 
-		this.type = 'TerrainMeshGeometry';
+		constructor ( x, y, resolution, meshData, offsets, transform, clip, clippedFraction ) {
 
-		const clippedVertices = [];
-		const vertex3cache = [];
+			super();
 
-		const dataView = new DataView( meshData, 0 );
+			this.type = 'TerrainMeshGeometry';
+			this.canZoom = true;
+			this.mustZoom = false;
 
-		const centerX = dataView.getFloat64( 0, true );
-		const centerY = dataView.getFloat64( 8, true );
-		const centerZ = dataView.getFloat64( 16, true );
+			const self = this;
 
-		const up = new Vector3( centerX, centerY, centerZ ).normalize();
+			const clippedVertices = [];
+			const vertex3cache = [];
 
-		const quaternion = new Quaternion().setFromUnitVectors( up, new Vector3( 0, 0, 1 ) );
+			const dataView = new DataView( meshData, 0 );
 
-		const minZ = dataView.getFloat32( 24, true );
-		const maxZ = dataView.getFloat32( 28, true );
-		const rangeZ = maxZ - minZ;
+			const centerX = dataView.getFloat64( 0, true );
+			const centerY = dataView.getFloat64( 8, true );
+			const centerZ = dataView.getFloat64( 16, true );
 
-		// vertex count
-		const vCount = dataView.getUint32( 88, true );
+			const up = new Vector3( centerX, centerY, centerZ ).normalize();
 
-		const uArray = _decode( new Uint16Array( meshData, 92, vCount ) );
-		const vArray = _decode( new Uint16Array( meshData, 92 + vCount * 2, vCount ) );
-		const hArray = _decode( new Uint16Array( meshData, 92 + vCount * 4, vCount ) );
+			const quaternion = new Quaternion().setFromUnitVectors( up, new Vector3( 0, 0, 1 ) );
 
-		const offsetX = - offsets.x;
-		const offsetY = - offsets.y;
-		const offsetZ = minZ - offsets.z;
+			const minZ = dataView.getFloat32( 24, true );
+			const maxZ = dataView.getFloat32( 28, true );
+			const rangeZ = maxZ - minZ;
 
-		// buffers
+			// vertex count
+			const vCount = dataView.getUint32( 88, true );
 
-		var indices = [];
-		var vertices = [];
-		var uvs = [];
-		var normals = [];
+			const uArray = _decode( new Uint16Array( meshData, 92, vCount ) );
+			const vArray = _decode( new Uint16Array( meshData, 92 + vCount * 2, vCount ) );
+			const hArray = _decode( new Uint16Array( meshData, 92 + vCount * 4, vCount ) );
 
+			const offsetX = - offsets.x;
+			const offsetY = - offsets.y;
+			const offsetZ = minZ - offsets.z;
 
-		var i;
-		var v3 = new Vector3(); // tmp for normal decoding
+			// buffers
 
-		// generate vertices and uvs
+			let indices = [];
+			let vertices = [];
+			let uvs = [];
+			let normals = [];
 
-		for ( i = 0; i < vCount; i++ ) {
+			const v3 = new Vector3(); // tmp for normal decoding
 
-			const u = uArray[ i ] / 32767;
-			const v = vArray[ i ] / 32767;
+			// generate vertices and uvs
 
-			const coords = transform.forward( { x: x + u * resolution, y: y + v * resolution } );
+			for ( let i = 0; i < vCount; i++ ) {
 
-			if ( ! clip.containsPoint( coords ) ) clippedVertices[ i ] = true;
+				const u = uArray[ i ] / 32767;
+				const v = vArray[ i ] / 32767;
 
-			vertices.push( coords.x + offsetX, coords.y + offsetY, hArray[ i ] / 32767 * rangeZ + offsetZ );
+				const coords = transform.forward( { x: x + u * resolution, y: y + v * resolution } );
 
-			uvs.push ( u, v );
+				if ( ! clip.containsPoint( coords ) ) clippedVertices[ i ] = true;
 
-		}
+				vertices.push( coords.x + offsetX, coords.y + offsetY, hArray[ i ] / 32767 * rangeZ + offsetZ );
 
-		const indexDataOffset = 88 + 4 + vCount * 6; // need to fix alignment
-
-		var indexElementSize = vCount > 65536 ? 4: 2;
-
-		const triangleCount = dataView.getUint32( indexDataOffset, true );
-
-		const iArray = new Uint16Array( meshData, indexDataOffset + 4, triangleCount * 3 );
-
-		var highest = 0;
-
-		for ( i = 0; i < iArray.length; i++ ) {
-
-			const code = iArray[ i ];
-
-			indices[ i ] = highest - code;
-
-			if ( code === 0 ) {
-
-				++highest;
+				uvs.push ( u, v );
 
 			}
 
-		}
+			const indexDataOffset = 88 + 4 + vCount * 6; // need to fix alignment
 
-		var nextStart = indexDataOffset + 4 + ( triangleCount * 3 * indexElementSize );
+			const indexElementSize = vCount > 65536 ? 4: 2;
 
-		// skip edge vertex descriptors
+			const triangleCount = dataView.getUint32( indexDataOffset, true );
 
-		for ( i = 0; i < 4; i++ ) {
+			const iArray = new Uint16Array( meshData, indexDataOffset + 4, triangleCount * 3 );
 
-			const edgeVertexCount = dataView.getInt32( nextStart, true );
+			let highest = 0;
 
-			nextStart += 4 + edgeVertexCount * indexElementSize;
+			for ( let i = 0; i < iArray.length; i++ ) {
 
-		}
+				const code = iArray[ i ];
 
-		/*
+				indices[ i ] = highest - code;
 
-		const extentionId = dataView.getUint8( nextStart, true );
-		const extentionLength = dataView.getUint32( nextStart + 1, true );
+				if ( code === 0 ) {
 
-		*/
-
-		// read oct encoded normals
-
-		const octNormals = new Uint8Array( meshData, nextStart + 5, vCount * 2 );
-
-		for ( i = 0; i < vCount * 2; ) {
-
-			_decodeOct( ( octNormals[ i++ ] / 255 ) * 2 - 1, ( octNormals[ i++ ] / 255 ) * 2 - 1 );
-
-		}
-
-		var newIndices = [];
-		var clipSides = 0;
-
-		if ( clippedVertices.length !== 0 ) {
-
-			_clipEdges();
-
-			_shrinkVertices();
-
-		}
-
-		// build geometry
-
-		this.setIndex( indices );
-
-		this.setAttribute( 'position', new Float32BufferAttribute( vertices, 3 ) );
-		this.setAttribute( 'normal', new Float32BufferAttribute( normals, 3 ) );
-
-		this.setAttribute( 'uv', new Float32BufferAttribute( uvs, 2 ) );
-
-		this.computeBoundingBox();
-
-		function _decode( tArray ) {
-
-			// zig zag and delta decode
-			var value = 0;
-
-			tArray.forEach( function ( deltaValue, index, array ) {
-
-				value += ( deltaValue >> 1 ) ^ ( - ( deltaValue & 1 ) );
-				array[ index ] = value;
-
-			} );
-
-			return tArray;
-
-		}
-
-		function _decodeOct ( xOct, yOct ) {
-
-			v3.x = xOct;
-			v3.y = yOct;
-			v3.z = 1 - ( Math.abs( xOct ) + Math.abs( yOct ) );
-
-			if ( v3.z < 0) {
-
-				const x = v3.x;
-
-				v3.x = ( 1.0 - Math.abs( v3.y ) ) * _signNotZero( x );
-				v3.y = ( 1.0 - Math.abs( x ) ) * _signNotZero( v3.y );
-
-			}
-
-			// approximate transformation from ECRF to local refrence frame
-			v3.applyQuaternion( quaternion );
-			v3.normalize();
-
-			normals.push( v3.y, v3.x, v3.z );
-
-		}
-
-		function _signNotZero ( value ) {
-
-			return value < 0.0 ? -1.0 : 1.0;
-
-		}
-
-		function _shrinkVertices () {
-
-			const newVertices = [];
-			const newNormals = [];
-			const newUVS = [];
-
-			// clear original indices
-
-			indices = [];
-
-			const oldIndices = newIndices;
-
-			const mapping = [];
-
-			var i;
-
-			for ( i = 0; i < oldIndices.length; i++ ) {
-
-				const oldIndex = oldIndices[ i ];
-
-				var newIndex = mapping[ oldIndex ];
-
-				if ( newIndex === undefined ) {
-
-					const offset3 = oldIndex * 3;
-					const offset2 = oldIndex * 2;
-
-					// move vertex info to new arrays and allocate new index;
-					newIndex = newVertices.length / 3;
-					mapping[ oldIndex ] = newIndex;
-
-					newVertices.push( vertices[ offset3 ], vertices[ offset3 + 1 ], vertices[ offset3 + 2 ] );
-					newNormals.push( normals[ offset3 ], normals[ offset3 + 1 ], normals[ offset3 + 2 ] );
-
-					newUVS.push( uvs[ offset2 ], uvs[ offset2 + 1 ] );
+					++highest;
 
 				}
 
-				indices.push( newIndex );
+			}
+
+			let nextStart = indexDataOffset + 4 + ( triangleCount * 3 * indexElementSize );
+
+			// skip edge vertex descriptors
+
+			for ( let i = 0; i < 4; i++ ) {
+
+				const edgeVertexCount = dataView.getInt32( nextStart, true );
+
+				nextStart += 4 + edgeVertexCount * indexElementSize;
 
 			}
 
-			// replace original arrays
+			// parse extention headers
 
-			vertices = newVertices;
-			normals = newNormals;
-			uvs = newUVS;
+			while ( nextStart < meshData.byteLength ) {
 
-		}
+				const extentionId = dataView.getUint8( nextStart, true );
+				const extentionLength = dataView.getUint32( nextStart + 1, true );
 
-		function _clipEdges () {
+				nextStart += 5;
 
-			// adjust clip box to model space
+				switch ( extentionId ) {
 
-			clip.min.sub( offsets );
-			clip.max.sub( offsets );
-
-			for ( i = 0; i < indices.length; ) {
-
-				const i1 = indices[ i++ ];
-				const i2 = indices[ i++ ];
-				const i3 = indices[ i++ ];
-
-				let outside = 0;
-
-				if ( clippedVertices[ i1 ] ) outside++;
-				if ( clippedVertices[ i2 ] ) outside++;
-				if ( clippedVertices[ i3 ] ) outside++;
-
-				//console.log( i1, i2, i3 );
-
-				switch ( outside ) {
-
-				case 3:
-
-					// skip this tri - totally outside area of interest
-
+				case 1:
+					_decodeOctNormals();
 					break;
 
 				case 2:
-
-					// handle tri with one point inside area of interest
-					// two edge reduced to intersect sides of area
-
-					_handleOverlap2( i1, i2, i3 );
-
+					// water map - ignored
 					break;
 
-				case 1:
-
-					// handle tris with one point outside area of interest
-
-					_handleOverlap1( i1, i2, i3 );
-
+				case 4:
+					_decodeMetadata();
 					break;
-
-				case 0:
-
-					// tri within area of interest
-
-					newIndices.push( i1, i2, i3 );
 
 				}
 
+				nextStart += extentionLength;
 
 			}
+
+			const newIndices = [];
+			let clipSides = 0;
+
+			if ( clippedVertices.length !== 0 ) {
+
+				if ( clippedFraction < 0.00005 && this.canZoom ) {
+
+					//console.log( 'zoom 1' );
+					this.mustZoom = true;
+					return;
+
+				}
+
+				const cvCount = clippedVertices.reduce( ( acc, v ) => ( v ? ++acc : acc ), 0 );
+				const containedCount = vertices.length / 3 - cvCount;
+
+				//console.log( 'cc', containedCount, this.canZoom );
+
+				if ( containedCount ) {
+
+					_clipEdges();
+					_shrinkVertices();
+
+				} else if ( this.canZoom ) {
+
+					//console.log( 'zoom' );
+					this.mustZoom = true;
+					return;
+
+				}
+
+			}
+
+			// build geometry
+
+			this.setIndex( indices );
+
+			this.setAttribute( 'position', new Float32BufferAttribute( vertices, 3 ) );
+			this.setAttribute( 'normal', new Float32BufferAttribute( normals, 3 ) );
+
+			this.setAttribute( 'uv', new Float32BufferAttribute( uvs, 2 ) );
+
+			this.computeBoundingBox();
 
 			return;
 
-		}
+			function _decode( tArray ) {
 
-		function _handleOverlap1 ( i1, i2, i3 ) {
+				// zig zag and delta decode
+				let value = 0;
 
-			const v1 = _getVertex( i1 );
-			const v2 = _getVertex( i2 );
-			const v3 = _getVertex( i3 );
+				tArray.forEach( ( deltaValue, index, array ) => {
 
-			var p1, p2, p3;
+					value += ( deltaValue >> 1 ) ^ ( - ( deltaValue & 1 ) );
+					array[ index ] = value;
 
-			// p1 - outside point
+				} );
 
-			if ( v1.outside ) {
-
-				p1 = v1, p2 = v2, p3 = v3;
-
-			} else if ( v2.outside ) {
-
-				p1 = v2, p2 = v3, p3 = v1;
-
-			} else if ( v3.outside ) {
-
-				p1 = v3, p2 = v1, p3 = v2;
+				return tArray;
 
 			}
 
-			// create new vertices which are where p1>p2 and p1>p3 intersect boundary
-			// _intersect() creates new vertices entry etc and returns index value
+			function _decodeMetadata () {
 
-			clipSides = 0;
+				const metatdataLength = dataView.getUint32( nextStart, true );
 
-			const i1n2 = _intersect( p1, p2 );
-			const i1n3 = _intersect( p1, p3 );
+				const rawMetadata = new Uint8Array( meshData, nextStart + 4, metatdataLength );
+				const decoder = new TextDecoder();
 
-			const common = new Vector3().addVectors( p2, p3 ).divideScalar( 2 );
+				const metadata = JSON.parse( decoder.decode( rawMetadata ) );
 
-			const p2UV = _getUV( p2 );
-			const p3UV = _getUV( p3 );
-
-			const iCommon = vertices.length / 3;
-
-			vertices.push( common.x, common.y, common.z );
-			normals.push( 0, 0, 1 );
-			uvs.push( ( p2UV.u + p3UV.u ) / 2, ( p2UV.v + p3UV.v ) / 2 );
-
-			newIndices.push( i1n3, i1n2, iCommon );
-			newIndices.push( p2.indexV, iCommon, i1n2 );
-			newIndices.push( p3.indexV, i1n3, iCommon );
-
-			const corner = _getCorner();
-
-			if ( corner !== null ) {
-
-				const cornerIndex = vertices.length / 3;
-
-				vertices.push( corner.x, corner.y, ( p2.z + p3.z ) / 2 );
-				normals.push( 0, 0, 1 ); // FIXME correct normals
-				uvs.push( corner.u, corner.v );
-
-				newIndices.push( i1n2, i1n3, cornerIndex );
+				if ( metadata.leaf ) self.canZoom = false;
 
 			}
 
-		}
+			function _decodeOctNormals () {
 
-		function _handleOverlap2 ( i1, i2, i3 ) {
+				const octNormals = new Uint8Array( meshData, nextStart, vCount * 2 );
 
-			const v1 = _getVertex( i1 );
-			const v2 = _getVertex( i2 );
-			const v3 = _getVertex( i3 );
+				for ( let i = 0; i < vCount * 2; ) {
 
-			var p1, p2, p3;
-
-			// p1 - inside point
-
-			if ( ! v1.outside ) {
-
-				p1 = v1, p2 = v2, p3 = v3;
-
-			} else if ( ! v2.outside ) {
-
-				p1 = v2, p2 = v3, p3 = v1;
-
-			} else if ( ! v3.outside ) {
-
-				p1 = v3, p2 = v1, p3 = v2;
-
-			}
-
-			clipSides = 0;
-
-			const i2n1 = _intersect( p2, p1 );
-			const i3n1 = _intersect( p3, p1 );
-
-			newIndices.push( i2n1, i3n1, p1.indexV );
-
-			const corner = _getCorner();
-
-			if ( corner !== null ) {
-
-				const cornerIndex = vertices.length / 3;
-
-				vertices.push( corner.x, corner.y, ( p2.z + p3.z ) / 2 );
-				normals.push( 0, 0, 1 ); // FIXME correct normals
-				uvs.push( corner.u, corner.v );
-
-				newIndices.push( i2n1, cornerIndex, i3n1 );
-
-			}
-
-		}
-
-		function _getVertex ( i ) {
-
-			var v = vertex3cache[ i ];
-
-			if ( v !== undefined ) return v;
-
-			let offset = i * 3;
-
-			v = new Vector3( vertices[ offset ], vertices[ offset + 1 ], vertices[ offset + 2 ] );
-
-			v.indexV = i;
-
-			if ( clippedVertices[ i ] ) v.outside = true;
-
-			vertex3cache[ i ] = v;
-
-			return v;
-
-		}
-
-		function _intersect ( v1, v2 ) {
-
-			// y = ax + b;
-			// y = (x - b) / a
-
-			const a = ( v1.y - v2.y ) / ( v1.x - v2.x );
-			const b = v1.y - a * v1.x;
-
-			var nx, ny, nz;
-			var side = 0;
-
-			if ( v1.x < clip.min.x ) {
-
-				const y = a * clip.min.x + b;
-
-				if ( y >= clip.min.y && y <= clip.max.y ) {
-
-					nx = clip.min.x;
-					ny = y;
-					side = 0x01;
+					_decodeOct( ( octNormals[ i++ ] / 255 ) * 2 - 1, ( octNormals[ i++ ] / 255 ) * 2 - 1 );
 
 				}
 
 			}
 
-			if ( v1.x > clip.max.x ) {
+			function _decodeOct ( xOct, yOct ) {
 
-				const y = a * clip.max.x + b;
+				v3.x = xOct;
+				v3.y = yOct;
+				v3.z = 1 - ( Math.abs( xOct ) + Math.abs( yOct ) );
 
-				if ( y >= clip.min.y && y <= clip.max.y ) {
+				if ( v3.z < 0) {
 
-					nx = clip.max.x;
-					ny = y;
-					side = 0x02;
+					const x = v3.x;
+
+					v3.x = ( 1.0 - Math.abs( v3.y ) ) * _signNotZero( x );
+					v3.y = ( 1.0 - Math.abs( x ) ) * _signNotZero( v3.y );
+
+				}
+
+				// approximate transformation from ECRF to local refrence frame
+				v3.applyQuaternion( quaternion );
+				v3.normalize();
+
+				normals.push( v3.y, v3.x, v3.z );
+
+			}
+
+			function _signNotZero ( value ) {
+
+				return value < 0.0 ? -1.0 : 1.0;
+
+			}
+
+			function _shrinkVertices () {
+
+				const newVertices = [];
+				const newNormals = [];
+				const newUVS = [];
+
+				// clear original indices
+
+				indices = [];
+
+				const oldIndices = newIndices;
+
+				const mapping = [];
+
+				for ( let i = 0; i < oldIndices.length; i++ ) {
+
+					const oldIndex = oldIndices[ i ];
+
+					let newIndex = mapping[ oldIndex ];
+
+					if ( newIndex === undefined ) {
+
+						const offset3 = oldIndex * 3;
+						const offset2 = oldIndex * 2;
+
+						// move vertex info to new arrays and allocate new index;
+						newIndex = newVertices.length / 3;
+						mapping[ oldIndex ] = newIndex;
+
+						newVertices.push( vertices[ offset3 ], vertices[ offset3 + 1 ], vertices[ offset3 + 2 ] );
+						newNormals.push( normals[ offset3 ], normals[ offset3 + 1 ], normals[ offset3 + 2 ] );
+
+						newUVS.push( uvs[ offset2 ], uvs[ offset2 + 1 ] );
+
+					}
+
+					indices.push( newIndex );
+
+				}
+
+				// replace original arrays
+
+				vertices = newVertices;
+				normals = newNormals;
+				uvs = newUVS;
+
+			}
+
+			function _clipEdges () {
+
+				// adjust clip box to model space
+
+				clip.min.sub( offsets );
+				clip.max.sub( offsets );
+
+				for ( let i = 0; i < indices.length; ) {
+
+					const i1 = indices[ i++ ];
+					const i2 = indices[ i++ ];
+					const i3 = indices[ i++ ];
+
+					let outside = 0;
+
+					if ( clippedVertices[ i1 ] ) outside++;
+					if ( clippedVertices[ i2 ] ) outside++;
+					if ( clippedVertices[ i3 ] ) outside++;
+
+					//console.log( i1, i2, i3 );
+
+					switch ( outside ) {
+
+					case 3:
+
+						// skip this tri - totally outside area of interest
+
+						break;
+
+					case 2:
+
+						// handle tri with one point inside area of interest
+						// two edge reduced to intersect sides of area
+
+						_handleOverlap2( i1, i2, i3 );
+
+						break;
+
+					case 1:
+
+						// handle tris with one point outside area of interest
+
+						_handleOverlap1( i1, i2, i3 );
+
+						break;
+
+					case 0:
+
+						// tri within area of interest
+
+						newIndices.push( i1, i2, i3 );
+
+					}
+
+
+				}
+
+				return;
+
+			}
+
+			function _handleOverlap1 ( i1, i2, i3 ) {
+
+				const v1 = _getVertex( i1 );
+				const v2 = _getVertex( i2 );
+				const v3 = _getVertex( i3 );
+
+				let p1, p2, p3;
+
+				// p1 - outside point
+
+				if ( v1.outside ) {
+
+					p1 = v1, p2 = v2, p3 = v3;
+
+				} else if ( v2.outside ) {
+
+					p1 = v2, p2 = v3, p3 = v1;
+
+				} else if ( v3.outside ) {
+
+					p1 = v3, p2 = v1, p3 = v2;
+
+				}
+
+				// create new vertices which are where p1>p2 and p1>p3 intersect boundary
+				// _intersect() creates new vertices entry etc and returns index value
+
+				clipSides = 0;
+
+				const i1n2 = _intersect( p1, p2 );
+				const i1n3 = _intersect( p1, p3 );
+
+				const common = new Vector3().addVectors( p2, p3 ).divideScalar( 2 );
+
+				const p2UV = _getUV( p2 );
+				const p3UV = _getUV( p3 );
+
+				const iCommon = vertices.length / 3;
+
+				vertices.push( common.x, common.y, common.z );
+				normals.push( 0, 0, 1 );
+				uvs.push( ( p2UV.u + p3UV.u ) / 2, ( p2UV.v + p3UV.v ) / 2 );
+
+				newIndices.push( i1n3, i1n2, iCommon );
+				newIndices.push( p2.indexV, iCommon, i1n2 );
+				newIndices.push( p3.indexV, i1n3, iCommon );
+
+				const corner = _getCorner();
+
+				if ( corner !== null ) {
+
+					const cornerIndex = vertices.length / 3;
+
+					vertices.push( corner.x, corner.y, ( p2.z + p3.z ) / 2 );
+					normals.push( 0, 0, 1 ); // FIXME correct normals
+					uvs.push( corner.u, corner.v );
+
+					newIndices.push( i1n2, i1n3, cornerIndex );
 
 				}
 
 			}
 
-			if ( side === 0 && v1.y <= clip.min.y ) {
+			function _handleOverlap2 ( i1, i2, i3 ) {
 
-				ny = clip.min.y;
-				nx = ( ny - b ) / a;
-				side = 0x04;
+				const v1 = _getVertex( i1 );
+				const v2 = _getVertex( i2 );
+				const v3 = _getVertex( i3 );
 
-			}
+				let p1, p2, p3;
 
-			if ( side === 0 && v1.y >= clip.max.y ) {
+				// p1 - inside point
 
-				ny = clip.max.y;
-				nx = ( ny - b ) / a;
-				side = 0x08;
+				if ( ! v1.outside ) {
 
-			}
+					p1 = v1, p2 = v2, p3 = v3;
 
-			// track clip area sides crossed by intersects to allow detection
-			// of tris that overlap a corner of the clip area
+				} else if ( ! v2.outside ) {
 
-			clipSides = clipSides | side;
+					p1 = v2, p2 = v3, p3 = v1;
 
-			const dOriginal = Math.sqrt( Math.pow( v1.x - v2.x, 2 ) + Math.pow( v1.y - v2.y, 2 ) );
+				} else if ( ! v3.outside ) {
 
-			const dNew = Math.sqrt( Math.pow( nx - v2.x, 2 ) + Math.pow( ny - v2.y, 2 ) );
+					p1 = v3, p2 = v1, p3 = v2;
 
-			const vFraction = dNew / dOriginal;
+				}
 
-			nz = v2.z + ( v1.z - v2.z ) * vFraction;
+				clipSides = 0;
 
-			var newIndex = vertices.length / 3;
+				const i2n1 = _intersect( p2, p1 );
+				const i3n1 = _intersect( p3, p1 );
 
-			vertices.push( nx, ny, nz );
-			normals.push( 0, 0, 1 ); // FIXME correct normals (lerp)
+				newIndices.push( i2n1, i3n1, p1.indexV );
 
-			// get uv by interpolating between endpoints
+				const corner = _getCorner();
 
-			const v1UV = _getUV( v1 );
-			const v2UV = _getUV( v2 );
+				if ( corner !== null ) {
 
-			const u = v2UV.u + ( v1UV.u - v2UV.u) * vFraction;
-			const v = v2UV.v + ( v1UV.v - v2UV.v) * vFraction;
+					const cornerIndex = vertices.length / 3;
 
-			uvs.push( u, v );
+					vertices.push( corner.x, corner.y, ( p2.z + p3.z ) / 2 );
+					normals.push( 0, 0, 1 ); // FIXME correct normals
+					uvs.push( corner.u, corner.v );
 
-			return newIndex;
+					newIndices.push( i2n1, cornerIndex, i3n1 );
 
-		}
-
-		function _getUV( v ) {
-
-			const offset = v.indexV * 2;
-
-			return { u: uvs[ offset ], v: uvs[ offset + 1 ] };
-
-		}
-
-		function _getCorner() {
-
-			var x, y, u, v;
-
-			// clipSides is a bit mask representing area sides intersected by edges
-
-			switch ( clipSides ) {
-
-			case 5:
-
-				// bottom left
-				x = clip.min.x;
-				y = clip.min.y;
-				u = 0;
-				v = 0;
-
-				break;
-
-			case 6:
-
-				// bottom right
-				x = clip.max.x;
-				y = clip.min.y;
-				u = 1;
-				v = 0;
-
-				break;
-
-			case 9:
-
-				// top left
-				x = clip.min.x;
-				y = clip.max.y;
-				u = 0;
-				v = 1;
-
-				break;
-
-			case 10:
-
-				// top right
-				x = clip.max.x;
-				y = clip.max.y;
-				u = 1;
-				v = 1;
-
-				break;
-
-			default:
-
-				return null;
+				}
 
 			}
 
-			return { x: x, y: y, u: u, v: v };
+			function _getVertex ( i ) {
+
+				let v = vertex3cache[ i ];
+
+				if ( v !== undefined ) return v;
+
+				const offset = i * 3;
+
+				v = new Vector3( vertices[ offset ], vertices[ offset + 1 ], vertices[ offset + 2 ] );
+
+				v.indexV = i;
+
+				if ( clippedVertices[ i ] ) v.outside = true;
+
+				vertex3cache[ i ] = v;
+
+				return v;
+
+			}
+
+			function _intersect ( v1, v2 ) {
+
+				// y = ax + b;
+				// y = (x - b) / a
+
+				const a = ( v1.y - v2.y ) / ( v1.x - v2.x );
+				const b = v1.y - a * v1.x;
+
+				let nx, ny;
+				let side = 0;
+
+				if ( v1.x < clip.min.x ) {
+
+					const y = a * clip.min.x + b;
+
+					if ( y >= clip.min.y && y <= clip.max.y ) {
+
+						nx = clip.min.x;
+						ny = y;
+						side = 0x01;
+
+					}
+
+				}
+
+				if ( v1.x > clip.max.x ) {
+
+					const y = a * clip.max.x + b;
+
+					if ( y >= clip.min.y && y <= clip.max.y ) {
+
+						nx = clip.max.x;
+						ny = y;
+						side = 0x02;
+
+					}
+
+				}
+
+				if ( side === 0 && v1.y <= clip.min.y ) {
+
+					ny = clip.min.y;
+					nx = ( ny - b ) / a;
+					side = 0x04;
+
+				}
+
+				if ( side === 0 && v1.y >= clip.max.y ) {
+
+					ny = clip.max.y;
+					nx = ( ny - b ) / a;
+					side = 0x08;
+
+				}
+
+				// track clip area sides crossed by intersects to allow detection
+				// of tris that overlap a corner of the clip area
+
+				clipSides = clipSides | side;
+
+				const dOriginal = Math.sqrt( Math.pow( v1.x - v2.x, 2 ) + Math.pow( v1.y - v2.y, 2 ) );
+
+				const dNew = Math.sqrt( Math.pow( nx - v2.x, 2 ) + Math.pow( ny - v2.y, 2 ) );
+
+				const vFraction = dNew / dOriginal;
+
+				const nz = v2.z + ( v1.z - v2.z ) * vFraction;
+
+				const newIndex = vertices.length / 3;
+
+				vertices.push( nx, ny, nz );
+				normals.push( 0, 0, 1 ); // FIXME correct normals (lerp)
+
+				// get uv by interpolating between endpoints
+
+				const v1UV = _getUV( v1 );
+				const v2UV = _getUV( v2 );
+
+				const u = v2UV.u + ( v1UV.u - v2UV.u) * vFraction;
+				const v = v2UV.v + ( v1UV.v - v2UV.v) * vFraction;
+
+				uvs.push( u, v );
+
+				return newIndex;
+
+			}
+
+			function _getUV( v ) {
+
+				const offset = v.indexV * 2;
+
+				return { u: uvs[ offset ], v: uvs[ offset + 1 ] };
+
+			}
+
+			function _getCorner() {
+
+				let x, y, u, v;
+
+				// clipSides is a bit mask representing area sides intersected by edges
+
+				switch ( clipSides ) {
+
+				case 5:
+
+					// bottom left
+					x = clip.min.x;
+					y = clip.min.y;
+					u = 0;
+					v = 0;
+
+					break;
+
+				case 6:
+
+					// bottom right
+					x = clip.max.x;
+					y = clip.min.y;
+					u = 1;
+					v = 0;
+
+					break;
+
+				case 9:
+
+					// top left
+					x = clip.min.x;
+					y = clip.max.y;
+					u = 0;
+					v = 1;
+
+					break;
+
+				case 10:
+
+					// top right
+					x = clip.max.x;
+					y = clip.max.y;
+					u = 1;
+					v = 1;
+
+					break;
+
+				default:
+
+					return null;
+
+				}
+
+				return { x: x, y: y, u: u, v: v };
+
+			}
 
 		}
 
 	}
 
+	const _vector = /*@__PURE__*/ new Vector2();
 
-	TerrainMeshGeometry.prototype = Object.create( BufferGeometry.prototype );
+	class Box2 {
 
-	/**
-	 * @author bhouston / http://clara.io
-	 */
+		constructor( min = new Vector2( + Infinity, + Infinity ), max = new Vector2( - Infinity, - Infinity ) ) {
 
-	var _vector$4 = new Vector2();
+			this.min = min;
+			this.max = max;
 
-	function Box2( min, max ) {
+		}
 
-		this.min = ( min !== undefined ) ? min : new Vector2( + Infinity, + Infinity );
-		this.max = ( max !== undefined ) ? max : new Vector2( - Infinity, - Infinity );
-
-	}
-
-	Object.assign( Box2.prototype, {
-
-		set: function ( min, max ) {
+		set( min, max ) {
 
 			this.min.copy( min );
 			this.max.copy( max );
 
 			return this;
 
-		},
+		}
 
-		setFromPoints: function ( points ) {
+		setFromPoints( points ) {
 
 			this.makeEmpty();
 
-			for ( var i = 0, il = points.length; i < il; i ++ ) {
+			for ( let i = 0, il = points.length; i < il; i ++ ) {
 
 				this.expandByPoint( points[ i ] );
 
@@ -9384,199 +8826,173 @@
 
 			return this;
 
-		},
+		}
 
-		setFromCenterAndSize: function ( center, size ) {
+		setFromCenterAndSize( center, size ) {
 
-			var halfSize = _vector$4.copy( size ).multiplyScalar( 0.5 );
+			const halfSize = _vector.copy( size ).multiplyScalar( 0.5 );
 			this.min.copy( center ).sub( halfSize );
 			this.max.copy( center ).add( halfSize );
 
 			return this;
 
-		},
+		}
 
-		clone: function () {
+		clone() {
 
 			return new this.constructor().copy( this );
 
-		},
+		}
 
-		copy: function ( box ) {
+		copy( box ) {
 
 			this.min.copy( box.min );
 			this.max.copy( box.max );
 
 			return this;
 
-		},
+		}
 
-		makeEmpty: function () {
+		makeEmpty() {
 
 			this.min.x = this.min.y = + Infinity;
 			this.max.x = this.max.y = - Infinity;
 
 			return this;
 
-		},
+		}
 
-		isEmpty: function () {
+		isEmpty() {
 
 			// this is a more robust check for empty than ( volume <= 0 ) because volume can get positive with two negative axes
 
 			return ( this.max.x < this.min.x ) || ( this.max.y < this.min.y );
 
-		},
+		}
 
-		getCenter: function ( target ) {
-
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Box2: .getCenter() target is now required' );
-				target = new Vector2();
-
-			}
+		getCenter( target ) {
 
 			return this.isEmpty() ? target.set( 0, 0 ) : target.addVectors( this.min, this.max ).multiplyScalar( 0.5 );
 
-		},
+		}
 
-		getSize: function ( target ) {
-
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Box2: .getSize() target is now required' );
-				target = new Vector2();
-
-			}
+		getSize( target ) {
 
 			return this.isEmpty() ? target.set( 0, 0 ) : target.subVectors( this.max, this.min );
 
-		},
+		}
 
-		expandByPoint: function ( point ) {
+		expandByPoint( point ) {
 
 			this.min.min( point );
 			this.max.max( point );
 
 			return this;
 
-		},
+		}
 
-		expandByVector: function ( vector ) {
+		expandByVector( vector ) {
 
 			this.min.sub( vector );
 			this.max.add( vector );
 
 			return this;
 
-		},
+		}
 
-		expandByScalar: function ( scalar ) {
+		expandByScalar( scalar ) {
 
 			this.min.addScalar( - scalar );
 			this.max.addScalar( scalar );
 
 			return this;
 
-		},
+		}
 
-		containsPoint: function ( point ) {
+		containsPoint( point ) {
 
 			return point.x < this.min.x || point.x > this.max.x ||
 				point.y < this.min.y || point.y > this.max.y ? false : true;
 
-		},
+		}
 
-		containsBox: function ( box ) {
+		containsBox( box ) {
 
 			return this.min.x <= box.min.x && box.max.x <= this.max.x &&
 				this.min.y <= box.min.y && box.max.y <= this.max.y;
 
-		},
+		}
 
-		getParameter: function ( point, target ) {
+		getParameter( point, target ) {
 
 			// This can potentially have a divide by zero if the box
 			// has a size dimension of 0.
-
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Box2: .getParameter() target is now required' );
-				target = new Vector2();
-
-			}
 
 			return target.set(
 				( point.x - this.min.x ) / ( this.max.x - this.min.x ),
 				( point.y - this.min.y ) / ( this.max.y - this.min.y )
 			);
 
-		},
+		}
 
-		intersectsBox: function ( box ) {
+		intersectsBox( box ) {
 
 			// using 4 splitting planes to rule out intersections
 
 			return box.max.x < this.min.x || box.min.x > this.max.x ||
 				box.max.y < this.min.y || box.min.y > this.max.y ? false : true;
 
-		},
+		}
 
-		clampPoint: function ( point, target ) {
-
-			if ( target === undefined ) {
-
-				console.warn( 'THREE.Box2: .clampPoint() target is now required' );
-				target = new Vector2();
-
-			}
+		clampPoint( point, target ) {
 
 			return target.copy( point ).clamp( this.min, this.max );
 
-		},
+		}
 
-		distanceToPoint: function ( point ) {
+		distanceToPoint( point ) {
 
-			var clampedPoint = _vector$4.copy( point ).clamp( this.min, this.max );
+			const clampedPoint = _vector.copy( point ).clamp( this.min, this.max );
 			return clampedPoint.sub( point ).length();
 
-		},
+		}
 
-		intersect: function ( box ) {
+		intersect( box ) {
 
 			this.min.max( box.min );
 			this.max.min( box.max );
 
 			return this;
 
-		},
+		}
 
-		union: function ( box ) {
+		union( box ) {
 
 			this.min.min( box.min );
 			this.max.max( box.max );
 
 			return this;
 
-		},
+		}
 
-		translate: function ( offset ) {
+		translate( offset ) {
 
 			this.min.add( offset );
 			this.max.add( offset );
 
 			return this;
 
-		},
+		}
 
-		equals: function ( box ) {
+		equals( box ) {
 
 			return box.min.equals( this.min ) && box.max.equals( this.max );
 
 		}
 
-	} );
+	}
+
+	Box2.prototype.isBox2 = true;
 
 	function globals(defs) {
 	  defs('EPSG:4326', "+title=WGS 84 (long/lat) +proj=longlat +ellps=WGS84 +datum=WGS84 +units=degrees");
@@ -9592,8 +9008,12 @@
 
 	var PJD_3PARAM = 1;
 	var PJD_7PARAM = 2;
+	var PJD_GRIDSHIFT = 3;
 	var PJD_WGS84 = 4; // WGS84 or equivalent
 	var PJD_NODATUM = 5; // WGS84 or equivalent
+	var SRS_WGS84_SEMIMAJOR = 6378137.0;  // only used in grid shift transforms
+	var SRS_WGS84_SEMIMINOR = 6356752.314;  // only used in grid shift transforms
+	var SRS_WGS84_ESQUARED = 0.0066943799901413165; // only used in grid shift transforms
 	var SEC_TO_RAD = 4.84813681109535993589914102357e-6;
 	var HALF_PI = Math.PI/2;
 	// ellipoid pj_set_ell.c
@@ -9606,7 +9026,7 @@
 	// you'd think you could use Number.EPSILON above but that makes
 	// Mollweide get into an infinate loop.
 
-	var D2R = 0.01745329251994329577;
+	var D2R$1 = 0.01745329251994329577;
 	var R2D = 57.29577951308232088;
 	var FORTPI = Math.PI/4;
 	var TWO_PI = Math.PI * 2;
@@ -9616,21 +9036,21 @@
 	// floating point error) from changing their sign.
 	var SPI = 3.14159265359;
 
-	var exports$1 = {};
+	var exports$3 = {};
 
-	exports$1.greenwich = 0.0; //"0dE",
-	exports$1.lisbon = -9.131906111111; //"9d07'54.862\"W",
-	exports$1.paris = 2.337229166667; //"2d20'14.025\"E",
-	exports$1.bogota = -74.080916666667; //"74d04'51.3\"W",
-	exports$1.madrid = -3.687938888889; //"3d41'16.58\"W",
-	exports$1.rome = 12.452333333333; //"12d27'8.4\"E",
-	exports$1.bern = 7.439583333333; //"7d26'22.5\"E",
-	exports$1.jakarta = 106.807719444444; //"106d48'27.79\"E",
-	exports$1.ferro = -17.666666666667; //"17d40'W",
-	exports$1.brussels = 4.367975; //"4d22'4.71\"E",
-	exports$1.stockholm = 18.058277777778; //"18d3'29.8\"E",
-	exports$1.athens = 23.7163375; //"23d42'58.815\"E",
-	exports$1.oslo = 10.722916666667; //"10d43'22.5\"E"
+	exports$3.greenwich = 0.0; //"0dE",
+	exports$3.lisbon = -9.131906111111; //"9d07'54.862\"W",
+	exports$3.paris = 2.337229166667; //"2d20'14.025\"E",
+	exports$3.bogota = -74.080916666667; //"74d04'51.3\"W",
+	exports$3.madrid = -3.687938888889; //"3d41'16.58\"W",
+	exports$3.rome = 12.452333333333; //"12d27'8.4\"E",
+	exports$3.bern = 7.439583333333; //"7d26'22.5\"E",
+	exports$3.jakarta = 106.807719444444; //"106d48'27.79\"E",
+	exports$3.ferro = -17.666666666667; //"17d40'W",
+	exports$3.brussels = 4.367975; //"4d22'4.71\"E",
+	exports$3.stockholm = 18.058277777778; //"18d3'29.8\"E",
+	exports$3.athens = 23.7163375; //"23d42'58.815\"E",
+	exports$3.oslo = 10.722916666667; //"10d43'22.5\"E"
 
 	var units = {
 	  ft: {to_meter: 0.3048},
@@ -9675,31 +9095,34 @@
 	      self.rf = parseFloat(v);
 	    },
 	    lat_0: function(v) {
-	      self.lat0 = v * D2R;
+	      self.lat0 = v * D2R$1;
 	    },
 	    lat_1: function(v) {
-	      self.lat1 = v * D2R;
+	      self.lat1 = v * D2R$1;
 	    },
 	    lat_2: function(v) {
-	      self.lat2 = v * D2R;
+	      self.lat2 = v * D2R$1;
 	    },
 	    lat_ts: function(v) {
-	      self.lat_ts = v * D2R;
+	      self.lat_ts = v * D2R$1;
 	    },
 	    lon_0: function(v) {
-	      self.long0 = v * D2R;
+	      self.long0 = v * D2R$1;
 	    },
 	    lon_1: function(v) {
-	      self.long1 = v * D2R;
+	      self.long1 = v * D2R$1;
 	    },
 	    lon_2: function(v) {
-	      self.long2 = v * D2R;
+	      self.long2 = v * D2R$1;
 	    },
 	    alpha: function(v) {
-	      self.alpha = parseFloat(v) * D2R;
+	      self.alpha = parseFloat(v) * D2R$1;
+	    },
+	    gamma: function(v) {
+	      self.rectified_grid_angle = parseFloat(v);
 	    },
 	    lonc: function(v) {
-	      self.longc = v * D2R;
+	      self.longc = v * D2R$1;
 	    },
 	    x_0: function(v) {
 	      self.x0 = parseFloat(v);
@@ -9744,11 +9167,11 @@
 	      }
 	    },
 	    from_greenwich: function(v) {
-	      self.from_greenwich = v * D2R;
+	      self.from_greenwich = v * D2R$1;
 	    },
 	    pm: function(v) {
-	      var pm = match(exports$1, v);
-	      self.from_greenwich = (pm ? pm : parseFloat(v)) * D2R;
+	      var pm = match(exports$3, v);
+	      self.from_greenwich = (pm ? pm : parseFloat(v)) * D2R$1;
 	    },
 	    nadgrids: function(v) {
 	      if (v === '@null') {
@@ -9763,6 +9186,9 @@
 	      if (v.length === 3 && legalAxis.indexOf(v.substr(0, 1)) !== -1 && legalAxis.indexOf(v.substr(1, 1)) !== -1 && legalAxis.indexOf(v.substr(2, 1)) !== -1) {
 	        self.axis = v;
 	      }
+	    },
+	    approx: function() {
+	      self.approx = true;
 	    }
 	  };
 	  for (paramName in paramObj) {
@@ -9996,6 +9422,13 @@
 	    obj[key] = v;
 	    return;
 	  }
+	  if (key === 'AXIS') {
+	    if (!(key in obj)) {
+	      obj[key] = [];
+	    }
+	    obj[key].push(v);
+	    return;
+	  }
 	  if (!Array.isArray(key)) {
 	    obj[key] = {};
 	  }
@@ -10059,7 +9492,7 @@
 	  }
 	}
 
-	var D2R$1 = 0.01745329251994329577;
+	var D2R = 0.01745329251994329577;
 
 
 
@@ -10075,7 +9508,7 @@
 	}
 
 	function d2r(input) {
-	  return input * D2R$1;
+	  return input * D2R;
 	}
 
 	function cleanWKT(wkt) {
@@ -10089,6 +9522,27 @@
 	      wkt.projName = Object.keys(wkt.PROJECTION)[0];
 	    } else {
 	      wkt.projName = wkt.PROJECTION;
+	    }
+	  }
+	  if (wkt.AXIS) {
+	    var axisOrder = '';
+	    for (var i = 0, ii = wkt.AXIS.length; i < ii; ++i) {
+	      var axis = [wkt.AXIS[i][0].toLowerCase(), wkt.AXIS[i][1].toLowerCase()];
+	      if (axis[0].indexOf('north') !== -1 || ((axis[0] === 'y' || axis[0] === 'lat') && axis[1] === 'north')) {
+	        axisOrder += 'n';
+	      } else if (axis[0].indexOf('south') !== -1 || ((axis[0] === 'y' || axis[0] === 'lat') && axis[1] === 'south')) {
+	        axisOrder += 's';
+	      } else if (axis[0].indexOf('east') !== -1 || ((axis[0] === 'x' || axis[0] === 'lon') && axis[1] === 'east')) {
+	        axisOrder += 'e';
+	      } else if (axis[0].indexOf('west') !== -1 || ((axis[0] === 'x' || axis[0] === 'lon') && axis[1] === 'west')) {
+	        axisOrder += 'w';
+	      }
+	    }
+	    if (axisOrder.length === 2) {
+	      axisOrder += 'u';
+	    }
+	    if (axisOrder.length === 3) {
+	      wkt.axis = axisOrder;
 	    }
 	  }
 	  if (wkt.UNIT) {
@@ -10125,7 +9579,7 @@
 	    if (wkt.datumCode === 'new_zealand_geodetic_datum_1949' || wkt.datumCode === 'new_zealand_1949') {
 	      wkt.datumCode = 'nzgd49';
 	    }
-	    if (wkt.datumCode === 'wgs_1984') {
+	    if (wkt.datumCode === 'wgs_1984' || wkt.datumCode === 'world_geodetic_system_1984') {
 	      if (wkt.PROJECTION === 'Mercator_Auxiliary_Sphere') {
 	        wkt.sphere = true;
 	      }
@@ -10183,12 +9637,22 @@
 	  };
 	  var list = [
 	    ['standard_parallel_1', 'Standard_Parallel_1'],
+	    ['standard_parallel_1', 'Latitude of 1st standard parallel'],
 	    ['standard_parallel_2', 'Standard_Parallel_2'],
+	    ['standard_parallel_2', 'Latitude of 2nd standard parallel'],
 	    ['false_easting', 'False_Easting'],
+	    ['false_easting', 'False easting'],
+	    ['false-easting', 'Easting at false origin'],
 	    ['false_northing', 'False_Northing'],
+	    ['false_northing', 'False northing'],
+	    ['false_northing', 'Northing at false origin'],
 	    ['central_meridian', 'Central_Meridian'],
+	    ['central_meridian', 'Longitude of natural origin'],
+	    ['central_meridian', 'Longitude of false origin'],
 	    ['latitude_of_origin', 'Latitude_Of_Origin'],
 	    ['latitude_of_origin', 'Central_Parallel'],
+	    ['latitude_of_origin', 'Latitude of natural origin'],
+	    ['latitude_of_origin', 'Latitude of false origin'],
 	    ['scale_factor', 'Scale_Factor'],
 	    ['k0', 'scale_factor'],
 	    ['latitude_of_center', 'Latitude_Of_Center'],
@@ -10286,7 +9750,7 @@
 	function testDef(code){
 	  return code in defs;
 	}
-	 var codeWords = ['PROJECTEDCRS', 'PROJCRS', 'GEOGCS','GEOCCS','PROJCS','LOCAL_CS', 'GEODCRS', 'GEODETICCRS', 'GEODETICDATUM', 'ENGCRS', 'ENGINEERINGCRS'];
+	var codeWords = ['PROJECTEDCRS', 'PROJCRS', 'GEOGCS','GEOCCS','PROJCS','LOCAL_CS', 'GEODCRS', 'GEODETICCRS', 'GEODETICDATUM', 'ENGCRS', 'ENGINEERINGCRS'];
 	function testWKT(code){
 	  return codeWords.some(function (word) {
 	    return code.indexOf(word) > -1;
@@ -10332,7 +9796,7 @@
 	    if (testProj(code)) {
 	      return projStr(code);
 	    }
-	  }else{
+	  }else {
 	    return code;
 	  }
 	}
@@ -10388,7 +9852,7 @@
 	  return -9999;
 	}
 
-	function init() {
+	function init$u() {
 	  var con = this.b / this.a;
 	  this.es = 1 - con * con;
 	  if(!('x0' in this)){
@@ -10421,7 +9885,7 @@
 	/* Mercator forward equations--mapping lat,long to x,y
 	  --------------------------------------------------*/
 
-	function forward(p) {
+	function forward$t(p) {
 	  var lon = p.x;
 	  var lat = p.y;
 	  // convert to radians
@@ -10452,7 +9916,7 @@
 
 	/* Mercator inverse equations--mapping x,y to lat/long
 	  --------------------------------------------------*/
-	function inverse(p) {
+	function inverse$t(p) {
 
 	  var x = p.x - this.x0;
 	  var y = p.y - this.y0;
@@ -10475,31 +9939,31 @@
 	  return p;
 	}
 
-	var names = ["Mercator", "Popular Visualisation Pseudo Mercator", "Mercator_1SP", "Mercator_Auxiliary_Sphere", "merc"];
+	var names$v = ["Mercator", "Popular Visualisation Pseudo Mercator", "Mercator_1SP", "Mercator_Auxiliary_Sphere", "merc"];
 	var merc = {
-	  init: init,
-	  forward: forward,
-	  inverse: inverse,
-	  names: names
+	  init: init$u,
+	  forward: forward$t,
+	  inverse: inverse$t,
+	  names: names$v
 	};
 
-	function init$1() {
+	function init$t() {
 	  //no-op for longlat
 	}
 
 	function identity(pt) {
 	  return pt;
 	}
-	var names$1 = ["longlat", "identity"];
+	var names$u = ["longlat", "identity"];
 	var longlat = {
-	  init: init$1,
+	  init: init$t,
 	  forward: identity,
 	  inverse: identity,
-	  names: names$1
+	  names: names$u
 	};
 
 	var projs = [merc, longlat];
-	var names$2 = {};
+	var names$t = {};
 	var projStore = [];
 
 	function add(proj, i) {
@@ -10510,7 +9974,7 @@
 	  }
 	  projStore[len] = proj;
 	  proj.names.forEach(function(n) {
-	    names$2[n.toLowerCase()] = len;
+	    names$t[n.toLowerCase()] = len;
 	  });
 	  return this;
 	}
@@ -10520,8 +9984,8 @@
 	    return false;
 	  }
 	  var n = name.toLowerCase();
-	  if (typeof names$2[n] !== 'undefined' && projStore[names$2[n]]) {
-	    return projStore[names$2[n]];
+	  if (typeof names$t[n] !== 'undefined' && projStore[names$t[n]]) {
+	    return projStore[names$t[n]];
 	  }
 	}
 
@@ -10838,110 +10302,110 @@
 	  };
 	}
 
-	var exports$3 = {};
-	exports$3.wgs84 = {
+	var exports$1 = {};
+	exports$1.wgs84 = {
 	  towgs84: "0,0,0",
 	  ellipse: "WGS84",
 	  datumName: "WGS84"
 	};
 
-	exports$3.ch1903 = {
+	exports$1.ch1903 = {
 	  towgs84: "674.374,15.056,405.346",
 	  ellipse: "bessel",
 	  datumName: "swiss"
 	};
 
-	exports$3.ggrs87 = {
+	exports$1.ggrs87 = {
 	  towgs84: "-199.87,74.79,246.62",
 	  ellipse: "GRS80",
 	  datumName: "Greek_Geodetic_Reference_System_1987"
 	};
 
-	exports$3.nad83 = {
+	exports$1.nad83 = {
 	  towgs84: "0,0,0",
 	  ellipse: "GRS80",
 	  datumName: "North_American_Datum_1983"
 	};
 
-	exports$3.nad27 = {
+	exports$1.nad27 = {
 	  nadgrids: "@conus,@alaska,@ntv2_0.gsb,@ntv1_can.dat",
 	  ellipse: "clrk66",
 	  datumName: "North_American_Datum_1927"
 	};
 
-	exports$3.potsdam = {
-	  towgs84: "606.0,23.0,413.0",
+	exports$1.potsdam = {
+	  towgs84: "598.1,73.7,418.2,0.202,0.045,-2.455,6.7",
 	  ellipse: "bessel",
 	  datumName: "Potsdam Rauenberg 1950 DHDN"
 	};
 
-	exports$3.carthage = {
+	exports$1.carthage = {
 	  towgs84: "-263.0,6.0,431.0",
 	  ellipse: "clark80",
 	  datumName: "Carthage 1934 Tunisia"
 	};
 
-	exports$3.hermannskogel = {
-	  towgs84: "653.0,-212.0,449.0",
+	exports$1.hermannskogel = {
+	  towgs84: "577.326,90.129,463.919,5.137,1.474,5.297,2.4232",
 	  ellipse: "bessel",
 	  datumName: "Hermannskogel"
 	};
 
-	exports$3.osni52 = {
+	exports$1.osni52 = {
 	  towgs84: "482.530,-130.596,564.557,-1.042,-0.214,-0.631,8.15",
 	  ellipse: "airy",
 	  datumName: "Irish National"
 	};
 
-	exports$3.ire65 = {
+	exports$1.ire65 = {
 	  towgs84: "482.530,-130.596,564.557,-1.042,-0.214,-0.631,8.15",
 	  ellipse: "mod_airy",
 	  datumName: "Ireland 1965"
 	};
 
-	exports$3.rassadiran = {
+	exports$1.rassadiran = {
 	  towgs84: "-133.63,-157.5,-158.62",
 	  ellipse: "intl",
 	  datumName: "Rassadiran"
 	};
 
-	exports$3.nzgd49 = {
+	exports$1.nzgd49 = {
 	  towgs84: "59.47,-5.04,187.44,0.47,-0.1,1.024,-4.5993",
 	  ellipse: "intl",
 	  datumName: "New Zealand Geodetic Datum 1949"
 	};
 
-	exports$3.osgb36 = {
+	exports$1.osgb36 = {
 	  towgs84: "446.448,-125.157,542.060,0.1502,0.2470,0.8421,-20.4894",
 	  ellipse: "airy",
 	  datumName: "Airy 1830"
 	};
 
-	exports$3.s_jtsk = {
+	exports$1.s_jtsk = {
 	  towgs84: "589,76,480",
 	  ellipse: 'bessel',
 	  datumName: 'S-JTSK (Ferro)'
 	};
 
-	exports$3.beduaram = {
+	exports$1.beduaram = {
 	  towgs84: '-106,-87,188',
 	  ellipse: 'clrk80',
 	  datumName: 'Beduaram'
 	};
 
-	exports$3.gunung_segara = {
+	exports$1.gunung_segara = {
 	  towgs84: '-403,684,41',
 	  ellipse: 'bessel',
 	  datumName: 'Gunung Segara Jakarta'
 	};
 
-	exports$3.rnb72 = {
+	exports$1.rnb72 = {
 	  towgs84: "106.869,-52.2978,103.724,-0.33657,0.456955,-1.84218,1",
 	  ellipse: "intl",
 	  datumName: "Reseau National Belge 1972"
 	};
 
-	function datum(datumCode, datum_params, a, b, es, ep2) {
+	function datum(datumCode, datum_params, a, b, es, ep2, nadgrids) {
 	  var out = {};
 
 	  if (datumCode === undefined || datumCode === 'none') {
@@ -10966,11 +10430,158 @@
 	    }
 	  }
 
+	  if (nadgrids) {
+	    out.datum_type = PJD_GRIDSHIFT;
+	    out.grids = nadgrids;
+	  }
 	  out.a = a; //datum object also uses these values
 	  out.b = b;
 	  out.es = es;
 	  out.ep2 = ep2;
 	  return out;
+	}
+
+	/**
+	 * Resources for details of NTv2 file formats:
+	 * - https://web.archive.org/web/20140127204822if_/http://www.mgs.gov.on.ca:80/stdprodconsume/groups/content/@mgs/@iandit/documents/resourcelist/stel02_047447.pdf
+	 * - http://mimaka.com/help/gs/html/004_NTV2%20Data%20Format.htm
+	 */
+
+	var loadedNadgrids = {};
+
+	/**
+	 * Load a binary NTv2 file (.gsb) to a key that can be used in a proj string like +nadgrids=<key>. Pass the NTv2 file
+	 * as an ArrayBuffer.
+	 */
+	function nadgrid(key, data) {
+	  var view = new DataView(data);
+	  var isLittleEndian = detectLittleEndian(view);
+	  var header = readHeader(view, isLittleEndian);
+	  if (header.nSubgrids > 1) {
+	    console.log('Only single NTv2 subgrids are currently supported, subsequent sub grids are ignored');
+	  }
+	  var subgrids = readSubgrids(view, header, isLittleEndian);
+	  var nadgrid = {header: header, subgrids: subgrids};
+	  loadedNadgrids[key] = nadgrid;
+	  return nadgrid;
+	}
+
+	/**
+	 * Given a proj4 value for nadgrids, return an array of loaded grids
+	 */
+	function getNadgrids(nadgrids) {
+	  // Format details: http://proj.maptools.org/gen_parms.html
+	  if (nadgrids === undefined) { return null; }
+	  var grids = nadgrids.split(',');
+	  return grids.map(parseNadgridString);
+	}
+
+	function parseNadgridString(value) {
+	  if (value.length === 0) {
+	    return null;
+	  }
+	  var optional = value[0] === '@';
+	  if (optional) {
+	    value = value.slice(1);
+	  }
+	  if (value === 'null') {
+	    return {name: 'null', mandatory: !optional, grid: null, isNull: true};
+	  }
+	  return {
+	    name: value,
+	    mandatory: !optional,
+	    grid: loadedNadgrids[value] || null,
+	    isNull: false
+	  };
+	}
+
+	function secondsToRadians(seconds) {
+	  return (seconds / 3600) * Math.PI / 180;
+	}
+
+	function detectLittleEndian(view) {
+	  var nFields = view.getInt32(8, false);
+	  if (nFields === 11) {
+	    return false;
+	  }
+	  nFields = view.getInt32(8, true);
+	  if (nFields !== 11) {
+	    console.warn('Failed to detect nadgrid endian-ness, defaulting to little-endian');
+	  }
+	  return true;
+	}
+
+	function readHeader(view, isLittleEndian) {
+	  return {
+	    nFields: view.getInt32(8, isLittleEndian),
+	    nSubgridFields: view.getInt32(24, isLittleEndian),
+	    nSubgrids: view.getInt32(40, isLittleEndian),
+	    shiftType: decodeString(view, 56, 56 + 8).trim(),
+	    fromSemiMajorAxis: view.getFloat64(120, isLittleEndian),
+	    fromSemiMinorAxis: view.getFloat64(136, isLittleEndian),
+	    toSemiMajorAxis: view.getFloat64(152, isLittleEndian),
+	    toSemiMinorAxis: view.getFloat64(168, isLittleEndian),
+	  };
+	}
+
+	function decodeString(view, start, end) {
+	  return String.fromCharCode.apply(null, new Uint8Array(view.buffer.slice(start, end)));
+	}
+
+	function readSubgrids(view, header, isLittleEndian) {
+	  var gridOffset = 176;
+	  var grids = [];
+	  for (var i = 0; i < header.nSubgrids; i++) {
+	    var subHeader = readGridHeader(view, gridOffset, isLittleEndian);
+	    var nodes = readGridNodes(view, gridOffset, subHeader, isLittleEndian);
+	    var lngColumnCount = Math.round(
+	      1 + (subHeader.upperLongitude - subHeader.lowerLongitude) / subHeader.longitudeInterval);
+	    var latColumnCount = Math.round(
+	      1 + (subHeader.upperLatitude - subHeader.lowerLatitude) / subHeader.latitudeInterval);
+	    // Proj4 operates on radians whereas the coordinates are in seconds in the grid
+	    grids.push({
+	      ll: [secondsToRadians(subHeader.lowerLongitude), secondsToRadians(subHeader.lowerLatitude)],
+	      del: [secondsToRadians(subHeader.longitudeInterval), secondsToRadians(subHeader.latitudeInterval)],
+	      lim: [lngColumnCount, latColumnCount],
+	      count: subHeader.gridNodeCount,
+	      cvs: mapNodes(nodes)
+	    });
+	  }
+	  return grids;
+	}
+
+	function mapNodes(nodes) {
+	  return nodes.map(function (r) {return [secondsToRadians(r.longitudeShift), secondsToRadians(r.latitudeShift)];});
+	}
+
+	function readGridHeader(view, offset, isLittleEndian) {
+	  return {
+	    name: decodeString(view, offset + 8, offset + 16).trim(),
+	    parent: decodeString(view, offset + 24, offset + 24 + 8).trim(),
+	    lowerLatitude: view.getFloat64(offset + 72, isLittleEndian),
+	    upperLatitude: view.getFloat64(offset + 88, isLittleEndian),
+	    lowerLongitude: view.getFloat64(offset + 104, isLittleEndian),
+	    upperLongitude: view.getFloat64(offset + 120, isLittleEndian),
+	    latitudeInterval: view.getFloat64(offset + 136, isLittleEndian),
+	    longitudeInterval: view.getFloat64(offset + 152, isLittleEndian),
+	    gridNodeCount: view.getInt32(offset + 168, isLittleEndian)
+	  };
+	}
+
+	function readGridNodes(view, offset, gridHeader, isLittleEndian) {
+	  var nodesOffset = offset + 176;
+	  var gridRecordLength = 16;
+	  var gridShiftRecords = [];
+	  for (var i = 0; i < gridHeader.gridNodeCount; i++) {
+	    var record = {
+	      latitudeShift: view.getFloat32(nodesOffset + i * gridRecordLength, isLittleEndian),
+	      longitudeShift: view.getFloat32(nodesOffset + i * gridRecordLength + 4, isLittleEndian),
+	      latitudeAccuracy: view.getFloat32(nodesOffset + i * gridRecordLength + 8, isLittleEndian),
+	      longitudeAccuracy: view.getFloat32(nodesOffset + i * gridRecordLength + 12, isLittleEndian),
+	    };
+	    gridShiftRecords.push(record);
+	  }
+	  return gridShiftRecords;
 	}
 
 	function Projection(srsCode,callback) {
@@ -10993,9 +10604,9 @@
 	    return;
 	  }
 	  if (json.datumCode && json.datumCode !== 'none') {
-	    var datumDef = match(exports$3, json.datumCode);
+	    var datumDef = match(exports$1, json.datumCode);
 	    if (datumDef) {
-	      json.datum_params = datumDef.towgs84 ? datumDef.towgs84.split(',') : null;
+	      json.datum_params = json.datum_params || (datumDef.towgs84 ? datumDef.towgs84.split(',') : null);
 	      json.ellps = datumDef.ellipse;
 	      json.datumName = datumDef.datumName ? datumDef.datumName : json.datumCode;
 	    }
@@ -11003,9 +10614,13 @@
 	  json.k0 = json.k0 || 1.0;
 	  json.axis = json.axis || 'enu';
 	  json.ellps = json.ellps || 'wgs84';
+	  json.lat1 = json.lat1 || json.lat0; // Lambert_Conformal_Conic_1SP, for example, needs this
+
 	  var sphere_ = sphere(json.a, json.b, json.rf, json.ellps, json.sphere);
 	  var ecc = eccentricity(sphere_.a, sphere_.b, sphere_.rf, json.R_A);
-	  var datumObj = json.datum || datum(json.datumCode, json.datum_params, sphere_.a, sphere_.b, ecc.es, ecc.ep2);
+	  var nadgrids = getNadgrids(json.nadgrids);
+	  var datumObj = json.datum || datum(json.datumCode, json.datum_params, sphere_.a, sphere_.b, ecc.es, ecc.ep2,
+	    nadgrids);
 
 	  extend(this, json); // transfer everything over from the projection because we don't know what we'll need
 	  extend(this, ourProj); // transfer all the methods from the projection
@@ -11296,14 +10911,33 @@
 	  }
 
 	  // If this datum requires grid shifts, then apply it to geodetic coordinates.
+	  var source_a = source.a;
+	  var source_es = source.es;
+	  if (source.datum_type === PJD_GRIDSHIFT) {
+	    var gridShiftCode = applyGridShift(source, false, point);
+	    if (gridShiftCode !== 0) {
+	      return undefined;
+	    }
+	    source_a = SRS_WGS84_SEMIMAJOR;
+	    source_es = SRS_WGS84_ESQUARED;
+	  }
+
+	  var dest_a = dest.a;
+	  var dest_b = dest.b;
+	  var dest_es = dest.es;
+	  if (dest.datum_type === PJD_GRIDSHIFT) {
+	    dest_a = SRS_WGS84_SEMIMAJOR;
+	    dest_b = SRS_WGS84_SEMIMINOR;
+	    dest_es = SRS_WGS84_ESQUARED;
+	  }
 
 	  // Do we need to go through geocentric coordinates?
-	  if (source.es === dest.es && source.a === dest.a && !checkParams(source.datum_type) &&  !checkParams(dest.datum_type)) {
+	  if (source_es === dest_es && source_a === dest_a && !checkParams(source.datum_type) &&  !checkParams(dest.datum_type)) {
 	    return point;
 	  }
 
 	  // Convert to geocentric coordinates.
-	  point = geodeticToGeocentric(point, source.es, source.a);
+	  point = geodeticToGeocentric(point, source_es, source_a);
 	  // Convert between datums
 	  if (checkParams(source.datum_type)) {
 	    point = geocentricToWgs84(point, source.datum_type, source.datum_params);
@@ -11311,8 +10945,131 @@
 	  if (checkParams(dest.datum_type)) {
 	    point = geocentricFromWgs84(point, dest.datum_type, dest.datum_params);
 	  }
-	  return geocentricToGeodetic(point, dest.es, dest.a, dest.b);
+	  point = geocentricToGeodetic(point, dest_es, dest_a, dest_b);
 
+	  if (dest.datum_type === PJD_GRIDSHIFT) {
+	    var destGridShiftResult = applyGridShift(dest, true, point);
+	    if (destGridShiftResult !== 0) {
+	      return undefined;
+	    }
+	  }
+
+	  return point;
+	}
+
+	function applyGridShift(source, inverse, point) {
+	  if (source.grids === null || source.grids.length === 0) {
+	    console.log('Grid shift grids not found');
+	    return -1;
+	  }
+	  var input = {x: -point.x, y: point.y};
+	  var output = {x: Number.NaN, y: Number.NaN};
+	  var attemptedGrids = [];
+	  for (var i = 0; i < source.grids.length; i++) {
+	    var grid = source.grids[i];
+	    attemptedGrids.push(grid.name);
+	    if (grid.isNull) {
+	      output = input;
+	      break;
+	    }
+	    if (grid.grid === null) {
+	      if (grid.mandatory) {
+	        console.log("Unable to find mandatory grid '" + grid.name + "'");
+	        return -1;
+	      }
+	      continue;
+	    }
+	    var subgrid = grid.grid.subgrids[0];
+	    // skip tables that don't match our point at all
+	    var epsilon = (Math.abs(subgrid.del[1]) + Math.abs(subgrid.del[0])) / 10000.0;
+	    var minX = subgrid.ll[0] - epsilon;
+	    var minY = subgrid.ll[1] - epsilon;
+	    var maxX = subgrid.ll[0] + (subgrid.lim[0] - 1) * subgrid.del[0] + epsilon;
+	    var maxY = subgrid.ll[1] + (subgrid.lim[1] - 1) * subgrid.del[1] + epsilon;
+	    if (minY > input.y || minX > input.x || maxY < input.y || maxX < input.x ) {
+	      continue;
+	    }
+	    output = applySubgridShift(input, inverse, subgrid);
+	    if (!isNaN(output.x)) {
+	      break;
+	    }
+	  }
+	  if (isNaN(output.x)) {
+	    console.log("Failed to find a grid shift table for location '"+
+	      -input.x * R2D + " " + input.y * R2D + " tried: '" + attemptedGrids + "'");
+	    return -1;
+	  }
+	  point.x = -output.x;
+	  point.y = output.y;
+	  return 0;
+	}
+
+	function applySubgridShift(pin, inverse, ct) {
+	  var val = {x: Number.NaN, y: Number.NaN};
+	  if (isNaN(pin.x)) { return val; }
+	  var tb = {x: pin.x, y: pin.y};
+	  tb.x -= ct.ll[0];
+	  tb.y -= ct.ll[1];
+	  tb.x = adjust_lon(tb.x - Math.PI) + Math.PI;
+	  var t = nadInterpolate(tb, ct);
+	  if (inverse) {
+	    if (isNaN(t.x)) {
+	      return val;
+	    }
+	    t.x = tb.x - t.x;
+	    t.y = tb.y - t.y;
+	    var i = 9, tol = 1e-12;
+	    var dif, del;
+	    do {
+	      del = nadInterpolate(t, ct);
+	      if (isNaN(del.x)) {
+	        console.log("Inverse grid shift iteration failed, presumably at grid edge.  Using first approximation.");
+	        break;
+	      }
+	      dif = {x: tb.x - (del.x + t.x), y: tb.y - (del.y + t.y)};
+	      t.x += dif.x;
+	      t.y += dif.y;
+	    } while (i-- && Math.abs(dif.x) > tol && Math.abs(dif.y) > tol);
+	    if (i < 0) {
+	      console.log("Inverse grid shift iterator failed to converge.");
+	      return val;
+	    }
+	    val.x = adjust_lon(t.x + ct.ll[0]);
+	    val.y = t.y + ct.ll[1];
+	  } else {
+	    if (!isNaN(t.x)) {
+	      val.x = pin.x + t.x;
+	      val.y = pin.y + t.y;
+	    }
+	  }
+	  return val;
+	}
+
+	function nadInterpolate(pin, ct) {
+	  var t = {x: pin.x / ct.del[0], y: pin.y / ct.del[1]};
+	  var indx = {x: Math.floor(t.x), y: Math.floor(t.y)};
+	  var frct = {x: t.x - 1.0 * indx.x, y: t.y - 1.0 * indx.y};
+	  var val= {x: Number.NaN, y: Number.NaN};
+	  var inx;
+	  if (indx.x < 0 || indx.x >= ct.lim[0]) {
+	    return val;
+	  }
+	  if (indx.y < 0 || indx.y >= ct.lim[1]) {
+	    return val;
+	  }
+	  inx = (indx.y * ct.lim[0]) + indx.x;
+	  var f00 = {x: ct.cvs[inx][0], y: ct.cvs[inx][1]};
+	  inx++;
+	  var f10= {x: ct.cvs[inx][0], y: ct.cvs[inx][1]};
+	  inx += ct.lim[0];
+	  var f11 = {x: ct.cvs[inx][0], y: ct.cvs[inx][1]};
+	  inx--;
+	  var f01 = {x: ct.cvs[inx][0], y: ct.cvs[inx][1]};
+	  var m11 = frct.x * frct.y, m10 = frct.x * (1.0 - frct.y),
+	    m00 = (1.0 - frct.x) * (1.0 - frct.y), m01 = (1.0 - frct.x) * frct.y;
+	  val.x = (m00 * f00.x + m10 * f10.x + m01 * f01.x + m11 * f11.x);
+	  val.y = (m00 * f00.y + m10 * f10.y + m01 * f01.y + m11 * f11.y);
+	  return val;
 	}
 
 	function adjust_axis(crs, denorm, point) {
@@ -11327,11 +11084,20 @@
 	    }
 	    if (i === 0) {
 	      v = xin;
-	      t = 'x';
+	      if ("ew".indexOf(crs.axis[i]) !== -1) {
+	        t = 'x';
+	      } else {
+	        t = 'y';
+	      }
+
 	    }
 	    else if (i === 1) {
 	      v = yin;
-	      t = 'y';
+	      if ("ns".indexOf(crs.axis[i]) !== -1) {
+	        t = 'y';
+	      } else {
+	        t = 'x';
+	      }
 	    }
 	    else {
 	      v = zin;
@@ -11402,7 +11168,7 @@
 	  return ((source.datum.datum_type === PJD_3PARAM || source.datum.datum_type === PJD_7PARAM) && dest.datumCode !== 'WGS84') || ((dest.datum.datum_type === PJD_3PARAM || dest.datum.datum_type === PJD_7PARAM) && source.datumCode !== 'WGS84');
 	}
 
-	function transform(source, dest, point) {
+	function transform(source, dest, point, enforceAxis) {
 	  var wgs84;
 	  if (Array.isArray(point)) {
 	    point = common(point);
@@ -11411,18 +11177,18 @@
 	  // Workaround for datum shifts towgs84, if either source or destination projection is not wgs84
 	  if (source.datum && dest.datum && checkNotWGS(source, dest)) {
 	    wgs84 = new Projection('WGS84');
-	    point = transform(source, wgs84, point);
+	    point = transform(source, wgs84, point, enforceAxis);
 	    source = wgs84;
 	  }
 	  // DGR, 2010/11/12
-	  if (source.axis !== 'enu') {
+	  if (enforceAxis && source.axis !== 'enu') {
 	    point = adjust_axis(source, false, point);
 	  }
 	  // Transform source points to long/lat, if they aren't already.
 	  if (source.projName === 'longlat') {
 	    point = {
-	      x: point.x * D2R,
-	      y: point.y * D2R,
+	      x: point.x * D2R$1,
+	      y: point.y * D2R$1,
 	      z: point.z || 0
 	    };
 	  } else {
@@ -11434,6 +11200,9 @@
 	      };
 	    }
 	    point = source.inverse(point); // Convert Cartesian to longlat
+	    if (!point) {
+	      return;
+	    }
 	  }
 	  // Adjust for the prime meridian if necessary
 	  if (source.from_greenwich) {
@@ -11442,6 +11211,9 @@
 
 	  // Convert datums if needed, and if possible.
 	  point = datum_transform(source.datum, dest.datum, point);
+	  if (!point) {
+	    return;
+	  }
 
 	  // Adjust for the prime meridian if necessary
 	  if (dest.from_greenwich) {
@@ -11471,7 +11243,7 @@
 	  }
 
 	  // DGR, 2010/11/12
-	  if (dest.axis !== 'enu') {
+	  if (enforceAxis && dest.axis !== 'enu') {
 	    return adjust_axis(dest, true, point);
 	  }
 
@@ -11480,10 +11252,10 @@
 
 	var wgs84 = Projection('WGS84');
 
-	function transformer(from, to, coords) {
+	function transformer(from, to, coords, enforceAxis) {
 	  var transformedArray, out, keys;
 	  if (Array.isArray(coords)) {
-	    transformedArray = transform(from, to, coords) || {x: NaN, y: NaN};
+	    transformedArray = transform(from, to, coords, enforceAxis) || {x: NaN, y: NaN};
 	    if (coords.length > 2) {
 	      if ((typeof from.name !== 'undefined' && from.name === 'geocent') || (typeof to.name !== 'undefined' && to.name === 'geocent')) {
 	        if (typeof transformedArray.z === 'number') {
@@ -11498,7 +11270,7 @@
 	      return [transformedArray.x, transformedArray.y];
 	    }
 	  } else {
-	    out = transform(from, to, coords);
+	    out = transform(from, to, coords, enforceAxis);
 	    keys = Object.keys(coords);
 	    if (keys.length === 2) {
 	      return out;
@@ -11548,11 +11320,11 @@
 	    return transformer(fromProj, toProj, coord);
 	  } else {
 	    obj = {
-	      forward: function (coords) {
-	        return transformer(fromProj, toProj, coords);
+	      forward: function (coords, enforceAxis) {
+	        return transformer(fromProj, toProj, coords, enforceAxis);
 	      },
-	      inverse: function (coords) {
-	        return transformer(toProj, fromProj, coords);
+	      inverse: function (coords, enforceAxis) {
+	        return transformer(toProj, fromProj, coords, enforceAxis);
 	      }
 	    };
 	    if (single) {
@@ -11592,8 +11364,8 @@
 	var V = 86; // V
 	var Z = 90; // Z
 	var mgrs = {
-	  forward: forward$1,
-	  inverse: inverse$1,
+	  forward: forward$s,
+	  inverse: inverse$s,
 	  toPoint: toPoint
 	};
 	/**
@@ -11605,7 +11377,7 @@
 	 *      100 m, 2 for 1000 m or 1 for 10000 m). Optional, default is 5.
 	 * @return {string} the MGRS string for the given location and accuracy.
 	 */
-	function forward$1(ll, accuracy) {
+	function forward$s(ll, accuracy) {
 	  accuracy = accuracy || 5; // default accuracy 1m
 	  return encode(LLtoUTM({
 	    lat: ll[1],
@@ -11620,7 +11392,7 @@
 	 *     (longitude) and top (latitude) values in WGS84, representing the
 	 *     bounding box for the provided MGRS reference.
 	 */
-	function inverse$1(mgrs) {
+	function inverse$s(mgrs) {
 	  var bbox = UTMtoLL(decode(mgrs.toUpperCase()));
 	  if (bbox.lat && bbox.lon) {
 	    return [bbox.lon, bbox.lat, bbox.lon, bbox.lat];
@@ -12332,7 +12104,7 @@
 	  return new Point(toPoint(mgrsStr));
 	};
 	Point.prototype.toMGRS = function(accuracy) {
-	  return forward$1([this.x, this.y], accuracy);
+	  return forward$s([this.x, this.y], accuracy);
 	};
 
 	var C00 = 1;
@@ -12366,12 +12138,12 @@
 	  return (en[0] * phi - cphi * (en[1] + sphi * (en[2] + sphi * (en[3] + sphi * en[4]))));
 	}
 
-	var MAX_ITER = 20;
+	var MAX_ITER$3 = 20;
 
 	function pj_inv_mlfn(arg, es, en) {
 	  var k = 1 / (1 - es);
 	  var phi = arg;
-	  for (var i = MAX_ITER; i; --i) { /* rarely goes over 2 iterations */
+	  for (var i = MAX_ITER$3; i; --i) { /* rarely goes over 2 iterations */
 	    var s = Math.sin(phi);
 	    var t = 1 - es * s * s;
 	    //t = this.pj_mlfn(phi, s, Math.cos(phi), en) - arg;
@@ -12388,7 +12160,7 @@
 
 	// Heavily based on this tmerc projection implementation
 
-	function init$2() {
+	function init$s() {
 	  this.x0 = this.x0 !== undefined ? this.x0 : 0;
 	  this.y0 = this.y0 !== undefined ? this.y0 : 0;
 	  this.long0 = this.long0 !== undefined ? this.long0 : 0;
@@ -12404,7 +12176,7 @@
 	    Transverse Mercator Forward  - long/lat to x/y
 	    long/lat in radians
 	  */
-	function forward$2(p) {
+	function forward$r(p) {
 	  var lon = p.x;
 	  var lat = p.y;
 
@@ -12479,7 +12251,7 @@
 	/**
 	    Transverse Mercator Inverse  -  x/y to long/lat
 	  */
-	function inverse$2(p) {
+	function inverse$r(p) {
 	  var con, phi;
 	  var lat, lon;
 	  var x = (p.x - this.x0) * (1 / this.a);
@@ -12543,12 +12315,12 @@
 	  return p;
 	}
 
-	var names$3 = ["Transverse_Mercator", "Transverse Mercator", "tmerc"];
+	var names$s = ["Fast_Transverse_Mercator", "Fast Transverse Mercator"];
 	var tmerc = {
-	  init: init$2,
-	  forward: forward$2,
-	  inverse: inverse$2,
-	  names: names$3
+	  init: init$s,
+	  forward: forward$r,
+	  inverse: inverse$r,
+	  names: names$s
 	};
 
 	function sinh(x) {
@@ -12650,9 +12422,15 @@
 
 	// Heavily based on this etmerc projection implementation
 
-	function init$3() {
-	  if (this.es === undefined || this.es <= 0) {
-	    throw new Error('incorrect elliptical usage');
+	function init$r() {
+	  if (!this.approx && (isNaN(this.es) || this.es <= 0)) {
+	    throw new Error('Incorrect elliptical usage. Try using the +approx option in the proj string, or PROJECTION["Fast_Transverse_Mercator"] in the WKT.');
+	  }
+	  if (this.approx) {
+	    // When '+approx' is set, use tmerc instead
+	    tmerc.init.apply(this);
+	    this.forward = tmerc.forward;
+	    this.inverse = tmerc.inverse;
 	  }
 
 	  this.x0 = this.x0 !== undefined ? this.x0 : 0;
@@ -12721,7 +12499,7 @@
 	  this.Zb = -this.Qn * (Z + clens(this.gtu, 2 * Z));
 	}
 
-	function forward$3(p) {
+	function forward$q(p) {
 	  var Ce = adjust_lon(p.x - this.long0);
 	  var Cn = p.y;
 
@@ -12758,7 +12536,7 @@
 	  return p;
 	}
 
-	function inverse$3(p) {
+	function inverse$q(p) {
 	  var Ce = (p.x - this.x0) * (1 / this.a);
 	  var Cn = (p.y - this.y0) * (1 / this.a);
 
@@ -12797,12 +12575,12 @@
 	  return p;
 	}
 
-	var names$4 = ["Extended_Transverse_Mercator", "Extended Transverse Mercator", "etmerc"];
+	var names$r = ["Extended_Transverse_Mercator", "Extended Transverse Mercator", "etmerc", "Transverse_Mercator", "Transverse Mercator", "tmerc"];
 	var etmerc = {
-	  init: init$3,
-	  forward: forward$3,
-	  inverse: inverse$3,
-	  names: names$4
+	  init: init$r,
+	  forward: forward$q,
+	  inverse: inverse$q,
+	  names: names$r
 	};
 
 	function adjust_zone(zone, lon) {
@@ -12821,13 +12599,13 @@
 	var dependsOn = 'etmerc';
 
 
-	function init$4() {
+	function init$q() {
 	  var zone = adjust_zone(this.zone, this.long0);
 	  if (zone === undefined) {
 	    throw new Error('unknown utm zone');
 	  }
 	  this.lat0 = 0;
-	  this.long0 =  ((6 * Math.abs(zone)) - 183) * D2R;
+	  this.long0 =  ((6 * Math.abs(zone)) - 183) * D2R$1;
 	  this.x0 = 500000;
 	  this.y0 = this.utmSouth ? 10000000 : 0;
 	  this.k0 = 0.9996;
@@ -12837,10 +12615,10 @@
 	  this.inverse = etmerc.inverse;
 	}
 
-	var names$5 = ["Universal Transverse Mercator System", "utm"];
+	var names$q = ["Universal Transverse Mercator System", "utm"];
 	var utm = {
-	  init: init$4,
-	  names: names$5,
+	  init: init$q,
+	  names: names$q,
 	  dependsOn: dependsOn
 	};
 
@@ -12848,9 +12626,9 @@
 	  return (Math.pow((1 - esinp) / (1 + esinp), exp));
 	}
 
-	var MAX_ITER$1 = 20;
+	var MAX_ITER$2 = 20;
 
-	function init$5() {
+	function init$p() {
 	  var sphi = Math.sin(this.lat0);
 	  var cphi = Math.cos(this.lat0);
 	  cphi *= cphi;
@@ -12861,7 +12639,7 @@
 	  this.K = Math.tan(0.5 * this.phic0 + FORTPI) / (Math.pow(Math.tan(0.5 * this.lat0 + FORTPI), this.C) * srat(this.e * sphi, this.ratexp));
 	}
 
-	function forward$4(p) {
+	function forward$p(p) {
 	  var lon = p.x;
 	  var lat = p.y;
 
@@ -12870,12 +12648,12 @@
 	  return p;
 	}
 
-	function inverse$4(p) {
+	function inverse$p(p) {
 	  var DEL_TOL = 1e-14;
 	  var lon = p.x / this.C;
 	  var lat = p.y;
 	  var num = Math.pow(Math.tan(0.5 * lat + FORTPI) / this.K, 1 / this.C);
-	  for (var i = MAX_ITER$1; i > 0; --i) {
+	  for (var i = MAX_ITER$2; i > 0; --i) {
 	    lat = 2 * Math.atan(num * srat(this.e * Math.sin(p.y), - 0.5 * this.e)) - HALF_PI;
 	    if (Math.abs(lat - p.y) < DEL_TOL) {
 	      break;
@@ -12891,15 +12669,15 @@
 	  return p;
 	}
 
-	var names$6 = ["gauss"];
+	var names$p = ["gauss"];
 	var gauss = {
-	  init: init$5,
-	  forward: forward$4,
-	  inverse: inverse$4,
-	  names: names$6
+	  init: init$p,
+	  forward: forward$p,
+	  inverse: inverse$p,
+	  names: names$p
 	};
 
-	function init$6() {
+	function init$o() {
 	  gauss.init.apply(this);
 	  if (!this.rc) {
 	    return;
@@ -12912,7 +12690,7 @@
 	  }
 	}
 
-	function forward$5(p) {
+	function forward$o(p) {
 	  var sinc, cosc, cosl, k;
 	  p.x = adjust_lon(p.x - this.long0);
 	  gauss.forward.apply(this, [p]);
@@ -12927,7 +12705,7 @@
 	  return p;
 	}
 
-	function inverse$5(p) {
+	function inverse$o(p) {
 	  var sinc, cosc, lon, lat, rho;
 	  p.x = (p.x - this.x0) / this.a;
 	  p.y = (p.y - this.y0) / this.a;
@@ -12953,12 +12731,12 @@
 	  return p;
 	}
 
-	var names$7 = ["Stereographic_North_Pole", "Oblique_Stereographic", "Polar_Stereographic", "sterea","Oblique Stereographic Alternative","Double_Stereographic"];
+	var names$o = ["Stereographic_North_Pole", "Oblique_Stereographic", "Polar_Stereographic", "sterea","Oblique Stereographic Alternative","Double_Stereographic"];
 	var sterea = {
-	  init: init$6,
-	  forward: forward$5,
-	  inverse: inverse$5,
-	  names: names$7
+	  init: init$o,
+	  forward: forward$o,
+	  inverse: inverse$o,
+	  names: names$o
 	};
 
 	function ssfn_(phit, sinphi, eccen) {
@@ -12966,7 +12744,7 @@
 	  return (Math.tan(0.5 * (HALF_PI + phit)) * Math.pow((1 - sinphi) / (1 + sinphi), 0.5 * eccen));
 	}
 
-	function init$7() {
+	function init$n() {
 	  this.coslat0 = Math.cos(this.lat0);
 	  this.sinlat0 = Math.sin(this.lat0);
 	  if (this.sphere) {
@@ -12999,7 +12777,7 @@
 	}
 
 	// Stereographic forward equations--mapping lat,long to x,y
-	function forward$6(p) {
+	function forward$n(p) {
 	  var lon = p.x;
 	  var lat = p.y;
 	  var sinlat = Math.sin(lat);
@@ -13052,7 +12830,7 @@
 	}
 
 	//* Stereographic inverse equations--mapping x,y to lat/long
-	function inverse$6(p) {
+	function inverse$n(p) {
 	  p.x -= this.x0;
 	  p.y -= this.y0;
 	  var lon, lat, ts, ce, Chi;
@@ -13119,12 +12897,12 @@
 
 	}
 
-	var names$8 = ["stere", "Stereographic_South_Pole", "Polar Stereographic (variant B)"];
+	var names$n = ["stere", "Stereographic_South_Pole", "Polar Stereographic (variant B)"];
 	var stere = {
-	  init: init$7,
-	  forward: forward$6,
-	  inverse: inverse$6,
-	  names: names$8,
+	  init: init$n,
+	  forward: forward$n,
+	  inverse: inverse$n,
+	  names: names$n,
 	  ssfn_: ssfn_
 	};
 
@@ -13136,7 +12914,7 @@
 	    http://www.swisstopo.admin.ch/internet/swisstopo/fr/home/topics/survey/sys/refsys/switzerland.parsysrelated1.31216.downloadList.77004.DownloadFile.tmp/swissprojectionfr.pdf
 	  */
 
-	function init$8() {
+	function init$m() {
 	  var phy0 = this.lat0;
 	  this.lambda0 = this.long0;
 	  var sinPhy0 = Math.sin(phy0);
@@ -13154,7 +12932,7 @@
 	  this.K = k1 - this.alpha * k2 + this.alpha * e / 2 * k3;
 	}
 
-	function forward$7(p) {
+	function forward$m(p) {
 	  var Sa1 = Math.log(Math.tan(Math.PI / 4 - p.y / 2));
 	  var Sa2 = this.e / 2 * Math.log((1 + this.e * Math.sin(p.y)) / (1 - this.e * Math.sin(p.y)));
 	  var S = -this.alpha * (Sa1 + Sa2) + this.K;
@@ -13175,7 +12953,7 @@
 	  return p;
 	}
 
-	function inverse$7(p) {
+	function inverse$m(p) {
 	  var Y = p.x - this.x0;
 	  var X = p.y - this.y0;
 
@@ -13207,192 +12985,264 @@
 	  return p;
 	}
 
-	var names$9 = ["somerc"];
+	var names$m = ["somerc"];
 	var somerc = {
-	  init: init$8,
-	  forward: forward$7,
-	  inverse: inverse$7,
-	  names: names$9
+	  init: init$m,
+	  forward: forward$m,
+	  inverse: inverse$m,
+	  names: names$m
 	};
+
+	var TOL = 1e-7;
+
+	function isTypeA(P) {
+	  var typeAProjections = ['Hotine_Oblique_Mercator','Hotine_Oblique_Mercator_Azimuth_Natural_Origin'];
+	  var projectionName = typeof P.PROJECTION === "object" ? Object.keys(P.PROJECTION)[0] : P.PROJECTION;
+	  
+	  return 'no_uoff' in P || 'no_off' in P || typeAProjections.indexOf(projectionName) !== -1;
+	}
+
 
 	/* Initialize the Oblique Mercator  projection
 	    ------------------------------------------*/
-	function init$9() {
-	  this.no_off = this.no_off || false;
-	  this.no_rot = this.no_rot || false;
-
-	  if (isNaN(this.k0)) {
-	    this.k0 = 1;
-	  }
-	  var sinlat = Math.sin(this.lat0);
-	  var coslat = Math.cos(this.lat0);
-	  var con = this.e * sinlat;
-
-	  this.bl = Math.sqrt(1 + this.es / (1 - this.es) * Math.pow(coslat, 4));
-	  this.al = this.a * this.bl * this.k0 * Math.sqrt(1 - this.es) / (1 - con * con);
-	  var t0 = tsfnz(this.e, this.lat0, sinlat);
-	  var dl = this.bl / coslat * Math.sqrt((1 - this.es) / (1 - con * con));
-	  if (dl * dl < 1) {
-	    dl = 1;
-	  }
-	  var fl;
-	  var gl;
-	  if (!isNaN(this.longc)) {
-	    //Central point and azimuth method
-
-	    if (this.lat0 >= 0) {
-	      fl = dl + Math.sqrt(dl * dl - 1);
-	    }
-	    else {
-	      fl = dl - Math.sqrt(dl * dl - 1);
-	    }
-	    this.el = fl * Math.pow(t0, this.bl);
-	    gl = 0.5 * (fl - 1 / fl);
-	    this.gamma0 = Math.asin(Math.sin(this.alpha) / dl);
-	    this.long0 = this.longc - Math.asin(gl * Math.tan(this.gamma0)) / this.bl;
-
-	  }
-	  else {
-	    //2 points method
-	    var t1 = tsfnz(this.e, this.lat1, Math.sin(this.lat1));
-	    var t2 = tsfnz(this.e, this.lat2, Math.sin(this.lat2));
-	    if (this.lat0 >= 0) {
-	      this.el = (dl + Math.sqrt(dl * dl - 1)) * Math.pow(t0, this.bl);
-	    }
-	    else {
-	      this.el = (dl - Math.sqrt(dl * dl - 1)) * Math.pow(t0, this.bl);
-	    }
-	    var hl = Math.pow(t1, this.bl);
-	    var ll = Math.pow(t2, this.bl);
-	    fl = this.el / hl;
-	    gl = 0.5 * (fl - 1 / fl);
-	    var jl = (this.el * this.el - ll * hl) / (this.el * this.el + ll * hl);
-	    var pl = (ll - hl) / (ll + hl);
-	    var dlon12 = adjust_lon(this.long1 - this.long2);
-	    this.long0 = 0.5 * (this.long1 + this.long2) - Math.atan(jl * Math.tan(0.5 * this.bl * (dlon12)) / pl) / this.bl;
-	    this.long0 = adjust_lon(this.long0);
-	    var dlon10 = adjust_lon(this.long1 - this.long0);
-	    this.gamma0 = Math.atan(Math.sin(this.bl * (dlon10)) / gl);
-	    this.alpha = Math.asin(dl * Math.sin(this.gamma0));
+	function init$l() {  
+	  var con, com, cosph0, D, F, H, L, sinph0, p, J, gamma = 0,
+	    gamma0, lamc = 0, lam1 = 0, lam2 = 0, phi1 = 0, phi2 = 0, alpha_c = 0;
+	  
+	  // only Type A uses the no_off or no_uoff property
+	  // https://github.com/OSGeo/proj.4/issues/104
+	  this.no_off = isTypeA(this);
+	  this.no_rot = 'no_rot' in this;
+	  
+	  var alp = false;
+	  if ("alpha" in this) {
+	    alp = true;
 	  }
 
+	  var gam = false;
+	  if ("rectified_grid_angle" in this) {
+	    gam = true;
+	  }
+
+	  if (alp) {
+	    alpha_c = this.alpha;
+	  }
+	  
+	  if (gam) {
+	    gamma = (this.rectified_grid_angle * D2R$1);
+	  }
+	  
+	  if (alp || gam) {
+	    lamc = this.longc;
+	  } else {
+	    lam1 = this.long1;
+	    phi1 = this.lat1;
+	    lam2 = this.long2;
+	    phi2 = this.lat2;
+	    
+	    if (Math.abs(phi1 - phi2) <= TOL || (con = Math.abs(phi1)) <= TOL ||
+	        Math.abs(con - HALF_PI) <= TOL || Math.abs(Math.abs(this.lat0) - HALF_PI) <= TOL ||
+	        Math.abs(Math.abs(phi2) - HALF_PI) <= TOL) {
+	      throw new Error();
+	    }
+	  }
+	  
+	  var one_es = 1.0 - this.es;
+	  com = Math.sqrt(one_es);
+	  
+	  if (Math.abs(this.lat0) > EPSLN) {
+	    sinph0 = Math.sin(this.lat0);
+	    cosph0 = Math.cos(this.lat0);
+	    con = 1 - this.es * sinph0 * sinph0;
+	    this.B = cosph0 * cosph0;
+	    this.B = Math.sqrt(1 + this.es * this.B * this.B / one_es);
+	    this.A = this.B * this.k0 * com / con;
+	    D = this.B * com / (cosph0 * Math.sqrt(con));
+	    F = D * D -1;
+	    
+	    if (F <= 0) {
+	      F = 0;
+	    } else {
+	      F = Math.sqrt(F);
+	      if (this.lat0 < 0) {
+	        F = -F;
+	      }
+	    }
+	    
+	    this.E = F += D;
+	    this.E *= Math.pow(tsfnz(this.e, this.lat0, sinph0), this.B);
+	  } else {
+	    this.B = 1 / com;
+	    this.A = this.k0;
+	    this.E = D = F = 1;
+	  }
+	  
+	  if (alp || gam) {
+	    if (alp) {
+	      gamma0 = Math.asin(Math.sin(alpha_c) / D);
+	      if (!gam) {
+	        gamma = alpha_c;
+	      }
+	    } else {
+	      gamma0 = gamma;
+	      alpha_c = Math.asin(D * Math.sin(gamma0));
+	    }
+	    this.lam0 = lamc - Math.asin(0.5 * (F - 1 / F) * Math.tan(gamma0)) / this.B;
+	  } else {
+	    H = Math.pow(tsfnz(this.e, phi1, Math.sin(phi1)), this.B);
+	    L = Math.pow(tsfnz(this.e, phi2, Math.sin(phi2)), this.B);
+	    F = this.E / H;
+	    p = (L - H) / (L + H);
+	    J = this.E * this.E;
+	    J = (J - L * H) / (J + L * H);
+	    con = lam1 - lam2;
+	    
+	    if (con < -Math.pi) {
+	      lam2 -=TWO_PI;
+	    } else if (con > Math.pi) {
+	      lam2 += TWO_PI;
+	    }
+	    
+	    this.lam0 = adjust_lon(0.5 * (lam1 + lam2) - Math.atan(J * Math.tan(0.5 * this.B * (lam1 - lam2)) / p) / this.B);
+	    gamma0 = Math.atan(2 * Math.sin(this.B * adjust_lon(lam1 - this.lam0)) / (F - 1 / F));
+	    gamma = alpha_c = Math.asin(D * Math.sin(gamma0));
+	  }
+	  
+	  this.singam = Math.sin(gamma0);
+	  this.cosgam = Math.cos(gamma0);
+	  this.sinrot = Math.sin(gamma);
+	  this.cosrot = Math.cos(gamma);
+	  
+	  this.rB = 1 / this.B;
+	  this.ArB = this.A * this.rB;
+	  this.BrA = 1 / this.ArB;
+	  this.A * this.B;
+	  
 	  if (this.no_off) {
-	    this.uc = 0;
+	    this.u_0 = 0;
+	  } else {
+	    this.u_0 = Math.abs(this.ArB * Math.atan(Math.sqrt(D * D - 1) / Math.cos(alpha_c)));
+	    
+	    if (this.lat0 < 0) {
+	      this.u_0 = - this.u_0;
+	    }  
 	  }
-	  else {
-	    if (this.lat0 >= 0) {
-	      this.uc = this.al / this.bl * Math.atan2(Math.sqrt(dl * dl - 1), Math.cos(this.alpha));
-	    }
-	    else {
-	      this.uc = -1 * this.al / this.bl * Math.atan2(Math.sqrt(dl * dl - 1), Math.cos(this.alpha));
-	    }
-	  }
-
+	    
+	  F = 0.5 * gamma0;
+	  this.v_pole_n = this.ArB * Math.log(Math.tan(FORTPI - F));
+	  this.v_pole_s = this.ArB * Math.log(Math.tan(FORTPI + F));
 	}
+
 
 	/* Oblique Mercator forward equations--mapping lat,long to x,y
 	    ----------------------------------------------------------*/
-	function forward$8(p) {
-	  var lon = p.x;
-	  var lat = p.y;
-	  var dlon = adjust_lon(lon - this.long0);
-	  var us, vs;
-	  var con;
-	  if (Math.abs(Math.abs(lat) - HALF_PI) <= EPSLN) {
-	    if (lat > 0) {
-	      con = -1;
+	function forward$l(p) {
+	  var coords = {};
+	  var S, T, U, V, W, temp, u, v;
+	  p.x = p.x - this.lam0;
+	  
+	  if (Math.abs(Math.abs(p.y) - HALF_PI) > EPSLN) {
+	    W = this.E / Math.pow(tsfnz(this.e, p.y, Math.sin(p.y)), this.B);
+	    
+	    temp = 1 / W;
+	    S = 0.5 * (W - temp);
+	    T = 0.5 * (W + temp);
+	    V = Math.sin(this.B * p.x);
+	    U = (S * this.singam - V * this.cosgam) / T;
+	        
+	    if (Math.abs(Math.abs(U) - 1.0) < EPSLN) {
+	      throw new Error();
 	    }
-	    else {
-	      con = 1;
-	    }
-	    vs = this.al / this.bl * Math.log(Math.tan(FORTPI + con * this.gamma0 * 0.5));
-	    us = -1 * con * HALF_PI * this.al / this.bl;
+	    
+	    v = 0.5 * this.ArB * Math.log((1 - U)/(1 + U));
+	    temp = Math.cos(this.B * p.x);
+	    
+	    if (Math.abs(temp) < TOL) {
+	      u = this.A * p.x;
+	    } else {
+	      u = this.ArB * Math.atan2((S * this.cosgam + V * this.singam), temp);
+	    }    
+	  } else {
+	    v = p.y > 0 ? this.v_pole_n : this.v_pole_s;
+	    u = this.ArB * p.y;
 	  }
-	  else {
-	    var t = tsfnz(this.e, lat, Math.sin(lat));
-	    var ql = this.el / Math.pow(t, this.bl);
-	    var sl = 0.5 * (ql - 1 / ql);
-	    var tl = 0.5 * (ql + 1 / ql);
-	    var vl = Math.sin(this.bl * (dlon));
-	    var ul = (sl * Math.sin(this.gamma0) - vl * Math.cos(this.gamma0)) / tl;
-	    if (Math.abs(Math.abs(ul) - 1) <= EPSLN) {
-	      vs = Number.POSITIVE_INFINITY;
-	    }
-	    else {
-	      vs = 0.5 * this.al * Math.log((1 - ul) / (1 + ul)) / this.bl;
-	    }
-	    if (Math.abs(Math.cos(this.bl * (dlon))) <= EPSLN) {
-	      us = this.al * this.bl * (dlon);
-	    }
-	    else {
-	      us = this.al * Math.atan2(sl * Math.cos(this.gamma0) + vl * Math.sin(this.gamma0), Math.cos(this.bl * dlon)) / this.bl;
-	    }
-	  }
-
+	     
 	  if (this.no_rot) {
-	    p.x = this.x0 + us;
-	    p.y = this.y0 + vs;
+	    coords.x = u;
+	    coords.y = v;
+	  } else {
+	    u -= this.u_0;
+	    coords.x = v * this.cosrot + u * this.sinrot;
+	    coords.y = u * this.cosrot - v * this.sinrot;
 	  }
-	  else {
-
-	    us -= this.uc;
-	    p.x = this.x0 + vs * Math.cos(this.alpha) + us * Math.sin(this.alpha);
-	    p.y = this.y0 + us * Math.cos(this.alpha) - vs * Math.sin(this.alpha);
-	  }
-	  return p;
+	  
+	  coords.x = (this.a * coords.x + this.x0);
+	  coords.y = (this.a * coords.y + this.y0);
+	  
+	  return coords;
 	}
 
-	function inverse$8(p) {
-	  var us, vs;
+	function inverse$l(p) {
+	  var u, v, Qp, Sp, Tp, Vp, Up;
+	  var coords = {};
+	  
+	  p.x = (p.x - this.x0) * (1.0 / this.a);
+	  p.y = (p.y - this.y0) * (1.0 / this.a);
+
 	  if (this.no_rot) {
-	    vs = p.y - this.y0;
-	    us = p.x - this.x0;
+	    v = p.y;
+	    u = p.x;
+	  } else {
+	    v = p.x * this.cosrot - p.y * this.sinrot;
+	    u = p.y * this.cosrot + p.x * this.sinrot + this.u_0;
 	  }
-	  else {
-	    vs = (p.x - this.x0) * Math.cos(this.alpha) - (p.y - this.y0) * Math.sin(this.alpha);
-	    us = (p.y - this.y0) * Math.cos(this.alpha) + (p.x - this.x0) * Math.sin(this.alpha);
-	    us += this.uc;
+	  
+	  Qp = Math.exp(-this.BrA * v);
+	  Sp = 0.5 * (Qp - 1 / Qp);
+	  Tp = 0.5 * (Qp + 1 / Qp);
+	  Vp = Math.sin(this.BrA * u);
+	  Up = (Vp * this.cosgam + Sp * this.singam) / Tp;
+	  
+	  if (Math.abs(Math.abs(Up) - 1) < EPSLN) {
+	    coords.x = 0;
+	    coords.y = Up < 0 ? -HALF_PI : HALF_PI;
+	  } else {
+	    coords.y = this.E / Math.sqrt((1 + Up) / (1 - Up));
+	    coords.y = phi2z(this.e, Math.pow(coords.y, 1 / this.B));
+	    
+	    if (coords.y === Infinity) {
+	      throw new Error();
+	    }
+	        
+	    coords.x = -this.rB * Math.atan2((Sp * this.cosgam - Vp * this.singam), Math.cos(this.BrA * u));
 	  }
-	  var qp = Math.exp(-1 * this.bl * vs / this.al);
-	  var sp = 0.5 * (qp - 1 / qp);
-	  var tp = 0.5 * (qp + 1 / qp);
-	  var vp = Math.sin(this.bl * us / this.al);
-	  var up = (vp * Math.cos(this.gamma0) + sp * Math.sin(this.gamma0)) / tp;
-	  var ts = Math.pow(this.el / Math.sqrt((1 + up) / (1 - up)), 1 / this.bl);
-	  if (Math.abs(up - 1) < EPSLN) {
-	    p.x = this.long0;
-	    p.y = HALF_PI;
-	  }
-	  else if (Math.abs(up + 1) < EPSLN) {
-	    p.x = this.long0;
-	    p.y = -1 * HALF_PI;
-	  }
-	  else {
-	    p.y = phi2z(this.e, ts);
-	    p.x = adjust_lon(this.long0 - Math.atan2(sp * Math.cos(this.gamma0) - vp * Math.sin(this.gamma0), Math.cos(this.bl * us / this.al)) / this.bl);
-	  }
-	  return p;
+	  
+	  coords.x += this.lam0;
+	  
+	  return coords;
 	}
 
-	var names$a = ["Hotine_Oblique_Mercator", "Hotine Oblique Mercator", "Hotine_Oblique_Mercator_Azimuth_Natural_Origin", "Hotine_Oblique_Mercator_Azimuth_Center", "omerc"];
+	var names$l = ["Hotine_Oblique_Mercator", "Hotine Oblique Mercator", "Hotine_Oblique_Mercator_Azimuth_Natural_Origin", "Hotine_Oblique_Mercator_Two_Point_Natural_Origin", "Hotine_Oblique_Mercator_Azimuth_Center", "Oblique_Mercator", "omerc"];
 	var omerc = {
-	  init: init$9,
-	  forward: forward$8,
-	  inverse: inverse$8,
-	  names: names$a
+	  init: init$l,
+	  forward: forward$l,
+	  inverse: inverse$l,
+	  names: names$l
 	};
 
-	function init$a() {
-
-	  // array of:  r_maj,r_min,lat1,lat2,c_lon,c_lat,false_east,false_north
-	  //double c_lat;                   /* center latitude                      */
-	  //double c_lon;                   /* center longitude                     */
+	function init$k() {
+	  
+	  //double lat0;                    /* the reference latitude               */
+	  //double long0;                   /* the reference longitude              */
 	  //double lat1;                    /* first standard parallel              */
 	  //double lat2;                    /* second standard parallel             */
 	  //double r_maj;                   /* major axis                           */
 	  //double r_min;                   /* minor axis                           */
 	  //double false_east;              /* x offset in meters                   */
 	  //double false_north;             /* y offset in meters                   */
+	  
+	  //the above value can be set with proj4.defs
+	  //example: proj4.defs("EPSG:2154","+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs");
 
 	  if (!this.lat2) {
 	    this.lat2 = this.lat1;
@@ -13440,7 +13290,7 @@
 
 	// Lambert Conformal conic forward equations--mapping lat,long to x,y
 	// -----------------------------------------------------------------
-	function forward$9(p) {
+	function forward$k(p) {
 
 	  var lon = p.x;
 	  var lat = p.y;
@@ -13472,7 +13322,7 @@
 
 	// Lambert Conformal Conic inverse equations--mapping x,y to lat/long
 	// -----------------------------------------------------------------
-	function inverse$9(p) {
+	function inverse$k(p) {
 
 	  var rh1, con, ts;
 	  var lat, lon;
@@ -13508,15 +13358,22 @@
 	  return p;
 	}
 
-	var names$b = ["Lambert Tangential Conformal Conic Projection", "Lambert_Conformal_Conic", "Lambert_Conformal_Conic_2SP", "lcc"];
+	var names$k = [
+	  "Lambert Tangential Conformal Conic Projection",
+	  "Lambert_Conformal_Conic",
+	  "Lambert_Conformal_Conic_1SP",
+	  "Lambert_Conformal_Conic_2SP",
+	  "lcc"
+	];
+
 	var lcc = {
-	  init: init$a,
-	  forward: forward$9,
-	  inverse: inverse$9,
-	  names: names$b
+	  init: init$k,
+	  forward: forward$k,
+	  inverse: inverse$k,
+	  names: names$k
 	};
 
-	function init$b() {
+	function init$j() {
 	  this.a = 6377397.155;
 	  this.es = 0.006674372230614;
 	  this.e = Math.sqrt(this.es);
@@ -13551,7 +13408,7 @@
 	/* ellipsoid */
 	/* calculate xy from lat/lon */
 	/* Constants, identical to inverse transform function */
-	function forward$a(p) {
+	function forward$j(p) {
 	  var gfi, u, deltav, s, d, eps, ro;
 	  var lon = p.x;
 	  var lat = p.y;
@@ -13575,7 +13432,7 @@
 	}
 
 	/* calculate lat/lon from xy */
-	function inverse$a(p) {
+	function inverse$j(p) {
 	  var u, deltav, s, d, eps, ro, fi1;
 	  var ok;
 
@@ -13613,12 +13470,12 @@
 	  return (p);
 	}
 
-	var names$c = ["Krovak", "krovak"];
+	var names$j = ["Krovak", "krovak"];
 	var krovak = {
-	  init: init$b,
-	  forward: forward$a,
-	  inverse: inverse$a,
-	  names: names$c
+	  init: init$j,
+	  forward: forward$j,
+	  inverse: inverse$j,
+	  names: names$j
 	};
 
 	function mlfn(e0, e1, e2, e3, phi) {
@@ -13667,7 +13524,7 @@
 	  return NaN;
 	}
 
-	function init$c() {
+	function init$i() {
 	  if (!this.sphere) {
 	    this.e0 = e0fn(this.es);
 	    this.e1 = e1fn(this.es);
@@ -13679,7 +13536,7 @@
 
 	/* Cassini forward equations--mapping lat,long to x,y
 	  -----------------------------------------------------------------------*/
-	function forward$b(p) {
+	function forward$i(p) {
 
 	  /* Forward equations
 	      -----------------*/
@@ -13716,7 +13573,7 @@
 
 	/* Inverse equations
 	  -----------------*/
-	function inverse$b(p) {
+	function inverse$i(p) {
 	  p.x -= this.x0;
 	  p.y -= this.y0;
 	  var x = p.x / this.a;
@@ -13757,12 +13614,12 @@
 
 	}
 
-	var names$d = ["Cassini", "Cassini_Soldner", "cass"];
+	var names$i = ["Cassini", "Cassini_Soldner", "cass"];
 	var cass = {
-	  init: init$c,
-	  forward: forward$b,
-	  inverse: inverse$b,
-	  names: names$d
+	  init: init$i,
+	  forward: forward$i,
+	  inverse: inverse$i,
+	  names: names$i
 	};
 
 	function qsfnz(eccent, sinphi) {
@@ -13790,7 +13647,7 @@
 
 	/* Initialize the Lambert Azimuthal Equal Area projection
 	  ------------------------------------------------------*/
-	function init$d() {
+	function init$h() {
 	  var t = Math.abs(this.lat0);
 	  if (Math.abs(t - HALF_PI) < EPSLN) {
 	    this.mode = this.lat0 < 0 ? this.S_POLE : this.N_POLE;
@@ -13841,7 +13698,7 @@
 
 	/* Lambert Azimuthal Equal Area forward equations--mapping lat,long to x,y
 	  -----------------------------------------------------------------------*/
-	function forward$c(p) {
+	function forward$h(p) {
 
 	  /* Forward equations
 	      -----------------*/
@@ -13867,7 +13724,7 @@
 	      if (this.mode === this.N_POLE) {
 	        coslam = -coslam;
 	      }
-	      if (Math.abs(phi + this.phi0) < EPSLN) {
+	      if (Math.abs(phi + this.lat0) < EPSLN) {
 	        return null;
 	      }
 	      y = FORTPI - phi * 0.5;
@@ -13939,7 +13796,7 @@
 
 	/* Inverse equations
 	  -----------------*/
-	function inverse$c(p) {
+	function inverse$h(p) {
 	  p.x -= this.x0;
 	  p.y -= this.y0;
 	  var x = p.x / this.a;
@@ -13966,7 +13823,7 @@
 	      y = cosz * rh;
 	      break;
 	    case this.OBLIQ:
-	      phi = (Math.abs(rh) <= EPSLN) ? this.phi0 : Math.asin(cosz * this.sinph0 + y * sinz * this.cosph0 / rh);
+	      phi = (Math.abs(rh) <= EPSLN) ? this.lat0 : Math.asin(cosz * this.sinph0 + y * sinz * this.cosph0 / rh);
 	      x *= sinz * this.cosph0;
 	      y = (cosz - Math.sin(phi) * this.sinph0) * rh;
 	      break;
@@ -13987,8 +13844,8 @@
 	      y *= this.dd;
 	      rho = Math.sqrt(x * x + y * y);
 	      if (rho < EPSLN) {
-	        p.x = 0;
-	        p.y = this.phi0;
+	        p.x = this.long0;
+	        p.y = this.lat0;
 	        return p;
 	      }
 	      sCe = 2 * Math.asin(0.5 * rho / this.rq);
@@ -14011,8 +13868,8 @@
 	      }
 	      q = (x * x + y * y);
 	      if (!q) {
-	        p.x = 0;
-	        p.y = this.phi0;
+	        p.x = this.long0;
+	        p.y = this.lat0;
 	        return p;
 	      }
 	      ab = 1 - q / this.qp;
@@ -14057,12 +13914,12 @@
 	  return (beta + APA[0] * Math.sin(t) + APA[1] * Math.sin(t + t) + APA[2] * Math.sin(t + t + t));
 	}
 
-	var names$e = ["Lambert Azimuthal Equal Area", "Lambert_Azimuthal_Equal_Area", "laea"];
+	var names$h = ["Lambert Azimuthal Equal Area", "Lambert_Azimuthal_Equal_Area", "laea"];
 	var laea = {
-	  init: init$d,
-	  forward: forward$c,
-	  inverse: inverse$c,
-	  names: names$e,
+	  init: init$h,
+	  forward: forward$h,
+	  inverse: inverse$h,
+	  names: names$h,
 	  S_POLE: S_POLE,
 	  N_POLE: N_POLE,
 	  EQUIT: EQUIT,
@@ -14076,7 +13933,7 @@
 	  return Math.asin(x);
 	}
 
-	function init$e() {
+	function init$g() {
 
 	  if (Math.abs(this.lat1 + this.lat2) < EPSLN) {
 	    return;
@@ -14115,7 +13972,7 @@
 
 	/* Albers Conical Equal Area forward equations--mapping lat,long to x,y
 	  -------------------------------------------------------------------*/
-	function forward$d(p) {
+	function forward$g(p) {
 
 	  var lon = p.x;
 	  var lat = p.y;
@@ -14134,7 +13991,7 @@
 	  return p;
 	}
 
-	function inverse$d(p) {
+	function inverse$g(p) {
 	  var rh1, qs, con, theta, lon, lat;
 
 	  p.x -= this.x0;
@@ -14191,12 +14048,12 @@
 	  return null;
 	}
 
-	var names$f = ["Albers_Conic_Equal_Area", "Albers", "aea"];
+	var names$g = ["Albers_Conic_Equal_Area", "Albers", "aea"];
 	var aea = {
-	  init: init$e,
-	  forward: forward$d,
-	  inverse: inverse$d,
-	  names: names$f,
+	  init: init$g,
+	  forward: forward$g,
+	  inverse: inverse$g,
+	  names: names$g,
 	  phi1z: phi1z
 	};
 
@@ -14219,7 +14076,7 @@
 
 	/* Gnomonic forward equations--mapping lat,long to x,y
 	    ---------------------------------------------------*/
-	function forward$e(p) {
+	function forward$f(p) {
 	  var sinphi, cosphi; /* sin and cos value        */
 	  var dlon; /* delta longitude value      */
 	  var coslon; /* cos of longitude        */
@@ -14260,7 +14117,7 @@
 	  return p;
 	}
 
-	function inverse$e(p) {
+	function inverse$f(p) {
 	  var rh; /* Rho */
 	  var sinc, cosc;
 	  var c;
@@ -14293,12 +14150,12 @@
 	  return p;
 	}
 
-	var names$g = ["gnom"];
+	var names$f = ["gnom"];
 	var gnom = {
 	  init: init$f,
-	  forward: forward$e,
-	  inverse: inverse$e,
-	  names: names$g
+	  forward: forward$f,
+	  inverse: inverse$f,
+	  names: names$f
 	};
 
 	function iqsfnz(eccent, q) {
@@ -14338,7 +14195,7 @@
 	    A User's Manual" by Gerald I. Evenden,
 	    USGS Open File Report 90-284and Release 4 Interim Reports (2003)
 	*/
-	function init$g() {
+	function init$e() {
 	  //no-op
 	  if (!this.sphere) {
 	    this.k0 = msfnz(this.e, Math.sin(this.lat_ts), Math.cos(this.lat_ts));
@@ -14347,7 +14204,7 @@
 
 	/* Cylindrical Equal Area forward equations--mapping lat,long to x,y
 	    ------------------------------------------------------------*/
-	function forward$f(p) {
+	function forward$e(p) {
 	  var lon = p.x;
 	  var lat = p.y;
 	  var x, y;
@@ -14371,7 +14228,7 @@
 
 	/* Cylindrical Equal Area inverse equations--mapping x,y to lat/long
 	    ------------------------------------------------------------*/
-	function inverse$f(p) {
+	function inverse$e(p) {
 	  p.x -= this.x0;
 	  p.y -= this.y0;
 	  var lon, lat;
@@ -14390,15 +14247,15 @@
 	  return p;
 	}
 
-	var names$h = ["cea"];
+	var names$e = ["cea"];
 	var cea = {
-	  init: init$g,
-	  forward: forward$f,
-	  inverse: inverse$f,
-	  names: names$h
+	  init: init$e,
+	  forward: forward$e,
+	  inverse: inverse$e,
+	  names: names$e
 	};
 
-	function init$h() {
+	function init$d() {
 
 	  this.x0 = this.x0 || 0;
 	  this.y0 = this.y0 || 0;
@@ -14412,7 +14269,7 @@
 
 	// forward equations--mapping lat,long to x,y
 	// -----------------------------------------------------------------
-	function forward$g(p) {
+	function forward$d(p) {
 
 	  var lon = p.x;
 	  var lat = p.y;
@@ -14426,7 +14283,7 @@
 
 	// inverse equations--mapping x,y to lat/long
 	// -----------------------------------------------------------------
-	function inverse$g(p) {
+	function inverse$d(p) {
 
 	  var x = p.x;
 	  var y = p.y;
@@ -14436,17 +14293,17 @@
 	  return p;
 	}
 
-	var names$i = ["Equirectangular", "Equidistant_Cylindrical", "eqc"];
+	var names$d = ["Equirectangular", "Equidistant_Cylindrical", "eqc"];
 	var eqc = {
-	  init: init$h,
-	  forward: forward$g,
-	  inverse: inverse$g,
-	  names: names$i
+	  init: init$d,
+	  forward: forward$d,
+	  inverse: inverse$d,
+	  names: names$d
 	};
 
-	var MAX_ITER$2 = 20;
+	var MAX_ITER$1 = 20;
 
-	function init$i() {
+	function init$c() {
 	  /* Place parameters in static storage for common use
 	      -------------------------------------------------*/
 	  this.temp = this.b / this.a;
@@ -14461,7 +14318,7 @@
 
 	/* Polyconic forward equations--mapping lat,long to x,y
 	    ---------------------------------------------------*/
-	function forward$h(p) {
+	function forward$c(p) {
 	  var lon = p.x;
 	  var lat = p.y;
 	  var x, y, el;
@@ -14496,7 +14353,7 @@
 
 	/* Inverse equations
 	  -----------------*/
-	function inverse$h(p) {
+	function inverse$c(p) {
 	  var lon, lat, x, y, i;
 	  var al, bl;
 	  var phi, dphi;
@@ -14513,7 +14370,7 @@
 	      bl = x * x / this.a / this.a + al * al;
 	      phi = al;
 	      var tanphi;
-	      for (i = MAX_ITER$2; i; --i) {
+	      for (i = MAX_ITER$1; i; --i) {
 	        tanphi = Math.tan(phi);
 	        dphi = -1 * (al * (phi * tanphi + 1) - phi - 0.5 * (phi * phi + bl) * tanphi) / ((phi - al) / tanphi - 1);
 	        phi += dphi;
@@ -14537,7 +14394,7 @@
 	      phi = al;
 	      var cl, mln, mlnp, ma;
 	      var con;
-	      for (i = MAX_ITER$2; i; --i) {
+	      for (i = MAX_ITER$1; i; --i) {
 	        con = this.e * Math.sin(phi);
 	        cl = Math.sqrt(1 - con * con) * Math.tan(phi);
 	        mln = this.a * mlfn(this.e0, this.e1, this.e2, this.e3, phi);
@@ -14562,15 +14419,15 @@
 	  return p;
 	}
 
-	var names$j = ["Polyconic", "poly"];
+	var names$c = ["Polyconic", "poly"];
 	var poly = {
-	  init: init$i,
-	  forward: forward$h,
-	  inverse: inverse$h,
-	  names: names$j
+	  init: init$c,
+	  forward: forward$c,
+	  inverse: inverse$c,
+	  names: names$c
 	};
 
-	function init$j() {
+	function init$b() {
 	  this.A = [];
 	  this.A[1] = 0.6399175073;
 	  this.A[2] = -0.1358797613;
@@ -14629,7 +14486,7 @@
 	    New Zealand Map Grid Forward  - long/lat to x/y
 	    long/lat in radians
 	  */
-	function forward$i(p) {
+	function forward$b(p) {
 	  var n;
 	  var lon = p.x;
 	  var lat = p.y;
@@ -14680,7 +14537,7 @@
 	/**
 	    New Zealand Map Grid Inverse  -  x/y to long/lat
 	  */
-	function inverse$i(p) {
+	function inverse$b(p) {
 	  var n;
 	  var x = p.x;
 	  var y = p.y;
@@ -14771,12 +14628,12 @@
 	  return p;
 	}
 
-	var names$k = ["New_Zealand_Map_Grid", "nzmg"];
+	var names$b = ["New_Zealand_Map_Grid", "nzmg"];
 	var nzmg = {
-	  init: init$j,
-	  forward: forward$i,
-	  inverse: inverse$i,
-	  names: names$k
+	  init: init$b,
+	  forward: forward$b,
+	  inverse: inverse$b,
+	  names: names$b
 	};
 
 	/*
@@ -14788,13 +14645,13 @@
 
 	/* Initialize the Miller Cylindrical projection
 	  -------------------------------------------*/
-	function init$k() {
+	function init$a() {
 	  //no-op
 	}
 
 	/* Miller Cylindrical forward equations--mapping lat,long to x,y
 	    ------------------------------------------------------------*/
-	function forward$j(p) {
+	function forward$a(p) {
 	  var lon = p.x;
 	  var lat = p.y;
 	  /* Forward equations
@@ -14810,7 +14667,7 @@
 
 	/* Miller Cylindrical inverse equations--mapping x,y to lat/long
 	    ------------------------------------------------------------*/
-	function inverse$j(p) {
+	function inverse$a(p) {
 	  p.x -= this.x0;
 	  p.y -= this.y0;
 
@@ -14822,18 +14679,18 @@
 	  return p;
 	}
 
-	var names$l = ["Miller_Cylindrical", "mill"];
+	var names$a = ["Miller_Cylindrical", "mill"];
 	var mill = {
-	  init: init$k,
-	  forward: forward$j,
-	  inverse: inverse$j,
-	  names: names$l
+	  init: init$a,
+	  forward: forward$a,
+	  inverse: inverse$a,
+	  names: names$a
 	};
 
-	var MAX_ITER$3 = 20;
+	var MAX_ITER = 20;
 
 
-	function init$l() {
+	function init$9() {
 	  /* Place parameters in static storage for common use
 	    -------------------------------------------------*/
 
@@ -14853,7 +14710,7 @@
 
 	/* Sinusoidal forward equations--mapping lat,long to x,y
 	  -----------------------------------------------------*/
-	function forward$k(p) {
+	function forward$9(p) {
 	  var x, y;
 	  var lon = p.x;
 	  var lat = p.y;
@@ -14867,7 +14724,7 @@
 	    }
 	    else {
 	      var k = this.n * Math.sin(lat);
-	      for (var i = MAX_ITER$3; i; --i) {
+	      for (var i = MAX_ITER; i; --i) {
 	        var V = (this.m * lat + Math.sin(lat) - k) / (this.m + Math.cos(lat));
 	        lat -= V;
 	        if (Math.abs(V) < EPSLN) {
@@ -14892,7 +14749,7 @@
 	  return p;
 	}
 
-	function inverse$k(p) {
+	function inverse$9(p) {
 	  var lat, temp, lon, s;
 
 	  p.x -= this.x0;
@@ -14930,18 +14787,18 @@
 	  return p;
 	}
 
-	var names$m = ["Sinusoidal", "sinu"];
+	var names$9 = ["Sinusoidal", "sinu"];
 	var sinu = {
-	  init: init$l,
-	  forward: forward$k,
-	  inverse: inverse$k,
-	  names: names$m
+	  init: init$9,
+	  forward: forward$9,
+	  inverse: inverse$9,
+	  names: names$9
 	};
 
-	function init$m() {}
+	function init$8() {}
 	/* Mollweide forward equations--mapping lat,long to x,y
 	    ----------------------------------------------------*/
-	function forward$l(p) {
+	function forward$8(p) {
 
 	  /* Forward equations
 	      -----------------*/
@@ -14977,7 +14834,7 @@
 	  return p;
 	}
 
-	function inverse$l(p) {
+	function inverse$8(p) {
 	  var theta;
 	  var arg;
 
@@ -15012,15 +14869,15 @@
 	  return p;
 	}
 
-	var names$n = ["Mollweide", "moll"];
+	var names$8 = ["Mollweide", "moll"];
 	var moll = {
-	  init: init$m,
-	  forward: forward$l,
-	  inverse: inverse$l,
-	  names: names$n
+	  init: init$8,
+	  forward: forward$8,
+	  inverse: inverse$8,
+	  names: names$8
 	};
 
-	function init$n() {
+	function init$7() {
 
 	  /* Place parameters in static storage for common use
 	      -------------------------------------------------*/
@@ -15060,7 +14917,7 @@
 
 	/* Equidistant Conic forward equations--mapping lat,long to x,y
 	  -----------------------------------------------------------*/
-	function forward$m(p) {
+	function forward$7(p) {
 	  var lon = p.x;
 	  var lat = p.y;
 	  var rh1;
@@ -15084,7 +14941,7 @@
 
 	/* Inverse equations
 	  -----------------*/
-	function inverse$m(p) {
+	function inverse$7(p) {
 	  p.x -= this.x0;
 	  p.y = this.rh - p.y + this.y0;
 	  var con, rh1, lat, lon;
@@ -15119,22 +14976,22 @@
 
 	}
 
-	var names$o = ["Equidistant_Conic", "eqdc"];
+	var names$7 = ["Equidistant_Conic", "eqdc"];
 	var eqdc = {
-	  init: init$n,
-	  forward: forward$m,
-	  inverse: inverse$m,
-	  names: names$o
+	  init: init$7,
+	  forward: forward$7,
+	  inverse: inverse$7,
+	  names: names$7
 	};
 
 	/* Initialize the Van Der Grinten projection
 	  ----------------------------------------*/
-	function init$o() {
+	function init$6() {
 	  //this.R = 6370997; //Radius of earth
 	  this.R = this.a;
 	}
 
-	function forward$n(p) {
+	function forward$6(p) {
 
 	  var lon = p.x;
 	  var lat = p.y;
@@ -15191,7 +15048,7 @@
 
 	/* Van Der Grinten inverse equations--mapping x,y to lat/long
 	  ---------------------------------------------------------*/
-	function inverse$n(p) {
+	function inverse$6(p) {
 	  var lon, lat;
 	  var xx, yy, xys, c1, c2, c3;
 	  var a1;
@@ -15243,20 +15100,20 @@
 	  return p;
 	}
 
-	var names$p = ["Van_der_Grinten_I", "VanDerGrinten", "vandg"];
+	var names$6 = ["Van_der_Grinten_I", "VanDerGrinten", "vandg"];
 	var vandg = {
-	  init: init$o,
-	  forward: forward$n,
-	  inverse: inverse$n,
-	  names: names$p
+	  init: init$6,
+	  forward: forward$6,
+	  inverse: inverse$6,
+	  names: names$6
 	};
 
-	function init$p() {
+	function init$5() {
 	  this.sin_p12 = Math.sin(this.lat0);
 	  this.cos_p12 = Math.cos(this.lat0);
 	}
 
-	function forward$o(p) {
+	function forward$5(p) {
 	  var lon = p.x;
 	  var lat = p.y;
 	  var sinphi = Math.sin(p.y);
@@ -15280,7 +15137,7 @@
 	      //default case
 	      cos_c = this.sin_p12 * sinphi + this.cos_p12 * cosphi * Math.cos(dlon);
 	      c = Math.acos(cos_c);
-	      kp = c / Math.sin(c);
+	      kp = c ? c / Math.sin(c) : 1;
 	      p.x = this.x0 + this.a * kp * cosphi * Math.sin(dlon);
 	      p.y = this.y0 + this.a * kp * (this.cos_p12 * sinphi - this.sin_p12 * cosphi * Math.cos(dlon));
 	      return p;
@@ -15341,10 +15198,10 @@
 
 	}
 
-	function inverse$o(p) {
+	function inverse$5(p) {
 	  p.x -= this.x0;
 	  p.y -= this.y0;
-	  var rh, z, sinz, cosz, lon, lat, con, e0, e1, e2, e3, Mlp, M, N1, psi, Az, cosAz, tmp, A, B, D, Ee, F;
+	  var rh, z, sinz, cosz, lon, lat, con, e0, e1, e2, e3, Mlp, M, N1, psi, Az, cosAz, tmp, A, B, D, Ee, F, sinpsi;
 	  if (this.sphere) {
 	    rh = Math.sqrt(p.x * p.x + p.y * p.y);
 	    if (rh > (2 * HALF_PI * this.a)) {
@@ -15428,7 +15285,8 @@
 	      F = 1 - A * Ee * Ee / 2 - D * Ee * Ee * Ee / 6;
 	      psi = Math.asin(this.sin_p12 * Math.cos(Ee) + this.cos_p12 * Math.sin(Ee) * cosAz);
 	      lon = adjust_lon(this.long0 + Math.asin(Math.sin(Az) * Math.sin(Ee) / Math.cos(psi)));
-	      lat = Math.atan((1 - this.es * F * this.sin_p12 / Math.sin(psi)) * Math.tan(psi) / (1 - this.es));
+	      sinpsi = Math.sin(psi);
+	      lat = Math.atan2((sinpsi - this.es * F * this.sin_p12) * Math.tan(psi), sinpsi * (1 - this.es));
 	      p.x = lon;
 	      p.y = lat;
 	      return p;
@@ -15437,15 +15295,15 @@
 
 	}
 
-	var names$q = ["Azimuthal_Equidistant", "aeqd"];
+	var names$5 = ["Azimuthal_Equidistant", "aeqd"];
 	var aeqd = {
-	  init: init$p,
-	  forward: forward$o,
-	  inverse: inverse$o,
-	  names: names$q
+	  init: init$5,
+	  forward: forward$5,
+	  inverse: inverse$5,
+	  names: names$5
 	};
 
-	function init$q() {
+	function init$4() {
 	  //double temp;      /* temporary variable    */
 
 	  /* Place parameters in static storage for common use
@@ -15456,7 +15314,7 @@
 
 	/* Orthographic forward equations--mapping lat,long to x,y
 	    ---------------------------------------------------*/
-	function forward$p(p) {
+	function forward$4(p) {
 	  var sinphi, cosphi; /* sin and cos value        */
 	  var dlon; /* delta longitude value      */
 	  var coslon; /* cos of longitude        */
@@ -15483,7 +15341,7 @@
 	  return p;
 	}
 
-	function inverse$p(p) {
+	function inverse$4(p) {
 	  var rh; /* height above ellipsoid      */
 	  var z; /* angle          */
 	  var sinz, cosz; /* sin of z and cos of z      */
@@ -15525,12 +15383,12 @@
 	  return p;
 	}
 
-	var names$r = ["ortho"];
+	var names$4 = ["ortho"];
 	var ortho = {
-	  init: init$q,
-	  forward: forward$p,
-	  inverse: inverse$p,
-	  names: names$r
+	  init: init$4,
+	  forward: forward$4,
+	  inverse: inverse$4,
+	  names: names$4
 	};
 
 	// QSC projection rewritten from the original PROJ4
@@ -15552,7 +15410,7 @@
 	    AREA_3: 4
 	};
 
-	function init$r() {
+	function init$3() {
 
 	  this.x0 = this.x0 || 0;
 	  this.y0 = this.y0 || 0;
@@ -15584,7 +15442,7 @@
 
 	// QSC forward equations--mapping lat,long to x,y
 	// -----------------------------------------------------------------
-	function forward$q(p) {
+	function forward$3(p) {
 	  var xy = {x: 0, y: 0};
 	  var lat, lon;
 	  var theta, phi;
@@ -15707,7 +15565,7 @@
 
 	// QSC inverse equations--mapping x,y to lat/long
 	// -----------------------------------------------------------------
-	function inverse$q(p) {
+	function inverse$3(p) {
 	  var lp = {lam: 0, phi: 0};
 	  var mu, nu, cosmu, tannu;
 	  var tantheta, theta, cosphi, phi;
@@ -15890,12 +15748,12 @@
 	  return slon;
 	}
 
-	var names$s = ["Quadrilateralized Spherical Cube", "Quadrilateralized_Spherical_Cube", "qsc"];
+	var names$3 = ["Quadrilateralized Spherical Cube", "Quadrilateralized_Spherical_Cube", "qsc"];
 	var qsc = {
-	  init: init$r,
-	  forward: forward$q,
-	  inverse: inverse$q,
-	  names: names$s
+	  init: init$3,
+	  forward: forward$3,
+	  inverse: inverse$3,
+	  names: names$3
 	};
 
 	// Robinson projection
@@ -15970,7 +15828,7 @@
 	    return x;
 	}
 
-	function init$s() {
+	function init$2() {
 	    this.x0 = this.x0 || 0;
 	    this.y0 = this.y0 || 0;
 	    this.long0 = this.long0 || 0;
@@ -15978,7 +15836,7 @@
 	    this.title = this.title || "Robinson";
 	}
 
-	function forward$r(ll) {
+	function forward$2(ll) {
 	    var lon = adjust_lon(ll.x - this.long0);
 
 	    var dphi = Math.abs(ll.y);
@@ -16002,7 +15860,7 @@
 	    return xy;
 	}
 
-	function inverse$r(xy) {
+	function inverse$2(xy) {
 	    var ll = {
 	        x: (xy.x - this.x0) / (this.a * FXC),
 	        y: Math.abs(xy.y - this.y0) / (this.a * FYC)
@@ -16037,7 +15895,7 @@
 	        }, t, EPSLN, 100);
 
 	        ll.x /= poly3_val(COEFS_X[i], t);
-	        ll.y = (5 * i + t) * D2R;
+	        ll.y = (5 * i + t) * D2R$1;
 	        if (xy.y < 0) {
 	            ll.y = -ll.y;
 	        }
@@ -16047,35 +15905,201 @@
 	    return ll;
 	}
 
-	var names$t = ["Robinson", "robin"];
+	var names$2 = ["Robinson", "robin"];
 	var robin = {
-	  init: init$s,
-	  forward: forward$r,
-	  inverse: inverse$r,
-	  names: names$t
+	  init: init$2,
+	  forward: forward$2,
+	  inverse: inverse$2,
+	  names: names$2
 	};
 
-	function init$t() {
+	function init$1() {
 	    this.name = 'geocent';
 
 	}
 
-	function forward$s(p) {
+	function forward$1(p) {
 	    var point = geodeticToGeocentric(p, this.es, this.a);
 	    return point;
 	}
 
-	function inverse$s(p) {
+	function inverse$1(p) {
 	    var point = geocentricToGeodetic(p, this.es, this.a, this.b);
 	    return point;
 	}
 
-	var names$u = ["Geocentric", 'geocentric', "geocent", "Geocent"];
+	var names$1 = ["Geocentric", 'geocentric', "geocent", "Geocent"];
 	var geocent = {
-	    init: init$t,
-	    forward: forward$s,
-	    inverse: inverse$s,
-	    names: names$u
+	    init: init$1,
+	    forward: forward$1,
+	    inverse: inverse$1,
+	    names: names$1
+	};
+
+	var mode = {
+	  N_POLE: 0,
+	  S_POLE: 1,
+	  EQUIT: 2,
+	  OBLIQ: 3
+	};
+
+	var params = {
+	  h:     { def: 100000, num: true },           // default is Karman line, no default in PROJ.7
+	  azi:   { def: 0, num: true, degrees: true }, // default is North
+	  tilt:  { def: 0, num: true, degrees: true }, // default is Nadir
+	  long0: { def: 0, num: true },                // default is Greenwich, conversion to rad is automatic
+	  lat0:  { def: 0, num: true }                 // default is Equator, conversion to rad is automatic
+	};
+
+	function init() {
+	  Object.keys(params).forEach(function (p) {
+	    if (typeof this[p] === "undefined") {
+	      this[p] = params[p].def;
+	    } else if (params[p].num && isNaN(this[p])) {
+	      throw new Error("Invalid parameter value, must be numeric " + p + " = " + this[p]);
+	    } else if (params[p].num) {
+	      this[p] = parseFloat(this[p]);
+	    }
+	    if (params[p].degrees) {
+	      this[p] = this[p] * D2R$1;
+	    }
+	  }.bind(this));
+
+	  if (Math.abs((Math.abs(this.lat0) - HALF_PI)) < EPSLN) {
+	    this.mode = this.lat0 < 0 ? mode.S_POLE : mode.N_POLE;
+	  } else if (Math.abs(this.lat0) < EPSLN) {
+	    this.mode = mode.EQUIT;
+	  } else {
+	    this.mode = mode.OBLIQ;
+	    this.sinph0 = Math.sin(this.lat0);
+	    this.cosph0 = Math.cos(this.lat0);
+	  }
+
+	  this.pn1 = this.h / this.a;  // Normalize relative to the Earth's radius
+
+	  if (this.pn1 <= 0 || this.pn1 > 1e10) {
+	    throw new Error("Invalid height");
+	  }
+	  
+	  this.p = 1 + this.pn1;
+	  this.rp = 1 / this.p;
+	  this.h1 = 1 / this.pn1;
+	  this.pfact = (this.p + 1) * this.h1;
+	  this.es = 0;
+
+	  var omega = this.tilt;
+	  var gamma = this.azi;
+	  this.cg = Math.cos(gamma);
+	  this.sg = Math.sin(gamma);
+	  this.cw = Math.cos(omega);
+	  this.sw = Math.sin(omega);
+	}
+
+	function forward(p) {
+	  p.x -= this.long0;
+	  var sinphi = Math.sin(p.y);
+	  var cosphi = Math.cos(p.y);
+	  var coslam = Math.cos(p.x);
+	  var x, y;
+	  switch (this.mode) {
+	    case mode.OBLIQ:
+	      y = this.sinph0 * sinphi + this.cosph0 * cosphi * coslam;
+	      break;
+	    case mode.EQUIT:
+	      y = cosphi * coslam;
+	      break;
+	    case mode.S_POLE:
+	      y = -sinphi;
+	      break;
+	    case mode.N_POLE:
+	      y = sinphi;
+	      break;
+	  }
+	  y = this.pn1 / (this.p - y);
+	  x = y * cosphi * Math.sin(p.x);
+
+	  switch (this.mode) {
+	    case mode.OBLIQ:
+	      y *= this.cosph0 * sinphi - this.sinph0 * cosphi * coslam;
+	      break;
+	    case mode.EQUIT:
+	      y *= sinphi;
+	      break;
+	    case mode.N_POLE:
+	      y *= -(cosphi * coslam);
+	      break;
+	    case mode.S_POLE:
+	      y *= cosphi * coslam;
+	      break;
+	  }
+
+	  // Tilt 
+	  var yt, ba;
+	  yt = y * this.cg + x * this.sg;
+	  ba = 1 / (yt * this.sw * this.h1 + this.cw);
+	  x = (x * this.cg - y * this.sg) * this.cw * ba;
+	  y = yt * ba;
+
+	  p.x = x * this.a;
+	  p.y = y * this.a;
+	  return p;
+	}
+
+	function inverse(p) {
+	  p.x /= this.a;
+	  p.y /= this.a;
+	  var r = { x: p.x, y: p.y };
+
+	  // Un-Tilt
+	  var bm, bq, yt;
+	  yt = 1 / (this.pn1 - p.y * this.sw);
+	  bm = this.pn1 * p.x * yt;
+	  bq = this.pn1 * p.y * this.cw * yt;
+	  p.x = bm * this.cg + bq * this.sg;
+	  p.y = bq * this.cg - bm * this.sg;
+
+	  var rh = hypot(p.x, p.y);
+	  if (Math.abs(rh) < EPSLN) {
+	    r.x = 0;
+	    r.y = p.y;
+	  } else {
+	    var cosz, sinz;
+	    sinz = 1 - rh * rh * this.pfact;
+	    sinz = (this.p - Math.sqrt(sinz)) / (this.pn1 / rh + rh / this.pn1);
+	    cosz = Math.sqrt(1 - sinz * sinz);
+	    switch (this.mode) {
+	      case mode.OBLIQ:
+	        r.y = Math.asin(cosz * this.sinph0 + p.y * sinz * this.cosph0 / rh);
+	        p.y = (cosz - this.sinph0 * Math.sin(r.y)) * rh;
+	        p.x *= sinz * this.cosph0;
+	        break;
+	      case mode.EQUIT:
+	        r.y = Math.asin(p.y * sinz / rh);
+	        p.y = cosz * rh;
+	        p.x *= sinz;
+	        break;
+	      case mode.N_POLE:
+	        r.y = Math.asin(cosz);
+	        p.y = -p.y;
+	        break;
+	      case mode.S_POLE:
+	        r.y = -Math.asin(cosz);
+	        break;
+	    }
+	    r.x = Math.atan2(p.x, p.y);
+	  }
+
+	  p.x = r.x + this.long0;
+	  p.y = r.y;
+	  return p;
+	}
+
+	var names = ["Tilted_Perspective", "tpers"];
+	var tpers = {
+	  init: init,
+	  forward: forward,
+	  inverse: inverse,
+	  names: names
 	};
 
 	function includedProjections(proj4){
@@ -16106,6 +16130,7 @@
 	  proj4.Proj.projections.add(qsc);
 	  proj4.Proj.projections.add(robin);
 	  proj4.Proj.projections.add(geocent);
+	  proj4.Proj.projections.add(tpers);
 	}
 
 	proj4.defaultDatum = 'WGS84'; //default datum
@@ -16114,6 +16139,7 @@
 	proj4.Point = Point;
 	proj4.toPoint = common;
 	proj4.defs = defs;
+	proj4.nadgrid = nadgrid;
 	proj4.transform = transform;
 	proj4.mgrs = mgrs;
 	proj4.version = '__VERSION__';
@@ -16127,7 +16153,9 @@
 
 		tileSpec = event.data;
 
-		new TerrainMeshLoader( tileSpec, mapLoaded, mapError ).load();
+		new TerrainMeshLoader( tileSpec )
+			.then( data => mapLoaded( data ) )
+			.catch( () => postMessage( { status: 'nomap' } ) );
 
 	}
 
@@ -16146,7 +16174,16 @@
 		const x = resolution * tileSpec.x - 180;
 		const y = resolution * tileSpec.y - 90;
 
-		var terrainTile = new TerrainMeshGeometry( x, y, resolution, meshData, offsets, transform, clip );
+		const terrainTile = new TerrainMeshGeometry( x, y, resolution, meshData, offsets, transform, clip, tileSpec.clippedFraction );
+
+		// we need to zoom if the tile doesnt contain enough vertices to give a reasonable surface
+
+		if ( terrainTile.mustZoom ) {
+
+			postMessage( { status: 'zoom' } );
+			return;
+
+		}
 
 		// avoid calculating bounding box in main thread.
 		// however it isn't preserved in json serialisation.
@@ -16177,7 +16214,7 @@
 
 		const srcAttributes = terrainTile.attributes;
 
-		for ( var attributeName in srcAttributes ) {
+		for ( const attributeName in srcAttributes ) {
 
 			const attribute = srcAttributes[ attributeName ];
 			const arrayBuffer = attribute.array.buffer;
@@ -16188,16 +16225,17 @@
 
 		}
 
-		postMessage( { status: 'ok', index: indexBuffer, attributes: attributes, boundingBox: boundingBox }, transferable );
+		postMessage(
+			{
+				status: 'ok',
+				index: indexBuffer,
+				attributes: attributes,
+				boundingBox: boundingBox,
+				canZoom: terrainTile.canZoom
+			},
+			transferable
+		);
 
 	}
 
-	function mapError () {
-
-		postMessage( { status: 'nomap' } );
-
-	}
-
-	// EOF
-
-})));
+}));
