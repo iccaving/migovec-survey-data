@@ -155,6 +155,23 @@ layout custom_lines
 				thdraw P;
 			enddef;
 
+			def l_floorstep_MY (expr P) =
+			  T:=identity;
+			  cas := 0;
+			  dlzka := arclength P;
+			  mojkrok:=adjust_step(dlzka, 0.141u);
+			  pickup PenD;
+			  forever:
+			    t := arctime cas of P;
+			    mark_ (P,t,0.08u);
+			    cas := cas + mojkrok;
+			    exitif cas > dlzka + (mojkrok / 3); % for rounding errors
+			  endfor;
+			  pickup PenC;
+			  thdraw P;
+			enddef;
+
+			initsymbol("l_floorstep_MY");
 
 		# blue wall line with perpendicular dashes
 		def l_wall_ice_MY (expr P) =

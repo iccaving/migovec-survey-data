@@ -9,8 +9,8 @@ lookup map:cave
 	m-all-e@monatip.primadona_ubend_monatip.system_migovec [80 89.6 100] "Monatip"
 	m-all-e@vrtnarija_vilinska.system_migovec [100 92.2 66.7] "Vrtnarija"
 	m-all-e@m2m16m18.system_migovec [66.7 100 72.2] "M2-M16-M18"
-	
-	
+
+
 	m-all-p@primadona.primadona_ubend_monatip.system_migovec [95 70 100] "Primadona"
 	m-all-p@belladonna.primadona_ubend_monatip.system_migovec [95 70 100] ""
 	m-all-p@ubend.primadona_ubend_monatip.system_migovec [95 70 100] ""
@@ -28,17 +28,17 @@ maps-offset off
 
 layout local-p
 	copy base-p
-	
+
 	scale 1 2000
 	base-scale 1 3000
 	fonts-setup 6 8 10 12 14
 	colour map-fg map:cave
 	symbol-colour area water [3.52 55.68 83.92]
 	symbol-colour area sump [15.68 20.39 50.98]
-	
+
 	symbol-hide line survey
 	symbol-hide point station
-	
+
 	code metapost
 		set_label_level("1");
 	endcode
@@ -56,14 +56,14 @@ layout local-e
 	colour map-fg map:cave
 	colour-model cmyk
 	scale-bar 200 m
-	
-	
+
+
 	code metapost
 		set_label_level("1");
 	endcode
-	
+
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
-	
+
 endlayout
 
 source

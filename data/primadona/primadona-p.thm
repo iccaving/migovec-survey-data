@@ -17,29 +17,30 @@ map m-all-p -projection plan -title "Primadona"
 	m-offsets-p
 endmap
 
-map m-all-no-offset-p -projection plan -title "Primadona"
+map m-detailed-p -projection plan -title "Primadona"
 	m-entrance-p
 	m-galerija_branch-p
 	m-ttt_branch-p
 	m-hammerhead_branch-p
 	m-upside_down_area-p
-	m-hallelujah_branch-p
-	m-below_lumos-p  
-	m-pivnica-p 
-	m-below_cattlegrid-p
-	m-klic_globin_branch-p
-	m-old_slov_route-p
-	m-deep-p
-	
+	m-below_cattlegrid-p [200 0 m] none
+	m-hallelujah_branch-p [200 0 m] none
+	m-below_lumos-p
+
+	m-pivnica-p [-200 0 m] none
+	m-klic_globin_branch-p [-400 0 m] none
+	m-old_slov_route-p [-200 0 m] none
+	m-deep-p [-400 0 m] none
+
 endmap
 
 
 ## OFFSETS
 
 map m-offsets-p -projection plan
-	m-below_lumos-p [-200 0 m] below  
-	m-pivnica-p [-200 0 m] below 
-	m-below_cattlegrid-p [-200 0 m] below 
+	m-below_lumos-p [-200 0 m] below
+	m-pivnica-p [-200 0 m] below
+	m-below_cattlegrid-p [-200 0 m] below
 endmap
 
 
@@ -88,6 +89,8 @@ map m-ttt_branch-p -projection plan
 	m-all-p@pov
 	m-all-p@ttt
 	m-all-p@batmere
+	m-all-p@zima00
+	m-all-p@TTTr
 endmap
 
 map m-octarine_region-p -projection plan -title "Octarine Region (2019)"
@@ -131,15 +134,19 @@ map m-hammerhead_branch-p -projection plan
 endmap
 
 map m-old_slov_route-p -projection plan
-	m-all-p@zima00
-	m-all-p@TTTr
-	#m-pivnica-p [0 -180 m] below
+	m-all-p@buckwheat
+	m-all-p@pivnica_resurvey
 	m-all-p@pivnica_2_resurvey
 	m-all-p@spodnji
 	m-all-p@milanova
+	m-all-p@ma_je_vlazna
+	m-all-p@polnoletna
 endmap
 
 map m-klic_globin_branch-p -projection plan -title "Klic Globin Branch"
+	m-all-p@snakebite
+	m-all-p@snakebitetwo
+	m-all-p@ave_maria
 	m-all-p@lost_in_a_dream
 	m-all-p@lost_in_a_dream_2
 	m-all-p@penny_falls
@@ -163,8 +170,7 @@ endmap
 
 map m-deep-p -projection plan
 	m-all-p@artemis
-	m-all-p@ma_je_vlazna
-	m-all-p@polnoletna
+
 	m-all-p@tartarus
 	m-all-p@lachrymosa
 	m-all-p@poseidon_rift
@@ -178,9 +184,7 @@ endmap
 
 map m-pivnica-p -projection plan
 	m-all-p@buckwheat
-	m-all-p@snakebite
-	m-all-p@snakebitetwo
-	m-all-p@ave_maria
+
 	m-all-p@pivnica_resurvey
 endmap
 

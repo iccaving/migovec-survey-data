@@ -1,0 +1,42 @@
+source ../../data/system_migovec.th
+
+
+select m-detailed-p@primadona.primadona_ubend_monatip.system_migovec
+
+input ../../layouts/detailed-p.thl
+input ../../layouts/metapost/connection_marker.thl
+input ../../layouts/metapost/label.thl
+
+
+layout local-p
+  copy detailed-p
+  copy connection_marker
+  copy custom_label
+  scale 1 1000
+
+  symbol-hide line label
+  symbol-show point label
+  symbol-hide point remark
+  symbol-hide line arrow
+  symbol-hide line slope
+  symbol-assign line pit MY
+  symbol-assign point water-flow MY
+  symbol-assign area water MY
+  symbol-assign line floor-step MY
+  symbol-assign area sump MY
+
+  code tex-map
+  \framethickness=0.5mm
+  \def\maplayout{
+  \legendbox{1}{79}{W}{\size[26]\the\cavename}
+  \legendbox{1}{75}{NW}{\size[10]\the\comment}
+  \legendbox{65}{5}{N}{\scalebar}
+  \legendbox{65}{7}{S}{\northarrow}
+  }
+  endcode
+
+  #code metapost
+  #  set_label_level(3);
+  #endcode
+endlayout
+export map -o ../../outputs/prima_p_detailed.pdf -layout local-p

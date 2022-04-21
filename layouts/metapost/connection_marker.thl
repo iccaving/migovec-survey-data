@@ -58,8 +58,10 @@ layout connection_marker
 	      U:=(.2u,.2u);
 	      T:=identity aligned A rotated R scaled S shifted P;
 	      pickup PenB;
-				thfill (-.15u,-.15u)..(-.15u,.15u)..(.15u,.15u)..(.15u,-.15u)..cycle withcolor(RGB);
-				thdraw (-.15u,-.15u)..(-.15u,.15u)..(.15u,.15u)..(.15u,-.15u)..cycle withcolor(0,0,0);
+				rad := .15u;
+				factor := Scale / 25;
+				thfill (-rad,-rad)..(-rad,rad)..(rad,rad)..(rad,-rad)..cycle withcolor(RGB);
+				thdraw (-rad,-rad)..(-rad,rad)..(rad,rad)..(rad,-rad)..cycle withcolor(0,0,0);
 
 
 				begingroup
@@ -68,45 +70,47 @@ layout connection_marker
 					else:
 						offset:= 1; % keep default offset
 					fi;
+					xoffset := (2.5u / factor) * offset;
+					yoffset := (1u / factor);
 					if known ATTR_text:
 						picture thetext;
 
 						thetext := thTEX("\thframed{ \thtinysize\si " & ATTR_text & "}");
 
 						if A = (1,1):
-							p_label.urt(thetext,P shifted (2.5u*offset,1u),R,0);
+							p_label.urt(thetext,P shifted (xoffset,yoffset),R,0);
 							pickup PenB;
-							thdraw (2.45u*offset,1u)--(.15u,1u)--(0,0.15u) withcolor(0,0,0);
+							thdraw (xoffset-.05u,yoffset)--(.15u,yoffset)--(0,0.15u) withcolor(0,0,0);
 
 						elseif A = (1,0):
-								p_label.rt(thetext,P shifted (2.5u*offset,0),R,0);
+								p_label.rt(thetext,P shifted (xoffset,0),R,0);
 								pickup PenB;
-								thdraw (2.45u*offset,0)--(.15u,0) withcolor(0,0,0);
+								thdraw (xoffset-0.05u,0)--(.15u,0) withcolor(0,0,0);
 
 						elseif A = (1,-1):
-								p_label.lrt(thetext,P shifted (2.5u*offset,-1u),R,0);
+								p_label.lrt(thetext,P shifted (xoffset,-yoffset),R,0);
 								pickup PenB;
-								thdraw (2.45u*offset,-1u)--(.15u,-1u)--(0,-0.15u) withcolor(0,0,0);
+								thdraw (xoffset-.05u,-yoffset)--(.15u,-yoffset)--(0,-0.15u) withcolor(0,0,0);
 
 						elseif A = (-1,1):
-					 		p_label.ulft(thetext,P shifted (-2.5u*offset-0.2u,1u),R,0);
+					 		p_label.ulft(thetext,P shifted (-xoffset-0.2u,yoffset),R,0);
 							pickup PenB;
-					 		thdraw (-2.45u*offset,1u)--(-.15u,1u)--(0,0.15u) withcolor(0,0,0);
+							thdraw (-xoffset-.05u,yoffset)--(-.15u,yoffset)--(0,0.15u) withcolor(0,0,0);
 
 						elseif A = (-1,0):
-							p_label.lft(thetext,P shifted (-2.5u*offset-0.2u,0),R,0);
+							p_label.lft(thetext,P shifted (-xoffset-0.2u,0),R,0);
 							pickup PenB;
-							thdraw (-2.45u*offset,0)--(-.15u,0) withcolor(0,0,0);
+							thdraw (-xoffset-.05u,0)--(-.15u,0) withcolor(0,0,0);
 
 						elseif A = (-1,-1):
-								p_label.llft(thetext,P shifted (-2.5u*offset-0.2u,-1u),R,0);
+								p_label.llft(thetext,P shifted (-xoffset-0.2u,-yoffset),R,0);
 								pickup PenB;
-								thdraw (-2.45u*offset,-1u)--(-.15u,-1u)--(0,-0.15u) withcolor(0,0,0);
+								thdraw (-xoffset-.05u,-yoffset)--(-.15u,-yoffset)--(0,0.15u) withcolor(0,0,0);
 
 						else:
-								p_label.rt(thetext,P shifted (2.5u*offset,0),R,0);
+								p_label.rt(thetext,P shifted (xoffset,0),R,0);
 								pickup PenB;
-								thdraw (2.45u*offset,0)--(.15u,0) withcolor(0,0,0);
+								thdraw (xoffset-0.05u,0)--(.15u,0) withcolor(0,0,0);
 						fi;
 					fi;
 				endgroup

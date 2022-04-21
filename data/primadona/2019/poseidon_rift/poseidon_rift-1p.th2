@@ -4,22 +4,22 @@ encoding  utf-8
 
 
 scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
-	
+
 	line gradient
 		347.1139 1192.4002
 		388.3816 1217.4843
 	endline
-	
+
 	line gradient
 		297.1139 932.4002
 		338.3816 957.4843
 	endline
-	
+
 	line gradient
 		267.1139 812.4002
 		308.3816 837.4843
 	endline
-	
+
 	line floor-step -close on -outline in
 		429.51 1920.83
 		417.5 1914.0
@@ -28,7 +28,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		434.0 1880.08
 		436.25 1911.77
 	endline
-	
+
 	line wall
 		470.81 1872.88
 		468.81 1879.83 473.53 1880.23 473.88 1887.66
@@ -45,7 +45,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		400.45 2075.93 399.0 2072.42 396.24 2071.1
 		393.06 2069.58 389.0 2067.0 364.29 2049.03
 	endline
-	
+
 	line wall
 		319.5 1945.0
 		322.42 1926.6 330.73 1893.15 331.39 1874.6
@@ -58,7 +58,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		369.66 1801.06 369.27 1799.23 369.74 1797.52
 		372.28 1788.41 377.28 1779.04 377.71 1768.89
 	endline
-	
+
 	line rock-border -close on
 		384.69 1909.98
 		378.72 1926.92
@@ -69,7 +69,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		351.02 1909.27
 		354.72 1893.49
 	endline
-	
+
 	line rock-border -close on
 		402.12 1897.03
 		383.94 1893.04
@@ -77,7 +77,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		389.53 1874.58
 		402.73 1872.11
 	endline
-	
+
 	line rock-border -close on
 		434.0 1880.08
 		413.48 1878.86
@@ -87,7 +87,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		404.39 1832.05
 		417.21 1831.41
 	endline
-	
+
 	line rock-border -close on
 		409.09 1817.78
 		389.42 1819.53
@@ -95,7 +95,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		387.36 1802.59
 		400.96 1796.35
 	endline
-	
+
 	line rock-border -close on
 		413.58 1805.32
 		398.76 1804.74
@@ -106,14 +106,14 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		394.58 1743.38
 		405.16 1742.03
 	endline
-	
+
 	line rock-border -close on
 		352.81 2005.68
 		336.25 2003.94
 		336.64 1992.53
 		345.71 1984.87
 	endline
-	
+
 	line rock-border -close on
 		371.74 1988.73
 		353.31 1984.74
@@ -121,14 +121,14 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		353.86 1960.27
 		366.49 1955.34
 	endline
-	
+
 	line rock-border -close on
 		388.67 2050.03
 		377.59 2041.28
 		376.96 2023.88
 		388.06 2015.02
 	endline
-	
+
 	line rock-border -close on
 		410.59 1987.73
 		393.97 1985.63
@@ -137,20 +137,20 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		395.7 1954.1
 		406.12 1953.77
 	endline
-	
+
 	line rock-border -close on
 		441.47 1944.37
 		430.92 1941.75
 		443.48 1934.07
 	endline
-	
+
 	line rock-border -close on
 		442.96 1969.29
 		425.82 1968.72
 		421.54 1959.05
 		430.11 1948.31
 	endline
-	
+
 	line rock-border -close on
 		454.42 1934.9
 		436.3 1932.07
@@ -158,7 +158,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		436.25 1911.77
 		448.44 1906.0
 	endline
-	
+
 	line rock-border -close on
 		454.42 1902.51
 		436.69 1899.22
@@ -166,7 +166,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		450.02 1876.94
 		462.89 1877.09
 	endline
-	
+
 	line wall
 		453.25 1634.15
 		454.5 1647.58 459.76 1660.84 460.45 1674.17
@@ -179,7 +179,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		458.93 1836.44 467.03 1838.93 469.45 1844.15
 		473.51 1852.94 471.85 1863.7 470.81 1872.88
 	endline
-	
+
 	line rock-border -close on
 		427.69 1405.99
 		426.25 1420.56
@@ -212,7 +212,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		421.86 1355.56
 		435.69 1362.73
 	endline
-	
+
 	line rock-border -close on
 		382.74 1525.36
 		371.72 1537.41
@@ -222,7 +222,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		355.24 1512.88
 		369.79 1506.43
 	endline
-	
+
 	line rock-border -close on
 		438.19 1521.58
 		423.33 1534.69
@@ -237,7 +237,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		421.32 1489.23
 		428.31 1481.65
 	endline
-	
+
 	line rock-border -close on
 		410.47 1633.79
 		395.88 1633.0
@@ -245,7 +245,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		389.65 1611.87
 		399.26 1606.06
 	endline
-	
+
 	line rock-border -close on
 		423.91 1614.04
 		407.17 1601.3
@@ -253,7 +253,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		412.64 1586.82
 		421.68 1585.69
 	endline
-	
+
 	line rock-border -close on
 		381.06 1599.33
 		365.85 1592.09
@@ -261,18 +261,18 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		372.3 1573.86
 		382.55 1572.43
 	endline
-	
+
 	line floor-step
 		341.58 1511.07
 		368.55 1511.07 397.75 1510.34 423.16 1500.25
 		439.03 1493.95 451.68 1480.61 466.54 1472.61
 	endline
-	
+
 	line floor-step
 		382.84 1366.25
 		382.84 1407.39 376.9 1451.28 360.68 1489.46
 	endline
-	
+
 	line wall
 		427.54 1368.08
 		428.48 1388.15 438.19 1407.99 437.44 1427.91
@@ -289,7 +289,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		445.48 1600.07 446.13 1601.79 447.05 1603.37
 		454.39 1616.02 457.27 1633.58 453.25 1634.15
 	endline
-	
+
 	line wall
 		377.71 1768.89
 		372.06 1760.66 372.44 1749.06 373.71 1746.3
@@ -305,13 +305,13 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		344.33 1502.23 339.32 1483.57 337.4 1465.06
 		335.46 1446.33 336.77 1426.37 331.59 1408.18
 	endline
-	
+
 	line wall
 		436.12 1165.35
 		442.89 1199.27 437.99 1235.32 438.41 1269.45
 		438.81 1301.68 442.61 1334.98 427.54 1368.08
 	endline
-	
+
 	line wall
 		331.59 1408.18
 		334.22 1379.29 345.26 1356.94 345.6 1334.14
@@ -325,7 +325,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		344.24 1205.15 341.44 1200.11 340.29 1197.95
 		336.62 1191.03 335.21 1182.96 333.32 1175.53
 	endline
-	
+
 	line wall
 		384.19 921.95
 		387.28 921.95 390.48 921.07 393.44 921.95
@@ -339,7 +339,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		451.07 1039.9 446.1 1061.61 444.43 1073.56
 		440.29 1103.18 437.92 1134.03 436.12 1165.35
 	endline
-	
+
 	line border -close on -id 1p-a2
 		434.05 1164.86
 		429.35 1165.96 424.47 1170.0 419.97 1168.25
@@ -348,11 +348,11 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		416.48 1132.26 414.56 1118.89 420.87 1113.52
 		427.13 1108.2 439.15 1110.08 446.68 1110.08
 	endline
-	
+
 	area water
 	1p-a2
 	endarea
-	
+
 	line border -close on -id 1p-a4
 		442.5 1088.44
 		439.59 1088.72 424.91 1093.4 422.01 1090.7
@@ -360,11 +360,11 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		418.13 1058.5 420.52 1039.15 432.02 1030.15
 		440.29 1023.67 452.15 1024.02 461.76 1021.49
 	endline
-	
+
 	area water
 	1p-a4
 	endarea
-	
+
 	line floor-step
 		326.15 1345.4
 		329.22 1338.61 336.64 1334.79 341.89 1330.12
@@ -385,7 +385,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		409.76 1026.23 411.8 1022.54 412.88 1018.68
 		416.33 1006.37 428.11 995.23 440.33 991.12
 	endline
-	
+
 	line floor-step
 		323.8 1199.64
 		334.24 1198.15 345.97 1193.1 352.7 1184.36
@@ -399,7 +399,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		382.71 891.42 384.42 889.69 386.34 888.23
 		389.84 885.56 395.74 886.66 400.48 888.05
 	endline
-	
+
 	line floor-step
 		275.38 944.35
 		275.66 942.8 315.37 884.9 315.59 883.34
@@ -409,14 +409,14 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		328.52 800.88 324.21 776.15 331.48 762.91
 		345.49 765.87 352.96 782.52 358.38 794.3
 	endline
-	
+
 	line wall
 		337.79 733.88
 		338.98 758.64 349.58 782.54 355.39 806.13
 		360.98 828.8 365.19 852.61 372.49 874.78
 		377.46 889.85 374.97 908.61 384.19 921.95
 	endline
-	
+
 	line border -close on -id 1p-a8
 		385.14 871.34
 		376.5 873.97 366.01 881.97 356.76 877.75
@@ -427,11 +427,11 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		334.67 767.31 342.88 765.99 346.76 768.38
 		353.05 772.26 356.32 780.51 362.58 784.87
 	endline
-	
+
 	area water
 	1p-a8
 	endarea
-	
+
 	line border -close on -id 1p-a10
 		419.7 976.36
 		418.87 979.6 416.76 993.49 409.12 993.17
@@ -439,11 +439,11 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		383.55 954.32 373.85 929.31 377.46 905.55
 		395.57 907.6 410.65 931.64 417.22 947.09
 	endline
-	
+
 	area water
 	1p-a10
 	endarea
-	
+
 	point 347.31 819.73 water-flow -orientation 3.0
 	point 394.18 957.47 water-flow -orientation 3.0
 	point 429.32 1052.51 water-flow -orientation 3.0
@@ -457,7 +457,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		285.13 984.11 298.56 938.31 288.22 897.53
 		281.1 869.44 267.44 906.8 240.48 895.24
 	endline
-	
+
 	line wall
 		333.32 1175.53
 		333.09 1150.44 330.34 1142.49 326.51 1135.09
@@ -467,10 +467,10 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		287.01 1152.54 283.35 1152.65 281.33 1154.97
 		277.11 1159.81 274.73 1166.0 271.43 1171.52
 	endline
-	
+
 	point 345.79 1049.41 water-flow -orientation 125.0
 	point 299.94 1120.78 water-flow -orientation 125.0
-	point 488.44 1927.19 label -attr level 4 -text "pitch under boulders" -align t -scale s
+	point 588.44 1927.19 label -attr level 4 -text "\si pitch under<br>boulders" -align t -scale s
 	line wall -id s1_l1
 		274.0 655.0
 		278.72 656.54 282.43 655.4 286.81 657.81
@@ -478,7 +478,7 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		308.26 693.69 319.84 704.64 321.67 718.72
 		322.15 722.39 322.16 726.1 337.79 733.88
 	endline
-	
+
 	line border -close on -id 1p-a12
 		289.98 637.31
 		288.26 638.02 286.42 638.5 284.82 639.46
@@ -488,11 +488,11 @@ scrap poseidon_rift-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
 		303.3 730.37 308.55 747.75 321.82 750.77
 		335.17 751.47 341.03 732.37 345.37 722.17
 	endline
-	
+
 	area water
 	1p-a12
 	endarea
-	
+
 	point 351.85 1949.78 station -name 6
 	point 415.17 1927.24 station -name 7
 	point 464.57 1872.68 station -name 8
@@ -505,7 +505,7 @@ endscrap
 
 
 scrap poseidon_rift-2p -scale [0 0 39 0 0 0 1 0 m]
-	
+
 	point 419.5 1930.0 station -name 7
 	line rock-border -close on
 		513.0 1889.5
@@ -513,35 +513,35 @@ scrap poseidon_rift-2p -scale [0 0 39 0 0 0 1 0 m]
 		476.5 1860.0
 		508.0 1848.0
 	endline
-	
+
 	line rock-border -close on
 		491.5 1908.5
 		458.5 1914.0
 		462.0 1896.5
 		488.0 1890.0
 	endline
-	
+
 	line rock-border -close on
 		535.5 1942.0
 		519.0 1941.0
 		521.0 1905.0
 		536.5 1909.5
 	endline
-	
+
 	line rock-border -close on
 		476.0 1962.0
 		448.0 1956.0
 		448.5 1940.0
 		474.5 1951.0
 	endline
-	
+
 	line rock-border -close on
 		513.5 1973.0
 		497.0 1968.0
 		497.5 1948.0
 		525.0 1953.5
 	endline
-	
+
 	line wall
 		412.0 1873.5
 		426.5 1876.5
@@ -551,12 +551,12 @@ scrap poseidon_rift-2p -scale [0 0 39 0 0 0 1 0 m]
 		476.0 1865.5 483.5 1847.0 487.5 1847.0
 		491.5 1847.0 511.0 1845.0 511.0 1845.0
 	endline
-	
+
 	line pit -outline out
 		540.0 1891.5
 		540.0 1891.5 517.0 1930.5 511.0 1845.0
 	endline
-	
+
 	line wall
 		540.0 1891.5
 		536.0 1970.5
@@ -567,22 +567,22 @@ scrap poseidon_rift-2p -scale [0 0 39 0 0 0 1 0 m]
 		413.0 1938.5 409.0 1898.5 409.0 1898.5
 		412.0 1873.5
 	endline
-	
+
 endscrap
 
 
 scrap poseidon_rift-3p -scale [0 0 39 0 0 0 1 0 m]
-	
+
 	line wall -subtype invisible
 		213.0496 486.9902
 		163.2922 486.5779
 	endline
-	
+
 	line wall -subtype invisible
 		148.8598 252.3607
 		179.68 213.1563
 	endline
-	
+
 	line wall
 		163.2922 486.5779
 		163.842 478.8806 169.8899 418.9518 169.8899 414.0035
@@ -593,7 +593,7 @@ scrap poseidon_rift-3p -scale [0 0 39 0 0 0 1 0 m]
 		148.9973 266.1059 151.1965 258.6835 150.7841 257.8588
 		150.3718 257.0341 148.8598 252.3607 148.8598 252.3607
 	endline
-	
+
 	line wall
 		179.68 213.1563
 		179.68 213.1563 181.5733 227.2071 181.2984 228.8565
@@ -612,7 +612,7 @@ scrap poseidon_rift-3p -scale [0 0 39 0 0 0 1 0 m]
 		216.4859 430.3602 217.0357 425.412 215.5238 434.2089
 		214.0118 443.0058 213.1871 484.3786 213.0496 486.9902
 	endline
-	
+
 	point 169.89 188.13 station -name 18
 	point 178.85 307.89 station -name 16
 	point 167.79 243.81 station -name 17
@@ -620,7 +620,7 @@ scrap poseidon_rift-3p -scale [0 0 39 0 0 0 1 0 m]
 		143.43 276.64
 		153.0 256.42 164.98 225.53 190.5 220.4
 	endline
-	
+
 	point 190.55 260.12 water-flow -orientation 7.0
 	point 206.42 366.41 water-flow -orientation 7.0
 	point 198.48 454.38 water-flow -orientation 7.0
@@ -632,21 +632,21 @@ scrap poseidon_rift-3p -scale [0 0 39 0 0 0 1 0 m]
 		180.52 308.92
 		193.27 306.53
 	endline
-	
+
 	line rock-border -close on
 		188.3 371.49
 		180.46 367.13
 		181.26 358.69
 		189.47 356.09
 	endline
-	
+
 	line rock-border -close on
 		190.63 401.75
 		180.58 400.85
 		180.11 389.69
 		191.92 388.56
 	endline
-	
+
 	line rock-border -close on
 		185.98 460.73
 		177.06 460.73
@@ -656,19 +656,19 @@ scrap poseidon_rift-3p -scale [0 0 39 0 0 0 1 0 m]
 		186.24 426.33
 		196.19 425.68
 	endline
-	
+
 	line rock-border -close on
 		190.11 418.57
 		180.66 419.41
 		178.2 411.69
 		190.31 407.01
 	endline
-	
+
 endscrap
 
 
 scrap poseidon_rift-5p -scale [0 0 90 0 0 0 250 0 inch]
-	
+
 	line wall
 		240.455 895.4372
 		240.455 895.4372 231.6104 888.8281 230.5413 887.4674
@@ -686,7 +686,7 @@ scrap poseidon_rift-5p -scale [0 0 90 0 0 0 250 0 inch]
 		159.4436 554.7537 162.7424 522.865 162.7424 520.116
 		162.7424 517.367 162.7424 494.2751 163.2922 486.5779
 	endline
-	
+
 	line wall
 		213.0496 486.9902
 		212.9122 489.6018 212.0875 492.9006 212.0875 503.2095
@@ -701,7 +701,7 @@ scrap poseidon_rift-5p -scale [0 0 90 0 0 0 250 0 inch]
 		249.0619 632.5512 254.5599 644.372 255.3846 646.5713
 		256.2094 648.7705 274.078 655.0932 274.078 655.0932
 	endline
-	
+
 	point 235.44 740.52 station -name 14
 	point 214.64 552.29 station -name 15
 	line floor-step
@@ -711,7 +711,7 @@ scrap poseidon_rift-5p -scale [0 0 90 0 0 0 250 0 inch]
 		259.43 723.42 256.04 704.9 258.98 687.51
 		262.01 669.55 264.85 649.4 274.51 633.81
 	endline
-	
+
 	line floor-step
 		184.23 685.04
 		185.56 684.56 187.0 684.3 188.22 683.59
@@ -728,11 +728,11 @@ scrap poseidon_rift-5p -scale [0 0 90 0 0 0 250 0 inch]
 		210.92 628.42 207.24 614.94 211.06 603.91
 		214.37 594.36 225.27 584.71 235.52 585.11
 	endline
-	
+
 	area water
 	1p-a14
 	endarea
-	
+
 	line border -close on -id 1p-a14
 		260.18 620.33
 		256.34 628.9 237.76 656.35 226.61 646.85
@@ -742,7 +742,7 @@ scrap poseidon_rift-5p -scale [0 0 90 0 0 0 250 0 inch]
 		220.28 628.47 218.66 623.0 218.11 617.54
 		217.13 607.83 224.25 597.93 231.24 591.66
 	endline
-	
+
 	line floor-step
 		183.77 720.31
 		204.19 711.6 213.12 686.9 224.93 669.73
@@ -751,21 +751,21 @@ scrap poseidon_rift-5p -scale [0 0 90 0 0 0 250 0 inch]
 		240.1 648.62 253.78 640.66 261.6 628.38
 		264.09 624.47 266.88 620.71 269.75 617.34
 	endline
-	
+
 	point 192.99 544.79 water-flow -orientation 7.0
 	line rock-border -close on
 		193.73 501.86
 		184.5 498.69
 		190.67 487.3
 	endline
-	
+
 	line rock-border -close on
 		193.73 527.47
 		181.01 532.42
 		174.73 522.95
 		177.11 515.42
 	endline
-	
+
 	line floor-step
 		171.52 665.5
 		173.04 657.93 182.6 654.16 185.67 647.35
@@ -775,34 +775,34 @@ scrap poseidon_rift-5p -scale [0 0 90 0 0 0 250 0 inch]
 		198.27 521.58 194.12 507.79 197.15 506.73
 		203.59 504.5 211.4 504.58 218.33 501.92
 	endline
-	
+
 	line rock-border -close on
 		209.61 524.81
 		201.78 517.78
 		206.74 507.58
 	endline
-	
-	point 245.87 533.68 label -attr level 4 -text squeeze -align t -scale xs
+
+	point 265.87 533.68 label -attr level 4 -text "<i>squeeze" -align r -scale xs
 endscrap
 
 
 scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
-	
+
 	line gradient
 		369.0583 2657.2646
 		330.1815 2628.6145
 	endline
-	
+
 	line gradient
 		282.0476 2431.1861
 		315.6342 2396.485
 	endline
-	
+
 	line gradient
 		272.0476 2211.1861
 		305.6342 2176.485
 	endline
-	
+
 	point 436.85 2547.78 station -name 0
 	point 387.46 2585.62 station -name 1
 	point 318.71 2584.27 station -name 2
@@ -824,7 +824,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		446.3 2567.58 446.08 2568.65 446.05 2569.72
 		445.45 2599.72 439.62 2630.25 436.0 2659.95
 	endline
-	
+
 	line wall
 		436.0 2659.95
 		433.51 2683.33 435.68 2698.58 434.19 2712.16
@@ -832,33 +832,33 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		418.4 2750.35 420.92 2761.39 419.3 2771.93
 		418.56 2776.78 416.81 2781.58 415.16 2786.19
 	endline
-	
+
 	line floor-step
 		416.58 2758.64
 		400.98 2756.92 384.3 2743.6 379.44 2728.48
 	endline
-	
+
 	line rock-border -close on
 		403.16 2772.48
 		395.08 2776.09
 		389.61 2768.34
 		400.2 2761.83
 	endline
-	
+
 	line rock-border -close on
 		400.61 2782.91
 		393.62 2788.28
 		386.46 2781.73
 		391.88 2774.82
 	endline
-	
+
 	line rock-border -close on
 		391.03 2760.98
 		382.1 2759.07
 		381.01 2750.25
 		389.17 2747.17
 	endline
-	
+
 	line wall
 		282.35 2538.19
 		277.11 2520.9 262.62 2491.16 258.2 2473.26
@@ -874,9 +874,9 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		276.24 2278.1 262.53 2268.37 256.86 2257.07
 		252.25 2247.89 257.38 2234.07 260.8 2225.64
 	endline
-	
+
 	#point 00.0 2580.0 label -attr level 2 -text "Poseidon<br>Rift" -align tl -scale xl
-	
+
 	line wall
 		364.29 2049.03
 		372.66 2090.68 376.54 2134.99 374.64 2177.6
@@ -892,7 +892,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		410.92 2468.91 429.36 2471.57 436.47 2481.3
 		437.69 2482.97 438.78 2484.73 447.71 2495.73
 	endline
-	
+
 	line rock-border -close on
 		340.89 2380.25
 		333.74 2398.0
@@ -906,7 +906,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		303.03 2349.89
 		312.19 2344.43
 	endline
-	
+
 	line floor-step
 		345.43 2406.98
 		350.33 2427.34 368.06 2443.9 373.28 2464.46
@@ -915,7 +915,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		372.6 2491.98 362.73 2484.73 361.94 2484.11
 		354.43 2478.19 347.93 2470.16 344.01 2461.57
 	endline
-	
+
 	line wall -close on -outline in
 		340.32 2459.86
 		327.08 2480.05 342.71 2507.45 347.7 2527.82
@@ -925,7 +925,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		374.62 2528.0 386.97 2515.26 383.1 2501.69
 		378.32 2484.97 350.19 2473.38 340.32 2459.86
 	endline
-	
+
 	line floor-step
 		356.8 2556.53
 		359.05 2557.57 361.58 2558.13 363.56 2559.63
@@ -937,7 +937,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		372.87 2719.97 367.85 2725.17 365.87 2726.02
 		356.31 2730.1 345.67 2698.99 344.04 2693.99
 	endline
-	
+
 	line rock-border -close on
 		423.54 2640.71
 		414.13 2640.23
@@ -945,7 +945,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		415.06 2624.11
 		423.78 2623.99
 	endline
-	
+
 	line rock-border -close on
 		423.78 2603.2
 		415.59 2603.93
@@ -953,14 +953,14 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		411.32 2590.94
 		419.75 2590.3
 	endline
-	
+
 	line rock-border -close on
 		430.7 2562.1
 		421.58 2563.7
 		413.27 2555.48
 		421.48 2543.98
 	endline
-	
+
 	line rock-border -close on
 		407.06 2547.77
 		397.32 2546.28
@@ -969,7 +969,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		409.39 2524.35
 		418.78 2525.55
 	endline
-	
+
 	line rock-border -close on
 		403.96 2578.11
 		394.42 2580.85
@@ -977,7 +977,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		388.41 2565.32
 		398.13 2558.04
 	endline
-	
+
 	line rock-border -close on
 		345.65 2695.87
 		336.84 2698.45
@@ -985,7 +985,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		324.41 2687.78
 		333.43 2681.05
 	endline
-	
+
 	line rock-border -close on
 		377.5 2755.19
 		364.07 2756.08
@@ -994,7 +994,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		349.84 2731.96
 		363.79 2723.31
 	endline
-	
+
 	line wall
 		338.94 2743.99
 		338.01 2726.89 326.85 2711.11 323.58 2694.09
@@ -1003,7 +1003,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		306.25 2590.33 296.99 2574.87 291.97 2558.74
 		289.76 2551.62 285.01 2545.23 282.35 2538.19
 	endline
-	
+
 	line rock-border -close on
 		348.82 2144.73
 		328.12 2145.94
@@ -1016,7 +1016,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		340.11 2074.77
 		350.94 2074.35
 	endline
-	
+
 	line rock-border -close on
 		346.33 2053.52
 		328.09 2052.79
@@ -1024,7 +1024,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		331.99 2027.55
 		346.58 2024.61
 	endline
-	
+
 	line rock-border -close on
 		343.88 2258.21
 		327.08 2255.61
@@ -1032,7 +1032,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		333.61 2235.69
 		345.0 2231.75
 	endline
-	
+
 	line floor-step
 		342.28 2363.86
 		341.35 2361.9 340.66 2359.81 339.49 2357.99
@@ -1045,19 +1045,19 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		286.62 2271.19 291.74 2255.34 285.74 2245.05
 		279.12 2233.68 262.07 2225.19 251.83 2217.21
 	endline
-	
+
 	line floor-step
 		379.12 2065.13
 		368.33 2062.73 357.91 2054.73 352.41 2045.33
 		349.49 2040.32 347.11 2035.04 344.55 2030.26
 		328.21 1999.72 312.71 1964.94 311.06 1929.6
 	endline
-	
+
 	line wall
 		260.8 2225.64
 		254.84 2200.9 255.31 2183.55 265.64 2173.14
 	endline
-	
+
 	line wall
 		265.64 2173.14
 		265.9 2164.21 266.59 2155.25 267.63 2146.82
@@ -1068,83 +1068,83 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		242.53 2029.57 282.56 2001.78 305.04 1971.57
 		313.81 1959.78 317.18 1959.65 319.5 1945.0
 	endline
-	
+
 	line rock-border -close on
 		342.22 2550.36
 		332.69 2552.63
 		337.55 2545.97
 	endline
-	
+
 	line rock-border -close on
 		338.48 2542.88
 		336.96 2533.98
 	endline
-	
+
 	line rock-border -close on
 		318.5 2553.72
 		310.37 2554.66
 		304.71 2547.3
 		316.28 2543.9
 	endline
-	
+
 	line rock-border -close on
 		324.29 2538.4
 		321.11 2526.93
 		331.9 2527.64
 	endline
-	
+
 	line rock-border -close on
 		325.41 2509.24
 		319.06 2501.4
 		324.35 2493.54
 		332.95 2494.78
 	endline
-	
+
 	line rock-border -close on
 		307.85 2505.32
 		301.43 2499.77
 		312.12 2495.1
 	endline
-	
+
 	line rock-border -close on
 		326.16 2486.25
 		317.47 2478.67
 		327.26 2473.85
 	endline
-	
+
 	line rock-border -close on
 		292.53 2512.42
 		283.43 2510.11
 		287.31 2500.87
 		297.39 2500.27
 	endline
-	
+
 	line rock-border -close on
 		297.95 2492.05
 		293.91 2482.85
 		298.87 2473.04
 	endline
-	
+
 	line rock-border -close on
 		309.35 2532.6
 		303.58 2527.58
 		317.07 2527.6
 	endline
-	
+
 	line rock-border -close on
 		330.82 2576.15
 		319.89 2574.46
 		326.64 2567.49
 		332.88 2573.16
 	endline
-	
+
 	line rock-border -close on
 		348.2 2572.41
 		338.74 2571.22
 		335.12 2563.44
 		346.77 2560.81
 	endline
-	
+
 	line rock-border -close on
 		335.08 2212.19
 		320.49 2212.19
@@ -1152,7 +1152,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		326.16 2196.93
 		336.28 2196.18
 	endline
-	
+
 	line rock-border -close on
 		351.48 2181.77
 		335.93 2182.17
@@ -1160,7 +1160,7 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		336.44 2166.19
 		345.62 2161.06
 	endline
-	
+
 	line rock-border -close on
 		315.45 2039.57
 		301.34 2037.63
@@ -1168,12 +1168,11 @@ scrap poseidon_rift-4p -scale [0 0 39 0 0 0 1 0 m]
 		301.42 2018.94
 		314.79 2010.29
 	endline
-	
+
 	point 294.14 2527.6 water-flow -orientation 125.0
 	line label -attr level 2 -text "Poseidon Rift" -scale m
 		84.0 2100.0
 		84.0 2100.0 80.0 2532.0 284.0 2860.0
 	endline
-	
-endscrap
 
+endscrap
