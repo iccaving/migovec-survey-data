@@ -63,7 +63,7 @@ layout custom_points
 	      T:=identity aligned A rotated R scaled S shifted P;
 	      pickup PenD;
 	      thfill (-.12u,.08u)--(0,.12u)--(.12u,.08u)--(0,.3u)--cycle;
-	      thfill (-.12u,.08u)--(0,.12u)--(.12u,.08u)--(.12u,-.28u)--(-.12u,-.28u)--cycle withcolor(1,1,1);
+	      thclean (-.12u,.08u)--(0,.12u)--(.12u,.08u)--(.12u,-.28u)--(-.12u,-.28u)--cycle;
 	      thdraw (0,-.28u)--(0,0.15u);
 	    enddef;
 

@@ -1,10 +1,9 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 853.000000 1202.000000
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {130.000000 1 1.0} {970.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2001/drugi/drugip.gif" 0 {}
 
-##XTHERION## xth_me_image_insert {130.000000 1 1.0} {970.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/migresurvey/migovecsurveydata/primadona/2001/drugi/drugip.gif" 0 {}
-
-scrap drugip_1 -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m]
+scrap drugip_1 -projection plan -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m]
 
 line rock-border -close on
   612.6968 510.168
@@ -21,6 +20,7 @@ line rock-border -close on
   587.149 518.2713 587.4866 516.5831 588.0494 516.358
   588.6121 516.1329 595.5899 516.4706 595.5899 516.4706
   594.577 519.7344
+  591.4257 519.3968
 endline
 
 line rock-border -close on
@@ -38,6 +38,7 @@ line rock-border -close on
   613.7909 529.5656 614.774 527.4134 615.1804 527.1164
   615.5868 526.8195 621.7433 529.6142 621.7371 530.1175
   621.7311 530.6207 619.974 534.2734 619.974 534.2734
+  615.7149 532.7103
 endline
 
 line rock-border -close on
@@ -45,6 +46,7 @@ line rock-border -close on
   619.092 513.7131
   615.3665 509.6925
   624.7873 504.8319
+  625.3426 511.7144
 endline
 
 line rock-border -close on
@@ -62,6 +64,7 @@ line rock-border -close on
   600.3168 541.9058 600.6544 540.2176 601.2172 539.9925
   601.7799 539.7674 608.7577 540.1051 608.7577 540.1051
   607.7448 543.3689
+  604.5935 543.0312
 endline
 
 line rock-border -close on
@@ -79,6 +82,7 @@ line rock-border -close on
   620.8001 522.0978 620.6875 519.7343 620.9126 519.2842
   621.1377 518.834 627.8904 518.4964 628.1155 518.9465
   628.3406 519.3967 628.4531 523.4483 628.4531 523.4483
+  623.9513 524.0111
 endline
 
 line rock-border -close on
@@ -86,6 +90,7 @@ line rock-border -close on
   607.2946 521.31
   605.4939 516.1329
   616.0731 515.4576
+  613.8222 521.9852
 endline
 
 line pit 
@@ -107,6 +112,7 @@ line rock-border -close on
   591.482 625.0206
   593.5641 625.4145
   592.2698 627.3277
+  590.9755 629.241
 endline
 
 line rock-border -close on
@@ -142,6 +148,7 @@ line rock-border -close on
   585.3622 625.8693
   586.9141 626.0683
   586.3968 626.9437
+  585.8795 627.819
 endline
 
 line rock-border -close on
@@ -155,6 +162,7 @@ line rock-border -close on
   580.1098 626.7445 580.3087 627.6995 580.4977 628.5848
   580.6867 629.4702 580.8658 630.2859 580.8658 630.2859
   580.8658 630.2859
+  580.8659 630.286
 endline
 
 line rock-border -close on
@@ -166,6 +174,7 @@ line rock-border -close on
   585.8796 621.4127
   588.4262 621.1341
   587.7099 623.0043
+  586.9936 624.8745
 endline
 
 line rock-border -close on
@@ -177,6 +186,7 @@ line rock-border -close on
   588.068 612.8577
   588.9832 612.1415
   589.9779 614.5289
+  590.9727 616.9163
 endline
 
 line contour 
@@ -233,6 +243,7 @@ line rock-border -close on
   575.6694 642.5776
   575.4443 646.5729
   575.2755 646.2353
+  575.1067 645.8977
 endline
 
 point 582.0 636.0 station -name 10a
@@ -245,6 +256,7 @@ line rock-border -close on
   554.1732 716.5199
   553.0478 718.0392
   551.866 717.5328
+  550.6843 717.0263
 endline
 
 line rock-border -close on
@@ -268,6 +280,7 @@ line rock-border -close on
   555.4112 700.4259 556.2834 700.4541 557.0994 700.5243
   557.9154 700.5947 558.675 700.7073 558.675 700.7073
   559.0127 702.6205
+  559.3503 704.5338
 endline
 
 line rock-border -close on
@@ -279,6 +292,7 @@ line rock-border -close on
   556.199 683.6566
   558.2249 683.713
   557.6059 685.9638
+  556.9869 688.2147
 endline
 
 line rock-border -close on
@@ -290,6 +304,7 @@ line rock-border -close on
   557.212 673.1899
   559.1252 672.4584
   559.1252 674.8218
+  559.1252 677.1853
 endline
 
 line rock-border -close on
@@ -313,6 +328,7 @@ line rock-border -close on
   567.5661 658.3902
   568.579 658.6153
   568.2414 660.0784
+  567.9037 661.5415
 endline
 
 line floor-step 
@@ -325,6 +341,7 @@ line rock-border -close on
   542.0 720.0
   545.0 713.5
   548.0 715.0
+  546.0 723.5
 endline
 
 line rock-border -close on
@@ -332,6 +349,7 @@ line rock-border -close on
   544.5 701.5
   552.0 696.0
   554.5 701.0
+  550.0 704.5
 endline
 
 line wall 
@@ -382,8 +400,12 @@ point 237.0 930.0 station -name 15
 endscrap
 
 
-scrap drugip_3 -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m]
+scrap drugip_3 -projection plan -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m]
 
+point 491.6286 366.4812 label -align br -attr level 3 -scale xs -text grabby
+point 642.2486 513.8353 label -align r -attr level 3 -scale xs -text p30
+point 580.771 661.7658 label -align tr -attr level 3 -scale xs -text "<lang:en>crawl"
+point 495.3228 779.1598 label -align tr -attr level 2 -scale l -text "Drugi<br>Vhod"
 line u:texture 
   586.8114 558.4499
   592.2135 549.4463
