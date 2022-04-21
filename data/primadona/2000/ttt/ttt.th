@@ -4,12 +4,12 @@ encoding  utf-8
 survey ttt -title "Primadona mandare junction and TTT branch to TTT pitch"
 	input "ttt-p.th2"
 	input "ttt-e.th2"
-	
+
 	map  m-all-e -projection extended
 		ttt-e1
 		ttt-e2
 	endmap
-	
+
 	map m-all-p -projection plan
 		ttt-1p
 		ttt-2p
@@ -18,18 +18,42 @@ survey ttt -title "Primadona mandare junction and TTT branch to TTT pitch"
 		ttt-5p
 		ttt-6p
 	endmap
-	
+
+	map m1p -projection plan
+		ttt-1p
+	endmap
+
+	map m2p -projection plan
+		ttt-2p
+	endmap
+
+	map m3p -projection plan
+		ttt-3p
+	endmap
+
+	map m4p -projection plan
+		ttt-4p
+	endmap
+
+	map m5p -projection plan
+		ttt-5p
+	endmap
+
+	map m6p -projection plan
+		ttt-6p
+	endmap
+
 	join ttt-1p ttt-2p
 	join ttt-2p ttt-3p
 	join ttt-3p ttt-4p
 	join ttt-4p ttt-5p
 	join ttt-5p ttt-6p
-	
-	
+
+
 	centreline
 		date 2000.07.08
 		explo-date 2000.01.01
-		
+
 		explo-team "Tomaž Tivadar"
 		explo-team  "Jan Evetts"
 		team "Tomaž Tivadar" insts notes
@@ -77,4 +101,3 @@ survey ttt -title "Primadona mandare junction and TTT branch to TTT pitch"
 		33  34  8.5  331  21  #stn 34 bolt at top of pitch 9
 	endcentreline
 endsurvey
-

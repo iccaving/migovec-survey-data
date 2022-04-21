@@ -3,6 +3,8 @@ encoding  utf-8
 # This contains the maps of Primadona cave   |
 #————————————————————————————————————————————-
 
+
+
 # Everything
 map m-all-p -projection plan -title "Primadona"
 	m-entrance-p
@@ -23,18 +25,56 @@ map m-detailed-p -projection plan -title "Primadona"
 	m-ttt_branch-p
 	m-hammerhead_branch-p
 	m-upside_down_area-p
-	m-below_cattlegrid-p [200 0 m] none
-	m-hallelujah_branch-p [200 0 m] none
+	m-below_cattlegrid-p [100 0 m] none
+	m-hallelujah_branch-p [100 0 m] none
 	m-below_lumos-p
 
-	m-pivnica-p [-200 0 m] none
-	m-klic_globin_branch-p [-400 0 m] none
-	m-old_slov_route-p [-200 0 m] none
-	m-deep-p [-400 0 m] none
+	m-pivnica-p [-100 0 m] none
+	m-klic_globin_branch-p [-200 0 m] none
+	m-old_slov_route-p [-100 0 m] none
+	m-deep-p [-200 0 m] none
 
 endmap
 
 
+##  CORRECT WAY ON ---
+
+
+  map m-entrance_to_camp-p -projection plan -title "Entrance to Camp"
+		m-all-p@drugi
+		m2p@prima1
+		m3p@prima1
+		m4p@prima1
+		m5p@prima1
+		m6p@prima1
+		m7p@prima1
+		m-all-p@risanke
+		m-all-p@risa2
+		m-all-p@pov
+		m-all-p@zima00
+		m2p@TTTr
+		m4p@ttt
+		m5p@ttt
+		m6p@ttt
+		m-all-p@buckwheat
+		m2p@pivnica_resurvey
+		m3p@pivnica_resurvey
+		m-all-p@lost_in_a_dream
+		m-all-p@lost_in_a_dream_2
+		m-all-p@penny_falls
+		m-all-p@penny_falls_2
+		m-all-p@tiger_tiger
+		m-all-p@deeper_than_most
+		m-all-p@klic_globin
+	endmap
+
+	map m-cafe_to_hallelujah-p -projection plan
+		m-all-p@galerija
+		m-all-p@the_stile
+		m-all-p@fenestrator
+		m-all-p@plumbers_paradise
+		m-all-p@hallelujah
+	endmap
 ## OFFSETS
 
 map m-offsets-p -projection plan
@@ -141,6 +181,7 @@ map m-old_slov_route-p -projection plan
 	m-all-p@milanova
 	m-all-p@ma_je_vlazna
 	m-all-p@polnoletna
+	#m-all-p@glavobol
 endmap
 
 map m-klic_globin_branch-p -projection plan -title "Klic Globin Branch"

@@ -6,8 +6,8 @@ encoding  utf-8
 
 
 scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
-	
-	
+
+
 	line wall -id s1_l1
 		167.5 -52.5
 		168.5 -57.5 169.5 -62.0 174.5 -68.5
@@ -19,29 +19,29 @@ scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		215.5 -189.0 219.5 -195.5 219.5 -195.5
 		smooth off
 	endline
-	
-	
+
+
 	point 200 -200 label -scale l -align l -text "What a<br>Coincidence!"
-	
-	
+
+
 	line contour
 	endline
-	
+
 	line contour
 		186.5 -126.75
 		186.5 -126.75 208.25 -121.0 210.25 -118.5
 	endline
-	
+
 	line contour
 		175.5 -78.0
 		175.5 -78.0 187.5 -77.0 194.0 -72.25
 	endline
-	
+
 	line contour
 		181.25 -114.0
 		181.25 -114.0 198.75 -112.5 200.5 -110.25
 	endline
-	
+
 	line rock-border -close on
 		194.25 -116.5
 		191.0 -117.25
@@ -50,7 +50,7 @@ scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		195.75 -120.0 194.25 -116.5 194.25 -116.5
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		188.0 -102.0
 		184.25 -101.25
@@ -58,7 +58,7 @@ scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		185.75 -105.75
 		188.0 -102.0
 	endline
-	
+
 	line rock-border -close on
 		192.25 -89.75
 		188.5 -93.5
@@ -66,7 +66,7 @@ scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		193.0 -94.0
 		192.25 -89.75
 	endline
-	
+
 	line rock-border -close on
 		178.0 -59.25
 		172.5 -57.75
@@ -74,7 +74,7 @@ scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		176.5 -62.5
 		178.0 -59.25
 	endline
-	
+
 	line rock-border -close on
 		188.25 -78.0
 		186.25 -78.0
@@ -82,7 +82,7 @@ scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		187.75 -84.0
 		188.25 -78.0
 	endline
-	
+
 	line rock-border -close on
 		187.0 -88.0
 		183.75 -88.5
@@ -91,7 +91,7 @@ scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		smooth off
 		187.0 -88.0
 	endline
-	
+
 	line rock-border -close on
 		186.75 -71.5
 		183.5 -72.25
@@ -99,7 +99,7 @@ scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		186.75 -74.25
 		186.75 -71.5
 	endline
-	
+
 	line wall -id s1_l2
 		229.5 -190.0
 		229.5 -190.0 220.0 -171.0 218.0 -166.5
@@ -110,25 +110,25 @@ scrap wacp_1 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		181.5 -59.5 177.5 -44.5 177.0 -41.5
 		smooth off
 	endline
-	
+
 	point 227.0 -197.0 station -name "25"
-	
+
 	point 223.0 -193.0 station -name "26"
-	
+
 	point 200.0 -138.0 station -name "27"
-	
+
 	point 200.0 -138.0 station -name "28"
-	
+
 	point 179.0 -65.0 station -name "29"
-	
+
 	point 167.0 -36.0 station -name "30"
-	
+
 endscrap
 
 
 
 scrap wacp_2 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
-	
+
 	line wall
 		219.5 -195.5
 		225.0 -202.5 232.0 -211.0 234.5 -218.0
@@ -144,7 +144,7 @@ scrap wacp_2 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		321.5 -454.5 318.5 -460.5 323.5 -464.5
 		smooth off
 	endline
-	
+
 	line wall
 		332.0 -462.5
 		332.0 -462.5 323.5 -440.5 322.5 -434.5
@@ -161,44 +161,44 @@ scrap wacp_2 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		235.5 -200.5 230.74 -191.86 229.5 -190.0
 		smooth off
 	endline
-	
+
 	point 326.0 -462.0 station -name "15"
-	
+
 	point 315.0 -414.0 station -name "16"
-	
+
 	point 302.0 -383.0 station -name "17"
-	
+
 	point 291.0 -360.0 station -name "18"
-	
+
 	point 271.0 -303.0 station -name "19"
-	
+
 	point 264.0 -267.0 station -name "20"
-	
+
 	point 255.0 -246.0 station -name "23"
-	
+
 	point 267.0 -243.0 station -name "21"
-	
+
 	point 255.0 -246.0 station -name "22"
-	
+
 	point 251.0 -234.0 station -name "24"
-	
+
 	point 227.0 -197.5 station -name "25"
-	
+
 	point 223.0 -193.0 station -name "26"
-	
+
 endscrap
 
 
 
 scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
-	
+
 	line pit -outline out
 	endline
-	
+
 	area clay
 	l59-338--513
 	endarea
-	
+
 	line border -id l59-338--513 -close on -subtype invisible
 		322.0 -511.75
 		315.5 -527.25
@@ -207,12 +207,12 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		338.25 -512.75
 		322.0 -511.75
 	endline
-	
+
 	point 410.5 -655.0 water-flow -orientation 280.8 -align r
-	
+
 	line floor-meander
 	endline
-	
+
 	line floor-meander
 		390.25 -647.5
 		390.25 -647.5 387.75 -637.25 387.25 -636.5
@@ -221,7 +221,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		364.25 -627.25 357.75 -618.25 357.75 -618.25
 		smooth off
 	endline
-	
+
 	line floor-meander
 		357.75 -618.25
 		357.75 -618.25 349.5 -611.0 349.75 -603.75
@@ -234,16 +234,16 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		310.75 -519.0 312.25 -515.5 311.0 -514.0
 		smooth off
 	endline
-	
+
 	line floor-step
 		404.0 -603.75
 		404.0 -603.75 397.75 -607.0 396.5 -611.25
 		smooth off
 	endline
-	
+
 	line rock-border
 	endline
-	
+
 	line rock-border -close on
 		399.0 -632.25
 		398.25 -632.0 394.5 -632.0 394.5 -632.0
@@ -252,7 +252,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		397.25 -637.0
 		397.25 -637.0 399.75 -632.5 399.0 -632.25
 	endline
-	
+
 	line rock-border -close on
 		407.0 -622.75
 		403.5 -620.25
@@ -260,7 +260,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		402.5 -631.0
 		407.0 -622.75
 	endline
-	
+
 	line rock-border -close on
 		407.75 -611.5
 		405.75 -613.0
@@ -269,7 +269,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		412.25 -618.5 407.75 -611.5 407.75 -611.5
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		424.5 -609.25
 		419.75 -607.5
@@ -277,7 +277,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		417.5 -613.5
 		424.5 -609.25
 	endline
-	
+
 	line rock-border -close on
 		429.0 -601.0
 		423.5 -598.75
@@ -285,7 +285,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		425.25 -605.0
 		429.0 -601.0
 	endline
-	
+
 	line rock-border -close on
 		438.75 -596.75
 		437.25 -597.25 429.5 -593.5 429.5 -593.5
@@ -294,7 +294,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		426.5 -601.25 431.0 -603.75 432.5 -603.0
 		434.0 -602.25 440.25 -596.25 438.75 -596.75
 	endline
-	
+
 	line wall
 		420.75 -589.25
 		419.75 -592.25 422.25 -597.75 415.25 -600.75
@@ -314,7 +314,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		344.0 -475.5 334.0 -465.5 332.0 -462.5
 		smooth off
 	endline
-	
+
 	line wall
 		326.0 -462.0
 		326.0 -462.0 326.0 -469.5 327.5 -470.5
@@ -325,10 +325,10 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		312.0 -495.5 313.0 -499.5 309.0 -503.0
 		smooth off
 	endline
-	
+
 	line wall
 	endline
-	
+
 	line wall
 		401.75 -651.5
 		401.75 -651.5 397.5 -652.0 397.0 -651.0
@@ -338,7 +338,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		394.25 -647.0 395.0 -642.0 395.0 -642.0
 		smooth off
 	endline
-	
+
 	line wall
 		385.25 -641.75
 		385.25 -641.75 385.61 -646.07 387.0 -647.0
@@ -350,7 +350,7 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		396.0 -653.0 399.75 -654.0 399.75 -654.0
 		smooth off
 	endline
-	
+
 	line wall
 		315.5 -524.0
 		317.0 -524.5 325.75 -538.25 327.25 -543.25
@@ -359,43 +359,38 @@ scrap wacp_3 -scale [327.0 -734.0 503.0 -734.0 0 0 15 0 m]
 		377.0 -642.0 381.39 -640.56 385.25 -641.75
 		smooth off
 	endline
-	
+
 	line wall
 		395.0 -642.0
 		398.5 -640.0 408.75 -626.75 416.75 -618.25
 		424.75 -609.75 433.25 -606.0 435.75 -603.5
 		smooth off
 	endline
-	
+
 	point 341.0 -477.5 station -name "14"
-	
+
 	point 338.0 -482.0 station -name "13"
-	
+
 	point 330.5 -485.0 station -name "12"
 	
 	point 320.0 -481.0 station -name "11"
-	
+
 	point 314.0 -485.5 station -name "10"
-	
+
 	point 427.0 -596.0 station -name "4"
-	
-	point 447.0 -576.0 label -attr level 1 -scale l -text "Ajdovscina" -align br
-	
+
+	point 447.0 -576.0 label -attr level 1 -scale l -text "Ajdovščina" -align br
+
 	point 386.0 -639.0 station -name "5"
-	
+
 	point 355.0 -619.0 station -name "6"
-	
+
 	point 329.0 -525.0 station -name "7"
-	
+
 	point 317.0 -516.0 station -name "8"
-	
+
 	point 313.0 -498.0 station -name "9"
-	
+
 	point 326.0 -462.0 station -name "15"
-	
+
 endscrap
-
-
-
-
-

@@ -3,52 +3,52 @@ encoding  utf-8
 survey prima1 -title "Primadona entrance series"
 	input "prima1-p.th2"
 	input "prima1-e.th2"
-	
+
 	map m-all-p -projection plan
 		mprima1-entp
-		mprima1-1p
-		mprima1-2p
-		mprima1-3p
-		mprima1-4p
-		mprima1-5p
-		mprima1-6p
-		mprima1-7p
+		m1p
+		m2p
+		m3p
+		m4p
+		m5p
+		m6p
+		m7p
 	endmap
-	
+
 	map mprima1-entp -projection plan
 		prima1-entp
 	endmap
-	map mprima1-1p -projection plan
+	map m1p -projection plan
 		prima1-1p
 	endmap
-	map mprima1-2p -projection plan
+	map m2p -projection plan
 		prima1-2p
 	endmap
-	map mprima1-3p -projection plan
+	map m3p -projection plan
 		prima1-3p
 	endmap
-	map mprima1-4p -projection plan
+	map m4p -projection plan
 		prima1-4p
 	endmap
-	map mprima1-5p -projection plan
+	map m5p -projection plan
 		prima1-5p
 	endmap
-	map mprima1-6p -projection plan
+	map m6p -projection plan
 		prima1-6p
 	endmap
-	map mprima1-7p -projection plan
+	map m7p -projection plan
 		prima1-7p
 	endmap
-	
+
 	map m-prima1-e2 -projection extended
 		prima1-e2
 	endmap
-	
+
 	map  m-all-e -projection extended
 		prima1-e1
 		prima1-e3
 	endmap
-	
+
 	join prima1-entp prima1-1p
 	join prima1-1p prima1-2p
 	join prima1-2p prima1-3p
@@ -58,12 +58,12 @@ survey prima1 -title "Primadona entrance series"
 	join prima1-6p prima1-7p
 
 	join p_e2_l1 p_e3_l1
-	join p_e2_l2 p_e3_l2	
+	join p_e2_l2 p_e3_l2
 	join p_e1_l3 p_e3_l3
 	join p_e1_l4 p_e3_l4
 
 	centreline
-		
+
 		explo-date 2000.01.01
 		date 2000.07.20
 		team "Thomas Ayles"  insts
@@ -71,11 +71,11 @@ survey prima1 -title "Primadona entrance series"
 		# declination 0.00 degrees
 
 		mark 1 8 19 35 fixed
-		
+
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
-		
+
 		extend left
 		1  2  5.79  022  -12  #stn 1 is prima2.32, pss carbide s
 		2  3  11.52  324  -2
@@ -130,9 +130,8 @@ survey prima1 -title "Primadona entrance series"
 		33  34  34.19  020  43
 		extend right
 		35  34  3.93  081  -1  #stn 35 is top left of painted T at entrance,
-		
+
 		extend start 35
 	endcentreline
-	
-endsurvey
 
+endsurvey

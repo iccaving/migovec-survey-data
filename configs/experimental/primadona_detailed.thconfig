@@ -1,17 +1,27 @@
 source ../../data/system_migovec.th
 
 
-select m-detailed-p@primadona.primadona_ubend_monatip.system_migovec
+source
+  map m-local-p -projection plan
+    m-all-p@ubend.primadona_ubend_monatip.system_migovec
+    m-detailed-p@primadona.primadona_ubend_monatip.system_migovec
+    m-all-p@belladonna.primadona_ubend_monatip.system_migovec
+  endmap
+endsource
+select m-local-p
 
 input ../../layouts/detailed-p.thl
 input ../../layouts/metapost/connection_marker.thl
 input ../../layouts/metapost/label.thl
+input ../../layouts/mods.thl
 
 
 layout local-p
   copy detailed-p
   copy connection_marker
   copy custom_label
+
+  colour map-fg map:correct
   scale 1 1000
 
   symbol-hide line label
@@ -24,6 +34,7 @@ layout local-p
   symbol-assign area water MY
   symbol-assign line floor-step MY
   symbol-assign area sump MY
+  symbol-assign point breakdown-choke UIS
 
   code tex-map
   \framethickness=0.5mm
