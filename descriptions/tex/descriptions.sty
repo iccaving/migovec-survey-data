@@ -1,0 +1,233 @@
+
+\def\FullWidth{210mm}
+\def\TwoColumnWidth{135mm}
+\def\ThreeColWidth{179mm}
+
+
+
+
+\newcommand{\TopFullWidthFigure}[5]{
+\checkoddpage
+\ifoddpage
+\begin{figure}[ht]
+  \vspace{-0.5in}
+  \hspace{-25.5mm}
+  \includegraphics[width=\FullWidth]{#1}
+\end{figure}
+\else
+\begin{figure}
+  \vspace{-0.5in}
+ \hspace{-50mm} \includegraphics[width=\FullWidth]{#1}
+\end{figure}
+\fi
+\margincaption{#2}{#3}{#4}{#5}{0em}
+}
+
+\newcommand{\BottomFullWidthFigure}[5]{
+\margincaption{#2}{#3}{#4}{#5}{0em}
+\checkoddpage
+\ifoddpage
+\begin{figure}[!b]
+ \hspace{-10.5mm} \includegraphics[width=\FullWidth]{#1}
+\end{figure}
+\else
+\begin{figure}[!b]
+ \hspace{-50.5mm} \includegraphics[width=\FullWidth]{#1}
+\end{figure}
+\fi
+
+}
+
+\newcommand{\ThreeColWidthFigure}[5]{
+\margincaption{#2}{#3}{#4}{#5}{-25mm}
+\checkoddpage
+\ifoddpage
+\begin{figure}[!htbp]
+
+ \hspace{0mm} \includegraphics[width=\ThreeColWidth]{#1}
+\end{figure}
+\else
+\begin{figure}[!htbp]
+ \hspace{-44mm} \includegraphics[width=\ThreeColWidth]{#1}
+\end{figure}
+\fi
+
+}
+
+\newcommand{\FullWidthFigure}[5]{
+\checkoddpage
+\ifoddpage
+\begin{figure}[ht]
+ \hspace{-24.5mm} \includegraphics[width=\FullWidth]{#1}
+\end{figure}
+\else
+\begin{figure}
+ \hspace{-50.5mm} \includegraphics[width=\FullWidth]{#1}
+\end{figure}
+\fi
+\margincaption{#2}{#3}{#4}{#5}{0em}
+}
+
+\newcommand{\TwoColWidthFigure}[5]{
+\margincaption{#2}{#3}{#4}{#5}{1em}
+\begin{figure}[htbp!]
+  \includegraphics[width=\textwidth]{#1}
+\end{figure}
+}
+
+\newcommand{\TwoColumnWidthSVG}[5]{
+\checkoddpage
+\ifoddpage
+
+\begin{figure}[ht]
+ \hspace{-24.5mm} \includesvg[pretex=\small,width=\TwoColumnWidth]{#1}
+\end{figure}
+\else
+
+\begin{figure}
+ \hspace{0mm} \includesvg[pretex=\small,inkscapelatex=false,width=\TwoColumnWidth]{#1}
+\end{figure}
+
+\fi
+\margincaption{#2}{#3}{#4}{#5}{-4em}
+}
+
+\newcommand{\FullWidthSVG}[5]{
+\checkoddpage
+\ifoddpage
+
+\begin{figure}[!htbp]
+ \hspace{-24.5mm} \includesvg[pretex=\small,inkscapelatex=false,width=\FullWidth]{#1}
+\end{figure}
+\else
+
+\begin{figure}[!htbp]
+ \hspace{-50.5mm} \includesvg[pretex=\small,inkscapelatex=false,width=\FullWidth]{#1}
+\end{figure}
+\fi
+\margincaption{#2}{#3}{#4}{#5}{-4em}
+}
+
+\newcommand{\marginauthor}[2]{\marginpar{\vspace{#2}\small\textbf{#1}}\normalsize}
+
+\newcommand{\smalltriangle}[1]{
+\resizebox{0.3em}{!}{
+\begin{tikzpicture}
+  % Apex angle 60 degrees
+  \node[isosceles triangle,
+      isosceles triangle apex angle=30,
+      rotate=#1,
+      draw,fill=bluegrey,
+      minimum size =1cm] (T60)at (3,0){};]
+\end{tikzpicture}
+} \hspace{0.5em}
+}
+
+\newcommand{\photo}{
+\resizebox{1em}{!}{
+\begin{tikzpicture}
+\begin{scope}
+  \fill (-2.09,-1) -- (1.609,-1) -- (1.609,1.1) -- (-2.09, 1.1) -- cycle;
+  \fill (-1.409,-0.8) -- (2.109,-0.8) -- (2.109,1.2) -- (-1.409, 1.2) -- cycle;
+  \fill (1.,1.1) -- (1.9,1.1) -- (1.9,1.4) -- (1., 1.4) -- cycle;
+  \fill [black,xshift=-0.2cm] plot  [smooth cycle, tension=1] coordinates { (1,1) (1,-1) (-1,-1) (-1,1)};
+  \fill [white,xshift=-0.2cm] plot [smooth cycle, tension=1] coordinates { (0.8,0.8) (0.8,-0.8) (-0.8,-0.8) (-0.8,0.8)};
+  \fill [black,xshift=-0.2cm] plot [smooth cycle, tension=1] coordinates { (0.65,0.65) (0.65,-0.65) (-0.65,-0.65) (-0.65,0.65)};
+\end{scope}
+\end{tikzpicture}
+} \hspace{0.5em}}
+
+
+%\marginparsep=2em
+
+\newcommand{\margincaption}[5]{\marginpar{\vspace{#5}
+{#3} \footnotesize{#1} \par
+\footnotesize{\emph{#2}} \par \photo \footnotesize{#4}}}
+
+
+\tikzstyle{name-dest} = [
+					fill=darkyellow,
+					thick,
+					rectangle,
+					inner sep=2pt,
+					inner ysep=10pt
+					]
+
+\tikzstyle{reference-box} = [
+          					fill=refyellow,
+          					thick,
+          					rectangle,
+          					inner sep=5pt,
+          					inner ysep=10pt
+          					]
+
+\tikzstyle{fancytitle} =	 [
+					fill=refyellow,
+					text=black,
+          inner ysep=5pt,
+					]
+
+\tikzstyle{table} = [		draw={rgb:red,1;green,2;blue,5},
+					fill={rgb:red,1;green,2;blue,5;white,24},
+					thick,
+					rectangle,
+					rounded corners,
+					inner sep=5pt,
+					inner ysep=5pt
+					]
+
+\tikzstyle{tabletitle} = [	font=\sffamily\large,
+					fill={rgb:red,1;green,2;blue,5},
+					text=white
+					]
+
+\newcommand{\MarginReferences}[1]{
+\checkoddpage
+\ifoddpage
+\begin{marginfigure}
+  \hspace{0mm}
+\begin{tikzpicture}
+\node [reference-box] (box){
+\begin{minipage}{\textwidth}
+  \footnotesize{#1}
+  \end{minipage}};
+\node[fancytitle, minimum width =\textwidth+10pt, anchor = south, yshift=-5pt] at (box.north) {\textbf{\small{References / \emph{Referencias}}}};
+\end{tikzpicture}
+\end{marginfigure}
+\else
+\begin{marginfigure}
+  \hspace{-5mm}
+\begin{tikzpicture}
+\node [reference-box] (box){
+\begin{minipage}{\textwidth}
+  \footnotesize{#1}
+  \end{minipage}};
+\node[fancytitle, minimum width =\textwidth+10pt, anchor = south, yshift=-5pt] at (box.north) {\textbf{\small{References / \emph{Referencias}}}};
+\end{tikzpicture}
+\end{marginfigure}
+\fi
+}
+
+\newcommand{\MarginFigure}[1]{
+\checkoddpage
+\ifoddpage
+\begin{marginfigure}
+  \hspace{6mm}
+\includegraphics[width = 44mm]{#1}
+\end{marginfigure}
+\else
+\begin{marginfigure}
+  \hspace{6mm}
+\includegraphics[width = 44mm]{#1}
+\end{marginfigure}
+\fi
+}
+
+
+\newenvironment{colourarticle}[1]
+{
+\newpagecolor{#1}
+}
+{
+\afterpage{\restorepagecolor}
+}

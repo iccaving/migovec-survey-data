@@ -2,53 +2,53 @@ encoding  utf-8
 survey popotresni
 	input "popotresnip.th2"
 	input "popotresni-e.th2"
-	
+
 	map  m-all-e -projection extended
 		popotresni-kak-e1
 		popotresni-pop-e1
 		popotresni-pop-e2
 		#popotresni-pop-e3
 	endmap
-	
-	map mpopotresni-p1 -projection plan
+
+	map m1p -projection plan
 		popotresnip_1
 	endmap
-	
-	map mpopotresni-p2 -projection plan
+
+	map m2p -projection plan
 		popotresnip_2
 	endmap
-	
-	map mpopotresni-p3 -projection plan
+
+	map m3p -projection plan
 		popotresnip_3
 	endmap
-	
-	map mpopotresni-p4 -projection plan
+
+	map m4p -projection plan
 		popotresnip_4
 	endmap
-	
-	map mpopotresni-p5 -projection plan
+
+	map m5p -projection plan
 		popotresnip_5
 	endmap
-	
+
 	map m-all-p -projection plan
-		mpopotresni-p2
-		mpopotresni-p1
-		mpopotresni-p5
-		mpopotresni-p3
-		mpopotresni-p4
+		m2p
+		m1p
+		m5p
+		m3p
+		m4p
 	endmap
-	
+
 	join popotresnip_1 popotresnip_2
 	join popotresnip_2 popotresnip_3
-	
-	
+
+
 	centreline
 		date 2004.07.17
 		explo-date 2004.07.17
-		
+
 		explo-team "Bogomir Remškar"
 		explo-team "Iztok Možir"
-		
+
 		team "Bogomir Remškar" insts notes
 		team "Iztok Možir" insts notes
 		units length meters
@@ -123,11 +123,6 @@ survey popotresni
 		extend left
 		KAK12   POP25        5.0     302      24   #0.0     0.0     0.0     0.0
 	endcentreline
-	
-	
+
+
 endsurvey
-
-
-
-
-

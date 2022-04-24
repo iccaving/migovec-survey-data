@@ -1,44 +1,44 @@
 encoding  utf-8
 survey pov
-	
+
 	input "pov-p.th2"
 	input "pov-e.th2"
-	
+
 	map  m-all-e -projection extended
 		pov-e1
 		break
 		pov-e2
 		pov-e3
 	endmap
-	
-	map mpov-1p -projection plan
+
+	map m1p -projection plan
 		pov-1p
 	endmap
-	
-	map mpov-2p -projection plan
+
+	map m2p -projection plan
 		pov-2p
 	endmap
-	
-	map mpov-3p -projection plan
+
+	map m3p -projection plan
 		pov-3p
 	endmap
-	
-	map mpov-4p -projection plan
+
+	map m4p -projection plan
 		pov-4p
 	endmap
-	
-	map mpov-5p -projection plan
+
+	map m5p -projection plan
 		pov-5p
 	endmap
-	
+
 	map m-all-p -projection plan
-		mpov-1p
-		mpov-2p
-		mpov-3p
-		mpov-4p
-		mpov-5p
+		m1p
+		m2p
+		m3p
+		m4p
+		m5p
 	endmap
-	
+
 	join pov-1p pov-2p
 	join s3_l1 s2_l1
 	join s3_l2 s2_l2
@@ -46,7 +46,7 @@ survey pov
 	join s3_l2 s5_l2
 	join s3_l3 s5_l3
 	join pov-e2 pov-e3
-	
+
 	centreline
 		date 2001.07.28
 		explo-date 2001.07.28
@@ -54,7 +54,7 @@ survey pov
 		explo-team "Tomaž Kragelj"
 		team "Tomaž Tivadar" insts
 		team "Tomaž Kragelj" notes
-		
+
 		units length meters
 		units compass clino degrees
 		extend right
@@ -124,9 +124,8 @@ survey pov
 		extend right
 		32  33  9.75  142  -12  #poskusne tocke
 		flags not duplicate
-		
-		
-	endcentreline
-	
-endsurvey
 
+
+	endcentreline
+
+endsurvey

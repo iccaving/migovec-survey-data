@@ -5,14 +5,14 @@ layout custom_scalebar_arrow
 		  	begingroup
 		    	interim defaultscale:=0.5; % scale your north arrow here
 		    	pickup pencircle scaled (0.08cm * defaultscale);
-		    	thdraw (-.4cm,-1.4cm)--(0,2.8cm)--(.4cm,-1.4cm)--cycle;
-		    	p:=fullcircle scaled 1.6cm;
+		    	thdraw (-.4cm* defaultscale,-1.4cm* defaultscale)--(0,2.8cm* defaultscale)--(.4cm* defaultscale,-1.4cm* defaultscale)--cycle;
+		    	p:=fullcircle scaled (1.6cm* defaultscale);
 		    	thfill p withcolor (1,1,1);
 					thdraw p withcolor(0,0,0);
-		    	p:=(0.95cm,0)--(0.65cm,0);
+		    	p:=(0.95cm * defaultscale,0)--(0.65cm* defaultscale,0);
 		    	thdraw p; thdraw p xscaled -1;
 		    	pickup pencircle scaled (0.12cm * defaultscale);
-		    	p:=(0.28cm,0.42cm);
+		    	p:=(0.28cm* defaultscale,0.42cm* defaultscale);
 		    	thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1);
 		  	endgroup;
 		enddef;

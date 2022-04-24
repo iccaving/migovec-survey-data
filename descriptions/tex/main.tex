@@ -1,0 +1,119 @@
+\documentclass[twoside,10pt]{article}
+\usepackage{fontenc}
+\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{natbib}
+\usepackage{etoolbox}
+\usepackage{svg}
+\usepackage{transparent}
+\usepackage{lettrine}
+\usepackage{siunitx}
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+\usepackage[text={136.5mm,243mm},%
+papersize={210mm,297mm},%
+columnsep=3mm,%
+headsep=21pt,%
+inner=25mm,outer=50mm,top=0.3in,bottom= 0.7in, marginparwidth=38mm]{geometry}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{descriptions}
+\usetikzlibrary{shapes.geometric,fit}
+\usetikzlibrary{shapes,snakes}
+\usetikzlibrary{shadows.blur}
+
+\usepackage{amsmath,amssymb}
+\definecolor{bluegrey}{HTML}{193366}% bluegrey %
+\definecolor{lightgrey}{HTML}{e0e0eb}% grey %
+\definecolor{shadowgrey}{HTML}{e0e0e0}% grey %
+
+\definecolor{lightyellow}{HTML}{f2e6d9}% light brow
+\definecolor{refyellow}{HTML}{f2e680}% light yellow
+
+\definecolor{darkyellow}{HTML}{fff0b3}% grey %
+\definecolor{darkorange}{HTML}{ff884d}% dark orange%
+
+\definecolor{darkeryellow}{HTML}{ffd11a}% grey %
+
+\usepackage[strict]{changepage}
+\usepackage[pagecolor=none]{pagecolor}
+\usepackage{afterpage}
+\usepackage{blindtext}
+\usepackage{sidenotes}
+%\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{parallel}
+\usepackage{titlesec}
+\usepackage{marginnote}
+
+\makeatletter
+
+\newcommand\degree{$^\circ\mkern-1mu$}
+
+\renewcommand\section{\@startsection {section}{1}{0pt}%
+                                   {1.2\baselineskip  plus .3\baselineskip minus .1\baselineskip}%
+                                   {5pt\@afterindentfalse}%
+                                   {\clearpage \sf\Large\bfseries\raggedright }}
+\renewcommand\subsection{\@startsection {subsection}{2}{0pt}%
+                                     {15pt plus .3\baselineskip}%
+                                     {1pt\@afterindentfalse}%
+                                     { \sf\large\bfseries\raggedright}}
+\renewcommand\subsubsection{\@startsection {subsubsection}{3}{2pt}%
+                                     {2pt plus .3\baselineskip}%
+                                     {3pt\@afterindentfalse}%
+                                     {\sf\normalsize\bfseries\raggedright}}
+\renewcommand\paragraph{\@startsection {paragraph}{4}{0pt}%
+                                     {1pt plus .3\baselineskip}%
+                                     {1pt\@afterindenttrue}%
+                                     {\sf\normalsize}}
+\makeatother
+
+\titlespacing{\section}{0pc}{10pc}{3pc}
+\titlespacing{\subsection}{0pc}{10pc}{3pc}
+\titlespacing{\subsubsection}{0pc}{10pc}{3pc}
+
+% redefine the plain style so that there are no headers.
+
+
+                 \fancyhf{}% clear all header and footer fields
+                 \fancyfoot[LE]{\footnotesize \textcolor{bluegrey}{ \textbf{\thepage}}}
+                 \fancyfoot[RO]{\footnotesize \textcolor{bluegrey}{ \textbf{\thepage}}}
+
+                 \fancyfoot[CE]{ \footnotesize  \textsf{\textit{JSPDT}/ICCC --- \textbf{Tolminski Migovec}}} % except the center
+                  \fancyfoot[CO]{ \footnotesize  \textsf{\textbf{Tolminski Migovec} --- \textit{JSPDT}/ICCC}} % except the center
+                 \renewcommand{\headrulewidth}{0pt}%
+                 \renewcommand{\footrulewidth}{0.0pt}%
+
+\setlength{\parindent}{2em}
+
+\setcounter{secnumdepth}{0}
+
+\setsansfont[
+  Path = ../../layouts/fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = *-Regular ,
+  BoldFont       = *-Bold ,
+  ItalicFont     = *-Italic ,
+  BoldItalicFont = *-Italic
+]{OpenSans}
+
+\setmainfont[
+  Path = ../../layouts/fonts/ ,
+  Extension      = .ttf ,
+  UprightFont    = *-Regular ,
+  BoldFont       = *-Bold ,
+  ItalicFont     = *-Italic ,
+  BoldItalicFont = *-Italic
+]{OpenSans}
+
+
+\begin{document}
+
+\include{drugi_to_cafe}
+\include{cafe_to_manger}
+
+\end{document}

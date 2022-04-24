@@ -3,49 +3,49 @@ survey galerija
 	input "galerijap.th2"
 	input "galerija-e1.th2"
 	input "galerija-e2.th2"
-	
+
 	map  m-all-e -projection extended
 		galerija-e1
 		break
 		galerija-2e
 		galerija-e3
 	endmap
-	
-	
-	map mgalerijap_3 -projection plan
+
+
+	map m3p -projection plan
 		galerijap_3
 	endmap
-	
-	map mgalerijap_1 -projection plan
+
+	map m1p -projection plan
 		galerijap_1
 	endmap
-	
-	map mgalerijap_2 -projection plan
+
+	map m2p -projection plan
 		galerijap_2
 	endmap
-	
-	map mgalerijap_4 -projection plan
+
+	map m4p -projection plan
 		galerijap_4
 	endmap
-	
-	map mgalerijap_5 -projection plan
+
+	map m5p -projection plan
 		galerijap_5
 	endmap
-	
-	map mgalerijap_6 -projection plan
+
+	map m6p -projection plan
 		galerijap_6
 	endmap
-	
+
 	map m-all-p -projection plan
-		mgalerijap_1
-		mgalerijap_2
-		mgalerijap_3
-		mgalerijap_4
-		#mgalerijap_5
-		#mgalerijap_6
+		m1p
+		m2p
+		m3p
+		m4p
+		#m5
+		#m6
 	endmap
-	
-	
+
+
 	join galerijap_1 galerijap_2
 	#join galerijap_4 galerijap_5
 	centreline
@@ -53,13 +53,13 @@ survey galerija
 		explo-date 2001.09.21
 		team "Tomaž Tivadar" insts
 		team "Tomaž Kragelj" notes
-		
+
 		explo-team "Tomaž Tivadar"
 		explo-team "Tomaž Kragelj"
-		
+
 		units length meters
 		units compass clino degrees
-		
+
 		flags splay
 		extend vertical
 		1	2	27.6	0	+90	#stn 1 Rokovo brezno
