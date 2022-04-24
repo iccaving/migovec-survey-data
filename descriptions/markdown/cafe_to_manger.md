@@ -23,15 +23,13 @@ This begins as the upwind route labelled What a Coincidence! where, past a serie
 
 ## Cafe to Manger
 
-
-###s Ajdovščina to TTT
+### Ajdovščina to TTT
 The ropes lead up the Ajdovščina pitch along a traverse going round 270° around the shaft wall up into a window, and up a further 25m single drop shaft. A short section of low passage leads to an exposed (but rigged) traverse over the original way down, into a draughty rift passage with muddy ledges. The passage enlarges to a junction where the way on to TTT is to the right. A climb up the classic keyhole shaped passage to the left is covered in characteristic spotted mud. This leads to Déjà Vu chamber and a further pitch head. At the junction the way to TTT is up a 3m roped climb, past a further 4m roped climb in the small rift which breaks out in the far wall of the TTT pitch.
+
+\ThreeColWidthFigure{../outputs/cafe_to_manger.pdf}
 
 ### TTT to Povezava aven
 Climbing around boulders to the other side of the oval shaped shaft leads to the rope up the P40. The passage to Povezava aven is a rift intercepting the shaft midway. Acrobatic traverses over deep holes lead into the narrow passage, where the way is found in low, high and intermediate portions of the rift. The passage relents with a greasy downclimb into a narrow aven chamber with a drip. A rope at the far end indicates the way on, back into the narrow rift; this soon leads to a roped climb, a short traverse (One Small Step) and a large junction (Manđare). Straight on leads to Povezava passage. This is a wide rift with large traversable ledges on either side. To the left at Manđare junction breaks out pretty quickly into a high chamber with two ways on: this is the Stara Jama branch. Following Povezava upstream, one arrives at the bottom of the 30m Povezava aven.
 
 ### Povezava aven to Sejna Soba
 At the far end of the aven a roped climb allows the caver to reach a dry, draughty stooping passage, covered in fine white rock flour: this is Mlinotest. A short climb down into a junction chamber of modest dimensions is marked by carbide sploges on the wall, the way out is straight ahead, among scuplted and rounded boulders. Further upwind is a series of constrictions, which eventually pop up into the junction at Sejna Soba.
-
-
-\FullWidthFigure{../outputs/cafe_to_manger.pdf}{Picture caption}{La caption}{\smalltriangle{180}}{ICCC-JSPDT}

@@ -1,9 +1,9 @@
 PDF: latex
 	cd tex ;\
-	xelatex main.tex ;\
-	bibtex main.aux ;\
-	xelatex main.tex ;\
-	xelatex main.tex ;\
+	xelatex descriptions.tex ;\
+	bibtex descriptions.aux ;\
+	xelatex descriptions.tex ;\
+	xelatex descriptions.tex ;\
 	cd ..;\
 
 therion_overviews: ./configs/*overview.thconfig

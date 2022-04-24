@@ -28,7 +28,7 @@ Below the boulders, and under a small drip, a rift of small dimensions leads to 
 ### Risanke to Sejna Soba
 At Lost and Found junction, the way on is to the left under a rock overhang, through a constriction showing signs of blasting. A short wriggle feet first, and downclimb using the handline drops in to a boulder strewn chamber. A further pitch with a swing onto a large ledge completes the descent. From the ledge, the cairned way through the chaotic boulder collapse allows access to a larger, boulder strewn aven. Traversing over the left  of a pit leads to a narrow rift where progress is made by sideways crawling. After another smaller aven, the constrictions continue until the breakthrough into Sejna Soba, an important nexus, recognisable due to its golden chocolate coin.
 
-## Sejna Soba to Mary's Cafe
+### Sejna Soba to Mary's Cafe
 From Sejna Soba, clambering through a window to the sound of water leads to an perch high above a water-chamber. Immediately to the right, a downclimb into a mud-covered, draughty passage leads to a small recess out of the wind. This is Mary's Café.
 
-\ThreeColWidthFigure{../outputs/drugi_to_cafe.pdf}{Picture caption}{La caption}{\smalltriangle{180}}{ICCC-JSPDT}
+\ThreeColWidthFigure{../outputs/drugi_to_cafe.pdf}
