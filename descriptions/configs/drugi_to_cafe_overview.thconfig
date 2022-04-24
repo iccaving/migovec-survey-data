@@ -1,13 +1,15 @@
+## this config file produces an overview map where only the outline of the passage is shown.
+## the look-up highlights a map in red, whilst rendering everything else in grey.
+
 source ../../data/system_migovec.th
 
 input ../map_definitions/look-up.thl
-#input ../../layouts/metapost/scalebar_arrow.thl
 
 layout overview-p
 
   symbol-hide group all
   #copy custom_scalebar_arrow
-  colour map-fg map:drugi_to_cafe_overview
+  colour map-fg map:drugi_to_cafe_overview # this is the crucial look-up
   scale 1 10000
   base-scale 1 2000
   map-header 0 0 off

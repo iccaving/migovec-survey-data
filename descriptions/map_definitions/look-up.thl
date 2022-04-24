@@ -1,18 +1,24 @@
+## this is a collection of loop-ups to be called in the respective thconfig files
+
+# from the entrance to the cafe, will appear light yellow
 lookup map:drugi_to_cafe
 	m-all-p@belladonna.primadona_ubend_monatip.system_migovec [100 92.2 66.7] "Entrance to camp"
   m-drugi_to_cafe-p@primadona.primadona_ubend_monatip.system_migovec  [100 92.2 66.7] "Entrance to camp"
 endlookup
 
+# this the overview, making everything grey, apart from the highlighed 'entrance to cafe'
 lookup map:drugi_to_cafe_overview
-	m-all-p@belladonna.primadona_ubend_monatip.system_migovec [100 0 0] "Entrance to camp"
+	m-all-p@belladonna.primadona_ubend_monatip.system_migovec [100 0 0] "Entrance to camp" map
   m-drugi_to_cafe-p@primadona.primadona_ubend_monatip.system_migovec  [100 0 0] "Entrance to camp"
   [] [40 40 40] "rest"
 endlookup
 
+# from the cafe to the manger, will appear light yellow
 lookup map:cafe_to_manger
   m-cafe_to_manger-p@primadona.primadona_ubend_monatip.system_migovec [100 92.2 66.7] "Cafe to Manger"
 endlookup
 
+# this the overview, making everything grey, apart from the highlighed 'cafe to manger' map
 lookup map:cafe_to_manger_overview
   m-cafe_to_manger-p@primadona.primadona_ubend_monatip.system_migovec [100 0 0] "Cafe to Manger"
 	[] [40 40 40] "rest"

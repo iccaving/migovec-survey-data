@@ -1,8 +1,13 @@
+## this config file produces an detailed map where the correct way is highlighted in light yellow.
+## in the tex-map definition, the previously compiled overview map is also included.
+
+
 source ../../data/system_migovec.th
 
 input ../map_definitions/look-up.thl
 
 # add here whichever map you want to appear next to the 'correct' way on
+# the correct way on appears in light yellow, the rest in white.
 source
   map m-local-p -projection plan -title "<bf>Drugi Vhod to Mary's Café"
     mprima1-entp@prima1.primadona.primadona_ubend_monatip.system_migovec
@@ -14,11 +19,11 @@ source
     m4p@popotresni.primadona.primadona_ubend_monatip.system_migovec
     m1p@galerija.primadona.primadona_ubend_monatip.system_migovec
     m2p@galerija.primadona.primadona_ubend_monatip.system_migovec
-
   endmap
 endsource
 
 select m-local-p
+
 
 export map -o ../outputs/drugi_to_cafe.pdf -projection plan -layout local-p
 
@@ -27,7 +32,7 @@ layout local-p
   copy connection_marker
   copy custom_label
 
-  colour map-fg map:drugi_to_cafe
+  colour map-fg map:drugi_to_cafe  # this is the crucial look-up
   scale 1 1000
 
   symbol-hide line label
