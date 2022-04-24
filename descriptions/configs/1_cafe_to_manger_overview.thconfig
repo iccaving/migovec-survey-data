@@ -1,0 +1,38 @@
+# This config file produces an overview map where only the outline of the passage is shown.
+# The look-up highlights a map in red, whilst rendering everything else in grey.
+source ../../data/system_migovec.th
+
+input ../../layouts/detailed-p.thl
+input ../../layouts/metapost/connection_marker.thl
+input ../../layouts/metapost/label.thl
+input ../../layouts/mods.thl
+
+# This the overview, making everything grey, apart from the highlighed 'cafe to manger' map
+lookup map:cafe_to_manger_overview
+	m-cafe_to_manger-p@primadona.primadona_ubend_monatip.system_migovec [100 0 0] "Cafe to Manger"
+	[] [40 40 40] "rest"
+endlookup
+
+# Generate overview inset
+layout overview-p
+	
+	symbol-hide group all
+	#copy custom_scalebar_arrow
+	colour map-fg map:cafe_to_manger_overview # this is the crucial look-up
+	scale 1 10000
+	base-scale 1 2000
+	map-header 0 0 off
+	scale-bar 400 m
+	
+	code tex-map
+		\framethickness=0.5mm
+		\def\maplayout{
+		\legendbox{90}{25}{N}{\scalebar}
+		}
+	endcode
+endlayout
+
+maps-offset off
+select m-all-p@primadona_ubend_monatip.system_migovec
+
+export map -o ../outputs/cafe_to_manger_overview.pdf -projection plan -layout overview-p

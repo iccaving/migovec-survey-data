@@ -1,0 +1,74 @@
+# This config file produces an detailed map where the correct way is highlighted in light yellow.
+# In the tex-map definition, the previously compiled overview map is also included.
+source ../../data/system_migovec.th
+
+input ../../layouts/detailed-p.thl
+input ../../layouts/metapost/connection_marker.thl
+input ../../layouts/metapost/label.thl
+input ../../layouts/mods.thl
+
+# From the cafe to the manger, will appear light yellow
+lookup map:cafe_to_manger
+	m-cafe_to_manger-p@primadona.primadona_ubend_monatip.system_migovec [100 92.2 66.7] "Cafe to Manger"
+endlookup
+
+# Generate actual map
+layout local-p
+	copy detailed-p
+	copy connection_marker
+	copy custom_label
+	
+	colour map-fg map:cafe_to_manger # this is the crucial look-up
+	scale 1 1000
+	
+	symbol-hide line label
+	symbol-show point label
+	symbol-hide point remark
+	symbol-hide line arrow
+	symbol-hide line slope
+	symbol-assign line pit MY
+	symbol-assign point water-flow MY
+	symbol-assign area water MY
+	symbol-assign line floor-step MY
+	symbol-assign area sump MY
+	symbol-assign point breakdown-choke UIS
+	symbol-hide line survey
+	symbol-hide point station
+	symbol-hide point station-name
+	scale-bar 100 m
+	
+	code tex-map
+		
+		\def\maplayout{
+		\legendbox{-2}{45}{N}{\scalebar}
+		\legendbox{-2}{47}{S}{\northarrow}
+		\legendbox{-2}{59}{S}{\loadpicture{../outputs/cafe_to_manger_overview.pdf}}
+		}
+	endcode
+	
+endlayout
+
+
+# Add here whichever map you want to appear next to the 'correct' way on
+# The correct way on appears in light yellow, the rest in white.
+source
+	map m-local-p -projection plan -title "<bf>Mary's Café to Camp Manger"
+		m-all-p@risa2.primadona.primadona_ubend_monatip.system_migovec
+		m1p@galerija.primadona.primadona_ubend_monatip.system_migovec
+		m2p@galerija.primadona.primadona_ubend_monatip.system_migovec
+		m3p@popotresni.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@risanke.primadona.primadona_ubend_monatip.system_migovec
+		m3p@ttt.primadona.primadona_ubend_monatip.system_migovec
+		m2p@ttt.primadona.primadona_ubend_monatip.system_migovec
+		m4p@popotresni.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@apple_crumble.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@batmere.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@dejavu.primadona.primadona_ubend_monatip.system_migovec
+		m-cafe_to_manger-p@primadona.primadona_ubend_monatip.system_migovec
+	endmap
+endsource
+
+select m-local-p
+
+export map -o ../outputs/cafe_to_manger.pdf -projection plan -layout local-p
+
