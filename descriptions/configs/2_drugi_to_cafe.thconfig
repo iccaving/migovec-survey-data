@@ -18,10 +18,11 @@ layout local-p
 	copy detailed-p
 	copy connection_marker
 	copy custom_label
-	
+
 	colour map-fg map:drugi_to_cafe
+	colour map-bg transparent
 	scale 1 1000
-	
+
 	symbol-hide line label
 	symbol-show point label
 	symbol-hide point remark
@@ -37,16 +38,16 @@ layout local-p
 	symbol-hide point station
 	symbol-hide point station-name
 	scale-bar 100 m
-	
+
 	code tex-map
-		
+
 		\def\maplayout{
 		\legendbox{90}{45}{N}{\scalebar}
 		\legendbox{90}{47}{S}{\northarrow}
 		\legendbox{90}{59}{S}{\loadpicture{../outputs/drugi_to_cafe_overview.pdf}}
 		}
 	endcode
-	
+
 endlayout
 
 # Add here whichever map you want to appear next to the 'correct' way on

@@ -3,14 +3,14 @@
 
 survey klic_globin -title "Klic Globin"
 	# below massive pitch
-	
+
 	centerline
 		date 2018.07.27
 		explo-date 2018.07.27
 		explo-team "James Wilson"
 		explo-team "Tanguy Racine"
 		explo-team "Jack Halliday"
-		
+
 		team "Tanguy Racine" insts
 		team "Jack Halliday" notes
 		team "James Wilson" tape
@@ -178,18 +178,30 @@ survey klic_globin -title "Klic Globin"
 		13 14 2.07 12.3 19.9
 		14 15 2.32 165.6 51.2
 	endcenterline
-	
+
 	input "klic_globin-1p.th2"
 	input "klic_globin-1s.th2"
-	
+
 	map m-all-p -projection plan
+		m1p
+		m2p
+		m3p
+	endmap
+
+	map m1p -projection plan
 		klic_globin-p1
+	endmap
+
+	map m2p -projection plan
 		klic_globin-p2
 	endmap
-	
+
+	map m3p -projection plan
+		klic_globin-p3
+	endmap
+
 	map  m-all-e -projection extended
 		klic_globin-1s
 	endmap
-	
-endsurvey
 
+endsurvey

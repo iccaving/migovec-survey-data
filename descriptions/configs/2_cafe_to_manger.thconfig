@@ -17,10 +17,11 @@ layout local-p
 	copy detailed-p
 	copy connection_marker
 	copy custom_label
-	
+
 	colour map-fg map:cafe_to_manger # this is the crucial look-up
+	colour map-bg transparent
 	scale 1 1000
-	
+
 	symbol-hide line label
 	symbol-show point label
 	symbol-hide point remark
@@ -36,16 +37,16 @@ layout local-p
 	symbol-hide point station
 	symbol-hide point station-name
 	scale-bar 100 m
-	
+
 	code tex-map
-		
+
 		\def\maplayout{
 		\legendbox{-2}{45}{N}{\scalebar}
 		\legendbox{-2}{47}{S}{\northarrow}
 		\legendbox{-2}{59}{S}{\loadpicture{../outputs/cafe_to_manger_overview.pdf}}
 		}
 	endcode
-	
+
 endlayout
 
 
@@ -71,4 +72,3 @@ endsource
 select m-local-p
 
 export map -o ../outputs/cafe_to_manger.pdf -projection plan -layout local-p
-

@@ -1,7 +1,6 @@
 map m-cafe_to_manger-p -projection plan
 	m-all-p@pov
-	m-all-p@zima00
-	m2p@TTTr
+	m1p@zima00
 	m4p@ttt
 	m5p@ttt
 	m6p@ttt
@@ -19,14 +18,21 @@ map m-drugi_to_cafe-p -projection plan -title "Drugi Vhod to Mary's Cafe"
 	m-all-p@risa2
 endmap
 
-map manger_to_tranquillity-p -projection plan
+map m-manger_to_tranquillity-p -projection plan
+	m2p@zima00
+	m3p@TTTr
+	m2p@TTTr
+	m-all-p@buckwheat
 	m2p@pivnica_resurvey
 	m3p@pivnica_resurvey
+	m1p@pivnica_2_resurvey
 	m-all-p@lost_in_a_dream
 	m-all-p@lost_in_a_dream_2
 	m-all-p@penny_falls
 	m-all-p@penny_falls_2
 	m-all-p@tiger_tiger
 	m-all-p@deeper_than_most
-	m-all-p@klic_globin
+	m1p@klic_globin
+	m1p@moonraker
+	m2p@moonraker
 endmap

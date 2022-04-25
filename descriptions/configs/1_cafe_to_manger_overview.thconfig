@@ -15,17 +15,18 @@ endlookup
 
 # Generate overview inset
 layout overview-p
-	
+
 	symbol-hide group all
 	#copy custom_scalebar_arrow
 	colour map-fg map:cafe_to_manger_overview # this is the crucial look-up
+	colour map-bg transparent
 	scale 1 10000
 	base-scale 1 2000
 	map-header 0 0 off
 	scale-bar 400 m
-	
+
 	code tex-map
-		\framethickness=0.5mm
+		\framethickness=0.25mm
 		\def\maplayout{
 		\legendbox{90}{25}{N}{\scalebar}
 		}

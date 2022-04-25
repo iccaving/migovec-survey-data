@@ -2,40 +2,41 @@ encoding  utf-8
 survey zima00
 	input "zima00-p.th2"
 	input "zima00-e.th2"
-	
+
 	map  m-zima00-e -projection extended
 		zima00-2e
 		#zima00_1e
 	endmap
-	
+
 	map  m-ttt_bottom-e -projection extended
 		zima00-3e
 	endmap
-	
+
 	map m-all-p -projection plan
-		mzima00-p1
-		mzima00-p2
+		m1p
+		m2p
 	endmap
-	
-	map mzima00-p1 -projection plan
+
+	map m1p -projection plan
 		zima00p_1
 	endmap
-	map mzima00-p2 -projection plan
+
+	map m2p -projection plan
 		zima00p_2
 	endmap
-	
+
 	join zima00p_1 zima00p_2
-	
+
 	centreline
 		date 2000.12.28
-		
+
 		explo-date 2000.12.28
-		
+
 		team "Bozo Merila"
 		team "Beguš Tadej"
 		explo-team "Cuder"
 		explo-team "Roso"
-		
+
 		explo-team "Bozo Merila"
 		# declination 0.00 degrees
 		units length meters
@@ -68,7 +69,7 @@ survey zima00
 		extend left
 		13  14  5.4  075  0
 		extend left
-		
+
 		14  15  6.8  040  0
 		15  16  6.2  322  28
 		16  17  13  005  5
@@ -77,9 +78,8 @@ survey zima00
 		19  20  4.2  107  37
 		20  21  6.7  070  -10
 		21  22  15  050  0    #tocka 22 je enaka tocki 1 od ttt
-		
-	endcentreline
-	
-	
-endsurvey
 
+	endcentreline
+
+
+endsurvey

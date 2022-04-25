@@ -2,11 +2,8 @@
 title: Cafe to Manger
 author: ICCC/JSPDT
 header-includes:
-- \usepackagedescriptions
+- \usepackage{descriptions}
 ---
-
-\begin{colourarticle}{lightgrey}
-\end{colourarticle}
 
 ### Sejna Soba to Knot Very Good
 The route is described in A Primadona-Monatip round trip: follow instructions to reach Sejna Soba from the Primadona entrance. At Sejna Soba, the way on is to the right when facing the water chamber. A climb down into a dry, stooping height gallery is followed by a couple of minutes of easy caving to the top of a small $2m$ drop. This is rigged and a larger 5m drop swings into a short stooping height, scalloped passage. The take-off of Knot Very Good is at the far end of the passage. The pitch starts as an elongate rift and bells out where the drips come in. The 20m hang lands on a bouldery floor of a $10 \times 10$m chamber with many ways off. Water disappears in between boulders to Cattlegrid, while a muddy tube near the landing leads to The Stile. A larger passage reached by scrambling on a muddy shelf marks the start of the Smer0 gallery.
@@ -28,9 +25,6 @@ This begins as the upwind route labelled What a Coincidence! where, past a serie
 
 ### Ajdovščina to TTT
 The ropes lead up the Ajdovščina pitch along a traverse going round 270° around the shaft wall up into a window, and up a further 25m single drop shaft. A short section of low passage leads to an exposed (but rigged) traverse over the original way down, into a draughty rift passage with muddy ledges. The passage enlarges to a junction where the way on to TTT is to the right. A climb up the classic keyhole shaped passage to the left is covered in characteristic spotted mud. This leads to Déjà Vu chamber and a further pitch head. At the junction the way to TTT is up a 3m roped climb, past a further 4m roped climb in the small rift which breaks out in the far wall of the TTT pitch.
-
-\begin{colourarticle}{lightgrey}
-\end{colourarticle}
 
 \ThreeColWidthFigure{../outputs/cafe_to_manger.pdf}
 

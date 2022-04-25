@@ -6,7 +6,7 @@
 
 all: prepare markdown therion pdf clean
 
-prepare: 
+prepare:
 	cd $$(git rev-parse --show-toplevel)/descriptions; \
 	mkdir -p tmp
 
@@ -39,5 +39,3 @@ clean: prepare pdf
 	cd $$(git rev-parse --show-toplevel)/descriptions; \
 	rm therion.log
 	rm -rf tmp
-
-

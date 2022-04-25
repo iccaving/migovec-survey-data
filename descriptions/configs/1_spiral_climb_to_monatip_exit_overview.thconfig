@@ -8,9 +8,8 @@ input ../../layouts/metapost/label.thl
 input ../../layouts/mods.thl
 
 # This the overview, making everything grey, apart from the highlighed 'entrance to cafe'
-lookup map:drugi_to_cafe_overview
-	m-all-p@belladonna.primadona_ubend_monatip.system_migovec [100 0 0] "Entrance to camp"
-	m-drugi_to_cafe-p@primadona.primadona_ubend_monatip.system_migovec  [100 0 0] "Entrance to camp"
+lookup map:spiral_climb_to_monatip_exit_overview
+	m-alkatraz_to_exit-p@monatip.primadona_ubend_monatip.system_migovec  [100 0 0] "Alkatraz to Mona tip entrance"
 	[] [40 40 40] "rest"
 endlookup
 
@@ -18,7 +17,7 @@ endlookup
 layout overview-p
 	symbol-hide group all
 	#copy custom_scalebar_arrow
-	colour map-fg map:drugi_to_cafe_overview # this is the crucial look-up
+	colour map-fg map:spiral_climb_to_monatip_exit_overview # this is the crucial look-up
 	colour map-bg transparent
 	scale 1 10000
 	base-scale 1 2000
@@ -37,4 +36,4 @@ endlayout
 maps-offset off
 select m-all-p@primadona_ubend_monatip.system_migovec
 
-export map -o ../outputs/drugi_to_cafe_overview.pdf -projection plan -layout overview-p
+export map -o ../outputs/spiral_climb_to_monatip_exit_overview.pdf -projection plan -layout overview-p
