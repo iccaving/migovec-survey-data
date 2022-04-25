@@ -1,10 +1,10 @@
 survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 1@entrance
-	
+
 	input M16-e.thm
 	input M16-p.thm
-	
+
 	###__________1996____________###
-	
+
 	input "./1996/entrance/entrance.th"
 	input "./1996/brezno/brezno.th"
 	input "./1996/hotline/hotline.th"
@@ -20,7 +20,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	input "./1996/migcondown/migcondown.th"
 	input "./1996/migconleft/migconleft.th"
 	input "./1996/boogywoo/boogywoo.th"
-	
+
 	equate 31@brezno 31@entrance
 	equate 48@brezno 15@hotline
 	equate 50@brezno 18@hotline
@@ -37,7 +37,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	equate 7@shordrop 50@brezno
 	equate 1@shordrop2 1@shordrop
 	equate 12@rockroll 6@boogywoo
-	
+
 	join brezno-1p@brezno entrance-6p@entrance
 	join migcon-1p@migcon level2s-1p@level2s
 	join migconleft-1p@migconleft hotline-2p@hotline
@@ -54,7 +54,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join level2s-2e@level2s migcon-1e@migcon
 	join level2s-2e@level2s level2n-1e@level2n
 	join migcon-1e@migcon migcondown-1e@migcondown
-	join migcondown-1e@migcondown migconleft-1e@migconleft 
+	join migcondown-1e@migcondown migconleft-1e@migconleft
 	join hotline-1e@hotline brezno-1e@brezno
 	join hotline-1e@hotline migconleft-1e@migconleft
 	join migcondown-1e@migcondown rockroll-1e@rockroll
@@ -64,9 +64,9 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join shordrop-1e@shordrop shordrop2-1e@shordrop2
 
 
-	
+
 	###__________1997____________###
-	
+
 	input "./1997/lostcity/lostcity.th"
 	#input ./2016/death_by_a_1000_blows/death_by_a_1000_blows.th   ### This was done in 2016
 	input ./1997/mower/mower.th
@@ -102,7 +102,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	input ./1997/galact1/galact1.th
 	input ./1997/galact2/galact2.th
 	input ./1997/titanic/titanic.th
-	
+
 	equate 6@woft 6@hotline
 	#equate 9@death_by_a_1000_blows is@
 	equate 6@hotline 17@lostcity
@@ -138,7 +138,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	equate 9@cowboys 22@paradox
 	equate 13@cowboys 2@rameses
 	equate 1@level2s 27@titanic
-	
+
 	join hotline-1p@hotline lostcity-1p@lostcity
 	join baddybag-3p@baddybag goodbag-1p@goodbag
 	join window-1p@window galact3-1p@galact3
@@ -166,7 +166,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join doh-2p@doh pinkp-1p@pinkp
 	join frogshit-2p@frogshit batshitb-1p@batshitb
 	join batshitb-1p@batshitb batshit2-1p@batshit2
-	
+
 	join migcon2-1e@migcon2 migconleft-1e@migconleft
 	join migcon2-1e@migcon2 migcondown-1e@migcondown
 	join challenge-1e@challenge exhib-1e@exhib
@@ -209,7 +209,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join hotline-1e@hotline lostcity-1e@lostcity
 
 	###__________1998____________###
-	
+
 	input ./1998/waffles/waffles.th
 	input ./1998/disillusion/disillusion.th
 	input ./1998/olympic/olympic.th
@@ -228,7 +228,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	input ./1998/marwood/marwood.th
 	input ./1998/bridge/bridge.th
 	input ./1998/bosh/bosh.th
-	
+
 	equate 1@trunk 16@elephant
 	equate 6@arrow 13@sajeta
 	equate 10@elephant 1@mousse
@@ -286,7 +286,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 
 
 	###__________1999____________###
-	
+
 	input ./1999/obelix/obelix.th
 	input ./1999/below55/below55.th
 	input ./1999/paradiso/paradiso.th
@@ -301,7 +301,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	input ./1999/frogshit/frogshit.th
 	input ./1999/skalar/skalar.th
 	input ./1999/genghis/genghis.th
-	
+
 	equate 41@brezno 1@spiny
 	equate 10@spiny 1@dinsdale
 	equate 1@skalar 1@skalar2
@@ -324,7 +324,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join offhyd-1e@offhyd hydrant-1e@hydrant
 	join offhyd-2e@offhyd hydrant-1e@hydrant
 	join hydrant-1e@hydrant tamoka-1e@tamoka
-	join spiny-1e@spiny dinsdale-1e@dinsdale 
+	join spiny-1e@spiny dinsdale-1e@dinsdale
 	join spiny-1e@spiny brezno-1e@brezno
 	join frogshit-1e@frogshit batshit1-1e@batshit1
 	join ariane-1e@ariane paradiso-1e@paradiso
@@ -345,15 +345,15 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join spiny-1p@spiny brezno-3p@brezno
 	join spiny-1p@spiny dinsdale-1p@dinsdale
 
-	
-	
+
+
 	###__________2000____________###
-	
+
 	input ./2000/gloworm/gloworm.th
 	input ./2000/getafix/getafix.th
 	input ./2000/penelope/penelope.th
 	input ./2000/toilet/toilet.th
-	
+
 	equate 9@gloworm 1@penelope
 	equate 12@obelix 12@getafix
 	equate 1@boogywoo 10@toilet
@@ -367,24 +367,24 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join gloworm_l1@gloworm below55_l1@below55
 	join boogywoo-1p@boogywoo toilet-1p@toilet
 
-	
+
 	###__________2001____________###
-	
+
 	input ./2001/oratory/oratory.th
-	
+
 	equate 6@carwash 9@oratory
 
 	join carwash-1e@carwash oratory-1e@oratory
 	join carwash-3p@carwash oratory-1p@oratory
-	
+
 	###__________2017____________###
-	
+
 	input ./2017/death_by_a_1000_blows/death_by_a_1000_blows.th
-	
+
 	equate 9@death_by_a_1000_blows 33@brezno
 
 	# UNSORTED EQUATES
-	
+
 	#equate 8@silos.m18 24@JSPDT.m2
 	#equate 50@brezno.m16ent 7@shordrop.m16low
 	#equate 6@migconleft 7@hotline
@@ -409,5 +409,5 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	#equate 1@hotel.hotelt 1@pinkp.coldfeet
 	#equate 13@cowboys.pdox 2@rameses.coldfeet
 	#equate 1@hotel.hotelt HOTEL_TOLMINKA@
-	
+
 endsurvey

@@ -1,17 +1,29 @@
 survey brezno -title "Brezno Strahov"
-	
+
 	input "brezno-p.th2"
-	
+
 	map m-all-p -projection plan
+		m1p
+		m2p
+		m3p
+		m4p
+	endmap
+
+	map m1p -projection plan
 		brezno-1p
-		break
+	endmap
+
+	map m2p -projection plan
 		brezno-2p
-		break
+	endmap
+
+	map m3p -projection plan
 		brezno-3p
-		break
+	endmap
+
+	map m4p -projection plan
 		brezno-4p
 	endmap
-	
 
 input brezno-e.th2
 
@@ -24,10 +36,10 @@ endmap
 		date 1996.08.04
 		team "Jim Evans" notes
 		team "Sarah Wingrove" insts
-		
+
 		# ;Instruments:Sarah Wingrove
 		# ;Book: Jim Evans
-		
+
 		#explo-team ?? look in hollow mountain?
 		units length meters
 		units compass clino degrees
@@ -41,11 +53,11 @@ endmap
 		37	38	2.74	186	 -62	;Stn 38 is second bolt of Brezno Strahov
 		38	39	1.53	130	 -41	;Stn 39 is third bolt of Brezno Strahov
 		38	40	9.80	156	 -56
-		
+
 		40	41	19.80   158	 -70	;Stn.41 is a cairn in Strahov chamber
 		41	42	6.72	268	 +1
 		42	43	4.00	-	 down
-		
+
 		# ;*ref https://drive.google.com/open?id=0BxkZAUc06EK5dDBrM19jWU1oXzg
 		# ;*ref https://drive.google.com/open?id=0BxkZAUc06EK5TG1jZHFEQ3IwV0U
 		41	44	8.05	306	 -32
@@ -55,7 +67,7 @@ endmap
 		47	48	6.07	025	 -23
 		48	49	10.80   -	 down
 		49	50	10.35   057	 +16	;Stn 50 is a PSS cairn in centre of chamber
-		
+
 	endcentreline
 endsurvey
 

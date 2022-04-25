@@ -1,5 +1,5 @@
 survey monatip11 -title "Monatip 11"
-	
+
 	input "monatip11-p.th2"
 	input "monatip11-e.th2"
 
@@ -9,30 +9,50 @@ survey monatip11 -title "Monatip 11"
 		monatip11-e3
 		monatip11-e4
 	endmap
-	
+
 	map m-all-p -projection plan
-		monatip11-4p
-		monatip11-3p
-		monatip11-3Ap
-		monatip11-2p
+		m4p
+		m3p
+		m3Ap
+		m2p
+		m1p
+	endmap
+
+	map m1p -projection plan
 		monatip11-1p
 	endmap
-	
+
+	map m2p -projection plan
+		monatip11-2p
+	endmap
+
+	map m3p -projection plan
+		monatip11-3p
+	endmap
+
+	map m3Ap -projection plan
+		monatip11-3Ap
+	endmap
+
+	map m4p -projection plan
+		monatip11-4p
+	endmap
+
 	join monatip11-4p monatip11-3p
 	join monatip11-2p monatip11-1p
-	
+
 	centreline
 		date 2015.12.12
 		explo-date 2015.10.23
-		
+
 		team "Dejan Ristić"
 		team "Nejc Mavr"
 		team "Andrej Fratnik"
-		
+
 		explo-team "Andrej Fratnik"
 		explo-team "Dejan Ristić"
 		explo-team "Nejc Mavr"
-		
+
 		extend right
 		1	2	3.7	108	2	#
 		2	3	3.6	240	-67	#
@@ -77,7 +97,7 @@ survey monatip11 -title "Monatip 11"
 		37	38	1.9 320 0	#
 		38	39	4.7 300 35	#
 		39	40	2.6 330 -20	#
-		
+
 		data dimensions station left right up down
 		1 	1	1	1	0
 		3	1.5	0	1.5	0
@@ -116,7 +136,7 @@ survey monatip11 -title "Monatip 11"
 		37	0.2	0.2	0.3	0
 		38	0.2	0.2	0.3	0
 		39 0.2	0.2	0.3	0
-		
+
 	endcentreline
 endsurvey
 

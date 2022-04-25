@@ -1,0 +1,94 @@
+# This config file produces an detailed map where the correct way is highlighted in light yellow.
+# In the tex-map definition, the previously compiled overview map is also included.
+source ../../data/system_migovec.th
+
+input ../../layouts/detailed-p.thl
+input ../../layouts/metapost/connection_marker.thl
+input ../../layouts/metapost/label.thl
+input ../../layouts/mods.thl
+
+# From the cafe to the manger, will appear light yellow
+lookup map:m16ent_to_NCB
+	m-m16ent_to_NCB-p@system_migovec [100 92.2 66.7] "M16 entrance to NCB"
+endlookup
+
+# Generate actual map
+layout local-p
+	copy detailed-p
+	copy connection_marker
+	copy custom_label
+
+	colour map-fg map:m16ent_to_NCB # this is the crucial look-up
+	colour map-bg transparent
+	scale 1 1000
+
+	symbol-hide line label
+	symbol-show point label
+	symbol-hide point remark
+	symbol-hide line arrow
+	symbol-hide line slope
+	symbol-assign line pit MY
+	symbol-assign point water-flow MY
+	symbol-assign area water MY
+	symbol-assign line floor-step MY
+	symbol-assign area sump MY
+	symbol-assign point breakdown-choke UIS
+	symbol-hide line survey
+	symbol-hide point station
+	symbol-hide point station-name
+	scale-bar 100 m
+
+	code tex-map
+
+		\def\maplayout{
+		\legendbox{32}{2}{N}{\scalebar}
+		\legendbox{32}{4}{S}{\northarrow}
+		\legendbox{25}{73}{S}{\loadpicture{../outputs/m16ent_to_NCB_overview.pdf}}
+		}
+	endcode
+
+endlayout
+
+
+# Add here whichever map you want to appear next to the 'correct' way on
+# The correct way on appears in light yellow, the rest in white.
+source
+	map m-local-p -projection plan -title "<bf>Camp Manger to Tranquillity Base"
+
+
+		# the actual highlighted route
+		m3p@monatip11.monatip.primadona_ubend_monatip.system_migovec
+		m-m16ent_to_NCB-p@system_migovec
+		m-all-p@sad_face.monatip.primadona_ubend_monatip.system_migovec
+		m2p@hotline.M16.m2m16m18.system_migovec
+		m-all-p@lostcity.M16.m2m16m18.system_migovec
+		m4p@brezno.M16.m2m16m18.system_migovec
+		m-all-p@migcon.M16.m2m16m18.system_migovec
+		m-all-p@goodbag.M16.m2m16m18.system_migovec
+		m-all-p@baddybag.M16.m2m16m18.system_migovec
+
+		m-all-p@shordrop.M16.m2m16m18.system_migovec
+
+		m-all-p@extra_dunkel.monatip.primadona_ubend_monatip.system_migovec
+		m-all-p@rockroll.M16.m2m16m18.system_migovec
+		m-all-p@shordrop2.M16.m2m16m18.system_migovec
+		m-all-p@mower.M16.m2m16m18.system_migovec
+		m-all-p@spiny.M16.m2m16m18.system_migovec
+		m-all-p@tamoka.M16.m2m16m18.system_migovec
+		m-all-p@frogshit.M16.m2m16m18.system_migovec
+		m-all-p@batshit2.M16.m2m16m18.system_migovec
+		m-all-p@hydrant.M16.m2m16m18.system_migovec
+		m-all-p@hydrant2.M16.m2m16m18.system_migovec
+		m-all-p@offhyd.M16.m2m16m18.system_migovec
+		m-all-p@batshitb.M16.m2m16m18.system_migovec
+		m-all-p@window.M16.m2m16m18.system_migovec
+		m-all-p@galact1.M16.m2m16m18.system_migovec
+		m-all-p@galact2.M16.m2m16m18.system_migovec
+		m-all-p@galact3.M16.m2m16m18.system_migovec
+		m-all-p@galact4.M16.m2m16m18.system_migovec
+	endmap
+endsource
+
+select m-local-p
+
+export map -o ../outputs/m16ent_to_NCB.pdf -projection plan -layout local-p

@@ -1,13 +1,21 @@
 survey hotline -title "Hotline"
 	input "hotline-p.th2"
-	
+
 	map m-all-p -projection plan
+		m1p
+		m2p
+	endmap
+
+	map m1p -projection plan
 		hotline-1p
+	endmap
+
+	map m2p -projection plan
 		hotline-2p
 	endmap
-	
+
 	join hotline-1p hotline-2p
-	
+
 
 input hotline-e.th2
 
@@ -51,7 +59,7 @@ endmap
 		16      17      24.20   -       Down
 		17      18      3.85    286     +08
 	endcentreline
-	
+
 endsurvey
 
 # ; System Migovec
@@ -157,4 +165,3 @@ endsurvey
 
 
 # *end hotline
-
