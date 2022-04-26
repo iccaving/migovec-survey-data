@@ -1,4 +1,4 @@
-layout custom_scalebar_arrow
+layout custom_arrow
 	code metapost
 	    #(contributions of Thomas Holder)
 			def s_northarrow (expr rot) =
@@ -16,55 +16,57 @@ layout custom_scalebar_arrow
 			    thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1);
 		  	endgroup;
 		enddef;
+endlayout
 
+layout custom_scalebar
+		code metapost
+			def s_scalebar (expr l, units, txt) =
+				begingroup
+				 interim warningcheck:=0;
+				 tmp10:=10 * (l / Scale * cm * units / 100);
+				 tmp20:=20 * (l / Scale * cm * units / 100);
+				 tmp30:=30 * (l / Scale * cm * units / 100);
+				 tmp40:=40 * (l / Scale * cm * units / 100);
+				 tmp50:=50 * (l / Scale * cm * units / 100);
+				 #tmp60:=60 * (l / Scale * cm * units / 100);
+				 #tmp80:=80 * (l / Scale * cm * units / 100);
+				 tmp100:=100 * (l / Scale * cm * units / 100);
+				 scal10:=10 * l / 100;
+				 scal20:=20 * l / 100;
+				 scal30:=30 * l / 100;
+				 scal40:=40 * l / 100;
+				 scal50:=50 * l / 100;
+				 brht:= 5bp;
+				 lblht:= 8bp;
+				endgroup;
 
-		def s_scalebar (expr l, units, txt) =
-  		begingroup
+				pickup PenD;
 
-				interim warningcheck:=0;
-				tmp10:=10 * (l / Scale * cm * units / 100);
-				tmp20:=20 * (l / Scale * cm * units / 100);
-				tmp30:=30 * (l / Scale * cm * units / 100);
-				tmp40:=40 * (l / Scale * cm * units / 100);
-				tmp50:=50 * (l / Scale * cm * units / 100);
-				tmp100:=100 * ( Scale * cm * units);
+			  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+				draw (0,0)--(0,1.5*brht);
+				draw (tmp10,0)--(tmp10,1.5*brht);
+			  draw (tmp20,0)--(tmp20,1.5*brht);
+			  draw (tmp30,0)--(tmp30,1.5*brht);
+			  draw (tmp40,0)--(tmp40,1.5*brht);
+			  draw (tmp50,0)--(tmp50,1.5*brht);
+				draw (tmp100,0)--(tmp100,1.5*brht);
 
-				scal10:=10 * l / 100;
-				scal20:=20 * l / 100;
-				scal30:=30 * l / 100;
-				scal40:=40 * l /100;
-				scal50:=50 * l /100;
-				scal100:= l;
-				brht:= 3bp;
-				lblht:= 8bp;
-			endgroup;
+			  fill (tmp40,0)--(tmp30,0)--(tmp30,brht/2)--(tmp40,brht/2)--cycle;
+			  fill (tmp20,0)--(tmp10,0)--(tmp10,brht/2)--(tmp20,brht/2)--cycle;
+			  fill (tmp30,brht)--(tmp20,brht)--(tmp20,brht/2)--(tmp30,brht/2)--cycle;
+			  fill (tmp10,brht)--(0,brht)--(0,brht/2)--(tmp10,brht/2)--cycle;
+			  fill (tmp50,brht)--(tmp40,brht)--(tmp40,brht/2)--(tmp50,brht/2)--cycle;
+			  fill (tmp50,brht/2)--(tmp100,brht/2)--(tmp100,0)--(tmp50,0)--cycle;
 
-			pickup PenD;
-
-			draw (0,0)--(0,2*brht)--(tmp100,2*brht)--(tmp100,0)--(0,0);
-			draw (tmp10,0)--(tmp10,brht);
-			draw (tmp20,0)--(tmp20,brht);
-			draw (tmp30,0)--(tmp30,brht);
-			draw (tmp40,0)--(tmp40,brht);
-			draw (tmp50,0)--(tmp50,2*brht);
-
-			fill (tmp40,0)--(tmp30,0)--(tmp30,brht)--(tmp40,brht)--cycle;
-			fill (tmp20,0)--(tmp10,0)--(tmp10,brht)--(tmp20,brht)--cycle;
-			fill (tmp30,2*brht)--(tmp20,2*brht)--(tmp20,brht)--(tmp30,brht)--cycle;
-			fill (tmp10,2*brht)--(0,2*brht)--(0,brht)--(tmp10,brht)--cycle;
-			fill (tmp50,2*brht)--(tmp40,2*brht)--(tmp40,brht)--(tmp50,brht)--cycle;
-			fill (tmp50,brht)--(tmp100,brht)--(tmp100,0)--(tmp50,0)--cycle;
-
-  		 begingroup
-					label.top(thTEX("\size[6]" & decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
-					label.top(thTEX(decimal (scal50)),origin+(tmp50,lblht));
-  		 		label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
-  		 		label.top(thTEX(decimal (scal30)),origin+(tmp30,lblht));
-  		 		label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
-  		 		label.top(thTEX(decimal (scal10)),origin+(tmp10,lblht));
-  		 		label.top(thTEX(decimal (0)),origin+(0,lblht));
-  		 		#label.bot(thTEX("PLAN 1 : " & decimal round(Scale*100)),(tmp80+scal10,-2lblht));
-  		 	endgroup
-  		enddef;
-   endcode
+			   begingroup
+			      label.top(thTEX("\size[8]" & decimal (l) & "\thinspace" & txt),origin+(tmp100,1.5*lblht));
+			      label.top(thTEX("\size[8]" & decimal (scal50)),origin+(tmp50,1.5*lblht));
+			      label.top(thTEX("\size[8]" & decimal (scal40)),origin+(tmp40,1.5*lblht));
+			      label.top(thTEX("\size[8]" & decimal (scal30)),origin+(tmp30,1.5*lblht));
+			      label.top(thTEX("\size[8]" & decimal (scal20)),origin+(tmp20,1.5*lblht));
+			      label.top(thTEX("\size[8]" & decimal (scal10)),origin+(tmp10,1.5*lblht));
+			      label.top(thTEX("\size[8]" & decimal (0)),origin+(0,1.5*lblht));
+			    endgroup
+			enddef;
+		endcode
 endlayout

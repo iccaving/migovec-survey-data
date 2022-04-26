@@ -12,7 +12,8 @@ layout detailed-p
   copy custom_points
   copy custom_lines
   copy custom_areas
-  copy custom_scalebar_arrow
+  copy custom_arrow
+  copy custom_scalebar
 
 
   ## general statements
@@ -28,11 +29,11 @@ layout detailed-p
   symbol-assign line survey MY
   symbol-hide point passage-height
   symbol-colour point station-name [70 0 0]
- 
+
   ## water and ice
   symbol-assign area ice MY
   symbol-assign area snow MY
- 
+
   symbol-colour area ice [0 70 90]
   symbol-colour area water [0 10 70]
   symbol-colour area sump [0 10 70]
@@ -42,7 +43,7 @@ layout detailed-p
   symbol-assign point stalagmite MY
   symbol-assign point stalactite MY
   symbol-assign point pillar MY
- 
+
   symbol-colour point flowstone [85 45 10]
   symbol-color line wall:flowstone [85 45 10]
   symbol-colour point flowstone [85 45 10]
@@ -53,13 +54,13 @@ layout detailed-p
   symbol-colour point helictite [85 45 10]
   symbol-colour point soda-straw [85 45 10]
   symbol-colour point crystal [85 45 10]
- 
+
   ## sedimentary fills
   symbol-assign line rock-border MY
   symbol-assign area clay MY
   symbol-assign area sand MY
   symbol-assign area pebbles MY
-  
+
   symbol-colour area clay [65 55 10]
   symbol-colour line wall:clay [65 55 10]
   symbol-colour area sand [85 75 10]
@@ -75,5 +76,3 @@ layout detailed-p
   symbol-assign point station:temporary MY
 
 endlayout
-
-

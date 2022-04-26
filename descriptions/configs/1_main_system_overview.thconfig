@@ -20,9 +20,8 @@ endlookup
 
 # Generate overview inset
 layout overview-p
-	#copy custom_scalebar_arrow
 	symbol-hide group all
-	#copy custom_scalebar_arrow
+	#copy custom_scalebar
 	colour map-fg map:dark # a crucial look up
 	colour map-bg transparent
 	transparency off
