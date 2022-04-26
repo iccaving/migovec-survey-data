@@ -1,19 +1,19 @@
 layout custom_scalebar_arrow
 	code metapost
 	    #(contributions of Thomas Holder)
-		def s_northarrow (expr rot) =
+			def s_northarrow (expr rot) =
 		  	begingroup
-		    	interim defaultscale:=0.5; % scale your north arrow here
-		    	pickup pencircle scaled (0.08cm * defaultscale);
-		    	thdraw (-.4cm* defaultscale,-1.4cm* defaultscale)--(0,2.8cm* defaultscale)--(.4cm* defaultscale,-1.4cm* defaultscale)--cycle;
-		    	p:=fullcircle scaled (1.6cm* defaultscale);
-		    	thfill p withcolor (1,1,1);
-					thdraw p withcolor(0,0,0);
-		    	p:=(0.95cm * defaultscale,0)--(0.65cm* defaultscale,0);
-		    	thdraw p; thdraw p xscaled -1;
-		    	pickup pencircle scaled (0.12cm * defaultscale);
-		    	p:=(0.28cm* defaultscale,0.42cm* defaultscale);
-		    	thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1);
+			    interim defaultscale:=0.35; % scale your north arrow here
+			    T:=identity scaled defaultscale rotated -rot;
+			    pickup pencircle scaled (0.08cm * defaultscale);
+			    thdraw (-.4cm,-1.4cm)--(0,2.8cm)--(.4cm,-1.4cm)--cycle;
+			    p:=fullcircle scaled 1.6cm;
+			    thfill p withcolor(1,1,1); thdraw p;
+			    p:=(0.95cm,0)--(0.65cm,0);
+			    thdraw p; thdraw p xscaled -1;
+			    pickup pencircle scaled (0.12cm * defaultscale);
+			    p:=(0.28cm,0.42cm);
+			    thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1);
 		  	endgroup;
 		enddef;
 
@@ -27,7 +27,7 @@ layout custom_scalebar_arrow
 				tmp30:=30 * (l / Scale * cm * units / 100);
 				tmp40:=40 * (l / Scale * cm * units / 100);
 				tmp50:=50 * (l / Scale * cm * units / 100);
-				tmp100:=100 * (l / Scale * cm * units / 100);
+				tmp100:=100 * ( Scale * cm * units);
 
 				scal10:=10 * l / 100;
 				scal20:=20 * l / 100;
@@ -56,7 +56,7 @@ layout custom_scalebar_arrow
 			fill (tmp50,brht)--(tmp100,brht)--(tmp100,0)--(tmp50,0)--cycle;
 
   		 begingroup
-					label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+					label.top(thTEX("\size[6]" & decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
 					label.top(thTEX(decimal (scal50)),origin+(tmp50,lblht));
   		 		label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
   		 		label.top(thTEX(decimal (scal30)),origin+(tmp30,lblht));

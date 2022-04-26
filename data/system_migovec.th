@@ -10,16 +10,18 @@
 encoding  utf-8
 
 survey system_migovec -title "System Migovec"
-	
+
 	#input the map definitions
 	input "./system_migovec-p.thm" #plan view
 	input "./system_migovec-e.thm" #extended elevation view
-	
+
+	input "./system_migovec-routes-p.thm" # some highlighed routes
+
 	# input the individual cave data files
 	input "./primadona_ubend_monatip.th"
 	input "./m2m16m18.th"
 	input "./vrtnarija_vilinska.th"
-	
+
 	centreline
 		cs epsg:3794
 		#entrance fixes (EPSG:3901)
@@ -32,12 +34,12 @@ survey system_migovec -title "System Migovec"
 		#M16
 		station 1@entrance.M16.m2m16m18 entrance
 		fix 1@entrance.M16.m2m16m18 404697 124331 1852
-		#fix 1@entrance.M16.m2m16m18 405073 123841 1852  # old GK? 
+		#fix 1@entrance.M16.m2m16m18 405073 123841 1852  # old GK?
 
 		#Primadona
 		station 35@prima1.primadona.primadona_ubend_monatip entrance
 		fix 35@prima1.primadona.primadona_ubend_monatip 404188 124291 1727
-		#fix 35@prima1.primadona.primadona_ubend_monatip 404561 123804 1727 # old GK? 
+		#fix 35@prima1.primadona.primadona_ubend_monatip 404561 123804 1727 # old GK?
 
 		#Vrtnarija
 		station 0@bclent2.vrtnarija.vrtnarija_vilinska entrance
@@ -53,11 +55,11 @@ survey system_migovec -title "System Migovec"
 		#fix 5@ubend2.ubend.primadona_ubend_monatip 404220 124292 1779
 		#Belladonna
 		station 3@belladonna.primadona_ubend_monatip entrance
-		
+
 
 		#Vilinska Jama
 		station 1@vilinent.vilinska.vrtnarija_vilinska entrance
-		#fix 1@vilinent.vilinska.vrtnarija_vilinska 404793 124544 1779	
+		#fix 1@vilinent.vilinska.vrtnarija_vilinska 404793 124544 1779
 
 		#M18
 		station 26@torn.M18.m2m16m18 entrance
@@ -66,26 +68,25 @@ survey system_migovec -title "System Migovec"
 		fix 1@sifon.M16.m2m16m18 404174.93 124162.49 892.67
 
 	endcentreline
-	
-	
+
+
 
 	# EQUATE commands for CONNECTIONS
 	# NCB and MONATIP
 	equate 6@gallery.M18.m2m16m18 40@monatip11.monatip.primadona_ubend_monatip
-	
+
 	#Wishing Well and Mig Country
 	equate 4@wishing_well2.monatip.primadona_ubend_monatip 1@migconleft.M16.m2m16m18
-	
+
 	# Waterloo and Dreams for the Soul
 	equate 1@dreamsforthesoul.vrtnarija.vrtnarija_vilinska 13@waterloo.M16.m2m16m18
-	
+
 	# JOIN commands for the sketches at connection points
 	# NCB and MONATIP
-	
+
 	join dreamsforthesoul-4p@dreamsforthesoul.vrtnarija.vrtnarija_vilinska waterloo-1p@waterloo.M16.m2m16m18
-	
+
 	#Wishing Well and Mig Country
 	join wishing_well2-1p@wishing_well2.monatip.primadona_ubend_monatip migcondown-1p@migcondown.M16.m2m16m18
 	join hole@migcondown.M16.m2m16m18 hole2@wishing_well2.monatip.primadona_ubend_monatip #Mig country pit over 2 scraps
 endsurvey
-

@@ -1,0 +1,49 @@
+# This config file produces an overview map where only the outline of the passage is shown.
+# The look-up highlights a map in red, whilst rendering everything else in grey.
+source ../../data/system_migovec.th
+
+input ../../layouts/detailed-p.thl
+input ../../layouts/metapost/connection_marker.thl
+input ../../layouts/metapost/label.thl
+input ../../layouts/metapost/scalebar_arrow.thl
+
+input ../../layouts/mods.thl
+
+lookup map:dark
+  m-all-p@primadona.primadona_ubend_monatip.system_migovec [100 35 50] "Primadona"
+  m-all-p@belladonna.primadona_ubend_monatip.system_migovec [100 35 50] ""
+  m-all-p@ubend.primadona_ubend_monatip.system_migovec [100 35 50] ""
+  m-all-p@monatip.primadona_ubend_monatip.system_migovec [40 45 100] "Monatip"
+  m-all-p@vrtnarija_vilinska.system_migovec [90 72  33] "Vrtnarija"
+  m-all-p@m2m16m18.system_migovec [33 100 36] "M2-M16-M18"
+endlookup
+
+# Generate overview inset
+layout overview-p
+	#copy custom_scalebar_arrow
+	symbol-hide group all
+	#copy custom_scalebar_arrow
+	colour map-fg map:dark # a crucial look up
+	colour map-bg transparent
+	transparency off
+	scale 1 10000
+	base-scale 1 2000
+	map-comment "Tolminski Migovec cave system<br>Tolmin, Julian Alps, Slovenia<br>Explored by JSPDT/ICCC 1974--2021"
+	map-header 0 0 off
+	scale-bar 800 m
+
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{0}{7}{SW}{\size[12]\bf \the\cavename}
+		\legendbox{0}{5}{NW}{\size[10]\the\comment}
+		\legendbox{80}{87}{S}{\northarrow}
+		\legendbox{80}{86}{N}{\scalebar}
+		}
+	endcode
+endlayout
+
+maps-offset off
+select m-all-p@system_migovec
+
+export map -o ../outputs/system_overview.pdf -projection plan -layout overview-p

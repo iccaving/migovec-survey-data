@@ -17,7 +17,6 @@ endlookup
 layout overview-p
 
 	symbol-hide group all
-	#copy custom_scalebar_arrow
 	colour map-fg map:m16ent_to_NCB_overview # this is the crucial look-up
 	colour map-bg transparent
 	scale 1 10000
