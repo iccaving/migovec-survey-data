@@ -33,10 +33,10 @@ layout base-e
 	code tex-map
 		\framethickness=0.5mm
 		\def\maplayout{
-		\legendbox{1}{99}{NW}{\size[60]\the\cavename}
+		\legendbox{1}{102}{NW}{\size[60]\the\cavename}
 		\legendbox{1}{94}{NW}{\size[10]\the\comment}
 		\legendbox{1}{12}{NW}{\scalebar}
-		\legendbox{99}{94}{NE}{\size[10]\the\comment}
+		\legendbox{99}{99}{NE}{\size[10]\the\comment}
 		\legendbox{99}{12}{NE}{\scalebar}
 		}
 	endcode

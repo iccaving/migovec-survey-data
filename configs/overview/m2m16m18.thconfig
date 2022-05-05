@@ -28,15 +28,15 @@ layout plan
 	copy base-p
 	copy show-centreline
 	copy colour-by-new
-	
+
 	symbol-assign point water-flow MY
 	symbol-colour point water-flow [10 10 80]
 	scale 1 2000
 	symbol-show line survey
 	symbol-show point station
 	colour map-fg [95 95 82]
-	
-	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
+
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M-2 (Kavkna jama)<br>kat. št.: 4465<br><br>M-18 (jama strgane srajce)<br>kat. št.: 8284<br><br>M-16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
 	code texmap
 		\framethickness=0.5mm
 		\def\maplayout{
@@ -46,7 +46,7 @@ layout plan
 		\legendbox{30}{150}{NW}{\northarrow}
 		}
 	endcode
-	
+
 	code metapost
 		set_label_level("1");
 	endcode
@@ -77,21 +77,21 @@ layout ee
 	copy colour-by-new
 	symbol-assign point water-flow MY
 	symbol-colour point water-flow [10 10 80]
-	
+
 	grid-size 10 10 100 m
-	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (jama strgane strajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2017<br>Natančmost meritev IV/B<br><br>M-2 (Kavkna jama)<br>kat. št.: 4465<br><br>M-18 (jama strgane srajce)<br>kat. št.: 8284<br><br>M-16<br>kat. št.: 6001<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2017<br>BCRA grade 4-5b<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br>"
 	code tex-map
 		\def\maplayout{
 		\legendbox{1}{99}{NW}{\the\cavename}
 		\legendbox{1}{97}{NW}{\size[10]\the\comment}
 		\legendbox{1}{80}{NW}{\scalebar}	}
 	endcode
-	
+
 	scale 1 4000
 	colour map-fg [95 95 82]
 	grid-size 10 10 100 m
 	map-header 0 0 off
-	
+
 	code metapost
 		set_label_level("2");
 	endcode

@@ -4,8 +4,9 @@ encoding  utf-8
 
 
 scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
-	
-	point -303.8774 295.1595 label -attr level 1 -scale l -text "M18 Jama Strgane Srajce" -align tr  -attr style 6
+
+	point -303.8774 295.1595 label -attr level 1 -scale l -text "<lang:sl>M-18 Jama strgane srajce<lang:en>M-18 Torn T-Shirt" -align tr  -attr style 6
+
 	line wall
 		121.4763 -222.0664
 		140.442 -222.3064
@@ -33,7 +34,7 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		33.9513 -49.5689
 		44.4762 -45.4947
 	endline
-	
+
 	line wall
 		77.3031 -132.2795
 		79.9439 -131.3192
@@ -54,7 +55,7 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		131.5593 -186.7758 130.599 -205.2613 130.599 -205.2613
 		117.155 -205.9816
 	endline
-	
+
 	point -203.4374 248.6774 entrance -orientation 165
 	line wall
 		-34.6303 154.4783
@@ -70,7 +71,7 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		-153.4597 220.0042 -156.8549 220.6833 -158.5524 221.7018
 		-160.25 222.7203 -171.1144 226.455 -171.1144 226.455
 	endline
-	
+
 	line wall
 		49.2293 12.9015
 		42.4391 10.5249
@@ -92,10 +93,11 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		30.5561 100.8353 1.3581 114.7553 -5.7717 115.7738
 		-12.9015 116.7924 -33.6118 123.0733 -33.6118 123.0733
 		-41.5903 127.8265
+		altitude .
 		-41.5903 127.8265 -42.3976 132.1618 -41.1891 133.7201
 		-40.0217 135.2254 -36.8371 134.4471 -36.8371 134.4471
 	endline
-	
+
 	line wall
 		42.7786 -40.402
 		34.2908 -43.4576
@@ -105,7 +107,7 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		39.723 3.3951
 		49.2293 7.1298
 	endline
-	
+
 	line wall -subtype blocks
 		5.4322 -98.7982
 		6.1112 -100.1563 32.2537 -108.6441 32.2537 -108.6441
@@ -116,7 +118,7 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		77.0694 -132.0704
 		77.0694 -132.0704
 	endline
-	
+
 	line wall
 		-11.5434 95.0636
 		-4.1754 91.7326 6.4507 79.446 6.1112 78.4274
@@ -132,7 +134,7 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		1.6976 -69.9396 2.3766 -85.8967 3.3951 -87.5943
 		4.4137 -89.2918 4.7532 -97.4401 5.4322 -98.7982
 	endline
-	
+
 	line wall -subtype blocks
 		-71.8069 110.3416
 		-71.8069 108.9836 -64.9303 106.8911 -63.9981 106.0977
@@ -141,7 +143,7 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		-22.4078 96.0821
 		-22.4078 96.0821 -14.8578 96.562 -11.5434 95.0636
 	endline
-	
+
 	line wall
 		-70.7034 171.6237
 		-69.3453 171.2842 -71.8069 152.7807 -72.1464 150.0646
@@ -149,7 +151,7 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		-72.4859 138.1816 -73.165 124.6011 -73.165 124.6011
 		-73.165 124.6011 -71.8069 111.6997 -71.8069 110.3416
 	endline
-	
+
 	line wall -subtype blocks
 		-176.3768 212.1954
 		-159.571 206.4237
@@ -163,7 +165,7 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 		-80.804 175.8676 -77.7484 174.17 -76.0508 173.8305
 		-74.3533 173.491 -72.0615 171.9632 -70.7035 171.6237
 	endline
-	
+
 	point -175.92 218.86 station -name 26
 	point -154.51 208.86 station -name 25
 	point -145.07 208.54 station -name 24
@@ -191,4 +193,3 @@ scrap torn-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 	point 119.81 -214.92 station -name 2
 	point 99.71 -218.86 station -name 1
 endscrap
-

@@ -31,7 +31,7 @@ layout base-p
 	code tex-map
 		\framethickness=0.5mm
 		\def\maplayout{
-		\legendbox{1}{79}{W}{\size[26]\the\cavename}
+		\legendbox{1}{82}{W}{\size[26]\the\cavename}
 		\legendbox{1}{75}{NW}{\size[10]\the\comment}
 		\legendbox{25}{5}{N}{\scalebar}
 		\legendbox{25}{7}{S}{\northarrow}
