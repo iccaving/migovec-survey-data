@@ -28,13 +28,28 @@ layout base-p
 	copy connection_marker
 	copy custom_label
 
+	scale-bar 200 m
 	code tex-map
+
+		\def\gridspecs{
+		\par \bf Length:\ss{} 44.1 km
+		\par \bf Depth:\ss{} 965 m
+		\par \bf Meridian convergence: \ss \the\gridconv{}$^{\circ}$
+  	\par \bf Coordinate system: \ss \the\outcsname{} (\the\outcscode{})}
+
+		\def\bigcomment{
+		\par \bf Length:\ss{} 44.1 km
+		\par \bf Depth:\ss{} 965 m
+		\par\par \the\comment{}
+		}
 		\framethickness=0.5mm
 		\def\maplayout{
-		\legendbox{1}{82}{W}{\size[26]\the\cavename}
-		\legendbox{1}{75}{NW}{\size[10]\the\comment}
-		\legendbox{25}{5}{N}{\scalebar}
-		\legendbox{25}{7}{S}{\northarrow}
+
+		\legendbox{1}{82}{W}{\size[26]\the\cavename{}}
+		\legendbox{1}{79}{NW}{\bigcomment{}}
+		\legendbox{15}{5}{NW}{\scalebar{}}
+		\legendbox{25}{7}{S}{\northarrow{}}
+		\legendbox{15}{2}{SW}{\size[10]\gridspecs{}}
 		}
 	endcode
 

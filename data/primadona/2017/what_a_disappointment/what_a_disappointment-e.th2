@@ -4,8 +4,8 @@ encoding  utf-8
 
 
 scrap what_a_disappointment-1e -scale [0.0 0.0 931 1024 0.0 0.0 105 116] -projection extended
-	
-	point 540.2197 30.3882 label -text "What a Disappointment!" -align bl -scale s
+
+	point 540.2197 30.3882 label -text "What a Disappointment!" -align bl -scale s -attr level 2
 	line wall -subtype clay
 		299.7399 611.52
 		299.7399 611.52 322.5531 603.9156 322.5531 601.3808
@@ -34,7 +34,7 @@ scrap what_a_disappointment-1e -scale [0.0 0.0 931 1024 0.0 0.0 105 116] -projec
 		903.0218 -39.2894
 		906.824 -71.608
 	endline
-	
+
 	line wall
 		429.6483 615.9559
 		416.9743 602.0145
@@ -71,7 +71,7 @@ scrap what_a_disappointment-1e -scale [0.0 0.0 931 1024 0.0 0.0 105 116] -projec
 		947.3808 -55.1319 946.1134 -62.1026 946.7471 -64.6374
 		947.3808 -67.1721 948.0145 -68.4395 948.0145 -68.4395
 	endline
-	
+
 	point 301.1186 642.1176 station -name 9
 	point 334.2775 634.9481 station -name 8
 	point 420.7765 288.3333 station -name 7
@@ -82,4 +82,3 @@ scrap what_a_disappointment-1e -scale [0.0 0.0 931 1024 0.0 0.0 105 116] -projec
 	point 929.0035 -64.0036 station -name 2
 	point 926.4687 -129.2747 station -name 1
 endscrap
-

@@ -4,8 +4,8 @@ encoding  utf-8
 
 
 scrap tight_and_scrotty-1e -scale [331.0 -735.0 534.0 -736.0 0.0 0.0 8 0.0 m] -projection extended
-	
-	point 871.4604 497.589 label -text "Tight and Scrotty" -align br -scale m
+
+	point 871.4604 497.589 label -text "Tight and Scrotty" -align br -scale l -attr level 1
 	line wall
 		884.376 536.3356
 		884.376 536.3356 875.539 584.599 876.8986 588.6776
@@ -18,7 +18,7 @@ scrap tight_and_scrotty-1e -scale [331.0 -735.0 534.0 -736.0 0.0 0.0 8 0.0 m] -p
 		1005.696 677.9414
 		1021.6888 687.2437
 	endline
-	
+
 	line wall -subtype blocks
 		630.1434 526.8189
 		638.3006 541.094
@@ -28,7 +28,7 @@ scrap tight_and_scrotty-1e -scale [331.0 -735.0 534.0 -736.0 0.0 0.0 8 0.0 m] -p
 		779.0122 538.3749 792.6075 537.0154 798.0457 534.9761
 		803.4838 532.9368 884.376 536.3356 884.376 536.3356
 	endline
-	
+
 	line wall
 		386.787 394.9442
 		386.787 394.9442 388.8263 407.18 390.1859 411.2586
@@ -48,7 +48,7 @@ scrap tight_and_scrotty-1e -scale [331.0 -735.0 534.0 -736.0 0.0 0.0 8 0.0 m] -p
 		626.0648 448.6458 628.7838 473.1174 628.7838 473.1174
 		631.5029 486.7127
 	endline
-	
+
 	line wall
 		550.6107 638.3006
 		550.6107 638.3006 536.3356 622.6659 540.4142 615.8683
@@ -64,7 +64,7 @@ scrap tight_and_scrotty-1e -scale [331.0 -735.0 534.0 -736.0 0.0 0.0 8 0.0 m] -p
 		369.1131 476.5162 349.3999 471.0781 343.9618 467.6792
 		338.5236 464.2804 328.3271 455.4434 328.3271 455.4434
 	endline
-	
+
 	line wall
 		913.266 703.2183
 		913.266 703.2183 897.9713 703.2183 894.5725 702.8784
@@ -91,7 +91,7 @@ scrap tight_and_scrotty-1e -scale [331.0 -735.0 534.0 -736.0 0.0 0.0 8 0.0 m] -p
 		563.5263 658.6936
 		550.6107 638.3006
 	endline
-	
+
 	point 942.8359 709.3362 station -name 9
 	point 999.7663 683.675 station -name 8
 	point 854.8669 683.8695 station -name 7
@@ -102,4 +102,3 @@ scrap tight_and_scrotty-1e -scale [331.0 -735.0 534.0 -736.0 0.0 0.0 8 0.0 m] -p
 	point 397.7523 456.8743 station -name 2
 	point 269.5273 61.179 station -name 1
 endscrap
-

@@ -5,7 +5,7 @@ encoding  utf-8
 ##XTHERION## xth_me_image_insert {136.000000 1 1.0} {4804.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/primadona/2002/milanova/milanova_extend.gif" 0 {}
 
 scrap milanova_e1 -scale [1386.0 -3971.0 2647.0 -3974.0 0.0 0.0 80 0.0 m] -projection extended
-	
+
 	line wall -id milanova_l2
 		1936.8322 3411.9888
 		1936.8322 3411.9888 1920.4244 3387.8105 1917.476 3383.5518
@@ -19,7 +19,7 @@ scrap milanova_e1 -scale [1386.0 -3971.0 2647.0 -3974.0 0.0 0.0 80 0.0 m] -proje
 		1830.9212 2979.8798 1833.7009 2898.3408 1829.068 2887.2219
 		1824.4351 2876.1029 1787.3719 2841.8195 1787.3719 2841.8195
 	endline
-	
+
 	line wall
 		1871.6907 2783.445
 		1874.0071 2786.2247 1900.8779 2800.1234 1901.3412 2802.4398
@@ -43,7 +43,7 @@ scrap milanova_e1 -scale [1386.0 -3971.0 2647.0 -3974.0 0.0 0.0 80 0.0 m] -proje
 		2146.4215 2600.4455 2151.5177 2590.2531 2150.5911 2581.4506
 		2149.6645 2572.6481 2154.4382 2556.0 2154.4382 2556.0
 	endline
-	
+
 	line wall -id milanova_l1
 		2252.4382 2570.0
 		2252.4382 2570.0 2249.9248 2631.901 2249.9248 2635.8321
@@ -61,18 +61,18 @@ scrap milanova_e1 -scale [1386.0 -3971.0 2647.0 -3974.0 0.0 0.0 80 0.0 m] -proje
 		2168.5779 3333.2659 2152.1981 3358.8183 2152.1981 3358.8183
 		2124.5998 3405.001
 	endline
-	
+
 	line wall -subtype invisible
 		2162.4382 2484.0
 		2248.4382 2482.0
 	endline
-	
-	point 2261.7182 3002.7387 label -text "Donji Milanovac" -align r
+
+	point 2261.7182 3002.7387 label -text "Donji<br>Milanovac" -align tr -attr level 1 -scale l
 	line wall -subtype invisible
 		2124.5998 3405.001
 		1936.8322 3411.9888
 	endline
-	
+
 	point 2206.4382 2776.0001 water-flow -orientation 179.7
 	point 2170.4382 3136.0 water-flow -orientation 179.7
 	point 2079.9397 3384.0559 water-flow -orientation 179.7
@@ -81,19 +81,19 @@ scrap milanova_e1 -scale [1386.0 -3971.0 2647.0 -3974.0 0.0 0.0 80 0.0 m] -proje
 		2161.4136 2493.2213
 		2162.4382 2484.0
 	endline
-	
+
 	line wall -subtype presumed
 		2248.4382 2482.0
 		2252.4382 2570.0
 	endline
-	
+
 	point 1868.4383 2830.0 station -name 2
 	point 2036.4383 3502.0 station -name 1
 endscrap
 
 
 scrap milanova_e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
-	
+
 	line wall
 		1787.3719 2841.8195
 		1787.3719 2841.8195 1734.5569 2820.5081 1731.7772 2818.655
@@ -115,7 +115,7 @@ scrap milanova_e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 		1398.2085 2546.2406 1389.8693 2539.7545 1386.163 2537.9014
 		1382.4567 2536.0482 1362.7809 2528.4561 1362.7809 2528.4561
 	endline
-	
+
 	line wall
 		1370.7338 2490.7907
 		1370.7338 2490.7907 1383.1075 2490.3798 1384.4179 2490.3798
@@ -132,7 +132,7 @@ scrap milanova_e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 		1394.5734 2383.5837 1395.4816 2351.784 1395.4816 2351.784
 		1455.7717 2354.501
 	endline
-	
+
 	line wall
 		1455.7717 2354.501
 		1455.7717 2354.501 1456.1198 2378.0664 1455.6565 2391.5018
@@ -165,12 +165,12 @@ scrap milanova_e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 		1871.2274 2748.2349 1869.8375 2754.2577 1868.9109 2756.1109
 		1867.9844 2757.964 1869.3742 2780.6652 1871.6907 2783.445
 	endline
-	
+
 	line wall -subtype invisible
 		1362.7809 2528.4561
 		1370.7338 2490.7907
 	endline
-	
+
 	point 1440.4383 2364.0 station -name 9
 	point 1444.4383 2528.0 station -name 8
 	point 1500.4383 2582.0 station -name 7
@@ -179,4 +179,3 @@ scrap milanova_e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 	point 1660.4383 2670.0 station -name 4
 	point 1700.4383 2686.0 station -name 3
 endscrap
-

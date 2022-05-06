@@ -30,14 +30,23 @@ layout base-e
 	copy connection_marker
 	copy custom_label
 
+	scale-bar 200 m
 	code tex-map
+
+
+	\def\bigcomment{
+	\par \bf Length:\ss{} 44.1 km
+	\par \bf Depth:\ss{} 965 m
+	\par\par \the\comment{}
+	}
+
 		\framethickness=0.5mm
 		\def\maplayout{
-		\legendbox{1}{102}{NW}{\size[60]\the\cavename}
-		\legendbox{1}{94}{NW}{\size[10]\the\comment}
-		\legendbox{1}{12}{NW}{\scalebar}
-		\legendbox{99}{99}{NE}{\size[10]\the\comment}
-		\legendbox{99}{12}{NE}{\scalebar}
+		\legendbox{1}{102}{NW}{\size[60]\the\cavename{}}
+		\legendbox{1}{14}{SW}{\size[13]\bigcomment{}}
+		\legendbox{1}{12}{NW}{\scalebar{}}
+		\legendbox{99}{99}{NE}{\size[13]\bigcomment{}}
+		\legendbox{99}{12}{NE}{\scalebar{}}
 		}
 	endcode
 

@@ -4,22 +4,22 @@ encoding  utf-8
 
 
 scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extended
-	
+
 	line wall -subtype invisible
 		4071.6483 3058.1729
 		3781.8022 3048.3142
 	endline
-	
+
 	line wall -subtype invisible
 		1996.2845 358.2674
 		2144.5054 369.0357
 	endline
-	
+
 	line wall -subtype invisible
 		4141.4478 1131.7535
 		4172.6914 1221.7309
 	endline
-	
+
 	line wall
 		3781.8022 3048.3142
 		3762.0848 2924.0944
@@ -27,9 +27,9 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3695.0455 2841.2812 3691.102 2821.5638 3685.1868 2790.0159
 		3679.2716 2758.468 3659.5541 2679.5983 3653.6389 2669.7396
 	endline
-	
-	point 2531.9262 2197.3109 label -text Alkatraz -align tl -scale m
-	
+
+	point 2531.9262 2197.3109 label -text Alkatraz -align tl -scale l -attr level 1
+
 	line wall
 		1998.76 1537.31
 		1989.52 1521.65 1986.21 1506.51 1988.73 1493.42
@@ -45,7 +45,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1799.67 1275.28 1793.59 1265.69 1784.39 1257.75
 		1781.06 1254.88 1777.42 1252.38 1773.93 1249.69
 	endline
-	
+
 	line wall
 		1773.93 1249.69
 		1744.0 1231.98 1719.13 1234.55 1709.52 1218.89
@@ -77,7 +77,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1575.29 798.83 1568.46 788.27 1562.87 778.28
 		1556.4 766.72 1554.12 751.15 1550.0 738.61
 	endline
-	
+
 	line wall
 		1550.0 738.61
 		1536.96 721.49 1533.65 711.85 1527.73 704.59
@@ -90,7 +90,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1445.28 569.95 1431.09 572.06 1422.72 572.45
 		1400.89 573.48 1376.21 578.49 1355.17 569.79
 	endline
-	
+
 	line wall:sand
 		1355.17 569.79
 		1373.48 562.97 1394.3 550.27 1413.19 540.14
@@ -99,7 +99,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1438.15 528.85 1452.57 519.69 1453.65 518.99
 		1463.35 512.63 1474.54 508.03 1484.04 501.45
 	endline
-	
+
 	line wall:blocks
 		1484.04 501.45
 		1494.39 481.34 1485.37 466.25 1486.49 451.67
@@ -107,7 +107,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1490.58 418.66 1488.51 405.16 1495.24 402.58
 		1508.59 397.47 1524.9 401.64 1538.4 396.42
 	endline
-	
+
 	line wall:blocks
 		1538.4 396.42
 		1570.23 394.26 1588.47 397.13 1601.04 391.36
@@ -123,7 +123,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1975.29 441.54 1977.94 408.49 1990.31 400.51
 		1995.88 396.92 1993.0856 358.1569 1996.2856 358.2669
 	endline
-	
+
 	line wall:blocks
 		2144.5054 369.0357
 		2165.4254 384.6157 2148.71 463.13 2173.26 470.81
@@ -140,7 +140,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2583.18 435.18 2614.44 445.72 2629.05 453.5
 		2650.03 464.66 2668.74 481.7 2686.91 498.03
 	endline
-	
+
 	line wall:blocks
 		2686.91 498.03
 		2735.34 510.9 2756.41 508.09 2776.88 505.82
@@ -151,7 +151,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2891.91 528.88 2903.79 535.51 2916.39 537.35
 		2955.15 543.01 2996.02 540.67 3034.81 536.8
 	endline
-	
+
 	line wall:blocks
 		3034.81 536.8
 		3067.87 549.89 3084.33 561.99 3102.37 568.82
@@ -165,7 +165,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3237.19 638.02 3229.56 637.22 3228.87 641.69
 		3227.85 648.25 3234.38 653.76 3237.14 659.8
 	endline
-	
+
 	line wall:blocks
 		3237.14 659.8
 		3273.97 671.88 3280.78 671.89 3287.56 672.35
@@ -183,7 +183,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3577.48 844.96 3585.24 857.8 3589.16 869.32
 		3598.3 896.22 3597.8 928.33 3597.8 956.43
 	endline
-	
+
 	line wall:blocks
 		3597.8 956.43
 		3658.85 965.01 3697.15 963.94 3718.55 987.09
@@ -204,7 +204,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3993.88 1126.97 3999.41 1126.78 4004.8 1127.72
 		4010.0 1128.62 4015.01 1130.41 4020.12 1131.75
 	endline
-	
+
 	line wall:blocks
 		4020.12 1131.75
 		4046.44 1128.79 4049.06 1133.52 4051.56 1138.31
@@ -212,7 +212,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		4066.1 1163.78 4078.3 1154.49 4081.91 1153.45
 		4096.31 1149.3 4127.1277 1137.1333 4141.4477 1131.7533
 	endline
-	
+
 	line wall
 		4172.6914 1221.7309
 		4165.4714 1231.3609 4127.577 1278.8223 4123.167 1290.6023
@@ -236,7 +236,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		4129.7 2141.59 4146.45 2164.76 4147.66 2189.89
 		4148.08 2198.44 4147.66 2207.0 4147.66 2215.56
 	endline
-	
+
 	line wall
 		4147.66 2215.56
 		4127.91 2266.49 4127.39 2305.18 4125.89 2342.63
@@ -250,7 +250,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		4063.7614 2839.3094 4063.7614 2894.5182 4065.7331 2900.4335
 		4067.7049 2906.3487 4071.6483 3058.1729 4071.6483 3058.1729
 	endline
-	
+
 	line wall
 		3653.6389 2669.7396
 		3644.0189 2668.9496 3586.09 2609.7834 3576.44 2609.3434
@@ -265,7 +265,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3196.3 2369.82 3179.37 2333.32 3172.21 2307.43
 		3168.87 2295.35 3175.34 2277.84 3165.18 2270.49
 	endline
-	
+
 	line wall
 		3165.18 2270.49
 		3122.51 2248.93 3113.89 2238.32 3110.88 2225.95
@@ -279,7 +279,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2863.95 2042.84 2853.42 2041.32 2845.02 2046.03
 		2788.45 2106.91
 	endline
-	
+
 	line wall:presumed -outline out
 		2769.89 2102.54
 		2728.2 2102.54 2629.16 2078.47 2589.68 2060.59
@@ -300,7 +300,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2111.17 1653.5 2106.37 1642.95 2099.22 1634.23
 		2091.76 1625.13 2067.02 1600.09 2056.87 1589.7
 	endline
-	
+
 	line wall
 		2056.87 1589.7
 		2054.2 1590.77 2049.5047 1577.4211 2049.5047 1577.4211
@@ -308,12 +308,12 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2033.7053 1562.5371 2034.73 1554.73 2029.77 1550.66
 		2021.4 1543.81 2008.55 1541.55 1998.76 1537.31
 	endline
-	
+
 	line wall
 		2788.45 2106.91
 		2782.1 2106.94 2775.49 2105.55 2769.89 2102.54
 	endline
-	
+
 	line wall -outline in
 		2704.46 1929.77
 		2708.39 1909.99
@@ -350,7 +350,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2176.47 1402.89 2172.41 1395.82 2166.94 1396.66
 		2162.92 1397.29 2159.63 1400.61 2156.95 1403.68
 	endline
-	
+
 	line wall:presumed -outline in
 		2156.95 1403.68
 		2176.2 1487.73 2167.54 1521.9 2183.35 1544.1
@@ -364,7 +364,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2556.57 1877.27 2567.71 1915.06 2596.68 1930.49
 		2635.98 1951.42 2684.0376 1946.201 2704.46 1929.77
 	endline
-	
+
 	line rock-border -close on
 		1874.41 416.55
 		1874.895 426.91
@@ -381,7 +381,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1841.64 420.65
 		1858.025 418.6
 	endline
-	
+
 	line rock-border -close on
 		1835.36 407.71
 		1828.965 410.56
@@ -398,7 +398,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1779.1 385.7
 		1807.23 396.705
 	endline
-	
+
 	line rock-border -close on
 		2272.45 458.29
 		2269.525 473.95
@@ -419,7 +419,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2163.02 451.47
 		2217.735 454.88
 	endline
-	
+
 	line rock-border -close on
 		2655.98 480.39
 		2647.555 496.805
@@ -432,7 +432,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2625.13 476.87
 		2640.555 478.63
 	endline
-	
+
 	line rock-border -close on
 		2610.28 520.01
 		2602.57 529.965
@@ -443,7 +443,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2595.17 520.65
 		2602.725 520.33
 	endline
-	
+
 	line rock-border -close on
 		2598.1 499.69
 		2589.625 515.9
@@ -460,7 +460,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2574.8 495.57
 		2586.45 497.63
 	endline
-	
+
 	line rock-border -close on
 		2524.99 536.27
 		2508.19 533.775
@@ -473,7 +473,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2521.9 498.66
 		2523.445 517.465
 	endline
-	
+
 	line rock-border -close on
 		2469.14 508.84
 		2453.91 505.79
@@ -486,7 +486,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2483.36 480.39
 		2476.25 494.615
 	endline
-	
+
 	line rock-border -close on
 		2420.41 501.73
 		2413.905 512.395
@@ -499,7 +499,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2423.5 488.38
 		2421.955 495.055
 	endline
-	
+
 	line rock-border -close on
 		2377.76 489.53
 		2362.12 488.465
@@ -512,7 +512,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2421.42 472.77
 		2399.59 481.15
 	endline
-	
+
 	line rock-border -close on
 		3262.85 621.13
 		3236.665 630.985
@@ -527,7 +527,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3191.01 573.97
 		3226.93 597.55
 	endline
-	
+
 	line rock-border -close on
 		3158.76 551.69
 		3157.52 567.5
@@ -542,7 +542,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3078.21 552.93
 		3118.485 552.31
 	endline
-	
+
 	line rock-border -close on
 		3083.17 534.33
 		3075.735 546.73
@@ -557,7 +557,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2998.93 516.81
 		3041.05 525.57
 	endline
-	
+
 	line rock-border -close on
 		2988.99 513.25
 		2984.815 533.625
@@ -572,7 +572,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2889.85 500.85
 		2939.42 507.05
 	endline
-	
+
 	line rock-border -close on
 		2870.02 498.37
 		2875.6 524.72
@@ -589,7 +589,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2809.3 510.77
 		2839.66 504.57
 	endline
-	
+
 	line rock-border -close on
 		3745.57 1138.66
 		3745.57 1167.195
@@ -604,7 +604,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3576.2 1175.51
 		3660.885 1157.085
 	endline
-	
+
 	line rock-border -close on
 		3684.82 1088.93
 		3667.585 1113.84
@@ -623,7 +623,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3547.28 1002.35
 		3616.05 1045.64
 	endline
-	
+
 	line rock-border -close on
 		3856.03 1068.66
 		3846.895 1089.64
@@ -640,7 +640,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3840.84 1063.89
 		3848.435 1066.275
 	endline
-	
+
 	line rock-border -close on
 		3881.81 1254.72
 		3852.895 1249.535
@@ -655,7 +655,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3864.32 1201.3
 		3873.065 1228.01
 	endline
-	
+
 	line rock-border -close on
 		3554.11 807.09
 		3549.05 832.875
@@ -672,7 +672,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3473.09 784.98
 		3513.6 796.035
 	endline
-	
+
 	line rock-border -close on
 		3482.31 1004.19
 		3448.45 996.935
@@ -687,7 +687,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3528.05 919.44
 		3505.18 961.815
 	endline
-	
+
 	line rock-border -close on
 		3467.59 751.82
 		3453.315 775.965
@@ -704,7 +704,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3466.76 710.13
 		3467.175 730.975
 	endline
-	
+
 	line u:texture
 		2124.76 489.28
 		2114.4 491.15 2103.47 491.04 2093.67 494.89
@@ -717,7 +717,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1812.52 681.23 1808.07 685.78 1804.59 691.02
 		1785.34 719.94 1767.83 751.4 1747.39 779.68
 	endline
-	
+
 	line u:texture
 		1659.85 771.3
 		1673.67 772.68 1687.41 776.62 1700.7 779.58
@@ -729,7 +729,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1702.7 856.84 1684.99 823.16 1679.4 829.56
 		1676.29 833.12 1620.42 780.92 1618.84 785.37
 	endline
-	
+
 	line u:texture
 		3472.36 1651.71
 		3453.53 1647.77 3433.72 1647.03 3415.86 1639.88
@@ -741,7 +741,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3199.21 1526.62 3191.58 1520.83 3182.95 1517.03
 		3166.18 1509.66 3148.69 1504.06 3131.56 1497.57
 	endline
-	
+
 	line u:texture
 		3369.88 1798.95
 		3331.79 1792.43 3290.44 1786.58 3255.37 1768.15
@@ -755,7 +755,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2833.77 1581.62 2821.22 1564.31 2803.05 1556.88
 		2785.44 1549.68 2765.41 1551.34 2746.59 1548.57
 	endline
-	
+
 	line u:texture
 		2978.34 1904.13
 		2992.73 1908.36 3007.16 1912.46 3021.51 1916.83
@@ -772,7 +772,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3530.98 2085.74 3569.16 2108.3 3609.87 2120.29
 		3632.81 2127.05 3702.91 2138.87 3716.93 2141.42
 	endline
-	
+
 	line u:texture
 		2988.85 1396.66
 		2954.27 1392.01 2917.37 1386.98 2884.33 1373.19
@@ -784,7 +784,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2390.54 1136.21 2351.67 1130.88 2315.11 1118.95
 		2293.8 1112.0 2272.95 1103.74 2251.88 1096.14
 	endline
-	
+
 	line u:texture
 		2447.52 883.93
 		2459.46 885.03 2539.43 891.79 2550.6 895.23
@@ -796,7 +796,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2818.84 1059.63 2831.94 1065.2 2844.85 1070.79
 		2899.84 1094.61 2959.96 1110.1 3015.25 1132.72
 	endline
-	
+
 	line u:texture
 		3170.16 1191.57
 		3198.24 1202.42 3227.36 1210.87 3254.39 1224.11
@@ -805,7 +805,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3499.42 1349.38 3515.63 1358.01 3530.43 1368.54
 		3540.66 1375.83 3548.2 1386.32 3557.08 1395.2
 	endline
-	
+
 	line u:texture
 		2447.52 618.36
 		2474.21 624.37 2517.86 631.74 2541.73 646.93
@@ -818,7 +818,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2973.7 848.44 2979.48 859.83 2989.14 866.8
 		3011.41 882.86 3038.09 892.08 3062.43 901.02
 	endline
-	
+
 	line u:texture
 		2244.26 695.46
 		2241.29 728.22 2231.29 761.21 2220.1 792.09
@@ -829,7 +829,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2229.28 1011.17 2234.45 1029.69 2236.79 1048.58
 		2241.84 1089.36 2245.26 1131.67 2246.01 1172.75
 	endline
-	
+
 	line u:texture
 		3682.44 1648.55
 		3682.44 1692.97 3681.17 1737.42 3682.44 1781.82
@@ -843,7 +843,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3714.12 2292.34 3702.25 2324.65 3702.83 2356.87
 		3703.18 2376.21 3711.55 2431.63 3713.65 2446.86
 	endline
-	
+
 	line u:texture
 		3713.03 2010.8
 		3736.04 2005.98 3759.73 2003.68 3782.07 1996.35
@@ -851,7 +851,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3832.32 1973.1 3854.64 1982.33 3872.32 1989.73
 		3927.07 2012.62 3989.99 2028.85 4035.32 2068.27
 	endline
-	
+
 	line u:texture
 		3758.92 2248.05
 		3780.88 2240.19 3821.4 2220.35 3850.46 2222.54
@@ -860,7 +860,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3955.04 2239.91 4013.95 2250.6 4024.96 2258.84
 		4040.72 2270.66 4052.05 2287.45 4065.6 2301.75
 	endline
-	
+
 	line u:texture
 		3809.91 2309.28
 		3829.83 2314.2 3873.78 2323.81 3892.33 2333.36
@@ -868,7 +868,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		4001.65 2402.15 4045.9 2414.23 4067.41 2443.21
 		4080.46 2460.79 4090.15 2480.63 4101.52 2499.34
 	endline
-	
+
 	line u:texture
 		4085.26 1929.17
 		4067.29 1920.75 4048.09 1914.57 4031.36 1903.91
@@ -878,28 +878,28 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		3848.74 1735.83 3838.15 1734.07 3828.4 1731.14
 		3803.27 1723.58 3777.12 1719.29 3752.52 1715.78
 	endline
-	
+
 	line u:texture
 		3980.73 1796.51
 		3973.26 1879.38 3972.2 1969.86 3937.31 2046.7
 	endline
-	
+
 	line u:texture
 		3871.1 2082.23
 		3871.1 2181.41 3871.1 2283.6 3871.1 2382.78
 	endline
-	
+
 	line u:texture
 		4039.37 2171.52
 		4039.37 2267.66 4038.97 2366.98 4030.83 2462.88
 		4028.07 2495.51 4023.78 2528.0 4020.25 2560.56
 	endline
-	
+
 	line u:texture
 		3307.66 1492.93
 		3307.66 1628.38 3314.0 1768.3 3305.86 1903.77
 	endline
-	
+
 	line u:texture
 		2892.08 1005.68
 		2892.08 1051.94 2890.18 1099.78 2892.08 1146.23
@@ -907,7 +907,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		2895.86 1301.06 2885.27 1329.73 2884.43 1358.09
 		2883.98 1373.63 2886.13 1389.14 2886.98 1404.67
 	endline
-	
+
 	line rock-border -close on
 		1915.11 589.29
 		1903.235 593.255
@@ -920,7 +920,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1888.83 575.24
 		1901.97 582.265
 	endline
-	
+
 	line rock-border -close on
 		1840.79 610.63
 		1826.605 610.63
@@ -933,7 +933,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1845.61 593.42
 		1843.2 602.025
 	endline
-	
+
 	line rock-border -close on
 		1857.31 648.5
 		1846.845 656.505
@@ -946,7 +946,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1855.73 640.11
 		1856.52 644.305
 	endline
-	
+
 	line rock-border -close on
 		1818.08 668.47
 		1805.43 670.67
@@ -959,7 +959,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1813.71 649.19
 		1815.895 658.83
 	endline
-	
+
 	line rock-border -close on
 		1824.97 633.36
 		1818.585 629.705
@@ -968,7 +968,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1827.03 620.96
 		1826.0 627.16
 	endline
-	
+
 	line rock-border -close on
 		1789.18 640.93
 		1779.12 643.155
@@ -985,7 +985,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1812.28 622.55
 		1800.73 631.74
 	endline
-	
+
 	line rock-border -close on
 		1773.36 676.05
 		1761.645 676.395
@@ -998,7 +998,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1768.67 644.96
 		1771.015 660.505
 	endline
-	
+
 	line rock-border -close on
 		1780.93 704.97
 		1772.92 700.435
@@ -1007,7 +1007,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1780.93 689.13
 		1780.93 697.05
 	endline
-	
+
 	line rock-border -close on
 		1747.21 775.2
 		1733.205 776.17
@@ -1022,7 +1022,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1762.0 747.66
 		1754.605 761.43
 	endline
-	
+
 	line rock-border -close on
 		1694.91 771.07
 		1686.06 779.82
@@ -1037,7 +1037,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1675.64 765.56
 		1685.275 768.315
 	endline
-	
+
 	line rock-border -close on
 		1699.04 743.52
 		1688.515 744.72
@@ -1050,7 +1050,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1700.46 724.37
 		1699.75 733.945
 	endline
-	
+
 	line rock-border -close on
 		1681.84 685.69
 		1669.815 687.975
@@ -1063,7 +1063,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1670.14 670.54
 		1675.99 678.115
 	endline
-	
+
 	line rock-border -close on
 		1685.96 631.98
 		1669.445 629.74
@@ -1076,7 +1076,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1677.5 607.8
 		1681.73 619.89
 	endline
-	
+
 	line rock-border -close on
 		1722.44 579.65
 		1709.285 578.98
@@ -1091,7 +1091,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1719.89 545.91
 		1721.165 562.78
 	endline
-	
+
 	line rock-border -close on
 		1814.64 534.89
 		1798.435 535.235
@@ -1102,7 +1102,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1815.33 518.37
 		1814.985 526.63
 	endline
-	
+
 	line rock-border -close on
 		1752.71 527.32
 		1741.29 527.32
@@ -1115,7 +1115,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1759.59 497.02
 		1756.15 512.17
 	endline
-	
+
 	line rock-border -close on
 		1676.33 513.55
 		1661.785 512.405
@@ -1130,7 +1130,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1683.21 486.01
 		1679.77 499.78
 	endline
-	
+
 	line rock-border -close on
 		1634.35 553.49
 		1621.89 550.885
@@ -1145,7 +1145,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1660.9 526.04
 		1647.625 539.765
 	endline
-	
+
 	line rock-border -close on
 		1819.46 479.81
 		1808.03 488.535
@@ -1158,7 +1158,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1815.64 476.37
 		1817.55 478.09
 	endline
-	
+
 	line rock-border -close on
 		1802.26 457.09
 		1791.69 459.625
@@ -1175,7 +1175,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1811.25 428.86
 		1806.755 442.975
 	endline
-	
+
 	line rock-border -close on
 		1735.51 470.86
 		1725.985 465.44
@@ -1188,7 +1188,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1753.61 445.91
 		1744.56 458.385
 	endline
-	
+
 	line rock-border -close on
 		1776.8 416.46
 		1760.85 416.03
@@ -1201,7 +1201,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1774.32 391.5
 		1775.56 403.98
 	endline
-	
+
 	line rock-border -close on
 		1724.5 426.1
 		1710.365 426.445
@@ -1214,7 +1214,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1725.67 402.69
 		1725.085 414.395
 	endline
-	
+
 	line u:texture
 		1637.93 784.39
 		1637.58 778.61 1638.61 769.97 1633.14 765.93
@@ -1223,7 +1223,7 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 		1585.63 727.39 1575.32 726.01 1567.96 721.68
 		1559.0 716.41 1552.34 705.28 1545.72 697.68
 	endline
-	
+
 	point 2213.75 499.08 station -name 0
 	point 1847.84 450.34 station -name 1
 	point 2943.45 570.0 station -name 2
@@ -1234,4 +1234,3 @@ scrap alkatraz_disto_resurvey-1s -scale [0 0 39 0 0 0 1 0 m] -projection extende
 	point 4081.91 1155.45 station -name 7
 	point 3829.42 974.07 station -name 8
 endscrap
-

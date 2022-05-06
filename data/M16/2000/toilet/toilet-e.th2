@@ -4,47 +4,47 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line survey 
+line survey
   -38.14 114.01
   -16.23 64.81
 endline
 
-line survey 
+line survey
   -16.23 64.81
   20.34 22.73
 endline
 
-line survey 
+line survey
   20.34 22.73
   52.59 -28.88
 endline
 
-line survey 
+line survey
   52.59 -28.88
   65.91 -40.45
 endline
 
-line survey 
+line survey
   47.78 -57.96
   65.91 -40.45
 endline
 
-line survey 
+line survey
   9.58 -74.96
   47.78 -57.96
 endline
 
-line survey 
+line survey
   9.58 -74.96
   -7.0 -88.39
 endline
 
-line survey 
+line survey
   -32.48 -106.91
   -7.0 -88.39
 endline
 
-line survey 
+line survey
   -32.48 -106.91
   -65.91 -114.01
 endline
@@ -54,8 +54,8 @@ endscrap
 
 scrap toilet-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -264.3502 -169.2837 label -align r -text "Toilet Humour"
-line wall 
+point -164.3502 -109.2837 label -align l -text "Toilet<br>Humour" -scale l -attr level 1
+line wall
   84.1992 -46.1737
   84.1992 -46.1737 89.9709 -22.7474 89.9709 -21.3893
   89.9709 -20.0313 85.5572 -9.5064 84.8782 -7.8088
@@ -72,7 +72,7 @@ line wall
   -23.0869 106.607
 endline
 
-line wall 
+line wall
   10.8644 4.7532
   10.8644 4.7532
   10.8644 4.7532 20.0312 -2.7161 20.0312 -4.4137
@@ -119,7 +119,7 @@ line wall
   84.1992 -46.1737
 endline
 
-line wall 
+line wall
   -58.3962 104.57
   -53.3035 94.724
   -53.3035 94.724 -48.8898 84.5387 -48.8898 82.8411
@@ -148,4 +148,3 @@ point -7.0 -88.39 station -name 3
 point -32.48 -106.91 station -name 2
 point -65.91 -114.01 station -name 1
 endscrap
-

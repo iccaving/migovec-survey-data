@@ -4,13 +4,13 @@ encoding  utf-8
 
 
 scrap gamblers_ruin-1e -scale [331.0 -735.0 536.0 -734.0 0.0 0.0 8 0.0 m] -projection extended
-	
-	point 695.5519 634.3528 label -text "Gambler's Ruin" -align tl
+
+	point 695.5519 634.3528 label -text "Gambler's Ruin" -align tl -scale l -attr level 1
 	line wall -subtype blocks
 		354.2489 163.59
 		434.2786 160.0593
 	endline
-	
+
 	line wall -subtype blocks
 		1089.675 962.2121
 		1043.4998 923.0979
@@ -19,7 +19,7 @@ scrap gamblers_ruin-1e -scale [331.0 -735.0 536.0 -734.0 0.0 0.0 8 0.0 m] -proje
 		899.5715 792.4577
 		850.9036 768.5201
 	endline
-	
+
 	line wall -subtype blocks
 		434.2786 160.0593
 		480.178 238.9121
@@ -36,7 +36,7 @@ scrap gamblers_ruin-1e -scale [331.0 -735.0 536.0 -734.0 0.0 0.0 8 0.0 m] -proje
 		1109.562 901.221
 		1154.8332 936.2732
 	endline
-	
+
 	line wall
 		850.9036 768.5201
 		850.9036 768.5201 840.3114 740.2744 837.9576 732.036
@@ -55,7 +55,7 @@ scrap gamblers_ruin-1e -scale [331.0 -735.0 536.0 -734.0 0.0 0.0 8 0.0 m] -proje
 		398.9714 248.3273 353.072 193.0127 353.072 193.0127
 		354.2489 163.59
 	endline
-	
+
 	point 1164.5493 952.706 station -name 9
 	point 1102.7617 936.8178 station -name 8
 	point 994.6856 828.87 station -name 7
@@ -66,4 +66,3 @@ scrap gamblers_ruin-1e -scale [331.0 -735.0 536.0 -734.0 0.0 0.0 8 0.0 m] -proje
 	point 576.2976 358.6777 station -name 2
 	point 391.1334 172.6812 station -name 1
 endscrap
-

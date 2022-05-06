@@ -5,13 +5,13 @@ encoding  utf-8
 
 scrap wizard_of_oz-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-point -230.6986 -23.567 label -text "Wizard of Oz" -align b
-line u:texture 
+point -230.6986 -23.567 label -text "Wizard of Oz" -align b -attr level 2 -scale l
+line u:texture
   -65.7797 23.527
   -41.4124 20.6462
 endline
 
-line wall 
+line wall
   117.499 2.5967
   116.6503 3.2757 92.3475 13.4108 88.7826 18.6732
   85.2177 23.9356 84.7084 26.482 83.5201 28.3493
@@ -32,7 +32,7 @@ line wall
   -111.3602 47.1923 -121.5455 49.3991 -121.5455 49.3991
 endline
 
-line wall 
+line wall
   70.9582 15.4478
   75.2021 4.9229
   75.2021 4.9229 85.1283 -5.8108 85.8072 -6.8293
@@ -48,7 +48,7 @@ line wall -subtype blocks
   53.8128 20.201 70.9582 15.4478 70.9582 15.4478
 endline
 
-line wall 
+line wall
   -39.8927 -0.8488
   -38.3649 19.522
 endline
@@ -59,7 +59,7 @@ line wall -subtype blocks
   -39.8927 -0.8488
 endline
 
-line wall 
+line wall
   -63.3191 19.522
   -61.7913 -9.6761
 endline
@@ -78,7 +78,7 @@ line wall -subtype blocks
   -63.3191 19.522
 endline
 
-line wall 
+line wall
   -121.5456 49.3991
   -121.6305 49.1445 -129.4069 55.5927 -134.0226 55.4254
 endline
@@ -99,4 +99,3 @@ point 74.25 33.54 station -name 2
 point 85.23 10.79 station -name 1
 point 134.34 -50.63 station -name bot
 endscrap
-

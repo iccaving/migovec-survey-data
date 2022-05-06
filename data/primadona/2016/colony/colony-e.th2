@@ -4,9 +4,9 @@ encoding  utf-8
 
 
 scrap colony-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
-	
-	point 1148.9216 3557.3306 label -text Colony -align t
-	point 1023.9343 1699.3464 label -text "Blue Danube" -align r
+
+	point 1148.9216 3557.3306 label -text Colony -align t -scale l -attr level 1
+	point 1023.9343 1699.3464 label -text "Blue Danube" -align r -attr level 2 -scale l
 	line wall -subtype blocks -id col_l4
 		0.0 1178.0
 		139.4089 1081.6208
@@ -14,7 +14,7 @@ scrap colony-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 		331.697 740.3093
 		365.3475 697.0445
 	endline
-	
+
 	line wall -subtype blocks
 		1059.9884 3110.2606
 		1057.5848 3124.6822 1108.0604 3211.2119 1108.0604 3211.2119
@@ -31,7 +31,7 @@ scrap colony-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 		2697.8044 3494.3917
 		2752.124 3494.8369
 	endline
-	
+
 	line wall
 		473.5095 514.3708
 		566.1509 571.1539
@@ -47,7 +47,7 @@ scrap colony-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 		949.4227 3018.9237
 		949.4227 3018.9237 1062.392 3095.839 1059.9884 3110.2606
 	endline
-	
+
 	line wall -id col_l3
 		374.9619 3338.6028
 		389.3835 3338.6028 411.0159 3271.302 411.0159 3261.6876
@@ -55,14 +55,14 @@ scrap colony-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 		283.625 3143.911
 		-2.4036 2530.9926
 	endline
-	
+
 	line wall:blocks -id col_l1
 		-14.9591 3385.5584
 		-14.9591 3385.5584 15.6873 3382.5908 50.3407 3379.1497
 		86.7469 3375.5346 127.5757 3371.3969 141.9373 3369.6289
 		229.0064 3358.9098 364.0525 3338.6028 374.9619 3338.6028
 	endline
-	
+
 	line wall -id col_l2
 		2658.3835 3586.1737
 		2593.4862 3542.9089
@@ -81,7 +81,7 @@ scrap colony-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 		288.3601 3480.4152 223.0229 3485.2412 168.4572 3489.8909
 		117.7396 3494.2126 -3.5536 3511.9787 -3.5536 3511.9787
 	endline
-	
+
 	point 578.1024 588.0626 station -name 10
 	point 2699.207 3514.7791 station -name 9
 	point 2624.4244 3467.1902 station -name 8
@@ -93,4 +93,3 @@ scrap colony-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 	point 1268.1412 3307.4276 station -name 2
 	point 588.3 3361.8148 station -name 1
 endscrap
-

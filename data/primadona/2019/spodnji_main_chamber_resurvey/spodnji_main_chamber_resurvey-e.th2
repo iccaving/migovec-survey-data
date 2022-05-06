@@ -4,18 +4,18 @@ encoding  utf-8
 
 
 scrap spodnji_resurvey-1e -scale [0 0 39 0 0 0 1 0 m] -projection extended
-	
+
 	line wall -subtype invisible
 		1329.0571 755.1339
 		1697.014 741.0784
 	endline
-	
+
 	line wall -id spodji_l1
 		1697.014 741.0784
 		1697.014 744.8578 1640.8945 854.0053 1640.2647 860.3043
 		1639.6347 866.6034 1617.2322 921.1545 1617.2322 921.1545
 	endline
-	
+
 	line wall -close on -outline in
 		1425.4776 926.5919
 		1425.4776 926.5919 1440.5954 924.0722 1446.2644 925.3321
@@ -26,7 +26,7 @@ scrap spodnji_resurvey-1e -scale [0 0 39 0 0 0 1 0 m] -projection extended
 		1404.6906 886.9078 1404.0608 896.9863 1404.6906 900.7657
 		1405.3206 904.5452 1412.8794 917.1433 1412.8794 917.1433
 	endline
-	
+
 	line wall -id spodnji_l2
 		1354.9402 961.2367
 		1344.3174 958.5858 1344.7832 959.5469 1339.8104 948.6386
@@ -37,8 +37,8 @@ scrap spodnji_resurvey-1e -scale [0 0 39 0 0 0 1 0 m] -projection extended
 		1343.8376 897.5583 1349.902 856.5565 1349.902 852.7771
 		1349.902 848.9976 1329.0571 755.1339 1329.0571 755.1339
 	endline
-	
-	point 2527.2614 1281.0017 label -text Spodnji -align r
+
+	point 2527.2614 1281.0017 label -text Spodnji -align r -scale l -attr level 1
 	line wall -subtype blocks
 		1616.2874 922.0993
 		1623.414 924.3263 1626.955 940.3388 1633.6361 940.3388
@@ -55,12 +55,12 @@ scrap spodnji_resurvey-1e -scale [0 0 39 0 0 0 1 0 m] -projection extended
 		2296.5386 1015.5368 2329.9444 1021.3271 2350.8788 1019.9909
 		2371.813 1018.6547 2444.048 1020.1329 2444.048 1020.1329
 	endline
-	
+
 	line wall -subtype invisible
 		2544.821 1507.2704
 		2294.5 1618.6231
 	endline
-	
+
 	line wall
 		2444.048 1020.1329
 		2456.68 1061.1849
@@ -74,7 +74,7 @@ scrap spodnji_resurvey-1e -scale [0 0 39 0 0 0 1 0 m] -projection extended
 		2517.1808 1478.8034 2515.4114 1455.6224 2515.4114 1467.7169
 		2515.4114 1479.8114 2544.821 1507.2704 2544.821 1507.2704
 	endline
-	
+
 	line wall
 		2294.5 1618.6231
 		2271.3388 1578.5362
@@ -108,7 +108,7 @@ scrap spodnji_resurvey-1e -scale [0 0 39 0 0 0 1 0 m] -projection extended
 		1380.1364 963.7563
 		1354.9402 961.2367
 	endline
-	
+
 	point 2535.4674 1581.2086 station -name 9
 	point 2510.079 1460.5023 station -name 8
 	point 2400.9534 1352.2674 station -name 7
@@ -120,4 +120,3 @@ scrap spodnji_resurvey-1e -scale [0 0 39 0 0 0 1 0 m] -projection extended
 	point 1373.5224 928.4816 station -name 2
 	point 1537.928 948.9535 station -name 0
 endscrap
-

@@ -4,73 +4,73 @@ encoding  utf-8
 
 
 scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
-	
+
 	line survey
 		-44.72 -118.52
 		-96.44 -141.54
 	endline
-	
+
 	line survey
 		-44.72 -118.52
 		11.96 -96.76
 	endline
-	
+
 	line survey
 		11.96 -57.23
 		11.96 -96.76
 	endline
-	
+
 	line survey
 		3.9 -52.0
 		11.96 -57.23
 	endline
-	
+
 	line survey
 		3.9 -52.0
 		-15.74 -53.37
 	endline
-	
+
 	line survey
 		-15.74 -20.23
 		-15.74 -53.37
 	endline
-	
+
 	line survey
 		-41.32 -12.89
 		-15.74 -20.23
 	endline
-	
+
 	line survey
 		-41.32 -12.89
 		-52.66 1.63
 	endline
-	
+
 	line survey
 		-73.17 12.53
 		-52.66 1.63
 	endline
-	
+
 	line survey
 		-73.17 12.53
 		-99.46 34.98
 	endline
-	
+
 	line survey
 		-24.89 40.85
 		-99.46 34.98
 	endline
-	
+
 	line survey
 		-24.89 40.85
 		99.46 141.54
 	endline
-	
+
 endscrap
 
 
 scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
-	
-	point 63.1494 -26.482 label -attr level 1 -scale l -text "Rock \&Roll" -align r
+
+	point 63.1494 -26.482 label -attr level 1 -scale l -text "Rock&Roll" -align r
 	point 57.5878 -62.8841 water-flow -orientation 255.81295
 	line wall
 		-13.9242 -66.7399
@@ -81,7 +81,7 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		-54.7364 -105.3915 -74.4222 -112.1135 -75.3825 -112.3536
 		-76.3428 -112.5936 -92.6677 -123.877 -92.6677 -123.877
 	endline
-	
+
 	line wall
 		-27.1281 -28.8086
 		-27.8483 -36.2508
@@ -93,7 +93,7 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		-14.8844 -62.1786
 		-14.8844 -62.1786 -13.6841 -65.7797 -13.9242 -66.7399
 	endline
-	
+
 	line wall
 		41.3311 -61.6877
 		41.3311 -61.6877 32.2878 -73.9244 31.2693 -74.7732
@@ -106,7 +106,7 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		2.5463 -42.7786 -3.0556 -42.9484 -3.5649 -41.7601
 		-4.0742 -40.5718 -8.8273 -24.7844 -8.8273 -24.7844
 	endline
-	
+
 	line wall
 		-92.3475 -145.1417
 		-60.7728 -133.2587
@@ -120,17 +120,17 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		29.1981 -94.5543 33.9854 -85.4095 36.0225 -83.2026
 		38.0595 -80.9958 44.1637 -72.4719 44.1637 -72.4719
 	endline
-	
+
 	line wall -subtype invisible
 		141.2374 100.4958
 		153.2423 131.3146
 	endline
-	
+
 	line wall -subtype invisible
 		117.9518 144.5186
 		2.3766 112.0392
 	endline
-	
+
 	line wall
 		153.2423 131.3146
 		153.2423 131.3146 135.9571 122.432 134.2766 121.9518
@@ -139,7 +139,7 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		117.7117 125.5529
 		117.9518 144.5186
 	endline
-	
+
 	line wall -subtype blocks
 		-8.8273 -24.7844
 		-9.5064 -17.9942
@@ -154,7 +154,7 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		-66.5445 13.241 -68.9211 19.522 -68.9211 20.201
 		-68.9211 20.88 -65.8997 28.5685 -65.8997 28.5685
 	endline
-	
+
 	line wall -subtype blocks
 		-61.6984 -15.1245
 		-56.1768 -15.8447
@@ -162,7 +162,7 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		-30.9693 -24.7274
 		-27.1281 -28.8086
 	endline
-	
+
 	line wall -subtype blocks
 		-83.545 48.2544
 		-90.7471 46.5739
@@ -173,7 +173,7 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		-89.7868 5.0415 -68.6605 -18.9657 -68.6605 -18.9657
 		-61.6984 -15.1245
 	endline
-	
+
 	line wall
 		2.3766 112.0392
 		1.6976 92.0079
@@ -184,7 +184,7 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		-72.3162 47.1923 -82.1621 45.8342 -82.1621 45.8342
 		-83.545 48.2544
 	endline
-	
+
 	line wall -subtype blocks
 		-65.8997 28.5685
 		-65.8997 28.5685 -45.8537 32.2896 -44.0532 32.6498
@@ -200,7 +200,7 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		123.7162 94.4446 125.0743 97.1607 126.7718 98.1793
 		127.6964 98.7341 134.0747 96.8036 141.2374 100.4958
 	endline
-	
+
 	point -96.44 -141.54 station -name 12
 	point -44.72 -118.52 station -name 11
 	point 11.96 -96.76 station -name 10
@@ -215,4 +215,3 @@ scrap rockroll-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 	point -24.89 40.85 station -name 1
 	point 99.46 141.54 station -name 0
 endscrap
-

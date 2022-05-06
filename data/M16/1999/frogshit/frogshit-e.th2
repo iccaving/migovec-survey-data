@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap frogshit-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -22.7474 -40.0625 label -text "Frogshit" -align br
+point -22.7474 -40.0625 label -text "Frogshit" -align br -scale l -attr level 2
 line wall -subtype invisible
   7.3406 154.8206
   4.7456 163.0769
@@ -17,7 +17,7 @@ line wall -subtype invisible
   -34.2766 167.9977
 endline
 
-line wall:blocks 
+line wall:blocks
   12.6986 147.1146
   12.6986 147.1146 10.9064 148.3032 8.0674 149.6724
   5.5922 150.8661 0.5244 151.6643 1.2541 154.3137
@@ -33,14 +33,14 @@ line wall -subtype blocks
   -1.9869 141.95
 endline
 
-line wall 
+line wall
   -34.2766 167.9977
   -32.1591 161.4518
   -27.6746 155.7541
   -25.634 152.8732
 endline
 
-line wall 
+line wall
   4.7456 163.0769
   3.1314 163.1158 1.9941 163.1211 1.6141 163.0763
   -0.4265 162.8362 -2.227 163.0763 -5.468 162.5961
@@ -55,7 +55,7 @@ line wall -subtype invisible
   -246.6771 -160.3536
 endline
 
-line wall 
+line wall
   240.1927 124.9597
   240.1927 124.9597 240.6202 120.0849 239.1104 118.5144
   235.9061 115.1812 229.9115 117.1634 225.5324 115.6797
@@ -91,7 +91,7 @@ line wall
   -253.9981 -152.358 -255.1449 -154.9874 -255.1449 -154.9874
 endline
 
-line wall 
+line wall
   263.0231 115.7734
   263.0231 115.7734 264.0311 123.2317 263.2933 126.8509
   262.9672 128.4503 262.5662 130.3207 261.267 131.3089
@@ -194,4 +194,3 @@ point -132.76 -50.57 station -name 3
 point -194.15 -107.82 station -name 2
 point -251.25 -157.46 station -name 1
 endscrap
-

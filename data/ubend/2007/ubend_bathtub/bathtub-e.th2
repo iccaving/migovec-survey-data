@@ -15,8 +15,8 @@ line wall -subtype invisible
   415.444 192.9188
 endline
 
-point 497.3786 914.0946 label -text Bathtub -align tl
-line wall 
+point 497.3786 914.0946 label -text Bathtub -align tl -attr level 2
+line wall
   521.9313 264.0696
   544.9815 277.5556
   544.9815 277.5556 542.9555 293.7632 541.6049 299.1658
@@ -40,7 +40,7 @@ line wall -subtype blocks
   500.9204 248.3113 521.9313 264.0696 521.9313 264.0696
 endline
 
-line wall 
+line wall
   586.8512 874.8742
   586.8512 874.8742 573.6349 866.7818 572.0314 864.0994
   571.0078 862.3869 561.9378 851.9796 561.5656 851.4214
@@ -64,4 +64,3 @@ point 517.6311 690.5124 station -name 3
 point 517.6336 293.6759 station -name 2
 point 401.1183 225.1515 station -name 1
 endscrap
-

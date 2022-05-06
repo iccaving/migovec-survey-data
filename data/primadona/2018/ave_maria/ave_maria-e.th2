@@ -4,8 +4,8 @@ encoding  utf-8
 
 
 scrap ave_maria-e1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
-	
-	point 1007.8129 197.2303 label -text "Ave Maria" -align r
+
+	point 1007.8129 197.2303 label -text "Ave Maria" -align r -scale l
 	line wall
 		624.3586 -224.1081
 		624.3586 -224.1081 625.1647 -214.0313 634.8385 -215.6435
@@ -28,7 +28,7 @@ scrap ave_maria-e1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
 		802.9195 499.0032
 		768.2553 507.0646
 	endline
-	
+
 	line wall
 		701.7069 487.3756
 		720.7372 477.5384
@@ -48,7 +48,7 @@ scrap ave_maria-e1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
 		623.9555 -75.7775 562.6886 -154.7797 562.6886 -154.7797
 		553.0148 -174.1271
 	endline
-	
+
 	point 674.7491 535.3741 station -name 8
 	point 750.5266 510.3837 station -name 8
 	point 769.0679 476.5563 station -name 6
@@ -58,4 +58,3 @@ scrap ave_maria-e1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
 	point 615.1866 -193.3494 station -name 2
 	point 559.5319 -275.5761 station -name 1
 endscrap
-

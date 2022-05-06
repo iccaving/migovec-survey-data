@@ -3,8 +3,8 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap smer1-e1 -projection extended -scale [327.0 -736.0 541.0 -735.0 0 0 30 0 m]
-	
-	point 483.297 998.1326 label -align t -scale m -text Smer1
+
+	point 483.297 998.1326 label -align t -scale l -text Smer1
 	line wall
 		1529.8166 874.4326
 		1529.8166 874.4326 1509.2624 869.7345 1506.9134 873.8453
@@ -42,7 +42,7 @@ scrap smer1-e1 -projection extended -scale [327.0 -736.0 541.0 -735.0 0 0 30 0 m
 		263.0932 748.1713 251.348 741.1242 246.6499 739.9497
 		241.9518 738.7752 198.4944 735.2516 198.4944 735.2516
 	endline
-	
+
 	line wall:clay
 		271.3149 675.3509
 		271.3149 675.3509 338.2627 724.6809 345.3098 728.2044
@@ -64,7 +64,7 @@ scrap smer1-e1 -projection extended -scale [327.0 -736.0 541.0 -735.0 0 0 30 0 m
 		1473.746 854.2593 1477.5503 848.5931 1495.1682 846.244
 		1501.4267 845.4096 1515.3183 844.7974 1531.0251 844.197
 	endline
-	
+
 	point 1473.75 856.259 station -name 12
 	point 1392.36 893.632 station -name 11
 	point 1320.1 899.861 station -name 10
@@ -80,7 +80,7 @@ endscrap
 
 
 scrap smer1-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
-	
+
 	line wall
 		1932.9717 635.7107
 		1932.9717 635.7107 1930.3291 650.0987 1929.7418 653.035
@@ -98,7 +98,7 @@ scrap smer1-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 		1634.9364 868.56 1608.5097 873.8453 1605.5734 873.8453
 		1602.6371 873.8453 1529.8166 874.4326 1529.8166 874.4326
 	endline
-	
+
 	line wall
 		1731.8346 792.216
 		1731.8346 792.216 1768.8321 779.2962 1769.4194 775.7726
@@ -114,7 +114,7 @@ scrap smer1-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 		1881.5863 645.9878 1883.0545 636.8853 1882.4672 635.7107
 		1881.88 634.5362 1880.7054 628.6636 1880.7054 628.6636
 	endline
-	
+
 	line wall:clay
 		1531.0251 844.197
 		1559.5333 843.1072 1594.021 842.056 1599.7007 839.7842
@@ -122,11 +122,10 @@ scrap smer1-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 		1684.2664 816.881 1694.2499 808.6593 1700.1225 805.723
 		1705.9951 802.7867 1731.8346 792.216 1731.8346 792.216
 	endline
-	
+
 	point 1885.4 683.573 station -name 17
 	point 1750.63 805.136 station -name 16
 	point 1738.59 805.429 station -name 15
 	point 1611.61 856.675 station -name 14
 	point 1545.17 856.675 station -name 13
 endscrap
-

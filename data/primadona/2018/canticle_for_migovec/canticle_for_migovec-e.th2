@@ -4,7 +4,7 @@ encoding  utf-8
 
 
 scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 145.91 174.18] -projection extended
-	
+
 	line wall
 		3624.097 -796.9439
 		3575.7336 -796.9439
@@ -37,7 +37,7 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		649.7511 -402.6774
 		625.5694 -373.2389
 	endline
-	
+
 	line wall
 		1222.7516 -760.1457
 		1278.4746 -759.0943
@@ -72,7 +72,7 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		3569.4254 -1019.8358
 		3607.2748 -1027.1954
 	endline
-	
+
 	line rock-border -close on
 		788.7957 -327.7668
 		757.2544 -299.1168
@@ -80,7 +80,7 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		724.6617 -352.737
 		737.5411 -357.9939
 	endline
-	
+
 	line rock-border -close on
 		898.0706 -139.7659
 		859.4119 -125.6407
@@ -88,14 +88,14 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		833.3916 -168.0165
 		857.1816 -163.5559
 	endline
-	
+
 	line rock-border -close on
 		953.8282 -127.1275
 		933.7555 -96.6467
 		904.7615 -113.0023
 		912.1958 -130.1013
 	endline
-	
+
 	line wall -subtype sand
 		413.3504 -750.8702
 		520.4051 -749.3834
@@ -107,7 +107,7 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		1140.4307 -759.7915
 		1219.2349 -758.3046
 	endline
-	
+
 	line wall
 		1508.2005 233.9314
 		1508.2005 233.9314 1478.7619 233.9314 1476.1335 233.9314
@@ -152,7 +152,7 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		414.8372 -599.2093 405.916 -631.9205 405.916 -640.8417
 		405.916 -649.763 396.9948 -746.4096 396.9948 -746.4096
 	endline
-	
+
 	line wall
 		626.6208 -376.393
 		690.7548 -371.1361
@@ -186,7 +186,7 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		1543.9473 178.7341
 		1578.6427 179.2598
 	endline
-	
+
 	point 770.1996 -712.2116 station -name 23
 	point 888.4059 -698.8297 station -name 22
 	point 1033.3759 -702.5469 station -name 21
@@ -225,7 +225,7 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 	point 1048.7487 117.7542 station -name 29
 	point 972.5238 -14.1936 station -name 28
 	point 922.5834 -7.3596 station -name 27
-	point 1123.0256 -559.3931 label -text "Canticle for Migovec" -align tr -scale m
+	point 1123.0256 -559.3931 label -text "Canticle for Migovec" -align tr -scale l -attr level 1
 	line wall
 		1882.3797 863.1291
 		1882.3797 831.1613
@@ -252,7 +252,7 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		1528.5042 238.6429
 		1509.1749 234.9257
 	endline
-	
+
 	line wall
 		2106.8974 667.6054
 		2079.3902 682.4741
@@ -263,7 +263,7 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		2025.1194 796.9633
 		2022.889 817.7795
 	endline
-	
+
 	line wall
 		1582.0316 180.2832
 		1582.0316 180.2832 1625.1509 181.0266 1626.6377 181.0266
@@ -296,6 +296,5 @@ scrap canticle_for_migovec-1e -scale [0.0 0.0 857.8013549201975 1024.0 0.0 0.0 1
 		2101.6932 644.5589
 		2110.6144 643.072
 	endline
-	
-endscrap
 
+endscrap
