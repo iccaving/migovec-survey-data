@@ -4,8 +4,8 @@ encoding  utf-8
 
 
 scrap tiger_tiger-e1 -scale [330.0 -733.0 501.0 -733.0 0.0 0.0 15 0.0 m] -projection extended
-	
-	point 1695.9227 360.1335 label -text "Tiger Tiger" -align br
+
+	point 1695.9227 360.1335 label -text "Tiger Tiger" -align br -attr level 1 -scale l
 	line wall
 		1128.0652 434.2786
 		1128.0652 434.2786 1158.0763 418.9788 1153.9571 418.9788
@@ -23,7 +23,7 @@ scrap tiger_tiger-e1 -scale [330.0 -733.0 501.0 -733.0 0.0 0.0 15 0.0 m] -projec
 		460.759 322.4725
 		464.8782 298.3459
 	endline
-	
+
 	line wall
 		2167.8622 604.3416
 		2156.6816 586.0996
@@ -49,7 +49,7 @@ scrap tiger_tiger-e1 -scale [330.0 -733.0 501.0 -733.0 0.0 0.0 15 0.0 m] -projec
 		1233.3983 438.3978 1211.0371 422.5095 1211.0371 422.5095
 		1171.0222 460.759
 	endline
-	
+
 	line wall
 		571.9767 270.1001
 		583.7458 284.8114
@@ -83,7 +83,7 @@ scrap tiger_tiger-e1 -scale [330.0 -733.0 501.0 -733.0 0.0 0.0 15 0.0 m] -projec
 		2244.9496 540.2002
 		2287.3184 543.1425
 	endline
-	
+
 	point 2313.5126 565.8952 station -name 14
 	point 2214.481 605.0085 station -name 13
 	point 2162.0524 550.0834 station -name 12
@@ -99,4 +99,3 @@ scrap tiger_tiger-e1 -scale [330.0 -733.0 501.0 -733.0 0.0 0.0 15 0.0 m] -projec
 	point 647.4506 319.5643 station -name 2
 	point 538.4326 286.2764 station -name 1
 endscrap
-

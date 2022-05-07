@@ -2,10 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 855.000000 1111.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap deeper_than_most-e1 -projection extended -scale [330.0 -733.0 511.0 -734.0 0.0 0.0 2 0.0 m]
 
-scrap deeper_than_most-e1 -scale [330.0 -733.0 511.0 -734.0 0.0 0.0 2 0.0 m] -projection extended
-
-line rock-border -close on -clip off
+point 545.2698 306.906 label -align r -attr level 2 -scale l -text "Deeper<br>than Most"
+line rock-border -clip off -close on
   347.8591 316.2355
   334.96 272.9612
   322.0609 229.6869
@@ -14,6 +14,7 @@ line rock-border -close on -clip off
   370.3284 256.3172
   382.8114 302.0882
   365.3353 309.1618
+  347.8591 316.2355
 endline
 
 line wall 
@@ -47,8 +48,8 @@ line wall
   614.3453 631.4105 624.9375 685.5482 624.9375 685.5482
 endline
 
-point 403.2003 222.1971 station -name 3
-point 513.0505 539.6809 station -name 2
-point 612.0822 720.268 station -name 1
+point 403.2 222.197 station -name 3
+point 513.051 539.681 station -name 2
+point 612.082 720.268 station -name 1
 endscrap
 

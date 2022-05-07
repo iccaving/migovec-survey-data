@@ -3,48 +3,48 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 	line survey
 		402.4267 420.3847
 		376.1367 476.7647
 	endline
-	
+
 	line survey
 		402.4267 315.5047
 		402.4267 420.3847
 	endline
-	
+
 	line survey
 		469.9367 313.1447
 		402.4267 315.5047
 	endline
-	
+
 	line survey
 		508.4467 304.9547
 		469.9367 313.1447
 	endline
-	
+
 	line survey
 		508.4467 304.9547
 		542.7867 281.8047
 	endline
-	
+
 	line survey
 		542.7867 281.8046
 		563.5767 204.2446
 	endline
-	
+
 	line survey
 		563.5767 204.2447
 		604.5167 204.2447
 	endline
-	
+
 endscrap
 
 
 scrap beetlejuice-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
-	point 501.9817 259.5094 label -align bl -text Beetlejuice -attr level 1 -scale l
+
+	point 531.9817 259.5094 label -align br -text Beetlejuice -attr level 1 -scale l
 	line wall
 		349.3772 462.3988
 		349.3772 462.3988 351.5456 454.5746 359.9563 447.3095
@@ -56,7 +56,7 @@ scrap beetlejuice-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 		384.7702 344.3353 382.2165 332.4177 382.2165 328.587
 		382.2165 324.7563 382.6421 307.7311 382.6421 307.7311
 	endline
-	
+
 	line wall -subtype blocks
 		382.6421 307.7311
 		401.3699 309.4336
@@ -67,7 +67,7 @@ scrap beetlejuice-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 		479.2603 301.7722 508.2032 285.5983 508.2032 285.5983
 		510.757 286.0239
 	endline
-	
+
 	line wall
 		510.757 286.0239
 		526.9309 255.3785
@@ -78,7 +78,7 @@ scrap beetlejuice-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 		553.3201 198.344
 		559.4966 198.2199
 	endline
-	
+
 	line wall
 		611.4133 205.8945
 		611.4133 205.8945 602.3843 206.9479 600.8795 208.9042
@@ -105,14 +105,14 @@ scrap beetlejuice-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 		413.2875 450.743
 		397.461 475.9637
 	endline
-	
+
 	line wall -subtype blocks
 		559.4966 198.2199
 		559.4966 198.2199 595.6126 197.4675 596.9669 197.9189
 		598.3213 198.3704 603.8891 197.4675 605.2435 197.9189
 		606.5978 198.3704 612.7677 199.7247 612.7677 199.7247
 	endline
-	
+
 	point 376.137 476.765 station -name 8
 	point 402.427 420.385 station -name 7
 	point 402.427 315.505 station -name 6
@@ -122,4 +122,3 @@ scrap beetlejuice-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 	point 563.577 204.245 station -name 2
 	point 604.517 204.245 station -name 1
 endscrap
-

@@ -3,8 +3,8 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap dreamsforthesoul-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
-	point 409.3036 946.3287 label -align bl -text "Dreams for the Soul" -attr level 1 -scale l
+
+	point 469.3036 1146.3287 label -align tl -text "<lang:en>Dreams for the Soul<lang:sl>Sanje za dušo" -attr level 1 -scale l
 	line rock-border -close on
 		197.172 1025.1586
 		194.7954 1023.8855 190.9759 1017.6894 192.2491 1016.2464
@@ -12,7 +12,7 @@ scrap dreamsforthesoul-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.
 		203.5379 1014.3791 206.4237 1020.745 205.9993 1021.0845
 		205.575 1021.424 197.172 1025.1586 197.172 1025.1586
 	endline
-	
+
 	line rock-border -close on
 		176.971 1018.7928
 		171.6237 1016.4162 164.5788 1012.4269 166.4461 1009.4562
@@ -20,13 +20,13 @@ scrap dreamsforthesoul-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.
 		183.5915 1005.7215 191.2305 1009.2864 188.3447 1012.0874
 		185.4588 1014.8884 176.971 1018.7928 176.971 1018.7928
 	endline
-	
+
 	line wall
 		1048.6714 1006.8634
 		1034.9873 994.9798 978.1723 978.8925 972.1705 976.8519
 		966.1687 974.8113 955.0054 971.8104 955.0054 971.8104
 	endline
-	
+
 	line wall
 		-160.8481 1034.2291
 		-156.5268 1035.1894 -136.3607 1038.5504 -123.3969 1041.9114
@@ -56,7 +56,7 @@ scrap dreamsforthesoul-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.
 		979.0126 962.2075 1025.5865 981.8934 1045.2724 981.8934
 		1064.9582 981.8934 1107.691 1011.1821 1107.691 1011.1821
 	endline
-	
+
 	line wall
 		955.0054 971.8104
 		918.9946 973.731 886.825 966.0487 878.1824 960.287
@@ -83,7 +83,7 @@ scrap dreamsforthesoul-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.
 		-24.9675 1048.1532 -40.8122 1061.5972 -45.1335 1062.5575
 		-49.4548 1063.5178 -137.8012 1067.359 -137.8012 1067.359
 	endline
-	
+
 	point 1096.12 1022.07 station -name 34
 	point 1157.55 1049.4 station -name 35
 	point 1003.85 982.865 station -name 33
@@ -120,4 +120,3 @@ scrap dreamsforthesoul-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.
 	point -71.8025 1092.15 station -name 2
 	point -158.373 1123.65 station -name 1
 endscrap
-

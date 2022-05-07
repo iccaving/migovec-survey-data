@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap throneroom-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
-	
+
 	point 131.221 735.851 station -name pit2
 	line wall
 		138.7345 770.019
@@ -15,7 +15,7 @@ scrap throneroom-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		393.0169 610.8466 458.745 616.2332 467.6261 611.7925
 		499.5358 595.8379 535.3232 586.7287 558.7753 566.4952
 	endline
-	
+
 	line wall
 		582.2377 583.3687
 		554.0953 597.3488 527.1897 619.8669 503.5834 635.5761
@@ -26,13 +26,13 @@ scrap throneroom-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		215.0563 783.254 211.0894 785.4585 200.2873 790.165
 		191.6095 794.2869 176.6919 797.1643 181.5912 805.6128
 	endline
-	
+
 	line wall
 		129.9142 826.2278
 		119.389 821.0848 103.3129 812.1363 98.7906 804.6914
 		94.2684 797.2465 95.8209 778.9969 95.8209 778.9969
 	endline
-	
+
 	point 562.67 568.09 station -name 7
 	point 519.53 595.02 station -name 6
 	point 460.76 618.8 station -name 5
@@ -44,8 +44,8 @@ endscrap
 
 
 scrap throneroom-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
-	
-	point 886.0771 323.4263 label -align bl -text "Throne Room" -attr level 1 -scale l
+
+	point 886.0771 323.4263 label -align bl -text "Throne<br>Room" -attr level 1 -scale l
 	point 562.67 568.09 station -name 7
 	point 1093.9 242.19 station -name 15
 	line wall
@@ -58,7 +58,7 @@ scrap throneroom-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		498.9512 486.8364 492.4382 482.0904 488.4641 475.3267
 		484.6405 469.5171 467.7317 457.7376 454.2424 456.0312
 	endline
-	
+
 	line wall
 		464.6587 426.4353
 		503.8307 441.8308 542.2622 479.2261 581.3623 489.9443
@@ -67,7 +67,7 @@ scrap throneroom-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		733.3768 424.0388 797.9582 396.1202 843.9921 363.3614
 		898.551 320.6697 961.2503 305.5611 1019.8367 270.4758
 	endline
-	
+
 	line wall
 		1032.3151 311.0268
 		1005.9217 330.8087 973.2801 337.7789 943.064 349.4139
@@ -76,7 +76,7 @@ scrap throneroom-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		714.323 477.6563 684.3874 508.9475 647.2827 529.4096
 		624.412 545.9815 608.9791 572.1262 582.2377 583.3687
 	endline
-	
+
 	line rock-border -close on
 		647.1626 480.3887
 		658.0903 479.6723
@@ -85,7 +85,7 @@ scrap throneroom-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		662.2338 493.4903
 		654.6982 486.9395
 	endline
-	
+
 	point 905.36 330.14 station -name 14
 	point 810.54 389.35 station -name 13
 	point 718.48 442.5 station -name 12
@@ -97,7 +97,7 @@ endscrap
 
 
 scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 	point 905.36 330.14 station -name 14
 	line wall
 		1019.8367 270.4758
@@ -110,7 +110,7 @@ scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 		1244.0136 164.6638 1228.7366 192.5828 1252.8329 204.6157
 		1263.5913 213.0506 1275.9692 214.5065 1288.7206 214.0587
 	endline
-	
+
 	line rock-border -close on
 		1222.3196 124.244
 		1220.1407 121.6249 1226.7394 118.0097 1226.446 121.9685
@@ -119,7 +119,7 @@ scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 		1213.3166 123.4771 1215.4236 121.1671 1217.7687 122.8751
 		1219.2278 123.4934 1220.7451 124.0202 1222.3196 124.244
 	endline
-	
+
 	line rock-border -close on
 		1263.151 116.4355
 		1263.6955 113.3091 1267.8486 110.453 1265.8736 107.2165
@@ -128,7 +128,7 @@ scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 		1257.4151 110.7749 1257.1659 114.3458 1260.4801 114.5279
 		1261.4805 114.9783 1262.48 115.5417 1263.151 116.4355
 	endline
-	
+
 	line rock-border -close on
 		1244.5331 114.3539
 		1239.1902 123.4366
@@ -136,7 +136,7 @@ scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 		1228.0649 120.1399
 		1220.4985 110.7933
 	endline
-	
+
 	line rock-border -close on
 		1245.6338 120.1297
 		1246.8327 116.5434 1251.2838 116.4424 1254.431 116.6516
@@ -144,7 +144,7 @@ scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 		1254.8417 124.9794 1250.8547 124.0985 1247.4843 124.3155
 		1245.6734 123.8171 1244.7035 121.8145 1245.6338 120.1297
 	endline
-	
+
 	line rock-border -close on
 		1269.5357 118.3556
 		1266.9636 117.9624 1267.2331 114.6275 1268.4245 113.0022
@@ -153,7 +153,7 @@ scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 		1273.6462 115.5279
 		1272.4063 117.0907 1272.0866 118.1988 1269.5357 118.3556
 	endline
-	
+
 	line rock-border -close on
 		1288.6775 94.0861
 		1283.6448 102.7794
@@ -162,7 +162,7 @@ scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 		1262.8627 97.6468
 		1273.5445 93.196
 	endline
-	
+
 	line rock-border -close on
 		1200.2074 115.5254
 		1213.1604 114.0047
@@ -170,19 +170,19 @@ scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 		1209.1392 129.4294
 		1204.6733 122.4774
 	endline
-	
+
 	line u:texture
 		1249.4992 207.5745
 		1223.1363 201.5008 1192.3094 197.1592 1172.3383 217.1295
 	endline
-	
+
 	line wall
 		1285.6775 255.9643
 		1255.3755 258.1928 1227.1861 284.2924 1196.287 269.2076
 		1179.5427 263.461 1166.0579 249.9267 1147.2305 247.553
 		1116.409 254.2285 1058.1907 288.6529 1032.3151 311.0268
 	endline
-	
+
 	line rock-border -close on
 		1200.9377 121.8155
 		1191.1457 138.7285
@@ -190,11 +190,10 @@ scrap throneroom-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 
 		1175.1229 125.3762
 		1185.8047 120.9254
 	endline
-	
+
 	point 1286.12 238.8 station -name 17
 	point 1261.19 235.73 station -name 19
 	point 1227.1 216.83 station -name 18
 	point 1187.37 242.19 station -name 16
 	point 1093.9 242.19 station -name 15
 endscrap
-

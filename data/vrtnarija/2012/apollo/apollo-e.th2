@@ -3,15 +3,15 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap apollo-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
-	point 473.784 1102.0 label -text Apollo -attr level 1 -scale l -attr align t
+
+	point 473.784 1152.0 label -text Apollo -attr level 1 -scale l -attr align tr
 	line wall
 		591.4312 1070.8231
 		577.8506 1070.1441 533.5846 1068.1456 517.7569 1068.786
 		501.9292 1069.4264 498.4047 1075.9158 490.9354 1078.2924
 		483.4661 1080.669 472.2622 1081.348 472.2622 1081.348
 	endline
-	
+
 	line wall
 		630.9829 844.77
 		632.1797 849.7633 637.6049 864.7389 638.9629 871.8687
@@ -24,7 +24,7 @@ scrap apollo-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		579.8877 1024.3099 578.5297 1033.4767 580.5667 1036.5323
 		582.6038 1039.5879 589.0546 1047.3967 589.0546 1047.3967
 	endline
-	
+
 	line wall
 		533.5863 831.0141
 		532.2282 831.3537 510.6271 835.5408 509.9481 837.2383
@@ -41,7 +41,7 @@ scrap apollo-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		472.9412 976.0991 478.7129 1024.6494 479.0524 1031.4396
 		479.392 1038.2299 474.6388 1038.5694 464.1139 1043.3226
 	endline
-	
+
 	point 516.569 847.306 station -name 6
 	point 542.299 850.926 station -name 7
 	point 516.569 925.096 station -name 5
@@ -50,4 +50,3 @@ scrap apollo-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	point 499.929 1069.43 station -name 2
 	point 456.399 1065.57 station -name 1
 endscrap
-

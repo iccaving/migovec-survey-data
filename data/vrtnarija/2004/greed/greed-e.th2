@@ -3,123 +3,123 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 	line survey
 		958.82 187.09
 		903.63 165.04
 	endline
-	
+
 	line survey
 		958.82 187.09
 		922.3 198.11
 	endline
-	
+
 	line survey
 		815.25 247.95
 		922.3 198.11
 	endline
-	
+
 	line survey
 		782.88 262.13
 		815.25 247.95
 	endline
-	
+
 	line survey
 		782.88 262.13
 		748.72 277.24
 	endline
-	
+
 	line survey
 		748.72 277.24
 		686.85 283.46
 	endline
-	
+
 	line survey
 		686.85 283.46
 		667.47 286.69
 	endline
-	
+
 	line survey
 		592.37 291.5
 		667.47 286.69
 	endline
-	
+
 	line survey
 		592.37 291.5
 		571.8 299.06
 	endline
-	
+
 	line survey
 		571.8 299.06
 		546.84 303.78
 	endline
-	
+
 	line survey
 		523.07 296.85
 		546.84 303.78
 	endline
-	
+
 	line survey
 		523.07 296.85
 		494.05 299.29
 	endline
-	
+
 	line survey
 		494.05 299.29
 		456.36 292.52
 	endline
-	
+
 	line survey
 		456.36 292.52
 		438.64 293.94
 	endline
-	
+
 	line survey
 		438.64 299.45
 		438.64 293.94
 	endline
-	
+
 	line survey
 		438.64 299.45
 		399.27 299.29
 	endline
-	
+
 	line survey
 		370.6 301.18
 		399.27 299.29
 	endline
-	
+
 	line survey
 		370.6 301.18
 		352.67 295.75
 	endline
-	
+
 	line survey
 		320.21 314.96
 		352.67 295.75
 	endline
-	
+
 	line survey
 		320.21 314.96
 		226.42 307.64
 	endline
-	
+
 	line survey
 		170.29 271.18
 		226.42 307.64
 	endline
-	
+
 	line survey
 		170.29 271.18
 		121.18 246.14
 	endline
-	
+
 endscrap
 
 
 scrap greed-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
-	point 750.4977 309.9035 label -align tr -text Greed -attr level 1 -scale l
+
+	point 740.4977 319.9035 label -align tr -text Greed -attr level 1 -scale l
 	line wall
 		931.0742 169.559
 		932.8056 169.9918 960.5084 182.1118 963.9713 184.2761
@@ -146,7 +146,7 @@ scrap greed-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		244.9967 315.4316 228.1153 317.5959 226.3839 317.163
 		224.6525 316.7302 224.2196 336.6416 224.2196 336.6416
 	endline
-	
+
 	line wall
 		121.6327 241.846
 		124.2298 242.2789 185.6954 264.7874 187.8597 267.8174
@@ -175,7 +175,7 @@ scrap greed-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		925.8799 188.1718 934.1042 187.739 927.1785 182.1118
 		920.2528 176.4847 908.1328 171.7233 908.1328 171.7233
 	endline
-	
+
 	line wall
 		183.5311 318.4616
 		183.5311 318.4616 190.8897 307.6402 183.0983 300.7145
@@ -185,7 +185,7 @@ scrap greed-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		136.7826 269.9817 130.7226 263.056 128.1255 261.3245
 		125.5284 259.5931 112.5427 247.4731 112.5427 247.4731
 	endline
-	
+
 	point 903.63 165.04 station -name 23
 	point 958.82 187.09 station -name 22
 	point 922.3 198.11 station -name 21
@@ -210,4 +210,3 @@ scrap greed-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	point 170.29 271.18 station -name 2
 	point 121.18 246.14 station -name 1
 endscrap
-

@@ -3,9 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
-	
-	point 6334.0336 265.3965 label -align b -text "Ad Aspera Per Aqua" -attr level 2
-	
+
+	point 6434.0336 295.3965 label -align tl -text "Ad Aspera Per Aqua" -attr level 1
+
 	line border -close on -id ad_aspera_per_aqua-1s_water_1 -visibility on
 		7977.6158 446.55
 		7941.4943 414.8582
@@ -30,11 +30,11 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		7351.4058 436.38
 		7678.1658 441.6868
 	endline
-	
+
 	area water
 	ad_aspera_per_aqua-1s_water_1
 	endarea
-	
+
 	point 8594.2732 1347.6522 water-flow -orientation 180.0
 	point 8672.0858 1057.6925 water-flow -orientation 180.0
 	point 8475.7458 1148.01 water-flow -orientation 180.0
@@ -96,7 +96,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		4987.8458 662.21 4936.0758 673.76 4906.0558 676.37
 		4871.4718 679.3706 4833.0032 684.1676 4794.9582 685.0204
 	endline
-	
+
 	line wall
 		8478.1882 1485.9731
 		8490.7482 1444.5831 8489.797 1384.8791 8489.9428 1334.1054
@@ -104,7 +104,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		8477.576 1091.3222 8493.5704 1044.6706 8495.7496 996.78
 		8497.7026 953.8638 8503.3058 907.31 8489.7058 868.04
 	endline
-	
+
 	line wall
 		8687.0958 512.68
 		8706.5658 517.9 8729.0658 507.88 8748.0558 514.45
@@ -113,7 +113,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		8858.2658 551.03 8851.6958 573.66 8876.6858 575.24
 		8930.5958 578.64 8986.5458 575.44 9040.5158 579.88
 	endline
-	
+
 	line wall
 		7977.6158 446.55
 		7982.2658 446.55 7986.9158 446.55 7991.5758 446.55
@@ -127,7 +127,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		8495.1358 499.03 8548.3658 498.59 8599.8458 498.59
 		8624.3558 498.59 8651.5158 494.97 8687.0958 512.68
 	endline
-	
+
 	line wall
 		7351.4058 436.38
 		7381.5158 436.38 7411.6387 415.1326 7441.3687 411.9726
@@ -143,7 +143,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		7933.7858 446.36 7950.7158 443.54 7966.0258 445.05
 		7967.7658 445.22 7969.5158 445.29 7977.6158 446.55
 	endline
-	
+
 	line wall
 		5782.6558 364.9
 		5793.8958 367.75 5834.5558 377.8 5844.2958 381.5
@@ -168,7 +168,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		7186.3858 436.78 7229.1758 437.58 7272.7158 432.94
 		7301.2958 429.89 7332.9858 432.65 7351.4058 436.38
 	endline
-	
+
 	line wall
 		4787.386 604.4769
 		4804.426 603.6669 4813.5058 609.13 4830.3558 606.41
@@ -198,7 +198,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		5806.6758 415.42 5802.5058 416.01 5798.4258 415.53
 		5779.7358 413.35 5760.5258 410.77 5741.8858 408.37
 	endline
-	
+
 	line rock-border -close on
 		4822.8258 629.5
 		4819.9258 618.25
@@ -208,7 +208,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		4844.1158 619.62
 		4837.4658 624.55
 	endline
-	
+
 	line rock-border -clip off -close on
 		8483.9858 1577.46
 		8494.5258 1536.73
@@ -217,7 +217,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		8618.8158 1582.85
 		8550.6558 1601.74
 	endline
-	
+
 	line rock-border -clip off -close on
 		8721.2958 1644.91
 		8710.9958 1618.17
@@ -226,7 +226,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		8815.9758 1548.38
 		8800.1758 1620.96
 	endline
-	
+
 	line wall
 		9038.1658 611.54
 		9003.6358 605.04 8966.0958 596.21 8930.5658 602.73
@@ -249,7 +249,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		8859.8858 1547.57
 		8859.8858 1572.7
 	endline
-	
+
 	line rock-border -close on
 		8875.6258 592.09
 		8867.7158 593.65
@@ -262,7 +262,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		8895.6958 590.39
 		8885.8058 591.54
 	endline
-	
+
 	line rock-border -close on
 		8818.3058 589.37
 		8803.7258 584.84
@@ -277,7 +277,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		8842.8258 585.59
 		8833.2958 588.98
 	endline
-	
+
 	line rock-border -close on
 		8769.4658 564.79
 		8769.9958 568.52
@@ -290,7 +290,7 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		8781.9458 553.21
 		8784.3458 564.04
 	endline
-	
+
 	point 8237.8758 491.69 water-flow -orientation 267.999999817
 	point 5767.8959 387.07 water-flow -orientation 218.0
 	point 6553.8058 502.18 station -name 5
@@ -305,4 +305,3 @@ scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 	point 8411.7558 498.34 station -name 1
 	point 8728.0458 621.3 station -name 0
 endscrap
-

@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap highway32-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 	line wall -close on -outline in
 		571.0604 1067.2582
 		574.4231 1067.7881 589.3941 1065.3909 596.1843 1065.9002
@@ -16,7 +16,7 @@ scrap highway32-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 3
 		523.6984 1051.6406 529.1306 1058.2611 534.0535 1059.4494
 		538.9764 1060.6377 571.0604 1067.2582 571.0604 1067.2582
 	endline
-	
+
 	point 279.884 982.269 water-flow -orientation 250.53243878815215
 	point 862.571 1022.17 water-flow -orientation 250.53243878815215
 	line wall
@@ -27,7 +27,7 @@ scrap highway32-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 3
 		274.6421 1005.9006 287.1258 1002.5396 280.4038 996.7779
 		273.6818 991.0162 261.6782 984.7743 261.6782 984.7743
 	endline
-	
+
 	line wall -close on -outline in
 		391.4582 1017.1801
 		391.4582 1017.1801 414.2055 1022.2728 417.6006 1024.3099
@@ -43,7 +43,7 @@ scrap highway32-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 3
 		547.634 995.7908 371.7664 994.0932 364.2971 1000.544
 		356.8279 1006.9947 376.5196 1012.0874 391.4582 1017.1801
 	endline
-	
+
 	line wall
 		203.0286 1055.8845
 		160.929 1049.7733 124.9407 1047.7362 93.0265 1049.7733
@@ -53,7 +53,7 @@ scrap highway32-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 3
 		-133.768 1046.3782 -255.3136 1047.7362 -272.9682 1045.6992
 		-290.6229 1043.6621 -331.7039 1046.7177 -357.5069 1048.4153
 	endline
-	
+
 	line wall
 		896.0111 1045.6508
 		888.2023 1043.1045 873.9057 1038.9089 861.6833 1049.0943
@@ -62,7 +62,7 @@ scrap highway32-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 3
 		549.3316 1093.91 509.2691 1070.1441 487.5403 1064.0328
 		465.8114 1057.9216 248.5233 1053.8475 248.5233 1053.8475
 	endline
-	
+
 	line wall
 		278.4004 968.9693
 		313.7097 979.1547 432.5392 975.0805 463.7744 981.8708
@@ -70,7 +70,7 @@ scrap highway32-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 3
 		654.5805 990.6981 757.7924 996.1303 807.3612 1000.8835
 		856.9301 1005.6367 903.9489 1003.9381 909.9353 1001.559
 	endline
-	
+
 	point 815.457 1027.53 station -name 31
 	point 918.466 1020.92 station -name 32
 	point 797.827 1026.98 station -name 30
@@ -102,12 +102,11 @@ endscrap
 
 
 scrap highway32-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
-	
-	point 412.294 1073.7476 label -align t -text "Highway 32" -attr level 1 -scale l
+
+	point 402.294 1083.7476 label -align t -text "Highway 32" -attr level 1 -scale l
 	point 247.177 1072.02 station -name 21
 	point 287.017 1059.11 station -name 20
 	point 325.796 1073.2 station -name 19
 	point 365.567 1062.57 station -name 18
 	point 400.307 1056.43 station -name 17
 endscrap
-

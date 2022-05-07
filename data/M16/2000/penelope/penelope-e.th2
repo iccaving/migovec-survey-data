@@ -4,102 +4,102 @@ encoding  utf-8
 
 
 scrap DELETE-ME-survey-legs-e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
-	
+
 	line survey
 		506.9566 202.5325
 		506.9566 455.4525
 	endline
-	
+
 	line survey
 		506.9566 -196.6775
 		506.9566 202.5325
 	endline
-	
+
 	line survey
 		606.5966 -179.3375
 		606.5966 -258.0775
 	endline
-	
+
 	line survey
 		556.8566 -172.3375
 		606.5966 -179.3375
 	endline
-	
+
 	line survey
 		506.9566 -196.6775
 		556.8566 -172.3375
 	endline
-	
+
 	line survey
 		508.9566 -196.6775
 		466.7766 -212.0275
 	endline
-	
+
 	line survey
 		466.7766 -290.7675
 		466.7766 -212.0275
 	endline
-	
+
 	line survey
 		471.1366 457.9525
 		506.9566 455.4525
 	endline
-	
+
 	line survey
 		569.7566 472.3625
 		502.0366 472.3625
 	endline
-	
+
 	line survey
 		471.1366 457.9525
 		502.0366 472.3625
 	endline
-	
+
 	line survey
 		471.1366 677.7225
 		471.1366 457.9525
 	endline
-	
+
 	line survey
 		424.0066 700.7025
 		471.1366 677.7225
 	endline
-	
+
 	line survey
 		424.0066 700.7025
 		380.6366 684.0625
 	endline
-	
+
 	line survey
 		380.6366 684.0625
 		333.5666 724.9725
 	endline
-	
+
 	line survey
 		333.5666 724.9725
 		307.5966 718.4925
 	endline
-	
+
 	line survey
 		352.6966 1003.2925
 		307.5966 718.4925
 	endline
-	
+
 	line survey
 		362.7566 1043.6325
 		352.6966 1003.2925
 	endline
-	
+
 	line survey
 		371.8266 1038.3925
 		362.7566 1043.6325
 	endline
-	
+
 endscrap
 
 
 scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
-	
+
 	line rock-border -close on
 		453.589 -227.134
 		453.9285 -225.4364 456.3051 -221.3623 456.3051 -219.3252
@@ -110,7 +110,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		431.5207 -220.3438 437.9714 -227.813 439.669 -228.1525
 		441.3665 -228.4921 453.589 -228.4921 453.589 -228.4921
 	endline
-	
+
 	line rock-border -close on
 		498.9139 -219.6647
 		498.0652 -218.4764 495.8583 -211.8559 494.8398 -210.6676
@@ -121,7 +121,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		495.0095 -225.0969
 		499.0837 -220.3438
 	endline
-	
+
 	line rock-border -close on
 		540.674 -209.6491
 		540.674 -209.6491 536.9394 -199.4637 536.2603 -198.6149
@@ -131,7 +131,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		508.0808 -207.4423 510.9666 -216.4394 511.6457 -216.7789
 		512.3247 -217.1184 536.0906 -217.7974 536.0906 -217.7974
 	endline
-	
+
 	line rock-border -close on
 		574.7318 -187.256
 		574.7318 -187.256 560.3657 -181.4695 559.517 -181.2998
@@ -140,9 +140,9 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		547.1247 -189.1086 547.9735 -194.7105 548.4828 -195.3896
 		548.9921 -196.0686 565.2887 -194.8803 565.2887 -194.8803
 	endline
-	
-	point 400.625 154.8178 label -text "Hole in the Hill" -align l
-	point 555.4428 619.2712 label -text "Penelope Pot" -align r
+
+	point 400.625 154.8178 label -text "Hole in the Hill" -align l -attr level 1 -scale l
+	point 555.4428 619.2712 label -text "Penelope Pot" -align r -attr level 1 -scale l
 	line wall
 		576.4926 490.9354
 		555.7661 480.8637
@@ -152,7 +152,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		518.3149 474.8619 512.5532 479.1832 512.073 480.6236
 		511.5929 482.0641 509.2691 490.2564 509.2691 490.2564
 	endline
-	
+
 	line wall
 		608.5966 -258.0775
 		608.5966 -258.0775
@@ -174,7 +174,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		604.3326 411.4894 613.16 475.3178 613.16 475.3178
 		613.839 486.1822
 	endline
-	
+
 	line wall:blocks
 		434.0497 -214.6242
 		452.2952 -228.0682
@@ -194,7 +194,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		593.9375 -233.8299 594.4176 -253.0356 594.4176 -253.0356
 		604.5966 -258.0775
 	endline
-	
+
 	line wall
 		400.2855 -57.0381
 		412.1684 -50.5874
@@ -207,7 +207,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		433.5696 -207.9022
 		434.0497 -214.6242
 	endline
-	
+
 	line wall
 		459.0212 444.0826
 		459.0212 444.0826 461.7373 399.267 461.0583 396.5508
@@ -224,7 +224,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		405.3782 -38.7044
 		393.8348 -46.1737
 	endline
-	
+
 	line wall
 		365.6293 1052.4745
 		365.6293 1052.4745 357.8269 1045.9926 357.2267 1045.2724
@@ -241,7 +241,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		302.0102 711.0925
 		308.9723 711.8127
 	endline
-	
+
 	line wall
 		509.2691 490.2564
 		532.3559 520.473
@@ -276,7 +276,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		365.8693 1033.2688
 		371.8266 1036.3925
 	endline
-	
+
 	line wall
 		453.9757 668.8399
 		453.9757 668.8399 452.5352 661.8778 452.2952 660.1973
@@ -290,7 +290,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		447.4778 453.589
 		447.4778 453.589 459.7002 446.7987 459.0212 444.0826
 	endline
-	
+
 	line wall
 		308.9723 711.8127
 		308.9723 711.8127 324.0969 711.0925 327.4579 709.6521
@@ -303,7 +303,7 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 		430.4486 681.3236 418.6851 685.1648 431.4089 680.8435
 		444.1327 676.5222 453.9757 668.8399 453.9757 668.8399
 	endline
-	
+
 	point 506.9566 455.4525 station -name 12
 	point 506.9566 202.5325 station -name 19
 	point 506.9566 -196.6775 station -name 15
@@ -324,4 +324,3 @@ scrap penelope-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extend
 	point 362.7566 1043.6325 station -name 2
 	point 371.8266 1038.3925 station -name 1
 endscrap
-

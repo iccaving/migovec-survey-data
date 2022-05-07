@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap kamikaze-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
-	
+
 	line rock-border -close on
 		1064.2827 245.2825
 		1063.2477 242.6949 1063.5064 238.8135 1065.5765 238.5547
@@ -12,7 +12,7 @@ scrap kamikaze-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		1072.3043 248.9051 1067.9053 249.9402 1067.1291 248.9051
 		1066.3528 247.8701 1064.2827 245.2825 1064.2827 245.2825
 	endline
-	
+
 	line wall
 		880.0453 142.264
 		880.0453 142.264 873.1893 146.9423 874.9499 150.9988
@@ -24,7 +24,7 @@ scrap kamikaze-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		1000.5758 199.723 1009.4941 210.0608 1022.7977 209.3234
 		1036.1014 208.5857 1058.6874 235.9502 1076.7984 237.1848
 	endline
-	
+
 	point 1076.5 251.02 station -name 1
 	line wall
 		1074.5355 261.3796
@@ -39,7 +39,7 @@ scrap kamikaze-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		846.0802 168.5612 836.1608 169.3791 823.2693 171.1955
 		810.3788 173.0119 783.0785 170.6724 777.4124 162.4606
 	endline
-	
+
 	line wall
 		785.2225 138.3438
 		789.9581 140.1751 795.4417 141.78 800.7963 143.2566
@@ -47,7 +47,7 @@ scrap kamikaze-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		829.6861 156.7853 839.9898 154.9363 847.9826 147.9427
 		852.3637 144.11 859.6898 140.0436 861.484 137.5317
 	endline
-	
+
 	point 789.78 149.13 station -name 6
 	point 819.07 158.03 station -name 5
 	point 849.42 156.46 station -name 4
@@ -57,8 +57,8 @@ endscrap
 
 
 scrap kamikaze-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
-	
-	point 576.3367 186.0851 label -align tr -text Kamikaze -attr level 1 -scale l
+
+	point 576.3367 196.0851 label -align tr -text Kamikaze -attr level 1 -scale l
 	line rock-border -close on
 		178.0368 187.4278
 		177.2485 185.8218 172.2704 168.6871 172.2704 168.6871
@@ -67,13 +67,13 @@ scrap kamikaze-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		195.3359 188.1486
 		195.3359 188.1486 178.4881 188.3474 178.0368 187.4278
 	endline
-	
+
 	line u:texture
 		289.3998 187.5546
 		289.3998 187.5546 329.0436 192.9606 339.1348 192.2398
 		349.2259 191.519 382.743 187.915 385.2658 186.8338
 	endline
-	
+
 	point 789.78 149.13 station -name 6
 	line wall
 		777.4124 162.4606
@@ -110,7 +110,7 @@ scrap kamikaze-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		227.0805 189.2452 219.2549 193.1902 212.2402 194.3153
 		200.1213 202.5655 192.8844 206.3527 183.3668 206.5597
 	endline
-	
+
 	line wall
 		220.3967 172.9121
 		219.668 183.9643 242.992 176.6779 248.1471 175.4832
@@ -142,7 +142,7 @@ scrap kamikaze-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		749.6422 123.9713 764.686 122.543 774.1364 132.0725
 		776.4992 134.4547 780.4869 136.5125 785.2225 138.3438
 	endline
-	
+
 	point 286.87 176.61 station -name 23
 	point 291.32 164.41 station -name 22
 	point 346.38 160.55 station -name 21
@@ -167,7 +167,7 @@ scrap kamikaze-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		178.1611 163.8935 182.9885 161.212 188.5604 162.2221
 		194.1323 163.2322 211.6917 181.7576 210.6108 173.764
 	endline
-	
+
 	point 169.68 180.55 station -name 27
 	point 215.49 175.75 station -name 26
 	point 215.49 171.42 station -name 25
@@ -176,7 +176,7 @@ endscrap
 
 
 scrap kamikaze-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 	point 147.763 205.448 breakdown-choke
 	line rock-border -close on
 		132.4642 196.7982
@@ -185,25 +185,25 @@ scrap kamikaze-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 30
 		159.8544 181.6615 163.2191 195.6054 161.296 196.0774
 		158.7648 196.6986 132.4642 196.7982 132.4642 196.7982
 	endline
-	
+
 	point 116.048 189.59 breakdown-choke
 	line u:texture
 		175.8744 294.1057
 		205.427 291.2225
 	endline
-	
+
 	line rock-border -close on
 		148.2292 299.8721
 		148.2292 299.8721 156.1412 281.5487 157.1336 281.1314
 		158.0974 280.7261 175.8744 297.7097 175.8744 297.7097
 		176.3297 299.6573 148.2292 299.8721 148.2292 299.8721
 	endline
-	
+
 	line u:texture
 		236.4213 348.8863
 		236.4213 348.8863 149.2049 353.9318 127.581 359.6982
 	endline
-	
+
 	point 169.68 180.55 station -name 27
 	line wall
 		268.1363 392.8548
@@ -211,7 +211,7 @@ scrap kamikaze-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 30
 		179.4783 388.5301 175.8744 405.1084 148.4841 408.7124
 		121.0938 412.3164 84.2458 395.2646 84.2458 395.2646
 	endline
-	
+
 	line wall
 		82.5682 167.9209
 		82.5682 167.9209 102.4457 173.0177 115.109 178.6822
@@ -219,7 +219,7 @@ scrap kamikaze-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 30
 		140.656 185.7996 146.1304 180.9058 152.1352 179.7049
 		158.1399 178.5045 165.629 178.483 167.337 177.7774
 	endline
-	
+
 	line wall
 		79.0727 352.3835
 		81.3195 347.7321 83.1158 343.5829 83.7047 340.5454
@@ -231,7 +231,7 @@ scrap kamikaze-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 30
 		64.7294 208.1856
 		60.6519 199.0114 58.1035 186.779 58.1035 186.779
 	endline
-	
+
 	line wall
 		183.3668 206.5597
 		164.59 221.8993 195.9631 246.5486 189.2357 255.61
@@ -241,7 +241,7 @@ scrap kamikaze-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 30
 		235.7006 332.6941 243.7755 339.023 251.7124 341.1267
 		260.9418 342.6924 256.5674 348.6254 266.4244 346.6629
 	endline
-	
+
 	point 262.18 356.3 station -name 35
 	point 235.36 354.02 station -name 34
 	point 200.97 326.14 station -name 33
@@ -251,4 +251,3 @@ scrap kamikaze-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 30
 	point 133.5 203.15 station -name 29
 	point 133.5 190.87 station -name 28
 endscrap
-

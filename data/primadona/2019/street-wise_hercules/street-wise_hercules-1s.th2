@@ -3,9 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
-	
-	point 1783.56 3869.76 label -attr level 2 -align br -scale m -text "Street-wise Hercules"
-	
+
+	point 1783.56 3869.76 label -attr level 1 -align br -scale l -text "Street-wise Hercules"
+
 	line rock-border -clip off -close on
 		2143.8282 4632.6492
 		2122.885 4629.9837
@@ -16,7 +16,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2172.768 4613.6098
 		2158.2981 4623.1295
 	endline
-	
+
 	line rock-border -clip off -close on
 		2211.6082 4600.6631
 		2189.5226 4591.905
@@ -28,7 +28,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2222.0478 4580.2983 2217.9703 4586.6728 2215.3605 4591.764
 		2212.7505 4596.8552 2211.6082 4600.6631 2211.6082 4600.6631
 	endline
-	
+
 	line rock-border -clip off -close on
 		2273.798 4648.195
 		2248.833 4653.7425
@@ -39,7 +39,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2284.7192 4613.6098
 		2279.2586 4630.9024
 	endline
-	
+
 	line rock-border -clip off -close on
 		2244.3558 4701.9523
 		2231.0283 4725.5611
@@ -50,7 +50,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2205.5156 4685.9593
 		2224.9357 4693.9558
 	endline
-	
+
 	line rock-border -clip off -close on
 		2306.0432 4730.8921
 		2279.3882 4741.1733
@@ -61,7 +61,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2282.4346 4708.8065
 		2294.2389 4719.8493
 	endline
-	
+
 	line rock-border -clip off -close on
 		2325.0826 4628.8413
 		2304.9009 4621.2256
@@ -72,7 +72,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2339.5526 4594.5705
 		2332.3176 4611.7059
 	endline
-	
+
 	line wall
 		2178.8606 4554.2071
 		2140.782 4553.4456
@@ -83,7 +83,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		1809.4976 4503.9433
 		1756.208 4456.08
 	endline
-	
+
 	line wall -subtype blocks
 		2443.1264 4543.5451
 		2378.3928 4577.0543
@@ -93,7 +93,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2333.46 4675.2972
 		2382.9622 4705.7602
 	endline
-	
+
 	line wall -subtype blocks
 		2237.5018 4752.9777
 		2202.828 4726.75
@@ -105,7 +105,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2219.288 4562.77
 		2178.8606 4554.2071
 	endline
-	
+
 	line wall
 		1756.208 4456.08
 		1738.208 4455.19 1719.428 4455.42 1701.508 4452.51
@@ -124,7 +124,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		1257.338 4180.6 1230.768 4164.36 1214.258 4140.77
 		1196.718 4115.69 1183.218 4086.93 1166.698 4061.2
 	endline
-	
+
 	line wall
 		1646.768 3913.77
 		1652.418 3920.02 1657.518 3926.76 1663.268 3932.91
@@ -146,7 +146,7 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2324.618 4402.28 2361.948 4411.01 2392.768 4429.87
 		2417.858 4445.22 2437.538 4469.71 2461.758 4486.68
 	endline
-	
+
 	point 2406.39 4477.63 water-flow -orientation 255.99999799010095
 	point 2123.92 4371.07 water-flow -orientation 255.99999799010095
 	point 1862.63 4179.19 water-flow -orientation 209.0000108952689
@@ -162,4 +162,3 @@ scrap street-wise_hercules-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 	point 1555.16 4209.19 station -name 1
 	point 1349.86 3869.11 station -name 0
 endscrap
-

@@ -338,7 +338,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 15@penny_falls 1@ave_maria
 
 	join klic_globin-p3@klic_globin moonraker_2-p1@moonraker_2
-	join klic_globin-p1@klic_globin deeper_than_most-p1@deeper_than_most
+	#join klic_globin-p1@klic_globin deeper_than_most-p1@deeper_than_most
 	join deeper_than_most-p1@deeper_than_most tiger_tiger-p1@tiger_tiger
 	join moonraker_2-p1@moonraker_2 moonraker-p2@moonraker
 	join moonraker-p1@moonraker klic_globin-p1@klic_globin
@@ -362,6 +362,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join ave_maria-p1@ave_maria lost_in_a_dream_2-p1@lost_in_a_dream_2
 	join ave_maria-p1@ave_maria snakebitetwo-p1@snakebitetwo
 	join holy_moley-e1@holy_moley alabaster-e1@alabaster
+	join purgatory-1e@purgatory alabaster-e1@alabaster
+	join purgatory-1e@purgatory bath-1s@bath
+	join bath-1s@bath canticle_for_migovec-1e@canticle_for_migovec
 	join holy_moley-e1@holy_moley sweet_baby_jesus-1e@sweet_baby_jesus
 	join sweet_baby_jesus-1e@sweet_baby_jesus hallelujah-1e@hallelujah
 	join come_up_smiling-s1@come_up_smiling galerija-e1@galerija
@@ -484,8 +487,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 
 	join the_aqueduct-p2@the_aqueduct ad_aspera_per_aqua-1p@ad_aspera_per_aqua
-	join klic_globin-p3@klic_globin artemis-1p@artemis
-	join artemis-1p@artemis tartarus-1p@tartarus
+	join l1@klic_globin l1@artemis
+	join l2@klic_globin l2@artemis
+	#join artemis-1p@artemis tartarus-1p@tartarus
 	join artemis-3p@artemis poseidon_rift-3p@poseidon_rift
 	join lachrymosa-1p@lachrymosa artemis-1p@artemis
 	join s1_l1@forget_me_not s1_l5@the_stile

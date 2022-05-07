@@ -3,12 +3,12 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 endscrap
 
 
 scrap guillotine2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 	line rock-border -clip off -close on
 		475.4296 430.3127
 		475.4296 430.3127 455.6378 429.8871 455.2122 434.7819
@@ -17,7 +17,7 @@ scrap guillotine2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 		472.8758 449.4661 480.1116 443.7201 480.1116 442.4432
 		480.1116 441.1663 478.6218 435.8459 478.6218 435.8459
 	endline
-	
+
 	line rock-border -clip off -close on
 		469.4708 419.672
 		469.4708 419.672 462.4479 423.9283 461.5966 424.1411
@@ -29,7 +29,7 @@ scrap guillotine2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 		469.8964 404.7749 471.8118 409.8825 471.5989 412.0106
 		471.3861 414.1388 469.4708 419.672 469.4708 419.672
 	endline
-	
+
 	line wall
 		721.1156 303.5581
 		721.1156 303.5581 698.2421 317.7036 689.8151 328.5383
@@ -43,7 +43,7 @@ scrap guillotine2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 		491.4782 417.6244 482.1482 423.3428 482.1482 423.3428
 		482.1482 429.3621
 	endline
-	
+
 	line wall
 		445.1293 416.4205
 		456.2651 410.4012
@@ -63,8 +63,8 @@ scrap guillotine2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 		698.8441 292.4224 704.2614 290.6166 705.4653 287.9079
 		706.6692 285.1992 719.0088 276.7721 719.0088 276.7721
 	endline
-	
-	point 727.1114 314.9666 label -align tr -text Guillotine -attr level 1 -scale l
+
+	point 717.1114 334.9666 label -align tr -text Guillotine -attr level 1 -scale l
 	point 670.063 323.043 station -name 10
 	point 719.633 294.383 station -name 11
 	point 591.183 353.283 station -name 9
@@ -77,4 +77,3 @@ scrap guillotine2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150
 	point 520.813 452.343 station -name 2
 	point 630.243 492.183 station -name 1
 endscrap
-

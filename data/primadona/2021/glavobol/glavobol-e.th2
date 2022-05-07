@@ -3,67 +3,67 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-glavobol-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
+
 	line survey
 		223.72 511.42
 		152.77 561.1
 	endline
-	
+
 	line survey
 		152.77 561.1
 		128.24 579.53
 	endline
-	
+
 	line survey
 		128.24 579.53
 		128.24 654.33
 	endline
-	
+
 	line survey
 		128.24 654.33
 		120.4 655.04
 	endline
-	
+
 	line survey
 		379.6 344.96
 		358.47 358.66
 	endline
-	
+
 	line survey
 		358.47 358.66
 		322.08 375.67
 	endline
-	
+
 	line survey
 		322.08 375.67
 		280.91 391.42
 	endline
-	
+
 	line survey
 		280.91 391.42
 		261.94 418.5
 	endline
-	
+
 	line survey
 		261.94 418.5
 		261.94 468.11
 	endline
-	
+
 	line survey
 		261.94 468.11
 		249.3 495.28
 	endline
-	
+
 	line survey
 		249.3 495.28
 		226.08 511.5
 	endline
-	
+
 	line survey
 		226.08 511.5
 		223.72 511.42
 	endline
-	
+
 	point 223.72 511.42 station-name -align tr -scale xs -text 2.9
 	point 152.77 561.1 station-name -align tr -scale xs -text 1.2
 	point 128.24 579.53 station-name -align tr -scale xs -text 1.3
@@ -81,8 +81,11 @@ endscrap
 
 
 scrap glavobol-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
+
 	point 199.457 461.284 label -align bl -attr level 1 -scale l -text Glavobol
+
+	point 299.457 351.284 u:connectionmarker -attr code 15 -attr text "possibly to Street-wise Hercules?" -align br -attr offset 0.25
+
 	line wall
 		435.7149 322.5011
 		435.7149 322.5011 413.6773 350.2055 412.418 352.7241
@@ -103,7 +106,7 @@ scrap glavobol-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 
 		172.0034 644.1326
 		153.997 655.5386
 	endline
-	
+
 	line wall
 		120.8089 641.5118
 		120.8089 641.5118 120.2623 600.8045 118.3734 596.397
@@ -120,7 +123,7 @@ scrap glavobol-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 
 		306.0079 365.317 306.6375 354.613 307.8968 350.8351
 		309.1561 347.0573 309.1561 319.3529 309.1561 319.3529
 	endline
-	
+
 	point 223.72 511.42 station -name 2.9
 	point 152.77 561.1 station -name 1.2
 	point 128.24 579.53 station -name 1.3
@@ -135,4 +138,3 @@ scrap glavobol-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 
 	point 249.3 495.28 station -name 2.7
 	point 226.08 511.5 station -name 2.8
 endscrap
-

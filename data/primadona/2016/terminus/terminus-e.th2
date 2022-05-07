@@ -4,11 +4,11 @@ encoding  utf-8
 
 
 scrap terminus-1e -scale [326.0 -736.0 526.0 -735.0 0.0 0.0 7 0.0 m] -projection extended
-	
+
 	area water
 	water1
 	endarea
-	
+
 	line border -close on -id water1
 		650.9307 631.8658
 		656.1509 620.2907
@@ -21,9 +21,9 @@ scrap terminus-1e -scale [326.0 -736.0 526.0 -735.0 0.0 0.0 7 0.0 m] -projection
 		645.9376 640.4904
 		648.4342 636.1781
 	endline
-	
-	point 216.9769 754.426 label -text Terminus -align l
-	
+
+	point 216.9769 754.426 label -text Terminus -align l -attr level 2
+
 	line wall
 		1274.911 934.9989
 		1274.911 934.9989 1229.9746 914.4566 1227.7278 913.8146
@@ -60,7 +60,7 @@ scrap terminus-1e -scale [326.0 -736.0 526.0 -735.0 0.0 0.0 7 0.0 m] -projection
 		290.161 758.142
 		310.8639 748.0313
 	endline
-	
+
 	line wall
 		986.3549 796.9799
 		986.3549 796.9799 1088.1038 795.375 1090.9926 795.375
@@ -78,7 +78,7 @@ scrap terminus-1e -scale [326.0 -736.0 526.0 -735.0 0.0 0.0 7 0.0 m] -projection
 		1251.4799 891.3464 1266.5657 899.3708 1269.4545 900.3337
 		1272.3432 901.2966 1281.6515 904.5064 1281.6515 904.5064
 	endline
-	
+
 	line wall
 		703.2553 622.3697
 		761.3517 626.5424
@@ -110,7 +110,7 @@ scrap terminus-1e -scale [326.0 -736.0 526.0 -735.0 0.0 0.0 7 0.0 m] -projection
 		1055.3644 817.2013 1034.5011 819.1271 1033.2172 819.1271
 		1031.9333 819.1271 1005.7909 814.0837 1005.7909 814.0837
 	endline
-	
+
 	line wall
 		310.8639 748.0313
 		310.8639 748.0313 356.7632 751.8829 358.5286 751.8829
@@ -132,7 +132,7 @@ scrap terminus-1e -scale [326.0 -736.0 526.0 -735.0 0.0 0.0 7 0.0 m] -projection
 		667.9481 639.0604 668.911 631.357 668.911 631.357
 		667.3061 628.1472
 	endline
-	
+
 	point 1319.1107 923.5137 station -name 16
 	point 1293.2369 920.5631 station -name 15
 	point 1206.9908 832.5014 station -name 13
@@ -149,4 +149,3 @@ scrap terminus-1e -scale [326.0 -736.0 526.0 -735.0 0.0 0.0 7 0.0 m] -projection
 	point 416.625 780.2892 station -name 2
 	point 308.1356 757.5 station -name 1
 endscrap
-

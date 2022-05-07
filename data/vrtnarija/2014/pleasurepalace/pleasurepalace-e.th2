@@ -4,8 +4,8 @@ encoding  utf-8
 
 
 scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
-	point 136.3607 -124.8373 label -align bl -attr level 1 -scale l -text "Pleasure Palace"
+
+	point 146.3607 -114.8373 label -align bl -attr level 1 -scale l -text "Pleasure Palace"
 	line rock-border -close on
 		153.4736 -93.9839
 		153.4736 -93.9839 156.3898 -93.359 159.7017 -92.8799
@@ -18,7 +18,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		145.6416 -104.8153
 		149.5576 -99.3996
 	endline
-	
+
 	line rock-border -close on
 		134.9768 -84.8188
 		140.6425 -89.2347
@@ -29,7 +29,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		128.8112 -99.9828
 		131.894 -92.4008
 	endline
-	
+
 	line rock-border -close on
 		115.7646 -69.2943
 		123.2163 -74.4796
@@ -40,7 +40,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		112.1474 -78.9864
 		113.956 -74.1403
 	endline
-	
+
 	line rock-border -close on
 		94.9837 -64.1556
 		103.7322 -68.155
@@ -51,7 +51,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		94.6504 -70.9878
 		94.817 -67.5717
 	endline
-	
+
 	line rock-border -close on
 		78.4865 -74.4872
 		82.7358 -74.4872 86.7351 -74.0706 89.4847 -73.904
@@ -62,7 +62,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		77.1667 -81.8716
 		77.8266 -78.1794
 	endline
-	
+
 	line rock-border -close on
 		98.983 -76.3202
 		103.4822 -79.2364 107.9398 -81.4443 111.2726 -82.9232
@@ -76,7 +76,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		93.9839 -83.9022 95.5669 -81.9442 96.8167 -80.0487
 		98.0665 -78.1532 98.983 -76.3202 98.983 -76.3202
 	endline
-	
+
 	line rock-border -close on
 		73.3207 -52.8243
 		77.9032 -54.2407 79.6113 -53.1159 80.6736 -52.6784
@@ -88,7 +88,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		64.5545 -68.0346 67.0376 -63.9613 69.2292 -60.1587
 		71.4207 -56.3561 73.3207 -52.8243 73.3207 -52.8243
 	endline
-	
+
 	line rock-border -close on
 		53.9564 -40.7764
 		60.7125 -44.1334 64.7311 -43.8648 66.7696 -43.7641
@@ -100,7 +100,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		54.5509 -53.0596 54.4068 -49.8725 54.2582 -46.8017
 		54.1095 -43.7309 53.9564 -40.7764 53.9564 -40.7764
 	endline
-	
+
 	line wall
 		-295.2826 96.6501
 		-292.9497 85.9852 -295.6159 42.9926 -293.2829 32.3278
@@ -117,7 +117,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		163.3053 -109.9811 274.1196 -120.6459 282.7847 -119.9794
 		293.4205 -121.2636 302.2975 -120.1501 309.7801 -120.6459
 	endline
-	
+
 	line wall
 		308.1137 -99.4829
 		308.1137 -99.4829 255.956 -96.9833 251.2902 -94.9837
@@ -139,7 +139,7 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 		-256.2893 50.658 -258.6222 87.9849 -259.9553 90.9844
 		-261.2884 93.9839 -260.9548 95.9828 -260.9548 95.9828
 	endline
-	
+
 	point -296.92 112.01 station -name 19
 	point -307.2 109.49 station -name 20
 	point -275.83 97.91 station -name 18
@@ -161,4 +161,3 @@ scrap pleasurepalace-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 
 	point 266.81 -112.01 station -name 2
 	point 307.2 -112.01 station -name 1
 endscrap
-

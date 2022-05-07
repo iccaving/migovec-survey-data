@@ -19,7 +19,7 @@ line wall -subtype invisible
   564.3268 500.1854
 endline
 
-line wall 
+line wall
   510.7775 570.7998
   510.7775 570.7998 499.2474 557.1281 491.3586 557.2654
   479.5913 557.4702 481.9433 573.7421 463.1128 578.4497
@@ -30,7 +30,7 @@ line wall
   222.4354 738.509 194.1896 744.982 194.1896 744.982
 endline
 
-line wall 
+line wall
   564.3268 500.1854
   555.5 513.1314
   555.5 513.1314 549.6155 523.1351 550.7924 526.0773
@@ -38,7 +38,7 @@ line wall
   557.2654 550.7924 554.9115 561.973 554.9115 561.973
 endline
 
-line wall 
+line wall
   176.1944 698.1673
   176.1944 698.1673 186.5397 694.375 186.5397 691.4327
   186.5397 688.4905 171.8284 649.0641 172.4168 642.0026
@@ -59,6 +59,5 @@ point 269.216 653.692 station -name 3
 point 417.348 532.191 station -name 2
 point 477.682 498.903 station -name 1
 
-point 356.0052 446.8719 label -align bl -text "Lost in a Dream"
+point 356.0052 446.8719 label -align bl -text "Lost in<br>a Dream" -attr level 1 -scale l
 endscrap
-

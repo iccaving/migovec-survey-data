@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap wonder-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
+
 	point -218.0414 -764.0801 label -align l -text "Earthquake Way" -attr level 1 -scale l
 	line border -close on -id wonder-1e_water_1 -visibility on
 		-114.9364 -771.9809
@@ -19,11 +19,11 @@ scrap wonder-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 50
 		-115.9374 -778.3874
 		-115.4401 -775.2043
 	endline
-	
+
 	area water
 	wonder-1e_water_1
 	endarea
-	
+
 	line wall
 		-197.7578 -742.3199
 		-197.7578 -742.3199 -183.5258 -743.4435 -180.9041 -742.6944
@@ -32,7 +32,7 @@ scrap wonder-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 50
 		-155.8108 -764.0349
 		-155.8108 -764.0349 -146.8221 -783.8848 -145.6985 -785.0084
 	endline
-	
+
 	line wall
 		-500.0 -271.7161
 		-500.0 -271.7161 -538.1952 -312.73 -540.4423 -314.6026
@@ -63,14 +63,14 @@ scrap wonder-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 50
 		-171.9078 -722.8369 -166.6645 -732.5746 -171.5333 -732.5746
 		-176.4022 -732.5746 -191.3832 -731.451 -191.3832 -731.451
 	endline
-	
+
 	line wall -id alt1
 		-123.5939 -783.5102
 		altitude .
 		-123.9684 -780.1395 -127.7137 -766.282 -128.0882 -764.7839
 		-128.2495 -764.1387 -129.0361 -762.4513 -130.1188 -760.2903
 	endline
-	
+
 	line wall
 		-130.1188 -760.2903
 		-131.5499 -757.434 -133.4985 -753.7502 -135.2042 -750.5519
@@ -101,7 +101,7 @@ scrap wonder-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 50
 		-495.1246 -297.7489 -494.75 -295.8762 -488.7576 -291.0074
 		-482.7652 -286.1385 -471.9117 -272.7355 -447.5636 -264.8305
 	endline
-	
+
 	line wall
 		-447.5636 -264.8305
 		-402.5424 -239.9364
@@ -129,7 +129,7 @@ scrap wonder-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 50
 		123.411 1.0593 129.7669 11.1229 129.7669 11.1229
 		141.5712 26.2169
 	endline
-	
+
 	line wall
 		130.3354 42.6961
 		108.0508 20.1271
@@ -163,7 +163,7 @@ scrap wonder-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 50
 		-472.9873 -249.4703 -479.3432 -259.0042 -481.9915 -261.1229
 		-484.6398 -263.2415 -500.0 -271.7161 -500.0 -271.7161
 	endline
-	
+
 	point -136.39 -769.21 station -name 1
 	point -165.61 -700.39 station -name 2
 	point -203.04 -695.12 station -name 3
@@ -190,13 +190,13 @@ endscrap
 
 
 scrap wonder-2e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
-	
-	point 319.078 392.897 label -align l -text "Wonder Stuff" -attr level 1 -scale l
+
+	point 319.078 392.897 label -align l -text "Wonder<br>Stuff" -attr level 1 -scale l
 	line survey
 		520.69 622.44
 		520.69 857.87
 	endline
-	
+
 	point 520.69 622.44 station-name -align tr -scale xs -text 33
 	point 154.34 37.24 station -name 23
 	point 191.19 56.77 station -name 24
@@ -213,52 +213,52 @@ scrap wonder-2e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 		154.34 37.24
 		191.19 56.77
 	endline
-	
+
 	line survey
 		191.19 56.77
 		273.32 136.14
 	endline
-	
+
 	line survey
 		273.32 136.14
 		295.78 143.39
 	endline
-	
+
 	line survey
 		295.78 143.39
 		295.78 166.22
 	endline
-	
+
 	line survey
 		295.78 166.22
 		366.15 223.23
 	endline
-	
+
 	line survey
 		366.15 223.23
 		366.15 474.41
 	endline
-	
+
 	line survey
 		366.15 474.41
 		388.02 545.98
 	endline
-	
+
 	line survey
 		388.02 545.98
 		426.87 563.23
 	endline
-	
+
 	line survey
 		426.87 563.23
 		480.06 593.94
 	endline
-	
+
 	line survey
 		480.06 593.94
 		520.69 622.44
 	endline
-	
+
 	point 154.34 37.24 station-name -align tr -scale xs -text 23
 	point 191.19 56.77 station-name -align tr -scale xs -text 24
 	point 273.32 136.14 station-name -align tr -scale xs -text 25
@@ -323,7 +323,7 @@ scrap wonder-2e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 		524.0996 618.9089 524.3644 619.7034 524.6292 622.3517
 		524.8941 625.0 526.4831 633.2097 526.4831 633.2097
 	endline
-	
+
 	line wall
 		496.2924 638.7712
 		468.1586 612.726
@@ -356,7 +356,7 @@ scrap wonder-2e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 		143.0693 53.9319
 		130.3354 42.6961
 	endline
-	
+
 	line wall
 		526.4831 633.2097
 		526.4831 633.2097 530.4555 645.6568 530.9852 647.2458
@@ -413,7 +413,7 @@ scrap wonder-2e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 		1086.0699 1047.4047 1119.9682 1052.4364 1119.9682 1052.4364
 		1123.411 1057.2034
 	endline
-	
+
 	line wall
 		1076.2712 1077.3305
 		1076.2712 1077.3305 1073.8877 1079.4492 1068.8559 1078.6547
@@ -466,7 +466,7 @@ scrap wonder-2e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 		500.2648 653.072 498.411 646.4513 497.6165 645.1271
 		496.822 643.803 496.2924 638.7712 496.2924 638.7712
 	endline
-	
+
 	point 520.69 857.87 station -name 34
 	point 578.74 892.76 station -name 35
 	point 629.46 912.2 station -name 36
@@ -486,72 +486,72 @@ scrap wonder-2e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 		520.69 857.87
 		578.74 892.76
 	endline
-	
+
 	line survey
 		578.74 892.76
 		629.46 912.2
 	endline
-	
+
 	line survey
 		629.46 912.2
 		646.84 921.42
 	endline
-	
+
 	line survey
 		646.84 921.42
 		664.95 921.42
 	endline
-	
+
 	line survey
 		664.95 921.42
 		681.83 925.35
 	endline
-	
+
 	line survey
 		681.83 925.35
 		738.92 951.97
 	endline
-	
+
 	line survey
 		738.92 951.97
 		752.47 971.34
 	endline
-	
+
 	line survey
 		752.47 971.34
 		777.02 976.93
 	endline
-	
+
 	line survey
 		777.02 976.93
 		802.43 982.36
 	endline
-	
+
 	line survey
 		802.43 982.36
 		828.13 994.33
 	endline
-	
+
 	line survey
 		828.13 994.33
 		895.87 1053.23
 	endline
-	
+
 	line survey
 		895.87 1053.23
 		913.13 1054.72
 	endline
-	
+
 	line survey
 		913.13 1054.72
 		950.14 1054.72
 	endline
-	
+
 	line survey
 		950.14 1054.72
 		1052.89 1045.75
 	endline
-	
+
 	point 520.69 857.87 station-name -align tr -scale xs -text 34
 	point 578.74 892.76 station-name -align tr -scale xs -text 35
 	point 629.46 912.2 station-name -align tr -scale xs -text 36
@@ -571,7 +571,7 @@ endscrap
 
 
 scrap wonder-3e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
-	
+
 	line wall
 		1123.6758 1058.5276
 		1123.6758 1058.5276 1132.4153 1083.4216 1132.9449 1084.4809
@@ -636,7 +636,7 @@ scrap wonder-3e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 		552.9661 1781.5148
 		541.4843 1780.4444
 	endline
-	
+
 	line wall
 		535.9481 1761.5921
 		546.383 1763.0942
@@ -707,7 +707,7 @@ scrap wonder-3e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 		1085.2754 1081.5678 1085.2754 1079.4492 1085.2754 1079.4492
 		1077.5953 1076.8009
 	endline
-	
+
 	point 1112.97 1058.5 station -name 49
 	point 1112.97 1304.96 station -name 50
 	point 1047.69 1349.06 station -name 51
@@ -731,87 +731,87 @@ scrap wonder-3e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 		1112.97 1304.96
 		1047.69 1349.06
 	endline
-	
+
 	line survey
 		1047.69 1349.06
 		1038.67 1400.16
 	endline
-	
+
 	line survey
 		1038.67 1400.16
 		1006.99 1429.76
 	endline
-	
+
 	line survey
 		1006.99 1429.76
 		969.54 1474.33
 	endline
-	
+
 	line survey
 		969.54 1474.33
 		951.81 1484.57
 	endline
-	
+
 	line survey
 		951.81 1484.57
 		934.65 1509.13
 	endline
-	
+
 	line survey
 		934.65 1509.13
 		886.24 1533.78
 	endline
-	
+
 	line survey
 		886.24 1533.78
 		886.24 1607.8
 	endline
-	
+
 	line survey
 		886.24 1607.8
 		839.02 1609.45
 	endline
-	
+
 	line survey
 		839.02 1609.45
 		801.43 1613.39
 	endline
-	
+
 	line survey
 		801.43 1613.39
 		765.75 1730.08
 	endline
-	
+
 	line survey
 		765.75 1730.08
 		726.62 1739.13
 	endline
-	
+
 	line survey
 		726.62 1739.13
 		709.5 1747.17
 	endline
-	
+
 	line survey
 		709.5 1747.17
 		645.47 1769.21
 	endline
-	
+
 	line survey
 		645.47 1769.21
 		594.29 1769.21
 	endline
-	
+
 	line survey
 		594.29 1769.21
 		534.45 1769.21
 	endline
-	
+
 	line survey
 		534.45 1769.21
 		616.33 1769.21
 	endline
-	
+
 	point 1112.97 1058.5 station-name -align tr -scale xs -text 49
 	point 1112.97 1304.96 station-name -align tr -scale xs -text 50
 	point 1047.69 1349.06 station-name -align tr -scale xs -text 51
@@ -832,4 +832,3 @@ scrap wonder-3e -projection extended -scale [0 0 96 0 0 0 200 0 inch]
 	point 534.45 1769.21 station-name -align tr -scale xs -text 66
 	point 616.33 1769.21 station-name -align tr -scale xs -text 67
 endscrap
-

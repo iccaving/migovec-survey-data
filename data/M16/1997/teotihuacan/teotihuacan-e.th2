@@ -4,72 +4,72 @@ encoding  utf-8
 ##XTHERION## xth_me_image_insert {-1071.466200 1 1.0} {948.516390 {}} "/Users/AchilleTalon/Desktop/Screen%20Shot%202021-01-29%20at%2014.43.26.png" 0 {}
 
 scrap DELETE-ME-survey-legs-teotihuacan-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
+
 	line survey
 		99.92 553.58
 		7.36 680.98
 	endline
-	
+
 	line survey
 		99.92 553.58
 		124.56 545.63
 	endline
-	
+
 	line survey
 		189.18 471.3
 		124.56 545.63
 	endline
-	
+
 	line survey
 		189.18 471.3
 		212.27 446.5
 	endline
-	
+
 	line survey
 		263.11 438.54
 		212.27 446.5
 	endline
-	
+
 	line survey
 		263.11 438.54
 		325.91 389.88
 	endline
-	
+
 	line survey
 		385.02 372.72
 		325.91 389.88
 	endline
-	
+
 	line survey
 		385.02 372.72
 		408.67 340.91
 	endline
-	
+
 	line survey
 		408.67 337.99
 		408.67 340.91
 	endline
-	
+
 	line survey
 		446.24 319.02
 		408.67 337.99
 	endline
-	
+
 	line survey
 		446.24 319.02
 		468.52 327.68
 	endline
-	
+
 	line survey
 		479.25 346.42
 		468.52 327.68
 	endline
-	
+
 	line survey
 		479.25 346.42
 		492.64 369.49
 	endline
-	
+
 	point 99.92 553.58 station-name -align tr -scale xs -text 2
 	point 7.36 680.98 station-name -align tr -scale xs -text 1
 	point 124.56 545.63 station-name -align tr -scale xs -text 3
@@ -88,13 +88,13 @@ endscrap
 
 
 scrap teotihuacan-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
+
 	line wall -subtype invisible
 		275.1998 440.4622
 		244.5554 467.0195
 	endline
-	
-	point -37.6059 622.8814 label -align l -text "Teotihuacán" -attr level 1 -scale l
+
+	point -27.6059 602.8814 label -align bl -text "Teotihuacán" -attr level 1 -scale l
 	line wall
 		244.5554 467.0195
 		244.5554 467.0195 236.7589 465.2085 232.8881 465.7703
@@ -115,7 +115,7 @@ scrap teotihuacan-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 2
 		5.2966 726.6949
 		2.1186 735.1695
 	endline
-	
+
 	line wall
 		421.5758 336.0213
 		421.5758 336.0213 413.8602 358.3077 408.4609 368.7452
@@ -129,7 +129,7 @@ scrap teotihuacan-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 2
 		301.4179 426.9096 286.9752 429.2118 275.7235 434.2371
 		273.6795 435.15 275.1998 440.4622 275.1998 440.4622
 	endline
-	
+
 	line wall
 		108.0508 485.1695
 		108.0508 485.1695 111.2288 476.6949 97.4576 472.4576
@@ -154,7 +154,7 @@ scrap teotihuacan-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 2
 		381.5594 349.8216 387.3387 336.0332 395.6427 336.8372
 		402.6905 337.5195 402.2165 323.8002 402.2165 323.8002
 	endline
-	
+
 	line wall
 		-40.2542 709.7458
 		-40.2542 709.7458 -23.3051 667.3729 -19.0678 661.0169
@@ -170,7 +170,7 @@ scrap teotihuacan-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 2
 		127.1186 483.0508
 		108.0508 485.1695
 	endline
-	
+
 	point 99.92 553.58 station -name 2
 	point 7.36 680.98 station -name 1
 	point 124.56 545.63 station -name 3
@@ -186,4 +186,3 @@ scrap teotihuacan-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 2
 	point 479.25 346.42 station -name 12
 	point 492.64 369.49 station -name 13
 endscrap
-

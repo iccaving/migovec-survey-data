@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap republica-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
-	
+
 	point 383.0 389.0 water-flow -orientation 177.19999788707895
 	point 365.0 389.0 water-flow -orientation 177.19999788707895
 	point 333.0 303.0 water-flow -orientation 222.20000189356222
@@ -17,7 +17,7 @@ scrap republica-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		371.3366 288.1092
 		388.8608 288.5685
 	endline
-	
+
 	point 234.77 250.56 station -name 2
 	point 259.01 252.53 station -name 3
 	point 379.62 291.74 station -name 4
@@ -48,7 +48,7 @@ scrap republica-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		410.235 399.3691 394.9033 414.8693 397.186 422.288
 		399.4687 429.7067 410.3114 436.5547 404.6047 443.9734
 	endline
-	
+
 	line wall
 		338.407 427.9947
 		338.407 427.9947 337.8363 423.4293 340.6897 412.5866
@@ -60,7 +60,7 @@ scrap republica-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		216.9558 270.3823 213.3899 267.1077 213.4696 263.8076
 		213.6536 256.1923 219.9243 246.2206 215.9631 244.7207
 	endline
-	
+
 	line wall
 		215.9631 244.7207
 		232.9226 245.4039 275.8527 243.8018 284.4949 246.067
@@ -80,15 +80,15 @@ scrap republica-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		775.2769 155.856 809.8501 174.9303 817.5141 178.3127
 		842.7748 189.4613 856.917 205.5862 883.7385 191.8609
 	endline
-	
+
 endscrap
 
 
 scrap republica-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
-	point 314.8507 350.6685 label -align tl -text Republica -attr level 1 -scale l
+
+	point 344.8507 350.6685 label -align tr -text Republika -attr level 1 -scale l
 	# &#127796; de &#129381; for the palma de coco emojis, not supported by font
-	
+
 	point 234.77 250.56 station -name 2
 	point 259.01 252.53 station -name 3
 	point 276.41 247.25 station -name 1
@@ -109,7 +109,7 @@ scrap republica-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250
 		290.2396 104.5602 317.4084 106.4303 334.325 105.1806
 		350.1521 102.4374 346.635 103.3065 362.0056 105.9566
 	endline
-	
+
 	line wall
 		366.0793 160.2993
 		334.1891 160.385 320.4617 138.9319 314.0731 151.3595
@@ -117,6 +117,5 @@ scrap republica-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250
 		315.0081 211.8202 315.2419 221.525 315.8266 238.1004
 		316.4512 255.8045 280.0606 276.2052 255.9382 276.3749
 	endline
-	
-endscrap
 
+endscrap

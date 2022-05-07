@@ -32,24 +32,16 @@ layout base-p
 	code tex-map
 
 		\def\gridspecs{
-		\par \bf Length:\ss{} 44.1 km
-		\par \bf Depth:\ss{} 965 m
-		\par \bf Meridian convergence: \ss \the\gridconv{}$^{\circ}$
-  	\par \bf Coordinate system: \ss \the\outcsname{} (\the\outcscode{})}
+		\par \bf Meridian convergence/konvergenca poldnevnikov: \ss \the\gridconv{}$^{\circ}$
+  	\par \bf Coordinate system/ koordinatni sistem: \ss \the\outcsname{} (\the\outcscode{})}
 
-		\def\bigcomment{
-		\par \bf Length:\ss{} 44.1 km
-		\par \bf Depth:\ss{} 965 m
-		\par\par \the\comment{}
-		}
 		\framethickness=0.5mm
 		\def\maplayout{
-
-		\legendbox{1}{82}{W}{\size[26]\the\cavename{}}
-		\legendbox{1}{79}{NW}{\bigcomment{}}
+		\legendbox{1}{80}{SW}{\size[46]\bf\the\cavename\ss{}}
+		\legendbox{1}{79}{NW}{\size[13]\bf\the\comment{}\ss{}}
 		\legendbox{15}{5}{NW}{\scalebar{}}
-		\legendbox{25}{7}{S}{\northarrow{}}
-		\legendbox{15}{2}{SW}{\size[10]\gridspecs{}}
+		\legendbox{25}{7}{SW}{\northarrow{}}
+		%\legendbox{15}{2}{SW}{\size[10]\gridspecs{}}
 		}
 	endcode
 

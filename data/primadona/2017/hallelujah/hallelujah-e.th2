@@ -3,8 +3,8 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap hallelujah-1e -projection extended -scale [327.0 -735.0 527.0 -734.0 0.0 0.0 14 0.0 m]
-	
-	point 225.423 648.407 label -align t -text Hallelujah
+
+	point 225.423 648.407 label -align t -text Hallelujah -scale l -attr level 1
 	point 139.254 462.921 water-flow -orientation 102.54521425131604
 	point 939.619 318.454 water-flow -orientation 102.54521425131604
 	point 512.82 417.301 water-flow -orientation 102.54521425131604
@@ -12,7 +12,7 @@ scrap hallelujah-1e -projection extended -scale [327.0 -735.0 527.0 -734.0 0.0 0
 		955.6298 415.9422
 		862.1117 501.3038
 	endline
-	
+
 	line wall
 		862.1117 501.3038
 		853.9405 500.7802 847.8955 509.7992 840.0229 512.0497
@@ -29,14 +29,14 @@ scrap hallelujah-1e -projection extended -scale [327.0 -735.0 527.0 -734.0 0.0 0
 		132.5331 569.5341 130.7421 546.2512 130.7421 546.2512
 		125.3691 534.3113
 	endline
-	
+
 	line wall
 		1112.1675 354.8393
 		1075.9791 364.3055 1013.4578 379.3645 1013.4578 379.3645
 		1013.4578 379.3645 958.7353 380.9595 959.9293 380.9595
 		961.1233 380.9595 955.6298 415.9422 955.6298 415.9422
 	endline
-	
+
 	line wall
 		75.6736 453.0087
 		93.4299 446.2544
@@ -74,7 +74,7 @@ scrap hallelujah-1e -projection extended -scale [327.0 -735.0 527.0 -734.0 0.0 0
 		1063.8466 295.8115 1085.04 299.0949 1088.9205 297.6024
 		1092.8009 296.11 1113.0988 299.6919 1124.7402 297.6024
 	endline
-	
+
 	point 122.086 496.85 station -name 10
 	point 144.055 498.864 station -name 9
 	point 211.448 480.992 station -name 8
@@ -86,4 +86,3 @@ scrap hallelujah-1e -projection extended -scale [327.0 -735.0 527.0 -734.0 0.0 0
 	point 1007.58 322.378 station -name 2
 	point 1115.79 316.93 station -name 1
 endscrap
-

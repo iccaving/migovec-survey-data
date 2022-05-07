@@ -3,58 +3,58 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 	line survey
 		82.65 79.53
 		105.43 77.95
 	endline
-	
+
 	line survey
 		40.63 27.64
 		82.65 79.53
 	endline
-	
+
 	line survey
 		-18.38 38.03
 		40.63 27.64
 	endline
-	
+
 	line survey
 		-31.33 35.75
 		-18.38 38.03
 	endline
-	
+
 	line survey
 		-78.55 34.09
 		-31.33 35.75
 	endline
-	
+
 	line survey
 		5.72 -7.24
 		40.63 27.64
 	endline
-	
+
 	line survey
 		-22.39 -7.24
 		5.72 -7.24
 	endline
-	
+
 	line survey
 		-50.93 -52.91
 		-22.39 -7.24
 	endline
-	
+
 	line survey
 		-50.93 -52.91
 		-105.43 -79.53
 	endline
-	
+
 endscrap
 
 
 scrap clapton-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
-	point -283.5237 -34.8184 label -align bl -attr level 1 -scale l -text Clapton
+
+	point -303.5237 -54.8184 label -align bl -attr level 1 -scale l -text Clapton
 	line wall
 		101.3798 104.7997
 		101.3798 104.7997 90.955 103.8156 88.1192 101.3954
@@ -71,20 +71,20 @@ scrap clapton-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300
 		-89.8544 33.7344 -100.5528 33.3855 -113.05 30.1319
 		-120.2952 28.2457 -133.1878 28.1315 -133.1878 28.1315
 	endline
-	
+
 	line wall
 		-258.7666 90.9684
 		-258.7666 90.9684 -261.1674 58.7988 -263.5681 43.4342
 		-265.9688 28.0696 -275.0915 -8.9014 -278.9327 -24.266
 		-282.7738 -39.6306 -284.6944 -91.7191 -283.2539 -111.885
 	endline
-	
+
 	line wall -subtype presumed
 		-258.7666 232.6108
 		-258.7666 232.6108 -258.2865 155.7878 -257.8064 143.3041
 		-257.3262 130.8204 -258.5437 91.6716 -258.5437 91.6716
 	endline
-	
+
 	line wall -subtype presumed
 		-133.5195 27.7071
 		-140.3814 26.4206 -142.2279 25.7779 -153.3101 29.6129
@@ -92,7 +92,7 @@ scrap clapton-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300
 		-185.6212 117.0805 -189.8445 178.7939 -189.8445 178.7939
 		-189.8445 178.7939 -191.7393 223.6703 -192.2807 231.8734
 	endline
-	
+
 	line wall
 		-98.5796 -84.1269
 		-69.1742 -76.7806 -72.4601 -82.9703 -43.0238 -52.9791
@@ -104,7 +104,7 @@ scrap clapton-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300
 		81.6558 47.3022 80.3161 64.8417 84.9665 70.0353
 		94.5013 71.7669 98.9937 69.8584 98.9937 69.8584
 	endline
-	
+
 	point 105.43 77.95 station -name 10
 	point 82.65 79.53 station -name 9
 	point 40.63 27.64 station -name 5
@@ -116,4 +116,3 @@ scrap clapton-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300
 	point -50.93 -52.91 station -name 2
 	point -105.43 -79.53 station -name 1
 endscrap
-
