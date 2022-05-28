@@ -2,37 +2,37 @@ encoding  utf-8
 survey smer0
 	input "smer0-p.th2"
 	input "smer0-e.th2"
-	
-	
-	map msmer0p_1 -projection plan
+
+
+	map m1p -projection plan
 		smer0p_1
 	endmap
-	
-	map msmer0p_2 -projection plan
+
+	map m2p -projection plan
 		smer0p_2
 	endmap
-	
-	map msmer0p_3 -projection plan
+
+	map m3p -projection plan
 		smer0p_3
 	endmap
-	
-	map msmer0p_4 -projection plan
+
+	map m4p -projection plan
 		smer0p_4
 	endmap
-	
-	map msmer0p_5 -projection plan
+
+	map m5p -projection plan
 		smer0p_5
 	endmap
-	
-	map msmer0p_6 -projection plan
+
+	map m6p -projection plan
 		smer0p_6
 	endmap
-	
+
 	map  m-all-e -projection extended
 		smer0-e1
 		smer0-e2
 	endmap
-	
+
 	join smer0p_2 smer0p_1
 	join smer0p_3 smer0p_2
 	join smer0p_3 smer0p_6
@@ -40,16 +40,16 @@ survey smer0
 	join smer0p_4 smer0p_5
 
 	join smer0-e1 smer0-e2
-	
+
 	map m-all-p -projection plan
-		msmer0p_1
-		msmer0p_2
-		msmer0p_3
-		msmer0p_4
-		msmer0p_5
-		msmer0p_6
+		m1p
+		m2p
+		m3p
+		m4p
+		m5p
+		m6p
 	endmap
-	
+
 	centreline
 		date 2002.12.08
 		explo-date 2002.12.08
@@ -60,8 +60,8 @@ survey smer0
 		team "Dejan Ristić"insts
 		team "Matteo Rivadossi" notes
 		author "2018.07.01" "JSPDT"
-		
-		
+
+
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
@@ -126,8 +126,7 @@ survey smer0
 		56  55  7.6  65  2
 		extend left
 		57  56  5.3  32  47 #point 57 end of rope in gallery second pitch
-		
-		
+
+
 	endcentreline
 endsurvey
-

@@ -6,21 +6,21 @@ encoding  utf-8
 
 
 scrap quantum_statep_1 -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
-	
-	point 171.0 -150.0 label -attr level 3 -text "Quantum< State" -align t
-	
+
+	point 171.0 -150.0 label -attr level 3 -text "Quantum State" -align t
+
 	point 282.0 -403.0 water-flow -orientation 314.4
-	
+
 	point 260.0 -450.0 water-flow -orientation 90.5
-	
+
 	point 166.0 -311.0 water-flow -orientation 338.7
-	
+
 	point 213.0 -227.0 water-flow -orientation 130.4
-	
+
 	point 418.0 -257.0 water-flow -orientation 119.3
-	
+
 	point 353.0 -183.0 water-flow -orientation 151.0
-	
+
 	line wall
 		470.0 -265.0
 		464.0 -263.0 449.0 -257.0 442.0 -253.0
@@ -55,44 +55,44 @@ scrap quantum_statep_1 -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 		436.0 -275.0 442.0 -281.0 442.0 -281.0
 		smooth off
 	endline
-	
+
 	point 235.0 -435.0 station -name "12"
-	
+
 	point 338.0 -444.0 station -name "11"
-	
+
 	point 295.0 -427.0 station -name "10"
-	
+
 	point 288.0 -384.0 station -name "9"
-	
+
 	point 213.0 -359.0 station -name "8"
-	
+
 	point 175.0 -326.0 station -name "7"
-	
+
 	point 132.0 -221.0 station -name "6"
-	
+
 	point 164.0 -187.0 station -name "5"
-	
+
 	point 251.0 -257.0 station -name "4"
-	
+
 	point 336.0 -155.0 station -name "3"
-	
+
 	point 377.0 -228.0 station -name "2"
-	
+
 	point 457.0 -274.0 station -name "1"
-	
+
 endscrap
 
 
 
 scrap quantum_statep_2 -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
-	
+
 	line pit -reverse on
 		217.0 -400.0
 		217.0 -400.0 225.0 -394.0 233.0 -395.0
 		241.0 -396.0 263.0 -405.0 267.0 -412.0
 		smooth off
 	endline
-	
+
 	line wall -id s2_l2
 		267.0 -412.0
 		267.0 -412.0 255.0 -406.0 255.0 -400.0
@@ -104,7 +104,7 @@ scrap quantum_statep_2 -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 		256.0 -321.0
 		246.0 -313.0
 	endline
-	
+
 	line wall -id s2_l1
 		230.0 -318.0
 		230.0 -318.0 218.0 -325.0 213.0 -331.0
@@ -114,15 +114,13 @@ scrap quantum_statep_2 -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 		smooth off
 		217.0 -400.0
 	endline
-	
+
 	point 338.0 -444.0 station -name "11"
-	
+
 	point 184.0 -523.0 station -name "14"
-	
+
 	point 276.0 -451.0 station -name "13"
-	
+
 	point 235.0 -435.0 station -name "12"
-	
+
 endscrap
-
-

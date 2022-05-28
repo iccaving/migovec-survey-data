@@ -15,4 +15,5 @@ header-includes:
 
 ### Planika chamber to Mona tip exit
 
+\clearpage
 \ThreeColWidthFigure{../outputs/spiral_climb_to_monatip_exit.pdf}

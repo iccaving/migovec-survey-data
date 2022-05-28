@@ -2,26 +2,26 @@ encoding  utf-8
 survey the_stile
 	input "the_stile-p.th2"
 	input "the_stile-s.th2"
-	
+
 	map m-all-p -projection plan
-		mthe_stile-1p
-		mthe_stile-2p
+		m1p
+		m2p
 	endmap
-	
-	map mthe_stile-1p -projection plan
+
+	map m1p -projection plan
 		the_stile-1p
 	endmap
-	
-	map mthe_stile-2p -projection plan
+
+	map m2p -projection plan
 		the_stile-2p
 	endmap
-	
+
 	map  m-all-e -projection extended
 		the_stile-s1
 	endmap
-	
+
 	join the_stile-1p the_stile-2p
-	
+
 	centreline
 		date 2016.07.20
 		explo-date 2016.07.20
@@ -29,11 +29,11 @@ survey the_stile
 		explo-team "Arun Paul"
 		team "Arun Paul" insts
 		team "Tanguy Racine" notes
-		
+
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
-		
+
 		#Data on 2 pages
 		#Page 1/2
 		extend left
@@ -43,13 +43,13 @@ survey the_stile
 		3	4	4.27	010	-01
 		extend left
 		4	5	3.97	340	+01
-		
+
 		5	6	3.95	051	+04
 		6	7	4.66	334	-04
 		7	8	3.66	319	0
 		8	9	3.68	013	-07
 		9	10	2.79	067	-03
-		
+
 		10	11	1.92	300	-08
 		extend left
 		11	12	3.36	062	-35
@@ -61,12 +61,11 @@ survey the_stile
 		14	15	4.30	231	-17
 		15	16	1.78	282	-45
 		16	17	1.13	284	+21
-		
+
 		#Stn 1 is Cattle_Grid Stn 23
 		#Stn 10 is PSS
 		#Stn 17 is Cattle_Grid 15
-		
-	endcentreline
-	
-endsurvey
 
+	endcentreline
+
+endsurvey

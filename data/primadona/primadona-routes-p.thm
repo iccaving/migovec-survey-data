@@ -1,3 +1,20 @@
+map m-cafe_to_hallelujah-p -projection plan -title "Mary's Cafe to Hallelujah"
+	m1p@galerija
+	m2p@galerija
+	m3p@galerija
+	m1p@smer0
+	m2p@the_stile
+endmap
+
+map m-cafe_to_hallelujah2-p -projection plan -title "Mary's Cafe to Hallelujah"
+	m2p@cattlegrid
+	m3p@cattlegrid
+	m-all-p@fenestrator
+	m-all-p@plumbers_paradise
+	m-all-p@hallelujah
+	m-all-p@sweet_baby_jesus
+endmap
+
 map m-cafe_to_manger-p -projection plan
 	m-all-p@pov
 	m1p@zima00

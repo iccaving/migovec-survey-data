@@ -1,28 +1,28 @@
 encoding  utf-8
 survey cattlegrid
-	
+
 	input "cattlegrid-p.th2"
 	input "cattlegrid-e.th2"
-	
+
 	map m-all-p -projection plan
-		mcattlegrid-1p
-		mcattlegrid-2p
-		mcattlegrid-3p
+		m1p
+		m2p
+		m3p
 	endmap
-	
-	map mcattlegrid-1p -projection plan
+
+	map m1p -projection plan
 		cattlegrid-1p
 	endmap
-	
-	map mcattlegrid-2p -projection plan
+
+	map m2p -projection plan
 		cattlegrid-2p
 	endmap
 
-	map mcattlegrid-3p -projection plan
+	map m3p -projection plan
 		cattlegrid-3p
 	endmap
-	
-	
+
+
 	map  m-all-e -projection extended
 		cattlegrid-e2
 		break
@@ -33,17 +33,17 @@ survey cattlegrid
 
 	join cattlegrid-1p cattlegrid-3p
 	join cattlegrid-2p cattlegrid-3p
-	
+
 	centreline
 		date 2016.07.22
 		explo-date 2016.07.22
 		explo-team "William Scott" "Rhys Tyers"
-		
+
 		team "William Scott" insts tape
 		team "Rhys Tyers" notes
-		
+
 		mark 3 8 17 23 fixed
-		
+
 		#Page 1/2
 		extend left
 		1	2	9.40	096	+65
@@ -79,9 +79,9 @@ survey cattlegrid
 		21	22	4.85	155	+48
 		extend right
 		22	23	4.53	124	+08
-		
-		
-		
+
+
+
 		#NOTES
 		#Stn 1 is botom of too-tight rift
 		#Stn 2 is bolt (2nd down)
@@ -91,8 +91,5 @@ survey cattlegrid
 		#Stn 23 is PSS in Not Very Good (Big Chamber)
 		#>23 is re-survey
 	endcentreline
-	
+
 endsurvey
-
-
-

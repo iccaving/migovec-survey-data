@@ -7,9 +7,6 @@ header-includes:
 
 ## Drugi Vhod to Mary's Cafe
 
-### Overview
-Cavers undertaking the Primadona-Monatip through-trip will have the opportunity to complete a spectacular surface abseil, visit one of the largest chambers in the system and finish with a memorable exit panorama. Monatip offers some challenging free-climbs and constrictions and poses some navigational problems. The trip described here starts from the Migovec Plateau and uses the abseil rope to [entrance]Primadona entrance. Spanning a length of 70m, the traverse from Monatip entrance to the surface ropes is very exposed A through trip all the way to [cafe]Sejna Soba will take 4-6h with route finding, while the shorter round via Alkatraz will take 3-5h.
-
 ### Surface abseil
 The surface abseil of Primadona begins in a shallow valley at the USTART way point. Several rebelays on a high angle grass and scree slope lead to a lip of rock next to a prominent rock spire, which is crowned by a lightning struck bush of dwarf pine. The spire overhangs the second, more vertical part of the descent: a series of rebelays landing on various rock ledges, which eventually drop by the entrance snow slope of [entrance]Primadona. A traverse line leading north stops short of the [entrance]Monatip entrance, which lies just around the next rocky ridge, 70m away. Two ways into the gaping entrance of Primadona can be followed: Drugi Vhod is the high level climb into a black void, while the main route is down the snow slope.
 

@@ -14,5 +14,5 @@ header-includes:
 ### Hotline to Mig Country
 
 ### Mig Country to Mona tip -- NCB connection passage
-
+\clearpage
 \ThreeColWidthFigure{../outputs/m16ent_to_NCB.pdf}

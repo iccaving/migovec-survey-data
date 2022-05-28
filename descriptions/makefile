@@ -2,7 +2,7 @@
 # pandoc texlive-xetex texlive-science texlive-humanities
 
 # Tell make that we are not expecting these as actual files
-.PHONY: all prepare therion markdown pdf clean
+.PHONY: all prepare therion markdown pdf pdfonly clean
 
 all: prepare markdown therion pdf clean
 
@@ -34,6 +34,17 @@ pdf: prepare markdown therion
 	xelatex descriptions.tex ;\
 	mv *.pdf ../outputs
 	cd ..;\
+
+pdfonly: prepare markdown
+		cd $$(git rev-parse --show-toplevel)/descriptions; \
+		cd tmp ;\
+		cp ../tex/* . ;\
+		xelatex descriptions.tex ;\
+		bibtex descriptions.aux ;\
+		xelatex descriptions.tex ;\
+		xelatex descriptions.tex ;\
+		mv *.pdf ../outputs
+		cd ..;\
 
 clean: prepare pdf
 	cd $$(git rev-parse --show-toplevel)/descriptions; \

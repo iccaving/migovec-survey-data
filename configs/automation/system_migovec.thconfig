@@ -22,7 +22,7 @@ input "../../layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view
-maps-offset off
+
 
 layout plan
 	copy base-p
@@ -39,6 +39,8 @@ layout plan
 endlayout
 
 select m-all-p@system_migovec
+
+maps-offset off
 
 language sl
 export map -projection plan -o ../../outputs/system_migovec_plan_SLO.pdf -layout plan
