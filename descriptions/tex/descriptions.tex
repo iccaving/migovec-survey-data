@@ -15,7 +15,7 @@
 papersize={210mm,297mm},%
 columnsep=3mm,%
 headsep=21pt,%
-inner=25mm,outer=50mm,top=0.3in,bottom= 0.7in, marginparwidth=38mm]{geometry}
+inner=25mm,outer=25mm,top=0.6in,bottom= 1.2in, marginparwidth=38mm]{geometry}
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage{graphicx}
@@ -80,11 +80,11 @@ inner=25mm,outer=50mm,top=0.3in,bottom= 0.7in, marginparwidth=38mm]{geometry}
 
 
                  \fancyhf{}% clear all header and footer fields
-                 \fancyfoot[LE]{\footnotesize \textcolor{bluegrey}{ \textbf{\thepage}}}
-                 \fancyfoot[RO]{\footnotesize \textcolor{bluegrey}{ \textbf{\thepage}}}
+                 \fancyfoot[LE]{\footnotesize \textcolor{bluegrey}{ \textbf{\thepage}}~---~\textsf{\textit{JSPDT}/ICCC~---~\textbf{Tolminski Migovec}}}
+                 \fancyfoot[RO]{\footnotesize \textcolor{bluegrey}{\textsf{\textbf{Tolminski Migovec}~---~\textit{JSPDT}/ICCC}~---~\textbf{\thepage}}}
 
-                 \fancyfoot[CE]{ \footnotesize  \textsf{\textit{JSPDT}/ICCC --- \textbf{Tolminski Migovec}}} % except the center
-                  \fancyfoot[CO]{ \footnotesize  \textsf{\textbf{Tolminski Migovec} --- \textit{JSPDT}/ICCC}} % except the center
+                 \fancyfoot[RE]{ \footnotesize  \rightmark} % except the center
+                  \fancyfoot[LO]{ \footnotesize  \rightmark} % except the center
                  \renewcommand{\headrulewidth}{0pt}%
                  \renewcommand{\footrulewidth}{0.0pt}%
 

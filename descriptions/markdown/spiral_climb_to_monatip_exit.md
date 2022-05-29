@@ -7,6 +7,9 @@ header-includes:
 
 ## Spiral Climb to Monatip Exit
 
+The following description enables the navigation of the connection between Primadona and Mona tip entrances.
+The passages between the Primadona-entrance and the Spiral climb are described in the 'Drugi Vhod' section.
+
 ### Spiral Climb to Alkatraz chamber
 
 ### Alkatraz to Cloaca Maxima

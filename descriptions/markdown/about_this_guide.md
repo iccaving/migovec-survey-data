@@ -6,7 +6,7 @@ header-includes:
 ---
 
 
-\TopFullWidthFigure{../outputs/face_of_mig_2018_tracine.jpg}{The south face of Tolminski Migovec, seen from Grusnica.}{Južno pobočje Tolminskega Migovca, gledano z Grusnice.}{\smalltriangle{90}}{Tanguy Racine, 2018}
+\TopFullWidthFigure{../outputs/face_of_mig_2018_tracine.jpg}{The south face of Tolminski Migovec, seen from Grušnica.}{Južno pobočje Tolminskega Migovca, gledano z Grušnice.}{\smalltriangle{90}}{Tanguy Racine, 2018}{\photo}
 
 ## Selected trips under the Hollow Mountain
 
@@ -27,14 +27,36 @@ Each double page contains both a map, with highlighted route and its correspondi
 The plan view maps also displays some connecting passages which may also be of interest for a short visit.
 The description of such excursions from the main route are given in *italics* in the text.
 
-\newpage
-
 ## The cave system
 
 The Tolminksi Migovec cave system is composed of three main sub-systems, known as the Old system (M2-M16-M18), Vrtnarija (also encompasses Vilinska Jama entrance), and Primadona-Mona tip (including U-bend and Belladonna entrances).
 Vrtnarija connects to the Old System at the Dreams for the Soul.
 Two connections between Mona tip and the Old system are known: at Mig Country (M16) and in NCB passage (M18).
 Mona tip and Primadona are connected in several places, notably at Alkatraz and near Sejna Soba.
-\clearpage
+
+## Access to the entrances
+
+### Primadona
+
+### Mona tip
+
+### M-16
+The entrance of M-16 lies close to the Bivi.
+Heading to the NE along a faint path from the top of Bivi, skirting around the opening of M-10, the way on is across a very shallow valley.
+After cresting the far side and walking on the top surface of a wide bedding plane, a short clamber down into a deeper valley offers a view into the opening of a wide cave entrance on the left hand side (M-1).
+Heading away from this obvious entrance, a series of down-climbs leads almost immediately into a small pothole, at the bottom of which, a short clamber down gives access both a neighbouring pothole, and further down, to a dug out draughty crawl which soon leads to a window into a pitch-head (rigged).
+This is the start of the M-16 entrance series.
+
+### M-18
+
+From the entrance of M-1, continuing NE for approximately 100 m on the gently ascending bedding surface leads to another main crest.
+Descending beyond this crest, and keeping to the right leads almost
+
+### Vrtnarija
+
+
+\TopFullWidthFigure{../../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}}{}
+
+\newpage
 
 \ThreeColWidthFigure{../outputs/system_overview.pdf}

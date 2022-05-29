@@ -8,24 +8,32 @@ header-includes:
 ## Drugi Vhod to Mary's Cafe
 
 ### Surface abseil
-The surface abseil of Primadona begins in a shallow valley at the USTART way point. Several rebelays on a high angle grass and scree slope lead to a lip of rock next to a prominent rock spire, which is crowned by a lightning struck bush of dwarf pine. The spire overhangs the second, more vertical part of the descent: a series of rebelays landing on various rock ledges, which eventually drop by the entrance snow slope of [entrance]Primadona. A traverse line leading north stops short of the [entrance]Monatip entrance, which lies just around the next rocky ridge, 70m away. Two ways into the gaping entrance of Primadona can be followed: Drugi Vhod is the high level climb into a black void, while the main route is down the snow slope.
+The surface abseil of Primadona begins in a shallow valley at the USTART way point. Several rebelays on a high angle grass and scree slope lead to a lip of rock next to a prominent rock spire, which is crowned by a lightning struck bush of dwarf pine. The spire overhangs the second, more vertical part of the descent: a series of rebelays landing on various rock ledges, which eventually drop by the entrance snow slope of Primadona. A traverse line leading north stops short of the Monatip entrance, which lies just around the next rocky ridge, 70 m away. Two ways into the gaping entrance of Primadona can be followed: _Drugi Vhod_ is the high level climb into a black void, while the original entrance is found at the bottom of the snow slope.
 
-### Entrance series to Bear Pitch
-At the bottom of the entrance snow slope (carving steps in the snow is essential to prevent a fall), a crawl over sharp cobbles, through a small drip leads to a small draughty chamber with the first pitch rope leading off. The SRT route keeps close to the western wall, a solid fault plane. After the P5, the second pitch is split in the middle by a broad, uneven ledge with many loose cobbles and boulders. It is advised to wait until the pitch is cleared by the person above before proceeding on the way out. This lands in a large $4,times10$m, dry, boulder strewn chamber. At the far end, a way over boulders leads to a tricky downclimb into an aven (where Drugi Vhod comes in), while a way through the boulders leads to the top of Bear Pitch.
+### Belladonna to Bear Pitch
+Belladonna entrance is a short pendulum below the hanging rebelay in the surface abseil.
+The swing leads to a short descending tube and pitch head. Following two drops, the _Drugi vhod_ entrance chamber is reached.
+A short, draughty crawl leads past a first pitch head, but the way on is a parallel pitch beyond a short traverse.
+Following the first drop, a ledge where the rope is deviated lands on a steep boulder climb down to a narrow pitch head.
+Below this drop is a short traverse, followed by a deviated rope and a landing on a steeply inclined bedrock ramp.
+At the bottom of this pitch, a junction with the original entrance series is found, but the way on is the beckoning pitch head.
 
 ### Bear Pitch to Spiral Climb
-Bear Pitch is split near the top by a rebelay avoiding rub on a large ledge. The rope drops into a boulder floor chamber where a bear skeleton was discovered in the early 2000's. A carbide mark (+M) notes the place where they were found. A short traverse leads to the next drop (P15). This leads into a larger fault controlled cavern: a traverse on ledges leads to a Y-hang to reach the floor. This is followed by two short downclimbs where calcite encrusted fossils stick out of the black rock. Soon after, a window at the base of the left hand wall reveals a boulder chamber, the Spiral Climb, but the way is in the rift, and around two massive boulders by keeping to the right hand wall in a corkscrew fashion.
+_Bear Pitch_ is split near the top by a rebelay avoiding rub on a large ledge. The rope drops into a boulder floor chamber where a bear skeleton was discovered in the early 2000's. A carbide mark (+M) notes the place where they were found. A short traverse leads to the next drop (P15). This leads into a larger fault controlled cavern: a traverse on ledges leads to a Y-hang to reach the floor. This is followed by two short downclimbs where calcite encrusted fossils stick out of the black rock. Soon after, a window at the base of the left hand wall reveals a boulder chamber, the _Spiral Climb_, but the way is in the rift, and around two massive boulders by keeping to the right hand wall in a corkscrew fashion.
 
-### Spiral Climb to Monatip rift - Short Route
-This short route leads directly into Alkatraz chamber from the Spiral Climb. After the two boulders, a climb on the right handside leads up several metres into the roof until a wriggle pops out into a small, mud floored chamber. On the far side is a steep, muddy slope descending into the western end of Alkatraz chamber. Turning left, and going up the massive, cleanwashed boulder collapse leads to a cairned passage, the lower connection with Monatip rift.
+_At this point, a climb up on the right-hand side leads up several metres into the roof.  A constricted rope up between boulders pops out into a small, boulder floored chamber. On the far side is an opening to a steep, muddy slope descending into the western end of_ Alkatraz _chamber._
 
 ### Spiral Climb to Risanke
-Below the boulders, and under a small drip, a rift of small dimensions leads to the next pitch, with a rebelay rigged of a nose of rock protruding from the wall. At the bottom, a small downclimb passes next to water collecting bottles, and up to a dryer chamber with paper note, Lost and Found junction.
+
+Below the boulders, and under a small drip, a descending rift of small dimensions leads to the next pitch, with a rebelay rigged of a nose of rock protruding from the wall. At the bottom, a small down-climb lands next to a drip spot with water collecting bottles. Beyond lies a small but complex chamber with paper note, _Lost and Found_ junction.
+
+_From_ Lost and Found _junction, a rope leads upwards into a seldom visited branch of Primadona called_ Stara Jama _which reconnects into the main passages at Manđare junction._
 
 ### Risanke to Sejna Soba
-At Lost and Found junction, the way on is to the left under a rock overhang, through a constriction showing signs of blasting. A short wriggle feet first, and downclimb using the handline drops in to a boulder strewn chamber. A further pitch with a swing onto a large ledge completes the descent. From the ledge, the cairned way through the chaotic boulder collapse allows access to a larger, boulder strewn aven. Traversing over the left  of a pit leads to a narrow rift where progress is made by sideways crawling. After another smaller aven, the constrictions continue until the breakthrough into Sejna Soba, an important nexus, recognisable due to its golden chocolate coin.
+At _Lost and Found_ junction, the way on is to the left under a rock overhang, through a constriction showing signs of blasting (_Risanke_). The rigged down-climb drops in to a boulder strewn chamber and further pitch with a traverse around a corner onto a wide ledge completes the descent. From this ledge, the cairned way through the chaotic boulder collapse allows access to a larger, boulder strewn aven. Following traverse ropes on the left leads to a narrow rift where progress is made by sideways crawling. After popping out in another smaller aven chamber, the constricted way carries until the breakthrough into _Sejna Soba_, another complex junction with a window into a loudly dripping water chamber.
 
 ### Sejna Soba to Mary's Cafe
-From Sejna Soba, clambering through a window to the sound of water leads to an perch high above a water-chamber. Immediately to the right, a downclimb into a mud-covered, draughty passage leads to a small recess out of the wind. This is Mary's Café.
+From _Sejna Soba_, clambering through a window to the sound of water leads to a ledge overlooking the water chamber. Immediately to the right, a downclimb into a mud-covered, draughty passage leads to a small recess out of the wind. This is Mary's Café.
 
+\clearpage
 \ThreeColWidthFigure{../outputs/drugi_to_cafe.pdf}

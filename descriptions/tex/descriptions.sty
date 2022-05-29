@@ -7,7 +7,7 @@
 \checkoddpage
 \ifoddpage
 \begin{figure}[ht]
-  \vspace{-0.5in}
+  \vspace{-0.6in}
   \hspace{-25.5mm}
   \includegraphics[width=\FullWidth]{#1}
 \end{figure}
@@ -17,7 +17,7 @@
  \hspace{-50mm} \includegraphics[width=\FullWidth]{#1}
 \end{figure}
 \fi
-\margincaption{#2}{#3}{#4}{#5}{0em}
+\fullwidthcaption{#2}{#3}{#4}{#5}{0em}
 }
 
 \newcommand{\BottomFullWidthFigure}[5]{
@@ -137,9 +137,9 @@
 
 %\marginparsep=2em
 
-\newcommand{\margincaption}[5]{\marginpar{\vspace{#5}
-{#3} \footnotesize{#1} \par
-\footnotesize{\emph{#2}} \par \photo \footnotesize{#4}}}
+\newcommand{\fullwidthcaption}[6]{
+ \vspace{#5}
+\noindent{#3}\footnotesize{#1}~---~\footnotesize{\emph{#2}}\par\vspace{-\parskip}\noindent#6~\footnotesize{#4}}
 
 
 \tikzstyle{name-dest} = [
