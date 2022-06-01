@@ -6,7 +6,7 @@ scrap hydrophobia-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 	
 	point 307.98 125.321 water-flow -orientation 197.29221044810353
 	point 156.95 161.002 blocks
-	point 42.0 -65.0 label -align br -text Hydrophobia -attr level 1 -scale l
+	point 42.0 -65.0 label -align br -text Hydrophobia -attr level 2 -scale l
 	line wall -close on -outline in
 		137.5261 112.0609
 		138.8872 129.3359 130.6235 136.9446 141.7917 148.6015
@@ -50,7 +50,7 @@ scrap hydrophobia-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 		74.0401 158.1427 70.47 148.8 69.0 138.0
 	endline
 	
-	point 336.971 117.506 label -text Stupid -attr level 3 -attr align bl
+	point 336.971 117.506 label -text Stupid -attr level 4 -attr align bl
 	line wall -id stupidpitch
 		123.4707 52.0064
 		123.4707 52.0064 195.1007 67.9064 204.7207 65.5064

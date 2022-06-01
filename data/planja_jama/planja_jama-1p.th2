@@ -8,7 +8,7 @@ point 438.4178 458.9336 label -align r -text "<lang:sl>TLORIS<lang:en>PLAN"
 point 435.292 803.455 gradient -orientation 142.96090773228033 -scale xs
 point 292.595 1044.57 gradient -orientation 213.22806375745967 -scale xs
 point 375.883 866.642 gradient -orientation 123.2247585404667 -scale xs
-line border -close on -id planja_jama-1p_u_smallblocks_MY_1 -visibility off
+line border -close on -id planja_jama-1p_u_smallblocks_1 -visibility off
   236.8837 179.3779
   221.7956 183.9043 209.7251 182.7727 202.181 183.1499
   194.637 183.5271 187.8473 180.5095 185.9613 183.1499
@@ -33,8 +33,8 @@ line border -close on -id planja_jama-1p_u_smallblocks_MY_1 -visibility off
   256.1211 179.3779 236.8837 179.3779 236.8837 179.3779
 endline
 
-area u:smallblocks_MY -attr scale 0.75
-  planja_jama-1p_u_smallblocks_MY_1
+area u:smallblocks -attr scale 0.75
+  planja_jama-1p_u_smallblocks_1
 endarea
 
 point 170.307 958.491 u:grass 
@@ -283,7 +283,7 @@ line wall
   137.2999 175.4444 133.3687 171.0823 134.2134 166.9045
 endline
 
-line border -close on -id planja_jama-1p_u_smallblocks_MY_2 -visibility off
+line border -close on -id planja_jama-1p_u_smallblocks_2 -visibility off
   272.5898 1030.3
   270.5861 1030.275 269.25 1028.0061 267.3652 1027.3254
   264.7754 1026.39 261.9853 1025.9395 259.2324 1025.882
@@ -322,11 +322,11 @@ line border -close on -id planja_jama-1p_u_smallblocks_MY_2 -visibility off
   279.1927 1027.0995 276.2489 1030.3455 272.5898 1030.3
 endline
 
-area u:smallblocks_MY 
-  planja_jama-1p_u_smallblocks_MY_2
+area u:smallblocks 
+  planja_jama-1p_u_smallblocks_2
 endarea
 
-line border -close on -id planja_jama-1p_u_smallblocks_MY_3 -visibility off
+line border -close on -id planja_jama-1p_u_smallblocks_3 -visibility off
   229.3965 972.675
   229.2993 973.6067 229.1167 974.4593 229.0742 975.4367
   228.9769 977.6734 229.0136 980.0078 229.1426 982.3469
@@ -349,8 +349,8 @@ line border -close on -id planja_jama-1p_u_smallblocks_MY_3 -visibility off
   228.0487 973.5718 228.7396 973.1431 229.3965 972.675
 endline
 
-area u:smallblocks_MY -attr scale 0.8 -clip off
-  planja_jama-1p_u_smallblocks_MY_3
+area u:smallblocks -attr scale 0.8 -clip off
+  planja_jama-1p_u_smallblocks_3
 endarea
 
 line pit 
@@ -389,7 +389,7 @@ line wall -close on
   379.5391 648.0687 381.9505 644.6362 380.2361 642.7644
 endline
 
-line border -close on -id planja_jama-1p_u_smallblocks_MY_4 -visibility off
+line border -close on -id planja_jama-1p_u_smallblocks_4 -visibility off
   354.56 462.49
   354.98 470.2
   348.77 474.44
@@ -435,8 +435,8 @@ line border -close on -id planja_jama-1p_u_smallblocks_MY_4 -visibility off
   354.96 468.72
 endline
 
-area u:smallblocks_MY -attr scale 0.8
-  planja_jama-1p_u_smallblocks_MY_4
+area u:smallblocks -attr scale 0.8
+  planja_jama-1p_u_smallblocks_4
 endarea
 
 line floor-step -close on
@@ -925,7 +925,7 @@ point 205.58 265.35 station -name 18
 point 237.84 160.31 station -name 20
 point 549.91 821.04 station -name 21
 point 167.77 181.23 station -name 19
-line border -close on -id planja_jama-1p_u_smallblocks_MY_5 -visibility off
+line border -close on -id planja_jama-1p_u_smallblocks_5 -visibility off
   352.6582 937.2531
   348.6008 937.8398 341.9584 936.1783 339.1719 933.0754
   335.0395 928.4738 334.2244 920.1662 336.8125 912.1379
@@ -939,11 +939,11 @@ line border -close on -id planja_jama-1p_u_smallblocks_MY_5 -visibility off
   355.0757 936.6108 354.0107 937.0576 352.6582 937.2531
 endline
 
-area u:smallblocks_MY 
-  planja_jama-1p_u_smallblocks_MY_5
+area u:smallblocks 
+  planja_jama-1p_u_smallblocks_5
 endarea
 
-line border -close on -id planja_jama-1p_u_smallblocks_MY_6 -visibility off
+line border -close on -id planja_jama-1p_u_smallblocks_6 -visibility off
   355.1055 908.1223
   354.0513 907.4011 353.002 906.6731 352.0039 905.8762
   351.2289 905.2573 350.5479 904.5241 349.8066 903.8566
@@ -965,11 +965,11 @@ line border -close on -id planja_jama-1p_u_smallblocks_MY_6 -visibility off
   355.1191 908.0355 355.1188 908.0838 355.1055 908.1223
 endline
 
-area u:smallblocks_MY 
-  planja_jama-1p_u_smallblocks_MY_6
+area u:smallblocks 
+  planja_jama-1p_u_smallblocks_6
 endarea
 
-line border -close on -id planja_jama-1p_u_smallblocks_MY_7 -visibility off
+line border -close on -id planja_jama-1p_u_smallblocks_7 -visibility off
   384.2969 878.843
   383.825 878.3211 383.3526 877.8003 382.8828 877.2766
   380.5193 874.6417 378.179 871.9857 375.8711 869.302
@@ -988,11 +988,11 @@ line border -close on -id planja_jama-1p_u_smallblocks_MY_7 -visibility off
   394.1023 868.5834 387.7864 875.4245 384.2969 878.843
 endline
 
-area u:smallblocks_MY 
-  planja_jama-1p_u_smallblocks_MY_7
+area u:smallblocks 
+  planja_jama-1p_u_smallblocks_7
 endarea
 
-line border -close on -id planja_jama-1p_u_smallblocks_MY_8 -visibility off
+line border -close on -id planja_jama-1p_u_smallblocks_8 -visibility off
   423.209 837.2434
   422.8654 837.1254 422.5213 837.008 422.1777 836.8898
   417.6511 835.3322 413.1323 833.7552 408.6211 832.1535
@@ -1011,11 +1011,11 @@ line border -close on -id planja_jama-1p_u_smallblocks_MY_8 -visibility off
   432.5493 826.9659 427.8627 832.2114 423.209 837.2434
 endline
 
-area u:smallblocks_MY 
-  planja_jama-1p_u_smallblocks_MY_8
+area u:smallblocks 
+  planja_jama-1p_u_smallblocks_8
 endarea
 
-line border -close on -id planja_jama-1p_u_smallblocks_MY_9 -visibility off
+line border -close on -id planja_jama-1p_u_smallblocks_9 -visibility off
   444.1816 810.5266
   437.1035 805.3156
   436.3293 804.6267 435.606 803.8816 434.8809 803.1398
@@ -1042,8 +1042,8 @@ line border -close on -id planja_jama-1p_u_smallblocks_MY_9 -visibility off
   451.5164 798.2358 447.947 804.3726 444.1816 810.5266
 endline
 
-area u:smallblocks_MY 
-  planja_jama-1p_u_smallblocks_MY_9
+area u:smallblocks 
+  planja_jama-1p_u_smallblocks_9
 endarea
 
 endscrap

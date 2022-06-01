@@ -2,6 +2,30 @@ layout connection_marker
 
 	code metapost
 
+		def p_u_flag (expr P,R,S,A)=
+			save RGB;
+!		    color RGB;
+			RGB:=(25/255,51/255,102/255);
+			U:=(.1u,.1u);
+			T:=identity aligned A rotated R scaled S shifted P;
+			pickup PenD;
+			thfill  (-0.22u,0u) -- (-0.22u,-0.1u) -- (0.22u,-0.1u) --(0.22u,0u) -- (0.04u,0)
+			--(0.04u,0.60u) -- (0.46u, 0.60u) -- (0.46u, 1u) --
+			(-0.04u, 1u) -- (-0.04u,1u) -- (-0.04u,0) -- (0.04u,0) -- cycle withcolor(RGB);
+			thdraw  (-0.22u,0u) -- (-0.22u,-0.1u) -- (0.22u,-0.1u) --(0.22u,0u) -- (0.04u,0)
+			--(0.04u,0.60u) -- (0.46u, 0.60u) -- (0.46u, 1u) --
+			(-0.04u, 1u) -- (-0.04u,1u) -- (-0.04u,0) --  (0.04u,0) -- cycle xscaled 0.25;
+
+			if known ATTR_text:
+				picture thetext;
+
+				thetext := thTEX("\thframed{ \thnormalsize\ss\bf " & ATTR_text & "}");
+
+				p_label.urt(thetext,P shifted (0.4u,-0.2u),R,0);
+			fi;
+		 enddef;
+
+
 		def p_u_connectionmarker (expr P,R,S,A)=
 			save RGB;
  !		    color RGB;
@@ -116,6 +140,7 @@ layout connection_marker
 				endgroup
 	    enddef;
 
+			initsymbol("p_u_flag");
 	    initsymbol("p_u_connectionmarker");
 	endcode
 

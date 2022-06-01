@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap urinal-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 444.2216 1033.4475 label -align l -text "Urinal Series" -attr level 1 -scale l
+	point 444.2216 1033.4475 label -align l -text "Urinal Series" -attr level 2 -scale l
 	point 460.125 986.539 water-flow -orientation 189.9999875177303
 	line wall
 		566.955 1111.0229

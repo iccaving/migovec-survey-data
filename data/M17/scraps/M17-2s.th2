@@ -1463,8 +1463,8 @@ scrap M17-2s -scale [0 0 90 0 0 0 25 0 inch] -projection extended
 		1636.5561 4572.7304 1628.956 4466.3289 1628.956 4466.3289
 	endline
 	
-	point 1194.423 9380.1465 label -attr level 1 -scale l -text b -align t
-	point 412.423 9480.1465 label -attr level 1 -scale l -text a -align t
+	point 1194.423 9380.1465 label -attr level 2 -scale l -text b -align t
+	point 412.423 9480.1465 label -attr level 2 -scale l -text a -align t
 	point 461.2757 9295.3779 entrance -scale l -orientation 150.98871
 	point 1193.9429 9161.9219 entrance -scale l -orientation 183.3185
 	line wall:invisible

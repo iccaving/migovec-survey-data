@@ -57,7 +57,7 @@ endscrap
 
 scrap mudslump-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 	
-	point 517.2358 1067.7977 label -align t -attr level 2 -text "Mud Slump"
+	point 517.2358 1067.7977 label -align t -attr level 3 -text "Mud Slump"
 	line wall -subtype invisible
 		386.3225 792.6445
 		346.328 781.969

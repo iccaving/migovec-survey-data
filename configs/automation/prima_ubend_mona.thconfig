@@ -26,13 +26,13 @@ input "../../layouts/mods.thl"
 layout plan
 	copy base-p
 	copy colour-by-new
-	
+
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2021<br>Natančmost meritev IV/B<br><br><br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<br><br>Belladonna<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2021<br>BCRA grade 4-5b<br><br><br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180<br><br>Belladonna"
-	
+
 	code metapost
-		set_label_level("2");
+		set_label_level("3");
 	endcode
-	
+
 endlayout
 
 select m-all-p@primadona_ubend_monatip.system_migovec
@@ -50,13 +50,13 @@ export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_ENG.sv
 layout ee
 	copy base-e
 	copy colour-by-new
-	
+
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2021<br>Natančmost meritev IV/B<br><br><br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<br><br>Belladonna<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2021<br>BCRA grade 4-5b<br><br><br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180<br><br>Belladonna"
-	
+
 	code metapost
-		set_label_level("2"); % yeah, now it works!
+		set_label_level("3"); % yeah, now it works!
 	endcode
-	
+
 endlayout
 
 select m-all-e@primadona_ubend_monatip.system_migovec

@@ -5,8 +5,8 @@ encoding  utf-8
 
 scrap colony-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 
-	point 1148.9216 3557.3306 label -text Colony -align t -scale l -attr level 1
-	point 1023.9343 1699.3464 label -text "Blue Danube" -align r -attr level 2 -scale l
+	point 1148.9216 3557.3306 label -text Colony -align t -scale l -attr level 2
+	point 1023.9343 1699.3464 label -text "Blue Danube" -align r -attr level 3 -scale l
 	line wall -subtype blocks -id col_l4
 		0.0 1178.0
 		139.4089 1081.6208

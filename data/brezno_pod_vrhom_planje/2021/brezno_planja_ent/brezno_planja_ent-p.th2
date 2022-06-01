@@ -41,7 +41,7 @@ line wall:invisible -close on -outline in
   1711.4702 440.6516
 endline
 
-line border -close on -id brezno_planja_ent-1p_u_smallblocks_MY_1 -visibility off
+line border -close on -id brezno_planja_ent-1p_u_smallblocks_1 -visibility off
   1679.8844 451.4897
   1676.7573 436.1668
   1676.7573 436.1668 1670.1903 426.1601 1670.8157 423.0329
@@ -55,8 +55,8 @@ line border -close on -id brezno_planja_ent-1p_u_smallblocks_MY_1 -visibility of
   1679.8844 451.4897
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-1p_u_smallblocks_MY_1
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-1p_u_smallblocks_1
 endarea
 
 line u:texture 
@@ -204,7 +204,7 @@ point 1619.27 655.31 gradient -orientation 31.0517398552788
 point 1659.4 280.031 gradient -orientation 36.59395999382232
 point 1687.89 317.164 gradient -orientation 245.26241548465384
 point 1914.7 820.346 label -align tr -scale xs -text "<bf>+7m"
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_1 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_1 -visibility off
   1869.9195 631.144
   1872.8902 652.2693
   1874.5406 660.8514
@@ -235,11 +235,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_1 -visibility of
   1869.9195 631.144
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_1
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_1
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_2 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_2 -visibility off
   1885.7634 677.6856
   1907.879 667.123
   1927.0238 658.5408
@@ -263,8 +263,8 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_2 -visibility of
   1885.7634 677.6856
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_2
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_2
 endarea
 
 point 1043.28 403.395 station-name -align l -scale xs -text 7
@@ -1519,7 +1519,7 @@ point 1911.1 741.18 station -name 10
 point 1898.74 807.58 station -name 11
 point 1624.1 588.5 station -name 12
 point 1551.38 616.39 station -name 13
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_3 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_3 -visibility off
   1624.1973 720.2566
   1595.127 702.366
   1583.4883 683.991
@@ -1542,11 +1542,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_3 -visibility of
   1624.1973 720.2566
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_3
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_3
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_4 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_4 -visibility off
   1650.8418 641.3738
   1649.6411 641.6114 1648.4275 641.7907 1647.2441 642.1023
   1645.0791 642.6725 1642.9433 643.3609 1640.8379 644.1414
@@ -1581,11 +1581,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_4 -visibility of
   1650.8418 641.3738
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_4
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_4
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_5 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_5 -visibility off
   1558.416 640.7801
   1559.0825 639.7231 1559.7748 638.6811 1560.3457 637.5711
   1561.2938 635.7277 1562.1225 633.8254 1562.8535 631.8855
@@ -1628,11 +1628,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_5 -visibility of
   1558.416 640.7801
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_5
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_5
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_6 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_6 -visibility off
   1516.8613 641.2449
   1513.6855 632.9852
   1513.8702 632.8401 1514.0789 632.7267 1514.2598 632.577
@@ -1660,11 +1660,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_6 -visibility of
   1516.8613 641.2449
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_6
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_6
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_7 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_7 -visibility off
   1533.4297 594.7664
   1528.9707 609.5086
   1528.1933 611.4946 1527.3075 613.4368 1526.4004 615.368
@@ -1681,11 +1681,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_7 -visibility of
   1533.4297 594.7664
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_7
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_7
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_8 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_8 -visibility off
   1678.6172 574.8367
   1664.5977 569.6688
   1663.272 569.095 1670.1587 555.4375 1668.8521 554.8196
@@ -1715,11 +1715,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_8 -visibility of
   1678.6172 574.8367
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_8
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_8
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_9 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_9 -visibility off
   1808.0664 512.0242
   1806.9229 511.7462 1805.7753 511.484 1804.6504 511.1395
   1801.4844 510.1696 1798.4874 508.7076 1795.3301 507.7098
@@ -1755,11 +1755,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_9 -visibility of
   1808.0664 512.0242
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_9
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_9
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_10 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_10 -visibility off
   1717.0684 460.3563
   1716.625 454.1531
   1715.1328 420.6102
@@ -1793,11 +1793,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_10 -visibility o
   1718.6389 459.298 1717.8503 459.8218 1717.0684 460.3563
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_10
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_10
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_11 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_11 -visibility off
   1782.168 399.7977
   1780.969 399.6252 1779.7713 399.4472 1778.5703 399.2898
   1775.4347 398.879 1772.3007 398.4467 1769.1504 398.1707
@@ -1820,11 +1820,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_11 -visibility o
   1782.168 399.7977
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-2p_u_smallblocks_MY_11
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-2p_u_smallblocks_11
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_12 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_12 -visibility off
   1150.4453 425.5027
   1148.5 418.1121
   1159.0039 406.8289
@@ -1870,19 +1870,19 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_12 -visibility o
   1150.4453 425.5027
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_12
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_12
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_13 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_13 -visibility off
   1220.9785 376.9012
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_13
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_13
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_14 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_14 -visibility off
   1262.1387 384.5691
   1262.0757 384.5591 1262.0119 384.5601 1261.9492 384.5496
   1256.045 383.5812 1250.1262 382.5799 1244.2812 381.2957
@@ -1969,11 +1969,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_14 -visibility o
   1262.1387 384.5691
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_14
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_14
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_15 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_15 -visibility off
   1261.5508 344.1004
   1258.5642 344.2074 1255.5741 344.1182 1252.5898 343.9598
   1249.4949 343.7955 1246.3735 343.8142 1243.2812 343.6551
@@ -2047,11 +2047,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_15 -visibility o
   1267.942 343.4287 1264.7616 343.9853 1261.5508 344.1004
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_15
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_15
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_16 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_16 -visibility off
   1278.4492 318.9109
   1275.7666 318.7219 1273.0954 318.3659 1270.4707 317.7801
   1267.6717 317.1553 1265.0151 316.0117 1262.25 315.2508
@@ -2108,11 +2108,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_16 -visibility o
   1284.7819 318.9612 1281.6091 319.1336 1278.4492 318.9109
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_16
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_16
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_17 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_17 -visibility off
   1356.3926 219.3113
   1356.1836 220.4656
   1355.8397 222.2589 1355.4857 224.052 1354.9902 225.8094
@@ -2143,11 +2143,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_17 -visibility o
   1356.3926 219.3113
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_17
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_17
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_18 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_18 -visibility off
   1332.9922 370.7606
   1339.6094 364.2508
   1346.5293 359.2098
@@ -2220,11 +2220,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_18 -visibility o
   1332.9922 370.7606
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_18
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_18
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_19 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_19 -visibility off
   1407.4785 353.5125
   1407.7765 353.2253 1408.1098 352.9736 1408.3691 352.6492
   1409.1661 351.6527 1409.8176 350.5573 1410.3789 349.4109
@@ -2301,11 +2301,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_19 -visibility o
   1407.4785 353.5125
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_19
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_19
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_20 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_20 -visibility off
   1657.2383 205.5516
   1655.8867 204.8523
   1654.6534 204.2331 1653.416 203.6112 1652.1191 203.1395
@@ -2329,11 +2329,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_20 -visibility o
   1657.2383 205.5516
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_20
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_20
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_21 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_21 -visibility off
   1500.8301 318.6356
   1509.8926 304.782
   1521.9395 294.8602
@@ -2379,11 +2379,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_21 -visibility o
   1500.8301 318.6356
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_21
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_21
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_22 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_22 -visibility off
   1599.1895 283.2586
   1602.5996 279.5106
   1613.4902 269.0906
@@ -2466,11 +2466,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_22 -visibility o
   1599.1895 283.2586
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_22
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_22
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_23 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_23 -visibility off
   1633.5781 303.45
   1634.4062 302.7273
   1636.6411 300.7553 1638.8774 298.7827 1640.9961 296.6863
@@ -2510,11 +2510,11 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_23 -visibility o
   1633.5781 303.45
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_23
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_23
 endarea
 
-line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_24 -visibility off
+line border -close on -id brezno_planja_ent-2p_u_smallblocks_24 -visibility off
   1694.0762 358.8484
   1700.1992 349.4402
   1704.7109 342.5906
@@ -2553,8 +2553,8 @@ line border -close on -id brezno_planja_ent-2p_u_smallblocks_MY_24 -visibility o
   1694.0762 358.8484
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-2p_u_smallblocks_MY_24
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-2p_u_smallblocks_24
 endarea
 
 endscrap
@@ -2562,7 +2562,7 @@ endscrap
 
 scrap brezno_planja_ent-3p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_1 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_1 -visibility off
   262.1301 826.1179
   293.2715 833.4293
   305.1866 828.0134
@@ -2590,8 +2590,8 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_1 -visibility of
   262.1301 826.1179
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_1
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_1
 endarea
 
 line survey -clip off
@@ -2699,7 +2699,7 @@ line wall:presumed -outline none
   880.0225 586.4056
 endline
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_2 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_2 -visibility off
   869.7339 708.3975
   882.3145 718.4619
   873.0887 729.365
@@ -2720,8 +2720,8 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_2 -visibility of
   869.7339 708.3975
 endline
 
-area u:smallblocks_MY -attr scale 1
-  brezno_planja_ent-3p_u_smallblocks_MY_2
+area u:smallblocks -attr scale 1
+  brezno_planja_ent-3p_u_smallblocks_2
 endarea
 
 line floor-step 
@@ -2729,7 +2729,7 @@ line floor-step
   718.7676 654.3012 748.9608 660.5914 757.3479 670.6559
 endline
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_3 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_3 -visibility off
   721.684 659.8058
   748.3913 679.7629
   748.3913 679.7629 774.8341 687.3873 773.8559 695.603
@@ -2743,8 +2743,8 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_3 -visibility of
   714.0533 661.5668 721.684 659.8058 721.684 659.8058
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_3
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_3
 endarea
 
 point 275.156 755.623 continuation -align br -scale xs
@@ -3308,7 +3308,7 @@ line u:texture
   1512.62 544.11
 endline
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_4 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_4 -visibility off
   1420.5996 598.5496
   1413.3301 598.2898
   1411.6699 590.1297
@@ -3336,11 +3336,11 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_4 -visibility of
   1420.5996 598.5496
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_4
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_4
 endarea
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_5 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_5 -visibility off
   1473.8516 548.6512
   1463.0957 538.0574
   1461.8651 536.7918 1460.7171 535.4492 1459.5039 534.1668
@@ -3370,11 +3370,11 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_5 -visibility of
   1473.8516 548.6512
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_5
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_5
 endarea
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_6 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_6 -visibility off
   1528.0352 512.575
   1519.9863 510.366
   1518.4447 509.912 1516.9283 509.377 1515.3926 508.9031
@@ -3394,8 +3394,8 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_6 -visibility of
   1528.0352 512.575
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_6
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_6
 endarea
 
 line floor-step 
@@ -3826,7 +3826,7 @@ line floor-step
   527.9621 820.1927 524.71 824.55 524.71 824.55
 endline
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_7 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_7 -visibility off
   363.6641 931.3758
   354.4512 928.1316
   354.6609 927.5946 354.8705 927.0582 355.0781 926.5203
@@ -3860,11 +3860,11 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_7 -visibility of
   363.6641 931.3758
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_7
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_7
 endarea
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_8 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_8 -visibility off
   443.0293 908.5496
   444.6465 905.5613
   445.2761 904.3313 445.907 903.095 446.4727 901.8328
@@ -3893,11 +3893,11 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_8 -visibility of
   443.0293 908.5496
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_8
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_8
 endarea
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_9 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_9 -visibility off
   513.9199 897.2645
   497.4961 884.575
   496.1508 883.4829 494.8895 882.2923 493.5586 881.1824
@@ -3919,11 +3919,11 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_9 -visibility of
   513.9199 897.2645
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_9
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_9
 endarea
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_10 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_10 -visibility off
   543.9805 873.3133
   519.5742 867.3117
   517.221 866.6962 517.3706 859.7046 514.1577 859.1922
@@ -3949,11 +3949,11 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_10 -visibility o
   543.9805 873.3133
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_10
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_10
 endarea
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_11 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_11 -visibility off
   443.0293 908.5496
   439.1797 909.1102
   430.3691 909.1102
@@ -3985,11 +3985,11 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_11 -visibility o
   443.0293 908.5496
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_11
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_11
 endarea
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_12 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_12 -visibility off
   419.1621 909.2606
   413.3906 909.5106
   405.0801 909.3797
@@ -4018,11 +4018,11 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_12 -visibility o
   419.1621 909.2606
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_12
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_12
 endarea
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_13 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_13 -visibility off
   356.4473 885.1981
   356.6611 885.5525 356.8737 885.9068 357.082 886.2645
   357.9669 887.7836 358.8098 889.3285 359.5957 890.9012
@@ -4052,11 +4052,11 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_13 -visibility o
   356.4473 885.1981
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_13
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_13
 endarea
 
-line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_14 -visibility off
+line border -close on -id brezno_planja_ent-3p_u_smallblocks_14 -visibility off
   340.2812 883.5164
   340.1848 883.9322 340.0876 884.3478 339.9863 884.7625
   339.5185 886.679 339.0058 888.5851 338.4414 890.4754
@@ -4080,8 +4080,8 @@ line border -close on -id brezno_planja_ent-3p_u_smallblocks_MY_14 -visibility o
   340.2812 883.5164
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-3p_u_smallblocks_MY_14
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-3p_u_smallblocks_14
 endarea
 
 line contour 
@@ -4181,7 +4181,7 @@ line floor-step
   131.5874 956.861 159.7424 950.6372 159.7424 950.6372
 endline
 
-line border -close on -id brezno_planja_ent-4p_u_smallblocks_MY_1 -visibility off
+line border -close on -id brezno_planja_ent-4p_u_smallblocks_1 -visibility off
   365.0603 942.0777
   377.6342 968.4828
   354.5821 972.2549
@@ -4202,8 +4202,8 @@ line border -close on -id brezno_planja_ent-4p_u_smallblocks_MY_1 -visibility of
   360.4499 936.6291 365.0603 942.0777 365.0603 942.0777
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  brezno_planja_ent-4p_u_smallblocks_MY_1
+area u:smallblocks -attr scale 0.9
+  brezno_planja_ent-4p_u_smallblocks_1
 endarea
 
 line wall 

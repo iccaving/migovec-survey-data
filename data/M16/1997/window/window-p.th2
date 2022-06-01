@@ -4,8 +4,8 @@ encoding  utf-8
 
 scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 223.7818 508.7394 label -align l -text Window -attr level 3
-	line border -close on -id window-1p_u_smallblocks_MY_1 -visibility off
+	point 223.7818 508.7394 label -align l -text Window -attr level 4
+	line border -close on -id window-1p_u_smallblocks_1 -visibility off
 		253.4707 629.2061
 		249.2445 614.4554
 		269.3326 598.2521
@@ -16,11 +16,11 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		304.7939 630.9058 263.8766 639.0191 258.8848 639.6286
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.4
-	window-1p_u_smallblocks_MY_1
+	area u:smallblocks -attr scale 1.4
+	window-1p_u_smallblocks_1
 	endarea
 	
-	line border -close on -id window-1p_u_smallblocks_MY_2 -visibility off
+	line border -close on -id window-1p_u_smallblocks_2 -visibility off
 		236.4936 479.3432
 		255.2966 473.517
 		278.072 466.3665
@@ -40,11 +40,11 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		244.9682 513.7712 237.2881 495.233 237.2881 495.233
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.4
-	window-1p_u_smallblocks_MY_2
+	area u:smallblocks -attr scale 1.4
+	window-1p_u_smallblocks_2
 	endarea
 	
-	line border -close on -id window-1p_u_smallblocks_MY_3 -visibility off
+	line border -close on -id window-1p_u_smallblocks_3 -visibility off
 		234.6398 473.517
 		232.786 463.1886
 		212.1292 441.4725
@@ -60,11 +60,11 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		274.6292 460.5403
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.4
-	window-1p_u_smallblocks_MY_3
+	area u:smallblocks -attr scale 1.4
+	window-1p_u_smallblocks_3
 	endarea
 	
-	line border -close on -id window-1p_u_smallblocks_MY_4 -visibility off
+	line border -close on -id window-1p_u_smallblocks_4 -visibility off
 		223.7818 385.3284
 		231.9848 400.2851
 		193.3263 406.7797
@@ -82,8 +82,8 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		250.7945 383.4746
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.4
-	window-1p_u_smallblocks_MY_4
+	area u:smallblocks -attr scale 1.4
+	window-1p_u_smallblocks_4
 	endarea
 	
 	point 202.8602 408.1038 gradient -orientation 30.0

@@ -19,4 +19,4 @@ Staying first on the right hand-side of the chamber, a way underneath this large
 ### Penny Falls to Klic Globin
 
 \clearpage
-\ThreeColWidthFigure{../outputs/manger_to_tranquillity.pdf}
+\CenteredFigure{../outputs/manger_to_tranquillity.pdf}

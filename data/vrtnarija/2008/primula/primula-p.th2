@@ -34,7 +34,7 @@ scrap primula-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		468.5941 1096.668 464.8101 1095.3179 461.0578 1094.127
 	endline
 	
-	line border -close on -id primula-1p_u_smallblocks_MY_1 -visibility on
+	line border -close on -id primula-1p_u_smallblocks_1 -visibility on
 		485.065 1091.1261
 		484.3848 1084.4556 483.6892 1077.6597 484.9694 1071.0146
 		486.3426 1061.826 487.8106 1052.643 489.1959 1043.4621
@@ -50,11 +50,11 @@ scrap primula-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		485.5743 1091.9715 485.3109 1091.5539 485.0649 1091.1261
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.8
-	primula-1p_u_smallblocks_MY_1
+	area u:smallblocks -attr scale 1.8
+	primula-1p_u_smallblocks_1
 	endarea
 	
-	point 462.8001 1128.2582 label -align l -attr level 2 -text Primula
+	point 462.8001 1128.2582 label -align l -attr level 3 -text Primula
 	line pit
 		504.6524 1105.9394
 		503.7213 1104.5629 502.7575 1103.2044 501.9153 1101.7713

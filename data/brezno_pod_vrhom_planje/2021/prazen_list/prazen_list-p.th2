@@ -82,7 +82,7 @@ point 301.6701 518.8599 station-name -align tr -scale xs -text 8
 point 305.0222 511.4686 station-name -align tr -scale xs -text 9
 point 324.1003 508.5137 station-name -align tr -scale xs -text 10
 point 315.0704 499.1109 station-name -align tr -scale xs -text 11
-line border -close on -id prazen_list-2p_u_smallblocks_MY_1 -visibility off
+line border -close on -id prazen_list-2p_u_smallblocks_1 -visibility off
   321.6089 499.7811
   321.6089 499.7811 333.4178 505.6855 333.4178 506.4236
   333.4178 507.1617 332.8642 513.9887 332.8642 513.9887
@@ -107,8 +107,8 @@ line border -close on -id prazen_list-2p_u_smallblocks_MY_1 -visibility off
   321.6089 499.7811
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  prazen_list-2p_u_smallblocks_MY_1
+area u:smallblocks -attr scale 0.9
+  prazen_list-2p_u_smallblocks_1
 endarea
 
 point 342.6223 543.3785 label -align r -scale xs -text "undescended 10 m pitch"
@@ -119,7 +119,7 @@ line floor-step
   277.3653 507.3337 276.5047 500.4489 276.5047 500.4489
 endline
 
-line border -close on -id prazen_list-2p_u_smallblocks_MY_2 -visibility off
+line border -close on -id prazen_list-2p_u_smallblocks_2 -visibility off
   246.5122 589.5861
   246.0059 589.4849 233.044 580.2913 233.044 580.2913
   219.5767 565.9214
@@ -147,8 +147,8 @@ line border -close on -id prazen_list-2p_u_smallblocks_MY_2 -visibility off
   246.5122 589.5861
 endline
 
-area u:smallblocks_MY -attr scale 1.5
-  prazen_list-2p_u_smallblocks_MY_2
+area u:smallblocks -attr scale 1.5
+  prazen_list-2p_u_smallblocks_2
 endarea
 
 line border -close on -id prazen_list-2p_clay_1 -visibility off
@@ -322,7 +322,7 @@ point 281.65 422.24 station-name -align tr -scale xs -text 18
 point 260.4148 425.5879 narrow-end -align l -scale xs
 point 307.6747 452.8717 label -align r -text Okna
 point 263.294 511.2397 label -align bl -text "Prazen list"
-line border -close on -id prazen_list-1p_u_smallblocks_MY_1 -visibility off
+line border -close on -id prazen_list-1p_u_smallblocks_1 -visibility off
   292.3102 406.5258
   318.0789 408.2437
   318.4754 412.4724
@@ -338,8 +338,8 @@ line border -close on -id prazen_list-1p_u_smallblocks_MY_1 -visibility off
   292.3102 406.5258
 endline
 
-area u:smallblocks_MY -attr scale 0.8
-  prazen_list-1p_u_smallblocks_MY_1
+area u:smallblocks -attr scale 0.8
+  prazen_list-1p_u_smallblocks_1
 endarea
 
 line floor-step 

@@ -101,7 +101,7 @@ point 541.0 898.0 station -name 26
 point 491.0 927.0 station -name 27
 point 478.0 907.0 station -name 28
 point 498.0 894.0 station -name 29
-point 429.0 894.0 label -align l -attr level 3 -text "Sejna soba"
+point 429.0 894.0 label -align l -attr level 4 -text "Sejna soba"
 endscrap
 
 
@@ -244,7 +244,7 @@ endscrap
 scrap galerijap_4 -projection plan -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 
 point 676.4888 771.963 u:connectionmarker -align r -attr text "to the Stile" -attr offset 0.7 -attr code 6
-point 644.5367 746.4013 label -align br -attr level 2 -scale l -text "Knot Very Good"
+point 644.5367 746.4013 label -align br -attr level 3 -scale l -text "Knot Very Good"
 line label -text "Knot Very Good"
   549.25 627.0
   549.25 627.0 637.5 673.0 708.75 734.5

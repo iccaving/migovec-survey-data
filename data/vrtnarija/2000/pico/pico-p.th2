@@ -52,7 +52,7 @@ endscrap
 
 scrap pico-p2 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 	
-	area u:smallblocks_MY -attr scale 0.6
+	area u:smallblocks -attr scale 0.6
 	blocks
 	endarea
 	
@@ -79,7 +79,7 @@ scrap pico-p2 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 
 		527.0 644.5
 	endline
 	
-	point 477.9183 844.9541 label -align t -attr level 2 -text Pico -scale l
+	point 477.9183 844.9541 label -align t -attr level 3 -text Pico -scale l
 	point 505.704 706.696 passage-height -align t -scale xl -value 65
 	point 513.028 780.013 station -name 8
 	point 517.578 648.497 station -name 7

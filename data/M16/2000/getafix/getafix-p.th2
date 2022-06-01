@@ -5,67 +5,67 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line survey 
+line survey
   366.7659 653.8024
   449.1636 505.8709
 endline
 
-line survey 
+line survey
   246.8696 666.6814
   366.7659 653.8023
 endline
 
-line survey 
+line survey
   193.0763 760.2504
   246.8696 666.6814
 endline
 
-line survey 
+line survey
   297.8878 701.9744
   193.0763 760.2504
 endline
 
-line survey 
+line survey
   336.525 769.7852
   297.8878 701.9744
 endline
 
-line survey 
+line survey
   459.7657 826.9227
   336.525 769.7852
 endline
 
-line survey 
+line survey
   446.8866 842.5769
   459.7657 826.9227
 endline
 
-line survey 
+line survey
   713.0067 682.3356
   446.8866 842.5769
 endline
 
-line survey 
+line survey
   713.0067 682.3356
   713.0067 682.3356
 endline
 
-line survey 
+line survey
   713.0067 682.3356
   493.9913 830.267
 endline
 
-line survey 
+line survey
   713.0067 682.3356
   490.5758 537.8195
 endline
 
-line survey 
+line survey
   651.3864 732.7845
   713.0067 682.3356
 endline
 
-line survey 
+line survey
   961.2669 560.8026
   651.3864 732.7845
 endline
@@ -88,7 +88,7 @@ line pit -close on
   738.1006 704.1494 710.2606 722.483 698.7172 723.1621
 endline
 
-line wall 
+line wall
   450.2968 801.5124
   450.2968 801.5124 489.7364 795.1459 510.8627 784.5827
   531.989 774.0196 666.4391 699.0889 671.2406 684.6846
@@ -112,13 +112,13 @@ endscrap
 
 scrap getafix-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 668.161 357.8464 label -align r -scale m -text Getafix
-line pit 
+point 668.161 357.8464 label -align r -scale m -text Getafix -attr level 2
+line pit
   450.1599 868.7945
   469.7381 834.8009 458.4658 805.9971 454.0162 802.1047
 endline
 
-line wall 
+line wall
   244.438 693.7622
   212.5238 720.9232 239.3565 716.0323 248.5233 712.6372
   257.6902 709.2421 260.4062 701.7728 280.777 693.285
@@ -128,7 +128,7 @@ line wall
   433.2182 795.4783 445.2041 801.5124 450.2968 801.5124
 endline
 
-line wall 
+line wall
   263.1186 640.2713
   290.9669 633.5493 335.6588 636.7524 353.3856 624.1865
   391.3169 597.2985 410.1429 531.7613 430.6887 499.3492
@@ -138,7 +138,7 @@ line wall
   349.1217 682.9452 301.05 671.0005 271.7612 674.3615
 endline
 
-line wall 
+line wall
   477.3741 861.7286
   460.089 867.4903 459.1819 870.5143 439.9762 870.5143
   420.7704 870.5143 413.8837 836.4099 397.5588 829.6879
@@ -158,4 +158,3 @@ point 336.525 769.7852 station -name 9
 point 459.7657 826.9227 station -name 8
 point 446.8866 842.5769 station -name 7
 endscrap
-

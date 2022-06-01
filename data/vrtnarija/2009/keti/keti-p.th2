@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap keti-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point -508.405 569.995 label -align br -attr level 2 -text "Metal Aven area" -scale xs
+	point -508.405 569.995 label -align br -attr level 3 -text "Metal Aven area" -scale xs
 	
 	line rock-edge -clip off -close on -outline none
 		-555.5959 610.9449
@@ -93,7 +93,7 @@ scrap keti-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		-20.792 -50.4227
 	endline
 	
-	point 24.4092 -31.3032 label -align br -attr level 2 -text KETI
+	point 24.4092 -31.3032 label -align br -attr level 3 -text KETI
 	line wall
 		65.5392 25.8063
 		65.5392 25.8063 65.6205 22.967 65.7082 22.4643

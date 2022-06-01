@@ -38,16 +38,16 @@ scrap prima1-e1 -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 1
 	
 	point 419.717 485.821 dig -scale xl
 	point 203.483 526.681 entrance -align l -orientation 90.0 -scale xl
-	point 148.795 520.617 label -align l -text PRIMADONA -attr style 6 -attr level 1 -scale l
-	point 577.481 387.731 label -align r -text "M+" -attr level 1 -scale l
+	point 148.795 520.617 label -align l -text PRIMADONA -attr style 6 -attr level 2 -scale l
+	point 577.481 387.731 label -align r -text "M+" -attr level 2 -scale l
 	line wall -subtype invisible
 		329.0563 565.9603
 		305.0 557.75
 	endline
 	
-	point 538.5 213.75 label -align t -text "Spiral Climb" -attr level 2 -scale s
-	point 679.5 139.25 label -align tl -text "Lost and" -attr level 2 -scale s
-	point 679.5 129.25 label -align bl -text Found -attr level 2 -scale s
+	point 538.5 213.75 label -align t -text "Spiral Climb" -attr level 3 -scale s
+	point 679.5 139.25 label -align tl -text "Lost and" -attr level 3 -scale s
+	point 679.5 129.25 label -align bl -text Found -attr level 3 -scale s
 	point 309.0 560.75 station -name 35
 	point 319.25 561.5 station -name 34
 	point 384.25 500.75 station -name 33

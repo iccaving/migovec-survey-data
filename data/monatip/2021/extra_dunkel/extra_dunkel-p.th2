@@ -16,11 +16,11 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		522.0093 1159.3109 539.2658 1163.0857 539.2658 1163.0857
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.5
+	area u:smallblocks -attr scale 1.5
 	extra_dunkel-1p_blocks_1
 	endarea
 	
-	line border -close on -id extra_dunkel-1p_u_smallblocks_MY_1 -visibility off
+	line border -close on -id extra_dunkel-1p_u_smallblocks_1 -visibility off
 		284.4636 1065.6882
 		284.4636 1065.6882 349.2877 1243.3826 350.0504 1249.4837
 		350.813 1255.5848 347.7624 1285.3276 323.3581 1303.6309
@@ -33,8 +33,8 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		266.9229 1066.4508 284.4636 1065.6882 284.4636 1065.6882
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.2
-	extra_dunkel-1p_u_smallblocks_MY_1
+	area u:smallblocks -attr scale 1.2
+	extra_dunkel-1p_u_smallblocks_1
 	endarea
 	
 	line pit
@@ -814,7 +814,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 	point 1933.86 958.39 station -name 7
 	point 588.43 573.13 station -name 10
 	point 1962.22 833.09 station -name 8
-	line border -close on -id extra_dunkel-1p_u_smallblocks_MY_2 -visibility off
+	line border -close on -id extra_dunkel-1p_u_smallblocks_2 -visibility off
 		1603.0625 1192.2859
 		1603.0625 1192.2859 1558.8296 1128.2247 1552.7285 1119.073
 		1546.6274 1109.9214 1485.6172 1013.8289 1485.6172 1013.8289
@@ -830,11 +830,11 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1603.0625 1192.2859
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.2
-	extra_dunkel-1p_u_smallblocks_MY_2
+	area u:smallblocks -attr scale 1.2
+	extra_dunkel-1p_u_smallblocks_2
 	endarea
 	
-	line border -close on -id extra_dunkel-1p_u_smallblocks_MY_3 -visibility off
+	line border -close on -id extra_dunkel-1p_u_smallblocks_3 -visibility off
 		1602.0547 787.8348
 		1536.0918 884.5652
 		1535.4578 885.4918 1534.8176 886.4141 1534.1836 887.3406
@@ -856,11 +856,11 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1602.0547 787.8348
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.2
-	extra_dunkel-1p_u_smallblocks_MY_3
+	area u:smallblocks -attr scale 1.2
+	extra_dunkel-1p_u_smallblocks_3
 	endarea
 	
-	line border -close on -id extra_dunkel-1p_u_smallblocks_MY_4 -visibility off
+	line border -close on -id extra_dunkel-1p_u_smallblocks_4 -visibility off
 		1270.9297 665.7801
 		1230.5996 751.368
 		1229.3578 753.9772 1228.0773 756.568 1226.834 759.1766
@@ -884,11 +884,11 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1270.9297 665.7801
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.2
-	extra_dunkel-1p_u_smallblocks_MY_4
+	area u:smallblocks -attr scale 1.2
+	extra_dunkel-1p_u_smallblocks_4
 	endarea
 	
-	line border -close on -id extra_dunkel-1p_u_smallblocks_MY_5 -visibility off
+	line border -close on -id extra_dunkel-1p_u_smallblocks_5 -visibility off
 		1026.3496 507.2625
 		1017.4199 527.743
 		1004.5962 556.9642 991.6426 586.1283 978.4922 615.2039
@@ -906,8 +906,8 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1026.3496 507.2625
 	endline
 	
-	area u:smallblocks_MY -attr scale 1.2
-	extra_dunkel-1p_u_smallblocks_MY_5
+	area u:smallblocks -attr scale 1.2
+	extra_dunkel-1p_u_smallblocks_5
 	endarea
 	
 	line contour
@@ -1071,7 +1071,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		619.91 258.72
 	endline
 	
-	point 555.444 107.109 label -align b -attr level 2 -text "Extra Dunkel"
+	point 555.444 107.109 label -align b -attr level 3 -text "Extra Dunkel"
 	
 	line u:texture
 		721.8961 345.1209

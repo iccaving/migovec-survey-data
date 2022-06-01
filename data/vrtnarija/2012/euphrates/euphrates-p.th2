@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap euphrates-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point -1732.13 2485.64 label -align br -attr level 2 -text "Xanadu Bypass" -scale xs
+	point -1732.13 2485.64 label -align br -attr level 3 -text "Xanadu Bypass" -scale xs
 	line wall -subtype invisible
 		207.4219 1110.0917
 		180.534 942.0415
@@ -32,7 +32,7 @@ scrap euphrates-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		575.692 215.1043 513.7535 244.3931 450.8547 214.6241
 	endline
 	
-	point 525.277 799.919 label -align r -attr level 2 -text Euphrates -scale m
+	point 525.277 799.919 label -align r -attr level 3 -text Euphrates -scale m
 	line wall
 		227.0738 927.5607
 		195.6621 1052.3083 304.683 902.8948 312.4145 841.6774

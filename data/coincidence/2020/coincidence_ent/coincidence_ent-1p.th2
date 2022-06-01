@@ -1501,7 +1501,7 @@ point 605.8532 1234.2739 station-name -text 13 -align tr -scale xs
 point 745.6249 1072.8817 station-name -text 11 -align tr -scale xs
 point 673.7276 1230.0021 station-name -text 12 -align r -scale xs
 point 634.2007 1164.1623 station-name -text 19 -align l -scale xs
-area u:smallblocks_MY
+area u:smallblocks
   smallblocks4
 endarea
 
@@ -1757,7 +1757,7 @@ line u:texture
   508.3909 1543.5799
 endline
 
-area u:smallblocks_MY
+area u:smallblocks
   smallblocks1
 endarea
 
@@ -2557,7 +2557,7 @@ line u:texture
   164.5581 2876.513
 endline
 
-area u:smallblocks_MY
+area u:smallblocks
   smallblocks8
 endarea
 
@@ -2822,7 +2822,7 @@ line pit -close on -outline in
   367.771 1953.3108
 endline
 
-area u:smallblocks_MY
+area u:smallblocks
   smallblocks7
 endarea
 
@@ -2868,7 +2868,7 @@ point 530.0 2480.0 label -text "2019 Extensions" -align r -scale xl
 point 121.4002 2808.4214 water-flow -orientation 90.0
 point 122.715 2850.4952 water-flow -orientation 90.0
 point 163.5573 3046.512 continuation -scale xs
-area u:smallblocks_MY
+area u:smallblocks
   smallblocks2
 endarea
 
@@ -4549,11 +4549,11 @@ line border -subtype invisible -id smallblocks6 -close on
   684.3555 3059.9872
 endline
 
-area u:smallblocks_MY
+area u:smallblocks
   smallblocks5
 endarea
 
-area u:smallblocks_MY
+area u:smallblocks
   smallblocks6
 endarea
 
@@ -4735,7 +4735,7 @@ line pit
   802.337 2019.3232 776.3052 2049.0739 776.3052 2049.0739
 endline
 
-area u:smallblocks_MY
+area u:smallblocks
   smallblocks3
 endarea
 

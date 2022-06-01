@@ -108,7 +108,7 @@ layout overview
   initsymbol("a_sump_MY");
 
   # BOULDER FLOOR
-  def a_u_smallblocks_MY (expr p) =
+  def a_u_smallblocks (expr p) =
     T:=identity;
     pickup PenD;
     save S,sc;
@@ -156,7 +156,7 @@ layout overview
 
   initsymbol("l_survey_cave_MY");
   initsymbol("a_clay_MY");
-  initsymbol("a_u_smallblocks_MY");
+  initsymbol("a_u_smallblocks");
 
 
 

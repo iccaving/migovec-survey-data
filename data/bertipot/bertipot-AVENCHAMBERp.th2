@@ -328,7 +328,7 @@ point 1367.2209 464.2164 station-name -text 2 -align t -scale xs
 point 1464.4211 714.8164 station-name -text 1 -align t -scale xs
 point 1552.9709 640.9764 station-name -text 3 -align t -scale xs
 point 1473.811 745.3664 station-name -text 4 -align t -scale xs
-area u:smallblocks_MY
+area u:smallblocks
   AVENCHAMBER1p-a2
 endarea
 
@@ -455,7 +455,7 @@ line border -close on -id AVENCHAMBERp-a6 -visibility off
   1330.7432 681.8725 1334.693 684.3853 1336.3489 688.2005
 endline
 
-area u:smallblocks_MY
+area u:smallblocks
   AVENCHAMBERp-a6
 endarea
 
@@ -1000,7 +1000,7 @@ line border -subtype invisible -id snow7 -close on
   521.4534 651.1441 512.3693 664.3868 512.3693 664.3868
 endline
 
-area u:smallblocks_MY
+area u:smallblocks
   blocks6
 endarea
 
@@ -1145,7 +1145,7 @@ line contour
   418.9518 646.8829 416.2881 672.3777 416.2881 672.3777
 endline
 
-area u:smallblocks_MY
+area u:smallblocks
   blocks5
 endarea
 

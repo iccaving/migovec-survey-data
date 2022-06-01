@@ -154,7 +154,7 @@ layout custom_areas
 		## new definitions
 
 		# randomly fill boulder areas with boulders, scalable as wished
-		def a_u_smallblocks_MY (expr p) =
+		def a_u_smallblocks (expr p) =
 			T:=identity;
 			pickup PenD;
 			save S,sc;
@@ -194,9 +194,9 @@ layout custom_areas
 		enddef;
 
 		# initialise redefined symbols
-		initsymbol("a_u_smallblocks_MY");
+		initsymbol("a_u_smallblocks");
 	endcode
 endlayout
 
 # define legend label
-text en "area u:smallblocks_MY" "scree"
+text en "area u:smallblocks" "scree"

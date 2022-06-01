@@ -6,15 +6,15 @@ encoding  utf-8
 
 
 scrap chocolate_river-p1 -scale [327.0 -732.0 500.0 -732.0 0 0 15 0 m]
-	
-	
+
+
 	line pit
 		326.0 -422.0
 		326.0 -422.0 333.5 -427.5 339.0 -422.5
 		344.5 -417.5 346.0 -406.0 346.0 -406.0
 		smooth off
 	endline
-	
+
 	line wall
 		367.5 -476.5
 		363.5 -471.5 369.0 -473.0 369.0 -466.0
@@ -23,10 +23,10 @@ scrap chocolate_river-p1 -scale [327.0 -732.0 500.0 -732.0 0 0 15 0 m]
 		348.5 -426.0 346.0 -406.0 346.0 -406.0
 		smooth off
 	endline
-	
+
 	line wall
 	endline
-	
+
 	line wall
 		326.0 -422.0
 		326.0 -422.0 348.5 -442.5 346.5 -445.5
@@ -35,27 +35,27 @@ scrap chocolate_river-p1 -scale [327.0 -732.0 500.0 -732.0 0 0 15 0 m]
 		smooth off
 		351.5 -485.5
 	endline
-	
+
 	point 327.0 -406.0 station -name "8"
-	
+
 	point 344.0 -433.0 station -name "9"
-	
+
 	point 360.0 -459.0 station -name "10"
-	
+
 	point 355.0 -482.0 station -name "11"
-	
+
 	point 382.0 -546.0 station -name "12"
-	
+
 endscrap
 
 
 
 scrap chocolate_river-p2 -scale [327.0 -732.0 500.0 -732.0 0 0 15 0 m]
-	
+
 	area clay
 	l27-324--127
 	endarea
-	
+
 	line border -id l27-324--127 -close on -subtype invisible
 		352.0 -148.0
 		321.0 -126.0
@@ -67,12 +67,12 @@ scrap chocolate_river-p2 -scale [327.0 -732.0 500.0 -732.0 0 0 15 0 m]
 		236.5 -233.0
 		352.0 -148.0
 	endline
-	
-	point 310 -50 label -attr level 1 -scale l -text "Chocolate River" -align tl
-	
+
+	point 310 -50 label -attr level 2 -scale l -text "Chocolate River" -align tl
+
 	line wall
 	endline
-	
+
 	line wall
 		346.0 -406.0
 		346.0 -406.0 342.5 -389.0 334.5 -384.0
@@ -94,7 +94,7 @@ scrap chocolate_river-p2 -scale [327.0 -732.0 500.0 -732.0 0 0 15 0 m]
 		310.5 -164.0
 		354.5 -134.0
 	endline
-	
+
 	line wall
 		348.0 -123.0
 		348.0 -123.0 337.5 -134.5 324.5 -141.5
@@ -116,21 +116,19 @@ scrap chocolate_river-p2 -scale [327.0 -732.0 500.0 -732.0 0 0 15 0 m]
 		316.0 -432.0 326.0 -422.0 326.0 -422.0
 		smooth off
 	endline
-	
+
 	point 352.0 -129.0 station -name "1"
-	
+
 	point 211.0 -229.0 station -name "2"
-	
+
 	point 213.0 -399.0 station -name "3"
-	
+
 	point 255.0 -448.0 station -name "4"
-	
+
 	point 279.0 -433.0 station -name "5"
-	
+
 	point 333.0 -386.0 station -name "6"
-	
+
 	point 327.0 -406.0 station -name "7"
-	
+
 endscrap
-
-

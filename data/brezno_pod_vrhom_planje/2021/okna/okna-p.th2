@@ -74,7 +74,7 @@ endscrap
 scrap okna-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 point 322.8625 539.4689 label -align tl -text "<bf>p9"
-line border -close on -id okna-1p_u_smallblocks_MY_1 -visibility off
+line border -close on -id okna-1p_u_smallblocks_1 -visibility off
   336.9648 547.447
   325.5316 538.2753
   325.9982 533.4353
@@ -87,8 +87,8 @@ line border -close on -id okna-1p_u_smallblocks_MY_1 -visibility off
   336.9648 547.447
 endline
 
-area u:smallblocks_MY -attr scale 0.9
-  okna-1p_u_smallblocks_MY_1
+area u:smallblocks -attr scale 0.9
+  okna-1p_u_smallblocks_1
 endarea
 
 line wall 

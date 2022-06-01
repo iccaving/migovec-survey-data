@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap echo_rift-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 46.8876 267.4104 label -align tr -attr level 2 -text "Deep M2" -scale xs
+	point 46.8876 267.4104 label -align tr -attr level 3 -text "Deep M2" -scale xs
 	line rock-edge -clip off -close on -outline none
 		6.4841 1381.2013
 		583.0033 1381.2013
@@ -16,7 +16,7 @@ scrap echo_rift-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500
 		6.4841 808.5514
 	endline
 	
-	point 268.627 482.832 label -align br -attr level 2 -text "Echo Rift"
+	point 268.627 482.832 label -align br -attr level 3 -text "Echo Rift"
 	line wall
 		138.9138 440.3052
 		138.9138 440.3052 160.4578 436.2657 161.3555 435.8169

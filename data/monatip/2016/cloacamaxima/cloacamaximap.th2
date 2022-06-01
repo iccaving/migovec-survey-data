@@ -28,7 +28,7 @@ line wall
   369.0 -150.0
 endline
 
-point 400 -266 label -align r -scale s -text "Cloaca<br>Maxima"
+point 400 -266 label -align r -scale s -text "Cloaca<br>Maxima" -attr level 2
 
 line label -text "Cloaca Maxima"
   304.5 -266.25
@@ -982,5 +982,3 @@ point 326.0 -507.0 station -name "20"
 point 319.0 -514.0 station -name "19"
 
 endscrap
-
-

@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap jericho2-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point -30.641 51.1815 label -text Jericho2 -attr level 3 -attr align tr
+	point -30.641 51.1815 label -text Jericho2 -attr level 4 -attr align tr
 	line wall -clip off -close on -outline in
 		-63.3789 14.8845
 		-58.863 14.1949 -55.0695 19.3491 -34.2221 17.4623

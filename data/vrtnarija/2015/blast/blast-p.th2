@@ -4,7 +4,7 @@ encoding  utf-8
 
 
 scrap blast-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-	
+
 	point 442.7246 236.3009 label -attr level 1 -scale l -text "Blast!" -align l
 	line wall
 		312.3477 1065.2749
@@ -51,7 +51,7 @@ scrap blast-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 		915.4079 -608.9854 933.1732 -608.5053 939.4151 -622.4294
 		945.6569 -636.3536 953.8194 -663.7218 953.8194 -663.7218
 	endline
-	
+
 	line wall
 		968.9693 -657.9756
 		965.2346 -649.4878 960.142 -629.4566 956.4073 -619.9502
@@ -100,7 +100,7 @@ scrap blast-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 		329.3273 983.5683 340.1917 1021.2542 341.5498 1035.1743
 		342.9078 1049.0943 342.2288 1057.9216 342.2288 1057.9216
 	endline
-	
+
 	point 960.0168 -657.1624 station -name 35
 	point 953.7968 -634.0124 station -name 34
 	point 949.8668 -621.8024 station -name 33
@@ -137,4 +137,3 @@ scrap blast-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	point 322.7768 1026.4676 station -name 2
 	point 323.4068 1064.5776 station -name 1
 endscrap
-

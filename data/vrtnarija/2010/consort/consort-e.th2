@@ -4,8 +4,8 @@ encoding  utf-8
 
 scrap consort-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 557.7844 1037.4833 label -text "Consort Road" -attr level 1 -scale l -align tr
-	point 121.7844 1175.4833 label -text "Albert Hall" -attr level 1 -scale l -align tr
+	point 557.7844 1037.4833 label -text "Consort Road" -attr level 2 -scale l -align tr
+	point 121.7844 1175.4833 label -text "Albert Hall" -attr level 2 -scale l -align tr
 	line wall
 		555.6941 933.7185
 		555.6941 929.9253

@@ -130,8 +130,8 @@ endscrap
 
 scrap marwood-1p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
 	
-	point 555.0848 435.911 label -attr level 1 -scale l -text "Marwood Inlet" -align tr
-	line label -attr level 2 -text "Marwood inlet"
+	point 555.0848 435.911 label -attr level 2 -scale l -text "Marwood Inlet" -align tr
+	line label -attr level 3 -text "Marwood inlet"
 		100.3732 654.673
 		100.3732 654.673 404.4891 737.0689 560.2922 480.8925
 	endline

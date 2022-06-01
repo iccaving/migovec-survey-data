@@ -9,14 +9,14 @@ line wall -subtype invisible
   1187.8255 841.9371
 endline
 
-line wall 
+line wall
   870.6087 449.7265
   884.0993 394.1607
   881.4457 370.4192
   879.8069 345.1041
 endline
 
-line wall 
+line wall
   834.5951 669.4172
   839.8717 644.2573
   835.5486 622.4547
@@ -31,122 +31,122 @@ line wall
   870.6087 449.7265
 endline
 
-line u:texture 
+line u:texture
   1087.071 1077.2737
   1074.1936 1066.236
 endline
 
-line u:texture 
+line u:texture
   1042.3068 1108.5473
   1036.7879 1103.0284
 endline
 
-line u:texture 
+line u:texture
   1047.8257 1093.8303
   1036.7879 1103.0284
 endline
 
-line u:texture 
+line u:texture
   1046.5993 1104.8681
   1033.1087 1117.7454
 endline
 
-line u:texture 
+line u:texture
   1076.0332 1068.0756
   1064.3823 1079.7266
 endline
 
-line u:texture 
+line u:texture
   1142.2596 1015.953
   1128.1558 1006.7549
 endline
 
-line u:texture 
+line u:texture
   1193.1558 855.2927
   1212.7969 858.0368
 endline
 
-line u:texture 
+line u:texture
   1206.0332 870.6228
   1205.42 868.17 1208.486 855.2927 1208.486 855.2927
 endline
 
-line u:texture 
+line u:texture
   1198.0615 863.2644
   1201.1275 835.67
 endline
 
-line u:texture 
+line u:texture
   1202.3539 910.4813
   1182.7313 903.736
 endline
 
-line u:texture 
+line u:texture
   1185.7973 914.1606
   1191.3162 895.1511
 endline
 
-line u:texture 
+line u:texture
   1186.4106 952.7926
   1163.1087 942.3681
 endline
 
-line u:texture 
+line u:texture
   1169.854 963.8304
   1153.2974 952.7926
 endline
 
-line u:texture 
+line u:texture
   1129.9955 1038.0285
   1108.5332 1020.8587
 endline
 
-line u:texture 
+line u:texture
   1088.9106 1068.6888
   1072.354 1084.019
 endline
 
-line u:texture 
+line u:texture
   1112.8257 1024.5379
   1097.4955 1041.7077
 endline
 
-line u:texture 
+line u:texture
   1139.8068 1007.3681
   1113.4389 1036.802
 endline
 
-line u:texture 
+line u:texture
   1170.4672 942.3681
   1149.6181 971.8021
 endline
 
-line u:texture 
+line u:texture
   1212.7969 878.3002
   1185.7973 870.6228
 endline
 
-line u:texture 
+line u:texture
   1195.486 930.99
   1166.7879 919.0662
 endline
 
-line u:texture 
+line u:texture
   1061.5983 1102.0841
   1050.8917 1082.7926
 endline
 
-line u:texture 
+line u:texture
   1109.4929 1066.1931
   1081.5521 1046.0002
 endline
 
-line u:texture 
+line u:texture
   1159.4202 999.7061
   1130.6087 976.0945
 endline
 
-line u:texture 
+line u:texture
   1191.9294 829.538
   1181.5049 893.9247
   1112.2125 1006.1417
@@ -157,17 +157,17 @@ endline
 
 point 999.996 1128.78 water-flow -orientation 180.0
 point 1008.58 1079.73 water-flow -orientation 180.0
-line pit 
+line pit
   1019.9615 1142.1143
   1019.9615 1142.1143 983.5248 1149.5648 957.1139 1110.9664
 endline
 
-line label -attr level 2 -text "Klic Globin"
+line label -attr level 3 -text "Klic Globin"
   754.7125 1225.0567
   754.7125 1225.0567 992.0238 1268.5944 1232.4011 1259.3963
 endline
 
-line wall 
+line wall
   1187.8255 841.9371
   1187.8255 841.9371 1188.2506 843.8205 1190.9356 845.279
   1194.4258 847.1747 1200.5276 848.805 1202.0833 849.2947
@@ -316,7 +316,7 @@ line rock-border -close on
   895.7502 978.5473 898.2031 992.6511 891.4578 994.4907
 endline
 
-line rock-border 
+line rock-border
   904.9484 1060.1039
   880.4201 1051.519
   884.0993 1004.9153
@@ -584,7 +584,7 @@ line rock-border -close on
   1124.4766 614.9154
 endline
 
-line floor-step 
+line floor-step
   975.3323 574.0666
   975.3323 574.0666 973.8974 540.0366 971.9229 536.3911
   969.9484 532.7456 944.8068 495.3399 944.1936 492.2739
@@ -595,7 +595,7 @@ line floor-step
   1038.2106 605.9073
 endline
 
-line floor-step 
+line floor-step
   864.0413 464.5355
   883.4861 457.9343
   900.6559 458.5475
@@ -646,7 +646,7 @@ line rock-border -close on
   1024.5575 477.7317
 endline
 
-line rock-border 
+line rock-border
   962.6113 458.9921
   941.7408 490.4343
   912.3069 488.5946
@@ -687,7 +687,7 @@ line rock-border -close on
   901.8823 505.7645 938.2915 496.3303 938.2915 496.3303
 endline
 
-line rock-border 
+line rock-border
   975.3323 574.0666
   945.4201 578.7361
   942.354 540.1041
@@ -718,7 +718,7 @@ line rock-border -close on
   986.4865 627.4064
 endline
 
-line contour 
+line contour
   827.8007 603.3503
   835.4346 591.5342
   842.5001 582.06 850.8766 573.5761 860.1645 566.2676
@@ -729,12 +729,12 @@ line contour
   947.484 535.2353 959.7576 535.288 971.9229 536.3911
 endline
 
-line contour 
+line contour
   889.6635 548.5046
   890.0369 549.3452
 endline
 
-line contour 
+line contour
   833.9788 523.9123
   859.6883 508.6494
   859.6883 508.6494
@@ -743,18 +743,18 @@ line contour
   907.3973 496.2037 922.9025 495.4754 938.2915 496.3303
 endline
 
-line contour 
+line contour
   883.5311 500.8231
   883.7591 501.7104
 endline
 
-line contour 
+line contour
   835.5486 622.4547
   867.2625 604.0581
   901.3651 588.459 938.2567 579.6986 975.3323 574.0666
 endline
 
-line contour 
+line contour
   902.5563 590.4864
   902.8621 591.3475
 endline
@@ -820,7 +820,7 @@ line rock-border -close on
   911.6814 735.6988
 endline
 
-line wall 
+line wall
   1112.3658 464.005
   1118.9117 481.9045
   1124.4184 500.0708
@@ -832,20 +832,20 @@ line wall
   1154.8221 736.4741
 endline
 
-line wall 
+line wall
   1044.7788 310.3715
   1072.3748 333.7963
   1102.3 367.1673
 endline
 
-line wall 
+line wall
   1104.529 409.6718
   1103.8912 427.1635
   1105.6297 442.6194
   1112.3658 464.005
 endline
 
-line wall 
+line wall
   1102.3 367.1673
   1113.5707 371.472
   1123.4035 375.6296
@@ -874,17 +874,17 @@ line wall
   1104.529 409.6718
 endline
 
-line gradient 
+line gradient
   1187.0238 939.3021
   1168.0143 930.7172
 endline
 
-line gradient 
+line gradient
   1138.5804 1025.1511
   1119.5709 1009.8209
 endline
 
-line contour 
+line contour
   1027.5898 574.4437
   1045.2524 582.887
   1059.3732 590.1928 1073.0371 598.3894 1086.0784 607.483
@@ -896,12 +896,12 @@ line contour
   1156.4327 681.2223 1161.0523 690.7634 1164.3351 700.7644
 endline
 
-line contour 
+line contour
   1108.5205 624.679
   1107.9267 625.3814
 endline
 
-line contour 
+line contour
   1025.7502 538.2644
   1037.5461 536.7836
   1047.0768 535.7415 1056.6412 535.0003 1066.2205 534.603
@@ -912,12 +912,12 @@ line contour
   1124.0457 538.449 1129.1399 539.7815 1134.0181 541.7015
 endline
 
-line contour 
+line contour
   1080.1932 534.2855
   1080.1932 535.2054
 endline
 
-line contour 
+line contour
   1024.5601 477.7302
   1024.5601 477.7302 1024.5601 477.7272 1024.5701 477.7262
   1024.5801 477.7202 1024.5891 477.7152 1024.5991 477.7097
@@ -940,100 +940,100 @@ line contour
   1096.6801 432.5405 1100.3312 429.9105 1103.8937 427.164
 endline
 
-line contour 
+line contour
   1064.9153 453.5184
   1065.4032 454.2981
 endline
 
-line u:texture 
+line u:texture
   879.8069 345.1041
   896.9767 341.4249
 endline
 
-line u:texture 
+line u:texture
   885.3257 351.2362
   885.3257 351.2362 881.0333 335.906 879.8069 333.4532
 endline
 
-line u:texture 
+line u:texture
   890.8446 403.972
   890.8446 403.972 885.9389 387.4154 885.9389 379.4437
 endline
 
-line u:texture 
+line u:texture
   876.1276 457.9343
   876.1276 457.9343 900.6559 456.0947 903.7219 454.255
 endline
 
-line u:texture 
+line u:texture
   879.1937 451.8022
   883.4861 457.9343
 endline
 
-line u:texture 
+line u:texture
   895.7503 450.5758
   900.6559 458.5475
 endline
 
-line u:texture 
+line u:texture
   914.7597 446.8965
   928.8635 454.255
 endline
 
-line u:texture 
+line u:texture
   926.4106 446.2833
   914.1465 451.8022
 endline
 
-line u:texture 
+line u:texture
   898.8163 427.2739
   918.4389 425.4343
 endline
 
-line u:texture 
+line u:texture
   911.0804 433.406
   904.3352 418.689
 endline
 
-line u:texture 
+line u:texture
   884.0993 394.1607
   906.788 389.255
 endline
 
-line u:texture 
+line u:texture
   903.7219 406.4249
   903.7219 406.4249 890.8446 370.2456 890.8446 364.7268
 endline
 
-line u:texture 
+line u:texture
   892.6842 434.6324
   940.5144 448.7362
 endline
 
-line u:texture 
+line u:texture
   897.5899 442.6041
   919.6653 456.7079
 endline
 
-line u:texture 
+line u:texture
   870.6087 449.7265
   897.5899 442.6041
   873.6748 413.1701
 endline
 
-line u:texture 
+line u:texture
   919.0521 416.2362
   873.6748 413.1701
   876.8052 359.9008
   898.8163 353.0758
 endline
 
-line u:texture 
+line u:texture
   890.2314 316.2834
   904.3352 368.406
 endline
 
-line contour 
+line contour
   905.5616 337.1324
   905.5666 337.1294
   905.5706 337.1294 905.5756 337.1264 905.5801 337.1254
@@ -1056,12 +1056,12 @@ line contour
   1042.5859 314.1786 1063.5595 314.6463 1084.1312 318.0176
 endline
 
-line contour 
+line contour
   993.9048 317.9003
   994.0185 318.8131
 endline
 
-line contour 
+line contour
   1160.6865 439.0444
   1158.741 442.3446
   1158.741 442.3446
@@ -1070,29 +1070,29 @@ line contour
   1155.588 445.5709 1154.5744 446.172 1153.4599 446.4397
 endline
 
-line contour 
+line contour
   1157.811 443.5108
   1157.1062 442.9248
 endline
 
-line contour 
+line contour
   1144.1544 408.3197
   1142.9421 412.6263
   1140.9286 417.0943 1137.6175 420.8597 1134.0764 424.2477
 endline
 
-line contour 
+line contour
   1140.4221 417.0371
   1139.654 416.5568
 endline
 
-line contour 
+line contour
   1123.4035 375.6296
   1122.8732 382.6414
   1122.3004 388.0385 1121.4107 393.406 1120.1044 398.6739
 endline
 
-line contour 
+line contour
   1122.3062 387.2314
   1121.3944 387.1124
 endline
@@ -1121,7 +1121,7 @@ line rock-border -close on
   915.3729 357.3683
 endline
 
-line rock-border 
+line rock-border
   941.1276 337.7456
   938.6748 337.7456 926.4106 332.84 926.4106 332.84
   925.7974 311.9909
@@ -1188,8 +1188,9 @@ line wall -subtype invisible
   786.673 663.5003
 endline
 
-point 644.642 1342.49 label -align t -attr level 1 -scale xs -text "Klic Globin"
-line wall 
+#point 644.642 1342.49 label -align t -attr level 2 -scale m -text "Klic Globin"
+
+line wall
   786.673 663.5003
   786.673 663.5003 787.2476 663.6788 789.6923 664.767
   791.7474 665.6819 805.6321 660.4058 807.0758 661.2301
@@ -1197,157 +1198,157 @@ line wall
   835.4195 670.1054 819.1059 667.2423 834.5951 669.4172
 endline
 
-line u:texture 
+line u:texture
   402.7315 1087.0851
   453.6277 1078.5001
 endline
 
-line u:texture 
+line u:texture
   419.2881 1105.4813
   414.3825 1082.7926
 endline
 
-line u:texture 
+line u:texture
   438.2976 1094.4435
   435.2315 1068.6888
 endline
 
-line u:texture 
+line u:texture
   367.1655 1044.1605
   394.1466 1044.7737
 endline
 
-line u:texture 
+line u:texture
   397.8259 1012.2738
   371.4579 1009.2077
 endline
 
-line u:texture 
+line u:texture
   386.1749 1090.7643
   386.1749 1090.7643 379.4296 1063.17 383.7221 1039.8681
 endline
 
-line u:texture 
+line u:texture
   372.0711 1104.2549
   392.9202 1099.9624
 endline
 
-line u:texture 
+line u:texture
   370.2315 1072.3681
   392.9202 1073.5945
 endline
 
-line u:texture 
+line u:texture
   369.0051 1026.3775
   389.8542 1027.6039
 endline
 
-line u:texture 
+line u:texture
   379.4296 990.1983
   379.4296 990.1983 353.0617 1063.17 372.0711 1104.2549
 endline
 
-line u:texture 
+line u:texture
   448.7221 1212.1794
   464.0523 1207.2737
 endline
 
-line u:texture 
+line u:texture
   475.7032 1239.7737
   498.3919 1231.1888
 endline
 
-line u:texture 
+line u:texture
   450.5617 1232.4152
   492.2598 1216.4718
 endline
 
-line u:texture 
+line u:texture
   464.0523 1253.8775
   456.6938 1204.8209
 endline
 
-line u:texture 
+line u:texture
   487.9673 1234.868
   478.156 1196.8492
 endline
 
-line u:texture 
+line u:texture
   460.9862 1176.0001
   479.3824 1167.4152
 endline
 
-line u:texture 
+line u:texture
   427.873 1162.5096
   470.1843 1148.4058
 endline
 
-line u:texture 
+line u:texture
   438.2976 1171.0945
   438.2976 1171.0945 425.4202 1149.019 422.9674 1133.0756
 endline
 
-line u:texture 
+line u:texture
   474.4768 1185.8114
   474.4768 1185.8114 457.9202 1164.3492 451.1749 1133.6888
 endline
 
-line u:texture 
+line u:texture
   453.0145 1114.6794
   454.8542 1122.6511
 endline
 
-line u:texture 
+line u:texture
   434.6183 1119.585
   430.9391 1105.4813
 endline
 
-line u:texture 
+line u:texture
   425.4202 1031.2832
   453.6277 1031.8964
 endline
 
-line u:texture 
+line u:texture
   402.7315 1017.1794
   424.1938 1018.4058
 endline
 
-line u:texture 
+line u:texture
   441.9768 1038.6417
   402.1183 1038.6417
 endline
 
-line u:texture 
+line u:texture
   435.2315 1052.1322
   435.2315 1052.1322 433.3919 1036.802 434.6183 1014.1134
 endline
 
-line u:texture 
+line u:texture
   402.1183 1064.3964
   460.5202 1058.6598
 endline
 
-line u:texture 
+line u:texture
   381.2693 987.7455
   455.4673 1002.4624
 endline
 
-line u:texture 
+line u:texture
   402.7315 1111.6133
   462.4916 1099.2971
 endline
 
-line u:texture 
+line u:texture
   417.2002 1133.7348
   466.5051 1118.3586
 endline
 
-line u:texture 
+line u:texture
   437.6567 1200.9423
   494.2037 1179.4218
 endline
 
-line pit 
+line pit
   834.5951 669.4172
   834.5951 669.4172 831.9767 682.9814 830.1371 685.4342
   828.2974 687.887 762.6843 699.538 762.6843 699.538
@@ -1356,7 +1357,7 @@ line pit
   690.939 667.038
 endline
 
-line wall 
+line wall
   390.0198 1002.2801
   390.0198 1002.2801 393.871 1000.9037 395.0259 998.8978
   399.2492 991.5625 397.9414 974.6383 405.7976 971.8021
@@ -1372,7 +1373,7 @@ line wall
   611.202 799.1982 607.0111 786.0245 608.2193 783.203
 endline
 
-line wall 
+line wall
   441.3421 1251.6454
   453.0145 1211.5661 430.9391 1199.302 424.9818 1180.5225
   414.4775 1166.5935 422.811 1148.5162 417.2002 1133.7348
@@ -1380,7 +1381,7 @@ line wall
   370.0752 1103.7766 382.5294 1105.3004 365.9391 1103.6417
 endline
 
-line wall 
+line wall
   794.2154 854.9002
   775.2458 878.849 758.4715 887.7344 729.5833 895.2002
   722.6571 896.9908 714.5352 895.6816 708.5902 899.6613
@@ -1401,7 +1402,7 @@ line wall
 endline
 
 point 765.137 677.46 continuation -scale xs
-line floor-step 
+line floor-step
   402.7315 1111.6133
   402.7315 1087.0851
   402.7315 1087.0851 402.7315 1065.0096 402.1183 1064.3964
@@ -1411,7 +1412,7 @@ line floor-step
   405.7976 971.8021
 endline
 
-line floor-step 
+line floor-step
   500.8692 1234.6442
   492.2598 1216.4718
   494.2037 1179.4218
@@ -1544,7 +1545,7 @@ endline
 point 669.517 840.78 station -name 1
 point 571.173 961.61 station -name 2
 point 505.027 1163.71 station -name 3
-line contour 
+line contour
   729.5833 895.2002
   735.0538 878.8617
   739.1782 866.394 743.2173 853.898 747.1315 841.3627
@@ -1564,12 +1565,12 @@ line contour
   762.6843 699.538
 endline
 
-line contour 
+line contour
   764.3815 778.2891
   765.288 778.4446
 endline
 
-line contour 
+line contour
   642.4956 1125.7171
   641.1634 1112.0975
   640.2093 1101.6499 639.3833 1091.1901 638.7395 1080.7188
@@ -1602,12 +1603,12 @@ line contour
   663.4442 736.4196 664.2126 723.6429 664.8838 710.8609
 endline
 
-line contour 
+line contour
   650.9405 918.5938
   651.8582 918.6568
 endline
 
-line contour 
+line contour
   558.5444 1230.4069
   554.4816 1210.1452
   551.4638 1194.7503 548.5718 1179.3305 545.8672 1163.8775
@@ -1647,7 +1648,7 @@ line contour
   561.8308 911.8399 561.8308 911.8399 561.8308 911.8399
 endline
 
-line contour 
+line contour
   537.9757 1071.2686
   538.8834 1071.4177
 endline
@@ -1667,4 +1668,3 @@ point 1136.7 766.396 station -name 11
 point 1123.86 761.178 station -name 12
 point 1120.82 754.576 station -name 13
 endscrap
-

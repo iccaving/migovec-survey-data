@@ -3,157 +3,157 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 	line survey
 		877.2396 643.2213
 		920.6891 621.0646
 	endline
-	
+
 	line survey
 		809.6545 679.1041
 		877.2396 643.2213
 	endline
-	
+
 	line survey
 		787.1494 664.5141
 		809.6545 679.1041
 	endline
-	
+
 	line survey
 		787.1494 664.5141
 		787.1494 664.5141
 	endline
-	
+
 	line survey
 		757.5235 629.1748
 		787.1494 664.5141
 	endline
-	
+
 	line survey
 		760.0596 557.0887
 		757.5235 629.1748
 	endline
-	
+
 	line survey
 		728.2319 528.4521
 		760.0596 557.0887
 	endline
-	
+
 	line survey
 		755.0012 458.7768
 		728.2319 528.4521
 	endline
-	
+
 	line survey
 		755.0012 458.7768
 		755.0012 458.7768
 	endline
-	
+
 	line survey
 		782.4393 416.5257
 		755.0012 458.7768
 	endline
-	
+
 	line survey
 		692.2377 392.2787
 		782.4393 416.5257
 	endline
-	
+
 	line survey
 		672.2687 417.8495
 		692.2377 392.2787
 	endline
-	
+
 	line survey
 		630.9095 412.0386
 		672.2687 417.8495
 	endline
-	
+
 	line survey
 		611.8184 441.4416
 		630.9095 412.0386
 	endline
-	
+
 	line survey
 		555.0888 469.0888
 		611.8184 441.4416
 	endline
-	
+
 	line survey
 		550.2533 503.1042
 		555.0888 469.0888
 	endline
-	
+
 	line survey
 		492.7572 439.1284
 		550.2533 503.1043
 	endline
-	
+
 	line survey
 		486.8348 383.4996
 		492.7572 439.1284
 	endline
-	
+
 	line survey
 		441.9639 363.5306
 		486.8348 383.4996
 	endline
-	
+
 	line survey
 		390.8362 389.5335
 		441.9639 363.5306
 	endline
-	
+
 	line survey
 		367.2441 435.9512
 		390.8362 389.5335
 	endline
-	
+
 	line survey
 		310.18 501.5714
 		367.2441 435.9512
 	endline
-	
+
 	line survey
 		305.47 554.9984
 		310.18 501.5714
 	endline
-	
+
 	line survey
 		217.902 572.0131
 		305.47 554.9984
 	endline
-	
+
 	line survey
 		214.2789 597.6815
 		217.902 572.0131
 	endline
-	
+
 	line survey
 		181.6987 613.5954
 		214.2789 597.6815
 	endline
-	
+
 	line survey
 		112.9013 682.3928
 		181.6987 613.5954
 	endline
-	
+
 	line survey
 		125.847 710.1514
 		112.9013 682.3928
 	endline
-	
+
 	line survey
 		86.564 787.2959
 		125.847 710.1514
 	endline
-	
+
 endscrap
 
 
 scrap AJA-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
+
 	line border -close on -id AJA-1p_water_1 -visibility on
 		59.9005 788.7765
 		118.5266 804.7075
@@ -162,17 +162,17 @@ scrap AJA-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		27.4013 877.3528
 		16.5682 846.7653
 	endline
-	
+
 	area water
 	AJA-1p_water_1
 	endarea
-	
+
 	point 121.0583 879.2087 label -align tr -attr level 1 -scale l -text AJA
 	line pit
 		808.5616 649.6341
 		814.8035 670.2803 804.2403 680.8435 784.5545 689.486
 	endline
-	
+
 	line wall
 		928.9953 628.948
 		919.9949 645.7871 860.8631 677.3901 849.3397 671.6283
@@ -206,13 +206,13 @@ scrap AJA-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		94.1081 828.7277 108.5124 834.4894 101.7904 854.6554
 		95.0684 874.8214 106.5918 884.4243 88.3464 884.4243
 	endline
-	
+
 	line wall -id alt_1
 		88.3464 884.4243
 		altitude .
 		70.1009 884.4243 59.5378 895.9477 48.0143 882.5037
 	endline
-	
+
 	line wall
 		48.0143 882.5037
 		36.4909 869.0597 23.0469 861.3774 28.8086 846.0128
@@ -246,7 +246,7 @@ scrap AJA-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		773.1375 586.9583 766.309 612.6631 773.031 623.2262
 		779.753 633.7894 792.052 657.234 812.451 652.3111
 	endline
-	
+
 	point 920.689 621.065 station -name 31
 	point 877.24 643.221 station -name 30
 	point 809.654 679.104 station -name 29
@@ -278,4 +278,3 @@ scrap AJA-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	point 125.847 710.151 station -name 2
 	point 86.564 787.296 station -name 1
 endscrap
-

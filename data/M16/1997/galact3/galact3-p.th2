@@ -3,31 +3,31 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-	
-	area u:smallblocks_MY -attr scale 2
+
+	area u:smallblocks -attr scale 2
 	blocks1
 	endarea
-	
-	area u:smallblocks_MY -attr scale 1.7
+
+	area u:smallblocks -attr scale 1.7
 	blocks2
 	endarea
-	
-	area u:smallblocks_MY -attr scale 1.8
+
+	area u:smallblocks -attr scale 1.8
 	blocks3
 	endarea
-	
-	area u:smallblocks_MY -attr scale 1.2
+
+	area u:smallblocks -attr scale 1.2
 	blocks4
 	endarea
-	
-	area u:smallblocks_MY -attr scale 1.4
+
+	area u:smallblocks -attr scale 1.4
 	blocks5
 	endarea
-	
-	area u:smallblocks_MY -attr scale 1
+
+	area u:smallblocks -attr scale 1
 	blocks7
 	endarea
-	
+
 	line border -close on -id blocks7 -subtype invisible
 		-28.8086 265.0392
 		-28.8086 265.0392 -26.4079 265.5193 -21.1263 265.5193
@@ -44,7 +44,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		-26.888 347.6239 -16.805 324.577 -16.805 324.577
 		-12.9639 282.8045
 	endline
-	
+
 	line border -close on -id blocks5 -subtype invisible
 		71.2977 113.3972
 		6.1112 145.3114
@@ -56,7 +56,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		-71.2977 -74.0138
 		18.3337 66.5445
 	endline
-	
+
 	line border -close on -id blocks2 -subtype invisible
 		-44.8157 -111.3602
 		-44.8157 -111.3602 3.3951 -98.4587 12.9015 -101.1748
@@ -68,7 +68,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		71.2977 113.3972 21.0498 68.5816 19.0127 65.1864
 		16.9756 61.7913 -71.2977 -74.0138 -71.2977 -74.0138
 	endline
-	
+
 	line border -close on -id blocks3 -subtype invisible
 		-81.82 -285.55
 		-81.82 -285.55 -65.8655 -281.1165 -67.9025 -278.4004
@@ -84,7 +84,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		-173.1515 -246.4862 -153.4597 -262.1038 -150.7436 -263.4619
 		-148.0275 -264.8199 -81.82 -285.55 -81.82 -285.55
 	endline
-	
+
 	line border -close on -id blocks4 -subtype invisible
 		42.0996 -345.6239
 		42.0996 -345.6239 145.3114 -290.6229 152.7807 -279.0794
@@ -114,7 +114,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		185.3739 -344.9449 174.5095 -344.2659 165.6822 -351.7352
 		156.8549 -359.2044 134.06 -367.31 134.06 -367.31
 	endline
-	
+
 	line border -close on -id blocks1 -subtype invisible
 		71.2977 -339.5127
 		74.0138 -338.1547 167.7193 -286.5487 173.1515 -251.2394
@@ -127,7 +127,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		-3.3951 -334.0805 31.2352 -352.4142 40.7415 -349.6981
 		50.2479 -346.982 71.2977 -339.5127 71.2977 -339.5127
 	endline
-	
+
 	point 79.446 236.3009 passage-height -align t -value 50
 	point 162.2871 -74.6928 passage-height -align t -value 50
 	point 134.447 98.4587 passage-height -align t -value 50
@@ -151,7 +151,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		-118.1504 16.9756
 		-126.2987 -4.0742
 	endline
-	
+
 	point 278.9232 -108.6441 label -align r -attr level 1 -scale l -text "Galaktika"
 	point 94.2882 332.1993 water-flow -align r -orientation 70.0 -scale l
 	line wall
@@ -180,7 +180,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		-65.526 126.6382
 		-81.1435 117.1319
 	endline
-	
+
 	line wall
 		-141.1124 -276.6729
 		-141.1124 -276.6729 -137.8422 -262.7828 -133.089 -266.857
@@ -215,7 +215,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		73.582 322.8965 78.5035 324.4569 78.9836 324.577
 		79.4637 324.697 89.1867 327.818 89.1867 327.818
 	endline
-	
+
 	line wall
 		-130.7124 2.0371
 		-126.1658 -4.0714
@@ -229,7 +229,7 @@ scrap galact3-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 		-177.8168 -216.3096 -190.5742 -224.5483 -199.3697 -229.8044
 		-204.4591 -232.8459 -206.7815 -237.7695 -206.7815 -237.7695
 	endline
-	
+
 	point -64.13 122.24 station -name 16
 	point -40.91 239.57 station -name 15
 	point -22.24 365.31 station -name 14

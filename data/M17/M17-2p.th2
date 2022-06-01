@@ -1369,7 +1369,7 @@ line border
   1019.5266 1891.2731 1002.0527 1910.9467 1002.0527 1910.9467
 endline
 
-line border -close on -id M17-2p_u_smallblocks_MY_1 -visibility off
+line border -close on -id M17-2p_u_smallblocks_1 -visibility off
   1420.6992 1962.7148
   1418.3322 1962.8839 1415.9659 1961.8692 1414.6133 1959.1641
   1412.8099 1955.5573 1400.7871 1933.916 1400.7871 1933.916
@@ -1445,11 +1445,11 @@ line border -close on -id M17-2p_u_smallblocks_MY_1 -visibility off
   1420.6992 1962.7148
 endline
 
-area u:smallblocks_MY 
-  M17-2p_u_smallblocks_MY_1
+area u:smallblocks 
+  M17-2p_u_smallblocks_1
 endarea
 
-line border -close on -id M17-2p_u_smallblocks_MY_2 -visibility off
+line border -close on -id M17-2p_u_smallblocks_2 -visibility off
   1484.2637 1679.582
   1484.2981 1679.2776 1484.3437 1678.9745 1484.377 1678.6699
   1484.8715 1674.1366 1485.2517 1669.5914 1485.6055 1665.0449
@@ -1517,20 +1517,20 @@ line border -close on -id M17-2p_u_smallblocks_MY_2 -visibility off
   1505.777 1665.7355 1495.075 1672.65 1484.2637 1679.582
 endline
 
-area u:smallblocks_MY 
-  M17-2p_u_smallblocks_MY_2
+area u:smallblocks 
+  M17-2p_u_smallblocks_2
 endarea
 
-line border -close on -id M17-2p_u_smallblocks_MY_3 -visibility off
+line border -close on -id M17-2p_u_smallblocks_3 -visibility off
   1461.9648 1432.2852
   1461.9648 1432.2852
 endline
 
-area u:smallblocks_MY 
-  M17-2p_u_smallblocks_MY_3
+area u:smallblocks 
+  M17-2p_u_smallblocks_3
 endarea
 
-line border -close on -id M17-2p_u_smallblocks_MY_4 -visibility off
+line border -close on -id M17-2p_u_smallblocks_4 -visibility off
   1557.9766 1584.3516
   1556.114 1580.6913 1554.1909 1577.0615 1552.3887 1573.3711
   1550.0594 1568.6015 1547.7796 1563.8061 1545.5586 1558.9844
@@ -1573,11 +1573,11 @@ line border -close on -id M17-2p_u_smallblocks_MY_4 -visibility off
   1568.3492 1575.0844 1562.7398 1580.268 1557.9766 1584.3516
 endline
 
-area u:smallblocks_MY 
-  M17-2p_u_smallblocks_MY_4
+area u:smallblocks 
+  M17-2p_u_smallblocks_4
 endarea
 
-line border -close on -id M17-2p_u_smallblocks_MY_5 -visibility off
+line border -close on -id M17-2p_u_smallblocks_5 -visibility off
   1507.189 2075.1853
   1507.189 2075.1853 1504.4597 2087.6566 1511.6937 2094.2808
   1521.9785 2103.6984 1543.2855 2108.6772 1542.9326 2112.5592
@@ -1602,11 +1602,11 @@ line border -close on -id M17-2p_u_smallblocks_MY_5 -visibility off
   1507.189 2054.1453 1507.189 2075.1853 1507.189 2075.1853
 endline
 
-area u:smallblocks_MY 
-  M17-2p_u_smallblocks_MY_5
+area u:smallblocks 
+  M17-2p_u_smallblocks_5
 endarea
 
-line border -close on -id M17-2p_u_smallblocks_MY_6 -visibility off
+line border -close on -id M17-2p_u_smallblocks_6 -visibility off
   1492.1693 2009.5548
   1492.1693 2009.5548 1429.6417 2029.4984 1423.6303 2033.1053
   1417.6188 2036.7122 1367.1229 2066.1681 1362.3138 2068.5727
@@ -1636,8 +1636,8 @@ line border -close on -id M17-2p_u_smallblocks_MY_6 -visibility off
   1472.3228 1985.6151 1492.1693 2009.5548 1492.1693 2009.5548
 endline
 
-area u:smallblocks_MY 
-  M17-2p_u_smallblocks_MY_6
+area u:smallblocks 
+  M17-2p_u_smallblocks_6
 endarea
 
 line wall 

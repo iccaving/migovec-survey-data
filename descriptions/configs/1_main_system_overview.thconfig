@@ -1,13 +1,76 @@
-# This config file produces an overview map where only the outline of the passage is shown.
-# The look-up highlights a map in red, whilst rendering everything else in grey.
-source ../../data/system_migovec.th
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../data/system_migovec.th"
 
-input ../../layouts/detailed-p.thl
-input ../../layouts/metapost/connection_marker.thl
-input ../../layouts/metapost/label.thl
-input ../../layouts/metapost/scalebar_arrow.thl
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
 
-input ../../layouts/mods.thl
+#----------------------------------------------------------------------------------|
+# export a PLAN view
+
+
+layout plan
+	copy base-p
+	scale-bar 400 m
+	symbol-hide line wall
+	symbol-hide area water
+	symbol-hide area sump
+	symbol-hide area clay
+	symbol-hide area sand
+	symbol-hide area snow
+	symbol-hide area pebbles
+	symbol-hide area blocks
+	symbol-hide area u:smallblocks
+	symbol-hide point u:connectionmarker
+	symbol-hide line pit
+	symbol-hide line ceiling-step
+	symbol-hide line chimney
+	symbol-hide point water-flow
+	symbol-hide line contour
+	symbol-hide point pebbles
+	symbol-hide line border
+	symbol-hide line rock-border
+
+	symbol-hide point narrow-end
+	symbol-hide point low-end
+	symbol-hide point continuation
+	symbol-hide point breakdown-choke
+	symbol-hide point dig
+	symbol-hide line floor-step
+
+	symbol-hide point sand
+	symbol-hide point clay
+	symbol-hide point camp
+	symbol-hide point archeo-material
+	symbol-hide point u:flag
+
+	scale 1 5000
+	map-comment "Tolminski Migovec cave system<br>Tolmin, Julian Alps, Slovenia<br>Explored by JSPDT/ICCC 1974–2021"
+	code metapost
+		set_label_level("1");
+	endcode
+
+	code tex-map
+		\framethickness=0.mm
+		\def\maplayout{
+		\legendbox{2}{5}{NW}{\size[13] \ss \the\comment{}}
+		\legendbox{12}{-2}{N}{\scalebar}
+		\legendbox{-3}{5}{N}{\northarrow}
+		}
+	endcode
+
+
+	colour map-fg map:dark
+
+endlayout
+
+select m-all-p@system_migovec
+
+maps-offset off
+
 
 lookup map:dark
   m-all-p@primadona.primadona_ubend_monatip.system_migovec [100 35 50] "Primadona"
@@ -18,31 +81,5 @@ lookup map:dark
   m-all-p@m2m16m18.system_migovec [33 100 36] "M2-M16-M18"
 endlookup
 
-# Generate overview inset
-layout overview-p
-	symbol-hide group all
-	#copy custom_scalebar
-	colour map-fg map:dark # a crucial look up
-	colour map-bg transparent
-	transparency off
-	scale 1 10000
-	base-scale 1 2000
-	map-comment "Tolminski Migovec cave system<br>Tolmin, Julian Alps, Slovenia<br>Explored by JSPDT/ICCC 1974--2021"
-	map-header 0 0 off
-	scale-bar 800 m
 
-
-	code tex-map
-		\def\maplayout{
-		\legendbox{0}{7}{SW}{\size[12]\bf \the\cavename}
-		\legendbox{0}{5}{NW}{\size[10]\the\comment}
-		\legendbox{80}{87}{S}{\northarrow}
-		\legendbox{80}{86}{N}{\scalebar}
-		}
-	endcode
-endlayout
-
-maps-offset off
-select m-all-p@system_migovec
-
-export map -o ../outputs/system_overview.pdf -projection plan -layout overview-p
+export map -o ../outputs/system_overview.pdf -projection plan -layout plan

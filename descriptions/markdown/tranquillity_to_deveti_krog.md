@@ -6,4 +6,4 @@
 
 ### Street-wise Hercules to Deveti Krog
 
-\ThreeColWidthFigure{../outputs/tranquillity_to_deveti_krog.pdf}
+\CenteredFigure{../outputs/tranquillity_to_deveti_krog.pdf}

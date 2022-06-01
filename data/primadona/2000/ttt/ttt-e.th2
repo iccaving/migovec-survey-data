@@ -16,7 +16,7 @@ scrap ttt-e1 -scale [247.0 -713.0 557.0 -712.0 0.0 0.0 14 0.0 m] -projection ext
 		517.5234 682.411
 	endline
 
-	point 733.4898 605.7604 label -text TTT -align r -scale l -attr level 1
+	point 733.4898 605.7604 label -text TTT -align r -scale l -attr level 2
 	line wall:invisible
 		502.25 653.75
 		514.2562 650.0131
@@ -84,7 +84,7 @@ scrap ttt-e1 -scale [247.0 -713.0 557.0 -712.0 0.0 0.0 14 0.0 m] -projection ext
 		522.6913 676.6799 522.1699 674.6455 522.9471 681.0572
 	endline
 
-	point 502.0 618.25 label -text Manđare -align t -scale l -attr level 1
+	point 502.0 618.25 label -text Manđare -align t -scale l -attr level 2
 	line wall -close on -outline in
 		651.5 612.0
 		658.25 611.5

@@ -5,8 +5,8 @@ encoding  utf-8
 
 scrap skalar2-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 784.9534 951.9937 label -align r -scale m -text "Skalar 2"
-line wall 
+point 784.9534 951.9937 label -align r -scale m -text "Skalar 2" -attr level 2
+line wall
   890.7283 484.5112
   872.6076 472.6017 829.09 526.2447 791.0646 550.6896
   753.0392 575.1345 706.1864 685.8157 651.8644 726.5572
@@ -15,7 +15,7 @@ line wall
   372.1059 954.7097 289.5909 893.674 279.4055 918.1189
 endline
 
-line wall 
+line wall
   35.5092 761.6901
   115.2881 672.8211 465.6301 913.4396 497.0466 867.7945
   531.8505 817.2279 581.5858 601.5303 610.5204 568.6538
@@ -31,4 +31,3 @@ point 602.2041 673.6707 station -name 3
 point 525.4646 941.7585 station -name 2
 point 134.8482 799.7493 station -name 1
 endscrap
-

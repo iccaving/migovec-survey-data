@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
-	
+
 	line wall
 		624.0429 506.9448
 		626.9253 493.9739
@@ -32,7 +32,7 @@ scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		768.8843 518.8348 774.2888 522.0775 775.73 522.7981
 		777.1712 523.5187 782.936 526.0408 782.936 526.0408
 	endline
-	
+
 	line wall
 		604.2263 549.8207
 		614.4949 530.5446
@@ -40,7 +40,7 @@ scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		618.0979 527.6621 620.0796 522.9782 619.8994 522.2576
 		619.7193 521.537 614.2401 518.2378 614.2401 518.2378
 	endline
-	
+
 	line wall
 		786.3589 539.9124
 		786.3589 539.9124 783.6567 541.5338 782.7559 541.5338
@@ -69,7 +69,7 @@ scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		615.2155 544.0559 608.1896 553.2436 608.1896 553.2436
 		605.4874 554.6848
 	endline
-	
+
 	point 629.159 528.66 station -name 6
 	line wall -close on -outline in
 		633.5 518.5
@@ -90,7 +90,7 @@ scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		645.661 497.2166 643.1389 501.9006 642.4183 503.3418
 		641.6977 504.783 634.852 509.1066 634.852 509.1066
 	endline
-	
+
 	point 627.844 513.457 station -name 8
 	line rock-border -close on
 		669.25 500.5
@@ -98,84 +98,84 @@ scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		666.25 498.5 666.75 496.5 667.5 497.0
 		668.25 497.5 670.75 498.5 670.75 498.5
 	endline
-	
+
 	line rock-border -close on
 		674.5 505.25
 		671.25 505.25
 		672.0 503.5
 		674.25 503.75
 	endline
-	
+
 	line rock-border -close on
 		680.75 499.0
 		676.75 499.75
 		676.0 497.75
 		678.5 496.5
 	endline
-	
+
 	line rock-border -close on
 		690.0 502.0
 		687.5 501.0
 		688.5 499.0
 		690.5 500.0
 	endline
-	
+
 	line rock-border -close on
 		701.25 497.25
 		697.25 501.75
 		695.75 498.5
 		697.5 496.0
 	endline
-	
+
 	line rock-border -close on
 		708.0 508.0
 		703.0 508.0
 		703.0 508.0 702.25 506.25 703.5 506.25
 		704.75 506.25 708.0 505.5 708.0 505.5
 	endline
-	
+
 	line rock-border -close on
 		724.0 509.5
 		719.75 512.5
 		718.0 509.75
 		722.0 507.5
 	endline
-	
+
 	line rock-border -close on
 		731.5 508.5
 		732.0 512.5
 		727.75 513.25
 		728.25 509.0
 	endline
-	
+
 	line rock-border -close on
 		748.0 516.75
 		744.5 519.75
 		739.5 517.5
 		742.5 514.25
 	endline
-	
+
 	line rock-border -close on
 		753.75 526.25
 		749.75 525.75
 		752.0 523.0
 		756.0 523.0
 	endline
-	
+
 	line rock-border -close on
 		768.25 528.0
 		760.5 530.75
 		759.5 526.25
 		764.75 526.25
 	endline
-	
+
 	line rock-border -close on
 		771.75 537.5
 		768.75 536.0
 		768.25 531.0
 		772.25 532.0
 	endline
-	
+
 	line rock-border -close on
 		785.25 533.0
 		778.25 535.75
@@ -183,44 +183,44 @@ scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		774.5 525.5 779.75 522.5 780.5 523.0
 		781.25 523.5 785.25 533.0 785.25 533.0
 	endline
-	
+
 	line floor-step
 		662.5 498.0
 		662.5 498.0 671.0 511.25 663.5 513.75
 	endline
-	
+
 	line floor-step
 		679.25 492.5
 		679.25 492.5 687.0 496.5 683.5 501.5
 	endline
-	
+
 	line floor-step
 		713.75 503.25
 		713.75 503.25 715.5 508.75 712.0 513.0
 	endline
-	
+
 	line contour
 		739.0 508.75
 		739.0 508.75 732.75 520.5 712.75 519.0
 	endline
-	
+
 	line contour
 		759.0 523.0
 		759.0 523.0 753.5 530.0 751.25 532.5
 	endline
-	
+
 	line contour
 		770.0 520.25
 		770.0 520.25 775.75 530.75 775.25 541.0
 	endline
-	
+
 	point 909.0 523.5 entrance -align r -orientation 277.900029411315 -scale l
 	point 1009.0 513.5 label -align tr -text VRTNARIJA -attr level 1 -scale l -attr style 6
 	line pit
 		645.0 525.75
 		645.0 525.75 644.5 528.75 639.75 530.5
 	endline
-	
+
 	point 658.542 504.028 station -name 4
 	point 677.399 494.453 station -name 3
 	point 702.762 502.639 station -name 2
@@ -230,12 +230,12 @@ endscrap
 
 
 scrap bclent2-p2 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
-	
+
 	line pit
 		602.2808 486.8691
 		602.2808 486.8691 588.5231 490.9455 585.2111 490.4359
 	endline
-	
+
 	line wall
 		555.5 486.0
 		557.16 485.45 558.68 485.82 562.5 483.0
@@ -245,12 +245,12 @@ scrap bclent2-p2 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		619.75 495.75 618.5 502.75 619.0 503.75
 		619.5 504.75 622.0 506.75 624.5 507.25
 	endline
-	
+
 	line label -text "Garderer's World"
 		533.5 439.25
 		533.5 439.25 669.25 436.0 755.0 489.0
 	endline
-	
+
 	line wall -close on -outline in
 		580.25 501.5
 		580.25 501.5 585.5 503.25 586.25 500.25
@@ -260,24 +260,24 @@ scrap bclent2-p2 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		573.0 495.0 573.0 498.25 573.5 499.25
 		574.0 500.25 580.25 501.5 580.25 501.5
 	endline
-	
+
 	line pit
 		562.5 483.0
 		562.5 483.0 579.75 487.0 578.5 489.0
 	endline
-	
+
 	line rock-border -close on
 		611.0 500.75
 		604.5 500.5
 		601.5 494.25
 		609.75 490.0
 	endline
-	
+
 	line pit
 		573.5 499.25
 		573.5 499.25 588.0 507.75 578.75 512.75
 	endline
-	
+
 	line wall
 		613.5 517.75
 		612.5 515.25 612.25 511.25 609.0 511.0
@@ -285,7 +285,7 @@ scrap bclent2-p2 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		596.75 516.0 583.28 513.88 578.75 512.75
 		574.75 511.75 570.75 513.5 570.75 513.5
 	endline
-	
+
 	point 580.7 503.078 station -name 11
 	point 609.79 496.354 station -name 10
 	point 612.933 507.39 station -name 9
@@ -293,7 +293,7 @@ endscrap
 
 
 scrap bclent2-p3 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
-	
+
 	point 494.25 534.5 station -name 15
 	point 530.25 508.25 station -name 14
 	point 530.25 508.25 station -name 13
@@ -302,7 +302,7 @@ scrap bclent2-p3 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		509.75 505.25 521.62 506.57 541.25 510.5
 		546.25 511.5 559.0 517.25 559.5 517.5
 	endline
-	
+
 	point 580.7 503.078 station -name 12
 	line rock-border -clip off -close on
 		570.25 511.0
@@ -310,28 +310,28 @@ scrap bclent2-p3 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		564.5 511.75 565.0 507.5 565.0 507.5
 		571.25 506.75
 	endline
-	
+
 	line rock-border -close on
 		552.25 497.75
 		546.0 496.75
 		546.0 496.75 545.25 493.25 546.0 493.0
 		546.75 492.75 552.0 491.5 552.0 491.5
 	endline
-	
+
 	line rock-border -clip off -close on
 		566.75 503.75
 		557.25 502.5
 		556.75 494.75
 		564.25 491.5
 	endline
-	
+
 	line rock-border -close on
 		557.25 512.5
 		550.25 512.25
 		550.0 507.0
 		555.75 505.75
 	endline
-	
+
 	line rock-border -close on
 		540.5 508.0
 		531.5 505.5
@@ -339,33 +339,33 @@ scrap bclent2-p3 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 		536.75 497.5 546.0 498.5 545.75 499.5
 		545.5 500.5 540.5 508.0 540.5 508.0
 	endline
-	
+
 	line rock-border -close on
 		516.75 519.0
 		507.25 517.5
 		507.25 517.5 506.5 512.75 507.0 512.0
 		507.5 511.25 519.5 510.0 519.5 510.0
 	endline
-	
+
 	line rock-border -close on
 		501.0 535.75
 		496.75 535.25
 		494.75 530.5
 		502.75 525.75
 	endline
-	
+
 	line wall
 		570.75 513.5
 		560.25 515.0 552.0 522.25 548.25 524.5
 		544.5 526.75 538.1612 528.2898 531.9112 529.7898
 		525.6612 531.2898 497.3367 541.4766 497.3367 541.4766
 	endline
-	
+
 	line wall
 		488.845 520.4204
 		493.1209 518.6056 496.9237 515.6265 500.3174 514.1591
 		508.3174 507.1591 523.25 507.75 528.25 504.25
 		533.25 500.75 555.5 486.0 555.5 486.0
 	endline
-	
+
 endscrap

@@ -60,4 +60,4 @@ This chamber is a T-junction, with the downstream continuation leading to the de
 Upstream, a short climb leads into _Déjà Vu_ passage and the Hammerhead extensions.
 
 \clearpage
-\ThreeColWidthFigure{../outputs/cafe_to_manger.pdf}
+\CenteredFigure{../outputs/cafe_to_manger.pdf}

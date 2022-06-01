@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap milanovap_1 -scale [325.0 -734.0 535.0 -734.0 0.0 0.0 8 0.0 m]
 
-point 111.0 -279.0 label -orientation 324.2 -text "Milanova" -scale s
+#point 111.0 -279.0 label  -text "Milanova" -scale s -attr level 4
 
 line wall -close on -reverse on -outline in
   393.0 -515.0
@@ -171,5 +171,3 @@ point 263.0 -289.0 station -name "5"
 point 213.0 -291.0 station -name "4"
 
 endscrap
-
-

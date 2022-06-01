@@ -4,47 +4,47 @@ encoding  utf-8
 
 
 scrap DELETE-ME-survey-legs-p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-	
+
 	line survey
 		-6.93 90.08
 		17.48 99.92
 	endline
-	
+
 	line survey
 		-6.93 90.08
 		-6.93 90.08
 	endline
-	
+
 	line survey
 		-17.48 23.39
 		-6.93 90.08
 	endline
-	
+
 	line survey
 		-4.33 -12.83
 		-17.48 23.39
 	endline
-	
+
 	line survey
 		-4.33 -12.83
 		0.47 -46.77
 	endline
-	
+
 	line survey
 		0.47 -46.77
 		-15.91 -59.61
 	endline
-	
+
 	line survey
 		-15.91 -59.61
 		-8.82 -99.92
 	endline
-	
+
 endscrap
 
 
 scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-	
+
 	point 43.4577 109.3225 water-flow -scale l -orientation 258.74659
 	point 29.1985 135.4651 water-flow -scale l -orientation 230.93703
 	line rock-border -close on
@@ -54,7 +54,7 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 		1.8673 126.808 5.0927 122.9036 5.0927 122.9036
 		7.8088 123.5826
 	endline
-	
+
 	line rock-border -close on
 		12.3922 121.8851
 		12.3922 121.8851 12.562 117.8109 13.7503 117.4714
@@ -63,7 +63,7 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 		18.3337 127.6568
 		11.3737 124.9407
 	endline
-	
+
 	line rock-border -close on
 		8.1483 91.4987
 		8.1483 91.4987 4.7532 87.9338 5.2624 87.085
@@ -71,7 +71,7 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 		7.9785 83.5201 14.7688 86.0665 15.2781 87.2548
 		15.7873 88.4431 15.4478 92.8567 15.4478 92.8567
 	endline
-	
+
 	line rock-border -close on
 		-12.7317 118.1504
 		-12.7317 118.1504 -16.2966 114.4158 -16.2966 113.7368
@@ -80,7 +80,7 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 		-8.8273 111.3602 -8.3181 114.246 -8.6576 114.9251
 		-8.9971 115.6041 -10.3551 116.7924 -10.3551 116.7924
 	endline
-	
+
 	line rock-border -close on
 		0.679 108.6441
 		-6.281 106.2675
@@ -89,7 +89,7 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 		3.3951 101.5143 3.5649 102.7026 3.5649 103.7211
 		3.5649 104.7397 2.3766 106.9465 2.3766 106.9465
 	endline
-	
+
 	line rock-border -close on
 		2.3766 122.3943
 		2.3766 122.3943 -5.2624 120.3573 -4.7532 118.9992
@@ -98,7 +98,7 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 		5.602 115.2646 7.9785 117.4714 7.9785 118.3202
 		7.9785 119.169 2.3766 122.3943 2.3766 122.3943
 	endline
-	
+
 	line rock-border -close on
 		15.1083 112.888
 		12.7317 112.0392
@@ -107,7 +107,7 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 		17.1454 106.4372
 		17.8244 108.8138
 	endline
-	
+
 	point -41.5903 78.2577 label -attr level 1 -scale l -text Beetlejuice -align l
 	line wall
 		-5.2816 -100.5901
@@ -126,7 +126,7 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 		13.2039 72.7417 13.9242 73.2219 14.6444 72.2616
 		15.3646 71.3013 16.5649 60.258 16.5649 60.258
 	endline
-	
+
 	line wall
 		27.8483 69.1407
 		27.8483 76.823
@@ -152,7 +152,7 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 		-24.4873 -62.8988 -22.5667 -65.7797 -21.6065 -68.6605
 		-20.6462 -71.5414 -13.2039 -101.7904 -13.2039 -101.7904
 	endline
-	
+
 	point 17.48 99.92 station -name 8
 	point -6.93 90.08 station -name 7
 	point -6.93 90.08 station -name 6
@@ -162,4 +162,3 @@ scrap beetlejuice-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection pla
 	point -8.82 -99.92 station -name 1
 	point -15.91 -59.61 station -name 2
 endscrap
-

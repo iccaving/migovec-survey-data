@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap extra_dunkel-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 	
-	point 139.8513 1309.1055 label -align l -attr level 2 -text "Singing Rock"
+	point 139.8513 1309.1055 label -align l -attr level 3 -text "Singing Rock"
 	line wall:unsurveyed
 		547.5598 759.4231
 		600.8748 799.7696
@@ -69,7 +69,7 @@ scrap extra_dunkel-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 		1236.567 2230.4596
 	endline
 	
-	point 1177.4469 1031.1973 label -align r -attr level 1 -scale l -text "Extra Dunkel"
+	point 1177.4469 1031.1973 label -align r -attr level 2 -scale l -text "Extra Dunkel"
 	line u:texture
 		1076.5242 1828.4616
 		1076.5242 1828.4616 1076.5242 1856.2644 1076.5242 1867.3855

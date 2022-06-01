@@ -4,8 +4,8 @@ encoding  utf-8
 
 scrap hydrant2-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
-	point 265.3602 425.053 label -align br -text R.S. -attr level 2
-	point 204.714 530.3231 label -align l -text R.C. -attr level 2
+	point 265.3602 425.053 label -align br -text R.S. -attr level 3
+	point 204.714 530.3231 label -align l -text R.C. -attr level 3
 	line rock-border -close on
 		236.4936 517.4788
 		229.608 516.9492

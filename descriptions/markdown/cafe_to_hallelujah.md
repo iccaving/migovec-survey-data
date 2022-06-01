@@ -41,13 +41,29 @@ At the bottom, following the rigged ropes leads into a high level ledge above a 
 The constricted take off is followed by a short traverse over a 5 m pit leading to a pool of standing water.
 On the far side of the traverse, an opening into a muddy horizontal passage beckons.
 
-### Plumber's Paradise to Hallelujah streamway
+### Plumber's Paradise to Sweet Baby Jesus
 
 _Plumber's Paradise_ branches off in the middle into two alternative and equivalent ways.
 After about 50 m of variously crawling and stooping passage a ledge overlooking a climb down into _Hallelujah_ streamway is reached.
 Downstream continues for about 100 m, past some potholes and short cascade sections.
-In a widening bend of the passage, a rope leads upwards into the dry continuation of this branch: _Sweet Baby Jesus_.
-Ignoring this rope, a series of downclimbs following the water lead to Beam me Up, a series of hydrologically active pitches.
+In a widening bend of the passage, a rope leads upwards into the dry continuation of this branch.
+
+*Ignoring this rope, a series of downclimbs following the water lead to* Beam me Up, *a series of hydrologically active pitches.*
+
+A short down-climb leads to a 10 mpitch into a wide and tall chamber: _Sweet Baby Jesus_.
+
+### Sweet Baby Jesus to Death Star
+On the far side of this chamber, a junction is reached, with an ascending tube on the left and an inactive meander on the right (_Holy Moley_).
+Passing some rippled sand banks, a 6 m pitch leads to a short low section containing standing puddles of water, at the far end of which a 15 m pitch drops into _Alabaster_ passage.
+After a series of small 2-3 m drops, another pitch (15 m + 6 m, _Purgatory_) lands in a chamber with a choice of ways.
+Immediately on the right is a 5 m drop into the start of the _Bath_ pitch series.
+
+_Ahead and beyond a rock pillar is a pit into the alternative way to_ Death Star _called_ Octarine.
+
+In _Bath_, several small 5 m pitches separated by low sections eventually lead to a series of longer drops eventually landing in a chamber with a large pool of water, with a window on the opposite side.
+To the right is a low passage leading to another pitch head (_Canticle for Migovec_), and the deepest passages of the Hallelujah branch.
+Going up into the window leads into the connection with _Octarine_ and the way on to _Death Star_.
 
 \clearpage
-\ThreeColWidthFigure{../outputs/cafe_to_hallelujah.pdf}
+
+\CenteredFigure{../outputs/cafe_to_hallelujah.pdf}

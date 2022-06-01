@@ -17,7 +17,7 @@ line wall
   smooth off
 endline
 
-point 300 50 label  -scale l -text "Angel<br>Delight" -align tr
+point 300 50 label  -scale l -text "Angel<br>Delight" -align tr -attr level 2
 
 
 
@@ -306,5 +306,3 @@ point -91.00 -1130.29 station -name "12"
 point -87.61 -1158.65 station -name "13"
 
 endscrap
-
-

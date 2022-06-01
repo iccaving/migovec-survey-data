@@ -5,7 +5,6 @@ header-includes:
 - \usepackage{descriptions}
 ---
 
-
 \TopFullWidthFigure{../outputs/face_of_mig_2018_tracine.jpg}{The south face of Tolminski Migovec, seen from Grušnica.}{Južno pobočje Tolminskega Migovca, gledano z Grušnice.}{\smalltriangle{90}}{Tanguy Racine, 2018}{\photo}
 
 ## Selected trips under the Hollow Mountain
@@ -34,6 +33,10 @@ Vrtnarija connects to the Old System at the Dreams for the Soul.
 Two connections between Mona tip and the Old system are known: at Mig Country (M16) and in NCB passage (M18).
 Mona tip and Primadona are connected in several places, notably at Alkatraz and near Sejna Soba.
 
+\newpage
+\TopFullWidthFigure{../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}}
+
+
 ## Access to the entrances
 
 ### Primadona
@@ -55,8 +58,7 @@ Descending beyond this crest, and keeping to the right leads almost
 ### Vrtnarija
 
 
-\TopFullWidthFigure{../../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}}{}
 
 \newpage
 
-\ThreeColWidthFigure{../outputs/system_overview.pdf}
+\CenteredFigure{../outputs/system_overview.pdf}

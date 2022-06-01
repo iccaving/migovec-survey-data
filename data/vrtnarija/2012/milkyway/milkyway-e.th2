@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap milkyway-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 	
-	point 95.5291 798.3567 label -align br -text "Milky Way" -attr level 1 -scale l
+	point 95.5291 798.3567 label -align br -text "Milky Way" -attr level 2 -scale l
 	point 409.558 972.573 station -name 11
 	point 330.778 991.473 station -name 10
 	point 295.708 973.603 station -name 9

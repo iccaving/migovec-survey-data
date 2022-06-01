@@ -260,9 +260,9 @@ endscrap
 
 scrap sicsempertyrannis-4p -scale [0 0 90 0 0 0 250 0 inch]
 	
-	point 425.1282 236.3634 label -attr level 1 -scale l -text "Sic Semper" -align tl
+	point 425.1282 236.3634 label -attr level 2 -scale l -text "Sic Semper" -align tl
 	
-	point 425.1282 200.3634 label -attr level 1 -scale l -text "Tyrannis" -align bl
+	point 425.1282 200.3634 label -attr level 2 -scale l -text "Tyrannis" -align bl
 	
 	line wall
 		278.4004 331.3644

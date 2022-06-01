@@ -4,7 +4,7 @@ encoding  utf-8
 
 
 scrap lethe-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-	
+
 	point 266.4843 988.4861 label -attr level 1 -scale l -text Lethe -align l
 	point 397.3186 826.3275 water-flow -orientation 77.19736
 	point 615.7846 1065.9183 water-flow -orientation 196.02332
@@ -16,11 +16,11 @@ scrap lethe-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 		382.3542 1018.3581 379.9545 1034.082 375.155 1037.7508
 		370.3555 1041.4197 354.5172 1039.8473 354.5172 1039.8473
 	endline
-	
+
 	area water
 	lethe-1p_water_1
 	endarea
-	
+
 	line wall -close on -outline in
 		339.1732 964.2161
 		339.1732 964.2161 343.4171 955.898 343.4171 950.4658
@@ -28,7 +28,7 @@ scrap lethe-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 		319.4815 960.1419 320.6698 964.7254 325.0834 969.8181
 		329.4971 974.9108 332.8922 969.3088 339.1732 964.2161
 	endline
-	
+
 	line wall
 		461.0583 819.9232
 		458.3422 822.9788 440.0085 833.5037 435.2553 836.8988
@@ -57,7 +57,7 @@ scrap lethe-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 		656.2781 992.7352 654.92 987.6425 665.1054 993.7537
 		675.2908 999.8649 684.1181 1008.3528 684.1181 1008.3528
 	endline
-	
+
 	line wall
 		671.5562 1049.0943
 		649.8273 1048.7548 636.2468 1059.9587 627.4195 1062.3353
@@ -93,7 +93,7 @@ scrap lethe-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 		424.3909 811.4354 434.5763 812.1144 443.4036 808.3798
 		452.2309 804.6451 452.91 801.5895 452.91 801.5895
 	endline
-	
+
 	point 660.9569 1008.0098 station -name 29
 	point 678.0469 1036.4398 station -name 28
 	point 673.7969 1037.8498 station -name 27
@@ -124,4 +124,3 @@ scrap lethe-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
 	point 473.3169 969.0398 station -name 1
 	point 450.0969 970.2198 station -name 2
 endscrap
-

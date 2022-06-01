@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
-	
+
 	point 1900.0 4394.0 label -align l -text BELLADONNA -attr level 1 -scale l -attr style 6
 	point 2131.21 4245.93 entrance -align l -orientation 90.0 -scale xl
 	line wall
@@ -14,7 +14,7 @@ scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		3040.6666 3702.8455 3057.7078 3750.9265 3051.6216 3757.0127
 		3045.5354 3763.0989 3044.3182 3809.9627 3044.3182 3809.9627
 	endline
-	
+
 	line wall
 		2834.9502 3677.0051
 		2835.5616 3645.0266
@@ -24,7 +24,7 @@ scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2801.4788 3531.2146 2799.0444 3505.6526 2799.0444 3505.6526
 		2783.8288 3498.9578
 	endline
-	
+
 	line wall
 		2546.8674 4086.6938
 		2546.8674 4086.6938 2559.248 4043.6729 2559.248 4038.8039
@@ -38,7 +38,7 @@ scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2590.2876 3771.6196 2593.3308 3730.2335 2593.3308 3727.799
 		2593.3308 3725.3645 2622.5016 3719.7879 2622.5016 3719.7879
 	endline
-	
+
 	line wall
 		2449.0878 4206.7831
 		2449.0878 4206.7831 2453.4794 4196.4355 2454.34 4192.5622
@@ -52,7 +52,7 @@ scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2427.6578 4118.5404 2434.1132 4115.9582 2434.1132 4115.9582
 		2464.2384 4107.351
 	endline
-	
+
 	line wall
 		2956.6768 3810.5713
 		2956.6768 3810.5713 2952.4166 3758.8386 2946.3304 3758.8386
@@ -81,14 +81,14 @@ scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2383.6474 4251.197 2380.425 4252.05 2379.0964 4252.4296
 		2378.2185 4252.6804 2375.0584 4251.4417 2371.5415 4250.3654
 	endline
-	
+
 	line wall -id alt1
 		2371.5415 4250.3654
 		altitude .
 		2366.5251 4248.8301 2360.7827 4247.6251 2359.9018 4251.5445
 		2358.4034 4258.2115 2352.6214 4260.9503 2352.6214 4260.9503
 	endline
-	
+
 	line wall -subtype blocks
 		2352.6214 4232.3451
 		2393.0946 4228.6934
@@ -98,7 +98,7 @@ scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2436.9154 4216.8253 2442.3928 4212.8693 2442.3928 4212.8693
 		2449.0878 4206.7831
 	endline
-	
+
 	line wall -subtype blocks
 		2464.2384 4107.351
 		2464.2384 4107.351 2474.567 4104.7689 2481.4528 4103.0474
@@ -106,7 +106,7 @@ scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2506.4136 4097.4528 2521.0458 4095.7313 2523.628 4094.0099
 		2526.2102 4092.2885 2546.8674 4086.6938 2546.8674 4086.6938
 	endline
-	
+
 	line wall -subtype blocks
 		2623.9018 3725.6222
 		2634.6608 3723.04
@@ -119,11 +119,10 @@ scrap belladonna-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 		2836.4994 3687.7506
 		2840.3726 3679.5737
 	endline
-	
+
 	point 2552.81 4146.93 station -name 1
 	point 2701.87 3719.39 station -name 0
 	point 2447.59 4230.38 station -name 2
 	point 2353.85 4245.5 station -name 3
 	point 2895.81 3724.37 station -name 4
 endscrap
-

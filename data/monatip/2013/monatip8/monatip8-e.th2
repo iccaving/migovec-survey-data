@@ -6,8 +6,8 @@ encoding  utf-8
 scrap monatip8-e1 -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 	
 	point 119.9661 -17.4649 water-flow -scale s -orientation 190
-	point 96.989 31.6895 label -attr level 1 -scale l -text "Slab Primer" -align l
-	point 442.7246 932.9809 label -attr level 1 -scale l -text Telovadci -align l
+	point 96.989 31.6895 label -attr level 2 -scale l -text "Slab Primer" -align l
+	point 442.7246 932.9809 label -attr level 2 -scale l -text Telovadci -align l
 	line wall
 		576.1722 701.0095
 		593.4573 722.1358

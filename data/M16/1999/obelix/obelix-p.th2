@@ -5,77 +5,77 @@ encoding  utf-8
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line survey 
+line survey
   431.7472 703.4203
   361.899 819.4163
 endline
 
-line survey 
+line survey
   424.2312 668.6967
   431.7472 703.4203
 endline
 
-line survey 
+line survey
   424.2312 668.6967
   424.2312 668.6967
 endline
 
-line survey 
+line survey
   306.2811 113.1685
   306.2811 113.1685
 endline
 
-line survey 
+line survey
   306.2811 113.1685
   356.3873 429.9905
 endline
 
-line survey 
+line survey
   356.3873 429.9905
   217.4928 510.4611
 endline
 
-line survey 
+line survey
   217.4928 510.4611
   361.899 819.4163
 endline
 
-line survey 
+line survey
   361.899 819.4163
   361.899 819.4163
 endline
 
-line survey 
+line survey
   361.899 819.4163
   361.899 819.4163
 endline
 
-line survey 
+line survey
   361.899 819.4163
   451.4389 892.4212
 endline
 
-line survey 
+line survey
   312.1936 942.8782
   451.4389 892.4212
 endline
 
-line survey 
+line survey
   312.1936 942.8782
   407.646 1057.3209
 endline
 
-line survey 
+line survey
   407.6461 1057.3209
   407.6461 1057.3209
 endline
 
-line survey 
+line survey
   529.5546 1136.2382
   407.646 1057.3209
 endline
 
-line survey 
+line survey
   529.5546 1136.2382
   793.9152 772.4668
 endline
@@ -85,18 +85,18 @@ endscrap
 
 scrap obelix-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line pit 
+line pit
   441.2224 1032.5778
   441.2224 1032.5778 407.4357 1044.3267 392.5466 1079.5733
 endline
 
-line wall 
+line wall
   275.4363 99.3232
   287.1596 98.9737 334.8536 91.5968 334.8536 91.5968
 endline
 
-point 37.4512 723.096 label -align l -scale m -text Obelix
-line wall 
+point 37.4512 723.096 label -align l -scale m -text Obelix -attr level 2
+line wall
   324.5459 128.6761
   315.7186 145.4819 359.8811 227.8562 361.2391 245.5108
   362.5972 263.1655 366.4783 308.7036 365.5463 359.0338
@@ -117,7 +117,7 @@ line wall
   736.361 805.6428 761.5059 798.5857 765.8604 786.1994
 endline
 
-line wall 
+line wall
   152.4029 393.2322
   160.5513 457.0606 211.2676 505.0584 235.7125 475.1813
   260.1574 445.3042 256.5351 436.6216 286.4122 427.1153
@@ -126,7 +126,7 @@ line wall
   309.7081 181.6463 299.6956 136.5672 291.8868 134.1906
 endline
 
-line wall 
+line wall
   840.4005 752.2071
   794.9058 852.0238 721.9988 918.2617 686.553 972.6258
   651.1071 1026.9898 581.101 1152.0648 558.6932 1160.2131
@@ -156,4 +156,3 @@ point 407.6461 1057.3209 station -name 3
 point 793.9152 772.4668 station -name 1
 point 529.5546 1136.2382 station -name 2
 endscrap
-

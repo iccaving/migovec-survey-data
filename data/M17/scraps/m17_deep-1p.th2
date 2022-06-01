@@ -23,7 +23,7 @@ point 1194.73 628.13 station-name -align r -scale xs -text 105
 point 906.18 106.28 station-name -align r -scale xs -text 106
 point 1144.36 374.93 station-name -align r -scale xs -text 108
 point 888.51 -225.66 breakdown-choke -scale xs
-line border -close on -id m17_deep-1p_u_smallblocks_MY_1 -visibility off
+line border -close on -id m17_deep-1p_u_smallblocks_1 -visibility off
   1080.0884 -169.6431
   1209.5421 -6.1915
   1197.7736 172.9515
@@ -70,8 +70,8 @@ line border -close on -id m17_deep-1p_u_smallblocks_MY_1 -visibility off
   1080.0884 -169.6431
 endline
 
-area u:smallblocks_MY 
-  m17_deep-1p_u_smallblocks_MY_1
+area u:smallblocks 
+  m17_deep-1p_u_smallblocks_1
 endarea
 
 point 263.353 577.637 gradient -orientation 139.7568487194033

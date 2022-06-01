@@ -4,9 +4,9 @@ encoding  utf-8
 
 
 scrap bravenewworld-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection plan
-	
+
 	point 689.0059 978.2949 continuation -align tr -scale xs
-	point 593.6028 974.179 label -attr level 1 -scale l -text "Brave New World" -align t
+	point 593.6028 974.179 label -attr level 1 -scale l -text "Brave<br>New World" -align tr
 	line wall
 		680.2655 965.3894
 		674.4085 942.2884 658.0969 933.0327 649.2696 927.94
@@ -14,7 +14,7 @@ scrap bravenewworld-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection p
 		558.399 882.2488 544.6878 876.9401 535.8605 881.6933
 		527.0332 886.4465 526.5842 904.4619 524.8867 909.8941
 	endline
-	
+
 	line wall
 		729.2733 802.9476
 		720.446 820.6022 719.0879 824.6764 712.2977 842.6706
@@ -23,7 +23,7 @@ scrap bravenewworld-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection p
 		679.7727 915.5351 675.8001 917.1936 680.5532 935.8668
 		685.3064 954.54 691.0781 960.9907 691.0781 960.9907
 	endline
-	
+
 	line wall
 		510.4205 874.5301
 		513.4662 874.0845 516.2227 873.6291 518.4359 873.2267
@@ -38,7 +38,7 @@ scrap bravenewworld-1p -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection p
 		713.8858 799.6419 711.4668 788.4269 714.3348 786.3114
 		717.18 784.2127 722.4831 783.5953 722.4831 783.5953
 	endline
-	
+
 	point 556.3949 871.9589 station -name 18
 	point 604.3497 899.4292 station -name 17
 	point 665.8497 934.9392 station -name 16
@@ -50,7 +50,7 @@ endscrap
 
 
 scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
-	
+
 	line rock-border -close on
 		425.4094 884.0911
 		425.4094 884.0911 423.2026 877.0462 424.2211 876.5369
@@ -58,14 +58,14 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		441.9607 882.4784
 		434.4914 883.2423
 	endline
-	
+
 	line rock-border -close on
 		428.1255 900.897
 		427.0221 896.6531
 		430.3324 896.2287
 		432.4543 902.255
 	endline
-	
+
 	line rock-border -close on
 		432.6241 905.4804
 		441.6212 900.5575
@@ -73,7 +73,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		449.0056 901.1516 447.4778 905.4804 447.4778 905.4804
 		434.3216 906.4141
 	endline
-	
+
 	line rock-border -close on
 		432.7938 897.7565
 		430.9265 886.6374
@@ -81,7 +81,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		445.6953 893.3428
 		437.8016 898.4355
 	endline
-	
+
 	line rock-border -close on
 		415.0543 907.0082
 		413.187 900.3028
@@ -90,7 +90,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		425.4094 907.857 420.0621 905.8199 419.7226 905.6502
 		419.3831 905.4804 416.2426 906.9233 416.2426 906.9233
 	endline
-	
+
 	line rock-border -close on
 		403.0016 938.0736
 		403.8504 932.9809
@@ -98,7 +98,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		413.4416 939.3468
 		407.7548 940.3653
 	endline
-	
+
 	line rock-border -close on
 		411.8289 929.6707
 		408.9431 920.419
@@ -106,21 +106,21 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		413.4416 920.5038 417.346 925.9361 417.346 925.9361
 		413.187 932.3019
 	endline
-	
+
 	line rock-border -close on
 		414.545 918.297
 		414.545 918.297 412.0836 909.5546 413.187 909.8092
 		414.2904 910.0638 419.3831 909.3848 419.5528 909.7243
 		419.7226 910.0638 420.2319 916.7692 420.2319 916.7692
 	endline
-	
+
 	line rock-border -close on
 		406.906 900.9819
 		405.2084 895.3799
 		405.2084 895.3799 408.6035 893.8521 408.6035 894.2765
 		408.6035 894.7009 410.0465 900.897 410.0465 900.897
 	endline
-	
+
 	line rock-border -close on
 		411.3197 897.7565
 		411.4894 893.0882
@@ -129,7 +129,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		423.9665 900.8121
 		418.025 899.8784
 	endline
-	
+
 	line rock-border -close on
 		388.3177 907.0082
 		386.3655 899.2843
@@ -137,7 +137,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		392.9011 908.1116
 		390.4396 907.857
 	endline
-	
+
 	line rock-border -close on
 		398.6728 912.1009
 		398.4182 909.1302
@@ -145,7 +145,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		408.3489 912.2707
 		400.2855 912.1858
 	endline
-	
+
 	line rock-border -close on
 		399.267 930.0102
 		394.4289 913.7136
@@ -154,7 +154,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		405.6328 926.5302
 		401.8982 927.4639
 	endline
-	
+
 	line rock-border -close on
 		400.0308 886.4677
 		402.4923 876.9613
@@ -162,7 +162,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		415.5636 887.8257
 		403.0865 889.4384
 	endline
-	
+
 	line rock-border -close on
 		393.0708 902.3399
 		393.7499 894.8706
@@ -170,7 +170,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		404.6143 906.4141
 		394.9382 903.9526
 	endline
-	
+
 	line rock-border -close on
 		381.103 888.2501
 		376.5196 880.2716
@@ -178,7 +178,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		396.2113 882.3087
 		388.6572 891.6453
 	endline
-	
+
 	line wall
 		524.8867 909.8941
 		523.1891 915.3263 516.0593 921.4375 507.232 918.0424
@@ -195,7 +195,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		268.4002 967.4891 246.3136 975.7716 246.3136 975.7716
 		224.347 981.4133
 	endline
-	
+
 	line wall
 		217.6276 966.2532
 		232.2267 960.821 253.2765 960.821 248.8628 954.7097
@@ -210,7 +210,7 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 		467.8485 863.3808 469.8856 871.8687 475.9968 875.2638
 		480.9008 877.9882 498.0478 876.3402 510.4204 874.5301
 	endline
-	
+
 	point 499.2398 881.8692 station -name 19
 	point 509.9398 902.8892 station -name 11
 	point 430.0197 878.4792 station -name 10
@@ -224,4 +224,3 @@ scrap bravenewworld-2p -scale [0 0 90 0 0 0 250 0 inch]
 	point 250.1798 964.4692 station -name 2
 	point 224.9797 974.6192 station -name 1
 endscrap
-

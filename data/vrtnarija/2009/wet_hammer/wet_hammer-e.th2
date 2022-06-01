@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap wet_hammer-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 294.8081 519.0351 label -align l -attr level 1 -scale l -text "Wet Hammer"
+	point 294.8081 519.0351 label -align l -attr level 2 -scale l -text "Wet Hammer"
 	point 436.6905 510.8726 water-flow -orientation 180
 	line rock-border -close on
 		397.0787 471.5009

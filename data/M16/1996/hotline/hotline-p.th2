@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap hotline-1p -projection plan -scale [0.0 0.0 1024 838.6114409443319 0.0 0.0 143.17 117.25]
 	
-	line border -close on -id hotline-1p_u_smallblocks_MY_1 -visibility off
+	line border -close on -id hotline-1p_u_smallblocks_1 -visibility off
 		385.2584 459.615
 		423.4459 448.0137
 		491.6033 423.361
@@ -37,8 +37,8 @@ scrap hotline-1p -projection plan -scale [0.0 0.0 1024 838.6114409443319 0.0 0.0
 		363.9894 458.6482
 	endline
 	
-	area u:smallblocks_MY
-	hotline-1p_u_smallblocks_MY_1
+	area u:smallblocks
+	hotline-1p_u_smallblocks_1
 	endarea
 	
 	line pit -close on -outline in
@@ -98,7 +98,7 @@ scrap hotline-1p -projection plan -scale [0.0 0.0 1024 838.6114409443319 0.0 0.0
 	point 548.059 367.861 passage-height -align t -value 4
 	point 489.997 440.438 passage-height -align t -value 4
 	point 404.978 468.224 passage-height -align t -value 4
-	point 311.201 533.606 label -align tr -attr level 2 -text Hotline -scale l
+	point 311.201 533.606 label -align tr -attr level 3 -text Hotline -scale l
 	line pit -close on -outline in
 		581.2365 292.7955
 		581.2365 292.7955 583.9322 296.3207 583.7248 298.3943
@@ -178,7 +178,7 @@ endscrap
 
 scrap hotline-2p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 	
-	line border -close on -id hotline-2p_u_smallblocks_MY_1 -visibility off
+	line border -close on -id hotline-2p_u_smallblocks_1 -visibility off
 		184.17 328.1341
 		218.9737 344.5692
 		251.844 368.2551
@@ -189,8 +189,8 @@ scrap hotline-2p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 		168.7016 351.3366
 	endline
 	
-	area u:smallblocks_MY
-	hotline-2p_u_smallblocks_MY_1
+	area u:smallblocks
+	hotline-2p_u_smallblocks_1
 	endarea
 	
 	line chimney

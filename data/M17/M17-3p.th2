@@ -173,7 +173,7 @@ line floor-step
   533.6861 1148.2115 522.3195 1150.2519 518.8559 1140.2923
 endline
 
-line border -close on -id M17-3p_u_smallblocks_MY_1 -visibility off
+line border -close on -id M17-3p_u_smallblocks_1 -visibility off
   385.5918 973.0356
   385.5918 973.0356 397.9428 1025.1507 398.5453 1026.3557
   399.1477 1027.5607 434.3932 1068.2286 434.3932 1068.2286
@@ -185,11 +185,11 @@ line border -close on -id M17-3p_u_smallblocks_MY_1 -visibility off
   385.5918 973.0356
 endline
 
-area u:smallblocks_MY
-  M17-3p_u_smallblocks_MY_1
+area u:smallblocks
+  M17-3p_u_smallblocks_1
 endarea
 
-line border -close on -id M17-3p_u_smallblocks_MY_2 -visibility off
+line border -close on -id M17-3p_u_smallblocks_2 -visibility off
   434.6945 957.0697
   477.7723 990.2065
   511.2104 996.5326
@@ -210,8 +210,8 @@ line border -close on -id M17-3p_u_smallblocks_MY_2 -visibility off
   434.6945 957.0697
 endline
 
-area u:smallblocks_MY
-  M17-3p_u_smallblocks_MY_2
+area u:smallblocks
+  M17-3p_u_smallblocks_2
 endarea
 
 line border -close on

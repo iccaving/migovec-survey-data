@@ -4,15 +4,15 @@ encoding  utf-8
 
 scrap carwash-1p -projection plan -scale [0.0 0.0 1023.9999999999999 838.6114409443319 0.0 0.0 143.17 117.25]
 	
-	area u:smallblocks_MY -attr scale 0.8
+	area u:smallblocks -attr scale 0.8
 	blocksS
 	endarea
 	
-	area u:smallblocks_MY -attr scale 1
+	area u:smallblocks -attr scale 1
 	blocksM
 	endarea
 	
-	area u:smallblocks_MY -attr scale 1.4
+	area u:smallblocks -attr scale 1.4
 	blocksL
 	endarea
 	
@@ -60,7 +60,7 @@ scrap carwash-1p -projection plan -scale [0.0 0.0 1023.9999999999999 838.6114409
 		123.4602 562.4623 116.1288 554.2511 116.1288 554.2511
 	endline
 	
-	point 105.8937 721.2129 label -align tl -attr level 2 -text "Bikini Carwash" -scale m
+	point 105.8937 721.2129 label -align tl -attr level 3 -text "Bikini Carwash" -scale m
 	line wall:invisible
 		113.1945 553.1874
 		254.545 565.688

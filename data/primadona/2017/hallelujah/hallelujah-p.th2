@@ -5,56 +5,56 @@ encoding  utf-8
 
 
 scrap hallelujahp_1 -scale [327.0 -735.0 527.0 -734.0 0.0 0.0 14 0.0 m]
-	
+
 	line floor-step
 	endline
-	
+
 	line floor-step
 		350.0 -360.0
 		350.0 -360.0 317.0 -317.0 301.0 -322.5
 		smooth off
 	endline
-	
+
 	line floor-step -reverse on
 		297.0 -350.0
 		297.0 -350.0 283.5 -341.0 293.5 -331.0
 		smooth off
 	endline
-	
+
 	line floor-step -reverse on
 		245.0 -316.0
 		245.0 -316.0 222.5 -280.0 260.0 -289.0
 		smooth off
 	endline
-	
-	
+
+
 	point 431.0 -527.0 continuation -align bl -scale xs
-	
+
 	line floor-step
 	endline
-	
+
 	line floor-step
 		448.0 -496.0
 		448.0 -496.0 421.0 -476.5 421.0 -498.0
 		smooth off
 	endline
-	
+
 	line floor-step
 		412.5 -448.0
 		412.5 -448.0 380.5 -414.5 377.5 -442.5
 		smooth off
 	endline
-	
+
 	line floor-step
 		209.0 -210.0
 		209.0 -210.0 183.0 -190.0 178.0 -213.0
 		smooth off
 	endline
-	
+
 	area water
 	l15-235--203
 	endarea
-	
+
 	line border -id l15-235--203 -close on -subtype invisible
 		211.0 -183.0
 		133.0 -193.0
@@ -62,16 +62,16 @@ scrap hallelujahp_1 -scale [327.0 -735.0 527.0 -734.0 0.0 0.0 14 0.0 m]
 		477.0 -490.0
 		211.0 -183.0
 	endline
-	
+
 	line wall
 		209.0 -210.0
 		209.0 -210.0 206.0 -194.0 204.0 -189.0
 		202.0 -184.0 215.0 -175.0 196.0 -175.0
 		smooth off
 	endline
-	
+
 	point 456.0 -300.5 label -align tr -text "Hallelujah" -attr level 1 -scale l
-	
+
 	line wall
 		441.0 -526.0
 		441.0 -526.0 454.0 -506.0 448.0 -496.0
@@ -90,7 +90,7 @@ scrap hallelujahp_1 -scale [327.0 -735.0 527.0 -734.0 0.0 0.0 14 0.0 m]
 		215.0 -219.0 209.0 -210.0 209.0 -210.0
 		smooth off
 	endline
-	
+
 	line wall
 		165.0 -201.0
 		180.0 -210.0 177.0 -215.0 192.0 -232.0
@@ -107,27 +107,25 @@ scrap hallelujahp_1 -scale [327.0 -735.0 527.0 -734.0 0.0 0.0 14 0.0 m]
 		422.0 -508.0 420.0 -518.0 420.0 -518.0
 		smooth off
 	endline
-	
+
 	point 433.0 -505.0 station -name "1"
-	
+
 	point 408.0 -461.0 station -name "2"
-	
+
 	point 373.0 -403.0 station -name "3"
-	
+
 	point 339.0 -364.0 station -name "4"
-	
+
 	point 309.0 -326.0 station -name "5"
-	
+
 	point 279.0 -341.0 station -name "6"
-	
+
 	point 222.0 -241.0 station -name "7"
-	
+
 	point 181.0 -196.0 station -name "8"
-	
+
 	point 162.0 -175.0 station -name "10"
-	
+
 	point 172.0 -166.0 station -name "9"
-	
+
 endscrap
-
-

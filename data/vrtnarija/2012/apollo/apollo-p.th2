@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap apollo-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point -22.9869 43.333 label -align r -attr level 3 -text Apollo
+	point -22.9869 43.333 label -align r -attr level 4 -text Apollo
 	line pit -close on
 		-15.7847 33.1899
 		-16.1017 24.1371 -16.8986 15.0508 -16.3249 6.0018

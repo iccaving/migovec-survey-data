@@ -100,7 +100,7 @@ endscrap
 
 scrap watershipdown-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
-	point 477.525 567.326 label -align bl -attr level 1 -scale l -text "Watership Down"
+	point 477.525 567.326 label -align bl -attr level 2 -scale l -text "Watership Down"
 	point 739.968 513.004 continuation -align br -scale xs
 	line rock-border -close on
 		727.9317 524.7494

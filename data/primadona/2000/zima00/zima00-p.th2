@@ -6,17 +6,17 @@ encoding  utf-8
 
 
 scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
-	
-	line label -attr level 2 -text "Brezno TTT" -scale m
+
+	line label -attr level 3 -text "Brezno TTT" -scale m
 		194.25 325.25
 		194.25 325.25 295.5 387.0 346.0 490.0
 		368.92 536.74 364.0 550.5 364.0 550.5
 		smooth off
 	endline
-	
+
 	area water
 	endarea
-	
+
 	line rock-border -close on
 		151.0 519.0
 		134.0 508.0
@@ -24,10 +24,10 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		157.0 510.0
 		151.0 519.0
 	endline
-	
+
 	line rock-border
 	endline
-	
+
 	line rock-border -close on
 		265.25 558.25
 		264.0 558.25 247.25 554.75 247.25 554.75
@@ -37,7 +37,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 		262.25 548.0 266.5 558.25 265.25 558.25
 	endline
-	
+
 	line rock-border -close on
 		271.0 579.25
 		269.75 579.75 250.5 580.25 250.5 580.25
@@ -46,7 +46,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		263.75 562.25
 		263.75 562.25 272.25 578.75 271.0 579.25
 	endline
-	
+
 	line rock-border -close on
 		234.5 600.0
 		221.75 596.25
@@ -55,7 +55,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		236.0 588.0 234.5 600.0 234.5 600.0
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		222.75 566.75
 		213.25 563.75
@@ -64,7 +64,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		226.5 562.75 222.75 566.75 222.75 566.75
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		156.0 492.0
 		136.0 481.0
@@ -73,10 +73,10 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		160.0 478.25
 		156.0 492.0
 	endline
-	
+
 	line rock-border
 	endline
-	
+
 	line rock-border -close on
 		131.25 442.75
 		124.5 440.75
@@ -85,7 +85,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		132.5 437.5 131.25 442.75 131.25 442.75
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		127.25 466.5
 		117.25 462.25
@@ -94,7 +94,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		132.75 460.75 127.25 466.5 127.25 466.5
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		144.25 451.25
 		135.5 453.0
@@ -103,7 +103,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		143.0 444.25 144.25 451.25 144.25 451.25
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		149.25 426.25
 		138.5 428.5
@@ -111,7 +111,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		143.5 417.0
 		149.25 426.25
 	endline
-	
+
 	line rock-border -close on
 		159.5 444.75
 		159.5 444.75 149.0 443.25 149.25 441.75
@@ -121,13 +121,13 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		162.0 434.0 159.5 444.75 159.5 444.75
 		smooth off
 	endline
-	
+
 	line floor-step
 	endline
-	
+
 	line rock-border
 	endline
-	
+
 	line rock-border -close on
 		113.25 436.75
 		103.75 435.0
@@ -136,10 +136,10 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		115.0 429.25 113.25 436.75 113.25 436.75
 		smooth off
 	endline
-	
+
 	line rock-border
 	endline
-	
+
 	line rock-border -close on
 		131.75 425.5
 		125.5 426.25
@@ -147,7 +147,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		129.5 419.25
 		131.75 425.5
 	endline
-	
+
 	line rock-border -close on
 		103.5 440.75
 		100.0 452.0
@@ -155,10 +155,10 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		97.25 438.5
 		103.5 440.75
 	endline
-	
+
 	line rock-border
 	endline
-	
+
 	line rock-border -close on
 		39.0 427.25
 		7.25 429.25
@@ -166,7 +166,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		37.0 415.5
 		39.0 427.25
 	endline
-	
+
 	line rock-border -close on
 		-2.0 414.0
 		-17.5 414.75
@@ -174,7 +174,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-15.0 403.25
 		-2.0 414.0
 	endline
-	
+
 	line rock-border -close on
 		-17.5 414.75
 		-10.0 422.25
@@ -183,7 +183,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-31.0 415.75
 		-17.5 414.75
 	endline
-	
+
 	line rock-border -close on
 		77.0 436.0
 		72.75 435.25
@@ -191,7 +191,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		79.25 430.5
 		77.0 436.0
 	endline
-	
+
 	line rock-border -close on
 		89.5 425.5
 		81.25 426.25
@@ -200,7 +200,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		85.75 419.5 89.5 425.5 89.5 425.5
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		100.0 426.75
 		93.75 427.5
@@ -208,7 +208,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		97.75 419.0
 		100.0 426.75
 	endline
-	
+
 	line rock-border -close on
 		87.0 435.75
 		84.0 433.0
@@ -217,10 +217,10 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 		87.0 435.75
 	endline
-	
+
 	line floor-step
 	endline
-	
+
 	line pit
 		55.75 401.5
 		57.5 402.75 51.25 405.75 51.25 406.75
@@ -230,75 +230,75 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 		40.25 438.0
 	endline
-	
+
 	line floor-step
 		105.0 419.0
 		105.0 419.0 101.75 436.75 88.0 442.0
 		smooth off
 	endline
-	
+
 	point 262.0 396.0 label -align br -text "TTT" -attr level 1 -scale l
-	
-	point 232.0 621.25 label -align t -text "p41" -scale s
-	
+
+	point 232.0 621.25 label -align t -text "p41" -scale s -attr level 4
+
 	line gradient
 	endline
-	
+
 	line gradient
 		190.75 528.25
 		186.5 556.25
 	endline
-	
+
 	line gradient
 		224.25 537.25
 		226.25 562.75
 	endline
-	
+
 	line gradient
 		231.25 530.25
 		264.0 532.75
 	endline
-	
+
 	line gradient
 		170.0 498.25
 		148.75 503.25
 	endline
-	
+
 	line gradient
 		116.5 445.25
 		145.5 454.75
 	endline
-	
+
 	line gradient
 		129.0 422.5
 		151.0 413.25
 	endline
-	
+
 	line gradient
 		165.5 437.75
 		177.75 414.0
 	endline
-	
+
 	line gradient
 		178.75 481.5
 		200.25 453.25
 	endline
-	
+
 	line gradient
 		230.25 498.75
 		233.75 469.25
 	endline
-	
+
 	line floor-step
 	endline
-	
+
 	line floor-step
 		108.0 421.5
 		108.0 421.5 113.5 422.5 114.75 419.0
 		116.0 415.5 122.0 406.0 127.25 397.75
 		smooth off
 	endline
-	
+
 	line floor-step
 		139.0 539.75
 		139.0 539.75 138.5 525.5 138.0 524.5
@@ -310,7 +310,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		109.0 453.75 106.0 450.0 98.5 456.5
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		141.5 495.75
 		135.75 496.0
@@ -318,7 +318,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		139.25 487.5
 		141.5 495.75
 	endline
-	
+
 	line rock-border -close on
 		160.75 430.5
 		150.75 427.5
@@ -326,7 +326,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		162.25 422.25
 		160.75 430.5
 	endline
-	
+
 	line rock-border -close on
 		157.75 409.5
 		156.75 409.5 151.25 408.5 151.25 408.5
@@ -335,7 +335,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		156.0 400.5
 		156.0 400.5 158.75 409.5 157.75 409.5
 	endline
-	
+
 	line rock-border -close on
 		140.25 409.25
 		133.0 405.25
@@ -344,7 +344,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		143.25 403.0 140.25 409.25 140.25 409.25
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		167.0 419.25
 		159.5 416.75
@@ -353,7 +353,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		172.75 415.0 167.0 419.25 167.0 419.25
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		171.25 400.25
 		170.0 400.75 164.25 400.75 164.25 400.75
@@ -363,7 +363,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 		172.5 394.5 172.5 399.75 171.25 400.25
 	endline
-	
+
 	line rock-border -close on
 		170.5 409.5
 		164.25 407.25
@@ -371,7 +371,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		172.75 403.0
 		170.5 409.5
 	endline
-	
+
 	line rock-border -close on
 		182.75 428.25
 		174.75 430.0
@@ -380,7 +380,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		183.0 416.25 182.75 428.25 182.75 428.25
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		181.0 461.0
 		165.0 449.0
@@ -389,7 +389,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		194.5 463.0
 		181.0 461.0
 	endline
-	
+
 	line rock-border -close on
 		240.0 521.0
 		257.0 507.0
@@ -397,7 +397,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		256.0 533.0
 		240.0 521.0
 	endline
-	
+
 	line rock-border -close on
 		195.0 481.5
 		203.0 472.0
@@ -405,10 +405,10 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		228.75 491.5
 		195.0 481.5
 	endline
-	
+
 	line rock-border
 	endline
-	
+
 	line rock-border -close on
 		283.25 532.5
 		280.25 533.5 272.25 534.0 271.5 532.75
@@ -417,7 +417,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		279.5 514.25
 		279.5 514.25 286.25 531.5 283.25 532.5
 	endline
-	
+
 	line rock-border -close on
 		281.25 508.5
 		269.5 510.5
@@ -425,7 +425,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		267.0 491.0
 		281.25 508.5
 	endline
-	
+
 	line rock-border -close on
 		252.5 496.5
 		242.0 495.75
@@ -434,7 +434,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		252.0 474.5 252.5 496.5 252.5 496.5
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		163.75 527.0
 		163.0 527.25 154.5 527.0 154.5 527.0
@@ -443,7 +443,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		153.25 519.5 163.25 516.5 164.0 519.0
 		164.75 521.5 164.5 526.75 163.75 527.0
 	endline
-	
+
 	line rock-border -close on
 		161.5 536.5
 		152.5 540.0
@@ -452,7 +452,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 		161.5 536.5
 	endline
-	
+
 	line rock-border -close on
 		203.5 591.0
 		204.25 590.75 196.0 586.5 195.5 585.25
@@ -460,7 +460,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		197.0 577.5 208.25 579.75 208.5 580.75
 		208.75 581.75 202.75 591.25 203.5 591.0
 	endline
-	
+
 	line rock-border -close on
 		175.0 563.75
 		164.5 558.5
@@ -468,7 +468,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		179.25 557.0
 		175.0 563.75
 	endline
-	
+
 	line rock-border -close on
 		178.25 551.25
 		148.0 552.0
@@ -476,7 +476,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		172.25 544.5
 		178.25 551.25
 	endline
-	
+
 	line rock-border -close on
 		212.5 547.0
 		197.0 557.0
@@ -484,7 +484,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		197.75 539.25
 		212.5 547.0
 	endline
-	
+
 	line rock-border -close on
 		212.25 565.0
 		206.25 569.0
@@ -493,7 +493,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		211.25 558.75 212.25 565.0 212.25 565.0
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		221.25 579.5
 		212.75 584.5
@@ -502,7 +502,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		215.0 572.5 221.25 579.5 221.25 579.5
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		200.5 571.0
 		176.0 570.0
@@ -510,7 +510,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		198.0 561.0
 		200.5 571.0
 	endline
-	
+
 	line rock-border -close on
 		234.25 541.5
 		168.0 535.0
@@ -518,27 +518,27 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		235.75 496.5
 		234.25 541.5
 	endline
-	
+
 	line wall
 	endline
-	
+
 	point 126.75 355.5 continuation -align b -scale xs
-	
+
 	line pit -reverse on
 		159.25 378.0
 		159.25 378.0 137.75 373.0 130.75 392.0
 		smooth off
 	endline
-	
+
 	line wall
 	endline
-	
+
 	line wall
 		135.75 359.5
 		135.75 359.5 144.75 373.25 159.25 378.0
 		smooth off
 	endline
-	
+
 	line wall
 		127.25 397.75
 		127.25 397.75 131.75 400.25 130.75 392.0
@@ -546,19 +546,19 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		125.75 374.0 119.25 363.25 119.25 363.25
 		smooth off
 	endline
-	
+
 	point 61.0 389.25 narrow-end -align br -scale xs
-	
+
 	line wall
 	endline
-	
+
 	line wall
 		58.75 392.5
 		58.75 392.5 53.5 393.0 52.5 394.0
 		51.5 395.0 50.0 398.5 50.0 398.5
 		smooth off
 	endline
-	
+
 	line wall
 		36.5 394.25
 		36.5 394.25 36.0 387.5 39.5 388.0
@@ -566,7 +566,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		52.75 390.25 54.5 390.5 56.0 390.75
 		smooth off
 	endline
-	
+
 	line wall
 		-88.0 285.0
 		-87.0 290.0 -89.37 298.37 -92.0 302.75
@@ -582,7 +582,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		27.0 402.0 36.5 394.25 36.5 394.25
 		smooth off
 	endline
-	
+
 	line wall
 		50.0 398.5
 		50.0 398.5 42.5 411.75 65.0 413.0
@@ -591,13 +591,13 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		116.25 392.75 127.25 397.75 127.25 397.75
 		smooth off
 	endline
-	
+
 	line label -text "The Manger"
 		-183.75 394.25
 		-183.75 394.25 -173.75 353.25 -131.75 332.25
 		smooth off
 	endline
-	
+
 	line floor-step
 		-91.75 334.0
 		-89.5 345.0
@@ -616,7 +616,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-93.25 352.0 -93.5 344.25 -93.5 344.25
 		smooth off
 	endline
-	
+
 	line floor-step
 		-90.0 320.5
 		-90.0 320.5 -92.5 327.0 -92.5 328.75
@@ -628,11 +628,11 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-99.25 328.0 -101.0 326.75 -103.5 326.5
 		smooth off
 	endline
-	
+
 	area water
 	l177--103-321
 	endarea
-	
+
 	line border -id l177--103-321 -close on
 		-96.75 309.0
 		-96.75 309.0 -95.5 314.5 -96.25 316.0
@@ -644,7 +644,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-98.0 305.75 -96.75 309.0 -96.75 309.0
 		smooth off
 	endline
-	
+
 	line wall
 		-150.0 369.25
 		-148.5 364.5 -141.5 365.25 -141.5 365.25
@@ -661,10 +661,10 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 		-113.0 300.0
 	endline
-	
+
 	line floor-step
 	endline
-	
+
 	line floor-step
 		-71.5 383.0
 		-71.5 383.0 -70.75 390.25 -69.25 391.0
@@ -672,9 +672,9 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-48.0 395.0 -32.0 395.0 -28.0 390.75
 		smooth off
 	endline
-	
-	point 62.5 406.75 label -attr level 3 -text "P4" -scale s -align br
-	
+
+	point 62.5 406.75 label -attr level 4 -text "P4" -scale s -align br
+
 	line pit
 		-22.75 392.25
 		-22.75 392.25 -23.0 404.0 -22.0 406.25
@@ -685,13 +685,13 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 		-75.0 407.0
 	endline
-	
+
 	line floor-step
 		-145.0 381.5
 		-145.0 381.5 -139.0 375.5 -141.5 365.25
 		smooth off
 	endline
-	
+
 	line floor-step
 		-114.75 389.75
 		-114.75 389.75 -118.0 386.25 -120.5 384.25
@@ -699,27 +699,27 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-133.25 381.25 -136.5 385.25 -136.5 385.25
 		smooth off
 	endline
-	
+
 	line pit
 		-11.75 447.0
 		-11.75 447.0 -42.25 443.75 -57.5 433.5
 		smooth off
 	endline
-	
+
 	area water
 	endarea
-	
+
 	line wall
 		2.0 447.0
 		2.0 447.0 -5.25 444.5 -11.75 447.0
 		-17.08 449.05 -21.5 455.5 -23.25 460.0
 		smooth off
 	endline
-	
-	point -76.0 420.5 label -align tl -text "P3" -scale xs
-	
+
+	point -76.0 420.5 label -align tl -text "P3" -scale xs -attr level 4
+
 	point -33.5 459.25 continuation -align t -scale xs
-	
+
 	line wall
 		-53.75 454.5
 		-56.75 447.75 -57.5 433.5 -57.5 433.5
@@ -733,7 +733,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-111.5 388.5 -117.25 391.25 -117.25 391.25
 		smooth off
 	endline
-	
+
 	line wall
 		88.0 442.0
 		81.04 442.82 75.75 434.87 69.0 435.0
@@ -743,22 +743,22 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		11.56 448.42 6.67 447.0 2.0 447.0
 		smooth off
 	endline
-	
+
 	point 103.0 437.0 station -name "21"
-	
+
 	point -103.0 304.0 station -name "16"
-	
+
 	point -69.0 408.0 station -name "17" -subtype fixed
-	
+
 	point -56.75 388.0 station -name "18"
-	
+
 	point 0.0 437.0 station -name "19"
-	
+
 	point 25.0 413.0 station -name "20"
-	
+
 	line rock-border
 	endline
-	
+
 	line rock-border -close on
 		279.75 553.0
 		268.75 546.25
@@ -767,7 +767,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		282.0 547.0 279.75 553.0 279.75 553.0
 		smooth off
 	endline
-	
+
 	line rock-border -close on
 		223.0 452.75
 		222.0 453.0 216.75 452.25 216.75 452.25
@@ -776,7 +776,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		221.0 444.25
 		221.0 444.25 224.0 452.5 223.0 452.75
 	endline
-	
+
 	line rock-border -close on
 		229.75 439.25
 		223.0 439.0
@@ -784,7 +784,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		227.5 433.75
 		229.75 439.25
 	endline
-	
+
 	line rock-border -close on
 		239.5 450.0
 		238.0 450.25 235.5 453.75 235.5 452.5
@@ -793,7 +793,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		235.5 445.5
 		235.5 445.5 241.0 449.75 239.5 450.0
 	endline
-	
+
 	line rock-border -close on
 		232.75 460.5
 		224.25 459.0
@@ -802,7 +802,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 		232.75 460.5
 	endline
-	
+
 	line pit
 		263.0 458.75
 		261.25 459.5 253.75 464.25 239.5 464.5
@@ -810,20 +810,20 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		203.25 452.0 195.25 438.0 195.0 432.75
 		smooth off
 	endline
-	
+
 	line wall
 	endline
-	
+
 	point 209.25 438.75 water-flow -orientation 122.6
-	
+
 	point 214.0 592.5 water-flow -orientation 193.8
-	
+
 	point 157.0 452.0 passage-height -value 75
-	
+
 	point 278.0 566.0 passage-height -value 75
-	
+
 	point 212.0 515.0 passage-height -value 70
-	
+
 	line wall
 		159.25 378.0
 		168.25 380.0 182.07 388.64 190.0 398.5
@@ -837,18 +837,18 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		294.0 557.0 292.75 562.0 292.75 562.0
 		smooth off
 	endline
-	
+
 	line wall
 		265.25 594.0
 		248.0 598.0 235.0 608.5 218.0 605.5
 		smooth off
 	endline
-	
+
 	point 197.5 631.0 continuation -align t -scale xs
-	
+
 	line wall
 	endline
-	
+
 	line wall
 		218.0 605.5
 		216.5 611.0
@@ -856,7 +856,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		204.5 621.5
 		203.5 627.5
 	endline
-	
+
 	line wall
 		193.0 625.0
 		193.0 625.0 191.5 619.0 194.5 615.5
@@ -864,7 +864,7 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		smooth off
 		201.5 599.5
 	endline
-	
+
 	line wall
 		201.5 599.5
 		184.5 596.5 170.38 575.23 161.0 563.5
@@ -874,15 +874,15 @@ scrap zima00p_1 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		94.5 444.5 90.0 450.0 88.0 442.0
 		smooth off
 	endline
-	
+
 	point 280.0 586.0 station -name "22"
-	
+
 endscrap
 
 
 
 scrap zima00p_2 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
-	
+
 	line wall
 		-111.0 203.0
 		-107.0 203.0 -96.0 208.0 -96.0 208.0
@@ -897,10 +897,10 @@ scrap zima00p_2 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-92.0 275.0
 		-88.0 285.0
 	endline
-	
+
 	line floor-step
 	endline
-	
+
 	line floor-step
 		-126.0 208.25
 		-126.0 208.25 -118.5 210.25 -117.0 210.25
@@ -909,7 +909,7 @@ scrap zima00p_2 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-108.75 216.75 -114.0 216.25 -114.0 216.25
 		smooth off
 	endline
-	
+
 	line floor-step
 		-107.25 210.75
 		-107.25 210.75 -103.25 212.0 -101.0 212.5
@@ -920,7 +920,7 @@ scrap zima00p_2 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-96.5 223.25 -99.5 226.0 -99.5 226.0
 		smooth off
 	endline
-	
+
 	line floor-step
 		-92.0 219.75
 		-92.0 219.75 -89.25 223.25 -88.25 225.5
@@ -928,11 +928,11 @@ scrap zima00p_2 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-87.75 232.25 -90.25 235.5 -90.25 235.5
 		smooth off
 	endline
-	
+
 	area water
 	l212--98-280
 	endarea
-	
+
 	line border -id l212--98-280 -close on -reverse on
 		-112.0 290.0
 		-112.0 290.0 -109.5 289.25 -106.75 288.25
@@ -946,7 +946,7 @@ scrap zima00p_2 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-115.0 288.5
 		-112.0 290.0
 	endline
-	
+
 	line wall
 		-113.0 300.0
 		-113.0 300.0 -114.0 299.0 -112.0 290.0
@@ -960,13 +960,13 @@ scrap zima00p_2 -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0 5 0.0 m]
 		-99.5 226.0 -109.0 217.25 -114.0 216.25
 		smooth off
 	endline
-	
+
 	point -140.75 212.25 station -name "13"
-	
+
 	point -96.5 217.0 station -name "14"
-	
+
 	point -80.0 240.0 station -name "15"
-	
+
 	point -103.0 304.0 station -name "16"
-	
+
 endscrap

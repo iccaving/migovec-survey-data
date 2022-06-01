@@ -15,4 +15,4 @@ header-includes:
 
 ### Mig Country to Mona tip -- NCB connection passage
 \clearpage
-\ThreeColWidthFigure{../outputs/m16ent_to_NCB.pdf}
+\CenteredFigure{../outputs/m16ent_to_NCB.pdf}
