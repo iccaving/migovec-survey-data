@@ -37,7 +37,7 @@ Climbing down just before the block leads back to the floor level of the rift pa
 A handline invites a climb up into a walking sized passage containing peculiar speleothems and the occasional haematite sand.
 The passage briefly bifurcates and staying on the right, a small inlet of water is reached.
 The water spouts into a chamber of modest size with a small pool of water, whose overflow disappears into a crack and falls into another pool.
-On the far side of this chamber, a handline can be followed all the way to four-ways junction of _Manđare_.
+On the far side of this chamber, a handline can be followed all the way to four-ways junction of _Manđare_ (\numflag{3}{c2}).
 
 ### Manđare to TTT
 

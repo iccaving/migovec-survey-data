@@ -10,10 +10,10 @@ header-includes:
 The following description covers the complex passages between the rest-stop at _Mary's Café_ and the breakthrough to the _Hallelujah_  extensions.
 
 ### Mary's Café to Knot Very Good
-From the rest stop at _Mary's Cafe_, a 50 m long stooping to walking passage heading south leads to the top of a 5 m drop to a ledge.
+From the rest stop at _Mary's Cafe_(\numflag{1}{c3}), a 50 m long stooping to walking passage heading south leads to the top of a 5 m drop to a ledge.
 Beyond the ledge, another drop with a deviation on the opposite wall allows a short 7-8 m descent ending with a swing into a short horizontal passage.
 Some 20 m further, a 30 m pitch beckons, starting with an elongated cross-section.
-After a deviation a couple of metres down, the drop directly leads into _Knot Very Good_ pitch.
+After a deviation a couple of metres down, the drop directly leads into _Knot Very Good_ pitch (\numflag{2}{c3}).
 The landing is located some metres above the floor of the chamber, on a terraced ledge.
 On the opposite side of this ledge, a short traverse line leads into a muddy, walking sized passage, the start of _Smer0_.
 

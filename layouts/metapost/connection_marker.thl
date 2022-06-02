@@ -5,7 +5,26 @@ layout connection_marker
 		def p_u_flag (expr P,R,S,A)=
 			save RGB;
 !		    color RGB;
-			RGB:=(25/255,51/255,102/255);
+
+
+			if known ATTR_code:
+ 		  		COLORCODE := scantokens(ATTR_code);
+
+				if COLORCODE=1:
+					RGB:=(25/255,51/255,102/255);
+				elseif COLORCODE=2:
+			    	RGB:=(153/255,20/255,39/255);
+				elseif COLORCODE=3:
+			    	RGB:=(51/255,153/255,37/255);
+			    elseif COLORCODE=4:
+			    	RGB:=(115/255,37/255,160/255);
+			    elseif COLORCODE=5:
+					RGB:=(195/255,117/255,18/255);
+					else:
+						RGB:=(35/255,35/255,35/255);
+					fi;
+				fi;
+
 			U:=(.1u,.1u);
 			T:=identity aligned A rotated R scaled S shifted P;
 			pickup PenD;
@@ -17,11 +36,7 @@ layout connection_marker
 			(-0.04u, 1u) -- (-0.04u,1u) -- (-0.04u,0) --  (0.04u,0) -- cycle xscaled 0.25;
 
 			if known ATTR_text:
-				picture thetext;
-
-				thetext := thTEX("\thframed{ \thnormalsize\ss\bf " & ATTR_text & "}");
-
-				p_label.urt(thetext,P shifted (0.4u,-0.2u),R,0);
+				label.rt(thTEX("\thframed{ \bf\ss " & ATTR_text & "}") scaled 1, (.13u,-0.05u)) transformed T withcolor(RGB);
 			fi;
 		 enddef;
 

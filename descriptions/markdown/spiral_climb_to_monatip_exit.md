@@ -12,7 +12,7 @@ The passages between the Primadona-entrance and the Spiral climb are described i
 
 ### Spiral Climb to Alkatraz chamber
 
-At this point, a climb up on the right-hand side leads up several metres into the roof of the passage.
+At this point, a climb up on the right-hand side leads up several metres into the roof of the passage (\numflag{1}{c5}).
 Following the rope up, an upwards constriction between boulders gives access to a small, boulder floored chamber.
 On the far side is an opening to a steep, muddy slope descending into the western end of the very large _Alkatraz_ chamber.
 The way on is up the opposite side of this chamber, going up above a stack of large fallen boulders, to the foot of a permanently rigged pitch.

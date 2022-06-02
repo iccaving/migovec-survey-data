@@ -10,7 +10,7 @@
 \usepackage{lettrine}
 \usepackage{siunitx}
 \usepackage{ifthen}
-
+\usepackage{pgfkeys}
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 \usepackage[text={136.5mm,243mm},%
 papersize={210mm,297mm},%
@@ -27,7 +27,28 @@ inner=25mm,outer=25mm,top=0.6in,bottom= 1.2in, marginparwidth=38mm]{geometry}
 \usetikzlibrary{shadows.blur}
 
 \usepackage{amsmath,amssymb}
+
+%% Setting the key value pairs for colors
+
+\newcommand{\setvalue}[1]{\pgfkeys{/variables/#1}}
+\newcommand{\getvalue}[1]{\pgfkeysvalueof{/variables/#1}}
+\newcommand{\declare}[1]{%
+ \pgfkeys{
+  /variables/#1.is family,
+  /variables/#1.unknown/.style = {\pgfkeyscurrentpath/\pgfkeyscurrentname/.initial = ##1}
+ }%
+}
+\declare{}
+
 \definecolor{bluegrey}{HTML}{193366}% bluegrey %
+\definecolor{crimsonred}{HTML}{991427} % crimson red
+\definecolor{darkgreen}{HTML}{339925} % dark green
+\definecolor{magenta}{HTML}{7325a0} % magenta
+\definecolor{orange}{HTML}{c37512} % orange
+
+\declare{color/} % mapping keys and values for the flags
+\setvalue{color, c1 = bluegrey, c2 = crimsonred, c3 = darkgreen, c4 = magenta, c5 = orange}
+
 \definecolor{lightgrey}{HTML}{e0e0eb}% grey %
 \definecolor{shadowgrey}{HTML}{e0e0e0}% grey %
 
@@ -114,9 +135,12 @@ inner=25mm,outer=25mm,top=0.6in,bottom= 1.2in, marginparwidth=38mm]{geometry}
 
 \begin{document}
 
+
 \setlength{\parskip}{0.2cm plus0.125cm minus0.1cm}
 
+
 \include{about_this_guide}
+
 \newpage
 \include{drugi_to_cafe}
 \newpage

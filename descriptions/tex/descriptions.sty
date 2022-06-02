@@ -108,15 +108,16 @@
 \end{tikzpicture}
 } \hspace{0.5em}}
 
-\newcommand{\numflag}[1]{
-\flag \textcolor{bluegrey}{\footnotesize{\textbf{#1}}}
+\newcommand{\numflag}[2]{
+ \nolinebreak \flag{\getvalue{color/#2}} \textcolor{\getvalue{color/#2}}{\footnotesize{\textbf{#1}}}
 }
 
-\newcommand{\flag}{
+\newcommand{\flag}[1]{
 \resizebox{5pt}{!}{
 \begin{tikzpicture}
 \begin{scope}
-  \fill [fill=bluegrey] (-0.11,0) -- (-0.11,-0.05) -- (0.11,-0.05) --(0.11,0) -- (0.02,0) --(0.02,0.30) -- (0.23, 0.30) -- (0.23, 0.5) -- (-0.02, 0.5) -- (-0.02,0.5) -- (-0.02,0) -- cycle;
+  \fill [fill=#1] (-0.11,0) -- (-0.11,-0.05) -- (0.11,-0.05) --(0.11,0) -- (0.02,0) --(0.02,0.30) -- (0.23, 0.30) -- (0.23, 0.5) -- (-0.02, 0.5) -- (-0.02,0.5) -- (-0.02,0) -- cycle;
+  \draw [line width=0.1mm,  black] (-0.11,0) -- (-0.11,-0.05) -- (0.11,-0.05) --(0.11,0) -- (0.02,0) --(0.02,0.30) -- (0.23, 0.30) -- (0.23, 0.5) -- (-0.02, 0.5) -- (-0.02,0.5) -- (-0.02,0) -- cycle;
 \end{scope}
 \end{tikzpicture}
 } %\textbf \textcolor{bluegrey}{#1}

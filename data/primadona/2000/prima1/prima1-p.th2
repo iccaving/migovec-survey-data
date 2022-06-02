@@ -7,10 +7,10 @@ scrap prima1-entp -projection plan -scale [2594.0 -5192.0 3382.0 -5186.0 0.0 0.0
 
 point 2208.25 1824.35 label -align bl -attr level 4 -scale xs -text "<lang:en>collapsed in 2019<br>no longer passable"
 point 2065.71 2126.89 label -align l -attr level 3 -text "<lang:en>Original Entrance"
-point 2840.9968 321.4139 u:flag -align tr -attr text 4 -scale m
-point 2441.5112 578.1337 u:flag -align bl -attr text 3 -scale m
-point 2320.6174 1434.9624 u:flag -align l -attr text 2 -scale m
-point 2381.5864 2255.8647 u:flag -align r -attr text 1 -scale m
+point 2840.9968 321.4139 u:flag -align tr -attr text 4 -scale m -attr code 1
+point 2441.5112 578.1337 u:flag -align bl -attr text 3 -scale m -attr code 1
+point 2320.6174 1434.9624 u:flag -align l -attr text 2 -scale m -attr code 1
+point 2381.5864 2255.8647 u:flag -align r -attr text 1 -scale m -attr code 1
 point 2257.06 2196.33 gradient -orientation 225.0
 point 2265.71 2126.89 gradient -orientation 225.0
 point 2256.29 1836.05 breakdown-choke -align b
