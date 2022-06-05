@@ -43,10 +43,14 @@ layout local-p
 	code tex-map
 
 		\def\maplayout{
-		\legendbox{-2}{-2}{N}{\scalebar}
-		\legendbox{-2}{0}{S}{\northarrow}
-		\legendbox{-2}{7}{S}{\loadpicture{../outputs/cafe_to_hallelujah_overview.pdf}}
+		\legendbox{14}{2}{N}{\scalebar}
+		\legendbox{14}{4}{S}{\northarrow}
+		\legendbox{14}{11}{S}{\loadpicture{../outputs/cafe_to_hallelujah_overview.pdf}}
 		}
+	endcode
+
+	code metapost
+		set_label_level("3");
 	endcode
 
 endlayout
@@ -55,6 +59,7 @@ endlayout
 # Add here whichever map you want to appear next to the 'correct' way on
 # The correct way on appears in light yellow, the rest in white.
 source
+
 	map m-local-p -projection plan -title "<bf>Mary's Café to Camp Manger"
     m-all-p@risanke.primadona.primadona_ubend_monatip.system_migovec
 	  m-all-p@risa2.primadona.primadona_ubend_monatip.system_migovec
@@ -62,26 +67,28 @@ source
 		m4p@popotresni.primadona.primadona_ubend_monatip.system_migovec
     m4p@galerija.primadona.primadona_ubend_monatip.system_migovec
 		m-cafe_to_hallelujah-p@primadona.primadona_ubend_monatip.system_migovec
+		m2p@smer0.primadona.primadona_ubend_monatip.system_migovec
     m1p@the_stile.primadona.primadona_ubend_monatip.system_migovec
     m-all-p@forget_me_not.primadona.primadona_ubend_monatip.system_migovec
-    m-cafe_to_hallelujah2-p@primadona.primadona_ubend_monatip.system_migovec
-    m2p@smer0.primadona.primadona_ubend_monatip.system_migovec
-    m3p@smer0.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@mud_moses.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@quantum_state.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@terminus.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@jack_of_hearts.primadona.primadona_ubend_monatip.system_migovec
+		m-below-p [50 0 m] none
+	endmap
 
-    m-all-p@upotyn.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@battery_flattery.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@holy_moley.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@alabaster.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@beam_me_up.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@purgatory.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@octarine.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@octarine_core.primadona.primadona_ubend_monatip.system_migovec
+	map m-below-p
+		m1p@alabaster.primadona.primadona_ubend_monatip.system_migovec
+		m2p@alabaster.primadona.primadona_ubend_monatip.system_migovec
+		m1p@alabaster.primadona.primadona_ubend_monatip.system_migovec
+		m4p@sweet_baby_jesus.primadona.primadona_ubend_monatip.system_migovec
+		m2p@fenestrator.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@octarine.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@octarine_core.primadona.primadona_ubend_monatip.system_migovec
+		m-cafe_to_hallelujah2-p@primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@mud_moses.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@upotyn.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@battery_flattery.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@beam_me_up.primadona.primadona_ubend_monatip.system_migovec
 
-    m-all-p@bath.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@death_star.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@canticle_for_migovec.primadona.primadona_ubend_monatip.system_migovec
 
 	endmap
 endsource

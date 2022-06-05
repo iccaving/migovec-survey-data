@@ -50,8 +50,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join s1_l2@risanke:0 s7_l2@prima1:end
 	join risa2p_1@risa2 risanke-p1@risanke
 	join risa2p_3@risa2 pov-1p@pov
-	join s4_l1@pov:end s4_l1@ttt:end
-	join s4_l2@pov:0 s4_l2@ttt:end
+	join s4_l1@pov s4_l1@ttt
+	join s4_l2@pov s4_l2@ttt
 	#join s1_l1@galerija:0 s3_l1@risa2:end
 	#join s1_l2@galerija:0 s3_l2@risa2:end
 
@@ -265,13 +265,13 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join s1_l1@fenestrator:0 s1_l1@upotyn:end
 	join s1_l2@fenestrator:end s1_l2@upotyn:0
 	join hallelujahp_1@hallelujah plumbers_paradise-2p@plumbers_paradise
-	join alabaster-1p@alabaster sweet_baby_jesus-1p@sweet_baby_jesus
+	join alabaster-1p@alabaster sweet_baby_jesus-4p@sweet_baby_jesus
 	join wacp_3@wac what_a_disappointment-p2@what_a_disappointment
 	join high_and_dry-p2@high_and_dry dogfish-p1@dogfish
 	join hammerhead2-p1@hammerhead2 hammerhead-p1@hammerhead
 	join entirely_my_fault-p1@entirely_my_fault karstaway-1p@karstaway
 	join dejavup_1@dejavu zima00p_1@zima00
-	join s3_l1@pov:end s3_l1@apple_crumble:end
+	join s3_l1@pov s3_l1@apple_crumble
 	join s3_l6@pov s3_l2@apple_crumble
 	join batmere-1p@batmere mandare_low-p1@mandare_resurvey
 	join electric_dreams-1p@electric_dreams more_like_welding-p3@more_like_welding

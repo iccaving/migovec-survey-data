@@ -6,16 +6,22 @@ survey fenestrator
 
 	map m-all-p -projection plan
 		m1p
-
+		m2p
 	endmap
+
 	map m1p -projection plan
 		fenestrator-1p
+	endmap
+
+	map m2p -projection plan
+		fenestrator-2p
 	endmap
 
 	map  m-all-e -projection extended
 		fenestrator-e1
 	endmap
 
+	join fenestrator-1p fenestrator-2p
 
 	centreline
 		date 2017.07.14

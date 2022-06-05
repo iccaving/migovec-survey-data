@@ -3,32 +3,32 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap mud_moses-p2 -projection plan -scale [0.0 0.0 943.3314616019818 1023.9999999999999 0.0 0.0 111.56 121.1]
-	
+
 	line gradient
 		12.9612 62.7616
 		-6.7888 46.7616
 	endline
-	
+
 	line contour
 		16.7112 26.0116
 		16.7112 26.0116 7.9612 66.7616 -13.2888 71.5116
 	endline
-	
+
 	line contour
 		40.4612 32.5116
 		40.2112 33.5116 19.2112 85.2616 4.7112 94.7616
 	endline
-	
+
 	line contour
 		47.4612 51.2616
 		47.4612 51.2616 36.7112 95.7616 23.4612 103.2616
 	endline
-	
+
 	line floor-step
 		-5.0388 27.5116
 		-5.0388 27.5116 -9.5388 47.2616 -28.7888 47.2616
 	endline
-	
+
 	line wall
 		58.2112 71.0116
 		57.4612 71.7616 52.4612 68.7616 48.7112 76.0116
@@ -44,7 +44,7 @@ scrap mud_moses-p2 -projection plan -scale [0.0 0.0 943.3314616019818 1023.99999
 		-32.5388 40.5116 -30.0388 38.0116 -37.0388 36.2616
 		-44.0388 34.5116 -49.5388 29.0116 -49.5388 29.0116
 	endline
-	
+
 	line wall
 		-20.5388 13.2616
 		-20.5388 13.2616 -19.0388 21.2616 -16.2888 22.7616
@@ -57,7 +57,7 @@ scrap mud_moses-p2 -projection plan -scale [0.0 0.0 943.3314616019818 1023.99999
 		52.4612 59.7616 50.9612 63.7616 54.2112 64.7616
 		57.4612 65.7616 61.4612 64.7616 61.4612 64.7616
 	endline
-	
+
 	point -33.2888 12.5116 clay
 	point -41.61 16.85 station -name 5
 	point -12.4 33.7 station -name 6
@@ -67,17 +67,17 @@ scrap mud_moses-p2 -projection plan -scale [0.0 0.0 943.3314616019818 1023.99999
 		-41.61 16.85
 		-12.4 33.7
 	endline
-	
+
 	line survey
 		-12.4 33.7
 		23.5 83.07
 	endline
-	
+
 	line survey
 		23.5 83.07
 		45.55 55.83
 	endline
-	
+
 	point -41.61 16.85 station-name -align tr -scale xs -text 5
 	point -12.4 33.7 station-name -align tr -scale xs -text 6
 	point 23.5 83.07 station-name -align tr -scale xs -text 7
@@ -86,7 +86,7 @@ endscrap
 
 
 scrap cattlegrid-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
-	
+
 	point 23.5 83.07 station -name 7
 	point 9.41 -82.44 station -name 1
 	point -375.543 -749.353 map-connection
@@ -100,32 +100,32 @@ scrap cattlegrid-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 		-363.098 -750.6731
 		-363.098 -357.2415
 	endline
-	
+
 endscrap
 
 
 scrap DELETE-ME-survey-legs-DUPLICATE_mud_moses-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
+
 	line survey
 		9.41 -82.44
 		-9.33 -83.07
 	endline
-	
+
 	line survey
 		-9.33 -83.07
 		-38.7 -66.77
 	endline
-	
+
 	line survey
 		-38.7 -66.77
 		-45.55 -28.03
 	endline
-	
+
 	line survey
 		-45.55 -28.03
 		-41.61 16.85
 	endline
-	
+
 	point 9.41 -82.44 station-name -align tr -scale xs -text 1
 	point -9.33 -83.07 station-name -align tr -scale xs -text 2
 	point -38.7 -66.77 station-name -align tr -scale xs -text 3
@@ -134,8 +134,8 @@ endscrap
 
 
 scrap mud_moses-p1 -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
-	point 635.952 -719.989 label -align tl -text "Below Knot Very Good" -attr level 3 -scale xs
+
+	point 635.952 -719.989 remark -align tl -text "Below Knot Very Good" -attr level 6 -scale xs
 	line rock-edge -clip off -close on -outline none -visibility off
 		-363.098 196.1901
 		300.1415 196.1901
@@ -146,7 +146,7 @@ scrap mud_moses-p1 -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500
 		-363.098 -750.6731
 		-363.098 -357.2415
 	endline
-	
+
 	point 38.7112 -4.4884 label -align r -attr level 4 -text "Mud Moses"
 	point 5.4612 -84.4884 clay
 	point -22.5388 -82.9884 clay
@@ -167,7 +167,7 @@ scrap mud_moses-p1 -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500
 		-12.0388 -89.2384 -1.0388 -89.7384 2.7112 -88.7384
 		6.4612 -87.7384 11.4612 -85.7384 11.4612 -85.7384
 	endline
-	
+
 	line wall
 		8.7112 -77.9884
 		8.7112 -77.9884 4.9612 -79.4884 2.2112 -79.4884
@@ -183,10 +183,9 @@ scrap mud_moses-p1 -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500
 		-29.2888 5.2616 -30.2888 4.7616 -26.7888 7.0116
 		-23.2888 9.2616 -21.0388 12.2616 -20.5388 13.2616
 	endline
-	
+
 	point 9.41 -82.44 station -name 1
 	point -9.33 -83.07 station -name 2
 	point -38.7 -66.77 station -name 3
 	point -45.55 -28.03 station -name 4
 endscrap
-

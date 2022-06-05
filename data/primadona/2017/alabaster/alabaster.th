@@ -2,45 +2,41 @@ encoding  utf-8
 survey alabaster
 	input "alabaster-p.th2"
 	input "alabaster-e.th2"
-	
+
 	map m-all-p -projection plan
-		malabaster-1p
-		malabaster-2p
-		malabaster-3p
+		m1p
+		m2p
+		m3p
 	endmap
-	
-	map malabaster-1p -projection plan
+
+	map m1p -projection plan
 		alabaster-1p
 	endmap
-	
-	map malabaster-2p -projection plan
+	map m2p -projection plan
 		alabaster-2p
 	endmap
-	
-	map malabaster-3p -projection plan
+	map m3p -projection plan
 		alabaster-3p
 	endmap
-	
-
 	map  m-all-e -projection extended
 		alabaster-e1
 	endmap
-	
+
 	centreline
 		date 2017.07.30
 		explo-date 2017.07.30
 		explo-team "Tanguy Racine"
 		explo-team "William French"
-		
+
 		team "Tanguy Racine" tape notes
 		team "William French"  insts
-		
+
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
-		
+
 		#Data on 1 page
-		
+
 		#Page 1/2
 		extend left
 		1	2	13.23	322	+82
@@ -93,7 +89,7 @@ survey alabaster
 		24	25	4.40	348	+09
 		extend left
 		25	26	0.29	274	-02
-		
+
 		#NOTES
 		#STN 1 is PSS on ledge of Pitch
 		#STN 2is knot of y Hang
@@ -102,9 +98,6 @@ survey alabaster
 		#STN 13 is bolt of second pitch
 		#STN 18 is bolt of 1st pitch
 		#STN 26 is Sweet Baby Jesus STN 1
-		
+
 	endcentreline
 endsurvey
-
-
-

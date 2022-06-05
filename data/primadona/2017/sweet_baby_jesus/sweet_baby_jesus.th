@@ -2,43 +2,51 @@ encoding  utf-8
 survey sweet_baby_jesus
 	input "sweet_baby_jesus-p.th2"
 	input "sweet_baby_jesus-e.th2"
-	
+
 	map  m-all-e -projection extended
 		sweet_baby_jesus-1e
 	endmap
+
 	map m-all-p -projection plan
-		msweet_baby_jesus-1p
-		msweet_baby_jesus-2p
-		msweet_baby_jesus-3p
+		m1p
+		m2p
+		m3p
+		m4p
 	endmap
-	map msweet_baby_jesus-1p -projection plan
+
+	map m1p -projection plan
 		sweet_baby_jesus-1p
 	endmap
-	
-	map msweet_baby_jesus-2p -projection plan
+
+	map m2p -projection plan
 		sweet_baby_jesus-2p
 	endmap
-	
-	map msweet_baby_jesus-3p -projection plan
+
+	map m3p -projection plan
 		sweet_baby_jesus-3p
 	endmap
-	
+
+	map m4p -projection plan
+		sweet_baby_jesus-4p
+	endmap
+
 	join sweet_baby_jesus-1p sweet_baby_jesus-2p
 	join sweet_baby_jesus-3p sweet_baby_jesus-2p
-	
+	join sweet_baby_jesus-1p sweet_baby_jesus-4p
+
 	centreline
 		date 2017.07.28
 		explo-date 2017.07.28
 		explo-team "Rhys Tyers"
 		explo-team "Rebecca Diss"
-		
+
 		team "Rhys Tyers" insts tape
 		team "Rebecca Diss" notes
-		
+
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
-		
+
 		#Data on 2 pages
 		#Page 1/2
 		extend right
@@ -68,7 +76,7 @@ survey sweet_baby_jesus
 		extend right
 		14	13	5.12	169	-21
 		extend right
-		
+
 		#Page 2/2
 		extend right
 		16	14	3.89	184	-21
@@ -90,14 +98,12 @@ survey sweet_baby_jesus
 		extend left
 		24	23	5.08	333	+07
 		flags not duplicate
-		
+
 		#NOTES
 		#STN 1 is PSS
 		#STN 4 is PSS
 		#STN 16 is PSS
 		#STN 24 is Hallelujah STN 1
-		
+
 	endcentreline
 endsurvey
-
-

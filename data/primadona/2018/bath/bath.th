@@ -3,17 +3,17 @@ encoding  utf-8
 
 survey bath -title "Bath"
 	# beyond purgatory
-	
+
 	centerline
 		date 2018.07.24
 		explo-date 2018.07.24
 		explo-team "Tanguy Racine"
 		explo-team "Jennifer Ryder"
 		explo-team "Christopher Bradley"
-		
+
 		team "Jennifer Ryder" insts
 		team " Christopher Bradley" insts
-		
+
 		# team tanguy racine jennifer ryder and christopher bradley
 		# declination 0.00 degrees
 		units length meters
@@ -547,37 +547,37 @@ survey bath -title "Bath"
 		20 . 0.87 333.1 -35.8
 		20 . 19.71 298.4 -85.0
 	endcenterline
-	
+
 	input "bath-1p.th2"
 	input "bath-1s.th2"
-	
+
 	map m1p -projection plan
 		bath-1p
 	endmap
-	
+
 	map m2p -projection plan
 		bath-2p
 	endmap
-	
+
 	map m3p -projection plan
 		bath-3p
 	endmap
-	
+
 	map m-all-p -projection plan
 		m1p
 		m2p
 		m3p
 	endmap
-	
+
 	join bath-1p bath-3p
 	join bath-2p bath-3p
+
 	map m1s -projection extended
 		bath-1s
 	endmap
-	
+
 	map  m-all-e -projection extended
 		m1s
 	endmap
-	
-endsurvey
 
+endsurvey

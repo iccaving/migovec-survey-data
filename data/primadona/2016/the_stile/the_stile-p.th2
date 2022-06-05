@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap the_stile-1p -projection plan -scale [326.0 -735.0 530.0 -733.0 0.0 0.0 14 0.0 m]
 
-point 474.0 381.0 label -align r -attr level 4 -text "The Stile"
+point 474.0 381.0 label -align r -attr level 6 -scale l -text "The Stile"
 line floor-step 
   546.8526 732.8121
   546.8526 732.8121 551.2263 764.6769 535.8194 767.9702
@@ -158,8 +158,10 @@ endscrap
 
 scrap the_stile-2p -projection plan -scale [326.0 -735.0 530.0 -733.0 0.0 0.0 14 0.0 m]
 
-point 563.0731 764.602 u:connectionmarker -align r -attr offset 1.2 -attr text "to Smer0" -attr code 5
-point 371.8799 426.1722 u:connectionmarker -align bl -attr offset 0.4 -attr text "to Knot Very Good" -attr code 6
+point 350.6888 277.1363 u:flag -align b -attr text 1 -attr code 3
+point 688.8205 762.2195 u:flag -align r -attr text 2 -attr code 3
+point 563.073 764.602 u:connectionmarker -align r -attr offset 1.2 -attr text "to Smer0" -attr code 5
+point 371.88 426.172 u:connectionmarker -align bl -attr offset 0.4 -attr text "to Knot Very Good" -attr code 6
 line wall -outline in
   436.0 779.0
   436.0 779.0 432.0 763.0 427.0 763.0
