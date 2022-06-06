@@ -32,7 +32,7 @@ pdf: prepare markdown therion
 	bibtex descriptions.aux ;\
 	xelatex descriptions.tex ;\
 	xelatex descriptions.tex ;\
-	mv *.pdf ../../outputs
+	mv *.pdf ../outputs
 	cd ..;\
 
 pdfonly: prepare markdown
@@ -43,7 +43,7 @@ pdfonly: prepare markdown
 		bibtex descriptions.aux ;\
 		xelatex descriptions.tex ;\
 		xelatex descriptions.tex ;\
-		mv *.pdf ../../outputs
+		mv *.pdf ../outputs
 		cd ..;\
 
 clean: prepare pdf
