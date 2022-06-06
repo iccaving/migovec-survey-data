@@ -6,8 +6,8 @@
 %\requirepackage{ifthen}
 
 
-\newcommand{\TopFullWidthFigure}[6]{% True case
-\begin{figure}[ht]
+\newcommand{\TopFullWidthFigure}[6]{%
+\begin{figure}[!ht]
   \vspace{-0.6in}
   \hspace{-25.5mm}
   \includegraphics[width=\FullWidth]{#1}
@@ -15,13 +15,12 @@
 \fullwidthcaption{#2}{#3}{#4}{#5}{0em}{#6}
 }
 
-\newcommand{\FullWidthFigure}[5]{
-
-\begin{figure}
- \hspace{-25.5mm} \includegraphics[width=\FullWidth]{#1}
+\newcommand{\FullWidthFigure}[6]{%
+\begin{figure}[!htbp]
+  \hspace{-25.5mm}
+  \includegraphics[width=\FullWidth]{#1}
 \end{figure}
-\fi
-\fullwidthcaption{#2}{#3}{#4}{#5}{0em}
+\fullwidthcaption{#2}{#3}{#4}{#5}{0em}{#6}
 }
 
 \newcommand{\BottomFullWidthFigure}[6]{
