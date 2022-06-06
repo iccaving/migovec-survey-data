@@ -96,10 +96,10 @@ jobs:
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate output files
         run: for file in configs/automation/*.thconfig; do echo "Generating $file" && ${THERION_PATH}/bin/therion -q $file || echo "Generating $file failed"; done
-      - uses: docker://pandoc/latex:2.9
+      - name: Generate descriptions pdf
+        uses: docker://pandoc/latex:2.9
         with: 
           args: "--help" # appended to pandoc command
-      - name: Generate descriptions pdf
         run: |
           cd descriptions/
           make -f makefile all;
