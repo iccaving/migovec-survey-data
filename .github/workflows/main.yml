@@ -98,8 +98,7 @@ jobs:
         run: for file in configs/automation/*.thconfig; do echo "Generating $file" && ${THERION_PATH}/bin/therion -q $file || echo "Generating $file failed"; done
       - name: Generate descriptions pdf 
         run: |
-          cd descriptions/
-          make -f makefile all;
+          make -f descriptions/makefile all;
       - name: Check outputs exist
         run: |
           for file in $EXPECTED_OUTPUTS; do
