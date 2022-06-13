@@ -33,15 +33,11 @@ Vrtnarija connects to the Old System at the Dreams for the Soul.
 Two connections between Mona tip and the Old system are known: at Mig Country (M16) and in NCB passage (M18).
 Mona tip and Primadona are connected in several places, notably at Alkatraz and near Sejna Soba.
 
-\newpage
-\TopFullWidthFigure{../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}}
-
-
 ## Access to the entrances
 
-### Primadona
+### Primadona & Mona tip
 
-### Mona tip
+The surface abseil of Primadona begins in a shallow valley at the USTART way point. Several rebelays on a high angle grass and scree slope lead to a lip of rock next to a prominent rock spire, which is crowned by a lightning struck bush of dwarf pine. The spire overhangs the second, more vertical part of the descent: a series of rebelays landing on various rock ledges, which eventually drop by the entrance snow slope of Primadona. A traverse line leading north stops short of the Monatip entrance, which lies just around the next rocky ridge, 70 m away. Two ways into the gaping entrance of Primadona can be followed: _Drugi Vhod_ is the high level climb into a black void, while the original entrance is found at the bottom of the snow slope.
 
 ### M-16
 The entrance of M-16 lies close to the Bivi.
@@ -50,13 +46,16 @@ After cresting the far side and walking on the top surface of a wide bedding pla
 Heading away from this obvious entrance, a series of down-climbs leads almost immediately into a small pothole, at the bottom of which, a short clamber down gives access both a neighbouring pothole, and further down, to a dug out draughty crawl which soon leads to a window into a pitch-head (rigged).
 This is the start of the M-16 entrance series.
 
+\newpage
+\TopFullWidthFigure{../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}}
+
+
 ### M-18
 
 From the entrance of M-1, continuing NE for approximately 100 m on the gently ascending bedding surface leads to another main crest.
 Descending beyond this crest, and keeping to the right leads almost
 
 ### Vrtnarija
-
 
 
 \newpage

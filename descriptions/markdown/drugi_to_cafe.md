@@ -5,12 +5,10 @@ header-includes:
 - \usepackage{descriptions}
 ---
 
-## Drugi Vhod to Mary's Cafe
+## Belladonna/Drugi Vhod to Mary's Cafe
 
-### Surface abseil
-The surface abseil of Primadona begins in a shallow valley at the USTART way point. Several rebelays on a high angle grass and scree slope lead to a lip of rock next to a prominent rock spire, which is crowned by a lightning struck bush of dwarf pine. The spire overhangs the second, more vertical part of the descent: a series of rebelays landing on various rock ledges, which eventually drop by the entrance snow slope of Primadona. A traverse line leading north stops short of the Monatip entrance, which lies just around the next rocky ridge, 70 m away. Two ways into the gaping entrance of Primadona can be followed: _Drugi Vhod_ (\numflag{1}{c1}) is the high level climb into a black void, while the original entrance is found at the bottom of the snow slope.
 
-### Belladonna to Bear Pitch
+### Belladonna/Drugi vhod to Bear Pitch
 Belladonna entrance is a short pendulum below the hanging rebelay in the surface abseil.
 The swing leads to a short descending tube and pitch head. Following two drops, the _Drugi vhod_ entrance chamber is reached (\numflag{1}{c1}).
 A short, draughty crawl leads past a first pitch head, but the way on is a parallel pitch beyond a short traverse.
