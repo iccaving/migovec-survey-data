@@ -42,7 +42,6 @@ On the far side of this chamber, a handline can be followed all the way to four-
 ### Manđare to TTT
 
 The way to _TTT_ is found opposite the entry point, traversing over a large, flat topped boulder with a cairn.
-
 *To the left is a drop into a drippy, boulder floored chamber and further downclimbing leads back to the water seen previously, disappearing into a crack. To the right leads quickly to a high aven and a continuing passage on the far side, believed to loop back to Stara Jama*
 
 The correct way on passes a short traverse  and a rigged downclimb to a lower level of the rift.

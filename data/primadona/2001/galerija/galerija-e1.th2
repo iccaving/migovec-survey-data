@@ -156,7 +156,7 @@ endscrap
 
 scrap galerija-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
-	point 383.7424 3401.4797 u:connectionmarker -align tl -attr code 0 -id sejnasoba -attr text "to Sejna Soba"
+	point 383.7424 3401.4797 u:connection_marker -align tl -attr code 0 -id sejnasoba -attr text "to Sejna Soba"
 	point 1068.0 3300.0 station -name 22
 	point 1138.0 3238.0 station -name 21
 	point 1132.0 3148.0 station -name 20

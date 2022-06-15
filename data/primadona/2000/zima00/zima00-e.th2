@@ -326,7 +326,7 @@ scrap zima00-3e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 	endline
 
 	point -829.2573 1048.1147 remark -text 2018 -align tr
-	point -878.6785 989.8857 u:connectionmarker -attr text "Camp Manger" -attr offset 1 -align tr -attr code 19
+	point -878.6785 989.8857 u:connection_marker -attr text "Camp Manger" -attr offset 1 -align tr -attr code 19
 	line rock-border -close on
 		-2470.0694 896.4331
 		-2499.918 904.7515

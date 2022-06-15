@@ -41,7 +41,7 @@ layout connection_marker
 		 enddef;
 
 
-		def p_u_connectionmarker (expr P,R,S,A)=
+		def p_u_connection_marker (expr P,R,S,A)=
 			save RGB;
  !		    color RGB;
  			if known ATTR_code:

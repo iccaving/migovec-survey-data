@@ -6,11 +6,7 @@ encoding  utf-8
 
 scrap therockp_1 -scale [327.0 -736.0 498.0 -736.0 0 0 15 0 m]
 
-line pit
-endline
-
-line border -subtype invisible
-endline
+point 316.75 -57.25 u:flag -attr text 1 -attr code 5 -align tr
 
 point 216.75 -157.25 station -name "8"
 
@@ -565,5 +561,3 @@ line wall -id s3_l1
 endline
 
 endscrap
-
-

@@ -9,7 +9,8 @@ input ../../layouts/mods.thl
 
 # From the cafe to the manger, will appear light yellow
 lookup map:manger_to_tranquillity
-	m-manger_to_tranquillity-p@primadona.primadona_ubend_monatip.system_migovec [100 92.2 66.7] "Cafe to Manger"
+	m-manger_to_tranquillity-top-p@primadona.primadona_ubend_monatip.system_migovec [100 92.2 66.7] "Manger to Tranquillity"
+	m-manger_to_tranquillity-bottom-p@primadona.primadona_ubend_monatip.system_migovec [100 92.2 66.7] "Manger to Tranquillity"
 endlookup
 
 # Generate actual map
@@ -54,13 +55,24 @@ endlayout
 # The correct way on appears in light yellow, the rest in white.
 source
 	map m-local-p -projection plan -title "<bf>Camp Manger to Tranquillity Base"
+		m-top-p [40 0 m] none
+		m-bottom-p
+	endmap
+
+	map m-top-p -projection plan
 		m-all-p@dejavu.primadona.primadona_ubend_monatip.system_migovec
+		m1p@TTTr.primadona.primadona_ubend_monatip.system_migovec
 		m1p@zima00.primadona.primadona_ubend_monatip.system_migovec
+		m-manger_to_tranquillity-top-p@primadona.primadona_ubend_monatip.system_migovec
+
+	endmap
+	map m-bottom-p -projection plan
+	m3p@wac.primadona.primadona_ubend_monatip.system_migovec
+		m4p@pivnica_resurvey.primadona.primadona_ubend_monatip.system_migovec
+
 		m-all-p@snakebite.primadona.primadona_ubend_monatip.system_migovec
 		m-all-p@snakebitetwo.primadona.primadona_ubend_monatip.system_migovec
 		m-all-p@ave_maria.primadona.primadona_ubend_monatip.system_migovec
-		m1p@TTTr.primadona.primadona_ubend_monatip.system_migovec
-		m1p@pivnica_resurvey.primadona.primadona_ubend_monatip.system_migovec
 		m2p@pivnica_2_resurvey.primadona.primadona_ubend_monatip.system_migovec
 		m2p@moonraker.primadona.primadona_ubend_monatip.system_migovec
 		m3p@moonraker.primadona.primadona_ubend_monatip.system_migovec
@@ -68,7 +80,7 @@ source
 		m3p@klic_globin.primadona.primadona_ubend_monatip.system_migovec
 
 		# the actual highlighted route
-		m-manger_to_tranquillity-p@primadona.primadona_ubend_monatip.system_migovec
+		m-manger_to_tranquillity-bottom-p@primadona.primadona_ubend_monatip.system_migovec
 
 		m-all-p@the_aqueduct.primadona.primadona_ubend_monatip.system_migovec
 		m-all-p@artemis.primadona.primadona_ubend_monatip.system_migovec

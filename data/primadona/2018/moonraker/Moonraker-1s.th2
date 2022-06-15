@@ -30,7 +30,7 @@ line wall:invisible
   5075.26 1924.75
 endline
 
-point 3974.5221 1779.7957 u:connectionmarker -attr text "Tranquillity Base" -attr offset 0.25 -align tr -attr code 19
+point 3974.5221 1779.7957 u:connection_marker -attr text "Tranquillity Base" -attr offset 0.25 -align tr -attr code 19
 
 point 5152.4517 1881.2297 continuation -align tr -scale xs
 line rock-border -close on -clip off

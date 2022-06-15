@@ -46,18 +46,15 @@ After cresting the far side and walking on the top surface of a wide bedding pla
 Heading away from this obvious entrance, a series of down-climbs leads almost immediately into a small pothole, at the bottom of which, a short clamber down gives access both a neighbouring pothole, and further down, to a dug out draughty crawl which soon leads to a window into a pitch-head (rigged).
 This is the start of the M-16 entrance series.
 
-\newpage
-\TopFullWidthFigure{../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}}
-
-
-### M-18
-
+### M-2
 From the entrance of M-1, continuing NE for approximately 100 m on the gently ascending bedding surface leads to another main crest.
-Descending beyond this crest, and keeping to the right leads almost
+Descending beyond this crest, and keeping to the right along a contour line leads a small opening ($3\times1$ m) with a splodge of red paint (M2b) and some 40 m further, a large shakehole sometimes containing a snow plug, the main entrance of M2.
+M2 is entered by the smaller opening.
 
 ### Vrtnarija
+Continuing downhill, NE of the M2b entrance, zig-zags are necessary to descend the inclined limestone beds. Eventually, a downclimb under a small cliff, equipped with an in-situ rope can be descended to a shallow bowl, with a rocky overhang at its NE end: underneath is the sloping, cobble floored entrance of Vrtnarija.
 
+<!-- \protect\FullWidthFigure{../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}} -->
+\protect\CenteredFigure{../outputs/Mig_routes.png}
 
-\newpage
-
-\CenteredFigure{../outputs/system_overview.pdf}
+\protect\CenteredFigure{../outputs/system_overview.pdf}

@@ -2,31 +2,32 @@ encoding  utf-8
 survey therock
 	input "therockp.th2"
 	input "therock-e.th2"
-	
+
 	map  m-all-e -projection extended
 		therock-e1
 		therock-e2
 	endmap
-	
+
 	map m-all-p -projection plan
 		mtherock-p1
 		mtherock-p2
 		mtherock-p3
 	endmap
+	
 	map mtherock-p1 -projection plan
 		therockp_1
 	endmap
-	
+
 	map mtherock-p2 -projection plan
 		therockp_2
 	endmap
-	
+
 	map mtherock-p3 -projection plan
 		therockp_3
 	endmap
-	
+
 	join therockp_1 therockp_2
-	
+
 	centreline
 		date 2016.07.19
 		explo-date 2016.07.19
@@ -34,7 +35,7 @@ survey therock
 		team "William Scott" insts notes
 		units length meters
 		units compass clino degrees
-		
+
 		#PAGE 1 of 2
 		extend right
 		1  2  6.03  034  -38
@@ -56,7 +57,7 @@ survey therock
 		10  11  3.89  202  -22
 		extend right
 		11  12  10.12  170  -48
-		
+
 		#PAGE 2 of 2
 		extend vertical
 		12  13  16.26  142  -08
@@ -82,8 +83,8 @@ survey therock
 		extend right
 		12 PSEUDO12 4.21 014 00 # fake leg to tie into alkatraz resurvey.
 	endcentreline
-	
-	
+
+
 	#1 is pss in corkscrew
 	#3 is JH/TA pss station 8 20/07/2000 prima 1
 	#8 is on one side of squeeze
@@ -93,4 +94,3 @@ survey therock
 	#14 is JH PSS plus Iztok Možir 8/8/2008 alkatrz stn 7???
 	#25 is JH/JE 19/7/2000 stn 24
 endsurvey
-

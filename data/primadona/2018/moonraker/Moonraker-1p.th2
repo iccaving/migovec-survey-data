@@ -1080,7 +1080,7 @@ scrap moonraker-p4 -scale [0 0 100 0 0 0 1 0 m]
 endscrap
 
 scrap moonraker-p2 -scale [0 0 100 0 0 0 1 0 m]
-	point 3782.8152 3289.1976 u:connectionmarker -attr text "Tranquillity Base" -attr offset 2.25 -align tl -attr code 18
+	point 3782.8152 3289.1976 u:connection_marker -attr text "Tranquillity Base" -attr offset 2.25 -align tl -attr code 18
 
 	line wall
 		2646.33 2614.94

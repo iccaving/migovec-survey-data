@@ -1,10 +1,9 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 988.000000 1111.000000
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {265.000000 1 1.0} {970.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/monatip/2008/monatip2/monatip2p.gif" 0 {}
 
-##XTHERION## xth_me_image_insert {265.000000 1 1.0} {970.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/monatip/2008/monatip2/monatip2p.gif" 0 {}
-
-scrap monatip2-1p -scale [330.0 -737.0 523.0 -737.0 0.0 0.0 12 0.0 m]
+scrap monatip2-1p -projection plan -scale [330.0 -737.0 523.0 -737.0 0.0 0.0 12 0.0 m]
 
 line rock-border -close on
   361.0 849.0
@@ -186,8 +185,10 @@ point 403.0 919.0 station -name 27
 endscrap
 
 
-scrap monatip2-2p -scale [330.0 -737.0 523.0 -737.0 0.0 0.0 12 0.0 m]
+scrap monatip2-2p -projection plan -scale [330.0 -737.0 523.0 -737.0 0.0 0.0 12 0.0 m]
 
+point 150.5269 951.3984 u:flag -align bl -attr text 6 -attr code 5
+point 679.7398 688.9687 u:flag -align r -attr text 5 -attr code 5
 line wall 
   713.0 560.0
   713.0 560.0 707.0 578.0 705.0 587.0
@@ -264,7 +265,7 @@ point 400.0 830.0 station -name 28
 endscrap
 
 
-scrap monatip2-3p -scale [330.0 -737.0 523.0 -737.0 0.0 0.0 12 0.0 m]
+scrap monatip2-3p -projection plan -scale [330.0 -737.0 523.0 -737.0 0.0 0.0 12 0.0 m]
 
 line wall 
   701.0 332.0

@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap galerijap_1 -projection plan -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 
-point 546.94 901.491 u:connectionmarker -align bl -attr code 18 -attr text "Mary's Cafe" -attr offset 0.95 -place top
+point 546.94 901.491 u:connection_marker -align bl -attr code 18 -attr text "Mary's Cafe" -attr offset 0.95 -place top
 line rock-border -close on
   505.0 912.75
   505.75 909.25
@@ -243,7 +243,6 @@ endscrap
 
 scrap galerijap_4 -projection plan -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 
-point 676.4888 771.963 u:connectionmarker -align r -attr text "to the Stile" -attr offset 0.7 -attr code 6
 point 644.5367 746.4013 label -align br -attr level 3 -scale l -text "Knot Very Good"
 line label -text "Knot Very Good"
   549.25 627.0

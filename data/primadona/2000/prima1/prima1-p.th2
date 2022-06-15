@@ -1017,7 +1017,7 @@ line pit
   2519.75 1392.5 2500.5 1405.25 2482.75 1400.25
 endline
 
-point 2554.33 1334.0 label -align r -attr level 4 -scale xs -text p25
+point 2554.33 1334.0 label -align r -attr level 4 -scale xs -text P25
 line pit
   2576.0 1302.0
   2567.0 1319.0 2518.75 1353.25 2511.75 1362.25
@@ -1509,11 +1509,11 @@ endscrap
 
 scrap prima1-4p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
 
-point 2728.95 603.408 u:connectionmarker -align r -attr offset 0.2 -attr text "to Alkatraz" -attr code 2
-point 2719.6 639.384 label -align r -attr level 4 -scale xs -text c2
-point 2680.98 858.078 label -align r -attr level 4 -scale xs -text p6
-point 2523.74 1090.54 label -align tl -attr level 4 -scale xs -text p20
-point 2634.49 950.384 label -align r -attr level 4 -scale xs -text p8
+point 2728.95 603.408 u:connection_marker -align r -attr offset 0.2 -attr text "to Alkatraz" -attr code 2
+point 2719.6 639.384 label -align r -attr level 4 -scale xs -text C2
+point 2680.98 858.078 label -align r -attr level 4 -scale xs -text P6
+point 2523.74 1090.54 label -align tl -attr level 4 -scale xs -text P20
+point 2634.49 950.384 label -align r -attr level 4 -scale xs -text P8
 point 2613.25 980.0 gradient -orientation 265.00000394756506
 point 2617.0 1013.62 gradient -orientation 265.00000394756506
 line wall -subtype invisible

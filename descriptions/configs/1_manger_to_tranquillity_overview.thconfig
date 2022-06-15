@@ -9,7 +9,9 @@ input ../../layouts/mods.thl
 
 # This the overview, making everything grey, apart from the highlighed 'entrance to cafe'
 lookup map:manger_to_tranquillity_overview
-	m-manger_to_tranquillity-p@primadona.primadona_ubend_monatip.system_migovec  [100 0 0] "Manger to Tranquillity Base"
+	m-manger_to_tranquillity-top-p@primadona.primadona_ubend_monatip.system_migovec  [100 0 0] "Manger to Tranquillity Base"
+	m-manger_to_tranquillity-bottom-p@primadona.primadona_ubend_monatip.system_migovec  [100 0 0] "Manger to Tranquillity Base"
+
 	[] [40 40 40] "rest"
 endlookup
 

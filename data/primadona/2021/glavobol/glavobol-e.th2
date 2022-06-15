@@ -84,7 +84,7 @@ scrap glavobol-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 
 
 	point 199.457 461.284 label -align bl -attr level 2 -scale l -text Glavobol
 
-	point 299.457 351.284 u:connectionmarker -attr code 15 -attr text "possibly to Street-wise Hercules?" -align br -attr offset 0.25
+	point 299.457 351.284 u:connection_marker -attr code 15 -attr text "possibly to Street-wise Hercules?" -align br -attr offset 0.25
 
 	line wall
 		435.7149 322.5011

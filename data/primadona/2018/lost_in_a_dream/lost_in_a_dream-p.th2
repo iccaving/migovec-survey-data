@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap lost_in_a_dream-p1 -projection plan -scale [327.0 -733.0 530.0 -734.0 0.0 0.0 12 0.0 m]
 
-point 528.2097 931.1479 u:connectionmarker -align r -attr text "to Pivnica" -attr offset 0.5 -attr code 6
+point 428.2097 971.1479 label -align tl  -text "Pivnica" -scale l -attr level 4
 line wall -subtype invisible
   383.0 709.0
   407.0 727.0
@@ -29,7 +29,7 @@ line wall -id s1_l2
   493.0 908.0
 endline
 
-line wall 
+line wall
   407.0 727.0
   407.0 727.0 384.0 736.0 380.0 738.0
   376.0 740.0 369.0 749.0 366.0 752.0
@@ -63,7 +63,7 @@ line border -close on -id l52-198-58
   387.0 873.5
 endline
 
-line wall 
+line wall
   394.0 927.0
   394.0 927.0 382.0 921.5 380.0 918.0
   378.0 914.5 372.0 916.0 371.0 912.0
@@ -96,10 +96,11 @@ endscrap
 
 
 scrap lost_in_a_dream-p2 -projection plan -scale [327.0 -733.0 530.0 -734.0 0.0 0.0 12 0.0 m]
+point 530.9919 650.4491 u:flag -align r -attr text "3" -attr code 4
 
-point 524.9919 750.4491 label -align r -attr level 4 -text "Freudian Slip"
+point 524.9919 750.4491 u:connection_marker -align r -attr text "Freudian Slip" -attr offset 0.9
 point 499.75 712.75 low-end -align b
-line wall 
+line wall
   458.75 726.75
   458.75 726.75 476.0 734.75 478.0 734.75
   480.0 734.75 487.37 739.56 490.0 738.25
@@ -107,7 +108,7 @@ line wall
   496.63 722.58 496.0 718.0 496.0 718.0
 endline
 
-line floor-step 
+line floor-step
   490.0 738.25
   501.25 736.75 500.75 733.0 507.75 738.0
 endline
@@ -141,7 +142,7 @@ line border -close on -id l76-364-206
   505.0 750.0 507.5 758.25 505.75 759.25
 endline
 
-line floor-step 
+line floor-step
   516.25 767.75
   516.25 767.75 488.0 773.75 485.0 771.0
 endline
@@ -162,7 +163,7 @@ line wall -id s2_l3
   451.75 742.0 434.5 729.5 434.5 729.5
 endline
 
-line wall 
+line wall
   383.0 709.0
   383.0 709.0 377.0 699.0 382.0 696.0
   387.0 693.0 417.0 678.0 422.0 675.0
@@ -183,7 +184,7 @@ line wall
   410.0 501.0 400.0 493.0 400.0 493.0
 endline
 
-line wall 
+line wall
   434.5 729.5
   434.5 729.5 422.0 719.0 419.0 721.0
   416.0 723.0 407.0 727.0 407.0 727.0
@@ -230,23 +231,23 @@ line border -close on -id l44-295-257
 endline
 
 point 448.0 655.0 water-flow -orientation 152.1999824337398
-line pit 
+line pit
   466.0 658.0
   466.0 658.0 427.0 699.0 428.0 654.0
 endline
 
-line pit 
+line pit
   445.0 703.0
   445.0 703.0 429.0 726.0 419.0 721.0
   409.0 716.0 392.0 728.0 382.0 696.0
 endline
 
-line pit 
+line pit
   485.0 613.0
   485.0 613.0 465.0 611.0 478.0 582.0
 endline
 
-line wall 
+line wall
   421.0 477.0
   430.0 509.0
   446.0 525.0
@@ -280,7 +281,7 @@ endscrap
 scrap lost_in_a_dream-p3 -projection plan -scale [327.0 -733.0 530.0 -734.0 0.0 0.0 12 0.0 m]
 
 point 381.0 384.0 water-flow -orientation 189.79997082721113
-line pit 
+line pit
   402.0 397.0
   403.0 411.0 388.0 418.0 359.0 387.0
 endline
@@ -321,12 +322,12 @@ line border -close on -id l67-267-486
   408.0 447.5 409.25 451.5 409.25 451.5
 endline
 
-line pit 
+line pit
   411.0 459.0
   406.0 480.0 406.0 492.0 379.0 487.0
 endline
 
-line wall 
+line wall
   400.0 493.0
   400.0 493.0 385.0 491.0 379.0 487.0
   373.0 483.0 365.0 461.0 368.0 457.0
@@ -342,7 +343,7 @@ line wall
   448.0 339.0 458.0 338.0 458.0 338.0
 endline
 
-line wall 
+line wall
   475.0 350.0
   475.0 350.0 459.0 360.0 454.0 359.0
   449.0 358.0 422.0 360.0 422.0 360.0
@@ -366,4 +367,3 @@ point 418.0 413.0 station -name 5
 point 388.0 420.0 station -name 4
 point 464.0 348.0 station -name 1
 endscrap
-

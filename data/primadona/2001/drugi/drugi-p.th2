@@ -93,12 +93,12 @@ line rock-border -close on
   613.8222 521.9852
 endline
 
-line pit 
+line pit
   629.0127 586.9936
   629.0127 586.9936 613.4147 588.267 602.2733 574.8972
 endline
 
-line pit 
+line pit
   580.3088 596.2251
   580.3088 596.2251 570.1224 607.3665 550.0678 593.6785
 endline
@@ -189,7 +189,7 @@ line rock-border -close on
   590.9727 616.9163
 endline
 
-line contour 
+line contour
   586.1361 603.4681
   586.1361 604.3684 584.673 612.3592 583.2099 614.6101
   581.7468 616.861 579.2708 621.2502 575.2192 622.7133
@@ -331,7 +331,7 @@ line rock-border -close on
   567.9037 661.5415
 endline
 
-line floor-step 
+line floor-step
   536.1771 717.2731
   536.1771 717.2731 540.5 722.5 541.0 736.0
 endline
@@ -352,7 +352,7 @@ line rock-border -close on
   550.0 704.5
 endline
 
-line wall 
+line wall
   586.0 645.0
   586.0 645.0 583.0 649.0 581.0 653.0
   579.0 657.0 568.8967 669.0738 568.8967 669.0738
@@ -367,7 +367,7 @@ line wall
   530.9484 739.0129
 endline
 
-line wall 
+line wall
   526.9484 716.1476
   538.0 714.0
   546.2767 704.0
@@ -403,68 +403,68 @@ endscrap
 scrap drugip_3 -projection plan -scale [328.0 -734.0 499.0 -734.0 0.0 0.0 15 0.0 m]
 
 point 491.6286 366.4812 label -align br -attr level 4 -scale xs -text grabby
-point 642.2486 513.8353 label -align r -attr level 4 -scale xs -text p30
+point 642.2486 513.8353 label -align r -attr level 4 -scale xs -text P30
 point 580.771 661.7658 label -align tr -attr level 4 -scale xs -text "<lang:en>crawl"
 point 495.3228 779.1598 label -align tr -attr level 3 -scale l -text "Drugi<br>Vhod"
-line u:texture 
+line u:texture
   586.8114 558.4499
   592.2135 549.4463
 endline
 
-line u:texture 
+line u:texture
   576.6823 540.2176
   586.3612 533.9151
 endline
 
-line u:texture 
+line u:texture
   580.959 550.1216
   588.6121 542.6936
 endline
 
-line u:texture 
+line u:texture
   591.0881 561.151
   595.5899 552.8227
 endline
 
-line u:texture 
+line u:texture
   606.8444 571.5052
   611.3462 553.9481
 endline
 
-line u:texture 
+line u:texture
   624.1764 579.3834
   617.6488 552.8227
 endline
 
-line u:texture 
+line u:texture
   638.8073 570.8299
   624.6266 549.4463
 endline
 
-line u:texture 
+line u:texture
   640.3829 547.8707
   627.5528 543.594
 endline
 
-line u:texture 
+line u:texture
   639.7077 559.1252
   639.7077 559.1252 642.1837 567.0034 636.5564 573.0808
   630.9291 579.1583 622.8259 578.9332 622.8259 578.9332
 endline
 
-line u:texture 
+line u:texture
   600.0917 564.3023
   600.0917 564.3023 595.1397 565.4278 588.6121 559.3503
   582.0845 553.2729 576.6823 535.9409 576.6823 535.9409
 endline
 
-line u:texture 
+line u:texture
   599.8666 561.151
   599.8666 561.151 594.4644 560.2507 591.5383 555.5238
   588.6121 550.7969 579.6085 531.8892 579.6085 531.8892
 endline
 
-line u:texture 
+line u:texture
   631.8295 512.7565
   631.8295 512.7565 639.0324 541.7932 626.6524 549.2212
   614.2724 556.6492 604.1433 559.3503 597.6157 555.5238
@@ -472,39 +472,39 @@ line u:texture
   581.4092 514.5573 581.4092 514.1071 581.4092 514.1071
 endline
 
-line u:texture 
+line u:texture
   636.7815 520.4096
   636.7815 521.31 637.0066 548.0958 630.0288 559.1252
   623.051 570.1547 602.5677 568.3539 602.5677 568.3539
 endline
 
-line u:texture 
+line u:texture
   639.7077 534.5903
   639.7077 535.4907 636.7815 568.8041 630.0288 573.0808
   623.2761 577.3576 603.0179 571.055 603.0179 571.055
 endline
 
-line pit 
+line pit
   491.8141 370.3726
   491.6549 371.3276 490.5408 380.8774 473.8287 387.0847
 endline
 
-line pit 
+line pit
   515.2111 408.0943
   515.2111 408.0943 505.6613 415.7341 493.2466 412.0734
 endline
 
-line pit 
+line pit
   532.5599 421.464
   532.5599 421.464 547.0437 434.197 530.0132 439.7677
 endline
 
-line floor-step 
+line floor-step
   568.849 447.8851
   568.849 447.8851 563.1192 453.2966 554.8427 461.8914
 endline
 
-line floor-step 
+line floor-step
   601.3183 491.8141
   601.3183 491.8141 592.0869 501.3639 579.0355 508.0487
 endline
@@ -565,4 +565,3 @@ point 429.0 356.0 station -name 2
 point 451.0 366.0 station -name 3
 point 617.75 539.25 station -name 7
 endscrap
-

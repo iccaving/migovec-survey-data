@@ -41,11 +41,15 @@ map m-drugi_to_cafe-p -projection plan -title "Drugi Vhod to Mary's Cafe"
 	m-all-p@risa2
 endmap
 
-map m-manger_to_tranquillity-p -projection plan
+map m-manger_to_tranquillity-top-p -projection plan
 	m2p@zima00
 	m3p@TTTr
 	m2p@TTTr
+endmap
+
+map m-manger_to_tranquillity-bottom-p -projection plan
 	m-all-p@buckwheat
+	m1p@pivnica_resurvey
 	m2p@pivnica_resurvey
 	m3p@pivnica_resurvey
 	m1p@pivnica_2_resurvey

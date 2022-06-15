@@ -39,26 +39,26 @@ source
 		point 32 -30 label -align tr -text "no code, no rgb"
 		point 42 -30 label -align tr -text "attr rgb (0,1,0)"
 
-		point 0 0 u:connectionmarker -attr code 0
-		point 10 0 u:connectionmarker -attr code 1
-		point 20 0 u:connectionmarker -attr code 2
-		point 30 0 u:connectionmarker -attr code 3
-		point 40 0 u:connectionmarker -attr code 4
-		point 0 -10 u:connectionmarker -attr code 5
-		point 10 -10 u:connectionmarker -attr code 6
-		point 20 -10 u:connectionmarker -attr code 7
-		point 30 -10 u:connectionmarker -attr code 8
-		point 40 -10 u:connectionmarker -attr code 9
-		point 0 -20 u:connectionmarker -attr code 10
-		point 10 -20 u:connectionmarker -attr code 11
-		point 20 -20 u:connectionmarker -attr code 12
-		point 30 -20 u:connectionmarker -attr code 13
-		point 40 -20 u:connectionmarker -attr code 14
-		point 0 -30 u:connectionmarker -attr code 15
-		point 10 -30 u:connectionmarker -attr code 16
-		point 20 -30 u:connectionmarker -attr code 17
-		point 30 -30 u:connectionmarker
-		point 40 -30 u:connectionmarker -attr rgb (0,1,0)
+		point 0 0 u:connection_marker -attr code 0
+		point 10 0 u:connection_marker -attr code 1
+		point 20 0 u:connection_marker -attr code 2
+		point 30 0 u:connection_marker -attr code 3
+		point 40 0 u:connection_marker -attr code 4
+		point 0 -10 u:connection_marker -attr code 5
+		point 10 -10 u:connection_marker -attr code 6
+		point 20 -10 u:connection_marker -attr code 7
+		point 30 -10 u:connection_marker -attr code 8
+		point 40 -10 u:connection_marker -attr code 9
+		point 0 -20 u:connection_marker -attr code 10
+		point 10 -20 u:connection_marker -attr code 11
+		point 20 -20 u:connection_marker -attr code 12
+		point 30 -20 u:connection_marker -attr code 13
+		point 40 -20 u:connection_marker -attr code 14
+		point 0 -30 u:connection_marker -attr code 15
+		point 10 -30 u:connection_marker -attr code 16
+		point 20 -30 u:connection_marker -attr code 17
+		point 30 -30 u:connection_marker
+		point 40 -30 u:connection_marker -attr rgb (0,1,0)
 
 		point 0 0 station -name 1 -visibility off
 		point 0 50 station -name 2 -visibility off

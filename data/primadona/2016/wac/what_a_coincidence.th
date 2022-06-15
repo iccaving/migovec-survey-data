@@ -1,46 +1,46 @@
 encoding  utf-8
 survey wac -title "What a Coincidence: connection with the old shaft series"
-	
+
 	input "what_a_coincidence-p.th2"
 	input "what_a_coincidence-e.th2"
-	
-	map   m-all-e -projection extended
+
+	map m-all-e -projection extended
 		what_a_coincidence-e3
 		what_a_coincidence-e1
 		what_a_coincidence-e2
 	endmap
-	
+
 	map m-all-p -projection plan
-		mwac-p1
-		mwac-p2
-		mwac-p3
+		m1p
+		m2p
+		m3p
 	endmap
-	
-	map mwac-p1 -projection plan
+
+	map m1p -projection plan
 		wacp_1
 	endmap
-	
-	map mwac-p2  -projection plan
+
+	map m2p  -projection plan
 		wacp_2
 	endmap
-	
-	map mwac-p3 -projection plan
+
+	map m3p -projection plan
 		wacp_3
 	endmap
-	
+
 	join wacp_1 wacp_2
 	join wacp_2 wacp_3
-	
-	
+
+
 	centreline
 		date 2016.07.23
 		explo-date 2016.07.23
 		explo-team "Kenneth Tan"
 		explo-team "Jack Hare"
-		
+
 		team "Kenneth Tan" insts notes
 		team "Jack Hare" notes
-		
+
 		#Page 1/3
 		extend right
 		1  2 8.73  181 +44
@@ -86,8 +86,8 @@ survey wac -title "What a Coincidence: connection with the old shaft series"
 		extend left
 		28 29  17.30 343 +01
 		29 30  7.60  339 -14
-		
-		
+
+
 		#NOTES
 		#Stn 1 is base of blue and white rope
 		#3 is y-hang knot
@@ -101,8 +101,7 @@ survey wac -title "What a Coincidence: connection with the old shaft series"
 		#24 is start of muddy crawl 2
 		#25 is chamber after end of muddy crawl
 		#30 is colony stn 9
-		
-	endcentreline
-	
-endsurvey
 
+	endcentreline
+
+endsurvey
