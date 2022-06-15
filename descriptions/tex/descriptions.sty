@@ -1,15 +1,15 @@
 
-\def\FullWidth{162.8mm}
-\def\TwoColumnWidth{135mm}
-\def\TextWidth{142.8mm}
+\def\FullWidth{210mm}
+\def\TwoColumnWidth{190mm}
+\def\TextWidth{190mm}
 
 %\requirepackage{ifthen}
 
 
 \newcommand{\TopFullWidthFigure}[6]{%
 \begin{figure}[!ht]
-  \vspace{-0.4in}
-  \hspace{-10.5mm}
+  \vspace{-30mm}
+  \hspace{-20.5mm}
   \includegraphics[width=\FullWidth]{#1}
 \end{figure}
 %\fullwidthcaption{#2}{#3}{#4}{#5}{0em}{#6}
@@ -32,6 +32,7 @@
 
 \newcommand{\CenteredFigure}[1]{
 \begin{figure}[!htbp]
+  \hspace{-10.5mm}
   \includegraphics[width=\TextWidth]{#1}
 \end{figure}
 }

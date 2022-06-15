@@ -1,4 +1,4 @@
-\documentclass[twoside,9pt]{article}
+\documentclass[twoside,11pt]{article}
 \usepackage{fontenc}
 \usepackage{fontspec}
 \usepackage{hyperref}
@@ -13,10 +13,10 @@
 \usepackage{pgfkeys}
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 \usepackage[%
-papersize={162.8mm,231mm},%
+papersize={210mm,297mm},%
 columnsep=2mm,%
 headsep=12pt,%
-inner=10mm,outer=10mm,top=0.3in,bottom= 0.8in, marginparwidth=28mm]{geometry}
+inner=20mm,outer=20mm,top=15mm,bottom= 20 mm, marginparwidth=28mm]{geometry}
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage{graphicx}
@@ -79,15 +79,15 @@ inner=10mm,outer=10mm,top=0.3in,bottom= 0.8in, marginparwidth=28mm]{geometry}
 \renewcommand\section{\@startsection {section}{1}{0pt}%
                                    {1.2\baselineskip  plus .3\baselineskip minus .1\baselineskip}%
                                    {5pt\@afterindentfalse}%
-                                   {\clearpage \sf\Large\bfseries\raggedright }}
+                                   {\clearpage \sf\Huge\bfseries\raggedright }}
 \renewcommand\subsection{\@startsection {subsection}{2}{0pt}%
                                      {15pt plus .3\baselineskip}%
                                      {1pt\@afterindentfalse}%
-                                     { \sf\large\bfseries\raggedright}}
+                                     { \sf\Large\bfseries\raggedright}}
 \renewcommand\subsubsection{\@startsection {subsubsection}{3}{2pt}%
                                      {2pt plus .3\baselineskip}%
                                      {3pt\@afterindentfalse}%
-                                     {\sf\normalsize\bfseries\raggedright}}
+                                     {\sf\large\bfseries\raggedright}}
 \renewcommand\paragraph{\@startsection {paragraph}{4}{0pt}%
                                      {1pt plus .3\baselineskip}%
                                      {1pt\@afterindenttrue}%
@@ -104,11 +104,11 @@ inner=10mm,outer=10mm,top=0.3in,bottom= 0.8in, marginparwidth=28mm]{geometry}
 
 
                  \fancyhf{}% clear all header and footer fields
-                 \fancyfoot[LE]{\footnotesize \textcolor{bluegrey}{ \textbf{\thepage}}~---~\textsf{\textit{JSPDT}/ICCC~---~\textbf{Tolminski Migovec}}}
-                 \fancyfoot[RO]{\footnotesize \textbf{Tolminski Migovec}~---~\textit{JSPDT}/ICCC~---~\textbf{\thepage}}
+                 \fancyfoot[LE]{\large \textcolor{bluegrey}{ \textbf{\thepage}}~---~\textsf{\textit{JSPDT}/ICCC~---~\textbf{Tolminski Migovec}}}
+                 \fancyfoot[RO]{\large \textbf{Tolminski Migovec}~---~\textit{JSPDT}/ICCC~---~\textbf{\thepage}}
 
-                 \fancyfoot[RE]{ \footnotesize  \rightmark} % except the center
-                  \fancyfoot[LO]{ \footnotesize  \rightmark} % except the center
+                 \fancyfoot[RE]{ \large  \rightmark} % except the center
+                  \fancyfoot[LO]{ \large  \rightmark} % except the center
                  \renewcommand{\headrulewidth}{0pt}%
                  \renewcommand{\footrulewidth}{0.0pt}%
 
