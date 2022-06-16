@@ -5,16 +5,16 @@ The main route between _Camp Manger_ (-350 m) and _Tranquillity Base_ (-650 m) i
 ### Camp Manger to Pivnica
 
 Downstream of Camp Manger a short 1 m drop onto a wet mud bank is followed by a rigged traverse line over ledges, with the floor gradually dropping away towards the top of _Ajdovščina_ (\numflag{1}{c4}).
-The first pitch lands on wide ledge, with a traverse across some drips.
+The first pitch lands on a wide ledge, with a traverse across some drips.
 Further drops lead to a rebelay with a rope leading into a small window. _This connects into_ What a Coincidence! _passage._
 Staying in the main pitch, a pendulum reaches yet another ledge, and a final 20 m drop completes the descent of _Ajdovščina_, into a chamber containing one huge fallen boulder (\numflag{2}{c4}).
-Staying first on the right hand-side of the chamber, a way underneath this large block leads to a short drop and crawl underneath blocks to the sound of water and a pitch head, the start of _Pivnica_.
+Staying first on the right-hand-side of the chamber, a way underneath this large block leads to a short drop and crawl underneath blocks to the sound of water and a pitch head, the start of _Pivnica_.
 
 ### Pivnica to Freudian Slip
 
 Following the ropes, a series of rebelays away from the main water lead to the main 25 m drop of Pivnica. _At the top of this pitch, a window can be gained, leading to_ Snakebite _passage, eventually rejoining the deep route at the beginning of_ Penny Falls.
 The main _Pivnica pitch lands next to a loud water chamber.
-\_Right at the landing, a low passage leads off down to a narrow meander, and beyond a wet squeeze, a short pitch heralds the start of_ Lost in a Dream .
+\_Right at the landing, a low passage leads off down to a narrow meander, and beyond a wet squeeze, a short pitch heralds the start of_ Lost in a Dream.
 Ignoring this and heading towards the water, the ropes diverge between a wet pit (the way to _Donji Milanovac_) and a traverse into a dry alcove where a squeeze between boulders and walls (_Freudian Slip_\numflag{3}{c4}) can be accessed.
 
 ### Freudian Slip to Penny Falls
@@ -26,7 +26,7 @@ Further down, a continuing series of short drops into stagnant pools makes up th
 
 ### Penny Falls to Klic Globin
 
-_Penny Falls_ ends when a 8 m pitch joins into a tight, low meandering passage (_Tiger Tiger_, \numflag{4}{c4}).
+_Penny Falls_ ends when an 8 m pitch joins into a tight, low meandering passage (_Tiger Tiger_, \numflag{4}{c4}).
 After some short 1 to 2 m downclimbs, the passage opens up to stooping height at the top of a 15 m pitch (_Deeper than Most_).
 This pitch lands on a balcony overlooking the 60 m deep _Klic Globin_ pitch.
 At the bottom, a squeeze between boulders and bedrock can be found on the opposite side of the landing, next to a car-sized boulder with a flat surface. _This leads to_ Artemis.
