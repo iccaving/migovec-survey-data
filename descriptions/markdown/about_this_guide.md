@@ -9,7 +9,7 @@ header-includes:
 
 ## Selected trips under the Hollow Mountain
 
-With 44\,km in length at the time of writing, System Migovec is a major Alpine system of NW Slovenia.
+With \SI{44}{km} in length at the time of writing, System Migovec is a major Alpine system of NW Slovenia.
 It ranks among the 100 longest worldwide, a remarkable feat after more than forty years of dedicated expeditions.
 The full description of every metre in this extensive cave system is beyond the scope of this guide. Countless passages saw the light of one or two cavers only, who, running low on energy and motivation, decided that this final indomitable crawl "was it".
 

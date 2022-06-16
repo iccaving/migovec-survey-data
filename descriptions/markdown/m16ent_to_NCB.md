@@ -5,7 +5,7 @@ header-includes:
 - \usepackage{descriptions}
 ---
 
-## M16 entrance to Mona tip -- NCB connection passage
+## M16 entrance to Mona tip -- NCB
 
 ### M16 Entrance to Brezno Strahov
 

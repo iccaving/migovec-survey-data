@@ -1,0 +1,59 @@
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A SURVEY DATA FILE FOR:                             |
+#                                                                                  |
+#                      PRIMADONA, MONATIP, UBEND                                   |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
+encoding  utf-8
+
+# start the survey definition
+survey primadona_ubend_mona_tip -title "<bf>Primadona, Mona tip, Ubend-571, Belladonna<bf>"
+	# input the individual cave data files
+	input "./primadona/primadona.th"
+	input "./mona_tip/mona_tip.th"
+	input "./ubend/ubend.th"
+	input "./belladonna/belladonna.th"
+
+	# input map definitions
+	input "./primadona_ubend_mona_tip-e.thm"
+	input "./primadona_ubend_mona_tip-p.thm"
+
+	# EQUATE commands for CONNECTIONS
+	# primadona and U-Bend
+	equate 5@drainpipe.ubend 8@drugi.primadona
+
+	# mona_tip and primadona connection
+	equate 1@therock.mona_tip 8@prima1.primadona
+	equate 25@therock.mona_tip 24@prima2.primadona
+	equate BV6@brez_volje.primadona 2@doubletime.mona_tip
+
+	# Belladonna and primadona connection
+	equate shit@belladonna 35@prima1.primadona
+
+	# JOIN commands for the sketches at connection points
+	# Primadona to Monatip at Alkatraz via 'The Rock'
+	join s5_l1@prima1.primadona:end s1_l1@therock.mona_tip:end
+	join s5_l2@prima1.primadona:end s1_l2@therock.mona_tip:0
+	join s1_l1a@prima2.primadona:0 s3_l1@therock.mona_tip:end
+	join s1_l2@prima2.primadona:end s3_l2@therock.mona_tip:0
+
+	join dt_e1_l1@doubletime.mona_tip bv_e1_l1@brez_volje.primadona
+	join dt_e1_l2@doubletime.mona_tip bv_e1_l2@brez_volje.primadona
+
+	join therock-2e@therock.mona_tip alkatraz_disto_resurvey-1s@alkatraz_disto_resurvey.mona_tip
+
+	join therock-1e@therock.mona_tip prima1-3e@prima1.primadona
+
+	# joins for Ubend to Primadona?
+
+	# join Belladona Primadona
+	join drugi-1e@drugi.primadona belladonna-1s@belladonna
+	join drugi-1e@drugi.primadona drainpipe-1e@drainpipe.ubend
+	join drugi-2e@drugi.primadona drainpipe-1e@drainpipe.ubend
+	join belladonna-1p@belladonna drugip_1@drugi.primadona
+	#join s1_l1@belladonna ent_l1@prima1.primadona
+
+endsurvey
