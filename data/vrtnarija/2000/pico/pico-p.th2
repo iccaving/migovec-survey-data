@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap pico-p1 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-1p -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 	
 	line wall:invisible
 		537.8484 720.1188
@@ -50,7 +50,7 @@ scrap pico-p1 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 
 endscrap
 
 
-scrap pico-p2 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-2p -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 	
 	area u:smallblocks -attr scale 0.6
 	blocks
@@ -153,7 +153,7 @@ scrap pico-p2 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 
 endscrap
 
 
-scrap pico-p3 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-3p -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 	
 	point 508.328 620.001 station -name 6
 	line wall
@@ -226,7 +226,7 @@ scrap pico-p3 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 
 endscrap
 
 
-scrap pico-p4 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-4p -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 	
 	point 529.365 501.988 station -name 2
 	line pit -close on -outline in
@@ -294,7 +294,7 @@ scrap pico-p4 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 
 endscrap
 
 
-scrap pico-p5 -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
+scrap pico-5p -projection plan -scale [0.0 0.0 781.7072921978582 1024.0 0.0 0.0 104.79 137.27]
 	
 	line wall
 		542.0 478.5

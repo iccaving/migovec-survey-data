@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {130.000000 1 1.0} {970.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2017/more_like_welding/more_like_welding-p.gif" 0 {}
 
-scrap more_like_welding-e1 -projection extended -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
+scrap more_like_welding-1e -projection extended -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
 
 point 782.7972 628.1448 u:connection_marker -align r -attr code 2 -id mightyfine -attr text "to Mighty Fine Indeed"
 
@@ -53,7 +53,7 @@ point 776.885 602.938 station -name 3
 endscrap
 
 
-scrap more_like_welding-e2 -projection extended -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
+scrap more_like_welding-2e -projection extended -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
 
 line wall
   2117.9226 644.0742

@@ -1,0 +1,48 @@
+
+map  m-all-e -projection extended
+	m-all-e@wishing_well
+	m-all-e@wishing_well2
+	m-all-e@sad_face
+	m-all-e@extra_dunkel
+	m-all-e@therock
+	m-all-e@mona_tip1
+	m-all-e@cloacamaxima
+
+	m-all-e@mona_tip2
+	m-all-e@aleksandrija
+	m-all-e@alkatraz_disto_resurvey
+	m-all-e@mona_tip3
+	m-all-e@mona_tip5
+
+	m-all-e@well_hung
+	m-all-e@broken_hammer
+	m-all-e@mona_tip4
+	#m-all-e@alkatraz
+	m-all-e@doubletime
+	m-all-e@mona_tip6
+	m-all-e@mona_tip7
+	m-all-e@mona_tip8
+	m-all-e@mona_tip9
+	m-all-e@mona_tip10
+	m-all-e@mona_tip11
+endmap
+
+map  m-mona_tip_main-e -projection extended
+	m-all-e@alkatraz_disto_resurvey
+endmap
+
+map m-mona_tip_m16_con-e -projection extended #relevant passages for connections with M16
+m-all-e@wishing_well
+m-all-e@wishing_well2
+m-all-e@sad_face
+#m-all-e@extra_dunkel
+m-all-e@mona_tip11
+endmap
+
+
+centerline
+#Monatip M16 Wishing Well connection
+extend left 13@wishing_well 12@wishing_well
+extend left 12@wishing_well 11@wishing_well
+extend right 1@wishing_well 2@wishing_well
+endcenterline

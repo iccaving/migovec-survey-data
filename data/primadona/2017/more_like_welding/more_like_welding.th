@@ -5,29 +5,29 @@ survey more_like_welding -title "More like Welding"
 	
 	
 	map  m-all-e -projection extended
-		more_like_welding-e2
-		more_like_welding-e1
+		more_like_welding-2e
+		more_like_welding-1e
 	endmap
 	
 	map m-all-p -projection plan
-		mmore_like_welding-p1
-		mmore_like_welding-p2
-		mmore_like_welding-p3
+		mmore_like_welding-1p
+		mmore_like_welding-2p
+		mmore_like_welding-3p
 	endmap
 	
-	map mmore_like_welding-p1 -projection plan
-		more_like_welding-p1
+	map mmore_like_welding-1p -projection plan
+		more_like_welding-1p
 	endmap
 	
-	map mmore_like_welding-p2 -projection plan
-		more_like_welding-p2
+	map mmore_like_welding-2p -projection plan
+		more_like_welding-2p
 	endmap
 	
-	map mmore_like_welding-p3 -projection plan
-		more_like_welding-p3
+	map mmore_like_welding-3p -projection plan
+		more_like_welding-3p
 	endmap
 	
-	join more_like_welding-p3 more_like_welding-p1
+	join more_like_welding-3p more_like_welding-1p
 	
 	centreline
 		date 2017.07.31

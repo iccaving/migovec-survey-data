@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 924.499986 863.249987
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap prima1-e1 -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m]
+scrap prima1-1e -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m]
 	
 	line rock-border -close on
 		420.4229 503.01
@@ -430,7 +430,7 @@ scrap prima1-e1 -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 1
 endscrap
 
 
-scrap prima1-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+scrap prima1-3e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 	
 	line wall -close on -outline in
 		1257.8394 462.9452
@@ -581,7 +581,7 @@ scrap prima1-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 endscrap
 
 
-scrap prima1-e2 -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m]
+scrap prima1-2e -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m]
 	
 	line wall:blocks -id p_e2_l1
 		720.4509 225.393

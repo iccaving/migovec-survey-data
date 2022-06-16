@@ -1,0 +1,66 @@
+encoding  utf-8
+survey upside_down_chamber -title "Upside Down Chamber"
+	input "upside_down_chamberp.th2"
+	input "upside_down_chamber-e.th2"
+	
+	map  m-all-e -projection extended
+		upside_down_chamber-1e
+	endmap
+	map m-all-p -projection plan
+		mupside_down_chamber-1p
+		mupside_down_chamber-2p
+	endmap
+	
+	map mupside_down_chamber-1p -projection plan
+		upside_down_chamberp_1
+	endmap
+	
+	map mupside_down_chamber-2p -projection plan
+		upside_down_chamberp_2
+	endmap
+	
+	centreline
+		date 2016.07.23
+		explo-date 2016.07.23
+		
+		explo-team "Arun Paul"
+		explo-team "Rhys Tyers"
+		
+		team "Arun Paul" insts tape
+		team "Rhys Tyers" notes
+		
+		units length meters
+		units compass clino degrees
+		data normal from to length compass clino
+		
+		#Page 1/1
+		extend left
+		1	2	12.00	322	+51
+		extend left
+		2	3	12.44	334	+27
+		extend left
+		3	4	3.82	320	+43
+		extend left
+		4	5	4.20	274	+14
+		extend left
+		5	6	13.00	345	+32
+		extend right
+		5	7	25.42	154	-02
+		extend right
+		7	8	4.83	170	+65
+		extend right
+		8	9	15.60	131	+39
+		extend right
+		9	10	25.30	144	+80
+		extend right
+		10	11	2.50	145	+34
+		
+		
+		#Stn 1 is PSS by drippy pitch lead.
+		#Stn 3 is dead bat
+		#Stn 5 is PSS, bolt at top of dead climb directly below is tight sharp rift - lead
+		#Stn 11 is cairn at top of Blue Danube and end of Colony
+	endcentreline
+endsurvey
+
+

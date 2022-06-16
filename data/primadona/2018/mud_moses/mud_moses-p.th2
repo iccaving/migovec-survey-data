@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 830.500000 866.750000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap mud_moses-p2 -projection plan -scale [0.0 0.0 943.3314616019818 1023.9999999999999 0.0 0.0 111.56 121.1]
+scrap mud_moses-2p -projection plan -scale [0.0 0.0 943.3314616019818 1023.9999999999999 0.0 0.0 111.56 121.1]
 
 	line gradient
 		12.9612 62.7616
@@ -133,7 +133,7 @@ scrap DELETE-ME-survey-legs-DUPLICATE_mud_moses-p -projection plan -scale [0.0 0
 endscrap
 
 
-scrap mud_moses-p1 -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+scrap mud_moses-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 	point 635.952 -719.989 remark -align tl -text "Below Knot Very Good" -attr level 6 -scale xs
 	line rock-edge -clip off -close on -outline none -visibility off

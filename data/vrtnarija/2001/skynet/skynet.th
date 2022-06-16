@@ -3,16 +3,16 @@ survey skynet -title "Skynet"
 	input skynet-p.th2
 	
 	map m-all-p -projection plan
-		mskynet-p1
-		mskynet-p2
+		mskynet-1p
+		mskynet-2p
 	endmap
 	
-	map mskynet-p1 -projection plan
-		skynet-p1
+	map mskynet-1p -projection plan
+		skynet-1p
 	endmap
 	
-	map mskynet-p2 -projection plan
-		skynet-p2
+	map mskynet-2p -projection plan
+		skynet-2p
 	endmap
 	
 

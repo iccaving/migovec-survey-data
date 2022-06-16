@@ -9,13 +9,13 @@ survey apple_crumble -title "Apple Crumble"
 	endmap
 	
 	map m-all-p -projection plan
-		apple_crumble-p1
-		apple_crumble-p2
-		apple_crumble-p3
+		apple_crumble-1p
+		apple_crumble-2p
+		apple_crumble-3p
 	endmap
 	
-	join apple_crumble-p1 apple_crumble-p2
-	join apple_crumble-p2 apple_crumble-p3
+	join apple_crumble-1p apple_crumble-2p
+	join apple_crumble-2p apple_crumble-3p
 	
 	centreline
 		#Window off Povezava great aven

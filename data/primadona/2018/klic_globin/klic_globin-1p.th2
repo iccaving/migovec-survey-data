@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 3326.000000 3810.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap klic_globin-p1 -projection plan -scale [0 0 100 0 0 0 1 0 m]
+scrap klic_globin-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
 point 1196.683 613.6743 u:flag -align r -attr text 5 -attr code 4
 line wall -subtype invisible
@@ -1177,7 +1177,7 @@ point 985.717 874.406 station -name 6
 endscrap
 
 
-scrap klic_globin-p3 -projection plan -scale [0 0 96 0 0 0 2000 0 inch]
+scrap klic_globin-3p -projection plan -scale [0 0 96 0 0 0 2000 0 inch]
 
 line wall -subtype invisible
   365.9391 1103.6417
@@ -1656,7 +1656,7 @@ endline
 endscrap
 
 
-scrap klic_globin-p2 -projection plan -scale [0 0 100 0 0 0 1 0 m]
+scrap klic_globin-2p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
 point 1180.4 752.292 station -name 7
 point 1182.55 748.107 station -name 8

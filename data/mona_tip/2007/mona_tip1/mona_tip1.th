@@ -1,0 +1,120 @@
+encoding  utf-8
+survey mona_tip1
+	
+	input "mona_tip1-p.th2"
+	input "mona_tip1-e.th2"
+	
+	map  m-all-e -projection extended
+		mona_tip1-s1
+	endmap
+	
+	map m-all-p -projection plan
+		mmona_tip1-1p
+		mmona_tip1-2p
+		mmona_tip1-5p
+		mmona_tip1-3p
+		mmona_tip1-4p
+	endmap
+	
+	map mmona_tip1-1p -projection plan
+		mona_tip1-1p
+	endmap
+	
+	map mmona_tip1-2p -projection plan
+		mona_tip1-2p
+	endmap
+	map mmona_tip1-3p -projection plan
+		mona_tip1-3p
+	endmap
+	
+	map mmona_tip1-4p -projection plan
+		mona_tip1-4p
+	endmap
+	
+	map mmona_tip1-5p -projection plan
+		mona_tip1-5p
+	endmap
+	
+	join mona_tip1-4p mona_tip1-5p
+	
+	
+	centreline
+		#cs EPSG:3794
+		
+		
+		date  2007.08.06
+		explo-date 2007.08.06
+		
+		team "Iztok Možir" insts notes
+		team "James Hooper" insts notes
+		
+		explo-team "Iztok Možir"
+		explo-team "James Hooper"
+		
+		units length meters
+		units compass clino degrees
+		#PAGE1
+		extend right
+		1 2 15.90 081 +05 #
+		extend left
+		3 2 5.29  210 -09 #
+		extend right
+		3 4 7.52  133 +07 #
+		extend left
+		5 4 6.95  311 -09 #
+		extend right
+		5 6 5.00  040 +15 #
+		extend vertical
+		6 7 1.50  - down  #
+		extend left
+		8 7 4.08  261 -17 #
+		extend right
+		8 9 3.84  121 +04 #
+		extend left
+		10  9 3.33  230 +02 #
+		extend right
+		10  11  2.78  103 -40 #
+		
+		#PAGE 2
+		#station 21 is bottom of fourth pitch (PSS)
+		#station 22 is bolt
+		#station 24 is bolt
+		#station 27 is PSS cairn in middle of chamber 30m+ aven above
+		extend right
+		11  12  3.60  168 -28 #
+		extend right
+		12  13  10.00 - down  #
+		extend left
+		14  13  11.55 322 -23 #
+		extend left
+		15  14  4.98  310 +03 #
+		extend vertical
+		15  16  14.10 - down  #
+		extend left
+		17  16  9.45  307 -34 #
+		extend left
+		18  17  8.28  295 +46 #
+		extend right
+		18  19  8.72  102 +33 #
+		extend right
+		19  20  3.21  153 +11 #
+		extend right
+		20  21  9.30  - down  #
+		
+		#PAGE 3
+		extend left
+		22  21  11.90 284 -70 #
+		extend right
+		22  23  10.50 104 +50 #
+		extend right
+		23  24  5.51  141 -07 #
+		extend vertical
+		24  25  10.00 - down  #
+		extend right
+		24  26  9.10  129 -14 #
+		extend left
+		27  26  7.53  285 +01 #
+	endcentreline
+	
+endsurvey
+

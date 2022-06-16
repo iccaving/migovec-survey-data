@@ -53,7 +53,7 @@ results = pool.map(get_drawn_length, loader.base_surveys)
 
 systems = [
     "system_migovec",
-    "primadona_ubend_monatip",
+    "primadona_ubend_mona_tip",
     "m2m16m18",
     "vrtnarija_vilinska",
 ]

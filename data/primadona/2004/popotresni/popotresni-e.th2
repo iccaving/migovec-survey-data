@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap popotresni-kak-e1 -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m] -projection extended
+scrap popotresni-kak-1e -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m] -projection extended
 
 line wall -subtype clay
   1522.9237 -339.5371
@@ -102,7 +102,7 @@ point 1616.9622 -376.986 station -name KAK1
 endscrap
 
 
-scrap popotresni-pop-e1 -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m] -projection extended
+scrap popotresni-pop-1e -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m] -projection extended
 
 line wall -subtype invisible
   1286.787 1002.1361
@@ -204,7 +204,7 @@ point 600.5464 613.3305 station -name POP25
 endscrap
 
 
-scrap popotresni-pop-e2 -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m] -projection extended
+scrap popotresni-pop-2e -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m] -projection extended
 
 line wall -subtype blocks
   2062.0583 201.3921
@@ -349,7 +349,7 @@ point 3390.9065 1093.3464 station -name POP1
 endscrap
 
 
-scrap popotresni-pop-e3 -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m] -projection extended
+scrap popotresni-pop-3e -scale [327.0 -736.0 529.0 -736.0 0 0 25 0 m] -projection extended
 
 endscrap
 

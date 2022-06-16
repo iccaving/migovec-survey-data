@@ -3,15 +3,15 @@ survey dogfish -title "Dogfish"
 	input "dogfish-e.th2"
 	
 	map m-all-p -projection plan
-		dogfish-p1
-		dogfish-p2
+		dogfish-1p
+		dogfish-2p
 	endmap
-	map mdogfish-p1 -projection plan
-		dogfish-p1
+	map mdogfish-1p -projection plan
+		dogfish-1p
 	endmap
 	
-	map mdogfish-p2 -projection plan
-		dogfish-p2
+	map mdogfish-2p -projection plan
+		dogfish-2p
 	endmap
 	
 	map  m-all-e -projection extended

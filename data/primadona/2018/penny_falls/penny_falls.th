@@ -3,15 +3,15 @@ survey penny_falls -title "Penny falls"
 	input "penny_falls-e.th2"
 	
 	map  m-all-e -projection extended
-		penny_falls-e1
+		penny_falls-1e
 	endmap
 	
 	map m-1-p -projection plan
-		penny_falls-p1
+		penny_falls-1p
 	endmap
 	
 	map m-2-p -projection plan
-		penny_falls-p2
+		penny_falls-2p
 	endmap
 	
 	map m-all-p -projection plan
@@ -19,7 +19,7 @@ survey penny_falls -title "Penny falls"
 		m-2-p
 	endmap
 	
-	join penny_falls-p2 penny_falls-p1
+	join penny_falls-2p penny_falls-1p
 	
 	centreline
 		date 2018.07.22

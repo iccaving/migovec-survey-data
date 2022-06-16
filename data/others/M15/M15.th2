@@ -298,10 +298,10 @@ scrap m15-1e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
 point 93.2621 -231.0787 label -text "Snow cone" -align l -scale s
 area snow
-  snow-e1
+  snow-1e
 endarea
 
-line border -close on -id snow-e1
+line border -close on -id snow-1e
   843.3336 -470.8325
   636.1503 -537.0458
   184.4051 -545.5894

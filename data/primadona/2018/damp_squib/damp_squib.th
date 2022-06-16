@@ -4,29 +4,29 @@ survey damp_squib -title "Damp Squib"
 	
 	
 	map m-all-p -projection plan
-		mdamp_squib-p4
-		mdamp_squib-p3
-		mdamp_squib-p2
-		mdamp_squib-p1
+		mdamp_squib-4p
+		mdamp_squib-3p
+		mdamp_squib-2p
+		mdamp_squib-1p
 	endmap
 	
 	map  m-all-e -projection extended
-		damp_squib-e1
+		damp_squib-1e
 	endmap
-	map mdamp_squib-p1 -projection plan
-		damp_squib-p1
-	endmap
-	
-	map mdamp_squib-p2 -projection plan
-		damp_squib-p2
+	map mdamp_squib-1p -projection plan
+		damp_squib-1p
 	endmap
 	
-	map mdamp_squib-p3 -projection plan
-		damp_squib-p3
+	map mdamp_squib-2p -projection plan
+		damp_squib-2p
 	endmap
 	
-	map mdamp_squib-p4 -projection plan
-		damp_squib-p4
+	map mdamp_squib-3p -projection plan
+		damp_squib-3p
+	endmap
+	
+	map mdamp_squib-4p -projection plan
+		damp_squib-4p
 	endmap
 	
 	centreline

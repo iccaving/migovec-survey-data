@@ -26,7 +26,7 @@ input "../../_layouts/mods.thl"
 source
 	map system_with_centreline -projection extended
 		m-all-e@M16.m2m16m18.system_migovec
-		m-all-e@primadona_ubend_monatip.system_migovec
+		m-all-e@primadona_ubend_mona_tip.system_migovec
 		m-all-e@M18.m2m16m18.system_migovec
 		M2@m2m16m18.system_migovec
 		M16@m2m16m18.system_migovec
@@ -63,15 +63,15 @@ endlayout
 
 language en # slo not yet supported
 export map -projection extended -o ../../_outputs/system_migovec_EE_ENG.pdf -layout ee -layout-debug station-names
-#export map -projection extended -o ../../_outputs/primadona_ubend_monatip_EE_ENG.svg -layout ee
+#export map -projection extended -o ../../_outputs/primadona_ubend_mona_tip_EE_ENG.svg -layout ee
 #language en
-#export map -projection extended -o ../../_outputs/primadona_ubend_monatip_EE_ENG.pdf -layout ee
-#export map -projection extended -o ../../_outputs/primadona_ubend_monatip_EE_ENG.svg -layout ee
+#export map -projection extended -o ../../_outputs/primadona_ubend_mona_tip_EE_ENG.pdf -layout ee
+#export map -projection extended -o ../../_outputs/primadona_ubend_mona_tip_EE_ENG.svg -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-#export model -o ../../_outputs/primadona_ubend_monatip.3d
+#export model -o ../../_outputs/primadona_ubend_mona_tip.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-#export model -o ../../_outputs/primadona_ubend_monatip.lox
+#export model -o ../../_outputs/primadona_ubend_mona_tip.lox

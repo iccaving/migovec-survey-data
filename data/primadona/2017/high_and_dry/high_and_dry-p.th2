@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap high_and_dry-p1 -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
+scrap high_and_dry-1p -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
 
 line wall 
   605.25 634.75
@@ -330,7 +330,7 @@ point 545.3617 598.0731 station -name 1
 endscrap
 
 
-scrap high_and_dry-p2 -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
+scrap high_and_dry-2p -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
 
 line wall -subtype invisible
   740.8255 575.5363

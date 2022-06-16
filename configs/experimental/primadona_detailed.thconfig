@@ -3,9 +3,9 @@ source ../../data/system_migovec.th
 
 source
   map m-local-p -projection plan
-    m-all-p@ubend.primadona_ubend_monatip.system_migovec
-    m-detailed-p@primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@belladonna.primadona_ubend_monatip.system_migovec
+    m-all-p@ubend.primadona_ubend_mona_tip.system_migovec
+    m-detailed-p@primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-p@belladonna.primadona_ubend_mona_tip.system_migovec
   endmap
 endsource
 select m-local-p

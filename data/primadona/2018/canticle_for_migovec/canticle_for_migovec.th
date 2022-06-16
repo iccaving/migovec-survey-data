@@ -4,27 +4,27 @@ survey canticle_for_migovec
 	input "canticle_for_migovec-p.th2"
 	input "canticle_for_migovec-e.th2"
 	
-	map mcanticle_for_migovec-p1 -projection plan
-		canticle_for_migovec-p1
+	map mcanticle_for_migovec-1p -projection plan
+		canticle_for_migovec-1p
 	endmap
 	
-	map mcanticle_for_migovec-p2 -projection plan
-		canticle_for_migovec-p2
+	map mcanticle_for_migovec-2p -projection plan
+		canticle_for_migovec-2p
 	endmap
 	
-	map mcanticle_for_migovec-p3 -projection plan
-		canticle_for_migovec-p3
+	map mcanticle_for_migovec-3p -projection plan
+		canticle_for_migovec-3p
 	endmap
 	
-	map mcanticle_for_migovec-p4 -projection plan
-		canticle_for_migovec-p4
+	map mcanticle_for_migovec-4p -projection plan
+		canticle_for_migovec-4p
 	endmap
 	
 	map m-all-p -projection plan
-		mcanticle_for_migovec-p1
-		mcanticle_for_migovec-p2
-		mcanticle_for_migovec-p4
-		mcanticle_for_migovec-p3
+		mcanticle_for_migovec-1p
+		mcanticle_for_migovec-2p
+		mcanticle_for_migovec-4p
+		mcanticle_for_migovec-3p
 	endmap
 	
 	map  m-all-e -projection extended

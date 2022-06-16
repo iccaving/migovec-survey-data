@@ -10,7 +10,7 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../primadona_ubend_monatip.th"
+source "../../primadona_ubend_mona_tip.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
@@ -19,7 +19,7 @@ input "../../_layouts/detailed-p.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-all-p@ad_aspera_per_aqua.primadona.primadona_ubend_monatip -map-level 0
+select m-all-p@ad_aspera_per_aqua.primadona.primadona_ubend_mona_tip -map-level 0
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1

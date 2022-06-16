@@ -22,7 +22,7 @@ import re
 # 
 # e.g. 
 # python3 initialise_map.py ../../vrtnarija.th vrtanrija
-# python3 initialise_map.py ../../../primadona_ubend_monatip.th monatip.primadona_ubend_monatip
+# python3 initialise_map.py ../../../primadona_ubend_mona_tip.th mona_tip.primadona_ubend_mona_tip
 #
 
 # Templates

@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap damp_squib-p1 -scale [0.0 0.0 874.7234842550524 1024.0 0.0 0.0 109.05 127.66]
+scrap damp_squib-1p -scale [0.0 0.0 874.7234842550524 1024.0 0.0 0.0 109.05 127.66]
 
 line label -text "Damp Squib"
   569.25 639.75
@@ -46,7 +46,7 @@ point 530.0653 530.9477 station -name 1
 endscrap
 
 
-scrap damp_squib-p2 -scale [0.0 0.0 874.7234842550524 1024.0 0.0 0.0 109.05 127.66]
+scrap damp_squib-2p -scale [0.0 0.0 874.7234842550524 1024.0 0.0 0.0 109.05 127.66]
 
 line pit 
   586.5 591.25
@@ -107,7 +107,7 @@ point 558.942 599.3694 station -name 6
 endscrap
 
 
-scrap damp_squib-p3 -scale [0.0 0.0 874.7234842550524 1024.0 0.0 0.0 109.05 127.66]
+scrap damp_squib-3p -scale [0.0 0.0 874.7234842550524 1024.0 0.0 0.0 109.05 127.66]
 
 line wall 
   556.75 720.5
@@ -141,7 +141,7 @@ point 559.5035 724.7424 station -name 10
 endscrap
 
 
-scrap damp_squib-p4 -scale [0.0 0.0 874.7234842550524 1024.0 0.0 0.0 109.05 127.66]
+scrap damp_squib-4p -scale [0.0 0.0 874.7234842550524 1024.0 0.0 0.0 109.05 127.66]
 
 line pit -close on -outline in
   565.0 744.75

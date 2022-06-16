@@ -1,0 +1,58 @@
+encoding  utf-8
+survey mona_tip3
+	input "mona_tip3p.th2"
+	input "mona_tip3-e.th2"
+	
+	map  m-all-e -projection extended
+		mona_tip3-1e
+	endmap
+	
+	map m-all-p -projection plan
+		mmona_tip3-1p
+		mmona_tip3-2p
+	endmap
+	
+	map mmona_tip3-1p -projection plan
+		mona_tip3p_1
+	endmap
+	
+	map mmona_tip3-2p -projection plan
+		mona_tip3p_2
+	endmap
+	
+	join mona_tip3p_1 mona_tip3p_2
+	
+	centreline
+		date 2008.08.03
+		explo-date 2008.08.03
+		
+		team "Spela" insts
+		team "Siljo (Silan)" insts notes
+		team "Aljoša Bončina" tape
+		
+		explo-team "Spela"
+		explo-team "Siljo (Silan)"
+		explo-team "Aljoša Bončina"
+		
+		units length meters
+		units compass clino degrees
+		
+		extend right
+		37  38  6.80  170  +40
+		extend right
+		38  39  5.75  185  +00
+		extend right
+		39  40  6.00  160  -52
+		extend right
+		40  41  3.40  175  +09
+		extend right
+		41  42  7.40  175  -45
+		extend right
+		42  43  5.10  280  -65
+		extend left
+		43  44  7.40  195  +15
+		
+		
+	endcentreline
+endsurvey
+

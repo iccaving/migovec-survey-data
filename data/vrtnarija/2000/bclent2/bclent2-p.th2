@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 928.250000 680.250000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
+scrap bclent2-1p -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
 
 	line wall
 		624.0429 506.9448
@@ -229,7 +229,7 @@ scrap bclent2-p1 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 endscrap
 
 
-scrap bclent2-p2 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
+scrap bclent2-2p -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
 
 	line pit
 		602.2808 486.8691
@@ -292,7 +292,7 @@ scrap bclent2-p2 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.
 endscrap
 
 
-scrap bclent2-p3 -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
+scrap bclent2-3p -projection plan -scale [0.0 0.0 1024.0 772.860528194147 0.0 0.0 140.1 105.74]
 
 	point 494.25 534.5 station -name 15
 	point 530.25 508.25 station -name 14

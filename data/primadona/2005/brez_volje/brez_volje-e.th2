@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap brez_volje-e1 -scale [327.0 -736.0 504.0 -735.0 0 0 25 0 m] -projection extended
+scrap brez_volje-1e -scale [327.0 -736.0 504.0 -735.0 0 0 25 0 m] -projection extended
 	
 	line wall -subtype invisible
 		1827.9354 504.9524
@@ -64,7 +64,7 @@ scrap brez_volje-e1 -scale [327.0 -736.0 504.0 -735.0 0 0 25 0 m] -projection ex
 endscrap
 
 
-scrap brez_volje-e2 -scale [327.0 -736.0 504.0 -735.0 0 0 25 0 m] -projection extended
+scrap brez_volje-2e -scale [327.0 -736.0 504.0 -735.0 0 0 25 0 m] -projection extended
 	
 	point -468.4767 1281.3634 station -name BV17
 	point -416.7474 1202.0408 station -name BV16
@@ -128,7 +128,7 @@ scrap brez_volje-e2 -scale [327.0 -736.0 504.0 -735.0 0 0 25 0 m] -projection ex
 endscrap
 
 
-scrap brez_volje-e3 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap brez_volje-3e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 	
 	line wall
 		767.5 1973.2962

@@ -3,30 +3,30 @@ survey pico -title "Pico pitch"
 	input pico-p.th2
 	
 	map m-all-p -projection plan
-		mpico-p1
-		mpico-p2
-		mpico-p3
-		mpico-p4
-		mpico-p5
+		mpico-1p
+		mpico-2p
+		mpico-3p
+		mpico-4p
+		mpico-5p
 	endmap
 	
-	map mpico-p1 -projection plan
-		pico-p1
+	map mpico-1p -projection plan
+		pico-1p
 	endmap
 	
-	map mpico-p2 -projection plan
-		pico-p2
+	map mpico-2p -projection plan
+		pico-2p
 	endmap
 	
-	map mpico-p3 -projection plan
-		pico-p3
+	map mpico-3p -projection plan
+		pico-3p
 	endmap
 	
-	map mpico-p4 -projection plan
-		pico-p4
+	map mpico-4p -projection plan
+		pico-4p
 	endmap
-	map mpico-p5 -projection plan
-		pico-p5
+	map mpico-5p -projection plan
+		pico-5p
 	endmap
 	
 	

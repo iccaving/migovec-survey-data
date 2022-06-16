@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap dogfish-p1 -scale [0.0 0.0 1024.0 1000.1628606833068 0.0 0.0 112.98 110.35]
+scrap dogfish-1p -scale [0.0 0.0 1024.0 1000.1628606833068 0.0 0.0 112.98 110.35]
 
 point 648.5 679.0 map-connection 
 point 658.0425 669.1 station -name 5
@@ -65,7 +65,7 @@ endline
 endscrap
 
 
-scrap dogfish-p2 -scale [0.0 0.0 1024.0 1000.1628606833068 0.0 0.0 112.98 110.35]
+scrap dogfish-2p -scale [0.0 0.0 1024.0 1000.1628606833068 0.0 0.0 112.98 110.35]
 
 line wall 
   584.0 612.5

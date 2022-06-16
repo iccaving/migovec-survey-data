@@ -432,19 +432,19 @@ survey moonraker -title "Moonraker"
 	input "Moonraker-3s.th2"
 	
 	map m4p -projection plan
-		moonraker-p4
+		moonraker-4p
 	endmap
 	
 	map m1p -projection plan
-		moonraker-p1
+		moonraker-1p
 	endmap
 	
 	map m2p -projection plan
-		moonraker-p2
+		moonraker-2p
 	endmap
 	
 	map m3p -projection plan
-		moonraker-p3
+		moonraker-3p
 	endmap
 	
 	map m-all-p -projection plan
@@ -472,8 +472,8 @@ survey moonraker -title "Moonraker"
 	endmap
 	
 	
-	join moonraker-p1 moonraker-p2
-	join moonraker-p3 moonraker-p2
+	join moonraker-1p moonraker-2p
+	join moonraker-3p moonraker-2p
 	
 endsurvey
 

@@ -3,25 +3,25 @@ survey echorift -title "Echo Rift" #rift below ice in planika
 	input echorift-e.th2
 	
 	map m-echorift-p -projection plan
-		mechorift-p1
-		mechorift-p3
-		mechorift-p2
+		mechorift-1p
+		mechorift-3p
+		mechorift-2p
 	endmap
 	
-	map mechorift-p1 -projection plan
-		echorift-p1
+	map mechorift-1p -projection plan
+		echorift-1p
 	endmap
 	
-	map mechorift-p2 -projection plan
-		echorift-p2
+	map mechorift-2p -projection plan
+		echorift-2p
 	endmap
 	
-	map mechorift-p3 -projection plan
-		echorift-p3
+	map mechorift-3p -projection plan
+		echorift-3p
 	endmap
 	
 	map  m-echorift-e -projection extended
-		echorift-e1
+		echorift-1e
 	endmap
 	
 	centreline

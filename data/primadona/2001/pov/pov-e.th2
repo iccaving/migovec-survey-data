@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {136.000000 1 1.0} {4804.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/primadona/2001/pov/pov_extend.gif" 0 {}
 
-scrap pov-e1 -projection extended -scale [1382.0 -3962.0 3070.0 -3975.0 0.0 0.0 140 0.0 m]
+scrap pov-1e -projection extended -scale [1382.0 -3962.0 3070.0 -3975.0 0.0 0.0 140 0.0 m]
 	
 	point 1068.8751 3198.6043 label -align tr -attr level 4 -text "Mlinotest"
 	line rock-border -close on
@@ -153,7 +153,7 @@ scrap pov-e1 -projection extended -scale [1382.0 -3962.0 3070.0 -3975.0 0.0 0.0 
 endscrap
 
 
-scrap pov-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+scrap pov-2e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 	
 	line wall:invisible
 		2796.6538 3134.0
@@ -379,7 +379,7 @@ scrap pov-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 endscrap
 
 
-scrap pov-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+scrap pov-3e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 	
 	point 1858.12 2221.75 water-flow -align b -scale xs
 	line rock-border -close on

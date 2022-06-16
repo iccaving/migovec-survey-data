@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap tesselator-p1 -scale [0.0 0.0 1024.0 995.2343706967777 0.0 0.0 108.93 105.87]
+scrap tesselator-1p -scale [0.0 0.0 1024.0 995.2343706967777 0.0 0.0 108.93 105.87]
 
 line pit -outline out
   649.25 650.0
@@ -33,7 +33,7 @@ point 649.7895 654.2077 station -name 6
 endscrap
 
 
-scrap tesselator-p2 -scale [0.0 0.0 1024.0 995.2343706967777 0.0 0.0 108.93 105.87]
+scrap tesselator-2p -scale [0.0 0.0 1024.0 995.2343706967777 0.0 0.0 108.93 105.87]
 
 line rock-border -close on
   652.5 627.5
@@ -126,7 +126,7 @@ point 599.0266 599.0266 station -name 1
 endscrap
 
 
-scrap tesselator-p3 -scale [0.0 0.0 1024.0 995.2343706967777 0.0 0.0 108.93 105.87]
+scrap tesselator-3p -scale [0.0 0.0 1024.0 995.2343706967777 0.0 0.0 108.93 105.87]
 
 point 623.75 663.5 continuation -align tl -scale xs
 line floor-step 

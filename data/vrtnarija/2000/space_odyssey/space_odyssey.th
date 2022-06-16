@@ -3,16 +3,16 @@ survey space_odyssey
 	input space_odyssey-p.th2
 	
 	map m-all-p -projection plan
-		mspace_odyssey-p1
-		mspace_odyssey-p2
+		mspace_odyssey-1p
+		mspace_odyssey-2p
 	endmap
 	
-	map mspace_odyssey-p1 -projection plan
-		space_odyssey-p1
+	map mspace_odyssey-1p -projection plan
+		space_odyssey-1p
 	endmap
 	
-	map mspace_odyssey-p2 -projection plan
-		space_odyssey-p2
+	map mspace_odyssey-2p -projection plan
+		space_odyssey-2p
 	endmap
 	
 

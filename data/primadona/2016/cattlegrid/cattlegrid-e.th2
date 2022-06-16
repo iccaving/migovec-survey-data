@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap cattlegrid-e1 -scale [328.0 -734.0 501.0 -735.0 0 0 15 0 m] -projection extended
+scrap cattlegrid-1e -scale [328.0 -734.0 501.0 -735.0 0 0 15 0 m] -projection extended
 	
 	line wall -subtype invisible
 		815.79 547.81
@@ -96,7 +96,7 @@ scrap cattlegrid-e1 -scale [328.0 -734.0 501.0 -735.0 0 0 15 0 m] -projection ex
 endscrap
 
 
-scrap cattlegrid-e2 -scale [328.0 -734.0 501.0 -735.0 0 0 15 0 m] -projection extended
+scrap cattlegrid-2e -scale [328.0 -734.0 501.0 -735.0 0 0 15 0 m] -projection extended
 	
 	line wall
 		549.315 762.0768
@@ -122,7 +122,7 @@ scrap cattlegrid-e2 -scale [328.0 -734.0 501.0 -735.0 0 0 15 0 m] -projection ex
 endscrap
 
 
-scrap cattlegrid-e3 -scale [0 0 90 0 0 0 500 0 inch] -projection extended
+scrap cattlegrid-3e -scale [0 0 90 0 0 0 500 0 inch] -projection extended
 	
 	point 441.1516 487.8866 station -name 15
 	point 473.0758 478.6765 station -name 14

@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap moonraker-p1 -scale [0 0 100 0 0 0 1 0 m] -projection plan
+scrap moonraker-1p -scale [0 0 100 0 0 0 1 0 m] -projection plan
 
 	line wall -id s1_l1
 		4566.61 3138.76
@@ -367,7 +367,7 @@ scrap moonraker-p1 -scale [0 0 100 0 0 0 1 0 m] -projection plan
 endscrap
 
 
-scrap moonraker-p3 -scale [0 0 100 0 0 0 1 0 m]
+scrap moonraker-3p -scale [0 0 100 0 0 0 1 0 m]
 
 	line wall -subtype invisible
 		2285.6332 1726.9666
@@ -1005,7 +1005,7 @@ scrap moonraker-p3 -scale [0 0 100 0 0 0 1 0 m]
 endscrap
 
 
-scrap moonraker-p4 -scale [0 0 100 0 0 0 1 0 m]
+scrap moonraker-4p -scale [0 0 100 0 0 0 1 0 m]
 
 	line pit -close on -outline in
 		3120.0 3112.0
@@ -1079,7 +1079,7 @@ scrap moonraker-p4 -scale [0 0 100 0 0 0 1 0 m]
 
 endscrap
 
-scrap moonraker-p2 -scale [0 0 100 0 0 0 1 0 m]
+scrap moonraker-2p -scale [0 0 100 0 0 0 1 0 m]
 	point 3782.8152 3289.1976 u:connection_marker -attr text "Tranquillity Base" -attr offset 2.25 -align tl -attr code 18
 
 	line wall

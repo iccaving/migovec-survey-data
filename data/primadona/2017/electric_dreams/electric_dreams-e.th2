@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 973.000000 918.250000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap electric_dreams-e1 -projection extended -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
+scrap electric_dreams-1e -projection extended -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
 	
 	point 8121.7334 -345.2396 u:connection_marker -align br -attr code 13 -id electricdreams -attr text "to Galerija" -attr offset 0.8
 	line wall:invisible
@@ -134,7 +134,7 @@ scrap electric_dreams-e1 -projection extended -scale [0.0 0.0 1024.0 938.0768684
 endscrap
 
 
-scrap electric_dreams-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+scrap electric_dreams-2e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 	
 	line wall:invisible
 		3036.2943 -1540.7392

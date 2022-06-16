@@ -3,21 +3,21 @@ survey pink2 -title "Pink Series"
 	input pink2-p.th2
 	
 	map m-all-p -projection plan
-		mpink2-p1
-		mpink2-p2
-		mpink2-p3
+		mpink2-1p
+		mpink2-2p
+		mpink2-3p
 	endmap
 	
-	map mpink2-p1 -projection plan
-		pink2-p1
+	map mpink2-1p -projection plan
+		pink2-1p
 	endmap
 	
-	map mpink2-p2 -projection plan
-		pink2-p2
+	map mpink2-2p -projection plan
+		pink2-2p
 	endmap
 	
-	map mpink2-p3 -projection plan
-		pink2-p3
+	map mpink2-3p -projection plan
+		pink2-3p
 	endmap
 	
 

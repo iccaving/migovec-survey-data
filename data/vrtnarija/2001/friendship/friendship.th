@@ -2,42 +2,42 @@ survey friendship
 	input friendship-p.th2
 	
 	map m-all-p -projection plan
-		mfriendship-p1
-		mfriendship-p3
-		mfriendship-p2
-		mfriendship-p4
-		mfriendship-p5
-		mfriendship-p6
+		mfriendship-1p
+		mfriendship-3p
+		mfriendship-2p
+		mfriendship-4p
+		mfriendship-5p
+		mfriendship-6p
 	endmap
 	
-	map mfriendship-p1 -projection plan
-		friendship-p1
+	map mfriendship-1p -projection plan
+		friendship-1p
 	endmap
 	
-	map mfriendship-p2 -projection plan
-		friendship-p2
+	map mfriendship-2p -projection plan
+		friendship-2p
 	endmap
 	
-	map mfriendship-p3 -projection plan
-		friendship-p3
+	map mfriendship-3p -projection plan
+		friendship-3p
 	endmap
 	
-	map mfriendship-p4 -projection plan
-		friendship-p4
+	map mfriendship-4p -projection plan
+		friendship-4p
 	endmap
 	
-	map mfriendship-p5 -projection plan
-		friendship-p5
+	map mfriendship-5p -projection plan
+		friendship-5p
 	endmap
 	
-	map mfriendship-p6 -projection plan
-		friendship-p6
+	map mfriendship-6p -projection plan
+		friendship-6p
 	endmap
 	
-	join friendship-p4 friendship-p3
-	join friendship-p2 friendship-p1
-	join friendship-p4 friendship-p5
-	join friendship-p5 friendship-p6
+	join friendship-4p friendship-3p
+	join friendship-2p friendship-1p
+	join friendship-4p friendship-5p
+	join friendship-5p friendship-6p
 	
 
 input friendship-e.th2

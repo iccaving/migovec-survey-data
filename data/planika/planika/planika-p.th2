@@ -4,7 +4,7 @@ encoding  utf-8
 
 
 
-scrap planika-p1 -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
+scrap planika-1p -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
 
 line contour
 endline
@@ -147,7 +147,7 @@ endscrap
 
 
 
-scrap planika-p2 -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
+scrap planika-2p -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
 
 point 269.0 -312.0 station -name "10"
 
@@ -491,7 +491,7 @@ endscrap
 
 
 
-scrap planika-p3 -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
+scrap planika-3p -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
 
 line rock-border
 endline
@@ -578,7 +578,7 @@ endscrap
 
 
 
-scrap planika-p4 -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
+scrap planika-4p -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
 
 point 160.5 -362.0 label -text "Entrance 2" -align tl
 
@@ -900,7 +900,7 @@ endscrap
 
 
 
-scrap planika-p5 -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
+scrap planika-5p -scale [327.0 -736.0 499.0 -736.0 0 0 15 0 m]
 
 line rock-border
 endline

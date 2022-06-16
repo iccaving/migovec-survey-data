@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 905.000000 900.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap laurel-p1 -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
+scrap laurel-1p -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
 	
 	line pit
 		324.2577 663.6619
@@ -66,7 +66,7 @@ scrap laurel-p1 -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999
 endscrap
 
 
-scrap laurel-p2 -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
+scrap laurel-2p -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
 	
 	point 338.977 655.613 station -name 12
 	point 343.409 716.656 station -name 13
@@ -165,7 +165,7 @@ scrap laurel-p2 -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999
 endscrap
 
 
-scrap laurel-p3 -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
+scrap laurel-3p -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
 	
 	point 416.979 645.35 station -name 8
 	point 423.675 637.461 station -name 9
@@ -273,7 +273,7 @@ scrap laurel-p3 -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999
 endscrap
 
 
-scrap laurel-p4 -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
+scrap laurel-4p -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
 	
 	point 494.762 666.425 station -name 5
 	point 494.227 706.284 station -name 6
@@ -366,7 +366,7 @@ scrap laurel-p4 -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999
 endscrap
 
 
-scrap laurel-p5 -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
+scrap laurel-5p -projection plan -scale [0.0 0.0 1018.0131152721814 1023.9999999999999 0.0 0.0 125.83 126.57]
 	
 	point 313.484 581.823 station -name 1
 	point 401.969 569.077 station -name 2

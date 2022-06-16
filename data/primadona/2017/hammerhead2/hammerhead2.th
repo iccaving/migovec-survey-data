@@ -4,8 +4,8 @@ survey hammerhead2 -title "Hammerhead 2"
 	input "hammerhead2-e.th2"
 	
 	map m-all-p -projection plan
-		hammerhead2-p1
-		hammerhead2-p2
+		hammerhead2-1p
+		hammerhead2-2p
 	endmap
 	
 	map  m-all-e -projection extended
@@ -14,7 +14,7 @@ survey hammerhead2 -title "Hammerhead 2"
 		hammerhead2-1e
 	endmap
 	
-	join hammerhead2-p1 hammerhead2-p2
+	join hammerhead2-1p hammerhead2-2p
 	
 	centreline
 		date 2017.07.18

@@ -4,45 +4,45 @@ survey planika
 	input "planika-e.th2"
 	
 	map m-planika-p -projection plan
-		mplanika-p3
-		mplanika-p1
-		mplanika-p4
-		mplanika-p5
-		mplanika-p2
+		mplanika-3p
+		mplanika-1p
+		mplanika-4p
+		mplanika-5p
+		mplanika-2p
 		
 	endmap
 	
-	map mplanika-p1 -projection plan
-		planika-p1
+	map mplanika-1p -projection plan
+		planika-1p
 	endmap
 	
-	map mplanika-p2 -projection plan
-		planika-p2
+	map mplanika-2p -projection plan
+		planika-2p
 	endmap
 	
-	map mplanika-p3 -projection plan
-		planika-p3
+	map mplanika-3p -projection plan
+		planika-3p
 	endmap
 	
-	map mplanika-p4 -projection plan
-		planika-p4
+	map mplanika-4p -projection plan
+		planika-4p
 	endmap
 	
-	map mplanika-p5 -projection plan
-		planika-p5
+	map mplanika-5p -projection plan
+		planika-5p
 	endmap
 	
 	map  m-planika-e -projection extended
-		mplanika-e2
-		mplanika-e1
+		mplanika-2e
+		mplanika-1e
 	endmap
 	
-	map mplanika-e1 -projection extended
-		planika-e1
+	map mplanika-1e -projection extended
+		planika-1e
 	endmap
 	
-	map mplanika-e2 -projection extended
-		planika-e2
+	map mplanika-2e -projection extended
+		planika-2e
 	endmap
 	
 	

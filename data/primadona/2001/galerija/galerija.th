@@ -1,14 +1,14 @@
 encoding  utf-8
 survey galerija
 	input "galerijap.th2"
-	input "galerija-e1.th2"
-	input "galerija-e2.th2"
+	input "galerija-1e.th2"
+	input "galerija-2e.th2"
 
 	map  m-all-e -projection extended
-		galerija-e1
+		galerija-1e
 		break
 		galerija-2e
-		galerija-e3
+		galerija-3e
 	endmap
 
 

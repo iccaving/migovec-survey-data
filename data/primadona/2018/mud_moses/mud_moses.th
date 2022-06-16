@@ -3,20 +3,20 @@ survey mud_moses -title "Mud Moses"
 	input "mud_moses-e.th2"
 	
 	map  m-all-e -projection extended
-		mud_moses-e1
+		mud_moses-1e
 	endmap
 	
 	map m-all-p -projection plan
-		mmud_moses-p1
-		mmud_moses-p2
+		mmud_moses-1p
+		mmud_moses-2p
 	endmap
 	
-	map mmud_moses-p1 -projection plan
-		mud_moses-p1
+	map mmud_moses-1p -projection plan
+		mud_moses-1p
 	endmap
 	
-	map mmud_moses-p2 -projection plan
-		mud_moses-p2
+	map mmud_moses-2p -projection plan
+		mud_moses-2p
 	endmap
 	
 	centreline

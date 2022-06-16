@@ -4,15 +4,15 @@ survey quantum_state -title "Quantum State"
 	input "quantum_state-e.th2"
 	
 	map m-all-p -projection plan
-		mquantum_state-p1
-		mquantum_state-p2
+		mquantum_state-1p
+		mquantum_state-2p
 	endmap
 	
-	map mquantum_state-p1 -projection plan
+	map mquantum_state-1p -projection plan
 		quantum_statep_1
 	endmap
 	
-	map mquantum_state-p2 -projection plan
+	map mquantum_state-2p -projection plan
 		quantum_statep_2
 	endmap
 	

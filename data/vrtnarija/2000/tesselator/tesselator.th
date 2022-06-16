@@ -3,21 +3,21 @@ survey tesselator -title "Tesselator"
 	input tesselator-p.th2
 	
 	map m-all-p -projection plan
-		mtesselator-p1
-		mtesselator-p3
-		mtesselator-p2
+		mtesselator-1p
+		mtesselator-3p
+		mtesselator-2p
 	endmap
 	
-	map mtesselator-p1 -projection plan
-		tesselator-p1
+	map mtesselator-1p -projection plan
+		tesselator-1p
 	endmap
 	
-	map mtesselator-p2 -projection plan
-		tesselator-p2
+	map mtesselator-2p -projection plan
+		tesselator-2p
 	endmap
 	
-	map mtesselator-p3 -projection plan
-		tesselator-p3
+	map mtesselator-3p -projection plan
+		tesselator-3p
 	endmap
 	
 

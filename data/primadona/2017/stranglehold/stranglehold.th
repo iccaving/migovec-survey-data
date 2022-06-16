@@ -5,18 +5,18 @@ survey stranglehold
 	input stranglehold-e.th2
 	
 	map  m-all-e -projection extended
-		stranglehold-e1
-		stranglehold-e2
+		stranglehold-1e
+		stranglehold-2e
 	endmap
 	
 	map m-all-p -projection plan
-		stranglehold-p1
-		stranglehold-p2
-		stranglehold-p3
+		stranglehold-1p
+		stranglehold-2p
+		stranglehold-3p
 	endmap
 	
-	join stranglehold-p1 stranglehold-p2
-	join stranglehold-p1 stranglehold-p3
+	join stranglehold-1p stranglehold-2p
+	join stranglehold-1p stranglehold-3p
 	
 	centreline
 		date 2017.07.19

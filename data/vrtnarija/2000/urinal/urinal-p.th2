@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap urinal-p1 -projection plan -scale [0.0 0.0 1024.0 955.6489493201483 0.0 0.0 113.26 105.7]
+scrap urinal-1p -projection plan -scale [0.0 0.0 1024.0 955.6489493201483 0.0 0.0 113.26 105.7]
 
 point 580.6423 581.8139 station -name 1
 point 638.6078 581.7242 station -name 2
@@ -45,7 +45,7 @@ endline
 endscrap
 
 
-scrap urinal-p2 -projection plan -scale [0.0 0.0 1024.0 955.6489493201483 0.0 0.0 113.26 105.7]
+scrap urinal-2p -projection plan -scale [0.0 0.0 1024.0 955.6489493201483 0.0 0.0 113.26 105.7]
 
 line wall 
   701.75 629.0

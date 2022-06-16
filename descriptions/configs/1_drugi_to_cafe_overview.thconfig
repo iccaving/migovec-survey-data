@@ -9,8 +9,8 @@ input ../../layouts/mods.thl
 
 # This the overview, making everything grey, apart from the highlighed 'entrance to cafe'
 lookup map:drugi_to_cafe_overview
-	m-all-p@belladonna.primadona_ubend_monatip.system_migovec [100 0 0] "Entrance to camp"
-	m-drugi_to_cafe-p@primadona.primadona_ubend_monatip.system_migovec  [100 0 0] "Entrance to camp"
+	m-all-p@belladonna.primadona_ubend_mona_tip.system_migovec [100 0 0] "Entrance to camp"
+	m-drugi_to_cafe-p@primadona.primadona_ubend_mona_tip.system_migovec  [100 0 0] "Entrance to camp"
 	[] [40 40 40] "rest"
 endlookup
 
@@ -35,6 +35,6 @@ endlayout
 
 
 maps-offset off
-select m-all-p@primadona_ubend_monatip.system_migovec
+select m-all-p@primadona_ubend_mona_tip.system_migovec
 
 export map -o ../outputs/drugi_to_cafe_overview.pdf -projection plan -layout overview-p

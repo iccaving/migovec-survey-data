@@ -3,19 +3,19 @@ survey lost_in_a_dream -title "Lost in a Dream"
 	input "lost_in_a_dream-e.th2"
 	
 	map  m-all-e -projection extended
-		lost_in_a_dream-e1
+		lost_in_a_dream-1e
 	endmap
 	
 	map m-1-p -projection plan
-		lost_in_a_dream-p1
+		lost_in_a_dream-1p
 	endmap
 	
 	map m-2-p -projection plan
-		lost_in_a_dream-p2
+		lost_in_a_dream-2p
 	endmap
 	
 	map m-3-p -projection plan
-		lost_in_a_dream-p3
+		lost_in_a_dream-3p
 	endmap
 	
 	map m-all-p -projection plan
@@ -24,8 +24,8 @@ survey lost_in_a_dream -title "Lost in a Dream"
 		m-3-p
 	endmap
 	
-	join lost_in_a_dream-p1 lost_in_a_dream-p2
-	join lost_in_a_dream-p2 lost_in_a_dream-p3
+	join lost_in_a_dream-1p lost_in_a_dream-2p
+	join lost_in_a_dream-2p lost_in_a_dream-3p
 	
 	centreline
 		# Arun Paul also present

@@ -3,11 +3,11 @@ survey penny_falls_2 -title "Penny falls 2 (continuation)"
 	input "penny_falls_2-e.th2"
 	
 	map  m-all-e -projection extended
-		penny_falls_2-e1
+		penny_falls_2-1e
 	endmap
 	
 	map m-all-p -projection plan
-		penny_falls_2-p1
+		penny_falls_2-1p
 	endmap
 	
 	centreline

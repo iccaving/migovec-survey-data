@@ -2,16 +2,16 @@ survey urinal -title "Second pitch of Urinal series"
 	input urinal-p.th2
 	
 	map m-all-p -projection plan
-		murinal-p2
-		murinal-p1
+		murinal-2p
+		murinal-1p
 	endmap
 	
-	map murinal-p1 -projection plan
-		urinal-p1
+	map murinal-1p -projection plan
+		urinal-1p
 	endmap
 	
-	map murinal-p2 -projection plan
-		urinal-p2
+	map murinal-2p -projection plan
+		urinal-2p
 	endmap
 	
 

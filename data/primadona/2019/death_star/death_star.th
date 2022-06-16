@@ -24,19 +24,19 @@ survey death_star -title "Death Star"
 	endmap
 	
 	map m1e -projection extended
-		death_star-e1
+		death_star-1e
 	endmap
 
 	map m2e -projection extended
-		death_star-e2
+		death_star-2e
 	endmap
 
 	map m3e -projection extended
-		death_star-e3
+		death_star-3e
 	endmap
 
 	map m4e -projection extended
-		death_star-e4
+		death_star-4e
 	endmap
 	map m2p -projection plan
 		death_star-2p
@@ -60,9 +60,9 @@ survey death_star -title "Death Star"
 		m4e
 	endmap
 	
-	join death_star-e1 death_star-e3
-	join death_star-e2 death_star-e3
-	join death_star-e1 death_star-e4
+	join death_star-1e death_star-3e
+	join death_star-2e death_star-3e
+	join death_star-1e death_star-4e
 	join death_star-3p death_star-1p
 	
 	centerline

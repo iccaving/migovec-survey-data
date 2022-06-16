@@ -1,0 +1,9 @@
+encoding  utf-8
+source s_mona_tip.th
+layout local
+  scale 1 1200
+  colour map-fg altitude
+
+  
+endlayout
+export map -projection plan -o mona_tip.pdf -layout local

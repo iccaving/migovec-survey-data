@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 874.500000 748.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap lumos-p2 -projection plan -scale [0.0 0.0 1024.0 930.7877300613497 0.0 0.0 130.4 118.53]
+scrap lumos-2p -projection plan -scale [0.0 0.0 1024.0 930.7877300613497 0.0 0.0 130.4 118.53]
 
 	line wall
 		677.0 530.5
@@ -84,7 +84,7 @@ scrap lumos-p2 -projection plan -scale [0.0 0.0 1024.0 930.7877300613497 0.0 0.0
 endscrap
 
 
-scrap lumos-p3 -projection plan -scale [0.0 0.0 1024.0 930.7877300613497 0.0 0.0 130.4 118.53]
+scrap lumos-3p -projection plan -scale [0.0 0.0 1024.0 930.7877300613497 0.0 0.0 130.4 118.53]
 
 	line pit -outline out
 		670.5 570.75
@@ -124,7 +124,7 @@ scrap lumos-p3 -projection plan -scale [0.0 0.0 1024.0 930.7877300613497 0.0 0.0
 endscrap
 
 
-scrap lumos-p1 -projection plan -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
+scrap lumos-1p -projection plan -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
 
 	point 464.22 658.549 label -align br -text "Lumos Branch" -scale xs -attr level 5
 	line contour

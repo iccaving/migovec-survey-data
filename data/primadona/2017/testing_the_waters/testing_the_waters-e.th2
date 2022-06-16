@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap testing_the_waters-e1 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap testing_the_waters-1e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 	
 	point -309.3016 2740.4204 label -text "Testing the Waters" -align t -scale xl
 	line wall -subtype blocks

@@ -3,11 +3,11 @@ survey ave_maria -title "Ave Maria pitch series"
 	input "ave_maria-e.th2"
 	
 	map  m-all-e -projection extended
-		ave_maria-e1
+		ave_maria-1e
 	endmap
 	
 	map m-all-p -projection plan
-		ave_maria-p1
+		ave_maria-1p
 	endmap
 	
 	centreline

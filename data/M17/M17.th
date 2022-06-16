@@ -30,26 +30,26 @@ survey M17 -title "M-17 (Frigidare)" -entrance 0 -attr cadastral_n 5878
 	endmap
 
 	map m-M17only-p -projection plan -title "M-17 (Frigidare)"
-		mM17-p3 [35 0 m] above
-		mM17-p1
+		mM17-3p [35 0 m] above
+		mM17-1p
 		break
-		mM17-p2
-		mM17-p4 [-20 0 m] below
+		mM17-2p
+		mM17-4p [-20 0 m] below
 	endmap
 
-	map mM17-p1
+	map mM17-1p
 		M17-1p
 	endmap
 
-	map mM17-p2
+	map mM17-2p
 		M17-2p
 	endmap
 
-	map mM17-p3
+	map mM17-3p
 		M17-3p
 	endmap
 
-	map mM17-p4
+	map mM17-4p
 		M17-4p
 	endmap
 

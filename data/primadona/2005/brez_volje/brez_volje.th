@@ -5,9 +5,9 @@ survey brez_volje
 	
 	
 	map  m-all-e -projection extended
-		brez_volje-e1
-		brez_volje-e2
-		brez_volje-e3
+		brez_volje-1e
+		brez_volje-2e
+		brez_volje-3e
 	endmap
 	
 	map m-all-p -projection plan
@@ -32,8 +32,8 @@ survey brez_volje
 	join brez_voljep_1 brez_voljep_2
 	join brez_voljep_2 brez_voljep_3
 
-	join brez_volje-e1 brez_volje-e2
-	join brez_volje-e2 brez_volje-e3
+	join brez_volje-1e brez_volje-2e
+	join brez_volje-2e brez_volje-3e
 	
 	centreline
 		date 2005.10.15

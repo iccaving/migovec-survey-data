@@ -8,8 +8,8 @@ input ../../layouts/metapost/label.thl
 input ../../layouts/mods.thl
 
 # From the cafe to the manger, will appear light yellow
-lookup map:spiral_climb_to_monatip_exit
-	m-alkatraz_to_exit-p@monatip.primadona_ubend_monatip.system_migovec [100 92.2 66.7] "Alkatraz to Monatip exit"
+lookup map:spiral_climb_to_mona_tip_exit
+	m-alkatraz_to_exit-p@mona_tip.primadona_ubend_mona_tip.system_migovec [100 92.2 66.7] "Alkatraz to Monatip exit"
 endlookup
 
 # Generate actual map
@@ -18,7 +18,7 @@ layout local-p
 	copy connection_marker
 	copy custom_label
 
-	colour map-fg map:spiral_climb_to_monatip_exit # this is the crucial look-up
+	colour map-fg map:spiral_climb_to_mona_tip_exit # this is the crucial look-up
 	colour map-bg transparent
 	scale 1 1000
 
@@ -43,7 +43,7 @@ layout local-p
 		\def\maplayout{
 		\legendbox{22}{78}{N}{\scalebar}
 		\legendbox{22}{80}{S}{\northarrow}
-		\legendbox{22}{30}{S}{\loadpicture{../outputs/spiral_climb_to_monatip_exit_overview.pdf}}
+		\legendbox{22}{30}{S}{\loadpicture{../outputs/spiral_climb_to_mona_tip_exit_overview.pdf}}
 		}
 	endcode
 
@@ -54,20 +54,20 @@ endlayout
 # The correct way on appears in light yellow, the rest in white.
 source
 	map m-local-p -projection plan -title "<bf>Camp Manger to Tranquillity Base"
-		m2p@monatip5.monatip.primadona_ubend_monatip.system_migovec
-		m1p@monatip5.monatip.primadona_ubend_monatip.system_migovec
-		m-all-p@aleksandrija.monatip.primadona_ubend_monatip.system_migovec
-		m-all-p@well_hung.monatip.primadona_ubend_monatip.system_migovec
-		m4p@prima1.primadona.primadona_ubend_monatip.system_migovec
-		m5p@prima1.primadona.primadona_ubend_monatip.system_migovec
+		m2p@mona_tip5.mona_tip.primadona_ubend_mona_tip.system_migovec
+		m1p@mona_tip5.mona_tip.primadona_ubend_mona_tip.system_migovec
+		m-all-p@aleksandrija.mona_tip.primadona_ubend_mona_tip.system_migovec
+		m-all-p@well_hung.mona_tip.primadona_ubend_mona_tip.system_migovec
+		m4p@prima1.primadona.primadona_ubend_mona_tip.system_migovec
+		m5p@prima1.primadona.primadona_ubend_mona_tip.system_migovec
 		# the actual highlighted route
-		m-alkatraz_to_exit-p@monatip.primadona_ubend_monatip.system_migovec
-		m2p@alkatraz_disto_resurvey.monatip.primadona_ubend_monatip.system_migovec
-		m-all-p@monatip3.monatip.primadona_ubend_monatip.system_migovec
-		m-all-p@broken_hammer.monatip.primadona_ubend_monatip.system_migovec
-		m6p@prima1.primadona.primadona_ubend_monatip.system_migovec
-		m-all-p@monatip4.monatip.primadona_ubend_monatip.system_migovec
-		m-all-p@doubletime.monatip.primadona_ubend_monatip.system_migovec
+		m-alkatraz_to_exit-p@mona_tip.primadona_ubend_mona_tip.system_migovec
+		m2p@alkatraz_disto_resurvey.mona_tip.primadona_ubend_mona_tip.system_migovec
+		m-all-p@mona_tip3.mona_tip.primadona_ubend_mona_tip.system_migovec
+		m-all-p@broken_hammer.mona_tip.primadona_ubend_mona_tip.system_migovec
+		m6p@prima1.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@mona_tip4.mona_tip.primadona_ubend_mona_tip.system_migovec
+		m-all-p@doubletime.mona_tip.primadona_ubend_mona_tip.system_migovec
 
 
 	endmap
@@ -75,4 +75,4 @@ endsource
 
 select m-local-p
 
-export map -o ../outputs/spiral_climb_to_monatip_exit.pdf -projection plan -layout local-p
+export map -o ../outputs/spiral_climb_to_mona_tip_exit.pdf -projection plan -layout local-p

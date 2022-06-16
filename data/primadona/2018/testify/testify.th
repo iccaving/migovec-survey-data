@@ -16,48 +16,48 @@ survey testify
 	input "testify-p.th2"
 	input "testify-e.th2"
 	
-	map mtestify-p1 -projection plan
-		testify-p1
+	map mtestify-1p -projection plan
+		testify-1p
 	endmap
 	
-	map mtestify-p2 -projection plan
-		testify-p2
+	map mtestify-2p -projection plan
+		testify-2p
 	endmap
 	
-	map mtestify-p3 -projection plan
-		testify-p3
+	map mtestify-3p -projection plan
+		testify-3p
 	endmap
 	
-	map mtestify-p4 -projection plan
-		testify-p4
+	map mtestify-4p -projection plan
+		testify-4p
 	endmap
 	
-	map mtestify-p5 -projection plan
-		testify-p5
+	map mtestify-5p -projection plan
+		testify-5p
 	endmap
 	
-	map mtestify-p6 -projection plan
-		testify-p6
+	map mtestify-6p -projection plan
+		testify-6p
 	endmap
 	
 	map m-all-p -projection plan
-		mtestify-p1
-		mtestify-p2
-		mtestify-p3
-		mtestify-p4
-		mtestify-p5
-		mtestify-p6
+		mtestify-1p
+		mtestify-2p
+		mtestify-3p
+		mtestify-4p
+		mtestify-5p
+		mtestify-6p
 	endmap
 	
 	map  m-all-e -projection extended
 		testify-1e
 		testify-2e
 	endmap
-	join testify-p1 testify-p2
-	join testify-p3 testify-p2
-	join testify-p3 testify-p4
-	join testify-p4 testify-p5
-	join testify-p6 testify-p4
+	join testify-1p testify-2p
+	join testify-3p testify-2p
+	join testify-3p testify-4p
+	join testify-4p testify-5p
+	join testify-6p testify-4p
 	
 	join testify-1e testify-2e
 	

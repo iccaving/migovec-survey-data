@@ -4,7 +4,7 @@ encoding  utf-8
 
 ##XTHERION## xth_me_image_insert {132.000000 1 1.0} {970.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/others/gondolin/gondolinp.gif" 0 {}
 
-scrap gondolin-e1 -scale [327.0 -736.0 527.0 -734.0 0 0 14 0 m] -projection extended
+scrap gondolin-1e -scale [327.0 -736.0 527.0 -734.0 0 0 14 0 m] -projection extended
 
 point 223.6719 165.415 breakdown-choke -align l -scale xs
 line wall 
@@ -82,7 +82,7 @@ point 476.4338 120.8769 station -name 1
 endscrap
 
 
-scrap gondolin-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap gondolin-2e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
 point 735.5667 591.9841 station -name 8
 line u:texture 
@@ -284,7 +284,7 @@ point 773.8162 195.3665 station -name 4
 endscrap
 
 
-scrap gondolin-e3 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap gondolin-3e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
 line wall:blocks 
   646.7103 584.9227
@@ -469,7 +469,7 @@ point 508.2766 742.0397 station -name 16
 endscrap
 
 
-scrap gondolin-e4 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap gondolin-4e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
 point 903.7914 630.1825 breakdown-choke -align r -scale xs
 line wall 

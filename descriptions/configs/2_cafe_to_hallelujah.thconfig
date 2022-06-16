@@ -9,8 +9,8 @@ input ../../layouts/mods.thl
 
 # From the cafe to the manger, will appear light yellow
 lookup map:cafe_to_hallelujah
-	m-cafe_to_hallelujah-p@primadona.primadona_ubend_monatip.system_migovec [100 92.2 66.7] "Cafe to Hallelujah"
-  m-cafe_to_hallelujah2-p@primadona.primadona_ubend_monatip.system_migovec [100 92.2 66.7] "Cafe to Hallelujah2"
+	m-cafe_to_hallelujah-p@primadona.primadona_ubend_mona_tip.system_migovec [100 92.2 66.7] "Cafe to Hallelujah"
+  m-cafe_to_hallelujah2-p@primadona.primadona_ubend_mona_tip.system_migovec [100 92.2 66.7] "Cafe to Hallelujah2"
 
 endlookup
 
@@ -61,34 +61,34 @@ endlayout
 source
 
 	map m-local-p -projection plan -title "<bf>Mary's Café to Camp Manger"
-    m-all-p@risanke.primadona.primadona_ubend_monatip.system_migovec
-	  m-all-p@risa2.primadona.primadona_ubend_monatip.system_migovec
-    m1p@pov.primadona.primadona_ubend_monatip.system_migovec
-		m4p@popotresni.primadona.primadona_ubend_monatip.system_migovec
-    m4p@galerija.primadona.primadona_ubend_monatip.system_migovec
-		m-cafe_to_hallelujah-p@primadona.primadona_ubend_monatip.system_migovec
-		m2p@smer0.primadona.primadona_ubend_monatip.system_migovec
-    m1p@the_stile.primadona.primadona_ubend_monatip.system_migovec
-    m-all-p@forget_me_not.primadona.primadona_ubend_monatip.system_migovec
+    m-all-p@risanke.primadona.primadona_ubend_mona_tip.system_migovec
+	  m-all-p@risa2.primadona.primadona_ubend_mona_tip.system_migovec
+    m1p@pov.primadona.primadona_ubend_mona_tip.system_migovec
+		m4p@popotresni.primadona.primadona_ubend_mona_tip.system_migovec
+    m4p@galerija.primadona.primadona_ubend_mona_tip.system_migovec
+		m-cafe_to_hallelujah-p@primadona.primadona_ubend_mona_tip.system_migovec
+		m2p@smer0.primadona.primadona_ubend_mona_tip.system_migovec
+    m1p@the_stile.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-p@forget_me_not.primadona.primadona_ubend_mona_tip.system_migovec
 		m-below-p [50 0 m] none
 	endmap
 
 	map m-below-p
-		m1p@alabaster.primadona.primadona_ubend_monatip.system_migovec
-		m2p@alabaster.primadona.primadona_ubend_monatip.system_migovec
-		m1p@alabaster.primadona.primadona_ubend_monatip.system_migovec
-		m4p@sweet_baby_jesus.primadona.primadona_ubend_monatip.system_migovec
-		m2p@fenestrator.primadona.primadona_ubend_monatip.system_migovec
-		m-all-p@octarine.primadona.primadona_ubend_monatip.system_migovec
-		m-all-p@octarine_core.primadona.primadona_ubend_monatip.system_migovec
-		m-cafe_to_hallelujah2-p@primadona.primadona_ubend_monatip.system_migovec
-		m-all-p@mud_moses.primadona.primadona_ubend_monatip.system_migovec
-		m-all-p@upotyn.primadona.primadona_ubend_monatip.system_migovec
-		m-all-p@battery_flattery.primadona.primadona_ubend_monatip.system_migovec
-		m-all-p@beam_me_up.primadona.primadona_ubend_monatip.system_migovec
+		m1p@alabaster.primadona.primadona_ubend_mona_tip.system_migovec
+		m2p@alabaster.primadona.primadona_ubend_mona_tip.system_migovec
+		m1p@alabaster.primadona.primadona_ubend_mona_tip.system_migovec
+		m4p@sweet_baby_jesus.primadona.primadona_ubend_mona_tip.system_migovec
+		m2p@fenestrator.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@octarine.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@octarine_core.primadona.primadona_ubend_mona_tip.system_migovec
+		m-cafe_to_hallelujah2-p@primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@mud_moses.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@upotyn.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@battery_flattery.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@beam_me_up.primadona.primadona_ubend_mona_tip.system_migovec
 
-		m-all-p@death_star.primadona.primadona_ubend_monatip.system_migovec
-		m-all-p@canticle_for_migovec.primadona.primadona_ubend_monatip.system_migovec
+		m-all-p@death_star.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@canticle_for_migovec.primadona.primadona_ubend_mona_tip.system_migovec
 
 	endmap
 endsource

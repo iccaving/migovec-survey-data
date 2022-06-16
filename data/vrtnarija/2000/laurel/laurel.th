@@ -2,19 +2,19 @@ survey laurel -title "Laurel pitch & Jelly Chamber"
 	input laurel-p.th2
 	
 	map m-all-p -projection plan
-		laurel-p1
+		laurel-1p
 		break
-		laurel-p2
+		laurel-2p
 		break
-		laurel-p3
+		laurel-3p
 		break
-		laurel-p4
+		laurel-4p
 		break
-		laurel-p5
+		laurel-5p
 	endmap
 	
-	join laurel-p2 laurel-p3
-	join laurel-p4 laurel-p5
+	join laurel-2p laurel-3p
+	join laurel-4p laurel-5p
 	
 	input laurel-e.th2
 	

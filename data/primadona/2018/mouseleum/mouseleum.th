@@ -275,19 +275,19 @@ survey mouseleum -title "mouseleum"
 	input "mouseleum-1s.th2"
 	
 	map m1p -projection plan
-		mouseleum-p1
+		mouseleum-1p
 	endmap
 	
 	map m2p -projection plan
-		mouseleum-p2
+		mouseleum-2p
 	endmap
 	
 	map m3p -projection plan
-		mouseleum-p3
+		mouseleum-3p
 	endmap
 	
 	map m4p -projection plan
-		mouseleum-p4
+		mouseleum-4p
 	endmap
 	
 	map m-all-p -projection plan
@@ -301,7 +301,7 @@ survey mouseleum -title "mouseleum"
 		mouseleum-1s
 	endmap
 	
-	join mouseleum-p3 mouseleum-p4
+	join mouseleum-3p mouseleum-4p
 	
 endsurvey
 

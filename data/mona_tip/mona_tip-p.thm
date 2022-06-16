@@ -1,0 +1,70 @@
+#————————————————————————————————————————————-
+# This contains the maps of Monatip cave      |
+#————————————————————————————————————————————-
+
+#map m-mona_tip-p -projection plan -title "Monatip"
+#  m-mona_tip_connection-p
+#  m-mona_tip_entrance-p
+# m-all-p@alkatraz_disto_resurvey [-100 0 m] above
+# m-all-p@therock [-100 0 m] above
+#endmap
+
+map m-all-p -projection plan -title "Mona tip"
+	m-all-p@mona_tip5 # Hallowine
+	m-all-p@mona_tip6
+	m-all-p@mona_tip9 #Loozer
+	m-all-p@extra_dunkel
+	m-all-p@mona_tip11
+	m-all-p@mona_tip10
+	m-all-p@wishing_well
+	m-all-p@wishing_well2
+	m-all-p@sad_face
+	m-all-p@mona_tip7
+	m-all-p@mona_tip8 # Telovadci
+	m-all-p@mona_tip1
+	m-all-p@mona_tip2
+	m-all-p@mona_tip3
+	m-all-p@aleksandrija
+	m-all-p@cloacamaxima
+	m-all-p@well_hung
+	high-mona_tip #[-120 0 m] above
+	m-all-p@therock
+	m-all-p@therock
+	m-all-p@broken_hammer
+	m-all-p@mona_tip4
+	m-all-p@alkatraz_disto_resurvey
+	m-all-p@doubletime
+endmap
+
+map m-mona_tip_entrance-p -projection plan
+	m-all-p@mona_tip1
+	m-all-p@mona_tip2
+	m-all-p@aleksandrija
+	m-all-p@mona_tip3
+	m-all-p@cloacamaxima
+	m-all-p@cloacamaxima
+	m-all-p@mona_tip4
+	m-all-p@broken_hammer
+	m-all-p@doubletime
+endmap
+
+map m-mona_tip_connection-p -projection plan
+	m-all-p@mona_tip5
+endmap
+
+map high-mona_tip -projection plan
+	m-all-p@therock
+	m-all-p@cloacamaxima
+	m-all-p@cloacamaxima
+	m-all-p@cloacamaxima
+	m-all-p@alkatraz_disto_resurvey
+	m-all-p@therock
+endmap
+
+map mona_tip_m16_con-p -projection plan #relevant passages for connections with M16
+m-all-p@wishing_well
+m-all-p@wishing_well2
+m-all-p@sad_face
+m-all-p@extra_dunkel
+m-all-p@mona_tip11
+endmap

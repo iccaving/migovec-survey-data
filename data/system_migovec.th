@@ -18,7 +18,7 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 	input "./system_migovec-routes-p.thm" # some highlighed routes
 
 	# input the individual cave data files
-	input "./primadona_ubend_monatip.th"
+	input "./primadona_ubend_mona_tip.th"
 	input "./m2m16m18.th"
 	input "./vrtnarija_vilinska.th"
 
@@ -37,9 +37,9 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 		#fix 1@entrance.M16.m2m16m18 405073 123841 1852  # old GK?
 
 		#Primadona
-		station 35@prima1.primadona.primadona_ubend_monatip entrance
-		fix 35@prima1.primadona.primadona_ubend_monatip 404188 124291 1727
-		#fix 35@prima1.primadona.primadona_ubend_monatip 404561 123804 1727 # old GK?
+		station 35@prima1.primadona.primadona_ubend_mona_tip entrance
+		fix 35@prima1.primadona.primadona_ubend_mona_tip 404188 124291 1727
+		#fix 35@prima1.primadona.primadona_ubend_mona_tip 404561 123804 1727 # old GK?
 
 		#Vrtnarija
 		station 0@bclent2.vrtnarija.vrtnarija_vilinska entrance
@@ -48,13 +48,13 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 
 		### other entrances not fixed, survey points
 		#Monatip
-		station 1@monatip1.monatip.primadona_ubend_monatip entrance
-		#fix 1@monatip1.monatip.primadona_ubend_monatip 404190 124384 1741
+		station 1@mona_tip1.mona_tip.primadona_ubend_mona_tip entrance
+		#fix 1@mona_tip1.mona_tip.primadona_ubend_mona_tip 404190 124384 1741
 		#Ubend
-		station 5@ubend2.ubend.primadona_ubend_monatip entrance
-		#fix 5@ubend2.ubend.primadona_ubend_monatip 404220 124292 1779
+		station 5@ubend2.ubend.primadona_ubend_mona_tip entrance
+		#fix 5@ubend2.ubend.primadona_ubend_mona_tip 404220 124292 1779
 		#Belladonna
-		station 3@belladonna.primadona_ubend_monatip entrance
+		station 3@belladonna.primadona_ubend_mona_tip entrance
 
 
 		#Vilinska Jama
@@ -73,10 +73,10 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 
 	# EQUATE commands for CONNECTIONS
 	# NCB and MONATIP
-	equate 6@gallery.M18.m2m16m18 40@monatip11.monatip.primadona_ubend_monatip
+	equate 6@gallery.M18.m2m16m18 40@mona_tip11.mona_tip.primadona_ubend_mona_tip
 
 	#Wishing Well and Mig Country
-	equate 4@wishing_well2.monatip.primadona_ubend_monatip 1@migconleft.M16.m2m16m18
+	equate 4@wishing_well2.mona_tip.primadona_ubend_mona_tip 1@migconleft.M16.m2m16m18
 
 	# Waterloo and Dreams for the Soul
 	equate 1@dreamsforthesoul.vrtnarija.vrtnarija_vilinska 13@waterloo.M16.m2m16m18
@@ -87,6 +87,6 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 	join dreamsforthesoul-4p@dreamsforthesoul.vrtnarija.vrtnarija_vilinska waterloo-1p@waterloo.M16.m2m16m18
 
 	#Wishing Well and Mig Country
-	join wishing_well2-1p@wishing_well2.monatip.primadona_ubend_monatip migcondown-1p@migcondown.M16.m2m16m18
-	join hole@migcondown.M16.m2m16m18 hole2@wishing_well2.monatip.primadona_ubend_monatip #Mig country pit over 2 scraps
+	join wishing_well2-1p@wishing_well2.mona_tip.primadona_ubend_mona_tip migcondown-1p@migcondown.M16.m2m16m18
+	join hole@migcondown.M16.m2m16m18 hole2@wishing_well2.mona_tip.primadona_ubend_mona_tip #Mig country pit over 2 scraps
 endsurvey

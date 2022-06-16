@@ -614,15 +614,15 @@ survey the_aqueduct -title "The_Aqueduct"
 	endmap
 	
 	map m2p -projection plan
-		the_aqueduct-p2
+		the_aqueduct-2p
 	endmap
 	
 	map m3p -projection plan
-		the_aqueduct-p3
+		the_aqueduct-3p
 	endmap
 	
 	map m4p -projection plan
-		the_aqueduct-p4
+		the_aqueduct-4p
 	endmap
 	
 	map m-all-p -projection plan
@@ -636,9 +636,9 @@ survey the_aqueduct -title "The_Aqueduct"
 	map  m-all-e -projection extended
 		the_aqueduct-1s
 	endmap
-	join The_Aqueduct-1p the_aqueduct-p4
-	join The_Aqueduct-1p the_aqueduct-p3
-	join the_aqueduct-p2 the_aqueduct-p3
+	join The_Aqueduct-1p the_aqueduct-4p
+	join The_Aqueduct-1p the_aqueduct-3p
+	join the_aqueduct-2p the_aqueduct-3p
 	## map m1s -projection extended
 	##   The_Aqueduct-1s
 	## endmap

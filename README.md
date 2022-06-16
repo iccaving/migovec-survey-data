@@ -75,28 +75,28 @@ The full system:
 
 **Primadona**
 
-![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.primadona_ubend_monatip.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
-![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.primadona_ubend_monatip.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.primadona_ubend_mona_tip.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.primadona_ubend_mona_tip.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
 
-![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.primadona_ubend_monatip.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
-![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.primadona_ubend_monatip.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
-![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.primadona_ubend_monatip.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.primadona_ubend_mona_tip.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Plan Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Plan%20Drawn&query=%24.primadona_ubend_mona_tip.plan.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
+![Extended Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=Extended%20Drawn&query=%24.primadona_ubend_mona_tip.extended.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
 
 Primadona (in full Primadona/Monatip/Ubend) is a cave system mostly contained in the Western side of Migovec. It was connected to the main system in 2015. It is accessed from impressive entrances midway across the western cliffs of the Migovec plateau.
 
 - 3D Model  
-  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/primadona_ubend_monatip.3d) |
-  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/primadona_ubend_monatip.lox)
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/primadona_ubend_mona_tip.3d) |
+  [LOX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/primadona_ubend_mona_tip.lox)
 - Plan View (WIP)  
-  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_SLO.pdf) |
-  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_ENG.pdf) |
-  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_SLO.svg) |
-  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_plan_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_mona_tip_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_mona_tip_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_mona_tip_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_mona_tip_plan_ENG.svg)
 - Extended Elevation (WIP)  
-  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_SLO.pdf) |
-  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_ENG.pdf) |
-  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_SLO.svg) |
-  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_monatip_EE_ENG.svg)
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_mona_tip_EE_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_mona_tip_EE_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_mona_tip_EE_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/primadona_ubend_mona_tip_EE_ENG.svg)
 
 **Vrtnarija**
 
@@ -260,7 +260,7 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../data/primadona_ubend_monatip.th"
+source "../../data/primadona_ubend_mona_tip.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
@@ -270,7 +270,7 @@ input "../../layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select mprima_ubend_monatip-p@system_migovec -map-level 1
+select mprima_ubend_mona_tip-p@system_migovec -map-level 1
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view and specify the layout
@@ -279,13 +279,13 @@ layout plan
 	copy colour-by-new
 endlayout
 language sl
-export map -projection plan -o ../../outputs/map/primadona_ubend_monatip_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../outputs/map/primadona_ubend_mona_tip_plan_SLO.pdf -layout plan
 language en
-export map -projection plan -o ../../outputs/map/primadona_ubend_monatip_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/map/primadona_ubend_mona_tip_plan_ENG.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../outputs/model/primadona_ubend_monatip.3d -fmt survex
+export model -o ../../outputs/model/primadona_ubend_mona_tip.3d -fmt survex
 ```
 
 ## Adding data
@@ -299,7 +299,7 @@ We have used a pyramidal hierarchy,
 ```
 survey plateau
   survey system_migovec
-    survey primadona_ubend_monatip
+    survey primadona_ubend_mona_tip
       survey primadona
         YEAR N
         survey {passage1}
@@ -403,14 +403,14 @@ map m-all-<p/e> -projection <plan/extended> # this is a map of maps
 endmap
 
 map m1<p/e> -projection <plan/extended>  #this is a map
- MySurvey-p1                              #this is a scrap
+ MySurvey-1p                              #this is a scrap
 endmap
 
 map m2<p/e> -projection <plan/extended>
- MySurvey-p2
+ MySurvey-2p
 endmap
 
-join MySurvey-p1 MySurvey-p2 # specify a join so the passages are morphed to join together (semi automatic)
+join MySurvey-1p MySurvey-2p # specify a join so the passages are morphed to join together (semi automatic)
 
 join LineId1:O LineId2:end  #this is a manual join of two lines.
                             #No need to specify scrap, as the scope of this environment is the entire
@@ -451,7 +451,7 @@ python3 scripts/create_2d.py data/primadona/2021/beam_me_up/beam_me_up.th beam_m
 You can also specify a higher level survey and use a more specific `id`. Using the same example:
 
 ```
-python3 scripts/create_2d.py data/system_migovec.th beam_me_up.primadona.primadona_ubend_monatip.system_migovec
+python3 scripts/create_2d.py data/system_migovec.th beam_me_up.primadona.primadona_ubend_mona_tip.system_migovec
 ```
 
 We use the main System Migovec file, and then provide the full system `id` to `Beam Me Up`.
@@ -463,7 +463,7 @@ Generating a skeleton elevation is roughly the same as the plan, but you must be
 For `Beam Me Up` we can run:
 
 ```
-python3 scripts/create_2d.py --projection extended data/system_migovec.th beam_me_up.primadona.primadona_ubend_monatip.system_migovec
+python3 scripts/create_2d.py --projection extended data/system_migovec.th beam_me_up.primadona.primadona_ubend_mona_tip.system_migovec
 ```
 
 Notice we also specify `--projection extended`.

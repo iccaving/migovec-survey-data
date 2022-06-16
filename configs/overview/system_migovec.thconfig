@@ -27,13 +27,13 @@ input "../../layouts/mods.thl"
 source
 	map local-p -projection plan
 		m-all-p@m2m16m18.system_migovec
-		m-all-p@primadona_ubend_monatip.system_migovec
+		m-all-p@primadona_ubend_mona_tip.system_migovec
 		m-all-p@vrtnarija_vilinska.system_migovec
 	endmap
 endsource
 
 select local-p
-#select  m-primadona_ubend_monatip-e@system_migovec -map-level 0
+#select  m-primadona_ubend_mona_tip-e@system_migovec -map-level 0
 
 #----------------------------------------------------------------------------------|
 

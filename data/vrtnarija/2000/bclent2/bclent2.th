@@ -5,25 +5,25 @@ survey bclent2 -title "Vrtnarija entrance"
 	input "bclent2-p.th2"
 
 	map m-all-p -projection plan
-		mbclent2-p1
-		mbclent2-p2
-		mbclent2-p3
+		mbclent2-1p
+		mbclent2-2p
+		mbclent2-3p
 	endmap
 	
-	map	mbclent2-p1 -projection plan
-		bclent2-p1
+	map	mbclent2-1p -projection plan
+		bclent2-1p
 	endmap
 	
-	map mbclent2-p2 -projection plan
-		bclent2-p2
+	map mbclent2-2p -projection plan
+		bclent2-2p
 	endmap
 	
-	map mbclent2-p3 -projection plan
-		bclent2-p3
+	map mbclent2-3p -projection plan
+		bclent2-3p
 	endmap
 	
-	join bclent2-p1 bclent2-p2
-	join bclent2-p2 bclent2-p3
+	join bclent2-1p bclent2-2p
+	join bclent2-2p bclent2-3p
 	
 
 input bclent2-e.th2

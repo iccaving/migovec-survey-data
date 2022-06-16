@@ -8,15 +8,15 @@ survey holy_moley -title "holy_moley"
 	input "holy_moley-e.th2"
 	
 	map  m-all-e -projection extended
-		holy_moley-e1
+		holy_moley-1e
 	endmap
 	
 	map m1p -projection plan
-		holy_moley-p1
+		holy_moley-1p
 	endmap
 	
 	map m2p -projection plan
-		holy_moley-p2
+		holy_moley-2p
 	endmap
 	
 	map m-all-p -projection plan
@@ -24,7 +24,7 @@ survey holy_moley -title "holy_moley"
 		m2p
 	endmap
 	
-	join holy_moley-p2 holy_moley-p1
+	join holy_moley-2p holy_moley-1p
 	
 	centerline
 		date 2018.07.12

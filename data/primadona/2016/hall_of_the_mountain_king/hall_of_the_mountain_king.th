@@ -1,0 +1,64 @@
+encoding  utf-8
+survey hall_of_the_mountain_king #the hall of the mountain king
+
+	input "hall_of_the_mountain_king-1p.th2"
+	input "hall_of_the_mountain_king-e.th2"
+
+	map  m-all-e -projection extended
+		hall_of_the_mountain_king-1e
+		hall_of_the_mountain_king-2e
+	endmap
+
+	map m-all-p -projection plan
+		mhall_of_the_mountain_king-2p
+		mhall_of_the_mountain_king-1p
+	endmap
+
+	map mhall_of_the_mountain_king-1p -projection plan
+		hall_of_the_mountain_king-1p
+	endmap
+
+	map mhall_of_the_mountain_king-2p -projection plan
+		hall_of_the_mountain_king-2p
+	endmap
+
+	join hall_of_the_mountain_king-1p hall_of_the_mountain_king-2p
+
+	join hall_of_the_mountain_king-2e hall_of_the_mountain_king-1e
+
+
+	centreline
+		date 2016.07.22
+		explo-date 2016.07.22
+
+		explo-team "Jack Hare"
+		explo-team "Tanguy Racine"
+		explo-team "William Scott"
+		explo-team "Andrej Fratnik"
+
+		team "William Scott" insts notes
+		team "Jack Hare" notes
+		team "Andrej Fratnik" insts
+
+		mark 1 8 12 fixed
+
+		#Page 1/1
+		extend right
+		1 2 7.00  116 +46
+		extend right
+		2 3 4.73  041 +06
+		3 4 3.06  118 +01
+		4 5 17.00 062 -37
+		5 6 5.20  029 +03
+		6 7 13.00 060 -22
+		7 8 13.01 011 +18
+		8 9 15.00 031 +71
+		extend right
+		9 10  21.30 028 +82
+		extend right
+		10  11  2.00  349 +04
+		extend right
+		11  12  2.70  044 +12
+	endcentreline
+
+endsurvey

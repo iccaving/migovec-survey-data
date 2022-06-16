@@ -9,15 +9,15 @@ survey colony
 	endmap
 	
 	map m-all-p -projection plan
-		mcolony-p1
-		mcolony-p2
+		mcolony-1p
+		mcolony-2p
 	endmap
 	
-	map mcolony-p1 -projection plan
+	map mcolony-1p -projection plan
 		colony-1p
 	endmap
 	
-	map mcolony-p2 -projection plan
+	map mcolony-2p -projection plan
 		colony-10p
 	endmap
 	

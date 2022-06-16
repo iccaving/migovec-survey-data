@@ -6,7 +6,7 @@ encoding  utf-8
 ##XTHERION## xth_me_image_insert {3439.000000 1 1.0} {4804.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/primadona/2002/smer0/smer0_extend_2.gif" 0 {}
 ##XTHERION## xth_me_image_insert {6746.000000 1 1.0} {4804.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/primadona/2002/smer0/smer0_extend_3.gif" 0 {}
 
-scrap smer0-e1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
+scrap smer0-1e -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
 	
 	line wall -subtype invisible
 		5311.2546 2154.9204
@@ -392,7 +392,7 @@ scrap smer0-e1 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m] -projection extended
 endscrap
 
 
-scrap smer0-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap smer0-2e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 	
 	line wall:invisible
 		1914.0 4170.0

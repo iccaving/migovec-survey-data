@@ -5,7 +5,7 @@ survey power_grab -title "Power Grab"
 	input "power_grab-e.th2"
 	
 	map m-all-e -projection extended
-		power_grab-e1
+		power_grab-1e
 	endmap
 	input "power_grab-p.th2"
 	map m-all-p -projection plan

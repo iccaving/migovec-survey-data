@@ -3,27 +3,27 @@ survey smer1
 	input "smer1-p.th2"
 	input "smer1-e.th2" 
 
-	map msmer1-p1 -projection plan
+	map msmer1-1p -projection plan
 		smer1p_1
 	endmap
 	
-	map msmer1-p2 -projection plan
+	map msmer1-2p -projection plan
 		smer1p_2
 	endmap
 	
-	map msmer1-p3 -projection plan
+	map msmer1-3p -projection plan
 		smer1p_3
 	endmap
 	
 	map m-all-p -projection plan
-		msmer1-p3
-		msmer1-p2
-		msmer1-p1
+		msmer1-3p
+		msmer1-2p
+		msmer1-1p
 	endmap
 
 	map m-all-e -projection extended
-		smer1-e1
-		smer1-e2
+		smer1-1e
+		smer1-2e
 	endmap
 	join smer1p_1 smer1p_2
 	join smer1p_2 smer1p_3

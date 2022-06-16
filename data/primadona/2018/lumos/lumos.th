@@ -4,27 +4,27 @@ survey lumos -title "Lumos"
 	input "lumos-e.th2"
 	
 	map  m-all-e -projection extended
-		lumos-e1
+		lumos-1e
 	endmap
 	map m-all-p -projection plan
-		mlumos-p3
-		mlumos-p2
-		mlumos-p1
+		mlumos-3p
+		mlumos-2p
+		mlumos-1p
 	endmap
 	
-	map	mlumos-p1 -projection plan
-		lumos-p1
+	map	mlumos-1p -projection plan
+		lumos-1p
 	endmap
 	
-	map	mlumos-p2 -projection plan
-		lumos-p2
+	map	mlumos-2p -projection plan
+		lumos-2p
 	endmap
 	
-	map	mlumos-p3 -projection plan
-		lumos-p3
+	map	mlumos-3p -projection plan
+		lumos-3p
 	endmap
 	
-	join lumos-p1 lumos-p2
+	join lumos-1p lumos-2p
 	centreline
 		date 2018.07.30
 		explo-date 2018.07.30

@@ -4,20 +4,20 @@ survey dejavu
 	input "dejavu-e.th2"
 	
 	map m-all-p -projection plan
-		mdejavu-p1
-		mdejavu-p3
-		mdejavu-p2
+		mdejavu-1p
+		mdejavu-3p
+		mdejavu-2p
 	endmap
 	
-	map mdejavu-p1 -projection plan
+	map mdejavu-1p -projection plan
 		dejavup_1
 	endmap
 	
-	map mdejavu-p2 -projection plan
+	map mdejavu-2p -projection plan
 		dejavup_2
 	endmap
 	
-	map mdejavu-p3 -projection plan
+	map mdejavu-3p -projection plan
 		dejavup_3
 	endmap
 	

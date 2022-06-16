@@ -4,14 +4,14 @@ survey what_a_disappointment -title "What a Disappointment!"
 	input "what_a_disappointment-e.th2"
 	
 	map m-all-p -projection plan
-		what_a_disappointment-p1
-		what_a_disappointment-p2
+		what_a_disappointment-1p
+		what_a_disappointment-2p
 	endmap
 	
 	map  m-all-e -projection extended
 		what_a_disappointment-1e
 	endmap
-	join what_a_disappointment-p1 what_a_disappointment-p2
+	join what_a_disappointment-1p what_a_disappointment-2p
 	
 	centreline
 		date 2017.07.29

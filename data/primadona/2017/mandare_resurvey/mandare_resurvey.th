@@ -3,11 +3,11 @@ survey mandare_resurvey -title "Manđare resurvey"
 	input mandare_resurvey-e.th2
 	
 	map m-all-p -projection plan
-		mandare_low-p1
+		mandare_low-1p
 	endmap
 
 	map m-all-e -projection extended
-		mandare_resurvey-e1
+		mandare_resurvey-1e
 	endmap
 	
 	centreline

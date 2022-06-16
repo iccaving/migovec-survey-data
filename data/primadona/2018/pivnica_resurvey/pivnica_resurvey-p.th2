@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 929.000000 1013.500000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap pivnica_resurvey-p1 -projection plan -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m]
+scrap pivnica_resurvey-1p -projection plan -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m]
 
 point 443.5 694.0 station -name 6
 point 462.5 684.5 station -name 5
@@ -120,7 +120,7 @@ point 798.0 884.0 station -name 1
 endscrap
 
 
-scrap pivnica_resurvey-p4 -projection plan -scale [0 0 96 0 0 0 2000 0 inch]
+scrap pivnica_resurvey-4p -projection plan -scale [0 0 96 0 0 0 2000 0 inch]
 
 line wall -subtype invisible
   370.5 589.5
@@ -356,7 +356,7 @@ point 432.0 658.0 station -name 7
 endscrap
 
 
-scrap pivnica_resurvey-p2 -projection plan -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m]
+scrap pivnica_resurvey-2p -projection plan -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m]
 
 line wall 
   352.5 251.0
@@ -481,7 +481,7 @@ point 405.0 301.0 station -name 8
 endscrap
 
 
-scrap pivnica_resurvey-p3 -projection plan -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m]
+scrap pivnica_resurvey-3p -projection plan -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m]
 
 point 320.0 238.5 station -name 10
 point 211.0 156.5 station -name 12

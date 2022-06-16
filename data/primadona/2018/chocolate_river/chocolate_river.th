@@ -7,11 +7,11 @@ survey chocolate_river -title "Chocolate River (continuation of Mouseleum 2"
 	endmap
 	
 	map m-1-p -projection plan
-		chocolate_river-p1
+		chocolate_river-1p
 	endmap
 	
 	map m-2-p -projection plan
-		chocolate_river-p2
+		chocolate_river-2p
 	endmap
 	
 	map m-all-p -projection plan
@@ -19,7 +19,7 @@ survey chocolate_river -title "Chocolate River (continuation of Mouseleum 2"
 		m-1-p
 	endmap
 	
-	join chocolate_river-p1 chocolate_river-p2
+	join chocolate_river-1p chocolate_river-2p
 	
 	centreline
 		explo-team "James Wilson"

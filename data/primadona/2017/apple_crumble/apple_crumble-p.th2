@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 792.750000 917.750000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap apple_crumble-p1 -projection plan -scale [0.0 0.0 879.5449374288966 1024.0 0.0 0.0 120.8 140.64]
+scrap apple_crumble-1p -projection plan -scale [0.0 0.0 879.5449374288966 1024.0 0.0 0.0 120.8 140.64]
 
 line floor-step 
   620.2532 572.1506
@@ -77,7 +77,7 @@ point 627.166 493.05 station -name 1
 endscrap
 
 
-scrap apple_crumble-p2 -projection plan -scale [0.0 0.0 879.5449374288966 1024.0 0.0 0.0 120.8 140.64]
+scrap apple_crumble-2p -projection plan -scale [0.0 0.0 879.5449374288966 1024.0 0.0 0.0 120.8 140.64]
 
 line wall 
   583.0 529.5
@@ -174,7 +174,7 @@ point 574.233 536.372 station -name 8
 endscrap
 
 
-scrap apple_crumble-p3 -projection plan -scale [0.0 0.0 879.5449374288966 1024.0 0.0 0.0 120.8 140.64]
+scrap apple_crumble-3p -projection plan -scale [0.0 0.0 879.5449374288966 1024.0 0.0 0.0 120.8 140.64]
 
 line pit 
   582.3919 712.1827

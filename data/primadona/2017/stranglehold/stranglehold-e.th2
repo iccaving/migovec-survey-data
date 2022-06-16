@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap stranglehold-e1 -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 115.29] -projection extended
+scrap stranglehold-1e -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 115.29] -projection extended
 	
 	line wall -subtype blocks
 		3209.101 451.9748
@@ -137,7 +137,7 @@ scrap stranglehold-e1 -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 11
 endscrap
 
 
-scrap stranglehold-e2 -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap stranglehold-2e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 	
 	point 4361.2788 1341.7915 label -text Stranglehold -align br -scale l
 	line wall -subtype blocks

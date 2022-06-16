@@ -1,0 +1,88 @@
+survey wishing_well -title "Wishing Well"
+
+	input wishing_well-p.th2
+	input wishing_well-e.th2
+
+	map m-all-p -projection plan
+		wishing_well-1p
+		break
+		wishing_well-2p
+	endmap
+	join wishing_well-1p wishing_well-2p
+
+	map m-all-e -projection extended
+		wishing_well-1e
+		wishing_well-2e
+	endmap
+	join wishing_well-1e wishing_well-2e
+	centreline
+
+		date 2019.07.30
+		explo-date 2019.07.30
+
+		team "Lucie Studená" insts
+		team "David [P Wilson]" notes
+		explo-team "Lucie Studená"
+		explo-team "David [P Wilson]"
+
+		2 1   4.85 131 2.5
+		1 3   11.26 083 0
+		4 5   3.74 155 18
+		5 3   2.73 205 6
+		6 5   4.59 023 36
+		6 7   3.05 000 -90
+		3 8   19.35 246 11
+		8 9   10.80 000 90
+		extend right
+		9 10   14.57 333 77
+		extend right
+		10 11   6.59 286 53
+		extend right
+		11 12   5.94 208 -31
+		flags duplicate
+		extend right
+		12 13   23.65 329 3
+		flags not duplicate
+	endcentreline
+endsurvey
+
+# 2019.07.30
+# Wishing Well
+# Instruments Lucie Studena
+# Book David who Wilson
+
+#*begin wishing_well
+#  *date 2019.07.29
+#  *team "ls dpw"
+#  *units tape meters
+#  *units compass degrees
+#  *units clino degrees
+#  *alias station - ..
+#  *flags not splay
+#  *data normal from to tape compass clino
+#   2 1   4.85 131 2.5
+#	1 3   11.26 083 0
+#	4 5   3.74 155 18
+#	5 3   2.73 205 6
+#	6 5   4.59 023 36
+#	6 7   3.05 000 -90
+#	3 8   19.35 246 11
+#	8 9   10.80 000 90
+#	9 10   14.57 333 77
+#	10 11   6.59 286 53
+#	11 12   5.94 208 -31
+#	12 13   23.65 329 3
+#
+
+# *flags not splay
+#;Notes:
+#;stn 1 is pss
+#;stn 3 is pss
+#;stn 10 is fig 8 bolt near bridge
+#;stn 12 is pss
+#;stn 13 is t-28 kamnozer
+#
+
+#*end wishing_well
+
+#*equate wishing_well.13 mona_tip11.28

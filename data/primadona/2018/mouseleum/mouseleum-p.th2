@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap mouseleum-p1 -scale [327.0 -732.0 552.0 -732.0 0 0 14 0 m]
+scrap mouseleum-1p -scale [327.0 -732.0 552.0 -732.0 0 0 14 0 m]
 
 line wall -reverse on -subtype invisible
   250.75 -511.5
@@ -668,7 +668,7 @@ endscrap
 
 
 
-scrap mouseleum-p2 -scale [327.0 -732.0 552.0 -732.0 0 0 14 0 m]
+scrap mouseleum-2p -scale [327.0 -732.0 552.0 -732.0 0 0 14 0 m]
 
 line rock-border
 endline
@@ -1153,7 +1153,7 @@ endscrap
 
 
 
-scrap mouseleum-p3 -scale [327.0 -732.0 552.0 -732.0 0 0 14 0 m]
+scrap mouseleum-3p -scale [327.0 -732.0 552.0 -732.0 0 0 14 0 m]
 
 line pit
 endline
@@ -1455,7 +1455,7 @@ endscrap
 
 
 
-scrap mouseleum-p4 -scale [327.0 -732.0 552.0 -732.0 0 0 14 0 m]
+scrap mouseleum-4p -scale [327.0 -732.0 552.0 -732.0 0 0 14 0 m]
 
 point 194.0 -53.0 station -name "0"
 

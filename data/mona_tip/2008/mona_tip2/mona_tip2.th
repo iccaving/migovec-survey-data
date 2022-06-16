@@ -1,0 +1,59 @@
+encoding  utf-8
+survey mona_tip2
+	
+	input "mona_tip2-p.th2"
+	input "mona_tip2-e.th2"
+	
+	map  m-all-e -projection extended
+		mona_tip2-1e
+	endmap
+	
+	map m-all-p -projection plan
+		mmona_tip2-1p
+		mmona_tip2-2p
+		mmona_tip2-3p
+	endmap
+	
+	map mmona_tip2-2p -projection plan
+		mona_tip2-2p
+		break
+	endmap
+	
+	map mmona_tip2-1p -projection plan
+		mona_tip2-1p
+	endmap
+	
+	map mmona_tip2-3p -projection plan
+		mona_tip2-3p
+	endmap
+	
+	join mona_tip2-2p mona_tip2-3p
+	
+	centreline
+		date  2008.07.13
+		team "Iztok Možir" notes insts
+		team "Samo Rutar" notes insts
+		
+		explo-date  2008.07.13
+		explo-team "Iztok Možir"
+		explo-team "Samo Rutar"
+		
+		units length meters
+		units clino compass degrees
+		
+		extend right
+		27  28  5.40  182 +08 #
+		28  29  11.30 121 -51 #
+		29  30  4.90  123 -14 #
+		30  31  5.70  139 +01 #
+		31  32  1.8 092 +20 #
+		32  33  4.4 158 -07 #
+		33  34  4.0 173 -47 #
+		34  35  8.6 166 -18 #
+		35  36  8.0 198 -64 #
+		36  37  6.0 152 -85 #
+		
+	endcentreline
+	
+endsurvey
+

@@ -1,0 +1,151 @@
+encoding  utf-8
+survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
+
+	input mona_tip-p.thm
+	input mona_tip-e.thm
+	input mona_tip-routes-p.thm
+
+	######________________2007________________######
+
+	input "./2007/mona_tip1/mona_tip1.th"
+
+	######________________2008________________######
+
+	input "./2008/mona_tip2/mona_tip2.th"
+	input "./2008/mona_tip3/mona_tip3.th"
+	input "./2008/broken_hammer/broken_hammer.th"
+	input "./2008/mona_tip4/mona_tip4.th"
+	input "./2008/alkatraz/alkatraz.th"
+	input "./2008/doubletime/doubletime.th"
+
+	equate 27@mona_tip2 27@mona_tip1
+	equate 37@mona_tip2 37@mona_tip3
+	equate 44@mona_tip3 1@broken_hammer
+	equate 1@mona_tip4 16@broken_hammer
+	equate 1@alkatraz 50@mona_tip4
+	equate 20@doubletime 50@mona_tip4
+
+	#Scrap joins
+	join mona_tip2-1p@mona_tip2 mona_tip1-5p@mona_tip1
+	join mona_tip3p_2@mona_tip3 broken_hammer-1p@broken_hammer
+	join mona_tip1-s1@mona_tip1 mona_tip2-1e@mona_tip2
+	join mona_tip2-1e@mona_tip2 mona_tip3-1e@mona_tip3
+	join mona_tip3-1e@mona_tip3 broken_hammer-1e@broken_hammer
+	join mona_tip4-4e@mona_tip4 broken_hammer-2e@broken_hammer
+	join alkatraz_disto_resurvey-2p@alkatraz_disto_resurvey mona_tip4-5p@mona_tip4
+	join doubletime-1p@doubletime mona_tip4-5p@mona_tip4
+	join mona_tip4-1p@mona_tip4 broken_hammer-2p@broken_hammer
+	join mona_tip4-6p@mona_tip4 broken_hammer-2p@broken_hammer
+
+	#Line joins
+	#join s2_l2@mona_tip4:0 s2_l2@broken_hammer:0
+	#join s2_l1@mona_tip4:end s2_l1@broken_hammer:end
+
+
+
+	######________________2012________________######
+	input "./2012/mona_tip5/mona_tip5.th"
+
+	equate 27@mona_tip5 27@mona_tip2
+
+	join mona_tip5-1e@mona_tip5 mona_tip2-1e@mona_tip2
+	join mona_tip2-1p@mona_tip2 mona_tip5-1p@mona_tip5
+
+	######________________2013________________######
+
+	input "./2013/mona_tip6/mona_tip6.th"
+	input "./2013/mona_tip7/mona_tip7.th"
+	input "./2013/mona_tip8/mona_tip8.th"
+
+	equate 16@mona_tip6 1@mona_tip5
+	equate 20@mona_tip7 8@mona_tip6
+	equate 8@mona_tip8 1@mona_tip7
+
+	join mona_tip6-2p@mona_tip6 mona_tip7-1p@mona_tip7
+	join mona_tip6-2p@mona_tip6 mona_tip8-1p@mona_tip8
+	join mona_tip6-1p@mona_tip6 mona_tip9-1p@mona_tip9
+
+	join mona_tip6-1e@mona_tip6 mona_tip5-1e@mona_tip5
+	join mona_tip6-1e@mona_tip6 mona_tip7-1e@mona_tip7
+	join mona_tip7-1e@mona_tip7 mona_tip8-1e@mona_tip8
+
+	######________________2015________________######
+
+	input "./2015/mona_tip9/mona_tip9.th"
+	input "./2015/mona_tip10/mona_tip10.th"
+	input "./2015/mona_tip11/mona_tip11.th"
+
+	equate 8@mona_tip9 9@mona_tip6
+	equate 1@mona_tip10 6@mona_tip7
+	equate 1@mona_tip11 8@mona_tip10
+
+	join mona_tip7-1p@mona_tip7 mona_tip10-1p@mona_tip10
+
+	join mona_tip9-1e@mona_tip9 mona_tip7-1e@mona_tip7
+	join mona_tip9-1e@mona_tip9 mona_tip6-1e@mona_tip6
+	join mona_tip7-1e@mona_tip7 mona_tip10-1e@mona_tip10
+
+	######________________2016________________######
+	input "./2016/therock/therock.th"
+	input "./2016/cloacamaxima/cloacamaxima.th"
+
+	join alkatraz_disto_resurvey-1p@alkatraz_disto_resurvey therockp_2@therock
+	equate 14@therock 7@alkatraz
+
+	join cloacamaximap_1@cloacamaxima mona_tip2-3p@mona_tip2
+	join cm_e4_l1@cloacamaxima m2_e1_l1@mona_tip2
+	join cm_e4_l2@cloacamaxima m2_e1_l2@mona_tip2
+
+	equate 27@mona_tip2 53@cloacamaxima
+	equate 35@mona_tip2 44@cloacamaxima
+
+	######________________2018________________######
+	input "./2018/aleksandrija/aleksandrija.th"
+	input "./2018/cloaca_resurvey/cloaca_resurvey.th"
+	input "./2018/alkatraz_disto_resurvey/alkatraz_disto_resurvey.th"
+	input "./2018/well_hung/well_hung.th"
+	#input "./2018/rat_rift/rat_rift.th"
+
+	equate 12@cloacamaxima 12@cloaca_resurvey
+	equate 0@cloaca_resurvey 0@alkatraz_disto_resurvey
+	equate 7@alkatraz_disto_resurvey 1@alkatraz
+	equate 9@well_hung 25@cloacamaxima
+	equate 0@aleksandrija 49@cloacamaxima
+	equate PSEUDO12@therock 0@alkatraz_disto_resurvey
+
+	join aleksandrija-1p@aleksandrija mona_tip2-2p@mona_tip2
+
+	join well_hung-1e@well_hung cloacamaxima-3e@cloacamaxima
+	join well_hung-1e@well_hung mona_tip4-4e@mona_tip4
+	#join alkatraz_disto_resurvey-1s@alkatraz_disto_resurvey cloacamaxima-1e@cloacamaxima
+
+	######________________2019________________######
+
+	input "./2019/wishing_well/wishing_well.th"
+	input "./2019/wishing_well2/wishing_well2.th"
+	input "./2019/sad_face/sad_face.th"
+
+	equate 28@mona_tip11 13@wishing_well
+	equate 1@wishing_well 1@wishing_well2
+	equate 10@wishing_well 2@sad_face
+
+	join wishing_well2-1p@wishing_well2 wishing_well-1p@wishing_well
+	join wishing_well-1p@wishing_well mona_tip11-3p@mona_tip11
+
+	join l1@wishing_well l1@mona_tip11
+	join l2@wishing_well l2@mona_tip11
+
+	join wishing_well-1e@wishing_well sad_face-1e@sad_face
+	join mona_tip11-3e@mona_tip11 sad_face-1e@sad_face
+	join mona_tip11-3e@mona_tip11 mona_tip11-4e@mona_tip11
+
+	######________________2021________________######
+	input "./2021/extra_dunkel/extra_dunkel.th"
+
+	equate 24@mona_tip11 0@extra_dunkel
+
+	join mona_tip11-3Ap@mona_tip11 extra_dunkel-1p@extra_dunkel
+	join mona_tip11_l1@mona_tip11 extra_dunkel_l1@extra_dunkel
+
+
+endsurvey

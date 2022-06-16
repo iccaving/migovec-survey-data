@@ -3,16 +3,16 @@ survey pico2 -title "Tera and Nova pitches"
 	input pico2-p.th2
 	
 	map m-all-p -projection plan
-		mpico2-p2
-		mpico2-p1
+		mpico2-2p
+		mpico2-1p
 	endmap
 	
-	map mpico2-p2 -projection plan
-		pico2-p2
+	map mpico2-2p -projection plan
+		pico2-2p
 	endmap
 	
-	map mpico2-p1 -projection plan
-		pico2-p1
+	map mpico2-1p -projection plan
+		pico2-1p
 	endmap
 	
 

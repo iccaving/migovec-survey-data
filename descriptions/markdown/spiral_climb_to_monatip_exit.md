@@ -46,4 +46,4 @@ _Planika_ chamber represents the main fork in Mona tip passages, with a bolt-cli
 On the far side of the chamber, a rift passage leads to a short roped traverse and a series of up/down pitches (\numflag{6}{c5}).
 The final rope up enters a draughty, cobble-floored crawling-sized tube (\numflag{7}{c5}), which descends gently to a grassy ledge by the entrance of Mona tip.
 
-\CenteredFigure{../outputs/spiral_climb_to_monatip_exit.pdf}
+\CenteredFigure{../outputs/spiral_climb_to_mona_tip_exit.pdf}

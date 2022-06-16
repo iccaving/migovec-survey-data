@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 853.000000 1109.500000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap more_like_welding-p1 -projection plan -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
+scrap more_like_welding-1p -projection plan -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
 	
 	line wall -id l2
 		520.0 464.0
@@ -129,7 +129,7 @@ scrap more_like_welding-p1 -projection plan -scale [326.0 -733.0 520.0 -733.0 0.
 endscrap
 
 
-scrap more_like_welding-p2 -projection plan -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
+scrap more_like_welding-2p -projection plan -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
 	
 	line pit
 		405.0 951.0
@@ -200,7 +200,7 @@ scrap more_like_welding-p2 -projection plan -scale [326.0 -733.0 520.0 -733.0 0.
 endscrap
 
 
-scrap more_like_welding-p3 -projection plan -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
+scrap more_like_welding-3p -projection plan -scale [326.0 -733.0 520.0 -733.0 0.0 0.0 10 0.0 m]
 	
 	point 445.0408 541.2377 label -align tr -attr level 4 -text "More Like Welding"
 	line pit

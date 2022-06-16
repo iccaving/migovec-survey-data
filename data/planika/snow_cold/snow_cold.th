@@ -3,34 +3,34 @@ survey snow_cold -title "Planika lower chamber"
 	input snow_cold-e.th2
 	
 	map m-snow_cold-p -projection plan
-		msnow_cold-p1
-		msnow_cold-p2
-		msnow_cold-p3
-		msnow_cold-p4
+		msnow_cold-1p
+		msnow_cold-2p
+		msnow_cold-3p
+		msnow_cold-4p
 	endmap
 	
-	map msnow_cold-p1 -projection plan
-		snow_cold-p1
+	map msnow_cold-1p -projection plan
+		snow_cold-1p
 	endmap
 	
-	map msnow_cold-p2 -projection plan
-		snow_cold-p2
+	map msnow_cold-2p -projection plan
+		snow_cold-2p
 	endmap
 	
-	map msnow_cold-p3 -projection plan
-		snow_cold-p3
+	map msnow_cold-3p -projection plan
+		snow_cold-3p
 	endmap
 	
-	map msnow_cold-p4 -projection plan
-		snow_cold-p4
+	map msnow_cold-4p -projection plan
+		snow_cold-4p
 	endmap
 	
 	map  m-snow_cold-e -projection extended
-		msnow_cold-e1
+		msnow_cold-1e
 	endmap
 	
-	map msnow_cold-e1 -projection extended
-		snow_cold-e1
+	map msnow_cold-1e -projection extended
+		snow_cold-1e
 	endmap
 	
 	centreline

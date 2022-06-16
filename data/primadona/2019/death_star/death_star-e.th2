@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 12104.500000 4654.400000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap death_star-e1 -projection extended -scale [0 0 39 0 0 0 1 0 m]
+scrap death_star-1e -projection extended -scale [0 0 39 0 0 0 1 0 m]
 	
 	point 3205.4119 1500.5226 label -align bl -text "Death Star" -attr level 2 -scale l
 	line wall
@@ -253,7 +253,7 @@ scrap death_star-e1 -projection extended -scale [0 0 39 0 0 0 1 0 m]
 endscrap
 
 
-scrap death_star-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+scrap death_star-3e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 	
 	line wall -subtype invisible
 		783.7226 1741.95
@@ -367,7 +367,7 @@ scrap death_star-e3 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 endscrap
 
 
-scrap death_star-e4 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+scrap death_star-4e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 	
 	line wall -subtype invisible
 		4358.7726 1043.34
@@ -518,7 +518,7 @@ scrap death_star-e4 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 endscrap
 
 
-scrap death_star-e2 -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+scrap death_star-2e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 	
 	line wall -subtype invisible
 		529.4819 2547.245

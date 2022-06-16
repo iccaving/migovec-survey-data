@@ -97,7 +97,7 @@ survey moonraker_2 -title "Moonraker_2"
 	input "Moonraker_2-1s.th2"
 	
 	map m-all-p -projection plan
-		moonraker_2-p1
+		moonraker_2-1p
 	endmap
 	map  m-all-e -projection extended
 		moonraker_2-1s

@@ -44,13 +44,13 @@ layout plan
 endlayout
 
 
-select m-all-p@primadona.primadona_ubend_monatip.system_migovec  #-map-level 3
+select m-all-p@primadona.primadona_ubend_mona_tip.system_migovec  #-map-level 3
 
 
 language sl # slo not yet supported
-export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_SLO.pdf -layout plan
 language en
-export map -projection plan -o ../../outputs/primadona_ubend_monatip_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.pdf -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
@@ -69,15 +69,15 @@ layout ee
 	endcode
 endlayout
 language sl # slo not yet supported
-export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.pdf -layout ee
 
 language en
-export map -projection extended -o ../../outputs/primadona_ubend_monatip_EE_ENG.pdf -layout ee
+export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG.pdf -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-export model -o ../../outputs/primadona_ubend_monatip.3d -fmt survex
+export model -o ../../outputs/primadona_ubend_mona_tip.3d -fmt survex
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-export model -o ../../outputs/primadona_ubend_monatip.lox
+export model -o ../../outputs/primadona_ubend_mona_tip.lox

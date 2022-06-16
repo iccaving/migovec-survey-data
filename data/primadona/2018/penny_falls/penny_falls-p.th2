@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap penny_falls-p1 -scale [330.0 -733.0 518.0 -733.0 0.0 0.0 8 0.0 m]
+scrap penny_falls-1p -scale [330.0 -733.0 518.0 -733.0 0.0 0.0 8 0.0 m]
 	
 	line wall -reverse on
 		105.0 -589.0
@@ -126,7 +126,7 @@ endscrap
 
 
 
-scrap penny_falls-p2 -scale [330.0 -733.0 518.0 -733.0 0.0 0.0 8 0.0 m]
+scrap penny_falls-2p -scale [330.0 -733.0 518.0 -733.0 0.0 0.0 8 0.0 m]
 	
 	point 319.0 -473.0 station -name "7"
 	

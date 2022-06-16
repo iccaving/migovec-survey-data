@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap stranglehold-p1 -projection plan -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 115.29]
+scrap stranglehold-1p -projection plan -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 115.29]
 	
 	point 593.6237 494.6495 station -name 16
 	point 578.0717 527.9754 station -name 15
@@ -132,7 +132,7 @@ scrap stranglehold-p1 -projection plan -scale [0.0 0.0 1024.0 826.2665173572229 
 endscrap
 
 
-scrap stranglehold-p2 -projection plan -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 115.29]
+scrap stranglehold-2p -projection plan -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 115.29]
 	
 	point 685.4746 477.4672 label -align br -attr level 4 -text Stranglehold
 	point 774.5 567.5 water-flow -orientation 207.8
@@ -209,7 +209,7 @@ scrap stranglehold-p2 -projection plan -scale [0.0 0.0 1024.0 826.2665173572229 
 endscrap
 
 
-scrap stranglehold-p3 -projection plan -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 115.29]
+scrap stranglehold-3p -projection plan -scale [0.0 0.0 1024.0 826.2665173572229 0.0 0.0 142.88 115.29]
 	
 	line wall
 		437.0 540.0

@@ -5,10 +5,10 @@ survey pov
 	input "pov-e.th2"
 
 	map  m-all-e -projection extended
-		pov-e1
+		pov-1e
 		break
-		pov-e2
-		pov-e3
+		pov-2e
+		pov-3e
 	endmap
 
 	map m1p -projection plan
@@ -45,7 +45,7 @@ survey pov
 	join pov-3p pov-4p
 	join s3_l2 s5_l2
 	join s3_l3 s5_l3
-	join pov-e2 pov-e3
+	join pov-2e pov-3e
 
 	centreline
 		date 2001.07.28

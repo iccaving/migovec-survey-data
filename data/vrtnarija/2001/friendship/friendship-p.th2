@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 646.500000 1118.250000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap friendship-p1 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
+scrap friendship-1p -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 	
 	point 392.468 959.885 label -align br -attr level 3 -text Zimmer
 	point 348.855 966.845 passage-height -align t -value 60
@@ -210,7 +210,7 @@ scrap friendship-p1 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0
 endscrap
 
 
-scrap friendship-p2 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
+scrap friendship-2p -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 	
 	point 470.0 811.25 camp
 	line label -attr level 2 -scale l -text "Camp X-Ray"
@@ -299,7 +299,7 @@ scrap friendship-p2 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0
 endscrap
 
 
-scrap friendship-p3 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
+scrap friendship-3p -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 	
 	point 470.0 811.25 station -name 12
 	point 450.367 839.608 station -name 11
@@ -504,7 +504,7 @@ scrap friendship-p3 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0
 endscrap
 
 
-scrap friendship-p4 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
+scrap friendship-4p -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 	
 	line label -attr level 2 -scale l -text "Friendship Gallery"
 		285.0 468.0
@@ -599,7 +599,7 @@ scrap friendship-p4 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0
 endscrap
 
 
-scrap friendship-p5 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
+scrap friendship-5p -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 	
 	line rock-border -close on
 		356.5 391.75
@@ -719,7 +719,7 @@ scrap friendship-p5 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0
 endscrap
 
 
-scrap friendship-p6 -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
+scrap friendship-6p -projection plan -scale [0.0 0.0 540.118327372397 1024.0 0.0 0.0 157.8 299.17]
 	
 	line contour
 		435.75 377.25

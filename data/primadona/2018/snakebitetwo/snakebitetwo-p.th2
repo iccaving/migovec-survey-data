@@ -22,7 +22,7 @@ scrap pivnica-frame -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 endscrap
 
 
-scrap snakebitetwo-p1 -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+scrap snakebitetwo-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	
 	line rock-edge -clip off -close on -outline none -visibility off
 		-286.9792 767.0488

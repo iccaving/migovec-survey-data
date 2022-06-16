@@ -3,20 +3,20 @@ survey odessey -title "Odyssey"
 	input odessey-e.th2
 	
 	map m-all-p -projection plan
-		modessey-p1
-		modessey-p2
+		modessey-1p
+		modessey-2p
 	endmap
 	
-	map modessey-p1 -projection plan
-		odessey-p1
+	map modessey-1p -projection plan
+		odessey-1p
 	endmap
 	
-	map modessey-p2 -projection plan
-		odessey-p2
+	map modessey-2p -projection plan
+		odessey-2p
 	endmap
 
 	map m-all-e -projection extended
-		odessey-e1
+		odessey-1e
 	endmap
 
 	centreline

@@ -5,20 +5,20 @@ survey terminus -title "Terminus"
 	input "terminus-e.th2"
 	
 	map m-all-p -projection plan
-		mterminus-p1
-		mterminus-p2
-		mterminus-p3
+		mterminus-1p
+		mterminus-2p
+		mterminus-3p
 	endmap
 	
-	map mterminus-p1 -projection plan
+	map mterminus-1p -projection plan
 		terminusp_1
 	endmap
 	
-	map mterminus-p2 -projection plan
+	map mterminus-2p -projection plan
 		terminusp_2
 	endmap
 	
-	map mterminus-p3 -projection plan
+	map mterminus-3p -projection plan
 		terminusp_3
 	endmap
 	
