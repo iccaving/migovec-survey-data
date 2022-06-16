@@ -2,7 +2,7 @@
 title: Spiral Climb to Mona tip exit
 author: ICCC/JSPDT
 header-includes:
-- \usepackage{descriptions}
+  - \usepackage{descriptions}
 ---
 
 ## Spiral Climb to Monatip Exit
@@ -25,7 +25,6 @@ The continuation of the crawl is found 5 m above floor level on the opposite sid
 Reaching this crawl with the in-situ handline, the passage turns abruptly to the left at a T-junction (to the right is a smaller aven climbed for 10 m, continuing).
 The way on is to the left, finding a bifurcation after 20 m, with two crawling-sized passages leading off (\numflag{3}{c5}).
 _To the left, the crawl ascends to a pitch head, the start of a short pitch series (_ Well Hung _), which reconnects with the original Mona tip passage leading to Alkatraz._
-
 
 ### Cloaca Maxima to Planika chamber
 

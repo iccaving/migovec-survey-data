@@ -2,7 +2,7 @@
 title: About this Guide
 author: ICCC/JSPDT
 header-includes:
-- \usepackage{descriptions}
+  - \usepackage{descriptions}
 ---
 
 \TopFullWidthFigure{../outputs/face_of_mig_2018_tracine.jpg}{The south face of Tolminski Migovec, seen from Grušnica.}{Južno pobočje Tolminskega Migovca, gledano z Grušnice.}{\smalltriangle{90}}{Tanguy Racine, 2018}{\photo}
@@ -24,7 +24,7 @@ This guide deals with passages like these, which are often visited and give acce
 To assist the visiting caver unfamiliar with the complex navigation of Migovec cave system, written descriptions of key passages are given in this book, together with simplified plan view maps.
 Each double page contains both a map, with highlighted route and its corresponding description.
 The plan view maps also display some connecting passages which may also be of interest for a short visit.
-The descriptions of such excursions from the main route are given in *italics* in the text.
+The descriptions of such excursions from the main route are given in _italics_ in the text.
 
 ## The cave system
 
@@ -58,6 +58,7 @@ The smaller M-2b opening is used to enter M-2.
 Continuing downhill, NE of the M-2b entrance, zig-zags are necessary to descend the inclined limestone beds. Eventually, a downclimb under a small cliff, equipped with an in-situ rope can be descended to a shallow bowl, with a rocky overhang at its NE end: underneath is the sloping, cobble-floored entrance of Vrtnarija.
 
 <!-- \protect\FullWidthFigure{../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}} -->
+
 \protect\CenteredFigure{../outputs/Mig_routes.png}
 
 \protect\CenteredFigure{../outputs/system_overview.pdf}

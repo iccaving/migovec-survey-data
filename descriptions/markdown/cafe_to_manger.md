@@ -2,7 +2,7 @@
 title: Cafe to Manger
 author: ICCC/JSPDT
 header-includes:
-- \usepackage{descriptions}
+  - \usepackage{descriptions}
 ---
 
 <!-- ### Sejna Soba to Knot Very Good
@@ -20,17 +20,17 @@ A scramble up a boulder slope on the far side of the chamber leads to a climb up
 ### Hall of the Mountain King to Ajdovščina
 This begins as the upwind route labelled What a Coincidence! where, past a series of crawl connected muddy chambers, another constriction leads to a pitch head on the right-hand side. A traverse on the left gains the start of  a spacious phreatic passage with a vadose trench in the floor. This passage bends to the left, with an aven taking a trickle of water on the left. Further along, a Y-hang pitch drops into a larger chamber on top a very prominent large boulder in the centre. On the far side of the chamber another set of ropes allow the return journey via Ajdovščina and the TTT route. -->
 
-
 ## Cafe to Manger
 
 ### Sejna Soba to Povezava aven
+
 A hole immediately opposite the entrance series entry point into Sejna Soba leads after a short constricted section into a stooping height passage.
 Along the way, some peculiar smooth rounded boulders and a white flour texture on the walls is in evidence: this passage is called _Mlinotest_.
 After some 50 m of easy going passage, a junction is reached, with the obvious continuation (to the right) soon leading to an unrigged pitch.
 Instead, climbing up and ahead leads to a continuation of this passage, past some standing pools of water and a sharp left turn to wide ledge overlooking a climb down into _Povezava_ aven.
 
-
 ### Povezava aven to Manđare
+
 Descending into _Povezava_ aven, the way on is at floor level, on the opposite side.
 The floor soon drops and progress is achieved by traversing with the aid of protruding ledges to the level of a large choked block, beyond which the passage widens further.
 Climbing down just before the block leads back to the floor level of the rift passage, and after another short downclimb, the passage widens again, with the floor dropping away once more.
@@ -42,9 +42,9 @@ On the far side of this chamber, a handline can be followed all the way to four-
 ### Manđare to TTT
 
 The way to _TTT_ is found opposite the entry point, traversing over a large, flat topped boulder with a cairn.
-*To the left is a drop into a drippy, boulder floored chamber and further downclimbing leads back to the water seen previously, disappearing into a crack. To the right leads quickly to a high aven and a continuing passage on the far side, believed to loop back to Stara Jama*
+_To the left is a drop into a drippy, boulder floored chamber and further downclimbing leads back to the water seen previously, disappearing into a crack. To the right leads quickly to a high aven and a continuing passage on the far side, believed to loop back to Stara Jama_
 
-The correct way on passes a short traverse  and a rigged downclimb to a lower level of the rift.
+The correct way on passes a short traverse and a rigged downclimb to a lower level of the rift.
 Some 20 m further on, a short 10 m descent is followed by a rigged handline up a greasy slope into dry passage.
 Immediately following this climb up, another down climb leads to a wide dog-leg and a floor level constriction.
 After the squeeze, a climb down on ledges leads to a short sideways walking section ending with a bifurcation.
@@ -53,7 +53,7 @@ At the bottom of this 40 m pitch, split in the middle by a hanging rebelay, a la
 
 ### TTT to Camp Manger
 
-Beyond the very large fallen block in the middle of the _TTT_ pitch,  a small hole between bedrock and boulders can be found.
+Beyond the very large fallen block in the middle of the _TTT_ pitch, a small hole between bedrock and boulders can be found.
 After this short climb through boulders, a 5 m pitch is reached, followed by a very short section of walking passage and beyond a corner, another 5 m roped pitch lands in the middle of _Camp Manger_.
 This chamber is a T-junction, with the downstream continuation leading to the deeper parts of Primadona.
 Upstream, a short climb leads into _Déjà Vu_ passage and the Hammerhead extensions.
