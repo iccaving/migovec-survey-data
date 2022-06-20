@@ -1,0 +1,52 @@
+survey styx
+
+#Primadona 
+#Styx : below Hades 
+
+#Date: 18/06/2022
+
+#Instruments / Book: Izi / Tjaša
+
+#from	to	tape	comp	clino
+
+
+ centreline 
+ 	explo-date 2022.06.18
+ 	date 2022.06.18
+ 	team "Iztok Možir" insts 
+ 	team "Tjaša Rutar" notes tape
+
+ 	explo-team "Iztok Možir"
+ 	explo-team "Tjaša Rutar"
+
+ 	
+ 	explo-team "Andrej Fratnik"
+ 	explo-team "Grega Maffi"
+
+ 	units length meters
+	units compass clino degrees
+	data normal from to length compass clino left right up down
+	extend left
+	1	2	19	60	+18		2 3 4 0.5	# .1 is pss 36 krog
+	2	3	3.4	63	-90		3 0 1 0.2 
+	3	4	3.7	257	-22		0 10 5 0.5	# .3 is bolt
+	4	5	17.9	325	-56 	10 6 15 15	# .4 is bolt
+	5	6	5.2	285	-77		5.2 1.3 10 10
+	6	7	5.5	32	+18	 	1.5 0.5 1 0	# .6 is bolt
+	7	8	17.1	304	-67		3 0 8 7 	# .7 is PSS styx
+	8	9	6.4	206	+29		2.1 0.5 1 1.3	
+	9	10	3.1	38	-61		2 0.5 2.1 1.6 
+	10	11	6.1	344	-4		0.5 0.7 1 1 
+	11	12	5.4	54	+1		0.3 0.7 0.3 0.7 
+	12	13	3.3	4	-6	       1 1 0.2 0.8 
+	13	14	2.9	50	+2		2 0.6 1 1.5 
+	14	15	1.5	85	+9		0.9 0.2 0.5 0.5 
+	15	16	3	350	-8		1.6 0.5 0 1 
+	16	17	8.5	23	+3		0.7 0.2 0 0.5 
+	17	18	14	36	-3		1.5 0.5 0 0.5 
+	18	19	13.2	33	-23		2.4 0 1 1 	# .18 is sump	
+ endcentreline
+
+
+
+endsurvey

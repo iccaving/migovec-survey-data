@@ -532,4 +532,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join hallelujah-1e@hallelujah beam_me_up-1s@beam_me_up
 	join hades-1s@hades deveti_krog-2e@deveti_krog
 	join glavobol-1e@glavobol ma_je_vlazna-1e@ma_je_vlazna
+
+	###______________ 2022______________###
+	input "./2022/styx/styx.th"
+
+	equate 36@deveti_krog 1@styx
 endsurvey

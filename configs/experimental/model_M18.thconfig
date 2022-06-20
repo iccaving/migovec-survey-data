@@ -1,6 +1,6 @@
-source "../../M18/M18.th"
+source "../../data/system_migovec.th"
+#source "../../data/primadona/2022/styx/styx.th"
 
-export model -o "../../_outputs/model/M18.3d" -fmt survex
-export model -o "../../_outputs/model/M18.lox"
-select m-all-p@M18
-export map -o "../../_outputs/map/M18.pdf" -projection plan
+#export model -o "../../outputs/styx.3d" -fmt survex
+export model -o "../../outputs/system_migovec.3d" -fmt survex
+export model -o "../../outputs/system_migovec.lox" -fmt survex
