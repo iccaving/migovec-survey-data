@@ -20,6 +20,8 @@ layout connection_marker
 			    	RGB:=(115/255,37/255,160/255);
 			    elseif COLORCODE=5:
 					RGB:=(195/255,117/255,18/255);
+					elseif COLORCODE=6:
+					RGB:=(199/255,56/255,96/255);
 					else:
 						RGB:=(35/255,35/255,35/255);
 					fi;

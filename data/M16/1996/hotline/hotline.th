@@ -4,6 +4,7 @@ survey hotline -title "Hotline"
 	map m-all-p -projection plan
 		m1p
 		m2p
+		m3p
 	endmap
 
 	map m1p -projection plan
@@ -14,8 +15,12 @@ survey hotline -title "Hotline"
 		hotline-2p
 	endmap
 
-	join hotline-1p hotline-2p
+	map m3p -projection plan
+		hotline-3p
+	endmap
 
+	join hotline-1p hotline-2p
+	join hotline-3p hotline-1p
 
 input hotline-e.th2
 
