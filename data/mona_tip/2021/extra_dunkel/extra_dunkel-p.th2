@@ -3,7 +3,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
-	
+
 	line border -close on -id extra_dunkel-1p_blocks_1 -visibility off
 		539.2658 1163.0857
 		542.5014 1166.8606 626.6268 1228.3369 627.7053 1235.8866
@@ -15,11 +15,11 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		468.6219 1191.1275 505.8313 1160.3894 513.9203 1159.8501
 		522.0093 1159.3109 539.2658 1163.0857 539.2658 1163.0857
 	endline
-	
+
 	area u:smallblocks -attr scale 1.5
 	extra_dunkel-1p_blocks_1
 	endarea
-	
+
 	line border -close on -id extra_dunkel-1p_u_smallblocks_1 -visibility off
 		284.4636 1065.6882
 		284.4636 1065.6882 349.2877 1243.3826 350.0504 1249.4837
@@ -32,23 +32,23 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		192.9471 1112.209 257.7713 1069.5014 262.3471 1067.9761
 		266.9229 1066.4508 284.4636 1065.6882 284.4636 1065.6882
 	endline
-	
+
 	area u:smallblocks -attr scale 1.2
 	extra_dunkel-1p_u_smallblocks_1
 	endarea
-	
+
 	line pit
 		260.8218 1038.2332
 		260.8218 1038.2332 279.8878 1010.0157 312.6812 1072.5519
 		345.4745 1135.0881 363.7778 1192.2859 365.3031 1216.6903
 		366.8284 1241.0947 375.9801 1274.6508 352.3383 1300.5804
 	endline
-	
+
 	line contour
 		1833.5036 1043.3687
 		1833.5036 1043.3687 1890.6658 1290.3524 1885.2731 1331.3366
 	endline
-	
+
 	line pit -close on -outline in
 		866.0608 408.1137
 		876.8446 443.894 856.354 510.5741 850.9614 519.2024
@@ -68,7 +68,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		787.328 358.5012 815.3698 354.1871 827.2337 363.8939
 		839.0975 373.6006 860.4004 389.3325 866.0608 408.1137
 	endline
-	
+
 	line wall
 		1596.2267 1427.3259
 		1596.2267 1427.3259 1611.3261 1378.792 1611.3261 1370.1638
@@ -101,7 +101,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		634.7538 1159.4704 668.9661 1172.6863 690.9334 1192.5397
 		702.8718 1203.3293 709.6737 1226.7191 709.6737 1226.7191
 	endline
-	
+
 	line wall
 		2022.2466 1328.101
 		1955.3777 1348.5931
@@ -115,7 +115,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1642.6035 1442.4254
 		1632.8967 1452.1322
 	endline
-	
+
 	line wall -subtype blocks
 		2058.9167 697.1601
 		2059.9952 703.6313 2077.2517 751.0867 2077.2517 755.4008
@@ -136,7 +136,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		2024.4037 1327.0225
 		2024.4037 1327.0225
 	endline
-	
+
 	line wall
 		885.4744 329.3808
 		885.4744 329.3808 867.1393 364.9724 868.2179 373.6006
@@ -170,7 +170,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		2045.9743 696.0816
 		2053.524 683.1392
 	endline
-	
+
 	line wall
 		577.5105 1412.5346
 		577.5105 1412.5346 549.8102 1405.6115 529.1078 1400.863
@@ -180,7 +180,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		384.369 1321.9342 376.7427 1312.7825 372.1668 1305.1562
 		367.591 1297.5298 375.2174 1279.2265 352.3383 1300.5804
 	endline
-	
+
 	line wall:pit
 		352.3383 1300.5804
 		329.4592 1321.9342 285.2262 1364.6419 269.9735 1375.3188
@@ -192,7 +192,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		131.1736 1204.4881 152.5274 1123.6486 167.7801 1114.4969
 		183.0329 1105.3453 251.6702 1061.1124 260.8218 1038.2332
 	endline
-	
+
 	line wall
 		260.8218 1038.2332
 		269.9735 1015.3541 274.5493 972.6465 277.5999 957.3937
@@ -214,7 +214,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		788.5666 336.6072 812.971 342.7083 822.1226 335.082
 		831.2743 327.4556 843.4765 313.7281 843.4765 313.7281
 	endline
-	
+
 	line pit
 		501.7065 1366.1105
 		492.2665 1359.6405
@@ -298,7 +298,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		515.0965 1373.4305
 		507.7465 1369.1105
 	endline
-	
+
 	line rock-border -close on
 		439.05 1104.26
 		430.78 1100.63
@@ -318,7 +318,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		466.91 1056.29
 		462.78 1067.83
 	endline
-	
+
 	line rock-border -close on
 		451.45 1004.32
 		437.84 1007.8
@@ -332,7 +332,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		451.54 979.66
 		457.53 984.95
 	endline
-	
+
 	line rock-border -close on
 		391.82 1056.83
 		385.46 1042.51
@@ -346,7 +346,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		404.54 1015.04
 		405.33 1024.21
 	endline
-	
+
 	line rock-border -close on
 		396.23 1134.2
 		386.67 1127.65
@@ -376,7 +376,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		397.24 1100.07
 		396.23 1110.89
 	endline
-	
+
 	line rock-border -close on
 		568.36 887.43
 		551.75 895.24
@@ -410,7 +410,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		609.3 871.31
 		597.01 878.63
 	endline
-	
+
 	line pit
 		495.88 836.06
 		498.9 828.32
@@ -454,7 +454,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		517.55 833.04
 		511.72 838.07
 	endline
-	
+
 	line rock-border -close on
 		652.91 780.66
 		641.94 780.66
@@ -471,7 +471,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		655.93 758.95
 		657.95 769.27
 	endline
-	
+
 	line rock-border -close on
 		348.92 1014.34
 		337.28 1009.88
@@ -489,7 +489,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		372.07 990.85
 		372.07 1000.24
 	endline
-	
+
 	line rock-border -close on
 		688.15 809.87
 		680.11 806.86
@@ -504,7 +504,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		686.13 773.7
 		687.14 781.67
 	endline
-	
+
 	line rock-border -close on
 		505.95 1012.32
 		497.24 1007.29
@@ -518,7 +518,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		525.08 977.55
 		523.92 987.44
 	endline
-	
+
 	line rock-border -close on
 		524.07 1064.7
 		507.83 1064.7
@@ -532,7 +532,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		522.88 1021.39
 		530.11 1026.66
 	endline
-	
+
 	line rock-border -close on
 		502.93 1080.81
 		491.52 1078.8
@@ -542,7 +542,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		512.49 1060.67
 		521.95 1062.68
 	endline
-	
+
 	line rock-border -close on
 		557.29 1032.47
 		549.74 1024.41
@@ -554,7 +554,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		566.1 1014.56
 		564.37 1023.3
 	endline
-	
+
 	point 497.074 638.545 popcorn -scale s
 	point 402.44 710.267 popcorn -scale s
 	point 332.74 808.002 popcorn -scale s
@@ -563,7 +563,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 	point 695.212 914.092 popcorn -scale s
 	point 780.432 787.814 popcorn -scale s
 	point 594.256 1101.19 popcorn -scale s
-	
+
 	line rock-border -close on
 		738.4 767.62
 		732.23 757.84
@@ -586,7 +586,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		755.8 736.87
 		750.66 745.16
 	endline
-	
+
 	line rock-border -close on
 		1795.58 1228.21
 		1772.15 1213.37
@@ -601,7 +601,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1820.28 1168.47
 		1831.26 1178.77
 	endline
-	
+
 	line rock-border -close on
 		1829.89 1294.12
 		1793.64 1282.0
@@ -614,7 +614,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1849.17 1228.21
 		1860.19 1228.21
 	endline
-	
+
 	line rock-border -close on
 		1720.1 1262.53
 		1677.19 1248.76
@@ -627,7 +627,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1732.2 1227.71
 		1737.02 1238.73
 	endline
-	
+
 	line rock-border -close on
 		2036.0194 1173.2949
 		2024.0194 1155.9049
@@ -661,7 +661,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		2059.8094 1165.1349
 		2057.7094 1173.5349
 	endline
-	
+
 	line rock-border -close on
 		1931.21 1302.28
 		1919.05 1298.24
@@ -677,7 +677,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1970.63 1261.81
 		1970.63 1270.63
 	endline
-	
+
 	line rock-border -close on
 		2068.49 1262.84
 		2054.99 1258.79
@@ -693,7 +693,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		2055.64 1220.06
 		2060.98 1226.04
 	endline
-	
+
 	line rock-border -close on
 		2003.23 1019.93
 		1991.54 1022.61
@@ -707,7 +707,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		2029.94 970.0
 		2036.33 981.26
 	endline
-	
+
 	line rock-border -close on
 		2026.08 933.85
 		2020.37 925.28
@@ -721,7 +721,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1994.48 935.85
 		2002.55 945.28
 	endline
-	
+
 	line rock-border -close on
 		2027.92 827.55
 		2014.54 827.55
@@ -735,7 +735,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		2045.37 810.58
 		2041.86 819.03
 	endline
-	
+
 	line rock-border -close on
 		2013.39 882.78
 		1996.25 867.51
@@ -745,7 +745,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		2021.94 849.95
 		2028.26 857.3
 	endline
-	
+
 	line rock-border -close on
 		2049.41 763.6
 		2028.5 756.33
@@ -755,7 +755,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		2048.51 741.77
 		2055.15 750.65
 	endline
-	
+
 	line rock-border -close on
 		1982.6 785.69
 		1964.4 779.31
@@ -768,7 +768,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1994.02 754.28
 		1994.22 762.9
 	endline
-	
+
 	line rock-border -close on
 		1921.01 861.27
 		1926.42 839.97
@@ -779,7 +779,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1955.29 847.32
 		1944.2 849.64
 	endline
-	
+
 	line rock-border -close on
 		1956.45 918.24
 		1941.49 909.2
@@ -791,7 +791,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1972.21 887.77
 		1972.72 898.48
 	endline
-	
+
 	line rock-border -close on
 		1907.65 944.99
 		1896.33 925.53
@@ -804,7 +804,7 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1932.14 926.85
 		1930.31 934.52
 	endline
-	
+
 	point 229.93 181.62 narrow-end
 	point 546.15 868.68 station -name 1
 	point 421.35 1071.96 station -name 0
@@ -829,11 +829,11 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1764.7422 1019.9305
 		1603.0625 1192.2859
 	endline
-	
+
 	area u:smallblocks -attr scale 1.2
 	extra_dunkel-1p_u_smallblocks_2
 	endarea
-	
+
 	line border -close on -id extra_dunkel-1p_u_smallblocks_3 -visibility off
 		1602.0547 787.8348
 		1536.0918 884.5652
@@ -855,11 +855,11 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1598.4863 780.4617
 		1602.0547 787.8348
 	endline
-	
+
 	area u:smallblocks -attr scale 1.2
 	extra_dunkel-1p_u_smallblocks_3
 	endarea
-	
+
 	line border -close on -id extra_dunkel-1p_u_smallblocks_4 -visibility off
 		1270.9297 665.7801
 		1230.5996 751.368
@@ -883,11 +883,11 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		1188.1875 638.6121
 		1270.9297 665.7801
 	endline
-	
+
 	area u:smallblocks -attr scale 1.2
 	extra_dunkel-1p_u_smallblocks_4
 	endarea
-	
+
 	line border -close on -id extra_dunkel-1p_u_smallblocks_5 -visibility off
 		1026.3496 507.2625
 		1017.4199 527.743
@@ -905,37 +905,37 @@ scrap extra_dunkel-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 		934.9922 454.0535
 		1026.3496 507.2625
 	endline
-	
+
 	area u:smallblocks -attr scale 1.2
 	extra_dunkel-1p_u_smallblocks_5
 	endarea
-	
+
 	line contour
 		1792.5194 1013.1698
 		1792.5194 1013.1698 1623.1899 1197.5987 1607.012 1201.9128
 		1590.834 1206.2269 1578.9701 1222.4049 1578.9701 1222.4049
 	endline
-	
+
 	line contour
 		1612.4046 772.6573
 		1612.4046 772.6573 1461.4102 994.8348 1454.939 1001.306
 	endline
-	
+
 	line contour
 		1276.9813 652.9403
 		1276.9813 652.9403 1187.4632 844.9189 1174.5208 864.3325
 	endline
-	
+
 	line contour
 		1034.3117 489.0035
 		1034.3117 489.0035 928.6156 733.8302 904.8879 764.029
 	endline
-	
+
 endscrap
 
 
 scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
-	
+
 	point 681.0902 456.1077 water-flow -orientation 210.76205487732867
 	point 733.9448 369.2865 water-flow -orientation 238.71597837294442
 	line rock-border -close on
@@ -960,7 +960,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		499.18 312.6
 		489.53 315.27
 	endline
-	
+
 	line rock-border -close on
 		615.48 360.46
 		603.68 356.97
@@ -976,7 +976,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		639.64 336.88
 		636.15 345.53
 	endline
-	
+
 	line rock-border -close on
 		662.1 276.12
 		652.36 272.06
@@ -990,7 +990,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		680.36 243.84
 		683.61 253.36
 	endline
-	
+
 	line rock-border -close on
 		731.54 226.33
 		698.25 228.57
@@ -1002,7 +1002,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		716.93 195.15
 		720.35 204.38
 	endline
-	
+
 	line rock-border -close on
 		715.04 276.95
 		704.16 275.59
@@ -1015,7 +1015,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		731.39 246.19
 		734.9 256.23
 	endline
-	
+
 	line rock-border -close on
 		667.06 223.14
 		655.35 217.3
@@ -1025,7 +1025,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		683.19 199.96
 		687.74 206.59
 	endline
-	
+
 	line rock-border -close on
 		621.526 238.8125
 		591.296 233.5325
@@ -1035,7 +1035,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		633.886 215.6325
 		639.726 220.2125
 	endline
-	
+
 	line rock-border -close on
 		671.0229 316.6056
 		649.9329 312.8856
@@ -1045,7 +1045,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		659.9429 279.3556
 		666.4729 285.5656
 	endline
-	
+
 	line rock-border -close on
 		642.9556 208.2653
 		636.1456 202.2753
@@ -1053,7 +1053,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		648.4056 184.0453
 		665.9656 185.8953
 	endline
-	
+
 	line rock-border -close on
 		623.493 300.0233
 		612.613 298.3733
@@ -1062,7 +1062,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		612.743 274.7833
 		622.433 276.6133
 	endline
-	
+
 	line rock-border -close on
 		595.92 275.29
 		596.9 257.43
@@ -1070,49 +1070,49 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		614.12 250.46
 		619.91 258.72
 	endline
-	
-	point 555.444 107.109 label -align b -attr level 3 -text "Extra Dunkel"
-	
+
+	point 555.444 107.109 label -align b -attr level 3 -text "Extra Dunkel" -scale l
+
 	line u:texture
 		721.8961 345.1209
 		707.231 365.0235 685.0204 390.7125 665.0194 399.9061
 		643.0654 409.9974 592.5689 402.194 592.5689 402.194
 	endline
-	
+
 	line u:texture
 		629.9381 543.2819
 		629.9381 543.2819 729.0809 525.7412 752.7227 499.0489
 		776.3644 472.3566 796.9556 414.3962 797.7183 397.6182
 		798.4809 380.8402 798.4809 380.8402 798.4809 380.8402
 	endline
-	
+
 	line u:texture
 		669.5952 629.4598
 		655.8678 448.7149
 	endline
-	
+
 	line u:texture
 		764.9249 561.5851
 		690.9491 411.3456
 	endline
-	
+
 	line u:texture
 		822.1226 460.9171
 		729.0809 388.4666
 	endline
-	
+
 	line u:texture
 		766.4501 369.4006
 		766.4501 369.4006 774.0765 430.4116 725.2677 462.4423
 		676.459 494.4731 597.1447 489.1346 597.1447 489.1346
 	endline
-	
+
 	line u:texture
 		817.5468 394.5677
 		817.5468 394.5677 822.1226 486.8467 764.9249 545.5698
 		707.7271 604.2928 607.8217 615.7324 607.8217 615.7324
 	endline
-	
+
 	point 609.83 350.3 station -name 11
 	point 491.3 293.11 station:fixed -name 12
 	line wall:invisible
@@ -1130,7 +1130,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		587.2305 500.5742 594.8568 417.4468 592.5689 410.583
 		590.281 403.7193 586.4678 401.4314 586.4678 401.4314
 	endline
-	
+
 	line wall
 		589.5184 399.9061
 		586.4678 399.1435 553.6744 404.4819 553.6744 404.4819
@@ -1156,7 +1156,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		360.87 254.8
 		352.71 250.87
 	endline
-	
+
 	line wall
 		382.68 235.69
 		391.32 237.29
@@ -1180,7 +1180,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		738.2326 234.4139 742.0458 274.071 742.0458 278.6468
 		742.0458 283.2227 741.2831 312.9655 741.2831 312.9655
 	endline
-	
+
 	line wall:presumed
 		352.254 250.8653
 		344.16 245.17
@@ -1199,7 +1199,7 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		249.14 194.56
 		241.45 191.4
 	endline
-	
+
 	line wall:presumed
 		251.5 183.78
 		260.16 184.73
@@ -1219,5 +1219,5 @@ scrap extra_dunkel-2p -projection plan -scale [0 0 96 0 0 0 1000 0 inch]
 		367.72 233.05
 		382.2685 235.6573
 	endline
-	
+
 endscrap

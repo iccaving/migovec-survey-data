@@ -24,7 +24,7 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 
 	centreline
 		cs epsg:3794
-		#entrance fixes (EPSG:3901)
+		#entrance fixes (EPSG:3912)
 
 		#M2
 		station 16@izent1.M2.m2m16m18 entrance
@@ -49,7 +49,7 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 		### other entrances not fixed, survey points
 		#Monatip
 		station 1@mona_tip1.mona_tip.primadona_ubend_mona_tip entrance
-		#fix 1@mona_tip1.mona_tip.primadona_ubend_mona_tip 404190 124384 1741
+		fix 1@mona_tip1.mona_tip.primadona_ubend_mona_tip 404186 124371 1741
 		#Ubend
 		station 5@ubend2.ubend.primadona_ubend_mona_tip entrance
 		#fix 5@ubend2.ubend.primadona_ubend_mona_tip 404220 124292 1779
@@ -59,7 +59,7 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 
 		#Vilinska Jama
 		station 1@vilinent.vilinska.vrtnarija_vilinska entrance
-		#fix 1@vilinent.vilinska.vrtnarija_vilinska 404793 124544 1779
+		fix 1@vilinent.vilinska.vrtnarija_vilinska 404790 124535 1782
 
 		#M18
 		station 26@torn.M18.m2m16m18 entrance

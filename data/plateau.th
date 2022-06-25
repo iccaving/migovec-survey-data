@@ -14,10 +14,10 @@ survey plateau -title "Migovec Plateau"
 	# input the plateau DEM (uncomment)
 	input "./DEM/MIG_DEM.th"
 	# input the individual cave data files
-	
+
 	# first the connected caves of System Migovec
 	input "./system_migovec.th"
-	
+
 	# other caves
 	input "./gondolin/gondolin.th"
 	input "./planika_resurvey_2019/planika.th"
@@ -33,9 +33,9 @@ survey plateau -title "Migovec Plateau"
 	input "./coincidence/coincidence.th"
 	input "./planja_jama/planja_jama.th"
 	input "./brezno_pod_vrhom_planje/brezno_pod_vrhom_planje.th"
-	
+
 	#equate S8@planja_jama 0@brezno_planja_ent.brezno_pod_vrhom_planje
-	
+
 	map m-all-p -projection plan
 		m-all-p@planja_jama
 		m-all-p@brezno_pod_vrhom_planje
@@ -68,15 +68,15 @@ survey plateau -title "Migovec Plateau"
 
 	centreline -title entrances
 		cs epsg:3794
-		
+
 		# PLANJA JAMA
 		fix 0@planja_jama 403819 125777 1897
 		#fix 0 404188 125289 1897
-		
+
 		# BREZNO POD VRHOM PLANJE
 		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 403804 125750 1870
-		#fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 404177 125263 1877  # GK fix
-		
+		#fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 404177 125263 1870  # GK fix
+
 		# COINCIDENCE
 	    fix 0@coincidence_ent.coincidence 404773 123067 1310
 		# GONDOLIN
@@ -95,18 +95,18 @@ survey plateau -title "Migovec Plateau"
 	    fix 14@M10 404597 124280 1862
 
 	    # M15
-    	fix 14@M15 404521 124474 1860
+    	fix 14@M15 404518 124477 1860
 
     	# M17
 		fix 0@M17  404421 124503 1879
 
 		# M19
-		fix 25@M19 404405 124443 1850 
+		fix 25@M19 404405 124443 1850
 
 		# MUGO
     	fix 7@mugo 404140 124443 1698
 
-    	# PLANIKA 
+    	# PLANIKA
 		fix 15@planika 404230 124355 1787
 
 		# ROWAN CAVE
@@ -114,6 +114,5 @@ survey plateau -title "Migovec Plateau"
 
 
 	endcentreline
-	
-endsurvey
 
+endsurvey

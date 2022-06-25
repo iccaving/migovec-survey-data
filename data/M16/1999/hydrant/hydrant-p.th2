@@ -5,22 +5,22 @@ encoding  utf-8
 
 
 scrap hydrant-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
+
 	line pit
 		199.9974 466.8478
 		199.9974 466.8478 215.1657 457.6719 227.5251 457.6719
 	endline
-	
+
 	line wall -subtype invisible
 		246.4387 429.2078
 		268.9103 435.5748
 	endline
-	
+
 	line wall -subtype invisible
 		216.4766 433.7022
 		235.952 433.7022
 	endline
-	
+
 	line wall
 		268.9103 435.5748
 		268.9103 435.5748 272.281 440.8182 274.5282 442.3163
@@ -40,7 +40,7 @@ scrap hydrant-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		332.2054 538.9442
 		336.3252 537.8206
 	endline
-	
+
 	line wall
 		235.952 433.7022
 		240.0717 435.9493
@@ -48,7 +48,7 @@ scrap hydrant-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		246.4387 435.9493 247.1878 435.5748 246.8132 433.7021
 		246.4387 431.8295 246.4387 429.2078 246.4387 429.2078
 	endline
-	
+
 	line wall
 		186.7017 454.8629
 		186.7017 454.8629 191.6698 449.779 195.677 449.8947
@@ -58,7 +58,7 @@ scrap hydrant-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		214.6039 442.6908 216.102 443.4398 216.8511 440.8182
 		217.6001 438.1965 216.4766 433.7022 216.4766 433.7022
 	endline
-	
+
 	line wall
 		315.3517 552.4272
 		315.3517 552.4272 311.9809 541.9404 310.4828 538.9442
@@ -95,7 +95,7 @@ scrap hydrant-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		200.7464 467.4096 197.0011 463.2898 197.0011 463.2898
 		186.7017 454.8629
 	endline
-	
+
 	point 320.91 514.88 station -name 7
 	point 313.03 495.75 station -name 8
 	point 289.09 471.34 station -name 9
@@ -109,13 +109,13 @@ endscrap
 
 
 scrap hydrant-2p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
-	
+
 	line wall -subtype invisible
 		368.1599 562.5394
 		460.7324 685.3953
 	endline
-	
-	point 501.1059 655.3644 label -align r -text "Gauntlet Gulf" -attr level 3
+
+	point 501.1059 655.3644 label -align r -text "Gauntlet Gulf" -attr level 3 -scale l
 	line wall
 		425.4626 689.1295
 		415.7249 682.7625
@@ -133,32 +133,32 @@ scrap hydrant-2p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 		319.4714 555.0489
 		316.1007 552.8017
 	endline
-	
+
 	line wall
 		460.7324 685.3953
 		461.099 689.2376 458.7954 696.9946 458.7954 696.9946
 		458.0464 707.4813
 		456.1738 714.9719
 	endline
-	
+
 	line wall
 		337.8233 537.4461
 		337.8233 537.4461 359.1713 547.5583 359.5458 549.0564
 		359.9203 550.5545 368.1599 562.5394 368.1599 562.5394
 	endline
-	
+
 	point 446.34 767.17 station -name 1
 	point 447.13 688.19 station -name 2
 	point 385.71 625.51 station -name 3
 	point 358.07 561.81 station -name 4
 	point 348.46 557.24 station -name 5
 	point 323.9 546.06 station -name 6
-	
+
 endscrap
 
 
 scrap hydrant-3p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
-	
+
 	line wall
 		199.9974 466.8478
 		199.9974 466.8478 193.8393 463.2016 188.7578 462.1789
@@ -192,7 +192,7 @@ scrap hydrant-3p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 		63.1416 246.5211 61.9602 243.2347 59.322 241.5254
 		56.2674 239.5463 48.7288 238.8771 48.7288 238.8771
 	endline
-	
+
 	line wall
 		54.5 222.8686
 		54.5 222.8686 65.772 228.342 70.9195 231.8729
@@ -216,11 +216,11 @@ scrap hydrant-3p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 		194.9927 422.2967 193.0981 427.1178 194.9153 431.1441
 		200.6795 443.916 227.5251 457.6719 227.5251 457.6719
 	endline
-	
+
 	point 160.7521 457.6271 label -align l -text Hydrant -attr level 2 -scale l
 	point 229.65 478.66 station -name 20
-	
-	
+
+
 	point 229.65 478.66 station-name -align tr -scale xs -text 20
 	point 177.2 435.28 station -name 21
 	point 185.94 407.56 station -name 22
@@ -233,5 +233,5 @@ scrap hydrant-3p -projection plan -scale [0 0 96 0 0 0 200 0 inch]
 	point 96.73 278.43 station -name 32
 	point 69.8 246.85 station -name 33
 	point 52.87 232.83 station -name 34
-	
+
 endscrap

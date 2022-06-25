@@ -3,52 +3,52 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-spiny-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
+
 	line survey
 		342.44 586.34
 		298.35 587.44
 	endline
-	
+
 	line survey
 		298.35 587.44
 		272.6 555.0
 	endline
-	
+
 	line survey
 		272.6 555.0
 		272.6 555.0
 	endline
-	
+
 	line survey
 		272.6 555.0
 		237.17 523.58
 	endline
-	
+
 	line survey
 		237.17 523.58
 		223.86 507.99
 	endline
-	
+
 	line survey
 		223.86 507.99
 		240.47 476.18
 	endline
-	
+
 	line survey
 		240.47 476.18
 		231.02 433.43
 	endline
-	
+
 	line survey
 		231.02 433.43
 		169.53 417.52
 	endline
-	
+
 	line survey
 		169.53 417.52
 		157.56 412.56
 	endline
-	
+
 	point 342.44 586.34 station-name -align tr -scale xs -text 1
 	point 298.35 587.44 station-name -align tr -scale xs -text 2
 	point 272.6 555.0 station-name -align tr -scale xs -text 4
@@ -62,8 +62,8 @@ endscrap
 
 
 scrap spiny-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
-	point 134.5339 425.053 label -align l -attr level 3 -text "Spiny Norman"
+
+	point 134.5339 425.053 label -align l -attr level 3 -text "Spiny Norman" -scale l
 	line wall
 		165.3536 408.2343
 		165.3536 408.2343 166.1027 412.3541 167.4135 412.7286
@@ -87,7 +87,7 @@ scrap spiny-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		276.0263 552.6144 289.322 566.0974 289.5093 567.7828
 		289.6966 569.4682 295.689 579.7676 295.689 579.7676
 	endline
-	
+
 	line wall
 		282.5805 595.685
 		282.5805 595.685 280.9744 591.4182 279.7716 588.7563
@@ -113,7 +113,7 @@ scrap spiny-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		147.7189 413.7279 146.3294 412.5899 145.691 411.4178
 		145.0525 410.2457 144.7547 408.0471 144.7547 408.0471
 	endline
-	
+
 	point 342.44 586.34 station -name 1
 	point 298.35 587.44 station -name 2
 	point 272.6 555.0 station -name 4
@@ -124,4 +124,3 @@ scrap spiny-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	point 169.53 417.52 station -name 9
 	point 157.56 412.56 station -name 10
 endscrap
-

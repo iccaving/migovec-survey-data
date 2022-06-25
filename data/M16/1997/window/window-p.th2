@@ -3,8 +3,8 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-	
-	point 223.7818 508.7394 label -align l -text Window -attr level 4
+
+	point 223.7818 508.7394 label -align l -text Window -attr level 4 -scale l
 	line border -close on -id window-1p_u_smallblocks_1 -visibility off
 		253.4707 629.2061
 		249.2445 614.4554
@@ -15,11 +15,11 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		335.2603 629.2438 326.834 629.0917 314.8945 630.0744
 		304.7939 630.9058 263.8766 639.0191 258.8848 639.6286
 	endline
-	
+
 	area u:smallblocks -attr scale 1.4
 	window-1p_u_smallblocks_1
 	endarea
-	
+
 	line border -close on -id window-1p_u_smallblocks_2 -visibility off
 		236.4936 479.3432
 		255.2966 473.517
@@ -39,11 +39,11 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		246.0275 538.6653 247.6165 518.5381 246.2924 516.1547
 		244.9682 513.7712 237.2881 495.233 237.2881 495.233
 	endline
-	
+
 	area u:smallblocks -attr scale 1.4
 	window-1p_u_smallblocks_2
 	endarea
-	
+
 	line border -close on -id window-1p_u_smallblocks_3 -visibility off
 		234.6398 473.517
 		232.786 463.1886
@@ -59,11 +59,11 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		271.7161 457.892
 		274.6292 460.5403
 	endline
-	
+
 	area u:smallblocks -attr scale 1.4
 	window-1p_u_smallblocks_3
 	endarea
-	
+
 	line border -close on -id window-1p_u_smallblocks_4 -visibility off
 		223.7818 385.3284
 		231.9848 400.2851
@@ -81,11 +81,11 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		272.7754 359.6398
 		250.7945 383.4746
 	endline
-	
+
 	area u:smallblocks -attr scale 1.4
 	window-1p_u_smallblocks_4
 	endarea
-	
+
 	point 202.8602 408.1038 gradient -orientation 30.0
 	point 256.8856 469.2797 gradient -orientation 30.0
 	point 283.644 583.5017 gradient -orientation 30.0
@@ -93,17 +93,17 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		243.857 614.4665
 		256.5689 600.6953 304.0254 570.4449 304.0254 570.4449
 	endline
-	
+
 	line contour
 		235.1695 476.6949
 		251.589 469.2797 279.1314 462.3941 279.1314 462.3941
 	endline
-	
+
 	line contour
 		173.1992 418.4322
 		191.7373 407.3093 237.2881 402.5424 237.2881 402.5424
 	endline
-	
+
 	line wall
 		264.4229 654.0424
 		264.4229 654.0424 255.9291 647.5428 253.3056 642.2442
@@ -134,7 +134,7 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 		291.3136 531.7797 305.0847 569.9153 305.0847 569.9153
 		305.0847 569.9153 315.2477 592.8495 324.5048 610.2633
 	endline
-	
+
 	point 260.63 342.01 station -name 1
 	point 166.46 360.83 station -name 2
 	point 183.15 366.18 station -name 3
@@ -142,4 +142,3 @@ scrap window-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 	point 270.08 564.84 station -name 5
 	point 333.54 657.99 station -name 6
 endscrap
-
