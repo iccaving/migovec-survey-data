@@ -222,7 +222,7 @@ In the `data\{cave}` folders you will find `.th` files that define how these ind
 - `{name}.thm` will be used to combine individual passage maps into larger maps.
 
 In the `{name}.th` file, passages are arranged by year of discovery.
-In the `{name}.thm`file, passage map definitions are ordered by cave sub-region, and these subregions are themselves ordered into a map definition for the cave (a high level m-all-p, within the scope of the cave).
+In the `{name}.thm` file, passage map definitions are ordered by cave sub-region, and these subregions are themselves ordered into a map definition for the cave (a high level m-all-p, within the scope of the cave).
 
 ### Exports
 
@@ -245,7 +245,7 @@ The easy way is to find yourself the config file that already does what you want
 therion configs/overview/vrtnarija.thconfig
 ```
 
-And you should find the it places the files in the `outputs/maps` and `outputs/models` directories.
+And you should find that it places the files in the `outputs/maps` and `outputs/models` directories.
 
 Note that in order for compilation to be correct you must ensure Therion uses the `therion.ini` file in the root of this repository. You can do this either by simply running all `therion` commands from the root directory, or by setting the `$THERION` environment variable to the root directory.
 
@@ -334,7 +334,7 @@ survey plateau
 endsurvey
 ```
 
-With a system,cave, passage structure. Save the `{my_new_passage}.th` file into a new folder with lower case name (as far as possible, the same as the survex survey name).
+With a system, cave, passage structure. Save the `{my_new_passage}.th` file into a new folder with lower case name (as far as possible, the same as the survex survey name).
 
 Find the `{cave}.th`file in the `{cave}` folder. This file contains a series of `input ./year/passage/passage.th` commands to tell the therion compiler to include the relevant survey data. Adding the command `input ./year/passage/my_new_passage.th` to this file in the correct year folder is necessary, but we now need to connect the new data to an existing point in the survey, i.e. equate.
 
