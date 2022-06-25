@@ -11,7 +11,8 @@ encoding  utf-8
 
 # start the survey definition
 survey plateau -title "Migovec Plateau"
-	
+	# input the plateau DEM (uncomment)
+	input "./DEM/MIG_DEM.th"
 	# input the individual cave data files
 	
 	# first the connected caves of System Migovec
@@ -73,7 +74,7 @@ survey plateau -title "Migovec Plateau"
 		#fix 0 404188 125289 1897
 		
 		# BREZNO POD VRHOM PLANJE
-		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 403804 125750 1877
+		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 403804 125750 1870
 		#fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 404177 125263 1877  # GK fix
 		
 		# COINCIDENCE

@@ -2,5 +2,29 @@ source "../../data/system_migovec.th"
 #source "../../data/primadona/2022/styx/styx.th"
 
 #export model -o "../../outputs/styx.3d" -fmt survex
-export model -o "../../outputs/system_migovec.3d" -fmt survex
-export model -o "../../outputs/system_migovec.lox" -fmt survex
+
+input ../../layouts/detailed-p.thl
+layout local
+	scale 1 100
+	copy detailed-p
+	grid bottom
+	grid-size 5 5 5 m
+	color map-fg [100 100 10]
+endlayout
+
+source
+	map local-p -projection plan
+		styx@primadona.primadona_ubend_mona_tip.system_migovec
+	endmap
+	map local-e -projection extended
+		styx@primadona.primadona_ubend_mona_tip.system_migovec
+	endmap
+endsource
+
+select local-p
+export map -o "../../outputs/styx_plan.pdf" -layout local -layout-debug station-names -projection plan
+select local-e
+
+export map -o "../../outputs/styx_ee.pdf" -layout local -layout-debug station-names -projection extended
+#	export model -o "../../outputs/system_migovec.3d" -fmt survex
+#	export model -o "../../outputs/system_migovec.lox" -fmt survex
