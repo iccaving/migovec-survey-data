@@ -38,7 +38,7 @@ Monatip and Primadona are connected in several places, notably at Alkatraz and n
 ### Primadona & Mona tip
 The surface abseil of Primadona begins in a shallow valley at the USTART way point. Several rebelays on a high-angle grass and scree slope lead to a lip of rock next to a prominent rock spire, which is crowned by a lightning-struck bush of dwarf pine. The spire overhangs the second, more vertical part of the descent: a series of rebelays landing on various rock ledges, which eventually drop by the entrance snow slope of Primadona. A traverse line leading north stops short of the Monatip entrance, which lies just around the next rocky ridge, 70 m away. Two ways into the gaping entrance of Primadona can be followed: _Drugi Vhod_ is the high-level climb into a black void, while the original entrance is found at the bottom of the snow slope.
 
-_if starting from Kal, it is possible to access the entrances by climbing up the fourth gully along the contour path to Krn (_ a.k.a. Muljetera, or mule path _). At the top of this gully, the path levels out and leads across several exposed traverses to the north to the steep scree slope below Primadona. With extreme care, this slope can be climbed all the way to the entrances._
+_If starting from Kal, it is possible to access the entrances by climbing up the fourth gully along the contour path to Krn (_ a.k.a. Muljetera, or mule path _). At the top of this gully, the path levels out and leads across several exposed traverses to the north to the steep scree slope below Primadona. With extreme care, this slope can be climbed all the way to the entrances._
 
 ### M-16
 
@@ -57,7 +57,7 @@ The smaller M-2b opening is used to enter M-2.
 ### Vrtnarija
 
 Continuing downhill, NE of the M-2b entrance, zig-zags are necessary to descend the inclined limestone beds. Eventually, a down-climb under a small cliff can be rigged, leading to a descent into a shallow bowl. The sloping, cobble-floored entrance of Vrtnarija lies at its NE end underneath a rocky overhang.
-_It is very easy to get lost on the path to Vrtnarija in low visibility. If return visits are planned, it is best to lay a string from the Bivi to the rigged downclimb_
+_It is very easy to get lost on the path to Vrtnarija in low visibility. If return visits are planned, it is best to lay a string from the Bivi to the rigged downclimb._
 
 <!-- \protect\FullWidthFigure{../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}} -->
 
