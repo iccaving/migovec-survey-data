@@ -17,6 +17,7 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
     - [Survey data](#survey-data)
     - [Higher level data](#higher-level-data)
     - [Exports](#exports)
+    - [Descriptions](#descriptions)
   - [How to export data](#how-to-export-data)
     - [Using existing configs](#using-existing-configs)
     - [Make your own config](#make-your-own-config)
@@ -232,6 +233,50 @@ In the `configs` folder there are `.thconfig` files. These are more similar to a
 
 In the `layouts` folders there are layout files (`.thl`) these are complicated but they basically just define which symbols should be on the
 map and how they should be like. i.e. should you show mineral symbols, how thick should pit lines be, what colour are waterfalls.
+
+### Descriptions
+
+As of 2022, we are now providing short descriptions of the main trade routes within Sistem Migovec, to aid cavers less familiar with the cave navigate some of the more complex routes.
+
+The `descriptions` repository is organised thus:
+
+```
+./descriptions/
+  - configs
+  - markdown
+  - outputs
+  - tex/
+    .descriptions.tex
+    .descriptions.sty
+  .makefile
+```
+
+To contribute to the descriptions, a simple markdown file is added to the markdown repository, .e.g, `<my_new_description>.md`, and to be displayed within the tex generated PDF `descriptions.pdf`, a new include line should be added to the file `descriptions.tex` below the existing ones:
+
+```
+\newpage
+\include{<my_new_description>}
+```
+
+#### Custom tex-macros to include images
+Defined in `descriptions.sty` are some LaTeX macros to help with the inclusion of images. These can be called within the markdown description files directly, e.g.
+
+*A centered figure*
+```
+\CenteredFigure{<path/to/figure>}
+```
+
+*A full width figure placed at the top of a page*
+```
+\TopFullWidthFigure{<path/to/figure>}
+```
+
+*A coloured flag with a number* can be used to link a certain description paragraph with a place within the displayed map. In markdown, this is achieved with the following tex macro:
+```
+\numflag{<flag-number>}{<flag-colour>}
+```
+The accepted colour codes are `c1,c2,..,c6`.
+
 
 ## How to export data
 
@@ -549,7 +594,7 @@ Main symbology and symbol codes:
 
 
 ![symbology of migovec-survey-data](./outputs/symbology.svg)
-	
+
 [symbology PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/symbology.pdf)
 
 ### How do I show the centerline of undrawn maps?

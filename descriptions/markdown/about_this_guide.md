@@ -5,11 +5,11 @@ header-includes:
   - \usepackage{descriptions}
 ---
 
-\TopFullWidthFigure{../outputs/face_of_mig_2018_tracine.jpg}{The south face of Tolminski Migovec, seen from Grušnica.}{Južno pobočje Tolminskega Migovca, gledano z Grušnice.}{\smalltriangle{90}}{Tanguy Racine, 2018}{\photo}
+\TopFullWidthFigure{../outputs/face_of_mig_2018_tracine.jpg}<!--{The south face of Tolminski Migovec, seen from Grušnica.}{Južno pobočje Tolminskega Migovca, gledano z Grušnice.}{\smalltriangle{90}}{Tanguy Racine, 2018}{\photo}-->
 
 ## Selected trips under the Hollow Mountain
 
-With \SI{44}{km} in length at the time of writing, System Migovec is a major Alpine system of NW Slovenia.
+With \SI{44}{km} in length at the time of writing, Sistem Migovec is a major Alpine system of NW Slovenia.
 It ranks among the 100 longest worldwide, a remarkable feat after more than forty years of dedicated expeditions.
 The full description of every metre in this extensive cave system is beyond the scope of this guide. Countless passages saw the light of one or two cavers only, who, running low on energy and motivation, decided that this final indomitable crawl "was it".
 
@@ -28,16 +28,17 @@ The descriptions of such excursions from the main route are given in _italics_ i
 
 ## The cave system
 
-The Tolminksi Migovec cave system is composed of three main sub-systems, known as the Old System (M2-M16-M18), Vrtnarija (also encompasses Vilinska Jama entrance), and Primadona-Monatip (including U-bend and Belladonna entrances).
+The Tolminski Migovec cave system is composed of three main sub-systems, known as the Old System (M2-M16-M18), Vrtnarija (also encompasses Vilinska Jama entrance), and Primadona-Monatip (including U-bend and Belladonna entrances).
 Vrtnarija connects to the Old System at the Dreams for the Soul.
 Two connections between Monatip and the Old System are known: at Mig Country (M-16) and in NCB passage (M-18).
 Monatip and Primadona are connected in several places, notably at Alkatraz and near Sejna Soba.
 
 ## Access to the entrances
 
-### Primadona & Monatip
-
+### Primadona & Mona tip
 The surface abseil of Primadona begins in a shallow valley at the USTART way point. Several rebelays on a high-angle grass and scree slope lead to a lip of rock next to a prominent rock spire, which is crowned by a lightning-struck bush of dwarf pine. The spire overhangs the second, more vertical part of the descent: a series of rebelays landing on various rock ledges, which eventually drop by the entrance snow slope of Primadona. A traverse line leading north stops short of the Monatip entrance, which lies just around the next rocky ridge, 70 m away. Two ways into the gaping entrance of Primadona can be followed: _Drugi Vhod_ is the high-level climb into a black void, while the original entrance is found at the bottom of the snow slope.
+
+_if starting from Kal, it is possible to access the entrances by climbing up the fourth gully along the contour path to Krn (_ a.k.a. Muljetera, or mule path _). At the top of this gully, the path levels out and leads across several exposed traverses to the north to the steep scree slope below Primadona. With extreme care, this slope can be climbed all the way to the entrances._
 
 ### M-16
 
@@ -55,7 +56,8 @@ The smaller M-2b opening is used to enter M-2.
 
 ### Vrtnarija
 
-Continuing downhill, NE of the M-2b entrance, zig-zags are necessary to descend the inclined limestone beds. Eventually, a downclimb under a small cliff, equipped with an in-situ rope can be descended to a shallow bowl, with a rocky overhang at its NE end: underneath is the sloping, cobble-floored entrance of Vrtnarija.
+Continuing downhill, NE of the M-2b entrance, zig-zags are necessary to descend the inclined limestone beds. Eventually, a down-climb under a small cliff can be rigged, leading to a descent into a shallow bowl. The sloping, cobble-floored entrance of Vrtnarija lies at its NE end underneath a rocky overhang.
+_It is very easy to get lost on the path to Vrtnarija in low visibility. If return visits are planned, it is best to lay a string from the Bivi to the rigged downclimb_
 
 <!-- \protect\FullWidthFigure{../outputs/Mig_routes.png}{Map of the Migovec plateau highlighting the access trails to different cave entrances}{Zemljevid planote Migovec z označenimi dostopnimi potmi do različnih jamskih vhodov}{\smalltriangle{90}} -->
 
