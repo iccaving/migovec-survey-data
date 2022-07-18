@@ -20,9 +20,8 @@ export model -o ../_outputs/rowan_cave.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
-input ../../_layouts/detailed-p.thl
-input ../../_layouts/detailed-e.thl
-
+input ../../../layouts/detailed-p.thl
+input ../../../layouts/detailed-e.thl
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
