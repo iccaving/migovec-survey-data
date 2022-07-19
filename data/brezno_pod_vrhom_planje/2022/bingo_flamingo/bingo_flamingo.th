@@ -1,24 +1,30 @@
 # 2022.07.13 created by TopoDroid v 5.1.40
 
 survey bingo_flamingo -title "bingo flamingo"
-    # pitch in planja 
+    # pitch in planja
 
-  # input "bingo_flamingo-1p.th2"
-  # input "bingo_flamingo-1s.th2"
+   input "bingo_flamingo-1p.th2"
+   input "bingo_flamingo-1s.th2"
 
-  # map m1p -projection plan
-  #   bingo_flamingo-1p
-  #   bingo_flamingo-1p3
-  #   bingo_flamingo-1p3
-  #   bingo_flamingo-1p3
-  # endmap
-  # map m1s -projection extended
-  #   bingo_flamingo-1s
-  # endmap
+   map m-all-p -projection plan
+     bingo_flamingo-1p
+     bingo_flamingo-1p1
+     bingo_flamingo-1p2
+     bingo_flamingo-1p3
+   endmap
+   map m-all-e -projection extended
+     bingo_flamingo-1s
+   endmap
 
   centerline
-    date 2010.01.10 
-    # team Tanguy Racine James Wilson Linus Thümmel 
+    date 2022.07.13
+    explo-date 2022.07.13
+    team "Tanguy Racine"
+    team "James Wilson"
+    team "Linus Thümmel"
+    explo-team "Tanguy Racine"
+    explo-team "James Wilson"
+    explo-team "Linus Thümmel"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
