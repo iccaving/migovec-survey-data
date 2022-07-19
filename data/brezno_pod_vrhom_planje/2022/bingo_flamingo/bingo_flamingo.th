@@ -8,8 +8,11 @@ survey bingo_flamingo -title "bingo flamingo"
 
    map m-all-p -projection plan
      bingo_flamingo-1p
+     break
      bingo_flamingo-1p1
+     break
      bingo_flamingo-1p2
+     break
      bingo_flamingo-1p3
    endmap
    map m-all-e -projection extended
@@ -25,6 +28,7 @@ survey bingo_flamingo -title "bingo flamingo"
     explo-team "Tanguy Racine"
     explo-team "James Wilson"
     explo-team "Linus Thümmel"
+    mark 23 fixed  # mark this one as PSS
     units length meters
     units compass clino degrees
     data normal from to length compass clino

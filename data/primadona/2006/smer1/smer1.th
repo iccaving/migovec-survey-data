@@ -1,20 +1,20 @@
 encoding  utf-8
 survey smer1
 	input "smer1-p.th2"
-	input "smer1-e.th2" 
+	input "smer1-e.th2"
 
 	map msmer1-1p -projection plan
 		smer1p_1
 	endmap
-	
+
 	map msmer1-2p -projection plan
 		smer1p_2
 	endmap
-	
+
 	map msmer1-3p -projection plan
 		smer1p_3
 	endmap
-	
+
 	map m-all-p -projection plan
 		msmer1-3p
 		msmer1-2p
@@ -27,9 +27,10 @@ survey smer1
 	endmap
 	join smer1p_1 smer1p_2
 	join smer1p_2 smer1p_3
-	
+
 	centreline
 		date 2006.10.21
+		explo-date 2006.10.21
 		
 		explo-team "James Hooper"
 		explo-team "Jarvist Frost"
@@ -63,9 +64,8 @@ survey smer1
 		extend right
 		16      17      9.7     133     -42     #1      5       8       1
 		17      18      9.5     0       -90     #3      0       10      1
-		
-		
-	endcentreline
-	
-endsurvey
 
+
+	endcentreline
+
+endsurvey
