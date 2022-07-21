@@ -27,7 +27,7 @@ source
 	map localmap-p -projection plan
 		m-all-p@brezno_pod_vrhom_planje
 	endmap
-	
+
 	map localmap-e -projection extended
 		m-all-e@brezno_pod_vrhom_planje
 	endmap
@@ -46,21 +46,22 @@ select localmap-p
 layout local
 	copy detailed-p
 	legend off
-	map-header 0 0 off
+	map-header 0 0 se
 	scale 1 200
 	symbol-show point label
 	symbol-show point gradient
-	
+
 	map-comment "Vrh Planja<br>Cadastral Number: XXXX<br>Length: XX m, Depth: XX m<br>Entrance elevation: 1868 m<br>Coordinates (lat-long):  46.264686\°N / 13.752099\°E"
-	
-	code tex-map
-		\def\maplayout{
-		\legendbox{0}{-5}{SW}{\size[26]\the\cavename}
-		%\legendbox{-10}{130}{NW}{\size[10]\the\comment}
-		\legendbox{15}{20}{N}{\scalebar}
-		\legendbox{15}{25}{S}{\northarrow}
-		}
-	endcode
+	symbol-assign line pit MY
+	symbol-assign line floor-step MY
+	#code tex-map
+	#	\def\maplayout{
+	#	\legendbox{0}{-5}{SW}{\size[26]\the\cavename}
+	#	%\legendbox{-10}{130}{NW}{\size[10]\the\comment}
+	#	\legendbox{15}{20}{N}{\scalebar}
+	#	\legendbox{15}{25}{S}{\northarrow}
+	#	}
+	#endcode
 endlayout
 
 #----------------------------------------------------------------------------------|
@@ -88,4 +89,4 @@ select m-all-e@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e 
+export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e

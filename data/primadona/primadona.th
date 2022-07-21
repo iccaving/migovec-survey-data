@@ -535,6 +535,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	###______________ 2022______________###
 	input "./2022/styx/styx.th"
+	input "./2022/the_expo_strikes_back/the_expo_strikes_back.th"
+	input "./2022/echo_falls/echo_falls.th"
 
 	equate 36@deveti_krog 1@styx
+	equate 1@death_star 29@the_expo_strikes_back
+	equate 10@echo_falls 32@beam_me_up
 endsurvey

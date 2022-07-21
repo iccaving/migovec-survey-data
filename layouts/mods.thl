@@ -46,15 +46,27 @@ endlookup
 
 # Colour the latest additions red
 
+lookup explo-date:stages
+	2016.08.30 [0 0 100]
+	2017.08.30
+	2018.08.30
+	2019.08.30
+	2020.08.30
+	2021.08.31 [100 0 0] "after 2021.12.31"
+endlookup
+
 lookup explo-date:latest
-	- [100 100 100] "before 2022.12.31"
-	2022.12.31 [100 50 50] "after 2022.12.31"
+	2022.06.30 [100 100 100]
+	2022.07.01 [100 0 0] "after 2021.12.31"
 endlookup
 
 layout colour-by-new
 	colour map-fg explo-date:latest
 endlayout
 
+layout colour-by-stages
+	colour map-fg explo-date:stages
+endlayout
 # Colour all passage base on date of discovery
 
 layout colour-by-date
