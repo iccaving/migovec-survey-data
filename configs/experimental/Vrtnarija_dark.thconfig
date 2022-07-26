@@ -1,0 +1,28 @@
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+
+layout local
+  copy dark-e
+
+  symbol-hide point label
+  symbol-hide line label
+  symbol-hide point remark
+  color map-fg [0 0 0]
+  symbol-colour point dig [100 100 100]
+  code metapost
+    set_label_level("1");
+  endcode
+endlayout
+
+#maps-offset off
+
+lookup explo-date:latest2016
+	2016.06.30 [0 0 0]
+	2016.07.01 [100 0 0] "after 2016.12.31"
+endlookup
+
+
+select m-all-e@vrtnarija_vilinska.system_migovec
+export map -projection extended -layout local -o ../../outputs/historical/Vrtnarija_dark_EE.pdf

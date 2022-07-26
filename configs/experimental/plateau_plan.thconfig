@@ -1,7 +1,12 @@
 source ../../data/plateau.th
 
+layout local
+  scale 1 10000
+  symbol-hide group all
+  symbol-show line wall
+endlayout
 
 #select m-all-p@system_migovec.plateau -map-level 2
-#export map -o ../../outputs/GIS/plateau -fmt esri
+export map -o ../../outputs/historical/plateau.pdf -layout local
 
-export model -o ../../outputs/plateau.lox
+#export model -o ../../outputs/plateau.lox

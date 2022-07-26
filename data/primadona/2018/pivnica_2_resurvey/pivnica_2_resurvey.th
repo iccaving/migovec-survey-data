@@ -2,11 +2,13 @@
 
 survey pivnica_2_resurvey -title "pivnica_2_resurvey"
 	# continuation of Pivnica
-	
+
 	centerline
 		date 2018.08.05
 		# team tanguy james alex grega
 		# declination 0.00 degrees
+
+		explo-date 2000.12
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
@@ -261,30 +263,30 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
 		extend left
 		17 18 3.12 286.6 -4.2
 	endcenterline
-	
+
 	input "pivnica_2_resurvey-1p.th2"
 	input "pivnica_2_resurvey-1e.th2"
-	
+
 	map m1p -projection plan
 		pivnica_2_resurvey-1p
 	endmap
-	
+
 	map m2p -projection plan
 		pivnica_2_resurvey-2p
 	endmap
-	
+
 	map m3p -projection plan
 		pivnica_2_resurvey-3p
 	endmap
-	
+
 	map m-all-p -projection plan
 		m1p
 		m2p
 		m3p
 	endmap
-	
+
 	map  m-all-e -projection extended
 		pivnica_2_resurvey-1e
 	endmap
-	
+
 endsurvey

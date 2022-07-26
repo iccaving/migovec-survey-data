@@ -1,0 +1,36 @@
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+
+  map OldPrima_2001 -projection extended -title "Primadona - 2000 to 2005 (JPSDT)"
+    m-all-e@prima1.primadona.primadona_ubend_mona_tip.system_migovec
+    m-prima1-2e@prima1.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@prima2.primadona.primadona_ubend_mona_tip.system_migovec
+    m-ttt_bottom-e@zima00.primadona.primadona_ubend_mona_tip.system_migovec
+    m-zima00-e@zima00.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@TTTr.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@ttt.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@drugi.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@galerija.primadona.primadona_ubend_mona_tip.system_migovec
+    #m-all-e@galerija2.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@pov.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@risa2.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@risanke.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@ajdovscina.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@milanova.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@smer0.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@spodnji.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@pivnica_resurvey.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@buckwheat.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@pivnica_2_resurvey.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@popotresni.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@brez_volje.primadona.primadona_ubend_mona_tip.system_migovec
+
+  endmap
+endsource
+
+
+select OldPrima_2001
+export map -projection extended -layout dark-e -o ../../outputs/historical/OldPrima_2001_EE.pdf

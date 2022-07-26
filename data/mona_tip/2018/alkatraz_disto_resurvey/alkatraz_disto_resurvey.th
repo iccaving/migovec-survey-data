@@ -26,7 +26,9 @@ survey alkatraz_disto_resurvey -title "alkatraz_disto_resurvey"
 	join alkatraz_disto_resurvey-1p alkatraz_disto_resurvey-2p
 	centerline
 		date 2018.07.21
-		# team Tanguy Racine
+		team "Tanguy Racine"
+
+		explo-date 2008.07.18
 		# declination 0.00 degrees
 		units length meters
 		units compass clino degrees
