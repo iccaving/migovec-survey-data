@@ -46,8 +46,11 @@ select localmap-p
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
 layout local
-	copy detailed-dark-p
+	#copy detailed-dark-p
+	copy detailed-p
 	legend off
+	colour map-fg altitude
+
 	map-header 0 0 sw
 	scale 1 200
 	symbol-show point label
@@ -68,14 +71,15 @@ endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
-export map -o ../../../outputs/historical/brezno_pod_vrhom_planje_plan.pdf -projection plan -layout local
+export map -o ../../../outputs/brezno_pod_vrhom_planje_plan.pdf -projection plan -layout local
 
 select localmap-e
 
 #----------------------------------------------------------------------------------|
 # define a local layout without legend or header for extended elevation
 layout local-e
-	copy detailed-dark-e
+	#copy detailed-dark-e
+	copy detailed-e
 	legend off
 	map-header 0 0 off
 	symbol-colour line border [0 70 90]
@@ -91,4 +95,4 @@ select m-all-e@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../../../outputs/historical/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e
+export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e
