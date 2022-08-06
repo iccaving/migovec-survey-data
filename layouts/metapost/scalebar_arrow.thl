@@ -18,6 +18,26 @@ layout custom_arrow
 		enddef;
 endlayout
 
+layout custom_arrow_dark
+	code metapost
+	    #(contributions of Thomas Holder)
+			def s_northarrow (expr rot) =
+		  	begingroup
+			    interim defaultscale:=0.35; % scale your north arrow here
+			    T:=identity scaled defaultscale rotated -rot;
+			    pickup pencircle scaled (0.08cm * defaultscale);
+			    thdraw (-.4cm,-1.4cm)--(0,2.8cm)--(.4cm,-1.4cm)--cycle withcolor(1,1,1);
+			    p:=fullcircle scaled 1.6cm;
+			    thfill p withcolor(0,0,0); thdraw p withcolor(1,1,1);
+			    p:=(0.95cm,0)--(0.65cm,0);
+			    thdraw p withcolor(1,1,1); thdraw p xscaled -1 withcolor(1,1,1);
+			    pickup pencircle scaled (0.12cm * defaultscale);
+			    p:=(0.28cm,0.42cm);
+			    thdraw p--(p yscaled -1)--(p xscaled -1)--(p scaled -1) withcolor(1,1,1);
+		  	endgroup;
+		enddef;
+endlayout
+
 layout custom_scalebar
 		code metapost
 			def s_scalebar (expr l, units, txt) =
@@ -66,6 +86,59 @@ layout custom_scalebar
 			      label.top(thTEX("\size[8]" & decimal (scal20)),origin+(tmp20,1.5*lblht));
 			      label.top(thTEX("\size[8]" & decimal (scal10)),origin+(tmp10,1.5*lblht));
 			      label.top(thTEX("\size[8]" & decimal (0)),origin+(0,1.5*lblht));
+			    endgroup
+			enddef;
+		endcode
+endlayout
+
+layout custom_scalebar_dark
+		code metapost
+			def s_scalebar (expr l, units, txt) =
+				begingroup
+				 interim warningcheck:=0;
+				 tmp10:=10 * (l / Scale * cm * units / 100);
+				 tmp20:=20 * (l / Scale * cm * units / 100);
+				 tmp30:=30 * (l / Scale * cm * units / 100);
+				 tmp40:=40 * (l / Scale * cm * units / 100);
+				 tmp50:=50 * (l / Scale * cm * units / 100);
+				 #tmp60:=60 * (l / Scale * cm * units / 100);
+				 #tmp80:=80 * (l / Scale * cm * units / 100);
+				 tmp100:=100 * (l / Scale * cm * units / 100);
+				 scal10:=10 * l / 100;
+				 scal20:=20 * l / 100;
+				 scal30:=30 * l / 100;
+				 scal40:=40 * l / 100;
+				 scal50:=50 * l / 100;
+				 brht:= 5bp;
+				 lblht:= 8bp;
+				endgroup;
+
+				pickup PenD;
+
+			  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0) withcolor(1,1,1);
+				draw (0,0)--(0,1.5*brht)  withcolor(1,1,1);
+				draw (tmp10,0)--(tmp10,1.5*brht)  withcolor(1,1,1);
+			  draw (tmp20,0)--(tmp20,1.5*brht)  withcolor(1,1,1);
+			  draw (tmp30,0)--(tmp30,1.5*brht)  withcolor(1,1,1);
+			  draw (tmp40,0)--(tmp40,1.5*brht)  withcolor(1,1,1);
+			  draw (tmp50,0)--(tmp50,1.5*brht)  withcolor(1,1,1);
+				draw (tmp100,0)--(tmp100,1.5*brht)  withcolor(1,1,1);
+
+			  fill (tmp40,0)--(tmp30,0)--(tmp30,brht/2)--(tmp40,brht/2)--cycle  withcolor(1,1,1);
+			  fill (tmp20,0)--(tmp10,0)--(tmp10,brht/2)--(tmp20,brht/2)--cycle  withcolor(1,1,1);
+			  fill (tmp30,brht)--(tmp20,brht)--(tmp20,brht/2)--(tmp30,brht/2)--cycle  withcolor(1,1,1);
+			  fill (tmp10,brht)--(0,brht)--(0,brht/2)--(tmp10,brht/2)--cycle  withcolor(1,1,1);
+			  fill (tmp50,brht)--(tmp40,brht)--(tmp40,brht/2)--(tmp50,brht/2)--cycle  withcolor(1,1,1);
+			  fill (tmp50,brht/2)--(tmp100,brht/2)--(tmp100,0)--(tmp50,0)--cycle  withcolor(1,1,1);
+
+			   begingroup
+			      label.top(thTEX("\size[8]" & decimal (l) & "\thinspace" & txt),origin+(tmp100,1.5*lblht))  withcolor(1,1,1);
+			      label.top(thTEX("\size[8]" & decimal (scal50)),origin+(tmp50,1.5*lblht)) withcolor(1,1,1);
+			      label.top(thTEX("\size[8]" & decimal (scal40)),origin+(tmp40,1.5*lblht)) withcolor(1,1,1);
+			      label.top(thTEX("\size[8]" & decimal (scal30)),origin+(tmp30,1.5*lblht)) withcolor(1,1,1);
+			      label.top(thTEX("\size[8]" & decimal (scal20)),origin+(tmp20,1.5*lblht)) withcolor(1,1,1);
+			      label.top(thTEX("\size[8]" & decimal (scal10)),origin+(tmp10,1.5*lblht)) withcolor(1,1,1);
+			      label.top(thTEX("\size[8]" & decimal (0)),origin+(0,1.5*lblht)) withcolor(1,1,1);
 			    endgroup
 			enddef;
 		endcode

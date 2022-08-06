@@ -1,0 +1,38 @@
+input "detailed-dark-p.thl"
+input "detailed-dark-e.thl"
+input "metapost/grid.thl"
+input "metapost/label.thl"
+
+layout dark-e
+  copy detailed-dark-e
+  copy custom_grid_dark
+  copy custom_label
+  colour map-bg transparent
+  scale 1 3000
+  map-header 100 100 se
+  symbol-hide point station
+  symbol-hide line survey
+  symbol-colour point label [100 90 76]
+  symbol-show point label
+  symbol-show point entrance
+  symbol-color point entrance [100 90 76]
+  symbol-hide point u:connection_marker
+  #grid bottom
+  #grid-size 20 20 10 m
+  #grid-coords border
+  code metapost
+    set_label_level("3");
+  endcode
+
+  code tex-map
+    \def\cavespecs{ \rgbcolor[100 100 100]\size[13]\bf\the\cavename\ss{}
+    \size[11] \par Length: \the\cavelength
+    \par Depth: \the\cavedepth
+    \par Altitude: \the\cavemaxz{} m a.s.l.
+    }
+    \def\maplayout{
+    \legendbox{-5}{105}{SW}{\cavespecs{}}
+    }
+  endcode
+
+endlayout

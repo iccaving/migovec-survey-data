@@ -1,0 +1,27 @@
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+  map M18_1995 -projection extended -title "M18 (Torn T-shirt) - 1994 to 1995 (ICCC)"
+    m-all-e@upperrift.M18.m2m16m18.system_migovec
+    m-all-e@lowerrift.M18.m2m16m18.system_migovec
+    m-all-e@torn.M18.m2m16m18.system_migovec
+    m-all-e@turtle.M18.m2m16m18.system_migovec
+    m-all-e@shreddie.M18.m2m16m18.system_migovec
+    m-all-e@gallery.M18.m2m16m18.system_migovec
+    m-all-e@silos.M18.m2m16m18.system_migovec
+  endmap
+endsource
+
+layout local
+  copy dark-e
+
+  code metapost
+    set_label_level("4");
+  endcode
+endlayout
+
+
+select M18_1995
+export map -projection extended -layout local -o ../../outputs/historical/M18_1994_EE.pdf

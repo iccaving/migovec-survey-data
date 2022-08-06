@@ -1,22 +1,22 @@
 encoding  utf-8
 survey buckwheat
-	
+
 	input buckwheat-p.th2
 	input "buckwheat-e.th2"
-	
+
 	map  m-all-e -projection extended
 		buckwheat-1e
 	endmap
-	
+
 	map m-all-p -projection plan
 		buckwheat-1p
 	endmap
-	
+
 	centreline
 		date 2017.07.19
 		team "Tanguy Racine" notes
 		team "Jarvist Frost" insts
-		
+		explo-date 2000.12
 		flags duplicate
 		extend left
 		1  2  3.60  337  -02
@@ -33,4 +33,3 @@ survey buckwheat
 		flags not duplicate
 	endcentreline
 endsurvey
-

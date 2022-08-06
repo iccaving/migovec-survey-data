@@ -4,8 +4,8 @@ encoding  utf-8
 
 scrap bingo_flamingo-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 478.3866 500.7534 label -align r -scale xs -text "<bf>c2"
-point 665.5228 197.1408 label -align l -scale m -text "Bingo<br>Flamingo"
+point 478.387 500.753 label -align r -scale xs -text "<bf>c2"
+point 665.523 197.141 label -align l -text "Bingo<br>Flamingo"
 line floor-step
   333.0074 688.8713
   333.0074 688.8713 306.5073 687.2749 301.0796 667.4796
@@ -66,17 +66,6 @@ line contour
   168.92 731.38
 endline
 
-line contour
-  164.36 798.28
-  156.97 794.42
-  149.69 788.99
-  143.5 781.38
-  140.13 771.95
-  138.15 762.02
-  137.45 752.5
-  138.69 743.05
-endline
-
 line rock-border -close on
   229.92 740.13
   221.1 740.93
@@ -127,8 +116,10 @@ line rock-border -close on
 endline
 
 line wall
-  156.82 694.17
-  166.9281 692.3617 176.9356 689.5503 186.2328 685.4621
+  63.564 745.1349
+  81.7251 730.8654
+  102.3366 714.0608
+  112.4447 712.2525 176.9356 689.5503 186.2328 685.4621
   191.6155 683.2509 198.7286 688.6977 202.5512 685.5481
   206.2478 678.0206 213.8471 674.2663 221.7346 672.7898
   230.678 670.3291 240.3081 662.7516 249.3419 668.9411
@@ -154,14 +145,6 @@ line wall
   486.99 448.22
   492.6234 443.9642 499.2694 443.4065 506.0157 442.7229
   522.097 440.4158 536.0896 431.9864 548.09 421.38
-endline
-
-line wall
-  257.11 674.0
-endline
-
-line wall
-  257.92 674.65
 endline
 
 line rock-border -close on
@@ -314,9 +297,6 @@ line wall
   293.484 743.6855 281.7815 746.9784 271.7243 752.4151
   256.6579 761.8137 243.8311 774.2888 227.98 782.45
   212.6677 784.309 198.7452 791.7784 184.2527 796.6125
-  176.5407 799.9853 169.211 803.9387 163.253 809.755
-  150.7101 814.7281 137.274 818.5624 127.4778 828.2443
-  125.8419 829.3262 124.2059 830.4081 122.57 831.49
 endline
 
 line u:splay -visibility off
@@ -899,6 +879,16 @@ line u:splay -visibility off
   445.48 421.73
 endline
 
+point 177.95 708.78 station-name -scale xs -text 0
+point 262.19 743.65 station-name -scale xs -text 1
+point 313.06 719.82 station-name -scale xs -text 2
+point 285.98 690.47 station-name -scale xs -text 3
+point 289.67 643.78 station-name -scale xs -text 4
+point 340.89 600.57 station-name -scale xs -text 5
+point 417.79 537.3 station-name -scale xs -text 6
+point 472.83 465.03 station-name -scale xs -text 7
+point 477.0 422.85 station-name -scale xs -text 8
+
 point 177.95 708.78 station -name 0
 point 262.19 743.65 station -name 1
 point 313.06 719.82 station -name 2
@@ -924,8 +914,8 @@ line floor-step
   507.7463 351.0774 498.6674 334.9371 508.4189 330.2295
 endline
 
-point 786.7957 265.6514 label -align r -scale s -text "<bf>c2"
-point 543.7472 288.1647 label -align bl -scale s -text "<bf>c2"
+point 786.796 265.651 label -align r -scale s -text "<bf>c2"
+point 543.747 288.165 label -align bl -scale s -text "<bf>c2"
 line floor-step
   714.2372 267.5598
   714.2372 267.5598 719.5569 234.5218 736.6359 234.2418
@@ -1194,6 +1184,16 @@ line wall
   611.3346 307.8318 601.3281 321.168 585.527 324.0417
 endline
 
+point 636.75 253.02 station-name -scale xs -text 12
+point 712.68 258.99 station-name -scale xs -text 13
+point 745.89 268.34 station-name -scale xs -text 14
+point 687.9 227.62 station-name -scale xs -text 15
+point 663.95 299.66 station-name -scale xs -text 16
+point 781.14 195.43 station-name -scale xs -text 18
+point 881.1 174.97 station-name -scale xs -text 19
+point 877.3 205.82 station-name -scale xs -text 20
+point 890.48 200.0 station-name -scale xs -text 21
+
 point 636.75 253.02 station -name 12
 point 712.68 258.99 station -name 13
 point 745.89 268.34 station -name 14
@@ -1208,8 +1208,8 @@ endscrap
 
 scrap bingo_flamingo-1p3 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 664.8866 696.1424 continuation -align r -scale l
-point 1117.1399 174.6241 continuation -align r -scale l
+point 664.887 696.142 continuation -align r -scale l
+point 1117.14 174.624 continuation -align r -scale l
 line rock-edge
   921.1946 415.5876
   942.05 424.98

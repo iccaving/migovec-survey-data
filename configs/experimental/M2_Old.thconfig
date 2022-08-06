@@ -1,0 +1,17 @@
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+  map M2-old-e -projection extended -title "M2 Kavkna Jama - 1974-1979 (JSPDT)"
+    m-all-e@izent1.M2.m2m16m18.system_migovec
+    m-all-e@izent2.M2.m2m16m18.system_migovec
+    m-all-e@jsl1.M2.m2m16m18.system_migovec
+    m-all-e@jsl2.M2.m2m16m18.system_migovec
+    m-all-e@jspdt.M2.m2m16m18.system_migovec
+    m-all-e@jspdt2.M2.m2m16m18.system_migovec
+  endmap
+endsource
+
+select M2-old-e
+export map -projection extended -layout dark-e -o ../../outputs/historical/M2_old_EE.pdf

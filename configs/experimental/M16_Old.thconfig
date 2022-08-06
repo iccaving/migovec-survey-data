@@ -1,0 +1,25 @@
+
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+  map M16-old-e -projection extended -title "M16 - 1983-85 (JSPDT)"
+    m-all-e@brezno.M16.m2m16m18.system_migovec
+    m-all-e@entrance.M16.m2m16m18.system_migovec
+    m-all-e@shordrop.M16.m2m16m18.system_migovec
+    m-all-e@shordrop2.M16.m2m16m18.system_migovec
+    m-all-e@galact1.M16.m2m16m18.system_migovec
+    m-all-e@galact2.M16.m2m16m18.system_migovec
+    m-all-e@galact3.M16.m2m16m18.system_migovec
+    m-all-e@galact4.M16.m2m16m18.system_migovec
+    m-all-e@tamoka.M16.m2m16m18.system_migovec
+    m-all-e@offhyd.M16.m2m16m18.system_migovec
+    m-all-e@hydrant.M16.m2m16m18.system_migovec
+    m-all-e@hydrant2.M16.m2m16m18.system_migovec
+  endmap
+endsource
+
+
+select M16-old-e
+export map -projection extended -layout dark-e -o ../../outputs/historical/M16_old_EE.pdf
