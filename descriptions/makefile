@@ -36,15 +36,15 @@ pdf: prepare markdown therion
 	cd ..;\
 
 pdfonly: prepare markdown
-		cd $$(git rev-parse --show-toplevel)/descriptions; \
-		cd tmp ;\
-		cp ../tex/* . ;\
-		xelatex descriptions.tex ;\
-		bibtex descriptions.aux ;\
-		xelatex descriptions.tex ;\
-		xelatex descriptions.tex ;\
-		mv *.pdf ../outputs
-		cd ..;\
+	cd $$(git rev-parse --show-toplevel)/descriptions; \
+	cd tmp ;\
+	cp ../tex/* . ;\
+	xelatex descriptions.tex ;\
+	bibtex descriptions.aux ;\
+	xelatex descriptions.tex ;\
+	xelatex descriptions.tex ;\
+	mv *.pdf ../outputs
+	cd ..;\
 
 clean: prepare pdf
 	cd $$(git rev-parse --show-toplevel)/descriptions; \

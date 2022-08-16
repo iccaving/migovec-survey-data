@@ -1,0 +1,65 @@
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+  map M2-old-e -projection extended -title "M2 Kavkna Jama - 1974-1979 (JSPDT)"
+    m-all-e@izent1.M2.m2m16m18.system_migovec
+    m-all-e@izent2.M2.m2m16m18.system_migovec
+    m-all-e@jsl1.M2.m2m16m18.system_migovec
+    m-all-e@jsl2.M2.m2m16m18.system_migovec
+    m-all-e@jspdt.M2.m2m16m18.system_migovec
+    m-all-e@jspdt2.M2.m2m16m18.system_migovec
+  endmap
+
+  map M16-old-e -projection extended -title "M16 - 1983-85 (JSPDT)"
+    m-all-e@brezno.M16.m2m16m18.system_migovec
+    m-all-e@entrance.M16.m2m16m18.system_migovec
+    m-all-e@shordrop.M16.m2m16m18.system_migovec
+    m-all-e@shordrop2.M16.m2m16m18.system_migovec
+    m-all-e@galact1.M16.m2m16m18.system_migovec
+    m-all-e@galact2.M16.m2m16m18.system_migovec
+    m-all-e@galact3.M16.m2m16m18.system_migovec
+    m-all-e@galact4.M16.m2m16m18.system_migovec
+    m-all-e@tamoka.M16.m2m16m18.system_migovec
+    m-all-e@offhyd.M16.m2m16m18.system_migovec
+    m-all-e@hydrant.M16.m2m16m18.system_migovec
+    m-all-e@hydrant2.M16.m2m16m18.system_migovec
+  endmap
+
+  map M18_1995 -projection extended -title "M18 (Torn T-shirt) - 1994 to 1995 (ICCC)"
+    m-all-e@upperrift.M18.m2m16m18.system_migovec
+    m-all-e@lowerrift.M18.m2m16m18.system_migovec
+    m-all-e@torn.M18.m2m16m18.system_migovec
+    m-all-e@turtle.M18.m2m16m18.system_migovec
+    m-all-e@shreddie.M18.m2m16m18.system_migovec
+    m-all-e@gallery.M18.m2m16m18.system_migovec
+    m-all-e@silos.M18.m2m16m18.system_migovec
+  endmap
+
+  map OldSystem_1996 -projection extended -title "Sistem Migovec - 1974 to 1996 (ICCC/JPSDT)"
+    M2-old-e
+    M16-old-e
+    M18_1995
+    m-all-e@void.M18.m2m16m18.system_migovec
+    m-all-e@zebra.M18.m2m16m18.system_migovec
+    m-all-e@dodge.M18.m2m16m18.system_migovec
+    m-all-e@hotline.M16.m2m16m18.system_migovec
+    m-all-e@level2n.M16.m2m16m18.system_migovec
+    m-all-e@level2s.M16.m2m16m18.system_migovec
+    m-all-e@rockroll.M16.m2m16m18.system_migovec
+    m-all-e@migcon.M16.m2m16m18.system_migovec
+    m-all-e@migconleft.M16.m2m16m18.system_migovec
+    m-all-e@migcondown.M16.m2m16m18.system_migovec
+    m-all-e@exhib.M16.m2m16m18.system_migovec
+    m-all-e@boogywoo.M16.m2m16m18.system_migovec
+    m-all-e@carwash.M16.m2m16m18.system_migovec
+    m-all-e@goodbag.M16.m2m16m18.system_migovec
+  endmap
+endsource
+
+
+
+
+select OldSystem_1996
+export map -projection extended -layout dark-e -o ../../outputs/historical/OldSystem_1996_EE.pdf

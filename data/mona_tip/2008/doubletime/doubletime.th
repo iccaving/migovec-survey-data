@@ -2,44 +2,46 @@ encoding  utf-8
 survey doubletime
 	input "doubletime-p.th2"
 	input "doubletime-e.th2"
-	
+
 	map  m-all-e -projection extended
 		doubletime-1e
 		doubletime-2e
 	endmap
-	
+
 	map m-all-p -projection plan
 		mdoubletime-1p
 		mdoubletime-2p
 		mdoubletime-3p
 		mdoubletime-4p
 	endmap
-	
+
 	map mdoubletime-1p -projection plan
 		doubletime-1p
 	endmap
-	
+
 	map mdoubletime-2p -projection plan
 		doubletime-2p
 	endmap
-	
+
 	map mdoubletime-3p -projection plan
 		doubletime-3p
 	endmap
-	
+
 	map mdoubletime-4p -projection plan
 		doubletime-4p
 	endmap
-	
-	
+
+
 	join doubletime-1p doubletime-2p
 	join doubletime-2p doubletime-3p
 	# join doubletime-3p doubletime-4p
 
 	join doubletime-1e doubletime-2e
-	
+
 	centreline
 		date 2008.08.07
+		explo-date 2008.08.07
+
 		explo-team "Dan Greenwald"
 		explo-team "Iztok Možir"
 		team "Dan Greenwald" insts notes
@@ -76,7 +78,7 @@ survey doubletime
 		13	14	0.95	331	+42	# .13 0.5 0 0.6 1.0
 		extend vertical
 		14	15	2.28	046	+63	#.14 0.2 0.2 0.3 1.5
-		
+
 		#PAGE 2
 		extend right
 		15	16	5.11	016	+34	# .15 0.2 0.1 0.5 2.5
@@ -89,9 +91,6 @@ survey doubletime
 		extend right
 		19	20	3.90	292	+36	# .19 1.5 0 3 1
 	endcentreline
-	
-	
+
+
 endsurvey
-
-
-

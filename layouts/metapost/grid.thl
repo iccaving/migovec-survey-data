@@ -8,8 +8,26 @@ layout custom_grid
 				draw (-10, 3*ysize/5) -- (-7, 3*ysize/5);
 				draw (-10, 4*ysize/5) -- (-7, 4*ysize/5);
 			fi fi;
-			
+
 			if xpos <0 : draw (-10,0) -- (0,0) fi;
+		enddef;
+	endcode
+endlayout
+
+layout custom_grid_dark
+	code metapost
+		def s_vgrid (expr xpos, ypos, xsize, ysize) =
+			pickup PenA;
+			if ypos < 1 : if xpos > 0: draw (0, ysize) -- (0, 0) withcolor(1,1,1);
+
+			#	draw (-3, ysize/5) -- (0, ysize/5) withcolor(1,1,1);
+			#	draw (-3, 2*ysize/5) -- (0, 2*ysize/5) withcolor(1,1,1);
+			#	draw (-3, 3*ysize/5) -- (0, 3*ysize/5) withcolor(1,1,1);
+			#	draw (-3, 4*ysize/5) -- (0, 4*ysize/5) withcolor(1,1,1);
+			fi fi;
+
+			pickup PenA;
+			if xpos >0 : draw (-5,0) -- (0,0) withcolor(1,1,1) fi;
 		enddef;
 	endcode
 endlayout

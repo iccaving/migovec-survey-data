@@ -1,0 +1,6 @@
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+select m-all-e@m2m16m18.system_migovec
+export map -projection extended -layout dark-e -o ../../outputs/historical/OldSystem_2000_EE.pdf

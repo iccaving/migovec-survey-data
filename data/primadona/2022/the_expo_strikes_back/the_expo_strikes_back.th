@@ -1,13 +1,27 @@
 # 2022.07.17 created by TopoDroid v 5.1.40
 
 survey the_expo_strikes_back -title "The Expo Strikes Back!"
-    # continuation of Death Star 
+    # continuation of Death Star
+    input "the_expo_strikes_back-1p.th2"
+    input "the_expo_strikes_back-1s.th2"
+
+    map m-all-p -projection plan
+      The_Expo_Strikes_Back-1p
+    endmap
+
+    map m-all-e -projection extended
+      The_Expo_Strikes_Back-1s
+    endmap
 
   centerline
-    date 2022.07.16 
+    date 2022.07.16
+    explo-date 2022.07.16
+    explo-team "Rhys Tyers"
+    explo-team "Ana Teck"
+    explo-team "Ellie Pizey"
     team "Rhys Tyers"
     team "Ana Teck"
-    team "Ellie Pizey" 
+    team "Ellie Pizey"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

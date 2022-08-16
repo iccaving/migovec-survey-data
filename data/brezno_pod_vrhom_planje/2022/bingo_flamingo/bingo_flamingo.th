@@ -1,15 +1,18 @@
 # 2022.07.13 created by TopoDroid v 5.1.40
 
 survey bingo_flamingo -title "bingo flamingo"
-    # pitch in planja 
+    # pitch in planja
 
    input "bingo_flamingo-1p.th2"
    input "bingo_flamingo-1s.th2"
 
    map m-all-p -projection plan
      bingo_flamingo-1p
+     break
      bingo_flamingo-1p1
+     break
      bingo_flamingo-1p2
+     break
      bingo_flamingo-1p3
    endmap
    map m-all-e -projection extended
@@ -17,14 +20,15 @@ survey bingo_flamingo -title "bingo flamingo"
    endmap
 
   centerline
-    date 2022.07.13 
+    date 2022.07.13
     explo-date 2022.07.13
-    team "Tanguy Racine" 
-    team "James Wilson" 
-    team "Linus Thümmel" 
-    explo-team "Tanguy Racine" 
-    explo-team "James Wilson" 
-    explo-team "Linus Thümmel" 
+    team "Tanguy Racine"
+    team "James Wilson"
+    team "Linus Thümmel"
+    explo-team "Tanguy Racine"
+    explo-team "James Wilson"
+    explo-team "Linus Thümmel"
+    mark 23 fixed  # mark this one as PSS
     units length meters
     units compass clino degrees
     data normal from to length compass clino

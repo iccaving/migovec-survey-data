@@ -1,0 +1,177 @@
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+  map M2-old-e -projection extended -title "M2 Kavkna Jama - 1974-1979 (JSPDT)"
+    m-all-e@izent1.M2.m2m16m18.system_migovec
+    m-all-e@izent2.M2.m2m16m18.system_migovec
+    m-all-e@jsl1.M2.m2m16m18.system_migovec
+    m-all-e@jsl2.M2.m2m16m18.system_migovec
+    m-all-e@jspdt.M2.m2m16m18.system_migovec
+    m-all-e@jspdt2.M2.m2m16m18.system_migovec
+  endmap
+endsource
+
+select M2-old-e
+export map -projection extended -layout dark-e -o ../../outputs/historical/M2_old_EE.pdf
+
+
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+  map M16-old-e -projection extended -title "M16 - 1983-85 (JSPDT)"
+    m-all-e@brezno.M16.m2m16m18.system_migovec
+    m-all-e@entrance.M16.m2m16m18.system_migovec
+    m-all-e@shordrop.M16.m2m16m18.system_migovec
+    m-all-e@shordrop2.M16.m2m16m18.system_migovec
+    m-all-e@galact1.M16.m2m16m18.system_migovec
+    m-all-e@galact2.M16.m2m16m18.system_migovec
+    m-all-e@galact3.M16.m2m16m18.system_migovec
+    m-all-e@galact4.M16.m2m16m18.system_migovec
+    m-all-e@tamoka.M16.m2m16m18.system_migovec
+    m-all-e@offhyd.M16.m2m16m18.system_migovec
+    m-all-e@hydrant.M16.m2m16m18.system_migovec
+    m-all-e@hydrant2.M16.m2m16m18.system_migovec
+  endmap
+endsource
+
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+  map Vrtnarija-2000-e -projection extended -title "Vrtnarija 2000 (ICCC/JSPDT)"
+    m-all-e@bclent2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@urinal.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@urinal2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@laurel.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@hardy.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pico.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pico2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@space_odyssey.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@tesselator.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@waffer.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@concorde.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@alchemy.vrtnarija.vrtnarija_vilinska.system_migovec
+  endmap
+endsource
+
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+  map Vrtnarija-2000-e -projection extended -title "Vrtnarija 2000 (ICCC/JSPDT)"
+    m-all-e@bclent2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@urinal.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@urinal2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@laurel.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@hardy.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pico.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pico2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@space_odyssey.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@tesselator.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@waffer.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@concorde.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@alchemy.vrtnarija.vrtnarija_vilinska.system_migovec
+  endmap
+
+  map Vrtnarija-2001-e -projection extended -title "Vrtnarija 2001 (ICCC/JSPDT)"
+    Vrtnarija-2000-e
+    m-all-e@banzai.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@chariot.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@fallsrd.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@friendship.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@hunger.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@judge.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pink.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pink2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@prisoners.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@alchemy.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@skynet.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@zimmer.vrtnarija.vrtnarija_vilinska.system_migovec
+
+  endmap
+
+  map M18_1995 -projection extended -title "M18 (Torn T-shirt) - 1994 to 1995 (ICCC)"
+    m-all-e@upperrift.M18.m2m16m18.system_migovec
+    m-all-e@lowerrift.M18.m2m16m18.system_migovec
+    m-all-e@torn.M18.m2m16m18.system_migovec
+    m-all-e@turtle.M18.m2m16m18.system_migovec
+    m-all-e@shreddie.M18.m2m16m18.system_migovec
+    m-all-e@gallery.M18.m2m16m18.system_migovec
+    m-all-e@silos.M18.m2m16m18.system_migovec
+  endmap
+
+  map OldSystem_1996 -projection extended -title "Sistem Migovec - 1974 to 1996 (ICCC/JPSDT)"
+    M2-old-e
+    M16-old-e
+    M18_1995
+    m-all-e@void.M18.m2m16m18.system_migovec
+    m-all-e@zebra.M18.m2m16m18.system_migovec
+    m-all-e@dodge.M18.m2m16m18.system_migovec
+    m-all-e@hotline.M16.m2m16m18.system_migovec
+    m-all-e@level2n.M16.m2m16m18.system_migovec
+    m-all-e@level2s.M16.m2m16m18.system_migovec
+    m-all-e@rockroll.M16.m2m16m18.system_migovec
+    m-all-e@migcon.M16.m2m16m18.system_migovec
+    m-all-e@migconleft.M16.m2m16m18.system_migovec
+    m-all-e@migcondown.M16.m2m16m18.system_migovec
+    m-all-e@exhib.M16.m2m16m18.system_migovec
+    m-all-e@boogywoo.M16.m2m16m18.system_migovec
+    m-all-e@carwash.M16.m2m16m18.system_migovec
+    m-all-e@goodbag.M16.m2m16m18.system_migovec
+  endmap
+
+  map OldPrima_2001 -projection extended -title "Primadona - 2000 to 2005 (JPSDT)"
+    m-all-e@prima1.primadona.primadona_ubend_mona_tip.system_migovec
+    m-prima1-2e@prima1.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@prima2.primadona.primadona_ubend_mona_tip.system_migovec
+    m-ttt_bottom-e@zima00.primadona.primadona_ubend_mona_tip.system_migovec
+    m-zima00-e@zima00.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@TTTr.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@ttt.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@drugi.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@galerija.primadona.primadona_ubend_mona_tip.system_migovec
+    #m-all-e@galerija2.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@pov.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@risa2.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@risanke.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@ajdovscina.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@milanova.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@smer0.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@spodnji.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@pivnica_resurvey.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@buckwheat.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@pivnica_2_resurvey.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@popotresni.primadona.primadona_ubend_mona_tip.system_migovec
+    m-all-e@brez_volje.primadona.primadona_ubend_mona_tip.system_migovec
+
+  endmap
+endsource
+
+
+#select M16-old-e
+#export map -projection extended -layout dark-e -o ../../outputs/historical/M16_old_EE.pdf
+
+#select Vrtnarija-2000-e
+#export map -projection extended -layout dark-e -o ../../outputs/historical/Vrtnarija-2000_EE.pdf
+
+#select Vrtnarija-2001-e
+#export map -projection extended -layout dark-e -o ../../outputs/historical/Vrtnarija-2001_EE.pdf
+
+
+#select M18_1995
+#export map -projection extended -layout dark-e -o ../../outputs/historical/M18_1994_EE.pdf
+
+#select OldSystem_1996
+#export map -projection extended -layout dark-e -o ../../outputs/historical/OldSystem_1996_EE.pdf
+
+#select m-all-e@m2m16m18.system_migovec
+#export map -projection extended -layout dark-e -o ../../outputs/historical/OldSystem_2000_EE.pdf
+
+#select OldPrima_2001
+#export map -projection extended -layout dark-e -o ../../outputs/historical/OldPrima_2001_EE.pdf

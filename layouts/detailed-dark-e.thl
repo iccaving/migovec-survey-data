@@ -1,0 +1,95 @@
+encoding  utf-8
+
+# input the custom point, line and area definitions
+input metapost/points.thl
+input metapost/lines.thl
+input metapost/areas.thl
+input metapost/scalebar_arrow.thl
+
+layout detailed-dark-e
+
+  # copy the metapost definitions
+  copy custom_points
+  copy custom_lines
+  copy custom_areas
+  copy custom_arrow
+  copy custom_scalebar
+
+
+  ## general statements
+  scale 1 250
+  legend on
+  map-header -5 95 ne
+  statistics topo-length off
+  fonts-setup 6 7 10 12 14
+  symbol-hide point label
+  color map-bg transparent
+  color map-fg [0 0 0]
+  transparency off
+  opacity 100
+
+
+  ## survey lines and stations
+  symbol-assign line survey AUT
+  symbol-hide point passage-height
+  symbol-colour point station-name [89 94 100]
+  symbol-colour line survey [89 94 100]
+
+  symbol-colour line wall [100 100 100]
+  symbol-colour point label [100 90 76]
+
+  ## water and ice
+  symbol-assign area ice MY
+  symbol-assign area snow MY
+
+  symbol-colour area ice [0 70 90]
+  symbol-colour area water [89 94 100]
+  symbol-colour area sump [89 94 100]
+  symbol-colour point water-flow [89 94 100]
+
+  ## formations
+  symbol-assign point stalagmite MY
+  symbol-assign point stalactite MY
+  symbol-assign point pillar MY
+
+  symbol-colour point flowstone [85 45 10]
+  symbol-color line wall:flowstone [85 45 10]
+  symbol-colour point flowstone [85 45 10]
+  symbol-colour point pillar [85 45 10]
+  symbol-colour point stalagmite [85 45 10]
+  symbol-colour point stalactite [85 45 10]
+  symbol-colour point curtain [85 45 10]
+  symbol-colour point helictite [85 45 10]
+  symbol-colour point soda-straw [85 45 10]
+  symbol-colour point crystal [85 45 10]
+
+  ## sedimentary fills
+  symbol-assign line rock-border MY
+  symbol-assign area clay MY
+  symbol-assign area sand MY
+  symbol-assign area pebbles MY
+
+  symbol-colour area clay [65 55 10]
+  symbol-colour line wall:clay [65 55 10]
+  symbol-colour area sand [100 100 100]
+
+  ## misc
+  symbol-assign point gradient MY
+  symbol-colour point gradient [100 100 100]
+  symbol-assign line contour MY
+  symbol-assign line pit AUT
+  symbol-colour line pit [100 100 100]
+  symbol-colour line floor-step [100 100 100]
+  symbol-colour line contour [100 100 100]
+  symbol-colour area u:smallblocks [100 100 100]
+  symbol-assign line wall MY
+  symbol-assign point breakdown-choke AUT
+  symbol-assign point air-draught MY
+  #symbol-assign point station:fixed MY
+  #symbol-assign point station:temporary MY
+  symbol-colour point station [89 94 100]
+  symbol-colour line rock-border [100 100 100]
+  symbol-colour line wall:blocks [100 100 100]
+  symbol-colour line u:texture [100 100 100]
+
+endlayout

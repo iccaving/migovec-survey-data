@@ -1,19 +1,19 @@
 survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@brezno_planja_ent
-	
+
 	input brezno_pod_vrhom_planje-e.thm
 	input brezno_pod_vrhom_planje-p.thm
-	
+
 	centreline
 		cs epsg:3794
 		fix 0@brezno_planja_ent 403804 125750 0 #1877
 		#fix 0@brezno_planja_ent 404177 125263 1877  # GK fix
 	endcentreline
-	
+
 	###__________2021____________###
 	input "./2021/brezno_planja_ent/brezno_planja_ent.th"
 	input "./2021/okna/okna.th"
 	input "./2021/prazen_list/prazen_list.th"
-	
+
 	#equate 10@okna 35@brezno_planja_ent
 	equate 5@okna 14@prazen_list
 	equate 18@prazen_list 35@brezno_planja_ent

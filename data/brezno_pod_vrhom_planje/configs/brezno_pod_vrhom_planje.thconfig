@@ -21,13 +21,15 @@ export model -o ../../../outputs/brezno_pod_vrhom_planje.3d
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
 input ../../../layouts/detailed-p.thl
+input ../../../layouts/detailed-dark-p.thl
 input ../../../layouts/detailed-e.thl
+input ../../../layouts/detailed-dark-e.thl
 
 source
 	map localmap-p -projection plan
 		m-all-p@brezno_pod_vrhom_planje
 	endmap
-	
+
 	map localmap-e -projection extended
 		m-all-e@brezno_pod_vrhom_planje
 	endmap
@@ -44,23 +46,27 @@ select localmap-p
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
 layout local
+	#copy detailed-dark-p
 	copy detailed-p
 	legend off
-	map-header 0 0 se
+	colour map-fg altitude
+
+	map-header 0 0 sw
 	scale 1 200
 	symbol-show point label
 	symbol-show point gradient
-	
-	map-comment "Vrh Planja<br>Cadastral Number: XXXX<br>Length: XX m, Depth: XX m<br>Entrance elevation: 1868 m<br>Coordinates (lat-long):  46.264686\°N / 13.752099\°E"
-	
-	#code tex-map
-	#	\def\maplayout{
-	#	\legendbox{0}{-5}{SW}{\size[26]\the\cavename}
-	#	%\legendbox{-10}{130}{NW}{\size[10]\the\comment}
-	#	\legendbox{15}{20}{N}{\scalebar}
-	#	\legendbox{15}{25}{S}{\northarrow}
-	#	}
-	#endcode
+
+	#map-comment "Vrh Planja<br>Cadastral Number: XXXX<br>Length: XX m, Depth: XX m<br>Entrance elevation: 1868 m<br>Coordinates (lat-long):  46.264686\°N / 13.752099\°E"
+	symbol-assign line pit MY
+	symbol-assign line floor-step MY
+	code tex-map
+		\def\maplayout{
+		\legendbox{0}{-5}{SW}{\rgbcolor[100 100 100]\size[26]\the\cavename}
+		#\legendbox{-10}{130}{NW}{\size[10]\the\comment}
+		\legendbox{15}{20}{N}{\rgbcolor[100 100 100]\scalebar}
+		\legendbox{15}{25}{S}{\rgbcolor[100 100 100]\northarrow}
+		}
+	endcode
 endlayout
 
 #----------------------------------------------------------------------------------|
@@ -72,6 +78,7 @@ select localmap-e
 #----------------------------------------------------------------------------------|
 # define a local layout without legend or header for extended elevation
 layout local-e
+	#copy detailed-dark-e
 	copy detailed-e
 	legend off
 	map-header 0 0 off
@@ -88,4 +95,4 @@ select m-all-e@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e 
+export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e

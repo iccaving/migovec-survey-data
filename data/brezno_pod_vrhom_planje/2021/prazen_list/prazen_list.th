@@ -2,22 +2,24 @@ encoding utf-8
 # created with SexyTopo 1.6.1
 
 survey prazen_list
-	
+
 	input "prazen_list-e.th2"
 	input "prazen_list-p.th2"
-	
+
 	map m-all-p -projection plan
 		prazen_list-1p
 		break
 		prazen_list-2p
+		break
+		prazen_list-3p
 	endmap
-	
+
 	map m-all-e -projection extended
 		prazen_list-1e
 	endmap
-	
+
 	centreline
-		
+
 		date 2021.10.23
 		# Splays on 2 should be on 1 # Corrected - Rhys 2021-01-05
 		# 1, 4, 7 PSS
@@ -31,9 +33,9 @@ survey prazen_list
 		team "Cecilia Kan" assistant
 
 		mark 1 4 7 fixed
-		
+
 		data normal from to length compass clino
-		
+
 		1	.	5.364	272.36	-4.06
 		1	.	2.863	293.57	-0.54
 		extend left
@@ -180,7 +182,7 @@ survey prazen_list
 		7	.	1.294	106.58	-33.13
 		extend right
 		7	8	3.346	83.45	15.95		#  {from: 3.344 83.62 15.85, 3.336 83.47 15.91, 3.358 83.28 16.09}
-		
+
 		extend right
 		8	9	2.097	157.80	59.35		#  {from: 2.093 157.65 59.04, 2.098 157.82 59.39, 2.100 157.92 59.62}
 		extend ignore
@@ -326,14 +328,14 @@ survey prazen_list
 		17	.	0.326	42.91	30.38
 		extend left
 		17	18	2.259	282.85	26.24		#  {from: 2.262 282.58 25.93, 2.254 282.89 26.41, 2.262 283.07 26.39}
-		
-		
+
+
 		extend start 1
 		extend left 2
 		extend left 14
-		
-		
+
+
 	endcentreline
-	
-	
+
+
 endsurvey

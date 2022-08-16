@@ -1,0 +1,39 @@
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-dark-e.thl"
+
+source
+  map Vrtnarija-2000-e -projection extended -title "Vrtnarija 2000 (ICCC/JSPDT)"
+    m-all-e@bclent2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@urinal.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@urinal2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@laurel.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@hardy.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pico.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pico2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@space_odyssey.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@tesselator.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@waffer.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@concorde.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@alchemy.vrtnarija.vrtnarija_vilinska.system_migovec
+  endmap
+
+  map Vrtnarija-2001-e -projection extended -title "Vrtnarija 2001 (ICCC/JSPDT)"
+    Vrtnarija-2000-e
+    m-all-e@banzai.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@chariot.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@fallsrd.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@friendship.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@hunger.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@judge.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pink.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@pink2.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@prisoners.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@alchemy.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@skynet.vrtnarija.vrtnarija_vilinska.system_migovec
+    m-all-e@zimmer.vrtnarija.vrtnarija_vilinska.system_migovec
+  endmap
+endsource
+
+select Vrtnarija-2001-e
+export map -projection extended -layout dark-e -o ../../outputs/historical/Vrtnarija-2001_EE.pdf
