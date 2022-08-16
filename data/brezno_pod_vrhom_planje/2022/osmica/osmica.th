@@ -1,0 +1,66 @@
+survey osmica -title "Osmica" #"Figure of Eight" #Below new pitch in Planja
+	input osmica-p.th2
+	input osmica-e.th2
+	centreline
+	
+    date 2022.07.19 
+    explo-date 2022.07.19
+    team "Jana Carga" 
+    team "Iztok Mozir" 
+    team "Chris Hayes"
+	team "David Wilson"
+	explo-team "Jana Carga" 
+    explo-team "Iztok Mozir" 
+    explo-team "Chris Hayes"
+	explo-team "David Wilson"  
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+		1	2	19.1	53	79	#8.5	5	20	0.7
+		2	3	11.8	39	77	#4.5	0.5	12	19
+		3	4	2.5	51	1	#0.2	0.5	0	15
+		4	5	1.2	69	18	#0	0.2	1	15
+		5	6	2.4	42	-10	#0.3	0.2	0.3	0
+		6	7	2.6	325	+18	#0.4	0	0.1	0
+		7	8	3.6	76	5	#0	3	0.5	0.8
+		8	9	3.2	68	7	#0	0.8	0.6	4
+		9	10	0.9	75	-45	#0.4	0.2	0.8	5
+		10	11	1.3	111	-1	#0	0.5	1.5	3
+		11	12	3.4	82	3	#0.2	0.3	1	3
+		12	13	5.7	56	8	#0	0.2	1	3
+		13	14	1.9	113	-4	#0	0.5	0.2	1.5
+		14	15	2.2	20	10	#0.3	0	0.1	1
+		15	16	3.6	45	0	#0	0.5	0.8	1 #16 is station 1 of bingo
+
+	endcentreline
+endsurvey
+#notes
+#stn 1 is pss, cairn at the botton of pitch
+#stn 16 osmica is pss, cairn just before meander/rift
+#bingo 8 is stn 23 bingo flamingo
+
+survey bingo -title "Bingo" #part of bingo flamingo pitch
+	centreline
+    date 2022.07.19 
+    explo-date 2022.07.19
+    team "Jana Carga" 
+    team "Iztok Mozir" 
+    team "Chris Hayes"
+	team "David Wilson"
+	explo-team "Jana Carga" 
+    explo-team "Iztok Mozir" 
+    explo-team "Chris Hayes"
+	explo-team "David Wilson"  
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+
+	1	2	7.4	24	-33	#0.8	0.5	0	3
+	2	3	14	0	90	#0.4	4.2	20	0
+	3	4	7	11	56	#0	2.5	10	14
+	4	5	13.4	0	90	#3	3	24	1.5
+	5	6	17	55	81	#3	3.5	23	16
+	6	7	3.4	13	65	#4.7	1.7	9.5	14
+	7	8	5.2	335	-3	#2.5	0	9.8	0.5
+	endcenterline
+endsurvey

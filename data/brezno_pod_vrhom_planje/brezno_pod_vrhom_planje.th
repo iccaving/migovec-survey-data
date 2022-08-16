@@ -22,8 +22,11 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 
 	###__________2022____________###
 	input "./2022/bingo_flamingo/bingo_flamingo.th"
+	input "./2022/osmica/osmica.th"
 
 	equate 0@bingo_flamingo 7@prazen_list
+	equate 8@bingo 23@bingo_flamingo
+	equate 16@osmica 1@bingo
 
 
 endsurvey

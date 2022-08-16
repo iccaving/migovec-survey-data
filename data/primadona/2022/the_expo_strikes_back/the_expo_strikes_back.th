@@ -5,7 +5,9 @@ survey the_expo_strikes_back -title "The Expo Strikes Back!"
 
   centerline
     date 2022.07.16 
-    # team Rhys Tyers, Ana Teck, Ellie Pizey 
+    team "Rhys Tyers"
+    team "Ana Teck"
+    team "Ellie Pizey" 
     units length meters
     units compass clino degrees
     data normal from to length compass clino

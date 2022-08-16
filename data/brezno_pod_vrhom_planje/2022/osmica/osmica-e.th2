@@ -1,0 +1,103 @@
+encoding  utf-8
+
+scrap osmica-1e -projection extended 
+endscrap
+
+
+scrap DELETE-ME-survey-legs-DUPLICATE_osmica-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+    line survey
+        158.18 -127.20
+        129.48 20.43
+    endline
+    line survey
+        129.48 20.43
+        108.58 110.98
+    endline
+    line survey
+        108.58 110.98
+        88.90 111.30
+    endline
+    line survey
+        88.90 111.30
+        79.91 114.21
+    endline
+    line survey
+        79.91 114.21
+        61.30 110.98
+    endline
+    line survey
+        61.30 110.98
+        41.83 117.28
+    endline
+    line survey
+        41.83 117.28
+        13.59 119.72
+    endline
+    line survey
+        13.59 119.72
+        -11.42 122.80
+    endline
+    line survey
+        -11.42 122.80
+        -16.43 117.83
+    endline
+    line survey
+        -16.43 117.83
+        -26.66 117.60
+    endline
+    line survey
+        -26.66 117.60
+        -53.40 119.02
+    endline
+    line survey
+        -53.40 119.02
+        -97.84 125.31
+    endline
+    line survey
+        -97.84 125.31
+        -112.77 124.21
+    endline
+    line survey
+        -112.77 124.21
+        -129.83 127.20
+    endline
+    line survey
+        -129.83 127.20
+        -158.18 127.20
+    endline
+    point 158.18 -127.20 station-name -align tr -scale xs -text 1
+    point 129.48 20.43 station-name -align tr -scale xs -text 2
+    point 108.58 110.98 station-name -align tr -scale xs -text 3
+    point 88.90 111.30 station-name -align tr -scale xs -text 4
+    point 79.91 114.21 station-name -align tr -scale xs -text 5
+    point 61.30 110.98 station-name -align tr -scale xs -text 6
+    point 41.83 117.28 station-name -align tr -scale xs -text 7
+    point 13.59 119.72 station-name -align tr -scale xs -text 8
+    point -11.42 122.80 station-name -align tr -scale xs -text 9
+    point -16.43 117.83 station-name -align tr -scale xs -text 10
+    point -26.66 117.60 station-name -align tr -scale xs -text 11
+    point -53.40 119.02 station-name -align tr -scale xs -text 12
+    point -97.84 125.31 station-name -align tr -scale xs -text 13
+    point -112.77 124.21 station-name -align tr -scale xs -text 14
+    point -129.83 127.20 station-name -align tr -scale xs -text 15
+    point -158.18 127.20 station-name -align tr -scale xs -text 16
+endscrap
+
+scrap DUPLICATE_osmica-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+    point 158.18 -127.20 station -name 1
+    point 129.48 20.43 station -name 2
+    point 108.58 110.98 station -name 3
+    point 88.90 111.30 station -name 4
+    point 79.91 114.21 station -name 5
+    point 61.30 110.98 station -name 6
+    point 41.83 117.28 station -name 7
+    point 13.59 119.72 station -name 8
+    point -11.42 122.80 station -name 9
+    point -16.43 117.83 station -name 10
+    point -26.66 117.60 station -name 11
+    point -53.40 119.02 station -name 12
+    point -97.84 125.31 station -name 13
+    point -112.77 124.21 station -name 14
+    point -129.83 127.20 station -name 15
+    point -158.18 127.20 station -name 16
+endscrap
