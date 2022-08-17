@@ -147,5 +147,12 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 	join mona_tip11-3Ap@mona_tip11 extra_dunkel-1p@extra_dunkel
 	join mona_tip11_l1@mona_tip11 extra_dunkel_l1@extra_dunkel
 
+	######________________2022________________######
+	input "./2022/100_cocoa/100_cocoa.th"
+	input "./2022/coda/coda.th"
+	input "./2022/the_aviary/the_aviary.th"
 
+	equate 0@100_cocoa 7@extra_dunkel
+	equate 40@coda 24@mona_tip11
+	equate 2@the_aviary 10@wishing_well
 endsurvey

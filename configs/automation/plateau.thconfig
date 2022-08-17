@@ -1,6 +1,6 @@
 source ../../data/plateau.th
 
-#export model -o ../../outputs/plateau.lox
+export model -o ../../outputs/plateau.lox
 export model -o ../../outputs/plateau.3d
 
 select m-all-p@plateau -map-level 1
