@@ -1,0 +1,144 @@
+encoding utf-8
+##XTHERION## xth_me_area_adjust 24.3 -483.0 342.1 -58.4
+##XTHERION## xth_me_area_zoom_to 25
+
+# 2022.07.29 created by TopoDroid v. 5.1.40
+
+scrap the_aviary-The_aviaryp -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line wall
+  240.09 -354.45
+  240.09 -314.00 221.42 -274.60 203.17 -240.76
+  198.43 -231.96 198.13 -220.21 196.81 -210.37
+  196.64 -209.05 196.17 -207.80 195.89 -206.51
+  195.60 -205.20 195.33 -203.88 195.10 -202.56
+  194.91 -201.47 194.81 -200.37 194.63 -199.28
+  193.29 -191.20 186.18 -181.63 188.34 -174.33
+endline
+
+line wall
+  242.06 -353.86
+  238.39 -363.60 225.35 -365.44 217.56 -369.48
+  198.45 -379.39 175.32 -383.00 153.89 -383.00
+  143.48 -383.00 144.92 -352.08 144.56 -343.86
+  144.51 -342.65 144.44 -341.43 144.23 -340.24
+  143.95 -338.68 143.35 -337.18 143.09 -335.62
+  142.87 -334.33 143.04 -333.00 142.81 -331.72
+  139.43 -313.46 131.49 -295.76 127.01 -277.78
+  123.44 -263.47 122.41 -247.25 124.25 -232.56
+  125.31 -224.11 132.91 -217.98 136.32 -210.92
+  141.30 -200.62 144.14 -185.41 151.24 -176.67
+  153.45 -173.95 157.55 -171.36 159.60 -166.72
+  160.76 -164.11 161.07 -161.20 161.80 -158.44
+endline
+
+
+line u:splay -visibility off
+  196.85 -236.22
+  108.44 -258.47
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  136.90 -293.65
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  141.29 -316.71
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  7.05 -238.66
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  163.28 -194.72
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  137.20 -93.54
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  106.36 -260.40
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  61.84 -220.37
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  208.06 -339.91
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  187.44 -344.50
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  149.24 -369.80
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  188.35 -352.50
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  156.43 -343.83
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  234.88 -340.70
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  150.68 -339.59
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  132.63 -287.57
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  204.79 -237.40
+endline
+line u:splay -visibility off
+  152.62 -85.68
+  22.96 -327.14
+endline
+line u:splay -visibility off
+  152.62 -85.68
+  184.19 -305.64
+endline
+line u:splay -visibility off
+  152.62 -85.68
+  232.52 -201.93
+endline
+line u:splay -visibility off
+  152.62 -85.68
+  246.86 -239.68
+endline
+line u:splay -visibility off
+  152.62 -85.68
+  254.04 -212.60
+endline
+line u:splay -visibility off
+  152.62 -85.68
+  185.84 -261.31
+endline
+line u:splay -visibility off
+  152.62 -85.68
+  139.45 -241.38
+endline
+line u:splay -visibility off
+  152.62 -85.68
+  551.12 -340.18
+endline
+line u:splay -visibility off
+  152.62 -85.68
+  399.52 -198.69
+endline
+
+point 196.85 -236.22 station -name "0"
+
+
+endscrap

@@ -1,0 +1,18 @@
+encoding  utf-8
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                                                                                  |
+#                      A SMALL CAVE OF THE MIGOVEC PLATEAU                         |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../brezno_pod_vrhom_planje.th"
+
+#----------------------------------------------------------------------------------|
+# export a model openable in Loch and one in Aven
+export model -o ../../../outputs/brezno_pod_vrhom_planje.3d
