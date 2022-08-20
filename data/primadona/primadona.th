@@ -545,6 +545,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2022/cantina_canyon_2/cantina_canyon_2.th"
 	input "./2022/who_dies_first/who_dies_first.th"
 	input "./2022/antares/antares.th"
+	input "./2022/blue_lagoon/blue_lagoon.th"
 
 	equate 36@deveti_krog 1@styx
 	equate 1@death_star 29@the_expo_strikes_back
@@ -557,5 +558,6 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 0@cantina_canyon_2 8@sithyphus_slope
 	equate 33@the_deep_awakens 5@who_dies_first
 	equate 31@cantina_canyon_2 9@antares
+	equate 12@blue_lagoon 0@bin_bag_palace
 
 endsurvey
