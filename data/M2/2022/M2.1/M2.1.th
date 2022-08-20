@@ -1,0 +1,17 @@
+# 2022.08.20 created by TopoDroid v 5.1.40
+
+survey M2.1 -title "M2.1"
+
+  centerline
+    date 2022.08.03 
+    # team RT + BH + AT 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend right
+    1 2 2.33 313.9 30.1
+    extend left
+    2 3 11.12 200.5 46.8
+  endcenterline
+
+endsurvey
