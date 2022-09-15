@@ -41,7 +41,7 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
 
 You can view any of the 3D models or PDF maps in your browser [here](https://iccaving.github.io/migovec-survey-data/).
 
-The surface atlas can be viewed [here](https://github.com/iccaving/migovec-survey-data/blob/master/data/2022_surface/entrances_information.md)
+The surface atlas can be viewed [here](https://github.com/iccaving/migovec-survey-data/blob/master/data/2022_surface/surface_atlas.md)
 
 ## Downloads
 
