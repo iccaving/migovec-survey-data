@@ -1,11 +1,11 @@
 # 2022.07.22 created by TopoDroid v 5.1.40
 
 survey mudaholic -title "mudaholic"
-    # shit mudddy tube and rift 
+    # shit mudddy tube and rift
 
   centerline
-    date 2022.07.21 
-    # team dpw JW ls ok 
+    date 2022.07.21
+    # team dpw JW ls ok
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -371,6 +371,7 @@ survey mudaholic -title "mudaholic"
     25 . 2.85 178.5 4.4
     25 . 4.41 201.7 12.9
     extend left
+    flags duplicate
     25 26 2.90 197.5 13.3
     # extend auto
     26 . 1.30 316.5 15.0
@@ -433,6 +434,7 @@ survey mudaholic -title "mudaholic"
     29 . 15.40 222.3 -47.2
     extend left
     29 30 10.66 206.9 -50.2
+    flags not duplicate
   endcenterline
 
   # input "mudaholic-1p.th2"
