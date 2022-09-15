@@ -1,4 +1,6 @@
-source ../../plateau.th
+source ../../data/plateau.th
 
-#export database -o ../../_outputs/database/MigovecPlateau.sql
-export database -o ../../_outputs/database/MigovecPlateau.csv
+#export database -o ../../outputs/plateau.sql
+export model -o ../../outputs/plateau.3d -fmt survex
+
+#export database -o ../../_outputs/database/MigovecPlateau.csv
