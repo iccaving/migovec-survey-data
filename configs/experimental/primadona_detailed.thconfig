@@ -3,11 +3,9 @@ source ../../data/system_migovec.th
 
 source
   map m-local-p -projection plan
-    m-all-p@ubend.primadona_ubend_mona_tip.system_migovec
-    m-detailed-p@primadona.primadona_ubend_mona_tip.system_migovec
-    m-all-p@belladonna.primadona_ubend_mona_tip.system_migovec
   endmap
 endsource
+
 select m-local-p
 
 input ../../layouts/detailed-p.thl
@@ -50,4 +48,5 @@ layout local-p
   #  set_label_level(3);
   #endcode
 endlayout
+
 export map -o ../../outputs/prima_p_detailed.pdf -layout local-p
