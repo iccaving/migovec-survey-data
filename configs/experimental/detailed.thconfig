@@ -14,7 +14,7 @@ source "../../primadona_ubend_mona_tip.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/detailed-p.thl"
+input "../../layouts/detailed-p.thl"
 
 
 #----------------------------------------------------------------------------------|
@@ -33,5 +33,3 @@ export map -projection plan -o ../../_outputs/misc/detailed_ad_aspera_plan_SLO.p
 language en
 export map -projection plan -o ../../_outputs/misc/detailed_ad_aspera_plan_ENG.pdf -layout plan -layout-debug station-names
 #export map -projection plan -o ../../_outputs/misc/detailed_plan_ENG.svg -layout plan
-
-
