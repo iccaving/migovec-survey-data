@@ -82,7 +82,7 @@ Information on each of the cave entrances is scattered between sources such as t
   - Did not manage to make progress on the upwards dig
   - Marginal progress was made over a tight rift, despite the loss of the lump hammer
 
-### Gondolin
+### Gondolin
 
 - Discovered in 2017 [HM3, page 232]
   - Pushed for three pitches before the cave dies
@@ -111,7 +111,7 @@ Information on each of the cave entrances is scattered between sources such as t
   - Survey and description in HM3 reference
   - Main lead was killed after hauling a boulder out of the way, other lead was also killed
 
-### Janet's Little Cave
+### Janet's Little Cave
 
 - Description in HM1, page 184, 2004
   - Small airy passage in the side of a shakehole near the Kuk path
@@ -128,7 +128,7 @@ Information on each of the cave entrances is scattered between sources such as t
 - Unsure if this is a cave or not, a GPS waypoint of this name is mentioned in HM2 draft, page 44, 2008
   - East of M19 there is large entrance with a draughting dig that looks promising
 
-### JJ1
+### JJ1
 
 - Discovered in 2006, HM1 page 214
   - Multiple caves in the V8 valley, unclear which is JJ1 from HM1 description alone
@@ -195,7 +195,7 @@ Information on each of the cave entrances is scattered between sources such as t
 
 - Entrance on north face of Kuk, found to just be a window with light filtering in from above [HM1, page 195, 2005]
 
-### K5
+### K5
 
 - Entrance on west end of north Kuk face [HM1, page 195, 2005]
   - Abseiled down to scree floor but unclear if cave is completely dead
@@ -246,7 +246,7 @@ Information on each of the cave entrances is scattered between sources such as t
   - Obvious entrance in large shake hole which leads to moderately sized chamber 
   - Small descending hole on right side of entrance which may be possible to dig
 
-### K12, Victoria Coach Station
+### K12, Victoria Coach Station
 
 - A very large entrance leading to a large snow slope [HM1, page 196, 2005]
   - Enormous draught in places, but many crawls blocked with ice and rubble
@@ -261,7 +261,7 @@ Information on each of the cave entrances is scattered between sources such as t
   - Small alcove found between boulders and snow plug by entrance, no continuation but with more melting this may reveal further alcoves
   - No other leads / crawls could be found, leaving only the scary dig
 
-### K13, Pedestrian Subway / Arrivals Hall
+### K13, Pedestrian Subway / Arrivals Hall
 
 - Rift directly above K12 with possible dig to the South East and rift in floor connecting with the K12 main chamber [HM1, page 197, 2005]
 - Revisited in 2022
@@ -302,7 +302,7 @@ Information on each of the cave entrances is scattered between sources such as t
 - Small chamber at top of shakehole on Podriagora (spelling may be incorrect in HM1?) [HM1, page 197, 2005]
   - Easy digging at end but loose and scary
 
-### K18
+### K18
 
 - Rift near K17 disappears into a 5m pitch to the floor, not bottomed due to lack of rope and hanging death [HM1, page 197, 2005]
 
@@ -342,12 +342,12 @@ Information on each of the cave entrances is scattered between sources such as t
 - First mentioned as being revisited in 2012 [HM2 draft, page 136]
   - No further information, but not included in list of "not promising" entrances, so presumed to be reasonably promising
 
-### K24
+### K24
 
 - First mentioned as being revisited in 2012 [HM2 draft, page 136]
   - "Not at all promising"
 
-### K25
+### K25
 
 - First mentioned as being revisited in 2012 [HM2 draft, page 136]
   - "Not at all promising"
@@ -428,7 +428,7 @@ Information on each of the cave entrances is scattered between sources such as t
   - One way on dies in a too-tight rift
   - Another route dies in an icy section
 
-### M11
+### M11
 
 - Depth indicated as -6m as of 1993.
 - "It is difficult to understand why holes such as M11 (6m deep!) were noted, as the plateau has many similar or deeper surface holes which were not then formally recognised." [HM1, page 13]
@@ -453,7 +453,7 @@ Information on each of the cave entrances is scattered between sources such as t
 
 - An entrance to the main system discovered by the Slovenes in 1982. [HM1, page 8]
 
-### M17
+### M17
 
 - Depth indicated as -58m as of 1993 [HM1, page 13]
 - Further explored in 1994, HM1 page 25 with survey
@@ -584,7 +584,7 @@ Information on each of the cave entrances is scattered between sources such as t
 - Included on the area N map, HM3 page 264
 - No information regarding this cave was found
 
-### Planika
+### Planika
 
 - Discovered in 2007 [HM2 draft, page 18]
   - Large snow and ice filled cave with holes driven through it by water and air
@@ -594,7 +594,7 @@ Information on each of the cave entrances is scattered between sources such as t
   - A new rift found from a water drilled hole through the snow plug
   - Another chamber was found from a window
 
-### Postcard Cave
+### Postcard Cave
 
 - Briefly mentioned in HM1, page 183, 2004
   - In an adjacent shakehole to the east of Hare Cave
@@ -754,4 +754,4 @@ Information on each of the cave entrances is scattered between sources such as t
 - Entrance into the main system that began as a dig by Ben Ogborne [HM1, page 99, 1998]
 - The entrance dig broke into the passage in 2000 [HM1, page 128]
 
-[Need to go through GPS file to add entrances logged but not mentioned]
+Note: Need to go through GPS file to add entrances logged but not mentioned
