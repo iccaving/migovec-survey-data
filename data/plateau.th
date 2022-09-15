@@ -14,6 +14,7 @@ survey plateau -title "Migovec Plateau"
 	# input the plateau DEM (uncomment)
 	input "./DEM/MIG_DEM.th"
 	# input the individual cave data files
+	input GPS_fixes.th
 
 	# first the connected caves of System Migovec
 	input "./system_migovec.th"
