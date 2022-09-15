@@ -1,15 +1,8 @@
----
-title: Entrances Information
-author: ICCC/JSPDT
-header-includes:
-  - \usepackage{descriptions}
----
-
-## Entrances Information
+# The Surface Atlas
 
 Information on each of the cave entrances is scattered between sources such as the various editions of the Hollow Mountain, images on the club website and the depths of the minds of the many explorers. Here is the first attempt to gather that information into one central place for convenient reference. This should make it easier to see which caves have potential and which are conclusively dead, when each cave has been explored and record any useful information gathered by previous explorations.
 
-### General Information
+# General Information
 
 - Known caves of Migovec in 1993 table on HM1, page 13
 - In 1994 "a significant amount of time was spent locating and re-marking the caves with spray paint" [HM1, page 13]
@@ -19,6 +12,8 @@ Information on each of the cave entrances is scattered between sources such as t
 - Jana and Jarv marked the JJ series of caves in 2006 on the western cliffs of the plateau, as well as numbering the valleys V1 through V12 with descriptions written up in HM1, page 214
 - The A series was logged in 2008 with A1 to A4, although little information is given on them [HM2 draft page 44] where A does not stand for Andy
 - First mention of area N (North of Kuk) is in HM2 2012, although presumably this area had been visited before
+
+# Individual Entrances
 
 ### A1 through A4
 
