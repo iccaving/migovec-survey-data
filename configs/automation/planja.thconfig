@@ -11,7 +11,7 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../data/system_migovec.th"
+source "../../data/plateau.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
@@ -27,8 +27,8 @@ layout plan
 	copy base-p
 	copy colour-by-new
 	symbol-hide point u:flag
-
-	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2021<br>Natančmost meritev IV/B<br><br><br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<br><br>Belladonna<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2021<br>BCRA grade 4-5b<br><br><br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180<br><br>Belladonna"
+  scale 1 1000
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2020-2022<br>Natančmost meritev IV/B<br><br><br><br>Planja Jama<br>kat. št.: ????<br><br>Bertijeva jama<br>kat. št.: ????<br><br>Brezno pod vrhom Planje<br>kat. št.: ????<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2020-2022<br>BCRA grade 4-5b<br><br><br><br>Planja jama<br>Cadastral number: ????<br><br>Bertijeva jama<br>Cadastral number: ????<br><br>Brezno pod vrhom Planje<br>Cadastral number: ????"
 
 	code tex-map
 
@@ -52,15 +52,15 @@ layout plan
 
 endlayout
 
-select m-all-p@primadona_ubend_mona_tip.system_migovec
+select m-all-p@vrh_planja.plateau
 
 maps-offset off
 language sl
-export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_SLO.pdf -layout plan
-export map -projection plan -o ../../_outputs/primadona_ubend_mona_tip_plan_SLO.svg -layout plan
+export map -projection plan -o ../../outputs/vrh_planja_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../_outputs/vrh_planja_plan_SLO.svg -layout plan
 language en
-export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.pdf -layout plan
-export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.svg -layout plan
+export map -projection plan -o ../../outputs/vrh_planja_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/vrh_planja_plan_ENG.svg -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
@@ -69,7 +69,8 @@ layout ee
 	copy base-e
 	copy colour-by-new
 
-	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2021<br>Natančmost meritev IV/B<br><br><br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<br><br>Belladonna<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2021<br>BCRA grade 4-5b<br><br><br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180<br><br>Belladonna"
+  scale 1 1000
+  map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2020-2022<br>Natančmost meritev IV/B<br><br><br><br>Planja Jama<br>kat. št.: ????<br><br>Bertijeva jama<br>kat. št.: ????<br><br>Brezno pod vrhom Planje<br>kat. št.: ????<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2020-2022<br>BCRA grade 4-5b<br><br><br><br>Planja jama<br>Cadastral number: ????<br><br>Bertijeva jama<br>Cadastral number: ????<br><br>Brezno pod vrhom Planje<br>Cadastral number: ????"
 
 	code metapost
 		set_label_level("3"); % yeah, now it works!
@@ -77,22 +78,23 @@ layout ee
 
 endlayout
 
-maps-offset on
-select m-all-e@primadona_ubend_mona_tip.system_migovec
+maps-offset off
+
+select m-all-e@vrh_planja.plateau
 
 language sl
-export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.pdf -layout ee
-export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.svg -layout ee
+export map -projection extended -o ../../outputs/vrh_planja_EE_SLO.pdf -layout ee
+export map -projection extended -o ../../outputs/vrh_planja_EE_SLO.svg -layout ee
 language en
-export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG.pdf -layout ee
-export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG.svg -layout ee
+export map -projection extended -o ../../outputs/vrh_planja_EE_ENG.pdf -layout ee
+export map -projection extended -o ../../outputs/vrh_planja_EE_ENG.svg -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
-select primadona_ubend_mona_tip@system_migovec
-export model -o ../../outputs/primadona_ubend_mona_tip.3d
+select vrh_planja.plateau
+export model -o ../../outputs/vrh_planja.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
-select primadona_ubend_mona_tip@system_migovec
-export model -o ../../outputs/primadona_ubend_mona_tip.lox
+select vrh_planja.plateau
+export model -o ../../outputs/vrh_planja.lox

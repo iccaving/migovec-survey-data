@@ -6,7 +6,7 @@ scrap pov-1p -projection plan -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
 point 458.0 849.5 station -name 23
 point 449.0 825.5 station -name 21
-line wall 
+line wall
   442.0 823.5
   442.0 823.5 443.5 828.5 443.25 831.0
   443.0 833.5 442.75 834.25 442.5 837.0
@@ -16,7 +16,7 @@ line wall
   444.25 856.5
 endline
 
-line wall 
+line wall
   452.75 826.5
   452.75 826.5 452.5 829.25 452.25 830.5
   452.0 831.75 452.25 833.75 452.25 833.75
@@ -35,7 +35,7 @@ line wall
 endline
 
 point 446.0 848.5 station -name 22
-line wall 
+line wall
   456.0 863.0
   455.0 865.75 453.25 870.0 453.25 873.25
   453.25 876.5 453.75 879.5 454.25 880.75
@@ -47,7 +47,7 @@ line wall
   429.5 910.0 429.75 915.25 429.75 915.25
 endline
 
-line wall 
+line wall
   413.0 904.75
   414.0 904.0 412.0 906.25 416.5 902.75
   421.0 899.25 423.75 898.5 427.5 895.5
@@ -68,13 +68,13 @@ endscrap
 
 scrap pov-2p -projection plan -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
-line floor-step 
+line floor-step
   416.5 790.5
   416.5 790.5 425.2817 789.3325 428.5 791.0
 endline
 
 point 436.4868 791.6457 u:flag -align r -attr text 1 -attr code 2
-line floor-step 
+line floor-step
   405.3779 711.6156
   403.787 720.0038 400.5 721.0 400.5 721.0
 endline
@@ -143,7 +143,7 @@ line wall -id s2_l2
   390.5 674.0
 endline
 
-line wall 
+line wall
   442.0 823.5
   442.0 823.5 443.0 820.0 441.5 819.5
   440.0 819.0 436.5 817.5 435.5 815.5
@@ -152,7 +152,7 @@ line wall
   421.5 798.0 414.5503 797.7139 414.5503 797.7139
 endline
 
-line wall 
+line wall
   416.5 790.5
   418.0 785.0
   418.0 785.0 418.5 782.0 418.5 780.0
@@ -180,7 +180,7 @@ endscrap
 
 scrap pov-3p -projection plan -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
-point 354.4154 628.1113 label -align l -attr level 3 -text "Povezava aven"
+point 354.4154 628.1113 label -align l -attr level 4 -text "Povezava aven"
 line rock-border -close on
   372.0 619.5
   370.5 613.5
@@ -244,17 +244,17 @@ line wall -id s3_l1
   403.0 674.0
 endline
 
-line floor-step 
+line floor-step
   358.0 647.5
   358.0 647.5 355.25 641.0 357.0 638.5
 endline
 
-line pit 
+line pit
   403.0575 670.2557
   403.0575 670.2557 392.0 670.2497 386.5 670.0
 endline
 
-line pit 
+line pit
   399.5 626.5
   399.5 626.5 403.25 625.25 405.5 627.5
 endline
@@ -305,7 +305,7 @@ line floor-step -outline in
   400.25 507.0 405.75 527.75 399.0 519.0
 endline
 
-line wall 
+line wall
   402.5 494.0
   401.5 500.0
   401.5 500.0 403.5 505.5 404.0 507.0
@@ -364,17 +364,17 @@ point 393.0 492.0 station -name 6
 point 407.0 521.0 station -name 7
 point 409.0 529.0 station -name 8
 point 423.0 551.0 station -name 9
-line floor-step 
+line floor-step
   393.5 610.0
   387.5 607.0 392.0 602.5 392.0 602.5
 endline
 
-line floor-step 
+line floor-step
   382.0 604.0
   382.0 604.0 386.25 612.25 385.5 614.5
 endline
 
-line floor-step 
+line floor-step
   421.5 566.0
   421.5 566.0 417.0 570.0 412.75 564.75
 endline
@@ -486,7 +486,7 @@ line wall -close on -outline in
   399.9359 461.0109 403.2477 459.0569 406.0 457.0
 endline
 
-line floor-step 
+line floor-step
   387.5 479.0
   387.5 479.0 393.25 477.5 394.5 481.25
   395.75 485.0 402.75 492.25 402.5 494.0
@@ -524,33 +524,33 @@ line rock-border -close on
   397.75 465.75
 endline
 
-line contour 
+line contour
   379.75 440.25
   379.75 440.25 371.25 442.25 366.0 439.5
 endline
 
-line contour 
+line contour
   381.0 454.0
   381.0 454.0 371.75 458.25 369.0 454.0
 endline
 
-line contour 
+line contour
   394.25 417.25
   393.0 417.5 386.4559 420.0035 382.5 419.5
   379.0241 419.0576 373.0 415.0 373.0 415.0
 endline
 
-line floor-step 
+line floor-step
   391.75 385.75
   391.75 385.75 392.75 380.25 404.75 380.0
 endline
 
-line floor-step 
+line floor-step
   414.5 384.25
   414.5 384.25 418.25 387.5 416.5 390.5
 endline
 
-line wall 
+line wall
   425.25 388.0
   425.25 388.0 420.505 386.979 418.5 388.0
   416.4799 389.0287 415.8155 391.6539 414.5 393.5
@@ -625,7 +625,7 @@ endscrap
 
 scrap pov-5p -projection plan -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
-line pit 
+line pit
   372.7055 760.1734
   372.7055 760.1734 366.4578 764.4821 362.3645 764.6976
 endline
@@ -744,4 +744,3 @@ line wall -id s5_l2 -subtype unsurveyed
 endline
 
 endscrap
-

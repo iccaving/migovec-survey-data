@@ -13,6 +13,7 @@ map m-all-p -projection plan -title "Primadona"
 	m-hammerhead_branch-p
 	m-upside_down_area-p
 	m-hallelujah_branch-p
+	m-death_star_branch-p
 	m-klic_globin_branch-p
 	m-old_slov_route-p
 	m-deep-p
@@ -80,11 +81,9 @@ endmap
 
 map m-offsets-p -projection plan
 	m-below_lumos-p [-200 0 m] below
-	m-pivnica-p [-200 0 m] below
-	m-below_cattlegrid-p [-200 0 m] below
+	#m-pivnica-p [-200 0 m] below
+	m-below_cattlegrid-p [70 0 m] below
 endmap
-
-
 
 # Submaps
 map m-entrance-p -projection plan -title "Entrance Series"
@@ -128,24 +127,11 @@ endmap
 map m-ttt_branch-p -projection plan
 	m-all-p@apple_crumble
 	m-all-p@pov
+	#m-all-p@mudaholic
 	m-all-p@ttt
 	m-all-p@batmere
 	m-all-p@zima00
 	m-all-p@TTTr
-endmap
-
-map m-octarine_region-p -projection plan -title "Octarine Region (2019)"
-	m-all-p@purgatory
-	m-all-p@bath
-	m-all-p@octarine
-	m-all-p@octarine_core
-	m-all-p@death_star
-	m-all-p@the_expo_strikes_back
-endmap
-
-map m-end_branch -projection plan -title "End of Hallelujah Branch (2019)"
-	m-all-p@angel_delight
-	m-all-p@sump_404_lead_not_found
 endmap
 
 map m-hallelujah_branch-p -projection plan -title "Hallelujah Branch"
@@ -154,6 +140,9 @@ map m-hallelujah_branch-p -projection plan -title "Hallelujah Branch"
 	m-all-p@hallelujah
 	m-all-p@sweet_baby_jesus
 	m-all-p@beam_me_up
+	#m-all-p@bin_bag_palace
+	#m-all-p@echo_falls
+	m-all-p@blue_lagoon
 	m-all-p@holy_moley
 	m-all-p@echo_falls
 	m-all-p@alabaster
@@ -161,12 +150,22 @@ map m-hallelujah_branch-p -projection plan -title "Hallelujah Branch"
 	m-all-p@octarine
 	m-all-p@octarine_core
 	m-all-p@bath
-	m-all-p@death_star
-	m-all-p@the_expo_strikes_back
+
 	m-all-p@canticle_for_migovec
 	m-all-p@testify
 	m-all-p@angel_delight
 	m-all-p@sump_404_lead_not_found
+endmap
+
+map m-death_star_branch-p -projection plan
+	m-all-p@death_star
+	m-all-p@the_expo_strikes_back
+	#m-all-p@cantina_canyon
+	#m-all-p@cantina_canyon_2
+	#m-all-p@sithyphus_slope
+	#m-all-p@antares
+	#m-all-p@the_deep_awakens
+	#m-all-p@who_dies_first
 endmap
 
 map m-hammerhead_branch-p -projection plan
@@ -229,7 +228,6 @@ endmap
 
 map m-pivnica-p -projection plan
 	m-all-p@buckwheat
-
 	m-all-p@pivnica_resurvey
 endmap
 
@@ -249,4 +247,20 @@ map m-below_cattlegrid-p -projection plan
 	m-all-p@battery_flattery
 	m-all-p@mud_moses
 	m-all-p@upotyn
+endmap
+
+#### CUSTOM MAPS FOR PRESENTATIONS ####
+
+map m-octarine_region-p -projection plan -title "Octarine Region (2019)"
+	m-all-p@purgatory
+	m-all-p@bath
+	m-all-p@octarine
+	m-all-p@octarine_core
+	m-all-p@death_star
+	m-all-p@the_expo_strikes_back
+endmap
+
+map m-end_branch -projection plan -title "End of Hallelujah Branch (2019)"
+	m-all-p@angel_delight
+	m-all-p@sump_404_lead_not_found
 endmap
