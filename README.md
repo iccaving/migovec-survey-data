@@ -1,6 +1,6 @@
 # Migovec Survey Data
 
-This contains the survey data of the Tolminski Migovec cave system, as well as minor caves in the same area, collected by the JSPDT and ICCC from 1974 to 2019.
+This contains the survey data of the Tolminski Migovec cave system, as well as minor caves in the same area, collected by the JSPDT and ICCC from 1974 to the present day.
 
 From 1974-2018 the the survey data was collected in the Survex format but we are now using Therion and are in the process of migrating the old data.
 
@@ -150,6 +150,18 @@ Collectively known as 'the old system' or sometimes 'sysmig', these entrances we
   [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.pdf) |
   [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_SLO.svg) |
   [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.svg)
+
+**Vrh Planja**
+
+This is a new area which we started exploring in 2020. Located to the NW of Tolminski Kuk, three caves are currently known: 
+1. Bertijeva Jama
+2. Planja jama
+3. Brezno pod Vrhom Planje
+
+You can download the following artifacts:
+- Plan view (WIP)
+[PLAN SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_SLO.pdf) |
+[PLAN ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_ENG.pdf) |
 
 ## Prerequisites
 
