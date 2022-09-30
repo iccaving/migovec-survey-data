@@ -17,6 +17,8 @@ source "../brezno_pod_vrhom_planje.th"
 # export a model openable in Loch and one in Aven
 export model -o ../../../outputs/brezno_pod_vrhom_planje.lox
 export model -o ../../../outputs/brezno_pod_vrhom_planje.3d
+export model -o ../../../outputs/brezno_pod_vrhom_planje.vtk
+
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file

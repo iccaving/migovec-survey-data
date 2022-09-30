@@ -2,9 +2,27 @@
 
 survey mudaholic -title "mudaholic"
     # shit mudddy tube and rift
+   input "mudaholic-1p.th2"
+  # input "mudaholic-1s.th2"
 
+   map m-all-p -projection plan
+     mudaholic-1p
+   endmap
+  # map m1s -projection extended
+  #   mudaholic-1s
+  # endmap
   centerline
     date 2022.07.21
+    explo-date 2022.07.21
+    team "David Wilson"
+    team "James Wilson"
+    team "Oxmi"
+    team "Lucie Studená"
+
+    explo-team "David Wilson"
+    explo-team "James Wilson"
+    explo-team "Oxmi"
+    explo-team "Lucie Studená"
     # team dpw JW ls ok
     units length meters
     units compass clino degrees

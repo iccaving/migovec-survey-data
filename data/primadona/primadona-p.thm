@@ -115,7 +115,7 @@ map m-galerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
 endmap
 
 map m-upside_down_area-p -projection plan -title "Upside Down Chamber area"
-	m-all-p@hall_of_the_mountain_king
+	m-all-p@hall_of_the_mountain_king 
 	m-all-p@colony
 	m-all-p@what_a_coincidence
 	m-all-p@what_a_disappointment
@@ -127,7 +127,7 @@ endmap
 map m-ttt_branch-p -projection plan
 	m-all-p@apple_crumble
 	m-all-p@pov
-	#m-all-p@mudaholic
+	m-all-p@mudaholic
 	m-all-p@ttt
 	m-all-p@batmere
 	m-all-p@zima00
@@ -160,10 +160,11 @@ endmap
 map m-death_star_branch-p -projection plan
 	m-all-p@death_star
 	m-all-p@the_expo_strikes_back
-	#m-all-p@cantina_canyon
-	#m-all-p@cantina_canyon_2
+	m-all-p@cantina_canyon
+	m-all-p@cantina_canyon_2
 	#m-all-p@sithyphus_slope
-	#m-all-p@antares
+	m-all-p@antares
+	m-all-p@blue_lagoon 
 	#m-all-p@the_deep_awakens
 	#m-all-p@who_dies_first
 endmap

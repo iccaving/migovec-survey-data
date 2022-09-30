@@ -2,7 +2,12 @@
 
 survey cantina_canyon -title "Cantina Canyon"
     # continues from The Deep Awakens, big canyon streamway. 
+  input cantina_canyon-p.th2
 
+  map m-all-p -projection plan 
+    Cantina_Canyon-Cantina_Canyonp
+  endmap
+  
   centerline
     date 2022.07.19 
     team "Rory Rose" 
@@ -204,8 +209,6 @@ survey cantina_canyon -title "Cantina Canyon"
     8 9 1.45 47.4 -12.7
   endcenterline
 
-   input "Cantina_Canyon-Cantina_Canyonp.th2"
-   input "Cantina_Canyon-Cantina_Canyons.th2"
 
   # map mCantina_Canyonp -projection plan
   #   Cantina_Canyon-Cantina_Canyonp
