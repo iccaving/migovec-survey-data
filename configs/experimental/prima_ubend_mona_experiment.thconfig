@@ -90,7 +90,7 @@ layout ee
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2021<br>Natančmost meritev IV/B<br><br><br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<br><br>Belladonna<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2021<br>BCRA grade 4-5b<br><br><br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180<br><br>Belladonna"
 
 	code metapost
-		set_label_level("3"); % yeah, now it works!
+		set_label_level("2"); % yeah, now it works!
 	endcode
 	symbol-show line survey 
 	symbol-assign line survey AUT
@@ -115,17 +115,17 @@ select mlocale
 
 language sl
 export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.pdf -layout ee
-export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.svg -layout ee
+#export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.svg -layout ee
 language en
-export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG.pdf -layout ee
-export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG.svg -layout ee
+#export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG.pdf -layout ee
+#export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG.svg -layout ee
 
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
 select primadona_ubend_mona_tip@system_migovec
-export model -o ../../outputs/primadona_ubend_mona_tip.3d
+#export model -o ../../outputs/primadona_ubend_mona_tip.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
 select primadona_ubend_mona_tip@system_migovec
-export model -o ../../outputs/primadona_ubend_mona_tip.lox
+#export model -o ../../outputs/primadona_ubend_mona_tip.lox
