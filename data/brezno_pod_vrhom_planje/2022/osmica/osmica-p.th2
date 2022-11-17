@@ -1,103 +1,236 @@
 encoding  utf-8
+##XTHERION## xth_me_area_zoom_to 100
 
-scrap osmica-1p -projection plan
+scrap osmica-1p -projection plan -scale [0 0 96 0 0 0 2000 0 inch]
+
+line floor-step 
+  271.7432 -6.109
+  271.7432 -6.109 274.3764 -13.4818 277.6415 -15.6937
+endline
+
+point 256.3265 -17.478 label -align tl -scale s -text "<bf>c3"
+point 264.8437 -54.7878 narrow-end -align b -scale s
+line wall 
+  267.4691 -52.4967
+  267.4691 -52.4967 267.9889 -47.6021 268.6408 -41.4447
+  269.2072 -36.0943 267.8732 -33.7904 268.3844 -28.916
+  268.8473 -24.5022 271.3085 -22.5602 271.3816 -21.4638
+  271.6283 -17.7632 279.4063 -14.9687 279.4063 -14.9687
+endline
+
+point 70.0436 -154.227 continuation -scale xl
+point 7.9238 -141.321 continuation -scale xl
+point 55.3846 -132.622 label -align br -scale xs -text "<bf>p31"
+point 88.7815 -153.574 label -align t -scale xs -text "<bf>p30"
+point 28.6737 -121.634 water-flow -orientation 138.20748570972955
+point 36.1892 -116.406 water-flow -orientation 168.28474786399127
+point 3.4704 -141.974 label -align l -scale xs -text "climb down <br>rope needed"
+point 29.6106 -110.364 label -align tl -scale xs -text "drippy<br>wall"
+point 112.8905 -91.9932 label -align br -scale xs -text "narrrow meander"
+line wall -subtype presumed
+  59.2127 -160.4221
+  59.2127 -160.4221 64.6906 -165.6391 70.1684 -166.1608
+  75.6462 -166.6825 83.9934 -164.8566 83.9934 -159.6396
+  83.9934 -154.4226 82.4283 -144.7712 81.124 -144.2495
+  79.8198 -143.7278 72.7769 -137.4674 70.4292 -138.5108
+  68.0816 -139.5542 57.9085 -150.249 57.9085 -150.249
+endline
+
+point 172.0 -41.0 label -align tl -text Osmica
+line wall 
+  57.9085 -150.5099
+  57.9085 -150.5099 55.5608 -154.1618 50.6047 -151.8141
+  31.0632 -151.733 34.6255 -144.1252 45.17 -142.4927
+  45.17 -142.4927 51.9739 -137.7521 52.819 -133.5266
+  53.6642 -129.301 59.1573 -125.0755 59.1573 -125.0755
+  59.1573 -125.0755 65.9182 -114.5117 73.5241 -109.4411
+  81.1301 -104.3704 101.4126 -94.2292 101.4126 -94.2292
+  101.4126 -94.2292 106.4832 -90.8488 107.7509 -88.3134
+  109.0185 -85.7781 112.8215 -82.3977 111.1313 -78.5947
+  109.4411 -74.7918 100.0373 -70.918 105.5305 -68.8052
+  111.0236 -66.6924 125.4981 -63.8054 128.4559 -63.3829
+  131.4138 -62.9603 152.964 -57.4671 152.964 -57.4671
+  152.964 -57.4671 153.8091 -54.0867 157.612 -55.7769
+  161.415 -57.4671 165.218 -61.2701 171.5563 -60.8475
+  177.8945 -60.425 192.6072 -61.3667 194.2974 -58.4089
+  195.9876 -55.451 221.84 -39.2974 226.4881 -40.1425
+  228.4509 -40.4994 231.0225 -38.1739 232.9682 -38.79
+  235.6301 -39.6329 237.6716 -43.4107 240.4323 -43.5229
+  243.1394 -43.6329 246.2558 -43.8296 248.4608 -42.2552
+  250.5125 -40.7903 250.9785 -35.5938 251.8487 -33.2211
+  253.1563 -29.6555 254.5815 -28.6234 257.3234 -25.5306
+  258.4355 -24.2761 259.5841 -23.143 260.7295 -22.1243
+  264.5622 -18.7155 266.0304 -29.4122 265.118 -40.7066
+  264.5856 -47.2974 263.9235 -52.7296 263.9235 -52.7296
+endline
+
+line wall 
+  11.0421 -144.9429
+  24.8123 -143.0167
+  24.8123 -143.0167 29.9976 -138.25 29.9976 -142.9453
+  29.9976 -147.6405 31.5682 -151.8745 31.5682 -151.8745
+  31.5682 -151.8745 35.5265 -158.3132 43.9971 -158.0922
+  55.7353 -154.4404 58.9519 -160.683 58.9519 -160.683
+endline
+
+line pit 
+  55.2885 -129.484
+  55.2885 -129.484 52.5671 -122.4655 46.9809 -118.0252
+endline
+
+line wall 
+  271.9409 -6.0513
+  271.9409 -6.0513 266.471 -10.923 262.5737 -13.1964
+  260.6213 -14.3353 260.3012 -16.7289 258.1769 -18.033
+  256.0609 -19.3321 252.1399 -21.5415 250.557 -23.3684
+  246.5772 -27.9616 247.5072 -37.0571 242.5563 -37.7505
+  239.5444 -38.0373 234.239 -32.0986 231.8008 -32.8158
+  229.3626 -33.5329 217.2612 -38.3542 210.451 -42.0654
+  206.3562 -44.2968 200.6837 -49.2643 198.8192 -49.838
+  196.9547 -50.4117 186.7358 -54.9307 184.1542 -54.9307
+  181.5726 -54.9307 179.4213 -56.5084 179.4213 -56.5084
+  179.4213 -56.5084 172.9673 -54.6439 172.3936 -54.6439
+  171.8199 -54.6439 167.8041 -52.9228 162.2106 -50.7715
+  156.6172 -48.6202 151.1671 -53.2097 148.0118 -53.2097
+  144.8565 -53.2097 142.8173 -56.2906 138.9574 -56.6123
+  135.0974 -56.9339 122.5527 -61.1155 119.8186 -60.7939
+  117.0845 -60.4722 100.8406 -61.1155 98.589 -63.0455
+  96.3373 -64.9754 95.2115 -72.052 97.9457 -73.4994
+  100.6798 -74.9469 108.4697 -80.646 104.7706 -83.2193
+  101.0715 -85.7926 100.2682 -87.7662 97.6032 -89.4917
+  92.8562 -92.5652 83.7926 -94.1558 82.1843 -96.5682
+  80.576 -98.9807 62.7238 -108.5605 62.7238 -108.5605
+  62.7238 -108.5605 56.5215 -116.2596 53.144 -116.2596
+  49.7666 -116.2596 47.9274 -117.7278 46.48 -117.7278
+  45.0325 -117.7278 39.2426 -112.2596 36.026 -114.9937
+  32.8094 -117.7278 26.0545 -123.5177 24.7679 -127.0559
+  23.4812 -130.5942 23.4812 -134.9366 21.2296 -134.7758
+  18.978 -134.615 10.3109 -138.2118 10.3109 -138.2118
+endline
+
+point 27.13 -139.12 station-name -align tr -scale xs -text 1
+point 51.0499 -123.307 station-name -align tr -scale xs -text 2
+point 64.9664 -110.223 station-name -align tr -scale xs -text 3
+point 81.5097 -98.7435 station-name -align tr -scale xs -text 4
+point 91.07 -95.57 station-name -align tr -scale xs -text 5
+point 110.77 -84.98 station-name -align tr -scale xs -text 6
+point 94.1097 -66.2134 station-name -align tr -scale xs -text 7
+point 122.797 -59.2299 station-name -align tr -scale xs -text 8
+point 144.737 -53.8165 station-name -align tr -scale xs -text 9
+point 151.86 -50.1396 station-name -align tr -scale xs -text 10
+point 157.763 -64.8235 station-name -align tr -scale xs -text 11
+point 189.76 -62.83 station-name -align tr -scale xs -text 12
+point 222.66 -33.42 station-name -align tr -scale xs -text 13
+point 239.81 -48.43 station-name -align tr -scale xs -text 14
+point 243.06 -26.99 station-name -align tr -scale xs -text 15
+point 276.87 -12.88 station-name -align tr -scale xs -text 16
+point 31.13 -139.12 station -name 1
+point 55.54 -124.0 station -name 2
+point 70.11 -109.04 station -name 3
+point 86.49 -98.09 station -name 4
+point 95.07 -95.57 station -name 5
+point 108.77 -82.98 station -name 6
+point 99.09 -66.05 station -name 7
+point 126.96 -61.72 station -name 8
+point 150.9 -54.47 station -name 9
+point 155.86 -53.61 station -name 10
+point 165.07 -58.17 station -name 11
+point 191.76 -56.83 station -name 12
+point 230.66 -35.42 station -name 13
+point 243.81 -42.43 station -name 14
+point 251.06 -26.99 station -name 15
+point 272.87 -8.88 station -name 16
+line survey 
+  31.13 -139.12
+  55.54 -124.0
+endline
+
+line survey 
+  55.54 -124.0
+  70.11 -109.04
+endline
+
+line survey 
+  70.11 -109.04
+  86.49 -98.09
+endline
+
+line survey 
+  86.49 -98.09
+  95.07 -95.57
+endline
+
+line survey 
+  95.07 -95.57
+  108.77 -82.98
+endline
+
+line survey 
+  108.77 -82.98
+  99.09 -66.05
+endline
+
+line survey 
+  99.09 -66.05
+  126.96 -61.72
+endline
+
+line survey 
+  126.96 -61.72
+  150.9 -54.47
+endline
+
+line survey 
+  150.9 -54.47
+  155.86 -53.61
+endline
+
+line survey 
+  155.86 -53.61
+  165.07 -58.17
+endline
+
+line survey 
+  165.07 -58.17
+  191.76 -56.83
+endline
+
+line survey 
+  191.76 -56.83
+  230.66 -35.42
+endline
+
+line survey 
+  230.66 -35.42
+  243.81 -42.43
+endline
+
+line survey 
+  243.81 -42.43
+  251.06 -26.99
+endline
+
+line survey 
+  251.06 -26.99
+  272.87 -8.88
+endline
+
+line border -close on -id osmica-1p_u_smallblocks_1 -visibility off
+  30.5193 -145.8146
+  48.7788 -139.0325
+  51.3873 -126.5118
+  42.5184 -116.3387
+  37.5623 -114.5127
+  25.0415 -126.5118
+  23.2156 -134.0764
+  30.7802 -141.1193
+  30.5193 -145.8146
+  30.5193 -145.8146
+endline
+
+area u:smallblocks 
+  osmica-1p_u_smallblocks_1
+endarea
+
 endscrap
 
-
-scrap DELETE-ME-survey-legs-DUPLICATE_osmica-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-    line survey
-        -120.87 -65.12
-        -96.46 -50.00
-    endline
-    line survey
-        -96.46 -50.00
-        -81.89 -35.04
-    endline
-    line survey
-        -81.89 -35.04
-        -65.51 -24.09
-    endline
-    line survey
-        -65.51 -24.09
-        -56.93 -21.57
-    endline
-    line survey
-        -56.93 -21.57
-        -43.23 -8.98
-    endline
-    line survey
-        -43.23 -8.98
-        -52.91 7.95
-    endline
-    line survey
-        -52.91 7.95
-        -25.04 12.28
-    endline
-    line survey
-        -25.04 12.28
-        -1.10 19.53
-    endline
-    line survey
-        -1.10 19.53
-        3.86 20.39
-    endline
-    line survey
-        3.86 20.39
-        13.07 15.83
-    endline
-    line survey
-        13.07 15.83
-        39.76 17.17
-    endline
-    line survey
-        39.76 17.17
-        78.66 38.58
-    endline
-    line survey
-        78.66 38.58
-        91.81 31.57
-    endline
-    line survey
-        91.81 31.57
-        99.06 47.01
-    endline
-    line survey
-        99.06 47.01
-        120.87 65.12
-    endline
-    point -120.87 -65.12 station-name -align tr -scale xs -text 1
-    point -96.46 -50.00 station-name -align tr -scale xs -text 2
-    point -81.89 -35.04 station-name -align tr -scale xs -text 3
-    point -65.51 -24.09 station-name -align tr -scale xs -text 4
-    point -56.93 -21.57 station-name -align tr -scale xs -text 5
-    point -43.23 -8.98 station-name -align tr -scale xs -text 6
-    point -52.91 7.95 station-name -align tr -scale xs -text 7
-    point -25.04 12.28 station-name -align tr -scale xs -text 8
-    point -1.10 19.53 station-name -align tr -scale xs -text 9
-    point 3.86 20.39 station-name -align tr -scale xs -text 10
-    point 13.07 15.83 station-name -align tr -scale xs -text 11
-    point 39.76 17.17 station-name -align tr -scale xs -text 12
-    point 78.66 38.58 station-name -align tr -scale xs -text 13
-    point 91.81 31.57 station-name -align tr -scale xs -text 14
-    point 99.06 47.01 station-name -align tr -scale xs -text 15
-    point 120.87 65.12 station-name -align tr -scale xs -text 16
-endscrap
-
-scrap DUPLICATE_osmica-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-    point -120.87 -65.12 station -name 1
-    point -96.46 -50.00 station -name 2
-    point -81.89 -35.04 station -name 3
-    point -65.51 -24.09 station -name 4
-    point -56.93 -21.57 station -name 5
-    point -43.23 -8.98 station -name 6
-    point -52.91 7.95 station -name 7
-    point -25.04 12.28 station -name 8
-    point -1.10 19.53 station -name 9
-    point 3.86 20.39 station -name 10
-    point 13.07 15.83 station -name 11
-    point 39.76 17.17 station -name 12
-    point 78.66 38.58 station -name 13
-    point 91.81 31.57 station -name 14
-    point 99.06 47.01 station -name 15
-    point 120.87 65.12 station -name 16
-endscrap

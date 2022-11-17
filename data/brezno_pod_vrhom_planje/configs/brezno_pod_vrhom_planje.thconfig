@@ -40,7 +40,7 @@ endsource
 # select a relevant map (which contains commands for offsets of overlying bits)
 #select m-all-e@brezno_pod_vrhom_planje
 
-select localmap-p
+select m-all-p@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
@@ -64,8 +64,8 @@ layout local
 		\def\maplayout{
 		\legendbox{0}{-5}{SW}{\rgbcolor[100 100 100]\size[26]\the\cavename}
 		#\legendbox{-10}{130}{NW}{\size[10]\the\comment}
-		\legendbox{15}{20}{N}{\rgbcolor[100 100 100]\scalebar}
-		\legendbox{15}{25}{S}{\rgbcolor[100 100 100]\northarrow}
+		\legendbox{40}{0}{N}{\rgbcolor[100 100 100]\scalebar}
+		\legendbox{40}{5}{S}{\rgbcolor[100 100 100]\northarrow}
 		}
 	endcode
 endlayout

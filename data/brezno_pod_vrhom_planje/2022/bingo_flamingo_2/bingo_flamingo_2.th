@@ -1,6 +1,13 @@
 survey bingo_flamingo_2 -title "Bingo Flamingo 2" #part of bingo flamingo pitch
 
+    input bingo_flamingo_2-p.th2
+
+    map m-all-p -projection plan
+      bingo-1p 
+    endmap 
    centreline
+
+    mark 8 fixed
    date 2022.07.19
    explo-date 2022.07.19
    team "Jana Čarga"

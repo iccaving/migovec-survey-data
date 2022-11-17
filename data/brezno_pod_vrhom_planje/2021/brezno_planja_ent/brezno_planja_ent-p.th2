@@ -192,10 +192,10 @@ endscrap
 
 scrap brezno_planja_ent-2p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 1679.0285 169.8126 paleo-material -scale xs
-point 1844.8248 478.4421 label -align r -text "Entrance Chamber"
-point 1697.9888 166.6526 label -align r -scale xs -text bones
-point 1547.5714 136.9483 label -align bl -text "South Chamber"
+point 1679.03 169.813 paleo-material -scale xs
+point 1844.82 478.442 label -align r -text "Entrance Chamber"
+point 1697.99 166.653 label -align r -scale xs -text bones
+point 1547.57 136.948 label -align bl -text "South Chamber"
 point 1425.91 621.507 label -align tl -scale xs -text "<bf>p13"
 point 1566.67 597.64 gradient -orientation 259.7287817418577
 point 1550.1 620.5 station-name -align t -scale xs -text 13
@@ -2831,7 +2831,7 @@ point 890.469 542.008 station-name -align bl -scale xs -text 22
 point 1011.42 483.281 station-name -align l -scale xs -text 20
 point 1203.95 465.216 station-name -align b -scale xs -text 19
 point 1227.62 601.969 station-name -align t -scale xs -text 18
-point 965.683 631.949 label -align tr -scale xs -text "muddy crawl"
+point 1251.683 517.949 label -align tr -scale xs -text "muddy crawl"
 point 1562.13 483.363 station-name -align r -scale xs -text 16
 point 1400.66 505.19 station-name -align bl -scale xs -text 15
 line u:texture 

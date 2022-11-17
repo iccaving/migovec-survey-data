@@ -1,19 +1,19 @@
 encoding  utf-8
 
 # input the custom point, line and area definitions
-input metapost/points.thl
-input metapost/lines.thl
-input metapost/areas.thl
-input metapost/scalebar_arrow.thl
+input ../metapost/points.thl
+input ../metapost/lines.thl
+input ../metapost/areas.thl
+input ../metapost/scalebar_arrow.thl
 
-layout detailed-p
+layout detailed-dark-p
 
   # copy the metapost definitions
   copy custom_points
   copy custom_lines
   copy custom_areas
-  copy custom_arrow
-  copy custom_scalebar
+  copy custom_arrow_dark
+  copy custom_scalebar_dark
 
 
   ## general statements
@@ -23,22 +23,28 @@ layout detailed-p
   statistics topo-length off
   fonts-setup 6 7 10 12 14
   symbol-hide point label
+  color map-bg [50 56 56]
+  color map-fg [80.7 87 87]
+  transparency off
+  opacity 100
 
 
   ## survey lines and stations
-  symbol-assign line survey MY
+  #symbol-assign line survey MY
   symbol-hide point passage-height
-  symbol-colour point station-name [70 0 0]
-  symbol-colour point altitude [60 20 62]
+  symbol-colour point station-name [89 94 100]
+  symbol-colour line survey [28 32 32]
+  symbol-assign line survey AUT
+  symbol-colour point label [28 32 32]
 
   ## water and ice
   symbol-assign area ice MY
   symbol-assign area snow MY
 
   symbol-colour area ice [0 70 90]
-  symbol-colour area water [0 10 70]
-  symbol-colour area sump [0 10 70]
-  symbol-colour point water-flow [0 10 70]
+  symbol-colour area water [89 94 100]
+  symbol-colour area sump [89 94 100]
+  symbol-colour point water-flow [89 94 100]
 
   ## formations
   symbol-assign point stalagmite MY
@@ -64,16 +70,29 @@ layout detailed-p
 
   symbol-colour area clay [65 55 10]
   symbol-colour line wall:clay [65 55 10]
-  symbol-colour area sand [85 75 10]
+  symbol-colour area sand [28 32 32]
 
   ## misc
   symbol-assign point gradient MY
+  symbol-colour point gradient [100 100 100]
   symbol-assign line contour MY
-  symbol-assign line pit AUT
-  symbol-assign line wall MY
+  symbol-assign line pit MY
+  symbol-assign line floor-step MY
+
+  symbol-colour line pit [28 32 32]
+  symbol-colour line floor-step [28 32 32]
+  symbol-colour line contour [28 32 32]
+  symbol-colour line contour [28 32 32]
+  symbol-colour line rock-edge [28 32 32]
+  symbol-colour line rock-border [28 32 32]
+
+  symbol-colour area u:smallblocks [28 32 32]
+  symbol-colour line wall [28 32 32]
   symbol-assign point breakdown-choke AUT
   symbol-assign point air-draught MY
   symbol-assign point station:fixed MY
   symbol-assign point station:temporary MY
+  symbol-colour point station [28 32 32]
+  symbol-colour line u:texture [28 32 32]
 
 endlayout
