@@ -56,11 +56,11 @@ select m-all-p@primadona_ubend_mona_tip.system_migovec
 
 maps-offset off
 language sl
-#export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_SLO.pdf -layout plan
-#export map -projection plan -o ../../_outputs/primadona_ubend_mona_tip_plan_SLO.svg -layout plan
+export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_SLO.pdf -layout plan
+export map -projection plan -o ../../_outputs/primadona_ubend_mona_tip_plan_SLO.svg -layout plan
 language en
-#export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.pdf -layout plan
-#export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.svg -layout plan
+export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.pdf -layout plan
+export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.svg -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
