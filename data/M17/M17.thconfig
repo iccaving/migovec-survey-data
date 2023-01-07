@@ -3,8 +3,32 @@ source M17.th
 input ../../layouts/detailed-p.thl
 input ../../layouts/detailed-e.thl
 
+layout comment
+    code tex-map
+    \def\mycomment{
+            \size[8]
+            Slovenia\par
+            Length: \the\cavelength, Depth: \the\cavedepth, Altitude: \the\cavemaxz{} m \par
+            Coordinates (GPS): 46.253137 N /13.760191 E\par
+            Survey : T. Racine, J. Čarga, C. Honiat, C. Snowling, 2018-2021\par
+            Drawing: T. Racine, 2022\par
+            ICCC / JSPDT
+        } 
+    \def\cadastralnumber{\size[10] \si Kat. Nr.: 5878}
+
+    \def\maplayout{
+      \legendbox{5}{95}{NW}{\mycomment}
+      \legendbox{5}{100}{SW}{\size[18]\the\cavename}
+       \legendbox{5}{99}{NW}{\cadastralnumber}
+      \legendbox{10}{50}{N}{\scalebar}
+      \legendbox{10}{52}{S}{\northarrow}
+      \legendbox{5}{-4}{NW}{\loadpicture{M17_ee.pdf}}
+    }
+    endcode
+endlayout
 
 layout local-p
+  copy comment
   copy detailed-p
   scale 1 400
   symbol-hide line label
@@ -12,10 +36,12 @@ layout local-p
   symbol-show point label
   symbol-color line water-flow [0 70 90]
   legend off
+  code tex-map 
+
+  endcode
 endlayout
 
-select m-all-p@M17
-export map -o M17_plan.pdf -projection plan -layout local-p
+
 
 layout local-e
   copy detailed-e
@@ -25,7 +51,13 @@ layout local-e
   symbol-show point label
   symbol-color line water-flow [0 70 90]
   legend off
+    map-header 0 0 off
 endlayout
 select m-all-e@M17
 
-export map -o M17_ee.pdf -projection extended -layout local-p
+export map -o M17_ee.pdf -projection extended -layout local-e
+
+select m-all-p@M17
+export map -o M17_plan.pdf -projection plan -layout local-p
+
+

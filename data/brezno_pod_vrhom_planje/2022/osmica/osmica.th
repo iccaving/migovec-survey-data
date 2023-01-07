@@ -6,6 +6,10 @@ survey osmica -title "Osmica 'Figure of Eight'" #Below new pitch in Planja
 		osmica-1p
 	endmap 
 
+	map m-all-e -projection extended 
+		osmica-1e
+	endmap 
+
 	centreline
 
 	mark 1 fixed
@@ -23,6 +27,7 @@ survey osmica -title "Osmica 'Figure of Eight'" #Below new pitch in Planja
     units length meters
     units compass clino degrees
     data normal from to length compass clino # left right up down
+	extend right
 		1	2	19.1	53	79	#8.5	5	20	0.7
 		2	3	11.8	39	77	#4.5	0.5	12	19
 		3	4	2.5	51	1	#0.2	0.5	0	15

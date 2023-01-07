@@ -31,5 +31,7 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 	equate 8@bingo_flamingo_2 23@bingo_flamingo
 	equate 16@osmica 1@bingo_flamingo_2
 
-
+	## extended elevation joins.
+	join osmica-1e@osmica bingo-1e@bingo_flamingo_2 
+	join bingo-1e@bingo_flamingo_2 bingo_flamingo-1s@bingo_flamingo
 endsurvey
