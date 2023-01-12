@@ -742,7 +742,7 @@ Information on each of the cave entrances is scattered between sources such as t
 ### Vilinksa Jama
 
 - Discovered in 2008 [HM2 draft, page 43]
-  - Connects to
+  - Connects to Vrtnarija
 
 ### Vrtnarija, Gardener's World
 
