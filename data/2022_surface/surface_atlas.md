@@ -17,6 +17,8 @@ Information on each of the cave entrances is scattered between sources such as t
 
 ### A1 through A4
 
+<img src="../images/A1.jpeg" />
+
 - Discovered in 2008 [HM2 draft, page 44]
   - No information other than that they were logged and they are "worth a go down and look"
 
