@@ -90,7 +90,7 @@ jobs:
           make -C $THERION_PATH
           mkdir ${THERION_PATH}/bin
           mv ${THERION_PATH}/therion ${THERION_PATH}/bin/therion
-      - name: Install svgo@2.8.0
+      - name: Install svgo
         run: sudo npm install -g svgo
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate output files
