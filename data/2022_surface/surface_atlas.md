@@ -109,7 +109,7 @@ Information on each of the cave entrances is scattered between sources such as t
 - Further explored by the Slovenians
   - All leads seem to have died, from word of mouth
  - End of cave terminates in boulder floor at base of pitch, this would be difficult to dig
- - Perry was investigating bolt climb in this area, ask
+ - Perry has started bolt climbing avens from entrance, first one dead.
 
 ### DW's 1996 Dig
 
