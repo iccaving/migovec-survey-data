@@ -1,6 +1,23 @@
-# The Surface Atlas
+# The Surface Atlas 🗺️
 
-Information on each of the cave entrances is scattered between sources such as the various editions of the Hollow Mountain, images on the club website and the depths of the minds of the many explorers. Here is the first attempt to gather that information into one central place for convenient reference. This should make it easier to see which caves have potential and which are conclusively dead, when each cave has been explored and record any useful information gathered by previous explorations.
+> **Note**
+> 
+> **Please edit** if you see anything missing or wrong using the pencil icon on the top right!!
+> 
+> All changes are saved in Git so it's very easy to undo later.
+
+Information on each of the cave entrances was previously scattered between sources such as the various editions of the Hollow Mountain, images on the club website and the depths of the minds of the many explorers. Here is a first attempt to gather all useful information into one central place for convenient reference. This should make it easier to see which caves have potential and which are conclusively dead, when each cave has been previously explored and record any other useful information gathered by previous explorations.
+
+# Formatting 
+
+Currently, each entrance has:
+ - Every name its been referred to as
+ - Some images allowing for relocation of the entrance
+ - A GPS location, but these aren't uploaded to GitHub yet and so aren't in the atlas
+ - All key information, sorted by year/entry 
+   - Importantly, please reference if you're getting your info from a written source
+   - This really doesn't take much effort, but saves hours of time for future cavers, eg. [HM1, page 1]
+   - Try to add names if you can, they're only missing when they couldn't be remembered
 
 # General Information
 
@@ -106,10 +123,12 @@ Information on each of the cave entrances is scattered between sources such as t
   - Initially dug but requires more work
 - Revisited in 2018 (not written up)
   - Breakthrough made to series of chambers
-- Further explored by the Slovenians
+- Further explored by the Slovenians after 2018
   - All leads seem to have died, from word of mouth
+- Revisited in 2022
  - End of cave terminates in boulder floor at base of pitch, this would be difficult to dig
- - Perry has started bolt climbing avens from entrance, first one dead.
+ - According to Matti, draft disappears into hole above final pitch, may be diggable
+ - Perry has started bolt climbing avens from entrance, first one dead
 
 ### DW's 1996 Dig
 
