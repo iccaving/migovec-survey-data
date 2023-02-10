@@ -69,7 +69,9 @@ Information on each of the cave entrances is scattered between sources such as t
   - Red paint can just be seen in bottom of image
   - Appears to be a 10m drop blocked by boulders
   - Digging attempted without tools but little progress made
-  - Definitely worth returning
+  - Requires long chisel for entrance widening and oversuit to protect (squeeze not passed due to this)
+  - Entrance may need traverse line for protection through squeeze
+  - Definitely worth returning with tools
 
 ### B20
 
@@ -106,6 +108,8 @@ Information on each of the cave entrances is scattered between sources such as t
   - Breakthrough made to series of chambers
 - Further explored by the Slovenians
   - All leads seem to have died, from word of mouth
+ - End of cave terminates in boulder floor at base of pitch, this would be difficult to dig
+ - Perry was investigating bolt climb in this area, ask
 
 ### DW's 1996 Dig
 
@@ -496,6 +500,7 @@ Information on each of the cave entrances is scattered between sources such as t
   - Small chamber filled with rocks which can be reached from multiple entrances
   - Additional entrance has obvious cave below, likely providing a better entrance but blocked by large rocks
   - Initial hauling and digging of this better entrance
+  - Inside loose slope leads to snow plug with crawl going around corner beyond, not pushed as no oversuit available
   - No breakthrough made - good potential, worth revisiting
 
 ### LP2
@@ -1009,9 +1014,11 @@ Information on each of the cave entrances is scattered between sources such as t
 - Discovered in 2014 [HM3, page 62]
   - Snow and rubble slope leads down to a low chamber with several blind avens
   - Terminal chamber reached after a short dug out crawl
-- Revisited in 2022
-  - Same dug out crawl was enlarged, leading to same terminal chamber
-  - That's what happens when you don't have a surface atlas...
+- Revisited in 2022 by David and Rory
+  - Near entrance just prior to crawl, on left space noticed under boulder, dug out, leading to chamber
+  - Chamber terminates in too tight rift, Aven above chamber leads to undug light from surface
+  - Draft disappears underneath climb down into chamber into rock floor
+  - Thin person should investigate rift, might be possible to blast
 
 ### TR3
 
