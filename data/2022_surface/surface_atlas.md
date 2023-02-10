@@ -209,6 +209,15 @@ Currently, each entrance has:
 
 ### Janet's Little Cave
 
+
+- Revisited in 2022
+  - Re-explored in it's entirety, not realising it had been surveyed in 2019, but no new leads found
+  - Dug further but slow progress and pronounced dea
+
+### Janet's Little Cave, MLC, My Little Cave
+
+<img src="images/MLC.jpeg" width="25%"/>
+
 - Description in HM1, page 184, 2004
   - Small airy passage in the side of a shakehole near the Kuk path
   - Tube from first chamber into second chamber that hasn't been pushed
@@ -780,16 +789,6 @@ Currently, each entrance has:
   - Initially opens up but all proceeding chambers closed down
   - Little effort put into the cave, no survey taken
 - May have digging potential
-
-### MLC, My Little Cave, Janet's Little Cave
-
-<img src="images/MLC.jpeg" width="25%"/>
-
-- Unclear when this was first discovered
-- Surveyed extensively by Tanguy in 2019
-- Revisited in 2022
-  - Re-explored in it's entirety, not realising it had been surveyed in 2019, but no new leads found
-  - Dug further but slow progress and pronounced dead
 
 ### Monatip
 
