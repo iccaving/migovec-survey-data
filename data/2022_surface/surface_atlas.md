@@ -654,7 +654,7 @@ Currently, each entrance has:
 
 ### M8
 
-<img src="images/m8.jpeg" width="25%"/>
+<img src="images/M8.jpeg" width="25%"/>
 
 - Depth indicated as -13m as of 1993 [HM1, page 13]
 - Relogged in 2022
@@ -899,7 +899,7 @@ Currently, each entrance has:
 
 ### Royston Vasey
 
-<img src="images/Royston_Vasey.jpg" width="44.5%"/>
+<img src="images/royston_vasey.jpg" width="44.5%"/>
 
 - Entry about discovery and a survey in HM1, page 147, 2001
   - Very close to the bivi, in an 8m deep shake hole
