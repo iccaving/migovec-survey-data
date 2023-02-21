@@ -207,13 +207,6 @@ Currently, each entrance has:
   - Survey and description in HM3 reference
   - Main lead was killed after hauling a boulder out of the way, other lead was also killed
 
-### Janet's Little Cave
-
-
-- Revisited in 2022
-  - Re-explored in it's entirety, not realising it had been surveyed in 2019, but no new leads found
-  - Dug further but slow progress and pronounced dea
-
 ### Janet's Little Cave, MLC, My Little Cave
 
 <img src="images/MLC.jpeg" width="25%"/>
@@ -226,6 +219,7 @@ Currently, each entrance has:
   - This was when the Disto data was added to the GitHub repo
   - Presumably found to be dead? No indication of any leads
 - Revisited by DPW and Leo Antwis 2022
+  - Dug further but slow progress and not promising
   - Also found cave to be dead, after checking thoroughly for leads (including through tight hole)
 
 ### JCC
