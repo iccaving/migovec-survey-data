@@ -9,7 +9,7 @@ module.exports = {
     "mergeStyles",
     "inlineStyles",
     "minifyStyles",
-    "cleanupIDs",
+    "cleanupIds", //changed IDs to Ids
     "removeUselessDefs",
     "cleanupNumericValues",
     "convertColors",
