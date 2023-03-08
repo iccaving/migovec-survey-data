@@ -111,3 +111,5 @@ export map -o brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
 export map -o brezno_pod_vrhom_planje_plan.pdf -projection plan -layout local
+
+export database -o brezno_pod_vrhom_planje_plan.sql

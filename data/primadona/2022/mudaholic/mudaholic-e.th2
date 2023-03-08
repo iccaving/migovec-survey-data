@@ -2,16 +2,8 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap mudaholic-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-point 70.4031 448.07 station -name 26
-point 171.0831 438.07 station -name 27
-point 191.2131 404.69 station -name 28
-point 227.2231 400.04 station -name 29
-point 280.9531 335.55 station -name 30
-point 115.1331 490.98 station -name 24
-point 48.1831 442.87 station -name 25
 endscrap
 
 
@@ -32,6 +24,7 @@ line rock-border -close on
   371.6831 313.75 363.4331 314.5 363.4331 314.5
   367.5581 307.875
   375.0581 307.5
+  374.0581 313.125
 endline
 
 line rock-border -close on
@@ -41,12 +34,14 @@ line rock-border -close on
   431.6831 394.75
   450.8081 391.375
   449.8081 398.375
+  447.9331 401.0
 endline
 
 line rock-border -close on
   428.8081 400.0
   427.1831 392.375
   421.8081 396.875
+  428.8081 400.0
 endline
 
 line rock-border -close on
@@ -61,6 +56,7 @@ line rock-border -close on
   394.3081 399.625
   395.0581 398.375 401.4331 394.125 401.4331 394.75
   401.4331 395.375 402.8081 401.875 402.8081 401.875
+  394.3081 399.625
 endline
 
 line wall 
@@ -134,16 +130,16 @@ line wall
   359.7458 326.4184 358.2756 326.5727 357.5461 326.9173
 endline
 
-point 433.6031 462.56 station -name 4
-point 451.7431 415.79 station -name 5
-point 412.2031 424.06 station -name 6
-point 374.0331 394.76 station -name 7
-point 374.0331 375.47 station -name 8
-point 384.0631 366.97 station -name 9
-point 384.0631 353.74 station -name 10
-point 400.1931 326.26 station -name 11
-point 361.0231 324.53 station -name 12
-point 420.5231 468.86 station -name 3
+point 433.603 462.56 station -name 4
+point 451.743 415.79 station -name 5
+point 412.203 424.06 station -name 6
+point 374.033 394.76 station -name 7
+point 374.033 375.47 station -name 8
+point 384.063 366.97 station -name 9
+point 384.063 353.74 station -name 10
+point 400.193 326.26 station -name 11
+point 361.023 324.53 station -name 12
+point 420.523 468.86 station -name 3
 endscrap
 
 
@@ -174,6 +170,7 @@ line rock-border -close on
   134.7064 488.3014
   135.8112 485.3846
   138.3303 484.8985
+  140.4958 486.9756
 endline
 
 line rock-border -close on
@@ -181,14 +178,15 @@ line rock-border -close on
   134.2202 493.1186
   133.5131 490.2018
   138.949 487.9037
+  142.4403 490.6879
 endline
 
-point 440.43 628.9307 label -align l -attr level 1 -scale l -text Mudaholic
-point 121.4039 502.0915 continuation 
-point 226.9396 494.4459 continuation 
+point 389.6968 545.6374 label -align tl -attr level 1 -text Mudaholic
+point 121.404 502.091 continuation 
+point 226.94 494.446 continuation 
 point 93.4732 624.2 continuation 
-point 385.4199 446.9813 continuation 
-point 406.8863 531.5177 continuation 
+point 385.42 446.981 continuation 
+point 406.886 531.518 continuation 
 line wall -subtype invisible
   222.3016 491.0657
   222.6155 496.4144
@@ -199,6 +197,7 @@ line wall -close on -outline in
   221.4153 494.2234
   219.5592 491.616
   215.7143 492.986
+  219.1172 494.4886
 endline
 
 line wall -subtype invisible
@@ -245,8 +244,9 @@ line wall
 endline
 
 line wall 
-  115.574 483.608
-  117.2962 483.8223 118.0084 485.7229 118.7411 486.993
+  115.574 463.3973
+  116.4592 463.5075 113.4845 469.4025 113.976 475.279
+  114.4407 480.8356 118.385 486.3757 118.7411 486.993
   129.3501 484.1211 130.3258 502.0486 132.0828 488.2194
   134.3852 484.8959 135.6326 482.3177 137.7127 482.7816
   140.9691 483.508 144.5661 489.1515 144.41 491.5965
@@ -284,6 +284,7 @@ line rock-border -close on
   411.0242 456.7871
   409.1886 455.9184
   406.4023 454.4563
+  403.3091 453.9527
 endline
 
 line rock-border -close on
@@ -294,6 +295,7 @@ line rock-border -close on
   410.1134 458.4
   409.8164 460.6696
   408.1024 460.6512
+  403.9149 456.5913
 endline
 
 line rock-border -close on
@@ -308,6 +310,7 @@ line rock-border -close on
   419.5108 463.7365
   416.9337 465.5942
   414.1653 465.2842
+  411.8215 463.0289
 endline
 
 line rock-border -close on
@@ -332,6 +335,7 @@ line rock-border -close on
   400.3553 465.2149
   400.7898 463.6264
   401.1007 461.9645
+  401.6966 458.8874
 endline
 
 line wall 
@@ -425,6 +429,7 @@ line rock-border -close on
   133.45 498.4958
   132.3956 496.1304
   132.6767 494.3543
+  133.7728 494.0954
 endline
 
 line rock-border -close on
@@ -434,6 +439,7 @@ line rock-border -close on
   130.0219 499.6561
   131.5745 499.3564
   133.1171 499.6541
+  133.4739 501.0285
 endline
 
 line rock-border -close on
@@ -442,6 +448,7 @@ line rock-border -close on
   125.5614 497.6516
   127.3232 497.568
   128.3895 499.2218
+  128.3357 499.858
 endline
 
 line rock-border -close on
@@ -450,6 +457,7 @@ line rock-border -close on
   128.0806 493.9812
   129.3024 494.9192
   128.1284 496.475
+  126.7313 497.1031
 endline
 
 line wall 
@@ -477,38 +485,36 @@ endline
 
 line wall 
   23.1904 693.6066
-  24.3133 691.3054 40.1976 638.7367 41.4752 637.2379
-  42.7009 635.8003 73.5539 576.3179 73.1713 574.4643
-  72.968 573.4753 72.675 572.4843 72.2006 571.5993
-  70.8015 568.9953 68.8084 566.4158 67.0824 564.0198
-  66.048 562.5883 64.5711 561.5647 63.3992 560.4186
-  62.9707 559.9986 62.7116 559.4235 62.4146 558.8954
-  62.1416 558.4101 61.992 557.8534 61.6871 557.3864
-  61.4241 556.9806 61.0633 556.6483 60.7285 556.3037
-  58.9806 554.497 56.7204 553.1674 54.7991 551.5463
-  54.4024 551.2139 54.0856 550.7409 53.6092 550.5492
-  50.8647 549.446 43.1454 547.9125 40.3671 546.3037
-  36.2076 514.4705
-  36.2754 513.8098 36.401 513.1573 36.4986 512.5007
-  36.8992 509.7662 37.3516 506.9379 37.4154 504.1667
+  29.5855 674.9198 33.9276 655.4925 41.4752 637.2379
+  47.0007 623.874 61.9845 612.9725 69.4367 600.3565
+  73.89 592.8175 73.3437 584.0888 72.8919 575.4589
+  72.4803 567.5999 65.949 560.8571 60.0507 555.647
+  55.3787 551.5202 47.5372 551.9895 43.2223 547.4906
+  40.9842 545.157 40.2051 541.7136 39.3595 538.5927
+  38.2662 534.5573 37.5197 530.422 37.0427 526.2502
+  36.5579 522.0104 36.3514 517.7329 36.3419 513.4841
+  36.3287 507.531 37.295 501.6323 38.332 495.7379
+  39.5504 488.8122 40.8663 481.8925 40.805 474.8981
+  40.801 474.4412 40.672 473.9937 40.6236 473.5394
+  40.595 473.2695 40.5593 472.7279 40.5593 472.7279
 endline
 
-point 504.0931 465.31 station -name 0
-point 459.6631 456.57 station -name 1
-point 429.8631 464.61 station -name 2
-point 420.5231 468.86 station -name 3
-point 397.5231 482.24 station -name 13
-point 397.5231 454.53 station -name 14
-point 353.4231 463.66 station -name 15
-point 318.2731 472.8 station -name 16
-point 299.0131 473.9 station -name 17
-point 267.9731 477.6 station -name 18
-point 222.4431 481.06 station -name 19
-point 200.0131 485.79 station -name 20
-point 137.9231 493.74 station -name 21
-point 151.0431 494.61 station -name 22
-point 128.9231 501.69 station -name 23
-point 115.1331 490.98 station -name 24
+point 504.093 465.31 station -name 0
+point 459.663 456.57 station -name 1
+point 429.863 464.61 station -name 2
+point 420.523 468.86 station -name 3
+point 397.523 482.24 station -name 13
+point 397.523 454.53 station -name 14
+point 353.423 463.66 station -name 15
+point 318.273 472.8 station -name 16
+point 299.013 473.9 station -name 17
+point 267.973 477.6 station -name 18
+point 222.443 481.06 station -name 19
+point 200.013 485.79 station -name 20
+point 137.923 493.74 station -name 21
+point 151.043 494.61 station -name 22
+point 128.923 501.69 station -name 23
+point 115.133 490.98 station -name 24
 point 48.1831 442.87 station -name 25
 endscrap
 

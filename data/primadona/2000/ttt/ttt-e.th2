@@ -1,7 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 852.000000 1108.750000
 ##XTHERION## xth_me_area_zoom_to 100
-
 ##XTHERION## xth_me_image_insert {129.000000 1 1.0} {970.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migresurvey/migresurvey/migovecsurveydata/primadona/2000/ttt/ttt_extend.gif" 0 {}
 
 scrap ttt-1e -projection extended -scale [247.0 -713.0 557.0 -712.0 0.0 0.0 14 0.0 m]
@@ -13,10 +12,10 @@ endline
 
 line wall -subtype invisible
   522.9471 681.0572
-  517.5234 682.411
+  506.8016 681.0552
 endline
 
-point 733.4898 605.7604 label -align r -attr level 2 -scale l -text TTT
+point 733.49 605.76 label -align r -attr level 2 -scale l -text TTT
 line wall:invisible 
   502.25 653.75
   514.2562 650.0131
@@ -72,9 +71,9 @@ line wall -id ttt_e1_l1
 endline
 
 line wall 
-  517.5234 682.411
-  517.5234 682.411 512.767 678.1462 512.017 675.3962
-  511.7076 674.2596 507.69 671.8349 507.4405 671.1734
+  506.9248 681.0554
+  506.9248 681.0554 507.591 678.8856 506.8409 676.1356
+  506.5315 674.999 507.69 671.8349 507.4405 671.1734
   506.529 668.7561 502.5 670.75 502.5 670.75
 endline
 
@@ -242,6 +241,7 @@ line rock-border -close on
   461.294 668.6708 459.3854 666.4686 459.4588 666.1749
   459.5322 665.8813 459.3854 663.1652 459.3854 663.1652
   469.8827 660.6694
+  474.067 663.2386
 endline
 
 line wall 
