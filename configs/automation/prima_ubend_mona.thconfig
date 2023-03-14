@@ -56,11 +56,11 @@ select m-all-p@primadona_ubend_mona_tip.system_migovec
 
 maps-offset off
 language sl
-export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_SLO.pdf -layout plan
-export map -projection plan -o ../../_outputs/primadona_ubend_mona_tip_plan_SLO.svg -layout plan
+#export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_SLO.pdf -layout plan
+#export map -projection plan -o ../../_outputs/primadona_ubend_mona_tip_plan_SLO.svg -layout plan
 language en
-export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.pdf -layout plan
-export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.svg -layout plan
+#export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.pdf -layout plan
+#export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.svg -layout plan
 
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
@@ -68,17 +68,7 @@ export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.s
 source 
 	map mlocale
 		m-all-e@primadona_ubend_mona_tip.system_migovec
-		antares@primadona.primadona_ubend_mona_tip.system_migovec [-500 0 m] none
-		cantina_canyon@primadona.primadona_ubend_mona_tip.system_migovec [-500 0 m] none
-		cantina_canyon_2@primadona.primadona_ubend_mona_tip.system_migovec [-500 0 m] none
-		blue_lagoon@primadona.primadona_ubend_mona_tip.system_migovec [-500 0 m] none
-		bin_bag_palace@primadona.primadona_ubend_mona_tip.system_migovec [-500 0 m] none
-		echo_falls@primadona.primadona_ubend_mona_tip.system_migovec [-500 0 m] none
-		the_expo_strikes_back@primadona.primadona_ubend_mona_tip.system_migovec [-500 0 m] none
-		the_deep_awakens@primadona.primadona_ubend_mona_tip.system_migovec [-500 0 m] none
-		sithyphus_slope@primadona.primadona_ubend_mona_tip.system_migovec [-500 0 m] none
 		coda@mona_tip.primadona_ubend_mona_tip.system_migovec 
-
 	endmap
 endsource 
 
@@ -113,8 +103,8 @@ maps-offset on
 select mlocale
 
 language sl
-export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.pdf -layout ee
-export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.svg -layout ee
+#export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.pdf -layout ee
+#export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.svg -layout ee
 language en
 export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG.pdf -layout ee
 export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG.svg -layout ee
@@ -122,9 +112,9 @@ export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_ENG
 #----------------------------------------------------------------------------------|
 # export a .3d model, which can be opened in AVEN and LOCH
 select primadona_ubend_mona_tip@system_migovec
-export model -o ../../outputs/primadona_ubend_mona_tip.3d
+#export model -o ../../outputs/primadona_ubend_mona_tip.3d
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only
 select primadona_ubend_mona_tip@system_migovec
-export model -o ../../outputs/primadona_ubend_mona_tip.lox
+#export model -o ../../outputs/primadona_ubend_mona_tip.lox

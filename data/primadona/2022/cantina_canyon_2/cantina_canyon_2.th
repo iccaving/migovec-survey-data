@@ -10,12 +10,13 @@ survey cantina_canyon_2 -title "cantina canyon 2.0"
      cantina_canyon_2-1p
     endmap
 
-    #map m-all-e -projection plan
-    # cantina_canyon_2-1e
-    #endmap
+    map m-all-e -projection extended
+     cantina_canyon_2-1e
+    endmap
    
   centerline
     date 2022.07.23 
+    explo-date 2022.07.23
     team "Ana Teck"
     team "Matti Mitropoulos"
     team "Rory Rose"

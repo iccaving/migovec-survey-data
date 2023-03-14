@@ -2,10 +2,15 @@
 
 survey antares -title "Antares"
     # continuation of Cantina Canyon 2.0 
-  input Antares-1p.th2
+  input antares-1p.th2
+  input antares-1s.th2
 
   map m-all-p -projection plan
-    Antares-1p
+    antares-1p
+  endmap
+
+  map m-all-e -projection extended
+    antares-1s
   endmap
 
   centerline

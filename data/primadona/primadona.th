@@ -540,7 +540,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2022/the_deep_awakens/the_deep_awakens.th"
 	input "./2022/cantina_canyon/cantina_canyon.th"
 	input "./2022/bin_bag_palace/bin_bag_palace.th"
-	input "./2022/sithyphus_slope/sithyphus_slope.th"
+	input "./2022/sisyphus_slope/sisyphus_slope.th"
 	input "./2022/mudaholic/mudaholic.th"
 	input "./2022/cantina_canyon_2/cantina_canyon_2.th"
 	input "./2022/who_dies_first/who_dies_first.th"
@@ -553,10 +553,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 27@the_deep_awakens 0@the_expo_strikes_back
 	equate 9@cantina_canyon 0@the_deep_awakens
 	equate 1@echo_falls 19@bin_bag_palace
-	equate 0@cantina_canyon 15@sithyphus_slope
+	equate 0@cantina_canyon 15@sisyphus_slope
 	equate 30@mudaholic 42@TTTr
 	equate 1@pov 25@mudaholic 
-	equate 0@cantina_canyon_2 8@sithyphus_slope
+	equate 0@cantina_canyon_2 8@sisyphus_slope
 	equate 33@the_deep_awakens 5@who_dies_first
 	equate 31@cantina_canyon_2 9@antares
 	equate 12@blue_lagoon 0@bin_bag_palace
