@@ -153,15 +153,30 @@ Collectively known as 'the old system' or sometimes 'sysmig', these entrances we
 
 **Vrh Planja**
 
-This is a new area which we started exploring in 2020. Located to the NW of Tolminski Kuk, three caves are currently known: 
+This is a new area which we started exploring in 2020. Located to the NW of Tolminski Kuk, three caves are currently known:
+
 1. Bertijeva Jama
 2. Planja jama
 3. Brezno pod Vrhom Planje
 
 You can download the following artifacts:
-- Plan view (WIP)
-[PLAN SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_SLO.pdf) |
-[PLAN ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_ENG.pdf) |
+
+- Plan view (WIP)  
+  [PLAN SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_SLO.pdf) |
+  [PLAN ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_ENG.pdf)
+
+**Plateau**
+
+All surveyed and GPS logged entrances in the area surrounding the system.
+
+Uploading the KML file into Google My Maps (or Google Earth) and then syncing to your phone allows for navigation of the plateau without a club GPS. KML files can easily be converted online into GPX files for use with Garmins etc.
+
+Many of the GPS coordinates are very inaccurate and are currently being renewed as part of the [surface atlas project](https://github.com/iccaving/migovec-survey-data/blob/master/data/GPS/surface_atlas.md).
+
+- 3D Model  
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.3d)
+- KML (Google Maps)  
+  [KML](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.kml)
 
 ## Prerequisites
 
@@ -273,24 +288,28 @@ To contribute to the descriptions, a simple markdown file is added to the markdo
 ```
 
 #### Custom tex-macros to include images
+
 Defined in `descriptions.sty` are some LaTeX macros to help with the inclusion of images. These can be called within the markdown description files directly, e.g.
 
-*A centered figure*
+_A centered figure_
+
 ```
 \CenteredFigure{<path/to/figure>}
 ```
 
-*A full width figure placed at the top of a page*
+_A full width figure placed at the top of a page_
+
 ```
 \TopFullWidthFigure{<path/to/figure>}
 ```
 
-*A coloured flag with a number* can be used to link a certain description paragraph with a place within the displayed map. In markdown, this is achieved with the following tex macro:
+_A coloured flag with a number_ can be used to link a certain description paragraph with a place within the displayed map. In markdown, this is achieved with the following tex macro:
+
 ```
 \numflag{<flag-number>}{<flag-colour>}
 ```
-The accepted colour codes are `c1,c2,..,c6`.
 
+The accepted colour codes are `c1,c2,..,c6`.
 
 ## How to export data
 
@@ -605,7 +624,6 @@ export -o {path/to/map} -projection extended -layout local-e
 ```
 
 Main symbology and symbol codes:
-
 
 ![symbology of migovec-survey-data](./outputs/symbology.svg)
 

@@ -14,14 +14,14 @@ survey plateau -title "Migovec Plateau"
 	# input the plateau DEM (uncomment)
 	input "./DEM/MIG_DEM.th"
 	# input the individual cave data files
-	input GPS_fixes.th
+    input "./GPS/gps.th"
 
 	# first the connected caves of System Migovec
 	input "./system_migovec.th"
 
 	# now the caves of Vrh planja
-
 	input "./vrh_planja.th"
+
 	# other caves
 	input "./gondolin/gondolin.th"
 	input "./planika_resurvey_2019/planika.th"
@@ -110,7 +110,6 @@ survey plateau -title "Migovec Plateau"
 
 		# ROWAN CAVE
 		fix 0@rowan_cave 404460 124948 1819
-
 
 	endcentreline
 
