@@ -893,7 +893,7 @@ Currently, each entrance has:
 
 ### Royston Vasey
 
-<img src="images/royston_vasey.jpg" width="44.5%"/>
+<img src="images/Royston_Vasey.jpg" width="44.5%"/>
 
 - Entry about discovery and a survey in HM1, page 147, 2001
   - Very close to the bivi, in an 8m deep shake hole
