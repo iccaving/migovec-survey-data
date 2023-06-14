@@ -1,6 +1,21 @@
 survey bingo_flamingo_2 -title "Bingo Flamingo 2" #part of bingo flamingo pitch
 
+    input bingo_flamingo_2-p.th2
+    input bingo_flamingo_2-e.th2
+
+    map m-all-p -projection plan
+      bingo-1p 
+    endmap 
+
+    map m-all-e -projection extended
+      bingo-1e
+    endmap 
+
+
+
    centreline
+
+    mark 8 fixed
    date 2022.07.19
    explo-date 2022.07.19
    team "Jana Čarga"
@@ -12,15 +27,27 @@ survey bingo_flamingo_2 -title "Bingo Flamingo 2" #part of bingo flamingo pitch
    explo-team "Chris Hayes"
    explo-team "David Wilson"
 
+
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino #left right up down
-    1	2	7.4	24	-33	#0.8	0.5	0	3
-  	2	3	14	0	90	#0.4	4.2	20	0
-  	3	4	7	11	56	#0	2.5	10	14
-  	4	5	13.4	0	90	#3	3	24	1.5
-  	5	6	17	55	81	#3	3.5	23	16
-  	6	7	3.4	13	65	#4.7	1.7	9.5	14
-  	7	8	5.2	335	-3	#2.5	0	9.8	0.5
+    extend right
+    1	2	7.4	24	-33	#
+  	2	3	14	0	90	#
+  	3	4	7	11	56	#
+  	4	5	13.4	0	90	#
+  	5	6	17	55	81	#
+  	6	7	3.4	13	65	#
+  	7	8	5.2	335	-3	#
+
+    data dimensions station left right up down
+    1 0.8	0.5	0	3
+    2 0.4	4.2	20	0
+    3 0	2.5	10	14
+    4 3	3	24	1.5
+    5 3	3.5	23	16
+    6 4.7	1.7	9.5	14
+    7 2.5	0	9.8	0.5
 	endcenterline
 endsurvey

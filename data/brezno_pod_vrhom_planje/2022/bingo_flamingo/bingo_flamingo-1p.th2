@@ -4,15 +4,147 @@ encoding  utf-8
 
 scrap bingo_flamingo-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
+point 97.2998 762.013 gradient -orientation 69.35931873715514
+point 110.725 727.543 gradient -orientation 69.35931873715514
+line u:texture 
+  91.3221 734.541
+  114.271 741.8752
+endline
+
+line u:texture 
+  78.5465 743.2947
+  105.0441 754.8874
+endline
+
+line u:texture 
+  83.2782 754.8874
+  91.3221 734.541
+  98.6563 723.6581
+  102.3366 714.0608
+endline
+
+line u:texture 
+  95.3441 771.2119
+  104.3344 747.0801
+  117.3466 715.3776
+endline
+
+line u:texture 
+  152.8345 698.1068
+  152.8345 698.1068 141.5334 706.6541 139.14 713.5
+  136.7466 720.3459 120.1 753.46 120.1 753.46
+  111.1954 770.2655
+  105.9905 792.5046
+endline
+
+line u:texture 
+  389.3203 655.6871
+  385.3769 676.4795
+endline
+
+line u:texture 
+  419.4335 655.6871
+  426.9618 675.0456
+endline
+
+line u:texture 
+  506.9051 597.2532
+  526.6221 604.7815
+endline
+
+line u:texture 
+  492.207 632.7437
+  483.6033 618.0456
+endline
+
+line u:texture 
+  471.7731 646.0078
+  460.6599 631.3098
+endline
+
+line u:texture 
+  522.3202 587.2155
+  506.5466 609.4419
+  505.1127 611.2343
+endline
+
+line u:texture 
+  454.924 650.6682
+  454.924 650.6682 486.8297 633.1022 492.5655 628.8003
+  498.3014 624.4984 507.9806 624.8569 513.7164 614.8192
+  519.4523 604.7815 527.3391 592.9513 527.3391 592.9513
+endline
+
+line u:texture 
+  503.6787 615.1777
+  503.6787 615.1777 474.2825 629.8758 467.8297 633.4607
+  461.3769 637.0456 440.226 648.1588 440.226 648.1588
+endline
+
+line u:texture 
+  368.8864 672.5361
+  368.8864 672.5361 391.4713 672.8946 403.6599 671.8191
+  415.8486 670.7437 448.1127 655.3286 448.1127 655.3286
+endline
+
+line u:texture 
+  363.8675 649.5928
+  350.2449 675.7625
+endline
+
+line u:texture 
+  350.2449 630.2343
+  321.9242 663.9324
+endline
+
+line u:texture 
+  304.3582 638.838
+  343.7921 621.272
+endline
+
+line u:texture 
+  333.3959 662.4984
+  333.3959 662.4984 324.0751 656.0456 321.9242 648.8758
+  319.7732 641.706 317.9808 630.2343 317.9808 630.2343
+endline
+
+line u:texture 
+  327.66 670.7437
+  327.66 670.7437 317.2638 666.8003 314.0374 658.555
+  310.811 650.3097 311.1695 625.5739 311.1695 625.5739
+endline
+
+point 479.074 629.378 gradient -orientation 200.18691966433204
+point 345.926 659.08 gradient -orientation 132.47327953646743
+point 330.563 638.852 gradient -orientation 119.9094008495907
+line u:texture 
+  362.4336 672.8946
+  362.4336 672.8946 347.377 663.9324 339.1317 652.1022
+  330.8864 640.272 321.9242 623.423 320.1317 617.6871
+endline
+
+line u:texture 
+  434.1316 656.0456
+  405.4524 658.555 381.7921 670.7437 364.943 654.9701
+  348.094 639.1965 337.3393 611.9513 337.3393 611.9513
+endline
+
+line wall:invisible 
+  446.9216 443.6067
+  464.6484 443.2658
+  482.7162 452.4701
+  490.5569 454.5155
+endline
+
 point 478.387 500.753 label -align r -scale xs -text "<bf>c2"
 point 665.523 197.141 label -align l -text "Bingo<br>Flamingo"
-line floor-step
+line floor-step 
   333.0074 688.8713
   333.0074 688.8713 306.5073 687.2749 301.0796 667.4796
   295.6518 647.6844 298.2061 620.865 298.2061 620.865
 endline
 
-line floor-step
+line floor-step 
   307.7844 743.1486
   307.7844 743.1486 299.1639 724.6305 303.3145 718.5642
 endline
@@ -30,11 +162,11 @@ line border -close on -id bingo_flamingo-1p_u_smallblocks_1 -visibility off
   465.7208 468.2719 481.8212 478.4092 481.8212 478.4092
 endline
 
-area u:smallblocks
+area u:smallblocks 
   bingo_flamingo-1p_u_smallblocks_1
 endarea
 
-line contour
+line contour 
   244.69 763.89
   241.11 754.95
   238.19 744.61
@@ -44,7 +176,7 @@ line contour
   240.2 709.42
 endline
 
-line contour
+line contour 
   210.32 784.19
   208.29 774.83
   206.47 764.89
@@ -55,7 +187,7 @@ line contour
   207.01 722.8
 endline
 
-line contour
+line contour 
   190.04 788.34
   182.89 781.38
   177.9 772.28
@@ -115,7 +247,7 @@ line rock-border -close on
   182.74 713.6
 endline
 
-line wall
+line wall 
   63.564 745.1349
   81.7251 730.8654
   102.3366 714.0608
@@ -141,9 +273,9 @@ line wall
   444.0333 441.911
 endline
 
-line wall
-  486.99 448.22
-  492.6234 443.9642 499.2694 443.4065 506.0157 442.7229
+line wall 
+  491.6294 453.7431
+  497.2628 449.4873 499.2694 443.4065 506.0157 442.7229
   522.097 440.4158 536.0896 431.9864 548.09 421.38
 endline
 
@@ -205,7 +337,7 @@ line rock-border -close on
   273.18 728.93
 endline
 
-line pit
+line pit 
   544.71 567.21
   536.29 571.09
   526.11 578.25
@@ -236,7 +368,7 @@ line pit
   344.32 592.03
 endline
 
-line pit
+line pit 
   348.85 590.09
   348.02 581.78
   350.24 571.24
@@ -252,17 +384,12 @@ line pit
   404.36 502.9
   407.41 495.29
   410.96 486.94
-  414.32 478.07
-  419.09 471.81
-  426.5 465.98
-  433.32 458.25
-  448.2428 456.2534
-  464.47 450.27
-  471.47 445.89
+  416.7502 482.0466
+  425.2759 485.9491
 endline
 
-line pit
-  478.27 448.0
+line pit 
+  493.2928 457.7206
   492.32 473.56
   496.69 480.3
   502.81 486.76
@@ -277,7 +404,7 @@ line pit
   541.5608 565.3639
 endline
 
-line wall
+line wall 
   581.13 462.59
   581.5112 481.4304 573.625 498.6105 567.2036 515.8513
   561.5008 535.6483 551.0201 553.3597 542.3355 571.8692
@@ -296,7 +423,8 @@ line wall
   313.0956 749.6946 313.0303 740.2945 304.2016 740.2375
   293.484 743.6855 281.7815 746.9784 271.7243 752.4151
   256.6579 761.8137 243.8311 774.2888 227.98 782.45
-  212.6677 784.309 198.7452 791.7784 184.2527 796.6125
+  214.6714 784.0657 202.4127 789.9196 189.9171 794.5979
+  188.0358 795.3022 189.3995 802.3722 189.3449 806.6885
 endline
 
 line u:splay -visibility off
@@ -879,16 +1007,15 @@ line u:splay -visibility off
   445.48 421.73
 endline
 
-point 177.95 708.78 station-name -scale xs -text 0
-point 262.19 743.65 station-name -scale xs -text 1
-point 313.06 719.82 station-name -scale xs -text 2
-point 285.98 690.47 station-name -scale xs -text 3
-point 289.67 643.78 station-name -scale xs -text 4
-point 340.89 600.57 station-name -scale xs -text 5
-point 417.79 537.3 station-name -scale xs -text 6
-point 472.83 465.03 station-name -scale xs -text 7
-point 477.0 422.85 station-name -scale xs -text 8
-
+point 177.95 708.78 station-name -align t -scale xs -text 0
+point 268.19 761.65 station-name -align t -scale xs -text 1
+point 313.06 719.82 station-name -align t -scale xs -text 2
+point 285.98 690.47 station-name -align t -scale xs -text 3
+point 289.67 643.78 station-name -align t -scale xs -text 4
+point 340.89 600.57 station-name -align t -scale xs -text 5
+point 417.79 537.3 station-name -align t -scale xs -text 6
+point 514.83 465.03 station-name -align t -scale xs -text 7
+point 489.0 418.85 station-name -align t -scale xs -text 8
 point 177.95 708.78 station -name 0
 point 262.19 743.65 station -name 1
 point 313.06 719.82 station -name 2
@@ -903,20 +1030,40 @@ endscrap
 
 scrap bingo_flamingo-1p1 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-line floor-step
+point 573.6054 334.4585 altitude -align tr
+point 445.509 315.451 station-name -align t -scale xs -text 9
+point 550.687 349.732 station-name -align t -scale xs -text 10
+point 542.789 286.723 station-name -align t -scale xs -text 11
+point 646.75 259.02 station-name -align t -scale xs -text 12
+line border -close on -id bingo_flamingo-1p1_u_smallblocks_1 -visibility off
+  486.5592 329.5847
+  491.4814 362.8095
+  491.4814 362.8095 491.4814 376.0995 488.7742 383.2366
+  486.067 390.3738 494.6808 403.6638 474.7459 400.2182
+  454.8111 396.7727 450.6272 406.8632 449.6427 396.5266
+  448.6583 386.19 449.1505 379.0528 455.3033 367.2395
+  461.456 355.4262 455.7955 330.8152 467.6088 327.6158
+  479.422 324.4164 478.9298 314.572 486.5592 329.5847
+endline
+
+area u:smallblocks -attr scale 1.1
+  bingo_flamingo-1p1_u_smallblocks_1
+endarea
+
+line floor-step 
   490.9336 406.8958
   466.3869 408.9134
   466.3869 408.9134 449.2378 409.2496 439.1502 402.5245
 endline
 
-line floor-step
+line floor-step 
   507.7463 351.0774
   507.7463 351.0774 498.6674 334.9371 508.4189 330.2295
 endline
 
 point 786.796 265.651 label -align r -scale s -text "<bf>c2"
-point 543.747 288.165 label -align bl -scale s -text "<bf>c2"
-line floor-step
+point 635.747 336.165 label -align bl -scale s -text "<bf>c2"
+line floor-step 
   714.2372 267.5598
   714.2372 267.5598 719.5569 234.5218 736.6359 234.2418
 endline
@@ -949,18 +1096,17 @@ line wall -close on -outline in
   460.47 431.1733 461.765 428.5467 463.06 425.92
 endline
 
-line pit -clip off
+line floor-step -clip off
   426.11 486.38
   429.8207 485.6036 433.6613 485.3344 437.2115 483.9315
   440.1034 482.9757 443.0275 482.0983 445.6966 480.5984
   451.6842 477.6549 457.7312 474.8016 463.4025 471.2706
   466.6475 469.3285 470.0411 467.594 473.4175 465.925
   476.2493 465.5436 479.0873 464.9946 481.9152 464.7174
-  484.7397 465.3121 487.5596 466.0875 490.3869 466.5708
-  495.7736 465.6277 501.1602 464.6845 506.5469 463.7414
+  484.7397 465.3121 488.0014 454.5995 490.8287 455.0828
 endline
 
-line wall
+line wall 
   424.8782 486.8412
   425.1476 480.2036 422.2657 479.432 426.1479 474.1614
   432.5306 461.8383 443.3334 450.88 444.8858 436.7462
@@ -984,16 +1130,21 @@ line wall
   640.935 239.0775 651.0324 234.9245 661.923 234.0339
   675.7936 230.0261 690.6293 230.6648 704.29 225.98
   712.7654 230.0035 721.9059 232.1542 731.191 232.9225
-  736.5287 234.5329 741.6366 236.5845 746.55 239.23
+  736.5287 234.5329 741.7425 235.7375 746.6559 238.383
+  755.7676 243.2071
+  761.1674 250.301
+  761.1674 250.301 763.1791 269.2535 752.5912 274.9709
+  742.0032 280.6884 728.4506 290.5352 722.7332 283.4413
+  717.0157 276.3474 716.0628 272.4298 716.0628 272.4298
 endline
 
-line pit
-  587.91 299.31
-  580.15 302.2
-  563.5705 300.9401
+line floor-step 
+  588.7528 300.5742
+  588.7528 300.5742 581.0081 305.6139 576.4978 305.7117
+  571.9875 305.8095 563.5705 300.9401 563.5705 300.9401
 endline
 
-line wall
+line wall 
   716.2097 272.7398
   714.9609 267.0363 711.2734 264.3606 705.52 264.25
   698.9415 264.428 692.911 266.7906 686.7493 268.577
@@ -1014,7 +1165,7 @@ line wall
   507.5309 399.2686 500.7043 401.3604 496.7716 403.6207
   488.2693 407.3703 480.1596 414.7685 478.465 424.0713
   478.8747 431.9122 478.5274 441.2353 484.0056 447.2855
-  487.8315 450.213 502.3991 460.9744 506.557 463.3958
+  487.8315 450.213 487.8181 452.5793 491.976 455.0007
 endline
 
 point 472.83 465.03 station -name 7
@@ -1027,18 +1178,35 @@ point 712.68 258.99 station -name 13
 point 745.89 268.34 station -name 14
 point 687.9 227.62 station -name 15
 point 663.95 299.66 station -name 16
-point 598.65 307.58 station -name 17
 endscrap
 
 
 scrap bingo_flamingo-1p2 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-line pit
+point 907.745 252.539 label -align bl -scale s -text "<bf>p10"
+point 814.582 160.918 label -align bl -scale xs -text "loading tube"
+line floor-step 
+  868.2948 201.2993
+  868.2948 201.2993 867.1356 183.9102 852.8379 184.2966
+  838.5402 184.683 804.9213 199.3672 786.3729 202.0721
+  767.8246 204.7771 737.2971 214.0513 737.2971 214.0513
+  724.1587 222.1662
+endline
+
+line floor-step 
+  693.2447 218.3019
+  693.2447 218.3019 691.3126 222.5526 713.7252 213.6648
+  736.1378 204.7771 769.7567 186.6152 777.8716 185.8423
+  785.9865 185.0695 841.2452 168.8397 847.8144 168.8397
+  854.3836 168.8397 877.9554 170.7718 880.274 186.6152
+endline
+
+line pit 
   921.2038 218.1064
   921.2038 218.1064 915.8704 202.8081 919.2756 201.446
 endline
 
-line floor-step
+line floor-step 
   689.65 319.15
   682.1 314.01
   676.04 308.38
@@ -1049,7 +1217,7 @@ line floor-step
   662.51 265.61
 endline
 
-line floor-step
+line floor-step 
   644.55 273.82
   645.74 281.75
   651.24 289.31
@@ -1057,38 +1225,6 @@ line floor-step
   656.77 307.4
   656.69 317.08
 endline
-
-line border -close on -id bingo_flamingo-1p2_clay_1 -visibility on
-  668.7 274.42
-  677.6 278.09
-  683.11 283.88
-  687.23 291.42
-  691.4 298.08
-  686.49 305.11
-  678.98 309.17
-  670.87 312.8
-  663.4 315.72
-  655.04 317.16
-  647.21 316.37
-  639.65 312.67
-  632.17 305.72
-  625.86 298.39
-  621.5 291.49
-  616.25 285.17
-  614.97 278.46
-  624.69 276.28
-  634.38 277.68
-  641.89 281.62
-  650.23 282.04
-  659.05 280.68
-  665.37 273.91
-  668.7 274.42
-  668.7 274.42
-endline
-
-area clay
-  bingo_flamingo-1p2_clay_1
-endarea
 
 line border -close on -id bingo_flamingo-1p2_u_smallblocks_1 -visibility off
   707.74 225.85
@@ -1129,11 +1265,11 @@ line border -close on -id bingo_flamingo-1p2_u_smallblocks_1 -visibility off
   707.74 225.85
 endline
 
-area u:smallblocks
+area u:smallblocks 
   bingo_flamingo-1p2_u_smallblocks_1
 endarea
 
-line wall
+line wall 
   571.0632 304.5205
   574.8737 304.3424 586.1883 292.8098 597.3044 284.9972
   610.1841 275.945 623.0276 270.3899 627.2909 269.4383
@@ -1156,7 +1292,7 @@ line wall
   886.4611 197.9849 915.9078 203.7193 919.6659 201.3302
 endline
 
-line wall
+line wall 
   921.7353 218.0253
   920.1983 217.9009 913.7675 214.9407 906.3018 213.4914
   897.824 211.8455 888.2088 211.6878 886.4631 211.5508
@@ -1184,16 +1320,16 @@ line wall
   611.3346 307.8318 601.3281 321.168 585.527 324.0417
 endline
 
-point 636.75 253.02 station-name -scale xs -text 12
-point 712.68 258.99 station-name -scale xs -text 13
-point 745.89 268.34 station-name -scale xs -text 14
-point 687.9 227.62 station-name -scale xs -text 15
-point 663.95 299.66 station-name -scale xs -text 16
-point 781.14 195.43 station-name -scale xs -text 18
-point 881.1 174.97 station-name -scale xs -text 19
-point 877.3 205.82 station-name -scale xs -text 20
-point 890.48 200.0 station-name -scale xs -text 21
-
+point 698.68 250.99 station-name -align t -scale xs -text 13
+point 729.89 264.34 station-name -align t -scale xs -text 14
+point 669.9 209.62 station-name -align t -scale xs -text 15
+point 663.95 327.66 station-name -align t -scale xs -text 16
+point 789.14 219.43 station-name -align t -scale xs -text 18
+point 889.1 152.97 station-name -align t -scale xs -text 19
+point 869.3 215.82 station-name -align t -scale xs -text 20
+point 952.67 438.53 station-name -align t -scale xs -text 23
+point 908.159 223.095 station-name -align t -scale xs -text 22
+point 902.48 180.0 station-name -align t -scale xs -text 21
 point 636.75 253.02 station -name 12
 point 712.68 258.99 station -name 13
 point 745.89 268.34 station -name 14
@@ -1203,21 +1339,86 @@ point 781.14 195.43 station -name 18
 point 881.1 174.97 station -name 19
 point 877.3 205.82 station -name 20
 point 890.48 200.0 station -name 21
+line border -close on -id bingo_flamingo-1p2_clay_1 -visibility on
+  668.7 274.42
+  677.6 278.09
+  683.11 283.88
+  687.23 291.42
+  691.4 298.08
+  686.49 305.11
+  678.98 309.17
+  670.87 312.8
+  663.4 315.72
+  655.04 317.16
+  647.21 316.37
+  639.65 312.67
+  632.17 305.72
+  625.86 298.39
+  621.5 291.49
+  616.25 285.17
+  614.97 278.46
+  624.69 276.28
+  634.38 277.68
+  641.89 281.62
+  650.23 282.04
+  659.05 280.68
+  665.37 273.91
+  668.7 274.42
+  668.7 274.42
+endline
+
+area clay 
+  bingo_flamingo-1p2_clay_1
+endarea
+
 endscrap
 
 
 scrap bingo_flamingo-1p3 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
+point 826.5627 209.5765 air-draught -orientation 112.44925547606258
+point 598.65 307.58 station -name 17
+line floor-step 
+  776.6192 603.7309
+  776.6192 603.7309 778.2423 600.0791 753.0853 602.1079
+  727.9284 604.1367 718.1902 623.613 714.1326 609.4115
+  710.075 595.21 716.5672 559.0977 732.3917 539.6213
+  748.2162 520.145 788.3862 499.0456 796.9071 496.6111
+  805.428 494.1765 827.7446 489.3074 827.7446 489.3074
+endline
+
+line border -close on -id bingo_flamingo-1p3_u_smallblocks_1 -visibility off
+  901.4005 503.6336
+  920.2899 535.3678
+  930.1123 581.8356
+  926.7123 610.1696
+  869.6664 613.5697
+  848.1325 618.8588
+  813.3761 604.125
+  800.5313 595.4359
+  802.798 550.1015
+  831.5099 521.3896
+  848.1325 502.5003
+  886.289 501.7447
+  901.4005 503.6336
+  901.4005 503.6336
+endline
+
+area u:smallblocks -attr scale 1.5
+  bingo_flamingo-1p3_u_smallblocks_1
+endarea
+
+point 1038.73 424.487 label -align r -scale xs -text "cairn PSS"
 point 664.887 696.142 continuation -align r -scale l
 point 1117.14 174.624 continuation -align r -scale l
-line rock-edge
+line rock-edge 
   921.1946 415.5876
   942.05 424.98
   944.8642 400.5542
   950.3018 383.2818
 endline
 
-line rock-edge
+line rock-edge 
   994.1225 435.7387
   982.9274 436.3785
   953.14 431.65
@@ -1255,7 +1456,7 @@ line pit -close on
   809.1809 528.5555 815.8384 523.4678 822.46 518.3
 endline
 
-line wall
+line wall 
   644.1 679.13
   653.1514 664.3355 663.8721 650.1875 670.178 633.954
   674.211 625.0119 680.4407 617.0068 683.4472 607.4492
@@ -1276,7 +1477,7 @@ line wall
   912.0122 250.835 921.209 228.9213 920.9481 218.5319
 endline
 
-line wall
+line wall 
   1104.47 181.45
   1090.9378 179.8058 1077.3166 185.5839 1069.87 197.18
   1060.7754 208.9158 1054.6493 222.7933 1055.0692 237.8442
@@ -1300,7 +1501,7 @@ line wall
   687.3251 678.6933 682.485 682.6055 679.86 688.65
 endline
 
-line pit
+line pit 
   1013.42 521.86
   1011.3333 519.02 1009.2467 516.18 1007.16 513.34
   1006.7233 510.2933 1006.2867 507.2467 1005.85 504.2
@@ -1430,7 +1631,7 @@ line rock-border -close on
   961.84 284.0
 endline
 
-line pit
+line pit 
   1059.0761 213.1863
   1045.1307 213.6975 1031.1854 214.2088 1017.24 214.72
   1012.099 218.325 1006.8867 221.9815 1001.032 224.3169
@@ -1463,7 +1664,7 @@ line pit -close on -outline in
   1030.3049 117.9629 1034.7826 117.978 1037.6989 118.9133
 endline
 
-line wall
+line wall 
   919.7277 201.7946
   918.5501 199.2652 915.78 188.1156 920.2142 186.1318
   925.4116 181.7958 931.1813 177.8242 935.309 172.4447
@@ -1485,7 +1686,7 @@ line wall
   1110.52 164.06
 endline
 
-line u:texture
+line u:texture 
   989.57 220.89
   980.54 222.04
   972.2 220.49
@@ -1503,7 +1704,7 @@ line u:texture
   987.8 119.72
 endline
 
-line u:texture
+line u:texture 
   952.89 230.64
   945.03 229.97
   937.61 226.75
@@ -1515,14 +1716,14 @@ line u:texture
   937.97 171.77
 endline
 
-line u:texture
+line u:texture 
   998.74 201.68
   995.26 211.18
   986.55 219.45
   981.38 226.18
 endline
 
-line u:texture
+line u:texture 
   987.85 196.23
   978.59 205.79
   968.5 214.27
@@ -1530,7 +1731,7 @@ line u:texture
   951.9 229.44
 endline
 
-line u:texture
+line u:texture 
   984.13 192.22
   973.06 194.08
   959.56 199.61
@@ -1540,7 +1741,7 @@ line u:texture
   924.4 215.93
 endline
 
-line u:texture
+line u:texture 
   978.11 185.34
   969.61 185.6
   959.56 186.34
@@ -1549,45 +1750,48 @@ line u:texture
   932.29 190.79
 endline
 
-line u:texture
+line u:texture 
   983.84 174.15
   970.75 173.93
   956.68 173.58
   948.33 173.53
 endline
 
-line u:texture
+line u:texture 
   979.83 156.95
   965.82 156.59
   950.91 156.1
 endline
 
-line u:texture
+line u:texture 
   990.43 148.92
   979.4 148.24
   968.16 146.0
 endline
 
-line u:texture
+line u:texture 
   997.88 137.45
   989.85 136.84
   978.39 133.64
   970.02 130.07
 endline
 
-line u:texture
+line u:texture 
   1001.89 124.83
   988.8 118.9
   980.3 113.31
 endline
 
-line u:texture
+line u:texture 
   1012.21 122.25
   1001.62 115.47
   997.29 108.76
 endline
 
-line u:texture
+point 984.25 125.052 gradient -orientation 65.4478033331785
+point 961.327 209.838 gradient -orientation 130.38095555338367
+point 961.357 163.639 gradient -orientation 87.95384141433607
+line u:texture 
   1010.49 107.92
   1006.63 118.81
   999.33 125.62
@@ -1603,7 +1807,7 @@ line u:texture
   975.77 208.51
 endline
 
-line u:texture
+line u:texture 
   962.32 231.19
   952.78 225.34
   947.33 217.95
@@ -1646,3 +1850,4 @@ line rock-border -close on
 endline
 
 endscrap
+

@@ -25,6 +25,7 @@ env:
     m2_m16_m18_EE_ENG.pdf 
     m2_m16_m18_EE_ENG.svg 
     plateau.3d 
+    plateau.kml 
     primadona_ubend_mona_tip_plan_SLO.pdf 
     primadona_ubend_mona_tip_EE_ENG.pdf 
     primadona_ubend_mona_tip_EE_ENG.svg 
@@ -150,3 +151,4 @@ jobs:
             ./outputs/*.lox
             ./outputs/*.pdf
             ./outputs/*.svg
+            ./outputs/*.kml

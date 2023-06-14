@@ -2,9 +2,16 @@
 
 survey bin_bag_palace -title "Bin Bag Palace"
     # below Echo Falls 
+  input bin_bag_palace-1e.th2
+
+  map m-all-e -projection extended 
+    bin_bag_palace-1e
+  endmap 
 
   centerline
     date 2022.07.20 
+    explo-date 2022.07.20
+
     team "Rebecca Diss"
     team "Ana Teck" 
     units length meters

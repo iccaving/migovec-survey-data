@@ -183,7 +183,7 @@ layout custom_areas
 
 			if xpart (p intersectiontimes qq) < 0:
 			thclean qq;
-			thdraw qq withcolor(0.3,0.3,0.3);
+			thdraw qq;
 			fi;
 			endfor;
 			endfor;

@@ -30,6 +30,22 @@ layout plan
 
 	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2021<br>Natančmost meritev IV/B<br><br><br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<br><br>Belladonna<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2021<br>BCRA grade 4-5b<br><br><br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180<br><br>Belladonna"
 
+code tex-map
+
+		\def\gridspecs{
+		\par \bf Meridian convergence/konvergenca poldnevnikov: \ss \the\gridconv{}$^{\circ}$
+		\par \bf Coordinate system/ koordinatni sistem: \ss \the\outcsname{} (\the\outcscode{})}
+
+		\framethickness=0.5mm
+		\def\maplayout{
+		\legendbox{1}{102}{SW}{\size[30]\bf\the\cavename\ss{}}
+		\legendbox{1}{95}{NW}{\size[13]\bf\the\comment{}\ss{}}
+		\legendbox{45}{5}{NW}{\scalebar{}}
+		\legendbox{55}{7}{SW}{\northarrow{}}
+		\legendbox{45}{1}{NW}{\size[10]\gridspecs{}}
+		}
+	endcode
+
 	code metapost
 		set_label_level("3");
 	endcode
@@ -49,6 +65,13 @@ export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.s
 #----------------------------------------------------------------------------------|
 # export an ELEVATION view
 
+source 
+	map mlocale
+		m-all-e@primadona_ubend_mona_tip.system_migovec
+		coda@mona_tip.primadona_ubend_mona_tip.system_migovec 
+	endmap
+endsource 
+
 layout ee
 	copy base-e
 	copy colour-by-new
@@ -58,10 +81,26 @@ layout ee
 	code metapost
 		set_label_level("3"); % yeah, now it works!
 	endcode
+	symbol-show line survey 
+	symbol-assign line survey AUT
+	symbol-color line survey [70 0 0]
+	symbol-show point station
+
+	code tex-map
+
+
+		\framethickness=0.5mm
+		\def\maplayout{
+		\legendbox{1}{97}{SW}{\size[30]\bf\the\cavename\ss{}}
+		\legendbox{2}{35}{NW}{\size[13]\bf\the\comment{}\ss{}}
+		\legendbox{2}{5}{NW}{\scalebar{}}
+		}
+	endcode
 
 endlayout
 
-select m-all-e@primadona_ubend_mona_tip.system_migovec
+maps-offset on
+select mlocale
 
 language sl
 export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_EE_SLO.pdf -layout ee

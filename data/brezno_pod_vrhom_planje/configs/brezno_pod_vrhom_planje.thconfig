@@ -17,6 +17,8 @@ source "../brezno_pod_vrhom_planje.th"
 # export a model openable in Loch and one in Aven
 export model -o ../../../outputs/brezno_pod_vrhom_planje.lox
 export model -o ../../../outputs/brezno_pod_vrhom_planje.3d
+export model -o ../../../outputs/brezno_pod_vrhom_planje.vtk
+
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
@@ -38,20 +40,41 @@ endsource
 # select a relevant map (which contains commands for offsets of overlying bits)
 #select m-all-e@brezno_pod_vrhom_planje
 
-select localmap-p
+select m-all-p@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
+layout comment
+    code tex-map
+    \def\mycomment{
+            \size[8]
+            Slovenia\par
+            Length: \the\cavelength, Depth: \the\cavedepth, Altitude: \the\cavemaxz{} m \par
+            Coordinates (GPS): 46.264686\°N / 13.752099\°E\par
+            Survey : \the\topoteam{} 2018-2022\par
+            Drawing: T. Racine, R. Tyers, D. Wilson 2022\par
+            ICCC / JSPDT
+        } 
+    \def\cadastralnumber{\size[10] \si Kat. Nr.: 5878}
 
+    \def\maplayout{
+      \legendbox{5}{108}{NW}{\mycomment}
+      \legendbox{5}{110}{SW}{\size[18]\the\cavename}
+       %\legendbox{5}{99}{NW}{\cadastralnumber}
+      \legendbox{60}{90}{N}{\scalebar}
+      \legendbox{60}{92}{S}{\northarrow}
+      %\legendbox{5}{-4}{NW}{\loadpicture{brezno_pod_vrhom_planje_ee.pdf}}
+    }
+    endcode
+endlayout
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
 layout local
 	#copy detailed-dark-p
 	copy detailed-p
 	legend off
-	colour map-fg altitude
 
-	map-header 0 0 sw
+	map-header 0 0 se
 	scale 1 200
 	symbol-show point label
 	symbol-show point gradient
@@ -59,21 +82,9 @@ layout local
 	#map-comment "Vrh Planja<br>Cadastral Number: XXXX<br>Length: XX m, Depth: XX m<br>Entrance elevation: 1868 m<br>Coordinates (lat-long):  46.264686\°N / 13.752099\°E"
 	symbol-assign line pit MY
 	symbol-assign line floor-step MY
-	code tex-map
-		\def\maplayout{
-		\legendbox{0}{-5}{SW}{\rgbcolor[100 100 100]\size[26]\the\cavename}
-		#\legendbox{-10}{130}{NW}{\size[10]\the\comment}
-		\legendbox{15}{20}{N}{\rgbcolor[100 100 100]\scalebar}
-		\legendbox{15}{25}{S}{\rgbcolor[100 100 100]\northarrow}
-		}
-	endcode
+	copy comment
 endlayout
 
-#----------------------------------------------------------------------------------|
-# export the pdf map containing plan
-export map -o ../../../outputs/brezno_pod_vrhom_planje_plan.pdf -projection plan -layout local
-
-select localmap-e
 
 #----------------------------------------------------------------------------------|
 # define a local layout without legend or header for extended elevation
@@ -95,4 +106,10 @@ select m-all-e@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../../../outputs/brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e
+export map -o brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e
+
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+export map -o brezno_pod_vrhom_planje_plan.pdf -projection plan -layout local
+
+export database -o brezno_pod_vrhom_planje_plan.sql

@@ -2,11 +2,11 @@ source ../../data/plateau.th
 
 #export model -o ../../outputs/plateau.lox
 export model -o ../../outputs/plateau.3d
-
+export database -o ../../outputs/plateau.sql
 #select m-all-p@plateau -map-level 1
 
 #export map -o ../../outputs/plateau -fmt esri
-
-#export cave-list -o caves.html
-#export cave-list -o caves.kml
 #export map -o ../../outputs/plateau.kml
+
+#export cave-list -o ../../outputs/plateau.html
+export cave-list -o ../../outputs/plateau.kml
