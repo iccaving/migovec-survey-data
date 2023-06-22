@@ -19,7 +19,7 @@ header-includes:
    The 70 m cliff below Planja is ahead, and again the way up is past a large 20 m diameter shakehole (Bertijeva Jama), and up on the western (left) side of the cliff along a grassy ramp.
    Accessing the grassy slope below Planja, the cave is located about 100 m in the direction of Kuk, by one of the rare dwarf pine clumps.
 
-\CenteredFigure{../../outputs/Planja_routes.png}
+<!-- \CenteredFigure{../../outputs/Planja_routes.png} -->
 
 \CenteredFigure{../../outputs/brezno_pod_vrhom_planje_plan.pdf}
 

@@ -44,7 +44,7 @@ layout local-p
 		\def\maplayout{
 		\legendbox{100}{50}{N}{\scalebar}
 		\legendbox{100}{52}{S}{\northarrow}
-		\legendbox{100}{59}{S}{\loadpicture{../outputs/drugi_to_cafe_overview.pdf}}
+		\legendbox{100}{59}{S}{\loadpicture{"/../outputs/drugi_to_cafe_overview.pdf"}}
 		}
 	endcode
 
