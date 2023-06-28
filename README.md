@@ -1,6 +1,6 @@
 # Migovec Survey Data
 
-This contains the survey data of the Tolminski Migovec cave system, as well as minor caves in the same area, collected by the JSPDT and ICCC from 1974 to 2019.
+This contains the survey data of the Tolminski Migovec cave system, as well as minor caves in the same area, collected by the JSPDT and ICCC from 1974 to the present day.
 
 From 1974-2018 the the survey data was collected in the Survex format but we are now using Therion and are in the process of migrating the old data.
 
@@ -41,7 +41,7 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
 
 You can view any of the 3D models or PDF maps in your browser [here](https://iccaving.github.io/migovec-survey-data/).
 
-The surface atlas can be viewed [here](https://github.com/iccaving/migovec-survey-data/blob/master/data/2022_surface/surface_atlas.md)
+The surface atlas can be viewed [here](https://github.com/iccaving/migovec-survey-data/blob/master/data/GPS/surface_atlas.md)
 
 ## Downloads
 
@@ -150,6 +150,33 @@ Collectively known as 'the old system' or sometimes 'sysmig', these entrances we
   [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.pdf) |
   [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_SLO.svg) |
   [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/m2_m16_m18_EE_ENG.svg)
+
+**Vrh Planja**
+
+This is a new area which we started exploring in 2020. Located to the NW of Tolminski Kuk, three caves are currently known:
+
+1. Bertijeva Jama
+2. Planja jama
+3. Brezno pod Vrhom Planje
+
+You can download the following artifacts:
+
+- Plan view (WIP)  
+  [PLAN SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_SLO.pdf) |
+  [PLAN ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_ENG.pdf)
+
+**Plateau**
+
+All surveyed and GPS logged entrances in the area surrounding the system.
+
+Uploading the KML file into Google My Maps (or Google Earth) and then syncing to your phone allows for navigation of the plateau without a club GPS. KML files can easily be converted online into GPX files for use with Garmins etc.
+
+Many of the GPS coordinates are very inaccurate and are currently being renewed as part of the [surface atlas project](https://github.com/iccaving/migovec-survey-data/blob/master/data/GPS/surface_atlas.md).
+
+- 3D Model  
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.3d)
+- KML (Google Maps)  
+  [KML](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.kml)
 
 ## Prerequisites
 
@@ -261,24 +288,28 @@ To contribute to the descriptions, a simple markdown file is added to the markdo
 ```
 
 #### Custom tex-macros to include images
+
 Defined in `descriptions.sty` are some LaTeX macros to help with the inclusion of images. These can be called within the markdown description files directly, e.g.
 
-*A centered figure*
+_A centered figure_
+
 ```
 \CenteredFigure{<path/to/figure>}
 ```
 
-*A full width figure placed at the top of a page*
+_A full width figure placed at the top of a page_
+
 ```
 \TopFullWidthFigure{<path/to/figure>}
 ```
 
-*A coloured flag with a number* can be used to link a certain description paragraph with a place within the displayed map. In markdown, this is achieved with the following tex macro:
+_A coloured flag with a number_ can be used to link a certain description paragraph with a place within the displayed map. In markdown, this is achieved with the following tex macro:
+
 ```
 \numflag{<flag-number>}{<flag-colour>}
 ```
-The accepted colour codes are `c1,c2,..,c6`.
 
+The accepted colour codes are `c1,c2,..,c6`.
 
 ## How to export data
 
@@ -593,7 +624,6 @@ export -o {path/to/map} -projection extended -layout local-e
 ```
 
 Main symbology and symbol codes:
-
 
 ![symbology of migovec-survey-data](./outputs/symbology.svg)
 

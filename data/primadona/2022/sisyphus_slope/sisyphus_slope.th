@@ -1,12 +1,19 @@
 # 2022.07.22 created by TopoDroid v 5.1.40
 
-survey sithyphus_slope -title "Sithyphus' Slope"
-
+survey sisyphus_slope -title "Sisyphus' Slope"
+  input sisyphus_slope-e.th2 
+  
+  map m-all-e -projection extended 
+    sisyphus_slope-1e
+  endmap
+  
   centerline
     date 2022.07.20 
-    team "dkp"
-    team "ep"
+    explo-date 2022.07.20
+    team "David Kirkpatrick"
+    team "Ellie Pizey"
     team "la" 
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

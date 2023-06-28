@@ -14,10 +14,13 @@ survey plateau -title "Migovec Plateau"
 	# input the plateau DEM (uncomment)
 	input "./DEM/MIG_DEM.th"
 	# input the individual cave data files
-	input GPS_fixes.th
+    input "./GPS/gps.th"
 
 	# first the connected caves of System Migovec
 	input "./system_migovec.th"
+
+	# now the caves of Vrh planja
+	input "./vrh_planja.th"
 
 	# other caves
 	input "./gondolin/gondolin.th"
@@ -30,26 +33,20 @@ survey plateau -title "Migovec Plateau"
 	input "./janet_little_cave/janet_little_cave.th"
 	input "./rowan_cave/rowan_cave.th"
 	input "./mugo/mugo.th"
-	input "./bertipot/bertipot.th"
 	input "./coincidence/coincidence.th"
-	input "./planja_jama/planja_jama.th"
-	input "./brezno_pod_vrhom_planje/brezno_pod_vrhom_planje.th"
-
-	#equate S8@planja_jama 0@brezno_planja_ent.brezno_pod_vrhom_planje
 
 	map m-all-p -projection plan
-		m-all-p@planja_jama
-		m-all-p@brezno_pod_vrhom_planje
 		m-all-p@gondolin
 		m-all-p@planika
 		m-all-p@M19
 		m-all-p@M15
 		m-all-p@rowan_cave
-		m-all-p@bertipot
 		m-all-p@coincidence_ent.coincidence
 		m-all-p@M10
 		m-all-p@M17
 		m-all-p@mugo
+		break
+		m-all-p@vrh_planja
 		break
 		#system entrances
 		m-all-p@M16.m2m16m18.system_migovec
@@ -71,20 +68,21 @@ survey plateau -title "Migovec Plateau"
 		cs epsg:3794
 
 		# PLANJA JAMA
-		fix 0@planja_jama 403819 125777 1897
+		fix 0@planja_jama.vrh_planja 403819 125777 1897
 		#fix 0 404188 125289 1897
 
 		# BREZNO POD VRHOM PLANJE
-		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 403804 125750 1870
+		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje.vrh_planja 403804 125750 1870
 		#fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 404177 125263 1870  # GK fix
 
 		# COINCIDENCE
 	    fix 0@coincidence_ent.coincidence 404773 123067 1310
-		# GONDOLIN
+		
+        # GONDOLIN
 		fix bcairn@gondolin 404343 124264 1863
 
 		# BERTIJEVA JAMA
-		fix 10@bertipot 403706 125587 1749
+		fix 10@bertipot.vrh_planja 403706 125587 1749
 
 		# JANETS LITTLE CAVE
 		fix 0@janet_little_cave 404465 124680 1885
@@ -112,7 +110,6 @@ survey plateau -title "Migovec Plateau"
 
 		# ROWAN CAVE
 		fix 0@rowan_cave 404460 124948 1819
-
 
 	endcentreline
 

@@ -1,11 +1,29 @@
 # 2022.08.20 created by TopoDroid v 5.1.40
 
 survey blue_lagoon -title "Blue Lagoon"
-    # below Bin Bag Palace 
+  # below Bin Bag Palace
+
+  input "blue_lagoon-p.th2"
+  input "blue_lagoon-e.th2"
+
+  map m-all-p -projection plan
+    blue_lagoon-1p
+  endmap
+
+  map m-all-e -projection extended
+    blue_lagoon-1e
+  endmap
 
   centerline
-    date 2022.07.31 
-    # team AT, BR, LA 
+    date 2022.07.31
+    explo-date 2022.07.31
+    team "Ana Teck"
+    team "Ben Richards"
+    team "L A"
+
+    explo-team "Ana Teck"
+    explo-team "Ben Richards"
+    explo-team "L A"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -135,15 +153,5 @@ survey blue_lagoon -title "Blue Lagoon"
     extend right
     11 12 0.88 16.7 -42.0
   endcenterline
-
-  # input "Blue_Lagoon-1p.th2"
-  # input "Blue_Lagoon-1s.th2"
-
-  # map m1p -projection plan
-  #   Blue_Lagoon-1p
-  # endmap
-  # map m1s -projection extended
-  #   Blue_Lagoon-1s
-  # endmap
 
 endsurvey

@@ -33,6 +33,7 @@ layout plan
 	symbol-hide point pebbles
 	symbol-hide line border
 	symbol-hide line rock-border
+	symbol-hide line u:texture
 
 	symbol-hide point narrow-end
 	symbol-hide point low-end
@@ -40,33 +41,33 @@ layout plan
 	symbol-hide point breakdown-choke
 	symbol-hide point dig
 	symbol-hide line floor-step
-	colour map-bg transparent
-	symbol-hide point label
+	colour map-fg map:dark
+	#symbol-hide point label
 	symbol-hide point sand
 	symbol-hide point clay
 	symbol-hide point camp
 	symbol-hide point archeo-material
 	symbol-hide point u:flag
 	#colour map-bg [0 0 0]
-	symbol-colour line wall [0 0 0]
-	symbol-colour point label [100 100 100]
+	#symbol-colour line wall [0 0 0]
+	#symbol-colour point label [100 100 100]
 	scale 1 5000
 	map-comment "Tolminski Migovec cave system<br>Tolmin, Julian Alps, Slovenia<br>Explored by JSPDT/ICCC 1974–2021"
 	code metapost
-		set_label_level("0");
+		set_label_level("1");
 	endcode
 
 	code tex-map
 		\framethickness=0.mm
 		\def\maplayout{
 		\legendbox{2}{5}{NW}{\rgbcolor[100 100 100]\size[13] \ss \the\comment{}}
-		%\legendbox{12}{-2}{N}{\scalebar}
-		%\legendbox{-3}{5}{N}{\northarrow}
+		\legendbox{12}{-2}{N}{\scalebar}
+		\legendbox{-3}{5}{N}{\northarrow}
 		}
 	endcode
 
 
-	colour map-fg map:darke
+	#colour map-fg map:darke
 
 endlayout
 
@@ -74,6 +75,7 @@ select m-all-p@system_migovec
 
 maps-offset off
 
+export map -o ../outputs/system_overview.pdf -projection plan -layout plan
 
 lookup map:dark
   m-all-p@primadona.primadona_ubend_mona_tip.system_migovec [100 35 50] "Primadona"
@@ -93,7 +95,7 @@ lookup map:darke
   m-all-e@m2m16m18.system_migovec [33 100 36] "M2-M16-M18"
 endlookup
 
-export map -o ../../outputs/historical/system_overview_dark_EE.pdf -projection extended -layout plan
+#export map -o ../../outputs/historical/system_overview_dark_EE.pdf -projection extended -layout plan
 
 
 #export map -o ../../outputs/historical/system_overview_dark.pdf -projection plan -layout plan

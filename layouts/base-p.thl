@@ -41,7 +41,7 @@ layout base-p
 		\legendbox{1}{79}{NW}{\size[13]\bf\the\comment{}\ss{}}
 		\legendbox{15}{5}{NW}{\scalebar{}}
 		\legendbox{25}{7}{SW}{\northarrow{}}
-		%\legendbox{15}{2}{SW}{\size[10]\gridspecs{}}
+		\legendbox{15}{2}{SW}{\size[10]\gridspecs{}}
 		}
 	endcode
 
@@ -142,7 +142,7 @@ layout base-p
 	symbol-hide point stalactites
 	symbol-hide point clay
 	symbol-hide point sand
-	symbol-hide line u:texture
+	#symbol-hide line u:texture
 	symbol-hide line survey
 	symbol-hide point station
 

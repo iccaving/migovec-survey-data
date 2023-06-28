@@ -2,12 +2,26 @@
 
 survey antares -title "Antares"
     # continuation of Cantina Canyon 2.0 
+  input antares-p.th2
+  input antares-e.th2
+
+  map m-all-p -projection plan
+    antares-1p
+  endmap
+
+  map m-all-e -projection extended
+    antares-1s
+  endmap
 
   centerline
     date 2022.07.25 
     team "Ana Teck"
     team "Lucie Studená"
     team "Oxmi" 
+    explo-date 2022.07.25 
+    explo-team "Ana Teck"
+    explo-team "Lucie Studená"
+    explo-team "Oxmi" 
     units length meters
     units compass clino degrees
     data normal from to length compass clino

@@ -2,9 +2,21 @@
 
 survey the_deep_awakens -title "The deep awakens"
     # Pitch series continues from The Expo Strikes Back. 
+    #note: it seems the survey legs have been mirrored; left turns are right turns and vice versa
+  input the_deep_awakens-p.th2
+  input the_deep_awakens-e.th2
+
+  map m-all-p -projection plan
+    the_deep_awakens-1p
+  endmap 
+
+  map m-all-e -projection extended
+    the_deep_awakens-1e
+  endmap 
 
   centerline
     date 2022.07.18 
+    explo-date 2022.07.18
     team "Matti Mitropoulos"
     team "James Wilson"
     team "Rory Rose" 

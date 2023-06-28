@@ -3,19 +3,19 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap electric_dreams-1p -projection plan -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
-	
+
 	line pit
 		592.0178 477.6926
 		591.7301 477.0029 594.4629 472.9256 594.9975 472.6304
 		596.3618 471.5715 596.068 472.0149 597.432 471.3251
 		598.8277 470.4849 601.8346 470.6654 603.4114 470.3003
 	endline
-	
+
 	line wall -subtype invisible
 		466.2311 464.9712
 		460.9513 457.7906
 	endline
-	
+
 	line wall:invisible
 		652.2646 521.1185
 		652.2646 521.1185 641.2898 530.6028 632.7631 534.3199
@@ -24,16 +24,16 @@ scrap electric_dreams-1p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		608.611 531.907 605.1045 528.4725 602.435 526.3649
 		599.9607 524.4113 593.75 514.0 593.75 514.0
 	endline
-	
+
 	line pit -outline out
 		654.5 506.5
 		654.5 516.0
 	endline
-	
+
 	area water
 	l61-514-414
 	endarea
-	
+
 	line border -close on -id l61-514-414
 		629.2767 519.8001
 		629.9182 516.9483 623.1142 510.2722 622.1079 505.583
@@ -42,14 +42,14 @@ scrap electric_dreams-1p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		647.6079 519.083 643.1483 521.6114 641.696 522.1387
 		641.696 522.1387 629.5214 522.5056 629.2767 519.8001
 	endline
-	
+
 	line rock-border -close on
 		625.75 500.75
 		620.75 501.5
 		621.25 498.5
 		624.75 497.25
 	endline
-	
+
 	line rock-border -close on
 		603.75 481.5
 		599.75 484.75
@@ -57,70 +57,70 @@ scrap electric_dreams-1p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		594.25 482.5 595.25 479.75 596.5 479.75
 		597.75 479.75 603.75 481.5 603.75 481.5
 	endline
-	
+
 	line rock-border -close on
 		605.75 488.5
 		601.0 495.25
 		606.0 496.75
 		610.75 491.5
 	endline
-	
+
 	line rock-border -close on
 		623.0 483.0
 		616.0 486.5
 		611.25 481.25
 		616.5 479.75
 	endline
-	
+
 	line rock-border -close on
 		638.25 488.5
 		633.0 496.0
 		629.25 490.0
 		632.0 486.0
 	endline
-	
+
 	line rock-border -close on
 		647.8648 497.0818
 		637.1148 497.5818
 		637.6148 493.5818
 		645.6148 493.8318
 	endline
-	
+
 	line rock-border -close on
 		624.0398 520.933
 		618.2898 521.183
 		618.2898 518.433
 		621.7898 514.683
 	endline
-	
+
 	line rock-border -close on
 		627.9556 474.9298
 		617.7056 475.9298
 		618.9556 469.9298
 		625.4556 469.4298
 	endline
-	
+
 	line rock-border -close on
 		613.9671 507.0012
 		607.2171 507.0012
 		607.4671 503.7512
 		613.4671 503.7512
 	endline
-	
+
 	line rock-border -close on
 		618.3579 527.8796
 		612.1079 528.6296
 		611.1079 523.1296
 		614.8579 521.8796
 	endline
-	
+
 	line rock-border -close on
 		635.7352 483.9309
 		631.2352 482.4309
 		632.7352 478.6809
 		634.9852 479.9309
 	endline
-	
+
 	line pit -close on -outline in
 		596.5 499.5
 		592.638 500.2012 589.6795 498.6365 588.5 495.0
@@ -128,7 +128,7 @@ scrap electric_dreams-1p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		598.4655 481.059 604.8654 484.0294 605.75 488.5
 		606.6346 492.9706 600.362 498.7988 596.5 499.5
 	endline
-	
+
 	point 512.25 477.75 passage-height -align t -value 3
 	point 479.5 459.0 passage-height -align t -value 4
 	point 560.5 496.75 passage-height -align t -value 3
@@ -143,12 +143,12 @@ scrap electric_dreams-1p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		654.2454 502.5587 653.1397 504.252 653.7065 505.7246
 		653.8394 506.0697 654.5 506.5 654.5 506.5
 	endline
-	
+
 	line wall -subtype invisible
 		589.3095 472.19
 		591.1786 467.6298 594.4787 468.1921 602.1647 467.9789
 	endline
-	
+
 	line wall
 		460.9513 457.7906
 		464.6956 457.0376 465.9736 456.5521 468.5 456.0
@@ -164,7 +164,7 @@ scrap electric_dreams-1p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		583.4418 491.2636 590.3397 484.6568 592.2631 481.044
 		593.1639 479.3522 589.9621 473.6295 589.3095 472.19
 	endline
-	
+
 	line wall
 		593.75 514.0
 		592.3681 511.374 582.1338 506.3669 579.5 505.0
@@ -183,14 +183,14 @@ scrap electric_dreams-1p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		468.6498 465.0358 471.3409 463.9767 470.1593 463.0746
 		469.2294 462.3647 467.1747 464.409 466.2311 464.9712
 	endline
-	
+
 	line wall
 		654.5 516.0
 		654.5 516.0 653.0554 516.5191 652.523 517.0396
 		651.3437 517.5597 650.2522 518.0771 650.5804 519.2315
 		651.0669 520.9426 651.1492 519.1667 652.2646 521.1184
 	endline
-	
+
 	point 656.114 509.271 station -name 6
 	point 596.186 509.271 station -name 5
 	point 515.224 484.533 station -name 4
@@ -201,9 +201,9 @@ endscrap
 
 
 scrap electric_dreams-3p -projection plan -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
-	
-	point 605.7601 429.8018 label -align br -attr level 3 -text "Electric Dreams"
-	
+
+	point 605.7601 429.8018 label -align br -attr level 3 -text "Electric<br>Dreams" -scale l
+
 	point 681.646 605.91 station -name 11
 	point 689.319 518.002 station -name 10
 	point 703.673 506.757 station -name 9
@@ -227,7 +227,7 @@ scrap electric_dreams-3p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		663.25 516.0 659.25 514.25 658.25 514.5
 		657.25 514.75 654.5 516.0 654.5 516.0
 	endline
-	
+
 	line wall
 		654.5 506.5
 		654.5 506.5 655.75 506.0 658.0 505.75
@@ -248,18 +248,18 @@ scrap electric_dreams-3p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		691.25 574.75 691.25 581.5 690.5 588.25
 		689.75 595.0 686.0 609.5 686.0 609.5
 	endline
-	
+
 endscrap
 
 
 scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.0768684193528 0.0 0.0 154.81 141.82]
-	
+
 	line floor-step -outline out
 		830.75 789.25
 		830.75 789.25 833.25 783.5 834.0 782.0
 		834.75 780.5 841.25 781.0 844.0 781.5
 	endline
-	
+
 	line wall
 		830.75 789.25
 		830.75 789.25 827.75 785.5 825.0 782.75
@@ -267,7 +267,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		812.0 771.0 808.0 768.5 808.0 766.5
 		808.0 764.5 813.5 758.5 813.5 758.5
 	endline
-	
+
 	line wall
 		836.0 741.25
 		836.0 741.25 838.5 748.0 837.25 750.75
@@ -278,7 +278,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		830.62 776.97 835.0 775.75 835.25 777.75
 		835.5 779.75 844.0 781.5 844.0 781.5
 	endline
-	
+
 	line wall
 		809.0 707.5
 		809.0 707.5 815.0 711.0 817.75 713.25
@@ -286,7 +286,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		827.75 723.25 832.25 728.0 833.5 729.25
 		834.75 730.5 835.25 739.75 836.0 741.25
 	endline
-	
+
 	line wall
 		813.5 758.5
 		813.5 758.5 822.25 744.75 820.75 743.0
@@ -296,7 +296,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		803.75 730.25 800.75 725.5 798.75 723.75
 		796.75 722.0 794.5 723.0 794.5 723.0
 	endline
-	
+
 	line rock-border -close on
 		776.75 694.25
 		770.25 692.75
@@ -304,7 +304,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		776.5 689.0
 		776.75 694.25
 	endline
-	
+
 	line rock-border -close on
 		785.75 707.75
 		784.25 707.75 775.75 707.75 775.75 707.75
@@ -312,7 +312,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		783.25 697.25
 		783.25 697.25 787.25 707.75 785.75 707.75
 	endline
-	
+
 	line rock-border -close on
 		805.0 721.75
 		791.75 721.75
@@ -320,7 +320,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		805.25 716.5
 		805.0 721.75
 	endline
-	
+
 	line rock-border -close on
 		821.0 727.75
 		814.5 727.75
@@ -328,7 +328,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		819.0 723.25
 		821.0 727.75
 	endline
-	
+
 	line rock-border -close on
 		815.0 721.0
 		809.25 720.5
@@ -336,7 +336,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		808.5 715.0 812.25 714.75 813.25 714.25
 		814.25 713.75 815.0 721.0 815.0 721.0
 	endline
-	
+
 	line rock-border -close on
 		816.5 734.5
 		816.5 734.5 809.75 733.75 809.5 733.0
@@ -344,7 +344,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		807.0 724.25 812.25 723.0 812.5 724.0
 		812.75 725.0 816.5 734.5 816.5 734.5
 	endline
-	
+
 	line pit -close on -outline in
 		831.5 736.0
 		831.5 736.0 823.5 736.25 823.0 734.25
@@ -353,7 +353,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		822.75 720.75 832.25 728.25 832.5 730.0
 		832.75 731.75 831.5 736.0 831.5 736.0
 	endline
-	
+
 	line pit -close on -outline in
 		788.75 696.25
 		788.75 696.25 803.0 698.5 803.0 701.0
@@ -363,7 +363,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		793.25 706.0 790.5 701.0 790.5 701.0
 		788.75 696.25
 	endline
-	
+
 	line rock-border -close on
 		829.25 765.0
 		827.75 765.5 822.75 766.5 822.75 766.5
@@ -371,7 +371,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		826.5 758.5
 		826.5 758.5 830.75 764.5 829.25 765.0
 	endline
-	
+
 	line rock-border -close on
 		819.75 772.75
 		828.5 768.0
@@ -379,7 +379,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		825.0 766.75 820.0 766.25 820.0 768.5
 		820.0 770.75 819.75 772.75 819.75 772.75
 	endline
-	
+
 	line rock-border -close on
 		827.25 757.0
 		822.5 756.5
@@ -387,60 +387,60 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		831.0 739.25
 		827.25 757.0
 	endline
-	
+
 	point 761.5 701.5 clay
 	point 724.25 711.0 clay
 	point 683.5 730.0 clay
 	line contour -close off
 		654.25 676.5
 	endline
-	
+
 	point 676.25 617.75 water
 	line contour
 		681.5 624.5
 		681.5 624.5 677.25 628.5 671.0 625.0
 	endline
-	
+
 	line contour
 		666.25 656.0
 		666.25 656.0 662.0 656.25 661.5 652.25
 	endline
-	
+
 	line contour
 		659.75 670.0
 		659.75 670.0 656.0 672.0 653.5 666.5
 	endline
-	
+
 	line contour
 		654.5 699.75
 		654.5 699.75 645.75 705.75 644.5 697.75
 	endline
-	
+
 	line contour
 		652.75 725.5
 		652.75 725.5 644.25 732.25 638.5 730.0
 	endline
-	
+
 	line contour
 		657.0 727.0
 		657.0 727.0 660.75 740.5 655.5 744.0
 	endline
-	
+
 	line contour
 		665.0 728.5
 		665.0 728.5 669.0 741.0 663.5 744.5
 	endline
-	
+
 	line floor-step
 		652.0 719.5
 		652.0 719.5 644.0 724.25 641.5 717.25
 	endline
-	
+
 	line floor-step
 		672.0 729.0
 		672.0 729.0 676.5 741.75 670.75 745.5
 	endline
-	
+
 	line wall
 		686.0 609.5
 		686.0 609.5 682.5 621.0 681.5 624.5
@@ -461,7 +461,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		790.0 695.5 803.5 699.0 803.5 699.0
 		809.0 707.5
 	endline
-	
+
 	line wall
 		794.5 723.0
 		794.5 723.0 784.0 727.5 780.5 722.0
@@ -486,7 +486,7 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 		667.0 637.0 670.5 627.0 671.0 625.0
 		671.5 623.0 671.5 610.0 671.5 610.0
 	endline
-	
+
 	point 783.378 713.911 station -name 20
 	point 818.634 719.151 station -name 25
 	point 818.634 719.151 station -name 24
@@ -503,4 +503,3 @@ scrap electric_dreams-2p -projection plan -scale [0.0 0.0 1024.0 938.07686841935
 	point 673.312 636.8 station -name 12
 	point 681.646 605.91 station -name 11
 endscrap
-

@@ -36,7 +36,7 @@ layout custom_points
 	    pair z;
 	    z:=(0,.7u);
 	    thclean (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle;
-	    thfill (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle withcolor(0.7,0,0);
+	    thfill (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle;
 		enddef;
 
 	  	def p_station_temporary_MY (expr pos)=
@@ -45,7 +45,7 @@ layout custom_points
 	    	pair z;
 	    	z:=(0,.7u);
 	    	thclean (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle;
-	    	thdraw (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle withcolor(0.7,0,0);
+	    	thdraw (-.05u,-.05u)..(-.05u,.05u)..(.05u,.05u)..(.05u,-.05u)..cycle;
 		enddef;
 
 	    def p_airdraught_MY (expr P,R,S,A)=

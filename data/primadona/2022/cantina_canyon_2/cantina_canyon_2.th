@@ -3,8 +3,20 @@
 survey cantina_canyon_2 -title "cantina canyon 2.0"
     # continuation of Cantina Canyon 
 
+   input "cantina_canyon_2-p.th2"
+   input "cantina_canyon_2-e.th2"
+
+    map m-all-p -projection plan
+     cantina_canyon_2-1p
+    endmap
+
+    map m-all-e -projection extended
+     cantina_canyon_2-1e
+    endmap
+   
   centerline
     date 2022.07.23 
+    explo-date 2022.07.23
     team "Ana Teck"
     team "Matti Mitropoulos"
     team "Rory Rose"
@@ -294,14 +306,5 @@ survey cantina_canyon_2 -title "cantina canyon 2.0"
     31 . 0.35 352.9 -11.3
   endcenterline
 
-  # input "Cantina_Canyon_2.0-Cantina_Canyon_2p.th2"
-  # input "Cantina_Canyon_2.0-Cantina_Canyon_2s.th2"
-
-  # map mCantina_Canyon_2p -projection plan
-  #   Cantina_Canyon_2.0-Cantina_Canyon_2p
-  # endmap
-  # map mCantina_Canyon_2s -projection extended
-  #   Cantina_Canyon_2.0-Cantina_Canyon_2s
-  # endmap
 
 endsurvey

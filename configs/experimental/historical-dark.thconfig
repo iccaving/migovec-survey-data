@@ -2,6 +2,12 @@ source "../../data/system_migovec.th"
 
 input "../../layouts/base-dark-e.thl"
 
+
+layout local 
+  copy dark-e
+  symbol-hide point label
+  scale 1 5000
+endlayout 
 source
   map M2-old-e -projection extended -title "M2 Kavkna Jama - 1974-1979 (JSPDT)"
     m-all-e@izent1.M2.m2m16m18.system_migovec
@@ -12,14 +18,6 @@ source
     m-all-e@jspdt2.M2.m2m16m18.system_migovec
   endmap
 endsource
-
-select M2-old-e
-export map -projection extended -layout dark-e -o ../../outputs/historical/M2_old_EE.pdf
-
-
-source "../../data/system_migovec.th"
-
-input "../../layouts/base-dark-e.thl"
 
 source
   map M16-old-e -projection extended -title "M16 - 1983-85 (JSPDT)"
@@ -37,33 +35,8 @@ source
     m-all-e@hydrant2.M16.m2m16m18.system_migovec
   endmap
 endsource
-
-source "../../data/system_migovec.th"
-
-input "../../layouts/base-dark-e.thl"
-
 source
-  map Vrtnarija-2000-e -projection extended -title "Vrtnarija 2000 (ICCC/JSPDT)"
-    m-all-e@bclent2.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@urinal.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@urinal2.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@laurel.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@hardy.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@pico.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@pico2.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@space_odyssey.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@tesselator.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@waffer.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@concorde.vrtnarija.vrtnarija_vilinska.system_migovec
-    m-all-e@alchemy.vrtnarija.vrtnarija_vilinska.system_migovec
-  endmap
-endsource
 
-source "../../data/system_migovec.th"
-
-input "../../layouts/base-dark-e.thl"
-
-source
   map Vrtnarija-2000-e -projection extended -title "Vrtnarija 2000 (ICCC/JSPDT)"
     m-all-e@bclent2.vrtnarija.vrtnarija_vilinska.system_migovec
     m-all-e@urinal.vrtnarija.vrtnarija_vilinska.system_migovec
@@ -80,7 +53,6 @@ source
   endmap
 
   map Vrtnarija-2001-e -projection extended -title "Vrtnarija 2001 (ICCC/JSPDT)"
-    Vrtnarija-2000-e
     m-all-e@banzai.vrtnarija.vrtnarija_vilinska.system_migovec
     m-all-e@chariot.vrtnarija.vrtnarija_vilinska.system_migovec
     m-all-e@fallsrd.vrtnarija.vrtnarija_vilinska.system_migovec
@@ -93,7 +65,6 @@ source
     m-all-e@alchemy.vrtnarija.vrtnarija_vilinska.system_migovec
     m-all-e@skynet.vrtnarija.vrtnarija_vilinska.system_migovec
     m-all-e@zimmer.vrtnarija.vrtnarija_vilinska.system_migovec
-
   endmap
 
   map M18_1995 -projection extended -title "M18 (Torn T-shirt) - 1994 to 1995 (ICCC)"
@@ -154,8 +125,8 @@ source
 endsource
 
 
-#select M16-old-e
-#export map -projection extended -layout dark-e -o ../../outputs/historical/M16_old_EE.pdf
+select m-all-e@primadonasystem_migovec
+export map -projection extended -layout local -o ../../outputs/historical/SystemMigovec_EE.pdf
 
 #select Vrtnarija-2000-e
 #export map -projection extended -layout dark-e -o ../../outputs/historical/Vrtnarija-2000_EE.pdf

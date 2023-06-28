@@ -1,49 +1,192 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap DELETE-ME-survey-legs-bingo-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-    line survey
-        -26.93 -66.02
-        -3.23 -23.27
-    endline
-    line survey
-        -3.23 -23.27
-        -3.23 -23.27
-    endline
-    line survey
-        -3.23 -23.27
-        5.28 6.34
-    endline
-    line survey
-        5.28 6.34
-        5.28 6.34
-    endline
-    line survey
-        5.28 6.34
-        23.46 16.81
-    endline
-    line survey
-        23.46 16.81
-        26.93 27.60
-    endline
-    line survey
-        26.93 27.60
-        12.99 66.02
-    endline
-    point -26.93 -66.02 station-name -align tr -scale xs -text 1
-    point -3.23 -23.27 station-name -align tr -scale xs -text 3
-    point 5.28 6.34 station-name -align tr -scale xs -text 5
-    point 23.46 16.81 station-name -align tr -scale xs -text 6
-    point 26.93 27.60 station-name -align tr -scale xs -text 7
-    point 12.99 66.02 station-name -align tr -scale xs -text 8
+
+line survey 
+  223.07 433.98
+  246.77 476.73
+endline
+
+line survey 
+  246.77 476.73
+  246.77 476.73
+endline
+
+line survey 
+  246.77 476.73
+  255.28 506.34
+endline
+
+line survey 
+  255.28 506.34
+  255.28 506.34
+endline
+
+line survey 
+  255.28 506.34
+  273.46 516.81
+endline
+
 endscrap
 
+
 scrap bingo-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-    point -26.93 -66.02 station -name 1
-    point -3.23 -23.27 station -name 3
-    point 5.28 6.34 station -name 5
-    point 23.46 16.81 station -name 6
-    point 26.93 27.60 station -name 7
-    point 12.99 66.02 station -name 8
+
+point 255.5334 464.5255 altitude -align bl
+line u:texture 
+  237.3597 483.6266
+  237.3597 492.5036
+endline
+
+line u:texture 
+  254.8408 474.4763
+  260.8499 480.2123
+endline
+
+line u:texture 
+  251.4265 486.6311
+  248.9682 479.2563
+endline
+
+line u:texture 
+  260.4401 469.0135
+  260.4401 469.0135 256.7527 477.0712 251.563 479.666
+  246.3734 482.2608 238.7254 485.2654 232.5797 484.446
+endline
+
+line survey -clip off
+  273.46 516.81
+  276.93 527.6
+endline
+
+line survey -clip off
+  276.93 527.6
+  262.99 566.02
+endline
+
+point 227.07 435.98 station-name -align tr -scale xs -text 1
+point 242.77 476.73 station-name -align tr -scale xs -text 3
+point 249.28 506.34 station-name -align tr -scale xs -text 5
+point 273.46 512.81 station-name -align tr -scale xs -text 6
+point 278.93 527.6 station-name -align tr -scale xs -text 7
+point 269.684 476.396 label -align r -scale s -text "<bf>p53"
+line u:texture 
+  258.5672 472.9206
+  263.9222 476.4178
+endline
+
+line u:texture 
+  235.5082 489.3133
+  235.5082 489.7787 241.956 489.2391 243.1581 488.439
+endline
+
+line u:texture 
+  248.4038 485.1605
+  250.043 493.794
+endline
+
+line u:texture 
+  256.7192 477.1312
+  256.7192 477.1312 254.6115 481.5015 252.947 483.2086
+  251.0804 485.123 246.2408 487.6095 246.2408 487.6095
+endline
+
+line u:texture 
+  243.3069 499.7644
+  241.0017 486.5617
+endline
+
+line u:texture 
+  246.66 494.1061
+  246.66 494.1061 243.726 496.2018 238.0677 495.1539
+endline
+
+line u:texture 
+  262.1679 481.5321
+  262.1679 481.5321 260.9105 485.933 255.2522 489.0765
+endline
+
+line u:texture 
+  260.4914 491.8009
+  254.6235 479.0173
+endline
+
+line u:texture 
+  264.8923 483.6277
+  264.8923 483.6277 249.1748 501.8601 235.9721 497.6687
+endline
+
+line u:texture 
+  263.4253 470.8442
+  263.4253 470.8442 251.48 493.8965 234.9242 490.9626
+endline
+
+line border -close on -id bingo-1p_u_smallblocks_1 -visibility off
+  244.1452 433.9604
+  249.8035 437.7326
+  254.2044 449.4684
+  259.3083 462.5589
+  250.385 472.5835
+  242.2574 478.6321
+  234.8591 479.5828
+  228.89 479.5164
+  227.3798 469.1676
+  222.1407 451.1449
+  220.2546 438.5709
+  224.2363 434.7987
+  229.2659 432.9126
+  235.8138 431.9739
+  244.1452 433.9604
+  244.1452 433.9604
+endline
+
+area u:smallblocks 
+  bingo-1p_u_smallblocks_1
+endarea
+
+line pit 
+  261.9336 461.6226
+  261.9336 461.6226 259.1268 467.3746 253.451 472.6846
+  247.9399 477.8405 239.7238 482.5796 228.7459 481.2314
+endline
+
+line pit 
+  267.0159 492.9435
+  267.0159 492.9435 250.5961 506.6266 236.1311 503.1081
+endline
+
+line wall 
+  225.1084 431.8329
+  225.1084 431.8329 228.5223 431.3475 230.2174 431.0356
+  232.3478 430.6436 234.4081 429.6984 237.0342 430.1569
+  239.6603 430.6153 244.8215 433.1868 244.8215 433.1868
+  244.8215 433.1868 249.8922 437.1483 250.0507 438.2575
+  250.2091 439.3668 262.5691 461.5512 262.7275 463.1358
+  262.886 464.7204 264.1536 476.7634 264.1536 478.8234
+  264.1536 480.8834 267.1644 491.6587 267.3229 492.2926
+  267.4813 492.9264 274.6121 496.7294 275.2459 496.8879
+  275.5621 496.967 278.855 498.6869 280.1596 500.8015
+  281.4703 502.9259 280.792 505.4448 280.792 505.4448
+endline
+
+line wall 
+  254.9043 521.6294
+  254.9043 521.6294 242.0747 515.5248 240.4457 513.2441
+  238.8166 510.9635 236.74 506.0786 235.9477 502.7509
+  235.1554 499.4233 235.9477 491.8172 234.5215 490.2326
+  233.0954 488.648 228.3416 483.8942 228.3416 479.7742
+  228.3416 475.6542 221.2109 452.519 221.2109 452.519
+  221.2109 452.519 220.577 443.3283 219.9432 442.6944
+  219.3093 442.0606 219.4678 437.4652 219.4678 437.4652
+endline
+
+point 223.07 433.98 station -name 1
+point 246.77 476.73 station -name 3
+point 255.28 506.34 station -name 5
+point 273.46 516.81 station -name 6
+point 276.93 527.6 station -name 7
+point 262.99 566.02 station -name 8
 endscrap
+

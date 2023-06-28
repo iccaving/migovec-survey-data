@@ -6,6 +6,7 @@ map m-all-e -projection extended
 	m-karstaway_branch-e [-500 0 m ] none
 	m-smer0_branch-e [-500 0 m] none
 	m-fenestrator_branch-e [-500 0 m] none
+	m-death_star_branch-e [-500 0 m] none
 	m-below_manger-e
 	m-below_klic_globin-e
 endmap
@@ -42,9 +43,11 @@ endmap
 map  m-ttt_branch-e -projection extended
 	m-all-e@prima2
 	m-prima1-2e@prima1
+	m-all-e@mudaholic # on mudaholic.
+
 	m-all-e@apple_crumble
 	m-all-e@ttt
-	m-all-e@pov ##extremely distorted? why?
+	m-all-e@pov  
 	m-all-e@mandare_resurvey
 	m-all-e@batmere
 
@@ -132,18 +135,30 @@ map  m-fenestrator_branch-e -projection extended
 	m-all-e@plumbers_paradise
 	m-all-e@hallelujah
 	m-all-e@alabaster
+	m-all-e@echo_falls
+	m-all-e@bin_bag_palace
+	m-all-e@blue_lagoon
 	m-all-e@beam_me_up
 	m-all-e@purgatory
 	m-all-e@sweet_baby_jesus
 	m-all-e@holy_moley
 	m-all-e@bath
-	m-all-e@death_star
 	m-all-e@canticle_for_migovec
 	m-all-e@octarine #[-30 0 m] below
 	m-all-e@octarine_core #[-30 0 m] below
 	m-all-e@testify
 	m-all-e@angel_delight
 	m-all-e@sump_404_lead_not_found
+endmap
+
+map m-death_star_branch-e -projection extended 
+	m-all-e@death_star
+	m-all-e@the_expo_strikes_back
+	m-all-e@cantina_canyon
+	m-all-e@cantina_canyon_2
+	m-all-e@antares
+	m-all-e@the_deep_awakens
+	m-all-e@sisyphus_slope
 endmap
 
 map  m-electric_branch-e -projection extended

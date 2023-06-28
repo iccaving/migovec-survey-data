@@ -1,34 +1,18 @@
-source ../../data/vrh_planja.th
+source ../../data/primadona/primadona.th
+#source ../../data/brezno_pod_vrhom_planje/brezno_pod_vrhom_planje.th
 export model -o ../../outputs/vrh_planja.3d
 
 
-select m-all-p@vrh_planja
 
-source
-	map localmap-p 
-		m-all-p@vrh_planja
-		#okna@brezno_pod_vrhom_planje.vrh_planja
-		#prazen_list@brezno_pod_vrhom_planje.vrh_planja
-	endmap
 
-	map localmap-e 
-		m-all-e@vrh_planja
-	endmap
-
-   # for this one, fix the entrances
-	centreline
-		#cs epsg:3794
-    	fix 0@planja_jama.vrh_planja 403818 125777 1889.56 
-    	fix 0@brezno_planja_ent.brezno_pod_vrhom_planje.vrh_planja 403804 125751 1868.13
-	endcentreline
-
-endsource
+#
 
 #cs epsg:3794
 
-input ../../layouts/detailed-p.thl
+input ../../layouts/experimental/book-dark-p.thl
 #select localmap-p
-export map -projection plan -o ../../outputs/vrh_planja_p.pdf -layout detailed-p
+export map -projection plan -o ../../outputs/vrh_planja_p.pdf -layout detailed-dark-p
+
 
 #export map -fmt esri -o ../../outputs/vrh_planja
 
