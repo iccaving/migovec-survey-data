@@ -2,11 +2,14 @@
 
 survey sisyphus_slope -title "Sisyphus' Slope"
   input sisyphus_slope-e.th2 
-  
+  input sisyphus_slope-p.th2
   map m-all-e -projection extended 
     sisyphus_slope-1e
   endmap
-  
+  map m-all-p -projection plan
+    sisyphus_slope-1p
+  endmap
+
   centerline
     date 2022.07.20 
     explo-date 2022.07.20
