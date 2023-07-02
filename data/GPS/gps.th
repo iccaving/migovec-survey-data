@@ -306,12 +306,6 @@ survey gps -title "GPS"
     endcentreline
     endsurvey
 
-    survey M16 -entrance 0
-    centreline
-    0 1 0 0 0
-    endcentreline
-    endsurvey
-
     survey pueblo_old_bivi -entrance 0
     centreline
     0 1 0 0 0
@@ -355,18 +349,6 @@ survey gps -title "GPS"
     endsurvey
     
     survey A2 -entrance 0
-    centreline
-    0 1 0 0 0
-    endcentreline
-    endsurvey
-    
-    survey M18 -entrance 0
-    centreline
-    0 1 0 0 0
-    endcentreline
-    endsurvey
-    
-    survey M2 -entrance 0
     centreline
     0 1 0 0 0
     endcentreline
@@ -475,7 +457,6 @@ survey gps -title "GPS"
     fix 0@TR7 46.247325 13.765605 1859.18
     fix 0@TR8 46.247120 13.765830 1859.18
     fix 0@TR9 46.246913 13.766340 1859.18
-    fix 0@M16 46.252014 13.763961 1850.66
     fix 0@M12_maybe 46.249576 13.766405 1775.77
     fix 0@andy_secret_dig 46.250590 13.765604 1803.09
     fix 0@A1 46.252477 13.763169 1860.26
@@ -483,8 +464,6 @@ survey gps -title "GPS"
     fix 0@M4 46.252766 13.762960 1862.99
     fix 0@A4 46.252822 13.763165 1859.58
     fix 0@A2 46.252594 13.763379 1859.24
-    fix 0@M18 46.253212 13.763739 1847.45
-    fix 0@M2 46.253068 13.763820 1849.16
     fix 0@M24 46.246824 13.766633 1713.19
     fix 0@M7 46.247072 13.767400 1746.11
     fix 0@M9 46.247152 13.767548 1737.41
