@@ -67,22 +67,18 @@ survey plateau -title "Migovec Plateau"
 	centreline -title entrances
 		cs epsg:3794
 
-		# PLANJA JAMA
-		fix 0@planja_jama.vrh_planja 403819 125777 1897
-		#fix 0 404188 125289 1897
-
+		# BERTIJEVA JAMA
+		fix 10@bertipot.vrh_planja 403706 125587 1749
+		
 		# BREZNO POD VRHOM PLANJE
 		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje.vrh_planja 403804 125750 1870
 		#fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 404177 125263 1870  # GK fix
 
 		# COINCIDENCE
 	    fix 0@coincidence_ent.coincidence 404773 123067 1310
-		
+
         # GONDOLIN
 		fix bcairn@gondolin 404343 124264 1863
-
-		# BERTIJEVA JAMA
-		fix 10@bertipot.vrh_planja 403706 125587 1749
 
 		# JANETS LITTLE CAVE
 		fix 0@janet_little_cave 404465 124680 1885
@@ -90,17 +86,29 @@ survey plateau -title "Migovec Plateau"
 		# M1
         fix 1@M1 404650 124351 1855
 
+		# M2
+		fix 16@izent1.M2.m2m16m18.system_migovec 404702 124429 1858
+
         # M10
 	    fix 14@M10 404597 124280 1862
 
 	    # M15
     	fix 14@M15 404518 124477 1860
 
+		# M16
+		fix 1@entrance.M16.m2m16m18.system_migovec 404697 124331 1852
+
     	# M17
 		fix 0@M17  404421 124503 1879
 
+		# M18
+		fix 26@torn.M18.m2m16m18.system_migovec 404682 124454 1847
+
 		# M19
 		fix 25@M19 404405 124443 1850
+
+		# MONATIP
+		fix 1@mona_tip1.mona_tip.primadona_ubend_mona_tip.system_migovec 404186 124371 1741
 
 		# MUGO
     	fix 7@mugo 404140 124443 1698
@@ -108,8 +116,23 @@ survey plateau -title "Migovec Plateau"
     	# PLANIKA
 		fix 15@planika 404230 124355 1787
 
+		# PLANJA JAMA
+		fix 0@planja_jama.vrh_planja 403819 125777 1897
+		#fix 0 404188 125289 1897
+
+		# PRIMADONA
+		fix 35@prima1.primadona.primadona_ubend_mona_tip.system_migovec 404188 124291 1727
+
 		# ROWAN CAVE
 		fix 0@rowan_cave 404460 124948 1819
+
+		# VILINSKA JAMA
+		fix 1@vilinent.vilinska.vrtnarija_vilinska.system_migovec 404790 124535 1782
+
+		# VRTNARIJA
+		fix 0@bclent2.vrtnarija.vrtnarija_vilinska.system_migovec 404764 124501 1798
+
+
 
 	endcentreline
 
