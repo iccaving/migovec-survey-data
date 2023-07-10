@@ -349,6 +349,13 @@ Currently, each entrance has:
 
 ### K7
 
+2005:
+
+<div>
+  <img src="images/K7-2005-1.jpeg" width="44.5%"/>
+  <img src="images/K7-2005-2.jpeg" width="44.5%"/>
+</div>
+
 - A dodgy chamber reached by a 5m clamber over boulders [HM1, page 195, 2005]
   - Small draught, may be possible to dig
 
@@ -476,6 +483,13 @@ Currently, each entrance has:
 - Rift near K17 disappears into a 5m pitch to the floor, not bottomed due to lack of rope and hanging death [HM1, page 197, 2005]
 
 ### K19, Coach-Crash Dig
+
+2005:
+
+<div>
+  <img src="images/K19-2005-1.jpeg" width="44.5%"/>
+  <img src="images/K19-2005-2.jpeg" width="44.5%"/>
+</div>
 
 2022:
 
