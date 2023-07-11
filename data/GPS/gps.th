@@ -408,6 +408,66 @@ survey gps -title "GPS"
     endcentreline
     endsurvey
 
+    survey Gelateria -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP10 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP11 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP12 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP13 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP14 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP15 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP16 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey TR10 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey D1 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
 	centreline
 	cs lat-long
 
@@ -473,7 +533,17 @@ survey gps -title "GPS"
     fix 0@E1 46.252146 13.765597 1800.00
     fix 0@S_A 46.251648 13.765201 1814.53
     fix 0@E2 46.252447 13.765172 1813.20
-    
+    fix 0@Gelateria 46.250556 13.760689 1843.20
+    fix 0@LP10 46.248366 13.763687 1778.03
+    fix 0@LP11 46.247970 13.764198 1764.24
+    fix 0@LP12 46.247878 13.764271 1763.25
+    fix 0@LP13 46.247773 13.764361 1760.58
+    fix 0@LP14 46.247899 13.764503 1762.44
+    fix 0@LP15 46.248094 13.764649 1769.92
+    fix 0@LP16 46.248581 13.763993 1779.14
+    fix 0@TR10 46.247858 13.763896 1762.00
+    fix 0@D1 46.250270 13.763595 1844.80
+
     # other noteworthy locations 
     fix 0@amphitheatre 46.249812 13.764840 1822.73
     fix 0@old_path_start 46.251653 13.763880 1869.22

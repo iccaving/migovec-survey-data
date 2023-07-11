@@ -145,6 +145,17 @@ Currently, each entrance has:
   - According to Matti, draft disappears into hole above final pitch, may be diggable
   - Perry has started bolt climbing avens from entrance, first one dead
 
+### D1
+
+2023:
+
+<img src="images/D1-2023.jpeg" width="25%"/>
+
+- Discovered by David Wilson Jnr
+  - Named desperation due to convenient use as a toilet
+- Revisited in 2023
+  - Doesn't seem to go anywhere, not promising
+
 ### DW's 1996 Dig
 
 - Nearby to Royston Vasey, mentioned in HM2 draft page 44, 2008
@@ -196,6 +207,23 @@ Currently, each entrance has:
 - Revisited in 2017 [HM3, page 271]
   - Did not manage to make progress on the upwards dig
   - Marginal progress was made over a tight rift, despite the loss of the lump hammer
+
+### Gelateria
+
+2023:
+
+<div>
+  <img src="images/Gelateria-2023-1.jpeg" width="44.5%"/>
+  <img src="images/Gelateria-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Logged as B92 on old GPS data (not sure when)
+- Uncovered in 2019 due to low snow levels
+  - Dug a little but not very promising
+  - It is a real cave but get's very tight very quickly and the digging could continue for a long time
+- Poked again in 2023
+  - Christened Gelateria since it's next to where we get snow for the bivi
+  - Still doesn't look promising, but recovered some digging things left from 2019
 
 ### Gondolin
 
@@ -691,6 +719,95 @@ Currently, each entrance has:
   - Rocks fall a fair way, definitely worth a look
   - Not logged on the GPS since I thought it was PF10, it's high up in the valley, higher up than all other logged caves, and is hidden in a small shake hole
   - Next to and just above Alex Seaton's old dig into the side of a cliff
+
+### LP10
+
+2023:
+
+<div>
+  <img src="images/LP10-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP10-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered 2023
+  - Draughting slightly outwards
+  - Could be dug but would require more effort than it's worth
+  - Very cold
+
+### LP11
+
+2023:
+
+<div>
+  <img src="images/LP11-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP11-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered in 2023
+  - Draughting out slightly
+  - Tight rift continues down for about 4m but not investigated due to lack of over suits
+
+### LP12
+
+2023:
+
+<div>
+  <img src="images/LP12-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP12-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered 2023
+  - Opens out to a 3m x 1m chamber at the bottom
+  - Possibly possible to dig, but very choked
+
+### LP13
+
+2023:
+
+<div>
+  <img src="images/LP13-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP13-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Logged in 2023
+  - Can see a continuation past the snow at the bottom of a 5m shake hole
+  - Not descended due to lack of hear
+
+### LP14
+
+2023:
+
+<div>
+  <img src="images/LP14-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP14-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered in 2023
+  - Reasonably sized shake hole but dies quite quickly
+  - Not promising
+
+### LP15
+
+2023:
+
+<div>
+  <img src="images/LP15-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP15-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered in 2023
+  - Right next to the jaws of death
+  - Started digging but blocked by a large boulder, will likely continue
+
+### LP16
+
+2023:
+
+<img src="images/LP16-2023.jpeg" width="50%"/>
+
+- Discovered in 2023
+  - Many small holes leading off of the main shake hole but squeezing past the snow plug leads to a large chamber with obvious cave development
+  - Dig at bottom of large chamber leads to an ongoing crawl
 
 ### M1
 
@@ -1237,6 +1354,20 @@ Currently, each entrance has:
 
 - Discovered in 2014 [HM3, page 63]
   - Obvious way on is choked, no indication of how easy digging / rock removal might be
+
+### TR10
+
+2023:
+
+<div>
+  <img src="images/TR10-2023-1.jpeg" width="44.5%"/>
+  <img src="images/TR10-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Logged as TR10 (no idea when)
+- Relogged 2023
+  - Unclear whether this was ever descended but a 5m hole which looks enticing
+  - Not descended due to lack of gear
 
 ### U-Bend 571
 
