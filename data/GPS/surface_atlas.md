@@ -132,6 +132,34 @@ Currently, each entrance has:
   - No previous entrance marked on the GPS in the area
   - Goes around 10m until a small boulder filled chamber
 
+### C2, Bonsai Pot
+
+2023:
+
+<div>
+  <img src="images/C2-2023-1.jpeg" width="44.5%"/>
+  <img src="images/C2-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- (Re)discovered in 2023
+  - Promising looking pit with various tubes and climbs leading off of it
+  - Low crawl leading to various small chambers which all die
+  - Short climb leads to a pitch found to have spits
+  - Not finished rigging down three small pitches at the end
+
+### C3
+
+2023:
+
+<div>
+  <img src="images/C3-2023-1.jpeg" width="44.5%"/>
+  <img src="images/C3-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Spotted in 2023
+  - Not yet descended
+  - No signs of spits, but could have been dropped using naturals
+
 ### Coincidence Cave
 
 - Discovered in 2015 [HM3, page 113]
