@@ -5,7 +5,7 @@ survey gps -title "GPS"
     0 1 0 0 0
     endcentreline
     endsurvey
-    
+
     survey K6 -entrance 0
     centreline
     0 1 0 0 0
@@ -486,6 +486,96 @@ survey gps -title "GPS"
     endcentreline
     endsurvey
 
+    survey JCC -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey PLAT1 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey PLAT2 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey PLAT3 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey B91 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey B93 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey B10 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey N1 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey PLAT4 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey PLAT5 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey ABSEIL_START -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP17 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP18 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP19 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP20 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
 	centreline
 	cs lat-long
 
@@ -563,6 +653,21 @@ survey gps -title "GPS"
     fix 0@D1 46.250270 13.763595 1844.80
     fix 0@C2 46.249077 13.764518 1808.45
     fix 0@C3 46.248969 13.764749 1801.38
+    fix 0@JCC 46.253118 13.760979 1853.34
+    fix 0@PLAT1 46.253118 13.760979 1853.34
+    fix 0@PLAT2 46.253482 13.760953 1854.36
+    fix 0@PLAT3 46.253474 13.760459 1859.91
+    fix 0@B91 46.253606 13.759692 1857.59
+    fix 0@B93 46.253542 13.759445 1852.42
+    fix 0@B10 46.253198 13.759359 1845.48
+    fix 0@N1 46.253261 13.758608 1842.22
+    fix 0@PLAT4 46.252861 13.758422 1834.67
+    fix 0@PLAT5 46.252390 13.758705 1846.90
+    fix 0@ABSEIL_START 46.252107 13.758242 1849.32
+    fix 0@LP17 46.247541 13.764362 1758.75
+    fix 0@LP18 46.247490 13.764374 1754.82
+    fix 0@LP19 46.247590 13.764447 1757.46
+    fix 0@LP20 46.247496 13.765380 1747.93
 
     # other noteworthy locations 
     fix 0@amphitheatre 46.249812 13.764840 1822.73
