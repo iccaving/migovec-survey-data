@@ -576,12 +576,54 @@ survey gps -title "GPS"
     endcentreline
     endsurvey
 
+    survey LP21 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP22 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP23 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP24 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP25 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP26 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP27 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
 	centreline
 	cs lat-long
 
     # caves
     fix 0@royston_vasey 46.251917 13.762017 1868.95
-    fix 0@K6 46.257571 13.763275 1868.95 1873.25
+    fix 0@K6 46.257571 13.763275 1873.25
     fix 0@K2 46.259745 13.766238 1905.55
     fix 0@K10 46.258929 13.767571 1904.91
     fix 0@K11 46.258359 13.768771 1891.56
@@ -668,6 +710,13 @@ survey gps -title "GPS"
     fix 0@LP18 46.247490 13.764374 1754.82
     fix 0@LP19 46.247590 13.764447 1757.46
     fix 0@LP20 46.247496 13.765380 1747.93
+    fix 0@LP21 46.247355 13.764041 1766.09
+    fix 0@LP22 46.247907 13.764506 1763.32
+    fix 0@LP23 46.247971 13.764461 1765.95
+    fix 0@LP24 46.248339 13.764360 1773.97
+    fix 0@LP25 46.247795 13.764833 1764.00
+    fix 0@LP26 46.247800 13.764830 1764.00
+    fix 0@LP27 46.247070 13.766081 1718.24
 
     # other noteworthy locations 
     fix 0@amphitheatre 46.249812 13.764840 1822.73
