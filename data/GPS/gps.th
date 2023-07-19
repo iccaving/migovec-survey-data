@@ -618,6 +618,60 @@ survey gps -title "GPS"
     endcentreline
     endsurvey
 
+    survey sunset_spot -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey lp_xmas_tree -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP28 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP29 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP30 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP31 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP32 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP33 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP34 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
 	centreline
 	cs lat-long
 
@@ -711,12 +765,19 @@ survey gps -title "GPS"
     fix 0@LP19 46.247590 13.764447 1757.46
     fix 0@LP20 46.247496 13.765380 1747.93
     fix 0@LP21 46.247355 13.764041 1766.09
-    fix 0@LP22 46.247907 13.764506 1763.32
+    fix 0@LP22 46.247771 13.764504 1758.23
     fix 0@LP23 46.247971 13.764461 1765.95
     fix 0@LP24 46.248339 13.764360 1773.97
     fix 0@LP25 46.247795 13.764833 1764.00
     fix 0@LP26 46.247800 13.764830 1764.00
     fix 0@LP27 46.247070 13.766081 1718.24
+    fix 0@LP28 46.247707 13.764462 1759.69
+    fix 0@LP29 46.247608 13.764557 1759.22
+    fix 0@LP30 46.247511 13.764545 1757.26
+    fix 0@LP31 46.247512 13.764625 1758.92
+    fix 0@LP32 46.247436 13.764617 1758.38
+    fix 0@LP33 46.247316 13.764724 1754.02
+    fix 0@LP34 46.247220 13.764806 1752.44
 
     # other noteworthy locations 
     fix 0@amphitheatre 46.249812 13.764840 1822.73
@@ -727,6 +788,8 @@ survey gps -title "GPS"
     fix 0@dexter_the_tree 46.251389 13.762704 1868.24
     fix 0@pueblo_old_bivi 46.251935 13.764365 1843.58
     fix 0@valley_viewpoint 46.251064 13.764761 1864.28
+    fix 0@sunset_spot 46.251002 13.761642 1869.23
+    fix 0@lp_xmas_tree 46.247711 13.764535 1763.26
 
 	endcentreline
 
