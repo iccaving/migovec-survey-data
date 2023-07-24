@@ -132,7 +132,7 @@ Currently, each entrance has:
   - No previous entrance marked on the GPS in the area
   - Goes around 10m until a small boulder filled chamber
 
-### C2, Bonsai Pot
+### C2, Bonsai Pot, Teeny Tiny Rhododendron Pot
 
 2023:
 
@@ -142,10 +142,11 @@ Currently, each entrance has:
 </div>
 
 - (Re)discovered in 2023
-  - Promising looking pit with various tubes and climbs leading off of it
-  - Low crawl leading to various small chambers which all die
-  - Short climb leads to a pitch found to have spits
-  - Not finished rigging down three small pitches at the end
+  - Named as there are loads of small Rhododendrons around the entrance
+  - Large initial pit with various side chambers
+  - Low crawl leads to various small chambers which all die, some after squeezes and short down climbs
+  - Short climb up leads to a pitch found to have spits
+  - This pitch descends quite a way, splitting into three routes all of which are blocked and die
 
 ### C3
 
@@ -177,10 +178,13 @@ Currently, each entrance has:
 
 2023:
 
-<img src="images/D1-2023.jpeg" width="25%"/>
+<div>
+  <img src="images/D1-2023-1.jpeg" width="44.5%"/>
+  <img src="images/D1-2023-2.jpeg" width="44.5%"/>
+</div>
 
 - Discovered by David Wilson Jnr
-  - Named desperation due to convenient use as a toilet
+  - Named desperation due to convenient use as an emergency toilet
 - Revisited in 2023
   - Doesn't seem to go anywhere, not promising
 
@@ -678,6 +682,11 @@ Currently, each entrance has:
 - Discovered in 2022
   - Not descended, no notes taken at the time
   - May be worth revisiting
+- Killed in 2023
+  - Bolted and descended about 10m down on single bolt backed up with natural
+  - Snow plug about 5m down with pitch continuing to the side of it
+  - Passage becomes choked and grabby
+  - Slight draft but small and too difficult to dig, effectively dead
 
 ### LP4
 
@@ -711,6 +720,7 @@ Currently, each entrance has:
   - Hole in side of shake hole blocked by boulder with visible slope underneath
   - Looks possible to widen the entrance
   - Worth revisiting
+  - Also logged as TJ1
 
 ### LP7, Gardeners of the Galaxy, The Jaws of Death
 
@@ -732,6 +742,9 @@ Currently, each entrance has:
 - Discovered in 2022
   - Not descended but look interesting given entrance is recently exposed above snow plug
   - Worth revisiting, since new entrances may have been revealed
+- Revisited in 2023
+  - A snow crawl was found but it didn't go very far
+  - Rest of the cave seems dead, but high snow levels
 
 ### LP9
 
@@ -743,10 +756,12 @@ Currently, each entrance has:
   - Only discovered this cave after leaving the mountain
   - Had initially thought this was PF10 but apparently not, since actual entrance was instead logged as M24, and this entrance as PF10
   - The "M24" entrance, which is larger and much further down the pavement has been confirmed as PF10
-  - This means this is not a logged cave, but does look like it might have already have been descended
   - Rocks fall a fair way, definitely worth a look
-  - Not logged on the GPS since I thought it was PF10, it's high up in the valley, higher up than all other logged caves, and is hidden in a small shake hole
   - Next to and just above Alex Seaton's old dig into the side of a cliff
+- Revisited in 2023
+  - Entrance is full of snow so can't hear rocks fall down
+  - Neither Arun or Astrid could fit into the cave, as entrance is much smaller than it looks
+  - Would need some widening for anyone to investigate further
 
 ### LP10
 
@@ -827,15 +842,18 @@ Currently, each entrance has:
   - Right next to the jaws of death
   - Started digging but blocked by a large boulder, will likely continue
 
-### LP16
+### LP16, Icehorn
 
 2023:
 
 <img src="images/LP16-2023.jpeg" width="50%"/>
 
 - Discovered in 2023
-  - Many small holes leading off of the main shake hole but squeezing past the snow plug leads to a large chamber with obvious cave development
-  - Dig at bottom of large chamber leads to an ongoing crawl
+  - Squeezing past the snow plug leads to a large chamber 5m
+  - Many small holes leading off of the main shake hole which all seem to drop into the main chamber when throwing rocks down
+  - Dig at bottom of large chamber leads to an ongoing crawl but dies quickly in all directions after being dug
+  - Another dig up in the left wall of the chamber dies quickly
+  - All other leads seem to die
 
 ### M1
 
@@ -1382,6 +1400,11 @@ Currently, each entrance has:
 
 - Discovered in 2014 [HM3, page 63]
   - Obvious way on is choked, no indication of how easy digging / rock removal might be
+- Revisited in 2023
+  - Howling draft coming out of the cave
+  - Vocal connection to a shake hole behind the main entrance
+  - A dig was found at the back in a tight crawl and pushed for 5m and continues on for about another 5m
+  - Very strong draft coming from the crawl, which turns to the right into the mountain
 
 ### TR10
 
@@ -1396,6 +1419,7 @@ Currently, each entrance has:
 - Relogged 2023
   - Unclear whether this was ever descended but a 5m hole which looks enticing
   - Not descended due to lack of gear
+  - A TR11 GPS point was also logged but couldn't find any cave there within a 15m radius
 
 ### U-Bend 571
 
