@@ -23,33 +23,32 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 	input "./vrtnarija_vilinska.th"
 
 	centreline
+		# old fixes use EPSG:3912
+
 		cs epsg:3794
-		#entrance fixes (EPSG:3912)
+
+		# entrances and old fixes
 
 		#M2
 		station 16@izent1.M2.m2m16m18 entrance
-		fix 16@izent1.M2.m2m16m18 404702 124429 1858
 		#fix 16@izent1.M2.m2m16m18 405070 123937 1858
 
 		#M16
 		station 1@entrance.M16.m2m16m18 entrance
-		fix 1@entrance.M16.m2m16m18 404697 124331 1852
 		#fix 1@entrance.M16.m2m16m18 405073 123841 1852  # old GK?
 
 		#Primadona
 		station 35@prima1.primadona.primadona_ubend_mona_tip entrance
-		fix 35@prima1.primadona.primadona_ubend_mona_tip 404188 124291 1727
 		#fix 35@prima1.primadona.primadona_ubend_mona_tip 404561 123804 1727 # old GK?
 
 		#Vrtnarija
 		station 0@bclent2.vrtnarija.vrtnarija_vilinska entrance
-		fix 0@bclent2.vrtnarija.vrtnarija_vilinska 404764 124501 1798
 		#fix 0@bclent2.vrtnarija.vrtnarija_vilinska 405134 124013 1798
 
 		### other entrances not fixed, survey points
 		#Monatip
 		station 1@mona_tip1.mona_tip.primadona_ubend_mona_tip entrance
-		fix 1@mona_tip1.mona_tip.primadona_ubend_mona_tip 404186 124371 1741
+		#fix 1@mona_tip1.mona_tip.primadona_ubend_mona_tip 404186 124371 1741
 		#Ubend
 		station 5@ubend2.ubend.primadona_ubend_mona_tip entrance
 		#fix 5@ubend2.ubend.primadona_ubend_mona_tip 404220 124292 1779
@@ -59,13 +58,13 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 
 		#Vilinska Jama
 		station 1@vilinent.vilinska.vrtnarija_vilinska entrance
-		fix 1@vilinent.vilinska.vrtnarija_vilinska 404790 124535 1782
+		#fix 1@vilinent.vilinska.vrtnarija_vilinska 404790 124535 1782
 
 		#M18
 		station 26@torn.M18.m2m16m18 entrance
-		fix 26@torn.M18.m2m16m18 404682 124454 1847
+		#fix 26@torn.M18.m2m16m18 404682 124454 1847
 
-		fix 1@sifon.M16.m2m16m18 404174.93 124162.49 892.67
+		#fix 1@sifon.M16.m2m16m18 404174.93 124162.49 892.67
 
 	endcentreline
 
