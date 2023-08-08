@@ -19,6 +19,7 @@ survey who_dies_first -title "Who Dies First"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
+    flags duplicate #has been resurveyed in 2023/who_dies_first_resurvey
     0 . 0.93 90.0 0.0
     0 . 0.93 270.0 0.0
     extend left

@@ -34,4 +34,12 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 	## extended elevation joins.
 	join osmica-1e@osmica bingo-1e@bingo_flamingo_2 
 	join bingo-1e@bingo_flamingo_2 bingo_flamingo-1s@bingo_flamingo
+
+	###__________2023____________###
+	input "./2023/house_of_cards/house_of_cards.th"
+	input "./2023/humpty_dumpty/humpty_dumpty.th"
+
+	equate 1@house_of_cards 5@humpty_dumpty
+	equate 0@humpty_dumpty 1@prazen_list
+
 endsurvey
