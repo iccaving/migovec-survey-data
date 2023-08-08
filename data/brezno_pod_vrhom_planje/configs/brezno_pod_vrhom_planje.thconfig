@@ -113,3 +113,6 @@ export map -o brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-
 export map -o brezno_pod_vrhom_planje_plan.pdf -projection plan -layout local
 
 export database -o brezno_pod_vrhom_planje_plan.sql
+
+# export a .3d model, which can be opened in AVEN and LOCH
+export model -o brezno_pod_vrhom_planje.3d -fmt survex

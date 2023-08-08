@@ -568,4 +568,14 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	join sisyphus_slope-1p@sisyphus_slope cantina_canyon_2-1p@cantina_canyon_2
 
+	###______________ 2023______________###
+    input "./2023/delta_blues/delta_blues.th"
+	input "./2023/who_dies_first_resurvey/who_dies_first_resurvey.th"
+
+	equate 49@delta_blues 0@who_dies_first_resurvey
+	equate 13@delta_blues 38@the_deep_awakens
+	equate 7@who_dies_first_resurvey 33@the_deep_awakens
+	#equate 0@who_dies_first_resurvey 0@who_dies_first #disconnect resurveyed loop to ignore shit survey
+
+
 endsurvey
