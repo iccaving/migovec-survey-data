@@ -1,23 +1,24 @@
 # The Surface Atlas 🗺️
 
 > **Note**
-> 
+>
 > **Please edit** if you see anything missing or wrong using the pencil icon on the top right!!
-> 
+>
 > All changes are saved in Git so it's very easy to undo later.
 
 Information on each of the cave entrances was previously scattered between sources such as the various editions of the Hollow Mountain, images on the club website and the depths of the minds of the many explorers. Here is a first attempt to gather all useful information into one central place for convenient reference. This should make it easier to see which caves have potential and which are conclusively dead, when each cave has been previously explored and record any other useful information gathered by previous explorations.
 
-# Formatting 
+# Formatting
 
 Currently, each entrance has:
- - Every name its been referred to as
- - Some images allowing for relocation of the entrance
- - A GPS location, but these aren't uploaded to GitHub yet and so aren't in the atlas
- - All key information, sorted by year/entry 
-   - Importantly, please reference if you're getting your info from a written source
-   - This really doesn't take much effort, but saves hours of time for future cavers, eg. [HM1, page 1]
-   - Try to add names if you can, they're only missing when they couldn't be remembered
+
+- Every name it's been referred to as
+- Some images allowing for relocation of the entrance
+- A GPS location, but these aren't uploaded to GitHub yet and so aren't in the atlas
+- All key information, sorted by year/entry
+  - Importantly, please reference if you're getting your info from a written source
+  - This really doesn't take much effort, but saves hours of time for future cavers, eg. [HM1, page 1]
+  - Try to add names if you can, they're only missing when they couldn't be remembered
 
 # General Information
 
@@ -34,11 +35,13 @@ Currently, each entrance has:
 
 ### A1 through A4
 
+2022:
+
 <div>
-  <img src="images/A1.jpeg" width="20%"/>
-  <img src="images/A2.jpeg" width="20%"/>
-  <img src="images/A3.jpeg" width="20%"/>
-  <img src="images/A4.jpeg" width="20%"/>
+  <img src="images/A1-2022.jpeg" width="20%"/>
+  <img src="images/A2-2022.jpeg" width="20%"/>
+  <img src="images/A3-2022.jpeg" width="20%"/>
+  <img src="images/A4-2022.jpeg" width="20%"/>
 </div>
 
 - Discovered in 2008 [HM2 draft, page 44]
@@ -49,7 +52,9 @@ Currently, each entrance has:
 
 ### Andy's Dig
 
-<img src="images/Andy's Dig.jpeg" width="25%"/>
+2022:
+
+<img src="images/Andy's Dig-2022.jpeg" width="25%"/>
 
 - No longer a secret as of 2022
   - Relogged on the GPS
@@ -61,9 +66,11 @@ Currently, each entrance has:
 
 ### B5
 
+2022:
+
 <div>
-  <img src="images/B5.jpeg" width="44.5%"/>
-  <img src="images/B5 Close Up.jpeg" width="25%"/>
+  <img src="images/B5-2022.jpeg" width="44.5%"/>
+  <img src="images/B5 Close Up-2022.jpeg" width="25%"/>
 </div>
 
 - Spotted in 2022 from red paint marking
@@ -79,7 +86,9 @@ Currently, each entrance has:
 
 ### B12
 
-<img src="images/B12.jpeg" width="25%"/>
+2022:
+
+<img src="images/B12-2022.jpeg" width="25%"/>
 
 - Spotted in 2022 from red paint marking
   - No known historical information
@@ -92,7 +101,9 @@ Currently, each entrance has:
 
 ### B20
 
-<img src="images/B20.jpeg" width="25%"/>
+2022:
+
+<img src="images/B20-2022.jpeg" width="25%"/>
 
 - Re-logged in 2022
   - Good digging potential but hasn't been investigated to the end
@@ -100,7 +111,9 @@ Currently, each entrance has:
 
 ### Bone Cave
 
-<img src="images/Bone.jpeg" width="25%"/>
+2022:
+
+<img src="images/Bone-2022.jpeg" width="25%"/>
 
 - Mentioned in passing in HM1, page 215, but no information provided other than it being near the V10 valley
 - 2022
@@ -110,12 +123,43 @@ Currently, each entrance has:
 
 ### C1
 
-<img src="images/C1.jpeg" width="25%"/>
+2022:
+
+<img src="images/C1-2022.jpeg" width="25%"/>
 
 - Area C being the area around the container
 - Spotted and logged in 2022
   - No previous entrance marked on the GPS in the area
   - Goes around 10m until a small boulder filled chamber
+
+### C2, Bonsai Pot, Teeny Tiny Rhododendron Pot
+
+2023:
+
+<div>
+  <img src="images/C2-2023-1.jpeg" width="44.5%"/>
+  <img src="images/C2-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- (Re)discovered in 2023
+  - Named as there are loads of small Rhododendrons around the entrance
+  - Large initial pit with various side chambers
+  - Low crawl leads to various small chambers which all die, some after squeezes and short down climbs
+  - Short climb up leads to a pitch found to have spits
+  - This pitch descends quite a way, splitting into three routes all of which are blocked and die
+
+### C3
+
+2023:
+
+<div>
+  <img src="images/C3-2023-1.jpeg" width="44.5%"/>
+  <img src="images/C3-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Spotted in 2023
+  - Not yet descended
+  - No signs of spits, but could have been dropped using naturals
 
 ### Coincidence Cave
 
@@ -126,9 +170,23 @@ Currently, each entrance has:
 - Further explored by the Slovenians after 2018
   - All leads seem to have died, from word of mouth
 - Revisited in 2022
- - End of cave terminates in boulder floor at base of pitch, this would be difficult to dig
- - According to Matti, draft disappears into hole above final pitch, may be diggable
- - Perry has started bolt climbing avens from entrance, first one dead
+  - End of cave terminates in boulder floor at base of pitch, this would be difficult to dig
+  - According to Matti, draft disappears into hole above final pitch, may be diggable
+  - Perry has started bolt climbing avens from entrance, first one dead
+
+### D1, Desperation 1
+
+2023:
+
+<div>
+  <img src="images/D1-2023-1.jpeg" width="44.5%"/>
+  <img src="images/D1-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered by David Wilson Jnr
+  - Named desperation due to convenient use as an emergency toilet
+- Revisited in 2023
+  - Doesn't seem to go anywhere, not promising
 
 ### DW's 1996 Dig
 
@@ -140,7 +198,9 @@ Currently, each entrance has:
 
 ### E1
 
-<img src="images/E1.jpeg" width="25%"/>
+2022:
+
+<img src="images/E1-2022.jpeg" width="25%"/>
 
 - Discovered in 2007 [HM2 draft, page 14]
   - A 25m pitch leading to small windows which require widening to pass
@@ -149,7 +209,9 @@ Currently, each entrance has:
 
 ### E2
 
-<img src="images/E2.jpeg" width="25%"/>
+2022:
+
+<img src="images/E2-2022.jpeg" width="25%"/>
 
 - Relogged in 2022
 - Visited either 2018 or 2019
@@ -159,7 +221,9 @@ Currently, each entrance has:
 
 ### E8
 
-<img src="images/E8.jpeg" width="25%"/>
+2022:
+
+<img src="images/E8-2022.jpeg" width="25%"/>
 
 - Not a cave
   - Logged as "obvcave" on historical GPS files
@@ -176,6 +240,23 @@ Currently, each entrance has:
   - Did not manage to make progress on the upwards dig
   - Marginal progress was made over a tight rift, despite the loss of the lump hammer
 
+### Gelateria
+
+2023:
+
+<div>
+  <img src="images/Gelateria-2023-1.jpeg" width="44.5%"/>
+  <img src="images/Gelateria-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Logged as B92 on old GPS data (not sure when)
+- Uncovered in 2019 due to low snow levels
+  - Dug a little but not very promising
+  - It is a real cave but get's very tight very quickly and the digging could continue for a long time
+- Poked again in 2023
+  - Christened Gelateria since it's next to where we get snow for the bivi
+  - Still doesn't look promising, but recovered some digging things left from 2019
+
 ### Gondolin
 
 - Discovered in 2017 [HM3, page 232]
@@ -183,7 +264,9 @@ Currently, each entrance has:
 
 ### Hare Cave
 
-<img src="images/Hare.jpeg" width="44.5%"/>
+2022:
+
+<img src="images/Hare-2022.jpeg" width="44.5%"/>
 
 - Description in HM1, page 183, 2004
   - Was guarded by a large hare in 2003, so left until 2004
@@ -209,7 +292,9 @@ Currently, each entrance has:
 
 ### Janet's Little Cave, MLC, My Little Cave
 
-<img src="images/MLC.jpeg" width="25%"/>
+2022:
+
+<img src="images/MLC-2022.jpeg" width="25%"/>
 
 - Description in HM1, page 184, 2004
   - Small airy passage in the side of a shakehole near the Kuk path
@@ -267,13 +352,17 @@ Currently, each entrance has:
 
 ### K1, The Goat Shelter
 
-<img src="images/K1.jpeg" width="25%"/>
+2022:
+
+<img src="images/K1-2022.jpeg" width="25%"/>
 
 - An obvious entrance on the flank of Kuk that only goes to a higher entrance with no leads [HM1, page 195, 2005]
 
 ### K2
 
-<img src="images/K2.jpeg" width="25%"/>
+2022:
+
+<img src="images/K2-2022.jpeg" width="25%"/>
 
 - Discovered in 2005 [HM1, page 195]
   - Easy digging and massive draught
@@ -305,7 +394,9 @@ Currently, each entrance has:
 
 ### K6
 
-<img src="images/K6.jpeg" width="25%"/>
+2022:
+
+<img src="images/K6-2022.jpeg" width="25%"/>
 
 - First mentioned 2005
   - Sharp crawl through to mud floor opening out with small draught, could be pushed further with elbow pads [HM1, page 195, 2005]
@@ -318,6 +409,13 @@ Currently, each entrance has:
 
 ### K7
 
+2005:
+
+<div>
+  <img src="images/K7-2005-1.jpeg" width="44.5%"/>
+  <img src="images/K7-2005-2.jpeg" width="44.5%"/>
+</div>
+
 - A dodgy chamber reached by a 5m clamber over boulders [HM1, page 195, 2005]
   - Small draught, may be possible to dig
 
@@ -327,7 +425,9 @@ Currently, each entrance has:
 
 ### K9
 
-<img src="images/K9.jpeg" width="25%"/>
+2022:
+
+<img src="images/K9-2022.jpeg" width="25%"/>
 
 - Quickly opens out into a 15m pitch [HM1, page 196, 2005]
   - A twin pitch is reachable from a large window
@@ -335,9 +435,11 @@ Currently, each entrance has:
 - Revisited in 2022
   - Located the entrance to photograph and log the GPS location, but pitch not descended
 
-### K10
+### K10, Torn Testicle
 
-<img src="images/K10.jpeg" width="25%"/>
+2022:
+
+<img src="images/K10-2022.jpeg" width="25%"/>
 
 - A very small hole currently blocked but with obvious continuation [HM1, page 196, 2005]
   - Currently only descends 3m
@@ -350,7 +452,9 @@ Currently, each entrance has:
 
 ### K11
 
-<img src="images/K11.jpeg" width="25%"/>
+2022:
+
+<img src="images/K11-2022.jpeg" width="25%"/>
 
 - Scree climb into a chamber at the end of a shakehole with a cold draught and good digging possibilities [HM1, page 196, 2005]
 - Revisited in 2012, presumed to be reasonably promising but not incredible [HM2 draft, page 136]
@@ -360,7 +464,9 @@ Currently, each entrance has:
 
 ### K12, Victoria Coach Station
 
-<img src="images/K12.jpg" width="25%"/>
+2022:
+
+<img src="images/K12-2022.jpg" width="25%"/>
 
 - A very large entrance leading to a large snow slope [HM1, page 196, 2005]
   - Enormous draught in places, but many crawls blocked with ice and rubble
@@ -377,7 +483,9 @@ Currently, each entrance has:
 
 ### K13, Pedestrian Subway / Arrivals Hall
 
-<img src="images/K13.jpeg" width="44.5%"/>
+2022:
+
+<img src="images/K13-2022.jpeg" width="44.5%"/>
 
 - Rift directly above K12 with possible dig to the South East and rift in floor connecting with the K12 main chamber [HM1, page 197, 2005]
 - Revisited in 2022
@@ -386,7 +494,9 @@ Currently, each entrance has:
 
 ### K14
 
-<img src="images/K14.jpeg" width="25%"/>
+2022:
+
+<img src="images/K14-2022.jpeg" width="25%"/>
 
 - A shallow rift leading to a small chamber, likely to break onto the surface but not pushed fully [HM1, page 197, 2005]
 - Revisited in 2022
@@ -397,7 +507,9 @@ Currently, each entrance has:
 
 ### K15, K15i (The Rik-Venn Imaginary Series)
 
-<img src="images/K15.jpeg" width="25%"/>
+2022:
+
+<img src="images/K15-2022.jpeg" width="25%"/>
 
 - A big blowing and cold cave ending in a dig [HM1, page 197, 2005]
   - Goes in ten meters south and down before reaching a choke underneath a suspended boulder
@@ -408,7 +520,9 @@ Currently, each entrance has:
 
 ### K16, The Escalator
 
-<img src="images/K16.jpeg" width="50%"/>
+2022:
+
+<img src="images/K16-2022.jpeg" width="50%"/>
 
 - A series of holes by the Skrbina path [HM1, page 197, 2005]
   - Many alcoves, strong draught and ice plug at bottom
@@ -430,7 +544,16 @@ Currently, each entrance has:
 
 ### K19, Coach-Crash Dig
 
-<img src="images/K19.jpeg" width="25%"/>
+2005:
+
+<div>
+  <img src="images/K19-2005-1.jpeg" width="44.5%"/>
+  <img src="images/K19-2005-2.jpeg" width="44.5%"/>
+</div>
+
+2022:
+
+<img src="images/K19-2022.jpeg" width="25%"/>
 
 - Entrance rift in a pile of boulders drops down a few meters the runs down into a gravel pile and opens out [HM1, page 198, 2005]
   - Infamous near death experience for Dave Wilson
@@ -446,7 +569,9 @@ Currently, each entrance has:
 
 ### K20, K-Moss
 
-<img src="images/K20.jpeg" width="25%"/>
+2022:
+
+<img src="images/K20-2022.jpeg" width="25%"/>
 
 - Near K15, a small mossy hole with a slight draught [HM1, page 198, 2005]
   - Some digging carried out, but would be easy to continue further
@@ -485,7 +610,9 @@ Currently, each entrance has:
 
 ### K27
 
-<img src="images/K27.jpeg" width="25%"/>
+2022:
+
+<img src="images/K27-2022.jpeg" width="25%"/>
 
 - First logged in 2022
   - Logged after thinking it was K14
@@ -494,7 +621,9 @@ Currently, each entrance has:
 
 ### K28
 
-<img src="images/K28.jpeg" width="25%"/>
+2022:
+
+<img src="images/K28-2022.jpeg" width="25%"/>
 
 - First logged in 2022
   - A fairly small, draughting, rubble-filled hole about a meter cubed
@@ -504,7 +633,9 @@ Currently, each entrance has:
 
 ### K29
 
-<img src="images/K29.jpeg" width="25%"/>
+2022:
+
+<img src="images/K29-2022.jpeg" width="25%"/>
 
 - Previously logged as K99 on the old GPS files, but no mention of it in any hollow mountain editions so unclear why it broke with the area K naming convention
 - Logged as K29 in 2022
@@ -513,9 +644,15 @@ Currently, each entrance has:
   - Not promising as a lead in itself, but cold
   - No obvious draught on a very warm and still day
 
+### Keyhole Cave
+
+- Very close to Postcard Cave, see Postcard cave entry for description of location
+
 ### LP1
 
-<img src="images/LP1.jpeg" width="25%"/>
+2022:
+
+<img src="images/LP1-2022.jpeg" width="25%"/>
 
 - Discovered in 2022
   - LP = Limestone Pavement, as previously caves here were named TR1,2,3 etc. but this system breaks down when anyone other than Tanguy finds a cave
@@ -527,7 +664,9 @@ Currently, each entrance has:
 
 ### LP2
 
-<img src="images/LP2.jpeg" width="25%"/>
+2022:
+
+<img src="images/LP2-2022.jpeg" width="25%"/>
 
 - Discovered in 2022
   - 2m descent to snow plug
@@ -536,15 +675,24 @@ Currently, each entrance has:
 
 ### LP3
 
-<img src="images/LP3.jpg" width="25%"/>
+2022:
+
+<img src="images/LP3-2022.jpg" width="25%"/>
 
 - Discovered in 2022
   - Not descended, no notes taken at the time
   - May be worth revisiting
+- Killed in 2023
+  - Bolted and descended about 10m down on single bolt backed up with natural
+  - Snow plug about 5m down with pitch continuing to the side of it
+  - Passage becomes choked and grabby
+  - Slight draft but small and too difficult to dig, effectively dead
 
 ### LP4
 
-<img src="images/LP4.jpeg" width="25%"/>
+2022:
+
+<img src="images/LP4-2022.jpeg" width="25%"/>
 
 - Discovered 2022
   - May have been descended before
@@ -553,7 +701,9 @@ Currently, each entrance has:
 
 ### LP5
 
-<img src="images/LP5.jpeg" width="25%"/>
+2022:
+
+<img src="images/LP5-2022.jpeg" width="25%"/>
 
 - Discovered 2022
   - Big hole with gravel and snow at the bottom
@@ -562,16 +712,21 @@ Currently, each entrance has:
 
 ### LP6
 
-<img src="images/LP6.jpeg" width="44.5%"/>
+2022:
+
+<img src="images/LP6-2022.jpeg" width="44.5%"/>
 
 - Discovered in 2022
   - Hole in side of shake hole blocked by boulder with visible slope underneath
   - Looks possible to widen the entrance
   - Worth revisiting
+  - Also logged as TJ1
 
 ### LP7, Gardeners of the Galaxy, The Jaws of Death
 
-<img src="images/LP7.jpeg" width="25%"/>
+2022:
+
+<img src="images/LP7-2022.jpeg" width="25%"/>
 
 - Discovered in 2022
   - A new hole had opened up in a shake hole since the previous expedition before covid
@@ -580,28 +735,131 @@ Currently, each entrance has:
 
 ### LP8
 
-<img src="images/LP8.jpeg" width="25%"/>
+2022:
+
+<img src="images/LP8-2022.jpeg" width="25%"/>
 
 - Discovered in 2022
   - Not descended but look interesting given entrance is recently exposed above snow plug
   - Worth revisiting, since new entrances may have been revealed
+- Revisited in 2023
+  - A snow crawl was found but it didn't go very far
+  - Rest of the cave seems dead, but high snow levels
 
 ### LP9
 
-<img src="images/LP9.jpeg" width="25%"/>
+2022:
+
+<img src="images/LP9-2022.jpeg" width="25%"/>
 
 - Discovered in 2022
   - Only discovered this cave after leaving the mountain
   - Had initially thought this was PF10 but apparently not, since actual entrance was instead logged as M24, and this entrance as PF10
   - The "M24" entrance, which is larger and much further down the pavement has been confirmed as PF10
-  - This means this is not a logged cave, but does look like it might have already have been descended
   - Rocks fall a fair way, definitely worth a look
-  - Not logged on the GPS since I thought it was PF10, it's high up in the valley, higher up than all other logged caves, and is hidden in a small shake hole
   - Next to and just above Alex Seaton's old dig into the side of a cliff
+- Revisited in 2023
+  - Entrance is full of snow so can't hear rocks fall down
+  - Neither Arun or Astrid could fit into the cave, as entrance is much smaller than it looks
+  - Would need some widening for anyone to investigate further
+
+### LP10
+
+2023:
+
+<div>
+  <img src="images/LP10-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP10-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered 2023
+  - Draughting slightly outwards
+  - Could be dug but would require more effort than it's worth
+  - Very cold
+
+### LP11
+
+2023:
+
+<div>
+  <img src="images/LP11-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP11-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered in 2023
+  - Draughting out slightly
+  - Tight rift continues down for about 4m but not investigated due to lack of over suits
+
+### LP12
+
+2023:
+
+<div>
+  <img src="images/LP12-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP12-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered 2023
+  - Opens out to a 3m x 1m chamber at the bottom
+  - Possibly possible to dig, but very choked
+
+### LP13
+
+2023:
+
+<div>
+  <img src="images/LP13-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP13-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Logged in 2023
+  - Can see a continuation past the snow at the bottom of a 5m shake hole
+  - Not descended due to lack of hear
+
+### LP14
+
+2023:
+
+<div>
+  <img src="images/LP14-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP14-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered in 2023
+  - Reasonably sized shake hole but dies quite quickly
+  - Not promising
+
+### LP15
+
+2023:
+
+<div>
+  <img src="images/LP15-2023-1.jpeg" width="44.5%"/>
+  <img src="images/LP15-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Discovered in 2023
+  - Right next to the jaws of death
+  - Started digging but blocked by a large boulder, will likely continue
+
+### LP16, Icehorn
+
+2023:
+
+<img src="images/LP16-2023.jpeg" width="50%"/>
+
+- Discovered in 2023
+  - Squeezing past the snow plug leads to a large chamber 5m
+  - Many small holes leading off of the main shake hole which all seem to drop into the main chamber when throwing rocks down
+  - Dig at bottom of large chamber leads to an ongoing crawl but dies quickly in all directions after being dug
+  - Another dig up in the left wall of the chamber dies quickly
+  - All other leads seem to die
 
 ### M1
 
-<img src="images/M1.jpeg" width="50%"/>
+2022:
+
+<img src="images/M1-2022.jpeg" width="50%"/>
 
 - Depth in 1983 recorded as -61m [HM1, page 13]
 - Revisited in 2007 [HM2 draft, page 13]
@@ -610,7 +868,9 @@ Currently, each entrance has:
 
 ### M2
 
-<img src="images/M2.jpeg" width="25%"/>
+2022:
+
+<img src="images/M2-2022.jpeg" width="25%"/>
 
 - An entrance to the system. Discovered by the Slovenes back in the 70s [HM1, page 6]
 
@@ -621,7 +881,9 @@ Currently, each entrance has:
 
 ### M4
 
-<img src="images/M4.jpeg" width="50%"/>
+2022:
+
+<img src="images/M4-2022.jpeg" width="50%"/>
 
 - No known depth as of 1993 [HM1, page 13]
 - Relogged in 2022
@@ -641,28 +903,36 @@ Currently, each entrance has:
 
 ### M7
 
-<img src="images/M7.jpeg" width="25%"/>
+2022:
+
+<img src="images/M7-2022.jpeg" width="25%"/>
 
 - Depth indicated as -20m as of 1993 [HM1, page 13]
 - Relogged in 2022
 
 ### M8
 
-<img src="images/M8.jpeg" width="25%"/>
+2022:
+
+<img src="images/M8-2022.jpeg" width="25%"/>
 
 - Depth indicated as -13m as of 1993 [HM1, page 13]
 - Relogged in 2022
 
 ### M9
 
-<img src="images/M9.jpeg" width="50%"/>
+2022:
+
+<img src="images/M9-2022.jpeg" width="50%"/>
 
 - Depth indicated as -19m as of 1993 [HM1, page 13]
 - Relogged in 2022
 
 ### M10
 
-<img src="images/M10.jpeg" width="25%"/>
+2022:
+
+<img src="images/M10-2022.jpeg" width="25%"/>
 
 - Depth indicated as -33m as of 1993 [HM1, page 13]
 - Visited frequently to collect snow for water
@@ -678,7 +948,9 @@ Currently, each entrance has:
 
 ### M12
 
-<img src="images/M12 maybe.jpeg" width="25%"/>
+2022:
+
+<img src="images/M12 maybe-2022.jpeg" width="25%"/>
 
 - Depth indicated as -15m as of 1993 [HM1, page 13]
 - Possibly relocated 2022
@@ -699,14 +971,18 @@ Currently, each entrance has:
 
 ### M15
 
-<img src="images/M15.jpeg" width="25%"/>
+2022:
+
+<img src="images/M15-2022.jpeg" width="25%"/>
 
 - Depth indicated as -58m as of 1993 [HM1, page 13]
 - Relogged 2022
 
 ### M16
 
-<img src="images/M16.jpeg" width="25%"/>
+2022:
+
+<img src="images/M16-2022.jpeg" width="25%"/>
 
 - An entrance to the main system discovered by the Slovenes in 1982. [HM1, page 8]
 
@@ -719,7 +995,9 @@ Currently, each entrance has:
 
 ### M18, Torn T-Shirt Pot, Jama Strgane Srajce
 
-<img src="images/M18.jpeg" width="25%"/>
+2022:
+
+<img src="images/M18-2022.jpeg" width="25%"/>
 
 - Large entry about discovery in HM1 page 19 from 1994
 - An entrance into the main system
@@ -752,7 +1030,9 @@ Currently, each entrance has:
 
 ### M22, Venus Cave
 
-<img src="images/M22.jpeg" width="50%"/>
+2022:
+
+<img src="images/M22-2022.jpeg" width="50%"/>
 
 - Entrance about discovery and survey in HM1, page 34, 1995
   - Named as it sucked flies in like a venus fly trap, strong draft!
@@ -767,7 +1047,9 @@ Currently, each entrance has:
 
 ### M24, PF10
 
-<img src="images/M24.jpeg" width="25%"/>
+2022:
+
+<img src="images/M24-2022.jpeg" width="25%"/>
 
 - Entry about discovery and survey in HM1, page 36, 1995
   - Deemed too unstable to continue exploration
@@ -790,7 +1072,9 @@ Currently, each entrance has:
 
 ### Moth Cave
 
-<img src="images/Moth.jpeg" width="50%"/>
+2022:
+
+<img src="images/Moth-2022.jpeg" width="50%"/>
 
 - Discovered in 2006 [HM1, page 207]
   - Located close to Hare cave
@@ -871,6 +1155,8 @@ Currently, each entrance has:
 - Briefly mentioned in HM1, page 183, 2004
   - In an adjacent shakehole to the east of Hare Cave
   - No further information
+- Description from 2007 on club wiki along with keyhole cave:
+  - "Keyhole cave and postcard cave are very near the bivvy. The easiest way to describe them is to start from the edge of the shakehole with hare cave in. Facing towards primadoni direction hare cave is on the left side of the shake hole. Basically you are standing above postcard cave. It is in a smaller shakhole behind you. The entrance is a very low thin bedding plane that immediately breaks into an 'impressive' entrance phreatic tube with a choked draughting rift in the floor. This looks like many other entrances, so the way to confirm is that keyhole cave should also be present in the shakehole. Still facing the same way (i.e. away from the shakehole towards the hare cave shakehole), keyhole cave is on the left side and is almost completely invisible unless you are standing in exactly the right place. Entrance is a lovely phreatic keyhole about 1m high and really very hidden. The cave follows this shape for a couple of metres before ending in a choked small chamber. Not that interesting but a great entrance - would make a superb start to a trip"
 
 ### Primadona
 
@@ -879,7 +1165,9 @@ Currently, each entrance has:
 
 ### Pueblo
 
-<img src="images/Pueblo.jpeg" width="25%"/>
+2022:
+
+<img src="images/Pueblo-2022.jpeg" width="25%"/>
 
 - Not a cave
   - Fratnik's old bivi spot from many decades ago
@@ -893,7 +1181,9 @@ Currently, each entrance has:
 
 ### Royston Vasey
 
-<img src="images/Royston_Vasey.jpg" width="44.5%"/>
+2022:
+
+<img src="images/Royston_Vasey-2022.jpg" width="44.5%"/>
 
 - Entry about discovery and a survey in HM1, page 147, 2001
   - Very close to the bivi, in an 8m deep shake hole
@@ -937,7 +1227,9 @@ Currently, each entrance has:
 
 ### S12
 
-<img src="images/S12.jpeg" width="25%"/>
+2022:
+
+<img src="images/S12-2022.jpeg" width="25%"/>
 
 - Relogged in 2022
   - No known information
@@ -945,7 +1237,9 @@ Currently, each entrance has:
 
 ### S-A
 
-<img src="images/S-A.jpeg" width="25%"/>
+2022:
+
+<img src="images/S-A-2022.jpeg" width="25%"/>
 
 - Relogged in 2022
   - No idea what this is, but there's a large shake hole there
@@ -954,7 +1248,9 @@ Currently, each entrance has:
 
 ### Samo1
 
-<img src="images/SAMO1.jpeg" width="25%"/>
+2022:
+
+<img src="images/SAMO1-2022.jpeg" width="25%"/>
 
 - Unclear when Samo first logged this
 - Revisited in 2022
@@ -964,7 +1260,9 @@ Currently, each entrance has:
 
 ### Samo2
 
-<img src="images/SAMO2.jpeg" width="25%"/>
+2022:
+
+<img src="images/SAMO2-2022.jpeg" width="25%"/>
 
 - Unlcear when Samo first logged this
 - Revisited in 2022
@@ -1010,7 +1308,9 @@ Currently, each entrance has:
 
 ### TR1
 
-<img src="images/TR1.jpeg" width="25%"/>
+2022:
+
+<img src="images/TR1-2022.jpeg" width="25%"/>
 
 - Discovered in 2014 [HM3, page 62]
   - A 1 x 1.5 m hole plugged with snow
@@ -1021,7 +1321,9 @@ Currently, each entrance has:
 
 ### TR2
 
-<img src="images/TR2.jpeg" width="44.5%"/>
+2022:
+
+<img src="images/TR2-2022.jpeg" width="44.5%"/>
 
 - Discovered in 2014 [HM3, page 62]
   - Snow and rubble slope leads down to a low chamber with several blind avens
@@ -1034,21 +1336,27 @@ Currently, each entrance has:
 
 ### TR3
 
-<img src="images/TR3.jpeg" width="25%"/>
+2022:
+
+<img src="images/TR3-2022.jpeg" width="25%"/>
 
 - Discovered in 2014 [HM3, page 62]
   - Entrance choke can be down-climbed to a small chamber with continuation requiring rock removal with tape, crowbar and chisel
 
 ### TR4
 
-<img src="images/TR4.jpeg" width="25%"/>
+2022:
+
+<img src="images/TR4-2022.jpeg" width="25%"/>
 
 - Discovered in 2014 [HM3, page 63]
   - Obvious dig with upturned boulders near entrance
 
 ### TR5
 
-<img src="images/TR5.jpeg" width="25%"/>
+2022:
+
+<img src="images/TR5-2022.jpeg" width="25%"/>
 
 - Discovered in 2014 [HM3, page 63]
   - Small free climb down
@@ -1056,7 +1364,9 @@ Currently, each entrance has:
 
 ### TR6
 
-<img src="images/TR6.jpeg" width="25%"/>
+2022:
+
+<img src="images/TR6-2022.jpeg" width="25%"/>
 
 - Discovered in 2014 [HM3, page 63]
   - Dig in vegetated shakehole
@@ -1065,14 +1375,18 @@ Currently, each entrance has:
 
 ### TR7
 
-<img src="images/TR7.jpeg" width="50%"/>
+2022:
+
+<img src="images/TR7-2022.jpeg" width="50%"/>
 
 - Discovered in 2014 [HM3, page 63]
   - No obvious digging, both branches quickly become impassable
 
 ### TR8
 
-<img src="images/TR8.jpeg" width="50%"/>
+2022:
+
+<img src="images/TR8-2022.jpeg" width="50%"/>
 
 - Discovered in 2014 [HM3, page 63]
   - Ends in rift blocked by ice and cobbles
@@ -1080,10 +1394,32 @@ Currently, each entrance has:
 
 ### TR9
 
-<img src="images/TR9.jpeg" width="25%"/>
+2022:
+
+<img src="images/TR9-2022.jpeg" width="25%"/>
 
 - Discovered in 2014 [HM3, page 63]
   - Obvious way on is choked, no indication of how easy digging / rock removal might be
+- Revisited in 2023
+  - Howling draft coming out of the cave
+  - Vocal connection to a shake hole behind the main entrance
+  - A dig was found at the back in a tight crawl and pushed for 5m and continues on for about another 5m
+  - Very strong draft coming from the crawl, which turns to the right into the mountain
+
+### TR10
+
+2023:
+
+<div>
+  <img src="images/TR10-2023-1.jpeg" width="44.5%"/>
+  <img src="images/TR10-2023-2.jpeg" width="44.5%"/>
+</div>
+
+- Logged as TR10 (no idea when)
+- Relogged 2023
+  - Unclear whether this was ever descended but a 5m hole which looks enticing
+  - Not descended due to lack of gear
+  - A TR11 GPS point was also logged but couldn't find any cave there within a 15m radius
 
 ### U-Bend 571
 
