@@ -1,0 +1,46 @@
+# 2023.08.09 created by TopoDroid v 5.1.40
+
+survey fools_gold -title "fools gold"
+    # from pss6 of ghengis khan to pss7 to auld alliance 
+
+  centerline
+    date 2023.07.28 
+    # team CH,EP,AR 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend right
+    0 1 25.44 305.1 -8.9
+    extend left
+    1 2 6.77 200.6 -23.5
+    2 3 10.94 102.5 80.1
+    extend right
+    3 4 9.50 27.9 69.2
+    extend left
+    4 5 4.76 151.9 10.8
+    5 6 5.29 131.8 -10.3
+    extend right
+    6 7 3.79 326.2 -33.4
+    # extend auto
+    6 . 4.84 335.0 -0.4
+    6 . 4.41 354.4 0.9
+    6 . 4.11 27.4 7.0
+    6 . 2.55 75.5 24.5
+    6 . 5.37 351.0 64.4
+    6 . 10.87 302.7 7.6
+    6 . 7.12 296.5 8.8
+    6 . 6.90 312.8 7.3
+    6 . 8.66 306.3 18.5
+  endcenterline
+
+  # input "fools_gold-1p.th2"
+  # input "fools_gold-1s.th2"
+
+  # map m1p -projection plan
+  #   fools_gold-1p
+  # endmap
+  # map m1s -projection extended
+  #   fools_gold-1s
+  # endmap
+
+endsurvey
