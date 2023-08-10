@@ -1,0 +1,94 @@
+# 2023.08.10 created by TopoDroid v 5.1.40
+
+survey blossom_hill -title "Blossom Hill"
+    # possible bolt climb 
+
+  centerline
+    date 2023.07.30 
+    # team AT,E,AR 
+
+    station 5 "right bolt of the y hang down the next pitch"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    0 . 5.61 257.1 54.4
+    0 . 4.20 268.1 64.7
+    0 . 3.22 247.4 8.2
+    0 . 2.15 304.8 13.5
+    0 . 2.57 275.3 -44.1
+    0 . 2.62 239.8 14.4
+    0 . 6.04 252.3 53.9
+    0 . 4.75 257.4 58.5
+    0 . 3.78 253.0 51.1
+    0 . 4.41 248.6 65.0
+    extend left
+    0 1 1.37 224.3 -17.0
+    # extend auto
+    1 . 6.21 327.2 74.7
+    1 . 6.39 326.9 71.8
+    1 . 6.40 328.4 76.7
+    1 . 5.78 281.6 70.2
+    1 . 2.13 9.0 10.6
+    1 . 1.92 348.5 -36.2
+    1 . 2.10 327.1 -34.1
+    1 . 2.36 87.8 19.8
+    1 . 1.46 91.9 32.4
+    1 . 2.65 95.6 -7.0
+    1 . 2.87 85.5 -29.1
+    1 . 2.70 79.8 -12.0
+    1 . 1.17 90.1 -59.9
+    extend vertical
+    1 2 4.32 85.3 -56.4
+    # extend auto
+    2 . 6.86 263.2 64.7
+    2 . 4.41 248.8 78.8
+    2 . 1.36 204.8 61.6
+    2 . 1.83 339.6 32.3
+    2 . 2.34 250.4 23.7
+    2 . 2.31 262.7 34.8
+    2 . 1.04 111.0 38.4
+    2 . 1.04 56.4 45.4
+    2 . 2.24 242.2 10.0
+    2 . 3.80 228.2 78.5
+    2 . 1.56 219.1 37.9
+    2 . 2.09 334.3 18.1
+    extend right
+    2 3 1.79 345.8 45.9
+    # extend auto
+    3 . 1.75 284.5 -14.3
+    3 . 1.81 289.1 -26.3
+    3 . 2.69 217.7 -7.9
+    3 . 1.49 170.2 -0.8
+    3 . 3.77 49.3 -85.9
+    extend right
+    3 4 4.18 33.9 -62.7
+    # extend auto
+    4 . 2.94 65.5 6.9
+    4 . 4.19 50.7 60.4
+    4 . 3.29 35.3 78.5
+    4 . 1.09 150.4 49.2
+    4 . 1.12 333.3 47.2
+    4 . 2.85 223.4 32.3
+    4 . 2.61 229.2 15.0
+    4 . 1.36 280.7 52.7
+    4 . 1.77 212.9 50.1
+    4 . 6.49 223.5 49.4
+    4 . 3.73 229.4 62.4
+    4 . 3.23 225.1 44.3
+    extend left
+    4 5 1.29 106.2 59.1
+  endcenterline
+
+  # input "blossom_hill-1p.th2"
+  # input "blossom_hill-1s.th2"
+
+  # map m1p -projection plan
+  #   blossom_hill-1p
+  # endmap
+  # map m1s -projection extended
+  #   blossom_hill-1s
+  # endmap
+
+endsurvey

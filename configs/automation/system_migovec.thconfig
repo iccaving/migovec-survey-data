@@ -23,7 +23,7 @@ input "../../layouts/mods.thl"
 #----------------------------------------------------------------------------------|
 # export a PLAN view
 
-
+export map -o ../../outputs/sysem_migovec -fmt esri
 layout plan
 	copy base-p
 	scale-bar 400 m

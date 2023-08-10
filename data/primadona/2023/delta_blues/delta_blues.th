@@ -2,6 +2,16 @@
 
 survey delta_blues -title "Delta Blues"
     # traverse and streamway passage below who dies first 
+  input "delta_blues-e.th2"
+  input "delta_blues-p.th2"
+
+  map m-all-p -projection plan
+    delta_blues-1p
+  endmap
+
+  map m-all-e -projection extended
+    delta_blues-1e
+  endmap
 
   centerline
     date 2023.07.17 
