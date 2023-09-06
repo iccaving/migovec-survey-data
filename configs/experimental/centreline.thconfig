@@ -1,3 +1,5 @@
 source "../../data/system_migovec.th"
 
+export model -o ../../outputs/system_migovec.3d -fmt survex 
+
 export database -o ../../outputs/system_migovec.csv

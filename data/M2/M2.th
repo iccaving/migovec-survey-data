@@ -66,5 +66,10 @@ survey M2 -title "M2 part of System Migovec" -entrance 16@izent1 -attr cadastral
 	join napsihiran_rov-1e@napsihiran_rov wizard_of_oz-1e@wizard_of_oz
 
 	join wizard_of_oz-1p@wizard_of_oz napsihiran_rov-1p@napsihiran_rov
+
+	###__________2022____________###
+	input ./2022/novi_vhod/novi_vhod.th 
+
+	equate 2@novi_vhod 16@izent1
 	
 endsurvey
