@@ -671,6 +671,12 @@ survey gps -title "GPS"
     0 1 0 0 0
     endcentreline
     endsurvey
+    
+    survey LP37 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
 
 	centreline
 	cs lat-long
@@ -778,12 +784,13 @@ survey gps -title "GPS"
     fix 0@LP32 46.247436 13.764617 1758.38
     fix 0@LP33 46.247316 13.764724 1754.02
     fix 0@LP34 46.247220 13.764806 1752.44
+    fix 0@LP37 46.247856 13.763925 1762.00
 
     # other noteworthy locations 
     fix 0@amphitheatre 46.249812 13.764840 1822.73
     fix 0@old_path_start 46.251653 13.763880 1869.22
     fix 0@whale_bone_view 46.251692 13.763997 1865.72
-    fix 0@abseil_watch_point 46.250974 13.758459 1856.01
+    fix 0@abseil_watch_point 46.250924 13.758651 1856.01
     fix 0@bivi 46.251529 13.762432 1859.19
     fix 0@dexter_the_tree 46.251389 13.762704 1868.24
     fix 0@pueblo_old_bivi 46.251935 13.764365 1843.58
