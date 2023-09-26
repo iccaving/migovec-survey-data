@@ -6,12 +6,20 @@ survey echo_falls -title "Echo Falls"
   input "echo_falls-e.th2"
 
   map m-all-p -projection plan
-    Echo_Falls-2p
+    echo_falls-1p
+    echo_falls-2p
+    break
+    echo_falls-3p
+    break
+    echo_falls-4p
   endmap
 
   map m-all-e -projection extended
     echo_falls-e
   endmap
+
+join echo_falls-1p echo_falls-2p
+join echo_falls-3p echo_falls-4p
 
   centerline
     date 2022.07.14
