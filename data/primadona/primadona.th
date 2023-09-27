@@ -569,6 +569,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join echo_falls-4p@echo_falls bin_bag_palace-1p@bin_bag_palace
 	join echo_falls-e@echo_falls bin_bag_palace-1e@bin_bag_palace
 	join beam_me_up-1s2@beam_me_up echo_falls-e@echo_falls
+	join bin_bag_palace-1e@bin_bag_palace blue_lagoon-1e@blue_lagoon
 	join sisyphus_slope-1p@sisyphus_slope cantina_canyon_2-1p@cantina_canyon_2
 
 	###______________ 2023______________###
@@ -588,4 +589,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 5@blossom_hill 13@bin_bag_palace #possibly 4@blossom_hill, see notes, check with Astrid
 
 	equate prima@prima_location 35@prima1
+
+	join a_dry_place-1p@a_dry_place echo_falls-4p@echo_falls
+	join a_dry_place-1e@a_dry_place echo_falls-e@echo_falls
 endsurvey
