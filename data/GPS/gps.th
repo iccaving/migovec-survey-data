@@ -671,7 +671,19 @@ survey gps -title "GPS"
     0 1 0 0 0
     endcentreline
     endsurvey
-    
+
+    survey LP35 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
+    survey LP36 -entrance 0
+    centreline
+    0 1 0 0 0
+    endcentreline
+    endsurvey
+
     survey LP37 -entrance 0
     centreline
     0 1 0 0 0
@@ -784,6 +796,8 @@ survey gps -title "GPS"
     fix 0@LP32 46.247436 13.764617 1758.38
     fix 0@LP33 46.247316 13.764724 1754.02
     fix 0@LP34 46.247220 13.764806 1752.44
+    fix 0@LP35 46.248420 13.764634 1772.42
+    fix 0@LP36 46.247153 13.765243 1746.97
     fix 0@LP37 46.247856 13.763925 1762.00
 
     # other noteworthy locations 
