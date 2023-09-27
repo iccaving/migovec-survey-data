@@ -8,7 +8,12 @@ survey the_deep_awakens -title "The deep awakens"
 
   map m-all-p -projection plan
     the_deep_awakens-1p
+    the_deep_awakens-2p
+    the_deep_awakens-3p
+    the_deep_awakens-4p
   endmap 
+
+  join the_deep_awakens-2p the_deep_awakens-3p
 
   map m-all-e -projection extended
     the_deep_awakens-1e
@@ -104,18 +109,18 @@ survey the_deep_awakens -title "The deep awakens"
     extend right
     5 7 2.29 56.8 14.4
     # extend auto
-    # Don't know why station 6 isn't connected
-    # 6 . 6.38 235.5 -6.6
-    # 6 . 1.43 190.1 -10.9
-    # 6 . 0.81 288.8 -11.6
-    # 6 . 3.45 172.1 80.5
-    # 6 . 3.95 96.7 73.1
-    # 6 . 4.14 143.0 63.3
-    # 6 . 4.03 166.7 59.3
-    # 6 . 2.44 12.1 10.7
-    # 6 . 2.48 27.2 5.3
-    # 6 . 3.21 20.6 36.6
-    # 6 . 2.15 67.0 0.3
+    # splays from 7 were mislabelled as being from non-existent station 6, they have been corrected
+    7 . 6.38 235.5 -6.6
+    7 . 1.43 190.1 -10.9
+    7 . 0.81 288.8 -11.6
+    7 . 3.45 172.1 80.5
+    7 . 3.95 96.7 73.1
+    7 . 4.14 143.0 63.3
+    7 . 4.03 166.7 59.3
+    7 . 2.44 12.1 10.7
+    7 . 2.48 27.2 5.3
+    7 . 3.21 20.6 36.6
+    7 . 2.15 67.0 0.3
     extend right
     7 8 2.47 113.6 55.2
     # extend auto
