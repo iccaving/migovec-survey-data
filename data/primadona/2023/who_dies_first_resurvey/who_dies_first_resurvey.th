@@ -2,10 +2,20 @@
 
 survey who_dies_first_resurvey -title "who dies first resurvey"
     # Resurvey with disto 
+  input who_dies_first_resurvey-p.th2
+  input who_dies_first_resurvey-e.th2
+
+  map m-all-p -projection plan 
+    who_dies_first_resurvey-1p
+  endmap
 
   centerline
     date 2023.07.17 
-    # team JW, MM 
+    team "James Wilson"
+    team "Matti Mitropoulos"
+    explo-team "Ana Teck"
+    explo-team "Rory Rose"
+    explo-team "Matti Mitropoulos"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

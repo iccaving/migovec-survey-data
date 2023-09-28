@@ -3,14 +3,17 @@
 
 survey who_dies_first -title "Who Dies First"
     # lead off boulder chamber in The Deep Awakens 
-  input who_dies_first-1p.th2 
-  #input who_dies_first-e.th2
+  input who_dies_first-p.th2 
+  input who_dies_first-e.th2
+  
   map m-all-p -projection plan 
     who_dies_first-1p
   endmap
-  #map m-all-e -projection extended
-    #who_dies_first-1e
-  #endmap
+
+  map m-all-e -projection extended
+    who_dies_first-1e
+  endmap
+
   centerline
     date 2022.07.26 
     team "Ana Teck"
@@ -61,7 +64,5 @@ survey who_dies_first -title "Who Dies First"
     extend left
     4 5 4.07 150.0 -25.0
   endcenterline
-
-
 
 endsurvey
