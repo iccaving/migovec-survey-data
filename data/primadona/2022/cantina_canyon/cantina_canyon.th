@@ -6,7 +6,7 @@ survey cantina_canyon -title "Cantina Canyon"
   input cantina_canyon-e.th2
 
   map m-all-p -projection plan 
-    Cantina_Canyon-Cantina_Canyonp
+    cantina_canyon-1p
   endmap
 
     map m-all-e -projection extended
@@ -180,6 +180,7 @@ survey cantina_canyon -title "Cantina Canyon"
     6 . 5.96 12.9 69.7
     extend right
     6 7 19.75 77.6 78.7
+    extend left
     7 6 20.74 253.2 -80.0
     # extend auto
     7 . 5.94 312.2 -10.1
@@ -214,13 +215,5 @@ survey cantina_canyon -title "Cantina Canyon"
     extend right
     8 9 1.45 47.4 -12.7
   endcenterline
-
-
-  # map mCantina_Canyonp -projection plan
-  #   Cantina_Canyon-Cantina_Canyonp
-  # endmap
-  # map mCantina_Canyons -projection extended
-  #   Cantina_Canyon-Cantina_Canyons
-  # endmap
 
 endsurvey

@@ -571,6 +571,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join beam_me_up-1s2@beam_me_up echo_falls-e@echo_falls
 	join bin_bag_palace-1e@bin_bag_palace blue_lagoon-1e@blue_lagoon
 	join sisyphus_slope-1p@sisyphus_slope cantina_canyon_2-1p@cantina_canyon_2
+	join the_deep_awakens-1p@the_deep_awakens The_Expo_Strikes_Back-1p@the_expo_strikes_back
+	join the_deep_awakens-4p@the_deep_awakens cantina_canyon-1p@cantina_canyon
+	join cantina_canyon-1p@cantina_canyon cantina_canyon_2-1p@cantina_canyon_2
 
 	###______________ 2023______________###
     input "./2023/delta_blues/delta_blues.th"
@@ -591,6 +594,6 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	join a_dry_place-1p@a_dry_place echo_falls-4p@echo_falls
 	join a_dry_place-1e@a_dry_place echo_falls-e@echo_falls
-	join the_deep_awakens-1p@the_deep_awakens The_Expo_Strikes_Back-1p@the_expo_strikes_back
+
 
 endsurvey
