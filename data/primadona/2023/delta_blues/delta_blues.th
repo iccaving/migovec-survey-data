@@ -7,11 +7,14 @@ survey delta_blues -title "Delta Blues"
 
   map m-all-p -projection plan
     delta_blues-1p
+    delta_blues-2p
   endmap
 
   map m-all-e -projection extended
     delta_blues-1e
   endmap
+
+  join delta_blues-1p delta_blues-2p
 
   centerline
     date 2023.07.17 
