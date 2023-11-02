@@ -479,7 +479,7 @@ survey the_deep_awakens -title "The deep awakens"
     33 . 11.83 273.0 58.0
     33 . 10.63 284.8 31.3
     extend left
-    33 34 3.43 228.3 -4.4
+    33 12 3.43 228.3 -4.4 #orignially labelled as 33->34
     31 35 15.51 131.8 -15.8
     extend right
     29 36 5.57 310.2 12.7
@@ -538,8 +538,10 @@ survey the_deep_awakens -title "The deep awakens"
     38 . 6.80 24.6 45.6
     38 . 9.23 24.9 46.5
     38 . 9.07 26.0 48.2
+    extend ignore 12 33
+#extend ignore 32 33
   endcenterline
 
 
-equate 12 34
+#equate 12 34 #stn 34 has been relabelled as 12 instead
 endsurvey

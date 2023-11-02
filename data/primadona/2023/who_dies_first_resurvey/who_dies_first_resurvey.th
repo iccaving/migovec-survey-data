@@ -9,6 +9,10 @@ survey who_dies_first_resurvey -title "who dies first resurvey"
     who_dies_first_resurvey-1p
   endmap
 
+  map m-all-e -projection extended
+    who_dies_first_resurvey-1e
+  endmap 
+ 
   centerline
     date 2023.07.17 
     team "James Wilson"
@@ -97,7 +101,7 @@ survey who_dies_first_resurvey -title "who dies first resurvey"
     6 . 8.37 139.9 -24.4
     6 . 28.63 122.6 -30.0
     6 . 13.43 123.5 -42.4
-    extend left
+    extend right
     7 6 12.93 295.8 42.7
   endcenterline
 
