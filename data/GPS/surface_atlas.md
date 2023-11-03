@@ -1632,10 +1632,22 @@ we were hoping for." Photos in Slov 2009 folder
 
 ### S2
 
+2007:
+
+<div>
+  <img src="images/S2-2007.jpg" width="44.5%"/>
+</div>
+
+- Photo of entrance by Jarvist
 - No known information
 
 ### S3
 
+2007:
+
+<img src="images/S3-2007.jpg" width="44.5%"/>
+
+- Photo of entrance by Jarvist
 - No known information
 
 ### S4
@@ -1644,9 +1656,14 @@ we were hoping for." Photos in Slov 2009 folder
 
 ### S5
 
+2007:
+
+<img src="images/S5-2007.jpg" width="44.5%"/>
+
 - Discovered in 2013 [HM3, page 37]
   - Initially a free-climbable p6, followed by a p20 that requires a rope
   - Appears that this hasn't been descended
+  - Confused whether the 2007 image is the same cave as Gergely's description from 2013 HM3
 
 ### S6
 
@@ -1656,9 +1673,26 @@ we were hoping for." Photos in Slov 2009 folder
 
 ### S7
 
+<div>
+  <img src="images/S7-2007.jpg" width="44.5%"/>
+  <img src="images/S7-2007(pitch}.jpg" width="44.5%"/>
+</div>
+
 - Discovered in 2013 [HM3, page 37]
   - Cold air drafting from between two boulders
   - Not an actual entrance, but could be dug into one
+  - Photo of entrance by Jarvist
+  - Confused whether the lablled 2007 images are the same cave as Gergely's description from 2013 HM3 given that the 2007 photos show a pitch. It's not even that clear whether they relate to the same cave as each other, they look a little different
+ 
+### S8
+
+2007:
+
+<img src="images/S8-2007.jpg" width="25%"/>
+
+- Photo of entrance by Jarvist
+- No known information
+
 
 ### S12
 
