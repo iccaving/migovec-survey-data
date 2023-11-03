@@ -1719,8 +1719,10 @@ we were hoping for." Photos in Slov 2009 folder
 
 ### Sunset Hole
 
-- Discovered in 2014 [HM3, page 104]
-  - A small hole, appears to have not been investigated
+- Discovered in 2014 [HM3, page 104] by Fiona H
+  - A small hole, below Sunset Spot, not far off the main path (left when looking uphill) up to the Plateau
+  - Short tube sloping downwards into small chamber (room to turn around kneeling), tube continued sloping downwards and got too tight (leg sized)
+  - Not a good lead
 
 ### T2
 
@@ -1739,7 +1741,8 @@ we were hoping for." Photos in Slov 2009 folder
 
 - Mentioned in HM1, page 99, 1998
   - "A slow shuffle into the bedding leads to a small, 8” hole. Beyond this restriction was black space, and the source of the very strong draft"
-  - Doesn't seem to have been investigated further
+  - Noted in Jarv's requests for stories in HM2 Doesn't seem to have been investigated further
+  - 
 
 ### TR1
 
