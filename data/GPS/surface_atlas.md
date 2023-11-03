@@ -237,11 +237,11 @@ Currently, each entrance has:
 <img src="images/E1-2022.jpeg" width="25%"/>
 
 2008
-<img src="images/e1-2008.jpg" width="25%"/>" 
+<img src="images/e1-2008.jpg" width="25%"/>
 
 2007:
-<img src="images/e1-2007.jpg" width="25%"/>" 
-<img src="images/e1-2007(2).jpg" width="25%"/>" 
+<img src="images/e1-2007.jpg" width="25%"/>
+<img src="images/e1-2007(2).jpg" width="25%"/> 
 
 - Discovered in 2007 [HM2 draft, page 14]
   - A 25m pitch leading to small windows which require widening to pass
