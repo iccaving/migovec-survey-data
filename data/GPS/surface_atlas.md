@@ -236,10 +236,22 @@ Currently, each entrance has:
 
 <img src="images/E1-2022.jpeg" width="25%"/>
 
+2008
+<img src="images/e1-2008.jpg" width="25%"/>" 
+
+2007:
+<img src="images/e1-2007.jpg" width="25%"/>" 
+<img src="images/e1-2007(2).jpg" width="25%"/>" 
+
 - Discovered in 2007 [HM2 draft, page 14]
   - A 25m pitch leading to small windows which require widening to pass
 - Revisited in 2008 [HM2 draft, page 41]
-  - Some leads killed but may be ongoing, unclear from description
+  - "small crawl" ongoing, but abandoned. Still a lead?
+  - "deep deep" crawl not dead, dug out to very tight pitch-head. Surface survey, tied centerline to M2 entrance
+- Revisited in 2009 [HM2 2019 draft, page 64]
+   - cave approx 30m deep
+   - dropped second pitch (capping and chiselling) into chamber, dug in floor to bedrock. Quote: "No better nor worst than capped pitch, but not the stunning lead
+we were hoping for." Photos in Slov 2009 folder
 
 ### E2
 
@@ -252,6 +264,27 @@ Currently, each entrance has:
   - Ben R remembers poking around it with Janet at some point
   - No obvious leads that he can remember
   - Could be revisited
+
+ 
+### E6
+
+2007:
+
+<img src="images/e6-2007.jpg" width="25%"/>" 
+
+- Photo from 2007, information from filename. Red paint marking "E7" noted. No other info
+- Unclear if a cave
+- could be revisited
+
+
+### E7
+
+<img src="images/e7-2007.jpg" width="25%"/>" 
+
+- Photo from 2007, information from filename. No other info
+- Unclear if a cave
+- could be revisited
+
 
 ### E8
 
