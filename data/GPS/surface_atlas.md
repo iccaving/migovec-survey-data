@@ -1675,7 +1675,7 @@ we were hoping for." Photos in Slov 2009 folder
 
 <div>
   <img src="images/S7-2007.jpg" width="44.5%"/>
-  <img src="images/S7-2007(pitch}.jpg" width="44.5%"/>
+  <img src="images/S7-2007(pitch).jpg" width="44.5%"/>
 </div>
 
 - Discovered in 2013 [HM3, page 37]
