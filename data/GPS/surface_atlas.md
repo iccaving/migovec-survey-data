@@ -1267,8 +1267,17 @@ we were hoping for." Photos in Slov 2009 folder
 
 ### M6
 
+2007:
+
+<img src="images/M6-2007.jpg" width="25%"/>
+
+
 - Depth indicated as -67 m as of 1993 [HM1, page 13]
 - Spotted some coordinates on the [old Slovenia expo website](https://www.union.ic.ac.uk/rcc/caving/old/slovenia/report/cavedata)
+- Revisited 2007 [HM2 draft, page 13]
+  - small extensions - "pretty little bit of stream formed new cave, ended in draughting bedding plane dig."
+  - images of surface shaft and Tetley putting in a rebelay
+  - resurveyed
 
 ### M7
 
@@ -1356,6 +1365,11 @@ we were hoping for." Photos in Slov 2009 folder
 - An entrance to the main system discovered by the Slovenes in 1982. [HM1, page 8]
 
 ### M17
+
+2018:
+
+<img src="images/M17-2018.jpg" width="25%"/>
+
 
 - Depth indicated as -58m as of 1993 [HM1, page 13]
 - Further explored in 1994, HM1 page 25 with survey
@@ -1454,6 +1468,22 @@ we were hoping for." Photos in Slov 2009 folder
   - All leads seem to have been killed
   - Only way on is another squeeze which would require rock removal to pass
 
+### Mugo
+
+2020:
+
+<div>
+<img src="images/Mugo Upper Entrance-2020.jpg" width="25%"/>
+<img src="images/Mugo Lower Entrance-2020.jpg" width="25%"/>
+</div>
+
+- Discovered in 2020 [Slovenia subsite, 2020 Summer Action]
+  - accessed from the contour path linking Kal to the head of the Tolminka valley
+  - found while looking at overhangs and possible cave entrances that had been identified from below before ascending scree slopes below Gondolin
+  - short descent unveiled a chamber which continued with a small climb into a dead end
+  - two entrances
+  - surveyed; final length 38m, depth 7m
+
 ### N01
 
 2023:
@@ -1508,6 +1538,11 @@ we were hoping for." Photos in Slov 2009 folder
 - No known information
 
 ### N9, Kuk Pot
+
+2012:
+
+<img src="images/N9, Kuk Pot-2012.jpg" width="25%"/>
+
 
 - First mentioned in 2012 [HM2 draft, page 136]
   - First two pitches dropped
