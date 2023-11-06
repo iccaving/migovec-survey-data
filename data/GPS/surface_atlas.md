@@ -305,15 +305,6 @@ we were hoping for." Photos in Slov 2009 folder
   - Just an alcove, like K1
   - Small free climb through to the roof
 
-### East Pole, S1
-
-- Mentioned in HM1, page 99, 1998
-  - Multiple chambers and small pitches, but very unstable
-  - Multiple digging trips have since returned to the cave with no major breakthroughs
-  - "[a] promising lead"
-- Revisited in 2017 [HM3, page 271]
-  - Did not manage to make progress on the upwards dig
-  - Marginal progress was made over a tight rift, despite the loss of the lump hammer
 
 ### Gelateria
 
@@ -1672,6 +1663,31 @@ we were hoping for." Photos in Slov 2009 folder
   - All possible leads investigated
   - Can hear cave continues onto another chamber at bottom of final pitch but not worth blasting since walls close in
   - Conclusively dead this time
+
+### S1 aka East Pole
+
+2009:
+
+<img src="images/S1-2009.jpg" width="44.5%"/>
+
+
+2007:
+
+<img src="images/S1-2007.jpg" width="25%"/>
+
+
+- Mentioned in HM1, page 99, 1998
+  - Multiple chambers and small pitches, but very unstable
+  - Multiple digging trips have since returned to the cave with no major breakthroughs
+  - "[a] promising lead"
+- Revisisted in 2007, 2008 and 2009
+  - No write ups of the trips; only references to progress from tweet [Votla Gora tweets, 2:32 PM Aug 10th, 2008] given below
+  - "S1: way to right hand pitch found by hammering rift above big pitch.Strong draft from tight meander, several hrs hard hammer.4th system?"
+  - entrance photos and walk labelled under Eastpole
+- Revisited in 2017 [HM3, page 271] [2017 logbook]
+  - Did not manage to make progress on the upwards dig
+  - Marginal progress was made over a tight rift, despite the loss of the lump hammer
+
 
 ### S2
 
