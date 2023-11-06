@@ -592,6 +592,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 5@blossom_hill 13@bin_bag_palace #possibly 4@blossom_hill, see notes, check with Astrid
 	equate prima@prima_location 35@prima1
 
+	join blossom_hill-1p@blossom_hill bin_bag_palace-2p@bin_bag_palace
+	join blossom1@blossom_hill bag1@bin_bag_palace #Elevation line join
+	join blossom2@blossom_hill bag2@bin_bag_palace #Elevation line join
 	join a_dry_place-1p@a_dry_place echo_falls-4p@echo_falls
 	join a_dry_place-1e@a_dry_place echo_falls-e@echo_falls
 	join who_dies_first_resurvey-1p@who_dies_first_resurvey the_deep_awakens-3p@the_deep_awakens

@@ -2,7 +2,15 @@
 
 survey blossom_hill -title "Blossom Hill"
     # possible bolt climb 
+     input "blossom_hill-p.th2"
+     input "blossom_hill-1s.th2"
 
+   map m-all-p -projection plan
+     blossom_hill-1p
+   endmap
+   map m-all-e -projection extended
+     blossom_hill-1s
+   endmap
   centerline
     date 2023.07.30 
     # team AT,E,AR 
@@ -81,14 +89,6 @@ survey blossom_hill -title "Blossom Hill"
     4 5 1.29 106.2 59.1
   endcenterline
 
-  # input "blossom_hill-1p.th2"
-  # input "blossom_hill-1s.th2"
-
-  # map m1p -projection plan
-  #   blossom_hill-1p
-  # endmap
-  # map m1s -projection extended
-  #   blossom_hill-1s
-  # endmap
+  
 
 endsurvey
