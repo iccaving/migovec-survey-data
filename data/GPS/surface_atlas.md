@@ -87,7 +87,13 @@ Currently, each entrance has:
   <img src="images/B10-2023-2.jpeg" width="25%"/>
 </div>
 
-- Dug in 2014, first discovered during the blowing holes recce of 1995 [HM3, page 61, page 104]
+2010:
+
+<img src="images/B10-2010.jpg" width="25%"/>
+
+First discovered during the blowing holes recce of 1995 [HM3, page 61, page 104]
+- Photos show some surface bashing in 2010
+- Dug in 2014
   - Contains a narrow tube suitable for digging
   - More digging required
 - Relogged in 2023
@@ -1450,6 +1456,10 @@ we were hoping for." Photos in Slov 2009 folder
 
 <img src="images/Moth-2022.jpeg" width="50%"/>
 
+2007
+
+<img src="images/Moth Cave-2007.jpg" width="44.5%"/>
+
 - Discovered in 2006 [HM1, page 207]
   - Located close to Hare cave
   - Left at a pile of draughting boulders which are easy and quick to dig
@@ -1611,13 +1621,21 @@ we were hoping for." Photos in Slov 2009 folder
 
 ### Planika
 
+2007:
+
+<div>
+  <img src="images/Planika-2007(1).jpg" width="44.5%"/>
+  <img src="images/Planika-2007(2).jpg" width="44.5%"/>
+</div>
+
 - Discovered in 2007 [HM2 draft, page 18]
   - Large snow and ice filled cave with holes driven through it by water and air
   - Ends in an un-pushed ice tube after a scary boulder funnel
 - Revisited in 2008 [HM2 draft, page 31]
   - No further progress on the route from the previous year made due to high snow levels
-  - A new rift found from a water drilled hole through the snow plug
+  - A new rift (implied name Echo Rift) found from a water drilled hole through the snow plug which was pushed down a pitch
   - Another chamber was found from a window
+  - Upper rift "Diggers of the UG"
 
 ### Postcard Cave
 
