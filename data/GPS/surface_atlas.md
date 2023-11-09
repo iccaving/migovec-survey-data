@@ -87,7 +87,13 @@ Currently, each entrance has:
   <img src="images/B10-2023-2.jpeg" width="25%"/>
 </div>
 
-- Dug in 2014, first discovered during the blowing holes recce of 1995 [HM3, page 61, page 104]
+2010:
+
+<img src="images/B10-2010.jpg" width="25%"/>
+
+First discovered during the blowing holes recce of 1995 [HM3, page 61, page 104]
+- Photos show some surface bashing in 2010
+- Dug in 2014
   - Contains a narrow tube suitable for digging
   - More digging required
 - Relogged in 2023
@@ -234,12 +240,32 @@ Currently, each entrance has:
 
 2022:
 
+<div>
 <img src="images/E1-2022.jpeg" width="25%"/>
+</div>
+
+2008:
+
+<div>
+<img src="images/e1-2008.jpg" width="25%"/>
+</div>
+
+2007:
+
+<div>
+<img src="images/e1-2007.jpg" width="25%"/>
+<img src="images/e1-2007(2).jpg" width="25%"/> 
+</div>
 
 - Discovered in 2007 [HM2 draft, page 14]
   - A 25m pitch leading to small windows which require widening to pass
 - Revisited in 2008 [HM2 draft, page 41]
-  - Some leads killed but may be ongoing, unclear from description
+  - "small crawl" ongoing, but abandoned. Still a lead?
+  - "deep deep" crawl not dead, dug out to very tight pitch-head. Surface survey, tied centerline to M2 entrance
+- Revisited in 2009 [HM2 2019 draft, page 64]
+   - cave approx 30m deep
+   - dropped second pitch (capping and chiselling) into chamber, dug in floor to bedrock. Quote: "No better nor worst than capped pitch, but not the stunning lead
+we were hoping for." Photos in Slov 2009 folder
 
 ### E2
 
@@ -253,6 +279,27 @@ Currently, each entrance has:
   - No obvious leads that he can remember
   - Could be revisited
 
+ 
+### E6
+
+2007:
+
+<img src="images/e6-2007.jpg" width="25%"/>" 
+
+- Photo from 2007, information from filename. Red paint marking "E7" noted. No other info
+- Unclear if a cave
+- could be revisited
+
+
+### E7
+
+<img src="images/e7-2007.jpg" width="25%"/>" 
+
+- Photo from 2007, information from filename. No other info
+- Unclear if a cave
+- could be revisited
+
+
 ### E8
 
 2022:
@@ -264,15 +311,6 @@ Currently, each entrance has:
   - Just an alcove, like K1
   - Small free climb through to the roof
 
-### East Pole, S1
-
-- Mentioned in HM1, page 99, 1998
-  - Multiple chambers and small pitches, but very unstable
-  - Multiple digging trips have since returned to the cave with no major breakthroughs
-  - "[a] promising lead"
-- Revisited in 2017 [HM3, page 271]
-  - Did not manage to make progress on the upwards dig
-  - Marginal progress was made over a tight rift, despite the loss of the lump hammer
 
 ### Gelateria
 
@@ -329,6 +367,14 @@ Currently, each entrance has:
 2022:
 
 <img src="images/MLC-2022.jpeg" width="25%"/>
+
+2009:
+
+<div>
+<img src="images/MLC-2009.jpg" width="44.5%"/>
+<img src="images/MLC-2009(2).jpg" width="44.5%"/>
+</div>
+
 
 - Description in HM1, page 184, 2004
   - Small airy passage in the side of a shakehole near the Kuk path
@@ -1218,8 +1264,17 @@ Currently, each entrance has:
 
 ### M6
 
+2007:
+
+<img src="images/M6-2007.jpg" width="25%"/>
+
+
 - Depth indicated as -67 m as of 1993 [HM1, page 13]
 - Spotted some coordinates on the [old Slovenia expo website](https://www.union.ic.ac.uk/rcc/caving/old/slovenia/report/cavedata)
+- Revisited 2007 [HM2 draft, page 13]
+  - small extensions - "pretty little bit of stream formed new cave, ended in draughting bedding plane dig."
+  - images of surface shaft and Tetley putting in a rebelay
+  - resurveyed
 
 ### M7
 
@@ -1307,6 +1362,11 @@ Currently, each entrance has:
 - An entrance to the main system discovered by the Slovenes in 1982. [HM1, page 8]
 
 ### M17
+
+2018:
+
+<img src="images/M17-2018.jpg" width="25%"/>
+
 
 - Depth indicated as -58m as of 1993 [HM1, page 13]
 - Further explored in 1994, HM1 page 25 with survey
@@ -1396,6 +1456,10 @@ Currently, each entrance has:
 
 <img src="images/Moth-2022.jpeg" width="50%"/>
 
+2007
+
+<img src="images/Moth Cave-2007.jpg" width="44.5%"/>
+
 - Discovered in 2006 [HM1, page 207]
   - Located close to Hare cave
   - Left at a pile of draughting boulders which are easy and quick to dig
@@ -1404,6 +1468,22 @@ Currently, each entrance has:
   - Large volumes of gravel removed
   - All leads seem to have been killed
   - Only way on is another squeeze which would require rock removal to pass
+
+### Mugo
+
+2020:
+
+<div>
+<img src="images/Mugo Upper Entrance-2020.jpg" width="25%"/>
+<img src="images/Mugo Lower Entrance-2020.jpg" width="25%"/>
+</div>
+
+- Discovered in 2020 [Slovenia subsite, 2020 Summer Action]
+  - accessed from the contour path linking Kal to the head of the Tolminka valley
+  - found while looking at overhangs and possible cave entrances that had been identified from below before ascending scree slopes below Gondolin
+  - short descent unveiled a chamber which continued with a small climb into a dead end
+  - two entrances
+  - surveyed; final length 38m, depth 7m
 
 ### N01
 
@@ -1459,6 +1539,11 @@ Currently, each entrance has:
 - No known information
 
 ### N9, Kuk Pot
+
+2012:
+
+<img src="images/N9, Kuk Pot-2012.jpg" width="25%"/>
+
 
 - First mentioned in 2012 [HM2 draft, page 136]
   - First two pitches dropped
@@ -1536,13 +1621,21 @@ Currently, each entrance has:
 
 ### Planika
 
+2007:
+
+<div>
+  <img src="images/Planika-2007(1).jpg" width="44.5%"/>
+  <img src="images/Planika-2007(2).jpg" width="44.5%"/>
+</div>
+
 - Discovered in 2007 [HM2 draft, page 18]
   - Large snow and ice filled cave with holes driven through it by water and air
   - Ends in an un-pushed ice tube after a scary boulder funnel
 - Revisited in 2008 [HM2 draft, page 31]
   - No further progress on the route from the previous year made due to high snow levels
-  - A new rift found from a water drilled hole through the snow plug
+  - A new rift (implied name Echo Rift) found from a water drilled hole through the snow plug which was pushed down a pitch
   - Another chamber was found from a window
+  - Upper rift "Diggers of the UG"
 
 ### Postcard Cave
 
@@ -1589,12 +1682,49 @@ Currently, each entrance has:
   - Can hear cave continues onto another chamber at bottom of final pitch but not worth blasting since walls close in
   - Conclusively dead this time
 
+### S1 aka East Pole
+
+2009:
+
+<img src="images/S1-2009.jpg" width="44.5%"/>
+
+
+2007:
+
+<img src="images/S1-2007.jpg" width="25%"/>
+
+
+- Mentioned in HM1, page 99, 1998
+  - Multiple chambers and small pitches, but very unstable
+  - Multiple digging trips have since returned to the cave with no major breakthroughs
+  - "[a] promising lead"
+- Revisisted in 2007, 2008 and 2009
+  - No write ups of the trips; only references to progress from tweet [Votla Gora tweets, 2:32 PM Aug 10th, 2008] given below
+  - "S1: way to right hand pitch found by hammering rift above big pitch.Strong draft from tight meander, several hrs hard hammer.4th system?"
+  - entrance photos and walk labelled under Eastpole
+- Revisited in 2017 [HM3, page 271] [2017 logbook]
+  - Did not manage to make progress on the upwards dig
+  - Marginal progress was made over a tight rift, despite the loss of the lump hammer
+
+
 ### S2
 
+2007:
+
+<div>
+  <img src="images/S2-2007.jpg" width="44.5%"/>
+</div>
+
+- Photo of entrance by Jarvist
 - No known information
 
 ### S3
 
+2007:
+
+<img src="images/S3-2007.jpg" width="44.5%"/>
+
+- Photo of entrance by Jarvist
 - No known information
 
 ### S4
@@ -1603,9 +1733,14 @@ Currently, each entrance has:
 
 ### S5
 
+2007:
+
+<img src="images/S5-2007.jpg" width="44.5%"/>
+
 - Discovered in 2013 [HM3, page 37]
   - Initially a free-climbable p6, followed by a p20 that requires a rope
   - Appears that this hasn't been descended
+  - Confused whether the 2007 image is the same cave as Gergely's description from 2013 HM3
 
 ### S6
 
@@ -1615,9 +1750,26 @@ Currently, each entrance has:
 
 ### S7
 
+<div>
+  <img src="images/S7-2007.jpg" width="44.5%"/>
+  <img src="images/S7-2007(pitch).jpg" width="44.5%"/>
+</div>
+
 - Discovered in 2013 [HM3, page 37]
   - Cold air drafting from between two boulders
   - Not an actual entrance, but could be dug into one
+  - Photo of entrance by Jarvist
+  - Confused whether the lablled 2007 images are the same cave as Gergely's description from 2013 HM3 given that the 2007 photos show a pitch. It's not even that clear whether they relate to the same cave as each other, they look a little different
+ 
+### S8
+
+2007:
+
+<img src="images/S8-2007.jpg" width="25%"/>
+
+- Photo of entrance by Jarvist
+- No known information
+
 
 ### S12
 
@@ -1678,8 +1830,10 @@ Currently, each entrance has:
 
 ### Sunset Hole
 
-- Discovered in 2014 [HM3, page 104]
-  - A small hole, appears to have not been investigated
+- Discovered in 2014 [HM3, page 104] by Fiona H
+  - A small hole, below Sunset Spot, not far off the main path (left when looking uphill) up to the Plateau
+  - Short tube sloping downwards into small chamber (room to turn around kneeling), tube continued sloping downwards and got too tight (leg sized)
+  - Not a good lead
 
 ### T2
 
@@ -1698,7 +1852,8 @@ Currently, each entrance has:
 
 - Mentioned in HM1, page 99, 1998
   - "A slow shuffle into the bedding leads to a small, 8” hole. Beyond this restriction was black space, and the source of the very strong draft"
-  - Doesn't seem to have been investigated further
+  - Noted in Jarv's requests for stories in HM2 Doesn't seem to have been investigated further
+  - 
 
 ### TR1
 
