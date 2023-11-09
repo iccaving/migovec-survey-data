@@ -176,6 +176,7 @@ map  m-electric_branch-e -projection extended
 endmap
 
 centreline
+    extend ignore 0@who_dies_first_resurvey
 	extend right 21@plumbers_paradise
 	extend right 4@risanke
 endcentreline
