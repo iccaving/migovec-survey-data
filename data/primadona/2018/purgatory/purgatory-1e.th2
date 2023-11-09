@@ -2,16 +2,15 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1397.900000 2471.200000
 ##XTHERION## xth_me_area_zoom_to 100
 
+scrap purgatory-1e -projection extended -scale [0 0 100 0 0 0 1 0 m]
 
-scrap purgatory-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
-
-point 1028.7275 1916.3117 station -name 9
-point 955.1478 1934.3595 station -name 7
-point 861.2065 1910.7585 station -name 6
-point 733.4832 1982.4871 station -name 3
-point 645.095 1990.8169 station -name 2
-point 615.9408 2145.8433 station -name 1
-point 504.8771 2131.4976 station -name 0
+point 1028.73 1916.31 station -name 9
+point 955.148 1934.36 station -name 7
+point 861.207 1910.76 station -name 6
+point 733.483 1982.49 station -name 3
+point 645.095 1990.82 station -name 2
+point 615.941 2145.84 station -name 1
+point 504.877 2131.5 station -name 0
 line wall -subtype invisible
   775.1321 1906.1308
   879.2543 1892.2479
@@ -80,10 +79,11 @@ endline
 endscrap
 
 
-scrap purgatory-2e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
+scrap purgatory-2e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
-point 481.9702 2035.4738 station -name 5
-point 627.6256 2015.1121 station -name 4
+point 733.483 1982.49 station -name 3
+point 481.97 2035.47 station -name 5
+point 627.626 2015.11 station -name 4
 line wall 
   764.4885 2017.6573
   722.8396 2023.2105
