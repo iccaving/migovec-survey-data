@@ -4,7 +4,7 @@ encoding utf-8
 
 # 2022.07.22 created by TopoDroid v. 5.1.40
 
-scrap 100%_cocoa-100%_cocoas -projection [elevation 0] -scale [0 0 98.4252 0 0 0 1 0 m]
+scrap 100_cocoa-1e -projection extended -scale [0 0 98.4252 0 0 0 1 0 m]
 
 line wall
   824.21 -488.84
@@ -303,12 +303,12 @@ line u:splay -visibility off
   514.64 -615.32
 endline
 
-point 492.13 -590.55 station -name "9"
-point 593.99 -599.08 station -name "7"
-point 757.07 -571.58 station -name "5"
-point 825.85 -542.54 station -name "3"
-point 848.48 -544.53 station -name "1"
-point 980.43 -552.29 station -name "0"
+point 492.13 -590.55 station -name 9
+point 593.99 -599.08 station -name 7
+point 757.07 -571.58 station -name 5
+point 825.85 -542.54 station -name 3
+point 848.48 -544.53 station -name 1
+point 980.43 -552.29 station -name 0
 
 
 endscrap

@@ -28,7 +28,7 @@ layout plan
 	copy colour-by-new
 	symbol-hide point u:flag
 
-	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2021<br>Natančmost meritev IV/B<br><br><br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<br><br>Belladonna<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2021<br>BCRA grade 4-5b<br><br><br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180<br><br>Belladonna"
+	map-comment "<lang:sl>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 2000-2023<br>Natančmost meritev IV/B<br><br><br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<br><br>Belladonna<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2021<br>BCRA grade 4-5b<br><br><br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180<br><br>Belladonna"
 
 code tex-map
 
@@ -68,7 +68,6 @@ export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_plan_ENG.s
 source 
 	map mlocale
 		m-all-e@primadona_ubend_mona_tip.system_migovec
-		coda@mona_tip.primadona_ubend_mona_tip.system_migovec 
 	endmap
 endsource 
 

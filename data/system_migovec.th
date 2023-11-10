@@ -36,11 +36,11 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 
 		#M16
 		station 1@entrance.M16.m2m16m18 entrance
-		#fix 1@entrance.M16.m2m16m18 405073 123841 1852  # old GK?
+		fix 1@entrance.M16.m2m16m18 405067.09  123837.46 1854.40
 
 		#Primadona
 		station 35@prima1.primadona.primadona_ubend_mona_tip entrance
-		fix MT1@prima_location.primadona.primadona_ubend_mona_tip 404532.51 123865.37 1723.10 # old GK?
+		fix MT1@prima_location.primadona.primadona_ubend_mona_tip 404532.51 123865.37 1723.10 
 
 		#Vrtnarija
 		station 0@bclent2.vrtnarija.vrtnarija_vilinska entrance

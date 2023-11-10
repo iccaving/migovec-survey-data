@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap ad_aspera_per_aqua-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 
-	point 6434.0336 295.3965 label -align tl -text "Ad Aspera Per Aqua" -attr level 2
+	point 6434.0336 295.3965 label -align bl -text "Ad Aspera Per Aqua" -attr level 1
 
 	line border -close on -id ad_aspera_per_aqua-1s_water_1 -visibility on
 		7977.6158 446.55
