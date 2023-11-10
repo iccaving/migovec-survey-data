@@ -159,7 +159,7 @@ map m-death_star_branch-e -projection extended
 	m-all-e@cantina_canyon
 	m-all-e@cantina_canyon_2
 	m-all-e@antares
-	#m-all-e@who_dies_first_resurvey
+	m-all-e@who_dies_first_resurvey
 	m-all-e@the_deep_awakens
 	m-all-e@sisyphus_slope
 	m-all-e@delta_blues
@@ -176,6 +176,7 @@ map  m-electric_branch-e -projection extended
 endmap
 
 centreline
+    extend ignore 0@who_dies_first_resurvey
 	extend right 21@plumbers_paradise
 	extend right 4@risanke
 	extend ignore 0@who_dies_first_resurvey
