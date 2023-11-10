@@ -602,5 +602,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join who_dies_first_resurvey-1p@who_dies_first_resurvey delta_blues-1p@delta_blues
 	join delta_blues-2p@delta_blues the_deep_awakens-3p@the_deep_awakens
 
+	join who_dies_first_resurvey-1e@who_dies_first_resurvey the_deep_awakens-2e@the_deep_awakens
+	join who_dies_first_resurvey-1e@who_dies_first_resurvey delta_blues-1e@delta_blues
+	join delta_blues-1e@delta_blues the_deep_awakens-2e@the_deep_awakens
+
 
 endsurvey

@@ -17,7 +17,12 @@ survey the_deep_awakens -title "The deep awakens"
 
   map m-all-e -projection extended
     the_deep_awakens-1e
-  endmap 
+    the_deep_awakens-1.5e
+    the_deep_awakens-2e
+    the_deep_awakens-2.5e
+  endmap
+
+  join the_deep_awakens-1e the_deep_awakens-2e 
 
   centerline
     date 2022.07.18 
@@ -381,6 +386,7 @@ survey the_deep_awakens -title "The deep awakens"
     26 . 2.76 352.5 21.6
     extend right
     26 27 1.98 31.0 0.8
+    extend left #new
     11 28 8.52 17.0 9.9
     # extend auto
     28 . 1.59 313.8 -7.8
@@ -396,7 +402,7 @@ survey the_deep_awakens -title "The deep awakens"
     28 . 0.62 75.4 75.4
     28 . 0.86 112.2 53.2
     28 . 0.81 1.7 67.1
-    extend right
+    extend left #new
     28 29 5.08 90.6 41.7
     # extend auto
     29 . 0.98 225.5 -4.3
@@ -410,7 +416,7 @@ survey the_deep_awakens -title "The deep awakens"
     29 . 4.11 262.6 57.7
     29 . 3.25 184.7 53.7
     29 . 10.03 311.5 39.1
-    extend right
+    extend right #new
     29 30 5.11 179.0 37.3
     # extend auto
     30 . 1.82 90.5 -2.5
@@ -423,7 +429,7 @@ survey the_deep_awakens -title "The deep awakens"
     30 . 0.92 245.1 48.1
     30 . 4.82 44.9 -44.1
     30 . 5.11 19.9 -39.2
-    extend left
+    extend right #new
     30 31 3.01 150.4 14.3
     # extend auto
     31 . 3.10 235.0 -1.3
@@ -439,7 +445,7 @@ survey the_deep_awakens -title "The deep awakens"
     31 . 13.66 137.7 -14.5
     31 . 4.78 167.5 7.9
     31 . 9.10 151.6 -6.7
-    extend left
+    extend right #new
     31 32 4.95 248.3 29.8
     # extend auto
     32 . 2.83 117.4 -5.5
@@ -459,7 +465,7 @@ survey the_deep_awakens -title "The deep awakens"
     32 . 6.53 333.8 -1.0
     32 . 2.92 18.7 -2.6
     32 . 3.50 38.2 77.9
-    extend right
+    extend left #new
     32 33 3.33 335.5 -17.4
     # extend auto
     33 . 2.36 215.4 5.6
@@ -478,10 +484,10 @@ survey the_deep_awakens -title "The deep awakens"
     33 . 13.39 284.1 55.1
     33 . 11.83 273.0 58.0
     33 . 10.63 284.8 31.3
-    extend left
+    extend right
     33 12 3.43 228.3 -4.4 #orignially labelled as 33->34
     31 35 15.51 131.8 -15.8
-    extend right
+    extend left
     29 36 5.57 310.2 12.7
     # extend auto
     36 . 2.06 50.1 6.6
@@ -496,7 +502,7 @@ survey the_deep_awakens -title "The deep awakens"
     36 . 3.12 60.0 61.3
     36 . 4.67 143.5 51.4
     36 . 2.88 82.7 40.7
-    extend right
+    extend left
     36 37 4.62 352.6 -2.8
     # extend auto
     37 . 4.26 333.6 -3.9
@@ -513,7 +519,7 @@ survey the_deep_awakens -title "The deep awakens"
     37 . 3.10 286.7 19.4
     37 . 3.65 280.8 -9.0
     37 . 4.90 274.6 -26.7
-    extend right
+    extend left
     37 38 5.35 310.6 -47.7
     # extend auto
     38 . 3.25 11.5 -6.1
