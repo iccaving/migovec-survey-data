@@ -1,0 +1,162 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 317.800000 424.600000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap the_aviary-p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line wall 
+  137.5 324.56
+  136.77 321.8 136.46 318.89 135.3 316.28
+  133.25 311.64 129.15 309.05 126.94 306.33
+  119.84 297.59 117.0 282.38 112.02 272.08
+  108.61 265.02 101.01 258.89 99.95 250.44
+  98.11 235.75 99.14 219.53 102.71 205.22
+  107.19 187.24 115.13 169.54 118.51 151.28
+  118.74 150.0 118.57 148.67 118.79 147.38
+  119.05 145.82 119.65 144.32 119.93 142.76
+  120.14 141.57 120.21 140.35 120.26 139.14
+  120.62 130.92 119.18 100.0 129.59 100.0
+  151.02 100.0 174.15 103.61 193.26 113.52
+  201.05 117.56 209.6692 114.7869 213.3392 124.5269
+  215.79 128.55
+  215.79 169.0 197.12 208.4 178.87 242.24
+  174.13 251.04 173.83 262.79 172.51 272.63
+  172.34 273.95 171.87 275.2 171.59 276.49
+  171.3 277.8 171.03 279.12 170.8 280.44
+  170.61 281.53 170.51 282.63 170.33 283.72
+  168.99 291.8 161.88 301.37 164.04 308.67
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  84.14 224.53
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  112.6 189.35
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  116.99 166.29
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  -17.25 244.34
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  138.98 288.28
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  112.9 389.46
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  82.06 222.6
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  37.54 262.63
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  183.76 143.09
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  163.14 138.5
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  124.94 113.2
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  164.05 130.5
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  132.13 139.17
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  210.58 142.3
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  126.38 143.41
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  108.33 195.43
+endline
+
+line u:splay -visibility off
+  172.55 246.78
+  180.49 245.6
+endline
+
+line u:splay -visibility off
+  128.32 397.32
+  -1.34 155.86
+endline
+
+line u:splay -visibility off
+  128.32 397.32
+  159.89 177.36
+endline
+
+line u:splay -visibility off
+  128.32 397.32
+  208.22 281.07
+endline
+
+line u:splay -visibility off
+  128.32 397.32
+  222.56 243.32
+endline
+
+line u:splay -visibility off
+  128.32 397.32
+  229.74 270.4
+endline
+
+line u:splay -visibility off
+  128.32 397.32
+  161.54 221.69
+endline
+
+line u:splay -visibility off
+  128.32 397.32
+  115.15 241.62
+endline
+
+line u:splay -visibility off
+  128.32 397.32
+  526.82 142.82
+endline
+
+line u:splay -visibility off
+  128.32 397.32
+  375.22 284.31
+endline
+
+point 172.55 246.78 station -name 0
+endscrap
+
