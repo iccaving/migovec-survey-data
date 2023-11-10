@@ -5,6 +5,17 @@ survey coda -title "Coda"
 #JW 15/09/2022 comments show splays which have been relabelled from disconected odd number stations to the next (even) one
 #Topodroid was being weird when we surveyed this: most stations are even-numbered only except the first 3.
 
+  input "coda-1p.th2"
+  input "coda-1s.th2"
+
+  map m-all-p -projection plan
+    coda-1p
+  endmap
+
+  map m-all-e -projection extended
+    coda-1s
+  endmap
+
   centerline
     date 2022.07.16 
     units length meters
