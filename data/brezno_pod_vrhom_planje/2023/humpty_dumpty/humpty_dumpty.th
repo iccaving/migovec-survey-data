@@ -6,6 +6,18 @@ survey humpty_dumpty -title "Humpty Dumpty"
   centerline
     date 2023.07.11 
     # team CH-DPW-JW-EP 
+    team "Chris Hayes"
+    team "David Wilson"
+    team "James Wilson"
+    team "Ellie Pizey"
+
+
+    explo-date 2023.07.11
+    explo-team "Chris Hayes"
+    explo-team "David Wilson"
+    explo-team "James Wilson"
+    explo-team "Ellie Pizey"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

@@ -45,27 +45,27 @@ select m-all-p@brezno_pod_vrhom_planje
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
 layout comment
-    code tex-map
-    \def\mycomment{
-            \size[8]
-            Slovenia\par
-            Length: \the\cavelength, Depth: \the\cavedepth, Altitude: \the\cavemaxz{} m \par
-            Coordinates (GPS): 46.264686\°N / 13.752099\°E\par
-            Survey : \the\topoteam{} 2018-2022\par
-            Drawing: T. Racine, R. Tyers, D. Wilson 2022\par
-            ICCC / JSPDT
-        } 
-    \def\cadastralnumber{\size[10] \si Kat. Nr.: 5878}
+ #   code tex-map
+  #  \def\mycomment{
+    #         \size[8]
+    #         Slovenia\par
+    #         Length: \the\cavelength, Depth: \the\cavedepth, Altitude: \the\cavemaxz{} m \par
+    #         Coordinates (GPS): 46.264686\°N / 13.752099\°E\par
+    #         Survey : 2018-2022\par
+    #         Drawing: T. Racine, R. Tyers, D. Wilson 2022\par
+    #         ICCC / JSPDT
+    #     } 
+    # \def\cadastralnumber{\size[10] \si Kat. Nr.: 5878}
 
-    \def\maplayout{
-      \legendbox{5}{108}{NW}{\mycomment}
-      \legendbox{5}{110}{SW}{\size[18]\the\cavename}
-       %\legendbox{5}{99}{NW}{\cadastralnumber}
-      \legendbox{60}{90}{N}{\scalebar}
-      \legendbox{60}{92}{S}{\northarrow}
-      %\legendbox{5}{-4}{NW}{\loadpicture{brezno_pod_vrhom_planje_ee.pdf}}
-    }
-    endcode
+    # \def\maplayout{
+    #   \legendbox{5}{108}{NW}{\mycomment}
+    #   \legendbox{5}{110}{SW}{\size[18]\the\cavename}
+    #    %\legendbox{5}{99}{NW}{\cadastralnumber}
+    #   \legendbox{60}{90}{N}{\scalebar}
+    #   \legendbox{60}{92}{S}{\northarrow}
+    #   %\legendbox{5}{-4}{NW}{\loadpicture{brezno_pod_vrhom_planje_ee.pdf}}
+    # }
+    # endcode
 endlayout
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
