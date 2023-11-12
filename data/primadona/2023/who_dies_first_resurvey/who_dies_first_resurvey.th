@@ -1,7 +1,8 @@
 # 2023.07.18 created by TopoDroid v 5.1.40
 
 survey who_dies_first_resurvey -title "who dies first resurvey"
-    # Resurvey with disto 
+    # Resurvey of "who dies first" with disto, following original survey in Matti lengths
+    #can be joined in at both ends but there is significant loop error 
   input who_dies_first_resurvey-p.th2
   input who_dies_first_resurvey-e.th2
 
@@ -15,6 +16,7 @@ survey who_dies_first_resurvey -title "who dies first resurvey"
  
   centerline
     date 2023.07.17 
+    explo-date 2022.07.26
     team "James Wilson"
     team "Matti Mitropoulos"
     explo-team "Ana Teck"
