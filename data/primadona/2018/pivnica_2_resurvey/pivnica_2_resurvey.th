@@ -258,14 +258,14 @@ survey pivnica_2_resurvey -title "pivnica_2_resurvey"
 		extend left
 		14 15 20.06 233.1 78.2
 		15 16 5.99 286.5 21.0
-		extend right
+		extend left
 		16 17 5.11 28.2 51.6
 		extend left
 		17 18 3.12 286.6 -4.2
 	endcenterline
 
 	input "pivnica_2_resurvey-1p.th2"
-	input "pivnica_2_resurvey-1e.th2"
+	input "pivnica_2_resurvey-e.th2"
 
 	map m1p -projection plan
 		pivnica_2_resurvey-1p
