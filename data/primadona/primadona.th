@@ -356,9 +356,13 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join s1_l2@pivnica_2_resurvey s1_l2@lost_in_a_dream
 	join s1_l3@pivnica_2_resurvey s2_l3@lost_in_a_dream
 	join s1_l4@pivnica_2_resurvey:0 s2_l4@lost_in_a_dream:0
+	join buckwheat-1e@buckwheat pivnica_resurvey-1e@pivnica_resurvey
 	join pivnica_2_resurvey-3p@pivnica_2_resurvey spodnjip_2@spodnji
 	join s1_l1@snakebite:end s1_l1@snakebitetwo:0
 	join s1_l2@snakebite:0 s1_l2@snakebitetwo:end
+	join pivnica_resurvey-1e@pivnica_resurvey lost_in_a_dream-1e@lost_in_a_dream
+	join pivnica_resurvey-1e@pivnica_resurvey pivnica_2_resurvey-1e@pivnica_2_resurvey
+	join pivnica_2_resurvey-1e@pivnica_2_resurvey lost_in_a_dream-1e@lost_in_a_dream
 	join ave_maria-1p@ave_maria lost_in_a_dream_2-1p@lost_in_a_dream_2
 	join ave_maria-1p@ave_maria snakebitetwo-1p@snakebitetwo
 	join holy_moley-1e@holy_moley alabaster-1e@alabaster

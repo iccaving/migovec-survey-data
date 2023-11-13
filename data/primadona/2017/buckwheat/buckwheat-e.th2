@@ -2,9 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1157.000000 1038.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+
 scrap buckwheat-1e -projection extended -scale [-117.0 -287.0 465.0 -287.0 0.0 0.0 14.7828 0.0 m]
 
-point 712.6982 679.3339 u:connection_marker -align tr -attr code 6 -id whatacoincidence -attr text "to What a Coincidence!"
+point 712.6982 679.3339 u:connection_marker -align tr -attr code 6 -attr text "to What a Coincidence!" -id whatacoincidence
 line rock-border -close on
   860.5689 85.7861
   860.5689 85.7861 839.1105 86.2332 836.4282 81.7627
@@ -22,7 +23,7 @@ line rock-border -close on
   804.6878 64.7749 774.2885 80.4215 774.2885 80.4215
   774.2885 80.4215 759.0888 85.7861 756.8536 86.2332
   754.6183 86.6802 749.7008 75.057 747.9126 71.9276
-  746.1244 68.7983 762.6652 47.787 762.6652 47.787
+  746.1244 68.7983 764.6582 50.7421 764.6582 50.7421
 endline
 
 line rock-border -close on
@@ -36,10 +37,10 @@ line rock-border -close on
   538.6938 65.6689 566.8578 75.504 566.8578 75.504
 endline
 
-point 945.904 92.0964 map-connection -scale s
+point 991.2615 123.9841 map-connection -scale s
 line wall -subtype invisible
-  839.7194 9.3301
-  895.4529 16.3682 906.0504 38.319 939.2415 52.8712
+  832.0226 13.1786
+  904.3231 5.1333 908.453 129.8718 923.4968 160.9461
 endline
 
 line wall -subtype invisible
@@ -52,10 +53,9 @@ line wall -subtype invisible
   693.5459 737.0869
 endline
 
-line wall
-  939.2415 52.8712
-  926.8013 104.1874 894.1455 149.2834 881.7052 158.6136
-  869.2649 167.9439 849.0495 195.9345 849.0495 195.9345
+line wall 
+  923.4968 160.9461
+  911.0565 170.2764 849.0495 195.9345 849.0495 195.9345
   790.7974 280.7531
   750.4608 354.6133
   748.6162 357.991 733.9768 432.2999 733.9768 443.1852
@@ -72,7 +72,7 @@ line wall -subtype blocks
   687.3258 91.7471
   740.197 62.2014
   786.8481 32.6557
-  839.7193 9.3302
+  832.0223 13.1787
 endline
 
 line wall -id e1_l6
@@ -112,3 +112,4 @@ point 615.017 140.731 station -name 3
 point 616.572 282.239 station -name 2
 point 725.424 285.349 station -name 1
 endscrap
+
