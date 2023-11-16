@@ -73,7 +73,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	input ./1997/cowboys/cowboys.th
 	input ./1997/deep/deep.th
 	input ./1997/challenge/challenge.th
-	input ./1997/tamoka/tamoka.th
+	input ./1997/tamokra/tamokra.th
 	input "./1997/baddybag/baddybag.th"
 	input ./1997/teotihuacan/teotihuacan.th
 	input ./1997/batshitb/batshitb.th
@@ -129,10 +129,10 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	equate 12@batshita 1@batshit1
 	equate 13@batshitb 1@batshit2
 	equate 8@galact1 10@galact2
-	equate 6@shordrop2 1@tamoka
+	equate 6@shordrop2 1@tamokra
 	equate 9@mower 7@batshit2
 	equate 7@shordrop 1@batshita
-	equate 3@tamoka 1@galact1
+	equate 3@tamokra 1@galact1
 	equate 4@galact3 6@window
 	equate 10@batshit1 16@batshitb
 	equate 9@cowboys 22@paradox
@@ -142,7 +142,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join hotline-3p@hotline lostcity-1p@lostcity
 	join baddybag-3p@baddybag goodbag-1p@goodbag
 	join window-1p@window galact3-1p@galact3
-	join tamoka-1p@tamoka hydrant-2p@hydrant
+	join tamokra-1p@tamokra hydrant-2p@hydrant
 	join hydrant-3p@hydrant hydrant2-1p@hydrant2
 	join offhyd-1p@offhyd hydrant-1p@hydrant
 	join offhyd-2p@offhyd hydrant-1p@hydrant
@@ -159,8 +159,8 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join god-1p@god rameses-1p@rameses
 	join rameses-4p@rameses cowboys-1p@cowboys
 	join cowboys-1p@cowboys paradox-2p@paradox
-	join shordrop2-1p@shordrop2 tamoka-1p@tamoka
-	join tamoka-1p@tamoka galact1-1p@galact1
+	join shordrop2-1p@shordrop2 tamokra-1p@tamokra
+	join tamokra-1p@tamokra galact1-1p@galact1
 	join galact2-1p@galact2 galact1-1p@galact1
 	join galact2-2p@galact2 galact3-1p@galact3
 	join doh-2p@doh pinkp-1p@pinkp
@@ -170,7 +170,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join migcon2-1e@migcon2 migconleft-1e@migconleft
 	join migcon2-1e@migcon2 migcondown-1e@migcondown
 	join challenge-1e@challenge exhib-1e@exhib
-	join shordrop2-1e@shordrop2 tamoka-1e@tamoka
+	join shordrop2-1e@shordrop2 tamokra-1e@tamokra
 	join galact2-1e@galact2 galact4-1e@galact4
 	join galact2-1e@galact2 galact1-1e@galact1
 	join galact3-1e@galact3 window-1e@window
@@ -315,7 +315,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	equate 34@hydrant 1@hydrant2
 	#equate SOCIALISM@ROTTING 3@hydrant2
 	equate 23@frogshit 12@batshita
-	equate 1@hydrant 3@tamoka
+	equate 1@hydrant 3@tamokra
 	equate 13@hydrant 4@offhyd
 	equate 3@hydrant 9@offhyd
 
@@ -323,7 +323,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join hydrant-1e@hydrant hydrant2-1e@hydrant2
 	join offhyd-1e@offhyd hydrant-1e@hydrant
 	join offhyd-2e@offhyd hydrant-1e@hydrant
-	join hydrant-1e@hydrant tamoka-1e@tamoka
+	join hydrant-1e@hydrant tamokra-1e@tamokra
 	join spiny-1e@spiny dinsdale-1e@dinsdale
 	join spiny-1e@spiny brezno-1e@brezno
 	join frogshit-1e@frogshit batshit1-1e@batshit1
