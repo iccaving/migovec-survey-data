@@ -25,18 +25,67 @@ input "../../layouts/mods.thl"
 
 export map -o ../../outputs/system_migovec -fmt esri
 
-layout plan
+layout plan-slo
 	copy base-p
 	symbol-show line map-connection
 	symbol-hide point u:flag
 	symbol-hide point u:connection_marker
 	scale-bar 400 m
 
-	map-comment "<bf>Dolžina: 45.5 km<br>Globina: 970 m<br><br>TLORIS<br><br>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave: 1974-2023<br>Natančnost meritev IV/B<br><br>JAMSKI VHODI<br><br>M2 (Kavkna jama)<br>kat. št.: 4465<br><br>M18 (Jama strgane srajce)<br>kat. št.: 8284<br><br>M16<br>kat. št.: 6001<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<br><br>Vrtnarija<br>kat. št.: 8283<br><br>Vilinska jama<br>kat. št.: 10868<lang:en><bf>Length: 45.5 km<br> Depth: 970m<br><br>PLAN<br><br>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 1974-2021<br>BCRA grade 4-5b<br><br>CAVE ENTRANCES<br><br>M2 (Kavkna Jama)<br>Cadastral number: 4465<br><br>M18 (Torn T-Shirt)<br>Cadastral number: 8284<br><br>M16<br>Cadastral number: 6001<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180<br><br>Vrtnarija<br>Cadastral number: 8283<br><br>Vilinska jama<br>Cadastral number: 10868"
+	code metapost
+		set_label_level("2");
+	endcode
+
+	code tex-map
+	\def\xcenter{40}
+  	\def\ycenter{85}
+  	\def\yscale{5}
+	\def\mapcomment{
+	\size[46]\bf \the\cavename 
+	\par{\quad}\par
+	\size[16]
+	\par Dolžina: \the\cavelength \par Globina: \the\cavedepth \par{\quad}\par TLORIS\par{\quad}\par Občina Tolmin, Slovenija \par Imperial College Caving Club\par Jamarska sekcija PD Tolmin\par Raziskave: \the\topodate \par Natančnost meritev IV/B\par{\quad}\par JAMSKI VHODI\par{\quad}\par  M2 (Kavkna jama)\par kat. št.: 4465\par{\quad}\par  M18 (Jama strgane srajce)\par kat. št.: 8284\par{\quad}\par  M16\par kat. št.: 6001 \par{\quad}\par Primadona \par kat. št.: 8282\par{\quad}\par U-Bend 571\par kat. št.: 12114\par{\quad}\par  Mona tip\par kat. št.: 10180\par{\quad}\par Vrtnarija\par kat. št.: 8283\par{\quad}\par  Vilinska jama\par kat. št.: 10868}
+
+	\def\maplayout{
+
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\mapcomment}
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter - 14*\yscale\relax}{N}{\northarrow}
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter - 15*\yscale\relax}{N}{\scalebar}
+  }
+	endcode 
+
+	colour map-fg map:cave
+
+endlayout
+
+layout plan-eng
+	copy base-p
+	symbol-show line map-connection
+	symbol-hide point u:flag
+	symbol-hide point u:connection_marker
+	scale-bar 400 m
 
 	code metapost
 		set_label_level("2");
 	endcode
+
+	code tex-map
+	\def\xcenter{40}
+  	\def\ycenter{85}
+  	\def\yscale{5}
+	\def\mapcomment{
+	\size[46]\bf \the\cavename
+	\par{\quad}	\par
+	\size[16]
+	\par Length: \the\cavelength \par  Depth: \the\cavedepth \par{\quad}\par PLAN\par{\quad}\par Tolmin, Julian Alps\par Imperial College Caving Club\par Jamarska sekcija PD Tolmin\par Exploration: \the\topodate \par BCRA grade 4-5b\par{\quad}\par CAVE ENTRANCES\par{\quad}\par M2 (Kavkna Jama)\par Cadastral number: 4465\par{\quad}\par M18 (Torn T-Shirt)\par Cadastral number: 8284\par{\quad}\par M16\par Cadastral number: 6001\par{\quad}\par Primadona\par Cadastral number: 8282\par{\quad}\par U-Bend 571\par Cadastral number: 12114\par{\quad}\par Mona tip\par Cadastral number: 10180\par{\quad}\par Vrtnarija\par Cadastral number: 8283\par{\quad}\par Vilinska jama\par Cadastral number: 10868}
+
+	\def\maplayout{
+
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\mapcomment}
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter - 14*\yscale\relax}{N}{\northarrow}
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter - 15*\yscale\relax}{N}{\scalebar}
+  }
+endcode 
 
 	colour map-fg map:cave
 
@@ -46,11 +95,11 @@ select m-all-p@system_migovec
 maps-offset off
 
 language sl
-export map -projection plan -o ../../outputs/system_migovec_plan_SLO.pdf -layout plan
-export map -projection plan -o ../../outputs/system_migovec_plan_SLO.svg -layout plan
+export map -projection plan -o ../../outputs/system_migovec_plan_SLO.pdf -layout plan-slo
+export map -projection plan -o ../../outputs/system_migovec_plan_SLO.svg -layout plan-slo
 language en
-export map -projection plan -o ../../outputs/system_migovec_plan_ENG.pdf -layout plan
-export map -projection plan -o ../../outputs/system_migovec_plan_ENG.svg -layout plan
+export map -projection plan -o ../../outputs/system_migovec_plan_ENG.pdf -layout plan-eng
+export map -projection plan -o ../../outputs/system_migovec_plan_ENG.svg -layout plan-eng
 
 # export a .3d model, which can be opened in AVEN and LOCH
 export model -o ../../outputs/system_migovec.3d
