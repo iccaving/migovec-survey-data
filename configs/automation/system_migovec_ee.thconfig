@@ -25,9 +25,8 @@ input "../../layouts/mods.thl"
 
 layout ee-slo
 	copy base-e
-	symbol-show line map-connection
+	symbol-hide line map-connection
 	symbol-hide point u:flag
-	symbol-hide point u:connection_marker
 	scale-bar 400 m
 
 	code metapost
@@ -56,8 +55,8 @@ endlayout
 
 layout ee-eng
 	copy base-e
+	symbol-hide line map-connection
 	symbol-hide point u:flag
-	symbol-hide point u:connection_marker
 	scale-bar 400 m
 
 	code metapost
@@ -84,7 +83,17 @@ endcode
 	colour map-fg map:cave
 endlayout 
 
-select m-all-e@system_migovec
+# garantee identical cave lengths / depths 
+
+source 
+	map local-e 
+		m-all-e@system_migovec
+		system_migovec 
+	endmap
+endsource 
+
+select local-e
+
 maps-offset on
 
 language sl

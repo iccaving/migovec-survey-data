@@ -91,7 +91,16 @@ endcode
 
 endlayout
 
-select m-all-p@system_migovec
+# garantee identical cave lengths / depths ?
+source 
+	map local-p
+		m-all-p@system_migovec
+		system_migovec 
+	endmap
+endsource 
+
+select local-p
+
 maps-offset off
 
 language sl
