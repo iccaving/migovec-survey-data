@@ -22,6 +22,7 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino
+    extend left
      2       100     2.7     281     -5
      100     101     3       -       Down
      101     102     2.5     271     20
@@ -45,8 +46,10 @@ centreline
      119     120     0.85    256     8
      120     121     3       309     -37
      121     122     2       227     -21
+     extend right
      122     123     3       276     -54
      123     124     2.65    184     4
+     extend ignore
 
     #124 	125	3.5	264	-50 # this leg was in the notes, but not originally in the svx file
     #data dimensions station left right up down

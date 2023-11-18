@@ -22,7 +22,7 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default
-
+    extend left
     1       2        7.6    150     -11     #;1-4 surveyed in '95
     2       3        3.2    081     -37     #
     3       4        6.1    070     -70     #Stn 4 is last bolt at top of pitch
