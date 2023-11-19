@@ -38,7 +38,9 @@ input "gallery-e.th2"
 
 map m-all-e -projection extended
     gallery-1e
+    break
     gallery-2e
+    break
     gallery-3e
     gallery-4e
     gallery-5e
@@ -53,14 +55,21 @@ centreline
     units length meters
     units compass clino degrees
     data normal from to tape compass clino
-
+    extend left
     0       1        5.9    245     +00     #0 is rebelay bolt
+    extend left
     1       2       20.9    138     -05
+    extend left
     2       3        3.4    007     -40
+    extend right
     3       4       10.6     -      down
+    extend left
     2       5       10.6    173     +13
+    extend left
     5       6       17.5    138     -09
+    extend left
     6       7       12.7    148     +14
+    extend right
     1       8       14.0    335     +09
      
     # First Blind Pitch
@@ -112,7 +121,7 @@ centreline
     23      24      16.7    284     +01
 
     #;Wet Pitch Near Bivvy
-
+    extend left
     5       50      9.8     155     -15 
     50      51      2.0     034     +00
     51      52     10.9      -      down 

@@ -3,8 +3,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap migcondown-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+scrap migcondown-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 163.2488 1102.4094 map-connection 
 line rock-border -close on
   357.2267 1158.7063
   345.5833 1155.8254
