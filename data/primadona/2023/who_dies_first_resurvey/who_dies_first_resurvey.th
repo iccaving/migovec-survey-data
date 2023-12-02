@@ -1,7 +1,8 @@
 # 2023.07.18 created by TopoDroid v 5.1.40
 
 survey who_dies_first_resurvey -title "who dies first resurvey"
-    # Resurvey with disto 
+    # Resurvey of "who dies first" with disto, following original survey in Matti lengths
+    #can be joined in at both ends but there is significant loop error 
   input who_dies_first_resurvey-p.th2
   input who_dies_first_resurvey-e.th2
 
@@ -15,6 +16,7 @@ survey who_dies_first_resurvey -title "who dies first resurvey"
  
   centerline
     date 2023.07.17 
+    explo-date 2022.07.26
     team "James Wilson"
     team "Matti Mitropoulos"
     explo-team "Ana Teck"
@@ -37,7 +39,7 @@ survey who_dies_first_resurvey -title "who dies first resurvey"
     0 . 3.02 165.8 55.7
     0 . 1.77 201.2 36.5
     0 . 1.37 133.8 31.2
-    extend left
+    extend right
     0 1 4.34 172.3 28.2
     extend ignore
     1 . 0.62 273.2 3.3
@@ -65,14 +67,14 @@ survey who_dies_first_resurvey -title "who dies first resurvey"
     1 . 9.94 184.4 -7.7
     1 . 7.34 182.7 -4.9
     1 . 3.33 183.6 -0.8
-    extend left
+    extend right
     1 2 6.87 190.9 -26.9
     extend ignore
     2 . 2.27 86.4 55.9
     2 . 3.24 84.4 76.0
     2 . 3.16 306.3 81.5
     2 . 1.34 292.1 51.9
-    extend left
+    extend right
     2 3 2.84 181.7 3.7
     extend ignore
     3 . 0.79 245.8 60.5
@@ -92,7 +94,7 @@ survey who_dies_first_resurvey -title "who dies first resurvey"
     3 . 3.17 122.8 -43.5
     3 . 3.10 141.7 -43.1
     3 . 1.85 84.3 -65.8
-    extend left
+    extend right
     3 6 3.21 154.7 -19.1
     extend ignore
     #corrected the following splays from non-existent stn 4 to stn 6
@@ -101,7 +103,7 @@ survey who_dies_first_resurvey -title "who dies first resurvey"
     6 . 8.37 139.9 -24.4
     6 . 28.63 122.6 -30.0
     6 . 13.43 123.5 -42.4
-    extend right
+    extend left
     7 6 12.93 295.8 42.7
 
   endcenterline

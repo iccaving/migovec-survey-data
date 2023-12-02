@@ -1,7 +1,18 @@
 # 2022.07.22 created by TopoDroid v 5.1.40
 
 survey 100_cocoa -title "100% Cocoa"
-    # scratchy grovel hole, very tight, dead 
+  # scratchy grovel hole, very tight, dead 
+
+  input "100_cocoa-p.th2"
+  input "100_cocoa-e.th2"
+
+  map m-all-p -projection plan
+    100_cocoa-1p
+  endmap
+
+  map m-all-e -projection extended
+    100_cocoa-1e
+  endmap
 
   centerline
     date 2022.07.16 
@@ -86,7 +97,5 @@ survey 100_cocoa -title "100% Cocoa"
     extend left
     7 9 1.46 225.1 3.4
   endcenterline
-
-
 
 endsurvey

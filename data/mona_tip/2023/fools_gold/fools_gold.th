@@ -1,7 +1,18 @@
 # 2023.08.09 created by TopoDroid v 5.1.40
 
 survey fools_gold -title "fools gold"
-    # from pss6 of ghengis khan to pss7 to auld alliance 
+  # from pss6 of ghengis khan to pss7 to auld alliance 
+
+  input "fools_gold-1p.th2"
+  input "fools_gold-1s.th2"
+
+  map m-all-p -projection plan
+    fools_gold-1p
+  endmap
+
+  map m-all-e -projection extended
+    fools_gold-1s
+  endmap
 
   centerline
     date 2023.07.28 
@@ -32,15 +43,5 @@ survey fools_gold -title "fools gold"
     6 . 6.90 312.8 7.3
     6 . 8.66 306.3 18.5
   endcenterline
-
-  # input "fools_gold-1p.th2"
-  # input "fools_gold-1s.th2"
-
-  # map m1p -projection plan
-  #   fools_gold-1p
-  # endmap
-  # map m1s -projection extended
-  #   fools_gold-1s
-  # endmap
 
 endsurvey

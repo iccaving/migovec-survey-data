@@ -2,6 +2,16 @@
 
 survey house_of_cards -title "House of Cards"
     # pitches below Humpty dumpty 
+    input house_of_cards-p.th2
+    input house_of_cards-e.th2
+
+    map m-all-p -projection plan
+      house_of_cards-1p
+    endmap
+
+    map m-all-e -projection extended
+      house_of_cards-1e
+    endmap
 
   centerline
     date 2023.07.11 

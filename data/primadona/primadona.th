@@ -339,6 +339,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	join klic_globin-3p@klic_globin moonraker_2-1p@moonraker_2
 	#join klic_globin-1p@klic_globin deeper_than_most-1p@deeper_than_most
+	join klic_globin-1s@klic_globin deeper_than_most-1e@deeper_than_most
 	join deeper_than_most-1p@deeper_than_most tiger_tiger-1p@tiger_tiger
 	join moonraker_2-1p@moonraker_2 moonraker-2p@moonraker
 	join moonraker-1p@moonraker klic_globin-1p@klic_globin
@@ -356,9 +357,13 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join s1_l2@pivnica_2_resurvey s1_l2@lost_in_a_dream
 	join s1_l3@pivnica_2_resurvey s2_l3@lost_in_a_dream
 	join s1_l4@pivnica_2_resurvey:0 s2_l4@lost_in_a_dream:0
+	join buckwheat-1e@buckwheat pivnica_resurvey-1e@pivnica_resurvey
 	join pivnica_2_resurvey-3p@pivnica_2_resurvey spodnjip_2@spodnji
 	join s1_l1@snakebite:end s1_l1@snakebitetwo:0
 	join s1_l2@snakebite:0 s1_l2@snakebitetwo:end
+	join pivnica_resurvey-1e@pivnica_resurvey lost_in_a_dream-1e@lost_in_a_dream
+	join pivnica_resurvey-1e@pivnica_resurvey pivnica_2_resurvey-1e@pivnica_2_resurvey
+	join pivnica_2_resurvey-1e@pivnica_2_resurvey lost_in_a_dream-1e@lost_in_a_dream
 	join ave_maria-1p@ave_maria lost_in_a_dream_2-1p@lost_in_a_dream_2
 	join ave_maria-1p@ave_maria snakebitetwo-1p@snakebitetwo
 	join holy_moley-1e@holy_moley alabaster-1e@alabaster
@@ -575,6 +580,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join the_deep_awakens-4p@the_deep_awakens cantina_canyon-1p@cantina_canyon
 	join cantina_canyon-1p@cantina_canyon cantina_canyon_2-1p@cantina_canyon_2
 	join cantina_canyon_2-1e@cantina_canyon_2 antares-1s@antares
+	join the_deep_awakens-2e@the_deep_awakens cantina_canyon-1e@cantina_canyon
 
 	###______________ 2023______________###
     input "./2023/delta_blues/delta_blues.th"
@@ -601,6 +607,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join who_dies_first_resurvey-1p@who_dies_first_resurvey the_deep_awakens-3p@the_deep_awakens
 	join who_dies_first_resurvey-1p@who_dies_first_resurvey delta_blues-1p@delta_blues
 	join delta_blues-2p@delta_blues the_deep_awakens-3p@the_deep_awakens
+
+	join who_dies_first_resurvey-1e@who_dies_first_resurvey the_deep_awakens-2e@the_deep_awakens
+	join who_dies_first_resurvey-1e@who_dies_first_resurvey delta_blues-1e@delta_blues
+	join delta_blues-1e@delta_blues the_deep_awakens-2e@the_deep_awakens
 
 
 endsurvey

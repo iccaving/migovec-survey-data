@@ -1,7 +1,17 @@
 # 2023.07.14 created by TopoDroid v 5.1.40
 
 survey humpty_dumpty -title "Humpty Dumpty"
-    # the gallery dig, pitch head, and gallery continuation 
+    # the gallery dig, pitch head, and gallery continuation
+    input humpty_dumpty-p.th2
+    input humpty_dumpty-e.th2
+
+    map m-all-p -projection plan 
+      humpty_dumpty-1p
+    endmap
+
+    map m-all-e -projection extended 
+      humpty_dumpty-1e
+    endmap
 
   centerline
     date 2023.07.11 

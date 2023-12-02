@@ -1,17 +1,17 @@
 
-survey tamoka -title "System Migovec"
+survey tamokra -title "System Migovec"
 
-input tamoka-p.th2
+input tamokra-p.th2
 
 map m-all-p -projection plan
-    tamoka-1p
+    tamokra-1p
 endmap
 
 
-input tamoka-e.th2
+input tamokra-e.th2
 
 map m-all-e -projection extended
-    tamoka-1e
+    tamokra-1e
 endmap
 
 centreline
@@ -45,14 +45,14 @@ endsurvey
 #;data normal bcra grade 5
 #;from	to	tape	comp	clino
 #
-#*equate shordrop2.6 tamoka.1
+#*equate shordrop2.6 tamokra.1
 #
-#*begin tamoka
+#*begin tamokra
 #
 #1	2	3.03	220	-15	;1 is first bolt on Ta Moka pitch
 #2	3	54.9	-	down	;2 is bolt at pitch head
 #
 #					;3 is at bottom of free hang
 #
-#*end tamoka
+#*end tamokra
 #

@@ -2,12 +2,14 @@
 map  m-all-e -projection extended
 	m-all-e@wishing_well
 	m-all-e@wishing_well2
+	m-all-e@the_aviary
 	m-all-e@sad_face
 	m-all-e@extra_dunkel
 	m-all-e@coda
 	m-all-e@therock
 	m-all-e@mona_tip1
 	m-all-e@cloacamaxima
+	m-all-e@100_cocoa
 
 	m-all-e@mona_tip2
 	m-all-e@aleksandrija
@@ -26,18 +28,25 @@ map  m-all-e -projection extended
 	m-all-e@mona_tip9
 	m-all-e@mona_tip10
 	m-all-e@mona_tip11
+	m-all-e@auld_alliance_resurvey
+	m-all-e@fools_gold
+	m-all-e@neu_alliance
 endmap
 
 map  m-mona_tip_main-e -projection extended
 	m-all-e@alkatraz_disto_resurvey
 endmap
 
-map m-mona_tip_m16_con-e -projection extended #relevant passages for connections with M16
+map m-mona_tip_m16_con-e -projection extended #relevant passages for connections with M16 for drawing purposes
 m-all-e@wishing_well
 m-all-e@wishing_well2
 m-all-e@sad_face
-#m-all-e@extra_dunkel
+m-all-e@the_aviary
+m-all-e@extra_dunkel
+m-all-e@neu_alliance
 m-all-e@mona_tip11
+m-all-e@auld_alliance_resurvey
+m-all-e@fools_gold
 endmap
 
 
@@ -46,4 +55,5 @@ centerline
 extend left 13@wishing_well 12@wishing_well
 extend left 12@wishing_well 11@wishing_well
 extend right 1@wishing_well 2@wishing_well
+
 endcenterline

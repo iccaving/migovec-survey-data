@@ -18,6 +18,8 @@ survey coda -title "Coda"
 
   centerline
     date 2022.07.16 
+    team "James Wilson"
+    team "Matti Mitropoulos"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -275,7 +277,5 @@ survey coda -title "Coda"
     extend left
     38 40 10.44 120.1 44.2
   endcenterline
-
-
 
 endsurvey

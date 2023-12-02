@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap tamoka-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap tamokra-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	
 	line wall -subtype invisible
 		-11.8836 -57.2571
@@ -140,6 +140,6 @@ scrap tamoka-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 	point -7.4 -8.82 station -name 3
 	point -7.4 -8.82 station -name 2
 	point 7.4 8.82 station -name 1
-	point 38.1272 -26.7626 label -align r -attr level 3 -text "Ta Moka" -scale xs
+	point 38.1272 -26.7626 label -align r -attr level 3 -text "Ta Mokra" -scale xs
 endscrap
 
