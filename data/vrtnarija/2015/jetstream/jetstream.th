@@ -23,6 +23,7 @@ endmap
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
+		calibrate tape 0.60
 		2	1	7.02	177	-05
 		3	2	13.60	198	-33
 		4	3	5.20	200	-34
@@ -33,6 +34,7 @@ endmap
 		9	8	8.38	185	+00
 		10	9	14.88	158	+45
 		11	10	8.44	154	+27
+		calibrate tape 0
 		12	11	8.65	143	+04
 		13	12	6.06	075	+75
 		14	13	7.70	115	+47
