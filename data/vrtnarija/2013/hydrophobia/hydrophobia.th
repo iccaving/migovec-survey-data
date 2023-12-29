@@ -1,8 +1,5 @@
 
 survey hydrophobia -title "Hydrophobia"
-
-input ../../2014/stupid/stupid.th #Include stupid from 2014, as it's really small and part of the same chamber
-equate 5 3@stupid #Must be equated at the subsurvey level so therion knows how to connect it
 #Can also do this in the vrtnarija.th with `equate 5@hydrophobia 3@stupid.hydrophobia`
 
 input hydrophobia-e.th2

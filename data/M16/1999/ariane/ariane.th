@@ -15,6 +15,7 @@ survey ariane -title "Ariane 5"
 		explo-team "Thomas Ayles"
 		explo-team "Michael Rogerson"
 		date 1999.07.15
+		calibrate tape 0.3
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall # Default
