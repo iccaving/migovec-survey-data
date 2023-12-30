@@ -3,9 +3,16 @@ encoding utf-8
 
 survey narrow_no_escape
 
-input "Narrow No Escape plan.th2"
-input "Narrow No Escape ee.th2"
+	input "./narrow_no_escape-p.th2"
+	input "./narrow_no_escape-e.th2"
 
+	map m-all-p -projection plan 
+	narrow_no_escape-1p
+	endmap
+
+	map m-all-e -projection extended
+	narrow_no_escape-1e
+	endmap
 	
 	centreline
 	
@@ -14,7 +21,7 @@ input "Narrow No Escape ee.th2"
 		# Station 7 is PSS dot above shaft
 		team "Rhys Tyers" notes
 		team "Cecilia Kan" instruments
-		team "Davey Wilson" assistant
+		team "Dave Wilson" assistant
 		
 		data normal from to length compass clino
 		

@@ -1,0 +1,155 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-narrow_no_escape-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+    line survey
+        -12.40 11.06
+        -21.85 30.67
+    endline
+    line survey
+        -12.40 11.06
+        -0.67 -14.37
+    endline
+    line survey
+        -12.40 11.06
+        -10.12 11.85
+    endline
+    line survey
+        -12.40 11.06
+        -5.24 12.56
+    endline
+    line survey
+        -12.40 11.06
+        -4.53 -7.76
+    endline
+    line survey
+        -12.40 11.06
+        -9.41 2.64
+    endline
+    line survey
+        -12.40 11.06
+        -1.38 -5.00
+    endline
+    line survey
+        -1.38 -5.00
+        -10.35 -3.74
+    endline
+    line survey
+        -1.38 -5.00
+        -9.57 21.54
+    endline
+    line survey
+        -1.38 -5.00
+        -9.49 -5.55
+    endline
+    line survey
+        -1.38 -5.00
+        -3.58 -15.87
+    endline
+    line survey
+        -1.38 -5.00
+        -2.56 -3.43
+    endline
+    line survey
+        -1.38 -5.00
+        -16.97 -8.46
+    endline
+    line survey
+        -1.38 -5.00
+        -18.94 13.03
+    endline
+    line survey
+        -18.94 13.03
+        -16.89 14.69
+    endline
+    line survey
+        -18.94 13.03
+        -16.89 14.61
+    endline
+    line survey
+        -18.94 13.03
+        -6.65 -7.83
+    endline
+    line survey
+        -16.89 14.69
+        -4.69 1.06
+    endline
+    line survey
+        -16.89 14.69
+        -7.05 6.73
+    endline
+    line survey
+        -16.89 14.69
+        -9.72 -11.61
+    endline
+    line survey
+        -16.89 14.69
+        -20.35 14.37
+    endline
+    line survey
+        -16.89 14.69
+        -13.43 14.84
+    endline
+    line survey
+        -16.89 14.69
+        -17.60 15.39
+    endline
+    line survey
+        -16.89 14.69
+        7.20 1.30
+    endline
+    line survey
+        -16.89 14.69
+        1.54 4.45
+    endline
+    line survey
+        1.54 4.45
+        -18.78 7.68
+    endline
+    line survey
+        1.54 4.45
+        -3.27 15.00
+    endline
+    line survey
+        1.54 4.45
+        -17.76 28.86
+    endline
+    line survey
+        1.54 4.45
+        -13.50 3.35
+    endline
+    line survey
+        1.54 4.45
+        2.24 4.45
+    endline
+    line survey
+        1.54 4.45
+        10.04 -30.67
+    endline
+    line survey
+        1.54 4.45
+        21.85 -9.65
+    endline
+    line survey
+        1.54 4.45
+        -9.49 -5.47
+    endline
+    point -12.40 11.06 station-name -align tr -scale xs -text 1
+    point -21.85 30.67 station-name -align tr -scale xs -text 2
+    point -1.38 -5.00 station-name -align tr -scale xs -text 3
+    point -18.94 13.03 station-name -align tr -scale xs -text 4
+    point -16.89 14.69 station-name -align tr -scale xs -text 5
+    point 1.54 4.45 station-name -align tr -scale xs -text 6
+    point -9.49 -5.47 station-name -align tr -scale xs -text 7
+endscrap
+
+scrap narrow_no_escape-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+    point -12.40 11.06 station -name 1
+    point -21.85 30.67 station -name 2
+    point -1.38 -5.00 station -name 3
+    point -18.94 13.03 station -name 4
+    point -16.89 14.69 station -name 5
+    point 1.54 4.45 station -name 6
+    point -9.49 -5.47 station -name 7
+endscrap

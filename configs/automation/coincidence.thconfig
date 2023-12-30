@@ -11,17 +11,17 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../coincidence.th"
+source "../../data/coincidence/coincidence.th"
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
-export model -o ../outputs/coincidence.lox
-export model -o ../outputs/coincidence.3d
+export model -o ../../outputs/nakljucja.lox
+export model -o ../../outputs/nakljucja.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
-input ../../../layouts/detailed-p.thl
-input ../../../layouts/detailed-e.thl
+input ../../layouts/detailed-p.thl
+input ../../layouts/detailed-e.thl
 
 
 #----------------------------------------------------------------------------------|
@@ -37,8 +37,6 @@ layout local-slo
 	scale 1 200
 	symbol-show point label
 	symbol-show point gradient
-
-	map-comment "Tolminski Migovec<br>Cadastral Number: XXXX<br>Length: 203 m, Depth: 50 m<br>Entrance elevation: 1310 m<br>Coordinates (EPSG:3794): 404773 / 123067<br>Survey: ICCC/JSPDT 2020<br>BCRA Grade 5c"
 
 	code metapost
 		## SCALE BAR (modified from contributions by Thomas Holder)
@@ -125,11 +123,16 @@ layout local-e-slo
 	symbol-show area snow
 	scale 1 200
 
-	map-comment "Tolminski Migovec<br>Cadastral Number: XXXX<br>Length: 203 m, Depth: 50 m<br>Entrance elevation: 1310 m<br>Coordinates (EPSG:3794): 404773 / 123067<br>Survey: ICCC/JSPDT 2020<br>BCRA Grade 5c"
 
 	code tex-map
+        \def\thecomment{Tolminski Migovec\par Cadastral Number: 14026\par Length: \the\cavelength\par 
+         Depth: \the\cavedepth \par Entrance elevation: 1310 m \par Coordinates (EPSG:3794): 404773 / 123067
+         \par Survey: ICCC/JSPDT 2020<br>BCRA Grade 5c
+         }
 		\def\maplayout{
-		\legendbox{2}{125}{SW}{\size[25]\the\cavename}
+		\legendbox{2}{125}{SW}{\size[45]\the\cavename}
+		\legendbox{2}{110}{SW}{\size[15]\thecomment}
+
 		\legendbox{35}{120}{N}{\scalebar}
 	}
 	endcode
@@ -191,9 +194,16 @@ layout local-e-en
 
 	language en
 	code tex-map
+        \def\thecomment{Tolminski Migovec\par Cadastral Number: 14026\par Length: \the\cavelength\par 
+         Depth: \the\cavedepth \par Entrance elevation: 1310 m \par Coordinates (EPSG:3794): 404773 / 123067
+         \par Survey: ICCC/JSPDT 2020<br>BCRA Grade 5c
+         }
 		\def\maplayout{
-		\legendbox{2}{125}{SW}{\size[25]\the\cavename}
+		\legendbox{2}{125}{SW}{\size[45]\the\cavename}
+        \legendbox{2}{110}{SW}{\size[15]\thecomment}
 		\legendbox{35}{120}{N}{\scalebar}
+
+                
 	}
 	
 endlayout
@@ -204,10 +214,14 @@ endlayout
 # export the pdf map containing plan
 
 language sl
-export map -o ../outputs/naključja_profil_SLO.pdf -projection extended -layout local-e-slo
-export map -o ../outputs/naključja_tloris_SLO.pdf -projection plan -layout local-slo
+export map -o ../../outputs/naključja_ee_SLO.pdf -projection extended -layout local-e-slo
+export map -o ../../outputs/naključja_plan_SLO.pdf -projection plan -layout local-slo
+export map -o ../../outputs/nakljucja_ee_SLO.svg -projection extended -layout local-e-slo
+export map -o ../../outputs/nakljucja_plan_SLO.svg -projection plan -layout local-slo
 
 language en
-export map -o ../outputs/coincidence_EE_EN.pdf -projection extended -layout local-e-en
-export map -o ../outputs/coincidence_plan_EN.pdf -projection plan -layout local-en
+export map -o ../../outputs/naključja_EE_EN.pdf -projection extended -layout local-e-en
+export map -o ../../outputs/naključja_plan_EN.pdf -projection plan -layout local-en
+export map -o ../../outputs/nakljucja_ee_EN.svg -projection extended -layout local-e-en
+export map -o ../../outputs/nakljucja_plan_EN.svg -projection plan -layout local-en
 
