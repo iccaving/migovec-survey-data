@@ -214,14 +214,14 @@ endlayout
 # export the pdf map containing plan
 
 language sl
-export map -o ../../outputs/naključja_ee_SLO.pdf -projection extended -layout local-e-slo
-export map -o ../../outputs/naključja_plan_SLO.pdf -projection plan -layout local-slo
+export map -o ../../outputs/nakljucja_ee_SLO.pdf -projection extended -layout local-e-slo
+export map -o ../../outputs/nakljucja_plan_SLO.pdf -projection plan -layout local-slo
 export map -o ../../outputs/nakljucja_ee_SLO.svg -projection extended -layout local-e-slo
 export map -o ../../outputs/nakljucja_plan_SLO.svg -projection plan -layout local-slo
 
 language en
-export map -o ../../outputs/naključja_EE_EN.pdf -projection extended -layout local-e-en
-export map -o ../../outputs/naključja_plan_EN.pdf -projection plan -layout local-en
+export map -o ../../outputs/nakljucja_ee_EN.pdf -projection extended -layout local-e-en
+export map -o ../../outputs/nakljucja_plan_EN.pdf -projection plan -layout local-en
 export map -o ../../outputs/nakljucja_ee_EN.svg -projection extended -layout local-e-en
 export map -o ../../outputs/nakljucja_plan_EN.svg -projection plan -layout local-en
 
