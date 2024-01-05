@@ -29,8 +29,8 @@ TARGET_NAMESPACE = args.survey_selector.split("@")[1] if "@" in args.survey_sele
 survey = Survey(ENTRY_FILE)
 key = survey.get_survey_key(TARGET_SURVEY, TARGET_NAMESPACE)
 filepath = survey.get_survey_file(key)
-
-lengthre = re.compile(r".*Total length of survey legs =\s*(\S+)m")
+lengthre = re.compile(r".*\s*(\S+)m adjusted")
+#lengthre = re.compile(r".*Total length of survey legs =\s*(\S+)m")
 
 
 def get_stats(filepath):

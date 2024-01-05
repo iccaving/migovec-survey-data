@@ -4,28 +4,27 @@ encoding  utf-8
 #                      THIS IS A CONFIGURATION FILE FOR:                           |
 #                                                                                  |
 #                                                                                  |
-#                      A SMALL CAVE OF THE MIGOVEC PLATEAU                         |
+#                      BREZNO POD VRHOM PLANJE                         |
 #                                                                                  |
 #----------------------------------------------------------------------------------|
 
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../brezno_pod_vrhom_planje.th"
+source "../../data/brezno_pod_vrhom_planje/brezno_pod_vrhom_planje.th"
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
-export model -o ../../../outputs/brezno_pod_vrhom_planje.lox
-export model -o ../../../outputs/brezno_pod_vrhom_planje.3d
-export model -o ../../../outputs/brezno_pod_vrhom_planje.vtk
+export model -o ../../outputs/brezno_pod_vrhom_planje.lox
+export model -o ../../outputs/brezno_pod_vrhom_planje.3d
 
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
-input ../../../layouts/detailed-p.thl
-input ../../../layouts/detailed-dark-p.thl
-input ../../../layouts/detailed-e.thl
-input ../../../layouts/detailed-dark-e.thl
+input ../../layouts/detailed-p.thl
+input ../../layouts/detailed-dark-p.thl
+input ../../layouts/detailed-e.thl
+input ../../layouts/detailed-dark-e.thl
 
 source
 	map localmap-p -projection plan
@@ -106,13 +105,9 @@ select m-all-e@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o brezno_pod_vrhom_planje_ee.pdf -projection extended -layout local-e
-
+export map -o ../../outputs/brezno_pod_vrhom_planje_ee_EN.pdf -projection extended -layout local-e
+export map -o ../../outputs/brezno_pod_vrhom_planje_ee_EN.svg -projection extended -layout local-e
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
-export map -o brezno_pod_vrhom_planje_plan.pdf -projection plan -layout local
-
-export database -o brezno_pod_vrhom_planje_plan.sql
-
-# export a .3d model, which can be opened in AVEN and LOCH
-export model -o brezno_pod_vrhom_planje.3d -fmt survex
+export map -o ../../outputs/brezno_pod_vrhom_planje_plan_EN.pdf -projection plan -layout local
+export map -o ../../outputs/brezno_pod_vrhom_planje_plan_EN.svg -projection plan -layout local

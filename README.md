@@ -157,13 +157,34 @@ This is a new area which we started exploring in 2020. Located to the NW of Tolm
 
 1. Bertijeva Jama
 2. Planja jama
-3. Brezno pod Vrhom Planje
+3. Brezno pod Vrhom Planje (by far the longest, explored from 2020 to 2023, ongoing)
 
 You can download the following artifacts:
 
-- Plan view (WIP)  
-  [PLAN SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_SLO.pdf) |
-  [PLAN ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_ENG.pdf)
+- Brezno pod vhrom Planje plan view (WIP)  
+  [PLAN ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_plan_EN.pdf) |
+  [PLAN ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_plan_EN.svg)
+
+  - Brezno pod vhrom Planje extended elevation view (WIP)  
+  [EE ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_ee_EN.pdf) |
+  [EE ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_ee_EN.svg)
+
+**Nakljucja jama (Coincidence Cave)**
+
+You can download the following artifacts:
+
+- 3D Model  
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/nakljucja.3d) |
+- Plan View (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_ee_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_ee_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_ee_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_ee_ENG.svg)
 
 **Plateau**
 

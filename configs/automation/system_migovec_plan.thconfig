@@ -112,6 +112,7 @@ export map -projection plan -o ../../outputs/system_migovec_plan_ENG.svg -layout
 
 # export a .3d model, which can be opened in AVEN and LOCH
 export model -o ../../outputs/system_migovec.3d
+export database -o ../../outputs/system_migovec.sql
 
 #----------------------------------------------------------------------------------|
 # export a .lox model, which can be opened in LOCH only

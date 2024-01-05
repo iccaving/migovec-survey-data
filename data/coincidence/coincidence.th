@@ -7,4 +7,14 @@ survey coincidence -title "Naklučja jama" -entrance 0@coincidence_ent -attr cad
 	input "./2021/narrow_no_escape/narrow_no_escape.th"
 
 	equate 7@narrow_no_escape 26@coincidence_ent
+
+	map m-all-p -projection plan
+		m-all-p@coincidence_ent
+		m-all-p@narrow_no_escape
+	endmap
+
+	map m-all-e -projection extended
+		m-all-e@coincidence_ent
+		m-all-e@narrow_no_escape
+	endmap
 endsurvey
