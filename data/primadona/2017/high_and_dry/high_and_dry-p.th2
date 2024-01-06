@@ -3,11 +3,13 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap high_and_dry-1p -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
+scrap high_and_dry-1p -projection plan -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
 
+point 731.2148 559.9274 map-connection 
+point 153.5102 528.7791 label -align r -attr level 1 -text "High and Dry"
 line wall 
-  605.25 634.75
-  605.25 634.75 604.75 633.5 602.0 629.75
+  606.4035 634.2453
+  606.4035 634.2453 604.75 633.5 602.0 629.75
   599.25 626.0 595.25 620.75 590.0 619.75
   584.75 618.75 578.75 616.75 578.75 616.75
   578.75 616.75 575.0 614.0 570.25 614.25
@@ -34,11 +36,6 @@ endline
 
 point 590.5 545.0 continuation -align l -scale xs
 point 534.25 602.25 continuation -align l -scale xs
-line label -text "High and Dry"
-  514.75 604.5
-  514.75 604.5 556.75 638.25 604.25 641.0
-endline
-
 line contour 
   603.25 557.75
   603.25 557.75 609.5 539.5 613.5 531.75
@@ -133,7 +130,7 @@ line rock-border -close on
   647.0 550.0
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   596.0 535.75
   592.0 533.75
   593.75 526.5
@@ -147,7 +144,7 @@ line rock-border -close on
   608.5 536.25
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   599.75 547.5
   594.5 547.25
   594.0 544.5
@@ -156,21 +153,21 @@ line rock-border -close on -clip off
   600.0 544.75 599.75 547.5 599.75 547.5
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   592.5 553.5
   592.0 549.75
   596.75 547.75
   596.75 550.5
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   600.75 554.75
   596.25 554.75
   596.5 551.75
   598.25 550.75
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   603.75 543.75
   593.25 541.25
   595.25 538.75
@@ -283,24 +280,24 @@ line wall
   607.75 613.5 606.5 616.75 607.5 618.25
   608.5 619.75 608.75 623.5 608.75 624.75
   608.75 626.0 609.75 632.0 609.75 632.0
-  611.0 635.0
+  609.3418 634.3511
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   544.75 593.75
   539.0 593.0
   541.25 587.25
   548.0 588.75
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   542.5 601.5
   538.25 601.25
   538.5 596.0
   543.25 597.5
 endline
 
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   543.25 608.5
   535.5 611.5
   536.0 606.25
@@ -330,7 +327,7 @@ point 545.3617 598.0731 station -name 1
 endscrap
 
 
-scrap high_and_dry-2p -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
+scrap high_and_dry-2p -projection plan -scale [0.0 0.0 1024.0 900.0074814995528 0.0 0.0 122.97 108.08]
 
 line wall -subtype invisible
   740.8255 575.5363

@@ -2,8 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+
 scrap styx-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
+point 349.0466 734.6398 u:connection_marker -align l -attr offset 2.25 -attr text Styx -attr code 18
 point 299.375 713.92 label -align tl -attr level 4 -scale l -text Styx
 line border -close on -id styx-1p_water_1 -visibility on
   161.787 373.4798
