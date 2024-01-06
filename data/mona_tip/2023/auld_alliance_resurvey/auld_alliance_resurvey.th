@@ -17,6 +17,14 @@ survey auld_alliance_resurvey -title "auld alliance resurvey"
   centerline
     date 2023.07.28 
     # team CH,EP,AR 
+    team "Ellie Pizey"
+    team "Astrid Rao"
+    team "Chris Hayes"
+
+    explo-date 2016.07.27 # Expedition Neprehojene Poti, scary rigging
+    explo-team "William French"
+    explo-team "William Scott"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

@@ -5,7 +5,7 @@ encoding  utf-8
 
 scrap neu_alliance-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 888.6784 1183.5914 label -align t -attr level 3 -scale xs -text "Neu Alliance"
+point 888.6784 1183.5914 label -align tl -attr level 3 -scale l -text "Neu Alliance"
 point 162.43 967.5064 water-flow -orientation 154.26382
 point 262.6686 703.1174 water-flow -orientation 154.26382
 line wall 

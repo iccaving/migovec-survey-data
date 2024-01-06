@@ -3,11 +3,11 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap coincidence-1s -scale [0 0 39.3701 0 0 0 1 0 m] -projection extended
+scrap coincidence-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 3007.1729 2067.5967 dig 
 point 3245.8795 2103.6138 dig 
-point 3139.9207 2009.8803 label -text "dug out squeezes" -align b -scale s
+point 3139.9207 2009.8803 label -align b -scale s -text "dug out squeezes"
 line u:texture 
   3435.4 2044.48
   3437.7775 2027.8807
@@ -16,7 +16,7 @@ line u:texture
   3436.8058 1952.0903
 endline
 
-line wall -outline none -clip off
+line wall -clip off -outline none
   3442.9218 2046.1458
   3445.5156 2063.9772
   3445.5156 2073.4244
@@ -30,10 +30,10 @@ line wall -outline none -clip off
   3332.8368 2204.7251
 endline
 
-point 2743.3867 1541.2369 label -text "<bf>p10<bf>" -align r
-point 2551.0054 1162.658 label -text "<bf>p11<bf>" -align r
-point 2386.1819 817.7457 label -text "<bf>p4<bf>" -align r
-point 2808.7678 2495.4611 label -text "aven +12m" -align t -scale s
+point 2743.3867 1541.2369 label -align r -text "<bf>p10<bf>"
+point 2551.0054 1162.658 label -align r -text "<bf>p11<bf>"
+point 2386.1819 817.7457 label -align r -text "<bf>p4<bf>"
+point 2808.7678 2495.4611 label -align t -scale s -text "aven +12m"
 line wall:clay 
   3167.91 2078.05
   3186.26 2091.06 3206.42 2046.56 3217.0 2034.87
@@ -120,7 +120,7 @@ line wall
   2900.86 2338.03 2891.24 2366.87 2889.56 2394.97
 endline
 
-point 3303.07 2068.62 air-draught -scale xl -orientation 92.0
+point 3303.07 2068.62 air-draught -orientation 92.0 -scale xl
 line rock-border -close on
   3167.06 2142.56
   3156.33 2138.88
@@ -765,20 +765,20 @@ line rock-border -close on
   2534.15 2149.73
 endline
 
-point 2704.28 1350.78 label -text "Hell's Teeth" -align r -scale xl
-point 3444.3 1992.66 station-name -text 0 -align t -scale xs
-point 3271.24 2018.54 station-name -text 1 -align t -scale xs
-point 3190.4299 2090.8501 station-name -text 2 -align t -scale xs
-point 3124.99 2111.5801 station-name -text 3 -align t -scale xs
-point 2930.04 1981.49 station-name -text 4 -align t -scale xs
-point 2787.23 1947.85 station-name -text 5 -align t -scale xs
-point 2614.9099 1835.34 station-name -text 6 -align t -scale xs
-point 2596.0 1668.3199 station-name -text 7 -align t -scale xs
-point 2450.21 1436.57 station-name -text 8 -align t -scale xs
-point 2447.54 1253.0 station-name -text 9 -align tl -scale xs
-point 2443.52 1087.26 station-name -text 10 -align r -scale xs
-point 2417.04 995.48 station-name -text 11 -align tl -scale xs
-point 2246.29 932.22 station-name -text 12 -align t -scale xs
+point 2704.28 1350.78 label -align r -scale xl -text "Hell's Teeth"
+point 3444.3 1992.66 station-name -align t -scale xs -text 0
+point 3271.24 2018.54 station-name -align t -scale xs -text 1
+point 3190.4299 2090.8501 station-name -align t -scale xs -text 2
+point 3124.99 2111.5801 station-name -align t -scale xs -text 3
+point 2930.04 1981.49 station-name -align t -scale xs -text 4
+point 2787.23 1947.85 station-name -align t -scale xs -text 5
+point 2614.9099 1835.34 station-name -align t -scale xs -text 6
+point 2596.0 1668.3199 station-name -align t -scale xs -text 7
+point 2450.21 1436.57 station-name -align t -scale xs -text 8
+point 2447.54 1253.0 station-name -align tl -scale xs -text 9
+point 2443.52 1087.26 station-name -align r -scale xs -text 10
+point 2417.04 995.48 station-name -align tl -scale xs -text 11
+point 2246.29 932.22 station-name -align t -scale xs -text 12
 line wall:presumed 
   2290.37 1138.1
   2300.2 1136.25 2314.79 1137.22 2324.82 1137.22
@@ -810,7 +810,7 @@ line wall:presumed
   2892.49 2467.62 2890.83 2487.9 2891.07 2494.36
 endline
 
-point 2149.1299 2299.97 label -text "Entrance Chamber" -align t -scale xl
+point 2149.1299 2299.97 label -align t -scale xl -text "Entrance Chamber"
 point 3482.11 1986.58 entrance -orientation 285.0
 line rock-border -close on
   2678.88 1496.43
@@ -2966,7 +2966,7 @@ point 2186.88 594.67 station -name 19
 endscrap
 
 
-scrap coincidence-2s -scale [0 0 39.3701 0 0 0 1 0 m] -projection extended
+scrap coincidence-2s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 346.2864 1450.0746 continuation -align tl -scale xs
 line rock-border -close on
@@ -3022,15 +3022,15 @@ line u:texture
   219.598 759.848
 endline
 
-point 2012.0593 953.3183 label -text "mud ramp" -align l -scale s
+point 2012.0593 953.3183 label -align l -scale s -text "mud ramp"
 point 693.8384 1303.4892 air-draught -orientation 32.0
-point 808.7496 619.7429 label -text "2019 Extensions" -align t -scale xl
-point 2178.5728 592.2882 station-name -text 19 -align t -scale xs
-point 2106.0334 792.9108 station-name -text 14 -align t -scale xs
-point 2176.5378 758.5856 station-name -text 13 -align r -scale xs
-point 1124.7438 1519.1257 label -text "continuing chimney" -align tr -scale s
+point 786.7632 464.4636 label -align t -scale xl -text "2019 Extensions"
+point 2178.5728 592.2882 station-name -align t -scale xs -text 19
+point 2106.0334 792.9108 station-name -align t -scale xs -text 14
+point 2176.5378 758.5856 station-name -align r -scale xs -text 13
+point 1124.7438 1519.1257 label -align tr -scale s -text "continuing chimney"
 point 888.0461 1708.0742 continuation -scale xs
-line rock-border -close on -clip off
+line rock-border -clip off -close on
   256.623 390.9465
   237.5944 399.1652
   217.8032 399.8785
@@ -3053,8 +3053,7 @@ line border -close on -id water1
   2305.9997 475.6286
 endline
 
-point 868.465 904.1924 water-flow -orientation 180.0
-point 842.9259 876.4488 continuation -scale xs
+point 854.6187 970.5091 water-flow -orientation 180.0
 point 2858.6606 2471.935 continuation -scale xs
 point 2608.8286 2369.7261 continuation -scale xs
 line u:texture 
@@ -3171,10 +3170,9 @@ line rock-border -close on
   2056.52 571.12
   2068.15 564.38
   2076.35 559.16
-  2099.0 568.1
 endline
 
-point 2218.18 549.54 water-flow -orientation 130.0
+point 2218.1801 549.54 water-flow -orientation 130.0
 line rock-border -close on
   2280.91 574.8
   2266.93 568.16
@@ -3184,7 +3182,6 @@ line rock-border -close on
   2275.62 547.64
   2286.0 554.53
   2294.78 560.11
-  2280.91 574.8
 endline
 
 line rock-border -close on
@@ -3194,7 +3191,6 @@ line rock-border -close on
   2240.05 581.37
   2249.31 581.86
   2257.31 582.96
-  2252.36 600.92
 endline
 
 line rock-border -close on
@@ -3205,7 +3201,6 @@ line rock-border -close on
   2158.26 537.82
   2170.07 538.65
   2179.77 540.03
-  2163.46 572.35
 endline
 
 line rock-border -close on
@@ -3215,7 +3210,6 @@ line rock-border -close on
   1974.58 627.85
   1968.52 620.59
   1970.15 610.09
-  1989.72 601.73
 endline
 
 line rock-border -close on
@@ -3223,7 +3217,6 @@ line rock-border -close on
   1931.25 636.98
   1929.69 629.65
   1937.22 624.49
-  1946.49 639.28
 endline
 
 line rock-border -close on
@@ -3232,7 +3225,6 @@ line rock-border -close on
   1901.22 628.26
   1905.89 620.51
   1914.78 620.51
-  1917.13 635.2
 endline
 
 line u:texture 
@@ -3336,7 +3328,6 @@ line rock-border -close on
   2489.18 451.94
   2490.46 441.57
   2497.29 438.3
-  2499.0 451.94
 endline
 
 line rock-border -close on
@@ -3345,14 +3336,12 @@ line rock-border -close on
   2457.73 444.74
   2463.84 438.68
   2472.99 440.92
-  2472.12 454.21
 endline
 
 line rock-border -close on
   2511.49 458.38
   2505.4 453.87
   2514.51 452.32
-  2511.49 458.38
 endline
 
 point 2509.98 419.36 narrow-end 
@@ -3397,7 +3386,6 @@ line rock-border -close on
   1097.7 914.76
   1108.71 913.21
   1125.27 912.96
-  1148.28 914.85
 endline
 
 line rock-border -close on
@@ -3410,7 +3398,6 @@ line rock-border -close on
   1381.31 659.06
   1417.83 643.34
   1425.08 648.36
-  1422.27 678.38
 endline
 
 line rock-border -close on
@@ -3425,7 +3412,6 @@ line rock-border -close on
   1476.1 690.36
   1483.89 707.73
   1484.98 717.5
-  1470.12 723.73
 endline
 
 line rock-border -close on
@@ -3434,7 +3420,6 @@ line rock-border -close on
   1465.79 737.33
   1467.47 729.54
   1477.02 726.43
-  1480.63 743.32
 endline
 
 line wall:blocks 
@@ -3538,7 +3523,6 @@ line rock-border -close on
   1052.02 1014.2
   1059.87 1011.09
   1071.89 1000.61
-  1074.64 1003.26
 endline
 
 line rock-border -close on
@@ -3556,7 +3540,6 @@ line rock-border -close on
   1047.49 954.73
   1059.7 953.32
   1070.54 951.63
-  1081.43 966.23
 endline
 
 line wall 
@@ -3681,7 +3664,6 @@ line rock-border -close on
   972.0 1016.89
   982.3 1016.54
   994.15 1024.88
-  1007.79 1045.48
 endline
 
 line rock-border -close on
@@ -3712,7 +3694,6 @@ line rock-border -close on
   927.75 1135.28
   937.2 1127.96
   946.1 1123.22
-  957.98 1120.57
 endline
 
 line rock-border -close on
@@ -3731,7 +3712,6 @@ line rock-border -close on
   1001.0 1059.72
   1013.94 1053.24
   1020.8 1048.0
-  1047.9 1057.13
 endline
 
 point 874.5207 1272.3645 water-flow -orientation 180.0
@@ -3833,7 +3813,6 @@ line rock-border -close on
   221.65 983.02
   236.82 991.24
   246.0 997.01
-  269.59 1022.24
 endline
 
 line rock-border -close on
@@ -3846,7 +3825,6 @@ line rock-border -close on
   178.14 956.17
   186.84 956.17
   195.64 957.67
-  200.88 987.86
 endline
 
 line rock-border -close on
@@ -3861,7 +3839,6 @@ line rock-border -close on
   265.3 947.3
   277.86 947.03
   286.77 947.03
-  292.68 968.52
 endline
 
 line rock-border -close on
@@ -3875,7 +3852,6 @@ line rock-border -close on
   201.67 915.56
   223.79 916.25
   241.06 916.19
-  242.21 951.33
 endline
 
 line rock-border -close on
@@ -3889,14 +3865,12 @@ line rock-border -close on
   121.23 884.35
   128.36 880.53
   137.38 880.23
-  147.63 901.5
 endline
 
 line rock-border -close on
   158.51 894.24
   149.42 886.17
   155.1 881.79
-  158.51 894.24
 endline
 
 line wall:blocks 
@@ -3917,7 +3891,6 @@ line rock-border -close on
   351.41 1031.65
   361.81 1030.49
   371.16 1034.22
-  370.66 1070.71
 endline
 
 line wall 
@@ -3980,7 +3953,6 @@ line rock-border -close on
   410.1 1095.47
   408.59 1088.11
   418.45 1086.67
-  434.66 1091.6
 endline
 
 line rock-border -close on
@@ -3988,7 +3960,6 @@ line rock-border -close on
   451.98 1104.77
   443.9 1106.23
   440.05 1098.84
-  455.13 1097.61
 endline
 
 line rock-border -close on
@@ -3996,7 +3967,6 @@ line rock-border -close on
   392.62 1088.78
   393.24 1081.79
   402.5 1082.21
-  400.96 1089.76
 endline
 
 line rock-border -close on
@@ -4015,7 +3985,6 @@ line rock-border -close on
   324.86 1007.66
   335.26 1012.22
   344.17 1015.0
-  348.48 1023.47
 endline
 
 line wall:blocks 
@@ -4051,7 +4020,6 @@ line rock-border -close on
   237.13 498.61
   239.28 489.98
   247.19 490.49
-  270.52 494.96
 endline
 
 line rock-border -close on
@@ -4133,15 +4101,15 @@ line u:texture
   205.91 713.34 192.86 714.13 183.26 708.47
 endline
 
-point 1627.45 909.85 air-draught -align t -scale xl -orientation 90.0
+point 1627.45 909.85 air-draught -align t -orientation 90.0 -scale xl
 point 1607.45 872.85 dig 
-point 1607.45 779.85 label -text "blasted squeeze" -align b -scale s
-point 448.88 1023.76 label -text "blasted squeeze" -align t -scale s
+point 1607.45 779.85 label -align b -scale s -text "blasted squeeze"
+point 448.88 1023.76 label -align t -scale s -text "blasted squeeze"
 point 412.88 1127.76 dig -align t
-point 350.05 529.3 label -text "blasted pitch head" -align r -scale s
+point 350.05 529.3 label -align r -scale s -text "blasted pitch head"
 point 338.05 484.3 dig -align r
-point 330.05 319.3 label -text "<bf>p8<bf>" -align r
-point 130.05 719.3 label -text "<bf>p10<bf>" -align l
+point 330.05 319.3 label -align r -text "<bf>p8<bf>"
+point 130.05 719.3 label -align l -text "<bf>p10<bf>"
 line wall 
   329.6 397.63
   328.968 405.0158 327.8831 415.2472 327.1604 425.3329
@@ -4161,7 +4129,6 @@ line rock-border -close on
   237.29 163.83
   241.37 157.7
   251.51 154.91
-  262.31 165.62
 endline
 
 line rock-border -close on
@@ -4172,7 +4139,6 @@ line rock-border -close on
   260.6 154.91
   268.29 151.74
   278.14 147.65
-  286.95 159.54
 endline
 
 line rock-border -close on
@@ -4182,7 +4148,6 @@ line rock-border -close on
   224.91 134.12
   231.13 131.25
   244.24 133.21
-  240.0 149.23
 endline
 
 line rock-border -close on
@@ -4192,7 +4157,6 @@ line rock-border -close on
   206.07 135.06
   214.37 135.57
   224.31 136.51
-  219.4 150.19
 endline
 
 line wall 
@@ -4286,7 +4250,6 @@ line rock-border -close on
   1465.4 605.51
   1471.58 599.69
   1482.06 603.02
-  1475.13 636.98
 endline
 
 line rock-border -close on
@@ -4300,7 +4263,6 @@ line rock-border -close on
   1389.82 536.98
   1397.72 533.84
   1404.64 536.45
-  1396.95 562.4
 endline
 
 line rock-border -close on
@@ -4312,7 +4274,6 @@ line rock-border -close on
   1383.13 575.88
   1392.69 577.19
   1402.62 578.61
-  1397.35 605.77
 endline
 
 line rock-border -close on
@@ -4326,7 +4287,6 @@ line rock-border -close on
   1370.95 427.53
   1375.73 418.8
   1384.25 416.08
-  1395.46 442.83
 endline
 
 line rock-border -close on
@@ -4394,7 +4354,6 @@ line rock-border -close on
   1467.42 501.08
   1472.81 494.37
   1482.82 493.7
-  1478.72 513.66
 endline
 
 line rock-border -close on
@@ -4403,7 +4362,6 @@ line rock-border -close on
   1495.35 514.07
   1500.37 509.11
   1512.07 509.72
-  1504.66 532.3
 endline
 
 line wall:blocks 
@@ -4451,39 +4409,39 @@ line wall
   1411.4 268.32 1411.16 281.86 1413.09 301.17
 endline
 
-point 227.1401 173.69 station-name -text 39 -align t -scale xs
-point 303.1899 378.16 station-name -text 38 -align t -scale xs
-point 275.9899 525.42 station-name -text 37 -align t -scale xs
-point 190.9399 654.9 station-name -text 36 -align t -scale xs
-point 220.25 852.8 station-name -text 35 -align t -scale xs
-point 155.6401 915.15 station-name -text 34 -align t -scale xs
-point 314.86 1081.6801 station-name -text 33 -align t -scale xs
-point 461.56 1118.83 station-name -text 32 -align t -scale xs
-point 1066.99 1517.12 station-name -text 28 -align t -scale xs
-point 1039.23 1233.36 station-name -text 27 -align t -scale xs
-point 921.86 1196.8199 station-name -text 26 -align t -scale xs
-point 760.06 1296.8101 station-name -text 29 -align t -scale xs
-point 700.06 1156.81 label -text "<bf>p4<bf>" -align br
-point 598.05 1053.23 station-name -text 30 -align t -scale xs
-point 1103.51 1077.4 station-name -text 25 -align t -scale xs
-point 1153.51 1071.4 label -text "<bf>p3<bf>" -align r
-point 1203.51 771.4 label -text "<bf>p4<bf>" -align l
-point 1131.15 958.35 station-name -text 24 -align t -scale xs
-point 1480.56 870.53 station-name -text 46 -align t -scale xs
-point 1422.56 772.08 station-name -text 45 -align l -scale xs
-point 1453.92 672.53 station-name -text 44 -align r -scale xs
-point 1455.92 272.53 label -text "<bf>p14<bf>" -align r
-point 1413.63 547.76 station-name -text 43 -align r -scale xs
-point 1416.19 419.76 station-name -text 42 -align r -scale xs
-point 1363.89 295.73 station-name -text 41 -align r -scale xs
-point 1335.54 124.76 station-name -text 40 -align tl -scale xs
-point 1826.2 927.15 station-name -text 20 -align t -scale xs
-point 1689.36 845.0 station-name -text 21 -align t -scale xs
-point 1612.6899 824.06 station-name -text 22 -align t -scale xs
-point 2029.48 710.16 station-name -text 15 -align t -scale xs
-point 1864.09 688.03 station-name -text 16 -align t -scale xs
-point 2293.49 592.93 station-name -text 17 -align t -scale xs
-point 2534.68 485.34 station-name -text 18 -align t -scale xs
+point 227.1401 173.69 station-name -align t -scale xs -text 39
+point 303.1899 378.16 station-name -align t -scale xs -text 38
+point 275.9899 525.42 station-name -align t -scale xs -text 37
+point 190.9399 654.9 station-name -align t -scale xs -text 36
+point 220.25 852.8 station-name -align t -scale xs -text 35
+point 155.6401 915.15 station-name -align t -scale xs -text 34
+point 314.86 1081.6801 station-name -align t -scale xs -text 33
+point 461.56 1118.83 station-name -align t -scale xs -text 32
+point 1066.99 1517.12 station-name -align t -scale xs -text 28
+point 1039.23 1233.36 station-name -align t -scale xs -text 27
+point 921.86 1196.8199 station-name -align t -scale xs -text 26
+point 760.06 1296.8101 station-name -align t -scale xs -text 29
+point 700.06 1156.81 label -align br -text "<bf>p4<bf>"
+point 598.05 1053.23 station-name -align t -scale xs -text 30
+point 1103.51 1077.4 station-name -align t -scale xs -text 25
+point 1153.51 1071.4 label -align r -text "<bf>p3<bf>"
+point 1203.51 771.4 label -align l -text "<bf>p4<bf>"
+point 1131.15 958.35 station-name -align t -scale xs -text 24
+point 1480.56 870.53 station-name -align t -scale xs -text 46
+point 1422.56 772.08 station-name -align l -scale xs -text 45
+point 1453.92 672.53 station-name -align r -scale xs -text 44
+point 1455.92 272.53 label -align r -text "<bf>p14<bf>"
+point 1413.63 547.76 station-name -align r -scale xs -text 43
+point 1416.19 419.76 station-name -align r -scale xs -text 42
+point 1363.89 295.73 station-name -align r -scale xs -text 41
+point 1335.54 124.76 station-name -align tl -scale xs -text 40
+point 1826.2 927.15 station-name -align t -scale xs -text 20
+point 1689.36 845.0 station-name -align t -scale xs -text 21
+point 1612.6899 824.06 station-name -align t -scale xs -text 22
+point 2029.48 710.16 station-name -align t -scale xs -text 15
+point 1864.09 688.03 station-name -align t -scale xs -text 16
+point 2293.49 592.93 station-name -align t -scale xs -text 17
+point 2534.68 485.34 station-name -align t -scale xs -text 18
 line u:texture 
   2069.66 725.83
   2069.66 727.5929 2074.7549 733.7759 2075.7352 735.9108
@@ -4608,28 +4566,7 @@ line wall:blocks
   779.77 1127.8 771.6 1113.52 764.54 1100.37
   763.8 1099.01 762.96 1097.71 762.18 1096.37
   761.29 1094.86 760.38 1093.35 759.54 1091.81
-  756.15 1085.56 746.02 1077.11 746.65 1071.02
-endline
-
-line wall 
-  746.65 1071.02
-  746.65 1061.39 743.25 1040.86 748.42 1032.18
-  751.19 1027.53 759.41 1023.21 761.19 1018.97
-  762.08 1016.83 758.45 1014.26 759.13 1011.65
-  759.19 1011.42 759.4 1011.25 759.56 1011.07
-  759.71 1010.89 759.92 1010.75 760.06 1010.56
-  760.25 1010.31 760.33 1009.97 760.57 1009.75
-  760.98 1009.35 761.53 1009.12 761.95 1008.74
-  762.67 1008.08 763.3 1007.33 763.99 1006.63
-  764.77 1005.84 765.61 1005.09 766.36 1004.26
-  769.77 1000.46 768.9 994.54 769.97 990.19
-  771.51 983.86 778.93 977.94 778.93 972.71
-endline
-
-line wall:presumed 
-  778.93 972.71
-  782.26 969.38 782.35 951.02 783.18 946.19
-  787.14 923.2 793.12 898.38 793.12 875.07
+  756.15 1085.56 737.3964 1079.5392 738.0264 1073.4492
 endline
 
 line wall:blocks 
@@ -4730,9 +4667,9 @@ endline
 
 point 199.11 116.43 breakdown-choke -scale xs
 point 173.35 105.29 air-draught -orientation 32.0
-point 2470.28 406.1 water-flow -orientation 123.0
+point 2470.2801 406.1 water-flow -orientation 123.0
 point 2375.61 486.36 water-flow -orientation 122.0
-point 1785.27 691.01 label -text "laminated clay" -align l -scale s
+point 1785.27 691.01 label -align l -scale s -text "laminated clay"
 line u:texture 
   1468.5 854.4
   1465.91 854.4 1463.33 854.4 1460.74 854.4
@@ -4793,7 +4730,6 @@ line rock-border -close on
   579.15 1051.88
   593.25 1048.2
   605.05 1045.82
-  643.92 1084.94
 endline
 
 line rock-border -close on
@@ -4807,7 +4743,6 @@ line rock-border -close on
   533.95 1007.03
   543.09 1006.88
   554.77 1008.62
-  574.8 1023.41
 endline
 
 line rock-border -close on
@@ -4817,7 +4752,6 @@ line rock-border -close on
   500.23 1037.44
   508.09 1034.08
   520.15 1040.68
-  510.44 1054.89
 endline
 
 line rock-border -close on
@@ -4828,7 +4762,6 @@ line rock-border -close on
   478.76 1062.33
   491.85 1062.76
   498.52 1067.77
-  481.36 1089.23
 endline
 
 line rock-border -close on
@@ -4845,20 +4778,15 @@ line rock-border -close on
   495.14 1116.93
   506.54 1118.76
   513.24 1123.91
-  504.72 1137.41
 endline
 
-line wall:presumed 
-  904.5 880.24
-  904.5 880.79 904.5 881.34 904.5 881.9
-  904.5 883.03 904.5 884.17 904.5 885.3
-  904.5 886.94 904.5 888.58 904.5 890.22
-  904.5 891.84 904.63 893.48 904.5 895.1
-  904.1 899.87 903.77 904.83 903.77 909.67
-  903.77 931.31 899.62 953.26 899.4 974.51
+line wall 
+  886.8318 902.313
+  886.8318 903.9729
+  890.0323 930.2679 900.3976 951.1748 899.4 974.51
 endline
 
-point 393.12 1331.89 station-name -text 31 -align t -scale xs
+point 393.12 1331.89 station-name -align t -scale xs -text 31
 line u:texture 
   913.95 1025.87
   893.57 1026.8 874.15 1036.41 854.62 1038.87
@@ -4877,22 +4805,21 @@ line u:texture
 endline
 
 line rock-border -close on
-  838.4 976.4
-  817.93 978.7
-  808.38 982.11
-  799.49 984.26
-  790.06 979.61
-  788.08 970.38
-  787.17 962.43
-  789.45 953.38
-  800.17 947.44
-  814.04 945.6
-  823.76 944.16
-  832.14 943.09
-  839.25 956.26
-  841.65 964.68
-  843.23 972.76
-  838.4 976.4
+  854.6592 1030.0686
+  834.1892 1032.3686
+  824.6392 1035.7786
+  815.7492 1037.9286
+  806.3192 1033.2786
+  804.3392 1024.0486
+  803.4292 1016.0986
+  805.7092 1007.0486
+  816.4292 1001.1086
+  830.2992 999.2686
+  840.0192 997.8286
+  848.3992 996.7586
+  855.5092 1009.9286
+  857.9092 1018.3486
+  859.4892 1026.4286
 endline
 
 line rock-border -close on
@@ -4907,7 +4834,6 @@ line rock-border -close on
   1303.87 718.33
   1309.28 704.72
   1314.08 695.11
-  1341.08 680.53
 endline
 
 point 2606.57 1671.93 station -name 7

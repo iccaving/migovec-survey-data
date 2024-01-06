@@ -4,7 +4,6 @@ encoding  utf-8
 
 scrap cantina_canyon_2-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 812.8125 1924.9363 label -align tl -attr level 3 -scale l -text "Cantina Canyon"
 point 410.401 1979.45 water-flow -orientation 173.0393894567688
 point 334.541 1789.26 water-flow -orientation 225.86598423331733
 line floor-step 

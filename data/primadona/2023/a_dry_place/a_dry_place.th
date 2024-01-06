@@ -18,7 +18,15 @@ survey a_dry_place -title "A Dry Place"
 
   centerline
     date 2023.07.29 
-    # team AT EP AR 
+    # team AT EP AR
+    team "Ana Teck" notes
+		team "Ellie Pizey" instruments
+		team "Astrid Rao" assistant
+		
+		explo-date 2023.07.29
+		explo-team "Ana Teck"
+		explo-team "Ellie Pizey"
+		explo-team "Astrid Rao"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

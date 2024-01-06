@@ -2,10 +2,9 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 737.100000 550.100000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap echo_falls-4p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
-point 402.0963 485.3678 label -align tr -attr level 3 -text "Echo Falls"
+point 360.4522 515.3515 label -align tr -attr level 3 -text "Echo Falls"
 line wall 
   410.0352 466.6888
   407.4789 467.4619 401.2829 467.7555 400.5525 469.864
@@ -154,6 +153,7 @@ line rock-border -close on -outline in
   471.7448 438.6387
   467.4188 435.3138
   465.7743 434.5272
+  467.7764 432.8111
 endline
 
 point 460.42 452.78 station -name 7
