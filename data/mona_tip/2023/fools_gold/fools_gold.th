@@ -16,7 +16,15 @@ survey fools_gold -title "fools gold"
 
   centerline
     date 2023.07.28 
-    # team CH,EP,AR 
+    team "Ellie Pizey"
+    team "Astrid Rao"
+    team "Chris Hayes"
+
+    explo-date 2023.07.28
+    explo-team "Ellie Pizey"
+    explo-team "Astrid Rao"
+    explo-team "Chris Hayes"
+    
     units length meters
     units compass clino degrees
     data normal from to length compass clino
