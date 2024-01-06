@@ -1,5 +1,8 @@
 survey coincidence -title "Naklučja jama" -entrance 0@coincidence_ent -attr cadastral_n 14026
 
+	input coincidence-p.thm
+	input coincidence-e.thm
+
 	##### 2020 #####
 	input "./2020/coincidence_ent/coincidence_ent.th"
 
@@ -8,13 +11,16 @@ survey coincidence -title "Naklučja jama" -entrance 0@coincidence_ent -attr cad
 
 	equate 7@narrow_no_escape 26@coincidence_ent
 
-	map m-all-p -projection plan
-		m-all-p@coincidence_ent
-		m-all-p@narrow_no_escape
-	endmap
+	join coincidence-2s@coincidence_ent narrow_no_escape-1e@narrow_no_escape
 
-	map m-all-e -projection extended
-		m-all-e@coincidence_ent
-		m-all-e@narrow_no_escape
-	endmap
+	
+	# map m-all-p -projection plan
+	# 	m-all-p@coincidence_ent
+	# 	m-all-p@narrow_no_escape
+	# endmap
+
+	# map m-all-e -projection extended
+	# 	m-all-e@coincidence_ent
+	# 	m-all-e@narrow_no_escape
+	# endmap
 endsurvey
