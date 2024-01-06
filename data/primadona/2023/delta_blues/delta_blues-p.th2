@@ -2498,7 +2498,7 @@ point 521.115 627.084 station-name -align tr -scale xl -text 49
 endscrap
 
 
-scrap delta_blues-2p -projection plan
+scrap delta_blues-2p -projection plan -scale [0 0 96 0 0 0 500 0 inch]
 
 line wall 
   773.2358 555.4409
@@ -2545,7 +2545,10 @@ endscrap
 
 scrap delta_blues-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 330.2508 1515.8402 water-flow -orientation 115.71588475647351
+point 656.0661 1564.5931 label -align tr -scale l -text "Delta Blues" -attr level 1
+point 457.4493 2605.2828 continuation 
+point 359.3825 2662.2437 continuation 
+point 330.251 1515.84 water-flow -orientation 115.71588475647351
 line pit 
   415.078 2589.7606
   426.7781 2577.7474 428.374 2575.077 428.374 2575.077
