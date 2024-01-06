@@ -4,6 +4,7 @@ encoding  utf-8
 
 scrap blue_lagoon-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
+point 318.9666 519.6286 label -align r -attr level 3 -scale l -text "Blue Lagoon"
 line pit 
   293.9804 550.2936
   293.9804 550.2936 291.0937 543.153 293.5246 538.7471
@@ -11,7 +12,7 @@ line pit
   302.1845 532.0623 300.2094 532.518 300.2094 532.518
 endline
 
-point 313.4635 540.2044 continuation -name 12
+point 313.464 540.204 continuation -name 12
 line rock-border -close on
   262.0787 492.7943
   259.388 489.2963
@@ -155,8 +156,6 @@ point 242.44 493.82 station -name 9
 point 220.39 486.1 station -name 10
 point 222.05 482.56 station -name 11
 point 223.46 487.44 station -name 12
-
-point 271.5905 482.0003 water-flow -orientation 0.0
-
+point 271.591 482.0 water-flow 
 endscrap
 

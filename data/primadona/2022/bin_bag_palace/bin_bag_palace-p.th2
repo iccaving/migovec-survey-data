@@ -2,7 +2,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap bin_bag_palace-4p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
 point 295.51 530.43 station -name 4
@@ -85,8 +84,9 @@ endscrap
 
 scrap bin_bag_palace-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
-point 229.2603 441.1096 label -align tr -attr level 3 -text "Bin Bag Palace"
-point 249.3911 502.5007 label -align t -scale s -attr level 3 -text "E for Easy"
+point 206.8078 464.6024 map-connection 
+point 214.6975 433.4237 label -align br -attr level 3 -scale l -text "Bin Bag Palace"
+point 249.391 502.501 label -align t -attr level 4 -scale s -text "E for Easy"
 line wall 
   208.4568 486.5834
   209.8544 483.9724 210.4553 482.6061 210.6727 482.3888
