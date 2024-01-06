@@ -4,7 +4,7 @@ encoding  utf-8
 
 scrap echo_falls-4p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
-point 360.4522 515.3515 label -align tr -attr level 3 -text "Echo Falls"
+point 360.452 515.351 label -align tr -attr level 3 -text "Echo Falls"
 line wall 
   410.0352 466.6888
   407.4789 467.4619 401.2829 467.7555 400.5525 469.864
@@ -195,5 +195,6 @@ endline
 point 459.94 422.54 station -name 8
 point 480.73 431.67 station -name 9
 point 487.66 426.32 station -name 10
+point 487.66 426.32 map-connection 
 endscrap
 
