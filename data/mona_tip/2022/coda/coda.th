@@ -18,8 +18,11 @@ survey coda -title "Coda"
 
   centerline
     date 2022.07.16 
+    explo-date 2022.07.16 #techinally incorrect, originally discovered by Maffi ages ago
     team "James Wilson"
     team "Matti Mitropoulos"
+    team "Rory Rose"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
