@@ -20,8 +20,8 @@ export model -o ../_outputs/belladonna.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
-input ../../_layouts/detailed-p.thl
-input ../../_layouts/detailed-e.thl
+input ../../../layouts/detailed-p.thl
+input ../../../layouts/detailed-e.thl
 
 
 #----------------------------------------------------------------------------------|
@@ -31,7 +31,7 @@ select m-all-p@belladonna
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
 layout local-slo
-	copy detailed
+	copy detailed-p
 	legend off
 	map-header 0 0 off
 	scale 1 200
@@ -93,7 +93,7 @@ layout local-slo
 endlayout
 
 layout local-en
-	copy detailed
+	copy detailed-p
 	legend off
 	map-header 0 0 off
 	scale 1 200
@@ -203,10 +203,10 @@ endlayout
 # export the pdf map containing plan
 
 language sl
-export map -o ../_outputs/belladonna_profil_SLO.pdf -projection extended -layout local-e-slo
-export map -o ../_outputs/belladonna_tloris_SLO.pdf -projection plan -layout local-slo -layout-debug all
+export map -o ../../../outputs/belladonna_profil_SLO.pdf -projection extended -layout local-e-slo
+export map -o ../../../outputs/belladonna_tloris_SLO.pdf -projection plan -layout local-slo
 
 language en
-export map -o ../_outputs/belladonna_EE_EN.pdf -projection extended -layout local-e-en
-export map -o ../_outputs/belladonna_plan_EN.pdf -projection plan -layout local-en
+export map -o ../../../outputs/belladonna_EE_EN.pdf -projection extended -layout local-e-en
+export map -o ../../../outputs/belladonna_plan_EN.pdf -projection plan -layout local-en
 
