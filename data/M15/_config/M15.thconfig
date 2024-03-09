@@ -21,8 +21,8 @@ export model -o ../_outputs/M15.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
-input ../../_layouts/detailed-p.thl
-input ../../_layouts/detailed-e.thl
+input ../../../layouts/detailed-p.thl
+input ../../../layouts/detailed-e.thl
 
 
 #----------------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ input ../../_layouts/detailed-e.thl
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
 layout local
-	copy detailed
+	copy detailed-p
 	legend off
 	map-header 0 0 off
 	scale 1 200
