@@ -1,10 +1,16 @@
-cff-version: 1.1.0
-message: "If you use this software, please cite it as below."
+cff-version: 1.2.0
+message: If you use this software, please cite it using these metadata.
+title: Migovec Survey Data
+abstract: This is the status of cave exploration on the Tolminski Migovec Plateau as of 2024.
 authors:
-- family-names: Imperial College Caving Club
-  given-names: ICCC
-- family-names: Jamarska Sekcija Planinskega Društva Tolmin
-  given-names: JSPDT
-title: migovec-survey-data
-version: v2024.03
-date-released: 2024-03-13
+  - family-names: Imperial College Caving Club
+    given-names: ICCC
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+version: 2024.03.13
+date-released: "2024-03-13"
+identifiers:
+  - description: TThis is the status of cave exploration on the Tolminski Migovec Plateau as of 2024.
+    type: doi
+    value: "10.5281/zenodo.123456"
+license: CC-BY-NC-SA-4.0
+repository-code: "https://github.com/iccaving/migovec-survey-data"
