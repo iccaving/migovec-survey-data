@@ -43,6 +43,9 @@ This work is licensed under the CC-BY-NC-SA-4.0 licence. Copyright to ICCC / JSP
 
 ## How to cite
 
+``ICCC and JSDPT, Survey Data for the Tolminski Migovec Cave Exploration project, 2024. DOI: 10.5281/zenodo.10813021``
+
+[![DOI](https://zenodo.org/badge/330606015.svg)](https://zenodo.org/doi/10.5281/zenodo.10813020)
 
 
 ## View
