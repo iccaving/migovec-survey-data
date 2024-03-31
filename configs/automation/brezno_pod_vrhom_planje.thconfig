@@ -103,6 +103,7 @@ endlayout
 # select a relevant map definition for plan view
 select m-all-e@brezno_pod_vrhom_planje
 
+lang en
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
 export map -o ../../outputs/brezno_pod_vrhom_planje_ee_EN.pdf -projection extended -layout local-e
@@ -111,3 +112,14 @@ export map -o ../../outputs/brezno_pod_vrhom_planje_ee_EN.svg -projection extend
 # export the pdf map containing plan
 export map -o ../../outputs/brezno_pod_vrhom_planje_plan_EN.pdf -projection plan -layout local
 export map -o ../../outputs/brezno_pod_vrhom_planje_plan_EN.svg -projection plan -layout local
+
+
+lang sl
+#----------------------------------------------------------------------------------|
+# export the pdf map in elevation view
+export map -o ../../outputs/brezno_pod_vrhom_planje_profil_SLO.pdf -projection extended -layout local-e
+export map -o ../../outputs/brezno_pod_vrhom_planje_profil_SLO.svg -projection extended -layout local-e
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+export map -o ../../outputs/brezno_pod_vrhom_planje_tloris_SLO.pdf -projection plan -layout local
+export map -o ../../outputs/brezno_pod_vrhom_planje_tloris_SLO.svg -projection plan -layout local

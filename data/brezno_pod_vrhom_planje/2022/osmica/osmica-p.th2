@@ -8,7 +8,7 @@ line floor-step
   271.7432 -6.109 274.3764 -13.4818 277.6415 -15.6937
 endline
 
-point 256.3265 -17.478 label -align tl -scale s -text "<bf>c3"
+point 256.3265 -17.478 label -align tl -scale m -text "<bf>C3"
 point 264.8437 -54.7878 narrow-end -align b -scale s
 line wall 
   267.4691 -52.4967
@@ -20,13 +20,13 @@ endline
 
 point 70.0436 -154.227 continuation -scale xl
 point 7.9238 -141.321 continuation -scale xl
-point 55.3846 -132.622 label -align br -scale xs -text "<bf>p31"
-point 88.7815 -153.574 label -align t -scale xs -text "<bf>p30"
+point 55.3846 -132.622 label -align br -scale m -text "<bf>P31"
+point 88.7815 -153.574 label -align t -scale m -text "<bf>P30"
 point 28.6737 -121.634 water-flow -orientation 138.20748570972955
 point 36.1892 -116.406 water-flow -orientation 168.28474786399127
-point 3.4704 -141.974 label -align l -scale xs -text "climb down <br>rope needed"
-point 29.6106 -110.364 label -align tl -scale xs -text "drippy<br>wall"
-point 112.8905 -91.9932 label -align br -scale xs -text "narrrow meander"
+point 3.4704 -141.974 label -align l -scale xs -text "<lang:en>climb down <br>rope needed<lang:sl>splezati<br> potrebna je vrv"
+point 29.6106 -110.364 label -align tl -scale xs -text "<lang:en>drippy<br>wall<lang:sl>kapljajoča<br>stena"
+point 112.8905 -91.9932 label -align br -scale xs -text "<lang:en>narrrow meander<lang:sl>ozek meander"
 line wall -subtype presumed
   59.2127 -160.4221
   59.2127 -160.4221 64.6906 -165.6391 70.1684 -166.1608

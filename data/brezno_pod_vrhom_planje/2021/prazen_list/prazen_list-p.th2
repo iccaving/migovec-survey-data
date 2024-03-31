@@ -9,7 +9,7 @@ line pit
   357.4558 527.0528 357.4578 528.2366 354.9366 551.8749
 endline
 
-point 430.173 547.238 label -align br -scale xs -text "<bf>p8"
+point 430.173 547.238 label -align br -scale m -text "<bf>P8"
 point 375.564 544.48 station-name -align tr -scale xs -text 8
 point 383.599 526.763 station-name -align tr -scale xs -text 9
 point 429.332 519.679 station-name -align tr -scale xs -text 10
@@ -109,8 +109,9 @@ area pebbles
   prazen_list-3p_pebbles_1
 endarea
 
-point 316.835 626.634 label -align r -scale xs -text "<bf>c2"
-point 170.197 537.459 label -align r -scale xs -text "exotic pebbles"
+point 316.835 626.634 label -align r -scale m -text "<bf>C2"
+point 49.3804 595.1566 label -align r -scale xs -text "breakthrough <br>07.2021<lang:sl>preboj<br>07.2022"
+point 170.197 537.459 label -align r -scale xs -text "exotic pebbles<lang:sl>eksotični kamenčki"
 point 151.513 517.531 station-name -align tr -scale xs -text 1
 point 60.2314 537.339 station-name -align tr -scale xs -text 2
 point 197.225 637.724 station-name -align tr -scale xs -text 3
@@ -308,7 +309,7 @@ point 364.944 304.355 station-name -align tr -scale xs -text 17
 point 327.572 312.865 station-name -align tr -scale xs -text 18
 point 276.668 320.89 narrow-end -align l -scale xs
 point 389.959 326.295 label -align r -text Okna
-point 283.569 430.326 label -align bl -text "Prazen list"
+point 269.6013 516.2274 label -align bl -text "Prazen list"
 line border -close on -id prazen_list-1p_u_smallblocks_3 -visibility off
   353.1265 275.1948
   414.8988 279.3129
