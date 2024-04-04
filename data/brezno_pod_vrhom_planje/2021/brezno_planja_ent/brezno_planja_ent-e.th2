@@ -4,11 +4,11 @@ encoding  utf-8
 
 scrap brezno_planja_ent-1e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 2098.5095 1993.3356 label -align tr -scale l -text "<bf>P7"
+point 2078.5095 1993.3356 label -align tr -scale m -text "<bf>P7"
 point 2118.4038 2097.0793 u:grass -align t -scale s
 point 2097.3889 2087.1558 u:grass -align t
 point 2066.3743 2073.9021 u:grass -align t
-line wall -subtype debris
+line wall -subtype debris -outline none -clip off
   2059.4457 2063.2222
   2095.6378 2083.0694
   2110.8151 2085.9882
@@ -56,13 +56,7 @@ point 2671.59 2106.43 station-name -align tr -scale xs -text 10
 point 2602.02 2004.82 station-name -align t -scale xs -text 9
 point 2458.31 1855.06 station-name -align t -scale xs -text 8
 point 2309.68 1801.54 station-name -align l -scale xs -text 2
-line wall:debris -clip off -outline none
-  2064.1546 2050.6201
-  2064.1546 2050.6201 2078.7974 2056.4961 2085.2862 2060.8782
-  2092.8447 2065.9826 2099.2124 2072.7032 2105.5653 2079.2474
-  2109.9612 2083.7757 2112.4229 2090.4362 2117.8541 2093.6503
-  2124.67 2097.6838 2141.12 2098.47 2141.12 2098.47
-endline
+
 
 point 2128.62 2109.42 station-name -align l -scale xs -text 0
 point 2167.7 2155.35 entrance -orientation 135.0 -scale xl
