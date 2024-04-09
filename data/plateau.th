@@ -66,6 +66,8 @@ survey plateau -title "Migovec Plateau"
 
 	centreline -title entrances
 		cs epsg:3794
+		fix LEGEND 404000 123000 1500
+		station LEGEND "Legend: <br> A. Open lead<br> B. unenticing lead<br> E. requires rope for traverse or climb.<br> P. Pitch, open, requires rope<br> D. dig" continuation attr cave " "
 
 		# BERTIJEVA JAMA
 		fix 10@bertipot.vrh_planja 403706 125587 1749

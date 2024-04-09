@@ -4,7 +4,7 @@ This contains the survey data of the Tolminski Migovec cave system, as well as m
 
 From 1974-2018 the the survey data was collected in the Survex format but we are now using Therion and are in the process of migrating the old data.
 
-- [Migovec Resurvey Project](#migovec-resurvey-project)
+- [Migovec Resurvey Project](#migovec-survey-data)
   - [View](#view)
   - [Downloads](#downloads)
   - [Prerequisites](#prerequisites)
@@ -36,6 +36,17 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
     - [How do I create a skeleton th2 file for a survey?](#how-do-i-create-a-skeleton-th2-file-for-a-survey)
     - [How do I see the EE in aven or loch?](#how-do-i-see-the-ee-in-aven-or-loch)
     - [Therion Error: Map is too large for PDF format. Try smaller scale!](#therion-error-map-is-too-large-for-pdf-format-try-smaller-scale)
+
+## Licence
+
+This work is licensed under the CC-BY-NC-SA-4.0 licence. Copyright to ICCC / JSPDT 1974 - 2024
+
+## How to cite
+
+``ICCC and JSDPT, Survey Data for the Tolminski Migovec Cave Exploration project, 2024. DOI: 10.5281/zenodo.10813021``
+
+[![DOI](https://zenodo.org/badge/330606015.svg)](https://zenodo.org/doi/10.5281/zenodo.10813020)
+
 
 ## View
 

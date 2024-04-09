@@ -1,5 +1,5 @@
-source "../../data/system_migovec.th"
+source "../../data/plateau.th"
 
-export model -o ../../outputs/system_migovec.3d -fmt survex 
-
-export database -o ../../outputs/system_migovec.sql
+export model -o ../../outputs/plateau.3d -fmt survex 
+export continuation-list -o ../../outputs/cave_leads.html
+export database -o ../../outputs/plateau.sql

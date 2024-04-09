@@ -1,6 +1,6 @@
 # 2021.08.03 created by TopoDroid v 5.1.40
 
-survey brezno_planja_ent -title "Brezno pod Vrhom Planje"
+survey brezno_planja_ent -title "Entrance"
 	# pitch below Vrh Planja
 	
 	input brezno_planja_ent-p.th2
@@ -1326,6 +1326,8 @@ survey brezno_planja_ent -title "Brezno pod Vrhom Planje"
 		35 . 3.15 258.1 22.1
 		35 . 2.97 260.7 1.9
 		35 . 1.99 293.9 25.2
+
+		station 11 "at  top of 5 m climb with potential to connect to Planja Jama above" continuation attr code E attr cave "Brezno pod Vrhom Planje" attr  author "Tanguy Racine"
 	endcenterline
 	
 endsurvey

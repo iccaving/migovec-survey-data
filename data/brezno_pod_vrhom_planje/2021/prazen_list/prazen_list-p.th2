@@ -4,12 +4,12 @@ encoding  utf-8
 
 scrap prazen_list-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
-line pit
+line pit 
   357.4558 527.0528
   357.4558 527.0528 357.4578 528.2366 354.9366 551.8749
 endline
 
-point 430.173 547.238 label -align br -scale xs -text "<bf>p8"
+point 430.173 547.238 label -align br -scale m -text "<bf>P8"
 point 375.564 544.48 station-name -align tr -scale xs -text 8
 point 383.599 526.763 station-name -align tr -scale xs -text 9
 point 429.332 519.679 station-name -align tr -scale xs -text 10
@@ -37,14 +37,14 @@ area u:smallblocks -attr scale 0.9
   prazen_list-2p_u_smallblocks_1
 endarea
 
-line wall
+line wall 
   353.3427 524.8589
   352.344 530.6676 364.5071 521.9466 359.1676 517.8206
   353.8281 513.6945 350.9156 508.3548 353.8281 505.1996
   356.7407 502.0445 383.9626 492.3543 389.2839 491.9756
 endline
 
-line wall
+line wall 
   389.2839 491.9756
   401.3444 491.9085 420.6316 488.9146 426.1547 498.6467
   431.6822 508.3862 453.0952 507.3842 454.3087 517.3351
@@ -65,9 +65,9 @@ endscrap
 
 scrap prazen_list-3p -projection plan -scale [0 0 96 0 0 0 2000 0 inch]
 
-point 305.4044 605.3944 gradient -orientation 160
-point 289.8981 618.5462 gradient -orientation 155
-line chimney
+point 305.404 605.394 gradient -orientation 160.00001514790688
+point 289.898 618.546 gradient -orientation 155.00001874831398
+line chimney 
   139.4585 630.3427
   139.4585 630.3427 148.2433 631.0611 153.2515 634.066
   158.2598 637.0709 184.9703 664.4492 184.9703 673.7979
@@ -82,12 +82,12 @@ line chimney -outline out
   133.726 650.1838 139.4585 630.3427 139.4585 630.3427
 endline
 
-line contour
+line contour 
   303.0853 623.2302
   305.376 624.3755 288.2977 620.2574 279.771 609.7022
 endline
 
-line contour
+line contour 
   321.2186 610.8535
   320.3074 612.448 293.2534 603.8095 290.7086 597.3255
 endline
@@ -105,15 +105,15 @@ line border -close on -id prazen_list-3p_pebbles_1 -visibility off
   177.0901 566.306
 endline
 
-area pebbles
+area pebbles 
   prazen_list-3p_pebbles_1
 endarea
 
-point 316.835 626.634 label -align r -scale xs -text "<bf>c2"
-point 170.197 537.459 label -align r -scale xs -text "exotic pebbles"
-point 56.0456 510.107 label -align bl -scale xs -text "clay dig"
+point 316.835 626.634 label -align r -scale m -text "<bf>C2"
+point 49.3804 595.1566 label -align r -scale xs -text "breakthrough <br>07.2021<lang:sl>preboj<br>07.2022"
+point 170.197 537.459 label -align r -scale xs -text "exotic pebbles<lang:sl>eksotični kamenčki"
 point 151.513 517.531 station-name -align tr -scale xs -text 1
-point 40.2314 525.339 station-name -align tr -scale xs -text 2
+point 60.2314 537.339 station-name -align tr -scale xs -text 2
 point 197.225 637.724 station-name -align tr -scale xs -text 3
 point 242.513 667.604 station-name -align tr -scale xs -text 4
 point 277.763 625.757 station-name -align tr -scale xs -text 5
@@ -151,8 +151,8 @@ endarea
 
 line border -close on -id prazen_list-3p_clay_1 -visibility off
   64.3715 551.908
-  68.5598 527.6447
-  75.8765 527.9794 77.4153 515.1755 90.5101 522.444
+  60.0724 522.2625
+  67.3891 522.5972 80.3134 518.9017 88.44 513.9566
   113.9594 510.1414
   118.8688 510.6779 158.6404 496.0295 145.2342 514.0493
   174.9516 557.3748
@@ -166,18 +166,18 @@ line border -close on -id prazen_list-3p_clay_1 -visibility off
   64.3715 551.908
 endline
 
-area clay
+area clay 
   prazen_list-3p_clay_1
 endarea
 
-point 38.1722 563.459 dig
-line floor-step
+point 72.1722 571.459 dig 
+line floor-step 
   333.2402 596.3542
   291.7622 586.3396
   283.8578 584.4311 267.994 574.2493 254.8279 569.6858
 endline
 
-line floor-step
+line floor-step 
   243.2096 604.9116
   249.7808 603.8862 255.6282 612.1938 267.1648 617.2515
   282.421 623.9399 297.5648 634.9575 299.8761 637.3464
@@ -201,9 +201,9 @@ line rock-border -close on
   222.8272 671.2019 231.6217 679.47 231.6217 679.47
 endline
 
-line wall
-  63.9872 527.8849
-  94.9813 529.5917 116.9462 501.3165 131.2661 506.1705
+line wall 
+  62.9522 519.6045
+  93.7392 514.48 116.9462 501.3165 131.2661 506.1705
   150.6818 509.1222 180.9584 574.32 187.2101 585.2931
   193.541 596.406 203.9932 584.0341 207.1484 593.257
   210.3035 602.4799 220.0011 603.243 226.3115 604.9419
@@ -212,7 +212,7 @@ line wall
   256.4563 575.4964 258.919 568.0011 259.2812 562.5218
 endline
 
-line wall
+line wall 
   324.6086 591.1839
   323.3496 594.7236 328.4571 604.9838 321.2186 610.8535
   301.6329 626.7358 297.0348 622.9126 300.918 637.9604
@@ -222,7 +222,7 @@ line wall
   216.6711 705.2573 196.8797 690.1169 184.2481 691.4013
 endline
 
-line wall
+line wall 
   139.4585 630.3427
   138.4536 622.2602 138.7899 614.1751 134.4212 609.0782
   130.0526 603.9813 109.1796 568.0607 101.8984 564.663
@@ -308,8 +308,8 @@ point 344.952 320.775 station-name -align tr -scale xs -text 16
 point 364.944 304.355 station-name -align tr -scale xs -text 17
 point 327.572 312.865 station-name -align tr -scale xs -text 18
 point 276.668 320.89 narrow-end -align l -scale xs
-point 389.959 326.295 label -align r -scale m -text Okna
-point 283.569 430.326 label -align bl -scale m -text "Prazen list"
+point 389.959 326.295 label -align r -text Okna
+point 269.6013 516.2274 label -align bl -text "Prazen list"
 line border -close on -id prazen_list-1p_u_smallblocks_3 -visibility off
   353.1265 275.1948
   414.8988 279.3129
@@ -330,12 +330,12 @@ area u:smallblocks -attr scale 0.8
   prazen_list-1p_u_smallblocks_3
 endarea
 
-line floor-step
+line floor-step 
   331.8381 397.0486
   331.8381 397.0486 355.1821 407.4919 357.6392 413.9423
 endline
 
-line floor-step
+line floor-step 
   354.5677 338.6887
   353.4571 340.9099 337.2718 332.1216 333.3739 327.3239
 endline
@@ -353,7 +353,7 @@ line pit -clip off
   403.5222 500.3151 408.7644 501.8409 408.7644 501.8409
 endline
 
-line wall
+line wall 
   389.8434 509.0821
   384.4375 504.9633 383.3396 498.5959 381.7889 496.5235
   380.2381 494.4512 372.35 491.9219 372.35 491.9219
@@ -369,7 +369,7 @@ line chimney -outline none
   325.0718 433.8693 314.7807 426.0742 305.599 423.2426
 endline
 
-line wall
+line wall 
   372.35 491.9219
   368.7043 488.8406 359.8959 471.4636 353.8281 470.7354
   347.7604 470.0073 345.9841 470.9154 334.7672 467.4752
@@ -378,7 +378,7 @@ line wall
   312.0827 434.5722 305.599 423.2426 305.599 423.2426
 endline
 
-line wall
+line wall 
   330.5354 399.5225
   333.4408 387.0015 334.504 352.7252 333.4408 344.0423
   332.3777 335.3598 337.8095 325.3539 327.8585 324.6259
@@ -386,7 +386,7 @@ line wall
   286.7749 325.9724 281.6521 326.7462 281.6521 326.7462
 endline
 
-line wall
+line wall 
   418.7817 290.9323
   415.961 305.2094 390.1117 312.2435 383.1344 320.0123
   376.1572 327.781 361.5253 327.0986 356.8273 333.8716
@@ -400,7 +400,7 @@ line wall
   407.7892 500.2135 408.3041 501.3289 408.3041 501.3289
 endline
 
-line wall
+line wall 
   276.752 316.9388
   295.1979 311.3565 310.5703 305.1123 322.0003 296.2984
   333.4303 287.4842 335.3631 280.0853 349.2824 275.7006
@@ -420,1327 +420,1327 @@ endscrap
 
 scrap DELETE-ME-survey-legs-DUPLICATE_prazen_list-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-line survey
+line survey 
   -42.05 10.47
   -84.09 12.2
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -62.68 19.45
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -84.41 12.52
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -42.28 10.16
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -54.8 2.91
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -54.88 8.98
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -44.49 11.42
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -59.37 18.43
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -57.56 16.85
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -43.31 9.92
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -40.16 9.29
 endline
 
-line survey
+line survey 
   -42.05 10.47
   -18.82 57.24
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -38.35 59.92
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -50.16 43.7
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -54.02 35.51
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -73.7 18.27
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -67.24 9.45
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -50.39 21.5
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -38.43 28.9
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -40.63 36.77
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -27.56 36.69
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -23.39 50.16
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -29.69 49.53
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -22.13 55.12
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -12.05 45.98
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -13.7 53.94
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -29.76 70.79
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -28.11 71.89
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -20.31 74.57
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -19.61 76.77
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -16.77 75.83
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -9.69 81.1
 endline
 
-line survey
+line survey 
   -18.82 57.24
   8.74 84.02
 endline
 
-line survey
+line survey 
   -18.82 57.24
   8.66 69.29
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -2.05 71.73
 endline
 
-line survey
+line survey 
   -18.82 57.24
   13.7 63.78
 endline
 
-line survey
+line survey 
   -18.82 57.24
   21.02 65.2
 endline
 
-line survey
+line survey 
   -18.82 57.24
   12.91 94.02
 endline
 
-line survey
+line survey 
   -18.82 57.24
   21.97 81.42
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -8.03 90.79
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -13.94 76.06
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -7.95 65.75
 endline
 
-line survey
+line survey 
   -18.82 57.24
   12.99 63.39
 endline
 
-line survey
+line survey 
   -18.82 57.24
   14.17 55.67
 endline
 
-line survey
+line survey 
   -18.82 57.24
   12.76 54.96
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -7.01 53.54
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -12.05 50.08
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -6.77 46.3
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -12.13 56.22
 endline
 
-line survey
+line survey 
   -18.82 57.24
   -5.83 71.5
 endline
 
-line survey
+line survey 
   -5.83 71.5
   8.27 70.87
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -6.3 67.72
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -7.17 80.87
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -17.32 78.9
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -15.35 69.53
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -22.68 56.14
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -43.39 36.54
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -0.47 57.24
 endline
 
-line survey
+line survey 
   -5.83 71.5
   22.68 66.46
 endline
 
-line survey
+line survey 
   -5.83 71.5
   14.57 86.22
 endline
 
-line survey
+line survey 
   -5.83 71.5
   2.2 75.35
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -10.39 80.39
 endline
 
-line survey
+line survey 
   -5.83 71.5
   5.91 71.73
 endline
 
-line survey
+line survey 
   -5.83 71.5
   13.54 82.13
 endline
 
-line survey
+line survey 
   -5.83 71.5
   11.34 52.13
 endline
 
-line survey
+line survey 
   -5.83 71.5
   17.8 62.2
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -20.16 71.65
 endline
 
-line survey
+line survey 
   -5.83 71.5
   -35.83 74.02
 endline
 
-line survey
+line survey 
   -5.83 71.5
   10.31 53.54
 endline
 
-line survey
+line survey 
   10.31 53.54
   27.72 39.92
 endline
 
-line survey
+line survey 
   27.72 39.92
   27.01 39.69
 endline
 
-line survey
+line survey 
   27.72 39.92
   25.43 48.82
 endline
 
-line survey
+line survey 
   27.72 39.92
   17.72 53.23
 endline
 
-line survey
+line survey 
   27.72 39.92
   4.49 68.58
 endline
 
-line survey
+line survey 
   27.72 39.92
   11.97 52.6
 endline
 
-line survey
+line survey 
   27.72 39.92
   2.76 57.95
 endline
 
-line survey
+line survey 
   27.72 39.92
   14.33 49.61
 endline
 
-line survey
+line survey 
   27.72 39.92
   15.43 45.67
 endline
 
-line survey
+line survey 
   27.72 39.92
   20.87 48.35
 endline
 
-line survey
+line survey 
   27.72 39.92
   18.5 48.9
 endline
 
-line survey
+line survey 
   27.72 39.92
   18.9 50.24
 endline
 
-line survey
+line survey 
   27.72 39.92
   20.87 51.57
 endline
 
-line survey
+line survey 
   27.72 39.92
   22.28 47.01
 endline
 
-line survey
+line survey 
   27.72 39.92
   13.78 46.46
 endline
 
-line survey
+line survey 
   27.72 39.92
   16.38 46.46
 endline
 
-line survey
+line survey 
   27.72 39.92
   28.03 45.91
 endline
 
-line survey
+line survey 
   27.72 39.92
   28.43 37.72
 endline
 
-line survey
+line survey 
   27.72 39.92
   28.9 34.49
 endline
 
-line survey
+line survey 
   27.72 39.92
   32.68 33.7
 endline
 
-line survey
+line survey 
   27.72 39.92
   48.19 3.46
 endline
 
-line survey
+line survey 
   27.72 39.92
   37.32 6.06
 endline
 
-line survey
+line survey 
   27.72 39.92
   24.09 11.81
 endline
 
-line survey
+line survey 
   27.72 39.92
   17.01 22.68
 endline
 
-line survey
+line survey 
   27.72 39.92
   15.35 31.81
 endline
 
-line survey
+line survey 
   27.72 39.92
   18.82 36.46
 endline
 
-line survey
+line survey 
   27.72 39.92
   17.64 32.6
 endline
 
-line survey
+line survey 
   27.72 39.92
   31.26 33.39
 endline
 
-line survey
+line survey 
   27.72 39.92
   28.03 32.2
 endline
 
-line survey
+line survey 
   27.72 39.92
   21.81 33.62
 endline
 
-line survey
+line survey 
   27.72 39.92
   22.36 34.72
 endline
 
-line survey
+line survey 
   27.72 39.92
   24.65 38.27
 endline
 
-line survey
+line survey 
   27.72 39.92
   26.22 16.93
 endline
 
-line survey
+line survey 
   26.22 16.93
   16.54 11.5
 endline
 
-line survey
+line survey 
   26.22 16.93
   8.19 18.82
 endline
 
-line survey
+line survey 
   26.22 16.93
   12.76 27.09
 endline
 
-line survey
+line survey 
   26.22 16.93
   10.87 31.65
 endline
 
-line survey
+line survey 
   26.22 16.93
   18.43 19.13
 endline
 
-line survey
+line survey 
   26.22 16.93
   26.93 4.02
 endline
 
-line survey
+line survey 
   26.22 16.93
   31.73 14.02
 endline
 
-line survey
+line survey 
   26.22 16.93
   41.02 10.87
 endline
 
-line survey
+line survey 
   26.22 16.93
   37.87 13.86
 endline
 
-line survey
+line survey 
   26.22 16.93
   39.37 7.56
 endline
 
-line survey
+line survey 
   26.22 16.93
   17.8 16.46
 endline
 
-line survey
+line survey 
   26.22 16.93
   22.36 30.87
 endline
 
-line survey
+line survey 
   26.22 16.93
   33.23 23.39
 endline
 
-line survey
+line survey 
   26.22 16.93
   11.65 44.33
 endline
 
-line survey
+line survey 
   26.22 16.93
   17.64 48.43
 endline
 
-line survey
+line survey 
   26.22 16.93
   11.73 40.31
 endline
 
-line survey
+line survey 
   26.22 16.93
   19.84 34.41
 endline
 
-line survey
+line survey 
   26.22 16.93
   28.66 33.31
 endline
 
-line survey
+line survey 
   26.22 16.93
   25.12 34.65
 endline
 
-line survey
+line survey 
   26.22 16.93
   24.33 24.8
 endline
 
-line survey
+line survey 
   26.22 16.93
   52.99 26.46
 endline
 
-line survey
+line survey 
   26.22 16.93
   56.3 21.97
 endline
 
-line survey
+line survey 
   26.22 16.93
   48.5 25.43
 endline
 
-line survey
+line survey 
   26.22 16.93
   46.22 25.98
 endline
 
-line survey
+line survey 
   26.22 16.93
   48.58 29.13
 endline
 
-line survey
+line survey 
   26.22 16.93
   29.69 16.69
 endline
 
-line survey
+line survey 
   26.22 16.93
   34.57 23.54
 endline
 
-line survey
+line survey 
   26.22 16.93
   48.43 30.24
 endline
 
-line survey
+line survey 
   26.22 16.93
   30.63 22.52
 endline
 
-line survey
+line survey 
   26.22 16.93
   45.28 7.17
 endline
 
-line survey
+line survey 
   26.22 16.93
   34.41 14.49
 endline
 
-line survey
+line survey 
   26.22 16.93
   51.42 19.84
 endline
 
-line survey
+line survey 
   51.42 19.84
   54.57 12.05
 endline
 
-line survey
+line survey 
   54.57 12.05
   34.33 32.83
 endline
 
-line survey
+line survey 
   54.57 12.05
   32.68 25.51
 endline
 
-line survey
+line survey 
   54.57 12.05
   48.43 20.79
 endline
 
-line survey
+line survey 
   54.57 12.05
   54.65 14.25
 endline
 
-line survey
+line survey 
   54.57 12.05
   55.2 12.6
 endline
 
-line survey
+line survey 
   54.57 12.05
   49.06 7.56
 endline
 
-line survey
+line survey 
   54.57 12.05
   41.81 3.15
 endline
 
-line survey
+line survey 
   54.57 12.05
   47.48 3.46
 endline
 
-line survey
+line survey 
   54.57 12.05
   53.46 5.67
 endline
 
-line survey
+line survey 
   54.57 12.05
   61.26 4.72
 endline
 
-line survey
+line survey 
   54.57 12.05
   69.61 -1.89
 endline
 
-line survey
+line survey 
   54.57 12.05
   67.87 -1.89
 endline
 
-line survey
+line survey 
   54.57 12.05
   73.07 14.02
 endline
 
-line survey
+line survey 
   54.57 12.05
   84.41 7.87
 endline
 
-line survey
+line survey 
   54.57 12.05
   66.77 -2.6
 endline
 
-line survey
+line survey 
   54.57 12.05
   55.59 1.89
 endline
 
-line survey
+line survey 
   54.57 12.05
   72.6 7.01
 endline
 
-line survey
+line survey 
   54.57 12.05
   67.8 14.41
 endline
 
-line survey
+line survey 
   54.57 12.05
   70.87 10.39
 endline
 
-line survey
+line survey 
   70.87 10.39
   62.68 2.99
 endline
 
-line survey
+line survey 
   62.68 2.99
   65.59 3.62
 endline
 
-line survey
+line survey 
   62.68 2.99
   70.08 -0.79
 endline
 
-line survey
+line survey 
   62.68 2.99
   82.36 14.17
 endline
 
-line survey
+line survey 
   62.68 2.99
   61.5 23.62
 endline
 
-line survey
+line survey 
   62.68 2.99
   57.48 17.24
 endline
 
-line survey
+line survey 
   62.68 2.99
   50.0 18.11
 endline
 
-line survey
+line survey 
   62.68 2.99
   54.09 8.66
 endline
 
-line survey
+line survey 
   62.68 2.99
   60.0 3.46
 endline
 
-line survey
+line survey 
   62.68 2.99
   61.5 0.39
 endline
 
-line survey
+line survey 
   62.68 2.99
   62.76 -0.94
 endline
 
-line survey
+line survey 
   62.68 2.99
   60.39 -4.57
 endline
 
-line survey
+line survey 
   62.68 2.99
   53.78 -1.65
 endline
 
-line survey
+line survey 
   62.68 2.99
   41.5 -14.65
 endline
 
-line survey
+line survey 
   62.68 2.99
   50.47 -3.7
 endline
 
-line survey
+line survey 
   62.68 2.99
   52.2 -10.63
 endline
 
-line survey
+line survey 
   62.68 2.99
   54.65 -12.05
 endline
 
-line survey
+line survey 
   62.68 2.99
   51.89 -7.56
 endline
 
-line survey
+line survey 
   62.68 2.99
   49.69 -12.36
 endline
 
-line survey
+line survey 
   49.69 -12.36
   33.46 -31.57
 endline
 
-line survey
+line survey 
   49.69 -12.36
   47.56 -9.76
 endline
 
-line survey
+line survey 
   49.69 -12.36
   44.65 -8.66
 endline
 
-line survey
+line survey 
   49.69 -12.36
   43.39 -11.5
 endline
 
-line survey
+line survey 
   49.69 -12.36
   47.32 -14.65
 endline
 
-line survey
+line survey 
   49.69 -12.36
   75.12 3.23
 endline
 
-line survey
+line survey 
   49.69 -12.36
   74.41 -0.87
 endline
 
-line survey
+line survey 
   49.69 -12.36
   64.49 -6.54
 endline
 
-line survey
+line survey 
   49.69 -12.36
   54.17 -4.49
 endline
 
-line survey
+line survey 
   49.69 -12.36
   54.41 -4.88
 endline
 
-line survey
+line survey 
   49.69 -12.36
   55.75 -6.93
 endline
 
-line survey
+line survey 
   49.69 -12.36
   48.11 -16.3
 endline
 
-line survey
+line survey 
   49.69 -12.36
   32.83 -31.73
 endline
 
-line survey
+line survey 
   49.69 -12.36
   30.55 -27.95
 endline
 
-line survey
+line survey 
   49.69 -12.36
   39.61 -34.49
 endline
 
-line survey
+line survey 
   49.69 -12.36
   40.79 -25.35
 endline
 
-line survey
+line survey 
   49.69 -12.36
   44.57 -23.07
 endline
 
-line survey
+line survey 
   49.69 -12.36
   42.05 -16.61
 endline
 
-line survey
+line survey 
   49.69 -12.36
   29.37 -26.85
 endline
 
-line survey
+line survey 
   33.46 -31.57
   34.33 -15.75
 endline
 
-line survey
+line survey 
   33.46 -31.57
   36.46 -37.95
 endline
 
-line survey
+line survey 
   33.46 -31.57
   33.39 -31.42
 endline
 
-line survey
+line survey 
   33.46 -31.57
   30.63 -17.87
 endline
 
-line survey
+line survey 
   33.46 -31.57
   26.54 -13.39
 endline
 
-line survey
+line survey 
   33.46 -31.57
   42.91 -24.88
 endline
 
-line survey
+line survey 
   33.46 -31.57
   44.02 -28.5
 endline
 
-line survey
+line survey 
   33.46 -31.57
   56.06 -5.51
 endline
 
-line survey
+line survey 
   33.46 -31.57
   34.72 -13.54
 endline
 
-line survey
+line survey 
   33.46 -31.57
   49.92 -10.24
 endline
 
-line survey
+line survey 
   33.46 -31.57
   47.8 -24.02
 endline
 
-line survey
+line survey 
   33.46 -31.57
   45.35 -26.46
 endline
 
-line survey
+line survey 
   33.46 -31.57
   33.7 -30.24
 endline
 
-line survey
+line survey 
   33.46 -31.57
   27.17 -21.65
 endline
 
-line survey
+line survey 
   33.46 -31.57
   38.5 -34.72
 endline
 
-line survey
+line survey 
   33.46 -31.57
   38.82 -38.74
 endline
 
-line survey
+line survey 
   33.46 -31.57
   35.2 -34.33
 endline
 
-line survey
+line survey 
   33.46 -31.57
   39.21 -34.02
 endline
 
-line survey
+line survey 
   33.46 -31.57
   40.39 -41.1
 endline
 
-line survey
+line survey 
   33.46 -31.57
   50.55 -48.43
 endline
 
-line survey
+line survey 
   33.46 -31.57
   42.52 -30.63
 endline
 
-line survey
+line survey 
   36.46 -37.95
   38.9 -76.46
 endline
 
-line survey
+line survey 
   36.46 -37.95
   36.54 -41.5
 endline
 
-line survey
+line survey 
   36.46 -37.95
   49.29 -50.87
 endline
 
-line survey
+line survey 
   36.46 -37.95
   48.98 -53.07
 endline
 
-line survey
+line survey 
   36.46 -37.95
   42.36 -58.82
 endline
 
-line survey
+line survey 
   36.46 -37.95
   45.59 -44.88
 endline
 
-line survey
+line survey 
   36.46 -37.95
   40.31 -53.86
 endline
 
-line survey
+line survey 
   36.46 -37.95
   41.1 -94.02
 endline
 
-line survey
+line survey 
   36.46 -37.95
   37.64 -69.37
 endline
 
-line survey
+line survey 
   36.46 -37.95
   34.72 -50.24
 endline
 
-line survey
+line survey 
   36.46 -37.95
   33.54 -50.31
 endline
 
-line survey
+line survey 
   36.46 -37.95
   34.65 -48.82
 endline
 
-line survey
+line survey 
   36.46 -37.95
   30.24 -44.57
 endline
 
-line survey
+line survey 
   36.46 -37.95
   30.39 -40.94
 endline
 
-line survey
+line survey 
   36.46 -37.95
   37.4 -13.23
 endline
 
-line survey
+line survey 
   36.46 -37.95
   37.8 -29.37
 endline
 
-line survey
+line survey 
   36.46 -37.95
   50.24 -11.42
 endline
 
-line survey
+line survey 
   36.46 -37.95
   46.77 -19.37
 endline
 
-line survey
+line survey 
   36.46 -37.95
   38.03 -31.5
 endline
 
-line survey
+line survey 
   36.46 -37.95
   39.76 -35.75
 endline
 
-line survey
+line survey 
   36.46 -37.95
   37.95 -39.37
 endline
 
-line survey
+line survey 
   38.9 -76.46
   47.24 -83.31
 endline
 
-line survey
+line survey 
   47.24 -83.31
   55.43 -89.92
 endline
 
-line survey
+line survey 
   47.24 -83.31
   57.72 -92.91
 endline
 
-line survey
+line survey 
   47.24 -83.31
   48.03 -93.31
 endline
 
-line survey
+line survey 
   47.24 -83.31
   43.62 -76.85
 endline
 
-line survey
+line survey 
   47.24 -83.31
   35.28 -81.02
 endline
 
-line survey
+line survey 
   47.24 -83.31
   67.17 -82.13
 endline
 
-line survey
+line survey 
   47.24 -83.31
   48.27 -75.59
 endline
 
-line survey
+line survey 
   47.24 -83.31
   44.02 -91.34
 endline
 
-line survey
+line survey 
   47.24 -83.31
   58.35 -90.31
 endline
 
-line survey
+line survey 
   47.24 -83.31
   42.44 -91.42
 endline
 
-line survey
+line survey 
   47.24 -83.31
   39.69 -80.87
 endline
 
-line survey
+line survey 
   47.24 -83.31
   38.5 -77.8
 endline
 
-line survey
+line survey 
   47.24 -83.31
   60.39 -93.39
 endline
 
-line survey
+line survey 
   47.24 -83.31
   72.28 -86.93
 endline
 
-line survey
+line survey 
   47.24 -83.31
   63.23 -89.76
 endline
 
-line survey
+line survey 
   47.24 -83.31
   65.04 -84.65
 endline
 
-line survey
+line survey 
   47.24 -83.31
   41.57 -81.26
 endline
 
-line survey
+line survey 
   47.24 -83.31
   35.43 -74.17
 endline
 
-line survey
+line survey 
   47.24 -83.31
   40.55 -76.46
 endline
 
-line survey
+line survey 
   47.24 -83.31
   37.4 -78.98
 endline
 
-line survey
+line survey 
   47.24 -83.31
   10.79 -71.89
 endline
 
-line survey
+line survey 
   47.24 -83.31
   42.6 -83.86
 endline
 
-line survey
+line survey 
   47.24 -83.31
   48.27 -85.75
 endline
 
-line survey
+line survey 
   47.24 -83.31
   54.88 -85.51
 endline
 
-line survey
+line survey 
   47.24 -83.31
   55.35 -83.62
 endline
 
-line survey
+line survey 
   47.24 -83.31
   50.0 -88.03
 endline
 
-line survey
+line survey 
   47.24 -83.31
   46.38 -83.15
 endline
 
-line survey
+line survey 
   47.24 -83.31
   52.2 -74.41
 endline
 
-line survey
+line survey 
   47.24 -83.31
   48.74 -81.65
 endline
 
-line survey
+line survey 
   47.24 -83.31
   31.65 -79.76
 endline
@@ -1769,3 +1769,4 @@ point 38.9 -76.46 station -name 16
 point 47.24 -83.31 station -name 17
 point 31.65 -79.76 station -name 18
 endscrap
+

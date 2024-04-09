@@ -193,17 +193,17 @@ endscrap
 scrap brezno_planja_ent-2p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 1679.03 169.813 paleo-material -scale xs
-point 1844.82 478.442 label -align r -text "Entrance Chamber"
+point 1844.82 478.442 label -align r -text "Entrance Chamber<lang:sl>Vhodna komora"
 point 1697.99 166.653 label -align r -scale xs -text bones
-point 1547.57 136.948 label -align bl -text "South Chamber"
-point 1425.91 621.507 label -align tl -scale xs -text "<bf>p13"
+point 1547.57 136.948 label -align bl -text "South Chamber<lang:sl>Južna komora"
+point 1425.91 621.507 label -align tl -scale m -text "<bf>P13"
 point 1566.67 597.64 gradient -orientation 259.7287817418577
 point 1550.1 620.5 station-name -align t -scale xs -text 13
 point 1632.1 590.5 station-name -align r -scale xs -text 12
 point 1619.27 655.31 gradient -orientation 31.0517398552788
 point 1659.4 280.031 gradient -orientation 36.59395999382232
 point 1687.89 317.164 gradient -orientation 245.26241548465384
-point 1914.7 820.346 label -align tr -scale xs -text "<bf>+7m"
+point 1914.7 820.346 label -align tr -scale m -text "<bf>E7"
 line border -close on -id brezno_planja_ent-2p_u_smallblocks_1 -visibility off
   1869.9195 631.144
   1872.8902 652.2693
@@ -2758,7 +2758,7 @@ line wall -clip off -outline none
 endline
 
 point 943.054 726.443 continuation -align br -scale xs
-point 334.438 823.208 label -align t -scale s -text "<bf>p6"
+point 334.438 823.208 label -align t -scale m -text "<bf>P6"
 point 334.675 894.3 gradient -orientation 244.80596045405622
 point 360.077 907.447 gradient -orientation 261.82332246732767
 point 514.168 864.658 gradient -orientation 168.21101099368016
@@ -2831,7 +2831,7 @@ point 890.469 542.008 station-name -align bl -scale xs -text 22
 point 1011.42 483.281 station-name -align l -scale xs -text 20
 point 1203.95 465.216 station-name -align b -scale xs -text 19
 point 1227.62 601.969 station-name -align t -scale xs -text 18
-point 1251.683 517.949 label -align tr -scale xs -text "muddy crawl"
+point 1251.683 517.949 label -align tr -scale xs -text "muddy crawl<lang:sl>blatno plazenje"
 point 1562.13 483.363 station-name -align r -scale xs -text 16
 point 1400.66 505.19 station-name -align bl -scale xs -text 15
 line u:texture 
@@ -4163,7 +4163,7 @@ line wall:invisible
   289.4836 900.0995
 endline
 
-point 606.353 983.23 label -align t -scale s -text "<bf>p10"
+point 606.353 983.23 label -align t -scale m -text "<bf>P10"
 point 250.215 918.183 station-name -align tl -scale xs -text 33
 point 389.549 1007.94 station-name -align tr -scale xs -text 35
 line floor-step 

@@ -42,4 +42,6 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 	equate 1@house_of_cards 5@humpty_dumpty
 	equate 0@humpty_dumpty 1@prazen_list
 
+	join humpty_dumpty-1p@humpty_dumpty prazen_list-3p@prazen_list
+
 endsurvey

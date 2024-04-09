@@ -34,20 +34,34 @@ survey bingo_flamingo_2 -title "Bingo Flamingo 2" #part of bingo flamingo pitch
     data normal from to length compass clino #left right up down
     extend right
     1	2	7.4	24	-33	#
+    2 . 20 - up
+    2 . 0 - down
+    2 . 4.2 104 0 
+    2 . 0.4 284 0 
   	2	3	14	0	90	#
+    3 . 10 - up
+    3 . 14 - down
   	3	4	7	11	56	#
+    4 . 24 - up
+    4 . 1.5 - down
   	4	5	13.4	0	90	#
+    5 . 23 - up
+    5 . 16 - down 
   	5	6	17	55	81	#
+    6 . 9.5 - up
+    6 . 14 - down
   	6	7	3.4	13	65	#
+    7 . 9.8 - up
+    7 . 0.8 - down 
   	7	8	5.2	335	-3	#
 
     data dimensions station left right up down
     1 0.8	0.5	0	3
-    2 0.4	4.2	20	0
-    3 0	2.5	10	14
-    4 3	3	24	1.5
-    5 3	3.5	23	16
-    6 4.7	1.7	9.5	14
+    #2 0.4	4.2	20	0
+    #3 0	2.5	10	14
+    #4 3	3	24	1.5
+    #5 3	3.5	23	16
+    #6 4.7	1.7	9.5	14
     7 2.5	0	9.8	0.5
 	endcenterline
 endsurvey
