@@ -1334,9 +1334,9 @@ endscrap
 
 scrap prazen_list-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 388.935 456.1845 label -align r -scale s -text "<bf>p10"
-point 334.935 456.1845 label -align r -scale s -text "<bf>p6"
-point 433.6287 533.8979 label -align r -scale s -text "<bf>p8"
+point 388.935 456.1845 label -align r -scale m -text "<bf>P10"
+point 334.935 456.1845 label -align r -scale m -text "<bf>P6"
+point 433.6287 533.8979 label -align r -scale m -text "<bf>P8"
 line wall -subtype presumed
   178.8231 506.906
   178.8151 490.4578

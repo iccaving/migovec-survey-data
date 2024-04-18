@@ -1,5 +1,5 @@
 encoding  utf-8
-survey pov
+survey pov -title "Povezava"
 
 	input "pov-p.th2"
 	input "pov-e.th2"
@@ -125,7 +125,7 @@ survey pov
 		32  33  9.75  142  -12  #poskusne tocke
 		flags not duplicate
 
-
+		station 6  "From Sejna Soba, follow TTT route past Povezava (10m diameter) aven, into rift. At climb up to avoid the stream and just before the grape-like formations, a muddy crawl leads off the right-hand wall. Followed for 4-5m in small chambers, between stn 6 and 7" continuation attr code D attr cave "Primadona" attr author "Tanguy Racine"
 	endcentreline
 
 endsurvey

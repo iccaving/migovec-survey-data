@@ -136,7 +136,7 @@ line wall:invisible
   490.5569 454.5155
 endline
 
-point 478.387 500.753 label -align r -scale xs -text "<bf>c2"
+point 478.387 500.753 label -align r -scale m -text "<bf>C2"
 point 665.523 197.141 label -align l -text "Bingo<br>Flamingo"
 line floor-step 
   333.0074 688.8713
@@ -1061,8 +1061,8 @@ line floor-step
   507.7463 351.0774 498.6674 334.9371 508.4189 330.2295
 endline
 
-point 786.796 265.651 label -align r -scale s -text "<bf>c2"
-point 635.747 336.165 label -align bl -scale s -text "<bf>c2"
+point 786.796 265.651 label -align r -scale m -text "<bf>C2"
+point 635.747 336.165 label -align bl -scale m -text "<bf>C2"
 line floor-step 
   714.2372 267.5598
   714.2372 267.5598 719.5569 234.5218 736.6359 234.2418
@@ -1183,8 +1183,8 @@ endscrap
 
 scrap bingo_flamingo-1p2 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 907.745 252.539 label -align bl -scale s -text "<bf>p10"
-point 814.582 160.918 label -align bl -scale xs -text "loading tube"
+point 907.745 252.539 label -align bl -scale m -text "<bf>P10"
+point 814.582 160.918 label -align bl -scale xs -text "<lang:en>loading tube<lang:sl>nakladalna cev"
 line floor-step 
   868.2948 201.2993
   868.2948 201.2993 867.1356 183.9102 852.8379 184.2966
@@ -1408,7 +1408,7 @@ area u:smallblocks -attr scale 1.5
   bingo_flamingo-1p3_u_smallblocks_1
 endarea
 
-point 1038.73 424.487 label -align r -scale xs -text "cairn PSS"
+point 1038.73 424.487 label -align r -scale xs -text "<lang:en>cairn PSS<lang:sl>Cairn"
 point 664.887 696.142 continuation -align r -scale l
 point 1117.14 174.624 continuation -align r -scale l
 line rock-edge 
