@@ -5,8 +5,24 @@ survey coda -title "Coda"
 #JW 15/09/2022 comments show splays which have been relabelled from disconected odd number stations to the next (even) one
 #Topodroid was being weird when we surveyed this: most stations are even-numbered only except the first 3.
 
+  input "Coda-1p.th2"
+  input "Coda-1s.th2"
+
+  map m-all-p -projection plan
+    coda-1p
+  endmap
+
+  map m-all-e -projection extended
+    coda-1s
+  endmap
+
   centerline
     date 2022.07.16 
+    explo-date 2022.07.16 #techinally incorrect, originally discovered by Maffi ages ago
+    team "James Wilson"
+    team "Matti Mitropoulos"
+    team "Rory Rose"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -264,7 +280,5 @@ survey coda -title "Coda"
     extend left
     38 40 10.44 120.1 44.2
   endcenterline
-
-
 
 endsurvey

@@ -26,6 +26,7 @@ centreline
 
     mark 2 8 fixed
     
+    calibrate tape 0.18
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall # Default

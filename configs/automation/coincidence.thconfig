@@ -1,0 +1,227 @@
+encoding  utf-8
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                                                                                  |
+#                      A SMALL CAVE OF THE MIGOVEC PLATEAU                         |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../data/coincidence/coincidence.th"
+
+#----------------------------------------------------------------------------------|
+# export a model openable in Loch and one in Aven
+export model -o ../../outputs/nakljucja.lox
+export model -o ../../outputs/nakljucja.3d
+
+#----------------------------------------------------------------------------------|
+# select a relevant layout definition file
+input ../../layouts/detailed-p.thl
+input ../../layouts/detailed-e.thl
+
+
+#----------------------------------------------------------------------------------|
+# select a relevant map definition for plan view
+select m-all-p@coincidence
+
+#----------------------------------------------------------------------------------|
+# define a local layout with legend, header and elevation map produced above
+layout local-slo
+	copy detailed-p
+	legend off
+	map-header 0 0 off
+	scale 1 200
+	symbol-show point label
+	symbol-show point gradient
+
+	code metapost
+		## SCALE BAR (modified from contributions by Thomas Holder)
+  
+  		def s_scalebar (expr l, units, txt) =
+  		  begingroup
+  		   interim warningcheck:=0;
+  		   tmp20:=20 * (l / Scale * cm * units / 100);
+  		   tmp40:=40 * (l / Scale * cm * units / 100);
+  		   tmp60:=60 * (l / Scale * cm * units / 100);
+  		   tmp80:=80 * (l / Scale * cm * units / 100);
+  		   tmp100:=100 * (l / Scale * cm * units / 100);
+  		   scal10:=10 * l / 100;
+  		   scal20:=20 * l / 100;
+  		   scal40:=40 * l / 100;
+  		   scal60:=60 * l / 100;
+  		   scal80:=80 * l / 100;
+  		   brht:= 5bp;
+  		   lblht:= 8bp;
+  		  endgroup;
+
+  		  pickup PenD;
+
+  		  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+  		  draw (tmp20,0)--(tmp20,brht);
+  		  draw (tmp40,0)--(tmp40,brht);
+  		  draw (tmp60,0)--(tmp60,brht);
+  		  draw (tmp80,0)--(tmp80,brht);
+  		  fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
+  		  fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+
+
+  		  begingroup
+  		   label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+  		   label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
+  		   label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
+  		   label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
+  		   label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
+  		   label.top(thTEX(decimal (0)),origin+(0,lblht));
+  		   label.bot(thTEX("TLORIS 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+  		  endgroup
+  		 enddef; 
+	endcode
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{2}{105}{SW}{\size[25]\the\cavename}
+		\legendbox{135}{88}{N}{\scalebar}
+		\legendbox{135}{102}{S}{\northarrow}
+	}
+	endcode
+endlayout
+
+layout local-en
+	copy detailed-p
+	legend off
+	map-header 0 0 off
+	scale 1 200
+	symbol-show point label
+	symbol-show point gradient
+	language en
+
+	code tex-map
+		\def\maplayout{
+		\legendbox{2}{105}{SW}{\size[25]\the\cavename}
+		\legendbox{135}{88}{N}{\scalebar}
+		\legendbox{135}{102}{S}{\northarrow}
+	}
+	endcode
+endlayout
+
+#----------------------------------------------------------------------------------|
+# select a relevant map (which contains commands for offsets of overlying bits)
+select m-all-e@coincidence
+
+layout local-e-slo
+	copy detailed-e
+	legend off
+	map-header 0 0 off
+	grid-size 10 10 10 m
+	map-header 0 0 off
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show area snow
+	scale 1 200
+
+
+	code tex-map
+        \def\thecomment{Tolminski Migovec\par Cadastral Number: 14026\par Length: \the\cavelength\par 
+         Depth: \the\cavedepth \par Entrance elevation: 1310 m \par Coordinates (EPSG:3794): 404773 / 123067
+         \par Survey: ICCC/JSPDT 2020\par BCRA Grade 5c
+         }
+		\def\maplayout{
+		\legendbox{2}{125}{SW}{\size[45]\the\cavename}
+		\legendbox{2}{110}{SW}{\size[15]\thecomment}
+
+		\legendbox{35}{120}{N}{\scalebar}
+	}
+	endcode
+	code metapost
+	
+	def s_scalebar (expr l, units, txt) =
+  		  begingroup
+  		   interim warningcheck:=0;
+  		   tmp20:=20 * (l / Scale * cm * units / 100);
+  		   tmp40:=40 * (l / Scale * cm * units / 100);
+  		   tmp60:=60 * (l / Scale * cm * units / 100);
+  		   tmp80:=80 * (l / Scale * cm * units / 100);
+  		   tmp100:=100 * (l / Scale * cm * units / 100);
+  		   scal10:=10 * l / 100;
+  		   scal20:=20 * l / 100;
+  		   scal40:=40 * l / 100;
+  		   scal60:=60 * l / 100;
+  		   scal80:=80 * l / 100;
+  		   brht:= 5bp;
+  		   lblht:= 8bp;
+  		  endgroup;
+
+  		  pickup PenD;
+
+  		  draw (0,0)--(0,brht)--(tmp100,brht)--(tmp100,0)--(0,0);
+  		  draw (tmp20,0)--(tmp20,brht);
+  		  draw (tmp40,0)--(tmp40,brht);
+  		  draw (tmp60,0)--(tmp60,brht);
+  		  draw (tmp80,0)--(tmp80,brht);
+  		  fill (tmp20,0)--(tmp40,0)--(tmp40,brht)--(tmp20,brht)--cycle;
+  		  fill (tmp60,0)--(tmp80,0)--(tmp80,brht)--(tmp60,brht)--cycle;
+
+
+  		  begingroup
+  		   label.top(thTEX(decimal (l) & "\thinspace" & txt),origin+(tmp100,lblht));
+  		   label.top(thTEX(decimal (scal80)),origin+(tmp80,lblht));
+  		   label.top(thTEX(decimal (scal60)),origin+(tmp60,lblht));
+  		   label.top(thTEX(decimal (scal40)),origin+(tmp40,lblht));
+  		   label.top(thTEX(decimal (scal20)),origin+(tmp20,lblht));
+  		   label.top(thTEX(decimal (0)),origin+(0,lblht));
+  		   label.bot(thTEX("PROFIL 1 : " & decimal round(Scale*100)),(tmp40+scal10,-2lblht));
+  		  endgroup
+  		 enddef; 
+	endcode
+
+	#map-image -2 102 ne "../outputs/coincidence_plan_EN.pdf"
+endlayout
+
+layout local-e-en
+	copy detailed-e
+	legend off
+	map-header 0 0 off
+	grid-size 10 10 10 m
+	map-header 0 0 off
+	symbol-colour line border [0 70 90]
+	symbol-show point label
+	symbol-show area snow
+	scale 1 200
+
+	language en
+	code tex-map
+        \def\thecomment{Tolminski Migovec\par Cadastral Number: 14026\par Length: \the\cavelength\par 
+         Depth: \the\cavedepth \par Entrance elevation: 1310 m \par Coordinates (EPSG:3794): 404773 / 123067
+         \par Survey: ICCC/JSPDT 2020\par BCRA Grade 5c
+         }
+		\def\maplayout{
+		\legendbox{2}{125}{SW}{\size[45]\the\cavename}
+        \legendbox{2}{110}{SW}{\size[15]\thecomment}
+		\legendbox{35}{120}{N}{\scalebar}
+
+                
+	}
+	
+endlayout
+#----------------------------------------------------------------------------------|
+# define a local layout without legend or header for extended elevation
+
+#----------------------------------------------------------------------------------|
+# export the pdf map containing plan
+
+language sl
+export map -o ../../outputs/nakljucja_ee_SLO.pdf -projection extended -layout local-e-slo
+export map -o ../../outputs/nakljucja_plan_SLO.pdf -projection plan -layout local-slo
+export map -o ../../outputs/nakljucja_ee_SLO.svg -projection extended -layout local-e-slo
+export map -o ../../outputs/nakljucja_plan_SLO.svg -projection plan -layout local-slo
+
+language en
+export map -o ../../outputs/nakljucja_ee_EN.pdf -projection extended -layout local-e-en
+export map -o ../../outputs/nakljucja_plan_EN.pdf -projection plan -layout local-en
+export map -o ../../outputs/nakljucja_ee_EN.svg -projection extended -layout local-e-en
+export map -o ../../outputs/nakljucja_plan_EN.svg -projection plan -layout local-en
+

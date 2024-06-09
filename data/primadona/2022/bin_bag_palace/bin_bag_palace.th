@@ -2,12 +2,24 @@
 
 survey bin_bag_palace -title "Bin Bag Palace"
     # below Echo Falls 
-  input bin_bag_palace-1e.th2
+  input "bin_bag_palace-p.th2"
+  input "bin_bag_palace-1e.th2"
+
+  map m-all-p -projection plan
+    bin_bag_palace-1p
+    bin_bag_palace-2p
+    bin_bag_palace-3p
+    break
+    bin_bag_palace-4p
+    endmap
 
   map m-all-e -projection extended 
     bin_bag_palace-1e
   endmap 
 
+join bin_bag_palace-1p bin_bag_palace-2p
+join bin_bag_palace-2p bin_bag_palace-3p
+join bin_bag_palace-3p bin_bag_palace-4p
   centerline
     date 2022.07.20 
     explo-date 2022.07.20

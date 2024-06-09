@@ -31,7 +31,7 @@ select m-all-p@coincidence
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
 layout local-slo
-	copy detailed
+	copy detailed-p
 	legend off
 	map-header 0 0 off
 	scale 1 200
@@ -93,7 +93,7 @@ layout local-slo
 endlayout
 
 layout local-en
-	copy detailed
+	copy detailed-p
 	legend off
 	map-header 0 0 off
 	scale 1 200

@@ -15,6 +15,20 @@ env:
   THERION_VERSION: 6.0.4
   THERION_PATH: ./therion-6.0.4
   EXPECTED_OUTPUTS: >-
+    brezno_pod_vrhom_planje.3d
+    brezno_pod_vrhom_planje_plan_EN.pdf
+    brezno_pod_vrhom_planje_ee_EN.pdf
+    brezno_pod_vrhom_planje_plan_EN.svg
+    brezno_pod_vrhom_planje_ee_EN.svg
+    nakljucja.3d
+    nakljucja_plan_EN.pdf
+    nakljucja_ee_EN.pdf
+    nakljucja_plan_SLO.pdf    
+    nakljucja_ee_SLO.pdf
+    nakljucja_plan_EN.svg
+    nakljucja_ee_EN.svg
+    nakljucja_plan_SLO.svg  
+    nakljucja_ee_SLO.svg
     m2_m16_m18.3d 
     m2_m16_m18_plan_SLO.pdf 
     m2_m16_m18_plan_SLO.svg 
@@ -27,12 +41,14 @@ env:
     plateau.3d 
     plateau.kml 
     primadona_ubend_mona_tip_plan_SLO.pdf 
+    primadona_ubend_mona_tip_plan_SLO.svg
+    primadona_ubend_mona_tip_plan_ENG.pdf
+    primadona_ubend_mona_tip_plan_ENG.svg
     primadona_ubend_mona_tip_EE_ENG.pdf 
     primadona_ubend_mona_tip_EE_ENG.svg 
     primadona_ubend_mona_tip_EE_SLO.pdf 
     primadona_ubend_mona_tip_EE_SLO.svg 
     primadona_ubend_mona_tip.3d 
-    primadona_ubend_mona_tip_plan_ENG.svg
     symbology.pdf 
     symbology.svg
     system_migovec.3d 

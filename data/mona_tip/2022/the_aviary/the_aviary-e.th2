@@ -1,0 +1,301 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1801.800000 2087.200000
+##XTHERION## xth_me_area_zoom_to 100
+
+
+scrap the_aviary-e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line rock-border -close on
+  164.7208 1588.6157
+  169.6956 1576.4551
+  158.6405 1575.626
+  154.7712 1585.0228
+endline
+
+line rock-border -close on
+  181.027 1593.5905
+  170.2483 1584.7464
+  179.6451 1578.3897
+  185.1727 1586.4047
+endline
+
+line rock-border -close on
+  226.9056 1600.2235
+  214.1923 1573.9677
+  187.3837 1574.7968
+  198.9915 1594.9724
+endline
+
+line rock-edge 
+  83.4659 1536.104
+  104.1942 1551.5812
+  104.1942 1551.5812 116.6311 1563.4654 120.5004 1565.4
+  124.3697 1567.3347 144.2689 1574.2441 144.2689 1574.2441
+  187.3837 1574.7968 187.3837 1574.7968 187.3837 1574.7968
+  226.9056 1570.6512
+  232.7095 1570.9276
+endline
+
+point 321.1721 2053.8484 label -align r -attr level 3 -scale xs -text "The Aviary"
+point 150.811 2009.83 continuation 
+line wall 
+  976.2565 1455.8149
+  955.0445 1487.7127
+  949.7619 1498.9989 950.87 1517.58 952.62 1530.3
+  957.99 1569.35 957.94 1613.91 950.75 1652.89
+  949.49 1659.73 947.12 1666.34 944.75 1672.89
+  942.2 1679.95 939.32 1686.91 936.01 1693.65
+  931.69 1702.45 927.43 1711.37 921.89 1719.46
+  918.64 1724.21 913.29 1727.23 909.86 1731.86
+  901.97 1742.49 896.07 1755.48 885.96 1763.77
+  858.62 1786.16 815.71 1774.73 784.94 1768.44
+  777.81 1766.99 769.81 1768.11 763.45 1764.57
+  756.97 1760.97 753.32 1753.75 748.45 1748.17
+  735.21 1732.99 722.95 1716.17 709.36 1701.36
+  702.13 1693.48 695.01 1685.44 688.6 1676.87
+  677.34 1661.82 671.09 1643.54 660.78 1627.82
+  648.58 1609.24 627.95 1596.77 613.86 1579.72
+  604.24 1568.08 595.36 1553.22 581.57 1542.92
+  557.7 1525.08 520.6213 1489.891 491.7313 1489.891
+  478.02 1487.85
+  465.5 1488.79 452.27 1487.1 439.89 1488.61
+  425.67 1490.35 412.65 1498.49 399.02 1501.28
+  375.5 1506.1 346.11 1500.17 324.75 1514.62
+  317.33 1519.63 307.91 1524.21 303.68 1532.45
+  297.93 1543.67 300.33 1557.69 300.33 1569.87
+  300.33 1589.28 298.24 1609.17 296.21 1628.34
+  294.54 1644.16 284.88 1658.69 283.42 1674.04
+  281.65 1692.58 279.21 1711.67 278.52 1730.32
+  277.23 1765.27 280.12 1803.26 271.08 1837.33
+  272.43 1839.95
+  269.89 1869.35 268.6826 1911.33 263.1926 1924.88
+  257.7026 1938.43 241.0383 1999.2471 241.0383 1999.2471
+endline
+
+line wall 
+  53.4252 1995.1657
+  52.9997 1951.8848 48.1087 1949.8244 49.8742 1885.4953
+  36.3358 1862.9212 39.065 1823.4835 39.065 1801.4135
+  39.065 1792.1535 61.7272 1727.5618 62.7572 1718.3618
+  65.7572 1691.7818 22.1432 1645.3201 25.8332 1618.6001
+  31.3032 1578.9201 42.8243 1423.5173 51.1843 1384.0673
+  52.5702 1375.2278 52.961 1373.8598 52.961 1373.8598
+  52.961 1373.8598 52.5702 1363.1112 50.8113 1362.3295
+  49.0525 1361.5478 44.9485 1358.6164 44.9485 1358.6164
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  147.12 1603.97
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  105.35 1693.68
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  81.99 1881.5
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  194.72 1990.68
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  192.83 1613.69
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  297.26 1570.47
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  145.87 1582.36
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  196.82 1545.66
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  40.91 1608.13
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  42.31 1797.24
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  28.81 1615.99
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  34.39 1612.48
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  51.7 1782.47
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  32.59 1616.76
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  57.39 1852.0
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  112.39 1832.66
+endline
+
+line u:splay -visibility off
+  143.55 1581.98
+  140.18 1589.48
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  300.45 1158.37
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  300.45 1160.92
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  300.45 1192.07
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  166.4 1212.77
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  126.13 1333.64
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  150.09 1472.89
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  300.45 1502.05
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  300.45 1336.15
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  307.28 1161.37
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  365.03 1271.61
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  813.83 1171.32
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  675.54 1241.52
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  734.26 1307.09
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  551.03 1340.5
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  611.79 1402.23
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  875.34 1438.51
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  519.59 1466.12
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  454.99 1386.83
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  830.06 1105.15
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  828.06 939.6
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  1746.59 106.94
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  462.05 1186.02
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  -56.07 1534.55
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  122.42 1464.82
+endline
+
+line u:splay -visibility off
+  300.45 1172.07
+  318.57 1257.94
+endline
+
+point 143.55 1581.98 station -name 0
+point 300.45 1172.07 station -name 1
+point 709.34 1051.99 station -name 2
+endscrap
+

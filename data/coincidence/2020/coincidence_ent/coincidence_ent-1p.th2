@@ -1219,7 +1219,7 @@ point 1007.9069 1053.6519 station-name -text 8 -align r -scale xs
 point 992.0736 1059.8988 station-name -text 10 -align l -scale xs
 point 998.5397 1041.0778 station-name -text 9 -align l -scale xs
 point 1057.6659 822.5845 label -text "<bf>p10<bf>" -align l
-point 1057.3803 1040.4481 label -text "Hell's Teeth" -align r -scale xl
+point 1147.3803 1040.4481 label -text "Hell's Teeth" -align r -scale xl
 line rock-border -close on
   1076.71 856.79
   1071.81 857.485
@@ -2583,7 +2583,7 @@ line border -subtype invisible -id smallblocks8 -close on
   215.4922 2903.8954
 endline
 
-point 287.9421 2545.9014 continuation -scale xs
+#point 287.9421 2545.9014 continuation -scale xs #Narrow No Escape
 line u:texture 
   409.3809 2370.1326
   414.0294 2349.6791

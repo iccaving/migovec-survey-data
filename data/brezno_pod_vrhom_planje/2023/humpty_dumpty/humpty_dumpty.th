@@ -1,16 +1,40 @@
 # 2023.07.14 created by TopoDroid v 5.1.40
 
 survey humpty_dumpty -title "Humpty Dumpty"
-    # the gallery dig, pitch head, and gallery continuation 
+    # the gallery dig, pitch head, and gallery continuation
+    input humpty_dumpty-p.th2
+    input humpty_dumpty-e.th2
+
+    map m-all-p -projection plan 
+      humpty_dumpty-1p
+    endmap
+
+    map m-all-e -projection extended 
+      humpty_dumpty-1e
+    endmap
 
   centerline
     date 2023.07.11 
     # team CH-DPW-JW-EP 
+    team "Chris Hayes"
+    team "David Wilson"
+    team "James Wilson"
+    team "Ellie Pizey"
+
+
+    explo-date 2023.07.11
+    explo-team "Chris Hayes"
+    explo-team "David Wilson"
+    explo-team "James Wilson"
+    explo-team "Ellie Pizey"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
     extend left
+    flags duplicate
     0 1 5.03 268.1 -3.9
+    flags not duplicate
     extend ignore
     0 1 5.04 268.1 -3.9
     0 1 5.03 268.1 -3.7
@@ -209,6 +233,8 @@ survey humpty_dumpty -title "Humpty Dumpty"
     12 . 0.49 39.6 -31.3
     12 . 1.10 354.4 11.9
     12 . 0.86 8.4 30.7
+
+    station 12 "A dig at the end of the Humpty Dumpty horizontal passage (don't descend house of cards). Draughting hole in mud, requires spade. Dug by the Slovene's who confirmed the draught is good, but they didn't have any tools." continuation attr code "D" attr cave "Brezno pod Vrhom Planje" attr author "David Wilson"
   endcenterline
 
   # input "Humpty_Dumpty-1pp.th2"

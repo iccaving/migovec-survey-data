@@ -1,11 +1,30 @@
 # 2023.08.09 created by TopoDroid v 5.1.40
 
 survey auld_alliance_resurvey -title "auld alliance resurvey"
-    # start from pss1 of auld alliance, ends at T28 of icomnozzer 
+  # start from pss1 of auld alliance, ends at T28 of icomnozzer 
+
+  input "auld_alliance_resurvey-1p.th2"
+  input "auld_alliance_resurvey-1s.th2"
+
+  map m-all-p -projection plan
+    auld_alliance_resurvey-1p
+  endmap
+
+  map m-all-e -projection extended
+    auld_alliance_resurvey-1s
+  endmap
 
   centerline
     date 2023.07.28 
     # team CH,EP,AR 
+    team "Ellie Pizey"
+    team "Astrid Rao"
+    team "Chris Hayes"
+
+    explo-date 2016.07.27 # Expedition Neprehojene Poti, scary rigging
+    explo-team "William French"
+    explo-team "William Scott"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

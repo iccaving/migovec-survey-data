@@ -1,10 +1,30 @@
 # 2023.08.09 created by TopoDroid v 5.1.40
 
 survey neu_alliance -title "neu alliance"
-    # passageway behind auld alliance stn 0 is stn7 cairn of auld Aliance, and stn8 of auld Aliance resurvey 
+  # passageway behind auld alliance 
+  #stn 0 is stn7 cairn of auld Aliance, and stn8 of auld Aliance resurvey 
+
+  input "neu_alliance-1p.th2"
+  input "neu_alliance-1s.th2"
+
+  map m-all-p -projection plan
+    neu_alliance-1p
+  endmap
+
+  map m-all-e -projection extended
+    neu_alliance-1s
+  endmap
 
   centerline
     date 2023.07.20 
+    team "Ellie Pizey"
+    team "Astrid Rao"
+    team "Chris Hayes"
+
+    explo-date 2023.07.20
+    explo-team "Ellie Pizey"
+    explo-team "Astrid Rao"
+    explo-team "Chris Hayes"
     # team EP AR CH 
     units length meters
     units compass clino degrees

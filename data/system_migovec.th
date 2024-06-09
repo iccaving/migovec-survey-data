@@ -25,25 +25,26 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 	centreline
 		# old fixes use EPSG:3912
 
-		cs epsg:3794
+		cs epsg:3912
+#fix M2 405068.03	123934.88	1868.33	# lokacija po LIDAR, novi vhod
 
 		# entrances and old fixes
 
 		#M2
-		station 16@izent1.M2.m2m16m18 entrance
-		#fix 16@izent1.M2.m2m16m18 405070 123937 1858
+		station M2@novi_vhod.M2.m2m16m18 entrance
+		fix  M2@novi_vhod.M2.m2m16m18 405068.03 123934.88 1868.33 #lokacija po LIDAR, novi vhod
 
 		#M16
 		station 1@entrance.M16.m2m16m18 entrance
-		#fix 1@entrance.M16.m2m16m18 405073 123841 1852  # old GK?
+		fix 1@entrance.M16.m2m16m18 405067.09  123837.46 1854.40
 
 		#Primadona
 		station 35@prima1.primadona.primadona_ubend_mona_tip entrance
-		#fix 35@prima1.primadona.primadona_ubend_mona_tip 404561 123804 1727 # old GK?
+		fix MT1@prima_location.primadona.primadona_ubend_mona_tip 404532.51 123865.37 1723.10 
 
 		#Vrtnarija
 		station 0@bclent2.vrtnarija.vrtnarija_vilinska entrance
-		#fix 0@bclent2.vrtnarija.vrtnarija_vilinska 405134 124013 1798
+		fix 0@bclent2.vrtnarija.vrtnarija_vilinska 405134.46 124012.07 1797.95
 
 		### other entrances not fixed, survey points
 		#Monatip
@@ -64,8 +65,6 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 		station 26@torn.M18.m2m16m18 entrance
 		#fix 26@torn.M18.m2m16m18 404682 124454 1847
 
-		#fix 1@sifon.M16.m2m16m18 404174.93 124162.49 892.67
-
 	endcentreline
 
 
@@ -82,7 +81,7 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 
 	# JOIN commands for the sketches at connection points
 	# NCB and MONATIP
-
+	#join mona_tip11-4e@mona_tip11.mona_tip.primadona_ubend_mona_tip gallery-3e@gallery.M18.m2m16m18
 	join dreamsforthesoul-4p@dreamsforthesoul.vrtnarija.vrtnarija_vilinska waterloo-1p@waterloo.M16.m2m16m18
 
 	#Wishing Well and Mig Country
@@ -92,4 +91,7 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 
 	# titani genghis kan and fools gold? 
 	equate 7@genghis.M16.m2m16m18 0@fools_gold.mona_tip.primadona_ubend_mona_tip
+
+	# monatip entrance with prima location survey 
+	equate monatip@prima_location.primadona.primadona_ubend_mona_tip 1@mona_tip1.mona_tip.primadona_ubend_mona_tip
 endsurvey

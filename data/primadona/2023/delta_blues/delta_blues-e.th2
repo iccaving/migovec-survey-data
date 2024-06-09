@@ -1,2160 +1,2686 @@
-encoding utf-8
-##XTHERION## xth_me_area_adjust -911.8 -863.6 2439.4 179.5
-##XTHERION## xth_me_area_zoom_to 25
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 656.816350 188.038640
+##XTHERION## xth_me_area_zoom_to 100
 
-# 2023.07.18 created by TopoDroid v. 5.1.40
+scrap DELETE-ME-survey-legs-DUPLICATE_delta_blues-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-scrap delta_blues-1e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
-
-line wall
-  -226.45 -444.94
-  -231.18 -446.15 -235.80 -447.95 -240.64 -448.58
-  -245.18 -449.17 -249.79 -448.58 -254.36 -448.58
-  -304.75 -448.58 -356.69 -453.44 -407.30 -453.44
+line survey 
+  442.931 94.8792
+  454.871 95.1092
 endline
 
-line wall
-  -426.13 -451.69
-  -461.13 -451.69 -497.17 -451.15 -532.13 -451.15
-  -537.21 -451.15 -542.38 -450.27 -547.39 -451.15
-  -554.73 -452.44 -560.93 -462.61 -563.84 -468.79
-  -571.34 -484.67 -568.73 -503.89 -569.26 -520.88
-  -570.76 -569.16 -569.26 -618.96 -569.26 -667.26
-  -569.26 -670.64 -569.26 -674.01 -569.26 -677.39
-  -569.26 -680.00 -569.26 -682.61 -569.26 -685.22
-  -569.26 -687.92 -569.26 -690.62 -569.26 -693.33
-  -569.26 -702.08 -565.08 -725.49 -573.29 -731.17
-  -575.81 -732.90 -579.03 -733.30 -581.95 -734.18
-  -585.43 -735.23 -589.05 -735.80 -592.49 -736.97
-  -618.65 -745.87 -647.26 -749.66 -674.72 -753.24
-  -695.17 -755.91 -715.77 -762.21 -736.34 -763.63
+line survey 
+  442.931 94.8792
+  455.471 100.6992
 endline
 
-line wall
-  -739.33 -747.86
-  -741.67 -747.07 -744.10 -746.49 -746.36 -745.48
-  -748.17 -744.66 -749.69 -743.29 -751.47 -742.39
-  -753.44 -741.39 -755.57 -740.71 -757.59 -739.80
-  -760.13 -738.66 -762.69 -737.55 -765.14 -736.24
-  -767.33 -735.06 -769.28 -733.47 -771.49 -732.33
-  -774.02 -731.03 -776.75 -730.15 -779.32 -728.94
-  -792.35 -722.81 -801.38 -710.05 -811.79 -700.64
+line survey 
+  442.931 94.8792
+  455.141 108.3392
 endline
 
-line wall
-  -794.86 -430.05
-  -758.84 -430.05 -721.69 -427.58 -685.93 -423.39
-  -658.78 -420.21 -630.19 -423.35 -603.13 -419.16
-  -600.79 -418.80 -598.45 -418.48 -596.10 -418.20
-  -585.53 -416.94 -574.52 -416.70 -563.93 -415.51
+line survey 
+  442.931 94.8792
+  482.281 172.8292
 endline
 
-line wall
-  -564.51 -413.81
-  -560.29 -413.81 -548.58 -415.70 -546.48 -410.65
-  -545.25 -407.70 -546.89 -403.12 -545.82 -399.98
-  -544.67 -396.62 -542.39 -393.39 -541.38 -389.82
-  -538.57 -379.83 -532.70 -370.50 -529.80 -360.47
-  -528.52 -356.06 -526.38 -351.59 -523.55 -347.96
-  -509.73 -330.26 -489.53 -317.64 -474.87 -300.99
+line survey 
+  442.931 94.8792
+  462.151 146.6892
 endline
 
-line wall
-  -468.04 -297.04
-  -464.97 -291.31 -462.09 -285.12 -459.49 -278.90
-  -453.06 -263.55 -452.96 -245.65 -446.36 -230.74
-  -445.05 -227.79 -443.07 -225.17 -441.28 -222.48
-  -434.58 -212.40 -430.23 -200.49 -425.74 -189.25
-  -420.57 -176.32 -419.59 -157.95 -411.97 -146.53
-  -406.94 -138.99 -398.06 -134.62 -390.58 -130.05
+line survey 
+  442.931 94.8792
+  471.141 171.9592
 endline
 
-line wall
-  -414.20 -136.76
-  -409.40 -136.76 -404.39 -138.15 -399.79 -136.76
-  -393.16 -134.76 -387.36 -130.61 -381.52 -126.89
-  -374.69 -122.55 -368.84 -116.74 -361.86 -112.64
-  -340.23 -99.94 -311.88 -90.07 -287.46 -85.02
-  -262.09 -79.77 -235.36 -77.41 -209.61 -73.80
-  -197.87 -72.16 -186.30 -69.48 -174.65 -67.30
-  -166.00 -65.69 -146.73 -61.56 -137.15 -60.38
-  -99.36 -55.76 -57.88 -63.31 -20.70 -51.50
-  -15.59 -49.88 -10.34 -48.23 -5.88 -45.25
-  2.89 -39.40 6.88 -28.17 14.37 -21.35
-  18.49 -17.60 24.21 -16.06 28.76 -12.84
-  33.18 -9.72 36.53 -5.18 41.17 -2.41
-  48.94 2.24 59.08 3.44 67.30 8.42
-  79.85 16.02 89.81 28.08 101.94 36.48
-  111.81 43.32 123.62 51.94 137.27 60.97
+line survey 
+  442.931 94.8792
+  450.621 126.3692
 endline
 
-line wall
-  110.17 64.74
-  151.64 64.74 194.37 64.74 235.84 64.74
+line survey 
+  442.931 94.8792
+  442.001 106.8392
 endline
 
-line wall
-  -218.12 -431.19
-  -208.26 -431.19 -198.40 -431.19 -188.55 -431.19
-  -183.45 -431.19 -178.35 -431.19 -173.25 -431.19
-  -168.64 -431.19 -164.02 -431.19 -159.41 -431.19
-  -153.21 -431.19 -147.02 -431.19 -140.82 -431.19
-  -121.16 -431.19 -101.23 -435.68 -81.78 -437.41
-  -75.85 -437.94 -69.89 -436.75 -63.94 -436.61
-  0.13 -435.12 66.19 -439.32 130.33 -439.32
-  135.35 -439.32 140.38 -439.00 145.38 -439.32
-  150.88 -439.67 156.31 -440.82 161.80 -441.35
-  188.97 -444.01 218.31 -442.16 244.97 -447.45
-  268.45 -452.11 293.01 -456.94 317.06 -456.94
+line survey 
+  442.931 94.8792
+  441.611 104.0092
 endline
 
-line wall
-  377.83 -454.23
-  407.49 -454.23 438.08 -450.33 467.22 -444.74
-  475.18 -443.22 482.88 -440.29 490.93 -439.32
-  497.94 -438.47 505.16 -440.52 512.12 -439.32
-  525.98 -436.93 537.65 -426.80 550.10 -420.78
-  561.42 -415.30 574.26 -413.80 586.16 -409.77
-  602.58 -404.20 619.58 -398.63 636.32 -394.02
-  642.07 -392.43 647.90 -391.20 653.69 -389.77
-  668.96 -386.00 685.23 -383.75 700.96 -383.75
+line survey 
+  442.931 94.8792
+  441.631 99.6792
 endline
 
-line wall
-  254.85 74.05
-  259.16 64.52 264.39 52.89 274.30 46.88
-  296.68 33.32 330.89 32.97 355.97 30.77
-  361.69 30.27 367.38 29.48 373.12 29.23
-  384.55 28.73 407.19 25.88 418.28 29.28
-  431.52 33.33 439.60 46.64 450.65 51.17
-  464.00 56.64 486.30 52.34 500.58 52.34
-  505.32 52.34 510.16 51.38 514.80 52.34
-  519.56 53.32 523.38 57.44 528.20 58.05
-  533.03 58.67 537.82 56.49 542.65 55.89
-  552.57 54.66 571.32 53.08 580.05 53.70
-  600.61 55.15 620.66 66.31 641.20 65.91
+line survey 
+  442.931 94.8792
+  442.411 95.9792
 endline
 
-line wall
-  648.01 79.47
-  666.72 79.47 692.98 80.79 706.30 64.55
-  714.91 54.05 719.29 37.57 723.53 25.03
-  725.04 20.58 726.54 16.13 727.98 11.66
-  743.28 -35.70 740.20 -88.57 740.20 -137.72
+line survey 
+  442.931 94.8792
+  438.691 95.4292
 endline
 
-line wall
-  740.63 -142.18
-  766.80 -163.51 810.94 -160.12 843.09 -160.12
-  856.86 -160.12 871.77 -160.49 884.78 -155.55
+line survey 
+  442.931 94.8792
+  430.801 95.2692
 endline
 
-line wall
-  710.44 -372.59
-  736.00 -372.59 764.18 -368.84 786.82 -356.00
-  796.99 -350.24 799.37 -335.59 808.38 -330.29
-  811.48 -328.47 825.97 -329.46 829.20 -329.15
-  847.06 -327.46 865.66 -327.26 883.73 -327.26
+line survey 
+  442.931 94.8792
+  383.061 93.7692
 endline
 
-line wall
-  887.84 -142.18
-  892.48 -140.45 897.17 -138.85 901.77 -137.01
-  904.81 -135.80 907.62 -134.00 910.75 -133.04
-  937.29 -124.87 966.38 -123.29 993.78 -123.29
+line survey 
+  442.931 94.8792
+  340.681 88.6592
 endline
 
-line wall
-  874.63 -327.26
-  887.81 -325.81 901.21 -323.45 914.19 -321.62
-  938.45 -318.20 964.07 -313.10 988.86 -313.10
-  1008.00 -313.10 1027.71 -313.10 1046.84 -313.10
+line survey 
+  442.931 94.8792
+  388.321 93.2192
 endline
 
-line wall
-  1000.08 -114.85
-  999.87 -109.77 999.88 -104.69 999.44 -99.63
-  998.84 -92.69 998.05 -85.75 996.94 -78.87
-  990.11 -36.47 979.25 6.77 975.04 49.70
+line survey 
+  442.931 94.8792
+  408.931 94.1692
 endline
 
-line wall
-  1093.64 70.53
-  1093.64 38.22 1092.01 4.84 1094.59 -27.36
-  1094.88 -30.99 1094.35 -34.80 1095.53 -38.25
-  1099.99 -51.32 1111.66 -61.96 1119.09 -73.17
-  1121.09 -76.17 1122.14 -79.71 1124.00 -82.80
+line survey 
+  442.931 94.8792
+  421.911 95.5092
 endline
 
-line wall
-  1053.95 -314.41
-  1081.84 -318.30 1107.67 -333.76 1134.70 -340.08
-  1138.44 -340.96 1142.29 -341.29 1146.09 -341.84
-  1149.71 -342.35 1153.31 -343.11 1156.96 -343.25
-  1161.06 -343.42 1165.16 -342.86 1169.26 -342.78
-  1173.73 -342.70 1178.21 -342.78 1182.68 -342.78
-  1201.00 -342.78 1219.55 -339.31 1237.47 -339.00
+line survey 
+  442.931 94.8792
+  455.191 94.7192
 endline
 
-line wall
-  1240.99 -333.83
-  1278.35 -333.83 1316.88 -333.83 1354.28 -333.83
+line survey 
+  442.931 94.8792
+  455.351 94.8792
 endline
 
-line wall
-  1106.87 -81.24
-  1114.69 -90.25 1124.01 -104.74 1126.93 -116.69
-  1127.40 -118.63 1126.71 -120.68 1126.79 -122.67
-  1127.30 -136.68 1125.29 -154.54 1130.30 -167.55
-  1132.91 -174.33 1131.76 -184.17 1135.98 -190.10
-  1140.19 -196.02 1146.14 -200.49 1151.20 -205.70
-  1163.84 -218.70 1185.97 -220.14 1202.88 -220.14
-  1239.51 -220.14 1277.59 -220.06 1313.60 -213.69
-  1316.94 -213.10 1320.11 -211.78 1323.37 -210.82
+line survey 
+  442.931 94.8792
+  475.541 93.7692
 endline
 
-line wall
-  1324.76 -204.24
-  1336.80 -204.24 1348.91 -200.09 1360.22 -196.23
+line survey 
+  442.931 94.8792
+  503.051 92.0392
 endline
 
-line wall
-  1356.83 -329.31
-  1373.44 -314.09 1386.33 -291.39 1407.63 -282.20
+line survey 
+  442.931 94.8792
+  456.431 95.5792
 endline
 
-line wall
-  1403.91 -283.23
-  1422.53 -271.08 1441.09 -253.79 1463.75 -249.77
+line survey 
+  442.931 94.8792
+  488.291 80.5492
 endline
 
-line wall
-  1358.88 -197.88
-  1375.94 -192.19 1392.94 -175.06 1403.45 -161.05
+line survey 
+  488.291 80.5492
+  488.031 107.3992
 endline
 
-line wall
-  1398.11 -161.70
-  1418.00 -161.70 1438.47 -164.08 1458.40 -164.08
+line survey 
+  488.291 80.5492
+  465.991 129.2092
 endline
 
-line wall
-  1478.76 -247.30
-  1480.59 -246.80 1482.40 -246.26 1484.24 -245.81
-  1485.88 -245.40 1487.55 -245.14 1489.18 -244.72
-  1502.23 -241.37 1513.15 -232.08 1525.23 -227.80
-  1545.74 -220.52 1566.97 -213.02 1587.37 -204.98
-  1589.03 -204.33 1590.88 -203.91 1592.22 -202.74
-  1599.74 -196.23 1610.86 -192.34 1621.29 -192.34
+line survey 
+  488.291 80.5492
+  460.641 119.9192
 endline
 
-line wall
-  1466.47 -163.57
-  1486.71 -160.66 1507.66 -156.99 1528.13 -156.99
-  1542.08 -156.99 1556.50 -156.85 1570.26 -154.95
-  1580.09 -153.59 1591.53 -155.19 1600.33 -150.08
+line survey 
+  488.291 80.5492
+  414.991 145.2692
 endline
 
-line wall
-  1601.08 -143.02
-  1631.79 -141.61 1662.97 -133.46 1693.76 -132.74
-  1745.71 -131.52 1799.23 -138.10 1851.32 -138.10
+line survey 
+  488.291 80.5492
+  404.991 139.6792
 endline
 
-line wall
-  1630.57 -194.90
-  1639.64 -194.90 1648.96 -193.61 1658.04 -193.55
-  1690.04 -193.35 1722.88 -197.58 1754.80 -197.58
+line survey 
+  488.291 80.5492
+  390.841 125.4292
 endline
 
-line wall
-  1760.94 -196.96
-  1767.67 -196.96 1774.60 -196.96 1781.33 -196.96
-  1806.03 -196.96 1831.87 -197.17 1856.12 -202.31
-  1864.40 -204.06 1873.09 -205.10 1881.48 -205.52
-  1895.00 -206.20 1908.80 -208.77 1922.33 -209.09
-  1926.91 -209.20 1931.49 -208.85 1936.08 -208.85
+line survey 
+  488.291 80.5492
+  376.661 116.7692
 endline
 
-line wall
-  1859.34 -135.59
-  1890.68 -135.59 1922.90 -138.83 1954.01 -142.25
+line survey 
+  488.291 80.5492
+  463.751 84.0892
 endline
 
-line wall
-  2066.72 -237.73
-  2070.84 -240.41 2116.31 -270.02 2116.53 -270.26
-  2120.65 -274.63 2105.30 -265.99 2099.69 -263.86
-  2094.98 -261.44 2080.85 -254.22 2085.57 -256.61
-  2093.99 -260.88 2102.59 -264.79 2110.78 -269.48
-  2170.12 -303.48 2230.31 -336.12 2288.11 -372.69
-  2306.67 -384.43 2322.27 -400.29 2339.35 -414.10
+line survey 
+  488.291 80.5492
+  445.551 92.2792
 endline
 
-line wall
-  2005.47 -155.54
-  1929.19 -150.58 1853.04 -143.02 1776.64 -140.66
-  1692.19 -138.05 1607.36 -147.84 1523.17 -140.66
-  1446.48 -134.12 1371.55 -114.05 1295.93 -99.67
-  1227.83 -86.72 1161.06 -65.10 1092.03 -58.68
-  1013.60 -51.37 934.22 -65.22 855.72 -58.68
-  604.67 -37.75 354.88 -3.79 104.45 23.65
+line survey 
+  488.291 80.5492
+  463.561 79.2892
 endline
 
-
-line u:splay -visibility off
-  196.85 -236.22
-  256.59 -235.01
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  259.38 -207.13
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  257.90 -168.77
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  393.90 153.41
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  293.28 22.90
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  338.23 148.93
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  235.42 -78.82
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  201.55 -176.44
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  203.31 -190.52
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  203.60 -212.12
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  199.58 -230.82
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  218.02 -233.63
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  257.37 -234.29
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  496.05 -241.85
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  196.85 -267.29
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  196.85 -244.19
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  196.85 -239.85
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  302.03 -233.00
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  258.12 -237.02
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  134.93 -236.07
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  34.01 -241.92
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  -103.64 -250.64
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  129.37 -232.60
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -28.45 -174.02
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  81.59 -64.52
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -29.88 -110.99
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -29.88 15.65
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  386.58 -12.89
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  457.02 -83.06
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  528.01 -126.74
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  92.53 -290.61
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  183.71 -249.37
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  93.69 -314.32
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  31.94 -301.16
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  49.23 -242.96
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -62.99 -342.33
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -63.19 -361.74
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -47.50 -307.64
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -90.60 -310.33
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -168.07 -319.72
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -232.83 -341.00
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -261.38 -337.29
-endline
-line u:splay -visibility off
-  -29.88 -307.87
-  -125.93 -353.90
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -168.68 -335.71
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -128.49 -298.91
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -174.97 -325.93
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -182.02 -475.55
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -182.02 -480.51
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -182.02 -473.39
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -182.02 -431.76
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -182.02 -421.91
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -194.93 -340.76
-endline
-line u:splay -visibility off
-  -182.02 -337.26
-  -30.62 -320.42
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -369.56 -176.98
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -391.37 -240.23
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -380.92 113.97
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -380.92 76.59
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -380.92 -182.71
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -402.79 -184.53
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -436.93 -179.19
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -189.16 -475.54
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -178.49 -401.18
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -186.60 -343.66
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -320.84 -321.55
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -361.97 -314.04
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -387.85 -305.77
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -373.84 -284.13
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -373.68 -251.66
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -572.48 -223.05
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -574.18 -216.84
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -486.84 -293.11
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -469.42 -479.45
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -518.82 -456.12
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -555.48 -470.34
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -527.43 -402.34
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -580.57 -416.62
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -476.46 -372.82
-endline
-line u:splay -visibility off
-  -380.92 -312.40
-  -507.49 -370.74
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -539.46 -315.51
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -533.96 -298.92
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -539.46 -267.34
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -443.34 -188.95
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -381.82 -249.74
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -539.46 -464.28
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -426.16 -463.48
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -368.01 -461.77
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -359.46 -438.36
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -539.46 -426.71
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -539.46 -425.08
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -539.46 -427.02
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -539.46 -427.67
-endline
-line u:splay -visibility off
-  -539.46 -423.94
-  -539.46 -433.83
-endline
-line u:splay -visibility off
-  -539.46 -432.93
-  -539.46 -393.95
-endline
-line u:splay -visibility off
-  -539.46 -432.93
-  -539.46 -407.08
-endline
-line u:splay -visibility off
-  -539.46 -432.93
-  -555.96 -423.64
-endline
-line u:splay -visibility off
-  -539.46 -432.93
-  -563.86 -439.41
-endline
-line u:splay -visibility off
-  -539.46 -432.93
-  -572.76 -427.36
-endline
-line u:splay -visibility off
-  -539.46 -432.93
-  -539.46 -410.72
-endline
-line u:splay -visibility off
-  -539.46 -432.93
-  -539.46 -429.63
-endline
-line u:splay -visibility off
-  -539.46 -432.93
-  -640.50 -444.77
-endline
-line u:splay -visibility off
-  -576.20 -439.51
-  -576.20 -498.58
-endline
-line u:splay -visibility off
-  -576.20 -439.51
-  -616.77 -510.05
-endline
-line u:splay -visibility off
-  -576.20 -439.51
-  -869.87 -605.09
-endline
-line u:splay -visibility off
-  -576.20 -439.51
-  -850.56 -690.73
-endline
-line u:splay -visibility off
-  -576.20 -439.51
-  -712.86 -710.33
-endline
-line u:splay -visibility off
-  -576.20 -439.51
-  -576.20 -517.89
-endline
-line u:splay -visibility off
-  -576.20 -439.51
-  -573.59 -451.63
-endline
-line u:splay -visibility off
-  -576.20 -439.51
-  -579.10 -419.48
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.59 -281.91
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -172.35
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -96.68
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -73.81
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -15.27
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 4.02
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -55.68
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -118.79
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -284.73
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -221.08
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -300.62
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -323.78
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -321.88
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -314.84
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -260.49
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -328.50
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  574.00 -332.84
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  597.62 -337.50
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  650.93 -336.35
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  595.98 -242.39
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  700.42 -386.56
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  668.66 -385.53
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  708.86 -373.48
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  780.58 -341.56
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  780.67 -300.80
-endline
-line u:splay -visibility off
-  708.86 -337.11
-  772.36 -278.54
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  816.22 -227.72
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  610.69 -233.78
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  818.19 -261.46
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  848.97 -259.53
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  669.01 -389.13
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  613.07 -317.84
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  818.19 -268.96
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  818.19 -272.88
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  867.60 -260.47
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  949.41 -262.95
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  1117.82 -265.13
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  1010.54 -263.65
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  872.09 -256.22
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  936.75 -197.88
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  903.78 -146.05
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  1070.80 -221.71
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  829.85 -335.21
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  867.35 -319.62
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  931.79 -322.72
-endline
-line u:splay -visibility off
-  818.19 -260.87
-  952.55 -326.31
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1175.48 -262.99
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1158.91 -264.68
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1120.56 -264.93
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1149.53 -266.37
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1185.96 -317.65
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1225.58 -364.10
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1168.30 -348.39
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1097.95 -271.76
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1052.74 -265.40
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1033.64 -259.28
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1033.64 -261.68
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1033.64 40.70
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1030.25 -134.75
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1033.64 -176.11
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1033.64 -251.43
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1033.64 -223.00
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  824.69 -259.79
-endline
-line u:splay -visibility off
-  1033.64 -265.71
-  1033.64 -202.26
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1155.55 113.71
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1108.64 212.85
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1082.99 219.70
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1070.68 228.13
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1155.82 163.66
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1156.83 -19.97
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1179.39 8.77
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1175.05 115.25
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1090.29 219.84
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1061.53 227.97
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1133.79 -129.19
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1114.93 -143.22
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1124.68 -167.24
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1134.71 -225.66
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1181.06 -252.23
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1151.72 -253.16
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1156.60 -214.28
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1169.60 -120.70
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1008.72 -251.18
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  990.04 -254.82
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1015.99 -259.71
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1035.45 -252.70
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1052.12 -255.31
-endline
-line u:splay -visibility off
-  1140.79 -265.53
-  1069.67 -218.24
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1176.43 -305.66
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1180.68 -282.98
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1199.00 -235.06
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1196.65 -224.81
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1221.89 -225.39
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1334.22 -187.09
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1318.53 -231.01
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1317.61 -266.21
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1221.68 -300.06
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1171.76 -363.41
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1171.96 -336.49
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1170.37 -311.20
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1169.69 -295.09
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1174.45 -277.91
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1087.42 -308.52
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1141.91 -297.28
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1166.97 -295.07
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1158.92 -227.47
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1136.12 -218.44
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1083.69 -216.15
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1028.18 -208.32
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1021.03 -248.39
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1053.82 -287.87
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1112.26 -325.90
-endline
-line u:splay -visibility off
-  1186.57 -303.89
-  1138.90 -334.71
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1377.87 -276.98
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1357.37 -278.25
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1283.65 -273.32
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1306.90 -174.91
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1271.38 -192.87
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1344.56 -311.84
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1321.40 -179.33
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1209.66 -277.00
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1158.65 -274.51
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1217.55 -273.11
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1217.07 -329.46
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1202.23 -367.82
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1054.76 -278.92
-endline
-line u:splay -visibility off
-  1306.90 -274.53
-  1208.50 -208.11
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1279.56 -282.30
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1266.08 -361.35
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1276.69 -365.67
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1380.15 -143.31
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1307.18 -67.67
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1328.86 -52.60
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1386.40 -105.38
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1407.07 -168.39
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1408.16 -230.35
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1419.23 -232.28
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1386.40 -232.54
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1480.50 -311.86
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1389.82 -359.03
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1387.34 -354.58
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1386.40 -353.24
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1447.13 -343.57
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1451.17 -341.83
-endline
-line u:splay -visibility off
-  1386.40 -231.36
-  1665.30 -85.45
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1525.73 -224.67
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1579.66 -181.12
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1522.36 -173.77
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1502.90 -217.93
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1567.85 -214.64
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1558.99 -215.23
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1494.32 -220.65
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1525.74 -222.12
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1519.61 -234.30
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1504.54 -247.07
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1472.28 -310.22
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1497.61 -299.50
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1339.48 -223.83
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1363.59 -218.61
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1422.54 -218.66
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1464.39 -213.29
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1369.48 -200.51
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1356.09 -327.36
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1350.34 -342.73
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1354.68 -300.44
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1422.42 -350.72
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1453.14 -310.38
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1486.00 -301.54
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1511.83 -288.77
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1497.91 -297.28
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1567.33 -285.25
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1539.20 -249.87
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1523.28 -246.45
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1524.32 -226.32
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1552.47 -227.00
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1586.78 -205.40
-endline
-line u:splay -visibility off
-  1464.79 -225.16
-  1568.67 -179.28
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1619.94 -83.81
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1657.80 -80.32
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1710.69 -50.80
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1674.11 -123.92
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1615.81 -85.87
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1615.81 -93.59
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1615.81 -119.24
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1615.81 -157.07
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1615.81 -180.34
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1615.81 -218.39
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1615.81 -203.46
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1573.85 -168.45
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1593.03 -166.57
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1598.01 -162.57
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1611.55 -228.65
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1604.05 -185.47
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1600.43 -171.15
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1659.16 -228.09
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1712.01 -228.38
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1734.54 -204.61
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1742.17 -178.69
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1726.92 -172.43
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1695.68 -170.83
-endline
-line u:splay -visibility off
-  1615.81 -165.16
-  1657.58 -168.32
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1897.80 -185.68
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1844.49 -186.48
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1796.38 -184.53
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1761.90 -186.80
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1737.75 -186.12
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1913.80 -182.57
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1782.01 -160.68
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1775.55 -121.55
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1827.90 -108.72
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1908.06 -123.36
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1943.39 -167.78
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1938.62 -152.79
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1930.79 -137.65
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1924.47 -188.66
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1963.38 -215.54
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1995.34 -212.45
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2065.46 -206.66
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1946.57 -185.57
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1946.57 -168.23
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2061.82 -183.04
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2051.33 -162.73
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2045.89 -148.58
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1946.57 -188.33
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2001.91 -188.17
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2051.48 -186.61
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1975.47 -186.90
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1985.45 -186.88
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2032.49 -180.44
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2046.55 -180.36
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  1946.57 -152.07
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2065.68 -207.32
-endline
-line u:splay -visibility off
-  1946.57 -184.84
-  2015.35 -204.62
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2020.94 -177.92
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2012.69 -177.24
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  1991.28 -169.58
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2017.87 -181.39
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2067.00 -204.87
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2071.58 -203.62
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2036.30 -169.10
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2050.51 -160.57
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2045.34 -132.05
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2053.84 -156.78
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2078.40 -157.43
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2086.95 -160.03
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2115.27 -161.87
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2148.51 -161.56
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2166.31 -160.21
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2092.37 -206.22
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2111.48 -198.19
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2151.78 -193.26
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2290.53 -53.28
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2065.20 -53.16
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2219.74 -54.82
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2170.78 -61.44
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2149.89 -38.08
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2079.85 -123.26
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2044.48 -138.87
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2138.87 -189.38
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2289.70 -62.82
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2190.01 -65.71
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2146.11 -77.78
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2149.21 -38.98
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2165.15 -7.63
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2082.34 -155.84
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2098.23 -152.10
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2120.47 -145.01
-endline
-line u:splay -visibility off
-  2065.20 -157.56
-  2141.02 -81.14
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2410.22 -75.49
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2301.72 -83.01
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2277.46 -30.25
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2205.04 18.96
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2190.38 -63.21
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2187.21 -116.98
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2189.37 -110.81
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2188.62 -139.27
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2177.07 -193.42
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2300.32 -415.73
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2280.34 -409.27
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2269.56 -398.98
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2227.25 -212.79
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2404.71 -73.41
-endline
-line u:splay -visibility off
-  2189.04 -126.60
-  2245.31 -112.67
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  248.28 -243.32
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  190.84 -277.53
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  193.87 -287.20
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  230.42 -130.22
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  232.83 -111.27
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  297.22 -47.37
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  274.31 -94.56
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  254.62 -134.05
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  298.89 -59.27
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  370.22 4.88
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  412.37 115.79
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  390.69 171.64
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  265.47 23.52
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  248.28 16.20
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  280.93 -50.28
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  341.63 53.12
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  350.53 112.08
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  390.94 162.98
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  351.06 99.24
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  250.84 57.42
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  287.88 104.76
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  248.28 -35.14
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  248.28 19.32
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  248.28 -276.19
-endline
-line u:splay -visibility off
-  248.28 -55.60
-  248.28 -255.51
-endline
-line u:splay -visibility off
-  375.41 56.78
-  375.41 74.48
-endline
-line u:splay -visibility off
-  375.41 56.78
-  375.41 135.61
-endline
-line u:splay -visibility off
-  375.41 56.78
-  375.41 168.27
-endline
-line u:splay -visibility off
-  375.41 56.78
-  375.41 108.48
-endline
-line u:splay -visibility off
-  375.41 56.78
-  375.41 88.77
-endline
-line u:splay -visibility off
-  375.41 56.78
-  375.41 67.00
-endline
-line u:splay -visibility off
-  375.41 56.78
-  375.41 63.86
-endline
-line u:splay -visibility off
-  375.41 56.78
-  375.41 60.83
-endline
-line u:splay -visibility off
-  375.41 56.78
-  375.41 60.63
-endline
-line u:splay -visibility off
-  375.41 56.78
-  305.40 54.08
-endline
-line u:splay -visibility off
-  375.41 56.78
-  308.26 74.62
-endline
-line u:splay -visibility off
-  375.41 56.78
-  321.48 133.65
-endline
-line u:splay -visibility off
-  375.41 56.78
-  305.43 17.51
-endline
-line u:splay -visibility off
-  375.41 56.78
-  203.03 66.19
-endline
-line u:splay -visibility off
-  375.41 56.78
-  108.58 78.23
-endline
-line u:splay -visibility off
-  375.41 56.78
-  -15.35 95.67
-endline
-line u:splay -visibility off
-  375.41 56.78
-  262.30 173.35
-endline
-line u:splay -visibility off
-  375.41 56.78
-  186.95 196.22
-endline
-line u:splay -visibility off
-  375.41 56.78
-  38.13 172.40
-endline
-line u:splay -visibility off
-  375.41 56.78
-  29.82 105.11
-endline
-line u:splay -visibility off
-  234.55 51.86
-  440.81 50.98
-endline
-line u:splay -visibility off
-  234.55 51.86
-  560.71 72.84
-endline
-line u:splay -visibility off
-  234.55 51.86
-  651.37 100.77
-endline
-line u:splay -visibility off
-  234.55 51.86
-  1096.53 79.26
-endline
-line u:splay -visibility off
-  234.55 51.86
-  571.11 106.36
-endline
-line u:splay -visibility off
-  234.55 51.86
-  283.33 189.16
-endline
-line u:splay -visibility off
-  234.55 51.86
-  236.61 97.35
-endline
-line u:splay -visibility off
-  234.55 51.86
-  260.77 110.50
-endline
-line u:splay -visibility off
-  234.55 51.86
-  246.34 156.73
-endline
-line u:splay -visibility off
-  234.55 51.86
-  234.55 109.65
-endline
-line u:splay -visibility off
-  234.55 51.86
-  244.19 172.69
-endline
-line u:splay -visibility off
-  234.55 51.86
-  155.20 48.94
-endline
-line u:splay -visibility off
-  234.55 51.86
-  82.70 53.60
-endline
-line u:splay -visibility off
-  234.55 51.86
-  -61.57 54.59
-endline
-line u:splay -visibility off
-  234.55 51.86
-  -54.46 -143.62
-endline
-line u:splay -visibility off
-  234.55 51.86
-  -53.54 -114.04
-endline
-line u:splay -visibility off
-  234.55 51.86
-  -91.27 -56.29
-endline
-line u:splay -visibility off
-  234.55 51.86
-  -145.11 12.62
-endline
-line u:splay -visibility off
-  234.55 51.86
-  -198.91 70.62
-endline
-line u:splay -visibility off
-  234.55 51.86
-  -1.81 154.34
-endline
-line u:splay -visibility off
-  234.55 51.86
-  135.46 182.43
+line survey 
+  488.291 80.5492
+  475.851 81.9592
 endline
 
-point 196.85 -236.22 station -name "0"
-point -29.88 -307.87 station -name "1"
-point -182.02 -337.26 station -name "3"
-point -380.92 -312.40 station -name "5"
-point -539.46 -423.94 station -name "7"
-point -539.46 -432.93 station -name "9"
-point -576.20 -439.51 station -name "11"
-point -763.06 -666.79 station -name "13"
-point 708.86 -337.11 station -name "15"
-point 818.19 -260.87 station -name "17"
-point 1033.64 -265.71 station -name "19"
-point 1140.79 -265.53 station -name "21"
-point 1186.57 -303.89 station -name "23"
-point 1306.90 -274.53 station -name "25"
-point 1386.40 -231.36 station -name "27"
-point 1464.79 -225.16 station -name "29"
-point 1633.81 -165.78 station -name "31"
-point 1615.81 -165.16 station -name "33"
-point 1946.57 -184.84 station -name "35"
-point 2065.20 -157.56 station -name "37"
-point 2189.04 -126.60 station -name "39"
-point 248.28 -55.60 station -name "41"
-point 375.41 56.78 station -name "43"
-point 234.55 51.86 station -name "45"
+line survey 
+  488.291 80.5492
+  472.431 93.5392
+endline
 
+line survey 
+  488.291 80.5492
+  494.921 73.6992
+endline
 
+line survey 
+  488.291 80.5492
+  494.911 69.8392
+endline
+
+line survey 
+  488.291 80.5492
+  491.791 80.6192
+endline
+
+line survey 
+  488.291 80.5492
+  500.401 80.0692
+endline
+
+line survey 
+  488.291 80.5492
+  515.971 78.1792
+endline
+
+line survey 
+  488.291 80.5492
+  528.921 73.9292
+endline
+
+line survey 
+  488.291 80.5492
+  534.601 74.6392
+endline
+
+line survey 
+  488.291 80.5492
+  507.461 71.4092
+endline
+
+line survey 
+  488.291 80.5492
+  518.751 74.7192
+endline
+
+line survey 
+  518.751 74.7192
+  516.071 75.0292
+endline
+
+line survey 
+  518.751 74.7192
+  508.081 82.3592
+endline
+
+line survey 
+  518.751 74.7192
+  517.331 76.9992
+endline
+
+line survey 
+  518.751 74.7192
+  520.791 46.9992
+endline
+
+line survey 
+  518.751 74.7192
+  528.941 46.0592
+endline
+
+line survey 
+  518.751 74.7192
+  534.241 47.4692
+endline
+
+line survey 
+  518.751 74.7192
+  531.221 55.8192
+endline
+
+line survey 
+  518.751 74.7192
+  535.431 57.7892
+endline
+
+line survey 
+  518.751 74.7192
+  521.361 74.0092
+endline
+
+line survey 
+  518.751 74.7192
+  488.391 78.0992
+endline
+
+line survey 
+  518.751 74.7192
+  558.521 79.6792
+endline
+
+line survey 
+  558.521 79.6792
+  556.321 106.7692
+endline
+
+line survey 
+  558.521 79.6792
+  560.691 94.0892
+endline
+
+line survey 
+  558.521 79.6792
+  515.331 164.9492
+endline
+
+line survey 
+  558.521 79.6792
+  522.401 157.4692
+endline
+
+line survey 
+  558.521 79.6792
+  549.841 105.5792
+endline
+
+line survey 
+  558.521 79.6792
+  562.911 105.2692
+endline
+
+line survey 
+  558.521 79.6792
+  569.741 106.3692
+endline
+
+line survey 
+  558.521 79.6792
+  520.151 47.0792
+endline
+
+line survey 
+  558.521 79.6792
+  518.011 61.8792
+endline
+
+line survey 
+  558.521 79.6792
+  519.611 73.4592
+endline
+
+line survey 
+  558.521 79.6792
+  546.471 77.8692
+endline
+
+line survey 
+  558.521 79.6792
+  554.691 79.3592
+endline
+
+line survey 
+  558.521 79.6792
+  559.901 81.0192
+endline
+
+line survey 
+  558.521 79.6792
+  557.101 85.3492
+endline
+
+line survey 
+  558.521 79.6792
+  557.091 91.8092
+endline
+
+line survey 
+  558.521 79.6792
+  596.811 97.6292
+endline
+
+line survey 
+  558.521 79.6792
+  597.121 98.8092
+endline
+
+line survey 
+  558.521 79.6792
+  579.691 83.5392
+endline
+
+line survey 
+  558.521 79.6792
+  576.251 46.2892
+endline
+
+line survey 
+  558.521 79.6792
+  586.101 51.0192
+endline
+
+line survey 
+  558.521 79.6792
+  593.461 48.0992
+endline
+
+line survey 
+  558.521 79.6792
+  587.811 61.6492
+endline
+
+line survey 
+  558.521 79.6792
+  598.421 58.8092
+endline
+
+line survey 
+  558.521 79.6792
+  577.661 67.6292
+endline
+
+line survey 
+  558.521 79.6792
+  583.821 68.0292
+endline
+
+line survey 
+  558.521 79.6792
+  590.221 57.3992
+endline
+
+line survey 
+  590.221 57.3992
+  586.911 79.1292
+endline
+
+line survey 
+  590.221 57.3992
+  592.771 82.4392
+endline
+
+line survey 
+  590.221 57.3992
+  585.201 88.7292
+endline
+
+line survey 
+  590.221 57.3992
+  611.451 104.3992
+endline
+
+line survey 
+  590.221 57.3992
+  621.301 92.2792
+endline
+
+line survey 
+  590.221 57.3992
+  604.181 49.3592
+endline
+
+line survey 
+  590.221 57.3992
+  612.381 49.5192
+endline
+
+line survey 
+  590.221 57.3992
+  624.611 49.8392
+endline
+
+line survey 
+  590.221 57.3992
+  626.941 54.4792
+endline
+
+line survey 
+  590.221 57.3992
+  598.601 56.8392
+endline
+
+line survey 
+  590.221 57.3992
+  592.001 57.1592
+endline
+
+line survey 
+  590.221 57.3992
+  588.181 56.7692
+endline
+
+line survey 
+  590.221 57.3992
+  583.411 56.6892
+endline
+
+line survey 
+  590.221 57.3992
+  576.411 55.4292
+endline
+
+line survey 
+  590.221 57.3992
+  590.221 55.5792
+endline
+
+line survey 
+  590.221 55.5792
+  589.671 63.4592
+endline
+
+line survey 
+  590.221 55.5792
+  587.491 60.7792
+endline
+
+line survey 
+  590.221 55.5792
+  593.541 57.4692
+endline
+
+line survey 
+  590.221 55.5792
+  595.111 54.3192
+endline
+
+line survey 
+  590.221 55.5792
+  596.881 56.6892
+endline
+
+line survey 
+  590.221 55.5792
+  593.191 59.9892
+endline
+
+line survey 
+  590.221 55.5792
+  623.471 56.2892
+endline
+
+line survey 
+  590.221 55.5792
+  610.421 53.2192
+endline
+
+line survey 
+  590.221 55.5792
+  597.581 54.3192
+endline
+
+line survey 
+  597.581 54.3192
+  611.041 42.5092
+endline
+
+line survey 
+  597.581 54.3192
+  605.661 40.2292
+endline
+
+line survey 
+  597.581 54.3192
+  656.281 21.1792
+endline
+
+line survey 
+  597.581 54.3192
+  652.431 4.0092
+endline
+
+line survey 
+  597.581 54.3192
+  624.921 0.1492
+endline
+
+line survey 
+  597.581 54.3192
+  606.291 38.6592
+endline
+
+line survey 
+  597.581 54.3192
+  597.081 51.8792
+endline
+
+line survey 
+  597.581 54.3192
+  598.171 58.3392
+endline
+
+line survey 
+  597.581 54.3192
+  634.921 8.8092
+endline
+
+line survey 
+  442.931 94.8792
+  340.551 74.7992
+endline
+
+line survey 
+  340.551 74.7992
+  340.601 85.8192
+endline
+
+line survey 
+  340.551 74.7992
+  348.481 107.7092
+endline
+
+line survey 
+  340.551 74.7992
+  359.581 122.9092
+endline
+
+line survey 
+  340.551 74.7992
+  360.941 127.4692
+endline
+
+line survey 
+  340.551 74.7992
+  364.451 139.2092
+endline
+
+line survey 
+  340.551 74.7992
+  363.801 143.0692
+endline
+
+line survey 
+  340.551 74.7992
+  366.371 131.0992
+endline
+
+line survey 
+  340.551 74.7992
+  362.591 118.4992
+endline
+
+line survey 
+  340.551 74.7992
+  356.211 85.2692
+endline
+
+line survey 
+  340.551 74.7992
+  356.541 98.0292
+endline
+
+line survey 
+  340.551 74.7992
+  357.881 82.0392
+endline
+
+line survey 
+  340.551 74.7992
+  364.431 77.4692
+endline
+
+line survey 
+  340.551 74.7992
+  365.791 77.8692
+endline
+
+line survey 
+  340.551 74.7992
+  368.111 79.2892
+endline
+
+line survey 
+  340.551 74.7992
+  362.251 90.0692
+endline
+
+line survey 
+  340.551 74.7992
+  349.721 76.5292
+endline
+
+line survey 
+  340.551 74.7992
+  343.811 75.6592
+endline
+
+line survey 
+  340.551 74.7992
+  340.901 74.7192
+endline
+
+line survey 
+  340.551 74.7992
+  336.261 74.9492
+endline
+
+line survey 
+  340.551 74.7992
+  337.081 93.6992
+endline
+
+line survey 
+  340.551 74.7992
+  340.411 64.8792
+endline
+
+line survey 
+  340.551 74.7992
+  340.131 65.1092
+endline
+
+line survey 
+  340.551 74.7992
+  346.371 67.4692
+endline
+
+line survey 
+  340.551 74.7992
+  326.231 73.9292
+endline
+
+line survey 
+  340.551 74.7992
+  326.221 82.0392
+endline
+
+line survey 
+  340.551 74.7992
+  327.851 86.5292
+endline
+
+line survey 
+  340.551 74.7992
+  318.661 90.0692
+endline
+
+line survey 
+  318.661 90.0692
+  319.041 96.6892
+endline
+
+line survey 
+  318.661 90.0692
+  344.561 95.5092
+endline
+
+line survey 
+  318.661 90.0692
+  319.501 89.9192
+endline
+
+line survey 
+  318.661 90.0692
+  312.481 90.3092
+endline
+
+line survey 
+  318.661 90.0692
+  336.171 64.3992
+endline
+
+line survey 
+  318.661 90.0692
+  347.431 78.6592
+endline
+
+line survey 
+  318.661 90.0692
+  318.801 88.4192
+endline
+
+line survey 
+  318.661 90.0692
+  322.891 87.6292
+endline
+
+line survey 
+  318.661 90.0692
+  308.801 90.1492
+endline
+
+line survey 
+  318.661 90.0692
+  292.421 89.5992
+endline
+
+line survey 
+  318.661 90.0692
+  258.761 89.2092
+endline
+
+line survey 
+  318.661 90.0692
+  280.161 89.5192
+endline
+
+line survey 
+  318.661 90.0692
+  307.821 91.0192
+endline
+
+line survey 
+  318.661 90.0692
+  294.961 102.6692
+endline
+
+line survey 
+  318.661 90.0692
+  301.541 113.0692
+endline
+
+line survey 
+  318.661 90.0692
+  268.121 97.8692
+endline
+
+line survey 
+  318.661 90.0692
+  316.311 75.1892
+endline
+
+line survey 
+  318.661 90.0692
+  308.811 78.3392
+endline
+
+line survey 
+  318.661 90.0692
+  295.901 77.7092
+endline
+
+line survey 
+  318.661 90.0692
+  291.781 76.9192
+endline
+
+line survey 
+  318.661 90.0692
+  275.601 89.1292
+endline
+
+line survey 
+  275.601 89.1292
+  262.921 89.6792
+endline
+
+line survey 
+  275.601 89.1292
+  256.651 89.2892
+endline
+
+line survey 
+  275.601 89.1292
+  258.221 89.2892
+endline
+
+line survey 
+  275.601 89.1292
+  252.411 88.9692
+endline
+
+line survey 
+  275.601 89.1292
+  245.121 78.7292
+endline
+
+line survey 
+  275.601 89.1292
+  237.271 69.3592
+endline
+
+line survey 
+  275.601 89.1292
+  248.651 72.5092
+endline
+
+line survey 
+  275.601 89.1292
+  262.711 87.8692
+endline
+
+line survey 
+  275.601 89.1292
+  271.741 89.1292
+endline
+
+line survey 
+  275.601 89.1292
+  290.641 90.3892
+endline
+
+line survey 
+  275.601 89.1292
+  280.471 89.9192
+endline
+
+line survey 
+  275.601 89.1292
+  281.781 150.3892
+endline
+
+line survey 
+  275.601 89.1292
+  276.141 115.2692
+endline
+
+line survey 
+  275.601 89.1292
+  291.551 106.9992
+endline
+
+line survey 
+  275.601 89.1292
+  362.931 92.0392
+endline
+
+line survey 
+  275.601 89.1292
+  363.871 97.6292
+endline
+
+line survey 
+  275.601 89.1292
+  315.841 90.2292
+endline
+
+line survey 
+  275.601 89.1292
+  312.771 101.7292
+endline
+
+line survey 
+  275.601 89.1292
+  254.181 89.1292
+endline
+
+line survey 
+  254.181 89.1292
+  251.231 164.9492
+endline
+
+line survey 
+  254.181 89.1292
+  260.651 184.7992
+endline
+
+line survey 
+  254.181 89.1292
+  265.661 186.2092
+endline
+
+line survey 
+  254.181 89.1292
+  268.161 187.8692
+endline
+
+line survey 
+  254.181 89.1292
+  251.071 174.9492
+endline
+
+line survey 
+  254.181 89.1292
+  250.911 138.1792
+endline
+
+line survey 
+  254.181 89.1292
+  246.431 144.0092
+endline
+
+line survey 
+  254.181 89.1292
+  247.261 165.2692
+endline
+
+line survey 
+  254.181 89.1292
+  264.201 186.2092
+endline
+
+line survey 
+  254.181 89.1292
+  270.061 187.8692
+endline
+
+line survey 
+  254.181 89.1292
+  255.571 116.3692
+endline
+
+line survey 
+  254.181 89.1292
+  259.331 113.6192
+endline
+
+line survey 
+  254.181 89.1292
+  257.361 108.7292
+endline
+
+line survey 
+  254.181 89.1292
+  255.341 97.1592
+endline
+
+line survey 
+  254.181 89.1292
+  246.101 91.8092
+endline
+
+line survey 
+  254.181 89.1292
+  251.941 91.6492
+endline
+
+line survey 
+  254.181 89.1292
+  251.011 99.3592
+endline
+
+line survey 
+  254.181 89.1292
+  248.401 118.0992
+endline
+
+line survey 
+  254.181 89.1292
+  280.591 91.9592
+endline
+
+line survey 
+  254.181 89.1292
+  284.291 91.2492
+endline
+
+line survey 
+  254.181 89.1292
+  279.181 90.3092
+endline
+
+line survey 
+  254.181 89.1292
+  275.201 91.7292
+endline
+
+line survey 
+  254.181 89.1292
+  271.901 91.1792
+endline
+
+line survey 
+  254.181 89.1292
+  268.421 98.5792
+endline
+
+line survey 
+  275.601 89.1292
+  245.041 81.4892
+endline
+
+line survey 
+  245.041 81.4892
+  244.171 81.0992
+endline
+
+line survey 
+  245.041 81.4892
+  243.901 85.6592
+endline
+
+line survey 
+  245.041 81.4892
+  242.541 95.2692
+endline
+
+line survey 
+  245.041 81.4892
+  243.041 97.3192
+endline
+
+line survey 
+  245.041 81.4892
+  237.961 97.1592
+endline
+
+line survey 
+  245.041 81.4892
+  215.471 104.8792
+endline
+
+line survey 
+  245.041 81.4892
+  218.621 96.0592
+endline
+
+line survey 
+  245.041 81.4892
+  218.851 89.0492
+endline
+
+line survey 
+  245.041 81.4892
+  238.051 82.2792
+endline
+
+line survey 
+  245.041 81.4892
+  246.121 69.5192
+endline
+
+line survey 
+  245.041 81.4892
+  245.441 74.9492
+endline
+
+line survey 
+  245.041 81.4892
+  245.521 79.9892
+endline
+
+line survey 
+  245.041 81.4892
+  245.351 83.2192
+endline
+
+line survey 
+  245.041 81.4892
+  245.231 86.6892
+endline
+
+line survey 
+  245.041 81.4892
+  263.961 80.5492
+endline
+
+line survey 
+  245.041 81.4892
+  250.881 82.8292
+endline
+
+line survey 
+  245.041 81.4892
+  245.971 83.2192
+endline
+
+line survey 
+  245.041 81.4892
+  248.991 96.7692
+endline
+
+line survey 
+  245.041 81.4892
+  254.321 98.5792
+endline
+
+line survey 
+  245.041 81.4892
+  264.991 99.0492
+endline
+
+line survey 
+  245.041 81.4892
+  276.351 100.6192
+endline
+
+line survey 
+  245.041 81.4892
+  278.191 92.5892
+endline
+
+line survey 
+  245.041 81.4892
+  271.181 84.7192
+endline
+
+line survey 
+  245.041 81.4892
+  259.641 77.0792
+endline
+
+line survey 
+  245.041 81.4892
+  254.441 75.3492
+endline
+
+line survey 
+  245.041 81.4892
+  220.941 87.3192
+endline
+
+line survey 
+  220.941 87.3192
+  206.771 86.8392
+endline
+
+line survey 
+  220.941 87.3192
+  210.901 86.6092
+endline
+
+line survey 
+  220.941 87.3192
+  218.691 87.6292
+endline
+
+line survey 
+  220.941 87.3192
+  217.061 107.3192
+endline
+
+line survey 
+  220.941 87.3192
+  221.041 103.6992
+endline
+
+line survey 
+  220.941 87.3192
+  213.471 79.9192
+endline
+
+line survey 
+  220.941 87.3192
+  218.031 106.4492
+endline
+
+line survey 
+  220.941 87.3192
+  227.901 86.8392
+endline
+
+line survey 
+  220.941 87.3192
+  229.461 87.3192
+endline
+
+line survey 
+  220.941 87.3192
+  222.871 87.6292
+endline
+
+line survey 
+  220.941 87.3192
+  227.031 76.3692
+endline
+
+line survey 
+  220.941 87.3192
+  228.251 68.7292
+endline
+
+line survey 
+  220.941 87.3192
+  233.131 86.4492
+endline
+
+line survey 
+  220.941 87.3192
+  227.961 100.6192
+endline
+
+line survey 
+  220.941 87.3192
+  205.021 95.9792
+endline
+
+line survey 
+  205.021 95.9792
+  223.201 85.8192
+endline
+
+line survey 
+  205.021 95.9792
+  230.151 69.9892
+endline
+
+line survey 
+  205.021 95.9792
+  227.601 69.1292
+endline
+
+line survey 
+  205.021 95.9792
+  207.281 113.6192
+endline
+
+line survey 
+  205.021 95.9792
+  212.901 128.7292
+endline
+
+line survey 
+  205.021 95.9792
+  209.311 131.7292
+endline
+
+line survey 
+  205.021 95.9792
+  202.221 121.1792
+endline
+
+line survey 
+  205.021 95.9792
+  200.901 108.6592
+endline
+
+line survey 
+  205.021 95.9792
+  200.681 96.2092
+endline
+
+line survey 
+  205.021 95.9792
+  198.451 95.8192
+endline
+
+line survey 
+  205.021 95.9792
+  193.001 95.7392
+endline
+
+line survey 
+  205.021 95.9792
+  186.201 79.9192
+endline
+
+line survey 
+  205.021 95.9792
+  204.371 70.4692
+endline
+
+line survey 
+  205.021 95.9792
+  204.851 71.3292
+endline
+
+line survey 
+  205.021 95.9792
+  199.321 71.6492
+endline
+
+line survey 
+  205.021 95.9792
+  192.901 73.5392
+endline
+
+line survey 
+  205.021 95.9792
+  192.091 73.8492
+endline
+
+line survey 
+  205.021 95.9792
+  149.231 125.1092
+endline
+
+line survey 
+  205.021 95.9792
+  189.321 97.2392
+endline
+
+line survey 
+  189.321 97.2392
+  177.131 97.3192
+endline
+
+line survey 
+  189.321 97.2392
+  166.371 106.0592
+endline
+
+line survey 
+  189.321 97.2392
+  177.831 107.4692
+endline
+
+line survey 
+  189.321 97.2392
+  181.701 98.6592
+endline
+
+line survey 
+  189.321 97.2392
+  168.711 99.2892
+endline
+
+line survey 
+  189.321 97.2392
+  170.491 99.2092
+endline
+
+line survey 
+  189.321 97.2392
+  183.451 98.0992
+endline
+
+line survey 
+  189.321 97.2392
+  177.151 97.8692
+endline
+
+line survey 
+  189.321 97.2392
+  178.391 95.4292
+endline
+
+line survey 
+  189.321 97.2392
+  181.401 92.8292
+endline
+
+line survey 
+  189.321 97.2392
+  188.441 80.2292
+endline
+
+line survey 
+  189.321 97.2392
+  182.791 82.3592
+endline
+
+line survey 
+  189.321 97.2392
+  214.861 97.4692
+endline
+
+line survey 
+  189.321 97.2392
+  209.441 98.4992
+endline
+
+line survey 
+  189.321 97.2392
+  197.421 98.4992
+endline
+
+line survey 
+  189.321 97.2392
+  189.401 99.5992
+endline
+
+line survey 
+  189.321 97.2392
+  208.251 102.1192
+endline
+
+line survey 
+  189.321 97.2392
+  210.551 76.7692
+endline
+
+line survey 
+  189.321 97.2392
+  211.921 73.6992
+endline
+
+line survey 
+  189.321 97.2392
+  211.141 82.1192
+endline
+
+line survey 
+  189.321 97.2392
+  197.681 72.0392
+endline
+
+line survey 
+  189.321 97.2392
+  191.651 80.2292
+endline
+
+line survey 
+  189.321 97.2392
+  185.081 81.9592
+endline
+
+line survey 
+  189.321 97.2392
+  183.121 84.4792
+endline
+
+line survey 
+  189.321 97.2392
+  183.561 82.8292
+endline
+
+line survey 
+  189.321 97.2392
+  177.491 85.1892
+endline
+
+line survey 
+  189.321 97.2392
+  178.961 92.2792
+endline
+
+line survey 
+  189.321 97.2392
+  184.151 92.9892
+endline
+
+line survey 
+  189.321 97.2392
+  184.261 96.9992
+endline
+
+line survey 
+  189.321 97.2392
+  179.041 96.8392
+endline
+
+line survey 
+  189.321 97.2392
+  176.591 101.1792
+endline
+
+line survey 
+  189.321 97.2392
+  178.761 106.3692
+endline
+
+line survey 
+  189.321 97.2392
+  155.531 109.1292
+endline
+
+line survey 
+  189.321 97.2392
+  159.111 109.2892
+endline
+
+line survey 
+  159.111 109.2892
+  158.321 125.5092
+endline
+
+line survey 
+  159.111 109.2892
+  150.721 126.2092
+endline
+
+line survey 
+  159.111 109.2892
+  140.141 132.1192
+endline
+
+line survey 
+  159.111 109.2892
+  147.431 117.4692
+endline
+
+line survey 
+  159.111 109.2892
+  159.701 125.1092
+endline
+
+line survey 
+  159.111 109.2892
+  163.941 123.6192
+endline
+
+line survey 
+  159.111 109.2892
+  168.481 118.4192
+endline
+
+line survey 
+  159.111 109.2892
+  169.201 110.8592
+endline
+
+line survey 
+  159.111 109.2892
+  171.981 106.2092
+endline
+
+line survey 
+  159.111 109.2892
+  176.621 98.5792
+endline
+
+line survey 
+  159.111 109.2892
+  176.091 101.5692
+endline
+
+line survey 
+  159.111 109.2892
+  163.571 108.5792
+endline
+
+line survey 
+  159.111 109.2892
+  159.641 108.9692
+endline
+
+line survey 
+  159.111 109.2892
+  157.971 109.7592
+endline
+
+line survey 
+  159.111 109.2892
+  158.991 96.5292
+endline
+
+line survey 
+  159.111 109.2892
+  158.621 105.1892
+endline
+
+line survey 
+  159.111 109.2892
+  157.921 108.0292
+endline
+
+line survey 
+  159.111 109.2892
+  150.441 96.6892
+endline
+
+line survey 
+  159.111 109.2892
+  139.901 96.6092
+endline
+
+line survey 
+  159.111 109.2892
+  135.401 101.3292
+endline
+
+line survey 
+  159.111 109.2892
+  133.851 106.5292
+endline
+
+line survey 
+  159.111 109.2892
+  136.871 107.7892
+endline
+
+line survey 
+  159.111 109.2892
+  143.131 108.0992
+endline
+
+line survey 
+  159.111 109.2892
+  150.751 108.6592
+endline
+
+line survey 
+  159.111 109.2892
+  92.931 105.3492
+endline
+
+line survey 
+  92.931 105.3492
+  96.311 105.1892
+endline
+
+line survey 
+  92.931 105.3492
+  93.951 105.0292
+endline
+
+line survey 
+  92.931 105.3492
+  92.431 105.3492
+endline
+
+line survey 
+  92.931 105.3492
+  90.241 104.9492
+endline
+
+line survey 
+  92.931 105.3492
+  88.661 105.0292
+endline
+
+line survey 
+  92.931 105.3492
+  90.561 105.7392
+endline
+
+line survey 
+  92.931 105.3492
+  90.691 110.1492
+endline
+
+line survey 
+  92.931 105.3492
+  89.341 118.0292
+endline
+
+line survey 
+  92.931 105.3492
+  91.261 120.5492
+endline
+
+line survey 
+  92.931 105.3492
+  91.631 117.6292
+endline
+
+line survey 
+  92.931 105.3492
+  93.381 108.6592
+endline
+
+line survey 
+  92.931 105.3492
+  93.111 111.7292
+endline
+
+line survey 
+  92.931 105.3492
+  92.021 114.7992
+endline
+
+line survey 
+  92.931 105.3492
+  89.431 104.5592
+endline
+
+line survey 
+  92.931 105.3492
+  89.611 99.2092
+endline
+
+line survey 
+  92.931 105.3492
+  83.201 99.8392
+endline
+
+line survey 
+  92.931 105.3492
+  69.121 100.9392
+endline
+
+line survey 
+  92.931 105.3492
+  86.231 105.1892
+endline
+
+line survey 
+  92.931 105.3492
+  80.321 108.6592
+endline
+
+line survey 
+  92.931 105.3492
+  69.861 105.6592
+endline
+
+line survey 
+  92.931 105.3492
+  71.991 109.7592
+endline
+
+line survey 
+  92.931 105.3492
+  73.061 112.5892
+endline
+
+line survey 
+  92.931 105.3492
+  85.501 104.6392
+endline
+
+line survey 
+  92.931 105.3492
+  81.851 104.6392
+endline
+
+line survey 
+  92.931 105.3492
+  71.981 104.9492
+endline
+
+line survey 
+  92.931 105.3492
+  87.151 104.8792
+endline
+
+line survey 
+  92.931 105.3492
+  85.181 104.8792
+endline
+
+line survey 
+  92.931 105.3492
+  75.771 106.2092
+endline
+
+line survey 
+  92.931 105.3492
+  72.941 106.2092
+endline
+
+line survey 
+  92.931 105.3492
+  85.691 111.8792
+endline
+
+line survey 
+  92.931 105.3492
+  69.101 100.7792
+endline
+
+line survey 
+  92.931 105.3492
+  79.201 101.3292
+endline
+
+line survey 
+  92.931 105.3492
+  69.211 110.7792
+endline
+
+line survey 
+  69.211 110.7792
+  77.861 106.6892
+endline
+
+line survey 
+  69.211 110.7792
+  77.031 106.8392
+endline
+
+line survey 
+  69.211 110.7792
+  75.551 108.3392
+endline
+
+line survey 
+  69.211 110.7792
+  77.091 105.9792
+endline
+
+line survey 
+  69.211 110.7792
+  74.811 101.3292
+endline
+
+line survey 
+  69.211 110.7792
+  72.461 101.4892
+endline
+
+line survey 
+  69.211 110.7792
+  70.941 108.4192
+endline
+
+line survey 
+  69.211 110.7792
+  68.461 110.1492
+endline
+
+line survey 
+  69.211 110.7792
+  68.531 115.8992
+endline
+
+line survey 
+  69.211 110.7792
+  68.191 110.9392
+endline
+
+line survey 
+  69.211 110.7792
+  66.601 110.7792
+endline
+
+line survey 
+  69.211 110.7792
+  64.861 110.2292
+endline
+
+line survey 
+  69.211 110.7792
+  59.171 109.9192
+endline
+
+line survey 
+  69.211 110.7792
+  52.541 109.9892
+endline
+
+line survey 
+  69.211 110.7792
+  49.011 110.2292
+endline
+
+line survey 
+  69.211 110.7792
+  63.761 101.0192
+endline
+
+line survey 
+  69.211 110.7792
+  59.931 102.5892
+endline
+
+line survey 
+  69.211 110.7792
+  51.891 103.6192
+endline
+
+line survey 
+  69.211 110.7792
+  24.111 131.5692
+endline
+
+line survey 
+  69.211 110.7792
+  25.611 131.6492
+endline
+
+line survey 
+  69.211 110.7792
+  38.301 131.3292
+endline
+
+line survey 
+  69.211 110.7792
+  48.131 129.9892
+endline
+
+line survey 
+  69.211 110.7792
+  52.241 134.6392
+endline
+
+line survey 
+  69.211 110.7792
+  66.271 117.6292
+endline
+
+line survey 
+  69.211 110.7792
+  66.031 114.4792
+endline
+
+line survey 
+  69.211 110.7792
+  54.501 104.3992
+endline
+
+line survey 
+  69.211 110.7792
+  24.321 129.6792
+endline
+
+line survey 
+  69.211 110.7792
+  44.281 129.1292
+endline
+
+line survey 
+  69.211 110.7792
+  53.031 126.6892
+endline
+
+line survey 
+  69.211 110.7792
+  52.431 134.4792
+endline
+
+line survey 
+  69.211 110.7792
+  49.181 140.7792
+endline
+
+line survey 
+  69.211 110.7792
+  65.801 111.0992
+endline
+
+line survey 
+  69.211 110.7792
+  62.561 111.8092
+endline
+
+line survey 
+  69.211 110.7792
+  58.171 113.2192
+endline
+
+line survey 
+  69.211 110.7792
+  54.031 126.0592
+endline
+
+line survey 
+  69.211 110.7792
+  44.461 116.9192
+endline
+
+line survey 
+  44.461 116.9192
+  0.241 127.1592
+endline
+
+line survey 
+  44.461 116.9192
+  21.921 125.5792
+endline
+
+line survey 
+  44.461 116.9192
+  26.781 136.1392
+endline
+
+line survey 
+  44.461 116.9192
+  41.261 146.0592
+endline
+
+line survey 
+  44.461 116.9192
+  44.191 129.5992
+endline
+
+line survey 
+  44.461 116.9192
+  44.781 118.8092
+endline
+
+line survey 
+  44.461 116.9192
+  44.401 120.0692
+endline
+
+line survey 
+  44.461 116.9192
+  44.491 114.3992
+endline
+
+line survey 
+  44.461 116.9192
+  46.831 103.6192
+endline
+
+line survey 
+  44.461 116.9192
+  22.181 59.1292
+endline
+
+line survey 
+  44.461 116.9192
+  26.181 60.3892
+endline
+
+line survey 
+  44.461 116.9192
+  28.311 62.4392
+endline
+
+line survey 
+  44.461 116.9192
+  36.811 99.6792
+endline
+
+line survey 
+  44.461 116.9192
+  1.291 127.5492
+endline
+
+line survey 
+  44.461 116.9192
+  33.211 119.6792
+endline
+
+line survey 
+  442.931 94.8792
+  453.221 131.0192
+endline
+
+line survey 
+  453.221 131.0192
+  445.781 93.4592
+endline
+
+line survey 
+  453.221 131.0192
+  441.861 86.6092
+endline
+
+line survey 
+  453.221 131.0192
+  442.541 84.6392
+endline
+
+line survey 
+  453.221 131.0192
+  449.661 116.0592
+endline
+
+line survey 
+  453.221 131.0192
+  450.171 119.8392
+endline
+
+line survey 
+  453.221 131.0192
+  462.991 132.6692
+endline
+
+line survey 
+  453.221 131.0192
+  458.441 123.1392
+endline
+
+line survey 
+  453.221 131.0192
+  454.531 115.3492
+endline
+
+line survey 
+  453.221 131.0192
+  463.331 130.2292
+endline
+
+line survey 
+  453.221 131.0192
+  477.561 143.0692
+endline
+
+line survey 
+  453.221 131.0192
+  486.041 165.2692
+endline
+
+line survey 
+  453.221 131.0192
+  481.651 176.4492
+endline
+
+line survey 
+  453.221 131.0192
+  456.651 146.8392
+endline
+
+line survey 
+  453.221 131.0192
+  451.851 145.3492
+endline
+
+line survey 
+  453.221 131.0192
+  459.671 132.0392
+endline
+
+line survey 
+  453.221 131.0192
+  471.801 152.7492
+endline
+
+line survey 
+  453.221 131.0192
+  473.601 164.5592
+endline
+
+line survey 
+  453.221 131.0192
+  481.691 174.7192
+endline
+
+line survey 
+  453.221 131.0192
+  473.641 162.0392
+endline
+
+line survey 
+  453.221 131.0192
+  453.511 153.6192
+endline
+
+line survey 
+  453.221 131.0192
+  460.871 163.1392
+endline
+
+line survey 
+  453.221 131.0192
+  453.921 135.1092
+endline
+
+line survey 
+  453.221 131.0192
+  450.301 145.9792
+endline
+
+line survey 
+  453.221 131.0192
+  436.611 86.9192
+endline
+
+line survey 
+  453.221 131.0192
+  441.801 91.0192
+endline
+
+line survey 
+  453.221 131.0192
+  478.641 153.4592
+endline
+
+line survey 
+  478.641 153.4592
+  464.911 156.9992
+endline
+
+line survey 
+  478.641 153.4592
+  466.541 169.2092
+endline
+
+line survey 
+  478.641 153.4592
+  477.111 175.7392
+endline
+
+line survey 
+  478.641 153.4592
+  461.401 163.7692
+endline
+
+line survey 
+  478.641 153.4592
+  450.931 159.8392
+endline
+
+line survey 
+  478.641 153.4592
+  442.601 155.5092
+endline
+
+line survey 
+  478.641 153.4592
+  450.411 154.8792
+endline
+
+line survey 
+  478.641 153.4592
+  459.471 154.2492
+endline
+
+line survey 
+  478.641 153.4592
+  463.091 154.2492
+endline
+
+line survey 
+  478.641 153.4592
+  464.681 152.9092
+endline
+
+line survey 
+  478.641 153.4592
+  465.201 156.9992
+endline
+
+line survey 
+  478.641 153.4592
+  467.871 168.8092
+endline
+
+line survey 
+  478.641 153.4592
+  464.651 145.5792
+endline
+
+line survey 
+  478.641 153.4592
+  513.091 155.3492
+endline
+
+line survey 
+  478.641 153.4592
+  532.001 157.7892
+endline
+
+line survey 
+  478.641 153.4592
+  556.831 161.2492
+endline
+
+line survey 
+  478.641 153.4592
+  501.271 176.7692
+endline
+
+line survey 
+  478.641 153.4592
+  516.361 181.4092
+endline
+
+line survey 
+  478.641 153.4592
+  546.121 176.6092
+endline
+
+line survey 
+  478.641 153.4592
+  547.791 163.0692
+endline
+
+line survey 
+  478.641 153.4592
+  506.811 152.4392
+endline
+
+line survey 
+  506.811 152.4392
+  465.521 152.3592
+endline
+
+line survey 
+  506.811 152.4392
+  441.531 156.6892
+endline
+
+line survey 
+  506.811 152.4392
+  423.421 162.2792
+endline
+
+line survey 
+  506.811 152.4392
+  334.111 157.8692
+endline
+
+line survey 
+  506.811 152.4392
+  439.441 163.2992
+endline
+
+line survey 
+  506.811 152.4392
+  497.071 179.9192
+endline
+
+line survey 
+  506.811 152.4392
+  506.431 161.5692
+endline
+
+line survey 
+  506.811 152.4392
+  501.601 164.2492
+endline
+
+line survey 
+  506.811 152.4392
+  504.521 173.3792
+endline
+
+line survey 
+  506.811 152.4392
+  506.551 164.0092
+endline
+
+line survey 
+  506.811 152.4392
+  504.881 176.6092
+endline
+
+line survey 
+  506.811 152.4392
+  522.641 151.8792
+endline
+
+line survey 
+  506.811 152.4392
+  537.121 152.8292
+endline
+
+line survey 
+  506.811 152.4392
+  565.961 152.9892
+endline
+
+line survey 
+  506.811 152.4392
+  564.601 113.2992
+endline
+
+line survey 
+  506.811 152.4392
+  564.411 119.3592
+endline
+
+line survey 
+  506.811 152.4392
+  571.931 130.7792
+endline
+
+line survey 
+  506.811 152.4392
+  582.761 144.6392
+endline
+
+line survey 
+  506.811 152.4392
+  593.481 156.2892
+endline
+
+line survey 
+  506.811 152.4392
+  554.031 172.9892
+endline
+
+line survey 
+  506.811 152.4392
+  526.631 178.5792
+endline
+
+line survey 
+  506.811 152.4392
+  604.811 159.5992
+endline
+
+line survey 
+  604.811 159.5992
+  557.711 152.9092
+endline
+
+line survey 
+  604.811 159.5992
+  572.041 160.9392
+endline
+
+line survey 
+  604.811 159.5992
+  586.421 160.7792
+endline
+
+line survey 
+  604.811 159.5992
+  552.261 159.7592
+endline
+
+line survey 
+  604.811 159.5992
+  442.941 157.0792
+endline
+
+line survey 
+  604.811 159.5992
+  468.211 168.8892
+endline
+
+line survey 
+  604.811 159.5992
+  519.551 179.5192
+endline
+
+line survey 
+  604.811 159.5992
+  587.871 175.1092
+endline
+
+line survey 
+  604.811 159.5992
+  601.251 177.7092
+endline
+
+line survey 
+  604.811 159.5992
+  610.811 177.1592
+endline
+
+line survey 
+  604.811 159.5992
+  604.141 159.9892
+endline
+
+line survey 
+  604.811 159.5992
+  594.861 158.0292
+endline
+
+point 442.931 94.8792 station-name -align tr -scale xs -text 0
+point 488.291 80.5492 station-name -align tr -scale xs -text 1
+point 518.751 74.7192 station-name -align tr -scale xs -text 3
+point 558.521 79.6792 station-name -align tr -scale xs -text 5
+point 590.221 57.3992 station-name -align tr -scale xs -text 7
+point 590.221 55.5792 station-name -align tr -scale xs -text 9
+point 597.581 54.3192 station-name -align tr -scale xs -text 11
+point 634.921 8.8092 station-name -align tr -scale xs -text 13
+point 340.551 74.7992 station-name -align tr -scale xs -text 15
+point 318.661 90.0692 station-name -align tr -scale xs -text 17
+point 275.601 89.1292 station-name -align tr -scale xs -text 19
+point 254.181 89.1292 station-name -align tr -scale xs -text 21
+point 245.041 81.4892 station-name -align tr -scale xs -text 23
+point 220.941 87.3192 station-name -align tr -scale xs -text 25
+point 205.021 95.9792 station-name -align tr -scale xs -text 27
+point 189.321 97.2392 station-name -align tr -scale xs -text 29
+point 155.531 109.1296 station-name -align tr -scale xs -text 31
+point 159.111 109.2896 station-name -align tr -scale xs -text 33
+point 92.931 105.3496 station-name -align tr -scale xs -text 35
+point 69.211 110.7796 station-name -align tr -scale xs -text 37
+point 44.461 116.9196 station-name -align tr -scale xs -text 39
+point 453.221 131.0196 station-name -align tr -scale xs -text 41
+point 478.641 153.4596 station-name -align tr -scale xs -text 43
+point 506.811 152.4396 station-name -align tr -scale xs -text 45
+point 604.811 159.5996 station-name -align tr -scale xs -text 47
+point 594.861 158.0296 station-name -align tr -scale xs -text 49
 endscrap
+
+
+scrap delta_blues-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+point 56.6488 221.1668 label -align r -attr level 1 -scale l -text "Delta Blues"
+line water-flow 
+  324.7152 81.7925
+  362.2937 80.7375
+endline
+
+line water-flow 
+  254.8668 126.7602
+  255.5702 99.4537
+endline
+
+line floor-step 
+  480.6576 148.0504
+  456.33 147.8769
+endline
+
+line floor-step 
+  543.3076 145.9037
+  525.0401 145.7517
+endline
+
+line rock-border -close on
+  469.6976 96.6504
+  460.698 85.7147
+  478.1997 77.7639
+  476.1507 90.947
+  469.6976 96.6504
+endline
+
+line rock-border -close on
+  421.5742 101.4647
+  421.5742 101.4647 408.8505 89.4693 412.6539 88.5826
+  416.4573 87.6959 429.3582 84.6359 429.6943 86.747
+  430.0304 88.858 430.0304 96.8394 430.0304 96.8394
+  421.5742 101.4647
+endline
+
+line rock-border -close on
+  442.4071 91.4011
+  436.6942 86.1423
+  456.6919 86.0319
+  442.4071 91.4011
+endline
+
+line rock-border -close on
+  622.4503 21.8728
+  617.8919 4.6321
+  628.1976 5.5136
+  622.4503 21.8728
+endline
+
+line rock-border -close on
+  606.3981 15.4872
+  601.5013 5.8115
+  613.2551 7.1163
+  606.3981 15.4872
+endline
+
+point 598.205 42.7324 water-flow -orientation 162.66079914345397
+line wall -close on -outline in
+  514.1195 145.7734
+  514.1195 145.7734 527.7228 131.9548 526.7345 129.5665
+  525.7462 127.1783 517.5679 128.6772 514.8694 128.6772
+  512.1708 128.6772 488.9961 134.9499 484.333 133.0113
+  479.6698 131.0727 482.7822 144.8085 486.2774 147.9533
+  489.7725 151.098 511.0245 145.7734 514.1195 145.7734
+endline
+
+line wall 
+  605.0219 155.3683
+  605.0219 155.3683 596.0233 154.4257 590.1415 153.8039
+  584.2597 153.1821 565.6167 151.3867 562.7645 150.3817
+  559.9123 149.3767 549.9282 151.3765 549.3605 145.3184
+  548.7928 139.2603 545.7812 125.1937 546.6069 117.2425
+  547.4326 109.2912 542.4267 108.2909 552.634 108.2909
+  562.8414 108.2909 570.0196 107.486 570.0196 107.486
+  598.9146 98.9256
+  598.9146 98.9256 593.5797 62.6915 599.2784 61.4156
+  604.9771 60.1397 618.7861 60.95 618.7861 60.95
+endline
+
+line wall 
+  41.6383 85.1365
+  41.6383 85.1365 46.3918 112.9236 51.2431 109.4572
+  56.0944 105.9908 57.7291 99.706 61.2664 99.8801
+  64.8038 100.0542 82.7318 96.7181 86.3664 97.5687
+  90.0009 98.4193 157.1629 105.6445 157.1629 105.6445
+  157.1629 105.6445 173.6262 87.9134 176.9529 83.7553
+  180.2797 79.5972 194.4211 70.5034 199.9152 71.354
+  205.4094 72.2046 219.9715 73.5356 228.8627 74.1129
+  237.7538 74.6902 266.9257 78.6011 266.9257 78.6011
+  266.9257 78.6011 273.8063 83.902 277.5455 85.953
+  281.2847 88.0041 304.3541 87.8803 306.513 86.5126
+  308.6719 85.145 327.3978 68.8641 333.3472 67.5881
+  339.2967 66.3122 347.4493 68.2743 347.4493 68.2743
+  347.4493 68.2743 390.7447 81.3201 401.0522 83.698
+  411.3597 86.0759 437.3025 84.4671 440.8055 84.4671
+  444.3084 84.4671 469.573 81.0593 477.5866 77.2554
+  485.6003 73.4515 497.7162 67.727 502.1761 68.5776
+  506.636 69.4282 524.1908 64.9072 526.6348 65.7578
+  529.0788 66.6084 557.878 76.5876 559.3109 74.2067
+  560.7438 71.8258 588.6717 50.3555 589.2329 48.5736
+  589.7941 46.7917 596.3765 2.898 596.3765 2.898
+  598.4449 1.2762
+  617.3586 2.5946
+endline
+
+line wall 
+  1.6603 122.2471
+  40.717 115.7723
+  24.8687 87.3537
+endline
+
+line wall 
+  201.9697 117.2831
+  201.9697 117.2831 201.038 103.221 197.2432 104.1134
+  193.4485 105.0057 185.4901 104.6131 183.3477 105.8848
+  181.2053 107.1566 168.9347 112.9734 168.9347 112.9734
+  168.9347 112.9734 171.0417 123.7659 164.7505 125.6245
+  158.4593 127.4831 148.6358 129.5791 145.2958 127.1409
+  141.9558 124.7026 91.0437 121.078 91.0437 121.078
+  91.0437 121.078 72.7738 114.0677 70.8571 115.2992
+  68.9405 116.5307 54.1819 140.1655 52.1945 142.1847
+  50.2072 144.204 39.3262 148.8152 36.3875 148.2526
+  33.4487 147.69 23.2843 128.4476 20.268 127.597
+  17.2517 126.7464 3.7659 130.0923 3.7659 130.0923
+endline
+
+line wall 
+  244.5078 136.9775
+  244.5078 136.9775 247.9645 98.7399 239.9618 99.445
+  231.959 100.15 224.03 108.6246 219.029 107.9463
+  214.0279 107.2681 209.6693 92.4218 211.7763 109.6132
+endline
+
+line wall 
+  435.4795 153.3445
+  435.4795 153.3445 450.6186 154.9343 451.2213 152.4143
+  451.824 149.8942 450.3175 129.4087 444.8623 127.3478
+  439.4072 125.2868 430.3624 141.3143 419.7844 141.4707
+  409.2064 141.6272 393.39 120.5253 387.235 122.1623
+  381.0799 123.7992 370.4962 142.5835 365.6237 143.4036
+  360.7512 144.2236 334.2557 104.8081 322.5801 108.1575
+  310.9045 111.5069 282.5118 110.1511 280.5793 110.1511
+  278.6468 110.1511 263.9114 100.8567 262.3172 106.649
+  260.7231 112.4414 266.1455 139.6182 266.1455 139.6182
+endline
+
+line wall 
+  601.939 178.4194
+  544.9361 178.8081
+  544.9361 178.8081 484.9142 178.814 478.2554 177.0146
+  471.5966 175.2149 461.2812 163.0823 455.315 164.3582
+  449.3487 165.6341 442.6904 166.6133 437.1325 167.0386
+endline
+
+point 442.931 94.8792 station -name 0
+point 488.291 80.5492 station -name 1
+point 518.751 74.7192 station -name 3
+point 558.521 79.6792 station -name 5
+point 590.221 57.3992 station -name 7
+point 590.221 55.5792 station -name 9
+point 597.581 54.3192 station -name 11
+point 634.921 8.8092 station -name 13
+point 340.551 74.7992 station -name 15
+point 318.661 90.0692 station -name 17
+point 275.601 89.1292 station -name 19
+point 254.181 89.1292 station -name 21
+point 245.041 81.4892 station -name 23
+point 220.941 87.3192 station -name 25
+point 205.021 95.9792 station -name 27
+point 189.321 97.2392 station -name 29
+point 155.531 109.1296 station -name 31
+point 159.111 109.2896 station -name 33
+point 92.931 105.3496 station -name 35
+point 69.211 110.7796 station -name 37
+point 44.461 116.9196 station -name 39
+point 453.221 131.0196 station -name 41
+point 478.641 153.4596 station -name 43
+point 506.811 152.4396 station -name 45
+point 604.811 159.5996 station -name 47
+point 594.861 158.0296 station -name 49
+endscrap
+

@@ -1,0 +1,104 @@
+encoding  utf-8
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      GITHUB CI GENERATION OF:                                    |
+#                                                                                  |
+#                      SYSTEM MIGOVEC OVERVIEW                                     |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../data/system_migovec.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
+
+#----------------------------------------------------------------------------------|
+# export an ELEVATION view
+
+layout ee-slo
+	copy base-e
+	symbol-hide line map-connection
+	symbol-hide point u:flag
+	scale-bar 400 m
+
+	code metapost
+		set_label_level("2");
+	endcode
+
+	code tex-map
+	\def\xcenter{52}
+  	\def\ycenter{38}
+  	\def\yscale{5}
+	\def\mapcomment{
+	\size[46]\bf \the\cavename
+	\par{\quad}	\par
+	\size[16]
+	\par Dolžina: 45329 m \par Globina: 970 m \par{\quad}\par Iztegnjeni Profil\par{\quad}\par Občina Tolmin, Slovenija \par Imperial College Caving Club\par Jamarska sekcija PD Tolmin\par Raziskave: \the\topodate \par Natančnost meritev IV/B\par{\quad}\par JAMSKI VHODI\par{\quad}\par  M2 (Kavkna jama)\par kat. št.: 4465\par{\quad}\par  M18 (Jama strgane srajce)\par kat. št.: 8284\par{\quad}\par  M16\par kat. št.: 6001 \par{\quad}\par Primadona \par kat. št.: 8282\par{\quad}\par U-Bend 571\par kat. št.: 12114\par{\quad}\par  Mona tip\par kat. št.: 10180\par{\quad}\par Vrtnarija\par kat. št.: 8283\par{\quad}\par  Vilinska jama\par kat. št.: 10868}
+
+	\def\maplayout{
+
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\mapcomment}
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter - 9*\yscale\relax}{N}{\scalebar}
+  }
+endcode 
+
+	colour map-fg map:cave
+endlayout
+
+layout ee-eng
+	copy base-e
+	symbol-hide line map-connection
+	symbol-hide point u:flag
+	scale-bar 400 m
+
+	code metapost
+		set_label_level("2");
+	endcode
+
+	code tex-map
+	\def\xcenter{52}
+  	\def\ycenter{38}
+  	\def\yscale{5}
+	\def\mapcomment{
+	\size[46]\bf \the\cavename
+	\par{\quad}	\par
+	\size[16]
+	\par Length: 45329 m \par  Depth: 970 m \par{\quad}\par Extended Elevation\par{\quad}\par Tolmin, Julian Alps\par Imperial College Caving Club\par Jamarska sekcija PD Tolmin\par Exploration: \the\topodate \par BCRA grade 4-5b\par{\quad}\par CAVE ENTRANCES\par{\quad}\par M2 (Kavkna Jama)\par Cadastral number: 4465\par{\quad}\par M18 (Torn T-Shirt)\par Cadastral number: 8284\par{\quad}\par M16\par Cadastral number: 6001\par{\quad}\par Primadona\par Cadastral number: 8282\par{\quad}\par U-Bend 571\par Cadastral number: 12114\par{\quad}\par Mona tip\par Cadastral number: 10180\par{\quad}\par Vrtnarija\par Cadastral number: 8283\par{\quad}\par Vilinska jama\par Cadastral number: 10868}
+
+	\def\maplayout{
+
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\mapcomment}
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter - 9*\yscale\relax}{N}{\scalebar}
+  }
+endcode
+
+	colour map-fg map:cave
+endlayout 
+
+# garantee identical cave lengths / depths 
+
+source 
+	map local-e 
+		m-all-e@system_migovec
+		system_migovec 
+	endmap
+endsource 
+
+select local-e
+
+maps-offset on
+
+language sl
+export map -projection extended -o ../../outputs/system_migovec_EE_SLO.pdf -layout ee-slo
+export map -projection extended -o ../../outputs/system_migovec_EE_SLO.svg -layout ee-slo
+language en
+export map -projection extended -o ../../outputs/system_migovec_EE_ENG.pdf -layout ee-eng
+export map -projection extended -o ../../outputs/system_migovec_EE_ENG.svg -layout ee-eng

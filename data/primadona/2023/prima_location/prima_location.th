@@ -1,0 +1,25 @@
+survey prima_location 
+
+centreline
+date 2015.12.30
+team "Zdenko Rejec" 
+
+units length meters
+units compass clino degrees
+data normal from to length compass clino
+    flags surface
+    extend right
+    2	MT1		25.35	318.5	+8.8	
+    extend right
+    3	2		34.27	337.5	-10.8
+    extend left	
+    3	prima	12.79	183		+0.3	
+    extend left
+    12	MT1		9.00	104		+22.1	
+    extend right
+    12	monatip		50	58	+13			
+    flags not surface
+
+    extend ignore 3 2
+endcentreline
+endsurvey

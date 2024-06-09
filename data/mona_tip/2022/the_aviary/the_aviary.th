@@ -1,10 +1,22 @@
 # 2022.07.29 created by TopoDroid v 5.1.40
 
 survey the_aviary -title "the aviary"
-    # Aven above top of wishing well 
+  # Aven above top of wishing well 
+
+  input "the_aviary-p.th2"
+  input "the_aviary-e.th2"
+
+  map m-all-p -projection plan
+    the_aviary-p
+  endmap
+
+  map m-all-e -projection extended
+    the_aviary-e
+  endmap
 
   centerline
     date 2022.07.28 
+    explo-date 2022.07.28
     team "Ben Honan"
     team "Matti Mitropoulos"
     team "David Wilson" 
@@ -60,7 +72,5 @@ survey the_aviary -title "the aviary"
     extend right
     1 2 10.82 18.4 -16.4
   endcenterline
-
-
 
 endsurvey

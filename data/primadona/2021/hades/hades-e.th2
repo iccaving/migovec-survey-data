@@ -2,8 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1750.400000 4338.500000
 ##XTHERION## xth_me_area_zoom_to 100
 
+
 scrap hades-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
+point 2306.8889 2680.6396 label -align l -attr level 1 -scale l -text Hades
 line wall:invisible 
   288.4 2371.23
   100.03 2218.68
@@ -296,7 +298,7 @@ point 1204.06 2365.99 water-flow -orientation 180.0
 point 1199.51 2064.43 water-flow -orientation 180.0 -scale s
 point 778.68 1041.6 water-flow -orientation 180.0 -scale s
 point 775.66 1369.44 water-flow -orientation 180.0 -scale s
-point 782.99 1542.61 water-flow -orientation 212.9999848349663 -scale s
+point 782.99 1542.61 water-flow -orientation 212.999984835 -scale s
 line wall 
   928.02 1142.7
   928.02 1151.06

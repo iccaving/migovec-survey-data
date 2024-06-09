@@ -4,7 +4,7 @@ This contains the survey data of the Tolminski Migovec cave system, as well as m
 
 From 1974-2018 the the survey data was collected in the Survex format but we are now using Therion and are in the process of migrating the old data.
 
-- [Migovec Resurvey Project](#migovec-resurvey-project)
+- [Migovec Resurvey Project](#migovec-survey-data)
   - [View](#view)
   - [Downloads](#downloads)
   - [Prerequisites](#prerequisites)
@@ -36,6 +36,17 @@ From 1974-2018 the the survey data was collected in the Survex format but we are
     - [How do I create a skeleton th2 file for a survey?](#how-do-i-create-a-skeleton-th2-file-for-a-survey)
     - [How do I see the EE in aven or loch?](#how-do-i-see-the-ee-in-aven-or-loch)
     - [Therion Error: Map is too large for PDF format. Try smaller scale!](#therion-error-map-is-too-large-for-pdf-format-try-smaller-scale)
+
+## Licence
+
+This work is licensed under the CC-BY-NC-SA-4.0 licence. Copyright to ICCC / JSPDT 1974 - 2024
+
+## How to cite
+
+``ICCC and JSDPT, Survey Data for the Tolminski Migovec Cave Exploration project, 2024. DOI: 10.5281/zenodo.10813021``
+
+[![DOI](https://zenodo.org/badge/330606015.svg)](https://zenodo.org/doi/10.5281/zenodo.10813020)
+
 
 ## View
 
@@ -157,13 +168,34 @@ This is a new area which we started exploring in 2020. Located to the NW of Tolm
 
 1. Bertijeva Jama
 2. Planja jama
-3. Brezno pod Vrhom Planje
+3. Brezno pod Vrhom Planje (by far the longest, explored from 2020 to 2023, ongoing)
 
 You can download the following artifacts:
 
-- Plan view (WIP)  
-  [PLAN SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_SLO.pdf) |
-  [PLAN ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/vrh_planja_plan_ENG.pdf)
+- Brezno pod vhrom Planje plan view (WIP)  
+  [PLAN ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_plan_EN.pdf) |
+  [PLAN ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_plan_EN.svg)
+
+  - Brezno pod vhrom Planje extended elevation view (WIP)  
+  [EE ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_ee_EN.pdf) |
+  [EE ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_ee_EN.svg)
+
+**Nakljucja jama (Coincidence Cave)**
+
+You can download the following artifacts:
+
+- 3D Model  
+  [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/nakljucja.3d) |
+- Plan View (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_plan_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_plan_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_plan_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_plan_ENG.svg)
+- Extended Elevation (WIP)  
+  [SLO PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_ee_SLO.pdf) |
+  [ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_ee_ENG.pdf) |
+  [SLO SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_ee_SLO.svg) |
+  [ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/nakljucja_ee_ENG.svg)
 
 **Plateau**
 

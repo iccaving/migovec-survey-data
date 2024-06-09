@@ -2,10 +2,33 @@
 
 survey house_of_cards -title "House of Cards"
     # pitches below Humpty dumpty 
+    input house_of_cards-p.th2
+    input house_of_cards-e.th2
+
+    map m-all-p -projection plan
+      house_of_cards-1p
+    endmap
+
+    map m-all-e -projection extended
+      house_of_cards-1e
+    endmap
 
   centerline
     date 2023.07.11 
+    explo-date 2023.07.11 
+
     # team JW EP CH DW 
+    team "James Wilson"
+    team "Ellie Pizey"
+    team "Chris Hayes"
+    team "David Wilson"
+
+    explo-team "James Wilson"
+    explo-team "Ellie Pizey"
+    explo-team "Chris Hayes"
+    explo-team "David Wilson"
+
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -114,6 +137,8 @@ survey house_of_cards -title "House of Cards"
     5 . 0.94 289.6 -53.3
     5 . 2.15 283.2 33.0
     5 . 2.37 308.9 15.1
+
+    station 5 "Multiple ways drop from house of cards into a massive rift. You can see about 20m down but suspected to go much further, at least 40m, perhaps 60m+. Likely to be the same rift as Bingo Flamingo. A lovely big pitch for someone to bolt. Not clear when dropped rocks reach the actual bottom." continuation attr code P attr cave "Brezno pod Vrhom Planje" attr author "David Wilson"
   endcenterline
 
 

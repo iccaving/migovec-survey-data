@@ -80,9 +80,10 @@ endmap
 ## OFFSETS
 
 map m-offsets-p -projection plan
-	m-below_lumos-p [-200 0 m] below
+	m-below_lumos-p [-140 0 m] below
 	#m-pivnica-p [-200 0 m] below
 	m-below_cattlegrid-p [70 0 m] below
+	m-echo_falls_branch-p [50 0 m] below 
 endmap
 
 # Submaps
@@ -140,22 +141,26 @@ map m-hallelujah_branch-p -projection plan -title "Hallelujah Branch"
 	m-all-p@hallelujah
 	m-all-p@sweet_baby_jesus
 	m-all-p@beam_me_up
-	#m-all-p@bin_bag_palace
-	#m-all-p@echo_falls
-	m-all-p@blue_lagoon
 	m-all-p@holy_moley
-	m-all-p@echo_falls
 	m-all-p@alabaster
 	m-all-p@purgatory
 	m-all-p@octarine
 	m-all-p@octarine_core
 	m-all-p@bath
-
 	m-all-p@canticle_for_migovec
 	m-all-p@testify
 	m-all-p@angel_delight
 	m-all-p@sump_404_lead_not_found
 endmap
+
+map m-echo_falls_branch-p -projection plan -title "Echo falls and below"
+	m-all-p@echo_falls
+	m-all-p@a_dry_place [50 0 m] below
+	m-all-p@bin_bag_palace [50 0 m] below
+	m-all-p@blue_lagoon [50 0 m] below
+	m-all-p@blossom_hill [50 0 m] below
+endmap 
+
 
 map m-death_star_branch-p -projection plan
 	m-all-p@death_star
@@ -164,9 +169,10 @@ map m-death_star_branch-p -projection plan
 	m-all-p@cantina_canyon_2
 	m-all-p@sisyphus_slope 
 	m-all-p@antares
-	m-all-p@blue_lagoon 
-	#m-all-p@the_deep_awakens #
-	m-all-p@who_dies_first 
+	m-all-p@the_deep_awakens
+	#m-all-p@who_dies_first #drawn but removed from survey as resurveyed
+	m-all-p@who_dies_first_resurvey
+	m-all-p@delta_blues
 endmap
 
 map m-hammerhead_branch-p -projection plan

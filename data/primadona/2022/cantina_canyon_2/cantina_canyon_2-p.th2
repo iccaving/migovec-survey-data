@@ -2,12 +2,10 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 882.100000 1892.800000
 ##XTHERION## xth_me_area_zoom_to 100
 
-
 scrap cantina_canyon_2-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 528.0589 1895.3422 label -align tl -attr level 3 -scale l -text "Cantina Canyon 2"
-point 410.4015 1979.4479 water-flow -orientation 173.039372506
-point 334.5407 1789.262 water-flow -orientation 225.865949954
+point 410.401 1979.45 water-flow -orientation 173.0393894567688
+point 334.541 1789.26 water-flow -orientation 225.86598423331733
 line floor-step 
   339.0336 1779.6162
   339.0336 1779.6162 338.4133 1782.9835 337.5272 1784.7557

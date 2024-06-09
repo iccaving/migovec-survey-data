@@ -3,7 +3,11 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 scrap the_expo_strikes_back-1e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
-
+point 3240.44 2111.3199 label -align t -attr level 3 -text Snoke
+point 2867.71 1788.7 label -align t -attr level 3 -text Sidious
+point 2266.21 1405.65 label -align t -attr level 3 -text Maul
+point 1805.3492 1209.991 label -align t -attr level 3 -text Vader
+point 1191.6484 757.303 label -align tr -attr level 3 -text Dooku
 line wall:presumed 
   1094.3019 766.9145
   1094.3019 766.9145 1136.553 819.7283 1137.6092 823.9534
@@ -192,8 +196,6 @@ line wall
   1084.7954 755.2955 1092.1894 762.6894 1092.1894 762.6894
 endline
 
-point 1191.6484 757.303 label -align tr -text Dooku
-point 1805.3492 1209.991 label -align t -text Vader
 line wall 
   1623.07 1457.04
   1641.95 1457.04 1661.94 1454.01 1680.68 1457.96
@@ -202,9 +204,6 @@ line wall
   1770.68 1490.27 1788.12 1495.72 1800.58 1507.02
 endline
 
-point 2266.21 1405.65 label -align t -text Maul
-point 2867.71 1788.7 label -align t -text Sidious
-point 3240.44 2111.3199 label -align t -text Snoke
 line u:splay -visibility off
   571.05 565.78
   544.85 534.13
