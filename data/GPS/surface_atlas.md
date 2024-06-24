@@ -1548,7 +1548,32 @@ we were hoping for." Photos in Slov 2009 folder
 - First mentioned in 2012 [HM2 draft, page 136]
   - First two pitches dropped
   - Continuation visible but left due to lack of time
-- Returned to and killed in 2019 (not written up yet)
+- Returned to and killed in 2019. Writeup on UKCaving [here](https://ukcaving.com/board/index.php?threads/maraton-iccc-jspdt-slovenia-expedition-july-2019.25199/).
+
+### N10
+
+- No known information
+
+### N11
+
+- Someone (unknown) recently logged this on one of the club GPS's. Coords are: 46°16'02"N 13°45'38"E
+- Worth having a look
+
+### N12
+
+- Someone (unknown) recently logged this on one of the club GPS's. Coords are: 46°15'47"N 13°45'33"E
+
+### N13
+
+- Also logged as "BOLTCAVE" and "WB1". A vertical shaft with spits. No information on who originally descended this, no mentions in hollow mountains. Definitely worth checking out. Coords are: 46°15'47"N 13°45'37"E
+
+### N14
+
+- Also logged as "WB2". An approximately 5m deep vertical rift with possible cave at the bottom. Remains undescended because of lack of resources. Definitely worth checking out. Coords are: 46°15'44"N 13°45'38"E
+
+### 0131
+
+- Possibly an accidental GPS marker, so might not be a cave. Between N11 and N12. Coords are: 46°15'54"N 13°45'38"E
 
 ### P01 (North of Kuk)
 
