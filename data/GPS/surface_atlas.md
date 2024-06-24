@@ -50,6 +50,12 @@ Currently, each entrance has:
   - A1 has two stainless bolts in it
     - Rhys remembers going down it once upon a time so likely dead
 
+### ABBA 4-5
+
+- Possible cave entrances found by BenR on the east face of planje during N9 trip in 2019
+- ABBA 4: 46.2676, 13.75168
+- ABBA 5: 46.26749, 13.75123
+
 ### Andy's Dig
 
 2022:
