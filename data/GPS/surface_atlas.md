@@ -154,6 +154,34 @@ First discovered during the blowing holes recce of 1995 [HM3, page 61, page 104]
 - Relogged in 2023
   - Should be renamed as B93 doesn't mean anything
   - Small hole going sideways 2m, no obvious draft but easy digging
+  - 
+### B94
+
+- No known information, near JJ2. Location 46°15'16"N 13°45'30"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B95
+
+- No known information, near bone cave. Location 46°15'15"N 13°45'33"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B96
+
+- No known information, near JB and JJ2, a bit down the cliff face. Location 46°15'16"N 13°45'28"E. In the archive "2019_Migoveccavelocations" GPX file.
+
+### B97
+
+- No known information. Might be the same as "JB" as it's logged very close. Just south of JJ2. Location 46°15'15"N 13°45'29"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B98
+
+- No known information. About 60m due west from B93. Location 46°15'13"N 13°45'31"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B99
+
+- No known information. About 60m WSW from B98, down the cliff face. Location 46°15'12"N 13°45'28"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B100
+
+- No known information. Was in one of the yellow club GPSs, but not in the archive "2019_Migoveccavelocations" file. Located in the cliff face NW of V10. Added to archive file as of 25/06/2024. Location 46.25597 N, 13.75801 E.
 
 ### Bone Cave
 
