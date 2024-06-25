@@ -1452,7 +1452,9 @@ we were hoping for." Photos in Slov 2009 folder
 - Entry about discovery in HM1, page 33, 1995
   - On the face of Mig, visible from the shepherd's huts
   - Initially opens up but all proceeding chambers closed down
-  - Little effort put into the cave, no survey taken
+  - Little effort put into the cave, no survey taken. Could be worth a revisit for the katasterjam.
+- Rediscovered by Ben R and Ben H in 2019. It is located up the coincidence valley and is a very big entrance with a P10 to a pile of wood. Was bolted in 1996 and is more or less dead (see HM1)
+- Coordinates converted from GK5 to Lat/Long: 46.245408, 13.765006
 - May have digging potential
 
 ### Monatip
