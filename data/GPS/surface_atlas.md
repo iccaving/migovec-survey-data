@@ -1438,11 +1438,14 @@ we were hoping for." Photos in Slov 2009 folder
 <img src="images/M24-2022.jpeg" width="25%"/>
 
 - Entry about discovery and survey in HM1, page 36, 1995
-  - Deemed too unstable to continue exploration
+  - Crawl at bottom deemed too unstable to continue exploration
   - Abandoned for other leads in 1995
+  - By the looks of EE, still a window on P4 and a bolt climb at bottom of P4 left unexplored. Worth a look. Could break into southern extensions.
 - Relocated in 2022
   - Previously M24 and PF10 were logged as being over 100m apart
   - Upon throwing rocks down, sounds of ice smashing could be heard
+ 
+<img src="images/PF10Survey.png" width="25%"/>
 
 ### M25, Gulliver's Kipper Cave
 
