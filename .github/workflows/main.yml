@@ -123,7 +123,7 @@ jobs:
             echo "These outputs are missing: $GONE"
             exit 1
           fi
-      - name: create GPX from KML
+      - name: Create GPX from KML
         run: python3 ./scripts/kml_to_gpx.py --fname_in ./outputs/plateau.kml --fname_out ./outputs/plateau.gpx
       #=========================== PROCESS OUTPUT ===========================#
       - name: Compress PDFs
