@@ -14,7 +14,7 @@ def makegpx(fname_in, fname_out, ftype_in="txt"):
     if dotxt:
 
         # Define a regular expression pattern to match the format of a string and two numbers and delims of spaces, commas or colons
-        pattern = re.compile(r'^(?P<name>[A-Za-z0-9.]+)[,\s:]+(?P<xy>\d{2}\.[0-9]+)[,\s:]+(?P<qw>\d{2}\.[0-9]+)\s*$')
+        pattern = re.compile(r'^(?P<name>[A-Za-z0-9.]+)[,\s:]+(?P<lat>\d{2}\.[0-9]+)[,\s:]+(?P<long>\d{2}\.[0-9]+)\s*$')
 
         with open(fname_in, "r") as file:
             nline = 0
@@ -24,7 +24,6 @@ def makegpx(fname_in, fname_out, ftype_in="txt"):
                 if match:
                     dict_loc.update({match.group(1).strip():(float(match.group(2)),float(match.group(3)))})
                 else:
-                    import pdb; pdb.set_trace()
                     print("ERROR: Line {}. Format of names and lat/long unknown. Expected one string and two floats per line.".format(str(nline))); exit(0)
 
         with open(fname_out, "w") as file:
