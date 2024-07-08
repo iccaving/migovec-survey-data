@@ -207,8 +207,8 @@ Many of the GPS coordinates are very inaccurate and are currently being renewed 
 
 - 3D Model  
   [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.3d)
-- Coordinate maps  
-  [GPX](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.gpx) | [KML](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.kml)
+- Coordinates  
+  [GPX (latest, omits entrances not relogged since 2022)](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.gpx) | [GPX (2019 club Garmin export)](https://github.com/iccaving/migovec-survey-data/blob/master/data/GPS/archive/2019_MigovecCaveLocations.gpx) | [KML (latest, omits entrances not relogged since 2022)](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.kml)
 
 ## Prerequisites
 
