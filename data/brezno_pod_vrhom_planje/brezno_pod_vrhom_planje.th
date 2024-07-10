@@ -44,4 +44,8 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 
 	join humpty_dumpty-1p@humpty_dumpty prazen_list-3p@prazen_list
 
+	###__________2024____________###
+	input "./2024/one_at_a_chime/one_at_a_chime.th"
+
+	equate 0@one_at_a_chime 1@osmica
 endsurvey
