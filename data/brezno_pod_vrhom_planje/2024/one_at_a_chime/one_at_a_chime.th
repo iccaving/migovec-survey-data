@@ -3,8 +3,24 @@
 survey one_at_a_chime -title "One at a Chime"
     # continuation of osmica in planja 
 
-  # map m-all-p -projection plan 
-  #endmap
+  input "one_at_a_chime-p.th2"
+  input "one_at_a_chime-e.th2"
+  
+  map m-all-p -projection plan 
+  one_at_a_chime-1p
+  break
+  one_at_a_chime-2p
+  break
+  one_at_a_chime-3p
+  break
+  one_at_a_chime-4p
+  one_at_a_chime-5p
+  endmap
+
+  map m-all-e -projection extended 
+  one_at_a_chime-1e
+  one_at_a_chime-2e
+  endmap
 
 
   # map m-all-e -projection extended 
@@ -19,6 +35,7 @@ survey one_at_a_chime -title "One at a Chime"
     explo-team "Tanguy Racine" 
     explo-team "Matti Mitropoulos"
 
+    mark 0 5 18 23 24 fixed
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -375,7 +392,7 @@ survey one_at_a_chime -title "One at a Chime"
     24 . 1.12 63.1 2.6
     24 . 1.02 348.5 2.7
     24 . 1.29 322.9 -2.3
-    extend right
+    extend left
     24 25 2.48 43.4 -3.1
     # extend auto
     25 . 2.02 56.7 60.0
