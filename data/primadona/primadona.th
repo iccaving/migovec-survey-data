@@ -76,7 +76,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 1@milanova 11@spodnji
 	equate 1@milanova 0@spodnji_main_chamber_resurvey
 
-	# join s1_l1@ajdovscina:0 s2_l1@zima00:end
+	#join s1_l1@ajdovscina:0 s2_l1@zima00:end
 	#join s1_l2@ajdovscina:end s2_l2@zima00:0
 	#join spodnjip_1@spodnji zima00p_6@zima00
 	join spodnjip_3@spodnji milanovap_1@milanova
@@ -125,10 +125,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2016/dejavu/dejavu.th"
 	input "./2016/tight_and_scrotty/tight_and_scrotty.th"
 	input "./2016/gamblers_ruin/gamblers_ruin.th"
-	#input "./2016/memorylane/memorylane.th"
+	# input "./2016/memorylane/memorylane.th"
 
-	#equate 10@memorylane 19@prima1
-	#equate 1@memorylane 8@prima1
+	# equate 10@memorylane 19@prima1
+	# equate 1@memorylane 8@prima1
 	equate 39@karstaway 1@galerija_resurvey
 	equate 1@galerija_resurvey 11@galerija
 	equate 6@galerija_resurvey 16@galerija
@@ -612,5 +612,16 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join who_dies_first_resurvey-1e@who_dies_first_resurvey delta_blues-1e@delta_blues
 	join delta_blues-1e@delta_blues the_deep_awakens-2e@the_deep_awakens
 
+	###______________ 2024______________###
+	input "./2024/shelobs_lair/shelobs_lair.th"
+	input "./2024/blues_and_twos/blues_and_twos.th"
+	input "./2024/discordant_bebop/discordant_bebop.th"
+	input "./2024/bad_vibes/bad_vibes.th"
+
+	equate 0@shelobs_lair 15@mudaholic
+	equate 0@blues_and_twos 0@who_dies_first_resurvey
+	equate 17@blues_and_twos 21@delta_blues
+	equate 23@discordant_bebop 39@delta_blues
+	equate 0@bad_vibes 8@prima1
 
 endsurvey

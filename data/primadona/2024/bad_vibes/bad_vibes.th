@@ -1,0 +1,61 @@
+# 2024.07.30 created by TopoDroid v 6.2.44
+
+survey bad_vibes -title "bad vibes"
+    # shitty rift off spiral climb 
+
+  centerline
+    date 2024.07.22 
+    # team BR JK EP JJ 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    0 1 6.87 84.4 17.5
+  # first bolt of pitch up to Alkatraz
+    # extend auto
+    1 . 2.31 213.1 10.9
+    extend left
+    1 2 2.76 143.0 -16.6
+    # extend auto
+    2 . 0.32 118.0 86.3
+    2 . 0.83 253.0 7.6
+    2 . 1.08 238.1 -57.7
+    2 . 0.79 70.5 16.4
+    extend left
+    2 3 3.46 166.6 -20.7
+    # extend auto
+    3 . 0.65 64.9 4.2
+    3 . 0.27 259.2 9.1
+    3 . 0.80 258.4 -53.1
+    3 . 2.83 151.7 82.7
+    3 . 1.20 268.8 62.7
+    extend left
+    3 4 5.28 161.2 19.8
+    # extend auto
+    4 . 0.80 80.1 -4.2
+    4 . 1.05 258.7 10.8
+    4 . 3.12 228.3 89.2
+    4 . 0.65 347.0 -75.4
+    4 . 2.56 93.3 77.5
+    4 . 2.39 246.5 73.8
+    extend left
+    4 5 3.78 174.6 44.6
+    # extend auto
+    5 . 1.28 49.1 -4.0
+    5 . 1.25 48.3 -38.9
+    5 . 2.05 57.4 49.4
+    5 . 1.37 45.4 -15.3
+    extend left
+    5 6 2.87 100.3 28.5
+  endcenterline
+
+  # input "bad_vibes-bad_vibesp.th2"
+  # input "bad_vibes-bad_vibess.th2"
+
+  # map mbad_vibesp -projection plan
+  #   bad_vibes-bad_vibesp
+  # endmap
+  # map mbad_vibess -projection extended
+  #   bad_vibes-bad_vibess
+  # endmap
+
+endsurvey

@@ -158,7 +158,7 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 
 	join the_aviary-e@the_aviary mona_tip11-3e@mona_tip11
 
-	######________________2022________________######
+	######________________2023________________######
 	input "./2023/auld_alliance_resurvey/auld_alliance_resurvey.th"
 	input "./2023/fools_gold/fools_gold.th"
 	input "./2023/neu_alliance/neu_alliance.th"
@@ -172,5 +172,9 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 	join auld_alliance_resurvey-1p@auld_alliance_resurvey mona_tip11-4p@mona_tip11
 	join auld_alliance_resurvey-1p@auld_alliance_resurvey mona_tip11-3p@mona_tip11
 
+	######________________2024________________######
+	input "./2024/mambo_number_5/mambo_number_5.th"
+
+	equate 13@mambo_number_5 4@neu_alliance
 
 endsurvey
