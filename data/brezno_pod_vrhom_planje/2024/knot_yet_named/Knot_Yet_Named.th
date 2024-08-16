@@ -1,0 +1,74 @@
+# 2024.07.26 created by TopoDroid v 6.2.44
+
+survey Knot_Yet_Named -title "Knot Yet Named"
+    # First pitch beside Bingo Flamingo that connects through a tight rift. Station 0 is in the rift above the pitch, and Station 7 is station 23 of Bingo Flamingo 
+
+  centerline
+    date 2024.07.15 
+    # team CH, JS 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend left
+    1 0 3.79 190.9 -5.8
+    # extend auto
+    1 . 0.28 167.6 83.5
+    1 . 1.41 204.8 -62.7
+    1 . 0.41 67.1 -1.1
+    1 . 0.43 262.2 10.6
+    extend right
+    1 2 1.10 333.0 8.2
+    # extend auto
+    2 . 0.41 238.5 -4.6
+    2 . 0.37 222.6 60.1
+    2 . 1.41 27.9 -75.7
+    extend right
+    2 3 0.74 293.8 -8.9
+    # extend auto
+    3 . 0.41 64.3 4.1
+    3 . 1.23 141.3 -4.0
+    3 . 0.78 172.7 84.6
+    3 . 1.44 87.4 -63.2
+    extend right
+    3 4 3.81 356.3 10.3
+    # extend auto
+    4 . 3.01 117.7 -24.4
+    4 . 3.47 164.2 -20.7
+    4 . 3.36 186.6 -23.8
+    4 . 5.29 213.8 -20.6
+    4 . 3.22 209.1 -22.1
+    4 . 3.28 227.3 -19.6
+    4 . 3.33 241.6 -26.2
+    4 . 3.52 260.1 -24.7
+    4 . 3.23 287.6 -23.8
+    4 . 3.09 304.1 -25.9
+    4 . 2.64 324.1 -25.7
+    4 . 2.00 9.0 -27.2
+    4 . 2.03 51.8 -24.6
+    4 . 0.82 67.3 0.4
+    4 . 4.99 80.7 41.2
+    4 . 2.45 64.1 59.4
+    4 . 5.88 96.9 42.3
+    4 . 6.28 118.2 40.2
+    4 . 4.29 143.7 43.1
+    4 . 3.41 156.9 47.8
+    4 . 3.18 237.6 28.7
+    4 . 3.49 255.0 27.7
+    4 . 28.28 248.3 80.7
+    extend left
+    4 5 9.66 160.9 77.3
+    5 6 2.68 244.5 4.1
+    6 7 3.34 122.9 42.8
+  endcenterline
+
+  # input "Knot_Yet_Named-Knot_Yet_Namedp.th2"
+  # input "Knot_Yet_Named-Knot_Yet_Nameds.th2"
+
+  # map mKnot_Yet_Namedp -projection plan
+  #   Knot_Yet_Named-Knot_Yet_Namedp
+  # endmap
+  # map mKnot_Yet_Nameds -projection extended
+  #   Knot_Yet_Named-Knot_Yet_Nameds
+  # endmap
+
+endsurvey
