@@ -410,4 +410,12 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	#equate 13@cowboys.pdox 2@rameses.coldfeet
 	#equate 1@hotel.hotelt HOTEL_TOLMINKA@
 
+	###__________2024____________###
+
+	input ./2024/secret_bonus_chamber/secret_bonus_chamber.th
+	input ./2024/sunk_cost_series/sunk_cost_series.th
+
+	equate 10@secret_bonus_chamber 20@entrance
+	equate 16@sunk_cost_series 2@level2n
+	
 endsurvey

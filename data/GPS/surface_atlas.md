@@ -50,6 +50,12 @@ Currently, each entrance has:
   - A1 has two stainless bolts in it
     - Rhys remembers going down it once upon a time so likely dead
 
+### ABBA 4-5
+
+- Possible cave entrances found by BenR on the east face of planje during N9 trip in 2019
+- ABBA 4: 46.2676, 13.75168
+- ABBA 5: 46.26749, 13.75123
+
 ### Andy's Dig
 
 2022:
@@ -148,6 +154,34 @@ First discovered during the blowing holes recce of 1995 [HM3, page 61, page 104]
 - Relogged in 2023
   - Should be renamed as B93 doesn't mean anything
   - Small hole going sideways 2m, no obvious draft but easy digging
+  - 
+### B94
+
+- No known information, near JJ2. Location 46°15'16"N 13°45'30"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B95
+
+- No known information, near bone cave. Location 46°15'15"N 13°45'33"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B96
+
+- No known information, near JB and JJ2, a bit down the cliff face. Location 46°15'16"N 13°45'28"E. In the archive "2019_Migoveccavelocations" GPX file.
+
+### B97
+
+- No known information. Might be the same as "JB" as it's logged very close. Just south of JJ2. Location 46°15'15"N 13°45'29"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B98
+
+- No known information. About 60m due west from B93. Location 46°15'13"N 13°45'31"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B99
+
+- No known information. About 60m WSW from B98, down the cliff face. Location 46°15'12"N 13°45'28"E. In archive "2019_Migoveccavelocations" GPX file.
+
+### B100
+
+- No known information. Was in one of the yellow club GPSs, but not in the archive "2019_Migoveccavelocations" file. Located in the cliff face NW of V10. Added to archive file as of 25/06/2024. Location 46.25597 N, 13.75801 E.
 
 ### Bone Cave
 
@@ -1432,18 +1466,23 @@ we were hoping for." Photos in Slov 2009 folder
 <img src="images/M24-2022.jpeg" width="25%"/>
 
 - Entry about discovery and survey in HM1, page 36, 1995
-  - Deemed too unstable to continue exploration
+  - Crawl at bottom deemed too unstable to continue exploration
   - Abandoned for other leads in 1995
+  - By the looks of EE, still a window on P4 and a bolt climb at bottom of P4 left unexplored. Worth a look. Could break into southern extensions.
 - Relocated in 2022
   - Previously M24 and PF10 were logged as being over 100m apart
   - Upon throwing rocks down, sounds of ice smashing could be heard
+ 
+<img src="images/PF10Survey.png" width="25%"/>
 
 ### M25, Gulliver's Kipper Cave
 
 - Entry about discovery in HM1, page 33, 1995
   - On the face of Mig, visible from the shepherd's huts
   - Initially opens up but all proceeding chambers closed down
-  - Little effort put into the cave, no survey taken
+  - Little effort put into the cave, no survey taken. Could be worth a revisit for the katasterjam.
+- Rediscovered by Ben R and Ben H in 2019. It is located up the coincidence valley and is a very big entrance with a P10 to a pile of wood. Was bolted in 1996 and is more or less dead (see HM1)
+- Coordinates converted from GK5 to Lat/Long: 46.245408, 13.765006
 - May have digging potential
 
 ### Monatip
@@ -1548,7 +1587,32 @@ we were hoping for." Photos in Slov 2009 folder
 - First mentioned in 2012 [HM2 draft, page 136]
   - First two pitches dropped
   - Continuation visible but left due to lack of time
-- Returned to and killed in 2019 (not written up yet)
+- Returned to and killed in 2019. Writeup on UKCaving [here](https://ukcaving.com/board/index.php?threads/maraton-iccc-jspdt-slovenia-expedition-july-2019.25199/).
+
+### N10
+
+- No known information
+
+### N11
+
+- Someone (unknown) recently logged this on one of the club GPS's. Coords are: 46°16'02"N 13°45'38"E
+- Worth having a look
+
+### N12
+
+- Someone (unknown) recently logged this on one of the club GPS's. Coords are: 46°15'47"N 13°45'33"E
+
+### N13
+
+- Also logged as "BOLTCAVE" and "WB1". A vertical shaft with spits. No information on who originally descended this, no mentions in hollow mountains. Definitely worth checking out. Coords are: 46°15'47"N 13°45'37"E
+
+### N14
+
+- Also logged as "WB2". An approximately 5m deep vertical rift with possible cave at the bottom. Remains undescended because of lack of resources. Definitely worth checking out. Coords are: 46°15'44"N 13°45'38"E
+
+### 0131
+
+- Possibly an accidental GPS marker, so might not be a cave. Between N11 and N12. Coords are: 46°15'54"N 13°45'38"E
 
 ### P01 (North of Kuk)
 

@@ -201,14 +201,14 @@ You can download the following artifacts:
 
 All surveyed and GPS logged entrances in the area surrounding the system.
 
-Uploading the KML file into Google My Maps (or Google Earth) and then syncing to your phone allows for navigation of the plateau without a club GPS. KML files can easily be converted online into GPX files for use with Garmins etc.
+Uploading the KML or GPX files into Google My Maps, Google Earth, OsmAnd etc. allows for navigation of the plateau without a club GPS.
 
 Many of the GPS coordinates are very inaccurate and are currently being renewed as part of the [surface atlas project](https://github.com/iccaving/migovec-survey-data/blob/master/data/GPS/surface_atlas.md).
 
 - 3D Model  
   [3D](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.3d)
-- KML (Google Maps)  
-  [KML](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.kml)
+- Coordinates  
+  [GPX (latest, omits entrances not relogged since 2022)](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.gpx) | [GPX (2019 club Garmin export)](https://github.com/iccaving/migovec-survey-data/blob/master/data/GPS/archive/2019_MigovecCaveLocations.gpx) | [KML (latest, omits entrances not relogged since 2022)](https://github.com/iccaving/migovec-survey-data/releases/download/latest/plateau.kml)
 
 ## Prerequisites
 

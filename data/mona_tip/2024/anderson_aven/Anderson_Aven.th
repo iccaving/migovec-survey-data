@@ -1,0 +1,46 @@
+# 2024.07.30 created by TopoDroid v 6.2.44
+
+survey Anderson_Aven -title "Anderson Aven"
+    # bolt climb above Neu Alliance 
+
+  centerline
+    date 2024.07.12 
+    # team CH, BH, LA 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    0 . 0.15 8.7 -24.2
+    0 . 0.94 66.6 14.7
+    0 . 1.71 256.0 4.7
+    0 . 12.98 336.2 26.4
+    0 . 11.80 218.4 81.3
+    extend left
+    0 1 4.30 172.1 24.6
+    # extend auto
+    1 . 1.57 84.4 4.0
+    1 . 1.99 263.7 11.2
+    1 . 24.01 226.3 82.3
+    1 . 5.33 354.1 5.7
+    1 . 15.59 344.0 7.5
+    extend left
+    1 2 8.18 164.1 76.8
+    # extend auto
+    2 . 2.76 254.9 20.1
+    extend left
+    2 3 3.11 217.3 30.8
+    # extend auto
+    3 . 5.70 335.4 9.5
+  endcenterline
+
+  # input "Anderson_Aven-1p.th2"
+  # input "Anderson_Aven-2p.th2"
+
+  # map m1p -projection plan
+  #   Anderson_Aven-1p
+  # endmap
+  # map m2p -projection plan
+  #   Anderson_Aven-2p
+  # endmap
+
+endsurvey

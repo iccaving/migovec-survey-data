@@ -3,5 +3,6 @@ source ../../data/plateau.th
 #export database -o ../../outputs/plateau.sql
 export map -o ../../outputs/plateau_2 -fmt esri
 export map -o ../../outputs/plateau.kml -fmt survex
+export model -o ../../outputs/plateau.3d
 
 #export database -o ../../_outputs/database/MigovecPlateau.csv

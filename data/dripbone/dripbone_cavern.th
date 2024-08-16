@@ -1,0 +1,140 @@
+# 2024.07.30 created by TopoDroid v 5.1.40
+
+survey dripbone_cavern -title "dripbone cavern"
+    # Cave within the container shakehole, station 0 is edge of 4m boulder NW side of container on the scree slope 
+
+  centerline
+    date 2024.07.19 
+    # team TB, JJ 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    0 - 2.00 242.0 0.0
+    0 - 2.50 62.0 0.0
+    extend vertical
+    0 - 5.00 0.0 90.0
+    0 - 0.30 0.0 -90.0
+    extend right
+    0 1 6.05 332.0 -32.0
+    # extend auto
+    1 - 0.50 242.0 0.0
+    1 - 0.40 62.0 0.0
+    extend vertical
+    1 - 0.00 0.0 90.0
+    1 - 0.30 0.0 -90.0
+    extend right
+    1 2 2.94 332.0 -19.0
+    2 - 1.00 242.0 0.0
+    # extend auto
+    2 - 4.00 62.0 0.0
+    extend vertical
+    2 - 0.00 0.0 90.0
+    2 - 0.50 0.0 -90.0
+    extend left
+    2 3 2.75 238.0 -4.0
+    # extend auto
+    3 - 1.20 148.0 0.0
+    3 - 1.00 328.0 0.0
+    extend vertical
+    3 - 0.00 0.0 90.0
+    3 - 0.35 0.0 -90.0
+    extend left
+    2 4 3.35 103.0 -7.0
+    # extend auto
+    4 - 1.30 13.0 0.0
+    4 - 0.50 193.0 0.0
+    extend vertical
+    4 - 0.30 0.0 90.0
+    4 - 0.30 0.0 -90.0
+    extend right
+    2 5 3.64 323.0 -4.0
+    # extend auto
+    5 - 0.00 233.0 0.0
+    5 - 3.50 53.0 0.0
+    extend vertical
+    5 - 0.80 0.0 90.0
+    5 - 0.50 0.0 -90.0
+    extend right
+    5 6 3.09 341.0 -8.0
+    # extend auto
+    6 - 1.00 251.0 0.0
+    6 - 2.60 71.0 0.0
+    extend vertical
+    6 - 10.00 0.0 90.0
+    6 - 0.00 0.0 -90.0
+    6 7 3.50 85.0 33.0
+    # extend auto
+    7 - 0.70 355.0 0.0
+    7 - 4.50 175.0 0.0
+    extend vertical
+    7 - 0.00 0.0 90.0
+    7 - 0.75 0.0 -90.0
+    7 8 4.55 98.0 -59.0
+    # extend auto
+    8 - 2.20 8.0 0.0
+    8 - 1.30 188.0 0.0
+    extend vertical
+    8 - 5.50 0.0 90.0
+    8 - 0.00 0.0 -90.0
+    extend right
+    8 9 2.93 344.0 16.0
+    # extend auto
+    9 - 0.30 254.0 0.0
+    9 - 3.00 74.0 0.0
+    extend vertical
+    9 - 2.30 0.0 90.0
+    9 - 0.00 0.0 -90.0
+    extend left
+    0 10 2.86 142.8 22.6
+    # extend auto
+    10 . 1.60 165.6 85.8
+    10 . 4.27 231.2 -10.1
+    10 . 3.55 267.7 -2.4
+    10 . 2.03 343.4 -1.1
+    10 . 2.84 354.3 41.0
+    10 . 5.48 334.4 26.0
+    extend left
+    10 11 1.14 141.4 15.8
+    # extend auto
+    11 . 1.35 228.3 68.8
+    11 . 1.59 229.2 46.9
+    11 . 1.42 283.3 55.8
+    11 . 4.38 252.0 7.7
+    extend left
+    11 12 3.29 219.3 -16.2
+    # extend auto
+    12 . 2.09 153.3 67.3
+    12 . 2.81 257.2 9.7
+    12 . 2.73 247.1 35.4
+    12 . 1.58 91.7 -69.0
+    12 . 0.82 98.4 -63.6
+    12 . 2.46 90.2 -25.0
+    extend left
+    12 13 4.08 192.1 -8.0
+    # extend auto
+    13 . 1.49 127.6 68.0
+    13 . 2.13 110.6 51.7
+    13 . 2.04 205.8 38.2
+    13 . 1.97 173.6 33.0
+    13 . 2.68 221.3 28.3
+    13 . 1.39 170.9 3.4
+    13 . 1.77 56.5 -38.3
+    13 . 1.59 351.4 -15.6
+    13 . 3.43 1.5 34.8
+    extend left
+  # 14 is GPS 46N 15.069' 13E 45.807' 1853m elevation
+    13 14 4.80 125.7 -13.3
+  endcenterline
+
+  # input "dripbone_cavern-1p.th2"
+  # input "dripbone_cavern-1s.th2"
+
+  # map m1p -projection plan
+  #   dripbone_cavern-1p
+  # endmap
+  # map m1s -projection extended
+  #   dripbone_cavern-1s
+  # endmap
+
+endsurvey
