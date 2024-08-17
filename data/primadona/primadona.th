@@ -617,11 +617,13 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2024/blues_and_twos/blues_and_twos.th"
 	input "./2024/discordant_bebop/discordant_bebop.th"
 	input "./2024/bad_vibes/bad_vibes.th"
+	input "./2024/sparkle_highway/sparkle_highway.th"
 
 	equate 0@shelobs_lair 15@mudaholic
 	equate 0@blues_and_twos 0@who_dies_first_resurvey
 	equate 17@blues_and_twos 21@delta_blues
 	equate 23@discordant_bebop 39@delta_blues
 	equate 0@bad_vibes 8@prima1
+	equate 43@sparkle_highway 21@delta_blues
 
 endsurvey
