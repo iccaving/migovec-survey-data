@@ -1,11 +1,32 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
-survey sparkle_highway -title "sparkle highway"
-    # passage beyond delta blues carrying on from disc bob 
+survey sparkle_highway -title "Sparkle Highway"
+  # passage beyond delta blues carrying on from disc bob 
+  # team ep+lt+js
+  #Stn 29 is PSS, the survey paper is mislabelled as 28 in the cave
+
+  input "sparkle_highway-p.th2"
+  #input "sparkle_highway-s.th2"
+
+  map m-all-p -projection plan
+     sparkle_highway-p
+  endmap
+
+  #map m-all-e -projection extended
+  #  sparkle_highway-sparkle_highways
+  #endmap
 
   centerline
     date 2024.07.18 
-    # team ep+lt+js 
+    team "Ellie Pizey" insts
+    team "Jergus Strucka" insts
+    team "Laura Temple" insts
+
+    explo-date 2024.07.18
+    explo-team "Ellie Pizey" insts
+    explo-team "Jergus Strucka" insts
+    explo-team "Laura Temple" insts
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -222,6 +243,7 @@ survey sparkle_highway -title "sparkle highway"
     29 30 2.64 195.2 -10.1
     extend left
     30 31 2.27 215.1 10.9
+    flags duplicate
     31 32 2.81 170.9 -3.5
     32 33 2.09 144.2 3.5
     extend right
@@ -237,15 +259,4 @@ survey sparkle_highway -title "sparkle highway"
     41 42 3.95 179.5 -9.8
     42 43 2.83 125.3 30.0
   endcenterline
-
-  # input "sparkle_highway-sparkle_highwayp.th2"
-  # input "sparkle_highway-sparkle_highways.th2"
-
-  # map msparkle_highwayp -projection plan
-  #   sparkle_highway-sparkle_highwayp
-  # endmap
-  # map msparkle_highways -projection extended
-  #   sparkle_highway-sparkle_highways
-  # endmap
-
 endsurvey

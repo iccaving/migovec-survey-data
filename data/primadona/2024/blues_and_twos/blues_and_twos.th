@@ -32,7 +32,9 @@ survey blues_and_twos -title "blues_and_twos"
     units compass clino degrees
     data normal from to length compass clino
     extend left
+    flags duplicate
     1 0 22.19 177.6 0.6
+    flags not duplicate
     # extend auto
     1 . 1.04 102.0 2.8
     1 . 1.66 257.3 -14.8
