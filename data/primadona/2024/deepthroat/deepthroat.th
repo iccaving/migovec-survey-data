@@ -2,10 +2,19 @@
 
 survey deepthroat -title "deepthroat"
     # enormous pitch after Pandora's approach 
-
+    # team jp Ch tb 
+    # maybe one of these stations is a PSS?
   centerline
     date 2024.07.25 
-    # team jp Ch tb 
+    team "James Perry" dog
+    team "Chris Hayes" dog
+    team "Thurston Blount" dog
+
+    explo-date 2024.07.25
+    explo-team "James Perry"
+    explo-team "Chris Hayes"
+    explo-team "Thurston Blount"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
