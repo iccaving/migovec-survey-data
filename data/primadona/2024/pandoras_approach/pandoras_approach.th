@@ -1,10 +1,21 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
-survey pandoras_approach -title "pandoras approach"
-
-  centerline
-    date 2024.07.23 
+survey pandoras_approach -title "Pandora's Approach"
     # team JJ CH BR 
+    # continuation of sparkle highway?
+    # Stn 0 is PSS?
+     
+  centerline
+    date 2024.07.23
+    team "Julien Jean" dog
+    team "Chris Hayes" dog
+    team "Ben Richards" dog
+    
+    explo-date 2024.07.23
+    explo-team "Julien Jean"
+    explo-team "Chris Hayes"
+    explo-team "Ben Richards"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

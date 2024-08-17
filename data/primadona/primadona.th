@@ -619,6 +619,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2024/bad_vibes/bad_vibes.th"
 	input "./2024/sparkle_highway/sparkle_highway.th"
 	input "./2024/bacchus_goldfish/bacchus_goldfish.th"
+	input "./2024/pandoras_approach/pandoras_approach.th"
 
 	equate 0@shelobs_lair 15@mudaholic
 	equate 0@blues_and_twos 0@who_dies_first_resurvey
@@ -627,5 +628,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 0@bad_vibes 8@prima1
 	equate 43@sparkle_highway 21@delta_blues
 	equate 18@bacchus_goldfish 0@klic_globin
+	equate 14@pandoras_approach 0@sparkle_highway
+
 
 endsurvey
