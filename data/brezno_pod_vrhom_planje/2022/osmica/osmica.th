@@ -4,6 +4,8 @@ survey osmica -title "Osmica 'Figure of Eight'" #Below new pitch in Planja
 
 	map m-all-p -projection plan 
 		osmica-1p
+		break
+		osmica-2p
 	endmap 
 
 	map m-all-e -projection extended 
@@ -18,11 +20,12 @@ survey osmica -title "Osmica 'Figure of Eight'" #Below new pitch in Planja
     team "Jana Čarga"
     team "Iztok Možir"
     team "Chris Hayes"
-		team "David Wilson"
-		explo-team "Jana Čarga"
+	team "David Wilson"
+
+	explo-team "Jana Čarga"
     explo-team "Iztok Možir"
     explo-team "Chris Hayes"
-		explo-team "David Wilson"
+	explo-team "David Wilson"
 
     units length meters
     units compass clino degrees
