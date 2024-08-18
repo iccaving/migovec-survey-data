@@ -11,7 +11,14 @@ survey deveti_krog -title "Deveti Krog"
 
    map m1p -projection plan
      deveti_krog-1p
+     deveti_krog-2p
+     deveti_krog-3p
+     deveti_krog-4p
    endmap
+
+   join deveti_krog-1p deveti_krog-2p
+   join deveti_krog-2p deveti_krog-3p
+   join deveti_krog-3p deveti_krog-4p
   
    map m-all-e -projection extended
      deveti_krog-2e
