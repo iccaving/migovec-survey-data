@@ -1,11 +1,19 @@
 # 2024.07.29 created by TopoDroid v 6.2.44
 
-survey down_the_rabbit_hole -title "down the rabbit hole"
+survey down_the_rabbit_hole -title "Down the Rabbit Hole"
     # down pitch from lumpaland stn0 
-
+    # team EP,BH,LT 
   centerline
     date 2024.07.27 
-    # team EP,BH,LT 
+    team "Ellie Pizey" insts
+    team "Ben Honan" insts
+    team "Laura Temple" insts
+
+    explo-date 2024.07.27
+    explo-team "Ellie Pizey"
+    explo-team "Ben Honan"
+    explo-team "Laura Temple"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

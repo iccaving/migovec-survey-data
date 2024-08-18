@@ -622,6 +622,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2024/pandoras_approach/pandoras_approach.th"
 	input "./2024/deepthroat/deepthroat.th"
 	input "./2024/loompa_land/loompa_land.th"
+	input "./2024/rabbit_hole/rabbit_hole.th"
 
 	equate 0@shelobs_lair 15@mudaholic
 	equate 0@blues_and_twos 0@who_dies_first_resurvey
@@ -633,5 +634,6 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 14@pandoras_approach 0@sparkle_highway
     equate 20@deepthroat 0@pandoras_approach
 	equate 29@loompa_land 10@deepthroat
+	equate 18@down_the_rabbit_hole 0@loompa_land
 
 endsurvey
