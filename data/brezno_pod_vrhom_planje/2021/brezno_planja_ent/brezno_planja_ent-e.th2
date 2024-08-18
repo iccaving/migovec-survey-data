@@ -1887,8 +1887,8 @@ endscrap
 
 scrap brezno_planja_ent-3e -projection extended -scale [0 0 96 0 0 0 1000 0 inch]
 
-point 2493.85 1812.6 label -align br -text "Entrance Chamber"
-point 1353.85 1732.6 label -align tl -text "South Chamber"
+point 2493.85 1812.6 label -align br -text "Entrance Chamber<lang:sl>Vhodna komora "
+point 1353.85 1732.6 label -align tl -text "South Chamber<lang:sl>Južna komora"
 point 1303.68 1632.99 station-name -align l -scale xs -text 7
 point 1425.93 1711.29 station-name -align tl -scale xs -text 6
 point 1619.11 1749.58 station-name -align tl -scale xs -text 5

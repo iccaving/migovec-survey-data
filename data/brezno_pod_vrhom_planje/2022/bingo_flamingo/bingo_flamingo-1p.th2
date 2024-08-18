@@ -136,7 +136,7 @@ line wall:invisible
   490.5569 454.5155
 endline
 
-point 478.387 500.753 label -align r -scale m -text "<bf>C2"
+point 478.387 500.753 label -align r -text "<bf>C2"
 point 665.523 197.141 label -align l -text "Bingo<br>Flamingo"
 line floor-step 
   333.0074 688.8713
@@ -1030,7 +1030,7 @@ endscrap
 
 scrap bingo_flamingo-1p1 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 573.6054 334.4585 altitude -align tr
+point 573.605 334.459 altitude -align tr
 point 445.509 315.451 station-name -align t -scale xs -text 9
 point 550.687 349.732 station-name -align t -scale xs -text 10
 point 542.789 286.723 station-name -align t -scale xs -text 11
@@ -1061,8 +1061,8 @@ line floor-step
   507.7463 351.0774 498.6674 334.9371 508.4189 330.2295
 endline
 
-point 786.796 265.651 label -align r -scale m -text "<bf>C2"
-point 635.747 336.165 label -align bl -scale m -text "<bf>C2"
+point 786.796 265.651 label -align r -text "<bf>C2"
+point 635.747 336.165 label -align bl -text "<bf>C2"
 line floor-step 
   714.2372 267.5598
   714.2372 267.5598 719.5569 234.5218 736.6359 234.2418
@@ -1183,7 +1183,7 @@ endscrap
 
 scrap bingo_flamingo-1p2 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 907.745 252.539 label -align bl -scale m -text "<bf>P10"
+point 881.745 250.539 label -align bl -text "<bf>P10"
 point 814.582 160.918 label -align bl -scale xs -text "<lang:en>loading tube<lang:sl>nakladalna cev"
 line floor-step 
   868.2948 201.2993
@@ -1376,7 +1376,7 @@ endscrap
 
 scrap bingo_flamingo-1p3 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 826.5627 209.5765 air-draught -orientation 112.44925547606258
+point 826.563 209.577 air-draught -orientation 112.44925547606258
 point 598.65 307.58 station -name 17
 line floor-step 
   776.6192 603.7309
