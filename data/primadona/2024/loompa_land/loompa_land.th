@@ -1,11 +1,19 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
-survey loompa_land -title "loompa land"
+survey loompa_land -title "Loompa Land"
     # long muddy tube down west from deepthroat st29 of loompa land is st10 of deepthroat 
-
+    # team jp Ch tb 
   centerline
     date 2024.07.25 
-    # team jp Ch tb 
+    team "Chris Hayes" dog
+    team "James Perry" dog
+    team "Thurston Blount" dog
+
+    explo-date 2024.07.25
+    explo-team "Chris Hayes"
+    explo-team "James Perry"
+    explo-team "Thurston Blount"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
