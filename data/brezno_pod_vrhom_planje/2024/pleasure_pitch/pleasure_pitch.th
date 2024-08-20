@@ -1,11 +1,18 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
-survey Pleasure_Pitch -title "Pleasure Pitch"
+survey pleasure_pitch -title "Pleasure Pitch"
     # third pitch at the far side of Bingo Flamingo. Dies in a choke. STN 6 is STN of Bingo Famimgco 
-
+    # team JS, CH 
   centerline
     date 2024.07.15 
-    # team JS, CH 
+    explo-date 2024.07.15
+
+    team "Jergus Strucka"
+    team "Chris Hayes"
+
+    explo-team "Jergus Strucka"
+    explo-team "Chris Hayes"   
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

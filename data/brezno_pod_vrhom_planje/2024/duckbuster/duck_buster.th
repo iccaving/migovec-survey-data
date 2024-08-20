@@ -2,10 +2,19 @@
 
 survey duck_buster -title "duck buster"
     # small pitch after house of cards 2 into a room before a 30m pitch 
-
+    # team ch br tb 
   centerline
     date 2024.07.28 
-    # team ch br tb 
+    explo-date 2024.07.28
+
+    team "Chris Hayes" dog
+    team "Ben Richards" dog 
+    team "Thurston Blount" dog
+
+    explo-team "Chris Hayes"
+    explo-team "Ben Richards"
+    explo-team "Thurston Blount"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
