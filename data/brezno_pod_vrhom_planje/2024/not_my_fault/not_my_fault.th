@@ -2,10 +2,17 @@
 
 survey not_my_fault -title "not my fault"
     # beyond osmica 
-
-  centerline
-    date 2024.07.10 
     # team Izi Arun 
+  centerline
+    date 2024.07.10
+    explo-date 2024.07.10 
+
+    team "Iztok Mozir" insts
+    team "Arun Paul" insts
+
+    explo-team "Iztok Mozir"
+    explo-team "Arun Paul"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

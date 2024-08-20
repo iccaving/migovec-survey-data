@@ -1,11 +1,18 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
-survey Knot_Yet_Named -title "Knot Yet Named"
-    # First pitch beside Bingo Flamingo that connects through a tight rift. Station 0 is in the rift above the pitch, and Station 7 is station 23 of Bingo Flamingo 
+survey knot_yet_named -title "Knot Yet Named"
+  # First pitch beside Bingo Flamingo that connects through a tight rift. Station 0 is in the rift above the pitch, and Station 7 is station 23 of Bingo Flamingo 
+  # team CH, JS
 
   centerline
     date 2024.07.15 
-    # team CH, JS 
+    explo-date 2024.07.15
+
+    team "Chris Hayes"
+    team "Jergus Strucka"
+    explo-team "Chris Hayes"
+    explo-team "Jergus Strucka"
+ 
     units length meters
     units compass clino degrees
     data normal from to length compass clino

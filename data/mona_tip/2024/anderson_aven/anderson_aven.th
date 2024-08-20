@@ -1,15 +1,24 @@
 # 2024.07.30 created by TopoDroid v 6.2.44
 
-survey Anderson_Aven -title "Anderson Aven"
+survey anderson_aven -title "Anderson Aven"
     # bolt climb above Neu Alliance 
-
+    # team CH, BH, LA 
   centerline
     date 2024.07.12 
-    # team CH, BH, LA 
+    team "Chris Hayes"
+    team "Ben Honan"
+    team "Leo Antwis"
+
+    explo-date 2024.07.12
+    explo-team "Chris Hayes"
+    explo-team "Ben Honan"
+    explo-team "Leo Antwis"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
     # extend auto
+    flags duplicate
     0 . 0.15 8.7 -24.2
     0 . 0.94 66.6 14.7
     0 . 1.71 256.0 4.7

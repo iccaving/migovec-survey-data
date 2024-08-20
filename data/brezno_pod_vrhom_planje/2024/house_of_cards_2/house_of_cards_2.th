@@ -1,11 +1,21 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
-survey House_Of_Cards_2 -title "House Of Cards 2"
-    # Continuation of House of Cards. Station 0 is station xx of House of Cards 
-
-  centerline
-    date 2024.07.15 
+survey house_of_cards_2 -title "House of Cards 2"
+    # Continuation of House of Cards. Station 0 is station xx of House of Cards # think this should be stn 26 is stn 5 of HoC
     # team EP, DPW, CH, JS 
+  centerline
+    date 2024.07.15
+    team "Ellie Pizey"
+    team "David Wilson"
+    team "Chris Hayes"
+    team "Jergus Strucka"
+
+    explo-date 2024.07.15
+    explo-team "Ellie Pizey"
+    explo-team "David Wilson"
+    explo-team "Chris Hayes"
+    explo-team "Jergus Strucka"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino

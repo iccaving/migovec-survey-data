@@ -173,8 +173,10 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 	join auld_alliance_resurvey-1p@auld_alliance_resurvey mona_tip11-3p@mona_tip11
 
 	######________________2024________________######
+	input "./2024/anderson_aven/anderson_aven.th"
 	input "./2024/mambo_number_5/mambo_number_5.th"
 
+	equate 0@anderson_aven 4@neu_alliance
 	equate 13@mambo_number_5 4@neu_alliance
 
 endsurvey

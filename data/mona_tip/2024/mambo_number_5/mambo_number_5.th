@@ -1,9 +1,19 @@
 # 2024.07.26 created by TopoDroid v 5.1.40
 
 survey mambo_number_5 -title "mambo number 5"
-
+#team BH LA LT
   centerline
-    date 2024.07.25 
+    date 2024.07.25
+    explo-date 2024.07.25
+
+    team "Ben Honan"
+    team "Laura Temple"
+    team "Leo Antwis"
+
+    explo-team "Ben Honan"
+    explo-team "Laura Temple"
+    explo-team "Leo Antwis"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
