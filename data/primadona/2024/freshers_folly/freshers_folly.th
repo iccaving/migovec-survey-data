@@ -2,10 +2,23 @@
 
 survey freshers_folly -title "freshers folly"
     # Small chamber off of spiral climb 
-
+    # team BR CH EP LA JJ 
   centerline
     date 2024.07.29 
-    # team BR CH EP LA JJ 
+    explo-date 2024.07.29
+
+    team "Ben Richards"
+    team "Chris Hayes"
+    team "Ellie Pizey"
+    team "Leo Antwis"
+    team "Julien Jean"
+
+    explo-team "Ben Richards"
+    explo-team "Chris Hayes"
+    explo-team "Ellie Pizey"
+    explo-team "Leo Antwis"
+    explo-team "Julien Jean"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
