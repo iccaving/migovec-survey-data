@@ -1,10 +1,18 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
 survey bacchus_goldfish -title "Bacchus' Goldfish"
-    # large fossil rift at lower north end of klic globin, accessed by climbing down under a drip 
+    # large fossil rift at lower north end of klic globin, accessed by climbing down under a drip
+    # named because we forgot where Artemis was and found this, and the god of wine deserved a credit 
     # Stn 0 is PSS, there are also a couple more cairned PSSs, can't remember the numbers.
     # Stn 18 is Klic globin cairn, it isn't numbered but we're pretty sure it's the PSS
-    # The going lead is a 10m-ish pitch in a large breakdown chamber
+    # The going lead is a 10m-ish pitch in a large breakdown chamber, there is also another rift crossing it with some rocks that need moving
+
+  input bacchus_goldfish-e.th2
+  # input bacchus_goldfish-p.th2
+
+  map m-all-e -projection extended
+    bacchus_goldfish-1e
+  endmap
 
   centerline
     date 2024.07.17
@@ -174,15 +182,4 @@ survey bacchus_goldfish -title "Bacchus' Goldfish"
     # extend auto
     18 . 5.44 249.6 7.5
   endcenterline
-
-  # input "Bacchus'_Goldfish-goldfishp.th2"
-  # input "Bacchus'_Goldfish-goldfishs.th2"
-
-  # map mgoldfishp -projection plan
-  #   Bacchus'_Goldfish-goldfishp
-  # endmap
-  # map mgoldfishs -projection extended
-  #   Bacchus'_Goldfish-goldfishs
-  # endmap
-
 endsurvey
