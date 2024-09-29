@@ -35,6 +35,7 @@ survey plateau -title "Migovec Plateau"
 	input "./mugo/mugo.th"
 	input "./coincidence/coincidence.th"
 	input "./dripbone/dripbone_cavern.th"
+	input "./pet_shop/2024/the_pet_shop.th"
 
 	map m-all-p -projection plan
 		m-all-p@gondolin
@@ -118,6 +119,9 @@ survey plateau -title "Migovec Plateau"
 
 		# MUGO
     	fix 7@mugo 404140 124443 1698
+
+		# PET SHOP
+		fix 14@the_pet_shop 404288 124013 1788
 
     	# PLANIKA
 		fix 15@planika 404230 124355 1787
