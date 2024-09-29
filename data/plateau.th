@@ -34,6 +34,7 @@ survey plateau -title "Migovec Plateau"
 	input "./rowan_cave/rowan_cave.th"
 	input "./mugo/mugo.th"
 	input "./coincidence/coincidence.th"
+	input "./dripbone/dripbone_cavern.th"
 
 	map m-all-p -projection plan
 		m-all-p@gondolin
@@ -78,6 +79,9 @@ survey plateau -title "Migovec Plateau"
 
 		# COINCIDENCE
 	    fix 0@coincidence_ent.coincidence 404773 123067 1310
+
+		# DRIPBONE
+		fix 14@dripbone_cavern 404657 124233 1853
 
         # GONDOLIN
 		fix bcairn@gondolin 404343 124264 1863
