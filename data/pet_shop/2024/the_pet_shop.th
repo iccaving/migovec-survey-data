@@ -9,7 +9,7 @@ survey the_pet_shop -title "the pet shop"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
-    extend right
+    extend left
     0 1 0.30 299.0 10.1
     # extend auto
     1 . 0.63 195.2 67.6
@@ -17,7 +17,7 @@ survey the_pet_shop -title "the pet shop"
     1 . 0.34 161.8 2.3
     1 . 0.25 227.0 -30.3
     1 . 0.41 212.7 -63.5
-    extend vertical
+    extend left
     1 2 0.86 265.2 -9.6
     # extend auto
     2 . 0.35 143.9 37.1
@@ -35,7 +35,7 @@ survey the_pet_shop -title "the pet shop"
     3 4 0.62 216.5 1.7
     # extend auto
     4 . 0.49 264.4 18.7
-    extend vertical
+    extend left
     4 5 2.00 264.7 18.9
     extend left
     5 6 2.93 235.8 -41.3
@@ -44,7 +44,7 @@ survey the_pet_shop -title "the pet shop"
     6 . 0.70 331.6 33.5
     6 . 0.61 350.9 -19.5
     6 . 0.63 359.6 -53.6
-    extend right
+    extend left
     6 7 2.44 293.7 -24.1
     7 8 2.18 75.4 -70.2
     extend left
@@ -60,7 +60,7 @@ survey the_pet_shop -title "the pet shop"
     9 . 0.79 182.3 37.5
     9 . 0.66 190.8 8.3
     9 . 0.56 189.7 -26.6
-    extend vertical
+    extend left
     9 10 1.81 261.4 -8.0
     # extend auto
     10 . 0.96 245.9 2.0
