@@ -12,8 +12,8 @@ on:
   workflow_dispatch:
 
 env:
-  THERION_VERSION: 6.0.4
-  THERION_PATH: ./therion-6.0.4
+  THERION_VERSION: 6.2.1
+  THERION_PATH: ./therion-6.2.1
   EXPECTED_OUTPUTS: >-
     brezno_pod_vrhom_planje.3d
     brezno_pod_vrhom_planje_plan_EN.pdf
