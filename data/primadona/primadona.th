@@ -620,7 +620,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2024/sparkle_highway/sparkle_highway.th"
 	input "./2024/bacchus_goldfish/bacchus_goldfish.th"
 	input "./2024/pandoras_approach/pandoras_approach.th"
-	input "./2024/deepthroat/deepthroat.th"
+	input "./2024/my_little_pitch/my_little_pitch.th"
 	input "./2024/loompa_land/loompa_land.th"
 	input "./2024/rabbit_hole/rabbit_hole.th"
 	input "./2024/freshers_folly/freshers_folly.th"
@@ -633,8 +633,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 43@sparkle_highway 21@delta_blues
 	equate 18@bacchus_goldfish 0@klic_globin
 	equate 14@pandoras_approach 0@sparkle_highway
-    equate 20@deepthroat 0@pandoras_approach
-	equate 29@loompa_land 10@deepthroat
+    equate 20@my_little_pitch 0@pandoras_approach
+	equate 29@loompa_land 10@my_little_pitch
 	equate 18@down_the_rabbit_hole 24@loompa_land
 	equate 0@freshers_folly 1@memorylane
 
