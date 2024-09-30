@@ -79,7 +79,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
       - name: Cache Therion
@@ -93,7 +93,7 @@ jobs:
         run: sudo apt update
       - name: Install Therion compilation dependencies
         if: steps.cache-therion.outputs.cache-hit != 'true'
-        run: sudo apt install -y bwidget lcdf-typetools libtk-img-dev libvtk9-dev libwxgtk3.2-dev tcl-dev survex texlive-latex-base # Pre-installed: gcc ghostscript imagemagick libfreetype6-dev libjpeg-dev libpng-dev zlib1g zlib1g-dev
+        run: sudo apt install -y bwidget lcdf-typetools libtk-img-dev libvtk7-dev libwxgtk3.0-gtk3-dev tcl-dev survex texlive-latex-base # Pre-installed: gcc ghostscript imagemagick libfreetype6-dev libjpeg-dev libpng-dev zlib1g zlib1g-dev
       - name: Install Therion runtime dependencies
         run: sudo apt install -y libproj-dev lcdf-typetools texlive-metapost survex
       - name: Download and unpack Therion
