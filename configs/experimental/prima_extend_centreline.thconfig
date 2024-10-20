@@ -1,4 +1,4 @@
-source ../../primadona/primadona.th
+source ../../data/primadona/primadona.th
 
 select primadona
 
@@ -12,4 +12,4 @@ layout local
 	symbol-assign point station AUT
 endlayout
 
-export map -projection extended -o ../../_outputs/primadona_centreline_extended.pdf -layout-debug station-names -layout local
+export map -projection extended -o ../../outputs/primadona_centreline_extended.pdf -layout-debug station-names -layout local

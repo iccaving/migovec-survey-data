@@ -13,13 +13,13 @@ encoding  utf-8
 #----------------------------------------------------------------------------------|
 # select a source data file.
 #source "../../m2m16m18.th"
-source "../../system_migovec.th"
+source "../../data/system_migovec.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../_layouts/base-p.thl"
-input "../../_layouts/base-e.thl"
-input "../../_layouts/mods.thl"
+input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -28,8 +28,9 @@ source
 		m-all-e@M16.m2m16m18.system_migovec
 		m-all-e@primadona_ubend_mona_tip.system_migovec
 		m-all-e@M18.m2m16m18.system_migovec
-		M2@m2m16m18.system_migovec
-		M16@m2m16m18.system_migovec
+		#M2@m2m16m18.system_migovec
+		#M16@m2m16m18.system_migovec
+		primadona@primadona_ubend_mona_tip.system_migovec
 		#m-all-e@vrtnarija.system_migovec
 		#vrtnarija@system_migovec
 		
@@ -49,6 +50,7 @@ select system_with_centreline
 layout ee
 	copy base-e
 	copy colour-by-new
+	copy show-centreline
 	scale 1 2000
 	fonts-setup 3 4 5 10 10
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Raziskave 2000-2019<br>Natančmost meritev IV/B<br><br>Primadona<br>kat. št.: 8282<br><br>U-Bend 571<br>kat. št.: 12114<br><br>Mona tip<br>kat. št.: 10180<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<br>Exploration: 2000-2019<br>BCRA grade 4-5b<br><br>Primadona<br>Cadastral number: 8282<br><br>U-Bend 571<br>Cadastral number: 12114<br><br>Mona tip<br>Cadastral number: 10180"
@@ -62,7 +64,7 @@ layout ee
 endlayout
 
 language en # slo not yet supported
-export map -projection extended -o ../../_outputs/system_migovec_EE_ENG.pdf -layout ee -layout-debug station-names
+export map -projection extended -o ../../outputs/system_migovec_EE_ENG.pdf -layout ee -layout-debug station-names
 #export map -projection extended -o ../../_outputs/primadona_ubend_mona_tip_EE_ENG.svg -layout ee
 #language en
 #export map -projection extended -o ../../_outputs/primadona_ubend_mona_tip_EE_ENG.pdf -layout ee
