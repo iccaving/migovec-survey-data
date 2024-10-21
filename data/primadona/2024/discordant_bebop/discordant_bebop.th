@@ -2,15 +2,15 @@
 
 survey discordant_bebop -title "discordant bebop"
     # connects in to delta blues 
-    # input "discordant_bebop-1p.th2"
-    # input "discordant_bebop-1s.th2"
+     input "discordant_bebop-1p.th2"
+     input "discordant_bebop-1s.th2"
 
-#  map m-all-p -projection plan
-#      discordant_bebop-1p
-#    endmap
-#   map m-all-e -projection extended
-#      discordant_bebop-1s
-#    endmap
+  map m-all-p -projection plan
+    discordant_bebop-1p
+  endmap
+  map m-all-e -projection extended
+    discordant_bebop-1s
+  endmap
 
   centerline
     date 2024.07.10 
@@ -173,15 +173,5 @@ survey discordant_bebop -title "discordant bebop"
     extend right
     22 23 1.06 6.0 35.0
   endcenterline
-
-  # input "discordant_bebop-1p.th2"
-  # input "discordant_bebop-1s.th2"
-
-  # map m1p -projection plan
-  #   discordant_bebop-1p
-  # endmap
-  # map m1s -projection extended
-  #   discordant_bebop-1s
-  # endmap
 
 endsurvey
