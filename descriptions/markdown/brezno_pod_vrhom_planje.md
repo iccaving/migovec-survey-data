@@ -21,7 +21,7 @@ header-includes:
 
 <!-- \CenteredFigure{../../outputs/Planja_routes.png} -->
 
-\CenteredFigure{../../outputs/brezno_pod_vrhom_planje_plan.pdf}
+<!--\CenteredFigure{../../outputs/brezno_pod_vrhom_planje_plan.pdf}>
 
 <!-- \CenteredFigure{../../outputs/brezno_pod_vrhom_planje_ee.pdf} -->
 
