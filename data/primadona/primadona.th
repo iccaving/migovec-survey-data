@@ -641,5 +641,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	join bacchus_goldfish-1p@bacchus_goldfish klic_globin-1p@klic_globin
 	join bacchus_goldfish-1e@bacchus_goldfish klic_globin-1s@klic_globin
+	join line1@delta_blues line1@blues_and_twos
+	join line2@delta_blues line2@blues_and_twos
+	join line4@delta_blues line2@blues_and_twos
+	join line3@delta_blues line1@blues_and_twos
 
 endsurvey
