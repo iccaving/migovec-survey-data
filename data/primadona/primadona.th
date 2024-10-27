@@ -638,4 +638,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 18@down_the_rabbit_hole 24@loompa_land
 	equate 0@freshers_folly 1@memorylane
 
+	join line1@delta_blues line1@blues_and_twos
+	join line2@delta_blues line2@blues_and_twos
+	join line4@delta_blues line2@blues_and_twos
+	join line3@delta_blues line1@blues_and_twos
+
 endsurvey
