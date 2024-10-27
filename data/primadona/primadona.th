@@ -493,9 +493,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 
 	join the_aqueduct-2p@the_aqueduct ad_aspera_per_aqua-1p@ad_aspera_per_aqua
-	join l1@klic_globin l1@artemis
-	join l2@klic_globin l2@artemis
-	#join artemis-1p@artemis tartarus-1p@tartarus
+	#join l1@klic_globin l1@artemis
+	#join l2@klic_globin l2@artemis
+	join klic_globin-3p@klic_globin artemis-1p@artemis
+	join artemis-1p@artemis tartarus-1p@tartarus
 	join artemis-3p@artemis poseidon_rift-3p@poseidon_rift
 	join lachrymosa-1p@lachrymosa artemis-1p@artemis
 	join s1_l1@forget_me_not s1_l5@the_stile
@@ -637,5 +638,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 29@loompa_land 10@my_little_pitch
 	equate 18@down_the_rabbit_hole 24@loompa_land
 	equate 0@freshers_folly 1@memorylane
+
+	join bacchus_goldfish-1p@bacchus_goldfish klic_globin-1p@klic_globin
+	join bacchus_goldfish-1e@bacchus_goldfish klic_globin-1s@klic_globin
 
 endsurvey
