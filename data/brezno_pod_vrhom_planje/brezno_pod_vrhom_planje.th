@@ -43,6 +43,8 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 	equate 0@humpty_dumpty 1@prazen_list
 
 	join humpty_dumpty-1p@humpty_dumpty prazen_list-3p@prazen_list
+	join l1@house_of_cards l1@humpty_dumpty #Elevation force join
+	join l2@house_of_cards l2@humpty_dumpty #Eelevation force join
 
 	###__________2024____________###
 	input "./2024/one_at_a_chime/one_at_a_chime.th"
@@ -60,4 +62,5 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 	equate 6@pleasure_pitch 23@bingo_flamingo
 
 	join one_at_a_chime-1e@one_at_a_chime osmica-1e@osmica
+	join house_of_cards-1e@house_of_cards house_of_cards_2-1e@house_of_cards_2
 endsurvey

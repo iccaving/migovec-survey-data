@@ -148,7 +148,7 @@ line wall
   675.79 211.39 700.07 202.19 714.82 197.17
 endline
 
-line wall -subtype blocks
+line wall -id l2 -subtype blocks
   716.2864 197.1418
   732.8664 197.1418 748.98 193.51 760.81 181.05
   767.11 174.41 773.86 161.96 777.5 154.11
@@ -184,7 +184,7 @@ line wall -subtype blocks
   1476.0447 119.7404
 endline
 
-line wall -subtype blocks
+line wall -id l1 -subtype blocks
   1566.62 190.05
   1568.31 190.54 1569.98 191.14 1571.68 191.61
   1579.69 193.86 1584.19 197.08 1592.1 197.62
