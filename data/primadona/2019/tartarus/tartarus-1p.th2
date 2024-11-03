@@ -3,8 +3,23 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap tartarus-1p -scale [0 0 39 0 0 0 1 0 m] -projection plan
+scrap tartarus-1p -projection plan -scale [0 0 39 0 0 0 1 0 m]
 
+line wall -subtype presumed
+  365.6 1360.67
+  365.6 1360.67 372.9031 1417.7574 367.5667 1430.3512
+  362.2304 1442.9449 381.2278 1490.545 381.6547 1492.6795
+  382.0816 1494.8141 418.1552 1721.9286 418.1552 1721.9286
+endline
+
+line wall -subtype presumed
+  265.536 1745.1949
+  265.536 1745.1949 255.9306 1475.3898 255.9306 1470.4804
+  255.9306 1465.571 271.5127 1386.5932 271.7262 1378.482
+  271.9396 1370.3708 281.94 1342.76 281.94 1342.76
+endline
+
+point 545.2892 725.3187 label -align l -attr level 4 -text Tartarus
 line wall 
   397.8771 328.5048
   397.8771 328.5048 394.6753 340.4582 394.2484 341.5254
@@ -90,21 +105,18 @@ line rock-border -close on
   303.62 1243.56
   303.53 1236.64
   310.59 1234.65
-  313.47 1245.13
 endline
 
 line rock-border -close on
   315.0 1231.69
   304.54 1227.34
   310.97 1222.71
-  315.0 1231.69
 endline
 
 line rock-border -close on
   332.25 1232.15
   323.27 1235.32
   322.25 1227.8
-  332.25 1232.15
 endline
 
 line rock-border -close on
@@ -112,14 +124,12 @@ line rock-border -close on
   322.39 1252.37
   322.37 1244.69
   332.24 1242.08
-  331.79 1253.23
 endline
 
 line rock-border -close on
   332.25 1263.0
   321.26 1262.89
   325.16 1256.1
-  332.25 1263.0
 endline
 
 line rock-border -close on
@@ -127,13 +137,11 @@ line rock-border -close on
   295.08 1262.66
   287.67 1261.32
   286.88 1253.82
-  302.33 1258.42
 endline
 
 line rock-border -close on
   301.11 1248.49
   292.23 1244.94
-  301.11 1248.49
 endline
 
 line rock-border -close on
@@ -142,7 +150,6 @@ line rock-border -close on
   308.43 1216.57
   312.53 1207.71
   320.23 1201.38
-  326.9 1217.18
 endline
 
 line rock-border -close on
@@ -150,7 +157,6 @@ line rock-border -close on
   293.34 1223.6
   292.94 1215.58
   305.52 1211.53
-  305.07 1223.44
 endline
 
 line rock-border -close on
@@ -158,17 +164,15 @@ line rock-border -close on
   311.26 1199.19
   309.23 1192.55
   315.9 1186.41
-  324.0 1200.68
 endline
 
 line wall -outline in
   298.55 1271.07
   298.55 1271.07 285.6255 1272.6694 283.53 1278.14
-  281.4344 1283.6106 288.0756 1290.3106 290.74 1295.23
-  293.4044 1300.1493 293.5517 1306.9156 296.4718 1307.3598
-  299.3919 1307.804 299.943 1307.3548 301.25 1305.99
-  302.557 1304.6247 303.6458 1301.66 306.35 1299.02
-  309.0542 1296.38 314.2876 1295.0417 317.8755 1291.0049
+  281.4344 1283.6106 289.2496 1287.1088 291.914 1292.0282
+  294.6687 1295.9874 293.2402 1293.8063 299.1155 1297.9855
+  300.4225 1296.6202 304.8198 1297.1775 307.524 1294.5375
+  310.2282 1291.8975 314.2876 1295.0417 317.8755 1291.0049
   321.4635 1286.9681 330.0645 1281.7077 326.52 1274.8
   322.9755 1267.8923 298.55 1271.07 298.55 1271.07
 endline
@@ -187,7 +191,6 @@ line rock-border -close on
   392.92 1281.37
   389.58 1295.6
   386.12 1305.5
-  384.27 1309.1
 endline
 
 line rock-border -close on
@@ -199,7 +202,6 @@ line rock-border -close on
   328.18 1299.85
   339.81 1294.0
   349.4 1289.76
-  359.41 1304.34
 endline
 
 line rock-border -close on
@@ -209,7 +211,6 @@ line rock-border -close on
   302.45 1318.14
   306.16 1309.13
   318.69 1300.01
-  323.11 1325.78
 endline
 
 line rock-border -close on
@@ -221,7 +222,6 @@ line rock-border -close on
   356.05 1212.39
   370.9 1203.07
   386.64 1205.13
-  392.37 1233.26
 endline
 
 line rock-border -close on
@@ -243,7 +243,6 @@ line rock-border -close on
   368.7 1166.1
   366.63 1192.37
   364.8 1238.9
-  345.03 1243.0
 endline
 
 line rock-border -close on
@@ -260,7 +259,6 @@ line rock-border -close on
   383.37 1143.27
   392.43 1144.57
   402.09 1146.49
-  411.9 1156.7
 endline
 
 line floor-step 
@@ -276,7 +274,6 @@ line rock-border -close on
   376.47 1328.52
   366.21 1329.9
   368.55 1323.12
-  376.47 1328.52
 endline
 
 line rock-border -close on
@@ -284,14 +281,12 @@ line rock-border -close on
   359.16 1346.36
   351.95 1341.04
   359.05 1335.56
-  371.49 1341.05
 endline
 
 line rock-border -close on
   349.55 1332.3
   339.04 1330.53
   344.22 1322.57
-  349.55 1332.3
 endline
 
 line rock-border -close on
@@ -299,14 +294,12 @@ line rock-border -close on
   361.57 1319.31
   354.55 1316.96
   358.08 1306.89
-  369.27 1315.14
 endline
 
 line rock-border -close on
   362.75 1328.35
   354.17 1329.47
   349.38 1323.98
-  362.75 1328.35
 endline
 
 line rock-border -close on
@@ -314,7 +307,6 @@ line rock-border -close on
   329.16 1333.13
   323.79 1327.29
   330.42 1322.19
-  337.04 1332.64
 endline
 
 line rock-border -close on
@@ -322,14 +314,12 @@ line rock-border -close on
   308.68 1346.23
   305.23 1340.7
   312.71 1336.07
-  318.01 1346.36
 endline
 
 line rock-border -close on
   434.27 1216.75
   421.9 1218.39
   417.2 1209.52
-  434.27 1216.75
 endline
 
 line rock-border -close on
@@ -337,7 +327,6 @@ line rock-border -close on
   424.84 1197.68
   425.64 1188.79
   433.84 1183.14
-  436.6 1198.39
 endline
 
 line rock-border -close on
@@ -345,7 +334,6 @@ line rock-border -close on
   440.69 1180.9
   433.56 1174.83
   446.48 1165.21
-  452.33 1181.19
 endline
 
 line rock-border -close on
@@ -353,7 +341,6 @@ line rock-border -close on
   436.25 1159.94
   438.12 1148.17
   448.92 1146.55
-  449.71 1160.79
 endline
 
 line rock-border -close on
@@ -361,7 +348,6 @@ line rock-border -close on
   434.44 1138.42
   430.89 1127.98
   440.66 1126.39
-  446.21 1135.72
 endline
 
 line rock-border -close on
@@ -369,7 +355,6 @@ line rock-border -close on
   433.79 1120.27
   430.23 1108.89
   439.8 1103.65
-  449.71 1119.69
 endline
 
 line rock-border -close on
@@ -377,7 +362,6 @@ line rock-border -close on
   414.21 1176.53
   412.84 1168.48
   423.2 1165.45
-  425.53 1176.23
 endline
 
 line rock-border -close on
@@ -385,7 +369,6 @@ line rock-border -close on
   413.23 1157.03
   407.31 1150.18
   418.83 1145.73
-  424.07 1157.58
 endline
 
 line rock-border -close on
@@ -393,7 +376,6 @@ line rock-border -close on
   401.93 1209.31
   397.83 1202.11
   406.38 1192.85
-  412.42 1210.34
 endline
 
 line rock-border -close on
@@ -405,7 +387,6 @@ line rock-border -close on
   382.76 997.21
   387.25 981.57
   391.73 973.82
-  403.56 1000.84
 endline
 
 line rock-border -close on
@@ -425,7 +406,6 @@ line rock-border -close on
   352.41 999.12
   361.07 998.56
   373.04 999.18
-  383.07 1025.24
 endline
 
 line rock-border -close on
@@ -445,7 +425,6 @@ line rock-border -close on
   379.73 1094.99
   384.19 1108.66
   385.49 1118.88
-  375.27 1136.84
 endline
 
 line rock-border -close on
@@ -468,7 +447,6 @@ line rock-border -close on
   385.66 1044.79
   394.12 1030.98
   400.96 1023.94
-  402.26 1028.49
 endline
 
 line rock-border -close on
@@ -477,7 +455,6 @@ line rock-border -close on
   416.73 1052.89
   417.22 1044.48
   427.37 1046.19
-  431.52 1062.0
 endline
 
 line rock-border -close on
@@ -485,14 +462,9 @@ line rock-border -close on
   421.22 1095.38
   416.73 1085.76
   426.0 1083.48
-  431.52 1096.82
 endline
 
-line label -text Tartarus
-  537.0 347.0
-  537.0 347.0 575.43 652.92 560.0 955.0
-endline
-
+point 528.3259 -1215.8354 label -align tr -text Tartarus
 line floor-step 
   368.75 938.71
   368.75 968.54 349.04 996.63 348.63 1025.79
@@ -507,7 +479,6 @@ line rock-border -close on
   328.57 1029.41
   322.49 1022.73
   328.87 1016.76
-  337.22 1029.65
 endline
 
 line rock-border -close on
@@ -515,7 +486,6 @@ line rock-border -close on
   319.44 1045.52
   317.11 1036.28
   327.09 1034.13
-  329.2 1046.21
 endline
 
 line rock-border -close on
@@ -524,7 +494,6 @@ line rock-border -close on
   308.55 1057.92
   316.56 1051.76
   329.99 1051.08
-  314.75 1074.62
 endline
 
 line rock-border -close on
@@ -532,21 +501,18 @@ line rock-border -close on
   305.32 1097.91
   301.77 1090.31
   306.85 1082.17
-  315.27 1098.85
 endline
 
 line rock-border -close on
   304.29 1114.36
   292.3 1116.45
   296.44 1106.09
-  304.29 1114.36
 endline
 
 line rock-border -close on
   313.32 1158.78
   299.52 1159.15
   302.1 1146.5
-  313.32 1158.78
 endline
 
 line rock-border -close on
@@ -554,7 +520,6 @@ line rock-border -close on
   317.03 1127.65
   330.97 1117.9
   341.69 1121.28
-  331.12 1138.42
 endline
 
 line rock-border -close on
@@ -563,7 +528,6 @@ line rock-border -close on
   285.68 1184.15
   289.51 1173.15
   298.05 1170.9
-  294.78 1197.32
 endline
 
 line rock-border -close on
@@ -571,28 +535,24 @@ line rock-border -close on
   324.83 1008.47
   323.83 999.53
   335.85 994.8
-  333.56 1008.61
 endline
 
 line rock-border -close on
   324.52 1020.37
   311.19 1015.58
   317.8 1009.94
-  324.52 1020.37
 endline
 
 line rock-border -close on
   306.91 1048.61
   298.71 1047.93
   301.47 1036.45
-  306.91 1048.61
 endline
 
 line rock-border -close on
   297.65 1076.64
   295.31 1067.82
   300.09 1057.88
-  297.65 1076.64
 endline
 
 line floor-step 
@@ -639,7 +599,6 @@ line rock-border -close on
   356.18 604.61
   362.19 594.98
   375.81 599.46
-  364.02 640.76
 endline
 
 line rock-border -close on
@@ -648,14 +607,12 @@ line rock-border -close on
   341.99 675.47
   343.94 664.34
   353.95 660.8
-  350.8 687.56
 endline
 
 line rock-border -close on
   350.12 729.96
   346.4 718.51
   352.59 708.05
-  350.12 729.96
 endline
 
 line rock-border -close on
@@ -664,7 +621,6 @@ line rock-border -close on
   336.29 757.25
   342.62 746.77
   350.91 747.93
-  346.95 768.71
 endline
 
 point 320.4 839.15 clay -scale xs

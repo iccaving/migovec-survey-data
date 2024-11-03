@@ -2,19 +2,20 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 2006.900000 1758.400000
 ##XTHERION## xth_me_area_zoom_to 100
 
+
 scrap tartarus-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 
-line wall:invisible
+line wall:invisible 
   262.27 967.25
   42.7688 942.287
 endline
 
-line wall:invisible
+line wall:invisible 
   -35.29 815.62
   -97.93 788.04
 endline
 
-line wall:invisible
+line wall:invisible 
   1378.4068 39.1169
   1365.3678 212.3491
 endline
@@ -22,14 +23,14 @@ endline
 point 1190.6911 198.8875 station -name 10
 point 949.6552 272.6472 station -name 9
 point 630.9082 347.7239 station -name 8
-line wall
+line wall 
   1365.3678 212.3491
   1259.1932 236.5644
   1182.8202 260.172
   1138.3479 281.3603
 endline
 
-line wall
+line wall 
   1191.5951 152.5458
   1191.5951 152.5458 1207.0373 148.7841 1207.0373 139.4705
   1207.0373 130.157 1221.939 137.8407 1229.3898 128.5271
@@ -38,9 +39,8 @@ line wall
   1378.4068 39.1169
 endline
 
-point -260.7797 705.9678 label -align l -text Tartarus -scale l -attr level 3
-
-line wall
+point -3.7254 322.2491 label -align l -attr level 3 -scale l -text Tartarus
+line wall 
   127.84 487.36
   210.7418 421.4836
   281.8671 421.4836
@@ -52,7 +52,7 @@ line wall
   1191.5951 152.5458
 endline
 
-line wall
+line wall 
   1138.3479 281.3603
   1138.3479 281.3603 1030.0005 321.3812 1014.1949 321.3812
   998.3892 321.3812 856.1385 366.1638 837.6986 366.1638
@@ -294,8 +294,8 @@ line rock-border -close on
   198.49 843.32
 endline
 
-point 269.29 767.21 water-flow -orientation 180
-line wall
+point 269.29 767.21 water-flow -orientation 180.0
+line wall 
   336.32 642.25
   335.51 648.68 334.6 655.1 333.91 661.54
   333.33 666.92 334.1 672.55 332.5 677.72
@@ -335,7 +335,7 @@ line rock-border -close on
   148.18 627.14
 endline
 
-line wall
+line wall 
   472.98 451.68
   466.18 449.3 459.86 444.63 452.67 444.32
   430.27 443.34 409.09 457.56 387.94 462.67
@@ -358,24 +358,24 @@ line wall
   344.97 625.75 348.67 632.12 336.32 642.25
 endline
 
-line wall:blocks
+line wall:blocks 
   45.69 942.97
   53.67 908.84 47.07 870.52 35.96 837.44
 endline
 
-line wall:blocks
+line wall:blocks 
   35.96 837.44
   0.26 825.76 -19.3 823.68 -35.29 815.62
 endline
 
-line wall:blocks
+line wall:blocks 
   -97.93 788.04
   -98.8 781.46 -98.99 770.67 -103.11 764.18
   -110.91 751.87 -128.36 748.05 -137.12 736.85
   -142.55 729.9 -146.09 721.26 -151.07 713.95
 endline
 
-line wall:blocks
+line wall:blocks 
   -151.07 713.95
   -177.27 701.57 -181.48 701.92 -183.37 699.27
   -185.89 695.73 -185.44 684.1 -185.44 679.22
@@ -385,7 +385,7 @@ line wall:blocks
   -153.16 606.3 -144.87 602.86 -137.4 598.23
 endline
 
-line wall:blocks
+line wall:blocks 
   -137.4 598.23
   -116.74 586.33 -110.11 585.66 -104.32 582.81
   -101.64 581.49 -100.47 578.24 -98.46 576.03
@@ -406,3 +406,4 @@ point 204.77 673.08 station -name 5
 point 178.96 534.51 station -name 6
 point 278.08 473.2 station -name 7
 endscrap
+

@@ -1,0 +1,77 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-anderson_aven-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+    line survey
+        -12.20 -100.43
+        -11.23 -100.98
+    endline
+    line survey
+        -12.20 -100.43
+        -11.09 -98.62
+    endline
+    line survey
+        -12.20 -100.43
+        -12.09 -99.33
+    endline
+    line survey
+        -12.20 -100.43
+        78.13 -55.00
+    endline
+    line survey
+        -12.20 -100.43
+        -20.70 -8.62
+    endline
+    line survey
+        -12.20 -100.43
+        -42.98 -86.34
+    endline
+    line survey
+        -42.98 -86.34
+        -45.22 -85.47
+    endline
+    line survey
+        -42.98 -86.34
+        -40.42 -83.35
+    endline
+    line survey
+        -42.98 -86.34
+        -54.82 100.98
+    endline
+    line survey
+        -42.98 -86.34
+        -1.86 -82.24
+    endline
+    line survey
+        -42.98 -86.34
+        78.72 -70.35
+    endline
+    line survey
+        -42.98 -86.34
+        -57.69 -23.66
+    endline
+    line survey
+        -57.69 -23.66
+        -73.86 -16.18
+    endline
+    line survey
+        -57.69 -23.66
+        -78.72 -11.14
+    endline
+    line survey
+        -78.72 -11.14
+        -57.94 -3.74
+    endline
+    point -12.20 -100.43 station-name -align tr -scale xs -text 0
+    point -42.98 -86.34 station-name -align tr -scale xs -text 1
+    point -57.69 -23.66 station-name -align tr -scale xs -text 2
+    point -78.72 -11.14 station-name -align tr -scale xs -text 3
+endscrap
+
+scrap anderson_aven-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+    point -12.20 -100.43 station -name 0
+    point -42.98 -86.34 station -name 1
+    point -57.69 -23.66 station -name 2
+    point -78.72 -11.14 station -name 3
+endscrap

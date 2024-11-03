@@ -1,8 +1,19 @@
 # 2024.07.30 created by TopoDroid v 5.1.40
 
-survey duck_buster -title "duck buster"
-    # small pitch after house of cards 2 into a room before a 30m pitch 
-    # team ch br tb 
+survey duckbuster -title "Duckbuster"
+    # small pitch after house of cards 2 into a room before a 30m pitch with constricted pitch head
+    # Named after Dangerous Dick and the Duckbusters
+    # team ch br tb
+    input duckbuster-p.th2
+    input duckbuster-e.th2
+
+    map m-all-p -projection plan
+      duckbuster-1p
+    endmap
+    map m-all-e -projection extended
+      duckbuster-1e
+    endmap
+
   centerline
     date 2024.07.28 
     explo-date 2024.07.28

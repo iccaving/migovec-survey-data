@@ -2,6 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 3326.000000 3810.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
+
 scrap klic_globin-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 
 point 1196.683 613.6743 u:flag -align r -attr text 5 -attr code 4
@@ -163,34 +164,8 @@ line pit
   1019.9615 1142.1143 983.5248 1149.5648 957.1139 1110.9664
 endline
 
-line label -attr level 3 -text "Klic Globin"
-  754.7125 1225.0567
-  754.7125 1225.0567 992.0238 1268.5944 1232.4011 1259.3963
-endline
-
 line wall 
-  1187.8255 841.9371
-  1187.8255 841.9371 1188.2506 843.8205 1190.9356 845.279
-  1194.4258 847.1747 1200.5276 848.805 1202.0833 849.2947
-  1209.422 851.605 1214.3849 849.6896 1213.8906 858.5952
-  1212.7969 878.3002
-  1211.4844 887.9253
-  1209.5377 897.4691
-  1203.4792 913.9797
-  1195.486 930.99
-  1188.5629 948.724
-  1180.6004 965.4738
-  1170.6848 982.058
-  1159.4202 999.7061
-  1150.6146 1019.1969
-  1140.4292 1033.8096
-  1124.3448 1054.0853
-  1109.4929 1066.1931
-  1092.1115 1078.077
-  1076.5759 1091.353
-  1061.5983 1102.0841
-  1047.5865 1114.474
-  1032.287 1128.0258
+  1031.3952 1129.1852
   1019.9615 1142.1143
   1010.7097 1165.1742
   997.3075 1177.8245
@@ -211,12 +186,27 @@ line wall
   794.2154 854.9002
 endline
 
+line wall 
+  1187.8255 841.9371
+  1187.8255 841.9371 1188.2506 843.8205 1190.9356 845.279
+  1194.4258 847.1747 1200.5276 848.805 1202.0833 849.2947
+  1209.422 851.605 1214.3849 849.6896 1213.8906 858.5952
+  1212.7969 878.3002
+  1211.4844 887.9253
+  1209.5377 897.4691
+  1203.4792 913.9797
+  1195.486 930.99
+  1188.5629 948.724
+  1180.6004 965.4738
+  1170.6848 982.058
+  1159.4202 999.7061
+endline
+
 line rock-border -close on
   1064.3823 622.2739
   1044.7596 621.6607
   1042.92 610.6229
   1076.0332 606.3305
-  1064.3823 622.2739
 endline
 
 line rock-border -close on
@@ -232,7 +222,6 @@ line rock-border -close on
   991.4106 652.321
   998.1559 640.0569
   1027.5898 654.1606
-  1011.6464 662.7455
 endline
 
 line rock-border -close on
@@ -240,7 +229,6 @@ line rock-border -close on
   945.4201 624.1135
   940.5144 610.6229
   958.9106 603.8776
-  962.5899 619.821
 endline
 
 line rock-border -close on
@@ -256,7 +244,6 @@ line rock-border -close on
   1014.0993 591.0003
   1007.354 575.0569
   1017.1653 573.2173
-  1022.6842 589.7739
 endline
 
 line rock-border -close on
@@ -272,7 +259,6 @@ line rock-border -close on
   977.3068 534.5852
   977.3068 524.1607
   987.1182 523.5475
-  988.9578 532.1324
 endline
 
 line rock-border -close on
@@ -280,7 +266,6 @@ line rock-border -close on
   984.6653 502.0852
   970.5615 491.0475
   977.92 480.623
-  993.8634 487.9814
 endline
 
 line rock-border -close on
@@ -288,7 +273,6 @@ line rock-border -close on
   1001.2219 518.0286
   1000.6087 498.406
   1017.1653 500.2456
-  1011.0332 519.8682
 endline
 
 line rock-border -close on
@@ -298,7 +282,6 @@ line rock-border -close on
   969.0592 701.8406
   969.6877 739.7153
   974.0936 749.1189
-  986.4865 761.9748
 endline
 
 line rock-border -close on
@@ -330,7 +313,6 @@ line rock-border -close on
   944.1936 916.6134
   945.4201 895.7644
   980.9861 898.2172
-  974.854 924.5851
 endline
 
 line rock-border -close on
@@ -338,7 +320,6 @@ line rock-border -close on
   1104.854 900.67
   1106.6936 876.7549
   1129.3823 879.2077
-  1128.1558 899.4436
 endline
 
 line rock-border -close on
@@ -346,7 +327,6 @@ line rock-border -close on
   1044.1464 835.0568 1024.5238 834.4436 1024.5238 830.1512
   1024.5238 825.8587 1020.8446 803.17 1020.8446 803.17
   1054.571 805.0097
-  1044.1464 835.0568
 endline
 
 point 988.345 594.066 passage-height -align t -scale xs -value 70
@@ -359,7 +339,6 @@ line rock-border -close on
   1003.5981 818.6842
   1039.854 847.321
   1019.6181 895.7644
-  974.2408 888.4059
 endline
 
 line floor-step -close on
@@ -373,7 +352,6 @@ line floor-step -close on
   985.8917 1034.9624
   1000.6087 1022.0851
   1024.5238 1049.0662
-  1027.5898 1072.9813
 endline
 
 line floor-step -close on
@@ -387,7 +365,6 @@ line floor-step -close on
   1039.854 847.321
   1091.3634 882.2738
   1067.8868 913.3174
-  1042.6288 911.4379
 endline
 
 line rock-border -close on
@@ -397,7 +374,6 @@ line rock-border -close on
   1042.6288 911.4379
   1059.4214 943.2143
   1054.525 980.154
-  1011.1559 1001.653
 endline
 
 line rock-border -close on
@@ -405,7 +381,6 @@ line rock-border -close on
   901.9222 978.44
   900.334 934.7889
   933.9623 913.2683
-  957.8375 982.5424
 endline
 
 line rock-border -close on
@@ -413,7 +388,6 @@ line rock-border -close on
   952.2665 1016.5907
   980.8665 985.728
   1003.1964 1014.3954
-  987.2807 1038.2829
 endline
 
 line rock-border -close on
@@ -421,7 +395,6 @@ line rock-border -close on
   988.3446 1108.5473
   968.7219 1111.6133
   957.6842 1090.1511
-  990.1842 1093.2171
 endline
 
 line rock-border -close on
@@ -429,7 +402,6 @@ line rock-border -close on
   1012.8729 1111.0001
   1042.92 1089.5379
   1025.137 1076.6605
-  998.7691 1093.2171
 endline
 
 line rock-border -close on
@@ -437,7 +409,6 @@ line rock-border -close on
   1041.6936 1079.1134
   1041.6936 1079.1134 1054.571 1052.1322 1051.5049 1052.1322
   1048.4389 1052.1322 1024.5238 1049.0662 1024.5238 1049.0662
-  1027.5898 1072.9813
 endline
 
 line rock-border -close on
@@ -445,7 +416,6 @@ line rock-border -close on
   986.5049 1052.7454
   986.5049 1052.7454 989.571 1029.4436 991.4106 1030.67
   993.2502 1031.8964 1015.3257 1049.0662 1015.3257 1049.0662
-  1006.1276 1058.8775
 endline
 
 line rock-border -close on
@@ -453,7 +423,6 @@ line rock-border -close on
   934.3823 1071.7549
   922.7314 1065.0096
   928.8635 1057.0379
-  941.1276 1061.9435
 endline
 
 line rock-border -close on
@@ -469,7 +438,6 @@ line rock-border -close on
   955.8446 1078.5001
   944.8068 1069.302
   962.5899 1054.5851
-  976.6936 1058.8775
 endline
 
 line rock-border -close on
@@ -477,7 +445,6 @@ line rock-border -close on
   993.2502 1084.019
   987.1182 1069.302
   997.5427 1063.7832
-  1002.4483 1074.2077
 endline
 
 line rock-border -close on
@@ -486,7 +453,6 @@ line rock-border -close on
   1016.7238 1002.0516
   1054.6967 980.1539
   1073.5804 1031.8964
-  1066.8596 1044.6542
 endline
 
 line rock-border -close on
@@ -495,7 +461,6 @@ line rock-border -close on
   1067.8868 913.3174
   1111.5625 904.7417
   1137.6851 913.2684
-  1110.6273 977.7655
 endline
 
 line rock-border -close on
@@ -503,7 +468,6 @@ line rock-border -close on
   1050.4287 849.3691
   1077.1431 812.4417
   1110.6273 812.1413
-  1097.8971 868.6759
 endline
 
 line rock-border -close on
@@ -512,14 +476,12 @@ line rock-border -close on
   899.0984 840.1618
   862.8609 866.0452
   857.3359 879.1066
-  887.8062 914.0655
 endline
 
 line rock-border -close on
   852.792 986.5252
   879.3684 948.0066
   852.1328 935.5768
-  852.792 986.5252
 endline
 
 line rock-border -close on
@@ -527,14 +489,12 @@ line rock-border -close on
   820.0498 808.045
   829.3154 769.9373
   867.3802 770.9981
-  848.0182 847.974
 endline
 
 line rock-border -close on
   890.1946 733.3104
   900.1408 697.4776
   850.1644 727.1109
-  890.1946 733.3104
 endline
 
 line rock-border -close on
@@ -558,7 +518,6 @@ line rock-border -close on
   1042.92 645.5757
   1058.2502 629.0191
   1087.6842 655.3871
-  1062.5427 658.4531
 endline
 
 line rock-border -close on
@@ -582,7 +541,6 @@ line rock-border -close on
   1099.9483 615.5286
   1093.8162 585.4814
   1114.0521 586.7078
-  1124.4766 614.9154
 endline
 
 line floor-step 
@@ -619,7 +577,6 @@ line rock-border -close on
   1098.7219 576.2833
   1077.8728 546.8493
   1105.4672 529.0663
-  1122.637 567.6984
 endline
 
 line rock-border -close on
@@ -644,7 +601,6 @@ line rock-border -close on
   962.6113 458.9921
   977.3068 446.2833
   1040.4672 461.6135
-  1024.5575 477.7317
 endline
 
 line rock-border 
@@ -660,7 +616,6 @@ line rock-border -close on
   851.5993 518.0286
   879.8069 513.7361
   890.8446 525.3871
-  862.0239 538.8777
 endline
 
 line rock-border -close on
@@ -668,7 +623,6 @@ line rock-border -close on
   848.5333 576.2833
   850.3729 559.1135
   882.8729 574.4437
-  866.9295 587.321
 endline
 
 line rock-border -close on
@@ -676,7 +630,6 @@ line rock-border -close on
   879.8069 554.821
   878.5805 532.1324
   909.2408 546.2361
-  904.9484 559.1135
 endline
 
 line rock-border -close on
@@ -700,7 +653,6 @@ line rock-border -close on
   903.0444 603.292
   909.7958 569.3755
   929.9826 562.9062
-  943.513 590.7765
 endline
 
 line rock-border -close on
@@ -708,7 +660,6 @@ line rock-border -close on
   1074.4328 583.5866
   1042.9875 545.3899
   1021.5007 554.1496
-  1038.2106 605.9073
 endline
 
 line rock-border -close on
@@ -716,7 +667,6 @@ line rock-border -close on
   1010.1778 594.0295
   975.3323 574.0666
   963.4085 593.1649
-  986.4865 627.4064
 endline
 
 line contour 
@@ -765,14 +715,12 @@ line rock-border -close on
   909.6854 654.2833
   908.416 610.3071
   861.7908 604.6503
-  862.3427 672.793
 endline
 
 line rock-border -close on
   946.6955 666.4217
   943.838 628.1085
   918.0465 637.7573
-  946.6955 666.4217
 endline
 
 line rock-border -close on
@@ -782,35 +730,30 @@ line rock-border -close on
   1099.4026 719.7554
   1071.7408 776.1889
   1100.3837 793.8922
-  1132.1141 823.2894
 endline
 
 line rock-border -close on
   1058.1061 716.5882
   1046.1854 675.9786
   1020.3049 687.9208
-  1058.1061 716.5882
 endline
 
 line rock-border -close on
   1031.8455 791.4394
   1052.2224 743.6889
   1020.7035 744.4585
-  1031.8455 791.4394
 endline
 
 line rock-border -close on
   1007.9703 808.9556
   974.4799 783.7528
   991.7417 773.8219
-  1007.9703 808.9556
 endline
 
 line rock-border -close on
   931.5769 809.7528
   887.8062 822.4922
   903.1363 780.0797
-  931.5769 809.7528
 endline
 
 line rock-border -close on
@@ -818,7 +761,6 @@ line rock-border -close on
   943.605 701.1507
   933.5637 665.6276
   910.8842 663.2392
-  911.6814 735.6988
 endline
 
 line wall 
@@ -1111,7 +1053,6 @@ line rock-border -close on
   905.5616 337.1324
   903.1087 317.5098
   912.9201 319.3494
-  917.8257 340.8117
 endline
 
 line rock-border -close on
@@ -1119,7 +1060,6 @@ line rock-border -close on
   898.8163 357.3683
   896.9767 341.4249
   912.3069 340.1985
-  915.3729 357.3683
 endline
 
 line rock-border 
@@ -1135,7 +1075,6 @@ line rock-border -close on
   971.788 351.8494
   971.788 351.8494 958.9106 342.0381 960.7502 339.5852
   962.5899 337.1324 977.3068 327.3211 977.3068 327.3211
-  985.2785 348.1702
 endline
 
 line rock-border -close on
@@ -1167,7 +1106,6 @@ line rock-border -close on
   952.1653 426.0475
   1010.42 405.8117
   1058.8634 421.1418
-  1026.9766 451.8022
 endline
 
 point 975.467 701.991 station -name 0
@@ -1189,7 +1127,7 @@ line wall -subtype invisible
   786.673 663.5003
 endline
 
-point 644.642 1342.49 label -align t -attr level 2 -scale l -text "Klic Globin"
+point 496.642 1342.49 label -align t -attr level 2 -scale l -text "Klic Globin"
 line wall 
   786.673 663.5003
   786.673 663.5003 787.2476 663.6788 789.6923 664.767
@@ -1352,9 +1290,7 @@ line pit
   834.5951 669.4172
   834.5951 669.4172 831.9767 682.9814 830.1371 685.4342
   828.2974 687.887 762.6843 699.538 762.6843 699.538
-  712.4013 699.538
-  694.6182 692.1795
-  690.939 667.038
+  609.7351 792.1141
 endline
 
 line wall 
@@ -1401,7 +1337,6 @@ line wall
   444.7607 1259.0897 437.0711 1259.3963 441.3421 1251.6454
 endline
 
-point 765.137 677.46 continuation -scale xs
 line floor-step 
   402.7315 1111.6133
   402.7315 1087.0851
@@ -1430,7 +1365,6 @@ line rock-border -close on
   735.0899 852.8398
   705.0428 851.0002
   718.5333 724.0663
-  809.9012 740.6229
 endline
 
 line rock-border -close on
@@ -1438,7 +1372,6 @@ line rock-border -close on
   832.8965 735.6344
   797.0882 703.0517
   777.1927 711.8113
-  801.0649 763.5691
 endline
 
 point 807.448 652.321 stalactites -align b -scale xs
@@ -1473,7 +1406,6 @@ line rock-border -close on
   680.5145 762.0851
   674.9956 746.755
   695.2314 743.6889
-  703.2031 757.7927
 endline
 
 line rock-border -close on
@@ -1481,7 +1413,6 @@ line rock-border -close on
   610.6088 980.387
   594.6654 958.9247
   616.1277 896.9908
-  648.6277 935.6228
 endline
 
 line rock-border -close on
@@ -1489,7 +1420,6 @@ line rock-border -close on
   671.3164 928.2643
   652.9201 923.9719
   668.8635 861.4247
-  705.0428 874.9153
 endline
 
 line rock-border -close on
@@ -1497,7 +1427,6 @@ line rock-border -close on
   682.9673 844.2549
   653.5333 825.2455
   652.681 788.0084
-  708.1415 793.8171
 endline
 
 line rock-border -close on
@@ -1505,7 +1434,6 @@ line rock-border -close on
   672.135 864.7207
   625.0008 841.0662
   606.8928 846.3797
-  643.4982 913.2684
 endline
 
 line rock-border -close on
@@ -1513,7 +1441,6 @@ line rock-border -close on
   567.9909 945.0049
   592.5683 908.4915
   610.5475 891.4504
-  590.977 979.3598
 endline
 
 line rock-border -close on
@@ -1522,7 +1449,6 @@ line rock-border -close on
   654.5114 1003.3761
   653.472 956.7969
   645.6812 951.1554
-  564.7164 1040.6714
 endline
 
 line rock-border -close on
@@ -1530,7 +1456,6 @@ line rock-border -close on
   507.8353 1035.9466
   522.2824 997.8726
   546.9794 990.6766
-  543.7968 1053.5825
 endline
 
 line rock-border -close on
@@ -1539,7 +1464,6 @@ line rock-border -close on
   541.2029 1073.6681
   587.868 1064.0652
   595.9225 1068.7134
-  585.9732 1131.6192
 endline
 
 point 669.517 840.78 station -name 1

@@ -3,7 +3,26 @@
 
 survey house_of_cards_2 -title "House of Cards 2"
     # Continuation of House of Cards. Station 0 is station xx of House of Cards # think this should be stn 26 is stn 5 of HoC
-    # team EP, DPW, CH, JS 
+    # team EP, DPW, CH, JS
+    input house_of_cards_2-p.th2
+    input house_of_cards_2-e.th2
+    
+    map m-all-p -projection plan
+      house_of_cards_2-1p
+      house_of_cards_2-2p
+      break
+      house_of_cards_2-3p
+    endmap
+    join house_of_cards_2-1p house_of_cards_2-2p
+
+    map m-all-e -projection extended
+      house_of_cards_2-1e
+      house_of_cards_2-2e
+      house_of_cards_2-3e
+    endmap
+    join house_of_cards_2-1e house_of_cards_2-2e
+    join house_of_cards_2-2e house_of_cards_2-3e
+
   centerline
     date 2024.07.15
     team "Ellie Pizey"
