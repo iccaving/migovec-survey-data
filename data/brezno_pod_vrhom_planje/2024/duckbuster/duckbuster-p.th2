@@ -1,0 +1,263 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-duckbuster-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+    line survey
+        -17.28 -6.69
+        0.12 -14.49
+    endline
+    line survey
+        -17.28 -6.69
+        -1.30 -8.27
+    endline
+    line survey
+        -17.28 -6.69
+        -1.22 -3.39
+    endline
+    line survey
+        -17.28 -6.69
+        0.51 2.44
+    endline
+    line survey
+        -17.28 -6.69
+        -0.35 5.43
+    endline
+    line survey
+        -17.28 -6.69
+        -9.88 -4.09
+    endline
+    line survey
+        -17.28 -6.69
+        14.21 16.46
+    endline
+    line survey
+        -17.28 -6.69
+        12.72 20.31
+    endline
+    line survey
+        -17.28 -6.69
+        4.69 14.49
+    endline
+    line survey
+        -17.28 -6.69
+        -1.22 13.70
+    endline
+    line survey
+        -17.28 -6.69
+        -6.65 9.92
+    endline
+    line survey
+        -17.28 -6.69
+        -14.53 5.75
+    endline
+    line survey
+        -17.28 -6.69
+        -9.88 -0.31
+    endline
+    line survey
+        -9.88 -0.31
+        3.82 10.16
+    endline
+    line survey
+        3.82 10.16
+        8.15 9.45
+    endline
+    line survey
+        3.82 10.16
+        13.03 15.67
+    endline
+    line survey
+        3.82 10.16
+        12.72 22.44
+    endline
+    line survey
+        3.82 10.16
+        10.04 24.72
+    endline
+    line survey
+        3.82 10.16
+        7.52 24.80
+    endline
+    line survey
+        3.82 10.16
+        4.45 24.09
+    endline
+    line survey
+        3.82 10.16
+        2.64 21.73
+    endline
+    line survey
+        3.82 10.16
+        1.77 17.40
+    endline
+    line survey
+        3.82 10.16
+        2.09 14.09
+    endline
+    line survey
+        3.82 10.16
+        -0.20 13.86
+    endline
+    line survey
+        3.82 10.16
+        -2.64 14.80
+    endline
+    line survey
+        3.82 10.16
+        -4.21 13.70
+    endline
+    line survey
+        3.82 10.16
+        -6.42 13.39
+    endline
+    line survey
+        3.82 10.16
+        -10.12 10.24
+    endline
+    line survey
+        3.82 10.16
+        -13.90 6.77
+    endline
+    line survey
+        3.82 10.16
+        -16.10 3.07
+    endline
+    line survey
+        3.82 10.16
+        -21.14 -2.20
+    endline
+    line survey
+        3.82 10.16
+        -10.83 -1.73
+    endline
+    line survey
+        3.82 10.16
+        -17.68 -9.21
+    endline
+    line survey
+        3.82 10.16
+        -8.54 -11.42
+    endline
+    line survey
+        3.82 10.16
+        -17.99 -27.95
+    endline
+    line survey
+        3.82 10.16
+        -4.06 -7.09
+    endline
+    line survey
+        3.82 10.16
+        0.91 2.83
+    endline
+    line survey
+        3.82 10.16
+        3.58 4.96
+    endline
+    line survey
+        3.82 10.16
+        6.34 6.69
+    endline
+    line survey
+        3.82 10.16
+        9.57 9.06
+    endline
+    line survey
+        3.82 10.16
+        12.40 13.39
+    endline
+    line survey
+        3.82 10.16
+        2.56 2.91
+    endline
+    line survey
+        3.82 10.16
+        3.66 10.08
+    endline
+    line survey
+        3.82 10.16
+        14.92 16.85
+    endline
+    line survey
+        3.82 10.16
+        8.46 21.57
+    endline
+    line survey
+        8.46 21.57
+        7.68 18.82
+    endline
+    line survey
+        7.68 18.82
+        -18.15 -9.45
+    endline
+    line survey
+        7.68 18.82
+        -0.75 7.87
+    endline
+    line survey
+        7.68 18.82
+        3.11 12.05
+    endline
+    line survey
+        7.68 18.82
+        4.21 11.26
+    endline
+    line survey
+        7.68 18.82
+        0.35 2.91
+    endline
+    line survey
+        7.68 18.82
+        5.87 16.22
+    endline
+    line survey
+        7.68 18.82
+        11.06 15.83
+    endline
+    line survey
+        7.68 18.82
+        11.06 23.70
+    endline
+    line survey
+        7.68 18.82
+        9.57 19.13
+    endline
+    line survey
+        7.68 18.82
+        11.46 18.90
+    endline
+    line survey
+        11.46 18.90
+        7.36 20.16
+    endline
+    line survey
+        7.36 20.16
+        16.02 27.95
+    endline
+    line survey
+        16.02 27.95
+        21.14 16.61
+    endline
+    point -17.28 -6.69 station-name -align tr -scale xs -text 0
+    point -9.88 -0.31 station-name -align tr -scale xs -text 1
+    point 3.82 10.16 station-name -align tr -scale xs -text 2
+    point 8.46 21.57 station-name -align tr -scale xs -text 3
+    point 7.68 18.82 station-name -align tr -scale xs -text 4
+    point 11.46 18.90 station-name -align tr -scale xs -text 5
+    point 7.36 20.16 station-name -align tr -scale xs -text 6
+    point 16.02 27.95 station-name -align tr -scale xs -text 7
+    point 21.14 16.61 station-name -align tr -scale xs -text 8
+endscrap
+
+scrap duckbuster-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+    point -17.28 -6.69 station -name 0
+    point -9.88 -0.31 station -name 1
+    point 3.82 10.16 station -name 2
+    point 8.46 21.57 station -name 3
+    point 7.68 18.82 station -name 4
+    point 11.46 18.90 station -name 5
+    point 7.36 20.16 station -name 6
+    point 16.02 27.95 station -name 7
+    point 21.14 16.61 station -name 8
+endscrap
