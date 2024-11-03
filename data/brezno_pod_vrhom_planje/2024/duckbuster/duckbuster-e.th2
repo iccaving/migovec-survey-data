@@ -2,317 +2,22 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-duckbuster-e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-
-line survey 
-  225.29 488.94
-  233.38 494.21
-endline
-
-line survey 
-  225.29 488.94
-  236.37 493.19
-endline
-
-line survey 
-  225.29 488.94
-  239.64 492.64
-endline
-
-line survey 
-  225.29 488.94
-  244.7 491.69
-endline
-
-line survey 
-  225.29 488.94
-  246.0 490.59
-endline
-
-line survey 
-  225.29 488.94
-  232.57 498.94
-endline
-
-line survey 
-  225.29 488.94
-  264.26 490.75
-endline
-
-line survey 
-  225.29 488.94
-  265.67 489.09
-endline
-
-line survey 
-  225.29 488.94
-  255.76 490.35
-endline
-
-line survey 
-  225.29 488.94
-  250.73 490.83
-endline
-
-line survey 
-  225.29 488.94
-  244.19 493.03
-endline
-
-line survey 
-  225.29 488.94
-  235.54 492.32
-endline
-
-line survey 
-  225.29 488.94
-  235.09 487.36
-endline
-
-line survey 
-  235.09 487.36
-  252.3 484.84
-endline
-
-line survey 
-  252.3 484.84
-  253.28 485.0
-endline
-
-line survey 
-  252.3 484.84
-  260.92 484.45
-endline
-
-line survey 
-  252.3 484.84
-  266.99 484.92
-endline
-
-line survey 
-  252.3 484.84
-  268.13 485.0
-endline
-
-line survey 
-  252.3 484.84
-  267.27 485.16
-endline
-
-line survey 
-  252.3 484.84
-  265.41 485.79
-endline
-
-line survey 
-  252.3 484.84
-  262.55 485.94
-endline
-
-line survey 
-  252.3 484.84
-  258.24 486.18
-endline
-
-line survey 
-  252.3 484.84
-  255.25 485.79
-endline
-
-line survey 
-  252.3 484.84
-  254.2 485.87
-endline
-
-line survey 
-  252.3 484.84
-  250.01 486.18
-endline
-
-line survey 
-  252.3 484.84
-  248.09 486.5
-endline
-
-line survey 
-  252.3 484.84
-  246.17 486.5
-endline
-
-line survey 
-  252.3 484.84
-  241.29 484.37
-endline
-
-line survey 
-  252.3 484.84
-  236.18 486.57
-endline
-
-line survey 
-  252.3 484.84
-  232.19 487.83
-endline
-
-line survey 
-  252.3 484.84
-  224.96 490.43
-endline
-
-line survey 
-  252.3 484.84
-  233.47 488.62
-endline
-
-line survey 
-  252.3 484.84
-  223.48 491.93
-endline
-
-line survey 
-  252.3 484.84
-  229.34 489.57
-endline
-
-line survey 
-  252.3 484.84
-  211.81 493.27
-endline
-
-line survey 
-  252.3 484.84
-  235.57 487.36
-endline
-
-line survey 
-  252.3 484.84
-  245.55 486.42
-endline
-
-line survey 
-  252.3 484.84
-  248.96 486.1
-endline
-
-line survey 
-  252.3 484.84
-  252.2 485.94
-endline
-
-line survey 
-  252.3 484.84
-  253.45 486.65
-endline
-
-line survey 
-  252.3 484.84
-  258.56 487.83
-endline
-
-line survey 
-  252.3 484.84
-  246.87 475.55
-endline
-
-line survey 
-  252.3 484.84
-  252.12 493.9
-endline
-
-line survey 
-  252.3 484.84
-  262.73 524.45
-endline
-
-line survey 
-  252.3 484.84
-  264.6 492.09
-endline
-
-line survey 
-  264.6 492.09
-  261.75 505.79
-endline
-
-line survey 
-  261.75 505.79
-  288.19 492.32
-endline
-
-line survey 
-  261.75 505.79
-  270.44 502.48
-endline
-
-line survey 
-  261.75 505.79
-  266.45 502.01
-endline
-
-line survey 
-  261.75 505.79
-  265.37 497.13
-endline
-
-line survey 
-  261.75 505.79
-  269.41 480.12
-endline
-
-line survey 
-  261.75 505.79
-  263.63 478.62
-endline
-
-line survey 
-  261.75 505.79
-  258.4 505.79
-endline
-
-line survey 
-  261.75 505.79
-  258.25 506.81
-endline
-
-line survey 
-  261.75 505.79
-  259.88 522.17
-endline
-
-line survey 
-  261.75 505.79
-  261.75 512.64
-endline
-
-line survey 
-  261.75 512.64
-  266.04 521.14
-endline
-
-line survey 
-  266.04 521.14
-  277.67 521.69
-endline
-
-line survey 
-  277.67 521.69
-  265.24 520.28
-endline
-
-point 225.29 488.94 station-name -align tr -scale xs -text 0
-point 235.09 487.36 station-name -align tr -scale xs -text 1
-point 252.3 484.84 station-name -align tr -scale xs -text 2
-point 264.6 492.09 station-name -align tr -scale xs -text 3
-point 261.75 505.79 station-name -align tr -scale xs -text 4
-point 261.75 512.64 station-name -align tr -scale xs -text 5
-point 266.04 521.14 station-name -align tr -scale xs -text 6
-point 277.67 521.69 station-name -align tr -scale xs -text 7
-point 265.24 520.28 station-name -align tr -scale xs -text 8
-endscrap
-
 
 scrap duckbuster-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
+point 225.2518 491.3413 station-name -align t -scale xs -text 0
+point 235.1299 489.6559 station-name -align t -scale xs -text 1
+point 251.9836 487.2683 station-name -align t -scale xs -text 2
+point 267.5265 493.3075 station-name -align t -scale xs -text 3
+point 266.122 503.5602 station-name -align t -scale xs -text 4
+point 267.3861 522.8483 station-name -align t -scale xs -text 6
+point 282.4008 518.4476 station-name -align t -scale xs -text 7
+point 265.7475 509.9272 station-name -align t -scale xs -text 5
+point 260.9723 516.9027 station-name -align t -scale xs -text 8
+point 251.7879 502.6485 label -align tl -text "<bf>P5"
+point 293.5118 486.3426 label -align tr -text Duckbuster
+point 196.0506 467.8351 label -align tr -scale xs -text "Constricted pitch<br>head - 30m?"
+point 216.8362 493.9955 continuation 
 line rock-border -close on
   278.6747 491.6974
   273.9084 490.9287 271.679 493.7731 273.9084 490.6212
@@ -371,15 +76,13 @@ line wall
   277.1785 479.3459 285.6042 482.8249 287.8873 485.4341
   290.1704 488.0434 289.9529 489.1306 289.8442 492.6096
   289.7355 496.0886 286.8001 501.5245 285.0606 503.8076
-  283.3211 506.0907 278.2113 509.6784 277.1241 512.2877
-  276.0369 514.8969 277.0154 516.2015 277.0154 516.2015
-  283.6472 521.6375
+  282.6169 506.6223 280.9435 511.2589 282.6333 512.269
+  283.8345 513.7724
 endline
 
 line wall 
-  251.9014 528.378
-  251.9014 528.378 251.3578 521.5288 250.9229 518.7021
-  250.488 515.8754 252.2275 499.2414 250.1619 497.5019
+  255.0895 515.1441
+  254.6546 512.3174 252.2275 499.2414 250.1619 497.5019
   248.0962 495.7624 245.487 493.4793 242.5515 494.4578
   239.6161 495.4363 239.3987 497.3932 235.1587 498.5891
   230.9186 499.785 211.5667 500.546 211.5667 500.546

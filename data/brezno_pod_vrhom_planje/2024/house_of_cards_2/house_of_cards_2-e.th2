@@ -5,12 +5,21 @@ encoding  utf-8
 
 scrap house_of_cards_2-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
-point 128.2826 349.5192 label -align tr -scale xs -text "Unascended steep tube<br>needs protection"
+point 216.0823 262.068 station-name -align t -scale xs -text 1
+point 189.831 253.0918 station-name -align t -scale xs -text 0
+point 215.3506 274.8891 station-name -align t -scale xs -text 2
+point 226.3966 285.5346 station-name -align t -scale xs -text 3
+point 243.7447 288.7546 station-name -align t -scale xs -text 4
+point 262.6353 355.1915 station-name -align t -scale xs -text 7
+point 275.991 355.484 station-name -align t -scale xs -text 6
+point 250.6082 279.4036 station-name -align t -scale xs -text 5
+point 262.5378 347.49 station-name -align t -scale xs -text 8
+point 254.0889 357.4662 station-name -align t -scale xs -text 9
+point 236.0213 357.9211 station-name -align t -scale xs -text 10
+point 130.5804 349.6111 label -align tr -scale xs -text "Unascended steep tube<br>needs protection"
 point 194.3539 344.9871 continuation 
-point 332.3067 313.4498 label -align tl -text "<bf>P9"
-point 167.4883 468.3806 label -align tl -text "<bf>P28"
-point 332.6845 659.2544 label -align tl -text "<bf>P19"
-point 264.1532 541.3931 label -align tr -text "House of Cards 2"
+point 312.3067 313.4498 label -align tl -text "<bf>P9"
+point 187.4994 464.7042 label -align tl -text "<bf>P31"
 line rock-edge 
   197.6507 261.1473
   197.9406 261.4373 198.1537 261.8337 198.5205 262.0171
@@ -37,7 +46,7 @@ line rock-edge
   234.8729 283.6041 235.9197 283.6868 235.9197 284.4132
 endline
 
-line border -close on -id house_of_cards_2-3e_blocks_1 -visibility on
+line rock-border -close on
   228.5268 275.4982
   227.794 273.7126 228.1004 271.8694 227.8745 270.0623
   227.7828 269.3288 227.5373 268.6206 227.4396 267.8879
@@ -60,11 +69,7 @@ line border -close on -id house_of_cards_2-3e_blocks_1 -visibility on
   229.3867 275.1745 228.9617 275.3533 228.5268 275.4982
 endline
 
-area blocks 
-  house_of_cards_2-3e_blocks_1
-endarea
-
-line border -close on -id house_of_cards_2-3e_blocks_2 -visibility on
+line rock-border -close on
   228.0919 255.2765
   224.536 255.1328 220.866 255.9127 217.4081 254.7678
   215.8667 254.2397 214.468 253.1578 213.7135 251.7027
@@ -79,10 +84,6 @@ line border -close on -id house_of_cards_2-3e_blocks_2 -visibility on
   230.7129 253.4909 230.5549 254.5245 230.1755 255.3197
   229.4873 255.2354 228.7855 255.2936 228.0919 255.2765
 endline
-
-area blocks 
-  house_of_cards_2-3e_blocks_2
-endarea
 
 line wall -close on -outline in
   275.8303 328.1058
@@ -108,7 +109,7 @@ line wall -close on -outline in
   275.3253 324.9695 275.9433 326.524 275.8303 328.1058
 endline
 
-line border -close on -id house_of_cards_2-3e_blocks_3 -visibility on
+line rock-border -close on
   249.2312 261.9926
   247.3135 262.5097 247.4656 263.3316 246.7712 265.0676
   246.6559 265.3559 246.3868 265.7211 246.31 265.9902
@@ -132,11 +133,7 @@ line border -close on -id house_of_cards_2-3e_blocks_3 -visibility on
   250.0315 262.1779 249.5936 262.1376 249.2312 261.9926
 endline
 
-area blocks 
-  house_of_cards_2-3e_blocks_3
-endarea
-
-line border -close on -id house_of_cards_2-3e_blocks_4 -visibility on
+line rock-border -close on
   237.8536 257.8413
   237.2686 258.9522 236.0282 259.1549 235.0861 259.8401
   234.8516 260.0106 234.6938 260.2695 234.4711 260.4551
@@ -162,11 +159,7 @@ line border -close on -id house_of_cards_2-3e_blocks_4 -visibility on
   245.7312 260.5814 245.695 261.9875 245.695 261.2239
 endline
 
-area blocks 
-  house_of_cards_2-3e_blocks_4
-endarea
-
-line border -close on -id house_of_cards_2-3e_blocks_5 -visibility on
+line rock-border -close on
   233.5279 282.4562
   233.2121 281.0858 233.8689 279.4717 233.5279 278.1075
   233.4782 277.9086 233.238 277.8175 233.093 277.6726
@@ -184,10 +177,6 @@ line border -close on -id house_of_cards_2-3e_blocks_5 -visibility on
   236.9706 283.5616 236.7368 282.5419 236.1371 282.4562
   235.2761 282.3332 234.3976 282.4562 233.5279 282.4562
 endline
-
-area blocks 
-  house_of_cards_2-3e_blocks_5
-endarea
 
 line wall 
   203.0866 335.9459
@@ -208,8 +197,8 @@ line wall
 endline
 
 line wall 
-  216.4822 241.0824
-  218.4847 253.4031 246.4814 246.3687 254.305 246.0025
+  210.8929 246.3467
+  220.7594 248.0088 246.4814 246.3687 254.305 246.0025
   254.4125 245.9965 254.8862 245.6611 255.0738 245.8487
   255.11 245.8849 255.0376 245.9663 255.0738 246.0025
   255.2232 246.1522 255.5326 245.8438 255.6888 246.1562
@@ -224,13 +213,10 @@ line wall
   257.2697 262.3987 257.7803 262.1342 258.6101 262.3001
   258.7913 262.3363 258.8998 262.539 259.0713 262.6076
   272.9647 267.1644 288.8244 265.9606 292.7429 281.3653
-  292.8801 281.7767 292.9864 281.6222 293.0504 282.1341
-  293.1381 282.8355 292.9343 283.5895 293.0504 284.2866
+  292.8651 282.3643 292.7499 283.3534 293.0504 284.2866
   294.9481 291.0416 295.0421 297.7706 292.6709 305.0697
-  292.4609 305.5948 291.6201 305.8667 291.3663 306.3743
-  291.1343 306.8382 291.7968 306.9556 290.9314 307.2441
-  290.8436 307.2734 289.3366 307.0994 289.1919 307.2441
-  285.3288 311.1072 286.5406 321.8052 284.4083 332.4669
+  291.4712 306.5897 290.3973 306.8294 289.1919 307.2441
+  285.7884 310.7855 286.5406 321.8052 284.4083 332.4669
   279.1898 362.9081
   272.8836 366.9056 267.6491 366.3478 260.925 368.9964
   259.0227 369.3134 250.3569 367.6953 249.6183 368.9964
@@ -269,6 +255,12 @@ endscrap
 
 scrap house_of_cards_2-2e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
+point 264.1532 541.3931 label -align tr -text "House of Cards 2"
+point 199.3786 375.3776 station-name -align t -scale xs -text 11
+point 237.8883 379.0109 station-name -align t -scale xs -text 12
+point 201.6574 451.481 station-name -align t -scale xs -text 13
+point 233.4997 515.0529 station-name -align t -scale xs -text 14
+point 206.9072 544.8733 station-name -align t -scale xs -text 15
 line rock-edge 
   192.4322 371.6056
   192.7946 371.5331 193.1513 371.3547 193.5194 371.3882
@@ -345,6 +337,17 @@ endscrap
 
 scrap house_of_cards_2-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
+point 302.6845 659.2544 label -align tl -text "<bf>P19"
+point 252.2808 590.7732 station-name -align t -scale xs -text 17
+point 240.9751 692.6317 station-name -align t -scale xs -text 18
+point 216.5475 595.8575 station-name -align t -scale xs -text 16
+point 247.8685 700.9955 station-name -align t -scale xs -text 19
+point 267.6342 727.3148 station-name -align t -scale xs -text 21
+point 252.7352 710.8088 station-name -align t -scale xs -text 20
+point 290.9751 738.7713 station-name -align t -scale xs -text 23
+point 274.6148 739.0953 station-name -align t -scale xs -text 22
+point 307.6951 735.1514 station-name -align t -scale xs -text 24
+point 298.3456 745.7231 station-name -align t -scale xs -text 25
 line wall -close on -outline in
   286.15 735.48
   305.38 734.33

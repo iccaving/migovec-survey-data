@@ -61,6 +61,10 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 	equate 8@duckbuster 0@house_of_cards_2
 	equate 6@pleasure_pitch 23@bingo_flamingo
 
+	join house_of_cards-1p@house_of_cards house_of_cards_2-1p@house_of_cards_2
+	join house_of_cards_2-3p@house_of_cards_2 duckbuster-1p@duckbuster
+
 	join one_at_a_chime-1e@one_at_a_chime osmica-1e@osmica
 	join house_of_cards-1e@house_of_cards house_of_cards_2-1e@house_of_cards_2
+	join house_of_cards_2-3e@house_of_cards_2 duckbuster-1e@duckbuster
 endsurvey
