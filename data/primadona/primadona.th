@@ -645,5 +645,6 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join line2@delta_blues line2@blues_and_twos
 	join line4@delta_blues line2@blues_and_twos
 	join line3@delta_blues line1@blues_and_twos
+	join blues_and_twos-p@blues_and_twos  delta_blues-1p@delta_blues
 
 endsurvey
