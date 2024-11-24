@@ -1,8 +1,20 @@
 # 2024.07.30 created by TopoDroid v 6.2.44
 
 survey freshers_folly -title "freshers folly"
-    # Small chamber off of spiral climb 
-    # team BR CH EP LA JJ 
+  # Small chamber off of spiral climb 
+  # team BR CH EP LA JJ 
+
+  input "freshers_folly-p.th2"
+  input "freshers_folly-e.th2"
+
+  map m-all-p -projection plan
+    freshers_folly-1p
+  endmap
+  
+  map m-all-e -projection extended
+    freshers_folly-1e
+  endmap
+  
   centerline
     date 2024.07.29 
     explo-date 2024.07.29
