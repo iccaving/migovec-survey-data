@@ -2,6 +2,17 @@
 
 survey sunk_cost_series -title "sunk cost series"
 
+  input "sunk_cost_series-p.th2"
+  input "sunk_cost_series-e.th2"
+
+  map m-all-p -projection plan
+    sunk_cost_series-1p
+  endmap
+  
+  map m-all-e -projection extended
+    sunk_cost_series-1e
+  endmap
+
   centerline
     date 2024.07.29 
     # team BH LT 
