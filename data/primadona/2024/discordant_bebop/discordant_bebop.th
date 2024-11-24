@@ -1,15 +1,17 @@
 # 2024.07.17 created by TopoDroid v 6.2.44
 
 survey discordant_bebop -title "discordant bebop"
-    # connects in to delta blues 
-     input "discordant_bebop-1p.th2"
-     input "discordant_bebop-1s.th2"
+  # connects in to delta blues 
+  
+  input "discordant_bebop-p.th2"
+  input "discordant_bebop-e.th2"
 
   map m-all-p -projection plan
     discordant_bebop-1p
   endmap
+  
   map m-all-e -projection extended
-    discordant_bebop-1s
+    discordant_bebop-1e
   endmap
 
   centerline
