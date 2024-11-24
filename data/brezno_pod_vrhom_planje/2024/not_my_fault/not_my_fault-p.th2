@@ -1,0 +1,361 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-not_my_fault-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line survey 
+  200.28 417.17
+  194.53 477.87
+endline
+
+line survey 
+  200.28 417.17
+  173.35 415.83
+endline
+
+line survey 
+  200.28 417.17
+  203.58 393.86
+endline
+
+line survey 
+  200.28 417.17
+  231.61 426.3
+endline
+
+line survey 
+  200.28 417.17
+  196.73 417.4
+endline
+
+line survey 
+  200.28 417.17
+  239.02 467.8
+endline
+
+line survey 
+  200.28 417.17
+  236.18 427.01
+endline
+
+line survey 
+  236.18 427.01
+  235.94 434.17
+endline
+
+line survey 
+  236.18 427.01
+  210.04 481.34
+endline
+
+line survey 
+  236.18 427.01
+  234.92 472.52
+endline
+
+line survey 
+  236.18 427.01
+  256.89 397.09
+endline
+
+line survey 
+  236.18 427.01
+  241.22 409.21
+endline
+
+line survey 
+  236.18 427.01
+  267.68 445.83
+endline
+
+line survey 
+  267.68 445.83
+  276.81 412.05
+endline
+
+line survey 
+  267.68 445.83
+  326.65 470.16
+endline
+
+line survey 
+  267.68 445.83
+  265.24 454.17
+endline
+
+line survey 
+  267.68 445.83
+  225.16 431.34
+endline
+
+line survey 
+  267.68 445.83
+  282.01 467.24
+endline
+
+line survey 
+  282.01 467.24
+  284.69 481.65
+endline
+
+line survey 
+  282.01 467.24
+  301.54 464.17
+endline
+
+line survey 
+  282.01 467.24
+  215.0 469.84
+endline
+
+line survey 
+  282.01 467.24
+  209.8 422.76
+endline
+
+line survey 
+  282.01 467.24
+  227.28 502.13
+endline
+
+line survey 
+  227.28 502.13
+  218.54 482.76
+endline
+
+line survey 
+  227.28 502.13
+  249.8 521.97
+endline
+
+line survey 
+  227.28 502.13
+  312.87 446.93
+endline
+
+line survey 
+  227.28 502.13
+  190.98 527.24
+endline
+
+line survey 
+  227.28 502.13
+  216.26 510.24
+endline
+
+line survey 
+  227.28 502.13
+  215.79 510.31
+endline
+
+line survey 
+  215.79 510.31
+  313.9 443.94
+endline
+
+line survey 
+  215.79 510.31
+  206.89 520.16
+endline
+
+line survey 
+  215.79 510.31
+  226.73 542.13
+endline
+
+line survey 
+  215.79 510.31
+  224.53 509.37
+endline
+
+line survey 
+  215.79 510.31
+  207.99 497.01
+endline
+
+line survey 
+  215.79 510.31
+  218.54 534.65
+endline
+
+line survey 
+  218.54 534.65
+  224.84 530.16
+endline
+
+line survey 
+  218.54 534.65
+  209.02 526.46
+endline
+
+line survey 
+  218.54 534.65
+  218.7 534.33
+endline
+
+line survey 
+  218.54 534.65
+  216.02 535.43
+endline
+
+line survey 
+  218.54 534.65
+  257.13 535.67
+endline
+
+line survey 
+  257.13 535.67
+  251.38 534.02
+endline
+
+line survey 
+  257.13 535.67
+  243.11 559.21
+endline
+
+line survey 
+  257.13 535.67
+  265.63 547.32
+endline
+
+line survey 
+  257.13 535.67
+  266.02 521.73
+endline
+
+line survey 
+  257.13 535.67
+  258.31 534.72
+endline
+
+line survey 
+  257.13 535.67
+  257.36 534.17
+endline
+
+line survey 
+  257.13 535.67
+  250.83 577.64
+endline
+
+line survey 
+  250.83 577.64
+  252.56 577.48
+endline
+
+line survey 
+  250.83 577.64
+  248.15 570.24
+endline
+
+line survey 
+  250.83 577.64
+  250.91 578.35
+endline
+
+line survey 
+  250.83 577.64
+  227.99 579.37
+endline
+
+line survey 
+  227.99 579.37
+  231.54 576.22
+endline
+
+line survey 
+  227.99 579.37
+  227.91 582.99
+endline
+
+line survey 
+  227.99 579.37
+  226.02 581.57
+endline
+
+line survey 
+  227.99 579.37
+  236.65 606.14
+endline
+
+line survey 
+  227.99 579.37
+  229.88 582.05
+endline
+
+line survey 
+  227.99 579.37
+  237.2 588.5
+endline
+
+point 200.28 417.17 station-name -align tr -scale xs -text 0
+point 236.18 427.01 station-name -align tr -scale xs -text 1
+point 267.68 445.83 station-name -align tr -scale xs -text 2
+point 282.01 467.24 station-name -align tr -scale xs -text 3
+point 227.28 502.13 station-name -align tr -scale xs -text 4
+point 215.79 510.31 station-name -align tr -scale xs -text 5
+point 218.54 534.65 station-name -align tr -scale xs -text 6
+point 257.13 535.67 station-name -align tr -scale xs -text 7
+point 250.83 577.64 station-name -align tr -scale xs -text 8
+point 227.99 579.37 station-name -align tr -scale xs -text 9
+point 237.2 588.5 station-name -align tr -scale xs -text 10
+endscrap
+
+
+scrap not_my_fault-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line pit 
+  219.6206 399.5068
+  222.5731 400.4152 232.5662 407.6829 235.2916 409.727
+  238.017 411.771 238.4712 429.486 238.6983 440.8418
+  238.9254 452.1975 233.0204 461.7364 231.2035 466.5058
+  229.3866 471.2753 208.7191 478.543 208.7191 478.543
+endline
+
+line wall 
+  246.8163 595.5483
+  246.8163 595.5483 240.3511 587.7521 240.9216 585.4703
+  241.4921 583.1885 253.4716 581.6673 253.6617 579.3855
+  253.8519 577.1037 266.4019 548.7711 266.4019 546.6795
+  266.4019 544.5878 270.4714 530.3891 268.0069 525.8855
+  267.0941 524.2174 228.9421 532.0378 227.9913 530.7068
+  227.0406 529.3757 246.0557 524.0515 248.7178 522.15
+  251.3799 520.2485 287.889 479.1758 289.0299 478.9856
+  290.1708 478.7955 299.4882 470.619 300.6291 470.619
+  301.77 470.619 326.6798 474.9925 328.201 471.7599
+  329.7222 468.5273 314.5101 443.6175 313.3692 442.0963
+  312.2283 440.5751 280.6632 413.0032 275.7193 410.9115
+  270.7754 408.8198 260.1269 397.2206 257.2746 396.6501
+  254.4223 396.0797 245.4462 407.2135 240.6612 407.2135
+  235.8761 407.2135 209.4174 391.7324 202.3806 392.2954
+  195.3437 392.8583 172.5442 407.495 171.4183 413.969
+  170.2924 420.4429 186.055 476.7379 190.2771 477.5823
+  194.4993 478.4267 205.1687 480.6037 208.2649 479.7592
+  211.3611 478.9148 230.5281 474.2046 232.4984 473.6417
+  234.4687 473.0787 257.5497 471.3899 257.8311 474.4861
+  258.1126 477.5823 222.6468 482.0809 218.9876 483.7697
+  215.3284 485.4586 209.136 495.3152 206.8842 497.8485
+  204.6324 500.3818 186.3365 525.1516 188.8698 527.9663
+  191.403 530.7811 215.6099 539.7883 215.6099 539.7883
+  215.6099 539.7883 223.2097 543.4475 226.5874 543.4475
+  229.9651 543.4475 238.4094 546.5437 238.4094 549.3584
+  238.4094 552.1732 241.5056 555.8324 241.5056 558.6471
+  241.5056 561.4619 240.3797 567.6543 238.6908 569.3432
+  237.002 571.032 218.7061 578.6319 217.5802 582.5725
+  216.4543 586.5132 230.5281 600.5869 233.3428 603.6831
+endline
+
+point 200.28 417.17 station -name 0
+point 236.18 427.01 station -name 1
+point 267.68 445.83 station -name 2
+point 282.01 467.24 station -name 3
+point 227.28 502.13 station -name 4
+point 215.79 510.31 station -name 5
+point 218.54 534.65 station -name 6
+point 257.13 535.67 station -name 7
+point 250.83 577.64 station -name 8
+point 227.99 579.37 station -name 9
+point 237.2 588.5 station -name 10
+endscrap
+

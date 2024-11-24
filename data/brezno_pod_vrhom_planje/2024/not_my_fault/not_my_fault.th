@@ -1,8 +1,20 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
 survey not_my_fault -title "not my fault"
-    # beyond osmica 
-    # team Izi Arun 
+  # beyond osmica 
+  # team Izi Arun 
+
+  input "not_my_fault-p.th2"
+  input "not_my_fault-e.th2"
+
+  map m-all-p -projection plan
+    not_my_fault-1p
+  endmap
+  
+  map m-all-e -projection extended
+    not_my_fault-1e
+  endmap
+
   centerline
     date 2024.07.10
     explo-date 2024.07.10 
@@ -94,15 +106,5 @@ survey not_my_fault -title "not my fault"
     extend right
     9 10 1.67 45.4 9.7
   endcenterline
-
-  # input "not_my_fault-1p.th2"
-  # input "not_my_fault-1s.th2"
-
-  # map m1p -projection plan
-  #   not_my_fault-1p
-  # endmap
-  # map m1s -projection extended
-  #   not_my_fault-1s
-  # endmap
 
 endsurvey
