@@ -1,7 +1,19 @@
 # 2024.07.26 created by TopoDroid v 5.1.40
 
 survey mambo_number_5 -title "mambo number 5"
-#team BH LA LT
+  #team BH LA LT
+
+  input "mambo_number_5-p.th2"
+  input "mambo_number_5-e.th2"
+
+  map m-all-p -projection plan
+    mambo_number_5-1p
+  endmap
+  
+  map m-all-e -projection extended
+    mambo_number_5-1e
+  endmap
+
   centerline
     date 2024.07.25
     explo-date 2024.07.25

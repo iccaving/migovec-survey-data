@@ -4,6 +4,17 @@ survey knot_yet_named -title "Knot Yet Named"
   # First pitch beside Bingo Flamingo that connects through a tight rift. Station 0 is in the rift above the pitch, and Station 7 is station 23 of Bingo Flamingo 
   # team CH, JS
 
+  input "knot_yet_named-1p.th2"
+  input "knot_yet_named-1e.th2"
+
+  map m-all-p -projection plan
+    knot_yet_named-1p
+  endmap
+  
+  map m-all-e -projection extended
+    knot_yet_named-1e
+  endmap
+
   centerline
     date 2024.07.15 
     explo-date 2024.07.15
@@ -67,15 +78,5 @@ survey knot_yet_named -title "Knot Yet Named"
     5 6 2.68 244.5 4.1
     6 7 3.34 122.9 42.8
   endcenterline
-
-  # input "Knot_Yet_Named-Knot_Yet_Namedp.th2"
-  # input "Knot_Yet_Named-Knot_Yet_Nameds.th2"
-
-  # map mKnot_Yet_Namedp -projection plan
-  #   Knot_Yet_Named-Knot_Yet_Namedp
-  # endmap
-  # map mKnot_Yet_Nameds -projection extended
-  #   Knot_Yet_Named-Knot_Yet_Nameds
-  # endmap
 
 endsurvey

@@ -1,8 +1,20 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
 survey loompa_land -title "Loompa Land"
-    # long muddy tube down west from my_little_pitch (labelled deepthroat) st29 of loompa land is st10 of my_little_pitch 
-    # team jp Ch tb 
+  # long muddy tube down west from my_little_pitch (labelled deepthroat) st29 of loompa land is st10 of my_little_pitch 
+  # team jp Ch tb 
+  
+  input "loompa_land-p.th2"
+  input "loompa_land-e.th2"
+
+  map m-all-p -projection plan
+    loompa_land-1p
+  endmap
+  
+  map m-all-e -projection extended
+    loompa_land-1e
+  endmap
+  
   centerline
     date 2024.07.25 
     team "Chris Hayes" dog

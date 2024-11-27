@@ -1,7 +1,18 @@
 # 2024.07.07 created by TopoDroid v 5.1.40
 
 survey shelobs_lair -title "shelobs lair"
-    # stn0 is stn 15 of mudaholic 
+  # stn0 is stn 15 of mudaholic 
+
+  input "shelobs_lair-p.th2"
+  input "shelobs_lair-e.th2"
+
+  map m-all-p -projection plan
+    shelobs_lair-1p
+  endmap
+
+  map m-all-e -projection extended
+    shelobs_lair-1e
+  endmap
 
   centerline
     date 2024.07.06 

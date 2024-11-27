@@ -3,6 +3,18 @@
 survey the_pet_shop -title "the pet shop"
   # GPS fix is 46.24912 N 13.75871 E
 
+  input "the_pet_shop-p.th2"
+  input "the_pet_shop-e.th2"
+
+  map m-all-p -projection plan
+    the_pet_shop-1p
+    break
+    the_pet_shop-2p
+  endmap
+  map m-all-e -projection extended
+    the_pet_shop-1e
+  endmap
+
   centerline
     date 2024.07.24 
     # team LT BH YK 
@@ -109,15 +121,5 @@ survey the_pet_shop -title "the pet shop"
     extend left
     13 14 4.09 247.8 41.9
   endcenterline
-
-  # input "the_pet_shop-1p.th2"
-  # input "the_pet_shop-1s.th2"
-
-  # map m1p -projection plan
-  #   the_pet_shop-1p
-  # endmap
-  # map m1s -projection extended
-  #   the_pet_shop-1s
-  # endmap
 
 endsurvey

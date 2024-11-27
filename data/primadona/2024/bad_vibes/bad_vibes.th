@@ -1,7 +1,18 @@
 # 2024.07.30 created by TopoDroid v 6.2.44
 
-survey bad_vibes -title "bad vibes"
-    # shitty rift off spiral climb 
+survey bad_vibes -title "Bad Vibes"
+  # terrible tiny rift thing off of the spiral climb, directly below route to The Rock and ends directly below main Alcatraz chamber
+
+  input "bad_vibes-p.th2"
+  input "bad_vibes-e.th2"
+
+  map m-all-p -projection plan
+    bad_vibes-1p
+  endmap
+
+  map m-all-e -projection extended
+    bad_vibes-1e
+  endmap
 
   centerline
     date 2024.07.22 
@@ -47,15 +58,5 @@ survey bad_vibes -title "bad vibes"
     extend left
     5 6 2.87 100.3 28.5
   endcenterline
-
-  # input "bad_vibes-bad_vibesp.th2"
-  # input "bad_vibes-bad_vibess.th2"
-
-  # map mbad_vibesp -projection plan
-  #   bad_vibes-bad_vibesp
-  # endmap
-  # map mbad_vibess -projection extended
-  #   bad_vibes-bad_vibess
-  # endmap
 
 endsurvey

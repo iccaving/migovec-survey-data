@@ -3,6 +3,31 @@
 survey dripbone_cavern -title "dripbone cavern"
     # Cave within the container shakehole, station 0 is edge of 4m boulder NW side of container on the scree slope 
 
+  input "dripbone_cavern-p.th2"
+  input "dripbone_cavern-e.th2"
+
+  map m-all-p -projection plan -title "Dripbone Cavern"
+    m-dripbone_cavern-1p
+    break
+    m-dripbone_cavern-2p
+  endmap
+
+  map m-all-e -projection extended
+    m-dripbone_cavern-1e
+  endmap
+
+  map m-dripbone_cavern-1p -projection plan
+    dripbone_cavern-1p
+  endmap
+  
+  map m-dripbone_cavern-2p -projection plan
+    dripbone_cavern-2p
+  endmap
+
+  map m-dripbone_cavern-1e -projection extended
+    dripbone_cavern-1e
+  endmap
+
   centerline
     date 2024.07.19 
     # team TB, JJ 
@@ -126,15 +151,5 @@ survey dripbone_cavern -title "dripbone cavern"
   # 14 is GPS 46N 15.069' 13E 45.807' 1853m elevation
     13 14 4.80 125.7 -13.3
   endcenterline
-
-  # input "dripbone_cavern-1p.th2"
-  # input "dripbone_cavern-1s.th2"
-
-  # map m1p -projection plan
-  #   dripbone_cavern-1p
-  # endmap
-  # map m1s -projection extended
-  #   dripbone_cavern-1s
-  # endmap
 
 endsurvey

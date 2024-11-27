@@ -1,8 +1,19 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
 survey pleasure_pitch -title "Pleasure Pitch"
-    # third pitch at the far side of Bingo Flamingo. Dies in a choke. STN 6 is STN of Bingo Famimgco 
-    # team JS, CH 
+  # third pitch at the far side of Bingo Flamingo. Dies in a choke. STN 6 is STN of Bingo Famimgco 
+  # team JS, CH 
+
+  input "pleasure_pitch-e.th2"
+  input "pleasure_pitch-p.th2"
+
+  map m-all-p -projection plan
+    pleasure_pitch-1p
+  endmap
+  map m-all-e -projection extended
+    pleasure_pitch-1e
+  endmap
+
   centerline
     date 2024.07.15 
     explo-date 2024.07.15
@@ -94,15 +105,5 @@ survey pleasure_pitch -title "Pleasure Pitch"
     extend left
     5 6 6.32 141.0 19.7
   endcenterline
-
-  # input "Pleasure_Pitch-Pleasure_Pitchp.th2"
-  # input "Pleasure_Pitch-Pleasure_Pitchs.th2"
-
-  # map mPleasure_Pitchp -projection plan
-  #   Pleasure_Pitch-Pleasure_Pitchp
-  # endmap
-  # map mPleasure_Pitchs -projection extended
-  #   Pleasure_Pitch-Pleasure_Pitchs
-  # endmap
 
 endsurvey

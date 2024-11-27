@@ -1,9 +1,20 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
 survey my_little_pitch -title "My Little Pitch"
-    # enormous pitch after Pandora's approach 
-    # team jp Ch tb 
-    # maybe one of these stations is a PSS?
+  # enormous pitch after Pandora's approach 
+  # team jp Ch tb 
+  # maybe one of these stations is a PSS?
+
+  input "my_little_pitch-p.th2"
+  input "my_little_pitch-e.th2"
+
+  map m-all-p -projection plan
+    my_little_pitch-1p
+  endmap
+  map m-all-e -projection extended
+    my_little_pitch-1e
+  endmap
+
   centerline
     date 2024.07.25 
     team "James Perry" dog
@@ -134,11 +145,11 @@ survey my_little_pitch -title "My Little Pitch"
     14 . 5.14 326.4 9.0
     14 . 25.58 118.3 72.2
     14 . 30.22 160.8 -79.5
-    extend left
+    extend right
     14 15 1.24 110.5 77.6
     extend right
     15 16 2.52 72.3 86.8
-    extend left
+    extend right
     16 17 11.81 100.3 78.8
     # extend auto
     17 . 5.44 213.6 -5.1
@@ -154,22 +165,12 @@ survey my_little_pitch -title "My Little Pitch"
     17 . 32.36 183.8 -84.0
     17 . 0.27 149.5 73.3
     17 . 8.88 150.0 66.3
-    extend left
+    extend right
     17 18 12.59 131.0 55.5
     extend right
     18 19 1.03 61.0 28.1
-    extend left
+    extend right
     19 20 1.53 138.8 23.3
   endcenterline
-
-  # input "my_little_pitch-1p.th2"
-  # input "my_little_pitch-1s.th2"
-
-  # map m1p -projection plan
-  #   my_little_pitch-1p
-  # endmap
-  # map m1s -projection extended
-  #   my_little_pitch-1s
-  # endmap
 
 endsurvey

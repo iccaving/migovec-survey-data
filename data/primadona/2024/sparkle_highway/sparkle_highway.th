@@ -3,18 +3,20 @@
 survey sparkle_highway -title "Sparkle Highway"
   # passage beyond delta blues carrying on from disc bob 
   # team ep+lt+js
-  #Stn 29 is PSS, the survey paper is mislabelled as 28 in the cave
+  # Stn 29 is PSS, the survey paper is mislabelled as 28 in the cave
 
   input "sparkle_highway-p.th2"
-  #input "sparkle_highway-s.th2"
+  input "sparkle_highway-e.th2"
 
   map m-all-p -projection plan
-     sparkle_highway-p
+    sparkle_highway-1p
+    break
+    sparkle_highway-2p
   endmap
 
-  #map m-all-e -projection extended
-  #  sparkle_highway-sparkle_highways
-  #endmap
+  map m-all-e -projection extended
+   sparkle_highway-1e
+  endmap
 
   centerline
     date 2024.07.18 

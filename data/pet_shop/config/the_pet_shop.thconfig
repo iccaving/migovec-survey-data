@@ -11,23 +11,20 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../gondolin.th"
-
+source "../the_pet_shop.th"
 
 #----------------------------------------------------------------------------------|
 # export a model openable in Loch and one in Aven
-export model -o ../_outputs/gondolin.lox
-export model -o ../_outputs/gondolin.3d
+export model -o ../outputs/the_pet_shop.lox
+export model -o ../outputs/the_pet_shop.3d
 
 #----------------------------------------------------------------------------------|
 # select a relevant layout definition file
 input ../../../layouts/detailed-p.thl
 
-
 #----------------------------------------------------------------------------------|
 # select a relevant map (which contains commands for offsets of overlying bits)
-select m-all-e@gondolin
-
+select m-all-e@the_pet_shop
 
 #----------------------------------------------------------------------------------|
 # define a local layout without legend or header for extended elevation
@@ -40,21 +37,20 @@ endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o ../_outputs/gondolin_ee.pdf -projection extended -layout local-e -layout-debug station-names
-
+export map -o ../outputs/the_pet_shop_ee.pdf -projection extended -layout local-e -layout-debug station-names
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
-select m-all-p@gondolin
+select m-all-p@the_pet_shop
 
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
 layout local
 	copy detailed
 	scale 1 250
-	map-image 100 0 sw ../_outputs/gondolin_ee.pdf
+	map-image 100 0 sw ../outputs/the_pet_shop_ee.pdf
 endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan and elevation
-export map -o ../_outputs/gondolin_plan_ee.pdf -projection plan -layout local
+export map -o ../outputs/the_pet_shop_plan_ee.pdf -projection plan -layout local

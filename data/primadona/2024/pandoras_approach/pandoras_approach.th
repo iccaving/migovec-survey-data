@@ -1,10 +1,20 @@
 # 2024.07.26 created by TopoDroid v 6.2.44
 
 survey pandoras_approach -title "Pandora's Approach"
-    # team JJ CH BR 
-    # continuation of sparkle highway?
-    # Stn 0 is PSS?
+  # team JJ CH BR 
+  # continuation of sparkle highway, leading to my little pitch
+  # Stn 0 is PSS?
      
+  input "pandoras_approach-p.th2"
+  input "pandoras_approach-e.th2"
+
+  map m-all-p -projection plan
+    pandoras_approach-1p
+  endmap
+  map m-all-e -projection extended
+    pandoras_approach-1e
+  endmap
+
   centerline
     date 2024.07.23
     team "Julien Jean" dog
@@ -88,7 +98,7 @@ survey pandoras_approach -title "Pandora's Approach"
     6 . 6.39 340.8 82.4
     6 . 1.38 140.4 62.7
     6 . 5.37 137.7 62.7
-    extend left
+    extend right
     5 7 10.99 130.3 23.4
     # extend auto
     7 . 1.96 244.4 -66.2
@@ -111,7 +121,7 @@ survey pandoras_approach -title "Pandora's Approach"
     8 . 0.45 31.5 68.3
     8 . 0.86 39.5 -2.7
     8 . 2.63 38.6 1.5
-    extend left
+    extend right
     8 9 9.05 104.8 1.9
     # extend auto
     9 . 0.30 269.7 70.4
@@ -119,7 +129,7 @@ survey pandoras_approach -title "Pandora's Approach"
     9 . 0.69 248.0 -5.2
     9 . 6.42 112.6 -6.7
     9 . 6.41 108.3 -6.7
-    extend left
+    extend right
     9 10 6.42 106.3 -6.7
     # extend auto
     10 . 1.29 346.0 -70.4
@@ -133,7 +143,7 @@ survey pandoras_approach -title "Pandora's Approach"
     11 . 5.98 150.7 64.9
     11 . 2.40 168.2 22.5
     11 . 4.51 210.1 24.3
-    extend left
+    extend right
     11 12 3.60 119.2 39.0
     # extend auto
     12 . 3.35 22.6 85.4
@@ -152,15 +162,5 @@ survey pandoras_approach -title "Pandora's Approach"
     extend right
     13 14 3.20 24.3 12.3
   endcenterline
-
-  # input "pandoras_approach-1p.th2"
-  # input "pandoras_approach-1s.th2"
-
-  # map m1p -projection plan
-  #   pandoras_approach-1p
-  # endmap
-  # map m1s -projection extended
-  #   pandoras_approach-1s
-  # endmap
 
 endsurvey
