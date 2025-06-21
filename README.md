@@ -657,8 +657,6 @@ export -o {path/to/map} -projection extended -layout local-e
 
 Main symbology and symbol codes:
 
-![symbology of migovec-survey-data](./outputs/symbology.svg)
-
 [symbology PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/symbology.pdf)
 
 ### How do I show the centerline of undrawn maps?
