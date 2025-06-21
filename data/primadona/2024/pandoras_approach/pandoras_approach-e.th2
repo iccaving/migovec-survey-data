@@ -549,8 +549,8 @@ endscrap
 
 scrap pandoras_approach-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 96.1123 522.2227 label -align r -scale xs -text "Balcony of the Equestrians<lang:sl>Balkon Konjenikovsmrtni"
-point 172.5904 574.4398 label -align r -scale xs -text "Death Slide<lang:sl>Smrtni Tobogan"
+point 96.1123 522.2227 label -align r -attr level 3 -scale xs -text "Balcony of the Equestrians<lang:sl>Balkon Konjenikovsmrtni"
+point 172.5904 574.4398 label -align r -attr level 3 -scale xs -text "Death Slide<lang:sl>Smrtni Tobogan"
 line rock-border -close on
   130.1819 578.7639
   151.4292 600.0112
