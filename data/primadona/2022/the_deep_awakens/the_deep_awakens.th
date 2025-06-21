@@ -5,46 +5,46 @@ survey the_deep_awakens -title "The deep awakens"
   input the_deep_awakens-p.th2
   input the_deep_awakens-e.th2
     
-  map 1p -projection plan
+  map m1p -projection plan
     the_deep_awakens-1p
   endmap
-  map 2p -projection plan
+  map m2p -projection plan
     the_deep_awakens-2p
   endmap
-  map 3p -projection plan
+  map m3p -projection plan
     the_deep_awakens-3p
   endmap
-  map 4p -projection plan
+  map m4p -projection plan
     the_deep_awakens-4p
   endmap
   
   map m-all-p -projection plan
-    1p
-    2p
-    3p
-    4p
+    m1p
+    m2p
+    m3p
+    m4p
   endmap 
 
   join the_deep_awakens-2p the_deep_awakens-3p
   
-  map 1e -projection extended
+  map m1e -projection extended
     the_deep_awakens-1e
   endmap
-  map 1.5e -projection extended
+  map m1.5e -projection extended
     the_deep_awakens-1.5e
   endmap
-  map 2e -projection extended
+  map m2e -projection extended
     the_deep_awakens-2e
   endmap
-  map 2.5e -projection extended
+  map m2.5e -projection extended
     the_deep_awakens-2.5e
   endmap
 
   map m-all-e -projection extended
-    1e
-    1.5e
-    2e
-    2.5e
+    m1e
+    m1.5e
+    m2e
+    m2.5e
   endmap
 
   join the_deep_awakens-1e the_deep_awakens-2e 
