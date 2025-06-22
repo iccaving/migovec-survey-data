@@ -7,7 +7,7 @@ input ../../layouts/metapost/connection_marker.thl
 input ../../layouts/metapost/label.thl
 input ../../layouts/mods.thl
 
-# This the overview, making everything grey, apart from the highlighed 'entrance to cafe'
+# This the overview, making everything grey, apart from the highlighted 'entrance to cafe'
 lookup map:spiral_climb_to_mona_tip_exit_overview
 	m-alkatraz_to_exit-p@mona_tip.primadona_ubend_mona_tip.system_migovec  [100 0 0] "Alkatraz to Mona tip entrance"
 	[] [40 40 40] "rest"

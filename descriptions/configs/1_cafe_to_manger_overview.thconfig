@@ -7,7 +7,7 @@ input ../../layouts/metapost/connection_marker.thl
 input ../../layouts/metapost/label.thl
 input ../../layouts/mods.thl
 
-# This the overview, making everything grey, apart from the highlighed 'cafe to manger' map
+# This the overview, making everything grey, apart from the highlighted 'cafe to manger' map
 lookup map:cafe_to_manger_overview
 	m-cafe_to_manger-p@primadona.primadona_ubend_mona_tip.system_migovec [100 0 0] "Cafe to Manger"
 	[] [40 40 40] "rest"

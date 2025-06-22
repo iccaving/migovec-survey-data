@@ -7,19 +7,19 @@ input ../../layouts/metapost/connection_marker.thl
 input ../../layouts/metapost/label.thl
 input ../../layouts/mods.thl
 
-# This the overview, making everything grey, apart from the highlighted 'entrance to cafe'
-lookup map:manger_to_tranquillity_overview
-	m-manger_to_tranquillity-top-p@primadona.primadona_ubend_mona_tip.system_migovec  [100 0 0] "Manger to Tranquillity Base"
-	m-manger_to_tranquillity-bottom-p@primadona.primadona_ubend_mona_tip.system_migovec  [100 0 0] "Manger to Tranquillity Base"
-
+# This the overview, making everything grey, apart from the highlighted map
+lookup map:christmas_to_my_little_pitch_overview
+	m-christmas_to_my_little_pitch-p@primadona.primadona_ubend_mona_tip.system_migovec [100 0 0] "Christmas Camp to My Little Pitch"
+	m-christmas_to_my_little_pitch2-p@primadona.primadona_ubend_mona_tip.system_migovec [100 0 0] "Christmas Camp to My Little Pitch2"
 	[] [40 40 40] "rest"
 endlookup
 
 # Generate overview inset
 layout overview-p
+
 	symbol-hide group all
 	#copy custom_scalebar_arrow
-	colour map-fg map:manger_to_tranquillity_overview # this is the crucial look-up
+	colour map-fg map:christmas_to_my_little_pitch_overview # this is the crucial look-up
 	colour map-bg transparent
 	scale 1 10000
 	base-scale 1 2000
@@ -34,8 +34,7 @@ layout overview-p
 	endcode
 endlayout
 
-
 maps-offset off
 select m-all-p@primadona_ubend_mona_tip.system_migovec
 
-export map -o ../outputs/manger_to_tranquillity_overview.pdf -projection plan -layout overview-p
+export map -o ../outputs/christmas_to_my_little_pitch_overview.pdf -projection plan -layout overview-p
