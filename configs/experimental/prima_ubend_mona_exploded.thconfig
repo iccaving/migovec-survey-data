@@ -1,0 +1,276 @@
+# select a source data file.
+source "../../data/system_migovec.th"
+
+# input the layout files
+input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
+
+# input the custom point, line and area definitions
+input ../../layouts/metapost/points.thl
+input ../../layouts/metapost/lines.thl
+input ../../layouts/metapost/areas.thl
+input ../../layouts/metapost/scalebar_arrow.thl
+input ../../layouts/metapost/grid.thl
+input ../../layouts/metapost/connection_marker.thl
+input ../../layouts/metapost/label.thl
+
+source 
+    # ---------- EXTENDED ELEVATION ----------
+
+	map localmap-e
+        entrance-e
+        TTT-e [580 0 m] none
+        hallelujah-e [1000 0 m] none
+	endmap
+
+    map entrance-e
+        m-all-e@mona_tip.primadona_ubend_mona_tip.system_migovec
+        m-all-e@ubend.primadona_ubend_mona_tip.system_migovec
+        m-all-e@belladonna.primadona_ubend_mona_tip.system_migovec
+        m-entrance-e@primadona.primadona_ubend_mona_tip.system_migovec
+
+        m-electric_branch-e@primadona.primadona_ubend_mona_tip.system_migovec
+        m-karstaway_branch-e@primadona.primadona_ubend_mona_tip.system_migovec
+    endmap    
+    
+    map TTT-e
+        m-ttt_branch-e@primadona.primadona_ubend_mona_tip.system_migovec
+        m-hammerhead_branch-e@primadona.primadona_ubend_mona_tip.system_migovec
+        m-below_manger-e@primadona.primadona_ubend_mona_tip.system_migovec
+        m-below_klic_globin-e@primadona.primadona_ubend_mona_tip.system_migovec
+    endmap 
+    
+    map hallelujah-e
+        m-smer0_branch-e@primadona.primadona_ubend_mona_tip.system_migovec
+        m-fenestrator_branch-e@primadona.primadona_ubend_mona_tip.system_migovec
+        m-death_star_branch-e@primadona.primadona_ubend_mona_tip.system_migovec
+    endmap
+
+    # ---------- PLAN ----------
+
+    map localmap-p
+        entrance-p [-150 30 m] below
+        galerija-p
+        death-star-p
+        delta-blues-p [0 -180 m] below
+        ttt-p [600 100 m] none
+        m-all-p@mona_tip.primadona_ubend_mona_tip.system_migovec
+    endmap
+
+    map entrance-p
+        m-entrance-p@primadona.primadona_ubend_mona_tip.system_migovec
+    endmap
+
+    map ttt-p
+        m-all-p@prima2.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@risanke.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@risa2.primadona.primadona_ubend_mona_tip.system_migovec
+
+        m-ttt_branch-p@primadona.primadona_ubend_mona_tip.system_migovec
+
+        m-old_slov_route-p@primadona.primadona_ubend_mona_tip.system_migovec [150 0 m] none
+        m-pivnica-p@primadona.primadona_ubend_mona_tip.system_migovec [-20 20 m] below
+        
+        m-klic_globin_branch-p@primadona.primadona_ubend_mona_tip.system_migovec
+        m-deep-p@primadona.primadona_ubend_mona_tip.system_migovec [300 0 m] none
+
+        hammerhead-p [0 100 m] none
+    endmap 
+
+    map hammerhead-p
+        m-hammerhead_branch-p@primadona.primadona_ubend_mona_tip.system_migovec
+        m-below_lumos-p@primadona.primadona_ubend_mona_tip.system_migovec [-50 0 m] below
+    endmap
+
+    map galerija-p
+        # m-galerija_branch-p@primadona.primadona_ubend_mona_tip.system_migovec
+        m-below_cattlegrid-p@primadona.primadona_ubend_mona_tip.system_migovec [70 0 m] below
+        m-upside_down_area-p@primadona.primadona_ubend_mona_tip.system_migovec
+        m-hallelujah_branch-p@primadona.primadona_ubend_mona_tip.system_migovec
+        m-echo_falls_branch-p@primadona.primadona_ubend_mona_tip.system_migovec [50 0 m] below 
+    endmap
+
+    map death-star-p
+        m-all-p@death_star.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@the_expo_strikes_back.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@cantina_canyon.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@cantina_canyon_2.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@sisyphus_slope.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@antares.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@the_deep_awakens.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@who_dies_first_resurvey.primadona.primadona_ubend_mona_tip.system_migovec
+    endmap
+
+    map delta-blues-p
+        m-all-p@delta_blues.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@blues_and_twos.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@discordant_bebop.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@sparkle_highway.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@pandoras_approach.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@my_little_pitch.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@loompa_land.primadona.primadona_ubend_mona_tip.system_migovec
+        m-all-p@down_the_rabbit_hole.primadona.primadona_ubend_mona_tip.system_migovec
+    endmap
+
+endsource 
+
+layout e
+	# copy custom metapost definitions
+	copy custom_points
+	copy custom_lines
+	copy custom_areas
+	copy custom_scalebar
+	copy custom_grid
+	copy connection_marker
+	copy custom_label
+
+	## general statements
+	scale 1 1000
+	# legend on
+	# map-header -5 95 ne
+	# statistics topo-length off
+	# fonts-setup 6 7 10 12 14
+	# grid-size 50 50 100 m
+	# grid bottom
+	# grid-coords border
+
+	## survey lines and stations
+	symbol-hide point passage-height
+	symbol-colour point station-name [70 0 0]
+
+	## water and ice
+	symbol-assign area ice MY
+	symbol-assign area snow MY
+	symbol-assign area water MY
+	symbol-assign area sump MY
+
+
+	symbol-colour area ice [0 70 90]
+	symbol-colour area water [3.52 55.68 83.92]
+	symbol-colour area sump [15.68 20.39 50.98]
+	symbol-assign point water-flow MY
+	symbol-colour point water-flow [0 10 70]
+
+	## formation
+	symbol-colour point flowstone [85 45 10]
+	symbol-color line wall:flowstone [85 45 10]
+	symbol-colour point flowstone [85 45 10]
+	symbol-colour point pillar [85 45 10]
+	symbol-colour point stalagmite [85 45 10]
+	symbol-colour point stalactite [85 45 10]
+	symbol-colour point curtain [85 45 10]
+	symbol-colour point helictite [85 45 10]
+	symbol-colour point soda-straw [85 45 10]
+	symbol-colour point crystal [85 45 10]
+
+	## sedimentary fills
+	symbol-assign line rock-border MY
+	symbol-assign area clay MY
+	symbol-assign area sand MY
+	symbol-assign area water MY
+	symbol-assign area sump MY
+	symbol-assign area pebbles MY
+	symbol-assign line wall:blocks MYEE # this is an example of symbol different between plan view and EE.
+
+	symbol-colour area clay [65 55 10]
+	#symbol-colour line wall:clay [65 55 10]
+	symbol-colour area sand [85 75 10]
+
+	## misc
+	symbol-assign point gradient MY
+	symbol-assign line contour MY
+	symbol-assign line pit AUT
+	symbol-assign point breakdown-choke AUT
+	symbol-assign point air-draught MY
+	symbol-assign point station:fixed MY
+	symbol-assign point station:temporary MY
+
+    # Show survey lines (centrelines) for centrelines-only mode
+	symbol-show line survey 
+	symbol-assign line survey AUT
+	symbol-color line survey [70 0 0]
+	symbol-show point station
+	symbol-color point station [70 0 0]
+endlayout
+
+layout p
+    # copy custom metapost definitions
+    copy custom_points
+	copy custom_lines
+	copy custom_areas
+	copy custom_scalebar
+	copy custom_grid
+	copy connection_marker
+	copy custom_label
+
+    scale 1 1000
+
+    symbol-hide line map-connection
+    symbol-hide point passage-height
+
+    ## water and ice
+	symbol-assign area ice MY
+	symbol-assign area snow MY
+	symbol-assign area water MY
+	symbol-assign area sump MY
+
+
+	symbol-colour area ice [0 70 90]
+	symbol-colour area water [3.52 55.68 83.92]
+	symbol-colour area sump [15.68 20.39 50.98]
+	symbol-assign point water-flow MY
+	symbol-colour point water-flow [0 10 70]
+
+	## formation
+	symbol-colour point flowstone [85 45 10]
+	symbol-color line wall:flowstone [85 45 10]
+	symbol-colour point flowstone [85 45 10]
+	symbol-colour point pillar [85 45 10]
+	symbol-colour point stalagmite [85 45 10]
+	symbol-colour point stalactite [85 45 10]
+	symbol-colour point curtain [85 45 10]
+	symbol-colour point helictite [85 45 10]
+	symbol-colour point soda-straw [85 45 10]
+	symbol-colour point crystal [85 45 10]
+
+	## sedimentary fills
+	symbol-assign line rock-border MY
+	symbol-assign area clay MY
+	symbol-assign area sand MY
+	symbol-assign area water MY
+	symbol-assign area sump MY
+	symbol-assign area pebbles MY
+	symbol-assign line wall:blocks MYEE # this is an example of symbol different between plan view and EE.
+
+	symbol-colour area clay [65 55 10]
+	#symbol-colour line wall:clay [65 55 10]
+	symbol-colour area sand [85 75 10]
+
+	## misc
+	symbol-assign point gradient MY
+	symbol-assign line contour MY
+	symbol-assign line pit AUT
+	symbol-assign point breakdown-choke AUT
+	symbol-assign point air-draught MY
+	symbol-assign point station:fixed MY
+	symbol-assign point station:temporary MY
+
+	# Show survey lines (centrelines) for centrelines-only mode
+	symbol-show line survey
+	symbol-assign line survey AUT
+	symbol-color line survey [70 0 0]
+	symbol-show point station
+	symbol-color point station [70 0 0]
+endlayout
+
+maps-offset on
+language en
+
+select localmap-e
+
+# export map -projection extended -o ../../outputs/primadona_ubend_mona_tip_exploded_EE.pdf -layout e
+
+select localmap-p
+
+export map -projection plan -o ../../outputs/primadona_ubend_mona_tip_exploded_plan.pdf -layout p
