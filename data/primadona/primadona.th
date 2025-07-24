@@ -650,4 +650,13 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join my_little_pitch-1p@my_little_pitch pandoras_approach-1p@pandoras_approach
 	join pandoras_approach-1p@pandoras_approach sparkle_highway-2p@sparkle_highway
 	join sparkle_highway-1p@sparkle_highway delta_blues-1p@delta_blues
+
+	###______________ 2025______________###
+	input "./2025/2_loompa_2_land/2_loompa_2_land.th"
+	input "./2025/smer0_and_salome_viados_resurvey/smer0_and_salome_viados_resurvey.th"
+	input "./2025/alice_in_waterland/alice_in_waterland.th"
+
+	equate 29@2_loompa_2_land 0@loompa_land
+	equate 0@smer0_and_salome_viados_resurvey 49@smer0
+	equate 6@alice_in_waterland 0@down_the_rabbit_hole
 endsurvey
