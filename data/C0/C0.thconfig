@@ -1,0 +1,15 @@
+# 2025.07.21 created by TopoDroid v 6.2.44
+
+source "../th/C0.th"
+
+layout topodroid
+  legend on
+  symbol-hide group centerline
+  symbol-show point station
+  debug station-names
+endlayout
+
+export map -layout topodroid -o C0-p.pdf -proj plan 
+
+export map -layout topodroid -o C0-s.pdf -proj extended 
+

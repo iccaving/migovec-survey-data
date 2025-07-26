@@ -1,0 +1,15 @@
+# 2025.07.25 created by TopoDroid v 6.2.44
+
+source "../th/loompa_land_tolmin_drift.th"
+
+layout topodroid
+  legend on
+  symbol-hide group centerline
+  symbol-show point station
+  debug station-names
+endlayout
+
+export map -layout topodroid -o loompa_land_tolmin_drift-p.pdf -proj plan 
+
+export map -layout topodroid -o loompa_land_tolmin_drift-s.pdf -proj extended 
+

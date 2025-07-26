@@ -1,0 +1,86 @@
+# 2025.07.21 created by TopoDroid v 6.2.44
+
+survey P2 -title "P2"
+
+  # input "P2-1p.th2"
+  # input "P2-1s.th2"
+
+  # map m1p -projection plan
+  #   P2-1p
+  #   P2-1p1
+  # endmap
+  # map m1s -projection extended
+  #   P2-1s
+  # endmap
+
+  centerline
+    date 2025.07.13 
+    # team BR AE JL EM TB IM JC 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend left
+    0 1 4.71 171.0 -7.7
+    # extend auto
+    1 . 1.18 46.6 -7.3
+    1 . 1.22 37.8 -74.0
+    1 . 1.05 54.4 41.6
+    extend left
+    1 2 3.42 106.0 -44.4
+    # extend auto
+    2 . 1.86 261.6 33.8
+    2 . 2.25 256.5 -37.1
+    2 . 1.25 3.2 51.9
+    2 . 3.48 204.4 -1.6
+    2 . 2.68 211.4 14.1
+    2 . 2.52 203.0 87.6
+    2 . 2.57 135.1 78.2
+    extend left
+    2 3 4.11 219.3 -34.4
+    # extend auto
+    3 . 6.73 161.2 5.3
+    3 . 3.82 120.8 25.1
+    3 . 1.62 129.0 76.3
+    3 . 1.31 128.4 2.1
+    3 . 0.84 209.8 24.8
+    3 . 3.06 60.6 75.0
+    3 . 0.62 232.9 -73.9
+    extend left
+    3 4 5.09 171.2 -8.6
+    # extend auto
+    4 . 1.82 79.3 3.2
+    4 . 0.34 238.6 -5.5
+    4 . 0.33 236.5 -3.6
+    4 . 0.23 142.2 -0.7
+    4 . 3.21 93.9 69.3
+    4 . 1.74 87.1 -57.0
+    extend right
+    3 5 1.95 45.8 -27.0
+    # extend auto
+    5 . 0.90 279.5 -1.4
+    5 . 0.15 96.3 -3.4
+    5 . 4.64 284.4 84.8
+    5 . 1.24 155.5 -81.3
+    5 . 0.69 41.6 -58.4
+    5 . 1.22 174.9 -44.7
+    5 . 2.27 76.2 -66.2
+    5 . 2.77 117.3 -58.1
+    extend right
+    5 6 3.43 337.3 27.9
+    # extend auto
+    6 . 0.67 80.7 -17.8
+    6 . 0.19 275.6 -6.8
+    6 . 1.33 23.0 -38.6
+    6 . 1.58 80.3 55.6
+    6 . 1.63 136.2 -28.2
+    6 . 1.54 124.7 32.4
+    units left right up down meters
+    data dimensions station left right up down
+    0 0.00 0.00 0.00 0.00
+    1 1.00 0.00 0.00 1.18
+    2 0.90 1.09 1.09 1.36
+    3 2.66 0.48 0.48 0.59
+    5 0.75 0.93 0.93 2.35
+  endcenterline
+
+endsurvey
