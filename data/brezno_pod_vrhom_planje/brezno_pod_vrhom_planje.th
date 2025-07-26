@@ -67,4 +67,13 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 	join one_at_a_chime-1e@one_at_a_chime osmica-1e@osmica
 	join house_of_cards-1e@house_of_cards house_of_cards_2-1e@house_of_cards_2
 	join house_of_cards_2-3e@house_of_cards_2 duckbuster-1e@duckbuster
+
+
+	###__________2025___________###
+
+	input "./2025/game_of_stones/game_of_stones.th"
+	input "./2025/game_of_stones_a_feast_for_crolls/game_of_stones_a_feast_for_crolls.th"
+
+	equate 20@game_of_stones 0@duckbuster
+	equate 4@game_of_stones_a_feast_for_crolls 17@game_of_stones
 endsurvey
