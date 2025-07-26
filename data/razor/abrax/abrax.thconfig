@@ -1,0 +1,17 @@
+# 2025.07.26 created by TopoDroid v 6.2.44
+
+source "./abrax.th"
+
+layout topodroid
+  legend on
+  symbol-show group centerline
+  symbol-show point station
+  debug station-names
+endlayout
+
+select msketch1p@abrax
+export map -layout topodroid -o abrax-p.pdf -proj plan 
+
+select msketch1s@abrax
+export map -layout topodroid -o abrax-s.pdf -proj extended 
+

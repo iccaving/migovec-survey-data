@@ -40,6 +40,9 @@ survey plateau -title "Migovec Plateau"
 	input "./P2/P2.th"
 	input "./P3/P3.th"
 	input "./C0/C0.th"
+	input "./razor/abrax/abrax.th"
+	input "./razor/brabrax/brabrax.th"
+	input "./razor/kalifax/kalifax.th"
 
 	map m-all-p -projection plan
 		m-all-p@gondolin
@@ -148,6 +151,11 @@ survey plateau -title "Migovec Plateau"
 
 		# PRIMADONA
 		fix 35@prima1.primadona.primadona_ubend_mona_tip.system_migovec 404188 124291 1727
+
+		#RAZOR
+		fix 0@abrax 405615 123359 1394
+		fix 0@brabrax 405623 123357 1389
+		fix 0@kalifax 405631 123352 1380
 
 		# ROWAN CAVE
 		fix 0@rowan_cave 404460 124948 1819

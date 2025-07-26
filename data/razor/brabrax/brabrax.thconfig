@@ -1,0 +1,17 @@
+# 2025.07.26 created by TopoDroid v 6.2.44
+
+source "./brabrax.th"
+
+layout topodroid
+  legend on
+  symbol-show group centerline
+  symbol-show point station
+  debug station-names
+endlayout
+
+select msketchadjustedp@brabrax
+export map -layout topodroid -o brabrax-p.pdf -proj plan 
+
+select msketchadjusteds@brabrax
+export map -layout topodroid -o brabrax-s.pdf -proj extended 
+
