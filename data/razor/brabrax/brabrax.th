@@ -1,0 +1,140 @@
+# 2025.07.26 created by TopoDroid v 6.2.44
+
+survey brabrax -title "Brabrax"
+    # middle razor hole 
+
+  input "brabrax-sketchadjustedp.th2"
+  input "brabrax-sketchadjusteds.th2"
+
+  map msketchadjustedp -projection plan
+    brabrax-sketchadjustedp
+  endmap
+  map msketchadjusteds -projection extended
+    brabrax-sketchadjusteds
+    brabrax-sketchadjusteds1
+  endmap
+
+  centerline
+    date 2025.07.26 
+    # team HR, EM 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend right
+    0 1 4.03 214.0 -64.0
+    # extend auto
+    1 - 1.00 266.0 0.0
+    extend vertical
+    1 - 2.00 0.0 90.0
+    1 - 0.30 0.0 -90.0
+    extend right
+    1 2 1.40 356.0 -35.0
+    # extend auto
+    2 - 1.08 201.0 0.0
+    2 - 1.15 21.0 0.0
+    extend vertical
+    2 - 0.40 0.0 90.0
+    2 - 0.00 0.0 -90.0
+    # extend auto
+    4 - 0.70 20.0 0.0
+    extend vertical
+    4 - 0.35 0.0 90.0
+    4 - 0.63 0.0 -90.0
+    extend right
+    3 4 2.42 290.0 4.0
+    3 5 3.60 195.0 -30.0
+    # extend auto
+    6 - 1.70 267.0 0.0
+    6 - 1.30 87.0 0.0
+    extend vertical
+    6 - 1.90 0.0 90.0
+    6 - 0.20 0.0 -90.0
+    extend left
+    6 7 2.60 2.0 16.0
+    # extend auto
+    8 - 1.95 110.0 0.0
+    8 - 0.73 290.0 0.0
+    extend vertical
+    8 - 0.83 0.0 90.0
+    8 - 0.77 0.0 -90.0
+    extend right
+    4 8 6.73 200.0 -32.0
+    # extend auto
+    9 - 0.50 115.0 0.0
+    9 - 0.10 295.0 0.0
+    extend vertical
+    9 - 0.40 0.0 90.0
+    9 - 1.10 0.0 -90.0
+    extend right
+    8 9 2.25 205.0 -15.0
+    # extend auto
+    10 - 0.40 114.0 0.0
+    10 - 0.90 294.0 0.0
+    extend vertical
+    10 - 7.00 0.0 90.0
+    10 - 0.00 0.0 -90.0
+    extend right
+    9 10 5.60 204.0 -61.0
+    # extend auto
+    11 - 1.00 110.0 0.0
+    11 - 0.20 290.0 0.0
+    extend vertical
+    11 - 0.10 0.0 90.0
+    11 - 0.10 0.0 -90.0
+    extend left
+    10 11 2.65 200.0 -31.0
+    # extend auto
+    12 - 1.20 20.0 0.0
+    12 - 0.40 200.0 0.0
+    extend vertical
+    12 - 1.80 0.0 90.0
+    12 - 0.00 0.0 -90.0
+    extend right
+    10 12 4.50 110.0 11.0
+    # extend auto
+    13 - 0.50 315.0 0.0
+    13 - 0.25 135.0 0.0
+    extend vertical
+    13 - 0.90 0.0 90.0
+    13 - 0.60 0.0 -90.0
+    extend left
+    12 13 4.35 45.0 30.0
+    # extend auto
+    14 - 1.20 111.0 0.0
+    14 - 0.90 291.0 0.0
+    extend vertical
+    14 - 0.60 0.0 90.0
+    14 - 0.00 0.0 -90.0
+    extend right
+    12 14 2.80 201.0 -36.0
+    14 . 1.70 201.0 -36.0
+    # extend auto
+    7 - 0.30 272.0 0.0
+    7 - 0.00 87.0 0.0
+    extend vertical
+    7 - 0.50 0.0 90.0
+    7 - 0.00 0.0 -90.0
+    extend left
+    4 6 3.53 357.0 11.0
+    # extend auto
+    3 - 1.20 201.0 0.0
+    3 - 1.40 21.0 0.0
+    extend vertical
+    3 - 2.30 0.0 90.0
+    3 - 0.00 0.0 -90.0
+    extend right
+    2 3 1.83 291.0 4.0
+    units left right up down meters
+    data dimensions station left right up down
+    0 0.00 0.00 0.00 0.00
+    1 1.00 0.00 0.00 0.30
+    12 0.51 0.17 0.17 0.00
+    3 0.15 0.13 0.13 0.00
+    4 0.00 0.00 0.00 0.63
+    6 1.69 1.30 1.30 0.20
+    8 1.94 0.73 0.73 0.77
+    9 0.50 0.10 0.10 1.10
+    10 0.40 0.90 0.90 0.00
+  endcenterline
+
+endsurvey
