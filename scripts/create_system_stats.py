@@ -110,6 +110,7 @@ for system in systems:
         "length": length,
         "length_km": length_km,
         "length_m": length_m,
+        "length_m_formatted": f"{length_m:,}",
         "depth": depth,
     }
 
