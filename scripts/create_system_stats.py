@@ -102,10 +102,16 @@ for system in systems:
         print(e)
         continue
     stats = get_stats_from_log(log)
-    length = float(stats["length"])
+    length = float(stats["length"])  # metres
     length_km = round(length / 1000, 1)
+    length_m = int(round(length))
     depth = round(float(stats["depth"]))
-    json_data[system]["stats"] = {"length": length, "length_km": length_km, "depth": depth}
+    json_data[system]["stats"] = {
+        "length": length,
+        "length_km": length_km,
+        "length_m": length_m,
+        "depth": depth,
+    }
 
 print("Need plan:")
 pprint.pprint(need_plan)
