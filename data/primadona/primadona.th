@@ -657,10 +657,13 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2025/alice_in_waterland/alice_in_waterland.th"
 	input "./2025/loosely_horsey/loosely_horsey.th"
 	input "./2025/loompa_land_tolmin_drift/loompa_land_tolmin_drift.th"
+	input "./2025/the_big_daddy/the_big_daddy.th"
 
 	equate 29@2_loompa_2_land 0@loompa_land
 	equate 0@smer0_and_salome_viados_resurvey 49@smer0
 	equate 6@alice_in_waterland 0@down_the_rabbit_hole
 	equate 0@loosely_horsey 17@sparkle_highway
 	equate 16@loompa_land_tolmin_drift 0@2_loompa_2_land
+	equate 8@the_big_daddy 5@blues_and_twos
+
 endsurvey
