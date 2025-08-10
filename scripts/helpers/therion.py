@@ -38,7 +38,7 @@ def compile_file(filepath, **kwargs):
     return logs
 
 
-lengthre = re.compile(r".*Total length of survey legs =\s*(\S+)m")
+lengthre = re.compile(r".*Total length of survey shots =\s*(\S+)m")
 depthre = re.compile(r".*Vertical range =\s*(\S+)m")
 
 
