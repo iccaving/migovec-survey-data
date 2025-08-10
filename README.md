@@ -43,10 +43,9 @@ This work is licensed under the CC-BY-NC-SA-4.0 licence. Copyright to ICCC / JSP
 
 ## How to cite
 
-``ICCC and JSDPT, Survey Data for the Tolminski Migovec Cave Exploration project, 2024. DOI: 10.5281/zenodo.10813021``
+`ICCC and JSDPT, Survey Data for the Tolminski Migovec Cave Exploration project, 2024. DOI: 10.5281/zenodo.10813021`
 
 [![DOI](https://zenodo.org/badge/330606015.svg)](https://zenodo.org/doi/10.5281/zenodo.10813020)
-
 
 ## View
 
@@ -612,7 +611,7 @@ endsurvey
 
 ## Final considerations
 
-This survey data was collected between the year 1974-2019 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
+This survey data has been collected since 1974 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
 
 ## Tips
 
