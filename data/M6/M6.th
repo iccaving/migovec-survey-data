@@ -1,14 +1,42 @@
 # 2025.07.21 created by TopoDroid v 5.1.40
 
-survey M6 -title "M6 - death's trapdoor"
+survey M6 -title "M6"
+
+  input "M6-1p.th2"
+  input "M6-1s.th2"
+
+  map m6_1p
+    m6_-_death's_trapdoor-1p
+  endmap
+  map m6_1p1
+    m6_-_death's_trapdoor-1p1
+  endmap
+  
+  map m-all-p -projection plan
+    m6_1p [30 0 m] below
+    break
+    m6_1p1
+  endmap
 
 
+  map m6_1s
+    m6_-_death's_trapdoor-1s
+  endmap
+  map m6_1s1
+    m6_-_death's_trapdoor-1s1
+  endmap
+
+  map m-all-e -projection extended
+    m6_1s
+    break
+    m6_1s1 [30 0 m] below
+  endmap
 
   centerline
     date 2025.07.14 
-    team "tb"
-    team "em"
-    team "ae"
+    team "Thurston Blount"
+    team "Esther Müller"
+    team "Aurelia Eberhard"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

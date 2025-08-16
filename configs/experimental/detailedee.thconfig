@@ -14,18 +14,18 @@ source "../../data/M6/M6.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
-input "../../layouts/detailed-p.thl"
+input "../../layouts/detailed-e.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-all-p@M6 -map-level 0
+select m-all-e@M6 -map-level 0
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1
-layout plan
+layout ee
 	copy detailed
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin"
 endlayout
 
 language en
-export map -projection plan -o ../../outputs/detailed.pdf -layout plan -layout-debug station-names
+export map -projection extended -o ../../outputs/detailedee.pdf -layout extended -layout-debug station-names
