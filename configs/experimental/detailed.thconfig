@@ -10,7 +10,7 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../data/M6/M6.th"
+source "../../data/primadona/2025/loosely_horsey/loosely_horsey.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
@@ -18,7 +18,7 @@ input "../../layouts/detailed-p.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-all-p@M6 -map-level 0
+select m-all-p@loosely_horsey -map-level 0
 
 #----------------------------------------------------------------------------------|
 # export a PLAN view, using the LAYOUT overview1

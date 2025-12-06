@@ -1,0 +1,19 @@
+encoding utf-8
+
+##XTHERION## xth_me_area_adjust -2440.94 -1811.02 1181.10 1496.06
+##XTHERION## xth_me_image_insert {0.0 1 1.0} {0.0 1} "Dmtw.plan.xvi" 0 {}
+##XTHERION## xth_me_area_zoom_to 25
+
+scrap dmtw-plan -projection plan
+
+point -5.290455 -257.0208 station -name 2
+
+point -77.421196 -348.4677 station -name 3
+
+point -165.91281 -627.7985 station -name 4
+
+point -748.1458 -746.49677 station -name 5
+
+point -889.12695 -959.3847 station -name 6
+
+endscrap

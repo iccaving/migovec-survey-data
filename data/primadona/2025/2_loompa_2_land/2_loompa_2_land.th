@@ -1,17 +1,17 @@
 # 2025.07.21 created by TopoDroid v 6.2.44
 
-survey 2_loompa_2_land -title "2 loompa 2 land"
+survey 2_loompa_2_land -title "2 Loompa 2 Land"
   # continuation of loompa land, ending in large undescended pitch 
 
-  # input "2_loompa_2_land-2_loompa_2_landp.th2"
-  # input "2_loompa_2_land-2_loompa_2_lands.th2"
+  input "2_loompa_2_land-2_loompa_2_landp.th2"
+  input "2_loompa_2_land-2_loompa_2_lands.th2"
 
-  # map m2_loompa_2_landp -projection plan
-  #   2_loompa_2_land-2_loompa_2_landp
-  # endmap
-  # map m2_loompa_2_lands -projection extended
-  #   2_loompa_2_land-2_loompa_2_lands
-  # endmap
+  map m-all-p -projection plan
+    2_loompa_2_land-2_loompa_2_landp
+  endmap
+  map m-all-e -projection extended
+    2_loompa_2_land-2_loompa_2_lands
+  endmap
 
   centerline
     date 2025.07.06 

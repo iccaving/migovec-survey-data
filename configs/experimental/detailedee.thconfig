@@ -10,7 +10,7 @@ encoding  utf-8
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
-source "../../data/M6/M6.th"
+source "../../data/primadona/2025/loosely_horsey/loosely_horsey.th"
 
 #----------------------------------------------------------------------------------|
 # input the layout files
@@ -18,10 +18,10 @@ input "../../layouts/detailed-e.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
-select m-all-e@M6 -map-level 0
+select m-all-e@loosely_horsey -map-level 0
 
 #----------------------------------------------------------------------------------|
-# export a PLAN view, using the LAYOUT overview1
+# export an EXTENDED ELEVATION view, using the LAYOUT overview1
 layout ee
 	copy detailed
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin"
