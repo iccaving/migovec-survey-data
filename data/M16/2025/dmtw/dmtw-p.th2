@@ -1,0 +1,129 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-dmtw-p -projection plan -scale [7.87402 1 m]
+    line survey
+        62.83 15.28
+        88.66 9.13
+    endline
+    line survey
+        62.83 15.28
+        97.09 18.19
+    endline
+    line survey
+        62.83 15.28
+        76.85 18.66
+    endline
+    line survey
+        62.83 15.28
+        54.72 10.39
+    endline
+    line survey
+        62.83 15.28
+        62.28 -10.39
+    endline
+    line survey
+        62.28 -10.39
+        67.17 38.74
+    endline
+    line survey
+        62.28 -10.39
+        61.73 -5.75
+    endline
+    line survey
+        62.28 -10.39
+        64.65 0.31
+    endline
+    line survey
+        62.28 -10.39
+        65.12 -23.46
+    endline
+    line survey
+        62.28 -10.39
+        50.31 -35.12
+    endline
+    line survey
+        62.28 -10.39
+        55.12 -19.61
+    endline
+    line survey
+        55.12 -19.61
+        58.74 -21.73
+    endline
+    line survey
+        55.12 -19.61
+        54.09 -17.24
+    endline
+    line survey
+        55.12 -19.61
+        55.04 -19.53
+    endline
+    line survey
+        55.12 -19.61
+        57.64 -18.66
+    endline
+    line survey
+        55.12 -19.61
+        46.22 -47.48
+    endline
+    line survey
+        46.22 -47.48
+        38.43 80.63
+    endline
+    line survey
+        46.22 -47.48
+        46.14 -48.74
+    endline
+    line survey
+        46.22 -47.48
+        60.55 -30.24
+    endline
+    line survey
+        46.22 -47.48
+        3.54 22.60
+    endline
+    line survey
+        46.22 -47.48
+        -25.04 -3.78
+    endline
+    line survey
+        46.22 -47.48
+        -11.97 -59.37
+    endline
+    line survey
+        -11.97 -59.37
+        -54.49 -45.75
+    endline
+    line survey
+        -11.97 -59.37
+        -2.99 -73.86
+    endline
+    line survey
+        -11.97 -59.37
+        52.60 33.31
+    endline
+    line survey
+        -11.97 -59.37
+        -97.09 14.09
+    endline
+    line survey
+        -11.97 -59.37
+        -26.06 -80.63
+    endline
+    point 62.83 15.28 station-name -align tr -scale xs -text 1
+    point 62.28 -10.39 station-name -align tr -scale xs -text 2
+    point 55.12 -19.61 station-name -align tr -scale xs -text 3
+    point 46.22 -47.48 station-name -align tr -scale xs -text 4
+    point -11.97 -59.37 station-name -align tr -scale xs -text 5
+    point -26.06 -80.63 station-name -align tr -scale xs -text 6
+endscrap
+
+scrap dmtw-1p -projection plan -scale [7.87402 1 m]
+    point 62.83 15.28 station -name 1
+    point 62.28 -10.39 station -name 2
+    point 55.12 -19.61 station -name 3
+    point 46.22 -47.48 station -name 4
+    point -11.97 -59.37 station -name 5
+    point -26.06 -80.63 station -name 6
+endscrap
