@@ -1,3 +1,4 @@
+encoding  utf-8
 # 2025.07.26 created by TopoDroid v 6.2.44
 
 source "./abrax.th"
@@ -13,5 +14,4 @@ select msketch1p@abrax
 export map -layout topodroid -o abrax-p.pdf -proj plan 
 
 select msketch1s@abrax
-export map -layout topodroid -o abrax-s.pdf -proj extended 
-
+export map -layout topodroid -o abrax-s.pdf -proj extended

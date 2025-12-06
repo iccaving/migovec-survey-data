@@ -1,0 +1,12 @@
+encoding  utf-8
+
+source "M6.th"
+
+layout topodroid
+  legend on
+  symbol-hide group centerline
+  symbol-show point station
+  debug station-names
+endlayout
+
+export model -o M6.3d
