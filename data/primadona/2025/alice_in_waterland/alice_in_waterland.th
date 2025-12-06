@@ -3,12 +3,12 @@
 survey alice_in_waterland -title "Alice in Waterland"
   # Prima: below Down the Rabbit Hole 
 
-  # input "alice_in_waterland-1p.th2"
+ input "alice_in_waterland-1p.th2"
   # input "alice_in_waterland-1s.th2"
 
-  # map m1p -projection plan
-  #   alice_in_waterland-1p
-  # endmap
+   map m1p -projection plan
+    alice_in_waterland-1p
+   endmap
   # map m1s -projection extended
   #   alice_in_waterland-1s
   # endmap
