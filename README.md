@@ -216,6 +216,7 @@ To compile the data and draw surveys you will need some software installed.
 For compiling and exporting:
 
 - [Therion](https://therion.speleo.sk/download.php) - The main thing.
+– Note: the instructions for installing Therion on Mac use an outdated homebrew method. Instead, after installing homebrew and MacTeX, go into the terminal (in the default location) and type brew tap ladislavb/therion && brew install therion.
 - [Survex](https://survex.com/download.html) - Used by Therion to generate `.3D` files.
 
 For drawing we are using Inkscape and the Therion Inkscape extensions because we think its nicer than using the Therion editor:
