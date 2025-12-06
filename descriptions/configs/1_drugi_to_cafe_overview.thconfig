@@ -7,7 +7,7 @@ input ../../layouts/metapost/connection_marker.thl
 input ../../layouts/metapost/label.thl
 input ../../layouts/mods.thl
 
-# This the overview, making everything grey, apart from the highlighed 'entrance to cafe'
+# This the overview, making everything grey, apart from the highlighted 'entrance to cafe'
 lookup map:drugi_to_cafe_overview
 	m-all-p@belladonna.primadona_ubend_mona_tip.system_migovec [100 0 0] "Entrance to camp"
 	m-drugi_to_cafe-p@primadona.primadona_ubend_mona_tip.system_migovec  [100 0 0] "Entrance to camp"

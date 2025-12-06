@@ -39,11 +39,10 @@ layout local-p
 	scale-bar 100 m
 
 	code tex-map
-
 		\def\maplayout{
-		\legendbox{32}{2}{N}{\scalebar}
-		\legendbox{32}{4}{S}{\northarrow}
-		\legendbox{25}{73}{S}{\loadpicture{"/../outputs/m16ent_to_NCB_overview.pdf"}}
+			\legendbox{32}{2}{N}{\scalebar}
+			\legendbox{32}{4}{S}{\northarrow}
+			\legendbox{25}{73}{S}{\loadpicture{"/../outputs/m16ent_to_NCB_overview.pdf"}}
 		}
 	endcode
 
@@ -72,7 +71,7 @@ source
 		m-all-p@shordrop2.M16.m2m16m18.system_migovec
 		m-all-p@mower.M16.m2m16m18.system_migovec
 		m-all-p@spiny.M16.m2m16m18.system_migovec
-		m-all-p@tamoka.M16.m2m16m18.system_migovec
+		m-all-p@tamokra.M16.m2m16m18.system_migovec
 		m-all-p@frogshit.M16.m2m16m18.system_migovec
 		m-all-p@batshit2.M16.m2m16m18.system_migovec
 		m-all-p@hydrant.M16.m2m16m18.system_migovec

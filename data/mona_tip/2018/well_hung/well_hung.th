@@ -26,7 +26,7 @@ survey well_hung -title "Well Hung"
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
-		extend right
+		extend left
 		0 1   5.65 359.2 -3.5
 		1 - 5.68 280.1 10.5
 		1 - 26.42 288.9 79.8
@@ -36,7 +36,7 @@ survey well_hung -title "Well Hung"
 		1 - 3.60 243.3 -49.9
 		1 - 3.47 293.5 -6.8
 		1 - 26.47 257.4 86.9
-		extend right
+		extend left
 		1 2   25.85 228.6 83.2
 		2 - 4.78 17.4 -27.5
 		2 - 1.63 109.9 51.1
@@ -91,7 +91,7 @@ survey well_hung -title "Well Hung"
 		7 - 2.69 46.4 24.4
 		7 - 3.01 116.8 37.4
 		7 - 3.78 348.0 22.0
-		extend right
+		extend left
 		7 8   16.32 138.9 72.9
 		8 - 0.57 343.5 83.2
 		8 - 2.54 56.7 52.5
@@ -100,7 +100,9 @@ survey well_hung -title "Well Hung"
 		8 - 7.25 343.0 -23.6
 		8 - 13.49 356.6 -60.2
 		8 - 2.97 10.8 -20.2
-		extend right
+		extend left
 		8 9   0.41 148.9 14.0
+		extend left
+		0 PSEUDO0 10.13 330.7 26.5 # fake leg to tie into monatip4
 	endcentreline
 endsurvey

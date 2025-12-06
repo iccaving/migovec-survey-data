@@ -11,6 +11,7 @@ survey mona_tip4
 	endmap
 
 	join mona_tip4-1e mona_tip4-2e
+	join mona_tip4-4e mona_tip4-2e
 	
 	map m-all-p -projection plan
 		mmona_tip4-6p
@@ -113,30 +114,30 @@ survey mona_tip4
 		22  23  2.46  183  -04  # .22 0 1 1 1
 		extend right
 		23  24  2.42  253  -21  # .23 0 1 1 1.7
-		extend right
+		extend left
 		24  25  5.26  146  -24  # .24 1 0 0 1.7
-		extend right
+		extend left
 		25  26  2.38  133  -08  # .25 0.5 0 0 1
-		extend right
+		extend left
 		26  27  2.34  169  -17  # .26 1 0 0 1.7
-		extend right
+		extend left
 		27  28  5.39  145  -25  # .27 0.5 0 0 1.7
-		extend right
+		extend left
 		28  29  4.45  142  -26  # .28 0 1 1.5 1
-		extend right
+		extend left
 		29  30  3.85  262  -02  # .29 0 3 3 0.5
-		extend right
+		extend left
 		30  31  3.04  282  -13  # .30 0 0.5 0.5 1.7
 		
 		
 		# PAGE 3
-		extend right
+		extend left
 		31  32  2.80  265  -43  # .31 0 0.5 0.2 1
-		extend right
+		extend left
 		32  33  2.45  293  +14  # .32 0 2 0.5 1.7
-		extend right
+		extend left
 		33  34  2.04  223  -16  # .33 1 0 0 1.7
-		extend right
+		extend left
 		34  35  2.02  117  +07  # .34 2 1 0.5 0.5
 		extend left
 		35  36  3.67  245  -36  # .35 0 0.5 0.3 1.7

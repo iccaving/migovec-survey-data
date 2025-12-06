@@ -69,13 +69,6 @@ endmap
 		m-all-p@klic_globin
 	endmap
 
-#	map m-cafe_to_hallelujah-p -projection plan
-#		m-all-p@galerija
-#		m-all-p@the_stile
-#		m-all-p@fenestrator
-#		m-all-p@plumbers_paradise
-#		m-all-p@hallelujah
-#	endmap
 
 ## OFFSETS
 
@@ -135,6 +128,7 @@ map m-ttt_branch-p -projection plan
 	m-all-p@batmere
 	m-all-p@zima00
 	m-all-p@TTTr
+	m-all-p@shelobs_lair
 endmap
 
 map m-hallelujah_branch-p -projection plan -title "Hallelujah Branch"
@@ -172,7 +166,6 @@ map m-death_star_branch-p -projection plan
 	m-all-p@sisyphus_slope 
 	m-all-p@antares
 	m-all-p@the_deep_awakens
-	#m-all-p@who_dies_first #drawn but removed from survey as resurveyed
 	m-all-p@who_dies_first_resurvey
 	m-all-p@delta_blues
 	m-all-p@blues_and_twos
@@ -182,7 +175,7 @@ map m-death_star_branch-p -projection plan
 	m-all-p@my_little_pitch
 	m-all-p@loompa_land
 	m-all-p@down_the_rabbit_hole
-	m-all-p@shelobs_lair
+	m1p@alice_in_waterland
 endmap
 
 map m-hammerhead_branch-p -projection plan

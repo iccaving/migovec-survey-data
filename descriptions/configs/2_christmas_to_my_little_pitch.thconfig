@@ -1,0 +1,92 @@
+# This config file produces an detailed map where the correct way is highlighted in light yellow.
+# In the tex-map definition, the previously compiled overview map is also included.
+source ../../data/system_migovec.th
+
+input ../../layouts/detailed-p.thl
+input ../../layouts/metapost/connection_marker.thl
+input ../../layouts/metapost/label.thl
+input ../../layouts/mods.thl
+
+# From the cafe to the manger, will appear light yellow
+lookup map:christmas_to_my_little_pitch
+	m-christmas_to_my_little_pitch-p@primadona.primadona_ubend_mona_tip.system_migovec [100 92.2 66.7] "Christmas Camp to My Little Pitch"
+	m-christmas_to_my_little_pitch2-p@primadona.primadona_ubend_mona_tip.system_migovec [100 92.2 66.7] "Christmas Camp to My Little Pitch2"
+endlookup
+
+# Generate actual map
+layout local-p
+	copy detailed-p
+	copy connection_marker
+	copy custom_label
+
+	colour map-fg map:christmas_to_my_little_pitch # this is the crucial look-up
+	colour map-bg transparent
+	scale 1 1000
+
+	symbol-hide line label
+	symbol-show point label
+	symbol-hide point remark
+	symbol-hide line arrow
+	symbol-hide line slope
+	symbol-assign line pit MY
+	symbol-assign point water-flow MY
+	symbol-assign area water MY
+	symbol-assign line floor-step MY
+	symbol-assign area sump MY
+	symbol-assign point breakdown-choke UIS
+	symbol-hide line survey
+	symbol-hide point station
+	symbol-hide point station-name
+	scale-bar 100 m
+
+	code tex-map
+		\def\maplayout{
+			\legendbox{90}{60}{N}{\scalebar}
+			\legendbox{90}{62}{S}{\northarrow}
+			\legendbox{90}{66}{S}{\loadpicture{"/../outputs/christmas_to_my_little_pitch_overview.pdf"}}
+		}
+	endcode
+
+endlayout
+
+
+# Add here whichever map you want to appear next to the 'correct' way on
+# The correct way on appears in light yellow, the rest in white.
+source
+	map m-local-p -projection plan -title "<bf>Mary's Café to Camp Manger"
+		m-christmas_to_my_little_pitch-p@primadona.primadona_ubend_mona_tip.system_migovec
+
+		m1p@sweet_baby_jesus.primadona.primadona_ubend_mona_tip.system_migovec
+		m2p@sweet_baby_jesus.primadona.primadona_ubend_mona_tip.system_migovec
+		m3p@sweet_baby_jesus.primadona.primadona_ubend_mona_tip.system_migovec
+		m4p@sweet_baby_jesus.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@alabaster.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@purgatory.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@bath.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@canticle_for_migovec.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@octarine.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@octarine_core.primadona.primadona_ubend_mona_tip.system_migovec
+		
+		m4p@the_deep_awakens.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@cantina_canyon.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@cantina_canyon_2.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@sisyphus_slope.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@antares.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@blues_and_twos.primadona.primadona_ubend_mona_tip.system_migovec
+		m3p@the_deep_awakens.primadona.primadona_ubend_mona_tip.system_migovec
+		
+		m-below-p [100 -150 m] none
+	endmap
+
+	map m-below-p
+		m-christmas_to_my_little_pitch2-p@primadona.primadona_ubend_mona_tip.system_migovec
+		
+		m-all-p@discordant_bebop.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@loompa_land.primadona.primadona_ubend_mona_tip.system_migovec
+		m-all-p@down_the_rabbit_hole.primadona.primadona_ubend_mona_tip.system_migovec
+	endmap
+endsource
+
+select m-local-p
+
+export map -o ../outputs/christmas_to_my_little_pitch.pdf -projection plan -layout local-p

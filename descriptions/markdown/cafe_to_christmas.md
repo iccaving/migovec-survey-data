@@ -1,11 +1,11 @@
 ---
-title: Cafe to Hallelujah
+title: Cafe to Christmas Camp
 author: ICCC/JSPDT
 header-includes:
   - \usepackage{descriptions}
 ---
 
-## Mary's Café to Sweet Baby Jesus and beyond
+## Mary's Café to Christmas Camp
 
 ### Mary's Café to Knot Very Good
 
@@ -30,27 +30,13 @@ At the bottom of the rope, a short pendulum gives access to a narrow rift after 
 Immediately after this constriction, an obscure right turn leads to the head of _Plumber's Paradise_ pitch (\numflag{3}{c3}).
 At the bottom, the ropes lead into a high-level ledge above a rift passage which, after a constricted pitch head, leads into a muddy horizontal passage.
 
-### Plumber's Paradise to Sweet Baby Jesus
+### Plumber's Paradise to Christmas Camp
 
 _Plumber's Paradise_ branches off in the middle into two alternative and equivalent ways.
 After about 50 m of variously crawling and stooping passage a ledge overlooking a climb down into _Hallelujah_ streamway is reached.
 Downstream continues for about 100 m, past some potholes and short cascade sections.
 In a widening bend of the passage, a rope leads upwards into the dry continuation of this branch (\numflag{4}{c3}).
-_Ignoring this rope, a series of downclimbs following the water lead to_ Beam me Up, _a series of hydrologically active pitches._
-After the rope up, a short down-climb leads to a 15 m pitch into a wide and tall chamber: _Sweet Baby Jesus_.
+_Ignoring this rope, a series of downclimbs following the water lead to_ Beam me Up, _a series of hydrologically active pitches often referred to as "the wet lead"._
+After the rope up, a short section of narrow but walking height passage ends in a short 5m rope, dropping into a cosy, sandy-floored chamber, _Christmas Camp_.
 
-### Sweet Baby Jesus to Purgatory
-
-On the far side of this chamber, a junction is reached, with an ascending tube on the left and an inactive meander on the right (_Holy Moley_) (\numflag{5}{c3}).
-A 6 m pitch leads to a short low section containing standing puddles of water, and beyond, a 15 m pitch drops into _Alabaster_.
-After a series of small downclimbs and pitches lands in a chamber with two ways on (_Purgatory_).
-Immediately on the right is a 5 m drop into the start of the _Bath_ pitch series (\numflag{6}{c3}).
-_Ahead and beyond a rock pillar is a pit into the alternative way to_ Death Star _called_ Octarine.
-
-<!--
-
-In _Bath_, several small 5 m pitches separated by low sections eventually lead to a series of longer drops eventually landing in a chamber with a large pool of water, with a window on the opposite side (\numflag{7}{c3}).
-To the right is a low passage leading to another pitch head (_Canticle for Migovec_), and the deepest passages of the Hallelujah branch.
-Going up into the window leads into the connection with _Octarine_ and the way on to _Death Star_. -->
-
-\CenteredFigure{../outputs/cafe_to_hallelujah.pdf}
+\CenteredFigure{../outputs/cafe_to_christmas.pdf}

@@ -7,10 +7,10 @@ input ../../layouts/metapost/connection_marker.thl
 input ../../layouts/metapost/label.thl
 input ../../layouts/mods.thl
 
-# This the overview, making everything grey, apart from the highlighed 'cafe to manger' map
-lookup map:cafe_to_hallelujah_overview
-	m-cafe_to_hallelujah-p@primadona.primadona_ubend_mona_tip.system_migovec [100 0 0] "Cafe to Hallelujah"
-  m-cafe_to_hallelujah2-p@primadona.primadona_ubend_mona_tip.system_migovec [100 0 0] "Cafe to Hallelujah2"
+# This the overview, making everything grey, apart from the highlighted map
+lookup map:cafe_to_christmas_overview
+	m-cafe_to_christmas-p@primadona.primadona_ubend_mona_tip.system_migovec [100 0 0] "Cafe to Hallelujah"
+  	m-cafe_to_christmas2-p@primadona.primadona_ubend_mona_tip.system_migovec [100 0 0] "Cafe to Hallelujah2"
 	[] [40 40 40] "rest"
 endlookup
 
@@ -19,7 +19,7 @@ layout overview-p
 
 	symbol-hide group all
 	#copy custom_scalebar_arrow
-	colour map-fg map:cafe_to_hallelujah_overview # this is the crucial look-up
+	colour map-fg map:cafe_to_christmas_overview # this is the crucial look-up
 	colour map-bg transparent
 	scale 1 10000
 	base-scale 1 2000
@@ -37,4 +37,4 @@ endlayout
 maps-offset off
 select m-all-p@primadona_ubend_mona_tip.system_migovec
 
-export map -o ../outputs/cafe_to_hallelujah_overview.pdf -projection plan -layout overview-p
+export map -o ../outputs/cafe_to_christmas_overview.pdf -projection plan -layout overview-p

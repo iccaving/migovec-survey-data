@@ -5,6 +5,8 @@ encoding  utf-8
 
 scrap sweet_baby_jesus-1p -projection plan -scale [328.0 -734.0 530.0 -737.0 0.0 0.0 25 0.0 m]
 
+point 390.0 765.0 u:connection_marker -align tr -attr code 18 -attr text "Christmas Camp" -attr offset 0.2 -place top
+
 line pit
   461.0 622.0
   451.5 620.0
@@ -82,6 +84,8 @@ endscrap
 
 
 scrap sweet_baby_jesus-2p -projection plan -scale [328.0 -734.0 530.0 -737.0 0.0 0.0 25 0.0 m]
+
+point 266.2189 915.1274 u:flag -align tr -attr text 4 -attr code 3
 
 point 493.0 568.0 station -name 9
 point 445.0 586.0 station -name 10
@@ -168,7 +172,6 @@ endscrap
 
 scrap sweet_baby_jesus-4p -projection plan -scale [0 0 96 0 0 0 2000 0 inch]
 
-point 266.2189 915.1274 u:flag -align tr -attr text 4 -attr code 3
 point 546.3107 519.7504 u:flag -align tr -attr text 5 -attr code 3
 point 558.0 423.0 scallop -scale xs
 point 546.0 424.5 scallop -scale xs

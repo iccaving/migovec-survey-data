@@ -40,11 +40,10 @@ layout local-p
 	scale-bar 100 m
 
 	code tex-map
-
 		\def\maplayout{
-		\legendbox{38}{82}{N}{\scalebar}
-		\legendbox{38}{84}{S}{\northarrow}
-		\legendbox{72}{-1}{S}{\loadpicture{"/../outputs/manger_to_tranquillity_overview.pdf"}}
+			\legendbox{38}{82}{N}{\scalebar}
+			\legendbox{38}{84}{S}{\northarrow}
+			\legendbox{72}{-1}{S}{\loadpicture{"/../outputs/manger_to_tranquillity_overview.pdf"}}
 		}
 	endcode
 

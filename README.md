@@ -43,10 +43,9 @@ This work is licensed under the CC-BY-NC-SA-4.0 licence. Copyright to ICCC / JSP
 
 ## How to cite
 
-``ICCC and JSDPT, Survey Data for the Tolminski Migovec Cave Exploration project, 2024. DOI: 10.5281/zenodo.10813021``
+`ICCC and JSDPT, Survey Data for the Tolminski Migovec Cave Exploration project, 2024. DOI: 10.5281/zenodo.10813021`
 
 [![DOI](https://zenodo.org/badge/330606015.svg)](https://zenodo.org/doi/10.5281/zenodo.10813020)
-
 
 ## View
 
@@ -64,7 +63,7 @@ Also for convenience here is a list of the artifacts and the links to the latest
 
 **System Migovec**
 
-![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.system_migovec.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.system_migovec.stats.length_m_formatted&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
 ![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.system_migovec.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
 
 ![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.system_migovec.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
@@ -89,7 +88,7 @@ The full system:
 
 **Primadona**
 
-![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.primadona_ubend_mona_tip.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.primadona_ubend_mona_tip.stats.length_m_formatted&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
 ![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.primadona_ubend_mona_tip.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
 
 ![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.primadona_ubend_mona_tip.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
@@ -114,7 +113,7 @@ Primadona (in full Primadona/Mona Tip/Ubend) is a cave system mostly contained i
 
 **Vrtnarija**
 
-![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.vrtnarija_vilinska.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.vrtnarija_vilinska.stats.length_m_formatted&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
 ![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.vrtnarija_vilinska.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
 
 ![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.vrtnarija_vilinska.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
@@ -139,7 +138,7 @@ Connected to the main system in 2012, Vrtnarija comprises roughly a third of the
 
 **M18 / M16 / M2**
 
-![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.m2m16m18.stats.length_km&suffix=km&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
+![Length](https://img.shields.io/badge/dynamic/json?color=blue&label=Length&query=%24.m2m16m18.stats.length_m_formatted&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
 ![Depth](https://img.shields.io/badge/dynamic/json?color=blue&label=Depth&query=%24.m2m16m18.stats.depth&suffix=m&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json)
 
 ![Total Drawn Percentage](https://img.shields.io/badge/dynamic/json?color=blue&label=All%20Drawn&query=%24.m2m16m18.all.percent&url=https%3A%2F%2Fgithub.com%2Ficcaving%2Fmigovec-survey-data%2Freleases%2Fdownload%2Flatest%2Fstats.json&suffix=%)
@@ -177,8 +176,8 @@ You can download the following artifacts:
   [PLAN ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_plan_EN.svg)
 
   - Brezno pod vhrom Planje extended elevation view (WIP)  
-  [EE ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_ee_EN.pdf) |
-  [EE ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_ee_EN.svg)
+    [EE ENG PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_ee_EN.pdf) |
+    [EE ENG SVG](https://github.com/iccaving/migovec-survey-data/releases/latest/download/brezno_pod_vrhom_planje_ee_EN.svg)
 
 **Nakljucja jama (Coincidence Cave)**
 
@@ -612,7 +611,7 @@ endsurvey
 
 ## Final considerations
 
-This survey data was collected between the year 1974-2019 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
+This survey data has been collected since 1974 by Imperial College Caving Club (ICCC) and Jamarska Sekcija Planinskega Drustva Tolmin (JSPDT).
 
 ## Tips
 
@@ -656,8 +655,6 @@ export -o {path/to/map} -projection extended -layout local-e
 ```
 
 Main symbology and symbol codes:
-
-![symbology of migovec-survey-data](./outputs/symbology.svg)
 
 [symbology PDF](https://github.com/iccaving/migovec-survey-data/releases/latest/download/symbology.pdf)
 

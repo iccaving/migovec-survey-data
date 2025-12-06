@@ -1,10 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1302.000000 1216.300000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1302.0 1216.3
 ##XTHERION## xth_me_area_zoom_to 100
+
+
 
 scrap discordant_bebop-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point -86.2 430.9 u:unknown 
 line wall -id line1
   694.73 933.99
   692.89 921.26
@@ -343,7 +344,7 @@ line wall -id line1
   1011.8641 1081.85
 endline
 
-line wall 
+line wall
   1008.14 870.92
   997.72 867.36
   986.55 866.42
@@ -353,7 +354,7 @@ line wall
   946.45 873.04
 endline
 
-line wall 
+line wall
   920.2 844.34
   913.23 830.59
   912.56 817.27
@@ -367,15 +368,7 @@ line wall
   1006.81 862.82
 endline
 
-line wall 
-  911.47 781.99
-endline
-
-line wall 
-  1006.63 862.84
-endline
-
-line wall 
+line wall
   1007.02 869.16
   1015.18 879.29
   1024.07 884.02
@@ -384,7 +377,7 @@ line wall
   1010.0 863.7
 endline
 
-line wall 
+line wall
   919.54 842.22
   923.31 852.16
   928.42 862.89
@@ -896,27 +889,51 @@ line u:splay -visibility off
 endline
 
 point 110.65 194.68 station -name 0
+
 point 186.95 167.48 station -name 1
+
 point 256.53 150.23 station -name 2
+
 point 305.26 195.54 station -name 3
+
 point 385.45 190.06 station -name 4
+
 point 477.97 154.04 station -name 5
+
 point 557.05 300.03 station -name 6
+
 point 658.71 299.85 station -name 7
+
 point 748.98 421.58 station -name 8
+
 point 721.07 536.01 station -name 9
+
 point 759.52 634.77 station -name 10
+
 point 664.98 696.4 station -name 11
+
 point 791.56 887.82 station -name 12
+
 point 965.7 980.31 station -name 13
+
 point 886.19 786.36 station -name 14
+
 point 979.54 844.14 station -name 15
+
 point 1169.56 955.71 station -name 16
+
 point 1047.02 868.52 station -name 17
+
 point 923.87 975.58 station -name 19
+
 point 771.62 950.58 station -name 20
+
 point 771.31 968.44 station -name 21
+
 point 719.61 898.74 station -name 22
+
 point 723.17 932.76 station -name 23
+
 endscrap
+
 

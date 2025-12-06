@@ -1,4 +1,4 @@
-map m-cafe_to_hallelujah-p -projection plan -title "Mary's Cafe to Hallelujah"
+map m-cafe_to_christmas-p -projection plan -title "Mary's Cafe to Christmas Camp"
 	m1p@galerija
 	m2p@galerija
 	m3p@galerija
@@ -6,19 +6,36 @@ map m-cafe_to_hallelujah-p -projection plan -title "Mary's Cafe to Hallelujah"
 	m2p@the_stile
 endmap
 
-map m-cafe_to_hallelujah2-p -projection plan -title "Mary's Cafe to Hallelujah"
+map m-cafe_to_christmas2-p -projection plan -title "Mary's Cafe to Christmas Camp"
 	m2p@cattlegrid
 	m3p@cattlegrid
 	m1p@fenestrator
 	m-all-p@plumbers_paradise
 	m-all-p@hallelujah
 	m3p@sweet_baby_jesus
-	m2p@sweet_baby_jesus
+endmap
+
+map m-christmas_to_my_little_pitch-p -projection plan -title "Christmas Camp to My Little Pitch"
 	m1p@sweet_baby_jesus
+	m2p@sweet_baby_jesus
 	m-all-p@holy_moley
 	m3p@alabaster
 	m-all-p@purgatory
 	m-all-p@bath
+	m-all-p@death_star
+	m-all-p@the_expo_strikes_back
+	m1p@the_deep_awakens
+	m2p@the_deep_awakens
+	m-all-p@who_dies_first_resurvey
+	m-all-p@delta_blues
+endmap
+
+map m-christmas_to_my_little_pitch2-p -projection plan -title "Christmas Camp to My Little Pitch"
+	m-all-p@delta_blues
+	m-all-p@sparkle_highway
+	m-all-p@pandoras_approach
+	m-all-p@my_little_pitch
+	m-all-p@who_dies_first_resurvey
 endmap
 
 map m-cafe_to_manger-p -projection plan

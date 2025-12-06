@@ -28,14 +28,21 @@ survey plateau -title "Migovec Plateau"
 	input "./M17/M17.th"
 	input "./M19/M19.th"
 	input "./M1/M1.th"
+	input "./M6/M6.th"
 	input "./M15/M15.th"
 	input "./M10/M10.th"
 	input "./janet_little_cave/janet_little_cave.th"
 	input "./rowan_cave/rowan_cave.th"
 	input "./mugo/mugo.th"
 	input "./coincidence/coincidence.th"
-	input "./dripbone/dripbone_cavern.th"
+	# input "./dripbone/dripbone_cavern.th"
 	input "./the_pet_shop/the_pet_shop.th"
+	input "./P2/P2.th"
+	input "./P3/P3.th"
+	input "./C0/C0.th"
+	input "./razor/abrax/abrax.th"
+	input "./razor/brabrax/brabrax.th"
+	input "./razor/kalifax/kalifax.th"
 
 	map m-all-p -projection plan
 		m-all-p@gondolin
@@ -78,11 +85,14 @@ survey plateau -title "Migovec Plateau"
 		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje.vrh_planja 403804 125750 1868
 		#fix 0@brezno_planja_ent.brezno_pod_vrhom_planje 404177 125263 1870  # GK fix
 
+		# C0
+		fix 0@C0 404637 124213 1845
+		
 		# COINCIDENCE
 	    fix 0@coincidence_ent.coincidence 404773 123067 1310
 
-		# DRIPBONE
-		fix 14@dripbone_cavern 404657 124233 1853
+		# DRIPBONE - update to C0
+		# fix 14@dripbone_cavern 404657 124233 1853
 
         # GONDOLIN
 		fix bcairn@gondolin 404343 124264 1863
@@ -95,6 +105,9 @@ survey plateau -title "Migovec Plateau"
 
 		# M2
 		fix 16@izent1.M2.m2m16m18.system_migovec 404702 124429 1858
+
+		# M6
+		fix 27@M6 404751 124261 1845
 
         # M10
 	    fix 14@M10 404597 124280 1862
@@ -120,6 +133,12 @@ survey plateau -title "Migovec Plateau"
 		# MUGO
     	fix 7@mugo 404140 124443 1698
 
+		# P2
+		fix 0@P2 404748 124296 1831
+
+		# P3
+		fix 0@P3 404754 124289 1829		
+
 		# PET SHOP
 		fix 14@the_pet_shop 404288 124013 1788
 
@@ -133,6 +152,11 @@ survey plateau -title "Migovec Plateau"
 		# PRIMADONA
 		fix 35@prima1.primadona.primadona_ubend_mona_tip.system_migovec 404188 124291 1727
 
+		#RAZOR
+		fix 0@abrax 405615 123359 1394
+		fix 0@brabrax 405623 123357 1389
+		fix 0@kalifax 405631 123352 1380
+
 		# ROWAN CAVE
 		fix 0@rowan_cave 404460 124948 1819
 
@@ -141,8 +165,6 @@ survey plateau -title "Migovec Plateau"
 
 		# VRTNARIJA
 		fix 0@bclent2.vrtnarija.vrtnarija_vilinska.system_migovec 404764 124501 1798
-
-
 
 	endcentreline
 
