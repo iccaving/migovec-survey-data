@@ -2,16 +2,23 @@
 
 survey P3 -title "P3"
 
-  # input "P3-1p.th2"
-  # input "P3-1s.th2"
+  input "P3-1p.th2"
+  input "P3-1s.th2"
 
-  # map m1p -projection plan
-  #   P3-1p
-  #   P3-1p1
-  # endmap
-  # map m1s -projection extended
-  #   P3-1s
-  # endmap
+  map P3-e1
+    P3-1p
+  endmap
+  map P3-e2
+    P3-1p1
+  endmap
+  
+  map m-all-p -projection plan
+    P3-e1 [5 0] below
+    P3-e2
+  endmap
+  map m-all-e -projection extended
+    P3-1s
+  endmap
 
   centerline
     date 2025.07.13 
