@@ -4,7 +4,7 @@ survey loosely_horsey -title "Loosely Horsey"
   # Laura bolt climb, st 0 is st17 of sparkle highway 
 
 
-#  input "loosely_horsey-loosep.th2"
+  input "loosely_horsey-loosep.th2"
 #  input "loosely_horsey-looses.th2"
 
 #  map loosely_horseypp
@@ -14,11 +14,11 @@ survey loosely_horsey -title "Loosely Horsey"
 #    loosely_horsey-loosep1
 #  endmap
 #
-#  map m-all-p -projection plan
-#    loosely_horseypp
-#    break
-#    loosely_horseypp1 [-5 0] below
-#  endmap
+  map m-all-p -projection plan
+    loosely_horsey-loosep
+    break
+    loosely_horsey-loosep1 # [-5 0] below
+  endmap
   
 #  map m-all-e -projection extended
 #    loosely_horsey-looses
