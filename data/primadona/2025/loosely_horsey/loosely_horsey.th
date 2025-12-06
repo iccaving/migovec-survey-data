@@ -1,11 +1,37 @@
 # 2025.07.25 created by TopoDroid v 6.2.44
 
-survey loosely_horsey -title "loosely horsey"
-    # Laura bolt climb, st 0 is st17 of sparkle highway 
+survey loosely_horsey -title "Loosely Horsey"
+  # Laura bolt climb, st 0 is st17 of sparkle highway 
 
+
+#  input "loosely_horsey-loosep.th2"
+#  input "loosely_horsey-looses.th2"
+
+#  map loosely_horseypp
+#    loosely_horsey-loosep
+#  endmap
+#  map loosely_horseypp1
+#    loosely_horsey-loosep1
+#  endmap
+#
+#  map m-all-p -projection plan
+#    loosely_horseypp
+#    break
+#    loosely_horseypp1 [-5 0] below
+#  endmap
+  
+#  map m-all-e -projection extended
+#    loosely_horsey-looses
+#    break
+#    loosely_horsey-looses1
+#  endmap
+
+  
   centerline
     date 2025.07.24 
-    # team tb JJ ep 
+    team "Thurston Blount"
+    team "Julien Jean"
+    team "Ellie Pizey" 
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -480,17 +506,5 @@ survey loosely_horsey -title "loosely horsey"
     21 . 0.79 98.4 -40.8
     21 . 0.90 295.5 -37.1
   endcenterline
-
-  # input "loosely_horsey-loosep.th2"
-  # input "loosely_horsey-looses.th2"
-
-  # map mloosep -projection plan
-  #   loosely_horsey-loosep
-  #   loosely_horsey-loosep1
-  # endmap
-  # map mlooses -projection extended
-  #   loosely_horsey-looses
-  #   loosely_horsey-looses1
-  # endmap
 
 endsurvey
