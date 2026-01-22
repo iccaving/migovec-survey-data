@@ -1,3 +1,4 @@
+encoding  utf-8
 # 2025.07.26 created by TopoDroid v 6.2.44
 
 source "./brabrax.th"
@@ -13,5 +14,4 @@ select msketchadjustedp@brabrax
 export map -layout topodroid -o brabrax-p.pdf -proj plan 
 
 select msketchadjusteds@brabrax
-export map -layout topodroid -o brabrax-s.pdf -proj extended 
-
+export map -layout topodroid -o brabrax-s.pdf -proj extended

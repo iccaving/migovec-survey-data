@@ -1,15 +1,29 @@
 # 2025.07.24 created by TopoDroid v 5.1.40
 
-survey smer0_and_salome_viados_resurvey -title "smer0 and salome viados"
+survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     # resurvey 
 
+  input "smer0_and_salome_viados-1p.th2"
+  input "smer0_and_salome_viados-1s.th2"
+
+  map m-all-p -projection plan
+    smer0_and_salome_viados-1p
+    break
+    smer0_and_salome_viados-1p1
+    break
+    smer0_and_salome_viados-1p2
+  endmap
+  
+  map m-all-e -projection extended
+    smer0_and_salome_viados-1s
+  endmap
 
 
   centerline
     date 2025.07.22 
-    team "Leo"
-    team "tb"
-    team "bh"
+    team "Leo Antwis"
+    team "Thurston Blount"
+    team "Benjamin Honan"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

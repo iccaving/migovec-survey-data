@@ -1,6 +1,8 @@
+encoding  utf-8
+select C0
 # 2025.07.21 created by TopoDroid v 6.2.44
 
-source "../th/C0.th"
+source "C0.th"
 
 layout topodroid
   legend on
@@ -13,3 +15,4 @@ export map -layout topodroid -o C0-p.pdf -proj plan
 
 export map -layout topodroid -o C0-s.pdf -proj extended 
 
+export model -o C0.3d
