@@ -126,7 +126,8 @@ map  m-entrance-e -projection extended
 endmap
 
 map m-smer0_branch-e -projection extended
-	m-all-e@smer0
+	#m-all-e@smer0 #Original Smer0 drawing, less detailed.
+	m-all-e@smer0_and_salome_viados_resurvey #More detailed drawing of Smer0 and Start of Salome Viados area.
 	m-all-e@smer1
 	m-all-e@galerija
 	m-all-e@jack_of_hearts
@@ -180,7 +181,7 @@ map m-death_star_branch-e -projection extended
 	m-all-e@my_little_pitch
 	m-all-e@loompa_land
 	m-all-e@down_the_rabbit_hole
-	m-all-e@loosely_horsey
+	#m-all-e@loosely_horsey
 	m-all-e@2_loompa_2_land
 endmap
 
@@ -200,4 +201,5 @@ centreline
 	extend right 4@risanke
 	extend ignore 0@who_dies_first_resurvey
 	extend ignore 9@snakebite #Ignoring this extend in snakebite reduces warping in pivnica_resurvey
+	extend ignore 2@smer1
 endcentreline
