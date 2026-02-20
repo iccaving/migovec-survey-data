@@ -95,7 +95,8 @@ endmap
 map m-galerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
 	m-all-p@galerija
 	m-all-p@smer1
-	m-all-p@smer0
+	#m-all-p@smer0
+	m-all-p@smer0_and_salome_viados_resurvey
 	m-all-p@jack_of_hearts
 	m-all-p@quantum_state
 	m-all-p@terminus
@@ -175,7 +176,7 @@ map m-death_star_branch-p -projection plan
 	m-all-p@my_little_pitch
 	m-all-p@loompa_land
 	m-all-p@down_the_rabbit_hole
-	m-all-p@loosely_horsey
+	#m-all-p@loosely_horsey
 	m-all-p@2_loompa_2_land
 	m1p@alice_in_waterland
 endmap

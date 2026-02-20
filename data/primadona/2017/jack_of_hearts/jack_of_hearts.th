@@ -28,7 +28,9 @@ survey jack_of_hearts -title "Jack of Hearts streamway"
 	
 	map  m-all-e -projection extended
 		jack_of_hearts-1e
+		break
 		jack_of_hearts-2e
+		
 	endmap
 	
 	join jack_of_heartsp_1 jack_of_heartsp_2

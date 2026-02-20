@@ -4,7 +4,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     # resurvey 
 
   input "smer0_and_salome_viados-1p.th2"
-  input "smer0_and_salome_viados-1s.th2"
+  input "smer0_and_salome_viados_resurvey-e.th2"
 
   map m-all-p -projection plan
     smer0_and_salome_viados-1p
@@ -15,9 +15,18 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
   endmap
   
   map m-all-e -projection extended
-    smer0_and_salome_viados-1s
+    smer0_and_salome_viados_resurvey-6e
+    smer0_and_salome_viados_resurvey-5e
+    smer0_and_salome_viados_resurvey-2e
+    smer0_and_salome_viados_resurvey-1e
+    smer0_and_salome_viados_resurvey-4e
+    smer0_and_salome_viados_resurvey-3e
   endmap
-
+  join smer0_and_salome_viados_resurvey-1e smer0_and_salome_viados_resurvey-2e
+  join smer0_and_salome_viados_resurvey-2e smer0_and_salome_viados_resurvey-3e
+  join smer0_and_salome_viados_resurvey-3e smer0_and_salome_viados_resurvey-4e #Beware scrap auto-join sensitive to being moved
+  join smer0_and_salome_viados_resurvey-4e smer0_and_salome_viados_resurvey-5e
+  join smer0_and_salome_viados_resurvey-5e smer0_and_salome_viados_resurvey-6e
 
   centerline
     date 2025.07.22 
@@ -52,7 +61,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     0 . 6.05 290.4 -35.9
     0 . 2.42 301.1 -47.6
     0 . 1.76 309.4 -59.7
-    extend right
+    extend left
     0 1 6.31 293.2 21.7
     # extend auto
     1 . 3.15 7.3 67.0
@@ -73,7 +82,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     1 . 8.15 108.0 -29.3
     1 . 5.45 101.6 -50.8
     1 . 1.10 7.7 -85.9
-    extend right
+    extend left
     1 2 4.34 15.2 27.1
     # extend auto
     2 . 5.00 138.8 -4.9
@@ -103,7 +112,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     2 . 1.33 295.0 -25.3
     2 . 3.80 293.0 -3.4
     2 . 15.65 278.4 4.8
-    extend right
+    extend left
     2 3 15.19 278.4 4.8
     # extend auto
     3 . 3.75 341.0 76.0
@@ -147,7 +156,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     3 . 6.95 100.3 -20.1
     3 . 3.74 90.8 -30.0
     3 . 3.32 82.9 -34.0
-    extend right
+    extend left
     3 4 9.48 349.4 0.3
     # extend auto
     4 . 8.95 174.7 -0.3
@@ -180,7 +189,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     4 . 1.78 84.3 2.4
     4 . 1.81 95.7 2.3
     4 . 1.47 148.9 3.2
-    extend right
+    extend left
     4 5 14.77 5.9 22.9
     # extend auto
     5 . 0.15 211.8 76.9
@@ -210,7 +219,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     5 . 1.08 309.6 0.2
     5 . 1.82 345.3 1.5
     5 . 1.82 248.3 -3.0
-    extend right
+    extend left
     5 6 6.21 24.0 23.3
     # extend auto
     6 . 0.23 329.3 86.0
@@ -251,7 +260,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     6 . 4.12 165.9 36.1
     6 . 7.13 139.4 27.0
     6 . 4.17 164.5 36.5
-    extend right
+    extend left
     6 7 5.05 18.0 1.5
     # extend auto
     7 . 2.05 213.6 85.3
@@ -277,7 +286,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     7 . 3.10 104.1 11.4
     7 . 1.94 76.8 4.6
     7 . 2.27 65.0 17.9
-    extend right
+    extend left
     7 8 3.37 13.4 42.8
     # extend auto
     8 . 6.47 188.0 -19.5
@@ -303,7 +312,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     8 . 0.69 25.8 14.5
     8 . 7.12 27.3 14.0
     8 . 7.32 15.5 13.2
-    extend right
+    extend left
     8 9 8.54 12.5 17.4
     # extend auto
     9 . 2.47 248.6 73.6
@@ -330,7 +339,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     9 . 6.89 305.7 7.5
     9 . 0.69 319.3 11.3
     9 . 1.95 359.1 19.3
-    extend right
+    extend left
     9 10 7.07 300.0 4.9
     # extend auto
     10 . 8.90 115.3 0.3
@@ -356,7 +365,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     10 . 0.71 319.4 6.1
     10 . 1.00 304.4 2.9
     10 . 2.33 270.9 -4.7
-    extend right
+    extend left
     10 11 5.38 272.8 10.4
     # extend auto
     11 . 3.64 342.1 11.9
@@ -381,7 +390,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     11 . 1.92 354.0 33.0
     11 . 1.68 353.6 45.8
     11 . 1.26 174.5 34.3
-    extend right
+    extend left
     11 12 8.24 353.7 11.7
     # extend auto
     12 . 4.14 348.5 -27.6
@@ -408,7 +417,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     12 . 2.20 130.4 7.9
     12 . 3.70 154.6 0.8
     12 . 3.10 169.2 0.3
-    extend right
+    extend left
     12 13 9.93 333.0 -15.0
     # extend auto
     13 . 7.26 125.9 84.6
@@ -443,7 +452,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     13 . 1.10 34.3 5.1
     13 . 1.87 347.3 7.0
     13 . 1.96 319.4 6.8
-    extend right
+    extend left
     13 14 13.98 301.9 -26.0
     # extend auto
     14 . 6.00 288.3 -14.4
@@ -466,7 +475,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     14 . 1.25 215.1 7.8
     14 . 5.01 46.0 67.1
     14 . 1.74 266.7 3.9
-    extend right
+    extend left
     14 15 5.43 285.5 -17.2
     # extend auto
     15 . 7.48 315.8 -6.3
@@ -492,7 +501,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     15 . 2.98 311.2 -51.3
     15 . 1.45 253.3 -61.4
     15 . 1.73 123.4 -62.2
-    extend right
+    extend left
     15 16 6.84 35.2 61.2
     # extend auto
     16 . 1.76 213.9 4.7
@@ -519,7 +528,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     16 . 7.60 190.7 -64.5
     16 . 8.23 216.0 -67.7
     16 . 1.99 280.5 23.4
-    extend right
+    extend left
     16 17 1.89 280.7 23.6
     # extend auto
     17 . 2.37 299.2 4.4
@@ -547,7 +556,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     17 . 4.51 139.5 -20.6
     17 . 3.19 141.9 19.2
     17 . 3.43 145.1 39.0
-    extend right
+    extend left
     17 18 10.87 312.4 4.2
     # extend auto
     18 . 1.92 301.7 9.9
@@ -573,7 +582,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     18 . 0.64 228.8 -4.7
     18 . 0.64 185.8 -10.9
     18 . 1.18 151.2 -6.9
-    extend right
+    extend left
     18 19 8.32 299.7 -18.9
     # extend auto
     19 . 1.23 274.2 13.5
@@ -594,7 +603,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     19 . 7.46 132.0 -9.7
     19 . 3.56 108.2 59.0
     19 . 1.25 321.3 78.6
-    extend right
+    extend left
     19 20 3.12 301.9 14.5
     # extend auto
     20 . 0.60 325.0 18.2
@@ -611,7 +620,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     20 . 4.72 117.6 -3.5
     20 . 5.01 129.3 -28.9
     20 . 5.06 141.8 -49.4
-    extend right
+    extend left
     20 21 3.52 327.7 -19.6
     # extend auto
     21 . 1.29 232.4 -2.9
@@ -632,7 +641,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     21 . 2.29 171.7 -75.3
     21 . 3.43 121.8 -45.2
     21 . 0.61 297.6 38.6
-    extend right
+    extend left
     21 22 6.87 297.3 38.6
     # extend auto
     22 . 2.53 340.2 14.1
@@ -649,7 +658,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     22 . 1.96 57.1 -51.6
     22 . 3.46 44.0 -71.6
     22 . 0.50 218.8 -67.4
-    extend right
+    extend left
     22 23 2.45 334.3 31.6
     # extend auto
     23 . 5.63 264.9 -5.9
@@ -672,7 +681,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     23 . 3.58 170.5 -56.2
     23 . 4.66 168.7 -67.6
     23 . 3.01 234.1 -77.3
-    extend right
+    extend left
     23 24 5.60 267.5 -6.1
     # extend auto
     24 . 2.30 316.4 -15.0
@@ -689,7 +698,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     24 . 1.34 18.5 0.7
     24 . 1.56 17.0 -30.4
     24 . 5.32 334.0 46.0
-    extend right
+    extend left
     24 25 2.31 315.9 -15.1
     # extend auto
     25 . 7.99 298.9 9.2
@@ -704,7 +713,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     25 . 4.84 297.7 -22.5
     25 . 3.63 285.7 -49.5
     25 . 3.39 255.6 -68.1
-    extend right
+    extend left
     25 26 8.23 300.5 11.2
     # extend auto
     26 . 5.85 3.0 -4.4
@@ -728,7 +737,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     26 . 1.48 61.6 -55.8
     26 . 1.26 28.3 -51.5
     26 . 2.65 9.5 -40.5
-    extend right
+    extend left
     26 27 4.46 0.3 23.8
     # extend auto
     27 . 7.40 83.5 -87.6
@@ -758,7 +767,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     27 . 1.63 340.7 13.1
     27 . 1.58 32.1 22.0
     27 . 0.73 88.4 27.5
-    extend left
+    extend right
     27 28 3.20 230.6 69.8
     # extend auto
     28 . 1.30 264.8 22.0
@@ -782,7 +791,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     28 . 1.33 30.5 -78.9
     28 . 2.56 161.9 -82.3
     28 . 6.59 125.4 -78.5
-    extend right
+    extend left
     28 29 1.77 30.4 43.1
     # extend auto
     29 . 3.13 32.7 47.5
@@ -808,7 +817,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     29 . 8.30 166.7 -41.6
     29 . 15.16 153.3 -57.2
     29 . 7.50 162.7 -66.1
-    extend right
+    extend left
     29 30 4.08 5.9 -1.4
     # extend auto
     30 . 2.48 204.5 65.7
@@ -822,7 +831,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     30 . 2.48 202.0 65.2
     30 . 1.84 159.4 12.0
     30 . 3.34 144.3 -12.6
-    extend right
+    extend left
     30 31 2.42 284.3 1.5
     # extend auto
     31 . 3.02 317.0 15.6
@@ -841,7 +850,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     31 . 5.65 124.3 -10.9
     31 . 0.21 124.1 -22.7
     31 . 0.83 129.5 34.9
-    extend right
+    extend left
     31 32 3.05 316.1 14.8
     # extend auto
     32 . 3.37 227.7 1.4
@@ -863,7 +872,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     32 . 4.00 242.5 -1.4
     32 . 4.77 240.0 11.8
     32 . 3.41 229.5 32.0
-    extend right
+    extend left
     32 33 2.62 216.9 -16.6
     # extend auto
     33 . 2.11 256.5 -7.3
@@ -880,7 +889,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     33 . 2.62 284.4 4.3
     33 . 4.41 278.1 33.4
     33 . 4.14 281.4 52.9
-    extend right
+    extend left
     33 34 4.39 281.9 40.1
     # extend auto
     34 . 2.32 134.4 -15.7
@@ -902,7 +911,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     34 . 5.28 99.2 -42.9
     34 . 4.90 106.0 -50.4
     34 . 5.22 110.5 -55.8
-    extend right
+    extend left
     34 35 5.83 42.2 37.0
     # extend auto
     35 . 0.93 127.3 2.6
@@ -919,7 +928,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     35 . 2.01 56.7 67.3
     35 . 1.36 45.1 68.9
     35 . 1.96 329.2 64.1
-    extend right
+    extend left
     35 36 2.63 38.8 12.4
     # extend auto
     36 . 0.38 70.6 4.2
@@ -946,7 +955,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     36 . 4.44 319.6 48.7
     36 . 8.02 317.3 31.4
     36 . 4.02 309.6 26.7
-    extend right
+    extend left
     36 37 5.69 309.6 26.7
     # extend auto
     37 . 3.57 312.0 4.6
@@ -971,7 +980,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     37 . 11.64 302.3 -25.4
     37 . 13.01 295.5 -32.2
     37 . 4.58 295.9 -36.3
-    extend right
+    extend left
     37 38 5.11 306.9 -20.1
     # extend auto
     38 . 9.57 295.2 -13.3
@@ -996,7 +1005,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     38 . 5.93 133.5 82.6
     38 . 4.15 128.6 60.4
     38 . 4.53 116.8 44.8
-    extend right
+    extend left
     38 39 8.63 296.6 -18.4
     # extend auto
     39 . 1.79 344.0 30.0
@@ -1018,7 +1027,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     39 . 9.37 312.9 79.1
     39 . 6.73 289.5 86.7
     39 . 9.80 183.9 85.3
-    extend right
+    extend left
     39 40 5.77 293.9 76.2
     # extend auto
     40 . 3.24 175.4 -0.8
@@ -1050,7 +1059,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     40 . 4.87 212.9 74.5
     40 . 7.22 337.6 -9.2
     40 . 4.40 343.9 33.5
-    extend right
+    extend left
     40 41 10.67 335.2 8.4
     # extend auto
     41 . 3.44 36.5 7.8
@@ -1069,7 +1078,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     41 . 6.64 151.1 -19.2
     41 . 0.16 147.6 21.8
     41 . 0.61 155.0 28.0
-    extend right
+    extend left
     41 42 3.41 18.9 10.0
     # extend auto
     42 . 0.42 302.4 32.5
@@ -1085,7 +1094,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     42 . 5.97 198.6 58.3
     42 . 1.68 198.4 -48.6
     42 . 2.10 313.5 -41.3
-    extend right
+    extend left
     42 43 6.26 347.6 16.6
     # extend auto
     43 . 2.61 25.4 9.7
@@ -1095,7 +1104,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     43 . 2.48 178.9 21.5
     43 . 7.00 136.1 66.5
     43 . 1.33 49.2 -81.9
-    extend right
+    extend left
     43 44 1.80 31.1 4.0
     44 45 3.68 275.6 19.7
     # extend auto
@@ -1115,7 +1124,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     45 . 3.99 28.2 9.4
     45 . 3.92 24.4 31.7
     45 . 4.45 26.7 48.6
-    extend right
+    extend left
     45 46 3.81 25.1 23.7
     # extend auto
     46 . 1.72 290.3 -14.0
@@ -1129,7 +1138,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     46 . 6.42 286.4 -40.9
     46 . 2.32 281.5 -30.5
     46 . 0.91 279.2 -8.3
-    extend right
+    extend left
     46 47 4.37 280.6 -8.6
     # extend auto
     47 . 2.53 116.4 20.3
@@ -1141,7 +1150,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     47 . 4.45 7.4 62.8
     47 . 11.47 88.0 -60.4
     47 . 3.92 93.4 -49.1
-    extend right
+    extend left
     47 48 5.16 345.2 31.2
     # extend auto
     48 . 5.56 159.5 -5.7
@@ -1152,7 +1161,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     48 . 3.47 146.5 65.8
     48 . 5.72 159.1 -20.9
     48 . 0.89 352.4 28.9
-    extend right
+    extend left
     48 49 4.23 351.2 8.3
     # extend auto
     49 . 3.05 99.9 6.5
@@ -1165,7 +1174,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     49 . 4.99 66.3 -2.7
     49 . 3.53 87.9 8.4
     49 . 0.87 102.3 22.6
-    extend right
+    extend left
     49 50 3.70 80.1 10.1
     # extend auto
     50 . 10.76 7.3 -0.2
@@ -1177,7 +1186,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     50 . 7.81 218.2 34.3
     50 . 4.49 257.7 -17.6
     50 . 1.71 320.5 2.3
-    extend right
+    extend left
     50 51 12.51 12.6 2.6
     # extend auto
     51 . 13.81 198.7 -10.5
@@ -1197,7 +1206,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     51 . 7.07 202.2 7.8
     51 . 0.77 113.2 84.7
     51 . 12.14 7.1 22.2
-    extend right
+    extend left
     51 52 10.37 7.0 22.2
     # extend auto
     52 . 3.88 204.8 -2.2
@@ -1209,7 +1218,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     52 . 6.21 196.0 36.7
     52 . 3.06 9.8 73.3
     52 . 2.51 32.9 -26.3
-    extend right
+    extend left
     52 53 2.32 30.2 -8.3
     # extend auto
     53 . 1.84 10.6 6.6
@@ -1223,7 +1232,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     53 . 6.18 25.1 73.9
     53 . 8.74 11.4 51.8
     53 . 5.55 14.6 21.1
-    extend right
+    extend left
     53 54 6.09 10.5 18.9
     # extend auto
     54 . 1.82 352.5 17.0
@@ -1235,7 +1244,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     54 . 1.86 295.8 -79.3
     54 . 3.35 185.8 -45.8
     54 . 6.96 188.5 2.1
-    extend right
+    extend left
     54 55 4.10 343.8 72.6
     # extend auto
     55 . 3.97 175.5 -3.6
@@ -1246,7 +1255,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     55 . 4.71 318.2 39.3
     55 . 3.28 303.7 13.9
     55 . 4.45 312.5 16.4
-    extend right
+    extend left
     55 56 4.58 311.6 17.5
     # extend auto
     56 . 1.95 99.2 -2.6
@@ -1259,7 +1268,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     56 . 2.53 326.8 56.0
     56 . 3.19 15.2 77.4
     56 . 3.05 56.0 70.2
-    extend right
+    extend left
     56 57 3.44 69.1 72.1
     # extend auto
     57 . 1.01 315.0 11.5
@@ -1271,7 +1280,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     57 . 5.06 284.7 -78.1
     57 . 6.53 293.7 -50.6
     57 . 5.65 160.5 -54.2
-    extend left
+    extend right
     57 58 2.49 145.1 23.5
     # extend auto
     58 . 1.08 46.3 -6.9
@@ -1280,7 +1289,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     58 . 6.35 316.4 -38.9
     58 . 2.52 324.6 32.1
     58 . 4.16 330.0 50.8
-    extend right
+    extend left
     58 59 2.77 326.4 48.1
     # extend auto
     59 . 1.69 180.3 12.6
@@ -1289,11 +1298,11 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     59 . 2.64 332.3 15.6
     59 . 2.81 349.4 81.4
     59 . 3.74 171.4 -47.2
-    extend right
+    extend left
     59 60 6.04 7.2 70.6
     extend ignore
     60 61 0.35 168.3 59.5
-    extend right
+    extend left
     61 62 15.98 334.5 20.6
     units left right up down meters
     data dimensions station left right up down
