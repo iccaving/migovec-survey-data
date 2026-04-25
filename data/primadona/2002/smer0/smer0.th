@@ -29,8 +29,9 @@ survey smer0
 	endmap
 
 	map  m-all-e -projection extended
-		smer0-1e
-		smer0-2e
+		smer0-0e #Split layer 1 into 0 and 1 to allow for join with resurvey (which has more detail)
+		#smer0-1e #Covered by resurvey
+		#smer0-2e # Covetred by resurvey
 	endmap
 
 	join smer0p_2 smer0p_1
@@ -39,6 +40,7 @@ survey smer0
 	join smer0p_6 smer0p_4
 	join smer0p_4 smer0p_5
 
+	#join smer0-0e smer0-1e #Join only required if visualising the individual survey
 	join smer0-1e smer0-2e
 
 	map m-all-p -projection plan
@@ -114,7 +116,7 @@ survey smer0
 		46  45  22.2  13  23
 		47  46  7.9  335  -15
 		48  47  13.7  287  9
-		extend right
+		extend left
 		49  48  8.4  314  34
 		extend left
 		50  49  12.3  296  -10

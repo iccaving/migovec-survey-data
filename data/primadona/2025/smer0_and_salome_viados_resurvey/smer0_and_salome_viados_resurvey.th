@@ -82,7 +82,7 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     1 . 8.15 108.0 -29.3
     1 . 5.45 101.6 -50.8
     1 . 1.10 7.7 -85.9
-    extend left
+    extend vertical #Reduce warping
     1 2 4.34 15.2 27.1
     # extend auto
     2 . 5.00 138.8 -4.9
