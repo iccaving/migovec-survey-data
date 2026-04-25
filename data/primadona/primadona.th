@@ -81,7 +81,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	#join spodnjip_1@spodnji zima00p_6@zima00
 	join spodnjip_3@spodnji milanovap_1@milanova
 
-	join smer0-1e@smer0 galerija-1e@galerija
+	join smer0-0e@smer0 galerija-1e@galerija
 
 	###______________2004_____________ ###
 	input "./2004/popotresni/popotresni.th"
@@ -194,7 +194,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join upside_down_chamber-1e@upside_down_chamber gamblers_ruin-1e@gamblers_ruin
 	join colony-1e@colony tight_and_scrotty-1e@tight_and_scrotty
 	join tight_and_scrotty-1e@tight_and_scrotty upside_down_chamber-1e@upside_down_chamber
-	join smer0-1e@smer0 the_stile-s1@the_stile
+	join smer0-0e@smer0 the_stile-s1@the_stile
 	join the_stile-s1@the_stile cattlegrid-3e@cattlegrid
 	join galerija-2e@galerija quantum_state-1e@quantum_state
 	join quantum_state-1e@quantum_state terminus-1e@terminus
@@ -372,7 +372,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join bath-1s@bath canticle_for_migovec-1e@canticle_for_migovec
 	join holy_moley-1e@holy_moley sweet_baby_jesus-1e@sweet_baby_jesus
 	join sweet_baby_jesus-1e@sweet_baby_jesus hallelujah-1e@hallelujah
-	join come_up_smiling-s1@come_up_smiling galerija-1e@galerija
+	#join come_up_smiling-s1@come_up_smiling galerija-1e@galerija
 	join mouseleum-1s@mouseleum mouseleum_2-1e@mouseleum_2
 	join mouseleum_2-1e@mouseleum_2 chocolate_river-1e@chocolate_river
 	join moonraker-1s@moonraker mouseleum-1s@mouseleum
@@ -443,7 +443,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join snakebite-1e@snakebite snakebitetwo-1e@snakebitetwo
 	join snakebitetwo-1e@snakebitetwo ave_maria-1e@ave_maria
 	join come_up_smiling-s1@come_up_smiling come_up_smiling_2-s1@come_up_smiling_2
-	join come_up_smiling_2-s1@come_up_smiling_2 smer0-1e@smer0
+	#join come_up_smiling_2-s1@come_up_smiling_2 smer0-0e@smer0
 	join odessey-1e@odessey electric_dreams-1e@electric_dreams
 	join odessey-1e@odessey electric_dreams-2e@electric_dreams
 	join moonraker-3s@moonraker klic_globin-1s@klic_globin
@@ -667,7 +667,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 8@the_big_daddy 5@blues_and_twos
 
 	join jack_of_hearts-2e@jack_of_hearts smer0_and_salome_viados_resurvey-3e@smer0_and_salome_viados_resurvey
-
+	#join smer0_and_salome_viados_resurvey-1e@smer0_and_salome_viados_resurvey smer0-0e@smer0
 	
 
 endsurvey
