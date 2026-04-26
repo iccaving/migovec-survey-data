@@ -4,7 +4,7 @@ encoding  utf-8
 
 
 
-scrap loosely_horsey-looses -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
+scrap loosely_horsey-1e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line wall
   -127.7728 250.7059
@@ -2386,12 +2386,6 @@ point 590.4038 332.619 station-name -align tr -scale xs -text 17
 point 685.9838 350.529 station-name -align tr -scale xs -text 19
 
 point 723.4338 338.329 station-name -align tr -scale xs -text 21
-
-endscrap
-
-
-
-scrap loosely_horsey-1e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line border -id 2931f0d1c289429fbd707c10c351b95a -close on -visibility on
   705.0024 333.5112
