@@ -108,8 +108,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 18@smer1 43@smer0
 	equate 30@smer0 1@smer1
 
-	#join smer0-2e@smer0 smer1-1e@smer1
-	#join smer0-1e@smer0 smer1-2e@smer1
+	#join smer0-2e@smer0 smer1-1e@smer1 #Join replaced with join to smer0_and_salome_viados_resurvey in 2025
+	#join smer0-1e@smer0 smer1-2e@smer1 #Join replaced with join to smer0_and_salome_viados_resurvey in 2025
 
 	###______________2016_____________ ###
 	input "./2016/karstaway/karstaway.th"
@@ -679,7 +679,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 16@loompa_land_tolmin_drift 0@2_loompa_2_land
 	equate 8@the_big_daddy 5@blues_and_twos
 
+	join smer0smer1_L1@smer0_and_salome_viados_resurvey:0 smer1_L1@smer1:end
+	join smer0smer1_L2@smer0_and_salome_viados_resurvey:end smer1_L2@smer1:0
 	join jack_of_hearts-2e@jack_of_hearts smer0_and_salome_viados_resurvey-3e@smer0_and_salome_viados_resurvey
 	join smer0_L1@smer0:0 smer0_L2@smer0_and_salome_viados_resurvey:end
 	join smer0_L3@smer0:end smer0_L4@smer0_and_salome_viados_resurvey:0
+	join smer1-2e@smer1 smer0_and_salome_viados_resurvey-2e@smer0_and_salome_viados_resurvey
 endsurvey
