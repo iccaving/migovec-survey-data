@@ -81,7 +81,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	#join spodnjip_1@spodnji zima00p_6@zima00
 	join spodnjip_3@spodnji milanovap_1@milanova
 
-	join smer0-0e@smer0 galerija-1e@galerija
+	join kvg_L1@galerija:end smer0_L3@smer0:0
+	join kvg_L5@galerija:0 smer0_L5@smer0:end
 
 	###______________2004_____________ ###
 	input "./2004/popotresni/popotresni.th"
@@ -194,8 +195,13 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join upside_down_chamber-1e@upside_down_chamber gamblers_ruin-1e@gamblers_ruin
 	join colony-1e@colony tight_and_scrotty-1e@tight_and_scrotty
 	join tight_and_scrotty-1e@tight_and_scrotty upside_down_chamber-1e@upside_down_chamber
-	join smer0-0e@smer0 the_stile-s1@the_stile
+	#join smer0-0e@smer0 the_stile-s1@the_stile # Replaced with line joins
+	join smer0_L1@smer0:end stile_L5@the_stile:0
+	join smer0_L5@smer0:0 stile_L1@the_stile:end
 	join the_stile-s1@the_stile cattlegrid-3e@cattlegrid
+	join kvg_L7@galerija:0 cattle_L2@cattlegrid:end
+	join kvg_L5@galerija:end stile_L1@the_stile:0
+	join kvg_L6@galerija:0 stile_L2@the_stile:end
 	join galerija-2e@galerija quantum_state-1e@quantum_state
 	join quantum_state-1e@quantum_state terminus-1e@terminus
 	join what_a_disappointment-1e@what_a_disappointment what_a_coincidence-1e@what_a_coincidence
@@ -372,7 +378,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join bath-1s@bath canticle_for_migovec-1e@canticle_for_migovec
 	join holy_moley-1e@holy_moley sweet_baby_jesus-1e@sweet_baby_jesus
 	join sweet_baby_jesus-1e@sweet_baby_jesus hallelujah-1e@hallelujah
-	#join come_up_smiling-s1@come_up_smiling galerija-1e@galerija
+	join kvg_L1@galerija:0 kvg_L2@come_up_smiling:end
+	join kvg_L3@galerija:end kvg_L4@come_up_smiling:0
 	join mouseleum-1s@mouseleum mouseleum_2-1e@mouseleum_2
 	join mouseleum_2-1e@mouseleum_2 chocolate_river-1e@chocolate_river
 	join moonraker-1s@moonraker mouseleum-1s@mouseleum
@@ -443,7 +450,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join snakebite-1e@snakebite snakebitetwo-1e@snakebitetwo
 	join snakebitetwo-1e@snakebitetwo ave_maria-1e@ave_maria
 	join come_up_smiling-s1@come_up_smiling come_up_smiling_2-s1@come_up_smiling_2
-	#join come_up_smiling_2-s1@come_up_smiling_2 smer0-0e@smer0
+	#join come_up_smiling_2-s1@come_up_smiling_2 smer0-0e@smer0 #Replaced with join to smer0_and_salome_viados_resurvey see below
+	join come_up_smiling_2-s1@come_up_smiling_2 smer0_and_salome_viados_resurvey-1e@smer0_and_salome_viados_resurvey
 	join odessey-1e@odessey electric_dreams-1e@electric_dreams
 	join odessey-1e@odessey electric_dreams-2e@electric_dreams
 	join moonraker-3s@moonraker klic_globin-1s@klic_globin
@@ -522,6 +530,11 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join polnoletna-1e@polnoletna milanova_e2@milanova
 	join power_grab-1p@power_grab electric_dreams-1p@electric_dreams
 	join power_grab-1e@power_grab electric_dreams-2e@electric_dreams
+	join forget_L1@forget_me_not:0 kvg_L6@galerija:end
+	join forget_L2@forget_me_not:end cattle_L1@cattlegrid:0
+	join forget_L3@forget_me_not:end stile_L3@the_stile:0
+	join forget_L4@forget_me_not:0 stile_L4@the_stile:end
+	
 
 	###______________ 2021_____________ ###
 	input "./2021/hades/hades.th"
@@ -667,7 +680,6 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 8@the_big_daddy 5@blues_and_twos
 
 	join jack_of_hearts-2e@jack_of_hearts smer0_and_salome_viados_resurvey-3e@smer0_and_salome_viados_resurvey
-	#join smer0_and_salome_viados_resurvey-1e@smer0_and_salome_viados_resurvey smer0-0e@smer0
-	
-
+	join smer0_L1@smer0:0 smer0_L2@smer0_and_salome_viados_resurvey:end
+	join smer0_L3@smer0:end smer0_L4@smer0_and_salome_viados_resurvey:0
 endsurvey
