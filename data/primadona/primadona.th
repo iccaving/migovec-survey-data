@@ -287,7 +287,11 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join TTTr-3p@TTTr zima00p_2@zima00
 	#join jack_of_hearts-2e@jack_of_hearts smer0-1e@smer0 #Replaced with join in 2025 to smer0_and_salome_viados_resurvey
 	join cattlegrid-2e@cattlegrid fenestrator-1e@fenestrator
-	join plumbers_paradise-1e@plumbers_paradise fenestrator-1e@fenestrator
+	#join plumbers_paradise-1e@plumbers_paradise fenestrator-1e@fenestrator # Replaced with line join
+	join fenes_L1@fenestrator:end pp_L1@plumbers_paradise:0
+	join fenes_L2@fenestrator:0 pp_L3@plumbers_paradise:end
+	join pp_L3@plumbers_paradise:0 upotyn_L2@upotyn:end
+	join pp_L2@plumbers_paradise:end upotyn_L1@upotyn:0
 	join hammerhead2-1e@hammerhead2 hammerhead-1e@hammerhead
 	join hammerhead-1e@hammerhead dejavu-1e@dejavu
 	join hammerhead2-2e@hammerhead2 dogfish-1e@dogfish
@@ -381,6 +385,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join bath-1s@bath canticle_for_migovec-1e@canticle_for_migovec
 	join holy_moley-1e@holy_moley sweet_baby_jesus-1e@sweet_baby_jesus
 	join sweet_baby_jesus-1e@sweet_baby_jesus hallelujah-1e@hallelujah
+	join pp_L4@plumbers_paradise:end halle_L1@hallelujah:0
+	join pp_L5@plumbers_paradise:0 halle_L2@hallelujah:end
 	join kvg_L1@galerija:0 kvg_L2@come_up_smiling:end
 	join kvg_L3@galerija:end kvg_L4@come_up_smiling:0
 	join mouseleum-1s@mouseleum mouseleum_2-1e@mouseleum_2
@@ -589,7 +595,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join ttt-1e@ttt mudaholic-1e@mudaholic
 
 	join echo_falls-4p@echo_falls bin_bag_palace-1p@bin_bag_palace
-	join echo_falls-e@echo_falls bin_bag_palace-1e@bin_bag_palace
+
+	join echo_falls_L2@echo_falls:end bbp_L1@bin_bag_palace:0 #Echo Falls, BBP elevation line join
+	join echo_falls_L3@echo_falls:0 bbp_L2@bin_bag_palace:end #Echo Falls, BBP elevation line join
 	join beam_me_up-1s2@beam_me_up echo_falls-e@echo_falls
 	join bin_bag_palace-1e@bin_bag_palace blue_lagoon-1e@blue_lagoon
 	join sisyphus_slope-1p@sisyphus_slope cantina_canyon_2-1p@cantina_canyon_2
@@ -616,18 +624,20 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 5@blossom_hill 13@bin_bag_palace #possibly 4@blossom_hill, see notes, check with Astrid
 	equate prima@prima_location 35@prima1
 
+	#PLAN
 	join blossom_hill-1p@blossom_hill bin_bag_palace-2p@bin_bag_palace
-	join blossom1@blossom_hill bag1@bin_bag_palace #Elevation line join
-	join blossom2@blossom_hill bag2@bin_bag_palace #Elevation line join
 	join a_dry_place-1p@a_dry_place echo_falls-4p@echo_falls
-	join a_dry_place-1e@a_dry_place echo_falls-e@echo_falls
 	join who_dies_first_resurvey-1p@who_dies_first_resurvey the_deep_awakens-3p@the_deep_awakens
 	join who_dies_first_resurvey-1p@who_dies_first_resurvey delta_blues-1p@delta_blues
 	join delta_blues-2p@delta_blues the_deep_awakens-3p@the_deep_awakens
-
+	#ELEVATION
 	join who_dies_first_resurvey-1e@who_dies_first_resurvey the_deep_awakens-2e@the_deep_awakens
 	join who_dies_first_resurvey-1e@who_dies_first_resurvey delta_blues-1e@delta_blues
 	join delta_blues-1e@delta_blues the_deep_awakens-2e@the_deep_awakens
+	join echo_falls_L1@echo_falls:end adp_L1@a_dry_place:0 #A dry place - Echo falls Elevation join
+	join echo_falls_L2@echo_falls:end adp_L2@a_dry_place:end #A dry place - Echo falls Elevation join
+	join bbp_L1@bin_bag_palace:end blossom1@blossom_hill:0 #Blossom hill - BBP Elevation join
+	join bbp_L3@bin_bag_palace:0 blossom2@blossom_hill:end #Blossom hill - BBP Elevation join
 
 	###______________ 2024______________###
 	input "./2024/shelobs_lair/shelobs_lair.th"

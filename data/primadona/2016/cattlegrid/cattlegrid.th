@@ -35,6 +35,7 @@ survey cattlegrid
 	join cattlegrid-2p cattlegrid-3p
 
 	join cattlegrid-1e cattlegrid-3e
+	join cattlegrid-2e cattlegrid-3e
 
 	centreline
 		date 2016.07.22
@@ -59,7 +60,9 @@ survey cattlegrid
 		5	6	4.95	032	-29
 		extend left
 		6	7	2.73	351	-07
+		extend left
 		7	8	4.68	052	-02
+		extend left
 		7	9	2.40	192	0
 		9	10	3.34	236	-05
 		10	11	3.92	293	+05

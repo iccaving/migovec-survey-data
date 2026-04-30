@@ -17,8 +17,10 @@ survey beam_me_up -title "beam me up"
 
   map m-all-e -projection extended
      beam_me_up-1s
-     beam_me_up-1s1
      beam_me_up-1s2
+     break
+     beam_me_up-1s1
+     
    endmap
 
    join beam_me_up-1s beam_me_up-1s1
