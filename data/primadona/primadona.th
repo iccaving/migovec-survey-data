@@ -179,9 +179,12 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join col_l3@colony upside_down_chamber_l3@upside_down_chamber
 	join col_l4@colony upside_down_chamber_l4@upside_down_chamber
 
-	#join karstaway-1e@karstaway mighty_fine_indeed-1e@mfi
-	#join mighty_fine_indeed-1e@mfi hall_of_the_mountain_king-1e@hall_of_the_mountain_king
-	join colony-1e@colony what_a_coincidence-3e@what_a_coincidence
+	join karstaway-1e@karstaway mighty_fine_indeed-1e@mfi
+	join mighty_fine_indeed-1e@mfi hall_of_the_mountain_king-2e@hall_of_the_mountain_king
+	join hotmk_l1@hall_of_the_mountain_king:0 col_l5@colony:end 
+	join hotmk_l2@hall_of_the_mountain_king:end col_l2@colony:0
+	join hotmk_l1@hall_of_the_mountain_king:end wac_l2@what_a_coincidence:0
+	join hotmk_l3@hall_of_the_mountain_king:0 wac_l1@what_a_coincidence:end
 	join e1_l1@TTTr e2_l1@zima00
 	join e1_l2@TTTr e2_l2@zima00
 	join e1_l3@TTTr e2_l3@zima00

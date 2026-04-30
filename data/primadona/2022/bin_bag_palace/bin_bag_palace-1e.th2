@@ -1,6 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1017.800000 2524.600000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1017.8 2524.6
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap bin_bag_palace-1e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
@@ -47,7 +48,8 @@ line wall -subtype invisible
   420.9177 3298.9164 413.7087 3298.2913 407.5063 3295.6527
 endline
 
-point 697.6522 3051.5003 label -align l -attr level 3 -scale l -text "Bin Bag Palace"
+point 1635.5024 3072.3131 label -align l -attr level 3 -scale xs -text "Bin Bag Palace"
+
 line wall -close on -outline in
   296.1875 2998.2776
   296.1875 2998.2776 324.5534 2986.9312 331.8813 2989.5314
@@ -66,12 +68,12 @@ line wall -close on -outline in
   296.1875 2989.0586 296.1875 2998.2776 296.1875 2998.2776
 endline
 
-line u:texture 
+line u:texture
   396.5226 2955.6696
   411.9719 2970.3926 412.474 2962.9596 428.7107 2976.8946
 endline
 
-line wall 
+line wall
   268.767 2292.6753
   270.3533 2293.1079 280.2632 2289.2168 291.5684 2288.1959
   317.3277 2285.8697 357.6944 2281.8775 364.2657 2285.8202
@@ -114,7 +116,7 @@ line wall -close on -outline in
   282.814 2765.2928 292.5086 2762.4513 295.88 2765.59
 endline
 
-line u:texture 
+line u:texture
   690.0547 3698.3054
   711.0347 3702.2154 733.3947 3700.6654 754.6047 3703.4854
 endline
@@ -146,14 +148,16 @@ line wall -id bag1
   352.6116 3449.7116 361.2364 3485.999 346.6672 3483.0173
 endline
 
-line u:texture 
+line u:texture
   631.57 4313.37
   651.05 4313.37 671.11 4315.13 690.52 4314.31
 endline
 
-point 471.8741 3828.9759 label -align c -attr level 3 -text "Big Bear Pitch"
-point 569.8472 2918.1983 label -align c -attr level 3 -text "E for Easy"
-line wall 
+point 1423.2681 3847.7075 label -attr level 3 -scale 0.375 -text "<it> Big Bear Pitch"
+
+point 946.56 2922.361 label -attr level 3 -scale 0.375 -text "<it>E for Easy"
+
+line wall
   407.5063 3295.6527
   407.5063 3295.6527 413.5236 3257.8773 413.3565 3254.5344
   413.1893 3251.1914 415.0279 3175.9749 414.5265 3172.1305
@@ -199,7 +203,8 @@ line wall
   720.0483 4342.3703 691.2552 4346.7068 687.6956 4350.7757
 endline
 
-point 419.3816 3309.5709 continuation 
+point 419.3816 3309.5709 continuation
+
 line u:splay -visibility off
   196.85 2288.38
   180.3 2291.3
@@ -1106,24 +1111,45 @@ line u:splay -visibility off
 endline
 
 point 196.85 2288.38 station -name 0
+
 point 342.92 2340.77 station -name 1
+
 point 398.32 2336.69 station -name 2
+
 point 458.35 2374.26 station -name 3
+
 point 539.92 2394.81 station -name 4
+
 point 611.49 2463.72 station -name 5
+
 point 425.89 2648.29 station -name 6
+
 point 334.34 2751.02 station -name 7
+
 point 240.26 2752.7 station -name 8
+
 point 330.78 2878.73 station -name 9
+
 point 421.12 3004.68 station -name 10
+
 point 326.94 3072.24 station -name 11
+
 point 429.23 3118.97 station -name 12
+
 point 308.41 3329.88 station -name 13
+
 point 430.6 3372.62 station -name 14
+
 point 553.0 3420.31 station -name 15
+
 point 686.4 3698.66 station -name 16
+
 point 783.42 4118.01 station -name 17
+
 point 613.58 4323.54 station -name 18
+
 point 613.58 4387.65 station -name 19
+
 endscrap
+
 

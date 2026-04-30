@@ -1,17 +1,20 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 440.700000 430.600000
+##XTHERION## xth_me_area_adjust 0.0 0.0 440.7 430.6
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap a_dry_place-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point -35.8841 -9.1453 label -align l -attr level 3 -scale l -text "A Dry Place"
+point -51.0598 -6.1723 label -align l -attr level 3 -scale xs -text "A Dry Place"
+
 line rock-border -close on
   9.1229 -13.1712
   9.408 -13.0571 10.9475 -10.7194 10.9475 -10.7194
   12.8861 -12.8861
   12.658 -14.0264
   9.351 -14.0264
+  9.1229 -13.1712
 endline
 
 line rock-border -close on
@@ -19,6 +22,7 @@ line rock-border -close on
   8.6742 -10.7412
   9.3999 -9.7332
   10.2869 -10.2977
+  10.045 -12.112
 endline
 
 line rock-border -close on
@@ -26,21 +30,24 @@ line rock-border -close on
   7.1018 -13.6441
   6.1342 -12.3539
   8.1097 -11.5072
+  9.0371 -12.7974
 endline
 
-line border -close on -id a_dry_place-1e_water_1 -visibility off
+line border -id a_dry_place-1e_water_1 -close on -visibility off
   7.2045 -14.8476
   -0.1176 -14.4053
   -0.7016 -22.7273
   5.263 -23.4812
+  7.2045 -14.8476
 endline
 
-area water 
+area water
   a_dry_place-1e_water_1
 endarea
 
-point -39.6814 -20.7131 narrow-end 
-line wall 
+point -41.0043 -20.7131 narrow-end -scale small
+
+line wall
   -36.4115 -21.412
   -36.4115 -21.412 -29.8352 -20.9653 -28.2225 -21.2878
   -27.7462 -21.3831 -24.754 -23.4824 -22.535 -23.439
@@ -64,7 +71,7 @@ line wall
   21.4778 12.2191 21.8656 12.3495 21.932 12.3409
 endline
 
-line wall 
+line wall
   27.7106 17.6755
   26.6587 17.5816 21.3423 17.4962 19.3318 17.3515
   17.9207 17.2305 17.195 17.4724 16.6305 17.1499
@@ -83,12 +90,21 @@ line wall
 endline
 
 point -27.78 -18.66 station -name 0
+
 point -21.87 -18.66 station -name 1
+
 point -9.92 -14.65 station -name 2
+
 point -0.4 -9.29 station -name 3
+
 point 5.06 6.69 station -name 4
+
 point 11.92 8.43 station -name 5
+
 point 20.56 13.62 station -name 6
+
 point 27.87 14.02 station -name 7
+
 endscrap
+
 

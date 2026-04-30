@@ -1,12 +1,15 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 500.0 1000.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap blue_lagoon-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 303.273 460.39 continuation 
-point 242.507 452.36 label -align l -attr level 1 -scale l -text "Blue Lagoon"
+point 303.273 460.39 continuation
+
+point 242.507 452.36 label -align l -attr level 1 -text "Blue Lagoon"
+
 line wall -close on -outline in
   294.4386 465.8646
   292.5145 465.9267 291.9559 468.4093 290.9629 469.5886
@@ -16,7 +19,7 @@ line wall -close on -outline in
   294.4386 465.8646
 endline
 
-line wall 
+line wall
   300.0018 478.2658
   299.2998 478.4764 292.0271 480.0114 287.815 480.6432
   283.603 481.275 273.7141 482.6882 269.7126 482.618
@@ -33,7 +36,7 @@ line wall
   230.7307 527.2296 226.9356 532.9243 227.6247 532.5412
 endline
 
-line wall 
+line wall
   208.2804 530.8318
   208.5804 529.0975 207.0603 528.1771 207.1706 526.4274
   207.2257 525.5539 208.6316 524.7719 208.9887 522.9836
@@ -60,20 +63,35 @@ line wall
 endline
 
 point 292.72 466.54 station -name 0
+
 point 279.96 467.87 station -name 1
+
 point 288.81 473.31 station -name 2
+
 point 273.2 477.48 station -name 3
+
 point 260.92 476.93 station -name 4
+
 point 251.73 476.38 station -name 5
+
 point 247.54 477.48 station -name 6
+
 point 234.66 479.13 station -name 7
+
 point 241.33 485.59 station -name 8
+
 point 241.33 512.83 station -name 9
+
 point 218.01 517.01 station -name 10
+
 point 214.08 530.79 station -name 11
+
 point 219.23 526.22 station -name 12
 
 point 282.984 467.697 water-flow -orientation 180.0
+
 point 234.025 478.456 water-flow -orientation 90.0
+
 endscrap
+
 

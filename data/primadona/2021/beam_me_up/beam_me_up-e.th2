@@ -1,30 +1,33 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1776.000000 2033.800000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1776.0 2033.8
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap beam_me_up-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 939.8633 1286.062 water-flow -orientation 180.0
-line wall:invisible 
+
+line wall:invisible
   1091.49 989.47
   1195.73 1092.44
 endline
 
-line wall:invisible 
+line wall:invisible
   993.58 977.51
   1071.3277 974.3539
 endline
 
-line wall 
+line wall
   1071.3277 974.3539
   1070.5356 981.879
   1073.308 984.2553
   1081.62 990.15
 endline
 
-point 835.4694 900.1379 label -align l -attr level 2 -scale l -text "Beam Me Up"
-line wall 
+point 835.4694 900.1379 label -align l -attr level 2 -scale xs -text "Beam<br>Me Up"
+
+line wall
   99.97 1842.56
   107.81 1841.5
   117.14 1838.37
@@ -56,7 +59,7 @@ line wall
   268.94 1714.52
 endline
 
-line wall 
+line wall
   270.29 1717.49
   276.46 1724.19
   278.38 1731.76
@@ -241,6 +244,7 @@ line wall -close on -outline in
   535.17 1845.1
   545.73 1843.5
   555.16 1843.18
+  569.09 1813.72
 endline
 
 line wall -outline in
@@ -327,7 +331,7 @@ line wall -outline in
   1071.65 1409.51
 endline
 
-line wall 
+line wall
   898.16 1022.26
   898.16 1012.48
   899.58 1004.67
@@ -344,7 +348,7 @@ line wall
   993.58 977.51
 endline
 
-line wall 
+line wall
   1195.73 1092.44
   1188.97 1093.15
   1179.29 1098.32
@@ -366,7 +370,7 @@ line wall
   1267.2 1192.96
 endline
 
-line wall:blocks 
+line wall:blocks
   1267.2 1192.96
   1278.96 1196.63
   1288.09 1197.36
@@ -389,7 +393,7 @@ line wall:blocks
   1440.69 1127.43
 endline
 
-line wall 
+line wall
   1440.6901 1127.43
   1430.2398 1128.5315 1419.8109 1129.9271 1409.3471 1130.8432
   1400.6734 1131.0327 1391.9705 1131.7093 1383.3088 1131.209
@@ -400,7 +404,7 @@ line wall
   1308.3544 1117.2316 1304.8452 1117.2416 1301.3359 1117.2516
 endline
 
-line wall:blocks 
+line wall:blocks
   1307.51 1102.04
   1319.54 1102.04
   1332.05 1101.16
@@ -423,7 +427,7 @@ line wall:blocks
   1495.73 1114.08
 endline
 
-line wall 
+line wall
   1498.78 1113.77
   1498.78 1129.89
   1498.78 1140.59
@@ -2416,30 +2420,50 @@ line u:splay -visibility off
 endline
 
 point 296.75 1754.48 station -name 2
+
 point 181.57 1890.59 station -name 1
+
 point 433.01 1749.92 station -name 3
+
 point 612.85 1779.1 station -name 4
+
 point 691.0 1732.83 station -name 5
+
 point 747.56 1550.58 station -name 6
+
 point 861.03 1518.03 station -name 7
+
 point 965.04 1450.59 station -name 8
+
 point 1081.62 1436.86 station -name 9
+
 point 1081.62 1395.76 station -name 10
+
 point 1024.53 1006.73 station -name 11
+
 point 1180.95 1174.53 station -name 12
+
 point 1297.6 1204.06 station -name 13
+
 point 1386.27 1169.47 station -name 14
+
 point 1470.85 1127.84 station -name 15
+
 point 1334.05 1106.75 station -name 16
+
 point 1493.69 990.83 station -name 21
+
 point 1024.53 1019.43 station -name 27
+
 point 128.26 1886.46 station -name 0
+
 endscrap
+
 
 
 scrap beam_me_up-1s1 -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
-line wall 
+line wall
   1675.0041 987.6569
   1667.2677 989.3332
   1654.3637 994.8677
@@ -2495,7 +2519,7 @@ line wall
   1195.73 1092.44
 endline
 
-line wall 
+line wall
   1195.96 916.19
   1199.31 923.97
   1200.96 931.92
@@ -2505,7 +2529,7 @@ line wall
   1241.38 948.36
 endline
 
-line wall 
+line wall
   1081.62 990.15
   1091.49 989.47
   1100.55 987.58
@@ -2522,7 +2546,7 @@ line wall
   1151.75 914.24
 endline
 
-line wall:blocks 
+line wall:blocks
   1241.38 948.36
   1251.53 948.81
   1259.55 949.26
@@ -2536,7 +2560,7 @@ line wall:blocks
   1328.39 950.15
 endline
 
-line wall:blocks 
+line wall:blocks
   1327.51 898.01
   1341.31 898.29
   1353.02 898.47
@@ -2569,7 +2593,7 @@ line wall:blocks
   1584.36 986.78
 endline
 
-line wall:blocks 
+line wall:blocks
   1584.36 986.78
   1596.55 986.5
   1610.38 985.33
@@ -2579,7 +2603,7 @@ line wall:blocks
   1675.0041 987.6569
 endline
 
-line wall 
+line wall
   1328.39 950.15
   1312.89 944.98
   1300.37 943.79
@@ -2602,7 +2626,7 @@ line wall
   1159.18 906.74
 endline
 
-line wall:blocks 
+line wall:blocks
   1167.85 833.07
   1183.39 835.34
   1193.06 841.17
@@ -2621,7 +2645,7 @@ line wall:blocks
   1327.5099 898.01
 endline
 
-line wall 
+line wall
   1127.71 874.74
   1137.29 873.08
   1145.04 870.05
@@ -2679,7 +2703,7 @@ line wall -outline none
   1119.0958 778.1781
 endline
 
-line wall:blocks 
+line wall:blocks
   1119.0958 778.1781
   1130.3225 780.2375
   1138.25 781.18
@@ -2713,6 +2737,7 @@ line rock-border -close on
   1468.51 951.4
   1476.7 948.13
   1491.0 941.7
+  1541.46 976.56
 endline
 
 line rock-border -close on
@@ -2730,6 +2755,7 @@ line rock-border -close on
   1319.39 976.75
   1333.73 969.6
   1356.37 961.28
+  1378.53 960.4
 endline
 
 line rock-border -close on
@@ -2739,6 +2765,7 @@ line rock-border -close on
   1297.87 908.48
   1299.59 896.0
   1305.11 890.08
+  1323.57 911.38
 endline
 
 line rock-border -close on
@@ -2748,6 +2775,7 @@ line rock-border -close on
   1244.74 889.28
   1249.35 882.03
   1256.33 877.74
+  1274.11 892.05
 endline
 
 line rock-border -close on
@@ -2757,25 +2785,38 @@ line rock-border -close on
   1196.44 860.43
   1208.7252 849.0734
   1227.0697 857.8457
+  1223.7618 872.4935
 endline
 
 point 1024.53 1006.73 station -name 11
+
 point 1116.15 965.53 station -name 17
+
 point 1116.15 933.38 station -name 18
+
 point 1260.69 963.66 station -name 19
+
 point 1389.26 947.9 station -name 20
+
 point 1493.69 990.83 station -name 21
+
 point 1209.61 888.74 station -name 22
+
 point 1125.31 845.31 station -name 23
+
 point 1023.17 785.84 station -name 24
+
 point 944.61 776.23 station -name 25
+
 point 1024.53 1019.43 station -name 27
+
 endscrap
+
 
 
 scrap beam_me_up-1s2 -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
-line u:texture 
+line u:texture
   1358.6747 335.3387
   1369.3447 331.1387
   1386.4847 327.0487
@@ -2798,11 +2839,14 @@ line rock-border -close on
   1336.5227 266.8119
   1336.2927 254.2419
   1331.0627 248.1119
+  1315.9527 250.4419
 endline
 
 point 1128.1868 481.0079 water-flow -orientation 180.0
+
 point 1279.3379 275.0644 water-flow -orientation 180.0
-line wall 
+
+line wall
   1151.75 914.24
   1151.75 914.24 1152.1617 901.2329 1150.8554 897.7494
   1149.5491 894.2659 1141.2758 891.6533 1126.0356 895.1368
@@ -2812,7 +2856,7 @@ line wall
   1072.0416 957.4041 1071.3277 974.3539 1071.3277 974.3539
 endline
 
-line wall 
+line wall
   993.58 977.51
   1002.17 939.53
   1001.82 928.91
@@ -2904,7 +2948,7 @@ line wall
   1114.09 351.7
 endline
 
-line wall 
+line wall
   1493.47 286.37
   1492.54 303.11
   1491.71 311.85
@@ -2952,7 +2996,7 @@ line wall
   1282.06 585.83
 endline
 
-line wall 
+line wall
   1280.35 587.86
   1279.68 601.27
   1279.61 619.83
@@ -2982,7 +3026,7 @@ line wall
   1195.96 916.19
 endline
 
-line wall 
+line wall
   1114.09 351.7
   1177.11 333.77
   1187.62 332.9
@@ -3018,9 +3062,10 @@ line wall -close on -outline in
   1053.4 666.94
   1051.27 673.94
   1066.76 671.03
+  1087.59 669.88
 endline
 
-line u:texture 
+line u:texture
   1107.28 663.66
   1113.37 656.53
   1124.26 646.67
@@ -3040,7 +3085,7 @@ line u:texture
   1227.48 580.71
 endline
 
-line u:texture 
+line u:texture
   1222.3 576.56
   1223.86 560.49
   1225.29 545.59
@@ -3055,7 +3100,7 @@ line u:texture
   1293.03 485.01
 endline
 
-line wall:blocks 
+line wall:blocks
   1427.2651 150.5569
   1427.2651 150.5569
   1428.9151 158.5469
@@ -3069,18 +3114,33 @@ line wall:blocks
 endline
 
 point 1116.15 933.38 station -name 18
+
 point 1389.26 947.9 station -name 20
+
 point 1209.61 888.74 station -name 22
+
 point 1125.31 845.31 station -name 23
+
 point 1023.17 785.84 station -name 24
+
 point 944.61 776.23 station -name 25
+
 point 944.61 765.26 station -name 26
+
 point 1024.53 739.43 station -name 28
+
 point 1180.22 708.72 station -name 29
+
 point 1267.73 562.88 station -name 30
+
 point 1267.73 375.11 station -name 31
+
 point 1362.84 350.28 station -name 32
+
 point 1437.69 331.38 station -name 33
+
 point 1302.7 125.08 station -name 34
+
 endscrap
+
 

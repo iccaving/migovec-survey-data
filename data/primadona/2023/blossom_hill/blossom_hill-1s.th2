@@ -1,6 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 411.600000 736.100000
+##XTHERION## xth_me_area_adjust 0.0 0.0 411.6 736.1
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap blossom_hill-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
@@ -45,7 +46,8 @@ line wall -id blossom1
   106.3556 604.7116 105.0025 603.8997 105.0025 603.8997
 endline
 
-point 73.2028 437.6791 label -align l -attr level 3 -scale l -text "Blossom Hill"
+point 73.2028 437.6791 label -align l -attr level 3 -scale xs -text "Blossom Hill"
+
 line wall -id blossom2
   108.61 568.03
   109.52 566.59 110.71 565.55 111.62 564.64
@@ -75,7 +77,7 @@ line wall -id blossom2
   195.957 256.2917 197.3354 257.6738 199.7527 258.0833
 endline
 
-line border -close on -id blossom_hill-1s_water_1 -visibility on
+line border -id blossom_hill-1s_water_1 -close on -visibility on
   178.0853 340.1391
   180.6753 340.1391 183.7953 342.4491 186.2453 343.3391
   187.2453 343.7091 188.2753 344.0091 189.2953 344.3291
@@ -86,15 +88,19 @@ line border -close on -id blossom_hill-1s_water_1 -visibility on
   203.4753 341.9891 203.1953 341.7791 202.8953 341.5891
   202.5153 341.3491 202.1153 341.1291 201.7053 340.9491
   198.9726 334.9027 178.7265 331.3508 177.9153 338.1991
+  178.0853 340.1391
 endline
 
-area water 
+area water
   blossom_hill-1s_water_1
 endarea
 
-point 100.05 588.01 continuation 
+point 100.05 588.01 continuation
+
 point 183.79 475.44 water-flow -orientation 171.67 -scale l
+
 point 188.69 404.47 water-flow -orientation 185.54 -scale l
+
 line u:splay -visibility off
   221.91 409.39
   113.67 589.05
@@ -356,10 +362,17 @@ line u:splay -visibility off
 endline
 
 point 170.25 393.58 station -name 1
+
 point 221.91 409.39 station -name 0
+
 point 170.25 251.82 station -name 2
+
 point 219.28 302.35 station -name 3
+
 point 294.68 156.26 station -name 4
+
 point 268.59 199.8 station -name 5
+
 endscrap
+
 
