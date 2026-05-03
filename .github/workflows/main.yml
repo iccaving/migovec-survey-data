@@ -108,7 +108,10 @@ jobs:
           mkdir ${THERION_PATH}/bin
           mv ${THERION_PATH}/therion ${THERION_PATH}/bin/therion
       - name: Install svgo
-        run: sudo npm install -g svgo
+        # Pinned: svgo >=3.3.3 depends on sax >=1.5.0, which enforces a 512
+        # entity-per-document parser limit that symbology.svg exceeds.
+        # See https://github.com/svg/svgo/issues/2218
+        run: sudo npm install -g svgo@3.3.2
       #=========================== GENERATE OUTPUT ===========================#
       - name: Generate output files
         run: for file in configs/automation/*.thconfig; do echo "Generating $file" && ${THERION_PATH}/bin/therion -q $file || echo "Generating $file failed"; done
