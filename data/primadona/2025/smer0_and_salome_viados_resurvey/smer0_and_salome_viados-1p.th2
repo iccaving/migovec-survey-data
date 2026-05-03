@@ -1,10 +1,10 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -4851.6 -366.399999999999 336.9 9246.7
+##XTHERION## xth_me_area_adjust -4851.6 -366.4 336.9 9246.7
 ##XTHERION## xth_me_area_zoom_to 25
 
 
 
-scrap DELETE 
+scrap DELETE -projection plan -scale [8466.67 250 m]
 
 line survey
   267.1163 -197.8701
@@ -11791,7 +11791,7 @@ point -180.07 11.55 continuation
 
 point -423.03 1855.63 continuation
 
-point -1817.64 3004.52 label -text "Davey death"
+point -1987.5334 3056.528 label -attr level 3 -scale 0.25 -text "<it>Davey's crumbly<br>wall of death"
 
 point -3169.12 3984.38 continuation
 

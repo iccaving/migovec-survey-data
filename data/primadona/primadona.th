@@ -379,11 +379,16 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join pivnica_2_resurvey-1e@pivnica_2_resurvey lost_in_a_dream-1e@lost_in_a_dream
 	join ave_maria-1p@ave_maria lost_in_a_dream_2-1p@lost_in_a_dream_2
 	join ave_maria-1p@ave_maria snakebitetwo-1p@snakebitetwo
+	join sweet_baby_jesus-1e@sweet_baby_jesus alabaster-1e@alabaster
 	join holy_moley-1e@holy_moley alabaster-1e@alabaster
 	join purgatory-1e@purgatory alabaster-1e@alabaster
 	join purgatory-1e@purgatory bath-1s@bath
 	join bath-1s@bath canticle_for_migovec-1e@canticle_for_migovec
-	join holy_moley-1e@holy_moley sweet_baby_jesus-1e@sweet_baby_jesus
+	#join holy_moley-1e@holy_moley sweet_baby_jesus-1e@sweet_baby_jesus #Replaced with 4x line joins
+	join sbj_L1@sweet_baby_jesus:end holy_moley_L4@holy_moley:0
+	join sbj_L2@sweet_baby_jesus:0 holy_moley_L3@holy_moley:end
+	join sbj_L2@sweet_baby_jesus:end holy_moley_L1@holy_moley:0
+	join sbj_L3@sweet_baby_jesus:0 holy_moley_L2@holy_moley:end
 	join sweet_baby_jesus-1e@sweet_baby_jesus hallelujah-1e@hallelujah
 	join pp_L4@plumbers_paradise:end halle_L1@hallelujah:0
 	join pp_L5@plumbers_paradise:0 halle_L2@hallelujah:end
