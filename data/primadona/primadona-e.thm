@@ -7,7 +7,7 @@ encoding  utf-8
 map m-all-e -projection extended
 	m-entrance-e
 	m-electric_branch-e
-	m-hammerhead_branch-e
+	m-hammerhead_branch-e [-100 0 m] none
 	m-ttt_branch-e
 	m-karstaway_branch-e
 	m-smer0_branch-e
@@ -39,7 +39,7 @@ map m-hammerhead_branch-e -projection extended
 	m-all-e@hammerhead2
 	m-all-e@hammerhead3
 	m-all-e@high_and_dry
-	m-zima00-e@zima00
+	#m-zima00-e@zima00 #Not helpful as want to offset Hammerhead branch
 	m-all-e@diagonalley
 	m-all-e@damp_squib
 	m-all-e@lumos
