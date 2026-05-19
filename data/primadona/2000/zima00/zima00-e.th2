@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0.0 0.0 882.0 1306.5
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {129.0 1 1.0} {970.0 {}} ../../../../../../../../../AchilleTalon/Documents/GitHub/migresurvey/migresurvey/migovecsurveydata/primadona/2000/zima00/zima00_extend.gif 0 {}
+##XTHERION## xth_me_image_insert {129.0 1 1.0} {970.0 {}} ../../../../../../../../AppData/OneDrive/Documents/GitHub/migovec-survey-data/AchilleTalon/Documents/GitHub/migresurvey/migresurvey/migovecsurveydata/primadona/2000/zima00/zima00_extend.gif 0 {}
 
 
 
@@ -242,6 +242,25 @@ endscrap
 
 scrap zima00-2e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
+point -902.5465 736.5268 camp -scale s
+
+point -822.6112 776.8479 u:connection_marker -id dejavu -align tr -attr code 0 -attr text "to Deja Vu"
+
+line wall -close on -outline in
+  -853.0486 751.5337
+  -843.3549 750.1873 -809.6961 745.6097 -784.6539 749.9181
+  -759.6118 754.2264 -748.0332 766.6128 -749.6488 774.9602
+  -751.2644 783.3076 -764.1894 828.2757 -766.8821 840.6622
+  -769.5748 853.0486 -811.3117 860.5882 -820.7362 860.5882
+  -830.1607 860.5882 -859.7804 850.0867 -861.9346 849.2788
+  -864.0887 848.471 -874.0517 829.6221 -873.2439 821.8133
+  -872.4361 814.0044 -853.0486 751.5337 -853.0486 751.5337
+endline
+
+point -842.8622 697.7987 remark -align tr -text 2018
+
+point -943.0061 719.6376 u:connection_marker -align l -attr text "Camp Manger" -attr offset 0.5 -attr code 19
+
 line wall -id e2_l1
   -24.9121 736.2903
   -77.5042 736.2903
@@ -343,10 +362,6 @@ line wall:invisible
   -2761.3834 1608.2129
   -2783.5276 1508.5646
 endline
-
-point -841.815 725.9783 remark -align tr -text 2018
-
-point -858.115 727.7009 u:connection_marker -align tr -attr text "Camp Manger" -attr offset 1 -attr code 19
 
 line rock-border -close on
   -2470.0694 896.4331
