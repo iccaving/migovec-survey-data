@@ -303,8 +303,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 
 	join apple_crumble-1e@apple_crumble pov-2e@pov
-	join pov_e2_l1@pov ac_e2_l1@apple_crumble
-	join pov_e2_l2@pov ac_e2_l2@apple_crumble
+	join pov_e2_l1@pov:0 ac_e2_l1@apple_crumble:end
+	join pov_e2_l2@pov:end ac_e2_l3@apple_crumble:0
 	join ttt-2e@ttt batmere-1e@batmere
 	join ttt-1e@ttt mandare_resurvey-1e@mandare_resurvey
 	join batmere-1e@batmere mandare_resurvey-1e@mandare_resurvey
@@ -707,6 +707,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join sparkle_highway-1p@sparkle_highway delta_blues-1p@delta_blues
 
 	#ELEVATION
+	join mudaholic-1e@mudaholic shelobs_lair-1e@shelobs_lair
 	join bacchus_goldfish-1e@bacchus_goldfish klic_globin-1s@klic_globin
 	join line1@delta_blues:0 line1@blues_and_twos:end
 	join line2@delta_blues:end line2@blues_and_twos:0
