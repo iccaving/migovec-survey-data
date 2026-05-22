@@ -109,6 +109,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join s1_l1@brez_volje:0 s3_l1@popotresni:end
 	join s1_l2@brez_volje:end s3_l2@popotresni:0
 
+	#ELEVATION
+	join popotresni-pop-1e@popotresni brez_volje-1e@brez_volje
+
 	###______________2006_____________ ###
 	input "./2006/smer1/smer1.th"
 
