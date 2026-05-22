@@ -88,11 +88,18 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2004/popotresni/popotresni.th"
 
 	equate POP25@popotresni 27@galerija
-
+	#PLAN
 	join s1_l3@galerija s4_l2@popotresni
 	join s1_l2@galerija s4_l3@popotresni:end
 	join s3_l1@risa2 s4_l1@popotresni:end
 	join s3_l2@risa2 s4_l3@popotresni:0
+	#ELEVATION
+	join galerija-4e@galerija popotresni-kak-1e@popotresni #Join near big chamber
+	join galerija-4e@galerija popotresni-kak-2e@popotresni #Join just after Cafe
+	join galerija-3e@galerija popotresni-kak-2e@popotresni #Join at Sejna Soba pitch
+	join galerija-1e@galerija popotresni-kak-2e@popotresni #Join at KVG (Why Man Here)
+	join risa2-1e@risa2 popotresni-pop-1e@popotresni
+
 
 	###______________2005_____________ ###
 	input "./2005/brez_volje/brez_volje.th"
@@ -101,6 +108,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	join s1_l1@brez_volje:0 s3_l1@popotresni:end
 	join s1_l2@brez_volje:end s3_l2@popotresni:0
+
+	#ELEVATION
+	join popotresni-pop-1e@popotresni brez_volje-1e@brez_volje
 
 	###______________2006_____________ ###
 	input "./2006/smer1/smer1.th"

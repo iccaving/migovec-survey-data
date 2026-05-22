@@ -9,8 +9,11 @@ survey galerija
 		break
 		galerija-2e
 		galerija-3e
+		galerija-4e
 	endmap
-
+	#join galerija-1e galerija-2e #Done at Map level
+	join galerija-1e galerija-3e
+	join galerija-3e galerija-4e
 
 	map m3p -projection plan
 		galerijap_3

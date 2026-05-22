@@ -4,12 +4,16 @@ survey popotresni
 	input "popotresni-e.th2"
 
 	map  m-all-e -projection extended
-		popotresni-kak-1e
 		popotresni-pop-1e
 		popotresni-pop-2e
+		break
+		popotresni-kak-1e
+		popotresni-kak-2e
 		#popotresni-pop-3e
 	endmap
 
+	join popotresni-kak-1e popotresni-kak-2e
+	join popotresni-pop-1e popotresni-pop-2e
 	map m1p -projection plan
 		popotresnip_1
 	endmap
