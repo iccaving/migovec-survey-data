@@ -3,7 +3,7 @@
 encoding utf-8
 # created with SexyTopo 1.8.4
 
-survey dmtw -title "Don't Mention The Water"
+survey dmtw -title "Dont Mention The Water"
 
 	input "dmtw-p.th2"
 	input "dmtw-e.th2"
@@ -24,10 +24,9 @@ survey dmtw -title "Don't Mention The Water"
 		explo-team "Laura Turner"
 		team "Ben Honan"  insts notes
 		team "Laura Turner" insts notes
-		data normal from to length compass clino
 		units length meters
     	units compass clino degrees
-		
+		data normal from to length compass clino
 		1	-	3.399	103.38	-7.38	
 		1	-	8.315	85.20	58.30	
 		1	-	8.048	76.27	76.85	
