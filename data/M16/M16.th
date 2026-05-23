@@ -420,7 +420,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	
 ###__________2025____________###
 
-	"input ./2025/dmtw/dmtw.th"
+	input "./2025/dmtw/dmtw.th"
 
 	equate 6@dmtw 2@level2n
 endsurvey
