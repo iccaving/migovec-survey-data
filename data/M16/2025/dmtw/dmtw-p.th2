@@ -1,129 +1,232 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_adjust -250.0 -500.0 250.0 500.0
 ##XTHERION## xth_me_area_zoom_to 100
 
+
+
 scrap DELETE-ME-survey-legs-dmtw-p -projection plan -scale [7.87402 1 m]
-    line survey
-        62.83 15.28
-        88.66 9.13
-    endline
-    line survey
-        62.83 15.28
-        97.09 18.19
-    endline
-    line survey
-        62.83 15.28
-        76.85 18.66
-    endline
-    line survey
-        62.83 15.28
-        54.72 10.39
-    endline
-    line survey
-        62.83 15.28
-        62.28 -10.39
-    endline
-    line survey
-        62.28 -10.39
-        67.17 38.74
-    endline
-    line survey
-        62.28 -10.39
-        61.73 -5.75
-    endline
-    line survey
-        62.28 -10.39
-        64.65 0.31
-    endline
-    line survey
-        62.28 -10.39
-        65.12 -23.46
-    endline
-    line survey
-        62.28 -10.39
-        50.31 -35.12
-    endline
-    line survey
-        62.28 -10.39
-        55.12 -19.61
-    endline
-    line survey
-        55.12 -19.61
-        58.74 -21.73
-    endline
-    line survey
-        55.12 -19.61
-        54.09 -17.24
-    endline
-    line survey
-        55.12 -19.61
-        55.04 -19.53
-    endline
-    line survey
-        55.12 -19.61
-        57.64 -18.66
-    endline
-    line survey
-        55.12 -19.61
-        46.22 -47.48
-    endline
-    line survey
-        46.22 -47.48
-        38.43 80.63
-    endline
-    line survey
-        46.22 -47.48
-        46.14 -48.74
-    endline
-    line survey
-        46.22 -47.48
-        60.55 -30.24
-    endline
-    line survey
-        46.22 -47.48
-        3.54 22.60
-    endline
-    line survey
-        46.22 -47.48
-        -25.04 -3.78
-    endline
-    line survey
-        46.22 -47.48
-        -11.97 -59.37
-    endline
-    line survey
-        -11.97 -59.37
-        -54.49 -45.75
-    endline
-    line survey
-        -11.97 -59.37
-        -2.99 -73.86
-    endline
-    line survey
-        -11.97 -59.37
-        52.60 33.31
-    endline
-    line survey
-        -11.97 -59.37
-        -97.09 14.09
-    endline
-    line survey
-        -11.97 -59.37
-        -26.06 -80.63
-    endline
-    point 62.83 15.28 station-name -align tr -scale xs -text 1
-    point 62.28 -10.39 station-name -align tr -scale xs -text 2
-    point 55.12 -19.61 station-name -align tr -scale xs -text 3
-    point 46.22 -47.48 station-name -align tr -scale xs -text 4
-    point -11.97 -59.37 station-name -align tr -scale xs -text 5
-    point -26.06 -80.63 station-name -align tr -scale xs -text 6
+
+line survey
+  62.83 15.28
+  88.66 9.13
+endline
+
+line survey
+  62.83 15.28
+  97.09 18.19
+endline
+
+line survey
+  62.83 15.28
+  76.85 18.66
+endline
+
+line survey
+  62.83 15.28
+  54.72 10.39
+endline
+
+line survey
+  62.83 15.28
+  62.28 -10.39
+endline
+
+line survey
+  62.28 -10.39
+  67.17 38.74
+endline
+
+line survey
+  62.28 -10.39
+  61.73 -5.75
+endline
+
+line survey
+  62.28 -10.39
+  64.65 0.31
+endline
+
+line survey
+  62.28 -10.39
+  65.12 -23.46
+endline
+
+line survey
+  62.28 -10.39
+  50.31 -35.12
+endline
+
+line survey
+  62.28 -10.39
+  55.12 -19.61
+endline
+
+line survey
+  55.12 -19.61
+  58.74 -21.73
+endline
+
+line survey
+  55.12 -19.61
+  54.09 -17.24
+endline
+
+line survey
+  55.12 -19.61
+  55.04 -19.53
+endline
+
+line survey
+  55.12 -19.61
+  57.64 -18.66
+endline
+
+line survey
+  55.12 -19.61
+  46.22 -47.48
+endline
+
+line survey
+  46.22 -47.48
+  38.43 80.63
+endline
+
+line survey
+  46.22 -47.48
+  46.14 -48.74
+endline
+
+line survey
+  46.22 -47.48
+  60.55 -30.24
+endline
+
+line survey
+  46.22 -47.48
+  3.54 22.6
+endline
+
+line survey
+  46.22 -47.48
+  -25.04 -3.78
+endline
+
+line survey
+  46.22 -47.48
+  -11.97 -59.37
+endline
+
+line survey
+  -11.97 -59.37
+  -54.49 -45.75
+endline
+
+line survey
+  -11.97 -59.37
+  -2.99 -73.86
+endline
+
+line survey
+  -11.97 -59.37
+  52.6 33.31
+endline
+
+line survey
+  -11.97 -59.37
+  -97.09 14.09
+endline
+
+line survey
+  -11.97 -59.37
+  -26.06 -80.63
+endline
+
+point 62.83 15.28 station-name -align tr -scale xs -text 1
+
+point 62.28 -10.39 station-name -align tr -scale xs -text 2
+
+point 55.12 -19.61 station-name -align tr -scale xs -text 3
+
+point 46.22 -47.48 station-name -align tr -scale xs -text 4
+
+point -11.97 -59.37 station-name -align tr -scale xs -text 5
+
+point -26.06 -80.63 station-name -align tr -scale xs -text 6
+
 endscrap
 
+
+
 scrap dmtw-1p -projection plan -scale [7.87402 1 m]
-    point 62.83 15.28 station -name 1
-    point 62.28 -10.39 station -name 2
-    point 55.12 -19.61 station -name 3
-    point 46.22 -47.48 station -name 4
-    point -11.97 -59.37 station -name 5
-    point -26.06 -80.63 station -name 6
+
+point 71.0694 19.7028 continuation -scale xs
+
+point 69.4605 29.2352 water-flow -orientation 198.567 -scale xs
+
+line pit -close on
+  68.0684 34.9151
+  72.0033 33.895 74.918 32.5834 74.7723 30.6888
+  74.6265 28.7942 73.242 26.5354 71.7847 25.9524
+  70.3273 25.3695 66.6111 22.6005 65.8824 24.7865
+  65.1537 26.9726 62.0933 28.5028 63.2592 30.3973
+  64.4251 32.2919 68.0684 34.9151 68.0684 34.9151
+  smooth off
+endline
+
+line pit -close on
+  89.2714 21.2601
+  89.2714 21.2601 85.628 18.6369 84.4621 16.7423
+  83.2962 14.8478 84.7536 13.099 85.4822 10.9129
+  86.2109 8.7269 90.7287 10.0385 92.1861 10.6215
+  93.6434 11.2044 95.8294 15.1393 95.9752 17.0338
+  96.1209 18.9284 93.2062 20.24 89.2714 21.2601
+endline
+
+line pit
+  60.4158 -34.1192
+  60.4158 -34.1192 60.1243 -32.5161 59.8329 -30.7673
+  59.5414 -29.0185 55.1693 -27.4154 50.7973 -25.2294
+  46.4252 -23.0434 43.5105 -22.1689 39.8672 -21.1488
+endline
+
+point 212.6657 25.7302 label -align l -attr level 3 -scale xs -text DMTW
+
+line wall
+  96.4551 22.8771
+  96.4551 22.8771 85.3256 22.671 80.1731 22.0527
+  75.0206 21.4344 76.6694 39.7774 75.2267 40.6018
+  73.784 41.4262 71.1047 41.4262 65.1278 39.1591
+  smooth off
+  65.1278 39.1591 55.4411 16.0758 52.9679 11.9538
+  50.4947 7.8318 52.9679 7.0074 52.9679 0.8244
+  52.9679 -5.3586 53.174 -4.7403 48.8458 -9.6867
+  44.5177 -14.6332 37.7371 -23.4748 35.2639 -25.948
+  smooth off
+endline
+
+line wall
+  53.3593 -43.8098
+  54.802 -41.9549 65.3339 -28.8541 65.7461 -25.5565
+  66.1583 -22.2589 64.5095 -12.9843 64.5095 -8.8623
+  64.5095 -4.7403 63.6851 -4.122 65.1278 -0.2061
+  66.5705 3.7098 62.6546 11.3355 70.4864 9.8928
+  78.3182 8.4501 85.7379 7.2135 89.4477 8.0379
+  93.1575 8.8623 98.5161 10.9233 98.5161 10.9233
+  smooth off
+endline
+
+point 62.83 15.28 station -name 1
+
+point 62.28 -10.39 station -name 2
+
+point 55.12 -19.61 station -name 3
+
+point 46.22 -47.48 station -name 4
+
+point -11.97 -59.37 station -name 5
+
+point -26.06 -80.63 station -name 6
+
 endscrap
+
+
