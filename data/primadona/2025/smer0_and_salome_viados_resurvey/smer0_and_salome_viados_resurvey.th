@@ -34,10 +34,10 @@ survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     team "Leo Antwis"
     team "Thurston Blount"
     team "Benjamin Honan"
-    explo-date 2025.07.22
-    explo-team "Leo Antwis"
-    explo-team "Thurston Blount"
-    explo-team "Benjamin Honan"
+    #explo-date 2025.07.22 #This was a resurvey, so not an exploration
+    #explo-team "Leo Antwis"
+    #explo-team "Thurston Blount"
+    #explo-team "Benjamin Honan"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

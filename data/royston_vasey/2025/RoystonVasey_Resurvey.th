@@ -15,9 +15,10 @@ survey RoystonVasey_Resurvey -title "RoystonVasey Resurvey"
 
   centerline
     date 2025.07.29 
-    team "LA"
-    team "HR"
-    team "CH"
+    team "Lamya Adam"
+    team "Hannes Reichle"
+    team "Chris Hayes"
+    #No explo date or team as this is a resurvey, not an exploration
     units length meters
     units compass clino degrees
     data normal from to length compass clino

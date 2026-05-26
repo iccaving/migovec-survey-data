@@ -14,7 +14,12 @@ survey game_of_stones -title "Game Of Stones"
 
   centerline
     date 2025.07.03 
-    # team AT RT 
+    # team AT RT
+    team "Ana Teck" insts notes
+    team "Rhys Tyers" insts notes
+    explo-date 2025.07.03
+    explo-team "Ana Teck"
+    explo-team "Rhys Tyers"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

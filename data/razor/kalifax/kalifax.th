@@ -17,6 +17,12 @@ survey kalifax -title "Califax"
   centerline
     date 2025.07.26 
     # team HR, EM 
+    team "Hannes Reichle" insts notes
+    team "Esther Muller" insts notes
+    explo-date 2025.07.26
+    explo-team "Hannes Reichle"
+    explo-team "Esther Muller"
+    explo-team "David [P Wilson]"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
