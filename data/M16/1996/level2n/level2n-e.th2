@@ -1,11 +1,12 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap level2n-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
 
-line wall 
+scrap level2n-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+line wall
   548.6251 986.7831
   546.7045 986.303 534.2208 981.5015 529.8995 983.9022
   525.5782 986.303 523.1775 990.1441 519.3364 994.4654
@@ -16,7 +17,7 @@ line wall
   411.949 1048.5969 394.1837 1037.0193 384.5808 1037.4994
   374.9779 1037.9796 357.2126 1039.42 340.4076 1039.42
   316.8806 1039.42
-  315.8607 1039.42 301.5383 1044.0048 288.3289 1048.3052
+  315.8607 1039.42 315.4099 1039.9094 311.6794 1041.5345
 endline
 
 line wall -subtype blocks
@@ -30,8 +31,13 @@ line wall -subtype blocks
 endline
 
 point 367.4173 957.0316 station -name 3
+
 point 540.4773 920.2516 station -name 4
+
 point 292.0273 959.6316 station -name 2
+
 point 233.7773 950.4116 station -name 1
+
 endscrap
+
 

@@ -12,9 +12,10 @@ survey dmtw -title "Dont Mention The Water"
 		dmtw-1p
 	endmap
 	map m-all-e -projection extended
+		dmtw-2e
 		dmtw-1e
 	endmap
-
+	join dmtw-2e dmtw-1e
 
 	centreline
 		date 2025.08.01
