@@ -55,6 +55,8 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join level2s-2e@level2s level2n-1e@level2n
 	join migcon-1e@migcon migcondown-1e@migcondown
 	join migcondown-1e@migcondown migconleft-1e@migconleft
+	join entrance-1e@entrance brezno-2e@brezno
+	join brezno-2e@brezno brezno-1e@brezno
 	join hotline-1e@hotline brezno-1e@brezno
 	join hotline-1e@hotline migconleft-1e@migconleft
 	join migcondown-1e@migcondown rockroll-1e@rockroll
