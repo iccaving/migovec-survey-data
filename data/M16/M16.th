@@ -430,7 +430,10 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	input ./2025/dmtw/dmtw.th
 
 	equate 6@dmtw 2@level2n
-
+	#PLAN
+	join dmtw-1p@dmtw level2s-1p@level2s
+	join dmtw-1p@dmtw level2n-1p@level2n
+	#ELEVATION
 	join dmtw-1e@dmtw level2s-2e@level2s
 	join dmtw-2e@dmtw level2s-2e@level2s
 endsurvey

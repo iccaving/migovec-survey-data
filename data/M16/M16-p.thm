@@ -21,9 +21,10 @@ map m-exhibition_road-p -projection plan
 	m-all-p@migcondown
 	#m-all-p@migcond2
 	m-all-p@oratory
+	m-top-p@level2s #Split this to avoid confusion at Fawlty Towers junction with lvl2
 	m-all-p@sunk_cost_series
 	m-all-p@dmtw
-	m-all-p@level2s
+	m-bottom-p@level2s #Split this to avoid confusion at Fawlty Towers junction with lvl2
 	m-all-p@level2n
 	m-all-p@exhib
 endmap

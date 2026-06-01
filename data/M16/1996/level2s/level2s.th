@@ -6,7 +6,12 @@ survey level2s -title "System Migovec"
 		level2s-1p
 		level2s-2p
 	endmap
-
+	map m-top-p -projection plan
+		level2s-2p
+	endmap
+	map m-bottom-p -projection plan
+		level2s-1p
+	endmap
 input level2s-e.th2
 
 map m-all-e -projection extended
