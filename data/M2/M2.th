@@ -61,7 +61,10 @@ survey M2 -title "M2 part of System Migovec" -entrance 16@izent1 -attr cadastral
 	equate 9@napsihiran_rov 12@wizard_of_oz
 	equate 1@m2_2012_resurvey 19@izent2
 	equate 77@m2_2012_resurvey 1@oct08
-	equate 92@m2_2012_resurvey 1@napsihiran_rov
+	
+	# leaving this one disconnected since resurvey is much shorter 
+	# then original survey - makes silos wonky if connected
+	# equate 92@m2_2012_resurvey 1@napsihiran_rov 
 
 	join napsihiran_rov-1e@napsihiran_rov wizard_of_oz-1e@wizard_of_oz
 
