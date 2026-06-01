@@ -1,6 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
+
+
 
 scrap silos-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
@@ -17,12 +19,12 @@ line wall -subtype invisible
   39.3718 523.5965
 endline
 
-line wall -subtype invisible
+line wall -id l1 -subtype invisible
   -59.2977 408.6021
   -1.9206 405.2411
 endline
 
-line wall 
+line wall
   39.3718 523.5965
   39.3718 523.5965 36.7021 523.4686 34.3515 521.8844
   32.4515 520.6038 30.8432 517.914 30.3717 517.1491
@@ -53,8 +55,13 @@ line wall -subtype blocks
 endline
 
 point -26.94 420.0 station -name 4
+
 point -10.51 465.2 station -name 3
+
 point 9.61 480.31 station -name 2
+
 point 68.35 491.73 station -name 1
+
 endscrap
+
 
