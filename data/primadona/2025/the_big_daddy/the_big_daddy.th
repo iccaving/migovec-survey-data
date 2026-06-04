@@ -5,10 +5,10 @@ survey the_big_daddy -title "the big daddy"
 
   # input "../th2/the_big_daddy-1p.th2"
   input "the_big_daddy-1s.th2"
-
-  # map m1p -projection plan
-  #   the_big_daddy-1p
-  # endmap
+  input "the_big_daddy-1p.th2"
+  map m-all-p -projection plan
+      the_big_daddy-1p
+  endmap
   map m-all-e -projection extended
       the_big_daddy-1s
   endmap

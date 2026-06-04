@@ -76,7 +76,8 @@ map m-offsets-p -projection plan
 	m-below_lumos-p [-140 0 m] below
 	#m-pivnica-p [-200 0 m] below
 	m-below_cattlegrid-p [70 0 m] below
-	m-echo_falls_branch-p [50 0 m] below 
+	m-echo_falls_branch-p [50 0 m] below
+	m-discordant_bebop-p [50 0 m] below 
 endmap
 
 # Submaps
@@ -170,7 +171,7 @@ map m-death_star_branch-p -projection plan
 	m-all-p@who_dies_first_resurvey
 	m-all-p@delta_blues
 	m-all-p@blues_and_twos
-	m-all-p@discordant_bebop
+	m-all-p@the_big_daddy
 	m-all-p@sparkle_highway
 	m-all-p@pandoras_approach
 	m-all-p@my_little_pitch
@@ -179,6 +180,7 @@ map m-death_star_branch-p -projection plan
 	#m-all-p@loosely_horsey
 	m-all-p@2_loompa_2_land
 	m-all-p@alice_in_waterland
+	m-all-p@loompa_land_tolmin_drift
 endmap
 
 map m-hammerhead_branch-p -projection plan
@@ -263,6 +265,9 @@ map m-below_cattlegrid-p -projection plan
 	m-all-p@upotyn
 endmap
 
+map m-discordant_bebop-p -projection plan
+	m-all-p@discordant_bebop
+endmap
 #### CUSTOM MAPS FOR PRESENTATIONS ####
 
 map m-octarine_region-p -projection plan -title "Octarine Region (2019)"

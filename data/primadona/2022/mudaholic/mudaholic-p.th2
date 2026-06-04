@@ -1,18 +1,27 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 500.0 1000.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap mudaholic-3p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
 point 276.26 639.92 station -name 26
+
 point 205.0 568.82 station -name 27
+
 point 209.17 549.13 station -name 28
+
 point 184.69 522.76 station -name 29
+
 point 156.18 477.24 station -name 30
+
 point 327.91 609.21 station -name 24
+
 point 284.84 660.47 station -name 25
+
 endscrap
+
 
 
 scrap mudaholic-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
@@ -22,13 +31,14 @@ line wall -subtype presumed
   151.777 451.1645
 endline
 
-point 160.0583 450.4625 narrow-end 
+point 160.0583 450.4625 narrow-end
+
 line wall -subtype presumed
   146.3571 453.18
   142.2428 443.903
 endline
 
-line wall 
+line wall
   222.0304 370.5343
   221.8893 370.0383 220.3513 371.2792 219.2117 369.8152
   218.0205 368.2849 217.8704 364.8526 217.2032 364.7727
@@ -53,7 +63,7 @@ line wall
   139.7643 428.0323 148.3701 441.7569 148.3701 441.7569
 endline
 
-line wall 
+line wall
   142.2428 443.903
   141.9536 442.0109
   139.7288 436.2246
@@ -87,22 +97,35 @@ line wall
 endline
 
 point 167.44 401.81 station -name 7
+
 point 154.92 402.99 station -name 8
+
 point 146.5 397.48 station -name 9
+
 point 139.49 398.82 station -name 10
+
 point 129.41 386.22 station -name 11
+
 point 135.24 424.96 station -name 12
+
 point 197.36 378.03 station -name 6
+
 point 231.93 349.53 station -name 2
+
 point 222.48 355.91 station -name 4
+
 point 211.77 341.26 station -name 5
+
 point 235.39 358.19 station -name 3
+
 endscrap
+
 
 
 scrap mudaholic-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 373.0159 244.0723 label -align l -attr level 1 -scale l -text Mudaholic
+point 462.2058 299.4517 label -align l -attr level 3 -scale xs -text Mudaholic
+
 line wall -subtype invisible
   383.5222 525.8326
   388.2982 530.4929
@@ -113,7 +136,8 @@ line wall -subtype invisible
   347.5761 607.9896
 endline
 
-point 188.5268 435.6148 continuation 
+point 188.5268 435.6148 continuation
+
 line wall -subtype invisible
   185.8673 421.8379
   190.4357 415.2171
@@ -125,9 +149,10 @@ line wall -close on -outline in
   357.6536 560.6462
   359.1764 562.4338
   360.5502 562.2186
+  362.5364 557.6337
 endline
 
-line wall 
+line wall
   388.2982 530.493
   388.2982 530.493 372.8633 545.982 365.7662 554.9801
   361.0617 560.9448 360.0454 568.2484 359.7656 568.9989
@@ -138,12 +163,12 @@ line wall
   339.0634 596.3695 349.9408 603.6104 349.9408 603.6104
 endline
 
-line pit 
+line pit
   310.9972 609.3919
   314.857 608.2334 331.7487 597.6189 327.0118 620.0657
 endline
 
-line wall 
+line wall
   229.7201 344.0928
   233.5628 340.9282 227.737 338.6723 228.3359 333.8613
   228.0051 330.2256 228.4753 325.8296 230.6252 322.5736
@@ -206,14 +231,14 @@ line wall
   364.9919 547.7387 381.4584 526.5197 383.5222 525.8326
 endline
 
-line wall 
+line wall
   347.5761 607.9896
   346.593 607.3355 342.0212 603.9702 335.3387 607.7185
   333.5756 608.7074 330.8577 613.0505 329.0211 615.1191
   323.3849 625.029 334.4396 618.531 331.4096 626.6825
 endline
 
-line wall 
+line wall
   311.0232 609.3272
   311.6207 607.7954 309.789 602.4243 310.2806 601.1178
   315.156 596.1429 318.2874 601.6354 319.8477 599.333
@@ -253,7 +278,7 @@ line wall
   192.3964 422.8439 187.6833 423.3078 185.8673 421.8379
 endline
 
-line border -close on -id mudaholic-1p_clay_1 -visibility off
+line border -id mudaholic-1p_clay_1 -close on -visibility off
   317.523 578.1819
   317.0568 576.8727 316.5591 575.6271 316.0174 574.4651
   315.4376 573.2215 314.8165 572.0549 314.1581 570.9499
@@ -447,29 +472,46 @@ line border -close on -id mudaholic-1p_clay_1 -visibility off
   325.8003 571.4682 326.0104 571.7244 326.2355 571.9717
   326.6857 572.4664 327.1956 572.9261 327.7433 573.3531
   327.7581 573.3645 327.7752 573.3736 327.79 573.3851
+  317.523 578.1819
 endline
 
-area clay 
+area clay
   mudaholic-1p_clay_1
 endarea
 
 point 273.9 291.57 station -name 0
+
 point 240.51 320.94 station -name 1
+
 point 235.39 358.19 station -name 3
+
 point 225.47 378.98 station -name 13
+
 point 203.35 378.35 station -name 14
+
 point 195.63 421.81 station -name 15
+
 point 220.04 447.09 station -name 16
+
 point 228.54 464.41 station -name 17
+
 point 250.98 485.83 station -name 18
+
 point 278.15 522.36 station -name 19
+
 point 293.98 538.27 station -name 20
+
 point 332.56 586.93 station -name 21
+
 point 343.19 579.13 station -name 22
+
 point 328.15 595.43 station -name 23
+
 point 327.91 609.21 station -name 24
+
 point 284.84 660.47 station -name 25
-line wall 
+
+line wall
   190.4357 415.2171
   191.9419 417.1073 194.2116 419.0755 195.006 417.4469
   197.4224 412.4928 197.2011 398.8774 197.6763 395.2738
@@ -480,4 +522,5 @@ line wall
 endline
 
 endscrap
+
 

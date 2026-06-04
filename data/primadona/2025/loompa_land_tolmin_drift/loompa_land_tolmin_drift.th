@@ -7,8 +7,9 @@ survey loompa_land_tolmin_drift -title "loompa land tolmin drift"
 
   map m-all-p -projection plan
     loompa_land_tolmin_drift-1p
+    loompa_land_tolmin_drift-2p
   endmap
-
+  join loompa_land_tolmin_drift-1p loompa_land_tolmin_drift-2p
   map m-all-e -projection extended
     loompa_land_tolmin_drift-1s
   endmap
