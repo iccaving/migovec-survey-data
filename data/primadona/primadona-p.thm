@@ -95,7 +95,7 @@ endmap
 map m-galerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
 	m-all-p@galerija
 	m-all-p@smer1
-	#m-all-p@smer0
+	m-all-p@smer0 #This is the original survey, resurvey is more detailed and starts later
 	m-all-p@smer0_and_salome_viados_resurvey
 	m-all-p@jack_of_hearts
 	m-all-p@quantum_state
