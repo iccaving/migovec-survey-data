@@ -55,6 +55,8 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join level2s-2e@level2s level2n-1e@level2n
 	join migcon-1e@migcon migcondown-1e@migcondown
 	join migcondown-1e@migcondown migconleft-1e@migconleft
+	join entrance-1e@entrance brezno-2e@brezno
+	join brezno-2e@brezno brezno-1e@brezno
 	join hotline-1e@hotline brezno-1e@brezno
 	join hotline-1e@hotline migconleft-1e@migconleft
 	join migcondown-1e@migcondown rockroll-1e@rockroll
@@ -327,7 +329,10 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join spiny-1e@spiny dinsdale-1e@dinsdale
 	join spiny-1e@spiny brezno-1e@brezno
 	join frogshit-1e@frogshit batshit1-1e@batshit1
+	join l1_bottom@level2s:0 l1@paradiso:end
+	join l1_bottom@level2s:end l1@paradiso:0
 	join ariane-1e@ariane paradiso-1e@paradiso
+	join ariane-1e@ariane level2s-2e@level2s
 	join paradiso-1e@paradiso paradiso2-1e@paradiso2
 	join below55-1e@below55 paradiso2-1e@paradiso2
 	join below55-1e@below55 gloworm-1e@gloworm
@@ -417,10 +422,18 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 
 	equate 10@secret_bonus_chamber 20@entrance
 	equate 16@sunk_cost_series 2@level2n
+
+	join sunk_cost_series-1e@sunk_cost_series level2s-2e@level2s
 	
 ###__________2025____________###
 
 	input ./2025/dmtw/dmtw.th
 
 	equate 6@dmtw 2@level2n
+	#PLAN
+	join dmtw-1p@dmtw level2s-1p@level2s
+	join dmtw-1p@dmtw level2n-1p@level2n
+	#ELEVATION
+	join dmtw-1e@dmtw level2s-2e@level2s
+	join dmtw-2e@dmtw level2s-2e@level2s
 endsurvey

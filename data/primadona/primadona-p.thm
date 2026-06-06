@@ -95,7 +95,7 @@ endmap
 map m-galerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
 	m-all-p@galerija
 	m-all-p@smer1
-	#m-all-p@smer0
+	m-all-p@smer0 #This is the original survey, resurvey is more detailed and starts later
 	m-all-p@smer0_and_salome_viados_resurvey
 	m-all-p@jack_of_hearts
 	m-all-p@quantum_state
@@ -168,17 +168,19 @@ map m-death_star_branch-p -projection plan
 	m-all-p@antares
 	m-all-p@the_deep_awakens
 	m-all-p@who_dies_first_resurvey
-	m-all-p@delta_blues
 	m-all-p@blues_and_twos
-	m-all-p@discordant_bebop
+	m-all-p@delta_blues
+	m-all-p@the_big_daddy
 	m-all-p@sparkle_highway
+	m-all-p@discordant_bebop
 	m-all-p@pandoras_approach
 	m-all-p@my_little_pitch
 	m-all-p@loompa_land
 	m-all-p@down_the_rabbit_hole
-	#m-all-p@loosely_horsey
+	m-all-p@loosely_horsey
 	m-all-p@2_loompa_2_land
 	m-all-p@alice_in_waterland
+	m-all-p@loompa_land_tolmin_drift
 endmap
 
 map m-hammerhead_branch-p -projection plan

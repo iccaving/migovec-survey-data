@@ -1,11 +1,15 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 852.000000 1108.750000
+##XTHERION## xth_me_area_adjust 0.0 0.0 852.0 1108.75
 ##XTHERION## xth_me_area_zoom_to 100
+
+
 
 scrap pov-1p -projection plan -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
 point 458.0 849.5 station -name 23
+
 point 449.0 825.5 station -name 21
+
 line wall
   442.0 823.5
   442.0 823.5 443.5 828.5 443.25 831.0
@@ -35,6 +39,7 @@ line wall
 endline
 
 point 446.0 848.5 station -name 22
+
 line wall
   456.0 863.0
   455.0 865.75 453.25 870.0 453.25 873.25
@@ -60,10 +65,15 @@ line wall
 endline
 
 point 446.0 885.0 station -name 24
+
 point 421.0 913.0 station -name 27
+
 point 420.0 906.0 station -name 26
+
 point 434.0 892.0 station -name 25
+
 endscrap
+
 
 
 scrap pov-2p -projection plan -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
@@ -74,17 +84,15 @@ line floor-step
 endline
 
 point 436.4868 791.6457 u:flag -align r -attr text 1 -attr code 2
+
 line floor-step
   405.3779 711.6156
   403.787 720.0038 400.5 721.0 400.5 721.0
 endline
 
-point 437.75 737.75 label -align r -attr level 2 -scale l -text Mlinotest
-area water
-	l37-286-218
-	endarea
+point 437.75 737.75 label -align r -attr level 2 -scale xs -text Mlinotest
 
-line border -close on -id l37-286-218
+line border -id l37-286-218 -close on
   416.5 752.0
   416.5 752.0 416.0 747.25 416.5 746.0
   417.0 744.75 418.5 740.75 419.75 742.25
@@ -93,16 +101,20 @@ line border -close on -id l37-286-218
 endline
 
 area water
-	l35-288-246
-	endarea
+  l37-286-218
+endarea
 
-line border -close on -id l35-288-246
+line border -id l35-288-246 -close on
   417.75 720.5
   417.75 723.75 417.25 725.0 415.5 724.25
   413.75 723.5 410.5 721.25 409.5 720.0
   408.5 718.75 405.0 715.75 410.0 716.25
   415.0 716.75 417.75 717.25 417.75 720.5
 endline
+
+area water
+  l35-288-246
+endarea
 
 line wall -id s2_l1
   403.0 674.0
@@ -169,18 +181,27 @@ line wall
 endline
 
 point 398.0 678.0 station -name 14
+
 point 400.0 689.0 station -name 15
+
 point 400.0 714.0 station -name 16
+
 point 423.0 727.0 station -name 17
+
 point 419.0 759.0 station -name 18
+
 point 423.0 786.0 station -name 19
+
 point 449.0 825.5 station -name 20
+
 endscrap
+
 
 
 scrap pov-3p -projection plan -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
-point 354.4154 628.1113 label -align l -attr level 4 -text "Povezava aven"
+point 354.4154 628.1113 label -align l -attr level 4 -scale xs -text Povezava
+
 line rock-border -close on
   372.0 619.5
   370.5 613.5
@@ -265,6 +286,7 @@ line wall -subtype invisible
 endline
 
 point 353.9852 609.5944 u:flag -align bl -attr text 2 -attr code 2
+
 line wall -id s3_l6
   425.0 538.25
   426.0 549.25
@@ -283,12 +305,19 @@ line wall -id s3_l6
 endline
 
 point 399.75 501.75 passage-height -align t -value 1.5
+
 point 410.5 523.75 passage-height -align t -value 1.5
+
 point 418.75 541.5 passage-height -align t -value 3
+
 point 410.0 587.0 passage-height -align t -value 3
+
 point 397.0 602.75 passage-height -align t -value 3
+
 point 404.25 648.0 passage-height -align t -value 40
+
 point 374.75 638.75 passage-height -align t -value 40
+
 line floor-step -outline in
   399.0 519.0
   397.25 510.0
@@ -361,9 +390,13 @@ line wall -id s3_l2
 endline
 
 point 393.0 492.0 station -name 6
+
 point 407.0 521.0 station -name 7
+
 point 409.0 529.0 station -name 8
+
 point 423.0 551.0 station -name 9
+
 line floor-step
   393.5 610.0
   387.5 607.0 392.0 602.5 392.0 602.5
@@ -380,20 +413,22 @@ line floor-step
 endline
 
 point 413.0 583.0 station -name 10
-point 387.0 611.0 station -name 11 -subtype fixed
+
+point 387.0 611.0 station -subtype fixed -name 11
+
 point 378.0 609.0 station -name 12
+
 point 366.0 651.0 station -name 13
+
 endscrap
+
 
 
 scrap pov-4p -projection plan -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
 
 point 368.0 437.0 station -name 5
-area water
-	l86-272-566
-	endarea
 
-line border -close on -id l86-272-566
+line border -id l86-272-566 -close on
   386.0 405.5
   388.25 394.75
   397.5 385.5
@@ -402,6 +437,10 @@ line border -close on -id l86-272-566
   405.5 403.0 406.5 405.0 401.5 405.0
   396.5 405.0 386.0 405.5 386.0 405.5
 endline
+
+area water
+  l86-272-566
+endarea
 
 line rock-border -close on
   360.5 357.5
@@ -427,7 +466,7 @@ line rock-border -close on
   370.0 363.75
 endline
 
-line floor-step -close off
+line floor-step
   363.5 352.75
   363.5 352.75 368.75 358.25 367.5 358.0
   366.25 357.75 364.25 358.5 363.75 357.0
@@ -453,7 +492,7 @@ line rock-border -close on
   392.0 476.0
 endline
 
-line pit -close off -outline in
+line pit -outline in
   382.75 405.0
   384.25 395.0
   384.25 395.0 384.0 394.5 387.0 393.0
@@ -617,10 +656,15 @@ line wall -id s4_l1
 endline
 
 point 342.0 333.0 station -name 1
+
 point 376.0 369.0 station -name 2
+
 point 406.0 385.0 station -name 3
+
 point 397.0 412.0 station -name 4
+
 endscrap
+
 
 
 scrap pov-5p -projection plan -scale [326.0 -736.0 532.0 -735.0 0.0 0.0 5 0.0 m]
@@ -670,8 +714,11 @@ line wall -subtype unsurveyed
 endline
 
 point 366.0 651.0 station -name 13
+
 point 400.0 714.0 station -name 16
+
 point 366.0 651.0 station -name 13
+
 line wall -id s5_l3 -subtype unsurveyed
   343.0 689.5
   346.0 682.0
@@ -744,3 +791,5 @@ line wall -id s5_l2 -subtype unsurveyed
 endline
 
 endscrap
+
+

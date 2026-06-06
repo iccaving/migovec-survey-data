@@ -35,14 +35,14 @@ survey freshers_folly -title "freshers folly"
     units compass clino degrees
     data normal from to length compass clino
     extend right
-  # station 0 is memory lane station 1
+  # station 0 is prima1 station 8 (= memory lane station 1)
     0 1 6.14 33.5 -37.6
-    extend left
+    extend right
     1 2 5.77 241.6 -34.6
     2 3 2.90 177.4 -18.3
-    extend right
-    3 4 2.47 19.2 3.9
     extend left
+    3 4 2.47 19.2 3.9
+    extend right
     4 5 2.43 183.2 8.9
     # extend auto
     5 . 2.44 183.4 10.5
@@ -51,7 +51,7 @@ survey freshers_folly -title "freshers folly"
     5 . 0.48 261.4 -88.5
     5 . 0.77 6.4 -58.7
     5 . 1.00 23.6 56.5
-    extend left
+    extend right
     5 6 2.00 137.9 -1.7
     # extend auto
     6 . 1.46 39.2 -5.9
@@ -62,7 +62,7 @@ survey freshers_folly -title "freshers folly"
     6 . 0.99 227.5 21.6
     6 . 1.04 243.3 -11.0
     6 . 1.02 243.3 -52.8
-    extend left
+    extend right
     6 7 1.13 227.3 -28.1
     # extend auto
     7 . 0.55 59.3 2.3
@@ -73,7 +73,7 @@ survey freshers_folly -title "freshers folly"
     7 . 0.29 226.7 -1.1
     7 . 0.25 101.1 -68.2
     7 . 0.47 65.8 -32.8
-    extend left
+    extend right
     7 8 2.91 126.4 19.0
     # extend auto
     8 . 1.25 247.3 -3.7
@@ -84,7 +84,7 @@ survey freshers_folly -title "freshers folly"
     8 . 0.67 216.1 74.2
     8 . 1.03 236.7 60.9
     8 . 1.26 227.2 33.7
-    extend left
+    extend right
     8 9 3.65 192.9 21.1
     # extend auto
     9 . 1.38 52.8 0.9
@@ -95,7 +95,7 @@ survey freshers_folly -title "freshers folly"
     9 . 1.55 97.6 5.4
     9 . 2.03 77.5 48.9
     9 . 0.74 77.3 65.7
-    extend left
+    extend right
     9 10 5.13 151.4 18.2
     # extend auto
     10 . 1.04 62.8 -39.9
@@ -129,7 +129,7 @@ survey freshers_folly -title "freshers folly"
     10 . 1.89 139.9 3.4
     10 . 2.24 164.0 4.0
     10 . 2.43 180.4 4.5
-    extend left
+    extend right
     10 11 2.76 213.0 8.0
     units left right up down meters
     data dimensions station left right up down

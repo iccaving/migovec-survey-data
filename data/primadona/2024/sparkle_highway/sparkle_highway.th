@@ -12,8 +12,10 @@ survey sparkle_highway -title "Sparkle Highway"
     sparkle_highway-1p
     break
     sparkle_highway-2p
+    sparkle_highway-3p
   endmap
-
+  join sparkle_highway-1p sparkle_highway-2p
+  join sparkle_highway-2p sparkle_highway-3p
   map m-all-e -projection extended
    sparkle_highway-1e
    sparkle_highway-2e

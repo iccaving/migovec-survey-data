@@ -136,10 +136,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2016/dejavu/dejavu.th"
 	input "./2016/tight_and_scrotty/tight_and_scrotty.th"
 	input "./2016/gamblers_ruin/gamblers_ruin.th"
-	input "./2016/memorylane/memorylane.th" # brought this back in because someone tied to it in 2024
+	#input "./2016/memorylane/memorylane.th"
 
-	 equate 10@memorylane 19@prima1 # may break ee, disconnect this end if this happens?
-	 equate 1@memorylane 8@prima1 # may break ee, preferably keep this end connected?
+	# equate 10@memorylane 19@prima1
+	# equate 1@memorylane 8@prima1
 	equate 39@karstaway 1@galerija_resurvey
 	equate 1@galerija_resurvey 11@galerija
 	equate 6@galerija_resurvey 16@galerija
@@ -699,8 +699,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 0@blues_and_twos 0@who_dies_first_resurvey
 	equate 17@blues_and_twos 21@delta_blues
 	equate 23@discordant_bebop 39@delta_blues
-	equate 0@bad_vibes 1@memorylane
-	equate 0@freshers_folly 1@memorylane
+	equate 0@bad_vibes 8@prima1
+	equate 0@freshers_folly 8@prima1
 	equate 43@sparkle_highway 21@delta_blues
 	equate 18@bacchus_goldfish 0@klic_globin
 	equate 14@pandoras_approach 0@sparkle_highway
@@ -709,14 +709,19 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 18@down_the_rabbit_hole 24@loompa_land
 
 	#PLAN
+	join bad_vibes-1p@bad_vibes prima1-6p@prima1
+	join freshers_folly-1p@freshers_folly prima1-6p@prima1
 	join bacchus_goldfish-1p@bacchus_goldfish klic_globin-1p@klic_globin
 	join blues_and_twos-p@blues_and_twos  delta_blues-1p@delta_blues
+	join discordant_bebop-1p@discordant_bebop delta_blues-1p@delta_blues
 	join my_little_pitch-1p@my_little_pitch loompa_land-1p@loompa_land
 	join my_little_pitch-1p@my_little_pitch pandoras_approach-1p@pandoras_approach
-	join pandoras_approach-1p@pandoras_approach sparkle_highway-2p@sparkle_highway
+	join pandoras_approach-1p@pandoras_approach sparkle_highway-3p@sparkle_highway
 	join sparkle_highway-1p@sparkle_highway delta_blues-1p@delta_blues
 
 	#ELEVATION
+	join bad_vibes-1e@bad_vibes prima1-3e@prima1
+	join freshers_folly-1e@freshers_folly prima1-3e@prima1
 	join mudaholic-1e@mudaholic shelobs_lair-1e@shelobs_lair
 	join bacchus_goldfish-1e@bacchus_goldfish klic_globin-1s@klic_globin
 	join line1@delta_blues:0 line1@blues_and_twos:end
@@ -749,8 +754,11 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 8@the_big_daddy 5@blues_and_twos
 
 	#Plan
+	join the_big_daddy-1p@the_big_daddy blues_and_twos-p@blues_and_twos
+	join loosely_horsey-1p@loosely_horsey sparkle_highway-2p@sparkle_highway
 	join loompa_land-1p@loompa_land 2_loompa_2_land-1p@2_loompa_2_land
-
+	join loompa_land_tolmin_drift-1p@loompa_land_tolmin_drift 2_loompa_2_land-1p@2_loompa_2_land
+	join down_the_rabbit_hole-1p@down_the_rabbit_hole alice_in_waterland-1p@alice_in_waterland
 	#ELEVATION
 	join smer0smer1_L1@smer0_and_salome_viados_resurvey:end smer1_L1@smer1:0
 	join smer0smer1_L2@smer0_and_salome_viados_resurvey:0 smer1_L2@smer1:end
