@@ -572,12 +572,11 @@ survey bath -title "Bath"
 	join bath-1p bath-3p
 	join bath-2p bath-3p
 
-	map m1s -projection extended
-		bath-1s
-	endmap
-
 	map  m-all-e -projection extended
-		m1s
+		bath-1s
+		bath-2s
+		bath-3s
 	endmap
-
+	join bath-1s bath-2s
+	join bath-2s bath-3s
 endsurvey

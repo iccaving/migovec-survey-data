@@ -3,21 +3,25 @@
 survey the_big_daddy -title "the big daddy"
     # bolt climb at blues and twos. tied into station 5 of delta blues. station 0 is bolt at top of traverse 
 
-  input "../th2/the_big_daddy-1p.th2"
-  input "../th2/the_big_daddy-1s.th2"
-
-  # map m1p -projection plan
-  #   the_big_daddy-1p
-  # endmap
-  # map m1s -projection extended
-  #   the_big_daddy-1s
-  # endmap
+  # input "../th2/the_big_daddy-1p.th2"
+  input "the_big_daddy-1s.th2"
+  input "the_big_daddy-1p.th2"
+  map m-all-p -projection plan
+      the_big_daddy-1p
+  endmap
+  map m-all-e -projection extended
+      the_big_daddy-1s
+  endmap
 
   centerline
     date 2025.07.26 
-    team "bh"
-    team "lt"
-    team "jp"
+    team "Ben Honan" dog
+    team "Laura Temple" dog
+    team "James Perry" dog
+    explo-date 2025.07.26
+    explo-team "Ben Honan"
+    explo-team "Laura Temple"
+    explo-team "James Perry"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

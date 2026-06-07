@@ -1,6 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 924.499986 863.249987
+##XTHERION## xth_me_area_adjust 0.0 0.0 924.499986 863.249987
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap prima1-1e -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m]
@@ -32,47 +33,69 @@ line rock-border -close on
   416.765 502.1527
 endline
 
-line wall:invisible 
+line wall:invisible
   526.0271 420.8443
   513.7932 426.6521
 endline
 
 point 419.717 485.821 dig -scale xl
-point 203.483 526.681 entrance -align l -orientation 90.0 -scale xl
+
+point 203.483 526.681 entrance -orientation 90.0 -align l -scale xl
+
 point 156.795 524.617 label -align l -attr style 6 -attr level 1 -scale l -text PRIMADONA
+
 point 577.481 387.731 label -align r -attr level 2 -scale l -text "M+"
+
 line wall -subtype invisible
   329.0563 565.9603
   305.0 557.75
 endline
 
 point 538.5 213.75 label -align t -attr level 3 -scale s -text "Spiral Climb"
-point 679.5 139.25 label -align tl -attr level 3 -scale s -text "Lost and"
-point 679.5 129.25 label -align bl -attr level 3 -scale s -text Found
-point 309.0 560.75 station -name 35
-point 319.25 561.5 station -name 34
-point 384.25 500.75 station -name 33
-point 399.0 497.0 station -name 32
-point 412.0 502.5 station -name 31
-point 424.25 503.25 station -name 30
-point 433.5 498.25 station -name 29
-point 441.75 486.5 station -name 28
-point 450.0 481.75 station -name 27
-point 454.25 478.75 station -name 26
-point 459.0 476.5 station -name 25
-point 465.25 451.0 station -name 24
-point 487.75 412.25 station -name 23
-point 510.5 422.5 station -name 22
-point 516.25 415.75 station -name 21b
-point 527.75 409.75 station -name 21
-point 541.0 406.25 station -name 20
-point 552.5 351.25 station -name 19
-point 559.0 351.75 station -name 18
-area snow
-	l50-104-176
-	endarea
 
-line border -close on -id l50-104-176
+point 679.5 139.25 label -align tl -attr level 3 -scale s -text "Lost and"
+
+point 679.5 129.25 label -align bl -attr level 3 -scale s -text Found
+
+point 309.0 560.75 station -name 35
+
+point 319.25 561.5 station -name 34
+
+point 384.25 500.75 station -name 33
+
+point 399.0 497.0 station -name 32
+
+point 412.0 502.5 station -name 31
+
+point 424.25 503.25 station -name 30
+
+point 433.5 498.25 station -name 29
+
+point 441.75 486.5 station -name 28
+
+point 450.0 481.75 station -name 27
+
+point 454.25 478.75 station -name 26
+
+point 459.0 476.5 station -name 25
+
+point 465.25 451.0 station -name 24
+
+point 487.75 412.25 station -name 23
+
+point 510.5 422.5 station -name 22
+
+point 516.25 415.75 station -name 21b
+
+point 527.75 409.75 station -name 21
+
+point 541.0 406.25 station -name 20
+
+point 552.5 351.25 station -name 19
+
+point 559.0 351.75 station -name 18
+
+line border -id l50-104-176 -close on
   312.0 554.75
   314.0 526.75
   325.0 494.75
@@ -84,14 +107,18 @@ line border -close on -id l50-104-176
   312.0 554.75
 endline
 
-line u:texture 
+area snow
+  l50-104-176
+endarea
+
+line u:texture
   325.3233 550.6804
   325.3233 550.6804 336.5733 553.6804 339.3233 553.9304
   342.0733 554.1804 340.8233 552.9304 345.8233 553.1804
   350.8233 553.4304 355.8233 554.4304 355.8233 554.4304
 endline
 
-line u:texture 
+line u:texture
   368.0 520.75
   383.5 522.75
   396.75 524.5
@@ -103,7 +130,7 @@ line wall -subtype blocks
   341.0 509.75 374.8102 499.1561 374.8102 499.1561
 endline
 
-line wall 
+line wall
   513.7932 426.6521
   512.0432 424.4021 504.7346 429.5157 502.3533 430.4266
   499.4925 431.5209 497.9079 438.4962 494.9079 439.2462
@@ -125,7 +152,7 @@ line wall -subtype blocks
   417.2279 503.3184 415.9812 504.0564 415.75 504.75
 endline
 
-line wall 
+line wall
   415.75 504.75
   415.25 506.25 418.75 508.75 414.0 508.5
   409.25 508.25 406.25 506.5 406.0 505.75
@@ -189,7 +216,7 @@ line wall -subtype blocks
   429.5 495.5 431.75 494.5 433.25 494.0
 endline
 
-line wall 
+line wall
   433.25 494.0
   434.75 493.5 437.0 492.75 436.75 491.75
   436.5 490.75 437.0 486.25 437.25 485.0
@@ -289,7 +316,7 @@ line wall -subtype blocks
   448.5 478.75 453.0 477.0 453.5 475.75
 endline
 
-line wall 
+line wall
   453.5 475.75
   454.0 474.5 454.5 462.5 454.75 460.75
   455.0 459.0 454.25 457.25 454.5 456.5
@@ -301,7 +328,7 @@ line wall -subtype blocks
   462.0 452.5 463.5 452.0 463.25 450.5
 endline
 
-line wall 
+line wall
   463.25 450.5
   463.0 449.0 463.0 437.75 463.0 433.0
   463.0 428.25 465.75 427.5 466.0 426.25
@@ -319,20 +346,20 @@ line wall -subtype blocks
   524.75 399.5 535.0 401.75 537.0 399.25
 endline
 
-line wall 
+line wall
   537.0 399.25
   539.0 396.75 540.65 397.44 541.0 391.5
   541.25 387.25 537.0 382.25 537.75 375.5
   538.5 368.75 537.75 346.25 539.0 345.25
 endline
 
-line u:texture 
+line u:texture
   571.5 338.25
   580.5 337.5
   587.5 337.5
 endline
 
-line u:texture 
+line u:texture
   602.0 289.5
   602.0 289.5 610.0 289.0 611.5 289.0
   613.0 289.0 620.0 288.5 620.0 288.5
@@ -345,7 +372,7 @@ line wall -subtype blocks
   554.25 347.5 557.25 351.25 565.75 347.25
 endline
 
-line wall 
+line wall
   565.75 347.25
   566.0 337.5 575.5 333.25 575.5 332.0
   575.5 328.36 577.25 310.5 578.75 310.25
@@ -358,7 +385,7 @@ line wall -subtype blocks
   589.25 290.26 601.5 293.5 602.0 289.5
 endline
 
-line wall 
+line wall
   602.0 289.5
   602.5 285.5 603.25 283.25 603.25 278.75
   603.25 274.25 602.25 269.75 604.5 268.25
@@ -377,7 +404,7 @@ line wall -id p_e1_l3
   645.0 250.25 653.5507 249.0432 653.5507 249.0432
 endline
 
-line wall 
+line wall
   381.7556 516.4135
   382.2556 517.1635 385.0789 518.9586 388.8289 520.4586
   392.5789 521.9586 391.2537 523.2068 391.1146 527.5
@@ -385,7 +412,7 @@ line wall
   390.4416 536.9266 388.5149 541.0112 388.7649 545.0112
 endline
 
-line wall 
+line wall
   383.2255 545.8965
   383.2537 542.6032 377.4906 535.1446 373.9906 531.1446
   370.4906 527.1446 365.3195 536.4717 361.8195 536.4717
@@ -399,22 +426,22 @@ line wall -id alt1
   305.0 557.75
   altitude .
   305.5293 557.8558 306.0922 557.8721 306.6626 557.8129
-  306.8401 557.7945 307.0182 557.7688 307.1963 557.7362
+  306.8401 557.7944 307.0182 557.7688 307.1963 557.7362
 endline
 
-line wall 
+line wall
   307.1963 557.7362
   307.5236 557.6763 307.8506 557.5933 308.1727 557.4897
 endline
 
-line wall 
+line wall
   308.1726 557.4897
   308.4004 557.4164 308.6256 557.3329 308.8466 557.24
   310.1782 556.6803 311.3552 555.7817 312.0 554.75
   313.25 552.75 316.5 546.75 318.25 544.75
 endline
 
-line wall -clip off -outline none -subtype blocks
+line wall -subtype blocks -clip off -outline none
   272.0 516.75
   272.0 516.75 284.0 538.0 284.5 540.25
   285.0 542.5 283.5 545.75 286.25 548.0
@@ -423,15 +450,28 @@ line wall -clip off -outline none -subtype blocks
 endline
 
 point 575.0 343.75 station -name 17
+
 point 577.75 342.0 station -name 16
+
 point 585.0 334.75 station -name 15
+
 point 605.0 289.5 station -name 14
+
 point 618.0 269.25 station -name 13
+
 point 642.0 253.75 station -name 12
+
 endscrap
 
 
+
 scrap prima1-3e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+
+line wall -subtype invisible
+  1389.2044 370.5393
+  1390.4955 372.9377 1397.6183 386.5683 1398.9772 389.296
+  smooth off
+endline
 
 line wall -close on -outline in
   1257.8394 462.9452
@@ -536,9 +576,13 @@ line wall -id p_e3_l2 -subtype blocks
   1376.9552 334.8889
   1376.9552 334.8889 1384.5935 345.4497 1383.5329 347.571
   1382.4722 349.6924 1384.0909 358.6126 1383.7374 361.441
-  1383.3838 364.2694 1384.5749 368.9564 1388.8175 373.9061
-  1393.0601 378.8559 1392.9067 379.0258 1398.21 382.5613
-  1403.5133 386.0969 1390.1986 395.1796 1401.5123 399.4221
+  1383.3838 364.2694 1385.5257 369.7889 1388.3726 370.4538
+  smooth off
+endline
+
+line wall -id p_e3_l5 -subtype blocks
+  1399.0758 389.2643
+  1396.3861 392.4293 1397.0449 397.2862 1401.5123 399.4221
 endline
 
 line wall -id p_e3_l1 -subtype blocks
@@ -575,18 +619,24 @@ line wall -id p_e3_l4
 endline
 
 point 1168.12 480.116 station -name 12
+
 point 1317.49 452.635 station -name 11
+
 point 1395.41 436.792 station -name 10
+
 point 1304.88 370.999 station -name 9
+
 point 1305.04 340.446 station -name 8
+
 endscrap
+
 
 
 scrap prima1-2e -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m]
 
 line wall:blocks -id p_e2_l1
   720.4509 225.393
-  720.4671 225.2793 720.5152 224.7325 720.5669 224.1188
+  720.4672 225.2793 720.5152 224.7325 720.5669 224.1188
   720.6439 223.2048 720.7289 222.1424 720.7289 222.1424
   720.7289 222.1424 720.3079 221.5214 725.3079 220.5214
   730.3079 219.5214 737.0 214.0 737.0 214.0
@@ -602,7 +652,7 @@ line wall -subtype invisible
   779.25 150.0
 endline
 
-line wall 
+line wall
   777.0622 192.7796
   777.0622 192.7796 778.2624 192.7224 778.491 192.7224
   778.7196 192.7224 780.1485 192.7224 780.1485 192.7224
@@ -621,6 +671,7 @@ line wall
 endline
 
 point 742.25 222.25 dig -align tr -scale xs
+
 line wall -id p_e2_l2
   774.0 217.25
   772.75 216.25 753.5 221.5 750.5 220.0
@@ -655,7 +706,7 @@ line wall -subtype blocks
   778.25 165.75 779.25 164.5 795.0 165.75
 endline
 
-line wall 
+line wall
   737.0 214.0
   737.75 208.75 738.0 204.0 738.0 200.75
   738.0 197.5 734.25 191.0 737.0 189.0
@@ -667,7 +718,7 @@ line wall
   728.75 152.5
 endline
 
-line wall -close off -outline in
+line wall -outline in
   760.75 202.25
   759.0 199.5 757.5 195.5 757.25 196.75
   757.0 198.0 755.0 201.0 754.5 202.25
@@ -676,7 +727,7 @@ line wall -close off -outline in
   760.25 214.25 771.25 210.75 760.75 202.25
 endline
 
-line wall 
+line wall
   795.5 170.0
   795.5 170.0 791.0 169.25 789.5 169.25
   788.0 169.25 787.0 169.75 784.75 169.5
@@ -695,16 +746,24 @@ line wall
 endline
 
 point 723.75 227.25 station -name 7
+
 point 723.75 224.0 station -name 6
+
 point 731.0 221.0 station -name 5
+
 point 741.25 217.5 station -name 4
+
 point 750.0 165.25 station -name 3
+
 point 778.5 165.5 station -name 2
+
 point 793.5 168.5 station -name 1
+
 line label -scale s -text "Lost and Found Junction"
   704.0 139.5
   704.0 139.5 741.25 134.0 792.5 140.5
 endline
 
 endscrap
+
 

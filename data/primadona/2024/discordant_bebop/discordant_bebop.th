@@ -60,8 +60,9 @@ survey discordant_bebop -title "discordant bebop"
     5 . 4.01 20.4 6.5
     5 . 4.03 20.5 6.3
     5 . 5.44 20.2 6.5
-    extend right
+    extend left
     5 6 4.23 28.4 4.4
+    extend left
     6 7 2.63 90.1 10.8
     # extend auto
     7 . 3.48 286.1 -6.6
@@ -78,7 +79,7 @@ survey discordant_bebop -title "discordant bebop"
     7 . 1.25 82.3 21.6
     7 . 0.72 60.0 -14.0
     7 . 0.72 36.8 38.2
-    extend right
+    extend left
     7 8 3.88 36.6 7.6
     8 9 3.04 346.3 10.0
     9 10 2.72 21.3 7.9
@@ -138,8 +139,9 @@ survey discordant_bebop -title "discordant bebop"
     16 . 4.69 245.2 -24.4
     extend left
     16 17 4.19 234.6 -24.3
-    extend right
-    17 13 1.29 336.5 25.2
+    extend left 
+    17 13 1.29 336.5 25.2 
+    extend left
     13 19 4.46 263.5 76.1
     # extend auto
     19 . 3.28 63.2 -60.9
@@ -154,7 +156,7 @@ survey discordant_bebop -title "discordant bebop"
     19 . 4.46 260.8 10.1
     19 . 3.97 260.8 10.3
     19 . 4.38 261.4 11.1
-    extend right
+    extend left
     19 20 3.98 260.7 10.4
     # extend auto
     20 . 2.37 63.3 1.6
@@ -168,11 +170,11 @@ survey discordant_bebop -title "discordant bebop"
     20 . 2.32 100.1 -8.7
     20 . 0.51 286.3 11.9
     20 . 3.29 342.6 87.4
-    extend right
-    20 21 3.09 359.0 81.6
     extend left
-    21 22 2.23 216.6 9.4
+    20 21 3.09 359.0 81.6
     extend right
+    21 22 2.23 216.6 9.4
+    extend left
     22 23 1.06 6.0 35.0
   endcenterline
 

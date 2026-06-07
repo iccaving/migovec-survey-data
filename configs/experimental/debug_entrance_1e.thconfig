@@ -1,0 +1,33 @@
+encoding  utf-8
+source "../../data/system_migovec.th"
+
+input "../../layouts/base-e.thl"
+
+layout debug-e
+	copy base-e
+	scale 1 500
+	symbol-hide group all
+	symbol-show line wall
+	symbol-show line survey
+	symbol-show point station
+	symbol-show point station-name
+
+	code metapost
+		def l_survey_cave (expr P) =
+			pickup pencircle scaled 0.4bp;
+			draw P withcolor black;
+		enddef;
+	endcode
+endlayout
+
+source
+	map m-debug-e -projection extended
+		m-all-e@M2.m2m16m18.system_migovec
+		m-all-e@M18.m2m16m18.system_migovec
+		m-all-e@m2_2012_resurvey.M2.m2m16m18.system_migovec
+	endmap
+endsource
+
+select m-debug-e
+
+export map -projection extended -layout debug-e -layout-debug station-names -o ../../outputs/debug_entrance_1e.pdf

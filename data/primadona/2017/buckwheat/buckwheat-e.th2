@@ -1,11 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1157.000000 1038.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1157.0 1038.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap buckwheat-1e -projection extended -scale [-117.0 -287.0 465.0 -287.0 0.0 0.0 14.7828 0.0 m]
 
-point 712.6982 679.3339 u:connection_marker -align tr -attr code 6 -attr text "to What a Coincidence!" -id whatacoincidence
 line rock-border -close on
   860.5689 85.7861
   860.5689 85.7861 839.1105 86.2332 836.4282 81.7627
@@ -24,6 +24,7 @@ line rock-border -close on
   774.2885 80.4215 759.0888 85.7861 756.8536 86.2332
   754.6183 86.6802 749.7008 75.057 747.9126 71.9276
   746.1244 68.7983 764.6582 50.7421 764.6582 50.7421
+  816.7581 23.1993
 endline
 
 line rock-border -close on
@@ -35,9 +36,11 @@ line rock-border -close on
   529.3057 93.833 528.4116 102.774 525.2823 88.0214
   522.1529 73.2688 523.4941 65.6689 531.0939 65.6689
   538.6938 65.6689 566.8578 75.504 566.8578 75.504
+  605.304 92.0448
 endline
 
 point 991.2615 123.9841 map-connection -scale s
+
 line wall -subtype invisible
   832.0226 13.1786
   904.3231 5.1333 908.453 129.8718 923.4968 160.9461
@@ -49,11 +52,11 @@ line wall -subtype invisible
 endline
 
 line wall -subtype invisible
-  727.7567 620.4592
+  747.7248 602.9115
   693.5459 737.0869
 endline
 
-line wall 
+line wall -id e1_l7_buck
   923.4968 160.9461
   911.0565 170.2764 849.0495 195.9345 849.0495 195.9345
   790.7974 280.7531
@@ -61,7 +64,7 @@ line wall
   748.6162 357.991 733.9768 432.2999 733.9768 443.1852
   733.9768 454.0704 735.5319 492.9463 735.5319 510.0517
   735.5319 527.1571 713.7614 584.6934 713.7614 584.6934
-  727.7567 620.4592
+  745.3044 602.9115
 endline
 
 line wall -subtype blocks
@@ -102,14 +105,23 @@ line rock-border -close on
   699.7661 122.8478
   793.0682 96.4122
   817.9488 174.164
+  761.9675 231.7003
 endline
 
 point 328.113 709.096 station -name 7
+
 point 453.293 667.888 station -name 6
+
 point 505.387 590.914 station -name 5
+
 point 503.832 63.7565 station -name 4
+
 point 615.017 140.731 station -name 3
+
 point 616.572 282.239 station -name 2
+
 point 725.424 285.349 station -name 1
+
 endscrap
+
 

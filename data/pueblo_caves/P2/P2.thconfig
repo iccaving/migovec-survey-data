@@ -1,0 +1,15 @@
+encoding  utf-8
+
+source "P2.th"
+
+input "../../../../../layouts/detailed-p.thl"
+
+select m-all-p@P2 -map-level 0
+
+layout plan
+	copy detailed
+	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin"
+endlayout
+
+language en
+export map -projection plan -o ../../../../../outputs/detailed.pdf -layout plan -layout-debug station-names

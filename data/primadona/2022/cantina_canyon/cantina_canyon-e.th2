@@ -1,10 +1,15 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 200.000000 200.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 200.0 200.0
 ##XTHERION## xth_me_area_zoom_to 100
+
+
 
 scrap cantina_canyon-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 309.296 14.7216 label -align r -attr level 1 -scale l -text "Cantina Canyon"
+point 92.9424 43.3419 water-flow -orientation 202.148
+
+point 199.6527 -4.5314 label -align r -attr level 1 -scale l -text "Cantina Canyon"
+
 line rock-border -close on
   41.6841 -25.2439
   37.7433 -39.4007
@@ -19,14 +24,9 @@ line rock-border -close on
   73.1521 -24.3831
 endline
 
-line water-flow 
-  102.1658 88.489
-  93.665 22.573 83.9791 4.8417 83.9791 4.8417
-endline
-
-line wall 
-  -46.9006 -109.9695
-  -46.9006 -109.9695 -37.2494 -103.9375 -38.4558 -99.7152
+line wall
+  -46.2823 -107.7848
+  -46.2823 -107.7848 -37.2494 -103.9375 -38.4558 -99.7152
   -39.6622 -95.4928 -40.2654 -71.9681 -40.2654 -71.9681
   -33.6303 -61.1106
   -33.6303 -61.1106 -29.4079 -56.8882 -22.7727 -57.4914
@@ -50,7 +50,7 @@ line wall
   134.1768 123.4757 145.9576 121.7079 145.9576 121.7079
 endline
 
-line wall 
+line wall
   144.9204 135.0375
   144.9204 135.0375 123.5085 141.9053 116.4267 140.3899
   109.3449 138.8744 106.4553 141.1013 100.6489 136.5826
@@ -62,20 +62,34 @@ line wall
   -11.2427 26.792 -19.4223 21.8193 -24.2479 15.7874
   -29.0734 9.7554 -34.5092 -6.2025 -39.3348 -12.8377
   -44.1604 -19.4729 -39.2787 -37.0358 -55.1384 -48.0544
-  -68.4363 -57.2931 -85.7563 -67.3735 -91.33 -71.22
-  -95.5524 -77.2519 -99.9507 -81.1288 -99.9507 -81.1288
+  -68.4363 -57.2931 -87.4464 -65.6721 -91.33 -71.22
+  -93.7303 -74.6489 -97.2754 -75.4625 -99.4435 -76.1132
+  -101.0893 -76.6071 -101.9911 -77.0892 -101.9911 -77.0892
+  smooth off
 endline
 
 point -56.08 -111.14 station -name 0
+
 point -41.75 -55.71 station -name 1
+
 point 15.63 -41.38 station -name 2
+
 point 15.63 -39.65 station -name 3
+
 point 29.59 -37.2 station -name 4
+
 point 62.76 -29.65 station -name 5
+
 point 85.42 -28.7 station -name 6
+
 point 115.89 128.15 station -name 7
+
 point 113.78 128.15 station -name 7
+
 point 128.27 128.15 station -name 8
+
 point 139.41 125.63 station -name 9
+
 endscrap
+
 

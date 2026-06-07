@@ -20,6 +20,7 @@ data normal from to length compass clino
     12	monatip		50	58	+13			
     flags not surface
 
-    extend ignore 3 2
+    extend ignore 3
+    extend ignore monatip
 endcentreline
 endsurvey

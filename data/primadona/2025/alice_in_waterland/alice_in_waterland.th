@@ -3,19 +3,27 @@
 survey alice_in_waterland -title "Alice in Waterland"
   # Prima: below Down the Rabbit Hole 
 
-  # input "alice_in_waterland-1p.th2"
-  # input "alice_in_waterland-1s.th2"
+ input "alice_in_waterland-1p.th2"
+ input "alice_in_waterland-e.th2"
 
-  # map m1p -projection plan
-  #   alice_in_waterland-1p
-  # endmap
-  # map m1s -projection extended
-  #   alice_in_waterland-1s
-  # endmap
+   map m-all-p -projection plan
+    alice_in_waterland-1p
+   endmap
+   map m-all-e -projection extended
+     alice_in_waterland-1e
+   endmap
 
   centerline
     date 2025.07.08 
-    # team at, dkp, jbs 
+    # team at, dkp, jbs
+    team "Ana Teck" dog
+    team "David Kirkpatrick" instruments
+    team "Josie Skirrow" instruments
+
+    explo-date 2025.07.08
+    explo-team "Ana Teck"
+    explo-team "David Kirkpatrick"
+    explo-team "Josie Skirrow"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

@@ -1,20 +1,44 @@
 # 2025.07.21 created by TopoDroid v 6.2.44
 
-survey 2_loompa_2_land -title "2 loompa 2 land"
+survey 2_loompa_2_land -title "2 Loompa 2 Land"
   # continuation of loompa land, ending in large undescended pitch 
 
-  # input "2_loompa_2_land-2_loompa_2_landp.th2"
-  # input "2_loompa_2_land-2_loompa_2_lands.th2"
+  #station 0 is top of undescended pitch
+  #~5m rope and some tape left at pitchhead
+  #stn 13 = pss
+  #stn 18 = stn 4
+  #lead at PSS stn 20, rifty phreatic leads upwards to a junction, draughty
+  #stn 24 PSS for lead
+  #stn 28 pss
+  #stn 29 of 2 loompa 2 land = stn 0 of loompaland
 
-  # map m2_loompa_2_landp -projection plan
-  #   2_loompa_2_land-2_loompa_2_landp
-  # endmap
-  # map m2_loompa_2_lands -projection extended
-  #   2_loompa_2_land-2_loompa_2_lands
-  # endmap
+  input "2_loompa_2_land-p.th2"
+  input "2_loompa_2_land-e.th2"
+
+  map m-all-p -projection plan
+    2_loompa_2_land-1p
+  endmap
+
+  map m-all-e -projection extended
+    2_loompa_2_land-1e
+    2_loompa_2_land-2e
+    2_loompa_2_land-3e
+  endmap
+
+  join 2_loompa_2_land-1e 2_loompa_2_land-2e
+  join 2_loompa_2_land-2e 2_loompa_2_land-3e
+  join 2_loompa_2_land-1e 2_loompa_2_land-3e
 
   centerline
-    date 2025.07.06 
+    date 2025.07.06
+    team "Chris Hayes" dog
+    team "Rhys Tyers" dog
+    team "Matti Mitropoulos" dog
+    
+    explo-date 2025.07.06
+    explo-team "Chris Hayes"
+    explo-team "Rhys Tyers"
+    explo-team "Matti Mitropoulos"
     # team ch, rt, mm 
     units length meters
     units compass clino degrees
@@ -55,13 +79,13 @@ survey 2_loompa_2_land -title "2 loompa 2 land"
     4 . 5.08 23.6 24.6
     4 . 6.01 263.6 -76.3
     4 . 1.77 166.8 -19.5
-    extend right
+    extend left
     4 5 2.49 145.0 -7.4
     # extend auto
     5 . 1.24 17.1 3.1
     5 . 1.62 56.1 -84.3
     5 . 0.95 167.7 -9.3
-    extend right
+    extend left
     5 6 3.13 98.7 5.7
     # extend auto
     6 . 0.82 216.4 87.6
@@ -70,13 +94,13 @@ survey 2_loompa_2_land -title "2 loompa 2 land"
     6 . 7.41 290.1 -8.0
     6 . 3.64 273.8 -6.9
     6 . 2.60 306.2 2.5
-    extend right
+    extend left
     6 7 3.14 173.9 5.0
     # extend auto
     7 . 1.52 64.9 10.6
     7 . 0.53 21.2 -53.5
     7 . 0.70 348.3 77.7
-    extend right
+    extend left
     7 8 2.95 100.4 20.9
     # extend auto
     8 . 0.60 172.2 -86.6
@@ -85,7 +109,7 @@ survey 2_loompa_2_land -title "2 loompa 2 land"
     8 . 0.45 48.2 -40.8
     8 . 3.05 165.2 -17.1
     8 . 3.46 165.2 -17.2
-    extend right
+    extend left
     8 9 3.05 164.9 -17.2
     # extend auto
     9 . 0.62 266.4 7.7
@@ -141,13 +165,13 @@ survey 2_loompa_2_land -title "2 loompa 2 land"
     14 . 7.35 143.2 10.8
     14 . 2.40 43.4 31.9
     14 . 2.64 331.8 10.5
-    extend left
+    extend right
     14 15 7.62 295.6 -22.9
     # extend auto
     15 . 1.32 216.8 0.6
     15 . 1.21 269.5 73.9
     15 . 2.49 11.6 30.3
-    extend left
+    extend right
     15 16 1.92 304.2 -20.6
     # extend auto
     16 . 0.33 251.1 72.1
@@ -160,8 +184,8 @@ survey 2_loompa_2_land -title "2 loompa 2 land"
     17 . 1.00 150.7 -36.3
     17 . 1.29 159.9 34.9
     extend left
-    17 18 2.65 190.2 -11.5
-    extend right
+    17 4 2.65 190.2 -11.5 #As per comment stn 18=stn 4
+    extend left
     14 19 4.60 112.3 44.1
     # extend auto
     19 . 3.99 142.6 49.1

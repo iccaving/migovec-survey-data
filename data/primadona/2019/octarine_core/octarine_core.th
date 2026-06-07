@@ -327,6 +327,7 @@ survey octarine_core -title "Octarine Core"
 	
 	map  m-all-e -projection extended
 		octarine_core-1s
+		octarine_core-2s
 	endmap
-	
+	join octarine_core-1s octarine_core-2s
 endsurvey

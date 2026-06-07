@@ -114,11 +114,13 @@ First discovered during the blowing holes recce of 1995 [HM3, page 61, page 104]
 - Spotted in 2022 from red paint marking
   - No known historical information
   - Red paint can just be seen in bottom of image
-  - Appears to be a 10m drop blocked by boulders
+  - Appears to be a 10m drop blocked by boulders from the sound
   - Digging attempted without tools but little progress made
-  - Requires long chisel for entrance widening and oversuit to protect (squeeze not passed due to this)
+  - Requires entrance widening.
   - Entrance may need traverse line for protection through squeeze
-  - Definitely worth returning with tools
+  - Returned in 2025 use of crowbar, chisel and slide hammer. Needs more slide hammer use.
+  - Tight squeeze can be seen opening up to side of shaft with entrance from surface blocked by choss.
+
 
 ### B20
 

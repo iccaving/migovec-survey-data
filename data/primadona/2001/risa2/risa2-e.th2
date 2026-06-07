@@ -1,13 +1,62 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 3571.000000 4948.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 3571.0 4948.0
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {136.000000 1 1.0} {4804.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2001/risa2/risa2_extend.gif" 0 {}
+##XTHERION## xth_me_image_insert {136.0 1 1.0} {4804.0 {}} ../../../../../../../../AppData/OneDrive/Documents/GitHub/migovec-survey-data/data/OneDrive/Documents/GitHub/migovec-survey-data/data/OneDrive/Documents/GitHub/migovec-survey-data/data/OneDrive/Documents/GitHub/migovec-survey-data/data/primadona/2001/risa2/risa2_extend.gif 0 {}
+
+
 
 scrap risa2-1e -projection extended -scale [1366.0 -3966.0 2500.0 -3976.0 0.0 0.0 25 0.0 m]
 
-point 3091.6406 2729.6104 u:connection_marker -align bl -attr code 0 -id sejnasoba -attr text "to Galerija"
-point 1556.0 2860.0 water-flow -orientation 184.9000001287384
-line rock-border -clip off -close on
+line wall -close on -outline in
+  3190.1347 2954.8868
+  3201.6722 2949.118 3234.8429 2915.2264 3233.4006 2902.9678
+  3231.9585 2890.7091 3226.1895 2854.6542 3226.1895 2843.8378
+  3226.1895 2833.0213 3193.019 2840.9534 3169.223 2840.2323
+  3145.4268 2839.5112 3126.6782 2822.2048 3116.5827 2839.5112
+  3106.4876 2856.8175 3085.5757 2885.6614 3089.181 2898.6412
+  3092.7867 2911.6209 3099.9975 2939.0226 3114.4197 2945.5125
+  3128.8415 2952.0024 3190.1347 2954.8868 3190.1347 2954.8868
+endline
+
+line rock-border -close on
+  3112.9773 2719.088
+  3080.5279 2683.0331
+  3080.5279 2683.0331 3095.6711 2679.4276 3100.7185 2680.1487
+  3105.7663 2680.8698 3136.0523 2693.8495 3136.0523 2693.8495
+  3112.9773 2719.088
+endline
+
+line rock-border -close on
+  3193.7404 2838.069
+  3185.8083 2828.6947 3127.3992 2778.2179 3127.3992 2778.2179
+  3127.3992 2778.2179 3133.1679 2707.5504 3137.4947 2710.4348
+  3141.8214 2713.3192 3173.5495 2752.9795 3180.7605 2763.0749
+  3187.9713 2773.1703 3205.2779 2820.7627 3205.2779 2820.7627
+  3193.7404 2838.069
+endline
+
+line wall
+  2960.8258 2618.8554
+  2960.8258 2618.8554 3056.7316 2640.4883 3077.6436 2654.1892
+  3098.5555 2667.89 3166.3387 2705.3871 3177.1549 2724.1356
+  3187.9713 2742.8842 3198.0668 2781.1023 3206.7199 2788.3133
+  3215.373 2795.5243 3253.5912 2774.6124 3278.8298 2773.8913
+endline
+
+line wall
+  2901.6958 2760.1905
+  2908.9068 2761.6327 2982.4587 2785.4289 3001.2072 2789.7555
+  3019.9558 2794.0821 3053.1262 2799.8508 3061.7793 2794.8032
+  3070.4325 2789.7555 3066.8271 2747.2108 3058.174 2745.0475
+  3049.5209 2742.8842 2994.7174 2701.7816 2973.8055 2700.3394
+  2952.8937 2698.8972 2916.8389 2677.9854 2916.8389 2677.9854
+endline
+
+point 2945.9789 2654.6163 u:connection_marker -id sejnasoba -align bl -attr code 0 -attr text "to Povezava"
+
+point 1556.0 2860.0 water-flow -orientation 184.9
+
+line rock-border -close on -clip off
   1760.0 2720.0
   1722.0 2696.0
   1746.0 2654.0
@@ -15,7 +64,7 @@ line rock-border -clip off -close on
   1760.0 2720.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   1686.0 2726.0
   1648.0 2710.0
   1638.0 2656.0
@@ -23,7 +72,7 @@ line rock-border -clip off -close on
   1686.0 2726.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   1594.0 2720.0
   1586.0 2718.0 1540.0 2690.0 1540.0 2690.0
   1540.0 2690.0 1564.0 2656.0 1576.0 2652.0
@@ -31,7 +80,7 @@ line rock-border -clip off -close on
   1638.0 2656.0 1602.0 2722.0 1594.0 2720.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   1430.0 2840.0
   1342.0 2858.0
   1310.0 2798.0
@@ -39,7 +88,7 @@ line rock-border -clip off -close on
   1430.0 2840.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   1270.0 2876.0
   1232.0 2854.0
   1230.0 2830.0
@@ -48,7 +97,7 @@ line rock-border -clip off -close on
   1290.0 2854.0 1270.0 2876.0 1270.0 2876.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   1178.0 2898.0
   1128.0 2866.0
   1204.0 2840.0
@@ -56,7 +105,7 @@ line rock-border -clip off -close on
   1178.0 2898.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   974.0 2994.0
   946.0 2948.0
   1120.0 2880.0
@@ -64,7 +113,7 @@ line rock-border -clip off -close on
   1124.0 2924.0 974.0 2994.0 974.0 2994.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   710.0 3188.0
   640.0 3188.0
   626.0 3108.0
@@ -72,7 +121,7 @@ line rock-border -clip off -close on
   712.0 3110.0 710.0 3188.0 710.0 3188.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   516.0 3098.0
   500.0 3068.0
   574.0 3050.0
@@ -80,7 +129,7 @@ line rock-border -clip off -close on
   588.0 3092.0 516.0 3098.0 516.0 3098.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   568.0 3148.0
   538.0 3124.0
   568.0 3106.0
@@ -88,7 +137,7 @@ line rock-border -clip off -close on
   568.0 3148.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   834.0 3066.0
   826.0 3068.0 782.0 3072.0 782.0 3072.0
   766.0 3028.0
@@ -96,7 +145,7 @@ line rock-border -clip off -close on
   828.0 3038.0 842.0 3064.0 834.0 3066.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   868.0 3050.0
   798.0 3012.0
   858.0 2968.0
@@ -104,7 +153,7 @@ line rock-border -clip off -close on
   868.0 3050.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   736.0 3062.0
   676.0 3012.0
   750.0 3010.0
@@ -112,7 +161,7 @@ line rock-border -clip off -close on
   736.0 3062.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   770.0 3304.0
   766.0 3240.0
   820.0 3248.0
@@ -120,7 +169,7 @@ line rock-border -clip off -close on
   770.0 3304.0
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   696.0 3256.0
   668.0 3204.0
   728.0 3212.0
@@ -152,7 +201,9 @@ line wall
 endline
 
 point 2644.0 2904.0 dig -align t -scale xs
+
 point 2004.0 2916.0 dig -align t -scale xs
+
 line wall
   2216.0 3128.0
   2220.0 3112.0 2192.0 3012.0 2184.0 2992.0
@@ -226,8 +277,8 @@ line rock-border -close on
 endline
 
 line wall
-  3232.0 3012.0
-  3212.0 3016.0 3136.0 3016.0 3084.0 2996.0
+  3326.3313 3042.3586
+  3306.3313 3046.3585 3136.0 3016.0 3084.0 2996.0
   3032.0 2976.0 2996.0 2972.0 2960.0 2952.0
   2924.0 2932.0 2880.0 2896.0 2880.0 2896.0
 endline
@@ -236,13 +287,6 @@ line rock-border
   3020.0 2846.0
   3086.0 2832.0
   3092.0 2860.0
-endline
-
-line wall -subtype blocks
-  2900.0 2760.0
-  2900.0 2760.0 2892.0 2764.0 2936.0 2784.0
-  2980.0 2804.0 2996.0 2828.0 3056.0 2816.0
-  3116.0 2804.0 3172.0 2784.0 3192.0 2784.0
 endline
 
 line wall -subtype blocks
@@ -283,15 +327,29 @@ line wall -subtype blocks
 endline
 
 point 3160.0 2868.0 station -name 12
+
 point 2940.0 2884.0 station -name 11
+
 point 2712.0 2816.0 station -name 10
+
 point 2472.0 2820.0 station -name 9
+
 point 2248.0 2888.0 station -name 8
+
 point 1952.0 2796.0 station -name 7
+
 point 1700.0 2832.0 station -name 6
+
 point 1408.0 2852.0 station -name 5
+
 point 1088.0 2948.0 station -name 4
+
 point 876.0 3068.0 station -name 3
+
 point 744.0 3084.0 station -name 2
+
 point 452.0 2932.0 station -name 1
+
 endscrap
+
+

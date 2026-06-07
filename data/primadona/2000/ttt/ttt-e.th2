@@ -1,22 +1,66 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 852.000000 1108.750000
+##XTHERION## xth_me_area_adjust 0.0 0.0 852.0 1108.75
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {129.000000 1 1.0} {970.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migresurvey/migresurvey/migovecsurveydata/primadona/2000/ttt/ttt_extend.gif" 0 {}
+##XTHERION## xth_me_image_insert {129.0 1 1.0} {970.0 {}} ../../../../../../../../AppData/OneDrive/Documents/GitHub/migovec-survey-data/data/OneDrive/Documents/GitHub/migovec-survey-data/data/OneDrive/Documents/GitHub/migovec-survey-data/AchilleTalon/Documents/GitHub/migresurvey/migresurvey/migovecsurveydata/primadona/2000/ttt/ttt_extend.gif 0 {}
+
+
 
 scrap ttt-1e -projection extended -scale [247.0 -713.0 557.0 -712.0 0.0 0.0 14 0.0 m]
 
+line wall -close on -outline in
+  511.6306 662.3728
+  512.1914 662.2201 512.666 662.6651 513.6124 662.4588
+  smooth off
+  514.2243 662.5399 514.7783 662.87 515.3527 663.0834
+  smooth off
+  515.9885 663.5104 516.2726 664.276 516.6195 664.9289
+  smooth off
+  517.0445 665.7657 517.1626 666.7025 517.1802 667.6288
+  smooth off
+  517.2742 668.9078 517.081 670.1875 516.8674 671.4455
+  smooth off
+  516.6764 672.2554 516.4469 673.2477 515.6069 673.6161
+  smooth off
+  514.4226 673.8858 513.255 673.4363 512.132 673.1111
+  smooth off
+  511.3645 673.0467 511.1629 672.1823 511.0743 671.5509
+  smooth off
+  510.9218 670.5207 511.0387 669.4799 511.124 668.4515
+  smooth off
+  511.0808 667.5794 510.8478 666.7252 510.5884 665.8965
+  smooth off
+  510.1707 665.4314 509.6107 665.046 509.4421 664.3799
+  smooth off
+  509.6761 663.7426 508.5973 662.8069 511.6306 662.3728
+  smooth off
+endline
+
+line wall -close on -outline in
+  584.2904 634.2968
+  583.9485 634.8115 583.9993 636.3385 584.1213 636.9997
+  584.2432 637.6609 584.6992 638.306 585.1017 638.602
+  585.5043 638.898 586.2883 638.6685 586.6308 638.5252
+  586.9733 638.3818 587.9097 638.0496 588.0016 637.8254
+  588.0935 637.6011 587.8838 637.4065 587.652 636.8531
+  587.4204 636.2998 587.1857 635.2214 586.9828 634.8108
+  586.78 634.4003 586.3173 633.6649 585.9307 633.7029
+  585.544 633.7409 584.2904 634.2968 584.2904 634.2968
+  smooth off
+endline
+
 line wall -subtype invisible
-  577.25 661.5
-  568.75 662.0
+  577.25 659.6418
+  569.4771 660.1418
 endline
 
 line wall -subtype invisible
   522.9471 681.0572
-  506.8016 681.0552
+  506.8016 681.0556
 endline
 
 point 733.49 605.76 label -align r -attr level 2 -scale l -text TTT
-line wall:invisible 
+
+line wall:invisible
   502.25 653.75
   514.2562 650.0131
 endline
@@ -31,7 +75,7 @@ line wall -subtype invisible
   679.5894 676.2272
 endline
 
-line wall 
+line wall
   718.0217 570.2311
   718.0217 570.2311 717.4344 580.0677 717.4344 580.655
   717.4344 581.2422 718.1685 592.8406 718.1685 596.511
@@ -42,8 +86,8 @@ endline
 line wall -subtype presumed
   718.9025 632.0404
   719.897 644.3596
-  720.0187 660.7317
-  721.2792 675.9544
+  720.0186 660.7317
+  721.2791 675.9544
 endline
 
 line wall -subtype presumed
@@ -52,7 +96,7 @@ line wall -subtype presumed
   675.2002 645.3852
 endline
 
-line wall 
+line wall
   502.5 670.75
   499.5 671.25 499.25 671.0 497.25 672.75
 endline
@@ -66,24 +110,25 @@ endline
 
 line wall -id ttt_e1_l1
   514.2562 650.0131
-  514.2991 651.4169 514.5384 652.9606 515.3869 653.3522
-  517.6331 653.3941 524.0195 650.1151 527.2695 650.1151
+  514.2992 651.4169 514.5384 652.9606 515.3869 653.3522
+  517.6331 653.394 524.0195 650.1151 527.2695 650.1151
 endline
 
-line wall 
+line wall
   506.9248 681.0554
   506.9248 681.0554 507.591 678.8856 506.8409 676.1356
   506.5315 674.999 507.69 671.8349 507.4405 671.1734
-  506.529 668.7561 502.5 670.75 502.5 670.75
+  506.529 668.7561 502.5001 670.75 502.5001 670.75
 endline
 
-line wall 
+line wall
   520.75 668.0
   518.3546 668.0557 521.9605 672.3157 522.3299 674.5218
   522.6913 676.6799 522.1699 674.6455 522.9471 681.0572
 endline
 
-point 502.0 618.25 label -align t -attr level 2 -scale l -text "Manđare"
+point 502.0 618.25 label -align t -attr level 2 -scale l -text "<lang:sl>Manđare<lang:en>Mandare"
+
 line wall -close on -outline in
   651.5 612.0
   658.25 611.5
@@ -106,9 +151,9 @@ line wall -close on -outline in
   661.25 600.25 663.25 600.25 665.75 599.0
 endline
 
-line wall 
-  568.75 662.0
-  568.75 662.0 569.25 658.5 565.75 656.75
+line wall
+  569.154 659.2531
+  569.154 659.2531 569.2501 658.5 565.75 656.75
   562.25 655.0 559.0 655.75 556.5 657.0
   554.0 658.25 552.25 660.25 547.25 661.0
   542.25 661.75 539.75 662.0 538.0 662.75
@@ -130,14 +175,14 @@ line wall -id l2
   589.75 642.25 584.25 642.0 583.0 642.5
   581.75 643.0 578.75 645.25 578.25 648.25
   577.75 651.25 577.0 654.5 577.25 655.5
-  577.5 656.5 577.25 661.5 577.25 661.5
+  577.5 656.5 577.4115 658.5915 577.4115 658.5915
 endline
 
 line wall -outline in
   534.4204 657.2082
   534.5237 654.8438 532.3935 655.2298 531.0786 654.9445
   527.7123 654.2141 524.3221 656.3763 520.8903 656.6731
-  519.5572 656.7884 517.9367 655.8753 516.8762 656.6911
+  519.5572 656.7883 517.9367 655.8753 516.8762 656.6911
   515.975 657.3844 515.3247 659.0598 515.9868 659.984
   516.6579 660.9209 518.2871 660.2812 519.4369 660.2043
   524.5189 659.8643 533.1704 657.4582 534.4204 657.2082
@@ -151,10 +196,10 @@ line wall -outline in
   554.0311 652.2494 554.6352 652.2291 555.1706 651.8329
   556.0115 651.2105 556.5307 650.1939 554.2394 650.1939
   550.4894 650.1939 547.609 650.6685 544.609 650.6685
-  541.609 650.6685 544.605 652.1207 539.8549 652.8707
+  541.609 650.6685 544.6057 652.1207 539.8549 652.8707
 endline
 
-line wall 
+line wall
   527.2695 650.1151
   530.5195 650.1151 535.9121 648.6801 537.1621 648.6801
   538.4121 648.6801 542.2087 646.661 544.4587 646.661
@@ -185,23 +230,47 @@ line wall
 endline
 
 point 509.75 665.25 station -name 14
+
 point 522.25 662.25 station -name 13
+
 point 545.0 658.5 station -name 12
+
 point 561.0 651.0 station -name 11
+
 point 562.25 636.25 station -name 10
+
 point 578.75 638.25 station -name 9
+
 point 588.5 638.0 station -name 8
+
 point 606.75 632.0 station -name 7
+
 point 613.0 624.25 station -name 6
+
 point 625.0 615.5 station -name 5
+
 point 640.0 615.0 station -name 4
+
 point 658.5 614.25 station -name 3
+
 point 678.25 593.75 station -name 2
+
 point 678.0 505.0 station -name 1
+
 endscrap
 
 
+
 scrap ttt-2e -projection extended -scale [247.0 -713.0 557.0 -712.0 0.0 0.0 14 0.0 m]
+
+line wall -close on -outline in
+  427.6069 672.631
+  427.6069 672.631 428.5495 673.9735 428.578 674.3448
+  428.6066 674.7162 427.2926 675.516 427.0356 675.6017
+  426.7785 675.6873 425.0361 675.6873 424.9504 675.3732
+  424.8647 675.0589 425.036 674.0878 425.2932 673.8307
+  425.5502 673.5736 427.6069 672.631 427.6069 672.631
+endline
 
 line wall -subtype invisible
   200.0 794.0
@@ -213,22 +282,22 @@ line wall -subtype invisible
   173.0 767.5
 endline
 
-line wall:invisible 
+line wall:invisible
   484.0 698.0
   461.25 698.5
 endline
 
-line wall:invisible 
+line wall:invisible
   458.759 678.5803
   459.0653 675.2202
 endline
 
-line wall:invisible 
+line wall:invisible
   343.5764 668.134
   377.0677 671.8899
 endline
 
-line wall:invisible 
+line wall:invisible
   357.5 729.25
   333.75 740.75
 endline
@@ -244,7 +313,7 @@ line rock-border -close on
   474.067 663.2386
 endline
 
-line wall 
+line wall
   497.25 672.75
   495.25 674.5 490.5 676.0 490.5 676.0
   490.5 676.0 485.25 675.25 485.25 677.5
@@ -253,7 +322,7 @@ line wall
   484.25 692.0 484.0 698.0 484.0 698.0
 endline
 
-line wall 
+line wall
   377.0677 671.8899
   382.1716 675.0212
   382.1716 675.0212 388.4852 674.1377 392.4852 674.8877
@@ -268,7 +337,7 @@ line wall
   479.0 662.75 493.0 664.25 495.0 664.0
 endline
 
-line wall 
+line wall
   333.75 740.75
   333.75 740.75 333.0 735.25 333.25 732.25
   333.5 729.25 332.75 721.0 332.75 720.0
@@ -298,7 +367,7 @@ line wall
   200.0 794.0
 endline
 
-line wall 
+line wall
   461.25 698.5
   461.25 698.5 459.5 690.25 459.5 687.25
   459.5 685.7899 459.5592 683.9744 459.62 682.3225
@@ -306,7 +375,7 @@ line wall
   459.7393 679.0001 458.759 678.5803 458.759 678.5803
 endline
 
-line wall 
+line wall
   459.0653 675.2202
   459.0653 675.2202 460.2408 674.7877 460.0735 674.1238
   459.9062 673.4599 459.3191 672.5427 459.5 672.0
@@ -333,7 +402,8 @@ line wall
 endline
 
 point 154.75 772.75 label -align l -scale l -text "Stara jama"
-line wall 
+
+line wall
   182.25 796.75
   182.25 796.75 181.0 787.75 180.75 786.25
   180.5 784.75 179.5 781.0 179.0 780.25
@@ -341,7 +411,7 @@ line wall
   176.798 778.649 174.2352 777.7309 174.2352 777.7309
 endline
 
-line wall 
+line wall
   173.0 767.5
   173.0 767.5 174.0381 767.4772 174.6879 766.1857
   174.9422 765.6803 174.2578 764.4532 174.75 763.75
@@ -376,25 +446,47 @@ line wall
 endline
 
 point 183.5 769.5 station -name 34
+
 point 201.0 763.5 station -name 33
+
 point 224.5 762.75 station -name 32
+
 point 231.75 757.0 station -name 31
+
 point 245.5 741.5 station -name 30
+
 point 253.75 736.75 station -name 29
+
 point 265.5 733.0 station -name 28
+
 point 288.75 731.5 station -name 27
+
 point 301.25 727.75 station -name 26
+
 point 310.0 718.25 station -name 25
+
 point 323.0 710.75 station -name 24
+
 point 340.25 679.0 station -name 23
+
 point 380.5 685.5 station -name 22
+
 point 405.0 675.75 station -name 21
+
 point 418.0 675.5 station -name 20
+
 point 427.0 676.25 station -name 19
+
 point 435.75 675.75 station -name 18
+
 point 443.0 673.25 station -name 17
+
 point 464.25 665.25 station -name 16
+
 point 492.0 671.0 station -name 15
+
 point 308.25 690.75 label -align bl -scale l -text "Netopirjeva dvorana"
+
 endscrap
+
 

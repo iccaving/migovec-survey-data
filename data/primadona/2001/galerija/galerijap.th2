@@ -1,11 +1,14 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 852.000000 1108.750000
+##XTHERION## xth_me_area_adjust 0.0 0.0 852.0 1108.75
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {129.000000 1 1.0} {970.000000 {}} "/Users/AchilleTalon/Documents/GitHub/migovec-survey-data/data/primadona/2001/galerija/galerijap.gif" 0 {}
+##XTHERION## xth_me_image_insert {129.0 1 1.0} {970.0 {}} ../../../../../../../../AppData/OneDrive/Documents/GitHub/migovec-survey-data/data/primadona/2001/galerija/galerijap.gif 0 {}
+
+
 
 scrap galerijap_1 -projection plan -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 
 point 546.94 901.491 u:connection_marker -align bl -attr code 18 -attr text "Mary's Cafe" -attr offset 0.95 -place top
+
 line rock-border -close on
   505.0 912.75
   505.75 909.25
@@ -94,20 +97,31 @@ line wall -id s1_l2
 endline
 
 point 651.0 838.0 station -name 22
+
 point 621.0 870.0 station -name 23
+
 point 601.0 909.0 station -name 24
+
 point 564.0 915.0 station -name 25
+
 point 541.0 898.0 station -name 26
+
 point 491.0 927.0 station -name 27
+
 point 478.0 907.0 station -name 28
+
 point 498.0 894.0 station -name 29
-point 429.0 894.0 label -align l -attr level 4 -text "Sejna soba" -scale l
+
+point 429.0 894.0 label -align l -attr level 4 -scale xs -text "Sejna soba"
+
 endscrap
+
 
 
 scrap galerijap_2 -projection plan -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 
 point 632.0 781.0 station -name 16
+
 line pit
   665.75 844.0
   667.0 841.25 672.0 836.25 674.5 834.25
@@ -157,12 +171,19 @@ line wall
 endline
 
 point 656.25 775.0 station -name 17
+
 point 656.25 775.0 station -name 18
+
 point 656.0 785.0 station -name 19
+
 point 675.0 845.0 station -name 20
+
 point 675.0 845.0 station -name 21
+
 point 651.0 838.0 station -name 22
+
 endscrap
+
 
 
 scrap galerijap_3 -projection plan -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
@@ -235,15 +256,21 @@ line wall
 endline
 
 point 656.25 775.0 station -name 18
+
 point 656.0 785.0 station -name 19
+
 point 675.0 845.0 station -name 20
+
 point 675.0 845.0 station -name 21
+
 endscrap
+
 
 
 scrap galerijap_4 -projection plan -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 
-point 644.5367 746.4013 label -align br -attr level 4 -scale l -text "Knot Very Good"
+point 629.6833 741.6025 label -align br -attr level 4 -scale xs -text "Knot Very<br><centre>Good"
+
 line label -text "Knot Very Good"
   549.25 627.0
   549.25 627.0 637.5 673.0 708.75 734.5
@@ -389,6 +416,7 @@ line rock-border -close on
 endline
 
 point 539.25 769.0 remark -align tl -text "Immobilisation area"
+
 line arrow
   542.0 768.5
   628.25 777.75
@@ -445,9 +473,13 @@ line wall -id s4_l1
 endline
 
 point 335.5 621.0 station -name 11
+
 point 429.0 670.0 station -name 12
+
 point 498.0 673.5 station -name 13
+
 point 577.5 690.5 station -name 14
+
 line wall -id s4_l6
   350.5 621.25
   350.75 622.25 351.75 627.5 351.75 627.5
@@ -509,18 +541,18 @@ line wall -id s4_l4
 endline
 
 point 609.0 760.5 station -name 15
+
 point 656.25 775.0 station -name 17
+
 point 632.0 781.0 station -name 16
+
 endscrap
+
 
 
 scrap galerijap_5 -projection plan -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
 
-area water
-	l106-112-491
-	endarea
-
-line border -close on -id l106-112-491
+line border -id l106-112-491 -close on
   241.5 478.5
   234.5 479.0 228.5 481.5 227.0 478.0
   225.5 474.5 227.5 469.0 228.5 466.0
@@ -528,6 +560,10 @@ line border -close on -id l106-112-491
   237.5 456.5 244.5 456.0 246.0 456.5
   247.5 457.0 248.5 478.0 241.5 478.5
 endline
+
+area water
+  l106-112-491
+endarea
 
 line wall
   204.0 396.0
@@ -614,16 +650,27 @@ line wall
 endline
 
 point 177.0 336.0 station -name 2
+
 point 178.0 347.0 station -name 3
+
 point 188.0 370.0 station -name 4
+
 point 207.0 388.0 station -name 5
+
 point 197.0 414.0 station -name 6
+
 point 224.0 456.0 station -name 7
+
 point 229.0 489.0 station -name 8
+
 point 282.0 504.0 station -name 9
+
 point 315.0 536.0 station -name 10
+
 point 335.5 621.0 station -name 11
+
 endscrap
+
 
 
 scrap galerijap_6 -projection plan -scale [326.0 -736.0 547.0 -735.0 0.0 0.0 35 0.0 m]
@@ -672,8 +719,15 @@ line wall
 endline
 
 point 177.0 336.0 station -name 2
+
 point 178.0 347.0 station -name 3
+
 point 188.0 370.0 station -name 4
+
 point 207.0 388.0 station -name 5
+
 point 197.0 414.0 station -name 6
+
 endscrap
+
+

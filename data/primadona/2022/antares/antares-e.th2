@@ -1,12 +1,24 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 838.500000 2197.400000
+##XTHERION## xth_me_area_adjust 0.0 0.0 838.5 2197.4
 ##XTHERION## xth_me_area_zoom_to 100
+
+
 
 scrap antares-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 491.8002 1017.0795 label -align tr -scale l -text Antares -attr level 1
+point 2966.6052 273.0456 label -align bl -attr level 5 -scale 0.375 -text "Survey lost (Warp Core Breach 82m)<br>- Pitch followed by tube<br>and another pitch leading to<br>perched sump/duck or bolt climb"
 
-line wall 
+point 473.3262 -36.2208 label -align bl -attr level 5 -scale 0.375 -text "Descending crawl<br>with stream descending<br>becomes tight near water"
+
+point 372.5461 181.0101 water-flow -orientation 168.011 -scale xs
+
+point 364.8162 636.6536 water-flow -orientation 183.749
+
+point 432.5872 1561.0092 water-flow -orientation 202.148
+
+point 491.8002 1017.0795 label -align tr -attr level 1 -scale l -text Antares
+
+line wall
   390.5023 259.003
   399.912 255.8664 435.9825 244.8885 451.6653 237.0471
   467.3481 229.2056 494.0089 227.6374 508.1235 218.2277
@@ -16,18 +28,18 @@ line wall
 endline
 
 line wall -subtype presumed
-  393.6389 136.677
-  393.6389 136.677 377.9561 208.818 374.8195 222.9325
-  371.6829 237.0471 381.0926 263.7079 381.0926 263.7079
+  400.8851 131.2424
+  400.8851 131.2424 385.2023 203.3834 382.0657 217.4979
+  378.9291 231.6125 388.3388 258.2733 388.3388 258.2733
 endline
 
 line wall -subtype presumed
-  324.6345 263.7079
-  330.9076 262.1396 340.3173 263.7079 346.5904 244.8885
-  352.8635 226.0691 368.5464 128.8356 368.5464 128.8356
+  320.5585 261.4435
+  326.8316 259.8752 336.2413 261.4435 342.5144 242.6241
+  348.7875 223.8047 364.4704 126.5712 364.4704 126.5712
 endline
 
-line wall 
+line wall
   751.3297 139.7833
   725.9218 153.9168
   696.6044 177.4523
@@ -48,13 +60,16 @@ line wall
   481.4627 1530.88 511.26 1577.9285 512.8283 1595.1796
   514.3966 1612.4307 528.5111 1693.9814 533.216 1700.2545
   537.9208 1706.5276 580.2645 1772.3955 580.2645 1772.3955
-  589.6742 1788.0783
+  605.502 1871.6438
+  700.4767 1909.1284
 endline
 
-line wall 
-  638.0649 2118.9214
-  638.0649 2118.9214 617.5922 2084.8003 600.5317 2074.564
-  583.4711 2064.3277 515.2289 2033.6186 498.1683 2019.9702
+line wall
+  724.209 2131.4107
+  724.209 2131.4107 693.2256 2130.2732 688.7072 2131.9544
+  677.9666 2135.9508 657.5302 2141.3984 641.9942 2132.6137
+  620.4796 2120.4484 596.7839 2089.5441 588.3627 2084.4914
+  571.3021 2074.255 515.2289 2033.6186 498.1683 2019.9702
   481.1077 2006.3218 409.4534 1972.2006 388.9807 1961.9643
   368.5081 1951.728 259.3205 1910.7826 259.3205 1910.7826
   218.3752 1890.31
@@ -81,7 +96,8 @@ line wall
   317.3264 262.7327
 endline
 
-point 378.55 135.85 continuation 
+point 388.9667 88.975 continuation -scale xs
+
 line u:splay -visibility off
   598.64 203.17
   620.93 206.44
@@ -798,14 +814,25 @@ line u:splay -visibility off
 endline
 
 point 342.65 290.98 station -name 3
+
 point 246.2 300.97 station -name 2
+
 point 270.21 633.43 station -name 4
+
 point 183.24 870.48 station -name 5
+
 point 217.86 1053.67 station -name 6
+
 point 166.05 1358.66 station -name 7
+
 point 426.17 1702.15 station -name 8
+
 point 541.48 1867.84 station -name 9
+
 point 472.15 275.88 station -name 1
+
 point 598.64 203.17 station -name 0
+
 endscrap
+
 

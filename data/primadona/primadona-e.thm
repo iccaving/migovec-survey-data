@@ -6,29 +6,28 @@ encoding  utf-8
 #Top level map with everything, individual caves are included within submaps below
 map m-all-e -projection extended
 	m-entrance-e
-	m-electric_branch-e [-800 0 m] none
-	m-hammerhead_branch-e 
+	m-electric_branch-e
+	m-hammerhead_branch-e [-100 0 m] none
 	m-ttt_branch-e
-	m-karstaway_branch-e [-500 0 m] none
-	m-smer0_branch-e [-500 0 m] none
-	m-fenestrator_branch-e [-500 0 m] none
-	m-death_star_branch-e [-500 0 m] none
+	m-karstaway_branch-e
+	m-smer0_branch-e
+	m-fenestrator_branch-e
+	m-death_star_branch-e
 	m-below_manger-e
 	m-below_klic_globin-e
 endmap
 
 map m-karstaway_branch-e -projection extended
-	m-all-e@galerija
 	m-all-e@karstaway
 	m-all-e@entirely_my_fault
 	m-all-e@quantum_state
 	m-all-e@terminus
-	m-all-e@what_a_coincidence
+	m-all-e@hall_of_the_mountain_king
 	m-all-e@what_a_disappointment
 	m-all-e@mfi
-	m-all-e@hall_of_the_mountain_king
 	m-all-e@colony
 	m-all-e@upside_down_chamber
+	m-all-e@what_a_coincidence
 	m-all-e@gamblers_ruin
 	m-all-e@tight_and_scrotty
 endmap
@@ -40,7 +39,7 @@ map m-hammerhead_branch-e -projection extended
 	m-all-e@hammerhead2
 	m-all-e@hammerhead3
 	m-all-e@high_and_dry
-	m-zima00-e@zima00
+	#m-zima00-e@zima00 #Not helpful as want to offset Hammerhead branch
 	m-all-e@diagonalley
 	m-all-e@damp_squib
 	m-all-e@lumos
@@ -48,21 +47,17 @@ endmap
 
 map  m-ttt_branch-e -projection extended
 	m-all-e@prima2
-	m-prima1-2e@prima1
-	m-all-e@mudaholic # on mudaholic.
 
 	m-all-e@apple_crumble
 	m-all-e@ttt
 	m-all-e@pov  
 	m-all-e@mandare_resurvey
 	m-all-e@batmere
-
+	m-all-e@mudaholic # on mudaholic.
 	m-all-e@TTTr
 	m-ttt_bottom-e@zima00
 	m-zima00-e@zima00
 	m-all-e@buckwheat
-	m-all-e@risa2
-	m-all-e@risanke
 	m-all-e@shelobs_lair
 endmap
 
@@ -126,7 +121,8 @@ map  m-entrance-e -projection extended
 endmap
 
 map m-smer0_branch-e -projection extended
-	m-all-e@smer0
+	m-all-e@smer0 #Original Smer0 drawing, less detailed, used for junction with various surveys.
+	m-all-e@smer0_and_salome_viados_resurvey #More detailed drawing of Smer0 and Start of Salome Viados area.
 	m-all-e@smer1
 	m-all-e@galerija
 	m-all-e@jack_of_hearts
@@ -134,16 +130,16 @@ map m-smer0_branch-e -projection extended
 	m-all-e@come_up_smiling_2
 	m-all-e@fenestrator
 	m-all-e@battery_flattery
-	m-all-e@forget_me_not
 	m-all-e@cattlegrid
 	m-all-e@the_stile
+	m-all-e@forget_me_not
 	m-all-e@upotyn
 	m-all-e@mud_moses
 endmap
 
 map  m-fenestrator_branch-e -projection extended
-	m-all-e@plumbers_paradise
 	m-all-e@hallelujah
+	m-all-e@plumbers_paradise
 	m-all-e@alabaster
 	m-all-e@beam_me_up
 	m-all-e@echo_falls
@@ -166,30 +162,35 @@ endmap
 map m-death_star_branch-e -projection extended 
 	m-all-e@death_star
 	m-all-e@the_expo_strikes_back
-	m-all-e@cantina_canyon
-	m-all-e@cantina_canyon_2
-	m-all-e@antares
 	m-all-e@who_dies_first_resurvey
 	m-all-e@the_deep_awakens
 	m-all-e@sisyphus_slope
+	m-all-e@cantina_canyon
+	m-all-e@cantina_canyon_2
+	m-all-e@antares
 	m-all-e@delta_blues
 	m-all-e@blues_and_twos
+	m-all-e@the_big_daddy
 	m-all-e@discordant_bebop
 	m-all-e@sparkle_highway
 	m-all-e@pandoras_approach
 	m-all-e@my_little_pitch
 	m-all-e@loompa_land
 	m-all-e@down_the_rabbit_hole
+	m-all-e@alice_in_waterland
+	m-all-e@loosely_horsey
+	m-all-e@2_loompa_2_land
+	m-all-e@loompa_land_tolmin_drift
 endmap
 
 map  m-electric_branch-e -projection extended
-	m-all-e@dysentery
 	m-all-e@electric_dreams
 	m-all-e@odessey
 	m-all-e@power_grab
 	m-all-e@more_like_welding
 	m-all-e@stranglehold
 	m-all-e@the_atrium
+	m-all-e@dysentery
 endmap
 
 centreline
@@ -198,4 +199,5 @@ centreline
 	extend right 4@risanke
 	extend ignore 0@who_dies_first_resurvey
 	extend ignore 9@snakebite #Ignoring this extend in snakebite reduces warping in pivnica_resurvey
+	extend ignore 2@smer1
 endcentreline

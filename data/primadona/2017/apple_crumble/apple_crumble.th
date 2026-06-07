@@ -7,7 +7,7 @@ survey apple_crumble -title "Apple Crumble"
 		break
 		apple_crumble-1e
 	endmap
-	
+	join apple_crumble-1e apple_crumble-2e
 	map m-all-p -projection plan
 		apple_crumble-1p
 		apple_crumble-2p

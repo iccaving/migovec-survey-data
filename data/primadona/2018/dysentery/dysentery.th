@@ -749,7 +749,8 @@ survey dysentery -title "Dysentry"
 		break
 		dysentery-4e
 	endmap
-
+	join dysentery-1e dysentery-2e
+	join dysentery-2e dysentery-3e
 	join dysentery-3e dysentery-4e
 	
 	join dysentery-1p dysentery-4p

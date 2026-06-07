@@ -23,11 +23,11 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	join ttt-1p@ttt prima2p_5@prima2
 	join zima00p_1@zima00 ttt-6p@ttt
-	join s1_l1@prima2:0 s7_l4@prima1:end
-	join s1_l1@prima2:end s7_l3@prima1:end
+	# join s1_l1@prima2:0 s7_l4@prima1:end
+	# join s1_l1@prima2:end s7_l3@prima1:end
 	join ttt-1e@ttt zima00-3e@zima00
 
-	join prima1-2e@prima1 prima2-2e@prima2
+	# join prima1-2e@prima1 prima2-2e@prima2
 
 	###______________2001_____________ ###
 
@@ -36,6 +36,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2001/pov/pov.th"
 	input "./2001/galerija/galerija.th"
 	input "./2001/drugi/drugi.th"
+	input "./2001/podor/podor.th"
 
 	equate 5@risanke 1@prima1
 	equate 1@risanke 1@risa2
@@ -45,11 +46,11 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 12@risa2 29@galerija
 	equate 15@drugi 34@prima1
 	equate 21b@prima1 1@drugi
+	equate 1@podor 28@prima2
 
 	join s1_l1@risanke:end s7_l1@prima1:0
 	join s1_l2@risanke:0 s7_l2@prima1:end
 	join risa2p_1@risa2 risanke-1p@risanke
-	join risa2p_3@risa2 pov-1p@pov
 	join s4_l1@pov s4_l1@ttt
 	join s4_l2@pov s4_l2@ttt
 	#join s1_l1@galerija:0 s3_l1@risa2:end
@@ -57,7 +58,6 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	join s3_l1@drugi:0 s2_l1@prima1:end
 	join s3_l2@drugi:end s2_l2@prima1:0
-	join pov-1e@pov risa2-1e@risa2
 
 	join galerija-2e@galerija galerija-1e@galerija
 	join drugi-2e@drugi prima1-1e@prima1
@@ -81,17 +81,25 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	#join spodnjip_1@spodnji zima00p_6@zima00
 	join spodnjip_3@spodnji milanovap_1@milanova
 
-	join smer0-1e@smer0 galerija-1e@galerija
+	join kvg_L1@galerija:0 smer0_L3@smer0:end
+	join kvg_L5@galerija:end smer0_L5@smer0:0
 
 	###______________2004_____________ ###
 	input "./2004/popotresni/popotresni.th"
 
 	equate POP25@popotresni 27@galerija
-
+	#PLAN
 	join s1_l3@galerija s4_l2@popotresni
 	join s1_l2@galerija s4_l3@popotresni:end
 	join s3_l1@risa2 s4_l1@popotresni:end
 	join s3_l2@risa2 s4_l3@popotresni:0
+	#ELEVATION
+	join galerija-4e@galerija popotresni-kak-1e@popotresni #Join near big chamber
+	join galerija-4e@galerija popotresni-kak-2e@popotresni #Join just after Cafe
+	join galerija-3e@galerija popotresni-kak-2e@popotresni #Join at Sejna Soba pitch
+	join galerija-1e@galerija popotresni-kak-2e@popotresni #Join at KVG (Why Man Here)
+	join risa2-1e@risa2 popotresni-pop-1e@popotresni
+
 
 	###______________2005_____________ ###
 	input "./2005/brez_volje/brez_volje.th"
@@ -101,14 +109,17 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join s1_l1@brez_volje:0 s3_l1@popotresni:end
 	join s1_l2@brez_volje:end s3_l2@popotresni:0
 
+	#ELEVATION
+	join popotresni-pop-1e@popotresni brez_volje-1e@brez_volje
+
 	###______________2006_____________ ###
 	input "./2006/smer1/smer1.th"
 
 	equate 18@smer1 43@smer0
 	equate 30@smer0 1@smer1
 
-	join smer0-2e@smer0 smer1-1e@smer1
-	join smer0-1e@smer0 smer1-2e@smer1
+	#join smer0-2e@smer0 smer1-1e@smer1 #Join replaced with join to smer0_and_salome_viados_resurvey in 2025
+	#join smer0-1e@smer0 smer1-2e@smer1 #Join replaced with join to smer0_and_salome_viados_resurvey in 2025
 
 	###______________2016_____________ ###
 	input "./2016/karstaway/karstaway.th"
@@ -125,10 +136,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2016/dejavu/dejavu.th"
 	input "./2016/tight_and_scrotty/tight_and_scrotty.th"
 	input "./2016/gamblers_ruin/gamblers_ruin.th"
-	input "./2016/memorylane/memorylane.th" # brought this back in because someone tied to it in 2024
+	#input "./2016/memorylane/memorylane.th"
 
-	 equate 10@memorylane 19@prima1 # may break ee, disconnect this end if this happens?
-	 equate 1@memorylane 8@prima1 # may break ee, preferably keep this end connected?
+	# equate 10@memorylane 19@prima1
+	# equate 1@memorylane 8@prima1
 	equate 39@karstaway 1@galerija_resurvey
 	equate 1@galerija_resurvey 11@galerija
 	equate 6@galerija_resurvey 16@galerija
@@ -160,8 +171,6 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join s1_l2@the_stile:end s1_l5@smer0:0
 	join s1_l4@the_stile:end s4_l3@galerija:0
 	join s1_l3@the_stile:0 s4_l1@galerija:end
-	join s2_l1@quantum_state:end s4_l5@galerija:0
-	join s2_l2@quantum_state:0 s4_l4@galerija:end
 
 	join s4_l5@galerija s20_l1@karstaway
 	join s4_l6@galerija s20_l2@karstaway
@@ -178,9 +187,12 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join col_l3@colony upside_down_chamber_l3@upside_down_chamber
 	join col_l4@colony upside_down_chamber_l4@upside_down_chamber
 
-	#join karstaway-1e@karstaway mighty_fine_indeed-1e@mfi
-	#join mighty_fine_indeed-1e@mfi hall_of_the_mountain_king-1e@hall_of_the_mountain_king
-	join colony-1e@colony what_a_coincidence-3e@what_a_coincidence
+	join karstaway-1e@karstaway mighty_fine_indeed-1e@mfi
+	join mighty_fine_indeed-1e@mfi hall_of_the_mountain_king-2e@hall_of_the_mountain_king
+	join hotmk_l1@hall_of_the_mountain_king:0 wac_l2@what_a_coincidence:end #Elevation
+	join hotmk_l2@hall_of_the_mountain_king:end wac_l1@what_a_coincidence:0 #Elevation
+	join hotmk_l3@hall_of_the_mountain_king:0 col_l5@colony:end  #Elevation
+	join hotmk_l1@hall_of_the_mountain_king:end col_l2@colony:0 #Elevation
 	join e1_l1@TTTr e2_l1@zima00
 	join e1_l2@TTTr e2_l2@zima00
 	join e1_l3@TTTr e2_l3@zima00
@@ -189,13 +201,20 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join e1_l6@TTTr e1_l6@buckwheat
 	join e1_l7@TTTr e1_l7@what_a_coincidence
 	join e1_l8@TTTr e1_l8@what_a_coincidence
+	join e1_l7_buck@buckwheat:end e1_l2@what_a_coincidence:0
+	join e1_l5@buckwheat:0 e1_l1@what_a_coincidence:end
 
 	join colony-1e@colony upside_down_chamber-1e@upside_down_chamber
 	join upside_down_chamber-1e@upside_down_chamber gamblers_ruin-1e@gamblers_ruin
 	join colony-1e@colony tight_and_scrotty-1e@tight_and_scrotty
 	join tight_and_scrotty-1e@tight_and_scrotty upside_down_chamber-1e@upside_down_chamber
-	join smer0-1e@smer0 the_stile-s1@the_stile
+	#join smer0-0e@smer0 the_stile-s1@the_stile # Replaced with line joins
+	join smer0_L1@smer0:0 stile_L5@the_stile:end
+	join smer0_L5@smer0:end stile_L1@the_stile:0
 	join the_stile-s1@the_stile cattlegrid-3e@cattlegrid
+	join kvg_L7@galerija:end cattle_L2@cattlegrid:0
+	join kvg_L5@galerija:0 stile_L1@the_stile:end
+	join kvg_L6@galerija:end stile_L2@the_stile:0
 	join galerija-2e@galerija quantum_state-1e@quantum_state
 	join quantum_state-1e@quantum_state terminus-1e@terminus
 	join what_a_disappointment-1e@what_a_disappointment what_a_coincidence-1e@what_a_coincidence
@@ -229,9 +248,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2017/batmere/batmere.th"
 	input "./2017/entirely_my_fault/entirely_my_fault.th"
 	input "./2017/what_a_disappointment/what_a_disappointment.th"
-	#input "./2017/testing_the_waters/testing_the_waters.th"
+	input "./2017/testing_the_waters/testing_the_waters.th"
 
-	#equate 8@testing_the_waters 24@prima2
+	equate 8@testing_the_waters 24@prima2
 	equate 7@buckwheat 1@TTTr
 	equate 4@buckwheat 1@what_a_coincidence
 	equate 47@TTTr 1@pov
@@ -243,7 +262,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 5@plumbers_paradise 10@hallelujah
 	equate 24@sweet_baby_jesus 1@hallelujah
 	equate 26@alabaster 1@sweet_baby_jesus
-	equate 35@jack_of_hearts 39@smer0
+	equate 35@jack_of_hearts 38@smer0
 	equate 18@TTTr 1A@dejavu
 	equate 1@mfi 1@more_like_welding
 	equate 15@more_like_welding 1@electric_dreams
@@ -276,9 +295,15 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join batmere-1p@batmere mandare_low-1p@mandare_resurvey
 	join electric_dreams-1p@electric_dreams more_like_welding-3p@more_like_welding
 	join TTTr-3p@TTTr zima00p_2@zima00
-	join jack_of_hearts-2e@jack_of_hearts smer0-1e@smer0
-	join cattlegrid-2e@cattlegrid fenestrator-1e@fenestrator
-	join plumbers_paradise-1e@plumbers_paradise fenestrator-1e@fenestrator
+	#join jack_of_hearts-2e@jack_of_hearts smer0-1e@smer0 #Replaced with join in 2025 to smer0_and_salome_viados_resurvey
+	#join cattlegrid-2e@cattlegrid fenestrator-1e@fenestrator #Replaced with line join
+	join cattle_L3@cattlegrid:end fenes_L3@fenestrator:0
+	join cattle_L4@cattlegrid:0 fenes_L4@fenestrator:end
+	#join plumbers_paradise-1e@plumbers_paradise fenestrator-1e@fenestrator # Replaced with line join
+	join fenes_L1@fenestrator:end pp_L1@plumbers_paradise:0
+	join fenes_L2@fenestrator:0 pp_L3@plumbers_paradise:end
+	join pp_L3@plumbers_paradise:0 upotyn_L2@upotyn:end
+	join pp_L2@plumbers_paradise:end upotyn_L1@upotyn:0
 	join hammerhead2-1e@hammerhead2 hammerhead-1e@hammerhead
 	join hammerhead-1e@hammerhead dejavu-1e@dejavu
 	join hammerhead2-2e@hammerhead2 dogfish-1e@dogfish
@@ -288,14 +313,21 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 
 	join apple_crumble-1e@apple_crumble pov-2e@pov
-	join pov_e2_l1@pov ac_e2_l1@apple_crumble
-	join pov_e2_l2@pov ac_e2_l2@apple_crumble
+	join pov_e2_l1@pov:0 ac_e2_l1@apple_crumble:end
+	join pov_e2_l2@pov:end ac_e2_l3@apple_crumble:0
 	join ttt-2e@ttt batmere-1e@batmere
 	join ttt-1e@ttt mandare_resurvey-1e@mandare_resurvey
 	join batmere-1e@batmere mandare_resurvey-1e@mandare_resurvey
 	join ttt-1e@ttt ttt-2e@ttt
+	join galerija-2e@galerija electric_dreams-1e@electric_dreams
+	join electric_dreams-2e@electric_dreams stranglehold-1e@stranglehold
+	join electric_dreams-2e@electric_dreams more_like_welding-2e@more_like_welding
+	join more_like_welding-1e@more_like_welding mighty_fine_indeed-1e@mfi
+	join the_atrium-1e@the_atrium more_like_welding-2e@more_like_welding
+	join the_atrium-1e@the_atrium hall_of_the_mountain_king-1e@hall_of_the_mountain_king
+	join stranglehold-2e@stranglehold the_atrium-1e@the_atrium
 
-	###______________ 2018_____________ ###
+	# ###______________ 2018_____________ ###
 	input "./2018/pivnica_resurvey/pivnica_resurvey.th"
 	input "./2018/pivnica_2_resurvey/pivnica_2_resurvey.th"
 	input "./2018/lost_in_a_dream/lost_in_a_dream.th"
@@ -366,13 +398,23 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join pivnica_2_resurvey-1e@pivnica_2_resurvey lost_in_a_dream-1e@lost_in_a_dream
 	join ave_maria-1p@ave_maria lost_in_a_dream_2-1p@lost_in_a_dream_2
 	join ave_maria-1p@ave_maria snakebitetwo-1p@snakebitetwo
+	join sweet_baby_jesus-1e@sweet_baby_jesus alabaster-1e@alabaster
 	join holy_moley-1e@holy_moley alabaster-1e@alabaster
 	join purgatory-1e@purgatory alabaster-1e@alabaster
-	join purgatory-1e@purgatory bath-1s@bath
-	join bath-1s@bath canticle_for_migovec-1e@canticle_for_migovec
-	join holy_moley-1e@holy_moley sweet_baby_jesus-1e@sweet_baby_jesus
+	#join purgatory-1e@purgatory bath-1s@bath # Replaced with 2x line joins
+	join purg_L1@purgatory:end bath_L1@bath:0
+	join purg_L2@purgatory:0 bath_L2@bath:end
+	join bath-3s@bath canticle_for_migovec-1e@canticle_for_migovec
+	#join holy_moley-1e@holy_moley sweet_baby_jesus-1e@sweet_baby_jesus #Replaced with 4x line joins
+	join sbj_L1@sweet_baby_jesus:end holy_moley_L4@holy_moley:0
+	join sbj_L2@sweet_baby_jesus:0 holy_moley_L3@holy_moley:end
+	join sbj_L2@sweet_baby_jesus:end holy_moley_L1@holy_moley:0
+	join sbj_L3@sweet_baby_jesus:0 holy_moley_L2@holy_moley:end
 	join sweet_baby_jesus-1e@sweet_baby_jesus hallelujah-1e@hallelujah
-	join come_up_smiling-s1@come_up_smiling galerija-1e@galerija
+	join pp_L4@plumbers_paradise:end halle_L1@hallelujah:0
+	join pp_L5@plumbers_paradise:0 halle_L2@hallelujah:end
+	join kvg_L1@galerija:end kvg_L2@come_up_smiling:0
+	join kvg_L3@galerija:0 kvg_L4@come_up_smiling:end
 	join mouseleum-1s@mouseleum mouseleum_2-1e@mouseleum_2
 	join mouseleum_2-1e@mouseleum_2 chocolate_river-1e@chocolate_river
 	join moonraker-1s@moonraker mouseleum-1s@mouseleum
@@ -416,6 +458,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2018/odessey/odessey.th"
 	input "./2018/come_up_smiling/come_up_smiling.th"
 	input "./2018/come_up_smiling_2/come_up_smiling_2.th"
+	input "./2018/upper_escape/upper_escape.th"
 
 	equate 0@dysentery 6@more_like_welding
 	equate 1@lumos 6@hammerhead2
@@ -426,6 +469,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 0@come_up_smiling 5@come_up_smiling_2
 	equate 0@come_up_smiling_2 46@smer0
 	equate 8@come_up_smiling 23@cattlegrid
+	equate 30@prima2 7@upper_escape
 
 	join l2@dysentery:0 l2a@more_like_welding:0
 	join l3@dysentery:0 l3@more_like_welding:end
@@ -443,14 +487,15 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join snakebite-1e@snakebite snakebitetwo-1e@snakebitetwo
 	join snakebitetwo-1e@snakebitetwo ave_maria-1e@ave_maria
 	join come_up_smiling-s1@come_up_smiling come_up_smiling_2-s1@come_up_smiling_2
-	join come_up_smiling_2-s1@come_up_smiling_2 smer0-1e@smer0
+	#join come_up_smiling_2-s1@come_up_smiling_2 smer0-0e@smer0 #Replaced with join to smer0_and_salome_viados_resurvey see below
+	join come_up_smiling_2-s1@come_up_smiling_2 smer0_and_salome_viados_resurvey-1e@smer0_and_salome_viados_resurvey
 	join odessey-1e@odessey electric_dreams-1e@electric_dreams
 	join odessey-1e@odessey electric_dreams-2e@electric_dreams
 	join moonraker-3s@moonraker klic_globin-1s@klic_globin
 	join moonraker-3s@moonraker the_aqueduct-1s@the_aqueduct
 
 
-	###______________ 2019_____________ ###
+	# ###______________ 2019_____________ ###
 
 	input "./2019/ad_aspera_per_aqua/ad_aspera_per_aqua.th"
 	input "./2019/artemis/artemis.th"
@@ -501,8 +546,17 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join lachrymosa-1p@lachrymosa artemis-1p@artemis
 	join s1_l1@forget_me_not s1_l5@the_stile
 	join s1_l2@forget_me_not s1_l6@the_stile
+	join purg_L3@purgatory:0 octarine_L1@octarine:end #Elevation
+	join purg_L2@purgatory:end octarine_L2@octarine:0 #Elevation
+	join octarine-3e@octarine octarine_core-1s@octarine_core 
 	join octarine_core-1p@octarine_core bath-2p@bath
 	join death_star-2p@death_star octarine_core-1p@octarine_core
+	join bath_L3@bath:0 oct_core_L1@octarine_core:end #Elevation
+	join bath_L4@bath:end oct_core_L2@octarine_core:0 #Elevation
+	join oct_core_L3@octarine_core:0 death_star_L1@death_star:end #Elevation
+	join oct_core_L2@octarine_core:end death_star_L2@death_star:0 #Elevation
+	join canticle_L1@canticle_for_migovec:0 death_star_L3@death_star:end #Elevation
+	join canticle_L2@canticle_for_migovec:end death_star_L4@death_star:0 #Elevation
 	join s1_l3@octarine s1_l3@purgatory
 	join s1_l4@octarine s1_l4@purgatory
 	join polnoletna-2p@polnoletna ma_je_vlazna-1p@ma_je_vlazna
@@ -522,6 +576,12 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join polnoletna-1e@polnoletna milanova_e2@milanova
 	join power_grab-1p@power_grab electric_dreams-1p@electric_dreams
 	join power_grab-1e@power_grab electric_dreams-2e@electric_dreams
+	join power_grab-2e@power_grab electric_dreams-2e@electric_dreams
+	join forget_L1@forget_me_not:end kvg_L6@galerija:0
+	join forget_L2@forget_me_not:0 cattle_L1@cattlegrid:end
+	join forget_L3@forget_me_not:0 stile_L3@the_stile:end
+	join forget_L4@forget_me_not:end stile_L4@the_stile:0
+	
 
 	###______________ 2021_____________ ###
 	input "./2021/hades/hades.th"
@@ -561,27 +621,34 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 1@echo_falls 19@bin_bag_palace
 	equate 0@cantina_canyon 15@sisyphus_slope
 	equate 30@mudaholic 42@TTTr
-	equate 1@pov 25@mudaholic 
+	# equate 1@pov 25@mudaholic  This is causing nan errors, proabbly because I've extend ignored 27 in pov for the split
 	equate 0@cantina_canyon_2 8@sisyphus_slope
 	equate 33@the_deep_awakens 5@who_dies_first
 	equate 31@cantina_canyon_2 9@antares
 	equate 12@blue_lagoon 0@bin_bag_palace
 
-	join styx-1e@styx deveti_krog-2e@deveti_krog
+
+	#PLAN
 	join mudaholic-1p@mudaholic ttt-4p@ttt
 	join mudaholic-2p@mudaholic ttt-5p@ttt
-	join ttt-1e@ttt mudaholic-1e@mudaholic
-
 	join echo_falls-4p@echo_falls bin_bag_palace-1p@bin_bag_palace
-	join echo_falls-e@echo_falls bin_bag_palace-1e@bin_bag_palace
-	join beam_me_up-1s2@beam_me_up echo_falls-e@echo_falls
-	join bin_bag_palace-1e@bin_bag_palace blue_lagoon-1e@blue_lagoon
 	join sisyphus_slope-1p@sisyphus_slope cantina_canyon_2-1p@cantina_canyon_2
 	join the_deep_awakens-1p@the_deep_awakens The_Expo_Strikes_Back-1p@the_expo_strikes_back
 	join the_deep_awakens-4p@the_deep_awakens cantina_canyon-1p@cantina_canyon
 	join cantina_canyon-1p@cantina_canyon cantina_canyon_2-1p@cantina_canyon_2
-	join cantina_canyon_2-1e@cantina_canyon_2 antares-1s@antares
+	#ELEVATION
+	join styx-1e@styx deveti_krog-2e@deveti_krog
+	join ttt-1e@ttt mudaholic-1e@mudaholic
+	join beam_me_up-1s2@beam_me_up echo_falls-e@echo_falls
+	join echo_falls_L2@echo_falls:end bbp_L1@bin_bag_palace:0 #Echo Falls, BBP elevation line join
+	join echo_falls_L3@echo_falls:0 bbp_L2@bin_bag_palace:end #Echo Falls, BBP elevation line join
+	join bin_bag_palace-1e@bin_bag_palace blue_lagoon-1e@blue_lagoon
+	join death_star-4e@death_star the_expo_strikes_back-1e@the_expo_strikes_back
+	join the_expo_strikes_back-1e@the_expo_strikes_back the_deep_awakens-1e@the_deep_awakens
 	join the_deep_awakens-2e@the_deep_awakens cantina_canyon-1e@cantina_canyon
+	join cantina_canyon-1e@cantina_canyon sisyphus_slope-1e@sisyphus_slope
+	join cantina_canyon_2-1e@cantina_canyon_2 antares-1s@antares
+	
 
 	###______________ 2023______________###
     input "./2023/delta_blues/delta_blues.th"
@@ -600,18 +667,20 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 5@blossom_hill 13@bin_bag_palace #possibly 4@blossom_hill, see notes, check with Astrid
 	equate prima@prima_location 35@prima1
 
+	#PLAN
 	join blossom_hill-1p@blossom_hill bin_bag_palace-2p@bin_bag_palace
-	join blossom1@blossom_hill bag1@bin_bag_palace #Elevation line join
-	join blossom2@blossom_hill bag2@bin_bag_palace #Elevation line join
 	join a_dry_place-1p@a_dry_place echo_falls-4p@echo_falls
-	join a_dry_place-1e@a_dry_place echo_falls-e@echo_falls
 	join who_dies_first_resurvey-1p@who_dies_first_resurvey the_deep_awakens-3p@the_deep_awakens
 	join who_dies_first_resurvey-1p@who_dies_first_resurvey delta_blues-1p@delta_blues
 	join delta_blues-2p@delta_blues the_deep_awakens-3p@the_deep_awakens
-
+	#ELEVATION
 	join who_dies_first_resurvey-1e@who_dies_first_resurvey the_deep_awakens-2e@the_deep_awakens
 	join who_dies_first_resurvey-1e@who_dies_first_resurvey delta_blues-1e@delta_blues
 	join delta_blues-1e@delta_blues the_deep_awakens-2e@the_deep_awakens
+	join echo_falls_L1@echo_falls:end adp_L1@a_dry_place:0 #A dry place - Echo falls Elevation join
+	join echo_falls_L2@echo_falls:end adp_L2@a_dry_place:end #A dry place - Echo falls Elevation join
+	join bbp_L1@bin_bag_palace:end blossom1@blossom_hill:0 #Blossom hill - BBP Elevation join
+	join bbp_L3@bin_bag_palace:0 blossom2@blossom_hill:end #Blossom hill - BBP Elevation join
 
 	###______________ 2024______________###
 	input "./2024/shelobs_lair/shelobs_lair.th"
@@ -630,8 +699,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 0@blues_and_twos 0@who_dies_first_resurvey
 	equate 17@blues_and_twos 21@delta_blues
 	equate 23@discordant_bebop 39@delta_blues
-	equate 0@bad_vibes 1@memorylane
-	equate 0@freshers_folly 1@memorylane
+	equate 0@bad_vibes 8@prima1
+	equate 0@freshers_folly 8@prima1
 	equate 43@sparkle_highway 21@delta_blues
 	equate 18@bacchus_goldfish 0@klic_globin
 	equate 14@pandoras_approach 0@sparkle_highway
@@ -639,17 +708,35 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 29@loompa_land 10@my_little_pitch
 	equate 18@down_the_rabbit_hole 24@loompa_land
 
+	#PLAN
+	join bad_vibes-1p@bad_vibes prima1-6p@prima1
+	join freshers_folly-1p@freshers_folly prima1-6p@prima1
 	join bacchus_goldfish-1p@bacchus_goldfish klic_globin-1p@klic_globin
-	join bacchus_goldfish-1e@bacchus_goldfish klic_globin-1s@klic_globin
-	join line1@delta_blues line1@blues_and_twos
-	join line2@delta_blues line2@blues_and_twos
-	join line4@delta_blues line2@blues_and_twos
-	join line3@delta_blues line1@blues_and_twos
 	join blues_and_twos-p@blues_and_twos  delta_blues-1p@delta_blues
+	join discordant_bebop-1p@discordant_bebop delta_blues-1p@delta_blues
 	join my_little_pitch-1p@my_little_pitch loompa_land-1p@loompa_land
 	join my_little_pitch-1p@my_little_pitch pandoras_approach-1p@pandoras_approach
-	join pandoras_approach-1p@pandoras_approach sparkle_highway-2p@sparkle_highway
+	join pandoras_approach-1p@pandoras_approach sparkle_highway-3p@sparkle_highway
 	join sparkle_highway-1p@sparkle_highway delta_blues-1p@delta_blues
+
+	#ELEVATION
+	join bad_vibes-1e@bad_vibes prima1-3e@prima1
+	join freshers_folly-1e@freshers_folly prima1-3e@prima1
+	join mudaholic-1e@mudaholic shelobs_lair-1e@shelobs_lair
+	join bacchus_goldfish-1e@bacchus_goldfish klic_globin-1s@klic_globin
+	join line1@delta_blues:0 line1@blues_and_twos:end
+	join line2@delta_blues:end line2@blues_and_twos:0
+	join line4@delta_blues:0 line3@blues_and_twos:end
+	join line3@delta_blues:end line1@blues_and_twos:0
+	join line6@delta_blues:0 sparkle_L2@sparkle_highway:end
+	join line4@delta_blues:end sparkle_L1@sparkle_highway:0
+	join line6@delta_blues:end db_line1@discordant_bebop:0
+	join line5@delta_blues:0 db_line2@discordant_bebop:end
+	join sparkle_highway-3e@sparkle_highway pandoras_approach-1e@pandoras_approach
+	join pandoras_approach-1e@pandoras_approach my_little_pitch-1e@my_little_pitch
+	join my_little_pitch-1e@my_little_pitch loompa_land-1e@loompa_land
+	join loompa_land-1e@loompa_land down_the_rabbit_hole-1e@down_the_rabbit_hole
+
 
 	###______________ 2025______________###
 	input "./2025/2_loompa_2_land/2_loompa_2_land.th"
@@ -657,10 +744,34 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2025/alice_in_waterland/alice_in_waterland.th"
 	input "./2025/loosely_horsey/loosely_horsey.th"
 	input "./2025/loompa_land_tolmin_drift/loompa_land_tolmin_drift.th"
+	input "./2025/the_big_daddy/the_big_daddy.th"
 
 	equate 29@2_loompa_2_land 0@loompa_land
 	equate 0@smer0_and_salome_viados_resurvey 49@smer0
 	equate 6@alice_in_waterland 0@down_the_rabbit_hole
 	equate 0@loosely_horsey 17@sparkle_highway
 	equate 16@loompa_land_tolmin_drift 0@2_loompa_2_land
+	equate 8@the_big_daddy 5@blues_and_twos
+
+	#Plan
+	join the_big_daddy-1p@the_big_daddy blues_and_twos-p@blues_and_twos
+	join loosely_horsey-1p@loosely_horsey sparkle_highway-2p@sparkle_highway
+	join loompa_land-1p@loompa_land 2_loompa_2_land-1p@2_loompa_2_land
+	join loompa_land_tolmin_drift-1p@loompa_land_tolmin_drift 2_loompa_2_land-1p@2_loompa_2_land
+	join down_the_rabbit_hole-1p@down_the_rabbit_hole alice_in_waterland-1p@alice_in_waterland
+	#ELEVATION
+	join smer0smer1_L1@smer0_and_salome_viados_resurvey:end smer1_L1@smer1:0
+	join smer0smer1_L2@smer0_and_salome_viados_resurvey:0 smer1_L2@smer1:end
+	join jack_of_hearts-2e@jack_of_hearts smer0_and_salome_viados_resurvey-3e@smer0_and_salome_viados_resurvey
+	join smer0_L1@smer0:end smer0_L2@smer0_and_salome_viados_resurvey:0
+	join smer0_L3@smer0:0 smer0_L4@smer0_and_salome_viados_resurvey:end
+	join smer1-2e@smer1 smer0_and_salome_viados_resurvey-2e@smer0_and_salome_viados_resurvey
+	join sparkle_L3@sparkle_highway:end loosely_L1@loosely_horsey:0
+	join sparkle_L4@sparkle_highway:0 loosely_L2@loosely_horsey:end
+	join line2@blues_and_twos:end daddy_L2@the_big_daddy:0
+	join line3@blues_and_twos:0 daddy_L1@the_big_daddy:end
+	join loompa_land-1e@loompa_land 2_loompa_2_land-1e@2_loompa_2_land
+	join 2_loompa_2_land-3e@2_loompa_2_land loompa_land_tolmin_drift-1s@loompa_land_tolmin_drift
+	join down_the_rabbit_hole-1e@down_the_rabbit_hole alice_in_waterland-1e@alice_in_waterland
+	
 endsurvey

@@ -29,6 +29,7 @@ survey primadona_ubend_mona_tip -title "<bf>Primadona, Mona tip, Ubend-571, Bell
 	equate 1@therock.mona_tip 8@prima1.primadona
 	equate 25@therock.mona_tip 24@prima2.primadona
 	equate BV6@brez_volje.primadona 2@doubletime.mona_tip
+	equate 20@testing_the_waters.primadona 7@alkatraz.mona_tip
 
 	# Belladonna and primadona connection
 	equate shit@belladonna 35@prima1.primadona
@@ -37,8 +38,8 @@ survey primadona_ubend_mona_tip -title "<bf>Primadona, Mona tip, Ubend-571, Bell
 	# Primadona to Monatip at Alkatraz via 'The Rock'
 	join s5_l1@prima1.primadona:end s1_l1@therock.mona_tip:end
 	join s5_l2@prima1.primadona:end s1_l2@therock.mona_tip:0
-	join s1_l1a@prima2.primadona:0 s3_l1@therock.mona_tip:end
-	join s1_l2@prima2.primadona:end s3_l2@therock.mona_tip:0
+	# join s1_l1a@prima2.primadona:0 s3_l1@therock.mona_tip:end
+	# join s1_l2@prima2.primadona:end s3_l2@therock.mona_tip:0
 
 	join dt_e1_l1@doubletime.mona_tip bv_e1_l1@brez_volje.primadona
 	join dt_e1_l2@doubletime.mona_tip bv_e1_l2@brez_volje.primadona

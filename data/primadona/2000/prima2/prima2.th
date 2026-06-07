@@ -117,11 +117,10 @@ survey prima2 -title "Primadona Stara Jama branch"
 		30  29  15.90  151  -12  #stn 30 is a pss cairn in chamber
 		extend left
 		31  30  2.87  027  21
-		extend ignore 32 31
 		extend left
 		32  31  11.94  327  65  #stn 32 is a pss carbide S at bottom of climb
 		
-		
+		extend ignore 31 32
 		
 	endcentreline
 	

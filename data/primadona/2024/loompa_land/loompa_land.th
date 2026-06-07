@@ -247,8 +247,10 @@ survey loompa_land -title "Loompa Land"
     25 . 1.56 41.3 -18.3
     extend right
     25 26 2.47 69.8 22.9
-    extend right
+    extend left
+    flags duplicate #Effectively a Resurvey of Down The Rabbit Hole 18-17
     24 27 2.98 174.6 -7.5
+    flags not duplicate
     # extend auto
     27 . 2.04 67.7 30.3
     27 . 2.98 45.9 55.5

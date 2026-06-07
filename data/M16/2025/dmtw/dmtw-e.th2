@@ -1,0 +1,230 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250.0 -500.0 250.0 500.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap DELETE-ME-survey-legs-DUPLICATE_dmtw-e -projection extended -scale [7.87402 1 m]
+
+line survey
+  -49.22 101.38
+  -23.51 127.83
+endline
+
+line survey
+  -49.22 101.38
+  -43.62 97.91
+endline
+
+line survey
+  -49.22 101.38
+  -52.83 157.05
+endline
+
+line survey
+  -49.22 101.38
+  -52.99 163.03
+endline
+
+line survey
+  -49.22 101.38
+  -44.14 106.65
+endline
+
+line survey
+  -23.51 127.83
+  -72.79 121.3
+endline
+
+line survey
+  -23.51 127.83
+  -28.19 139.8
+endline
+
+line survey
+  -23.51 127.83
+  -34.27 113.11
+endline
+
+line survey
+  -23.51 127.83
+  -15.03 119.72
+endline
+
+line survey
+  -23.51 127.83
+  3.32 112.72
+endline
+
+line survey
+  -23.51 127.83
+  -11.86 124.61
+endline
+
+line survey
+  -11.86 124.61
+  -10.86 125.08
+endline
+
+line survey
+  -11.86 124.61
+  -13.07 124.76
+endline
+
+line survey
+  -11.86 124.61
+  -11.9 128.78
+endline
+
+line survey
+  -11.86 124.61
+  -14.13 113.58
+endline
+
+line survey
+  -11.86 124.61
+  17.44 32.87
+endline
+
+line survey
+  17.44 32.87
+  -102.4 29.8
+endline
+
+line survey
+  17.44 32.87
+  17.82 32.87
+endline
+
+line survey
+  17.44 32.87
+  -3.34 103.66
+endline
+
+line survey
+  17.44 32.87
+  -36.56 -163.03
+endline
+
+line survey
+  17.44 32.87
+  78.55 -54.84
+endline
+
+line survey
+  17.44 32.87
+  76.86 6.26
+endline
+
+line survey
+  76.86 6.26
+  88.87 44.53
+endline
+
+line survey
+  76.86 6.26
+  84.02 25.0
+endline
+
+line survey
+  76.86 6.26
+  -4.91 8.86
+endline
+
+line survey
+  76.86 6.26
+  62.39 60.75
+endline
+
+line survey
+  76.86 6.26
+  102.4 16.5
+endline
+
+point -49.22 101.38 station-name -align tr -scale xs -text 1
+
+point -23.51 127.83 station-name -align tr -scale xs -text 2
+
+point -11.86 124.61 station-name -align tr -scale xs -text 3
+
+point 17.44 32.87 station-name -align tr -scale xs -text 4
+
+point 76.86 6.26 station-name -align tr -scale xs -text 5
+
+point 102.4 16.5 station-name -align tr -scale xs -text 6
+
+endscrap
+
+
+
+scrap dmtw-2e -projection extended -scale [7.87402 1 m]
+
+point -52.8796 144.6825 water-flow -orientation 198.567 -scale s
+
+point -48.0316 178.1739 continuation -scale s
+
+point -16.4338 220.9668 label -align l -attr level 3 -scale xs -text DMTW
+
+line wall
+  -25.5944 142.2291
+  -30.258 143.2493 -28.1911 142.0745 -32.126 140.4715
+  -36.0608 138.8684 -38.8298 140.4715 -42.036 141.9288
+  -45.2421 143.3862 -44.8049 155.4822 -45.0964 157.9597
+  -45.3879 160.4372 -36.7895 171.8045 -36.7895 171.8045
+endline
+
+line wall
+  -60.2529 166.8495
+  -60.3986 165.5379 -64.9164 151.9845 -65.2079 149.6528
+  -65.4993 147.321 -72.9318 127.7925 -73.5148 125.6065
+  -74.0977 123.4205 -72.9318 117.7368 -77.0124 115.988
+  -81.093 114.2391 -79.5198 115.4053 -84.8821 110.1586
+  -85.9846 109.0798 -89.3176 108.4201 -90.0109 108.5749
+  smooth off
+endline
+
+line wall
+  -64.6249 99.0827
+  -62.8761 103.1633 -62.2932 101.123 -55.7351 101.123
+  -43.7812 101.123 -49.0313 94.4192 -44.6592 96.4595
+  -40.2872 98.4997 -31.3973 108.264 -29.94 112.6361
+  -29.0782 115.2214 -26.5856 117.603 -24.0293 118.9971
+endline
+
+point -23.51 127.83 station -name 2
+
+point -49.22 101.38 station -name 1
+
+endscrap
+
+
+
+scrap dmtw-1e -projection extended -scale [7.87402 1 m]
+
+line wall
+  5.7651 111.1787
+  5.7651 111.1787 1.659 118.3043 -0.3557 121.6716
+  -2.3145 124.9455 -1.993 122.591 -10.5572 129.6871
+  -15.6579 133.9134 -20.9309 141.209 -25.5944 142.2291
+endline
+
+line wall
+  -24.0293 118.9971
+  -22.2628 119.9606 -20.4658 120.4525 -19.1556 120.2143
+  -15.9494 119.6313 -13.0347 114.0934 -12.1603 112.0531
+  -11.2859 110.0128 -11.4316 110.3043 -11.8688 107.8268
+endline
+
+point -23.51 127.83 station -name 2
+
+point -11.86 124.61 station -name 3
+
+point 17.44 32.87 station -name 4
+
+point 76.86 6.26 station -name 5
+
+point 102.4 16.5 station -name 6
+
+endscrap
+
+

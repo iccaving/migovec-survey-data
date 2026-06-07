@@ -29,25 +29,27 @@ survey smer0
 	endmap
 
 	map  m-all-e -projection extended
-		smer0-1e
-		smer0-2e
+		smer0-0e #Split layer 1 into 0 and 1 to allow for join with resurvey (which has more detail)
+		#smer0-1e #Covered by resurvey
+		#smer0-2e # Covetred by resurvey
 	endmap
 
-	join smer0p_2 smer0p_1
+	#join smer0p_2 smer0p_1 #Join only required if visualising the individual survey
 	join smer0p_3 smer0p_2
 	join smer0p_3 smer0p_6
 	join smer0p_6 smer0p_4
 	join smer0p_4 smer0p_5
 
+	#join smer0-0e smer0-1e #Join only required if visualising the individual survey
 	join smer0-1e smer0-2e
 
 	map m-all-p -projection plan
 		m1p
-		m2p
-		m3p
-		m4p
-		m5p
-		m6p
+		#m2p #Covered by resurvey
+		#m3p #Covered by resurvey
+		#m4p #Covered by resurvey
+		#m5p #Covered by resurvey
+		#m6p #Covered by resurvey
 	endmap
 
 	centreline
@@ -65,7 +67,7 @@ survey smer0
 		units length meters
 		units compass clino degrees
 		data normal from to length compass clino
-		extend left
+		extend right
 		1  0  29.9  296  42
 		2  1  17  33  14
 		3  2  19.4  59  38
@@ -114,9 +116,7 @@ survey smer0
 		46  45  22.2  13  23
 		47  46  7.9  335  -15
 		48  47  13.7  287  9
-		extend right
 		49  48  8.4  314  34
-		extend left
 		50  49  12.3  296  -10
 		51  50  10.4  5  20
 		52  51  4.6  348  -48
@@ -124,7 +124,6 @@ survey smer0
 		54  53  6.4  50  12
 		55  54  6.8  323  -9
 		56  55  7.6  65  2
-		extend left
 		57  56  5.3  32  47 #point 57 end of rope in gallery second pitch
 
 

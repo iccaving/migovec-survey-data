@@ -1,15 +1,46 @@
 # 2025.07.25 created by TopoDroid v 6.2.44
 
-survey loosely_horsey -title "loosely horsey"
-    # Laura bolt climb, st 0 is st17 of sparkle highway 
+survey loosely_horsey -title "Loosely Horsey"
+  # Laura bolt climb, st 0 is st17 of sparkle highway 
+  #STN 4,5,6 are a little Oxbow with small waterfall descending from the right hand wall of the rift as you look down
+  #Lead in direction of STN 8,9 is a drafting passage which develops into a tall rift with multiple leads.
+  #Over the top of the bolt climb the rift continues in the roof of sparkle junction (there is no floor there) where it joins the entrance to the chamber
+  #Chris Hayes, remembered 06/Jan/2025.
+  #Rift in floor at 3 leads to a small oxbow that goes back to initial climb Thurston Blount, remembered 06/Jan/2025.
 
+
+#  input "loosely_horsey-looses.th2"
+input "loosely_horsey-p.th2"
+input "loosely_horsey-e.th2"
+
+map m-all-p -projection plan
+  loosely_horsey-1p
+  break
+  loosely_horsey-2p
+  loosely_horsey-3p
+endmap
+join loosely_horsey-1p loosely_horsey-2p
+join loosely_horsey-2p loosely_horsey-3p
+join loosely_horsey-3p loosely_horsey-1p 
+map m-all-e -projection extended
+  loosely_horsey-1e
+  loosely_horsey-2e
+endmap
+join loosely_horsey-1e loosely_horsey-2e
+  
   centerline
     date 2025.07.24 
-    # team tb JJ ep 
+    team "Thurston Blount"
+    team "Julien Jean"
+    team "Ellie Pizey"
+    explo-date 2025.07.24
+    explo-team "Thurston Blount"
+    explo-team "Julien Jean"
+    explo-team "Ellie Pizey"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
-    extend right
+    extend left
     0 1 9.99 10.1 33.1
     1 2 3.04 54.2 80.7
     # extend auto
@@ -41,7 +72,7 @@ survey loosely_horsey -title "loosely horsey"
     2 . 1.88 189.2 -1.7
     2 . 1.45 207.7 -4.6
     2 . 2.06 213.9 -23.0
-    extend right
+    extend left
     2 3 4.62 355.3 5.7
     # extend auto
     3 . 0.79 86.1 2.0
@@ -82,7 +113,7 @@ survey loosely_horsey -title "loosely horsey"
     3 . 5.30 180.8 30.4
     3 . 4.29 171.0 42.9
     3 . 3.46 168.0 63.4
-    extend right
+    extend left
   # backwards jct
     3 4 1.20 340.3 -64.4
     # extend auto
@@ -112,7 +143,7 @@ survey loosely_horsey -title "loosely horsey"
     4 . 0.82 225.3 -19.9
     4 . 2.49 223.2 -21.2
     4 . 3.23 224.9 -30.6
-    extend left
+    extend right
     4 5 3.82 216.3 -19.5
     # extend auto
     5 . 0.69 127.7 -4.7
@@ -148,7 +179,7 @@ survey loosely_horsey -title "loosely horsey"
     5 . 2.92 39.7 -5.4
     5 . 2.17 42.1 -17.6
     5 . 1.64 46.9 -38.5
-    extend left
+    extend right
     5 6 2.14 184.7 -5.8
     # extend auto
     6 . 0.51 44.8 -1.6
@@ -181,7 +212,7 @@ survey loosely_horsey -title "loosely horsey"
     6 . 1.35 319.2 11.0
     6 . 0.64 338.0 47.9
     6 . 0.41 45.2 71.7
-    extend right
+    extend left
     4 8 4.64 358.2 42.7
     # extend auto
     8 . 0.85 247.1 1.7
@@ -215,7 +246,7 @@ survey loosely_horsey -title "loosely horsey"
     8 . 3.91 287.2 79.0
     8 . 2.04 314.5 69.3
     8 . 1.85 277.4 72.9
-    extend right
+    extend left
     8 9 4.45 324.5 2.6
     # extend auto
     9 . 0.75 50.1 2.1
@@ -254,7 +285,7 @@ survey loosely_horsey -title "loosely horsey"
     9 . 1.48 72.0 85.6
     9 . 3.38 261.7 -81.8
     9 . 2.38 292.5 -72.0
-    extend right
+    extend left
   # cairn above lead to right of another
     9 10 6.49 318.1 -8.5
     # extend auto
@@ -301,7 +332,7 @@ survey loosely_horsey -title "loosely horsey"
     10 . 3.96 138.1 -37.9
     10 . 2.36 137.8 -48.5
     10 . 1.55 122.6 -56.3
-    extend right
+    extend left
     10 13 4.74 325.4 2.3
     # extend auto
     13 . 1.17 82.4 -8.7
@@ -335,7 +366,7 @@ survey loosely_horsey -title "loosely horsey"
     13 . 5.53 91.5 78.7
     13 . 0.64 145.7 44.0
     13 . 1.10 85.4 13.5
-    extend right
+    extend left
     13 15 5.25 23.8 0.3
     # extend auto
     15 . 0.64 264.1 -2.3
@@ -386,7 +417,7 @@ survey loosely_horsey -title "loosely horsey"
     15 . 0.91 247.5 66.6
     15 . 2.46 204.2 80.8
     15 . 3.74 257.2 83.0
-    extend right
+    extend left
     15 17 4.44 334.0 -6.1
     # extend auto
     17 . 0.60 236.1 -9.9
@@ -430,7 +461,7 @@ survey loosely_horsey -title "loosely horsey"
     17 . 1.08 304.7 12.0
     17 . 2.97 276.3 11.7
     17 . 1.19 270.6 21.0
-    extend right
+    extend left
     17 19 4.94 279.5 10.6
     19 21 2.00 322.5 -18.0
     # extend auto
@@ -480,17 +511,5 @@ survey loosely_horsey -title "loosely horsey"
     21 . 0.79 98.4 -40.8
     21 . 0.90 295.5 -37.1
   endcenterline
-
-  # input "loosely_horsey-loosep.th2"
-  # input "loosely_horsey-looses.th2"
-
-  # map mloosep -projection plan
-  #   loosely_horsey-loosep
-  #   loosely_horsey-loosep1
-  # endmap
-  # map mlooses -projection extended
-  #   loosely_horsey-looses
-  #   loosely_horsey-looses1
-  # endmap
 
 endsurvey

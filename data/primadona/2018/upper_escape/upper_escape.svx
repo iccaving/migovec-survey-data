@@ -1,0 +1,38 @@
+;####Upper escape####:
+;###Traverse over Lost and Found pitch###
+*date 2018.07.16 ; Expedition Klic Globin
+
+;Disto: David II Wilson
+;PDA: Arun Paul
+;Data entered by Tanguy Racine on 27/07/2018
+
+*begin upper_escape
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 page
+
+;Page 1
+0	1	4.14	273	-55
+1	2	2.78	304	-35
+2	3	2.06	267	-21
+3	4	3.55	9.3	-30
+4	5	4.97	268	-77
+5	6	0.64	132	-33
+6	7	4.43	178	-62
+
+
+;NOTES 
+
+;STN7 is Prima2 STN30
+
+
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end upper_escape
+*equate prima2.30	upper_escape.7
+
+
+

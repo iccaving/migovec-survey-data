@@ -1,3 +1,4 @@
+encoding  utf-8
 # 2025.07.26 created by TopoDroid v 6.2.44
 
 source "./kalifax.th"
@@ -7,11 +8,11 @@ layout topodroid
   symbol-show group centerline
   symbol-show point station
   debug station-names
+  scale 1 80
 endlayout
 
 select msketch1p@kalifax
 export map -layout topodroid -o kalifax-p.pdf -proj plan 
 
 select msketch1s@kalifax
-export map -layout topodroid -o kalifax-s.pdf -proj extended 
-
+export map -layout topodroid -o kalifax-s.pdf -proj extended

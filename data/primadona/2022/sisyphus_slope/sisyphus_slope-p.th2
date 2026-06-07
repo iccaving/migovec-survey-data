@@ -1,14 +1,18 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 500.0 1000.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap sisyphus_slope-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 305.9854 511.3463 water-flow -orientation 249.678490112
-point 378.8573 534.5724 water-flow -orientation 249.678490112
-point 081.1251 550.4522 label -align tl -attr level 2 -scale l -text "Sysiphus's Slope"
-line wall 
+point 305.9854 511.3463 water-flow -orientation 249.678
+
+point 378.8573 534.5724 water-flow -orientation 249.678
+
+point 120.6922 550.5251 label -align tl -attr level 2 -scale xs -text "Sysiphus's Slope"
+
+line wall
   271.8485 478.5487
   273.819 481.5607 274.5519 481.4262 278.072 479.4756
   281.6472 478.0191 291.5784 477.357 294.8888 478.946
@@ -25,7 +29,7 @@ line wall
   445.3125 617.3199 443.7235 618.7765 443.7235 618.7765
 endline
 
-line wall 
+line wall
   434.6216 620.1967
   434.6216 620.1967 400.0884 609.5425 397.0921 606.7336
   394.0959 603.9246 375.8377 591.0971 370.9689 590.1608
@@ -60,19 +64,35 @@ line wall
 endline
 
 point 84.45 445.83 station -name 1
+
 point 101.14 430.08 station -name 2
+
 point 130.43 473.23 station -name 3
+
 point 113.82 497.87 station -name 4
+
 point 171.93 496.54 station -name 5
+
 point 209.49 499.84 station -name 6
+
 point 232.95 501.34 station -name 7
+
 point 232.32 480.63 station -name 8
+
 point 258.31 497.72 station -name 9
+
 point 284.29 511.97 station -name 10
+
 point 324.37 514.8 station -name 11
+
 point 351.61 523.54 station -name 12
+
 point 395.63 540.63 station -name 13
+
 point 401.77 552.28 station -name 14
+
 point 419.96 582.68 station -name 15
+
 endscrap
+
 

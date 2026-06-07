@@ -9,8 +9,11 @@ survey galerija
 		break
 		galerija-2e
 		galerija-3e
+		galerija-4e
 	endmap
-
+	#join galerija-1e galerija-2e #Done at Map level
+	join galerija-1e galerija-3e
+	join galerija-3e galerija-4e
 
 	map m3p -projection plan
 		galerijap_3
@@ -64,35 +67,38 @@ survey galerija
 		extend vertical
 		1	2	27.6	0	+90	#stn 1 Rokovo brezno
 		flags not splay
-		extend left
+		extend right
 		2	3	2.05	13	+39	#stn 3 PSS svedrovec vijola konec risticeve vizure
-		extend left
+		extend right
 		3	4	5.15	23	36
 		#4a	5	8.55	38	-18
-		extend left
+		extend right
 		4	5	3.9	44	9
-		extend left
+		extend right
 		5	6	5.05	338	30
-		extend left
+		extend right
 		6	7	8.1	33	2
-		extend left
+		extend right
 		7	8	6.05	12	32
-		extend left
+		extend right
 		8	9	8.7	73	-13	#9 na kamnu pri robu jezera
+		extend right
 		9	10	7.95	46	24.5
+		extend right
 		10	11	14.05	14	-1.5	#pss papir s podatki
-		extend left
+		extend right
 		11	12	16.7	63	2
-		extend left
+		extend right
 		12	13	11.2	86	6
-		extend left
+		extend right
 		13	14	12.65	78	-3.5
-		extend left
+		extend right 
 		14	15	12.3	24	0
-		extend left
+		extend right
 		15	16	4.85	51	35
-		extend left
-		16	17	4.5	100	0	#direkt pod strikom drugega brezna v galeriji
+		extend right
+		16	17	4.5		100	0	#direkt pod strikom drugega brezna v galeriji
+		extend right
 		17	18	21.3	0	90	#pss svedrovc
 		extend left
 		18	19	4.3	0	68	#pss svedrovc

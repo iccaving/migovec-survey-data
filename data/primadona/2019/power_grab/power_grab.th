@@ -6,6 +6,7 @@ survey power_grab -title "Power Grab"
 	
 	map m-all-e -projection extended
 		power_grab-1e
+		power_grab-2e
 	endmap
 	input "power_grab-p.th2"
 	map m-all-p -projection plan
@@ -14,6 +15,7 @@ survey power_grab -title "Power Grab"
 		power_grab-3p
 	endmap
 	join power_grab-2p power_grab-3p
+	join power_grab-1e power_grab-2e
 	centerline
 		date 2019.07.20
 		explo-date 2019.07.20

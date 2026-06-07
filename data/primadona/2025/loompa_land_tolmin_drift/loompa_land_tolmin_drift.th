@@ -1,21 +1,29 @@
 # 2025.07.25 created by TopoDroid v 6.2.44
 
 survey loompa_land_tolmin_drift -title "loompa land tolmin drift"
-
+# Continuation of "2 Loompa 2 Land" STN16 is STN0 of 2 loompa 2 land
   input "loompa_land_tolmin_drift-1p.th2"
   input "loompa_land_tolmin_drift-1s.th2"
 
-  map m1p -projection plan
+  map m-all-p -projection plan
     loompa_land_tolmin_drift-1p
+    loompa_land_tolmin_drift-2p
   endmap
-
-  map m1s -projection extended
+  join loompa_land_tolmin_drift-1p loompa_land_tolmin_drift-2p
+  map m-all-e -projection extended
     loompa_land_tolmin_drift-1s
   endmap
 
   centerline
     date 2025.07.22 
-    # team AE BR CH 
+    # team AE BR CH
+    team "Aurelia Eberhardt" dog
+    team "Ben Richards" dog
+    team "Chris Hayes" dog
+    explo-date 2025.07.22
+    explo-team "Aurelia Eberhardt"
+    explo-team "Ben Richards"
+    explo-team "Chris Hayes"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

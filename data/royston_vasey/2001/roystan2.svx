@@ -1,0 +1,26 @@
+; Roystan Vasey top of second pitch to entrance pitch backup bolt
+
+;Date: 01/08/01
+;Instruments: Ben Ogborne
+;Book: Ed Austin
+
+;Data entered by Ben Ogborne on 05/08/01
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+;*fix roystan2.7	5404911.90	5123802.37	1847.59
+*entrance roystan2.7
+
+*equate	roystan2.1	roystan1.6
+
+*begin roystan2
+
+2	1	5.56	234	-36	;stn1 is knot at top of 2nd pitch
+3	2	3.05	185	-25
+4	3	3.55	171	-10
+5	4	8.16	297	-76
+6	5	3.31	264	-36
+7	6	1.65	189	-04	;stn7 is top back up bolt of entrance pitch
+
+*end roystan2

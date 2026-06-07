@@ -567,9 +567,13 @@ endscrap
 
 scrap pandoras_approach-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-point 138.4719 439.317 label -align r -attr level 3 -scale xs -text "Balcony of the Equestrians<lang:sl>Balkon Konjenikovsmrtni"
+point 414.1981 471.0425 air-draught -orientation 336.044
 
-point 137.219 522.3418 label -align l -attr level 3 -scale xs -text "Death Slide<lang:sl>Smrtni Tobogan"
+point 421.8112 454.1576 continuation
+
+point 158.9464 406.9451 label -align r -attr level 3 -scale xs -text "<it>Balcony of the<br><centre>Equestrians<lang:sl><it><centre>Balkon<br>Konjenikovsmrtni"
+
+point 137.219 522.3418 label -align l -attr level 4 -scale xs -text "<it>Death Slide<lang:sl><it>Smrtni Tobogan"
 
 line rock-border -close on
   252.5825 539.952
@@ -690,9 +694,17 @@ line wall
   252.2847 520.6919 265.4074 505.2727 269.3442 505.6008
   273.2811 505.9288 288.0442 512.8183 292.9652 511.506
   297.8862 510.1937 355.2982 494.4464 357.9227 493.4622
-  360.5473 492.478 405.4927 474.4343 408.4453 475.4185
-  411.3979 476.4027 418.9435 479.0272 419.5996 485.2605
-  420.2558 491.4938 428.1294 513.8025 434.0346 515.1147
+  360.171 492.6191 399.9868 478.6362 407.6642 476.3065
+  smooth off
+  408.62 474.7637 409.3589 473.272 409.7822 471.3335
+  smooth off
+endline
+
+line wall
+  417.1658 473.5115
+  415.5877 477.0953 415.2863 477.9474 415.1997 479.9471
+  smooth off
+  416.4501 486.329 428.1294 513.8025 434.0346 515.1147
   439.9399 516.427 440.9241 517.0832 444.2048 515.4428
   447.4855 513.8025 450.7661 506.585 454.703 509.5376
   458.6398 512.4902 483.8697 526.7634 484.5258 530.3721

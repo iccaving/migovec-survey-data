@@ -44,28 +44,44 @@ endmap
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall # Default
+		extend right
 		31	32	2.85	132	 -10.5	;Stn.31 is a carbide mark on wall of chamber
 		32	33	1.86	175	 -20	;Stn 32 is a cairn
+		extend vertical
 		33	34	4.00	-	 down
+		extend right
 		33	35	6.31	099	 +23
+		extend right
 		35	36	4.48	1.79	-22
+		extend left 37 36
 		36	37	5.83	147	 -51	;Stn 37 is first bolt of Brezno Strahov
+		extend left 38 37
 		37	38	2.74	186	 -62	;Stn 38 is second bolt of Brezno Strahov
+		extend left 38 39
 		38	39	1.53	130	 -41	;Stn 39 is third bolt of Brezno Strahov
+		extend right 38 40
 		38	40	9.80	156	 -56
 
+		extend vertical
 		40	41	19.80   158	 -70	;Stn.41 is a cairn in Strahov chamber
+		extend right
 		41	42	6.72	268	 +1
+		extend vertical
 		42	43	4.00	-	 down
 
 		# ;*ref https://drive.google.com/open?id=0BxkZAUc06EK5dDBrM19jWU1oXzg
 		# ;*ref https://drive.google.com/open?id=0BxkZAUc06EK5TG1jZHFEQ3IwV0U
+		extend left
 		41	44	8.05	306	 -32
 		44	45	7.62	022	 -40	;Stn 45 is top bolt of pitch after below Brezno Stahov
 		45	46	0.62	317	 -21
+		extend vertical
 		46	47	8.15	-	 down
+		extend left
 		47	48	6.07	025	 -23
+		extend vertical
 		48	49	10.80   -	 down
+		extend left
 		49	50	10.35   057	 +16	;Stn 50 is a PSS cairn in centre of chamber
 
 	endcentreline
