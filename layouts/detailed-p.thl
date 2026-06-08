@@ -5,6 +5,7 @@ input metapost/points.thl
 input metapost/lines.thl
 input metapost/areas.thl
 input metapost/scalebar_arrow.thl
+input metapost/connection_marker.thl
 
 layout detailed-p
 
@@ -14,6 +15,7 @@ layout detailed-p
   copy custom_areas
   copy custom_arrow
   copy custom_scalebar
+  copy connection_marker
 
 
   ## general statements

@@ -1,17 +1,24 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 500.0 1000.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap house_of_cards_2-3p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
 point 252.7485 460.6566 station-name -align t -scale xs -text 5
+
 point 226.7263 467.2368 station-name -align t -scale xs -text 4
+
 point 218.4724 446.342 station-name -align t -scale xs -text 3
+
 point 209.601 463.0773 station-name -align t -scale xs -text 2
+
 point 196.0828 463.0773 station-name -align t -scale xs -text 1
+
 point 193.9381 436.4309 station-name -align t -scale xs -text 0
-line border -close on -id house_of_cards_2-3p_u_smallblocks_1 -visibility off
+
+line border -id house_of_cards_2-3p_u_smallblocks_1 -close on -visibility off
   270.1712 496.8309
   270.1712 496.8309 256.4318 496.5044 248.3119 492.907
   237.3136 488.0343 231.1169 472.3849 230.8789 472.0148
@@ -25,14 +32,16 @@ line border -close on -id house_of_cards_2-3p_u_smallblocks_1 -visibility off
   292.1381 463.0074 290.8973 463.6048 290.3918 463.8806
   290.1407 464.0175 294.0926 472.612 291.9358 479.9326
   289.7507 487.3489 281.458 493.4917 281.458 493.4917
+  270.1712 496.8309
 endline
 
-area u:smallblocks 
+area u:smallblocks
   house_of_cards_2-3p_u_smallblocks_1
 endarea
 
 point 258.6182 440.0885 label -align tr -scale xs -text "Unascended<br>steep tube<br>needs protection"
-line pit 
+
+line pit
   187.951 433.796
   188.13 434.5244 188.3222 435.2495 188.5218 435.9725
   189.0169 438.2644 190.9967 441.4952 188.0909 442.9883
@@ -40,7 +49,7 @@ line pit
   175.0951 445.9159 172.258 443.6032 169.2163 442.0165
 endline
 
-line pit 
+line pit
   257.0788 454.288
   256.9343 455.8932 257.3091 457.7143 258.6733 458.7251
   259.6301 459.5994 260.6858 460.5465 262.0436 460.6481
@@ -50,12 +59,14 @@ line pit
   271.3596 457.4813 271.4028 457.4075 271.4458 457.3335
 endline
 
-point 264.3657 454.4353 continuation 
+point 264.3657 454.4353 continuation
+
 line rock-border -close on
   230.535 453.125
   233.5805 453.1912 243.1806 455.5747 243.1806 455.5747
   243.4454 451.9333
   232.3888 446.3056
+  230.535 453.125
 endline
 
 line rock-border -close on
@@ -63,6 +74,7 @@ line rock-border -close on
   222.1928 445.8422
   230.2701 448.358
   221.928 466.6976
+  216.6976 462.1292
 endline
 
 line rock-border -close on
@@ -70,6 +82,7 @@ line rock-border -close on
   203.7871 463.652
   204.714 458.3554
   201.4036 455.6409
+  199.0201 460.143
 endline
 
 line rock-border -close on
@@ -77,9 +90,10 @@ line rock-border -close on
   204.9126 456.634 200.2119 441.9359 200.8077 441.9359
   201.4036 441.9359 218.0217 443.8559 218.0217 443.8559
   211.732 455.6409
+  204.9126 456.634
 endline
 
-line rock-edge 
+line rock-edge
   206.3735 466.5336
   205.9349 463.2696 205.4503 459.9893 204.5135 456.8254
   204.2163 455.2514 203.2363 453.9303 201.4899 454.3414
@@ -88,7 +102,7 @@ line rock-edge
   174.3636 445.9279 172.1934 443.7834 169.7417 442.0357
 endline
 
-line wall 
+line wall
   187.951 433.796
   192.6507 432.1956
   192.6507 432.1956 201.4145 441.2669 203.1058 441.7282
@@ -97,7 +111,7 @@ line wall
   237.0496 448.6934 245.2279 451.1967 257.0788 454.288
 endline
 
-line wall 
+line wall
   271.4458 457.3335
   274.6848 460.3314 284.2307 461.0172 287.0541 460.3321
   293.472 458.7749 291.8204 482.4723 283.8253 488.4686
@@ -109,41 +123,63 @@ line wall
   206.9496 469.4034 207.7183 467.2509 206.4883 466.7897
   205.2583 466.3284 202.0295 471.556 199.1082 471.8635
   196.187 472.171 193.7269 468.0197 189.4219 464.7909
-  185.1168 461.5621 152.2742 450.1584 155.3492 446.9297
-  158.4242 443.7009 169.2163 442.0165 169.2163 442.0165
+  185.1168 461.5621 175.0483 454.3835 173.7952 451.1548
+  172.1819 446.9981 169.2163 442.0165 169.2163 442.0165
 endline
 
 point 192.28 435.12 station -name 0
+
 point 193.54 462.76 station -name 1
+
 point 211.89 461.34 station -name 2
+
 point 216.22 452.36 station -name 3
+
 point 225.28 466.38 station -name 4
+
 point 256.85 461.57 station -name 5
+
 endscrap
+
 
 
 scrap house_of_cards_2-2p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 point 286.006 527.2506 label -align t -text "<bf>P19"
+
 point 327.9664 476.0926 label -align t -text "<bf>P31"
+
 point 315.732 483.7937 station-name -align t -scale xs -text 15
+
 point 314.2387 489.6091 station-name -align t -scale xs -text 16
+
 point 308.3508 497.546 station-name -align t -scale xs -text 14
+
 point 305.7134 467.3559 station-name -align t -scale xs -text 13
+
 point 276.0548 489.7911 station-name -align t -scale xs -text 12
+
 point 289.1982 453.8996 station-name -align t -scale xs -text 11
-point 255.1062 448.3361 station-name -align t -scale xs -text 10
+
+point 260.102 451.8804 station-name -align t -scale xs -text 10
+
 point 266.4203 461.4335 station-name -align t -scale xs -text 9
+
 point 272.0486 474.1721 station-name -align t -scale xs -text 8
+
 point 268.604 475.6669 station-name -align t -scale xs -text 7
+
 point 264.0547 482.9135 station-name -align t -scale xs -text 6
-point 205.5877 504.2299 label -align tr -text "House of Cards 2"
+
+point 220.3069 516.0345 label -align tr -text "House of Cards 2"
+
 line rock-border -close on
   286.2362 481.6636
   287.5536 480.5683 288.871 479.473 290.1884 478.3778
   287.0634 477.4433 283.9384 476.5089 280.8134 475.5744
   280.0398 476.2791 279.2662 476.9838 278.4927 477.6884
   278.9216 477.7803 279.1207 477.9412 279.5841 478.0101
+  286.2362 481.6636
 endline
 
 line rock-border -close on
@@ -152,6 +188,7 @@ line rock-border -close on
   281.4798 485.7996 280.6985 488.0055 280.6985 488.0055
   277.8033 486.443
   275.0 484.9035
+  276.5395 484.0993
 endline
 
 line rock-border -close on
@@ -159,9 +196,10 @@ line rock-border -close on
   279.0082 484.3811
   282.2578 484.2512
   281.3479 480.0267
+  277.1885 481.9765
 endline
 
-line border -close on -id house_of_cards_2-2p_u_smallblocks_1 -visibility off
+line border -id house_of_cards_2-2p_u_smallblocks_1 -close on -visibility off
   278.8603 468.704
   278.8603 468.704 286.7647 456.3879 286.3511 455.7445
   285.9375 455.1011 286.8107 453.079 287.6838 452.8493
@@ -169,13 +207,14 @@ line border -close on -id house_of_cards_2-2p_u_smallblocks_1 -visibility off
   294.807 456.4338 295.9559 457.0312 296.0018 458.0423
   296.0478 459.0533 294.807 459.6507 294.3015 459.9265
   293.796 460.2022 281.4155 470.6038 281.4155 470.6038
+  278.8603 468.704
 endline
 
-area u:smallblocks 
+area u:smallblocks
   house_of_cards_2-2p_u_smallblocks_1
 endarea
 
-line contour 
+line contour
   305.3496 453.3898
   305.3496 453.3898 301.9399 455.2768 300.9799 455.343
   300.0199 455.4092 297.0405 459.5802 294.0281 460.4409
@@ -205,7 +244,7 @@ line pit -close on
   282.1837 462.7727 281.0046 465.3079 279.2307 467.459
 endline
 
-line wall 
+line wall
   295.4701 512.4305
   293.2688 512.1404 292.0624 511.1819 290.4965 510.3307
   285.4263 503.7761 277.4607 504.8312 270.9271 500.3286
@@ -261,31 +300,53 @@ line wall
 endline
 
 point 268.35 484.33 station -name 6
+
 point 265.98 478.58 station -name 7
+
 point 275.35 476.93 station -name 8
+
 point 270.16 467.09 station -name 9
+
 point 256.54 455.35 station -name 10
+
 point 287.72 461.02 station -name 11
+
 point 276.85 487.48 station -name 12
+
 point 310.47 466.77 station -name 13
+
 point 313.7 500.24 station -name 14
+
 point 321.02 488.9 station -name 15
+
 point 319.69 492.52 station -name 16
+
 endscrap
+
 
 
 scrap house_of_cards_2-1p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
 point 336.4339 561.8977 station-name -align t -scale xs -text 26
+
 point 318.2319 554.9124 station-name -align t -scale xs -text 25
+
 point 329.8622 552.8903 station-name -align t -scale xs -text 24
+
 point 345.2823 540.8394 station-name -align t -scale xs -text 23
+
 point 337.6995 536.1978 station-name -align t -scale xs -text 22
+
 point 320.1235 536.7599 station-name -align t -scale xs -text 21
+
 point 311.5297 529.7286 station-name -align t -scale xs -text 20
+
 point 324.5353 522.4216 station-name -align t -scale xs -text 19
+
 point 317.8677 514.197 station-name -align t -scale xs -text 18
+
 point 308.125 514.1051 station-name -align t -scale xs -text 17
+
 line wall -close on -outline in
   326.5222 544.8753
   326.7749 544.9672 331.6003 548.2301 331.6003 548.2301
@@ -294,9 +355,10 @@ line wall -close on -outline in
   336.012 548.1611 335.001 545.9093 334.7712 545.7484
   334.5415 545.5876 329.808 543.1749 329.808 543.1749
   328.2316 543.7844
+  326.5222 544.8753
 endline
 
-line pit 
+line pit
   341.1763 522.2625
   339.3404 523.2399 337.1072 523.5355 335.1223 522.8515
   333.8855 522.8309 332.674 522.5304 331.4751 522.2553
@@ -306,7 +368,7 @@ line pit
   305.2036 524.6205 304.2445 525.0122 303.2369 525.1892
 endline
 
-line pit 
+line pit
   332.3766 535.3995
   332.3631 535.9415 332.5525 536.5268 332.2679 537.0303
   332.0799 537.6327 331.9773 538.2777 331.7151 538.8437
@@ -320,16 +382,26 @@ line pit
 endline
 
 point 310.16 520.08 station -name 17
+
 point 316.46 519.84 station -name 18
+
 point 319.45 524.96 station -name 19
+
 point 316.3 528.74 station -name 20
+
 point 325.2 536.14 station -name 21
+
 point 334.17 543.39 station -name 22
+
 point 339.45 544.8 station -name 23
+
 point 331.42 559.69 station -name 24
+
 point 318.9 561.26 station -name 25
+
 point 331.26 564.88 station -name 26
-line wall 
+
+line wall
   323.9694 485.6449
   326.158 487.2317 326.8989 490.5795 329.525 491.3656
   331.9155 492.5183 333.8452 494.4585 335.7255 496.2761
@@ -344,7 +416,7 @@ line wall
   339.0986 542.4263 341.325 544.3948 343.4159 546.4891
 endline
 
-line wall 
+line wall
   330.8956 549.164
   330.2515 549.0352 325.8741 546.1863 325.2865 545.9905
   324.7907 545.8252 324.4672 545.3148 323.9819 545.1207
@@ -372,7 +444,7 @@ line wall
   298.7759 514.9301 299.2987 512.935 295.4701 512.4305
 endline
 
-line pit 
+line pit
   323.8612 485.7551
   322.4964 487.5708 323.1646 489.9568 323.9742 491.8505
   324.7591 493.7728 331.3327 503.2833 330.6757 505.0366
@@ -385,5 +457,7 @@ line pit
 endline
 
 point 319.69 492.52 station -name 16
+
 endscrap
+
 

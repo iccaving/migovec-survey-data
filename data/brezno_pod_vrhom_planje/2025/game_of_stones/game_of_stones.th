@@ -2,15 +2,19 @@
 
 survey game_of_stones -title "Game Of Stones"
 
-  # input "Game_Of_Stones-planp.th2"
-  # input "Game_Of_Stones-plans.th2"
+   input "game_of_stones-p.th2"
+   input "game_of_stones-e.th2"
 
-  # map mplanp -projection plan
-  #   Game_Of_Stones-planp
-  # endmap
-  # map mplans -projection extended
-  #   Game_Of_Stones-plans
-  # endmap
+   map m-all-p -projection plan
+     game_of_stones-1p
+     break
+      game_of_stones-2p
+   endmap
+   map m-all-e -projection extended
+     game_of_stones-1e
+     break
+     game_of_stones-2e
+   endmap
 
   centerline
     date 2025.07.03 
@@ -52,7 +56,7 @@ survey game_of_stones -title "Game Of Stones"
     6 . 2.64 49.5 12.9
     6 . 1.50 140.9 23.8
     6 . 0.35 193.7 76.9
-    extend vertical
+    extend right
     6 8 3.30 90.5 11.6
     8 10 2.13 85.3 16.7
     # extend auto
@@ -98,8 +102,9 @@ survey game_of_stones -title "Game Of Stones"
     16 17 3.25 192.2 -11.6
     extend right
     1 18 21.67 47.5 82.6
+    extend left
     19 18 1.00 165.1 -2.2
-    extend vertical
+    extend right
     19 20 1.47 271.9 -12.0
     # extend auto
     18 . 3.24 176.4 -27.5

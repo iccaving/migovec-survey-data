@@ -79,6 +79,7 @@ layout local
 	scale 1 200
 	symbol-show point label
 	symbol-show point gradient
+	
 
 	#map-comment "Brezno pod Vrhom Planje<br>Cadastral Number: 15056<br>Length: 654 m, Depth: 251 m<br>Entrance elevation: 1870 m<br>Coordinates (lat-long):   \°N /  \°E"
 	symbol-assign line pit MY
@@ -97,6 +98,7 @@ layout local-e
 	symbol-colour line border [0 70 90]
 	symbol-show point label
 	symbol-show area snow
+	
 	scale 1 400
 	#map-image -5 110  ne ../_outputs/brezno_pod_vrhom_planje_plan.pdf
 endlayout
