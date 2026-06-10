@@ -11,6 +11,14 @@ survey popotresni
 		popotresni-kak-2e
 		#popotresni-pop-3e
 	endmap
+	map m-popotresni-kaks-e -projection extended
+		popotresni-kak-1e
+		popotresni-kak-2e
+	endmap
+	map m-popotresni-pops-e -projection extended
+		popotresni-pop-1e
+		popotresni-pop-2e
+	endmap
 
 	join popotresni-kak-1e popotresni-kak-2e
 	join popotresni-pop-1e popotresni-pop-2e

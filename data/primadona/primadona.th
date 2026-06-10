@@ -59,6 +59,12 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join s3_l1@drugi:0 s2_l1@prima1:end
 	join s3_l2@drugi:end s2_l2@prima1:0
 
+	join line3_prima1-2e@prima1:end line3_risanke-1e@risanke:0
+	join line4_prima1-2e@prima1:0 line2_risanke-1e@risanke:end
+
+	join line1_risa2-1e@risa2:0 line1_risanke-1e@risanke:end
+	join line2_risa2-1e@risa2:end line2_risanke-1e@risanke:0
+
 	join galerija-2e@galerija galerija-1e@galerija
 	join drugi-2e@drugi prima1-1e@prima1
 
@@ -98,7 +104,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join galerija-4e@galerija popotresni-kak-2e@popotresni #Join just after Cafe
 	join galerija-3e@galerija popotresni-kak-2e@popotresni #Join at Sejna Soba pitch
 	join galerija-1e@galerija popotresni-kak-2e@popotresni #Join at KVG (Why Man Here)
-	join risa2-1e@risa2 popotresni-pop-1e@popotresni
+	join risa2-1e@risa2 galerija-4e@galerija #Join at chocolate coin junction
 
 
 	###______________2005_____________ ###
