@@ -9,6 +9,8 @@ survey knot_yet_named -title "Knot Yet Named"
 
   map m-all-p -projection plan
     knot_yet_named-1p
+    break
+    knot_yet_named-2p
   endmap
   
   map m-all-e -projection extended
