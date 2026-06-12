@@ -1,19 +1,26 @@
 
 survey upper_escape -title "Upper escape route"
+    input "upper_escape-e.th2"
+    map m-all-e -projection extended
+        upper_escape-1e
+    endmap
+
 centreline
-    team "David Wilson" insts
+    team "David [P Wilson]" insts
     team "Arun Paul" notes
-    explo-team "David Wilson"
+    explo-team "David [P Wilson]"
     explo-team "Arun Paul"
     date 2018.07.16
     units length meters
     units compass clino degrees
     data normal from to tape compass clino ignoreall
+    extend left
     0	1	4.14	273	-55
     1	2	2.78	304	-35
     2	3	2.06	267	-21
     3	4	3.55	9.3	-30
     4	5	4.97	268	-77
+    extend right
     5	6	0.64	132	-33
     6	7	4.43	178	-62
 endcentreline

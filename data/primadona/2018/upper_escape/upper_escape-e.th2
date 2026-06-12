@@ -1,0 +1,165 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250.0 -500.0 250.0 500.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap DELETE-ME-survey-legs-upper_escape-e -projection extended -scale [7.87402 1 m]
+
+line survey
+  42.39 65.39
+  23.69 38.7
+endline
+
+line survey
+  23.69 38.7
+  5.76 26.1
+endline
+
+line survey
+  5.76 26.1
+  -9.38 20.28
+endline
+
+line survey
+  -9.38 20.28
+  -33.59 6.34
+endline
+
+line survey
+  -33.59 6.34
+  -42.39 -31.85
+endline
+
+line survey
+  -42.39 -31.85
+  -38.17 -34.53
+endline
+
+line survey
+  -38.17 -34.53
+  -21.79 -65.39
+endline
+
+point 42.39 65.39 station-name -align tr -scale xs -text 0
+
+point 23.69 38.7 station-name -align tr -scale xs -text 1
+
+point 5.76 26.1 station-name -align tr -scale xs -text 2
+
+point -9.38 20.28 station-name -align tr -scale xs -text 3
+
+point -33.59 6.34 station-name -align tr -scale xs -text 4
+
+point -42.39 -31.85 station-name -align tr -scale xs -text 5
+
+point -38.17 -34.53 station-name -align tr -scale xs -text 6
+
+point -21.79 -65.39 station-name -align tr -scale xs -text 7
+
+endscrap
+
+
+
+scrap upper_escape-1e -projection extended -scale [7.87402 1 m]
+
+point -23.3092 67.8362 label -align t -attr level 4 -scale 0.25 -text "Upper Escape"
+
+line rock-border -close on
+  -10.12 13.3904
+  -9.3913 13.6819 -4.7278 14.5563 -4.7278 14.5563
+  -2.8332 17.7625
+  -10.12 13.3904
+endline
+
+line rock-border -close on
+  -2.8332 14.5563
+  -2.1046 15.7222 1.2473 19.9485 1.2473 19.9485
+  0.8101 17.6168
+  -2.8332 14.5563
+endline
+
+line rock-border -close on
+  -16.2409 4.7921
+  -14.7835 5.5207 -8.2254 7.561 -8.2254 7.561
+  -3.4162 13.6819
+  -10.5572 11.0587
+  -16.2409 4.7921
+endline
+
+line rock-border -close on
+  -28.6284 2.7518
+  -28.1911 4.2091 -19.7385 6.6866 -19.7385 6.6866
+  -17.6982 3.7719
+  -28.6284 2.7518
+endline
+
+line rock-border -close on
+  49.8763 82.9555
+  49.8763 82.9555 48.5367 76.3603 49.258 76.3603
+  49.9794 76.3603 52.8648 77.0816 52.8648 77.0816
+  54.3075 82.2341
+  49.8763 82.9555
+endline
+
+line rock-border -close on
+  50.3061 89.013
+  50.1652 88.3767 47.394 84.1506 47.394 84.1506
+  smooth off
+  47.9448 80.4574
+  51.5873 84.528
+  50.3061 89.013
+endline
+
+line rock-border -close on
+  40.6018 84.7073
+  40.6018 84.7073 38.85 78.7304 39.7774 78.6274
+  40.7049 78.5243 44.7238 78.0091 44.7238 78.0091
+  44.7238 78.0091 44.4147 83.5738 43.6933 83.5738
+  42.972 83.5738 40.6018 84.7073 40.6018 84.7073
+endline
+
+line wall
+  -36.892 -28.751
+  -36.7889 -25.3504 -32.873 0.5152 -30.3998 1.1335
+  -27.9266 1.7518 -20.1978 0.7213 -16.385 2.3701
+  -12.5721 4.0189 -8.5532 5.1525 -7.0074 7.2135
+  -5.4617 9.2745 0.4122 15.8697 2.1641 17.4155
+  3.9159 18.9612 8.5532 21.5375 12.4691 23.7016
+  16.385 25.8656 26.4839 36.2737 32.4609 39.6743
+  38.4378 43.075 44.4147 50.5977 46.1665 55.1319
+  47.9184 59.6661 49.3611 63.9942 49.7733 67.3949
+  50.1855 70.7955 57.1929 84.5012 57.1929 84.5012
+  smooth off
+endline
+
+line wall
+  40.4988 89.7568
+  40.4988 89.7568 36.892 72.3413 35.0371 68.2193
+  33.1822 64.0973 20.404 54.6166 18.343 50.0824
+  16.282 45.5482 4.122 34.0066 2.061 32.1517
+  0.0 30.2968 -21.6405 24.3199 -25.7626 20.61
+  -29.8846 16.9002 -40.3957 9.2745 -41.6323 4.3281
+  -42.8689 -0.6183 -52.3495 -29.2663 -52.5556 -30.9151
+  smooth off
+endline
+
+point 42.39 65.39 station -name 0
+
+point 23.69 38.7 station -name 1
+
+point 5.76 26.1 station -name 2
+
+point -9.38 20.28 station -name 3
+
+point -33.59 6.34 station -name 4
+
+point -42.39 -31.85 station -name 5
+
+point -38.17 -34.53 station -name 6
+
+point -21.79 -65.39 station -name 7
+
+endscrap
+
+
