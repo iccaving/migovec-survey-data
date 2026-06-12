@@ -1,13 +1,15 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0.0 0.0 3571.0 4948.0
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {136.0 1 1.0} {4804.0 {}} ../../../../../../../../AppData/OneDrive/Documents/GitHub/migovec-survey-data/data/OneDrive/Documents/GitHub/migovec-survey-data/data/OneDrive/Documents/GitHub/migovec-survey-data/data/primadona/2001/pov/pov_extend.gif 0 {}
+##XTHERION## xth_me_image_insert {136.0 1 1.0} {4804.0 {}} ../../../../../../../../AppData/OneDrive/Documents/GitHub/migovec-survey-data/data/primadona/2001/pov/pov_extend.gif 0 {}
 
 
 
 scrap pov-1e -projection extended -scale [1382.0 -3962.0 3070.0 -3975.0 0.0 0.0 140 0.0 m]
 
-point 1363.1753 3198.6043 label -align tr -attr level 4 -text Mlinotest
+point 1646.342 3180.8485 u:connection_marker -id povezava -align r -attr code 0 -attr text "to Sejna Soba" -attr offset 0.4
+
+point 1358.0764 3273.0487 label -align tr -attr level 4 -text Mlinotest
 
 line rock-border -close on
   1390.4417 3130.449

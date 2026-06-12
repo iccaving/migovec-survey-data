@@ -1,12 +1,13 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 852.000000 1108.750000
+##XTHERION## xth_me_area_adjust 0.0 0.0 852.0 1108.75
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {129.0 1 1.0} {970.0 {}} ../../../../../../../../AppData/OneDrive/Documents/GitHub/migovec-survey-data/data/primadona/2000/prima2/prima2_extend.gif 0 {}
 
-##XTHERION## xth_me_image_insert {129.000000 1 1.0} {970.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/primadona/2000/prima2/prima2_extend.gif" 0 {}
 
-scrap prima2-1e -scale [247.0 -713.0 524.0 -713.0 0.0 0.0 7 0.0 m] -projection extended
 
-line wall 
+scrap prima2-1e -projection extended -scale [247.0 -713.0 524.0 -713.0 0.0 0.0 7 0.0 m]
+
+line wall
   432.0 679.5
   431.5 678.75 430.5 673.5 430.0 671.25
   429.5 669.0 428.75 666.25 428.75 666.25
@@ -36,7 +37,7 @@ line wall
   190.75 608.5 188.25 608.25 186.75 607.75
 endline
 
-line wall 
+line wall
   192.75 598.25
   192.25 602.0 193.0 599.5 194.0 603.25
   195.05 607.18 200.5 605.75 203.0 606.75
@@ -70,30 +71,54 @@ line wall
 endline
 
 point 435.5 665.75 station -name 19
+
 point 426.5 663.25 station -name 18
+
 point 426.5 653.0 station -name 17
+
 point 404.75 654.25 station -name 16
+
 point 393.75 650.5 station -name 15
+
 point 385.0 648.0 station -name 14
+
 point 385.0 628.75 station -name 13
+
 point 364.5 625.25 station -name 12
+
 point 350.75 644.0 station -name 11
+
 point 338.5 643.5 station -name 10
+
 point 308.25 631.0 station -name 9
+
 point 293.25 624.0 station -name 8
+
 point 279.75 628.25 station -name 7
+
 point 249.0 631.5 station -name 6
+
 point 232.75 631.5 station -name 5
+
 point 223.0 622.0 station -name 4
+
 point 215.5 614.5 station -name 3
+
 point 189.5 605.25 station -name 2
+
 point 180.5 596.0 station -name 1
+
 endscrap
 
 
-scrap prima2-2e -scale [0 0 90 0 0 0 250 0 inch] -projection extended
 
-line wall 
+scrap prima2-2e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+
+point 651.7569 826.8663 label -align t -attr level 3 -scale 0.5 -text "Connection<br>with Lost & Found<br>Upper Chamber"
+
+point 529.6809 846.7162 u:connection_marker -id starajama -align tl -attr code 0 -attr text "to The Rock" -attr offset 0.4
+
+line wall
   585.75 825.75
   585.75 825.75 579.0 821.75 575.75 819.25
   572.5 816.75 570.5 819.25 568.75 819.25
@@ -105,7 +130,7 @@ line wall
   537.25 836.0 536.0 845.75 534.0 847.5
 endline
 
-line wall 
+line wall
   524.25 845.25
   524.25 845.25 523.5 840.25 523.5 839.0
   523.5 837.75 522.75 833.75 522.25 832.25
@@ -121,7 +146,7 @@ line wall
   434.5 841.75 432.5 840.25 432.0 839.5
 endline
 
-line wall 
+line wall
   440.75 830.0
   440.75 832.0 444.5 832.25 444.5 832.25
   444.5 832.25 453.0 830.25 457.75 830.0
@@ -158,17 +183,31 @@ line wall -subtype blocks
 endline
 
 point 679.0 787.5 station -name 32
+
 point 658.75 831.0 station -name 31
+
 point 647.75 835.0 station -name 30
+
 point 587.0 822.25 station -name 29
+
 point 577.75 810.75 station -name 28
+
 point 562.75 816.75 station -name 27
+
 point 546.75 825.25 station -name 26
+
 point 516.0 817.75 station -name 25
+
 point 495.25 831.75 station -name 24
+
 point 473.75 831.25 station -name 23
+
 point 461.0 833.5 station -name 22
+
 point 444.5 836.25 station -name 21
+
 point 434.5 836.0 station -name 20
+
 endscrap
+
 
