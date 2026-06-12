@@ -51,8 +51,6 @@ line wall -subtype invisible
   305.0 557.75
 endline
 
-point 538.5 213.75 label -align t -attr level 3 -scale s -text "Spiral Climb"
-
 point 679.5 139.25 label -align tl -attr level 3 -scale s -text "Lost and"
 
 point 679.5 129.25 label -align bl -attr level 3 -scale s -text Found
@@ -467,6 +465,8 @@ endscrap
 
 scrap prima1-3e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
+point 1027.2869 378.8563 label -align t -attr level 3 -scale s -text "Spiral Climb"
+
 line wall -subtype invisible
   1389.2044 370.5393
   1390.4955 372.9377 1397.6183 386.5683 1398.9772 389.296
@@ -634,12 +634,20 @@ endscrap
 
 scrap prima1-2e -projection extended -scale [247.0 -713.0 506.0 -713.0 0.0 0.0 10 0.0 m]
 
-line wall:blocks -id p_e2_l1
-  720.4509 225.393
-  720.4681 225.2792 720.5151 224.7325 720.567 224.1188
-  720.644 223.2048 720.7289 222.1424 720.7289 222.1424
-  720.7289 222.1424 720.3079 221.5214 725.3079 220.5214
-  730.3079 219.5214 737.0 214.0 737.0 214.0
+line wall -id p_e2_l1 -subtype blocks
+  719.8848 225.4874
+  720.5743 224.745 720.6445 223.7465 720.6768 222.7878
+  720.694 222.5727 720.7116 222.3576 720.7288 222.1424
+endline
+
+line wall -subtype blocks
+  721.4208 216.261
+  722.2774 217.0634 722.9536 220.2897 723.7781 219.9958
+  smooth off
+  725.53 219.5757 726.7361 220.2979 728.3688 219.4929
+  smooth off
+  731.4782 218.0711 734.3275 216.1176 737.0 214.0
+  smooth off
 endline
 
 line wall -subtype invisible
