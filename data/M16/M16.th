@@ -424,6 +424,7 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	equate 16@sunk_cost_series 2@level2n
 
 	join sunk_cost_series-1e@sunk_cost_series level2s-2e@level2s
+	join secret_bonus_chamber-1e@secret_bonus_chamber entrance-1e@entrance
 	
 ###__________2025____________###
 
