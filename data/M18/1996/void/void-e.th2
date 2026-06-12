@@ -1,9 +1,10 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap void-1e -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300] -projection extended
+
+scrap void-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line wall -subtype invisible
   181.4942 197.339
@@ -15,7 +16,7 @@ line wall -subtype invisible
   209.5826 143.3228
 endline
 
-line wall 
+line wall
   209.5826 143.3228
   198.2993 158.4473
   198.2993 158.4473 197.339 164.6892 192.0574 168.0502
@@ -23,10 +24,10 @@ line wall
   182.4545 178.6134 181.4942 197.339 181.4942 197.339
 endline
 
-line wall 
-  -176.4527 207.1819
-  -170.691 210.0628
-  -167.8101 216.0646
+line wall -id void-1e_l5
+  -177.0472 216.9581
+  -171.2855 219.839
+  -167.5459 218.4426
   -159.6477 218.2252
   -151.9654 221.3461
   -151.9654 221.3461 -134.4402 225.1873 -132.5196 225.1873
@@ -79,7 +80,7 @@ line wall
   209.3426 122.4366
 endline
 
-line wall 
+line wall -id void-1e_l4
   156.6851 196.0686
   156.6851 196.0686 153.969 182.9974 153.969 182.4881
   153.969 181.9788 151.4227 179.093 151.4227 179.093
@@ -106,25 +107,43 @@ line wall
   -170.691 227.8281
   -178.8535 225.4274
   -180.774 226.8678
-  -186.2957 225.1873
+  -187.815 225.0552
 endline
 
 point -177.43 221.3 station -name 16
+
 point -188.94 192.8 station -name 17
+
 point -130.3 231.3 station -name 15
+
 point -60.86 215.31 station -name 14
+
 point -31.27 206.26 station -name 13
+
 point -12.66 199.8 station -name 12
+
 point 35.14 188.78 station -name 11
+
 point 55.58 190.91 station -name 10
+
 point 78.06 181.85 station -name 9
+
 point 89.9 177.52 station -name 8
+
 point 119.37 172.32 station -name 7
+
 point 137.85 168.39 station -name 6
+
 point 167.28 91.77 station -name 5
+
 point 167.28 -147.91 station -name 4
+
 point 188.33 -147.91 station -name 3
+
 point 204.94 -148.54 station -name 2
+
 point 204.94 -231.3 station -name 1
+
 endscrap
+
 

@@ -1,17 +1,22 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
+
+
 
 scrap frogshit-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point -22.7474 -40.0625 label -text "Frogshit" -align br -scale l -attr level 3
+point -198.5079 -151.3439 label -align br -attr level 3 -scale xs -text Frogshit
+
 line wall -subtype invisible
   7.3406 154.8206
   4.7456 163.0769
 endline
 
 point -23.002 156.4305 station -name 23
+
 point -8.6576 155.4968 station -name 22
+
 line wall -subtype invisible
   -20.5925 171.4788
   -34.2766 167.9977
@@ -173,24 +178,47 @@ line wall -subtype blocks
 endline
 
 point 20.32 134.21 station -name 21
+
 point 42.18 133.06 station -name 20
+
 point 119.93 130.35 station -name 19
+
 point 143.23 130.76 station -name 18
+
 point 186.91 129.23 station -name 17
+
 point 206.93 133.49 station -name 16
+
 point 222.18 135.9 station -name 15
+
 point 251.25 125.32 station -name 14
+
 point 227.36 110.96 station -name 13
+
 point 187.8 84.28 station -name 12
+
 point 171.56 69.14 station -name 11
+
 point 147.71 69.14 station -name 10
+
 point 137.51 59.29 station -name 9
+
 point 121.88 53.91 station -name 8
+
 point 92.6 44.39 station -name 7
+
 point 73.96 45.37 station -name 6
+
 point 44.11 26.72 station -name 5
+
 point -1.57 2.43 station -name 4
+
 point -132.76 -50.57 station -name 3
+
 point -194.15 -107.82 station -name 2
+
 point -251.25 -157.46 station -name 1
+
 endscrap
+
+

@@ -69,29 +69,27 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 
 
 
-	# EQUATE commands for CONNECTIONS
+	# EQUATE and JOIN commands for CONNECTIONS
 	# NCB and MONATIP
 	equate 6@gallery.M18.m2m16m18 40@mona_tip11.mona_tip.primadona_ubend_mona_tip
-
+	join mona_tip11-5e@mona_tip11.mona_tip.primadona_ubend_mona_tip gallery-3e@gallery.M18.m2m16m18
+	
 	#Wishing Well and Mig Country
 	equate 4@wishing_well2.mona_tip.primadona_ubend_mona_tip 1@migconleft.M16.m2m16m18
-
+	
+	join wishing_well2-1p@wishing_well2.mona_tip.primadona_ubend_mona_tip migcondown-1p@migcondown.M16.m2m16m18
+	join hole@migcondown.M16.m2m16m18 hole2@wishing_well2.mona_tip.primadona_ubend_mona_tip #Mig country pit over 2 scraps
+	
 	# Waterloo and Dreams for the Soul
 	equate 1@dreamsforthesoul.vrtnarija.vrtnarija_vilinska 13@waterloo.M16.m2m16m18
 
-	# JOIN commands for the sketches at connection points
-	# NCB and MONATIP
-	#join mona_tip11-4e@mona_tip11.mona_tip.primadona_ubend_mona_tip gallery-3e@gallery.M18.m2m16m18
 	join dreamsforthesoul-4p@dreamsforthesoul.vrtnarija.vrtnarija_vilinska waterloo-1p@waterloo.M16.m2m16m18
 
-	#Wishing Well and Mig Country
-	join wishing_well2-1p@wishing_well2.mona_tip.primadona_ubend_mona_tip migcondown-1p@migcondown.M16.m2m16m18
-	join hole@migcondown.M16.m2m16m18 hole2@wishing_well2.mona_tip.primadona_ubend_mona_tip #Mig country pit over 2 scraps
-
-
-	# titani genghis kan and fools gold? 
+	# Titanic Genghis/MigCon and Fools Gold
 	equate 7@genghis.M16.m2m16m18 0@fools_gold.mona_tip.primadona_ubend_mona_tip
 
-	# monatip entrance with prima location survey 
+	join migcon-1e@migcon.M16.m2m16m18 fools_gold-1s@fools_gold.mona_tip.primadona_ubend_mona_tip
+
+	# Mona Tip Entrance with prima location survey 
 	equate monatip@prima_location.primadona.primadona_ubend_mona_tip 1@mona_tip1.mona_tip.primadona_ubend_mona_tip
 endsurvey

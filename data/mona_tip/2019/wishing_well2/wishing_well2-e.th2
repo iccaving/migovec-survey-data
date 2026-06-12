@@ -1,19 +1,27 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_adjust 0.0 896.484751476378 266.175273129921 1000.0000246063
 ##XTHERION## xth_me_area_zoom_to 100
+
+
 
 scrap wishing_well2-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 line wall:blocks -clip off -outline none
-  444.0715 525.7633
-  444.0715 525.7633 287.0022 504.8535 284.7925 504.2035
-  282.5827 503.5536 281.5429 501.4739 278.8132 499.0042
-  276.0836 496.5345 237.4787 462.999 237.4787 462.999
+  22.0606 912.478
+  22.0606 912.478 59.1712 944.7769 61.9008 947.2466
+  64.6305 949.7163 65.6703 951.796 67.8801 952.4459
+  70.0898 953.0959 227.1591 974.0057 227.1591 974.0057
+  smooth off
 endline
 
-point 217.06 448.39 station -name 1
-point 282.94 510.12 station -name 2
-point 482.94 551.61 station -name 3
-point 482.94 546.42 station -name 4
+point 0.1476 896.6324 station -name 1
+
+point 66.0276 958.3624 station -name 2
+
+point 266.0276 999.8524 station -name 3
+
+point 266.0276 994.6624 station -name 4
+
 endscrap
+
 

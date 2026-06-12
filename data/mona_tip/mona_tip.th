@@ -147,7 +147,8 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 	equate 24@mona_tip11 0@extra_dunkel
 
 	join mona_tip11-3Ap@mona_tip11 extra_dunkel-1p@extra_dunkel
-	join mona_tip11_l1@mona_tip11 extra_dunkel_l1@extra_dunkel
+	join mona_tip11-3e_l2@mona_tip11:end extra_dunkel-1s_l1@extra_dunkel:0
+	join mona_tip11-3e_l3@mona_tip11:0 extra_dunkel-1s_l2@extra_dunkel:end
 
 	######________________2022________________######
 	input "./2022/100_cocoa/100_cocoa.th"
@@ -159,6 +160,10 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 	equate 2@the_aviary 10@wishing_well
 
 	join the_aviary-e@the_aviary mona_tip11-3e@mona_tip11
+	join mona_tip11-3e_l1@mona_tip11:end coda-1s_l1@coda:0
+	join mona_tip11-3e_l2@mona_tip11:0 coda-1s_l2@coda:end
+	join extra_dunkel-1s_l3@extra_dunkel:end coda-1s_l2@coda:0
+	join extra_dunkel-1s_l4@extra_dunkel:0 coda-1s_l3@coda:end
 
 	######________________2023________________######
 	input "./2023/auld_alliance_resurvey/auld_alliance_resurvey.th"
@@ -169,10 +174,15 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 	equate 6@fools_gold 0@auld_alliance_resurvey
 	equate 0@neu_alliance 8@auld_alliance_resurvey
 
-	join auld_alliance_resurvey-1s@auld_alliance_resurvey mona_tip11-4e@mona_tip11
-	join neu_alliance-1s@neu_alliance mona_tip11-4e@mona_tip11
+	
 	join auld_alliance_resurvey-1p@auld_alliance_resurvey mona_tip11-4p@mona_tip11
 	join auld_alliance_resurvey-1p@auld_alliance_resurvey mona_tip11-3p@mona_tip11
+	
+	join mona_tip11-4e_l1@mona_tip11:end aar-1e_l1@auld_alliance_resurvey:0
+	join mona_tip11-4e_l2@mona_tip11:0 aar-1e_l2@auld_alliance_resurvey:end
+	join mona_tip11-4e_l3@mona_tip11:0 neu_alliance-1s_l1@neu_alliance:end
+	join mona_tip11-4e_l4@mona_tip11:end neu_alliance-1s_l2@neu_alliance:0
+	join fools_gold-1s@fools_gold auld_alliance_resurvey-1e@auld_alliance_resurvey
 
 	######________________2024________________######
 	input "./2024/anderson_aven/anderson_aven.th"
@@ -180,5 +190,7 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 
 	equate 0@anderson_aven 4@neu_alliance
 	equate 13@mambo_number_5 4@neu_alliance
+
+	join mambo_number_5-1e@mambo_number_5 neu_alliance-1s@neu_alliance
 
 endsurvey
