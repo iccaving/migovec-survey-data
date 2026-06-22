@@ -1,11 +1,13 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 4740.000000 5304.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 4740.0 5304.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap aleksandrija-1e -scale [0 0 100 0 0 0 1 0 m] -projection extended
 
-point 2807.4446 2721.8094 label -text Aleksandrija -align tl -scale l
+scrap aleksandrija-1e -projection extended -scale [0 0 100 0 0 0 1 0 m]
+
+point 3180.0204 2890.3189 label -align tl -attr level 2 -orient 345 -text Aleksandrija
+
 line wall
   3768.3728 3190.304
   3768.3728 3190.304 3700.8322 3100.912 3698.8456 3095.9458
@@ -135,28 +137,55 @@ line wall -subtype clay
 endline
 
 point 3824.9878 3097.9322 station -name 19
+
 point 3659.1158 2984.7022 station -name 18
+
 point 3497.2168 2808.8978 station -name 17
+
 point 3439.6086 2744.3369 station -name 16
+
 point 3305.8698 2688.5212 station -name 15A
+
 point 3170.32 2633.0371 station -name 15
+
 point 3079.7192 2616.8835 station -name 14
+
 point 2939.013 2597.8332 station -name 13B
+
 point 2852.6006 2588.894 station -name 13A
+
 point 2711.6982 2572.9878 station -name 13
+
 point 2556.3652 2517.8769 station -name 12
+
 point 2484.6032 2498.5086 station -name 11A
+
 point 2424.0152 2480.6302 station -name 11
+
 point 2337.1062 2437.9207 station -name 10
+
 point 2188.616 2413.0895 station -name 9
+
 point 1970.1021 2360.4475 station -name 8
+
 point 1964.6393 2338.0995 station -name 7
+
 point 1818.1356 2331.6434 station -name 6
+
 point 1752.0848 2319.2279 station -name 5
+
 point 1737.9168 2266.4206 station -name 4A
+
 point 1541.2643 2223.9296 station -name 4
+
 point 1340.7489 2184.2479 station -name 3
+
 point 1262.4391 2179.6827 station -name 2
+
 point 1195.7177 2162.1245 station -name 1
+
 point 1119.866 2151.2384 station -name 0
+
 endscrap
+
+

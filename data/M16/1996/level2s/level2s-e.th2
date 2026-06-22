@@ -82,8 +82,7 @@ scrap level2s-2e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
 
 line wall -subtype invisible
   187.795 -80.6864
-  187.795 -80.6864 168.2645 -84.678 164.8297 -84.678
-  161.3948 -84.678 121.4619 -78.8367 120.9335 -78.9689
+  186.7402 -80.8265 122.181 -78.9348 120.9335 -78.9689
   smooth off
 endline
 
@@ -121,7 +120,7 @@ line wall -subtype invisible
   173.9047 -105.3228
 endline
 
-line wall -subtype invisible -id l1_bottom
+line wall -id l1_bottom -subtype invisible
   90.7471 -210.783
   123.3969 -200.7
 endline
