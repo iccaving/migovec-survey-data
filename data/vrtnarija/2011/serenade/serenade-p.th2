@@ -1,11 +1,29 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap serenade-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line wall -id line
+line wall -subtype invisible
+  408.4195 948.388
+  418.9223 927.0522
+endline
+
+line wall -subtype invisible
+  485.6381 1005.4598
+  398.6434 962.0615
+endline
+
+line wall -id serenade1p_l1
+  398.6811 961.9453
+  398.6811 961.9453 402.3518 953.7814 404.4481 951.7987
+  405.2234 951.0654 408.457 948.4835 408.457 948.4835
+  smooth off
+endline
+
+line wall -id serenade1p_l2
   418.9252 926.917
   435.01 899.7889 451.815 883.7041 465.9792 896.668
   480.1435 909.6318 504.8709 962.6877 502.2301 980.9331
@@ -13,11 +31,19 @@ line wall -id line
 endline
 
 point 415.4187 936.1297 station -name 7
+
 point 448.0187 907.6997 station -name 6
+
 point 455.8187 917.3098 station -name 5
+
 point 467.5487 930.7698 station -name 4
+
 point 468.3387 936.3597 station -name 3
+
 point 469.9087 959.3597 station -name 2
+
 point 478.1787 1001.7197 station -name 1
+
 endscrap
+
 

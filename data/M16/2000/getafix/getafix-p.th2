@@ -1,6 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
@@ -73,14 +74,21 @@ endline
 endscrap
 
 
+
 scrap getafix-2p -projection plan -scale [0 0 96 0 0 0 250 0 inch]
 
 point 713.0067 682.3356 station -name 3
+
 point 713.0067 682.3356 station -name 6
+
 point 493.9913 830.267 station -name 5
+
 point 490.5758 537.8195 station -name 4
+
 point 651.3864 732.7845 station -name 2
+
 point 961.2669 560.8026 station -name 1
+
 line pit -close on
   698.7172 723.1621
   673.5932 706.1864 675.6303 674.2722 690.5689 670.1981
@@ -110,9 +118,11 @@ endline
 endscrap
 
 
+
 scrap getafix-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 668.161 357.8464 label -align r -scale m -text Getafix -attr level 2
+point 1162.8932 725.5326 label -align r -attr level 2 -text Getafix
+
 line pit
   450.1599 868.7945
   469.7381 834.8009 458.4658 805.9971 454.0162 802.1047
@@ -150,11 +160,21 @@ line wall
 endline
 
 point 449.1636 505.8709 station -name 14
+
 point 366.7659 653.8024 station -name 13
+
 point 246.8696 666.6814 station -name 12
+
 point 193.0763 760.2504 station -name 11
+
 point 297.8878 701.9744 station -name 10
+
 point 336.525 769.7852 station -name 9
+
 point 459.7657 826.9227 station -name 8
+
 point 446.8866 842.5769 station -name 7
+
 endscrap
+
+

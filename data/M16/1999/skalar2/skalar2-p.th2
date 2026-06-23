@@ -1,11 +1,13 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap skalar2-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 784.9534 951.9937 label -align r -scale m -text "Skalar 2" -attr level 2
+point 792.6135 951.62 label -align r -attr level 2 -text Skalar
+
 line wall
   890.7283 484.5112
   872.6076 472.6017 829.09 526.2447 791.0646 550.6896
@@ -24,10 +26,19 @@ line wall
 endline
 
 point 941.9339 435.6232 station -name 7
+
 point 941.9339 435.6232 station -name 6
+
 point 756.3205 543.2224 station -name 5
+
 point 727.6456 548.2292 station -name 4
+
 point 602.2041 673.6707 station -name 3
+
 point 525.4646 941.7585 station -name 2
+
 point 134.8482 799.7493 station -name 1
+
 endscrap
+
+

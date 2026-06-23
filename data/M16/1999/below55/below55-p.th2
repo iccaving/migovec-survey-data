@@ -1,76 +1,77 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 500.0 1000.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap DELETE-ME-survey-legs-p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
 
-line survey 
+scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line survey
   137.05 502.13
   137.05 502.13
 endline
 
-line survey 
+line survey
   137.05 502.13
   138.7 548.03
 endline
 
-line survey 
+line survey
   154.53 552.52
   138.7 548.03
 endline
 
-line survey 
+line survey
   236.73 591.73
   236.73 591.73
 endline
 
-line survey 
+line survey
   252.01 547.4
   236.73 591.73
 endline
 
-line survey 
+line survey
   154.53 552.52
   252.01 547.4
 endline
 
-line survey 
+line survey
   158.07 485.04
   154.53 552.52
 endline
 
-line survey 
+line survey
   212.87 457.17
   158.07 485.04
 endline
 
-line survey 
+line survey
   250.67 446.3
   212.87 457.17
 endline
 
-line survey 
+line survey
   257.28 457.24
   250.67 446.3
 endline
 
-line survey 
+line survey
   257.28 457.24
   286.1 448.98
 endline
 
-line survey 
+line survey
   298.15 436.54
   286.1 448.98
 endline
 
-line survey 
+line survey
   306.26 418.27
   298.15 436.54
 endline
 
-line survey 
+line survey
   362.95 408.27
   306.26 418.27
 endline
@@ -78,9 +79,10 @@ endline
 endscrap
 
 
-scrap below55-1p -scale [0.0 0.0 500 1000.0 -250 -500 250 500] -projection plan
 
-line wall 
+scrap below55-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line wall
   145.8782 479.9562
   154.3013 480.0413
   159.1631 476.6949
@@ -108,14 +110,14 @@ line wall
   357.5196 404.0914 357.1665 403.7097 366.3207 403.2738
 endline
 
-line wall 
+line wall
   153.3688 510.1056
   153.3688 510.1056 152.8072 503.9725 152.8072 502.9131
   152.8072 502.3139 151.7286 501.3985 150.7916 500.7163
   150.0722 500.1924 149.4362 499.8061 149.4362 499.8061
 endline
 
-line wall 
+line wall
   369.7342 421.5372
   369.7342 421.5372 356.4423 432.3762 348.4635 434.9384
   341.8289 437.0689 334.4845 437.2227 327.5953 436.1758
@@ -139,27 +141,49 @@ line wall
 endline
 
 point 158.07 485.04 station -name 8
-point 158.07 485.04 station-name -text 8 -align tr -scale xs
+
+point 158.07 485.04 station-name -align tr -scale xs -text 8
+
 point 212.87 457.17 station -name 7
-point 212.87 457.17 station-name -text 7 -align tr -scale xs
+
+point 212.87 457.17 station-name -align tr -scale xs -text 7
+
 point 250.67 446.3 station -name 6
-point 250.67 446.3 station-name -text 6 -align tr -scale xs
+
+point 250.67 446.3 station-name -align tr -scale xs -text 6
+
 point 257.28 457.24 station -name 5
-point 257.28 457.24 station-name -text 5 -align tr -scale xs
+
+point 257.28 457.24 station-name -align tr -scale xs -text 5
+
 point 286.1 448.98 station -name 4
-point 286.1 448.98 station-name -text 4 -align tr -scale xs
+
+point 286.1 448.98 station-name -align tr -scale xs -text 4
+
 point 298.15 436.54 station -name 3
-point 298.15 436.54 station-name -text 3 -align tr -scale xs
+
+point 298.15 436.54 station-name -align tr -scale xs -text 3
+
 point 306.26 418.27 station -name 2
-point 306.26 418.27 station-name -text 2 -align tr -scale xs
+
+point 306.26 418.27 station-name -align tr -scale xs -text 2
+
 point 362.95 408.27 station -name 1
-point 362.95 408.27 station-name -text 1 -align tr -scale xs
+
+point 362.95 408.27 station-name -align tr -scale xs -text 1
+
 endscrap
 
 
-scrap below55-2p -scale [0 0 90 0 0 0 200 0 inch]
 
-line wall 
+scrap below55-2p -projection plan -scale [0 0 90 0 0 0 200 0 inch]
+
+line wall -subtype invisible
+  117.735 513.4739
+  126.3654 478.6171
+endline
+
+line wall
   149.4362 499.8061
   144.0056 501.4915
   144.0056 501.4915 142.6947 513.8509 143.0693 516.4726
@@ -190,7 +214,7 @@ line wall -id below55_l1
   117.7887 513.4764
 endline
 
-line wall 
+line wall
   162.6059 509.2691
   160.4873 533.3687
   160.4873 533.3687 160.4873 538.6653 161.5466 540.5191
@@ -199,24 +223,33 @@ line wall
 endline
 
 point 137.05 502.13 station -name 15
-point 137.05 502.13 station-name -text 15 -align tr -scale xs
+
+point 137.05 502.13 station-name -align tr -scale xs -text 15
+
 point 137.05 502.13 station -name 14
-point 137.05 502.13 station-name -text 14 -align tr -scale xs
+
+point 137.05 502.13 station-name -align tr -scale xs -text 14
+
 point 138.7 548.03 station -name 13
-point 138.7 548.03 station-name -text 13 -align tr -scale xs
+
+point 138.7 548.03 station-name -align tr -scale xs -text 13
+
 point 154.53 552.52 station -name 9
-point 154.53 552.52 station-name -text 9 -align tr -scale xs
+
+point 154.53 552.52 station-name -align tr -scale xs -text 9
+
 endscrap
 
 
-scrap below55-3p -scale [0 0 90 0 0 0 200 0 inch]
 
-line pit 
+scrap below55-3p -projection plan -scale [0 0 90 0 0 0 200 0 inch]
+
+line pit
   230.5213 570.779
   230.5213 570.779 240.259 553.1762 248.6859 539.3187
 endline
 
-line wall 
+line wall
   171.6102 547.4047
   186.3271 546.8093
   186.3271 546.8093 191.196 548.3074 191.945 548.4946
@@ -248,10 +281,17 @@ line wall
 endline
 
 point 236.73 591.73 station -name 12
-point 236.73 591.73 station-name -text 12 -align tr -scale xs
+
+point 236.73 591.73 station-name -align tr -scale xs -text 12
+
 point 236.73 591.73 station -name 11
-point 236.73 591.73 station-name -text 11 -align tr -scale xs
+
+point 236.73 591.73 station-name -align tr -scale xs -text 11
+
 point 252.01 547.4 station -name 10
-point 252.01 547.4 station-name -text 10 -align tr -scale xs
+
+point 252.01 547.4 station-name -align tr -scale xs -text 10
+
 endscrap
+
 

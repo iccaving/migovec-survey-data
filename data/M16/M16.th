@@ -368,8 +368,8 @@ survey M16 -title "M16 part of System Migovec" -attr cadastral_n 6001 -entrance 
 	join getafix-1e@getafix obelix-1e@obelix
 
 	join penelope-3p@penelope gloworm-1p@gloworm
-	join gloworm_l2@gloworm below55_l2@below55
-	join gloworm_l1@gloworm below55_l1@below55
+	join gloworm_l2@gloworm:end below55_l2@below55:0
+	join gloworm_l1@gloworm:0 below55_l1@below55:end
 	join boogywoo-1p@boogywoo toilet-1p@toilet
 
 
