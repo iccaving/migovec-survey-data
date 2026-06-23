@@ -1,0 +1,291 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250.0 -500.0 250.0 500.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap game_of_stones_a_feast_for_crolls-1p -projection plan -scale [7.87402 1 m]
+
+line wall -close on -outline in
+  7.6 7.8833
+  7.6 7.8833 9.4806 9.9186 9.661 9.7382
+  9.8413 9.5579 9.3776 7.0589 9.223 6.2861
+  9.0684 5.5132 7.162 1.4427 6.5437 1.082
+  5.9254 0.7213 5.7193 1.52 5.5132 1.8807
+  5.3071 2.2413 7.3166 7.162 7.6 7.8833
+endline
+
+line u:splay -visibility off
+  1.02 -12.64
+  14.57 17.2
+endline
+
+line u:splay -visibility off
+  17.87 13.43
+  18.03 13.66
+endline
+
+point 17.87 13.43 station-name -align tr -scale xs -text 3
+
+point 15.59 -15.08 station-name -align tr -scale xs -text 4
+
+line u:splay -visibility off
+  17.87 13.43
+  7.32 13.58
+endline
+
+line u:splay -visibility off
+  17.87 13.43
+  25.51 12.72
+endline
+
+line u:splay -visibility off
+  17.87 13.43
+  19.69 -17.2
+endline
+
+line u:splay -visibility off
+  17.87 13.43
+  9.13 34.21
+endline
+
+line u:splay -visibility off
+  17.87 13.43
+  15.43 12.95
+endline
+
+line u:splay -visibility off
+  17.87 13.43
+  11.42 -2.95
+endline
+
+line u:splay -visibility off
+  17.87 13.43
+  15.2 -4.21
+endline
+
+line u:splay -visibility off
+  17.87 13.43
+  15.59 -15.08
+endline
+
+line u:splay -visibility off
+  1.02 -12.64
+  17.87 13.43
+endline
+
+point -58.1181 0.1064 label -align tr -text "Game of Stones:<br>A Feast For Crolls"
+
+point 5.382 10.4621 label -align tl -text "<bf>P4"
+
+point 1.02 -12.64 station -name 2
+
+line rock-border -close on
+  16.0013 16.5737
+  13.6345 16.5338
+  14.1229 14.5772
+  15.8135 16.0147
+  16.0013 16.5737
+endline
+
+line rock-border -close on
+  10.5095 18.1362
+  12.8763 18.0963
+  12.3879 16.1397
+  10.6973 17.5772
+  10.5095 18.1362
+endline
+
+line rock-border -close on
+  12.6781 3.0349
+  15.0449 2.995
+  14.5565 1.0385
+  12.8659 2.4759
+  12.6781 3.0349
+endline
+
+line rock-border -close on
+  11.6375 12.0999
+  11.7502 11.9003 11.9005 10.4229 11.9005 10.4229
+  12.9148 8.3865
+  13.7414 8.8657
+  13.3657 10.3031
+  11.6375 12.0999
+endline
+
+line rock-border -close on
+  12.8519 -0.9533
+  12.6134 -2.3477
+  14.6169 -1.4532
+  14.4738 0.0201
+  12.8519 -0.9533
+endline
+
+line wall
+  7.0768 -9.5628
+  7.1496 -9.0528 8.1698 -3.5148 10.1372 -3.2962
+  12.1046 -3.0776 13.6348 -3.8063 13.6348 -3.8063
+  13.6348 -3.8063 15.748 -3.2962 15.3108 -4.8265
+  14.8736 -6.3567 13.7806 -12.3318 13.7806 -12.9148
+  13.7806 -13.4977 11.3031 -17.7969 11.3031 -17.7969
+  11.3031 -17.7969 12.979 -20.1286 14.5092 -20.493
+  16.0395 -20.8573 20.703 -21.3674 21.796 -19.8372
+  22.889 -18.307 24.2006 -9.8543 24.2735 -8.6884
+  24.3464 -7.5226 27.2611 11.3501 26.751 13.099
+  26.2409 14.8478 16.4038 33.2833 14.4364 34.1577
+  12.469 35.0321 9.117 35.7608 8.6798 34.7406
+  8.2426 33.7205 7.2225 13.6819 6.8582 12.0788
+  6.4938 10.4757 2.9962 -4.4621 2.7776 -5.7737
+  2.559 -7.0853 1.6846 -8.397 1.6846 -8.397
+endline
+
+point 17.87 13.43 station -name 3
+
+point 15.59 -15.08 station -name 4
+
+endscrap
+
+
+
+scrap game_of_stones_a_feast_for_crolls-2p -projection plan -scale [7.87402 1 m]
+
+line pit
+  -21.0222 -33.9551
+  -21.093 -33.1495 -21.1447 -32.3412 -21.2381 -31.5382
+  -21.3898 -31.1726 -21.6845 -30.8907 -21.9422 -30.5978
+  -22.291 -30.2257 -22.657 -29.8699 -23.0317 -29.5239
+endline
+
+point 4.1176 -17.4025 station-name -align tr -scale xs -text 1
+
+point -25.6903 -33.2568 station-name -align tr -scale xs -text 0
+
+point 1.5352 -14.0569 station-name -align tr -scale xs -text 2
+
+line u:splay -visibility off
+  3.86 -16.81
+  -25.51 -34.21
+endline
+
+line u:splay -visibility off
+  3.86 -16.81
+  -2.13 -20.98
+endline
+
+line u:splay -visibility off
+  3.86 -16.81
+  -1.34 -20.28
+endline
+
+line u:splay -visibility off
+  3.86 -16.81
+  0.16 -21.06
+endline
+
+line u:splay -visibility off
+  3.86 -16.81
+  -3.46 -19.33
+endline
+
+line u:splay -visibility off
+  3.86 -16.81
+  1.02 -12.64
+endline
+
+line u:splay -visibility off
+  1.02 -12.64
+  -0.31 -12.48
+endline
+
+line u:splay -visibility off
+  1.02 -12.64
+  13.94 -16.02
+endline
+
+line u:splay -visibility off
+  1.02 -12.64
+  4.49 -29.57
+endline
+
+line u:splay -visibility off
+  1.02 -12.64
+  10.08 -13.35
+endline
+
+line u:splay -visibility off
+  1.02 -12.64
+  1.34 -12.64
+endline
+
+point -31.3234 -30.1889 label -orientation 333.54 -align tr -orient 330 -scale xs -text "Tiny Sharp Crawl"
+
+point -2.355 -26.8321 no-equipment -scale s
+
+point -29.5075 -36.7511 continuation
+
+line rock-border -close on
+  2.6424 -19.1968
+  5.0092 -19.2368
+  4.5208 -21.1933
+  2.8302 -19.7558
+  2.6424 -19.1968
+endline
+
+line rock-border -close on
+  5.3181 -17.6372
+  5.4308 -17.8368 5.581 -19.3142 5.581 -19.3142
+  6.5954 -21.3506
+  7.4219 -20.8715
+  7.0462 -19.434
+  5.3181 -17.6372
+endline
+
+line rock-border -close on
+  0.8345 -14.4221
+  0.8345 -14.4221 0.6467 -15.9394 1.06 -15.8995
+  1.4732 -15.8596 2.9384 -15.3804 2.9384 -15.3804
+  2.45 -13.9829
+  0.8345 -14.4221
+endline
+
+line rock-border -close on
+  0.7395 -21.1083
+  0.501 -22.5027
+  2.5045 -21.6082
+  2.3614 -20.1349
+  0.7395 -21.1083
+endline
+
+point -52.4809 -43.0658 label -align tr -scale xs -text "Pitch: 15m or infinite?"
+
+line wall
+  1.2881 -8.6562
+  1.2881 -8.6562 0.0515 -10.8203 -0.4122 -11.6447
+  -0.8759 -12.4691 -0.979 -12.8813 -0.7213 -13.8088
+  -0.4637 -14.7362 -0.0515 -15.406 0.2576 -16.385
+  0.5668 -17.364 -3.2461 -18.446 -4.6888 -19.3219
+  -6.1315 -20.1979 -26.7931 -31.1212 -28.5964 -31.8425
+endline
+
+line wall
+  -25.5049 -37.2527
+  -25.5049 -37.2527 -24.5775 -36.6344 -24.1653 -36.0676
+  -23.7531 -35.5008 -2.164 -21.589 -1.1851 -21.1253
+  -0.2061 -20.6616 0.0515 -22.4135 0.1546 -23.2894
+  0.2576 -24.1653 4.019 -29.8846 4.5857 -29.627
+  5.1525 -29.3694 11.9023 -18.1884 13.2935 -17.5701
+  14.6847 -16.9518 14.6332 -15.9213 14.4786 -15.6121
+  14.324 -15.303 11.3355 -13.1905 10.4081 -12.7782
+  9.4806 -12.3661 9.12 -12.0054 7.9349 -11.4386
+  6.7498 -10.8718 7.059 -9.8928 7.059 -9.8928
+endline
+
+point 3.86 -16.81 station -name 1
+
+point -25.51 -34.21 station -name 0
+
+point 1.02 -12.64 station -name 2
+
+endscrap
+
+

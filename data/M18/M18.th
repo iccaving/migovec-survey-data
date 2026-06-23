@@ -41,6 +41,10 @@ survey M18 -title "M18 part of System Migovec" -entrance 26@torn -attr cadastral
 	join ncb-3p@gallery dodge-1p@dodge
 	join ncb-3p@gallery plopzilla-2p@plopzilla
 	join dodge-1e@dodge gallery-1e@gallery
+	join gallery-3e_l2@gallery:end m18_silos_l2@silos:0
+	join gallery-3e_l3@gallery:0 m18_silos_l3@silos:end
+	join gallery-3e_l4@gallery:0 void-1e_l4@void:end
+	join gallery-3e_l5@gallery:end void-1e_l5@void:0
 	
 	###__________1999____________###
 	

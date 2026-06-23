@@ -1,6 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1801.800000 2087.200000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1801.8 2087.2
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap the_aviary-e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
@@ -10,6 +11,7 @@ line rock-border -close on
   169.6956 1576.4551
   158.6405 1575.626
   154.7712 1585.0228
+  164.7208 1588.6157
 endline
 
 line rock-border -close on
@@ -17,6 +19,7 @@ line rock-border -close on
   170.2483 1584.7464
   179.6451 1578.3897
   185.1727 1586.4047
+  181.027 1593.5905
 endline
 
 line rock-border -close on
@@ -24,9 +27,10 @@ line rock-border -close on
   214.1923 1573.9677
   187.3837 1574.7968
   198.9915 1594.9724
+  226.9056 1600.2235
 endline
 
-line rock-edge 
+line u:texture
   83.4659 1536.104
   104.1942 1551.5812
   104.1942 1551.5812 116.6311 1563.4654 120.5004 1565.4
@@ -37,8 +41,10 @@ line rock-edge
 endline
 
 point 321.1721 2053.8484 label -align r -attr level 3 -scale xs -text "The Aviary"
-point 150.811 2009.83 continuation 
-line wall 
+
+point 150.811 2009.83 continuation
+
+line wall
   976.2565 1455.8149
   955.0445 1487.7127
   949.7619 1498.9989 950.87 1517.58 952.62 1530.3
@@ -72,7 +78,7 @@ line wall
   257.7026 1938.43 241.0383 1999.2471 241.0383 1999.2471
 endline
 
-line wall 
+line wall
   53.4252 1995.1657
   52.9997 1951.8848 48.1087 1949.8244 49.8742 1885.4953
   36.3358 1862.9212 39.065 1823.4835 39.065 1801.4135
@@ -295,7 +301,11 @@ line u:splay -visibility off
 endline
 
 point 143.55 1581.98 station -name 0
+
 point 300.45 1172.07 station -name 1
+
 point 709.34 1051.99 station -name 2
+
 endscrap
+
 

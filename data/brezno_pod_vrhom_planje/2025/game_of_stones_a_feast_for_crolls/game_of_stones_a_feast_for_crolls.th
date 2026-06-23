@@ -2,15 +2,18 @@
 
 survey game_of_stones_a_feast_for_crolls -title "game of stones a feast for crolls"
 
-  # input "game_of_stones_a_feast_for_crolls-planp.th2"
-  # input "game_of_stones_a_feast_for_crolls-plans.th2"
+   input "game_of_stones_a_feast_for_crolls-p.th2"
+   input "game_of_stones_a_feast_for_crolls-e.th2"
 
-  # map m-all-p -projection plan
-  #   game_of_stones_a_feast_for_crolls-1p
-  # endmap
-  # map m-all-e -projection extended
-  #   game_of_stones_a_feast_for_crolls-1e
-  # endmap
+   map m-all-p -projection plan
+     game_of_stones_a_feast_for_crolls-1p
+     break
+     game_of_stones_a_feast_for_crolls-2p
+   endmap
+   join game_of_stones_a_feast_for_crolls-1p game_of_stones_a_feast_for_crolls-2p
+   map m-all-e -projection extended
+     game_of_stones_a_feast_for_crolls-1e
+   endmap
 
   centerline
     date 2025.07.10 
@@ -24,7 +27,7 @@ survey game_of_stones_a_feast_for_crolls -title "game of stones a feast for crol
     units length meters
     units compass clino degrees
     data normal from to length compass clino
-    extend right
+    extend left
     1 0 4.77 234.0 -24.6
     # extend auto
     1 . 0.95 230.0 -11.3

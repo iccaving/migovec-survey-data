@@ -4,14 +4,14 @@ survey auld_alliance_resurvey -title "auld alliance resurvey"
   # start from pss1 of auld alliance, ends at T28 of icomnozzer 
 
   input "auld_alliance_resurvey-1p.th2"
-  input "auld_alliance_resurvey-1s.th2"
+  input "auld_alliance_resurvey-e.th2"
 
   map m-all-p -projection plan
     auld_alliance_resurvey-1p
   endmap
 
   map m-all-e -projection extended
-    auld_alliance_resurvey-1s
+    auld_alliance_resurvey-1e
   endmap
 
   centerline
@@ -62,7 +62,7 @@ survey auld_alliance_resurvey -title "auld alliance resurvey"
     2 . 3.80 79.2 13.5
     2 . 4.59 100.5 8.3
     2 . 5.99 101.6 -39.7
-    extend vertical
+    extend left
     2 3 3.24 92.0 41.5
     # extend auto
     3 . 6.31 295.2 -6.1
@@ -74,7 +74,7 @@ survey auld_alliance_resurvey -title "auld alliance resurvey"
     3 . 3.34 341.7 62.6
     3 . 5.71 197.3 -84.6
     3 . 5.99 57.9 -83.5
-    extend right
+    extend left
     3 4 3.45 73.5 42.0
     # extend auto
     4 . 0.80 217.7 -5.9
@@ -110,7 +110,7 @@ survey auld_alliance_resurvey -title "auld alliance resurvey"
     5 . 5.54 350.5 20.2
     5 . 5.63 349.3 20.9
     5 . 5.92 1.4 31.3
-    extend right
+    extend left
     5 6 8.57 24.2 61.5
     # extend auto
     6 . 1.90 130.6 3.4
@@ -124,7 +124,7 @@ survey auld_alliance_resurvey -title "auld alliance resurvey"
     6 . 6.37 226.7 -51.1
     6 . 5.47 209.7 -51.5
     6 . 9.93 182.5 -81.0
-    extend right
+    extend left
     6 7 4.51 53.9 74.9
     7 8 4.22 70.4 -8.5
     extend left

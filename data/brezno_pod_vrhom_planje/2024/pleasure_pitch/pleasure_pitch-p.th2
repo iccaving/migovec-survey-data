@@ -1,399 +1,467 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 500.0 1000.0
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-pleasure_pitch-p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-line survey 
+
+scrap pleasure_pitch-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+line border -id knot_yet_named-1p_u_smallblocks_1 -close on -visibility off
+  288.654 528.6678
+  292.8804 531.3709
+  296.4018 536.5779
+  291.6292 539.1956
+  269.6483 548.363
+  260.609 548.6214
+  248.0011 548.7387
+  243.5766 546.4349
+  241.9414 545.0763
+  241.7015 536.495
+  245.3037 528.955
+  247.4198 526.0015
+  253.8945 518.9882
+  264.5482 518.13
+  288.654 528.6678
+endline
+
+area u:smallblocks -attr scale 1.5
+  knot_yet_named-1p_u_smallblocks_1
+endarea
+
+point 194.1462 508.3792 label -align tr -scale xs -text "Aven 9m+"
+
+point 199.2623 497.6592 continuation
+
+line pit
+  236.7831 546.2902
+  236.1146 545.3738 235.4396 544.4593 234.7984 543.526
+  234.5552 542.8723 235.2805 542.3507 235.511 541.7829
+  236.6436 539.9555 237.9556 538.2303 238.906 536.2959
+  239.4786 535.0577 239.7019 533.6242 240.6718 532.6019
+  241.0876 532.1236 241.5675 531.7054 242.066 531.3159
+endline
+
+point 240.8189 551.5101 label -align bl -text "<bf>P8"
+
+line u:splay -visibility off
   265.28 533.11
   294.02 535.24
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   277.64 526.65
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   266.38 522.32
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   258.35 525.16
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   274.49 544.69
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   262.13 545.79
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   266.3 542.01
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   266.38 534.45
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   233.78 536.73
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   250.0 544.37
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   241.5 545.63
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   235.12 542.87
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   256.93 532.87
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   256.61 529.25
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   264.09 542.09
 endline
 
-line survey 
+line u:splay -visibility off
   265.28 533.11
   264.09 541.3
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   231.57 541.85
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   228.11 535.47
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   251.65 537.2
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   241.18 544.45
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   253.31 547.44
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   262.28 544.76
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   262.2 542.64
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   240.16 535.0
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   275.51 529.02
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   261.81 525.47
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   250.39 526.42
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   250.31 531.46
 endline
 
-line survey 
+line u:splay -visibility off
   264.09 541.3
   248.19 546.5
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   235.35 531.69
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   227.72 533.03
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   226.46 535.87
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   229.61 540.43
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   235.51 544.61
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   237.48 528.31
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   243.86 536.5
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   257.4 519.17
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   263.07 545.79
 endline
 
-line survey 
+line u:splay -visibility off
   248.19 546.5
   235.91 533.98
 endline
 
-line survey 
+line u:splay -visibility off
   235.91 533.98
   242.99 542.32
 endline
 
-line survey 
+line u:splay -visibility off
   235.91 533.98
   248.82 532.64
 endline
 
-line survey 
+line u:splay -visibility off
   235.91 533.98
   246.61 510.35
 endline
 
-line survey 
+line u:splay -visibility off
   235.91 533.98
   233.15 521.38
 endline
 
-line survey 
+line u:splay -visibility off
   235.91 533.98
   232.99 529.8
 endline
 
-line survey 
+line u:splay -visibility off
   235.91 533.98
   234.8 529.8
 endline
 
-line survey 
+line u:splay -visibility off
   235.91 533.98
   235.51 532.72
 endline
 
-line survey 
+line u:splay -visibility off
   235.91 533.98
   237.17 501.46
 endline
 
-line survey 
+line u:splay -visibility off
   237.17 501.46
   227.17 502.48
 endline
 
-line survey 
+line u:splay -visibility off
   237.17 501.46
   228.98 505.47
 endline
 
-line survey 
+line u:splay -visibility off
   237.17 501.46
   223.78 534.37
 endline
 
-line survey 
+line u:splay -visibility off
   237.17 501.46
   218.82 530.28
 endline
 
-line survey 
+line u:splay -visibility off
   237.17 501.46
   229.84 510.67
 endline
 
-line survey 
+line u:splay -visibility off
   237.17 501.46
   237.4 503.27
 endline
 
-line survey 
+line u:splay -visibility off
   237.17 501.46
   231.18 491.61
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   205.98 487.52
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   222.99 496.1
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   225.2 498.94
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   226.61 502.56
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   214.49 493.98
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   218.82 499.72
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   222.44 508.54
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   219.69 525.94
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   234.8 495.0
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   228.43 486.97
 endline
 
-line survey 
+line u:splay -visibility off
   231.18 491.61
   257.09 452.56
 endline
 
 point 265.28 533.11 station-name -align tr -scale xs -text 0
+
 point 264.09 541.3 station-name -align tr -scale xs -text 1
-point 248.19 546.5 station-name -align tr -scale xs -text 2
-point 235.91 533.98 station-name -align tr -scale xs -text 3
-point 237.17 501.46 station-name -align tr -scale xs -text 4
-point 231.18 491.61 station-name -align tr -scale xs -text 5
+
+point 247.6474 542.5571 station-name -align tr -scale xs -text 2
+
+point 232.8416 534.0522 station-name -align tr -scale xs -text 3
+
+point 233.0118 501.7401 station-name -align tr -scale xs -text 4
+
+point 226.2888 493.4499 station-name -align tr -scale xs -text 5
+
 point 257.09 452.56 station-name -align tr -scale xs -text 6
-endscrap
 
+point 319.9041 535.4909 label -align l -text "Pleasure<br><left>Pitch"
 
-scrap pleasure_pitch-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
-
-line pit 
-  225.3998 535.3628
-  225.3998 535.3628 226.476 532.4416 228.4748 531.2116
-  230.4736 529.9815 233.8561 527.9828 235.7011 527.9828
-  237.5461 527.9828 237.5461 527.9828 237.5461 527.9828
+line chimney -close on
+  192.4979 503.7098
+  193.0569 500.8601 194.2196 498.274 195.0454 495.4857
+  smooth off
+  195.2197 494.7807 195.1622 494.0634 195.5508 493.4821
+  smooth off
+  196.7169 492.0641 197.7906 490.5456 199.1676 489.3198
+  smooth off
+  199.7734 488.8136 200.6194 489.1953 201.3229 489.2153
+  smooth off
+  202.9208 489.4898 204.5785 489.7551 206.0104 490.5567
+  smooth off
+  206.7209 491.1437 207.107 492.0477 207.6326 492.798
+  smooth off
+  208.1298 493.5083 208.2288 494.6783 207.3112 495.1051
+  smooth off
+  205.4216 496.5505 203.4501 498.0309 201.7765 499.7146
+  smooth off
+  200.8855 500.6257 200.1672 501.6015 199.3326 502.5624
+  smooth off
+  198.2113 503.3847 196.9517 503.7932 195.605 503.9477
+  smooth off
+  194.7226 504.0664 193.8484 503.9106 192.986 503.7375
+  smooth off
+  192.8244 503.7186 192.6609 503.6968 192.4979 503.7098
+  smooth off
 endline
 
-line pit 
-  244.6187 498.155
-  244.6187 498.155 238.0074 496.0025 238.6224 492.1587
-  239.2374 488.3149 239.8524 482.1648 241.0824 480.6273
-  242.3124 479.0898 244.553 470.7648 253.3825 466.6359
-  256.1854 465.3252 270.9102 464.7909 270.9102 464.7909
-endline
-
-line wall 
-  247.3862 501.845
-  247.3862 501.845 244.3112 497.0787 241.8512 496.7712
-  239.3911 496.4637 238.6224 498.4625 238.0074 500.3075
-  237.3924 502.1525 236.3161 514.2989 237.5461 515.5289
+line wall
+  235.0892 496.5477
+  235.5435 497.3162 236.6189 497.6959 237.5324 501.3361
+  237.7179 502.0752 237.6423 502.9179 237.732 503.8055
+  238.1908 508.345 236.9762 514.9591 237.5461 515.5289
   238.7761 516.7589 238.1439 526.359 238.4686 527.9828
   238.7761 529.5203 240.5874 532.2528 244.1574 531.2116
   247.8475 530.1353 247.0787 528.2903 249.5387 526.599
   251.9988 524.9077 255.9963 519.5264 257.5338 519.5264
   259.0713 519.5264 261.2239 519.8339 266.2977 521.2177
   271.3715 522.6015 275.5228 525.6765 279.059 526.1378
+  smooth off
   282.5953 526.599 295.9717 533.2103 294.7417 535.6704
   293.5117 538.1304 275.5228 544.7417 274.2927 545.6642
   273.0627 546.5867 255.2276 548.278 252.6138 548.1242
   250.0 547.9705 235.3936 545.5104 232.4723 544.1267
+  smooth off
   229.5511 542.7429 224.7848 535.5166 222.4785 534.4403
   220.1722 533.3641 219.2497 532.5953 218.0197 530.9041
   216.7897 529.2128 222.786 507.6876 222.171 504.4588
   221.556 501.23 218.1734 498.9237 215.8672 496.6175
   213.5609 494.3112 215.5597 494.3112 212.6384 493.6962
   209.7171 493.0812 199.7233 502.1525 199.7233 503.9975
-endline
-
-line wall 
-  191.5744 504.305
-  191.8819 503.69 193.1119 497.2325 193.8807 494.1574
+  smooth off
+  199.3747 504.1181 198.9558 504.1818 198.0722 504.2638
+  197.1887 504.3458 195.2486 504.6099 194.8752 504.701
+  194.5017 504.7921 193.0079 504.783 193.0079 504.783
+  smooth off
+  191.8772 504.3793
+  192.1653 503.7158 193.1119 497.2325 193.8807 494.1574
   194.6495 491.0824 201.4145 486.9311 206.0271 485.8549
-  210.6396 484.7786 216.1747 486.3161 223.0935 486.9311
-  230.0123 487.5461 228.4748 486.1624 231.3961 486.1624
-  234.3173 486.1624 247.54 450.0308 247.54 450.0308
+  smooth off
+  210.6396 484.7786 210.1375 485.4763 217.0455 486.2024
+  smooth off
 endline
 
 point 265.28 533.11 station -name 0
+
 point 264.09 541.3 station -name 1
+
 point 248.19 546.5 station -name 2
+
 point 235.91 533.98 station -name 3
+
 point 237.17 501.46 station -name 4
+
 point 231.18 491.61 station -name 5
+
 point 257.09 452.56 station -name 6
+
 endscrap
+
 

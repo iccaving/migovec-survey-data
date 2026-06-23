@@ -3,17 +3,24 @@
 survey smer0_and_salome_viados_resurvey -title "Smer 0 Resurvey"
     # resurvey 
 
-  input "smer0_and_salome_viados-1p.th2"
+  input "smer0_and_salome_viados_resurvey-p.th2"
   input "smer0_and_salome_viados_resurvey-e.th2"
 
   map m-all-p -projection plan
-    smer0_and_salome_viados-1p
-    break
-    smer0_and_salome_viados-1p1
-    break
-    smer0_and_salome_viados-1p2
+    smer0_and_salome_viados_resurvey-6p
+    smer0_and_salome_viados_resurvey-5p
+    smer0_and_salome_viados_resurvey-4p
+    smer0_and_salome_viados_resurvey-2p
+    smer0_and_salome_viados_resurvey-3p
+    smer0_and_salome_viados_resurvey-1p
   endmap
-  
+  join smer0_and_salome_viados_resurvey-1p smer0_and_salome_viados_resurvey-2p
+  join smer0_and_salome_viados_resurvey-2p smer0_and_salome_viados_resurvey-3p
+  join smer0_and_salome_viados_resurvey-3p smer0_and_salome_viados_resurvey-4p
+  join smer0_and_salome_viados_resurvey-4p smer0_and_salome_viados_resurvey-5p
+  join smer0_and_salome_viados_resurvey-5p smer0_and_salome_viados_resurvey-6p
+
+
   map m-all-e -projection extended
     smer0_and_salome_viados_resurvey-6e
     break

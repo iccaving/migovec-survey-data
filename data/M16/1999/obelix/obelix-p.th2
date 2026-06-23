@@ -1,6 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap DELETE-ME-survey-legs-p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
@@ -83,6 +84,7 @@ endline
 endscrap
 
 
+
 scrap obelix-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
 line pit
@@ -95,7 +97,8 @@ line wall
   287.1596 98.9737 334.8536 91.5968 334.8536 91.5968
 endline
 
-point 37.4512 723.096 label -align l -scale m -text Obelix -attr level 2
+point 1316.6097 511.0467 label -align l -attr level 2 -text Obelix
+
 line wall
   324.5459 128.6761
   315.7186 145.4819 359.8811 227.8562 361.2391 245.5108
@@ -140,19 +143,37 @@ line wall
 endline
 
 point 431.7472 703.4203 station -name 16
+
 point 424.2312 668.6967 station -name 15
+
 point 424.2312 668.6967 station -name 14
+
 point 306.2811 113.1685 station -name 13
+
 point 306.2811 113.1685 station -name 12
+
 point 356.3873 429.9905 station -name 11
+
 point 217.4928 510.4611 station -name 10
+
 point 361.899 819.4163 station -name 9
+
 point 361.899 819.4163 station -name 8
+
 point 361.899 819.4163 station -name 7
+
 point 451.4389 892.4212 station -name 6
+
 point 312.1936 942.8782 station -name 5
+
 point 407.6461 1057.3209 station -name 4
+
 point 407.6461 1057.3209 station -name 3
+
 point 793.9152 772.4668 station -name 1
+
 point 529.5546 1136.2382 station -name 2
+
 endscrap
+
+

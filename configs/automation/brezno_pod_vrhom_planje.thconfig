@@ -43,34 +43,35 @@ select m-all-p@brezno_pod_vrhom_planje
 
 #----------------------------------------------------------------------------------|
 # select a relevant map definition for plan view
-layout comment
-	legend-width 10 cm
+layout comment-p
+	#legend-width 10 cm
    code tex-map
-   \legendwidth=10cm
+   \legendwidth=13cm %Must be defined for each legendbox below using \hsize=\legendwidth
    \def\mycomment{
-            \size[8]
+            \size[10]
             Slovenia,  Municipality of Tolmin, Planja\par
             Length: \the\cavelength, Depth: \the\cavedepth \par
             Entrance Coordinates (DK-48): 404176 125263 1868 \par
-            Survey : \the\topoteam{} \par
+            Survey : %\the\topoteam{} \par %topoteam list is too long so just credit ICCC/JSPDT
             %Drawing: \cartoteam{} \par
             ICCC / JSPDT
         } 
     \def\cadastralnumber{\size[18] \si --- Cad. Nr.: 15056}
 
     \def\maplayout{
-	  \legendbox{75}{15}{SW}{\size[18]\the\cavename \cadastralnumber}
-      \legendbox{75}{12}{NW}{\mycomment}
+	  \legendbox{60}{15}{SW}{\hsize=\legendwidth\size[18]\bf\the\cavename \cadastralnumber}
+	  \legendbox{60}{14}{SW}{\hsize=\legendwidth\size[15]\bf TLORIS / PLAN}
+	  \legendbox{60}{12}{NW}{\hsize=\legendwidth\mycomment}
        %\legendbox{5}{99}{NW}{\cadastralnumber}
-      \legendbox{80}{5}{N}{\scalebar}
-      \legendbox{80}{7}{S}{\northarrow}
+      \legendbox{65}{5}{N}{\hsize=\legendwidth\scalebar}
+      \legendbox{65}{6.5}{S}{\hsize=\legendwidth\northarrow}
       %\legendbox{5}{-4}{NW}{\loadpicture{brezno_pod_vrhom_planje_ee.pdf}}
     }
     endcode
 endlayout
 #----------------------------------------------------------------------------------|
 # define a local layout with legend, header and elevation map produced above
-layout local
+layout local-p
 	#copy detailed-dark-p
 	copy detailed-p
 	legend off
@@ -79,16 +80,41 @@ layout local
 	scale 1 200
 	symbol-show point label
 	symbol-show point gradient
+	
 
 	#map-comment "Brezno pod Vrhom Planje<br>Cadastral Number: 15056<br>Length: 654 m, Depth: 251 m<br>Entrance elevation: 1870 m<br>Coordinates (lat-long):   \°N /  \°E"
 	symbol-assign line pit MY
 	symbol-assign line floor-step MY
-	copy comment
+	copy comment-p
 endlayout
-
-
 #----------------------------------------------------------------------------------|
-# define a local layout without legend or header for extended elevation
+#Define the legend for the elevation view
+layout comment-e
+	#legend-width 10 cm
+   code tex-map
+   \legendwidth=13cm %Must be defined for each legendbox below using \hsize=\legendwidth
+   \def\mycomment{
+            \size[10]
+            Slovenia,  Municipality of Tolmin, Planja\par
+            Length: \the\cavelength, Depth: \the\cavedepth \par
+            Entrance Coordinates (DK-48): 404176 125263 1868 \par
+            Survey : %\the\topoteam{} \par %topoteam list is too long so just credit ICCC/JSPDT
+            %Drawing: \cartoteam{} \par
+            ICCC / JSPDT
+        } 
+    \def\cadastralnumber{\size[18] \si --- Cad. Nr.: 15056}
+
+    \def\maplayout{
+	  \legendbox{8}{95}{SW}{\hsize=\legendwidth\size[18]\bf\the\cavename \cadastralnumber}
+	  \legendbox{8}{94}{SW}{\hsize=\legendwidth\size[15]\bf PROFIL / ELEVATION}
+	  \legendbox{8}{93}{NW}{\hsize=\legendwidth\mycomment}
+       %\legendbox{5}{99}{NW}{\cadastralnumber}
+      %\legendbox{5}{-4}{NW}{\loadpicture{brezno_pod_vrhom_planje_ee.pdf}}
+    }
+    endcode
+endlayout
+#----------------------------------------------------------------------------------|
+# define a local layout with legend, without header for extended elevation
 layout local-e
 	#copy detailed-dark-e
 	copy detailed-e
@@ -97,7 +123,9 @@ layout local-e
 	symbol-colour line border [0 70 90]
 	symbol-show point label
 	symbol-show area snow
+	
 	scale 1 400
+	copy comment-e
 	#map-image -5 110  ne ../_outputs/brezno_pod_vrhom_planje_plan.pdf
 endlayout
 
@@ -112,8 +140,8 @@ export map -o ../../outputs/brezno_pod_vrhom_planje_ee_EN.pdf -projection extend
 export map -o ../../outputs/brezno_pod_vrhom_planje_ee_EN.svg -projection extended -layout local-e
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
-export map -o ../../outputs/brezno_pod_vrhom_planje_plan_EN.pdf -projection plan -layout local
-export map -o ../../outputs/brezno_pod_vrhom_planje_plan_EN.svg -projection plan -layout local
+export map -o ../../outputs/brezno_pod_vrhom_planje_plan_EN.pdf -projection plan -layout local-p
+export map -o ../../outputs/brezno_pod_vrhom_planje_plan_EN.svg -projection plan -layout local-p
 
 
 lang sl
@@ -123,5 +151,5 @@ export map -o ../../outputs/brezno_pod_vrhom_planje_profil_SLO.pdf -projection e
 export map -o ../../outputs/brezno_pod_vrhom_planje_profil_SLO.svg -projection extended -layout local-e
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
-export map -o ../../outputs/brezno_pod_vrhom_planje_tloris_SLO.pdf -projection plan -layout local
-export map -o ../../outputs/brezno_pod_vrhom_planje_tloris_SLO.svg -projection plan -layout local
+export map -o ../../outputs/brezno_pod_vrhom_planje_tloris_SLO.pdf -projection plan -layout local-p
+export map -o ../../outputs/brezno_pod_vrhom_planje_tloris_SLO.svg -projection plan -layout local-p

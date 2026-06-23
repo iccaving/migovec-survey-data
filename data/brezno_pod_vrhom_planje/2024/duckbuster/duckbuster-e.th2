@@ -1,23 +1,33 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 500.0 1000.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap duckbuster-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
 point 225.2518 491.3413 station-name -align t -scale xs -text 0
+
 point 235.1299 489.6559 station-name -align t -scale xs -text 1
+
 point 251.9836 487.2683 station-name -align t -scale xs -text 2
+
 point 267.5265 493.3075 station-name -align t -scale xs -text 3
+
 point 266.122 503.5602 station-name -align t -scale xs -text 4
+
 point 267.3861 522.8483 station-name -align t -scale xs -text 6
+
 point 282.4008 518.4476 station-name -align t -scale xs -text 7
+
 point 265.7475 509.9272 station-name -align t -scale xs -text 5
+
 point 260.9723 516.9027 station-name -align t -scale xs -text 8
+
 point 251.7879 502.6485 label -align tl -text "<bf>P5"
+
 point 293.5118 486.3426 label -align tr -text Duckbuster
-point 196.0506 467.8351 label -align tr -scale xs -text "Constricted pitch<br>head - 30m?"
-point 216.8362 493.9955 continuation 
+
 line rock-border -close on
   278.6747 491.6974
   273.9084 490.9287 271.679 493.7731 273.9084 490.6212
@@ -65,7 +75,7 @@ line rock-border -close on
   265.0677 490.5443 264.7602 490.6212 264.7602 490.6212
 endline
 
-line wall 
+line wall
   219.8293 487.1736
   219.8293 487.1736 224.7217 487.8259 226.6786 486.1952
   228.6355 484.5644 237.4418 485.2167 240.051 483.2598
@@ -80,22 +90,32 @@ line wall
   283.8345 513.7724
 endline
 
-line wall 
+line wall
   255.0895 515.1441
   254.6546 512.3174 252.2275 499.2414 250.1619 497.5019
   248.0962 495.7624 245.487 493.4793 242.5515 494.4578
   239.6161 495.4363 239.3987 497.3932 235.1587 498.5891
-  230.9186 499.785 211.5667 500.546 211.5667 500.546
+  230.9186 499.785 219.2542 500.0359 219.2542 500.0359
 endline
 
 point 225.29 488.94 station -name 0
+
 point 235.09 487.36 station -name 1
+
 point 252.3 484.84 station -name 2
+
 point 264.6 492.09 station -name 3
+
 point 261.75 505.79 station -name 4
+
 point 261.75 512.64 station -name 5
+
 point 266.04 521.14 station -name 6
+
 point 277.67 521.69 station -name 7
+
 point 265.24 520.28 station -name 8
+
 endscrap
+
 

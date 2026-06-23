@@ -4,13 +4,14 @@ survey mona_tip11 -title "Monatip 11"
 	input "mona_tip11-e.th2"
 
 	map m-all-e -projection extended
-		mona_tip11-5e
-		break
 		mona_tip11-1e
 		mona_tip11-2e
 		mona_tip11-3e
 		mona_tip11-4e
+		break
+		mona_tip11-5e
 	endmap
+	join mona_tip11-4e mona_tip11-5e
 
 	map m-all-p -projection plan
 		m4p

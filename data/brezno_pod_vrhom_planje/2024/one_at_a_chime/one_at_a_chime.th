@@ -16,15 +16,12 @@ survey one_at_a_chime -title "One at a Chime"
   one_at_a_chime-4p
   one_at_a_chime-5p
   endmap
-
+  join one_at_a_chime-4p one_at_a_chime-5p
+  
   map m-all-e -projection extended 
   one_at_a_chime-1e
   one_at_a_chime-2e
   endmap
-
-
-  # map m-all-e -projection extended 
-  #endmap
   
   centerline
     date 2024.07.08 

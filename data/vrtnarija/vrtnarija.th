@@ -180,7 +180,9 @@ survey vrtnarija -title "Vrtnarija" -entrance 0@bclent2 -attr cadastral_n 8283
 	equate 1@leprachaun 45@mad_cow
 	
 	join smash-2p@smash potato-1p@potato
-	join smash-1p@smash miles-2p@miles
+	join gold-2p@gold nitro-1p@nitro
+	join potato-2p@potato nitro-1p@nitro
+	join smash-1p@smash miles-1p@miles
 	join colarado_s2_l1@colarado beyond_s2_l1@beyond
 	join colarado_s2_l2@colarado beyond_s2_l2@beyond
 	join colarado-1p@colarado hoover-1p@hoover
@@ -510,8 +512,10 @@ survey vrtnarija -title "Vrtnarija" -entrance 0@bclent2 -attr cadastral_n 8283
 	
 	join redbaron-1p@redbaron kamikaze-1p@kamikaze
 	join throneroom-1p@throneroom redbaron-1p@redbaron
-	join line@serenade:0 east@amazinggrace:end
-	join amaz@throneroom:end west@amazinggrace:0
+	join serenade1p_l2@serenade:end throneroom1p_l2@throneroom:0
+	join serenade1p_l1@serenade:0 throneroom1p_l1@throneroom:end
+	join serenade1p_l1@serenade:end amazinggrace1p_l1@amazinggrace:0
+	join serenade1p_l2@serenade:0 amazinggrace1p_l2@amazinggrace:end
 	join grace2-1p@grace2 amazinggrace-1p@amazinggrace
 	join magicdragon-1p@magicdragon grace2-1p@grace2
 	join stuckinparadise-1p@stuckinparadise magicdragon-1p@magicdragon
