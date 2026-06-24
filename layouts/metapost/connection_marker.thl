@@ -1,3 +1,6 @@
+#This layout creates a custom symbol for a connection marker, and a numbered flag for labelling useful points of interest in maps.
+#As of 8th June 2025 this is now included in detailed-p.thl, so there should rarely be a need to input it to your survey
+#Our route descriptions rely on these symbols, but they all call up detailed-p
 layout connection_marker
 
 	code metapost

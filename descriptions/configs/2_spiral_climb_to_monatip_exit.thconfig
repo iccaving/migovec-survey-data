@@ -3,7 +3,6 @@
 source ../../data/system_migovec.th
 
 input ../../layouts/detailed-p.thl
-input ../../layouts/metapost/connection_marker.thl
 input ../../layouts/metapost/label.thl
 input ../../layouts/mods.thl
 
@@ -15,7 +14,6 @@ endlookup
 # Generate actual map
 layout local-p
 	copy detailed-p
-	copy connection_marker
 	copy custom_label
 
 	colour map-fg map:spiral_climb_to_mona_tip_exit # this is the crucial look-up
