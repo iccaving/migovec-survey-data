@@ -1,10 +1,14 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 595.000000 373.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 595.0 373.0
 ##XTHERION## xth_me_area_zoom_to 100
+
+
 
 scrap herojtelemarkal1-1e -projection extended -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
 
-line wall 
+point 180.0538 202.1327 label -orientation 338.155 -align br -attr level 3 -orient 336 -scale xs -text "Heroj Telemarkal"
+
+line wall
   399.5482 238.6734
   399.5482 238.6734 361.3092 223.9661 355.9166 223.4758
   350.5239 222.9856 332.8751 216.6124 327.4824 213.1807
@@ -15,13 +19,13 @@ line wall
   159.329 149.9393 146.0925 144.0564 146.0925 144.0564
 endline
 
-line wall 
+line wall
   461.8091 241.1246
   461.8091 241.1246 455.485 242.989 440.7286 247.988
   436.5605 249.4 422.0994 239.1636 422.0994 239.1636
 endline
 
-line wall 
+line wall
   145.112 128.3687
   145.112 128.3687 177.9583 142.5857 184.8217 141.6052
   191.6851 140.6247 234.8265 137.6833 241.6899 144.0564
@@ -36,13 +40,23 @@ line wall
 endline
 
 point 133.31 135.31 station -name 0
+
 point 139.92 134.28 station -name 1
+
 point 192.19 151.76 station -name 2
+
 point 257.11 164.36 station -name 3
+
 point 337.29 206.49 station -name 4
+
 point 354.78 211.13 station -name 5
+
 point 408.54 229.09 station -name 6
+
 point 435.69 239.72 station -name 7
+
 point 460.69 236.65 station -name 8
+
 endscrap
+
 

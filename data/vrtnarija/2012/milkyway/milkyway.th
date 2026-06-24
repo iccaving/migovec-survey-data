@@ -3,10 +3,10 @@ survey milkyway -title "Milky Way"
 	input milkyway-e.th2
 	
 	map m-all-e -projection extended
+		milkyway-3e
 		milkyway-1e
 		break
 		milkyway-2e
-		milkyway-3e
 	endmap
 	
 	input milkyway-p.th2

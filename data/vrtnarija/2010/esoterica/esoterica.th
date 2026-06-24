@@ -26,22 +26,28 @@ survey esoterica -title "ESOTERICA"
 		units length meters
 		units compass clino degrees
 		data normal from to tape compass clino ignoreall
+		extend left
 		1	2	5.30	296	0
 		2	3	8.71	-	UP
 		3	4	1.25	202	-5
 		4	5	5.79	5	55
+		extend right
 		6	5	2.91	158	+7
 		7	6	6.66	102	-40
 		8	7	2.20	106	-19
 		9	8	1.25	79	21
 		10	9	4.19	152	-18
 		11	10	3.92	172	-1
+		flags duplicate #Resurveyed in Serrure
+		extend left
 		12	11	2.46	270	-10
 		13	12	5.79	315	-66
 		14	13	2.31	260	-36
 		15	14	2.89	10	-38
+		extend right
 		16	15	4.62	119	-40
 		17	16	2.99	68	-35
+		flags not duplicate
 		data dimensions station left right up down ignoreall
 		1	1	0	1	0
 		2	2	1	9	0

@@ -1,20 +1,49 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
 
+
+
 scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-line survey 
+
+line survey
   6.28 37.01
-  -6.28 35.91
+  18.84 35.91
 endline
-line survey 
-  -6.28 35.91
-  -6.28 -37.01
+
+line survey
+  18.84 35.91
+  18.84 -37.01
 endline
+
 endscrap
 
+
+
 scrap isdead-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
-point -6.28 35.91 station -name 2
+
+point 50.2772 -34.2901 label -align tr -attr level 3 -scale xs -text "Is Dead"
+
+line wall
+  5.6745 31.3116
+  5.6745 31.3116 10.6227 31.652 10.4987 29.5242
+  9.8042 17.6157 13.3576 -18.4086 13.2455 -20.9865
+  13.1134 -24.0251 11.1384 -33.7126 12.3274 -34.9016
+  13.5164 -36.0906 16.2907 -37.9401 19.5935 -37.5438
+  22.8962 -37.1475 35.9752 -31.8631 35.9752 -31.8631
+  smooth off
+  35.9752 -31.8631 29.4951 22.2136 30.2878 25.12
+  30.7352 26.7606 32.2231 32.1231 31.593 36.5408
+  31.1068 39.9497 16.6807 41.9348 16.6807 41.9348
+  smooth off
+endline
+
+point 18.84 35.91 station -name 2
+
 point 6.28 37.01 station -name 3
-point -6.28 -37.01 station -name 1
+
+point 18.84 -37.01 station -name 1
+
 endscrap
+
+

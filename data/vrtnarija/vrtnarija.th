@@ -430,6 +430,10 @@ survey vrtnarija -title "Vrtnarija" -entrance 0@bclent2 -attr cadastral_n 8283
 	
 	join wonderland-1e@wonderland consort-1e@consort
 	join palace2-1e@palace2 consort-1e@consort
+	join palace2-1e@palace2 ouroboros-1e@ouroboros
+	join palace2-2e@palace2 minataur-1e@minataur
+	join ouroboros-1e@ouroboros minataur-1e@minataur #Unsurveyed crawl
+	join palace2-2e@palace2 ouroboros-1e@ouroboros
 	join the_queen_bed_chamber-1e@the_queen_bed_chamber minataur-1e@minataur
 	join republica-1e@republica insomnia-1e@insomnia
 	join roaring-1e@roaring happy_monday-1e@happy_monday
@@ -837,6 +841,9 @@ survey vrtnarija -title "Vrtnarija" -entrance 0@bclent2 -attr cadastral_n 8283
 	join hanginggardensdeep-1e@hanginggardensdeep pick_your_poison-1e@pick_your_poison
 	join esoterica-1e@esoterica yourmum-1e@yourmum
 	join esoterica-2p@esoterica serrure-1p@serrure
+	join serrure-1e@serrure consort-1e@consort
+	join consort-2e@consort serrure-2e@serrure
+	join serrure-2e@serrure esoterica-1e@esoterica
 	join davyjoneslocker-1e@davyjoneslocker atworldsend-1e@atworldsend
 	join davyjoneslocker-1e@davyjoneslocker sicsempertyrannis-1e@sicsempertyrannis
 	join sicsempertyrannis-4e@sicsempertyrannis touchingthevoidsbottom-1e@touchingthevoidsbottom
@@ -914,6 +921,7 @@ survey vrtnarija -title "Vrtnarija" -entrance 0@bclent2 -attr cadastral_n 8283
 	join void2-1p@void2 dinnerservice-1p@dinnerservice
 	join void2-1p@void2 nitro-1p@nitro
 	join isdead-1p@isdead yourmum-1p@yourmum
+	join isdead-1e@isdead yourmum-1e@yourmum
 	join andreabocelli-1e@andreabocelli void2-1e@void2
 	join void2-1e@void2 dinnerservice-1e@dinnerservice
 	join void2-1e@void2 nitro-1e@nitro
