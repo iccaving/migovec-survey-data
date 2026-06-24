@@ -1,20 +1,22 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
+
+
 
 scrap DELETE-ME-survey-legs-e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-line survey 
+line survey
   445.7014 661.3295
   458.5614 663.9995
 endline
 
-line survey 
+line survey
   458.5614 663.9995
   478.0114 660.9295
 endline
 
-line survey 
+line survey
   478.0114 660.9295
   506.6414 609.2795
 endline
@@ -22,11 +24,12 @@ endline
 endscrap
 
 
+
 scrap yourmum-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
-point 503.3158 652.0103 label -align tr -text "Your Mum" -scale xs
+point 442.6771 683.4525 label -align tr -attr level 4 -scale xs -text "Your Mum"
 
-line wall 
+line wall
   513.6721 614.6187
   513.2361 615.7088 499.5003 639.6918 499.5003 639.6918
   499.5003 639.6918 496.884 649.5031 496.2299 651.2473
@@ -36,7 +39,7 @@ line wall
   449.1361 671.5238
 endline
 
-line wall 
+line wall
   445.2116 649.7211
   446.0837 649.7211 461.5636 650.5932 463.9619 649.9391
   466.3602 649.285 478.7878 643.8343 478.7878 643.8343
@@ -48,8 +51,13 @@ line wall
 endline
 
 point 458.561 663.999 station -name 3
+
 point 445.701 661.329 station -name 4
+
 point 478.011 660.929 station -name 2
+
 point 506.641 609.279 station -name 1
+
 endscrap
+
 

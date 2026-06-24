@@ -14,8 +14,11 @@ survey consort -title "PRINCE CONSORT ROAD"
 	map m-all-e -projection extended
 		consort-1e
 		consort-2e
+		consort-3e
 	endmap
-	
+	join consort-1e consort-2e
+	join consort-2e consort-3e
+	join consort-1e consort-3e
 	centreline
 		team "Andy Jurd" insts
 		team "Gergely Ambrus" notes

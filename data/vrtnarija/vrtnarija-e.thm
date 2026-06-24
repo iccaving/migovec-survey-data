@@ -71,6 +71,7 @@ map m-beyond-consort-e -projection extended
 	m-all-e@serrure
 	m-all-e@esoterica
 	m-all-e@yourmum
+	m-all-e@isdead
 	m-all-e@palace2
 	m-all-e@minataur
 	m-all-e@the_queen_bed_chamber
@@ -418,15 +419,6 @@ centreline
 	extend right 3@wonderland
 	extend left 5@wonderland 6@wonderland
 	extend left 7@rolling
-	#extend left 22@consort 23@consort
-	#extend left 9@consort 10@consort
-	#extend left 12@consort 15@consort
-	#extend right 15@consort 16@consort
-	#extend right 16@consort 17@consort
-	#extend left 14@consort 17@consort
-	#extend left 7@consort 6@consort
-	#extend left 6@consort 3@consort
-	#extend left 3@consort 1@consort
 	extend left 3@redbaron
 	extend right 5@stuckinparadise
 	extend right 7@hotpants
@@ -434,17 +426,13 @@ centreline
 	extend right 6@peepshow
 	extend left 2@peepshow
 	extend right 13@why_the_face
-	#extend left 3@consort 4@consort
-	#extend left 4@consort 5@consort
-	#extend left 1@consort 2@consort
-	#extend left 7@consort 8@consort
-	
+	#Consort extends moved to consort.th, note if you change you will need to be consistent with esoterica.th and serrure.th
 	extend right 4@palace2 3@palace2
 	extend left 3@palace2 2@palace2
 	extend left 2@palace2 1@palace2
 	
 	# Snap off wrong way in consort
-	#extend ignore 17@consort
+	#extend ignore 17@consort #No longer required!
 	extend ignore 2@ouroboros
 	
 	# Below Stuck In Paradise
