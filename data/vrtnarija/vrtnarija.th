@@ -430,6 +430,10 @@ survey vrtnarija -title "Vrtnarija" -entrance 0@bclent2 -attr cadastral_n 8283
 	
 	join wonderland-1e@wonderland consort-1e@consort
 	join palace2-1e@palace2 consort-1e@consort
+	join palace2-1e@palace2 ouroboros-1e@ouroboros
+	join palace2-2e@palace2 minataur-1e@minataur
+	join ouroboros-1e@ouroboros minataur-1e@minataur #Unsurveyed crawl
+	join palace2-2e@palace2 ouroboros-1e@ouroboros
 	join the_queen_bed_chamber-1e@the_queen_bed_chamber minataur-1e@minataur
 	join republica-1e@republica insomnia-1e@insomnia
 	join roaring-1e@roaring happy_monday-1e@happy_monday
