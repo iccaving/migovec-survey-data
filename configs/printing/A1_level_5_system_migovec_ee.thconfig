@@ -20,6 +20,8 @@ encoding  utf-8
 #The system total length is hardcoded in the layout blocks below, check the latest
 #system total length and update it before you print
 #I have not checked the dimensions of the slovenian version, so check this before you print
+#Make sure you run therion from the top level folder, so it pulls in the correct therion.ini
+#This is needed to make sure the fonts display correctly
 
 #----------------------------------------------------------------------------------|
 # select a source data file.
