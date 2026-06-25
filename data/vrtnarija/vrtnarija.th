@@ -47,7 +47,7 @@ survey vrtnarija -title "Vrtnarija" -entrance 0@bclent2 -attr cadastral_n 8283
 	join urinal-1e@urinal laurel-1e@laurel
 	join urinal2-1e@urinal2 urinal-1e@urinal
 	join urinal2-1e@urinal2 pico-1e@pico
-	join wall@pico2:0 wall2@pico:end
+	join pico-1e@pico pico2-1e@pico2
 	join pico2-1e@pico2 tesselator-1e@tesselator
 	join space_odyssey-1e@space_odyssey tesselator-1e@tesselator
 	join concorde-1e@concorde space_odyssey-1e@space_odyssey
@@ -88,9 +88,7 @@ survey vrtnarija -title "Vrtnarija" -entrance 0@bclent2 -attr cadastral_n 8283
 	join skynet-1e@skynet pink2-1e@pink2
 	join zimmer-1e@zimmer skynet-1e@skynet
 	join zimmer-1e@zimmer friendship-1e@friendship
-	join wall@chariot:end wall@pico:0
-	join wall2@chariot:0 wall2@pico2:end
-	
+	join pico2-1e@pico2 chariot-1e@chariot
 	join fallsrd-1e@fallsrd friendship-1e@friendship
 	
 	###__________2003____________###
@@ -288,6 +286,7 @@ survey vrtnarija -title "Vrtnarija" -entrance 0@bclent2 -attr cadastral_n 8283
 	join primula-1p@primula cheesecake-1p@cheesecake
 	join ride_the_lightning-1p@ride_the_lightning worm-1p@worm
 	
+	join dangermouse-1e@dangermouse greenback-1e@greenback
 	join greenback-1e@greenback giblet_breakfast-1e@giblet_breakfast
 	
 	
