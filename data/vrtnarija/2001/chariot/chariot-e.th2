@@ -1,17 +1,21 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap chariot-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
 
+point 675.7959 794.8514 label -align l -attr level 4 -scale xs -text Chariot
+
 line wall -subtype invisible
   622.266 970.8501
-  563.4483 1003.4999
+  563.1841 1000.4614
 endline
 
-point 567.6658 965.2344 water-flow -orientation 199.74631
-line border -close on -id chariot-1e_water_1 -visibility on
+point 571.4024 976.932 water-flow -orientation 199.746 -scale s
+
+line border -id chariot-1e_water_1 -close on -visibility on
   491.1868 734.1394
   485.7852 732.819 478.1029 721.7757 479.7834 716.7342
   481.4639 711.6927 523.5965 701.2496 530.5585 702.3299
@@ -20,11 +24,11 @@ line border -close on -id chariot-1e_water_1 -visibility on
   568.1298 734.8596 491.1868 734.1394 491.1868 734.1394
 endline
 
-area water 
+area water
   chariot-1e_water_1
 endarea
 
-line wall 
+line wall
   419.8855 924.9964
   421.686 920.5551 422.5263 917.6742 420.4857 914.5533
   418.445 911.4324 415.2041 907.5912 407.7618 903.8701
@@ -53,8 +57,8 @@ line wall
 endline
 
 line wall -id wall2
-  563.4483 1003.4999
-  561.7679 995.5775 559.1271 986.6949 552.8852 982.1335
+  563.1841 1000.4614
+  561.5037 992.539 559.1271 986.6949 552.8852 982.1335
   546.6434 977.5721 519.5153 971.5703 514.4737 971.5703
   509.4322 971.5703 502.7102 976.3718 495.7482 971.0902
   488.7861 965.8086 484.7049 961.7274 479.6633 960.0469
@@ -72,7 +76,7 @@ line wall -id wall
   576.6523 964.1281 621.5458 962.9278 622.266 970.8501
 endline
 
-line wall 
+line wall
   443.8927 930.5181
   455.8962 935.0794 470.5406 941.5614 482.0641 943.0018
   493.5875 944.4422 506.5514 953.3249 514.9539 955.0054
@@ -82,11 +86,19 @@ line wall
 endline
 
 point 585.4893 1035.121 station -name 7
+
 point 569.0593 1018.661 station -name 6
+
 point 561.9693 982.201 station -name 5
+
 point 538.1993 964.251 station -name 4
+
 point 499.6193 963.621 station -name 3
+
 point 481.9993 951.731 station -name 2
+
 point 446.6293 942.201 station -name 1
+
 endscrap
+
 

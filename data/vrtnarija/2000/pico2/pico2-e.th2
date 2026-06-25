@@ -1,9 +1,30 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 1004.0 1282.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
+
 scrap pico2-1e -projection extended -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+
+line wall -subtype invisible
+  542.5672 658.6164
+  603.3374 629.9108
+endline
+
+line wall -subtype invisible
+  613.6511 762.5125
+  572.093 768.1896
+endline
+
+line wall
+  603.3374 629.9108
+  603.3374 629.9108 605.1945 636.1991 608.1376 645.9912
+  610.8949 655.1652 610.8169 668.6718 611.2687 669.937
+  612.2029 672.5526 614.912 707.3035 614.7251 710.4796
+  614.5606 713.2773 611.5915 748.0726 612.8519 756.8231
+  613.2719 759.739 613.6511 762.5125 613.6511 762.5125
+  smooth off
+endline
 
 line wall -id wall
   572.093 768.1896
@@ -22,10 +43,17 @@ line wall -id wall2
 endline
 
 point 603.346 776.7095 station -name 6
+
 point 592.946 702.9295 station -name 5
+
 point 563.796 692.5295 station -name 4
+
 point 544.696 717.0195 station -name 3
+
 point 409.586 745.4495 station -name 2
+
 point 307.006 748.3595 station -name 1
+
 endscrap
+
 
