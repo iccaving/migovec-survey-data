@@ -1,0 +1,117 @@
+encoding  utf-8
+#----------------------------------------------------------------------------------|
+#                                                                                  |
+#                      THIS IS A CONFIGURATION FILE FOR:                           |
+#                                                                                  |
+#                      PRINTING OUT ON 2 LANDSCAPE SHEETS OF A1 PAPER              |
+#                                                                                  |
+#                      SYSTEM MIGOVEC EXTENDED ELEVATION                           |
+#                                                                                  |
+#----------------------------------------------------------------------------------|
+#This overrides the default scale in base-e.thl to 1:2180
+#The final survey, in landscape orientation, will be the exact length of 2 A1 sheets of paper
+#This is using the 25th June 2026 survey
+#There will be a few centimetres spare at the bottom
+#An A1 sheet of paper measures 594 x 841 mm
+#You may need to use a utility like "mutool" to split the final file into 2 pages
+#"mutool poster -x 2 ***.pdf" will achieve this, or just use a free pdf split website
+#If the survey changes, adjust the scale and compile, check the dimensions of the output pdf
+#Everything else in this config is copied from the autobuild config on 25-06-2026
+#The system total length is hardcoded in the layout blocks below, check the latest
+#system total length and update it before you print
+#I have not checked the dimensions of the slovenian version, so check this before you print
+
+#----------------------------------------------------------------------------------|
+# select a source data file.
+source "../../data/system_migovec.th"
+
+#----------------------------------------------------------------------------------|
+# input the layout files
+input "../../layouts/base-p.thl"
+input "../../layouts/base-e.thl"
+input "../../layouts/mods.thl"
+
+#----------------------------------------------------------------------------------|
+# export an ELEVATION view
+
+layout ee-slo
+	copy base-e
+	scale 1 2180 #Adjust this scale until finished survey matches paper size
+	symbol-hide line map-connection
+	symbol-hide point u:flag
+	scale-bar 400 m
+
+	code metapost
+		set_label_level("5");
+	endcode
+
+	code tex-map
+	\def\xcenter{51}
+  	\def\ycenter{38}
+  	\def\yscale{5}
+	\def\mapcomment{
+	\size[46]\bf \the\cavename
+	\par{\quad}
+	\size[16]
+	\par Dolžina: 46813 m \par Globina: 970 m \par{\quad}\par Iztegnjeni Profil\par{\quad}\par Občina Tolmin, Slovenija \par Imperial College Caving Club\par Jamarska sekcija PD Tolmin\par Raziskave: \the\topodate \par Natančnost meritev IV/B\par{\quad}\par JAMSKI VHODI:\par\size[14]  M2 (Kavkna jama)\par kat. št.: 4465\par{\quad}\par  M18 (Jama strgane srajce)\par kat. št.: 8284\par{\quad}\par  M16\par kat. št.: 6001 \par{\quad}\par Primadona \par kat. št.: 8282\par{\quad}\par U-Bend 571\par kat. št.: 12114\par{\quad}\par  Mona tip\par kat. št.: 10180\par{\quad}\par Vrtnarija\par kat. št.: 8283\par{\quad}\par  Vilinska jama\par kat. št.: 10868}
+
+	\def\maplayout{
+
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\mapcomment}
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter - 7*\yscale\relax}{N}{\scalebar}
+  }
+endcode 
+
+	colour map-fg map:cave
+endlayout
+
+layout ee-eng
+	copy base-e
+	scale 1 2180 #Adjust this scale until finished survey matches paper size
+	symbol-hide line map-connection
+	symbol-hide point u:flag
+	scale-bar 400 m
+
+	code metapost
+		set_label_level("5");
+	endcode
+
+	code tex-map
+	\def\xcenter{51}
+  	\def\ycenter{38}
+  	\def\yscale{5}
+	\def\mapcomment{
+	\size[46]\bf \the\cavename
+	\par{\quad}
+	\size[16]
+	\par Length: 46813 m \par  Depth: 970 m \par{\quad}\par Extended Elevation\par{\quad}\par Tolmin, Julian Alps\par Imperial College Caving Club\par Jamarska sekcija PD Tolmin\par Exploration: \the\topodate \par BCRA grade 4-5b\par{\quad}\par CAVE ENTRANCES:\par\size[14] M2 (Kavkna Jama)\par Cad. No.: 4465\par{\quad}\par M18 (Torn T-Shirt)\par Cad. No.: 8284\par{\quad}\par M16\par Cad. No.: 6001\par{\quad}\par Primadona\par Cad. No.: 8282\par{\quad}\par U-Bend 571\par Cad. No.: 12114\par{\quad}\par Mona tip\par Cad. No.: 10180\par{\quad}\par Vrtnarija\par Cad. No.: 8283\par{\quad}\par Vilinska jama\par Cad. No.: 10868}
+
+	\def\maplayout{
+
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\mapcomment}
+  \legendbox{\the\numexpr\xcenter\relax}{\the\numexpr\ycenter - 7*\yscale\relax}{N}{\scalebar}
+  }
+endcode
+
+	colour map-fg map:cave
+endlayout 
+
+# garantee identical cave lengths / depths 
+
+source 
+	map local-e 
+		m-all-e@system_migovec
+		system_migovec 
+	endmap
+endsource 
+
+select local-e
+
+maps-offset on
+
+language sl
+export map -projection extended -o ../../outputs/system_migovec_EE_SLO.pdf -layout ee-slo
+#export map -projection extended -o ../../outputs/system_migovec_EE_SLO.svg -layout ee-slo
+language en
+export map -projection extended -o ../../outputs/system_migovec_EE_ENG.pdf -layout ee-eng
+#export map -projection extended -o ../../outputs/system_migovec_EE_ENG.svg -layout ee-eng
