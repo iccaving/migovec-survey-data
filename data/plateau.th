@@ -23,6 +23,7 @@ survey plateau -title "Migovec Plateau"
 	input "./vrh_planja.th"
 
 	# other caves
+	input "./blood_tribute/blood_tribute.th"
 	input "./gondolin/gondolin.th"
 	input "./planika_resurvey_2019/planika.th"
 	input "./M17/M17.th"
@@ -80,6 +81,9 @@ survey plateau -title "Migovec Plateau"
 
 		# BERTIJEVA JAMA
 		fix 10@bertipot.vrh_planja 403706 125587 1749
+
+		#BLOOD TRIBUTE
+		fix 21@blood_tribute 404169 124388 1730 #NEEDS A REAL FIX
 		
 		# BREZNO POD VRHOM PLANJE
 		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje.vrh_planja 403804 125750 1868

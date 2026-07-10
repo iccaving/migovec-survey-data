@@ -90,4 +90,12 @@ survey brezno_pod_vrhom_planje -title "Brezno pod Vrhom Planje"  -entrance 0@bre
 
 	join duckbuster-1e@duckbuster game_of_stones-1e@game_of_stones
 	join game_of_stones-1e@game_of_stones game_of_stones_a_feast_for_crolls-1e@game_of_stones_a_feast_for_crolls
+
+
+	###__________2026___________###
+
+	input "./2026/dumb_decision/dumb_decision.th"
+
+	equate 3@dumb_decision 0@game_of_stones_a_feast_for_crolls
+	
 endsurvey
