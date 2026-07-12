@@ -780,5 +780,11 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join loompa_land-1e@loompa_land 2_loompa_2_land-1e@2_loompa_2_land
 	join 2_loompa_2_land-3e@2_loompa_2_land loompa_land_tolmin_drift-1s@loompa_land_tolmin_drift
 	join down_the_rabbit_hole-1e@down_the_rabbit_hole alice_in_waterland-1e@alice_in_waterland
-	
+
+	###_____________2026_______________###
+	input "./2026/warp_core_breach/warp_core_breach.th" #discovered 2024, resurveyed 2026
+	input "./2026/hydrophile/hydrophile.th"
+
+	equate a@warp_core_breach 3@antares
+	equate 0@hydrophile 22@warp_core_breach
 endsurvey

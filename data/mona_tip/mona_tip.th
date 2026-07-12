@@ -193,4 +193,11 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 
 	join mambo_number_5-1e@mambo_number_5 neu_alliance-1s@neu_alliance
 
+	####______________2026_______________#####
+	input "./2026/sparta/sparta.th"
+	input "./2026/shark_tale/shark_tale.th"
+
+	equate 22@sparta 49@cloacamaxima
+	equate 20@shark_tale 2@extra_dunkel
+
 endsurvey

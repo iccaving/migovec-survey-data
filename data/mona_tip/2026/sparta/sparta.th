@@ -1,0 +1,109 @@
+encoding utf-8
+# 2026.07.11 created by TopoDroid v 6.4.57
+
+survey sparta -title "sparta"
+
+  centerline
+    date 2026.07.08 
+    # team DPW, MM 
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+    extend left
+    1 0 5.39 239.1 32.5
+    # extend auto
+    0 . 1.48 262.2 30.9
+    0 . 2.15 231.7 21.2
+    0 . 0.87 232.3 36.1
+    0 . 0.67 273.9 23.2
+    0 . 1.01 224.0 -11.9
+    0 . 1.75 54.1 16.3
+    extend right
+    2 0 1.79 53.9 16.3
+    # extend auto
+    1 . 1.80 53.9 16.3
+    2 . 0.96 315.3 29.8
+    2 . 2.87 324.5 35.9
+    2 . 0.79 316.5 79.4
+    2 . 2.27 326.7 37.1
+    extend left
+    2 3 2.66 343.5 48.7
+    # extend auto
+    3 . 2.17 139.7 31.3
+    3 . 2.46 147.2 50.5
+    3 . 1.90 77.1 -0.0
+    3 . 2.26 69.0 -25.7
+    3 . 1.22 38.2 -74.6
+    3 . 2.93 101.7 48.6
+    3 . 3.02 102.5 48.6
+    extend right
+    4 3 3.01 103.3 48.7
+    extend left
+    2 5 4.41 210.5 -45.6
+    5 6 5.50 237.0 -24.7
+    # extend auto
+    5 . 5.48 237.1 -24.8
+    extend right
+    6 7 3.25 283.1 0.4
+    extend ignore
+    7 8 1.92 292.7 -14.1
+    # extend auto
+    6 . 1.89 293.7 -14.1
+    extend left
+    8 9 3.67 273.4 -8.2
+    9 10 5.00 240.2 -15.1
+    extend ignore
+    10 11 4.11 100.0 -32.5
+    # extend auto
+    8 . 4.11 101.6 -32.7
+    extend ignore
+    11 12 3.27 177.2 -10.3
+    # extend auto
+    8 . 3.35 171.8 -10.7
+    8 . 3.34 168.3 -10.3
+    8 . 3.12 239.6 -14.0
+    extend ignore
+    12 13 2.46 239.4 -14.2
+    # extend auto
+    8 . 2.39 239.2 -13.9
+    8 . 3.18 239.4 -13.9
+    8 . 4.91 230.1 -13.8
+    extend left
+    13 14 5.17 229.3 -15.8
+    14 15 3.80 132.5 -19.4
+    15 16 3.70 131.6 -12.9
+    16 17 3.24 123.9 -11.0
+    extend vertical
+    17 18 2.14 268.1 -47.0
+    extend ignore
+    18 19 4.77 185.4 -6.9
+    # extend auto
+    13 . 4.76 187.5 -6.8
+    13 . 4.58 188.5 -7.2
+    extend ignore
+    19 20 2.44 216.2 -6.9
+    # extend auto
+    13 . 2.55 218.3 -6.9
+    13 . 2.44 219.7 -6.9
+    extend ignore
+    20 21 2.14 125.5 -17.5
+    # extend auto
+    13 . 3.15 125.8 -17.4
+    13 . 2.13 125.7 -17.0
+    extend ignore
+    21 22 2.35 144.4 0.6
+    # extend auto
+    13 . 2.14 143.5 -0.4
+  endcenterline
+
+  # input "sparta-spartap.th2"
+  # input "sparta-spartas.th2"
+
+  # map mspartap -projection plan
+  #   sparta-spartap
+  # endmap
+  # map mspartas -projection extended
+  #   sparta-spartas
+  # endmap
+
+endsurvey
