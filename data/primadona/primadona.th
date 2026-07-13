@@ -784,7 +784,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	###_____________2026_______________###
 	input "./2026/warp_core_breach/warp_core_breach.th" #discovered 2024, resurveyed 2026
 	input "./2026/hydrophile/hydrophile.th"
+	input "./2026/sella_tursica/sella_tursica.th"
 
 	equate a@warp_core_breach 3@antares
 	equate 0@hydrophile 22@warp_core_breach
+	equate 5@sella_tursica 11@dejavu
 endsurvey
