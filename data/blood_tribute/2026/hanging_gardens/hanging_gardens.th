@@ -4,6 +4,19 @@ encoding utf-8
 survey hanging_gardens -title "Hanging Gardens"
     # st 0 = st0 of bld trb 
 
+  input "hanging_gardens-1p.th2"
+  # input "hanging_gardens-1s.th2"
+
+  map m-all-p -projection plan
+    hanging_gardens-1p
+    hanging_gardens-1p1
+    hanging_gardens-1p2
+    hanging_gardens-1p3
+  endmap
+  # map m1s -projection extended
+  #   blood_maze-1s
+  # endmap
+
   centerline
     date 2026.07.12 
     # team tb tp br 
@@ -395,18 +408,5 @@ survey hanging_gardens -title "Hanging Gardens"
     extend right
     14 15 2.25 168.4 -40.6
   endcenterline
-
-  # input "blood_maze-1p.th2"
-  # input "blood_maze-1s.th2"
-
-  # map m1p -projection plan
-  #   blood_maze-1p
-    #   blood_maze-1p1
-    #   blood_maze-1p2
-    #   blood_maze-1p3
-  # endmap
-  # map m1s -projection extended
-  #   blood_maze-1s
-  # endmap
 
 endsurvey
