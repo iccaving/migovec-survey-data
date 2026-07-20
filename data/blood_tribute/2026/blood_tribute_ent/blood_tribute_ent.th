@@ -548,14 +548,15 @@ survey blood_tribute_ent -title "Entrance"
   endcenterline
 
   input "blood_tribute_ent-1p.th2"
-  # input "blood_tribute_ent-1s.th2"
+  input "blood_tribute_ent-1s.th2"
 
   map m-all-p -projection plan
     blood_tribute_ent-1p
   endmap
-  # map m1s -projection extended
-  #   bloody2-1s
-    #   bloody2-1s1
-  # endmap
+  map m-all-e -projection extended
+    blood_tribute_ent-1s
+    blood_tribute_ent-1s1
+  endmap
+  join blood_tribute_ent-1s blood_tribute_ent-1s1
 
 endsurvey

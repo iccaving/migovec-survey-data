@@ -21,6 +21,7 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 	input "./primadona_ubend_mona_tip.th"
 	input "./m2m16m18.th"
 	input "./vrtnarija_vilinska.th"
+	# input "./blood_tribute/blood_tribute.th"
 
 	centreline
 		# old fixes use EPSG:3912
@@ -55,6 +56,9 @@ survey system_migovec -title "<lang:en>SYSTEM MIGOVEC<lang:sl>SISTEM MIGOVEC"
 		#fix 5@ubend2.ubend.primadona_ubend_mona_tip 404220 124292 1779
 		#Belladonna
 		station 3@belladonna.primadona_ubend_mona_tip entrance
+		#Blood Tribute
+		# station 21@blood_tribute_ent.blood_tribute entrance
+		#fix 21@blood_tribute_ent.blood_tribute 404169 124388 1730
 
 
 		#Vilinska Jama

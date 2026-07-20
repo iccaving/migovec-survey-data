@@ -13,4 +13,9 @@ survey blood_tribute -title "Blood Tribute"
 	  m-all-p@blood_tribute_ent
 	  m-all-p@hanging_gardens
   endmap
+
+  map m-all-e -projection extended -title "Blood Tribute"
+    m-all-e@blood_tribute_ent
+    m-all-e@hanging_gardens
+  endmap
 endsurvey
