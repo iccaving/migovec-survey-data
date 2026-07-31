@@ -1,8 +1,8 @@
 encoding  utf-8
 source planika.th
 
-input ../_layouts/detailed-p.thl
-input ../_layouts/detailed-e.thl
+input ../../../layouts/detailed-p.thl
+input ../../../layouts/detailed-e.thl
 
 select  m-planika-e@planika
 
@@ -35,7 +35,7 @@ endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map containing plan
-export map -o _outputs/Planika_plan.pdf -projection plan -layout local
+export map -o ../../../outputs/Planika_plan.pdf -projection plan -layout local
 
 
 #----------------------------------------------------------------------------------|
@@ -50,10 +50,10 @@ layout local-e
 	symbol-hide line arrow
 	symbol-show area snow
 	scale 1 400
-	map-image -5 110  ne _outputs/Planika_plan.pdf
+	map-image -5 110  ne ../../../outputs/Planika_plan.pdf
 endlayout
 
 #----------------------------------------------------------------------------------|
 # export the pdf map in elevation view
-export map -o _outputs/Planika_ee.pdf -projection extended -layout local-e
+export map -o ../../../outputs/Planika_ee.pdf -projection extended -layout local-e
 
