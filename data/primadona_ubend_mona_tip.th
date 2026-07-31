@@ -16,6 +16,7 @@ survey primadona_ubend_mona_tip -title "<bf>Primadona, Mona tip, Ubend-571, Bell
 	input "./mona_tip/mona_tip.th"
 	input "./ubend/ubend.th"
 	input "./belladonna/belladonna.th"
+	input "./blood_tribute/blood_tribute.th"
 
 	# input map definitions
 	input "./primadona_ubend_mona_tip-e.thm"
@@ -33,6 +34,9 @@ survey primadona_ubend_mona_tip -title "<bf>Primadona, Mona tip, Ubend-571, Bell
 
 	# Belladonna and primadona connection
 	equate shit@belladonna 35@prima1.primadona
+
+	# Blood Tribute and Primadona connection
+	equate 12@the_gardened_hang.blood_tribute 0@salome.primadona
 
 	# JOIN commands for the sketches at connection points
 	# Primadona to Monatip at Alkatraz via 'The Rock'

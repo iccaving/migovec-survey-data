@@ -1,0 +1,53 @@
+encoding utf-8
+# 2026.07.23 created by TopoDroid v 6.4.57
+
+survey overkarst_2 -title "overkarst 2"
+    # kvg connection to stars jama 
+
+  centerline
+    date 2026.07.22 
+    # team DPW jw 
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+    # extend auto
+    0 . 4.47 44.6 6.9
+    0 . 6.38 55.5 47.1
+    0 . 9.30 48.1 68.0
+    0 . 0.59 211.7 60.8
+    0 . 5.82 345.2 58.0
+    0 . 8.92 5.0 51.0
+    extend right
+    0 1 8.53 4.9 50.9
+    0 2 1.73 69.4 -13.6
+    # extend auto
+    2 . 7.40 79.1 29.1
+    2 . 12.94 110.1 55.1
+    2 . 15.02 111.9 58.2
+    2 . 5.61 188.1 72.7
+    2 . 1.26 205.6 28.9
+    2 . 14.37 140.4 -3.0
+    2 . 8.57 131.7 -2.3
+    2 . 7.71 95.0 1.1
+    2 . 8.43 94.1 -31.6
+    2 . 0.22 122.6 -36.3
+    2 . 16.15 143.3 -39.4
+    2 . 10.15 147.7 -39.1
+    extend left
+    2 3 9.43 115.7 -48.8
+    4 0 7.65 186.5 8.0
+    extend right
+    4 5 3.10 72.1 -39.8
+  endcenterline
+
+  # input "overkarst_2-1p.th2"
+  # input "overkarst_2-1s.th2"
+
+  # map m1p -projection plan
+  #   overkarst_2-1p
+  # endmap
+  # map m1s -projection extended
+  #   overkarst_2-1s
+  # endmap
+
+endsurvey

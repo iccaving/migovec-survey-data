@@ -23,6 +23,7 @@ survey plateau -title "Migovec Plateau"
 	input "./vrh_planja.th"
 
 	# other caves
+	input "./A_caves/hello_cave/hello_cave.th"
 	input "./blood_tribute/blood_tribute.th"
 	input "./others/gondolin/gondolin.th"
 	input "./others/planika_resurvey_2019/planika.th"
@@ -36,6 +37,7 @@ survey plateau -title "Migovec Plateau"
 	input "./others/rowan_cave/rowan_cave.th"
 	input "./others/mugo/mugo.th"
 	input "./coincidence/coincidence.th"
+	input "./others/hawk/hawk.th"
 	# input "./dripbone/dripbone_cavern.th"
 	input "./others/the_pet_shop/the_pet_shop.th"
 	input "./P_caves/P2/P2.th"
@@ -101,6 +103,12 @@ survey plateau -title "Migovec Plateau"
 
         # GONDOLIN
 		fix bcairn@gondolin 404343 124264 1863
+
+		#HAWK
+		fix 1@hawk 404266 124217 1835 #estimated height
+
+		#HELLO CAVE
+		fix 6@hello_cave 404642 124434 1855
 
 		# JANETS LITTLE CAVE
 		fix 0@janet_little_cave 404465 124680 1885

@@ -1,0 +1,81 @@
+encoding utf-8
+# 2026.07.22 created by TopoDroid v 6.4.57
+
+survey mirage -title "mirage"
+    # short pitch among boulders in Salome. dies immediately 
+
+  centerline
+    date 2026.07.21 
+    # team JJ,ep,la 
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+    # extend auto
+    0 . 3.02 155.5 1.7
+    0 . 1.46 85.2 -85.6
+    0 . 3.80 133.4 81.6
+    0 . 3.97 90.7 75.2
+    0 . 4.45 116.3 80.2
+    0 . 5.14 195.3 72.2
+    0 . 1.82 89.9 9.6
+    extend left
+    0 1 2.51 211.3 16.4
+    # extend auto
+    1 . 1.05 171.2 -81.6
+    1 . 6.68 191.3 86.3
+    1 . 2.23 129.6 11.6
+    1 . 2.64 95.0 7.6
+    1 . 3.38 65.7 9.0
+    1 . 1.70 31.2 15.4
+    1 . 0.97 6.0 1.3
+    extend left
+    1 2 2.96 227.8 36.0
+    # extend auto
+    2 . 1.47 260.1 -84.9
+    2 . 5.25 6.9 80.3
+    2 . 3.31 71.9 74.7
+    2 . 3.23 71.6 63.3
+    2 . 1.66 5.6 -5.5
+    2 . 1.36 105.3 3.7
+    2 . 1.53 131.9 -3.0
+    2 . 1.72 130.7 -29.0
+    extend right
+    2 3 4.72 306.9 18.1
+    # extend auto
+    3 . 0.94 223.2 36.7
+    3 . 0.61 46.5 51.1
+    3 . 0.31 255.5 -62.3
+    3 . 0.84 297.6 57.6
+    extend vertical
+    3 4 3.09 91.9 68.7
+    extend right
+    2 5 5.41 347.7 81.9
+    # extend auto
+    5 . 1.90 250.5 -74.4
+    5 . 0.73 227.2 -46.4
+    5 . 2.03 182.2 -39.6
+    5 . 0.34 150.3 11.0
+    5 . 0.84 12.7 12.3
+    5 . 1.36 276.3 -20.8
+    extend left
+    5 6 1.01 161.4 -11.2
+    # extend auto
+    6 . 0.46 270.3 87.4
+    6 . 0.65 8.1 30.2
+    6 . 0.24 192.2 10.5
+    6 . 2.00 269.0 -76.4
+    extend left
+    6 7 2.41 221.8 6.3
+  endcenterline
+
+  # input "mirage-1p.th2"
+  # input "mirage-1s.th2"
+
+  # map m1p -projection plan
+  #   mirage-1p
+  # endmap
+  # map m1s -projection extended
+  #   mirage-1s
+  # endmap
+
+endsurvey

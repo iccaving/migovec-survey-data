@@ -4,8 +4,10 @@ survey blood_tribute -title "Blood Tribute"
   ###_____________2026_______________###
   input "./2026/blood_tribute_ent/blood_tribute_ent.th"
   input "./2026/hanging_gardens/hanging_gardens.th"
+  input "./2026/the_gardened_hang/the_gardened_hang.th"
 
   equate 0@blood_tribute_ent 0@hanging_gardens
+  equate 0@the_gardened_hang 11@hanging_gardens
 
   join blood_tribute_ent-1p@blood_tribute_ent hanging_gardens-1p@hanging_gardens
 

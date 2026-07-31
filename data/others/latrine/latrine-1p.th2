@@ -1,0 +1,421 @@
+encoding utf-8
+##XTHERION## xth_me_area_adjust 96.1 -475.9 629.7 114.5
+##XTHERION## xth_me_area_zoom_to 25
+
+# 2026.07.31 created by TopoDroid v. 6.4.57
+
+scrap latrine-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line wall
+  228.12 -325.49
+  221.93 -313.34
+endline
+
+line wall
+  222.67 -315.06
+  221.76 -306.86
+  219.50 -296.97
+  216.49 -288.74
+  213.16 -281.51
+  208.02 -270.97
+  204.69 -262.71
+  200.03 -254.03
+  197.18 -246.28
+  196.12 -236.52
+  197.60 -226.68
+  201.90 -217.21
+  204.43 -209.08
+endline
+
+line wall
+  202.73 -208.93
+  209.28 -204.35
+endline
+
+line wall
+  230.84 -220.96
+  224.06 -215.20
+  216.43 -212.26
+  202.88 -205.19
+endline
+
+line wall
+  283.19 -277.56
+  289.13 -283.69
+  294.46 -290.01
+  301.73 -301.04
+endline
+
+line wall
+  307.29 -292.81
+  316.64 -320.84
+  326.34 -336.90
+  340.59 -350.53
+  353.50 -360.53
+  369.20 -368.65
+  385.92 -373.12
+  401.72 -375.46
+  417.61 -375.91
+  435.75 -374.59
+endline
+
+line wall
+  489.97 -306.63
+  481.09 -309.50
+  473.28 -312.67
+  465.69 -319.85
+  460.46 -328.09
+  454.02 -340.13
+  446.37 -355.84
+  436.05 -371.82
+endline
+
+line wall
+  497.47 -262.28
+  486.82 -257.85
+  480.26 -251.18
+  473.53 -243.11
+endline
+
+line wall
+  336.06 -55.13
+  347.01 -51.25
+  354.56 -48.16
+  363.09 -47.05
+  371.36 -47.05
+endline
+
+line wall
+  351.17 14.49
+  362.95 9.05
+  371.33 3.10
+  380.36 -3.55
+  388.86 -8.48
+endline
+
+line wall
+  379.22 -52.22
+  391.61 -54.63
+  404.53 -62.57
+  414.33 -72.37
+  416.23 -80.54
+  417.05 -90.35
+  417.42 -99.56
+  415.90 -107.92
+  416.24 -116.82
+  415.42 -129.26
+  416.33 -137.73
+  416.89 -146.34
+  421.18 -161.90
+  422.76 -172.43
+  423.60 -181.50
+  420.12 -189.04
+  412.11 -194.02
+endline
+
+line wall
+  479.29 -18.37
+  468.14 -22.56
+  456.59 -28.45
+  445.63 -31.34
+  436.51 -31.50
+  422.96 -28.76
+  405.04 -24.14
+  393.10 -11.20
+  387.01 -3.11
+endline
+
+line wall
+  467.61 -23.45
+  480.44 -27.14
+  492.11 -34.51
+  499.79 -42.10
+  503.13 -51.13
+  503.34 -61.03
+  497.94 -69.44
+  489.83 -77.34
+  482.54 -83.79
+  476.64 -92.43
+  470.95 -102.58
+  466.78 -114.91
+  464.26 -126.40
+  462.47 -137.08
+  459.62 -147.76
+  457.84 -157.34
+  456.25 -171.49
+  455.27 -179.55
+  454.46 -188.08
+endline
+
+line wall
+  474.01 -239.50
+  467.72 -234.41
+  458.59 -224.35
+  453.64 -211.17
+  452.74 -200.47
+  454.90 -186.61
+endline
+
+line wall
+  524.59 -275.55
+  511.83 -273.50
+  502.53 -269.42
+  489.41 -259.06
+endline
+
+line wall
+  479.50 -311.14
+  484.13 -300.88
+  490.51 -294.89
+  504.67 -291.12
+  514.85 -292.81
+  529.67 -295.57
+endline
+
+point 333.54 -11.31 dig
+
+line wall
+  249.99 -272.81
+  238.74 -273.39
+  230.80 -280.01
+  230.26 -291.25
+  235.12 -306.59
+endline
+
+line wall
+  418.71 -196.66
+  402.59 -193.64
+  391.01 -193.06
+  371.30 -191.85
+  360.82 -193.11
+  349.95 -197.07
+  334.97 -203.90
+  324.73 -208.54
+  315.36 -212.91
+  304.50 -217.34
+endline
+
+line wall
+  228.90 -216.32
+  240.19 -219.93
+  249.05 -221.18
+  258.05 -221.60
+  266.39 -221.31
+  275.16 -220.83
+  285.64 -219.72
+  295.09 -218.08
+  303.51 -216.08
+endline
+
+
+line u:splay -visibility off
+  196.85 -236.22
+  205.27 -242.66
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  228.46 -320.41
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  218.43 -283.17
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  208.29 -256.67
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  205.53 -208.17
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  227.79 -268.01
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  244.13 -256.75
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  225.96 -225.91
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  215.90 -233.49
+endline
+line u:splay -visibility off
+  196.85 -236.22
+  224.03 -302.31
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  545.51 -285.39
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  420.29 -231.04
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  393.40 -267.43
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  393.86 -296.90
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  425.88 -307.93
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  332.45 -197.33
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  372.75 -195.66
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  313.38 -289.52
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  317.52 -332.38
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  350.45 -361.67
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  425.51 -365.53
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  462.98 -314.46
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  474.96 -248.67
+endline
+line u:splay -visibility off
+  397.71 -264.49
+  396.96 -275.97
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  445.07 -175.77
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  453.46 -180.60
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  423.59 -169.72
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  427.16 -171.35
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  418.96 -129.17
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  416.57 -52.21
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  449.23 -29.32
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  468.48 -69.51
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  460.85 -137.97
+endline
+line u:splay -visibility off
+  449.10 -172.89
+  457.14 -157.33
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  450.73 -81.95
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  410.58 -80.58
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  416.51 -59.63
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  434.89 -38.03
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  465.55 -25.51
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  492.73 -46.77
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  476.91 -85.34
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  404.26 -70.11
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  362.76 -2.34
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  495.57 -54.44
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  493.91 -68.41
+endline
+line u:splay -visibility off
+  451.23 -76.04
+  483.35 -77.59
+endline
+line u:splay -visibility off
+  357.23 -14.49
+  363.13 0.83
+endline
+line u:splay -visibility off
+  357.23 -14.49
+  351.63 -54.45
+endline
+line u:splay -visibility off
+  357.23 -14.49
+  380.13 -47.76
+endline
+line u:splay -visibility off
+  357.23 -14.49
+  376.16 -3.91
+endline
+
+point 196.85 -236.22 station -name "2"
+point 230.57 -322.61 station -name "1"
+point 397.71 -264.49 station -name "3"
+point 449.10 -172.89 station -name "4"
+point 451.23 -76.04 station -name "5"
+point 357.23 -14.49 station -name "6"
+
+
+endscrap
+

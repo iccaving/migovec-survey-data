@@ -1,0 +1,60 @@
+encoding utf-8
+# 2026.07.22 created by TopoDroid v 6.4.57
+
+survey salome_upper_side_chamber -title "salome upper side chamber"
+    # climb up massive choss pile. opposite chamber where rope comes in 
+
+  centerline
+    date 2026.07.21 
+    # team BH, JJH 
+
+    station 2 ""
+
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+    # extend auto
+    0 . 4.35 114.3 -31.0
+    0 . 4.36 114.9 -30.9
+    0 . 4.36 115.4 -31.0
+    0 . 3.42 116.3 -30.9
+    0 . 4.35 116.0 -30.6
+    0 . 5.93 128.1 3.7
+    0 . 7.99 151.1 55.6
+    0 . 21.93 340.4 78.4
+    0 . 22.07 337.6 77.8
+    0 . 21.66 342.7 77.0
+    0 . 19.20 321.7 87.5
+    0 . 9.27 274.8 69.3
+    0 . 3.07 264.7 10.8
+    0 . 7.74 302.2 13.3
+    0 . 11.82 318.4 38.3
+    0 . 6.59 323.7 7.6
+    0 . 2.78 355.7 -9.9
+    0 . 6.78 303.0 -30.7
+    extend left
+    0 1 4.32 156.2 -30.3
+    # extend auto
+    1 . 2.73 176.8 -7.2
+    1 . 1.36 240.6 -3.8
+    1 . 8.66 228.1 88.2
+    1 . 2.86 232.3 66.4
+    1 . 3.39 182.7 -60.8
+    1 . 2.90 166.9 -50.7
+    1 . 2.95 38.1 -46.9
+    extend left
+    1 2 35.30 112.2 -51.0
+    2 4 27.39 184.7 -20.7
+  endcenterline
+
+  # input "salome_upper_side_chamber-1p.th2"
+  # input "salome_upper_side_chamber-1s.th2"
+
+  # map m1p -projection plan
+  #   salome_upper_side_chamber-1p
+  # endmap
+  # map m1s -projection extended
+  #   salome_upper_side_chamber-1s
+  # endmap
+
+endsurvey
