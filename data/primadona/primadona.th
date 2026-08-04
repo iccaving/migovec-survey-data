@@ -42,7 +42,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 1@risanke 1@risa2
 	equate 1@pov 14@ttt
 	equate 27@pov 12@risa2
-	#equate pov.33 23@galerija
+	#equate 33@pov 23@galerija
 	equate 12@risa2 29@galerija
 	equate 15@drugi 34@prima1
 	equate 21b@prima1 1@drugi
@@ -173,8 +173,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join terminusp_1@terminus quantum_statep_1@quantum_state
 
 	join the_stile-2p@the_stile cattlegrid-2p@cattlegrid
-	join s1_l1@the_stile:0 s1_l4@smer0:end
-	join s1_l2@the_stile:end s1_l5@smer0:0
+	#join s1_l1@the_stile:0 s1_l4@smer0:end
+	#join s1_l2@the_stile:end s1_l5@smer0:0
 	join s1_l4@the_stile:end s4_l3@galerija:0
 	join s1_l3@the_stile:0 s4_l1@galerija:end
 
@@ -215,8 +215,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join colony-1e@colony tight_and_scrotty-1e@tight_and_scrotty
 	join tight_and_scrotty-1e@tight_and_scrotty upside_down_chamber-1e@upside_down_chamber
 	#join smer0-0e@smer0 the_stile-s1@the_stile # Replaced with line joins
-	join smer0_L1@smer0:0 stile_L5@the_stile:end
-	join smer0_L5@smer0:end stile_L1@the_stile:0
+	#join smer0_L1@smer0:0 stile_L5@the_stile:end
+	#join smer0_L5@smer0:end stile_L1@the_stile:0
 	join the_stile-s1@the_stile cattlegrid-3e@cattlegrid
 	join kvg_L7@galerija:end cattle_L2@cattlegrid:0
 	join kvg_L5@galerija:0 stile_L1@the_stile:end
@@ -473,7 +473,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 4@diagonalley 19@damp_squib
 	equate 7@odessey 14@electric_dreams
 	equate 0@come_up_smiling 5@come_up_smiling_2
-	equate 0@come_up_smiling_2 46@smer0
+	#equate 0@come_up_smiling_2 46@smer0
 	equate 8@come_up_smiling 23@cattlegrid
 	equate 30@prima2 7@upper_escape
 
@@ -494,7 +494,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join snakebitetwo-1e@snakebitetwo ave_maria-1e@ave_maria
 	join come_up_smiling-s1@come_up_smiling come_up_smiling_2-s1@come_up_smiling_2
 	#join come_up_smiling_2-s1@come_up_smiling_2 smer0-0e@smer0 #Replaced with join to smer0_and_salome_viados_resurvey see below
-	join come_up_smiling_2-s1@come_up_smiling_2 smer0_and_salome_viados_resurvey-1e@smer0_and_salome_viados_resurvey
+	#join come_up_smiling_2-s1@come_up_smiling_2 smer0_and_salome_viados_resurvey-1e@smer0_and_salome_viados_resurvey
 	join odessey-1e@odessey electric_dreams-1e@electric_dreams
 	join odessey-1e@odessey electric_dreams-2e@electric_dreams
 	join moonraker-3s@moonraker klic_globin-1s@klic_globin
