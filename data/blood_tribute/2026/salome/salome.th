@@ -4,6 +4,18 @@ encoding utf-8
 survey salome -title "salome"
     # survey of salome viados chamber 
 
+  # input "salome-1p.th2"
+  input "salome-1s.th2"
+
+  # map m1p -projection plan
+  #   salome-1p
+  # endmap
+  map m-all-e -projection extended
+    salome-1s
+    break
+    salome-1s1
+  endmap
+  
   centerline
     date 2026.07.22 
     # team JJ LAA 
@@ -30,7 +42,7 @@ survey salome -title "salome"
     0 . 3.80 6.4 7.9
     0 . 0.86 17.1 10.0
     0 . 0.24 26.5 13.9
-    extend right
+    extend left
     0 1 6.27 353.8 3.6
     # extend auto
     1 . 21.84 324.2 32.5
@@ -57,7 +69,7 @@ survey salome -title "salome"
     1 . 5.12 254.1 29.4
     1 . 4.10 225.8 24.8
     1 . 15.94 291.4 34.3
-    extend right
+    extend left
     1 2 4.71 290.6 34.1
     # extend auto
     2 . 2.59 143.8 10.4
@@ -71,7 +83,7 @@ survey salome -title "salome"
     2 . 4.08 317.5 21.8
     2 . 2.36 142.0 2.2
     2 . 2.36 145.3 1.7
-    extend right
+    extend left
     2 3 11.44 8.4 18.5
     # extend auto
     3 . 6.22 244.4 6.1
@@ -103,7 +115,7 @@ survey salome -title "salome"
     3 . 70.23 133.4 80.6
     3 . 32.27 146.5 69.3
     3 . 14.54 154.5 37.0
-    extend right
+    extend left
     3 4 16.78 50.3 36.5
     # extend auto
     4 . 3.66 127.1 38.0
@@ -117,7 +129,7 @@ survey salome -title "salome"
     4 . 4.45 20.9 70.2
     4 . 7.30 42.9 37.6
     4 . 17.07 229.0 -38.7
-    extend right
+    extend left
     4 5 3.50 24.6 22.6
     # extend auto
     5 . 1.96 350.3 -86.9
@@ -139,7 +151,7 @@ survey salome -title "salome"
     5 . 6.65 63.0 18.4
     5 . 6.02 60.5 18.3
     5 . 6.63 62.9 18.4
-    extend right
+    extend left
     5 6 6.65 59.0 18.8
     # extend auto
     6 . 6.09 312.3 12.1
@@ -148,7 +160,7 @@ survey salome -title "salome"
     6 . 2.02 65.7 28.7
     6 . 1.59 335.9 87.0
     6 . 4.84 352.3 -30.6
-    extend right
+    extend left
     6 7 15.82 356.6 15.0
     # extend auto
     7 . 2.01 106.1 -76.2
@@ -183,15 +195,5 @@ survey salome -title "salome"
     7 . 9.04 156.8 -27.2
     7 . 22.42 167.2 -23.4
   endcenterline
-
-  # input "salome-1p.th2"
-  # input "salome-1s.th2"
-
-  # map m1p -projection plan
-  #   salome-1p
-  # endmap
-  # map m1s -projection extended
-  #   salome-1s
-  # endmap
 
 endsurvey

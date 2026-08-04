@@ -1,23 +1,59 @@
 encoding  utf-8
 survey blood_tribute -title "Blood Tribute"
   
+  input blood_tribute-e.thm
+
   ###_____________2026_______________###
   input "./2026/blood_tribute_ent/blood_tribute_ent.th"
   input "./2026/hanging_gardens/hanging_gardens.th"
   input "./2026/the_gardened_hang/the_gardened_hang.th"
+  input "./2026/salome/salome.th"
+  input "./2026/mirage/mirage.th"
+  input "./2026/the_rivers_of_babylon/the_rivers_of_babylon.th"
+  input "./2026/salome_upper_side_chamber/salome_upper_side_chamber.th"
+  input "./2026/blow_tube_babylon/blow_tube_babylon.th"
+  input "./2026/virage/virage.th"
+  input "./2026/babylon_beach/babylon_beach.th"
+  input "./2026/sunshine_shaft/sunshine_shaft.th"
+  input "./2026/bones_of_babylon/bones_of_babylon.th"
+
+  input "../primadona/2025/smer0_and_salome_viados_resurvey/smer0_and_salome_viados_resurvey.th"
+  equate 61@smer0_and_salome_viados_resurvey 0@salome
+  join SV_L1@salome S0_L1@smer0_and_salome_viados_resurvey
+	join SV_L2@salome S0_L2@smer0_and_salome_viados_resurvey
 
   equate 0@blood_tribute_ent 0@hanging_gardens
   equate 0@the_gardened_hang 11@hanging_gardens
+  equate 12@the_gardened_hang 0@salome
+  equate 7@mirage 1@salome
+  equate 17@the_rivers_of_babylon 7@salome
+  equate 4@salome_upper_side_chamber 0@salome
+  equate 9@blow_tube_babylon 15@the_rivers_of_babylon
+  equate 0@virage 1@salome
+  equate 22@virage 23@babylon_beach
+  equate babylon_beach_17@sunshine_shaft 17@babylon_beach
+  equate 26@bones_of_babylon 0@babylon_beach
 
+  # PLAN
   join blood_tribute_ent-1p@blood_tribute_ent hanging_gardens-1p@hanging_gardens
+  
+  # ELEVATION
+  join blood_tribute_ent-1s@blood_tribute_ent hanging_gardens-1s@hanging_gardens
+  join hanging_gardens-1s2@hanging_gardens the_gardened_hang-1s@the_gardened_hang
+  # join the_gardened_hang-1s@the_gardened_hang salome-1s@salome
+  join TGH_L1@the_gardened_hang:end SAL_L1@salome:0
+  join TGH_L2@the_gardened_hang:0 SAL_L2@salome:end
 
   map m-all-p -projection plan -title "Blood Tribute"
 	  m-all-p@blood_tribute_ent
 	  m-all-p@hanging_gardens
   endmap
 
-  map m-all-e -projection extended -title "Blood Tribute"
-    m-all-e@blood_tribute_ent
-    m-all-e@hanging_gardens
-  endmap
+#  map m-all-e -projection extended -title "Blood Tribute"
+#    m-all-e@blood_tribute_ent
+#    m-all-e@hanging_gardens
+#    m-all-e@the_gardened_hang
+#    m-all-e@salome
+#    m-all-e@smer0_and_salome_viados_resurvey
+#  endmap
 endsurvey

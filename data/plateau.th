@@ -24,9 +24,10 @@ survey plateau -title "Migovec Plateau"
 
 	# other caves
 	input "./A_caves/hello_cave/hello_cave.th"
-	input "./blood_tribute/blood_tribute.th"
+	input "./others/crack_cone_cave/crack_cone_cave.th"
 	input "./others/gondolin/gondolin.th"
 	input "./others/planika_resurvey_2019/planika.th"
+	input "./others/latrine/latrine.th"
 	input "./M_caves/M17/M17.th"
 	input "./M_caves/M19/M19.th"
 	input "./M_caves/M1/M1.th"
@@ -38,7 +39,6 @@ survey plateau -title "Migovec Plateau"
 	input "./others/mugo/mugo.th"
 	input "./coincidence/coincidence.th"
 	input "./others/hawk/hawk.th"
-	# input "./dripbone/dripbone_cavern.th"
 	input "./others/the_pet_shop/the_pet_shop.th"
 	input "./P_caves/P2/P2.th"
 	input "./P_caves/P3/P3.th"
@@ -48,7 +48,7 @@ survey plateau -title "Migovec Plateau"
 	input "./razor/kalifax/kalifax.th"
 
 	map m-all-p -projection plan
-		m-all-p@blood_tribute
+		# m-all-p@blood_tribute
 		m-all-p@gondolin
 		m-all-p@planika
 		m-all-p@M19
@@ -86,7 +86,7 @@ survey plateau -title "Migovec Plateau"
 		fix 10@bertipot.vrh_planja 403706 125587 1749
 
 		#BLOOD TRIBUTE
-		fix 21@blood_tribute_ent.blood_tribute 404169 124388 1730 #NEEDS A REAL FIX
+		# fix 21@blood_tribute_ent.blood_tribute 404169 124388 1730 #NEEDS A REAL FIX
 
 		# BREZNO POD VRHOM PLANJE
 		fix 0@brezno_planja_ent.brezno_pod_vrhom_planje.vrh_planja 403804 125750 1868
@@ -97,6 +97,9 @@ survey plateau -title "Migovec Plateau"
 		
 		# COINCIDENCE
 	    fix 0@coincidence_ent.coincidence 404773 123067 1310
+
+		# Crack Cone Cave
+		fix 0@crack_cone_cave 404222 124487 1838
 
 		# DRIPBONE - update to C0
 		# fix 14@dripbone_cavern 404657 124233 1853
@@ -172,6 +175,9 @@ survey plateau -title "Migovec Plateau"
 
 		# ROWAN CAVE
 		fix 0@rowan_cave 404460 124948 1819
+
+		# THE LATRINE
+		fix 0@latrine 403948 123710 1522 # a guess, needs a real fix
 
 		# VILINSKA JAMA
 		fix 1@vilinent.vilinska.vrtnarija_vilinska.system_migovec 404790 124535 1782

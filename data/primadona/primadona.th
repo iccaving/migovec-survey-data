@@ -787,19 +787,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2026/sella_tursica/sella_tursica.th"
 	input "./2026/overkarst/overkarst.th"
 	input "./2026/loompa_land-down_under/loompa_land-down_under.th"
-	input "./2026/mirage/mirage.th"
-	input "./2026/salome_upper_side_chamber/salome_upper_side_chamber.th"
-	input "./2026/blow_tube_babylon/blow_tube_babylon.th"
-	input "./2026/the_rivers_of_babylon/the_rivers_of_babylon.th"
-	input "./2026/salome/salome.th"
-	input "./2026/virage/virage.th"
-	input "./2026/babylon_beach/babylon_beach.th"
 	input "./2026/overkarst_2/overkarst_2.th"
 	input "./2026/overkarst_3/overkarst_3.th"
 	input "./2026/first_contact/first_contact.th"
-	input "./2026/sunshine_shaft/sunshine_shaft.th"
 	input "./2026/unhappy_horsey/unhappy_horsey.th"
-	input "./2026/bones_of_babylon/bones_of_babylon.th"
 	input "./2026/choss_hole_creek/choss_hole_creek.th"
 
 	equate a@warp_core_breach 3@antares
@@ -809,20 +800,11 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 0@loompa_land_tolmin_drift 0@loompa_land-down_under
 	equate 15@loompa_land-down_under 18@deveti_krog #Double equate for Big loop closure between Hades and MLP branches
 	equate 24@loompa_land-down_under 27@deveti_krog #Double equate for Big loop closure between Hades and MLP branches
-	equate 0@salome 4@smer0
-	equate 7@mirage 1@salome
-	equate 17@the_rivers_of_babylon 7@salome
-	equate 4@salome_upper_side_chamber 4@smer0
-	equate 9@blow_tube_babylon 15@the_rivers_of_babylon
-	equate 0@virage 1@salome
-	equate 22@virage 23@babylon_beach
 	equate 5@overkarst_2 9@overkarst
 	equate 0@overkarst_3 32@overkarst
 	equate 10@loosely_horsey 12@first_contact
 	equate 19@first_contact 5@blues_and_twos
-	equate babylon_beach_17@sunshine_shaft 17@babylon_beach
 	equate 11@unhappy_horsey 10@loosely_horsey
-	equate 26@bones_of_babylon 0@babylon_beach
 	equate 10@choss_hole_creek 5@the_big_daddy
 
 endsurvey

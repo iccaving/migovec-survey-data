@@ -1,0 +1,36 @@
+encoding  utf-8
+#————————————————————————————————————————————-
+# This contains the maps of Blood Tribute cave|
+#————————————————————————————————————————————-
+
+#Top level map with everything, individual caves are included within submaps below
+map m-all-e -projection extended
+	m-entrance-e
+	m-salome-e
+#	m-babylon_beach-e
+#	m-babylon_river-e
+endmap
+
+map m-entrance-e -projection extended
+	m-all-e@blood_tribute_ent
+	m-all-e@hanging_gardens
+endmap
+
+map m-salome-e -projection extended
+	m-all-e@the_gardened_hang
+	m-all-e@salome
+#	m-all-e@salome_upper_side_chamber
+#	m-all-e@mirage
+endmap
+
+#map  m-babylon_beach-e -projection extended
+#	m-all-e@virage
+#	m-all-e@babylon_beach
+#	m-all-e@sunshine_shaft
+#	m-all-e@bone_of_babylon
+#endmap
+
+#map m-babylon_river-e -projection extended
+#	m-all-e@rivers_of_babylon
+#	m-all-e@blowtube_babylon
+#endmap
