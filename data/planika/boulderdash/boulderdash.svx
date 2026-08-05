@@ -1,0 +1,35 @@
+;Planika / Boulderdash
+; - Chamber off from rift window at -10m on main pitch
+
+;Date: 14/8/08
+*date 2008.8.14
+;Instruments / Book: Timothy Osborne, Jarvist Frost
+
+;Data entered by Jarvist Frost 14/8/07
+
+;data normal bcra grade 5
+;from	to	tape	comp	clino
+
+*begin boulderdash
+1	2	12.60	17	+38	; .1 2 0 8+ 1.5
+; up to rift inlet in corner, similar height to climb across rock bridge
+
+1	3	3.79	107	-15	; .2 0.5 0.5 5+ 1
+3	4	6.55	015	-42	; .3 4 0 3 2
+; bounce down to lower corner
+
+1	5	1.60	-	down	; .4 0.5 0.5 3 0.5
+5	6	2.92	229	-24	; .5 - - - -
+6	7	6.43	-	down	; .6 0.3 0.3 - 0.0
+6	8	4.50	223	-18	; .8 0.3 0.3 0.5 20+
+; diversion down into rift that runs off, pitches down - connects home?
+
+1	9	3.44	296	+07	; .9 1 0 2 0.5
+9	10	2.98	201	-33	; .10 0 0.5 1.5 0.5
+11	10	3.55	062	+28	; .11 1 0 2 0.6
+12	11	2.35	049	+01	; .12 - - - - 
+13	12	9.93	132	-76	; .13 is hang of main pitch
+
+*end boulderdash
+
+*equate planika.1 boulderdash.13 

@@ -1,0 +1,22 @@
+;#### KUK POT ####:
+; Also known as N9, discovered on winter blowing hole recce 2009.
+*date 2010 ; Vodna Sled 2010 - catch all
+*calibrate compass -2.62  ;2010 calibration
+
+;System file started by Jarvist on 25-6-10
+
+*begin kukpot 
+
+; entrance GPS coords N46.26800 E013.75765
+;minus a thousand, no problem!
+
+;from   to      	tape    comp    clino; L R U D
+entrance	minus_tencm	0.1  -  down
+
+
+*include gingerbreadexpress
+*equate gingerbreadexpress.7 entrance
+
+*end kukpot
+
+*entrance kukpot.entrance
