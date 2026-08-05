@@ -4,12 +4,13 @@ encoding utf-8
 survey salome -title "salome"
     # survey of salome viados chamber 
 
-  # input "salome-1p.th2"
+  input "salome-1p.th2"
   input "salome-1s.th2"
 
-  # map m1p -projection plan
-  #   salome-1p
-  # endmap
+  map m-all-p -projection plan
+     salome-1p
+  endmap
+  
   map m-all-e -projection extended
     salome-1s
     break

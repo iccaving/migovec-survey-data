@@ -9,6 +9,7 @@ encoding  utf-8
 map m-all-p -projection plan -title "Primadona"
 	m-entrance-p
 	m-galerija_branch-p
+	m-salome_branch-p
 	m-ttt_branch-p
 	m-hammerhead_branch-p
 	m-upside_down_area-p
@@ -23,6 +24,7 @@ endmap
 map m-detailed-p -projection plan -title "Primadona"
 	m-entrance-p
 	m-galerija_branch-p
+	#m-salome_branch-p #Not yet tested
 	m-ttt_branch-p
 	m-hammerhead_branch-p
 	m-upside_down_area-p
@@ -91,7 +93,17 @@ map m-entrance-p -projection plan -title "Entrance Series"
 	m-all-p@bad_vibes
 	m-all-p@freshers_folly
 endmap
-
+map m-salome_branch-p -projection plan -title "Salome Branch"
+	#m-all-p@rivers_of_babylon
+	#m-all-p@blow_tube_babylon
+	#m-all-p@salome_upper_side_chamber
+	m-all-p@salome
+	#m-all-p@mirage
+	#m-all-p@virage
+	#m-all-p@babylon_beach
+	#m-all-p@sunshine_shaft
+	#m-all-p@bones_of_babylon
+endmap
 map m-galerija_branch-p -projection plan -title "Galerija and Smer0 Branches"
 	m-all-p@galerija
 	m-all-p@smer1

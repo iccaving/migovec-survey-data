@@ -796,27 +796,39 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	input "./2026/first_contact/first_contact.th"
 	input "./2026/unhappy_horsey/unhappy_horsey.th"
 	input "./2026/choss_hole_creek/choss_hole_creek.th"
+	input "./2026/salome/salome.th"
+  	input "./2026/mirage/mirage.th"
+  	input "./2026/the_rivers_of_babylon/the_rivers_of_babylon.th"
+  	input "./2026/salome_upper_side_chamber/salome_upper_side_chamber.th"
+  	input "./2026/blow_tube_babylon/blow_tube_babylon.th"
+  	input "./2026/virage/virage.th"
+  	input "./2026/babylon_beach/babylon_beach.th"
+  	input "./2026/sunshine_shaft/sunshine_shaft.th"
+  	input "./2026/bones_of_babylon/bones_of_babylon.th"
 
 	equate a@warp_core_breach 3@antares
 	equate 0@hydrophile 22@warp_core_breach
 	equate 5@sella_tursica 11@dejavu
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 	equate 0@overkarst 11@galerija
 	equate 0@loompa_land_tolmin_drift 0@loompa_land-down_under
-	equate 15@loompa_land-down_under 18@deveti_krog #Double equate for Big loop closure between Hades and MLP branches
-	equate 24@loompa_land-down_under 27@deveti_krog #Double equate for Big loop closure between Hades and MLP branches
+	#equate 15@loompa_land-down_under 18@deveti_krog #Double equate for Big loop closure between Hades and MLP branches
+	#equate 24@loompa_land-down_under 27@deveti_krog #Double equate for Big loop closure between Hades and MLP branches
 	equate 5@overkarst_2 9@overkarst
 	equate 0@overkarst_3 32@overkarst
 	equate 10@loosely_horsey 12@first_contact
 	equate 19@first_contact 5@blues_and_twos
 	equate 11@unhappy_horsey 10@loosely_horsey
 	equate 10@choss_hole_creek 5@the_big_daddy
-
-=======
-=======
->>>>>>> Stashed changes
-
+	equate 7@mirage 1@salome
+  	equate 17@the_rivers_of_babylon 7@salome
+  	equate 4@salome_upper_side_chamber 0@salome
+  	equate 9@blow_tube_babylon 15@the_rivers_of_babylon
+  	equate 0@virage 1@salome
+  	equate 22@virage 23@babylon_beach
+  	equate babylon_beach_17@sunshine_shaft 17@babylon_beach
+  	equate 26@bones_of_babylon 0@babylon_beach
+	equate 61@smer0_and_salome_viados_resurvey 0@salome
+  	
 	#PLAN
 	join warp_core_breach-1p_L1@warp_core_breach:0 antares-2p_L1@antares:end
 	join warp_core_breach-1p_L2@warp_core_breach:end antares-2p_L3@antares:0
@@ -824,8 +836,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	#ELEVATION
 	join warp_core_breach-1e@warp_core_breach antares-1s@antares
 	join hydrophile-1e@hydrophile warp_core_breach-2e@warp_core_breach
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
+	#Temp unsorted
+	join SV_L1@salome S0_L1@smer0_and_salome_viados_resurvey
+	join SV_L2@salome S0_L2@smer0_and_salome_viados_resurvey
+	# join the_gardened_hang-1s@the_gardened_hang salome-1s@salome
+
 endsurvey
