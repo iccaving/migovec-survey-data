@@ -2,6 +2,24 @@ encoding utf-8
 # 2026.07.11 created by TopoDroid v 6.4.57
 
 survey hydrophile -title "hydrophile"
+#stn 0-3 are in pre duck passage.
+#stn 0 hydrophile =stn 22 warp core breach
+#shot 4-3 is backwards into base of duck
+#from shot 4-5 onwards, it's shot forwards from duck to sump
+#no pss at sump, as no paper
+#stn5 is tip of white tooth shaped rock just before sump
+#Sump has small ledge and then seems to drop into widening rift 
+
+   input "hydrophile-p.th2"
+   input "hydrophile-e.th2"
+
+   map m-all-p -projection plan
+     hydrophile-1p
+   endmap
+   
+   map m-all-e -projection extended
+     hydrophile-1e
+   endmap
 
   centerline
     date 2026.07.09 
@@ -50,15 +68,5 @@ survey hydrophile -title "hydrophile"
     extend right
     5 6 2.72 333.1 -11.7
   endcenterline
-
-  # input "hydrophile-1p.th2"
-  # input "hydrophile-1s.th2"
-
-  # map m1p -projection plan
-  #   hydrophile-1p
-  # endmap
-  # map m1s -projection extended
-  #   hydrophile-1s
-  # endmap
 
 endsurvey

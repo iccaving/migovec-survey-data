@@ -637,11 +637,15 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	#PLAN
 	join mudaholic-1p@mudaholic ttt-4p@ttt
 	join mudaholic-2p@mudaholic ttt-5p@ttt
+	
 	join echo_falls-4p@echo_falls bin_bag_palace-1p@bin_bag_palace
-	join sisyphus_slope-1p@sisyphus_slope cantina_canyon_2-1p@cantina_canyon_2
+
 	join the_deep_awakens-1p@the_deep_awakens The_Expo_Strikes_Back-1p@the_expo_strikes_back
 	join the_deep_awakens-4p@the_deep_awakens cantina_canyon-1p@cantina_canyon
-	join cantina_canyon-1p@cantina_canyon cantina_canyon_2-1p@cantina_canyon_2
+	join cantina_canyon-1p@cantina_canyon sisyphus_slope-1p@sisyphus_slope
+	join sisyphus_slope-1p@sisyphus_slope cantina_canyon_2-1p@cantina_canyon_2
+	join cantina_canyon_2-1p_L1@cantina_canyon_2:end antares-1p_L1@antares:0
+	join cantina_canyon_2-1p_L2@cantina_canyon_2:0 antares-1p_L2@antares:end
 	#ELEVATION
 	join styx-1e@styx deveti_krog-2e@deveti_krog
 	join ttt-1e@ttt mudaholic-1e@mudaholic
@@ -796,6 +800,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate a@warp_core_breach 3@antares
 	equate 0@hydrophile 22@warp_core_breach
 	equate 5@sella_tursica 11@dejavu
+<<<<<<< Updated upstream
 	equate 0@overkarst 11@galerija
 	equate 0@loompa_land_tolmin_drift 0@loompa_land-down_under
 	equate 15@loompa_land-down_under 18@deveti_krog #Double equate for Big loop closure between Hades and MLP branches
@@ -807,4 +812,14 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 11@unhappy_horsey 10@loosely_horsey
 	equate 10@choss_hole_creek 5@the_big_daddy
 
+=======
+
+	#PLAN
+	join warp_core_breach-1p_L1@warp_core_breach:0 antares-2p_L1@antares:end
+	join warp_core_breach-1p_L2@warp_core_breach:end antares-2p_L3@antares:0
+	join hydrophile-1p@hydrophile warp_core_breach-2p@warp_core_breach
+	#ELEVATION
+	join warp_core_breach-1e@warp_core_breach antares-1s@antares
+	join hydrophile-1e@hydrophile warp_core_breach-2e@warp_core_breach
+>>>>>>> Stashed changes
 endsurvey
