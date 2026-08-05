@@ -7,8 +7,12 @@ survey antares -title "Antares"
 
   map m-all-p -projection plan
     antares-1p
+    break
+    antares-2p
   endmap
-
+  #join antares-1p antares-2p
+  join antares-1p_L1 antares-2p_L1
+  join antares-1p_L2 antares-2p_L2
   map m-all-e -projection extended
     antares-1s
   endmap
@@ -48,7 +52,7 @@ survey antares -title "Antares"
     1 . 1.60 120.9 14.0
     1 . 9.26 136.4 31.8
     1 . 7.81 157.3 32.0
-    extend left
+    extend right
     1 2 5.77 153.8 6.3
     # extend auto
     2 . 13.91 40.1 78.8

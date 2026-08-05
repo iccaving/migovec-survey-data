@@ -11,6 +11,7 @@ map m-all-e -projection extended
 	m-ttt_branch-e
 	m-karstaway_branch-e
 	m-smer0_branch-e
+	m-salome_branch-e
 	m-fenestrator_branch-e
 	m-death_star_branch-e
 	m-below_manger-e
@@ -138,6 +139,17 @@ map m-smer0_branch-e -projection extended
 	m-all-e@mud_moses
 endmap
 
+map m-salome_branch-e -projection extended
+	#m-all-e@rivers_of_babylon
+	#m-all-e@blow_tube_babylon
+	#m-all-e@salome_upper_side_chamber
+	m-all-e@salome
+	#m-all-e@mirage
+	#m-all-e@virage
+	#m-all-e@babylon_beach
+	#m-all-e@sunshine_shaft
+	#m-all-e@bones_of_babylon
+endmap
 map  m-fenestrator_branch-e -projection extended
 	m-all-e@hallelujah
 	m-all-e@plumbers_paradise
@@ -169,6 +181,8 @@ map m-death_star_branch-e -projection extended
 	m-all-e@cantina_canyon
 	m-all-e@cantina_canyon_2
 	m-all-e@antares
+	m-all-e@warp_core_breach
+	m-all-e@hydrophile
 	m-all-e@delta_blues
 	m-all-e@blues_and_twos
 	m-all-e@the_big_daddy

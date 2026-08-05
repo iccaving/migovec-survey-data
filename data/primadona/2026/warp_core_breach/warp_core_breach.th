@@ -2,8 +2,27 @@ encoding utf-8
 # 2026.07.11 created by TopoDroid v 6.4.57
 
 survey warp_core_breach -title "warp core breach"
-    # resurvey 2026 
+    # resurvey 2026
+    # Vadose rift too tight to follow, continues as smaller passage squeezing at a higher level than the water, eventually ending in nice split-level chamber with mud formations, a duck (Hydrophile) and a large unclimbed aven.
+    #Some of water appears to run underneath chamber into duck but difference in flow suggests another outlet.
+    #stn 22 pss
+    #stn 0 is nail polish at bottom of Antares chamber
+    #stn 24 pss
+    #stn 22 warp core breach = stn 0 hydrophile
 
+    input "warp_core_breach-p.th2"
+    map m-all-p -projection plan
+        warp_core_breach-1p
+        warp_core_breach-2p
+    endmap
+    join warp_core_breach-1p warp_core_breach-2p
+    
+    input "warp_core_breach-e.th2"
+    map m-all-e -projection extended
+        warp_core_breach-1e
+        warp_core_breach-2e
+    endmap
+    join warp_core_breach-1e warp_core_breach-2e
   centerline
     date 2026.07.09 
     # team DPW, JW, MM 
@@ -207,7 +226,7 @@ survey warp_core_breach -title "warp core breach"
     24 . 20.95 210.6 71.0
     24 . 15.32 207.9 69.8
     24 . 11.42 231.9 72.9
-    extend left
+    extend right
     24 25 1.47 214.9 7.3
     # extend auto
     25 . 21.75 213.3 79.1
@@ -221,15 +240,5 @@ survey warp_core_breach -title "warp core breach"
     extend right
     26 27 3.85 335.5 27.8
   endcenterline
-
-  # input "warp_core_breach-warp_core_breachp.th2"
-  # input "warp_core_breach-warp_core_breachs.th2"
-
-  # map mwarp_core_breachp -projection plan
-  #   warp_core_breach-warp_core_breachp
-  # endmap
-  # map mwarp_core_breachs -projection extended
-  #   warp_core_breach-warp_core_breachs
-  # endmap
 
 endsurvey

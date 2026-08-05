@@ -6,9 +6,33 @@ encoding  utf-8
 
 scrap antares-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
-point 2966.6052 273.0456 label -align bl -attr level 5 -scale 0.375 -text "Survey lost (Warp Core Breach 82m)<br>- Pitch followed by tube<br>and another pitch leading to<br>perched sump/duck or bolt climb"
+line wall -subtype invisible
+  409.7141 250.8173
+  503.4186 296.6418
+endline
 
-point 473.3262 -36.2208 label -align bl -attr level 5 -scale 0.375 -text "Descending crawl<br>with stream descending<br>becomes tight near water"
+point 278.4441 71.5759 narrow-end -scale xs
+
+line wall
+  300.8808 114.8473
+  297.9111 116.4312 307.1405 128.0834 299.3054 133.4054
+  281.7938 145.2999 247.3517 168.3352 237.6169 175.4151
+  223.5264 185.6627 215.2002 193.3484 200.4692 203.5961
+  185.7382 213.8437 168.4454 226.0128 153.0739 231.777
+  137.7025 237.5413 73.0143 258.0366 72.3739 265.0818
+  71.7334 272.1271 73.6548 279.8128 90.3072 279.8128
+  106.9596 279.8128 192.7835 290.0604 209.4359 290.0604
+  226.0883 290.0604 233.1335 291.9819 238.8978 290.7009
+  244.6621 289.42 263.8764 263.8009 269.0002 263.8009
+  274.124 263.8009 316.3955 261.239 316.3955 261.239
+  smooth off
+endline
+
+point 246.2 300.97 station -name 2
+
+point 20.25 275.88 station -name 1
+
+point 192.6711 -32.5412 label -align bl -attr level 5 -scale 0.375 -text "Descending crawl<br>with stream descending<br>becomes tight near<br>water (Antares)"
 
 point 372.5461 181.0101 water-flow -orientation 168.011 -scale xs
 
@@ -16,15 +40,12 @@ point 364.8162 636.6536 water-flow -orientation 183.749
 
 point 432.5872 1561.0092 water-flow -orientation 202.148
 
-point 491.8002 1017.0795 label -align tr -attr level 1 -scale l -text Antares
+point 491.8002 1017.0795 label -align tr -attr level 3 -text Antares
 
 line wall
   390.5023 259.003
-  399.912 255.8664 435.9825 244.8885 451.6653 237.0471
-  467.3481 229.2056 494.0089 227.6374 508.1235 218.2277
-  522.238 208.818 630.4495 147.655 652.4055 135.1087
-  674.3614 122.5624 685.3394 108.4479 701.0222 103.7431
-  716.705 99.0382 725.9257 89.7265 725.9257 89.7265
+  399.912 255.8664 393.711 259.6195 409.3938 251.7781
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -40,12 +61,7 @@ line wall -subtype presumed
 endline
 
 line wall
-  751.3297 139.7833
-  725.9218 153.9168
-  696.6044 177.4523
-  674.3614 193.1351
-  674.3614 193.1351 577.1279 255.8664 569.2865 259.003
-  561.4451 262.1396 503.4186 296.6418 503.4186 296.6418
+  503.4186 296.6418
   503.4186 296.6418 495.5772 387.6022 495.5772 397.0119
   495.5772 406.4215 495.5772 528.7476 487.7358 542.8621
   479.8944 556.9767 432.8459 608.73 429.7094 621.2762
@@ -89,108 +105,111 @@ line wall
   160.3692 696.0709 146.7208 658.5376 150.1329 638.065
   153.545 617.5923 167.1935 532.2895 167.1935 532.2895
   167.1935 532.2895 177.4298 494.7563 180.8419 474.2836
-  184.254 453.8109 184.254 429.9262 191.0782 412.8656
-  197.9025 395.805 211.5509 317.3265 211.5509 317.3265
-  238.8478 283.2054
-  293.4416 272.969
-  317.3264 262.7327
+  184.254 453.8109 184.2539 429.9262 191.0782 412.8656
+  194.5105 404.2848 166.9694 382.2749 118.0508 355.8298
+  104.0207 348.2452 46.352 333.6993 15.5295 299.1421
+  4.0544 286.2766 12.335 239.3209 18.6583 226.2646
+  28.3975 206.1551 87.4074 216.7517 115.2689 198.0499
+  166.4068 163.724 207.4473 124.247 228.0595 110.0974
+  236.8238 104.0809 249.842 105.0218 249.842 105.0218
+  smooth off
 endline
 
 point 388.9667 88.975 continuation -scale xs
 
 line u:splay -visibility off
-  598.64 203.17
-  620.93 206.44
+  146.74 203.17
+  169.03 206.44
 endline
 
 line u:splay -visibility off
-  598.64 203.17
-  752.36 128.87
+  146.74 203.17
+  300.46 128.87
 endline
 
 line u:splay -visibility off
-  598.64 203.17
-  607.69 227.86
+  146.74 203.17
+  155.79 227.86
 endline
 
 line u:splay -visibility off
-  598.64 203.17
-  649.89 204.16
+  146.74 203.17
+  197.99 204.16
 endline
 
 line u:splay -visibility off
-  598.64 203.17
-  592.33 201.83
+  146.74 203.17
+  140.43 201.83
 endline
 
 line u:splay -visibility off
-  598.64 203.17
-  603.84 203.97
+  141.54 202.37
+  146.74 203.17
 endline
 
 line u:splay -visibility off
-  598.64 203.17
-  680.24 112.83
+  146.74 203.17
+  228.34 112.83
 endline
 
 line u:splay -visibility off
-  598.64 203.17
-  564.19 231.55
+  146.74 203.17
+  112.29 231.55
 endline
 
 line u:splay -visibility off
-  598.64 203.17
-  578.69 229.86
+  146.74 203.17
+  126.79 229.86
 endline
 
 line u:splay -visibility off
-  598.64 203.17
-  524.76 260.31
+  146.74 203.17
+  72.86 260.31
 endline
 
 line u:splay -visibility off
-  472.15 275.88
-  469.79 297.79
+  20.25 275.88
+  22.61 297.79
 endline
 
 line u:splay -visibility off
-  472.15 275.88
-  469.1 226.89
+  20.25 275.88
+  23.3 226.89
 endline
 
 line u:splay -visibility off
-  472.15 275.88
-  432.45 280.46
+  20.25 275.88
+  59.95 280.46
 endline
 
 line u:splay -visibility off
-  472.15 275.88
-  285.39 308.46
+  20.25 275.88
+  207.01 308.46
 endline
 
 line u:splay -visibility off
-  472.15 275.88
-  224.42 329.56
+  20.25 275.88
+  267.98 329.56
 endline
 
 line u:splay -visibility off
-  472.15 275.88
-  181.91 331.23
+  20.25 275.88
+  310.49 331.23
 endline
 
 line u:splay -visibility off
-  472.15 275.88
-  420.87 291.14
+  20.25 275.88
+  71.53 291.14
 endline
 
 line u:splay -visibility off
-  472.15 275.88
-  176.39 468.15
+  316.01 468.15
+  20.25 275.88
 endline
 
 line u:splay -visibility off
-  472.15 275.88
-  211.8 438.9
+  20.25 275.88
+  280.6 438.9
 endline
 
 line u:splay -visibility off
@@ -829,9 +848,9 @@ point 426.17 1702.15 station -name 8
 
 point 541.48 1867.84 station -name 9
 
-point 472.15 275.88 station -name 1
+point 20.25 275.88 station -name 1
 
-point 598.64 203.17 station -name 0
+point 146.74 203.17 station -name 0
 
 endscrap
 

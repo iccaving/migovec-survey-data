@@ -1,0 +1,39 @@
+;####The Barrows####:
+;###Set of chambers in B97 "Jailbreak"###
+*date 2013.7.23 ; Expedition Z Miga Na Kuk
+
+;Tape + Instruments: Chris Keeley  
+;Book: Rhys Tyers
+
+;Data entered by David Kirkpatrick / Rhys Tyers on 2013.07.24
+
+*begin thebarrows
+*data normal from to tape compass clino ignoreall
+;data normal bcra grade 5
+;from   to      tape    comp    clino; L R U D
+;Data on 1 pages
+;Page 1/1
+2	1	4.37	018	-2
+3	2	7.39	336	+12
+4	3	9.93	081	+6
+5	4	10.31	119	-7
+6	5	8.90	153	-2
+8	7	22.15	308	+24
+9	8	14.95	001	+24
+10	9	3.30	060	+20
+11	10	5.80	020	+35
+
+;NOTES 
+;station 1 is Pss in centre of chmaber
+;station 4 is in centre of chamber
+;station 6 is isengard station 1
+;station 11 is isengard station 1
+;station 7 is at end of chmaber with pits
+
+;LRUD Data as below - introduce a new *data line if there's breaks in the survey
+;*data passage station left right up down ignoreall
+
+*end thebarrows
+
+*equate thebarrows.11 isengard.1
+*equate thebarrows.6 isengard.1

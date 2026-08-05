@@ -36,8 +36,7 @@ survey primadona_ubend_mona_tip -title "<bf>Primadona, Mona tip, Ubend-571, Bell
 	equate shit@belladonna 35@prima1.primadona
 
 	# Blood Tribute and Primadona connection
-	# equate 0@salome.blood_tribute 4@smer0.primadona
-	equate 0@salome.blood_tribute 61@smer0_and_salome_viados_resurvey.primadona
+	equate 12@the_gardened_hang.blood_tribute 0@salome.primadona
 
 	# JOIN commands for the sketches at connection points
 	# Primadona to Monatip at Alkatraz via 'The Rock'
@@ -64,7 +63,7 @@ survey primadona_ubend_mona_tip -title "<bf>Primadona, Mona tip, Ubend-571, Bell
 	#join s1_l1@belladonna ent_l1@prima1.primadona
 
 	# join Blood Tribute and Primadona
-	join SV_L1@salome.blood_tribute S0_L1@smer0_and_salome_viados_resurvey.primadona
-	join SV_L2@salome.blood_tribute S0_L2@smer0_and_salome_viados_resurvey.primadona
+	join TGH_L1@the_gardened_hang.blood_tribute:end SAL_L1@salome.primadona:0
+  	join TGH_L2@the_gardened_hang.blood_tribute:0 SAL_L2@salome.primadona:end
 
 endsurvey

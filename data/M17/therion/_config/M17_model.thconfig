@@ -1,0 +1,8 @@
+encoding  utf-8
+source ../xtherion/M17.th
+
+input ../layout/map2.th
+input ../layout/map1.th
+input ../layout/layout_tanguy_basic_1.th
+
+export model -o "../outputs/M17.lox"

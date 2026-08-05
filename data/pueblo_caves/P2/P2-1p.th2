@@ -1,0 +1,451 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 79.2 -899.0 463.6 -193.6
+##XTHERION## xth_me_area_zoom_to 25
+
+
+
+scrap P2-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line rock-border -close on
+  253.7976 -534.5115
+  236.4335 -538.3348
+  243.4429 -551.8757
+  257.3023 -556.3362
+  265.4269 -545.9814
+  253.7976 -534.5115
+endline
+
+line rock-border -close on
+  247.1069 -626.2708
+  229.5834 -642.2013
+  240.2568 -655.2642
+  258.0989 -659.884
+  258.2582 -636.6256
+  247.1069 -626.2708
+endline
+
+line slope
+  351.1326 -617.8277
+  339.5034 -621.8103 330.4231 -623.4033 320.8648 -628.0232
+  311.3065 -632.643 297.7657 -639.4931 288.2074 -645.706
+  278.6491 -651.9188 269.7281 -659.4061 262.7187 -664.1853
+  255.7093 -668.9644 250.4523 -671.6726 244.558 -674.5401
+  238.6637 -677.4075 224.8042 -682.9832 224.8042 -682.9832
+  l-size 40
+endline
+
+line wall -close on
+  252.3639 -351.9486
+  237.5486 -351.3114 227.3531 -356.0905 221.6182 -362.7813
+  215.8832 -369.4721 211.4227 -387.4735 214.2902 -396.5538
+  217.1576 -405.6342 218.7507 -414.3959 225.1228 -419.4937
+  231.495 -424.5914 254.5942 -440.9998 254.9128 -450.3987
+  255.2314 -459.7977 249.815 -459.3198 246.9476 -472.542
+  244.0801 -485.7643 252.6825 -484.1713 247.4255 -494.3667
+  242.1684 -504.5622 231.495 -541.5209 227.5124 -551.7164
+  223.5298 -561.9118 219.3879 -561.5932 217.9542 -574.1783
+  216.5204 -586.7633 213.6529 -623.8813 214.2902 -635.5105
+  214.9274 -647.1397 221.6182 -676.2924 226.238 -686.1693
+  230.8578 -696.0461 232.6102 -733.0048 232.1322 -739.2177
+  231.6543 -745.4305 245.9917 -753.0771 251.886 -757.0598
+  257.7803 -761.0423 267.0199 -776.1763 277.8526 -783.0264
+  288.6853 -789.8765 311.9438 -800.5498 318.1566 -797.8417
+  324.3695 -795.1335 328.9893 -771.8751 332.8126 -760.4051
+  336.6359 -748.9353 333.7685 -742.563 335.5208 -728.385
+  337.2732 -714.2069 342.8488 -662.1143 345.2384 -646.9804
+  347.6279 -631.8465 354.7967 -633.2802 351.1326 -617.8277
+  347.4687 -602.3752 310.9879 -569.877 311.3065 -554.9024
+  311.6252 -539.9278 331.8568 -535.6266 333.2906 -526.8649
+  334.7243 -518.1031 317.0415 -501.6947 317.3601 -492.1365
+  317.6787 -482.5782 333.1313 -467.7629 333.9278 -458.364
+  334.7243 -448.965 329.6266 -426.0252 331.6975 -413.7587
+  333.7685 -401.4923 340.6186 -389.0665 343.486 -378.871
+  346.3535 -368.6756 353.6815 -354.9754 347.4687 -349.559
+  341.2558 -344.1427 331.3789 -342.231 329.1486 -348.9218
+  326.9184 -355.6126 322.6172 -383.013 318.9532 -389.863
+  315.2892 -396.7131 318.4752 -406.59 307.6425 -406.59
+  296.8098 -406.59 274.1886 -392.0933 270.6839 -383.6502
+  267.1792 -375.207 263.1966 -360.551 258.5768 -355.294
+  253.957 -350.0369 252.3639 -351.9486 252.3639 -351.9486
+endline
+
+line rock-border -close on
+  276.72 -588.23
+  265.86 -603.88
+  284.76 -611.9
+  286.05 -593.26
+  278.91 -587.44
+  276.72 -588.23
+endline
+
+line u:splay -visibility off
+  225.53 -417.86
+  258.92 -386.26
+endline
+
+line u:splay -visibility off
+  225.53 -417.86
+  233.66 -407.4
+endline
+
+line u:splay -visibility off
+  225.53 -417.86
+  250.72 -399.83
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  257.77 -453.16
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  249.22 -460.83
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  319.7 -413.99
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  261.5 -569.15
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  264.61 -531.85
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  332.54 -458.89
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  318.31 -797.41
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  350.64 -617.48
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  245.27 -557.23
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  274.02 -579.83
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  218.58 -573.82
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  260.69 -532.39
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  228.14 -551.77
+endline
+
+line u:splay -visibility off
+  263.84 -743.35
+  334.29 -729.99
+endline
+
+line u:splay -visibility off
+  263.84 -743.35
+  252.53 -750.24
+endline
+
+line u:splay -visibility off
+  263.84 -743.35
+  253.06 -750.47
+endline
+
+line u:splay -visibility off
+  263.84 -743.35
+  269.41 -750.53
+endline
+
+line u:splay -visibility off
+  263.84 -743.35
+  308.44 -746.38
+endline
+
+line u:splay -visibility off
+  263.84 -743.35
+  301.2 -741.44
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  247.74 -494.26
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  288.5 -500.74
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  291.93 -489.5
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  285.53 -534.07
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  317.55 -491.47
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  333.82 -526.52
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  261.03 -385.75
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  228.9 -389.09
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  252.23 -352.27
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  270.98 -383.87
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  275.53 -430.73
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  278.23 -418.91
+endline
+
+point 225.53 -417.86 station -name 1
+
+point 318.0 -444.31 station -name 2
+
+point 233.5 -547.71 station -name 3
+
+point 263.84 -743.35 station -name 4
+
+point 282.52 -500.08 station -name 5
+
+point 236.29 -389.82 station -name 6
+
+endscrap
+
+
+
+scrap P2-1p1 -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line pit
+  266.9796 -373.7761
+  266.1911 -371.6358 264.2761 -366.1725 263.4313 -364.0886
+  262.5864 -362.0046 260.7841 -357.8931 259.2071 -355.9218
+  257.6301 -353.9505 256.6726 -352.0918 254.3633 -351.8666
+  252.0541 -351.6413 246.4782 -351.9792 246.4782 -351.9792
+endline
+
+line wall
+  248.3813 -338.2484
+  245.0359 -348.2846 248.4609 -355.294 244.0801 -360.1528
+  239.6992 -365.0116 234.7608 -368.5959 233.566 -375.446
+  232.3712 -382.2961 227.9903 -385.8804 228.4682 -389.3055
+  228.9462 -392.7305 224.5186 -414.948 224.9965 -419.3289
+  smooth off
+endline
+
+line wall
+  317.5272 -490.5762
+  311.557 -490.3509 306.4054 -490.3076 299.0835 -485.8017
+  291.7616 -481.2959 292.3248 -478.3672 290.6351 -469.4682
+  288.9454 -460.5692 283.2005 -434.7734 282.1867 -427.0009
+  281.1729 -419.2284 271.2601 -411.2306 269.1199 -400.8672
+  266.9796 -390.5039 265.8532 -379.6899 266.3037 -376.1979
+  266.7543 -372.7059 272.3866 -365.4966 269.1199 -360.7655
+  265.8532 -356.0344 264.5014 -352.0918 265.4026 -344.8826
+  266.3037 -337.6733 268.1061 -335.0824 269.7957 -330.8019
+  smooth off
+endline
+
+line u:splay -visibility off
+  225.53 -417.86
+  258.92 -386.26
+endline
+
+line u:splay -visibility off
+  225.53 -417.86
+  233.66 -407.4
+endline
+
+line u:splay -visibility off
+  225.53 -417.86
+  250.72 -399.83
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  257.77 -453.16
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  249.22 -460.83
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  319.7 -413.99
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  261.5 -569.15
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  264.61 -531.85
+endline
+
+line u:splay -visibility off
+  318.0 -444.31
+  332.54 -458.89
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  318.31 -797.41
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  350.64 -617.48
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  245.27 -557.23
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  274.02 -579.83
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  218.58 -573.82
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  260.69 -532.39
+endline
+
+line u:splay -visibility off
+  233.5 -547.71
+  228.14 -551.77
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  247.74 -494.26
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  288.5 -500.74
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  291.93 -489.5
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  285.53 -534.07
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  317.55 -491.47
+endline
+
+line u:splay -visibility off
+  282.52 -500.08
+  333.82 -526.52
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  261.03 -385.75
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  228.9 -389.09
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  252.23 -352.27
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  270.98 -383.87
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  275.53 -430.73
+endline
+
+line u:splay -visibility off
+  236.29 -389.82
+  278.23 -418.91
+endline
+
+point 225.53 -417.86 station -name 1
+
+point 318.0 -444.31 station -name 2
+
+point 233.5 -547.71 station -name 3
+
+point 282.52 -500.08 station -name 5
+
+point 236.29 -389.82 station -name 6
+
+endscrap
+
+

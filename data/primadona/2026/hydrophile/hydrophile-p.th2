@@ -1,0 +1,249 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250.0 -500.0 250.0 500.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap DELETE-ME-survey-legs-hydrophile-p -projection plan -scale [7.87402 1 m]
+
+line survey
+  33.74 -88.5
+  28.31 -57.32
+endline
+
+line survey
+  28.31 -57.32
+  23.35 -58.19
+endline
+
+line survey
+  28.31 -57.32
+  30.35 -56.46
+endline
+
+line survey
+  28.31 -57.32
+  18.62 -32.44
+endline
+
+line survey
+  28.31 -57.32
+  15.87 -22.2
+endline
+
+line survey
+  28.31 -57.32
+  12.32 -2.68
+endline
+
+line survey
+  12.32 -2.68
+  6.18 -5.35
+endline
+
+line survey
+  12.32 -2.68
+  3.11 2.6
+endline
+
+line survey
+  12.32 -2.68
+  3.03 4.49
+endline
+
+line survey
+  12.32 -2.68
+  6.81 -4.88
+endline
+
+line survey
+  12.32 -2.68
+  0.28 15.91
+endline
+
+line survey
+  -9.09 29.92
+  0.28 15.91
+endline
+
+line survey
+  -9.09 29.92
+  -5.71 31.5
+endline
+
+line survey
+  -9.09 29.92
+  -7.83 26.38
+endline
+
+line survey
+  -9.09 29.92
+  -6.73 27.8
+endline
+
+line survey
+  -9.09 29.92
+  -4.21 29.69
+endline
+
+line survey
+  -9.09 29.92
+  -24.53 72.13
+endline
+
+line survey
+  -9.09 29.92
+  -22.87 68.98
+endline
+
+line survey
+  -22.87 68.98
+  -26.65 67.87
+endline
+
+line survey
+  -22.87 68.98
+  -24.76 68.58
+endline
+
+line survey
+  -22.87 68.98
+  -22.48 70.55
+endline
+
+line survey
+  -22.87 68.98
+  -24.92 69.45
+endline
+
+line survey
+  -22.87 68.98
+  -33.74 85.91
+endline
+
+line survey
+  -22.87 68.98
+  -32.72 86.38
+endline
+
+line survey
+  -22.87 68.98
+  -33.03 85.91
+endline
+
+line survey
+  -22.87 68.98
+  -25.08 69.76
+endline
+
+line survey
+  -22.87 68.98
+  -19.88 70.47
+endline
+
+line survey
+  -22.87 68.98
+  -24.76 68.43
+endline
+
+line survey
+  -22.87 68.98
+  -21.14 70.08
+endline
+
+line survey
+  -22.87 68.98
+  -30.51 88.5
+endline
+
+point 33.74 -88.5 station-name -align tr -scale xs -text 0
+
+point 28.31 -57.32 station-name -align tr -scale xs -text 1
+
+point 12.32 -2.68 station-name -align tr -scale xs -text 2
+
+point 0.28 15.91 station-name -align tr -scale xs -text 3
+
+point -9.09 29.92 station-name -align tr -scale xs -text 4
+
+point -22.87 68.98 station-name -align tr -scale xs -text 5
+
+point -30.51 88.5 station-name -align tr -scale xs -text 6
+
+endscrap
+
+
+
+scrap hydrophile-1p -projection plan -scale [7.87402 1 m]
+
+line chimney -close on
+  -8.0894 35.0886
+  -6.1749 32.487 -3.7679 29.2987 -5.2378 25.92
+  -7.1998 22.6135 -9.552 27.1958 -9.0688 29.3673
+  -9.0723 31.3178 -8.4664 33.1934 -8.0894 35.0886
+endline
+
+point 20.6801 16.0729 label -align r -attr level 3 -scale 0.375 -text "<it>Duck/Semi-Siphon"
+
+point -40.763 58.4474 label -align bl -attr level 1 -text Hydrophile
+
+line border -id b501faa97b144816b1087775abc2039e -close on -visibility off
+  -42.7659 89.8598
+  -26.3809 94.4971
+  -21.8467 76.6694
+  -21.8467 76.6694 -22.2589 73.4748 -23.5985 72.1352
+  -24.9382 70.7955 -24.7321 70.0742 -27.1022 70.5894
+  -29.4724 71.1047 -35.2432 73.5779 -35.2432 73.5779
+  -42.7659 89.8598
+endline
+
+area water
+  b501faa97b144816b1087775abc2039e
+endarea
+
+line border -id d44c017c24b446bea464910e5829045d -close on -visibility off
+  -14.324 30.0907
+  -1.2366 31.8425
+  10.305 7.7288
+  10.305 7.7288 10.7172 -3.8129 10.4081 -4.2251
+  10.0989 -4.6373 1.3397 -7.7288 1.3397 -7.7288
+  -14.324 30.0907
+endline
+
+area water
+  d44c017c24b446bea464910e5829045d
+endarea
+
+line wall
+  35.5813 -68.3061
+  35.5813 -68.3061 32.3578 -59.357 31.7395 -58.1204
+  31.1212 -56.8838 16.4881 -4.6373 13.8088 -2.8854
+  11.1294 -1.1336 -2.5762 27.1022 -3.6067 27.8236
+  -4.6373 28.5449 -15.7667 67.0857 -18.8582 69.1467
+  -21.9497 71.2077 -28.4419 89.5507 -29.8846 89.6537
+  -31.3273 89.7568 -35.2432 88.3141 -35.4493 86.4592
+  -35.6554 84.6043 -28.1327 69.1983 -27.1022 67.9616
+  -26.0717 66.7251 -11.0264 30.7605 -10.5626 29.73
+  -10.0989 28.6995 1.4427 3.5037 3.9159 -1.2366
+  6.3891 -5.9769 22.465 -52.7618 23.0833 -55.8533
+  23.7016 -58.9448 26.2634 -65.3375 27.2585 -68.9619
+  smooth off
+endline
+
+point 33.74 -88.5 station -name 0
+
+point 28.31 -57.32 station -name 1
+
+point 12.32 -2.68 station -name 2
+
+point 0.28 15.91 station -name 3
+
+point -9.09 29.92 station -name 4
+
+point -22.87 68.98 station -name 5
+
+point -30.51 88.5 station -name 6
+
+endscrap
+
+

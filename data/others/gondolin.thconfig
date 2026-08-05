@@ -1,0 +1,13 @@
+source gondolin/gondolin.th
+
+input ../_layouts/detailed-p.thl
+
+layout local
+	copy detailed
+	map-comment "Cave reached by abseil off Western Migovec cliffs"	
+endlayout
+
+
+export map -o gondolin/gondolin.pdf -projection plan -layout local
+export model -o gondolin/gondolin.lox
+export model -o gondolin/gondolin.kml
