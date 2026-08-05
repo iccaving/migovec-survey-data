@@ -473,7 +473,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 4@diagonalley 19@damp_squib
 	equate 7@odessey 14@electric_dreams
 	equate 0@come_up_smiling 5@come_up_smiling_2
-	#equate 0@come_up_smiling_2 46@smer0
+	equate 0@come_up_smiling_2 46@smer0
 	equate 8@come_up_smiling 23@cattlegrid
 	equate 30@prima2 7@upper_escape
 
@@ -494,7 +494,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join snakebitetwo-1e@snakebitetwo ave_maria-1e@ave_maria
 	join come_up_smiling-s1@come_up_smiling come_up_smiling_2-s1@come_up_smiling_2
 	#join come_up_smiling_2-s1@come_up_smiling_2 smer0-0e@smer0 #Replaced with join to smer0_and_salome_viados_resurvey see below
-	#join come_up_smiling_2-s1@come_up_smiling_2 smer0_and_salome_viados_resurvey-1e@smer0_and_salome_viados_resurvey
+	join CUS_L1@come_up_smiling_2:end smer0_L4@smer0_and_salome_viados_resurvey:0
+	join CUS_L2@come_up_smiling_2:0 smer0_L5@smer0_and_salome_viados_resurvey:end
 	join odessey-1e@odessey electric_dreams-1e@electric_dreams
 	join odessey-1e@odessey electric_dreams-2e@electric_dreams
 	join moonraker-3s@moonraker klic_globin-1s@klic_globin

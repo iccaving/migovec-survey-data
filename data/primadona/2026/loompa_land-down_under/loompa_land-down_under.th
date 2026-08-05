@@ -20,9 +20,9 @@ survey loompa_land-down_under -title "loompa land-down under"
     units length meter
     units compass clino degree
     data normal from to length compass clino
-    extend left
-    0 1 2.48 144.3 7.5
     extend right
+    0 1 2.48 144.3 7.5
+    extend left
     2 1 7.96 320.5 72.3
     # extend auto
     1 . 7.93 320.0 72.2
@@ -37,7 +37,7 @@ survey loompa_land-down_under -title "loompa land-down under"
     2 . 3.58 346.4 16.2
     2 . 3.75 281.4 -22.1
     2 . 15.24 257.3 -45.8
-    extend left
+    extend right
     2 3 8.28 265.6 -46.7
     # extend auto
     3 . 3.04 151.2 16.6
@@ -45,47 +45,47 @@ survey loompa_land-down_under -title "loompa land-down under"
     3 . 4.47 73.3 45.6
     3 . 1.39 319.9 46.2
     3 . 2.65 230.4 -21.8
-    extend left
+    extend right
     3 4 7.56 252.3 -43.1
     # extend auto
     4 . 1.11 229.8 85.6
     4 . 1.31 164.9 7.2
     4 . 1.86 334.2 10.7
     4 . 1.67 330.4 40.1
-    extend left
+    extend right
     4 5 6.06 264.4 -28.0
     # extend auto
     5 . 2.44 336.2 0.7
     5 . 1.12 259.8 -85.8
     5 . 1.46 167.4 -13.8
     5 . 4.57 269.3 -34.8
-    extend left
+    extend right
     5 6 1.96 321.7 -15.8
     # extend auto
     6 . 1.65 231.9 -6.3
     6 . 1.18 275.8 25.8
     6 . 0.67 197.4 86.2
     6 . 1.62 178.8 0.3
-    extend left
+    extend right
     6 7 4.85 226.0 -30.9
     # extend auto
     7 . 0.38 183.2 62.6
     7 . 0.56 306.5 16.7
     7 . 1.61 130.7 11.8
-    extend left
+    extend right
     7 8 4.59 213.6 -28.9
     # extend auto
     8 . 0.65 153.2 10.4
     8 . 0.17 90.2 -62.9
     8 . 0.34 208.5 58.5
     8 . 1.07 307.2 0.2
-    extend left
+    extend right
     8 9 6.70 232.7 -24.9
     # extend auto
     9 . 1.05 144.9 -16.5
     9 . 0.38 292.8 -79.3
     9 . 1.30 312.0 -17.4
-    extend left
+    extend right
     9 10 5.45 216.5 -15.9
     # extend auto
     10 . 2.94 123.0 13.3
@@ -94,7 +94,7 @@ survey loompa_land-down_under -title "loompa land-down under"
     10 . 6.04 180.0 -45.0
     10 . 7.59 216.7 -56.1
     10 . 3.27 240.1 -45.5
-    extend left
+    extend right
     10 11 7.97 227.3 -48.8
     # extend auto
     11 . 2.87 131.6 0.9
@@ -107,13 +107,13 @@ survey loompa_land-down_under -title "loompa land-down under"
     11 . 11.19 53.2 45.5
     11 . 2.84 327.5 4.3
     11 . 2.80 269.7 -26.6
-    extend right
+    extend left
     11 12 4.08 328.4 -12.8
     # extend auto
     12 . 0.65 353.9 -10.5
     12 . 0.86 85.3 24.0
     12 . 5.24 146.6 18.6
-    extend left
+    extend right
     12 13 6.22 247.0 -37.2
     # extend auto
     13 . 3.02 45.1 36.8
@@ -126,7 +126,7 @@ survey loompa_land-down_under -title "loompa land-down under"
     13 . 0.55 227.2 56.0
     13 . 1.65 227.3 9.7
     13 . 2.33 233.0 -14.2
-    extend left
+    extend right
     13 14 8.59 261.8 -22.8
     # extend auto
     14 . 3.13 33.4 21.8
@@ -140,7 +140,7 @@ survey loompa_land-down_under -title "loompa land-down under"
     14 . 14.50 213.7 -11.7
     14 . 12.33 223.8 -13.1
     14 . 9.99 236.0 -16.9
-    extend vertical
+    extend right
     14 15 11.11 213.7 -15.2
     extend left
     flags duplicate 

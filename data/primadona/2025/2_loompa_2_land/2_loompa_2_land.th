@@ -48,20 +48,20 @@ survey 2_loompa_2_land -title "2 Loompa 2 Land"
     0 . 1.83 126.7 0.9
     0 . 3.72 135.4 59.4
     0 . 1.54 148.2 -87.6
-    extend right
+    extend left
     0 1 3.51 68.9 2.3
     # extend auto
     1 . 1.55 300.9 6.4
     1 . 4.83 345.5 78.2
     1 . 1.16 231.6 -86.3
-    extend right
+    extend left
     1 2 2.01 345.6 33.7
     # extend auto
     2 . 3.80 131.8 81.9
     2 . 1.06 144.8 15.3
     2 . 1.92 165.3 -2.4
     2 . 1.49 176.7 -85.8
-    extend right
+    extend left
     2 3 1.97 98.6 34.7
     # extend auto
     3 . 0.95 355.1 -4.9
@@ -70,7 +70,7 @@ survey 2_loompa_2_land -title "2 Loompa 2 Land"
     3 . 3.95 49.1 24.4
     3 . 4.47 81.6 29.0
     3 . 8.61 73.9 50.5
-    extend right
+    extend left
   # top bolt of the y hang
     3 4 8.05 73.9 50.6
     # extend auto
@@ -79,13 +79,13 @@ survey 2_loompa_2_land -title "2 Loompa 2 Land"
     4 . 5.08 23.6 24.6
     4 . 6.01 263.6 -76.3
     4 . 1.77 166.8 -19.5
-    extend left
+    extend right
     4 5 2.49 145.0 -7.4
     # extend auto
     5 . 1.24 17.1 3.1
     5 . 1.62 56.1 -84.3
     5 . 0.95 167.7 -9.3
-    extend left
+    extend right
     5 6 3.13 98.7 5.7
     # extend auto
     6 . 0.82 216.4 87.6
@@ -94,13 +94,13 @@ survey 2_loompa_2_land -title "2 Loompa 2 Land"
     6 . 7.41 290.1 -8.0
     6 . 3.64 273.8 -6.9
     6 . 2.60 306.2 2.5
-    extend left
+    extend right
     6 7 3.14 173.9 5.0
     # extend auto
     7 . 1.52 64.9 10.6
     7 . 0.53 21.2 -53.5
     7 . 0.70 348.3 77.7
-    extend left
+    extend right
     7 8 2.95 100.4 20.9
     # extend auto
     8 . 0.60 172.2 -86.6
@@ -109,7 +109,7 @@ survey 2_loompa_2_land -title "2 Loompa 2 Land"
     8 . 0.45 48.2 -40.8
     8 . 3.05 165.2 -17.1
     8 . 3.46 165.2 -17.2
-    extend left
+    extend right
     8 9 3.05 164.9 -17.2
     # extend auto
     9 . 0.62 266.4 7.7
@@ -117,14 +117,14 @@ survey 2_loompa_2_land -title "2 Loompa 2 Land"
     9 . 1.67 57.2 33.1
     9 . 2.26 11.9 20.3
     9 . 4.64 342.3 8.2
-    extend right
+    extend left
     9 10 1.48 71.0 29.0
     # extend auto
     10 . 0.54 332.8 82.3
     10 . 0.49 41.5 59.9
     10 . 1.62 289.8 -6.4
     10 . 1.51 167.4 9.3
-    extend right
+    extend left
     10 11 2.95 126.7 24.5
     # extend auto
     11 . 1.62 343.2 14.7
@@ -133,7 +133,7 @@ survey 2_loompa_2_land -title "2 Loompa 2 Land"
     11 . 3.61 84.2 14.0
     11 . 3.88 107.5 15.6
     11 . 0.90 59.9 67.4
-    extend right
+    extend left
     11 12 5.97 84.6 37.5
     # extend auto
     12 . 13.77 43.3 74.9
@@ -153,7 +153,7 @@ survey 2_loompa_2_land -title "2 Loompa 2 Land"
     12 . 10.87 11.7 30.2
     12 . 10.46 3.0 24.7
     12 . 9.89 357.0 20.5
-    extend right
+    extend left
     12 13 0.76 342.5 30.4
     13 14 7.26 354.4 17.2
     # extend auto
@@ -165,27 +165,27 @@ survey 2_loompa_2_land -title "2 Loompa 2 Land"
     14 . 7.35 143.2 10.8
     14 . 2.40 43.4 31.9
     14 . 2.64 331.8 10.5
-    extend right
+    extend left
     14 15 7.62 295.6 -22.9
     # extend auto
     15 . 1.32 216.8 0.6
     15 . 1.21 269.5 73.9
     15 . 2.49 11.6 30.3
-    extend right
+    extend left
     15 16 1.92 304.2 -20.6
     # extend auto
     16 . 0.33 251.1 72.1
     16 . 1.21 352.0 13.1
     16 . 1.38 200.3 -5.6
-    extend left
+    extend right
     16 17 8.94 277.5 -30.2
     # extend auto
     17 . 2.13 137.4 18.5
     17 . 1.00 150.7 -36.3
     17 . 1.29 159.9 34.9
-    extend left
+    extend right
     17 4 2.65 190.2 -11.5 #As per comment stn 18=stn 4
-    extend left
+    extend right
     14 19 4.60 112.3 44.1
     # extend auto
     19 . 3.99 142.6 49.1

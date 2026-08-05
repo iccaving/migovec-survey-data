@@ -8,7 +8,7 @@ scrap come_up_smiling_2-s1 -projection extended -scale [0 0 90 0 0 0 500 0 inch]
 
 point 354.8378 258.1879 label -align tl -attr level 3 -scale 0.5 -text "Come Up Smiling"
 
-line wall
+line wall -id CUS_L1
   305.9483 229.6648
   313.4674 230.918
   318.3966 232.2547
@@ -17,7 +17,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -id CUS_L2
   336.1081 232.9231
   335.2727 233.4243 333.7688 237.7687 333.2676 239.2725
   332.7662 240.7763 323.9105 240.1079 322.4068 240.1079
