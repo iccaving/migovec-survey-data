@@ -3,6 +3,17 @@ encoding utf-8
 
 survey loompa_land-down_under -title "loompa land-down under"
 
+  #input "loompa_land-down_under-1p.th2"
+  input "loompa_land-down_under-1s.th2"
+
+
+  # map m-all-p -projection plan
+  #   loompa_land-down_under-1p
+  # endmap
+  map m-all-e -projection extended
+    loompa_land-down_under-1s
+  endmap
+
   centerline
     date 2026.07.18 
     # team DPW JW JJH 
@@ -129,8 +140,9 @@ survey loompa_land-down_under -title "loompa land-down under"
     14 . 14.50 213.7 -11.7
     14 . 12.33 223.8 -13.1
     14 . 9.99 236.0 -16.9
-    extend left
+    extend vertical
     14 15 11.11 213.7 -15.2
+    extend left
     flags duplicate 
     15 16 5.18 357.0 -6.6
     16 17 11.69 293.2 -18.7
@@ -146,17 +158,5 @@ survey loompa_land-down_under -title "loompa land-down under"
     26 27 9.36 241.5 -18.4
     flags not duplicate
   endcenterline
-
-  # input "loompa_land-down_under-1p.th2"
-  # input "loompa_land-down_under-1s.th2"
-
-
-  # map m-all-p -projection plan
-  #   loompa_land-down_under-1p
-  # endmap
-  # map m-all-e -projection extended
-  #   loompa_land-down_under-1s
-  # endmap
- 
 
 endsurvey
