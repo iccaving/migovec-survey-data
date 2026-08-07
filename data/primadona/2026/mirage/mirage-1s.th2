@@ -1,325 +1,72 @@
-encoding utf-8
+encoding  utf-8
 ##XTHERION## xth_me_area_adjust -121.8 -401.4 363.3 182.5
 ##XTHERION## xth_me_area_zoom_to 25
 
-# 2026.07.22 created by TopoDroid v. 6.4.57
+
 
 scrap mirage-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line wall
-  241.92 -259.53
-  244.60 -274.60
-  241.25 -289.67
-  227.19 -299.38
-  218.14 -300.72
-  201.40 -301.06
-  192.69 -300.39
-  176.95 -299.05
-  168.91 -298.38
-  154.51 -294.70
-  146.81 -291.01
-  137.43 -283.64
-  130.73 -278.62
-  124.70 -273.26
-  116.67 -265.56
-  109.63 -258.53
-  98.25 -248.81
-  91.55 -244.12
-  84.52 -240.11
-  71.12 -234.08
+  -126.2934 33.5164
+  -146.5136 30.1464 -168.9805 28.4614 -172.2101 27.338
+  -175.4397 26.2147 -186.6731 -53.5427 -187.7965 -68.1462
+  -188.9198 -82.7497 -187.9369 -86.2601 -172.2101 -93.5619
+  -156.4833 -100.8636 -64.2286 -137.6532 -52.9952 -148.8866
+  -41.7617 -160.1201 -17.329 -183.9911 8.3675 -198.8754
+  34.064 -213.7597 86.44 -237.6308 100.903 -250.6897
+  115.3661 -263.7486 157.3511 -293.6576 198.9148 -292.2534
+  240.4786 -290.8493 232.896 -253.3576 233.5981 -223.7294
+  234.3002 -194.1012 220.8201 -119.8201 221.2413 -108.025
+  221.6626 -96.2298 224.0497 -63.9337 217.45 -61.8274
+  210.8504 -59.7211 196.949 -63.2316 187.9622 -61.5466
+  178.9755 -59.8616 148.2239 -56.2107 128.2846 -19.8424
+  108.3452 16.5259 122.2466 48.6816 88.5462 61.0384
+  54.8459 73.3952 32.6599 79.4331 17.3543 81.1182
+  2.0487 82.8032 -34.0387 85.0499 -41.2 86.3136
+  -48.3614 87.5774 -60.5777 88.9816 -60.5777 88.9816
 endline
 
-line wall
-  78.95 -239.05
-  68.47 -230.88
-  58.21 -225.85
-  44.38 -219.78
-  36.63 -216.85
-  27.42 -212.87
-  18.41 -208.05
-  9.19 -203.02
-  -3.80 -196.32
-  -14.69 -191.08
+line wall -subtype blocks
+  -80.6575 58.23
+  -65.6434 55.6769 -50.3062 55.3413 -35.3798 52.2171
+  -33.2984 52.1928 -27.8362 49.6827 -32.3886 48.4682
+  -42.0554 45.3325 -52.1622 43.8488 -62.1284 41.9824
+  -82.0845 38.6162 -102.0965 35.4717 -122.2275 33.3523
+  -122.7865 33.3056 -123.346 33.2632 -123.9063 33.2356
 endline
 
-line wall
-  89.06 63.92
-  97.70 62.54
-  105.99 59.43
-  113.25 51.48
-  117.74 40.77
-  120.50 31.44
-  123.61 20.38
-  125.69 12.43
-  127.42 4.48
-  129.84 -6.23
-  132.60 -15.22
-  136.75 -25.59
-  141.24 -33.19
-  146.77 -39.76
-  152.99 -45.63
-endline
+point 196.8415 -236.227 station-name -align tr -scale xs -text 0
 
-line wall
-  241.59 -268.57
-  240.92 -257.52
-  240.58 -248.81
-  240.58 -238.10
-  240.25 -228.05
-  240.92 -219.34
-  241.59 -211.30
-  241.92 -202.60
-  241.92 -193.89
-  241.25 -177.81
-  240.58 -169.44
-  240.58 -161.07
-  240.25 -153.03
-  236.90 -138.96
-  232.21 -132.60
-  222.50 -121.21
-  215.80 -106.81
-  214.12 -98.44
-endline
+point 102.0415 -208.277 station-name -align tr -scale xs -text 1
 
-line wall
-  188.00 -64.28
-  180.63 -60.60
-  172.60 -57.58
-  164.56 -54.57
-  150.49 -46.87
-  138.44 -36.82
-endline
+point 7.7915 -139.777 station-name -align tr -scale xs -text 2
 
-line wall
-  177.10 -63.45
-  190.32 -66.39
-  205.99 -67.86
-  221.17 -67.86
-  238.31 -67.37
-  251.04 -66.88
-  263.29 -66.88
-  249.58 -70.31
-  238.31 -75.20
-  230.48 -84.02
-  227.05 -95.28
-  227.54 -106.54
-endline
+point -168.8585 -82.327 station-name -align tr -scale xs -text 3
 
-line wall
-  21.82 52.21
-  37.42 58.06
-  45.51 59.46
-  54.15 59.46
-  62.23 56.67
-  68.64 51.37
-  78.12 37.44
-  86.48 22.39
-  90.94 14.86
-  95.68 8.45
-  100.69 -1.86
-  104.60 -11.90
-  110.73 -26.67
-  114.91 -35.03
-  121.04 -41.44
-  128.85 -48.41
-  136.09 -53.43
-  143.62 -56.49
-  158.39 -58.72
-  171.77 -52.59
-  174.00 -43.67
-  174.00 -35.31
-  173.72 -26.11
-  173.72 -16.64
-  174.56 -7.44
-  175.95 4.27
-  177.62 12.91
-  181.80 23.78
-  185.70 31.30
-  200.48 24.62
-  204.38 17.09
-  205.49 8.45
-  204.10 -5.49
-  202.99 -13.57
-  201.59 -28.62
-  199.64 -43.11
-  201.87 -55.10
-endline
+point -124.6585 31.073 station-name -align tr -scale xs -text 4
 
-line wall
-  2.39 82.49
-  12.90 80.08
-  23.59 78.53
-  31.69 78.53
-  43.59 79.56
-  54.45 79.22
-  64.62 77.84
-  73.41 73.53
-  80.48 66.98
-  87.37 63.01
-endline
+point -22.2085 70.823 station-name -align tr -scale xs -text 5
 
-line wall
-  25.62 54.03
-  16.25 51.82
-  3.94 50.35
-  -5.80 48.70
-  -14.81 48.15
-endline
+point 16.7915 63.373 station-name -align tr -scale xs -text 6
 
+point -77.5085 73.573 station-name -align tr -scale xs -text 7
 
-line u:splay -visibility off
-  196.85 -236.22
-  130.11 -232.70
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  199.45 -293.61
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  192.26 -88.39
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  217.19 -85.28
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  199.43 -63.54
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  137.47 -43.44
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  233.76 -224.27
-endline
-line u:splay -visibility off
-  102.17 -208.31
-  98.84 -249.12
-endline
-line u:splay -visibility off
-  102.17 -208.31
-  88.38 54.32
-endline
-line u:splay -visibility off
-  102.17 -208.31
-  114.42 -190.64
-endline
-line u:splay -visibility off
-  102.17 -208.31
-  147.94 -194.58
-endline
-line u:splay -visibility off
-  102.17 -208.31
-  210.54 -187.43
-endline
-line u:splay -visibility off
-  102.17 -208.31
-  166.52 -190.63
-endline
-line u:splay -visibility off
-  102.17 -208.31
-  136.83 -207.42
-endline
-line u:splay -visibility off
-  7.73 -139.76
-  11.25 -197.57
-endline
-line u:splay -visibility off
-  7.73 -139.76
-  40.53 63.83
-endline
-line u:splay -visibility off
-  7.73 -139.76
-  39.16 -13.95
-endline
-line u:splay -visibility off
-  7.73 -139.76
-  60.12 -26.08
-endline
-line u:splay -visibility off
-  7.73 -139.76
-  69.71 -146.01
-endline
-line u:splay -visibility off
-  7.73 -139.76
-  36.36 -136.31
-endline
-line u:splay -visibility off
-  7.73 -139.76
-  13.95 -142.92
-endline
-line u:splay -visibility off
-  7.73 -139.76
-  15.02 -172.50
-endline
-line u:splay -visibility off
-  184.18 -82.08
-  187.48 -59.91
-endline
-line u:splay -visibility off
-  184.18 -82.08
-  184.18 -63.43
-endline
-line u:splay -visibility off
-  184.18 -82.08
-  187.72 -92.89
-endline
-line u:splay -visibility off
-  184.18 -82.08
-  184.18 -54.11
-endline
-line u:splay -visibility off
-  37.74 71.14
-  35.24 -0.76
-endline
-line u:splay -visibility off
-  37.74 71.14
-  27.66 50.24
-endline
-line u:splay -visibility off
-  37.74 71.14
-  -21.88 20.20
-endline
-line u:splay -visibility off
-  37.74 71.14
-  24.66 73.73
-endline
-line u:splay -visibility off
-  37.74 71.14
-  65.23 78.16
-endline
-line u:splay -visibility off
-  37.74 71.14
-  53.72 52.10
-endline
-line u:splay -visibility off
-  -1.21 63.43
-  -1.74 81.41
-endline
-line u:splay -visibility off
-  -1.21 63.43
-  18.65 76.35
-endline
-line u:splay -visibility off
-  -1.21 63.43
-  -9.32 65.15
-endline
-line u:splay -visibility off
-  -1.21 63.43
-  -13.72 -12.92
-endline
+point 196.843 -236.2227 station -name 0
 
-point 196.85 -236.22 station -name "0"
-point 102.17 -208.31 station -name "1"
-point 7.73 -139.76 station -name "2"
-point 184.18 -82.08 station -name "3"
-point 184.18 31.23 station -name "4"
-point 37.74 71.14 station -name "5"
-point -1.21 63.43 station -name "6"
+point 102.043 -208.2727 station -name 1
 
+point 7.793 -139.7727 station -name 2
+
+point -168.857 -82.3227 station -name 3
+
+point -124.657 31.0773 station -name 4
+
+point -22.207 70.8273 station -name 5
+
+point 16.793 63.3773 station -name 6
+
+point -77.507 73.5773 station -name 7
 
 endscrap
+
 

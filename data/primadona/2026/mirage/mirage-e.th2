@@ -1,0 +1,197 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-mirage-e -projection extended -scale [7.87402 1 m]
+    line survey
+        34.50 -26.02
+        21.11 -25.31
+    endline
+    line survey
+        34.50 -26.02
+        35.03 -37.52
+    endline
+    line survey
+        34.50 -26.02
+        33.57 3.58
+    endline
+    line survey
+        34.50 -26.02
+        38.58 4.21
+    endline
+    line survey
+        34.50 -26.02
+        34.99 8.54
+    endline
+    line survey
+        34.50 -26.02
+        22.62 12.48
+    endline
+    line survey
+        34.50 -26.02
+        41.83 -23.66
+    endline
+    line survey
+        34.50 -26.02
+        15.54 -20.43
+    endline
+    line survey
+        15.54 -20.43
+        14.86 -28.62
+    endline
+    line survey
+        15.54 -20.43
+        12.78 32.01
+    endline
+    line survey
+        15.54 -20.43
+        17.97 -16.89
+    endline
+    line survey
+        15.54 -20.43
+        29.51 -17.68
+    endline
+    line survey
+        15.54 -20.43
+        40.56 -16.26
+    endline
+    line survey
+        15.54 -20.43
+        27.92 -16.89
+    endline
+    line survey
+        15.54 -20.43
+        21.23 -20.28
+    endline
+    line survey
+        15.54 -20.43
+        -3.31 -6.73
+    endline
+    line survey
+        -3.31 -6.73
+        -3.38 -18.31
+    endline
+    line survey
+        -3.31 -6.73
+        -9.89 33.98
+    endline
+    line survey
+        -3.31 -6.73
+        -4.02 18.39
+    endline
+    line survey
+        -3.31 -6.73
+        -4.46 15.94
+    endline
+    line survey
+        -3.31 -6.73
+        -15.66 -7.99
+    endline
+    line survey
+        -3.31 -6.73
+        1.68 -6.02
+    endline
+    line survey
+        -3.31 -6.73
+        6.52 -7.36
+    endline
+    line survey
+        -3.31 -6.73
+        6.20 -13.35
+    endline
+    line survey
+        -3.31 -6.73
+        -38.64 4.76
+    endline
+    line survey
+        -38.64 4.76
+        -39.30 9.25
+    endline
+    line survey
+        -38.64 4.76
+        -36.50 8.54
+    endline
+    line survey
+        -38.64 4.76
+        -39.32 2.64
+    endline
+    line survey
+        -38.64 4.76
+        -41.83 10.35
+    endline
+    line survey
+        -38.64 4.76
+        -29.80 27.44
+    endline
+    line survey
+        -3.31 -6.73
+        -9.31 35.39
+    endline
+    line survey
+        -9.31 35.39
+        -8.84 20.98
+    endline
+    line survey
+        -9.31 35.39
+        -7.34 31.30
+    endline
+    line survey
+        -9.31 35.39
+        2.58 25.24
+    endline
+    line survey
+        -9.31 35.39
+        -6.74 35.94
+    endline
+    line survey
+        -9.31 35.39
+        -14.83 36.81
+    endline
+    line survey
+        -9.31 35.39
+        -12.59 31.61
+    endline
+    line survey
+        -9.31 35.39
+        -1.51 33.90
+    endline
+    line survey
+        -1.51 33.90
+        -1.62 37.52
+    endline
+    line survey
+        -1.51 33.90
+        2.17 36.50
+    endline
+    line survey
+        -1.51 33.90
+        -3.13 34.21
+    endline
+    line survey
+        -1.51 33.90
+        -4.04 18.54
+    endline
+    line survey
+        -1.51 33.90
+        -20.37 35.94
+    endline
+    point 34.50 -26.02 station-name -align tr -scale xs -text 0
+    point 15.54 -20.43 station-name -align tr -scale xs -text 1
+    point -3.31 -6.73 station-name -align tr -scale xs -text 2
+    point -38.64 4.76 station-name -align tr -scale xs -text 3
+    point -29.80 27.44 station-name -align tr -scale xs -text 4
+    point -9.31 35.39 station-name -align tr -scale xs -text 5
+    point -1.51 33.90 station-name -align tr -scale xs -text 6
+    point -20.37 35.94 station-name -align tr -scale xs -text 7
+endscrap
+
+scrap mirage-1e -projection extended -scale [7.87402 1 m]
+    point 34.50 -26.02 station -name 0
+    point 15.54 -20.43 station -name 1
+    point -3.31 -6.73 station -name 2
+    point -38.64 4.76 station -name 3
+    point -29.80 27.44 station -name 4
+    point -9.31 35.39 station -name 5
+    point -1.51 33.90 station -name 6
+    point -20.37 35.94 station -name 7
+endscrap

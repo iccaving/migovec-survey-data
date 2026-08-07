@@ -4,6 +4,16 @@ encoding utf-8
 survey babylon_beach -title "babylon beach"
     # Wales to Yorkshiresque passage leading up to a beautiful pitch 
 
+  # input "babylon_beach-1p.th2"
+  input "babylon_beach-1s.th2"
+
+  # map m1p -projection plan
+  #   babylon_beach-1p
+  # endmap
+  map m-all-e -projection extended
+    babylon_beach-1s
+  endmap
+
   centerline
     date 2026.07.23 
     # team JJ EP LAA JS 
@@ -39,7 +49,7 @@ survey babylon_beach -title "babylon beach"
     2 . 1.60 217.8 25.5
     2 . 1.95 244.8 24.4
     2 . 1.88 185.5 9.8
-    extend left
+    extend right
     2 3 3.63 245.9 13.1
     # extend auto
     3 . 0.66 121.4 -56.4
@@ -82,7 +92,7 @@ survey babylon_beach -title "babylon beach"
     5 . 0.93 178.9 8.1
     5 . 1.52 77.0 3.7
     5 . 1.65 108.0 3.4
-    extend vertical
+    extend right
     5 6 1.73 271.7 26.5
     # extend auto
     6 . 0.92 203.6 -83.3
@@ -105,7 +115,7 @@ survey babylon_beach -title "babylon beach"
     7 . 0.48 146.5 74.7
     7 . 0.98 219.1 -0.1
     7 . 0.98 217.6 -0.1
-    extend left
+    extend right
     7 8 0.93 231.6 1.0
     # extend auto
     8 . 0.25 106.8 -84.8
@@ -130,7 +140,7 @@ survey babylon_beach -title "babylon beach"
     10 . 1.17 222.9 -5.4
     10 . 1.32 214.5 -2.5
     10 . 0.72 134.6 -4.8
-    extend vertical
+    extend right
     10 11 2.03 267.0 -36.3
     # extend auto
     11 . 1.15 112.3 -49.2
@@ -326,18 +336,8 @@ survey babylon_beach -title "babylon beach"
     22 . 1.28 45.0 -0.4
     22 . 1.84 21.0 -1.1
     22 . 0.94 249.3 -15.3
-    extend vertical
+    extend right
     22 23 1.10 279.2 5.5
   endcenterline
-
-  # input "babylon_beach-1p.th2"
-  # input "babylon_beach-1s.th2"
-
-  # map m1p -projection plan
-  #   babylon_beach-1p
-  # endmap
-  # map m1s -projection extended
-  #   babylon_beach-1s
-  # endmap
 
 endsurvey

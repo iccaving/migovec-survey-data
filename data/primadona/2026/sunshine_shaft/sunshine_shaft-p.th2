@@ -1,0 +1,366 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_zoom_to 100
+
+scrap DELETE-ME-survey-legs-sunshine_shaft-p -projection plan -scale [7.87402 1 m]
+    line survey
+        -64.41 98.46
+        -42.99 94.69
+    endline
+    line survey
+        -64.41 98.46
+        -33.86 85.08
+    endline
+    line survey
+        -64.41 98.46
+        -35.35 109.65
+    endline
+    line survey
+        -64.41 98.46
+        -2.05 72.80
+    endline
+    line survey
+        -64.41 98.46
+        -39.61 75.39
+    endline
+    line survey
+        -64.41 98.46
+        -65.04 97.68
+    endline
+    line survey
+        -64.41 98.46
+        -66.06 106.50
+    endline
+    line survey
+        -64.41 98.46
+        -43.39 98.86
+    endline
+    line survey
+        -64.41 98.46
+        -30.47 112.87
+    endline
+    line survey
+        -64.41 98.46
+        -61.42 84.45
+    endline
+    line survey
+        -64.41 98.46
+        -69.53 96.97
+    endline
+    line survey
+        -64.41 98.46
+        -69.69 110.51
+    endline
+    line survey
+        -64.41 98.46
+        -56.30 100.83
+    endline
+    line survey
+        -56.30 100.83
+        84.17 -117.20
+    endline
+    line survey
+        -56.30 100.83
+        3.07 73.90
+    endline
+    line survey
+        -56.30 100.83
+        -34.25 111.69
+    endline
+    line survey
+        -56.30 100.83
+        -65.43 82.24
+    endline
+    line survey
+        -56.30 100.83
+        -84.17 103.58
+    endline
+    line survey
+        -56.30 100.83
+        -69.76 110.12
+    endline
+    line survey
+        -56.30 100.83
+        -45.12 117.20
+    endline
+    line survey
+        -56.30 100.83
+        -33.39 96.73
+    endline
+    line survey
+        -56.30 100.83
+        -55.51 87.20
+    endline
+    line survey
+        -56.30 100.83
+        -3.94 72.56
+    endline
+    line survey
+        -56.30 100.83
+        -43.86 98.23
+    endline
+    line survey
+        -56.30 100.83
+        -51.97 102.64
+    endline
+    line survey
+        -56.30 100.83
+        -27.09 57.20
+    endline
+    line survey
+        -27.09 57.20
+        -10.39 37.28
+    endline
+    line survey
+        -27.09 57.20
+        -21.65 48.62
+    endline
+    line survey
+        -27.09 57.20
+        -15.67 55.00
+    endline
+    line survey
+        -27.09 57.20
+        -25.12 58.70
+    endline
+    line survey
+        -27.09 57.20
+        -30.24 54.53
+    endline
+    line survey
+        -27.09 57.20
+        -29.53 52.24
+    endline
+    line survey
+        -27.09 57.20
+        -26.38 57.60
+    endline
+    line survey
+        -27.09 57.20
+        -9.84 26.65
+    endline
+    line survey
+        -27.09 57.20
+        -26.54 32.32
+    endline
+    line survey
+        -27.09 57.20
+        -22.68 28.31
+    endline
+    line survey
+        -22.68 28.31
+        -43.39 43.27
+    endline
+    line survey
+        -22.68 28.31
+        -40.08 13.03
+    endline
+    line survey
+        -40.08 13.03
+        -65.20 -24.37
+    endline
+    line survey
+        -65.20 -24.37
+        -34.88 -44.92
+    endline
+    point -64.41 98.46 station-name -align tr -scale xs -text 0
+    point -42.99 94.69 station-name -align tr -scale xs -text top
+    point -56.30 100.83 station-name -align tr -scale xs -text 1
+    point -27.09 57.20 station-name -align tr -scale xs -text 2
+    point -22.68 28.31 station-name -align tr -scale xs -text 3
+    point -40.08 13.03 station-name -align tr -scale xs -text 4
+    point -65.20 -24.37 station-name -align tr -scale xs -text 5
+    point -34.88 -44.92 station-name -align tr -scale xs -text babylon_beach_17
+endscrap
+
+scrap sunshine_shaft-1p -projection plan -scale [7.87402 1 m]
+    point -64.41 98.46 station -name 0
+    point -42.99 94.69 station -name top
+    point -56.30 100.83 station -name 1
+    point -27.09 57.20 station -name 2
+    point -22.68 28.31 station -name 3
+    point -40.08 13.03 station -name 4
+    point -65.20 -24.37 station -name 5
+    point -34.88 -44.92 station -name babylon_beach_17
+endscrap
+scrap DELETE-ME-survey-legs-DUPLICATE_sunshine_shaft-p -projection plan -scale [7.87402 1 m]
+    line survey
+        -64.41 98.46
+        -42.99 94.69
+    endline
+    line survey
+        -64.41 98.46
+        -33.86 85.08
+    endline
+    line survey
+        -64.41 98.46
+        -35.35 109.65
+    endline
+    line survey
+        -64.41 98.46
+        -2.05 72.80
+    endline
+    line survey
+        -64.41 98.46
+        -39.61 75.39
+    endline
+    line survey
+        -64.41 98.46
+        -65.04 97.68
+    endline
+    line survey
+        -64.41 98.46
+        -66.06 106.50
+    endline
+    line survey
+        -64.41 98.46
+        -43.39 98.86
+    endline
+    line survey
+        -64.41 98.46
+        -30.47 112.87
+    endline
+    line survey
+        -64.41 98.46
+        -61.42 84.45
+    endline
+    line survey
+        -64.41 98.46
+        -69.53 96.97
+    endline
+    line survey
+        -64.41 98.46
+        -69.69 110.51
+    endline
+    line survey
+        -64.41 98.46
+        -56.30 100.83
+    endline
+    line survey
+        -56.30 100.83
+        84.17 -117.20
+    endline
+    line survey
+        -56.30 100.83
+        3.07 73.90
+    endline
+    line survey
+        -56.30 100.83
+        -34.25 111.69
+    endline
+    line survey
+        -56.30 100.83
+        -65.43 82.24
+    endline
+    line survey
+        -56.30 100.83
+        -84.17 103.58
+    endline
+    line survey
+        -56.30 100.83
+        -69.76 110.12
+    endline
+    line survey
+        -56.30 100.83
+        -45.12 117.20
+    endline
+    line survey
+        -56.30 100.83
+        -33.39 96.73
+    endline
+    line survey
+        -56.30 100.83
+        -55.51 87.20
+    endline
+    line survey
+        -56.30 100.83
+        -3.94 72.56
+    endline
+    line survey
+        -56.30 100.83
+        -43.86 98.23
+    endline
+    line survey
+        -56.30 100.83
+        -51.97 102.64
+    endline
+    line survey
+        -56.30 100.83
+        -27.09 57.20
+    endline
+    line survey
+        -27.09 57.20
+        -10.39 37.28
+    endline
+    line survey
+        -27.09 57.20
+        -21.65 48.62
+    endline
+    line survey
+        -27.09 57.20
+        -15.67 55.00
+    endline
+    line survey
+        -27.09 57.20
+        -25.12 58.70
+    endline
+    line survey
+        -27.09 57.20
+        -30.24 54.53
+    endline
+    line survey
+        -27.09 57.20
+        -29.53 52.24
+    endline
+    line survey
+        -27.09 57.20
+        -26.38 57.60
+    endline
+    line survey
+        -27.09 57.20
+        -9.84 26.65
+    endline
+    line survey
+        -27.09 57.20
+        -26.54 32.32
+    endline
+    line survey
+        -27.09 57.20
+        -22.68 28.31
+    endline
+    line survey
+        -22.68 28.31
+        -43.39 43.27
+    endline
+    line survey
+        -22.68 28.31
+        -40.08 13.03
+    endline
+    line survey
+        -40.08 13.03
+        -65.20 -24.37
+    endline
+    line survey
+        -65.20 -24.37
+        -34.88 -44.92
+    endline
+    point -64.41 98.46 station-name -align tr -scale xs -text 0
+    point -42.99 94.69 station-name -align tr -scale xs -text top
+    point -56.30 100.83 station-name -align tr -scale xs -text 1
+    point -27.09 57.20 station-name -align tr -scale xs -text 2
+    point -22.68 28.31 station-name -align tr -scale xs -text 3
+    point -40.08 13.03 station-name -align tr -scale xs -text 4
+    point -65.20 -24.37 station-name -align tr -scale xs -text 5
+    point -34.88 -44.92 station-name -align tr -scale xs -text babylon_beach_17
+endscrap
+
+scrap DUPLICATE_sunshine_shaft-1p -projection plan -scale [7.87402 1 m]
+    point -64.41 98.46 station -name 0
+    point -42.99 94.69 station -name top
+    point -56.30 100.83 station -name 1
+    point -27.09 57.20 station -name 2
+    point -22.68 28.31 station -name 3
+    point -40.08 13.03 station -name 4
+    point -65.20 -24.37 station -name 5
+    point -34.88 -44.92 station -name babylon_beach_17
+endscrap

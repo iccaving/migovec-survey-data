@@ -3,6 +3,16 @@ encoding utf-8
 
 survey virage -title "virage"
 
+  # input "virage-1p.th2"
+  input "virage-1s.th2"
+
+  # map m1p -projection plan
+  #   virage-1p
+  # endmap
+  map m-all-e -projection extended
+    virage-1s
+  endmap
+
   centerline
     date 2026.07.22 
     # team ep js la jj 
@@ -12,7 +22,7 @@ survey virage -title "virage"
     units length meter
     units compass clino degree
     data normal from to length compass clino
-    extend right
+    extend vertical
     0 1 9.44 0.3 19.5
     # extend auto
     1 . 1.21 93.2 12.4
@@ -29,13 +39,13 @@ survey virage -title "virage"
     2 . 0.62 118.6 -79.1
     2 . 0.75 85.9 27.2
     2 . 1.69 14.2 17.4
-    extend right
+    extend left
     2 3 1.82 16.1 18.6
     # extend auto
     3 . 1.92 282.0 2.8
     3 . 2.37 327.5 7.7
     3 . 0.89 32.8 31.6
-    extend right
+    extend left
     3 4 2.37 324.4 6.7
     # extend auto
     4 . 0.42 325.1 27.6
@@ -44,7 +54,7 @@ survey virage -title "virage"
     4 . 2.25 102.7 -55.3
     4 . 2.82 94.1 -25.5
     4 . 2.13 41.0 -30.3
-    extend right
+    extend left
     4 5 3.00 73.3 -32.2
     # extend auto
     5 . 1.32 101.1 -24.6
@@ -59,7 +69,7 @@ survey virage -title "virage"
     6 . 0.30 15.5 -76.0
     6 . 0.71 33.3 75.5
     6 . 3.39 84.1 35.8
-    extend right
+    extend left
     6 7 2.05 69.2 3.8
     # extend auto
     7 . 0.64 193.5 -4.9
@@ -71,7 +81,7 @@ survey virage -title "virage"
     7 . 2.26 350.1 19.6
     7 . 0.87 358.4 31.9
     7 . 1.03 25.7 -4.6
-    extend right
+    extend left
     7 8 3.28 12.6 20.9
     # extend auto
     8 . 2.48 107.1 69.3
@@ -89,7 +99,7 @@ survey virage -title "virage"
     9 . 1.07 353.4 -86.2
     9 . 1.62 37.6 -21.1
     9 . 0.34 127.7 -9.3
-    extend right
+    extend left
     9 10 4.04 3.8 -19.6
     # extend auto
     10 . 2.57 348.6 -17.9
@@ -97,7 +107,7 @@ survey virage -title "virage"
     10 . 8.56 329.2 15.7
     10 . 7.44 8.7 27.6
     10 . 7.47 23.2 24.6
-    extend right
+    extend left
     10 11 4.50 34.4 32.3
     # extend auto
     11 . 2.89 53.1 -2.3
@@ -107,7 +117,7 @@ survey virage -title "virage"
     11 . 1.97 68.5 -7.5
     11 . 6.36 312.8 -2.3
     11 . 2.40 338.6 -5.2
-    extend right
+    extend left
     11 12 6.00 3.7 -24.9
     # extend auto
     12 . 3.87 146.1 -8.3
@@ -122,7 +132,7 @@ survey virage -title "virage"
     # extend auto
     13 . 1.61 83.5 16.8
     13 . 1.59 93.2 18.8
-    extend vertical
+    extend left
     13 14 1.70 92.6 17.6
     # extend auto
     14 . 2.02 86.5 43.0
@@ -130,7 +140,7 @@ survey virage -title "virage"
     14 . 1.65 169.1 41.4
     14 . 0.33 211.0 45.4
     14 . 1.24 2.5 -12.7
-    extend right
+    extend left
     14 15 5.25 21.9 7.3
     # extend auto
     15 . 2.82 277.1 3.4
@@ -142,7 +152,7 @@ survey virage -title "virage"
     15 . 2.51 309.9 21.9
     15 . 3.15 344.9 32.4
     15 . 3.21 343.9 32.2
-    extend right
+    extend left
     15 16 3.19 3.4 31.4
     extend left
     16 17 1.09 131.3 42.1
@@ -172,7 +182,7 @@ survey virage -title "virage"
     19 . 0.32 13.1 -26.2
     19 . 0.77 259.3 26.7
     19 . 2.08 186.9 30.5
-    extend right
+    extend left
     19 20 3.87 62.5 30.4
     # extend auto
     20 . 0.88 31.5 21.7
@@ -183,18 +193,8 @@ survey virage -title "virage"
     # extend auto
     21 . 1.65 56.9 35.2
     21 . 1.22 58.0 34.9
-    extend right
+    extend left
     21 22 1.70 53.2 35.5
   endcenterline
-
-  # input "virage-1p.th2"
-  # input "virage-1s.th2"
-
-  # map m1p -projection plan
-  #   virage-1p
-  # endmap
-  # map m1s -projection extended
-  #   virage-1s
-  # endmap
 
 endsurvey

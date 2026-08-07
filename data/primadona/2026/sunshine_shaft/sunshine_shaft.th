@@ -4,6 +4,15 @@ encoding utf-8
 survey sunshine_shaft -title "sunshine shaft"
     # two avens opposite pitch into Babylon beach 
 
+  # input "sunshine_shaft-1p.th2"
+  input "sunshine_shaft-1s.th2"
+
+  # map m1p -projection plan
+  #   sunshine_shaft-1p
+  # endmap
+  map m-all-e -projection extended
+    sunshine_shaft-1s
+  endmap
   centerline
     date 2026.07.23 
     # team BH, JJH 
@@ -42,7 +51,7 @@ survey sunshine_shaft -title "sunshine shaft"
     1 . 10.64 118.4 44.7
     1 . 1.98 102.0 -35.4
     1 . 1.39 67.5 -64.6
-    extend left
+    extend right
     1 2 6.68 146.2 -3.1
     # extend auto
     2 . 3.30 140.0 1.6
@@ -54,24 +63,13 @@ survey sunshine_shaft -title "sunshine shaft"
     2 . 0.20 60.6 -57.4
     2 . 6.23 150.5 -44.3
     2 . 8.68 178.7 -68.6
-    extend left
+    extend right
     2 3 8.80 171.3 -65.0
     # extend auto
     3 . 3.29 306.0 9.1
-    extend left
+    extend right
     3 4 2.95 228.8 4.3
     4 5 6.91 213.9 -34.1
     5 babylon_beach_17 4.79 124.1 -13.7
   endcenterline
-
-  # input "sunshine_shaft-1p.th2"
-  # input "sunshine_shaft-1s.th2"
-
-  # map m1p -projection plan
-  #   sunshine_shaft-1p
-  # endmap
-  # map m1s -projection extended
-  #   sunshine_shaft-1s
-  # endmap
-
 endsurvey

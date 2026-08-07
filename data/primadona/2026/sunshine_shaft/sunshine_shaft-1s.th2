@@ -1,299 +1,69 @@
-encoding utf-8
+encoding  utf-8
 ##XTHERION## xth_me_area_adjust -659.8 -832.2 556.8 954.7
 ##XTHERION## xth_me_area_zoom_to 25
 
-# 2026.07.24 created by TopoDroid v. 6.4.57
+
 
 scrap sunshine_shaft-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line wall
-  99.99 320.85
-  106.95 375.69
-  114.04 414.46
-  122.87 460.86
-  130.13 504.51
-  134.04 557.26
-  136.18 607.17
-  141.52 643.05
-  149.08 690.57
-  170.58 726.57
-  191.12 762.21
-  204.38 800.12
-  220.64 835.06
-  252.52 853.10
-  286.60 854.72
-  301.81 819.57
+  88.9048 -549.6743
+  47.697 -535.7449 -13.8244 -524.7175 -55.6126 -509.0469
+  -97.4008 -493.3763 -118.8753 -484.0901 -150.2164 -454.4901
+  -181.5575 -424.8901 -373.6671 -451.0078 -411.9729 -417.3451
+  -450.2787 -383.6824 -462.4669 -272.2473 -476.3963 -242.0669
+  -490.3257 -211.8865 -526.31 -190.4121 -546.6237 -158.4905
+  -566.9374 -126.569 -559.3923 -15.7143 -574.4825 19.1092
+  -589.5726 53.9327 -707.9725 174.0737 -728.2862 210.6383
+  -748.5999 247.203 -797.3527 569.3202 -792.1292 656.9593
+  -786.9057 744.5983 -756.1449 824.6924 -773.5567 851.3903
+  smooth off
+  -790.9684 878.0883 -831.5958 908.2687 -875.7055 904.7863
+  -919.8153 901.304 -940.7094 775.3591 -949.4153 717.3199
+  -958.1211 659.2808 -904.7251 290.7323 -908.7879 257.65
+  -912.8506 224.5677 -907.0467 191.4854 -912.2702 147.3757
+  -917.4937 103.2659 -1002.2309 89.3365 -1013.2583 38.2621
+  -1024.2857 -12.8123 -1045.1798 -103.3534 -1027.1877 -143.9808
+  -1009.1955 -184.6082 -1017.321 -234.5218 -958.1211 -258.8982
+  -898.9212 -283.2747 -812.4429 -278.6316 -775.2978 -289.0786
+  -738.1528 -299.5256 -663.8627 -408.6392 -623.8157 -467.8391
+  -583.7687 -527.0391 -539.0786 -562.4429 -463.6277 -583.9174
+  -388.1768 -605.3919 -56.5319 -743.5633 -3.1359 -750.528
+  smooth off
 endline
 
-line wall
-  275.18 854.13
-  304.02 848.25
-  311.39 821.30
-  313.91 790.64
-  313.91 753.68
-  313.91 718.62
-  302.09 687.36
-  288.03 653.37
-  280.92 624.52
-  274.64 594.57
-  262.11 552.84
-  252.11 519.87
-  251.13 489.76
-  246.47 454.54
-  245.79 422.23
-  245.79 386.93
-  249.98 348.16
-  260.02 318.20
-  271.83 288.09
-  288.65 256.54
-  309.19 231.67
-  324.09 205.04
-  343.96 172.46
-  356.89 145.36
-  382.76 125.36
-  404.73 106.97
-  422.03 81.74
-  430.71 53.64
-  442.15 22.73
-  452.59 -16.99
-  456.82 -52.43
-  456.82 -81.69
-  446.61 -109.46
-  429.35 -138.89
-  419.50 -165.62
-  392.71 -185.75
-  371.34 -193.77
-endline
+point -894.8392 194.3553 station-name -align tr -scale xs -text 0
 
-line wall
-  400.55 -185.87
-  377.17 -209.26
-  346.12 -234.45
-  324.87 -260.13
-  296.19 -277.06
-  262.59 -289.79
-  226.93 -300.34
-  188.17 -302.17
-  148.35 -303.64
-  113.19 -306.59
-  81.79 -308.06
-  42.50 -308.06
-  28.35 -324.99
-endline
+point -786.0392 851.4054 station-name -align tr -scale xs -text top
 
-line wall
-  141.95 412.90
-  132.90 364.34
-  99.76 328.67
-  75.71 290.41
-  55.66 241.68
-  36.02 203.78
-  16.64 168.46
-  -24.82 119.97
-  -37.43 77.96
-  -45.20 38.18
-  -63.39 -7.62
-  -76.45 -47.14
-  -97.00 -82.53
-  -137.61 -103.66
-  -173.34 -140.98
-  -193.90 -175.27
-endline
+point -852.5892 -236.3947 station-name -align tr -scale xs -text 1
 
-line wall
-  92.03 -304.06
-  45.43 -317.58
-  -4.58 -332.56
-  -26.79 -367.84
-  -58.41 -408.87
-  -79.27 -449.64
-endline
+point -589.9892 -250.5447 station-name -align tr -scale xs -text 2
 
-line wall
-  -39.51 -432.24
-  -74.22 -490.14
-  -105.85 -536.84
-  -140.31 -579.66
-  -178.98 -621.96
-  -216.52 -658.28
-  -275.75 -681.43
-  -319.00 -702.50
-  -379.16 -722.00
-  -436.96 -726.75
-  -490.11 -732.18
-endline
+point -443.5891 -564.3446 station-name -align tr -scale xs -text 3
 
-line wall
-  -167.65 -145.34
-  -193.59 -190.74
-endline
+point -327.7391 -555.6446 station-name -align tr -scale xs -text 4
 
-line wall
-  -177.52 -160.92
-  -203.11 -211.62
-  -257.96 -274.98
-  -295.90 -325.38
-  -343.54 -362.46
-  -404.40 -381.13
-  -458.50 -405.88
-  -516.43 -434.09
-  -531.26 -459.17
-endline
+point -102.4892 -708.4447 station-name -align tr -scale xs -text 5
 
-line wall
-  -534.04 -386.70
-  -559.75 -148.72
-  -553.98 164.56
-endline
+point 80.7109 -752.8947 station-name -align tr -scale xs -text babylon_beach_17
 
-line wall
-  -478.34 -420.15
-  -523.02 -303.69
-  -534.04 -247.33
-endline
+point -894.8297 194.3501 station -name 0
 
+point -786.0297 851.4001 station -name top
 
-line u:splay -visibility off
-  154.69 194.38
-  316.73 233.06
-endline
-line u:splay -visibility off
-  154.69 194.38
-  309.91 216.62
-endline
-line u:splay -visibility off
-  154.69 194.38
-  483.99 2.75
-endline
-line u:splay -visibility off
-  154.69 194.38
-  296.83 140.10
-endline
-line u:splay -visibility off
-  154.69 194.38
-  152.35 193.54
-endline
-line u:splay -visibility off
-  154.69 194.38
-  158.38 200.58
-endline
-line u:splay -visibility off
-  154.69 194.38
-  258.14 -280.42
-endline
-line u:splay -visibility off
-  154.69 194.38
-  338.11 -106.82
-endline
-line u:splay -visibility off
-  154.69 194.38
-  181.23 13.68
-endline
-line u:splay -visibility off
-  154.69 194.38
-  130.89 44.67
-endline
-line u:splay -visibility off
-  154.69 194.38
-  146.48 -262.20
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  -1100.06 -296.95
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  -79.91 -234.22
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  180.61 -226.45
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  126.65 -222.80
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  67.15 -209.82
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  145.46 -226.66
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  233.55 -222.57
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  116.01 133.56
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  138.50 670.94
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  -66.37 58.59
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  151.37 -281.30
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  192.28 -285.55
-endline
-line u:splay -visibility off
-  -65.70 -250.42
-  -176.68 -246.76
-endline
-line u:splay -visibility off
-  -65.70 -250.42
-  -112.26 -158.63
-endline
-line u:splay -visibility off
-  -65.70 -250.42
-  -85.23 -211.46
-endline
-line u:splay -visibility off
-  -65.70 -250.42
-  -64.95 -238.35
-endline
-line u:splay -visibility off
-  -65.70 -250.42
-  -76.75 -248.79
-endline
-line u:splay -visibility off
-  -65.70 -250.42
-  -88.56 -304.06
-endline
-line u:splay -visibility off
-  -65.70 -250.42
-  -66.03 -257.12
-endline
-line u:splay -visibility off
-  -65.70 -250.42
-  -229.81 -421.63
-endline
-line u:splay -visibility off
-  -65.70 -250.42
-  -189.57 -568.42
-endline
-line u:splay -visibility off
-  -211.88 -564.38
-  -121.77 -543.96
-endline
+point -852.5797 -236.3999 station -name 1
 
-point 196.85 -236.22 station -name "1"
-point 154.69 194.38 station -name "0"
-point -65.70 -250.42 station -name "2"
-point -211.88 -564.38 station -name "3"
-point -327.73 -555.65 station -name "4"
-point -553.11 -708.01 station -name "5"
-point 263.25 851.78 station -name "top"
+point -589.9797 -250.5499 station -name 2
 
+point -443.5797 -564.3498 station -name 3
+
+point -327.7297 -555.6498 station -name 4
+
+point -102.4797 -708.4499 station -name 5
+
+point 80.7203 -752.8999 station -name babylon_beach_17
 
 endscrap
+
 

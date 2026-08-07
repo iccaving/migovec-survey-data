@@ -1,241 +1,178 @@
-encoding utf-8
+encoding  utf-8
 ##XTHERION## xth_me_area_adjust -1154.2 -1795.6 762.5 885.9
 ##XTHERION## xth_me_area_zoom_to 25
 
-# 2026.07.22 created by TopoDroid v. 6.4.57
+
 
 scrap salome_upper_side_chamber-1s -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
-line wall
-  -64.94 -213.05
-  -66.26 -181.11
-  -66.26 -144.48
-  -66.26 -115.24
-  -61.82 -59.75
-  -56.75 -5.62
-  -53.38 64.93
-  -40.77 131.15
-  -31.16 193.83
-  -24.29 252.14
-  -19.59 300.65
-  -14.81 345.85
-  -7.03 379.81
-  -0.54 414.61
-  4.47 441.21
+line wall -subtype blocks
+  -562.7977 -528.8536
+  -395.9572 -660.427 -135.5231 -977.831 -55.4939 -1060.5731
+  24.5352 -1143.3151 64.1484 -1165.6552 131.9697 -1219.9123
+  199.7911 -1274.1694 320.9491 -1336.9167 432.1762 -1407.4509
+  smooth off
 endline
 
 line wall
-  560.49 211.89
-  567.76 258.62
-  572.57 302.65
-  578.54 347.16
-  579.11 390.09
-  581.91 428.69
-  583.28 469.01
-  583.59 504.63
-  583.59 529.84
+  182.9248 -322.0287
+  26.7421 -343.3301 -150.4438 -283.3403 -203.3445 -279.271
+  -256.2452 -275.2017 -276.5916 -258.9246 -322.2315 -211.5602
+  smooth off
+  -360.5645 204.4241 -376.1817 232.8189 -384.7001 300.9665
+  -393.2186 369.1141 -420.1937 557.9397 -411.6752 603.3714
+  -403.1567 648.8032 -390.3791 680.0375 -444.3293 712.6915
+  -498.2794 745.3456 -579.1461 759.1389 -614.3971 763.0557
+  -649.6481 766.9725 -653.9209 777.6546 -655.7013 785.132
+  smooth off
 endline
 
 line wall
-  570.08 -112.77
-  604.09 -84.56
-  641.45 -59.45
-  655.93 -6.74
-  662.51 45.58
-  662.51 95.28
-  643.41 154.08
-  627.49 193.83
-  603.17 227.99
+  -727.3832 778.5404
+  -730.9543 740.2947 -694.4866 725.6634 -818.2556 704.6669
+  -942.0246 683.6703 -967.4414 703.5618 -970.7567 619.5757
+  -974.0719 535.5896 -944.2348 315.6786 -954.1805 272.5805
+  -964.1262 229.4823 -1034.8514 194.1197 -1028.2209 107.9235
+  -1021.5904 21.7272 -1026.0107 -65.5741 -959.7059 -113.0926
+  -893.4011 -160.611 -883.4553 -202.6041 -867.9842 -266.6987
+  -852.5131 -330.7934 -841.4623 -389.3626 -753.0558 -429.1455
+  -664.6494 -468.9285 -705.0952 -496.2521 -564.75 -522.7741
+  smooth off
 endline
 
-line wall
-  619.70 227.03
-  574.20 240.51
-  565.22 279.60
-endline
-
-point 288.92 785.89 continuation
-
-line wall
-  -22.32 359.15
-  1.58 423.11
-  16.95 485.39
-  15.87 538.84
-  10.23 590.75
-  25.85 630.88
-  38.85 671.08
-  49.19 722.82
-  87.94 748.43
-  141.50 760.85
-  183.26 760.39
-  240.03 756.54
-  298.49 748.11
-  342.55 733.15
-  386.17 713.24
-  433.48 697.97
-  480.73 694.87
-  534.72 694.17
-  573.25 682.34
-  579.23 634.55
-  581.03 592.75
-  581.03 545.16
-  581.03 484.20
-  581.03 432.29
-  581.03 404.92
-endline
-
-line wall
-  532.35 -140.00
-  514.64 -205.41
-  489.24 -307.71
-  462.19 -366.24
-  412.88 -409.08
-  353.01 -440.57
-  272.04 -462.78
-  223.94 -497.36
-  169.75 -531.68
-  82.26 -537.91
-  36.68 -548.82
-endline
-
-line wall
-  64.01 -569.26
-  5.83 -571.98
-  -65.51 -571.98
-  -78.97 -638.76
-  -88.50 -714.52
-  -88.50 -775.01
-  -151.89 -815.37
-  -212.42 -849.98
-  -255.33 -894.29
-  -303.83 -932.10
-  -360.84 -976.71
-  -401.94 -1019.93
-  -419.40 -1077.55
-  -438.45 -1144.77
-  -454.15 -1226.95
-  -461.61 -1315.16
-  -469.08 -1390.79
-endline
-
-line wall
-  -412.82 -1393.73
-  -484.61 -1414.09
-  -602.96 -1457.17
-  -709.89 -1489.13
-  -774.76 -1546.24
-  -878.62 -1602.07
-  -951.86 -1643.42
-  -1023.99 -1686.04
-  -1054.15 -1695.57
-endline
-
+point -680.56 785.89 continuation
 
 line u:splay -visibility off
-  196.85 -236.22
-  87.42 -324.47
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  86.28 -324.25
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  85.54 -324.55
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  108.19 -305.37
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  84.29 -323.37
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  -8.74 -220.96
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  19.84 23.29
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  370.04 609.72
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  379.66 613.10
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  387.98 594.71
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  228.98 519.11
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  258.59 105.26
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  234.52 -213.65
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  442.52 -165.97
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  544.64 52.14
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  448.06 -201.67
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  298.29 -255.02
-endline
-line u:splay -visibility off
-  196.85 -236.22
-  388.86 -372.32
-endline
-line u:splay -visibility off
-  50.08 -321.88
-  4.39 -335.28
-endline
-line u:splay -visibility off
-  50.08 -321.88
-  44.90 -325.41
-endline
-line u:splay -visibility off
-  50.08 -321.88
-  46.79 18.90
-endline
-line u:splay -visibility off
-  50.08 -321.88
-  39.21 -218.63
-endline
-line u:splay -visibility off
-  50.08 -321.88
-  28.32 -438.43
-endline
-line u:splay -visibility off
-  50.08 -321.88
-  8.36 -410.18
-endline
-line u:splay -visibility off
-  50.08 -321.88
-  87.49 -406.77
+  -588.49 -236.22
+  -479.06 -324.47
 endline
 
-point 196.85 -236.22 station -name "0"
-point 50.08 -321.88 station -name "1"
-point -824.56 -1401.92 station -name "2"
+line u:splay -visibility off
+  -588.49 -236.22
+  -477.92 -324.25
+endline
 
+line u:splay -visibility off
+  -588.49 -236.22
+  -477.18 -324.55
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -499.83 -305.37
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -475.93 -323.37
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -382.9 -220.96
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -411.48 23.29
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -761.68 609.72
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -771.3 613.1
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -779.62 594.71
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -620.62 519.11
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -650.23 105.26
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -626.16 -213.65
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -834.16 -165.97
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -936.28 52.14
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -839.7 -201.67
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -689.93 -255.02
+endline
+
+line u:splay -visibility off
+  -588.49 -236.22
+  -780.5 -372.32
+endline
+
+line u:splay -visibility off
+  -441.72 -321.88
+  -396.03 -335.28
+endline
+
+line u:splay -visibility off
+  -441.72 -321.88
+  -436.54 -325.41
+endline
+
+line u:splay -visibility off
+  -441.72 -321.88
+  -438.43 18.9
+endline
+
+line u:splay -visibility off
+  -441.72 -321.88
+  -430.85 -218.63
+endline
+
+line u:splay -visibility off
+  -441.72 -321.88
+  -419.96 -438.43
+endline
+
+line u:splay -visibility off
+  -441.72 -321.88
+  -400.0 -410.18
+endline
+
+line u:splay -visibility off
+  -441.72 -321.88
+  -479.13 -406.77
+endline
+
+point -588.49 -236.22 station -name 0
+
+point -441.72 -321.88 station -name 1
+
+point 432.92 -1401.92 station -name 2
 
 endscrap
+
 
