@@ -23,11 +23,11 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	join ttt-1p@ttt prima2p_5@prima2
 	join zima00p_1@zima00 ttt-6p@ttt
-	# join s1_l1@prima2:0 s7_l4@prima1:end
-	# join s1_l1@prima2:end s7_l3@prima1:end
+	join s1_l1@prima2:0 s7_l4@prima1:end
+	join s1_l1@prima2:end s7_l3@prima1:end
 	join ttt-1e@ttt zima00-3e@zima00
 
-	# join prima1-2e@prima1 prima2-2e@prima2
+	join prima1-2e@prima1 prima2-2e@prima2
 
 	###______________2001_____________ ###
 
@@ -173,8 +173,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join terminusp_1@terminus quantum_statep_1@quantum_state
 
 	join the_stile-2p@the_stile cattlegrid-2p@cattlegrid
-	#join s1_l1@the_stile:0 s1_l4@smer0:end
-	#join s1_l2@the_stile:end s1_l5@smer0:0
+	join s1_l1@the_stile:0 s1_l4@smer0:end
+	join s1_l2@the_stile:end s1_l5@smer0:0
 	join s1_l4@the_stile:end s4_l3@galerija:0
 	join s1_l3@the_stile:0 s4_l1@galerija:end
 
@@ -477,10 +477,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 8@come_up_smiling 23@cattlegrid
 	equate 30@prima2 7@upper_escape
 
-	join l2@dysentery:0 l2a@more_like_welding:0
+	join l1@dysentery:end l1@more_like_welding:0
 	join l3@dysentery:0 l3@more_like_welding:end
-	join l1@more_like_welding:0 l1@dysentery:end
-	join l2@more_like_welding:end l2@dysentery:end
 	join odessey-1p@odessey power_grab-1p@power_grab
 	join come_up_smiling-1p@come_up_smiling come_up_smiling_2-1p@come_up_smiling_2
 	join lost_in_a_dream-1e@lost_in_a_dream lost_in_a_dream_2-1e@lost_in_a_dream_2
@@ -488,7 +486,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join lost_in_a_dream_2-1e@lost_in_a_dream_2 penny_falls-1e@penny_falls
 	join penny_falls-1e@penny_falls penny_falls_2-1e@penny_falls_2
 	join tiger_tiger-1e@tiger_tiger deeper_than_most-1e@deeper_than_most
-	join canticle_for_migovec-1e@canticle_for_migovec testify-2e@testify
+	join canticle_for_migovec-1e1@canticle_for_migovec testify-2e@testify
 	join pivnica_resurvey-1e@pivnica_resurvey snakebite-1e@snakebite
 	join snakebite-1e@snakebite snakebitetwo-1e@snakebitetwo
 	join snakebitetwo-1e@snakebitetwo ave_maria-1e@ave_maria
@@ -545,8 +543,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 
 	join the_aqueduct-2p@the_aqueduct ad_aspera_per_aqua-1p@ad_aspera_per_aqua
-	#join l1@klic_globin l1@artemis
-	#join l2@klic_globin l2@artemis
+	join l1@klic_globin l1@artemis
+	join l2@klic_globin l2@artemis
 	join klic_globin-3p@klic_globin artemis-1p@artemis
 	join artemis-1p@artemis tartarus-1p@tartarus
 	join artemis-3p@artemis poseidon_rift-3p@poseidon_rift

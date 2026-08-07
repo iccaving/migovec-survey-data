@@ -103,8 +103,9 @@ survey testify
 		13	14	5.89	66	-1
 		extend left
 		14	15	5.04	31	4
-		extend vertical
+		extend left
 		15	16	4.20	62	-4
+		extend left
 		16	17	5.10	18	-1
 		extend left
 		17	18	3.74	52	-10
@@ -118,8 +119,9 @@ survey testify
 		22	21	3.66	163	-3
 		extend left
 		22	23	4.40	33	12
-		extend vertical
+		extend left
 		23	24	5.36	80	-15
+		extend left
 		24	25	3.70	60	2
 		extend left
 		25	26	5.61	38	20
@@ -142,33 +144,44 @@ survey testify
 		32	33	4.44	79	22
 		extend left
 		33	34	6.68	43	-1
-		extend vertical
-		34	35	7.14	84	9
-		extend right
-		35	36	4.36	346	12
 		extend left
+		34	35	7.14	84	9
+		extend left
+		35	36	4.36	346	12
+		extend right
 		37	38	3.14	249	-5
+		extend right
 		38	39	3.52	206	-12
+		extend right
 		39	40	2.62	256	-3
 		
 		#There is no 27
 		#37 is PSS cairn by upstream inlet
 		
 		#Page 4
-		extend left
-		40	36	2.42	227	-6
 		extend right
-		35	41	2.30	42	35
-		41	42	3.85	134	31
-		42	43	3.90	51	24
-		43	44	4.05	359	-6
-		44	45	3.62	341	15
-		45	46	4.92	12	-1
-		46	47	2.90	51	7
-		47	48	4.80	80	0
-		48	49	5.12	112	30
+		40	36	2.42	227	-6
 		extend left
+		35	41	2.30	42	35
+		extend left
+		41	42	3.85	134	31
+		extend left
+		42	43	3.90	51	24
+		extend left
+		43	44	4.05	359	-6
+		extend left
+		44	45	3.62	341	15
+		extend left
+		45	46	4.92	12	-1
+		extend left
+		46	47	2.90	51	7
+		extend left
+		47	48	4.80	80	0
+		extend left
+		48	49	5.12	112	30
+		extend right
 		49	50	3.01	144	8
+		extend right
 		50	51	4.65	120	4
 		extend vertical
 		51	52	2.49	82	16
@@ -176,25 +189,37 @@ survey testify
 		#45 is PSS cairn where streamways converge
 		
 		#Page 5
-		extend left
-		52	53	4.44	112	9
-		53	54	6.16	87	13
-		54	55	3.84	214	8
-		55	56	7.47	233	-11
-		56	57	2.53	200	8
-		57	58	3.85	250	-16
-		58	59	2.93	277	-22
 		extend right
+		52	53	4.44	112	9
+		extend right
+		53	54	6.16	87	13
+		extend right
+		54	55	3.84	214	8
+		extend right
+		55	56	7.47	233	-11
+		extend right
+		56	57	2.53	200	8
+		extend right
+		57	58	3.85	250	-16
+		extend right
+		58	59	2.93	277	-22
+		extend left
 		59	60	4.19	327	-14
+		extend left
 		60	61	1.84	265	-9
+		extend left
 		61	62	6.21	334	-12
+		extend left
 		62	63	3.85	260	-13
+		extend left
 		63	64	2.20	297	-2
+		extend left
 		64	45	2.77	300	-10
+		extend left
 		55	65	4.20	45	-9
 		extend vertical
 		65	66	28.91	-	up
-		extend right
+		extend left
 		66	67	1.77	26	-48
 		
 		#55 is PSS cairn near bottom of pitch
