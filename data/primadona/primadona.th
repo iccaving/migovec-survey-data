@@ -779,7 +779,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join sparkle_L3@sparkle_highway:end loosely_L1@loosely_horsey:0
 	join sparkle_L4@sparkle_highway:0 loosely_L2@loosely_horsey:end
 	join line2@blues_and_twos:end daddy_L2@the_big_daddy:0
-	join line3@blues_and_twos:0 daddy_L1@the_big_daddy:end
+	join line4@blues_and_twos:0 daddy_L1@the_big_daddy:end
 	join loompa_land-1e@loompa_land 2_loompa_2_land-1e@2_loompa_2_land
 	join 2_loompa_2_land-3e@2_loompa_2_land loompa_land_tolmin_drift-1s@loompa_land_tolmin_drift
 	join down_the_rabbit_hole-1e@down_the_rabbit_hole alice_in_waterland-1e@alice_in_waterland
@@ -841,6 +841,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join babylon_beach-1s@babylon_beach bones_of_babylon-1e@bones_of_babylon
 	join babylon_beach-1s@babylon_beach sunshine_shaft-1s@sunshine_shaft
 	join the_rivers_of_babylon-1s@the_rivers_of_babylon salome-1s@salome
+	join first_contact-1s@first_contact blues_and_twos-1e@blues_and_twos
+	join loosely_horsey-1e@loosely_horsey unhappy_horsey-1s@unhappy_horsey
 
 	#Temp unsorted
 	join SV_L1@salome S0_L1@smer0_and_salome_viados_resurvey

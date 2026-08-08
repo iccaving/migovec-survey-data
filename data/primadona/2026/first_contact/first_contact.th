@@ -3,6 +3,18 @@ encoding utf-8
 
 survey first_contact -title "first contact"
 
+  # input "first_contact-1p.th2"
+  input "first_contact-1s.th2"
+
+  # map m1p -projection plan
+  #   first_contact-1p
+    #   first_contact-1p1
+    #   first_contact-1p2
+  # endmap
+  map m-all-e -projection extended
+    first_contact-1s
+  endmap
+
   centerline
     date 2026.07.22 
     # team TB KV 
@@ -315,17 +327,4 @@ survey first_contact -title "first contact"
     17 18 2.49 169.8 -20.1
     18 19 8.03 152.4 1.7
   endcenterline
-
-  # input "first_contact-1p.th2"
-  # input "first_contact-1s.th2"
-
-  # map m1p -projection plan
-  #   first_contact-1p
-    #   first_contact-1p1
-    #   first_contact-1p2
-  # endmap
-  # map m1s -projection extended
-  #   first_contact-1s
-  # endmap
-
 endsurvey

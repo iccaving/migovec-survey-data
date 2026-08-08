@@ -3,6 +3,16 @@ encoding utf-8
 
 survey unhappy_horsey -title "Unhappy Horsey"
 
+  # input "Unhappy_Horsey-1p.th2"
+  input "unhappy_horsey-1s.th2"
+
+  # map m1p -projection plan
+  #   Unhappy_Horsey-1p
+  # endmap
+  map m-all-e -projection extended
+    unhappy_horsey-1s
+  endmap
+
   centerline
     date 2026.07.22 
     # team CH,TP 
@@ -11,16 +21,15 @@ survey unhappy_horsey -title "Unhappy Horsey"
     data normal from to length compass clino
     extend left
     0 1 1.40 258.7 -54.4
-    extend right
-    1 . 4.25 330.9 -1.8
     # extend auto
+    1 . 4.25 330.9 -1.8
     1 . 0.93 44.8 -1.4
     1 . 0.85 35.5 -71.0
     1 . 1.74 45.0 65.7
     1 . 4.28 138.5 2.6
     1 . 1.75 109.9 24.5
     1 . 2.37 103.9 47.1
-    extend left
+    extend right
     1 2 3.88 145.0 3.2
     # extend auto
     2 . 3.09 40.1 -2.3
@@ -43,7 +52,7 @@ survey unhappy_horsey -title "Unhappy Horsey"
     4 . 1.04 107.7 10.4
     4 . 1.34 90.5 11.1
     4 . 1.88 61.8 13.5
-    extend left
+    extend right
     4 5 5.00 74.1 7.9
     # extend auto
     5 . 3.10 258.7 -1.0
@@ -58,7 +67,7 @@ survey unhappy_horsey -title "Unhappy Horsey"
     5 . 4.42 39.0 58.4
     5 . 2.59 19.8 14.5
     5 . 2.52 19.7 14.5
-    extend left
+    extend right
     5 6 3.73 102.8 18.6
     # extend auto
     6 . 3.03 313.9 5.3
@@ -101,15 +110,4 @@ survey unhappy_horsey -title "Unhappy Horsey"
     9 10 1.61 191.3 38.6
     10 11 1.81 123.6 -17.2
   endcenterline
-
-  # input "Unhappy_Horsey-1p.th2"
-  # input "Unhappy_Horsey-1s.th2"
-
-  # map m1p -projection plan
-  #   Unhappy_Horsey-1p
-  # endmap
-  # map m1s -projection extended
-  #   Unhappy_Horsey-1s
-  # endmap
-
 endsurvey
