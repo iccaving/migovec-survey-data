@@ -3,6 +3,16 @@ encoding utf-8
 
 survey choss_hole_creek -title "choss hole creek"
 
+  # input "daddy_choss_creek-1p.th2"
+  input "choss_hole_creek-e.th2"
+
+  # map m1p -projection plan
+  #   daddy_choss_creek-1p
+  # endmap
+  map m-all-e -projection extended
+    choss_hole_creek-1e
+  endmap
+
   centerline
     date 2026.07.25 
     # team bh JP jj 
@@ -20,9 +30,9 @@ survey choss_hole_creek -title "choss hole creek"
     0 . 0.28 153.9 -27.9
     0 . 0.13 153.8 -28.0
     0 . 5.27 153.6 -28.4
-    extend left
-    0 1 4.97 150.2 3.2
     extend right
+    0 1 4.97 150.2 3.2
+    extend left
     0 2 2.49 333.0 -10.5
     # extend auto
     2 . 1.01 43.9 -89.2
@@ -50,7 +60,7 @@ survey choss_hole_creek -title "choss hole creek"
     2 . 1.56 165.3 21.4
     2 . 1.39 158.7 -5.1
     2 . 1.28 159.9 -14.5
-    extend right
+    extend left
     2 3 2.63 305.7 29.5
     # extend auto
     3 . 3.94 334.0 8.6
@@ -63,7 +73,7 @@ survey choss_hole_creek -title "choss hole creek"
     3 . 3.01 351.9 49.5
     3 . 2.89 225.9 -85.8
     3 . 0.22 59.8 1.7
-    extend right
+    extend left
     3 4 8.93 332.4 24.2
     # extend auto
     4 . 2.09 131.5 -3.5
@@ -82,7 +92,7 @@ survey choss_hole_creek -title "choss hole creek"
     4 . 2.13 201.4 -5.3
     4 . 1.94 215.8 -1.0
     4 . 2.50 179.8 0.1
-    extend left
+    extend right
     4 5 7.05 160.3 71.0
     # extend auto
     5 . 1.83 100.2 -24.1
@@ -122,11 +132,11 @@ survey choss_hole_creek -title "choss hole creek"
     6 . 4.73 320.6 70.6
     6 . 5.14 276.6 74.0
     5 . 2.83 98.5 0.4
-    extend ignore
-    5 7 2.89 98.7 0.8
+    #extend ignore
+    #5 7 2.89 98.7 0.8
     # extend auto
     5 . 2.90 98.6 0.8
-    extend vertical
+    extend right
     5 7 2.83 98.5 0.6
     # extend auto
     7 . 0.43 322.1 43.4
@@ -144,21 +154,10 @@ survey choss_hole_creek -title "choss hole creek"
     7 . 5.45 13.9 -29.4
     7 . 4.75 13.6 -29.1
     7 . 0.36 14.0 -29.4
-    extend right
+    extend left
     7 8 4.96 12.4 -29.2
     8 9 11.31 41.7 -53.4
     extend left
     9 10 5.15 252.3 -35.7
   endcenterline
-
-  # input "daddy_choss_creek-1p.th2"
-  # input "daddy_choss_creek-1s.th2"
-
-  # map m1p -projection plan
-  #   daddy_choss_creek-1p
-  # endmap
-  # map m1s -projection extended
-  #   daddy_choss_creek-1s
-  # endmap
-
 endsurvey
