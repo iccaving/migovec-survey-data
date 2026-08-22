@@ -7,12 +7,30 @@ survey hanging_gardens -title "Hanging Gardens"
   input "hanging_gardens-1p.th2"
   input "hanging_gardens-1s.th2"
 
+  map m1 -projection plan
+    hanging_gardens-2p
+  endmap
+  map m2 -projection plan
+    hanging_gardens-3p
+  endmap
+  map m3 -projection plan
+    hanging_gardens-4p
+  endmap
+
+  join pit1 l1
+  join pit1 l2
+
   map m-all-p -projection plan
     hanging_gardens-1p
-    hanging_gardens-1p1
-    hanging_gardens-1p2
-    hanging_gardens-1p3
-    hanging_gardens-1p4
+    break
+    hanging_gardens-2p
+    preview above m1
+    break
+    hanging_gardens-3p
+    preview above m2
+    break
+    hanging_gardens-4p
+    preview above m3
   endmap
   map m-all-e -projection extended
     hanging_gardens-1s

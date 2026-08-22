@@ -4,13 +4,19 @@ encoding utf-8
 survey the_gardened_hang -title "the gardened hang"
     # st 0 is 3rd last of HG 
 
-  # input "the_gardened_hang-1p.th2"
+  input "the_gardened_hang-p.th2"
   input "the_gardened_hang-1s.th2"
 
-  # map m1p -projection plan
-  #   the_gardened_hang-1p
-  #   the_gardened_hang-1p1
-  # endmap
+  map m1 -projection plan
+    the_gardened_hang-2p
+  endmap
+
+  map m-all-p -projection plan
+    the_gardened_hang-1p
+    break
+    the_gardened_hang-2p
+    preview above m1
+  endmap
   map m-all-e -projection extended
     the_gardened_hang-1s
   endmap

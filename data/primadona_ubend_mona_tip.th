@@ -65,5 +65,7 @@ survey primadona_ubend_mona_tip -title "<bf>Primadona, Mona tip, Ubend-571, Bell
 	# join Blood Tribute and Primadona
 	join TGH_L1@the_gardened_hang.blood_tribute:end SAL_L1@salome.primadona:0
   	join TGH_L2@the_gardened_hang.blood_tribute:0 SAL_L2@salome.primadona:end
+	join pL1@the_gardened_hang.blood_tribute pL2@salome.primadona
+	join pL2@the_gardened_hang.blood_tribute pL1@salome.primadona
 
 endsurvey

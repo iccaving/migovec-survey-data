@@ -28,7 +28,34 @@ layout custom_label
 				if (mode=1) or (mode=7):
 					interim labeloffset:=(u/8);
 				fi;
+
 				lab:=thelabel@#(txt, pos);
+
+				if known ATTR_pitch:
+					begingroup;
+
+						save pitch_box;
+						path pitch_box;
+
+						# Space between text and box
+						interim bboxmargin := 1bp;
+						
+						pitch_box :=
+							(bbox lab)
+							rotatedaround (pos,rot);
+
+						# White background
+						fill pitch_box
+							withcolor (0.8,0.8,0.7);
+
+						# Black border
+						draw pitch_box
+							withpen PenD
+							withcolor (0,0,0);
+
+					endgroup;
+				fi
+
 				if mode>1:
 					pickup PenD
 				fi;
@@ -53,11 +80,43 @@ layout custom_label
 				else:
 					process_label(pos,rot);
 				fi;
+				if known ATTR_pitch:
+
+					# Closed pitch: add strike-through
+					if ATTR_pitch = "closed":
+						thdrawoptions(withcolor (0.3,0,0));
+						draw
+							lab
+							rotatedaround (pos,rot)
+							_thop_;
+						thdrawoptions(withcolor (0.7,0.3,0.3));
+						save pitch_left, pitch_right;
+						pair pitch_left, pitch_right;
+						pitch_left :=
+							0.5[
+								llcorner lab,
+								ulcorner lab
+							];
+						pitch_right :=
+							0.5[
+								lrcorner lab,
+								urcorner lab
+							];
+						draw
+							(pitch_left -- pitch_right)
+							rotatedaround (pos,rot)
+							withpen pencircle scaled 0.6bp
+							_thop_;
+					fi;
+					# Reset drawing colour/options
+					thdrawoptions();
+				fi;
 			else:
 				# Metapost is expecting some sort of drawing so
 				# we just draw an empty string
 				lab:=thelabel@#("", pos);
 				process_label(pos,rot);
+
 			fi;
 		enddef;
 	endcode

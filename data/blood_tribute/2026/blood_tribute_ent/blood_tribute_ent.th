@@ -4,6 +4,18 @@ encoding utf-8
 survey blood_tribute_ent -title "Entrance"
     # actually Blood Tribute 
 
+  input "blood_tribute_ent-1p.th2"
+  input "blood_tribute_ent-1s.th2"
+
+  map m-all-p -projection plan
+    blood_tribute_ent-1p
+  endmap
+  map m-all-e -projection extended
+    blood_tribute_ent-1s
+    blood_tribute_ent-1s1
+  endmap
+  join blood_tribute_ent-1s blood_tribute_ent-1s1
+
   centerline
     date 2026.07.09 
     # team TB, TP, LA, JJ 
@@ -546,17 +558,4 @@ survey blood_tribute_ent -title "Entrance"
     19 20 1.48 320.0 31.8
     20 21 3.19 1.3 -6.8
   endcenterline
-
-  input "blood_tribute_ent-1p.th2"
-  input "blood_tribute_ent-1s.th2"
-
-  map m-all-p -projection plan
-    blood_tribute_ent-1p
-  endmap
-  map m-all-e -projection extended
-    blood_tribute_ent-1s
-    blood_tribute_ent-1s1
-  endmap
-  join blood_tribute_ent-1s blood_tribute_ent-1s1
-
 endsurvey
