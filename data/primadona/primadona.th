@@ -205,10 +205,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join e1_l4@TTTr e2_l2@zima00
 	join e1_l5@TTTr e1_l5@buckwheat
 	join e1_l6@TTTr e1_l6@buckwheat
-	join e1_l7@TTTr e1_l7@what_a_coincidence
-	join e1_l8@TTTr e1_l8@what_a_coincidence
-	join e1_l7_buck@buckwheat:end e1_l2@what_a_coincidence:0
-	join e1_l5@buckwheat:0 e1_l1@what_a_coincidence:end
+	#join e1_l7@TTTr e1_l7@what_a_coincidence
+	#join e1_l8@TTTr e1_l8@what_a_coincidence
+	#join e1_l7_buck@buckwheat:end e1_l2@what_a_coincidence:0
+	#join e1_l5@buckwheat:0 e1_l1@what_a_coincidence:end
 
 	join colony-1e@colony upside_down_chamber-1e@upside_down_chamber
 	join upside_down_chamber-1e@upside_down_chamber gamblers_ruin-1e@gamblers_ruin
