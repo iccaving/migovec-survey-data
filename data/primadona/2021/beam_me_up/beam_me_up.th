@@ -24,7 +24,9 @@ survey beam_me_up -title "beam me up"
    endmap
 
    join beam_me_up-1s beam_me_up-1s1
-   join beam_me_up-1s1 beam_me_up-1s2
+   #join beam_me_up-1s1 beam_me_up-1s2
+   join c1 c2
+   join c3 c4
    join beam_me_up-1s2 beam_me_up-1s
 
   centerline

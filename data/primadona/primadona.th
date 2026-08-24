@@ -63,7 +63,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join line4_prima1-2e@prima1:0 line2_risanke-1e@risanke:end
 
 	join line1_risa2-1e@risa2:0 line1_risanke-1e@risanke:end
-	join line2_risa2-1e@risa2:end line2_risanke-1e@risanke:0
+	join line2_risa2-1e@risa2 line2_risanke-1e@risanke
 
 	join galerija-2e@galerija galerija-1e@galerija
 	join drugi-2e@drugi prima1-1e@prima1
@@ -217,10 +217,12 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	#join smer0-0e@smer0 the_stile-s1@the_stile # Replaced with line joins
 	join smer0_L1@smer0:0 stile_L5@the_stile:end
 	join smer0_L5@smer0:end stile_L1@the_stile:0
-	join the_stile-s1@the_stile cattlegrid-3e@cattlegrid
-	join kvg_L7@galerija:end cattle_L2@cattlegrid:0
+	join stile_L5@the_stile:0 smer0_L2@smer0_and_salome_viados_resurvey:end
+	join stile_L6@the_stile:end smer0_L6@smer0_and_salome_viados_resurvey:0
+	join stile_L10@the_stile:end cattle_L11@cattlegrid:0
+	join stile_L11@the_stile:0 cattle_L10@cattlegrid:end
+	join kvg_L8@galerija:end cattle_L2@cattlegrid:0
 	join kvg_L5@galerija:0 stile_L1@the_stile:end
-	join kvg_L6@galerija:end stile_L2@the_stile:0
 	join galerija-2e@galerija quantum_state-1e@quantum_state
 	join quantum_state-1e@quantum_state terminus-1e@terminus
 	join what_a_disappointment-1e@what_a_disappointment what_a_coincidence-1e@what_a_coincidence
@@ -582,8 +584,9 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join power_grab-1p@power_grab electric_dreams-1p@electric_dreams
 	join power_grab-1e@power_grab electric_dreams-2e@electric_dreams
 	join power_grab-2e@power_grab electric_dreams-2e@electric_dreams
-	join forget_L1@forget_me_not:end kvg_L6@galerija:0
-	join forget_L2@forget_me_not:0 cattle_L1@cattlegrid:end
+	join forget_L2@forget_me_not:0 kvg_L9@galerija:end
+	join cattle_L1@cattlegrid:end kvg_L9@galerija:0
+	join forget_L3@forget_me_not:end stile_L2@the_stile:0
 	join forget_L3@forget_me_not:0 stile_L3@the_stile:end
 	join forget_L4@forget_me_not:end stile_L4@the_stile:0
 	
