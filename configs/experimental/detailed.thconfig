@@ -15,6 +15,8 @@ source "../scratch/testing.th"
 #----------------------------------------------------------------------------------|
 # input the layout files
 input "../../layouts/detailed-p.thl"
+#input "../../layouts/base-p.thl"
+#input "../../layouts/mods.thl"
 
 #----------------------------------------------------------------------------------|
 # select the relevant map definitions, and levels within those maps
@@ -24,6 +26,8 @@ select m-all-p@testing -map-level 0
 # export a PLAN view, using the LAYOUT overview1
 layout plan
 	copy detailed-p
+	#colour map-fg map:cave
+	colour map-fg altitude
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin"
 endlayout
 

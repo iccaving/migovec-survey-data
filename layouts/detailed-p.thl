@@ -6,6 +6,7 @@ input metapost/lines.thl
 input metapost/areas.thl
 input metapost/scalebar_arrow.thl
 input metapost/connection_marker.thl
+input metapost/label.thl
 
 layout detailed-p
 
@@ -16,6 +17,7 @@ layout detailed-p
   copy custom_arrow
   copy custom_scalebar
   copy connection_marker
+  copy custom_label
 
 
   ## general statements
@@ -24,7 +26,7 @@ layout detailed-p
   map-header -5 95 ne
   statistics topo-length off
   fonts-setup 6 7 10 12 14
-  symbol-hide point label
+  #symbol-hide point label
 
 
   ## survey lines and stations

@@ -4,12 +4,23 @@ encoding utf-8
 survey shark_tale -title "shark tale"
     # Canyon & series of short pitches down from top of singing rock. USE STATION 2 TO TIE IN CONTINUATION. IT IS FIRST BOLT OF HAMMERHEAD PITCH (PITCH 4 OF SHARKTALE). 
 
+ # input "shark_tale-1p.th2"
+  input "shark_tale-e.th2"
+
+  # map m1p -projection plan
+  #   shark_tale-1p
+  # endmap
+  map m-all-e -projection extended
+    shark_tale-1e
+  endmap
+
   centerline
     date 2026.07.11 
     # team RMS,LT,JC 
     units length meter
     units compass clino degree
     data normal from to length compass clino
+    extend left
     1 0 3.72 273.0 -79.6
     # extend auto
     1 . 0.40 350.7 80.7
@@ -19,7 +30,7 @@ survey shark_tale -title "shark tale"
     1 . 0.42 1.0 -53.8
     1 . 0.63 195.3 -71.5
     1 . 0.27 169.6 -54.7
-    extend vertical
+    extend right
     1 2 1.08 89.3 4.1
     # extend auto
     2 . 0.73 282.0 61.7
@@ -60,7 +71,7 @@ survey shark_tale -title "shark tale"
     3 . 3.04 221.2 -28.2
     3 . 1.74 223.8 -44.0
     3 . 0.81 226.1 -62.7
-    extend left
+    extend right
     3 4 2.12 154.5 61.0
     # extend auto
     4 . 0.63 311.0 -6.5
@@ -130,7 +141,7 @@ survey shark_tale -title "shark tale"
     7 . 4.45 317.9 87.2
     7 . 4.36 279.1 74.8
     7 . 2.72 264.8 64.4
-    extend vertical
+    extend right
     7 8 2.91 90.0 68.1
     # extend auto
     8 . 0.47 151.9 5.6
@@ -138,7 +149,7 @@ survey shark_tale -title "shark tale"
     8 . 0.39 215.0 7.8
     8 . 0.52 230.8 15.8
     8 . 0.38 275.0 14.1
-    extend vertical
+    extend right
     8 9 2.40 82.8 42.1
     # extend auto
     9 . 1.07 183.0 2.9
@@ -159,7 +170,7 @@ survey shark_tale -title "shark tale"
     9 . 1.71 282.7 -1.0
     9 . 0.15 288.5 -21.8
     9 . 1.38 307.2 -38.6
-    extend left
+    extend right
     9 10 4.65 128.1 5.5
     # extend auto
     10 . 1.79 54.2 0.7
@@ -174,7 +185,7 @@ survey shark_tale -title "shark tale"
     10 . 11.34 308.0 55.6
     10 . 7.31 327.7 65.8
     10 . 5.46 26.3 68.4
-    extend right
+    extend left
     10 11 1.32 355.2 -44.6
     # extend auto
     11 . 8.15 72.9 78.3
@@ -196,27 +207,17 @@ survey shark_tale -title "shark tale"
     flags duplicate
     12 13 1.37 28.4 -17.4
     13 14 2.31 25.4 30.2
-    extend vertical
+    extend right
     14 15 2.04 95.6 -14.1
-    extend left
+    extend vertical
     15 16 14.75 123.6 -48.1
+    extend right
     16 17 8.62 174.1 -2.6
     17 18 1.59 145.1 -25.1
-    extend right
     18 19 1.60 79.2 -10.2
     extend left
     19 20 2.80 188.5 0.3 
     flags not duplicate
   endcenterline
-
-  # input "shark_tail-1p.th2"
-  # input "shark_tail-1s.th2"
-
-  # map m1p -projection plan
-  #   shark_tail-1p
-  # endmap
-  # map m1s -projection extended
-  #   shark_tail-1s
-  # endmap
 
 endsurvey

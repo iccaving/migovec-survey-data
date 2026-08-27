@@ -24,6 +24,7 @@ select m-all-e@testing -map-level 0
 # export an EXTENDED ELEVATION view, using the LAYOUT overview1
 layout ee
 	copy detailed-e
+	colour map-fg map:cave
 	scale 1 500
 	map-comment "<lang:fr>Občina Tolmin, Slovenija<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin<lang:en>Tolmin, Julian Alps<br>Imperial College Caving Club<br>Jamarska sekcija PD Tolmin"
 endlayout

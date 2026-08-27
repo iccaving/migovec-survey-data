@@ -2,7 +2,7 @@ encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 1004.000000 1282.000000
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap mona_tip11-1p -projection plan -scale [0.0 0.0 500 1000.0 0.0 0.0 150 300]
+scrap mona_tip11-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line wall 
   63.1494 288.9253
@@ -50,7 +50,7 @@ point 66.0197 290.607 station -name 1
 endscrap
 
 
-scrap mona_tip11-2p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
+scrap mona_tip11-2p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line wall 
   699.0567 -132.7495
@@ -126,7 +126,7 @@ point 443.172 -10.083 station -name 13
 endscrap
 
 
-scrap mona_tip11-3Ap -projection plan -scale [0 0 96 0 0 0 250 0 inch]
+scrap mona_tip11-3Ap -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line contour 
   989.2767 -115.6471
@@ -228,7 +228,7 @@ endline
 endscrap
 
 
-scrap mona_tip11-3p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
+scrap mona_tip11-3p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 1153.89 154.121 u:flag -align l -attr text 5 -attr code 6
 point 1021.27 482.064 station -name 29
@@ -264,7 +264,7 @@ endline
 endscrap
 
 
-scrap mona_tip11-4p -projection plan -scale [0 0 90 0 0 0 250 0 inch]
+scrap mona_tip11-4p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 954.4748 433.2962 label -align bl -attr level 3 -scale l -text "Pravokotni svet"
 point 408.84 -38.8212 label -align bl -attr level 3 -scale l -text "Vzporedni svet"
