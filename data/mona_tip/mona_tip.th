@@ -28,14 +28,16 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 	#Scrap joins
 	join mona_tip2-1p@mona_tip2 mona_tip1-5p@mona_tip1
 	join mona_tip3p_2@mona_tip3 broken_hammer-1p@broken_hammer
-	join mona_tip1-s1@mona_tip1 mona_tip2-1e@mona_tip2
-	join mona_tip2-1e@mona_tip2 mona_tip3-1e@mona_tip3
-	join mona_tip3-1e@mona_tip3 broken_hammer-1e@broken_hammer
-	join mona_tip4-4e@mona_tip4 broken_hammer-2e@broken_hammer
 	join alkatraz_disto_resurvey-2p@alkatraz_disto_resurvey mona_tip4-5p@mona_tip4
 	join doubletime-1p@doubletime mona_tip4-5p@mona_tip4
 	join mona_tip4-1p@mona_tip4 broken_hammer-2p@broken_hammer
 	join mona_tip4-6p@mona_tip4 broken_hammer-2p@broken_hammer
+
+	join mona_tip1-s1@mona_tip1 mona_tip2-1e@mona_tip2
+	join mona_tip2-1e@mona_tip2 mona_tip3-1e@mona_tip3
+	join mona_tip3-1e@mona_tip3 broken_hammer-1e@broken_hammer
+	join mona_tip4-4e@mona_tip4 broken_hammer-2e@broken_hammer
+
 
 	#Line joins
 	#join s2_l2@mona_tip4:0 s2_l2@broken_hammer:0
@@ -84,6 +86,7 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 	join mona_tip9-1e@mona_tip9 mona_tip7-1e@mona_tip7
 	join mona_tip9-1e@mona_tip9 mona_tip6-1e@mona_tip6
 	join mona_tip7-1e@mona_tip7 mona_tip10-1e@mona_tip10
+	join mona_tip10-1e@mona_tip10 mona_tip11-1e@mona_tip11
 
 	######________________2016________________######
 	input "./2016/therock/therock.th"
@@ -134,12 +137,13 @@ survey mona_tip -title "Mona tip" -entrance 1@mona_tip1 -attr cadastral_n 10180
 	join wishing_well2-1p@wishing_well2 wishing_well-1p@wishing_well
 	join wishing_well-1p@wishing_well mona_tip11-3p@mona_tip11
 
-	join l1@wishing_well l1@mona_tip11
-	join l2@wishing_well l2@mona_tip11
+	#join l1@wishing_well l1@mona_tip11
+	#join l2@wishing_well l2@mona_tip11
 
-	join wishing_well-1e@wishing_well sad_face-1e@sad_face
+	#join wishing_well-1e@wishing_well sad_face-1e@sad_face
+	join L1@wishing_well L2@sad_face
+	join L2@wishing_well L1@sad_face
 	join mona_tip11-3e@mona_tip11 sad_face-1e@sad_face
-	join mona_tip11-3e@mona_tip11 mona_tip11-4e@mona_tip11
 
 	######________________2021________________######
 	input "./2021/extra_dunkel/extra_dunkel.th"

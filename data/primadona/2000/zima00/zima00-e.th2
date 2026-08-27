@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap zima00_1e -projection extended -scale [249.0 -714.0 545.0 -713.0 0.0 0.0 80 0.0 m]
+scrap zima00_1e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point -1045.6038 2273.2382 label -align r -attr level 1 -text TTT
 
@@ -240,7 +240,7 @@ endscrap
 
 
 
-scrap zima00-2e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+scrap zima00-2e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point -902.5465 736.5268 camp -scale s
 
@@ -346,7 +346,7 @@ endscrap
 
 
 
-scrap zima00-3e -projection extended -scale [0 0 90 0 0 0 250 0 inch]
+scrap zima00-3e -projection extended -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line wall:invisible
   -1750.6993 1040.9388

@@ -12,6 +12,9 @@ survey mona_tip11 -title "Monatip 11"
 		mona_tip11-5e
 	endmap
 	join mona_tip11-4e mona_tip11-5e
+	join mona_tip11-3e mona_tip11-4e
+	join mona_tip11-2e mona_tip11-3e
+	join mona_tip11-1e mona_tip11-2e
 
 	map m-all-p -projection plan
 		m4p
