@@ -479,7 +479,7 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	equate 8@come_up_smiling 23@cattlegrid
 	equate 30@prima2 7@upper_escape
 
-	join l1@dysentery:end l1@more_like_welding:0
+	join l1@dysentery:end l4@more_like_welding:0
 	join l3@dysentery:0 l3@more_like_welding:end
 	join odessey-1p@odessey power_grab-1p@power_grab
 	join come_up_smiling-1p@come_up_smiling come_up_smiling_2-1p@come_up_smiling_2

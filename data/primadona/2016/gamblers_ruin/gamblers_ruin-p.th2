@@ -17,11 +17,11 @@ scrap gamblers_ruin-1p -projection plan -scale [331.0 -735.0 536.0 -734.0 0.0 0.
 	
 	point 200 95 label -attr level 2 -scale l -text "Gambler's Ruin" -align t
 	
-	line label -text "Gambler's Ruin"
-		190.0 51.0
-		190.0 51.0 250.0 -39.0 303.5 -180.5
-		smooth off
-	endline
+	#line label -text "Gambler's Ruin"
+	#	190.0 51.0
+	#	190.0 51.0 250.0 -39.0 303.5 -180.5
+	#	smooth off
+	#endline
 	
 	line rock-border
 	endline

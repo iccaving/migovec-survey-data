@@ -1,20 +1,25 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 860.000000 1275.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 860.0 1275.0
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {134.0 1 1.0} {970.0 {}} ../../../../../../../../AchilleTalon/Documents/GitHub/migresurvey/data/ubend/2007/ubend_bathtub/bathtubp.gif 0 {}
 
-##XTHERION## xth_me_image_insert {134.000000 1 1.0} {970.000000 1} "/Users/AchilleTalon/Documents/GitHub/migresurvey/data/ubend/2007/ubend_bathtub/bathtubp.gif" 0 {}
+#line label -text Drainpipe
+#  414.0 774.0
+#  414.0 774.0 459.0 1035.0 578.0 1143.0
+#endline
 
-scrap bathtub-1p -scale [464.0 -48.0 546.0 -195.0 0.0 0.0 1.37 0.0 m]
+scrap bathtub-1p -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 615.0 924.0 station -name 3
+
 line pit -outline out
-  292.3838 527.6535
-  365.5943 407.7851
+  292.6019 527.3163
+  365.2882 408.183
 endline
 
 line wall -subtype invisible
-  634.3287 939.6124
-  580.0 944.0
+  634.419 939.5763
+  580.5235 943.9458
 endline
 
 line wall -id s1_l1
@@ -29,24 +34,22 @@ line wall -id s1_l1
   637.462 935.5535 634.3287 939.6124 634.3287 939.6124
 endline
 
-line contour 
-  645.0 650.0
-  645.0 650.0 538.0 739.0 506.0 738.0
+line contour
+  607.9001 679.2474
+  590.2239 692.6354 568.5217 708.3101 549.2466 719.9283
+  smooth off
 endline
 
-line contour 
-  728.0 787.0
-  728.0 787.0 607.0 797.0 586.0 788.0
+line contour
+  705.9239 788.6138
+  681.1282 790.2693 640.7402 792.4778 613.052 791.5269
+  smooth off
 endline
 
-line contour 
-  674.0 872.0
-  674.0 872.0 631.0 881.0 596.0 860.0
-endline
-
-line label -text Drainpipe
-  414.0 774.0
-  414.0 774.0 459.0 1035.0 578.0 1143.0
+line contour
+  655.2861 873.8393
+  642.3926 874.1757 624.5379 872.865 607.2986 865.6868
+  smooth off
 endline
 
 line wall -id s1_l2
@@ -60,9 +63,15 @@ line wall -id s1_l2
 endline
 
 point 181.0 341.0 station -name 1
+
 point 532.0 667.0 station -name 2
+
 point 532.0 667.0 station -name 3
+
 point 681.0 775.0 station -name 4
+
 point 615.0 924.0 station -name 5
+
 endscrap
+
 

@@ -6,9 +6,9 @@ survey cloacamaxima
 	map  m-all-e -projection extended
 		cloacamaxima-1e
 		break
-		cloacamaxima-3e
-		break
 		cloacamaxima-2e
+		break
+		cloacamaxima-3e
 		break
 		cloacamaxima-4e
 	endmap
@@ -147,7 +147,7 @@ survey cloacamaxima
 		35  34  5.07  142  -33
 		extend right
 		35  36  6.00  015  +17
-		extend left
+		extend vertical
 		37  36  3.54  204  -22
 		
 		#PAGE 4
@@ -155,9 +155,9 @@ survey cloacamaxima
 		37  38  1.96  305  +14
 		extend left
 		39  38  27.22  188  -14
-		extend right
+		extend vertical
 		39  40  8.58  013  +12
-		extend left
+		extend vertical
 		41  40  2.19  236  -16
 		extend right
 		41  42  9.08  020  +10

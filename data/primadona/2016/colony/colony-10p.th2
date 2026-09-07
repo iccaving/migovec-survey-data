@@ -200,11 +200,11 @@ line contour
   smooth off
 endline
 
-line label -text "Blue Danube"
-  -96.0 -492.0
-  -96.0 -880.0 296.0 -1100.0 296.0 -1100.0
-  smooth off
-endline
+#line label -text "Blue Danube"
+#  -96.0 -492.0
+#  -96.0 -880.0 296.0 -1100.0 296.0 -1100.0
+#  smooth off
+#endline
 
 point 596.0 -388.0 station -name "10"
 

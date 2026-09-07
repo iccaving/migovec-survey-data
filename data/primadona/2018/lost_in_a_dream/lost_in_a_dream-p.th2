@@ -44,10 +44,10 @@ line wall
   391.0 913.5 398.5 899.5 398.5 899.5
 endline
 
-line label -scale l -text "Lost in a Dream"
-  268.0 751.0
-  268.0 751.0 370.0 651.0 415.0 576.0
-endline
+#line label -scale l -text "Lost in a Dream"
+#  268.0 751.0
+#  268.0 751.0 370.0 651.0 415.0 576.0
+#endline
 
 area water
   l52-198-58
@@ -124,10 +124,10 @@ line wall -id s2_l4
   511.25 758.75 507.0 771.75 506.25 783.25
 endline
 
-line label -scale s -text "Freudian Slip"
-  424.25 741.25
-  424.25 741.25 465.0 767.75 480.5 792.5
-endline
+#line label -scale s -text "Freudian Slip"
+#  424.25 741.25
+#  424.25 741.25 465.0 767.75 480.5 792.5
+#endline
 
 area water
   l76-364-206

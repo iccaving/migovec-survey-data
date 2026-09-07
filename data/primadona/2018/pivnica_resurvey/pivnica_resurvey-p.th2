@@ -1,18 +1,24 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 929.000000 1013.500000
+##XTHERION## xth_me_area_adjust 0.0 0.0 929.0 1013.5
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap pivnica_resurvey-1p -projection plan -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m]
+
+
+scrap pivnica_resurvey-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 443.5 694.0 station -name 6
+
 point 462.5 684.5 station -name 5
+
 point 432.0 658.0 station -name 7
+
 point 513.0 716.0 station -name 2
+
 line wall -subtype invisible
-  670.0 773.0
+  669.5353 773.2957
   634.0 795.0
   589.0 753.0
-  615.0 733.0
+  614.662 733.5914
 endline
 
 line rock-border -close on
@@ -35,7 +41,7 @@ line rock-border -close on
   533.0 675.0
   525.0 681.5
   506.5 661.0
-  524.0 656.5
+  524.0403 656.9032
   533.0 675.0
 endline
 
@@ -55,22 +61,26 @@ line rock-border -close on
   479.0 693.5 473.0 703.5 473.0 703.5
 endline
 
-line wall 
-  464.5 496.0
-  464.5 496.0 460.99 525.1 463.5 537.0
+line wall
+  464.5342 496.4955
+  464.5342 496.4955 460.99 525.1 463.5 537.0
   467.5 556.0 469.5 577.0 470.5 584.5
   471.92 595.17 484.5 631.5 484.5 631.5
 endline
 
-line pit 
-  441.0 621.0
-  441.0 621.0 445.5 645.0 444.5 648.0
-  443.5 651.0 451.5 677.0 444.5 677.0
-  437.5 677.0 419.0 680.0 419.0 680.0
-  375.0 674.0
+line pit
+  444.5861 648.3118
+  443.9192 652.7227 445.574 655.4049 446.1282 659.7586
+  446.8087 664.8533 448.2471 670.2107 446.7742 675.2826
+  445.1153 678.3133 440.8897 676.5267 438.0692 677.4171
+  smooth off
+  431.5627 678.0158 425.0907 679.1823 418.6292 679.9484
+  smooth off
+  404.1487 677.9343 389.6681 675.9202 375.1876 673.9062
+  smooth off
 endline
 
-line wall 
+line wall
   481.0 709.0
   481.0 709.0 481.5 714.5 482.0 723.5
   482.6 734.31 453.5 707.5 453.5 707.5
@@ -84,25 +94,29 @@ line wall
   426.24 647.92 435.5 643.0 444.5 648.0
   453.5 653.0 449.5 620.5 450.5 617.5
   451.5 614.5 449.5 603.0 448.5 596.5
-  448.02 593.39 449.0 584.0 445.0 572.5
+  448.02 593.39 441.0571 544.7976 438.3861 543.3704
 endline
 
 line wall -subtype blocks
   615.0 733.0
-  615.0 733.0 598.22 736.08 594.5 730.5
-  590.5 724.5 588.5 731.5 582.5 726.5
-  576.5 721.5 558.0 722.5 550.5 718.0
-  541.22 712.43 522.0 713.0 512.0 707.0
-  502.0 701.0 499.4 694.0 488.0 694.0
-  477.0 694.0 481.0 709.0 481.0 709.0
+  608.7129 733.7976 601.7007 734.9749 595.866 731.8507
+  593.481 726.9427 588.7896 728.5869 584.5742 727.8613
+  579.9764 724.0753 573.9879 723.0406 568.2432 722.2394
+  561.1783 721.2047 553.8508 720.4093 547.6437 716.5849
+  535.5269 711.7707 521.3954 713.1496 510.2077 705.8652
+  503.7023 701.6537 498.4339 694.3846 490.0383 694.0801
+  484.8792 692.7527 479.963 696.9547 480.3202 702.2022
+  smooth off
+  480.2041 704.4845 480.4071 706.294 480.941 708.5129
+  smooth off
 endline
 
-line contour 
-  630.0 692.0
-  630.0 692.0 610.5 717.5 582.5 726.5
+line contour
+  615.7867 706.7558
+  607.5046 714.0254 596.0454 722.1396 582.6035 726.4602
 endline
 
-line wall 
+line wall
   484.5 631.5
   484.5 631.5 491.0 647.0 502.0 653.0
   513.0 659.0 544.0 653.0 556.0 666.0
@@ -115,12 +129,16 @@ line wall
 endline
 
 point 659.0 753.0 station -name 4
+
 point 659.0 753.0 station -name 3
+
 point 798.0 884.0 station -name 1
+
 endscrap
 
 
-scrap pivnica_resurvey-4p -projection plan -scale [0 0 96 0 0 0 2000 0 inch]
+
+scrap pivnica_resurvey-4p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line wall -subtype invisible
   370.5 589.5
@@ -129,9 +147,8 @@ line wall -subtype invisible
   342.5 607.0
 endline
 
-line wall 
-  445.0 572.5
-  445.0 572.5 443.0 548.0 438.0 543.0
+line wall
+  438.0 543.0
   433.0 538.0 419.5 544.5 418.0 543.0
   416.5 541.5 407.5 543.0 401.5 539.5
   395.5 536.0 396.0 539.0 386.5 533.5
@@ -145,7 +162,7 @@ line wall
   367.0 585.5 370.5 589.5 370.5 589.5
 endline
 
-line pit 
+line pit
   342.5 607.0
   342.5 607.0 322.5 582.0 330.5 581.0
   338.5 580.0 340.0 574.0 344.5 576.5
@@ -222,7 +239,7 @@ line rock-border -close on
   315.0 548.5 317.5 562.0 317.5 562.0
 endline
 
-line wall 
+line wall
   342.5 607.0
   342.5 607.0 300.5 590.0 297.5 589.0
   294.5 588.0 299.0 576.5 297.5 570.5
@@ -260,73 +277,73 @@ line wall
   461.0 488.0 464.5 496.0 464.5 496.0
 endline
 
-line contour 
+line contour
   346.0 436.5
   346.0 436.5 367.0 503.0 368.5 519.5
   370.0 536.0 370.0 539.5 370.0 539.5
 endline
 
-line contour 
+line contour
   309.0 385.5
   309.0 385.5 316.0 398.0 315.5 408.0
 endline
 
-line contour 
+line contour
   302.5 533.5
   302.5 533.5 323.5 520.0 353.5 529.0
 endline
 
-line contour 
+line contour
   323.0 437.5
   323.0 437.5 352.5 508.0 353.5 522.0
 endline
 
-line contour 
+line contour
   315.0 383.0
   315.0 383.0 326.0 403.0 326.5 409.0
 endline
 
-line contour 
+line contour
   334.0 385.5
   334.0 385.5 339.5 402.5 340.5 412.5
 endline
 
-line contour 
+line contour
   348.5 390.5
   348.5 390.5 356.5 415.5 355.5 419.5
 endline
 
-line contour 
+line contour
   367.0 402.0
   367.0 402.0 370.5 426.0 369.5 428.0
 endline
 
-line contour 
+line contour
   441.5 481.5
   441.5 481.5 442.5 525.5 438.0 543.0
 endline
 
-line contour 
+line contour
   426.0 464.5
   425.5 466.0 434.5 507.0 431.5 542.0
 endline
 
-line contour 
+line contour
   401.5 430.5
   401.5 430.5 420.5 523.5 418.0 543.0
 endline
 
-line contour 
+line contour
   386.0 458.5
   386.0 458.5 403.0 520.0 401.5 539.5
 endline
 
-line contour 
+line contour
   358.5 437.5
   358.5 437.5 379.0 512.5 376.5 524.0
 endline
 
-line contour 
+line contour
   336.0 435.5
   336.0 435.5 357.5 497.0 358.5 518.5
 endline
@@ -336,29 +353,37 @@ line gradient -scale s
   306.0 393.5
 endline
 
-line gradient 
+line gradient
   415.0 479.5
   341.5 467.0
 endline
 
-line gradient 
+line gradient
   429.5 520.5
   352.5 504.5
 endline
 
 point 336.5 562.0 passage-height -align t -value 3
+
 point 384.0 491.0 passage-height -align t -value 5
+
 point 319.5 472.0 passage-height -align t -value 3
+
 point 272.0 340.0 passage-height -align t -value 1
+
 point 443.5 694.0 station -name 6
+
 point 462.5 684.5 station -name 5
+
 point 432.0 658.0 station -name 7
+
 endscrap
 
 
-scrap pivnica_resurvey-2p -projection plan -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m]
 
-line wall 
+scrap pivnica_resurvey-2p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line wall
   352.5 251.0
   352.5 251.0 375.097 252.4356 375.4996 252.5027
   375.9022 252.5698 392.4763 251.9659 392.8118 251.8317
@@ -376,7 +401,7 @@ line wall
   446.8955 191.843 452.3978 189.9641 452.3978 189.9641
 endline
 
-line wall 
+line wall
   459.5106 196.3388
   459.5106 196.3388 453.5386 199.0228 452.7333 199.4254
   451.9281 199.8281 446.4258 203.0489 445.9561 203.8541
@@ -407,7 +432,7 @@ line wall
   612.0992 322.6237
 endline
 
-line wall 
+line wall
   608.61 330.81
   608.61 330.81 606.4627 325.1735 605.9259 324.3683
   605.3891 323.5631 599.8868 317.7924 596.1291 318.4634
@@ -431,66 +456,73 @@ line wall
   339.399 263.4402 337.7886 261.1588 337.7886 261.1588
 endline
 
-line floor-step 
+line floor-step
   429.0 198.0
   429.0 198.0 449.0 198.5 450.0 202.0
 endline
 
-line floor-step 
+line floor-step
   432.0 222.0
   432.0 222.0 440.5 224.0 444.0 235.0
 endline
 
-line floor-step 
+line floor-step
   409.5 243.5
   409.5 243.5 430.0 246.0 445.0 255.0
 endline
 
-line floor-step 
+line floor-step
   542.5 344.0
   542.5 344.0 574.0 360.0 578.5 379.0
 endline
 
-line floor-step 
+line floor-step
   505.0 322.0
   505.0 322.0 523.0 344.0 500.0 372.0
   477.0 400.0 457.5 399.5 457.5 399.5
 endline
 
-line floor-step 
+line floor-step
   557.0 323.0
   557.0 323.0 570.5 331.0 573.5 353.0
 endline
 
-line floor-step 
+line floor-step
   393.0 239.0
   393.0 239.0 381.5 259.0 390.5 264.0
   399.5 269.0 420.5 259.0 425.5 268.0
   430.5 277.0 411.0 298.0 430.5 293.5
 endline
 
-line floor-step 
+line floor-step
   478.0 295.0
   478.0 295.0 499.0 331.0 454.0 358.0
 endline
 
-point 616.5 330.0 water-flow -align tr -orientation 238.70001053358106 -scale s
-point 463.0 183.5 water-flow -align br -orientation 321.29997004052854 -scale s
+point 616.5 330.0 water-flow -orientation 238.7 -align tr -scale s
+
+point 463.0 183.5 water-flow -orientation 321.3 -align br -scale s
+
 point 353.0 264.0 station -name 9
+
 point 405.0 301.0 station -name 8
+
 endscrap
 
 
-scrap pivnica_resurvey-3p -projection plan -scale [274.0 -131.0 699.0 -131.0 0.0 0.0 10.795 0.0 m]
+
+scrap pivnica_resurvey-3p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 320.0 238.5 station -name 10
+
 point 211.0 156.5 station -name 12
-line floor-step 
+
+line floor-step
   279.0 190.0
   279.0 190.0 283.5 193.5 280.5 205.5
 endline
 
-line floor-step 
+line floor-step
   245.0 154.0
   245.0 154.0 248.0 175.5 247.5 180.0
   247.0 184.5 245.5 192.0 248.5 198.0
@@ -500,7 +532,7 @@ line floor-step
   241.0 222.0 228.0 231.5 228.0 231.5
 endline
 
-line floor-step 
+line floor-step
   307.0 196.5
   307.0 196.5 304.0 210.0 308.0 217.5
   312.0 225.0 314.0 227.5 315.5 228.5
@@ -510,14 +542,14 @@ line floor-step
   301.5 235.0 293.0 241.5 293.0 241.5
 endline
 
-line floor-step 
+line floor-step
   280.5 205.5
   287.0 214.5
   287.0 214.5 287.0 221.5 285.0 222.5
   283.0 223.5 279.5 229.0 279.5 229.0
 endline
 
-line floor-step 
+line floor-step
   262.5 203.0
   262.5 203.0 268.5 204.5 269.5 206.0
   270.5 207.5 271.0 209.5 270.5 211.5
@@ -525,26 +557,26 @@ line floor-step
   266.0 217.0 261.5 222.0 261.5 222.0
 endline
 
-line floor-step 
+line floor-step
   250.5 164.5
   250.5 164.5 261.5 173.5 262.5 203.0
 endline
 
-line pit 
+line pit
   229.5 154.0
   229.5 154.0 229.0 168.5 229.0 176.0
   229.0 183.5 228.5 191.5 227.5 200.0
   226.5 208.5 217.0 218.5 217.0 218.5
 endline
 
-line pit 
+line pit
   213.0 205.0
   213.0 205.0 214.0 202.5 213.0 194.5
   212.0 186.5 207.0 178.0 207.0 168.0
   207.0 158.0 206.2139 146.6474 206.2139 146.6474
 endline
 
-line wall 
+line wall
   206.2139 146.6474
   208.2638 148.3932 213.4513 144.6502 215.8154 145.939
   222.6368 149.6578 222.0984 151.6382 229.5 154.0
@@ -571,7 +603,7 @@ line label -attr level 3 -scale xl -text Pivnica
   130.0 192.5 219.5 289.5 333.0 322.0
 endline
 
-line wall 
+line wall
   337.0 261.0
   337.0 261.0 335.9128 260.0188 335.2981 259.6271
   334.5786 259.1686 333.6605 259.0402 333.0 258.5
@@ -593,5 +625,7 @@ line wall
 endline
 
 point 236.0 160.5 station -name 11
+
 endscrap
+
 

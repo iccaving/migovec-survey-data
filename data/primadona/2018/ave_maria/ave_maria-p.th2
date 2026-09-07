@@ -37,10 +37,10 @@ line pit
   586.0 559.0
 endline
 
-line label -text "Ave Maria" -scale s
-  243.0 345.0
-  243.0 345.0 330.0 440.0 380.0 515.0
-endline
+#line label -text "Ave Maria" -scale s
+#  243.0 345.0
+#  243.0 345.0 330.0 440.0 380.0 515.0
+#endline
 
 line wall 
   586.0 559.0

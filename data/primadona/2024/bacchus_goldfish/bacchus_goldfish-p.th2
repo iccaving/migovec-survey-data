@@ -1,40 +1,50 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 500.000000 1000.000000
+##XTHERION## xth_me_area_adjust 0.0 0.0 500.0 1000.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
-scrap bacchus_goldfish-1p -projection plan -scale [0.0 0.0 500 1000.0 -250 -500 250 500]
+
+scrap bacchus_goldfish-1p -projection plan -scale [0 0 39.3701 0 0 0 1 0 m]
 
 point 406.9108 638.5076 label -align l -attr level 4 -scale xs -text "Upper levels<br>in rift unexplored"
-point 194.0481 378.3043 water-flow -orientation 164.989170666
+
+point 194.0481 378.3043 water-flow -orientation 164.989
+
 point 298.004 605.6117 label -align l -attr level 4 -scale xs -text "Cross Rift at floor <br>level with blank space"
-line wall -close on
-  313.6609 584.9301
-  314.9964 585.8667
+
+line rock-border -close on
+  314.2423 583.3959
   316.1415 583.8532
+  314.9964 585.8667
+  313.6609 584.9301
   314.2423 583.3959
 endline
 
-line wall -close on
+line rock-border -close on
   303.6435 618.5771
   302.7179 614.5894
   305.4946 612.9104
   305.1347 615.8487
   303.6949 618.8394
+  303.6435 618.5771
 endline
 
-line wall -close on
-  302.8207 622.6172
-  306.1631 622.4597
-  307.6029 619.2067
-  307.1915 615.2191
+line rock-border -close on
+  304.3633 620.9382
   305.546 618.5246
+  307.1915 615.2191
+  307.6029 619.2067
+  306.1631 622.4597
+  302.8207 622.6172
   304.3633 620.9382
 endline
 
 point 373.0456 716.9309 label -align l -attr level 4 -scale xs -text "10m pitch down as rift opens out<br>+ possible passage opposite"
-point 331.9763 705.9395 continuation 
+
+point 331.9763 705.9395 continuation
+
 point 245.6382 595.5012 label -align l -attr level 2 -text "Bacchus'<br>Goldfish"
+
 line rock-border -close on
   353.1132 633.9914
   349.0187 628.9871
@@ -42,6 +52,7 @@ line rock-border -close on
   354.9329 621.1881
   359.9373 626.3224
   362.407 628.0772
+  353.1132 633.9914
 endline
 
 line rock-border -close on
@@ -50,6 +61,7 @@ line rock-border -close on
   354.7882 645.3649
   345.6244 636.5261
   336.2657 646.9897
+  335.4858 654.6587
 endline
 
 line rock-border -close on
@@ -67,14 +79,15 @@ line rock-border -close on
   341.335 653.7488
   336.3307 656.9334
   340.5551 660.183
+  341.205 663.8875
 endline
 
-line ceiling-meander 
+line ceiling-meander
   328.9575 613.7296
   348.2484 648.7704
 endline
 
-line contour 
+line contour
   350.3038 640.0356
   350.3038 640.0356 345.1045 626.7774 343.6747 623.1378
   342.2449 619.4983 330.0265 618.4585 328.3367 618.4585
@@ -84,6 +97,7 @@ line rock-border -close on
   213.3272 374.4485
   214.0625 374.0809 220.4963 368.3823 220.4963 368.3823
   208.4559 365.7169
+  213.3272 374.4485
 endline
 
 line rock-border -close on
@@ -92,14 +106,20 @@ line rock-border -close on
   195.4963 374.6323 207.4449 367.5552 207.9044 367.5552
   208.364 367.5552 211.9485 376.1948 211.9485 376.1948
   211.1213 389.7978
+  204.8713 385.8456
 endline
 
 point 165.47 361.61 station -name 14
+
 point 183.58 342.4 station -name 15
+
 point 176.97 324.84 station -name 16
+
 point 206.42 283.74 station -name 17
+
 point 165.47 272.72 station -name 18
-line wall 
+
+line wall
   218.9711 350.7132
   218.6915 351.6671 224.5648 376.5525 224.325 379.1704
   224.1393 381.1965 221.4908 394.368 220.5809 395.9278
@@ -116,7 +136,7 @@ line wall
   313.2262 573.7769
 endline
 
-line wall 
+line wall
   320.4728 580.276
   320.4728 580.276 319.6604 581.7058 319.5304 581.9333
   319.4004 582.1608 318.8155 583.7855 318.8155 584.3055
@@ -137,7 +157,7 @@ line wall
   364.407 694.6934 364.5369 695.8633 364.5369 695.8633
 endline
 
-line wall 
+line wall
   299.1556 628.0122
   298.8956 625.2826 301.1703 598.4411 298.5706 593.6317
   295.971 588.8224 275.7353 575.9191 272.9779 570.9559
@@ -149,7 +169,7 @@ line wall
   198.8738 395.6678 185.271 374.1257 184.5561 372.3709
 endline
 
-line wall 
+line wall
   313.6489 693.6581
   314.2004 693.4283 337.6838 670.818 338.3732 669.0717
   339.0625 667.3254 339.3842 665.3493 339.3842 664.0166
@@ -162,18 +182,33 @@ line wall
 endline
 
 point 346.34 663.27 station -name 0
+
 point 342.24 648.7 station -name 1
+
 point 350.98 635.94 station -name 2
+
 point 345.39 619.72 station -name 3
+
 point 329.33 593.9 station -name 4
+
 point 312.17 595.08 station -name 5
+
 point 251.22 463.58 station -name 6
+
 point 233.82 427.44 station -name 7
+
 point 212.17 400.2 station -name 8
+
 point 187.52 372.01 station -name 9
+
 point 182.17 361.69 station -name 10
+
 point 160.75 353.35 station -name 11
+
 point 164.45 341.22 station -name 12
+
 point 167.28 337.68 station -name 13
+
 endscrap
+
 

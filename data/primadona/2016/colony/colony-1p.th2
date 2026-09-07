@@ -58,11 +58,11 @@ scrap colony-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 		smooth off
 	endline
 	
-	line label -text "Colony"
-		484.0 -2522.0
-		484.0 -2522.0 856.0 -3308.0 1432.0 -3800.0
-		smooth off
-	endline
+	#line label -text "Colony"
+	#	484.0 -2522.0
+	#	484.0 -2522.0 856.0 -3308.0 1432.0 -3800.0
+	#	smooth off
+	#endline
 	
 	line wall -id s1_l3
 		1796.0 -3376.0
@@ -478,11 +478,11 @@ scrap colony-1p -projection plan -scale [0 0 100 0 0 0 1 0 m]
 		611.02 43.95
 	endline
 	
-	line label -text "The Folly"
-		822.0 -58.0
-		822.0 -58.0 886.0 214.0 898.0 386.0
-		smooth off
-	endline
+	#line label -text "The Folly"
+	#	822.0 -58.0
+	#	822.0 -58.0 886.0 214.0 898.0 386.0
+	#	smooth off
+	#endline
 	
 	line rock-border
 	endline

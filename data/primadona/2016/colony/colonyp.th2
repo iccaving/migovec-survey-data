@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap colonyp_1 -scale [328.0 -734.0 517.0 -735.0 0 0 10 0 m]
+scrap colonyp_1 -scale [0 0 39.3701 0 0 0 1 0 m]
 	
 	line pit -reverse on -outline out
 		84.0 22.0
@@ -169,7 +169,7 @@ endscrap
 
 
 
-scrap colonyp_3 -scale [328.0 -734.0 517.0 -735.0 0 0 10 0 m]
+scrap colonyp_3 -scale [0 0 39.3701 0 0 0 1 0 m]
 	
 	point 299.0 -236.0 station -name "2"
 	
@@ -203,7 +203,7 @@ endscrap
 
 
 
-scrap colonyp_2 -scale [328.0 -734.0 517.0 -735.0 0 0 10 0 m]
+scrap colonyp_2 -scale [0 0 39.3701 0 0 0 1 0 m]
 	
 	line wall
 		360.0 -220.0
