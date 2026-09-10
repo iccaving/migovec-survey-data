@@ -5,8 +5,8 @@ survey prima2 -title "Primadona Stara Jama branch"
 	input "prima2_extend.th2"
 	
 	map m-all-p -projection plan
-		mprima2-1p
 		mprima2-2p
+		mprima2-1p
 		mprima2-3p
 		mprima2-4p
 		mprima2-5p
@@ -34,8 +34,6 @@ survey prima2 -title "Primadona Stara Jama branch"
 	endmap
 	
 	
-	join prima2p_1 prima2p_2
-	join prima2p_2 prima2p_3
 	join prima2p_3 prima2p_4
 	join prima2p_4 prima2p_5
 	

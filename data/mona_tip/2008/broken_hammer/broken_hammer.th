@@ -9,16 +9,7 @@ survey broken_hammer
 	endmap
 
 	map m-all-p -projection plan
-		mbroken_hammer-1p
-		mbroken_hammer-2p
-	endmap
-
-	map mbroken_hammer-1p -projection plan
 		broken_hammer-1p
-	endmap
-
-	map mbroken_hammer-2p -projection plan
-		broken_hammer-2p
 	endmap
 
 	join broken_hammer-1e broken_hammer-2e

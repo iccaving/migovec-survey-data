@@ -23,8 +23,8 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 
 	join ttt-1p@ttt prima2p_5@prima2
 	join zima00p_1@zima00 ttt-6p@ttt
-	join s1_l1@prima2:0 s7_l4@prima1:end
-	join s1_l1@prima2:end s7_l3@prima1:end
+	join s1_l1@prima2:0 s7_l3@prima1
+	join s1_l1@prima2:end s7_l4@prima1
 	join ttt-1e@ttt zima00-3e@zima00
 
 	join prima1-2e@prima1 prima2-2e@prima2
