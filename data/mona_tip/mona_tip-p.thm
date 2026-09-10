@@ -32,7 +32,7 @@ map m-all-p -projection plan -title "Mona tip"
 	m-all-p@well_hung
 	high-mona_tip #[-120 0 m] above
 	m-all-p@therock
-	m-all-p@therock
+	#m-all-p@therock
 	m-all-p@broken_hammer
 	m-all-p@mona_tip4
 	m-all-p@alkatraz_disto_resurvey
@@ -41,6 +41,7 @@ map m-all-p -projection plan -title "Mona tip"
 	m-all-p@fools_gold
 	m-all-p@neu_alliance
 	m-all-p@mambo_number_5
+	m-all-p@rat_rift
 endmap
 
 map m-mona_tip_entrance-p -projection plan
