@@ -1,63 +1,58 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 2006.900000 1758.400000
+##XTHERION## xth_me_area_adjust 0.0 0.0 2006.9 1758.4
 ##XTHERION## xth_me_area_zoom_to 100
+
 
 
 scrap tartarus-1s -projection extended -scale [0 0 39 0 0 0 1 0 m]
 
-line wall:invisible 
+point -133.89 642.8262 station -name 0
+
+point -78.4383 620.026 station -name 1
+
+point -111.3945 588.4408 station -name 2
+
+point -87.1724 666.4388 station -name 3
+
+point 25.9146 716.0001 station -name 4
+
+point 209.6872 673.1926 station -name 5
+
+point 183.891 532.8875 station -name 6
+
+point 284.5877 470.479 station -name 7
+
+point 401.1277 422.898 station -name 8
+
+point 653.0978 354.5483 station -name 9
+
+line wall:invisible
   262.27 967.25
   42.7688 942.287
 endline
 
-line wall:invisible 
+line wall:invisible
   -35.29 815.62
   -97.93 788.04
 endline
 
-line wall:invisible 
-  1378.4068 39.1169
-  1365.3678 212.3491
-endline
-
-point 1190.6911 198.8875 station -name 10
-point 949.6552 272.6472 station -name 9
-point 630.9082 347.7239 station -name 8
-line wall 
-  1365.3678 212.3491
-  1259.1932 236.5644
-  1182.8202 260.172
-  1138.3479 281.3603
-endline
-
-line wall 
-  1191.5951 152.5458
-  1191.5951 152.5458 1207.0373 148.7841 1207.0373 139.4705
-  1207.0373 130.157 1221.939 137.8407 1229.3898 128.5271
-  1236.8407 119.2135 1311.3492 94.9983 1311.3492 94.9983
-  1369.0932 72.6457
-  1378.4068 39.1169
-endline
-
 point -3.7254 322.2491 label -align l -attr level 3 -scale l -text Tartarus
-line wall 
+
+line wall
   127.84 487.36
   210.7418 421.4836
   281.8671 421.4836
   292.4042 421.4836 442.5578 350.3582 442.5578 350.3582
   637.4939 300.307
-  637.4939 300.307 732.3277 292.4042 750.7676 292.4042
-  769.2075 292.4042 858.7728 255.5244 858.7728 255.5244
-  1033.5936 212.2301
-  1191.5951 152.5458
+  637.4939 300.307 721.8147 240.8781 740.2546 240.8781
+  758.6945 240.8781 842.3725 166.7473 842.3725 166.7473
+  smooth off
 endline
 
-line wall 
-  1138.3479 281.3603
-  1138.3479 281.3603 1030.0005 321.3812 1014.1949 321.3812
-  998.3892 321.3812 856.1385 366.1638 837.6986 366.1638
-  819.2587 366.1638 782.3789 381.9695 737.5963 381.9695
-  692.8136 381.9695 600.6141 424.1178 600.6141 424.1178
+line wall
+  857.4218 265.2874
+  838.9819 265.2874 774.655 355.3604 737.5963 371.4517
+  696.5189 389.2881 600.6141 424.1178 600.6141 424.1178
   472.98 451.68
 endline
 
@@ -73,6 +68,7 @@ line rock-border -close on
   -149.18 660.64
   -139.93 661.61
   -126.06 662.4
+  -115.8 685.32
 endline
 
 line rock-border -close on
@@ -81,6 +77,7 @@ line rock-border -close on
   -140.71 602.79
   -128.69 593.29
   -120.05 590.37
+  -122.56 606.52
 endline
 
 line rock-border -close on
@@ -90,12 +87,14 @@ line rock-border -close on
   -116.43 582.06
   -104.87 576.93
   -93.47 576.95
+  -94.69 591.74
 endline
 
 line rock-border -close on
   -68.91 577.95
   -80.98 576.96
   -79.37 566.65
+  -68.91 577.95
 endline
 
 line rock-border -close on
@@ -104,6 +103,7 @@ line rock-border -close on
   -39.44 557.11
   -49.65 547.2
   -62.79 552.09
+  -55.99 571.14
 endline
 
 line rock-border -close on
@@ -111,6 +111,7 @@ line rock-border -close on
   -34.59 555.88
   -31.79 542.15
   -22.07 540.18
+  -21.31 557.54
 endline
 
 line rock-border -close on
@@ -118,6 +119,7 @@ line rock-border -close on
   -11.28 540.72
   -11.64 530.61
   -2.82 528.76
+  5.21 539.5
 endline
 
 line rock-border -close on
@@ -125,6 +127,7 @@ line rock-border -close on
   0.26 555.85
   -10.31 549.13
   1.13 543.59
+  12.69 555.15
 endline
 
 line rock-border -close on
@@ -133,6 +136,7 @@ line rock-border -close on
   32.74 532.02
   30.26 519.61
   39.13 512.33
+  54.17 527.94
 endline
 
 line rock-border -close on
@@ -143,6 +147,7 @@ line rock-border -close on
   59.52 506.98
   65.45 496.39
   79.57 491.51
+  99.56 507.06
 endline
 
 line rock-border -close on
@@ -151,6 +156,7 @@ line rock-border -close on
   103.43 499.76
   111.76 490.63
   127.84 487.36
+  127.11 509.64
 endline
 
 line rock-border -close on
@@ -165,6 +171,7 @@ line rock-border -close on
   -94.34 626.98
   -82.64 622.51
   -74.6 621.99
+  -47.18 658.63
 endline
 
 line rock-border -close on
@@ -182,6 +189,7 @@ line rock-border -close on
   -111.3 730.91
   -120.54 722.19
   -131.0 689.15
+  -109.49 677.21
 endline
 
 line rock-border -close on
@@ -201,6 +209,7 @@ line rock-border -close on
   34.75 648.87
   52.54 646.79
   62.41 646.0
+  53.65 705.6
 endline
 
 line rock-border -close on
@@ -213,6 +222,7 @@ line rock-border -close on
   54.96 612.52
   71.8 613.73
   83.43 616.76
+  77.54 629.45
 endline
 
 line rock-border -close on
@@ -220,6 +230,7 @@ line rock-border -close on
   -4.97 761.35
   -12.92 748.1
   -4.85 741.28
+  7.68 759.81
 endline
 
 line rock-border -close on
@@ -228,6 +239,7 @@ line rock-border -close on
   -43.25 761.67
   -40.64 754.05
   -25.64 754.91
+  -28.64 770.3
 endline
 
 line rock-border -close on
@@ -236,6 +248,7 @@ line rock-border -close on
   20.7 816.84
   17.81 808.91
   21.06 801.29
+  49.24 814.68
 endline
 
 line rock-border -close on
@@ -243,6 +256,7 @@ line rock-border -close on
   -6.67 787.07
   -9.43 778.62
   -4.13 771.21
+  10.48 787.07
 endline
 
 line rock-border -close on
@@ -258,9 +272,10 @@ line rock-border -close on
   -54.51 774.14
   -40.37 776.02
   -22.35 777.11
+  -25.84 802.1
 endline
 
-line rock-border -clip off -close on
+line rock-border -close on -clip off
   110.46 1007.24
   80.18 1002.58
   58.82 997.43
@@ -276,6 +291,7 @@ line rock-border -clip off -close on
   164.52 931.58
   158.41 963.88
   135.74 1007.29
+  110.46 1007.24
 endline
 
 line rock-border -close on
@@ -292,10 +308,12 @@ line rock-border -close on
   179.91 849.59
   190.25 836.15
   198.49 843.32
+  253.79 923.88
 endline
 
 point 269.29 767.21 water-flow -orientation 180.0
-line wall 
+
+line wall
   336.32 642.25
   335.51 648.68 334.6 655.1 333.91 661.54
   333.33 666.92 334.1 672.55 332.5 677.72
@@ -322,6 +340,7 @@ line rock-border -close on
   193.55 590.79
   209.96 588.74
   222.25 587.05
+  228.99 613.4
 endline
 
 line rock-border -close on
@@ -333,9 +352,10 @@ line rock-border -close on
   121.55 626.54
   136.76 626.14
   148.18 627.14
+  140.22 647.65
 endline
 
-line wall 
+line wall
   472.98 451.68
   466.18 449.3 459.86 444.63 452.67 444.32
   430.27 443.34 409.09 457.56 387.94 462.67
@@ -358,24 +378,24 @@ line wall
   344.97 625.75 348.67 632.12 336.32 642.25
 endline
 
-line wall:blocks 
+line wall:blocks
   45.69 942.97
   53.67 908.84 47.07 870.52 35.96 837.44
 endline
 
-line wall:blocks 
+line wall:blocks
   35.96 837.44
   0.26 825.76 -19.3 823.68 -35.29 815.62
 endline
 
-line wall:blocks 
+line wall:blocks
   -97.93 788.04
   -98.8 781.46 -98.99 770.67 -103.11 764.18
   -110.91 751.87 -128.36 748.05 -137.12 736.85
   -142.55 729.9 -146.09 721.26 -151.07 713.95
 endline
 
-line wall:blocks 
+line wall:blocks
   -151.07 713.95
   -177.27 701.57 -181.48 701.92 -183.37 699.27
   -185.89 695.73 -185.44 684.1 -185.44 679.22
@@ -385,7 +405,7 @@ line wall:blocks
   -153.16 606.3 -144.87 602.86 -137.4 598.23
 endline
 
-line wall:blocks 
+line wall:blocks
   -137.4 598.23
   -116.74 586.33 -110.11 585.66 -104.32 582.81
   -101.64 581.49 -100.47 578.24 -98.46 576.03
@@ -397,13 +417,6 @@ line wall:blocks
   103.94 489.07 110.69 488.39 115.94 487.47
 endline
 
-point -79.15 620.38 station -name 1
-point -133.81 642.98 station -name 0
-point -111.45 589.48 station -name 2
-point -87.64 666.15 station -name 3
-point 23.69 715.26 station -name 4
-point 204.77 673.08 station -name 5
-point 178.96 534.51 station -name 6
-point 278.08 473.2 station -name 7
 endscrap
+
 
