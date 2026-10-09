@@ -3,15 +3,16 @@ encoding utf-8
 
 survey bones_of_babylon -title "Bones of Babylon"
 
-  # input "sunshine_shaft-1p.th2"
-  #input "bones_of_babylon-e.th2"
+  input "bones_of_babylon-p.th2"
+  input "bones_of_babylon-e.th2"
 
-  # map m1p -projection plan
-  #   sunshine_shaft-1p
-  # endmap
-  #map m-all-e -projection extended
-  #  bones_of_babylon-1e
-  #endmap
+  map m-all-p -projection plan
+     bones_of_babylon-1p
+  endmap
+
+  map m-all-e -projection extended
+    bones_of_babylon-1e
+  endmap
 
   centerline
     date 2026.07.25 
