@@ -1,974 +1,891 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -250 -500 250 500
+##XTHERION## xth_me_area_adjust -250.0 -500.0 250.0 500.0
 ##XTHERION## xth_me_area_zoom_to 100
 
-scrap DELETE-ME-survey-legs-loompa_land-down_under-e -projection extended -scale [7.87402 1 m]
-    line survey
-        -159.35 184.13
-        -139.99 186.65
-    endline
-    line survey
-        -120.93 126.97
-        -139.99 186.65
-    endline
-    line survey
-        -139.99 186.65
-        -159.02 246.10
-    endline
-    line survey
-        -120.93 126.97
-        -102.87 125.39
-    endline
-    line survey
-        -120.93 126.97
-        -109.99 152.17
-    endline
-    line survey
-        -120.93 126.97
-        -111.32 190.43
-    endline
-    line survey
-        -120.93 126.97
-        -123.37 153.90
-    endline
-    line survey
-        -120.93 126.97
-        -120.01 133.74
-    endline
-    line survey
-        -120.93 126.97
-        -172.58 132.87
-    endline
-    line survey
-        -120.93 126.97
-        -172.46 147.91
-    endline
-    line survey
-        -120.93 126.97
-        -142.22 130.83
-    endline
-    line survey
-        -120.93 126.97
-        -145.23 134.84
-    endline
-    line survey
-        -120.93 126.97
-        -94.60 115.87
-    endline
-    line survey
-        -120.93 126.97
-        -38.14 40.91
-    endline
-    line survey
-        -120.93 126.97
-        -76.22 79.49
-    endline
-    line survey
-        -76.22 79.49
-        -85.73 86.34
-    endline
-    line survey
-        -76.22 79.49
-        -75.86 90.04
-    endline
-    line survey
-        -76.22 79.49
-        -100.28 104.69
-    endline
-    line survey
-        -76.22 79.49
-        -73.35 87.44
-    endline
-    line survey
-        -76.22 79.49
-        -58.26 71.77
-    endline
-    line survey
-        -76.22 79.49
-        -32.75 38.86
-    endline
-    line survey
-        -32.75 38.86
-        -32.20 47.60
-    endline
-    line survey
-        -32.75 38.86
-        -32.31 40.12
-    endline
-    line survey
-        -32.75 38.86
-        -27.83 41.54
-    endline
-    line survey
-        -32.75 38.86
-        -28.66 47.28
-    endline
-    line survey
-        -32.75 38.86
-        9.38 16.42
-    endline
-    line survey
-        9.38 16.42
-        27.99 16.65
-    endline
-    line survey
-        9.38 16.42
-        9.71 7.68
-    endline
-    line survey
-        9.38 16.42
-        8.00 13.74
-    endline
-    line survey
-        9.38 16.42
-        27.39 -4.06
-    endline
-    line survey
-        9.38 16.42
-        24.23 12.24
-    endline
-    line survey
-        24.23 12.24
-        37.07 10.83
-    endline
-    line survey
-        24.23 12.24
-        29.61 16.26
-    endline
-    line survey
-        24.23 12.24
-        24.52 17.52
-    endline
-    line survey
-        24.23 12.24
-        14.08 12.32
-    endline
-    line survey
-        24.23 12.24
-        57.00 -7.36
-    endline
-    line survey
-        57.00 -7.36
-        58.18 -4.69
-    endline
-    line survey
-        57.00 -7.36
-        56.82 -6.10
-    endline
-    line survey
-        57.00 -7.36
-        58.56 -4.76
-    endline
-    line survey
-        57.00 -7.36
-        88.64 -24.84
-    endline
-    line survey
-        88.64 -24.84
-        89.54 -23.90
-    endline
-    line survey
-        88.64 -24.84
-        88.30 -26.02
-    endline
-    line survey
-        88.64 -24.84
-        89.91 -22.56
-    endline
-    line survey
-        88.64 -24.84
-        90.86 -24.76
-    endline
-    line survey
-        88.64 -24.84
-        136.49 -47.05
-    endline
-    line survey
-        136.49 -47.05
-        138.96 -49.41
-    endline
-    line survey
-        136.49 -47.05
-        136.62 -49.96
-    endline
-    line survey
-        136.49 -47.05
-        135.55 -50.12
-    endline
-    line survey
-        136.49 -47.05
-        177.76 -58.78
-    endline
-    line survey
-        177.76 -58.78
-        176.38 -53.50
-    endline
-    line survey
-        177.76 -58.78
-        176.34 -46.81
-    endline
-    line survey
-        177.76 -58.78
-        178.44 -73.98
-    endline
-    line survey
-        177.76 -58.78
-        200.56 -92.40
-    endline
-    line survey
-        177.76 -58.78
-        210.52 -108.39
-    endline
-    line survey
-        177.76 -58.78
-        195.37 -77.13
-    endline
-    line survey
-        177.76 -58.78
-        219.10 -106.02
-    endline
-    line survey
-        219.10 -106.02
-        240.73 -105.63
-    endline
-    line survey
-        219.10 -106.02
-        257.34 -85.00
-    endline
-    line survey
-        219.10 -106.02
-        267.15 -76.42
-    endline
-    line survey
-        219.10 -106.02
-        266.41 -72.40
-    endline
-    line survey
-        219.10 -106.02
-        268.93 -74.37
-    endline
-    line survey
-        219.10 -106.02
-        248.12 -77.68
-    endline
-    line survey
-        219.10 -106.02
-        232.01 -79.09
-    endline
-    line survey
-        219.10 -106.02
-        213.56 -43.19
-    endline
-    line survey
-        219.10 -106.02
-        196.80 -104.37
-    endline
-    line survey
-        219.10 -106.02
-        208.90 -115.87
-    endline
-    line survey
-        219.10 -106.02
-        187.77 -113.11
-    endline
-    line survey
-        187.77 -113.11
-        186.32 -114.06
-    endline
-    line survey
-        187.77 -113.11
-        190.53 -110.35
-    endline
-    line survey
-        187.77 -113.11
-        226.86 -99.96
-    endline
-    line survey
-        187.77 -113.11
-        226.78 -142.72
-    endline
-    line survey
-        226.78 -142.72
-        209.13 -128.46
-    endline
-    line survey
-        226.78 -142.72
-        212.81 -128.94
-    endline
-    line survey
-        226.78 -142.72
-        216.42 -130.98
-    endline
-    line survey
-        226.78 -142.72
-        227.18 -139.65
-    endline
-    line survey
-        226.78 -142.72
-        215.30 -140.12
-    endline
-    line survey
-        226.78 -142.72
-        228.16 -142.24
-    endline
-    line survey
-        226.78 -142.72
-        239.28 -147.28
-    endline
-    line survey
-        226.78 -142.72
-        228.78 -139.17
-    endline
-    line survey
-        226.78 -142.72
-        237.36 -140.59
-    endline
-    line survey
-        226.78 -142.72
-        242.38 -147.28
-    endline
-    line survey
-        226.78 -142.72
-        289.13 -168.94
-    endline
-    line survey
-        289.13 -168.94
-        273.95 -159.80
-    endline
-    line survey
-        289.13 -168.94
-        258.89 -155.87
-    endline
-    line survey
-        289.13 -168.94
-        249.78 -155.63
-    endline
-    line survey
-        289.13 -168.94
-        282.97 -167.99
-    endline
-    line survey
-        289.13 -168.94
-        282.71 -171.38
-    endline
-    line survey
-        289.13 -168.94
-        288.42 -172.32
-    endline
-    line survey
-        289.13 -168.94
-        329.39 -181.69
-    endline
-    line survey
-        289.13 -168.94
-        412.18 -192.87
-    endline
-    line survey
-        289.13 -168.94
-        400.93 -192.09
-    endline
-    line survey
-        289.13 -168.94
-        382.23 -190.98
-    endline
-    line survey
-        289.13 -168.94
-        358.77 -191.85
-    endline
-    line survey
-        289.13 -168.94
-        373.55 -191.93
-    endline
-    line survey
-        373.55 -191.93
-        333.04 -196.57
-    endline
-    line survey
-        333.04 -196.57
-        245.85 -226.10
-    endline
-    line survey
-        245.85 -226.10
-        226.43 -228.23
-    endline
-    line survey
-        226.43 -228.23
-        183.26 -226.02
-    endline
-    line survey
-        183.26 -226.02
-        71.76 -213.50
-    endline
-    line survey
-        71.76 -213.50
-        -15.12 -193.90
-    endline
-    line survey
-        -15.12 -193.90
-        -126.23 -227.44
-    endline
-    line survey
-        -126.23 -227.44
-        -166.77 -238.07
-    endline
-    line survey
-        -166.77 -238.07
-        -259.77 -200.67
-    endline
-    line survey
-        -259.77 -200.67
-        -281.92 -203.11
-    endline
-    line survey
-        -281.92 -203.11
-        -342.24 -222.80
-    endline
-    line survey
-        -342.24 -222.80
-        -412.18 -246.10
-    endline
-    point -159.35 184.13 station-name -align tr -scale xs -text 0
-    point -139.99 186.65 station-name -align tr -scale xs -text 1
-    point -120.93 126.97 station-name -align tr -scale xs -text 2
-    point -76.22 79.49 station-name -align tr -scale xs -text 3
-    point -32.75 38.86 station-name -align tr -scale xs -text 4
-    point 9.38 16.42 station-name -align tr -scale xs -text 5
-    point 24.23 12.24 station-name -align tr -scale xs -text 6
-    point 57.00 -7.36 station-name -align tr -scale xs -text 7
-    point 88.64 -24.84 station-name -align tr -scale xs -text 8
-    point 136.49 -47.05 station-name -align tr -scale xs -text 9
-    point 177.76 -58.78 station-name -align tr -scale xs -text 10
-    point 219.10 -106.02 station-name -align tr -scale xs -text 11
-    point 187.77 -113.11 station-name -align tr -scale xs -text 12
-    point 226.78 -142.72 station-name -align tr -scale xs -text 13
-    point 289.13 -168.94 station-name -align tr -scale xs -text 14
-    point 373.55 -191.93 station-name -align tr -scale xs -text 15
-    point 333.04 -196.57 station-name -align tr -scale xs -text 16
-    point 245.85 -226.10 station-name -align tr -scale xs -text 17
-    point 226.43 -228.23 station-name -align tr -scale xs -text 18
-    point 183.26 -226.02 station-name -align tr -scale xs -text 19
-    point 71.76 -213.50 station-name -align tr -scale xs -text 20
-    point -15.12 -193.90 station-name -align tr -scale xs -text 21
-    point -126.23 -227.44 station-name -align tr -scale xs -text 22
-    point -166.77 -238.07 station-name -align tr -scale xs -text 23
-    point -259.77 -200.67 station-name -align tr -scale xs -text 24
-    point -281.92 -203.11 station-name -align tr -scale xs -text 25
-    point -342.24 -222.80 station-name -align tr -scale xs -text 26
-    point -412.18 -246.10 station-name -align tr -scale xs -text 27
+
+
+scrap survey-legs_loompa_land-down_under-e -projection extended -scale [7.87402 1 m]
+
+line survey
+  659.31 186.02
+  639.95 188.54
+endline
+
+line survey
+  620.9 128.86
+  639.95 188.54
+endline
+
+line survey
+  639.95 188.54
+  659.04 248.07
+endline
+
+line survey
+  620.9 128.86
+  602.89 127.36
+endline
+
+line survey
+  620.9 128.86
+  610.0 154.13
+endline
+
+line survey
+  620.9 128.86
+  611.24 192.32
+endline
+
+line survey
+  620.9 128.86
+  629.37 155.79
+endline
+
+line survey
+  620.9 128.86
+  630.33 135.63
+endline
+
+line survey
+  620.9 128.86
+  595.1 134.84
+endline
+
+line survey
+  620.9 128.86
+  604.52 149.8
+endline
+
+line survey
+  620.9 128.86
+  614.29 132.8
+endline
+
+line survey
+  620.9 128.86
+  616.27 136.73
+endline
+
+line survey
+  620.9 128.86
+  594.49 117.76
+endline
+
+line survey
+  620.9 128.86
+  538.27 42.87
+endline
+
+line survey
+  620.9 128.86
+  576.19 81.61
+endline
+
+line survey
+  576.19 81.61
+  580.91 88.46
+endline
+
+line survey
+  576.19 81.61
+  575.83 92.17
+endline
+
+line survey
+  576.19 81.61
+  600.81 106.81
+endline
+
+line survey
+  576.19 81.61
+  573.17 89.49
+endline
+
+line survey
+  576.19 81.61
+  558.31 73.9
+endline
+
+line survey
+  576.19 81.61
+  532.72 41.06
+endline
+
+line survey
+  532.72 41.06
+  532.18 49.8
+endline
+
+line survey
+  532.72 41.06
+  534.49 42.4
+endline
+
+line survey
+  532.72 41.06
+  527.59 43.82
+endline
+
+line survey
+  532.72 41.06
+  528.53 49.57
+endline
+
+line survey
+  532.72 41.06
+  490.59 18.78
+endline
+
+line survey
+  490.59 18.78
+  471.97 19.02
+endline
+
+line survey
+  490.59 18.78
+  490.31 10.04
+endline
+
+line survey
+  490.59 18.78
+  500.7 16.02
+endline
+
+line survey
+  490.59 18.78
+  472.7 -1.77
+endline
+
+line survey
+  490.59 18.78
+  475.74 14.53
+endline
+
+line survey
+  475.74 14.53
+  462.88 13.11
+endline
+
+line survey
+  475.74 14.53
+  470.29 18.62
+endline
+
+line survey
+  475.74 14.53
+  475.42 19.8
+endline
+
+line survey
+  475.74 14.53
+  467.18 14.61
+endline
+
+line survey
+  475.74 14.53
+  442.97 -4.92
+endline
+
+line survey
+  442.97 -4.92
+  441.77 -2.24
+endline
+
+line survey
+  442.97 -4.92
+  443.14 -3.66
+endline
+
+line survey
+  442.97 -4.92
+  441.54 -2.32
+endline
+
+line survey
+  442.97 -4.92
+  411.33 -22.24
+endline
+
+line survey
+  411.33 -22.24
+  410.44 -21.3
+endline
+
+line survey
+  411.33 -22.24
+  411.81 -23.43
+endline
+
+line survey
+  411.33 -22.24
+  410.06 -19.96
+endline
+
+line survey
+  411.33 -22.24
+  408.98 -22.24
+endline
+
+line survey
+  411.33 -22.24
+  363.48 -44.37
+endline
+
+line survey
+  363.48 -44.37
+  360.98 -46.73
+endline
+
+line survey
+  363.48 -44.37
+  363.33 -47.28
+endline
+
+line survey
+  363.48 -44.37
+  364.29 -47.44
+endline
+
+line survey
+  363.48 -44.37
+  322.21 -56.02
+endline
+
+line survey
+  322.21 -56.02
+  328.06 -50.67
+endline
+
+line survey
+  322.21 -56.02
+  323.97 -43.98
+endline
+
+line survey
+  322.21 -56.02
+  321.59 -71.14
+endline
+
+line survey
+  322.21 -56.02
+  299.71 -89.65
+endline
+
+line survey
+  322.21 -56.02
+  289.51 -105.63
+endline
+
+line survey
+  322.21 -56.02
+  304.57 -74.37
+endline
+
+line survey
+  322.21 -56.02
+  280.87 -103.19
+endline
+
+line survey
+  280.87 -103.19
+  283.39 -102.8
+endline
+
+line survey
+  280.87 -103.19
+  291.43 -82.17
+endline
+
+line survey
+  280.87 -103.19
+  304.88 -73.5
+endline
+
+line survey
+  280.87 -103.19
+  302.86 -69.57
+endline
+
+line survey
+  280.87 -103.19
+  300.84 -71.46
+endline
+
+line survey
+  280.87 -103.19
+  306.67 -74.76
+endline
+
+line survey
+  280.87 -103.19
+  287.64 -76.26
+endline
+
+line survey
+  280.87 -103.19
+  342.37 -40.35
+endline
+
+line survey
+  280.87 -103.19
+  303.16 -101.46
+endline
+
+line survey
+  280.87 -103.19
+  291.05 -113.03
+endline
+
+line survey
+  280.87 -103.19
+  312.2 -110.28
+endline
+
+line survey
+  312.2 -110.28
+  313.66 -111.22
+endline
+
+line survey
+  312.2 -110.28
+  318.09 -107.52
+endline
+
+line survey
+  312.2 -110.28
+  319.66 -97.13
+endline
+
+line survey
+  312.2 -110.28
+  273.19 -139.72
+endline
+
+line survey
+  273.19 -139.72
+  288.21 -125.47
+endline
+
+line survey
+  273.19 -139.72
+  287.87 -125.94
+endline
+
+line survey
+  273.19 -139.72
+  287.35 -127.99
+endline
+
+line survey
+  273.19 -139.72
+  276.21 -136.65
+endline
+
+line survey
+  273.19 -139.72
+  288.44 -137.13
+endline
+
+line survey
+  273.19 -139.72
+  276.04 -139.25
+endline
+
+line survey
+  273.19 -139.72
+  260.93 -144.29
+endline
+
+line survey
+  273.19 -139.72
+  271.18 -136.18
+endline
+
+line survey
+  273.19 -139.72
+  262.73 -137.52
+endline
+
+line survey
+  273.19 -139.72
+  257.74 -144.21
+endline
+
+line survey
+  273.19 -139.72
+  210.83 -165.71
+endline
+
+line survey
+  210.83 -165.71
+  233.71 -156.57
+endline
+
+line survey
+  210.83 -165.71
+  236.78 -152.64
+endline
+
+line survey
+  210.83 -165.71
+  229.86 -152.4
+endline
+
+line survey
+  210.83 -165.71
+  208.65 -164.76
+endline
+
+line survey
+  210.83 -165.71
+  209.76 -168.15
+endline
+
+line survey
+  210.83 -165.71
+  211.13 -169.09
+endline
+
+line survey
+  210.83 -165.71
+  170.85 -178.46
+endline
+
+line survey
+  210.83 -165.71
+  88.14 -189.65
+endline
+
+line survey
+  210.83 -165.71
+  99.04 -188.86
+endline
+
+line survey
+  210.83 -165.71
+  117.52 -187.76
+endline
+
+line survey
+  210.83 -165.71
+  140.8 -188.62
+endline
+
+line survey
+  210.83 -165.71
+  126.41 -188.54
+endline
+
+line survey
+  126.41 -188.54
+  85.9 -193.27
+endline
+
+line survey
+  85.9 -193.27
+  -1.29 -224.06
+endline
+
+line survey
+  -1.29 -224.06
+  -20.71 -226.1
+endline
+
+line survey
+  -20.71 -226.1
+  -63.88 -223.9
+endline
+
+line survey
+  -63.88 -223.9
+  -175.38 -211.69
+endline
+
+line survey
+  -175.38 -211.69
+  -262.26 -192.8
+endline
+
+line survey
+  -262.26 -192.8
+  -373.37 -227.76
+endline
+
+line survey
+  -373.37 -227.76
+  -413.91 -238.31
+endline
+
+line survey
+  -413.91 -238.31
+  -506.91 -202.72
+endline
+
+line survey
+  -506.91 -202.72
+  -529.06 -205.16
+endline
+
+line survey
+  -529.06 -205.16
+  -589.38 -224.84
+endline
+
+line survey
+  -589.38 -224.84
+  -659.31 -248.07
+endline
+
+point 659.31 186.02 station-name -align tr -scale xs -text 0
+
+point 639.95 188.54 station-name -align tr -scale xs -text 1
+
+point 620.9 128.86 station-name -align tr -scale xs -text 2
+
+point 576.19 81.61 station-name -align tr -scale xs -text 3
+
+point 532.72 41.06 station-name -align tr -scale xs -text 4
+
+point 490.59 18.78 station-name -align tr -scale xs -text 5
+
+point 475.74 14.53 station-name -align tr -scale xs -text 6
+
+point 442.97 -4.92 station-name -align tr -scale xs -text 7
+
+point 411.33 -22.24 station-name -align tr -scale xs -text 8
+
+point 363.48 -44.37 station-name -align tr -scale xs -text 9
+
+point 322.21 -56.02 station-name -align tr -scale xs -text 10
+
+point 280.87 -103.19 station-name -align tr -scale xs -text 11
+
+point 312.2 -110.28 station-name -align tr -scale xs -text 12
+
+point 273.19 -139.72 station-name -align tr -scale xs -text 13
+
+point 210.83 -165.71 station-name -align tr -scale xs -text 14
+
+point 126.41 -188.54 station-name -align tr -scale xs -text 15
+
+point 85.9 -193.27 station-name -align tr -scale xs -text 16
+
+point -1.29 -224.06 station-name -align tr -scale xs -text 17
+
+point -20.71 -226.1 station-name -align tr -scale xs -text 18
+
+point -63.88 -223.9 station-name -align tr -scale xs -text 19
+
+point -175.38 -211.69 station-name -align tr -scale xs -text 20
+
+point -262.26 -192.8 station-name -align tr -scale xs -text 21
+
+point -373.37 -227.76 station-name -align tr -scale xs -text 22
+
+point -413.91 -238.31 station-name -align tr -scale xs -text 23
+
+point -506.91 -202.72 station-name -align tr -scale xs -text 24
+
+point -529.06 -205.16 station-name -align tr -scale xs -text 25
+
+point -589.38 -224.84 station-name -align tr -scale xs -text 26
+
+point -659.31 -248.07 station-name -align tr -scale xs -text 27
+
 endscrap
+
+
 
 scrap loompa_land-down_under-1e -projection extended -scale [7.87402 1 m]
-    point -159.35 184.13 station -name 0
-    point -139.99 186.65 station -name 1
-    point -120.93 126.97 station -name 2
-    point -76.22 79.49 station -name 3
-    point -32.75 38.86 station -name 4
-    point 9.38 16.42 station -name 5
-    point 24.23 12.24 station -name 6
-    point 57.00 -7.36 station -name 7
-    point 88.64 -24.84 station -name 8
-    point 136.49 -47.05 station -name 9
-    point 177.76 -58.78 station -name 10
-    point 219.10 -106.02 station -name 11
-    point 187.77 -113.11 station -name 12
-    point 226.78 -142.72 station -name 13
-    point 289.13 -168.94 station -name 14
-    point 373.55 -191.93 station -name 15
-    point 333.04 -196.57 station -name 16
-    point 245.85 -226.10 station -name 17
-    point 226.43 -228.23 station -name 18
-    point 183.26 -226.02 station -name 19
-    point 71.76 -213.50 station -name 20
-    point -15.12 -193.90 station -name 21
-    point -126.23 -227.44 station -name 22
-    point -166.77 -238.07 station -name 23
-    point -259.77 -200.67 station -name 24
-    point -281.92 -203.11 station -name 25
-    point -342.24 -222.80 station -name 26
-    point -412.18 -246.10 station -name 27
-endscrap
-scrap DELETE-ME-survey-legs-DUPLICATE_loompa_land-down_under-e -projection extended -scale [7.87402 1 m]
-    line survey
-        -159.35 184.13
-        -139.99 186.65
-    endline
-    line survey
-        -120.93 126.97
-        -139.99 186.65
-    endline
-    line survey
-        -139.99 186.65
-        -159.02 246.10
-    endline
-    line survey
-        -120.93 126.97
-        -102.87 125.39
-    endline
-    line survey
-        -120.93 126.97
-        -109.99 152.17
-    endline
-    line survey
-        -120.93 126.97
-        -111.32 190.43
-    endline
-    line survey
-        -120.93 126.97
-        -123.37 153.90
-    endline
-    line survey
-        -120.93 126.97
-        -120.01 133.74
-    endline
-    line survey
-        -120.93 126.97
-        -172.58 132.87
-    endline
-    line survey
-        -120.93 126.97
-        -172.46 147.91
-    endline
-    line survey
-        -120.93 126.97
-        -142.22 130.83
-    endline
-    line survey
-        -120.93 126.97
-        -145.23 134.84
-    endline
-    line survey
-        -120.93 126.97
-        -94.60 115.87
-    endline
-    line survey
-        -120.93 126.97
-        -38.14 40.91
-    endline
-    line survey
-        -120.93 126.97
-        -76.22 79.49
-    endline
-    line survey
-        -76.22 79.49
-        -85.73 86.34
-    endline
-    line survey
-        -76.22 79.49
-        -75.86 90.04
-    endline
-    line survey
-        -76.22 79.49
-        -100.28 104.69
-    endline
-    line survey
-        -76.22 79.49
-        -73.35 87.44
-    endline
-    line survey
-        -76.22 79.49
-        -58.26 71.77
-    endline
-    line survey
-        -76.22 79.49
-        -32.75 38.86
-    endline
-    line survey
-        -32.75 38.86
-        -32.20 47.60
-    endline
-    line survey
-        -32.75 38.86
-        -32.31 40.12
-    endline
-    line survey
-        -32.75 38.86
-        -27.83 41.54
-    endline
-    line survey
-        -32.75 38.86
-        -28.66 47.28
-    endline
-    line survey
-        -32.75 38.86
-        9.38 16.42
-    endline
-    line survey
-        9.38 16.42
-        27.99 16.65
-    endline
-    line survey
-        9.38 16.42
-        9.71 7.68
-    endline
-    line survey
-        9.38 16.42
-        8.00 13.74
-    endline
-    line survey
-        9.38 16.42
-        27.39 -4.06
-    endline
-    line survey
-        9.38 16.42
-        24.23 12.24
-    endline
-    line survey
-        24.23 12.24
-        37.07 10.83
-    endline
-    line survey
-        24.23 12.24
-        29.61 16.26
-    endline
-    line survey
-        24.23 12.24
-        24.52 17.52
-    endline
-    line survey
-        24.23 12.24
-        14.08 12.32
-    endline
-    line survey
-        24.23 12.24
-        57.00 -7.36
-    endline
-    line survey
-        57.00 -7.36
-        58.18 -4.69
-    endline
-    line survey
-        57.00 -7.36
-        56.82 -6.10
-    endline
-    line survey
-        57.00 -7.36
-        58.56 -4.76
-    endline
-    line survey
-        57.00 -7.36
-        88.64 -24.84
-    endline
-    line survey
-        88.64 -24.84
-        89.54 -23.90
-    endline
-    line survey
-        88.64 -24.84
-        88.30 -26.02
-    endline
-    line survey
-        88.64 -24.84
-        89.91 -22.56
-    endline
-    line survey
-        88.64 -24.84
-        90.86 -24.76
-    endline
-    line survey
-        88.64 -24.84
-        136.49 -47.05
-    endline
-    line survey
-        136.49 -47.05
-        138.96 -49.41
-    endline
-    line survey
-        136.49 -47.05
-        136.62 -49.96
-    endline
-    line survey
-        136.49 -47.05
-        135.55 -50.12
-    endline
-    line survey
-        136.49 -47.05
-        177.76 -58.78
-    endline
-    line survey
-        177.76 -58.78
-        176.38 -53.50
-    endline
-    line survey
-        177.76 -58.78
-        176.34 -46.81
-    endline
-    line survey
-        177.76 -58.78
-        178.44 -73.98
-    endline
-    line survey
-        177.76 -58.78
-        200.56 -92.40
-    endline
-    line survey
-        177.76 -58.78
-        210.52 -108.39
-    endline
-    line survey
-        177.76 -58.78
-        195.37 -77.13
-    endline
-    line survey
-        177.76 -58.78
-        219.10 -106.02
-    endline
-    line survey
-        219.10 -106.02
-        240.73 -105.63
-    endline
-    line survey
-        219.10 -106.02
-        257.34 -85.00
-    endline
-    line survey
-        219.10 -106.02
-        267.15 -76.42
-    endline
-    line survey
-        219.10 -106.02
-        266.41 -72.40
-    endline
-    line survey
-        219.10 -106.02
-        268.93 -74.37
-    endline
-    line survey
-        219.10 -106.02
-        248.12 -77.68
-    endline
-    line survey
-        219.10 -106.02
-        232.01 -79.09
-    endline
-    line survey
-        219.10 -106.02
-        213.56 -43.19
-    endline
-    line survey
-        219.10 -106.02
-        196.80 -104.37
-    endline
-    line survey
-        219.10 -106.02
-        208.90 -115.87
-    endline
-    line survey
-        219.10 -106.02
-        187.77 -113.11
-    endline
-    line survey
-        187.77 -113.11
-        186.32 -114.06
-    endline
-    line survey
-        187.77 -113.11
-        190.53 -110.35
-    endline
-    line survey
-        187.77 -113.11
-        226.86 -99.96
-    endline
-    line survey
-        187.77 -113.11
-        226.78 -142.72
-    endline
-    line survey
-        226.78 -142.72
-        209.13 -128.46
-    endline
-    line survey
-        226.78 -142.72
-        212.81 -128.94
-    endline
-    line survey
-        226.78 -142.72
-        216.42 -130.98
-    endline
-    line survey
-        226.78 -142.72
-        227.18 -139.65
-    endline
-    line survey
-        226.78 -142.72
-        215.30 -140.12
-    endline
-    line survey
-        226.78 -142.72
-        228.16 -142.24
-    endline
-    line survey
-        226.78 -142.72
-        239.28 -147.28
-    endline
-    line survey
-        226.78 -142.72
-        228.78 -139.17
-    endline
-    line survey
-        226.78 -142.72
-        237.36 -140.59
-    endline
-    line survey
-        226.78 -142.72
-        242.38 -147.28
-    endline
-    line survey
-        226.78 -142.72
-        289.13 -168.94
-    endline
-    line survey
-        289.13 -168.94
-        273.95 -159.80
-    endline
-    line survey
-        289.13 -168.94
-        258.89 -155.87
-    endline
-    line survey
-        289.13 -168.94
-        249.78 -155.63
-    endline
-    line survey
-        289.13 -168.94
-        282.97 -167.99
-    endline
-    line survey
-        289.13 -168.94
-        282.71 -171.38
-    endline
-    line survey
-        289.13 -168.94
-        288.42 -172.32
-    endline
-    line survey
-        289.13 -168.94
-        329.39 -181.69
-    endline
-    line survey
-        289.13 -168.94
-        412.18 -192.87
-    endline
-    line survey
-        289.13 -168.94
-        400.93 -192.09
-    endline
-    line survey
-        289.13 -168.94
-        382.23 -190.98
-    endline
-    line survey
-        289.13 -168.94
-        358.77 -191.85
-    endline
-    line survey
-        289.13 -168.94
-        373.55 -191.93
-    endline
-    line survey
-        373.55 -191.93
-        333.04 -196.57
-    endline
-    line survey
-        333.04 -196.57
-        245.85 -226.10
-    endline
-    line survey
-        245.85 -226.10
-        226.43 -228.23
-    endline
-    line survey
-        226.43 -228.23
-        183.26 -226.02
-    endline
-    line survey
-        183.26 -226.02
-        71.76 -213.50
-    endline
-    line survey
-        71.76 -213.50
-        -15.12 -193.90
-    endline
-    line survey
-        -15.12 -193.90
-        -126.23 -227.44
-    endline
-    line survey
-        -126.23 -227.44
-        -166.77 -238.07
-    endline
-    line survey
-        -166.77 -238.07
-        -259.77 -200.67
-    endline
-    line survey
-        -259.77 -200.67
-        -281.92 -203.11
-    endline
-    line survey
-        -281.92 -203.11
-        -342.24 -222.80
-    endline
-    line survey
-        -342.24 -222.80
-        -412.18 -246.10
-    endline
-    point -159.35 184.13 station-name -align tr -scale xs -text 0
-    point -139.99 186.65 station-name -align tr -scale xs -text 1
-    point -120.93 126.97 station-name -align tr -scale xs -text 2
-    point -76.22 79.49 station-name -align tr -scale xs -text 3
-    point -32.75 38.86 station-name -align tr -scale xs -text 4
-    point 9.38 16.42 station-name -align tr -scale xs -text 5
-    point 24.23 12.24 station-name -align tr -scale xs -text 6
-    point 57.00 -7.36 station-name -align tr -scale xs -text 7
-    point 88.64 -24.84 station-name -align tr -scale xs -text 8
-    point 136.49 -47.05 station-name -align tr -scale xs -text 9
-    point 177.76 -58.78 station-name -align tr -scale xs -text 10
-    point 219.10 -106.02 station-name -align tr -scale xs -text 11
-    point 187.77 -113.11 station-name -align tr -scale xs -text 12
-    point 226.78 -142.72 station-name -align tr -scale xs -text 13
-    point 289.13 -168.94 station-name -align tr -scale xs -text 14
-    point 373.55 -191.93 station-name -align tr -scale xs -text 15
-    point 333.04 -196.57 station-name -align tr -scale xs -text 16
-    point 245.85 -226.10 station-name -align tr -scale xs -text 17
-    point 226.43 -228.23 station-name -align tr -scale xs -text 18
-    point 183.26 -226.02 station-name -align tr -scale xs -text 19
-    point 71.76 -213.50 station-name -align tr -scale xs -text 20
-    point -15.12 -193.90 station-name -align tr -scale xs -text 21
-    point -126.23 -227.44 station-name -align tr -scale xs -text 22
-    point -166.77 -238.07 station-name -align tr -scale xs -text 23
-    point -259.77 -200.67 station-name -align tr -scale xs -text 24
-    point -281.92 -203.11 station-name -align tr -scale xs -text 25
-    point -342.24 -222.80 station-name -align tr -scale xs -text 26
-    point -412.18 -246.10 station-name -align tr -scale xs -text 27
+
+line wall
+  263.0556 -87.0518
+  269.2486 -90.1727 268.3465 -89.0755 271.1992 -91.9038
+  274.052 -94.7322 279.4891 -95.7562 279.733 -98.0238
+  279.9768 -100.2913 278.8309 -103.973 277.9775 -107.5572
+  277.1241 -111.1414 276.9534 -114.628 278.2945 -115.8471
+  279.6354 -117.0662 285.5116 -116.2616 286.4381 -117.1882
+  287.3646 -118.1147 286.048 -118.773 285.8041 -120.1872
+  285.5603 -121.6013 283.6341 -126.6728 279.7086 -128.3064
+  275.783 -129.94 271.3455 -130.4521 269.1267 -132.1344
+  266.9079 -133.8168 259.132 -137.4741 240.4723 -145.0873
+  221.8126 -152.7004 219.5735 -155.686 211.214 -159.7165
+  202.8544 -163.7469 198.1738 -166.8765 175.6859 -165.0904
+  164.6276 -164.2122 158.5193 -165.8071 154.3246 -167.5024
+  144.323 -170.1894 138.2466 -179.6034 138.2466 -179.6034
+  smooth off
+endline
+
+line wall
+  324.4378 -20.972
+  326.1242 -26.2678 326.5088 -25.824 327.3964 -29.256
+  328.284 -32.6879 327.0414 -33.3388 328.1656 -37.037
+  329.2898 -40.7352 329.1124 -42.3032 327.6627 -44.3742
+  326.213 -46.4452 320.6509 -52.8357 318.6982 -55.7055
+  316.7456 -58.5753 314.2308 -62.806 311.5681 -64.8474
+  308.9054 -66.8888 303.3729 -66.5634 300.2664 -68.0131
+  297.1599 -69.4628 294.9706 -69.877 293.9351 -72.3621
+  292.8996 -74.8473 292.1008 -81.3562 290.4736 -83.3088
+  288.8464 -85.2615 288.9351 -87.8058 284.8227 -87.3916
+  280.7103 -86.9774 279.6157 -87.9833 275.6808 -85.9715
+  271.7459 -83.9597 270.3554 -81.7112 267.9886 -81.0011
+endline
+
+line wall
+  658.9161 196.4584
+  652.0295 197.5775 636.1433 199.9454 629.3427 199.3428
+  622.5422 198.7402 619.3574 196.2889 618.2383 188.7136
+  617.1192 181.1383 620.6931 162.293 619.2297 157.3002
+  617.7663 152.3074 613.8926 133.3691 611.4823 129.9258
+  609.0719 126.4825 604.4234 124.3304 602.7018 120.801
+  600.9802 117.2716 586.1739 97.2143 584.3661 95.7508
+  582.5584 94.2874 580.6646 89.1225 578.8568 87.4869
+  577.049 85.8513 571.6258 82.1497 566.3748 76.9848
+  561.1237 71.8198 542.2715 57.3578 538.1395 53.398
+  534.0075 49.4382 536.3318 47.2861 529.273 42.2933
+  522.2142 37.3005 521.1812 34.9762 516.3605 33.685
+  511.5399 32.3938 502.329 29.2087 498.0248 26.8844
+  493.7207 24.5602 489.0722 24.8185 483.0464 24.8185
+  477.0206 24.8185 472.6304 20.5143 471.5974 16.3823
+  470.5644 12.2503 462.9891 9.3235 456.7911 6.5689
+  450.5931 3.8142 450.0766 0.457 446.2029 -2.642
+  442.3291 -5.741 434.5817 -5.8271 425.0265 -11.939
+  415.4712 -18.0509 415.4712 -19.9447 412.6305 -21.2359
+  409.7898 -22.5272 391.9706 -30.7051 384.4814 -32.685
+  376.9922 -34.6649 366.8344 -37.936 361.325 -38.1943
+  355.8157 -38.4525 353.7498 -35.2675 353.7498 -29.4999
+  smooth off
+endline
+
+line wall -outline in
+  662.6573 181.1848
+  659.2326 181.4737 652.9196 180.8548 651.3929 181.0611
+  649.8663 181.2674 647.5557 182.2164 645.1625 180.9373
+  642.7693 179.6582 641.7378 179.782 642.8931 174.2117
+  644.0484 168.6414 643.5946 170.5394 644.0484 168.6414
+  644.5023 166.7434 645.2038 163.4425 647.5144 161.5032
+  649.825 159.5639 650.9391 157.9547 653.3735 157.6659
+  655.8079 157.3771 661.0068 158.6149 661.0068 158.6149
+  smooth off
+endline
+
+line wall
+  343.8028 -24.9152
+  343.7267 -26.7012
+  343.8807 -28.6412
+  344.1907 -30.6612
+  344.4247 -32.6792
+  344.5807 -34.5432
+  344.0367 -36.1732
+  342.1727 -36.7172
+  340.0767 -36.4052
+  338.4467 -35.3972
+  337.0487 -32.9892
+  336.1947 -30.8932
+  335.4967 -28.8752
+  334.7187 -26.9332
+  334.0207 -25.1472
+  333.4767 -23.5952
+  332.0787 -21.0332
+endline
+
+line rock-border -close on
+  631.7148 132.0428
+  632.9689 130.4768
+  634.3008 129.1448
+  634.8488 126.5608
+  633.2429 126.0508
+  631.2849 124.9548
+  629.7189 123.5448
+  628.5449 122.0968
+  626.8609 119.9048
+  625.2948 121.0008
+  623.8848 122.0188
+  623.2588 123.7808
+  624.0029 125.5428
+  625.0988 127.3048
+  626.5088 128.9488
+  627.9568 130.0848
+  631.4028 131.5728
+  631.7148 132.0428
+endline
+
+line rock-border -close on
+  637.5669 132.2388
+  637.4368 128.5008
+  640.4668 128.3708
+  643.9468 129.3388
+  646.2028 130.7568
+  644.5269 133.3348
+  637.7589 132.1088
+  637.5669 132.2388
+endline
+
+line rock-border -close on
+  610.3648 102.7808
+  612.6848 105.4888
+  615.0708 107.4228
+  618.5509 106.9708
+  616.8748 103.8768
+  614.4248 101.1708
+  612.1688 99.4948
+  610.3648 102.7808
+endline
+
+point 479.0248 15.5068 stalactite
+
+point 473.6508 9.1828 stalactite
+
+line rock-border -close on
+  287.4109 -102.7852
+  289.2008 -102.9092
+  290.4908 -104.1172
+  290.9488 -105.7812
+  291.4909 -107.5292
+  289.5328 -107.6132
+  287.7428 -106.4472
+  286.3289 -102.5772
+  287.4109 -102.7852
+endline
+
+line rock-border -close on
+  291.2268 -102.6872
+  294.1388 -102.6572
+  294.4288 -104.4492
+  294.3069 -106.4732
+  291.1808 -105.8132
+  291.7629 -102.7492
+  291.2268 -102.6872
+endline
+
+line rock-border -close on
+  300.6848 -111.4912
+  297.7988 -112.6352
+  295.8468 -113.9092
+  295.3389 -115.8612
+  296.5268 -117.6852
+  298.0548 -118.8732
+  299.7509 -117.6852
+  301.6188 -116.5812
+  300.4308 -112.5932
+  300.6848 -111.4912
+endline
+
+line rock-border -close on
+  301.7028 -116.4112
+  303.8248 -117.5152
+  306.4548 -116.4552
+  308.4909 -115.0972
+  309.2969 -113.4412
+  308.2788 -111.8292
+  304.7568 -114.5872
+  301.7028 -116.4112
+endline
+
+line rock-border -close on
+  304.2289 -106.2832
+  302.6888 -106.8352
+  301.6708 -108.2012
+  301.3808 -111.2532
+  302.8928 -113.0832
+  304.6369 -112.0952
+  307.6288 -110.8172
+  307.9208 -107.5612
+  304.4029 -106.4872
+  304.2289 -106.2832
+endline
+
+line wall
+  186.1213 -185.4823
+  185.282 -180.7182 188.4708 -181.2221 194.8852 -179.2605
+  203.6234 -177.9121 199.7337 -178.7212 213.5421 -175.2151
+  227.3505 -171.7091 233.068 -163.2407 243.4782 -160.9752
+  253.8885 -158.7098 264.5144 -154.2328 267.9666 -152.345
+  271.4187 -150.4571 287.4386 -138.2669 291.2143 -135.3003
+  294.99 -132.3336 308.9063 -121.5997 313.3832 -118.6331
+  317.8602 -115.6665 320.7189 -108.4386 317.9141 -106.1193
+  315.1093 -103.7999 303.9978 -103.0987 303.1887 -99.269
+  302.3797 -95.4393 301.8942 -91.9872 310.3626 -86.1079
+  318.831 -80.2285 321.2583 -78.8261 322.7147 -73.1625
+  324.171 -67.4989 326.1128 -63.9929 329.7267 -60.4329
+  333.3406 -56.8729 350.709 -51.1015 356.2647 -49.9148
+  361.8204 -48.7281 361.2811 -51.533 367.6459 -48.7821
+  374.0107 -46.0312 400.6566 -32.4925 405.6189 -29.5259
+  410.5813 -26.5592 431.7254 -12.643 437.1193 -9.8381
+  442.5132 -7.0333 447.5835 -3.1497 453.7325 -1.7473
+  459.8816 -0.3449 465.2755 0.68 470.5615 -1.2079
+  475.8475 -3.0958 477.0342 -7.2491 480.3245 -3.743
+  483.6147 -0.237 485.6644 1.3272 490.1413 6.3436
+  494.6183 11.3599 494.025 16.1065 498.3401 19.0192
+  502.6552 21.9319 518.4593 27.164 527.629 33.367
+  536.7986 39.57 545.7525 44.7482 550.7688 48.2542
+  555.7851 51.7602 565.9796 63.411 570.7802 68.9128
+  575.5808 74.4146 586.8001 88.7624 594.837 90.6503
+  602.8739 92.5381 603.0357 92.3763 607.7284 95.8284
+  612.4211 99.2805 617.5453 112.7652 623.3168 116.2713
+  629.0882 119.7773 633.9967 122.5821 637.5027 123.3373
+  641.0088 124.0924 647.5893 127.2209 655.9498 128.4615
+  664.3104 129.7021 663.0453 129.1636 670.1653 133.1012
+  677.2853 137.0387 676.2188 147.662 679.1315 151.222
+  smooth off
+endline
+
+point 659.31 186.02 station -name 0
+
+point 639.95 188.54 station -name 1
+
+point 620.9 128.86 station -name 2
+
+point 576.19 81.61 station -name 3
+
+point 532.72 41.06 station -name 4
+
+point 490.59 18.78 station -name 5
+
+point 475.74 14.53 station -name 6
+
+point 442.97 -4.92 station -name 7
+
+point 411.33 -22.24 station -name 8
+
+point 363.48 -44.37 station -name 9
+
+point 322.21 -56.02 station -name 10
+
+point 280.87 -103.19 station -name 11
+
+point 312.2 -110.28 station -name 12
+
+point 273.19 -139.72 station -name 13
+
+point 210.83 -165.71 station -name 14
+
+point 126.41 -188.54 station -name 15
+
+point 85.9 -193.27 station -name 16
+
+point -1.29 -224.06 station -name 17
+
+point -20.71 -226.1 station -name 18
+
+point -63.88 -223.9 station -name 19
+
+point -175.38 -211.69 station -name 20
+
+point -262.26 -192.8 station -name 21
+
+point -373.37 -227.76 station -name 22
+
+point -413.91 -238.31 station -name 23
+
+point -506.91 -202.72 station -name 24
+
+point -529.06 -205.16 station -name 25
+
+point -589.38 -224.84 station -name 26
+
+point -659.31 -248.07 station -name 27
+
 endscrap
 
-scrap DUPLICATE_loompa_land-down_under-1e -projection extended -scale [7.87402 1 m]
-    point -159.35 184.13 station -name 0
-    point -139.99 186.65 station -name 1
-    point -120.93 126.97 station -name 2
-    point -76.22 79.49 station -name 3
-    point -32.75 38.86 station -name 4
-    point 9.38 16.42 station -name 5
-    point 24.23 12.24 station -name 6
-    point 57.00 -7.36 station -name 7
-    point 88.64 -24.84 station -name 8
-    point 136.49 -47.05 station -name 9
-    point 177.76 -58.78 station -name 10
-    point 219.10 -106.02 station -name 11
-    point 187.77 -113.11 station -name 12
-    point 226.78 -142.72 station -name 13
-    point 289.13 -168.94 station -name 14
-    point 373.55 -191.93 station -name 15
-    point 333.04 -196.57 station -name 16
-    point 245.85 -226.10 station -name 17
-    point 226.43 -228.23 station -name 18
-    point 183.26 -226.02 station -name 19
-    point 71.76 -213.50 station -name 20
-    point -15.12 -193.90 station -name 21
-    point -126.23 -227.44 station -name 22
-    point -166.77 -238.07 station -name 23
-    point -259.77 -200.67 station -name 24
-    point -281.92 -203.11 station -name 25
-    point -342.24 -222.80 station -name 26
-    point -412.18 -246.10 station -name 27
-endscrap
+

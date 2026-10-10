@@ -4,14 +4,14 @@ encoding utf-8
 survey loompa_land-down_under -title "loompa land-down under"
 
   #input "loompa_land-down_under-1p.th2"
-  input "loompa_land-down_under-1s.th2"
+  input "loompa_land-down_under-e.th2"
 
 
   # map m-all-p -projection plan
   #   loompa_land-down_under-1p
   # endmap
   map m-all-e -projection extended
-    loompa_land-down_under-1s
+    loompa_land-down_under-1e
   endmap
 
   centerline
@@ -22,7 +22,7 @@ survey loompa_land-down_under -title "loompa land-down under"
     data normal from to length compass clino
     extend left
     0 1 2.48 144.3 7.5
-    extend left
+    extend right
     2 1 7.96 320.5 72.3
     # extend auto
     1 . 7.93 320.0 72.2
@@ -107,7 +107,7 @@ survey loompa_land-down_under -title "loompa land-down under"
     11 . 11.19 53.2 45.5
     11 . 2.84 327.5 4.3
     11 . 2.80 269.7 -26.6
-    extend left
+    extend right
     11 12 4.08 328.4 -12.8
     # extend auto
     12 . 0.65 353.9 -10.5
