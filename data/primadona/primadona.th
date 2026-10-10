@@ -781,4 +781,10 @@ survey primadona -title "Primadona" -entrance 35@prima1 -attr cadastral_n 8282
 	join 2_loompa_2_land-3e@2_loompa_2_land loompa_land_tolmin_drift-1s@loompa_land_tolmin_drift
 	join down_the_rabbit_hole-1e@down_the_rabbit_hole alice_in_waterland-1e@alice_in_waterland
 	
+	###____________2026___________###
+    input "./2026/loompa_land-down_under/loompa_land-down_under.th"
+
+	equate 0@loompa_land_tolmin_drift 0@loompa_land-down_under
+	equate 15@loompa_land-down_under 18@deveti_krog #Double equate for Big loop closure between Hades and MLP branches
+	equate 24@loompa_land-down_under 27@deveti_krog #Double equate for Big loop closure between Hades and MLP branches
 endsurvey
